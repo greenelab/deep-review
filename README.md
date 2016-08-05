@@ -1,5 +1,7 @@
 # Deep Learning, Genomics, and Precision Medicine
 
+[![Code Climate](https://codeclimate.com/github/greenelab/deep-review/badges/gpa.svg)](https://codeclimate.com/github/greenelab/deep-review)
+
 We have the opportunity to write a headline review for *Journal of the Royal
 Society Interface* on a topic overlapping the computer and life sciences in the
 area of systems pharmacology. Our aim is to have the paper ready to submit by
