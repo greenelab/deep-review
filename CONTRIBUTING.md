@@ -32,3 +32,21 @@ Before a repository maintainer merges a pull request, there must be at least
 one affirmative review. If there is any unaddressed criticism or disapproval,
 a repository maintainer will determine how to proceed and may wait for
 additional feedback.
+
+## Markdown
+
+The paper will be written using markdown. Markdown files use the `.md` extension.
+Check out the [CommarkMark Help](http://commonmark.org/help/) page for an introduction
+to formatting options provided by markdown. In addition, to standard markdown features,
+we support [markdown tables](https://help.github.com/articles/organizing-information-with-tables/
+"GitHub Help: Organizing information with tables") and a custom citation syntax. Check out
+[Tables Generator](http://www.tablesgenerator.com/markdown_tables) for creating markdown tables.
+
+The custom citation guidelines are as follows: 
+
+1. Always use a DOI for the version of record if available. Cite DOIs like `[@doi:10.15363/thinklab.4]`.
+2. If the version of record doesn't have a DOI but does have a PubMed ID, cite like `[@pmid:26158728]`.
+3. If the article is an _arXiv_ preprint, cite like `[@arxiv:1508.06576]`.
+4. If the article has none of the above, please file an issue.
+
+You cite multiple items at once like `[@doi:10.15363/thinklab.4 @pmid:26158728 @arxiv:1508.06576]`.
