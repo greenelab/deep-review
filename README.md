@@ -55,5 +55,6 @@ want to take to get up to speed quickly.
    review.
 
 In about a week, we plan to move into the phase where we start to vigorously
-discuss this question for each area that the review will cover (currently also
-being discussed in [#88](https://github.com/greenelab/deep-review/issues/88)).
+argue about the answer to the question that we coalesce on with
+[#88](https://github.com/greenelab/deep-review/issues/88) for each area that the
+review will cover.
