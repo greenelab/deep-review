@@ -49,10 +49,9 @@ want to take to get up to speed quickly.
    of the paper.
 3. Choose some papers in an area that you care about, review them, and summarize
    them.
-4. Dive in to participation in
-   [#88](https://github.com/greenelab/deep-review/issues/88) and help us to
-   further refine the specific question that we're going to deal with in this
-   review.
+4. Dive into [#88](https://github.com/greenelab/deep-review/issues/88) and help
+   us to further refine the specific question that we're going to deal with in
+   this review.
 
 In about a week, we plan to move into the phase where we start to vigorously
 argue about the answer to the question that we coalesce on with
