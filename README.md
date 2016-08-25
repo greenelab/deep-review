@@ -32,3 +32,28 @@ This repository provides a home for the paper. We'll operate on a pull request
 model. Anyone whose contributions meet the ICJME standards of authorship will be
 included as an author on the manuscript. I can't guarantee that it will be
 accepted, but I look forward to trying this approach out.
+
+## Status Report on 8/25
+
+Over the first three weeks of this project, we've developed an initial guiding
+question; collaboratively read, summarized, and discussed existing literature
+through github issues; and we're now refining our guiding question. If you want
+to begin to contribute to this review now, there are a few steps that you may
+want to take to get up to speed quickly.
+
+1. Read through issue [#2](https://github.com/greenelab/deep-review/issues/2).
+   This will give an idea of what our perspective was as we were starting out
+   and planning to read papers.
+2. Peruse some of the papers that the group has already reviewed, and take a
+   look at the review. Fill in gaps that you see in the short summary/discussion
+   of the paper.
+3. Choose some papers in an area that you care about, review them, and summarize
+   them.
+4. Dive into [#88](https://github.com/greenelab/deep-review/issues/88) and help
+   us to further refine the specific question that we're going to deal with in
+   this review.
+
+In about a week, we plan to move into the phase where we start to vigorously
+argue about the answer to the question that we coalesce on with
+[#88](https://github.com/greenelab/deep-review/issues/88) for each area that the
+review will cover.
