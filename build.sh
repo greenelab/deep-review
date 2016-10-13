@@ -1,2 +1,2 @@
 
-pandoc -f markdown -o review.pdf sections/*.md
+pandoc --verbose --from=markdown --output=review.pdf sections/*.md
