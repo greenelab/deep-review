@@ -5,7 +5,7 @@
 We have the opportunity to write a headline review for *Journal of the Royal
 Society Interface* on a topic overlapping the computer and life sciences in the
 area of systems pharmacology. Our aim is to have the paper ready to submit by
-*November 1, 2016*.
+*December 1, 2016*.
 
 > A Headline Review is one in a short, targeted series of high-level reviews
 within a particular topic of a burgeoning research area. We encourage authors to
