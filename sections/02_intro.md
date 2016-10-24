@@ -18,3 +18,8 @@ based on personalized predictions.
 * "Categorize" and "treat" sound a bit like PMI goals. Another way to think
 * about this would be: do we think that deep learning will make much of a
 * difference for the PMI?
+
+### General deep learning introduction
+
+*Definitions, specific architectures, etc.  We may want to clarify what we mean
+by "deep" learning when most methods use few hidden layers.*
