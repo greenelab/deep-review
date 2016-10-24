@@ -26,9 +26,9 @@ this in part as well.*
 
 *Related to evaluation, are there data quality issues in genomic, clinical, and
 other data that make this domain particularly challenging?  Are these worse than
-what is faced in other non-biomedical domains?
+what is faced in other non-biomedical domains?*
 
-Many applications have used relatively small training datasets.  We might
+*Many applications have used relatively small training datasets.  We might
 discuss workarounds (e.g. semi-synthetic data, splitting instances, etc.) and
 how this could impact future progress.  Might this be why some studies have
 resorted to feature engineering instead of learning representations from low-
@@ -44,9 +44,9 @@ solved naturally as hardware improves and/or groups move to distributed deep
 learning frameworks?  Does hardware limit what types of problems are accessible
 to the average computational group, and if so, will that limit future progress?
 For instance, some hyperparameter search strategies are not feasible for a lab
-with only a couple GPUs.
+with only a couple GPUs.*
 
-Some of this is also outlined in the Categorize section.  We can decide where
+*Some of this is also outlined in the Categorize section.  We can decide where
 it best fits.*
 
 ### Code, data, and model sharing
