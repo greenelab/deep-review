@@ -70,9 +70,21 @@ Achilles heal of deep learning in this area. A couple things to think about
 
 ### Will deep learning induce a strategic inflection point for categorization?
 
+*This section attempts to get at whether or not we think that deep learning will
+*be transformational. Since we have some room to provide our perspective, I'd
+*suggest that we take a relatively tough look at this once we review where we
+*are in the parts above.*
+
 #### Where do we see deep learning currently being used?
 
-#### Has deep learning already transformed one or more aspects?
+*This one is targeted at allowing us to summarize the areas that deep learning
+*has touched. We should aim to highlight exemplar papers in this area. This will
+*probably become a relatively lengthy subsubsubsub-section, perhaps with its own
+*subsubsubsubsub-sections. To provide value to the review, I would suggest that
+*we view contributions critically, and that we attempt to ask not only has deep
+*learning been used but also did it matter?*
+
+#### Has deep learning already induced a strategic inflection point for one or more aspects?
 
 *I have looked through the papers that we have. I don't see a case in our
 collection where I felt that we'd be justified to say that deep learning has
@@ -82,4 +94,11 @@ couldn't do similarly with some other method.*
 
 #### What unique potential does deep learning bring to this?
 
+*Are there areas that we expect deep learning to transform how we categorize
+*disease that we haven't seen yet? Let's get fun with speculation/dreaming on
+*this one.*
+
 #### Where would you point your deep learning efforts if you had the time?
+
+*This can be fun. We might eventually merge this with the section immediately
+*above on deep learning's unique potential here.*
