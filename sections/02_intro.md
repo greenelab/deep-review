@@ -15,9 +15,9 @@ based on personalized predictions.
 ### If this happens, is deep learning required for any of it? Are we any closer
 ### because of the advent of deep learning?
 
-* "Categorize" and "treat" sound a bit like PMI goals. Another way to think
-* about this would be: do we think that deep learning will make much of a
-* difference for the PMI?
+*"Categorize" and "treat" sound a bit like PMI goals. Another way to think about
+this would be: do we think that deep learning will make much of a difference
+for the precision medicine initiative (PMI)?*
 
 ### General deep learning introduction
 
