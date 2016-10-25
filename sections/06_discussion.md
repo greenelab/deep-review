@@ -51,4 +51,11 @@ it best fits.*
 
 ### Code, data, and model sharing
 
-*Anything to be said?*
+*Reproducibiliy is important for science to progress. In the context of deep
+learning applied to advance human healthcare, does reproducibility have
+different requirements or alternative connotations? With vast hyperparameter
+spaces, massively heterogeneous and noisy biological data sets, and black box
+interpretability problems, how can we best ensure reproducible models? What
+might a clinician, or policy maker, need to see in a deep model in order to
+influence healthcare decisions? Or, is deep learning a hypothesis generation
+machine that requires manual validation?*
