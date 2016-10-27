@@ -33,6 +33,20 @@ model. Anyone whose contributions meet the ICJME standards of authorship will be
 included as an author on the manuscript. I can't guarantee that it will be
 accepted, but I look forward to trying this approach out.
 
+## Status Report on 10/26
+
+We are now actively outlining the review sections and will begin writing
+soon.  The goal is to have a complete draft in about a month.  The action items
+from the 8/25 status report below are still applicable.  In addition, you can:
+
+1. Sign up to write in [#116](https://github.com/greenelab/deep-review/issues/116)
+   and share which sections you are most interested in.  We are in need of
+   experts in biomedical imaging applications in particular.
+2. Review the stubs in the `sections` subdirectory and respond to the prompts
+   with a pull request.
+3. Outline sections that do not have stubs with a pull request and discuss
+   them with other co-authors in the pull request comments.
+
 ## Status Report on 8/25
 
 Over the first three weeks of this project, we've developed an initial guiding
@@ -57,3 +71,4 @@ In about a week, we plan to move into the phase where we start to vigorously
 argue about the answer to the question that we coalesce on with
 [#88](https://github.com/greenelab/deep-review/issues/88) for each area that the
 review will cover.
+
