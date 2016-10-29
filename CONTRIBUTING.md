@@ -50,3 +50,7 @@ The custom citation guidelines are as follows:
 4. If the article has none of the above, please file an issue.
 
 You cite multiple items at once like `[@doi:10.15363/thinklab.4 @pmid:26158728 @arxiv:1508.06576]`.
+
+For improved readability, you can (but are not required to) use a tag. For example, you can add a reference
+to the tag `Zhou2015_deep_sea` using the following syntax: `[@tag:Zhou2015_deep_sea]`. If you add references
+that use tags, make sure to add those tags and their corresponding citations to [`references/tags.tsv`](references/tags.tsv).
