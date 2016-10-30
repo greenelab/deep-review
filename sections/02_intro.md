@@ -23,3 +23,11 @@ for the precision medicine initiative (PMI)?*
 
 *Definitions, specific architectures, etc.  We may want to clarify what we mean
 by "deep" learning when most methods use few hidden layers.*
+
+### Types of biological problems
+
+This section could contain the types of biological problems people have already applied deep learning to, based on the existing literature.  This could be mentioned in two ways: 
+
+1. The type of input data: DNA sequence, protein sequence, clinical data, imaging data, etc.
+2. The output/objective of the model: protein structure/function, protein localization, miRNA/TF target prediction, patient diagnosis/prognosis, drug discovery/prediction, or unsupervised clustering, etc.
+
