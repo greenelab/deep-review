@@ -26,24 +26,24 @@ by "deep" learning when most methods use few hidden layers.*
 
 ### Types of biological problems
 
-In this review, we are interested in the application of deep learning to
-topics of biomedical importance. This covers a large range of biomedical
-topics, which we divide into three broad classes based on their applied
-areas. We then briefly introduce the types of questions, approaches and data
-which are typical for each class in the application of deep learning.
+In this review, we are interested in the application of deep learning to 
+topics of biomedical importance. This covers a large range of topics, which 
+we divide into three broad classes based on their applied areas. We then 
+briefly introduce the types of questions, approaches and data which are 
+typical for each class in the application of deep learning.
 
 #### Disease and Patient Categorization
 
-One important topic in the biomedical field is the accurate classify diseases
-and disease subtypes. In the oncology field, current "gold standard"
-approaches are limited to either histological approaches, requiring manual
-human expertise, or shallow molecular markers, such as the cell surface
-receptors or small panels of genes. One example is the current PAM50 approach
-in classifying breast cancer, which utilizes the expression of 50 marker
-genes in order to divide breast cancer patients into six subtypes.
-Significant heterogeneity still remains within these six subtypes (Mayer et
-al. 2014)[@doi:10.1158/1078-0432.CCR-13-0583]. Given the increasing wealth of
-molecular data available, it seems that a more comprehensive subtyping is
+One important topic in the biomedical field is the accurate classification of 
+diseases and disease subtypes. In the oncology field, current "gold standard" 
+approaches are limited to either histological approaches, requiring manual 
+human expertise, or shallow molecular markers, such as the cell surface 
+receptors or small panels of genes. One example is the current PAM50 approach 
+in classifying breast cancer, which utilizes the expression of 50 marker 
+genes in order to divide breast cancer patients into six subtypes. 
+Significant heterogeneity still remains within these six subtypes (Mayer et 
+al. 2014)[@doi:10.1158/1078-0432.CCR-13-0583]. Given the increasing wealth of 
+molecular data available, it seems that a more comprehensive subtyping is 
 possible.
 
 Several studies have used deep learning methods in order to better categorize
