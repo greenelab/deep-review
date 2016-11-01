@@ -60,39 +60,39 @@ omics data.
 
 #### Fundamental Biological Study
 
-Broadly speaking, topics in this class aim to answer more fundamental
-biological questions. Deep learning is especially suited in leveraging the
-large amounts of data from high throughput omics studies. The development of
-deep learning techniques and complex network architectures allow researchers
-to answer fundamental biological questions with unprecedented accuracy. One
-classic biological problem where machine learning has been extensively
-applied is the prediction of molecular targets. Recent advances using deep
-learning have shown higher accuracy in determining molecular targets. For
-example, Lee et al. used deep recurrent neural networks (RNN) to predict gene
-targets of micro-RNAs (Lee et al. 2016)[@doi:10.1109/icnn.1994.374637]. Wang
-et al. used a residual CNN to predict protein-protein contact on a
-genome-wide scale (Wang et al. 2016)[@doi:10.1101/073239]. Other biological
-questions that have been investigated include the prediction of protein
-secondary structure based on sequence data (Spencer et al. 2015, Lin et al.
+Broadly speaking, topics in this class aim to answer more fundamental 
+biological questions. Deep learning is especially suited in leveraging the 
+large amounts of data from high throughput omics studies. The development of 
+deep learning techniques and complex network architectures allow researchers 
+to answer fundamental biological questions with unprecedented accuracy. One 
+classic biological problem where machine learning has been extensively 
+applied is the prediction of molecular targets. Recent advances using deep 
+learning have shown higher accuracy in determining molecular targets. For 
+example, Lee et al. used deep recurrent neural networks (RNN) to predict gene 
+targets of micro-RNAs (Lee et al. 2016)[@doi:10.1109/icnn.1994.374637]. Wang 
+et al. used a residual CNN to predict protein-protein contact on a 
+genome-wide scale (Wang et al. 2016)[@doi:10.1101/073239]. Other biological 
+questions that have been investigated include the prediction of protein 
+secondary structure based on sequence data (Spencer et al. 2015, Lin et al. 
 2016)[@doi:10.1109/tcbb.2014.2343960,@doi:10.1038/srep18962,@doi:10.1038/srep18
-962], recognition of functional genomic elements such as enhancers and
-promoters (Liu et al. 2016, Li et al. 2015, Kleftogiannis et al.
+962], recognition of functional genomic elements such as enhancers and 
+promoters (Liu et al. 2016, Li et al. 2015, Kleftogiannis et al. 
 2014)[@doi:10.1101/036129,@doi:10.1007/978-3-319-16706-0_20,@doi:10.1093/nar/gk
-u1058], or predicting the deleterious effects of nucleotide polymorphisms
-(Quang et al. 2014)[@doi:10.1093/bioinformatics/btu703], etc.
+u1058], predicting the deleterious effects of nucleotide polymorphisms (Quang 
+et al. 2014)[@doi:10.1093/bioinformatics/btu703], etc.
 
 #### Treatment Selection
 
-Studies in this category aim to recommend patient treatment or predict
-treatment outcome. Specifically, a lot of effort in this area aims to
-identify drug targets, identify drug interactions or predict drug response.
-One recent approach for predicting drug response is the use of protein
-structure to predict drug interactions and drug bioactivity through CNN
-(Wallach et al. 2015)[@arXiv:1510.02855]. Since CNNs leverage spatial
-relationships within the data, this particular deep learning framework is
-well suited to the problem. Drug discovery and drug "repurposing" is another
-hot topic. Aliper et al. used transcriptomic data to predict which drugs
-might be repurposed for other diseases through deep fully connected neural
-networks. In a similar vein, Wang et al. used restricted boltzman machines
-(RBM) to predict drug molecular targets (Wang et al.
+Studies in this category aim to recommend patient treatment or predict 
+treatment outcome. Specifically, a lot of effort in this area aims to 
+identify drug targets, identify drug interactions or predict drug response. 
+One recent approach for predicting drug response is the use of protein 
+structure to predict drug interactions and drug bioactivity through CNN 
+(Wallach et al. 2015)[@arXiv:1510.02855]. Since CNNs leverage spatial 
+relationships within the data, this particular deep learning framework is 
+well suited to the problem. Drug discovery and drug "repurposing" are two 
+other hot topics. Aliper et al. used transcriptomic data to predict which 
+drugs might be repurposed for other diseases through deep fully connected 
+neural networks. In a similar vein, Wang et al. used restricted boltzman 
+machines (RBM) to predict drug molecular targets (Wang et al. 
 2013)[@doi:10.1093/bioinformatics/btt234].
