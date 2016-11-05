@@ -1,5 +1,4 @@
-## The impact of deep learning in treating disease and developing new
-treatments
+## The impact of deep learning in treating disease and developing new treatments
 
 *There will be some overlap with the Categorize section, and we may have to
 determine which methods categorize individuals and which more directly match
