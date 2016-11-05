@@ -63,7 +63,8 @@ Broadly speaking, topics in this class aim to answer more fundamental
 biological questions. Deep learning is especially suited in leveraging the 
 large amounts of data from high throughput omics studies. The development of 
 deep learning techniques and complex network architectures allow researchers 
-to answer fundamental biological questions with unprecedented accuracy. One 
+to answer fundamental biological questions with unprecedented accuracy.
+`TODO: revisit "unprecedented accuracy" once we set the overall tone`. One 
 classic biological problem where machine learning has been extensively 
 applied is the prediction of molecular targets. Recent advances using deep 
 learning have shown higher accuracy in determining molecular targets. For 
