@@ -29,19 +29,22 @@ analysis. In this review, we discuss whether this is simply a matter of time or
 if there are unique challenges posed by biomedical data that render deep
 learning methods more challenging or less fruitful.
 
-We recognized that writing a review on a rapidly developing area in a manner
-that allowed us to provide a forward-looking perspective on diverse approaches
-and biological problems would require expertise from across computational
-biology and medicine. We created an open repository on the GitHub version
-control system and engaged with numerous authors from papers within and outside
-of the area. Paper review was conducted in the open by `#` individuals, and the
-manuscript was drafted in a series of commits from `#` authors. Individuals who
-met the ICJME standards of authorship are included as authors. These were
-individuals who contributed to the review of the literature; drafted the
-manuscript or provided substantial critical revisions; approved the final
-manuscript draft; and agreed to be accountable in all aspects of the work.
-Individuals who did not contribute in one or more of these ways, but who did
-participate, are acknowledged at the end of the manuscript.
+`TODO: not sure if it should go here, but somewhere we should talk about how we
+wrote this thing, since it is still somewhat unconventional to have a review
+written in this manner.` We recognized that writing a review on a rapidly
+developing area in a manner that allowed us to provide a forward-looking
+perspective on diverse approaches and biological problems would require
+expertise from across computational biology and medicine. We created an open
+repository on the GitHub version control system and engaged with numerous
+authors from papers within and outside of the area. Paper review was conducted
+in the open by `#` individuals, and the manuscript was drafted in a series of
+commits from `#` authors. Individuals who met the ICJME standards of authorship
+are included as authors. These were individuals who contributed to the review of
+the literature; drafted the manuscript or provided substantial critical
+revisions; approved the final manuscript draft; and agreed to be accountable in
+all aspects of the work. Individuals who did not contribute in one or more of
+these ways, but who did participate, are acknowledged at the end of the
+manuscript.
 
 ### Potential writing prompt
 
@@ -62,18 +65,33 @@ predictions.
 this would be: do we think that deep learning will make much of a difference
 for the precision medicine initiative (PMI)?*
 
-### General deep learning introduction
+### What is deep learning?
 
 *Definitions, specific architectures, etc.  We may want to clarify what we mean
 by "deep" learning when most methods use few hidden layers.*
 
 ### Types of biological problems
 
-In this review, we are interested in the application of deep learning to
-topics of biomedical importance. This covers a large range of topics, which
-we divide into three broad classes based on their applied areas. We then
-briefly introduce the types of questions, approaches and data which are
-typical for each class in the application of deep learning.
+With this review, we specifically set out to address the question: "what would
+need to be true for deep learning to transform how we categorize, study, and
+treat individuals to maintain or restore health?." We set a high bar for the
+term "transform." Specifically we sought to identify whether deep learning was a
+disruptive innovation that would induce a strategic inflection point on the
+practice of biology or medicine. There are numerous examples where deep learning
+has been applied to biological problems and produced somewhat improved results,
+and there are numerous reviews that have focused on general applications of deep
+learning in biology [@doi:10.1038/nbt.3313 @doi:10.1002/minf.201501008
+@doi:10.3109/10409238.2015.1135868 @doi:10.1021/acs.molpharmaceut.5b00982
+@doi:10.15252/msb.20156651 @doi:10.1093/bib/bbw068]. We sought cases where deep
+learning was enabling researchers to solve challenges that were previously
+considered infeasible, or if it made difficult, tedious, and non-routine
+analyses routine.
+
+Based on our guiding question, we focused on the application of deep learning to
+topics of biomedical importance. This covers a large range of topics. We divided
+these into three broad classes based on their applied areas. We briefly
+introduce the types of questions, approaches and data which are typical for each
+class in the application of deep learning.
 
 #### Disease and Patient Categorization
 
