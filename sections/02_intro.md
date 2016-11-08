@@ -27,7 +27,7 @@ There are certainly numerous promising examples, but we have not yet seen the
 massive convergence on these approaches that occurred in the field of image
 analysis. In this review, we discuss whether this is simply a matter of time or
 if there are unique challenges posed by biomedical data that render deep
-learning methods more challenging or less fruitful.
+learning methods more challenging or less fruitful to apply.
 
 `TODO: not sure if it should go here, but somewhere we should talk about how we
 wrote this thing, since it is still somewhat unconventional to have a review
@@ -46,26 +46,48 @@ all aspects of the work. Individuals who did not contribute in one or more of
 these ways, but who did participate, are acknowledged at the end of the
 manuscript.
 
-### Potential writing prompt
-
-One potential future that we could imagine is a world in which data, once
-gathered, is rapidly integrated into our understanding of living systems. What
-we learn is rapidly put to use. Our health-related activities are constantly
-monitored (e.g. by wearables) and all of our interactions with health care
-systems are extensively tracked. These sources of information are combined to
-help to guide our health care and maintenance. We'd be able to compare our state
-and trajectory to (anonymized) others, and identify means to improve our health.
-These means might contain drug combinations selected based on personalized
-predictions.
-
-### If this happens, is deep learning required for any of it? Are we any closer
-### because of the advent of deep learning?
-
-*"Categorize" and "treat" sound a bit like PMI goals. Another way to think about
-this would be: do we think that deep learning will make much of a difference
-for the precision medicine initiative (PMI)?*
-
 ### What is deep learning?
+
+Deep learning is built on a biologically-inspired approach from machine learning
+termed neural networks. Each neuron in a computational neural network, termed a
+node, has inputs, an activation function, and outputs. Each value from the
+inputs is usually multiplied by some weight and combined and summarized by the
+activation function. The value of the activation function is then multiplied by
+another set of weights to produce the output `TODO: we probably need a figure
+here - I see no way that we don't include this type of description in our paper,
+despite the fact that it's been done tons of times before.` These neural
+networks are trained by identifying weights that produce a desired output from
+some specific input.
+
+Neural networks can also be stacked. The outputs from one can be used as inputs
+to another. This process produces a stacked or multi-layer neural network. The
+multi-layer neural network techniques that underlie deep learning have a long
+history. Multi-layer methods have been discussed in the literature for more than
+five decades [@doi:10.1103/RevModPhys.34.135]. Given this context, it's
+challenging to consider "deep learning" as a new advance, though the term has
+only become widespread to describe analysis methods in the last decade. For the
+purposes of this review, we identify deep learning approaches as those that use
+multi-layer neural networks to construct complex features from large-scale
+datasets. `TODO: somehow, I feel like we should work in some of the early
+examples like [@doi:10.1126/science.1127647]. I don't know if we want an entire
+separate paragraph, or if we should work it into this one.`
+
+We also identify a class of algorithms that we term "shallow learning"
+approaches. We do not use this as a pejorative term, but instead to denote
+algorithms which have all of the hallmarks of deep approaches except that they
+employ networks of limited depth. We found it valuable to include these as we
+sought to identify the current contributions of deep learning and to predict its
+future impact. Researchers may employ these shallow learning methods for a
+number of reasons including:
+
+1. Shallow networks provide a degree of interpretability that better matches
+   their use case.
+2. The available data are insufficient to support deeper architectures, however
+   new datasets that will support deep methods are expected.
+3. As building blocks to be combined with other non-neural-network-based
+   approaches at subsequent stages.
+
+Deep learning is a general term for algorithms that employ multi-layer neural networks
 
 *Definitions, specific architectures, etc.  We may want to clarify what we mean
 by "deep" learning when most methods use few hidden layers.*
