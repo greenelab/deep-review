@@ -67,11 +67,6 @@ insufficient to support deeper architectures, however new datasets that will
 support deep methods are expected; or 3) as building blocks to be combined with
 other non-neural-network-based approaches at subsequent stages.
 
-Deep learning is a general term for algorithms that employ multi-layer neural networks
-
-*Definitions, specific architectures, etc.  We may want to clarify what we mean
-by "deep" learning when most methods use few hidden layers.*
-
 ### Will deep learning transform the study of human disease?
 
 With this review, we specifically set out to address the question: "what would
