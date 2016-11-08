@@ -65,9 +65,9 @@ number of reasons including:
 
 1. Shallow networks provide a degree of interpretability that better matches
    their use case.
-2. The available data are insufficient to support deeper architectures, however
++. The available data are insufficient to support deeper architectures, however
    new datasets that will support deep methods are expected.
-3. As building blocks to be combined with other non-neural-network-based
++. As building blocks to be combined with other non-neural-network-based
    approaches at subsequent stages.
 
 Deep learning is a general term for algorithms that employ multi-layer neural networks
@@ -75,7 +75,7 @@ Deep learning is a general term for algorithms that employ multi-layer neural ne
 *Definitions, specific architectures, etc.  We may want to clarify what we mean
 by "deep" learning when most methods use few hidden layers.*
 
-### Types of biological problems
+### Will deep learning transform the study of human disease?
 
 With this review, we specifically set out to address the question: "what would
 need to be true for deep learning to transform how we categorize, study, and
