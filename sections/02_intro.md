@@ -61,14 +61,11 @@ algorithms which have all of the hallmarks of deep approaches except that they
 employ networks of limited depth. We found it valuable to include these as we
 sought to identify the current contributions of deep learning and to predict its
 future impact. Researchers may employ these shallow learning methods for a
-number of reasons including:
-
-1. Shallow networks provide a degree of interpretability that better matches
-   their use case.
-+. The available data are insufficient to support deeper architectures, however
-   new datasets that will support deep methods are expected.
-+. As building blocks to be combined with other non-neural-network-based
-   approaches at subsequent stages.
+number of reasons including: 1) shallow networks provide a degree of
+interpretability that better matches their use case; 2) the available data are
+insufficient to support deeper architectures, however new datasets that will
+support deep methods are expected; or 3) as building blocks to be combined with
+other non-neural-network-based approaches at subsequent stages.
 
 Deep learning is a general term for algorithms that employ multi-layer neural networks
 
