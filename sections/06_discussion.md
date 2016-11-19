@@ -89,9 +89,9 @@ is not clear whether it can occur quickly enough to keep up with the increasing
 amount of available biological data. Much has been done to minimize the memory
 requirements of neural networks [@tag:CudNN @tag:Caruana2014_need
 @tag:Gupta2015_prec @tag:Bengio015_prec @tag:Sa2015_buckwild
-@tag:Chen2015_hashing @tag:Hubara2016_qnn], but there is also been growing
-interest in specialized hardware, such such as field-programmable gate arrays
-(FPGA) [@tag:Edwards2015_growing_pains Lacey2016_dl_fpga] and
+@tag:Chen2015_hashing @tag:Hubara2016_qnn], but there is also growing
+interest in specialized hardware, such as field-programmable gate arrays
+(FPGAs) [@tag:Edwards2015_growing_pains Lacey2016_dl_fpga] and
 application-specific integrated circuits (ASICs). Specialized hardware promises
 improvements in deep learning at reduced time, energy, and memory
 [@tag:Edwards2015_growing_pains]. Logically, there is less software for highly
@@ -107,7 +107,7 @@ approaches to distributed computation were not suitable for deep learning
 now exist a number of algorithms [@tag:Dean2012_nips_downpour @tag:Dogwild
 @Sa2015_buckwild], tools [@tag:Moritz2015_sparknet @tag:Meng2016_mllib
 @tag:Tensorflow], and high-level libraries [@tag:Keras, @tag:Elephas] for deep
-learning in a distributed environment, and it possible to train very complex
+learning in a distributed environment, and it is possible to train very complex
 networks with limited infrastructure [@tag:Coates2013_cots_hpc]. Besides
 handling very large networks, distributed or parallelized approaches offer
 other advantages, such as improved ensembling [@tag:Sun2016_ensemble] or
