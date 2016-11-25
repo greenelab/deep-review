@@ -80,18 +80,20 @@ descent [@tag:Vanhoucke2011_cpu @tag:Seide2014_parallel @tag:Su2015_gpu
 which makes it difficult to train/use networks of significant size and
 complexity on a single GPU or machine [@tag:Raina2009_gpu
 @tag:Krizhevsky2013_nips_cnn]. This restriction has sometimes stymied the use
-of deep learning for computational biology[@tag:Chen2016_gene_expr], though
+of deep learning for computational biology[@tag:Chen2016_gene_expr] or
+limited network size [@tag:Wang2016_protein_contact], though
 some have chosen to use slower CPU implementations rather than sacrifice
 network size or performance [@tag:Yasushi2016_cgbvs_dnn].
 
 Steady improvements in GPU hardware may alleviate this issue somewhat, but it
-is not clear whether it can occur quickly enough to keep up with the increasing
-amount of available biological data. Much has been done to minimize the memory
+is not clear whether they can occur quickly enough to keep up with the growing
+amount of available biological data or increasing network sizes. Much has
+been done to minimize the memory
 requirements of neural networks [@tag:CudNN @tag:Caruana2014_need
 @tag:Gupta2015_prec @tag:Bengio015_prec @tag:Sa2015_buckwild
 @tag:Chen2015_hashing @tag:Hubara2016_qnn], but there is also growing
 interest in specialized hardware, such as field-programmable gate arrays
-(FPGAs) [@tag:Edwards2015_growing_pains Lacey2016_dl_fpga] and
+(FPGAs) [@tag:Edwards2015_growing_pains @tag:Lacey2016_dl_fpga] and
 application-specific integrated circuits (ASICs). Specialized hardware promises
 improvements in deep learning at reduced time, energy, and memory
 [@tag:Edwards2015_growing_pains]. Logically, there is less software for highly
@@ -102,8 +104,9 @@ popular platform for deep learning and general computation.
 
 Distributed computing is a general solution to intense computational
 requirements, and has enabled many large-scale deep learning efforts. Early
-approaches to distributed computation were not suitable for deep learning
-[@tag:Dean2012_nips_downpour], but significant progress has been made. There
+approaches to distributed computation [@tag:Mapreduce @tag:Graphlab] were
+not suitable for deep learning [@tag:Dean2012_nips_downpour],
+but significant progress has been made. There
 now exist a number of algorithms [@tag:Dean2012_nips_downpour @tag:Dogwild
 @Sa2015_buckwild], tools [@tag:Moritz2015_sparknet @tag:Meng2016_mllib
 @tag:Tensorflow], and high-level libraries [@tag:Keras, @tag:Elephas] for deep
