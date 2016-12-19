@@ -38,7 +38,10 @@ inputs is usually multiplied by some weight and combined and summarized by the
 activation function. The value of the activation function is then multiplied by
 another set of weights to produce the output `TODO: we probably need a figure
 here - I see no way that we don't include this type of description in our paper,
-despite the fact that it's been done tons of times before.` These neural
+despite the fact that it's been done tons of times before. Corresponded with the
+author of the neural network zoo on twitter. He says that we should feel free to
+grab what we need. He does not intend to draw more and he does not have vector
+forms. He would like us to link to the original blog post.` These neural
 networks are trained by identifying weights that produce a desired output from
 some specific input.
 
