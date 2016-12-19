@@ -15,11 +15,12 @@ learning algorithm has become widespread in the domain of image analysis.
 Computer scientists are now building many-layered neural networks from
 collections of millions of images. In a famous example, scientists from Google
 demonstrated that a neural network could learn to identify cats simply by
-watching online videos [@doi:10.1109/ICASSP.2013.6639343]. Such approaches,
-termed deep learning, seem like a solution to the challenge presented by the
-growth of data in biomedicine. Perhaps these algorithms could identify the
-"cats" hidden in our data - the patterns that exist but that we don't know to
-look for - and could act on them.
+watching online videos
+[@url:http://research.google.com/archive/unsupervised_icml2012.html]. Such
+approaches, termed deep learning, seem like a solution to the challenge
+presented by the growth of data in biomedicine. Perhaps these algorithms could
+identify the "cats" hidden in our data - the patterns that exist but that we
+don't know to look for - and could act on them.
 
 Deep learning has transformed image analysis, but researchers' initial forays
 into the use of these techniques in biomedicine have been less conclusive.
