@@ -7,8 +7,8 @@ suggested that the field of genomics alone would equal or surpass other fields
 in data generation and analysis within the next decade
 [@doi:10.1371/journal.pbio.1002195]. These data present new opportunities, but
 also new challenges. We expect that algorithms to automatically extract
-meaningful patterns and provide sufficient context to enable us to act will be
-required.
+meaningful patterns and provide actionable knowledge allowing us to better
+treat, categorize, or study disease will be required.
 
 Concurrent with this explosive growth in biomedical data, a new class of machine
 learning algorithm has become widespread in the domain of image analysis.
@@ -51,12 +51,11 @@ multi-layer neural network techniques that underlie deep learning have a long
 history. Multi-layer methods have been discussed in the literature for more than
 five decades [@doi:10.1103/RevModPhys.34.135]. Given this context, it's
 challenging to consider "deep learning" as a new advance, though the term has
-only become widespread to describe analysis methods in the last decade. For the
-purposes of this review, we identify deep learning approaches as those that use
-multi-layer neural networks to construct complex features from large-scale
-datasets. `TODO: somehow, I feel like we should work in some of the early
-examples like [@doi:10.1126/science.1127647]. I don't know if we want an entire
-separate paragraph, or if we should work it into this one.`
+only become widespread to describe analysis methods in the last decade. Much of
+the early history of neural networks has been extensively covered in a recent
+review [@doi:10.1016/j.neunet.2014.09.003].  For the purposes of this review, we
+identify deep learning approaches as those that use multi-layer neural networks
+to construct complex features from large-scale datasets.
 
 We also identify a class of algorithms that we term "shallow learning"
 approaches. We do not use this as a pejorative term, but instead to denote
