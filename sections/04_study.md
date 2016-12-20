@@ -21,7 +21,9 @@ in several categories below.*
 *A few suggestions for sub-sections follow.  Some of these could be left out
 because our goal is not an exhaustive enumeration of methods.  Some
 are important areas of biology, but there may not be much deep learning-
-specific content to present.*
+specific content to present.  Others may be important areas where we lack
+expertise, in which case we may acknowledge the application area but not
+dive into merits or weaknesses of individual methods.*
 
 ### Gene expression
 
@@ -30,7 +32,7 @@ from gene expression.  Those could be divided into separate sub-sections.*
 
 ### Splicing
 
-*Combine this with gene expression?*
+*A separate section from general gene expression section above.*
 
 ### Transcription factors and RNA-binding proteins
 
@@ -75,18 +77,14 @@ transfer learning could be a more general topic for the Discussion section.*
 *There are not many neural network papers in this area (yet), unless we count
 imaging applications.  But there is still plenty to discuss.  The existing
 methods [@tag:Arvaniti2016_rare_subsets @tag:Angermueller2016_single_methyl]
-use interesting network architectures to approach single-cell data.*
-
-### Methylation
-
-*Is there enough content for a sub-section?  [@tag:Angermueller2016_single_methyl]
-can be discussed with the single-cell papers.*
+use interesting network architectures to approach single-cell data.
+[@tag:Shaham2016_batch_effects] could fit here.*
 
 ### Metagenomics
 
-*Is there enough content for a sub-section?*
+*@gailrosen will write this*
 
-### Sequencing
+### Sequencing and variant calling
 
-*Is there enough content for a sub-section?  We have one nanopore paper
-in the issues.*
+*We have one nanopore paper in the issues and very recent work on variant calling
+that looks worthy of inclusion.*
