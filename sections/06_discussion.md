@@ -51,18 +51,8 @@ it best fits.*
 
 Efficiently scaling deep learning is challenging, and there is a high
 computational cost (e.g., time, memory, energy) associated with training neural
-networks and using them for classification. For these reasons, neural networks
+networks and using them for classification. As such, neural networks
 have only recently found widespread use [@tag:Schmidhuber2014_dnn_overview].
-For biologists, such problems are further complicated by the immense size of
-most biological datasets.
-
-*TODO: Perhaps a visual illustrating the changes over time in the cost of
-storage
-(i.e. hard drive space), genome sequencing, and processing power. Additionally,
-plotting the accuracy, depth, and training time of imagenet winners could be
-illustrative. See [@tag:Stein2010_cloud] for example of calculating storage
-cost,
-and [@tag:NIH2016_genome_cost] for data on the cost of sequencing.*
 
 Many have sought to curb the costs of deep learning, with methods ranging from
 the very applied (e.g., reduced numerical precision [@tag:Gupta2015_prec
@@ -77,13 +67,18 @@ operations so central to deep learning. The massively parallel nature of GPUs
 allows additional optimizations, such as accelerated mini-batch gradient
 descent [@tag:Vanhoucke2011_cpu @tag:Seide2014_parallel @tag:Su2015_gpu
 @tag:Li2014_minibatch]. However, GPUs also have a limited quantity of memory,
-which makes it difficult to train/use networks of significant size and
+making it difficult to implement networks of significant size and
 complexity on a single GPU or machine [@tag:Raina2009_gpu
-@tag:Krizhevsky2013_nips_cnn]. This restriction has sometimes stymied the use
-of deep learning for computational biology[@tag:Chen2016_gene_expr] or
-limited network size [@tag:Wang2016_protein_contact], though
-some have chosen to use slower CPU implementations rather than sacrifice
-network size or performance [@tag:Yasushi2016_cgbvs_dnn].
+@tag:Krizhevsky2013_nips_cnn]. This restriction has sometimes forced
+computational biologists to use workarounds or limit the size of an analysis.
+For example, Chen et al. [@tag:Chen2016_gene_expr] aimed to infer the
+expression level of all genes with a single neural network, but due to
+memory restrictions they randomly partitioned genes into two halves and
+analyzed each separately. In other cases, researchers limited the size
+of their neural network [@tag:Wang2016_protein_contact
+@tag:Gomezb2016_automatic]. Some have also chosen to use slower
+CPU implementations rather than sacrifice network size or performance
+[@tag:Yasushi2016_cgbvs_dnn].
 
 Steady improvements in GPU hardware may alleviate this issue somewhat, but it
 is not clear whether they can occur quickly enough to keep up with the growing
