@@ -39,7 +39,7 @@ We are now actively writing the review. Markdown files can be found in the
 `sections/` folder. Please claim a section, create a fork, and contribute that
 section back via a pull request. To see what a pull request into the paper
 entails, check out [PR #147](https://github.com/greenelab/deep-review/pull/147)
-from @evancofer.
+from [@evancofer](https://github.com/evancofer).
 
 ## Status Report on 10/26
 
