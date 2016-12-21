@@ -19,7 +19,7 @@ tackle any of them? Are there example approaches whereby deep learning is
 already having a transformational impact? I (Casey) have added some sections
 below where I think we could contribute to the field with our discussion.*
 
-### Major challenges
+### Major Areas of Existing Contributions
 
 *There are a number of major challenges in this space. How do we get data
 together from multiple distinct systems? How do we find biologically meaningful
@@ -28,19 +28,15 @@ we share these data while respecting privacy? I've made a section for each of
 these. Feel free to add more. I see each section as something on the order of
 1-2 paragraphs in our context.*
 
-#### Standardization/integration
-
-*EHR standardization remains challenging. Even the most basic task of matching
-patients can be challenging due to data entry issues [@pmid:27134610]. From
-anecdotal conversations with colleagues, it sounds like the same information is
-often entered in distinct fields in different departments and different health
-care systems. It would be nice for someone to quickly survey the literature and
-provide a 1-2 paragraph summary of the state of the field. References to recent
-solid reviews would be great to include. A quick summary (with papers) of any
-deep learning approaches used in this area would be great in the "where do we
-see deep learning currently being used" section below.*
-
 #### Pattern Recognition (static + dynamic)
+
+* Imaging #163, #164
+
+##### Electronic Health Records
+
+Identifying consistent subgroups of individuals and individual health trajectories is an active area of research. Approaches inspired by deep learning have been used for both unsupervised feature construction and supervised prediction. In the unsupervised space, early work demonstrated that unsupervised feature construction via denoising autoencoder neural networks could dramatically reduce the number of labeled examples required for subsequent supervised analyses [@doi:http://dx.doi.org/10.1101/039800]. A concurrent large-scale analysis of an electronic health records system found that a deep denoising autoencoder architecture applied to the number and co-occurrence of clinical test events constructed features that were more useful for disease prediction than other existing feature construction methods [@doi:http://doi.org/10.1038/srep26094]. Taken together, these results support the potential of unsupervised feature construction in this domain.
+
+However, significant work needs to be done to move these from conceptual advances to practical game-changers. Additionally, unique barriers exist in this space that may hinder progress in this field.
 
 *How do we find meaningful patterns from health data (including EHR, clinical
 trials, etc) that indicate categories of individuals? We should at least raise
@@ -58,23 +54,6 @@ we see deep learning currently being used" section below.*
 expensive, so it may be helpful. I leave it here as a stub in case someone wants
 to take it on.*
 
-#### Data sharing and privacy?
-
-*This is clearly a big issue. We should at least mention it. Deep learning likes
-lots of data, and sharing restrictions don't allow that. Perhaps a paragraph on
-current best practices and how they relate to deep learning. A lack of data (due
-to privacy and sharing restrictions) may hamper deep learning's utility in this
-area in ways that it doesn't for image analysis, etc. Perhaps this will be the
-Achilles heal of deep learning in this area. A couple things to think about
-[doi: 10.1126/science.1229566 doi:10.1016/j.cels.2016.04.013]*
-
-### Will deep learning induce a strategic inflection point for categorization?
-
-*This section attempts to get at whether or not we think that deep learning will
-be transformational. Since we have some room to provide our perspective, I'd
-suggest that we take a relatively tough look at this once we review where we
-are in the parts above.*
-
 #### Where do we see deep learning currently being used?
 
 *This one is targeted at allowing us to summarize the areas that deep learning
@@ -91,6 +70,35 @@ collection where I felt that we'd be justified to say that deep learning has
 transformed how we categorize individuals with respect to health and disease.
 There are definitely interesting applications, but I don't see anything that we
 couldn't do similarly with some other method.*
+
+### Will deep learning induce a strategic inflection point for categorization?
+
+*This section attempts to get at whether or not we think that deep learning will
+be transformational. Since we have some room to provide our perspective, I'd
+suggest that we take a relatively tough look at this once we review where we
+are in the parts above.*
+
+#### Standardization/integration
+
+*EHR standardization remains challenging. Even the most basic task of matching
+patients can be challenging due to data entry issues [@pmid:27134610]. From
+anecdotal conversations with colleagues, it sounds like the same information is
+often entered in distinct fields in different departments and different health
+care systems. It would be nice for someone to quickly survey the literature and
+provide a 1-2 paragraph summary of the state of the field. References to recent
+solid reviews would be great to include. A quick summary (with papers) of any
+deep learning approaches used in this area would be great in the "where do we
+see deep learning currently being used" section below.*
+
+#### Data sharing and privacy?
+
+*This is clearly a big issue. We should at least mention it. Deep learning likes
+lots of data, and sharing restrictions don't allow that. Perhaps a paragraph on
+current best practices and how they relate to deep learning. A lack of data (due
+to privacy and sharing restrictions) may hamper deep learning's utility in this
+area in ways that it doesn't for image analysis, etc. Perhaps this will be the
+Achilles heal of deep learning in this area. A couple things to think about
+[doi: 10.1126/science.1229566 doi:10.1016/j.cels.2016.04.013]*
 
 #### What unique potential does deep learning bring to this?
 
