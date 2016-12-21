@@ -5,7 +5,7 @@
 We have the opportunity to write a headline review for *Journal of the Royal
 Society Interface* on a topic overlapping the computer and life sciences in the
 area of systems pharmacology. Our aim is to have the paper ready to submit by
-*December 1, 2016*.
+*January 15, 2017*.
 
 > A Headline Review is one in a short, targeted series of high-level reviews
 within a particular topic of a burgeoning research area. We encourage authors to
@@ -32,6 +32,14 @@ This repository provides a home for the paper. We'll operate on a pull request
 model. Anyone whose contributions meet the ICJME standards of authorship will be
 included as an author on the manuscript. I can't guarantee that it will be
 accepted, but I look forward to trying this approach out.
+
+## Status Report on 12/21
+
+We are now actively writing the review. Markdown files can be found in the
+`sections/` folder. Please claim a section, create a fork, and contribute that
+section back via a pull request. To see what a pull request into the paper
+entails, check out [PR #147](https://github.com/greenelab/deep-review/pull/147)
+from [@evancofer](https://github.com/evancofer).
 
 ## Status Report on 10/26
 
