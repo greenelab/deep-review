@@ -36,24 +36,55 @@ these. Feel free to add more. I see each section as something on the order of
 
 #### Electronic Health Records
 
-##### Approaches
+EHR data include substantial amounts of free text, which remains challenging to
+approach [@doi:10.1136/amiajnl-2011-000501]. Often, researchers developing
+algorithms that perform well on specific tasks must design and implement
+domain-specific features [@doi:10.1136/amiajnl-2011-000150]. These features
+capture unique aspects of the literature being processed. Deep learning methods
+are natural feature constructors. In recent work, the authors evaluated the
+extent to which deep learning methods could be applied on top of generic
+features for domain-specific concept extraction [@arxiv:1611.08373]. They found
+that performance was in line with, but did not exceed, existing state of the art
+methods. The deep learning method had performance lower than the best performing
+domain-specific method in their evaluation[@arxiv:1611.08373]. This highlights
+the challenge of predicting the eventual impact of deep learning on the field.
+This provides support that deep learning may impact the field by reducing the
+researcher time and cost required to develop specific solutions, but it may not
+lead to performance increases.
 
-EHR data include substantial amounts of free text, which remains challenging to approach [@doi:10.1136/amiajnl-2011-000501]. Often, researchers developing algorithms that perform well on specific tasks must design and implement domain-specific features [@doi:10.1136/amiajnl-2011-000150]. These features capture unique aspects of the literature being processed. Deep learning methods are natural feature constructors. In recent work, the authors evaluated the extent to which deep learning methods could be applied on top of generic features for domain-specific concept extraction [@arxiv:1611.08373]. They found that performance was in line with, but did not exceed, existing state of the art methods. The deep learning method had performance lower than the best performing domain-specific method in their evaluation[@arxiv:1611.08373]. This highlights the challenge of predicting the eventual impact of deep learning on the field. This provides support that deep learning may impact the field by reducing the researcher time and cost required to develop specific solutions, but it may not lead to performance increases.
-
-TODO: survival analysis/readmission prediction methods from EHR/EMR style data (@sw1 + maybe @traversc). These include:
+TODO: survival analysis/readmission prediction methods from EHR/EMR style data
+(@sw1 + maybe @traversc). These include:
 * https://github.com/greenelab/deep-review/issues/81
 * https://github.com/greenelab/deep-review/issues/82
 * https://github.com/greenelab/deep-review/issues/152
 * https://github.com/greenelab/deep-review/issues/155
 
-Identifying consistent subgroups of individuals and individual health trajectories from clinical tests is also an active area of research. Approaches inspired by deep learning have been used for both unsupervised feature construction and supervised prediction. In the unsupervised space, early work demonstrated that unsupervised feature construction via denoising autoencoder neural networks could dramatically reduce the number of labeled examples required for subsequent supervised analyses [@doi:http://dx.doi.org/10.1101/039800]. A concurrent large-scale analysis of an electronic health records system found that a deep denoising autoencoder architecture applied to the number and co-occurrence of clinical test events, though not the results of those tests, constructed features that were more useful for disease prediction than other existing feature construction methods [@doi:http://doi.org/10.1038/srep26094]. While each of these touched on clinical tests, neither considered full text records. Taken together, these results support the potential of unsupervised feature construction in this domain. However, there are numerous challenges that will need to be overcome before we can fully assess the potential of deep learning for this application area.
+Identifying consistent subgroups of individuals and individual health
+trajectories from clinical tests is also an active area of research. Approaches
+inspired by deep learning have been used for both unsupervised feature
+construction and supervised prediction. In the unsupervised space, early work
+demonstrated that unsupervised feature construction via denoising autoencoder
+neural networks could dramatically reduce the number of labeled examples
+required for subsequent supervised analyses
+[@doi:http://dx.doi.org/10.1101/039800]. A concurrent large-scale analysis of an
+electronic health records system found that a deep denoising autoencoder
+architecture applied to the number and co-occurrence of clinical test events,
+though not the results of those tests, constructed features that were more
+useful for disease prediction than other existing feature construction methods
+[@doi:http://doi.org/10.1038/srep26094]. While each of these touched on clinical
+tests, neither considered full text records. Taken together, these results
+support the potential of unsupervised feature construction in this domain.
+However, there are numerous challenges that will need to be overcome before we
+can fully assess the potential of deep learning for this application area.
 
-##### Potential
-However, significant work needs to be done to move these from conceptual advances to practical game-changers.
+##### Opportunities
+However, significant work needs to be done to move these from conceptual
+advances to practical game-changers.
 
 
 ##### Unique challenges
-Additionally, unique barriers exist in this space that may hinder progress in this field.
+Additionally, unique barriers exist in this space that may hinder progress in
+this field.
 
 ###### Data sharing and privacy?
 
