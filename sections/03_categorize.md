@@ -63,6 +63,23 @@ pathologists. The authors' work suggest that this could reduce the false
 negative rate of such evaluations. `TODO: Incorporate #71 via @brettbj who has
 covered in journal club and has notes.`
 
+One source of training examples with rich clinical annotations is the electronic
+health record. Recently Lee et al.[@doi:10.1101/094276] developed an approach to
+distinguish individuals with Age-related Macular Degeneration from control
+individuals. They extracted approximately 100,000 images from structured
+electronic health records, which they used to train and evaluate a deep neural
+network. Combining this data resource with standard deep learning techniques,
+the authors reach greater than 93% accuracy. One item that is important to note
+with regards to this work is that the authors used their test set for evaluating
+when training had concluded. In other domains, this has resulted in a minimal
+change in the estimated accuracy
+[@url:http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf].
+However, there is not yet a single accepted standard within the field of
+biomedical research for such evaluations. We recommend the use of an independent
+test set wherever it is feasible. Despite this minor limitation, the work
+clearly illustrates the potential that can be unlocked from images stored in
+electronic health records.
+
 #### Electronic Health Records
 
 `TODO: @brettbj to incorporate
