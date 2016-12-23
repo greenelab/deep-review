@@ -51,6 +51,17 @@ subsequent training. Similar strategies have been employed for EHR data where
 high-quality labeled examples are also difficult to obtain
 [@doi:10.1101/039800].
 
+In addition to radiographic images, histology slides are also being analyzed
+with deep learning approaches. In recent work, Wang et al.[@arxiv:1606.05718]
+analyzed stained slides to identify cancers within slides of lymph node slices.
+The approach provided a probability map for each slide. On this task a
+pathologist has about a 3% error rate. Their algorithm had about a 7% error
+rate. However, their algorithms errors were not strongly correlated with the
+pathologist - combining both dropped the error rate to under 1%. In this area,
+these algorithms may be ready to incorporate into existing tools to aid
+pathologists. The authors' work suggest that this could reduce the false
+negative rate of such evaluations.
+
 #### Electronic Health Records
 
 `TODO: @brettbj to incorporate
