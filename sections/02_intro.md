@@ -46,10 +46,10 @@ algorithms which have all of the hallmarks of deep approaches except that they
 employ networks of limited depth. We found it valuable to include these as we
 sought to identify the current contributions of deep learning and to predict its
 future impact. Researchers may employ these shallow learning methods for a
-number of reasons including: shallow networks provide a degree of
-interpretability that better matches their use case; the available data are
+number of reasons including: 1) shallow networks provide a degree of
+interpretability that better matches their use case; 2) the available data are
 insufficient to support deeper architectures, however new datasets that will
-support deep methods are expected; or as building blocks to be combined with
+support deep methods are expected; 3) or as building blocks to be combined with
 other non-neural-network-based approaches at subsequent stages.
 
 ### Will deep learning transform the study of human disease?
@@ -70,7 +70,7 @@ considered infeasible, or if it made difficult, tedious, and non-routine
 analyses routine.
 
 Based on our guiding question, we focused on the application of deep learning to
-topics of biomedical importance. We divided the large range of topics into three broad classes based on their applied areas: (1) Disease and Patient Categorization, (2) Fundamental Biological Study, and (3) Patient Treatment. We briefly introduce the types of questions, approaches and data which are typical for each class in the application of deep learning.
+topics of biomedical importance. We divided the large range of topics into three broad classes based on their applied areas: Disease and Patient Categorization, Fundamental Biological Study, and Patient Treatment. We briefly introduce the types of questions, approaches and data which are typical for each class in the application of deep learning.
 
 #### Disease and Patient Categorization
 
