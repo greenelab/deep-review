@@ -137,3 +137,7 @@ interpretability problems, how can we best ensure reproducible models? What
 might a clinician, or policy maker, need to see in a deep model in order to
 influence healthcare decisions? Or, is deep learning a hypothesis generation
 machine that requires manual validation?*
+
+### Transfer learning/transferability of features
+
+* https://github.com/greenelab/deep-review/issues/139#issuecomment-268901804
