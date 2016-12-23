@@ -80,6 +80,8 @@ test set wherever it is feasible. Despite this minor limitation, the work
 clearly illustrates the potential that can be unlocked from images stored in
 electronic health records.
 
+Potential remaining topics: #122 & #151 looked interesting from an early glance.
+
 #### Electronic Health Records
 
 `TODO: @brettbj to incorporate
