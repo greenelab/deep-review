@@ -135,7 +135,6 @@ area.
 However, significant work needs to be done to move these from conceptual
 advances to practical game-changers.
 
-
 ##### Unique challenges
 
 Additionally, unique barriers exist in this space that may hinder progress in
