@@ -60,7 +60,8 @@ rate. However, their algorithms errors were not strongly correlated with the
 pathologist - combining both dropped the error rate to under 1%. In this area,
 these algorithms may be ready to incorporate into existing tools to aid
 pathologists. The authors' work suggest that this could reduce the false
-negative rate of such evaluations.
+negative rate of such evaluations. `TODO: Incorporate #71 via @brettbj who has
+covered in journal club and has notes.`
 
 #### Electronic Health Records
 
