@@ -19,7 +19,7 @@ growth of data in biomedicine. Perhaps these algorithms could identify the
 biological "cats" hidden in our data - the patterns unknown to the researcher - and allow the researcher to act on them.
 
 
-Deep learning has since transformed image analysis achieving human-level results in several tasks [@doi:10.1007/s11263-015-0816-y]. In addition, deep learning has been revolutionary in speech recognition and synthesis [arXiv:1412.5567v2,   arXiv:1609.08144], game-playing and reinforcement learning [@doi:10.1038/nature16961, doi:10.1038/nature14236], and natural language processing [   arXiv:1310.4546, arXiv:1609.08144]. In contrast, researchers' initial forays into the use of these techniques in biomedicine have been relatively limited.
+Deep learning has since transformed image analysis achieving human-level results in several tasks [@doi:10.1007/s11263-015-0816-y]. In addition, deep learning has been revolutionary in speech recognition and synthesis [@arXiv:1412.5567v2,   @arXiv:1609.08144], game-playing and reinforcement learning [@doi:10.1038/nature16961, @doi:10.1038/nature14236], and natural language processing [@arXiv:1310.4546, @arXiv:1609.08144]. In contrast, researchers' initial forays into the use of these techniques in biomedicine have been relatively limited.
 There are certainly numerous promising examples, but we have not yet seen the
 convergence on these approaches that occurred in other fields. In this review, we examine whether this is simply a matter of time or
 if there are unique challenges posed by biomedical data that render deep
@@ -34,7 +34,7 @@ inputs is usually multiplied by some weight and combined and summarized by the
 activation function. The value of the activation function is then multiplied by
 another set of weights to produce the output `TODO: we probably need a figure
 here - I see no way that we don't include this type of description in our paper,
-despite the fact that it's been done tons of times before. - I'm really partial to the nature bengio revew's presentation - really hitting on the idea of learning a feature to make a non-linear problem linear` These neural
+despite the fact that it's been done tons of times before. - I'm really partial to this nature review's explanation about making non-linear problems linear - figure 1 [@doi:10.1038/nature14539]` These neural
 networks are trained by identifying weights that produce a desired output from
 some specific input.
 
