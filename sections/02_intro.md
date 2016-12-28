@@ -1,6 +1,6 @@
 ## Introduction
 
-Biology and medicine are rapidly becoming particularly data-intensive field with
+Biology and medicine are rapidly becoming particularly data-intensive with
 respect to both research and practice. A recent comparison of genomics with
 social media, online videos and other data-intensive scientific disciplines
 suggested that the field of genomics alone would equal or surpass other fields
@@ -8,25 +8,26 @@ in data generation and analysis within the next decade
 [@doi:10.1371/journal.pbio.1002195]. These data present new opportunities, but
 also new challenges. We expect that algorithms to automatically extract
 meaningful patterns and provide actionable knowledge allowing us to better
-treat, categorize, or study disease will be required.
+treat, categorize, or study disease, all within data constrained and privacy
+critical environments. will be required.
 
 Concurrent with this explosive growth in biomedical data, a new class of machine
-learning algorithm has become widespread in the domain of image analysis.
+learning algorithm was initially popularized in the domain of image analysis.
 Computer scientists are now building many-layered neural networks from
-collections of millions of images. In a famous example, scientists from Google
-demonstrated that a neural network could learn to identify cats simply by
+collections of millions of images. In an early famous example, scientists from
+Google demonstrated that a neural network could learn to identify cats simply by
 watching online videos
 [@url:http://research.google.com/archive/unsupervised_icml2012.html]. Such
 approaches, termed deep learning, seem like a solution to the challenge
 presented by the growth of data in biomedicine. Perhaps these algorithms could
-identify the "cats" hidden in our data - the patterns that exist but that we
-don't know to look for - and could act on them.
+identify the "cats" hidden in our data - the patterns unknown to the
+researcher - and could act on them.
 
 Deep learning has transformed image analysis, but researchers' initial forays
 into the use of these techniques in biomedicine have been less conclusive.
 There are certainly numerous promising examples, but we have not yet seen the
-massive convergence on these approaches that occurred in the field of image
-analysis. In this review, we discuss whether this is simply a matter of time or
+convergence on these approaches that occurred in other fields. In this review,
+we examine whether this is simply a matter of time or
 if there are unique challenges posed by biomedical data that render deep
 learning methods more challenging or less fruitful to apply.
 
@@ -39,24 +40,22 @@ inputs is usually multiplied by some weight and combined and summarized by the
 activation function. The value of the activation function is then multiplied by
 another set of weights to produce the output `TODO: we probably need a figure
 here - I see no way that we don't include this type of description in our paper,
-despite the fact that it's been done tons of times before. Corresponded with the
-author of the neural network zoo on twitter. He says that we should feel free to
-grab what we need. He does not intend to draw more and he does not have vector
-forms. He would like us to link to the original blog post.` These neural
-networks are trained by identifying weights that produce a desired output from
-some specific input.
+despite the fact that it's been done tons of times before. - I'm really partial
+to this nature review's explanation about making non-linear problems linear -
+figure 1 [@doi:10.1038/nature14539]` These neural networks are trained by
+identifying weights that produce a desired output from some specific input.
 
-Neural networks can also be stacked. The outputs from one can be used as inputs
-to another. This process produces a stacked or multi-layer neural network. The
-multi-layer neural network techniques that underlie deep learning have a long
-history. Multi-layer methods have been discussed in the literature for more than
-five decades [@doi:10.1103/RevModPhys.34.135]. Given this context, it's
-challenging to consider "deep learning" as a new advance, though the term has
-only become widespread to describe analysis methods in the last decade. Much of
-the early history of neural networks has been extensively covered in a recent
-review [@doi:10.1016/j.neunet.2014.09.003].  For the purposes of this review, we
-identify deep learning approaches as those that use multi-layer neural networks
-to construct complex features from large-scale datasets.
+Neural networks can also be stacked. The outputs from one network can be used as
+inputs to another. This process produces a stacked, also known as a multi-layer,
+neural network. The multi-layer neural network techniques that underlie deep
+learning have a long history. Multi-layer methods have been discussed in the
+literature for more than five decades [@doi:10.1103/RevModPhys.34.135]. Given
+this context, it's challenging to consider "deep learning" as a new advance,
+though the term has only become widespread to describe analysis methods in the
+last decade. Much of the early history of neural networks has been extensively
+covered in a recent review [@doi:10.1016/j.neunet.2014.09.003]. For the purposes
+of this review, we identify deep learning approaches as those that use
+multi-layer neural networks to construct complex features.
 
 We also identify a class of algorithms that we term "shallow learning"
 approaches. We do not use this as a pejorative term, but instead to denote
@@ -67,7 +66,7 @@ future impact. Researchers may employ these shallow learning methods for a
 number of reasons including: 1) shallow networks provide a degree of
 interpretability that better matches their use case; 2) the available data are
 insufficient to support deeper architectures, however new datasets that will
-support deep methods are expected; or 3) as building blocks to be combined with
+support deep methods are expected; 3) or as building blocks to be combined with
 other non-neural-network-based approaches at subsequent stages.
 
 ### Will deep learning transform the study of human disease?
@@ -88,10 +87,11 @@ considered infeasible, or if it made difficult, tedious, and non-routine
 analyses routine.
 
 Based on our guiding question, we focused on the application of deep learning to
-topics of biomedical importance. This covers a large range of topics. We divided
-these into three broad classes based on their applied areas. We briefly
-introduce the types of questions, approaches and data which are typical for each
-class in the application of deep learning.
+topics of biomedical importance. We divided the large range of topics into three
+broad classes based on their applied areas: Disease and Patient Categorization,
+Fundamental Biological Study, and Patient Treatment. We briefly introduce the
+types of questions, approaches and data which are typical for each class in the
+application of deep learning.
 
 #### Disease and Patient Categorization
 
