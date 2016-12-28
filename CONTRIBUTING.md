@@ -51,7 +51,8 @@ The custom citation guidelines are as follows:
 + If the version of record doesn't have a DOI but does have a PubMed ID, cite
   like `[@pmid:26158728]`.
 + If the article is an _arXiv_ preprint, cite like `[@arxiv:1508.06576]`.
-+ If the article has none of the above, please file an issue.
++ If and only if the article has none of the above, cite with the URL like
+  `[@url:http://openreview.net/pdf?id=Sk-oDY9ge]`.
 
 You cite multiple items at once like `[@doi:10.15363/thinklab.4 @pmid:26158728
 @arxiv:1508.06576]`.
