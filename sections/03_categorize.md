@@ -19,7 +19,7 @@ tackle any of them? Are there example approaches whereby deep learning is
 already having a transformational impact? I (Casey) have added some sections
 below where I think we could contribute to the field with our discussion.*
 
-### Major Areas of Existing Contributions
+### Major areas of existing contributions
 
 *There are a number of major challenges in this space. How do we get data
 together from multiple distinct systems? How do we find biologically meaningful
@@ -28,9 +28,9 @@ we share these data while respecting privacy? I've made a section for each of
 these. Feel free to add more. I see each section as something on the order of
 1-2 paragraphs in our context.*
 
-#### Clinical Care
+#### Clinical care
 
-#### Imaging Applications in Health Care
+#### Imaging applications in health care
 
 One of the general areas where deep learning methods have had substantial
 success has been in image analysis. Applications in areas of medicine that use
@@ -82,7 +82,7 @@ electronic health records.
 
 Potential remaining topics: #122 & #151 looked interesting from an early glance.
 
-#### Electronic Health Records
+#### Electronic health records
 
 `TODO: @brettbj to incorporate
 https://github.com/greenelab/deep-review/issues/78 and
@@ -112,7 +112,7 @@ of tumors. The only features the authors supplied to the algorithms that they
 evaluated were unigrams and bigrams. These are the counts for single words and
 two-word combinations in a free text document. They subset the full set of words
 and word combinations to the 400 most commonly used ones. The machine learning
-algorithms that they employed (naive bayes, logistic regression, and deep neural
+algorithms that they employed (naive Bayes, logistic regression, and deep neural
 networks) all performed relatively similarly on the task of identifying the
 primary site. However, when the authors evaluated the more challenging task,
 i.e. evaluating the laterality of each tumor, the deep neural network
@@ -153,6 +153,12 @@ area.
 
 However, significant work needs to be done to move these from conceptual
 advances to practical game-changers.
+
+* Large data resources (see sample # issues that mammography researchers are
+    working around)
+* Semi-supervised methods to take advantage of large number of unlabeled
+    examples
+* Transfer learning.
 
 ##### Unique challenges
 
@@ -197,15 +203,6 @@ we see deep learning currently being used" section below.*
 expensive, so it may be helpful. I leave it here as a stub in case someone wants
 to take it on.*
 
-#### Where do we see deep learning currently being used?
-
-*This one is targeted at allowing us to summarize the areas that deep learning
-has touched. We should aim to highlight exemplar papers in this area. This will
-probably become a relatively lengthy subsubsubsub-section, perhaps with its own
-subsubsubsubsub-sections. To provide value to the review, I would suggest that
-we view contributions critically, and that we attempt to ask not only has deep
-learning been used but also did it matter?*
-
 #### Has deep learning already induced a strategic inflection point for one or more aspects?
 
 *I have looked through the papers that we have. I don't see a case in our
@@ -220,7 +217,6 @@ couldn't do similarly with some other method.*
 be transformational. Since we have some room to provide our perspective, I'd
 suggest that we take a relatively tough look at this once we review where we
 are in the parts above.*
-
 
 #### What unique potential does deep learning bring to this?
 
