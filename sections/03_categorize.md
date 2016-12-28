@@ -55,13 +55,15 @@ In addition to radiographic images, histology slides are also being analyzed
 with deep learning approaches. In recent work, Wang et al.[@arxiv:1606.05718]
 analyzed stained slides to identify cancers within slides of lymph node slices.
 The approach provided a probability map for each slide. On this task a
-pathologist has about a 3% error rate. Their algorithm had about a 7% error
-rate. However, their algorithms errors were not strongly correlated with the
-pathologist - combining both dropped the error rate to under 1%. In this area,
-these algorithms may be ready to incorporate into existing tools to aid
-pathologists. The authors' work suggests that this could reduce the false
-negative rate of such evaluations. `TODO: Incorporate #71 via @brettbj who has
-covered in journal club and has notes.`
+pathologist has about a 3% error rate. The pathologist did not produce any false
+positives, but did have a number of false negatives. Their algorithm had about
+twice the error rate of a pathologist. However, their algorithms errors were not
+strongly correlated with the pathologist. Theoretically, combining both could
+reduce the error rate to under 1%. In this area, these algorithms may be ready
+to incorporate into existing tools to aid pathologists. The authors' work
+suggests that this could reduce the false negative rate of such evaluations.
+`TODO: Incorporate #71 via @brettbj who has covered in journal club and has
+notes.`
 
 One source of training examples with rich clinical annotations is the electronic
 health record. Recently Lee et al.[@doi:10.1101/094276] developed an approach to
