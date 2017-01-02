@@ -35,3 +35,15 @@ networks have opened new avenues for representation learning.  These
 approaches may not be dominant on supervised learning
 tasks yet, but they are uniquely tailored to neural networks and have
 great future potential.*
+
+- Short introduction to problem, related reviews
+- Briefly mention compound-protein interaction-based and structure-based
+approaches because those will not be the main focus
+- Introduce ligand-based approaches, early success on Merck Kaggle,
+standard supervised learning with fingerprints or descriptors as features
+- Multi-task networks and conclusions from these studies
+- Representation learning and novel recent approaches including graph
+convolutions, autoencoders, and one shot learning
+- Possibly highlight DeepChem and other efforts on the software and
+reusability side
+- State of the field, "transformative" assessment
