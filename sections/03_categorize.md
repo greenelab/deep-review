@@ -1,6 +1,6 @@
 ## Does deep learning create a strategic inflection point in how we categorize individuals with respect to health and disease?
 
-*Focus for the purpose of this review - within a health care context.*
+*Focus for the purpose of this review - within a health care context.
 
 We currently categorize individuals using relatively *ad hoc* categories. These
 are divided, to an extent, by organ (e.g. cancers by tumor site), perhaps to an
@@ -89,7 +89,7 @@ illustrates the potential that can be unlocked from images stored in electronic
 health records.
 
 `TODO: Potential remaining topics: #122 & #151 looked interesting from an early
-glance. - Do we want to make the point that most of the imaging exampmles don't
+glance. - Do we want to make the point that most of the imaging examples don't
 really do anything different/unique from standard image processing examples
 (Imagenet etc.)`
 
@@ -174,40 +174,31 @@ unlabeled     examples * Transfer learning.
 Additionally, unique barriers exist in this space that may hinder progress in
 this field.
 
-###### Data sharing and privacy?
-
-*Differential privacy + private data computation
-
-*This is clearly a big issue. We should at least mention it. Deep learning likes
-lots of data, and sharing restrictions don't allow that. Perhaps a paragraph on
-current best practices and how they relate to deep learning. A lack of data (due
-to privacy and sharing restrictions) may hamper deep learning's utility in this
-area in ways that it doesn't for image analysis, etc. Perhaps this will be the
-Achilles heal of deep learning in this area. A couple things to think about
-[doi: 10.1126/science.1229566 doi:10.1016/j.cels.2016.04.013]*
-
 ###### Standardization/integration
 
-*Important to concentrate on fact that EHR's are not built for research
+EHRs are designed and optimized primarily for patient care and billing purposes,
+meaning research is at most a tertiary priority. This presents significant
+challenges to EHR based research in general, and particularly to data
+intensive deep learning research. EHRs are used differently even within the same
+health care system (@pmid:PMC3797550, @pmid:PMC3041534). Individual users have unique usage patterns, and different departments have different priorities which introduce missing data in a non-random fashion. Just et al. demonstrated that even the most
+basic task of matching patients can be challenging due to data entry issues
+[@pmid:27134610]. This is before considering challenges caused by system
+migrations and health care system expansions through acquisitions. Replication
+between hospital systems requires controlling for both these systematic biases as
+well as for population and demographic effects.  Historically, rules-based algorithms have been popular but because these are developed at a single institution and trained with a specific patient population they do not transfer easily to other populations [@doi:10.1136/amiajnl-2013-001935 ]. Wiley et al. [@doi:10.1142/9789813207813_0050] showed that warfarin dosing algorithms often under perform in African Americans, illustrating that some of these issues are unsolved even at a treatment best practices level. 
 
-*EHR standardization remains challenging. Even the most basic task of matching
-patients can be challenging due to data entry issues [@pmid:27134610]. From
-anecdotal conversations with colleagues, it sounds like the same information is
-often entered in distinct fields in different departments and different health
-care systems. It would be nice for someone to quickly survey the literature and
-provide a 1-2 paragraph summary of the state of the field. References to recent
-solid reviews would be great to include. A quick summary (with papers) of any
-deep learning approaches used in this area would be great in the "where do we
-see deep learning currently being used" section below.*
+###### Temporal Patient Trajectories
 
-*How do we find meaningful patterns from health data (including EHR, clinical
-trials, etc) that indicate categories of individuals? We should at least raise
-the distinct challenges of snapshot in time data and dynamic data that capture
-changes over time. It would be nice for someone to quickly survey the literature
-and provide a 1-2 paragraph summary of the state of the field. References to
-recent solid reviews would be great to include. A quick summary (with papers) of
-any deep learning approaches used in this area would be great in the "where do
-we see deep learning currently being used" section below.*
+Traditionally, physician training programs justified long training hours by citing increased continuity of care and learning by following the progression of a disease over time, despite the known consequences of decreased mental and quality of life [@doi:pmid:15047076, @pmid:12691951, @pmid:2321788, @pmid:9089922]. Yet, a common practice in EHR-based research is to take a point in time snapshot and convert patient data to a traditional vector for machine learning and statistical analysis. This results in significant signal losses as timing and order of events provide insight into a patient's disease and treatment. Efforts to account for the order of events have shown promise [@doi:10.1038/ncomms5022] but require exceedingly large patient sizes due to discrete combinatorial bucketing. 
+
+Lasko et al. [@pmid:23826094] used autoencoders on longitudinal sequences of serum urine acid measurements to identify population subtypes. More recently, deep learning has shown promise working with both sequences (Convolutional Neural Networks) [@arXiv:1607.07519] and the incorporation of past and current state (Recurrent Neural Networks, Long Short Term Memory Networks)[@arXiv:602.00357v1]. 
+
+###### Data sharing and privacy
+
+Early successes using deep learning involved very large training datasets (Imagenet 1.4 million images) [@arXiv:1409.0575], but a responsibility to protect patient privacy limits the ability openly share large patient datasets. Limited dataset sizes may restrict the number of parameters that can be trained in a model, but the lack of sharing may also hamper reproducibility and confidence in results. Even without sharing data, algorithms trained on confidential patient data may present security risks or accidentally allow for the exposure of individual level patient data. Tramer et al. [@arXiv:1609.02943] showed the ability to steal trained models via public APIs and Dwork and Roth [@doi:10.1561/0400000042] demonstrate the ability to expose individual level information from accurate answers in a machine learning model.
+
+Training algorithms in a differentially private manner provides a limited guarantee that the algorithms output will be equally likely to occur regardless of the participation of any one individual. The limit is determined by a single parameter which provides a quantification of privacy. Simmons et al. [doi:doi:10.1016/j.cels.2016.04.013] present the ability to perform GWASs in a differentially private manner and Abadi et al. [arXiv:1607.00133] show the ability to train deep learning classifiers under the differential privacy framework. Finally, Continuous Analysis [doi:10.1101/056473] allows for the ability to automatically track and share intermediate results for the purposes of reproducibility without sharing the original data.
+
 
 ###### Biomedical data is often "Wide"
 
@@ -216,22 +207,15 @@ we see deep learning currently being used" section below.*
 *tests etc).
 
 *Classical machine learning recommendations were to have 10x samples per number
-*of paremeters in the model.
+*of parameters in the model.
 
 *Number of parameters in an MLP. Convolutions and similar strategies help but do
 *not solve
 
 *Bengio diet networks paper
 
-#### Storage/compute
 
-*This bit I am less excited about. However, this recent preprint
-[@arxiv:1608.05148] is pretty cool, so maybe we want to consider it. Storage is
-expensive, so it may be helpful. I leave it here as a stub in case someone wants
-to take it on.*
-
-#### Has deep learning already induced a strategic inflection point for one or
-#### more aspects?
+#### Has deep learning already induced a strategic inflection point for one or more aspects?
 
 *I have looked through the papers that we have. I don't see a case in our
 collection where I felt that we'd be justified to say that deep learning has
