@@ -1,32 +1,31 @@
 ## Introduction
 
-Biology and medicine are rapidly becoming particularly data-intensive with
+Biology and medicine are rapidly becoming data-intensive with
 respect to both research and practice. A recent comparison of genomics with
 social media, online videos and other data-intensive scientific disciplines
 suggested that the field of genomics alone would equal or surpass other fields
 in data generation and analysis within the next decade
 [@doi:10.1371/journal.pbio.1002195]. These data present new opportunities, but
-also new challenges. We expect that algorithms to automatically extract
+also new challenges. The data volume and complexity both indicate that automated algorithms will be needed to extract
 meaningful patterns and provide actionable knowledge allowing us to better
 treat, categorize, or study disease, all within data constrained and privacy
-critical environments. will be required.
+critical environments.
 
 Concurrent with this explosive growth in biomedical data, a new class of machine
-learning algorithm was initially popularized in the domain of image analysis.
-Computer scientists are now building many-layered neural networks from
+learning algorithm - artificial neural networks, also known as deep learning -
+is revolutionizing domains from X to Y (I dunno - playing chess? serving ads?). 
+As recently applied to image analysis problems, these architectures are blowing away prior best-in-class results, and
+computer scientists are now building many-layered neural networks from
 collections of millions of images. In an early famous example, scientists from
 Google demonstrated that a neural network could learn to identify cats simply by
 watching online videos
-[@url:http://research.google.com/archive/unsupervised_icml2012.html]. Such
-approaches, termed deep learning, seem like a solution to the challenge
-presented by the growth of data in biomedicine. Perhaps these algorithms could
-identify the "cats" hidden in our data - the patterns unknown to the
-researcher - and could act on them.
+[@url:http://research.google.com/archive/unsupervised_icml2012.html]. 
 
-Deep learning has transformed image analysis, but researchers' initial forays
-into the use of these techniques in biomedicine have been less conclusive.
-There are certainly numerous promising examples, but we have not yet seen the
-convergence on these approaches that occurred in other fields. In this review,
+What if, more generally, deep learning could solve the challenges
+presented by the growth of data in biomedicine? Could these algorithms
+identify the "cats" hidden in our data - the patterns unknown to the
+researcher - and act on them? Deep learning has transformed image analysis, but 
+what about biomedicine more broadly? In this review,
 we examine whether this is simply a matter of time or
 if there are unique challenges posed by biomedical data that render deep
 learning methods more challenging or less fruitful to apply.
@@ -71,10 +70,10 @@ other non-neural-network-based approaches at subsequent stages.
 
 ### Will deep learning transform the study of human disease?
 
-With this review, we specifically set out to address the question: "what would
-need to be true for deep learning to transform how we categorize, study, and
-treat individuals to maintain or restore health?." We set a high bar for the
-term "transform." Specifically we sought to identify whether deep learning was a
+What would need to be true for deep learning to transform how we categorize, study, and
+treat individuals to maintain or restore health? With this review
+we set out to address this question, setting a high bar for 
+"transform." Specifically, we sought to identify whether deep learning was a
 disruptive innovation that would induce a strategic inflection point on the
 practice of biology or medicine. There are numerous examples where deep learning
 has been applied to biological problems and produced somewhat improved results,
@@ -88,44 +87,41 @@ analyses routine.
 
 Based on our guiding question, we focused on the application of deep learning to
 topics of biomedical importance. We divided the large range of topics into three
-broad classes based on their applied areas: Disease and Patient Categorization,
+broad classes: Disease and Patient Categorization,
 Fundamental Biological Study, and Patient Treatment. We briefly introduce the
-types of questions, approaches and data which are typical for each class in the
+types of questions, approaches and data that are typical for each class in the
 application of deep learning.
 
 #### Disease and Patient Categorization
 
-One important topic in the biomedical field is the accurate classification of
-diseases and disease subtypes. In the oncology field, current "gold standard"
-approaches are limited to either histological approaches, requiring manual
-human expertise, or shallow molecular markers, such as the cell surface
-receptors or small panels of genes. One example is the current PAM50 approach
-in classifying breast cancer, which utilizes the expression of 50 marker
-genes in order to divide breast cancer patients into four subtypes.
+A key challenge in biomedicine is the accurate classification of
+diseases and disease subtypes. In oncology, current "gold standard"
+approaches involve histology, requiring manual
+human expertise for quantification, or small panel of molecular markers, such as cell surface
+receptors or genes' expression. One example is the PAM50 approach
+to classifying breast cancer where the expression of 50 marker
+genes divides breast cancer patients into four subtypes.
 Significant heterogeneity still remains within these four subtypes
 [@doi:10.1200/JCO.2008.18.1370 @doi:10.1158/1078-0432.CCR-13-0583]. Given the
-increasing wealth of molecular data available, it seems that a more
-comprehensive subtyping is possible.
+increasing wealth of molecular data available, a more
+comprehensive subtyping seems possible.
 
 Several studies have used deep learning methods in order to better categorize
 breast cancer patients. For example, Tan et al. applied denoising
 autoencoders (DA), an unsupervised approach, in order to cluster breast
 cancer patients [@doi:10.1142/9789814644730_0014]. Ciresan et al. utilized
 convolutional neural networks (CNN) to count mitotic divisions in
-histological images; a feature which is highly correlated with disease
+histological images; a feature that is highly correlated with disease
 outcome [@doi:10.1007/978-3-642-40763-5_51]. Despite these recent advances, a
 number of challenges exist in this area of research, such as the integration
 of disparate types of data, including electronic health records (EHR),
-imaging and histology data and molecular omics data.
+imaging and histology data, and molecular omics data.
 
 #### Fundamental Biological Study
 
-Broadly speaking, topics in this class aim to answer more fundamental
-biological questions. Deep learning is especially suited in leveraging the
-large amounts of data from high throughput omics studies. The development of
-deep learning techniques and complex network architectures allow researchers
-to answer fundamental biological questions with unprecedented accuracy.
-`TODO: revisit "unprecedented accuracy" once we set the overall tone`. One
+Deep learning can be applied to answer more fundamental
+biological questions, and is especially suited to leveraging
+large amounts of data from high throughput omics studies. One
 classic biological problem where machine learning has been extensively
 applied is the prediction of molecular targets. Recent advances using deep
 learning have shown higher accuracy in determining molecular targets. For
@@ -142,8 +138,9 @@ polymorphisms [@doi:10.1093/bioinformatics/btu703], etc.
 
 #### Patient Treatment
 
-Studies in this category aim to recommend patient treatment, predict
-treatment outcome, or guide future development of new therapies..
+Although the application of deep learning to patient treatment is just beginning, 
+we expect a dramatic increase in methods aiming to recommend patient treatment, predict
+treatment outcome, and guide future development of new therapies.
 Specifically, effort in this area aims to identify drug targets, identify
 drug interactions or predict drug response. One recent approach for
 predicting drug response is the use of protein structure to predict drug
