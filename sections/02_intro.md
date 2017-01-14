@@ -6,25 +6,27 @@ social media, online videos and other data-intensive scientific disciplines
 suggested that the field of genomics alone would equal or surpass other fields
 in data generation and analysis within the next decade
 [@doi:10.1371/journal.pbio.1002195]. These data present new opportunities, but
-also new challenges. The data volume and complexity both indicate that automated algorithms will be needed to extract
+also new challenges. The data volume and complexity both indicate that 
+automated algorithms will be needed to extract
 meaningful patterns and provide actionable knowledge allowing us to better
 treat, categorize, or study disease, all within data constrained and privacy
 critical environments.
 
 Concurrent with this explosive growth in biomedical data, a new class of machine
 learning algorithm - artificial neural networks, also known as deep learning -
-is revolutionizing domains from X to Y (I dunno - playing chess? serving ads?). 
-As recently applied to image analysis problems, these architectures are blowing away prior best-in-class results, and
+is revolutionizing domains from X to Y (I dunno - playing chess? serving ads?).
+As recently applied to image analysis problems, 
+these architectures are blowing away prior best-in-class results, and
 computer scientists are now building many-layered neural networks from
 collections of millions of images. In an early famous example, scientists from
 Google demonstrated that a neural network could learn to identify cats simply by
 watching online videos
-[@url:http://research.google.com/archive/unsupervised_icml2012.html]. 
+[@url:http://research.google.com/archive/unsupervised_icml2012.html].
 
 What if, more generally, deep learning could solve the challenges
 presented by the growth of data in biomedicine? Could these algorithms
 identify the "cats" hidden in our data - the patterns unknown to the
-researcher - and act on them? Deep learning has transformed image analysis, but 
+researcher - and act on them? Deep learning has transformed image analysis, but
 what about biomedicine more broadly? In this review,
 we examine whether this is simply a matter of time or
 if there are unique challenges posed by biomedical data that render deep
@@ -70,9 +72,10 @@ other non-neural-network-based approaches at subsequent stages.
 
 ### Will deep learning transform the study of human disease?
 
-What would need to be true for deep learning to transform how we categorize, study, and
+What would need to be true for deep learning to transform how we
+categorize, study, and
 treat individuals to maintain or restore health? With this review
-we set out to address this question, setting a high bar for 
+we set out to address this question, setting a high bar for
 "transform." Specifically, we sought to identify whether deep learning was a
 disruptive innovation that would induce a strategic inflection point on the
 practice of biology or medicine. There are numerous examples where deep learning
@@ -97,7 +100,8 @@ application of deep learning.
 A key challenge in biomedicine is the accurate classification of
 diseases and disease subtypes. In oncology, current "gold standard"
 approaches involve histology, requiring manual
-human expertise for quantification, or small panel of molecular markers, such as cell surface
+human expertise for quantification, or small panel of molecular markers, 
+such as cell surface
 receptors or genes' expression. One example is the PAM50 approach
 to classifying breast cancer where the expression of 50 marker
 genes divides breast cancer patients into four subtypes.
@@ -138,8 +142,9 @@ polymorphisms [@doi:10.1093/bioinformatics/btu703], etc.
 
 #### Patient Treatment
 
-Although the application of deep learning to patient treatment is just beginning, 
-we expect a dramatic increase in methods aiming to recommend patient treatment, predict
+Although the application of deep learning to patient treatment is just beginning,
+we expect a dramatic increase in methods aiming to recommend patient
+treatment, predict
 treatment outcome, and guide future development of new therapies.
 Specifically, effort in this area aims to identify drug targets, identify
 drug interactions or predict drug response. One recent approach for
