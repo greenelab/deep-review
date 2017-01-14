@@ -88,9 +88,13 @@ of cells contain a wide variety of quantitative information, and deep
 learning may just be the tool to extract it. Although classical methods
 of segmentation and feature extraction can produce hundreds of metrics
 per cell in an image, deep learning is unconstrained by human intuition
-and can in theory extract more subtle features.
+and can in theory extract more subtle features. Already, there is evidence
+deep learning can surpass the efficacy of classical methods
+[@doi:10.1101/081364], even using generic deep convolutional networks
+trained on natural images [@doi:10.1101/085118], known as transfer learning.
 
-The impact on biomedicine could be enormous. Comparing cell population
+The impact of further improvements on biomedicine could be enormous.
+Comparing cell population
 morphologies using conventional methods of segmentation and feature
 extraction has already proven useful for functionally annotating genes
 and alleles, identifying the cellular target of small molecules, and
@@ -101,10 +105,6 @@ Deep learning would bring to these new kinds of experiments - known
 as image-based profiling or morphological profiling - a higher degree of
 accuracy, stemming from the freedom from human-tuned feature extraction
 strategies.
-
-*Transfer learning from non-biological datasets to biological imaging
-data could fit here, and that does seem like an important topic.  Or
-transfer learning could be a more general topic for the Discussion section.*
 
 ### Single-cell
 
