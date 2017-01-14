@@ -6,7 +6,7 @@ social media, online videos and other data-intensive scientific disciplines
 suggested that the field of genomics alone would equal or surpass other fields
 in data generation and analysis within the next decade
 [@doi:10.1371/journal.pbio.1002195]. These data present new opportunities, but
-also new challenges. The data volume and complexity both indicate that 
+also new challenges. The data volume and complexity both indicate that
 automated algorithms will be needed to extract
 meaningful patterns and provide actionable knowledge allowing us to better
 treat, categorize, or study disease, all within data constrained and privacy
@@ -15,7 +15,7 @@ critical environments.
 Concurrent with this explosive growth in biomedical data, a new class of machine
 learning algorithm - artificial neural networks, also known as deep learning -
 is revolutionizing domains from X to Y (I dunno - playing chess? serving ads?).
-As recently applied to image analysis problems, 
+As recently applied to image analysis problems,
 these architectures are blowing away prior best-in-class results, and
 computer scientists are now building many-layered neural networks from
 collections of millions of images. In an early famous example, scientists from
@@ -100,7 +100,7 @@ application of deep learning.
 A key challenge in biomedicine is the accurate classification of
 diseases and disease subtypes. In oncology, current "gold standard"
 approaches involve histology, requiring manual
-human expertise for quantification, or small panel of molecular markers, 
+human expertise for quantification, or small panel of molecular markers,
 such as cell surface
 receptors or genes' expression. One example is the PAM50 approach
 to classifying breast cancer where the expression of 50 marker
