@@ -66,14 +66,14 @@ bioimage analysis - and not in the way you might first think.
 Thus far, the primary use of deep learning for biological
 images has been for segmentation - that is, for the identification
 of biologically relevant structures in images such as nuclei,
-infected cells, or vasculature. Once so-called regions of
+infected cells, or vasculature, in fluorescence or even brightfield
+channels [@doi:10.1371/journal.pcbi.1005177]. Once so-called regions of
 interest have been identified, it is often straightforward
 to measure biological properties of interest, such as fluorescence
 intensities, textures, and sizes. Given the dramatic successes of
-deep learning in biological imaging, we simply refer to recent reviews
-`TODO: insert deep learning/bioimaging reviews here, one candidate is
-Kraus OZ, Frey BJ: Computer vision for high content screening.
-Crit Rev Biochem Mol Biol 2016, 51:102-109 `.
+deep learning in biological imaging, we simply refer to articles that
+review recent advancements [@doi:10.3109/10409238.2015.1135868]
+[@doi:10.1371/journal.pcbi.1005177] [@doi:10.1007/978-3-319-24574-4_28].
 We believe deep learning will become a commonplace tool for
 biological image segmentation once user-friendly tools exist.
 
