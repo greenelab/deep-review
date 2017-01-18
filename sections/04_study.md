@@ -83,20 +83,21 @@ use interesting network architectures to approach single-cell data.
 ### Metagenomics
 
 *@gailrosen will write this:*
-	Metagenomics (which refers to the study of genetic material, 16S rRNA and/or whole-genome shotgun DNA, from microbial communities) has revolutionized the study
-of micro-scale ecosystems within us and around us. There is increasing
-literature of applying machine learning in general to metagenomic analysis.  
-In the late 2000’s, a plethora of machine learning methods were applied to
-classifying DNA sequencing reads to the thousands of species within a sample.
- An important problem is genome assembly from these mixed-organism samples. 
-And to do that, the organisms should be “binned” before assembling.  Binning
-methods began with many k-mer techniques [refs] and then delved into other
-clustering algorithms, such as self-organizing maps (SOM).  Then came the
-taxonomic classification problem,  with researchers naturally using BLAST
-[blast], followed by other machine learning techniques such as SVMs
-[McHardy], naive Bayesian classifiers [nbc], etc. to classify each read. 
-Then, researchers began to use techniques that could be used to estimate
-relative abundances of an entire sample, instead of the precise but
+	Metagenomics (which refers to the study of genetic material, 16S rRNA 
+and/or whole-genome shotgun DNA, from microbial communities) has 
+revolutionized the study of micro-scale ecosystems within us and around us. 
+There is increasing literature of applying machine learning in general to 
+metagenomic analysis.  In the late 2000’s, a plethora of machine learning 
+methods were applied to classifying DNA sequencing reads to the thousands of 
+species within a sample.  An important problem is genome assembly from these 
+mixed-organism samples. And to do that, the organisms should be “binned” 
+before assembling.  Binning methods began with many k-mer techniques [refs] 
+and then delved into other clustering algorithms, such as self-organizing maps 
+(SOM).  Then came the taxonomic classification problem,  with researchers 
+naturally using BLAST [blast], followed by other machine learning techniques 
+such as SVMs [McHardy], naive Bayesian classifiers [nbc], etc. to classify 
+each read.  Then, researchers began to use techniques that could be used to 
+estimate relative abundances of an entire sample, instead of the precise but
 painstakingly slow read-by-read classification.  Relative abundance
 estimators (a.k.a diversity profilers) are MetaPhlan[ref], (WGS)Quikr[ref],
 and some configurations of tools like OneCodex[ref] and LMAT[ref].  While one
