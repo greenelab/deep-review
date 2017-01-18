@@ -83,8 +83,7 @@ use interesting network architectures to approach single-cell data.
 ### Metagenomics
 
 *@gailrosen will write this:*
-	Metagenomics (which refers to the study of microbial communities derived
-from 16S rRNA and/or whole-genome shotgun DNA) has revolutionized the study
+	Metagenomics (which refers to the study of genetic material, 16S rRNA and/or whole-genome shotgun DNA, from microbial communities) has revolutionized the study
 of micro-scale ecosystems within us and around us. There is increasing
 literature of applying machine learning in general to metagenomic analysis.  
 In the late 2000’s, a plethora of machine learning methods were applied to
