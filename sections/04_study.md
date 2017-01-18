@@ -120,7 +120,7 @@ looked into how feature selection can improve classification [Liu, Segata],
 and techniques have been proposed that are classifier-independent
 [Ditzler,Ditzler].
 
-	So, how have neural networks been of use?  One of the first techniques of
+So, how have neural networks been of use?  One of the first techniques of
 genome binning used neural networks [Abe]. Neural networks can be slow, and
 so far only TAC-ELM [tac-elm] has utilized it to taxonomically classify
 massive amounts of metagenomic data.  Also, neural networks can fail to
@@ -141,7 +141,7 @@ invented Long Short Term Memory, delved into homology/protein family
 classification in 2007, and therefore, deep learning is deeply rooted in
 functional classification methods.
 
-	Most neural networks are being used for short sequence->taxa/function
+Most neural networks are being used for short sequence->taxa/function
 classification, where there is a lot of data for training (and thus suitable
 for NNs).  And, as a short side note, recurrent neural networks are showing
 success for base-calling (and thus removing the large error in the
@@ -166,7 +166,7 @@ are still a challenge for deep neural networks that require many more
 training examples than features to sufficiently converge the weights on the
 hidden layers.
 
-	In fact, due to convergence issues of neural networks, one would think
+In fact, due to convergence issues of neural networks, one would think
 that taxonomic classification would be impossible for deep neural networks. 
 However, with the 16S rRNA having hundreds of thousands of full-sequenced
 examples (compared to several thousand fully-sequenced whole-genome
