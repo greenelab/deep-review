@@ -20,7 +20,7 @@ Issues, we had reservations about whether the improvements in expression
 prediction are good enough to make a practical difference in the domain and
 feature selection and construction.*
 
-### High-throughput screening and drug development
+### Ligand-Based Prediction of Bioactivity
 
 *Deep learning has been applied in some fashion to structure-based,
 compound-protein interaction-based, and ligand-based prediction problems
@@ -35,3 +35,8 @@ networks have opened new avenues for representation learning.  These
 approaches may not be dominant on supervised learning
 tasks yet, but they are uniquely tailored to neural networks and have
 great future potential.*
+
+
+### Modeling Metabolism and Chemical Reactivity
+
+*Add a reveiw here of metabolism and chemical reactivity.*
