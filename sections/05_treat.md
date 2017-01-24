@@ -39,4 +39,4 @@ great future potential.*
 
 ### Modeling Metabolism and Chemical Reactivity
 
-*Add a reveiw here of metabolism and chemical reactivity.*
+Add a reveiw here of metabolism and chemical reactivity.
