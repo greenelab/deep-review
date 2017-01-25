@@ -20,7 +20,7 @@ Issues, we had reservations about whether the improvements in expression
 prediction are good enough to make a practical difference in the domain and
 feature selection and construction.*
 
-### High-throughput screening and drug development
+### Ligand-Based Prediction of Bioactivity
 
 *Deep learning has been applied in some fashion to structure-based,
 compound-protein interaction-based, and ligand-based prediction problems
@@ -47,3 +47,7 @@ convolutions, autoencoders, and one shot learning
 - Possibly highlight DeepChem and other efforts on the software and
 reusability side
 - State of the field, "transformative" assessment
+
+### Modeling Metabolism and Chemical Reactivity
+
+Add a reveiw here of metabolism and chemical reactivity.

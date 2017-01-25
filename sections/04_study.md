@@ -50,9 +50,9 @@ application in this area.*
 *miRNAs are important biologically, but have neural networks produced anything
 particularly notable in this area?*
 
-### Protein secondary and tertiarty structure
+### Protein secondary and tertiary structure
 
-*We have not surveyed this area comprehensively yet.*
+*Jinbo Xu is writing this*
 
 ### Signaling
 
