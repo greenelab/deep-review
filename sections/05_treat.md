@@ -36,7 +36,6 @@ approaches may not be dominant on supervised learning
 tasks yet, but they are uniquely tailored to neural networks and have
 great future potential.*
 
-
 ### Modeling Metabolism and Chemical Reactivity
 
 Add a reveiw here of metabolism and chemical reactivity.
