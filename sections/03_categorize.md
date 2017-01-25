@@ -9,24 +9,24 @@ continual refinement (e.g. new subtypes of disease) as our understanding
 improves.
 
 *Would deep learning enable us to do this automatically in some principled way?
-Are there reasons to believe that this would be advantageous? Would it be
-positive to have disease categories changed by data, or would the changing
-definition (i.e. as more data are accumulated) actually be harmful? What impacts
-would this have on the training of physicians?*
+*Are there reasons to believe that this would be advantageous? Would it be
+*positive to have disease categories changed by data, or would the changing
+*definition (i.e. as more data are accumulated) actually be harmful? What
+*impacts would this have on the training of physicians?*
 
 *What are the major challenges in this space, and does deep learning enable us
-to tackle any of them? Are there example approaches whereby deep learning is
-already having a transformational impact? I (Casey) have added some sections
-below where I think we could contribute to the field with our discussion.*
+*to tackle any of them? Are there example approaches whereby deep learning is
+*already having a transformational impact? I (Casey) have added some sections
+*below where I think we could contribute to the field with our discussion.*
 
 ### Major areas of existing contributions
 
 *There are a number of major challenges in this space. How do we get data
-together from multiple distinct systems? How do we find biologically meaningful
-patterns in that data? How do we store and compute on this data at scale? How do
-we share these data while respecting privacy? I've made a section for each of
-these. Feel free to add more. I see each section as something on the order of
-1-2 paragraphs in our context.*
+*together from multiple distinct systems? How do we find biologically meaningful
+*patterns in that data? How do we store and compute on this data at scale? How
+*do we share these data while respecting privacy? I've made a section for each
+*of these. Feel free to add more. I see each section as something on the order
+*of 1-2 paragraphs in our context.*
 
 #### Clinical care
 
@@ -52,8 +52,7 @@ high-quality labeled examples are also difficult to obtain
 [@doi:10.1101/039800].
 
 In addition to radiographic images, histology slides are also being analyzed
-with deep learning approaches. Ciresan et al.
-[@doi:10.1007/978-3-642-40763-5_51] developed one of the earliest examples,
+with deep learning approaches. Ciresan et al. [@doi:10.1007/978-3-642-40763-5_51] developed one of the earliest examples,
 winning the 2012 International Conference on Pattern Recognition's Contest on
 Mitosis Detection while achieving human competitive accuracy. Their approach
 uses what has become a standard convolutional neural network architecture
@@ -132,10 +131,12 @@ repurpose features from task to task, improving overall predictions as the field
 tackles new challenges.
 
 TODO: survival analysis/readmission prediction methods from EHR/EMR style data
-(@sw1 + maybe @traversc). These include: * https://github.com/greenelab/deep-
-review/issues/81 * https://github.com/greenelab/deep-review/issues/82 *
-https://github.com/greenelab/deep-review/issues/152 *
-https://github.com/greenelab/deep-review/issues/155
+(@sw1 + maybe @traversc). These include:
+
+* https://github.com/greenelab/deep-review/issues/81
+* https://github.com/greenelab/deep-review/issues/82
+* https://github.com/greenelab/deep-review/issues/152
+* https://github.com/greenelab/deep-review/issues/155
 
 Identifying consistent subgroups of individuals and individual health
 trajectories from clinical tests is also an active area of research. Approaches
@@ -165,9 +166,9 @@ potential of deep learning for this application area.
 However, significant work needs to be done to move these from conceptual
 advances to practical game-changers.
 
-* Large data resources (see sample # issues that mammography researchers are
-working around) * Semi-supervised methods to take advantage of large number of
-unlabeled     examples * Transfer learning.
+* Large data resources (see sample # issues that mammography researchers are working around)
+* Semi-supervised methods to take advantage of large number of unlabeled     examples
+* Transfer learning.
 
 ##### Unique challenges
 
@@ -178,27 +179,70 @@ this field.
 
 EHRs are designed and optimized primarily for patient care and billing purposes,
 meaning research is at most a tertiary priority. This presents significant
-challenges to EHR based research in general, and particularly to data
-intensive deep learning research. EHRs are used differently even within the same
-health care system (@pmid:PMC3797550, @pmid:PMC3041534). Individual users have unique usage patterns, and different departments have different priorities which introduce missing data in a non-random fashion. Just et al. demonstrated that even the most
-basic task of matching patients can be challenging due to data entry issues
-[@pmid:27134610]. This is before considering challenges caused by system
-migrations and health care system expansions through acquisitions. Replication
-between hospital systems requires controlling for both these systematic biases as
-well as for population and demographic effects.  Historically, rules-based algorithms have been popular but because these are developed at a single institution and trained with a specific patient population they do not transfer easily to other populations [@doi:10.1136/amiajnl-2013-001935 ]. Wiley et al. [@doi:10.1142/9789813207813_0050] showed that warfarin dosing algorithms often under perform in African Americans, illustrating that some of these issues are unsolved even at a treatment best practices level. 
+challenges to EHR based research in general, and particularly to data intensive
+deep learning research. EHRs are used differently even within the same health
+care system [@pmid:PMC3797550, @pmid:PMC3041534]. Individual users have unique
+usage patterns, and different departments have different priorities which
+introduce missing data in a non-random fashion. Just et al. demonstrated that
+even the most basic task of matching patients can be challenging due to data
+entry issues [@pmid:27134610]. This is before considering challenges caused by
+system migrations and health care system expansions through acquisitions.
+Replication between hospital systems requires controlling for both these
+systematic biases as well as for population and demographic effects.
+Historically, rules-based algorithms have been popular but because these are
+developed at a single institution and trained with a specific patient population
+they do not transfer easily to other populations
+[@doi:10.1136/amiajnl-2013-001935 ]. Wiley et al.
+[@doi:10.1142/9789813207813_0050] showed that warfarin dosing algorithms often
+under perform in African Americans, illustrating that some of these issues are
+unsolved even at a treatment best practices level.
 
 ###### Temporal Patient Trajectories
 
-Traditionally, physician training programs justified long training hours by citing increased continuity of care and learning by following the progression of a disease over time, despite the known consequences of decreased mental and quality of life [@doi:pmid:15047076, @pmid:12691951, @pmid:2321788, @pmid:9089922]. Yet, a common practice in EHR-based research is to take a point in time snapshot and convert patient data to a traditional vector for machine learning and statistical analysis. This results in significant signal losses as timing and order of events provide insight into a patient's disease and treatment. Efforts to account for the order of events have shown promise [@doi:10.1038/ncomms5022] but require exceedingly large patient sizes due to discrete combinatorial bucketing. 
+Traditionally, physician training programs justified long training hours by
+citing increased continuity of care and learning by following the progression of
+a disease over time, despite the known consequences of decreased mental and
+quality of life [@doi:10.1016/j.socscimed.2003.08.016,
+@doi:10.1016/S1072-7515(03)00097-8, @pmid:2321788,
+@doi:10.1016/S0277-9536(96)00227-4]. Yet, a common practice in EHR-based
+research is to take a point in time snapshot and convert patient data to a
+traditional vector for machine learning and statistical analysis. This results
+in significant signal losses as timing and order of events provide insight into
+a patient's disease and treatment. Efforts to account for the order of events
+have shown promise [@doi:10.1038/ncomms5022] but require exceedingly large
+patient sizes due to discrete combinatorial bucketing.
 
-Lasko et al. [@pmid:23826094] used autoencoders on longitudinal sequences of serum urine acid measurements to identify population subtypes. More recently, deep learning has shown promise working with both sequences (Convolutional Neural Networks) [@arXiv:1607.07519] and the incorporation of past and current state (Recurrent Neural Networks, Long Short Term Memory Networks)[@arXiv:602.00357v1]. 
+Lasko et al. [@doi:10.1371/annotation/0c88e0d5-dade-4376-8ee1-49ed4ff238e2] used
+autoencoders on longitudinal sequences of serum urine acid measurements to
+identify population subtypes. More recently, deep learning has shown promise
+working with both sequences (Convolutional Neural Networks) [@arXiv:1607.07519]
+and the incorporation of past and current state (Recurrent Neural Networks, Long
+Short Term Memory Networks)[@arXiv:602.00357v1].
 
 ###### Data sharing and privacy
 
-Early successes using deep learning involved very large training datasets (Imagenet 1.4 million images) [@arXiv:1409.0575], but a responsibility to protect patient privacy limits the ability openly share large patient datasets. Limited dataset sizes may restrict the number of parameters that can be trained in a model, but the lack of sharing may also hamper reproducibility and confidence in results. Even without sharing data, algorithms trained on confidential patient data may present security risks or accidentally allow for the exposure of individual level patient data. Tramer et al. [@arXiv:1609.02943] showed the ability to steal trained models via public APIs and Dwork and Roth [@doi:10.1561/0400000042] demonstrate the ability to expose individual level information from accurate answers in a machine learning model.
+Early successes using deep learning involved very large training datasets
+(ImageNet 1.4 million images) [@arXiv:1409.0575], but a responsibility to
+protect patient privacy limits the ability openly share large patient datasets.
+Limited dataset sizes may restrict the number of parameters that can be trained
+in a model, but the lack of sharing may also hamper reproducibility and
+confidence in results. Even without sharing data, algorithms trained on
+confidential patient data may present security risks or accidentally allow for
+the exposure of individual level patient data. Tramer et al. [@arXiv:1609.02943]
+showed the ability to steal trained models via public APIs and Dwork and Roth
+[@doi:10.1561/0400000042] demonstrate the ability to expose individual level
+information from accurate answers in a machine learning model.
 
-Training algorithms in a differentially private manner provides a limited guarantee that the algorithms output will be equally likely to occur regardless of the participation of any one individual. The limit is determined by a single parameter which provides a quantification of privacy. Simmons et al. [doi:doi:10.1016/j.cels.2016.04.013] present the ability to perform GWASs in a differentially private manner and Abadi et al. [arXiv:1607.00133] show the ability to train deep learning classifiers under the differential privacy framework. Finally, Continuous Analysis [doi:10.1101/056473] allows for the ability to automatically track and share intermediate results for the purposes of reproducibility without sharing the original data.
-
+Training algorithms in a differentially private manner provides a limited
+guarantee that the algorithms output will be equally likely to occur regardless
+of the participation of any one individual. The limit is determined by a single
+parameter which provides a quantification of privacy. Simmons et al.
+[doi:doi:10.1016/j.cels.2016.04.013] present the ability to perform GWASs in a
+differentially private manner and Abadi et al. [arXiv:1607.00133] show the
+ability to train deep learning classifiers under the differential privacy
+framework. Finally, Continuous Analysis [doi:10.1101/056473] allows for the
+ability to automatically track and share intermediate results for the purposes
+of reproducibility without sharing the original data.
 
 ###### Biomedical data is often "Wide"
 
@@ -212,31 +256,30 @@ Training algorithms in a differentially private manner provides a limited guaran
 *Number of parameters in an MLP. Convolutions and similar strategies help but do
 *not solve
 
-*Bengio diet networks paper
-
+*Bengio diet networks paper*
 
 #### Has deep learning already induced a strategic inflection point for one or more aspects?
 
 *I have looked through the papers that we have. I don't see a case in our
-collection where I felt that we'd be justified to say that deep learning has
-transformed how we categorize individuals with respect to health and disease.
-There are definitely interesting applications, but I don't see anything that we
-couldn't do similarly with some other method.*
+*collection where I felt that we'd be justified to say that deep learning has
+*transformed how we categorize individuals with respect to health and disease.
+*There are definitely interesting applications, but I don't see anything that we
+*couldn't do similarly with some other method.*
 
 ### Will deep learning induce a strategic inflection point for categorization?
 
 *This section attempts to get at whether or not we think that deep learning will
-be transformational. Since we have some room to provide our perspective, I'd
-suggest that we take a relatively tough look at this once we review where we are
-in the parts above.*
+*be transformational. Since we have some room to provide our perspective, I'd
+*suggest that we take a relatively tough look at this once we review where we
+*are in the parts above.*
 
 #### What unique potential does deep learning bring to this?
 
 *Are there areas that we expect deep learning to transform how we categorize
-disease that we haven't seen yet? Let's get fun with speculation/dreaming on
-this one.*
+*disease that we haven't seen yet? Let's get fun with speculation/dreaming on
+*this one.*
 
 #### Where would you point your deep learning efforts if you had the time?
 
 *This can be fun. We might eventually merge this with the section immediately
-above on deep learning's unique potential here.*
+*above on deep learning's unique potential here.*
