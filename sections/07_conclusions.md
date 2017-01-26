@@ -2,6 +2,12 @@
 
 *Final thoughts and future outlook here*
 
+Points to mention based on discussion thus far:
+
+* Limitations of data [availability impacts on amount, etc]
+* Strong enthusiasm for unsupervised approaches.
+* Right to an explanation [possibly, depends if raised in multiple areas]
+
 ### Author contributions
 
 `TODO: not sure if it should go here, but somewhere we should talk about how we
