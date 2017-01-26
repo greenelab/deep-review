@@ -62,7 +62,7 @@ elsewhere?*
 ### Morphological phenotypes
 
 A field poised for dramatic revolution by deep learning is
-bioimage analysis - and not in the way you might first think.
+bioimage analysis.
 Thus far, the primary use of deep learning for biological
 images has been for segmentation - that is, for the identification
 of biologically relevant structures in images such as nuclei,
