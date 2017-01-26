@@ -52,7 +52,8 @@ high-quality labeled examples are also difficult to obtain
 [@doi:10.1101/039800].
 
 In addition to radiographic images, histology slides are also being analyzed
-with deep learning approaches. Ciresan et al. [@doi:10.1007/978-3-642-40763-5_51] developed one of the earliest examples,
+with deep learning approaches. Ciresan et al.
+[@doi:10.1007/978-3-642-40763-5_51] developed one of the earliest examples,
 winning the 2012 International Conference on Pattern Recognition's Contest on
 Mitosis Detection while achieving human competitive accuracy. Their approach
 uses what has become a standard convolutional neural network architecture
@@ -166,8 +167,10 @@ potential of deep learning for this application area.
 However, significant work needs to be done to move these from conceptual
 advances to practical game-changers.
 
-* Large data resources (see sample # issues that mammography researchers are working around)
-* Semi-supervised methods to take advantage of large number of unlabeled     examples
+* Large data resources (see sample # issues that mammography researchers are
+  working around)
+* Semi-supervised methods to take advantage of large number of unlabeled
+  examples
 * Transfer learning.
 
 ##### Unique challenges
@@ -189,13 +192,17 @@ entry issues [@pmid:27134610]. This is before considering challenges caused by
 system migrations and health care system expansions through acquisitions.
 Replication between hospital systems requires controlling for both these
 systematic biases as well as for population and demographic effects.
-Historically, rules-based algorithms have been popular but because these are
-developed at a single institution and trained with a specific patient population
-they do not transfer easily to other populations
+Historically, rules-based algorithms have been popular in EHR-based research but
+because these are developed at a single institution and trained with a specific
+patient population they do not transfer easily to other populations
 [@doi:10.1136/amiajnl-2013-001935 ]. Wiley et al.
 [@doi:10.1142/9789813207813_0050] showed that warfarin dosing algorithms often
 under perform in African Americans, illustrating that some of these issues are
-unsolved even at a treatment best practices level.
+unsolved even at a treatment best practices level. This may be a promising
+application of deep learning, as rules-based algorithms were also the standard
+in most natural language processing but have been superseded by machine learning
+and in particular deep learning methods
+[@url:https://aclweb.org/anthology/D/D13/D13-1079.pdf].
 
 ###### Temporal Patient Trajectories
 
@@ -247,14 +254,14 @@ of reproducibility without sharing the original data.
 ###### Biomedical data is often "Wide"
 
 *Biomedical studies typically deal with relatively small sample sizes but each
-*sample may have millions of measurements (genotypes and other omics data, lab
-*tests etc).
+sample may have millions of measurements (genotypes and other omics data, lab
+tests etc).*
 
 *Classical machine learning recommendations were to have 10x samples per number
-*of parameters in the model.
+of parameters in the model.*
 
 *Number of parameters in an MLP. Convolutions and similar strategies help but do
-*not solve
+not solve*
 
 *Bengio diet networks paper*
 
