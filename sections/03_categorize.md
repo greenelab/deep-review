@@ -1,6 +1,6 @@
 ## Does deep learning create a strategic inflection point in how we categorize individuals with respect to health and disease?
 
-*Focus for the purpose of this review - within a health care context.
+*Focus for the purpose of this review - within a health care context.*
 
 We currently categorize individuals using relatively *ad hoc* categories. These
 are divided, to an extent, by organ (e.g. cancers by tumor site), perhaps to an
@@ -9,24 +9,24 @@ continual refinement (e.g. new subtypes of disease) as our understanding
 improves.
 
 *Would deep learning enable us to do this automatically in some principled way?
-*Are there reasons to believe that this would be advantageous? Would it be
-*positive to have disease categories changed by data, or would the changing
-*definition (i.e. as more data are accumulated) actually be harmful? What
-*impacts would this have on the training of physicians?*
+Are there reasons to believe that this would be advantageous? Would it be
+positive to have disease categories changed by data, or would the changing
+definition (i.e. as more data are accumulated) actually be harmful? What
+impacts would this have on the training of physicians?*
 
 *What are the major challenges in this space, and does deep learning enable us
-*to tackle any of them? Are there example approaches whereby deep learning is
-*already having a transformational impact? I (Casey) have added some sections
-*below where I think we could contribute to the field with our discussion.*
+to tackle any of them? Are there example approaches whereby deep learning is
+already having a transformational impact? I (Casey) have added some sections
+below where I think we could contribute to the field with our discussion.*
 
 ### Major areas of existing contributions
 
 *There are a number of major challenges in this space. How do we get data
-*together from multiple distinct systems? How do we find biologically meaningful
-*patterns in that data? How do we store and compute on this data at scale? How
-*do we share these data while respecting privacy? I've made a section for each
-*of these. Feel free to add more. I see each section as something on the order
-*of 1-2 paragraphs in our context.*
+together from multiple distinct systems? How do we find biologically meaningful
+patterns in that data? How do we store and compute on this data at scale? How
+do we share these data while respecting privacy? I've made a section for each
+of these. Feel free to add more. I see each section as something on the order
+of 1-2 paragraphs in our context.*
 
 #### Clinical care
 
@@ -268,25 +268,25 @@ not solve*
 #### Has deep learning already induced a strategic inflection point for one or more aspects?
 
 *I have looked through the papers that we have. I don't see a case in our
-*collection where I felt that we'd be justified to say that deep learning has
-*transformed how we categorize individuals with respect to health and disease.
-*There are definitely interesting applications, but I don't see anything that we
-*couldn't do similarly with some other method.*
+collection where I felt that we'd be justified to say that deep learning has
+transformed how we categorize individuals with respect to health and disease.
+There are definitely interesting applications, but I don't see anything that we
+couldn't do similarly with some other method.*
 
 ### Will deep learning induce a strategic inflection point for categorization?
 
 *This section attempts to get at whether or not we think that deep learning will
-*be transformational. Since we have some room to provide our perspective, I'd
-*suggest that we take a relatively tough look at this once we review where we
-*are in the parts above.*
+be transformational. Since we have some room to provide our perspective, I'd
+suggest that we take a relatively tough look at this once we review where we
+are in the parts above.*
 
 #### What unique potential does deep learning bring to this?
 
 *Are there areas that we expect deep learning to transform how we categorize
-*disease that we haven't seen yet? Let's get fun with speculation/dreaming on
-*this one.*
+disease that we haven't seen yet? Let's get fun with speculation/dreaming on
+this one.*
 
 #### Where would you point your deep learning efforts if you had the time?
 
 *This can be fun. We might eventually merge this with the section immediately
-*above on deep learning's unique potential here.*
+above on deep learning's unique potential here.*
