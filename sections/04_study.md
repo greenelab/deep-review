@@ -106,6 +106,9 @@ as image-based profiling or morphological profiling - a higher degree of
 accuracy, stemming from the freedom from human-tuned feature extraction
 strategies.
 
+`TODO: Make sure that at the end we clearly emphasize our excitement around
+unsupervised uses.`
+
 ### Single-cell
 
 *There are not many neural network papers in this area (yet), unless we count
