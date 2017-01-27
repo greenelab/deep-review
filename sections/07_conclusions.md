@@ -1,7 +1,7 @@
 ## Conclusions
 
-*Final thoughts and future outlook here. The Discussion will give an overview
-and the Conclusion will provide a short, punchy take home message.*
+Final thoughts and future outlook here. The Discussion will give an overview
+and the Conclusion will provide a short, punchy take home message.
 
 Points to mention based on discussion thus far that may make the bar for
 conclusions:
