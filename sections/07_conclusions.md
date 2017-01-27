@@ -1,6 +1,15 @@
 ## Conclusions
 
-*Final thoughts and future outlook here*
+Final thoughts and future outlook here. The Discussion will give an overview
+and the Conclusion will provide a short, punchy take home message.
+
+Points to mention based on discussion thus far that may make the bar for
+conclusions:
+
+* Limitations of data & workarounds [availability impacts on amount, etc]
+* Transferability of features
+* Strong enthusiasm for unsupervised approaches.
+* Right to an explanation [possibly, depends if raised in multiple areas]
 
 ### Author contributions
 
