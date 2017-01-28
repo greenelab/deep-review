@@ -121,7 +121,7 @@ Protein contact prediction and contact-assisted folding (i.e., folding proteins 
 predicted contacts as restraints) represents a promising new direction for ab initio folding 
 of proteins without good templates in PDB. 
 Evolutionary coupling analysis (ECA) is an effective contact prediction method for some 
-proteins with a very large number (>1000) of sequence homologs [doi:10.1371/journal.pone.0028766], 
+proteins with a very large number (>1000) of sequence homologs [@doi:10.1371/journal.pone.0028766], 
 but ECA fares poorly for proteins without many sequence homologs. Since (soluble) proteins with 
 many sequence homologs are likely to have a good template in PDB, to make contact-assisted 
 folding practically useful for ab initio folding, it is essential to predict accurate contacts 
