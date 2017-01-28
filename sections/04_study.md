@@ -93,7 +93,7 @@ has been significantly improved [@doi:10.1371/journal.pcbi.1005324
 Protein secondary structure can exhibit three different states (alpha helix, 
 beta strand and loop regions) or eight finer-grained states. More methods are 
 developed to predict 3-state secondary structure than 8-state. A predictor is 
-typically evaluated by Q3 and 8-state (i.e., Q8) accuracy, respectively. 
+typically evaluated by 3-state (i.e., Q3) and 8-state (i.e., Q8) accuracy, respectively. 
 Qi et al. developed a multi-task deep learning method to simultaneously predict several 
 local structure properties including secondary structures [@doi:10.1371/journal.pone.0032235]. 
 Cheng group predicted secondary structure using deep belief networks 
