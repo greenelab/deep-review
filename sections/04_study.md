@@ -72,8 +72,8 @@ interest have been identified, it is often straightforward
 to measure biological properties of interest, such as fluorescence
 intensities, textures, and sizes. Given the dramatic successes of
 deep learning in biological imaging, we simply refer to articles that
-review recent advancements [@doi:10.3109/10409238.2015.1135868]
-[@doi:10.1371/journal.pcbi.1005177] [@doi:10.1007/978-3-319-24574-4_28].
+review recent advancements [@doi:10.3109/10409238.2015.1135868
+@doi:10.1371/journal.pcbi.1005177 @doi:10.1007/978-3-319-24574-4_28].
 We believe deep learning will become a commonplace tool for
 biological image segmentation once user-friendly tools exist.
 
@@ -99,8 +99,8 @@ morphologies using conventional methods of segmentation and feature
 extraction has already proven useful for functionally annotating genes
 and alleles, identifying the cellular target of small molecules, and
 identifying disease-specific phenotypes suitable for drug screening
-[@doi:10.1016/j.copbio.2016.04.003] [@doi:10.1002/cyto.a.22909]
-[@doi:10.1083/jcb.201610026].
+[@doi:10.1016/j.copbio.2016.04.003 @doi:10.1002/cyto.a.22909
+@doi:10.1083/jcb.201610026].
 Deep learning would bring to these new kinds of experiments - known
 as image-based profiling or morphological profiling - a higher degree of
 accuracy, stemming from the freedom from human-tuned feature extraction
