@@ -60,12 +60,12 @@ also highly relevant in the development of therapeutics and drugs. UnitProt
 currently has about 94 millions of protein sequences. Even if we remove 
 redundancy at 50% sequence identity level, UnitProt still has about 
 20 millions of protein sequences. However, fewer than 100,000 proteins 
-have experimentally-solved structures. As a result, computational structure 
-prediction is essential for a majority number of protein sequences. However, 
-predicting protein 3D structures from sequence alone is very challenging, 
-especially when similar solved structures (called templates) are not available 
-in the Protein Data Bank (PDB). In the past decades, various computational 
-methods have been developed to predict protein structure from different aspects, 
+have experimentally-solved structures in Protein Data Bank (PDB). As a result, 
+computational structure prediction is essential for a majority number of 
+protein sequences. However, predicting protein 3D structures from sequence alone 
+is very challenging, especially when similar solved structures (called templates) 
+are not available in PDB. In the past decades, various computational methods have 
+been developed to predict protein structure from different aspects, 
 including prediction of secondary structure, torsion angles, solvent accessibility, 
 inter-residue contact map, disorder regions and side-chain packing.
 
@@ -83,7 +83,7 @@ contact map prediction. Secondary structure refers to local conformation of
 a sequence segment while a contact map contains information of global 
 conformation. Secondary structure prediction is a basic problem and almost 
 an essential module of any protein structure prediction package. It has also
-been frequently used to benchmark new machine learning methods. 
+been used as sequence labeling benchmark in the machine learning community. 
 Contact prediction is much more challenging than secondary structure prediction,
 but it has a much larger impact on tertiary structure prediction. 
 In recent years, contact prediction has made good progress and its accuracy 
@@ -117,16 +117,16 @@ improving secondary structure prediction from 80% to 84-85% is unlikely to
 result in a similar amount of improvement in tertiary structure prediction since secondary
 structure mainly reflects coarse-grained local conformation of a protein structure.
 
-Protein folding restrained by predicted contacts, also called contact-assisted protein 
-folding, represents a promising new direction for ab initio folding of proteins without 
-good templates in PDB, but it requires accurate contact prediction. Evolutionary coupling 
-analysis (ECA) is an effective contact prediction method for some proteins with a very large 
-number (>1000) of sequence homologs [doi:10.1371/journal.pone.0028766], but ECA fares poorly 
-for proteins without many sequence homologs. Since (soluble) proteins with many sequence 
-homologs are likely to have a good template in PDB, to make contact-assisted folding practically 
-useful for ab initio folding, it is essential to predict accurate contacts for proteins 
-without many sequence homologs. By combining ECA with a few other protein features, shallow neural 
-network-based methods such as MetaPSICOV [@doi:10.1093/bioinformatics/btu791] and 
+Protein contact prediction and contact-assisted folding (i.e., folding proteins using 
+predicted contacts as restraints) represents a promising new direction for ab initio folding 
+of proteins without good templates in PDB. 
+Evolutionary coupling analysis (ECA) is an effective contact prediction method for some 
+proteins with a very large number (>1000) of sequence homologs [doi:10.1371/journal.pone.0028766], 
+but ECA fares poorly for proteins without many sequence homologs. Since (soluble) proteins with 
+many sequence homologs are likely to have a good template in PDB, to make contact-assisted 
+folding practically useful for ab initio folding, it is essential to predict accurate contacts 
+for proteins without many sequence homologs. By combining ECA with a few other protein features, 
+shallow neural network-based methods such as MetaPSICOV [@doi:10.1093/bioinformatics/btu791] and 
 CoinDCA-NN [@doi:10.1093/bioinformatics/btv472] have shown some advantage over ECA 
 for proteins with a small number of sequence homologs, but their accuracy is still not very good. 
 In recent years, deep learning methods have been explored for contact prediction. For example, 
@@ -140,23 +140,25 @@ an iterative deep learning technique for contact prediction by stacking a series
 these methods did not show any advantage over MetaPSICOV [@doi:10.1093/bioinformatics/btu791], a method 
 using two cascaded neural networks. Very recently, Wang and Xu et al. proposed a novel deep learning method 
 RaptorX-Contact [@doi:10.1371/journal.pcbi.1005324] that can significantly improve contact prediction 
-accuracy over MetaPSICOV especially for proteins without many sequence homologs. This deep model is 
-formed by one 1D residual neural network and one 2D residual neural network. Blindly tested in the 
-latest CASP competition (i.e., CASP12 [@url:http://www.predictioncenter.org/casp12/rrc_avrg_results.cgi]), 
+over MetaPSICOV especially for proteins without many sequence homologs. RaptorX-Contact employs a network 
+architecture formed by one 1D residual neural network and one 2D residual neural network. 
+Blindly tested in the latest CASP competition (i.e., CASP12 [@url:http://www.predictioncenter.org/casp12/rrc_avrg_results.cgi]), 
 RaptorX-Contact is ranked first in terms of the total F1 score (a widely-used performance metric) on 
 free-modeling targets as well as the whole set of targets. In the CASP12 test, the group ranked second 
 also employed a deep learning method. Even MetaPSICOV, which ranked third in CASP12, employed more
-and wider hidden layers in its neural networks than its old version. Wang and Xu et al. have also 
+and wider hidden layers than its old version. Wang and Xu et al. have also 
 demonstrated in another blind test CAMEO (which can be interpreted as a fully-automated 
-CASP) [@url:http://www.cameo3d.org/] that the predicted contacts can fold quite a few proteins 
+CASP) [@url:http://www.cameo3d.org/] that their predicted contacts can help fold quite a few proteins 
 with a novel fold and only 65-330 sequence homologs and that their method also works well on membrane 
 protein contact prediction even if trained mostly by non-membrane proteins. In fact, most of the top 10 
 contact prediction groups in CASP12 employed some kind of deep learning techniques. The RaptorX-Contact 
 method performed better mainly due to introduction of residual neural networks and exploiting contact
 occurrence patterns by simultaneous prediction of all the contacts in a single protein. 
-It is still possible to further improve contact prediction by studying some new network architectures. 
-In addition, the deep learning methods summarized above also apply to the prediction of interfacial contacts
-of a protein complex. However, current methods fail when proteins in question have almost no sequence homologs. 
+It is still possible to further improve contact prediction by studying new deep network architectures. 
+However, current methods fail when proteins in question have almost no sequence homologs. It is unclear if there
+is an effective way to deal with this type of proteins or not except waiting for more sequence homologs.
+Finally, the deep learning methods summarized above also apply to interfacial contact prediction 
+of a protein complex, but may be less effective since on average protein complexes have fewer sequence homologs. 
 
 ### Signaling
 
