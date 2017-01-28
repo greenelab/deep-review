@@ -96,25 +96,24 @@ developed to predict 3-state secondary structure than 8-state. A predictor is
 typically evaluated by 3-state (i.e., Q3) and 8-state (i.e., Q8) accuracy, respectively. 
 Qi et al. developed a multi-task deep learning method to simultaneously predict several 
 local structure properties including secondary structures [@doi:10.1371/journal.pone.0032235]. 
-Cheng group predicted secondary structure using deep belief networks 
-[@doi:10.1109/TCBB.2014.2343960]. Zhou developed an iterative deep learning framework 
-to simultaneously predict secondary structure, backbone torsion angles and solvent accessibility 
-[@doi:10.1038/srep11476]. However, none of these deep learning methods 
-achieved significant improvement over PSIPRED in terms of Q3 accuracy. In 
-2014, Zhou and Troyanskaya demonstrated that they could improve Q8 
-accuracy over a shallow learning architecture conditional neural fields [@doi:
-10.1002/pmic.201100196] by using a deep supervised and convolutional 
-generative stochastic network[@arXiv:1403.1347], but did not report any 
-results in terms of Q3 accuracy. In 2016 Wang and Xu developed a deep 
-convolutional neural fields (DeepCNF) model and showed that this model 
-can significantly improve secondary structure prediction in terms of both Q3 
-and Q8 accuracy[@doi:10.1038/srep18962]. DeepCNF possibly is the first that reports 
-Q3 accuracy of 84-85%, much higher than the 80% accuracy maintained by PSIPRED 
-for more than 10 years. It is also reported that DeepCNF can improve prediction of 
-solvent accessibility and disorder regions [@doi:10.1007/978-3-319-46227-1_1]. This 
-improvement may be mainly due to the introduction of convolutional neural fields to 
-capture long-range sequential information, which is important for beta strand prediction.
-Nevertheless, improving secondary structure prediction from 80% to 84-85% is unlikely to 
+Spencer, Eickholt and Cheng predicted secondary structure using deep belief networks 
+[@doi:10.1109/TCBB.2014.2343960]. Heffernan and Zhou et al. developed an iterative 
+deep learning framework to simultaneously predict secondary structure, backbone torsion 
+angles and solvent accessibility [@doi:10.1038/srep11476]. However, none of these deep 
+learning methods achieved significant improvement over PSIPRED [@doi:10.1006/jmbi.1999.3091] 
+in terms of Q3 accuracy. In 2014, Zhou and Troyanskaya demonstrated that they could 
+improve Q8 accuracy over a shallow learning architecture conditional neural fields [@doi:10.1002/pmic.201100196] 
+by using a deep supervised and convolutional generative stochastic network[@arXiv:1403.1347], 
+but did not report any results in terms of Q3 accuracy. In 2016 Wang and Xu et al. developed a deep 
+convolutional neural fields (DeepCNF) model that can significantly improve secondary 
+structure prediction in terms of both Q3 and Q8 accuracy[@doi:10.1038/srep18962]. 
+DeepCNF possibly is the first that reports Q3 accuracy of 84-85%, much higher than 
+the 80% accuracy maintained by PSIPRED for more than 10 years. 
+It is also reported that DeepCNF can improve prediction of solvent accessibility 
+and disorder regions [@doi:10.1007/978-3-319-46227-1_1]. This improvement may be mainly 
+due to the introduction of convolutional neural fields to capture long-range 
+sequential information, which is important for beta strand prediction. Nevertheless, 
+improving secondary structure prediction from 80% to 84-85% is unlikely to 
 result in a similar amount of improvement in tertiary structure prediction since secondary
 structure mainly reflects coarse-grained local conformation of a protein structure.
 
