@@ -86,8 +86,8 @@ an essential module of any protein structure prediction package. It has also
 been frequently used to benchmark new machine learning methods. 
 Contact prediction is much more challenging than secondary structure prediction,
 but it has a much larger impact on tertiary structure prediction. 
-In recent years, contact prediction has made a good progress and 
-its accuracy has been significantly improved [@doi:10.1371/journal.pcbi.1005324 
+In recent years, contact prediction has made good progress and its accuracy 
+has been significantly improved [@doi:10.1371/journal.pcbi.1005324 
 @doi:10.1093/bioinformatics/btu791 @doi:10.1073/pnas.0805923106 @doi:10.1371/journal.pone.0028766].
 
 Protein secondary structure can exhibit three different states (alpha helix, 
