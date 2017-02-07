@@ -114,8 +114,8 @@ between these organisms and host/environment phenotypes [Guetterman].  One of
 the first attempts was a survey of supervised classification methods for
 microbes->phenotype classification [Knights], followed by similar studies
 that are more massive in scale [Stratnikov, Segata].  There have been
-techniques that bypass the taxonomic classification step altogether [Ding]
-(sequence composition->phenotype classification).  Also, researchers have
+techniques that bypass the taxonomic classification step altogether [Ding et al]
+(sequence composition to phenotype classification).  Also, researchers have
 looked into how feature selection can improve classification [Liu, Segata],
 and techniques have been proposed that are classifier-independent
 [Ditzler,Ditzler].
