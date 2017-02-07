@@ -132,7 +132,7 @@ genomic fragments and showed that it has better performance than K-means;
 however, other methods based on interpolated Markov models [Salzberg] have
 performed better.  Due to the complexity of the problem, neural networks have
 been applied more to gene annotation (e.g. Orphelia [Hoff]), which usually
-have plenty of training examples.  Representations (similar to Word2Vec [ref]
+has plenty of training examples.  Representations (similar to Word2Vec [ref]
 in natural language processing) for protein family classification has been
 introduced and classified with a skip-gram neural network [Asgari]. 
 Recurrent neural networks show good performance for homology and protein
@@ -166,13 +166,15 @@ are still a challenge for deep neural networks that require many more
 training examples than features to sufficiently converge the weights on the
 hidden layers.
 
-In fact, due to convergence issues of neural networks, one would think
-that taxonomic classification would be impossible for deep neural networks. 
-However, with the 16S rRNA having hundreds of thousands of full-sequenced
-examples (compared to several thousand fully-sequenced whole-genome
-sequences), deep neural networks have been successfully applied to taxonomic
-classification of 16S rRNA genes, with convolutional networks outperforming
-RNNs and even random forests [Mrzelj].
+In fact, due to convergence issues (slowness and instability due to large 
+neural networks modeling very large datasets [arXiv:1212.0901v2]), one would 
+think that taxonomic classification would be impossible for deep neural 
+networks. However, with the 16S rRNA databases containing hundreds of thousands 
+of full-sequenced examples (compared to several thousand fully-sequenced 
+whole-genome sequences), deep neural networks have been successfully applied to 
+taxonomic classification of 16S rRNA genes, with convolutional networks 
+provide about 10% accuracy genus-level improvement over RNNs and even random 
+forests [Mrzelj].
 
 ### Sequencing and variant calling
 
