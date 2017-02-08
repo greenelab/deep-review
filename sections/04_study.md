@@ -82,8 +82,8 @@ use interesting network architectures to approach single-cell data.
 
 ### Metagenomics
 
-*@gailrosen will write this:*
-	Metagenomics (which refers to the study of genetic material, 16S rRNA 
+**TODO: Add reference tags to this section**
+Metagenomics (which refers to the study of genetic material, 16S rRNA 
 and/or whole-genome shotgun DNA, from microbial communities) has 
 revolutionized the study of micro-scale ecosystems within us and around us. 
 There is increasing literature of applying machine learning in general to 
