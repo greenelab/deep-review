@@ -131,14 +131,6 @@ This indicates a potential strength of deep methods. It may be possible to
 repurpose features from task to task, improving overall predictions as the field
 tackles new challenges.
 
-TODO: survival analysis/readmission prediction methods from EHR/EMR style data
-(@sw1 + maybe @traversc). These include:
-
-* https://github.com/greenelab/deep-review/issues/81
-* https://github.com/greenelab/deep-review/issues/82
-* https://github.com/greenelab/deep-review/issues/152
-* https://github.com/greenelab/deep-review/issues/155
-
 Identifying consistent subgroups of individuals and individual health
 trajectories from clinical tests is also an active area of research. Approaches
 inspired by deep learning have been used for both unsupervised feature
@@ -161,6 +153,31 @@ demographics, family history, laboratory tests, text-based patient records,
 image analysis, genomic data) and better handling of streaming temporal data
 with many features, will need to be overcome before we can fully assess the
 potential of deep learning for this application area.
+
+Still, recent work has also revealed domains in which deep networks have
+proven superior to traditional methods. Survival analysis models the time
+leading to an event of interest from a shared starting point, and in the
+context of EHR data, often associates these events to subject covariates.
+Exploring this relationship is difficult, however, given that EHR data types
+are often heterogeneous, covariates are often missing, and conventional
+approaches require the covariate-event relationship be linear and aligned to a
+specific starting point [@arxiv:1608.02158]. Early approaches, such as the
+Faraggi-Simon feed-forward network, aimed to relax the linearity assumption,
+but performance gains were lacking [@doi:10.1016/S0167-9473(99)00098-5].
+Katzman et al. in turn developed a deep implementation of the Faraggi-Simon
+network that, in addition to outperforming Cox regression, was capable of
+comparing the risk between a given pair of treatments, thus potentially acting
+as recommender system [@arxiv:1606.00931]. To overcome the remaining
+difficulties, researchers have turned to deep exponential families, a class of
+latent generative models that are constructed from any type of exponential
+family distributions [@arxiv:1411.2581v1]. The result was a deep survival
+analysis model capable of overcoming challenges posed by missing data and
+heterogeneous data types, while uncovering nonlinear relationships between
+covariates and failure time. They showed their model more accurately
+stratified patients as a function of disease risk score compared the current
+clinical implementation.
+`TODO: @sw1: Are there specific challenges with using a deep neural network
+as opposed to current standard methods?`
 
 ##### Opportunities
 
