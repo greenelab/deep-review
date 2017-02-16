@@ -59,18 +59,55 @@ particularly notable in this area?*
 *There is not much content here.  Can [@tag:Chen2015_trans_species] be covered
 elsewhere?*
 
-### Cellular phenotypes
+### Morphological phenotypes
 
-*These are primarily imaging-based phenotypes.  We have not surveyed this area
-very comprehensively.  We could decide to not make imaging a primary focus,
-refer to existing reviews, and mention only a few particularly noteworthy
-representative papers.  Alternatively, we need to expand our literature review
-and summaries immediately if someone wants to be responsible for this
-sub-section.*
+A field poised for dramatic revolution by deep learning is
+bioimage analysis.
+Thus far, the primary use of deep learning for biological
+images has been for segmentation - that is, for the identification
+of biologically relevant structures in images such as nuclei,
+infected cells, or vasculature, in fluorescence or even brightfield
+channels [@doi:10.1371/journal.pcbi.1005177]. Once so-called regions of
+interest have been identified, it is often straightforward
+to measure biological properties of interest, such as fluorescence
+intensities, textures, and sizes. Given the dramatic successes of
+deep learning in biological imaging, we simply refer to articles that
+review recent advancements [@doi:10.3109/10409238.2015.1135868
+@doi:10.1371/journal.pcbi.1005177 @doi:10.1007/978-3-319-24574-4_28].
+We believe deep learning will become a commonplace tool for
+biological image segmentation once user-friendly tools exist.
 
-*Transfer learning from non-biological datasets to biological imaging
-data could fit here, and that does seem like an important topic.  Or
-transfer learning could be a more general topic for the Discussion section.*
+We anticipate an additional kind of paradigm shift in bioimaging that
+will be brought about by deep learning: what if images of biological
+samples, from simple cell cultures to three-dimensional organoids and
+tissue samples, could be mined for much more extensive biologically
+meaningful information than is currently standard? In biomedical research,
+by far the most common paradigm is for biologists to decide in advance
+what feature to measure in images from their assay system. But images
+of cells contain a wide variety of quantitative information, and deep
+learning may just be the tool to extract it. Although classical methods
+of segmentation and feature extraction can produce hundreds of metrics
+per cell in an image, deep learning is unconstrained by human intuition
+and can in theory extract more subtle features. Already, there is evidence
+deep learning can surpass the efficacy of classical methods
+[@doi:10.1101/081364], even using generic deep convolutional networks
+trained on natural images [@doi:10.1101/085118], known as transfer learning.
+
+The impact of further improvements on biomedicine could be enormous.
+Comparing cell population
+morphologies using conventional methods of segmentation and feature
+extraction has already proven useful for functionally annotating genes
+and alleles, identifying the cellular target of small molecules, and
+identifying disease-specific phenotypes suitable for drug screening
+[@doi:10.1016/j.copbio.2016.04.003 @doi:10.1002/cyto.a.22909
+@doi:10.1083/jcb.201610026].
+Deep learning would bring to these new kinds of experiments - known
+as image-based profiling or morphological profiling - a higher degree of
+accuracy, stemming from the freedom from human-tuned feature extraction
+strategies.
+
+`TODO: Make sure that at the end we clearly emphasize our excitement around
+unsupervised uses.`
 
 ### Single-cell
 
