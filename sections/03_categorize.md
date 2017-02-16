@@ -166,6 +166,8 @@ heterogeneous data types, while uncovering nonlinear relationships between
 covariates and failure time. They showed their model more accurately
 stratified patients as a function of disease risk score compared the current
 clinical implementation.
+`TODO: @sw1: Are there specific challenges with using a deep neural network
+as opposed to current standard methods?`
 
 ##### Opportunities
 
