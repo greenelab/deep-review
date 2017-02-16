@@ -12,15 +12,14 @@ meaningful patterns and provide actionable knowledge allowing us to better
 treat, categorize, or study disease, all within data constrained and privacy
 critical environments.
 
-Concurrent with this explosive growth in biomedical data, a new class of machine
-learning algorithm - artificial neural networks, also known as deep learning -
-is revolutionizing domains from X to Y (I dunno - playing chess? serving ads?).
-As recently applied to image analysis problems,
-these architectures are blowing away prior best-in-class results, and
-computer scientists are now building many-layered neural networks from
-collections of millions of images. In an early famous example, scientists from
-Google demonstrated that a neural network could learn to identify cats simply by
-watching online videos
+Concurrent with this explosive growth in biomedical data, a new enthusiasm for a
+class of machine learning algorithms, known as deep learning, is revolutionizing
+domains from image search to the game of Go [@doi:10.1038/nature16961]. As
+recently applied to image analysis problems, these architectures readily surpass
+previous best-in-class results, and computer scientists are now building
+many-layered neural networks from collections of millions of images. In a famous
+and early example, scientists from Google demonstrated that a neural network
+could learn to identify cats simply by watching online videos
 [@url:http://research.google.com/archive/unsupervised_icml2012.html].
 
 What if, more generally, deep learning could solve the challenges
@@ -28,7 +27,7 @@ presented by the growth of data in biomedicine? Could these algorithms
 identify the "cats" hidden in our data - the patterns unknown to the
 researcher - and act on them? Deep learning has transformed image analysis, but
 what about biomedicine more broadly? In this review,
-we examine whether this is simply a matter of time or
+we examine whether this transformation is simply a matter of time or
 if there are unique challenges posed by biomedical data that render deep
 learning methods more challenging or less fruitful to apply.
 
@@ -43,7 +42,7 @@ another set of weights to produce the output `TODO: we probably need a figure
 here - I see no way that we don't include this type of description in our paper,
 despite the fact that it's been done tons of times before. - I'm really partial
 to this nature review's explanation about making non-linear problems linear -
-figure 1 [@doi:10.1038/nature14539]` These neural networks are trained by
+figure 1 [@doi:10.1038/nature14539]`. These neural networks are trained by
 identifying weights that produce a desired output from some specific input.
 
 Neural networks can also be stacked. The outputs from one network can be used as
@@ -58,7 +57,7 @@ covered in a recent review [@doi:10.1016/j.neunet.2014.09.003]. For the purposes
 of this review, we identify deep learning approaches as those that use
 multi-layer neural networks to construct complex features.
 
-We also identify a class of algorithms that we term "shallow learning"
+We also discuss a class of algorithms that we term "shallow learning"
 approaches. We do not use this as a pejorative term, but instead to denote
 algorithms which have all of the hallmarks of deep approaches except that they
 employ networks of limited depth. We found it valuable to include these as we
@@ -72,13 +71,14 @@ other non-neural-network-based approaches at subsequent stages.
 
 ### Will deep learning transform the study of human disease?
 
-What would need to be true for deep learning to transform how we
+With this review, we set out to address the question: what would need to be true for deep learning to transform how we
 categorize, study, and
-treat individuals to maintain or restore health? With this review
-we set out to address this question, setting a high bar for
+treat individuals to maintain or restore health? We chose a high bar for
 "transform." Specifically, we sought to identify whether deep learning was a
 disruptive innovation that would induce a strategic inflection point on the
-practice of biology or medicine. There are numerous examples where deep learning
+practice of biology or medicine. `TODO: define SIP / andy grove`
+
+There are numerous examples where deep learning
 has been applied to biological problems and produced somewhat improved results,
 and there are numerous reviews that have focused on general applications of deep
 learning in biology [@doi:10.1038/nbt.3313 @doi:10.1002/minf.201501008
