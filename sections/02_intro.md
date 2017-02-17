@@ -71,12 +71,15 @@ other non-neural-network-based approaches at subsequent stages.
 
 ### Will deep learning transform the study of human disease?
 
-With this review, we set out to address the question: what would need to be true for deep learning to transform how we
-categorize, study, and
-treat individuals to maintain or restore health? We chose a high bar for
-"transform." Specifically, we sought to identify whether deep learning was a
-disruptive innovation that would induce a strategic inflection point on the
-practice of biology or medicine. `TODO: define SIP / andy grove`
+With this review, we set out to address the question: what would need to be true
+for deep learning to transform how we categorize, study, and treat individuals
+to maintain or restore health? We chose a high bar for "transform." Andrew
+Grove, the former CEO of Intel, coined the term Strategic Inflection Point to
+refer to a change in technologies or environment that requires a business to be
+fundamentally reshaped. Here, we ought to identify whether deep learning was an
+innovation that would induce a strategic inflection point on the practice of
+biology or medicine. We considered this with an eye towards the concept of
+precision medicine.
 
 There are numerous examples where deep learning
 has been applied to biological problems and produced somewhat improved results,
