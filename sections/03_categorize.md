@@ -201,7 +201,7 @@ EHRs are designed and optimized primarily for patient care and billing purposes,
 meaning research is at most a tertiary priority. This presents significant
 challenges to EHR based research in general, and particularly to data intensive
 deep learning research. EHRs are used differently even within the same health
-care system [@pmid:PMC3797550, @pmid:PMC3041534]. Individual users have unique
+care system [@pmid:PMC3797550 @pmid:PMC3041534]. Individual users have unique
 usage patterns, and different departments have different priorities which
 introduce missing data in a non-random fashion. Just et al. demonstrated that
 even the most basic task of matching patients can be challenging due to data
