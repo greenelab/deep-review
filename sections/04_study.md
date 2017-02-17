@@ -160,7 +160,7 @@ and techniques have been proposed that are classifier-independent
 So, how have neural networks (NNs) been of use?    Most neural networks are being 
 used for short sequence->taxa/function classification, where there is a lot of data 
 for training (and thus suitable for NNs).  Neural networks have been applied 
-successfully to gene annotation (e.g. Orphelia [Hoff] and FragGeneScan [doi: 10.1093/nar/gkq747]), 
+successfully to gene annotation (e.g. Orphelia [Hoff] and FragGeneScan [@doi:10.1093/nar/gkq747]), 
 which usually has plenty of training examples.  Representations (similar to Word2Vec [ref] in 
 natural language processing) for protein family classification has been introduced and classified 
 with a skip-gram  neural network [Asgari].  Recurrent neural networks show good performance for 
