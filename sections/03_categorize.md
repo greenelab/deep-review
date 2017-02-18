@@ -201,7 +201,7 @@ EHRs are designed and optimized primarily for patient care and billing purposes,
 meaning research is at most a tertiary priority. This presents significant
 challenges to EHR based research in general, and particularly to data intensive
 deep learning research. EHRs are used differently even within the same health
-care system [@pmid:PMC3797550, @pmid:PMC3041534]. Individual users have unique
+care system [@pmid:PMC3797550 @pmid:PMC3041534]. Individual users have unique
 usage patterns, and different departments have different priorities which
 introduce missing data in a non-random fashion. Just et al. demonstrated that
 even the most basic task of matching patients can be challenging due to data
@@ -239,20 +239,20 @@ patient sizes due to discrete combinatorial bucketing.
 Lasko et al. [@doi:10.1371/annotation/0c88e0d5-dade-4376-8ee1-49ed4ff238e2] used
 autoencoders on longitudinal sequences of serum urine acid measurements to
 identify population subtypes. More recently, deep learning has shown promise
-working with both sequences (Convolutional Neural Networks) [@arXiv:1607.07519]
+working with both sequences (Convolutional Neural Networks) [@arxiv:1607.07519]
 and the incorporation of past and current state (Recurrent Neural Networks, Long
-Short Term Memory Networks)[@arXiv:602.00357v1].
+Short Term Memory Networks)[@arxiv:602.00357v1].
 
 ###### Data sharing and privacy
 
 Early successes using deep learning involved very large training datasets
-(ImageNet 1.4 million images) [@arXiv:1409.0575], but a responsibility to
+(ImageNet 1.4 million images) [@arxiv:1409.0575], but a responsibility to
 protect patient privacy limits the ability openly share large patient datasets.
 Limited dataset sizes may restrict the number of parameters that can be trained
 in a model, but the lack of sharing may also hamper reproducibility and
 confidence in results. Even without sharing data, algorithms trained on
 confidential patient data may present security risks or accidentally allow for
-the exposure of individual level patient data. Tramer et al. [@arXiv:1609.02943]
+the exposure of individual level patient data. Tramer et al. [@arxiv:1609.02943]
 showed the ability to steal trained models via public APIs and Dwork and Roth
 [@doi:10.1561/0400000042] demonstrate the ability to expose individual level
 information from accurate answers in a machine learning model.
@@ -262,7 +262,7 @@ guarantee that the algorithms output will be equally likely to occur regardless
 of the participation of any one individual. The limit is determined by a single
 parameter which provides a quantification of privacy. Simmons et al.
 [doi:doi:10.1016/j.cels.2016.04.013] present the ability to perform GWASs in a
-differentially private manner and Abadi et al. [arXiv:1607.00133] show the
+differentially private manner and Abadi et al. [arxiv:1607.00133] show the
 ability to train deep learning classifiers under the differential privacy
 framework. Finally, Continuous Analysis [doi:10.1101/056473] allows for the
 ability to automatically track and share intermediate results for the purposes

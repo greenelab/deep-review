@@ -160,7 +160,7 @@ and techniques have been proposed that are classifier-independent
 So, how have neural networks (NNs) been of use?    Most neural networks are being 
 used for short sequence->taxa/function classification, where there is a lot of data 
 for training (and thus suitable for NNs).  Neural networks have been applied 
-successfully to gene annotation (e.g. Orphelia [Hoff] and FragGeneScan [doi: 10.1093/nar/gkq747]), 
+successfully to gene annotation (e.g. Orphelia [Hoff] and FragGeneScan [@doi:10.1093/nar/gkq747]), 
 which usually has plenty of training examples.  Representations (similar to Word2Vec [ref] in 
 natural language processing) for protein family classification has been introduced and classified 
 with a skip-gram  neural network [Asgari].  Recurrent neural networks show good performance for 
@@ -201,7 +201,7 @@ There are still a lot of challenges with applying deep neural networks to metage
 hundreds/thousands of features (aka species).  Such underdetermined/ill-conditioned problems
 are still a challenge for deep neural networks that require many more training examples than 
 features to sufficiently converge the weights on the hidden layers.  Also, due to convergence issues 
-(slowness and instability due to large neural networks modeling very large datasets [arXiv:1212.0901v2]), 
+(slowness and instability due to large neural networks modeling very large datasets [arxiv:1212.0901v2]), 
 taxonomic classification of reads from whole genome sequencing seems out of reach at the moment for deep neural 
 networks -- due to only thousands of full-sequenced genomes as compared to hundreds of thousands of 16S rRNA sequences 
 available for training.

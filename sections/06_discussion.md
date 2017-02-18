@@ -104,7 +104,7 @@ not suitable for deep learning [@tag:Dean2012_nips_downpour],
 but significant progress has been made. There
 now exist a number of algorithms [@tag:Dean2012_nips_downpour @tag:Dogwild
 @Sa2015_buckwild], tools [@tag:Moritz2015_sparknet @tag:Meng2016_mllib
-@tag:Tensorflow], and high-level libraries [@tag:Keras, @tag:Elephas] for deep
+@tag:Tensorflow], and high-level libraries [@tag:Keras @tag:Elephas] for deep
 learning in a distributed environment, and it is possible to train very complex
 networks with limited infrastructure [@tag:Coates2013_cots_hpc]. Besides
 handling very large networks, distributed or parallelized approaches offer
