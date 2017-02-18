@@ -31,6 +31,7 @@ Krizhevsky2013_nips_cnn url:https://papers.nips.cc/paper/4824-imagenet-classific
 Krizhevsky2014_weird_trick	arXiv:1404.5997
 Lacey2016_dl_fpga arXiv:1602.04283
 Li2014_minibatch	doi:10.1145/2623330.2623612
+Lusci2015_irv	doi:10.1186/s13321-015-0110-6
 Ma2015_qsar_merck	doi:10.1021/ci500747n
 Mapreduce	doi:10.1145/1327452.1327492
 Mayr2016_deep_tox	doi:10.3389/fenvs.2015.00080
@@ -50,6 +51,7 @@ Spark	doi:10.1145/2934664
 Stein2010_cloud	doi:10.1186/gb-2010-11-5-207
 Su2015_gpu	arXiv:1507.01239
 Sun2016_ensemble arXiv:1606.00575
+Swamidass2009_irv	doi:10.1021/ci8004379
 TensorFlow	url:http://download.tensorflow.org/paper/whitepaper2015.pdf
 Unterthiner2014_screening	url:http://www.bioinf.at/publications/2014/NIPS2014a.pdf
 Vanhoucke2011_nips_cpu	url:https://research.google.com/pubs/pub37631.html
