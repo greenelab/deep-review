@@ -35,8 +35,8 @@ of 1-2 paragraphs in our context.*
 One of the general areas where deep learning methods have had substantial
 success has been in image analysis. Applications in areas of medicine that use
 imaging extensively are also emerging. Mammography has been one area with
-numerous contributions [@doi:10.1007/978-3-319-46723-8_13,
-@doi:10.1007/978-3-319-24553-9_74, @doi:10.1101/095794, @doi:10.1101/095786]. In
+numerous contributions [@doi:10.1007/978-3-319-46723-8_13
+@doi:10.1007/978-3-319-24553-9_74 @doi:10.1101/095794 @doi:10.1101/095786]. In
 all of this work, the researchers must work around a specific challenge - the
 limited number of well annotated training images. To expand the number and
 diversity of images, the researchers have employed approaches where they employ
@@ -80,8 +80,7 @@ network. Combining this data resource with standard deep learning techniques,
 the authors reach greater than 93% accuracy. One item that is important to note
 with regards to this work is that the authors used their test set for evaluating
 when training had concluded. In other domains, this has resulted in a minimal
-change in the estimated accuracy [@url:http://papers.nips.cc/paper/4824
--imagenet-classification-with-deep-convolutional-neural-networks.pdf]. However,
+change in the estimated accuracy [@url:http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf]. However,
 there is not yet a single accepted standard within the field of biomedical
 research for such evaluations. We recommend the use of an independent test set
 wherever it is feasible. Despite this minor limitation, the work clearly
@@ -201,7 +200,7 @@ EHRs are designed and optimized primarily for patient care and billing purposes,
 meaning research is at most a tertiary priority. This presents significant
 challenges to EHR based research in general, and particularly to data intensive
 deep learning research. EHRs are used differently even within the same health
-care system [@pmid:PMC3797550 @pmid:PMC3041534]. Individual users have unique
+care system [@pmid:24159271 @pmid:21347133]. Individual users have unique
 usage patterns, and different departments have different priorities which
 introduce missing data in a non-random fashion. Just et al. demonstrated that
 even the most basic task of matching patients can be challenging due to data
@@ -212,7 +211,7 @@ systematic biases as well as for population and demographic effects.
 Historically, rules-based algorithms have been popular in EHR-based research but
 because these are developed at a single institution and trained with a specific
 patient population they do not transfer easily to other populations
-[@doi:10.1136/amiajnl-2013-001935 ]. Wiley et al.
+[@doi:10.1136/amiajnl-2013-001935]. Wiley et al.
 [@doi:10.1142/9789813207813_0050] showed that warfarin dosing algorithms often
 under perform in African Americans, illustrating that some of these issues are
 unsolved even at a treatment best practices level. This may be a promising
@@ -226,8 +225,8 @@ and in particular deep learning methods
 Traditionally, physician training programs justified long training hours by
 citing increased continuity of care and learning by following the progression of
 a disease over time, despite the known consequences of decreased mental and
-quality of life [@doi:10.1016/j.socscimed.2003.08.016,
-@doi:10.1016/S1072-7515(03)00097-8, @pmid:2321788,
+quality of life [@doi:10.1016/j.socscimed.2003.08.016
+@doi:10.1016/S1072-7515(03)00097-8 @doi:10.1097/00000542-199004000-00024
 @doi:10.1016/S0277-9536(96)00227-4]. Yet, a common practice in EHR-based
 research is to take a point in time snapshot and convert patient data to a
 traditional vector for machine learning and statistical analysis. This results
@@ -236,12 +235,12 @@ a patient's disease and treatment. Efforts to account for the order of events
 have shown promise [@doi:10.1038/ncomms5022] but require exceedingly large
 patient sizes due to discrete combinatorial bucketing.
 
-Lasko et al. [@doi:10.1371/annotation/0c88e0d5-dade-4376-8ee1-49ed4ff238e2] used
+Lasko et al. [@doi:10.1371/journal.pone.0066341] used
 autoencoders on longitudinal sequences of serum urine acid measurements to
 identify population subtypes. More recently, deep learning has shown promise
 working with both sequences (Convolutional Neural Networks) [@arxiv:1607.07519]
 and the incorporation of past and current state (Recurrent Neural Networks, Long
-Short Term Memory Networks)[@arxiv:602.00357v1].
+Short Term Memory Networks)[@arxiv:1602.00357].
 
 ###### Data sharing and privacy
 
@@ -261,10 +260,10 @@ Training algorithms in a differentially private manner provides a limited
 guarantee that the algorithms output will be equally likely to occur regardless
 of the participation of any one individual. The limit is determined by a single
 parameter which provides a quantification of privacy. Simmons et al.
-[doi:doi:10.1016/j.cels.2016.04.013] present the ability to perform GWASs in a
-differentially private manner and Abadi et al. [arxiv:1607.00133] show the
+[@doi:10.1016/j.cels.2016.04.013] present the ability to perform GWASs in a
+differentially private manner and Abadi et al. [@arxiv:1607.00133] show the
 ability to train deep learning classifiers under the differential privacy
-framework. Finally, Continuous Analysis [doi:10.1101/056473] allows for the
+framework. Finally, Continuous Analysis [@doi:10.1101/056473] allows for the
 ability to automatically track and share intermediate results for the purposes
 of reproducibility without sharing the original data.
 
