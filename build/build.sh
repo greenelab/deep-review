@@ -3,9 +3,7 @@ set -o errexit
 # For local convertsion to PDF without any citations use:
 # pandoc --verbose --from=markdown --output=review.pdf sections/*.md
 
-jupyter nbconvert --inplace \
-  --execute --ExecutePreprocessor.timeout=-1 \
-  build/references.ipynb
+(cd build && python references.py)
 
 # pandoc settings
 CSL_PATH=https://github.com/citation-style-language/styles/raw/master/plos.csl
