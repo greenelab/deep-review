@@ -81,7 +81,10 @@ We anticipate an additional kind of paradigm shift in bioimaging that
 will be brought about by deep learning: what if images of biological
 samples, from simple cell cultures to three-dimensional organoids and
 tissue samples, could be mined for much more extensive biologically
-meaningful information than is currently standard? In biomedical research,
+meaningful information than is currently standard? For example, a
+recent study demonstrated the ability to predict lineage fate in
+hematopoietic cells up to three generations in advance of
+differentiation [@doi:10.1038/nmeth.4182]. In biomedical research,
 by far the most common paradigm is for biologists to decide in advance
 what feature to measure in images from their assay system. But images
 of cells contain a wide variety of quantitative information, and deep
