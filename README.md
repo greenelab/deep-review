@@ -80,3 +80,8 @@ argue about the answer to the question that we coalesce on with
 [#88](https://github.com/greenelab/deep-review/issues/88) for each area that the
 review will cover.
 
+## Continuous Integration
+
+[![Build Status](https://travis-ci.org/greenelab/deep-review.svg?branch=master)](https://travis-ci.org/greenelab/deep-review)
+
+[`.travis.yml`](.travis.yml) configures the continuous integration.
