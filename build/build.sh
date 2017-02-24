@@ -6,7 +6,7 @@ set -o errexit
 (cd build && python references.py)
 
 # pandoc settings
-CSL_PATH=https://github.com/citation-style-language/styles/raw/master/plos.csl
+CSL_PATH=https://github.com/citation-style-language/styles/raw/master/dependent/journal-of-the-royal-society-interface.csl
 BIBLIOGRAPHY_PATH=references/generated/bibliography.json
 INPUT_PATH=references/generated/all-sections.md
 
