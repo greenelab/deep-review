@@ -1,0 +1,752 @@
+@article{ref_0,
+ abstract = {The ImageNet Large Scale Visual Recognition Challenge is a benchmark in
+object category classification and detection on hundreds of object categories
+and millions of images. The challenge has been run annually from 2010 to
+present, attracting participation from more than fifty institutions.
+This paper describes the creation of this benchmark dataset and the advances
+in object recognition that have been possible as a result. We discuss the
+challenges of collecting large-scale ground truth annotation, highlight key
+breakthroughs in categorical object recognition, provide a detailed analysis of
+the current state of the field of large-scale image classification and object
+detection, and compare the state-of-the-art computer vision accuracy with human
+accuracy. We conclude with lessons learned in the five years of the challenge, and propose future directions and improvements.},
+ archiveprefix = {arXiv},
+ author = {Olga Russakovsky and Jia Deng and Hao Su and Jonathan Krause and Sanjeev Satheesh and Sean Ma and Zhiheng Huang and Andrej Karpathy and Aditya Khosla and Michael Bernstein and Alexander C. Berg and Li Fei-Fei},
+ eprint = {1409.0575v3},
+ file = {1409.0575v3.pdf},
+ link = {http://arxiv.org/abs/1409.0575v3},
+ month = {Sep},
+ primaryclass = {cs.CV},
+ title = {ImageNet Large Scale Visual Recognition Challenge},
+ year = {2014}
+}
+
+
+@article{ref_1,
+ abstract = {We describe \textit{deep exponential families} (DEFs), a class of latent
+variable models that are inspired by the hidden structures used in deep neural
+networks. DEFs capture a hierarchy of dependencies between latent variables, and are easily generalized to many settings through exponential families. We
+perform inference using recent "black box" variational inference techniques. We
+then evaluate various DEFs on text and combine multiple DEFs into a model for
+pairwise recommendation data. In an extensive study, we show that going beyond
+one layer improves predictions for DEFs. We demonstrate that DEFs find
+interesting exploratory structure in large data sets, and give better
+predictive performance than state-of-the-art models.},
+ archiveprefix = {arXiv},
+ author = {Rajesh Ranganath and Linpeng Tang and Laurent Charlin and David M. Blei},
+ eprint = {1411.2581v1},
+ file = {1411.2581v1.pdf},
+ link = {http://arxiv.org/abs/1411.2581v1},
+ month = {Dec},
+ primaryclass = {stat.ML},
+ title = {Deep Exponential Families},
+ year = {2014}
+}
+
+
+@article{ref_2,
+ abstract = {Deep convolutional neural networks comprise a subclass of deep neural
+networks (DNN) with a constrained architecture that leverages the spatial and
+temporal structure of the domain they model. Convolutional networks achieve the
+best predictive performance in areas such as speech and image recognition by
+hierarchically composing simple local features into complex models. Although
+DNNs have been used in drug discovery for QSAR and ligand-based bioactivity
+predictions, none of these models have benefited from this powerful
+convolutional architecture. This paper introduces AtomNet, the first
+structure-based, deep convolutional neural network designed to predict the
+bioactivity of small molecules for drug discovery applications. We demonstrate
+how to apply the convolutional concepts of feature locality and hierarchical
+composition to the modeling of bioactivity and chemical interactions. In
+further contrast to existing DNN techniques, we show that AtomNet's application
+of local convolutional filters to structural target information successfully
+predicts new active molecules for targets with no previously known modulators.
+Finally, we show that AtomNet outperforms previous docking approaches on a
+diverse set of benchmarks by a large margin, achieving an AUC greater than 0.9
+on 57.8% of the targets in the DUDE benchmark.},
+ archiveprefix = {arXiv},
+ author = {Izhar Wallach and Michael Dzamba and Abraham Heifets},
+ eprint = {1510.02855v1},
+ file = {1510.02855v1.pdf},
+ link = {http://arxiv.org/abs/1510.02855v1},
+ month = {Nov},
+ primaryclass = {cs.LG},
+ title = {AtomNet: A Deep Convolutional Neural Network for Bioactivity Prediction
+in Structure-based Drug Discovery},
+ year = {2015}
+}
+
+
+@article{ref_3,
+ abstract = {Personalized predictive medicine necessitates the modeling of patient illness
+and care processes, which inherently have long-term temporal dependencies.
+Healthcare observations, recorded in electronic medical records, are episodic
+and irregular in time. We introduce DeepCare, an end-to-end deep dynamic neural
+network that reads medical records, stores previous illness history, infers
+current illness states and predicts future medical outcomes. At the data level, DeepCare represents care episodes as vectors in space, models patient health
+state trajectories through explicit memory of historical records. Built on Long
+Short-Term Memory (LSTM), DeepCare introduces time parameterizations to handle
+irregular timed events by moderating the forgetting and consolidation of memory
+cells. DeepCare also incorporates medical interventions that change the course
+of illness and shape future medical risk. Moving up to the health state level, historical and present health states are then aggregated through multiscale
+temporal pooling, before passing through a neural network that estimates future
+outcomes. We demonstrate the efficacy of DeepCare for disease progression
+modeling, intervention recommendation, and future risk prediction. On two
+important cohorts with heavy social and economic burden -- diabetes and mental
+health -- the results show improved modeling and risk prediction accuracy.},
+ archiveprefix = {arXiv},
+ author = {Trang Pham and Truyen Tran and Dinh Phung and Svetha Venkatesh},
+ eprint = {1602.00357v1},
+ file = {1602.00357v1.pdf},
+ link = {http://arxiv.org/abs/1602.00357v1},
+ month = {Feb},
+ primaryclass = {stat.ML},
+ title = {DeepCare: A Deep Dynamic Memory Model for Predictive Medicine},
+ year = {2016}
+}
+
+
+@article{ref_4,
+ abstract = {Previous research has shown that neural networks can model survival data in
+situations in which some patients' death times are unknown, e.g.
+right-censored. However, neural networks have rarely been shown to outperform
+their linear counterparts such as the Cox proportional hazards model. In this
+paper, we run simulated experiments and use real survival data to build upon
+the risk-regression architecture proposed by Faraggi and Simon. We demonstrate
+that our model, DeepSurv, not only works as well as other survival models but
+actually outperforms in predictive ability on survival data with linear and
+nonlinear risk functions. We then show that the neural network can also serve
+as a recommender system by including a categorical variable representing a
+treatment group. This can be used to provide personalized treatment
+recommendations based on an individual's calculated risk. We provide an open
+source Python module that implements these methods in order to advance research
+on deep learning and survival analysis.},
+ archiveprefix = {arXiv},
+ author = {Jared Katzman and Uri Shaham and Jonathan Bates and Alexander Cloninger and Tingting Jiang and Yuval Kluger},
+ eprint = {1606.00931v2},
+ file = {1606.00931v2.pdf},
+ link = {http://arxiv.org/abs/1606.00931v2},
+ month = {Jun},
+ primaryclass = {stat.ML},
+ title = {Deep Survival: A Deep Cox Proportional Hazards Network},
+ year = {2016}
+}
+
+
+@article{ref_5,
+ abstract = {The International Symposium on Biomedical Imaging (ISBI) held a grand
+challenge to evaluate computational systems for the automated detection of
+metastatic breast cancer in whole slide images of sentinel lymph node biopsies.
+Our team won both competitions in the grand challenge, obtaining an area under
+the receiver operating curve (AUC) of 0.925 for the task of whole slide image
+classification and a score of 0.7051 for the tumor localization task. A
+pathologist independently reviewed the same images, obtaining a whole slide
+image classification AUC of 0.966 and a tumor localization score of 0.733.
+Combining our deep learning system's predictions with the human pathologist's
+diagnoses increased the pathologist's AUC to 0.995, representing an
+approximately 85 percent reduction in human error rate. These results
+demonstrate the power of using deep learning to produce significant
+improvements in the accuracy of pathological diagnoses.},
+ archiveprefix = {arXiv},
+ author = {Dayong Wang and Aditya Khosla and Rishab Gargeya and Humayun Irshad and Andrew H. Beck},
+ eprint = {1606.05718v1},
+ file = {1606.05718v1.pdf},
+ link = {http://arxiv.org/abs/1606.05718v1},
+ month = {Jun},
+ primaryclass = {q-bio.QM},
+ title = {Deep Learning for Identifying Metastatic Breast Cancer},
+ year = {2016}
+}
+
+
+@article{ref_6,
+ abstract = {Machine learning techniques based on neural networks are achieving remarkable
+results in a wide variety of domains. Often, the training of models requires
+large, representative datasets, which may be crowdsourced and contain sensitive
+information. The models should not expose private information in these
+datasets. Addressing this goal, we develop new algorithmic techniques for
+learning and a refined analysis of privacy costs within the framework of
+differential privacy. Our implementation and experiments demonstrate that we
+can train deep neural networks with non-convex objectives, under a modest
+privacy budget, and at a manageable cost in software complexity, training
+efficiency, and model quality.},
+ archiveprefix = {arXiv},
+ author = {Martín Abadi and Andy Chu and Ian Goodfellow and H. Brendan McMahan and Ilya Mironov and Kunal Talwar and Li Zhang},
+ doi = {10.1145/2976749.2978318},
+ eprint = {1607.00133v2},
+ file = {1607.00133v2.pdf},
+ link = {http://arxiv.org/abs/1607.00133v2},
+ month = {Jul},
+ primaryclass = {stat.ML},
+ title = {Deep Learning with Differential Privacy},
+ year = {2016}
+}
+
+
+@article{ref_7,
+ abstract = {Feature engineering remains a major bottleneck when creating predictive
+systems from electronic medical records. At present, an important missing
+element is detecting predictive regular clinical motifs from irregular episodic
+records. We present Deepr (short for Deep record), a new end-to-end deep
+learning system that learns to extract features from medical records and
+predicts future risk automatically. Deepr transforms a record into a sequence
+of discrete elements separated by coded time gaps and hospital transfers. On
+top of the sequence is a convolutional neural net that detects and combines
+predictive local clinical motifs to stratify the risk. Deepr permits
+transparent inspection and visualization of its inner working. We validate
+Deepr on hospital data to predict unplanned readmission after discharge. Deepr
+achieves superior accuracy compared to traditional techniques, detects
+meaningful clinical motifs, and uncovers the underlying structure of the
+disease and intervention space.},
+ archiveprefix = {arXiv},
+ author = {Phuoc Nguyen and Truyen Tran and Nilmini Wickramasinghe and Svetha Venkatesh},
+ eprint = {1607.07519v1},
+ file = {1607.07519v1.pdf},
+ link = {http://arxiv.org/abs/1607.07519v1},
+ month = {Jul},
+ primaryclass = {stat.ML},
+ title = {Deepr: A Convolutional Net for Medical Records},
+ year = {2016}
+}
+
+
+@article{ref_8,
+ abstract = {The electronic health record (EHR) provides an unprecedented opportunity to
+build actionable tools to support physicians at the point of care. In this
+paper, we investigate survival analysis in the context of EHR data. We
+introduce deep survival analysis, a hierarchical generative approach to
+survival analysis. It departs from previous approaches in two primary ways: (1)
+all observations, including covariates, are modeled jointly conditioned on a
+rich latent structure; and (2) the observations are aligned by their failure
+time, rather than by an arbitrary time zero as in traditional survival
+analysis. Further, it (3) scalably handles heterogeneous (continuous and
+discrete) data types that occur in the EHR. We validate deep survival analysis
+model by stratifying patients according to risk of developing coronary heart
+disease (CHD). Specifically, we study a dataset of 313,000 patients
+corresponding to 5.5 million months of observations. When compared to the
+clinically validated Framingham CHD risk score, deep survival analysis is
+significantly superior in stratifying patients according to their risk.},
+ archiveprefix = {arXiv},
+ author = {Rajesh Ranganath and Adler Perotte and Noémie Elhadad and David Blei},
+ eprint = {1608.02158v2},
+ file = {1608.02158v2.pdf},
+ link = {http://arxiv.org/abs/1608.02158v2},
+ month = {Aug},
+ primaryclass = {stat.ML},
+ title = {Deep Survival Analysis},
+ year = {2016}
+}
+
+
+@article{ref_9,
+ abstract = {Machine learning (ML) models may be deemed confidential due to their
+sensitive training data, commercial value, or use in security applications.
+Increasingly often, confidential ML models are being deployed with publicly
+accessible query interfaces. ML-as-a-service ("predictive analytics") systems
+are an example: Some allow users to train models on potentially sensitive data
+and charge others for access on a pay-per-query basis.
+The tension between model confidentiality and public access motivates our
+investigation of model extraction attacks. In such attacks, an adversary with
+black-box access, but no prior knowledge of an ML model's parameters or
+training data, aims to duplicate the functionality of (i.e., "steal") the
+model. Unlike in classical learning theory settings, ML-as-a-service offerings
+may accept partial feature vectors as inputs and include confidence values with
+predictions. Given these practices, we show simple, efficient attacks that
+extract target ML models with near-perfect fidelity for popular model classes
+including logistic regression, neural networks, and decision trees. We
+demonstrate these attacks against the online services of BigML and Amazon
+Machine Learning. We further show that the natural countermeasure of omitting
+confidence values from model outputs still admits potentially harmful model
+extraction attacks. Our results highlight the need for careful ML model
+deployment and new model extraction countermeasures.},
+ archiveprefix = {arXiv},
+ author = {Florian Tramèr and Fan Zhang and Ari Juels and Michael K. Reiter and Thomas Ristenpart},
+ eprint = {1609.02943v2},
+ file = {1609.02943v2.pdf},
+ link = {http://arxiv.org/abs/1609.02943v2},
+ month = {Sep},
+ primaryclass = {cs.CR},
+ title = {Stealing Machine Learning Models via Prediction APIs},
+ year = {2016}
+}
+
+
+@article{ref_10,
+ abstract = {Automated extraction of concepts from patient clinical records is an
+essential facilitator of clinical research. For this reason, the 2010 i2b2/VA
+Natural Language Processing Challenges for Clinical Records introduced a
+concept extraction task aimed at identifying and classifying concepts into
+predefined categories (i.e., treatments, tests and problems). State-of-the-art
+concept extraction approaches heavily rely on handcrafted features and
+domain-specific resources which are hard to collect and define. For this
+reason, this paper proposes an alternative, streamlined approach: a recurrent
+neural network (the bidirectional LSTM with CRF decoding) initialized with
+general-purpose, off-the-shelf word embeddings. The experimental results
+achieved on the 2010 i2b2/VA reference corpora using the proposed framework
+outperform all recent methods and ranks closely to the best submission from the
+original 2010 i2b2/VA challenge.},
+ archiveprefix = {arXiv},
+ author = {Raghavendra Chalapathy and Ehsan Zare Borzeshi and Massimo Piccardi},
+ eprint = {1611.08373v1},
+ file = {1611.08373v1.pdf},
+ link = {http://arxiv.org/abs/1611.08373v1},
+ month = {Dec},
+ primaryclass = {stat.ML},
+ title = {Bidirectional LSTM-CRF for Clinical Concept Extraction},
+ year = {2016}
+}
+
+
+@article{ref_73,
+ abstract = {Multipliers are the most space and power-hungry arithmetic operators of the
+digital implementation of deep neural networks. We train a set of
+state-of-the-art neural networks (Maxout networks) on three benchmark datasets:
+MNIST, CIFAR-10 and SVHN. They are trained with three distinct formats:
+floating point, fixed point and dynamic fixed point. For each of those datasets
+and for each of those formats, we assess the impact of the precision of the
+multiplications on the final error after training. We find that very low
+precision is sufficient not just for running trained networks but also for
+training them. For example, it is possible to train Maxout networks with 10
+bits multiplications.},
+ archiveprefix = {arXiv},
+ author = {Matthieu Courbariaux and Yoshua Bengio and Jean-Pierre David},
+ eprint = {1412.7024v5},
+ file = {1412.7024v5.pdf},
+ link = {http://arxiv.org/abs/1412.7024v5},
+ month = {12},
+ primaryclass = {cs.LG},
+ title = {Training deep neural networks with low precision multiplications},
+ year = {2014}
+}
+
+
+@article{ref_76,
+ abstract = {Currently, deep neural networks are the state of the art on problems such as
+speech recognition and computer vision. In this extended abstract, we show that
+shallow feed-forward networks can learn the complex functions previously
+learned by deep nets and achieve accuracies previously only achievable with
+deep models. Moreover, in some cases the shallow neural nets can learn these
+deep functions using a total number of parameters similar to the original deep
+model. We evaluate our method on the TIMIT phoneme recognition task and are
+able to train shallow fully-connected nets that perform similarly to complex, well-engineered, deep convolutional architectures. Our success in training
+shallow neural nets to mimic deeper models suggests that there probably exist
+better algorithms for training shallow feed-forward nets than those currently
+available.},
+ archiveprefix = {arXiv},
+ author = {Lei Jimmy Ba and Rich Caruana},
+ eprint = {1312.6184v7},
+ file = {1312.6184v7.pdf},
+ link = {http://arxiv.org/abs/1312.6184v7},
+ month = {12},
+ primaryclass = {cs.LG},
+ title = {Do Deep Nets Really Need to be Deep?},
+ year = {2013}
+}
+
+
+@article{ref_77,
+ abstract = {As deep nets are increasingly used in applications suited for mobile devices, a fundamental dilemma becomes apparent: the trend in deep learning is to grow
+models to absorb ever-increasing data set sizes; however mobile devices are
+designed with very little memory and cannot store such large models. We present
+a novel network architecture, HashedNets, that exploits inherent redundancy in
+neural networks to achieve drastic reductions in model sizes. HashedNets uses a
+low-cost hash function to randomly group connection weights into hash buckets, and all connections within the same hash bucket share a single parameter value.
+These parameters are tuned to adjust to the HashedNets weight sharing
+architecture with standard backprop during training. Our hashing procedure
+introduces no additional memory overhead, and we demonstrate on several
+benchmark data sets that HashedNets shrink the storage requirements of neural
+networks substantially while mostly preserving generalization performance.},
+ archiveprefix = {arXiv},
+ author = {Wenlin Chen and James T. Wilson and Stephen Tyree and Kilian Q. Weinberger and Yixin Chen},
+ eprint = {1504.04788v1},
+ file = {1504.04788v1.pdf},
+ link = {http://arxiv.org/abs/1504.04788v1},
+ month = {Apr},
+ primaryclass = {cs.LG},
+ title = {Compressing Neural Networks with the Hashing Trick},
+ year = {2015}
+}
+
+
+@article{ref_81,
+ abstract = {We present a library of efficient implementations of deep learning
+primitives. Deep learning workloads are computationally intensive, and
+optimizing their kernels is difficult and time-consuming. As parallel
+architectures evolve, kernels must be reoptimized, which makes maintaining
+codebases difficult over time. Similar issues have long been addressed in the
+HPC community by libraries such as the Basic Linear Algebra Subroutines (BLAS).
+However, there is no analogous library for deep learning. Without such a
+library, researchers implementing deep learning workloads on parallel
+processors must create and optimize their own implementations of the main
+computational kernels, and this work must be repeated as new parallel
+processors emerge. To address this problem, we have created a library similar
+in intent to BLAS, with optimized routines for deep learning workloads. Our
+implementation contains routines for GPUs, although similarly to the BLAS
+library, these routines could be implemented for other platforms. The library
+is easy to integrate into existing frameworks, and provides optimized
+performance and memory usage. For example, integrating cuDNN into Caffe, a
+popular framework for convolutional networks, improves performance by 36% on a
+standard model while also reducing memory consumption.},
+ archiveprefix = {arXiv},
+ author = {Sharan Chetlur and Cliff Woolley and Philippe Vandermersch and Jonathan Cohen and John Tran and Bryan Catanzaro and Evan Shelhamer},
+ eprint = {1410.0759v3},
+ file = {1410.0759v3.pdf},
+ link = {http://arxiv.org/abs/1410.0759v3},
+ month = {Nov},
+ primaryclass = {cs.NE},
+ title = {cuDNN: Efficient Primitives for Deep Learning},
+ year = {2014}
+}
+
+
+@article{ref_87,
+ abstract = {We report a method to convert discrete representations of molecules to and
+from a multidimensional continuous representation. This generative model allows
+efficient search and optimization through open-ended spaces of chemical
+compounds. We train deep neural networks on hundreds of thousands of existing
+chemical structures to construct two coupled functions: an encoder and a
+decoder. The encoder converts the discrete representation of a molecule into a
+real-valued continuous vector, and the decoder converts these continuous
+vectors back to the discrete representation from this latent space. Continuous
+representations allow us to automatically generate novel chemical structures by
+performing simple operations in the latent space, such as decoding random
+vectors, perturbing known chemical structures, or interpolating between
+molecules. Continuous representations also allow the use of powerful
+gradient-based optimization to efficiently guide the search for optimized
+functional compounds. We demonstrate our method in the design of drug-like
+molecules as well as organic light-emitting diodes.},
+ archiveprefix = {arXiv},
+ author = {Rafael Gómez-Bombarelli and David Duvenaud and José Miguel Hernández-Lobato and Jorge Aguilera-Iparraguirre and Timothy D. Hirzel and Ryan P. Adams and Alán Aspuru-Guzik},
+ eprint = {1610.02415v2},
+ file = {1610.02415v2.pdf},
+ link = {http://arxiv.org/abs/1610.02415v2},
+ month = {Nov},
+ primaryclass = {cs.LG},
+ title = {Automatic chemical design using a data-driven continuous representation
+of molecules},
+ year = {2016}
+}
+
+
+@article{ref_89,
+ abstract = {Training of large-scale deep neural networks is often constrained by the
+available computational resources. We study the effect of limited precision
+data representation and computation on neural network training. Within the
+context of low-precision fixed-point computations, we observe the rounding
+scheme to play a crucial role in determining the network's behavior during
+training. Our results show that deep networks can be trained using only 16-bit
+wide fixed-point number representation when using stochastic rounding, and
+incur little to no degradation in the classification accuracy. We also
+demonstrate an energy-efficient hardware accelerator that implements
+low-precision fixed-point arithmetic with stochastic rounding.},
+ archiveprefix = {arXiv},
+ author = {Suyog Gupta and Ankur Agrawal and Kailash Gopalakrishnan and Pritish Narayanan},
+ eprint = {1502.02551v1},
+ file = {1502.02551v1.pdf},
+ link = {http://arxiv.org/abs/1502.02551v1},
+ month = {Feb},
+ primaryclass = {cs.LG},
+ title = {Deep Learning with Limited Numerical Precision},
+ year = {2015}
+}
+
+
+@article{ref_90,
+ abstract = {We present Caffe con Troll (CcT), a fully compatible end-to-end version of
+the popular framework Caffe with rebuilt internals. We built CcT to examine the
+performance characteristics of training and deploying general-purpose
+convolutional neural networks across different hardware architectures. We find
+that, by employing standard batching optimizations for CPU training, we achieve
+a 4.5x throughput improvement over Caffe on popular networks like CaffeNet.
+Moreover, with these improvements, the end-to-end training time for CNNs is
+directly proportional to the FLOPS delivered by the CPU, which enables us to
+efficiently train hybrid CPU-GPU systems for CNNs.},
+ archiveprefix = {arXiv},
+ author = {Stefan Hadjis and Firas Abuzaid and Ce Zhang and Christopher Ré},
+ eprint = {1504.04343v2},
+ file = {1504.04343v2.pdf},
+ link = {http://arxiv.org/abs/1504.04343v2},
+ month = {Apr},
+ primaryclass = {cs.LG},
+ title = {Caffe con Troll: Shallow Ideas to Speed Up Deep Learning},
+ year = {2015}
+}
+
+
+@article{ref_91,
+ abstract = {A very simple way to improve the performance of almost any machine learning
+algorithm is to train many different models on the same data and then to
+average their predictions. Unfortunately, making predictions using a whole
+ensemble of models is cumbersome and may be too computationally expensive to
+allow deployment to a large number of users, especially if the individual
+models are large neural nets. Caruana and his collaborators have shown that it
+is possible to compress the knowledge in an ensemble into a single model which
+is much easier to deploy and we develop this approach further using a different
+compression technique. We achieve some surprising results on MNIST and we show
+that we can significantly improve the acoustic model of a heavily used
+commercial system by distilling the knowledge in an ensemble of models into a
+single model. We also introduce a new type of ensemble composed of one or more
+full models and many specialist models which learn to distinguish fine-grained
+classes that the full models confuse. Unlike a mixture of experts, these
+specialist models can be trained rapidly and in parallel.},
+ archiveprefix = {arXiv},
+ author = {Geoffrey Hinton and Oriol Vinyals and Jeff Dean},
+ eprint = {1503.02531v1},
+ file = {1503.02531v1.pdf},
+ link = {http://arxiv.org/abs/1503.02531v1},
+ month = {Mar},
+ primaryclass = {stat.ML},
+ title = {Distilling the Knowledge in a Neural Network},
+ year = {2015}
+}
+
+
+@article{ref_92,
+ abstract = {We introduce a method to train Quantized Neural Networks (QNNs) --- neural
+networks with extremely low precision (e.g., 1-bit) weights and activations, at
+run-time. At train-time the quantized weights and activations are used for
+computing the parameter gradients. During the forward pass, QNNs drastically
+reduce memory size and accesses, and replace most arithmetic operations with
+bit-wise operations. As a result, power consumption is expected to be
+drastically reduced. We trained QNNs over the MNIST, CIFAR-10, SVHN and
+ImageNet datasets. The resulting QNNs achieve prediction accuracy comparable to
+their 32-bit counterparts. For example, our quantized version of AlexNet with
+1-bit weights and 2-bit activations achieves $51\%$ top-1 accuracy. Moreover, we quantize the parameter gradients to 6-bits as well which enables gradients
+computation using only bit-wise operation. Quantized recurrent neural networks
+were tested over the Penn Treebank dataset, and achieved comparable accuracy as
+their 32-bit counterparts using only 4-bits. Last but not least, we programmed
+a binary matrix multiplication GPU kernel with which it is possible to run our
+MNIST QNN 7 times faster than with an unoptimized GPU kernel, without suffering
+any loss in classification accuracy. The QNN code is available online.},
+ archiveprefix = {arXiv},
+ author = {Itay Hubara and Matthieu Courbariaux and Daniel Soudry and Ran El-Yaniv and Yoshua Bengio},
+ eprint = {1609.07061v1},
+ file = {1609.07061v1.pdf},
+ link = {http://arxiv.org/abs/1609.07061v1},
+ month = {Sep},
+ primaryclass = {cs.NE},
+ title = {Quantized Neural Networks: Training Neural Networks with Low Precision
+Weights and Activations},
+ year = {2016}
+}
+
+
+@article{ref_95,
+ abstract = {I present a new way to parallelize the training of convolutional neural
+networks across multiple GPUs. The method scales significantly better than all
+alternatives when applied to modern convolutional neural networks.},
+ archiveprefix = {arXiv},
+ author = {Alex Krizhevsky},
+ eprint = {1404.5997v2},
+ file = {1404.5997v2.pdf},
+ link = {http://arxiv.org/abs/1404.5997v2},
+ month = {Apr},
+ primaryclass = {cs.NE},
+ title = {One weird trick for parallelizing convolutional neural networks},
+ year = {2014}
+}
+
+
+@article{ref_96,
+ abstract = {The rapid growth of data size and accessibility in recent years has
+instigated a shift of philosophy in algorithm design for artificial
+intelligence. Instead of engineering algorithms by hand, the ability to learn
+composable systems automatically from massive amounts of data has led to
+ground-breaking performance in important domains such as computer vision, speech recognition, and natural language processing. The most popular class of
+techniques used in these domains is called deep learning, and is seeing
+significant attention from industry. However, these models require incredible
+amounts of data and compute power to train, and are limited by the need for
+better hardware acceleration to accommodate scaling beyond current data and
+model sizes. While the current solution has been to use clusters of graphics
+processing units (GPU) as general purpose processors (GPGPU), the use of field
+programmable gate arrays (FPGA) provide an interesting alternative. Current
+trends in design tools for FPGAs have made them more compatible with the
+high-level software practices typically practiced in the deep learning
+community, making FPGAs more accessible to those who build and deploy models.
+Since FPGA architectures are flexible, this could also allow researchers the
+ability to explore model-level optimizations beyond what is possible on fixed
+architectures such as GPUs. As well, FPGAs tend to provide high performance per
+watt of power consumption, which is of particular importance for application
+scientists interested in large scale server-based deployment or
+resource-limited embedded applications. This review takes a look at deep
+learning and FPGAs from a hardware acceleration perspective, identifying trends
+and innovations that make these technologies a natural fit, and motivates a
+discussion on how FPGAs may best serve the needs of the deep learning community
+moving forward.},
+ archiveprefix = {arXiv},
+ author = {Griffin Lacey and Graham W. Taylor and Shawki Areibi},
+ eprint = {1602.04283v1},
+ file = {1602.04283v1.pdf},
+ link = {http://arxiv.org/abs/1602.04283v1},
+ month = {Feb},
+ primaryclass = {cs.DC},
+ title = {Deep Learning on FPGAs: Past, Present, and Future},
+ year = {2016}
+}
+
+
+@article{ref_99,
+ abstract = {Apache Spark is a popular open-source platform for large-scale data
+processing that is well-suited for iterative machine learning tasks. In this
+paper we present MLlib, Spark's open-source distributed machine learning
+library. MLlib provides efficient functionality for a wide range of learning
+settings and includes several underlying statistical, optimization, and linear
+algebra primitives. Shipped with Spark, MLlib supports several languages and
+provides a high-level API that leverages Spark's rich ecosystem to simplify the
+development of end-to-end machine learning pipelines. MLlib has experienced a
+rapid growth due to its vibrant open-source community of over 140 contributors, and includes extensive documentation to support further growth and to let users
+quickly get up to speed.},
+ archiveprefix = {arXiv},
+ author = {Xiangrui Meng and Joseph Bradley and Burak Yavuz and Evan Sparks and Shivaram Venkataraman and Davies Liu and Jeremy Freeman and DB Tsai and Manish Amde and Sean Owen and Doris Xin and Reynold Xin and Michael J. Franklin and Reza Zadeh and Matei Zaharia and Ameet Talwalkar},
+ eprint = {1505.06807v1},
+ file = {1505.06807v1.pdf},
+ link = {http://arxiv.org/abs/1505.06807v1},
+ month = {May},
+ primaryclass = {cs.LG},
+ title = {MLlib: Machine Learning in Apache Spark},
+ year = {2015}
+}
+
+
+@article{ref_100,
+ abstract = {Training deep networks is a time-consuming process, with networks for object
+recognition often requiring multiple days to train. For this reason, leveraging
+the resources of a cluster to speed up training is an important area of work.
+However, widely-popular batch-processing computational frameworks like
+MapReduce and Spark were not designed to support the asynchronous and
+communication-intensive workloads of existing distributed deep learning
+systems. We introduce SparkNet, a framework for training deep networks in
+Spark. Our implementation includes a convenient interface for reading data from
+Spark RDDs, a Scala interface to the Caffe deep learning framework, and a
+lightweight multi-dimensional tensor library. Using a simple parallelization
+scheme for stochastic gradient descent, SparkNet scales well with the cluster
+size and tolerates very high-latency communication. Furthermore, it is easy to
+deploy and use with no parameter tuning, and it is compatible with existing
+Caffe models. We quantify the dependence of the speedup obtained by SparkNet on
+the number of machines, the communication frequency, and the cluster's
+communication overhead, and we benchmark our system's performance on the
+ImageNet dataset.},
+ archiveprefix = {arXiv},
+ author = {Philipp Moritz and Robert Nishihara and Ion Stoica and Michael I. Jordan},
+ eprint = {1511.06051v4},
+ file = {1511.06051v4.pdf},
+ link = {http://arxiv.org/abs/1511.06051v4},
+ month = {Dec},
+ primaryclass = {stat.ML},
+ title = {SparkNet: Training Deep Networks in Spark},
+ year = {2015}
+}
+
+
+@article{ref_103,
+ abstract = {Stochastic gradient descent (SGD) is a ubiquitous algorithm for a variety of
+machine learning problems. Researchers and industry have developed several
+techniques to optimize SGD's runtime performance, including asynchronous
+execution and reduced precision. Our main result is a martingale-based analysis
+that enables us to capture the rich noise models that may arise from such
+techniques. Specifically, we use our new analysis in three ways: (1) we derive
+convergence rates for the convex case (Hogwild!) with relaxed assumptions on
+the sparsity of the problem; (2) we analyze asynchronous SGD algorithms for
+non-convex matrix problems including matrix completion; and (3) we design and
+analyze an asynchronous SGD algorithm, called Buckwild!, that uses
+lower-precision arithmetic. We show experimentally that our algorithms run
+efficiently for a variety of problems on modern hardware.},
+ archiveprefix = {arXiv},
+ author = {Christopher De Sa and Ce Zhang and Kunle Olukotun and Christopher Ré},
+ eprint = {1506.06438v2},
+ file = {1506.06438v2.pdf},
+ link = {http://arxiv.org/abs/1506.06438v2},
+ month = {Jun},
+ primaryclass = {cs.LG},
+ title = {Taming the Wild: A Unified Analysis of Hogwild!-Style Algorithms},
+ year = {2015}
+}
+
+
+@article{ref_106,
+ abstract = {Sources of variability in experimentally derived data include measurement
+error in addition to the physical phenomena of interest. This measurement error
+is a combination of systematic components, originating from the measuring
+instrument, and random measurement errors. Several novel biological
+technologies, such as mass cytometry and single-cell RNA-seq, are plagued with
+systematic errors that may severely affect statistical analysis if the data is
+not properly calibrated. We propose a novel deep learning approach for removing
+systematic batch effects. Our method is based on a residual network, trained to
+minimize the Maximum Mean Discrepancy (MMD) between the multivariate
+distributions of two replicates, measured in different batches. We apply our
+method to mass cytometry and single-cell RNA-seq datasets, and demonstrate that
+it effectively attenuates batch effects.},
+ archiveprefix = {arXiv},
+ author = {Uri Shaham and Kelly P. Stanton and Jun Zhao and Huamin Li and Khadir Raddassi and Ruth Montgomery and Yuval Kluger},
+ eprint = {1610.04181v5},
+ file = {1610.04181v5.pdf},
+ link = {http://arxiv.org/abs/1610.04181v5},
+ month = {Nov},
+ primaryclass = {stat.ML},
+ title = {Removal of Batch Effects using Distribution-Matching Residual Networks},
+ year = {2016}
+}
+
+
+@article{ref_108,
+ abstract = {In this work we apply model averaging to parallel training of deep neural
+network (DNN). Parallelization is done in a model averaging manner. Data is
+partitioned and distributed to different nodes for local model updates, and
+model averaging across nodes is done every few minibatches. We use multiple
+GPUs for data parallelization, and Message Passing Interface (MPI) for
+communication between nodes, which allows us to perform model averaging
+frequently without losing much time on communication. We investigate the
+effectiveness of Natural Gradient Stochastic Gradient Descent (NG-SGD) and
+Restricted Boltzmann Machine (RBM) pretraining for parallel training in
+model-averaging framework, and explore the best setups in term of different
+learning rate schedules, averaging frequencies and minibatch sizes. It is shown
+that NG-SGD and RBM pretraining benefits parameter-averaging based model
+training. On the 300h Switchboard dataset, a 9.3 times speedup is achieved
+using 16 GPUs and 17 times speedup using 32 GPUs with limited decoding accuracy
+loss.},
+ archiveprefix = {arXiv},
+ author = {Hang Su and Haoyu Chen},
+ eprint = {1507.01239v2},
+ file = {1507.01239v2.pdf},
+ link = {http://arxiv.org/abs/1507.01239v2},
+ month = {Jul},
+ primaryclass = {cs.LG},
+ title = {Experiments on Parallel Training of Deep Neural Network using Model
+Averaging},
+ year = {2015}
+}
+
+
+@article{ref_109,
+ abstract = {In recent year, parallel implementations have been used to speed up the
+training of deep neural networks (DNN). Typically, the parameters of the local
+models are periodically communicated and averaged to get a global model until
+the training curve converges (denoted as MA-DNN). However, since DNN is a
+highly non-convex model, the global model obtained by averaging parameters does
+not have guarantee on its performance improvement over the local models and
+might even be worse than the average performance of the local models, which
+leads to the slow-down of convergence and the decrease of the final
+performance. To tackle this problem, we propose a new parallel training method
+called \emph{Ensemble-Compression} (denoted as EC-DNN). Specifically, we
+propose to aggregate the local models by ensemble, i.e., the outputs of the
+local models are averaged instead of the parameters. Considering that the
+widely used loss functions are convex to the output of the model, the
+performance of the global model obtained in this way is guaranteed to be at
+least as good as the average performance of local models. However, the size of
+the global model will increase after each ensemble and may explode after
+multiple rounds of ensembles. Thus, we conduct model compression after each
+ensemble, to ensure the size of the global model to be the same as the local
+models. We conducted experiments on a benchmark dataset. The experimental
+results demonstrate that our proposed EC-DNN can stably achieve better
+performance than MA-DNN.},
+ archiveprefix = {arXiv},
+ author = {Shizhao Sun and Wei Chen and Tie-Yan Liu},
+ eprint = {1606.00575v1},
+ file = {1606.00575v1.pdf},
+ link = {http://arxiv.org/abs/1606.00575v1},
+ month = {Jun},
+ primaryclass = {cs.DC},
+ title = {Ensemble-Compression: A New Method for Parallel Training of Deep Neural
+Networks},
+ year = {2016}
+}
+
