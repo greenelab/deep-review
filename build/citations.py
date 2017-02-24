@@ -1,0 +1,156 @@
+import collections
+import pathlib
+import re
+
+import pandas
+import bibtexparser
+
+import metadata
+
+
+def validate_reference(ref):
+    if not ref.startswith('@'):
+        return f'{ref} does not start with @'
+    source, tail = ref.lstrip('@').split(':', 1)
+    if not tail:
+        return f'{ref} does not specify its source, e.g. doi or pmid'
+    if source not in {'doi', 'pmid', 'arxiv', 'url', 'tag'}:
+        return f'{ref} source is not valid'
+    return None
+
+
+def get_references_from_text(text):
+    """
+    Extract the set of references in a text
+    """
+    refs = set()
+    for ref_text in re.findall(r'\[(@.+?)\]', text, flags=re.DOTALL):
+        for ref in ref_text.split():
+            if not ref:
+                continue
+            refs.add(ref)
+    return refs
+
+
+def get_text(directory):
+    """
+    Return a dictionary of section texts in the specified directory.
+    """
+    section_dir = pathlib.Path(directory)
+    paths = sorted(section_dir.iterdir())
+    name_to_text = collections.OrderedDict()
+    for path in paths:
+        if not re.match(r'[0-9]', path.name):
+            continue
+        with path.open('rt') as section_file:
+            name_to_text[path.stem] = section_file.read()
+    return '\n\n'.join(name_to_text.values())
+
+
+def standardize_identifier(source, identifier):
+    """
+    Standardize idenfiers based on their source
+    """
+    if source == 'doi':
+        identifier = identifier.lower()
+    return identifier
+
+
+def citation_to_metadata(citation, cache={}):
+    """
+    Return a dictionary with citation metadata
+    """
+    source, identifer = citation.split(':', 1)
+    identifer = standardize_identifier(source, identifer)
+    standard_citation = f'{source}:{identifer}'
+    if standard_citation in cache:
+        return cache[standard_citation]
+
+    result = {
+        'source': source,
+        'identifer': identifer,
+        'standard_citation': standard_citation
+    }
+
+    if source == 'doi':
+        result['citeproc'] = metadata.get_doi_citeproc(identifer)
+        # result['bibtex'] = metadata.get_doi_bibtex(identifer)
+    elif source == 'pmid':
+        result['citeproc'] = metadata.get_pubmed_citeproc(identifer)
+    elif source == 'arxiv':
+        result['bibtex'] = metadata.get_arxiv_bibtex(identifer)
+    elif source == 'url':
+        result['citeproc'] = metadata.get_url_citeproc(identifer)
+    else:
+        msg = f'Unsupported citation  source {source} in {citation}'
+        raise ValueError(msg)
+    
+    citation_id = f'ref_{len(cache)}'
+    result['citation_id'] = citation_id
+    if 'citeproc' in result:
+        result['citeproc'] = citeproc_passthrough(result['citeproc'], set_id=citation_id)
+    if 'bibtex' in result:
+        result['bibtex'] = bibtex_passthrough(result['bibtex'], set_id=citation_id)
+    
+    cache[standard_citation] = result
+    return result
+
+
+citeproc_type_fixer = {
+    'journal-article': 'article-journal',
+    'book-chapter': 'chapter',
+    'posted-content': 'manuscript',
+    'proceedings-article': 'paper-conference',
+}
+
+citeproc_remove_keys = [
+    # pandoc-citeproc: Error in $[0].ISSN[0]: failed to parse field ISSN: mempty
+    'ISSN',
+    # pandoc-citeproc: Error in $[2].ISBN[0]: failed to parse field ISBN: mempty
+    'ISBN',
+    # pandoc-citeproc expected Object not array for archive
+    'archive',
+]
+
+def citeproc_passthrough(csl_item, set_id=None):
+    """
+    Fix errors in a CSL item and optional change its id.
+    http://citeproc-js.readthedocs.io/en/latest/csl-json/markup.html
+    https://github.com/citation-style-language/schema/blob/master/csl-data.json
+    """
+    if set_id is not None:
+        csl_item['id'] = set_id
+
+    # Correct invalid CSL item types
+    old_type = csl_item['type']
+    csl_item['type'] = citeproc_type_fixer.get(old_type, old_type)
+
+    # Remove problematic objects
+    for key in citeproc_remove_keys:
+        csl_item.pop(key, None)
+
+    # pandoc-citeproc error
+    # failed to parse field issued: Could not read as string: Null
+    try:
+        value = csl_item['issued']['date-parts'][0][0]
+        if value is None:
+            del csl_item['issued']
+    except KeyError:
+        pass
+
+    return csl_item
+
+
+def bibtex_passthrough(text, set_id=None):
+    """
+    Fix errors in a bibtex record and optional change its ID.
+    """
+    parser = bibtexparser.bparser.BibTexParser()
+    parser.ignore_nonstandard_types = False
+    bibdb = bibtexparser.loads(text, parser)
+    entry, = bibdb.entries
+    if 'author' in entry:
+        entry['author'] = ' and '.join(entry['author'].rstrip(';').split('; '))
+    if set_id is not None:
+        entry['ID'] = set_id
+    return bibtexparser.dumps(bibdb)
