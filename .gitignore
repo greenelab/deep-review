@@ -1,3 +1,7 @@
+# Output files
+output
+references/generated
+
 # Python
 __pycache__/
 *.pyc
