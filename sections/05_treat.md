@@ -64,4 +64,4 @@ networks mean for the HTS field?
 
 ### Modeling Metabolism and Chemical Reactivity
 
-Add a reveiw here of metabolism and chemical reactivity.
+Add a review here of metabolism and chemical reactivity.
