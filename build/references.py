@@ -26,7 +26,7 @@ from citations import (
 
 ref_dir = pathlib.Path('../references')
 gen_dir = ref_dir.joinpath('generated')
-
+gen_dir.mkdir(exist_ok=True)
 
 # In[3]:
 
