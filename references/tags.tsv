@@ -22,6 +22,7 @@ Hadjas2015_cct	arxiv:1504.04343
 Hinton2015_dark_knowledge	arxiv:1503.02531
 Hinton2015_dk	arxiv:1503.02531v1
 Hubara2016_qnn	arxiv:1609.07061
+Keras	url:https://github.com/fchollet/keras
 Krizhevsky2013_nips_cnn	url:https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf
 Krizhevsky2014_weird_trick	arxiv:1404.5997
 Lacey2016_dl_fpga	arxiv:1602.04283
