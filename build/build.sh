@@ -1,9 +1,7 @@
 set -o errexit
 
-# For local convertsion to PDF without any citations use:
-# pandoc --verbose --from=markdown --output=review.pdf sections/*.md
-
 # Generate reference information
+echo "Retrieving and processing reference metadata"
 (cd build && python references.py)
 
 # pandoc settings
@@ -16,6 +14,7 @@ mkdir -p output
 
 # Create HTML outpout
 # http://pandoc.org/MANUAL.html
+echo "Exporting HTML manuscript"
 pandoc --verbose \
   --from=markdown --to=html \
   --bibliography=$BIBLIOGRAPHY_PATH \
@@ -24,6 +23,7 @@ pandoc --verbose \
   $INPUT_PATH
 
 # Create PDF outpout
+echo "Exporting PDF manuscript"
 pandoc \
   --from=markdown \
   --to=html5 \
