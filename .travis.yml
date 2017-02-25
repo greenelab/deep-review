@@ -1,7 +1,8 @@
 language: generic
 before_install:
   - sudo apt-get update --quiet --quiet
-  - wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh --output-document miniconda.sh
+  - wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+    --output-document miniconda.sh
   - bash miniconda.sh -b -p $HOME/miniconda
   - export PATH="$HOME/miniconda/bin:$PATH"
   - hash -r
@@ -13,3 +14,10 @@ install:
   - source activate deepreview
 script:
   - sh build/build.sh
+cache:
+  directories:
+    - references/generated
+after_success:
+  - test $TRAVIS_BRANCH = "master" &&
+    test $TRAVIS_PULL_REQUEST = "false" &&
+    sh ci/deploy.sh
