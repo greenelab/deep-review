@@ -1,0 +1,10 @@
+# Output files
+output
+references/generated
+
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter Notebook
+.ipynb_checkpoints
