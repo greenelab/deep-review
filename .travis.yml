@@ -1,0 +1,15 @@
+language: generic
+before_install:
+  - sudo apt-get update --quiet --quiet
+  - wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh --output-document miniconda.sh
+  - bash miniconda.sh -b -p $HOME/miniconda
+  - export PATH="$HOME/miniconda/bin:$PATH"
+  - hash -r
+  - conda config --set always_yes yes --set changeps1 no
+  - conda update --quiet conda
+  - conda info --all
+install:
+  - conda env create --quiet --file build/environment.yml
+  - source activate deepreview
+script:
+  - sh build/build.sh

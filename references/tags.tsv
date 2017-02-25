@@ -18,7 +18,7 @@ Gerstein2016_scaling	doi:10.1186/s13059-016-0917-0
 Gomezb2016_automatic	arxiv:1610.02415
 Graphlab	doi:10.14778/2212351.2212354
 Gupta2015_prec	arxiv:1502.02551
-Hadjas2015_cct	arxiv:1504.04343
+Hadjas2015_cc	arxiv:1504.04343
 Hinton2015_dark_knowledge	arxiv:1503.02531
 Hinton2015_dk	arxiv:1503.02531v1
 Hubara2016_qnn	arxiv:1609.07061
@@ -29,7 +29,7 @@ Lacey2016_dl_fpga	arxiv:1602.04283
 Li2014_minibatch	doi:10.1145/2623330.2623612
 Mapreduce	doi:10.1145/1327452.1327492
 Meng2016_mllib	arxiv:1505.06807
-Moritz2015_sparknet	doi:1511.06051
+Moritz2015_sparknet	arxiv:1511.06051
 NIH2016_genome_cost	url:https://www.genome.gov/27565109/the-cost-of-sequencing-a-human-genome/
 RAD2010_view_cc	doi:10.1145/1721654.1721672
 Raina2009_gpu	doi:10.1145/1553374.1553486
@@ -43,7 +43,7 @@ Stein2010_cloud	doi:10.1186/gb-2010-11-5-207
 Su2015_gpu	arxiv:1507.01239
 Sun2016_ensemble	arxiv:1606.00575
 TensorFlow	url:http://download.tensorflow.org/paper/whitepaper2015.pdf
-Vanhoucke2011_nips_cpu	url:https://research.google.com/pubs/pub37631.html
+Vanhoucke2011_cpu	url:https://research.google.com/pubs/pub37631.html
 Wang2016_protein_contact	doi:10.1101/073239
 Yasushi2016_cgbvs_dnn	doi:10.1002/minf.201600045
 Zhou2015_deep_sea	doi:10.1038/nmeth.3547
