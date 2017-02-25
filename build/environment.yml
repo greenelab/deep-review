@@ -5,7 +5,6 @@ channels:
 dependencies:
   - bioconda::wkhtmltopdf=0.12.3
   - conda-forge::pandoc=1.19.2
-  - jupyter=1.0.0
   - pandas=0.19.2
   - python=3.6.0
   - requests=2.13.0
