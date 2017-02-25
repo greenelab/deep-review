@@ -18,25 +18,26 @@ chmod 600 ci/deploy.key
 ssh-add ci/deploy.key
 
 # Commit message
-message="\
+MESSAGE="\
 $TRAVIS_COMMIT_MESSAGE
 
 ***
 
-The remainder of the commit message has been auto-generated.
-
-TRAVIS_COMMIT=$TRAVIS_COMMIT
-TRAVIS_COMMIT_RANGE=$TRAVIS_COMMIT_RANGE
+This build was triggered by
+https://github.com/greenelab/deep-review/commit/$TRAVIS_COMMIT
 
 Created by Travis CI build number $TRAVIS_BUILD_NUMBER and job number $TRAVIS_JOB_NUMBER.
 https://travis-ci.org/greenelab/deep-review/builds/$TRAVIS_BUILD_ID
 https://travis-ci.org/greenelab/deep-review/jobs/$TRAVIS_JOB_ID
 
 Committed on `date --iso-8601=seconds --universal`.
+
+[ci skip]
 "
+echo "$MESSAGE"
 
 # Deploy the reference data to references
-ghp-import -p -b references -m $MESSAGE references/generated
+ghp-import -p -b references -m "$MESSAGE" references/generated
 
 # Deploy the output to gh-pages
-ghp-import -p -b gh-pages -m $MESSAGE output
+ghp-import -p -b gh-pages -m "$MESSAGE" output
