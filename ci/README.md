@@ -3,6 +3,9 @@
 [![Build Status](https://travis-ci.org/greenelab/deep-review.svg?branch=master)](https://travis-ci.org/greenelab/deep-review)
 
 This repository uses [continuous analysis](https://doi.org/10.1101/056473 "Reproducible Computational Workflows with Continuous Analysis") to create the manuscript and commit it back to GitHub.
+[`deploy.sh`](deploy.sh) runs on successful `master` branch builds that are not pull requests.
+The contents of `/output` are committed to the `gh-pages` branch.
+The contents of `/references/generated` are committed to the `references` branch.
 
 ## Generating the GitHub deploy key
 
