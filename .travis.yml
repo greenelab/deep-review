@@ -13,3 +13,6 @@ install:
   - source activate deepreview
 script:
   - sh build/build.sh
+cache:
+  directories:
+    - references/generated
