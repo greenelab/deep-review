@@ -1,0 +1,13 @@
+# Generated manuscript output files
+output
+
+# Generated reference files
+references/generated/*
+!references/generated/README.md
+
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter Notebook
+.ipynb_checkpoints

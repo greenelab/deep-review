@@ -56,7 +56,7 @@ have only recently found widespread use [@tag:Schmidhuber2014_dnn_overview].
 
 Many have sought to curb the costs of deep learning, with methods ranging from
 the very applied (e.g., reduced numerical precision [@tag:Gupta2015_prec
-@tag:Bengio015_prec @tag:Sa2015_buckwild @tag:Hubara2016_qnn]) to the exotic
+@tag:Bengio2015_prec @tag:Sa2015_buckwild @tag:Hubara2016_qnn]) to the exotic
 and theoretic (e.g., training small networks to mimic large networks and
 ensembles [@tag:Caruana2014_need @tag:Hinton2015_dark_knowledge]). The largest
 gains in efficiency have come from computation with graphics processing units
@@ -85,7 +85,7 @@ is not clear whether they can occur quickly enough to keep up with the growing
 amount of available biological data or increasing network sizes. Much has
 been done to minimize the memory
 requirements of neural networks [@tag:CudNN @tag:Caruana2014_need
-@tag:Gupta2015_prec @tag:Bengio015_prec @tag:Sa2015_buckwild
+@tag:Gupta2015_prec @tag:Bengio2015_prec @tag:Sa2015_buckwild
 @tag:Chen2015_hashing @tag:Hubara2016_qnn], but there is also growing
 interest in specialized hardware, such as field-programmable gate arrays
 (FPGAs) [@tag:Edwards2015_growing_pains @tag:Lacey2016_dl_fpga] and
@@ -103,8 +103,8 @@ approaches to distributed computation [@tag:Mapreduce @tag:Graphlab] were
 not suitable for deep learning [@tag:Dean2012_nips_downpour],
 but significant progress has been made. There
 now exist a number of algorithms [@tag:Dean2012_nips_downpour @tag:Dogwild
-@Sa2015_buckwild], tools [@tag:Moritz2015_sparknet @tag:Meng2016_mllib
-@tag:Tensorflow], and high-level libraries [@tag:Keras, @tag:Elephas] for deep
+@tag:Sa2015_buckwild], tools [@tag:Moritz2015_sparknet @tag:Meng2016_mllib
+@tag:TensorFlow], and high-level libraries [@tag:Keras @tag:Elephas] for deep
 learning in a distributed environment, and it is possible to train very complex
 networks with limited infrastructure [@tag:Coates2013_cots_hpc]. Besides
 handling very large networks, distributed or parallelized approaches offer
