@@ -22,20 +22,46 @@ feature selection and construction.*
 
 ### Ligand-Based Prediction of Bioactivity
 
-*Deep learning has been applied in some fashion to structure-based,
-compound-protein interaction-based, and ligand-based prediction problems
-with the overall goal of finding chemical compounds that impair protein
-activity.  AtomNet [@arxiv:1510.02855] is worth including as an example
-of how 3D convolutions can be used for structure-based modeling.  The main
-emphasis should be on ligand-based approaches.  There was substantial hype
-after the Merck Kaggle competition, which we can comment on.  Multitask
-networks have been impactful here.  There are also creative approaches
-for unsupervised and supervised learning with chemical compounds.  Neural
-networks have opened new avenues for representation learning.  These
-approaches may not be dominant on supervised learning
-tasks yet, but they are uniquely tailored to neural networks and have
-great future potential.*
+**TODO: expand outline**
+
+- Short introduction to problem, related reviews, use vHTS definition from
+[@tag:Swamidass2009_irv] (vHTS doesn't fit neatly into classic classification,
+regression, or ranking)
+- Introduce ligand-based approaches, hype and excitement surrounding
+performance of a "high-parameter" network on the Merck Kaggle challenge,
+cover other neural networks trained on fingerprints or descriptors as features
+that followed, Tox21 Data Challenge
+- Multitask networks related to the above point
+- Realistic view of where things stand today, high-parameter networks struggle
+with overfitting, cross validation needs to be done carefully because of temporal
+structure [@tag:Kearnes2016_admet], low parameter networks based on chemical
+similarity (IRV) work very well, especially well-suited for the domain in which
+training data can be limited and contains few positive instances, may touch on
+BACE example here and other discussions of training data limitations (e.g.
+[@tag:AltaeTran2016_one_shot])
+- "Creative experimentation" phase of the field, new ideas for representation
+learning and novel approaches including graph convolutions, autoencoders,
+one shot learning, and generative models
+- These "creative" approaches are definitely interesting but aren't necessarily
+outperforming existing methods, improvements on the software and
+reusability side could be important to help establish more rigorous
+benchmarking, DeepChem as example of this
+- Future outlook, what would need to happen for the "creative" approaches
+to overtake the current state of the art, can representation learning be
+improved by incorporating more information about chemical properties or
+even more "tasks" during training, how much will future growth depend on
+data versus algorithms
+- Future outlook part 2, how the above approaches relate to traditional
+methods like docking (note neural networks that include docking scores as
+features), deep learning efforts in this direction that use structure (e.g.
+[@tag:Wallach2015_atom_net @arxiv:1612.02751]), "zero-shot learning",
+analogies to other domains where deep learning can capture the behavior
+of complex physics (e.g. quantum physics example), maybe briefly mention
+other compound-protein interaction-based networks although that doesn't seem
+to fit here and is somewhat out of scope
+- Future output part 3 (most speculative), what would successful generative
+networks mean for the HTS field?
 
 ### Modeling Metabolism and Chemical Reactivity
 
-Add a reveiw here of metabolism and chemical reactivity.
+*Add a review here of metabolism and chemical reactivity.*
