@@ -2,8 +2,8 @@ set -o errexit
 
 # Configure git
 git config --global push.default simple
-git config --global user.email "travis@travis-ci.com"
-git config --global user.name "Travis CI"
+git config --global user.email `git log --max-count=1 --format='%ae'`
+git config --global user.name `git log --max-count=1 --format='%an'`
 git checkout $TRAVIS_BRANCH
 git remote set-url origin git@github.com:greenelab/deep-review.git
 
@@ -24,20 +24,20 @@ git fetch origin gh-pages:gh-pages references:references
 
 # Commit message
 MESSAGE="\
-$TRAVIS_COMMIT_MESSAGE
+`git log --max-count=1 --format='%s'`
 
-***
+This build is based on
+https://github.com/greenelab/deep-review/commit/$TRAVIS_COMMIT.
 
-This build was triggered by
-https://github.com/greenelab/deep-review/commit/$TRAVIS_COMMIT
-
-Created by Travis CI build number $TRAVIS_BUILD_NUMBER and job number $TRAVIS_JOB_NUMBER.
+This commit was created by the following Travis CI build and job:
 https://travis-ci.org/greenelab/deep-review/builds/$TRAVIS_BUILD_ID
 https://travis-ci.org/greenelab/deep-review/jobs/$TRAVIS_JOB_ID
 
-Committed on `date --iso-8601=seconds --universal`.
-
 [ci skip]
+
+The full commit message that triggered this build is copied below:
+
+$TRAVIS_COMMIT_MESSAGE
 "
 
 # Deploy the reference data to references
