@@ -1,4 +1,7 @@
 language: generic
+branches:
+  only:
+    - master
 before_install:
   - sudo apt-get update --quiet --quiet
   - wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
