@@ -22,7 +22,7 @@ feature selection and construction.*
 
 ### Ligand-Based Prediction of Bioactivity
 
-*Outline to be expanded after approval*
+**TODO: expand outline**
 
 - Short introduction to problem, related reviews, use vHTS definition from
 [@tag:Swamidass2009_irv] (vHTS doesn't fit neatly into classic classification,
@@ -64,4 +64,4 @@ networks mean for the HTS field?
 
 ### Modeling Metabolism and Chemical Reactivity
 
-Add a review here of metabolism and chemical reactivity.
+*Add a review here of metabolism and chemical reactivity.*
