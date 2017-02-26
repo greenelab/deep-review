@@ -10377,5 +10377,246 @@
       "id": "ref_120"
     },
     "citation_id": "ref_120"
+  },
+  "doi:10.1016/j.bjid.2015.08.013": {
+    "source": "doi",
+    "identifer": "10.1016/j.bjid.2015.08.013",
+    "standard_citation": "doi:10.1016/j.bjid.2015.08.013",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2016,
+            10,
+            31
+          ]
+        ],
+        "date-time": "2016-10-31T20:03:19Z",
+        "timestamp": 1477944199765
+      },
+      "reference-count": 49,
+      "publisher": "Elsevier BV",
+      "issue": "6",
+      "license": [
+        {
+          "URL": "http://www.elsevier.com/tdm/userlicense/1.0/",
+          "start": {
+            "date-parts": [
+              [
+                2015,
+                11,
+                1
+              ]
+            ],
+            "date-time": "2015-11-01T00:00:00Z",
+            "timestamp": 1446336000000
+          },
+          "delay-in-days": 0,
+          "content-version": "tdm"
+        },
+        {
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+          "start": {
+            "date-parts": [
+              [
+                2015,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2015-10-09T00:00:00Z",
+            "timestamp": 1444348800000
+          },
+          "delay-in-days": 0,
+          "content-version": "vor"
+        }
+      ],
+      "funder": [
+        {
+          "DOI": "10.13039/501100006435",
+          "name": "Central European Institute of Technology",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "CZ.1.05/1.1.00/02.0068"
+          ]
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "elsevier.com",
+          "sciencedirect.com"
+        ],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "The Brazilian Journal of Infectious Diseases"
+      ],
+      "cited-count": 0,
+      "published-print": {
+        "date-parts": [
+          [
+            2015,
+            11
+          ]
+        ]
+      },
+      "DOI": "10.1016/j.bjid.2015.08.013",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2015,
+            10,
+            27
+          ]
+        ],
+        "date-time": "2015-10-27T16:07:37Z",
+        "timestamp": 1445962057000
+      },
+      "page": "604-613",
+      "update-policy": "http://dx.doi.org/10.1016/elsevier_cm_policy",
+      "source": "CrossRef",
+      "title": "Influence of microbiome species in hard-to-heal wounds on disease severity and treatment duration",
+      "prefix": "http://id.crossref.org/prefix/10.1016",
+      "volume": "19",
+      "author": [
+        {
+          "given": "Dagmar",
+          "family": "Chudobova",
+          "affiliation": []
+        },
+        {
+          "given": "Kristyna",
+          "family": "Cihalova",
+          "affiliation": []
+        },
+        {
+          "given": "Roman",
+          "family": "Guran",
+          "affiliation": []
+        },
+        {
+          "given": "Simona",
+          "family": "Dostalova",
+          "affiliation": []
+        },
+        {
+          "given": "Kristyna",
+          "family": "Smerkova",
+          "affiliation": []
+        },
+        {
+          "given": "Radek",
+          "family": "Vesely",
+          "affiliation": []
+        },
+        {
+          "given": "Jaromir",
+          "family": "Gumulec",
+          "affiliation": []
+        },
+        {
+          "given": "Michal",
+          "family": "Masarik",
+          "affiliation": []
+        },
+        {
+          "given": "Zbynek",
+          "family": "Heger",
+          "affiliation": []
+        },
+        {
+          "given": "Vojtech",
+          "family": "Adam",
+          "affiliation": []
+        },
+        {
+          "given": "Rene",
+          "family": "Kizek",
+          "affiliation": []
+        }
+      ],
+      "member": "http://id.crossref.org/member/78",
+      "container-title": "The Brazilian Journal of Infectious Diseases",
+      "original-title": [],
+      "link": [
+        {
+          "URL": "http://api.elsevier.com/content/article/PII:S1413867015001889?httpAccept=text/xml",
+          "content-type": "text/xml",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "http://api.elsevier.com/content/article/PII:S1413867015001889?httpAccept=text/plain",
+          "content-type": "text/plain",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2015,
+            12,
+            1
+          ]
+        ],
+        "date-time": "2015-12-01T02:17:21Z",
+        "timestamp": 1448936241000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2015,
+            11
+          ]
+        ]
+      },
+      "alternative-id": [
+        "S1413867015001889"
+      ],
+      "URL": "http://dx.doi.org/10.1016/j.bjid.2015.08.013",
+      "citing-count": 49,
+      "subject": [
+        "Medicine(all)"
+      ],
+      "assertion": [
+        {
+          "value": "Elsevier",
+          "name": "publisher",
+          "label": "This article is maintained by"
+        },
+        {
+          "value": "Influence of microbiome species in hard-to-heal wounds on disease severity and treatment duration",
+          "name": "articletitle",
+          "label": "Article Title"
+        },
+        {
+          "value": "The Brazilian Journal of Infectious Diseases",
+          "name": "journaltitle",
+          "label": "Journal Title"
+        },
+        {
+          "value": "http://dx.doi.org/10.1016/j.bjid.2015.08.013",
+          "name": "articlelink",
+          "label": "CrossRef DOI link to publisher maintained version"
+        },
+        {
+          "value": "article",
+          "name": "content_type",
+          "label": "Content Type"
+        },
+        {
+          "value": "Copyright © 2015 Elsevier Editora Ltda.",
+          "name": "copyright",
+          "label": "Copyright"
+        }
+      ],
+      "id": "ref_121"
+    },
+    "citation_id": "ref_121"
   }
 }
