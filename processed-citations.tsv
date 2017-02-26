@@ -11,6 +11,7 @@ text	citation	standard_citation	citation_id
 @arxiv:1608.02158	arxiv:1608.02158	arxiv:1608.02158	ref_8
 @arxiv:1609.02943	arxiv:1609.02943	arxiv:1609.02943	ref_9
 @arxiv:1611.08373	arxiv:1611.08373	arxiv:1611.08373	ref_10
+@arxiv:1612.02751	arxiv:1612.02751	arxiv:1612.02751	ref_117
 @doi:10.1002/cyto.a.22909	doi:10.1002/cyto.a.22909	doi:10.1002/cyto.a.22909	ref_11
 @doi:10.1002/minf.201501008	doi:10.1002/minf.201501008	doi:10.1002/minf.201501008	ref_12
 @doi:10.1007/978-3-319-16706-0_20	doi:10.1007/978-3-319-16706-0_20	doi:10.1007/978-3-319-16706-0_20	ref_13
@@ -71,6 +72,7 @@ text	citation	standard_citation	citation_id
 @pmid:21347133	pmid:21347133	pmid:21347133	ref_68
 @pmid:24159271	pmid:24159271	pmid:24159271	ref_69
 @pmid:27134610	pmid:27134610	pmid:27134610	ref_70
+@tag:AltaeTran2016_one_shot	arxiv:1611.03199	arxiv:1611.03199	ref_118
 @tag:Angermueller2016_single_methyl	doi:10.1101/055715	doi:10.1101/055715	ref_71
 @tag:Arvaniti2016_rare_subsets	doi:10.1101/046508	doi:10.1101/046508	ref_72
 @tag:Bengio2015_prec	arxiv:1412.7024	arxiv:1412.7024	ref_73
@@ -93,6 +95,7 @@ text	citation	standard_citation	citation_id
 @tag:Hadjas2015_cc	arxiv:1504.04343	arxiv:1504.04343	ref_90
 @tag:Hinton2015_dark_knowledge	arxiv:1503.02531	arxiv:1503.02531	ref_91
 @tag:Hubara2016_qnn	arxiv:1609.07061	arxiv:1609.07061	ref_92
+@tag:Kearnes2016_admet	arxiv:1606.08793	arxiv:1606.08793	ref_119
 @tag:Keras	url:https://github.com/fchollet/keras	url:https://github.com/fchollet/keras	ref_93
 @tag:Krizhevsky2013_nips_cnn	url:https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf	url:https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf	ref_94
 @tag:Krizhevsky2014_weird_trick	arxiv:1404.5997	arxiv:1404.5997	ref_95
@@ -111,8 +114,10 @@ text	citation	standard_citation	citation_id
 @tag:Stein2010_cloud	doi:10.1186/gb-2010-11-5-207	doi:10.1186/gb-2010-11-5-207	ref_107
 @tag:Su2015_gpu	arxiv:1507.01239	arxiv:1507.01239	ref_108
 @tag:Sun2016_ensemble	arxiv:1606.00575	arxiv:1606.00575	ref_109
+@tag:Swamidass2009_irv	doi:10.1021/ci8004379	doi:10.1021/ci8004379	ref_120
 @tag:TensorFlow	url:http://download.tensorflow.org/paper/whitepaper2015.pdf	url:http://download.tensorflow.org/paper/whitepaper2015.pdf	ref_110
 @tag:Vanhoucke2011_cpu	url:https://research.google.com/pubs/pub37631.html	url:https://research.google.com/pubs/pub37631.html	ref_111
+@tag:Wallach2015_atom_net	arxiv:1510.02855	arxiv:1510.02855	ref_2
 @tag:Wang2016_protein_contact	doi:10.1101/073239	doi:10.1101/073239	ref_46
 @tag:Yasushi2016_cgbvs_dnn	doi:10.1002/minf.201600045	doi:10.1002/minf.201600045	ref_112
 @url:http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf	url:http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf	url:http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf	ref_113

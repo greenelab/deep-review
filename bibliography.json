@@ -9500,6 +9500,127 @@
     "id": "ref_115"
   },
   {
+    "indexed": {
+      "date-parts": [
+        [
+          2016,
+          11,
+          27
+        ]
+      ],
+      "date-time": "2016-11-27T14:43:44Z",
+      "timestamp": 1480257824618
+    },
+    "reference-count": 0,
+    "publisher": "American Chemical Society (ACS)",
+    "issue": "4",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "J. Chem. Inf. Model."
+    ],
+    "cited-count": 0,
+    "published-print": {
+      "date-parts": [
+        [
+          2009,
+          4,
+          27
+        ]
+      ]
+    },
+    "DOI": "10.1021/ci8004379",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2009,
+          3,
+          26
+        ]
+      ],
+      "date-time": "2009-03-26T12:05:55Z",
+      "timestamp": 1238069155000
+    },
+    "page": "756-766",
+    "source": "CrossRef",
+    "title": "Influence Relevance Voting: An Accurate And Interpretable Virtual High Throughput Screening Method",
+    "prefix": "http://id.crossref.org/prefix/10.1021",
+    "volume": "49",
+    "author": [
+      {
+        "given": "S. Joshua",
+        "family": "Swamidass",
+        "affiliation": []
+      },
+      {
+        "given": "Chloé-Agathe",
+        "family": "Azencott",
+        "affiliation": []
+      },
+      {
+        "given": "Ting-Wan",
+        "family": "Lin",
+        "affiliation": []
+      },
+      {
+        "given": "Hugo",
+        "family": "Gramajo",
+        "affiliation": []
+      },
+      {
+        "given": "Shiou-Chuan",
+        "family": "Tsai",
+        "affiliation": []
+      },
+      {
+        "given": "Pierre",
+        "family": "Baldi",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/316",
+    "container-title": "Journal of Chemical Information and Modeling",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          9,
+          2
+        ]
+      ],
+      "date-time": "2016-09-02T02:55:56Z",
+      "timestamp": 1472784956000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2009,
+          4,
+          27
+        ]
+      ]
+    },
+    "alternative-id": [
+      "10.1021/ci8004379"
+    ],
+    "URL": "http://dx.doi.org/10.1021/ci8004379",
+    "citing-count": 0,
+    "subject": [
+      "Chemistry(all)",
+      "Chemical Engineering(all)",
+      "Library and Information Sciences",
+      "Computer Science Applications"
+    ],
+    "id": "ref_120"
+  },
+  {
     "abstract": "The ImageNet Large Scale Visual Recognition Challenge is a benchmark in object category classification and detection on hundreds of object categories and millions of images. The challenge has been run annually from 2010 to present, attracting participation from more than fifty institutions. This paper describes the creation of this benchmark dataset and the advances in object recognition that have been possible as a result. We discuss the challenges of collecting large-scale ground truth annotation, highlight key breakthroughs in categorical object recognition, provide a detailed analysis of the current state of the field of large-scale image classification and object detection, and compare the state-of-the-art computer vision accuracy with human accuracy. We conclude with lessons learned in the five years of the challenge, and propose future directions and improvements.",
     "author": [
       {
@@ -10534,6 +10655,102 @@
       ]
     },
     "title": "Advances in optimizing recurrent networks",
+    "type": "article-journal"
+  },
+  {
+    "abstract": "Computational approaches to drug discovery can reduce the time and cost associated with experimental assays and enable the screening of novel chemotypes. Structure-based drug design methods rely on scoring functions to rank and predict binding affinities and poses. The ever-expanding amount of protein-ligand binding and structural data enables the use of deep machine learning techniques for protein-ligand scoring. We describe convolutional neural network (CNN) scoring functions that take as input a comprehensive 3D representation of a protein-ligand interaction. A CNN scoring function automatically learns the key features of protein-ligand interactions that correlate with binding. We train and optimize our CNN scoring functions to discriminate between correct and incorrect binding poses and known binders and non-binders. We find that our CNN scoring function outperforms the AutoDock Vina scoring function when ranking poses both for pose prediction and virtual screening.",
+    "author": [
+      {
+        "family": "Ragoza",
+        "given": "Matthew"
+      },
+      {
+        "family": "Hochuli",
+        "given": "Joshua"
+      },
+      {
+        "family": "Idrobo",
+        "given": "Elisa"
+      },
+      {
+        "family": "Sunseri",
+        "given": "Jocelyn"
+      },
+      {
+        "family": "Koes",
+        "given": "David Ryan"
+      }
+    ],
+    "id": "ref_117",
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          12
+        ]
+      ]
+    },
+    "title": "Protein-ligand scoring with convolutional neural networks",
+    "type": "article-journal"
+  },
+  {
+    "abstract": "Recent advances in machine learning have made significant contributions to drug discovery. Deep neural networks in particular have been demonstrated to provide significant boosts in predictive power when inferring the properties and activities of small-molecule compounds. However, the applicability of these techniques has been limited by the requirement for large amounts of training data. In this work, we demonstrate how one-shot learning can be used to significantly lower the amounts of data required to make meaningful predictions in drug discovery applications. We introduce a new architecture, the residual LSTM embedding, that, when combined with graph convolutional neural networks, significantly improves the ability to learn meaningful distance metrics over small-molecules. We open source all models introduced in this work as part of DeepChem, an open-source framework for deep-learning in drug discovery.",
+    "author": [
+      {
+        "family": "Altae-Tran",
+        "given": "Han"
+      },
+      {
+        "family": "Ramsundar",
+        "given": "Bharath"
+      },
+      {
+        "family": "Pappu",
+        "given": "Aneesh S."
+      },
+      {
+        "family": "Pande",
+        "given": "Vijay"
+      }
+    ],
+    "id": "ref_118",
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          12
+        ]
+      ]
+    },
+    "title": "Low data drug discovery with one-shot learning",
+    "type": "article-journal"
+  },
+  {
+    "abstract": "Deep learning methods such as multitask neural networks have recently been applied to ligand-based virtual screening and other drug discovery applications. Using a set of industrial ADMET datasets, we compare neural networks to standard baseline models and analyze multitask learning effects with both random cross-validation and a more relevant temporal validation scheme. We confirm that multitask learning can provide modest benefits over single-task models and show that smaller datasets tend to benefit more than larger datasets from multitask learning. Additionally, we find that adding massive amounts of side information is not guaranteed to improve performance relative to simpler multitask learning. Our results emphasize that multitask effects are highly dataset-dependent, suggesting the use of dataset-specific models to maximize overall performance.",
+    "author": [
+      {
+        "family": "Kearnes",
+        "given": "Steven"
+      },
+      {
+        "family": "Goldman",
+        "given": "Brian"
+      },
+      {
+        "family": "Pande",
+        "given": "Vijay"
+      }
+    ],
+    "id": "ref_119",
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          6
+        ]
+      ]
+    },
+    "title": "Modeling industrial admet data with multitask networks",
     "type": "article-journal"
   }
 ]
