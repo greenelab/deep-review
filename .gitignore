@@ -1,6 +1,9 @@
-# Output files
+# Generated manuscript output files
 output
-references/generated
+
+# Generated reference files
+references/generated/*
+!references/generated/README.md
 
 # Python
 __pycache__/
