@@ -17,6 +17,11 @@ eval `ssh-agent -s`
 chmod 600 ci/deploy.key
 ssh-add ci/deploy.key
 
+# Fetch and create gh-pages and references branches
+# Travis does a shallow and single branch git clone
+git remote set-branches --add origin gh-pages references
+git fetch origin gh-pages:gh-pages references:references
+
 # Commit message
 MESSAGE="\
 $TRAVIS_COMMIT_MESSAGE
@@ -34,7 +39,6 @@ Committed on `date --iso-8601=seconds --universal`.
 
 [ci skip]
 "
-echo "$MESSAGE"
 
 # Deploy the reference data to references
 ghp-import -p -b references -m "$MESSAGE" references/generated
