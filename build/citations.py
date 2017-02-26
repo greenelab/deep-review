@@ -37,7 +37,7 @@ def get_brackets_without_reference(text):
     Find bracketed text that does not start with @. Does not match
     brackets that are followed by an open parenthesis.
     """
-    pattern = re.compile(r'(\[[^@].*?\])[^(]', flags=re.DOTALL)
+    pattern = re.compile(r'(\[[^@][^\]]*?\])[^(]', flags=re.DOTALL)
     return list(pattern.findall(text))
 
 
