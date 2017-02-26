@@ -204,7 +204,7 @@ There are still a lot of challenges with applying deep neural networks to metage
 hundreds/thousands of features (aka species).  Such underdetermined/ill-conditioned problems
 are still a challenge for deep neural networks that require many more training examples than 
 features to sufficiently converge the weights on the hidden layers.  Also, due to convergence issues 
-(slowness and instability due to large neural networks modeling very large datasets [arxiv:1212.0901v2]), 
+(slowness and instability due to large neural networks modeling very large datasets [@arxiv:1212.0901v2]), 
 taxonomic classification of reads from whole genome sequencing seems out of reach at the moment for deep neural 
 networks -- due to only thousands of full-sequenced genomes as compared to hundreds of thousands of 16S rRNA sequences 
 available for training.
