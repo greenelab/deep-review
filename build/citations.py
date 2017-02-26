@@ -32,6 +32,15 @@ def get_references_from_text(text):
     return refs
 
 
+def get_brackets_without_reference(text):
+    """
+    Find bracketed text that does not start with @. Does not match
+    brackets that are followed by an open parenthesis.
+    """
+    pattern = re.compile(r'(\[[^@].*?\])[^(]', flags=re.DOTALL)
+    return list(pattern.findall(text))
+
+
 def get_text(directory):
     """
     Return a dictionary of section texts in the specified directory.

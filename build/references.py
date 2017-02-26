@@ -16,6 +16,7 @@ import pandas
 from citations import (
     citation_to_metadata,
     citeproc_passthrough,
+    get_brackets_without_reference,
     get_references_from_text,
     get_text,
     validate_reference,
@@ -32,6 +33,10 @@ gen_dir.mkdir(exist_ok=True)
 
 text = get_text('../sections')
 refs = sorted(get_references_from_text(text))
+warn_refs = get_brackets_without_reference(text)
+if warn_refs:
+    print('WARNING: The following bracketed texts are not references:')
+    print('\n'.join(warn_refs))
 bad_refs = list(filter(None, map(validate_reference, refs)))
 if bad_refs:
     print('\n'.join(bad_refs))
