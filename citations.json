@@ -10222,5 +10222,12 @@
       "id": "ref_115"
     },
     "citation_id": "ref_115"
+  },
+  "arxiv:1212.0901v2": {
+    "source": "arxiv",
+    "identifer": "1212.0901v2",
+    "standard_citation": "arxiv:1212.0901v2",
+    "bibtex": "@article{ref_116,\n abstract = {After a more than decade-long period of relatively little research activity\nin the area of recurrent neural networks, several new developments will be\nreviewed here that have allowed substantial progress both in understanding and\nin technical solutions towards more efficient training of recurrent networks.\nThese advances have been motivated by and related to the optimization issues\nsurrounding deep learning. Although recurrent networks are extremely powerful\nin what they can in principle represent in terms of modelling sequences,their\ntraining is plagued by two aspects of the same issue regarding the learning of\nlong-term dependencies. Experiments reported here evaluate the use of clipping\ngradients, spanning longer time ranges with leaky integration, advanced\nmomentum techniques, using more powerful output probability models, and\nencouraging sparser gradients to help symmetry breaking and credit assignment.\nThe experiments are performed on text and music data and show off the combined\neffects of these techniques in generally improving both training and test\nerror.},\n archiveprefix = {arXiv},\n author = {Yoshua Bengio and Nicolas Boulanger-Lewandowski and Razvan Pascanu},\n eprint = {1212.0901v2},\n file = {1212.0901v2.pdf},\n link = {http://arxiv.org/abs/1212.0901v2},\n month = {12},\n primaryclass = {cs.LG},\n title = {Advances in Optimizing Recurrent Networks},\n year = {2012}\n}\n\n",
+    "citation_id": "ref_116"
   }
 }

@@ -49,11 +49,11 @@ termed neural networks. Each neuron in a computational neural network, termed a
 node, has inputs, an activation function, and outputs. Each value from the
 inputs is usually multiplied by some weight and combined and summarized by the
 activation function. The value of the activation function is then multiplied by
-another set of weights to produce the output `TODO: we probably need a figure
+another set of weights to produce the output **TODO: we probably need a figure
 here - I see no way that we don't include this type of description in our paper,
 despite the fact that it's been done tons of times before. - I'm really partial
 to this nature review's explanation about making non-linear problems linear -
-figure 1 [@ref_30]` These neural networks are trained by
+figure 1 [@ref_30]** These neural networks are trained by
 identifying weights that produce a desired output from some specific input.
 
 Neural networks can also be stacked. The outputs from one network can be used as
@@ -686,7 +686,7 @@ There are still a lot of challenges with applying deep neural networks to metage
 hundreds/thousands of features (aka species).  Such underdetermined/ill-conditioned problems
 are still a challenge for deep neural networks that require many more training examples than 
 features to sufficiently converge the weights on the hidden layers.  Also, due to convergence issues 
-(slowness and instability due to large neural networks modeling very large datasets [arxiv:1212.0901v2]), 
+(slowness and instability due to large neural networks modeling very large datasets [@ref_116]), 
 taxonomic classification of reads from whole genome sequencing seems out of reach at the moment for deep neural 
 networks -- due to only thousands of full-sequenced genomes as compared to hundreds of thousands of 16S rRNA sequences 
 available for training.
