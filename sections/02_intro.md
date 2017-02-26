@@ -39,11 +39,11 @@ termed neural networks. Each neuron in a computational neural network, termed a
 node, has inputs, an activation function, and outputs. Each value from the
 inputs is usually multiplied by some weight and combined and summarized by the
 activation function. The value of the activation function is then multiplied by
-another set of weights to produce the output `TODO: we probably need a figure
+another set of weights to produce the output **TODO: we probably need a figure
 here - I see no way that we don't include this type of description in our paper,
 despite the fact that it's been done tons of times before. - I'm really partial
 to this nature review's explanation about making non-linear problems linear -
-figure 1 [@doi:10.1038/nature14539]` These neural networks are trained by
+figure 1 [@doi:10.1038/nature14539]** These neural networks are trained by
 identifying weights that produce a desired output from some specific input.
 
 Neural networks can also be stacked. The outputs from one network can be used as
