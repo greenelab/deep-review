@@ -188,8 +188,8 @@ forests [Mrzelj].  However, this study performed 10-fold cross-validation on 300
 
 Due to the traditionally small numbers of metagenomic samples in studies, neural network uses for 
 classifying phenotype from microbial composition are just beginning.   A standard MLP 
-was able to classify wound severity from microbial species present in the wound [Kizek,
-2015].  Recently, multi-layer, recurrent networks (and convolutional
+was able to classify wound severity from microbial species present in the wound [@doi:10.1016/j.bjid.2015.08.013].
+Recently, multi-layer, recurrent networks (and convolutional
 networks) have been applied to microbiome genotype-phenotype, with Ditzler et
 al. being the first to associate soil samples with pH level using multi-layer
 perceptrons, deep-belief networks, and recursive neural networks (RNNs) 
