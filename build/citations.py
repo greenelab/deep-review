@@ -10,12 +10,12 @@ import metadata
 
 def validate_reference(ref):
     if not ref.startswith('@'):
-        return f'{ref} does not start with @'
+        return f'{ref} → does not start with @'
     source, tail = ref.lstrip('@').split(':', 1)
     if not tail:
-        return f'{ref} does not specify its source, e.g. doi or pmid'
+        return f'{ref} → does not specify its source, e.g. "@doi:" or "@pmid:"'
     if source not in {'doi', 'pmid', 'arxiv', 'url', 'tag'}:
-        return f'{ref} source is not valid'
+        return f'{ref} → source "{source}" is not valid'
     return None
 
 
@@ -131,6 +131,7 @@ def citeproc_passthrough(csl_item, set_id=None):
         csl_item['id'] = set_id
 
     # Correct invalid CSL item types
+    # See https://github.com/CrossRef/rest-api-doc/issues/187
     old_type = csl_item['type']
     csl_item['type'] = citeproc_type_fixer.get(old_type, old_type)
 
