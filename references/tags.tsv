@@ -1,4 +1,5 @@
 tag	citation
+Alipanahi2015_predicting	doi:10.1038/nmeth.3547
 AltaeTran2016_one_shot	arxiv:1611.03199
 Angermueller2016_single_methyl	doi:10.1101/055715
 Arvaniti2016_rare_subsets	doi:10.1101/046508
@@ -17,6 +18,7 @@ Dogwild	url:https://papers.nips.cc/paper/5717-taming-the-wild-a-unified-analysis
 Duvenaud2015_graph_conv	url:http://papers.nips.cc/paper/5954-convolutional-networks-on-graphs-for-learning-molecular-fingerprints
 Edwards2015_growing_pains	doi:10.1145/2771283
 Elephas	url:https://github.com/maxpumperla/elephas
+Ghandi2014_enhanced	doi:10.1371/journal.pcbi.1003711
 Gerstein2016_scaling	doi:10.1186/s13059-016-0917-0
 Gomezb2016_automatic	arxiv:1610.02415
 Graphlab	doi:10.14778/2212351.2212354
@@ -24,6 +26,7 @@ Gupta2015_prec	arxiv:1502.02551
 Hadjas2015_cc	arxiv:1504.04343
 Hinton2015_dark_knowledge	arxiv:1503.02531
 Hinton2015_dk	arxiv:1503.02531v1
+Horton1992_assessment	doi:10.1093/nar/20.16.4331
 Hubara2016_qnn	arxiv:1609.07061
 Kearnes2016_admet	arxiv:1606.08793
 Kearnes2016_graph_conv	doi:10.1007/s10822-016-9938-8
@@ -31,6 +34,7 @@ Keras	url:https://github.com/fchollet/keras
 Krizhevsky2013_nips_cnn	url:https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf
 Krizhevsky2014_weird_trick	arxiv:1404.5997
 Lacey2016_dl_fpga	arxiv:1602.04283
+Lanchantin2016_motif	arXiv:1608.03644
 Li2014_minibatch	doi:10.1145/2623330.2623612
 Lusci2015_irv	doi:10.1186/s13321-015-0110-6
 Ma2015_qsar_merck	doi:10.1021/ci500747n
@@ -47,9 +51,12 @@ Sa2015_buckwild	arxiv:1506.06438
 Schatz2010_dna_cloud	doi:10.1038/nbt0710-691
 Schmidhuber2014_dnn_overview	doi:10.1016/j.neunet.2014.09.003
 Seide2014_parallel	doi:10.1109/ICASSP.2014.6853593
+Setty2015_seqgl	doi:10.1371/journal.pcbi.1004271
 Shaham2016_batch_effects	arxiv:1610.04181
+Shrikumar2016_blackbox	arXiv:1605.01713
 Spark	doi:10.1145/2934664
 Stein2010_cloud	doi:10.1186/gb-2010-11-5-207
+Stormo2000_dna	doi:10.1093/bioinformatics/16.1.16
 Su2015_gpu	arxiv:1507.01239
 Sun2016_ensemble	arxiv:1606.00575
 Swamidass2009_irv	doi:10.1021/ci8004379
