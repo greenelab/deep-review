@@ -84,9 +84,24 @@ review will cover.
 
 [![Build Status](https://travis-ci.org/greenelab/deep-review.svg?branch=master)](https://travis-ci.org/greenelab/deep-review)
 
-[`.travis.yml`](.travis.yml) configures the continuous integration.
+When you make a pull request, Travis CI will test whether your changes break the build process to generate the formatted manuscript.
+The build process aims to detect common errors, such as invalid references.
+If your build fails, see the Travis CI logs for the cause of failure and revise your pull request accordingly.
+
+When a pull request is merged, Travis CI performs the build and writes the results to the [`gh-pages`](https://github.com/greenelab/deep-review/tree/gh-pages) and [`references`](https://github.com/greenelab/deep-review/tree/references) branches.
+The `gh-pages` branch hosts the following URLs:
+
++ **HTML manuscript** at https://greenelab.github.io/deep-review/<br>
+  short URL: https://git.io/vytJN
++ **PDF manuscript** at https://greenelab.github.io/deep-review/deep-review.pdf<br>
+  short URL: https://git.io/vytJ5
+ 
+For continuous integration configuration details, see [`.travis.yml`](.travis.yml).
 
 ## License
+
+[![License: CC BY 4.0](https://img.shields.io/badge/License%20All-CC%20BY%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by/4.0/)
+[![License: CC0 1.0](https://img.shields.io/badge/License%20Parts-CC0%201.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
 This entirety of this repository is licensed under a CC BY 4.0 License ([`LICENSE.md`](LICENSE.md)), which allows reuse with attribution.
 Please attribute by linking to https://github.com/greenelab/deep-review.
