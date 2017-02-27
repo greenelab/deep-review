@@ -1,15 +1,15 @@
-
+#!/usr/bin/env python
 # coding: utf-8
-
-# # Process citations and retrieve metadata
-
-# In[1]:
+"""
+Process citations and retrieve metadata
+"""
 
 import json
 import re
 import os
 import pathlib
 import subprocess
+import textwrap
 
 import pandas
 
@@ -22,25 +22,46 @@ from citations import (
     validate_reference,
 )
 
+# Run only as a script
+assert __name__ == '__main__'
 
-# In[2]:
+def get_divider(title='Error', linewidth=79, fill_character='#'):
+    """
+    Useful for separating sections in logs
+    """
+    lines = [
+        '',
+        fill_character * linewidth,
+        f' {title} '.center(linewidth, fill_character),
+    ]
+    return '\n'.join(lines)
 
+
+# Configure directories
 ref_dir = pathlib.Path('../references')
 gen_dir = ref_dir.joinpath('generated')
 gen_dir.mkdir(exist_ok=True)
 
-# In[3]:
-
+# Read and process manuscript
 text = get_text('../sections')
 refs = sorted(get_references_from_text(text))
+
+# Warn about non-failing misformatted references
 warn_refs = get_brackets_without_reference(text)
 if warn_refs:
-    print('WARNING: The following bracketed texts are not references:')
+    print(get_divider('References Warning'))
+    print('Potentially misformatted references detected:')
     print('\n'.join(warn_refs))
+
+# Failing references
 bad_refs = list(filter(None, map(validate_reference, refs)))
 if bad_refs:
+    print(get_divider('References Error'))
+    print('Misformatted references detected:')
     print('\n'.join(bad_refs))
-    assert False
+    raise SystemExit(1)
+
+
 ref_df = pandas.DataFrame({'text': refs})
 tag_df = pandas.read_table(ref_dir.joinpath('tags.tsv'))
 tag_df['text'] = '@tag:' + tag_df.tag
@@ -48,24 +69,19 @@ ref_df = ref_df.merge(tag_df[['text', 'citation']], how='left')
 ref_df.citation.fillna(ref_df.text.str.lstrip('@'), inplace=True)
 
 
-# In[4]:
-
-ref_df.head(3)
-
-
-# In[5]:
-
 def get_standard_citatation(citation, cache):
+    """
+    For a citation, return (standard_citation, citation_metadata).
+    Returns (None, None) if citation metadata not retrievable.
+    """
     try:
         metadata = citation_to_metadata(citation, cache)
         return metadata['standard_citation'], metadata['citation_id']
     except Exception as e:
-        print(citation, e)
         return None, None
 
 
-# In[6]:
-
+# Load metadata cache
 cache_path = gen_dir.joinpath('citations.json')
 use_cache = cache_path.exists() and 'REFRESH_METADATA_CACHE' not in os.environ
 print('Using metadata cache:', use_cache)
@@ -75,51 +91,48 @@ if use_cache:
 else:
     metadata_cache = {}
 
-ref_df['standard_citation'], ref_df['citation_id'] = zip(*ref_df.citation.apply(
-    get_standard_citatation, cache=metadata_cache))
+# Get metadata and populate standard_citation and citation_id columns
+ref_df['standard_citation'], ref_df['citation_id'] = zip(
+    *ref_df.citation.apply(get_standard_citatation, cache=metadata_cache))
 
+broken_citations = ref_df[ref_df.citation_id.isnull()]
+if not broken_citations.empty:
+    bad = '\n'.join(broken_citations['text'])
+    message = get_divider('References Error') + textwrap.dedent(f'''
+    Metadata could not be retrieved for the following citations:
+    {bad}
+    ''')
+    raise SystemExit(message)
 
-# In[7]:
-
-ref_df.head(3)
-
-
-# In[8]:
-
+# Duplicated citations
 print(f'''
 {len(ref_df)} unique citations strings extracted from text
 {ref_df.standard_citation.nunique()} unique citations after standardizations
 '''.strip())
 
-
-# In[9]:
-
-# Duplicated citations
 dup_df = ref_df[ref_df.standard_citation.duplicated(keep=False)]
 print(dup_df)
 
-# In[10]:
-
+# Convert to numbered refernces for pandoc
 converted_text = text
 for old, new in zip(ref_df.text, '@' + ref_df.citation_id):
     old = re.escape(old)
     converted_text = re.sub(old + '(?=[\s\]])', new, converted_text)
 
+# Write manuscript for pandoc
 with gen_dir.joinpath('all-sections.md').open('wt') as write_file:
     write_file.write(converted_text)
 
-
-# In[11]:
-
+# Write citation table
 path = gen_dir.joinpath('processed-citations.tsv')
 ref_df.to_csv(path, sep='\t', index=False)
 
+# Write metadata cache
 with cache_path.open('wt') as write_file:
     json.dump(metadata_cache, write_file, indent=2, ensure_ascii=False)
 
 
-# In[12]:
-
+# Generate CSL items for Pandoc
 csl_items = list()
 bibtex_stanzas = list()
 for metadata in metadata_cache.values():
@@ -128,17 +141,16 @@ for metadata in metadata_cache.values():
     elif 'bibtex' in metadata:
         bibtex_stanzas.append(metadata['bibtex'])
 
+# Write bibtex bibliography
 bib_path = gen_dir.joinpath('bibliography.bib')
 with bib_path.open('wt') as write_file:
     write_file.write('\n'.join(bibtex_stanzas))
 
+# Convert bibtex records to JSON CSL Items
 bib_items = subprocess.check_output(['pandoc-citeproc', '--bib2json', bib_path])
 bib_items = json.loads(bib_items)
 csl_items.extend(map(citeproc_passthrough, bib_items))
 
-
-# In[13]:
-
+# Write JSON CSL bibliography for Pandoc.
 with gen_dir.joinpath('bibliography.json').open('wt') as write_file:
     json.dump(csl_items, write_file, indent=2, ensure_ascii=False)
-
