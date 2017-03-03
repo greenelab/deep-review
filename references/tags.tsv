@@ -1,5 +1,5 @@
 tag	citation
-Alipanahi2015_predicting  doi:10.1038/nmeth.3547
+Alipanahi2015_predicting	doi:10.1038/nmeth.3547
 AltaeTran2016_one_shot	arxiv:1611.03199
 Angermueller2016_single_methyl	doi:10.1101/055715
 Arvaniti2016_rare_subsets	doi:10.1101/046508
@@ -34,7 +34,7 @@ Keras	url:https://github.com/fchollet/keras
 Krizhevsky2013_nips_cnn	url:https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf
 Krizhevsky2014_weird_trick	arxiv:1404.5997
 Lacey2016_dl_fpga	arxiv:1602.04283
-Lanchantin2016_motif  arxiv:1608.03644
+Lanchantin2016_motif	arxiv:1608.03644
 Li2014_minibatch	doi:10.1145/2623330.2623612
 Lusci2015_irv	doi:10.1186/s13321-015-0110-6
 Ma2015_qsar_merck	doi:10.1021/ci500747n
@@ -53,7 +53,7 @@ Schmidhuber2014_dnn_overview	doi:10.1016/j.neunet.2014.09.003
 Seide2014_parallel	doi:10.1109/ICASSP.2014.6853593
 Setty2015_seqgl doi:10.1371/journal.pcbi.1004271
 Shaham2016_batch_effects	arxiv:1610.04181
-Shrikumar2016_blackbox  arxiv:1605.01713
+Shrikumar2016_blackbox	arxiv:1605.01713
 Spark	doi:10.1145/2934664
 Stein2010_cloud	doi:10.1186/gb-2010-11-5-207
 Stormo2000_dna	doi:10.1093/bioinformatics/16.1.16
