@@ -41,13 +41,13 @@ regulation, making them very important to understand for higher level
 biological processes. While high-throughput sequencing techniques such as
 Chromatin immunoprecipitation and massively parallel DNA
 sequencing (ChIP-seq) have been able to accurately identify binding regions
-for DNA and RNA proteins, these experiments are both time consuming and 
+for DNA and RNA proteins, these experiments are both time consuming and
 expensive. In addition, the sequencing methods do not provide any sort of
-analysis on the proteins which would lead to a better understanding of 
+analysis on the proteins which would lead to a better understanding of
 the underlying process. Thus, there is a need to computationally predict
 and understand these binding regions de novo from sequences.
 
-##### Transcription Factors
+#### Transcription Factors
 
 Transcription Factors (TFs) are regulatory proteins which bind to certain
 locations on a DNA sequence and controls the rate of genetic information
