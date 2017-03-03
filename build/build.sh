@@ -19,6 +19,7 @@ pandoc --verbose \
   --from=markdown --to=html \
   --bibliography=$BIBLIOGRAPHY_PATH \
   --csl=$CSL_PATH \
+  --metadata link-citations=true \
   --css=github-pandoc.css \
   --output=output/index.html \
   $INPUT_PATH
@@ -30,5 +31,6 @@ pandoc \
   --to=html5 \
   --bibliography=$BIBLIOGRAPHY_PATH \
   --csl=$CSL_PATH \
+  --metadata link-citations=true \
   --output=output/deep-review.pdf \
   $INPUT_PATH
