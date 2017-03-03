@@ -1,3 +1,9 @@
+# Generate OpenTimestamps
+python ci/opentimestamps-client/ots stamp \
+  output/index.html \
+  output/deep-review.pdf
+
+# Exit on errors
 set -o errexit
 
 # Configure git
