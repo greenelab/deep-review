@@ -1,4 +1,32 @@
 @article{ref_0,
+ abstract = {After a more than decade-long period of relatively little research activity
+in the area of recurrent neural networks, several new developments will be
+reviewed here that have allowed substantial progress both in understanding and
+in technical solutions towards more efficient training of recurrent networks.
+These advances have been motivated by and related to the optimization issues
+surrounding deep learning. Although recurrent networks are extremely powerful
+in what they can in principle represent in terms of modelling sequences,their
+training is plagued by two aspects of the same issue regarding the learning of
+long-term dependencies. Experiments reported here evaluate the use of clipping
+gradients, spanning longer time ranges with leaky integration, advanced
+momentum techniques, using more powerful output probability models, and
+encouraging sparser gradients to help symmetry breaking and credit assignment.
+The experiments are performed on text and music data and show off the combined
+effects of these techniques in generally improving both training and test
+error.},
+ archiveprefix = {arXiv},
+ author = {Yoshua Bengio and Nicolas Boulanger-Lewandowski and Razvan Pascanu},
+ eprint = {1212.0901v2},
+ file = {1212.0901v2.pdf},
+ link = {http://arxiv.org/abs/1212.0901v2},
+ month = {12},
+ primaryclass = {cs.LG},
+ title = {Advances in Optimizing Recurrent Networks},
+ year = {2012}
+}
+
+
+@article{ref_1,
  abstract = {The ImageNet Large Scale Visual Recognition Challenge is a benchmark in
 object category classification and detection on hundreds of object categories
 and millions of images. The challenge has been run annually from 2010 to
@@ -22,7 +50,7 @@ accuracy. We conclude with lessons learned in the five years of the challenge, a
 }
 
 
-@article{ref_1,
+@article{ref_2,
  abstract = {We describe \textit{deep exponential families} (DEFs), a class of latent
 variable models that are inspired by the hidden structures used in deep neural
 networks. DEFs capture a hierarchy of dependencies between latent variables, and are easily generalized to many settings through exponential families. We
@@ -44,7 +72,7 @@ predictive performance than state-of-the-art models.},
 }
 
 
-@article{ref_2,
+@article{ref_3,
  abstract = {Deep convolutional neural networks comprise a subclass of deep neural
 networks (DNN) with a constrained architecture that leverages the spatial and
 temporal structure of the domain they model. Convolutional networks achieve the
@@ -76,7 +104,7 @@ in Structure-based Drug Discovery},
 }
 
 
-@article{ref_3,
+@article{ref_4,
  abstract = {Personalized predictive medicine necessitates the modeling of patient illness
 and care processes, which inherently have long-term temporal dependencies.
 Healthcare observations, recorded in electronic medical records, are episodic
@@ -105,7 +133,7 @@ health -- the results show improved modeling and risk prediction accuracy.},
 }
 
 
-@article{ref_4,
+@article{ref_5,
  abstract = {Previous research has shown that neural networks can model survival data in
 situations in which some patients' death times are unknown, e.g.
 right-censored. However, neural networks have rarely been shown to outperform
@@ -132,7 +160,7 @@ on deep learning and survival analysis.},
 }
 
 
-@article{ref_5,
+@article{ref_6,
  abstract = {The International Symposium on Biomedical Imaging (ISBI) held a grand
 challenge to evaluate computational systems for the automated detection of
 metastatic breast cancer in whole slide images of sentinel lymph node biopsies.
@@ -158,7 +186,7 @@ improvements in the accuracy of pathological diagnoses.},
 }
 
 
-@article{ref_6,
+@article{ref_7,
  abstract = {Machine learning techniques based on neural networks are achieving remarkable
 results in a wide variety of domains. Often, the training of models requires
 large, representative datasets, which may be crowdsourced and contain sensitive
@@ -182,7 +210,7 @@ efficiency, and model quality.},
 }
 
 
-@article{ref_7,
+@article{ref_8,
  abstract = {Feature engineering remains a major bottleneck when creating predictive
 systems from electronic medical records. At present, an important missing
 element is detecting predictive regular clinical motifs from irregular episodic
@@ -209,7 +237,7 @@ disease and intervention space.},
 }
 
 
-@article{ref_8,
+@article{ref_9,
  abstract = {The electronic health record (EHR) provides an unprecedented opportunity to
 build actionable tools to support physicians at the point of care. In this
 paper, we investigate survival analysis in the context of EHR data. We
@@ -237,7 +265,7 @@ significantly superior in stratifying patients according to their risk.},
 }
 
 
-@article{ref_9,
+@article{ref_10,
  abstract = {Machine learning (ML) models may be deemed confidential due to their
 sensitive training data, commercial value, or use in security applications.
 Increasingly often, confidential ML models are being deployed with publicly
@@ -270,7 +298,7 @@ deployment and new model extraction countermeasures.},
 }
 
 
-@article{ref_10,
+@article{ref_11,
  abstract = {Automated extraction of concepts from patient clinical records is an
 essential facilitator of clinical research. For this reason, the 2010 i2b2/VA
 Natural Language Processing Challenges for Clinical Records introduced a
@@ -296,7 +324,58 @@ original 2010 i2b2/VA challenge.},
 }
 
 
-@article{ref_73,
+@article{ref_12,
+ abstract = {Computational approaches to drug discovery can reduce the time and cost
+associated with experimental assays and enable the screening of novel
+chemotypes. Structure-based drug design methods rely on scoring functions to
+rank and predict binding affinities and poses. The ever-expanding amount of
+protein-ligand binding and structural data enables the use of deep machine
+learning techniques for protein-ligand scoring.
+We describe convolutional neural network (CNN) scoring functions that take as
+input a comprehensive 3D representation of a protein-ligand interaction. A CNN
+scoring function automatically learns the key features of protein-ligand
+interactions that correlate with binding. We train and optimize our CNN scoring
+functions to discriminate between correct and incorrect binding poses and known
+binders and non-binders. We find that our CNN scoring function outperforms the
+AutoDock Vina scoring function when ranking poses both for pose prediction and
+virtual screening.},
+ archiveprefix = {arXiv},
+ author = {Matthew Ragoza and Joshua Hochuli and Elisa Idrobo and Jocelyn Sunseri and David Ryan Koes},
+ eprint = {1612.02751v1},
+ file = {1612.02751v1.pdf},
+ link = {http://arxiv.org/abs/1612.02751v1},
+ month = {12},
+ primaryclass = {stat.ML},
+ title = {Protein-Ligand Scoring with Convolutional Neural Networks},
+ year = {2016}
+}
+
+
+@article{ref_74,
+ abstract = {Recent advances in machine learning have made significant contributions to
+drug discovery. Deep neural networks in particular have been demonstrated to
+provide significant boosts in predictive power when inferring the properties
+and activities of small-molecule compounds. However, the applicability of these
+techniques has been limited by the requirement for large amounts of training
+data. In this work, we demonstrate how one-shot learning can be used to
+significantly lower the amounts of data required to make meaningful predictions
+in drug discovery applications. We introduce a new architecture, the residual
+LSTM embedding, that, when combined with graph convolutional neural networks, significantly improves the ability to learn meaningful distance metrics over
+small-molecules. We open source all models introduced in this work as part of
+DeepChem, an open-source framework for deep-learning in drug discovery.},
+ archiveprefix = {arXiv},
+ author = {Han Altae-Tran and Bharath Ramsundar and Aneesh S. Pappu and Vijay Pande},
+ eprint = {1611.03199v1},
+ file = {1611.03199v1.pdf},
+ link = {http://arxiv.org/abs/1611.03199v1},
+ month = {Dec},
+ primaryclass = {cs.LG},
+ title = {Low Data Drug Discovery with One-shot Learning},
+ year = {2016}
+}
+
+
+@article{ref_77,
  abstract = {Multipliers are the most space and power-hungry arithmetic operators of the
 digital implementation of deep neural networks. We train a set of
 state-of-the-art neural networks (Maxout networks) on three benchmark datasets:
@@ -319,7 +398,7 @@ bits multiplications.},
 }
 
 
-@article{ref_76,
+@article{ref_80,
  abstract = {Currently, deep neural networks are the state of the art on problems such as
 speech recognition and computer vision. In this extended abstract, we show that
 shallow feed-forward networks can learn the complex functions previously
@@ -343,7 +422,7 @@ available.},
 }
 
 
-@article{ref_77,
+@article{ref_81,
  abstract = {As deep nets are increasingly used in applications suited for mobile devices, a fundamental dilemma becomes apparent: the trend in deep learning is to grow
 models to absorb ever-increasing data set sizes; however mobile devices are
 designed with very little memory and cannot store such large models. We present
@@ -367,7 +446,7 @@ networks substantially while mostly preserving generalization performance.},
 }
 
 
-@article{ref_81,
+@article{ref_85,
  abstract = {We present a library of efficient implementations of deep learning
 primitives. Deep learning workloads are computationally intensive, and
 optimizing their kernels is difficult and time-consuming. As parallel
@@ -398,7 +477,7 @@ standard model while also reducing memory consumption.},
 }
 
 
-@article{ref_87,
+@article{ref_91,
  abstract = {We report a method to convert discrete representations of molecules to and
 from a multidimensional continuous representation. This generative model allows
 efficient search and optimization through open-ended spaces of chemical
@@ -427,7 +506,7 @@ of molecules},
 }
 
 
-@article{ref_89,
+@article{ref_93,
  abstract = {Training of large-scale deep neural networks is often constrained by the
 available computational resources. We study the effect of limited precision
 data representation and computation on neural network training. Within the
@@ -450,7 +529,7 @@ low-precision fixed-point arithmetic with stochastic rounding.},
 }
 
 
-@article{ref_90,
+@article{ref_94,
  abstract = {We present Caffe con Troll (CcT), a fully compatible end-to-end version of
 the popular framework Caffe with rebuilt internals. We built CcT to examine the
 performance characteristics of training and deploying general-purpose
@@ -472,7 +551,7 @@ efficiently train hybrid CPU-GPU systems for CNNs.},
 }
 
 
-@article{ref_91,
+@article{ref_95,
  abstract = {A very simple way to improve the performance of almost any machine learning
 algorithm is to train many different models on the same data and then to
 average their predictions. Unfortunately, making predictions using a whole
@@ -500,7 +579,7 @@ specialist models can be trained rapidly and in parallel.},
 }
 
 
-@article{ref_92,
+@article{ref_96,
  abstract = {We introduce a method to train Quantized Neural Networks (QNNs) --- neural
 networks with extremely low precision (e.g., 1-bit) weights and activations, at
 run-time. At train-time the quantized weights and activations are used for
@@ -530,7 +609,32 @@ Weights and Activations},
 }
 
 
-@article{ref_95,
+@article{ref_97,
+ abstract = {Deep learning methods such as multitask neural networks have recently been
+applied to ligand-based virtual screening and other drug discovery
+applications. Using a set of industrial ADMET datasets, we compare neural
+networks to standard baseline models and analyze multitask learning effects
+with both random cross-validation and a more relevant temporal validation
+scheme. We confirm that multitask learning can provide modest benefits over
+single-task models and show that smaller datasets tend to benefit more than
+larger datasets from multitask learning. Additionally, we find that adding
+massive amounts of side information is not guaranteed to improve performance
+relative to simpler multitask learning. Our results emphasize that multitask
+effects are highly dataset-dependent, suggesting the use of dataset-specific
+models to maximize overall performance.},
+ archiveprefix = {arXiv},
+ author = {Steven Kearnes and Brian Goldman and Vijay Pande},
+ eprint = {1606.08793v3},
+ file = {1606.08793v3.pdf},
+ link = {http://arxiv.org/abs/1606.08793v3},
+ month = {Jun},
+ primaryclass = {stat.ML},
+ title = {Modeling Industrial ADMET Data with Multitask Networks},
+ year = {2016}
+}
+
+
+@article{ref_100,
  abstract = {I present a new way to parallelize the training of convolutional neural
 networks across multiple GPUs. The method scales significantly better than all
 alternatives when applied to modern convolutional neural networks.},
@@ -546,7 +650,7 @@ alternatives when applied to modern convolutional neural networks.},
 }
 
 
-@article{ref_96,
+@article{ref_101,
  abstract = {The rapid growth of data size and accessibility in recent years has
 instigated a shift of philosophy in algorithm design for artificial
 intelligence. Instead of engineering algorithms by hand, the ability to learn
@@ -584,7 +688,7 @@ moving forward.},
 }
 
 
-@article{ref_99,
+@article{ref_104,
  abstract = {Apache Spark is a popular open-source platform for large-scale data
 processing that is well-suited for iterative machine learning tasks. In this
 paper we present MLlib, Spark's open-source distributed machine learning
@@ -607,7 +711,7 @@ quickly get up to speed.},
 }
 
 
-@article{ref_100,
+@article{ref_105,
  abstract = {Training deep networks is a time-consuming process, with networks for object
 recognition often requiring multiple days to train. For this reason, leveraging
 the resources of a cluster to speed up training is an important area of work.
@@ -637,7 +741,7 @@ ImageNet dataset.},
 }
 
 
-@article{ref_103,
+@article{ref_108,
  abstract = {Stochastic gradient descent (SGD) is a ubiquitous algorithm for a variety of
 machine learning problems. Researchers and industry have developed several
 techniques to optimize SGD's runtime performance, including asynchronous
@@ -662,7 +766,7 @@ efficiently for a variety of problems on modern hardware.},
 }
 
 
-@article{ref_106,
+@article{ref_111,
  abstract = {Sources of variability in experimentally derived data include measurement
 error in addition to the physical phenomena of interest. This measurement error
 is a combination of systematic components, originating from the measuring
@@ -687,7 +791,7 @@ it effectively attenuates batch effects.},
 }
 
 
-@article{ref_108,
+@article{ref_113,
  abstract = {In this work we apply model averaging to parallel training of deep neural
 network (DNN). Parallelization is done in a model averaging manner. Data is
 partitioned and distributed to different nodes for local model updates, and
@@ -716,7 +820,7 @@ Averaging},
 }
 
 
-@article{ref_109,
+@article{ref_114,
  abstract = {In recent year, parallel implementations have been used to speed up the
 training of deep neural networks (DNN). Typically, the parameters of the local
 models are periodically communicated and averaged to get a global model until
@@ -747,110 +851,6 @@ performance than MA-DNN.},
  primaryclass = {cs.DC},
  title = {Ensemble-Compression: A New Method for Parallel Training of Deep Neural
 Networks},
- year = {2016}
-}
-
-
-@article{ref_116,
- abstract = {After a more than decade-long period of relatively little research activity
-in the area of recurrent neural networks, several new developments will be
-reviewed here that have allowed substantial progress both in understanding and
-in technical solutions towards more efficient training of recurrent networks.
-These advances have been motivated by and related to the optimization issues
-surrounding deep learning. Although recurrent networks are extremely powerful
-in what they can in principle represent in terms of modelling sequences,their
-training is plagued by two aspects of the same issue regarding the learning of
-long-term dependencies. Experiments reported here evaluate the use of clipping
-gradients, spanning longer time ranges with leaky integration, advanced
-momentum techniques, using more powerful output probability models, and
-encouraging sparser gradients to help symmetry breaking and credit assignment.
-The experiments are performed on text and music data and show off the combined
-effects of these techniques in generally improving both training and test
-error.},
- archiveprefix = {arXiv},
- author = {Yoshua Bengio and Nicolas Boulanger-Lewandowski and Razvan Pascanu},
- eprint = {1212.0901v2},
- file = {1212.0901v2.pdf},
- link = {http://arxiv.org/abs/1212.0901v2},
- month = {12},
- primaryclass = {cs.LG},
- title = {Advances in Optimizing Recurrent Networks},
- year = {2012}
-}
-
-
-@article{ref_117,
- abstract = {Computational approaches to drug discovery can reduce the time and cost
-associated with experimental assays and enable the screening of novel
-chemotypes. Structure-based drug design methods rely on scoring functions to
-rank and predict binding affinities and poses. The ever-expanding amount of
-protein-ligand binding and structural data enables the use of deep machine
-learning techniques for protein-ligand scoring.
-We describe convolutional neural network (CNN) scoring functions that take as
-input a comprehensive 3D representation of a protein-ligand interaction. A CNN
-scoring function automatically learns the key features of protein-ligand
-interactions that correlate with binding. We train and optimize our CNN scoring
-functions to discriminate between correct and incorrect binding poses and known
-binders and non-binders. We find that our CNN scoring function outperforms the
-AutoDock Vina scoring function when ranking poses both for pose prediction and
-virtual screening.},
- archiveprefix = {arXiv},
- author = {Matthew Ragoza and Joshua Hochuli and Elisa Idrobo and Jocelyn Sunseri and David Ryan Koes},
- eprint = {1612.02751v1},
- file = {1612.02751v1.pdf},
- link = {http://arxiv.org/abs/1612.02751v1},
- month = {12},
- primaryclass = {stat.ML},
- title = {Protein-Ligand Scoring with Convolutional Neural Networks},
- year = {2016}
-}
-
-
-@article{ref_118,
- abstract = {Recent advances in machine learning have made significant contributions to
-drug discovery. Deep neural networks in particular have been demonstrated to
-provide significant boosts in predictive power when inferring the properties
-and activities of small-molecule compounds. However, the applicability of these
-techniques has been limited by the requirement for large amounts of training
-data. In this work, we demonstrate how one-shot learning can be used to
-significantly lower the amounts of data required to make meaningful predictions
-in drug discovery applications. We introduce a new architecture, the residual
-LSTM embedding, that, when combined with graph convolutional neural networks, significantly improves the ability to learn meaningful distance metrics over
-small-molecules. We open source all models introduced in this work as part of
-DeepChem, an open-source framework for deep-learning in drug discovery.},
- archiveprefix = {arXiv},
- author = {Han Altae-Tran and Bharath Ramsundar and Aneesh S. Pappu and Vijay Pande},
- eprint = {1611.03199v1},
- file = {1611.03199v1.pdf},
- link = {http://arxiv.org/abs/1611.03199v1},
- month = {Dec},
- primaryclass = {cs.LG},
- title = {Low Data Drug Discovery with One-shot Learning},
- year = {2016}
-}
-
-
-@article{ref_119,
- abstract = {Deep learning methods such as multitask neural networks have recently been
-applied to ligand-based virtual screening and other drug discovery
-applications. Using a set of industrial ADMET datasets, we compare neural
-networks to standard baseline models and analyze multitask learning effects
-with both random cross-validation and a more relevant temporal validation
-scheme. We confirm that multitask learning can provide modest benefits over
-single-task models and show that smaller datasets tend to benefit more than
-larger datasets from multitask learning. Additionally, we find that adding
-massive amounts of side information is not guaranteed to improve performance
-relative to simpler multitask learning. Our results emphasize that multitask
-effects are highly dataset-dependent, suggesting the use of dataset-specific
-models to maximize overall performance.},
- archiveprefix = {arXiv},
- author = {Steven Kearnes and Brian Goldman and Vijay Pande},
- eprint = {1606.08793v3},
- file = {1606.08793v3.pdf},
- link = {http://arxiv.org/abs/1606.08793v3},
- month = {Jun},
- primaryclass = {stat.ML},
- title = {Modeling Industrial ADMET Data with Multitask Networks},
  year = {2016}
 }
 

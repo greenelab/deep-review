@@ -201,7 +201,7 @@
       "Cell Biology",
       "Histology"
     ],
-    "id": "ref_11"
+    "id": "ref_13"
   },
   {
     "indexed": {
@@ -350,7 +350,7 @@
       "Drug Discovery",
       "Computer Science Applications"
     ],
-    "id": "ref_12"
+    "id": "ref_14"
   },
   {
     "indexed": {
@@ -448,7 +448,7 @@
     },
     "URL": "http://dx.doi.org/10.1007/978-3-319-16706-0_20",
     "citing-count": 0,
-    "id": "ref_13"
+    "id": "ref_15"
   },
   {
     "indexed": {
@@ -546,7 +546,7 @@
     },
     "URL": "http://dx.doi.org/10.1007/978-3-319-24553-9_74",
     "citing-count": 0,
-    "id": "ref_14"
+    "id": "ref_16"
   },
   {
     "indexed": {
@@ -662,7 +662,7 @@
     },
     "URL": "http://dx.doi.org/10.1007/978-3-319-24574-4_28",
     "citing-count": 0,
-    "id": "ref_15"
+    "id": "ref_17"
   },
   {
     "indexed": {
@@ -804,7 +804,7 @@
       }
     ],
     "citing-count": 16,
-    "id": "ref_16"
+    "id": "ref_18"
   },
   {
     "indexed": {
@@ -922,7 +922,7 @@
     },
     "URL": "http://dx.doi.org/10.1007/978-3-319-47898-2_21",
     "citing-count": 23,
-    "id": "ref_17"
+    "id": "ref_19"
   },
   {
     "indexed": {
@@ -1016,7 +1016,7 @@
     },
     "URL": "http://dx.doi.org/10.1007/978-3-642-40763-5_51",
     "citing-count": 0,
-    "id": "ref_18"
+    "id": "ref_20"
   },
   {
     "indexed": {
@@ -1162,7 +1162,7 @@
       "Applied Mathematics",
       "Computational Mathematics"
     ],
-    "id": "ref_19"
+    "id": "ref_21"
   },
   {
     "indexed": {
@@ -1290,7 +1290,7 @@
     "subject": [
       "Health(social science)"
     ],
-    "id": "ref_20"
+    "id": "ref_22"
   },
   {
     "indexed": {
@@ -1413,7 +1413,242 @@
     "subject": [
       "Surgery"
     ],
-    "id": "ref_21"
+    "id": "ref_23"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2016,
+          10,
+          31
+        ]
+      ],
+      "date-time": "2016-10-31T20:03:19Z",
+      "timestamp": 1477944199765
+    },
+    "reference-count": 49,
+    "publisher": "Elsevier BV",
+    "issue": "6",
+    "license": [
+      {
+        "URL": "http://www.elsevier.com/tdm/userlicense/1.0/",
+        "start": {
+          "date-parts": [
+            [
+              2015,
+              11,
+              1
+            ]
+          ],
+          "date-time": "2015-11-01T00:00:00Z",
+          "timestamp": 1446336000000
+        },
+        "delay-in-days": 0,
+        "content-version": "tdm"
+      },
+      {
+        "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+        "start": {
+          "date-parts": [
+            [
+              2015,
+              10,
+              9
+            ]
+          ],
+          "date-time": "2015-10-09T00:00:00Z",
+          "timestamp": 1444348800000
+        },
+        "delay-in-days": 0,
+        "content-version": "vor"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100006435",
+        "name": "Central European Institute of Technology",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "CZ.1.05/1.1.00/02.0068"
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "The Brazilian Journal of Infectious Diseases"
+    ],
+    "cited-count": 0,
+    "published-print": {
+      "date-parts": [
+        [
+          2015,
+          11
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.bjid.2015.08.013",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2015,
+          10,
+          27
+        ]
+      ],
+      "date-time": "2015-10-27T16:07:37Z",
+      "timestamp": 1445962057000
+    },
+    "page": "604-613",
+    "update-policy": "http://dx.doi.org/10.1016/elsevier_cm_policy",
+    "source": "CrossRef",
+    "title": "Influence of microbiome species in hard-to-heal wounds on disease severity and treatment duration",
+    "prefix": "http://id.crossref.org/prefix/10.1016",
+    "volume": "19",
+    "author": [
+      {
+        "given": "Dagmar",
+        "family": "Chudobova",
+        "affiliation": []
+      },
+      {
+        "given": "Kristyna",
+        "family": "Cihalova",
+        "affiliation": []
+      },
+      {
+        "given": "Roman",
+        "family": "Guran",
+        "affiliation": []
+      },
+      {
+        "given": "Simona",
+        "family": "Dostalova",
+        "affiliation": []
+      },
+      {
+        "given": "Kristyna",
+        "family": "Smerkova",
+        "affiliation": []
+      },
+      {
+        "given": "Radek",
+        "family": "Vesely",
+        "affiliation": []
+      },
+      {
+        "given": "Jaromir",
+        "family": "Gumulec",
+        "affiliation": []
+      },
+      {
+        "given": "Michal",
+        "family": "Masarik",
+        "affiliation": []
+      },
+      {
+        "given": "Zbynek",
+        "family": "Heger",
+        "affiliation": []
+      },
+      {
+        "given": "Vojtech",
+        "family": "Adam",
+        "affiliation": []
+      },
+      {
+        "given": "Rene",
+        "family": "Kizek",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/78",
+    "container-title": "The Brazilian Journal of Infectious Diseases",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://api.elsevier.com/content/article/PII:S1413867015001889?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://api.elsevier.com/content/article/PII:S1413867015001889?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2015,
+          12,
+          1
+        ]
+      ],
+      "date-time": "2015-12-01T02:17:21Z",
+      "timestamp": 1448936241000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2015,
+          11
+        ]
+      ]
+    },
+    "alternative-id": [
+      "S1413867015001889"
+    ],
+    "URL": "http://dx.doi.org/10.1016/j.bjid.2015.08.013",
+    "citing-count": 49,
+    "subject": [
+      "Medicine(all)"
+    ],
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Influence of microbiome species in hard-to-heal wounds on disease severity and treatment duration",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "The Brazilian Journal of Infectious Diseases",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "http://dx.doi.org/10.1016/j.bjid.2015.08.013",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "Copyright © 2015 Elsevier Editora Ltda.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ],
+    "id": "ref_24"
   },
   {
     "indexed": {
@@ -1596,7 +1831,7 @@
         "label": "Copyright"
       }
     ],
-    "id": "ref_22"
+    "id": "ref_25"
   },
   {
     "indexed": {
@@ -1796,7 +2031,7 @@
         "label": "Copyright"
       }
     ],
-    "id": "ref_23"
+    "id": "ref_26"
   },
   {
     "indexed": {
@@ -2011,7 +2246,7 @@
         "label": "Copyright"
       }
     ],
-    "id": "ref_24"
+    "id": "ref_27"
   },
   {
     "indexed": {
@@ -2209,7 +2444,7 @@
         "label": "Copyright"
       }
     ],
-    "id": "ref_25"
+    "id": "ref_28"
   },
   {
     "indexed": {
@@ -2384,7 +2619,7 @@
         "label": "Copyright"
       }
     ],
-    "id": "ref_26"
+    "id": "ref_29"
   },
   {
     "indexed": {
@@ -2512,7 +2747,7 @@
     "subject": [
       "Health(social science)"
     ],
-    "id": "ref_27"
+    "id": "ref_30"
   },
   {
     "indexed": {
@@ -2622,7 +2857,7 @@
       "Drug Discovery",
       "Pharmaceutical Science"
     ],
-    "id": "ref_28"
+    "id": "ref_31"
   },
   {
     "indexed": {
@@ -2760,7 +2995,7 @@
       "Drug Discovery",
       "Pharmaceutical Science"
     ],
-    "id": "ref_29"
+    "id": "ref_32"
   },
   {
     "indexed": {
@@ -2863,7 +3098,7 @@
     "subject": [
       "General"
     ],
-    "id": "ref_30"
+    "id": "ref_33"
   },
   {
     "indexed": {
@@ -2965,7 +3200,7 @@
       "Bioengineering",
       "Biomedical Engineering"
     ],
-    "id": "ref_31"
+    "id": "ref_34"
   },
   {
     "indexed": {
@@ -3098,19 +3333,19 @@
       "Physics and Astronomy(all)",
       "Chemistry(all)"
     ],
-    "id": "ref_32"
+    "id": "ref_35"
   },
   {
     "indexed": {
       "date-parts": [
         [
           2017,
-          2,
-          21
+          3,
+          2
         ]
       ],
-      "date-time": "2017-02-21T16:42:49Z",
-      "timestamp": 1487695369122
+      "date-time": "2017-03-02T10:40:51Z",
+      "timestamp": 1488451251665
     },
     "reference-count": 44,
     "publisher": "Springer Nature",
@@ -3225,12 +3460,12 @@
       "date-parts": [
         [
           2017,
-          2,
-          21
+          3,
+          2
         ]
       ],
-      "date-time": "2017-02-21T15:31:55Z",
-      "timestamp": 1487691115000
+      "date-time": "2017-03-02T09:31:13Z",
+      "timestamp": 1488447073000
     },
     "score": 1.0,
     "subtitle": [],
@@ -3265,7 +3500,7 @@
       "Biochemistry",
       "Molecular Biology"
     ],
-    "id": "ref_33"
+    "id": "ref_36"
   },
   {
     "indexed": {
@@ -3369,7 +3604,7 @@
     ],
     "URL": "http://dx.doi.org/10.1038/srep18962",
     "citing-count": 79,
-    "id": "ref_34"
+    "id": "ref_37"
   },
   {
     "indexed": {
@@ -3473,7 +3708,7 @@
     ],
     "URL": "http://dx.doi.org/10.1038/srep26094",
     "citing-count": 48,
-    "id": "ref_35"
+    "id": "ref_38"
   },
   {
     "indexed": {
@@ -3706,7 +3941,7 @@
     "subject": [
       "Cell Biology"
     ],
-    "id": "ref_36"
+    "id": "ref_39"
   },
   {
     "indexed": {
@@ -3818,7 +4053,7 @@
       "Molecular Biology",
       "Information Systems"
     ],
-    "id": "ref_37"
+    "id": "ref_40"
   },
   {
     "indexed": {
@@ -3937,7 +4172,7 @@
       "Computational Mathematics",
       "Computer Science Applications"
     ],
-    "id": "ref_38"
+    "id": "ref_41"
   },
   {
     "indexed": {
@@ -4061,7 +4296,7 @@
       "Computational Mathematics",
       "Computer Science Applications"
     ],
-    "id": "ref_39"
+    "id": "ref_42"
   },
   {
     "indexed": {
@@ -4180,7 +4415,7 @@
     "subject": [
       "Genetics"
     ],
-    "id": "ref_40"
+    "id": "ref_43"
   },
   {
     "indexed": {
@@ -4299,7 +4534,7 @@
     "subject": [
       "Genetics"
     ],
-    "id": "ref_41"
+    "id": "ref_44"
   },
   {
     "indexed": {
@@ -4399,7 +4634,7 @@
     "subject": [
       "Anesthesiology and Pain Medicine"
     ],
-    "id": "ref_42"
+    "id": "ref_45"
   },
   {
     "indexed": {
@@ -4512,7 +4747,7 @@
     },
     "URL": "http://dx.doi.org/10.1101/036129",
     "citing-count": 0,
-    "id": "ref_43"
+    "id": "ref_46"
   },
   {
     "indexed": {
@@ -4612,7 +4847,7 @@
     },
     "URL": "http://dx.doi.org/10.1101/039800",
     "citing-count": 0,
-    "id": "ref_44"
+    "id": "ref_47"
   },
   {
     "indexed": {
@@ -4712,7 +4947,7 @@
     },
     "URL": "http://dx.doi.org/10.1101/056473",
     "citing-count": 0,
-    "id": "ref_45"
+    "id": "ref_48"
   },
   {
     "indexed": {
@@ -4825,7 +5060,7 @@
     },
     "URL": "http://dx.doi.org/10.1101/073239",
     "citing-count": 0,
-    "id": "ref_46"
+    "id": "ref_49"
   },
   {
     "indexed": {
@@ -4953,7 +5188,7 @@
     },
     "URL": "http://dx.doi.org/10.1101/081364",
     "citing-count": 0,
-    "id": "ref_47"
+    "id": "ref_50"
   },
   {
     "indexed": {
@@ -5066,7 +5301,7 @@
     },
     "URL": "http://dx.doi.org/10.1101/085118",
     "citing-count": 0,
-    "id": "ref_48"
+    "id": "ref_51"
   },
   {
     "indexed": {
@@ -5171,7 +5406,7 @@
     },
     "URL": "http://dx.doi.org/10.1101/094276",
     "citing-count": 0,
-    "id": "ref_49"
+    "id": "ref_52"
   },
   {
     "indexed": {
@@ -5269,7 +5504,7 @@
     },
     "URL": "http://dx.doi.org/10.1101/095786",
     "citing-count": 0,
-    "id": "ref_50"
+    "id": "ref_53"
   },
   {
     "indexed": {
@@ -5377,7 +5612,7 @@
     },
     "URL": "http://dx.doi.org/10.1101/095794",
     "citing-count": 0,
-    "id": "ref_51"
+    "id": "ref_54"
   },
   {
     "indexed": {
@@ -5503,7 +5738,7 @@
     "subject": [
       "Physics and Astronomy(all)"
     ],
-    "id": "ref_52"
+    "id": "ref_55"
   },
   {
     "indexed": {
@@ -5567,7 +5802,7 @@
     "short-title": [],
     "URL": "http://dx.doi.org/10.1109/icnn.1994.374637",
     "citing-count": 7,
-    "id": "ref_53"
+    "id": "ref_56"
   },
   {
     "indexed": {
@@ -5679,7 +5914,7 @@
       "Genetics",
       "Applied Mathematics"
     ],
-    "id": "ref_54"
+    "id": "ref_57"
   },
   {
     "indexed": {
@@ -5809,7 +6044,7 @@
     "subject": [
       "Health Informatics"
     ],
-    "id": "ref_55"
+    "id": "ref_58"
   },
   {
     "indexed": {
@@ -5919,7 +6154,7 @@
     "subject": [
       "Health Informatics"
     ],
-    "id": "ref_56"
+    "id": "ref_59"
   },
   {
     "indexed": {
@@ -6062,7 +6297,7 @@
     "subject": [
       "Health Informatics"
     ],
-    "id": "ref_57"
+    "id": "ref_60"
   },
   {
     "indexed": {
@@ -6186,7 +6421,7 @@
     ],
     "URL": "http://dx.doi.org/10.1142/9789813207813_0050",
     "citing-count": 0,
-    "id": "ref_58"
+    "id": "ref_61"
   },
   {
     "indexed": {
@@ -6294,7 +6529,7 @@
     ],
     "URL": "http://dx.doi.org/10.1142/9789814644730_0014",
     "citing-count": 0,
-    "id": "ref_59"
+    "id": "ref_62"
   },
   {
     "indexed": {
@@ -6409,7 +6644,7 @@
       "Cancer Research",
       "Oncology"
     ],
-    "id": "ref_60"
+    "id": "ref_63"
   },
   {
     "indexed": {
@@ -6608,19 +6843,19 @@
       "Cancer Research",
       "Oncology"
     ],
-    "id": "ref_61"
+    "id": "ref_64"
   },
   {
     "indexed": {
       "date-parts": [
         [
           2017,
-          1,
-          27
+          2,
+          28
         ]
       ],
-      "date-time": "2017-01-27T13:40:36Z",
-      "timestamp": 1485524436757
+      "date-time": "2017-02-28T15:40:52Z",
+      "timestamp": 1488296452062
     },
     "reference-count": 52,
     "publisher": "Public Library of Science (PLoS)",
@@ -6740,12 +6975,12 @@
       "date-parts": [
         [
           2017,
-          1,
-          27
+          2,
+          28
         ]
       ],
-      "date-time": "2017-01-27T12:20:58Z",
-      "timestamp": 1485519658000
+      "date-time": "2017-02-28T14:11:05Z",
+      "timestamp": 1488291065000
     },
     "score": 1.0,
     "subtitle": [],
@@ -6773,23 +7008,41 @@
       "Neuroscience(all)",
       "Agricultural and Biological Sciences(all)"
     ],
-    "id": "ref_62"
+    "id": "ref_65"
   },
   {
     "indexed": {
       "date-parts": [
         [
-          2016,
-          11,
-          29
+          2017,
+          3,
+          1
         ]
       ],
-      "date-time": "2016-11-29T00:52:54Z",
-      "timestamp": 1480380774946
+      "date-time": "2017-03-01T03:42:17Z",
+      "timestamp": 1488339737938
     },
-    "reference-count": 0,
+    "reference-count": 66,
     "publisher": "Public Library of Science (PLoS)",
     "issue": "11",
+    "license": [
+      {
+        "URL": "http://creativecommons.org/licenses/by/4.0/",
+        "start": {
+          "date-parts": [
+            [
+              2016,
+              11,
+              4
+            ]
+          ],
+          "date-time": "2016-11-04T00:00:00Z",
+          "timestamp": 1478217600000
+        },
+        "delay-in-days": 0,
+        "content-version": "vor"
+      }
+    ],
     "funder": [
       {
         "DOI": "10.13039/100000057",
@@ -6949,13 +7202,13 @@
     "deposited": {
       "date-parts": [
         [
-          2016,
-          11,
-          4
+          2017,
+          3,
+          1
         ]
       ],
-      "date-time": "2016-11-04T17:28:02Z",
-      "timestamp": 1478280482000
+      "date-time": "2017-03-01T02:53:01Z",
+      "timestamp": 1488336781000
     },
     "score": 1.0,
     "subtitle": [],
@@ -6977,7 +7230,13 @@
       ]
     },
     "URL": "http://dx.doi.org/10.1371/journal.pcbi.1005177",
-    "citing-count": 0,
+    "issn-type": [
+      {
+        "value": "1553-7358",
+        "type": "electronic"
+      }
+    ],
+    "citing-count": 66,
     "subject": [
       "Ecology",
       "Modelling and Simulation",
@@ -6987,7 +7246,7 @@
       "Molecular Biology",
       "Cellular and Molecular Neuroscience"
     ],
-    "id": "ref_63"
+    "id": "ref_66"
   },
   {
     "indexed": {
@@ -7117,7 +7376,7 @@
       "Agricultural and Biological Sciences(all)",
       "Medicine(all)"
     ],
-    "id": "ref_64"
+    "id": "ref_67"
   },
   {
     "indexed": {
@@ -7275,7 +7534,7 @@
       "Information Systems",
       "Medicine(all)"
     ],
-    "id": "ref_65"
+    "id": "ref_68"
   },
   {
     "indexed": {
@@ -7366,7 +7625,7 @@
     "subject": [
       "Theoretical Computer Science"
     ],
-    "id": "ref_66"
+    "id": "ref_69"
   },
   {
     "indexed": {
@@ -7492,7 +7751,7 @@
         "label": "Aim & Scope"
       }
     ],
-    "id": "ref_67"
+    "id": "ref_70"
   },
   {
     "source": "PMC",
@@ -7500,12 +7759,12 @@
       "date-parts": [
         [
           2017,
-          2,
-          25
+          3,
+          3
         ]
       ]
     },
-    "id": "ref_68",
+    "id": "ref_71",
     "title": "Secondary Use of EHR: Data Quality Issues and Informatics Opportunities",
     "author": [
       {
@@ -7547,12 +7806,12 @@
       "date-parts": [
         [
           2017,
-          2,
-          25
+          3,
+          3
         ]
       ]
     },
-    "id": "ref_69",
+    "id": "ref_72",
     "title": "Impact of Electronic Health Record Systems on Information Integrity: Quality and Safety Implications",
     "author": [
       {
@@ -7583,12 +7842,12 @@
       "date-parts": [
         [
           2017,
-          2,
-          25
+          3,
+          3
         ]
       ]
     },
-    "id": "ref_70",
+    "id": "ref_73",
     "title": "Why Patient Matching Is a Challenge: Research on Master Patient Index (MPI) Data Discrepancies in Key Identifying Fields",
     "author": [
       {
@@ -7735,7 +7994,7 @@
     },
     "URL": "http://dx.doi.org/10.1101/055715",
     "citing-count": 0,
-    "id": "ref_71"
+    "id": "ref_75"
   },
   {
     "indexed": {
@@ -7833,17 +8092,17 @@
     },
     "URL": "http://dx.doi.org/10.1101/046508",
     "citing-count": 0,
-    "id": "ref_72"
+    "id": "ref_76"
   },
   {
     "URL": "https://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimization.pdf",
     "type": "webpage",
-    "id": "ref_74"
+    "id": "ref_78"
   },
   {
     "URL": "http://dl.acm.org/citation.cfm?id=2188395",
     "type": "webpage",
-    "id": "ref_75"
+    "id": "ref_79"
   },
   {
     "indexed": {
@@ -7975,7 +8234,7 @@
       "Computational Mathematics",
       "Computer Science Applications"
     ],
-    "id": "ref_78"
+    "id": "ref_82"
   },
   {
     "indexed": {
@@ -8112,22 +8371,22 @@
       "Computational Mathematics",
       "Computer Science Applications"
     ],
-    "id": "ref_79"
+    "id": "ref_83"
   },
   {
     "URL": "http://www.jmlr.org/proceedings/papers/v28/coates13.html",
     "type": "webpage",
-    "id": "ref_80"
+    "id": "ref_84"
   },
   {
     "URL": "http://research.google.com/archive/large_deep_networks_nips2012.html",
     "type": "webpage",
-    "id": "ref_82"
+    "id": "ref_86"
   },
   {
     "URL": "https://papers.nips.cc/paper/5717-taming-the-wild-a-unified-analysis-of-hogwild-style-algorithms.pdf",
     "type": "webpage",
-    "id": "ref_83"
+    "id": "ref_87"
   },
   {
     "indexed": {
@@ -8235,12 +8494,12 @@
     "subject": [
       "Computer Science(all)"
     ],
-    "id": "ref_84"
+    "id": "ref_88"
   },
   {
     "URL": "https://github.com/maxpumperla/elephas",
     "type": "webpage",
-    "id": "ref_85"
+    "id": "ref_89"
   },
   {
     "indexed": {
@@ -8391,7 +8650,7 @@
     "URL": "http://dx.doi.org/10.1186/s13059-016-0917-0",
     "citing-count": 55,
     "article-number": "53",
-    "id": "ref_86"
+    "id": "ref_90"
   },
   {
     "indexed": {
@@ -8505,17 +8764,17 @@
     },
     "URL": "http://dx.doi.org/10.14778/2212351.2212354",
     "citing-count": 0,
-    "id": "ref_88"
+    "id": "ref_92"
   },
   {
     "URL": "https://github.com/fchollet/keras",
     "type": "webpage",
-    "id": "ref_93"
+    "id": "ref_98"
   },
   {
     "URL": "https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf",
     "type": "webpage",
-    "id": "ref_94"
+    "id": "ref_99"
   },
   {
     "indexed": {
@@ -8608,7 +8867,7 @@
     },
     "URL": "http://dx.doi.org/10.1145/2623330.2623612",
     "citing-count": 0,
-    "id": "ref_97"
+    "id": "ref_102"
   },
   {
     "indexed": {
@@ -8705,7 +8964,7 @@
     "subject": [
       "Computer Science(all)"
     ],
-    "id": "ref_98"
+    "id": "ref_103"
   },
   {
     "indexed": {
@@ -8845,7 +9104,7 @@
     "subject": [
       "Computer Science(all)"
     ],
-    "id": "ref_101"
+    "id": "ref_106"
   },
   {
     "indexed": {
@@ -8933,7 +9192,7 @@
     },
     "URL": "http://dx.doi.org/10.1145/1553374.1553486",
     "citing-count": 0,
-    "id": "ref_102"
+    "id": "ref_107"
   },
   {
     "indexed": {
@@ -9038,7 +9297,7 @@
       "Bioengineering",
       "Biomedical Engineering"
     ],
-    "id": "ref_104"
+    "id": "ref_109"
   },
   {
     "indexed": {
@@ -9138,7 +9397,7 @@
     },
     "URL": "http://dx.doi.org/10.1109/icassp.2014.6853593",
     "citing-count": 23,
-    "id": "ref_105"
+    "id": "ref_110"
   },
   {
     "indexed": {
@@ -9225,17 +9484,138 @@
     ],
     "URL": "http://dx.doi.org/10.1186/gb-2010-11-5-207",
     "citing-count": 0,
-    "id": "ref_107"
+    "id": "ref_112"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2016,
+          11,
+          27
+        ]
+      ],
+      "date-time": "2016-11-27T14:43:44Z",
+      "timestamp": 1480257824618
+    },
+    "reference-count": 0,
+    "publisher": "American Chemical Society (ACS)",
+    "issue": "4",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "J. Chem. Inf. Model."
+    ],
+    "cited-count": 0,
+    "published-print": {
+      "date-parts": [
+        [
+          2009,
+          4,
+          27
+        ]
+      ]
+    },
+    "DOI": "10.1021/ci8004379",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2009,
+          3,
+          26
+        ]
+      ],
+      "date-time": "2009-03-26T12:05:55Z",
+      "timestamp": 1238069155000
+    },
+    "page": "756-766",
+    "source": "CrossRef",
+    "title": "Influence Relevance Voting: An Accurate And Interpretable Virtual High Throughput Screening Method",
+    "prefix": "http://id.crossref.org/prefix/10.1021",
+    "volume": "49",
+    "author": [
+      {
+        "given": "S. Joshua",
+        "family": "Swamidass",
+        "affiliation": []
+      },
+      {
+        "given": "Chloé-Agathe",
+        "family": "Azencott",
+        "affiliation": []
+      },
+      {
+        "given": "Ting-Wan",
+        "family": "Lin",
+        "affiliation": []
+      },
+      {
+        "given": "Hugo",
+        "family": "Gramajo",
+        "affiliation": []
+      },
+      {
+        "given": "Shiou-Chuan",
+        "family": "Tsai",
+        "affiliation": []
+      },
+      {
+        "given": "Pierre",
+        "family": "Baldi",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/316",
+    "container-title": "Journal of Chemical Information and Modeling",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          9,
+          2
+        ]
+      ],
+      "date-time": "2016-09-02T02:55:56Z",
+      "timestamp": 1472784956000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2009,
+          4,
+          27
+        ]
+      ]
+    },
+    "alternative-id": [
+      "10.1021/ci8004379"
+    ],
+    "URL": "http://dx.doi.org/10.1021/ci8004379",
+    "citing-count": 0,
+    "subject": [
+      "Chemistry(all)",
+      "Chemical Engineering(all)",
+      "Library and Information Sciences",
+      "Computer Science Applications"
+    ],
+    "id": "ref_115"
   },
   {
     "URL": "http://download.tensorflow.org/paper/whitepaper2015.pdf",
     "type": "webpage",
-    "id": "ref_110"
+    "id": "ref_116"
   },
   {
     "URL": "https://research.google.com/pubs/pub37631.html",
     "type": "webpage",
-    "id": "ref_111"
+    "id": "ref_117"
   },
   {
     "indexed": {
@@ -9482,378 +9862,50 @@
       "Drug Discovery",
       "Computer Science Applications"
     ],
-    "id": "ref_112"
+    "id": "ref_118"
   },
   {
     "URL": "http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf",
     "type": "webpage",
-    "id": "ref_113"
+    "id": "ref_119"
   },
   {
     "URL": "http://research.google.com/archive/unsupervised_icml2012.html",
     "type": "webpage",
-    "id": "ref_114"
+    "id": "ref_120"
   },
   {
     "URL": "https://aclweb.org/anthology/D/D13/D13-1079.pdf",
     "type": "webpage",
-    "id": "ref_115"
-  },
-  {
-    "indexed": {
-      "date-parts": [
-        [
-          2016,
-          11,
-          27
-        ]
-      ],
-      "date-time": "2016-11-27T14:43:44Z",
-      "timestamp": 1480257824618
-    },
-    "reference-count": 0,
-    "publisher": "American Chemical Society (ACS)",
-    "issue": "4",
-    "content-domain": {
-      "domain": [],
-      "crossmark-restriction": false
-    },
-    "short-container-title": [
-      "J. Chem. Inf. Model."
-    ],
-    "cited-count": 0,
-    "published-print": {
-      "date-parts": [
-        [
-          2009,
-          4,
-          27
-        ]
-      ]
-    },
-    "DOI": "10.1021/ci8004379",
-    "type": "article-journal",
-    "created": {
-      "date-parts": [
-        [
-          2009,
-          3,
-          26
-        ]
-      ],
-      "date-time": "2009-03-26T12:05:55Z",
-      "timestamp": 1238069155000
-    },
-    "page": "756-766",
-    "source": "CrossRef",
-    "title": "Influence Relevance Voting: An Accurate And Interpretable Virtual High Throughput Screening Method",
-    "prefix": "http://id.crossref.org/prefix/10.1021",
-    "volume": "49",
-    "author": [
-      {
-        "given": "S. Joshua",
-        "family": "Swamidass",
-        "affiliation": []
-      },
-      {
-        "given": "Chloé-Agathe",
-        "family": "Azencott",
-        "affiliation": []
-      },
-      {
-        "given": "Ting-Wan",
-        "family": "Lin",
-        "affiliation": []
-      },
-      {
-        "given": "Hugo",
-        "family": "Gramajo",
-        "affiliation": []
-      },
-      {
-        "given": "Shiou-Chuan",
-        "family": "Tsai",
-        "affiliation": []
-      },
-      {
-        "given": "Pierre",
-        "family": "Baldi",
-        "affiliation": []
-      }
-    ],
-    "member": "http://id.crossref.org/member/316",
-    "container-title": "Journal of Chemical Information and Modeling",
-    "original-title": [],
-    "deposited": {
-      "date-parts": [
-        [
-          2016,
-          9,
-          2
-        ]
-      ],
-      "date-time": "2016-09-02T02:55:56Z",
-      "timestamp": 1472784956000
-    },
-    "score": 1.0,
-    "subtitle": [],
-    "short-title": [],
-    "issued": {
-      "date-parts": [
-        [
-          2009,
-          4,
-          27
-        ]
-      ]
-    },
-    "alternative-id": [
-      "10.1021/ci8004379"
-    ],
-    "URL": "http://dx.doi.org/10.1021/ci8004379",
-    "citing-count": 0,
-    "subject": [
-      "Chemistry(all)",
-      "Chemical Engineering(all)",
-      "Library and Information Sciences",
-      "Computer Science Applications"
-    ],
-    "id": "ref_120"
-  },
-  {
-    "indexed": {
-      "date-parts": [
-        [
-          2016,
-          10,
-          31
-        ]
-      ],
-      "date-time": "2016-10-31T20:03:19Z",
-      "timestamp": 1477944199765
-    },
-    "reference-count": 49,
-    "publisher": "Elsevier BV",
-    "issue": "6",
-    "license": [
-      {
-        "URL": "http://www.elsevier.com/tdm/userlicense/1.0/",
-        "start": {
-          "date-parts": [
-            [
-              2015,
-              11,
-              1
-            ]
-          ],
-          "date-time": "2015-11-01T00:00:00Z",
-          "timestamp": 1446336000000
-        },
-        "delay-in-days": 0,
-        "content-version": "tdm"
-      },
-      {
-        "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0/",
-        "start": {
-          "date-parts": [
-            [
-              2015,
-              10,
-              9
-            ]
-          ],
-          "date-time": "2015-10-09T00:00:00Z",
-          "timestamp": 1444348800000
-        },
-        "delay-in-days": 0,
-        "content-version": "vor"
-      }
-    ],
-    "funder": [
-      {
-        "DOI": "10.13039/501100006435",
-        "name": "Central European Institute of Technology",
-        "doi-asserted-by": "publisher",
-        "award": [
-          "CZ.1.05/1.1.00/02.0068"
-        ]
-      }
-    ],
-    "content-domain": {
-      "domain": [
-        "elsevier.com",
-        "sciencedirect.com"
-      ],
-      "crossmark-restriction": false
-    },
-    "short-container-title": [
-      "The Brazilian Journal of Infectious Diseases"
-    ],
-    "cited-count": 0,
-    "published-print": {
-      "date-parts": [
-        [
-          2015,
-          11
-        ]
-      ]
-    },
-    "DOI": "10.1016/j.bjid.2015.08.013",
-    "type": "article-journal",
-    "created": {
-      "date-parts": [
-        [
-          2015,
-          10,
-          27
-        ]
-      ],
-      "date-time": "2015-10-27T16:07:37Z",
-      "timestamp": 1445962057000
-    },
-    "page": "604-613",
-    "update-policy": "http://dx.doi.org/10.1016/elsevier_cm_policy",
-    "source": "CrossRef",
-    "title": "Influence of microbiome species in hard-to-heal wounds on disease severity and treatment duration",
-    "prefix": "http://id.crossref.org/prefix/10.1016",
-    "volume": "19",
-    "author": [
-      {
-        "given": "Dagmar",
-        "family": "Chudobova",
-        "affiliation": []
-      },
-      {
-        "given": "Kristyna",
-        "family": "Cihalova",
-        "affiliation": []
-      },
-      {
-        "given": "Roman",
-        "family": "Guran",
-        "affiliation": []
-      },
-      {
-        "given": "Simona",
-        "family": "Dostalova",
-        "affiliation": []
-      },
-      {
-        "given": "Kristyna",
-        "family": "Smerkova",
-        "affiliation": []
-      },
-      {
-        "given": "Radek",
-        "family": "Vesely",
-        "affiliation": []
-      },
-      {
-        "given": "Jaromir",
-        "family": "Gumulec",
-        "affiliation": []
-      },
-      {
-        "given": "Michal",
-        "family": "Masarik",
-        "affiliation": []
-      },
-      {
-        "given": "Zbynek",
-        "family": "Heger",
-        "affiliation": []
-      },
-      {
-        "given": "Vojtech",
-        "family": "Adam",
-        "affiliation": []
-      },
-      {
-        "given": "Rene",
-        "family": "Kizek",
-        "affiliation": []
-      }
-    ],
-    "member": "http://id.crossref.org/member/78",
-    "container-title": "The Brazilian Journal of Infectious Diseases",
-    "original-title": [],
-    "link": [
-      {
-        "URL": "http://api.elsevier.com/content/article/PII:S1413867015001889?httpAccept=text/xml",
-        "content-type": "text/xml",
-        "content-version": "vor",
-        "intended-application": "text-mining"
-      },
-      {
-        "URL": "http://api.elsevier.com/content/article/PII:S1413867015001889?httpAccept=text/plain",
-        "content-type": "text/plain",
-        "content-version": "vor",
-        "intended-application": "text-mining"
-      }
-    ],
-    "deposited": {
-      "date-parts": [
-        [
-          2015,
-          12,
-          1
-        ]
-      ],
-      "date-time": "2015-12-01T02:17:21Z",
-      "timestamp": 1448936241000
-    },
-    "score": 1.0,
-    "subtitle": [],
-    "short-title": [],
-    "issued": {
-      "date-parts": [
-        [
-          2015,
-          11
-        ]
-      ]
-    },
-    "alternative-id": [
-      "S1413867015001889"
-    ],
-    "URL": "http://dx.doi.org/10.1016/j.bjid.2015.08.013",
-    "citing-count": 49,
-    "subject": [
-      "Medicine(all)"
-    ],
-    "assertion": [
-      {
-        "value": "Elsevier",
-        "name": "publisher",
-        "label": "This article is maintained by"
-      },
-      {
-        "value": "Influence of microbiome species in hard-to-heal wounds on disease severity and treatment duration",
-        "name": "articletitle",
-        "label": "Article Title"
-      },
-      {
-        "value": "The Brazilian Journal of Infectious Diseases",
-        "name": "journaltitle",
-        "label": "Journal Title"
-      },
-      {
-        "value": "http://dx.doi.org/10.1016/j.bjid.2015.08.013",
-        "name": "articlelink",
-        "label": "CrossRef DOI link to publisher maintained version"
-      },
-      {
-        "value": "article",
-        "name": "content_type",
-        "label": "Content Type"
-      },
-      {
-        "value": "Copyright © 2015 Elsevier Editora Ltda.",
-        "name": "copyright",
-        "label": "Copyright"
-      }
-    ],
     "id": "ref_121"
+  },
+  {
+    "abstract": "After a more than decade-long period of relatively little research activity in the area of recurrent neural networks, several new developments will be reviewed here that have allowed substantial progress both in understanding and in technical solutions towards more efficient training of recurrent networks. These advances have been motivated by and related to the optimization issues surrounding deep learning. Although recurrent networks are extremely powerful in what they can in principle represent in terms of modelling sequences,their training is plagued by two aspects of the same issue regarding the learning of long-term dependencies. Experiments reported here evaluate the use of clipping gradients, spanning longer time ranges with leaky integration, advanced momentum techniques, using more powerful output probability models, and encouraging sparser gradients to help symmetry breaking and credit assignment. The experiments are performed on text and music data and show off the combined effects of these techniques in generally improving both training and test error.",
+    "author": [
+      {
+        "family": "Bengio",
+        "given": "Yoshua"
+      },
+      {
+        "family": "Boulanger-Lewandowski",
+        "given": "Nicolas"
+      },
+      {
+        "family": "Pascanu",
+        "given": "Razvan"
+      }
+    ],
+    "id": "ref_0",
+    "issued": {
+      "date-parts": [
+        [
+          2012,
+          12
+        ]
+      ]
+    },
+    "title": "Advances in optimizing recurrent networks",
+    "type": "article-journal"
   },
   {
     "abstract": "The ImageNet Large Scale Visual Recognition Challenge is a benchmark in object category classification and detection on hundreds of object categories and millions of images. The challenge has been run annually from 2010 to present, attracting participation from more than fifty institutions. This paper describes the creation of this benchmark dataset and the advances in object recognition that have been possible as a result. We discuss the challenges of collecting large-scale ground truth annotation, highlight key breakthroughs in categorical object recognition, provide a detailed analysis of the current state of the field of large-scale image classification and object detection, and compare the state-of-the-art computer vision accuracy with human accuracy. We conclude with lessons learned in the five years of the challenge, and propose future directions and improvements.",
@@ -9907,7 +9959,7 @@
         "given": "Li"
       }
     ],
-    "id": "ref_0",
+    "id": "ref_1",
     "issued": {
       "date-parts": [
         [
@@ -9939,7 +9991,7 @@
         "given": "David M."
       }
     ],
-    "id": "ref_1",
+    "id": "ref_2",
     "issued": {
       "date-parts": [
         [
@@ -9967,7 +10019,7 @@
         "given": "Abraham"
       }
     ],
-    "id": "ref_2",
+    "id": "ref_3",
     "issued": {
       "date-parts": [
         [
@@ -10000,7 +10052,7 @@
         "given": "Svetha"
       }
     ],
-    "id": "ref_3",
+    "id": "ref_4",
     "issued": {
       "date-parts": [
         [
@@ -10041,7 +10093,7 @@
         "given": "Yuval"
       }
     ],
-    "id": "ref_4",
+    "id": "ref_5",
     "issued": {
       "date-parts": [
         [
@@ -10078,7 +10130,7 @@
         "given": "Andrew H."
       }
     ],
-    "id": "ref_5",
+    "id": "ref_6",
     "issued": {
       "date-parts": [
         [
@@ -10123,7 +10175,7 @@
         "given": "Li"
       }
     ],
-    "id": "ref_6",
+    "id": "ref_7",
     "issued": {
       "date-parts": [
         [
@@ -10155,7 +10207,7 @@
         "given": "Svetha"
       }
     ],
-    "id": "ref_7",
+    "id": "ref_8",
     "issued": {
       "date-parts": [
         [
@@ -10188,7 +10240,7 @@
         "given": "David"
       }
     ],
-    "id": "ref_8",
+    "id": "ref_9",
     "issued": {
       "date-parts": [
         [
@@ -10224,7 +10276,7 @@
         "given": "Thomas"
       }
     ],
-    "id": "ref_9",
+    "id": "ref_10",
     "issued": {
       "date-parts": [
         [
@@ -10252,7 +10304,7 @@
         "given": "Massimo"
       }
     ],
-    "id": "ref_10",
+    "id": "ref_11",
     "issued": {
       "date-parts": [
         [
@@ -10262,6 +10314,74 @@
       ]
     },
     "title": "Bidirectional lstm-crf for clinical concept extraction",
+    "type": "article-journal"
+  },
+  {
+    "abstract": "Computational approaches to drug discovery can reduce the time and cost associated with experimental assays and enable the screening of novel chemotypes. Structure-based drug design methods rely on scoring functions to rank and predict binding affinities and poses. The ever-expanding amount of protein-ligand binding and structural data enables the use of deep machine learning techniques for protein-ligand scoring. We describe convolutional neural network (CNN) scoring functions that take as input a comprehensive 3D representation of a protein-ligand interaction. A CNN scoring function automatically learns the key features of protein-ligand interactions that correlate with binding. We train and optimize our CNN scoring functions to discriminate between correct and incorrect binding poses and known binders and non-binders. We find that our CNN scoring function outperforms the AutoDock Vina scoring function when ranking poses both for pose prediction and virtual screening.",
+    "author": [
+      {
+        "family": "Ragoza",
+        "given": "Matthew"
+      },
+      {
+        "family": "Hochuli",
+        "given": "Joshua"
+      },
+      {
+        "family": "Idrobo",
+        "given": "Elisa"
+      },
+      {
+        "family": "Sunseri",
+        "given": "Jocelyn"
+      },
+      {
+        "family": "Koes",
+        "given": "David Ryan"
+      }
+    ],
+    "id": "ref_12",
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          12
+        ]
+      ]
+    },
+    "title": "Protein-ligand scoring with convolutional neural networks",
+    "type": "article-journal"
+  },
+  {
+    "abstract": "Recent advances in machine learning have made significant contributions to drug discovery. Deep neural networks in particular have been demonstrated to provide significant boosts in predictive power when inferring the properties and activities of small-molecule compounds. However, the applicability of these techniques has been limited by the requirement for large amounts of training data. In this work, we demonstrate how one-shot learning can be used to significantly lower the amounts of data required to make meaningful predictions in drug discovery applications. We introduce a new architecture, the residual LSTM embedding, that, when combined with graph convolutional neural networks, significantly improves the ability to learn meaningful distance metrics over small-molecules. We open source all models introduced in this work as part of DeepChem, an open-source framework for deep-learning in drug discovery.",
+    "author": [
+      {
+        "family": "Altae-Tran",
+        "given": "Han"
+      },
+      {
+        "family": "Ramsundar",
+        "given": "Bharath"
+      },
+      {
+        "family": "Pappu",
+        "given": "Aneesh S."
+      },
+      {
+        "family": "Pande",
+        "given": "Vijay"
+      }
+    ],
+    "id": "ref_74",
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          12
+        ]
+      ]
+    },
+    "title": "Low data drug discovery with one-shot learning",
     "type": "article-journal"
   },
   {
@@ -10280,7 +10400,7 @@
         "given": "Jean-Pierre"
       }
     ],
-    "id": "ref_73",
+    "id": "ref_77",
     "issued": {
       "date-parts": [
         [
@@ -10304,7 +10424,7 @@
         "given": "Rich"
       }
     ],
-    "id": "ref_76",
+    "id": "ref_80",
     "issued": {
       "date-parts": [
         [
@@ -10340,7 +10460,7 @@
         "given": "Yixin"
       }
     ],
-    "id": "ref_77",
+    "id": "ref_81",
     "issued": {
       "date-parts": [
         [
@@ -10384,7 +10504,7 @@
         "given": "Evan"
       }
     ],
-    "id": "ref_81",
+    "id": "ref_85",
     "issued": {
       "date-parts": [
         [
@@ -10429,7 +10549,7 @@
         "given": "Alán"
       }
     ],
-    "id": "ref_87",
+    "id": "ref_91",
     "issued": {
       "date-parts": [
         [
@@ -10461,7 +10581,7 @@
         "given": "Pritish"
       }
     ],
-    "id": "ref_89",
+    "id": "ref_93",
     "issued": {
       "date-parts": [
         [
@@ -10493,7 +10613,7 @@
         "given": "Christopher"
       }
     ],
-    "id": "ref_90",
+    "id": "ref_94",
     "issued": {
       "date-parts": [
         [
@@ -10522,7 +10642,7 @@
         "given": "Jeff"
       }
     ],
-    "id": "ref_91",
+    "id": "ref_95",
     "issued": {
       "date-parts": [
         [
@@ -10558,7 +10678,7 @@
         "given": "Yoshua"
       }
     ],
-    "id": "ref_92",
+    "id": "ref_96",
     "issued": {
       "date-parts": [
         [
@@ -10572,6 +10692,34 @@
     "type": "article-journal"
   },
   {
+    "abstract": "Deep learning methods such as multitask neural networks have recently been applied to ligand-based virtual screening and other drug discovery applications. Using a set of industrial ADMET datasets, we compare neural networks to standard baseline models and analyze multitask learning effects with both random cross-validation and a more relevant temporal validation scheme. We confirm that multitask learning can provide modest benefits over single-task models and show that smaller datasets tend to benefit more than larger datasets from multitask learning. Additionally, we find that adding massive amounts of side information is not guaranteed to improve performance relative to simpler multitask learning. Our results emphasize that multitask effects are highly dataset-dependent, suggesting the use of dataset-specific models to maximize overall performance.",
+    "author": [
+      {
+        "family": "Kearnes",
+        "given": "Steven"
+      },
+      {
+        "family": "Goldman",
+        "given": "Brian"
+      },
+      {
+        "family": "Pande",
+        "given": "Vijay"
+      }
+    ],
+    "id": "ref_97",
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          6
+        ]
+      ]
+    },
+    "title": "Modeling industrial admet data with multitask networks",
+    "type": "article-journal"
+  },
+  {
     "abstract": "I present a new way to parallelize the training of convolutional neural networks across multiple GPUs. The method scales significantly better than all alternatives when applied to modern convolutional neural networks.",
     "author": [
       {
@@ -10579,7 +10727,7 @@
         "given": "Alex"
       }
     ],
-    "id": "ref_95",
+    "id": "ref_100",
     "issued": {
       "date-parts": [
         [
@@ -10607,7 +10755,7 @@
         "given": "Shawki"
       }
     ],
-    "id": "ref_96",
+    "id": "ref_101",
     "issued": {
       "date-parts": [
         [
@@ -10688,7 +10836,7 @@
         "given": "Ameet"
       }
     ],
-    "id": "ref_99",
+    "id": "ref_104",
     "issued": {
       "date-parts": [
         [
@@ -10721,7 +10869,7 @@
         "given": "Michael I."
       }
     ],
-    "id": "ref_100",
+    "id": "ref_105",
     "issued": {
       "date-parts": [
         [
@@ -10754,7 +10902,7 @@
         "given": "Christopher"
       }
     ],
-    "id": "ref_103",
+    "id": "ref_108",
     "issued": {
       "date-parts": [
         [
@@ -10799,7 +10947,7 @@
         "given": "Yuval"
       }
     ],
-    "id": "ref_106",
+    "id": "ref_111",
     "issued": {
       "date-parts": [
         [
@@ -10823,7 +10971,7 @@
         "given": "Haoyu"
       }
     ],
-    "id": "ref_108",
+    "id": "ref_113",
     "issued": {
       "date-parts": [
         [
@@ -10851,7 +10999,7 @@
         "given": "Tie-Yan"
       }
     ],
-    "id": "ref_109",
+    "id": "ref_114",
     "issued": {
       "date-parts": [
         [
@@ -10862,130 +11010,6 @@
     },
     "title": "Ensemble-compression: A new method for parallel training of deep neural networks",
     "title-short": "Ensemble-compression",
-    "type": "article-journal"
-  },
-  {
-    "abstract": "After a more than decade-long period of relatively little research activity in the area of recurrent neural networks, several new developments will be reviewed here that have allowed substantial progress both in understanding and in technical solutions towards more efficient training of recurrent networks. These advances have been motivated by and related to the optimization issues surrounding deep learning. Although recurrent networks are extremely powerful in what they can in principle represent in terms of modelling sequences,their training is plagued by two aspects of the same issue regarding the learning of long-term dependencies. Experiments reported here evaluate the use of clipping gradients, spanning longer time ranges with leaky integration, advanced momentum techniques, using more powerful output probability models, and encouraging sparser gradients to help symmetry breaking and credit assignment. The experiments are performed on text and music data and show off the combined effects of these techniques in generally improving both training and test error.",
-    "author": [
-      {
-        "family": "Bengio",
-        "given": "Yoshua"
-      },
-      {
-        "family": "Boulanger-Lewandowski",
-        "given": "Nicolas"
-      },
-      {
-        "family": "Pascanu",
-        "given": "Razvan"
-      }
-    ],
-    "id": "ref_116",
-    "issued": {
-      "date-parts": [
-        [
-          2012,
-          12
-        ]
-      ]
-    },
-    "title": "Advances in optimizing recurrent networks",
-    "type": "article-journal"
-  },
-  {
-    "abstract": "Computational approaches to drug discovery can reduce the time and cost associated with experimental assays and enable the screening of novel chemotypes. Structure-based drug design methods rely on scoring functions to rank and predict binding affinities and poses. The ever-expanding amount of protein-ligand binding and structural data enables the use of deep machine learning techniques for protein-ligand scoring. We describe convolutional neural network (CNN) scoring functions that take as input a comprehensive 3D representation of a protein-ligand interaction. A CNN scoring function automatically learns the key features of protein-ligand interactions that correlate with binding. We train and optimize our CNN scoring functions to discriminate between correct and incorrect binding poses and known binders and non-binders. We find that our CNN scoring function outperforms the AutoDock Vina scoring function when ranking poses both for pose prediction and virtual screening.",
-    "author": [
-      {
-        "family": "Ragoza",
-        "given": "Matthew"
-      },
-      {
-        "family": "Hochuli",
-        "given": "Joshua"
-      },
-      {
-        "family": "Idrobo",
-        "given": "Elisa"
-      },
-      {
-        "family": "Sunseri",
-        "given": "Jocelyn"
-      },
-      {
-        "family": "Koes",
-        "given": "David Ryan"
-      }
-    ],
-    "id": "ref_117",
-    "issued": {
-      "date-parts": [
-        [
-          2016,
-          12
-        ]
-      ]
-    },
-    "title": "Protein-ligand scoring with convolutional neural networks",
-    "type": "article-journal"
-  },
-  {
-    "abstract": "Recent advances in machine learning have made significant contributions to drug discovery. Deep neural networks in particular have been demonstrated to provide significant boosts in predictive power when inferring the properties and activities of small-molecule compounds. However, the applicability of these techniques has been limited by the requirement for large amounts of training data. In this work, we demonstrate how one-shot learning can be used to significantly lower the amounts of data required to make meaningful predictions in drug discovery applications. We introduce a new architecture, the residual LSTM embedding, that, when combined with graph convolutional neural networks, significantly improves the ability to learn meaningful distance metrics over small-molecules. We open source all models introduced in this work as part of DeepChem, an open-source framework for deep-learning in drug discovery.",
-    "author": [
-      {
-        "family": "Altae-Tran",
-        "given": "Han"
-      },
-      {
-        "family": "Ramsundar",
-        "given": "Bharath"
-      },
-      {
-        "family": "Pappu",
-        "given": "Aneesh S."
-      },
-      {
-        "family": "Pande",
-        "given": "Vijay"
-      }
-    ],
-    "id": "ref_118",
-    "issued": {
-      "date-parts": [
-        [
-          2016,
-          12
-        ]
-      ]
-    },
-    "title": "Low data drug discovery with one-shot learning",
-    "type": "article-journal"
-  },
-  {
-    "abstract": "Deep learning methods such as multitask neural networks have recently been applied to ligand-based virtual screening and other drug discovery applications. Using a set of industrial ADMET datasets, we compare neural networks to standard baseline models and analyze multitask learning effects with both random cross-validation and a more relevant temporal validation scheme. We confirm that multitask learning can provide modest benefits over single-task models and show that smaller datasets tend to benefit more than larger datasets from multitask learning. Additionally, we find that adding massive amounts of side information is not guaranteed to improve performance relative to simpler multitask learning. Our results emphasize that multitask effects are highly dataset-dependent, suggesting the use of dataset-specific models to maximize overall performance.",
-    "author": [
-      {
-        "family": "Kearnes",
-        "given": "Steven"
-      },
-      {
-        "family": "Goldman",
-        "given": "Brian"
-      },
-      {
-        "family": "Pande",
-        "given": "Vijay"
-      }
-    ],
-    "id": "ref_119",
-    "issued": {
-      "date-parts": [
-        [
-          2016,
-          6
-        ]
-      ]
-    },
-    "title": "Modeling industrial admet data with multitask networks",
     "type": "article-journal"
   }
 ]

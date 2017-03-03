@@ -1,80 +1,94 @@
 {
+  "arxiv:1212.0901v2": {
+    "source": "arxiv",
+    "identifer": "1212.0901v2",
+    "standard_citation": "arxiv:1212.0901v2",
+    "bibtex": "@article{ref_0,\n abstract = {After a more than decade-long period of relatively little research activity\nin the area of recurrent neural networks, several new developments will be\nreviewed here that have allowed substantial progress both in understanding and\nin technical solutions towards more efficient training of recurrent networks.\nThese advances have been motivated by and related to the optimization issues\nsurrounding deep learning. Although recurrent networks are extremely powerful\nin what they can in principle represent in terms of modelling sequences,their\ntraining is plagued by two aspects of the same issue regarding the learning of\nlong-term dependencies. Experiments reported here evaluate the use of clipping\ngradients, spanning longer time ranges with leaky integration, advanced\nmomentum techniques, using more powerful output probability models, and\nencouraging sparser gradients to help symmetry breaking and credit assignment.\nThe experiments are performed on text and music data and show off the combined\neffects of these techniques in generally improving both training and test\nerror.},\n archiveprefix = {arXiv},\n author = {Yoshua Bengio and Nicolas Boulanger-Lewandowski and Razvan Pascanu},\n eprint = {1212.0901v2},\n file = {1212.0901v2.pdf},\n link = {http://arxiv.org/abs/1212.0901v2},\n month = {12},\n primaryclass = {cs.LG},\n title = {Advances in Optimizing Recurrent Networks},\n year = {2012}\n}\n\n",
+    "citation_id": "ref_0"
+  },
   "arxiv:1409.0575": {
     "source": "arxiv",
     "identifer": "1409.0575",
     "standard_citation": "arxiv:1409.0575",
-    "bibtex": "@article{ref_0,\n abstract = {The ImageNet Large Scale Visual Recognition Challenge is a benchmark in\nobject category classification and detection on hundreds of object categories\nand millions of images. The challenge has been run annually from 2010 to\npresent, attracting participation from more than fifty institutions.\nThis paper describes the creation of this benchmark dataset and the advances\nin object recognition that have been possible as a result. We discuss the\nchallenges of collecting large-scale ground truth annotation, highlight key\nbreakthroughs in categorical object recognition, provide a detailed analysis of\nthe current state of the field of large-scale image classification and object\ndetection, and compare the state-of-the-art computer vision accuracy with human\naccuracy. We conclude with lessons learned in the five years of the challenge, and propose future directions and improvements.},\n archiveprefix = {arXiv},\n author = {Olga Russakovsky and Jia Deng and Hao Su and Jonathan Krause and Sanjeev Satheesh and Sean Ma and Zhiheng Huang and Andrej Karpathy and Aditya Khosla and Michael Bernstein and Alexander C. Berg and Li Fei-Fei},\n eprint = {1409.0575v3},\n file = {1409.0575v3.pdf},\n link = {http://arxiv.org/abs/1409.0575v3},\n month = {Sep},\n primaryclass = {cs.CV},\n title = {ImageNet Large Scale Visual Recognition Challenge},\n year = {2014}\n}\n\n",
-    "citation_id": "ref_0"
+    "bibtex": "@article{ref_1,\n abstract = {The ImageNet Large Scale Visual Recognition Challenge is a benchmark in\nobject category classification and detection on hundreds of object categories\nand millions of images. The challenge has been run annually from 2010 to\npresent, attracting participation from more than fifty institutions.\nThis paper describes the creation of this benchmark dataset and the advances\nin object recognition that have been possible as a result. We discuss the\nchallenges of collecting large-scale ground truth annotation, highlight key\nbreakthroughs in categorical object recognition, provide a detailed analysis of\nthe current state of the field of large-scale image classification and object\ndetection, and compare the state-of-the-art computer vision accuracy with human\naccuracy. We conclude with lessons learned in the five years of the challenge, and propose future directions and improvements.},\n archiveprefix = {arXiv},\n author = {Olga Russakovsky and Jia Deng and Hao Su and Jonathan Krause and Sanjeev Satheesh and Sean Ma and Zhiheng Huang and Andrej Karpathy and Aditya Khosla and Michael Bernstein and Alexander C. Berg and Li Fei-Fei},\n eprint = {1409.0575v3},\n file = {1409.0575v3.pdf},\n link = {http://arxiv.org/abs/1409.0575v3},\n month = {Sep},\n primaryclass = {cs.CV},\n title = {ImageNet Large Scale Visual Recognition Challenge},\n year = {2014}\n}\n\n",
+    "citation_id": "ref_1"
   },
   "arxiv:1411.2581v1": {
     "source": "arxiv",
     "identifer": "1411.2581v1",
     "standard_citation": "arxiv:1411.2581v1",
-    "bibtex": "@article{ref_1,\n abstract = {We describe \\textit{deep exponential families} (DEFs), a class of latent\nvariable models that are inspired by the hidden structures used in deep neural\nnetworks. DEFs capture a hierarchy of dependencies between latent variables, and are easily generalized to many settings through exponential families. We\nperform inference using recent \"black box\" variational inference techniques. We\nthen evaluate various DEFs on text and combine multiple DEFs into a model for\npairwise recommendation data. In an extensive study, we show that going beyond\none layer improves predictions for DEFs. We demonstrate that DEFs find\ninteresting exploratory structure in large data sets, and give better\npredictive performance than state-of-the-art models.},\n archiveprefix = {arXiv},\n author = {Rajesh Ranganath and Linpeng Tang and Laurent Charlin and David M. Blei},\n eprint = {1411.2581v1},\n file = {1411.2581v1.pdf},\n link = {http://arxiv.org/abs/1411.2581v1},\n month = {Dec},\n primaryclass = {stat.ML},\n title = {Deep Exponential Families},\n year = {2014}\n}\n\n",
-    "citation_id": "ref_1"
+    "bibtex": "@article{ref_2,\n abstract = {We describe \\textit{deep exponential families} (DEFs), a class of latent\nvariable models that are inspired by the hidden structures used in deep neural\nnetworks. DEFs capture a hierarchy of dependencies between latent variables, and are easily generalized to many settings through exponential families. We\nperform inference using recent \"black box\" variational inference techniques. We\nthen evaluate various DEFs on text and combine multiple DEFs into a model for\npairwise recommendation data. In an extensive study, we show that going beyond\none layer improves predictions for DEFs. We demonstrate that DEFs find\ninteresting exploratory structure in large data sets, and give better\npredictive performance than state-of-the-art models.},\n archiveprefix = {arXiv},\n author = {Rajesh Ranganath and Linpeng Tang and Laurent Charlin and David M. Blei},\n eprint = {1411.2581v1},\n file = {1411.2581v1.pdf},\n link = {http://arxiv.org/abs/1411.2581v1},\n month = {Dec},\n primaryclass = {stat.ML},\n title = {Deep Exponential Families},\n year = {2014}\n}\n\n",
+    "citation_id": "ref_2"
   },
   "arxiv:1510.02855": {
     "source": "arxiv",
     "identifer": "1510.02855",
     "standard_citation": "arxiv:1510.02855",
-    "bibtex": "@article{ref_2,\n abstract = {Deep convolutional neural networks comprise a subclass of deep neural\nnetworks (DNN) with a constrained architecture that leverages the spatial and\ntemporal structure of the domain they model. Convolutional networks achieve the\nbest predictive performance in areas such as speech and image recognition by\nhierarchically composing simple local features into complex models. Although\nDNNs have been used in drug discovery for QSAR and ligand-based bioactivity\npredictions, none of these models have benefited from this powerful\nconvolutional architecture. This paper introduces AtomNet, the first\nstructure-based, deep convolutional neural network designed to predict the\nbioactivity of small molecules for drug discovery applications. We demonstrate\nhow to apply the convolutional concepts of feature locality and hierarchical\ncomposition to the modeling of bioactivity and chemical interactions. In\nfurther contrast to existing DNN techniques, we show that AtomNet's application\nof local convolutional filters to structural target information successfully\npredicts new active molecules for targets with no previously known modulators.\nFinally, we show that AtomNet outperforms previous docking approaches on a\ndiverse set of benchmarks by a large margin, achieving an AUC greater than 0.9\non 57.8% of the targets in the DUDE benchmark.},\n archiveprefix = {arXiv},\n author = {Izhar Wallach and Michael Dzamba and Abraham Heifets},\n eprint = {1510.02855v1},\n file = {1510.02855v1.pdf},\n link = {http://arxiv.org/abs/1510.02855v1},\n month = {Nov},\n primaryclass = {cs.LG},\n title = {AtomNet: A Deep Convolutional Neural Network for Bioactivity Prediction\nin Structure-based Drug Discovery},\n year = {2015}\n}\n\n",
-    "citation_id": "ref_2"
+    "bibtex": "@article{ref_3,\n abstract = {Deep convolutional neural networks comprise a subclass of deep neural\nnetworks (DNN) with a constrained architecture that leverages the spatial and\ntemporal structure of the domain they model. Convolutional networks achieve the\nbest predictive performance in areas such as speech and image recognition by\nhierarchically composing simple local features into complex models. Although\nDNNs have been used in drug discovery for QSAR and ligand-based bioactivity\npredictions, none of these models have benefited from this powerful\nconvolutional architecture. This paper introduces AtomNet, the first\nstructure-based, deep convolutional neural network designed to predict the\nbioactivity of small molecules for drug discovery applications. We demonstrate\nhow to apply the convolutional concepts of feature locality and hierarchical\ncomposition to the modeling of bioactivity and chemical interactions. In\nfurther contrast to existing DNN techniques, we show that AtomNet's application\nof local convolutional filters to structural target information successfully\npredicts new active molecules for targets with no previously known modulators.\nFinally, we show that AtomNet outperforms previous docking approaches on a\ndiverse set of benchmarks by a large margin, achieving an AUC greater than 0.9\non 57.8% of the targets in the DUDE benchmark.},\n archiveprefix = {arXiv},\n author = {Izhar Wallach and Michael Dzamba and Abraham Heifets},\n eprint = {1510.02855v1},\n file = {1510.02855v1.pdf},\n link = {http://arxiv.org/abs/1510.02855v1},\n month = {Nov},\n primaryclass = {cs.LG},\n title = {AtomNet: A Deep Convolutional Neural Network for Bioactivity Prediction\nin Structure-based Drug Discovery},\n year = {2015}\n}\n\n",
+    "citation_id": "ref_3"
   },
   "arxiv:1602.00357": {
     "source": "arxiv",
     "identifer": "1602.00357",
     "standard_citation": "arxiv:1602.00357",
-    "bibtex": "@article{ref_3,\n abstract = {Personalized predictive medicine necessitates the modeling of patient illness\nand care processes, which inherently have long-term temporal dependencies.\nHealthcare observations, recorded in electronic medical records, are episodic\nand irregular in time. We introduce DeepCare, an end-to-end deep dynamic neural\nnetwork that reads medical records, stores previous illness history, infers\ncurrent illness states and predicts future medical outcomes. At the data level, DeepCare represents care episodes as vectors in space, models patient health\nstate trajectories through explicit memory of historical records. Built on Long\nShort-Term Memory (LSTM), DeepCare introduces time parameterizations to handle\nirregular timed events by moderating the forgetting and consolidation of memory\ncells. DeepCare also incorporates medical interventions that change the course\nof illness and shape future medical risk. Moving up to the health state level, historical and present health states are then aggregated through multiscale\ntemporal pooling, before passing through a neural network that estimates future\noutcomes. We demonstrate the efficacy of DeepCare for disease progression\nmodeling, intervention recommendation, and future risk prediction. On two\nimportant cohorts with heavy social and economic burden -- diabetes and mental\nhealth -- the results show improved modeling and risk prediction accuracy.},\n archiveprefix = {arXiv},\n author = {Trang Pham and Truyen Tran and Dinh Phung and Svetha Venkatesh},\n eprint = {1602.00357v1},\n file = {1602.00357v1.pdf},\n link = {http://arxiv.org/abs/1602.00357v1},\n month = {Feb},\n primaryclass = {stat.ML},\n title = {DeepCare: A Deep Dynamic Memory Model for Predictive Medicine},\n year = {2016}\n}\n\n",
-    "citation_id": "ref_3"
+    "bibtex": "@article{ref_4,\n abstract = {Personalized predictive medicine necessitates the modeling of patient illness\nand care processes, which inherently have long-term temporal dependencies.\nHealthcare observations, recorded in electronic medical records, are episodic\nand irregular in time. We introduce DeepCare, an end-to-end deep dynamic neural\nnetwork that reads medical records, stores previous illness history, infers\ncurrent illness states and predicts future medical outcomes. At the data level, DeepCare represents care episodes as vectors in space, models patient health\nstate trajectories through explicit memory of historical records. Built on Long\nShort-Term Memory (LSTM), DeepCare introduces time parameterizations to handle\nirregular timed events by moderating the forgetting and consolidation of memory\ncells. DeepCare also incorporates medical interventions that change the course\nof illness and shape future medical risk. Moving up to the health state level, historical and present health states are then aggregated through multiscale\ntemporal pooling, before passing through a neural network that estimates future\noutcomes. We demonstrate the efficacy of DeepCare for disease progression\nmodeling, intervention recommendation, and future risk prediction. On two\nimportant cohorts with heavy social and economic burden -- diabetes and mental\nhealth -- the results show improved modeling and risk prediction accuracy.},\n archiveprefix = {arXiv},\n author = {Trang Pham and Truyen Tran and Dinh Phung and Svetha Venkatesh},\n eprint = {1602.00357v1},\n file = {1602.00357v1.pdf},\n link = {http://arxiv.org/abs/1602.00357v1},\n month = {Feb},\n primaryclass = {stat.ML},\n title = {DeepCare: A Deep Dynamic Memory Model for Predictive Medicine},\n year = {2016}\n}\n\n",
+    "citation_id": "ref_4"
   },
   "arxiv:1606.00931": {
     "source": "arxiv",
     "identifer": "1606.00931",
     "standard_citation": "arxiv:1606.00931",
-    "bibtex": "@article{ref_4,\n abstract = {Previous research has shown that neural networks can model survival data in\nsituations in which some patients' death times are unknown, e.g.\nright-censored. However, neural networks have rarely been shown to outperform\ntheir linear counterparts such as the Cox proportional hazards model. In this\npaper, we run simulated experiments and use real survival data to build upon\nthe risk-regression architecture proposed by Faraggi and Simon. We demonstrate\nthat our model, DeepSurv, not only works as well as other survival models but\nactually outperforms in predictive ability on survival data with linear and\nnonlinear risk functions. We then show that the neural network can also serve\nas a recommender system by including a categorical variable representing a\ntreatment group. This can be used to provide personalized treatment\nrecommendations based on an individual's calculated risk. We provide an open\nsource Python module that implements these methods in order to advance research\non deep learning and survival analysis.},\n archiveprefix = {arXiv},\n author = {Jared Katzman and Uri Shaham and Jonathan Bates and Alexander Cloninger and Tingting Jiang and Yuval Kluger},\n eprint = {1606.00931v2},\n file = {1606.00931v2.pdf},\n link = {http://arxiv.org/abs/1606.00931v2},\n month = {Jun},\n primaryclass = {stat.ML},\n title = {Deep Survival: A Deep Cox Proportional Hazards Network},\n year = {2016}\n}\n\n",
-    "citation_id": "ref_4"
+    "bibtex": "@article{ref_5,\n abstract = {Previous research has shown that neural networks can model survival data in\nsituations in which some patients' death times are unknown, e.g.\nright-censored. However, neural networks have rarely been shown to outperform\ntheir linear counterparts such as the Cox proportional hazards model. In this\npaper, we run simulated experiments and use real survival data to build upon\nthe risk-regression architecture proposed by Faraggi and Simon. We demonstrate\nthat our model, DeepSurv, not only works as well as other survival models but\nactually outperforms in predictive ability on survival data with linear and\nnonlinear risk functions. We then show that the neural network can also serve\nas a recommender system by including a categorical variable representing a\ntreatment group. This can be used to provide personalized treatment\nrecommendations based on an individual's calculated risk. We provide an open\nsource Python module that implements these methods in order to advance research\non deep learning and survival analysis.},\n archiveprefix = {arXiv},\n author = {Jared Katzman and Uri Shaham and Jonathan Bates and Alexander Cloninger and Tingting Jiang and Yuval Kluger},\n eprint = {1606.00931v2},\n file = {1606.00931v2.pdf},\n link = {http://arxiv.org/abs/1606.00931v2},\n month = {Jun},\n primaryclass = {stat.ML},\n title = {Deep Survival: A Deep Cox Proportional Hazards Network},\n year = {2016}\n}\n\n",
+    "citation_id": "ref_5"
   },
   "arxiv:1606.05718": {
     "source": "arxiv",
     "identifer": "1606.05718",
     "standard_citation": "arxiv:1606.05718",
-    "bibtex": "@article{ref_5,\n abstract = {The International Symposium on Biomedical Imaging (ISBI) held a grand\nchallenge to evaluate computational systems for the automated detection of\nmetastatic breast cancer in whole slide images of sentinel lymph node biopsies.\nOur team won both competitions in the grand challenge, obtaining an area under\nthe receiver operating curve (AUC) of 0.925 for the task of whole slide image\nclassification and a score of 0.7051 for the tumor localization task. A\npathologist independently reviewed the same images, obtaining a whole slide\nimage classification AUC of 0.966 and a tumor localization score of 0.733.\nCombining our deep learning system's predictions with the human pathologist's\ndiagnoses increased the pathologist's AUC to 0.995, representing an\napproximately 85 percent reduction in human error rate. These results\ndemonstrate the power of using deep learning to produce significant\nimprovements in the accuracy of pathological diagnoses.},\n archiveprefix = {arXiv},\n author = {Dayong Wang and Aditya Khosla and Rishab Gargeya and Humayun Irshad and Andrew H. Beck},\n eprint = {1606.05718v1},\n file = {1606.05718v1.pdf},\n link = {http://arxiv.org/abs/1606.05718v1},\n month = {Jun},\n primaryclass = {q-bio.QM},\n title = {Deep Learning for Identifying Metastatic Breast Cancer},\n year = {2016}\n}\n\n",
-    "citation_id": "ref_5"
+    "bibtex": "@article{ref_6,\n abstract = {The International Symposium on Biomedical Imaging (ISBI) held a grand\nchallenge to evaluate computational systems for the automated detection of\nmetastatic breast cancer in whole slide images of sentinel lymph node biopsies.\nOur team won both competitions in the grand challenge, obtaining an area under\nthe receiver operating curve (AUC) of 0.925 for the task of whole slide image\nclassification and a score of 0.7051 for the tumor localization task. A\npathologist independently reviewed the same images, obtaining a whole slide\nimage classification AUC of 0.966 and a tumor localization score of 0.733.\nCombining our deep learning system's predictions with the human pathologist's\ndiagnoses increased the pathologist's AUC to 0.995, representing an\napproximately 85 percent reduction in human error rate. These results\ndemonstrate the power of using deep learning to produce significant\nimprovements in the accuracy of pathological diagnoses.},\n archiveprefix = {arXiv},\n author = {Dayong Wang and Aditya Khosla and Rishab Gargeya and Humayun Irshad and Andrew H. Beck},\n eprint = {1606.05718v1},\n file = {1606.05718v1.pdf},\n link = {http://arxiv.org/abs/1606.05718v1},\n month = {Jun},\n primaryclass = {q-bio.QM},\n title = {Deep Learning for Identifying Metastatic Breast Cancer},\n year = {2016}\n}\n\n",
+    "citation_id": "ref_6"
   },
   "arxiv:1607.00133": {
     "source": "arxiv",
     "identifer": "1607.00133",
     "standard_citation": "arxiv:1607.00133",
-    "bibtex": "@article{ref_6,\n abstract = {Machine learning techniques based on neural networks are achieving remarkable\nresults in a wide variety of domains. Often, the training of models requires\nlarge, representative datasets, which may be crowdsourced and contain sensitive\ninformation. The models should not expose private information in these\ndatasets. Addressing this goal, we develop new algorithmic techniques for\nlearning and a refined analysis of privacy costs within the framework of\ndifferential privacy. Our implementation and experiments demonstrate that we\ncan train deep neural networks with non-convex objectives, under a modest\nprivacy budget, and at a manageable cost in software complexity, training\nefficiency, and model quality.},\n archiveprefix = {arXiv},\n author = {Martín Abadi and Andy Chu and Ian Goodfellow and H. Brendan McMahan and Ilya Mironov and Kunal Talwar and Li Zhang},\n doi = {10.1145/2976749.2978318},\n eprint = {1607.00133v2},\n file = {1607.00133v2.pdf},\n link = {http://arxiv.org/abs/1607.00133v2},\n month = {Jul},\n primaryclass = {stat.ML},\n title = {Deep Learning with Differential Privacy},\n year = {2016}\n}\n\n",
-    "citation_id": "ref_6"
+    "bibtex": "@article{ref_7,\n abstract = {Machine learning techniques based on neural networks are achieving remarkable\nresults in a wide variety of domains. Often, the training of models requires\nlarge, representative datasets, which may be crowdsourced and contain sensitive\ninformation. The models should not expose private information in these\ndatasets. Addressing this goal, we develop new algorithmic techniques for\nlearning and a refined analysis of privacy costs within the framework of\ndifferential privacy. Our implementation and experiments demonstrate that we\ncan train deep neural networks with non-convex objectives, under a modest\nprivacy budget, and at a manageable cost in software complexity, training\nefficiency, and model quality.},\n archiveprefix = {arXiv},\n author = {Martín Abadi and Andy Chu and Ian Goodfellow and H. Brendan McMahan and Ilya Mironov and Kunal Talwar and Li Zhang},\n doi = {10.1145/2976749.2978318},\n eprint = {1607.00133v2},\n file = {1607.00133v2.pdf},\n link = {http://arxiv.org/abs/1607.00133v2},\n month = {Jul},\n primaryclass = {stat.ML},\n title = {Deep Learning with Differential Privacy},\n year = {2016}\n}\n\n",
+    "citation_id": "ref_7"
   },
   "arxiv:1607.07519": {
     "source": "arxiv",
     "identifer": "1607.07519",
     "standard_citation": "arxiv:1607.07519",
-    "bibtex": "@article{ref_7,\n abstract = {Feature engineering remains a major bottleneck when creating predictive\nsystems from electronic medical records. At present, an important missing\nelement is detecting predictive regular clinical motifs from irregular episodic\nrecords. We present Deepr (short for Deep record), a new end-to-end deep\nlearning system that learns to extract features from medical records and\npredicts future risk automatically. Deepr transforms a record into a sequence\nof discrete elements separated by coded time gaps and hospital transfers. On\ntop of the sequence is a convolutional neural net that detects and combines\npredictive local clinical motifs to stratify the risk. Deepr permits\ntransparent inspection and visualization of its inner working. We validate\nDeepr on hospital data to predict unplanned readmission after discharge. Deepr\nachieves superior accuracy compared to traditional techniques, detects\nmeaningful clinical motifs, and uncovers the underlying structure of the\ndisease and intervention space.},\n archiveprefix = {arXiv},\n author = {Phuoc Nguyen and Truyen Tran and Nilmini Wickramasinghe and Svetha Venkatesh},\n eprint = {1607.07519v1},\n file = {1607.07519v1.pdf},\n link = {http://arxiv.org/abs/1607.07519v1},\n month = {Jul},\n primaryclass = {stat.ML},\n title = {Deepr: A Convolutional Net for Medical Records},\n year = {2016}\n}\n\n",
-    "citation_id": "ref_7"
+    "bibtex": "@article{ref_8,\n abstract = {Feature engineering remains a major bottleneck when creating predictive\nsystems from electronic medical records. At present, an important missing\nelement is detecting predictive regular clinical motifs from irregular episodic\nrecords. We present Deepr (short for Deep record), a new end-to-end deep\nlearning system that learns to extract features from medical records and\npredicts future risk automatically. Deepr transforms a record into a sequence\nof discrete elements separated by coded time gaps and hospital transfers. On\ntop of the sequence is a convolutional neural net that detects and combines\npredictive local clinical motifs to stratify the risk. Deepr permits\ntransparent inspection and visualization of its inner working. We validate\nDeepr on hospital data to predict unplanned readmission after discharge. Deepr\nachieves superior accuracy compared to traditional techniques, detects\nmeaningful clinical motifs, and uncovers the underlying structure of the\ndisease and intervention space.},\n archiveprefix = {arXiv},\n author = {Phuoc Nguyen and Truyen Tran and Nilmini Wickramasinghe and Svetha Venkatesh},\n eprint = {1607.07519v1},\n file = {1607.07519v1.pdf},\n link = {http://arxiv.org/abs/1607.07519v1},\n month = {Jul},\n primaryclass = {stat.ML},\n title = {Deepr: A Convolutional Net for Medical Records},\n year = {2016}\n}\n\n",
+    "citation_id": "ref_8"
   },
   "arxiv:1608.02158": {
     "source": "arxiv",
     "identifer": "1608.02158",
     "standard_citation": "arxiv:1608.02158",
-    "bibtex": "@article{ref_8,\n abstract = {The electronic health record (EHR) provides an unprecedented opportunity to\nbuild actionable tools to support physicians at the point of care. In this\npaper, we investigate survival analysis in the context of EHR data. We\nintroduce deep survival analysis, a hierarchical generative approach to\nsurvival analysis. It departs from previous approaches in two primary ways: (1)\nall observations, including covariates, are modeled jointly conditioned on a\nrich latent structure; and (2) the observations are aligned by their failure\ntime, rather than by an arbitrary time zero as in traditional survival\nanalysis. Further, it (3) scalably handles heterogeneous (continuous and\ndiscrete) data types that occur in the EHR. We validate deep survival analysis\nmodel by stratifying patients according to risk of developing coronary heart\ndisease (CHD). Specifically, we study a dataset of 313,000 patients\ncorresponding to 5.5 million months of observations. When compared to the\nclinically validated Framingham CHD risk score, deep survival analysis is\nsignificantly superior in stratifying patients according to their risk.},\n archiveprefix = {arXiv},\n author = {Rajesh Ranganath and Adler Perotte and Noémie Elhadad and David Blei},\n eprint = {1608.02158v2},\n file = {1608.02158v2.pdf},\n link = {http://arxiv.org/abs/1608.02158v2},\n month = {Aug},\n primaryclass = {stat.ML},\n title = {Deep Survival Analysis},\n year = {2016}\n}\n\n",
-    "citation_id": "ref_8"
+    "bibtex": "@article{ref_9,\n abstract = {The electronic health record (EHR) provides an unprecedented opportunity to\nbuild actionable tools to support physicians at the point of care. In this\npaper, we investigate survival analysis in the context of EHR data. We\nintroduce deep survival analysis, a hierarchical generative approach to\nsurvival analysis. It departs from previous approaches in two primary ways: (1)\nall observations, including covariates, are modeled jointly conditioned on a\nrich latent structure; and (2) the observations are aligned by their failure\ntime, rather than by an arbitrary time zero as in traditional survival\nanalysis. Further, it (3) scalably handles heterogeneous (continuous and\ndiscrete) data types that occur in the EHR. We validate deep survival analysis\nmodel by stratifying patients according to risk of developing coronary heart\ndisease (CHD). Specifically, we study a dataset of 313,000 patients\ncorresponding to 5.5 million months of observations. When compared to the\nclinically validated Framingham CHD risk score, deep survival analysis is\nsignificantly superior in stratifying patients according to their risk.},\n archiveprefix = {arXiv},\n author = {Rajesh Ranganath and Adler Perotte and Noémie Elhadad and David Blei},\n eprint = {1608.02158v2},\n file = {1608.02158v2.pdf},\n link = {http://arxiv.org/abs/1608.02158v2},\n month = {Aug},\n primaryclass = {stat.ML},\n title = {Deep Survival Analysis},\n year = {2016}\n}\n\n",
+    "citation_id": "ref_9"
   },
   "arxiv:1609.02943": {
     "source": "arxiv",
     "identifer": "1609.02943",
     "standard_citation": "arxiv:1609.02943",
-    "bibtex": "@article{ref_9,\n abstract = {Machine learning (ML) models may be deemed confidential due to their\nsensitive training data, commercial value, or use in security applications.\nIncreasingly often, confidential ML models are being deployed with publicly\naccessible query interfaces. ML-as-a-service (\"predictive analytics\") systems\nare an example: Some allow users to train models on potentially sensitive data\nand charge others for access on a pay-per-query basis.\nThe tension between model confidentiality and public access motivates our\ninvestigation of model extraction attacks. In such attacks, an adversary with\nblack-box access, but no prior knowledge of an ML model's parameters or\ntraining data, aims to duplicate the functionality of (i.e., \"steal\") the\nmodel. Unlike in classical learning theory settings, ML-as-a-service offerings\nmay accept partial feature vectors as inputs and include confidence values with\npredictions. Given these practices, we show simple, efficient attacks that\nextract target ML models with near-perfect fidelity for popular model classes\nincluding logistic regression, neural networks, and decision trees. We\ndemonstrate these attacks against the online services of BigML and Amazon\nMachine Learning. We further show that the natural countermeasure of omitting\nconfidence values from model outputs still admits potentially harmful model\nextraction attacks. Our results highlight the need for careful ML model\ndeployment and new model extraction countermeasures.},\n archiveprefix = {arXiv},\n author = {Florian Tramèr and Fan Zhang and Ari Juels and Michael K. Reiter and Thomas Ristenpart},\n eprint = {1609.02943v2},\n file = {1609.02943v2.pdf},\n link = {http://arxiv.org/abs/1609.02943v2},\n month = {Sep},\n primaryclass = {cs.CR},\n title = {Stealing Machine Learning Models via Prediction APIs},\n year = {2016}\n}\n\n",
-    "citation_id": "ref_9"
+    "bibtex": "@article{ref_10,\n abstract = {Machine learning (ML) models may be deemed confidential due to their\nsensitive training data, commercial value, or use in security applications.\nIncreasingly often, confidential ML models are being deployed with publicly\naccessible query interfaces. ML-as-a-service (\"predictive analytics\") systems\nare an example: Some allow users to train models on potentially sensitive data\nand charge others for access on a pay-per-query basis.\nThe tension between model confidentiality and public access motivates our\ninvestigation of model extraction attacks. In such attacks, an adversary with\nblack-box access, but no prior knowledge of an ML model's parameters or\ntraining data, aims to duplicate the functionality of (i.e., \"steal\") the\nmodel. Unlike in classical learning theory settings, ML-as-a-service offerings\nmay accept partial feature vectors as inputs and include confidence values with\npredictions. Given these practices, we show simple, efficient attacks that\nextract target ML models with near-perfect fidelity for popular model classes\nincluding logistic regression, neural networks, and decision trees. We\ndemonstrate these attacks against the online services of BigML and Amazon\nMachine Learning. We further show that the natural countermeasure of omitting\nconfidence values from model outputs still admits potentially harmful model\nextraction attacks. Our results highlight the need for careful ML model\ndeployment and new model extraction countermeasures.},\n archiveprefix = {arXiv},\n author = {Florian Tramèr and Fan Zhang and Ari Juels and Michael K. Reiter and Thomas Ristenpart},\n eprint = {1609.02943v2},\n file = {1609.02943v2.pdf},\n link = {http://arxiv.org/abs/1609.02943v2},\n month = {Sep},\n primaryclass = {cs.CR},\n title = {Stealing Machine Learning Models via Prediction APIs},\n year = {2016}\n}\n\n",
+    "citation_id": "ref_10"
   },
   "arxiv:1611.08373": {
     "source": "arxiv",
     "identifer": "1611.08373",
     "standard_citation": "arxiv:1611.08373",
-    "bibtex": "@article{ref_10,\n abstract = {Automated extraction of concepts from patient clinical records is an\nessential facilitator of clinical research. For this reason, the 2010 i2b2/VA\nNatural Language Processing Challenges for Clinical Records introduced a\nconcept extraction task aimed at identifying and classifying concepts into\npredefined categories (i.e., treatments, tests and problems). State-of-the-art\nconcept extraction approaches heavily rely on handcrafted features and\ndomain-specific resources which are hard to collect and define. For this\nreason, this paper proposes an alternative, streamlined approach: a recurrent\nneural network (the bidirectional LSTM with CRF decoding) initialized with\ngeneral-purpose, off-the-shelf word embeddings. The experimental results\nachieved on the 2010 i2b2/VA reference corpora using the proposed framework\noutperform all recent methods and ranks closely to the best submission from the\noriginal 2010 i2b2/VA challenge.},\n archiveprefix = {arXiv},\n author = {Raghavendra Chalapathy and Ehsan Zare Borzeshi and Massimo Piccardi},\n eprint = {1611.08373v1},\n file = {1611.08373v1.pdf},\n link = {http://arxiv.org/abs/1611.08373v1},\n month = {Dec},\n primaryclass = {stat.ML},\n title = {Bidirectional LSTM-CRF for Clinical Concept Extraction},\n year = {2016}\n}\n\n",
-    "citation_id": "ref_10"
+    "bibtex": "@article{ref_11,\n abstract = {Automated extraction of concepts from patient clinical records is an\nessential facilitator of clinical research. For this reason, the 2010 i2b2/VA\nNatural Language Processing Challenges for Clinical Records introduced a\nconcept extraction task aimed at identifying and classifying concepts into\npredefined categories (i.e., treatments, tests and problems). State-of-the-art\nconcept extraction approaches heavily rely on handcrafted features and\ndomain-specific resources which are hard to collect and define. For this\nreason, this paper proposes an alternative, streamlined approach: a recurrent\nneural network (the bidirectional LSTM with CRF decoding) initialized with\ngeneral-purpose, off-the-shelf word embeddings. The experimental results\nachieved on the 2010 i2b2/VA reference corpora using the proposed framework\noutperform all recent methods and ranks closely to the best submission from the\noriginal 2010 i2b2/VA challenge.},\n archiveprefix = {arXiv},\n author = {Raghavendra Chalapathy and Ehsan Zare Borzeshi and Massimo Piccardi},\n eprint = {1611.08373v1},\n file = {1611.08373v1.pdf},\n link = {http://arxiv.org/abs/1611.08373v1},\n month = {Dec},\n primaryclass = {stat.ML},\n title = {Bidirectional LSTM-CRF for Clinical Concept Extraction},\n year = {2016}\n}\n\n",
+    "citation_id": "ref_11"
+  },
+  "arxiv:1612.02751": {
+    "source": "arxiv",
+    "identifer": "1612.02751",
+    "standard_citation": "arxiv:1612.02751",
+    "bibtex": "@article{ref_12,\n abstract = {Computational approaches to drug discovery can reduce the time and cost\nassociated with experimental assays and enable the screening of novel\nchemotypes. Structure-based drug design methods rely on scoring functions to\nrank and predict binding affinities and poses. The ever-expanding amount of\nprotein-ligand binding and structural data enables the use of deep machine\nlearning techniques for protein-ligand scoring.\nWe describe convolutional neural network (CNN) scoring functions that take as\ninput a comprehensive 3D representation of a protein-ligand interaction. A CNN\nscoring function automatically learns the key features of protein-ligand\ninteractions that correlate with binding. We train and optimize our CNN scoring\nfunctions to discriminate between correct and incorrect binding poses and known\nbinders and non-binders. We find that our CNN scoring function outperforms the\nAutoDock Vina scoring function when ranking poses both for pose prediction and\nvirtual screening.},\n archiveprefix = {arXiv},\n author = {Matthew Ragoza and Joshua Hochuli and Elisa Idrobo and Jocelyn Sunseri and David Ryan Koes},\n eprint = {1612.02751v1},\n file = {1612.02751v1.pdf},\n link = {http://arxiv.org/abs/1612.02751v1},\n month = {12},\n primaryclass = {stat.ML},\n title = {Protein-Ligand Scoring with Convolutional Neural Networks},\n year = {2016}\n}\n\n",
+    "citation_id": "ref_12"
   },
   "doi:10.1002/cyto.a.22909": {
     "source": "doi",
@@ -282,9 +296,9 @@
         "Cell Biology",
         "Histology"
       ],
-      "id": "ref_11"
+      "id": "ref_13"
     },
-    "citation_id": "ref_11"
+    "citation_id": "ref_13"
   },
   "doi:10.1002/minf.201501008": {
     "source": "doi",
@@ -437,9 +451,9 @@
         "Drug Discovery",
         "Computer Science Applications"
       ],
-      "id": "ref_12"
+      "id": "ref_14"
     },
-    "citation_id": "ref_12"
+    "citation_id": "ref_14"
   },
   "doi:10.1007/978-3-319-16706-0_20": {
     "source": "doi",
@@ -541,9 +555,9 @@
       },
       "URL": "http://dx.doi.org/10.1007/978-3-319-16706-0_20",
       "citing-count": 0,
-      "id": "ref_13"
+      "id": "ref_15"
     },
-    "citation_id": "ref_13"
+    "citation_id": "ref_15"
   },
   "doi:10.1007/978-3-319-24553-9_74": {
     "source": "doi",
@@ -645,9 +659,9 @@
       },
       "URL": "http://dx.doi.org/10.1007/978-3-319-24553-9_74",
       "citing-count": 0,
-      "id": "ref_14"
+      "id": "ref_16"
     },
-    "citation_id": "ref_14"
+    "citation_id": "ref_16"
   },
   "doi:10.1007/978-3-319-24574-4_28": {
     "source": "doi",
@@ -767,9 +781,9 @@
       },
       "URL": "http://dx.doi.org/10.1007/978-3-319-24574-4_28",
       "citing-count": 0,
-      "id": "ref_15"
+      "id": "ref_17"
     },
-    "citation_id": "ref_15"
+    "citation_id": "ref_17"
   },
   "doi:10.1007/978-3-319-46723-8_13": {
     "source": "doi",
@@ -915,9 +929,9 @@
         }
       ],
       "citing-count": 16,
-      "id": "ref_16"
+      "id": "ref_18"
     },
-    "citation_id": "ref_16"
+    "citation_id": "ref_18"
   },
   "doi:10.1007/978-3-319-47898-2_21": {
     "source": "doi",
@@ -1039,9 +1053,9 @@
       },
       "URL": "http://dx.doi.org/10.1007/978-3-319-47898-2_21",
       "citing-count": 23,
-      "id": "ref_17"
+      "id": "ref_19"
     },
-    "citation_id": "ref_17"
+    "citation_id": "ref_19"
   },
   "doi:10.1007/978-3-642-40763-5_51": {
     "source": "doi",
@@ -1139,9 +1153,9 @@
       },
       "URL": "http://dx.doi.org/10.1007/978-3-642-40763-5_51",
       "citing-count": 0,
-      "id": "ref_18"
+      "id": "ref_20"
     },
-    "citation_id": "ref_18"
+    "citation_id": "ref_20"
   },
   "doi:10.1016/s0167-9473(99)00098-5": {
     "source": "doi",
@@ -1291,9 +1305,9 @@
         "Applied Mathematics",
         "Computational Mathematics"
       ],
-      "id": "ref_19"
+      "id": "ref_21"
     },
-    "citation_id": "ref_19"
+    "citation_id": "ref_21"
   },
   "doi:10.1016/s0277-9536(96)00227-4": {
     "source": "doi",
@@ -1425,9 +1439,9 @@
       "subject": [
         "Health(social science)"
       ],
-      "id": "ref_20"
+      "id": "ref_22"
     },
-    "citation_id": "ref_20"
+    "citation_id": "ref_22"
   },
   "doi:10.1016/s1072-7515(03)00097-8": {
     "source": "doi",
@@ -1554,9 +1568,250 @@
       "subject": [
         "Surgery"
       ],
-      "id": "ref_21"
+      "id": "ref_23"
     },
-    "citation_id": "ref_21"
+    "citation_id": "ref_23"
+  },
+  "doi:10.1016/j.bjid.2015.08.013": {
+    "source": "doi",
+    "identifer": "10.1016/j.bjid.2015.08.013",
+    "standard_citation": "doi:10.1016/j.bjid.2015.08.013",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2016,
+            10,
+            31
+          ]
+        ],
+        "date-time": "2016-10-31T20:03:19Z",
+        "timestamp": 1477944199765
+      },
+      "reference-count": 49,
+      "publisher": "Elsevier BV",
+      "issue": "6",
+      "license": [
+        {
+          "URL": "http://www.elsevier.com/tdm/userlicense/1.0/",
+          "start": {
+            "date-parts": [
+              [
+                2015,
+                11,
+                1
+              ]
+            ],
+            "date-time": "2015-11-01T00:00:00Z",
+            "timestamp": 1446336000000
+          },
+          "delay-in-days": 0,
+          "content-version": "tdm"
+        },
+        {
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+          "start": {
+            "date-parts": [
+              [
+                2015,
+                10,
+                9
+              ]
+            ],
+            "date-time": "2015-10-09T00:00:00Z",
+            "timestamp": 1444348800000
+          },
+          "delay-in-days": 0,
+          "content-version": "vor"
+        }
+      ],
+      "funder": [
+        {
+          "DOI": "10.13039/501100006435",
+          "name": "Central European Institute of Technology",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "CZ.1.05/1.1.00/02.0068"
+          ]
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "elsevier.com",
+          "sciencedirect.com"
+        ],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "The Brazilian Journal of Infectious Diseases"
+      ],
+      "cited-count": 0,
+      "published-print": {
+        "date-parts": [
+          [
+            2015,
+            11
+          ]
+        ]
+      },
+      "DOI": "10.1016/j.bjid.2015.08.013",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2015,
+            10,
+            27
+          ]
+        ],
+        "date-time": "2015-10-27T16:07:37Z",
+        "timestamp": 1445962057000
+      },
+      "page": "604-613",
+      "update-policy": "http://dx.doi.org/10.1016/elsevier_cm_policy",
+      "source": "CrossRef",
+      "title": "Influence of microbiome species in hard-to-heal wounds on disease severity and treatment duration",
+      "prefix": "http://id.crossref.org/prefix/10.1016",
+      "volume": "19",
+      "author": [
+        {
+          "given": "Dagmar",
+          "family": "Chudobova",
+          "affiliation": []
+        },
+        {
+          "given": "Kristyna",
+          "family": "Cihalova",
+          "affiliation": []
+        },
+        {
+          "given": "Roman",
+          "family": "Guran",
+          "affiliation": []
+        },
+        {
+          "given": "Simona",
+          "family": "Dostalova",
+          "affiliation": []
+        },
+        {
+          "given": "Kristyna",
+          "family": "Smerkova",
+          "affiliation": []
+        },
+        {
+          "given": "Radek",
+          "family": "Vesely",
+          "affiliation": []
+        },
+        {
+          "given": "Jaromir",
+          "family": "Gumulec",
+          "affiliation": []
+        },
+        {
+          "given": "Michal",
+          "family": "Masarik",
+          "affiliation": []
+        },
+        {
+          "given": "Zbynek",
+          "family": "Heger",
+          "affiliation": []
+        },
+        {
+          "given": "Vojtech",
+          "family": "Adam",
+          "affiliation": []
+        },
+        {
+          "given": "Rene",
+          "family": "Kizek",
+          "affiliation": []
+        }
+      ],
+      "member": "http://id.crossref.org/member/78",
+      "container-title": "The Brazilian Journal of Infectious Diseases",
+      "original-title": [],
+      "link": [
+        {
+          "URL": "http://api.elsevier.com/content/article/PII:S1413867015001889?httpAccept=text/xml",
+          "content-type": "text/xml",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "http://api.elsevier.com/content/article/PII:S1413867015001889?httpAccept=text/plain",
+          "content-type": "text/plain",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2015,
+            12,
+            1
+          ]
+        ],
+        "date-time": "2015-12-01T02:17:21Z",
+        "timestamp": 1448936241000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2015,
+            11
+          ]
+        ]
+      },
+      "alternative-id": [
+        "S1413867015001889"
+      ],
+      "URL": "http://dx.doi.org/10.1016/j.bjid.2015.08.013",
+      "citing-count": 49,
+      "subject": [
+        "Medicine(all)"
+      ],
+      "assertion": [
+        {
+          "value": "Elsevier",
+          "name": "publisher",
+          "label": "This article is maintained by"
+        },
+        {
+          "value": "Influence of microbiome species in hard-to-heal wounds on disease severity and treatment duration",
+          "name": "articletitle",
+          "label": "Article Title"
+        },
+        {
+          "value": "The Brazilian Journal of Infectious Diseases",
+          "name": "journaltitle",
+          "label": "Journal Title"
+        },
+        {
+          "value": "http://dx.doi.org/10.1016/j.bjid.2015.08.013",
+          "name": "articlelink",
+          "label": "CrossRef DOI link to publisher maintained version"
+        },
+        {
+          "value": "article",
+          "name": "content_type",
+          "label": "Content Type"
+        },
+        {
+          "value": "Copyright © 2015 Elsevier Editora Ltda.",
+          "name": "copyright",
+          "label": "Copyright"
+        }
+      ],
+      "id": "ref_24"
+    },
+    "citation_id": "ref_24"
   },
   "doi:10.1016/j.cels.2016.04.013": {
     "source": "doi",
@@ -1743,9 +1998,9 @@
           "label": "Copyright"
         }
       ],
-      "id": "ref_22"
+      "id": "ref_25"
     },
-    "citation_id": "ref_22"
+    "citation_id": "ref_25"
   },
   "doi:10.1016/j.copbio.2016.04.003": {
     "source": "doi",
@@ -1949,9 +2204,9 @@
           "label": "Copyright"
         }
       ],
-      "id": "ref_23"
+      "id": "ref_26"
     },
-    "citation_id": "ref_23"
+    "citation_id": "ref_26"
   },
   "doi:10.1016/j.jalz.2015.01.010": {
     "source": "doi",
@@ -2170,9 +2425,9 @@
           "label": "Copyright"
         }
       ],
-      "id": "ref_24"
+      "id": "ref_27"
     },
-    "citation_id": "ref_24"
+    "citation_id": "ref_27"
   },
   "doi:10.1016/j.jbi.2016.10.007": {
     "source": "doi",
@@ -2374,9 +2629,9 @@
           "label": "Copyright"
         }
       ],
-      "id": "ref_25"
+      "id": "ref_28"
     },
-    "citation_id": "ref_25"
+    "citation_id": "ref_28"
   },
   "doi:10.1016/j.neunet.2014.09.003": {
     "source": "doi",
@@ -2555,9 +2810,9 @@
           "label": "Copyright"
         }
       ],
-      "id": "ref_26"
+      "id": "ref_29"
     },
-    "citation_id": "ref_26"
+    "citation_id": "ref_29"
   },
   "doi:10.1016/j.socscimed.2003.08.016": {
     "source": "doi",
@@ -2689,9 +2944,9 @@
       "subject": [
         "Health(social science)"
       ],
-      "id": "ref_27"
+      "id": "ref_30"
     },
-    "citation_id": "ref_27"
+    "citation_id": "ref_30"
   },
   "doi:10.1021/acs.molpharmaceut.5b00982": {
     "source": "doi",
@@ -2805,9 +3060,9 @@
         "Drug Discovery",
         "Pharmaceutical Science"
       ],
-      "id": "ref_28"
+      "id": "ref_31"
     },
-    "citation_id": "ref_28"
+    "citation_id": "ref_31"
   },
   "doi:10.1021/acs.molpharmaceut.6b00248": {
     "source": "doi",
@@ -2949,9 +3204,9 @@
         "Drug Discovery",
         "Pharmaceutical Science"
       ],
-      "id": "ref_29"
+      "id": "ref_32"
     },
-    "citation_id": "ref_29"
+    "citation_id": "ref_32"
   },
   "doi:10.1038/nature14539": {
     "source": "doi",
@@ -3058,9 +3313,9 @@
       "subject": [
         "General"
       ],
-      "id": "ref_30"
+      "id": "ref_33"
     },
-    "citation_id": "ref_30"
+    "citation_id": "ref_33"
   },
   "doi:10.1038/nbt.3313": {
     "source": "doi",
@@ -3166,9 +3421,9 @@
         "Bioengineering",
         "Biomedical Engineering"
       ],
-      "id": "ref_31"
+      "id": "ref_34"
     },
-    "citation_id": "ref_31"
+    "citation_id": "ref_34"
   },
   "doi:10.1038/ncomms5022": {
     "source": "doi",
@@ -3305,9 +3560,9 @@
         "Physics and Astronomy(all)",
         "Chemistry(all)"
       ],
-      "id": "ref_32"
+      "id": "ref_35"
     },
-    "citation_id": "ref_32"
+    "citation_id": "ref_35"
   },
   "doi:10.1038/nmeth.4182": {
     "source": "doi",
@@ -3318,12 +3573,12 @@
         "date-parts": [
           [
             2017,
-            2,
-            21
+            3,
+            2
           ]
         ],
-        "date-time": "2017-02-21T16:42:49Z",
-        "timestamp": 1487695369122
+        "date-time": "2017-03-02T10:40:51Z",
+        "timestamp": 1488451251665
       },
       "reference-count": 44,
       "publisher": "Springer Nature",
@@ -3438,12 +3693,12 @@
         "date-parts": [
           [
             2017,
-            2,
-            21
+            3,
+            2
           ]
         ],
-        "date-time": "2017-02-21T15:31:55Z",
-        "timestamp": 1487691115000
+        "date-time": "2017-03-02T09:31:13Z",
+        "timestamp": 1488447073000
       },
       "score": 1.0,
       "subtitle": [],
@@ -3478,9 +3733,9 @@
         "Biochemistry",
         "Molecular Biology"
       ],
-      "id": "ref_33"
+      "id": "ref_36"
     },
-    "citation_id": "ref_33"
+    "citation_id": "ref_36"
   },
   "doi:10.1038/srep18962": {
     "source": "doi",
@@ -3588,9 +3843,9 @@
       ],
       "URL": "http://dx.doi.org/10.1038/srep18962",
       "citing-count": 79,
-      "id": "ref_34"
+      "id": "ref_37"
     },
-    "citation_id": "ref_34"
+    "citation_id": "ref_37"
   },
   "doi:10.1038/srep26094": {
     "source": "doi",
@@ -3698,9 +3953,9 @@
       ],
       "URL": "http://dx.doi.org/10.1038/srep26094",
       "citing-count": 48,
-      "id": "ref_35"
+      "id": "ref_38"
     },
-    "citation_id": "ref_35"
+    "citation_id": "ref_38"
   },
   "doi:10.1083/jcb.201610026": {
     "source": "doi",
@@ -3937,9 +4192,9 @@
       "subject": [
         "Cell Biology"
       ],
-      "id": "ref_36"
+      "id": "ref_39"
     },
-    "citation_id": "ref_36"
+    "citation_id": "ref_39"
   },
   "doi:10.1093/bib/bbw068": {
     "source": "doi",
@@ -4055,9 +4310,9 @@
         "Molecular Biology",
         "Information Systems"
       ],
-      "id": "ref_37"
+      "id": "ref_40"
     },
-    "citation_id": "ref_37"
+    "citation_id": "ref_40"
   },
   "doi:10.1093/bioinformatics/btt234": {
     "source": "doi",
@@ -4180,9 +4435,9 @@
         "Computational Mathematics",
         "Computer Science Applications"
       ],
-      "id": "ref_38"
+      "id": "ref_41"
     },
-    "citation_id": "ref_38"
+    "citation_id": "ref_41"
   },
   "doi:10.1093/bioinformatics/btu703": {
     "source": "doi",
@@ -4310,9 +4565,9 @@
         "Computational Mathematics",
         "Computer Science Applications"
       ],
-      "id": "ref_39"
+      "id": "ref_42"
     },
-    "citation_id": "ref_39"
+    "citation_id": "ref_42"
   },
   "doi:10.1093/nar/gkq747": {
     "source": "doi",
@@ -4435,9 +4690,9 @@
       "subject": [
         "Genetics"
       ],
-      "id": "ref_40"
+      "id": "ref_43"
     },
-    "citation_id": "ref_40"
+    "citation_id": "ref_43"
   },
   "doi:10.1093/nar/gku1058": {
     "source": "doi",
@@ -4560,9 +4815,9 @@
       "subject": [
         "Genetics"
       ],
-      "id": "ref_41"
+      "id": "ref_44"
     },
-    "citation_id": "ref_41"
+    "citation_id": "ref_44"
   },
   "doi:10.1097/00000542-199004000-00024": {
     "source": "doi",
@@ -4666,9 +4921,9 @@
       "subject": [
         "Anesthesiology and Pain Medicine"
       ],
-      "id": "ref_42"
+      "id": "ref_45"
     },
-    "citation_id": "ref_42"
+    "citation_id": "ref_45"
   },
   "doi:10.1101/036129": {
     "source": "doi",
@@ -4785,9 +5040,9 @@
       },
       "URL": "http://dx.doi.org/10.1101/036129",
       "citing-count": 0,
-      "id": "ref_43"
+      "id": "ref_46"
     },
-    "citation_id": "ref_43"
+    "citation_id": "ref_46"
   },
   "doi:10.1101/039800": {
     "source": "doi",
@@ -4891,9 +5146,9 @@
       },
       "URL": "http://dx.doi.org/10.1101/039800",
       "citing-count": 0,
-      "id": "ref_44"
+      "id": "ref_47"
     },
-    "citation_id": "ref_44"
+    "citation_id": "ref_47"
   },
   "doi:10.1101/056473": {
     "source": "doi",
@@ -4997,9 +5252,9 @@
       },
       "URL": "http://dx.doi.org/10.1101/056473",
       "citing-count": 0,
-      "id": "ref_45"
+      "id": "ref_48"
     },
-    "citation_id": "ref_45"
+    "citation_id": "ref_48"
   },
   "doi:10.1101/073239": {
     "source": "doi",
@@ -5116,9 +5371,9 @@
       },
       "URL": "http://dx.doi.org/10.1101/073239",
       "citing-count": 0,
-      "id": "ref_46"
+      "id": "ref_49"
     },
-    "citation_id": "ref_46"
+    "citation_id": "ref_49"
   },
   "doi:10.1101/081364": {
     "source": "doi",
@@ -5250,9 +5505,9 @@
       },
       "URL": "http://dx.doi.org/10.1101/081364",
       "citing-count": 0,
-      "id": "ref_47"
+      "id": "ref_50"
     },
-    "citation_id": "ref_47"
+    "citation_id": "ref_50"
   },
   "doi:10.1101/085118": {
     "source": "doi",
@@ -5369,9 +5624,9 @@
       },
       "URL": "http://dx.doi.org/10.1101/085118",
       "citing-count": 0,
-      "id": "ref_48"
+      "id": "ref_51"
     },
-    "citation_id": "ref_48"
+    "citation_id": "ref_51"
   },
   "doi:10.1101/094276": {
     "source": "doi",
@@ -5480,9 +5735,9 @@
       },
       "URL": "http://dx.doi.org/10.1101/094276",
       "citing-count": 0,
-      "id": "ref_49"
+      "id": "ref_52"
     },
-    "citation_id": "ref_49"
+    "citation_id": "ref_52"
   },
   "doi:10.1101/095786": {
     "source": "doi",
@@ -5584,9 +5839,9 @@
       },
       "URL": "http://dx.doi.org/10.1101/095786",
       "citing-count": 0,
-      "id": "ref_50"
+      "id": "ref_53"
     },
-    "citation_id": "ref_50"
+    "citation_id": "ref_53"
   },
   "doi:10.1101/095794": {
     "source": "doi",
@@ -5698,9 +5953,9 @@
       },
       "URL": "http://dx.doi.org/10.1101/095794",
       "citing-count": 0,
-      "id": "ref_51"
+      "id": "ref_54"
     },
-    "citation_id": "ref_51"
+    "citation_id": "ref_54"
   },
   "doi:10.1103/revmodphys.34.135": {
     "source": "doi",
@@ -5830,9 +6085,9 @@
       "subject": [
         "Physics and Astronomy(all)"
       ],
-      "id": "ref_52"
+      "id": "ref_55"
     },
-    "citation_id": "ref_52"
+    "citation_id": "ref_55"
   },
   "doi:10.1109/icnn.1994.374637": {
     "source": "doi",
@@ -5900,9 +6155,9 @@
       "short-title": [],
       "URL": "http://dx.doi.org/10.1109/icnn.1994.374637",
       "citing-count": 7,
-      "id": "ref_53"
+      "id": "ref_56"
     },
-    "citation_id": "ref_53"
+    "citation_id": "ref_56"
   },
   "doi:10.1109/tcbb.2014.2343960": {
     "source": "doi",
@@ -6018,9 +6273,9 @@
         "Genetics",
         "Applied Mathematics"
       ],
-      "id": "ref_54"
+      "id": "ref_57"
     },
-    "citation_id": "ref_54"
+    "citation_id": "ref_57"
   },
   "doi:10.1136/amiajnl-2011-000150": {
     "source": "doi",
@@ -6154,9 +6409,9 @@
       "subject": [
         "Health Informatics"
       ],
-      "id": "ref_55"
+      "id": "ref_58"
     },
-    "citation_id": "ref_55"
+    "citation_id": "ref_58"
   },
   "doi:10.1136/amiajnl-2011-000501": {
     "source": "doi",
@@ -6270,9 +6525,9 @@
       "subject": [
         "Health Informatics"
       ],
-      "id": "ref_56"
+      "id": "ref_59"
     },
-    "citation_id": "ref_56"
+    "citation_id": "ref_59"
   },
   "doi:10.1136/amiajnl-2013-001935": {
     "source": "doi",
@@ -6419,9 +6674,9 @@
       "subject": [
         "Health Informatics"
       ],
-      "id": "ref_57"
+      "id": "ref_60"
     },
-    "citation_id": "ref_57"
+    "citation_id": "ref_60"
   },
   "doi:10.1142/9789813207813_0050": {
     "source": "doi",
@@ -6549,9 +6804,9 @@
       ],
       "URL": "http://dx.doi.org/10.1142/9789813207813_0050",
       "citing-count": 0,
-      "id": "ref_58"
+      "id": "ref_61"
     },
-    "citation_id": "ref_58"
+    "citation_id": "ref_61"
   },
   "doi:10.1142/9789814644730_0014": {
     "source": "doi",
@@ -6663,9 +6918,9 @@
       ],
       "URL": "http://dx.doi.org/10.1142/9789814644730_0014",
       "citing-count": 0,
-      "id": "ref_59"
+      "id": "ref_62"
     },
-    "citation_id": "ref_59"
+    "citation_id": "ref_62"
   },
   "doi:10.1158/1078-0432.ccr-13-0583": {
     "source": "doi",
@@ -6784,9 +7039,9 @@
         "Cancer Research",
         "Oncology"
       ],
-      "id": "ref_60"
+      "id": "ref_63"
     },
-    "citation_id": "ref_60"
+    "citation_id": "ref_63"
   },
   "doi:10.1200/jco.2008.18.1370": {
     "source": "doi",
@@ -6989,9 +7244,9 @@
         "Cancer Research",
         "Oncology"
       ],
-      "id": "ref_61"
+      "id": "ref_64"
     },
-    "citation_id": "ref_61"
+    "citation_id": "ref_64"
   },
   "doi:10.1371/journal.pbio.1002195": {
     "source": "doi",
@@ -7002,12 +7257,12 @@
         "date-parts": [
           [
             2017,
-            1,
-            27
+            2,
+            28
           ]
         ],
-        "date-time": "2017-01-27T13:40:36Z",
-        "timestamp": 1485524436757
+        "date-time": "2017-02-28T15:40:52Z",
+        "timestamp": 1488296452062
       },
       "reference-count": 52,
       "publisher": "Public Library of Science (PLoS)",
@@ -7127,12 +7382,12 @@
         "date-parts": [
           [
             2017,
-            1,
-            27
+            2,
+            28
           ]
         ],
-        "date-time": "2017-01-27T12:20:58Z",
-        "timestamp": 1485519658000
+        "date-time": "2017-02-28T14:11:05Z",
+        "timestamp": 1488291065000
       },
       "score": 1.0,
       "subtitle": [],
@@ -7160,9 +7415,9 @@
         "Neuroscience(all)",
         "Agricultural and Biological Sciences(all)"
       ],
-      "id": "ref_62"
+      "id": "ref_65"
     },
-    "citation_id": "ref_62"
+    "citation_id": "ref_65"
   },
   "doi:10.1371/journal.pcbi.1005177": {
     "source": "doi",
@@ -7172,17 +7427,35 @@
       "indexed": {
         "date-parts": [
           [
-            2016,
-            11,
-            29
+            2017,
+            3,
+            1
           ]
         ],
-        "date-time": "2016-11-29T00:52:54Z",
-        "timestamp": 1480380774946
+        "date-time": "2017-03-01T03:42:17Z",
+        "timestamp": 1488339737938
       },
-      "reference-count": 0,
+      "reference-count": 66,
       "publisher": "Public Library of Science (PLoS)",
       "issue": "11",
+      "license": [
+        {
+          "URL": "http://creativecommons.org/licenses/by/4.0/",
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                11,
+                4
+              ]
+            ],
+            "date-time": "2016-11-04T00:00:00Z",
+            "timestamp": 1478217600000
+          },
+          "delay-in-days": 0,
+          "content-version": "vor"
+        }
+      ],
       "funder": [
         {
           "DOI": "10.13039/100000057",
@@ -7342,13 +7615,13 @@
       "deposited": {
         "date-parts": [
           [
-            2016,
-            11,
-            4
+            2017,
+            3,
+            1
           ]
         ],
-        "date-time": "2016-11-04T17:28:02Z",
-        "timestamp": 1478280482000
+        "date-time": "2017-03-01T02:53:01Z",
+        "timestamp": 1488336781000
       },
       "score": 1.0,
       "subtitle": [],
@@ -7370,7 +7643,13 @@
         ]
       },
       "URL": "http://dx.doi.org/10.1371/journal.pcbi.1005177",
-      "citing-count": 0,
+      "issn-type": [
+        {
+          "value": "1553-7358",
+          "type": "electronic"
+        }
+      ],
+      "citing-count": 66,
       "subject": [
         "Ecology",
         "Modelling and Simulation",
@@ -7380,9 +7659,9 @@
         "Molecular Biology",
         "Cellular and Molecular Neuroscience"
       ],
-      "id": "ref_63"
+      "id": "ref_66"
     },
-    "citation_id": "ref_63"
+    "citation_id": "ref_66"
   },
   "doi:10.1371/journal.pone.0066341": {
     "source": "doi",
@@ -7516,9 +7795,9 @@
         "Agricultural and Biological Sciences(all)",
         "Medicine(all)"
       ],
-      "id": "ref_64"
+      "id": "ref_67"
     },
-    "citation_id": "ref_64"
+    "citation_id": "ref_67"
   },
   "doi:10.15252/msb.20156651": {
     "source": "doi",
@@ -7680,9 +7959,9 @@
         "Information Systems",
         "Medicine(all)"
       ],
-      "id": "ref_65"
+      "id": "ref_68"
     },
-    "citation_id": "ref_65"
+    "citation_id": "ref_68"
   },
   "doi:10.1561/0400000042": {
     "source": "doi",
@@ -7777,9 +8056,9 @@
       "subject": [
         "Theoretical Computer Science"
       ],
-      "id": "ref_66"
+      "id": "ref_69"
     },
-    "citation_id": "ref_66"
+    "citation_id": "ref_69"
   },
   "doi:10.3109/10409238.2015.1135868": {
     "source": "doi",
@@ -7909,9 +8188,9 @@
           "label": "Aim & Scope"
         }
       ],
-      "id": "ref_67"
+      "id": "ref_70"
     },
-    "citation_id": "ref_67"
+    "citation_id": "ref_70"
   },
   "pmid:21347133": {
     "source": "pmid",
@@ -7923,12 +8202,12 @@
         "date-parts": [
           [
             2017,
-            2,
-            25
+            3,
+            3
           ]
         ]
       },
-      "id": "ref_68",
+      "id": "ref_71",
       "title": "Secondary Use of EHR: Data Quality Issues and Informatics Opportunities",
       "author": [
         {
@@ -7964,7 +8243,7 @@
       "PMCID": "PMC3041534",
       "type": "article-journal"
     },
-    "citation_id": "ref_68"
+    "citation_id": "ref_71"
   },
   "pmid:24159271": {
     "source": "pmid",
@@ -7976,12 +8255,12 @@
         "date-parts": [
           [
             2017,
-            2,
-            25
+            3,
+            3
           ]
         ]
       },
-      "id": "ref_69",
+      "id": "ref_72",
       "title": "Impact of Electronic Health Record Systems on Information Integrity: Quality and Safety Implications",
       "author": [
         {
@@ -8006,7 +8285,7 @@
       "PMCID": "PMC3797550",
       "type": "article-journal"
     },
-    "citation_id": "ref_69"
+    "citation_id": "ref_72"
   },
   "pmid:27134610": {
     "source": "pmid",
@@ -8018,12 +8297,12 @@
         "date-parts": [
           [
             2017,
-            2,
-            25
+            3,
+            3
           ]
         ]
       },
-      "id": "ref_70",
+      "id": "ref_73",
       "title": "Why Patient Matching Is a Challenge: Research on Master Patient Index (MPI) Data Discrepancies in Key Identifying Fields",
       "author": [
         {
@@ -8060,7 +8339,14 @@
       "PMCID": "PMC4832129",
       "type": "article-journal"
     },
-    "citation_id": "ref_70"
+    "citation_id": "ref_73"
+  },
+  "arxiv:1611.03199": {
+    "source": "arxiv",
+    "identifer": "1611.03199",
+    "standard_citation": "arxiv:1611.03199",
+    "bibtex": "@article{ref_74,\n abstract = {Recent advances in machine learning have made significant contributions to\ndrug discovery. Deep neural networks in particular have been demonstrated to\nprovide significant boosts in predictive power when inferring the properties\nand activities of small-molecule compounds. However, the applicability of these\ntechniques has been limited by the requirement for large amounts of training\ndata. In this work, we demonstrate how one-shot learning can be used to\nsignificantly lower the amounts of data required to make meaningful predictions\nin drug discovery applications. We introduce a new architecture, the residual\nLSTM embedding, that, when combined with graph convolutional neural networks, significantly improves the ability to learn meaningful distance metrics over\nsmall-molecules. We open source all models introduced in this work as part of\nDeepChem, an open-source framework for deep-learning in drug discovery.},\n archiveprefix = {arXiv},\n author = {Han Altae-Tran and Bharath Ramsundar and Aneesh S. Pappu and Vijay Pande},\n eprint = {1611.03199v1},\n file = {1611.03199v1.pdf},\n link = {http://arxiv.org/abs/1611.03199v1},\n month = {Dec},\n primaryclass = {cs.LG},\n title = {Low Data Drug Discovery with One-shot Learning},\n year = {2016}\n}\n\n",
+    "citation_id": "ref_74"
   },
   "doi:10.1101/055715": {
     "source": "doi",
@@ -8176,9 +8462,9 @@
       },
       "URL": "http://dx.doi.org/10.1101/055715",
       "citing-count": 0,
-      "id": "ref_71"
+      "id": "ref_75"
     },
-    "citation_id": "ref_71"
+    "citation_id": "ref_75"
   },
   "doi:10.1101/046508": {
     "source": "doi",
@@ -8280,16 +8566,16 @@
       },
       "URL": "http://dx.doi.org/10.1101/046508",
       "citing-count": 0,
-      "id": "ref_72"
+      "id": "ref_76"
     },
-    "citation_id": "ref_72"
+    "citation_id": "ref_76"
   },
   "arxiv:1412.7024": {
     "source": "arxiv",
     "identifer": "1412.7024",
     "standard_citation": "arxiv:1412.7024",
-    "bibtex": "@article{ref_73,\n abstract = {Multipliers are the most space and power-hungry arithmetic operators of the\ndigital implementation of deep neural networks. We train a set of\nstate-of-the-art neural networks (Maxout networks) on three benchmark datasets:\nMNIST, CIFAR-10 and SVHN. They are trained with three distinct formats:\nfloating point, fixed point and dynamic fixed point. For each of those datasets\nand for each of those formats, we assess the impact of the precision of the\nmultiplications on the final error after training. We find that very low\nprecision is sufficient not just for running trained networks but also for\ntraining them. For example, it is possible to train Maxout networks with 10\nbits multiplications.},\n archiveprefix = {arXiv},\n author = {Matthieu Courbariaux and Yoshua Bengio and Jean-Pierre David},\n eprint = {1412.7024v5},\n file = {1412.7024v5.pdf},\n link = {http://arxiv.org/abs/1412.7024v5},\n month = {12},\n primaryclass = {cs.LG},\n title = {Training deep neural networks with low precision multiplications},\n year = {2014}\n}\n\n",
-    "citation_id": "ref_73"
+    "bibtex": "@article{ref_77,\n abstract = {Multipliers are the most space and power-hungry arithmetic operators of the\ndigital implementation of deep neural networks. We train a set of\nstate-of-the-art neural networks (Maxout networks) on three benchmark datasets:\nMNIST, CIFAR-10 and SVHN. They are trained with three distinct formats:\nfloating point, fixed point and dynamic fixed point. For each of those datasets\nand for each of those formats, we assess the impact of the precision of the\nmultiplications on the final error after training. We find that very low\nprecision is sufficient not just for running trained networks but also for\ntraining them. For example, it is possible to train Maxout networks with 10\nbits multiplications.},\n archiveprefix = {arXiv},\n author = {Matthieu Courbariaux and Yoshua Bengio and Jean-Pierre David},\n eprint = {1412.7024v5},\n file = {1412.7024v5.pdf},\n link = {http://arxiv.org/abs/1412.7024v5},\n month = {12},\n primaryclass = {cs.LG},\n title = {Training deep neural networks with low precision multiplications},\n year = {2014}\n}\n\n",
+    "citation_id": "ref_77"
   },
   "url:https://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimization.pdf": {
     "source": "url",
@@ -8298,9 +8584,9 @@
     "citeproc": {
       "URL": "https://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimization.pdf",
       "type": "webpage",
-      "id": "ref_74"
+      "id": "ref_78"
     },
-    "citation_id": "ref_74"
+    "citation_id": "ref_78"
   },
   "url:http://dl.acm.org/citation.cfm?id=2188395": {
     "source": "url",
@@ -8309,23 +8595,23 @@
     "citeproc": {
       "URL": "http://dl.acm.org/citation.cfm?id=2188395",
       "type": "webpage",
-      "id": "ref_75"
+      "id": "ref_79"
     },
-    "citation_id": "ref_75"
+    "citation_id": "ref_79"
   },
   "arxiv:1312.6184": {
     "source": "arxiv",
     "identifer": "1312.6184",
     "standard_citation": "arxiv:1312.6184",
-    "bibtex": "@article{ref_76,\n abstract = {Currently, deep neural networks are the state of the art on problems such as\nspeech recognition and computer vision. In this extended abstract, we show that\nshallow feed-forward networks can learn the complex functions previously\nlearned by deep nets and achieve accuracies previously only achievable with\ndeep models. Moreover, in some cases the shallow neural nets can learn these\ndeep functions using a total number of parameters similar to the original deep\nmodel. We evaluate our method on the TIMIT phoneme recognition task and are\nable to train shallow fully-connected nets that perform similarly to complex, well-engineered, deep convolutional architectures. Our success in training\nshallow neural nets to mimic deeper models suggests that there probably exist\nbetter algorithms for training shallow feed-forward nets than those currently\navailable.},\n archiveprefix = {arXiv},\n author = {Lei Jimmy Ba and Rich Caruana},\n eprint = {1312.6184v7},\n file = {1312.6184v7.pdf},\n link = {http://arxiv.org/abs/1312.6184v7},\n month = {12},\n primaryclass = {cs.LG},\n title = {Do Deep Nets Really Need to be Deep?},\n year = {2013}\n}\n\n",
-    "citation_id": "ref_76"
+    "bibtex": "@article{ref_80,\n abstract = {Currently, deep neural networks are the state of the art on problems such as\nspeech recognition and computer vision. In this extended abstract, we show that\nshallow feed-forward networks can learn the complex functions previously\nlearned by deep nets and achieve accuracies previously only achievable with\ndeep models. Moreover, in some cases the shallow neural nets can learn these\ndeep functions using a total number of parameters similar to the original deep\nmodel. We evaluate our method on the TIMIT phoneme recognition task and are\nable to train shallow fully-connected nets that perform similarly to complex, well-engineered, deep convolutional architectures. Our success in training\nshallow neural nets to mimic deeper models suggests that there probably exist\nbetter algorithms for training shallow feed-forward nets than those currently\navailable.},\n archiveprefix = {arXiv},\n author = {Lei Jimmy Ba and Rich Caruana},\n eprint = {1312.6184v7},\n file = {1312.6184v7.pdf},\n link = {http://arxiv.org/abs/1312.6184v7},\n month = {12},\n primaryclass = {cs.LG},\n title = {Do Deep Nets Really Need to be Deep?},\n year = {2013}\n}\n\n",
+    "citation_id": "ref_80"
   },
   "arxiv:1504.04788": {
     "source": "arxiv",
     "identifer": "1504.04788",
     "standard_citation": "arxiv:1504.04788",
-    "bibtex": "@article{ref_77,\n abstract = {As deep nets are increasingly used in applications suited for mobile devices, a fundamental dilemma becomes apparent: the trend in deep learning is to grow\nmodels to absorb ever-increasing data set sizes; however mobile devices are\ndesigned with very little memory and cannot store such large models. We present\na novel network architecture, HashedNets, that exploits inherent redundancy in\nneural networks to achieve drastic reductions in model sizes. HashedNets uses a\nlow-cost hash function to randomly group connection weights into hash buckets, and all connections within the same hash bucket share a single parameter value.\nThese parameters are tuned to adjust to the HashedNets weight sharing\narchitecture with standard backprop during training. Our hashing procedure\nintroduces no additional memory overhead, and we demonstrate on several\nbenchmark data sets that HashedNets shrink the storage requirements of neural\nnetworks substantially while mostly preserving generalization performance.},\n archiveprefix = {arXiv},\n author = {Wenlin Chen and James T. Wilson and Stephen Tyree and Kilian Q. Weinberger and Yixin Chen},\n eprint = {1504.04788v1},\n file = {1504.04788v1.pdf},\n link = {http://arxiv.org/abs/1504.04788v1},\n month = {Apr},\n primaryclass = {cs.LG},\n title = {Compressing Neural Networks with the Hashing Trick},\n year = {2015}\n}\n\n",
-    "citation_id": "ref_77"
+    "bibtex": "@article{ref_81,\n abstract = {As deep nets are increasingly used in applications suited for mobile devices, a fundamental dilemma becomes apparent: the trend in deep learning is to grow\nmodels to absorb ever-increasing data set sizes; however mobile devices are\ndesigned with very little memory and cannot store such large models. We present\na novel network architecture, HashedNets, that exploits inherent redundancy in\nneural networks to achieve drastic reductions in model sizes. HashedNets uses a\nlow-cost hash function to randomly group connection weights into hash buckets, and all connections within the same hash bucket share a single parameter value.\nThese parameters are tuned to adjust to the HashedNets weight sharing\narchitecture with standard backprop during training. Our hashing procedure\nintroduces no additional memory overhead, and we demonstrate on several\nbenchmark data sets that HashedNets shrink the storage requirements of neural\nnetworks substantially while mostly preserving generalization performance.},\n archiveprefix = {arXiv},\n author = {Wenlin Chen and James T. Wilson and Stephen Tyree and Kilian Q. Weinberger and Yixin Chen},\n eprint = {1504.04788v1},\n file = {1504.04788v1.pdf},\n link = {http://arxiv.org/abs/1504.04788v1},\n month = {Apr},\n primaryclass = {cs.LG},\n title = {Compressing Neural Networks with the Hashing Trick},\n year = {2015}\n}\n\n",
+    "citation_id": "ref_81"
   },
   "doi:10.1093/bioinformatics/btv315": {
     "source": "doi",
@@ -8461,9 +8747,9 @@
         "Computational Mathematics",
         "Computer Science Applications"
       ],
-      "id": "ref_78"
+      "id": "ref_82"
     },
-    "citation_id": "ref_78"
+    "citation_id": "ref_82"
   },
   "doi:10.1093/bioinformatics/btw074": {
     "source": "doi",
@@ -8604,9 +8890,9 @@
         "Computational Mathematics",
         "Computer Science Applications"
       ],
-      "id": "ref_79"
+      "id": "ref_83"
     },
-    "citation_id": "ref_79"
+    "citation_id": "ref_83"
   },
   "url:http://www.jmlr.org/proceedings/papers/v28/coates13.html": {
     "source": "url",
@@ -8615,16 +8901,16 @@
     "citeproc": {
       "URL": "http://www.jmlr.org/proceedings/papers/v28/coates13.html",
       "type": "webpage",
-      "id": "ref_80"
+      "id": "ref_84"
     },
-    "citation_id": "ref_80"
+    "citation_id": "ref_84"
   },
   "arxiv:1410.0759": {
     "source": "arxiv",
     "identifer": "1410.0759",
     "standard_citation": "arxiv:1410.0759",
-    "bibtex": "@article{ref_81,\n abstract = {We present a library of efficient implementations of deep learning\nprimitives. Deep learning workloads are computationally intensive, and\noptimizing their kernels is difficult and time-consuming. As parallel\narchitectures evolve, kernels must be reoptimized, which makes maintaining\ncodebases difficult over time. Similar issues have long been addressed in the\nHPC community by libraries such as the Basic Linear Algebra Subroutines (BLAS).\nHowever, there is no analogous library for deep learning. Without such a\nlibrary, researchers implementing deep learning workloads on parallel\nprocessors must create and optimize their own implementations of the main\ncomputational kernels, and this work must be repeated as new parallel\nprocessors emerge. To address this problem, we have created a library similar\nin intent to BLAS, with optimized routines for deep learning workloads. Our\nimplementation contains routines for GPUs, although similarly to the BLAS\nlibrary, these routines could be implemented for other platforms. The library\nis easy to integrate into existing frameworks, and provides optimized\nperformance and memory usage. For example, integrating cuDNN into Caffe, a\npopular framework for convolutional networks, improves performance by 36% on a\nstandard model while also reducing memory consumption.},\n archiveprefix = {arXiv},\n author = {Sharan Chetlur and Cliff Woolley and Philippe Vandermersch and Jonathan Cohen and John Tran and Bryan Catanzaro and Evan Shelhamer},\n eprint = {1410.0759v3},\n file = {1410.0759v3.pdf},\n link = {http://arxiv.org/abs/1410.0759v3},\n month = {Nov},\n primaryclass = {cs.NE},\n title = {cuDNN: Efficient Primitives for Deep Learning},\n year = {2014}\n}\n\n",
-    "citation_id": "ref_81"
+    "bibtex": "@article{ref_85,\n abstract = {We present a library of efficient implementations of deep learning\nprimitives. Deep learning workloads are computationally intensive, and\noptimizing their kernels is difficult and time-consuming. As parallel\narchitectures evolve, kernels must be reoptimized, which makes maintaining\ncodebases difficult over time. Similar issues have long been addressed in the\nHPC community by libraries such as the Basic Linear Algebra Subroutines (BLAS).\nHowever, there is no analogous library for deep learning. Without such a\nlibrary, researchers implementing deep learning workloads on parallel\nprocessors must create and optimize their own implementations of the main\ncomputational kernels, and this work must be repeated as new parallel\nprocessors emerge. To address this problem, we have created a library similar\nin intent to BLAS, with optimized routines for deep learning workloads. Our\nimplementation contains routines for GPUs, although similarly to the BLAS\nlibrary, these routines could be implemented for other platforms. The library\nis easy to integrate into existing frameworks, and provides optimized\nperformance and memory usage. For example, integrating cuDNN into Caffe, a\npopular framework for convolutional networks, improves performance by 36% on a\nstandard model while also reducing memory consumption.},\n archiveprefix = {arXiv},\n author = {Sharan Chetlur and Cliff Woolley and Philippe Vandermersch and Jonathan Cohen and John Tran and Bryan Catanzaro and Evan Shelhamer},\n eprint = {1410.0759v3},\n file = {1410.0759v3.pdf},\n link = {http://arxiv.org/abs/1410.0759v3},\n month = {Nov},\n primaryclass = {cs.NE},\n title = {cuDNN: Efficient Primitives for Deep Learning},\n year = {2014}\n}\n\n",
+    "citation_id": "ref_85"
   },
   "url:http://research.google.com/archive/large_deep_networks_nips2012.html": {
     "source": "url",
@@ -8633,9 +8919,9 @@
     "citeproc": {
       "URL": "http://research.google.com/archive/large_deep_networks_nips2012.html",
       "type": "webpage",
-      "id": "ref_82"
+      "id": "ref_86"
     },
-    "citation_id": "ref_82"
+    "citation_id": "ref_86"
   },
   "url:https://papers.nips.cc/paper/5717-taming-the-wild-a-unified-analysis-of-hogwild-style-algorithms.pdf": {
     "source": "url",
@@ -8644,9 +8930,9 @@
     "citeproc": {
       "URL": "https://papers.nips.cc/paper/5717-taming-the-wild-a-unified-analysis-of-hogwild-style-algorithms.pdf",
       "type": "webpage",
-      "id": "ref_83"
+      "id": "ref_87"
     },
-    "citation_id": "ref_83"
+    "citation_id": "ref_87"
   },
   "doi:10.1145/2771283": {
     "source": "doi",
@@ -8758,9 +9044,9 @@
       "subject": [
         "Computer Science(all)"
       ],
-      "id": "ref_84"
+      "id": "ref_88"
     },
-    "citation_id": "ref_84"
+    "citation_id": "ref_88"
   },
   "url:https://github.com/maxpumperla/elephas": {
     "source": "url",
@@ -8769,9 +9055,9 @@
     "citeproc": {
       "URL": "https://github.com/maxpumperla/elephas",
       "type": "webpage",
-      "id": "ref_85"
+      "id": "ref_89"
     },
-    "citation_id": "ref_85"
+    "citation_id": "ref_89"
   },
   "doi:10.1186/s13059-016-0917-0": {
     "source": "doi",
@@ -8926,16 +9212,16 @@
       "URL": "http://dx.doi.org/10.1186/s13059-016-0917-0",
       "citing-count": 55,
       "article-number": "53",
-      "id": "ref_86"
+      "id": "ref_90"
     },
-    "citation_id": "ref_86"
+    "citation_id": "ref_90"
   },
   "arxiv:1610.02415": {
     "source": "arxiv",
     "identifer": "1610.02415",
     "standard_citation": "arxiv:1610.02415",
-    "bibtex": "@article{ref_87,\n abstract = {We report a method to convert discrete representations of molecules to and\nfrom a multidimensional continuous representation. This generative model allows\nefficient search and optimization through open-ended spaces of chemical\ncompounds. We train deep neural networks on hundreds of thousands of existing\nchemical structures to construct two coupled functions: an encoder and a\ndecoder. The encoder converts the discrete representation of a molecule into a\nreal-valued continuous vector, and the decoder converts these continuous\nvectors back to the discrete representation from this latent space. Continuous\nrepresentations allow us to automatically generate novel chemical structures by\nperforming simple operations in the latent space, such as decoding random\nvectors, perturbing known chemical structures, or interpolating between\nmolecules. Continuous representations also allow the use of powerful\ngradient-based optimization to efficiently guide the search for optimized\nfunctional compounds. We demonstrate our method in the design of drug-like\nmolecules as well as organic light-emitting diodes.},\n archiveprefix = {arXiv},\n author = {Rafael Gómez-Bombarelli and David Duvenaud and José Miguel Hernández-Lobato and Jorge Aguilera-Iparraguirre and Timothy D. Hirzel and Ryan P. Adams and Alán Aspuru-Guzik},\n eprint = {1610.02415v2},\n file = {1610.02415v2.pdf},\n link = {http://arxiv.org/abs/1610.02415v2},\n month = {Nov},\n primaryclass = {cs.LG},\n title = {Automatic chemical design using a data-driven continuous representation\nof molecules},\n year = {2016}\n}\n\n",
-    "citation_id": "ref_87"
+    "bibtex": "@article{ref_91,\n abstract = {We report a method to convert discrete representations of molecules to and\nfrom a multidimensional continuous representation. This generative model allows\nefficient search and optimization through open-ended spaces of chemical\ncompounds. We train deep neural networks on hundreds of thousands of existing\nchemical structures to construct two coupled functions: an encoder and a\ndecoder. The encoder converts the discrete representation of a molecule into a\nreal-valued continuous vector, and the decoder converts these continuous\nvectors back to the discrete representation from this latent space. Continuous\nrepresentations allow us to automatically generate novel chemical structures by\nperforming simple operations in the latent space, such as decoding random\nvectors, perturbing known chemical structures, or interpolating between\nmolecules. Continuous representations also allow the use of powerful\ngradient-based optimization to efficiently guide the search for optimized\nfunctional compounds. We demonstrate our method in the design of drug-like\nmolecules as well as organic light-emitting diodes.},\n archiveprefix = {arXiv},\n author = {Rafael Gómez-Bombarelli and David Duvenaud and José Miguel Hernández-Lobato and Jorge Aguilera-Iparraguirre and Timothy D. Hirzel and Ryan P. Adams and Alán Aspuru-Guzik},\n eprint = {1610.02415v2},\n file = {1610.02415v2.pdf},\n link = {http://arxiv.org/abs/1610.02415v2},\n month = {Nov},\n primaryclass = {cs.LG},\n title = {Automatic chemical design using a data-driven continuous representation\nof molecules},\n year = {2016}\n}\n\n",
+    "citation_id": "ref_91"
   },
   "doi:10.14778/2212351.2212354": {
     "source": "doi",
@@ -9053,37 +9339,44 @@
       },
       "URL": "http://dx.doi.org/10.14778/2212351.2212354",
       "citing-count": 0,
-      "id": "ref_88"
+      "id": "ref_92"
     },
-    "citation_id": "ref_88"
+    "citation_id": "ref_92"
   },
   "arxiv:1502.02551": {
     "source": "arxiv",
     "identifer": "1502.02551",
     "standard_citation": "arxiv:1502.02551",
-    "bibtex": "@article{ref_89,\n abstract = {Training of large-scale deep neural networks is often constrained by the\navailable computational resources. We study the effect of limited precision\ndata representation and computation on neural network training. Within the\ncontext of low-precision fixed-point computations, we observe the rounding\nscheme to play a crucial role in determining the network's behavior during\ntraining. Our results show that deep networks can be trained using only 16-bit\nwide fixed-point number representation when using stochastic rounding, and\nincur little to no degradation in the classification accuracy. We also\ndemonstrate an energy-efficient hardware accelerator that implements\nlow-precision fixed-point arithmetic with stochastic rounding.},\n archiveprefix = {arXiv},\n author = {Suyog Gupta and Ankur Agrawal and Kailash Gopalakrishnan and Pritish Narayanan},\n eprint = {1502.02551v1},\n file = {1502.02551v1.pdf},\n link = {http://arxiv.org/abs/1502.02551v1},\n month = {Feb},\n primaryclass = {cs.LG},\n title = {Deep Learning with Limited Numerical Precision},\n year = {2015}\n}\n\n",
-    "citation_id": "ref_89"
+    "bibtex": "@article{ref_93,\n abstract = {Training of large-scale deep neural networks is often constrained by the\navailable computational resources. We study the effect of limited precision\ndata representation and computation on neural network training. Within the\ncontext of low-precision fixed-point computations, we observe the rounding\nscheme to play a crucial role in determining the network's behavior during\ntraining. Our results show that deep networks can be trained using only 16-bit\nwide fixed-point number representation when using stochastic rounding, and\nincur little to no degradation in the classification accuracy. We also\ndemonstrate an energy-efficient hardware accelerator that implements\nlow-precision fixed-point arithmetic with stochastic rounding.},\n archiveprefix = {arXiv},\n author = {Suyog Gupta and Ankur Agrawal and Kailash Gopalakrishnan and Pritish Narayanan},\n eprint = {1502.02551v1},\n file = {1502.02551v1.pdf},\n link = {http://arxiv.org/abs/1502.02551v1},\n month = {Feb},\n primaryclass = {cs.LG},\n title = {Deep Learning with Limited Numerical Precision},\n year = {2015}\n}\n\n",
+    "citation_id": "ref_93"
   },
   "arxiv:1504.04343": {
     "source": "arxiv",
     "identifer": "1504.04343",
     "standard_citation": "arxiv:1504.04343",
-    "bibtex": "@article{ref_90,\n abstract = {We present Caffe con Troll (CcT), a fully compatible end-to-end version of\nthe popular framework Caffe with rebuilt internals. We built CcT to examine the\nperformance characteristics of training and deploying general-purpose\nconvolutional neural networks across different hardware architectures. We find\nthat, by employing standard batching optimizations for CPU training, we achieve\na 4.5x throughput improvement over Caffe on popular networks like CaffeNet.\nMoreover, with these improvements, the end-to-end training time for CNNs is\ndirectly proportional to the FLOPS delivered by the CPU, which enables us to\nefficiently train hybrid CPU-GPU systems for CNNs.},\n archiveprefix = {arXiv},\n author = {Stefan Hadjis and Firas Abuzaid and Ce Zhang and Christopher Ré},\n eprint = {1504.04343v2},\n file = {1504.04343v2.pdf},\n link = {http://arxiv.org/abs/1504.04343v2},\n month = {Apr},\n primaryclass = {cs.LG},\n title = {Caffe con Troll: Shallow Ideas to Speed Up Deep Learning},\n year = {2015}\n}\n\n",
-    "citation_id": "ref_90"
+    "bibtex": "@article{ref_94,\n abstract = {We present Caffe con Troll (CcT), a fully compatible end-to-end version of\nthe popular framework Caffe with rebuilt internals. We built CcT to examine the\nperformance characteristics of training and deploying general-purpose\nconvolutional neural networks across different hardware architectures. We find\nthat, by employing standard batching optimizations for CPU training, we achieve\na 4.5x throughput improvement over Caffe on popular networks like CaffeNet.\nMoreover, with these improvements, the end-to-end training time for CNNs is\ndirectly proportional to the FLOPS delivered by the CPU, which enables us to\nefficiently train hybrid CPU-GPU systems for CNNs.},\n archiveprefix = {arXiv},\n author = {Stefan Hadjis and Firas Abuzaid and Ce Zhang and Christopher Ré},\n eprint = {1504.04343v2},\n file = {1504.04343v2.pdf},\n link = {http://arxiv.org/abs/1504.04343v2},\n month = {Apr},\n primaryclass = {cs.LG},\n title = {Caffe con Troll: Shallow Ideas to Speed Up Deep Learning},\n year = {2015}\n}\n\n",
+    "citation_id": "ref_94"
   },
   "arxiv:1503.02531": {
     "source": "arxiv",
     "identifer": "1503.02531",
     "standard_citation": "arxiv:1503.02531",
-    "bibtex": "@article{ref_91,\n abstract = {A very simple way to improve the performance of almost any machine learning\nalgorithm is to train many different models on the same data and then to\naverage their predictions. Unfortunately, making predictions using a whole\nensemble of models is cumbersome and may be too computationally expensive to\nallow deployment to a large number of users, especially if the individual\nmodels are large neural nets. Caruana and his collaborators have shown that it\nis possible to compress the knowledge in an ensemble into a single model which\nis much easier to deploy and we develop this approach further using a different\ncompression technique. We achieve some surprising results on MNIST and we show\nthat we can significantly improve the acoustic model of a heavily used\ncommercial system by distilling the knowledge in an ensemble of models into a\nsingle model. We also introduce a new type of ensemble composed of one or more\nfull models and many specialist models which learn to distinguish fine-grained\nclasses that the full models confuse. Unlike a mixture of experts, these\nspecialist models can be trained rapidly and in parallel.},\n archiveprefix = {arXiv},\n author = {Geoffrey Hinton and Oriol Vinyals and Jeff Dean},\n eprint = {1503.02531v1},\n file = {1503.02531v1.pdf},\n link = {http://arxiv.org/abs/1503.02531v1},\n month = {Mar},\n primaryclass = {stat.ML},\n title = {Distilling the Knowledge in a Neural Network},\n year = {2015}\n}\n\n",
-    "citation_id": "ref_91"
+    "bibtex": "@article{ref_95,\n abstract = {A very simple way to improve the performance of almost any machine learning\nalgorithm is to train many different models on the same data and then to\naverage their predictions. Unfortunately, making predictions using a whole\nensemble of models is cumbersome and may be too computationally expensive to\nallow deployment to a large number of users, especially if the individual\nmodels are large neural nets. Caruana and his collaborators have shown that it\nis possible to compress the knowledge in an ensemble into a single model which\nis much easier to deploy and we develop this approach further using a different\ncompression technique. We achieve some surprising results on MNIST and we show\nthat we can significantly improve the acoustic model of a heavily used\ncommercial system by distilling the knowledge in an ensemble of models into a\nsingle model. We also introduce a new type of ensemble composed of one or more\nfull models and many specialist models which learn to distinguish fine-grained\nclasses that the full models confuse. Unlike a mixture of experts, these\nspecialist models can be trained rapidly and in parallel.},\n archiveprefix = {arXiv},\n author = {Geoffrey Hinton and Oriol Vinyals and Jeff Dean},\n eprint = {1503.02531v1},\n file = {1503.02531v1.pdf},\n link = {http://arxiv.org/abs/1503.02531v1},\n month = {Mar},\n primaryclass = {stat.ML},\n title = {Distilling the Knowledge in a Neural Network},\n year = {2015}\n}\n\n",
+    "citation_id": "ref_95"
   },
   "arxiv:1609.07061": {
     "source": "arxiv",
     "identifer": "1609.07061",
     "standard_citation": "arxiv:1609.07061",
-    "bibtex": "@article{ref_92,\n abstract = {We introduce a method to train Quantized Neural Networks (QNNs) --- neural\nnetworks with extremely low precision (e.g., 1-bit) weights and activations, at\nrun-time. At train-time the quantized weights and activations are used for\ncomputing the parameter gradients. During the forward pass, QNNs drastically\nreduce memory size and accesses, and replace most arithmetic operations with\nbit-wise operations. As a result, power consumption is expected to be\ndrastically reduced. We trained QNNs over the MNIST, CIFAR-10, SVHN and\nImageNet datasets. The resulting QNNs achieve prediction accuracy comparable to\ntheir 32-bit counterparts. For example, our quantized version of AlexNet with\n1-bit weights and 2-bit activations achieves $51\\%$ top-1 accuracy. Moreover, we quantize the parameter gradients to 6-bits as well which enables gradients\ncomputation using only bit-wise operation. Quantized recurrent neural networks\nwere tested over the Penn Treebank dataset, and achieved comparable accuracy as\ntheir 32-bit counterparts using only 4-bits. Last but not least, we programmed\na binary matrix multiplication GPU kernel with which it is possible to run our\nMNIST QNN 7 times faster than with an unoptimized GPU kernel, without suffering\nany loss in classification accuracy. The QNN code is available online.},\n archiveprefix = {arXiv},\n author = {Itay Hubara and Matthieu Courbariaux and Daniel Soudry and Ran El-Yaniv and Yoshua Bengio},\n eprint = {1609.07061v1},\n file = {1609.07061v1.pdf},\n link = {http://arxiv.org/abs/1609.07061v1},\n month = {Sep},\n primaryclass = {cs.NE},\n title = {Quantized Neural Networks: Training Neural Networks with Low Precision\nWeights and Activations},\n year = {2016}\n}\n\n",
-    "citation_id": "ref_92"
+    "bibtex": "@article{ref_96,\n abstract = {We introduce a method to train Quantized Neural Networks (QNNs) --- neural\nnetworks with extremely low precision (e.g., 1-bit) weights and activations, at\nrun-time. At train-time the quantized weights and activations are used for\ncomputing the parameter gradients. During the forward pass, QNNs drastically\nreduce memory size and accesses, and replace most arithmetic operations with\nbit-wise operations. As a result, power consumption is expected to be\ndrastically reduced. We trained QNNs over the MNIST, CIFAR-10, SVHN and\nImageNet datasets. The resulting QNNs achieve prediction accuracy comparable to\ntheir 32-bit counterparts. For example, our quantized version of AlexNet with\n1-bit weights and 2-bit activations achieves $51\\%$ top-1 accuracy. Moreover, we quantize the parameter gradients to 6-bits as well which enables gradients\ncomputation using only bit-wise operation. Quantized recurrent neural networks\nwere tested over the Penn Treebank dataset, and achieved comparable accuracy as\ntheir 32-bit counterparts using only 4-bits. Last but not least, we programmed\na binary matrix multiplication GPU kernel with which it is possible to run our\nMNIST QNN 7 times faster than with an unoptimized GPU kernel, without suffering\nany loss in classification accuracy. The QNN code is available online.},\n archiveprefix = {arXiv},\n author = {Itay Hubara and Matthieu Courbariaux and Daniel Soudry and Ran El-Yaniv and Yoshua Bengio},\n eprint = {1609.07061v1},\n file = {1609.07061v1.pdf},\n link = {http://arxiv.org/abs/1609.07061v1},\n month = {Sep},\n primaryclass = {cs.NE},\n title = {Quantized Neural Networks: Training Neural Networks with Low Precision\nWeights and Activations},\n year = {2016}\n}\n\n",
+    "citation_id": "ref_96"
+  },
+  "arxiv:1606.08793": {
+    "source": "arxiv",
+    "identifer": "1606.08793",
+    "standard_citation": "arxiv:1606.08793",
+    "bibtex": "@article{ref_97,\n abstract = {Deep learning methods such as multitask neural networks have recently been\napplied to ligand-based virtual screening and other drug discovery\napplications. Using a set of industrial ADMET datasets, we compare neural\nnetworks to standard baseline models and analyze multitask learning effects\nwith both random cross-validation and a more relevant temporal validation\nscheme. We confirm that multitask learning can provide modest benefits over\nsingle-task models and show that smaller datasets tend to benefit more than\nlarger datasets from multitask learning. Additionally, we find that adding\nmassive amounts of side information is not guaranteed to improve performance\nrelative to simpler multitask learning. Our results emphasize that multitask\neffects are highly dataset-dependent, suggesting the use of dataset-specific\nmodels to maximize overall performance.},\n archiveprefix = {arXiv},\n author = {Steven Kearnes and Brian Goldman and Vijay Pande},\n eprint = {1606.08793v3},\n file = {1606.08793v3.pdf},\n link = {http://arxiv.org/abs/1606.08793v3},\n month = {Jun},\n primaryclass = {stat.ML},\n title = {Modeling Industrial ADMET Data with Multitask Networks},\n year = {2016}\n}\n\n",
+    "citation_id": "ref_97"
   },
   "url:https://github.com/fchollet/keras": {
     "source": "url",
@@ -9092,9 +9385,9 @@
     "citeproc": {
       "URL": "https://github.com/fchollet/keras",
       "type": "webpage",
-      "id": "ref_93"
+      "id": "ref_98"
     },
-    "citation_id": "ref_93"
+    "citation_id": "ref_98"
   },
   "url:https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf": {
     "source": "url",
@@ -9103,23 +9396,23 @@
     "citeproc": {
       "URL": "https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf",
       "type": "webpage",
-      "id": "ref_94"
+      "id": "ref_99"
     },
-    "citation_id": "ref_94"
+    "citation_id": "ref_99"
   },
   "arxiv:1404.5997": {
     "source": "arxiv",
     "identifer": "1404.5997",
     "standard_citation": "arxiv:1404.5997",
-    "bibtex": "@article{ref_95,\n abstract = {I present a new way to parallelize the training of convolutional neural\nnetworks across multiple GPUs. The method scales significantly better than all\nalternatives when applied to modern convolutional neural networks.},\n archiveprefix = {arXiv},\n author = {Alex Krizhevsky},\n eprint = {1404.5997v2},\n file = {1404.5997v2.pdf},\n link = {http://arxiv.org/abs/1404.5997v2},\n month = {Apr},\n primaryclass = {cs.NE},\n title = {One weird trick for parallelizing convolutional neural networks},\n year = {2014}\n}\n\n",
-    "citation_id": "ref_95"
+    "bibtex": "@article{ref_100,\n abstract = {I present a new way to parallelize the training of convolutional neural\nnetworks across multiple GPUs. The method scales significantly better than all\nalternatives when applied to modern convolutional neural networks.},\n archiveprefix = {arXiv},\n author = {Alex Krizhevsky},\n eprint = {1404.5997v2},\n file = {1404.5997v2.pdf},\n link = {http://arxiv.org/abs/1404.5997v2},\n month = {Apr},\n primaryclass = {cs.NE},\n title = {One weird trick for parallelizing convolutional neural networks},\n year = {2014}\n}\n\n",
+    "citation_id": "ref_100"
   },
   "arxiv:1602.04283": {
     "source": "arxiv",
     "identifer": "1602.04283",
     "standard_citation": "arxiv:1602.04283",
-    "bibtex": "@article{ref_96,\n abstract = {The rapid growth of data size and accessibility in recent years has\ninstigated a shift of philosophy in algorithm design for artificial\nintelligence. Instead of engineering algorithms by hand, the ability to learn\ncomposable systems automatically from massive amounts of data has led to\nground-breaking performance in important domains such as computer vision, speech recognition, and natural language processing. The most popular class of\ntechniques used in these domains is called deep learning, and is seeing\nsignificant attention from industry. However, these models require incredible\namounts of data and compute power to train, and are limited by the need for\nbetter hardware acceleration to accommodate scaling beyond current data and\nmodel sizes. While the current solution has been to use clusters of graphics\nprocessing units (GPU) as general purpose processors (GPGPU), the use of field\nprogrammable gate arrays (FPGA) provide an interesting alternative. Current\ntrends in design tools for FPGAs have made them more compatible with the\nhigh-level software practices typically practiced in the deep learning\ncommunity, making FPGAs more accessible to those who build and deploy models.\nSince FPGA architectures are flexible, this could also allow researchers the\nability to explore model-level optimizations beyond what is possible on fixed\narchitectures such as GPUs. As well, FPGAs tend to provide high performance per\nwatt of power consumption, which is of particular importance for application\nscientists interested in large scale server-based deployment or\nresource-limited embedded applications. This review takes a look at deep\nlearning and FPGAs from a hardware acceleration perspective, identifying trends\nand innovations that make these technologies a natural fit, and motivates a\ndiscussion on how FPGAs may best serve the needs of the deep learning community\nmoving forward.},\n archiveprefix = {arXiv},\n author = {Griffin Lacey and Graham W. Taylor and Shawki Areibi},\n eprint = {1602.04283v1},\n file = {1602.04283v1.pdf},\n link = {http://arxiv.org/abs/1602.04283v1},\n month = {Feb},\n primaryclass = {cs.DC},\n title = {Deep Learning on FPGAs: Past, Present, and Future},\n year = {2016}\n}\n\n",
-    "citation_id": "ref_96"
+    "bibtex": "@article{ref_101,\n abstract = {The rapid growth of data size and accessibility in recent years has\ninstigated a shift of philosophy in algorithm design for artificial\nintelligence. Instead of engineering algorithms by hand, the ability to learn\ncomposable systems automatically from massive amounts of data has led to\nground-breaking performance in important domains such as computer vision, speech recognition, and natural language processing. The most popular class of\ntechniques used in these domains is called deep learning, and is seeing\nsignificant attention from industry. However, these models require incredible\namounts of data and compute power to train, and are limited by the need for\nbetter hardware acceleration to accommodate scaling beyond current data and\nmodel sizes. While the current solution has been to use clusters of graphics\nprocessing units (GPU) as general purpose processors (GPGPU), the use of field\nprogrammable gate arrays (FPGA) provide an interesting alternative. Current\ntrends in design tools for FPGAs have made them more compatible with the\nhigh-level software practices typically practiced in the deep learning\ncommunity, making FPGAs more accessible to those who build and deploy models.\nSince FPGA architectures are flexible, this could also allow researchers the\nability to explore model-level optimizations beyond what is possible on fixed\narchitectures such as GPUs. As well, FPGAs tend to provide high performance per\nwatt of power consumption, which is of particular importance for application\nscientists interested in large scale server-based deployment or\nresource-limited embedded applications. This review takes a look at deep\nlearning and FPGAs from a hardware acceleration perspective, identifying trends\nand innovations that make these technologies a natural fit, and motivates a\ndiscussion on how FPGAs may best serve the needs of the deep learning community\nmoving forward.},\n archiveprefix = {arXiv},\n author = {Griffin Lacey and Graham W. Taylor and Shawki Areibi},\n eprint = {1602.04283v1},\n file = {1602.04283v1.pdf},\n link = {http://arxiv.org/abs/1602.04283v1},\n month = {Feb},\n primaryclass = {cs.DC},\n title = {Deep Learning on FPGAs: Past, Present, and Future},\n year = {2016}\n}\n\n",
+    "citation_id": "ref_101"
   },
   "doi:10.1145/2623330.2623612": {
     "source": "doi",
@@ -9216,9 +9509,9 @@
       },
       "URL": "http://dx.doi.org/10.1145/2623330.2623612",
       "citing-count": 0,
-      "id": "ref_97"
+      "id": "ref_102"
     },
-    "citation_id": "ref_97"
+    "citation_id": "ref_102"
   },
   "doi:10.1145/1327452.1327492": {
     "source": "doi",
@@ -9319,23 +9612,23 @@
       "subject": [
         "Computer Science(all)"
       ],
-      "id": "ref_98"
+      "id": "ref_103"
     },
-    "citation_id": "ref_98"
+    "citation_id": "ref_103"
   },
   "arxiv:1505.06807": {
     "source": "arxiv",
     "identifer": "1505.06807",
     "standard_citation": "arxiv:1505.06807",
-    "bibtex": "@article{ref_99,\n abstract = {Apache Spark is a popular open-source platform for large-scale data\nprocessing that is well-suited for iterative machine learning tasks. In this\npaper we present MLlib, Spark's open-source distributed machine learning\nlibrary. MLlib provides efficient functionality for a wide range of learning\nsettings and includes several underlying statistical, optimization, and linear\nalgebra primitives. Shipped with Spark, MLlib supports several languages and\nprovides a high-level API that leverages Spark's rich ecosystem to simplify the\ndevelopment of end-to-end machine learning pipelines. MLlib has experienced a\nrapid growth due to its vibrant open-source community of over 140 contributors, and includes extensive documentation to support further growth and to let users\nquickly get up to speed.},\n archiveprefix = {arXiv},\n author = {Xiangrui Meng and Joseph Bradley and Burak Yavuz and Evan Sparks and Shivaram Venkataraman and Davies Liu and Jeremy Freeman and DB Tsai and Manish Amde and Sean Owen and Doris Xin and Reynold Xin and Michael J. Franklin and Reza Zadeh and Matei Zaharia and Ameet Talwalkar},\n eprint = {1505.06807v1},\n file = {1505.06807v1.pdf},\n link = {http://arxiv.org/abs/1505.06807v1},\n month = {May},\n primaryclass = {cs.LG},\n title = {MLlib: Machine Learning in Apache Spark},\n year = {2015}\n}\n\n",
-    "citation_id": "ref_99"
+    "bibtex": "@article{ref_104,\n abstract = {Apache Spark is a popular open-source platform for large-scale data\nprocessing that is well-suited for iterative machine learning tasks. In this\npaper we present MLlib, Spark's open-source distributed machine learning\nlibrary. MLlib provides efficient functionality for a wide range of learning\nsettings and includes several underlying statistical, optimization, and linear\nalgebra primitives. Shipped with Spark, MLlib supports several languages and\nprovides a high-level API that leverages Spark's rich ecosystem to simplify the\ndevelopment of end-to-end machine learning pipelines. MLlib has experienced a\nrapid growth due to its vibrant open-source community of over 140 contributors, and includes extensive documentation to support further growth and to let users\nquickly get up to speed.},\n archiveprefix = {arXiv},\n author = {Xiangrui Meng and Joseph Bradley and Burak Yavuz and Evan Sparks and Shivaram Venkataraman and Davies Liu and Jeremy Freeman and DB Tsai and Manish Amde and Sean Owen and Doris Xin and Reynold Xin and Michael J. Franklin and Reza Zadeh and Matei Zaharia and Ameet Talwalkar},\n eprint = {1505.06807v1},\n file = {1505.06807v1.pdf},\n link = {http://arxiv.org/abs/1505.06807v1},\n month = {May},\n primaryclass = {cs.LG},\n title = {MLlib: Machine Learning in Apache Spark},\n year = {2015}\n}\n\n",
+    "citation_id": "ref_104"
   },
   "arxiv:1511.06051": {
     "source": "arxiv",
     "identifer": "1511.06051",
     "standard_citation": "arxiv:1511.06051",
-    "bibtex": "@article{ref_100,\n abstract = {Training deep networks is a time-consuming process, with networks for object\nrecognition often requiring multiple days to train. For this reason, leveraging\nthe resources of a cluster to speed up training is an important area of work.\nHowever, widely-popular batch-processing computational frameworks like\nMapReduce and Spark were not designed to support the asynchronous and\ncommunication-intensive workloads of existing distributed deep learning\nsystems. We introduce SparkNet, a framework for training deep networks in\nSpark. Our implementation includes a convenient interface for reading data from\nSpark RDDs, a Scala interface to the Caffe deep learning framework, and a\nlightweight multi-dimensional tensor library. Using a simple parallelization\nscheme for stochastic gradient descent, SparkNet scales well with the cluster\nsize and tolerates very high-latency communication. Furthermore, it is easy to\ndeploy and use with no parameter tuning, and it is compatible with existing\nCaffe models. We quantify the dependence of the speedup obtained by SparkNet on\nthe number of machines, the communication frequency, and the cluster's\ncommunication overhead, and we benchmark our system's performance on the\nImageNet dataset.},\n archiveprefix = {arXiv},\n author = {Philipp Moritz and Robert Nishihara and Ion Stoica and Michael I. Jordan},\n eprint = {1511.06051v4},\n file = {1511.06051v4.pdf},\n link = {http://arxiv.org/abs/1511.06051v4},\n month = {Dec},\n primaryclass = {stat.ML},\n title = {SparkNet: Training Deep Networks in Spark},\n year = {2015}\n}\n\n",
-    "citation_id": "ref_100"
+    "bibtex": "@article{ref_105,\n abstract = {Training deep networks is a time-consuming process, with networks for object\nrecognition often requiring multiple days to train. For this reason, leveraging\nthe resources of a cluster to speed up training is an important area of work.\nHowever, widely-popular batch-processing computational frameworks like\nMapReduce and Spark were not designed to support the asynchronous and\ncommunication-intensive workloads of existing distributed deep learning\nsystems. We introduce SparkNet, a framework for training deep networks in\nSpark. Our implementation includes a convenient interface for reading data from\nSpark RDDs, a Scala interface to the Caffe deep learning framework, and a\nlightweight multi-dimensional tensor library. Using a simple parallelization\nscheme for stochastic gradient descent, SparkNet scales well with the cluster\nsize and tolerates very high-latency communication. Furthermore, it is easy to\ndeploy and use with no parameter tuning, and it is compatible with existing\nCaffe models. We quantify the dependence of the speedup obtained by SparkNet on\nthe number of machines, the communication frequency, and the cluster's\ncommunication overhead, and we benchmark our system's performance on the\nImageNet dataset.},\n archiveprefix = {arXiv},\n author = {Philipp Moritz and Robert Nishihara and Ion Stoica and Michael I. Jordan},\n eprint = {1511.06051v4},\n file = {1511.06051v4.pdf},\n link = {http://arxiv.org/abs/1511.06051v4},\n month = {Dec},\n primaryclass = {stat.ML},\n title = {SparkNet: Training Deep Networks in Spark},\n year = {2015}\n}\n\n",
+    "citation_id": "ref_105"
   },
   "doi:10.1145/1721654.1721672": {
     "source": "doi",
@@ -9479,9 +9772,9 @@
       "subject": [
         "Computer Science(all)"
       ],
-      "id": "ref_101"
+      "id": "ref_106"
     },
-    "citation_id": "ref_101"
+    "citation_id": "ref_106"
   },
   "doi:10.1145/1553374.1553486": {
     "source": "doi",
@@ -9573,16 +9866,16 @@
       },
       "URL": "http://dx.doi.org/10.1145/1553374.1553486",
       "citing-count": 0,
-      "id": "ref_102"
+      "id": "ref_107"
     },
-    "citation_id": "ref_102"
+    "citation_id": "ref_107"
   },
   "arxiv:1506.06438": {
     "source": "arxiv",
     "identifer": "1506.06438",
     "standard_citation": "arxiv:1506.06438",
-    "bibtex": "@article{ref_103,\n abstract = {Stochastic gradient descent (SGD) is a ubiquitous algorithm for a variety of\nmachine learning problems. Researchers and industry have developed several\ntechniques to optimize SGD's runtime performance, including asynchronous\nexecution and reduced precision. Our main result is a martingale-based analysis\nthat enables us to capture the rich noise models that may arise from such\ntechniques. Specifically, we use our new analysis in three ways: (1) we derive\nconvergence rates for the convex case (Hogwild!) with relaxed assumptions on\nthe sparsity of the problem; (2) we analyze asynchronous SGD algorithms for\nnon-convex matrix problems including matrix completion; and (3) we design and\nanalyze an asynchronous SGD algorithm, called Buckwild!, that uses\nlower-precision arithmetic. We show experimentally that our algorithms run\nefficiently for a variety of problems on modern hardware.},\n archiveprefix = {arXiv},\n author = {Christopher De Sa and Ce Zhang and Kunle Olukotun and Christopher Ré},\n eprint = {1506.06438v2},\n file = {1506.06438v2.pdf},\n link = {http://arxiv.org/abs/1506.06438v2},\n month = {Jun},\n primaryclass = {cs.LG},\n title = {Taming the Wild: A Unified Analysis of Hogwild!-Style Algorithms},\n year = {2015}\n}\n\n",
-    "citation_id": "ref_103"
+    "bibtex": "@article{ref_108,\n abstract = {Stochastic gradient descent (SGD) is a ubiquitous algorithm for a variety of\nmachine learning problems. Researchers and industry have developed several\ntechniques to optimize SGD's runtime performance, including asynchronous\nexecution and reduced precision. Our main result is a martingale-based analysis\nthat enables us to capture the rich noise models that may arise from such\ntechniques. Specifically, we use our new analysis in three ways: (1) we derive\nconvergence rates for the convex case (Hogwild!) with relaxed assumptions on\nthe sparsity of the problem; (2) we analyze asynchronous SGD algorithms for\nnon-convex matrix problems including matrix completion; and (3) we design and\nanalyze an asynchronous SGD algorithm, called Buckwild!, that uses\nlower-precision arithmetic. We show experimentally that our algorithms run\nefficiently for a variety of problems on modern hardware.},\n archiveprefix = {arXiv},\n author = {Christopher De Sa and Ce Zhang and Kunle Olukotun and Christopher Ré},\n eprint = {1506.06438v2},\n file = {1506.06438v2.pdf},\n link = {http://arxiv.org/abs/1506.06438v2},\n month = {Jun},\n primaryclass = {cs.LG},\n title = {Taming the Wild: A Unified Analysis of Hogwild!-Style Algorithms},\n year = {2015}\n}\n\n",
+    "citation_id": "ref_108"
   },
   "doi:10.1038/nbt0710-691": {
     "source": "doi",
@@ -9691,9 +9984,9 @@
         "Bioengineering",
         "Biomedical Engineering"
       ],
-      "id": "ref_104"
+      "id": "ref_109"
     },
-    "citation_id": "ref_104"
+    "citation_id": "ref_109"
   },
   "doi:10.1109/icassp.2014.6853593": {
     "source": "doi",
@@ -9797,16 +10090,16 @@
       },
       "URL": "http://dx.doi.org/10.1109/icassp.2014.6853593",
       "citing-count": 23,
-      "id": "ref_105"
+      "id": "ref_110"
     },
-    "citation_id": "ref_105"
+    "citation_id": "ref_110"
   },
   "arxiv:1610.04181": {
     "source": "arxiv",
     "identifer": "1610.04181",
     "standard_citation": "arxiv:1610.04181",
-    "bibtex": "@article{ref_106,\n abstract = {Sources of variability in experimentally derived data include measurement\nerror in addition to the physical phenomena of interest. This measurement error\nis a combination of systematic components, originating from the measuring\ninstrument, and random measurement errors. Several novel biological\ntechnologies, such as mass cytometry and single-cell RNA-seq, are plagued with\nsystematic errors that may severely affect statistical analysis if the data is\nnot properly calibrated. We propose a novel deep learning approach for removing\nsystematic batch effects. Our method is based on a residual network, trained to\nminimize the Maximum Mean Discrepancy (MMD) between the multivariate\ndistributions of two replicates, measured in different batches. We apply our\nmethod to mass cytometry and single-cell RNA-seq datasets, and demonstrate that\nit effectively attenuates batch effects.},\n archiveprefix = {arXiv},\n author = {Uri Shaham and Kelly P. Stanton and Jun Zhao and Huamin Li and Khadir Raddassi and Ruth Montgomery and Yuval Kluger},\n eprint = {1610.04181v5},\n file = {1610.04181v5.pdf},\n link = {http://arxiv.org/abs/1610.04181v5},\n month = {Nov},\n primaryclass = {stat.ML},\n title = {Removal of Batch Effects using Distribution-Matching Residual Networks},\n year = {2016}\n}\n\n",
-    "citation_id": "ref_106"
+    "bibtex": "@article{ref_111,\n abstract = {Sources of variability in experimentally derived data include measurement\nerror in addition to the physical phenomena of interest. This measurement error\nis a combination of systematic components, originating from the measuring\ninstrument, and random measurement errors. Several novel biological\ntechnologies, such as mass cytometry and single-cell RNA-seq, are plagued with\nsystematic errors that may severely affect statistical analysis if the data is\nnot properly calibrated. We propose a novel deep learning approach for removing\nsystematic batch effects. Our method is based on a residual network, trained to\nminimize the Maximum Mean Discrepancy (MMD) between the multivariate\ndistributions of two replicates, measured in different batches. We apply our\nmethod to mass cytometry and single-cell RNA-seq datasets, and demonstrate that\nit effectively attenuates batch effects.},\n archiveprefix = {arXiv},\n author = {Uri Shaham and Kelly P. Stanton and Jun Zhao and Huamin Li and Khadir Raddassi and Ruth Montgomery and Yuval Kluger},\n eprint = {1610.04181v5},\n file = {1610.04181v5.pdf},\n link = {http://arxiv.org/abs/1610.04181v5},\n month = {Nov},\n primaryclass = {stat.ML},\n title = {Removal of Batch Effects using Distribution-Matching Residual Networks},\n year = {2016}\n}\n\n",
+    "citation_id": "ref_111"
   },
   "doi:10.1186/gb-2010-11-5-207": {
     "source": "doi",
@@ -9897,23 +10190,150 @@
       ],
       "URL": "http://dx.doi.org/10.1186/gb-2010-11-5-207",
       "citing-count": 0,
-      "id": "ref_107"
+      "id": "ref_112"
     },
-    "citation_id": "ref_107"
+    "citation_id": "ref_112"
   },
   "arxiv:1507.01239": {
     "source": "arxiv",
     "identifer": "1507.01239",
     "standard_citation": "arxiv:1507.01239",
-    "bibtex": "@article{ref_108,\n abstract = {In this work we apply model averaging to parallel training of deep neural\nnetwork (DNN). Parallelization is done in a model averaging manner. Data is\npartitioned and distributed to different nodes for local model updates, and\nmodel averaging across nodes is done every few minibatches. We use multiple\nGPUs for data parallelization, and Message Passing Interface (MPI) for\ncommunication between nodes, which allows us to perform model averaging\nfrequently without losing much time on communication. We investigate the\neffectiveness of Natural Gradient Stochastic Gradient Descent (NG-SGD) and\nRestricted Boltzmann Machine (RBM) pretraining for parallel training in\nmodel-averaging framework, and explore the best setups in term of different\nlearning rate schedules, averaging frequencies and minibatch sizes. It is shown\nthat NG-SGD and RBM pretraining benefits parameter-averaging based model\ntraining. On the 300h Switchboard dataset, a 9.3 times speedup is achieved\nusing 16 GPUs and 17 times speedup using 32 GPUs with limited decoding accuracy\nloss.},\n archiveprefix = {arXiv},\n author = {Hang Su and Haoyu Chen},\n eprint = {1507.01239v2},\n file = {1507.01239v2.pdf},\n link = {http://arxiv.org/abs/1507.01239v2},\n month = {Jul},\n primaryclass = {cs.LG},\n title = {Experiments on Parallel Training of Deep Neural Network using Model\nAveraging},\n year = {2015}\n}\n\n",
-    "citation_id": "ref_108"
+    "bibtex": "@article{ref_113,\n abstract = {In this work we apply model averaging to parallel training of deep neural\nnetwork (DNN). Parallelization is done in a model averaging manner. Data is\npartitioned and distributed to different nodes for local model updates, and\nmodel averaging across nodes is done every few minibatches. We use multiple\nGPUs for data parallelization, and Message Passing Interface (MPI) for\ncommunication between nodes, which allows us to perform model averaging\nfrequently without losing much time on communication. We investigate the\neffectiveness of Natural Gradient Stochastic Gradient Descent (NG-SGD) and\nRestricted Boltzmann Machine (RBM) pretraining for parallel training in\nmodel-averaging framework, and explore the best setups in term of different\nlearning rate schedules, averaging frequencies and minibatch sizes. It is shown\nthat NG-SGD and RBM pretraining benefits parameter-averaging based model\ntraining. On the 300h Switchboard dataset, a 9.3 times speedup is achieved\nusing 16 GPUs and 17 times speedup using 32 GPUs with limited decoding accuracy\nloss.},\n archiveprefix = {arXiv},\n author = {Hang Su and Haoyu Chen},\n eprint = {1507.01239v2},\n file = {1507.01239v2.pdf},\n link = {http://arxiv.org/abs/1507.01239v2},\n month = {Jul},\n primaryclass = {cs.LG},\n title = {Experiments on Parallel Training of Deep Neural Network using Model\nAveraging},\n year = {2015}\n}\n\n",
+    "citation_id": "ref_113"
   },
   "arxiv:1606.00575": {
     "source": "arxiv",
     "identifer": "1606.00575",
     "standard_citation": "arxiv:1606.00575",
-    "bibtex": "@article{ref_109,\n abstract = {In recent year, parallel implementations have been used to speed up the\ntraining of deep neural networks (DNN). Typically, the parameters of the local\nmodels are periodically communicated and averaged to get a global model until\nthe training curve converges (denoted as MA-DNN). However, since DNN is a\nhighly non-convex model, the global model obtained by averaging parameters does\nnot have guarantee on its performance improvement over the local models and\nmight even be worse than the average performance of the local models, which\nleads to the slow-down of convergence and the decrease of the final\nperformance. To tackle this problem, we propose a new parallel training method\ncalled \\emph{Ensemble-Compression} (denoted as EC-DNN). Specifically, we\npropose to aggregate the local models by ensemble, i.e., the outputs of the\nlocal models are averaged instead of the parameters. Considering that the\nwidely used loss functions are convex to the output of the model, the\nperformance of the global model obtained in this way is guaranteed to be at\nleast as good as the average performance of local models. However, the size of\nthe global model will increase after each ensemble and may explode after\nmultiple rounds of ensembles. Thus, we conduct model compression after each\nensemble, to ensure the size of the global model to be the same as the local\nmodels. We conducted experiments on a benchmark dataset. The experimental\nresults demonstrate that our proposed EC-DNN can stably achieve better\nperformance than MA-DNN.},\n archiveprefix = {arXiv},\n author = {Shizhao Sun and Wei Chen and Tie-Yan Liu},\n eprint = {1606.00575v1},\n file = {1606.00575v1.pdf},\n link = {http://arxiv.org/abs/1606.00575v1},\n month = {Jun},\n primaryclass = {cs.DC},\n title = {Ensemble-Compression: A New Method for Parallel Training of Deep Neural\nNetworks},\n year = {2016}\n}\n\n",
-    "citation_id": "ref_109"
+    "bibtex": "@article{ref_114,\n abstract = {In recent year, parallel implementations have been used to speed up the\ntraining of deep neural networks (DNN). Typically, the parameters of the local\nmodels are periodically communicated and averaged to get a global model until\nthe training curve converges (denoted as MA-DNN). However, since DNN is a\nhighly non-convex model, the global model obtained by averaging parameters does\nnot have guarantee on its performance improvement over the local models and\nmight even be worse than the average performance of the local models, which\nleads to the slow-down of convergence and the decrease of the final\nperformance. To tackle this problem, we propose a new parallel training method\ncalled \\emph{Ensemble-Compression} (denoted as EC-DNN). Specifically, we\npropose to aggregate the local models by ensemble, i.e., the outputs of the\nlocal models are averaged instead of the parameters. Considering that the\nwidely used loss functions are convex to the output of the model, the\nperformance of the global model obtained in this way is guaranteed to be at\nleast as good as the average performance of local models. However, the size of\nthe global model will increase after each ensemble and may explode after\nmultiple rounds of ensembles. Thus, we conduct model compression after each\nensemble, to ensure the size of the global model to be the same as the local\nmodels. We conducted experiments on a benchmark dataset. The experimental\nresults demonstrate that our proposed EC-DNN can stably achieve better\nperformance than MA-DNN.},\n archiveprefix = {arXiv},\n author = {Shizhao Sun and Wei Chen and Tie-Yan Liu},\n eprint = {1606.00575v1},\n file = {1606.00575v1.pdf},\n link = {http://arxiv.org/abs/1606.00575v1},\n month = {Jun},\n primaryclass = {cs.DC},\n title = {Ensemble-Compression: A New Method for Parallel Training of Deep Neural\nNetworks},\n year = {2016}\n}\n\n",
+    "citation_id": "ref_114"
+  },
+  "doi:10.1021/ci8004379": {
+    "source": "doi",
+    "identifer": "10.1021/ci8004379",
+    "standard_citation": "doi:10.1021/ci8004379",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2016,
+            11,
+            27
+          ]
+        ],
+        "date-time": "2016-11-27T14:43:44Z",
+        "timestamp": 1480257824618
+      },
+      "reference-count": 0,
+      "publisher": "American Chemical Society (ACS)",
+      "issue": "4",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "J. Chem. Inf. Model."
+      ],
+      "cited-count": 0,
+      "published-print": {
+        "date-parts": [
+          [
+            2009,
+            4,
+            27
+          ]
+        ]
+      },
+      "DOI": "10.1021/ci8004379",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2009,
+            3,
+            26
+          ]
+        ],
+        "date-time": "2009-03-26T12:05:55Z",
+        "timestamp": 1238069155000
+      },
+      "page": "756-766",
+      "source": "CrossRef",
+      "title": "Influence Relevance Voting: An Accurate And Interpretable Virtual High Throughput Screening Method",
+      "prefix": "http://id.crossref.org/prefix/10.1021",
+      "volume": "49",
+      "author": [
+        {
+          "given": "S. Joshua",
+          "family": "Swamidass",
+          "affiliation": []
+        },
+        {
+          "given": "Chloé-Agathe",
+          "family": "Azencott",
+          "affiliation": []
+        },
+        {
+          "given": "Ting-Wan",
+          "family": "Lin",
+          "affiliation": []
+        },
+        {
+          "given": "Hugo",
+          "family": "Gramajo",
+          "affiliation": []
+        },
+        {
+          "given": "Shiou-Chuan",
+          "family": "Tsai",
+          "affiliation": []
+        },
+        {
+          "given": "Pierre",
+          "family": "Baldi",
+          "affiliation": []
+        }
+      ],
+      "member": "http://id.crossref.org/member/316",
+      "container-title": "Journal of Chemical Information and Modeling",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2016,
+            9,
+            2
+          ]
+        ],
+        "date-time": "2016-09-02T02:55:56Z",
+        "timestamp": 1472784956000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2009,
+            4,
+            27
+          ]
+        ]
+      },
+      "alternative-id": [
+        "10.1021/ci8004379"
+      ],
+      "URL": "http://dx.doi.org/10.1021/ci8004379",
+      "citing-count": 0,
+      "subject": [
+        "Chemistry(all)",
+        "Chemical Engineering(all)",
+        "Library and Information Sciences",
+        "Computer Science Applications"
+      ],
+      "id": "ref_115"
+    },
+    "citation_id": "ref_115"
   },
   "url:http://download.tensorflow.org/paper/whitepaper2015.pdf": {
     "source": "url",
@@ -9922,9 +10342,9 @@
     "citeproc": {
       "URL": "http://download.tensorflow.org/paper/whitepaper2015.pdf",
       "type": "webpage",
-      "id": "ref_110"
+      "id": "ref_116"
     },
-    "citation_id": "ref_110"
+    "citation_id": "ref_116"
   },
   "url:https://research.google.com/pubs/pub37631.html": {
     "source": "url",
@@ -9933,9 +10353,9 @@
     "citeproc": {
       "URL": "https://research.google.com/pubs/pub37631.html",
       "type": "webpage",
-      "id": "ref_111"
+      "id": "ref_117"
     },
-    "citation_id": "ref_111"
+    "citation_id": "ref_117"
   },
   "doi:10.1002/minf.201600045": {
     "source": "doi",
@@ -10186,9 +10606,9 @@
         "Drug Discovery",
         "Computer Science Applications"
       ],
-      "id": "ref_112"
+      "id": "ref_118"
     },
-    "citation_id": "ref_112"
+    "citation_id": "ref_118"
   },
   "url:http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf": {
     "source": "url",
@@ -10197,9 +10617,9 @@
     "citeproc": {
       "URL": "http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf",
       "type": "webpage",
-      "id": "ref_113"
+      "id": "ref_119"
     },
-    "citation_id": "ref_113"
+    "citation_id": "ref_119"
   },
   "url:http://research.google.com/archive/unsupervised_icml2012.html": {
     "source": "url",
@@ -10208,9 +10628,9 @@
     "citeproc": {
       "URL": "http://research.google.com/archive/unsupervised_icml2012.html",
       "type": "webpage",
-      "id": "ref_114"
+      "id": "ref_120"
     },
-    "citation_id": "ref_114"
+    "citation_id": "ref_120"
   },
   "url:https://aclweb.org/anthology/D/D13/D13-1079.pdf": {
     "source": "url",
@@ -10219,402 +10639,6 @@
     "citeproc": {
       "URL": "https://aclweb.org/anthology/D/D13/D13-1079.pdf",
       "type": "webpage",
-      "id": "ref_115"
-    },
-    "citation_id": "ref_115"
-  },
-  "arxiv:1212.0901v2": {
-    "source": "arxiv",
-    "identifer": "1212.0901v2",
-    "standard_citation": "arxiv:1212.0901v2",
-    "bibtex": "@article{ref_116,\n abstract = {After a more than decade-long period of relatively little research activity\nin the area of recurrent neural networks, several new developments will be\nreviewed here that have allowed substantial progress both in understanding and\nin technical solutions towards more efficient training of recurrent networks.\nThese advances have been motivated by and related to the optimization issues\nsurrounding deep learning. Although recurrent networks are extremely powerful\nin what they can in principle represent in terms of modelling sequences,their\ntraining is plagued by two aspects of the same issue regarding the learning of\nlong-term dependencies. Experiments reported here evaluate the use of clipping\ngradients, spanning longer time ranges with leaky integration, advanced\nmomentum techniques, using more powerful output probability models, and\nencouraging sparser gradients to help symmetry breaking and credit assignment.\nThe experiments are performed on text and music data and show off the combined\neffects of these techniques in generally improving both training and test\nerror.},\n archiveprefix = {arXiv},\n author = {Yoshua Bengio and Nicolas Boulanger-Lewandowski and Razvan Pascanu},\n eprint = {1212.0901v2},\n file = {1212.0901v2.pdf},\n link = {http://arxiv.org/abs/1212.0901v2},\n month = {12},\n primaryclass = {cs.LG},\n title = {Advances in Optimizing Recurrent Networks},\n year = {2012}\n}\n\n",
-    "citation_id": "ref_116"
-  },
-  "arxiv:1612.02751": {
-    "source": "arxiv",
-    "identifer": "1612.02751",
-    "standard_citation": "arxiv:1612.02751",
-    "bibtex": "@article{ref_117,\n abstract = {Computational approaches to drug discovery can reduce the time and cost\nassociated with experimental assays and enable the screening of novel\nchemotypes. Structure-based drug design methods rely on scoring functions to\nrank and predict binding affinities and poses. The ever-expanding amount of\nprotein-ligand binding and structural data enables the use of deep machine\nlearning techniques for protein-ligand scoring.\nWe describe convolutional neural network (CNN) scoring functions that take as\ninput a comprehensive 3D representation of a protein-ligand interaction. A CNN\nscoring function automatically learns the key features of protein-ligand\ninteractions that correlate with binding. We train and optimize our CNN scoring\nfunctions to discriminate between correct and incorrect binding poses and known\nbinders and non-binders. We find that our CNN scoring function outperforms the\nAutoDock Vina scoring function when ranking poses both for pose prediction and\nvirtual screening.},\n archiveprefix = {arXiv},\n author = {Matthew Ragoza and Joshua Hochuli and Elisa Idrobo and Jocelyn Sunseri and David Ryan Koes},\n eprint = {1612.02751v1},\n file = {1612.02751v1.pdf},\n link = {http://arxiv.org/abs/1612.02751v1},\n month = {12},\n primaryclass = {stat.ML},\n title = {Protein-Ligand Scoring with Convolutional Neural Networks},\n year = {2016}\n}\n\n",
-    "citation_id": "ref_117"
-  },
-  "arxiv:1611.03199": {
-    "source": "arxiv",
-    "identifer": "1611.03199",
-    "standard_citation": "arxiv:1611.03199",
-    "bibtex": "@article{ref_118,\n abstract = {Recent advances in machine learning have made significant contributions to\ndrug discovery. Deep neural networks in particular have been demonstrated to\nprovide significant boosts in predictive power when inferring the properties\nand activities of small-molecule compounds. However, the applicability of these\ntechniques has been limited by the requirement for large amounts of training\ndata. In this work, we demonstrate how one-shot learning can be used to\nsignificantly lower the amounts of data required to make meaningful predictions\nin drug discovery applications. We introduce a new architecture, the residual\nLSTM embedding, that, when combined with graph convolutional neural networks, significantly improves the ability to learn meaningful distance metrics over\nsmall-molecules. We open source all models introduced in this work as part of\nDeepChem, an open-source framework for deep-learning in drug discovery.},\n archiveprefix = {arXiv},\n author = {Han Altae-Tran and Bharath Ramsundar and Aneesh S. Pappu and Vijay Pande},\n eprint = {1611.03199v1},\n file = {1611.03199v1.pdf},\n link = {http://arxiv.org/abs/1611.03199v1},\n month = {Dec},\n primaryclass = {cs.LG},\n title = {Low Data Drug Discovery with One-shot Learning},\n year = {2016}\n}\n\n",
-    "citation_id": "ref_118"
-  },
-  "arxiv:1606.08793": {
-    "source": "arxiv",
-    "identifer": "1606.08793",
-    "standard_citation": "arxiv:1606.08793",
-    "bibtex": "@article{ref_119,\n abstract = {Deep learning methods such as multitask neural networks have recently been\napplied to ligand-based virtual screening and other drug discovery\napplications. Using a set of industrial ADMET datasets, we compare neural\nnetworks to standard baseline models and analyze multitask learning effects\nwith both random cross-validation and a more relevant temporal validation\nscheme. We confirm that multitask learning can provide modest benefits over\nsingle-task models and show that smaller datasets tend to benefit more than\nlarger datasets from multitask learning. Additionally, we find that adding\nmassive amounts of side information is not guaranteed to improve performance\nrelative to simpler multitask learning. Our results emphasize that multitask\neffects are highly dataset-dependent, suggesting the use of dataset-specific\nmodels to maximize overall performance.},\n archiveprefix = {arXiv},\n author = {Steven Kearnes and Brian Goldman and Vijay Pande},\n eprint = {1606.08793v3},\n file = {1606.08793v3.pdf},\n link = {http://arxiv.org/abs/1606.08793v3},\n month = {Jun},\n primaryclass = {stat.ML},\n title = {Modeling Industrial ADMET Data with Multitask Networks},\n year = {2016}\n}\n\n",
-    "citation_id": "ref_119"
-  },
-  "doi:10.1021/ci8004379": {
-    "source": "doi",
-    "identifer": "10.1021/ci8004379",
-    "standard_citation": "doi:10.1021/ci8004379",
-    "citeproc": {
-      "indexed": {
-        "date-parts": [
-          [
-            2016,
-            11,
-            27
-          ]
-        ],
-        "date-time": "2016-11-27T14:43:44Z",
-        "timestamp": 1480257824618
-      },
-      "reference-count": 0,
-      "publisher": "American Chemical Society (ACS)",
-      "issue": "4",
-      "content-domain": {
-        "domain": [],
-        "crossmark-restriction": false
-      },
-      "short-container-title": [
-        "J. Chem. Inf. Model."
-      ],
-      "cited-count": 0,
-      "published-print": {
-        "date-parts": [
-          [
-            2009,
-            4,
-            27
-          ]
-        ]
-      },
-      "DOI": "10.1021/ci8004379",
-      "type": "article-journal",
-      "created": {
-        "date-parts": [
-          [
-            2009,
-            3,
-            26
-          ]
-        ],
-        "date-time": "2009-03-26T12:05:55Z",
-        "timestamp": 1238069155000
-      },
-      "page": "756-766",
-      "source": "CrossRef",
-      "title": "Influence Relevance Voting: An Accurate And Interpretable Virtual High Throughput Screening Method",
-      "prefix": "http://id.crossref.org/prefix/10.1021",
-      "volume": "49",
-      "author": [
-        {
-          "given": "S. Joshua",
-          "family": "Swamidass",
-          "affiliation": []
-        },
-        {
-          "given": "Chloé-Agathe",
-          "family": "Azencott",
-          "affiliation": []
-        },
-        {
-          "given": "Ting-Wan",
-          "family": "Lin",
-          "affiliation": []
-        },
-        {
-          "given": "Hugo",
-          "family": "Gramajo",
-          "affiliation": []
-        },
-        {
-          "given": "Shiou-Chuan",
-          "family": "Tsai",
-          "affiliation": []
-        },
-        {
-          "given": "Pierre",
-          "family": "Baldi",
-          "affiliation": []
-        }
-      ],
-      "member": "http://id.crossref.org/member/316",
-      "container-title": "Journal of Chemical Information and Modeling",
-      "original-title": [],
-      "deposited": {
-        "date-parts": [
-          [
-            2016,
-            9,
-            2
-          ]
-        ],
-        "date-time": "2016-09-02T02:55:56Z",
-        "timestamp": 1472784956000
-      },
-      "score": 1.0,
-      "subtitle": [],
-      "short-title": [],
-      "issued": {
-        "date-parts": [
-          [
-            2009,
-            4,
-            27
-          ]
-        ]
-      },
-      "alternative-id": [
-        "10.1021/ci8004379"
-      ],
-      "URL": "http://dx.doi.org/10.1021/ci8004379",
-      "citing-count": 0,
-      "subject": [
-        "Chemistry(all)",
-        "Chemical Engineering(all)",
-        "Library and Information Sciences",
-        "Computer Science Applications"
-      ],
-      "id": "ref_120"
-    },
-    "citation_id": "ref_120"
-  },
-  "doi:10.1016/j.bjid.2015.08.013": {
-    "source": "doi",
-    "identifer": "10.1016/j.bjid.2015.08.013",
-    "standard_citation": "doi:10.1016/j.bjid.2015.08.013",
-    "citeproc": {
-      "indexed": {
-        "date-parts": [
-          [
-            2016,
-            10,
-            31
-          ]
-        ],
-        "date-time": "2016-10-31T20:03:19Z",
-        "timestamp": 1477944199765
-      },
-      "reference-count": 49,
-      "publisher": "Elsevier BV",
-      "issue": "6",
-      "license": [
-        {
-          "URL": "http://www.elsevier.com/tdm/userlicense/1.0/",
-          "start": {
-            "date-parts": [
-              [
-                2015,
-                11,
-                1
-              ]
-            ],
-            "date-time": "2015-11-01T00:00:00Z",
-            "timestamp": 1446336000000
-          },
-          "delay-in-days": 0,
-          "content-version": "tdm"
-        },
-        {
-          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0/",
-          "start": {
-            "date-parts": [
-              [
-                2015,
-                10,
-                9
-              ]
-            ],
-            "date-time": "2015-10-09T00:00:00Z",
-            "timestamp": 1444348800000
-          },
-          "delay-in-days": 0,
-          "content-version": "vor"
-        }
-      ],
-      "funder": [
-        {
-          "DOI": "10.13039/501100006435",
-          "name": "Central European Institute of Technology",
-          "doi-asserted-by": "publisher",
-          "award": [
-            "CZ.1.05/1.1.00/02.0068"
-          ]
-        }
-      ],
-      "content-domain": {
-        "domain": [
-          "elsevier.com",
-          "sciencedirect.com"
-        ],
-        "crossmark-restriction": false
-      },
-      "short-container-title": [
-        "The Brazilian Journal of Infectious Diseases"
-      ],
-      "cited-count": 0,
-      "published-print": {
-        "date-parts": [
-          [
-            2015,
-            11
-          ]
-        ]
-      },
-      "DOI": "10.1016/j.bjid.2015.08.013",
-      "type": "article-journal",
-      "created": {
-        "date-parts": [
-          [
-            2015,
-            10,
-            27
-          ]
-        ],
-        "date-time": "2015-10-27T16:07:37Z",
-        "timestamp": 1445962057000
-      },
-      "page": "604-613",
-      "update-policy": "http://dx.doi.org/10.1016/elsevier_cm_policy",
-      "source": "CrossRef",
-      "title": "Influence of microbiome species in hard-to-heal wounds on disease severity and treatment duration",
-      "prefix": "http://id.crossref.org/prefix/10.1016",
-      "volume": "19",
-      "author": [
-        {
-          "given": "Dagmar",
-          "family": "Chudobova",
-          "affiliation": []
-        },
-        {
-          "given": "Kristyna",
-          "family": "Cihalova",
-          "affiliation": []
-        },
-        {
-          "given": "Roman",
-          "family": "Guran",
-          "affiliation": []
-        },
-        {
-          "given": "Simona",
-          "family": "Dostalova",
-          "affiliation": []
-        },
-        {
-          "given": "Kristyna",
-          "family": "Smerkova",
-          "affiliation": []
-        },
-        {
-          "given": "Radek",
-          "family": "Vesely",
-          "affiliation": []
-        },
-        {
-          "given": "Jaromir",
-          "family": "Gumulec",
-          "affiliation": []
-        },
-        {
-          "given": "Michal",
-          "family": "Masarik",
-          "affiliation": []
-        },
-        {
-          "given": "Zbynek",
-          "family": "Heger",
-          "affiliation": []
-        },
-        {
-          "given": "Vojtech",
-          "family": "Adam",
-          "affiliation": []
-        },
-        {
-          "given": "Rene",
-          "family": "Kizek",
-          "affiliation": []
-        }
-      ],
-      "member": "http://id.crossref.org/member/78",
-      "container-title": "The Brazilian Journal of Infectious Diseases",
-      "original-title": [],
-      "link": [
-        {
-          "URL": "http://api.elsevier.com/content/article/PII:S1413867015001889?httpAccept=text/xml",
-          "content-type": "text/xml",
-          "content-version": "vor",
-          "intended-application": "text-mining"
-        },
-        {
-          "URL": "http://api.elsevier.com/content/article/PII:S1413867015001889?httpAccept=text/plain",
-          "content-type": "text/plain",
-          "content-version": "vor",
-          "intended-application": "text-mining"
-        }
-      ],
-      "deposited": {
-        "date-parts": [
-          [
-            2015,
-            12,
-            1
-          ]
-        ],
-        "date-time": "2015-12-01T02:17:21Z",
-        "timestamp": 1448936241000
-      },
-      "score": 1.0,
-      "subtitle": [],
-      "short-title": [],
-      "issued": {
-        "date-parts": [
-          [
-            2015,
-            11
-          ]
-        ]
-      },
-      "alternative-id": [
-        "S1413867015001889"
-      ],
-      "URL": "http://dx.doi.org/10.1016/j.bjid.2015.08.013",
-      "citing-count": 49,
-      "subject": [
-        "Medicine(all)"
-      ],
-      "assertion": [
-        {
-          "value": "Elsevier",
-          "name": "publisher",
-          "label": "This article is maintained by"
-        },
-        {
-          "value": "Influence of microbiome species in hard-to-heal wounds on disease severity and treatment duration",
-          "name": "articletitle",
-          "label": "Article Title"
-        },
-        {
-          "value": "The Brazilian Journal of Infectious Diseases",
-          "name": "journaltitle",
-          "label": "Journal Title"
-        },
-        {
-          "value": "http://dx.doi.org/10.1016/j.bjid.2015.08.013",
-          "name": "articlelink",
-          "label": "CrossRef DOI link to publisher maintained version"
-        },
-        {
-          "value": "article",
-          "name": "content_type",
-          "label": "Content Type"
-        },
-        {
-          "value": "Copyright © 2015 Elsevier Editora Ltda.",
-          "name": "copyright",
-          "label": "Copyright"
-        }
-      ],
       "id": "ref_121"
     },
     "citation_id": "ref_121"

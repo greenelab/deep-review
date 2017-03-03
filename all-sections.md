@@ -15,7 +15,7 @@ respect to both research and practice. A recent comparison of genomics with
 social media, online videos and other data-intensive scientific disciplines
 suggested that the field of genomics alone would equal or surpass other fields
 in data generation and analysis within the next decade
-[@ref_62]. These data present new opportunities, but
+[@ref_65]. These data present new opportunities, but
 also new challenges. The data volume and complexity both indicate that
 automated algorithms will be needed to extract
 meaningful patterns and provide actionable knowledge allowing us to better
@@ -31,7 +31,7 @@ computer scientists are now building many-layered neural networks from
 collections of millions of images. In an early famous example, scientists from
 Google demonstrated that a neural network could learn to identify cats simply by
 watching online videos
-[@ref_114].
+[@ref_120].
 
 What if, more generally, deep learning could solve the challenges
 presented by the growth of data in biomedicine? Could these algorithms
@@ -53,18 +53,18 @@ another set of weights to produce the output **TODO: we probably need a figure
 here - I see no way that we don't include this type of description in our paper,
 despite the fact that it's been done tons of times before. - I'm really partial
 to this nature review's explanation about making non-linear problems linear -
-figure 1 [@ref_30]** These neural networks are trained by
+figure 1 [@ref_33]** These neural networks are trained by
 identifying weights that produce a desired output from some specific input.
 
 Neural networks can also be stacked. The outputs from one network can be used as
 inputs to another. This process produces a stacked, also known as a multi-layer,
 neural network. The multi-layer neural network techniques that underlie deep
 learning have a long history. Multi-layer methods have been discussed in the
-literature for more than five decades [@ref_52]. Given
+literature for more than five decades [@ref_55]. Given
 this context, it's challenging to consider "deep learning" as a new advance,
 though the term has only become widespread to describe analysis methods in the
 last decade. Much of the early history of neural networks has been extensively
-covered in a recent review [@ref_26]. For the purposes
+covered in a recent review [@ref_29]. For the purposes
 of this review, we identify deep learning approaches as those that use
 multi-layer neural networks to construct complex features.
 
@@ -91,9 +91,9 @@ disruptive innovation that would induce a strategic inflection point on the
 practice of biology or medicine. There are numerous examples where deep learning
 has been applied to biological problems and produced somewhat improved results,
 and there are numerous reviews that have focused on general applications of deep
-learning in biology [@ref_31 @ref_12
-@ref_67 @ref_28
-@ref_65 @ref_37]. We sought cases where deep
+learning in biology [@ref_34 @ref_14
+@ref_70 @ref_31
+@ref_68 @ref_40]. We sought cases where deep
 learning was enabling researchers to solve challenges that were previously
 considered infeasible, or if it made difficult, tedious, and non-routine
 analyses routine.
@@ -116,17 +116,17 @@ receptors or genes' expression. One example is the PAM50 approach
 to classifying breast cancer where the expression of 50 marker
 genes divides breast cancer patients into four subtypes.
 Significant heterogeneity still remains within these four subtypes
-[@ref_61 @ref_60]. Given the
+[@ref_64 @ref_63]. Given the
 increasing wealth of molecular data available, a more
 comprehensive subtyping seems possible.
 
 Several studies have used deep learning methods in order to better categorize
 breast cancer patients. For example, Tan et al. applied denoising
 autoencoders (DA), an unsupervised approach, in order to cluster breast
-cancer patients [@ref_59]. Ciresan et al. utilized
+cancer patients [@ref_62]. Ciresan et al. utilized
 convolutional neural networks (CNN) to count mitotic divisions in
 histological images; a feature that is highly correlated with disease
-outcome [@ref_18]. Despite these recent advances, a
+outcome [@ref_20]. Despite these recent advances, a
 number of challenges exist in this area of research, such as the integration
 of disparate types of data, including electronic health records (EHR),
 imaging and histology data, and molecular omics data.
@@ -140,15 +140,15 @@ classic biological problem where machine learning has been extensively
 applied is the prediction of molecular targets. Recent advances using deep
 learning have shown higher accuracy in determining molecular targets. For
 example, Lee et al. used deep recurrent neural networks (RNN) to predict gene
-targets of micro-RNAs [@ref_53]. Wang et al. used a
+targets of micro-RNAs [@ref_56]. Wang et al. used a
 residual CNN to predict protein-protein contact on a genome-wide scale
-[@ref_46]. Other biological questions that have been investigated
+[@ref_49]. Other biological questions that have been investigated
 include the prediction of protein secondary structure based on sequence data
-[@ref_54 @ref_34],
+[@ref_57 @ref_37],
 recognition of functional genomic elements such as enhancers and
-promoters [@ref_43 @ref_13
-@ref_41], predicting the deleterious effects of nucleotide
-polymorphisms [@ref_39], etc.
+promoters [@ref_46 @ref_15
+@ref_44], predicting the deleterious effects of nucleotide
+polymorphisms [@ref_42], etc.
 
 #### Patient Treatment
 
@@ -159,15 +159,15 @@ treatment outcome, and guide future development of new therapies.
 Specifically, effort in this area aims to identify drug targets, identify
 drug interactions or predict drug response. One recent approach for
 predicting drug response is the use of protein structure to predict drug
-interactions and drug bioactivity through CNN [@ref_2]. Since CNNs
+interactions and drug bioactivity through CNN [@ref_3]. Since CNNs
 leverage spatial relationships within the data, this particular deep learning
 framework is well suited to the problem. Drug discovery and drug
 "repurposing" are two other hot topics. Aliper et al. used transcriptomic
 data to predict which drugs might be repurposed for other diseases through
 deep fully connected neural networks
-[@ref_29]. In a similar vein, Wang et al. used
+[@ref_32]. In a similar vein, Wang et al. used
 restricted boltzman machines (RBM) to predict drug molecular targets
-[@ref_38].
+[@ref_41].
 
 
 ## Does deep learning create a strategic inflection point in how we categorize individuals with respect to health and disease?
@@ -207,13 +207,13 @@ of 1-2 paragraphs in our context.*
 One of the general areas where deep learning methods have had substantial
 success has been in image analysis. Applications in areas of medicine that use
 imaging extensively are also emerging. Mammography has been one area with
-numerous contributions [@ref_16
-@ref_14 @ref_51 @ref_50]. In
+numerous contributions [@ref_18
+@ref_16 @ref_54 @ref_53]. In
 all of this work, the researchers must work around a specific challenge - the
 limited number of well annotated training images. To expand the number and
 diversity of images, the researchers have employed approaches where they employ
-adversarial examples [@ref_50] or first train towards human-created
-features before subsequent fine tuning [@ref_16]. The
+adversarial examples [@ref_53] or first train towards human-created
+features before subsequent fine tuning [@ref_18]. The
 presence of a large bank of well-annotated mammography images would aid in the
 application of deep neural networks to this area. Though this strategy has not
 yet been employed in this domain, large collections of unlabeled images might
@@ -221,15 +221,15 @@ first be used in an unsupervised context to construct high-quality feature
 detectors. Then the small number of labeled examples could be used for
 subsequent training. Similar strategies have been employed for EHR data where
 high-quality labeled examples are also difficult to obtain
-[@ref_44].
+[@ref_47].
 
 In addition to radiographic images, histology slides are also being analyzed
 with deep learning approaches. Ciresan et al.
-[@ref_18] developed one of the earliest examples,
+[@ref_20] developed one of the earliest examples,
 winning the 2012 International Conference on Pattern Recognition's Contest on
 Mitosis Detection while achieving human competitive accuracy. Their approach
 uses what has become a standard convolutional neural network architecture
-trained on public data.  In more recent work,  Wang et al.[@ref_5]
+trained on public data.  In more recent work,  Wang et al.[@ref_6]
 analyzed stained slides to identify cancers  within slides of lymph node slices.
 The approach provided a probability map for  each slide. On this task a
 pathologist has about a 3% error rate. The  pathologist did not produce any
@@ -244,7 +244,7 @@ human expert may help overcome some of the  challenges presented by data
 limitations.
 
 One source of training examples with rich clinical annotations is the electronic
-health record. Recently Lee et al.[@ref_49] developed an approach to
+health record. Recently Lee et al.[@ref_52] developed an approach to
 distinguish individuals with Age-related Macular Degeneration from control
 individuals. They extracted approximately 100,000 images from structured
 electronic health records, which they used to train and evaluate a deep neural
@@ -252,7 +252,7 @@ network. Combining this data resource with standard deep learning techniques,
 the authors reach greater than 93% accuracy. One item that is important to note
 with regards to this work is that the authors used their test set for evaluating
 when training had concluded. In other domains, this has resulted in a minimal
-change in the estimated accuracy [@ref_113]. However,
+change in the estimated accuracy [@ref_119]. However,
 there is not yet a single accepted standard within the field of biomedical
 research for such evaluations. We recommend the use of an independent test set
 wherever it is feasible. Despite this minor limitation, the work clearly
@@ -267,22 +267,22 @@ really do anything different/unique from standard image processing examples
 #### Electronic health records
 
 EHR data include substantial amounts of free text, which remains challenging to
-approach [@ref_56]. Often, researchers developing
+approach [@ref_59]. Often, researchers developing
 algorithms that perform well on specific tasks must design and implement domain-
-specific features [@ref_55]. These features capture
+specific features [@ref_58]. These features capture
 unique aspects of the literature being processed. Deep learning methods are
 natural feature constructors. In recent work, the authors evaluated the extent
 to which deep learning methods could be applied on top of generic features for
-domain-specific concept extraction [@ref_10]. They found that
+domain-specific concept extraction [@ref_11]. They found that
 performance was in line with, but did not exceed, existing state of the art
 methods. The deep learning method had performance lower than the best performing
-domain-specific method in their evaluation [@ref_10]. This highlights
+domain-specific method in their evaluation [@ref_11]. This highlights
 the challenge of predicting the eventual impact of deep learning on the field.
 This provides support that deep learning may impact the field by reducing the
 researcher time and cost required to develop specific solutions, but it may not
 lead to performance increases.
 
-In recent work, Yoon et al.[@ref_17] analyzed simple
+In recent work, Yoon et al.[@ref_19] analyzed simple
 features using deep neural networks and found that the patterns recognized by
 the algorithms could be re-used across tasks. Their aim was to analyze the free
 text portions of pathology reports to identify the primary site and laterality
@@ -306,18 +306,18 @@ Identifying consistent subgroups of individuals and individual health
 trajectories from clinical tests is also an active area of research. Approaches
 inspired by deep learning have been used for both unsupervised feature
 construction and supervised prediction. Early work by Lasko et al.
-[@ref_64], combined sparse autoencoders and Gaussian
+[@ref_67], combined sparse autoencoders and Gaussian
 processes to distinguish gout from leukemia from uric acid sequences. Later work
 showed that unsupervised feature construction of many features via denoising
 autoencoder neural networks could dramatically reduce the number of labeled
 examples required for subsequent supervised analyses
-[@ref_25]. In addition, it pointed towards learned
+[@ref_28]. In addition, it pointed towards learned
 features being useful for subtyping within a single disease. A concurrent large-
 scale analysis of an electronic health records system found that a deep
 denoising autoencoder architecture applied to the number and co-occurrence of
 clinical test events, though not the results of those tests, constructed
 features that were more useful for disease prediction than other existing
-feature construction methods [@ref_35].  Taken together, these
+feature construction methods [@ref_38].  Taken together, these
 results support the potential of unsupervised feature construction in this
 domain. However, numerous challenges including data integration (patient
 demographics, family history, laboratory tests, text-based patient records,
@@ -332,16 +332,16 @@ context of EHR data, often associates these events to subject covariates.
 Exploring this relationship is difficult, however, given that EHR data types
 are often heterogeneous, covariates are often missing, and conventional
 approaches require the covariate-event relationship be linear and aligned to a
-specific starting point [@ref_8]. Early approaches, such as the
+specific starting point [@ref_9]. Early approaches, such as the
 Faraggi-Simon feed-forward network, aimed to relax the linearity assumption,
-but performance gains were lacking [@ref_19].
+but performance gains were lacking [@ref_21].
 Katzman et al. in turn developed a deep implementation of the Faraggi-Simon
 network that, in addition to outperforming Cox regression, was capable of
 comparing the risk between a given pair of treatments, thus potentially acting
-as recommender system [@ref_4]. To overcome the remaining
+as recommender system [@ref_5]. To overcome the remaining
 difficulties, researchers have turned to deep exponential families, a class of
 latent generative models that are constructed from any type of exponential
-family distributions [@ref_1]. The result was a deep survival
+family distributions [@ref_2]. The result was a deep survival
 analysis model capable of overcoming challenges posed by missing data and
 heterogeneous data types, while uncovering nonlinear relationships between
 covariates and failure time. They showed their model more accurately
@@ -372,70 +372,70 @@ EHRs are designed and optimized primarily for patient care and billing purposes,
 meaning research is at most a tertiary priority. This presents significant
 challenges to EHR based research in general, and particularly to data intensive
 deep learning research. EHRs are used differently even within the same health
-care system [@ref_69 @ref_68]. Individual users have unique
+care system [@ref_72 @ref_71]. Individual users have unique
 usage patterns, and different departments have different priorities which
 introduce missing data in a non-random fashion. Just et al. demonstrated that
 even the most basic task of matching patients can be challenging due to data
-entry issues [@ref_70]. This is before considering challenges caused by
+entry issues [@ref_73]. This is before considering challenges caused by
 system migrations and health care system expansions through acquisitions.
 Replication between hospital systems requires controlling for both these
 systematic biases as well as for population and demographic effects.
 Historically, rules-based algorithms have been popular in EHR-based research but
 because these are developed at a single institution and trained with a specific
 patient population they do not transfer easily to other populations
-[@ref_57]. Wiley et al.
-[@ref_58] showed that warfarin dosing algorithms often
+[@ref_60]. Wiley et al.
+[@ref_61] showed that warfarin dosing algorithms often
 under perform in African Americans, illustrating that some of these issues are
 unsolved even at a treatment best practices level. This may be a promising
 application of deep learning, as rules-based algorithms were also the standard
 in most natural language processing but have been superseded by machine learning
 and in particular deep learning methods
-[@ref_115].
+[@ref_121].
 
 ###### Temporal Patient Trajectories
 
 Traditionally, physician training programs justified long training hours by
 citing increased continuity of care and learning by following the progression of
 a disease over time, despite the known consequences of decreased mental and
-quality of life [@ref_27
-@ref_21 @ref_42
-@ref_20]. Yet, a common practice in EHR-based
+quality of life [@ref_30
+@ref_23 @ref_45
+@ref_22]. Yet, a common practice in EHR-based
 research is to take a point in time snapshot and convert patient data to a
 traditional vector for machine learning and statistical analysis. This results
 in significant signal losses as timing and order of events provide insight into
 a patient's disease and treatment. Efforts to account for the order of events
-have shown promise [@ref_32] but require exceedingly large
+have shown promise [@ref_35] but require exceedingly large
 patient sizes due to discrete combinatorial bucketing.
 
-Lasko et al. [@ref_64] used
+Lasko et al. [@ref_67] used
 autoencoders on longitudinal sequences of serum urine acid measurements to
 identify population subtypes. More recently, deep learning has shown promise
-working with both sequences (Convolutional Neural Networks) [@ref_7]
+working with both sequences (Convolutional Neural Networks) [@ref_8]
 and the incorporation of past and current state (Recurrent Neural Networks, Long
-Short Term Memory Networks)[@ref_3].
+Short Term Memory Networks)[@ref_4].
 
 ###### Data sharing and privacy
 
 Early successes using deep learning involved very large training datasets
-(ImageNet 1.4 million images) [@ref_0], but a responsibility to
+(ImageNet 1.4 million images) [@ref_1], but a responsibility to
 protect patient privacy limits the ability openly share large patient datasets.
 Limited dataset sizes may restrict the number of parameters that can be trained
 in a model, but the lack of sharing may also hamper reproducibility and
 confidence in results. Even without sharing data, algorithms trained on
 confidential patient data may present security risks or accidentally allow for
-the exposure of individual level patient data. Tramer et al. [@ref_9]
+the exposure of individual level patient data. Tramer et al. [@ref_10]
 showed the ability to steal trained models via public APIs and Dwork and Roth
-[@ref_66] demonstrate the ability to expose individual level
+[@ref_69] demonstrate the ability to expose individual level
 information from accurate answers in a machine learning model.
 
 Training algorithms in a differentially private manner provides a limited
 guarantee that the algorithms output will be equally likely to occur regardless
 of the participation of any one individual. The limit is determined by a single
 parameter which provides a quantification of privacy. Simmons et al.
-[@ref_22] present the ability to perform GWASs in a
-differentially private manner and Abadi et al. [@ref_6] show the
+[@ref_25] present the ability to perform GWASs in a
+differentially private manner and Abadi et al. [@ref_7] show the
 ability to train deep learning classifiers under the differential privacy
-framework. Finally, Continuous Analysis [@ref_45] allows for the
+framework. Finally, Continuous Analysis [@ref_48] allows for the
 ability to automatically track and share intermediate results for the purposes
 of reproducibility without sharing the original data.
 
@@ -538,7 +538,7 @@ particularly notable in this area?*
 
 ### Signaling
 
-*There is not much content here.  Can [@ref_78] be covered
+*There is not much content here.  Can [@ref_82] be covered
 elsewhere?*
 
 ### Morphological phenotypes
@@ -549,13 +549,13 @@ Thus far, the primary use of deep learning for biological
 images has been for segmentation - that is, for the identification
 of biologically relevant structures in images such as nuclei,
 infected cells, or vasculature, in fluorescence or even brightfield
-channels [@ref_63]. Once so-called regions of
+channels [@ref_66]. Once so-called regions of
 interest have been identified, it is often straightforward
 to measure biological properties of interest, such as fluorescence
 intensities, textures, and sizes. Given the dramatic successes of
 deep learning in biological imaging, we simply refer to articles that
-review recent advancements [@ref_67
-@ref_63 @ref_15].
+review recent advancements [@ref_70
+@ref_66 @ref_17].
 We believe deep learning will become a commonplace tool for
 biological image segmentation once user-friendly tools exist.
 
@@ -566,7 +566,7 @@ tissue samples, could be mined for much more extensive biologically
 meaningful information than is currently standard? For example, a
 recent study demonstrated the ability to predict lineage fate in
 hematopoietic cells up to three generations in advance of
-differentiation [@ref_33]. In biomedical research,
+differentiation [@ref_36]. In biomedical research,
 by far the most common paradigm is for biologists to decide in advance
 what feature to measure in images from their assay system. But images
 of cells contain a wide variety of quantitative information, and deep
@@ -575,8 +575,8 @@ of segmentation and feature extraction can produce hundreds of metrics
 per cell in an image, deep learning is unconstrained by human intuition
 and can in theory extract more subtle features. Already, there is evidence
 deep learning can surpass the efficacy of classical methods
-[@ref_47], even using generic deep convolutional networks
-trained on natural images [@ref_48], known as transfer learning.
+[@ref_50], even using generic deep convolutional networks
+trained on natural images [@ref_51], known as transfer learning.
 
 The impact of further improvements on biomedicine could be enormous.
 Comparing cell population
@@ -584,8 +584,8 @@ morphologies using conventional methods of segmentation and feature
 extraction has already proven useful for functionally annotating genes
 and alleles, identifying the cellular target of small molecules, and
 identifying disease-specific phenotypes suitable for drug screening
-[@ref_23 @ref_11
-@ref_36].
+[@ref_26 @ref_13
+@ref_39].
 Deep learning would bring to these new kinds of experiments - known
 as image-based profiling or morphological profiling - a higher degree of
 accuracy, stemming from the freedom from human-tuned feature extraction
@@ -598,9 +598,9 @@ unsupervised uses.`
 
 *There are not many neural network papers in this area (yet), unless we count
 imaging applications.  But there is still plenty to discuss.  The existing
-methods [@ref_72 @ref_71]
+methods [@ref_76 @ref_75]
 use interesting network architectures to approach single-cell data.
-[@ref_106] could fit here.*
+[@ref_111] could fit here.*
 
 ### Metagenomics
 
@@ -645,7 +645,7 @@ and techniques have been proposed that are classifier-independent
 So, how have neural networks (NNs) been of use?    Most neural networks are being 
 used for short sequence->taxa/function classification, where there is a lot of data 
 for training (and thus suitable for NNs).  Neural networks have been applied 
-successfully to gene annotation (e.g. Orphelia [Hoff] and FragGeneScan [@ref_40]), 
+successfully to gene annotation (e.g. Orphelia [Hoff] and FragGeneScan [@ref_43]), 
 which usually has plenty of training examples.  Representations (similar to Word2Vec [ref] in 
 natural language processing) for protein family classification has been introduced and classified 
 with a skip-gram  neural network [Asgari].  Recurrent neural networks show good performance for 
@@ -670,7 +670,7 @@ forests [Mrzelj].  However, this study performed 10-fold cross-validation on 300
 
 Due to the traditionally small numbers of metagenomic samples in studies, neural network uses for 
 classifying phenotype from microbial composition are just beginning.   A standard MLP 
-was able to classify wound severity from microbial species present in the wound [@ref_121].
+was able to classify wound severity from microbial species present in the wound [@ref_24].
 Recently, multi-layer, recurrent networks (and convolutional
 networks) have been applied to microbiome genotype-phenotype, with Ditzler et
 al. being the first to associate soil samples with pH level using multi-layer
@@ -686,7 +686,7 @@ There are still a lot of challenges with applying deep neural networks to metage
 hundreds/thousands of features (aka species).  Such underdetermined/ill-conditioned problems
 are still a challenge for deep neural networks that require many more training examples than 
 features to sufficiently converge the weights on the hidden layers.  Also, due to convergence issues 
-(slowness and instability due to large neural networks modeling very large datasets [@ref_116]), 
+(slowness and instability due to large neural networks modeling very large datasets [@ref_0]), 
 taxonomic classification of reads from whole genome sequencing seems out of reach at the moment for deep neural 
 networks -- due to only thousands of full-sequenced genomes as compared to hundreds of thousands of 16S rRNA sequences 
 available for training.
@@ -715,7 +715,7 @@ patients with treatments.  The sub-section titles are merely placeholders.*
 ### Categorizing patients for clinical decision making
 
 *How can deep learning match patients with clinical trails, therapies, or
-other interventions?  As an example, [@ref_24]
+other interventions?  As an example, [@ref_27]
 predicts individuals who are most likely to decline during a clinical trial
 and benefit from the treatment.*
 
@@ -733,7 +733,7 @@ feature selection and construction.*
 **TODO: expand outline**
 
 - Short introduction to problem, related reviews, use vHTS definition from
-[@ref_120] (vHTS doesn't fit neatly into classic classification,
+[@ref_115] (vHTS doesn't fit neatly into classic classification,
 regression, or ranking)
 - Introduce ligand-based approaches, hype and excitement surrounding
 performance of a "high-parameter" network on the Merck Kaggle challenge,
@@ -742,11 +742,11 @@ that followed, Tox21 Data Challenge
 - Multitask networks related to the above point
 - Realistic view of where things stand today, high-parameter networks struggle
 with overfitting, cross validation needs to be done carefully because of temporal
-structure [@ref_119], low parameter networks based on chemical
+structure [@ref_97], low parameter networks based on chemical
 similarity (IRV) work very well, especially well-suited for the domain in which
 training data can be limited and contains few positive instances, may touch on
 BACE example here and other discussions of training data limitations (e.g.
-[@ref_118])
+[@ref_74])
 - "Creative experimentation" phase of the field, new ideas for representation
 learning and novel approaches including graph convolutions, autoencoders,
 one shot learning, and generative models
@@ -762,7 +762,7 @@ data versus algorithms
 - Future outlook part 2, how the above approaches relate to traditional
 methods like docking (note neural networks that include docking scores as
 features), deep learning efforts in this direction that use structure (e.g.
-[@ref_2 @ref_117]), "zero-shot learning",
+[@ref_3 @ref_12]), "zero-shot learning",
 analogies to other domains where deep learning can capture the behavior
 of complex physics (e.g. quantum physics example), maybe briefly mention
 other compound-protein interaction-based networks although that doesn't seem
@@ -829,77 +829,77 @@ it best fits.*
 Efficiently scaling deep learning is challenging, and there is a high
 computational cost (e.g., time, memory, energy) associated with training neural
 networks and using them for classification. As such, neural networks
-have only recently found widespread use [@ref_26].
+have only recently found widespread use [@ref_29].
 
 Many have sought to curb the costs of deep learning, with methods ranging from
-the very applied (e.g., reduced numerical precision [@ref_89
-@ref_73 @ref_103 @ref_92]) to the exotic
+the very applied (e.g., reduced numerical precision [@ref_93
+@ref_77 @ref_108 @ref_96]) to the exotic
 and theoretic (e.g., training small networks to mimic large networks and
-ensembles [@ref_76 @ref_91]). The largest
+ensembles [@ref_80 @ref_95]). The largest
 gains in efficiency have come from computation with graphics processing units
-(GPUs) [@ref_102 @ref_111 @ref_105
-@ref_90 @ref_84
-@ref_26], which excel at the matrix and vector
+(GPUs) [@ref_107 @ref_117 @ref_110
+@ref_94 @ref_88
+@ref_29], which excel at the matrix and vector
 operations so central to deep learning. The massively parallel nature of GPUs
 allows additional optimizations, such as accelerated mini-batch gradient
-descent [@ref_111 @ref_105 @ref_108
-@ref_97]. However, GPUs also have a limited quantity of memory,
+descent [@ref_117 @ref_110 @ref_113
+@ref_102]. However, GPUs also have a limited quantity of memory,
 making it difficult to implement networks of significant size and
-complexity on a single GPU or machine [@ref_102
-@ref_94]. This restriction has sometimes forced
+complexity on a single GPU or machine [@ref_107
+@ref_99]. This restriction has sometimes forced
 computational biologists to use workarounds or limit the size of an analysis.
-For example, Chen et al. [@ref_79] aimed to infer the
+For example, Chen et al. [@ref_83] aimed to infer the
 expression level of all genes with a single neural network, but due to
 memory restrictions they randomly partitioned genes into two halves and
 analyzed each separately. In other cases, researchers limited the size
-of their neural network [@ref_46
-@ref_87]. Some have also chosen to use slower
+of their neural network [@ref_49
+@ref_91]. Some have also chosen to use slower
 CPU implementations rather than sacrifice network size or performance
-[@ref_112].
+[@ref_118].
 
 Steady improvements in GPU hardware may alleviate this issue somewhat, but it
 is not clear whether they can occur quickly enough to keep up with the growing
 amount of available biological data or increasing network sizes. Much has
 been done to minimize the memory
-requirements of neural networks [@ref_81 @ref_76
-@ref_89 @ref_73 @ref_103
-@ref_77 @ref_92], but there is also growing
+requirements of neural networks [@ref_85 @ref_80
+@ref_93 @ref_77 @ref_108
+@ref_81 @ref_96], but there is also growing
 interest in specialized hardware, such as field-programmable gate arrays
-(FPGAs) [@ref_84 @ref_96] and
+(FPGAs) [@ref_88 @ref_101] and
 application-specific integrated circuits (ASICs). Specialized hardware promises
 improvements in deep learning at reduced time, energy, and memory
-[@ref_84]. Logically, there is less software for highly
-specialized hardware [@ref_96], and it could be a difficult
+[@ref_88]. Logically, there is less software for highly
+specialized hardware [@ref_101], and it could be a difficult
 investment for those not solely interested in deep learning. However, it is
 likely that such options will find increased support as they become a more
 popular platform for deep learning and general computation.
 
 Distributed computing is a general solution to intense computational
 requirements, and has enabled many large-scale deep learning efforts. Early
-approaches to distributed computation [@ref_98 @ref_88] were
-not suitable for deep learning [@ref_82],
+approaches to distributed computation [@ref_103 @ref_92] were
+not suitable for deep learning [@ref_86],
 but significant progress has been made. There
-now exist a number of algorithms [@ref_82 @ref_83
-@ref_103], tools [@ref_100 @ref_99
-@ref_110], and high-level libraries [@ref_93 @ref_85] for deep
+now exist a number of algorithms [@ref_86 @ref_87
+@ref_108], tools [@ref_105 @ref_104
+@ref_116], and high-level libraries [@ref_98 @ref_89] for deep
 learning in a distributed environment, and it is possible to train very complex
-networks with limited infrastructure [@ref_80]. Besides
+networks with limited infrastructure [@ref_84]. Besides
 handling very large networks, distributed or parallelized approaches offer
-other advantages, such as improved ensembling [@ref_109] or
-accelerated hyperparameter optimization [@ref_74
-@ref_75].
+other advantages, such as improved ensembling [@ref_114] or
+accelerated hyperparameter optimization [@ref_78
+@ref_79].
 
 Cloud computing, which has already seen adoption in genomics
-[@ref_104], could facilitate easier sharing of the large
-datasets common to biology [@ref_86 @ref_107],
+[@ref_109], could facilitate easier sharing of the large
+datasets common to biology [@ref_90 @ref_112],
 and may be key to scaling deep learning. Cloud computing affords researchers
 significant flexibility, and enables the use of specialized hardware (e.g.,
 FPGAs, ASICs, GPUs) without significant investment. With such flexibility, it
 could be easier to address the different challenges associated with the
 multitudinous layers and architectures available
-[@ref_95]. Though many are reluctant to store sensitive
+[@ref_100]. Though many are reluctant to store sensitive
 data (e.g., patient electronic health records) in the cloud,
-secure/regulation-compliant cloud services do exist [@ref_101].
+secure/regulation-compliant cloud services do exist [@ref_106].
 
 *TODO: Write the transition once more of the Discussion section has been
 fleshed out.*
