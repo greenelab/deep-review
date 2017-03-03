@@ -1,7 +1,8 @@
 Transcription Factor and RNA-binding proteins are key components for gene
 regulation, making them very important to understand for higher level
 biological processes. While high-throughput sequencing techniques such as
-ChIP-seq have been able to accurately identify binding regions for DNA and
+Chromatin immunoprecipitation and massively parallel DNA
+sequencing (ChIP-seq) have been able to accurately identify binding regions for DNA and
 RNA proteins, these experiments are both time consuming and expensive. In
 addition, the sequencing methods do not provide any sort of analysis on the
 proteins which would lead to a better understanding of the underlying process.
@@ -12,8 +13,7 @@ regions de novo from sequences.
 
 Transcription Factors (TFs) are regulatory proteins which bind to certain
 locations on a DNA sequence and controls the rate of genetic information
-transcription. Chromatin immunoprecipitation and massively parallel DNA
-sequencing (ChIP-seq) technologies are able to identify highly likely binding
+transcription. ChIP-seq technologies are able to identify highly likely binding
 sites for a certain TF, and databases such as ENCODE have provided ChIP-seq
 data for hundreds of different TFs across many laboratories. However, ChIP-seq
 experiments are expensive and time consuming. Since the data that scientists
@@ -28,7 +28,7 @@ classifiers were then proposed to differentiate positive and negative binding
 sites, but did not show significant improvements over the weight matrix
 matching methods [@tag:Horton1992_assessment]. Later, SVM techniques
 outperformed the generative methods by using k-mer features
-\cite{Ghandi2014_enhanced, Setty2015_seqgl}, but string kernel based SVM
+[@tag:Ghandi2014_enhanced @tag:Setty2015_seqgl], but string kernel based SVM
 systems are limited by expensive computational cost proportional to the number
 of training and testing sequences. Most recently,
 [@tag:Alipanahi2015_predicting] showed that a convolutional neural network
@@ -44,7 +44,7 @@ While accurately predicting transcription factors computationally is useful,
 it is important to understand how these computational models make their
 predictions. To handle this, several papers have focused on understanding
 machine learning models [@tag:Alipanahi2015_predicting
-@tag:Lanchantin2016_motif@tag:Shrikumar2016_blackbox].
+@tag:Lanchantin2016_motif @tag:Shrikumar2016_blackbox].
 [@tag:Alipanahi2015_predicting] was the first to introduce a visualization
 method for a deep learning model on the TFBS task, and they did so by
 visualizing the learned convolution filters which were informative for the
