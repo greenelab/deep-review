@@ -2,7 +2,8 @@
 set -o errexit
 
 # Add commit hash to the README
-envsubst < output/README.md > output/README.md
+envsubst < output/README.md > output/README-complete.md
+mv output/README-complete.md output/README.md
 
 # Generate OpenTimestamps
 python ci/opentimestamps-client/ots stamp \
