@@ -1,6 +1,7 @@
 # Generated manuscript output files
 output/index.html
 output/deep-review.pdf
+output/*.ots
 
 # Generated reference files
 references/generated/*
