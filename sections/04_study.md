@@ -27,8 +27,55 @@ dive into merits or weaknesses of individual methods.*
 
 ### Gene expression
 
-*Predicting gene expression levels and unsupervised approaches for learning
-from gene expression.  Those could be divided into separate sub-sections.*
+Gene expression measurements characterize the abundance of many thousands of
+RNA transcripts within a given organism, tissue, or cell. This characterization
+can represent the underlying state of the given system and can be used to study
+heterogeneity across samples as well as how the system reacts to perturbation.
+While gene expression measurements have been traditionally made by quantitative
+PCR, low throughput flourescense based methods, and microarray technologies, the
+field has shifted in recent years to primarily performing RNA sequencing to
+catalog total RNA. As such next generation sequencing technologies continue to
+fall in price and rise in throughput, studying gene expression through the lens
+of deep learning will increase in practicality and promise. 
+
+Already several deep learning approaches have been applied to gene expression
+data with varying aims. For instance, many researchers have applied unsupervised
+deep learning approaches to extract meaningful representations of gene modules
+or sample clusters. Unsupervised approaches, such as denoising autoencoders,
+have been applied to cluster yeast expression microarrays into known modules
+representing cell cycle processes [@tag:Gupta2015_exprs_yeast] and also to
+stratify yeast strains based on chemical and mutational perturbations
+[@tag:Chen2016_exprs_yeast]. Shallow (one hidden layer) denoising autoencoders
+have also been fruitful in extracting biological insight from thousandas of
+_Pseudomonas aeruginosa_ experiments [@tag:Tan2015_adage @tag:Tan2016_eadage]
+and in aggregating features relevant to specific breast cancer subtypes
+[@tag:Tan2014_psb]. Alternatively, deep learning approaches are being applied
+for gene expression prediction tasks. For example, a deep neural network with
+three hidden layers outperformed linear regression in inferring the expression
+of over 20,000 target genes based on a representative, well-connected set of
+about 1,000 landmark genes [@tag:Chen2016_gene_expr]. Furthermore, a
+convolutional neural network applied to histone modifications
+[@tag:Singh2016_deepchrome] was shown to predict raw gene expression output.
+Deep learning approaches have also been applied to study cancer gene expression
+data with goals of identifying subtypes of patients with different molecular
+features and clinical manifestations [@tag:Liang2015_exprs_cancer]. While these
+approaches are promising, many convert gene expression measurements to
+categorical or binary variables thus ablating many complex gene expression
+signatures present in intermediate and relative numbers.
+
+Deep learning applied to gene expression data is in its infancy but the future
+is bright. Many hypotheses can now be interrogated because of increasing
+amounts of data and new developing technologies. For exampe, there is a growing
+appreciation for the large impact of disease heterogeneity on research and
+treatment strategies for disease. New technologies are being developed, such as
+single cell RNAseq and high throughput flourescence based imaging. These
+technologies are growing in popularity and will provide increasingly
+novel perspectives with respect to how cellular and spatial heterogeneity
+impacts gene expression coordination within a sample. Deep learning is already
+well established in the image processing community, so the marriage of
+flourescence based imaging techniques and deep learning is natural. In general,
+as the flow of gene expression data increases, the quality and types of
+questions deep learning can address is poised to improve.
 
 ### Splicing
 
