@@ -37,7 +37,7 @@ and microarray technologies, the field has shifted in recent years to primarily
 performing RNA sequencing (RNA-seq) to catalog whole transcriptomes. As such
 next generation sequencing technologies continue to fall in price and rise in
 throughput, studying gene expression through the lens of deep learning will
-increase in practicality and promise. 
+increase in practicality and promise.
 
 Already several deep learning approaches have been applied to gene expression
 data with varying aims. For instance, many researchers have applied unsupervised
