@@ -207,20 +207,20 @@
     "indexed": {
       "date-parts": [
         [
-          2016,
-          11,
-          28
+          2017,
+          3,
+          25
         ]
       ],
-      "date-time": "2016-11-28T20:07:39Z",
-      "timestamp": 1480363659875
+      "date-time": "2017-03-25T15:14:43Z",
+      "timestamp": 1490454883081
     },
     "reference-count": 199,
     "publisher": "Wiley-Blackwell",
     "issue": "1",
     "license": [
       {
-        "URL": "http://doi.wiley.com/10.1002/tdm_license_1",
+        "URL": "http://doi.wiley.com/10.1002/tdm_license_1.1",
         "start": {
           "date-parts": [
             [
@@ -321,13 +321,13 @@
     "deposited": {
       "date-parts": [
         [
-          2016,
-          11,
-          14
+          2017,
+          3,
+          25
         ]
       ],
-      "date-time": "2016-11-14T13:16:39Z",
-      "timestamp": 1479129399000
+      "date-time": "2017-03-25T14:45:37Z",
+      "timestamp": 1490453137000
     },
     "score": 1.0,
     "subtitle": [],
@@ -342,6 +342,12 @@
       ]
     },
     "URL": "http://dx.doi.org/10.1002/minf.201501008",
+    "issn-type": [
+      {
+        "value": "1868-1743",
+        "type": "print"
+      }
+    ],
     "citing-count": 199,
     "subject": [
       "Organic Chemistry",
@@ -3341,14 +3347,15 @@
         [
           2017,
           3,
-          2
+          31
         ]
       ],
-      "date-time": "2017-03-02T10:40:51Z",
-      "timestamp": 1488451251665
+      "date-time": "2017-03-31T16:18:31Z",
+      "timestamp": 1490977111840
     },
     "reference-count": 44,
     "publisher": "Springer Nature",
+    "issue": "4",
     "content-domain": {
       "domain": [],
       "crossmark-restriction": false
@@ -3370,9 +3377,11 @@
       "date-time": "2017-02-21T15:31:03Z",
       "timestamp": 1487691063000
     },
+    "page": "403-406",
     "source": "CrossRef",
     "title": "Prospective identification of hematopoietic lineage choice by deep learning",
     "prefix": "http://id.crossref.org/prefix/10.1038",
+    "volume": "14",
     "author": [
       {
         "given": "Felix",
@@ -3461,11 +3470,11 @@
         [
           2017,
           3,
-          2
+          31
         ]
       ],
-      "date-time": "2017-03-02T09:31:13Z",
-      "timestamp": 1488447073000
+      "date-time": "2017-03-31T15:57:11Z",
+      "timestamp": 1490975831000
     },
     "score": 1.0,
     "subtitle": [],
@@ -3506,24 +3515,53 @@
     "indexed": {
       "date-parts": [
         [
-          2016,
-          11,
-          17
+          2017,
+          3,
+          15
         ]
       ],
-      "date-time": "2016-11-17T08:19:36Z",
-      "timestamp": 1479370776243
+      "date-time": "2017-03-15T04:41:20Z",
+      "timestamp": 1489552880264
     },
     "reference-count": 79,
     "publisher": "Springer Nature",
+    "issue": "1",
+    "license": [
+      {
+        "URL": "http://www.springer.com/tdm",
+        "start": {
+          "date-parts": [
+            [
+              2016,
+              1,
+              11
+            ]
+          ],
+          "date-time": "2016-01-11T00:00:00Z",
+          "timestamp": 1452470400000
+        },
+        "delay-in-days": 0,
+        "content-version": "vor"
+      }
+    ],
     "content-domain": {
-      "domain": [],
+      "domain": [
+        "link.springer.com"
+      ],
       "crossmark-restriction": false
     },
     "short-container-title": [
-      "Sci. Rep."
+      "Sci Rep"
     ],
     "cited-count": 0,
+    "published-print": {
+      "date-parts": [
+        [
+          2016,
+          5
+        ]
+      ]
+    },
     "DOI": "10.1038/srep18962",
     "type": "article-journal",
     "created": {
@@ -3537,7 +3575,7 @@
       "date-time": "2016-01-11T09:48:56Z",
       "timestamp": 1452505736000
     },
-    "page": "18962",
+    "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
     "source": "CrossRef",
     "title": "Protein Secondary Structure Prediction Using Deep Convolutional Neural Fields",
     "prefix": "http://id.crossref.org/prefix/10.1038",
@@ -3576,16 +3614,30 @@
     },
     "container-title": "Scientific Reports",
     "original-title": [],
+    "link": [
+      {
+        "URL": "http://www.nature.com/articles/srep18962.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://www.nature.com/articles/srep18962",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
     "deposited": {
       "date-parts": [
         [
-          2016,
-          1,
-          11
+          2017,
+          3,
+          15
         ]
       ],
-      "date-time": "2016-01-11T09:48:56Z",
-      "timestamp": 1452505736000
+      "date-time": "2017-03-15T00:04:56Z",
+      "timestamp": 1489536296000
     },
     "score": 1.0,
     "subtitle": [],
@@ -3600,34 +3652,70 @@
       ]
     },
     "alternative-id": [
-      "srep18962"
+      "BFsrep18962"
     ],
     "URL": "http://dx.doi.org/10.1038/srep18962",
+    "issn-type": [
+      {
+        "value": "2045-2322",
+        "type": "electronic"
+      }
+    ],
     "citing-count": 79,
+    "article-number": "18962",
     "id": "ref_37"
   },
   {
     "indexed": {
       "date-parts": [
         [
-          2016,
-          11,
-          12
+          2017,
+          3,
+          5
         ]
       ],
-      "date-time": "2016-11-12T16:52:07Z",
-      "timestamp": 1478969527361
+      "date-time": "2017-03-05T00:41:06Z",
+      "timestamp": 1488674466455
     },
     "reference-count": 48,
     "publisher": "Springer Nature",
+    "issue": "1",
+    "license": [
+      {
+        "URL": "http://www.springer.com/tdm",
+        "start": {
+          "date-parts": [
+            [
+              2016,
+              5,
+              17
+            ]
+          ],
+          "date-time": "2016-05-17T00:00:00Z",
+          "timestamp": 1463443200000
+        },
+        "delay-in-days": 0,
+        "content-version": "vor"
+      }
+    ],
     "content-domain": {
-      "domain": [],
+      "domain": [
+        "link.springer.com"
+      ],
       "crossmark-restriction": false
     },
     "short-container-title": [
-      "Sci. Rep."
+      "Sci Rep"
     ],
     "cited-count": 0,
+    "published-print": {
+      "date-parts": [
+        [
+          2016,
+          9
+        ]
+      ]
+    },
     "DOI": "10.1038/srep26094",
     "type": "article-journal",
     "created": {
@@ -3641,7 +3729,7 @@
       "date-time": "2016-05-17T09:38:50Z",
       "timestamp": 1463477930000
     },
-    "page": "26094",
+    "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
     "source": "CrossRef",
     "title": "Deep Patient: An Unsupervised Representation to Predict the Future of Patients from the Electronic Health Records",
     "prefix": "http://id.crossref.org/prefix/10.1038",
@@ -3680,16 +3768,30 @@
     },
     "container-title": "Scientific Reports",
     "original-title": [],
+    "link": [
+      {
+        "URL": "http://www.nature.com/articles/srep26094.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://www.nature.com/articles/srep26094",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
     "deposited": {
       "date-parts": [
         [
-          2016,
-          5,
-          17
+          2017,
+          3,
+          4
         ]
       ],
-      "date-time": "2016-05-17T09:38:50Z",
-      "timestamp": 1463477930000
+      "date-time": "2017-03-04T23:03:08Z",
+      "timestamp": 1488668588000
     },
     "score": 1.0,
     "subtitle": [],
@@ -3704,10 +3806,17 @@
       ]
     },
     "alternative-id": [
-      "srep26094"
+      "BFsrep26094"
     ],
     "URL": "http://dx.doi.org/10.1038/srep26094",
+    "issn-type": [
+      {
+        "value": "2045-2322",
+        "type": "electronic"
+      }
+    ],
     "citing-count": 48,
+    "article-number": "26094",
     "id": "ref_38"
   },
   {
@@ -5744,13 +5853,13 @@
     "indexed": {
       "date-parts": [
         [
-          2016,
-          11,
-          11
+          2017,
+          3,
+          9
         ]
       ],
-      "date-time": "2016-11-11T20:20:51Z",
-      "timestamp": 1478895651933
+      "date-time": "2017-03-09T08:41:35Z",
+      "timestamp": 1489048895466
     },
     "reference-count": 7,
     "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
@@ -5789,13 +5898,13 @@
     "deposited": {
       "date-parts": [
         [
-          2016,
-          9,
-          16
+          2017,
+          3,
+          9
         ]
       ],
-      "date-time": "2016-09-16T17:51:31Z",
-      "timestamp": 1474048291000
+      "date-time": "2017-03-09T07:36:33Z",
+      "timestamp": 1489044993000
     },
     "score": 1.0,
     "subtitle": [],
@@ -5808,13 +5917,13 @@
     "indexed": {
       "date-parts": [
         [
-          2016,
-          11,
-          27
+          2017,
+          3,
+          23
         ]
       ],
-      "date-time": "2016-11-27T22:10:09Z",
-      "timestamp": 1480284609662
+      "date-time": "2017-03-23T17:41:42Z",
+      "timestamp": 1490290902005
     },
     "reference-count": 52,
     "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
@@ -5887,13 +5996,13 @@
     "deposited": {
       "date-parts": [
         [
-          2016,
-          9,
-          29
+          2017,
+          3,
+          23
         ]
       ],
-      "date-time": "2016-09-29T13:54:30Z",
-      "timestamp": 1475157270000
+      "date-time": "2017-03-23T17:05:44Z",
+      "timestamp": 1490288744000
     },
     "score": 1.0,
     "subtitle": [],
@@ -5908,6 +6017,12 @@
       ]
     },
     "URL": "http://dx.doi.org/10.1109/tcbb.2014.2343960",
+    "issn-type": [
+      {
+        "value": "1545-5963",
+        "type": "print"
+      }
+    ],
     "citing-count": 52,
     "subject": [
       "Biotechnology",
@@ -6651,12 +6766,12 @@
       "date-parts": [
         [
           2017,
-          2,
-          23
+          4,
+          3
         ]
       ],
-      "date-time": "2017-02-23T14:40:37Z",
-      "timestamp": 1487860837125
+      "date-time": "2017-04-03T14:12:02Z",
+      "timestamp": 1491228722314
     },
     "reference-count": 29,
     "publisher": "American Society of Clinical Oncology (ASCO)",
@@ -6700,102 +6815,182 @@
       {
         "given": "Joel S.",
         "family": "Parker",
-        "affiliation": []
+        "affiliation": [
+          {
+            "name": "From the Lineberger Comprehensive Cancer Center and Departments of Genetics, Pathology and Laboratory Medicine, and Department of Statistics and Operations Research, Carolina Center for Genome Sciences, University of North Carolina at Chapel Hill, Chapel Hill, NC; Department of Pathology, University of Utah Health Sciences Center; ARUP Institute for Clinical and Experimental Pathology, Salt Lake City, UT; Genetic Pathology Evaluation Centre, Department of Pathology, Vancouver Coastal Health Research..."
+          }
+        ]
       },
       {
         "given": "Michael",
         "family": "Mullins",
-        "affiliation": []
+        "affiliation": [
+          {
+            "name": "From the Lineberger Comprehensive Cancer Center and Departments of Genetics, Pathology and Laboratory Medicine, and Department of Statistics and Operations Research, Carolina Center for Genome Sciences, University of North Carolina at Chapel Hill, Chapel Hill, NC; Department of Pathology, University of Utah Health Sciences Center; ARUP Institute for Clinical and Experimental Pathology, Salt Lake City, UT; Genetic Pathology Evaluation Centre, Department of Pathology, Vancouver Coastal Health Research..."
+          }
+        ]
       },
       {
         "given": "Maggie C.U.",
         "family": "Cheang",
-        "affiliation": []
+        "affiliation": [
+          {
+            "name": "From the Lineberger Comprehensive Cancer Center and Departments of Genetics, Pathology and Laboratory Medicine, and Department of Statistics and Operations Research, Carolina Center for Genome Sciences, University of North Carolina at Chapel Hill, Chapel Hill, NC; Department of Pathology, University of Utah Health Sciences Center; ARUP Institute for Clinical and Experimental Pathology, Salt Lake City, UT; Genetic Pathology Evaluation Centre, Department of Pathology, Vancouver Coastal Health Research..."
+          }
+        ]
       },
       {
         "given": "Samuel",
         "family": "Leung",
-        "affiliation": []
+        "affiliation": [
+          {
+            "name": "From the Lineberger Comprehensive Cancer Center and Departments of Genetics, Pathology and Laboratory Medicine, and Department of Statistics and Operations Research, Carolina Center for Genome Sciences, University of North Carolina at Chapel Hill, Chapel Hill, NC; Department of Pathology, University of Utah Health Sciences Center; ARUP Institute for Clinical and Experimental Pathology, Salt Lake City, UT; Genetic Pathology Evaluation Centre, Department of Pathology, Vancouver Coastal Health Research..."
+          }
+        ]
       },
       {
         "given": "David",
         "family": "Voduc",
-        "affiliation": []
+        "affiliation": [
+          {
+            "name": "From the Lineberger Comprehensive Cancer Center and Departments of Genetics, Pathology and Laboratory Medicine, and Department of Statistics and Operations Research, Carolina Center for Genome Sciences, University of North Carolina at Chapel Hill, Chapel Hill, NC; Department of Pathology, University of Utah Health Sciences Center; ARUP Institute for Clinical and Experimental Pathology, Salt Lake City, UT; Genetic Pathology Evaluation Centre, Department of Pathology, Vancouver Coastal Health Research..."
+          }
+        ]
       },
       {
         "given": "Tammi",
         "family": "Vickery",
-        "affiliation": []
+        "affiliation": [
+          {
+            "name": "From the Lineberger Comprehensive Cancer Center and Departments of Genetics, Pathology and Laboratory Medicine, and Department of Statistics and Operations Research, Carolina Center for Genome Sciences, University of North Carolina at Chapel Hill, Chapel Hill, NC; Department of Pathology, University of Utah Health Sciences Center; ARUP Institute for Clinical and Experimental Pathology, Salt Lake City, UT; Genetic Pathology Evaluation Centre, Department of Pathology, Vancouver Coastal Health Research..."
+          }
+        ]
       },
       {
         "given": "Sherri",
         "family": "Davies",
-        "affiliation": []
+        "affiliation": [
+          {
+            "name": "From the Lineberger Comprehensive Cancer Center and Departments of Genetics, Pathology and Laboratory Medicine, and Department of Statistics and Operations Research, Carolina Center for Genome Sciences, University of North Carolina at Chapel Hill, Chapel Hill, NC; Department of Pathology, University of Utah Health Sciences Center; ARUP Institute for Clinical and Experimental Pathology, Salt Lake City, UT; Genetic Pathology Evaluation Centre, Department of Pathology, Vancouver Coastal Health Research..."
+          }
+        ]
       },
       {
         "given": "Christiane",
         "family": "Fauron",
-        "affiliation": []
+        "affiliation": [
+          {
+            "name": "From the Lineberger Comprehensive Cancer Center and Departments of Genetics, Pathology and Laboratory Medicine, and Department of Statistics and Operations Research, Carolina Center for Genome Sciences, University of North Carolina at Chapel Hill, Chapel Hill, NC; Department of Pathology, University of Utah Health Sciences Center; ARUP Institute for Clinical and Experimental Pathology, Salt Lake City, UT; Genetic Pathology Evaluation Centre, Department of Pathology, Vancouver Coastal Health Research..."
+          }
+        ]
       },
       {
         "given": "Xiaping",
         "family": "He",
-        "affiliation": []
+        "affiliation": [
+          {
+            "name": "From the Lineberger Comprehensive Cancer Center and Departments of Genetics, Pathology and Laboratory Medicine, and Department of Statistics and Operations Research, Carolina Center for Genome Sciences, University of North Carolina at Chapel Hill, Chapel Hill, NC; Department of Pathology, University of Utah Health Sciences Center; ARUP Institute for Clinical and Experimental Pathology, Salt Lake City, UT; Genetic Pathology Evaluation Centre, Department of Pathology, Vancouver Coastal Health Research..."
+          }
+        ]
       },
       {
         "given": "Zhiyuan",
         "family": "Hu",
-        "affiliation": []
+        "affiliation": [
+          {
+            "name": "From the Lineberger Comprehensive Cancer Center and Departments of Genetics, Pathology and Laboratory Medicine, and Department of Statistics and Operations Research, Carolina Center for Genome Sciences, University of North Carolina at Chapel Hill, Chapel Hill, NC; Department of Pathology, University of Utah Health Sciences Center; ARUP Institute for Clinical and Experimental Pathology, Salt Lake City, UT; Genetic Pathology Evaluation Centre, Department of Pathology, Vancouver Coastal Health Research..."
+          }
+        ]
       },
       {
         "given": "John F.",
         "family": "Quackenbush",
-        "affiliation": []
+        "affiliation": [
+          {
+            "name": "From the Lineberger Comprehensive Cancer Center and Departments of Genetics, Pathology and Laboratory Medicine, and Department of Statistics and Operations Research, Carolina Center for Genome Sciences, University of North Carolina at Chapel Hill, Chapel Hill, NC; Department of Pathology, University of Utah Health Sciences Center; ARUP Institute for Clinical and Experimental Pathology, Salt Lake City, UT; Genetic Pathology Evaluation Centre, Department of Pathology, Vancouver Coastal Health Research..."
+          }
+        ]
       },
       {
         "given": "Inge J.",
         "family": "Stijleman",
-        "affiliation": []
+        "affiliation": [
+          {
+            "name": "From the Lineberger Comprehensive Cancer Center and Departments of Genetics, Pathology and Laboratory Medicine, and Department of Statistics and Operations Research, Carolina Center for Genome Sciences, University of North Carolina at Chapel Hill, Chapel Hill, NC; Department of Pathology, University of Utah Health Sciences Center; ARUP Institute for Clinical and Experimental Pathology, Salt Lake City, UT; Genetic Pathology Evaluation Centre, Department of Pathology, Vancouver Coastal Health Research..."
+          }
+        ]
       },
       {
         "given": "Juan",
         "family": "Palazzo",
-        "affiliation": []
+        "affiliation": [
+          {
+            "name": "From the Lineberger Comprehensive Cancer Center and Departments of Genetics, Pathology and Laboratory Medicine, and Department of Statistics and Operations Research, Carolina Center for Genome Sciences, University of North Carolina at Chapel Hill, Chapel Hill, NC; Department of Pathology, University of Utah Health Sciences Center; ARUP Institute for Clinical and Experimental Pathology, Salt Lake City, UT; Genetic Pathology Evaluation Centre, Department of Pathology, Vancouver Coastal Health Research..."
+          }
+        ]
       },
       {
         "given": "J.S.",
         "family": "Marron",
-        "affiliation": []
+        "affiliation": [
+          {
+            "name": "From the Lineberger Comprehensive Cancer Center and Departments of Genetics, Pathology and Laboratory Medicine, and Department of Statistics and Operations Research, Carolina Center for Genome Sciences, University of North Carolina at Chapel Hill, Chapel Hill, NC; Department of Pathology, University of Utah Health Sciences Center; ARUP Institute for Clinical and Experimental Pathology, Salt Lake City, UT; Genetic Pathology Evaluation Centre, Department of Pathology, Vancouver Coastal Health Research..."
+          }
+        ]
       },
       {
         "given": "Andrew B.",
         "family": "Nobel",
-        "affiliation": []
+        "affiliation": [
+          {
+            "name": "From the Lineberger Comprehensive Cancer Center and Departments of Genetics, Pathology and Laboratory Medicine, and Department of Statistics and Operations Research, Carolina Center for Genome Sciences, University of North Carolina at Chapel Hill, Chapel Hill, NC; Department of Pathology, University of Utah Health Sciences Center; ARUP Institute for Clinical and Experimental Pathology, Salt Lake City, UT; Genetic Pathology Evaluation Centre, Department of Pathology, Vancouver Coastal Health Research..."
+          }
+        ]
       },
       {
         "given": "Elaine",
         "family": "Mardis",
-        "affiliation": []
+        "affiliation": [
+          {
+            "name": "From the Lineberger Comprehensive Cancer Center and Departments of Genetics, Pathology and Laboratory Medicine, and Department of Statistics and Operations Research, Carolina Center for Genome Sciences, University of North Carolina at Chapel Hill, Chapel Hill, NC; Department of Pathology, University of Utah Health Sciences Center; ARUP Institute for Clinical and Experimental Pathology, Salt Lake City, UT; Genetic Pathology Evaluation Centre, Department of Pathology, Vancouver Coastal Health Research..."
+          }
+        ]
       },
       {
         "given": "Torsten O.",
         "family": "Nielsen",
-        "affiliation": []
+        "affiliation": [
+          {
+            "name": "From the Lineberger Comprehensive Cancer Center and Departments of Genetics, Pathology and Laboratory Medicine, and Department of Statistics and Operations Research, Carolina Center for Genome Sciences, University of North Carolina at Chapel Hill, Chapel Hill, NC; Department of Pathology, University of Utah Health Sciences Center; ARUP Institute for Clinical and Experimental Pathology, Salt Lake City, UT; Genetic Pathology Evaluation Centre, Department of Pathology, Vancouver Coastal Health Research..."
+          }
+        ]
       },
       {
         "given": "Matthew J.",
         "family": "Ellis",
-        "affiliation": []
+        "affiliation": [
+          {
+            "name": "From the Lineberger Comprehensive Cancer Center and Departments of Genetics, Pathology and Laboratory Medicine, and Department of Statistics and Operations Research, Carolina Center for Genome Sciences, University of North Carolina at Chapel Hill, Chapel Hill, NC; Department of Pathology, University of Utah Health Sciences Center; ARUP Institute for Clinical and Experimental Pathology, Salt Lake City, UT; Genetic Pathology Evaluation Centre, Department of Pathology, Vancouver Coastal Health Research..."
+          }
+        ]
       },
       {
         "given": "Charles M.",
         "family": "Perou",
-        "affiliation": []
+        "affiliation": [
+          {
+            "name": "From the Lineberger Comprehensive Cancer Center and Departments of Genetics, Pathology and Laboratory Medicine, and Department of Statistics and Operations Research, Carolina Center for Genome Sciences, University of North Carolina at Chapel Hill, Chapel Hill, NC; Department of Pathology, University of Utah Health Sciences Center; ARUP Institute for Clinical and Experimental Pathology, Salt Lake City, UT; Genetic Pathology Evaluation Centre, Department of Pathology, Vancouver Coastal Health Research..."
+          }
+        ]
       },
       {
         "given": "Philip S.",
         "family": "Bernard",
-        "affiliation": []
+        "affiliation": [
+          {
+            "name": "From the Lineberger Comprehensive Cancer Center and Departments of Genetics, Pathology and Laboratory Medicine, and Department of Statistics and Operations Research, Carolina Center for Genome Sciences, University of North Carolina at Chapel Hill, Chapel Hill, NC; Department of Pathology, University of Utah Health Sciences Center; ARUP Institute for Clinical and Experimental Pathology, Salt Lake City, UT; Genetic Pathology Evaluation Centre, Department of Pathology, Vancouver Coastal Health Research..."
+          }
+        ]
       }
     ],
     "member": "http://id.crossref.org/member/233",
@@ -6805,12 +7000,12 @@
       "date-parts": [
         [
           2017,
-          2,
-          23
+          4,
+          3
         ]
       ],
-      "date-time": "2017-02-23T13:11:25Z",
-      "timestamp": 1487855485000
+      "date-time": "2017-04-03T13:31:52Z",
+      "timestamp": 1491226312000
     },
     "score": 1.0,
     "subtitle": [],
@@ -7759,7 +7954,7 @@
       "date-parts": [
         [
           2017,
-          3,
+          4,
           3
         ]
       ]
@@ -7806,7 +8001,7 @@
       "date-parts": [
         [
           2017,
-          3,
+          4,
           3
         ]
       ]
@@ -7842,7 +8037,7 @@
       "date-parts": [
         [
           2017,
-          3,
+          4,
           3
         ]
       ]
@@ -7883,6 +8078,11 @@
     "PMID": "27134610",
     "PMCID": "PMC4832129",
     "type": "article-journal"
+  },
+  {
+    "URL": "http://ci.nii.ac.jp/naid/110006199745",
+    "type": "webpage",
+    "id": "ref_74"
   },
   {
     "indexed": {
@@ -7994,7 +8194,7 @@
     },
     "URL": "http://dx.doi.org/10.1101/055715",
     "citing-count": 0,
-    "id": "ref_75"
+    "id": "ref_76"
   },
   {
     "indexed": {
@@ -8092,17 +8292,142 @@
     },
     "URL": "http://dx.doi.org/10.1101/046508",
     "citing-count": 0,
-    "id": "ref_76"
+    "id": "ref_77"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          7
+        ]
+      ],
+      "date-time": "2017-01-07T01:50:44Z",
+      "timestamp": 1483753844781
+    },
+    "reference-count": 39,
+    "publisher": "Public Library of Science (PLoS)",
+    "issue": "11",
+    "license": [
+      {
+        "URL": "http://creativecommons.org/licenses/by/4.0/",
+        "start": {
+          "date-parts": [
+            [
+              2015,
+              11,
+              10
+            ]
+          ],
+          "date-time": "2015-11-10T00:00:00Z",
+          "timestamp": 1447113600000
+        },
+        "delay-in-days": 0,
+        "content-version": "vor"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "www.plosone.org"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "PLoS ONE"
+    ],
+    "cited-count": 0,
+    "DOI": "10.1371/journal.pone.0141287",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2015,
+          11,
+          10
+        ]
+      ],
+      "date-time": "2015-11-10T19:08:46Z",
+      "timestamp": 1447182526000
+    },
+    "page": "e0141287",
+    "update-policy": "http://dx.doi.org/10.1371/journal.pone.corrections_policy",
+    "source": "CrossRef",
+    "title": "Continuous Distributed Representation of Biological Sequences for Deep Proteomics and Genomics",
+    "prefix": "http://id.crossref.org/prefix/10.1371",
+    "volume": "10",
+    "author": [
+      {
+        "given": "Ehsaneddin",
+        "family": "Asgari",
+        "affiliation": []
+      },
+      {
+        "given": "Mohammad R. K.",
+        "family": "Mofrad",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/340",
+    "published-online": {
+      "date-parts": [
+        [
+          2015,
+          11,
+          10
+        ]
+      ]
+    },
+    "container-title": "PLOS ONE",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          6
+        ]
+      ],
+      "date-time": "2017-01-06T23:56:59Z",
+      "timestamp": 1483747019000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "editor": [
+      {
+        "given": "Firas H",
+        "family": "Kobeissy",
+        "affiliation": []
+      }
+    ],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2015,
+          11,
+          10
+        ]
+      ]
+    },
+    "URL": "http://dx.doi.org/10.1371/journal.pone.0141287",
+    "citing-count": 39,
+    "subject": [
+      "Biochemistry, Genetics and Molecular Biology(all)",
+      "Agricultural and Biological Sciences(all)",
+      "Medicine(all)"
+    ],
+    "id": "ref_78"
   },
   {
     "URL": "https://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimization.pdf",
     "type": "webpage",
-    "id": "ref_78"
+    "id": "ref_80"
   },
   {
     "URL": "http://dl.acm.org/citation.cfm?id=2188395",
     "type": "webpage",
-    "id": "ref_79"
+    "id": "ref_81"
   },
   {
     "indexed": {
@@ -8234,7 +8559,7 @@
       "Computational Mathematics",
       "Computer Science Applications"
     ],
-    "id": "ref_82"
+    "id": "ref_85"
   },
   {
     "indexed": {
@@ -8371,22 +8696,191 @@
       "Computational Mathematics",
       "Computer Science Applications"
     ],
-    "id": "ref_83"
+    "id": "ref_86"
   },
   {
     "URL": "http://www.jmlr.org/proceedings/papers/v28/coates13.html",
     "type": "webpage",
-    "id": "ref_84"
+    "id": "ref_87"
   },
   {
     "URL": "http://research.google.com/archive/large_deep_networks_nips2012.html",
     "type": "webpage",
-    "id": "ref_86"
+    "id": "ref_89"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2016,
+          11,
+          28
+        ]
+      ],
+      "date-time": "2016-11-28T20:39:53Z",
+      "timestamp": 1480365593635
+    },
+    "reference-count": 45,
+    "publisher": "Springer Nature",
+    "issue": "1",
+    "license": [
+      {
+        "URL": "http://www.springer.com/tdm",
+        "start": {
+          "date-parts": [
+            [
+              2015,
+              10,
+              7
+            ]
+          ],
+          "date-time": "2015-10-07T00:00:00Z",
+          "timestamp": 1444176000000
+        },
+        "delay-in-days": 0,
+        "content-version": "vor"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100001809",
+        "name": "National Natural Science Foundation of China",
+        "doi-asserted-by": "crossref",
+        "award": [
+          "61472078"
+        ]
+      },
+      {
+        "name": "the National Basic Research Program of China",
+        "award": [
+          "No. 2012CB316501"
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "BMC Bioinformatics"
+    ],
+    "cited-count": 0,
+    "published-print": {
+      "date-parts": [
+        [
+          2015,
+          12
+        ]
+      ]
+    },
+    "DOI": "10.1186/s12859-015-0753-3",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2015,
+          10,
+          7
+        ]
+      ],
+      "date-time": "2015-10-07T09:23:32Z",
+      "timestamp": 1444209812000
+    },
+    "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+    "source": "CrossRef",
+    "title": "DectICO: an alignment-free supervised metagenomic classification method based on feature extraction and dynamic selection",
+    "prefix": "http://id.crossref.org/prefix/10.1186",
+    "volume": "16",
+    "author": [
+      {
+        "given": "Xiao",
+        "family": "Ding",
+        "affiliation": []
+      },
+      {
+        "given": "Fudong",
+        "family": "Cheng",
+        "affiliation": []
+      },
+      {
+        "given": "Changchang",
+        "family": "Cao",
+        "affiliation": []
+      },
+      {
+        "given": "Xiao",
+        "family": "Sun",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/297",
+    "published-online": {
+      "date-parts": [
+        [
+          2015,
+          10,
+          7
+        ]
+      ]
+    },
+    "container-title": "BMC Bioinformatics",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://link.springer.com/content/pdf/10.1186/s12859-015-0753-3.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://link.springer.com/article/10.1186/s12859-015-0753-3/fulltext.html",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          11,
+          11
+        ]
+      ],
+      "date-time": "2016-11-11T12:37:53Z",
+      "timestamp": 1478867873000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2015,
+          10,
+          7
+        ]
+      ]
+    },
+    "alternative-id": [
+      "753"
+    ],
+    "URL": "http://dx.doi.org/10.1186/s12859-015-0753-3",
+    "citing-count": 45,
+    "subject": [
+      "Biochemistry",
+      "Molecular Biology",
+      "Computer Science Applications"
+    ],
+    "article-number": "323",
+    "id": "ref_90"
   },
   {
     "URL": "https://papers.nips.cc/paper/5717-taming-the-wild-a-unified-analysis-of-hogwild-style-algorithms.pdf",
     "type": "webpage",
-    "id": "ref_87"
+    "id": "ref_91"
   },
   {
     "indexed": {
@@ -8494,12 +8988,17 @@
     "subject": [
       "Computer Science(all)"
     ],
-    "id": "ref_88"
+    "id": "ref_92"
   },
   {
     "URL": "https://github.com/maxpumperla/elephas",
     "type": "webpage",
-    "id": "ref_89"
+    "id": "ref_93"
+  },
+  {
+    "URL": "http://alifar76.github.io/sklearn-metrics/",
+    "type": "webpage",
+    "id": "ref_94"
   },
   {
     "indexed": {
@@ -8650,7 +9149,7 @@
     "URL": "http://dx.doi.org/10.1186/s13059-016-0917-0",
     "citing-count": 55,
     "article-number": "53",
-    "id": "ref_90"
+    "id": "ref_95"
   },
   {
     "indexed": {
@@ -8764,17 +9263,383 @@
     },
     "URL": "http://dx.doi.org/10.14778/2212351.2212354",
     "citing-count": 0,
-    "id": "ref_92"
+    "id": "ref_97"
   },
   {
-    "URL": "https://github.com/fchollet/keras",
+    "URL": "http://www.fasebj.org/content/30/1_Supplement/406.3",
     "type": "webpage",
     "id": "ref_98"
   },
   {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          13
+        ]
+      ],
+      "date-time": "2017-01-13T18:43:07Z",
+      "timestamp": 1484332987417
+    },
+    "reference-count": 26,
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "14",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Bioinformatics"
+    ],
+    "cited-count": 0,
+    "published-print": {
+      "date-parts": [
+        [
+          2007,
+          7,
+          15
+        ]
+      ]
+    },
+    "DOI": "10.1093/bioinformatics/btm247",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2007,
+          5,
+          9
+        ]
+      ],
+      "date-time": "2007-05-09T02:24:29Z",
+      "timestamp": 1178677469000
+    },
+    "page": "1728-1736",
+    "source": "CrossRef",
+    "title": "Fast model-based protein homology detection without alignment",
+    "prefix": "http://id.crossref.org/prefix/10.1093",
+    "volume": "23",
+    "author": [
+      {
+        "given": "S.",
+        "family": "Hochreiter",
+        "affiliation": []
+      },
+      {
+        "given": "M.",
+        "family": "Heusel",
+        "affiliation": []
+      },
+      {
+        "given": "K.",
+        "family": "Obermayer",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/286",
+    "published-online": {
+      "date-parts": [
+        [
+          2007,
+          5,
+          8
+        ]
+      ]
+    },
+    "container-title": "Bioinformatics",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          13
+        ]
+      ],
+      "date-time": "2017-01-13T17:08:46Z",
+      "timestamp": 1484327326000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2007,
+          5,
+          8
+        ]
+      ]
+    },
+    "URL": "http://dx.doi.org/10.1093/bioinformatics/btm247",
+    "issn-type": [
+      {
+        "value": "1367-4803",
+        "type": "print"
+      },
+      {
+        "value": "1460-2059",
+        "type": "electronic"
+      }
+    ],
+    "citing-count": 26,
+    "subject": [
+      "Statistics and Probability",
+      "Computational Theory and Mathematics",
+      "Biochemistry",
+      "Molecular Biology",
+      "Computational Mathematics",
+      "Computer Science Applications"
+    ],
+    "id": "ref_102"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          23
+        ]
+      ],
+      "date-time": "2017-01-23T21:43:58Z",
+      "timestamp": 1485207838393
+    },
+    "reference-count": 13,
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "Web Server",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Nucleic Acids Research"
+    ],
+    "cited-count": 0,
+    "published-print": {
+      "date-parts": [
+        [
+          2009,
+          7,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1093/nar/gkp327",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2009,
+          5,
+          9
+        ]
+      ],
+      "date-time": "2009-05-09T00:49:45Z",
+      "timestamp": 1241830185000
+    },
+    "page": "W101-W105",
+    "source": "CrossRef",
+    "title": "Orphelia: predicting genes in metagenomic sequencing reads",
+    "prefix": "http://id.crossref.org/prefix/10.1093",
+    "volume": "37",
+    "author": [
+      {
+        "given": "K. J.",
+        "family": "Hoff",
+        "affiliation": []
+      },
+      {
+        "given": "T.",
+        "family": "Lingner",
+        "affiliation": []
+      },
+      {
+        "given": "P.",
+        "family": "Meinicke",
+        "affiliation": []
+      },
+      {
+        "given": "M.",
+        "family": "Tech",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/286",
+    "published-online": {
+      "date-parts": [
+        [
+          2009,
+          5,
+          8
+        ]
+      ]
+    },
+    "container-title": "Nucleic Acids Research",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          23
+        ]
+      ],
+      "date-time": "2017-01-23T20:46:03Z",
+      "timestamp": 1485204363000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2009,
+          5,
+          8
+        ]
+      ]
+    },
+    "URL": "http://dx.doi.org/10.1093/nar/gkp327",
+    "issn-type": [
+      {
+        "value": "0305-1048",
+        "type": "print"
+      },
+      {
+        "value": "1362-4962",
+        "type": "electronic"
+      }
+    ],
+    "citing-count": 13,
+    "subject": [
+      "Genetics"
+    ],
+    "id": "ref_103"
+  },
+  {
+    "URL": "https://github.com/fchollet/keras",
+    "type": "webpage",
+    "id": "ref_106"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          23
+        ]
+      ],
+      "date-time": "2017-01-23T23:43:26Z",
+      "timestamp": 1485215006018
+    },
+    "reference-count": 57,
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "2",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "FEMS Microbiol Rev"
+    ],
+    "cited-count": 0,
+    "published-print": {
+      "date-parts": [
+        [
+          2011,
+          3
+        ]
+      ]
+    },
+    "DOI": "10.1111/j.1574-6976.2010.00251.x",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2010,
+          9,
+          21
+        ]
+      ],
+      "date-time": "2010-09-21T13:07:26Z",
+      "timestamp": 1285074446000
+    },
+    "page": "343-359",
+    "source": "CrossRef",
+    "title": "Supervised classification of human microbiota",
+    "prefix": "http://id.crossref.org/prefix/10.1093",
+    "volume": "35",
+    "author": [
+      {
+        "given": "Dan",
+        "family": "Knights",
+        "affiliation": []
+      },
+      {
+        "given": "Elizabeth K.",
+        "family": "Costello",
+        "affiliation": []
+      },
+      {
+        "given": "Rob",
+        "family": "Knight",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/286",
+    "published-online": {
+      "date-parts": [
+        [
+          2011,
+          3,
+          1
+        ]
+      ]
+    },
+    "container-title": "FEMS Microbiology Reviews",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          23
+        ]
+      ],
+      "date-time": "2017-01-23T22:31:50Z",
+      "timestamp": 1485210710000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2011,
+          3
+        ]
+      ]
+    },
+    "alternative-id": [
+      "10.1111/j.1574-6976.2010.00251.x"
+    ],
+    "URL": "http://dx.doi.org/10.1111/j.1574-6976.2010.00251.x",
+    "issn-type": [
+      {
+        "value": "1574-6976",
+        "type": "electronic"
+      }
+    ],
+    "citing-count": 57,
+    "id": "ref_107"
+  },
+  {
     "URL": "https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf",
     "type": "webpage",
-    "id": "ref_99"
+    "id": "ref_108"
   },
   {
     "indexed": {
@@ -8867,7 +9732,153 @@
     },
     "URL": "http://dx.doi.org/10.1145/2623330.2623612",
     "citing-count": 0,
-    "id": "ref_102"
+    "id": "ref_111"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2016,
+          11,
+          12
+        ]
+      ],
+      "date-time": "2016-11-12T05:58:45Z",
+      "timestamp": 1478930325107
+    },
+    "update-to": [
+      {
+        "updated": {
+          "date-parts": [
+            [
+              2014,
+              5,
+              12
+            ]
+          ],
+          "date-time": "2014-05-12T00:00:00Z",
+          "timestamp": 1399852800000
+        },
+        "DOI": "10.1371/journal.pone.0053253",
+        "type": "correction",
+        "label": "Correction"
+      }
+    ],
+    "reference-count": 0,
+    "publisher": "Public Library of Science (PLoS)",
+    "issue": "5",
+    "license": [
+      {
+        "URL": "http://creativecommons.org/licenses/by/4.0/",
+        "start": {
+          "date-parts": [
+            [
+              2014,
+              5,
+              12
+            ]
+          ],
+          "date-time": "2014-05-12T00:00:00Z",
+          "timestamp": 1399852800000
+        },
+        "delay-in-days": 0,
+        "content-version": "vor"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "www.plosone.org"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "PLoS ONE"
+    ],
+    "cited-count": 0,
+    "DOI": "10.1371/journal.pone.0097958",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2014,
+          5,
+          12
+        ]
+      ],
+      "date-time": "2014-05-12T21:24:23Z",
+      "timestamp": 1399929863000
+    },
+    "page": "e97958",
+    "update-policy": "http://dx.doi.org/10.1371/journal.pone.corrections_policy",
+    "source": "CrossRef",
+    "title": "Correction: Class Prediction and Feature Selection with Linear Optimization for Metagenomic Count Data",
+    "prefix": "http://id.crossref.org/prefix/10.1371",
+    "volume": "9",
+    "author": [
+      {
+        "given": "Zhenqiu",
+        "family": "Liu",
+        "affiliation": []
+      },
+      {
+        "given": "Dechang",
+        "family": "Chen",
+        "affiliation": []
+      },
+      {
+        "given": "Li",
+        "family": "Sheng",
+        "affiliation": []
+      },
+      {
+        "given": "Amy Y.",
+        "family": "Liu",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/340",
+    "published-online": {
+      "date-parts": [
+        [
+          2014,
+          5,
+          12
+        ]
+      ]
+    },
+    "container-title": "PLoS ONE",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          4,
+          20
+        ]
+      ],
+      "date-time": "2016-04-20T18:04:46Z",
+      "timestamp": 1461175486000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2014,
+          5,
+          12
+        ]
+      ]
+    },
+    "URL": "http://dx.doi.org/10.1371/journal.pone.0097958",
+    "citing-count": 0,
+    "subject": [
+      "Biochemistry, Genetics and Molecular Biology(all)",
+      "Agricultural and Biological Sciences(all)",
+      "Medicine(all)"
+    ],
+    "id": "ref_112"
   },
   {
     "indexed": {
@@ -8964,7 +9975,136 @@
     "subject": [
       "Computer Science(all)"
     ],
-    "id": "ref_103"
+    "id": "ref_113"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2016,
+          10,
+          25
+        ]
+      ],
+      "date-time": "2016-10-25T15:05:29Z",
+      "timestamp": 1477407929510
+    },
+    "reference-count": 35,
+    "publisher": "Springer Nature",
+    "issue": "1",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Nat Meth"
+    ],
+    "cited-count": 0,
+    "published-print": {
+      "date-parts": [
+        [
+          2007,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1038/nmeth976",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2006,
+          12,
+          18
+        ]
+      ],
+      "date-time": "2006-12-18T15:32:55Z",
+      "timestamp": 1166455975000
+    },
+    "page": "63-72",
+    "source": "CrossRef",
+    "title": "Accurate phylogenetic classification of variable-length DNA fragments",
+    "prefix": "http://id.crossref.org/prefix/10.1038",
+    "volume": "4",
+    "author": [
+      {
+        "given": "Alice Carolyn",
+        "family": "McHardy",
+        "affiliation": []
+      },
+      {
+        "given": "Héctor García",
+        "family": "Martín",
+        "affiliation": []
+      },
+      {
+        "given": "Aristotelis",
+        "family": "Tsirigos",
+        "affiliation": []
+      },
+      {
+        "given": "Philip",
+        "family": "Hugenholtz",
+        "affiliation": []
+      },
+      {
+        "given": "Isidore",
+        "family": "Rigoutsos",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/339",
+    "published-online": {
+      "date-parts": [
+        [
+          2006,
+          12,
+          10
+        ]
+      ]
+    },
+    "container-title": "Nature Methods",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2011,
+          8,
+          23
+        ]
+      ],
+      "date-time": "2011-08-23T12:51:17Z",
+      "timestamp": 1314103877000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2006,
+          12,
+          10
+        ]
+      ]
+    },
+    "alternative-id": [
+      "nmeth976"
+    ],
+    "URL": "http://dx.doi.org/10.1038/nmeth976",
+    "citing-count": 35,
+    "subject": [
+      "Biotechnology",
+      "Cell Biology",
+      "Biochemistry",
+      "Molecular Biology"
+    ],
+    "id": "ref_114"
+  },
+  {
+    "URL": "https://repozitorij.uni-lj.si/IzpisGradiva.php?id=85515",
+    "type": "webpage",
+    "id": "ref_117"
   },
   {
     "indexed": {
@@ -9104,7 +10244,7 @@
     "subject": [
       "Computer Science(all)"
     ],
-    "id": "ref_106"
+    "id": "ref_118"
   },
   {
     "indexed": {
@@ -9192,7 +10332,103 @@
     },
     "URL": "http://dx.doi.org/10.1145/1553374.1553486",
     "citing-count": 0,
-    "id": "ref_107"
+    "id": "ref_119"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2016,
+          11,
+          12
+        ]
+      ],
+      "date-time": "2016-11-12T14:58:05Z",
+      "timestamp": 1478962685505
+    },
+    "reference-count": 0,
+    "publisher": "Springer Nature",
+    "issue": "1",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "BMC Bioinformatics"
+    ],
+    "cited-count": 0,
+    "published-print": {
+      "date-parts": [
+        [
+          2010
+        ]
+      ]
+    },
+    "DOI": "10.1186/1471-2105-11-544",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2010,
+          11,
+          3
+        ]
+      ],
+      "date-time": "2010-11-03T07:41:19Z",
+      "timestamp": 1288770079000
+    },
+    "page": "544",
+    "source": "CrossRef",
+    "title": "Clustering metagenomic sequences with interpolated Markov models",
+    "prefix": "http://id.crossref.org/prefix/10.1186",
+    "volume": "11",
+    "author": [
+      {
+        "given": "David R",
+        "family": "Kelley",
+        "affiliation": []
+      },
+      {
+        "given": "Steven L",
+        "family": "Salzberg",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/297",
+    "container-title": "BMC Bioinformatics",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          5,
+          16
+        ]
+      ],
+      "date-time": "2016-05-16T12:50:09Z",
+      "timestamp": 1463403009000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2010
+        ]
+      ]
+    },
+    "alternative-id": [
+      "1471-2105-11-544"
+    ],
+    "URL": "http://dx.doi.org/10.1186/1471-2105-11-544",
+    "citing-count": 0,
+    "subject": [
+      "Biochemistry",
+      "Molecular Biology",
+      "Computer Science Applications"
+    ],
+    "id": "ref_121"
   },
   {
     "indexed": {
@@ -9297,19 +10533,218 @@
       "Bioengineering",
       "Biomedical Engineering"
     ],
-    "id": "ref_109"
+    "id": "ref_122"
   },
   {
     "indexed": {
       "date-parts": [
         [
-          2016,
-          11,
-          12
+          2017,
+          3,
+          1
         ]
       ],
-      "date-time": "2016-11-12T09:37:26Z",
-      "timestamp": 1478943446422
+      "date-time": "2017-03-01T03:41:18Z",
+      "timestamp": 1488339678539
+    },
+    "reference-count": 66,
+    "publisher": "Public Library of Science (PLoS)",
+    "issue": "7",
+    "license": [
+      {
+        "URL": "http://creativecommons.org/licenses/by/4.0/",
+        "start": {
+          "date-parts": [
+            [
+              2016,
+              7,
+              11
+            ]
+          ],
+          "date-time": "2016-07-11T00:00:00Z",
+          "timestamp": 1468195200000
+        },
+        "delay-in-days": 0,
+        "content-version": "vor"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100003407",
+        "name": "Ministero dell’Istruzione, dell’Università e della Ricerca",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "RBFR13EWWI"
+        ]
+      },
+      {
+        "DOI": "10.13039/100000001",
+        "name": "National Science Foundation",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "CNS-958379",
+          "CNS-0855217",
+          "ACI-1126113"
+        ]
+      },
+      {
+        "DOI": "10.13039/100000060",
+        "name": "National Institute of Allergy and Infectious Diseases",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "1R21AI121784-01"
+        ]
+      },
+      {
+        "name": "Seventh Framework Programme (BE)",
+        "award": [
+          "PCIG13-618833"
+        ]
+      },
+      {
+        "name": "Fondazione Caritro",
+        "award": [
+          "Rif.Int.2013.0239"
+        ]
+      },
+      {
+        "name": "Terme di Comano",
+        "award": []
+      },
+      {
+        "name": "City University of New York High Performance Computing Center",
+        "award": []
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "www.ploscompbiol.org"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "PLoS Comput Biol"
+    ],
+    "cited-count": 0,
+    "DOI": "10.1371/journal.pcbi.1004977",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          7,
+          11
+        ]
+      ],
+      "date-time": "2016-07-11T17:28:34Z",
+      "timestamp": 1468258114000
+    },
+    "page": "e1004977",
+    "update-policy": "http://dx.doi.org/10.1371/journal.pcbi.corrections_policy",
+    "source": "CrossRef",
+    "title": "Machine Learning Meta-analysis of Large Metagenomic Datasets: Tools and Biological Insights",
+    "prefix": "http://id.crossref.org/prefix/10.1371",
+    "volume": "12",
+    "author": [
+      {
+        "given": "Edoardo",
+        "family": "Pasolli",
+        "affiliation": []
+      },
+      {
+        "given": "Duy Tin",
+        "family": "Truong",
+        "affiliation": []
+      },
+      {
+        "given": "Faizan",
+        "family": "Malik",
+        "affiliation": []
+      },
+      {
+        "given": "Levi",
+        "family": "Waldron",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-1583-5794",
+        "given": "Nicola",
+        "family": "Segata",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/340",
+    "published-online": {
+      "date-parts": [
+        [
+          2016,
+          7,
+          11
+        ]
+      ]
+    },
+    "container-title": "PLOS Computational Biology",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          3,
+          1
+        ]
+      ],
+      "date-time": "2017-03-01T02:08:24Z",
+      "timestamp": 1488334104000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "editor": [
+      {
+        "given": "Jonathan A.",
+        "family": "Eisen",
+        "affiliation": []
+      }
+    ],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          7,
+          11
+        ]
+      ]
+    },
+    "URL": "http://dx.doi.org/10.1371/journal.pcbi.1004977",
+    "issn-type": [
+      {
+        "value": "1553-7358",
+        "type": "electronic"
+      }
+    ],
+    "citing-count": 66,
+    "subject": [
+      "Ecology",
+      "Modelling and Simulation",
+      "Computational Theory and Mathematics",
+      "Genetics",
+      "Ecology, Evolution, Behavior and Systematics",
+      "Molecular Biology",
+      "Cellular and Molecular Neuroscience"
+    ],
+    "id": "ref_123"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          3,
+          23
+        ]
+      ],
+      "date-time": "2017-03-23T19:10:19Z",
+      "timestamp": 1490296219156
     },
     "reference-count": 23,
     "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
@@ -9376,13 +10811,13 @@
     "deposited": {
       "date-parts": [
         [
-          2016,
-          9,
-          29
+          2017,
+          3,
+          23
         ]
       ],
-      "date-time": "2016-09-29T13:13:28Z",
-      "timestamp": 1475154808000
+      "date-time": "2017-03-23T18:36:57Z",
+      "timestamp": 1490294217000
     },
     "score": 1.0,
     "subtitle": [],
@@ -9397,7 +10832,123 @@
     },
     "URL": "http://dx.doi.org/10.1109/icassp.2014.6853593",
     "citing-count": 23,
-    "id": "ref_110"
+    "id": "ref_124"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2016,
+          12,
+          19
+        ]
+      ],
+      "date-time": "2016-12-19T21:46:23Z",
+      "timestamp": 1482183983197
+    },
+    "reference-count": 101,
+    "publisher": "Walter de Gruyter GmbH",
+    "issue": "1",
+    "license": [
+      {
+        "URL": "http://creativecommons.org/licenses/by-nc-nd/3.0",
+        "start": {
+          "date-parts": [
+            [
+              2017,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2017-01-01T00:00:00Z",
+          "timestamp": 1483228800000
+        },
+        "delay-in-days": 0,
+        "content-version": "vor"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "cited-count": 0,
+    "published-print": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          1
+        ]
+      ]
+    },
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>Owing to the complexity and variability of metagenomic studies, modern machine learning approaches have seen increased usage to answer a variety of question encompassing the full range of metagenomic NGS data analysis.We review here the contribution of machine learning techniques for the field of metagenomics, by presenting known successful approaches in a unified framework. This review focuses on five important metagenomic problems:OTU-clustering, binning, taxonomic proffiing and assignment, comparative metagenomics and gene prediction. For each of these problems, we identify the most prominent methods, summarize the machine learning approaches used and put them into perspective of similar methods.We conclude our review looking further ahead at the challenge posed by the analysis of interactions within microbial communities and different environments, in a field one could call “integrative metagenomics”.</jats:p>",
+    "DOI": "10.1515/metgen-2016-0001",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          12,
+          14
+        ]
+      ],
+      "date-time": "2016-12-14T10:04:57Z",
+      "timestamp": 1481709897000
+    },
+    "source": "CrossRef",
+    "title": "Machine learning for metagenomics: methods and tools",
+    "prefix": "http://id.crossref.org/prefix/10.1515",
+    "volume": "1",
+    "author": [
+      {
+        "given": "Hayssam",
+        "family": "Soueidan",
+        "affiliation": []
+      },
+      {
+        "given": "Macha",
+        "family": "Nikolski",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/374",
+    "container-title": "Metagenomics",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://www.degruyter.com/view/j/metgen.2016.1.issue-1/metgen-2016-0001/metgen-2016-0001.xml",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          12,
+          17
+        ]
+      ],
+      "date-time": "2016-12-17T05:55:57Z",
+      "timestamp": 1481954157000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          1
+        ]
+      ]
+    },
+    "URL": "http://dx.doi.org/10.1515/metgen-2016-0001",
+    "citing-count": 101,
+    "id": "ref_127"
   },
   {
     "indexed": {
@@ -9484,7 +11035,138 @@
     ],
     "URL": "http://dx.doi.org/10.1186/gb-2010-11-5-207",
     "citing-count": 0,
-    "id": "ref_112"
+    "id": "ref_128"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2016,
+          11,
+          12
+        ]
+      ],
+      "date-time": "2016-11-12T15:38:07Z",
+      "timestamp": 1478965087522
+    },
+    "reference-count": 19,
+    "publisher": "Springer Nature",
+    "issue": "1",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Microbiome"
+    ],
+    "cited-count": 0,
+    "published-print": {
+      "date-parts": [
+        [
+          2013
+        ]
+      ]
+    },
+    "DOI": "10.1186/2049-2618-1-11",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2013,
+          4,
+          5
+        ]
+      ],
+      "date-time": "2013-04-05T12:15:14Z",
+      "timestamp": 1365164114000
+    },
+    "page": "11",
+    "source": "CrossRef",
+    "title": "A comprehensive evaluation of multicategory classification methods for microbiomic data",
+    "prefix": "http://id.crossref.org/prefix/10.1186",
+    "volume": "1",
+    "author": [
+      {
+        "given": "Alexander",
+        "family": "Statnikov",
+        "affiliation": []
+      },
+      {
+        "given": "Mikael",
+        "family": "Henaff",
+        "affiliation": []
+      },
+      {
+        "given": "Varun",
+        "family": "Narendra",
+        "affiliation": []
+      },
+      {
+        "given": "Kranti",
+        "family": "Konganti",
+        "affiliation": []
+      },
+      {
+        "given": "Zhiguo",
+        "family": "Li",
+        "affiliation": []
+      },
+      {
+        "given": "Liying",
+        "family": "Yang",
+        "affiliation": []
+      },
+      {
+        "given": "Zhiheng",
+        "family": "Pei",
+        "affiliation": []
+      },
+      {
+        "given": "Martin J",
+        "family": "Blaser",
+        "affiliation": []
+      },
+      {
+        "given": "Constantin F",
+        "family": "Aliferis",
+        "affiliation": []
+      },
+      {
+        "given": "Alexander V",
+        "family": "Alekseyenko",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/297",
+    "container-title": "Microbiome",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          5,
+          16
+        ]
+      ],
+      "date-time": "2016-05-16T17:05:49Z",
+      "timestamp": 1463418349000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2013
+        ]
+      ]
+    },
+    "alternative-id": [
+      "2049-2618-1-11"
+    ],
+    "URL": "http://dx.doi.org/10.1186/2049-2618-1-11",
+    "citing-count": 19,
+    "id": "ref_129"
   },
   {
     "indexed": {
@@ -9605,17 +11287,252 @@
       "Library and Information Sciences",
       "Computer Science Applications"
     ],
-    "id": "ref_115"
+    "id": "ref_132"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2016,
+          12,
+          4
+        ]
+      ],
+      "date-time": "2016-12-04T14:40:16Z",
+      "timestamp": 1480862416488
+    },
+    "reference-count": 30,
+    "publisher": "World Scientific Pub Co Pte Lt",
+    "issue": "05",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "J. Bioinform. Comput. Biol."
+    ],
+    "cited-count": 0,
+    "published-print": {
+      "date-parts": [
+        [
+          2012,
+          10
+        ]
+      ]
+    },
+    "DOI": "10.1142/s0219720012500151",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2012,
+          6,
+          6
+        ]
+      ],
+      "date-time": "2012-06-06T00:51:43Z",
+      "timestamp": 1338943903000
+    },
+    "page": "1250015",
+    "source": "CrossRef",
+    "title": "METAGENOMIC TAXONOMIC CLASSIFICATION USING EXTREME LEARNING MACHINES",
+    "prefix": "http://id.crossref.org/prefix/10.1142",
+    "volume": "10",
+    "author": [
+      {
+        "given": "ZEEHASHAM",
+        "family": "RASHEED",
+        "affiliation": []
+      },
+      {
+        "given": "HUZEFA",
+        "family": "RANGWALA",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/219",
+    "container-title": "Journal of Bioinformatics and Computational Biology",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          12,
+          4
+        ]
+      ],
+      "date-time": "2016-12-04T12:56:44Z",
+      "timestamp": 1480856204000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2012,
+          10
+        ]
+      ]
+    },
+    "alternative-id": [
+      "10.1142/S0219720012500151"
+    ],
+    "URL": "http://dx.doi.org/10.1142/s0219720012500151",
+    "citing-count": 30,
+    "subject": [
+      "Biochemistry",
+      "Molecular Biology",
+      "Computer Science Applications"
+    ],
+    "id": "ref_133"
   },
   {
     "URL": "http://download.tensorflow.org/paper/whitepaper2015.pdf",
     "type": "webpage",
-    "id": "ref_116"
+    "id": "ref_134"
   },
   {
     "URL": "https://research.google.com/pubs/pub37631.html",
     "type": "webpage",
-    "id": "ref_117"
+    "id": "ref_135"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          13
+        ]
+      ],
+      "date-time": "2017-01-13T18:53:51Z",
+      "timestamp": 1484333631201
+    },
+    "reference-count": 31,
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "7",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Bioinformatics"
+    ],
+    "cited-count": 0,
+    "published-print": {
+      "date-parts": [
+        [
+          2016,
+          4,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1093/bioinformatics/btv683",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2015,
+          11,
+          21
+        ]
+      ],
+      "date-time": "2015-11-21T02:29:46Z",
+      "timestamp": 1448072986000
+    },
+    "page": "1023-1032",
+    "source": "CrossRef",
+    "title": "Large-scale machine learning for metagenomics sequence classification",
+    "prefix": "http://id.crossref.org/prefix/10.1093",
+    "volume": "32",
+    "author": [
+      {
+        "given": "Kévin",
+        "family": "Vervier",
+        "affiliation": []
+      },
+      {
+        "given": "Pierre",
+        "family": "Mahé",
+        "affiliation": []
+      },
+      {
+        "given": "Maud",
+        "family": "Tournoud",
+        "affiliation": []
+      },
+      {
+        "given": "Jean-Baptiste",
+        "family": "Veyrieras",
+        "affiliation": []
+      },
+      {
+        "given": "Jean-Philippe",
+        "family": "Vert",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/286",
+    "published-online": {
+      "date-parts": [
+        [
+          2015,
+          11,
+          20
+        ]
+      ]
+    },
+    "container-title": "Bioinformatics",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          13
+        ]
+      ],
+      "date-time": "2017-01-13T17:23:39Z",
+      "timestamp": 1484328219000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2015,
+          11,
+          20
+        ]
+      ]
+    },
+    "alternative-id": [
+      "10.1093/bioinformatics/btv683"
+    ],
+    "URL": "http://dx.doi.org/10.1093/bioinformatics/btv683",
+    "issn-type": [
+      {
+        "value": "1367-4803",
+        "type": "print"
+      },
+      {
+        "value": "1460-2059",
+        "type": "electronic"
+      }
+    ],
+    "citing-count": 31,
+    "subject": [
+      "Statistics and Probability",
+      "Computational Theory and Mathematics",
+      "Biochemistry",
+      "Molecular Biology",
+      "Computational Mathematics",
+      "Computer Science Applications"
+    ],
+    "id": "ref_136"
   },
   {
     "indexed": {
@@ -9862,22 +11779,385 @@
       "Drug Discovery",
       "Computer Science Applications"
     ],
-    "id": "ref_118"
+    "id": "ref_137"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2016,
+          11,
+          1
+        ]
+      ],
+      "date-time": "2016-11-01T17:41:51Z",
+      "timestamp": 1478022111371
+    },
+    "reference-count": 23,
+    "publisher": "Elsevier BV",
+    "issue": "3",
+    "license": [
+      {
+        "URL": "http://www.elsevier.com/tdm/userlicense/1.0/",
+        "start": {
+          "date-parts": [
+            [
+              1990,
+              10,
+              1
+            ]
+          ],
+          "date-time": "1990-10-01T00:00:00Z",
+          "timestamp": 654739200000
+        },
+        "delay-in-days": 0,
+        "content-version": "tdm"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Journal of Molecular Biology"
+    ],
+    "cited-count": 0,
+    "published-print": {
+      "date-parts": [
+        [
+          1990,
+          10
+        ]
+      ]
+    },
+    "DOI": "10.1016/s0022-2836(05)80360-2",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2007,
+          2,
+          7
+        ]
+      ],
+      "date-time": "2007-02-07T12:54:11Z",
+      "timestamp": 1170852851000
+    },
+    "page": "403-410",
+    "source": "CrossRef",
+    "title": "Basic local alignment search tool",
+    "prefix": "http://id.crossref.org/prefix/10.1016",
+    "volume": "215",
+    "author": [
+      {
+        "given": "Stephen F.",
+        "family": "Altschul",
+        "affiliation": []
+      },
+      {
+        "given": "Warren",
+        "family": "Gish",
+        "affiliation": []
+      },
+      {
+        "given": "Webb",
+        "family": "Miller",
+        "affiliation": []
+      },
+      {
+        "given": "Eugene W.",
+        "family": "Myers",
+        "affiliation": []
+      },
+      {
+        "given": "David J.",
+        "family": "Lipman",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/78",
+    "container-title": "Journal of Molecular Biology",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://api.elsevier.com/content/article/PII:S0022283605803602?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://api.elsevier.com/content/article/PII:S0022283605803602?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2015,
+          11,
+          28
+        ]
+      ],
+      "date-time": "2015-11-28T16:30:46Z",
+      "timestamp": 1448728246000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          1990,
+          10
+        ]
+      ]
+    },
+    "alternative-id": [
+      "S0022283605803602"
+    ],
+    "URL": "http://dx.doi.org/10.1016/s0022-2836(05)80360-2",
+    "citing-count": 23,
+    "subject": [
+      "Molecular Biology"
+    ],
+    "id": "ref_138"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          13
+        ]
+      ],
+      "date-time": "2017-01-13T18:46:30Z",
+      "timestamp": 1484333190253
+    },
+    "reference-count": 10,
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "1",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Bioinformatics"
+    ],
+    "cited-count": 0,
+    "published-print": {
+      "date-parts": [
+        [
+          2011,
+          1,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1093/bioinformatics/btq619",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2010,
+          11,
+          10
+        ]
+      ],
+      "date-time": "2010-11-10T01:25:36Z",
+      "timestamp": 1289352336000
+    },
+    "page": "127-129",
+    "source": "CrossRef",
+    "title": "NBC: the Naive Bayes Classification tool webserver for taxonomic classification of metagenomic reads",
+    "prefix": "http://id.crossref.org/prefix/10.1093",
+    "volume": "27",
+    "author": [
+      {
+        "given": "G. L.",
+        "family": "Rosen",
+        "affiliation": []
+      },
+      {
+        "given": "E. R.",
+        "family": "Reichenberger",
+        "affiliation": []
+      },
+      {
+        "given": "A. M.",
+        "family": "Rosenfeld",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/286",
+    "published-online": {
+      "date-parts": [
+        [
+          2010,
+          11,
+          8
+        ]
+      ]
+    },
+    "container-title": "Bioinformatics",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          13
+        ]
+      ],
+      "date-time": "2017-01-13T17:32:15Z",
+      "timestamp": 1484328735000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2010,
+          11,
+          8
+        ]
+      ]
+    },
+    "URL": "http://dx.doi.org/10.1093/bioinformatics/btq619",
+    "issn-type": [
+      {
+        "value": "1367-4803",
+        "type": "print"
+      },
+      {
+        "value": "1460-2059",
+        "type": "electronic"
+      }
+    ],
+    "citing-count": 10,
+    "subject": [
+      "Statistics and Probability",
+      "Computational Theory and Mathematics",
+      "Biochemistry",
+      "Molecular Biology",
+      "Computational Mathematics",
+      "Computer Science Applications"
+    ],
+    "id": "ref_139"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2016,
+          11,
+          12
+        ]
+      ],
+      "date-time": "2016-11-12T14:59:22Z",
+      "timestamp": 1478962762085
+    },
+    "reference-count": 0,
+    "publisher": "Springer Nature",
+    "issue": "1",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "BMC Bioinformatics"
+    ],
+    "cited-count": 0,
+    "published-print": {
+      "date-parts": [
+        [
+          2011
+        ]
+      ]
+    },
+    "DOI": "10.1186/1471-2105-12-20",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2011,
+          1,
+          19
+        ]
+      ],
+      "date-time": "2011-01-19T11:10:25Z",
+      "timestamp": 1295435425000
+    },
+    "page": "20",
+    "source": "CrossRef",
+    "title": "Combining gene prediction methods to improve metagenomic gene annotation",
+    "prefix": "http://id.crossref.org/prefix/10.1186",
+    "volume": "12",
+    "author": [
+      {
+        "given": "Non G",
+        "family": "Yok",
+        "affiliation": []
+      },
+      {
+        "given": "Gail L",
+        "family": "Rosen",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/297",
+    "container-title": "BMC Bioinformatics",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          5,
+          16
+        ]
+      ],
+      "date-time": "2016-05-16T12:51:59Z",
+      "timestamp": 1463403119000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2011
+        ]
+      ]
+    },
+    "alternative-id": [
+      "1471-2105-12-20"
+    ],
+    "URL": "http://dx.doi.org/10.1186/1471-2105-12-20",
+    "citing-count": 0,
+    "subject": [
+      "Biochemistry",
+      "Molecular Biology",
+      "Computer Science Applications"
+    ],
+    "id": "ref_140"
   },
   {
     "URL": "http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf",
     "type": "webpage",
-    "id": "ref_119"
+    "id": "ref_141"
   },
   {
     "URL": "http://research.google.com/archive/unsupervised_icml2012.html",
     "type": "webpage",
-    "id": "ref_120"
+    "id": "ref_142"
   },
   {
     "URL": "https://aclweb.org/anthology/D/D13/D13-1079.pdf",
     "type": "webpage",
-    "id": "ref_121"
+    "id": "ref_143"
   },
   {
     "abstract": "After a more than decade-long period of relatively little research activity in the area of recurrent neural networks, several new developments will be reviewed here that have allowed substantial progress both in understanding and in technical solutions towards more efficient training of recurrent networks. These advances have been motivated by and related to the optimization issues surrounding deep learning. Although recurrent networks are extremely powerful in what they can in principle represent in terms of modelling sequences,their training is plagued by two aspects of the same issue regarding the learning of long-term dependencies. Experiments reported here evaluate the use of clipping gradients, spanning longer time ranges with leaky integration, advanced momentum techniques, using more powerful output probability models, and encouraging sparser gradients to help symmetry breaking and credit assignment. The experiments are performed on text and music data and show off the combined effects of these techniques in generally improving both training and test error.",
@@ -10372,7 +12652,7 @@
         "given": "Vijay"
       }
     ],
-    "id": "ref_74",
+    "id": "ref_75",
     "issued": {
       "date-parts": [
         [
@@ -10400,7 +12680,7 @@
         "given": "Jean-Pierre"
       }
     ],
-    "id": "ref_77",
+    "id": "ref_79",
     "issued": {
       "date-parts": [
         [
@@ -10410,6 +12690,35 @@
       ]
     },
     "title": "Training deep neural networks with low precision multiplications",
+    "type": "article-journal"
+  },
+  {
+    "abstract": "Motivation: The MinION device by Oxford Nanopore is the first portable sequencing device. MinION is able to produce very long reads (reads over 100 kBp were reported), however it suffers from high sequencing error rate. In this paper, we show that the error rate can be reduced by improving the base calling process. Results: We present the first open-source DNA base caller for the MinION sequencing platform by Oxford Nanopore. By employing carefully crafted recurrent neural networks, our tool improves the base calling accuracy compared to the default base caller supplied by the manufacturer. This advance may further enhance applicability of MinION for genome sequencing and various clinical applications. Availability: DeepNano can be downloaded at http://compbio.fmph.uniba.sk/deepnano/. Contact: boza@fmph.uniba.sk",
+    "author": [
+      {
+        "family": "Boža",
+        "given": "Vladimír"
+      },
+      {
+        "family": "Brejová",
+        "given": "Broňa"
+      },
+      {
+        "family": "Vinař",
+        "given": "Tomáš"
+      }
+    ],
+    "id": "ref_82",
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          3
+        ]
+      ]
+    },
+    "title": "DeepNano: Deep recurrent neural networks for base calling in minion nanopore reads",
+    "title-short": "DeepNano",
     "type": "article-journal"
   },
   {
@@ -10424,7 +12733,7 @@
         "given": "Rich"
       }
     ],
-    "id": "ref_80",
+    "id": "ref_83",
     "issued": {
       "date-parts": [
         [
@@ -10460,7 +12769,7 @@
         "given": "Yixin"
       }
     ],
-    "id": "ref_81",
+    "id": "ref_84",
     "issued": {
       "date-parts": [
         [
@@ -10504,7 +12813,7 @@
         "given": "Evan"
       }
     ],
-    "id": "ref_85",
+    "id": "ref_88",
     "issued": {
       "date-parts": [
         [
@@ -10549,7 +12858,7 @@
         "given": "Alán"
       }
     ],
-    "id": "ref_91",
+    "id": "ref_96",
     "issued": {
       "date-parts": [
         [
@@ -10581,7 +12890,7 @@
         "given": "Pritish"
       }
     ],
-    "id": "ref_93",
+    "id": "ref_99",
     "issued": {
       "date-parts": [
         [
@@ -10613,7 +12922,7 @@
         "given": "Christopher"
       }
     ],
-    "id": "ref_94",
+    "id": "ref_100",
     "issued": {
       "date-parts": [
         [
@@ -10642,7 +12951,7 @@
         "given": "Jeff"
       }
     ],
-    "id": "ref_95",
+    "id": "ref_101",
     "issued": {
       "date-parts": [
         [
@@ -10678,7 +12987,7 @@
         "given": "Yoshua"
       }
     ],
-    "id": "ref_96",
+    "id": "ref_104",
     "issued": {
       "date-parts": [
         [
@@ -10707,7 +13016,7 @@
         "given": "Vijay"
       }
     ],
-    "id": "ref_97",
+    "id": "ref_105",
     "issued": {
       "date-parts": [
         [
@@ -10727,7 +13036,7 @@
         "given": "Alex"
       }
     ],
-    "id": "ref_100",
+    "id": "ref_109",
     "issued": {
       "date-parts": [
         [
@@ -10755,7 +13064,7 @@
         "given": "Shawki"
       }
     ],
-    "id": "ref_101",
+    "id": "ref_110",
     "issued": {
       "date-parts": [
         [
@@ -10836,7 +13145,7 @@
         "given": "Ameet"
       }
     ],
-    "id": "ref_104",
+    "id": "ref_115",
     "issued": {
       "date-parts": [
         [
@@ -10869,7 +13178,7 @@
         "given": "Michael I."
       }
     ],
-    "id": "ref_105",
+    "id": "ref_116",
     "issued": {
       "date-parts": [
         [
@@ -10902,7 +13211,7 @@
         "given": "Christopher"
       }
     ],
-    "id": "ref_108",
+    "id": "ref_120",
     "issued": {
       "date-parts": [
         [
@@ -10947,7 +13256,7 @@
         "given": "Yuval"
       }
     ],
-    "id": "ref_111",
+    "id": "ref_125",
     "issued": {
       "date-parts": [
         [
@@ -10957,6 +13266,40 @@
       ]
     },
     "title": "Removal of batch effects using distribution-matching residual networks",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.1007/978-3-319-21233-3_6",
+    "abstract": "Machine learning is widely used to analyze biological sequence data. Non-sequential models such as SVMs or feed-forward neural networks are often used although they have no natural way of handling sequences of varying length. Recurrent neural networks such as the long short term memory (LSTM) model on the other hand are designed to handle sequences. In this study we demonstrate that LSTM networks predict the subcellular location of proteins given only the protein sequence with high accuracy (0.902) outperforming current state of the art algorithms. We further improve the performance by introducing convolutional filters and experiment with an attention mechanism which lets the LSTM focus on specific parts of the protein. Lastly we introduce new visualizations of both the convolutional filters and the attention mechanisms and show how they can be used to extract biological relevant knowledge from the LSTM networks.",
+    "author": [
+      {
+        "family": "Sønderby",
+        "given": "Søren Kaae"
+      },
+      {
+        "family": "Sønderby",
+        "given": "Casper Kaae"
+      },
+      {
+        "family": "Nielsen",
+        "given": "Henrik"
+      },
+      {
+        "family": "Winther",
+        "given": "Ole"
+      }
+    ],
+    "id": "ref_126",
+    "issued": {
+      "date-parts": [
+        [
+          2015,
+          3
+        ]
+      ]
+    },
+    "note": "Algorithms for Computational Biology 9199 (2015) 68",
+    "title": "Convolutional lstm networks for subcellular localization of proteins",
     "type": "article-journal"
   },
   {
@@ -10971,7 +13314,7 @@
         "given": "Haoyu"
       }
     ],
-    "id": "ref_113",
+    "id": "ref_130",
     "issued": {
       "date-parts": [
         [
@@ -10999,7 +13342,7 @@
         "given": "Tie-Yan"
       }
     ],
-    "id": "ref_114",
+    "id": "ref_131",
     "issued": {
       "date-parts": [
         [

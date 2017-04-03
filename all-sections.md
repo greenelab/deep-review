@@ -31,7 +31,7 @@ computer scientists are now building many-layered neural networks from
 collections of millions of images. In an early famous example, scientists from
 Google demonstrated that a neural network could learn to identify cats simply by
 watching online videos
-[@ref_120].
+[@ref_142].
 
 What if, more generally, deep learning could solve the challenges
 presented by the growth of data in biomedicine? Could these algorithms
@@ -252,7 +252,7 @@ network. Combining this data resource with standard deep learning techniques,
 the authors reach greater than 93% accuracy. One item that is important to note
 with regards to this work is that the authors used their test set for evaluating
 when training had concluded. In other domains, this has resulted in a minimal
-change in the estimated accuracy [@ref_119]. However,
+change in the estimated accuracy [@ref_141]. However,
 there is not yet a single accepted standard within the field of biomedical
 research for such evaluations. We recommend the use of an independent test set
 wherever it is feasible. Despite this minor limitation, the work clearly
@@ -390,7 +390,7 @@ unsolved even at a treatment best practices level. This may be a promising
 application of deep learning, as rules-based algorithms were also the standard
 in most natural language processing but have been superseded by machine learning
 and in particular deep learning methods
-[@ref_121].
+[@ref_143].
 
 ###### Temporal Patient Trajectories
 
@@ -538,7 +538,7 @@ particularly notable in this area?*
 
 ### Signaling
 
-*There is not much content here.  Can [@ref_82] be covered
+*There is not much content here.  Can [@ref_85] be covered
 elsewhere?*
 
 ### Morphological phenotypes
@@ -598,9 +598,9 @@ unsupervised uses.`
 
 *There are not many neural network papers in this area (yet), unless we count
 imaging applications.  But there is still plenty to discuss.  The existing
-methods [@ref_76 @ref_75]
+methods [@ref_77 @ref_76]
 use interesting network architectures to approach single-cell data.
-[@ref_111] could fit here.*
+[@ref_125] could fit here.*
 
 ### Metagenomics
 
@@ -616,8 +616,8 @@ mixed-organism samples. And to do that, the organisms should be “binned”
 before assembling.  Binning methods began with many k-mer techniques [refs] 
 and then delved into other clustering algorithms, such as self-organizing maps 
 (SOM).  Then came the taxonomic classification problem,  with researchers 
-naturally using BLAST [blast], followed by other machine learning techniques 
-such as SVMs [McHardy], naive Bayesian classifiers [nbc], etc. to classify 
+naturally using BLAST [@ref_138], followed by other machine learning techniques 
+such as SVMs [@ref_114], naive Bayesian classifiers [@ref_139], etc. to classify
 each read.  Then, researchers began to use techniques that could be used to 
 estimate relative abundances of an entire sample, instead of the precise but
 painstakingly slow read-by-read classification.  Relative abundance
@@ -626,47 +626,47 @@ and some configurations of tools like OneCodex[ref] and LMAT[ref].  While one
 cannot identify which reads were mapped back to an organism using relative
 abundance estimators, they can be useful for faster comparative and other
 downstream analyses.   Newer methods hope to classify reads and estimate
-relative abundances at faster rates [Vervier] and as of this writing, there
+relative abundances at faster rates [@ref_136] and as of this writing, there
 are more than 70 metagenomic taxonomic classifiers in existence.  Besides
 binning and classification of species, there is functional identification and
-annotation of sequence reads [Yok,Soueidan]. However, the focus on
+annotation of sequence reads [@ref_140 @ref_127]. However, the focus on
 taxonomic/functional annotation is just the first step.  Once organisms are
 identified, there is the interest in understanding the interrelationship
-between these organisms and host/environment phenotypes [Guetterman].  One of
+between these organisms and host/environment phenotypes [@ref_98].  One of
 the first attempts was a survey of supervised classification methods for
-microbes->phenotype classification [Knights], followed by similar studies
-that are more massive in scale [Stratnikov, Segata].  There have been
-techniques that bypass the taxonomic classification step altogether [ Ding et al]
-, (sequence composition to phenotype classification).  Also, researchers have
-looked into how feature selection can improve classification [Liu, Segata],
+microbes->phenotype classification [@ref_107], followed by similar studies
+that are more massive in scale [@ref_129 @ref_123].  There have been
+techniques that bypass the taxonomic classification step altogether [@ref_90],
+(sequence composition to phenotype classification).  Also, researchers have
+looked into how feature selection can improve classification [@ref_112 @ref_123],
 and techniques have been proposed that are classifier-independent
 [Ditzler,Ditzler].
 
 So, how have neural networks (NNs) been of use?    Most neural networks are being 
 used for short sequence->taxa/function classification, where there is a lot of data 
 for training (and thus suitable for NNs).  Neural networks have been applied 
-successfully to gene annotation (e.g. Orphelia [Hoff] and FragGeneScan [@ref_43]), 
+successfully to gene annotation (e.g. Orphelia [@ref_103] and FragGeneScan [@ref_43]), 
 which usually has plenty of training examples.  Representations (similar to Word2Vec [ref] in 
 natural language processing) for protein family classification has been introduced and classified 
-with a skip-gram  neural network [Asgari].  Recurrent neural networks show good performance for 
-homology and protein family identification [Hochreiter, Sonderby].  Interestingly, 
+with a skip-gram  neural network [@ref_78].  Recurrent neural networks show good performance for 
+homology and protein family identification [@ref_102 @ref_126].  Interestingly, 
 Hochreiter, who invented Long Short Term Memory, delved into homology/protein family
 classification in 2007, and therefore, deep learning is deeply rooted in
 functional classification methods.
 
 One of the first techniques of “de novo” genome binning used self-organizing maps, a 
-type of NN [Abe].  Essinger et al. use ART, a neural network algorithm called Adaptive 
+type of NN [@ref_74].  Essinger et al. use ART, a neural network algorithm called Adaptive 
 Resonance Theory, to cluster similar genomic fragments and showed that it has better 
 performance than K-means.  However, other methods based on interpolated Markov models 
-[Salzberg] have performed better than these early genome binners.  Also, neural networks 
+[@ref_121] have performed better than these early genome binners.  Also, neural networks 
 can be slow, and therefore, have had limited use for reference-based taxonomic 
-classification, with TAC-ELM [tac-elm] being the only NN-based algorithm to taxonomically 
+classification, with TAC-ELM [@ref_133] being the only NN-based algorithm to taxonomically 
 classify massive amounts of metagenomic data.  Also, neural networks can fail to perform 
 if there are not enough training examples, which is the case with taxonomic classification 
-(since only ~10% of estimated species have been sequenced).   An initial study shows that 
+(since only ~10% of estimated species have been sequenced). An initial study shows that 
 deep neural networks have been successfully applied to  taxonomic classification of 16S rRNA genes,
 with convolutional networks  provide about 10% accuracy genus-level improvement over RNNs and even random 
-forests [Mrzelj].  However, this study performed 10-fold cross-validation on 3000 sequences in total. 
+forests [@ref_117].  However, this study performed 10-fold cross-validation on 3000 sequences in total. 
 
 Due to the traditionally small numbers of metagenomic samples in studies, neural network uses for 
 classifying phenotype from microbial composition are just beginning.   A standard MLP 
@@ -680,7 +680,7 @@ that internal phylogenetic tree nodes inferred by the networks are
 appropriate features representing low/high pH, which can provide additional
 useful information and new features for future metagenomic sample comparison.
  Also, an initial study has show promise of these networks for diagnosing
-disease [Faruqi].  
+disease [@ref_94].  
 
 There are still a lot of challenges with applying deep neural networks to metagenomics problems.  They are not ideal for microbial/functional composition->phenotype classification because most studies contain tens of samples (~20->40) and
 hundreds/thousands of features (aka species).  Such underdetermined/ill-conditioned problems
@@ -692,11 +692,11 @@ networks -- due to only thousands of full-sequenced genomes as compared to hundr
 available for training.
 
 However, because recurrent neural networks are showing success for base-calling (and thus removing the large error in 
-the measurement of a pore's current signal) for the relatively new Oxford Nanopore sequencer [Boza], there is hope that
-the process of denoising->organism/function classification can be combined into one step in using powerful LSTM's.  LSTM's
+the measurement of a pore's current signal) for the relatively new Oxford Nanopore sequencer [@ref_82], there is hope that
+the process of denoising->organism/function classification can be combined into one step in using powerful LSTM's. LSTM's
 are working miracles in raw speech signal->meaning translation [ref], and combining steps in metagenomics are not out of the 
 question.  For example, metagenomic assembly usually requires binning then assembly, but could deep neural nets accomplish
-both tasks in one network?  Does functional/taxonomic classification need to be separate processes?  The largest potential
+both tasks in one network? Does functional/taxonomic classification need to be separate processes?  The largest potential
 in deep learning is to learn "everything" in one complex network, with a plethora of labeled (reference) data and unlabeled 
 (microbiome experiments) examples.
 
@@ -733,7 +733,7 @@ feature selection and construction.*
 **TODO: expand outline**
 
 - Short introduction to problem, related reviews, use vHTS definition from
-[@ref_115] (vHTS doesn't fit neatly into classic classification,
+[@ref_132] (vHTS doesn't fit neatly into classic classification,
 regression, or ranking)
 - Introduce ligand-based approaches, hype and excitement surrounding
 performance of a "high-parameter" network on the Merck Kaggle challenge,
@@ -742,11 +742,11 @@ that followed, Tox21 Data Challenge
 - Multitask networks related to the above point
 - Realistic view of where things stand today, high-parameter networks struggle
 with overfitting, cross validation needs to be done carefully because of temporal
-structure [@ref_97], low parameter networks based on chemical
+structure [@ref_105], low parameter networks based on chemical
 similarity (IRV) work very well, especially well-suited for the domain in which
 training data can be limited and contains few positive instances, may touch on
 BACE example here and other discussions of training data limitations (e.g.
-[@ref_74])
+[@ref_75])
 - "Creative experimentation" phase of the field, new ideas for representation
 learning and novel approaches including graph convolutions, autoencoders,
 one shot learning, and generative models
@@ -832,74 +832,74 @@ networks and using them for classification. As such, neural networks
 have only recently found widespread use [@ref_29].
 
 Many have sought to curb the costs of deep learning, with methods ranging from
-the very applied (e.g., reduced numerical precision [@ref_93
-@ref_77 @ref_108 @ref_96]) to the exotic
+the very applied (e.g., reduced numerical precision [@ref_99
+@ref_79 @ref_120 @ref_104]) to the exotic
 and theoretic (e.g., training small networks to mimic large networks and
-ensembles [@ref_80 @ref_95]). The largest
+ensembles [@ref_83 @ref_101]). The largest
 gains in efficiency have come from computation with graphics processing units
-(GPUs) [@ref_107 @ref_117 @ref_110
-@ref_94 @ref_88
+(GPUs) [@ref_119 @ref_135 @ref_124
+@ref_100 @ref_92
 @ref_29], which excel at the matrix and vector
 operations so central to deep learning. The massively parallel nature of GPUs
 allows additional optimizations, such as accelerated mini-batch gradient
-descent [@ref_117 @ref_110 @ref_113
-@ref_102]. However, GPUs also have a limited quantity of memory,
+descent [@ref_135 @ref_124 @ref_130
+@ref_111]. However, GPUs also have a limited quantity of memory,
 making it difficult to implement networks of significant size and
-complexity on a single GPU or machine [@ref_107
-@ref_99]. This restriction has sometimes forced
+complexity on a single GPU or machine [@ref_119
+@ref_108]. This restriction has sometimes forced
 computational biologists to use workarounds or limit the size of an analysis.
-For example, Chen et al. [@ref_83] aimed to infer the
+For example, Chen et al. [@ref_86] aimed to infer the
 expression level of all genes with a single neural network, but due to
 memory restrictions they randomly partitioned genes into two halves and
 analyzed each separately. In other cases, researchers limited the size
 of their neural network [@ref_49
-@ref_91]. Some have also chosen to use slower
+@ref_96]. Some have also chosen to use slower
 CPU implementations rather than sacrifice network size or performance
-[@ref_118].
+[@ref_137].
 
 Steady improvements in GPU hardware may alleviate this issue somewhat, but it
 is not clear whether they can occur quickly enough to keep up with the growing
 amount of available biological data or increasing network sizes. Much has
 been done to minimize the memory
-requirements of neural networks [@ref_85 @ref_80
-@ref_93 @ref_77 @ref_108
-@ref_81 @ref_96], but there is also growing
+requirements of neural networks [@ref_88 @ref_83
+@ref_99 @ref_79 @ref_120
+@ref_84 @ref_104], but there is also growing
 interest in specialized hardware, such as field-programmable gate arrays
-(FPGAs) [@ref_88 @ref_101] and
+(FPGAs) [@ref_92 @ref_110] and
 application-specific integrated circuits (ASICs). Specialized hardware promises
 improvements in deep learning at reduced time, energy, and memory
-[@ref_88]. Logically, there is less software for highly
-specialized hardware [@ref_101], and it could be a difficult
+[@ref_92]. Logically, there is less software for highly
+specialized hardware [@ref_110], and it could be a difficult
 investment for those not solely interested in deep learning. However, it is
 likely that such options will find increased support as they become a more
 popular platform for deep learning and general computation.
 
 Distributed computing is a general solution to intense computational
 requirements, and has enabled many large-scale deep learning efforts. Early
-approaches to distributed computation [@ref_103 @ref_92] were
-not suitable for deep learning [@ref_86],
+approaches to distributed computation [@ref_113 @ref_97] were
+not suitable for deep learning [@ref_89],
 but significant progress has been made. There
-now exist a number of algorithms [@ref_86 @ref_87
-@ref_108], tools [@ref_105 @ref_104
-@ref_116], and high-level libraries [@ref_98 @ref_89] for deep
+now exist a number of algorithms [@ref_89 @ref_91
+@ref_120], tools [@ref_116 @ref_115
+@ref_134], and high-level libraries [@ref_106 @ref_93] for deep
 learning in a distributed environment, and it is possible to train very complex
-networks with limited infrastructure [@ref_84]. Besides
+networks with limited infrastructure [@ref_87]. Besides
 handling very large networks, distributed or parallelized approaches offer
-other advantages, such as improved ensembling [@ref_114] or
-accelerated hyperparameter optimization [@ref_78
-@ref_79].
+other advantages, such as improved ensembling [@ref_131] or
+accelerated hyperparameter optimization [@ref_80
+@ref_81].
 
 Cloud computing, which has already seen adoption in genomics
-[@ref_109], could facilitate easier sharing of the large
-datasets common to biology [@ref_90 @ref_112],
+[@ref_122], could facilitate easier sharing of the large
+datasets common to biology [@ref_95 @ref_128],
 and may be key to scaling deep learning. Cloud computing affords researchers
 significant flexibility, and enables the use of specialized hardware (e.g.,
 FPGAs, ASICs, GPUs) without significant investment. With such flexibility, it
 could be easier to address the different challenges associated with the
 multitudinous layers and architectures available
-[@ref_100]. Though many are reluctant to store sensitive
+[@ref_109]. Though many are reluctant to store sensitive
 data (e.g., patient electronic health records) in the cloud,
-secure/regulation-compliant cloud services do exist [@ref_106].
+secure/regulation-compliant cloud services do exist [@ref_118].
 
 *TODO: Write the transition once more of the Discussion section has been
 fleshed out.*
