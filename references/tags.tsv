@@ -1,5 +1,5 @@
 tag	citation
-Abe	http://ci.nii.ac.jp/els/110006199745.pdf?id=ART0008217854&type=pdf&lang=en&host=cinii&order_no=&ppv_type=0&lang_sw=&no=1482258634&cp=
+Abe	url:http://ci.nii.ac.jp/naid/110006199745
 AltaeTran2016_one_shot	arxiv:1611.03199
 Asgari	doi:10.1371/journal.pone.0141287
 blast	doi:10.1016/S0022-2836(05)80360-2
@@ -8,7 +8,7 @@ Arvaniti2016_rare_subsets	doi:10.1101/046508
 Bengio2015_prec	arxiv:1412.7024
 Bergstra2011_hyper	url:https://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimization.pdf
 Bergstra2012_random	url:http://dl.acm.org/citation.cfm?id=2188395
-Boza	arXiv:1603.09195
+Boza	arxiv:1603.09195
 Caruana2014_need	arxiv:1312.6184
 Chen2015_hashing	arxiv:1504.04788
 Chen2016_gene_expr	doi:10.1093/bioinformatics/btw074
@@ -57,7 +57,7 @@ McHardy2	doi:10.7717/peerj.1603
 Metaphlan	doi:10.1038/nmeth.2066
 Meng2016_mllib	arxiv:1505.06807
 Moritz2015_sparknet	arxiv:1511.06051
-Mrzelj	url:http://eprints.fri.uni-lj.si/3573/1/63120248-NINA_MRZELJ-Globoko_u%C4%8Denje_na_genomskih_in_filogenetskih_podatkih.pdf
+Mrzelj	url:https://repozitorij.uni-lj.si/IzpisGradiva.php?id=85515
 nbc	doi:10.1093/bioinformatics/btq619
 NIH2016_genome_cost	url:https://www.genome.gov/27565109/the-cost-of-sequencing-a-human-genome/
 onecodex	url:https://www.onecodex.com/
@@ -73,8 +73,8 @@ Schmidhuber2014_dnn_overview	doi:10.1016/j.neunet.2014.09.003
 Segata	doi:10.1371/journal.pcbi.1004977
 Seide2014_parallel	doi:10.1109/ICASSP.2014.6853593
 Shaham2016_batch_effects	arxiv:1610.04181
-Sonderby	arXiv:1503.01919
-Soueidan	doi:https://doi.org/10.1515/metgen-2016-0001
+Sonderby	arxiv:1503.01919
+Soueidan	doi:10.1515/metgen-2016-0001
 Spark	doi:10.1145/2934664
 Stein2010_cloud	doi:10.1186/gb-2010-11-5-207
 Stratnikov	doi:10.1186/2049-2618-1-11
