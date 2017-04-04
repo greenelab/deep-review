@@ -5,6 +5,7 @@ Asgari	doi:10.1371/journal.pone.0141287
 blast	doi:10.1016/S0022-2836(05)80360-2
 Angermueller2016_single_methyl	doi:10.1101/055715
 Arvaniti2016_rare_subsets	doi:10.1101/046508
+Barash2010_splicing_code	doi:10.1038/nature09000
 Bengio2015_prec	arxiv:1412.7024
 Bergstra2011_hyper	url:https://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimization.pdf
 Bergstra2012_random	url:http://dl.acm.org/citation.cfm?id=2188395
@@ -37,6 +38,8 @@ Hinton2015_dk	arxiv:1503.02531v1
 Hochreiter	doi:10.1093/bioinformatics/btm247
 Hoff	doi:10.1093/nar/gkp327
 Hubara2016_qnn	arxiv:1609.07061
+Jha2017_integrative_models	doi:10.1101/104869
+JuanMateu2016_t1d	doi:10.1530/EJE-15-0916
 Kearnes2016_admet	arxiv:1606.08793
 Kearnes2016_graph_conv	doi:10.1007/s10822-016-9938-8
 Keras	url:https://github.com/fchollet/keras
@@ -46,6 +49,7 @@ Krizhevsky2013_nips_cnn	url:https://papers.nips.cc/paper/4824-imagenet-classific
 Krizhevsky2014_weird_trick	arxiv:1404.5997
 Lacey2016_dl_fpga	arxiv:1602.04283
 Li2014_minibatch	doi:10.1145/2623330.2623612
+Li2016_variation	doi:10.1126/science.aad9417
 Liu	doi:10.1371/journal.pone.0097958
 lmat	doi:10.1093/bioinformatics/btt389
 Lusci2015_irv	doi:10.1186/s13321-015-0110-6
@@ -66,10 +70,12 @@ Phymm	doi:10.1038/nmeth.1358
 RAD2010_view_cc	doi:10.1145/1721654.1721672
 Ramsundar2015_multitask_drug	arxiv:1502.02072
 Raina2009_gpu	doi:10.1145/1553374.1553486
+Rosenberg2015_synthetic_seqs	doi:10.1016/j.cell.2015.09.054
 Sa2015_buckwild	arxiv:1506.06438
 Salzberg	doi:10.1186/1471-2105-11-544
 Schatz2010_dna_cloud	doi:10.1038/nbt0710-691
 Schmidhuber2014_dnn_overview	doi:10.1016/j.neunet.2014.09.003
+Scotti2016_missplicing	doi:10.1038/nrg.2015.3
 Segata	doi:10.1371/journal.pcbi.1004977
 Seide2014_parallel	doi:10.1109/ICASSP.2014.6853593
 Shaham2016_batch_effects	arxiv:1610.04181
@@ -90,6 +96,8 @@ Wallach2015_atom_net	arxiv:1510.02855
 Wang2016_protein_contact	doi:10.1101/073239
 Word2Vec	arXiv:1301.3781
 wgsquikr	doi:10.1371/journal.pone.0091784
+Xiong2011_bayesian	doi:10.1093/btr444
+Xiong2015_splicing_code	doi:10.1126/science.1254806
 Yasushi2016_cgbvs_dnn	doi:10.1002/minf.201600045
 yok	doi:10.1186/1471-2105-12-20
 Zhou2015_deep_sea	doi:10.1038/nmeth.3547
