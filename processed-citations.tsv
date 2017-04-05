@@ -6,6 +6,7 @@ text	citation	standard_citation	citation_id
 @arxiv:1602.00357	arxiv:1602.00357	arxiv:1602.00357	ref_4
 @arxiv:1606.00931	arxiv:1606.00931	arxiv:1606.00931	ref_5
 @arxiv:1606.05718	arxiv:1606.05718	arxiv:1606.05718	ref_6
+@arxiv:1606.08813v3	arxiv:1606.08813v3	arxiv:1606.08813v3	ref_144
 @arxiv:1607.00133	arxiv:1607.00133	arxiv:1607.00133	ref_7
 @arxiv:1607.07519	arxiv:1607.07519	arxiv:1607.07519	ref_8
 @arxiv:1608.02158	arxiv:1608.02158	arxiv:1608.02158	ref_9
@@ -146,3 +147,4 @@ text	citation	standard_citation	citation_id
 @url:http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf	url:http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf	url:http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf	ref_141
 @url:http://research.google.com/archive/unsupervised_icml2012.html	url:http://research.google.com/archive/unsupervised_icml2012.html	url:http://research.google.com/archive/unsupervised_icml2012.html	ref_142
 @url:https://aclweb.org/anthology/D/D13/D13-1079.pdf	url:https://aclweb.org/anthology/D/D13/D13-1079.pdf	url:https://aclweb.org/anthology/D/D13/D13-1079.pdf	ref_143
+@url:https://phekb.org/implementations	url:https://phekb.org/implementations	url:https://phekb.org/implementations	ref_145

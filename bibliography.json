@@ -12160,6 +12160,11 @@
     "id": "ref_143"
   },
   {
+    "URL": "https://phekb.org/implementations",
+    "type": "webpage",
+    "id": "ref_145"
+  },
+  {
     "abstract": "After a more than decade-long period of relatively little research activity in the area of recurrent neural networks, several new developments will be reviewed here that have allowed substantial progress both in understanding and in technical solutions towards more efficient training of recurrent networks. These advances have been motivated by and related to the optimization issues surrounding deep learning. Although recurrent networks are extremely powerful in what they can in principle represent in terms of modelling sequences,their training is plagued by two aspects of the same issue regarding the learning of long-term dependencies. Experiments reported here evaluate the use of clipping gradients, spanning longer time ranges with leaky integration, advanced momentum techniques, using more powerful output probability models, and encouraging sparser gradients to help symmetry breaking and credit assignment. The experiments are performed on text and music data and show off the combined effects of these techniques in generally improving both training and test error.",
     "author": [
       {
@@ -13353,6 +13358,30 @@
     },
     "title": "Ensemble-compression: A new method for parallel training of deep neural networks",
     "title-short": "Ensemble-compression",
+    "type": "article-journal"
+  },
+  {
+    "abstract": "We summarize the potential impact that the European Union’s new General Data Protection Regulation will have on the routine use of machine learning algorithms. Slated to take effect as law across the EU in 2018, it will restrict automated individual decision-making (that is, algorithms that make decisions based on user-level predictors) which “significantly affect” users. The law will also effectively create a “right to explanation,” whereby a user can ask for an explanation of an algorithmic decision that was made about them. We argue that while this law will pose large challenges for industry, it highlights opportunities for computer scientists to take the lead in designing algorithms and evaluation frameworks which avoid discrimination and enable explanation.",
+    "author": [
+      {
+        "family": "Goodman",
+        "given": "Bryce"
+      },
+      {
+        "family": "Flaxman",
+        "given": "Seth"
+      }
+    ],
+    "id": "ref_144",
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          6
+        ]
+      ]
+    },
+    "title": "European union regulations on algorithmic decision-making and a “right to explanation”",
     "type": "article-journal"
   }
 ]

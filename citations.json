@@ -13056,5 +13056,23 @@
       "id": "ref_143"
     },
     "citation_id": "ref_143"
+  },
+  "arxiv:1606.08813v3": {
+    "source": "arxiv",
+    "identifer": "1606.08813v3",
+    "standard_citation": "arxiv:1606.08813v3",
+    "bibtex": "@article{ref_144,\n abstract = {We summarize the potential impact that the European Union's new General Data\nProtection Regulation will have on the routine use of machine learning\nalgorithms. Slated to take effect as law across the EU in 2018, it will\nrestrict automated individual decision-making (that is, algorithms that make\ndecisions based on user-level predictors) which \"significantly affect\" users.\nThe law will also effectively create a \"right to explanation,\" whereby a user\ncan ask for an explanation of an algorithmic decision that was made about them.\nWe argue that while this law will pose large challenges for industry, it\nhighlights opportunities for computer scientists to take the lead in designing\nalgorithms and evaluation frameworks which avoid discrimination and enable\nexplanation.},\n archiveprefix = {arXiv},\n author = {Bryce Goodman and Seth Flaxman},\n eprint = {1606.08813v3},\n file = {1606.08813v3.pdf},\n link = {http://arxiv.org/abs/1606.08813v3},\n month = {Jun},\n primaryclass = {stat.ML},\n title = {European Union regulations on algorithmic decision-making and a \"right\nto explanation\"},\n year = {2016}\n}\n\n",
+    "citation_id": "ref_144"
+  },
+  "url:https://phekb.org/implementations": {
+    "source": "url",
+    "identifer": "https://phekb.org/implementations",
+    "standard_citation": "url:https://phekb.org/implementations",
+    "citeproc": {
+      "URL": "https://phekb.org/implementations",
+      "type": "webpage",
+      "id": "ref_145"
+    },
+    "citation_id": "ref_145"
   }
 }

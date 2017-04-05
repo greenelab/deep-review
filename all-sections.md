@@ -366,6 +366,68 @@ advances to practical game-changers.
 Additionally, unique barriers exist in this space that may hinder progress in
 this field.
 
+###### Lack of ground-truth labels in data, and high cost in post-study validation by clinician experts.
+
+Lack of true labels is perhaps among the biggest obstacles for electronic
+health records(EHR)-based learing studies (e.g., phenotyping). Popular deep
+learning (and machine learning) methods are mostly classification problem,
+which require ground-truth labels (i.e., response variables) for training.  For
+EHR, unfortunately, this means we need to hire multiple expert clinicians  to
+manually read and annotate individual patients' records to assign "true"
+labels (i.e., expert chart review). Sometimes, the learnt features also need to
+be manually validated and interpreted by clinicians. This can be quite costly
+in time and money [doi: 10.1016/j.ijmedinf.2016.09.014]. Due to resource
+limitations,  many existing works in this direction (including many referenced
+in this review)  skipped the expert review process, which may face great
+skepticism from  medical domain experts. To date, even the most resourceful
+large national consortia  have difficulty acquiring enough expert-validated
+labeled data. For instance,  in the eMERGE consortia and PheKB database
+[@ref_145],  most sample sizes with expert validations
+are between 100 to 300 patients,  which is quite small even for simple machine
+learning, not to mentioned data-hungry  deep learning models.
+
+This issue also common to many related domains -- around medical images, omics.
+(thus the motivation for semi-supervised learning as briefly mentioned in
+earlier sections)
+
+In summary, this subsection emphasize on two important aspects that are not
+addressed by other sections:  1) Data (and sometimes learnt
+features/representations)  need to be validated by clinicial experts.   2) The
+amount of expert labels needs to be sufficient large.
+
+###### "Right to explanation" laws and potential for discrimination
+
+In April 2016, the European Union adopted new rules regarding the use of
+personal information, the General Data Protection Regulation (GDPR)
+[@ref_144].  Among the new rules, it is perhaps best summed up in the
+phrase "right to explanation".   I.e., a clinician must be able to explain to a
+patient how a decision was reached by any machine learning algorithm that uses
+the patient's data.  The new rules were passed with the understanding that
+categorization or recommendation systems inherently profiles individuals, but
+may do so in a way that is unlawfully discriminatory.  
+
+On the other hand, as datasets become larger and more complex, medically
+important data relationships and correlations can become not only difficult to
+detect, but difficult for human understanding.  Machine learning and deep
+learning algorithms, which fixate solely on predictive accuracy, may be regarded
+as "black boxes" and are generally not tractable to human understanding.  
+
+Yet the power of machine learning is not disputed.  In the context of medical
+applications, machine learning holds the promise to save more lives and provide
+better quality of life for those it does save.  There is certainly no clear cut
+answer to balance patient rights and utilitarian gain, and these issues will
+only become more prominent as technology advances.  
+
+###### Data sharing and privacy?
+
+*This is clearly a big issue. We should at least mention it. Deep learning likes
+lots of data, and sharing restrictions don't allow that. Perhaps a paragraph on
+current best practices and how they relate to deep learning. A lack of data (due
+to privacy and sharing restrictions) may hamper deep learning's utility in this
+area in ways that it doesn't for image analysis, etc. Perhaps this will be the
+Achilles heal of deep learning in this area. A couple things to think about
+[doi: 10.1126/science.1229566 doi:10.1016/j.cels.2016.04.013]*
+
 ###### Standardization/integration
 
 EHRs are designed and optimized primarily for patient care and billing purposes,
