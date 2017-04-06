@@ -343,6 +343,12 @@ not solve*
 
 *Bengio diet networks paper*
 
+*(Wei Xie; @XieConnect): I personally do not think this subsection is necessary.
+It does not seem a big issue for health care data. For instance, EHR is mostly
+textual and very small in size and easy to compute even for large medical centers.
+Medical images and some medical tests may be larger, but they are still
+way behind MNIST or ImageNet in scale and compute requirement.*
+
 #### Has deep learning already induced a strategic inflection point for one or more aspects?
 
 *I have looked through the papers that we have. I don't see a case in our
