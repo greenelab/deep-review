@@ -12165,6 +12165,199 @@
     "id": "ref_145"
   },
   {
+    "indexed": {
+      "date-parts": [
+        [
+          2016,
+          11,
+          9
+        ]
+      ],
+      "date-time": "2016-11-09T21:27:58Z",
+      "timestamp": 1478726878784
+    },
+    "reference-count": 62,
+    "publisher": "Springer Nature",
+    "issue": "7587",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Nature"
+    ],
+    "cited-count": 0,
+    "DOI": "10.1038/nature16961",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          1,
+          26
+        ]
+      ],
+      "date-time": "2016-01-26T17:44:19Z",
+      "timestamp": 1453830259000
+    },
+    "page": "484-489",
+    "source": "CrossRef",
+    "title": "Mastering the game of Go with deep neural networks and tree search",
+    "prefix": "http://id.crossref.org/prefix/10.1038",
+    "volume": "529",
+    "author": [
+      {
+        "given": "David",
+        "family": "Silver",
+        "affiliation": []
+      },
+      {
+        "given": "Aja",
+        "family": "Huang",
+        "affiliation": []
+      },
+      {
+        "given": "Chris J.",
+        "family": "Maddison",
+        "affiliation": []
+      },
+      {
+        "given": "Arthur",
+        "family": "Guez",
+        "affiliation": []
+      },
+      {
+        "given": "Laurent",
+        "family": "Sifre",
+        "affiliation": []
+      },
+      {
+        "given": "George",
+        "family": "van den Driessche",
+        "affiliation": []
+      },
+      {
+        "given": "Julian",
+        "family": "Schrittwieser",
+        "affiliation": []
+      },
+      {
+        "given": "Ioannis",
+        "family": "Antonoglou",
+        "affiliation": []
+      },
+      {
+        "given": "Veda",
+        "family": "Panneershelvam",
+        "affiliation": []
+      },
+      {
+        "given": "Marc",
+        "family": "Lanctot",
+        "affiliation": []
+      },
+      {
+        "given": "Sander",
+        "family": "Dieleman",
+        "affiliation": []
+      },
+      {
+        "given": "Dominik",
+        "family": "Grewe",
+        "affiliation": []
+      },
+      {
+        "given": "John",
+        "family": "Nham",
+        "affiliation": []
+      },
+      {
+        "given": "Nal",
+        "family": "Kalchbrenner",
+        "affiliation": []
+      },
+      {
+        "given": "Ilya",
+        "family": "Sutskever",
+        "affiliation": []
+      },
+      {
+        "given": "Timothy",
+        "family": "Lillicrap",
+        "affiliation": []
+      },
+      {
+        "given": "Madeleine",
+        "family": "Leach",
+        "affiliation": []
+      },
+      {
+        "given": "Koray",
+        "family": "Kavukcuoglu",
+        "affiliation": []
+      },
+      {
+        "given": "Thore",
+        "family": "Graepel",
+        "affiliation": []
+      },
+      {
+        "given": "Demis",
+        "family": "Hassabis",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/339",
+    "published-online": {
+      "date-parts": [
+        [
+          2016,
+          1,
+          27
+        ]
+      ]
+    },
+    "container-title": "Nature",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          1,
+          28
+        ]
+      ],
+      "date-time": "2016-01-28T10:34:54Z",
+      "timestamp": 1453977294000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          1,
+          27
+        ]
+      ]
+    },
+    "alternative-id": [
+      "nature16961"
+    ],
+    "URL": "http://dx.doi.org/10.1038/nature16961",
+    "citing-count": 62,
+    "subject": [
+      "General"
+    ],
+    "id": "ref_146"
+  },
+  {
+    "URL": "http://www.intel.com/pressroom/archive/speeches/ag080998.htm",
+    "type": "webpage",
+    "id": "ref_147"
+  },
+  {
     "abstract": "After a more than decade-long period of relatively little research activity in the area of recurrent neural networks, several new developments will be reviewed here that have allowed substantial progress both in understanding and in technical solutions towards more efficient training of recurrent networks. These advances have been motivated by and related to the optimization issues surrounding deep learning. Although recurrent networks are extremely powerful in what they can in principle represent in terms of modelling sequences,their training is plagued by two aspects of the same issue regarding the learning of long-term dependencies. Experiments reported here evaluate the use of clipping gradients, spanning longer time ranges with leaky integration, advanced momentum techniques, using more powerful output probability models, and encouraging sparser gradients to help symmetry breaking and credit assignment. The experiments are performed on text and music data and show off the combined effects of these techniques in generally improving both training and test error.",
     "author": [
       {

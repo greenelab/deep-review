@@ -13074,5 +13074,210 @@
       "id": "ref_145"
     },
     "citation_id": "ref_145"
+  },
+  "doi:10.1038/nature16961": {
+    "source": "doi",
+    "identifer": "10.1038/nature16961",
+    "standard_citation": "doi:10.1038/nature16961",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2016,
+            11,
+            9
+          ]
+        ],
+        "date-time": "2016-11-09T21:27:58Z",
+        "timestamp": 1478726878784
+      },
+      "reference-count": 62,
+      "publisher": "Springer Nature",
+      "issue": "7587",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Nature"
+      ],
+      "cited-count": 0,
+      "DOI": "10.1038/nature16961",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2016,
+            1,
+            26
+          ]
+        ],
+        "date-time": "2016-01-26T17:44:19Z",
+        "timestamp": 1453830259000
+      },
+      "page": "484-489",
+      "source": "CrossRef",
+      "title": "Mastering the game of Go with deep neural networks and tree search",
+      "prefix": "http://id.crossref.org/prefix/10.1038",
+      "volume": "529",
+      "author": [
+        {
+          "given": "David",
+          "family": "Silver",
+          "affiliation": []
+        },
+        {
+          "given": "Aja",
+          "family": "Huang",
+          "affiliation": []
+        },
+        {
+          "given": "Chris J.",
+          "family": "Maddison",
+          "affiliation": []
+        },
+        {
+          "given": "Arthur",
+          "family": "Guez",
+          "affiliation": []
+        },
+        {
+          "given": "Laurent",
+          "family": "Sifre",
+          "affiliation": []
+        },
+        {
+          "given": "George",
+          "family": "van den Driessche",
+          "affiliation": []
+        },
+        {
+          "given": "Julian",
+          "family": "Schrittwieser",
+          "affiliation": []
+        },
+        {
+          "given": "Ioannis",
+          "family": "Antonoglou",
+          "affiliation": []
+        },
+        {
+          "given": "Veda",
+          "family": "Panneershelvam",
+          "affiliation": []
+        },
+        {
+          "given": "Marc",
+          "family": "Lanctot",
+          "affiliation": []
+        },
+        {
+          "given": "Sander",
+          "family": "Dieleman",
+          "affiliation": []
+        },
+        {
+          "given": "Dominik",
+          "family": "Grewe",
+          "affiliation": []
+        },
+        {
+          "given": "John",
+          "family": "Nham",
+          "affiliation": []
+        },
+        {
+          "given": "Nal",
+          "family": "Kalchbrenner",
+          "affiliation": []
+        },
+        {
+          "given": "Ilya",
+          "family": "Sutskever",
+          "affiliation": []
+        },
+        {
+          "given": "Timothy",
+          "family": "Lillicrap",
+          "affiliation": []
+        },
+        {
+          "given": "Madeleine",
+          "family": "Leach",
+          "affiliation": []
+        },
+        {
+          "given": "Koray",
+          "family": "Kavukcuoglu",
+          "affiliation": []
+        },
+        {
+          "given": "Thore",
+          "family": "Graepel",
+          "affiliation": []
+        },
+        {
+          "given": "Demis",
+          "family": "Hassabis",
+          "affiliation": []
+        }
+      ],
+      "member": "http://id.crossref.org/member/339",
+      "published-online": {
+        "date-parts": [
+          [
+            2016,
+            1,
+            27
+          ]
+        ]
+      },
+      "container-title": "Nature",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2016,
+            1,
+            28
+          ]
+        ],
+        "date-time": "2016-01-28T10:34:54Z",
+        "timestamp": 1453977294000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            1,
+            27
+          ]
+        ]
+      },
+      "alternative-id": [
+        "nature16961"
+      ],
+      "URL": "http://dx.doi.org/10.1038/nature16961",
+      "citing-count": 62,
+      "subject": [
+        "General"
+      ],
+      "id": "ref_146"
+    },
+    "citation_id": "ref_146"
+  },
+  "url:http://www.intel.com/pressroom/archive/speeches/ag080998.htm": {
+    "source": "url",
+    "identifer": "http://www.intel.com/pressroom/archive/speeches/ag080998.htm",
+    "standard_citation": "url:http://www.intel.com/pressroom/archive/speeches/ag080998.htm",
+    "citeproc": {
+      "URL": "http://www.intel.com/pressroom/archive/speeches/ag080998.htm",
+      "type": "webpage",
+      "id": "ref_147"
+    },
+    "citation_id": "ref_147"
   }
 }

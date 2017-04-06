@@ -34,6 +34,7 @@ text	citation	standard_citation	citation_id
 @doi:10.1021/acs.molpharmaceut.5b00982	doi:10.1021/acs.molpharmaceut.5b00982	doi:10.1021/acs.molpharmaceut.5b00982	ref_31
 @doi:10.1021/acs.molpharmaceut.6b00248	doi:10.1021/acs.molpharmaceut.6b00248	doi:10.1021/acs.molpharmaceut.6b00248	ref_32
 @doi:10.1038/nature14539	doi:10.1038/nature14539	doi:10.1038/nature14539	ref_33
+@doi:10.1038/nature16961	doi:10.1038/nature16961	doi:10.1038/nature16961	ref_146
 @doi:10.1038/nbt.3313	doi:10.1038/nbt.3313	doi:10.1038/nbt.3313	ref_34
 @doi:10.1038/ncomms5022	doi:10.1038/ncomms5022	doi:10.1038/ncomms5022	ref_35
 @doi:10.1038/nmeth.4182	doi:10.1038/nmeth.4182	doi:10.1038/nmeth.4182	ref_36
@@ -146,5 +147,6 @@ text	citation	standard_citation	citation_id
 @tag:yok	doi:10.1186/1471-2105-12-20	doi:10.1186/1471-2105-12-20	ref_140
 @url:http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf	url:http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf	url:http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf	ref_141
 @url:http://research.google.com/archive/unsupervised_icml2012.html	url:http://research.google.com/archive/unsupervised_icml2012.html	url:http://research.google.com/archive/unsupervised_icml2012.html	ref_142
+@url:http://www.intel.com/pressroom/archive/speeches/ag080998.htm	url:http://www.intel.com/pressroom/archive/speeches/ag080998.htm	url:http://www.intel.com/pressroom/archive/speeches/ag080998.htm	ref_147
 @url:https://aclweb.org/anthology/D/D13/D13-1079.pdf	url:https://aclweb.org/anthology/D/D13/D13-1079.pdf	url:https://aclweb.org/anthology/D/D13/D13-1079.pdf	ref_143
 @url:https://phekb.org/implementations	url:https://phekb.org/implementations	url:https://phekb.org/implementations	ref_145
