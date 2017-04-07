@@ -19,11 +19,13 @@ from citations import (
     get_brackets_without_reference,
     get_references_from_text,
     get_text,
+    semicolon_separate_references,
     validate_reference,
 )
 
 # Run only as a script
 assert __name__ == '__main__'
+
 
 def get_divider(title='Error', linewidth=79, fill_character='#'):
     """
@@ -115,9 +117,12 @@ print(dup_df)
 
 # Convert to numbered refernces for pandoc
 converted_text = text
-for old, new in zip(ref_df.text, '@' + ref_df.citation_id):
+for old, new in zip(ref_df.text, ref_df.citation_id):
     old = re.escape(old)
+    new = f'@{new}'
     converted_text = re.sub(old + '(?=[\s\]])', new, converted_text)
+# Semicolon separate multiple refernces for pandoc-citeproc
+converted_text = semicolon_separate_references(converted_text)
 
 # Write manuscript for pandoc
 with gen_dir.joinpath('all-sections.md').open('wt') as write_file:
@@ -147,7 +152,8 @@ with bib_path.open('wt') as write_file:
     write_file.write('\n'.join(bibtex_stanzas))
 
 # Convert bibtex records to JSON CSL Items
-bib_items = subprocess.check_output(['pandoc-citeproc', '--bib2json', bib_path])
+bib_items = subprocess.check_output(
+    ['pandoc-citeproc', '--bib2json', bib_path])
 bib_items = json.loads(bib_items)
 csl_items.extend(map(citeproc_passthrough, bib_items))
 

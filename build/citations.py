@@ -2,7 +2,6 @@ import collections
 import pathlib
 import re
 
-import pandas
 import bibtexparser
 
 import metadata
@@ -19,17 +18,31 @@ def validate_reference(ref):
     return None
 
 
+bracketed_reference_pattern = re.compile(r'\[(@.+?)\]', flags=re.DOTALL)
+
+
 def get_references_from_text(text):
     """
     Extract the set of references in a text
     """
     refs = set()
-    for ref_text in re.findall(r'\[(@.+?)\]', text, flags=re.DOTALL):
+    for ref_text in bracketed_reference_pattern.findall(text):
         for ref in ref_text.split():
             if not ref:
                 continue
             refs.add(ref)
     return refs
+
+
+def semicolon_separate_references(text):
+    """
+    Separate multiple references inside the same brackets with a space and
+    semicolon for pandoc-citeproc.
+    """
+    return bracketed_reference_pattern.sub(
+        repl=lambda x: '; '.join(x.group().split()),
+        string=text
+    )
 
 
 def get_brackets_without_reference(text):
@@ -93,14 +106,16 @@ def citation_to_metadata(citation, cache={}):
     else:
         msg = f'Unsupported citation  source {source} in {citation}'
         raise ValueError(msg)
-    
+
     citation_id = f'ref_{len(cache)}'
     result['citation_id'] = citation_id
     if 'citeproc' in result:
-        result['citeproc'] = citeproc_passthrough(result['citeproc'], set_id=citation_id)
+        result['citeproc'] = citeproc_passthrough(
+            result['citeproc'], set_id=citation_id)
     if 'bibtex' in result:
-        result['bibtex'] = bibtex_passthrough(result['bibtex'], set_id=citation_id)
-    
+        result['bibtex'] = bibtex_passthrough(
+            result['bibtex'], set_id=citation_id)
+
     cache[standard_citation] = result
     return result
 
@@ -112,14 +127,16 @@ citeproc_type_fixer = {
     'proceedings-article': 'paper-conference',
 }
 
+# Remove citeproc keys to fix pandoc-citeproc errors
 citeproc_remove_keys = [
-    # pandoc-citeproc: Error in $[0].ISSN[0]: failed to parse field ISSN: mempty
+    # Error in $[0].ISSN[0]: failed to parse field ISSN: mempty
     'ISSN',
-    # pandoc-citeproc: Error in $[2].ISBN[0]: failed to parse field ISBN: mempty
+    # Error in $[2].ISBN[0]: failed to parse field ISBN: mempty
     'ISBN',
     # pandoc-citeproc expected Object not array for archive
     'archive',
 ]
+
 
 def citeproc_passthrough(csl_item, set_id=None):
     """
