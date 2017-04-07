@@ -91,16 +91,16 @@ metagenomic analysis.  In the late 2000’s, a plethora of machine learning
 methods were applied to classifying DNA sequencing reads to the thousands of 
 species within a sample.  An important problem is genome assembly from these 
 mixed-organism samples. And to do that, the organisms should be “binned” 
-before assembling.  Binning methods began with many k-mer techniques [refs] 
+before assembling.  Binning methods began with many k-mer techniques [Karlin] 
 and then delved into other clustering algorithms, such as self-organizing maps 
-(SOM).  Then came the taxonomic classification problem,  with researchers 
+(SOM) [Abe].  Then came the taxonomic classification problem,  with researchers 
 naturally using BLAST [blast], followed by other machine learning techniques 
 such as SVMs [McHardy], naive Bayesian classifiers [nbc], etc. to classify 
 each read.  Then, researchers began to use techniques that could be used to 
 estimate relative abundances of an entire sample, instead of the precise but
 painstakingly slow read-by-read classification.  Relative abundance
-estimators (a.k.a diversity profilers) are MetaPhlan[ref], (WGS)Quikr[ref],
-and some configurations of tools like OneCodex[ref] and LMAT[ref].  While one
+estimators (a.k.a diversity profilers) are MetaPhlan[Metaphlan], (WGS)Quikr[wgsquikr],
+and some configurations of tools like OneCodex[onecodex] and LMAT[lmat].  While one
 cannot identify which reads were mapped back to an organism using relative
 abundance estimators, they can be useful for faster comparative and other
 downstream analyses.   Newer methods hope to classify reads and estimate
@@ -124,7 +124,7 @@ So, how have neural networks (NNs) been of use?    Most neural networks are bein
 used for short sequence->taxa/function classification, where there is a lot of data 
 for training (and thus suitable for NNs).  Neural networks have been applied 
 successfully to gene annotation (e.g. Orphelia [Hoff] and FragGeneScan [doi: 10.1093/nar/gkq747]), 
-which usually has plenty of training examples.  Representations (similar to Word2Vec [ref] in 
+which usually has plenty of training examples.  Representations (similar to Word2Vec [Word2Vec] in 
 natural language processing) for protein family classification has been introduced and classified 
 with a skip-gram  neural network [Asgari].  Recurrent neural networks show good performance for 
 homology and protein family identification [Hochreiter, Sonderby].  Interestingly, 
@@ -172,8 +172,7 @@ available for training.
 However, because recurrent neural networks are showing success for base-calling (and thus removing the large error in 
 the measurement of a pore's current signal) for the relatively new Oxford Nanopore sequencer [Boza], there is hope that
 the process of denoising->organism/function classification can be combined into one step in using powerful LSTM's.  LSTM's
-are working miracles in raw speech signal->meaning translation [ref], and combining steps in metagenomics are not out of the 
-question.  For example, metagenomic assembly usually requires binning then assembly, but could deep neural nets accomplish
+are working miracles in raw speech signal->meaning translation [Sutskever], and combining steps in metagenomics are not out of the question.  For example, metagenomic assembly usually requires binning then assembly, but could deep neural nets accomplish
 both tasks in one network?  Does functional/taxonomic classification need to be separate processes?  The largest potential
 in deep learning is to learn "everything" in one complex network, with a plethora of labeled (reference) data and unlabeled 
 (microbiome experiments) examples.
