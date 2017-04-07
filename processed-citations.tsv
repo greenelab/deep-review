@@ -87,6 +87,7 @@ text	citation	standard_citation	citation_id
 @tag:Caruana2014_need	arxiv:1312.6184	arxiv:1312.6184	ref_83
 @tag:Chen2015_hashing	arxiv:1504.04788	arxiv:1504.04788	ref_84
 @tag:Chen2015_trans_species	doi:10.1093/bioinformatics/btv315	doi:10.1093/bioinformatics/btv315	ref_85
+@tag:Chen2016_exprs_yeast	doi:10.1186/s12859-015-0852-1	doi:10.1186/s12859-015-0852-1	ref_148
 @tag:Chen2016_gene_expr	doi:10.1093/bioinformatics/btw074	doi:10.1093/bioinformatics/btw074	ref_86
 @tag:Coates2013_cots_hpc	url:http://www.jmlr.org/proceedings/papers/v28/coates13.html	url:http://www.jmlr.org/proceedings/papers/v28/coates13.html	ref_87
 @tag:CudNN	arxiv:1410.0759	arxiv:1410.0759	ref_88
@@ -100,6 +101,7 @@ text	citation	standard_citation	citation_id
 @tag:Gomezb2016_automatic	arxiv:1610.02415	arxiv:1610.02415	ref_96
 @tag:Graphlab	doi:10.14778/2212351.2212354	doi:10.14778/2212351.2212354	ref_97
 @tag:Guetterman	url:http://www.fasebj.org/content/30/1_Supplement/406.3	url:http://www.fasebj.org/content/30/1_Supplement/406.3	ref_98
+@tag:Gupta2015_exprs_yeast	doi:10.1101/031906	doi:10.1101/031906	ref_149
 @tag:Gupta2015_prec	arxiv:1502.02551	arxiv:1502.02551	ref_99
 @tag:Hadjas2015_cc	arxiv:1504.04343	arxiv:1504.04343	ref_100
 @tag:Hinton2015_dark_knowledge	arxiv:1503.02531	arxiv:1503.02531	ref_101
@@ -113,6 +115,7 @@ text	citation	standard_citation	citation_id
 @tag:Krizhevsky2014_weird_trick	arxiv:1404.5997	arxiv:1404.5997	ref_109
 @tag:Lacey2016_dl_fpga	arxiv:1602.04283	arxiv:1602.04283	ref_110
 @tag:Li2014_minibatch	doi:10.1145/2623330.2623612	doi:10.1145/2623330.2623612	ref_111
+@tag:Liang2015_exprs_cancer	doi:10.1109/TCBB.2014.2377729	doi:10.1109/tcbb.2014.2377729	ref_150
 @tag:Liu	doi:10.1371/journal.pone.0097958	doi:10.1371/journal.pone.0097958	ref_112
 @tag:Mapreduce	doi:10.1145/1327452.1327492	doi:10.1145/1327452.1327492	ref_113
 @tag:McHardy	doi:10.1038/nmeth976	doi:10.1038/nmeth976	ref_114
@@ -128,6 +131,7 @@ text	citation	standard_citation	citation_id
 @tag:Segata	doi:10.1371/journal.pcbi.1004977	doi:10.1371/journal.pcbi.1004977	ref_123
 @tag:Seide2014_parallel	doi:10.1109/ICASSP.2014.6853593	doi:10.1109/icassp.2014.6853593	ref_124
 @tag:Shaham2016_batch_effects	arxiv:1610.04181	arxiv:1610.04181	ref_125
+@tag:Singh2016_deepchrome	arxiv:1607.02078	arxiv:1607.02078	ref_151
 @tag:Sonderby	arxiv:1503.01919	arxiv:1503.01919	ref_126
 @tag:Soueidan	doi:10.1515/metgen-2016-0001	doi:10.1515/metgen-2016-0001	ref_127
 @tag:Stein2010_cloud	doi:10.1186/gb-2010-11-5-207	doi:10.1186/gb-2010-11-5-207	ref_128
@@ -136,6 +140,9 @@ text	citation	standard_citation	citation_id
 @tag:Sun2016_ensemble	arxiv:1606.00575	arxiv:1606.00575	ref_131
 @tag:Swamidass2009_irv	doi:10.1021/ci8004379	doi:10.1021/ci8004379	ref_132
 @tag:TAC-ELM	doi:10.1142/S0219720012500151	doi:10.1142/s0219720012500151	ref_133
+@tag:Tan2014_psb	doi:10.1142/9789814644730_0014	doi:10.1142/9789814644730_0014	ref_62
+@tag:Tan2015_adage	doi:10.1128/mSystems.00025-15	doi:10.1128/msystems.00025-15	ref_152
+@tag:Tan2016_eadage	doi:10.1101/078659	doi:10.1101/078659	ref_153
 @tag:TensorFlow	url:http://download.tensorflow.org/paper/whitepaper2015.pdf	url:http://download.tensorflow.org/paper/whitepaper2015.pdf	ref_134
 @tag:Vanhoucke2011_cpu	url:https://research.google.com/pubs/pub37631.html	url:https://research.google.com/pubs/pub37631.html	ref_135
 @tag:Vervier	doi:10.1093/bioinformatics/btv683	doi:10.1093/bioinformatics/btv683	ref_136

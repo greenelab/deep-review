@@ -12358,6 +12358,698 @@
     "id": "ref_147"
   },
   {
+    "indexed": {
+      "date-parts": [
+        [
+          2016,
+          11,
+          12
+        ]
+      ],
+      "date-time": "2016-11-12T22:26:54Z",
+      "timestamp": 1478989614991
+    },
+    "reference-count": 29,
+    "publisher": "Springer Nature",
+    "issue": "S1",
+    "license": [
+      {
+        "URL": "http://www.springer.com/tdm",
+        "start": {
+          "date-parts": [
+            [
+              2016,
+              1,
+              11
+            ]
+          ],
+          "date-time": "2016-01-11T00:00:00Z",
+          "timestamp": 1452470400000
+        },
+        "delay-in-days": 0,
+        "content-version": "vor"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "BMC Bioinformatics"
+    ],
+    "cited-count": 0,
+    "published-print": {
+      "date-parts": [
+        [
+          2016,
+          12
+        ]
+      ]
+    },
+    "DOI": "10.1186/s12859-015-0852-1",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          1,
+          11
+        ]
+      ],
+      "date-time": "2016-01-11T10:00:45Z",
+      "timestamp": 1452506445000
+    },
+    "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+    "source": "CrossRef",
+    "title": "Learning a hierarchical representation of the yeast transcriptomic machinery using an autoencoder model",
+    "prefix": "http://id.crossref.org/prefix/10.1186",
+    "volume": "17",
+    "author": [
+      {
+        "given": "Lujia",
+        "family": "Chen",
+        "affiliation": []
+      },
+      {
+        "given": "Chunhui",
+        "family": "Cai",
+        "affiliation": []
+      },
+      {
+        "given": "Vicky",
+        "family": "Chen",
+        "affiliation": []
+      },
+      {
+        "given": "Xinghua",
+        "family": "Lu",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/297",
+    "published-online": {
+      "date-parts": [
+        [
+          2016,
+          1,
+          11
+        ]
+      ]
+    },
+    "container-title": "BMC Bioinformatics",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://link.springer.com/content/pdf/10.1186/s12859-015-0852-1.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://link.springer.com/article/10.1186/s12859-015-0852-1/fulltext.html",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          7,
+          29
+        ]
+      ],
+      "date-time": "2016-07-29T07:58:47Z",
+      "timestamp": 1469779127000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          1,
+          11
+        ]
+      ]
+    },
+    "alternative-id": [
+      "852"
+    ],
+    "URL": "http://dx.doi.org/10.1186/s12859-015-0852-1",
+    "citing-count": 29,
+    "subject": [
+      "Biochemistry",
+      "Molecular Biology",
+      "Computer Science Applications"
+    ],
+    "article-number": "S9",
+    "id": "ref_148"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          4
+        ]
+      ],
+      "date-time": "2017-01-04T03:40:36Z",
+      "timestamp": 1483501236512
+    },
+    "posted": {
+      "date-parts": [
+        [
+          2015,
+          11,
+          16
+        ]
+      ]
+    },
+    "group-title": "Bioinformatics",
+    "reference-count": 0,
+    "publisher": "Cold Spring Harbor Laboratory Press",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "accepted": {
+      "date-parts": [
+        [
+          2015,
+          11,
+          16
+        ]
+      ]
+    },
+    "cited-count": 0,
+    "abstract": "<jats:p>Genes play a central role in all biological processes. DNA microarray technology has made it possible to study the expression behavior of thousands of genes in one go. Often, gene expression data is used to generate features for supervised and unsupervised learning tasks. At the same time, advances in the field of deep learning have made available a plethora of architectures. In this paper, we use deep architectures pre-trained in an unsupervised manner using denoising autoencoders as a preprocessing step for a popular unsupervised learning task. Denoising autoencoders (DA) can be used to learn a compact representation of input, and have been used to generate features for further supervised learning tasks. We propose that our deep architectures can be treated as empirical versions of Deep Belief Networks (DBNs). We use our deep architectures to regenerate gene expression time series data for two different data sets. We test our hypothesis on two popular datasets for the unsupervised learning task of clustering and find promising improvements in performance.</jats:p>",
+    "DOI": "10.1101/031906",
+    "type": "manuscript",
+    "created": {
+      "date-parts": [
+        [
+          2015,
+          11,
+          17
+        ]
+      ],
+      "date-time": "2015-11-17T06:10:42Z",
+      "timestamp": 1447740642000
+    },
+    "source": "CrossRef",
+    "title": "Learning structure in gene expression data using deep architectures, with an application to gene clustering",
+    "prefix": "http://id.crossref.org/prefix/10.1101",
+    "author": [
+      {
+        "given": "Aman",
+        "family": "Gupta",
+        "affiliation": []
+      },
+      {
+        "given": "Haohan",
+        "family": "Wang",
+        "affiliation": []
+      },
+      {
+        "given": "Madhavi",
+        "family": "Ganapathiraju",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/246",
+    "container-title": null,
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          4
+        ]
+      ],
+      "date-time": "2017-01-04T01:58:36Z",
+      "timestamp": 1483495116000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2015,
+          11,
+          16
+        ]
+      ]
+    },
+    "URL": "http://dx.doi.org/10.1101/031906",
+    "citing-count": 0,
+    "id": "ref_149"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          3,
+          24
+        ]
+      ],
+      "date-time": "2017-03-24T06:10:32Z",
+      "timestamp": 1490335832719
+    },
+    "reference-count": 30,
+    "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+    "issue": "4",
+    "funder": [
+      {
+        "DOI": "10.13039/501100001809",
+        "name": "National Natural Science Foundation of China",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "61361136003",
+          "61472205",
+          "61033001"
+        ]
+      },
+      {
+        "name": "National Basic Research Program of China",
+        "award": [
+          "2011CBA00301",
+          "2011CBA00300"
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "IEEE/ACM Trans. Comput. Biol. and Bioinf."
+    ],
+    "cited-count": 0,
+    "published-print": {
+      "date-parts": [
+        [
+          2015,
+          7,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1109/tcbb.2014.2377729",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2014,
+          12,
+          6
+        ]
+      ],
+      "date-time": "2014-12-06T00:20:03Z",
+      "timestamp": 1417825203000
+    },
+    "page": "928-937",
+    "source": "CrossRef",
+    "title": "Integrative Data Analysis of Multi-Platform Cancer Data with a Multimodal Deep Learning Approach",
+    "prefix": "http://id.crossref.org/prefix/10.1109",
+    "volume": "12",
+    "author": [
+      {
+        "given": "Muxuan",
+        "family": "Liang",
+        "affiliation": []
+      },
+      {
+        "given": "Zhizhong",
+        "family": "Li",
+        "affiliation": []
+      },
+      {
+        "given": "Ting",
+        "family": "Chen",
+        "affiliation": []
+      },
+      {
+        "given": "Jianyang",
+        "family": "Zeng",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/263",
+    "container-title": "IEEE/ACM Transactions on Computational Biology and Bioinformatics",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          3,
+          24
+        ]
+      ],
+      "date-time": "2017-03-24T05:28:12Z",
+      "timestamp": 1490333292000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2015,
+          7,
+          1
+        ]
+      ]
+    },
+    "URL": "http://dx.doi.org/10.1109/tcbb.2014.2377729",
+    "issn-type": [
+      {
+        "value": "1545-5963",
+        "type": "print"
+      }
+    ],
+    "citing-count": 30,
+    "subject": [
+      "Biotechnology",
+      "Genetics",
+      "Applied Mathematics"
+    ],
+    "id": "ref_150"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2016,
+          12,
+          23
+        ]
+      ],
+      "date-time": "2016-12-23T18:48:23Z",
+      "timestamp": 1482518903880
+    },
+    "reference-count": 0,
+    "publisher": "American Society for Microbiology",
+    "issue": "1",
+    "funder": [
+      {
+        "DOI": "10.13039/100000002",
+        "name": "National Institutes of Health",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "AI091702",
+          "CA023108",
+          "GM106394",
+          "DK007301"
+        ]
+      },
+      {
+        "DOI": "10.13039/100000936",
+        "name": "Gordon and Betty Moore Foundation",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "GBMF4552"
+        ]
+      },
+      {
+        "DOI": "10.13039/100000897",
+        "name": "Cystic Fibrosis Foundation",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "STANTO07R0",
+          "STANTO15R0"
+        ]
+      },
+      {
+        "name": "William H. Neukom Institute for Computational Science",
+        "award": []
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "asm.org"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "mSystems"
+    ],
+    "cited-count": 0,
+    "published-print": {
+      "date-parts": [
+        [
+          2016,
+          2,
+          23
+        ]
+      ]
+    },
+    "abstract": "<jats:title>ABSTRACT</jats:title><jats:p>The increasing number of genome-wide assays of gene expression available from public databases presents opportunities for computational methods that facilitate hypothesis generation and biological interpretation of these data. We present an unsupervised machine learning approach, ADAGE (<jats:italic>a</jats:italic>nalysis using<jats:italic>d</jats:italic>enoising<jats:italic>a</jats:italic>utoencoders of<jats:italic>g</jats:italic>ene<jats:italic>e</jats:italic>xpression), and apply it to the publicly available gene expression data compendium for<jats:italic>Pseudomonas aeruginosa</jats:italic>. In this approach, the machine-learned ADAGE model contained 50 nodes which we predicted would correspond to gene expression patterns across the gene expression compendium. While no biological knowledge was used during model construction, cooperonic genes had similar weights across nodes, and genes with similar weights across nodes were significantly more likely to share KEGG pathways. By analyzing newly generated and previously published microarray and transcriptome sequencing data, the ADAGE model identified differences between strains, modeled the cellular response to low oxygen, and predicted the involvement of biological processes based on low-level gene expression differences. ADAGE compared favorably with traditional principal component analysis and independent component analysis approaches in its ability to extract validated patterns, and based on our analyses, we propose that these approaches differ in the types of patterns they preferentially identify. We provide the ADAGE model with analysis of all publicly available<jats:italic>P. aeruginosa</jats:italic>GeneChip experiments and open source code for use with other species and settings. Extraction of consistent patterns across large-scale collections of genomic data using methods like ADAGE provides the opportunity to identify general principles and biologically important patterns in microbial biology. This approach will be particularly useful in less-well-studied microbial species.</jats:p><jats:p><jats:bold>IMPORTANCE</jats:bold>The quantity and breadth of genome-scale data sets that examine RNA expression in diverse bacterial and eukaryotic species are increasing more rapidly than for curated knowledge. Our ADAGE method integrates such data without requiring gene function, gene pathway, or experiment labeling, making practical its application to any large gene expression compendium. We built a<jats:italic>Pseudomonas aeruginosa</jats:italic>ADAGE model from a diverse set of publicly available experiments without any prespecified biological knowledge, and this model was accurate and predictive. We provide ADAGE results for the complete<jats:italic>P. aeruginosa</jats:italic>GeneChip compendium for use by researchers studying<jats:italic>P. aeruginosa</jats:italic>and source code that facilitates ADAGE’s application to other species and data types.</jats:p>",
+    "DOI": "10.1128/msystems.00025-15",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          1,
+          13
+        ]
+      ],
+      "date-time": "2016-01-13T17:45:18Z",
+      "timestamp": 1452707118000
+    },
+    "page": "e00025-15",
+    "update-policy": "http://dx.doi.org/10.1128/asmj-crossmark-policy-page",
+    "source": "CrossRef",
+    "title": "ADAGE-Based Integration of Publicly AvailablePseudomonas aeruginosaGene Expression Data with Denoising Autoencoders Illuminates Microbe-Host Interactions",
+    "prefix": "http://id.crossref.org/prefix/10.1128",
+    "volume": "1",
+    "author": [
+      {
+        "given": "Jie",
+        "family": "Tan",
+        "affiliation": []
+      },
+      {
+        "given": "John H.",
+        "family": "Hammond",
+        "affiliation": []
+      },
+      {
+        "given": "Deborah A.",
+        "family": "Hogan",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0001-8713-9213",
+        "given": "Casey S.",
+        "family": "Greene",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/235",
+    "published-online": {
+      "date-parts": [
+        [
+          2016,
+          1,
+          19
+        ]
+      ]
+    },
+    "container-title": "mSystems",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          12,
+          23
+        ]
+      ],
+      "date-time": "2016-12-23T17:42:10Z",
+      "timestamp": 1482514930000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "editor": [
+      {
+        "given": "Jack A.",
+        "family": "Gilbert",
+        "affiliation": []
+      }
+    ],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          1,
+          19
+        ]
+      ]
+    },
+    "alternative-id": [
+      "10.1128/mSystems.00025-15"
+    ],
+    "URL": "http://dx.doi.org/10.1128/msystems.00025-15",
+    "citing-count": 0,
+    "id": "ref_152"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          4
+        ]
+      ],
+      "date-time": "2017-01-04T07:40:42Z",
+      "timestamp": 1483515642187
+    },
+    "posted": {
+      "date-parts": [
+        [
+          2016,
+          10,
+          3
+        ]
+      ]
+    },
+    "group-title": "Systems Biology",
+    "reference-count": 0,
+    "publisher": "Cold Spring Harbor Laboratory Press",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "accepted": {
+      "date-parts": [
+        [
+          2016,
+          12,
+          2
+        ]
+      ]
+    },
+    "cited-count": 0,
+    "abstract": "<jats:p>While the large sets of publicly available gene expression data contain substantial information about relationships between mRNA expression profiles and genetic background, environment, and cellular state, cross experiment comparisons of public data are challenged by technical noise that masks biological signals. We previously showed that one could reveal biological signatures within compendia of expression data using an unsupervised neural network algorithm, called ADAGE, which excels at detecting patterns in noisy datasets. Here, we show that the generation and integration of multiple ADAGE models, resulting in an ensemble ADAGE (eADAGE), better identified biological pathways. For the bacterium Pseudomonas aeruginosa, our analysis found that on the order of 1000 samples were needed to build pathway-level gene expression signatures. The P. aeruginosa gene expression compendium contains experiments performed in 78 different media, and we used eADAGE to identify expression signatures associated with medium-type across multiple experiments. We identified a subset of media, including several complex media that were not designed to limit phosphate, in which P. aeruginosa exhibited a phosphate starvation response controlled by PhoB. Furthermore, while it was expected that PhoB activates the phosphate starvation response in low phosphate, our analyses found that PhoB was also active in moderate phosphate concentrations and predicted that activity required a second stimulus provided by a sensor kinase, KinB, which was validated in subsequent experiments including a screen of a histidine kinase knock out collection confirmed the specificity of its role in the activation of the Pho regulon. Algorithms that extract biological signal from large collections of public gene expression data, such as eADAGE, can highlight opportunities to discover mechanisms that are currently unrecognized from public data.</jats:p>",
+    "DOI": "10.1101/078659",
+    "type": "manuscript",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          10,
+          4
+        ]
+      ],
+      "date-time": "2016-10-04T05:19:54Z",
+      "timestamp": 1475558394000
+    },
+    "source": "CrossRef",
+    "title": "Unsupervised extraction of functional gene expression signatures in the bacterial pathogen Pseudomonas aeruginosa with eADAGE",
+    "prefix": "http://id.crossref.org/prefix/10.1101",
+    "author": [
+      {
+        "ORCID": "http://orcid.org/0000-0002-8893-4566",
+        "given": "Jie",
+        "family": "Tan",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-0835-6955",
+        "given": "Georgia",
+        "family": "Doing",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0003-3010-8453",
+        "given": "Kimberley A",
+        "family": "Lewis",
+        "affiliation": []
+      },
+      {
+        "given": "Courtney E",
+        "family": "Price",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-7461-9530",
+        "given": "Kathleen M",
+        "family": "Chen",
+        "affiliation": []
+      },
+      {
+        "given": "Kyle C",
+        "family": "Cady",
+        "affiliation": []
+      },
+      {
+        "given": "Barret",
+        "family": "Perchuk",
+        "affiliation": []
+      },
+      {
+        "given": "Michael T",
+        "family": "Laub",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-6366-2971",
+        "given": "Deborah A",
+        "family": "Hogan",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0001-8713-9213",
+        "given": "Casey S",
+        "family": "Greene",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/246",
+    "container-title": null,
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          4
+        ]
+      ],
+      "date-time": "2017-01-04T06:15:25Z",
+      "timestamp": 1483510525000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          10,
+          3
+        ]
+      ]
+    },
+    "URL": "http://dx.doi.org/10.1101/078659",
+    "citing-count": 0,
+    "id": "ref_153"
+  },
+  {
     "abstract": "After a more than decade-long period of relatively little research activity in the area of recurrent neural networks, several new developments will be reviewed here that have allowed substantial progress both in understanding and in technical solutions towards more efficient training of recurrent networks. These advances have been motivated by and related to the optimization issues surrounding deep learning. Although recurrent networks are extremely powerful in what they can in principle represent in terms of modelling sequences,their training is plagued by two aspects of the same issue regarding the learning of long-term dependencies. Experiments reported here evaluate the use of clipping gradients, spanning longer time ranges with leaky integration, advanced momentum techniques, using more powerful output probability models, and encouraging sparser gradients to help symmetry breaking and credit assignment. The experiments are performed on text and music data and show off the combined effects of these techniques in generally improving both training and test error.",
     "author": [
       {
@@ -13575,6 +14267,39 @@
       ]
     },
     "title": "European union regulations on algorithmic decision-making and a “right to explanation”",
+    "type": "article-journal"
+  },
+  {
+    "abstract": "Motivation: Histone modifications are among the most important factors that control gene regulation. Computational methods that predict gene expression from histone modification signals are highly desirable for understanding their combinatorial effects in gene regulation. This knowledge can help in developing ’epigenetic drugs’ for diseases like cancer. Previous studies for quantifying the relationship between histone modifications and gene expression levels either failed to capture combinatorial effects or relied on multiple methods that separate predictions and combinatorial analysis. This paper develops a unified discriminative framework using a deep convolutional neural network to classify gene expression using histone modification data as input. Our system, called DeepChrome, allows automatic extraction of complex interactions among important features. To simultaneously visualize the combinatorial interactions among histone modifications, we propose a novel optimization-based technique that generates feature pattern maps from the learnt deep model. This provides an intuitive description of underlying epigenetic mechanisms that regulate genes. Results: We show that DeepChrome outperforms state-of-the-art models like Support Vector Machines and Random Forests for gene expression classification task on 56 different cell-types from REMC database. The output of our visualization technique not only validates the previous observations but also allows novel insights about combinatorial interactions among histone modification marks, some of which have recently been observed by experimental studies.",
+    "author": [
+      {
+        "family": "Singh",
+        "given": "Ritambhara"
+      },
+      {
+        "family": "Lanchantin",
+        "given": "Jack"
+      },
+      {
+        "family": "Robins",
+        "given": "Gabriel"
+      },
+      {
+        "family": "Qi",
+        "given": "Yanjun"
+      }
+    ],
+    "id": "ref_151",
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          7
+        ]
+      ]
+    },
+    "title": "DeepChrome: Deep-learning for predicting gene expression from histone modifications",
+    "title-short": "DeepChrome",
     "type": "article-journal"
   }
 ]
