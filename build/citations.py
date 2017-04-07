@@ -18,17 +18,31 @@ def validate_reference(ref):
     return None
 
 
+bracketed_reference_pattern = re.compile(r'\[(@.+?)\]', flags=re.DOTALL)
+
+
 def get_references_from_text(text):
     """
     Extract the set of references in a text
     """
     refs = set()
-    for ref_text in re.findall(r'\[(@.+?)\]', text, flags=re.DOTALL):
+    for ref_text in bracketed_reference_pattern.findall(text):
         for ref in ref_text.split():
             if not ref:
                 continue
             refs.add(ref)
     return refs
+
+
+def semicolon_separate_references(text):
+    """
+    Separate multiple references inside the same brackets with a space and
+    semicolon for pandoc-citeproc.
+    """
+    return bracketed_reference_pattern.sub(
+        repl=lambda x: '; '.join(x.group().split()),
+        string=text
+    )
 
 
 def get_brackets_without_reference(text):
