@@ -19,6 +19,7 @@ from citations import (
     get_brackets_without_reference,
     get_references_from_text,
     get_text,
+    semicolon_separate_references,
     validate_reference,
 )
 
@@ -120,6 +121,8 @@ for old, new in zip(ref_df.text, ref_df.citation_id):
     old = re.escape(old)
     new = f'@{new}'
     converted_text = re.sub(old + '(?=[\s\]])', new, converted_text)
+# Semicolon separate multiple refernces for pandoc-citeproc
+converted_text = semicolon_separate_references(converted_text)
 
 # Write manuscript for pandoc
 with gen_dir.joinpath('all-sections.md').open('wt') as write_file:
