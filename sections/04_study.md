@@ -319,8 +319,8 @@ such as SVMs [@tag:McHardy], naive Bayesian classifiers [@tag:nbc], etc. to clas
 each read.  Then, researchers began to use techniques that could be used to 
 estimate relative abundances of an entire sample, instead of the precise but
 painstakingly slow read-by-read classification.  Relative abundance
-estimators (a.k.a diversity profilers) are MetaPhlan[@tag:Metaphlan], (WGS)Quikr[@tag:wgsquikr],
-and some configurations of tools like OneCodex[@tag:onecodex] and LMAT[@tag:lmat].  While one
+estimators (a.k.a diversity profilers) are MetaPhlan [@tag:Metaphlan], (WGS)Quikr [@tag:wgsquikr],
+and some configurations of tools like OneCodex [@tag:onecodex] and LMAT [@tag:lmat].  While one
 cannot identify which reads were mapped back to an organism using relative
 abundance estimators, they can be useful for faster comparative and other
 downstream analyses.   Newer methods hope to classify reads and estimate
@@ -338,7 +338,7 @@ techniques that bypass the taxonomic classification step altogether [@tag:Ding],
 (sequence composition to phenotype classification).  Also, researchers have
 looked into how feature selection can improve classification [@tag:Liu @tag:Segata],
 and techniques have been proposed that are classifier-independent
-[@tag:Ditzler,@tag:Ditzler2].
+[@tag:Ditzler @tag:Ditzler2].
 
 So, how have neural networks (NNs) been of use?    Most neural networks are being 
 used for short sequence->taxa/function classification, where there is a lot of data 
@@ -373,7 +373,7 @@ Recently, multi-layer, recurrent networks (and convolutional
 networks) have been applied to microbiome genotype-phenotype, with Ditzler et
 al. being the first to associate soil samples with pH level using multi-layer
 perceptrons, deep-belief networks, and recursive neural networks (RNNs) 
-[@tag:Ditzler3] .  Besides classifying the samples appropriately, Ditzler shows
+[@tag:Ditzler3]. Besides classifying the samples appropriately, Ditzler shows
 that internal phylogenetic tree nodes inferred by the networks are
 appropriate features representing low/high pH, which can provide additional
 useful information and new features for future metagenomic sample comparison.
