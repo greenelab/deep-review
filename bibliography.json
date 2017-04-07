@@ -13050,6 +13050,1876 @@
     "id": "ref_153"
   },
   {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          3,
+          30
+        ]
+      ],
+      "date-time": "2017-03-30T08:18:41Z",
+      "timestamp": 1490861921827
+    },
+    "reference-count": 36,
+    "publisher": "Wiley-Blackwell",
+    "issue": "19",
+    "license": [
+      {
+        "URL": "http://doi.wiley.com/10.1002/tdm_license_1.1",
+        "start": {
+          "date-parts": [
+            [
+              2015,
+              9,
+              1
+            ]
+          ],
+          "date-time": "2015-09-01T00:00:00Z",
+          "timestamp": 1441065600000
+        },
+        "delay-in-days": 1462,
+        "content-version": "tdm"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Proteomics"
+    ],
+    "cited-count": 0,
+    "published-print": {
+      "date-parts": [
+        [
+          2011,
+          10
+        ]
+      ]
+    },
+    "DOI": "10.1002/pmic.201100196",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2011,
+          8,
+          1
+        ]
+      ],
+      "date-time": "2011-08-01T06:56:30Z",
+      "timestamp": 1312181790000
+    },
+    "page": "3786-3792",
+    "source": "CrossRef",
+    "title": "Protein 8-class secondary structure prediction using conditional neural fields",
+    "prefix": "http://id.crossref.org/prefix/10.1002",
+    "volume": "11",
+    "author": [
+      {
+        "given": "Zhiyong",
+        "family": "Wang",
+        "affiliation": []
+      },
+      {
+        "given": "Feng",
+        "family": "Zhao",
+        "affiliation": []
+      },
+      {
+        "given": "Jian",
+        "family": "Peng",
+        "affiliation": []
+      },
+      {
+        "given": "Jinbo",
+        "family": "Xu",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/311",
+    "published-online": {
+      "date-parts": [
+        [
+          2011,
+          8,
+          31
+        ]
+      ]
+    },
+    "container-title": "PROTEOMICS",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fpmic.201100196",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          3,
+          30
+        ]
+      ],
+      "date-time": "2017-03-30T07:31:57Z",
+      "timestamp": 1490859117000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2011,
+          8,
+          31
+        ]
+      ]
+    },
+    "URL": "http://dx.doi.org/10.1002/pmic.201100196",
+    "issn-type": [
+      {
+        "value": "1615-9853",
+        "type": "print"
+      }
+    ],
+    "citing-count": 36,
+    "subject": [
+      "Biochemistry",
+      "Molecular Biology"
+    ],
+    "id": "ref_155"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2016,
+          11,
+          14
+        ]
+      ],
+      "date-time": "2016-11-14T18:23:46Z",
+      "timestamp": 1479147826607
+    },
+    "reference-count": 30,
+    "publisher": "Elsevier BV",
+    "issue": "2",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Journal of Molecular Biology"
+    ],
+    "cited-count": 0,
+    "published-print": {
+      "date-parts": [
+        [
+          1999,
+          9
+        ]
+      ]
+    },
+    "DOI": "10.1006/jmbi.1999.3091",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2002,
+          10,
+          7
+        ]
+      ],
+      "date-time": "2002-10-07T16:21:31Z",
+      "timestamp": 1034007691000
+    },
+    "page": "195-202",
+    "source": "CrossRef",
+    "title": "Protein secondary structure prediction based on position-specific scoring matrices",
+    "prefix": "http://id.crossref.org/prefix/10.1006",
+    "volume": "292",
+    "author": [
+      {
+        "given": "David T",
+        "family": "Jones",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/78",
+    "container-title": "Journal of Molecular Biology",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://api.elsevier.com/content/article/PII:S0022283699930917?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://api.elsevier.com/content/article/PII:S0022283699930917?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2015,
+          2,
+          14
+        ]
+      ],
+      "date-time": "2015-02-14T05:00:00Z",
+      "timestamp": 1423890000000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          1999,
+          9
+        ]
+      ]
+    },
+    "alternative-id": [
+      "S0022283699930917"
+    ],
+    "URL": "http://dx.doi.org/10.1006/jmbi.1999.3091",
+    "citing-count": 30,
+    "subject": [
+      "Molecular Biology"
+    ],
+    "id": "ref_156"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2016,
+          11,
+          11
+        ]
+      ],
+      "date-time": "2016-11-11T09:20:38Z",
+      "timestamp": 1478856038625
+    },
+    "reference-count": 48,
+    "publisher": "Springer Nature",
+    "license": [
+      {
+        "URL": "http://www.springer.com/tdm",
+        "start": {
+          "date-parts": [
+            [
+              2016,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2016-01-01T00:00:00Z",
+          "timestamp": 1451606400000
+        },
+        "delay-in-days": 0,
+        "content-version": "vor"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "cited-count": 0,
+    "published-print": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "DOI": "10.1007/978-3-319-46227-1_1",
+    "type": "chapter",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          9,
+          3
+        ]
+      ],
+      "date-time": "2016-09-03T05:34:10Z",
+      "timestamp": 1472880850000
+    },
+    "page": "1-16",
+    "source": "CrossRef",
+    "title": "AUC-Maximized Deep Convolutional Neural Fields for Protein Sequence Labeling",
+    "prefix": "http://id.crossref.org/prefix/10.1007",
+    "author": [
+      {
+        "given": "Sheng",
+        "family": "Wang",
+        "affiliation": []
+      },
+      {
+        "given": "Siqi",
+        "family": "Sun",
+        "affiliation": []
+      },
+      {
+        "given": "Jinbo",
+        "family": "Xu",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/297",
+    "published-online": {
+      "date-parts": [
+        [
+          2016,
+          9,
+          4
+        ]
+      ]
+    },
+    "container-title": "Machine Learning and Knowledge Discovery in Databases",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          9,
+          3
+        ]
+      ],
+      "date-time": "2016-09-03T05:34:09Z",
+      "timestamp": 1472880849000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "URL": "http://dx.doi.org/10.1007/978-3-319-46227-1_1",
+    "citing-count": 48,
+    "id": "ref_157"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2016,
+          10,
+          31
+        ]
+      ],
+      "date-time": "2016-10-31T07:54:19Z",
+      "timestamp": 1477900459528
+    },
+    "reference-count": 48,
+    "publisher": "Springer Nature",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Sci. Rep."
+    ],
+    "cited-count": 0,
+    "DOI": "10.1038/srep11476",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2015,
+          6,
+          22
+        ]
+      ],
+      "date-time": "2015-06-22T15:18:26Z",
+      "timestamp": 1434986306000
+    },
+    "page": "11476",
+    "source": "CrossRef",
+    "title": "Improving prediction of secondary structure, local backbone angles, and solvent accessible surface area of proteins by iterative deep learning",
+    "prefix": "http://id.crossref.org/prefix/10.1038",
+    "volume": "5",
+    "author": [
+      {
+        "given": "Rhys",
+        "family": "Heffernan",
+        "affiliation": []
+      },
+      {
+        "given": "Kuldip",
+        "family": "Paliwal",
+        "affiliation": []
+      },
+      {
+        "given": "James",
+        "family": "Lyons",
+        "affiliation": []
+      },
+      {
+        "given": "Abdollah",
+        "family": "Dehzangi",
+        "affiliation": []
+      },
+      {
+        "given": "Alok",
+        "family": "Sharma",
+        "affiliation": []
+      },
+      {
+        "given": "Jihua",
+        "family": "Wang",
+        "affiliation": []
+      },
+      {
+        "given": "Abdul",
+        "family": "Sattar",
+        "affiliation": []
+      },
+      {
+        "given": "Yuedong",
+        "family": "Yang",
+        "affiliation": []
+      },
+      {
+        "given": "Yaoqi",
+        "family": "Zhou",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/339",
+    "published-online": {
+      "date-parts": [
+        [
+          2015,
+          6,
+          22
+        ]
+      ]
+    },
+    "container-title": "Scientific Reports",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2015,
+          10,
+          26
+        ]
+      ],
+      "date-time": "2015-10-26T17:55:07Z",
+      "timestamp": 1445882107000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2015,
+          6,
+          22
+        ]
+      ]
+    },
+    "alternative-id": [
+      "srep11476"
+    ],
+    "URL": "http://dx.doi.org/10.1038/srep11476",
+    "citing-count": 48,
+    "id": "ref_158"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2016,
+          12,
+          23
+        ]
+      ],
+      "date-time": "2016-12-23T02:44:38Z",
+      "timestamp": 1482461078826
+    },
+    "reference-count": 35,
+    "publisher": "Proceedings of the National Academy of Sciences",
+    "issue": "1",
+    "content-domain": {
+      "domain": [
+        "pnas.org"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Proceedings of the National Academy of Sciences"
+    ],
+    "cited-count": 0,
+    "published-print": {
+      "date-parts": [
+        [
+          2009,
+          1,
+          6
+        ]
+      ]
+    },
+    "DOI": "10.1073/pnas.0805923106",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2008,
+          12,
+          31
+        ]
+      ],
+      "date-time": "2008-12-31T01:26:09Z",
+      "timestamp": 1230686769000
+    },
+    "page": "67-72",
+    "update-policy": "http://dx.doi.org/10.1073/pnas.cm10313",
+    "source": "CrossRef",
+    "title": "Identification of direct residue contacts in protein-protein interaction by message passing",
+    "prefix": "http://id.crossref.org/prefix/10.1073",
+    "volume": "106",
+    "author": [
+      {
+        "given": "M.",
+        "family": "Weigt",
+        "affiliation": []
+      },
+      {
+        "given": "R. A.",
+        "family": "White",
+        "affiliation": []
+      },
+      {
+        "given": "H.",
+        "family": "Szurmant",
+        "affiliation": []
+      },
+      {
+        "given": "J. A.",
+        "family": "Hoch",
+        "affiliation": []
+      },
+      {
+        "given": "T.",
+        "family": "Hwa",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/341",
+    "published-online": {
+      "date-parts": [
+        [
+          2008,
+          12,
+          30
+        ]
+      ]
+    },
+    "container-title": "Proceedings of the National Academy of Sciences",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          12,
+          23
+        ]
+      ],
+      "date-time": "2016-12-23T01:25:13Z",
+      "timestamp": 1482456313000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2008,
+          12,
+          30
+        ]
+      ]
+    },
+    "URL": "http://dx.doi.org/10.1073/pnas.0805923106",
+    "citing-count": 35,
+    "subject": [
+      "General"
+    ],
+    "id": "ref_159"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          13
+        ]
+      ],
+      "date-time": "2017-01-13T18:40:08Z",
+      "timestamp": 1484332808285
+    },
+    "reference-count": 0,
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "4",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Bioinformatics"
+    ],
+    "cited-count": 0,
+    "published-print": {
+      "date-parts": [
+        [
+          2000,
+          4,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1093/bioinformatics/16.4.404",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2002,
+          7,
+          26
+        ]
+      ],
+      "date-time": "2002-07-26T22:47:12Z",
+      "timestamp": 1027723632000
+    },
+    "page": "404-405",
+    "source": "CrossRef",
+    "title": "The PSIPRED protein structure prediction server",
+    "prefix": "http://id.crossref.org/prefix/10.1093",
+    "volume": "16",
+    "author": [
+      {
+        "given": "L. J.",
+        "family": "McGuffin",
+        "affiliation": []
+      },
+      {
+        "given": "K.",
+        "family": "Bryson",
+        "affiliation": []
+      },
+      {
+        "given": "D. T.",
+        "family": "Jones",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/286",
+    "container-title": "Bioinformatics",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          13
+        ]
+      ],
+      "date-time": "2017-01-13T17:20:42Z",
+      "timestamp": 1484328042000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2000,
+          4,
+          1
+        ]
+      ]
+    },
+    "URL": "http://dx.doi.org/10.1093/bioinformatics/16.4.404",
+    "issn-type": [
+      {
+        "value": "1367-4803",
+        "type": "print"
+      },
+      {
+        "value": "1460-2059",
+        "type": "electronic"
+      }
+    ],
+    "citing-count": 0,
+    "subject": [
+      "Statistics and Probability",
+      "Computational Theory and Mathematics",
+      "Biochemistry",
+      "Molecular Biology",
+      "Computational Mathematics",
+      "Computer Science Applications"
+    ],
+    "id": "ref_160"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          13
+        ]
+      ],
+      "date-time": "2017-01-13T18:49:55Z",
+      "timestamp": 1484333395295
+    },
+    "reference-count": 31,
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "19",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Bioinformatics"
+    ],
+    "cited-count": 0,
+    "published-print": {
+      "date-parts": [
+        [
+          2012,
+          10,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1093/bioinformatics/bts475",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2012,
+          7,
+          31
+        ]
+      ],
+      "date-time": "2012-07-31T06:55:55Z",
+      "timestamp": 1343717755000
+    },
+    "page": "2449-2457",
+    "source": "CrossRef",
+    "title": "Deep architectures for protein contact map prediction",
+    "prefix": "http://id.crossref.org/prefix/10.1093",
+    "volume": "28",
+    "author": [
+      {
+        "given": "P.",
+        "family": "Di Lena",
+        "affiliation": []
+      },
+      {
+        "given": "K.",
+        "family": "Nagata",
+        "affiliation": []
+      },
+      {
+        "given": "P.",
+        "family": "Baldi",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/286",
+    "published-online": {
+      "date-parts": [
+        [
+          2012,
+          7,
+          30
+        ]
+      ]
+    },
+    "container-title": "Bioinformatics",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          13
+        ]
+      ],
+      "date-time": "2017-01-13T17:45:59Z",
+      "timestamp": 1484329559000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2012,
+          7,
+          30
+        ]
+      ]
+    },
+    "URL": "http://dx.doi.org/10.1093/bioinformatics/bts475",
+    "issn-type": [
+      {
+        "value": "1367-4803",
+        "type": "print"
+      },
+      {
+        "value": "1460-2059",
+        "type": "electronic"
+      }
+    ],
+    "citing-count": 31,
+    "subject": [
+      "Statistics and Probability",
+      "Computational Theory and Mathematics",
+      "Biochemistry",
+      "Molecular Biology",
+      "Computational Mathematics",
+      "Computer Science Applications"
+    ],
+    "id": "ref_161"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          13
+        ]
+      ],
+      "date-time": "2017-01-13T18:45:16Z",
+      "timestamp": 1484333116783
+    },
+    "reference-count": 40,
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "23",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Bioinformatics"
+    ],
+    "cited-count": 0,
+    "published-print": {
+      "date-parts": [
+        [
+          2012,
+          12,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1093/bioinformatics/bts598",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2012,
+          10,
+          10
+        ]
+      ],
+      "date-time": "2012-10-10T08:45:27Z",
+      "timestamp": 1349858727000
+    },
+    "page": "3066-3072",
+    "source": "CrossRef",
+    "title": "Predicting protein residue-residue contacts using deep networks and boosting",
+    "prefix": "http://id.crossref.org/prefix/10.1093",
+    "volume": "28",
+    "author": [
+      {
+        "given": "J.",
+        "family": "Eickholt",
+        "affiliation": []
+      },
+      {
+        "given": "J.",
+        "family": "Cheng",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/286",
+    "published-online": {
+      "date-parts": [
+        [
+          2012,
+          10,
+          9
+        ]
+      ]
+    },
+    "container-title": "Bioinformatics",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          13
+        ]
+      ],
+      "date-time": "2017-01-13T17:47:07Z",
+      "timestamp": 1484329627000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2012,
+          10,
+          9
+        ]
+      ]
+    },
+    "URL": "http://dx.doi.org/10.1093/bioinformatics/bts598",
+    "issn-type": [
+      {
+        "value": "1367-4803",
+        "type": "print"
+      },
+      {
+        "value": "1460-2059",
+        "type": "electronic"
+      }
+    ],
+    "citing-count": 40,
+    "subject": [
+      "Statistics and Probability",
+      "Computational Theory and Mathematics",
+      "Biochemistry",
+      "Molecular Biology",
+      "Computational Mathematics",
+      "Computer Science Applications"
+    ],
+    "id": "ref_162"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          13
+        ]
+      ],
+      "date-time": "2017-01-13T18:50:23Z",
+      "timestamp": 1484333423361
+    },
+    "reference-count": 29,
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "7",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Bioinformatics"
+    ],
+    "cited-count": 0,
+    "published-print": {
+      "date-parts": [
+        [
+          2015,
+          4,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1093/bioinformatics/btu791",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2014,
+          11,
+          28
+        ]
+      ],
+      "date-time": "2014-11-28T15:35:07Z",
+      "timestamp": 1417188907000
+    },
+    "page": "999-1006",
+    "source": "CrossRef",
+    "title": "MetaPSICOV: combining coevolution methods for accurate prediction of contacts and long range hydrogen bonding in proteins",
+    "prefix": "http://id.crossref.org/prefix/10.1093",
+    "volume": "31",
+    "author": [
+      {
+        "given": "D. T.",
+        "family": "Jones",
+        "affiliation": []
+      },
+      {
+        "given": "T.",
+        "family": "Singh",
+        "affiliation": []
+      },
+      {
+        "given": "T.",
+        "family": "Kosciolek",
+        "affiliation": []
+      },
+      {
+        "given": "S.",
+        "family": "Tetchner",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/286",
+    "published-online": {
+      "date-parts": [
+        [
+          2014,
+          11,
+          26
+        ]
+      ]
+    },
+    "container-title": "Bioinformatics",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          13
+        ]
+      ],
+      "date-time": "2017-01-13T17:17:33Z",
+      "timestamp": 1484327853000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2014,
+          11,
+          26
+        ]
+      ]
+    },
+    "URL": "http://dx.doi.org/10.1093/bioinformatics/btu791",
+    "issn-type": [
+      {
+        "value": "1367-4803",
+        "type": "print"
+      },
+      {
+        "value": "1460-2059",
+        "type": "electronic"
+      }
+    ],
+    "citing-count": 29,
+    "subject": [
+      "Statistics and Probability",
+      "Computational Theory and Mathematics",
+      "Biochemistry",
+      "Molecular Biology",
+      "Computational Mathematics",
+      "Computer Science Applications"
+    ],
+    "id": "ref_163"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          13
+        ]
+      ],
+      "date-time": "2017-01-13T18:53:00Z",
+      "timestamp": 1484333580503
+    },
+    "reference-count": 44,
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "21",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Bioinformatics"
+    ],
+    "cited-count": 0,
+    "published-print": {
+      "date-parts": [
+        [
+          2015,
+          11,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1093/bioinformatics/btv472",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2015,
+          8,
+          15
+        ]
+      ],
+      "date-time": "2015-08-15T01:29:49Z",
+      "timestamp": 1439602189000
+    },
+    "page": "3506-3513",
+    "source": "CrossRef",
+    "title": "Protein contact prediction by integrating joint evolutionary coupling analysis and supervised learning",
+    "prefix": "http://id.crossref.org/prefix/10.1093",
+    "volume": "31",
+    "author": [
+      {
+        "given": "Jianzhu",
+        "family": "Ma",
+        "affiliation": []
+      },
+      {
+        "given": "Sheng",
+        "family": "Wang",
+        "affiliation": []
+      },
+      {
+        "given": "Zhiyong",
+        "family": "Wang",
+        "affiliation": []
+      },
+      {
+        "given": "Jinbo",
+        "family": "Xu",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/286",
+    "published-online": {
+      "date-parts": [
+        [
+          2015,
+          8,
+          14
+        ]
+      ]
+    },
+    "container-title": "Bioinformatics",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          13
+        ]
+      ],
+      "date-time": "2017-01-13T17:22:05Z",
+      "timestamp": 1484328125000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2015,
+          8,
+          14
+        ]
+      ]
+    },
+    "alternative-id": [
+      "10.1093/bioinformatics/btv472"
+    ],
+    "URL": "http://dx.doi.org/10.1093/bioinformatics/btv472",
+    "issn-type": [
+      {
+        "value": "1367-4803",
+        "type": "print"
+      },
+      {
+        "value": "1460-2059",
+        "type": "electronic"
+      }
+    ],
+    "citing-count": 44,
+    "subject": [
+      "Statistics and Probability",
+      "Computational Theory and Mathematics",
+      "Biochemistry",
+      "Molecular Biology",
+      "Computational Mathematics",
+      "Computer Science Applications"
+    ],
+    "id": "ref_164"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2016,
+          12,
+          27
+        ]
+      ],
+      "date-time": "2016-12-27T23:41:05Z",
+      "timestamp": 1482882065198
+    },
+    "reference-count": 50,
+    "publisher": "Public Library of Science (PLoS)",
+    "issue": "11",
+    "license": [
+      {
+        "URL": "http://creativecommons.org/licenses/by/4.0/",
+        "start": {
+          "date-parts": [
+            [
+              2014,
+              11,
+              6
+            ]
+          ],
+          "date-time": "2014-11-06T00:00:00Z",
+          "timestamp": 1415232000000
+        },
+        "delay-in-days": 0,
+        "content-version": "vor"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "www.ploscompbiol.org"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "PLoS Comput Biol"
+    ],
+    "cited-count": 0,
+    "DOI": "10.1371/journal.pcbi.1003889",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2014,
+          11,
+          6
+        ]
+      ],
+      "date-time": "2014-11-06T19:07:02Z",
+      "timestamp": 1415300822000
+    },
+    "page": "e1003889",
+    "update-policy": "http://dx.doi.org/10.1371/journal.pcbi.corrections_policy",
+    "source": "CrossRef",
+    "title": "Improved Contact Predictions Using the Recognition of Protein Like Contact Patterns",
+    "prefix": "http://id.crossref.org/prefix/10.1371",
+    "volume": "10",
+    "author": [
+      {
+        "given": "Marcin J.",
+        "family": "Skwark",
+        "affiliation": []
+      },
+      {
+        "given": "Daniele",
+        "family": "Raimondi",
+        "affiliation": []
+      },
+      {
+        "given": "Mirco",
+        "family": "Michel",
+        "affiliation": []
+      },
+      {
+        "given": "Arne",
+        "family": "Elofsson",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/340",
+    "published-online": {
+      "date-parts": [
+        [
+          2014,
+          11,
+          6
+        ]
+      ]
+    },
+    "container-title": "PLoS Computational Biology",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          12,
+          27
+        ]
+      ],
+      "date-time": "2016-12-27T22:25:32Z",
+      "timestamp": 1482877532000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "editor": [
+      {
+        "given": "Guanghong",
+        "family": "Wei",
+        "affiliation": []
+      }
+    ],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2014,
+          11,
+          6
+        ]
+      ]
+    },
+    "URL": "http://dx.doi.org/10.1371/journal.pcbi.1003889",
+    "citing-count": 50,
+    "subject": [
+      "Ecology",
+      "Modelling and Simulation",
+      "Computational Theory and Mathematics",
+      "Genetics",
+      "Ecology, Evolution, Behavior and Systematics",
+      "Molecular Biology",
+      "Cellular and Molecular Neuroscience"
+    ],
+    "id": "ref_165"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          20
+        ]
+      ],
+      "date-time": "2017-01-20T21:40:40Z",
+      "timestamp": 1484948440130
+    },
+    "update-to": [
+      {
+        "updated": {
+          "date-parts": [
+            [
+              2017,
+              1,
+              20
+            ]
+          ],
+          "date-time": "2017-01-20T00:00:00Z",
+          "timestamp": 1484870400000
+        },
+        "DOI": "10.1371/journal.pcbi.1005324",
+        "type": "new_version",
+        "label": "New version"
+      }
+    ],
+    "reference-count": 49,
+    "publisher": "Public Library of Science (PLoS)",
+    "issue": "1",
+    "license": [
+      {
+        "URL": "http://creativecommons.org/licenses/by/4.0/",
+        "start": {
+          "date-parts": [
+            [
+              2017,
+              1,
+              5
+            ]
+          ],
+          "date-time": "2017-01-05T00:00:00Z",
+          "timestamp": 1483574400000
+        },
+        "delay-in-days": 0,
+        "content-version": "vor"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/100000057",
+        "name": "National Institute of General Medical Sciences",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "R01GM089753"
+        ]
+      },
+      {
+        "DOI": "10.13039/100000076",
+        "name": "Directorate for Biological Sciences",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "DBI-1564955"
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "www.ploscompbiol.org"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "PLoS Comput Biol"
+    ],
+    "cited-count": 0,
+    "DOI": "10.1371/journal.pcbi.1005324",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          9
+        ]
+      ],
+      "date-time": "2017-01-09T19:57:34Z",
+      "timestamp": 1483991854000
+    },
+    "page": "e1005324",
+    "update-policy": "http://dx.doi.org/10.1371/journal.pcbi.corrections_policy",
+    "source": "CrossRef",
+    "title": "Accurate De Novo Prediction of Protein Contact Map by Ultra-Deep Learning Model",
+    "prefix": "http://id.crossref.org/prefix/10.1371",
+    "volume": "13",
+    "author": [
+      {
+        "given": "Sheng",
+        "family": "Wang",
+        "affiliation": []
+      },
+      {
+        "given": "Siqi",
+        "family": "Sun",
+        "affiliation": []
+      },
+      {
+        "given": "Zhen",
+        "family": "Li",
+        "affiliation": []
+      },
+      {
+        "given": "Renyu",
+        "family": "Zhang",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0001-7111-4839",
+        "given": "Jinbo",
+        "family": "Xu",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/340",
+    "published-online": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          5
+        ]
+      ]
+    },
+    "container-title": "PLOS Computational Biology",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          20
+        ]
+      ],
+      "date-time": "2017-01-20T20:44:55Z",
+      "timestamp": 1484945095000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "editor": [
+      {
+        "given": "Avner",
+        "family": "Schlessinger",
+        "affiliation": []
+      }
+    ],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          5
+        ]
+      ]
+    },
+    "URL": "http://dx.doi.org/10.1371/journal.pcbi.1005324",
+    "issn-type": [
+      {
+        "value": "1553-7358",
+        "type": "electronic"
+      }
+    ],
+    "citing-count": 49,
+    "subject": [
+      "Ecology",
+      "Modelling and Simulation",
+      "Computational Theory and Mathematics",
+      "Genetics",
+      "Ecology, Evolution, Behavior and Systematics",
+      "Molecular Biology",
+      "Cellular and Molecular Neuroscience"
+    ],
+    "id": "ref_166"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          3,
+          7
+        ]
+      ],
+      "date-time": "2017-03-07T01:43:53Z",
+      "timestamp": 1488851033378
+    },
+    "reference-count": 82,
+    "publisher": "Public Library of Science (PLoS)",
+    "issue": "12",
+    "license": [
+      {
+        "URL": "http://creativecommons.org/licenses/by/4.0/",
+        "start": {
+          "date-parts": [
+            [
+              2011,
+              12,
+              7
+            ]
+          ],
+          "date-time": "2011-12-07T00:00:00Z",
+          "timestamp": 1323216000000
+        },
+        "delay-in-days": 0,
+        "content-version": "vor"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "www.plosone.org"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "PLoS ONE"
+    ],
+    "cited-count": 0,
+    "DOI": "10.1371/journal.pone.0028766",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2011,
+          12,
+          7
+        ]
+      ],
+      "date-time": "2011-12-07T22:09:50Z",
+      "timestamp": 1323295790000
+    },
+    "page": "e28766",
+    "update-policy": "http://dx.doi.org/10.1371/journal.pone.corrections_policy",
+    "source": "CrossRef",
+    "title": "Protein 3D Structure Computed from Evolutionary Sequence Variation",
+    "prefix": "http://id.crossref.org/prefix/10.1371",
+    "volume": "6",
+    "author": [
+      {
+        "given": "Debora S.",
+        "family": "Marks",
+        "affiliation": []
+      },
+      {
+        "given": "Lucy J.",
+        "family": "Colwell",
+        "affiliation": []
+      },
+      {
+        "given": "Robert",
+        "family": "Sheridan",
+        "affiliation": []
+      },
+      {
+        "given": "Thomas A.",
+        "family": "Hopf",
+        "affiliation": []
+      },
+      {
+        "given": "Andrea",
+        "family": "Pagnani",
+        "affiliation": []
+      },
+      {
+        "given": "Riccardo",
+        "family": "Zecchina",
+        "affiliation": []
+      },
+      {
+        "given": "Chris",
+        "family": "Sander",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/340",
+    "published-online": {
+      "date-parts": [
+        [
+          2011,
+          12,
+          7
+        ]
+      ]
+    },
+    "container-title": "PLoS ONE",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          3,
+          7
+        ]
+      ],
+      "date-time": "2017-03-07T00:43:31Z",
+      "timestamp": 1488847411000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "editor": [
+      {
+        "given": "Andrej",
+        "family": "Sali",
+        "affiliation": []
+      }
+    ],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2011,
+          12,
+          7
+        ]
+      ]
+    },
+    "URL": "http://dx.doi.org/10.1371/journal.pone.0028766",
+    "issn-type": [
+      {
+        "value": "1932-6203",
+        "type": "electronic"
+      }
+    ],
+    "citing-count": 82,
+    "subject": [
+      "Biochemistry, Genetics and Molecular Biology(all)",
+      "Agricultural and Biological Sciences(all)",
+      "Medicine(all)"
+    ],
+    "id": "ref_167"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          3,
+          7
+        ]
+      ],
+      "date-time": "2017-03-07T07:40:10Z",
+      "timestamp": 1488872410634
+    },
+    "reference-count": 58,
+    "publisher": "Public Library of Science (PLoS)",
+    "issue": "3",
+    "license": [
+      {
+        "URL": "http://creativecommons.org/licenses/by/4.0/",
+        "start": {
+          "date-parts": [
+            [
+              2012,
+              3,
+              26
+            ]
+          ],
+          "date-time": "2012-03-26T00:00:00Z",
+          "timestamp": 1332720000000
+        },
+        "delay-in-days": 0,
+        "content-version": "vor"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "www.plosone.org"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "PLoS ONE"
+    ],
+    "cited-count": 0,
+    "DOI": "10.1371/journal.pone.0032235",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2012,
+          3,
+          26
+        ]
+      ],
+      "date-time": "2012-03-26T21:20:23Z",
+      "timestamp": 1332796823000
+    },
+    "page": "e32235",
+    "update-policy": "http://dx.doi.org/10.1371/journal.pone.corrections_policy",
+    "source": "CrossRef",
+    "title": "A Unified Multitask Architecture for Predicting Local Protein Properties",
+    "prefix": "http://id.crossref.org/prefix/10.1371",
+    "volume": "7",
+    "author": [
+      {
+        "given": "Yanjun",
+        "family": "Qi",
+        "affiliation": []
+      },
+      {
+        "given": "Merja",
+        "family": "Oja",
+        "affiliation": []
+      },
+      {
+        "given": "Jason",
+        "family": "Weston",
+        "affiliation": []
+      },
+      {
+        "given": "William Stafford",
+        "family": "Noble",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/340",
+    "published-online": {
+      "date-parts": [
+        [
+          2012,
+          3,
+          26
+        ]
+      ]
+    },
+    "container-title": "PLoS ONE",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          3,
+          7
+        ]
+      ],
+      "date-time": "2017-03-07T06:20:42Z",
+      "timestamp": 1488867642000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "editor": [
+      {
+        "given": "Christos A.",
+        "family": "Ouzounis",
+        "affiliation": []
+      }
+    ],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2012,
+          3,
+          26
+        ]
+      ]
+    },
+    "URL": "http://dx.doi.org/10.1371/journal.pone.0032235",
+    "issn-type": [
+      {
+        "value": "1932-6203",
+        "type": "electronic"
+      }
+    ],
+    "citing-count": 58,
+    "subject": [
+      "Biochemistry, Genetics and Molecular Biology(all)",
+      "Agricultural and Biological Sciences(all)",
+      "Medicine(all)"
+    ],
+    "id": "ref_168"
+  },
+  {
+    "URL": "http://www.cameo3d.org/",
+    "type": "webpage",
+    "id": "ref_169"
+  },
+  {
+    "URL": "http://www.predictioncenter.org/casp12/rrc_avrg_results.cgi",
+    "type": "webpage",
+    "id": "ref_170"
+  },
+  {
     "abstract": "After a more than decade-long period of relatively little research activity in the area of recurrent neural networks, several new developments will be reviewed here that have allowed substantial progress both in understanding and in technical solutions towards more efficient training of recurrent networks. These advances have been motivated by and related to the optimization issues surrounding deep learning. Although recurrent networks are extremely powerful in what they can in principle represent in terms of modelling sequences,their training is plagued by two aspects of the same issue regarding the learning of long-term dependencies. Experiments reported here evaluate the use of clipping gradients, spanning longer time ranges with leaky integration, advanced momentum techniques, using more powerful output probability models, and encouraging sparser gradients to help symmetry breaking and credit assignment. The experiments are performed on text and music data and show off the combined effects of these techniques in generally improving both training and test error.",
     "author": [
       {
@@ -14300,6 +16170,30 @@
     },
     "title": "DeepChrome: Deep-learning for predicting gene expression from histone modifications",
     "title-short": "DeepChrome",
+    "type": "article-journal"
+  },
+  {
+    "abstract": "Predicting protein secondary structure is a fundamental problem in protein structure prediction. Here we present a new supervised generative stochastic network (GSN) based method to predict local secondary structure with deep hierarchical representations. GSN is a recently proposed deep learning technique (Bengio & Thibodeau-Laufer, 2013) to globally train deep generative model. We present the supervised extension of GSN, which learns a Markov chain to sample from a conditional distribution, and applied it to protein structure prediction. To scale the model to full-sized, high-dimensional data, like protein sequences with hundreds of amino acids, we introduce a convolutional architecture, which allows efficient learning across multiple layers of hierarchical representations. Our architecture uniquely focuses on predicting structured low-level labels informed with both low and high-level representations learned by the model. In our application this corresponds to labeling the secondary structure state of each amino-acid residue. We trained and tested the model on separate sets of non-homologous proteins sharing less than 30dataset, better than the previously reported best performance 64.9al., 2011) for this challenging secondary structure prediction problem.",
+    "author": [
+      {
+        "family": "Zhou",
+        "given": "Jian"
+      },
+      {
+        "family": "Troyanskaya",
+        "given": "Olga G."
+      }
+    ],
+    "id": "ref_154",
+    "issued": {
+      "date-parts": [
+        [
+          2014,
+          3
+        ]
+      ]
+    },
+    "title": "Deep supervised and convolutional generative stochastic network for protein secondary structure prediction",
     "type": "article-journal"
   }
 ]
