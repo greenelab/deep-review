@@ -1,5 +1,5 @@
 tag	citation
-Abe	url:http://ci.nii.ac.jp/naid/110006199745
+Abe	doi:10.1101/gr.634603
 AltaeTran2016_one_shot	arxiv:1611.03199
 Asgari	doi:10.1371/journal.pone.0141287
 blast	doi:10.1016/S0022-2836(05)80360-2
@@ -39,6 +39,7 @@ Hinton2015_dk	arxiv:1503.02531v1
 Hochreiter	doi:10.1093/bioinformatics/btm247
 Hoff	doi:10.1093/nar/gkp327
 Hubara2016_qnn	arxiv:1609.07061
+Karlin	doi:10.1128/jb.179.12.3899-3913.1997
 Kearnes2016_admet	arxiv:1606.08793
 Kearnes2016_graph_conv	doi:10.1007/s10822-016-9938-8
 Keras	url:https://github.com/fchollet/keras
@@ -84,6 +85,7 @@ Stein2010_cloud	doi:10.1186/gb-2010-11-5-207
 Stratnikov	doi:10.1186/2049-2618-1-11
 Su2015_gpu	arxiv:1507.01239
 Sun2016_ensemble	arxiv:1606.00575
+Sutskever	arxiv:1409.3215
 Swamidass2009_irv	doi:10.1021/ci8004379
 Tan2014_psb	doi:10.1142/9789814644730_0014
 Tan2015_adage	doi:10.1128/mSystems.00025-15
@@ -95,7 +97,7 @@ Vanhoucke2011_cpu	url:https://research.google.com/pubs/pub37631.html
 Vervier	doi:10.1093/bioinformatics/btv683
 Wallach2015_atom_net	arxiv:1510.02855
 Wang2016_protein_contact	doi:10.1101/073239
-Word2Vec	arXiv:1301.3781
+Word2Vec	arxiv:1301.3781
 wgsquikr	doi:10.1371/journal.pone.0091784
 Yasushi2016_cgbvs_dnn	doi:10.1002/minf.201600045
 yok	doi:10.1186/1471-2105-12-20
