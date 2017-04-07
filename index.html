@@ -98,7 +98,10 @@
 <p><em>It may not fit here, but there could be a general discussion of why different neural network architectures are particularly well-suited for different types of input data. For example, CNNs and RNNs for 1-dimensional data are used in several categories below.</em></p>
 <p><em>A few suggestions for sub-sections follow. Some of these could be left out because our goal is not an exhaustive enumeration of methods. Some are important areas of biology, but there may not be much deep learning- specific content to present. Others may be important areas where we lack expertise, in which case we may acknowledge the application area but not dive into merits or weaknesses of individual methods.</em></p>
 <h3 id="gene-expression">Gene expression</h3>
-<p><em>Predicting gene expression levels and unsupervised approaches for learning from gene expression. Those could be divided into separate sub-sections.</em></p>
+<p>Gene expression measurements characterize the abundance of many thousands of RNA transcripts within a given organism, tissue, or cell. This characterization can represent the underlying state of the given system and can be used to study heterogeneity across samples as well as how the system reacts to perturbation. While gene expression measurements have been traditionally made by quantitative polymerase chain reaction (qPCR), low throughput fluorescence based methods, and microarray technologies, the field has shifted in recent years to primarily performing RNA sequencing (RNA-seq) to catalog whole transcriptomes. As such next generation sequencing technologies continue to fall in price and rise in throughput, applying deep learning to study gene expression data is likely to make training deep models more feasible. With increased modeling ability, deep learning approaches are likely to grow in popularity and lead to novel biological insights.</p>
+<p>Already several deep learning approaches have been applied to gene expression data with varying aims. For instance, many researchers have applied unsupervised deep learning models to extract meaningful representations of gene modules or sample clusters. Denoising autoencoders have been used to cluster yeast expression microarrays into known modules representing cell cycle processes <span class="citation">[<a href="#ref-ref_149">69</a>]</span> and also to stratify yeast strains based on chemical and mutational perturbations <span class="citation">[<a href="#ref-ref_148">70</a>]</span>. Shallow (one hidden layer) denoising autoencoders have also been fruitful in extracting biological insight from thousands of <em>Pseudomonas aeruginosa</em> experiments <span class="citation">[<a href="#ref-ref_152">71</a>]</span> and in aggregating features relevant to specific breast cancer subtypes <span class="citation">[<a href="#ref-ref_62">16</a>]</span>. These unsupervised approaches applied to gene expression data are powerful methods for aggregating features and identifying gene signatures that may otherwise be overlooked by alternative methods. An additional benefit of unsupervised approaches is that ground truth labels, which are often difficult to acquire or are incorrect, are nonessential. However, careful interpretation must be performed regarding how the genes are agregated into features. Precisely attributing node activations to specific biological functions risks overinterpreting models and can lead to incorrect conclusions.</p>
+<p>Alternatively, deep learning approaches are also being applied for gene expression prediction tasks. For example, a deep neural network with three hidden layers outperformed linear regression in inferring the expression of over 20,000 target genes based on a representative, well-connected set of about 1,000 landmark genes <span class="citation">[<a href="#ref-ref_86">73</a>]</span>. However, while the deep learning model outperformed already existing algorithms in nearly every scenario, the model still displayed poor performance. The paper was also limited by computational bottlenecks that required data to be split randomly into two distinct models and trained separately. It is unclear how much performance would have increased if not for computational restrictions. Furthermore, a convolutional neural network applied to histone modifications, termed DeepChrome, <span class="citation">[<a href="#ref-ref_151">74</a>]</span> was shown to predict gene expression output. DeepChrome greatly improved high or low expression prediction accuracy over existing methods. Deep learning applied to epigenetic data for gene expression inference is a promising approach to study gene regulation. Deep learning approaches have also been applied to study cancer gene expression data with goals of identifying subtypes of patients with different molecular features and clinical manifestations <span class="citation">[<a href="#ref-ref_150">75</a>]</span>. In the study, the authors combine RBMs to integrate gene expression, DNA methylation, and miRNA data and use the constructed features in search of ovarian cancer subtypes. While the aforementioned approaches are promising, many convert gene expression measurements to categorical or binary variables thus ablating many complex gene expression signatures present in intermediate and relative numbers.</p>
+<p>Deep learning applied to gene expression data is in its infancy but the future is bright. Many hypotheses can now be interrogated because of increasing amounts of data and new developing technologies. For example, there is a growing appreciation for the large impact of disease heterogeneity on research and treatment strategies for disease. New technologies are being developed, such as single cell RNA-seq and high throughput fluorescence based imaging that are good matches for deep learning. Concurrently, deep learning methods are being developed to address novel problems such as adjusting for batch effects in single-cell RNA-seq data <span class="citation">[<a href="#ref-ref_125">76</a>]</span>. Moreover, deep learning is already well established in the image processing community, so the marriage of fluorescence based imaging techniques and deep learning is natural. These technologies are growing in popularity and will provide increasingly novel perspectives with respect to how cellular heterogeneity impacts gene expression coordination within a sample. In general, as the flow of gene expression data increases, and techniques to integrate heterogeneous genomic measurements made on the same samples are enhanced, the quality and types of questions deep learning can address is poised to improve.</p>
 <h3 id="splicing">Splicing</h3>
 <p><em>A separate section from general gene expression section above.</em></p>
 <h3 id="transcription-factors-and-rna-binding-proteins">Transcription factors and RNA-binding proteins</h3>
@@ -110,36 +113,36 @@
 <h3 id="protein-secondary-and-tertiary-structure">Protein secondary and tertiary structure</h3>
 <p><em>Jinbo Xu is writing this</em></p>
 <h3 id="signaling">Signaling</h3>
-<p><em>There is not much content here. Can <span class="citation">[<a href="#ref-ref_85">69</a>]</span> be covered elsewhere?</em></p>
+<p><em>There is not much content here. Can <span class="citation">[<a href="#ref-ref_85">77</a>]</span> be covered elsewhere?</em></p>
 <h3 id="morphological-phenotypes">Morphological phenotypes</h3>
-<p>A field poised for dramatic revolution by deep learning is bioimage analysis. Thus far, the primary use of deep learning for biological images has been for segmentation - that is, for the identification of biologically relevant structures in images such as nuclei, infected cells, or vasculature, in fluorescence or even brightfield channels <span class="citation">[<a href="#ref-ref_66">70</a>]</span>. Once so-called regions of interest have been identified, it is often straightforward to measure biological properties of interest, such as fluorescence intensities, textures, and sizes. Given the dramatic successes of deep learning in biological imaging, we simply refer to articles that review recent advancements <span class="citation">[<a href="#ref-ref_70">10</a>]</span>. We believe deep learning will become a commonplace tool for biological image segmentation once user-friendly tools exist.</p>
-<p>We anticipate an additional kind of paradigm shift in bioimaging that will be brought about by deep learning: what if images of biological samples, from simple cell cultures to three-dimensional organoids and tissue samples, could be mined for much more extensive biologically meaningful information than is currently standard? For example, a recent study demonstrated the ability to predict lineage fate in hematopoietic cells up to three generations in advance of differentiation <span class="citation">[<a href="#ref-ref_36">72</a>]</span>. In biomedical research, by far the most common paradigm is for biologists to decide in advance what feature to measure in images from their assay system. But images of cells contain a wide variety of quantitative information, and deep learning may just be the tool to extract it. Although classical methods of segmentation and feature extraction can produce hundreds of metrics per cell in an image, deep learning is unconstrained by human intuition and can in theory extract more subtle features. Already, there is evidence deep learning can surpass the efficacy of classical methods <span class="citation">[<a href="#ref-ref_50">73</a>]</span>, even using generic deep convolutional networks trained on natural images <span class="citation">[<a href="#ref-ref_51">74</a>]</span>, known as transfer learning.</p>
-<p>The impact of further improvements on biomedicine could be enormous. Comparing cell population morphologies using conventional methods of segmentation and feature extraction has already proven useful for functionally annotating genes and alleles, identifying the cellular target of small molecules, and identifying disease-specific phenotypes suitable for drug screening <span class="citation">[<a href="#ref-ref_26">75</a>]</span>. Deep learning would bring to these new kinds of experiments - known as image-based profiling or morphological profiling - a higher degree of accuracy, stemming from the freedom from human-tuned feature extraction strategies.</p>
+<p>A field poised for dramatic revolution by deep learning is bioimage analysis. Thus far, the primary use of deep learning for biological images has been for segmentation - that is, for the identification of biologically relevant structures in images such as nuclei, infected cells, or vasculature, in fluorescence or even brightfield channels <span class="citation">[<a href="#ref-ref_66">78</a>]</span>. Once so-called regions of interest have been identified, it is often straightforward to measure biological properties of interest, such as fluorescence intensities, textures, and sizes. Given the dramatic successes of deep learning in biological imaging, we simply refer to articles that review recent advancements <span class="citation">[<a href="#ref-ref_70">10</a>]</span>. We believe deep learning will become a commonplace tool for biological image segmentation once user-friendly tools exist.</p>
+<p>We anticipate an additional kind of paradigm shift in bioimaging that will be brought about by deep learning: what if images of biological samples, from simple cell cultures to three-dimensional organoids and tissue samples, could be mined for much more extensive biologically meaningful information than is currently standard? For example, a recent study demonstrated the ability to predict lineage fate in hematopoietic cells up to three generations in advance of differentiation <span class="citation">[<a href="#ref-ref_36">80</a>]</span>. In biomedical research, by far the most common paradigm is for biologists to decide in advance what feature to measure in images from their assay system. But images of cells contain a wide variety of quantitative information, and deep learning may just be the tool to extract it. Although classical methods of segmentation and feature extraction can produce hundreds of metrics per cell in an image, deep learning is unconstrained by human intuition and can in theory extract more subtle features. Already, there is evidence deep learning can surpass the efficacy of classical methods <span class="citation">[<a href="#ref-ref_50">81</a>]</span>, even using generic deep convolutional networks trained on natural images <span class="citation">[<a href="#ref-ref_51">82</a>]</span>, known as transfer learning.</p>
+<p>The impact of further improvements on biomedicine could be enormous. Comparing cell population morphologies using conventional methods of segmentation and feature extraction has already proven useful for functionally annotating genes and alleles, identifying the cellular target of small molecules, and identifying disease-specific phenotypes suitable for drug screening <span class="citation">[<a href="#ref-ref_26">83</a>]</span>. Deep learning would bring to these new kinds of experiments - known as image-based profiling or morphological profiling - a higher degree of accuracy, stemming from the freedom from human-tuned feature extraction strategies.</p>
 <p><code>TODO: Make sure that at the end we clearly emphasize our excitement around unsupervised uses.</code></p>
 <h3 id="single-cell">Single-cell</h3>
-<p><em>There are not many neural network papers in this area (yet), unless we count imaging applications. But there is still plenty to discuss. The existing methods <span class="citation">[<a href="#ref-ref_77">78</a>]</span> use interesting network architectures to approach single-cell data. <span class="citation">[<a href="#ref-ref_125">80</a>]</span> could fit here.</em></p>
+<p><em>There are not many neural network papers in this area (yet), unless we count imaging applications. But there is still plenty to discuss. The existing methods <span class="citation">[<a href="#ref-ref_77">86</a>]</span> use interesting network architectures to approach single-cell data. <span class="citation">[<a href="#ref-ref_125">76</a>]</span> could fit here.</em></p>
 <h3 id="metagenomics">Metagenomics</h3>
-<p><strong>TODO: Add reference tags to this section</strong> Metagenomics (which refers to the study of genetic material, 16S rRNA and/or whole-genome shotgun DNA, from microbial communities) has revolutionized the study of micro-scale ecosystems within us and around us. There is increasing literature of applying machine learning in general to metagenomic analysis. In the late 2000’s, a plethora of machine learning methods were applied to classifying DNA sequencing reads to the thousands of species within a sample. An important problem is genome assembly from these mixed-organism samples. And to do that, the organisms should be “binned” before assembling. Binning methods began with many k-mer techniques [refs] and then delved into other clustering algorithms, such as self-organizing maps (SOM). Then came the taxonomic classification problem, with researchers naturally using BLAST <span class="citation">[<a href="#ref-ref_138">81</a>]</span>, followed by other machine learning techniques such as SVMs <span class="citation">[<a href="#ref-ref_114">82</a>]</span>, naive Bayesian classifiers <span class="citation">[<a href="#ref-ref_139">83</a>]</span>, etc. to classify each read. Then, researchers began to use techniques that could be used to estimate relative abundances of an entire sample, instead of the precise but painstakingly slow read-by-read classification. Relative abundance estimators (a.k.a diversity profilers) are MetaPhlan[ref], (WGS)Quikr[ref], and some configurations of tools like OneCodex[ref] and LMAT[ref]. While one cannot identify which reads were mapped back to an organism using relative abundance estimators, they can be useful for faster comparative and other downstream analyses. Newer methods hope to classify reads and estimate relative abundances at faster rates <span class="citation">[<a href="#ref-ref_136">84</a>]</span> and as of this writing, there are more than 70 metagenomic taxonomic classifiers in existence. Besides binning and classification of species, there is functional identification and annotation of sequence reads <span class="citation">[<a href="#ref-ref_140">85</a>]</span>. However, the focus on taxonomic/functional annotation is just the first step. Once organisms are identified, there is the interest in understanding the interrelationship between these organisms and host/environment phenotypes <span class="citation">[<a href="#ref-ref_98">87</a>]</span>. One of the first attempts was a survey of supervised classification methods for microbes-&gt;phenotype classification <span class="citation">[<a href="#ref-ref_107">88</a>]</span>, followed by similar studies that are more massive in scale <span class="citation">[<a href="#ref-ref_129">89</a>]</span>. There have been techniques that bypass the taxonomic classification step altogether <span class="citation">[<a href="#ref-ref_90">91</a>]</span>, (sequence composition to phenotype classification). Also, researchers have looked into how feature selection can improve classification <span class="citation">[<a href="#ref-ref_112">92</a>]</span>, and techniques have been proposed that are classifier-independent [Ditzler,Ditzler].</p>
-<p>So, how have neural networks (NNs) been of use? Most neural networks are being used for short sequence-&gt;taxa/function classification, where there is a lot of data for training (and thus suitable for NNs). Neural networks have been applied successfully to gene annotation (e.g. Orphelia <span class="citation">[<a href="#ref-ref_103">93</a>]</span> and FragGeneScan <span class="citation">[<a href="#ref-ref_43">94</a>]</span>), which usually has plenty of training examples. Representations (similar to Word2Vec [ref] in natural language processing) for protein family classification has been introduced and classified with a skip-gram neural network <span class="citation">[<a href="#ref-ref_78">95</a>]</span>. Recurrent neural networks show good performance for homology and protein family identification <span class="citation">[<a href="#ref-ref_102">96</a>]</span>. Interestingly, Hochreiter, who invented Long Short Term Memory, delved into homology/protein family classification in 2007, and therefore, deep learning is deeply rooted in functional classification methods.</p>
-<p>One of the first techniques of “de novo” genome binning used self-organizing maps, a type of NN <span class="citation">[<a href="#ref-ref_74">98</a>]</span>. Essinger et al. use ART, a neural network algorithm called Adaptive Resonance Theory, to cluster similar genomic fragments and showed that it has better performance than K-means. However, other methods based on interpolated Markov models <span class="citation">[<a href="#ref-ref_121">99</a>]</span> have performed better than these early genome binners. Also, neural networks can be slow, and therefore, have had limited use for reference-based taxonomic classification, with TAC-ELM <span class="citation">[<a href="#ref-ref_133">100</a>]</span> being the only NN-based algorithm to taxonomically classify massive amounts of metagenomic data. Also, neural networks can fail to perform if there are not enough training examples, which is the case with taxonomic classification (since only ~10% of estimated species have been sequenced). An initial study shows that deep neural networks have been successfully applied to taxonomic classification of 16S rRNA genes, with convolutional networks provide about 10% accuracy genus-level improvement over RNNs and even random forests <span class="citation">[<a href="#ref-ref_117">101</a>]</span>. However, this study performed 10-fold cross-validation on 3000 sequences in total.</p>
-<p>Due to the traditionally small numbers of metagenomic samples in studies, neural network uses for classifying phenotype from microbial composition are just beginning. A standard MLP was able to classify wound severity from microbial species present in the wound <span class="citation">[<a href="#ref-ref_24">102</a>]</span>. Recently, multi-layer, recurrent networks (and convolutional networks) have been applied to microbiome genotype-phenotype, with Ditzler et al. being the first to associate soil samples with pH level using multi-layer perceptrons, deep-belief networks, and recursive neural networks (RNNs) [Ditzler] . Besides classifying the samples appropriately, Ditzler shows that internal phylogenetic tree nodes inferred by the networks are appropriate features representing low/high pH, which can provide additional useful information and new features for future metagenomic sample comparison. Also, an initial study has show promise of these networks for diagnosing disease <span class="citation">[<a href="#ref-ref_94">103</a>]</span>.</p>
-<p>There are still a lot of challenges with applying deep neural networks to metagenomics problems. They are not ideal for microbial/functional composition-&gt;phenotype classification because most studies contain tens of samples (~20-&gt;40) and hundreds/thousands of features (aka species). Such underdetermined/ill-conditioned problems are still a challenge for deep neural networks that require many more training examples than features to sufficiently converge the weights on the hidden layers. Also, due to convergence issues (slowness and instability due to large neural networks modeling very large datasets <span class="citation">[<a href="#ref-ref_0">104</a>]</span>), taxonomic classification of reads from whole genome sequencing seems out of reach at the moment for deep neural networks -- due to only thousands of full-sequenced genomes as compared to hundreds of thousands of 16S rRNA sequences available for training.</p>
-<p>However, because recurrent neural networks are showing success for base-calling (and thus removing the large error in the measurement of a pore's current signal) for the relatively new Oxford Nanopore sequencer <span class="citation">[<a href="#ref-ref_82">105</a>]</span>, there is hope that the process of denoising-&gt;organism/function classification can be combined into one step in using powerful LSTM's. LSTM's are working miracles in raw speech signal-&gt;meaning translation [ref], and combining steps in metagenomics are not out of the question. For example, metagenomic assembly usually requires binning then assembly, but could deep neural nets accomplish both tasks in one network? Does functional/taxonomic classification need to be separate processes? The largest potential in deep learning is to learn &quot;everything&quot; in one complex network, with a plethora of labeled (reference) data and unlabeled (microbiome experiments) examples.</p>
+<p><strong>TODO: Add reference tags to this section</strong> Metagenomics (which refers to the study of genetic material, 16S rRNA and/or whole-genome shotgun DNA, from microbial communities) has revolutionized the study of micro-scale ecosystems within us and around us. There is increasing literature of applying machine learning in general to metagenomic analysis. In the late 2000’s, a plethora of machine learning methods were applied to classifying DNA sequencing reads to the thousands of species within a sample. An important problem is genome assembly from these mixed-organism samples. And to do that, the organisms should be “binned” before assembling. Binning methods began with many k-mer techniques [refs] and then delved into other clustering algorithms, such as self-organizing maps (SOM). Then came the taxonomic classification problem, with researchers naturally using BLAST <span class="citation">[<a href="#ref-ref_138">88</a>]</span>, followed by other machine learning techniques such as SVMs <span class="citation">[<a href="#ref-ref_114">89</a>]</span>, naive Bayesian classifiers <span class="citation">[<a href="#ref-ref_139">90</a>]</span>, etc. to classify each read. Then, researchers began to use techniques that could be used to estimate relative abundances of an entire sample, instead of the precise but painstakingly slow read-by-read classification. Relative abundance estimators (a.k.a diversity profilers) are MetaPhlan[ref], (WGS)Quikr[ref], and some configurations of tools like OneCodex[ref] and LMAT[ref]. While one cannot identify which reads were mapped back to an organism using relative abundance estimators, they can be useful for faster comparative and other downstream analyses. Newer methods hope to classify reads and estimate relative abundances at faster rates <span class="citation">[<a href="#ref-ref_136">91</a>]</span> and as of this writing, there are more than 70 metagenomic taxonomic classifiers in existence. Besides binning and classification of species, there is functional identification and annotation of sequence reads <span class="citation">[<a href="#ref-ref_140">92</a>]</span>. However, the focus on taxonomic/functional annotation is just the first step. Once organisms are identified, there is the interest in understanding the interrelationship between these organisms and host/environment phenotypes <span class="citation">[<a href="#ref-ref_98">94</a>]</span>. One of the first attempts was a survey of supervised classification methods for microbes-&gt;phenotype classification <span class="citation">[<a href="#ref-ref_107">95</a>]</span>, followed by similar studies that are more massive in scale <span class="citation">[<a href="#ref-ref_129">96</a>]</span>. There have been techniques that bypass the taxonomic classification step altogether <span class="citation">[<a href="#ref-ref_90">98</a>]</span>, (sequence composition to phenotype classification). Also, researchers have looked into how feature selection can improve classification <span class="citation">[<a href="#ref-ref_112">99</a>]</span>, and techniques have been proposed that are classifier-independent [Ditzler,Ditzler].</p>
+<p>So, how have neural networks (NNs) been of use? Most neural networks are being used for short sequence-&gt;taxa/function classification, where there is a lot of data for training (and thus suitable for NNs). Neural networks have been applied successfully to gene annotation (e.g. Orphelia <span class="citation">[<a href="#ref-ref_103">100</a>]</span> and FragGeneScan <span class="citation">[<a href="#ref-ref_43">101</a>]</span>), which usually has plenty of training examples. Representations (similar to Word2Vec [ref] in natural language processing) for protein family classification has been introduced and classified with a skip-gram neural network <span class="citation">[<a href="#ref-ref_78">102</a>]</span>. Recurrent neural networks show good performance for homology and protein family identification <span class="citation">[<a href="#ref-ref_102">103</a>]</span>. Interestingly, Hochreiter, who invented Long Short Term Memory, delved into homology/protein family classification in 2007, and therefore, deep learning is deeply rooted in functional classification methods.</p>
+<p>One of the first techniques of “de novo” genome binning used self-organizing maps, a type of NN <span class="citation">[<a href="#ref-ref_74">105</a>]</span>. Essinger et al. use ART, a neural network algorithm called Adaptive Resonance Theory, to cluster similar genomic fragments and showed that it has better performance than K-means. However, other methods based on interpolated Markov models <span class="citation">[<a href="#ref-ref_121">106</a>]</span> have performed better than these early genome binners. Also, neural networks can be slow, and therefore, have had limited use for reference-based taxonomic classification, with TAC-ELM <span class="citation">[<a href="#ref-ref_133">107</a>]</span> being the only NN-based algorithm to taxonomically classify massive amounts of metagenomic data. Also, neural networks can fail to perform if there are not enough training examples, which is the case with taxonomic classification (since only ~10% of estimated species have been sequenced). An initial study shows that deep neural networks have been successfully applied to taxonomic classification of 16S rRNA genes, with convolutional networks provide about 10% accuracy genus-level improvement over RNNs and even random forests <span class="citation">[<a href="#ref-ref_117">108</a>]</span>. However, this study performed 10-fold cross-validation on 3000 sequences in total.</p>
+<p>Due to the traditionally small numbers of metagenomic samples in studies, neural network uses for classifying phenotype from microbial composition are just beginning. A standard MLP was able to classify wound severity from microbial species present in the wound <span class="citation">[<a href="#ref-ref_24">109</a>]</span>. Recently, multi-layer, recurrent networks (and convolutional networks) have been applied to microbiome genotype-phenotype, with Ditzler et al. being the first to associate soil samples with pH level using multi-layer perceptrons, deep-belief networks, and recursive neural networks (RNNs) [Ditzler] . Besides classifying the samples appropriately, Ditzler shows that internal phylogenetic tree nodes inferred by the networks are appropriate features representing low/high pH, which can provide additional useful information and new features for future metagenomic sample comparison. Also, an initial study has show promise of these networks for diagnosing disease <span class="citation">[<a href="#ref-ref_94">110</a>]</span>.</p>
+<p>There are still a lot of challenges with applying deep neural networks to metagenomics problems. They are not ideal for microbial/functional composition-&gt;phenotype classification because most studies contain tens of samples (~20-&gt;40) and hundreds/thousands of features (aka species). Such underdetermined/ill-conditioned problems are still a challenge for deep neural networks that require many more training examples than features to sufficiently converge the weights on the hidden layers. Also, due to convergence issues (slowness and instability due to large neural networks modeling very large datasets <span class="citation">[<a href="#ref-ref_0">111</a>]</span>), taxonomic classification of reads from whole genome sequencing seems out of reach at the moment for deep neural networks -- due to only thousands of full-sequenced genomes as compared to hundreds of thousands of 16S rRNA sequences available for training.</p>
+<p>However, because recurrent neural networks are showing success for base-calling (and thus removing the large error in the measurement of a pore's current signal) for the relatively new Oxford Nanopore sequencer <span class="citation">[<a href="#ref-ref_82">112</a>]</span>, there is hope that the process of denoising-&gt;organism/function classification can be combined into one step in using powerful LSTM's. LSTM's are working miracles in raw speech signal-&gt;meaning translation [ref], and combining steps in metagenomics are not out of the question. For example, metagenomic assembly usually requires binning then assembly, but could deep neural nets accomplish both tasks in one network? Does functional/taxonomic classification need to be separate processes? The largest potential in deep learning is to learn &quot;everything&quot; in one complex network, with a plethora of labeled (reference) data and unlabeled (microbiome experiments) examples.</p>
 <h3 id="sequencing-and-variant-calling">Sequencing and variant calling</h3>
 <p><em>We have one nanopore paper in the issues and very recent work on variant calling that looks worthy of inclusion.</em></p>
 <h2 id="the-impact-of-deep-learning-in-treating-disease-and-developing-new-treatments">The impact of deep learning in treating disease and developing new treatments</h2>
 <p><em>There will be some overlap with the Categorize section, and we may have to determine which methods categorize individuals and which more directly match patients with treatments. The sub-section titles are merely placeholders.</em></p>
 <h3 id="categorizing-patients-for-clinical-decision-making">Categorizing patients for clinical decision making</h3>
-<p><em>How can deep learning match patients with clinical trails, therapies, or other interventions? As an example, <span class="citation">[<a href="#ref-ref_27">106</a>]</span> predicts individuals who are most likely to decline during a clinical trial and benefit from the treatment.</em></p>
+<p><em>How can deep learning match patients with clinical trails, therapies, or other interventions? As an example, <span class="citation">[<a href="#ref-ref_27">113</a>]</span> predicts individuals who are most likely to decline during a clinical trial and benefit from the treatment.</em></p>
 <h3 id="effects-of-drugs-on-transcriptomic-responses">Effects of drugs on transcriptomic responses</h3>
 <p><em>We discussed a few papers that operate on Library of Network-Based Cellular Signatures (LINCS) gene expression data. We could briefly introduce the goals of that resource and comment on the deep learning applications. In the Issues, we had reservations about whether the improvements in expression prediction are good enough to make a practical difference in the domain and feature selection and construction.</em></p>
 <h3 id="ligand-based-prediction-of-bioactivity">Ligand-Based Prediction of Bioactivity</h3>
 <p><strong>TODO: expand outline</strong></p>
 <ul>
-<li>Short introduction to problem, related reviews, use vHTS definition from <span class="citation">[<a href="#ref-ref_132">107</a>]</span> (vHTS doesn't fit neatly into classic classification, regression, or ranking)</li>
+<li>Short introduction to problem, related reviews, use vHTS definition from <span class="citation">[<a href="#ref-ref_132">114</a>]</span> (vHTS doesn't fit neatly into classic classification, regression, or ranking)</li>
 <li>Introduce ligand-based approaches, hype and excitement surrounding performance of a &quot;high-parameter&quot; network on the Merck Kaggle challenge, cover other neural networks trained on fingerprints or descriptors as features that followed, Tox21 Data Challenge</li>
 <li>Multitask networks related to the above point</li>
-<li>Realistic view of where things stand today, high-parameter networks struggle with overfitting, cross validation needs to be done carefully because of temporal structure <span class="citation">[<a href="#ref-ref_105">108</a>]</span>, low parameter networks based on chemical similarity (IRV) work very well, especially well-suited for the domain in which training data can be limited and contains few positive instances, may touch on BACE example here and other discussions of training data limitations (e.g. <span class="citation">[<a href="#ref-ref_75">109</a>]</span>)</li>
+<li>Realistic view of where things stand today, high-parameter networks struggle with overfitting, cross validation needs to be done carefully because of temporal structure <span class="citation">[<a href="#ref-ref_105">115</a>]</span>, low parameter networks based on chemical similarity (IRV) work very well, especially well-suited for the domain in which training data can be limited and contains few positive instances, may touch on BACE example here and other discussions of training data limitations (e.g. <span class="citation">[<a href="#ref-ref_75">116</a>]</span>)</li>
 <li>&quot;Creative experimentation&quot; phase of the field, new ideas for representation learning and novel approaches including graph convolutions, autoencoders, one shot learning, and generative models</li>
 <li>These &quot;creative&quot; approaches are definitely interesting but aren't necessarily outperforming existing methods, improvements on the software and reusability side could be important to help establish more rigorous benchmarking, DeepChem as example of this</li>
 <li>Future outlook, what would need to happen for the &quot;creative&quot; approaches to overtake the current state of the art, can representation learning be improved by incorporating more information about chemical properties or even more &quot;tasks&quot; during training, how much will future growth depend on data versus algorithms</li>
@@ -161,10 +164,10 @@
 <p><em>Several papers have stated that memory or other hardware limitations artificially restricted the number of training instances, model inputs/outputs, hidden layers, etc. Is this a general problem worth discussing or will it be solved naturally as hardware improves and/or groups move to distributed deep learning frameworks? Does hardware limit what types of problems are accessible to the average computational group, and if so, will that limit future progress? For instance, some hyperparameter search strategies are not feasible for a lab with only a couple GPUs.</em></p>
 <p><em>Some of this is also outlined in the Categorize section. We can decide where it best fits.</em></p>
 <p>Efficiently scaling deep learning is challenging, and there is a high computational cost (e.g., time, memory, energy) associated with training neural networks and using them for classification. As such, neural networks have only recently found widespread use <span class="citation">[<a href="#ref-ref_29">6</a>]</span>.</p>
-<p>Many have sought to curb the costs of deep learning, with methods ranging from the very applied (e.g., reduced numerical precision <span class="citation">[<a href="#ref-ref_99">111</a>]</span>) to the exotic and theoretic (e.g., training small networks to mimic large networks and ensembles <span class="citation">[<a href="#ref-ref_83">115</a>]</span>). The largest gains in efficiency have come from computation with graphics processing units (GPUs) <span class="citation">[<a href="#ref-ref_119">117</a>]</span>, which excel at the matrix and vector operations so central to deep learning. The massively parallel nature of GPUs allows additional optimizations, such as accelerated mini-batch gradient descent <span class="citation">[<a href="#ref-ref_135">118</a>]</span>. However, GPUs also have a limited quantity of memory, making it difficult to implement networks of significant size and complexity on a single GPU or machine <span class="citation">[<a href="#ref-ref_119">117</a>]</span>. This restriction has sometimes forced computational biologists to use workarounds or limit the size of an analysis. For example, Chen et al. <span class="citation">[<a href="#ref-ref_86">125</a>]</span> aimed to infer the expression level of all genes with a single neural network, but due to memory restrictions they randomly partitioned genes into two halves and analyzed each separately. In other cases, researchers limited the size of their neural network <span class="citation">[<a href="#ref-ref_49">19</a>]</span>. Some have also chosen to use slower CPU implementations rather than sacrifice network size or performance <span class="citation">[<a href="#ref-ref_137">127</a>]</span>.</p>
-<p>Steady improvements in GPU hardware may alleviate this issue somewhat, but it is not clear whether they can occur quickly enough to keep up with the growing amount of available biological data or increasing network sizes. Much has been done to minimize the memory requirements of neural networks <span class="citation">[<a href="#ref-ref_88">128</a>]</span>, but there is also growing interest in specialized hardware, such as field-programmable gate arrays (FPGAs) <span class="citation">[<a href="#ref-ref_92">121</a>]</span> and application-specific integrated circuits (ASICs). Specialized hardware promises improvements in deep learning at reduced time, energy, and memory <span class="citation">[<a href="#ref-ref_92">121</a>]</span>. Logically, there is less software for highly specialized hardware <span class="citation">[<a href="#ref-ref_110">130</a>]</span>, and it could be a difficult investment for those not solely interested in deep learning. However, it is likely that such options will find increased support as they become a more popular platform for deep learning and general computation.</p>
-<p>Distributed computing is a general solution to intense computational requirements, and has enabled many large-scale deep learning efforts. Early approaches to distributed computation <span class="citation">[<a href="#ref-ref_113">131</a>]</span> were not suitable for deep learning <span class="citation">[<a href="#ref-ref_89">133</a>]</span>, but significant progress has been made. There now exist a number of algorithms <span class="citation">[<a href="#ref-ref_89">133</a>]</span>, tools <span class="citation">[<a href="#ref-ref_116">135</a>]</span>, and high-level libraries <span class="citation">[<a href="#ref-ref_106">138</a>]</span> for deep learning in a distributed environment, and it is possible to train very complex networks with limited infrastructure <span class="citation">[<a href="#ref-ref_87">140</a>]</span>. Besides handling very large networks, distributed or parallelized approaches offer other advantages, such as improved ensembling <span class="citation">[<a href="#ref-ref_131">141</a>]</span> or accelerated hyperparameter optimization <span class="citation">[<a href="#ref-ref_80">142</a>]</span>.</p>
-<p>Cloud computing, which has already seen adoption in genomics <span class="citation">[<a href="#ref-ref_122">144</a>]</span>, could facilitate easier sharing of the large datasets common to biology <span class="citation">[<a href="#ref-ref_95">145</a>]</span>, and may be key to scaling deep learning. Cloud computing affords researchers significant flexibility, and enables the use of specialized hardware (e.g., FPGAs, ASICs, GPUs) without significant investment. With such flexibility, it could be easier to address the different challenges associated with the multitudinous layers and architectures available <span class="citation">[<a href="#ref-ref_109">147</a>]</span>. Though many are reluctant to store sensitive data (e.g., patient electronic health records) in the cloud, secure/regulation-compliant cloud services do exist <span class="citation">[<a href="#ref-ref_118">148</a>]</span>.</p>
+<p>Many have sought to curb the costs of deep learning, with methods ranging from the very applied (e.g., reduced numerical precision <span class="citation">[<a href="#ref-ref_99">118</a>]</span>) to the exotic and theoretic (e.g., training small networks to mimic large networks and ensembles <span class="citation">[<a href="#ref-ref_83">122</a>]</span>). The largest gains in efficiency have come from computation with graphics processing units (GPUs) <span class="citation">[<a href="#ref-ref_119">124</a>]</span>, which excel at the matrix and vector operations so central to deep learning. The massively parallel nature of GPUs allows additional optimizations, such as accelerated mini-batch gradient descent <span class="citation">[<a href="#ref-ref_135">125</a>]</span>. However, GPUs also have a limited quantity of memory, making it difficult to implement networks of significant size and complexity on a single GPU or machine <span class="citation">[<a href="#ref-ref_119">124</a>]</span>. This restriction has sometimes forced computational biologists to use workarounds or limit the size of an analysis. For example, Chen et al. <span class="citation">[<a href="#ref-ref_86">73</a>]</span> aimed to infer the expression level of all genes with a single neural network, but due to memory restrictions they randomly partitioned genes into two halves and analyzed each separately. In other cases, researchers limited the size of their neural network <span class="citation">[<a href="#ref-ref_49">19</a>]</span>. Some have also chosen to use slower CPU implementations rather than sacrifice network size or performance <span class="citation">[<a href="#ref-ref_137">133</a>]</span>.</p>
+<p>Steady improvements in GPU hardware may alleviate this issue somewhat, but it is not clear whether they can occur quickly enough to keep up with the growing amount of available biological data or increasing network sizes. Much has been done to minimize the memory requirements of neural networks <span class="citation">[<a href="#ref-ref_88">134</a>]</span>, but there is also growing interest in specialized hardware, such as field-programmable gate arrays (FPGAs) <span class="citation">[<a href="#ref-ref_92">128</a>]</span> and application-specific integrated circuits (ASICs). Specialized hardware promises improvements in deep learning at reduced time, energy, and memory <span class="citation">[<a href="#ref-ref_92">128</a>]</span>. Logically, there is less software for highly specialized hardware <span class="citation">[<a href="#ref-ref_110">136</a>]</span>, and it could be a difficult investment for those not solely interested in deep learning. However, it is likely that such options will find increased support as they become a more popular platform for deep learning and general computation.</p>
+<p>Distributed computing is a general solution to intense computational requirements, and has enabled many large-scale deep learning efforts. Early approaches to distributed computation <span class="citation">[<a href="#ref-ref_113">137</a>]</span> were not suitable for deep learning <span class="citation">[<a href="#ref-ref_89">139</a>]</span>, but significant progress has been made. There now exist a number of algorithms <span class="citation">[<a href="#ref-ref_89">139</a>]</span>, tools <span class="citation">[<a href="#ref-ref_116">141</a>]</span>, and high-level libraries <span class="citation">[<a href="#ref-ref_106">144</a>]</span> for deep learning in a distributed environment, and it is possible to train very complex networks with limited infrastructure <span class="citation">[<a href="#ref-ref_87">146</a>]</span>. Besides handling very large networks, distributed or parallelized approaches offer other advantages, such as improved ensembling <span class="citation">[<a href="#ref-ref_131">147</a>]</span> or accelerated hyperparameter optimization <span class="citation">[<a href="#ref-ref_80">148</a>]</span>.</p>
+<p>Cloud computing, which has already seen adoption in genomics <span class="citation">[<a href="#ref-ref_122">150</a>]</span>, could facilitate easier sharing of the large datasets common to biology <span class="citation">[<a href="#ref-ref_95">151</a>]</span>, and may be key to scaling deep learning. Cloud computing affords researchers significant flexibility, and enables the use of specialized hardware (e.g., FPGAs, ASICs, GPUs) without significant investment. With such flexibility, it could be easier to address the different challenges associated with the multitudinous layers and architectures available <span class="citation">[<a href="#ref-ref_109">153</a>]</span>. Though many are reluctant to store sensitive data (e.g., patient electronic health records) in the cloud, secure/regulation-compliant cloud services do exist <span class="citation">[<a href="#ref-ref_118">154</a>]</span>.</p>
 <p><em>TODO: Write the transition once more of the Discussion section has been fleshed out.</em></p>
 <h3 id="code-data-and-model-sharing">Code, data, and model sharing</h3>
 <p><em>Reproducibiliy is important for science to progress. In the context of deep learning applied to advance human healthcare, does reproducibility have different requirements or alternative connotations? With vast hyperparameter spaces, massively heterogeneous and noisy biological data sets, and black box interpretability problems, how can we best ensure reproducible models? What might a clinician, or policy maker, need to see in a deep model in order to influence healthcare decisions? Or, is deep learning a hypothesis generation machine that requires manual validation?</em></p>
@@ -388,245 +391,263 @@
 <div id="ref-ref_48">
 <p>68. Beaulieu-Jones BK, Greene CS. 2016 Reproducible Computational Workflows with Continuous Analysis. (doi:<a href="https://doi.org/10.1101/056473">10.1101/056473</a>)</p>
 </div>
-<div id="ref-ref_85">
-<p>69. Chen L, Cai C, Chen V, Lu X. 2015 Trans-species learning of cellular signaling systems with bimodal deep belief networks. <em>Bioinformatics</em> <strong>31</strong>, 3008–3015. (doi:<a href="https://doi.org/10.1093/bioinformatics/btv315">10.1093/bioinformatics/btv315</a>)</p>
+<div id="ref-ref_149">
+<p>69. Gupta A, Wang H, Ganapathiraju M. 2015 Learning structure in gene expression data using deep architectures, with an application to gene clustering. (doi:<a href="https://doi.org/10.1101/031906">10.1101/031906</a>)</p>
 </div>
-<div id="ref-ref_66">
-<p>70. Van Valen DA <em>et al.</em> 2016 Deep Learning Automates the Quantitative Analysis of Individual Cells in Live-Cell Imaging Experiments. <em>PLOS Computational Biology</em> <strong>12</strong>, e1005177. (doi:<a href="https://doi.org/10.1371/journal.pcbi.1005177">10.1371/journal.pcbi.1005177</a>)</p>
+<div id="ref-ref_148">
+<p>70. Chen L, Cai C, Chen V, Lu X. 2016 Learning a hierarchical representation of the yeast transcriptomic machinery using an autoencoder model. <em>BMC Bioinformatics</em> <strong>17</strong>. (doi:<a href="https://doi.org/10.1186/s12859-015-0852-1">10.1186/s12859-015-0852-1</a>)</p>
 </div>
-<div id="ref-ref_17">
-<p>71. Ronneberger O, Fischer P, Brox T. 2015 U-Net: Convolutional Networks for Biomedical Image Segmentation. In <em>Lecture Notes in Computer Science</em>, pp. 234–241. Springer Nature. (doi:<a href="https://doi.org/10.1007/978-3-319-24574-4_28">10.1007/978-3-319-24574-4_28</a>)</p>
+<div id="ref-ref_152">
+<p>71. Tan J, Hammond JH, Hogan DA, Greene CS. 2016 ADAGE-Based Integration of Publicly AvailablePseudomonas aeruginosaGene Expression Data with Denoising Autoencoders Illuminates Microbe-Host Interactions. <em>mSystems</em> <strong>1</strong>, e00025–15. (doi:<a href="https://doi.org/10.1128/msystems.00025-15">10.1128/msystems.00025-15</a>)</p>
 </div>
-<div id="ref-ref_36">
-<p>72. Buggenthin F <em>et al.</em> 2017 Prospective identification of hematopoietic lineage choice by deep learning. <em>Nature Methods</em> <strong>14</strong>, 403–406. (doi:<a href="https://doi.org/10.1038/nmeth.4182">10.1038/nmeth.4182</a>)</p>
-</div>
-<div id="ref-ref_50">
-<p>73. Eulenberg P, Koehler N, Blasi T, Filby A, Carpenter AE, Rees P, Theis FJ, Wolf FA. 2016 Deep Learning for Imaging Flow Cytometry: Cell Cycle Analysis of Jurkat Cells. (doi:<a href="https://doi.org/10.1101/081364">10.1101/081364</a>)</p>
-</div>
-<div id="ref-ref_51">
-<p>74. Pawlowski N, Caicedo JC, Singh S, Carpenter AE, Storkey A. 2016 Automating Morphological Profiling with Generic Deep Convolutional Networks. (doi:<a href="https://doi.org/10.1101/085118">10.1101/085118</a>)</p>
-</div>
-<div id="ref-ref_26">
-<p>75. Caicedo JC, Singh S, Carpenter AE. 2016 Applications in image-based profiling of perturbations. <em>Current Opinion in Biotechnology</em> <strong>39</strong>, 134–142. (doi:<a href="https://doi.org/10.1016/j.copbio.2016.04.003">10.1016/j.copbio.2016.04.003</a>)</p>
-</div>
-<div id="ref-ref_13">
-<p>76. Bougen-Zhukov N, Loh SY, Lee HK, Loo L-H. 2016 Large-scale image-based screening and profiling of cellular phenotypes. <em>Cytometry Part A</em> <strong>91</strong>, 115–125. (doi:<a href="https://doi.org/10.1002/cyto.a.22909">10.1002/cyto.a.22909</a>)</p>
-</div>
-<div id="ref-ref_39">
-<p>77. Grys BT, Lo DS, Sahin N, Kraus OZ, Morris Q, Boone C, Andrews BJ. 2016 Machine learning and computer vision approaches for phenotypic profiling. <em>The Journal of Cell Biology</em> <strong>216</strong>, 65–71. (doi:<a href="https://doi.org/10.1083/jcb.201610026">10.1083/jcb.201610026</a>)</p>
-</div>
-<div id="ref-ref_77">
-<p>78. Arvaniti E, Claassen M. 2016 Sensitive detection of rare disease-associated cell subsets via representation learning. (doi:<a href="https://doi.org/10.1101/046508">10.1101/046508</a>)</p>
-</div>
-<div id="ref-ref_76">
-<p>79. Angermueller C, Lee H, Reik W, Stegle O. 2016 Accurate prediction of single-cell DNA methylation states using deep learning. (doi:<a href="https://doi.org/10.1101/055715">10.1101/055715</a>)</p>
-</div>
-<div id="ref-ref_125">
-<p>80. Shaham U, Stanton KP, Zhao J, Li H, Raddassi K, Montgomery R, Kluger Y. 2016 Removal of batch effects using distribution-matching residual networks. </p>
-</div>
-<div id="ref-ref_138">
-<p>81. Altschul SF, Gish W, Miller W, Myers EW, Lipman DJ. 1990 Basic local alignment search tool. <em>Journal of Molecular Biology</em> <strong>215</strong>, 403–410. (doi:<a href="https://doi.org/10.1016/s0022-2836(05)80360-2">10.1016/s0022-2836(05)80360-2</a>)</p>
-</div>
-<div id="ref-ref_114">
-<p>82. McHardy AC, Martín HG, Tsirigos A, Hugenholtz P, Rigoutsos I. 2006 Accurate phylogenetic classification of variable-length DNA fragments. <em>Nature Methods</em> <strong>4</strong>, 63–72. (doi:<a href="https://doi.org/10.1038/nmeth976">10.1038/nmeth976</a>)</p>
-</div>
-<div id="ref-ref_139">
-<p>83. Rosen GL, Reichenberger ER, Rosenfeld AM. 2010 NBC: the Naive Bayes Classification tool webserver for taxonomic classification of metagenomic reads. <em>Bioinformatics</em> <strong>27</strong>, 127–129. (doi:<a href="https://doi.org/10.1093/bioinformatics/btq619">10.1093/bioinformatics/btq619</a>)</p>
-</div>
-<div id="ref-ref_136">
-<p>84. Vervier K, Mahé P, Tournoud M, Veyrieras J-B, Vert J-P. 2015 Large-scale machine learning for metagenomics sequence classification. <em>Bioinformatics</em> <strong>32</strong>, 1023–1032. (doi:<a href="https://doi.org/10.1093/bioinformatics/btv683">10.1093/bioinformatics/btv683</a>)</p>
-</div>
-<div id="ref-ref_140">
-<p>85. Yok NG, Rosen GL. 2011 Combining gene prediction methods to improve metagenomic gene annotation. <em>BMC Bioinformatics</em> <strong>12</strong>, 20. (doi:<a href="https://doi.org/10.1186/1471-2105-12-20">10.1186/1471-2105-12-20</a>)</p>
-</div>
-<div id="ref-ref_127">
-<p>86. Soueidan H, Nikolski M. 2017 Machine learning for metagenomics: methods and tools. <em>Metagenomics</em> <strong>1</strong>. (doi:<a href="https://doi.org/10.1515/metgen-2016-0001">10.1515/metgen-2016-0001</a>)</p>
-</div>
-<div id="ref-ref_98">
-<p>87. In press. See <a href="http://www.fasebj.org/content/30/1_Supplement/406.3" class="uri">http://www.fasebj.org/content/30/1_Supplement/406.3</a>.</p>
-</div>
-<div id="ref-ref_107">
-<p>88. Knights D, Costello EK, Knight R. 2011 Supervised classification of human microbiota. <em>FEMS Microbiology Reviews</em> <strong>35</strong>, 343–359. (doi:<a href="https://doi.org/10.1111/j.1574-6976.2010.00251.x">10.1111/j.1574-6976.2010.00251.x</a>)</p>
-</div>
-<div id="ref-ref_129">
-<p>89. Statnikov A <em>et al.</em> 2013 A comprehensive evaluation of multicategory classification methods for microbiomic data. <em>Microbiome</em> <strong>1</strong>, 11. (doi:<a href="https://doi.org/10.1186/2049-2618-1-11">10.1186/2049-2618-1-11</a>)</p>
-</div>
-<div id="ref-ref_123">
-<p>90. Pasolli E, Truong DT, Malik F, Waldron L, Segata N. 2016 Machine Learning Meta-analysis of Large Metagenomic Datasets: Tools and Biological Insights. <em>PLOS Computational Biology</em> <strong>12</strong>, e1004977. (doi:<a href="https://doi.org/10.1371/journal.pcbi.1004977">10.1371/journal.pcbi.1004977</a>)</p>
-</div>
-<div id="ref-ref_90">
-<p>91. Ding X, Cheng F, Cao C, Sun X. 2015 DectICO: an alignment-free supervised metagenomic classification method based on feature extraction and dynamic selection. <em>BMC Bioinformatics</em> <strong>16</strong>. (doi:<a href="https://doi.org/10.1186/s12859-015-0753-3">10.1186/s12859-015-0753-3</a>)</p>
-</div>
-<div id="ref-ref_112">
-<p>92. Liu Z, Chen D, Sheng L, Liu AY. 2014 Correction: Class Prediction and Feature Selection with Linear Optimization for Metagenomic Count Data. <em>PLoS ONE</em> <strong>9</strong>, e97958. (doi:<a href="https://doi.org/10.1371/journal.pone.0097958">10.1371/journal.pone.0097958</a>)</p>
-</div>
-<div id="ref-ref_103">
-<p>93. Hoff KJ, Lingner T, Meinicke P, Tech M. 2009 Orphelia: predicting genes in metagenomic sequencing reads. <em>Nucleic Acids Research</em> <strong>37</strong>, W101–W105. (doi:<a href="https://doi.org/10.1093/nar/gkp327">10.1093/nar/gkp327</a>)</p>
-</div>
-<div id="ref-ref_43">
-<p>94. Rho M, Tang H, Ye Y. 2010 FragGeneScan: predicting genes in short and error-prone reads. <em>Nucleic Acids Research</em> <strong>38</strong>, e191–e191. (doi:<a href="https://doi.org/10.1093/nar/gkq747">10.1093/nar/gkq747</a>)</p>
-</div>
-<div id="ref-ref_78">
-<p>95. Asgari E, Mofrad MRK. 2015 Continuous Distributed Representation of Biological Sequences for Deep Proteomics and Genomics. <em>PLOS ONE</em> <strong>10</strong>, e0141287. (doi:<a href="https://doi.org/10.1371/journal.pone.0141287">10.1371/journal.pone.0141287</a>)</p>
-</div>
-<div id="ref-ref_102">
-<p>96. Hochreiter S, Heusel M, Obermayer K. 2007 Fast model-based protein homology detection without alignment. <em>Bioinformatics</em> <strong>23</strong>, 1728–1736. (doi:<a href="https://doi.org/10.1093/bioinformatics/btm247">10.1093/bioinformatics/btm247</a>)</p>
-</div>
-<div id="ref-ref_126">
-<p>97. Sønderby SK, Sønderby CK, Nielsen H, Winther O. 2015 Convolutional lstm networks for subcellular localization of proteins. (doi:<a href="https://doi.org/10.1007/978-3-319-21233-3_6">10.1007/978-3-319-21233-3_6</a>)</p>
-</div>
-<div id="ref-ref_74">
-<p>98. In press. See <a href="http://ci.nii.ac.jp/naid/110006199745" class="uri">http://ci.nii.ac.jp/naid/110006199745</a>.</p>
-</div>
-<div id="ref-ref_121">
-<p>99. Kelley DR, Salzberg SL. 2010 Clustering metagenomic sequences with interpolated Markov models. <em>BMC Bioinformatics</em> <strong>11</strong>, 544. (doi:<a href="https://doi.org/10.1186/1471-2105-11-544">10.1186/1471-2105-11-544</a>)</p>
-</div>
-<div id="ref-ref_133">
-<p>100. RASHEED Z, RANGWALA H. 2012 METAGENOMIC TAXONOMIC CLASSIFICATION USING EXTREME LEARNING MACHINES. <em>Journal of Bioinformatics and Computational Biology</em> <strong>10</strong>, 1250015. (doi:<a href="https://doi.org/10.1142/s0219720012500151">10.1142/s0219720012500151</a>)</p>
-</div>
-<div id="ref-ref_117">
-<p>101. In press. See <a href="https://repozitorij.uni-lj.si/IzpisGradiva.php?id=85515" class="uri">https://repozitorij.uni-lj.si/IzpisGradiva.php?id=85515</a>.</p>
-</div>
-<div id="ref-ref_24">
-<p>102. Chudobova D <em>et al.</em> 2015 Influence of microbiome species in hard-to-heal wounds on disease severity and treatment duration. <em>The Brazilian Journal of Infectious Diseases</em> <strong>19</strong>, 604–613. (doi:<a href="https://doi.org/10.1016/j.bjid.2015.08.013">10.1016/j.bjid.2015.08.013</a>)</p>
-</div>
-<div id="ref-ref_94">
-<p>103. In press. See <a href="http://alifar76.github.io/sklearn-metrics/" class="uri">http://alifar76.github.io/sklearn-metrics/</a>.</p>
-</div>
-<div id="ref-ref_0">
-<p>104. Bengio Y, Boulanger-Lewandowski N, Pascanu R. 2012 Advances in optimizing recurrent networks. </p>
-</div>
-<div id="ref-ref_82">
-<p>105. Boža V, Brejová B, Vinař T. 2016 DeepNano: Deep recurrent neural networks for base calling in minion nanopore reads. </p>
-</div>
-<div id="ref-ref_27">
-<p>106. Ithapu VK, Singh V, Okonkwo OC, Chappell RJ, Dowling NM, Johnson SC. 2015 Imaging-based enrichment criteria using deep learning algorithms for efficient clinical trials in mild cognitive impairment. <em>Alzheimer’s &amp; Dementia</em> <strong>11</strong>, 1489–1499. (doi:<a href="https://doi.org/10.1016/j.jalz.2015.01.010">10.1016/j.jalz.2015.01.010</a>)</p>
-</div>
-<div id="ref-ref_132">
-<p>107. Swamidass SJ, Azencott C-A, Lin T-W, Gramajo H, Tsai S-C, Baldi P. 2009 Influence Relevance Voting: An Accurate And Interpretable Virtual High Throughput Screening Method. <em>Journal of Chemical Information and Modeling</em> <strong>49</strong>, 756–766. (doi:<a href="https://doi.org/10.1021/ci8004379">10.1021/ci8004379</a>)</p>
-</div>
-<div id="ref-ref_105">
-<p>108. Kearnes S, Goldman B, Pande V. 2016 Modeling industrial admet data with multitask networks. </p>
-</div>
-<div id="ref-ref_75">
-<p>109. Altae-Tran H, Ramsundar B, Pappu AS, Pande V. 2016 Low data drug discovery with one-shot learning. </p>
-</div>
-<div id="ref-ref_12">
-<p>110. Ragoza M, Hochuli J, Idrobo E, Sunseri J, Koes DR. 2016 Protein-ligand scoring with convolutional neural networks. </p>
-</div>
-<div id="ref-ref_99">
-<p>111. Gupta S, Agrawal A, Gopalakrishnan K, Narayanan P. 2015 Deep learning with limited numerical precision. </p>
-</div>
-<div id="ref-ref_79">
-<p>112. Courbariaux M, Bengio Y, David J-P. 2014 Training deep neural networks with low precision multiplications. </p>
-</div>
-<div id="ref-ref_120">
-<p>113. Sa CD, Zhang C, Olukotun K, Ré C. 2015 Taming the wild: A unified analysis of hogwild!-style algorithms. </p>
-</div>
-<div id="ref-ref_104">
-<p>114. Hubara I, Courbariaux M, Soudry D, El-Yaniv R, Bengio Y. 2016 Quantized neural networks: Training neural networks with low precision weights and activations. </p>
-</div>
-<div id="ref-ref_83">
-<p>115. Ba LJ, Caruana R. 2013 Do deep nets really need to be deep? </p>
-</div>
-<div id="ref-ref_101">
-<p>116. Hinton G, Vinyals O, Dean J. 2015 Distilling the knowledge in a neural network. </p>
-</div>
-<div id="ref-ref_119">
-<p>117. Raina R, Madhavan A, Ng AY. 2009 Large-scale deep unsupervised learning using graphics processors. In <em>Proceedings of the 26th Annual International Conference on Machine Learning - ICML ’09</em>, Association for Computing Machinery (ACM). (doi:<a href="https://doi.org/10.1145/1553374.1553486">10.1145/1553374.1553486</a>)</p>
-</div>
-<div id="ref-ref_135">
-<p>118. In press. See <a href="https://research.google.com/pubs/pub37631.html" class="uri">https://research.google.com/pubs/pub37631.html</a>.</p>
-</div>
-<div id="ref-ref_124">
-<p>119. Seide F, Fu H, Droppo J, Li G, Yu D. 2014 On parallelizability of stochastic gradient descent for speech DNNS. In <em>2014 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)</em>, Institute of Electrical and Electronics Engineers (IEEE). (doi:<a href="https://doi.org/10.1109/icassp.2014.6853593">10.1109/icassp.2014.6853593</a>)</p>
-</div>
-<div id="ref-ref_100">
-<p>120. Hadjis S, Abuzaid F, Zhang C, Ré C. 2015 Caffe con troll: Shallow ideas to speed up deep learning. </p>
-</div>
-<div id="ref-ref_92">
-<p>121. Edwards C. 2015 Growing pains for deep learning. <em>Communications of the ACM</em> <strong>58</strong>, 14–16. (doi:<a href="https://doi.org/10.1145/2771283">10.1145/2771283</a>)</p>
-</div>
-<div id="ref-ref_130">
-<p>122. Su H, Chen H. 2015 Experiments on parallel training of deep neural network using model averaging. </p>
-</div>
-<div id="ref-ref_111">
-<p>123. Li M, Zhang T, Chen Y, Smola AJ. 2014 Efficient mini-batch training for stochastic optimization. In <em>Proceedings of the 20th ACM SIGKDD international conference on Knowledge discovery and data mining - KDD ’14</em>, Association for Computing Machinery (ACM). (doi:<a href="https://doi.org/10.1145/2623330.2623612">10.1145/2623330.2623612</a>)</p>
-</div>
-<div id="ref-ref_108">
-<p>124. In press. See <a href="https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf" class="uri">https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf</a>.</p>
+<div id="ref-ref_153">
+<p>72. Tan J <em>et al.</em> 2016 Unsupervised extraction of functional gene expression signatures in the bacterial pathogen Pseudomonas aeruginosa with eADAGE. (doi:<a href="https://doi.org/10.1101/078659">10.1101/078659</a>)</p>
 </div>
 <div id="ref-ref_86">
-<p>125. Chen Y, Li Y, Narayan R, Subramanian A, Xie X. 2016 Gene expression inference with deep learning. <em>Bioinformatics</em> <strong>32</strong>, 1832–1839. (doi:<a href="https://doi.org/10.1093/bioinformatics/btw074">10.1093/bioinformatics/btw074</a>)</p>
+<p>73. Chen Y, Li Y, Narayan R, Subramanian A, Xie X. 2016 Gene expression inference with deep learning. <em>Bioinformatics</em> <strong>32</strong>, 1832–1839. (doi:<a href="https://doi.org/10.1093/bioinformatics/btw074">10.1093/bioinformatics/btw074</a>)</p>
+</div>
+<div id="ref-ref_151">
+<p>74. Singh R, Lanchantin J, Robins G, Qi Y. 2016 DeepChrome: Deep-learning for predicting gene expression from histone modifications. </p>
+</div>
+<div id="ref-ref_150">
+<p>75. Liang M, Li Z, Chen T, Zeng J. 2015 Integrative Data Analysis of Multi-Platform Cancer Data with a Multimodal Deep Learning Approach. <em>IEEE/ACM Transactions on Computational Biology and Bioinformatics</em> <strong>12</strong>, 928–937. (doi:<a href="https://doi.org/10.1109/tcbb.2014.2377729">10.1109/tcbb.2014.2377729</a>)</p>
+</div>
+<div id="ref-ref_125">
+<p>76. Shaham U, Stanton KP, Zhao J, Li H, Raddassi K, Montgomery R, Kluger Y. 2016 Removal of batch effects using distribution-matching residual networks. </p>
+</div>
+<div id="ref-ref_85">
+<p>77. Chen L, Cai C, Chen V, Lu X. 2015 Trans-species learning of cellular signaling systems with bimodal deep belief networks. <em>Bioinformatics</em> <strong>31</strong>, 3008–3015. (doi:<a href="https://doi.org/10.1093/bioinformatics/btv315">10.1093/bioinformatics/btv315</a>)</p>
+</div>
+<div id="ref-ref_66">
+<p>78. Van Valen DA <em>et al.</em> 2016 Deep Learning Automates the Quantitative Analysis of Individual Cells in Live-Cell Imaging Experiments. <em>PLOS Computational Biology</em> <strong>12</strong>, e1005177. (doi:<a href="https://doi.org/10.1371/journal.pcbi.1005177">10.1371/journal.pcbi.1005177</a>)</p>
+</div>
+<div id="ref-ref_17">
+<p>79. Ronneberger O, Fischer P, Brox T. 2015 U-Net: Convolutional Networks for Biomedical Image Segmentation. In <em>Lecture Notes in Computer Science</em>, pp. 234–241. Springer Nature. (doi:<a href="https://doi.org/10.1007/978-3-319-24574-4_28">10.1007/978-3-319-24574-4_28</a>)</p>
+</div>
+<div id="ref-ref_36">
+<p>80. Buggenthin F <em>et al.</em> 2017 Prospective identification of hematopoietic lineage choice by deep learning. <em>Nature Methods</em> <strong>14</strong>, 403–406. (doi:<a href="https://doi.org/10.1038/nmeth.4182">10.1038/nmeth.4182</a>)</p>
+</div>
+<div id="ref-ref_50">
+<p>81. Eulenberg P, Koehler N, Blasi T, Filby A, Carpenter AE, Rees P, Theis FJ, Wolf FA. 2016 Deep Learning for Imaging Flow Cytometry: Cell Cycle Analysis of Jurkat Cells. (doi:<a href="https://doi.org/10.1101/081364">10.1101/081364</a>)</p>
+</div>
+<div id="ref-ref_51">
+<p>82. Pawlowski N, Caicedo JC, Singh S, Carpenter AE, Storkey A. 2016 Automating Morphological Profiling with Generic Deep Convolutional Networks. (doi:<a href="https://doi.org/10.1101/085118">10.1101/085118</a>)</p>
+</div>
+<div id="ref-ref_26">
+<p>83. Caicedo JC, Singh S, Carpenter AE. 2016 Applications in image-based profiling of perturbations. <em>Current Opinion in Biotechnology</em> <strong>39</strong>, 134–142. (doi:<a href="https://doi.org/10.1016/j.copbio.2016.04.003">10.1016/j.copbio.2016.04.003</a>)</p>
+</div>
+<div id="ref-ref_13">
+<p>84. Bougen-Zhukov N, Loh SY, Lee HK, Loo L-H. 2016 Large-scale image-based screening and profiling of cellular phenotypes. <em>Cytometry Part A</em> <strong>91</strong>, 115–125. (doi:<a href="https://doi.org/10.1002/cyto.a.22909">10.1002/cyto.a.22909</a>)</p>
+</div>
+<div id="ref-ref_39">
+<p>85. Grys BT, Lo DS, Sahin N, Kraus OZ, Morris Q, Boone C, Andrews BJ. 2016 Machine learning and computer vision approaches for phenotypic profiling. <em>The Journal of Cell Biology</em> <strong>216</strong>, 65–71. (doi:<a href="https://doi.org/10.1083/jcb.201610026">10.1083/jcb.201610026</a>)</p>
+</div>
+<div id="ref-ref_77">
+<p>86. Arvaniti E, Claassen M. 2016 Sensitive detection of rare disease-associated cell subsets via representation learning. (doi:<a href="https://doi.org/10.1101/046508">10.1101/046508</a>)</p>
+</div>
+<div id="ref-ref_76">
+<p>87. Angermueller C, Lee H, Reik W, Stegle O. 2016 Accurate prediction of single-cell DNA methylation states using deep learning. (doi:<a href="https://doi.org/10.1101/055715">10.1101/055715</a>)</p>
+</div>
+<div id="ref-ref_138">
+<p>88. Altschul SF, Gish W, Miller W, Myers EW, Lipman DJ. 1990 Basic local alignment search tool. <em>Journal of Molecular Biology</em> <strong>215</strong>, 403–410. (doi:<a href="https://doi.org/10.1016/s0022-2836(05)80360-2">10.1016/s0022-2836(05)80360-2</a>)</p>
+</div>
+<div id="ref-ref_114">
+<p>89. McHardy AC, Martín HG, Tsirigos A, Hugenholtz P, Rigoutsos I. 2006 Accurate phylogenetic classification of variable-length DNA fragments. <em>Nature Methods</em> <strong>4</strong>, 63–72. (doi:<a href="https://doi.org/10.1038/nmeth976">10.1038/nmeth976</a>)</p>
+</div>
+<div id="ref-ref_139">
+<p>90. Rosen GL, Reichenberger ER, Rosenfeld AM. 2010 NBC: the Naive Bayes Classification tool webserver for taxonomic classification of metagenomic reads. <em>Bioinformatics</em> <strong>27</strong>, 127–129. (doi:<a href="https://doi.org/10.1093/bioinformatics/btq619">10.1093/bioinformatics/btq619</a>)</p>
+</div>
+<div id="ref-ref_136">
+<p>91. Vervier K, Mahé P, Tournoud M, Veyrieras J-B, Vert J-P. 2015 Large-scale machine learning for metagenomics sequence classification. <em>Bioinformatics</em> <strong>32</strong>, 1023–1032. (doi:<a href="https://doi.org/10.1093/bioinformatics/btv683">10.1093/bioinformatics/btv683</a>)</p>
+</div>
+<div id="ref-ref_140">
+<p>92. Yok NG, Rosen GL. 2011 Combining gene prediction methods to improve metagenomic gene annotation. <em>BMC Bioinformatics</em> <strong>12</strong>, 20. (doi:<a href="https://doi.org/10.1186/1471-2105-12-20">10.1186/1471-2105-12-20</a>)</p>
+</div>
+<div id="ref-ref_127">
+<p>93. Soueidan H, Nikolski M. 2017 Machine learning for metagenomics: methods and tools. <em>Metagenomics</em> <strong>1</strong>. (doi:<a href="https://doi.org/10.1515/metgen-2016-0001">10.1515/metgen-2016-0001</a>)</p>
+</div>
+<div id="ref-ref_98">
+<p>94. In press. See <a href="http://www.fasebj.org/content/30/1_Supplement/406.3" class="uri">http://www.fasebj.org/content/30/1_Supplement/406.3</a>.</p>
+</div>
+<div id="ref-ref_107">
+<p>95. Knights D, Costello EK, Knight R. 2011 Supervised classification of human microbiota. <em>FEMS Microbiology Reviews</em> <strong>35</strong>, 343–359. (doi:<a href="https://doi.org/10.1111/j.1574-6976.2010.00251.x">10.1111/j.1574-6976.2010.00251.x</a>)</p>
+</div>
+<div id="ref-ref_129">
+<p>96. Statnikov A <em>et al.</em> 2013 A comprehensive evaluation of multicategory classification methods for microbiomic data. <em>Microbiome</em> <strong>1</strong>, 11. (doi:<a href="https://doi.org/10.1186/2049-2618-1-11">10.1186/2049-2618-1-11</a>)</p>
+</div>
+<div id="ref-ref_123">
+<p>97. Pasolli E, Truong DT, Malik F, Waldron L, Segata N. 2016 Machine Learning Meta-analysis of Large Metagenomic Datasets: Tools and Biological Insights. <em>PLOS Computational Biology</em> <strong>12</strong>, e1004977. (doi:<a href="https://doi.org/10.1371/journal.pcbi.1004977">10.1371/journal.pcbi.1004977</a>)</p>
+</div>
+<div id="ref-ref_90">
+<p>98. Ding X, Cheng F, Cao C, Sun X. 2015 DectICO: an alignment-free supervised metagenomic classification method based on feature extraction and dynamic selection. <em>BMC Bioinformatics</em> <strong>16</strong>. (doi:<a href="https://doi.org/10.1186/s12859-015-0753-3">10.1186/s12859-015-0753-3</a>)</p>
+</div>
+<div id="ref-ref_112">
+<p>99. Liu Z, Chen D, Sheng L, Liu AY. 2014 Correction: Class Prediction and Feature Selection with Linear Optimization for Metagenomic Count Data. <em>PLoS ONE</em> <strong>9</strong>, e97958. (doi:<a href="https://doi.org/10.1371/journal.pone.0097958">10.1371/journal.pone.0097958</a>)</p>
+</div>
+<div id="ref-ref_103">
+<p>100. Hoff KJ, Lingner T, Meinicke P, Tech M. 2009 Orphelia: predicting genes in metagenomic sequencing reads. <em>Nucleic Acids Research</em> <strong>37</strong>, W101–W105. (doi:<a href="https://doi.org/10.1093/nar/gkp327">10.1093/nar/gkp327</a>)</p>
+</div>
+<div id="ref-ref_43">
+<p>101. Rho M, Tang H, Ye Y. 2010 FragGeneScan: predicting genes in short and error-prone reads. <em>Nucleic Acids Research</em> <strong>38</strong>, e191–e191. (doi:<a href="https://doi.org/10.1093/nar/gkq747">10.1093/nar/gkq747</a>)</p>
+</div>
+<div id="ref-ref_78">
+<p>102. Asgari E, Mofrad MRK. 2015 Continuous Distributed Representation of Biological Sequences for Deep Proteomics and Genomics. <em>PLOS ONE</em> <strong>10</strong>, e0141287. (doi:<a href="https://doi.org/10.1371/journal.pone.0141287">10.1371/journal.pone.0141287</a>)</p>
+</div>
+<div id="ref-ref_102">
+<p>103. Hochreiter S, Heusel M, Obermayer K. 2007 Fast model-based protein homology detection without alignment. <em>Bioinformatics</em> <strong>23</strong>, 1728–1736. (doi:<a href="https://doi.org/10.1093/bioinformatics/btm247">10.1093/bioinformatics/btm247</a>)</p>
+</div>
+<div id="ref-ref_126">
+<p>104. Sønderby SK, Sønderby CK, Nielsen H, Winther O. 2015 Convolutional lstm networks for subcellular localization of proteins. (doi:<a href="https://doi.org/10.1007/978-3-319-21233-3_6">10.1007/978-3-319-21233-3_6</a>)</p>
+</div>
+<div id="ref-ref_74">
+<p>105. In press. See <a href="http://ci.nii.ac.jp/naid/110006199745" class="uri">http://ci.nii.ac.jp/naid/110006199745</a>.</p>
+</div>
+<div id="ref-ref_121">
+<p>106. Kelley DR, Salzberg SL. 2010 Clustering metagenomic sequences with interpolated Markov models. <em>BMC Bioinformatics</em> <strong>11</strong>, 544. (doi:<a href="https://doi.org/10.1186/1471-2105-11-544">10.1186/1471-2105-11-544</a>)</p>
+</div>
+<div id="ref-ref_133">
+<p>107. RASHEED Z, RANGWALA H. 2012 METAGENOMIC TAXONOMIC CLASSIFICATION USING EXTREME LEARNING MACHINES. <em>Journal of Bioinformatics and Computational Biology</em> <strong>10</strong>, 1250015. (doi:<a href="https://doi.org/10.1142/s0219720012500151">10.1142/s0219720012500151</a>)</p>
+</div>
+<div id="ref-ref_117">
+<p>108. In press. See <a href="https://repozitorij.uni-lj.si/IzpisGradiva.php?id=85515" class="uri">https://repozitorij.uni-lj.si/IzpisGradiva.php?id=85515</a>.</p>
+</div>
+<div id="ref-ref_24">
+<p>109. Chudobova D <em>et al.</em> 2015 Influence of microbiome species in hard-to-heal wounds on disease severity and treatment duration. <em>The Brazilian Journal of Infectious Diseases</em> <strong>19</strong>, 604–613. (doi:<a href="https://doi.org/10.1016/j.bjid.2015.08.013">10.1016/j.bjid.2015.08.013</a>)</p>
+</div>
+<div id="ref-ref_94">
+<p>110. In press. See <a href="http://alifar76.github.io/sklearn-metrics/" class="uri">http://alifar76.github.io/sklearn-metrics/</a>.</p>
+</div>
+<div id="ref-ref_0">
+<p>111. Bengio Y, Boulanger-Lewandowski N, Pascanu R. 2012 Advances in optimizing recurrent networks. </p>
+</div>
+<div id="ref-ref_82">
+<p>112. Boža V, Brejová B, Vinař T. 2016 DeepNano: Deep recurrent neural networks for base calling in minion nanopore reads. </p>
+</div>
+<div id="ref-ref_27">
+<p>113. Ithapu VK, Singh V, Okonkwo OC, Chappell RJ, Dowling NM, Johnson SC. 2015 Imaging-based enrichment criteria using deep learning algorithms for efficient clinical trials in mild cognitive impairment. <em>Alzheimer’s &amp; Dementia</em> <strong>11</strong>, 1489–1499. (doi:<a href="https://doi.org/10.1016/j.jalz.2015.01.010">10.1016/j.jalz.2015.01.010</a>)</p>
+</div>
+<div id="ref-ref_132">
+<p>114. Swamidass SJ, Azencott C-A, Lin T-W, Gramajo H, Tsai S-C, Baldi P. 2009 Influence Relevance Voting: An Accurate And Interpretable Virtual High Throughput Screening Method. <em>Journal of Chemical Information and Modeling</em> <strong>49</strong>, 756–766. (doi:<a href="https://doi.org/10.1021/ci8004379">10.1021/ci8004379</a>)</p>
+</div>
+<div id="ref-ref_105">
+<p>115. Kearnes S, Goldman B, Pande V. 2016 Modeling industrial admet data with multitask networks. </p>
+</div>
+<div id="ref-ref_75">
+<p>116. Altae-Tran H, Ramsundar B, Pappu AS, Pande V. 2016 Low data drug discovery with one-shot learning. </p>
+</div>
+<div id="ref-ref_12">
+<p>117. Ragoza M, Hochuli J, Idrobo E, Sunseri J, Koes DR. 2016 Protein-ligand scoring with convolutional neural networks. </p>
+</div>
+<div id="ref-ref_99">
+<p>118. Gupta S, Agrawal A, Gopalakrishnan K, Narayanan P. 2015 Deep learning with limited numerical precision. </p>
+</div>
+<div id="ref-ref_79">
+<p>119. Courbariaux M, Bengio Y, David J-P. 2014 Training deep neural networks with low precision multiplications. </p>
+</div>
+<div id="ref-ref_120">
+<p>120. Sa CD, Zhang C, Olukotun K, Ré C. 2015 Taming the wild: A unified analysis of hogwild!-style algorithms. </p>
+</div>
+<div id="ref-ref_104">
+<p>121. Hubara I, Courbariaux M, Soudry D, El-Yaniv R, Bengio Y. 2016 Quantized neural networks: Training neural networks with low precision weights and activations. </p>
+</div>
+<div id="ref-ref_83">
+<p>122. Ba LJ, Caruana R. 2013 Do deep nets really need to be deep? </p>
+</div>
+<div id="ref-ref_101">
+<p>123. Hinton G, Vinyals O, Dean J. 2015 Distilling the knowledge in a neural network. </p>
+</div>
+<div id="ref-ref_119">
+<p>124. Raina R, Madhavan A, Ng AY. 2009 Large-scale deep unsupervised learning using graphics processors. In <em>Proceedings of the 26th Annual International Conference on Machine Learning - ICML ’09</em>, Association for Computing Machinery (ACM). (doi:<a href="https://doi.org/10.1145/1553374.1553486">10.1145/1553374.1553486</a>)</p>
+</div>
+<div id="ref-ref_135">
+<p>125. In press. See <a href="https://research.google.com/pubs/pub37631.html" class="uri">https://research.google.com/pubs/pub37631.html</a>.</p>
+</div>
+<div id="ref-ref_124">
+<p>126. Seide F, Fu H, Droppo J, Li G, Yu D. 2014 On parallelizability of stochastic gradient descent for speech DNNS. In <em>2014 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)</em>, Institute of Electrical and Electronics Engineers (IEEE). (doi:<a href="https://doi.org/10.1109/icassp.2014.6853593">10.1109/icassp.2014.6853593</a>)</p>
+</div>
+<div id="ref-ref_100">
+<p>127. Hadjis S, Abuzaid F, Zhang C, Ré C. 2015 Caffe con troll: Shallow ideas to speed up deep learning. </p>
+</div>
+<div id="ref-ref_92">
+<p>128. Edwards C. 2015 Growing pains for deep learning. <em>Communications of the ACM</em> <strong>58</strong>, 14–16. (doi:<a href="https://doi.org/10.1145/2771283">10.1145/2771283</a>)</p>
+</div>
+<div id="ref-ref_130">
+<p>129. Su H, Chen H. 2015 Experiments on parallel training of deep neural network using model averaging. </p>
+</div>
+<div id="ref-ref_111">
+<p>130. Li M, Zhang T, Chen Y, Smola AJ. 2014 Efficient mini-batch training for stochastic optimization. In <em>Proceedings of the 20th ACM SIGKDD international conference on Knowledge discovery and data mining - KDD ’14</em>, Association for Computing Machinery (ACM). (doi:<a href="https://doi.org/10.1145/2623330.2623612">10.1145/2623330.2623612</a>)</p>
+</div>
+<div id="ref-ref_108">
+<p>131. In press. See <a href="https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf" class="uri">https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf</a>.</p>
 </div>
 <div id="ref-ref_96">
-<p>126. Gómez-Bombarelli R, Duvenaud D, Hernández-Lobato JM, Aguilera-Iparraguirre J, Hirzel TD, Adams RP, Aspuru-Guzik A. 2016 Automatic chemical design using a data-driven continuous representation of molecules. </p>
+<p>132. Gómez-Bombarelli R, Duvenaud D, Hernández-Lobato JM, Aguilera-Iparraguirre J, Hirzel TD, Adams RP, Aspuru-Guzik A. 2016 Automatic chemical design using a data-driven continuous representation of molecules. </p>
 </div>
 <div id="ref-ref_137">
-<p>127. Hamanaka M, Taneishi K, Iwata H, Ye J, Pei J, Hou J, Okuno Y. 2016 CGBVS-DNN: Prediction of Compound-protein Interactions Based on Deep Learning. <em>Molecular Informatics</em> <strong>36</strong>, 1600045. (doi:<a href="https://doi.org/10.1002/minf.201600045">10.1002/minf.201600045</a>)</p>
+<p>133. Hamanaka M, Taneishi K, Iwata H, Ye J, Pei J, Hou J, Okuno Y. 2016 CGBVS-DNN: Prediction of Compound-protein Interactions Based on Deep Learning. <em>Molecular Informatics</em> <strong>36</strong>, 1600045. (doi:<a href="https://doi.org/10.1002/minf.201600045">10.1002/minf.201600045</a>)</p>
 </div>
 <div id="ref-ref_88">
-<p>128. Chetlur S, Woolley C, Vandermersch P, Cohen J, Tran J, Catanzaro B, Shelhamer E. 2014 CuDNN: Efficient primitives for deep learning. </p>
+<p>134. Chetlur S, Woolley C, Vandermersch P, Cohen J, Tran J, Catanzaro B, Shelhamer E. 2014 CuDNN: Efficient primitives for deep learning. </p>
 </div>
 <div id="ref-ref_84">
-<p>129. Chen W, Wilson JT, Tyree S, Weinberger KQ, Chen Y. 2015 Compressing neural networks with the hashing trick. </p>
+<p>135. Chen W, Wilson JT, Tyree S, Weinberger KQ, Chen Y. 2015 Compressing neural networks with the hashing trick. </p>
 </div>
 <div id="ref-ref_110">
-<p>130. Lacey G, Taylor GW, Areibi S. 2016 Deep learning on fpgas: Past, present, and future. </p>
+<p>136. Lacey G, Taylor GW, Areibi S. 2016 Deep learning on fpgas: Past, present, and future. </p>
 </div>
 <div id="ref-ref_113">
-<p>131. Dean J, Ghemawat S. 2008 MapReduce. <em>Communications of the ACM</em> <strong>51</strong>, 107. (doi:<a href="https://doi.org/10.1145/1327452.1327492">10.1145/1327452.1327492</a>)</p>
+<p>137. Dean J, Ghemawat S. 2008 MapReduce. <em>Communications of the ACM</em> <strong>51</strong>, 107. (doi:<a href="https://doi.org/10.1145/1327452.1327492">10.1145/1327452.1327492</a>)</p>
 </div>
 <div id="ref-ref_97">
-<p>132. Low Y, Bickson D, Gonzalez J, Guestrin C, Kyrola A, Hellerstein JM. 2012 Distributed GraphLab. <em>Proceedings of the VLDB Endowment</em> <strong>5</strong>, 716–727. (doi:<a href="https://doi.org/10.14778/2212351.2212354">10.14778/2212351.2212354</a>)</p>
+<p>138. Low Y, Bickson D, Gonzalez J, Guestrin C, Kyrola A, Hellerstein JM. 2012 Distributed GraphLab. <em>Proceedings of the VLDB Endowment</em> <strong>5</strong>, 716–727. (doi:<a href="https://doi.org/10.14778/2212351.2212354">10.14778/2212351.2212354</a>)</p>
 </div>
 <div id="ref-ref_89">
-<p>133. In press. See <a href="http://research.google.com/archive/large_deep_networks_nips2012.html" class="uri">http://research.google.com/archive/large_deep_networks_nips2012.html</a>.</p>
+<p>139. In press. See <a href="http://research.google.com/archive/large_deep_networks_nips2012.html" class="uri">http://research.google.com/archive/large_deep_networks_nips2012.html</a>.</p>
 </div>
 <div id="ref-ref_91">
-<p>134. In press. See <a href="https://papers.nips.cc/paper/5717-taming-the-wild-a-unified-analysis-of-hogwild-style-algorithms.pdf" class="uri">https://papers.nips.cc/paper/5717-taming-the-wild-a-unified-analysis-of-hogwild-style-algorithms.pdf</a>.</p>
+<p>140. In press. See <a href="https://papers.nips.cc/paper/5717-taming-the-wild-a-unified-analysis-of-hogwild-style-algorithms.pdf" class="uri">https://papers.nips.cc/paper/5717-taming-the-wild-a-unified-analysis-of-hogwild-style-algorithms.pdf</a>.</p>
 </div>
 <div id="ref-ref_116">
-<p>135. Moritz P, Nishihara R, Stoica I, Jordan MI. 2015 SparkNet: Training deep networks in spark. </p>
+<p>141. Moritz P, Nishihara R, Stoica I, Jordan MI. 2015 SparkNet: Training deep networks in spark. </p>
 </div>
 <div id="ref-ref_115">
-<p>136. Meng X <em>et al.</em> 2015 MLlib: Machine learning in apache spark. </p>
+<p>142. Meng X <em>et al.</em> 2015 MLlib: Machine learning in apache spark. </p>
 </div>
 <div id="ref-ref_134">
-<p>137. In press. See <a href="http://download.tensorflow.org/paper/whitepaper2015.pdf" class="uri">http://download.tensorflow.org/paper/whitepaper2015.pdf</a>.</p>
+<p>143. In press. See <a href="http://download.tensorflow.org/paper/whitepaper2015.pdf" class="uri">http://download.tensorflow.org/paper/whitepaper2015.pdf</a>.</p>
 </div>
 <div id="ref-ref_106">
-<p>138. In press. See <a href="https://github.com/fchollet/keras" class="uri">https://github.com/fchollet/keras</a>.</p>
+<p>144. In press. See <a href="https://github.com/fchollet/keras" class="uri">https://github.com/fchollet/keras</a>.</p>
 </div>
 <div id="ref-ref_93">
-<p>139. In press. See <a href="https://github.com/maxpumperla/elephas" class="uri">https://github.com/maxpumperla/elephas</a>.</p>
+<p>145. In press. See <a href="https://github.com/maxpumperla/elephas" class="uri">https://github.com/maxpumperla/elephas</a>.</p>
 </div>
 <div id="ref-ref_87">
-<p>140. In press. See <a href="http://www.jmlr.org/proceedings/papers/v28/coates13.html" class="uri">http://www.jmlr.org/proceedings/papers/v28/coates13.html</a>.</p>
+<p>146. In press. See <a href="http://www.jmlr.org/proceedings/papers/v28/coates13.html" class="uri">http://www.jmlr.org/proceedings/papers/v28/coates13.html</a>.</p>
 </div>
 <div id="ref-ref_131">
-<p>141. Sun S, Chen W, Liu T-Y. 2016 Ensemble-compression: A new method for parallel training of deep neural networks. </p>
+<p>147. Sun S, Chen W, Liu T-Y. 2016 Ensemble-compression: A new method for parallel training of deep neural networks. </p>
 </div>
 <div id="ref-ref_80">
-<p>142. In press. See <a href="https://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimization.pdf" class="uri">https://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimization.pdf</a>.</p>
+<p>148. In press. See <a href="https://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimization.pdf" class="uri">https://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimization.pdf</a>.</p>
 </div>
 <div id="ref-ref_81">
-<p>143. In press. See <a href="http://dl.acm.org/citation.cfm?id=2188395" class="uri">http://dl.acm.org/citation.cfm?id=2188395</a>.</p>
+<p>149. In press. See <a href="http://dl.acm.org/citation.cfm?id=2188395" class="uri">http://dl.acm.org/citation.cfm?id=2188395</a>.</p>
 </div>
 <div id="ref-ref_122">
-<p>144. Schatz MC, Langmead B, Salzberg SL. 2010 Cloud computing and the DNA data race. <em>Nature Biotechnology</em> <strong>28</strong>, 691–693. (doi:<a href="https://doi.org/10.1038/nbt0710-691">10.1038/nbt0710-691</a>)</p>
+<p>150. Schatz MC, Langmead B, Salzberg SL. 2010 Cloud computing and the DNA data race. <em>Nature Biotechnology</em> <strong>28</strong>, 691–693. (doi:<a href="https://doi.org/10.1038/nbt0710-691">10.1038/nbt0710-691</a>)</p>
 </div>
 <div id="ref-ref_95">
-<p>145. Muir P <em>et al.</em> 2016 The real cost of sequencing: scaling computation to keep pace with data generation. <em>Genome Biology</em> <strong>17</strong>. (doi:<a href="https://doi.org/10.1186/s13059-016-0917-0">10.1186/s13059-016-0917-0</a>)</p>
+<p>151. Muir P <em>et al.</em> 2016 The real cost of sequencing: scaling computation to keep pace with data generation. <em>Genome Biology</em> <strong>17</strong>. (doi:<a href="https://doi.org/10.1186/s13059-016-0917-0">10.1186/s13059-016-0917-0</a>)</p>
 </div>
 <div id="ref-ref_128">
-<p>146. Stein LD. 2010 The case for cloud computing in genome informatics. <em>Genome Biology</em> <strong>11</strong>, 207. (doi:<a href="https://doi.org/10.1186/gb-2010-11-5-207">10.1186/gb-2010-11-5-207</a>)</p>
+<p>152. Stein LD. 2010 The case for cloud computing in genome informatics. <em>Genome Biology</em> <strong>11</strong>, 207. (doi:<a href="https://doi.org/10.1186/gb-2010-11-5-207">10.1186/gb-2010-11-5-207</a>)</p>
 </div>
 <div id="ref-ref_109">
-<p>147. Krizhevsky A. 2014 One weird trick for parallelizing convolutional neural networks. </p>
+<p>153. Krizhevsky A. 2014 One weird trick for parallelizing convolutional neural networks. </p>
 </div>
 <div id="ref-ref_118">
-<p>148. Armbrust M <em>et al.</em> 2010 A view of cloud computing. <em>Communications of the ACM</em> <strong>53</strong>, 50. (doi:<a href="https://doi.org/10.1145/1721654.1721672">10.1145/1721654.1721672</a>)</p>
+<p>154. Armbrust M <em>et al.</em> 2010 A view of cloud computing. <em>Communications of the ACM</em> <strong>53</strong>, 50. (doi:<a href="https://doi.org/10.1145/1721654.1721672">10.1145/1721654.1721672</a>)</p>
 </div>
 </div>
 </body>
