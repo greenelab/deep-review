@@ -113,12 +113,12 @@ nuclear RNAs (snRNAs) and spliceosomal proteins, which detect sequence motifs
 such as splice sites and exon sequence enhancers and silencers (ESE and ESS).
 Various RNA-binding proteins and noncoding RNAs can bias these reactions by
 altering binding affinities, blocking splice sites, or sequestering splicing
-factors. This remarkable complexity lends itself to defects that underlie many
-diseases [@tag:Scotti2016_missplicing]. For instance, in Becker muscular
-dystrophy, a point mutation in dystrophin creates an ESS that induces skipping
-of exon 31. A recent study found that quantitative trait loci (QTLs) that affect
-splicing in lymphoblastoid cell lines are enriched within risk loci for
-schizophrenia, multiple sclerosis and other immune diseases, implicating
+factors. This remarkable complexity unfortunately lends itself to defects that
+underlie many diseases [@tag:Scotti2016_missplicing]. For instance, in Becker
+muscular dystrophy, a point mutation in dystrophin creates an ESS that induces
+skipping of exon 31. A recent study found that quantitative trait loci (QTLs)
+that affect splicing in lymphoblastoid cell lines are enriched within risk loci
+for schizophrenia, multiple sclerosis and other immune diseases, implicating
 mis-splicing as a much more widespread feature of human pathologies than
 previously thought [@tag:Li2016_variation].
 
@@ -128,8 +128,8 @@ code” has been a holy grail over the past decade. Initial machine learning
 approaches used a naive Bayes model and a 2-layer Bayesian neural network with
 thousands of hand-derived sequence-based features to predict the probability of
 exon skipping [@tag:Barash2010_splicing_code @tag:Xiong2011_bayesian]. With the
-advent of deep learning, more complex models were built that provided
-significantly better performance [@tag:Xiong2015_splicing_code
+advent of deep learning, more complex models were built that provided better
+predictive accuracy [@tag:Xiong2015_splicing_code
 @tag:Jha2017_integrative_models]. Importantly, these new approaches can take in
 not only genomic features, but also tissue identity and CLIP-seq measurements of
 interactions between splicing factors and RNA, which all improve predictive
@@ -144,18 +144,20 @@ splicing factor binding, and other currently unknown factors — all of which
 interact in complex, incompletely characterized ways. With new tools to
 interpret these meta-features, a major focus of current deep learning research,
 we will soon have the ability to extract a more nuanced biological understanding
-of splicing — perhaps by building different deep neural networks for different
-biological conditions, then interrogating their hidden nodes.
+of splicing — perhaps by interrogating informative hidden nodes within neural
+networks that take in tissue type as part of the input, or by building separate
+networks for each tissue type and looking for common versus distinctive nodes
+[@tag:Qin2017_onehot].
 
 A parallel effort has been to use more data with simpler models. An exhaustive
 study using readouts of splicing for millions of synthetic intronic sequences
 was able to describe motifs that influence the strength of alternative splice
-sites [@tag:Rosenberg2015_synthetic_seqs]. Interestingly, a simple linear model
-built from this data successfully generalized to exon skipping: in a limited
-analysis using SNPs from three genes, it predicted exon skipping with three
-times the accuracy of Xiong et al.’s framework. This case is instructive in that
-clever sources of data, not just more powerful models, can lead to novel
-insights.
+sites [@tag:Rosenberg2015_synthetic_seqs]. Interestingly, they built a simple
+linear model using hexamer motif frequencies that successfully generalized to
+exon skipping: in a limited analysis using SNPs from three genes, it predicted
+exon skipping with three times the accuracy of Xiong et al.’s framework. This
+case is instructive in that clever sources of data, not just more powerful
+models, can lead to novel insights.
 
 We already understand how mis-splicing of a single gene can cause diseases such
 as Duchenne muscular dystrophy. The challenge now is to uncover how alternative
