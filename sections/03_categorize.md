@@ -204,7 +204,7 @@ EHR, unfortunately, this means we need to hire multiple expert clinicians  to
 manually read and annotate individual patients' records to assign "true"
 labels (i.e., expert chart review). Sometimes, the learnt features also need to
 be manually validated and interpreted by clinicians. This can be quite costly
-in time and money [doi: 10.1016/j.ijmedinf.2016.09.014]. Due to resource
+in time and money [@doi:10.1016/j.ijmedinf.2016.09.014]. Due to resource
 limitations,  many existing works in this direction (including many referenced
 in this review)  skipped the expert review process, which may face great
 skepticism from  medical domain experts. To date, even the most resourceful
@@ -254,7 +254,7 @@ current best practices and how they relate to deep learning. A lack of data (due
 to privacy and sharing restrictions) may hamper deep learning's utility in this
 area in ways that it doesn't for image analysis, etc. Perhaps this will be the
 Achilles heal of deep learning in this area. A couple things to think about
-[doi: 10.1126/science.1229566 doi:10.1016/j.cels.2016.04.013]*
+[@doi:10.1126/science.1229566 @doi:10.1016/j.cels.2016.04.013]*
 
 ###### Standardization/integration
 
