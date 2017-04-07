@@ -134,7 +134,7 @@ In recent years, deep learning methods have been explored for contact prediction
 Di Lena et al. introduced a deep spatio-temporal neural network (up to 100 layers) that utilizes both 
 spatial and temporal features to predict protein contacts[@doi:10.1093/bioinformatics/bts475]. 
 Eickholt and Cheng combined deep belief networks and boosting techniques to predict protein contacts 
-[@10.1093/bioinformatics/bts598] and trained deep networks by layer-wise unsupervised 
+[@doi:10.1093/bioinformatics/bts598] and trained deep networks by layer-wise unsupervised 
 learning followed by fine-tuning of the entire network. Skwark and Elofsson et al. developed 
 an iterative deep learning technique for contact prediction by stacking a series of Random Forests 
 [@doi:10.1371/journal.pcbi.1003889]. However, blindly tested in the well-known CASP competitions, 
