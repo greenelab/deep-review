@@ -1,3 +1,4 @@
+import base64
 import collections
 from hashlib import blake2b
 import pathlib
@@ -108,8 +109,8 @@ def citation_to_metadata(citation, cache={}):
         msg = f'Unsupported citation  source {source} in {citation}'
         raise ValueError(msg)
 
-    blake2_hash = blake2b(standard_citation.encode(), digest_size=4)
-    citation_id = blake2_hash.hexdigest()
+    digest = blake2b(standard_citation.encode(), digest_size=5).digest()
+    citation_id = base64.b32encode(digest).decode()
     result['citation_id'] = citation_id
     if 'citeproc' in result:
         result['citeproc'] = citeproc_passthrough(
