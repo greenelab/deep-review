@@ -104,7 +104,7 @@ angles and solvent accessibility [@doi:10.1038/srep11476]. However, none of thes
 learning methods achieved significant improvement over PSIPRED [@doi:10.1006/jmbi.1999.3091] 
 in terms of Q3 accuracy. In 2014, Zhou and Troyanskaya demonstrated that they could 
 improve Q8 accuracy over a shallow learning architecture conditional neural fields [@doi:10.1002/pmic.201100196] 
-by using a deep supervised and convolutional generative stochastic network[@arXiv:1403.1347], 
+by using a deep supervised and convolutional generative stochastic network[@arxiv:1403.1347], 
 but did not report any results in terms of Q3 accuracy. In 2016 Wang and Xu et al. developed a deep 
 convolutional neural fields (DeepCNF) model that can significantly improve secondary 
 structure prediction in terms of both Q3 and Q8 accuracy[@doi:10.1038/srep18962]. 
