@@ -16311,5 +16311,1142 @@
       "id": "ref_172"
     },
     "citation_id": "ref_172"
+  },
+  "doi:10.1101/gr.634603": {
+    "source": "doi",
+    "identifer": "10.1101/gr.634603",
+    "standard_citation": "doi:10.1101/gr.634603",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            2,
+            15
+          ]
+        ],
+        "date-time": "2017-02-15T18:40:08Z",
+        "timestamp": 1487184008980
+      },
+      "reference-count": 0,
+      "publisher": "Cold Spring Harbor Laboratory Press",
+      "issue": "4",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [],
+      "cited-count": 0,
+      "published-print": {
+        "date-parts": [
+          [
+            2003,
+            4,
+            1
+          ]
+        ]
+      },
+      "DOI": "10.1101/gr.634603",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2003,
+            4,
+            2
+          ]
+        ],
+        "date-time": "2003-04-02T03:44:29Z",
+        "timestamp": 1049255069000
+      },
+      "page": "693-702",
+      "source": "CrossRef",
+      "title": "Informatics for Unveiling Hidden Genome Signatures",
+      "prefix": "http://id.crossref.org/prefix/10.1101",
+      "volume": "13",
+      "author": [
+        {
+          "given": "T.",
+          "family": "Abe",
+          "affiliation": []
+        }
+      ],
+      "member": "http://id.crossref.org/member/246",
+      "container-title": "Genome Research",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2017,
+            2,
+            15
+          ]
+        ],
+        "date-time": "2017-02-15T17:54:04Z",
+        "timestamp": 1487181244000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2003,
+            4,
+            1
+          ]
+        ]
+      },
+      "URL": "http://dx.doi.org/10.1101/gr.634603",
+      "issn-type": [
+        {
+          "value": "1088-9051",
+          "type": "print"
+        }
+      ],
+      "citing-count": 0,
+      "subject": [
+        "Genetics(clinical)",
+        "Genetics"
+      ],
+      "id": "ref_173"
+    },
+    "citation_id": "ref_173"
+  },
+  "doi:10.1186/s12859-015-0793-8": {
+    "source": "doi",
+    "identifer": "10.1186/s12859-015-0793-8",
+    "standard_citation": "doi:10.1186/s12859-015-0793-8",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2016,
+            11,
+            28
+          ]
+        ],
+        "date-time": "2016-11-28T21:34:06Z",
+        "timestamp": 1480368846583
+      },
+      "reference-count": 31,
+      "publisher": "Springer Nature",
+      "issue": "1",
+      "license": [
+        {
+          "URL": "http://www.springer.com/tdm",
+          "start": {
+            "date-parts": [
+              [
+                2015,
+                11,
+                4
+              ]
+            ],
+            "date-time": "2015-11-04T00:00:00Z",
+            "timestamp": 1446595200000
+          },
+          "delay-in-days": 0,
+          "content-version": "vor"
+        }
+      ],
+      "funder": [
+        {
+          "DOI": "10.13039/100000001",
+          "name": "National Science Foundation",
+          "doi-asserted-by": "crossref",
+          "award": [
+            "1120622"
+          ]
+        },
+        {
+          "DOI": "10.13039/100000015",
+          "name": "U.S. Department of Energy",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "SC004335"
+          ]
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "link.springer.com"
+        ],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "BMC Bioinformatics"
+      ],
+      "cited-count": 0,
+      "published-print": {
+        "date-parts": [
+          [
+            2015,
+            12
+          ]
+        ]
+      },
+      "DOI": "10.1186/s12859-015-0793-8",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2015,
+            11,
+            4
+          ]
+        ],
+        "date-time": "2015-11-04T14:13:32Z",
+        "timestamp": 1446646412000
+      },
+      "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+      "source": "CrossRef",
+      "title": "Fizzy: feature subset selection for metagenomics",
+      "prefix": "http://id.crossref.org/prefix/10.1186",
+      "volume": "16",
+      "author": [
+        {
+          "given": "Gregory",
+          "family": "Ditzler",
+          "affiliation": []
+        },
+        {
+          "given": "J. Calvin",
+          "family": "Morrison",
+          "affiliation": []
+        },
+        {
+          "given": "Yemin",
+          "family": "Lan",
+          "affiliation": []
+        },
+        {
+          "given": "Gail L.",
+          "family": "Rosen",
+          "affiliation": []
+        }
+      ],
+      "member": "http://id.crossref.org/member/297",
+      "published-online": {
+        "date-parts": [
+          [
+            2015,
+            11,
+            4
+          ]
+        ]
+      },
+      "container-title": "BMC Bioinformatics",
+      "original-title": [],
+      "link": [
+        {
+          "URL": "http://link.springer.com/content/pdf/10.1186/s12859-015-0793-8.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "http://link.springer.com/article/10.1186/s12859-015-0793-8/fulltext.html",
+          "content-type": "text/html",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2016,
+            11,
+            11
+          ]
+        ],
+        "date-time": "2016-11-11T12:22:09Z",
+        "timestamp": 1478866929000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2015,
+            11,
+            4
+          ]
+        ]
+      },
+      "alternative-id": [
+        "793"
+      ],
+      "URL": "http://dx.doi.org/10.1186/s12859-015-0793-8",
+      "citing-count": 31,
+      "subject": [
+        "Biochemistry",
+        "Molecular Biology",
+        "Computer Science Applications"
+      ],
+      "article-number": "358",
+      "id": "ref_174"
+    },
+    "citation_id": "ref_174"
+  },
+  "doi:10.1109/tnnls.2014.2320415": {
+    "source": "doi",
+    "identifer": "10.1109/tnnls.2014.2320415",
+    "standard_citation": "doi:10.1109/tnnls.2014.2320415",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            3
+          ]
+        ],
+        "date-time": "2017-04-03T22:16:51Z",
+        "timestamp": 1491257811536
+      },
+      "reference-count": 15,
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "issue": "4",
+      "license": [
+        {
+          "URL": "\n                        http://www.ieee.org/publications_standards/publications/rights/ieeecopyrightform.pdf\n                    ",
+          "start": {
+            "date-parts": [
+              [
+                2015,
+                4,
+                1
+              ]
+            ],
+            "date-time": "2015-04-01T00:00:00Z",
+            "timestamp": 1427846400000
+          },
+          "delay-in-days": 0,
+          "content-version": "am"
+        },
+        {
+          "URL": "\n                        http://www.ieee.org/publications_standards/publications/rights/ieeecopyrightform.pdf\n                    ",
+          "start": {
+            "date-parts": [
+              [
+                2015,
+                4,
+                1
+              ]
+            ],
+            "date-time": "2015-04-01T00:00:00Z",
+            "timestamp": 1427846400000
+          },
+          "delay-in-days": 0,
+          "content-version": "vor"
+        }
+      ],
+      "funder": [
+        {
+          "DOI": "10.13039/100000001",
+          "name": "National Science Foundation",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "ECCS-1310496",
+            "1120622",
+            "0845827",
+            "ECCS-0926159"
+          ]
+        },
+        {
+          "name": "Department of Energy",
+          "award": [
+            "SC004335"
+          ]
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "IEEE Trans. Neural Netw. Learning Syst."
+      ],
+      "cited-count": 0,
+      "published-print": {
+        "date-parts": [
+          [
+            2015,
+            4
+          ]
+        ]
+      },
+      "DOI": "10.1109/tnnls.2014.2320415",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2014,
+            5,
+            29
+          ]
+        ],
+        "date-time": "2014-05-29T18:04:03Z",
+        "timestamp": 1401386643000
+      },
+      "page": "880-886",
+      "source": "CrossRef",
+      "title": "A Bootstrap Based Neyman-Pearson Test for Identifying Variable Importance",
+      "prefix": "http://id.crossref.org/prefix/10.1109",
+      "volume": "26",
+      "author": [
+        {
+          "given": "Gregory",
+          "family": "Ditzler",
+          "affiliation": []
+        },
+        {
+          "given": "Robi",
+          "family": "Polikar",
+          "affiliation": []
+        },
+        {
+          "given": "Gail",
+          "family": "Rosen",
+          "affiliation": []
+        }
+      ],
+      "member": "http://id.crossref.org/member/263",
+      "container-title": "IEEE Transactions on Neural Networks and Learning Systems",
+      "original-title": [],
+      "link": [
+        {
+          "URL": "http://ieeexplore.ieee.org/ielam/5962385/7061550/6823119-aam.pdf",
+          "content-type": "application/pdf",
+          "content-version": "am",
+          "intended-application": "syndication"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            3
+          ]
+        ],
+        "date-time": "2017-04-03T21:53:25Z",
+        "timestamp": 1491256405000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2015,
+            4
+          ]
+        ]
+      },
+      "URL": "http://dx.doi.org/10.1109/tnnls.2014.2320415",
+      "issn-type": [
+        {
+          "value": "2162-237X",
+          "type": "print"
+        },
+        {
+          "value": "2162-2388",
+          "type": "electronic"
+        }
+      ],
+      "citing-count": 15,
+      "id": "ref_175"
+    },
+    "citation_id": "ref_175"
+  },
+  "doi:10.1109/tnb.2015.2461219": {
+    "source": "doi",
+    "identifer": "10.1109/tnb.2015.2461219",
+    "standard_citation": "doi:10.1109/tnb.2015.2461219",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            3,
+            25
+          ]
+        ],
+        "date-time": "2017-03-25T04:40:53Z",
+        "timestamp": 1490416853180
+      },
+      "reference-count": 44,
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "issue": "6",
+      "funder": [
+        {
+          "DOI": "10.13039/100000001",
+          "name": "National Science Foundation",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "0926159",
+            "1120622",
+            "0845827"
+          ]
+        },
+        {
+          "name": "Department of Energy",
+          "award": []
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "IEEE Trans.on Nanobioscience"
+      ],
+      "cited-count": 0,
+      "published-print": {
+        "date-parts": [
+          [
+            2015,
+            9
+          ]
+        ]
+      },
+      "DOI": "10.1109/tnb.2015.2461219",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2015,
+            8,
+            24
+          ]
+        ],
+        "date-time": "2015-08-24T18:25:26Z",
+        "timestamp": 1440440726000
+      },
+      "page": "608-616",
+      "source": "CrossRef",
+      "title": "Multi-Layer and Recursive Neural Networks for Metagenomic Classification",
+      "prefix": "http://id.crossref.org/prefix/10.1109",
+      "volume": "14",
+      "author": [
+        {
+          "given": "Gregory",
+          "family": "Ditzler",
+          "affiliation": []
+        },
+        {
+          "given": "Robi",
+          "family": "Polikar",
+          "affiliation": []
+        },
+        {
+          "given": "Gail",
+          "family": "Rosen",
+          "affiliation": []
+        }
+      ],
+      "member": "http://id.crossref.org/member/263",
+      "container-title": "IEEE Transactions on NanoBioscience",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2017,
+            3,
+            25
+          ]
+        ],
+        "date-time": "2017-03-25T04:23:55Z",
+        "timestamp": 1490415835000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2015,
+            9
+          ]
+        ]
+      },
+      "URL": "http://dx.doi.org/10.1109/tnb.2015.2461219",
+      "issn-type": [
+        {
+          "value": "1536-1241",
+          "type": "print"
+        },
+        {
+          "value": "1558-2639",
+          "type": "electronic"
+        }
+      ],
+      "citing-count": 44,
+      "subject": [
+        "Biotechnology",
+        "Electrical and Electronic Engineering",
+        "Medicine (miscellaneous)",
+        "Bioengineering",
+        "Pharmaceutical Science",
+        "Biomedical Engineering",
+        "Computer Science Applications"
+      ],
+      "id": "ref_176"
+    },
+    "citation_id": "ref_176"
+  },
+  "doi:10.1128/jb.179.12.3899-3913.1997": {
+    "source": "doi",
+    "identifer": "10.1128/jb.179.12.3899-3913.1997",
+    "standard_citation": "doi:10.1128/jb.179.12.3899-3913.1997",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2016,
+            12,
+            23
+          ]
+        ],
+        "date-time": "2016-12-23T14:48:55Z",
+        "timestamp": 1482504535203
+      },
+      "reference-count": 0,
+      "publisher": "American Society for Microbiology",
+      "issue": "12",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "J. Bacteriol."
+      ],
+      "cited-count": 0,
+      "published-print": {
+        "date-parts": [
+          [
+            1997,
+            6
+          ]
+        ]
+      },
+      "abstract": "<jats:p>We compare and contrast genome-wide compositional biases and distributions of short oligonucleotides across 15 diverse prokaryotes that have substantial genomic sequence collections. These include seven complete genomes (Escherichia coli, Haemophilus influenzae, Mycoplasma genitalium, Mycoplasma pneumoniae, Synechocystis sp. strain PCC6803, Methanococcus jannaschii, and Pyrobaculum aerophilum). A key observation concerns the constancy of the dinucleotide relative abundance profiles over multiple 50-kb disjoint contigs within the same genome. (The profile is rhoXY* = fXY*/fX*fY* for all XY, where fX* denotes the frequency of the nucleotide X and fY* denotes the frequency of the dinucleotide XY, both computed from the sequence concatenated with its inverted complementary sequence.) On the basis of this constancy, we refer to the collection [rhoXY*] as the genome signature. We establish that the differences between [rhoXY*] vectors of 50-kb sample contigs of different genomes virtually always exceed the differences between those of the same genomes. Various di- and tetranucleotide biases are identified. In particular, we find that the dinucleotide CpG=CG is underrepresented in many thermophiles (e.g., M. jannaschii, Sulfolobus sp., and M. thermoautotrophicum) but overrepresented in halobacteria. TA is broadly underrepresented in prokaryotes and eukaryotes, but normal counts appear in Sulfolobus and P. aerophilum sequences. More than for any other bacterial genome, palindromic tetranucleotides are underrepresented in H. influenzae. The M. jannaschii sequence is unprecedented in its extreme underrepresentation of CTAG tetranucleotides and in the anomalous distribution of CTAG sites around the genome. Comparative analysis of numbers of long tetranucleotide microsatellites distinguishes H. influenzae. Dinucleotide relative abundance differences between bacterial sequences are compared. For example, in these assessments of differences, the cyanobacteria Synechocystis, Synechococcus, and Anabaena do not form a coherent group and are as far from each other as general gram-negative sequences are from general gram-positive sequences. The difference of M. jannaschii from low-G+C gram-positive proteobacteria is one-half of the difference from gram-negative proteobacteria. Interpretations and hypotheses center on the role of the genome signature in highlighting similarities and dissimilarities across different classes of prokaryotic species, possible mechanisms underlying the genome signature, the form and level of genome compositional flux, the use of the genome signature as a chronometer of molecular phylogeny, and implications with respect to the three putative eubacterial, archaeal, and eukaryote domains of life and to the origin and early evolution of eukaryotes.</jats:p>",
+      "DOI": "10.1128/jb.179.12.3899-3913.1997",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2016,
+            11,
+            10
+          ]
+        ],
+        "date-time": "2016-11-10T14:42:18Z",
+        "timestamp": 1478788938000
+      },
+      "page": "3899-3913",
+      "source": "CrossRef",
+      "title": "Compositional biases of bacterial genomes and evolutionary implications.",
+      "prefix": "http://id.crossref.org/prefix/10.1128",
+      "volume": "179",
+      "author": [
+        {
+          "given": "S",
+          "family": "Karlin",
+          "affiliation": []
+        },
+        {
+          "given": "J",
+          "family": "Mrázek",
+          "affiliation": []
+        },
+        {
+          "given": "A M",
+          "family": "Campbell",
+          "affiliation": []
+        }
+      ],
+      "member": "http://id.crossref.org/member/235",
+      "published-online": {
+        "date-parts": [
+          [
+            1997,
+            6,
+            1
+          ]
+        ]
+      },
+      "container-title": "Journal of Bacteriology",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2016,
+            12,
+            23
+          ]
+        ],
+        "date-time": "2016-12-23T13:46:11Z",
+        "timestamp": 1482500771000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            1997,
+            6
+          ]
+        ]
+      },
+      "alternative-id": [
+        "10.1128/jb.179.12.3899-3913.1997"
+      ],
+      "URL": "http://dx.doi.org/10.1128/jb.179.12.3899-3913.1997",
+      "citing-count": 0,
+      "subject": [
+        "Molecular Biology",
+        "Microbiology"
+      ],
+      "id": "ref_177"
+    },
+    "citation_id": "ref_177"
+  },
+  "doi:10.1038/nmeth.2066": {
+    "source": "doi",
+    "identifer": "10.1038/nmeth.2066",
+    "standard_citation": "doi:10.1038/nmeth.2066",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2016,
+            10,
+            26
+          ]
+        ],
+        "date-time": "2016-10-26T01:23:16Z",
+        "timestamp": 1477444996102
+      },
+      "reference-count": 37,
+      "publisher": "Springer Nature",
+      "issue": "8",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Nat Meth"
+      ],
+      "cited-count": 0,
+      "DOI": "10.1038/nmeth.2066",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2012,
+            6,
+            11
+          ]
+        ],
+        "date-time": "2012-06-11T13:13:51Z",
+        "timestamp": 1339420431000
+      },
+      "page": "811-814",
+      "source": "CrossRef",
+      "title": "Metagenomic microbial community profiling using unique clade-specific marker genes",
+      "prefix": "http://id.crossref.org/prefix/10.1038",
+      "volume": "9",
+      "author": [
+        {
+          "given": "Nicola",
+          "family": "Segata",
+          "affiliation": []
+        },
+        {
+          "given": "Levi",
+          "family": "Waldron",
+          "affiliation": []
+        },
+        {
+          "given": "Annalisa",
+          "family": "Ballarini",
+          "affiliation": []
+        },
+        {
+          "given": "Vagheesh",
+          "family": "Narasimhan",
+          "affiliation": []
+        },
+        {
+          "given": "Olivier",
+          "family": "Jousson",
+          "affiliation": []
+        },
+        {
+          "given": "Curtis",
+          "family": "Huttenhower",
+          "affiliation": []
+        }
+      ],
+      "member": "http://id.crossref.org/member/339",
+      "published-online": {
+        "date-parts": [
+          [
+            2012,
+            6,
+            10
+          ]
+        ]
+      },
+      "container-title": "Nature Methods",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2012,
+            7,
+            30
+          ]
+        ],
+        "date-time": "2012-07-30T17:23:10Z",
+        "timestamp": 1343668990000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2012,
+            6,
+            10
+          ]
+        ]
+      },
+      "alternative-id": [
+        "nmeth.2066"
+      ],
+      "URL": "http://dx.doi.org/10.1038/nmeth.2066",
+      "citing-count": 37,
+      "subject": [
+        "Biotechnology",
+        "Cell Biology",
+        "Biochemistry",
+        "Molecular Biology"
+      ],
+      "id": "ref_178"
+    },
+    "citation_id": "ref_178"
+  },
+  "arxiv:1409.3215": {
+    "source": "arxiv",
+    "identifer": "1409.3215",
+    "standard_citation": "arxiv:1409.3215",
+    "bibtex": "@article{ref_179,\n abstract = {Deep Neural Networks (DNNs) are powerful models that have achieved excellent\nperformance on difficult learning tasks. Although DNNs work well whenever large\nlabeled training sets are available, they cannot be used to map sequences to\nsequences. In this paper, we present a general end-to-end approach to sequence\nlearning that makes minimal assumptions on the sequence structure. Our method\nuses a multilayered Long Short-Term Memory (LSTM) to map the input sequence to\na vector of a fixed dimensionality, and then another deep LSTM to decode the\ntarget sequence from the vector. Our main result is that on an English to\nFrench translation task from the WMT'14 dataset, the translations produced by\nthe LSTM achieve a BLEU score of 34.8 on the entire test set, where the LSTM's\nBLEU score was penalized on out-of-vocabulary words. Additionally, the LSTM did\nnot have difficulty on long sentences. For comparison, a phrase-based SMT\nsystem achieves a BLEU score of 33.3 on the same dataset. When we used the LSTM\nto rerank the 1000 hypotheses produced by the aforementioned SMT system, its\nBLEU score increases to 36.5, which is close to the previous best result on\nthis task. The LSTM also learned sensible phrase and sentence representations\nthat are sensitive to word order and are relatively invariant to the active and\nthe passive voice. Finally, we found that reversing the order of the words in\nall source sentences (but not target sentences) improved the LSTM's performance\nmarkedly, because doing so introduced many short term dependencies between the\nsource and the target sentence which made the optimization problem easier.},\n archiveprefix = {arXiv},\n author = {Ilya Sutskever and Oriol Vinyals and Quoc V. Le},\n eprint = {1409.3215v3},\n file = {1409.3215v3.pdf},\n link = {http://arxiv.org/abs/1409.3215v3},\n month = {Sep},\n primaryclass = {cs.CL},\n title = {Sequence to Sequence Learning with Neural Networks},\n year = {2014}\n}\n\n",
+    "citation_id": "ref_179"
+  },
+  "arxiv:1301.3781": {
+    "source": "arxiv",
+    "identifer": "1301.3781",
+    "standard_citation": "arxiv:1301.3781",
+    "bibtex": "@article{ref_180,\n abstract = {We propose two novel model architectures for computing continuous vector\nrepresentations of words from very large data sets. The quality of these\nrepresentations is measured in a word similarity task, and the results are\ncompared to the previously best performing techniques based on different types\nof neural networks. We observe large improvements in accuracy at much lower\ncomputational cost, i.e. it takes less than a day to learn high quality word\nvectors from a 1.6 billion words data set. Furthermore, we show that these\nvectors provide state-of-the-art performance on our test set for measuring\nsyntactic and semantic word similarities.},\n archiveprefix = {arXiv},\n author = {Tomas Mikolov and Kai Chen and Greg Corrado and Jeffrey Dean},\n eprint = {1301.3781v3},\n file = {1301.3781v3.pdf},\n link = {http://arxiv.org/abs/1301.3781v3},\n month = {Jan},\n primaryclass = {cs.CL},\n title = {Efficient Estimation of Word Representations in Vector Space},\n year = {2013}\n}\n\n",
+    "citation_id": "ref_180"
+  },
+  "doi:10.1093/bioinformatics/btt389": {
+    "source": "doi",
+    "identifer": "10.1093/bioinformatics/btt389",
+    "standard_citation": "doi:10.1093/bioinformatics/btt389",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            13
+          ]
+        ],
+        "date-time": "2017-01-13T18:50:13Z",
+        "timestamp": 1484333413073
+      },
+      "reference-count": 24,
+      "publisher": "Oxford University Press (OUP)",
+      "issue": "18",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Bioinformatics"
+      ],
+      "cited-count": 0,
+      "published-print": {
+        "date-parts": [
+          [
+            2013,
+            9,
+            15
+          ]
+        ]
+      },
+      "DOI": "10.1093/bioinformatics/btt389",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2013,
+            7,
+            5
+          ]
+        ],
+        "date-time": "2013-07-05T01:56:51Z",
+        "timestamp": 1372989411000
+      },
+      "page": "2253-2260",
+      "source": "CrossRef",
+      "title": "Scalable metagenomic taxonomy classification using a reference genome database",
+      "prefix": "http://id.crossref.org/prefix/10.1093",
+      "volume": "29",
+      "author": [
+        {
+          "given": "S. K.",
+          "family": "Ames",
+          "affiliation": []
+        },
+        {
+          "given": "D. A.",
+          "family": "Hysom",
+          "affiliation": []
+        },
+        {
+          "given": "S. N.",
+          "family": "Gardner",
+          "affiliation": []
+        },
+        {
+          "given": "G. S.",
+          "family": "Lloyd",
+          "affiliation": []
+        },
+        {
+          "given": "M. B.",
+          "family": "Gokhale",
+          "affiliation": []
+        },
+        {
+          "given": "J. E.",
+          "family": "Allen",
+          "affiliation": []
+        }
+      ],
+      "member": "http://id.crossref.org/member/286",
+      "published-online": {
+        "date-parts": [
+          [
+            2013,
+            7,
+            4
+          ]
+        ]
+      },
+      "container-title": "Bioinformatics",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            13
+          ]
+        ],
+        "date-time": "2017-01-13T17:06:19Z",
+        "timestamp": 1484327179000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2013,
+            7,
+            4
+          ]
+        ]
+      },
+      "URL": "http://dx.doi.org/10.1093/bioinformatics/btt389",
+      "issn-type": [
+        {
+          "value": "1367-4803",
+          "type": "print"
+        },
+        {
+          "value": "1460-2059",
+          "type": "electronic"
+        }
+      ],
+      "citing-count": 24,
+      "subject": [
+        "Statistics and Probability",
+        "Computational Theory and Mathematics",
+        "Biochemistry",
+        "Molecular Biology",
+        "Computational Mathematics",
+        "Computer Science Applications"
+      ],
+      "id": "ref_181"
+    },
+    "citation_id": "ref_181"
+  },
+  "url:https://www.onecodex.com/": {
+    "source": "url",
+    "identifer": "https://www.onecodex.com/",
+    "standard_citation": "url:https://www.onecodex.com/",
+    "citeproc": {
+      "URL": "https://www.onecodex.com/",
+      "type": "webpage",
+      "id": "ref_182"
+    },
+    "citation_id": "ref_182"
+  },
+  "doi:10.1371/journal.pone.0091784": {
+    "source": "doi",
+    "identifer": "10.1371/journal.pone.0091784",
+    "standard_citation": "doi:10.1371/journal.pone.0091784",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2016,
+            12,
+            29
+          ]
+        ],
+        "date-time": "2016-12-29T01:41:18Z",
+        "timestamp": 1482975678023
+      },
+      "reference-count": 19,
+      "publisher": "Public Library of Science (PLoS)",
+      "issue": "3",
+      "license": [
+        {
+          "URL": "http://creativecommons.org/licenses/by/4.0/",
+          "start": {
+            "date-parts": [
+              [
+                2014,
+                3,
+                13
+              ]
+            ],
+            "date-time": "2014-03-13T00:00:00Z",
+            "timestamp": 1394668800000
+          },
+          "delay-in-days": 0,
+          "content-version": "vor"
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "www.plosone.org"
+        ],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "PLoS ONE"
+      ],
+      "cited-count": 0,
+      "DOI": "10.1371/journal.pone.0091784",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2014,
+            3,
+            13
+          ]
+        ],
+        "date-time": "2014-03-13T21:12:48Z",
+        "timestamp": 1394745168000
+      },
+      "page": "e91784",
+      "update-policy": "http://dx.doi.org/10.1371/journal.pone.corrections_policy",
+      "source": "CrossRef",
+      "title": "WGSQuikr: Fast Whole-Genome Shotgun Metagenomic Classification",
+      "prefix": "http://id.crossref.org/prefix/10.1371",
+      "volume": "9",
+      "author": [
+        {
+          "given": "David",
+          "family": "Koslicki",
+          "affiliation": []
+        },
+        {
+          "given": "Simon",
+          "family": "Foucart",
+          "affiliation": []
+        },
+        {
+          "given": "Gail",
+          "family": "Rosen",
+          "affiliation": []
+        }
+      ],
+      "member": "http://id.crossref.org/member/340",
+      "published-online": {
+        "date-parts": [
+          [
+            2014,
+            3,
+            13
+          ]
+        ]
+      },
+      "container-title": "PLoS ONE",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2016,
+            12,
+            29
+          ]
+        ],
+        "date-time": "2016-12-29T00:10:10Z",
+        "timestamp": 1482970210000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "editor": [
+        {
+          "given": "Mark R.",
+          "family": "Liles",
+          "affiliation": []
+        }
+      ],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2014,
+            3,
+            13
+          ]
+        ]
+      },
+      "URL": "http://dx.doi.org/10.1371/journal.pone.0091784",
+      "citing-count": 19,
+      "subject": [
+        "Biochemistry, Genetics and Molecular Biology(all)",
+        "Agricultural and Biological Sciences(all)",
+        "Medicine(all)"
+      ],
+      "id": "ref_183"
+    },
+    "citation_id": "ref_183"
   }
 }

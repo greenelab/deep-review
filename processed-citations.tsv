@@ -93,7 +93,7 @@ text	citation	standard_citation	citation_id
 @pmid:21347133	pmid:21347133	pmid:21347133	ref_71
 @pmid:24159271	pmid:24159271	pmid:24159271	ref_72
 @pmid:27134610	pmid:27134610	pmid:27134610	ref_73
-@tag:Abe	url:http://ci.nii.ac.jp/naid/110006199745	url:http://ci.nii.ac.jp/naid/110006199745	ref_74
+@tag:Abe	doi:10.1101/gr.634603	doi:10.1101/gr.634603	ref_173
 @tag:AltaeTran2016_one_shot	arxiv:1611.03199	arxiv:1611.03199	ref_75
 @tag:Angermueller2016_single_methyl	doi:10.1101/055715	doi:10.1101/055715	ref_76
 @tag:Arvaniti2016_rare_subsets	doi:10.1101/046508	doi:10.1101/046508	ref_77
@@ -111,6 +111,9 @@ text	citation	standard_citation	citation_id
 @tag:CudNN	arxiv:1410.0759	arxiv:1410.0759	ref_88
 @tag:Dean2012_nips_downpour	url:http://research.google.com/archive/large_deep_networks_nips2012.html	url:http://research.google.com/archive/large_deep_networks_nips2012.html	ref_89
 @tag:Ding	doi:10.1186/s12859-015-0753-3	doi:10.1186/s12859-015-0753-3	ref_90
+@tag:Ditzler	doi:10.1186/s12859-015-0793-8	doi:10.1186/s12859-015-0793-8	ref_174
+@tag:Ditzler2	doi:10.1109/TNNLS.2014.2320415	doi:10.1109/tnnls.2014.2320415	ref_175
+@tag:Ditzler3	doi:10.1109/TNB.2015.2461219	doi:10.1109/tnb.2015.2461219	ref_176
 @tag:Dogwild	url:https://papers.nips.cc/paper/5717-taming-the-wild-a-unified-analysis-of-hogwild-style-algorithms.pdf	url:https://papers.nips.cc/paper/5717-taming-the-wild-a-unified-analysis-of-hogwild-style-algorithms.pdf	ref_91
 @tag:Edwards2015_growing_pains	doi:10.1145/2771283	doi:10.1145/2771283	ref_92
 @tag:Elephas	url:https://github.com/maxpumperla/elephas	url:https://github.com/maxpumperla/elephas	ref_93
@@ -126,6 +129,7 @@ text	citation	standard_citation	citation_id
 @tag:Hochreiter	doi:10.1093/bioinformatics/btm247	doi:10.1093/bioinformatics/btm247	ref_102
 @tag:Hoff	doi:10.1093/nar/gkp327	doi:10.1093/nar/gkp327	ref_103
 @tag:Hubara2016_qnn	arxiv:1609.07061	arxiv:1609.07061	ref_104
+@tag:Karlin	doi:10.1128/jb.179.12.3899-3913.1997	doi:10.1128/jb.179.12.3899-3913.1997	ref_177
 @tag:Kearnes2016_admet	arxiv:1606.08793	arxiv:1606.08793	ref_105
 @tag:Keras	url:https://github.com/fchollet/keras	url:https://github.com/fchollet/keras	ref_106
 @tag:Knights	doi:10.1111/j.1574-6976.2010.00251.x	doi:10.1111/j.1574-6976.2010.00251.x	ref_107
@@ -138,6 +142,7 @@ text	citation	standard_citation	citation_id
 @tag:Mapreduce	doi:10.1145/1327452.1327492	doi:10.1145/1327452.1327492	ref_113
 @tag:McHardy	doi:10.1038/nmeth976	doi:10.1038/nmeth976	ref_114
 @tag:Meng2016_mllib	arxiv:1505.06807	arxiv:1505.06807	ref_115
+@tag:Metaphlan	doi:10.1038/nmeth.2066	doi:10.1038/nmeth.2066	ref_178
 @tag:Moritz2015_sparknet	arxiv:1511.06051	arxiv:1511.06051	ref_116
 @tag:Mrzelj	url:https://repozitorij.uni-lj.si/IzpisGradiva.php?id=85515	url:https://repozitorij.uni-lj.si/IzpisGradiva.php?id=85515	ref_117
 @tag:RAD2010_view_cc	doi:10.1145/1721654.1721672	doi:10.1145/1721654.1721672	ref_118
@@ -156,6 +161,7 @@ text	citation	standard_citation	citation_id
 @tag:Stratnikov	doi:10.1186/2049-2618-1-11	doi:10.1186/2049-2618-1-11	ref_129
 @tag:Su2015_gpu	arxiv:1507.01239	arxiv:1507.01239	ref_130
 @tag:Sun2016_ensemble	arxiv:1606.00575	arxiv:1606.00575	ref_131
+@tag:Sutskever	arxiv:1409.3215	arxiv:1409.3215	ref_179
 @tag:Swamidass2009_irv	doi:10.1021/ci8004379	doi:10.1021/ci8004379	ref_132
 @tag:TAC-ELM	doi:10.1142/S0219720012500151	doi:10.1142/s0219720012500151	ref_133
 @tag:Tan2014_psb	doi:10.1142/9789814644730_0014	doi:10.1142/9789814644730_0014	ref_62
@@ -166,9 +172,13 @@ text	citation	standard_citation	citation_id
 @tag:Vervier	doi:10.1093/bioinformatics/btv683	doi:10.1093/bioinformatics/btv683	ref_136
 @tag:Wallach2015_atom_net	arxiv:1510.02855	arxiv:1510.02855	ref_3
 @tag:Wang2016_protein_contact	doi:10.1101/073239	doi:10.1101/073239	ref_49
+@tag:Word2Vec	arxiv:1301.3781	arxiv:1301.3781	ref_180
 @tag:Yasushi2016_cgbvs_dnn	doi:10.1002/minf.201600045	doi:10.1002/minf.201600045	ref_137
 @tag:blast	doi:10.1016/S0022-2836(05)80360-2	doi:10.1016/s0022-2836(05)80360-2	ref_138
+@tag:lmat	doi:10.1093/bioinformatics/btt389	doi:10.1093/bioinformatics/btt389	ref_181
 @tag:nbc	doi:10.1093/bioinformatics/btq619	doi:10.1093/bioinformatics/btq619	ref_139
+@tag:onecodex	url:https://www.onecodex.com/	url:https://www.onecodex.com/	ref_182
+@tag:wgsquikr	doi:10.1371/journal.pone.0091784	doi:10.1371/journal.pone.0091784	ref_183
 @tag:yok	doi:10.1186/1471-2105-12-20	doi:10.1186/1471-2105-12-20	ref_140
 @url:http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf	url:http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf	url:http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf	ref_141
 @url:http://research.google.com/archive/unsupervised_icml2012.html	url:http://research.google.com/archive/unsupervised_icml2012.html	url:http://research.google.com/archive/unsupervised_icml2012.html	ref_142

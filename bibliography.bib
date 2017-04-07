@@ -1001,3 +1001,59 @@ Protein Secondary Structure Prediction},
  year = {2014}
 }
 
+
+@article{ref_179,
+ abstract = {Deep Neural Networks (DNNs) are powerful models that have achieved excellent
+performance on difficult learning tasks. Although DNNs work well whenever large
+labeled training sets are available, they cannot be used to map sequences to
+sequences. In this paper, we present a general end-to-end approach to sequence
+learning that makes minimal assumptions on the sequence structure. Our method
+uses a multilayered Long Short-Term Memory (LSTM) to map the input sequence to
+a vector of a fixed dimensionality, and then another deep LSTM to decode the
+target sequence from the vector. Our main result is that on an English to
+French translation task from the WMT'14 dataset, the translations produced by
+the LSTM achieve a BLEU score of 34.8 on the entire test set, where the LSTM's
+BLEU score was penalized on out-of-vocabulary words. Additionally, the LSTM did
+not have difficulty on long sentences. For comparison, a phrase-based SMT
+system achieves a BLEU score of 33.3 on the same dataset. When we used the LSTM
+to rerank the 1000 hypotheses produced by the aforementioned SMT system, its
+BLEU score increases to 36.5, which is close to the previous best result on
+this task. The LSTM also learned sensible phrase and sentence representations
+that are sensitive to word order and are relatively invariant to the active and
+the passive voice. Finally, we found that reversing the order of the words in
+all source sentences (but not target sentences) improved the LSTM's performance
+markedly, because doing so introduced many short term dependencies between the
+source and the target sentence which made the optimization problem easier.},
+ archiveprefix = {arXiv},
+ author = {Ilya Sutskever and Oriol Vinyals and Quoc V. Le},
+ eprint = {1409.3215v3},
+ file = {1409.3215v3.pdf},
+ link = {http://arxiv.org/abs/1409.3215v3},
+ month = {Sep},
+ primaryclass = {cs.CL},
+ title = {Sequence to Sequence Learning with Neural Networks},
+ year = {2014}
+}
+
+
+@article{ref_180,
+ abstract = {We propose two novel model architectures for computing continuous vector
+representations of words from very large data sets. The quality of these
+representations is measured in a word similarity task, and the results are
+compared to the previously best performing techniques based on different types
+of neural networks. We observe large improvements in accuracy at much lower
+computational cost, i.e. it takes less than a day to learn high quality word
+vectors from a 1.6 billion words data set. Furthermore, we show that these
+vectors provide state-of-the-art performance on our test set for measuring
+syntactic and semantic word similarities.},
+ archiveprefix = {arXiv},
+ author = {Tomas Mikolov and Kai Chen and Greg Corrado and Jeffrey Dean},
+ eprint = {1301.3781v3},
+ file = {1301.3781v3.pdf},
+ link = {http://arxiv.org/abs/1301.3781v3},
+ month = {Jan},
+ primaryclass = {cs.CL},
+ title = {Efficient Estimation of Word Representations in Vector Space},
+ year = {2013}
+}
+
