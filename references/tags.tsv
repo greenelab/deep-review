@@ -12,6 +12,7 @@ Bergstra2012_random	url:http://dl.acm.org/citation.cfm?id=2188395
 Boza	arxiv:1603.09195
 Caruana2014_need	arxiv:1312.6184
 Chen2015_hashing	arxiv:1504.04788
+Chen2016_exprs_yeast	doi:10.1186/s12859-015-0852-1
 Chen2016_gene_expr	doi:10.1093/bioinformatics/btw074
 Chen2015_trans_species	doi:10.1093/bioinformatics/btv315
 Coates2013_cots_hpc	url:http://www.jmlr.org/proceedings/papers/v28/coates13.html
@@ -30,6 +31,7 @@ Faruqi	url:http://alifar76.github.io/sklearn-metrics/
 Gerstein2016_scaling	doi:10.1186/s13059-016-0917-0
 Gomezb2016_automatic	arxiv:1610.02415
 Graphlab	doi:10.14778/2212351.2212354
+Gupta2015_exprs_yeast	doi:10.1101/031906
 Gupta2015_prec	arxiv:1502.02551
 Guetterman	url:http://www.fasebj.org/content/30/1_Supplement/406.3
 Hadjas2015_cc	arxiv:1504.04343
@@ -50,6 +52,7 @@ Krizhevsky2014_weird_trick	arxiv:1404.5997
 Lacey2016_dl_fpga	arxiv:1602.04283
 Li2014_minibatch	doi:10.1145/2623330.2623612
 Li2016_variation	doi:10.1126/science.aad9417
+Liang2015_exprs_cancer	doi:10.1109/TCBB.2014.2377729
 Liu	doi:10.1371/journal.pone.0097958
 lmat	doi:10.1093/bioinformatics/btt389
 Lusci2015_irv	doi:10.1186/s13321-015-0110-6
@@ -79,6 +82,7 @@ Scotti2016_missplicing	doi:10.1038/nrg.2015.3
 Segata	doi:10.1371/journal.pcbi.1004977
 Seide2014_parallel	doi:10.1109/ICASSP.2014.6853593
 Shaham2016_batch_effects	arxiv:1610.04181
+Singh2016_deepchrome	arxiv:1607.02078
 Sonderby	arxiv:1503.01919
 Soueidan	doi:10.1515/metgen-2016-0001
 Spark	doi:10.1145/2934664
@@ -87,6 +91,9 @@ Stratnikov	doi:10.1186/2049-2618-1-11
 Su2015_gpu	arxiv:1507.01239
 Sun2016_ensemble	arxiv:1606.00575
 Swamidass2009_irv	doi:10.1021/ci8004379
+Tan2014_psb	doi:10.1142/9789814644730_0014
+Tan2015_adage	doi:10.1128/mSystems.00025-15
+Tan2016_eadage	doi:10.1101/078659
 TAC-ELM	doi:10.1142/S0219720012500151
 TensorFlow	url:http://download.tensorflow.org/paper/whitepaper2015.pdf
 Unterthiner2014_screening	url:http://www.bioinf.at/publications/2014/NIPS2014a.pdf
