@@ -28,8 +28,8 @@ human-level performance is irrelevant.*
 *Most of our examples pertain to the Study papers.  Does this discussion
 belong there or can we generalize it and keep it here?  Specific points would
 include the dangers of over-interpreting hidden units, pros/cons of specific
-techniques (see issues), and recommendations.  Some other reviews have addressed
-this in part as well.*
+techniques (see issues), and recommendations.  LIME and DeepLIFT are specific
+strategies.  Some other reviews have addressed this in part as well.*
 
 ### Data limitations
 
