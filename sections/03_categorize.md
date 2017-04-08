@@ -206,7 +206,7 @@ chart review. This allows researchers to assign "true" labels, i.e. those that
 match our best available knowledge. Depending on the application, sometimes the
 features constructed by algorithms also need to be manually validated and
 interpreted by clinicians. This can be time consuming and expensive
-[doi:10.1016/j.ijmedinf.2016.09.014]. Because of these costs, much of this
+[@doi:10.1016/j.ijmedinf.2016.09.014]. Because of these costs, much of this
 research, including the work cited in this review, skips the process of expert
 review. Clinicians' skepticism for research without expert review may greatly
 dampen their enthusiasm for the work and consequently reduce its impact. To
