@@ -188,7 +188,7 @@ disease, which will lead to novel diagnostics and therapeutics.
 Transcription Factor and RNA-binding proteins are key components for gene
 regulation, making them very important to understand for higher level
 biological processes. While high-throughput sequencing techniques such as
-Chromatin immunoprecipitation and massively parallel DNA
+chromatin immunoprecipitation and massively parallel DNA
 sequencing (ChIP-seq) have been able to accurately identify binding regions
 for DNA and RNA proteins, these experiments are both time consuming and
 expensive. In addition, the sequencing methods do not provide any sort of
@@ -198,9 +198,9 @@ and understand these binding regions de novo from sequences.
 
 #### Transcription Factors
 
-Transcription Factors (TFs) are regulatory proteins which bind to certain
-locations on a DNA sequence and controls the rate of genetic information
-transcription. ChIP-seq technologies are able to identify highly likely binding
+Transcription Factors (TFs) are regulatory proteins that bind to certain
+locations on a DNA sequence and control the rate of mRNA
+production. ChIP-seq and related technologies are able to identify highly likely binding
 sites for a certain TF, and databases such as ENCODE have provided ChIP-seq
 data for hundreds of different TFs across many laboratories. However, ChIP-seq
 experiments are expensive and time consuming. Since the data that scientists
@@ -217,9 +217,9 @@ matching methods [@tag:Horton1992_assessment]. Later, SVM techniques
 outperformed the generative methods by using k-mer features
 [@tag:Ghandi2014_enhanced @tag:Setty2015_seqgl], but string kernel based SVM
 systems are limited by expensive computational cost proportional to the number
-of training and testing sequences. Most recently,
-[@tag:Alipanahi2015_predicting] showed that a convolutional neural network
-models could achieve state of the art results on the TFBS task, are scalable
+of training and testing sequences. More recently,
+[@tag:Alipanahi2015_predicting] showed that convolutional neural network
+models could achieve state of the art results on the TFBS task and are scalable
 to a large number of genomic sequences. [@tag:Lanchantin2016_motif] introduced
 several new convolutional and recurrent neural network models for predicting
 TFBSs, but it remains unclear which neural architectures work best for all
