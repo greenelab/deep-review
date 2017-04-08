@@ -294,11 +294,65 @@ unsupervised uses.`
 
 ### Single-cell
 
-*There are not many neural network papers in this area (yet), unless we count
-imaging applications.  But there is still plenty to discuss.  The existing
-methods [@tag:Arvaniti2016_rare_subsets @tag:Angermueller2016_single_methyl]
-use interesting network architectures to approach single-cell data.
-[@tag:Shaham2016_batch_effects] could fit here.*
+Single-cell methods are generating extreme excitement as scientists recognize
+the vast heterogeneity within unicellular species and between cells of the same
+tissue type in the same organism [@tag:Gawad2016_singlecell]. For instance,
+tumors harbor extensive heterogeneity that can give rise to metastatic
+subclones, and adjacent neurons in the brain can contain different somatic
+variants due to random mutation [@tag:Lodato2015_neurons]. Understanding
+single-cell diversity in all its dimensions — genetic, epigenetic,
+transcriptomic, proteomic, morphologic, and metabolic — is key if precision
+medicine is to be targeted not only to a specific individual, but also to
+specific pathological subsets of cells.
+
+Single-cell methods also promise to uncover a wealth of new biological
+knowledge. Temporality is often difficult to study in biology due to the speed
+at which biological reactions occur. Luckily, a sufficiently large population of
+single cells will have enough representative “snapshots” to recreate timelines
+of biological processes such as mitosis. If tracking processes over time is not
+the limiting factor, single cell techniques can provide maximal resolution
+compared to those that average across all cells in bulk tissue: this enables the
+study of transcriptional bursting with single-cell FISH or the heterogeneity of
+epigenetic patterns with single-cell Hi-C, ATAC-seq, or ChIP-seq
+[@tag:Liu2016_sc_transcriptome @tag:Vera2016_sc_analysis]. Finally, examining
+populations of single cells can reveal biologically meaningful subsets of cells
+as well as their underlying gene regulatory networks
+[@tag:Arvaniti2016_rare_subsets @tag:Gaublomme2015_th17].
+
+However, large challenges exist in studying single cells. Relatively few cells
+can be assayed at once using current droplet, imaging, or microwell
+technologies, and low-abundance molecules or modifications may not be detected
+by chance in a phenomenon known as dropout. To solve this problem, several
+groups have trained deep neural networks that impute TF binding, methylation,
+and gene expression at any genomic site from surrounding signal and underlying
+DNA sequence [@tag:Angermueller2016_single_methyl @tag:Qin2017_onehot]. Yet
+another challenge is that these noisy measurements are often made in high
+dimensions, as in transcriptomic or SNP calling studies where there can be a
+thousand cells and ten thousand measurements. Classic dimensionality reduction
+methods such as feature selection or principal component analysis fail to
+capture important interactions between variables. On the other hand,
+autoencoders offer a potential solution: a deep neural network is trained to
+squeeze an input through a small feature space that reproduces the input as
+closely as possible, and the representation in this small feature space is used
+[@tag:Hinton2006_autoencoders]. An advantage of autoencoders is that each
+dimension of this feature space may reveal a “hidden” axis along which cells can
+vary in a biologically meaningful way. Thus, deep neural networks have emerged
+as powerful tools to improve the signal to noise ratio of single-cell data.
+
+The next several years will likely deliver even more creative applications of
+deep learning to single-cell biology. Lineage tracing could be revolutionized by
+using autoencoders to reduce the feature space of transcriptomic or variant data
+followed by algorithms to learn optimal cell differentiation trajectories
+[@tag:Qiu2017_graph_embedding], or by feeding cell morphology and movement into
+neural networks [@tag:Buggenthin2017_imaged_lineage]. Reinforcement learning
+algorithms could be trained on the evolutionary dynamics of cancer cells or
+bacterial cells undergoing selection pressure and reveal whether patterns of
+adaptation are random or deterministic, allowing us to develop therapeutic
+strategies that forestall resistance. As sequencing and profiling become cheaper
+and even higher-throughput, analyzing hundreds of thousands or millions of cells
+at a time will become reality.
+
+< still missing a concluding sentence >
 
 ### Metagenomics
 

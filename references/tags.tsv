@@ -9,6 +9,7 @@ Bengio2015_prec	arxiv:1412.7024
 Bergstra2011_hyper	url:https://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimization.pdf
 Bergstra2012_random	url:http://dl.acm.org/citation.cfm?id=2188395
 Boza	arxiv:1603.09195
+Buggenthin2017_imaged_lineage	doi:10.1038/nmeth.4182
 Caruana2014_need	arxiv:1312.6184
 Chen2015_hashing	arxiv:1504.04788
 Chen2016_exprs_yeast	doi:10.1186/s12859-015-0852-1
@@ -27,6 +28,8 @@ Duvenaud2015_graph_conv	url:http://papers.nips.cc/paper/5954-convolutional-netwo
 Edwards2015_growing_pains	doi:10.1145/2771283
 Elephas	url:https://github.com/maxpumperla/elephas
 Faruqi	url:http://alifar76.github.io/sklearn-metrics/
+Gaublomme2015_th17	doi:10.1016/j.cell.2015.11.009
+Gawad2016_singlecell	doi:10.1038/nrg.2015.16
 Gerstein2016_scaling	doi:10.1186/s13059-016-0917-0
 Gomezb2016_automatic	arxiv:1610.02415
 Graphlab	doi:10.14778/2212351.2212354
@@ -34,6 +37,7 @@ Gupta2015_exprs_yeast	doi:10.1101/031906
 Gupta2015_prec	arxiv:1502.02551
 Guetterman	url:http://www.fasebj.org/content/30/1_Supplement/406.3
 Hadjas2015_cc	arxiv:1504.04343
+Hinton2006_autoencoders	 doi:10.1126/science.1127647
 Hinton2015_dark_knowledge	arxiv:1503.02531
 Hinton2015_dk	arxiv:1503.02531v1
 Hochreiter	doi:10.1093/bioinformatics/btm247
@@ -51,6 +55,8 @@ Lacey2016_dl_fpga	arxiv:1602.04283
 Li2014_minibatch	doi:10.1145/2623330.2623612
 Liang2015_exprs_cancer	doi:10.1109/TCBB.2014.2377729
 Liu	doi:10.1371/journal.pone.0097958
+Liu2016_sc_transcriptome	doi:10.12688/f1000research.7223.1
+Lodato2015_neurons	doi:10.1126/science.aab1785
 lmat	doi:10.1093/bioinformatics/btt389
 Lusci2015_irv	doi:10.1186/s13321-015-0110-6
 Ma2015_qsar_merck	doi:10.1021/ci500747n
@@ -67,6 +73,8 @@ NIH2016_genome_cost	url:https://www.genome.gov/27565109/the-cost-of-sequencing-a
 onecodex	url:https://www.onecodex.com/
 Pereira2016_docking	doi:10.1021/acs.jcim.6b00355
 Phymm	doi:10.1038/nmeth.1358
+Qin2017_onehot	doi:10.1371/journal.pcbi.1005403
+Qiu2017_graph_embedding	doi:10.1101/110668
 RAD2010_view_cc	doi:10.1145/1721654.1721672
 Ramsundar2015_multitask_drug	arxiv:1502.02072
 Raina2009_gpu	doi:10.1145/1553374.1553486
@@ -94,6 +102,7 @@ TAC-ELM	doi:10.1142/S0219720012500151
 TensorFlow	url:http://download.tensorflow.org/paper/whitepaper2015.pdf
 Unterthiner2014_screening	url:http://www.bioinf.at/publications/2014/NIPS2014a.pdf
 Vanhoucke2011_cpu	url:https://research.google.com/pubs/pub37631.html
+Vera2016_sc_analysis	doi:10.1146/annurev-genet-120215-034854
 Vervier	doi:10.1093/bioinformatics/btv683
 Wallach2015_atom_net	arxiv:1510.02855
 Wang2016_protein_contact	doi:10.1101/073239
