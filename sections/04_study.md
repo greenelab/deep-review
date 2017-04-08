@@ -370,65 +370,70 @@ unsupervised uses.`
 
 ### Single-cell
 
-Single-cell methods are generating extreme excitement as scientists recognize
+Single-cell methods are generating extreme excitement as biologists recognize
 the vast heterogeneity within unicellular species and between cells of the same
 tissue type in the same organism [@tag:Gawad2016_singlecell]. For instance,
-tumors harbor extensive heterogeneity that can give rise to metastatic
-subclones, and adjacent neurons in the brain can contain different somatic
-variants due to random mutation [@tag:Lodato2015_neurons]. Understanding
-single-cell diversity in all its dimensions — genetic, epigenetic,
-transcriptomic, proteomic, morphologic, and metabolic — is key if precision
-medicine is to be targeted not only to a specific individual, but also to
-specific pathological subsets of cells.
-
+tumor cells and neurons can both harbor extensive somatic variation
+[@tag:Lodato2015_neurons]. Understanding single-cell diversity in all its
+dimensions — genetic, epigenetic, transcriptomic, proteomic, morphologic, and
+metabolic — is key if precision medicine is to be targeted not only to a
+specific individual, but also to specific pathological subsets of cells.
 Single-cell methods also promise to uncover a wealth of new biological
-knowledge. Temporality is often difficult to study in biology due to the speed
-at which biological reactions occur. Luckily, a sufficiently large population of
-single cells will have enough representative “snapshots” to recreate timelines
-of biological processes such as mitosis. If tracking processes over time is not
-the limiting factor, single cell techniques can provide maximal resolution
-compared to those that average across all cells in bulk tissue: this enables the
-study of transcriptional bursting with single-cell FISH or the heterogeneity of
-epigenetic patterns with single-cell Hi-C, ATAC-seq, or ChIP-seq
-[@tag:Liu2016_sc_transcriptome @tag:Vera2016_sc_analysis]. Finally, examining
-populations of single cells can reveal biologically meaningful subsets of cells
-as well as their underlying gene regulatory networks
-[@tag:Arvaniti2016_rare_subsets @tag:Gaublomme2015_th17].
+knowledge. A sufficiently large population of single cells will have enough
+representative “snapshots” to recreate timelines of rapid biological processes.
+If tracking processes over time is not the limiting factor, single cell
+techniques can provide maximal resolution compared to averaging across all cells
+in bulk tissue, enabling the study of transcriptional bursting with single-cell
+FISH or the heterogeneity of epigenetic patterns with single-cell Hi-C or
+ATAC-seq [@tag:Liu2016_sc_transcriptome @tag:Vera2016_sc_analysis].
 
 However, large challenges exist in studying single cells. Relatively few cells
 can be assayed at once using current droplet, imaging, or microwell
 technologies, and low-abundance molecules or modifications may not be detected
-by chance in a phenomenon known as dropout. To solve this problem, several
-groups have trained deep neural networks that impute TF binding, methylation,
-and gene expression at any genomic site from surrounding signal and underlying
-DNA sequence [@tag:Angermueller2016_single_methyl @tag:Qin2017_onehot]. Yet
-another challenge is that these noisy measurements are often made in high
-dimensions, as in transcriptomic or SNP calling studies where there can be a
-thousand cells and ten thousand measurements. Classic dimensionality reduction
-methods such as feature selection or principal component analysis fail to
-capture important interactions between variables. On the other hand,
-autoencoders offer a potential solution: a deep neural network is trained to
-squeeze an input through a small feature space that reproduces the input as
-closely as possible, and the representation in this small feature space is used
-[@tag:Hinton2006_autoencoders]. An advantage of autoencoders is that each
-dimension of this feature space may reveal a “hidden” axis along which cells can
-vary in a biologically meaningful way. Thus, deep neural networks have emerged
-as powerful tools to improve the signal to noise ratio of single-cell data.
+by chance in a phenomenon known as dropout. To solve this problem, Angermueller
+et al. [@tag:Angermueller2016_single_methyl] trained a neural network to predict
+the presence or absence of methylation of a specific CpG site in single cells
+based on surrounding methylation signal and underlying DNA sequence, achieving
+several percentage points of improvement compared to random forests or deep
+networks trained only on CpG or sequence information. Similar deep learning
+methods have been applied to impute low-resolution ChIP-seq signal from bulk
+tissue with great success, and they could easily be adapted to single cell data
+[@tag:Qin2017_onehot @tag:Koh2016_denoising].
 
-The next several years will likely deliver even more creative applications of
-deep learning to single-cell biology. Lineage tracing could be revolutionized by
-using autoencoders to reduce the feature space of transcriptomic or variant data
-followed by algorithms to learn optimal cell differentiation trajectories
-[@tag:Qiu2017_graph_embedding], or by feeding cell morphology and movement into
-neural networks [@tag:Buggenthin2017_imaged_lineage]. Reinforcement learning
-algorithms could be trained on the evolutionary dynamics of cancer cells or
-bacterial cells undergoing selection pressure and reveal whether patterns of
-adaptation are random or deterministic, allowing us to develop therapeutic
-strategies that forestall resistance. As sequencing and profiling become cheaper
-and even higher-throughput, analyzing hundreds of thousands or millions of cells
-at a time will become reality.
+Examining populations of single cells can reveal biologically meaningful subsets
+of cells as well as their underlying gene regulatory networks
+[@tag:Gaublomme2015_th17]. Unfortunately, machine learning generally struggles
+with unbalanced data — when there are many more inputs of class 1 than class 2 —
+because prediction accuracy is usually evaluated over the entire dataset. To
+tackle this challenge, Arvaniti et al. [@tag:Arvaniti2016_rare_subsets]
+classified healthy and cancer cells expressing 25 markers by using the most
+discriminative filters from a CNN trained on the data as a linear classifier.
+They achieved an impressive precision of 50% to 90% with 80% recall on cells
+where the subset percentage ranged from 0.1 to 1%, which significantly
+outperformed logistic regression and distance-based outlier detection methods.
+However, they did not benchmark against random forests, which tend to be better
+with unbalanced data, or against the neural network itself, and their data was
+fairly low dimensional. Future work will be needed to establish the utility of
+deep learning in cell subset identification, but the stunning improvements in
+image classification over the past 5 years [@tag:He2015_images] suggest that
+this goal will be achievable.
 
-< still missing a concluding sentence >
+The sheer quantity of “omic” information that can be obtained from each cell, as
+well as the number of cells in each dataset, uniquely position single-cell data 
+to benefit from deep learning. In the future, lineage tracing could be
+revolutionized by using autoencoders to reduce the feature space of
+transcriptomic or variant data followed by algorithms to learn optimal cell
+differentiation trajectories [@tag:Qiu2017_graph_embedding], or by feeding cell
+morphology and movement into neural networks
+[@tag:Buggenthin2017_imaged_lineage]. Reinforcement learning algorithms
+[@tag:Silver2016_alphago] could be trained on the evolutionary dynamics of
+cancer cells or bacterial cells undergoing selection pressure and reveal whether
+patterns of adaptation are random or deterministic, allowing us to develop
+therapeutic strategies that forestall resistance. It will be exciting to see the
+creative applications of deep learning to single-cell biology that emerge over
+the next few years.
+
+TODO: https://github.com/greenelab/deep-review/issues/153
 
 ### Metagenomics
 
