@@ -15,7 +15,7 @@ respect to both research and practice. A recent comparison of genomics with
 social media, online videos and other data-intensive scientific disciplines
 suggested that the field of genomics alone would equal or surpass other fields
 in data generation and analysis within the next decade
-[@ref_65]. These data present new opportunities, but
+[@ref_80]. These data present new opportunities, but
 also new challenges. The data volume and complexity both indicate that
 automated algorithms will be needed to extract
 meaningful patterns and provide actionable knowledge allowing us to better
@@ -24,13 +24,13 @@ critical environments.
 
 Concurrent with this explosive growth in biomedical data, a new enthusiasm for a
 class of machine learning algorithms, known as deep learning, is revolutionizing
-domains from image search to the game of Go [@ref_146]. As
+domains from image search to the game of Go [@ref_40]. As
 recently applied to image analysis problems, these architectures readily surpass
 previous best-in-class results, and computer scientists are now building
 many-layered neural networks from collections of millions of images. In a famous
 and early example, scientists from Google demonstrated that a neural network
 could learn to identify cats simply by watching online videos
-[@ref_142].
+[@ref_186].
 
 What if, more generally, deep learning could solve the challenges
 presented by the growth of data in biomedicine? Could these algorithms
@@ -52,18 +52,18 @@ another set of weights to produce the output **TODO: we probably need a figure
 here - I see no way that we don't include this type of description in our paper,
 despite the fact that it's been done tons of times before. - I'm really partial
 to this nature review's explanation about making non-linear problems linear -
-figure 1 [@ref_33]** These neural networks are trained by
+figure 1 [@ref_39]** These neural networks are trained by
 identifying weights that produce a desired output from some specific input.
 
 Neural networks can also be stacked. The outputs from one network can be used as
 inputs to another. This process produces a stacked, also known as a multi-layer,
 neural network. The multi-layer neural network techniques that underlie deep
 learning have a long history. Multi-layer methods have been discussed in the
-literature for more than five decades [@ref_55]. Given
+literature for more than five decades [@ref_69]. Given
 this context, it's challenging to consider "deep learning" as a new advance,
 though the term has only become widespread to describe analysis methods in the
 last decade. Much of the early history of neural networks has been extensively
-covered in a recent review [@ref_29]. For the purposes
+covered in a recent review [@ref_35]. For the purposes
 of this review, we identify deep learning approaches as those that use
 multi-layer neural networks to construct complex features.
 
@@ -87,7 +87,7 @@ to maintain or restore health? We chose a high bar for "transform." Andrew
 Grove, the former CEO of Intel, coined the term Strategic Inflection Point to
 refer to a change in technologies or environment that requires a business to be
 fundamentally reshaped
-[@ref_147]. Here, we
+[@ref_188]. Here, we
 ought to identify whether deep learning was an innovation that would induce a
 strategic inflection point on the practice of biology or medicine. We considered
 this with an eye towards the concept of precision medicine.
@@ -95,7 +95,7 @@ this with an eye towards the concept of precision medicine.
 There are numerous examples where deep learning
 has been applied to biological problems and produced somewhat improved results,
 and there are numerous reviews that have focused on general applications of deep
-learning in biology [@ref_34; @ref_14; @ref_70; @ref_31; @ref_68; @ref_40]. We sought cases where deep
+learning in biology [@ref_41; @ref_16; @ref_89; @ref_37; @ref_87; @ref_49]. We sought cases where deep
 learning was enabling researchers to solve challenges that were previously
 considered infeasible, or if it made difficult, tedious, and non-routine
 analyses routine.
@@ -118,17 +118,17 @@ receptors or genes' expression. One example is the PAM50 approach
 to classifying breast cancer where the expression of 50 marker
 genes divides breast cancer patients into four subtypes.
 Significant heterogeneity still remains within these four subtypes
-[@ref_64; @ref_63]. Given the
+[@ref_79; @ref_78]. Given the
 increasing wealth of molecular data available, a more
 comprehensive subtyping seems possible.
 
 Several studies have used deep learning methods in order to better categorize
 breast cancer patients. For example, Tan et al. applied denoising
 autoencoders (DA), an unsupervised approach, in order to cluster breast
-cancer patients [@ref_62]. Ciresan et al. utilized
+cancer patients [@ref_77]. Ciresan et al. utilized
 convolutional neural networks (CNN) to count mitotic divisions in
 histological images; a feature that is highly correlated with disease
-outcome [@ref_20]. Despite these recent advances, a
+outcome [@ref_25]. Despite these recent advances, a
 number of challenges exist in this area of research, such as the integration
 of disparate types of data, including electronic health records (EHR),
 imaging and histology data, and molecular omics data.
@@ -142,14 +142,14 @@ classic biological problem where machine learning has been extensively
 applied is the prediction of molecular targets. Recent advances using deep
 learning have shown higher accuracy in determining molecular targets. For
 example, Lee et al. used deep recurrent neural networks (RNN) to predict gene
-targets of micro-RNAs [@ref_56]. Wang et al. used a
+targets of micro-RNAs [@ref_71]. Wang et al. used a
 residual CNN to predict protein-protein contact on a genome-wide scale
-[@ref_49]. Other biological questions that have been investigated
+[@ref_63]. Other biological questions that have been investigated
 include the prediction of protein secondary structure based on sequence data
-[@ref_57; @ref_37],
+[@ref_70; @ref_45],
 recognition of functional genomic elements such as enhancers and
-promoters [@ref_46; @ref_15; @ref_44], predicting the deleterious effects of nucleotide
-polymorphisms [@ref_42], etc.
+promoters [@ref_60; @ref_19; @ref_58], predicting the deleterious effects of nucleotide
+polymorphisms [@ref_54], etc.
 
 #### Patient Treatment
 
@@ -160,15 +160,15 @@ treatment outcome, and guide future development of new therapies.
 Specifically, effort in this area aims to identify drug targets, identify
 drug interactions or predict drug response. One recent approach for
 predicting drug response is the use of protein structure to predict drug
-interactions and drug bioactivity through CNN [@ref_3]. Since CNNs
+interactions and drug bioactivity through CNN [@ref_4]. Since CNNs
 leverage spatial relationships within the data, this particular deep learning
 framework is well suited to the problem. Drug discovery and drug
 "repurposing" are two other hot topics. Aliper et al. used transcriptomic
 data to predict which drugs might be repurposed for other diseases through
 deep fully connected neural networks
-[@ref_32]. In a similar vein, Wang et al. used
+[@ref_38]. In a similar vein, Wang et al. used
 restricted boltzman machines (RBM) to predict drug molecular targets
-[@ref_41].
+[@ref_53].
 
 
 ## Does deep learning create a strategic inflection point in how we categorize individuals with respect to health and disease?
@@ -208,12 +208,12 @@ of 1-2 paragraphs in our context.*
 One of the general areas where deep learning methods have had substantial
 success has been in image analysis. Applications in areas of medicine that use
 imaging extensively are also emerging. Mammography has been one area with
-numerous contributions [@ref_18; @ref_16; @ref_54; @ref_53]. In
+numerous contributions [@ref_23; @ref_20; @ref_68; @ref_67]. In
 all of this work, the researchers must work around a specific challenge - the
 limited number of well annotated training images. To expand the number and
 diversity of images, the researchers have employed approaches where they employ
-adversarial examples [@ref_53] or first train towards human-created
-features before subsequent fine tuning [@ref_18]. The
+adversarial examples [@ref_67] or first train towards human-created
+features before subsequent fine tuning [@ref_23]. The
 presence of a large bank of well-annotated mammography images would aid in the
 application of deep neural networks to this area. Though this strategy has not
 yet been employed in this domain, large collections of unlabeled images might
@@ -221,15 +221,15 @@ first be used in an unsupervised context to construct high-quality feature
 detectors. Then the small number of labeled examples could be used for
 subsequent training. Similar strategies have been employed for EHR data where
 high-quality labeled examples are also difficult to obtain
-[@ref_47].
+[@ref_61].
 
 In addition to radiographic images, histology slides are also being analyzed
 with deep learning approaches. Ciresan et al.
-[@ref_20] developed one of the earliest examples,
+[@ref_25] developed one of the earliest examples,
 winning the 2012 International Conference on Pattern Recognition's Contest on
 Mitosis Detection while achieving human competitive accuracy. Their approach
 uses what has become a standard convolutional neural network architecture
-trained on public data.  In more recent work,  Wang et al.[@ref_6]
+trained on public data.  In more recent work,  Wang et al.[@ref_7]
 analyzed stained slides to identify cancers  within slides of lymph node slices.
 The approach provided a probability map for  each slide. On this task a
 pathologist has about a 3% error rate. The  pathologist did not produce any
@@ -244,7 +244,7 @@ human expert may help overcome some of the  challenges presented by data
 limitations.
 
 One source of training examples with rich clinical annotations is the electronic
-health record. Recently Lee et al.[@ref_52] developed an approach to
+health record. Recently Lee et al.[@ref_66] developed an approach to
 distinguish individuals with Age-related Macular Degeneration from control
 individuals. They extracted approximately 100,000 images from structured
 electronic health records, which they used to train and evaluate a deep neural
@@ -252,7 +252,7 @@ network. Combining this data resource with standard deep learning techniques,
 the authors reach greater than 93% accuracy. One item that is important to note
 with regards to this work is that the authors used their test set for evaluating
 when training had concluded. In other domains, this has resulted in a minimal
-change in the estimated accuracy [@ref_141]. However,
+change in the estimated accuracy [@ref_185]. However,
 there is not yet a single accepted standard within the field of biomedical
 research for such evaluations. We recommend the use of an independent test set
 wherever it is feasible. Despite this minor limitation, the work clearly
@@ -267,22 +267,22 @@ really do anything different/unique from standard image processing examples
 #### Electronic health records
 
 EHR data include substantial amounts of free text, which remains challenging to
-approach [@ref_59]. Often, researchers developing
+approach [@ref_74]. Often, researchers developing
 algorithms that perform well on specific tasks must design and implement domain-
-specific features [@ref_58]. These features capture
+specific features [@ref_73]. These features capture
 unique aspects of the literature being processed. Deep learning methods are
 natural feature constructors. In recent work, the authors evaluated the extent
 to which deep learning methods could be applied on top of generic features for
-domain-specific concept extraction [@ref_11]. They found that
+domain-specific concept extraction [@ref_13]. They found that
 performance was in line with, but did not exceed, existing state of the art
 methods. The deep learning method had performance lower than the best performing
-domain-specific method in their evaluation [@ref_11]. This highlights
+domain-specific method in their evaluation [@ref_13]. This highlights
 the challenge of predicting the eventual impact of deep learning on the field.
 This provides support that deep learning may impact the field by reducing the
 researcher time and cost required to develop specific solutions, but it may not
 lead to performance increases.
 
-In recent work, Yoon et al.[@ref_19] analyzed simple
+In recent work, Yoon et al.[@ref_24] analyzed simple
 features using deep neural networks and found that the patterns recognized by
 the algorithms could be re-used across tasks. Their aim was to analyze the free
 text portions of pathology reports to identify the primary site and laterality
@@ -306,18 +306,18 @@ Identifying consistent subgroups of individuals and individual health
 trajectories from clinical tests is also an active area of research. Approaches
 inspired by deep learning have been used for both unsupervised feature
 construction and supervised prediction. Early work by Lasko et al.
-[@ref_67], combined sparse autoencoders and Gaussian
+[@ref_86], combined sparse autoencoders and Gaussian
 processes to distinguish gout from leukemia from uric acid sequences. Later work
 showed that unsupervised feature construction of many features via denoising
 autoencoder neural networks could dramatically reduce the number of labeled
 examples required for subsequent supervised analyses
-[@ref_28]. In addition, it pointed towards learned
+[@ref_34]. In addition, it pointed towards learned
 features being useful for subtyping within a single disease. A concurrent large-
 scale analysis of an electronic health records system found that a deep
 denoising autoencoder architecture applied to the number and co-occurrence of
 clinical test events, though not the results of those tests, constructed
 features that were more useful for disease prediction than other existing
-feature construction methods [@ref_38].  Taken together, these
+feature construction methods [@ref_46].  Taken together, these
 results support the potential of unsupervised feature construction in this
 domain. However, numerous challenges including data integration (patient
 demographics, family history, laboratory tests, text-based patient records,
@@ -332,16 +332,16 @@ context of EHR data, often associates these events to subject covariates.
 Exploring this relationship is difficult, however, given that EHR data types
 are often heterogeneous, covariates are often missing, and conventional
 approaches require the covariate-event relationship be linear and aligned to a
-specific starting point [@ref_9]. Early approaches, such as the
+specific starting point [@ref_11]. Early approaches, such as the
 Faraggi-Simon feed-forward network, aimed to relax the linearity assumption,
-but performance gains were lacking [@ref_21].
+but performance gains were lacking [@ref_26].
 Katzman et al. in turn developed a deep implementation of the Faraggi-Simon
 network that, in addition to outperforming Cox regression, was capable of
 comparing the risk between a given pair of treatments, thus potentially acting
-as recommender system [@ref_5]. To overcome the remaining
+as recommender system [@ref_6]. To overcome the remaining
 difficulties, researchers have turned to deep exponential families, a class of
 latent generative models that are constructed from any type of exponential
-family distributions [@ref_2]. The result was a deep survival
+family distributions [@ref_3]. The result was a deep survival
 analysis model capable of overcoming challenges posed by missing data and
 heterogeneous data types, while uncovering nonlinear relationships between
 covariates and failure time. They showed their model more accurately
@@ -376,13 +376,13 @@ EHR, unfortunately, this means we need to hire multiple expert clinicians  to
 manually read and annotate individual patients' records to assign "true"
 labels (i.e., expert chart review). Sometimes, the learnt features also need to
 be manually validated and interpreted by clinicians. This can be quite costly
-in time and money [@ref_171]. Due to resource
+in time and money [@ref_32]. Due to resource
 limitations,  many existing works in this direction (including many referenced
 in this review)  skipped the expert review process, which may face great
 skepticism from  medical domain experts. To date, even the most resourceful
 large national consortia  have difficulty acquiring enough expert-validated
 labeled data. For instance,  in the eMERGE consortia and PheKB database
-[@ref_145],  most sample sizes with expert validations
+[@ref_191],  most sample sizes with expert validations
 are between 100 to 300 patients,  which is quite small even for simple machine
 learning, not to mentioned data-hungry  deep learning models.
 
@@ -399,7 +399,7 @@ amount of expert labels needs to be sufficient large.
 
 In April 2016, the European Union adopted new rules regarding the use of
 personal information, the General Data Protection Regulation (GDPR)
-[@ref_144].  Among the new rules, it is perhaps best summed up in the
+[@ref_8].  Among the new rules, it is perhaps best summed up in the
 phrase "right to explanation".   I.e., a clinician must be able to explain to a
 patient how a decision was reached by any machine learning algorithm that uses
 the patient's data.  The new rules were passed with the understanding that
@@ -426,7 +426,7 @@ current best practices and how they relate to deep learning. A lack of data (due
 to privacy and sharing restrictions) may hamper deep learning's utility in this
 area in ways that it doesn't for image analysis, etc. Perhaps this will be the
 Achilles heal of deep learning in this area. A couple things to think about
-[@ref_172; @ref_25]*
+[@ref_72; @ref_30]*
 
 ###### Standardization/integration
 
@@ -434,68 +434,68 @@ EHRs are designed and optimized primarily for patient care and billing purposes,
 meaning research is at most a tertiary priority. This presents significant
 challenges to EHR based research in general, and particularly to data intensive
 deep learning research. EHRs are used differently even within the same health
-care system [@ref_72; @ref_71]. Individual users have unique
+care system [@ref_91; @ref_90]. Individual users have unique
 usage patterns, and different departments have different priorities which
 introduce missing data in a non-random fashion. Just et al. demonstrated that
 even the most basic task of matching patients can be challenging due to data
-entry issues [@ref_73]. This is before considering challenges caused by
+entry issues [@ref_92]. This is before considering challenges caused by
 system migrations and health care system expansions through acquisitions.
 Replication between hospital systems requires controlling for both these
 systematic biases as well as for population and demographic effects.
 Historically, rules-based algorithms have been popular in EHR-based research but
 because these are developed at a single institution and trained with a specific
 patient population they do not transfer easily to other populations
-[@ref_60]. Wiley et al.
-[@ref_61] showed that warfarin dosing algorithms often
+[@ref_75]. Wiley et al.
+[@ref_76] showed that warfarin dosing algorithms often
 under perform in African Americans, illustrating that some of these issues are
 unsolved even at a treatment best practices level. This may be a promising
 application of deep learning, as rules-based algorithms were also the standard
 in most natural language processing but have been superseded by machine learning
 and in particular deep learning methods
-[@ref_143].
+[@ref_190].
 
 ###### Temporal Patient Trajectories
 
 Traditionally, physician training programs justified long training hours by
 citing increased continuity of care and learning by following the progression of
 a disease over time, despite the known consequences of decreased mental and
-quality of life [@ref_30; @ref_23; @ref_45; @ref_22]. Yet, a common practice in EHR-based
+quality of life [@ref_36; @ref_28; @ref_59; @ref_27]. Yet, a common practice in EHR-based
 research is to take a point in time snapshot and convert patient data to a
 traditional vector for machine learning and statistical analysis. This results
 in significant signal losses as timing and order of events provide insight into
 a patient's disease and treatment. Efforts to account for the order of events
-have shown promise [@ref_35] but require exceedingly large
+have shown promise [@ref_42] but require exceedingly large
 patient sizes due to discrete combinatorial bucketing.
 
-Lasko et al. [@ref_67] used
+Lasko et al. [@ref_86] used
 autoencoders on longitudinal sequences of serum urine acid measurements to
 identify population subtypes. More recently, deep learning has shown promise
-working with both sequences (Convolutional Neural Networks) [@ref_8]
+working with both sequences (Convolutional Neural Networks) [@ref_10]
 and the incorporation of past and current state (Recurrent Neural Networks, Long
-Short Term Memory Networks)[@ref_4].
+Short Term Memory Networks)[@ref_5].
 
 ###### Data sharing and privacy
 
 Early successes using deep learning involved very large training datasets
-(ImageNet 1.4 million images) [@ref_1], but a responsibility to
+(ImageNet 1.4 million images) [@ref_2], but a responsibility to
 protect patient privacy limits the ability openly share large patient datasets.
 Limited dataset sizes may restrict the number of parameters that can be trained
 in a model, but the lack of sharing may also hamper reproducibility and
 confidence in results. Even without sharing data, algorithms trained on
 confidential patient data may present security risks or accidentally allow for
-the exposure of individual level patient data. Tramer et al. [@ref_10]
+the exposure of individual level patient data. Tramer et al. [@ref_12]
 showed the ability to steal trained models via public APIs and Dwork and Roth
-[@ref_69] demonstrate the ability to expose individual level
+[@ref_88] demonstrate the ability to expose individual level
 information from accurate answers in a machine learning model.
 
 Training algorithms in a differentially private manner provides a limited
 guarantee that the algorithms output will be equally likely to occur regardless
 of the participation of any one individual. The limit is determined by a single
 parameter which provides a quantification of privacy. Simmons et al.
-[@ref_25] present the ability to perform GWASs in a
-differentially private manner and Abadi et al. [@ref_7] show the
+[@ref_30] present the ability to perform GWASs in a
+differentially private manner and Abadi et al. [@ref_9] show the
 ability to train deep learning classifiers under the differential privacy
-framework. Finally, Continuous Analysis [@ref_48] allows for the
+framework. Finally, Continuous Analysis [@ref_62] allows for the
 ability to automatically track and share intermediate results for the purposes
 of reproducibility without sharing the original data.
 
@@ -594,12 +594,12 @@ data with varying aims. For instance, many researchers have applied unsupervised
 deep learning models to extract meaningful representations of gene modules
 or sample clusters. Denoising autoencoders have been used to cluster yeast
 expression microarrays into known modules representing cell cycle processes
-[@ref_149] and also to stratify yeast strains based on
-chemical and mutational perturbations [@ref_148]. Shallow
+[@ref_123] and also to stratify yeast strains based on
+chemical and mutational perturbations [@ref_106]. Shallow
 (one hidden layer) denoising autoencoders have also been fruitful in extracting
 biological insight from thousands of _Pseudomonas aeruginosa_ experiments
-[@ref_152; @ref_153] and in aggregating features relevant
-to specific breast cancer subtypes [@ref_62]. These unsupervised
+[@ref_170; @ref_171] and in aggregating features relevant
+to specific breast cancer subtypes [@ref_77]. These unsupervised
 approaches applied to gene expression data are powerful methods for aggregating
 features and identifying gene signatures that may otherwise be overlooked by
 alternative methods. An additional benefit of unsupervised approaches is that
@@ -613,20 +613,20 @@ Alternatively, deep learning approaches are also being applied for gene
 expression prediction tasks. For example, a deep neural network with
 three hidden layers outperformed linear regression in inferring the expression
 of over 20,000 target genes based on a representative, well-connected set of
-about 1,000 landmark genes [@ref_86]. However, while the deep
+about 1,000 landmark genes [@ref_107]. However, while the deep
 learning model outperformed already existing algorithms in nearly every
 scenario, the model still displayed poor performance. The paper was also limited
 by computational bottlenecks that required data to be split randomly into two
 distinct models and trained separately. It is unclear how much performance
 would have increased if not for computational restrictions. Furthermore, a
 convolutional neural network applied to histone modifications, termed
-DeepChrome, [@ref_151] was shown to predict gene expression
+DeepChrome, [@ref_160] was shown to predict gene expression
 output. DeepChrome greatly improved high or low expression prediction accuracy
 over existing methods. Deep learning applied to epigenetic data for gene
 expression inference is a promising approach to study gene regulation. Deep
 learning approaches have also been applied to study cancer gene expression data
 with goals of identifying subtypes of patients with different molecular features
-and clinical manifestations [@ref_150]. In the study, the
+and clinical manifestations [@ref_141]. In the study, the
 authors combine RBMs to integrate gene expression, DNA methylation, and miRNA
 data and use the constructed features in search of ovarian cancer subtypes.
 While the aforementioned approaches are promising, many convert gene expression
@@ -641,7 +641,7 @@ and treatment strategies for disease. New technologies are being developed,
 such as single cell RNA-seq and high throughput fluorescence based imaging that
 are good matches for deep learning. Concurrently, deep learning methods are
 being developed to address novel problems such as adjusting for batch effects in
-single-cell RNA-seq data [@ref_125]. Moreover, deep
+single-cell RNA-seq data [@ref_159]. Moreover, deep
 learning is already well established in the image processing community, so the
 marriage of fluorescence based imaging techniques and deep learning is natural.
 These technologies are growing in popularity and will provide increasingly novel 
@@ -653,7 +653,82 @@ learning can address is poised to improve.
 
 ### Splicing
 
-*A separate section from general gene expression section above.*
+Pre-mRNA transcripts can be spliced into different isoforms by retaining or
+skipping subsets of exons, or including parts of introns. This alternative
+splicing provides cells with enormous spatiotemporal flexibility to generate
+multiple distinct proteins from a single gene. Splicing is catalyzed by small
+nuclear RNAs (snRNAs) and spliceosomal proteins, which detect sequence motifs
+such as splice sites and exon sequence enhancers and silencers (ESE and ESS).
+Various RNA-binding proteins and noncoding RNAs can bias these reactions by
+altering binding affinities, blocking splice sites, or sequestering splicing
+factors. This remarkable complexity unfortunately lends itself to defects that
+underlie many diseases [@ref_156]. For instance, in Becker
+muscular dystrophy, a point mutation in dystrophin creates an ESS that induces
+skipping of exon 31. A recent study found that quantitative trait loci (QTLs)
+that affect splicing in lymphoblastoid cell lines are enriched within risk loci
+for schizophrenia, multiple sclerosis and other immune diseases, implicating
+mis-splicing as a much more widespread feature of human pathologies than
+previously thought [@ref_140].
+
+Sequencing studies routinely return thousands of unannotated variants. Which
+cause functional changes in splicing, and if so, how? Prediction of a “splicing
+code” has been a holy grail over the past decade. Initial machine learning
+approaches used a naive Bayes model and a 2-layer Bayesian neural network with
+thousands of hand-derived sequence-based features to predict the probability of
+exon skipping [@ref_98; @ref_176]. With the
+advent of deep learning, more complex models were built that provided better
+predictive accuracy [@ref_177; @ref_130]. Importantly, these new approaches can take in
+not only genomic features, but also tissue identity and CLIP-seq measurements of
+interactions between splicing factors and RNA, which all improve predictive
+accuracy.
+
+The massive improvement seen with deep learning seems to stem from hidden layers
+being able to create new higher-order “features”, whereas earlier approaches
+often assumed independence of features and were unable to generalize.
+Higher-order understanding is especially important in splicing, which depends
+not only on the primary sequence, but also local RNA structure, tissue identity,
+splicing factor binding, and other currently unknown factors — all of which
+interact in complex, incompletely characterized ways. With new tools to
+interpret these meta-features, a major focus of current deep learning research,
+we will soon have the ability to extract a more nuanced biological understanding
+of splicing — perhaps by interrogating informative hidden nodes within neural
+networks that take in tissue type as part of the input, or by building separate
+networks for each tissue type and looking for common versus distinctive nodes
+[@ref_149].
+
+A parallel effort has been to use more data with simpler models. An exhaustive
+study using readouts of splicing for millions of synthetic intronic sequences
+was able to describe motifs that influence the strength of alternative splice
+sites [@ref_152]. Interestingly, they built a simple
+linear model using hexamer motif frequencies that successfully generalized to
+exon skipping: in a limited analysis using SNPs from three genes, it predicted
+exon skipping with three times the accuracy of Xiong et al.’s framework. This
+case is instructive in that clever sources of data, not just more powerful
+models, can lead to novel insights.
+
+We already understand how mis-splicing of a single gene can cause diseases such
+as Duchenne muscular dystrophy. The challenge now is to uncover how alternative
+splicing genome-wide gives rise to or is involved in complex, non-Mendelian
+diseases such as autism, schizophrenia, Type 1 diabetes, and multiple sclerosis
+[@ref_131]. As a proof of concept, Xiong et al.
+[@ref_177] sequenced five ASD and 12 control samples, each
+with an average of 42,000 rare variants, and identified 19 genes with neural
+functions that are mis-spliced. Deep learning will allow scientists and
+clinicians to rapidly profile thousands of unannotated variants for functional
+effects on splicing and nominate candidates for further investigation. Moreover,
+these nonlinear algorithms can deconvolve the effects of multiple variants on a
+single splice event without the need to perform combinatorial in vitro
+experiments.
+
+Our end goal is to predict an individual’s tissue-specific, exon-specific
+splicing patterns from their genome sequence and other measurements. Knowing
+exactly which genes are mis-spliced in each tissue could enable a new branch of
+precision diagnostics that also stratifies patients and suggests targeted
+therapies to correct splicing defects. A continued focus on interpreting the
+“black box” of deep neural networks, along with integrating more comprehensive
+and diverse data sources, will likely provide the path forward to a better
+understanding of the basic determinants of splicing and its links to complex
+disease, which will lead to novel diagnostics and therapeutics.
 
 ### Transcription factors and RNA-binding proteins
 
@@ -693,11 +768,11 @@ inter-residue contact map, disorder regions and side-chain packing.
 Machine learning is extensively applied to predict protein structures and 
 some success has been achieved. For example, secondary structure can be 
 predicted with about 80% of 3-state (i.e., Q3) accuracy by a neural network 
-method PSIPRED [@ref_160]. Starting from 
+method PSIPRED [@ref_50]. Starting from 
 2012, deep learning has been gradually introduced to protein structure 
 prediction. The adopted deep learning models include deep belief network, 
 LSTM(long short-term memory), deep convolutional neural networks (DCNN) 
-and deep convolutional neural fields[@ref_157; @ref_37]. Here we focus on deep learning methods for 
+and deep convolutional neural fields[@ref_22; @ref_45]. Here we focus on deep learning methods for 
 two representative subproblems: secondary structure prediction and 
 contact map prediction. Secondary structure refers to local conformation of 
 a sequence segment while a contact map contains information of global 
@@ -707,29 +782,29 @@ been used as sequence labeling benchmark in the machine learning community.
 Contact prediction is much more challenging than secondary structure prediction,
 but it has a much larger impact on tertiary structure prediction. 
 In recent years, contact prediction has made good progress and its accuracy 
-has been significantly improved [@ref_166; @ref_163; @ref_159; @ref_167].
+has been significantly improved [@ref_83; @ref_55; @ref_47; @ref_84].
 
 Protein secondary structure can exhibit three different states (alpha helix, 
 beta strand and loop regions) or eight finer-grained states. More methods are 
 developed to predict 3-state secondary structure than 8-state. A predictor is 
 typically evaluated by 3-state (i.e., Q3) and 8-state (i.e., Q8) accuracy, respectively. 
 Qi et al. developed a multi-task deep learning method to simultaneously predict several 
-local structure properties including secondary structures [@ref_168]. 
+local structure properties including secondary structures [@ref_85]. 
 Spencer, Eickholt and Cheng predicted secondary structure using deep belief networks 
-[@ref_57]. Heffernan and Zhou et al. developed an iterative 
+[@ref_70]. Heffernan and Zhou et al. developed an iterative 
 deep learning framework to simultaneously predict secondary structure, backbone torsion 
-angles and solvent accessibility [@ref_158]. However, none of these deep 
-learning methods achieved significant improvement over PSIPRED [@ref_156] 
+angles and solvent accessibility [@ref_44]. However, none of these deep 
+learning methods achieved significant improvement over PSIPRED [@ref_18] 
 in terms of Q3 accuracy. In 2014, Zhou and Troyanskaya demonstrated that they could 
-improve Q8 accuracy over a shallow learning architecture conditional neural fields [@ref_155] 
-by using a deep supervised and convolutional generative stochastic network[@ref_154], 
+improve Q8 accuracy over a shallow learning architecture conditional neural fields [@ref_17] 
+by using a deep supervised and convolutional generative stochastic network[@ref_1], 
 but did not report any results in terms of Q3 accuracy. In 2016 Wang and Xu et al. developed a deep 
 convolutional neural fields (DeepCNF) model that can significantly improve secondary 
-structure prediction in terms of both Q3 and Q8 accuracy[@ref_37]. 
+structure prediction in terms of both Q3 and Q8 accuracy[@ref_45]. 
 DeepCNF possibly is the first that reports Q3 accuracy of 84-85%, much higher than 
 the 80% accuracy maintained by PSIPRED for more than 10 years. 
 It is also reported that DeepCNF can improve prediction of solvent accessibility 
-and disorder regions [@ref_157]. This improvement may be mainly 
+and disorder regions [@ref_22]. This improvement may be mainly 
 due to the introduction of convolutional neural fields to capture long-range 
 sequential information, which is important for beta strand prediction. Nevertheless, 
 improving secondary structure prediction from 80% to 84-85% is unlikely to 
@@ -740,34 +815,34 @@ Protein contact prediction and contact-assisted folding (i.e., folding proteins 
 predicted contacts as restraints) represents a promising new direction for ab initio folding 
 of proteins without good templates in PDB. 
 Evolutionary coupling analysis (ECA) is an effective contact prediction method for some 
-proteins with a very large number (>1000) of sequence homologs [@ref_167], 
+proteins with a very large number (>1000) of sequence homologs [@ref_84], 
 but ECA fares poorly for proteins without many sequence homologs. Since (soluble) proteins with 
 many sequence homologs are likely to have a good template in PDB, to make contact-assisted 
 folding practically useful for ab initio folding, it is essential to predict accurate contacts 
 for proteins without many sequence homologs. By combining ECA with a few other protein features, 
-shallow neural network-based methods such as MetaPSICOV [@ref_163] and 
-CoinDCA-NN [@ref_164] have shown some advantage over ECA 
+shallow neural network-based methods such as MetaPSICOV [@ref_55] and 
+CoinDCA-NN [@ref_56] have shown some advantage over ECA 
 for proteins with a small number of sequence homologs, but their accuracy is still not very good. 
 In recent years, deep learning methods have been explored for contact prediction. For example, 
 Di Lena et al. introduced a deep spatio-temporal neural network (up to 100 layers) that utilizes both 
-spatial and temporal features to predict protein contacts[@ref_161]. 
+spatial and temporal features to predict protein contacts[@ref_51]. 
 Eickholt and Cheng combined deep belief networks and boosting techniques to predict protein contacts 
-[@ref_162] and trained deep networks by layer-wise unsupervised 
+[@ref_52] and trained deep networks by layer-wise unsupervised 
 learning followed by fine-tuning of the entire network. Skwark and Elofsson et al. developed 
 an iterative deep learning technique for contact prediction by stacking a series of Random Forests 
-[@ref_165]. However, blindly tested in the well-known CASP competitions, 
-these methods did not show any advantage over MetaPSICOV [@ref_163], a method 
+[@ref_81]. However, blindly tested in the well-known CASP competitions, 
+these methods did not show any advantage over MetaPSICOV [@ref_55], a method 
 using two cascaded neural networks. Very recently, Wang and Xu et al. proposed a novel deep learning method 
-RaptorX-Contact [@ref_166] that can significantly improve contact prediction 
+RaptorX-Contact [@ref_83] that can significantly improve contact prediction 
 over MetaPSICOV especially for proteins without many sequence homologs. RaptorX-Contact employs a network 
 architecture formed by one 1D residual neural network and one 2D residual neural network. 
-Blindly tested in the latest CASP competition (i.e., CASP12 [@ref_170]), 
+Blindly tested in the latest CASP competition (i.e., CASP12 [@ref_189]), 
 RaptorX-Contact is ranked first in terms of the total F1 score (a widely-used performance metric) on 
 free-modeling targets as well as the whole set of targets. In the CASP12 test, the group ranked second 
 also employed a deep learning method. Even MetaPSICOV, which ranked third in CASP12, employed more
 and wider hidden layers than its old version. Wang and Xu et al. have also 
 demonstrated in another blind test CAMEO (which can be interpreted as a fully-automated 
-CASP) [@ref_169] that their predicted contacts can help fold quite a few proteins 
+CASP) [@ref_187] that their predicted contacts can help fold quite a few proteins 
 with a novel fold and only 65-330 sequence homologs and that their method also works well on membrane 
 protein contact prediction even if trained mostly by non-membrane proteins. In fact, most of the top 10 
 contact prediction groups in CASP12 employed some kind of deep learning techniques. The RaptorX-Contact 
@@ -781,7 +856,7 @@ of a protein complex, but may be less effective since on average protein complex
 
 ### Signaling
 
-*There is not much content here.  Can [@ref_85] be covered
+*There is not much content here.  Can [@ref_105] be covered
 elsewhere?*
 
 ### Morphological phenotypes
@@ -792,12 +867,12 @@ Thus far, the primary use of deep learning for biological
 images has been for segmentation - that is, for the identification
 of biologically relevant structures in images such as nuclei,
 infected cells, or vasculature, in fluorescence or even brightfield
-channels [@ref_66]. Once so-called regions of
+channels [@ref_82]. Once so-called regions of
 interest have been identified, it is often straightforward
 to measure biological properties of interest, such as fluorescence
 intensities, textures, and sizes. Given the dramatic successes of
 deep learning in biological imaging, we simply refer to articles that
-review recent advancements [@ref_70; @ref_66; @ref_17].
+review recent advancements [@ref_89; @ref_82; @ref_21].
 We believe deep learning will become a commonplace tool for
 biological image segmentation once user-friendly tools exist.
 
@@ -808,7 +883,7 @@ tissue samples, could be mined for much more extensive biologically
 meaningful information than is currently standard? For example, a
 recent study demonstrated the ability to predict lineage fate in
 hematopoietic cells up to three generations in advance of
-differentiation [@ref_36]. In biomedical research,
+differentiation [@ref_43]. In biomedical research,
 by far the most common paradigm is for biologists to decide in advance
 what feature to measure in images from their assay system. But images
 of cells contain a wide variety of quantitative information, and deep
@@ -817,8 +892,8 @@ of segmentation and feature extraction can produce hundreds of metrics
 per cell in an image, deep learning is unconstrained by human intuition
 and can in theory extract more subtle features. Already, there is evidence
 deep learning can surpass the efficacy of classical methods
-[@ref_50], even using generic deep convolutional networks
-trained on natural images [@ref_51], known as transfer learning.
+[@ref_64], even using generic deep convolutional networks
+trained on natural images [@ref_65], known as transfer learning.
 
 The impact of further improvements on biomedicine could be enormous.
 Comparing cell population
@@ -826,7 +901,7 @@ morphologies using conventional methods of segmentation and feature
 extraction has already proven useful for functionally annotating genes
 and alleles, identifying the cellular target of small molecules, and
 identifying disease-specific phenotypes suitable for drug screening
-[@ref_26; @ref_13; @ref_39].
+[@ref_31; @ref_15; @ref_48].
 Deep learning would bring to these new kinds of experiments - known
 as image-based profiling or morphological profiling - a higher degree of
 accuracy, stemming from the freedom from human-tuned feature extraction
@@ -839,9 +914,9 @@ unsupervised uses.`
 
 *There are not many neural network papers in this area (yet), unless we count
 imaging applications.  But there is still plenty to discuss.  The existing
-methods [@ref_77; @ref_76]
+methods [@ref_96; @ref_95]
 use interesting network architectures to approach single-cell data.
-[@ref_125] could fit here.*
+[@ref_159] could fit here.*
 
 ### Metagenomics
 
@@ -854,74 +929,74 @@ metagenomic analysis.  In the late 2000’s, a plethora of machine learning
 methods were applied to classifying DNA sequencing reads to the thousands of 
 species within a sample.  An important problem is genome assembly from these 
 mixed-organism samples. And to do that, the organisms should be “binned” 
-before assembling.  Binning methods began with many k-mer techniques [@ref_177] 
+before assembling.  Binning methods began with many k-mer techniques [@ref_132] 
 and then delved into other clustering algorithms, such as self-organizing maps 
-(SOM) [@ref_173].  Then came the taxonomic classification problem,  with researchers 
-naturally using BLAST [@ref_138], followed by other machine learning techniques 
-such as SVMs [@ref_114], naive Bayesian classifiers [@ref_139], etc. to classify
+(SOM) [@ref_93].  Then came the taxonomic classification problem,  with researchers 
+naturally using BLAST [@ref_179], followed by other machine learning techniques 
+such as SVMs [@ref_144], naive Bayesian classifiers [@ref_181], etc. to classify
 each read.  Then, researchers began to use techniques that could be used to 
 estimate relative abundances of an entire sample, instead of the precise but
 painstakingly slow read-by-read classification.  Relative abundance
-estimators (a.k.a diversity profilers) are MetaPhlan [@ref_178], (WGS)Quikr [@ref_183],
-and some configurations of tools like OneCodex [@ref_182] and LMAT [@ref_181].  While one
+estimators (a.k.a diversity profilers) are MetaPhlan [@ref_146], (WGS)Quikr [@ref_183],
+and some configurations of tools like OneCodex [@ref_182] and LMAT [@ref_180].  While one
 cannot identify which reads were mapped back to an organism using relative
 abundance estimators, they can be useful for faster comparative and other
 downstream analyses.   Newer methods hope to classify reads and estimate
-relative abundances at faster rates [@ref_136] and as of this writing, there
+relative abundances at faster rates [@ref_174] and as of this writing, there
 are more than 70 metagenomic taxonomic classifiers in existence.  Besides
 binning and classification of species, there is functional identification and
-annotation of sequence reads [@ref_140; @ref_127]. However, the focus on
+annotation of sequence reads [@ref_184; @ref_162]. However, the focus on
 taxonomic/functional annotation is just the first step.  Once organisms are
 identified, there is the interest in understanding the interrelationship
-between these organisms and host/environment phenotypes [@ref_98].  One of
+between these organisms and host/environment phenotypes [@ref_122].  One of
 the first attempts was a survey of supervised classification methods for
-microbes->phenotype classification [@ref_107], followed by similar studies
-that are more massive in scale [@ref_129; @ref_123].  There have been
-techniques that bypass the taxonomic classification step altogether [@ref_90],
+microbes->phenotype classification [@ref_135], followed by similar studies
+that are more massive in scale [@ref_164; @ref_157].  There have been
+techniques that bypass the taxonomic classification step altogether [@ref_111],
 (sequence composition to phenotype classification).  Also, researchers have
-looked into how feature selection can improve classification [@ref_112; @ref_123],
+looked into how feature selection can improve classification [@ref_142; @ref_157],
 and techniques have been proposed that are classifier-independent
-[@ref_174; @ref_175].
+[@ref_112; @ref_113].
 
 So, how have neural networks (NNs) been of use?    Most neural networks are being 
 used for short sequence->taxa/function classification, where there is a lot of data 
 for training (and thus suitable for NNs).  Neural networks have been applied 
-successfully to gene annotation (e.g. Orphelia [@ref_103] and FragGeneScan [@ref_43]), 
-which usually has plenty of training examples.  Representations (similar to Word2Vec [@ref_180] in 
+successfully to gene annotation (e.g. Orphelia [@ref_128] and FragGeneScan [@ref_57]), 
+which usually has plenty of training examples.  Representations (similar to Word2Vec [@ref_175] in 
 natural language processing) for protein family classification has been introduced and classified 
-with a skip-gram  neural network [@ref_78].  Recurrent neural networks show good performance for 
-homology and protein family identification [@ref_102; @ref_126].  Interestingly, 
+with a skip-gram  neural network [@ref_97].  Recurrent neural networks show good performance for 
+homology and protein family identification [@ref_127; @ref_161].  Interestingly, 
 Hochreiter, who invented Long Short Term Memory, delved into homology/protein family
 classification in 2007, and therefore, deep learning is deeply rooted in
 functional classification methods.
 
 One of the first techniques of “de novo” genome binning used self-organizing maps, a 
-type of NN [@ref_173].  Essinger et al. use ART, a neural network algorithm called Adaptive 
+type of NN [@ref_93].  Essinger et al. use ART, a neural network algorithm called Adaptive 
 Resonance Theory, to cluster similar genomic fragments and showed that it has better 
 performance than K-means.  However, other methods based on interpolated Markov models 
-[@ref_121] have performed better than these early genome binners.  Also, neural networks 
+[@ref_154] have performed better than these early genome binners.  Also, neural networks 
 can be slow, and therefore, have had limited use for reference-based taxonomic 
-classification, with TAC-ELM [@ref_133] being the only NN-based algorithm to taxonomically 
+classification, with TAC-ELM [@ref_169] being the only NN-based algorithm to taxonomically 
 classify massive amounts of metagenomic data.  Also, neural networks can fail to perform 
 if there are not enough training examples, which is the case with taxonomic classification 
 (since only ~10% of estimated species have been sequenced). An initial study shows that 
 deep neural networks have been successfully applied to  taxonomic classification of 16S rRNA genes,
 with convolutional networks  provide about 10% accuracy genus-level improvement over RNNs and even random 
-forests [@ref_117].  However, this study performed 10-fold cross-validation on 3000 sequences in total. 
+forests [@ref_148].  However, this study performed 10-fold cross-validation on 3000 sequences in total. 
 
 Due to the traditionally small numbers of metagenomic samples in studies, neural network uses for 
 classifying phenotype from microbial composition are just beginning.   A standard MLP 
-was able to classify wound severity from microbial species present in the wound [@ref_24].
+was able to classify wound severity from microbial species present in the wound [@ref_29].
 Recently, multi-layer, recurrent networks (and convolutional
 networks) have been applied to microbiome genotype-phenotype, with Ditzler et
 al. being the first to associate soil samples with pH level using multi-layer
 perceptrons, deep-belief networks, and recursive neural networks (RNNs) 
-[@ref_176]. Besides classifying the samples appropriately, Ditzler shows
+[@ref_114]. Besides classifying the samples appropriately, Ditzler shows
 that internal phylogenetic tree nodes inferred by the networks are
 appropriate features representing low/high pH, which can provide additional
 useful information and new features for future metagenomic sample comparison.
  Also, an initial study has show promise of these networks for diagnosing
-disease [@ref_94].  
+disease [@ref_118].  
 
 There are still a lot of challenges with applying deep neural networks to metagenomics problems.  They are not ideal for microbial/functional composition->phenotype classification because most studies contain tens of samples (~20->40) and
 hundreds/thousands of features (aka species).  Such underdetermined/ill-conditioned problems
@@ -933,9 +1008,9 @@ networks -- due to only thousands of full-sequenced genomes as compared to hundr
 available for training.
 
 However, because recurrent neural networks are showing success for base-calling (and thus removing the large error in 
-the measurement of a pore's current signal) for the relatively new Oxford Nanopore sequencer [@ref_82], there is hope that
+the measurement of a pore's current signal) for the relatively new Oxford Nanopore sequencer [@ref_102], there is hope that
 the process of denoising->organism/function classification can be combined into one step in using powerful LSTM's. LSTM's
-are working miracles in raw speech signal->meaning translation [@ref_179], and combining steps in metagenomics are not
+are working miracles in raw speech signal->meaning translation [@ref_167], and combining steps in metagenomics are not
 out of the question.  For example, metagenomic assembly usually requires binning then assembly, but could deep neural nets
 accomplish both tasks in one network? Does functional/taxonomic classification need to be separate processes?  The largest 
 potential in deep learning is to learn "everything" in one complex network, with a plethora of labeled (reference) data and
@@ -956,7 +1031,7 @@ patients with treatments.  The sub-section titles are merely placeholders.*
 ### Categorizing patients for clinical decision making
 
 *How can deep learning match patients with clinical trails, therapies, or
-other interventions?  As an example, [@ref_27]
+other interventions?  As an example, [@ref_33]
 predicts individuals who are most likely to decline during a clinical trial
 and benefit from the treatment.*
 
@@ -974,7 +1049,7 @@ feature selection and construction.*
 **TODO: expand outline**
 
 - Short introduction to problem, related reviews, use vHTS definition from
-[@ref_132] (vHTS doesn't fit neatly into classic classification,
+[@ref_168] (vHTS doesn't fit neatly into classic classification,
 regression, or ranking)
 - Introduce ligand-based approaches, hype and excitement surrounding
 performance of a "high-parameter" network on the Merck Kaggle challenge,
@@ -983,11 +1058,11 @@ that followed, Tox21 Data Challenge
 - Multitask networks related to the above point
 - Realistic view of where things stand today, high-parameter networks struggle
 with overfitting, cross validation needs to be done carefully because of temporal
-structure [@ref_105], low parameter networks based on chemical
+structure [@ref_133], low parameter networks based on chemical
 similarity (IRV) work very well, especially well-suited for the domain in which
 training data can be limited and contains few positive instances, may touch on
 BACE example here and other discussions of training data limitations (e.g.
-[@ref_75])
+[@ref_94])
 - "Creative experimentation" phase of the field, new ideas for representation
 learning and novel approaches including graph convolutions, autoencoders,
 one shot learning, and generative models
@@ -1003,7 +1078,7 @@ data versus algorithms
 - Future outlook part 2, how the above approaches relate to traditional
 methods like docking (note neural networks that include docking scores as
 features), deep learning efforts in this direction that use structure (e.g.
-[@ref_3; @ref_12]), "zero-shot learning",
+[@ref_4; @ref_14]), "zero-shot learning",
 analogies to other domains where deep learning can capture the behavior
 of complex physics (e.g. quantum physics example), maybe briefly mention
 other compound-protein interaction-based networks although that doesn't seem
@@ -1070,66 +1145,66 @@ it best fits.*
 Efficiently scaling deep learning is challenging, and there is a high
 computational cost (e.g., time, memory, energy) associated with training neural
 networks and using them for classification. As such, neural networks
-have only recently found widespread use [@ref_29].
+have only recently found widespread use [@ref_35].
 
 Many have sought to curb the costs of deep learning, with methods ranging from
-the very applied (e.g., reduced numerical precision [@ref_99; @ref_79; @ref_120; @ref_104]) to the exotic
+the very applied (e.g., reduced numerical precision [@ref_124; @ref_99; @ref_153; @ref_129]) to the exotic
 and theoretic (e.g., training small networks to mimic large networks and
-ensembles [@ref_83; @ref_101]). The largest
+ensembles [@ref_103; @ref_126]). The largest
 gains in efficiency have come from computation with graphics processing units
-(GPUs) [@ref_119; @ref_135; @ref_124; @ref_100; @ref_92; @ref_29], which excel at the matrix and vector
+(GPUs) [@ref_151; @ref_173; @ref_158; @ref_125; @ref_116; @ref_35], which excel at the matrix and vector
 operations so central to deep learning. The massively parallel nature of GPUs
 allows additional optimizations, such as accelerated mini-batch gradient
-descent [@ref_135; @ref_124; @ref_130; @ref_111]. However, GPUs also have a limited quantity of memory,
+descent [@ref_173; @ref_158; @ref_165; @ref_139]. However, GPUs also have a limited quantity of memory,
 making it difficult to implement networks of significant size and
-complexity on a single GPU or machine [@ref_119; @ref_108]. This restriction has sometimes forced
+complexity on a single GPU or machine [@ref_151; @ref_136]. This restriction has sometimes forced
 computational biologists to use workarounds or limit the size of an analysis.
-For example, Chen et al. [@ref_86] aimed to infer the
+For example, Chen et al. [@ref_107] aimed to infer the
 expression level of all genes with a single neural network, but due to
 memory restrictions they randomly partitioned genes into two halves and
 analyzed each separately. In other cases, researchers limited the size
-of their neural network [@ref_49; @ref_96]. Some have also chosen to use slower
+of their neural network [@ref_63; @ref_120]. Some have also chosen to use slower
 CPU implementations rather than sacrifice network size or performance
-[@ref_137].
+[@ref_178].
 
 Steady improvements in GPU hardware may alleviate this issue somewhat, but it
 is not clear whether they can occur quickly enough to keep up with the growing
 amount of available biological data or increasing network sizes. Much has
 been done to minimize the memory
-requirements of neural networks [@ref_88; @ref_83; @ref_99; @ref_79; @ref_120; @ref_84; @ref_104], but there is also growing
+requirements of neural networks [@ref_109; @ref_103; @ref_124; @ref_99; @ref_153; @ref_104; @ref_129], but there is also growing
 interest in specialized hardware, such as field-programmable gate arrays
-(FPGAs) [@ref_92; @ref_110] and
+(FPGAs) [@ref_116; @ref_138] and
 application-specific integrated circuits (ASICs). Specialized hardware promises
 improvements in deep learning at reduced time, energy, and memory
-[@ref_92]. Logically, there is less software for highly
-specialized hardware [@ref_110], and it could be a difficult
+[@ref_116]. Logically, there is less software for highly
+specialized hardware [@ref_138], and it could be a difficult
 investment for those not solely interested in deep learning. However, it is
 likely that such options will find increased support as they become a more
 popular platform for deep learning and general computation.
 
 Distributed computing is a general solution to intense computational
 requirements, and has enabled many large-scale deep learning efforts. Early
-approaches to distributed computation [@ref_113; @ref_97] were
-not suitable for deep learning [@ref_89],
+approaches to distributed computation [@ref_143; @ref_121] were
+not suitable for deep learning [@ref_110],
 but significant progress has been made. There
-now exist a number of algorithms [@ref_89; @ref_91; @ref_120], tools [@ref_116; @ref_115; @ref_134], and high-level libraries [@ref_106; @ref_93] for deep
+now exist a number of algorithms [@ref_110; @ref_115; @ref_153], tools [@ref_147; @ref_145; @ref_172], and high-level libraries [@ref_134; @ref_117] for deep
 learning in a distributed environment, and it is possible to train very complex
-networks with limited infrastructure [@ref_87]. Besides
+networks with limited infrastructure [@ref_108]. Besides
 handling very large networks, distributed or parallelized approaches offer
-other advantages, such as improved ensembling [@ref_131] or
-accelerated hyperparameter optimization [@ref_80; @ref_81].
+other advantages, such as improved ensembling [@ref_166] or
+accelerated hyperparameter optimization [@ref_100; @ref_101].
 
 Cloud computing, which has already seen adoption in genomics
-[@ref_122], could facilitate easier sharing of the large
-datasets common to biology [@ref_95; @ref_128],
+[@ref_155], could facilitate easier sharing of the large
+datasets common to biology [@ref_119; @ref_163],
 and may be key to scaling deep learning. Cloud computing affords researchers
 significant flexibility, and enables the use of specialized hardware (e.g.,
 FPGAs, ASICs, GPUs) without significant investment. With such flexibility, it
 could be easier to address the different challenges associated with the
 multitudinous layers and architectures available
-[@ref_109]. Though many are reluctant to store sensitive
+[@ref_137]. Though many are reluctant to store sensitive
 data (e.g., patient electronic health records) in the cloud,
-secure/regulation-compliant cloud services do exist [@ref_118].
+secure/regulation-compliant cloud services do exist [@ref_150].
 
 *TODO: Write the transition once more of the Discussion section has been
 fleshed out.*
