@@ -200,12 +200,14 @@ and understand these binding regions de novo from sequences.
 
 Transcription Factors (TFs) are regulatory proteins that bind to certain
 locations on a DNA sequence and control the rate of mRNA
-production. ChIP-seq and related technologies are able to identify highly likely binding
-sites for a certain TF, and databases such as ENCODE [@tag:Consortium2004_encode] have provided ChIP-seq
-data for hundreds of different TFs across many laboratories. However, ChIP-seq
-experiments are expensive and time consuming. Since the data that scientists
-have discovered is available, in silico methods to predict binding sites are of
-great interest, thus eliminating the need to do new ChIP-seq experiments every
+production. ChIP-seq and related technologies are able to identify highly
+likely binding sites for a certain TF, and databases such as
+ENCODE [@tag:Consortium2004_encode] have provided ChIP-seq
+data for hundreds of different TFs across many laboratories.
+However, ChIP-seq experiments are expensive and time consuming.
+Since the data that scientists have discovered is available, in
+silico methods to predict binding sites are of great interest, thus
+eliminating the need to do new ChIP-seq experiments every
 time analysis is done on a new sequence.
 
 In order to computationally predict TFBSs on a DNA sequence, researchers
