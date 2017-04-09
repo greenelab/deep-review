@@ -253,6 +253,12 @@ verify in a lab setting, leading to new biomedical knowledge. Since the
 “linguistics” of DNA are unclear, interpretability of models is crucial to
 pushing our understanding forward.
 
+`TODO: Add discussion about the large number of deep learning works
+in this area since the DeepBind paper. In particular, add
+[#43](https://github.com/greenelab/deep-review/issues/43),
+[#215](https://github.com/greenelab/deep-review/issues/215),
+and [#258](https://github.com/greenelab/deep-review/issues/258).`
+
 ### Promoters, enhancers, and related epigenomic tasks
 
 *We may want to be selective about what we discuss and not list every
