@@ -419,7 +419,7 @@ image classification over the past 5 years [@tag:He2015_images] suggest that
 this goal will be achievable.
 
 The sheer quantity of “omic” information that can be obtained from each cell, as
-well as the number of cells in each dataset, uniquely position single-cell data 
+well as the number of cells in each dataset, uniquely position single-cell data
 to benefit from deep learning. In the future, lineage tracing could be
 revolutionized by using autoencoders to reduce the feature space of
 transcriptomic or variant data followed by algorithms to learn optimal cell
