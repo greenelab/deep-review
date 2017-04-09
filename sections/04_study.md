@@ -433,11 +433,11 @@ therapeutic strategies that forestall resistance. It will be exciting to see the
 creative applications of deep learning to single-cell biology that emerge over
 the next few years.
 
-TODO: https://github.com/greenelab/deep-review/issues/153
+`TODO: https://github.com/greenelab/deep-review/issues/153`
 
 ### Metagenomics
 
-**TODO: Add reference tags to this section**
+`TODO: Add reference tags to this section`
 Metagenomics (which refers to the study of genetic material, 16S rRNA 
 and/or whole-genome shotgun DNA, from microbial communities) has 
 revolutionized the study of micro-scale ecosystems within us and around us. 
