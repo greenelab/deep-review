@@ -228,26 +228,33 @@ provide one path forward [@doi:10.1016/j.jbi.2016.10.007], as do adversarial
 training examples [@doi:10.1101/095786]. We also expect the recently described
 data programming strategy [@arxiv:1605.07723] to play a role in addressing this
 challenge. In data programming, noisy automated labeling functions are
-integrated. While numerous writers have described data as the new oil [@url:http://ana.blogs.com/maestros/2006/11/data_is_the_new.html, @url:https://medium.com/twenty-one-hundred/data-is-the-new-oil-a-ludicrous-proposition-1d91bba4f294],
-Ratner, Bach, and Ré described training data as "The _New_ New Oil" [@url:http://hazyresearch.github.io/snorkel/blog/weak_supervision.html].
-Based on our review of research on deep learning methods to categorize disease,
-this rings true. We expect each of these approaches to play an important role
-if deep learning is going to transform how we analyze data to categorize states
-of human health. Finally, we don't expect that these methods will replace expert
-review. We expect them to complement expert review by allowing more efficient
-use of the costly practice of manual annotation.
+integrated. Numerous writers have described data as the new oil
+[@url:http://ana.blogs.com/maestros/2006/11/data_is_the_new.html, @url:https://medium.com/twenty-one-hundred/data-is-the-new-oil-a-ludicrous-proposition-1d91bba4f294].
+The idea behind this metaphor is that data are available in large quantities,
+valuable once refined, and the underlying resource that will enable a
+data-driven revolution in how work is done. Contrasting with this perspective,
+Ratner, Bach, and Ré described labeled training data as "The _New_ New Oil"
+[@url:http://hazyresearch.github.io/snorkel/blog/weak_supervision.html]. In this
+framing, data are abundant and not a scarce resource. Instead, new approaches
+to solve problems arise when labeled training data become sufficient to enable
+them. Based on our review of research on deep learning methods to categorize
+disease, the latter framing rings true. We expect each of these approaches to
+play an important role if deep learning is going to transform how we analyze
+data to categorize states of human health. Finally, we don't expect that these
+methods will replace expert review. We expect them to complement expert review
+by allowing more efficient use of the costly practice of manual annotation.
 
-###### "Right to explanation" laws and potential for discrimination
+###### Discrimination and "right to an explanation" laws
 
 In April 2016, the European Union adopted new rules regarding the use of
 personal information, the General Data Protection Regulation (GDPR)
-[@arxiv:1606.08813v3]. The new rules are perhaps best summed up by the phrase
-"right to explanation". Those who use machine learning algorithms must be able
-to explain how a decision was reached. For example, a clinician treating a
+[@arxiv:1606.08813v3]. A component of these rules can be summed up by the phrase
+"right to an explanation". Those who use machine learning algorithms must be
+able to explain how a decision was reached. For example, a clinician treating a
 patient who is aided by a machine learning algorithm may be expected to explain
-decisions that use the patient's data.  The new rules were designed to target
-categorization or recommendation systems, which inherently profile individuals,
-but can do so in ways that are discriminatory and unlawful `TODO: @traversc citation needed`.
+decisions that use the patient's data. The new rules were designed to target
+categorization or recommendation systems, which inherently profile individuals.
+Such systems can do so in ways that are discriminatory and unlawful `TODO: @traversc citation needed`.
 
 As datasets become larger and more complex, we may begin to identify
 relationships in data that are important for human health but difficult to
