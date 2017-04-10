@@ -106,6 +106,14 @@ if not broken_citations.empty:
     ''')
     raise SystemExit(message)
 
+# Check that no two standard_citations have the same citation_id
+# which could occur due to a hash collision
+collision_df = ref_df[['standard_citation', 'citation_id']].drop_duplicates()
+collision_df = collision_df[collision_df.citation_id.duplicated(keep=False)]
+if not collision_df.empty:
+    print(collision_df)
+    raise SystemExit(f'OMF! Hash collision. Congratulations.')
+
 # Duplicated citations
 print(f'''
 {len(ref_df)} unique citations strings extracted from text
