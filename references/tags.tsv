@@ -1,5 +1,6 @@
 tag	citation
 Abe	doi:10.1101/gr.634603
+Alipanahi2015_predicting	doi:10.1038/nmeth.3547
 AltaeTran2016_one_shot	arxiv:1611.03199
 Asgari	doi:10.1371/journal.pone.0141287
 blast	doi:10.1016/S0022-2836(05)80360-2
@@ -17,6 +18,7 @@ Chen2016_exprs_yeast	doi:10.1186/s12859-015-0852-1
 Chen2016_gene_expr	doi:10.1093/bioinformatics/btw074
 Chen2015_trans_species	doi:10.1093/bioinformatics/btv315
 Coates2013_cots_hpc	url:http://www.jmlr.org/proceedings/papers/v28/coates13.html
+Consortium2004_encode	doi:10.1126/science.1105136
 CudNN	arxiv:1410.0759
 Dahl2014_multi_qsar	arxiv:1406.1231
 Dean2012_nips_downpour	url:http://research.google.com/archive/large_deep_networks_nips2012.html
@@ -32,6 +34,7 @@ Faruqi	url:http://alifar76.github.io/sklearn-metrics/
 Gaublomme2015_th17	doi:10.1016/j.cell.2015.11.009
 Gawad2016_singlecell	doi:10.1038/nrg.2015.16
 Gerstein2016_scaling	doi:10.1186/s13059-016-0917-0
+Ghandi2014_enhanced	doi:10.1371/journal.pcbi.1003711
 Gomezb2016_automatic	arxiv:1610.02415
 Graphlab	doi:10.14778/2212351.2212354
 Gupta2015_exprs_yeast	doi:10.1101/031906
@@ -44,6 +47,7 @@ Hinton2015_dark_knowledge	arxiv:1503.02531
 Hinton2015_dk	arxiv:1503.02531v1
 Hochreiter	doi:10.1093/bioinformatics/btm247
 Hoff	doi:10.1093/nar/gkp327
+Horton1992_assessment	doi:10.1093/nar/20.16.4331
 Hubara2016_qnn	arxiv:1609.07061
 Jha2017_integrative_models	doi:10.1101/104869
 JuanMateu2016_t1d	doi:10.1530/EJE-15-0916
@@ -57,6 +61,7 @@ Koh2016_denoising	doi:10.1101/052118
 Krizhevsky2013_nips_cnn	url:https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf
 Krizhevsky2014_weird_trick	arxiv:1404.5997
 Lacey2016_dl_fpga	arxiv:1602.04283
+Lanchantin2016_motif	arxiv:1608.03644
 Li2014_minibatch	doi:10.1145/2623330.2623612
 Li2016_variation	doi:10.1126/science.aad9417
 Liang2015_exprs_cancer	doi:10.1109/TCBB.2014.2377729
@@ -92,13 +97,16 @@ Schmidhuber2014_dnn_overview	doi:10.1016/j.neunet.2014.09.003
 Scotti2016_missplicing	doi:10.1038/nrg.2015.3
 Segata	doi:10.1371/journal.pcbi.1004977
 Seide2014_parallel	doi:10.1109/ICASSP.2014.6853593
+Setty2015_seqgl	doi:10.1371/journal.pcbi.1004271
 Shaham2016_batch_effects	arxiv:1610.04181
+Shrikumar2016_blackbox	arxiv:1605.01713
 Singh2016_deepchrome	arxiv:1607.02078
 Silver2016_alphago	doi:10.1038/nature16961
 Sonderby	arxiv:1503.01919
 Soueidan	doi:10.1515/metgen-2016-0001
 Spark	doi:10.1145/2934664
 Stein2010_cloud	doi:10.1186/gb-2010-11-5-207
+Stormo2000_dna	doi:10.1093/bioinformatics/16.1.16
 Stratnikov	doi:10.1186/2049-2618-1-11
 Su2015_gpu	arxiv:1507.01239
 Sun2016_ensemble	arxiv:1606.00575
