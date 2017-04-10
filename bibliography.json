@@ -17597,6 +17597,1030 @@
     "id": "ref_191"
   },
   {
+    "indexed": {
+      "date-parts": [
+        [
+          2016,
+          12,
+          3
+        ]
+      ],
+      "date-time": "2016-12-03T09:40:43Z",
+      "timestamp": 1480758043341
+    },
+    "reference-count": 55,
+    "publisher": "Elsevier BV",
+    "issue": "6",
+    "license": [
+      {
+        "URL": "http://www.elsevier.com/tdm/userlicense/1.0/",
+        "start": {
+          "date-parts": [
+            [
+              2015,
+              12,
+              1
+            ]
+          ],
+          "date-time": "2015-12-01T00:00:00Z",
+          "timestamp": 1448928000000
+        },
+        "delay-in-days": 0,
+        "content-version": "tdm"
+      },
+      {
+        "URL": "http://www.elsevier.com/open-access/userlicense/1.0/",
+        "start": {
+          "date-parts": [
+            [
+              2016,
+              12,
+              3
+            ]
+          ],
+          "date-time": "2016-12-03T00:00:00Z",
+          "timestamp": 1480723200000
+        },
+        "delay-in-days": 368,
+        "content-version": "vor"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "cell.com",
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Cell"
+    ],
+    "cited-count": 0,
+    "published-print": {
+      "date-parts": [
+        [
+          2015,
+          12
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.cell.2015.11.009",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2015,
+          11,
+          19
+        ]
+      ],
+      "date-time": "2015-11-19T18:49:41Z",
+      "timestamp": 1447958981000
+    },
+    "page": "1400-1412",
+    "update-policy": "http://dx.doi.org/10.1016/elsevier_cm_policy",
+    "source": "CrossRef",
+    "title": "Single-Cell Genomics Unveils Critical Regulators of Th17 Cell Pathogenicity",
+    "prefix": "http://id.crossref.org/prefix/10.1016",
+    "volume": "163",
+    "author": [
+      {
+        "given": "Jellert T.",
+        "family": "Gaublomme",
+        "affiliation": []
+      },
+      {
+        "given": "Nir",
+        "family": "Yosef",
+        "affiliation": []
+      },
+      {
+        "given": "Youjin",
+        "family": "Lee",
+        "affiliation": []
+      },
+      {
+        "given": "Rona S.",
+        "family": "Gertner",
+        "affiliation": []
+      },
+      {
+        "given": "Li V.",
+        "family": "Yang",
+        "affiliation": []
+      },
+      {
+        "given": "Chuan",
+        "family": "Wu",
+        "affiliation": []
+      },
+      {
+        "given": "Pier Paolo",
+        "family": "Pandolfi",
+        "affiliation": []
+      },
+      {
+        "given": "Tak",
+        "family": "Mak",
+        "affiliation": []
+      },
+      {
+        "given": "Rahul",
+        "family": "Satija",
+        "affiliation": []
+      },
+      {
+        "given": "Alex K.",
+        "family": "Shalek",
+        "affiliation": []
+      },
+      {
+        "given": "Vijay K.",
+        "family": "Kuchroo",
+        "affiliation": []
+      },
+      {
+        "given": "Hongkun",
+        "family": "Park",
+        "affiliation": []
+      },
+      {
+        "given": "Aviv",
+        "family": "Regev",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/78",
+    "container-title": "Cell",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://api.elsevier.com/content/article/PII:S0092867415014890?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://api.elsevier.com/content/article/PII:S0092867415014890?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          12,
+          3
+        ]
+      ],
+      "date-time": "2016-12-03T08:02:49Z",
+      "timestamp": 1480752169000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2015,
+          12
+        ]
+      ]
+    },
+    "alternative-id": [
+      "S0092867415014890"
+    ],
+    "URL": "http://dx.doi.org/10.1016/j.cell.2015.11.009",
+    "citing-count": 55,
+    "subject": [
+      "Biochemistry, Genetics and Molecular Biology(all)"
+    ],
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Single-Cell Genomics Unveils Critical Regulators of Th17 Cell Pathogenicity",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Cell",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "http://dx.doi.org/10.1016/j.cell.2015.11.009",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "http://dx.doi.org/10.1016/j.cell.2015.10.068",
+        "name": "associatedlink",
+        "label": "CrossRef DOI link to the associated document"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "Copyright © 2015 Elsevier Inc. All rights reserved.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ],
+    "id": "ref_192"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2016,
+          11,
+          12
+        ]
+      ],
+      "date-time": "2016-11-12T13:54:32Z",
+      "timestamp": 1478958872059
+    },
+    "reference-count": 119,
+    "publisher": "Springer Nature",
+    "issue": "3",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Nat Rev Genet"
+    ],
+    "cited-count": 0,
+    "DOI": "10.1038/nrg.2015.16",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          1,
+          25
+        ]
+      ],
+      "date-time": "2016-01-25T09:18:09Z",
+      "timestamp": 1453713489000
+    },
+    "page": "175-188",
+    "source": "CrossRef",
+    "title": "Single-cell genome sequencing: current state of the science",
+    "prefix": "http://id.crossref.org/prefix/10.1038",
+    "volume": "17",
+    "author": [
+      {
+        "given": "Charles",
+        "family": "Gawad",
+        "affiliation": []
+      },
+      {
+        "given": "Winston",
+        "family": "Koh",
+        "affiliation": []
+      },
+      {
+        "given": "Stephen R.",
+        "family": "Quake",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/339",
+    "published-online": {
+      "date-parts": [
+        [
+          2016,
+          1,
+          25
+        ]
+      ]
+    },
+    "container-title": "Nature Reviews Genetics",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          2,
+          17
+        ]
+      ],
+      "date-time": "2016-02-17T05:42:54Z",
+      "timestamp": 1455687774000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          1,
+          25
+        ]
+      ]
+    },
+    "alternative-id": [
+      "nrg.2015.16"
+    ],
+    "URL": "http://dx.doi.org/10.1038/nrg.2015.16",
+    "citing-count": 119,
+    "subject": [
+      "Genetics(clinical)",
+      "Genetics",
+      "Molecular Biology"
+    ],
+    "id": "ref_193"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          28
+        ]
+      ],
+      "date-time": "2017-01-28T07:40:45Z",
+      "timestamp": 1485589245367
+    },
+    "posted": {
+      "date-parts": [
+        [
+          2016,
+          5,
+          7
+        ]
+      ]
+    },
+    "group-title": "Bioinformatics",
+    "reference-count": 0,
+    "publisher": "Cold Spring Harbor Laboratory Press",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "accepted": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          27
+        ]
+      ]
+    },
+    "cited-count": 0,
+    "abstract": "<jats:p>Motivation: Chromatin immunoprecipitation sequencing (ChIP-seq) experiments are commonly used to obtain genome-wide profiles of histone modifications associated with different types of functional genomic elements. However, the quality of histone ChIP-seq data is affected by a myriad of experimental parameters such as the amount of input DNA, antibody specificity, ChIP enrichment, and sequencing depth. Making accurate inferences from chromatin profiling experiments that involve diverse experimental parameters is challenging.  Results: We introduce a convolutional denoising algorithm, Coda, that uses convolutional neural networks to learn a mapping from suboptimal to high-quality histone ChIP-seq data. This overcomes various sources of noise and variability, substantially enhancing and recovering signal when applied to low-quality chromatin profiling datasets across individuals, cell types, and species. Our method has the potential to improve data quality at reduced costs. More broadly, this approach -- using a high-dimensional discriminative model to encode a generative noise process -- is generally applicable to other biological domains where it is easy to generate noisy data but difficult to analytically characterize the noise or underlying data distribution. Availability: https://github.com/kundajelab/coda</jats:p>",
+    "DOI": "10.1101/052118",
+    "type": "manuscript",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          5,
+          8
+        ]
+      ],
+      "date-time": "2016-05-08T05:15:05Z",
+      "timestamp": 1462684505000
+    },
+    "source": "CrossRef",
+    "title": "Denoising genome-wide histone ChIP-seq with convolutional neural networks",
+    "prefix": "http://id.crossref.org/prefix/10.1101",
+    "author": [
+      {
+        "given": "Pang Wei",
+        "family": "Koh",
+        "affiliation": []
+      },
+      {
+        "given": "Emma",
+        "family": "Pierson",
+        "affiliation": []
+      },
+      {
+        "given": "Anshul",
+        "family": "Kundaje",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/246",
+    "container-title": null,
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          28
+        ]
+      ],
+      "date-time": "2017-01-28T06:10:24Z",
+      "timestamp": 1485583824000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          5,
+          7
+        ]
+      ]
+    },
+    "URL": "http://dx.doi.org/10.1101/052118",
+    "citing-count": 0,
+    "id": "ref_195"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2016,
+          11,
+          12
+        ]
+      ],
+      "date-time": "2016-11-12T13:56:43Z",
+      "timestamp": 1478959003995
+    },
+    "reference-count": 0,
+    "publisher": "F1000 Research, Ltd.",
+    "content-domain": {
+      "domain": [
+        "f1000research.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "F1000Res"
+    ],
+    "cited-count": 0,
+    "DOI": "10.12688/f1000research.7223.1",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          2,
+          17
+        ]
+      ],
+      "date-time": "2016-02-17T11:35:11Z",
+      "timestamp": 1455708911000
+    },
+    "update-policy": "http://dx.doi.org/10.12688/f1000research.crossmark-policy",
+    "source": "CrossRef",
+    "title": "Single-cell transcriptome sequencing: recent advances and remaining challenges",
+    "prefix": "http://id.crossref.org/prefix/10.12688",
+    "author": [
+      {
+        "given": "Serena",
+        "family": "Liu",
+        "affiliation": []
+      },
+      {
+        "given": "Cole",
+        "family": "Trapnell",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/4950",
+    "published-online": {
+      "date-parts": [
+        [
+          2016,
+          2,
+          17
+        ]
+      ]
+    },
+    "container-title": "F1000Research",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          2,
+          17
+        ]
+      ],
+      "date-time": "2016-02-17T16:05:07Z",
+      "timestamp": 1455725107000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          2,
+          17
+        ]
+      ]
+    },
+    "URL": "http://dx.doi.org/10.12688/f1000research.7223.1",
+    "citing-count": 0,
+    "assertion": [
+      {
+        "value": "Indexed",
+        "URL": "http://f1000research.com/articles/5-182/v1#article-reports",
+        "order": 0,
+        "name": "referee-status",
+        "label": "Referee status",
+        "group": {
+          "name": "current-referee-status",
+          "label": "Current Referee Status"
+        }
+      },
+      {
+        "value": "10.5256/f1000research.7781.r12513, Sten Linnarsson, Unit of Molecular Neurobiology, Department of Medical Biochemistry and Biophysics, Karolinska Institutet, Stockholm, Sweden, 17 Feb 2016, version 1, indexed",
+        "URL": "http://f1000research.com/articles/5-182/v1#referee-response-12513",
+        "order": 0,
+        "name": "referee-response-12513",
+        "label": "Referee Report",
+        "group": {
+          "name": "article-reports",
+          "label": "Article Reports"
+        }
+      },
+      {
+        "value": "10.5256/f1000research.7781.r12514, Roger S Lasken, Sara B Linker, J. Craig Venter Institute, La Jolla, CA, 92121, USA, 17 Feb 2016, version 1, indexed",
+        "URL": "http://f1000research.com/articles/5-182/v1#referee-response-12514",
+        "order": 1,
+        "name": "referee-response-12514",
+        "label": "Referee Report",
+        "group": {
+          "name": "article-reports",
+          "label": "Article Reports"
+        }
+      },
+      {
+        "value": "CT is supported by an NIH DP2 HD088158 grant, an Alfred P. Sloan Fellowship, and a Dale F. Frey Award for Breakthrough Scientists from the Damon Runyon Cancer Research Foundation. SL is supported by an NSF IGERT grant DGE-1258485.The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.",
+        "order": 2,
+        "name": "grant-information",
+        "label": "Grant Information"
+      },
+      {
+        "value": "This is an open access article distributed under the terms of the Creative Commons Attribution Licence, which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.",
+        "order": 0,
+        "name": "copyright-info",
+        "label": "Copyright"
+      }
+    ],
+    "id": "ref_196"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2016,
+          12,
+          23
+        ]
+      ],
+      "date-time": "2016-12-23T10:50:12Z",
+      "timestamp": 1482490212960
+    },
+    "reference-count": 54,
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "issue": "6256",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Science"
+    ],
+    "cited-count": 0,
+    "published-print": {
+      "date-parts": [
+        [
+          2015,
+          10,
+          2
+        ]
+      ]
+    },
+    "DOI": "10.1126/science.aab1785",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2015,
+          10,
+          1
+        ]
+      ],
+      "date-time": "2015-10-01T18:14:33Z",
+      "timestamp": 1443723273000
+    },
+    "page": "94-98",
+    "source": "CrossRef",
+    "title": "Somatic mutation in single human neurons tracks developmental and transcriptional history",
+    "prefix": "http://id.crossref.org/prefix/10.1126",
+    "volume": "350",
+    "author": [
+      {
+        "given": "M. A.",
+        "family": "Lodato",
+        "affiliation": []
+      },
+      {
+        "given": "M. B.",
+        "family": "Woodworth",
+        "affiliation": []
+      },
+      {
+        "given": "S.",
+        "family": "Lee",
+        "affiliation": []
+      },
+      {
+        "given": "G. D.",
+        "family": "Evrony",
+        "affiliation": []
+      },
+      {
+        "given": "B. K.",
+        "family": "Mehta",
+        "affiliation": []
+      },
+      {
+        "given": "A.",
+        "family": "Karger",
+        "affiliation": []
+      },
+      {
+        "given": "S.",
+        "family": "Lee",
+        "affiliation": []
+      },
+      {
+        "given": "T. W.",
+        "family": "Chittenden",
+        "affiliation": []
+      },
+      {
+        "given": "A. M.",
+        "family": "D'Gama",
+        "affiliation": []
+      },
+      {
+        "given": "X.",
+        "family": "Cai",
+        "affiliation": []
+      },
+      {
+        "given": "L. J.",
+        "family": "Luquette",
+        "affiliation": []
+      },
+      {
+        "given": "E.",
+        "family": "Lee",
+        "affiliation": []
+      },
+      {
+        "given": "P. J.",
+        "family": "Park",
+        "affiliation": []
+      },
+      {
+        "given": "C. A.",
+        "family": "Walsh",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/221",
+    "published-online": {
+      "date-parts": [
+        [
+          2015,
+          10,
+          1
+        ]
+      ]
+    },
+    "container-title": "Science",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          12,
+          23
+        ]
+      ],
+      "date-time": "2016-12-23T09:17:57Z",
+      "timestamp": 1482484677000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2015,
+          10,
+          1
+        ]
+      ]
+    },
+    "URL": "http://dx.doi.org/10.1126/science.aab1785",
+    "citing-count": 54,
+    "subject": [
+      "General"
+    ],
+    "id": "ref_197"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          2,
+          22
+        ]
+      ],
+      "date-time": "2017-02-22T07:40:31Z",
+      "timestamp": 1487749231907
+    },
+    "posted": {
+      "date-parts": [
+        [
+          2017,
+          2,
+          21
+        ]
+      ]
+    },
+    "group-title": "Genomics",
+    "reference-count": 0,
+    "publisher": "Cold Spring Harbor Laboratory Press",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "accepted": {
+      "date-parts": [
+        [
+          2017,
+          2,
+          21
+        ]
+      ]
+    },
+    "cited-count": 0,
+    "abstract": "<jats:p>Organizing single cells along a developmental trajectory has emerged as a powerful tool for understanding how gene regulation governs cell fate decisions. However, learning the structure of complex single-cell trajectories with two or more branches remains a challenging computational problem. We present Monocle 2, which uses reversed graph embedding to reconstruct single-cell trajectories in a fully unsupervised manner. Monocle 2 learns an explicit principal graph to describe the data, greatly improving the robustness and accuracy of its trajectories compared to other algorithms. Monocle 2 uncovered a new, alternative cell fate in what we previously reported to be a linear trajectory for differentiating myoblasts. We also reconstruct branched trajectories for two studies of blood development, and show that loss of function mutations in key lineage transcription factors diverts cells to alternative branches on the a trajectory. Monocle 2 is thus a powerful tool for analyzing cell fate decisions with single-cell genomics.</jats:p>",
+    "DOI": "10.1101/110668",
+    "type": "manuscript",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          2,
+          22
+        ]
+      ],
+      "date-time": "2017-02-22T06:10:18Z",
+      "timestamp": 1487743818000
+    },
+    "source": "CrossRef",
+    "title": "Reversed graph embedding resolves complex single-cell developmental trajectories",
+    "prefix": "http://id.crossref.org/prefix/10.1101",
+    "author": [
+      {
+        "given": "Xiaojie",
+        "family": "Qiu",
+        "affiliation": []
+      },
+      {
+        "given": "Qi",
+        "family": "Mao",
+        "affiliation": []
+      },
+      {
+        "given": "Ying",
+        "family": "Tang",
+        "affiliation": []
+      },
+      {
+        "given": "Li",
+        "family": "Wang",
+        "affiliation": []
+      },
+      {
+        "given": "Raghav",
+        "family": "Chawla",
+        "affiliation": []
+      },
+      {
+        "given": "Hannah",
+        "family": "Pliner",
+        "affiliation": []
+      },
+      {
+        "given": "Cole",
+        "family": "Trapnell",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/246",
+    "container-title": null,
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          2,
+          22
+        ]
+      ],
+      "date-time": "2017-02-22T06:10:32Z",
+      "timestamp": 1487743832000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          2,
+          21
+        ]
+      ]
+    },
+    "URL": "http://dx.doi.org/10.1101/110668",
+    "citing-count": 0,
+    "id": "ref_198"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          16
+        ]
+      ],
+      "date-time": "2017-01-16T13:41:29Z",
+      "timestamp": 1484574089739
+    },
+    "reference-count": 160,
+    "publisher": "Annual Reviews",
+    "issue": "1",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Annu. Rev. Genet."
+    ],
+    "cited-count": 0,
+    "published-print": {
+      "date-parts": [
+        [
+          2016,
+          11,
+          23
+        ]
+      ]
+    },
+    "DOI": "10.1146/annurev-genet-120215-034854",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          11,
+          29
+        ]
+      ],
+      "date-time": "2016-11-29T00:34:19Z",
+      "timestamp": 1480379659000
+    },
+    "page": "267-291",
+    "source": "CrossRef",
+    "title": "Single-Cell and Single-Molecule Analysis of Gene Expression Regulation",
+    "prefix": "http://id.crossref.org/prefix/10.1146",
+    "volume": "50",
+    "author": [
+      {
+        "given": "Maria",
+        "family": "Vera",
+        "affiliation": [
+          {
+            "name": "Department of Anatomy and Structural Biology, Albert Einstein College of Medicine, New York, NY 10461; email: , , , "
+          }
+        ]
+      },
+      {
+        "given": "Jeetayu",
+        "family": "Biswas",
+        "affiliation": [
+          {
+            "name": "Department of Anatomy and Structural Biology, Albert Einstein College of Medicine, New York, NY 10461; email: , , , "
+          }
+        ]
+      },
+      {
+        "given": "Adrien",
+        "family": "Senecal",
+        "affiliation": [
+          {
+            "name": "Department of Anatomy and Structural Biology, Albert Einstein College of Medicine, New York, NY 10461; email: , , , "
+          }
+        ]
+      },
+      {
+        "given": "Robert H.",
+        "family": "Singer",
+        "affiliation": [
+          {
+            "name": "Department of Anatomy and Structural Biology, Albert Einstein College of Medicine, New York, NY 10461; email: , , , "
+          },
+          {
+            "name": "Janelia Research Campus of the HHMI, Ashburn, Virginia 20147"
+          }
+        ]
+      },
+      {
+        "given": "Hye Yoon",
+        "family": "Park",
+        "affiliation": [
+          {
+            "name": "Department of Physics and Astronomy, Seoul National University, Seoul, 08826, Korea; email: "
+          },
+          {
+            "name": "Institute of Molecular Biology and Genetics, Seoul National University, Seoul, 08826, Korea"
+          }
+        ]
+      }
+    ],
+    "member": "http://id.crossref.org/member/22",
+    "container-title": "Annual Review of Genetics",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          16
+        ]
+      ],
+      "date-time": "2017-01-16T12:30:17Z",
+      "timestamp": 1484569817000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          11,
+          23
+        ]
+      ]
+    },
+    "alternative-id": [
+      "10.1146/annurev-genet-120215-034854"
+    ],
+    "URL": "http://dx.doi.org/10.1146/annurev-genet-120215-034854",
+    "issn-type": [
+      {
+        "value": "0066-4197",
+        "type": "print"
+      },
+      {
+        "value": "1545-2948",
+        "type": "electronic"
+      }
+    ],
+    "citing-count": 160,
+    "subject": [
+      "Genetics"
+    ],
+    "id": "ref_199"
+  },
+  {
     "abstract": "After a more than decade-long period of relatively little research activity in the area of recurrent neural networks, several new developments will be reviewed here that have allowed substantial progress both in understanding and in technical solutions towards more efficient training of recurrent networks. These advances have been motivated by and related to the optimization issues surrounding deep learning. Although recurrent networks are extremely powerful in what they can in principle represent in terms of modelling sequences,their training is plagued by two aspects of the same issue regarding the learning of long-term dependencies. Experiments reported here evaluate the use of clipping gradients, spanning longer time ranges with leaky integration, advanced momentum techniques, using more powerful output probability models, and encouraging sparser gradients to help symmetry breaking and credit assignment. The experiments are performed on text and music data and show off the combined effects of these techniques in generally improving both training and test error.",
     "author": [
       {
@@ -18931,6 +19955,38 @@
       ]
     },
     "title": "Efficient estimation of word representations in vector space",
+    "type": "article-journal"
+  },
+  {
+    "abstract": "Deeper neural networks are more difficult to train. We present a residual learning framework to ease the training of networks that are substantially deeper than those used previously. We explicitly reformulate the layers as learning residual functions with reference to the layer inputs, instead of learning unreferenced functions. We provide comprehensive empirical evidence showing that these residual networks are easier to optimize, and can gain accuracy from considerably increased depth. On the ImageNet dataset we evaluate residual nets with a depth of up to 152 layers—8x deeper than VGG nets but still having lower complexity. An ensemble of these residual nets achieves 3.57ILSVRC 2015 classification task. We also present analysis on CIFAR-10 with 100 and 1000 layers. The depth of representations is of central importance for many visual recognition tasks. Solely due to our extremely deep representations, we obtain a 28nets are foundations of our submissions to ILSVRC & COCO 2015 competitions, where we also won the 1st places on the tasks of ImageNet detection, ImageNet localization, COCO detection, and COCO segmentation.",
+    "author": [
+      {
+        "family": "He",
+        "given": "Kaiming"
+      },
+      {
+        "family": "Zhang",
+        "given": "Xiangyu"
+      },
+      {
+        "family": "Ren",
+        "given": "Shaoqing"
+      },
+      {
+        "family": "Sun",
+        "given": "Jian"
+      }
+    ],
+    "id": "ref_194",
+    "issued": {
+      "date-parts": [
+        [
+          2015,
+          12
+        ]
+      ]
+    },
+    "title": "Deep residual learning for image recognition",
     "type": "article-journal"
   }
 ]
