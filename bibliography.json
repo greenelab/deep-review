@@ -18621,6 +18621,682 @@
     "id": "ref_199"
   },
   {
+    "indexed": {
+      "date-parts": [
+        [
+          2016,
+          10,
+          30
+        ]
+      ],
+      "date-time": "2016-10-30T14:53:07Z",
+      "timestamp": 1477839187672
+    },
+    "reference-count": 26,
+    "publisher": "Springer Nature",
+    "issue": "10",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Nat Meth"
+    ],
+    "cited-count": 0,
+    "DOI": "10.1038/nmeth.3547",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2015,
+          8,
+          24
+        ]
+      ],
+      "date-time": "2015-08-24T15:20:38Z",
+      "timestamp": 1440429638000
+    },
+    "page": "931-934",
+    "source": "CrossRef",
+    "title": "Predicting effects of noncoding variants with deep learning–based sequence model",
+    "prefix": "http://id.crossref.org/prefix/10.1038",
+    "volume": "12",
+    "author": [
+      {
+        "given": "Jian",
+        "family": "Zhou",
+        "affiliation": []
+      },
+      {
+        "given": "Olga G",
+        "family": "Troyanskaya",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/339",
+    "published-online": {
+      "date-parts": [
+        [
+          2015,
+          8,
+          24
+        ]
+      ]
+    },
+    "container-title": "Nature Methods",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2015,
+          9,
+          29
+        ]
+      ],
+      "date-time": "2015-09-29T15:07:31Z",
+      "timestamp": 1443539251000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2015,
+          8,
+          24
+        ]
+      ]
+    },
+    "alternative-id": [
+      "nmeth.3547"
+    ],
+    "URL": "http://dx.doi.org/10.1038/nmeth.3547",
+    "citing-count": 26,
+    "subject": [
+      "Biotechnology",
+      "Cell Biology",
+      "Biochemistry",
+      "Molecular Biology"
+    ],
+    "id": "ref_200"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2016,
+          12,
+          23
+        ]
+      ],
+      "date-time": "2016-12-23T21:42:22Z",
+      "timestamp": 1482529342987
+    },
+    "reference-count": 0,
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "issue": "5696",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Science"
+    ],
+    "cited-count": 0,
+    "published-print": {
+      "date-parts": [
+        [
+          2004,
+          10,
+          22
+        ]
+      ]
+    },
+    "DOI": "10.1126/science.1105136",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2004,
+          10,
+          21
+        ]
+      ],
+      "date-time": "2004-10-21T20:53:03Z",
+      "timestamp": 1098391983000
+    },
+    "page": "636-640",
+    "source": "CrossRef",
+    "title": "The ENCODE (ENCyclopedia Of DNA Elements) Project",
+    "prefix": "http://id.crossref.org/prefix/10.1126",
+    "volume": "306",
+    "author": [
+      {
+        "name": "The ENCODE Project Consortium",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/221",
+    "container-title": "Science",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          12,
+          23
+        ]
+      ],
+      "date-time": "2016-12-23T20:17:32Z",
+      "timestamp": 1482524252000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2004,
+          10,
+          22
+        ]
+      ]
+    },
+    "URL": "http://dx.doi.org/10.1126/science.1105136",
+    "citing-count": 0,
+    "subject": [
+      "General"
+    ],
+    "id": "ref_201"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          2,
+          28
+        ]
+      ],
+      "date-time": "2017-02-28T09:10:55Z",
+      "timestamp": 1488273055242
+    },
+    "reference-count": 38,
+    "publisher": "Public Library of Science (PLoS)",
+    "issue": "7",
+    "license": [
+      {
+        "URL": "http://creativecommons.org/licenses/by/4.0/",
+        "start": {
+          "date-parts": [
+            [
+              2014,
+              7,
+              17
+            ]
+          ],
+          "date-time": "2014-07-17T00:00:00Z",
+          "timestamp": 1405555200000
+        },
+        "delay-in-days": 0,
+        "content-version": "vor"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "www.ploscompbiol.org"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "PLoS Comput Biol"
+    ],
+    "cited-count": 0,
+    "DOI": "10.1371/journal.pcbi.1003711",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2014,
+          7,
+          17
+        ]
+      ],
+      "date-time": "2014-07-17T18:43:05Z",
+      "timestamp": 1405622585000
+    },
+    "page": "e1003711",
+    "update-policy": "http://dx.doi.org/10.1371/journal.pcbi.corrections_policy",
+    "source": "CrossRef",
+    "title": "Enhanced Regulatory Sequence Prediction Using Gapped k-mer Features",
+    "prefix": "http://id.crossref.org/prefix/10.1371",
+    "volume": "10",
+    "author": [
+      {
+        "given": "Mahmoud",
+        "family": "Ghandi",
+        "affiliation": []
+      },
+      {
+        "given": "Dongwon",
+        "family": "Lee",
+        "affiliation": []
+      },
+      {
+        "given": "Morteza",
+        "family": "Mohammad-Noori",
+        "affiliation": []
+      },
+      {
+        "given": "Michael A.",
+        "family": "Beer",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/340",
+    "published-online": {
+      "date-parts": [
+        [
+          2014,
+          7,
+          17
+        ]
+      ]
+    },
+    "container-title": "PLoS Computational Biology",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          2,
+          28
+        ]
+      ],
+      "date-time": "2017-02-28T08:10:42Z",
+      "timestamp": 1488269442000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "editor": [
+      {
+        "given": "Quaid",
+        "family": "Morris",
+        "affiliation": []
+      }
+    ],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2014,
+          7,
+          17
+        ]
+      ]
+    },
+    "URL": "http://dx.doi.org/10.1371/journal.pcbi.1003711",
+    "issn-type": [
+      {
+        "value": "1553-7358",
+        "type": "electronic"
+      }
+    ],
+    "citing-count": 38,
+    "subject": [
+      "Ecology",
+      "Modelling and Simulation",
+      "Computational Theory and Mathematics",
+      "Genetics",
+      "Ecology, Evolution, Behavior and Systematics",
+      "Molecular Biology",
+      "Cellular and Molecular Neuroscience"
+    ],
+    "id": "ref_202"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          23
+        ]
+      ],
+      "date-time": "2017-01-23T21:42:23Z",
+      "timestamp": 1485207743748
+    },
+    "reference-count": 0,
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "16",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Nucl Acids Res"
+    ],
+    "cited-count": 0,
+    "published-print": {
+      "date-parts": [
+        [
+          1992
+        ]
+      ]
+    },
+    "DOI": "10.1093/nar/20.16.4331",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2007,
+          1,
+          5
+        ]
+      ],
+      "date-time": "2007-01-05T02:27:37Z",
+      "timestamp": 1167964057000
+    },
+    "page": "4331-4338",
+    "source": "CrossRef",
+    "title": "An assessment of neural network and statistical approaches for prediction of E.coli Promoter sites",
+    "prefix": "http://id.crossref.org/prefix/10.1093",
+    "volume": "20",
+    "author": [
+      {
+        "given": "Paul B.",
+        "family": "Horton",
+        "affiliation": []
+      },
+      {
+        "given": "Minoru",
+        "family": "Kanehisa",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/286",
+    "container-title": "Nucleic Acids Research",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          23
+        ]
+      ],
+      "date-time": "2017-01-23T20:35:56Z",
+      "timestamp": 1485203756000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          1992
+        ]
+      ]
+    },
+    "URL": "http://dx.doi.org/10.1093/nar/20.16.4331",
+    "issn-type": [
+      {
+        "value": "0305-1048",
+        "type": "print"
+      },
+      {
+        "value": "1362-4962",
+        "type": "electronic"
+      }
+    ],
+    "citing-count": 0,
+    "subject": [
+      "Genetics"
+    ],
+    "id": "ref_203"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          2,
+          28
+        ]
+      ],
+      "date-time": "2017-02-28T12:41:04Z",
+      "timestamp": 1488285664146
+    },
+    "reference-count": 49,
+    "publisher": "Public Library of Science (PLoS)",
+    "issue": "5",
+    "license": [
+      {
+        "URL": "http://creativecommons.org/licenses/by/4.0/",
+        "start": {
+          "date-parts": [
+            [
+              2015,
+              5,
+              27
+            ]
+          ],
+          "date-time": "2015-05-27T00:00:00Z",
+          "timestamp": 1432684800000
+        },
+        "delay-in-days": 0,
+        "content-version": "vor"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "www.ploscompbiol.org"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "PLoS Comput Biol"
+    ],
+    "cited-count": 0,
+    "DOI": "10.1371/journal.pcbi.1004271",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2015,
+          5,
+          28
+        ]
+      ],
+      "date-time": "2015-05-28T10:44:43Z",
+      "timestamp": 1432809883000
+    },
+    "page": "e1004271",
+    "update-policy": "http://dx.doi.org/10.1371/journal.pcbi.corrections_policy",
+    "source": "CrossRef",
+    "title": "SeqGL Identifies Context-Dependent Binding Signals in Genome-Wide Regulatory Element Maps",
+    "prefix": "http://id.crossref.org/prefix/10.1371",
+    "volume": "11",
+    "author": [
+      {
+        "given": "Manu",
+        "family": "Setty",
+        "affiliation": []
+      },
+      {
+        "given": "Christina S.",
+        "family": "Leslie",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/340",
+    "published-online": {
+      "date-parts": [
+        [
+          2015,
+          5,
+          27
+        ]
+      ]
+    },
+    "container-title": "PLOS Computational Biology",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          2,
+          28
+        ]
+      ],
+      "date-time": "2017-02-28T11:22:20Z",
+      "timestamp": 1488280940000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "editor": [
+      {
+        "given": "Zhiping",
+        "family": "Weng",
+        "affiliation": []
+      }
+    ],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2015,
+          5,
+          27
+        ]
+      ]
+    },
+    "URL": "http://dx.doi.org/10.1371/journal.pcbi.1004271",
+    "issn-type": [
+      {
+        "value": "1553-7358",
+        "type": "electronic"
+      }
+    ],
+    "citing-count": 49,
+    "subject": [
+      "Ecology",
+      "Modelling and Simulation",
+      "Computational Theory and Mathematics",
+      "Genetics",
+      "Ecology, Evolution, Behavior and Systematics",
+      "Molecular Biology",
+      "Cellular and Molecular Neuroscience"
+    ],
+    "id": "ref_205"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          13
+        ]
+      ],
+      "date-time": "2017-01-13T18:40:10Z",
+      "timestamp": 1484332810538
+    },
+    "reference-count": 0,
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "1",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Bioinformatics"
+    ],
+    "cited-count": 0,
+    "published-print": {
+      "date-parts": [
+        [
+          2000,
+          1,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1093/bioinformatics/16.1.16",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2002,
+          7,
+          26
+        ]
+      ],
+      "date-time": "2002-07-26T22:47:12Z",
+      "timestamp": 1027723632000
+    },
+    "page": "16-23",
+    "source": "CrossRef",
+    "title": "DNA binding sites: representation and discovery",
+    "prefix": "http://id.crossref.org/prefix/10.1093",
+    "volume": "16",
+    "author": [
+      {
+        "given": "G. D.",
+        "family": "Stormo",
+        "affiliation": []
+      }
+    ],
+    "member": "http://id.crossref.org/member/286",
+    "container-title": "Bioinformatics",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          13
+        ]
+      ],
+      "date-time": "2017-01-13T17:19:31Z",
+      "timestamp": 1484327971000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2000,
+          1,
+          1
+        ]
+      ]
+    },
+    "URL": "http://dx.doi.org/10.1093/bioinformatics/16.1.16",
+    "issn-type": [
+      {
+        "value": "1367-4803",
+        "type": "print"
+      },
+      {
+        "value": "1460-2059",
+        "type": "electronic"
+      }
+    ],
+    "citing-count": 0,
+    "subject": [
+      "Statistics and Probability",
+      "Computational Theory and Mathematics",
+      "Biochemistry",
+      "Molecular Biology",
+      "Computational Mathematics",
+      "Computer Science Applications"
+    ],
+    "id": "ref_207"
+  },
+  {
     "abstract": "After a more than decade-long period of relatively little research activity in the area of recurrent neural networks, several new developments will be reviewed here that have allowed substantial progress both in understanding and in technical solutions towards more efficient training of recurrent networks. These advances have been motivated by and related to the optimization issues surrounding deep learning. Although recurrent networks are extremely powerful in what they can in principle represent in terms of modelling sequences,their training is plagued by two aspects of the same issue regarding the learning of long-term dependencies. Experiments reported here evaluate the use of clipping gradients, spanning longer time ranges with leaky integration, advanced momentum techniques, using more powerful output probability models, and encouraging sparser gradients to help symmetry breaking and credit assignment. The experiments are performed on text and music data and show off the combined effects of these techniques in generally improving both training and test error.",
     "author": [
       {
@@ -19987,6 +20663,72 @@
       ]
     },
     "title": "Deep residual learning for image recognition",
+    "type": "article-journal"
+  },
+  {
+    "abstract": "Deep neural network (DNN) models have recently obtained state-of-the-art prediction accuracy for the transcription factor binding (TFBS) site classification task. However, it remains unclear how these approaches identify meaningful DNA sequence signals and give insights as to why TFs bind to certain locations. In this paper, we propose a toolkit called the Deep Motif Dashboard (DeMo Dashboard) which provides a suite of visualization strategies to extract motifs, or sequence patterns from deep neural network models for TFBS classification. We demonstrate how to visualize and understand three important DNN models: convolutional, recurrent, and convolutional-recurrent networks. Our first visualization method is finding a test sequence’s saliency map which uses first-order derivatives to describe the importance of each nucleotide in making the final prediction. Second, considering recurrent models make predictions in a temporal manner (from one end of a TFBS sequence to the other), we introduce temporal output scores, indicating the prediction score of a model over time for a sequential input. Lastly, a class-specific visualization strategy finds the optimal input sequence for a given TFBS positive class via stochastic gradient optimization. Our experimental results indicate that a convolutional-recurrent architecture performs the best among the three architectures. The visualization techniques indicate that CNN-RNN makes predictions by modeling both motifs as well as dependencies among them.",
+    "author": [
+      {
+        "family": "Lanchantin",
+        "given": "Jack"
+      },
+      {
+        "family": "Singh",
+        "given": "Ritambhara"
+      },
+      {
+        "family": "Wang",
+        "given": "Beilun"
+      },
+      {
+        "family": "Qi",
+        "given": "Yanjun"
+      }
+    ],
+    "id": "ref_204",
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          8
+        ]
+      ]
+    },
+    "title": "Deep motif dashboard: Visualizing and understanding genomic sequences using deep neural networks",
+    "title-short": "Deep motif dashboard",
+    "type": "article-journal"
+  },
+  {
+    "abstract": "The purported “black box” nature of neural networks is a barrier to adoption in applications where interpretability is essential. Here we present DeepLIFT (Learning Important FeaTures), an efficient and effective method for computing importance scores in a neural network. DeepLIFT compares the activation of each neuron to its ’reference activation’ and assigns contribution scores according to the difference. We apply DeepLIFT to models trained on natural images and genomic data, and show significant advantages over gradient-based methods.",
+    "author": [
+      {
+        "family": "Shrikumar",
+        "given": "Avanti"
+      },
+      {
+        "family": "Greenside",
+        "given": "Peyton"
+      },
+      {
+        "family": "Shcherbina",
+        "given": "Anna"
+      },
+      {
+        "family": "Kundaje",
+        "given": "Anshul"
+      }
+    ],
+    "id": "ref_206",
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          5
+        ]
+      ]
+    },
+    "title": "Not just a black box: Learning important features through propagating activation differences",
+    "title-short": "Not just a black box",
     "type": "article-journal"
   }
 ]

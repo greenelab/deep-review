@@ -94,6 +94,7 @@ text	citation	standard_citation	citation_id
 @pmid:24159271	pmid:24159271	pmid:24159271	ref_91
 @pmid:27134610	pmid:27134610	pmid:27134610	ref_92
 @tag:Abe	doi:10.1101/gr.634603	doi:10.1101/gr.634603	ref_93
+@tag:Alipanahi2015_predicting	doi:10.1038/nmeth.3547	doi:10.1038/nmeth.3547	ref_200
 @tag:AltaeTran2016_one_shot	arxiv:1611.03199	arxiv:1611.03199	ref_94
 @tag:Angermueller2016_single_methyl	doi:10.1101/055715	doi:10.1101/055715	ref_95
 @tag:Arvaniti2016_rare_subsets	doi:10.1101/046508	doi:10.1101/046508	ref_96
@@ -110,6 +111,7 @@ text	citation	standard_citation	citation_id
 @tag:Chen2016_exprs_yeast	doi:10.1186/s12859-015-0852-1	doi:10.1186/s12859-015-0852-1	ref_106
 @tag:Chen2016_gene_expr	doi:10.1093/bioinformatics/btw074	doi:10.1093/bioinformatics/btw074	ref_107
 @tag:Coates2013_cots_hpc	url:http://www.jmlr.org/proceedings/papers/v28/coates13.html	url:http://www.jmlr.org/proceedings/papers/v28/coates13.html	ref_108
+@tag:Consortium2004_encode	doi:10.1126/science.1105136	doi:10.1126/science.1105136	ref_201
 @tag:CudNN	arxiv:1410.0759	arxiv:1410.0759	ref_109
 @tag:Dean2012_nips_downpour	url:http://research.google.com/archive/large_deep_networks_nips2012.html	url:http://research.google.com/archive/large_deep_networks_nips2012.html	ref_110
 @tag:Ding	doi:10.1186/s12859-015-0753-3	doi:10.1186/s12859-015-0753-3	ref_111
@@ -123,6 +125,7 @@ text	citation	standard_citation	citation_id
 @tag:Gaublomme2015_th17	doi:10.1016/j.cell.2015.11.009	doi:10.1016/j.cell.2015.11.009	ref_192
 @tag:Gawad2016_singlecell	doi:10.1038/nrg.2015.16	doi:10.1038/nrg.2015.16	ref_193
 @tag:Gerstein2016_scaling	doi:10.1186/s13059-016-0917-0	doi:10.1186/s13059-016-0917-0	ref_119
+@tag:Ghandi2014_enhanced	doi:10.1371/journal.pcbi.1003711	doi:10.1371/journal.pcbi.1003711	ref_202
 @tag:Gomezb2016_automatic	arxiv:1610.02415	arxiv:1610.02415	ref_120
 @tag:Graphlab	doi:10.14778/2212351.2212354	doi:10.14778/2212351.2212354	ref_121
 @tag:Guetterman	url:http://www.fasebj.org/content/30/1_Supplement/406.3	url:http://www.fasebj.org/content/30/1_Supplement/406.3	ref_122
@@ -133,6 +136,7 @@ text	citation	standard_citation	citation_id
 @tag:Hinton2015_dark_knowledge	arxiv:1503.02531	arxiv:1503.02531	ref_126
 @tag:Hochreiter	doi:10.1093/bioinformatics/btm247	doi:10.1093/bioinformatics/btm247	ref_127
 @tag:Hoff	doi:10.1093/nar/gkp327	doi:10.1093/nar/gkp327	ref_128
+@tag:Horton1992_assessment	doi:10.1093/nar/20.16.4331	doi:10.1093/nar/20.16.4331	ref_203
 @tag:Hubara2016_qnn	arxiv:1609.07061	arxiv:1609.07061	ref_129
 @tag:Jha2017_integrative_models	doi:10.1101/104869	doi:10.1101/104869	ref_130
 @tag:JuanMateu2016_t1d	doi:10.1530/EJE-15-0916	doi:10.1530/eje-15-0916	ref_131
@@ -144,6 +148,7 @@ text	citation	standard_citation	citation_id
 @tag:Krizhevsky2013_nips_cnn	url:https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf	url:https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf	ref_136
 @tag:Krizhevsky2014_weird_trick	arxiv:1404.5997	arxiv:1404.5997	ref_137
 @tag:Lacey2016_dl_fpga	arxiv:1602.04283	arxiv:1602.04283	ref_138
+@tag:Lanchantin2016_motif	arxiv:1608.03644	arxiv:1608.03644	ref_204
 @tag:Li2014_minibatch	doi:10.1145/2623330.2623612	doi:10.1145/2623330.2623612	ref_139
 @tag:Li2016_variation	doi:10.1126/science.aad9417	doi:10.1126/science.aad9417	ref_140
 @tag:Liang2015_exprs_cancer	doi:10.1109/TCBB.2014.2377729	doi:10.1109/tcbb.2014.2377729	ref_141
@@ -168,12 +173,15 @@ text	citation	standard_citation	citation_id
 @tag:Scotti2016_missplicing	doi:10.1038/nrg.2015.3	doi:10.1038/nrg.2015.3	ref_156
 @tag:Segata	doi:10.1371/journal.pcbi.1004977	doi:10.1371/journal.pcbi.1004977	ref_157
 @tag:Seide2014_parallel	doi:10.1109/ICASSP.2014.6853593	doi:10.1109/icassp.2014.6853593	ref_158
+@tag:Setty2015_seqgl	doi:10.1371/journal.pcbi.1004271	doi:10.1371/journal.pcbi.1004271	ref_205
 @tag:Shaham2016_batch_effects	arxiv:1610.04181	arxiv:1610.04181	ref_159
+@tag:Shrikumar2016_blackbox	arxiv:1605.01713	arxiv:1605.01713	ref_206
 @tag:Silver2016_alphago	doi:10.1038/nature16961	doi:10.1038/nature16961	ref_40
 @tag:Singh2016_deepchrome	arxiv:1607.02078	arxiv:1607.02078	ref_160
 @tag:Sonderby	arxiv:1503.01919	arxiv:1503.01919	ref_161
 @tag:Soueidan	doi:10.1515/metgen-2016-0001	doi:10.1515/metgen-2016-0001	ref_162
 @tag:Stein2010_cloud	doi:10.1186/gb-2010-11-5-207	doi:10.1186/gb-2010-11-5-207	ref_163
+@tag:Stormo2000_dna	doi:10.1093/bioinformatics/16.1.16	doi:10.1093/bioinformatics/16.1.16	ref_207
 @tag:Stratnikov	doi:10.1186/2049-2618-1-11	doi:10.1186/2049-2618-1-11	ref_164
 @tag:Su2015_gpu	arxiv:1507.01239	arxiv:1507.01239	ref_165
 @tag:Sun2016_ensemble	arxiv:1606.00575	arxiv:1606.00575	ref_166

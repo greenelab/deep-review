@@ -1087,3 +1087,58 @@ localization, COCO detection, and COCO segmentation.},
  year = {2015}
 }
 
+
+@article{ref_204,
+ abstract = {Deep neural network (DNN) models have recently obtained state-of-the-art
+prediction accuracy for the transcription factor binding (TFBS) site
+classification task. However, it remains unclear how these approaches identify
+meaningful DNA sequence signals and give insights as to why TFs bind to certain
+locations. In this paper, we propose a toolkit called the Deep Motif Dashboard
+(DeMo Dashboard) which provides a suite of visualization strategies to extract
+motifs, or sequence patterns from deep neural network models for TFBS
+classification. We demonstrate how to visualize and understand three important
+DNN models: convolutional, recurrent, and convolutional-recurrent networks. Our
+first visualization method is finding a test sequence's saliency map which uses
+first-order derivatives to describe the importance of each nucleotide in making
+the final prediction. Second, considering recurrent models make predictions in
+a temporal manner (from one end of a TFBS sequence to the other), we introduce
+temporal output scores, indicating the prediction score of a model over time
+for a sequential input. Lastly, a class-specific visualization strategy finds
+the optimal input sequence for a given TFBS positive class via stochastic
+gradient optimization. Our experimental results indicate that a
+convolutional-recurrent architecture performs the best among the three
+architectures. The visualization techniques indicate that CNN-RNN makes
+predictions by modeling both motifs as well as dependencies among them.},
+ archiveprefix = {arXiv},
+ author = {Jack Lanchantin and Ritambhara Singh and Beilun Wang and Yanjun Qi},
+ eprint = {1608.03644v4},
+ file = {1608.03644v4.pdf},
+ link = {http://arxiv.org/abs/1608.03644v4},
+ month = {Aug},
+ primaryclass = {cs.LG},
+ title = {Deep Motif Dashboard: Visualizing and Understanding Genomic Sequences
+Using Deep Neural Networks},
+ year = {2016}
+}
+
+
+@article{ref_206,
+ abstract = {The purported "black box" nature of neural networks is a barrier to adoption
+in applications where interpretability is essential. Here we present DeepLIFT
+(Learning Important FeaTures), an efficient and effective method for computing
+importance scores in a neural network. DeepLIFT compares the activation of each
+neuron to its 'reference activation' and assigns contribution scores according
+to the difference. We apply DeepLIFT to models trained on natural images and
+genomic data, and show significant advantages over gradient-based methods.},
+ archiveprefix = {arXiv},
+ author = {Avanti Shrikumar and Peyton Greenside and Anna Shcherbina and Anshul Kundaje},
+ eprint = {1605.01713v2},
+ file = {1605.01713v2.pdf},
+ link = {http://arxiv.org/abs/1605.01713v2},
+ month = {May},
+ primaryclass = {cs.LG},
+ title = {Not Just a Black Box: Learning Important Features Through Propagating
+Activation Differences},
+ year = {2016}
+}
+
