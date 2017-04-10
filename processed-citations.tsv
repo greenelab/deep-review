@@ -5,6 +5,7 @@ text	citation	standard_citation	citation_id
 @arxiv:1411.2581v1	arxiv:1411.2581v1	arxiv:1411.2581v1	ref_3
 @arxiv:1510.02855	arxiv:1510.02855	arxiv:1510.02855	ref_4
 @arxiv:1602.00357	arxiv:1602.00357	arxiv:1602.00357	ref_5
+@arxiv:1605.07723	arxiv:1605.07723	arxiv:1605.07723	ref_208
 @arxiv:1606.00931	arxiv:1606.00931	arxiv:1606.00931	ref_6
 @arxiv:1606.05718	arxiv:1606.05718	arxiv:1606.05718	ref_7
 @arxiv:1606.08813v3	arxiv:1606.08813v3	arxiv:1606.08813v3	ref_8
@@ -207,10 +208,13 @@ text	citation	standard_citation	citation_id
 @tag:onecodex	url:https://www.onecodex.com/	url:https://www.onecodex.com/	ref_182
 @tag:wgsquikr	doi:10.1371/journal.pone.0091784	doi:10.1371/journal.pone.0091784	ref_183
 @tag:yok	doi:10.1186/1471-2105-12-20	doi:10.1186/1471-2105-12-20	ref_184
+@url:http://ana.blogs.com/maestros/2006/11/data_is_the_new.html,	url:http://ana.blogs.com/maestros/2006/11/data_is_the_new.html,	url:http://ana.blogs.com/maestros/2006/11/data_is_the_new.html,	ref_209
+@url:http://hazyresearch.github.io/snorkel/blog/weak_supervision.html	url:http://hazyresearch.github.io/snorkel/blog/weak_supervision.html	url:http://hazyresearch.github.io/snorkel/blog/weak_supervision.html	ref_210
 @url:http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf	url:http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf	url:http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf	ref_185
 @url:http://research.google.com/archive/unsupervised_icml2012.html	url:http://research.google.com/archive/unsupervised_icml2012.html	url:http://research.google.com/archive/unsupervised_icml2012.html	ref_186
 @url:http://www.cameo3d.org/	url:http://www.cameo3d.org/	url:http://www.cameo3d.org/	ref_187
 @url:http://www.intel.com/pressroom/archive/speeches/ag080998.htm	url:http://www.intel.com/pressroom/archive/speeches/ag080998.htm	url:http://www.intel.com/pressroom/archive/speeches/ag080998.htm	ref_188
 @url:http://www.predictioncenter.org/casp12/rrc_avrg_results.cgi	url:http://www.predictioncenter.org/casp12/rrc_avrg_results.cgi	url:http://www.predictioncenter.org/casp12/rrc_avrg_results.cgi	ref_189
 @url:https://aclweb.org/anthology/D/D13/D13-1079.pdf	url:https://aclweb.org/anthology/D/D13/D13-1079.pdf	url:https://aclweb.org/anthology/D/D13/D13-1079.pdf	ref_190
+@url:https://medium.com/twenty-one-hundred/data-is-the-new-oil-a-ludicrous-proposition-1d91bba4f294	url:https://medium.com/twenty-one-hundred/data-is-the-new-oil-a-ludicrous-proposition-1d91bba4f294	url:https://medium.com/twenty-one-hundred/data-is-the-new-oil-a-ludicrous-proposition-1d91bba4f294	ref_211
 @url:https://phekb.org/implementations	url:https://phekb.org/implementations	url:https://phekb.org/implementations	ref_191

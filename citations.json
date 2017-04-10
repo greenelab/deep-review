@@ -20585,5 +20585,45 @@
       "id": "ref_207"
     },
     "citation_id": "ref_207"
+  },
+  "arxiv:1605.07723": {
+    "source": "arxiv",
+    "identifer": "1605.07723",
+    "standard_citation": "arxiv:1605.07723",
+    "bibtex": "@article{ref_208,\n abstract = {Large labeled training sets are the critical building blocks of supervised\nlearning methods and are key enablers of deep learning techniques. For some\napplications, creating labeled training sets is the most time-consuming and\nexpensive part of applying machine learning. We therefore propose a paradigm\nfor the programmatic creation of training sets called data programming in which\nusers express weak supervision strategies or domain heuristics as labeling\nfunctions, which are programs that label subsets of the data, but that are\nnoisy and may conflict. We show that by explicitly representing this training\nset labeling process as a generative model, we can \"denoise\" the generated\ntraining set, and establish theoretically that we can recover the parameters of\nthese generative models in a handful of settings. We then show how to modify a\ndiscriminative loss function to make it noise-aware, and demonstrate our method\nover a range of discriminative models including logistic regression and LSTMs.\nExperimentally, on the 2014 TAC-KBP Slot Filling challenge, we show that data\nprogramming would have led to a new winning score, and also show that applying\ndata programming to an LSTM model leads to a TAC-KBP score almost 6 F1 points\nover a state-of-the-art LSTM baseline (and into second place in the\ncompetition). Additionally, in initial user studies we observed that data\nprogramming may be an easier way for non-experts to create machine learning\nmodels when training data is limited or unavailable.},\n archiveprefix = {arXiv},\n author = {Alexander Ratner and Christopher De Sa and Sen Wu and Daniel Selsam and Christopher Ré},\n eprint = {1605.07723v3},\n file = {1605.07723v3.pdf},\n link = {http://arxiv.org/abs/1605.07723v3},\n month = {May},\n primaryclass = {stat.ML},\n title = {Data Programming: Creating Large Training Sets, Quickly},\n year = {2016}\n}\n\n",
+    "citation_id": "ref_208"
+  },
+  "url:http://ana.blogs.com/maestros/2006/11/data_is_the_new.html,": {
+    "source": "url",
+    "identifer": "http://ana.blogs.com/maestros/2006/11/data_is_the_new.html,",
+    "standard_citation": "url:http://ana.blogs.com/maestros/2006/11/data_is_the_new.html,",
+    "citeproc": {
+      "URL": "http://ana.blogs.com/maestros/2006/11/data_is_the_new.html,",
+      "type": "webpage",
+      "id": "ref_209"
+    },
+    "citation_id": "ref_209"
+  },
+  "url:http://hazyresearch.github.io/snorkel/blog/weak_supervision.html": {
+    "source": "url",
+    "identifer": "http://hazyresearch.github.io/snorkel/blog/weak_supervision.html",
+    "standard_citation": "url:http://hazyresearch.github.io/snorkel/blog/weak_supervision.html",
+    "citeproc": {
+      "URL": "http://hazyresearch.github.io/snorkel/blog/weak_supervision.html",
+      "type": "webpage",
+      "id": "ref_210"
+    },
+    "citation_id": "ref_210"
+  },
+  "url:https://medium.com/twenty-one-hundred/data-is-the-new-oil-a-ludicrous-proposition-1d91bba4f294": {
+    "source": "url",
+    "identifer": "https://medium.com/twenty-one-hundred/data-is-the-new-oil-a-ludicrous-proposition-1d91bba4f294",
+    "standard_citation": "url:https://medium.com/twenty-one-hundred/data-is-the-new-oil-a-ludicrous-proposition-1d91bba4f294",
+    "citeproc": {
+      "URL": "https://medium.com/twenty-one-hundred/data-is-the-new-oil-a-ludicrous-proposition-1d91bba4f294",
+      "type": "webpage",
+      "id": "ref_211"
+    },
+    "citation_id": "ref_211"
   }
 }

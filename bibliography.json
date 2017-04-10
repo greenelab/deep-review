@@ -19297,6 +19297,21 @@
     "id": "ref_207"
   },
   {
+    "URL": "http://ana.blogs.com/maestros/2006/11/data_is_the_new.html,",
+    "type": "webpage",
+    "id": "ref_209"
+  },
+  {
+    "URL": "http://hazyresearch.github.io/snorkel/blog/weak_supervision.html",
+    "type": "webpage",
+    "id": "ref_210"
+  },
+  {
+    "URL": "https://medium.com/twenty-one-hundred/data-is-the-new-oil-a-ludicrous-proposition-1d91bba4f294",
+    "type": "webpage",
+    "id": "ref_211"
+  },
+  {
     "abstract": "After a more than decade-long period of relatively little research activity in the area of recurrent neural networks, several new developments will be reviewed here that have allowed substantial progress both in understanding and in technical solutions towards more efficient training of recurrent networks. These advances have been motivated by and related to the optimization issues surrounding deep learning. Although recurrent networks are extremely powerful in what they can in principle represent in terms of modelling sequences,their training is plagued by two aspects of the same issue regarding the learning of long-term dependencies. Experiments reported here evaluate the use of clipping gradients, spanning longer time ranges with leaky integration, advanced momentum techniques, using more powerful output probability models, and encouraging sparser gradients to help symmetry breaking and credit assignment. The experiments are performed on text and music data and show off the combined effects of these techniques in generally improving both training and test error.",
     "author": [
       {
@@ -20729,6 +20744,43 @@
     },
     "title": "Not just a black box: Learning important features through propagating activation differences",
     "title-short": "Not just a black box",
+    "type": "article-journal"
+  },
+  {
+    "abstract": "Large labeled training sets are the critical building blocks of supervised learning methods and are key enablers of deep learning techniques. For some applications, creating labeled training sets is the most time-consuming and expensive part of applying machine learning. We therefore propose a paradigm for the programmatic creation of training sets called data programming in which users express weak supervision strategies or domain heuristics as labeling functions, which are programs that label subsets of the data, but that are noisy and may conflict. We show that by explicitly representing this training set labeling process as a generative model, we can “denoise” the generated training set, and establish theoretically that we can recover the parameters of these generative models in a handful of settings. We then show how to modify a discriminative loss function to make it noise-aware, and demonstrate our method over a range of discriminative models including logistic regression and LSTMs. Experimentally, on the 2014 TAC-KBP Slot Filling challenge, we show that data programming would have led to a new winning score, and also show that applying data programming to an LSTM model leads to a TAC-KBP score almost 6 F1 points over a state-of-the-art LSTM baseline (and into second place in the competition). Additionally, in initial user studies we observed that data programming may be an easier way for non-experts to create machine learning models when training data is limited or unavailable.",
+    "author": [
+      {
+        "family": "Ratner",
+        "given": "Alexander"
+      },
+      {
+        "family": "Sa",
+        "given": "Christopher De"
+      },
+      {
+        "family": "Wu",
+        "given": "Sen"
+      },
+      {
+        "family": "Selsam",
+        "given": "Daniel"
+      },
+      {
+        "family": "Ré",
+        "given": "Christopher"
+      }
+    ],
+    "id": "ref_208",
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          5
+        ]
+      ]
+    },
+    "title": "Data programming: Creating large training sets, quickly",
+    "title-short": "Data programming",
     "type": "article-journal"
   }
 ]
