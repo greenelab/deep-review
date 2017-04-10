@@ -196,55 +196,80 @@ this field.
 
 ###### Lack of ground-truth labels in data, and high cost in post-study validation by clinician experts.
 
-Lack of true labels is perhaps among the biggest obstacles for electronic
-health records(EHR)-based learing studies (e.g., phenotyping). Popular deep
-learning (and machine learning) methods are mostly classification problem,
-which require ground-truth labels (i.e., response variables) for training.  For
-EHR, unfortunately, this means we need to hire multiple expert clinicians  to
-manually read and annotate individual patients' records to assign "true"
-labels (i.e., expert chart review). Sometimes, the learnt features also need to
-be manually validated and interpreted by clinicians. This can be quite costly
-in time and money [@doi:10.1016/j.ijmedinf.2016.09.014]. Due to resource
-limitations,  many existing works in this direction (including many referenced
-in this review)  skipped the expert review process, which may face great
-skepticism from  medical domain experts. To date, even the most resourceful
-large national consortia  have difficulty acquiring enough expert-validated
-labeled data. For instance,  in the eMERGE consortia and PheKB database
-[@url:https://phekb.org/implementations],  most sample sizes with expert validations
-are between 100 to 300 patients,  which is quite small even for simple machine
-learning, not to mentioned data-hungry  deep learning models.
+Lack of true labels is perhaps among the biggest obstacles for EHR-based
+analyses that employ machine learning (e.g., phenotyping). Popular deep
+learning (and machine learning) methods are often used to tackle classification
+tasks and thus require ground-truth labels for training.  For EHRs,
+unfortunately, this means that researchers need to hire multiple clinicians to
+manually read and annotate individual patients' records through a process called
+chart review. This allows researchers to assign "true" labels, i.e. those that
+match our best available knowledge. Depending on the application, sometimes the
+features constructed by algorithms also need to be manually validated and
+interpreted by clinicians. This can be time consuming and expensive
+[@doi:10.1016/j.ijmedinf.2016.09.014]. Because of these costs, much of this
+research, including the work cited in this review, skips the process of expert
+review. Clinicians' skepticism for research without expert review may greatly
+dampen their enthusiasm for the work and consequently reduce its impact. To
+date, even well-resourced large national consortia have been challenged by the
+task of acquiring enough expert-validated labeled data. For instance, in the
+eMERGE consortia and PheKB database [@url:https://phekb.org/implementations],
+most samples with expert validation contain only 100 to 300 patients. These
+datasets are quite small, even for simple machine learning algorithms. The
+challenge is greater for deep learning models with many parameters. While
+unsupervised and semi-supervised approaches can help with small sample sizes,
+the field would benefit greatly from large collections of anonymized records in
+which a substantial number of records have undergone expert review.
 
-This issue also common to many related domains -- around medical images, omics.
-(thus the motivation for semi-supervised learning as briefly mentioned in
-earlier sections)
+This challenge is not unique to EHR-based studies. Work on medical images,
+-omics data in applications for which detailed metadata are required, and other
+applications for which labels are costly to obtain will be hampered as long as
+abundant curated data are unavailable. Unsupervised and semi-supervised methods
+provide one path forward [@doi:10.1016/j.jbi.2016.10.007], as do adversarial
+training examples [@doi:10.1101/095786]. We also expect the recently described
+data programming strategy [@arxiv:1605.07723] to play a role in addressing this
+challenge. In data programming, noisy automated labeling functions are
+integrated. Numerous writers have described data as the new oil
+[@url:http://ana.blogs.com/maestros/2006/11/data_is_the_new.html, @url:https://medium.com/twenty-one-hundred/data-is-the-new-oil-a-ludicrous-proposition-1d91bba4f294].
+The idea behind this metaphor is that data are available in large quantities,
+valuable once refined, and the underlying resource that will enable a
+data-driven revolution in how work is done. Contrasting with this perspective,
+Ratner, Bach, and Ré described labeled training data as "The _New_ New Oil"
+[@url:http://hazyresearch.github.io/snorkel/blog/weak_supervision.html]. In this
+framing, data are abundant and not a scarce resource. Instead, new approaches
+to solve problems arise when labeled training data become sufficient to enable
+them. Based on our review of research on deep learning methods to categorize
+disease, the latter framing rings true. We expect each of these approaches to
+play an important role if deep learning is going to transform how we analyze
+data to categorize states of human health. Finally, we don't expect that these
+methods will replace expert review. We expect them to complement expert review
+by allowing more efficient use of the costly practice of manual annotation.
 
-In summary, this subsection emphasize on two important aspects that are not
-addressed by other sections:  1) Data (and sometimes learnt
-features/representations)  need to be validated by clinicial experts.   2) The
-amount of expert labels needs to be sufficient large.
-
-###### "Right to explanation" laws and potential for discrimination
+###### Discrimination and "right to an explanation" laws
 
 In April 2016, the European Union adopted new rules regarding the use of
 personal information, the General Data Protection Regulation (GDPR)
-[@arxiv:1606.08813v3].  Among the new rules, it is perhaps best summed up in the
-phrase "right to explanation".   I.e., a clinician must be able to explain to a
-patient how a decision was reached by any machine learning algorithm that uses
-the patient's data.  The new rules were passed with the understanding that
-categorization or recommendation systems inherently profiles individuals, but
-may do so in a way that is unlawfully discriminatory.  
+[@arxiv:1606.08813v3]. A component of these rules can be summed up by the phrase
+"right to an explanation". Those who use machine learning algorithms must be
+able to explain how a decision was reached. For example, a clinician treating a
+patient who is aided by a machine learning algorithm may be expected to explain
+decisions that use the patient's data. The new rules were designed to target
+categorization or recommendation systems, which inherently profile individuals.
+Such systems can do so in ways that are discriminatory and unlawful `TODO: @traversc citation needed`.
 
-On the other hand, as datasets become larger and more complex, medically
-important data relationships and correlations can become not only difficult to
-detect, but difficult for human understanding.  Machine learning and deep
-learning algorithms, which fixate solely on predictive accuracy, may be regarded
-as "black boxes" and are generally not tractable to human understanding.  
-
-Yet the power of machine learning is not disputed.  In the context of medical
-applications, machine learning holds the promise to save more lives and provide
-better quality of life for those it does save.  There is certainly no clear cut
-answer to balance patient rights and utilitarian gain, and these issues will
-only become more prominent as technology advances.  
+As datasets become larger and more complex, we may begin to identify
+relationships in data that are important for human health but difficult to
+understand. The algorithms described in this review and others like them may
+become highly accurate and useful for various purposes, including within medical
+practice. However, to discover and avoid discriminatory applications it will be
+important to consider algorithm interpretability alongside accuracy. For
+example, if we train an algorithm to predict which drugs would be prescribed
+during a patient's visit to the doctor and there's an existing pattern of racial
+differences in prescription behavior (`TODO: @traversc - you can pick a different example but I think we need one - whichever one you think is most fully supported by the literature.`),
+this pattern could become baked into the predictions made by the algorithm.
+Machine learning practitioners, and particularly those who use deep neural
+networks, which are challenging to interpret, must remain cognizant of this
+possibility and make every effort to prevent harm from discriminatory
+predictions.
 
 ###### Data sharing and privacy?
 
