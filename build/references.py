@@ -100,10 +100,10 @@ ref_df['standard_citation'], ref_df['citation_id'] = zip(
 broken_citations = ref_df[ref_df.citation_id.isnull()]
 if not broken_citations.empty:
     bad = '\n'.join(broken_citations['text'])
-    message = get_divider('References Error') + textwrap.dedent(f'''
+    message = get_divider('References Error') + textwrap.dedent('''
     Metadata could not be retrieved for the following citations:
-    {bad}
-    ''')
+    {}
+    ''').format(bad)
     raise SystemExit(message)
 
 # Check that no two standard_citations have the same citation_id
