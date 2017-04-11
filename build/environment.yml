@@ -10,6 +10,7 @@ dependencies:
   - requests=2.13.0
   - pip:
     - arxiv2bib==1.0.7
+    - pybase62==0.2.0
     - bibtexparser==0.6.2
     - ghp-import==0.5.5
     - python-bitcoinlib==0.7.0
