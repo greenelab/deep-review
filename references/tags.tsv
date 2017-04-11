@@ -5,6 +5,7 @@ Asgari	doi:10.1371/journal.pone.0141287
 blast	doi:10.1016/S0022-2836(05)80360-2
 Angermueller2016_single_methyl	doi:10.1101/055715
 Arvaniti2016_rare_subsets	doi:10.1101/046508
+Baskin2015_drug_disc	doi:10.1080/17460441.2016.1201262
 Barash2010_splicing_code	doi:10.1038/nature09000
 Bengio2015_prec	arxiv:1412.7024
 Bergstra2011_hyper	url:https://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimization.pdf
@@ -91,6 +92,7 @@ Spark	doi:10.1145/2934664
 Stein2010_cloud	doi:10.1186/gb-2010-11-5-207
 Stratnikov	doi:10.1186/2049-2618-1-11
 Su2015_gpu	arxiv:1507.01239
+Subramanian2016_bace1 doi:10.1021/acs.jcim.6b00290
 Sun2016_ensemble	arxiv:1606.00575
 Sutskever	arxiv:1409.3215
 Swamidass2009_irv	doi:10.1021/ci8004379
