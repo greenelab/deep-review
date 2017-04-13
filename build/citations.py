@@ -138,6 +138,8 @@ citeproc_remove_keys = [
     'ISBN',
     # pandoc-citeproc expected Object not array for archive
     'archive',
+    # failed to parse field event: Could not read as string
+    'event',
 ]
 
 
