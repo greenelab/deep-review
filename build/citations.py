@@ -140,6 +140,8 @@ citeproc_remove_keys = [
     'archive',
     # failed to parse field event: Could not read as string
     'event',
+    # remove the references of cited papers. Not neccessary and unwieldy.
+    'reference',
 ]
 
 
