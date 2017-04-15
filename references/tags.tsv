@@ -1,6 +1,6 @@
 tag	citation
 Abe	doi:10.1101/gr.634603
-AltaeTran2016_one_shot	arxiv:1611.03199
+AltaeTran2016_one_shot	doi:10.1021/acscentsci.6b00367
 Asgari	doi:10.1371/journal.pone.0141287
 blast	doi:10.1016/S0022-2836(05)80360-2
 Angermueller2016_single_methyl	doi:10.1101/055715
@@ -58,6 +58,7 @@ Liang2015_exprs_cancer	doi:10.1109/TCBB.2014.2377729
 Liu	doi:10.1371/journal.pone.0097958
 lmat	doi:10.1093/bioinformatics/btt389
 Lusci2015_irv	doi:10.1186/s13321-015-0110-6
+Lusci2013_rnn doi:10.1021/ci400187y
 Ma2015_qsar_merck	doi:10.1021/ci500747n
 Mapreduce	doi:10.1145/1327452.1327492
 Mayr2016_deep_tox	doi:10.3389/fenvs.2015.00080
@@ -76,6 +77,7 @@ Qin2017_onehot	doi:10.1371/journal.pcbi.1005403
 RAD2010_view_cc	doi:10.1145/1721654.1721672
 Ramsundar2015_multitask_drug	arxiv:1502.02072
 Raina2009_gpu	doi:10.1145/1553374.1553486
+Rogers2010_fingerprints doi:10.1021/ci100050t
 Rosenberg2015_synthetic_seqs	doi:10.1016/j.cell.2015.09.054
 Sa2015_buckwild	arxiv:1506.06438
 Salzberg	doi:10.1186/1471-2105-11-544

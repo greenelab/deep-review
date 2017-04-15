@@ -38,10 +38,10 @@ of chemicals.  This task has been treated as a classification, regression, and
 ranking problem.  In reality, it does not fit neatly into any of those
 categories.  An ideal algorithm will rank a sufficient number of active
 compounds before the inactives, but the rankings of actives relative to other
-actives and inactives to other inactives is less important [@tag:Swamidass2009_irv].
-`TODO: can improve this first attempt at an intro by reviewing more existing
-literature on the topic` `TODO: check which other existing reviews should be
-referenced`
+actives and inactives to other inactives is less important
+[@tag:Swamidass2009_irv]. `TODO: can improve this first attempt at an intro by
+reviewing more existing literature on the topic` `TODO: check which other
+existing reviews should be referenced`
 
 We primarily focus on ligand-based approaches that train on chemicals' features
 without requiring knowledge of the target, as opposed to alternative strategies
@@ -86,19 +86,73 @@ negligible, especially in the classification setting.  Overfitting is still a
 problem in larger chemical screening datasets with tens or hundreds of thousands
 of compounds because the number of active compounds can be very small, on the
 order of 0.1% or 1% of all tested chemicals `TODO: verify those estimates`.
-This is consistent with the strong performance of earlier, low-parameter
-neural networks that emphasize compound-compound similarity
+This is consistent with the strong performance of low-parameter neural networks
+that emphasize compound-compound similarity, such as influence-relevance voter,
 [@tag:Swamidass2009_irv  @tag:Lusci2015_irv] instead of predicting compound
 activity directly from chemical features.
 
-- "Creative experimentation" phase of the field, new ideas for representation
-learning and novel approaches including graph convolutions, autoencoders, one
-shot learning [@tag:AltaeTran2016_one_shot], and generative models (contrast
-with descriptors and fingerprints)
+Much of the recent excitement in this domain has come from what could be
+considered a creative experimentation phase, in which deep learning has
+offered novel possibilities for feature representation and modeling of
+chemical compounds.  A molecular graph, where atoms are nodes and bonds are
+edges, is a natural way to represent a chemical structure.  Traditional
+machine learning approaches relied on preprocessing the graph into a feature
+vector, such as a fixed-width bit vector fingerprint
+[@tag:Rogers2010_fingerprints] in which each bit represents the presence of
+absence of a particular chemical substructure in the molecular graph. `TODO:
+this is a massive oversimplification because there can be collisions, but I
+don't know how much detail to get into` Modern neural networks can operate
+directly on the molecular graph as input.  Duvenaud et al
+[@tag:Duvenaud2015_graph_conv] generalized standard circular fingerprints
+by substituting discrete operations in the fingerprinting algorithm with
+operations in a neural network, producing a real-valued feature vector instead
+of a bit vector.  Other approaches offer trainable networks that can in theory
+learn chemical feature representations that are optimized for a particular
+prediction task.   Lusci et al adapted recursive neural networks for directed
+acyclic graphs for undirected molecular graphs by creating an ensemble of
+directed graphs in which one atom is selected as the root node
+[@tag:Lusci2013_rnn].  A single feature vector is obtained by summing over all
+feature vectors for all directed graphs in the ensemble.  Graph convolutions
+on undirected molecular graphs have eliminated the need to enumerate artificial
+directed graphs, learning feature vectors for atoms that are a function of the
+properties of neighboring atoms and local regions on the molecular graph [@tag:Kearnes2016_graph_conv @tag:AltaeTran2016_one_shot].
+`TODO: add more details on how graph convolutions work?`
+
+Advances in chemical representation learning have not been limited to
+graph-based neural networks.  The simplified molecular-input line-entry system
+(SMILES) is a standard way to transform a chemical into string-based
+representation.  A SMILES-to-SMILES autoencoder learns a continuous latent
+feature space for chemicals [@tag:Gomezb2016_automatic].  In this learned
+continuous space is it possible to training some classes of supervised learning
+algorithms or interpolate between continuous representations of chemicals in a
+manner that is not possible with discrete (e.g. string) features.  A drawback
+is that not all SMILES strings produced by the autoencoder's decoder
+correspond to valid chemical structures. `TODO: could mention GANs here`
+Altae-Tran et al developed a one-shot learning network
+[@tag:AltaeTran2016_one_shot] to address the reality that most practical
+chemical screening studies are unable to provide the thousands or millions of
+training compounds that are needed to train larger multitask networks.  Using
+graph convolutions to featurize chemicals, the network learns an embedding
+from compounds into a continuous feature space such that compounds with similar
+activities in a set of training tasks have similar embeddings.  The approach is
+evaluated in an extremely challenging setting where the embedding is learned
+from a subset of prediction tasks (e.g. activity assays for individual proteins)
+and only one to ten labeled examples are provided as training data on a new
+task.  On Tox21 targets, even with trained with one task-specific active
+compound and inactive compound, the model is able generalize reasonably well
+because it has learned an informative embedding function from the related tasks.
+Random forests, which cannot take advantage of the related training tasks,
+trained in the same setting achieve near random performance.  Despite the
+success on Tox21, performance on the MUV datasets, which contains assays
+designed to be challenging for chemical informatics algorithms, is considerably
+worse.  The authors also demonstrate the limitations of transfer learning as
+embeddings learned from the Tox21 assays have little utility for a drug
+adverse reaction dataset.
+
 - These "creative" approaches are definitely interesting but aren't necessarily
 outperforming existing methods, improvements on the software and
 reusability side could be important to help establish more rigorous
-benchmarking, DeepChem as example of this
+benchmarking, DeepChem/MoleculeNet as example of this
 - Future outlook, what would need to happen for the "creative" approaches
 to overtake the current state of the art, can representation learning be
 improved by incorporating more information about chemical properties or
@@ -112,10 +166,8 @@ analogies to other domains where deep learning can capture the behavior
 of complex physics (e.g. quantum physics example), maybe briefly mention
 other compound-protein interaction-based networks although that doesn't seem
 to fit here and is somewhat out of scope
-- Future output part 3 (most speculative), what would successful generative
-networks mean for the HTS field?
 
-`TODO: other papers to add`
+`TODO: other papers to add such as generative models`
 
 ### Modeling Metabolism and Chemical Reactivity
 
