@@ -11,7 +11,8 @@ decision making for over two decades. In 1996, Tu
 [@doi:10.1016/S0895-4356(96)00002-9] compared the effectiveness of artificial
 neural networks and logistic regression, questioning whether deep learning
 would replace traditional statistical methods for predicting medical
-outcomes such as myocardial infarction [@doi:10.7326/0003-4819-115-11-843] or mortality [@doi:10.1056/NEJM198509263131306]. He posited that while neural
+outcomes such as myocardial infarction [@doi:10.7326/0003-4819-115-11-843] or
+mortality [@doi:10.1056/NEJM198509263131306]. He posited that while neural
 networks have several advantages in representational power, the difficulties in
 interpretation may limit clinical applications. In 2007, Lisboa and Taktak
 [@doi:10.1016/j.neunet.2005.10.007] examined the use of artificial neural
