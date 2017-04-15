@@ -21151,5 +21151,1220 @@
       "id": "ziudr6hx"
     },
     "citation_id": "ziudr6hx"
+  },
+  "arxiv:1412.1897v4": {
+    "source": "arxiv",
+    "identifer": "1412.1897v4",
+    "standard_citation": "arxiv:1412.1897v4",
+    "bibtex": "@article{1AkF8Wsv7,\n abstract = {Deep neural networks (DNNs) have recently been achieving state-of-the-art\nperformance on a variety of pattern-recognition tasks, most notably visual\nclassification problems. Given that DNNs are now able to classify objects in\nimages with near-human-level performance, questions naturally arise as to what\ndifferences remain between computer and human vision. A recent study revealed\nthat changing an image (e.g. of a lion) in a way imperceptible to humans can\ncause a DNN to label the image as something else entirely (e.g. mislabeling a\nlion a library). Here we show a related result: it is easy to produce images\nthat are completely unrecognizable to humans, but that state-of-the-art DNNs\nbelieve to be recognizable objects with 99.99% confidence (e.g. labeling with\ncertainty that white noise static is a lion). Specifically, we take\nconvolutional neural networks trained to perform well on either the ImageNet or\nMNIST datasets and then find images with evolutionary algorithms or gradient\nascent that DNNs label with high confidence as belonging to each dataset class.\nIt is possible to produce images totally unrecognizable to human eyes that DNNs\nbelieve with near certainty are familiar objects, which we call \"fooling\nimages\" (more generally, fooling examples). Our results shed light on\ninteresting differences between human vision and current DNNs, and raise\nquestions about the generality of DNN computer vision.},\n archiveprefix = {arXiv},\n author = {Anh Nguyen and Jason Yosinski and Jeff Clune},\n eprint = {1412.1897v4},\n file = {1412.1897v4.pdf},\n link = {http://arxiv.org/abs/1412.1897v4},\n month = {12},\n primaryclass = {cs.CV},\n title = {Deep Neural Networks are Easily Fooled: High Confidence Predictions for\nUnrecognizable Images},\n year = {2014}\n}\n\n",
+    "citation_id": "1AkF8Wsv7"
+  },
+  "arxiv:1510.07641": {
+    "source": "arxiv",
+    "identifer": "1510.07641",
+    "standard_citation": "arxiv:1510.07641",
+    "bibtex": "@article{glyI7H6F,\n abstract = {We present a novel application of LSTM recurrent neural networks to\nmultilabel classification of diagnoses given variable-length time series of\nclinical measurements. Our method outperforms a strong baseline on a variety of\nmetrics.},\n archiveprefix = {arXiv},\n author = {Zachary C. Lipton and David C. Kale and Randall C. Wetzel},\n eprint = {1510.07641v2},\n file = {1510.07641v2.pdf},\n link = {http://arxiv.org/abs/1510.07641v2},\n month = {Nov},\n primaryclass = {cs.LG},\n title = {Phenotyping of Clinical Time Series with LSTM Recurrent Neural Networks},\n year = {2015}\n}\n\n",
+    "citation_id": "glyI7H6F"
+  },
+  "arxiv:1512.03542": {
+    "source": "arxiv",
+    "identifer": "1512.03542",
+    "standard_citation": "arxiv:1512.03542",
+    "bibtex": "@article{14DAmZTDg,\n abstract = {Exponential growth in Electronic Healthcare Records (EHR) has resulted in new\nopportunities and urgent needs for discovery of meaningful data-driven\nrepresentations and patterns of diseases in Computational Phenotyping research.\nDeep Learning models have shown superior performance for robust prediction in\ncomputational phenotyping tasks, but suffer from the issue of model\ninterpretability which is crucial for clinicians involved in decision-making.\nIn this paper, we introduce a novel knowledge-distillation approach called\nInterpretable Mimic Learning, to learn interpretable phenotype features for\nmaking robust prediction while mimicking the performance of deep learning\nmodels. Our framework uses Gradient Boosting Trees to learn interpretable\nfeatures from deep learning models such as Stacked Denoising Autoencoder and\nLong Short-Term Memory. Exhaustive experiments on a real-world clinical\ntime-series dataset show that our method obtains similar or better performance\nthan the deep learning models, and it provides interpretable phenotypes for\nclinical decision making.},\n archiveprefix = {arXiv},\n author = {Zhengping Che and Sanjay Purushotham and Robinder Khemani and Yan Liu},\n eprint = {1512.03542v1},\n file = {1512.03542v1.pdf},\n link = {http://arxiv.org/abs/1512.03542v1},\n month = {12},\n primaryclass = {stat.ML},\n title = {Distilling Knowledge from Deep Networks with Applications to Healthcare\nDomain},\n year = {2015}\n}\n\n",
+    "citation_id": "14DAmZTDg"
+  },
+  "arxiv:1602.04938": {
+    "source": "arxiv",
+    "identifer": "1602.04938",
+    "standard_citation": "arxiv:1602.04938",
+    "bibtex": "@article{QwXSJhr0,\n abstract = {Despite widespread adoption, machine learning models remain mostly black\nboxes. Understanding the reasons behind predictions is, however, quite\nimportant in assessing trust, which is fundamental if one plans to take action\nbased on a prediction, or when choosing whether to deploy a new model. Such\nunderstanding also provides insights into the model, which can be used to\ntransform an untrustworthy model or prediction into a trustworthy one. In this\nwork, we propose LIME, a novel explanation technique that explains the\npredictions of any classifier in an interpretable and faithful manner, by\nlearning an interpretable model locally around the prediction. We also propose\na method to explain models by presenting representative individual predictions\nand their explanations in a non-redundant way, framing the task as a submodular\noptimization problem. We demonstrate the flexibility of these methods by\nexplaining different models for text (e.g. random forests) and image\nclassification (e.g. neural networks). We show the utility of explanations via\nnovel experiments, both simulated and with human subjects, on various scenarios\nthat require trust: deciding if one should trust a prediction, choosing between\nmodels, improving an untrustworthy classifier, and identifying why a classifier\nshould not be trusted.},\n archiveprefix = {arXiv},\n author = {Marco Tulio Ribeiro and Sameer Singh and Carlos Guestrin},\n eprint = {1602.04938v3},\n file = {1602.04938v3.pdf},\n link = {http://arxiv.org/abs/1602.04938v3},\n month = {Feb},\n primaryclass = {cs.LG},\n title = {\"Why Should I Trust You?\": Explaining the Predictions of Any Classifier},\n year = {2016}\n}\n\n",
+    "citation_id": "QwXSJhr0"
+  },
+  "arxiv:1606.01865": {
+    "source": "arxiv",
+    "identifer": "1606.01865",
+    "standard_citation": "arxiv:1606.01865",
+    "bibtex": "@article{O7Vbecm2,\n abstract = {Multivariate time series data in practical applications, such as health care, geoscience, and biology, are characterized by a variety of missing values. In\ntime series prediction and other related tasks, it has been noted that missing\nvalues and their missing patterns are often correlated with the target labels, a.k.a., informative missingness. There is very limited work on exploiting the\nmissing patterns for effective imputation and improving prediction performance.\nIn this paper, we develop novel deep learning models, namely GRU-D, as one of\nthe early attempts. GRU-D is based on Gated Recurrent Unit (GRU), a\nstate-of-the-art recurrent neural network. It takes two representations of\nmissing patterns, i.e., masking and time interval, and effectively incorporates\nthem into a deep model architecture so that it not only captures the long-term\ntemporal dependencies in time series, but also utilizes the missing patterns to\nachieve better prediction results. Experiments of time series classification\ntasks on real-world clinical datasets (MIMIC-III, PhysioNet) and synthetic\ndatasets demonstrate that our models achieve state-of-the-art performance and\nprovides useful insights for better understanding and utilization of missing\nvalues in time series analysis.},\n archiveprefix = {arXiv},\n author = {Zhengping Che and Sanjay Purushotham and Kyunghyun Cho and David Sontag and Yan Liu},\n eprint = {1606.01865v2},\n file = {1606.01865v2.pdf},\n link = {http://arxiv.org/abs/1606.01865v2},\n month = {Jun},\n primaryclass = {cs.LG},\n title = {Recurrent Neural Networks for Multivariate Time Series with Missing\nValues},\n year = {2016}\n}\n\n",
+    "citation_id": "O7Vbecm2"
+  },
+  "arxiv:1606.04130": {
+    "source": "arxiv",
+    "identifer": "1606.04130",
+    "standard_citation": "arxiv:1606.04130",
+    "bibtex": "@article{4zpZxjHR,\n abstract = {We demonstrate a simple strategy to cope with missing data in sequential\ninputs, addressing the task of multilabel classification of diagnoses given\nclinical time series. Collected from the pediatric intensive care unit (PICU)\nat Children's Hospital Los Angeles, our data consists of multivariate time\nseries of observations. The measurements are irregularly spaced, leading to\nmissingness patterns in temporally discretized sequences. While these artifacts\nare typically handled by imputation, we achieve superior predictive performance\nby treating the artifacts as features. Unlike linear models, recurrent neural\nnetworks can realize this improvement using only simple binary indicators of\nmissingness. For linear models, we show an alternative strategy to capture this\nsignal. Training models on missingness patterns only, we show that for some\ndiseases, what tests are run can be as predictive as the results themselves.},\n archiveprefix = {arXiv},\n author = {Zachary C. Lipton and David C. Kale and Randall Wetzel},\n eprint = {1606.04130v5},\n file = {1606.04130v5.pdf},\n link = {http://arxiv.org/abs/1606.04130v5},\n month = {Jun},\n primaryclass = {cs.LG},\n title = {Modeling Missing Data in Clinical Time Series with RNNs},\n year = {2016}\n}\n\n",
+    "citation_id": "4zpZxjHR"
+  },
+  "arxiv:1608.05745": {
+    "source": "arxiv",
+    "identifer": "1608.05745",
+    "standard_citation": "arxiv:1608.05745",
+    "bibtex": "@article{UcRbawKo,\n abstract = {Accuracy and interpretability are two dominant features of successful\npredictive models. Typically, a choice must be made in favor of complex black\nbox models such as recurrent neural networks (RNN) for accuracy versus less\naccurate but more interpretable traditional models such as logistic regression.\nThis tradeoff poses challenges in medicine where both accuracy and\ninterpretability are important. We addressed this challenge by developing the\nREverse Time AttentIoN model (RETAIN) for application to Electronic Health\nRecords (EHR) data. RETAIN achieves high accuracy while remaining clinically\ninterpretable and is based on a two-level neural attention model that detects\ninfluential past visits and significant clinical variables within those visits\n(e.g. key diagnoses). RETAIN mimics physician practice by attending the EHR\ndata in a reverse time order so that recent clinical visits are likely to\nreceive higher attention. RETAIN was tested on a large health system EHR\ndataset with 14 million visits completed by 263K patients over an 8 year period\nand demonstrated predictive accuracy and computational scalability comparable\nto state-of-the-art methods such as RNN, and ease of interpretability\ncomparable to traditional models.},\n archiveprefix = {arXiv},\n author = {Edward Choi and Mohammad Taha Bahadori and Joshua A. Kulas and Andy Schuetz and Walter F. Stewart and Jimeng Sun},\n eprint = {1608.05745v4},\n file = {1608.05745v4.pdf},\n link = {http://arxiv.org/abs/1608.05745v4},\n month = {Aug},\n primaryclass = {cs.LG},\n title = {RETAIN: An Interpretable Predictive Model for Healthcare using Reverse\nTime Attention Mechanism},\n year = {2016}\n}\n\n",
+    "citation_id": "UcRbawKo"
+  },
+  "arxiv:1611.07012": {
+    "source": "arxiv",
+    "identifer": "1611.07012",
+    "standard_citation": "arxiv:1611.07012",
+    "bibtex": "@article{10nDTiETi,\n abstract = {Deep learning methods exhibit promising performance for predictive modeling\nin healthcare, but two important challenges remain: -Data insufficiency:Often\nin healthcare predictive modeling, the sample size is insufficient for deep\nlearning methods to achieve satisfactory results. -Interpretation:The\nrepresentations learned by deep learning methods should align with medical\nknowledge. To address these challenges, we propose a GRaph-based Attention\nModel, GRAM that supplements electronic health records (EHR) with hierarchical\ninformation inherent to medical ontologies. Based on the data volume and the\nontology structure, GRAM represents a medical concept as a combination of its\nancestors in the ontology via an attention mechanism. We compared predictive\nperformance (i.e. accuracy, data needs, interpretability) of GRAM to various\nmethods including the recurrent neural network (RNN) in two sequential\ndiagnoses prediction tasks and one heart failure prediction task. Compared to\nthe basic RNN, GRAM achieved 10% higher accuracy for predicting diseases rarely\nobserved in the training data and 3% improved area under the ROC curve for\npredicting heart failure using an order of magnitude less training data.\nAdditionally, unlike other methods, the medical concept representations learned\nby GRAM are well aligned with the medical ontology. Finally, GRAM exhibits\nintuitive attention behaviors by adaptively generalizing to higher level\nconcepts when facing data insufficiency at the lower level concepts.},\n archiveprefix = {arXiv},\n author = {Edward Choi and Mohammad Taha Bahadori and Le Song and Walter F. Stewart and Jimeng Sun},\n eprint = {1611.07012v3},\n file = {1611.07012v3.pdf},\n link = {http://arxiv.org/abs/1611.07012v3},\n month = {Dec},\n primaryclass = {cs.LG},\n title = {GRAM: Graph-based Attention Model for Healthcare Representation Learning},\n year = {2016}\n}\n\n",
+    "citation_id": "10nDTiETi"
+  },
+  "arxiv:1704.03296": {
+    "source": "arxiv",
+    "identifer": "1704.03296",
+    "standard_citation": "arxiv:1704.03296",
+    "bibtex": "@article{y4t9EzPn,\n abstract = {As machine learning algorithms are increasingly applied to high impact yet\nhigh risk tasks, e.g. problems in health, it is critical that researchers can\nexplain how such algorithms arrived at their predictions. In recent years, a\nnumber of image saliency methods have been developed to summarize where highly\ncomplex neural networks \"look\" in an image for evidence for their predictions.\nHowever, these techniques are limited by their heuristic nature and\narchitectural constraints.\nIn this paper, we make two main contributions: First, we propose a general\nframework for learning different kinds of explanations for any black box\nalgorithm. Second, we introduce a paradigm that learns the minimally salient\npart of an image by directly editing it and learning from the corresponding\nchanges to its output. Unlike previous works, our method is model-agnostic and\ntestable because it is grounded in replicable image perturbations.},\n archiveprefix = {arXiv},\n author = {Ruth Fong and Andrea Vedaldi},\n eprint = {1704.03296v1},\n file = {1704.03296v1.pdf},\n link = {http://arxiv.org/abs/1704.03296v1},\n month = {Apr},\n primaryclass = {cs.CV},\n title = {Interpretable Explanations of Black Boxes by Meaningful Perturbation},\n year = {2017}\n}\n\n",
+    "citation_id": "y4t9EzPn"
+  },
+  "doi:10.1016/s0895-4356(96)00002-9": {
+    "source": "doi",
+    "identifer": "10.1016/s0895-4356(96)00002-9",
+    "standard_citation": "doi:10.1016/s0895-4356(96)00002-9",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            2
+          ]
+        ],
+        "date-time": "2017-04-02T00:53:05Z",
+        "timestamp": 1491094385112
+      },
+      "publisher": "Elsevier BV",
+      "issue": "11",
+      "license": [
+        {
+          "URL": "http://www.elsevier.com/tdm/userlicense/1.0/",
+          "start": {
+            "date-parts": [
+              [
+                1996,
+                11,
+                1
+              ]
+            ],
+            "date-time": "1996-11-01T00:00:00Z",
+            "timestamp": 846806400000
+          },
+          "delay-in-days": 0,
+          "content-version": "tdm"
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Journal of Clinical Epidemiology"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            1996,
+            11
+          ]
+        ]
+      },
+      "DOI": "10.1016/s0895-4356(96)00002-9",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2002,
+            7,
+            25
+          ]
+        ],
+        "date-time": "2002-07-25T18:50:39Z",
+        "timestamp": 1027623039000
+      },
+      "page": "1225-1231",
+      "source": "Crossref",
+      "is-referenced-by-count": 357,
+      "title": "Advantages and disadvantages of using artificial neural networks versus logistic regression for predicting medical outcomes",
+      "prefix": "10.1016",
+      "volume": "49",
+      "author": [
+        {
+          "given": "Jack V.",
+          "family": "Tu",
+          "affiliation": []
+        }
+      ],
+      "member": "78",
+      "container-title": "Journal of Clinical Epidemiology",
+      "original-title": [],
+      "link": [
+        {
+          "URL": "http://api.elsevier.com/content/article/PII:S0895435696000029?httpAccept=text/xml",
+          "content-type": "text/xml",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "http://api.elsevier.com/content/article/PII:S0895435696000029?httpAccept=text/plain",
+          "content-type": "text/plain",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2015,
+            9,
+            5
+          ]
+        ],
+        "date-time": "2015-09-05T19:25:01Z",
+        "timestamp": 1441481101000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            1996,
+            11
+          ]
+        ]
+      },
+      "references-count": 37,
+      "alternative-id": [
+        "S0895435696000029"
+      ],
+      "URL": "http://dx.doi.org/10.1016/s0895-4356(96)00002-9",
+      "relation": null,
+      "issn-type": [
+        {
+          "value": "0895-4356",
+          "type": "print"
+        }
+      ],
+      "subject": [
+        "Epidemiology"
+      ],
+      "id": "kL0B4m9d"
+    },
+    "citation_id": "kL0B4m9d"
+  },
+  "doi:10.1016/j.neunet.2005.10.007": {
+    "source": "doi",
+    "identifer": "10.1016/j.neunet.2005.10.007",
+    "standard_citation": "doi:10.1016/j.neunet.2005.10.007",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            2
+          ]
+        ],
+        "date-time": "2017-04-02T17:02:03Z",
+        "timestamp": 1491152523186
+      },
+      "publisher": "Elsevier BV",
+      "issue": "4",
+      "license": [
+        {
+          "URL": "http://www.elsevier.com/tdm/userlicense/1.0/",
+          "start": {
+            "date-parts": [
+              [
+                2006,
+                5,
+                1
+              ]
+            ],
+            "date-time": "2006-05-01T00:00:00Z",
+            "timestamp": 1146441600000
+          },
+          "delay-in-days": 0,
+          "content-version": "tdm"
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Neural Networks"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2006,
+            5
+          ]
+        ]
+      },
+      "DOI": "10.1016/j.neunet.2005.10.007",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2006,
+            2,
+            15
+          ]
+        ],
+        "date-time": "2006-02-15T12:21:06Z",
+        "timestamp": 1140006066000
+      },
+      "page": "408-415",
+      "source": "Crossref",
+      "is-referenced-by-count": 149,
+      "title": "The use of artificial neural networks in decision support in cancer: A systematic review",
+      "prefix": "10.1016",
+      "volume": "19",
+      "author": [
+        {
+          "given": "Paulo J.",
+          "family": "Lisboa",
+          "affiliation": []
+        },
+        {
+          "given": "Azzam F.G.",
+          "family": "Taktak",
+          "affiliation": []
+        }
+      ],
+      "member": "78",
+      "container-title": "Neural Networks",
+      "original-title": [],
+      "link": [
+        {
+          "URL": "http://api.elsevier.com/content/article/PII:S0893608005002844?httpAccept=text/xml",
+          "content-type": "text/xml",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "http://api.elsevier.com/content/article/PII:S0893608005002844?httpAccept=text/plain",
+          "content-type": "text/plain",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2015,
+            11,
+            19
+          ]
+        ],
+        "date-time": "2015-11-19T22:52:04Z",
+        "timestamp": 1447973524000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2006,
+            5
+          ]
+        ]
+      },
+      "references-count": 57,
+      "alternative-id": [
+        "S0893608005002844"
+      ],
+      "URL": "http://dx.doi.org/10.1016/j.neunet.2005.10.007",
+      "relation": null,
+      "issn-type": [
+        {
+          "value": "0893-6080",
+          "type": "print"
+        }
+      ],
+      "subject": [
+        "Cognitive Neuroscience",
+        "Artificial Intelligence"
+      ],
+      "id": "qxxwkSAT"
+    },
+    "citation_id": "qxxwkSAT"
+  },
+  "doi:10.1056/nejm198509263131306": {
+    "source": "doi",
+    "identifer": "10.1056/nejm198509263131306",
+    "standard_citation": "doi:10.1056/nejm198509263131306",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            3,
+            31
+          ]
+        ],
+        "date-time": "2017-03-31T07:31:15Z",
+        "timestamp": 1490945475781
+      },
+      "publisher": "New England Journal of Medicine (NEJM/MMS)",
+      "issue": "13",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "N Engl J Med"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            1985,
+            9,
+            26
+          ]
+        ]
+      },
+      "DOI": "10.1056/nejm198509263131306",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2010,
+            7,
+            28
+          ]
+        ],
+        "date-time": "2010-07-28T21:32:51Z",
+        "timestamp": 1280352771000
+      },
+      "page": "793-799",
+      "source": "Crossref",
+      "is-referenced-by-count": 571,
+      "title": "Clinical Prediction Rules",
+      "prefix": "10.1056",
+      "volume": "313",
+      "author": [
+        {
+          "given": "John H.",
+          "family": "Wasson",
+          "affiliation": []
+        },
+        {
+          "given": "Harold C.",
+          "family": "Sox",
+          "affiliation": []
+        },
+        {
+          "given": "Raymond K.",
+          "family": "Neff",
+          "affiliation": []
+        },
+        {
+          "given": "Lee",
+          "family": "Goldman",
+          "affiliation": []
+        }
+      ],
+      "member": "150",
+      "container-title": "New England Journal of Medicine",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2016,
+            11,
+            2
+          ]
+        ],
+        "date-time": "2016-11-02T19:27:51Z",
+        "timestamp": 1478114871000
+      },
+      "score": 1.0,
+      "subtitle": [
+        "Applications and Methodological Standards"
+      ],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            1985,
+            9,
+            26
+          ]
+        ]
+      },
+      "references-count": 54,
+      "alternative-id": [
+        "10.1056/NEJM198509263131306"
+      ],
+      "URL": "http://dx.doi.org/10.1056/nejm198509263131306",
+      "relation": null,
+      "issn-type": [
+        {
+          "value": "0028-4793",
+          "type": "print"
+        },
+        {
+          "value": "1533-4406",
+          "type": "electronic"
+        }
+      ],
+      "subject": [
+        "Medicine(all)"
+      ],
+      "id": "xX68eyvs"
+    },
+    "citation_id": "xX68eyvs"
+  },
+  "doi:10.1101/095653": {
+    "source": "doi",
+    "identifer": "10.1101/095653",
+    "standard_citation": "doi:10.1101/095653",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            3
+          ]
+        ],
+        "date-time": "2017-04-03T04:32:29Z",
+        "timestamp": 1491193949029
+      },
+      "posted": {
+        "date-parts": [
+          [
+            2016,
+            12,
+            20
+          ]
+        ]
+      },
+      "group-title": "Bioinformatics",
+      "publisher": "Cold Spring Harbor Laboratory Press",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [],
+      "accepted": {
+        "date-parts": [
+          [
+            2016,
+            12,
+            29
+          ]
+        ]
+      },
+      "abstract": "<jats:p>Despite many recent advances in systems biology and a marked increase in the availability of high-throughput biological data, the productivity of research and development in the pharmaceutical industry is on the decline. This is primarily due to clinical trial failure rates reaching up to 95% in oncology and other disease areas. We have developed a comprehensive analytical and computational pipeline utilizing deep learning techniques and novel systems biology analytical tools to predict the outcomes of phase I/II clinical trials. The pipeline predicts the side effects of a drug using deep neural networks and estimates drug-induced pathway activation. It then uses the predicted side effect probabilities and pathway activation scores as an input to train a classifier which predicts clinical trial outcomes. This classifier was trained on 577 transcriptomic datasets and has achieved a cross-validated accuracy of 0.83. When compared to a direct gene-based classifier, our multi-stage approach dramatically improves the accuracy of the predictions. The classifier was applied to a set of compounds currently present in the pipelines of several major pharmaceutical companies to highlight potential risks in their portfolios and estimate the fraction of clinical trials that were likely to fail in phase I and II.</jats:p>",
+      "DOI": "10.1101/095653",
+      "type": "manuscript",
+      "created": {
+        "date-parts": [
+          [
+            2016,
+            12,
+            21
+          ]
+        ],
+        "date-time": "2016-12-21T06:10:11Z",
+        "timestamp": 1482300611000
+      },
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": "Integrated deep learned transcriptomic and structure-based predictor of clinical trials outcomes",
+      "prefix": "10.1101",
+      "author": [
+        {
+          "given": "Artem V",
+          "family": "Artemov",
+          "affiliation": []
+        },
+        {
+          "given": "Evgeny",
+          "family": "Putin",
+          "affiliation": []
+        },
+        {
+          "given": "Quentin",
+          "family": "Vanhaelen",
+          "affiliation": []
+        },
+        {
+          "given": "Alexander",
+          "family": "Aliper",
+          "affiliation": []
+        },
+        {
+          "given": "Ivan V",
+          "family": "Ozerov",
+          "affiliation": []
+        },
+        {
+          "given": "Alex",
+          "family": "Zhavoronkov",
+          "affiliation": []
+        }
+      ],
+      "member": "246",
+      "container-title": null,
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            4
+          ]
+        ],
+        "date-time": "2017-01-04T06:18:59Z",
+        "timestamp": 1483510739000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            12,
+            20
+          ]
+        ]
+      },
+      "references-count": 0,
+      "URL": "http://dx.doi.org/10.1101/095653",
+      "id": "mo3GQwJj"
+    },
+    "citation_id": "mo3GQwJj"
+  },
+  "doi:10.1109/72.478409": {
+    "source": "doi",
+    "identifer": "10.1109/72.478409",
+    "standard_citation": "doi:10.1109/72.478409",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            2
+          ]
+        ],
+        "date-time": "2017-04-02T16:44:20Z",
+        "timestamp": 1491151460765
+      },
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "issue": "1",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "IEEE Trans. Neural Netw."
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            1996
+          ]
+        ]
+      },
+      "DOI": "10.1109/72.478409",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2002,
+            8,
+            24
+          ]
+        ],
+        "date-time": "2002-08-24T19:16:32Z",
+        "timestamp": 1030216592000
+      },
+      "page": "229-232",
+      "source": "Crossref",
+      "is-referenced-by-count": 93,
+      "title": "Confidence interval prediction for neural network models",
+      "prefix": "10.1109",
+      "volume": "7",
+      "author": [
+        {
+          "given": "G.",
+          "family": "Chryssolouris",
+          "affiliation": []
+        },
+        {
+          "given": "M.",
+          "family": "Lee",
+          "affiliation": []
+        },
+        {
+          "given": "A.",
+          "family": "Ramsey",
+          "affiliation": []
+        }
+      ],
+      "member": "263",
+      "container-title": "IEEE Transactions on Neural Networks",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2017,
+            3,
+            9
+          ]
+        ],
+        "date-time": "2017-03-09T11:16:32Z",
+        "timestamp": 1489058192000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            1996
+          ]
+        ]
+      },
+      "references-count": 7,
+      "URL": "http://dx.doi.org/10.1109/72.478409",
+      "relation": null,
+      "issn-type": [
+        {
+          "value": "1045-9227",
+          "type": "print"
+        }
+      ],
+      "subject": [
+        "Computer Networks and Communications",
+        "Software",
+        "Artificial Intelligence",
+        "Computer Science Applications"
+      ],
+      "id": "9SnNyc8Y"
+    },
+    "citation_id": "9SnNyc8Y"
+  },
+  "doi:10.1109/access.2016.2618775": {
+    "source": "doi",
+    "identifer": "10.1109/access.2016.2618775",
+    "standard_citation": "doi:10.1109/access.2016.2618775",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            3
+          ]
+        ],
+        "date-time": "2017-04-03T00:26:22Z",
+        "timestamp": 1491179182443
+      },
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "license": [
+        {
+          "URL": "http://www.ieee.org/publications_standards/publications/rights/oapa.pdf",
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2016-01-01T00:00:00Z",
+            "timestamp": 1451606400000
+          },
+          "delay-in-days": 0,
+          "content-version": "am"
+        },
+        {
+          "URL": "http://www.ieee.org/publications_standards/publications/rights/oapa.pdf",
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2016-01-01T00:00:00Z",
+            "timestamp": 1451606400000
+          },
+          "delay-in-days": 0,
+          "content-version": "vor"
+        }
+      ],
+      "funder": [
+        {
+          "DOI": "10.13039/100000001",
+          "name": "National Science Foundation",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "IIS-1527827",
+            "IIS-1231742"
+          ]
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "IEEE Access"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2016
+          ]
+        ]
+      },
+      "DOI": "10.1109/access.2016.2618775",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2016,
+            10,
+            19
+          ]
+        ],
+        "date-time": "2016-10-19T18:14:44Z",
+        "timestamp": 1476900884000
+      },
+      "page": "7988-8001",
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": "Predicting Complications in Critical Care Using Heterogeneous Clinical Data",
+      "prefix": "10.1109",
+      "volume": "4",
+      "author": [
+        {
+          "given": "Vijay",
+          "family": "Huddar",
+          "affiliation": []
+        },
+        {
+          "given": "Bapu Koundinya",
+          "family": "Desiraju",
+          "affiliation": []
+        },
+        {
+          "ORCID": "http://orcid.org/0000-0002-6748-6864",
+          "authenticated-orcid": false,
+          "given": "Vaibhav",
+          "family": "Rajan",
+          "affiliation": []
+        },
+        {
+          "given": "Sakyajit",
+          "family": "Bhattacharya",
+          "affiliation": []
+        },
+        {
+          "given": "Shourya",
+          "family": "Roy",
+          "affiliation": []
+        },
+        {
+          "given": "Chandan K.",
+          "family": "Reddy",
+          "affiliation": []
+        }
+      ],
+      "member": "263",
+      "container-title": "IEEE Access",
+      "original-title": [],
+      "link": [
+        {
+          "URL": "http://ieeexplore.ieee.org/ielam/6287639/7419931/7593335-aam.pdf",
+          "content-type": "application/pdf",
+          "content-version": "am",
+          "intended-application": "syndication"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2016,
+            12,
+            13
+          ]
+        ],
+        "date-time": "2016-12-13T00:25:33Z",
+        "timestamp": 1481588733000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2016
+          ]
+        ]
+      },
+      "references-count": 67,
+      "URL": "http://dx.doi.org/10.1109/access.2016.2618775",
+      "relation": null,
+      "issn-type": [
+        {
+          "value": "2169-3536",
+          "type": "electronic"
+        }
+      ],
+      "id": "fOaBA9Vc"
+    },
+    "citation_id": "fOaBA9Vc"
+  },
+  "doi:10.1109/embc.2016.7591355": {
+    "source": "doi",
+    "identifer": "10.1109/embc.2016.7591355",
+    "standard_citation": "doi:10.1109/embc.2016.7591355",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            3
+          ]
+        ],
+        "date-time": "2017-04-03T00:34:04Z",
+        "timestamp": 1491179644834
+      },
+      "publisher": "IEEE",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [],
+      "published-print": {
+        "date-parts": [
+          [
+            2016,
+            8
+          ]
+        ]
+      },
+      "DOI": "10.1109/embc.2016.7591355",
+      "type": "paper-conference",
+      "created": {
+        "date-parts": [
+          [
+            2016,
+            10,
+            20
+          ]
+        ],
+        "date-time": "2016-10-20T20:57:43Z",
+        "timestamp": 1476997063000
+      },
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": "Optimal medication dosing from suboptimal clinical examples: A deep reinforcement learning approach",
+      "prefix": "10.1109",
+      "author": [
+        {
+          "given": "Shamim",
+          "family": "Nemati",
+          "affiliation": []
+        },
+        {
+          "given": "Mohammad M.",
+          "family": "Ghassemi",
+          "affiliation": []
+        },
+        {
+          "given": "Gari D.",
+          "family": "Clifford",
+          "affiliation": []
+        }
+      ],
+      "member": "263",
+      "container-title": "2016 38th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2016,
+            11,
+            2
+          ]
+        ],
+        "date-time": "2016-11-02T07:01:33Z",
+        "timestamp": 1478070093000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            8
+          ]
+        ]
+      },
+      "references-count": 18,
+      "URL": "http://dx.doi.org/10.1109/embc.2016.7591355",
+      "relation": null,
+      "id": "16OQvsRqJ"
+    },
+    "citation_id": "16OQvsRqJ"
+  },
+  "doi:10.1136/amiajnl-2013-001815": {
+    "source": "doi",
+    "identifer": "10.1136/amiajnl-2013-001815",
+    "standard_citation": "doi:10.1136/amiajnl-2013-001815",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            1
+          ]
+        ],
+        "date-time": "2017-04-01T15:45:17Z",
+        "timestamp": 1491061517582
+      },
+      "publisher": "Oxford University Press (OUP)",
+      "issue": "2",
+      "content-domain": {
+        "domain": [
+          "bmj.com"
+        ],
+        "crossmark-restriction": true
+      },
+      "short-container-title": [
+        "J Am Med Inform Assoc"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2014,
+            3
+          ]
+        ]
+      },
+      "DOI": "10.1136/amiajnl-2013-001815",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2013,
+            8,
+            20
+          ]
+        ],
+        "date-time": "2013-08-20T04:22:03Z",
+        "timestamp": 1376972523000
+      },
+      "page": "315-325",
+      "update-policy": "http://dx.doi.org/10.1136/crossmarkpolicy",
+      "source": "Crossref",
+      "is-referenced-by-count": 14,
+      "title": "From vital signs to clinical outcomes for patients with sepsis: a machine learning basis for a clinical decision support system",
+      "prefix": "10.1093",
+      "volume": "21",
+      "author": [
+        {
+          "given": "Eren",
+          "family": "Gultepe",
+          "affiliation": []
+        },
+        {
+          "given": "Jeffrey P",
+          "family": "Green",
+          "affiliation": []
+        },
+        {
+          "given": "Hien",
+          "family": "Nguyen",
+          "affiliation": []
+        },
+        {
+          "given": "Jason",
+          "family": "Adams",
+          "affiliation": []
+        },
+        {
+          "given": "Timothy",
+          "family": "Albertson",
+          "affiliation": []
+        },
+        {
+          "given": "Ilias",
+          "family": "Tagkopoulos",
+          "affiliation": []
+        }
+      ],
+      "member": "286",
+      "published-online": {
+        "date-parts": [
+          [
+            2014,
+            3,
+            1
+          ]
+        ]
+      },
+      "container-title": "Journal of the American Medical Informatics Association",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            23
+          ]
+        ],
+        "date-time": "2017-01-23T22:56:14Z",
+        "timestamp": 1485212174000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2014,
+            3
+          ]
+        ]
+      },
+      "references-count": 54,
+      "alternative-id": [
+        "10.1136/amiajnl-2013-001815"
+      ],
+      "URL": "http://dx.doi.org/10.1136/amiajnl-2013-001815",
+      "relation": null,
+      "issn-type": [
+        {
+          "value": "1067-5027",
+          "type": "print"
+        },
+        {
+          "value": "1527-974X",
+          "type": "electronic"
+        }
+      ],
+      "subject": [
+        "Health Informatics"
+      ],
+      "id": "eCrLGgiX"
+    },
+    "citation_id": "eCrLGgiX"
+  },
+  "doi:10.7326/0003-4819-115-11-843": {
+    "source": "doi",
+    "identifer": "10.7326/0003-4819-115-11-843",
+    "standard_citation": "doi:10.7326/0003-4819-115-11-843",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            3,
+            31
+          ]
+        ],
+        "date-time": "2017-03-31T21:01:29Z",
+        "timestamp": 1490994089734
+      },
+      "publisher": "American College of Physicians",
+      "issue": "11",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Ann Intern Med"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            1991,
+            12,
+            1
+          ]
+        ]
+      },
+      "DOI": "10.7326/0003-4819-115-11-843",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2013,
+            4,
+            12
+          ]
+        ],
+        "date-time": "2013-04-12T16:21:18Z",
+        "timestamp": 1365783678000
+      },
+      "page": "843",
+      "source": "Crossref",
+      "is-referenced-by-count": 208,
+      "title": "Use of an Artificial Neural Network for the Diagnosis of Myocardial Infarction",
+      "prefix": "10.7326",
+      "volume": "115",
+      "author": [
+        {
+          "given": "William G.",
+          "family": "Baxt",
+          "affiliation": []
+        }
+      ],
+      "member": "4285",
+      "container-title": "Annals of Internal Medicine",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2013,
+            4,
+            12
+          ]
+        ],
+        "date-time": "2013-04-12T16:21:18Z",
+        "timestamp": 1365783678000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            1991,
+            12,
+            1
+          ]
+        ]
+      },
+      "references-count": 0,
+      "URL": "http://dx.doi.org/10.7326/0003-4819-115-11-843",
+      "relation": null,
+      "issn-type": [
+        {
+          "value": "0003-4819",
+          "type": "print"
+        }
+      ],
+      "subject": [
+        "Internal Medicine"
+      ],
+      "id": "jdg2u7bX"
+    },
+    "citation_id": "jdg2u7bX"
   }
 }

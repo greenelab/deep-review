@@ -1183,10 +1183,149 @@ patients with treatments.  The sub-section titles are merely placeholders.*
 
 ### Categorizing patients for clinical decision making
 
-*How can deep learning match patients with clinical trails, therapies, or
-other interventions?  As an example, [@eehGXQlY]
-predicts individuals who are most likely to decline during a clinical trial
-and benefit from the treatment.*
+There has been sustained interest in applying deep learning to clinical
+decision making for over two decades. In 1996, Tu
+[@kL0B4m9d] compared the effectiveness of artificial
+neural networks and logistic regression, questioning whether deep learning
+would replace traditional statistical methods for predicting medical
+outcomes such as myocardial infarction [@jdg2u7bX] or
+mortality [@xX68eyvs]. He posited that while neural
+networks have several advantages in representational power, the difficulties in
+interpretation may limit clinical applications. In 2007, Lisboa and Taktak
+[@qxxwkSAT] examined the use of artificial neural
+networks in medical journals, concluding that neural networks provided an
+increase in benefit to healthcare relative to traditional screening methods in
+21 of 27 studies.
+
+While significant progress has been made in developing deep learning methods
+for diagnosis, it is not clear that these methods have yet transformed
+clinical decision making. The difficulty in applying deep learning to clinical
+decision making represents a challenge common to many deep learning
+applications: it is much easier to predict an outcome than to suggest an
+action to change the outcome. Several attempts at recasting the clinical
+decision making problem into a prediction problem (i.e. prediction of which
+treatment will most improve the patient's health) have accurately predicted
+prescription habits, but technical and medical challenges remain for clinical
+adoption. In particular, remaining challenges include actionable
+interpretability of deep learning models, fitting deep models to limited and
+heterogeneous data, and integrating complex predictive models into a dynamic
+clinical environment.
+
+#### Applications
+
+##### Trajectory Prediction for Treatment
+
+A common application for deep learning techniques in this domain is to
+leverage the temporal structure of healthcare records. As previously
+discussed, many studies [@4zpZxjHR; @O7Vbecm2; @fOaBA9Vc; @glyI7H6F]
+have used deep recurrent networks to categorize patients but most stop short
+of suggesting clinical decisions. Nemati et al [@16OQvsRqJ]
+used deep reinforcement learning to optimize a heparin dosing policy for
+intensive care patients. However, because the ideal dosing policy is unknown,
+the model's predictions must be evaluated on counter-factual data. This
+represents a common challenge when bridging the gap between research and
+clinical practice: because the ground-truth is unknown, researchers struggle
+to evaluate model predictions in the absence of interventional data, but
+clinical application is unlikely until the model has been shown to be effective
+. The impressive applications of deep reinforcement learning to other domains
+[@2gn6PKkv] have relied on knowledge of the underlying
+processes (e..g the rules of the game). Some models have been developed for
+targeted medical problems [@eCrLGgiX], but a
+generalized engine is beyond current capabilities. Further development of the
+rules underlying biological processes could unleash deep learning methods that
+are currently hampered by the difficulties of counter-factual inference.
+
+##### Efficient Clinical trials
+
+A clinical task to deep learning which has been more successfully applied is
+the assignment of patients to clinical trials. Ithapu et al
+[@eehGXQlY] used a randomized denoising autoenconder to
+learn a multimodal imaging marker that predicts future cognitive and neural
+decline from positron emission tomography (PET), amyloid
+florbetapir PET, and structural magnetic resonance imaging. By accurately
+predicting which cases will progress to dementia, they were able to
+efficiently assign patients to a clinical trial and reduced the required
+sample sizes by a factor of five.  Similarly, Artemov et al
+[@mo3GQwJj] applied deep learning to predict which clinical trials
+were likely to fail and which were likely to succeed. By predicting the side
+effects and pathway activations of each drug, and then translating these
+activations to a success proability, their deep learning-based approach was
+able to significantly outperform a random forest classifier trained on gene
+expression changes. These approaches suggest promising directions to improve
+the efficiency of clinical trials and accelerate drug development.
+
+#### Challenges
+
+##### Actionable Interpretability
+
+A common challenge in many applied deep learning problems is the consideration
+of deep learning models as uninterpretable "black boxes". Without human-
+intelligible reasoning for the model's predictions, it is difficult to trust
+the model. This presents a major challenge for the risk-averse task of
+clinical decision making. As described above, there has been some work to
+directly assign treatment plans without interpretability; however, the removal
+of human experts from the decision-making loop make the models difficult to
+integrate with clinical practice. To alleviate this challenge, several studies
+have attempted to create more interpretable deep models, either specifically
+for healthcare or as a general procedure for deep learning.
+
+For domain-specific models, studies have primarily focused on integrating
+attention mechanisms with the neural networks. Attention mechanisms
+dynamically weight the importance the neural network gives to each feature. By
+inspecting the attention weights for a particular sample, a practitioner can
+identify the important features for a particular prediction. Choi et al
+[@UcRbawKo] inverted the typical architectue of recurrent neural
+networks to improve interpretability. In particular, they only used recurrent
+connections in the attention generating procedure, leaving the hidden state
+directly connected to the input variables. This model was able to produce
+accurate diagnoses in which the contribution of previous hospital visits could
+be directly interpreted. Choi et al [@10nDTiETi] later extended this
+work to take into account the structure of disease ontologies and found that
+the concepts represented by the model were aligned with medical knowledge. Che
+et al [@14DAmZTDg] introduced a knowledge-distillation approach which
+used gradient boosted trees to learn interpretable healthcare features from
+trained deep models.
+
+As this challenge of interpretability is common across many domains, there is
+significant interest in developing generic procedures for knowledge extraction
+from deep models. Ribeiro et al [@QwXSJhr0] focus on interpreting
+individual predictions rather than interpreting the model. By fitting simple
+linear models to mimic the predictions of the deep learning model in a small
+neighborhood of a data sample, they generated an interpretable model for each
+prediction. While this procedure can provide interpretable models for each
+sample, it is unclear whether these interpretable models are reliable.
+Theoretical guarantees on the curvature of the predictions of deep learning
+models are not known, and it is unclear whether predictions from deep learning
+models are robust to sample noise. Toward quantifying the uncertainty of
+predictions, there has been a renewed interest in confidence intervals for
+deep neural networks. Early work from Chryssolouris et al
+[@9SnNyc8Y] provided confidence intervals under the assumption of
+normally distributed error. However, Nguyen et al [@1AkF8Wsv7] showed
+that the confidence of convolutional neural networks is not reliable; they can
+output confidence scores over 99.99% even for samples that are purely noise.
+Recently, Fong and Vedaldi [@y4t9EzPn] provided a framework for
+understanding black box algorithms by perturbing input data. Further work in
+interpreting predictions and understanding the knowledge learned by deep
+neural networks seem necessary for transformative impact in clinical practice.
+
+##### Integrating Deep Learning with Clinical Practice
+
+As deep learning models are difficult to interpret, many current models have
+been designed to replace aspects of clinical practice rather than to assist
+trained clinicians. This makes it difficult to integrate deep learning with
+clinical decision making. In addition, the challenges that physicians face are
+largely similar to those faced by machine learning models. For a given
+patient, the number of possible diseases is very large, with a long tail of
+rare diseases. Furthermore, patients are highly heterogeneous and may present
+with very different signs and symptoms for the same disease. Physicians are
+experienced in treating patients with common diseases, but rare diseases are
+extremely challenging. Unfortunately, machine learning methods also struggle
+for rare diseases. Because deep learning models are data-intensive, directly
+applying current deep learning models to diagnose patients with rare diseases
+would require prohibitively large datasets. Focused effort in reducing the
+data requirements of deep learning by integrating pre-existing knowledge or
+compiling large datasets of patient records may unlock the power of deep
+learning for clinical practice.
 
 ### Effects of drugs on transcriptomic responses
 

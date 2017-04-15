@@ -1178,3 +1178,257 @@ syntactic and semantic word similarities.},
  year = {2013}
 }
 
+
+@article{1AkF8Wsv7,
+ abstract = {Deep neural networks (DNNs) have recently been achieving state-of-the-art
+performance on a variety of pattern-recognition tasks, most notably visual
+classification problems. Given that DNNs are now able to classify objects in
+images with near-human-level performance, questions naturally arise as to what
+differences remain between computer and human vision. A recent study revealed
+that changing an image (e.g. of a lion) in a way imperceptible to humans can
+cause a DNN to label the image as something else entirely (e.g. mislabeling a
+lion a library). Here we show a related result: it is easy to produce images
+that are completely unrecognizable to humans, but that state-of-the-art DNNs
+believe to be recognizable objects with 99.99% confidence (e.g. labeling with
+certainty that white noise static is a lion). Specifically, we take
+convolutional neural networks trained to perform well on either the ImageNet or
+MNIST datasets and then find images with evolutionary algorithms or gradient
+ascent that DNNs label with high confidence as belonging to each dataset class.
+It is possible to produce images totally unrecognizable to human eyes that DNNs
+believe with near certainty are familiar objects, which we call "fooling
+images" (more generally, fooling examples). Our results shed light on
+interesting differences between human vision and current DNNs, and raise
+questions about the generality of DNN computer vision.},
+ archiveprefix = {arXiv},
+ author = {Anh Nguyen and Jason Yosinski and Jeff Clune},
+ eprint = {1412.1897v4},
+ file = {1412.1897v4.pdf},
+ link = {http://arxiv.org/abs/1412.1897v4},
+ month = {12},
+ primaryclass = {cs.CV},
+ title = {Deep Neural Networks are Easily Fooled: High Confidence Predictions for
+Unrecognizable Images},
+ year = {2014}
+}
+
+
+@article{glyI7H6F,
+ abstract = {We present a novel application of LSTM recurrent neural networks to
+multilabel classification of diagnoses given variable-length time series of
+clinical measurements. Our method outperforms a strong baseline on a variety of
+metrics.},
+ archiveprefix = {arXiv},
+ author = {Zachary C. Lipton and David C. Kale and Randall C. Wetzel},
+ eprint = {1510.07641v2},
+ file = {1510.07641v2.pdf},
+ link = {http://arxiv.org/abs/1510.07641v2},
+ month = {Nov},
+ primaryclass = {cs.LG},
+ title = {Phenotyping of Clinical Time Series with LSTM Recurrent Neural Networks},
+ year = {2015}
+}
+
+
+@article{14DAmZTDg,
+ abstract = {Exponential growth in Electronic Healthcare Records (EHR) has resulted in new
+opportunities and urgent needs for discovery of meaningful data-driven
+representations and patterns of diseases in Computational Phenotyping research.
+Deep Learning models have shown superior performance for robust prediction in
+computational phenotyping tasks, but suffer from the issue of model
+interpretability which is crucial for clinicians involved in decision-making.
+In this paper, we introduce a novel knowledge-distillation approach called
+Interpretable Mimic Learning, to learn interpretable phenotype features for
+making robust prediction while mimicking the performance of deep learning
+models. Our framework uses Gradient Boosting Trees to learn interpretable
+features from deep learning models such as Stacked Denoising Autoencoder and
+Long Short-Term Memory. Exhaustive experiments on a real-world clinical
+time-series dataset show that our method obtains similar or better performance
+than the deep learning models, and it provides interpretable phenotypes for
+clinical decision making.},
+ archiveprefix = {arXiv},
+ author = {Zhengping Che and Sanjay Purushotham and Robinder Khemani and Yan Liu},
+ eprint = {1512.03542v1},
+ file = {1512.03542v1.pdf},
+ link = {http://arxiv.org/abs/1512.03542v1},
+ month = {12},
+ primaryclass = {stat.ML},
+ title = {Distilling Knowledge from Deep Networks with Applications to Healthcare
+Domain},
+ year = {2015}
+}
+
+
+@article{QwXSJhr0,
+ abstract = {Despite widespread adoption, machine learning models remain mostly black
+boxes. Understanding the reasons behind predictions is, however, quite
+important in assessing trust, which is fundamental if one plans to take action
+based on a prediction, or when choosing whether to deploy a new model. Such
+understanding also provides insights into the model, which can be used to
+transform an untrustworthy model or prediction into a trustworthy one. In this
+work, we propose LIME, a novel explanation technique that explains the
+predictions of any classifier in an interpretable and faithful manner, by
+learning an interpretable model locally around the prediction. We also propose
+a method to explain models by presenting representative individual predictions
+and their explanations in a non-redundant way, framing the task as a submodular
+optimization problem. We demonstrate the flexibility of these methods by
+explaining different models for text (e.g. random forests) and image
+classification (e.g. neural networks). We show the utility of explanations via
+novel experiments, both simulated and with human subjects, on various scenarios
+that require trust: deciding if one should trust a prediction, choosing between
+models, improving an untrustworthy classifier, and identifying why a classifier
+should not be trusted.},
+ archiveprefix = {arXiv},
+ author = {Marco Tulio Ribeiro and Sameer Singh and Carlos Guestrin},
+ eprint = {1602.04938v3},
+ file = {1602.04938v3.pdf},
+ link = {http://arxiv.org/abs/1602.04938v3},
+ month = {Feb},
+ primaryclass = {cs.LG},
+ title = {"Why Should I Trust You?": Explaining the Predictions of Any Classifier},
+ year = {2016}
+}
+
+
+@article{O7Vbecm2,
+ abstract = {Multivariate time series data in practical applications, such as health care, geoscience, and biology, are characterized by a variety of missing values. In
+time series prediction and other related tasks, it has been noted that missing
+values and their missing patterns are often correlated with the target labels, a.k.a., informative missingness. There is very limited work on exploiting the
+missing patterns for effective imputation and improving prediction performance.
+In this paper, we develop novel deep learning models, namely GRU-D, as one of
+the early attempts. GRU-D is based on Gated Recurrent Unit (GRU), a
+state-of-the-art recurrent neural network. It takes two representations of
+missing patterns, i.e., masking and time interval, and effectively incorporates
+them into a deep model architecture so that it not only captures the long-term
+temporal dependencies in time series, but also utilizes the missing patterns to
+achieve better prediction results. Experiments of time series classification
+tasks on real-world clinical datasets (MIMIC-III, PhysioNet) and synthetic
+datasets demonstrate that our models achieve state-of-the-art performance and
+provides useful insights for better understanding and utilization of missing
+values in time series analysis.},
+ archiveprefix = {arXiv},
+ author = {Zhengping Che and Sanjay Purushotham and Kyunghyun Cho and David Sontag and Yan Liu},
+ eprint = {1606.01865v2},
+ file = {1606.01865v2.pdf},
+ link = {http://arxiv.org/abs/1606.01865v2},
+ month = {Jun},
+ primaryclass = {cs.LG},
+ title = {Recurrent Neural Networks for Multivariate Time Series with Missing
+Values},
+ year = {2016}
+}
+
+
+@article{4zpZxjHR,
+ abstract = {We demonstrate a simple strategy to cope with missing data in sequential
+inputs, addressing the task of multilabel classification of diagnoses given
+clinical time series. Collected from the pediatric intensive care unit (PICU)
+at Children's Hospital Los Angeles, our data consists of multivariate time
+series of observations. The measurements are irregularly spaced, leading to
+missingness patterns in temporally discretized sequences. While these artifacts
+are typically handled by imputation, we achieve superior predictive performance
+by treating the artifacts as features. Unlike linear models, recurrent neural
+networks can realize this improvement using only simple binary indicators of
+missingness. For linear models, we show an alternative strategy to capture this
+signal. Training models on missingness patterns only, we show that for some
+diseases, what tests are run can be as predictive as the results themselves.},
+ archiveprefix = {arXiv},
+ author = {Zachary C. Lipton and David C. Kale and Randall Wetzel},
+ eprint = {1606.04130v5},
+ file = {1606.04130v5.pdf},
+ link = {http://arxiv.org/abs/1606.04130v5},
+ month = {Jun},
+ primaryclass = {cs.LG},
+ title = {Modeling Missing Data in Clinical Time Series with RNNs},
+ year = {2016}
+}
+
+
+@article{UcRbawKo,
+ abstract = {Accuracy and interpretability are two dominant features of successful
+predictive models. Typically, a choice must be made in favor of complex black
+box models such as recurrent neural networks (RNN) for accuracy versus less
+accurate but more interpretable traditional models such as logistic regression.
+This tradeoff poses challenges in medicine where both accuracy and
+interpretability are important. We addressed this challenge by developing the
+REverse Time AttentIoN model (RETAIN) for application to Electronic Health
+Records (EHR) data. RETAIN achieves high accuracy while remaining clinically
+interpretable and is based on a two-level neural attention model that detects
+influential past visits and significant clinical variables within those visits
+(e.g. key diagnoses). RETAIN mimics physician practice by attending the EHR
+data in a reverse time order so that recent clinical visits are likely to
+receive higher attention. RETAIN was tested on a large health system EHR
+dataset with 14 million visits completed by 263K patients over an 8 year period
+and demonstrated predictive accuracy and computational scalability comparable
+to state-of-the-art methods such as RNN, and ease of interpretability
+comparable to traditional models.},
+ archiveprefix = {arXiv},
+ author = {Edward Choi and Mohammad Taha Bahadori and Joshua A. Kulas and Andy Schuetz and Walter F. Stewart and Jimeng Sun},
+ eprint = {1608.05745v4},
+ file = {1608.05745v4.pdf},
+ link = {http://arxiv.org/abs/1608.05745v4},
+ month = {Aug},
+ primaryclass = {cs.LG},
+ title = {RETAIN: An Interpretable Predictive Model for Healthcare using Reverse
+Time Attention Mechanism},
+ year = {2016}
+}
+
+
+@article{10nDTiETi,
+ abstract = {Deep learning methods exhibit promising performance for predictive modeling
+in healthcare, but two important challenges remain: -Data insufficiency:Often
+in healthcare predictive modeling, the sample size is insufficient for deep
+learning methods to achieve satisfactory results. -Interpretation:The
+representations learned by deep learning methods should align with medical
+knowledge. To address these challenges, we propose a GRaph-based Attention
+Model, GRAM that supplements electronic health records (EHR) with hierarchical
+information inherent to medical ontologies. Based on the data volume and the
+ontology structure, GRAM represents a medical concept as a combination of its
+ancestors in the ontology via an attention mechanism. We compared predictive
+performance (i.e. accuracy, data needs, interpretability) of GRAM to various
+methods including the recurrent neural network (RNN) in two sequential
+diagnoses prediction tasks and one heart failure prediction task. Compared to
+the basic RNN, GRAM achieved 10% higher accuracy for predicting diseases rarely
+observed in the training data and 3% improved area under the ROC curve for
+predicting heart failure using an order of magnitude less training data.
+Additionally, unlike other methods, the medical concept representations learned
+by GRAM are well aligned with the medical ontology. Finally, GRAM exhibits
+intuitive attention behaviors by adaptively generalizing to higher level
+concepts when facing data insufficiency at the lower level concepts.},
+ archiveprefix = {arXiv},
+ author = {Edward Choi and Mohammad Taha Bahadori and Le Song and Walter F. Stewart and Jimeng Sun},
+ eprint = {1611.07012v3},
+ file = {1611.07012v3.pdf},
+ link = {http://arxiv.org/abs/1611.07012v3},
+ month = {Dec},
+ primaryclass = {cs.LG},
+ title = {GRAM: Graph-based Attention Model for Healthcare Representation Learning},
+ year = {2016}
+}
+
+
+@article{y4t9EzPn,
+ abstract = {As machine learning algorithms are increasingly applied to high impact yet
+high risk tasks, e.g. problems in health, it is critical that researchers can
+explain how such algorithms arrived at their predictions. In recent years, a
+number of image saliency methods have been developed to summarize where highly
+complex neural networks "look" in an image for evidence for their predictions.
+However, these techniques are limited by their heuristic nature and
+architectural constraints.
+In this paper, we make two main contributions: First, we propose a general
+framework for learning different kinds of explanations for any black box
+algorithm. Second, we introduce a paradigm that learns the minimally salient
+part of an image by directly editing it and learning from the corresponding
+changes to its output. Unlike previous works, our method is model-agnostic and
+testable because it is grounded in replicable image perturbations.},
+ archiveprefix = {arXiv},
+ author = {Ruth Fong and Andrea Vedaldi},
+ eprint = {1704.03296v1},
+ file = {1704.03296v1.pdf},
+ link = {http://arxiv.org/abs/1704.03296v1},
+ month = {Apr},
+ primaryclass = {cs.CV},
+ title = {Interpretable Explanations of Black Boxes by Meaningful Perturbation},
+ year = {2017}
+}
+
