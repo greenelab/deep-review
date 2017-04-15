@@ -6,22 +6,18 @@ patients with treatments.  The sub-section titles are merely placeholders.*
 
 ### Categorizing patients for clinical decision making
 
-*How can deep learning match patients with clinical trails, therapies, or
-other interventions?  As an example, [@doi:10.1016/j.jalz.2015.01.010]
-predicts individuals who are most likely to decline during a clinical trial
-and benefit from the treatment.*
-
 There has been sustained interest in applying deep learning to clinical
 decision making for over two decades. In 1996, Tu
 [@doi:10.1016/S0895-4356(96)00002-9] compared the effectiveness of artificial
 neural networks and logistic regression, questioning whether deep learning
 would replace traditional statistical methods for predicting medical
-outcomes. He posited that while neural networks have several advantages in
-representational power, the difficulties in interpretation may limit clinical
-applications. In 2007, Lisboa and Taktak [@doi:10.1016/j.neunet.2005.10.007]
-examined the use of artificial neural networks in medical journals, concluding
-that neural networks provided an increase in benefit to healthcare provision
-in 21 of 27 studies.
+outcomes such as myocardial infarction [@doi:10.7326/0003-4819-115-11-843] or mortality [@doi:10.1056/NEJM198509263131306]. He posited that while neural
+networks have several advantages in representational power, the difficulties in
+interpretation may limit clinical applications. In 2007, Lisboa and Taktak
+[@doi:10.1016/j.neunet.2005.10.007] examined the use of artificial neural
+networks in medical journals, concluding that neural networks provided an
+increase in benefit to healthcare relative to traditional screening methods in
+21 of 27 studies.
 
 While significant progress has been made in developing deep learning methods
 for diagnosis, it is not clear that these methods have yet transformed
@@ -43,7 +39,8 @@ clinical environment.
 
 A common application for deep learning techniques in this domain is to
 leverage the temporal structure of healthcare records. As previously
-discussed, many studies [@arxiv:1606.04130 @arxiv:1606.01865 @doi:10.1109/ACCESS.2016.2618775 @arxiv:1510.07641]
+discussed, many studies [@arxiv:1606.04130
+@arxiv:1606.01865 @doi:10.1109/ACCESS.2016.2618775 @arxiv:1510.07641]
 have used deep recurrent networks to categorize patients but most stop short
 of suggesting clinical decisions. Nemati et al [@doi:10.1109/EMBC.2016.7591355]
 used deep reinforcement learning to optimize a heparin dosing policy for
@@ -54,7 +51,7 @@ clinical practice: because the ground-truth is unknown, researchers struggle
 to evaluate model predictions in the absence of interventional data, but
 clinical application is unlikely until the model has been shown to be effective
 . The impressive applications of deep reinforcement learning to other domains
-(@doi:10.1038/nature16961) have relied on knowledge of the underlying
+[@doi:10.1038/nature16961] have relied on knowledge of the underlying
 processes (e..g the rules of the game). Some models have been developed for
 targeted medical problems [@doi:10.1136/amiajnl-2013-001815], but a
 generalized engine is beyond current capabilities. Further development of the
@@ -67,7 +64,7 @@ A clinical task to deep learning which has been more successfully applied is
 the assignment of patients to clinical trials. Ithapu et al
 [@doi:10.1016/j.jalz.2015.01.010] used a randomized denoising autoenconder to
 learn a multimodal imaging marker that predicts future cognitive and neural
-decline from fluorodeoxyglucose positron emission tomography, amyloid
+decline from positron emission tomography (PET), amyloid
 florbetapir PET, and structural magnetic resonance imaging. By accurately
 predicting which cases will progress to dementia, they were able to
 efficiently assign patients to a clinical trial and reduced the required
