@@ -23,21 +23,22 @@ feature selection and construction.*
 ### Ligand-Based Prediction of Bioactivity
 
 In the biomedical domain, high-throughput chemical screening aims to improve
-therapeutic options over a long term horizon `TODO: add general screening
-reference`.  The objective is to discover which small molecules (also referred
-to as chemical compounds or ligands) effectively and specifically affect the
-activity of a target, such as a kinase, protein-protein interaction, or broader
-cellular phenotype.  This screening process can serve as the first step in the
-long drug discovery pipeline, where novel chemicals are pursued for their
-ability to inhibit or enhance disease-relevant biological mechanisms.  The
-appeal of machine learning in this domain is the need to improve the efficiency
-of the initial high-throughput screens such that sufficient candidate active
-compounds can be identified without exhaustively screening libraries of hundreds
-of thousands or millions of chemicals.  This task has been treated as a
-classification, regression, and ranking problem.  In reality, it does not fit
-neatly into any of those categories.  An ideal algorithm will rank a sufficient
-number of active compounds before the inactives, but the rankings of actives
-relative to other actives and inactives to other inactives is less important
+therapeutic options over a long term horizon [@tag:PerezSianes2016_screening]
+`TODO: add another general screening reference`.  The objective is to discover
+which small molecules (also referred to as chemical compounds or ligands)
+effectively and specifically affect the activity of a target, such as a kinase,
+protein-protein interaction, or broader cellular phenotype.  This screening
+process can serve as the first step in the long drug discovery pipeline, where
+novel chemicals are pursued for their ability to inhibit or enhance
+disease-relevant biological mechanisms.  The appeal of machine learning in this
+domain is the need to improve the efficiency of the initial high-throughput
+screens such that sufficient candidate active compounds can be identified
+without exhaustively screening libraries of hundreds of thousands or millions of
+chemicals.  This task has been treated as a classification, regression, and
+ranking problem.  In reality, it does not fit neatly into any of those
+categories.  An ideal algorithm will rank a sufficient number of active
+compounds before the inactives, but the rankings of actives relative to other
+actives and inactives to other inactives is less important
 [@tag:Swamidass2009_irv]. `TODO: can improve this first attempt at an intro by
 reviewing more existing literature on the topic` `TODO: check which other
 existing reviews should be referenced`
@@ -64,7 +65,7 @@ alternative methods as thoroughly as in other domains.  DeepTox was the top
 performer on only 9 of 15 targets, and in some cases there was little separation
 between DeepTox and the second best method on those 9 tasks.  A reliance on AUC
 ROC `TODO: define here?` for the evaluation (see Discussion) further hinders the
-ability to declare Tox21 as a deep learning success story.
+ability to declare Tox21 as an outright success for deep learning.
 
 In retrospect, the nuanced Tox21 performance may be more reflective of the
 practical challenges encountered in ligand-based chemical screening than the
