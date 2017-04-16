@@ -71,7 +71,7 @@ Liu2016_sc_transcriptome	doi:10.12688/f1000research.7223.1
 Lodato2015_neurons	doi:10.1126/science.aab1785
 lmat	doi:10.1093/bioinformatics/btt389
 Lusci2015_irv	doi:10.1186/s13321-015-0110-6
-Lusci2013_rnn doi:10.1021/ci400187y
+Lusci2013_rnn	doi:10.1021/ci400187y
 Ma2015_qsar_merck	doi:10.1021/ci500747n
 Mapreduce	doi:10.1145/1327452.1327492
 Mayr2016_deep_tox	doi:10.3389/fenvs.2015.00080
@@ -85,14 +85,14 @@ nbc	doi:10.1093/bioinformatics/btq619
 NIH2016_genome_cost	url:https://www.genome.gov/27565109/the-cost-of-sequencing-a-human-genome/
 onecodex	url:https://www.onecodex.com/
 Pereira2016_docking	doi:10.1021/acs.jcim.6b00355
-PerezSianes2016_screening doi:10.1007/978-3-319-40126-3_2
+PerezSianes2016_screening	doi:10.1007/978-3-319-40126-3_2
 Phymm	doi:10.1038/nmeth.1358
 Qin2017_onehot	doi:10.1371/journal.pcbi.1005403
 Qiu2017_graph_embedding	doi:10.1101/110668
 RAD2010_view_cc	doi:10.1145/1721654.1721672
 Ramsundar2015_multitask_drug	arxiv:1502.02072
 Raina2009_gpu	doi:10.1145/1553374.1553486
-Rogers2010_fingerprints doi:10.1021/ci100050t
+Rogers2010_fingerprints	doi:10.1021/ci100050t
 Rosenberg2015_synthetic_seqs	doi:10.1016/j.cell.2015.09.054
 Sa2015_buckwild	arxiv:1506.06438
 Salzberg	doi:10.1186/1471-2105-11-544
@@ -113,7 +113,7 @@ Stein2010_cloud	doi:10.1186/gb-2010-11-5-207
 Stormo2000_dna	doi:10.1093/bioinformatics/16.1.16
 Stratnikov	doi:10.1186/2049-2618-1-11
 Su2015_gpu	arxiv:1507.01239
-Subramanian2016_bace1 doi:10.1021/acs.jcim.6b00290
+Subramanian2016_bace1	doi:10.1021/acs.jcim.6b00290
 Sun2016_ensemble	arxiv:1606.00575
 Sutskever	arxiv:1409.3215
 Swamidass2009_irv	doi:10.1021/ci8004379
@@ -130,7 +130,7 @@ Wallach2015_atom_net	arxiv:1510.02855
 Wang2016_protein_contact	doi:10.1101/073239
 Word2Vec	arxiv:1301.3781
 wgsquikr	doi:10.1371/journal.pone.0091784
-Wu2017_molecule_net arxiv:1703.00564
+Wu2017_molecule_net	arxiv:1703.00564
 Xiong2011_bayesian	doi:10.1093/bioinformatics/btr444
 Xiong2015_splicing_code	doi:10.1126/science.1254806
 Yasushi2016_cgbvs_dnn	doi:10.1002/minf.201600045
