@@ -4,8 +4,17 @@
 
 We have the opportunity to write a headline review for *Journal of the Royal
 Society Interface* on a topic overlapping the computer and life sciences in the
-area of systems pharmacology. Our aim is to have the paper ready to submit by
-*April 15, 2017*.
+area of systems pharmacology. We are hitting the home stretch towards getting
+this paper submitted. Consequently, we have established the following
+guidelines:
+
+* April 24: Any empty section, even if in the outline, gets dropped due to lack
+  of interest.
+* May 1: Any section not merged & ready for revisions gets dropped due to lack
+  of completion. Invitations go out to contributing authors to approve the
+  manuscript.
+* May 1 - 14: Revisions, flow, clarity, and author approval. Authors must approve
+  by May 14 to be included as co-authors.
 
 > A Headline Review is one in a short, targeted series of high-level reviews
 within a particular topic of a burgeoning research area. We encourage authors to

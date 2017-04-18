@@ -105,13 +105,159 @@ learning can address is poised to improve.
 
 ### Splicing
 
-*A separate section from general gene expression section above.*
+Pre-mRNA transcripts can be spliced into different isoforms by retaining or
+skipping subsets of exons, or including parts of introns. This alternative
+splicing provides cells with enormous spatiotemporal flexibility to generate
+multiple distinct proteins from a single gene. Splicing is catalyzed by small
+nuclear RNAs (snRNAs) and spliceosomal proteins, which detect sequence motifs
+such as splice sites and exon sequence enhancers and silencers (ESE and ESS).
+Various RNA-binding proteins and noncoding RNAs can bias these reactions by
+altering binding affinities, blocking splice sites, or sequestering splicing
+factors. This remarkable complexity unfortunately lends itself to defects that
+underlie many diseases [@tag:Scotti2016_missplicing]. For instance, in Becker
+muscular dystrophy, a point mutation in dystrophin creates an ESS that induces
+skipping of exon 31. A recent study found that quantitative trait loci (QTLs)
+that affect splicing in lymphoblastoid cell lines are enriched within risk loci
+for schizophrenia, multiple sclerosis and other immune diseases, implicating
+mis-splicing as a much more widespread feature of human pathologies than
+previously thought [@tag:Li2016_variation].
+
+Sequencing studies routinely return thousands of unannotated variants. Which
+cause functional changes in splicing, and if so, how? Prediction of a “splicing
+code” has been a holy grail over the past decade. Initial machine learning
+approaches used a naive Bayes model and a 2-layer Bayesian neural network with
+thousands of hand-derived sequence-based features to predict the probability of
+exon skipping [@tag:Barash2010_splicing_code @tag:Xiong2011_bayesian]. With the
+advent of deep learning, more complex models were built that provided better
+predictive accuracy [@tag:Xiong2015_splicing_code
+@tag:Jha2017_integrative_models]. Importantly, these new approaches can take in
+not only genomic features, but also tissue identity and CLIP-seq measurements of
+interactions between splicing factors and RNA, which all improve predictive
+accuracy.
+
+The massive improvement seen with deep learning seems to stem from hidden layers
+being able to create new higher-order “features”, whereas earlier approaches
+often assumed independence of features and were unable to generalize.
+Higher-order understanding is especially important in splicing, which depends
+not only on the primary sequence, but also local RNA structure, tissue identity,
+splicing factor binding, and other currently unknown factors — all of which
+interact in complex, incompletely characterized ways. With new tools to
+interpret these meta-features, a major focus of current deep learning research,
+we will soon have the ability to extract a more nuanced biological understanding
+of splicing — perhaps by interrogating informative hidden nodes within neural
+networks that take in tissue type as part of the input, or by building separate
+networks for each tissue type and looking for common versus distinctive nodes
+[@tag:Qin2017_onehot].
+
+A parallel effort has been to use more data with simpler models. An exhaustive
+study using readouts of splicing for millions of synthetic intronic sequences
+was able to describe motifs that influence the strength of alternative splice
+sites [@tag:Rosenberg2015_synthetic_seqs]. Interestingly, they built a simple
+linear model using hexamer motif frequencies that successfully generalized to
+exon skipping: in a limited analysis using SNPs from three genes, it predicted
+exon skipping with three times the accuracy of Xiong et al.’s framework. This
+case is instructive in that clever sources of data, not just more powerful
+models, can lead to novel insights.
+
+We already understand how mis-splicing of a single gene can cause diseases such
+as Duchenne muscular dystrophy. The challenge now is to uncover how alternative
+splicing genome-wide gives rise to or is involved in complex, non-Mendelian
+diseases such as autism, schizophrenia, Type 1 diabetes, and multiple sclerosis
+[@tag:JuanMateu2016_t1d]. As a proof of concept, Xiong et al.
+[@tag:Xiong2015_splicing_code] sequenced five ASD and 12 control samples, each
+with an average of 42,000 rare variants, and identified 19 genes with neural
+functions that are mis-spliced. Deep learning will allow scientists and
+clinicians to rapidly profile thousands of unannotated variants for functional
+effects on splicing and nominate candidates for further investigation. Moreover,
+these nonlinear algorithms can deconvolve the effects of multiple variants on a
+single splice event without the need to perform combinatorial in vitro
+experiments.
+
+Our end goal is to predict an individual’s tissue-specific, exon-specific
+splicing patterns from their genome sequence and other measurements. Knowing
+exactly which genes are mis-spliced in each tissue could enable a new branch of
+precision diagnostics that also stratifies patients and suggests targeted
+therapies to correct splicing defects. A continued focus on interpreting the
+“black box” of deep neural networks, along with integrating more comprehensive
+and diverse data sources, will likely provide the path forward to a better
+understanding of the basic determinants of splicing and its links to complex
+disease, which will lead to novel diagnostics and therapeutics.
 
 ### Transcription factors and RNA-binding proteins
 
-*Existing reviews have covered some of these papers rather well and we do not
-want to repeat what has already been well-stated elsewhere.  This could
-be split into two sub-sections or kept very brief.*
+Transcription Factor and RNA-binding proteins are key components for gene
+regulation, making them very important to understand for higher level
+biological processes. While high-throughput sequencing techniques such as
+chromatin immunoprecipitation and massively parallel DNA
+sequencing (ChIP-seq) have been able to accurately identify binding regions
+for DNA and RNA proteins, these experiments are both time consuming and
+expensive. In addition, the sequencing methods do not provide any sort of
+analysis on the proteins which would lead to a better understanding of
+the underlying process. Thus, there is a need to computationally predict
+and understand these binding regions de novo from sequences.
+
+#### Transcription Factors
+
+Transcription Factors (TFs) are regulatory proteins that bind to certain
+locations on a DNA sequence and control the rate of mRNA
+production. ChIP-seq and related technologies are able to identify highly
+likely binding sites for a certain TF, and databases such as
+ENCODE [@tag:Consortium2004_encode] have provided ChIP-seq
+data for hundreds of different TFs across many laboratories.
+However, ChIP-seq experiments are expensive and time consuming.
+Since the data that scientists have discovered is available, in
+silico methods to predict binding sites are of great interest, thus
+eliminating the need to do new ChIP-seq experiments every
+time analysis is done on a new sequence.
+
+In order to computationally predict TFBSs on a DNA sequence, researchers
+initially used consensus sequences and position weight matrices to match
+against a test sequence [@tag:Stormo2000_dna]. Simple neural network
+classifiers were then proposed to differentiate positive and negative binding
+sites, but did not show significant improvements over the weight matrix
+matching methods [@tag:Horton1992_assessment]. Later, SVM techniques
+outperformed the generative methods by using k-mer features
+[@tag:Ghandi2014_enhanced @tag:Setty2015_seqgl], but string kernel based SVM
+systems are limited by expensive computational cost proportional to the number
+of training and testing sequences. More recently,
+[@tag:Alipanahi2015_predicting] showed that convolutional neural network
+models could achieve state of the art results on the TFBS task and are scalable
+to a large number of genomic sequences. [@tag:Lanchantin2016_motif] introduced
+several new convolutional and recurrent neural network models for predicting
+TFBSs, but it remains unclear which neural architectures work best for all
+samples and TFs. While neural architectures are rapidly changing and producing
+better results, it is clear that deep learning can be efficiently and
+effectively used to do functional prediction on the genome given raw data.
+
+While accurately predicting transcription factors computationally is useful,
+it is important to understand how these computational models make their
+predictions. To handle this, several papers have focused on understanding
+machine learning models [@tag:Alipanahi2015_predicting
+@tag:Lanchantin2016_motif @tag:Shrikumar2016_blackbox].
+[@tag:Alipanahi2015_predicting] was the first to introduce a visualization
+method for a deep learning model on the TFBS task, and they did so by
+visualizing the learned convolution filters which were informative for the
+model’s prediction of a specific sample. However, this approach was specific to
+visualizing certain samples fed through their particular model.
+[@tag:Lanchantin2016_motif] introduced a suite of state-of-the-art deep
+learning models and new visualizations techniques for a more in-depth analysis
+of TFBSs. Furthermore, [@tag:Shrikumar2016_blackbox] introduced an advanced
+visualization method and toolbox for analyzing possible TFBS sequences.
+[@tag:Alipanahi2015_predicting] also introduced mutation maps, where they could
+easily mutate, add, or delete basepairs in a sequence and see how the model
+changed its prediction. This is something that would be very time consuming
+in a lab setting, but easy to simulate using their model. Visualization
+techniques on deep learning models are important because they can provide
+new insights on regulatory mechanisms and can lead biologists to test and
+verify in a lab setting, leading to new biomedical knowledge. Since the
+“linguistics” of DNA are unclear, interpretability of models is crucial to
+pushing our understanding forward.
+
+`TODO: Add discussion about the large number of deep learning works
+in this area since the DeepBind paper. In particular, add
+[#43](https://github.com/greenelab/deep-review/issues/43),
+[#215](https://github.com/greenelab/deep-review/issues/215),
+and [#258](https://github.com/greenelab/deep-review/issues/258).`
 
 ### Promoters, enhancers, and related epigenomic tasks
 
@@ -294,15 +440,74 @@ unsupervised uses.`
 
 ### Single-cell
 
-*There are not many neural network papers in this area (yet), unless we count
-imaging applications.  But there is still plenty to discuss.  The existing
-methods [@tag:Arvaniti2016_rare_subsets @tag:Angermueller2016_single_methyl]
-use interesting network architectures to approach single-cell data.
-[@tag:Shaham2016_batch_effects] could fit here.*
+Single-cell methods are generating extreme excitement as biologists recognize
+the vast heterogeneity within unicellular species and between cells of the same
+tissue type in the same organism [@tag:Gawad2016_singlecell]. For instance,
+tumor cells and neurons can both harbor extensive somatic variation
+[@tag:Lodato2015_neurons]. Understanding single-cell diversity in all its
+dimensions — genetic, epigenetic, transcriptomic, proteomic, morphologic, and
+metabolic — is key if precision medicine is to be targeted not only to a
+specific individual, but also to specific pathological subsets of cells.
+Single-cell methods also promise to uncover a wealth of new biological
+knowledge. A sufficiently large population of single cells will have enough
+representative “snapshots” to recreate timelines of rapid biological processes.
+If tracking processes over time is not the limiting factor, single cell
+techniques can provide maximal resolution compared to averaging across all cells
+in bulk tissue, enabling the study of transcriptional bursting with single-cell
+FISH or the heterogeneity of epigenetic patterns with single-cell Hi-C or
+ATAC-seq [@tag:Liu2016_sc_transcriptome @tag:Vera2016_sc_analysis].
+
+However, large challenges exist in studying single cells. Relatively few cells
+can be assayed at once using current droplet, imaging, or microwell
+technologies, and low-abundance molecules or modifications may not be detected
+by chance in a phenomenon known as dropout. To solve this problem, Angermueller
+et al. [@tag:Angermueller2016_single_methyl] trained a neural network to predict
+the presence or absence of methylation of a specific CpG site in single cells
+based on surrounding methylation signal and underlying DNA sequence, achieving
+several percentage points of improvement compared to random forests or deep
+networks trained only on CpG or sequence information. Similar deep learning
+methods have been applied to impute low-resolution ChIP-seq signal from bulk
+tissue with great success, and they could easily be adapted to single cell data
+[@tag:Qin2017_onehot @tag:Koh2016_denoising].
+
+Examining populations of single cells can reveal biologically meaningful subsets
+of cells as well as their underlying gene regulatory networks
+[@tag:Gaublomme2015_th17]. Unfortunately, machine learning generally struggles
+with unbalanced data — when there are many more inputs of class 1 than class 2 —
+because prediction accuracy is usually evaluated over the entire dataset. To
+tackle this challenge, Arvaniti et al. [@tag:Arvaniti2016_rare_subsets]
+classified healthy and cancer cells expressing 25 markers by using the most
+discriminative filters from a CNN trained on the data as a linear classifier.
+They achieved an impressive precision of 50% to 90% with 80% recall on cells
+where the subset percentage ranged from 0.1 to 1%, which significantly
+outperformed logistic regression and distance-based outlier detection methods.
+However, they did not benchmark against random forests, which tend to be better
+with unbalanced data, or against the neural network itself, and their data was
+fairly low dimensional. Future work will be needed to establish the utility of
+deep learning in cell subset identification, but the stunning improvements in
+image classification over the past 5 years [@tag:He2015_images] suggest that
+this goal will be achievable.
+
+The sheer quantity of “omic” information that can be obtained from each cell, as
+well as the number of cells in each dataset, uniquely position single-cell data
+to benefit from deep learning. In the future, lineage tracing could be
+revolutionized by using autoencoders to reduce the feature space of
+transcriptomic or variant data followed by algorithms to learn optimal cell
+differentiation trajectories [@tag:Qiu2017_graph_embedding], or by feeding cell
+morphology and movement into neural networks
+[@tag:Buggenthin2017_imaged_lineage]. Reinforcement learning algorithms
+[@tag:Silver2016_alphago] could be trained on the evolutionary dynamics of
+cancer cells or bacterial cells undergoing selection pressure and reveal whether
+patterns of adaptation are random or deterministic, allowing us to develop
+therapeutic strategies that forestall resistance. It will be exciting to see the
+creative applications of deep learning to single-cell biology that emerge over
+the next few years.
+
+`TODO: https://github.com/greenelab/deep-review/issues/153`
 
 ### Metagenomics
 
-**TODO: Add reference tags to this section**
+`TODO: Add reference tags to this section`
 Metagenomics (which refers to the study of genetic material, 16S rRNA 
 and/or whole-genome shotgun DNA, from microbial communities) has 
 revolutionized the study of micro-scale ecosystems within us and around us. 
@@ -311,16 +516,16 @@ metagenomic analysis.  In the late 2000’s, a plethora of machine learning
 methods were applied to classifying DNA sequencing reads to the thousands of 
 species within a sample.  An important problem is genome assembly from these 
 mixed-organism samples. And to do that, the organisms should be “binned” 
-before assembling.  Binning methods began with many k-mer techniques [refs] 
+before assembling.  Binning methods began with many k-mer techniques [@tag:Karlin] 
 and then delved into other clustering algorithms, such as self-organizing maps 
-(SOM).  Then came the taxonomic classification problem,  with researchers 
+(SOM) [@tag:Abe].  Then came the taxonomic classification problem,  with researchers 
 naturally using BLAST [@tag:blast], followed by other machine learning techniques 
 such as SVMs [@tag:McHardy], naive Bayesian classifiers [@tag:nbc], etc. to classify
 each read.  Then, researchers began to use techniques that could be used to 
 estimate relative abundances of an entire sample, instead of the precise but
 painstakingly slow read-by-read classification.  Relative abundance
-estimators (a.k.a diversity profilers) are MetaPhlan[ref], (WGS)Quikr[ref],
-and some configurations of tools like OneCodex[ref] and LMAT[ref].  While one
+estimators (a.k.a diversity profilers) are MetaPhlan [@tag:Metaphlan], (WGS)Quikr [@tag:wgsquikr],
+and some configurations of tools like OneCodex [@tag:onecodex] and LMAT [@tag:lmat].  While one
 cannot identify which reads were mapped back to an organism using relative
 abundance estimators, they can be useful for faster comparative and other
 downstream analyses.   Newer methods hope to classify reads and estimate
@@ -338,13 +543,13 @@ techniques that bypass the taxonomic classification step altogether [@tag:Ding],
 (sequence composition to phenotype classification).  Also, researchers have
 looked into how feature selection can improve classification [@tag:Liu @tag:Segata],
 and techniques have been proposed that are classifier-independent
-[Ditzler,Ditzler].
+[@tag:Ditzler @tag:Ditzler2].
 
 So, how have neural networks (NNs) been of use?    Most neural networks are being 
 used for short sequence->taxa/function classification, where there is a lot of data 
 for training (and thus suitable for NNs).  Neural networks have been applied 
 successfully to gene annotation (e.g. Orphelia [@tag:Hoff] and FragGeneScan [@doi:10.1093/nar/gkq747]), 
-which usually has plenty of training examples.  Representations (similar to Word2Vec [ref] in 
+which usually has plenty of training examples.  Representations (similar to Word2Vec [@tag:Word2Vec] in 
 natural language processing) for protein family classification has been introduced and classified 
 with a skip-gram  neural network [@tag:Asgari].  Recurrent neural networks show good performance for 
 homology and protein family identification [@tag:Hochreiter @tag:Sonderby].  Interestingly, 
@@ -373,7 +578,7 @@ Recently, multi-layer, recurrent networks (and convolutional
 networks) have been applied to microbiome genotype-phenotype, with Ditzler et
 al. being the first to associate soil samples with pH level using multi-layer
 perceptrons, deep-belief networks, and recursive neural networks (RNNs) 
-[Ditzler] .  Besides classifying the samples appropriately, Ditzler shows
+[@tag:Ditzler3]. Besides classifying the samples appropriately, Ditzler shows
 that internal phylogenetic tree nodes inferred by the networks are
 appropriate features representing low/high pH, which can provide additional
 useful information and new features for future metagenomic sample comparison.
@@ -392,11 +597,11 @@ available for training.
 However, because recurrent neural networks are showing success for base-calling (and thus removing the large error in 
 the measurement of a pore's current signal) for the relatively new Oxford Nanopore sequencer [@tag:Boza], there is hope that
 the process of denoising->organism/function classification can be combined into one step in using powerful LSTM's. LSTM's
-are working miracles in raw speech signal->meaning translation [ref], and combining steps in metagenomics are not out of the 
-question.  For example, metagenomic assembly usually requires binning then assembly, but could deep neural nets accomplish
-both tasks in one network? Does functional/taxonomic classification need to be separate processes?  The largest potential
-in deep learning is to learn "everything" in one complex network, with a plethora of labeled (reference) data and unlabeled 
-(microbiome experiments) examples.
+are working miracles in raw speech signal->meaning translation [@tag:Sutskever], and combining steps in metagenomics are not
+out of the question.  For example, metagenomic assembly usually requires binning then assembly, but could deep neural nets
+accomplish both tasks in one network? Does functional/taxonomic classification need to be separate processes?  The largest 
+potential in deep learning is to learn "everything" in one complex network, with a plethora of labeled (reference) data and
+unlabeled (microbiome experiments) examples.
 
 ### Sequencing and variant calling
 

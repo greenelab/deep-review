@@ -1,7 +1,9 @@
 import collections
+from hashlib import blake2b
 import pathlib
 import re
 
+import base62
 import bibtexparser
 
 import metadata
@@ -107,7 +109,8 @@ def citation_to_metadata(citation, cache={}):
         msg = f'Unsupported citation  source {source} in {citation}'
         raise ValueError(msg)
 
-    citation_id = f'ref_{len(cache)}'
+    digest = blake2b(standard_citation.encode(), digest_size=6).digest()
+    citation_id = base62.encodebytes(digest)
     result['citation_id'] = citation_id
     if 'citeproc' in result:
         result['citeproc'] = citeproc_passthrough(
@@ -135,6 +138,10 @@ citeproc_remove_keys = [
     'ISBN',
     # pandoc-citeproc expected Object not array for archive
     'archive',
+    # failed to parse field event: Could not read as string
+    'event',
+    # remove the references of cited papers. Not neccessary and unwieldy.
+    'reference',
 ]
 
 
