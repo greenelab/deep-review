@@ -15,6 +15,13 @@ guidelines:
   manuscript.
 * May 1 - 14: Revisions, flow, clarity, and author approval. Authors must approve
   by May 14 to be included as co-authors.
+  
+The most current version of the `master` branch is built by continuous integration
+and [available via gh-pages](https://greenelab.github.io/deep-review/). To see
+what's incoming, check the
+[open pull requests](https://github.com/greenelab/deep-review/pulls).
+If you want to claim a section (time is short - see timeline above!) issue number
+[188](https://github.com/greenelab/deep-review/issues/188) is the place to do it.
 
 > A Headline Review is one in a short, targeted series of high-level reviews
 within a particular topic of a burgeoning research area. We encourage authors to
