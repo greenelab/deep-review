@@ -91,46 +91,11 @@ directly assign treatment plans without interpretability; however, the removal
 of human experts from the decision-making loop make the models difficult to
 integrate with clinical practice. To alleviate this challenge, several studies
 have attempted to create more interpretable deep models, either specifically
-for healthcare or as a general procedure for deep learning.
-
-For domain-specific models, studies have primarily focused on integrating
-attention mechanisms with the neural networks. Attention mechanisms
-dynamically weight the importance the neural network gives to each feature. By
-inspecting the attention weights for a particular sample, a practitioner can
-identify the important features for a particular prediction. Choi et al
-[@arxiv:1608.05745] inverted the typical architectue of recurrent neural
-networks to improve interpretability. In particular, they only used recurrent
-connections in the attention generating procedure, leaving the hidden state
-directly connected to the input variables. This model was able to produce
-accurate diagnoses in which the contribution of previous hospital visits could
-be directly interpreted. Choi et al [@arxiv:1611.07012] later extended this
-work to take into account the structure of disease ontologies and found that
-the concepts represented by the model were aligned with medical knowledge. Che
-et al [@arxiv:1512.03542] introduced a knowledge-distillation approach which
-used gradient boosted trees to learn interpretable healthcare features from
-trained deep models.
-
-As this challenge of interpretability is common across many domains, there is
-significant interest in developing generic procedures for knowledge extraction
-from deep models. Ribeiro et al [@arxiv:1602.04938] focus on interpreting
-individual predictions rather than interpreting the model. By fitting simple
-linear models to mimic the predictions of the deep learning model in a small
-neighborhood of a data sample, they generated an interpretable model for each
-prediction. While this procedure can provide interpretable models for each
-sample, it is unclear whether these interpretable models are reliable.
-Theoretical guarantees on the curvature of the predictions of deep learning
-models are not known, and it is unclear whether predictions from deep learning
-models are robust to sample noise. Toward quantifying the uncertainty of
-predictions, there has been a renewed interest in confidence intervals for
-deep neural networks. Early work from Chryssolouris et al
-[@doi:10.1109/72.478409] provided confidence intervals under the assumption of
-normally distributed error. However, Nguyen et al [@arxiv:1412.1897v4] showed
-that the confidence of convolutional neural networks is not reliable; they can
-output confidence scores over 99.99% even for samples that are purely noise.
-Recently, Fong and Vedaldi [@arxiv:1704.03296] provided a framework for
-understanding black box algorithms by perturbing input data. Further work in
-interpreting predictions and understanding the knowledge learned by deep
-neural networks seem necessary for transformative impact in clinical practice.
+for healthcare or as a general procedure for deep learning.  Further work in
+interpreting predictions and understanding the knowledge learned by deep neural
+networks seem necessary for transformative impact in clinical practice.
+Interpretability in deep learning is reviewed more extensively in the
+Discussion.
 
 ##### Integrating Deep Learning with Clinical Practice
 
