@@ -22366,5 +22366,19 @@
       "id": "jdg2u7bX"
     },
     "citation_id": "jdg2u7bX"
+  },
+  "arxiv:1206.7051": {
+    "source": "arxiv",
+    "identifer": "1206.7051",
+    "standard_citation": "arxiv:1206.7051",
+    "bibtex": "@article{8RAYEOPl,\n abstract = {We develop stochastic variational inference, a scalable algorithm for\napproximating posterior distributions. We develop this technique for a large\nclass of probabilistic models and we demonstrate it with two probabilistic\ntopic models, latent Dirichlet allocation and the hierarchical Dirichlet\nprocess topic model. Using stochastic variational inference, we analyze several\nlarge collections of documents: 300K articles from Nature, 1.8M articles from\nThe New York Times, and 3.8M articles from Wikipedia. Stochastic inference can\neasily handle data sets of this size and outperforms traditional variational\ninference, which can only handle a smaller subset. (We also show that the\nBayesian nonparametric topic model outperforms its parametric counterpart.)\nStochastic variational inference lets us apply complex Bayesian models to\nmassive data sets.},\n archiveprefix = {arXiv},\n author = {Matt Hoffman and David M. Blei and Chong Wang and John Paisley},\n eprint = {1206.7051v3},\n file = {1206.7051v3.pdf},\n link = {http://arxiv.org/abs/1206.7051v3},\n month = {Jun},\n primaryclass = {stat.ML},\n title = {Stochastic Variational Inference},\n year = {2012}\n}\n\n",
+    "citation_id": "8RAYEOPl"
+  },
+  "arxiv:1511.02386": {
+    "source": "arxiv",
+    "identifer": "1511.02386",
+    "standard_citation": "arxiv:1511.02386",
+    "bibtex": "@article{15lbUf0as,\n abstract = {Black box variational inference allows researchers to easily prototype and\nevaluate an array of models. Recent advances allow such algorithms to scale to\nhigh dimensions. However, a central question remains: How to specify an\nexpressive variational distribution that maintains efficient computation? To\naddress this, we develop hierarchical variational models (HVMs). HVMs augment a\nvariational approximation with a prior on its parameters, which allows it to\ncapture complex structure for both discrete and continuous latent variables.\nThe algorithm we develop is black box, can be used for any HVM, and has the\nsame computational efficiency as the original approximation. We study HVMs on a\nvariety of deep discrete latent variable models. HVMs generalize other\nexpressive variational distributions and maintains higher fidelity to the\nposterior.},\n archiveprefix = {arXiv},\n author = {Rajesh Ranganath and Dustin Tran and David M. Blei},\n eprint = {1511.02386v2},\n file = {1511.02386v2.pdf},\n link = {http://arxiv.org/abs/1511.02386v2},\n month = {Dec},\n primaryclass = {stat.ML},\n title = {Hierarchical Variational Models},\n year = {2015}\n}\n\n",
+    "citation_id": "15lbUf0as"
   }
 }
