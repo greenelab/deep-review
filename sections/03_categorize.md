@@ -178,14 +178,14 @@ clinical implementation.
 
 There is a computational cost for these methods, however, when compared to
 traditional, non-network approaches. For the exponential family models,
-despite their scalability [arXiv:1206.7051], an important question for the 
-investigator is whether he or she is interested in estimates of posterior 
-uncertainty. Given that these models are effectively Bayesian neural networks, 
-much of their utility simplifies to whether a Bayesian approach is warranted 
-for a given increase in computational cost. Moreover, as with all variational 
-methods, future work must continue to explore just how well the posterior 
-distributions are approximated, especially as model complexity increases 
-[arXiv:1511.02386].`
+despite their scalability [arXiv:1206.7051], an important question for the
+investigator is whether he or she is interested in estimates of posterior
+uncertainty. Given that these models are effectively Bayesian neural networks,
+much of their utility simplifies to whether a Bayesian approach is warranted
+for a given increase in computational cost. Moreover, as with all variational
+methods, future work must continue to explore just how well the posterior
+distributions are approximated, especially as model complexity increases
+[arXiv:1511.02386].
 
 ##### Opportunities
 
