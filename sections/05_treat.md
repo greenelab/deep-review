@@ -53,7 +53,7 @@ to evaluate model predictions in the absence of interventional data, but
 clinical application is unlikely until the model has been shown to be effective
 . The impressive applications of deep reinforcement learning to other domains
 [@doi:10.1038/nature16961] have relied on knowledge of the underlying
-processes (e..g the rules of the game). Some models have been developed for
+processes (e.g. the rules of the game). Some models have been developed for
 targeted medical problems [@doi:10.1136/amiajnl-2013-001815], but a
 generalized engine is beyond current capabilities. Further development of the
 rules underlying biological processes could unleash deep learning methods that
@@ -73,7 +73,7 @@ sample sizes by a factor of five.  Similarly, Artemov et al
 [@doi:10.1101/095653] applied deep learning to predict which clinical trials
 were likely to fail and which were likely to succeed. By predicting the side
 effects and pathway activations of each drug, and then translating these
-activations to a success proability, their deep learning-based approach was
+activations to a success probability, their deep learning-based approach was
 able to significantly outperform a random forest classifier trained on gene
 expression changes. These approaches suggest promising directions to improve
 the efficiency of clinical trials and accelerate drug development.
@@ -98,7 +98,7 @@ attention mechanisms with the neural networks. Attention mechanisms
 dynamically weight the importance the neural network gives to each feature. By
 inspecting the attention weights for a particular sample, a practitioner can
 identify the important features for a particular prediction. Choi et al
-[@arxiv:1608.05745] inverted the typical architectue of recurrent neural
+[@arxiv:1608.05745] inverted the typical architecture of recurrent neural
 networks to improve interpretability. In particular, they only used recurrent
 connections in the attention generating procedure, leaving the hidden state
 directly connected to the input variables. This model was able to produce
