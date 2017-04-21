@@ -155,10 +155,10 @@ drug interactions or predict drug response. One recent approach for
 predicting drug response is the use of protein structure to predict drug
 interactions and drug bioactivity through CNN [@arxiv:1510.02855]. Since CNNs
 leverage spatial relationships within the data, this particular deep learning
-framework is well suited to the problem. Drug discovery and drug
-"repurposing" are two other hot topics. Aliper et al. used transcriptomic
-data to predict which drugs might be repurposed for other diseases through
-deep fully connected neural networks
-[@doi:10.1021/acs.molpharmaceut.6b00248]. In a similar vein, Wang et al. used
-restricted boltzman machines (RBM) to predict drug molecular targets
-[@doi:10.1093/bioinformatics/btt234].
+framework is well suited to the problem. Drug repositioning is another fertile
+area. Aliper et al. used transcriptomic data to predict which drugs might be
+repurposed for other diseases through deep, fully connected neural networks
+[@doi:10.1021/acs.molpharmaceut.6b00248]. Similarly, restricted Boltzmann
+machines (RBM) can be combined into deep belief networks to predict novel
+drug - target interactions and formulate drug repositioning hypitheses
+[@doi:10.1093/bioinformatics/btt234 @doi:10.1021/acs.jproteome.6b00618].

@@ -79,6 +79,39 @@ forest classifier trained on gene expression changes. These approaches
 suggest promising directions to improve the efficiency of clinical trials
 and accelerate drug development.
 
+##### Drug repositioning
+
+Drug repositioning (or repurposing) is an attractive option for delivering new
+drugs to the market because of the high costs and failure rates associated with
+more traditional drug discovery approaches [@doi:10.1016/j.jhealeco.2016.01.012
+@doi:10.1038/nrd4609]. Ever since the inception of the Connectivity Map concept
+[@doi:10.1126/science.1132939], several, more advanced computational methods
+have been applied to formulate and validate drug repositioning hypotheses
+[@doi:10.1093/bib/bbv020 @doi:10.1093/bib/bbw112 @doi:10.1093/bib/bbw110]. Using
+supervised learning and recommender systems to tackle this type of problems is
+proving successful in different scenarios, especially when coupled with
+topological information from protein - protein or protein - compound interaction
+networks [@doi:10.1186/1758-2946-5-30 @doi:10.1021/ci500340n
+@doi:10.1186/s12859-015-0845-0 @doi:10.1371/journal.pcbi.1005135]. Menden et
+al [@doi:10.1371/journal.pone.0061318] used a shallow neural network to predict
+sensitivity of cancer cell lines to drug treatment using both cell line and drug
+features, opening the door to precision medicine and drug repositioning
+opportunities in cancer. More recently, Aliper et al
+[@doi:10.1021/acs.molpharmaceut.6b00248] used gene- and pathway-level drug
+perturbation transcriptional profiles from the Library of Network-Based Cellular
+Signatures (LINCS) [@doi:10.3389/fgene.2014.00342] to train a deep neural
+network able to predict drug therapeutic uses and indications. By using
+confusion matrices and leveraging misclassification, the authors formulate a
+number of interesting hypotheses, including repurposing cardiovascular drugs for
+neurological disorders. Predicting drug - target interactions is another,
+less direct, way to make inferences on potential repurposing opportunities. Wang
+et al [@doi:10.1093/bioinformatics/btt234] trained RBMs for each target in a
+drug - target interaction network and used this model to predict novel
+interactions that could point to identification of new indications for existing
+drugs. Wen et al. [@doi:10.1021/acs.jproteome.6b00618] extended this concept to
+deep learning by creating a deep belief network of stacked RBMs, DeepDTIs,
+achieving similar performance.
+
 #### Challenges
 
 ##### Actionable Interpretability
