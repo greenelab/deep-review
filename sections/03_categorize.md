@@ -39,15 +39,6 @@ focus on barriers to achieving these goals. We also highlight approaches that
 researchers are taking to address challenges within the field, particularly with
 regards to data availability and labeling.
 
-### Major areas of existing contributions
-
-*There are a number of major challenges in this space. How do we get data
-together from multiple distinct systems? How do we find biologically meaningful
-patterns in that data? How do we store and compute on this data at scale? How
-do we share these data while respecting privacy? I've made a section for each
-of these. Feel free to add more. I see each section as something on the order
-of 1-2 paragraphs in our context.*
-
 #### Imaging applications in health care
 
 One of the general areas where deep learning methods have had substantial
