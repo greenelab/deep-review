@@ -25,24 +25,7 @@ human-level performance is irrelevant.*
 
 ### Interpretation
 
-For domain-specific models, studies have primarily focused on integrating
-attention mechanisms with the neural networks. Attention mechanisms
-dynamically weight the importance the neural network gives to each feature. By
-inspecting the attention weights for a particular sample, a practitioner can
-identify the important features for a particular prediction. Choi et al
-[@arxiv:1608.05745] inverted the typical architectue of recurrent neural
-networks to improve interpretability. In particular, they only used recurrent
-connections in the attention generating procedure, leaving the hidden state
-directly connected to the input variables. This model was able to produce
-accurate diagnoses in which the contribution of previous hospital visits could
-be directly interpreted. Choi et al [@arxiv:1611.07012] later extended this
-work to take into account the structure of disease ontologies and found that
-the concepts represented by the model were aligned with medical knowledge. Che
-et al [@arxiv:1512.03542] introduced a knowledge-distillation approach which
-used gradient boosted trees to learn interpretable healthcare features from
-trained deep models.
-
-As this challenge of interpretability is common across many domains, there is
+As the challenge of interpretability is common across many domains, there is
 significant interest in developing generic procedures for knowledge extraction
 from deep models. Ribeiro et al [@arxiv:1602.04938] focus on interpreting
 individual predictions rather than interpreting the model. By fitting simple
@@ -61,6 +44,26 @@ that the confidence of convolutional neural networks is not reliable; they can
 output confidence scores over 99.99% even for samples that are purely noise.
 Recently, Fong and Vedaldi [@arxiv:1704.03296] provided a framework for
 understanding black box algorithms by perturbing input data.
+
+For domain-specific models, we previously described approaches for the
+interpretation and visualization of neural networks that prediction
+transcription factor binding [@tag:Alipanahi2015_predicting
+@tag:Lanchantin2016_motif @tag:Shrikumar2016_blackbox]. Other studies have
+primarily focused on integrating attention mechanisms with the neural networks.
+Attention mechanisms dynamically weight the importance the neural network gives
+to each feature. By inspecting the attention weights for a particular sample, a
+practitioner can identify the important features for a particular prediction.
+Choi et al [@arxiv:1608.05745] inverted the typical architecture of recurrent
+neural networks to improve interpretability. In particular, they only used
+recurrent connections in the attention generating procedure, leaving the hidden
+state directly connected to the input variables. In the clinical domain, this
+model was able to produce accurate diagnoses in which the contribution of
+previous hospital visits could be directly interpreted. Choi et al
+[@arxiv:1611.07012] later extended this work to take into account the structure
+of disease ontologies and found that the concepts represented by the model were
+aligned with medical knowledge. Che et al [@arxiv:1512.03542] introduced a
+knowledge-distillation approach which used gradient boosted trees to learn
+interpretable healthcare features from trained deep models.
 
 ### Data limitations
 
