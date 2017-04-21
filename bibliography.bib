@@ -1543,3 +1543,123 @@ and evaluate mitigation strategies.},
  year = {2016}
 }
 
+
+@article{17YaKNLKk,
+ abstract = {Empirical scoring functions based on either molecular force fields or
+cheminformatics descriptors are widely used, in conjunction with molecular
+docking, during the early stages of drug discovery to predict potency and
+binding affinity of a drug-like molecule to a given target. These models
+require expert-level knowledge of physical chemistry and biology to be encoded
+as hand-tuned parameters or features rather than allowing the underlying model
+to select features in a data-driven procedure. Here, we develop a general
+3-dimensional spatial convolution operation for learning atomic-level chemical
+interactions directly from atomic coordinates and demonstrate its application
+to structure-based bioactivity prediction. The atomic convolutional neural
+network is trained to predict the experimentally determined binding affinity of
+a protein-ligand complex by direct calculation of the energy associated with
+the complex, protein, and ligand given the crystal structure of the binding
+pose. Non-covalent interactions present in the complex that are absent in the
+protein-ligand sub-structures are identified and the model learns the
+interaction strength associated with these features. We test our model by
+predicting the binding free energy of a subset of protein-ligand complexes
+found in the PDBBind dataset and compare with state-of-the-art cheminformatics
+and machine learning-based approaches. We find that all methods achieve
+experimental accuracy and that atomic convolutional networks either outperform
+or perform competitively with the cheminformatics based methods. Unlike all
+previous protein-ligand prediction systems, atomic convolutional networks are
+end-to-end and fully-differentiable. They represent a new data-driven, physics-based deep learning model paradigm that offers a strong foundation for
+future improvements in structure-based bioactivity prediction.},
+ archiveprefix = {arXiv},
+ author = {Joseph Gomes and Bharath Ramsundar and Evan N. Feinberg and Vijay S. Pande},
+ eprint = {1703.10603v1},
+ file = {1703.10603v1.pdf},
+ link = {http://arxiv.org/abs/1703.10603v1},
+ month = {Mar},
+ primaryclass = {cs.LG},
+ title = {Atomic Convolutional Networks for Predicting Protein-Ligand Binding
+Affinity},
+ year = {2017}
+}
+
+
+@article{1Dzz0P0qr,
+ abstract = {Although artificial neural networks have occasionally been used for
+Quantitative Structure-Activity/Property Relationship (QSAR/QSPR) studies in
+the past, the literature has of late been dominated by other machine learning
+techniques such as random forests. However, a variety of new neural net
+techniques along with successful applications in other domains have renewed
+interest in network approaches. In this work, inspired by the winning team's
+use of neural networks in a recent QSAR competition, we used an artificial
+neural network to learn a function that predicts activities of compounds for
+multiple assays at the same time. We conducted experiments leveraging recent
+methods for dealing with overfitting in neural networks as well as other tricks
+from the neural networks literature. We compared our methods to alternative
+methods reported to perform well on these tasks and found that our neural net
+methods provided superior performance.},
+ archiveprefix = {arXiv},
+ author = {George E. Dahl and Navdeep Jaitly and Ruslan Salakhutdinov},
+ eprint = {1406.1231v1},
+ file = {1406.1231v1.pdf},
+ link = {http://arxiv.org/abs/1406.1231v1},
+ month = {Jun},
+ primaryclass = {stat.ML},
+ title = {Multi-task Neural Networks for QSAR Predictions},
+ year = {2014}
+}
+
+
+@article{yAoN5gTU,
+ abstract = {Massively multitask neural architectures provide a learning framework for
+drug discovery that synthesizes information from many distinct biological
+sources. To train these architectures at scale, we gather large amounts of data
+from public sources to create a dataset of nearly 40 million measurements
+across more than 200 biological targets. We investigate several aspects of the
+multitask framework by performing a series of empirical studies and obtain some
+interesting results: (1) massively multitask networks obtain predictive
+accuracies significantly better than single-task methods, (2) the predictive
+power of multitask networks improves as additional tasks and data are added, (3) the total amount of data and the total number of tasks both contribute
+significantly to multitask improvement, and (4) multitask networks afford
+limited transferability to tasks not in the training set. Our results
+underscore the need for greater data sharing and further algorithmic innovation
+to accelerate the drug discovery process.},
+ archiveprefix = {arXiv},
+ author = {Bharath Ramsundar and Steven Kearnes and Patrick Riley and Dale Webster and David Konerding and Vijay Pande},
+ eprint = {1502.02072v1},
+ file = {1502.02072v1.pdf},
+ link = {http://arxiv.org/abs/1502.02072v1},
+ month = {Feb},
+ primaryclass = {stat.ML},
+ title = {Massively Multitask Networks for Drug Discovery},
+ year = {2015}
+}
+
+
+@article{16OPHvAij,
+ abstract = {Molecular machine learning has been maturing rapidly over the last few years.
+Improved methods and the presence of larger datasets have enabled machine
+learning algorithms to make increasingly accurate predictions about molecular
+properties. However, algorithmic progress has been limited due to the lack of a
+standard benchmark to compare the efficacy of proposed methods; most new
+algorithms are benchmarked on different datasets making it challenging to gauge
+the quality of proposed methods. This work introduces MoleculeNet, a large
+scale benchmark for molecular machine learning. MoleculeNet curates multiple
+public datasets, establishes metrics for evaluation, and offers high quality
+open-source implementations of multiple previously proposed molecular
+featurization and learning algorithms (released as part of the DeepChem open
+source library). MoleculeNet benchmarks demonstrate that learnable
+representations, and in particular graph convolutional networks, are powerful
+tools for molecular machine learning and broadly offer the best performance.
+However, for quantum mechanical and biophysical datasets, the use of
+physics-aware featurizations can be significantly more important than choice of
+particular learning algorithm.},
+ archiveprefix = {arXiv},
+ author = {Zhenqin Wu and Bharath Ramsundar and Evan N. Feinberg and Joseph Gomes and Caleb Geniesse and Aneesh S. Pappu and Karl Leswing and Vijay Pande},
+ eprint = {1703.00564v1},
+ file = {1703.00564v1.pdf},
+ link = {http://arxiv.org/abs/1703.00564v1},
+ month = {Mar},
+ primaryclass = {cs.LG},
+ title = {MoleculeNet: A Benchmark for Molecular Machine Learning},
+ year = {2017}
+}
+

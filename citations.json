@@ -23224,5 +23224,1605 @@
       "id": "1GprsH3DV"
     },
     "citation_id": "1GprsH3DV"
+  },
+  "arxiv:1703.10603": {
+    "source": "arxiv",
+    "identifer": "1703.10603",
+    "standard_citation": "arxiv:1703.10603",
+    "bibtex": "@article{17YaKNLKk,\n abstract = {Empirical scoring functions based on either molecular force fields or\ncheminformatics descriptors are widely used, in conjunction with molecular\ndocking, during the early stages of drug discovery to predict potency and\nbinding affinity of a drug-like molecule to a given target. These models\nrequire expert-level knowledge of physical chemistry and biology to be encoded\nas hand-tuned parameters or features rather than allowing the underlying model\nto select features in a data-driven procedure. Here, we develop a general\n3-dimensional spatial convolution operation for learning atomic-level chemical\ninteractions directly from atomic coordinates and demonstrate its application\nto structure-based bioactivity prediction. The atomic convolutional neural\nnetwork is trained to predict the experimentally determined binding affinity of\na protein-ligand complex by direct calculation of the energy associated with\nthe complex, protein, and ligand given the crystal structure of the binding\npose. Non-covalent interactions present in the complex that are absent in the\nprotein-ligand sub-structures are identified and the model learns the\ninteraction strength associated with these features. We test our model by\npredicting the binding free energy of a subset of protein-ligand complexes\nfound in the PDBBind dataset and compare with state-of-the-art cheminformatics\nand machine learning-based approaches. We find that all methods achieve\nexperimental accuracy and that atomic convolutional networks either outperform\nor perform competitively with the cheminformatics based methods. Unlike all\nprevious protein-ligand prediction systems, atomic convolutional networks are\nend-to-end and fully-differentiable. They represent a new data-driven, physics-based deep learning model paradigm that offers a strong foundation for\nfuture improvements in structure-based bioactivity prediction.},\n archiveprefix = {arXiv},\n author = {Joseph Gomes and Bharath Ramsundar and Evan N. Feinberg and Vijay S. Pande},\n eprint = {1703.10603v1},\n file = {1703.10603v1.pdf},\n link = {http://arxiv.org/abs/1703.10603v1},\n month = {Mar},\n primaryclass = {cs.LG},\n title = {Atomic Convolutional Networks for Predicting Protein-Ligand Binding\nAffinity},\n year = {2017}\n}\n\n",
+    "citation_id": "17YaKNLKk"
+  },
+  "doi:10.1002/9783527628766": {
+    "source": "doi",
+    "identifer": "10.1002/9783527628766",
+    "standard_citation": "doi:10.1002/9783527628766",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            3,
+            30
+          ]
+        ],
+        "date-time": "2017-03-30T17:27:40Z",
+        "timestamp": 1490894860319
+      },
+      "publisher-location": "Weinheim, Germany",
+      "reference-count": 0,
+      "publisher": "Wiley-VCH Verlag GmbH & Co. KGaA",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [],
+      "published-print": {
+        "date-parts": [
+          [
+            2009,
+            7,
+            15
+          ]
+        ]
+      },
+      "DOI": "10.1002/9783527628766",
+      "type": "book",
+      "created": {
+        "date-parts": [
+          [
+            2010,
+            2,
+            12
+          ]
+        ],
+        "date-time": "2010-02-12T09:46:41Z",
+        "timestamp": 1265968001000
+      },
+      "source": "Crossref",
+      "is-referenced-by-count": 260,
+      "title": "Molecular Descriptors for Chemoinformatics",
+      "prefix": null,
+      "member": null,
+      "container-title": "Methods and Principles in Medicinal Chemistry",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2011,
+            8,
+            12
+          ]
+        ],
+        "date-time": "2011-08-12T08:37:32Z",
+        "timestamp": 1313138252000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "editor": [
+        {
+          "given": "Roberto",
+          "family": "Todeschini",
+          "affiliation": []
+        },
+        {
+          "given": "Viviana",
+          "family": "Consonni",
+          "affiliation": []
+        }
+      ],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2009,
+            7,
+            15
+          ]
+        ]
+      },
+      "references-count": 0,
+      "URL": "http://dx.doi.org/10.1002/9783527628766",
+      "relation": {},
+      "issn-type": [
+        {
+          "value": "1865-0562",
+          "type": "electronic"
+        }
+      ],
+      "id": "17eGl2pn9"
+    },
+    "citation_id": "17eGl2pn9"
+  },
+  "doi:10.1021/acscentsci.6b00367": {
+    "source": "doi",
+    "identifer": "10.1021/acscentsci.6b00367",
+    "standard_citation": "doi:10.1021/acscentsci.6b00367",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            18
+          ]
+        ],
+        "date-time": "2017-04-18T14:40:39Z",
+        "timestamp": 1492526439344
+      },
+      "reference-count": 24,
+      "publisher": "American Chemical Society (ACS)",
+      "license": [
+        {
+          "URL": "http://pubs.acs.org/page/policy/authorchoice_termsofuse.html",
+          "start": {
+            "date-parts": [
+              [
+                2017,
+                4,
+                3
+              ]
+            ],
+            "date-time": "2017-04-03T00:00:00Z",
+            "timestamp": 1491177600000
+          },
+          "delay-in-days": 0,
+          "content-version": "vor"
+        }
+      ],
+      "funder": [
+        {
+          "DOI": "10.13039/100005883",
+          "name": "Hertz Foundation",
+          "doi-asserted-by": "publisher",
+          "award": []
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "ACS Cent. Sci."
+      ],
+      "DOI": "10.1021/acscentsci.6b00367",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            3
+          ]
+        ],
+        "date-time": "2017-04-03T12:00:27Z",
+        "timestamp": 1491220827000
+      },
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": "Low Data Drug Discovery with One-Shot Learning",
+      "prefix": "10.1021",
+      "author": [
+        {
+          "given": "Han",
+          "family": "Altae-Tran",
+          "affiliation": []
+        },
+        {
+          "ORCID": "http://orcid.org/0000-0001-8450-4262",
+          "authenticated-orcid": true,
+          "given": "Bharath",
+          "family": "Ramsundar",
+          "affiliation": []
+        },
+        {
+          "given": "Aneesh S.",
+          "family": "Pappu",
+          "affiliation": []
+        },
+        {
+          "given": "Vijay",
+          "family": "Pande",
+          "affiliation": []
+        }
+      ],
+      "member": "316",
+      "published-online": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            3
+          ]
+        ]
+      },
+      "container-title": "ACS Central Science",
+      "original-title": [],
+      "link": [
+        {
+          "URL": "http://pubs.acs.org/doi/pdf/10.1021/acscentsci.6b00367",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "unspecified"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            18
+          ]
+        ],
+        "date-time": "2017-04-18T14:10:26Z",
+        "timestamp": 1492524626000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            3
+          ]
+        ]
+      },
+      "references-count": 24,
+      "alternative-id": [
+        "10.1021/acscentsci.6b00367"
+      ],
+      "URL": "http://dx.doi.org/10.1021/acscentsci.6b00367",
+      "relation": {},
+      "issn-type": [
+        {
+          "value": "2374-7943",
+          "type": "print"
+        },
+        {
+          "value": "2374-7951",
+          "type": "electronic"
+        }
+      ],
+      "article-number": "acscentsci.6b00367",
+      "id": "P4ixsM8i"
+    },
+    "citation_id": "P4ixsM8i"
+  },
+  "doi:10.1080/17460441.2016.1201262": {
+    "source": "doi",
+    "identifer": "10.1080/17460441.2016.1201262",
+    "standard_citation": "doi:10.1080/17460441.2016.1201262",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            1
+          ]
+        ],
+        "date-time": "2017-04-01T08:45:07Z",
+        "timestamp": 1491036307816
+      },
+      "reference-count": 105,
+      "publisher": "Informa UK Limited",
+      "issue": "8",
+      "content-domain": {
+        "domain": [
+          "www.tandfonline.com"
+        ],
+        "crossmark-restriction": true
+      },
+      "short-container-title": [
+        "Expert Opinion on Drug Discovery"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2016,
+            8,
+            2
+          ]
+        ]
+      },
+      "DOI": "10.1080/17460441.2016.1201262",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2016,
+            6,
+            13
+          ]
+        ],
+        "date-time": "2016-06-13T12:53:50Z",
+        "timestamp": 1465822430000
+      },
+      "page": "785-795",
+      "update-policy": "http://dx.doi.org/10.1080/tandf_crossmark_01",
+      "source": "Crossref",
+      "is-referenced-by-count": 8,
+      "title": "A renaissance of neural networks in drug discovery",
+      "prefix": "10.1080",
+      "volume": "11",
+      "author": [
+        {
+          "given": "Igor I.",
+          "family": "Baskin",
+          "affiliation": []
+        },
+        {
+          "given": "David",
+          "family": "Winkler",
+          "affiliation": []
+        },
+        {
+          "given": "Igor V.",
+          "family": "Tetko",
+          "affiliation": []
+        }
+      ],
+      "member": "301",
+      "published-online": {
+        "date-parts": [
+          [
+            2016,
+            7,
+            4
+          ]
+        ]
+      },
+      "container-title": "Expert Opinion on Drug Discovery",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2016,
+            12,
+            13
+          ]
+        ],
+        "date-time": "2016-12-13T13:31:46Z",
+        "timestamp": 1481635906000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            7,
+            4
+          ]
+        ]
+      },
+      "references-count": 105,
+      "alternative-id": [
+        "10.1080/17460441.2016.1201262"
+      ],
+      "URL": "http://dx.doi.org/10.1080/17460441.2016.1201262",
+      "relation": {
+        "cites": []
+      },
+      "issn-type": [
+        {
+          "value": "1746-0441",
+          "type": "print"
+        },
+        {
+          "value": "1746-045X",
+          "type": "electronic"
+        }
+      ],
+      "subject": [
+        "Drug Discovery"
+      ],
+      "assertion": [
+        {
+          "value": "The publishing and review policy for this title is described in its Aims & Scope.",
+          "order": 1,
+          "name": "peerreview_statement",
+          "label": "Peer Review Statement"
+        },
+        {
+          "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=iedc20",
+          "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=iedc20",
+          "order": 2,
+          "name": "aims_and_scope_url",
+          "label": "Aim & Scope"
+        }
+      ],
+      "id": "xPkT1z7D"
+    },
+    "citation_id": "xPkT1z7D"
+  },
+  "arxiv:1406.1231": {
+    "source": "arxiv",
+    "identifer": "1406.1231",
+    "standard_citation": "arxiv:1406.1231",
+    "bibtex": "@article{1Dzz0P0qr,\n abstract = {Although artificial neural networks have occasionally been used for\nQuantitative Structure-Activity/Property Relationship (QSAR/QSPR) studies in\nthe past, the literature has of late been dominated by other machine learning\ntechniques such as random forests. However, a variety of new neural net\ntechniques along with successful applications in other domains have renewed\ninterest in network approaches. In this work, inspired by the winning team's\nuse of neural networks in a recent QSAR competition, we used an artificial\nneural network to learn a function that predicts activities of compounds for\nmultiple assays at the same time. We conducted experiments leveraging recent\nmethods for dealing with overfitting in neural networks as well as other tricks\nfrom the neural networks literature. We compared our methods to alternative\nmethods reported to perform well on these tasks and found that our neural net\nmethods provided superior performance.},\n archiveprefix = {arXiv},\n author = {George E. Dahl and Navdeep Jaitly and Ruslan Salakhutdinov},\n eprint = {1406.1231v1},\n file = {1406.1231v1.pdf},\n link = {http://arxiv.org/abs/1406.1231v1},\n month = {Jun},\n primaryclass = {stat.ML},\n title = {Multi-task Neural Networks for QSAR Predictions},\n year = {2014}\n}\n\n",
+    "citation_id": "1Dzz0P0qr"
+  },
+  "url:http://papers.nips.cc/paper/5954-convolutional-networks-on-graphs-for-learning-molecular-fingerprints": {
+    "source": "url",
+    "identifer": "http://papers.nips.cc/paper/5954-convolutional-networks-on-graphs-for-learning-molecular-fingerprints",
+    "standard_citation": "url:http://papers.nips.cc/paper/5954-convolutional-networks-on-graphs-for-learning-molecular-fingerprints",
+    "citeproc": {
+      "URL": "http://papers.nips.cc/paper/5954-convolutional-networks-on-graphs-for-learning-molecular-fingerprints",
+      "type": "webpage",
+      "id": "Oe573FaL"
+    },
+    "citation_id": "Oe573FaL"
+  },
+  "doi:10.1007/s10822-016-9938-8": {
+    "source": "doi",
+    "identifer": "10.1007/s10822-016-9938-8",
+    "standard_citation": "doi:10.1007/s10822-016-9938-8",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            1
+          ]
+        ],
+        "date-time": "2017-04-01T21:30:40Z",
+        "timestamp": 1491082240646
+      },
+      "reference-count": 42,
+      "publisher": "Springer Nature",
+      "issue": "8",
+      "license": [
+        {
+          "URL": "http://www.springer.com/tdm",
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                8,
+                1
+              ]
+            ],
+            "date-time": "2016-08-01T00:00:00Z",
+            "timestamp": 1470009600000
+          },
+          "delay-in-days": 0,
+          "content-version": "vor"
+        }
+      ],
+      "funder": [
+        {
+          "DOI": "10.13039/100000002",
+          "name": "National Institutes of Health",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "5U19AI109662-02",
+            "1S10RR02664701"
+          ]
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "link.springer.com"
+        ],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "J Comput Aided Mol Des"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2016,
+            8
+          ]
+        ]
+      },
+      "DOI": "10.1007/s10822-016-9938-8",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2016,
+            8,
+            24
+          ]
+        ],
+        "date-time": "2016-08-24T08:46:36Z",
+        "timestamp": 1472028396000
+      },
+      "page": "595-608",
+      "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+      "source": "Crossref",
+      "is-referenced-by-count": 3,
+      "title": "Molecular graph convolutions: moving beyond fingerprints",
+      "prefix": "10.1007",
+      "volume": "30",
+      "author": [
+        {
+          "ORCID": "http://orcid.org/0000-0003-4579-4388",
+          "authenticated-orcid": false,
+          "given": "Steven",
+          "family": "Kearnes",
+          "affiliation": []
+        },
+        {
+          "given": "Kevin",
+          "family": "McCloskey",
+          "affiliation": []
+        },
+        {
+          "given": "Marc",
+          "family": "Berndl",
+          "affiliation": []
+        },
+        {
+          "given": "Vijay",
+          "family": "Pande",
+          "affiliation": []
+        },
+        {
+          "given": "Patrick",
+          "family": "Riley",
+          "affiliation": []
+        }
+      ],
+      "member": "297",
+      "published-online": {
+        "date-parts": [
+          [
+            2016,
+            8,
+            24
+          ]
+        ]
+      },
+      "container-title": "Journal of Computer-Aided Molecular Design",
+      "original-title": [],
+      "link": [
+        {
+          "URL": "http://link.springer.com/content/pdf/10.1007/s10822-016-9938-8.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "http://link.springer.com/article/10.1007/s10822-016-9938-8/fulltext.html",
+          "content-type": "text/html",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2016,
+            9,
+            13
+          ]
+        ],
+        "date-time": "2016-09-13T14:59:40Z",
+        "timestamp": 1473778780000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            8
+          ]
+        ]
+      },
+      "references-count": 42,
+      "alternative-id": [
+        "9938"
+      ],
+      "URL": "http://dx.doi.org/10.1007/s10822-016-9938-8",
+      "relation": {
+        "cites": []
+      },
+      "issn-type": [
+        {
+          "value": "0920-654X",
+          "type": "print"
+        },
+        {
+          "value": "1573-4951",
+          "type": "electronic"
+        }
+      ],
+      "subject": [
+        "Physical and Theoretical Chemistry",
+        "Drug Discovery",
+        "Computer Science Applications"
+      ],
+      "id": "145os4Y6t"
+    },
+    "citation_id": "145os4Y6t"
+  },
+  "doi:10.1021/ci400187y": {
+    "source": "doi",
+    "identifer": "10.1021/ci400187y",
+    "standard_citation": "doi:10.1021/ci400187y",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            1
+          ]
+        ],
+        "date-time": "2017-04-01T08:08:36Z",
+        "timestamp": 1491034116559
+      },
+      "reference-count": 73,
+      "publisher": "American Chemical Society (ACS)",
+      "issue": "7",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "J. Chem. Inf. Model."
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2013,
+            7,
+            22
+          ]
+        ]
+      },
+      "DOI": "10.1021/ci400187y",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2013,
+            6,
+            24
+          ]
+        ],
+        "date-time": "2013-06-24T14:26:33Z",
+        "timestamp": 1372083993000
+      },
+      "page": "1563-1575",
+      "source": "Crossref",
+      "is-referenced-by-count": 41,
+      "title": "Deep Architectures and Deep Learning in Chemoinformatics: The Prediction of Aqueous Solubility for Drug-Like Molecules",
+      "prefix": "10.1021",
+      "volume": "53",
+      "author": [
+        {
+          "given": "Alessandro",
+          "family": "Lusci",
+          "affiliation": []
+        },
+        {
+          "given": "Gianluca",
+          "family": "Pollastri",
+          "affiliation": []
+        },
+        {
+          "given": "Pierre",
+          "family": "Baldi",
+          "affiliation": []
+        }
+      ],
+      "member": "316",
+      "container-title": "Journal of Chemical Information and Modeling",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2016,
+            9,
+            1
+          ]
+        ],
+        "date-time": "2016-09-01T12:28:06Z",
+        "timestamp": 1472732886000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2013,
+            7,
+            22
+          ]
+        ]
+      },
+      "references-count": 73,
+      "alternative-id": [
+        "10.1021/ci400187y"
+      ],
+      "URL": "http://dx.doi.org/10.1021/ci400187y",
+      "relation": {},
+      "issn-type": [
+        {
+          "value": "1549-9596",
+          "type": "print"
+        },
+        {
+          "value": "1549-960X",
+          "type": "electronic"
+        }
+      ],
+      "subject": [
+        "Chemistry(all)",
+        "Chemical Engineering(all)",
+        "Library and Information Sciences",
+        "Computer Science Applications"
+      ],
+      "id": "17Wih4Hd5"
+    },
+    "citation_id": "17Wih4Hd5"
+  },
+  "doi:10.1186/s13321-015-0110-6": {
+    "source": "doi",
+    "identifer": "10.1186/s13321-015-0110-6",
+    "standard_citation": "doi:10.1186/s13321-015-0110-6",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            1
+          ]
+        ],
+        "date-time": "2017-04-01T20:12:01Z",
+        "timestamp": 1491077521569
+      },
+      "reference-count": 57,
+      "publisher": "Springer Nature",
+      "issue": "1",
+      "funder": [
+        {
+          "DOI": "10.13039/100000001",
+          "name": "National Science Foundation",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "IIS-0513376"
+          ]
+        },
+        {
+          "DOI": "10.13039/100000002",
+          "name": "National Institutes of Health",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "T15 LM07443",
+            "LM010235"
+          ]
+        },
+        {
+          "DOI": "10.13039/100006785",
+          "name": "Google",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "Faculty Research Award"
+          ]
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "link.springer.com"
+        ],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "J Cheminform"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2015,
+            12
+          ]
+        ]
+      },
+      "DOI": "10.1186/s13321-015-0110-6",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2015,
+            12,
+            29
+          ]
+        ],
+        "date-time": "2015-12-29T13:33:20Z",
+        "timestamp": 1451396000000
+      },
+      "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+      "source": "Crossref",
+      "is-referenced-by-count": 4,
+      "title": "Accurate and efficient target prediction using a potency-sensitive influence-relevance voter",
+      "prefix": "10.1186",
+      "volume": "7",
+      "author": [
+        {
+          "given": "Alessandro",
+          "family": "Lusci",
+          "affiliation": []
+        },
+        {
+          "given": "David",
+          "family": "Fooshee",
+          "affiliation": []
+        },
+        {
+          "given": "Michael",
+          "family": "Browning",
+          "affiliation": []
+        },
+        {
+          "given": "Joshua",
+          "family": "Swamidass",
+          "affiliation": []
+        },
+        {
+          "given": "Pierre",
+          "family": "Baldi",
+          "affiliation": []
+        }
+      ],
+      "member": "297",
+      "published-online": {
+        "date-parts": [
+          [
+            2015,
+            12,
+            29
+          ]
+        ]
+      },
+      "container-title": "Journal of Cheminformatics",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2016,
+            2,
+            22
+          ]
+        ],
+        "date-time": "2016-02-22T10:30:42Z",
+        "timestamp": 1456137042000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2015,
+            12
+          ]
+        ]
+      },
+      "references-count": 57,
+      "alternative-id": [
+        "110"
+      ],
+      "URL": "http://dx.doi.org/10.1186/s13321-015-0110-6",
+      "relation": {
+        "cites": []
+      },
+      "issn-type": [
+        {
+          "value": "1758-2946",
+          "type": "electronic"
+        }
+      ],
+      "subject": [
+        "Physical and Theoretical Chemistry",
+        "Library and Information Sciences",
+        "Computer Graphics and Computer-Aided Design",
+        "Computer Science Applications"
+      ],
+      "article-number": "63",
+      "id": "1E0x7QgLP"
+    },
+    "citation_id": "1E0x7QgLP"
+  },
+  "doi:10.1021/ci500747n": {
+    "source": "doi",
+    "identifer": "10.1021/ci500747n",
+    "standard_citation": "doi:10.1021/ci500747n",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            1
+          ]
+        ],
+        "date-time": "2017-04-01T12:57:35Z",
+        "timestamp": 1491051455555
+      },
+      "reference-count": 20,
+      "publisher": "American Chemical Society (ACS)",
+      "issue": "2",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "J. Chem. Inf. Model."
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2015,
+            2,
+            23
+          ]
+        ]
+      },
+      "DOI": "10.1021/ci500747n",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2015,
+            1,
+            30
+          ]
+        ],
+        "date-time": "2015-01-30T19:25:01Z",
+        "timestamp": 1422645901000
+      },
+      "page": "263-274",
+      "source": "Crossref",
+      "is-referenced-by-count": 47,
+      "title": "Deep Neural Nets as a Method for Quantitative Structure–Activity Relationships",
+      "prefix": "10.1021",
+      "volume": "55",
+      "author": [
+        {
+          "given": "Junshui",
+          "family": "Ma",
+          "affiliation": []
+        },
+        {
+          "given": "Robert P.",
+          "family": "Sheridan",
+          "affiliation": []
+        },
+        {
+          "given": "Andy",
+          "family": "Liaw",
+          "affiliation": []
+        },
+        {
+          "given": "George E.",
+          "family": "Dahl",
+          "affiliation": []
+        },
+        {
+          "given": "Vladimir",
+          "family": "Svetnik",
+          "affiliation": []
+        }
+      ],
+      "member": "316",
+      "container-title": "Journal of Chemical Information and Modeling",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2016,
+            9,
+            1
+          ]
+        ],
+        "date-time": "2016-09-01T12:30:54Z",
+        "timestamp": 1472733054000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2015,
+            2,
+            23
+          ]
+        ]
+      },
+      "references-count": 20,
+      "alternative-id": [
+        "10.1021/ci500747n"
+      ],
+      "URL": "http://dx.doi.org/10.1021/ci500747n",
+      "relation": {},
+      "issn-type": [
+        {
+          "value": "1549-9596",
+          "type": "print"
+        },
+        {
+          "value": "1549-960X",
+          "type": "electronic"
+        }
+      ],
+      "subject": [
+        "Chemistry(all)",
+        "Chemical Engineering(all)",
+        "Library and Information Sciences",
+        "Computer Science Applications"
+      ],
+      "id": "xOaTIeBY"
+    },
+    "citation_id": "xOaTIeBY"
+  },
+  "doi:10.3389/fenvs.2015.00080": {
+    "source": "doi",
+    "identifer": "10.3389/fenvs.2015.00080",
+    "standard_citation": "doi:10.3389/fenvs.2015.00080",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            3,
+            31
+          ]
+        ],
+        "date-time": "2017-03-31T16:27:38Z",
+        "timestamp": 1490977658188
+      },
+      "reference-count": 72,
+      "publisher": "Frontiers Media SA",
+      "funder": [
+        {
+          "DOI": "10.13039/501100000780",
+          "name": "European Commission",
+          "doi-asserted-by": "publisher",
+          "award": []
+        },
+        {
+          "name": "ChemBioBridge",
+          "award": []
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "frontiersin.org"
+        ],
+        "crossmark-restriction": true
+      },
+      "short-container-title": [
+        "Front. Environ. Sci."
+      ],
+      "DOI": "10.3389/fenvs.2015.00080",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2016,
+            2,
+            2
+          ]
+        ],
+        "date-time": "2016-02-02T06:27:12Z",
+        "timestamp": 1454394432000
+      },
+      "update-policy": "http://dx.doi.org/10.3389/crossmark-policy",
+      "source": "Crossref",
+      "is-referenced-by-count": 10,
+      "title": "DeepTox: Toxicity Prediction using Deep Learning",
+      "prefix": "10.3389",
+      "volume": "3",
+      "author": [
+        {
+          "given": "Andreas",
+          "family": "Mayr",
+          "affiliation": []
+        },
+        {
+          "given": "Günter",
+          "family": "Klambauer",
+          "affiliation": []
+        },
+        {
+          "given": "Thomas",
+          "family": "Unterthiner",
+          "affiliation": []
+        },
+        {
+          "given": "Sepp",
+          "family": "Hochreiter",
+          "affiliation": []
+        }
+      ],
+      "member": "1965",
+      "published-online": {
+        "date-parts": [
+          [
+            2016,
+            2,
+            2
+          ]
+        ]
+      },
+      "container-title": "Frontiers in Environmental Science",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2016,
+            3,
+            2
+          ]
+        ],
+        "date-time": "2016-03-02T19:38:44Z",
+        "timestamp": 1456947524000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            2,
+            2
+          ]
+        ]
+      },
+      "references-count": 72,
+      "URL": "http://dx.doi.org/10.3389/fenvs.2015.00080",
+      "relation": {
+        "cites": []
+      },
+      "issn-type": [
+        {
+          "value": "2296-665X",
+          "type": "electronic"
+        }
+      ],
+      "id": "Y1D0SZrO"
+    },
+    "citation_id": "Y1D0SZrO"
+  },
+  "doi:10.1007/978-3-319-40126-3_2": {
+    "source": "doi",
+    "identifer": "10.1007/978-3-319-40126-3_2",
+    "standard_citation": "doi:10.1007/978-3-319-40126-3_2",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            1
+          ]
+        ],
+        "date-time": "2017-04-01T07:34:05Z",
+        "timestamp": 1491032045933
+      },
+      "publisher-location": "Cham",
+      "reference-count": 27,
+      "publisher": "Springer International Publishing",
+      "license": [
+        {
+          "URL": "http://www.springer.com/tdm",
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2016-01-01T00:00:00Z",
+            "timestamp": 1451606400000
+          },
+          "delay-in-days": 0,
+          "content-version": "vor"
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [],
+      "published-print": {
+        "date-parts": [
+          [
+            2016
+          ]
+        ]
+      },
+      "DOI": "10.1007/978-3-319-40126-3_2",
+      "type": "chapter",
+      "created": {
+        "date-parts": [
+          [
+            2016,
+            5,
+            31
+          ]
+        ],
+        "date-time": "2016-05-31T07:50:23Z",
+        "timestamp": 1464681023000
+      },
+      "page": "13-22",
+      "source": "Crossref",
+      "is-referenced-by-count": 1,
+      "title": "Virtual Screening: A Challenge for Deep Learning",
+      "prefix": "10.1007",
+      "author": [
+        {
+          "given": "Javier",
+          "family": "Pérez-Sianes",
+          "affiliation": []
+        },
+        {
+          "given": "Horacio",
+          "family": "Pérez-Sánchez",
+          "affiliation": []
+        },
+        {
+          "given": "Fernando",
+          "family": "Díaz",
+          "affiliation": []
+        }
+      ],
+      "member": "297",
+      "published-online": {
+        "date-parts": [
+          [
+            2016,
+            6,
+            1
+          ]
+        ]
+      },
+      "container-title": "Advances in Intelligent Systems and Computing",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2016,
+            5,
+            31
+          ]
+        ],
+        "date-time": "2016-05-31T07:50:35Z",
+        "timestamp": 1464681035000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2016
+          ]
+        ]
+      },
+      "references-count": 27,
+      "URL": "http://dx.doi.org/10.1007/978-3-319-40126-3_2",
+      "relation": {
+        "cites": []
+      },
+      "issn-type": [
+        {
+          "value": "2194-5357",
+          "type": "print"
+        },
+        {
+          "value": "2194-5365",
+          "type": "electronic"
+        }
+      ],
+      "id": "1DTUK3YyI"
+    },
+    "citation_id": "1DTUK3YyI"
+  },
+  "arxiv:1502.02072": {
+    "source": "arxiv",
+    "identifer": "1502.02072",
+    "standard_citation": "arxiv:1502.02072",
+    "bibtex": "@article{yAoN5gTU,\n abstract = {Massively multitask neural architectures provide a learning framework for\ndrug discovery that synthesizes information from many distinct biological\nsources. To train these architectures at scale, we gather large amounts of data\nfrom public sources to create a dataset of nearly 40 million measurements\nacross more than 200 biological targets. We investigate several aspects of the\nmultitask framework by performing a series of empirical studies and obtain some\ninteresting results: (1) massively multitask networks obtain predictive\naccuracies significantly better than single-task methods, (2) the predictive\npower of multitask networks improves as additional tasks and data are added, (3) the total amount of data and the total number of tasks both contribute\nsignificantly to multitask improvement, and (4) multitask networks afford\nlimited transferability to tasks not in the training set. Our results\nunderscore the need for greater data sharing and further algorithmic innovation\nto accelerate the drug discovery process.},\n archiveprefix = {arXiv},\n author = {Bharath Ramsundar and Steven Kearnes and Patrick Riley and Dale Webster and David Konerding and Vijay Pande},\n eprint = {1502.02072v1},\n file = {1502.02072v1.pdf},\n link = {http://arxiv.org/abs/1502.02072v1},\n month = {Feb},\n primaryclass = {stat.ML},\n title = {Massively Multitask Networks for Drug Discovery},\n year = {2015}\n}\n\n",
+    "citation_id": "yAoN5gTU"
+  },
+  "doi:10.1021/ci100050t": {
+    "source": "doi",
+    "identifer": "10.1021/ci100050t",
+    "standard_citation": "doi:10.1021/ci100050t",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            3,
+            30
+          ]
+        ],
+        "date-time": "2017-03-30T23:07:23Z",
+        "timestamp": 1490915243032
+      },
+      "reference-count": 0,
+      "publisher": "American Chemical Society (ACS)",
+      "issue": "5",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "J. Chem. Inf. Model."
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2010,
+            5,
+            24
+          ]
+        ]
+      },
+      "DOI": "10.1021/ci100050t",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2010,
+            4,
+            28
+          ]
+        ],
+        "date-time": "2010-04-28T16:44:59Z",
+        "timestamp": 1272473099000
+      },
+      "page": "742-754",
+      "source": "Crossref",
+      "is-referenced-by-count": 579,
+      "title": "Extended-Connectivity Fingerprints",
+      "prefix": "10.1021",
+      "volume": "50",
+      "author": [
+        {
+          "given": "David",
+          "family": "Rogers",
+          "affiliation": []
+        },
+        {
+          "given": "Mathew",
+          "family": "Hahn",
+          "affiliation": []
+        }
+      ],
+      "member": "316",
+      "container-title": "Journal of Chemical Information and Modeling",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2016,
+            9,
+            1
+          ]
+        ],
+        "date-time": "2016-09-01T12:23:18Z",
+        "timestamp": 1472732598000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2010,
+            5,
+            24
+          ]
+        ]
+      },
+      "references-count": 0,
+      "alternative-id": [
+        "10.1021/ci100050t"
+      ],
+      "URL": "http://dx.doi.org/10.1021/ci100050t",
+      "relation": {},
+      "issn-type": [
+        {
+          "value": "1549-9596",
+          "type": "print"
+        },
+        {
+          "value": "1549-960X",
+          "type": "electronic"
+        }
+      ],
+      "subject": [
+        "Chemistry(all)",
+        "Chemical Engineering(all)",
+        "Library and Information Sciences",
+        "Computer Science Applications"
+      ],
+      "id": "QnZ7V9Rd"
+    },
+    "citation_id": "QnZ7V9Rd"
+  },
+  "doi:10.1021/acs.jcim.6b00290": {
+    "source": "doi",
+    "identifer": "10.1021/acs.jcim.6b00290",
+    "standard_citation": "doi:10.1021/acs.jcim.6b00290",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            2
+          ]
+        ],
+        "date-time": "2017-04-02T22:59:55Z",
+        "timestamp": 1491173995833
+      },
+      "reference-count": 79,
+      "publisher": "American Chemical Society (ACS)",
+      "issue": "10",
+      "funder": [
+        {
+          "DOI": "10.13039/100005883",
+          "name": "Hertz Foundation",
+          "doi-asserted-by": "publisher",
+          "award": []
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "J. Chem. Inf. Model."
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2016,
+            10,
+            24
+          ]
+        ]
+      },
+      "DOI": "10.1021/acs.jcim.6b00290",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2016,
+            9,
+            30
+          ]
+        ],
+        "date-time": "2016-09-30T22:38:21Z",
+        "timestamp": 1475275101000
+      },
+      "page": "1936-1949",
+      "source": "Crossref",
+      "is-referenced-by-count": 1,
+      "title": "Computational Modeling of β-Secretase 1 (BACE-1) Inhibitors Using Ligand Based Approaches",
+      "prefix": "10.1021",
+      "volume": "56",
+      "author": [
+        {
+          "given": "Govindan",
+          "family": "Subramanian",
+          "affiliation": []
+        },
+        {
+          "given": "Bharath",
+          "family": "Ramsundar",
+          "affiliation": []
+        },
+        {
+          "given": "Vijay",
+          "family": "Pande",
+          "affiliation": []
+        },
+        {
+          "given": "Rajiah Aldrin",
+          "family": "Denny",
+          "affiliation": []
+        }
+      ],
+      "member": "316",
+      "container-title": "Journal of Chemical Information and Modeling",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2016,
+            10,
+            24
+          ]
+        ],
+        "date-time": "2016-10-24T10:19:06Z",
+        "timestamp": 1477304346000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            10,
+            24
+          ]
+        ]
+      },
+      "references-count": 79,
+      "alternative-id": [
+        "10.1021/acs.jcim.6b00290"
+      ],
+      "URL": "http://dx.doi.org/10.1021/acs.jcim.6b00290",
+      "relation": {},
+      "issn-type": [
+        {
+          "value": "1549-9596",
+          "type": "print"
+        },
+        {
+          "value": "1549-960X",
+          "type": "electronic"
+        }
+      ],
+      "subject": [
+        "Chemistry(all)",
+        "Chemical Engineering(all)",
+        "Library and Information Sciences",
+        "Computer Science Applications"
+      ],
+      "id": "B4cL1o2P"
+    },
+    "citation_id": "B4cL1o2P"
+  },
+  "url:http://www.bioinf.at/publications/2014/NIPS2014a.pdf": {
+    "source": "url",
+    "identifer": "http://www.bioinf.at/publications/2014/NIPS2014a.pdf",
+    "standard_citation": "url:http://www.bioinf.at/publications/2014/NIPS2014a.pdf",
+    "citeproc": {
+      "URL": "http://www.bioinf.at/publications/2014/NIPS2014a.pdf",
+      "type": "webpage",
+      "id": "F8fP2vAg"
+    },
+    "citation_id": "F8fP2vAg"
+  },
+  "arxiv:1703.00564": {
+    "source": "arxiv",
+    "identifer": "1703.00564",
+    "standard_citation": "arxiv:1703.00564",
+    "bibtex": "@article{16OPHvAij,\n abstract = {Molecular machine learning has been maturing rapidly over the last few years.\nImproved methods and the presence of larger datasets have enabled machine\nlearning algorithms to make increasingly accurate predictions about molecular\nproperties. However, algorithmic progress has been limited due to the lack of a\nstandard benchmark to compare the efficacy of proposed methods; most new\nalgorithms are benchmarked on different datasets making it challenging to gauge\nthe quality of proposed methods. This work introduces MoleculeNet, a large\nscale benchmark for molecular machine learning. MoleculeNet curates multiple\npublic datasets, establishes metrics for evaluation, and offers high quality\nopen-source implementations of multiple previously proposed molecular\nfeaturization and learning algorithms (released as part of the DeepChem open\nsource library). MoleculeNet benchmarks demonstrate that learnable\nrepresentations, and in particular graph convolutional networks, are powerful\ntools for molecular machine learning and broadly offer the best performance.\nHowever, for quantum mechanical and biophysical datasets, the use of\nphysics-aware featurizations can be significantly more important than choice of\nparticular learning algorithm.},\n archiveprefix = {arXiv},\n author = {Zhenqin Wu and Bharath Ramsundar and Evan N. Feinberg and Joseph Gomes and Caleb Geniesse and Aneesh S. Pappu and Karl Leswing and Vijay Pande},\n eprint = {1703.00564v1},\n file = {1703.00564v1.pdf},\n link = {http://arxiv.org/abs/1703.00564v1},\n month = {Mar},\n primaryclass = {cs.LG},\n title = {MoleculeNet: A Benchmark for Molecular Machine Learning},\n year = {2017}\n}\n\n",
+    "citation_id": "16OPHvAij"
+  },
+  "url:https://github.com/deepchem/deepchem": {
+    "source": "url",
+    "identifer": "https://github.com/deepchem/deepchem",
+    "standard_citation": "url:https://github.com/deepchem/deepchem",
+    "citeproc": {
+      "URL": "https://github.com/deepchem/deepchem",
+      "type": "webpage",
+      "id": "Ytvk62dX"
+    },
+    "citation_id": "Ytvk62dX"
   }
 }

@@ -17,6 +17,9 @@ text	citation	standard_citation	citation_id
 @arxiv:1609.02943	arxiv:1609.02943	arxiv:1609.02943	ULSPV0rh
 @arxiv:1610.05820	arxiv:1610.05820	arxiv:1610.05820	1HbRTExaU
 @arxiv:1611.08373	arxiv:1611.08373	arxiv:1611.08373	dO844vZn
+@arxiv:1612.02751	arxiv:1612.02751	arxiv:1612.02751	bNBiIiTt
+@arxiv:1703.10603	arxiv:1703.10603	arxiv:1703.10603	17YaKNLKk
+@doi:10.1002/9783527628766	doi:10.1002/9783527628766	doi:10.1002/9783527628766	17eGl2pn9
 @doi:10.1002/cyto.a.22909	doi:10.1002/cyto.a.22909	doi:10.1002/cyto.a.22909	m3Ij21U8
 @doi:10.1002/minf.201501008	doi:10.1002/minf.201501008	doi:10.1002/minf.201501008	gJE0ExFr
 @doi:10.1002/pmic.201100196	doi:10.1002/pmic.201100196	doi:10.1002/pmic.201100196	NnpYUsi
@@ -101,12 +104,13 @@ text	citation	standard_citation	citation_id
 @pmid:27134610	pmid:27134610	pmid:27134610	4rTluXLs
 @tag:Abe	doi:10.1101/gr.634603	doi:10.1101/gr.634603	1HhqhBwrM
 @tag:Alipanahi2015_predicting	doi:10.1038/nmeth.3547	doi:10.1038/nmeth.3547	2UI1BZuD
-@tag:AltaeTran2016_one_shot	arxiv:1611.03199	arxiv:1611.03199	HRoooKGh
+@tag:AltaeTran2016_one_shot	doi:10.1021/acscentsci.6b00367	doi:10.1021/acscentsci.6b00367	P4ixsM8i
 @tag:Angermueller2016_single_methyl	doi:10.1186/s13059-017-1189-z	doi:10.1186/s13059-017-1189-z	19EJTHByG
 @tag:Artemov2016_clinical	doi:10.1101/095653	doi:10.1101/095653	mo3GQwJj
 @tag:Arvaniti2016_rare_subsets	doi:10.1101/046508	doi:10.1101/046508	r3Gbjksq
 @tag:Asgari	doi:10.1371/journal.pone.0141287	doi:10.1371/journal.pone.0141287	1E1PWjqTm
 @tag:Barash2010_splicing_code	doi:10.1038/nature09000	doi:10.1038/nature09000	11ETDdRKr
+@tag:Baskin2015_drug_disc	doi:10.1080/17460441.2016.1201262	doi:10.1080/17460441.2016.1201262	xPkT1z7D
 @tag:Baxt1991_myocardial	doi:10.7326/0003-4819-115-11-843	doi:10.7326/0003-4819-115-11-843	jdg2u7bX
 @tag:Bengio2015_prec	arxiv:1412.7024	arxiv:1412.7024	1G3owNNps
 @tag:Bergstra2011_hyper	url:https://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimization.pdf	url:https://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimization.pdf	wz83yfHF
@@ -126,12 +130,14 @@ text	citation	standard_citation	citation_id
 @tag:Coates2013_cots_hpc	url:http://www.jmlr.org/proceedings/papers/v28/coates13.html	url:http://www.jmlr.org/proceedings/papers/v28/coates13.html	4MZ2tmZ8
 @tag:Consortium2004_encode	doi:10.1126/science.1105136	doi:10.1126/science.1105136	1Bs5k1MVg
 @tag:CudNN	arxiv:1410.0759	arxiv:1410.0759	YwdqeYZi
+@tag:Dahl2014_multi_qsar	arxiv:1406.1231	arxiv:1406.1231	1Dzz0P0qr
 @tag:Dean2012_nips_downpour	url:http://research.google.com/archive/large_deep_networks_nips2012.html	url:http://research.google.com/archive/large_deep_networks_nips2012.html	17cBimWgp
 @tag:Ding	doi:10.1186/s12859-015-0753-3	doi:10.1186/s12859-015-0753-3	5W4KMSdT
 @tag:Ditzler	doi:10.1186/s12859-015-0793-8	doi:10.1186/s12859-015-0793-8	1AN5UPfb1
 @tag:Ditzler2	doi:10.1109/TNNLS.2014.2320415	doi:10.1109/tnnls.2014.2320415	O9D66oYa
 @tag:Ditzler3	doi:10.1109/TNB.2015.2461219	doi:10.1109/tnb.2015.2461219	i38A0beL
 @tag:Dogwild	url:https://papers.nips.cc/paper/5717-taming-the-wild-a-unified-analysis-of-hogwild-style-algorithms.pdf	url:https://papers.nips.cc/paper/5717-taming-the-wild-a-unified-analysis-of-hogwild-style-algorithms.pdf	HIiQN4bd
+@tag:Duvenaud2015_graph_conv	url:http://papers.nips.cc/paper/5954-convolutional-networks-on-graphs-for-learning-molecular-fingerprints	url:http://papers.nips.cc/paper/5954-convolutional-networks-on-graphs-for-learning-molecular-fingerprints	Oe573FaL
 @tag:Edwards2015_growing_pains	doi:10.1145/2771283	doi:10.1145/2771283	1FocAi7N0
 @tag:Elephas	url:https://github.com/maxpumperla/elephas	url:https://github.com/maxpumperla/elephas	y9IoEy4r
 @tag:Faruqi	url:http://alifar76.github.io/sklearn-metrics/	url:http://alifar76.github.io/sklearn-metrics/	NQ5jiN7B
@@ -159,6 +165,7 @@ text	citation	standard_citation	citation_id
 @tag:JuanMateu2016_t1d	doi:10.1530/EJE-15-0916	doi:10.1530/eje-15-0916	CNz9HwZ3
 @tag:Karlin	doi:10.1128/jb.179.12.3899-3913.1997	doi:10.1128/jb.179.12.3899-3913.1997	N9NzkOjA
 @tag:Kearnes2016_admet	arxiv:1606.08793	arxiv:1606.08793	uP7SgBVd
+@tag:Kearnes2016_graph_conv	doi:10.1007/s10822-016-9938-8	doi:10.1007/s10822-016-9938-8	145os4Y6t
 @tag:Keras	url:https://github.com/fchollet/keras	url:https://github.com/fchollet/keras	FwEK0msb
 @tag:Knights	doi:10.1111/j.1574-6976.2010.00251.x	doi:10.1111/j.1574-6976.2010.00251.x	aI9g2UOc
 @tag:Koh2016_denoising	doi:10.1101/052118	doi:10.1101/052118	XimuXZlz
@@ -175,7 +182,11 @@ text	citation	standard_citation	citation_id
 @tag:Liu	doi:10.1371/journal.pone.0097958	doi:10.1371/journal.pone.0097958	Kt9NojjR
 @tag:Liu2016_sc_transcriptome	doi:10.12688/f1000research.7223.1	doi:10.12688/f1000research.7223.1	QafUwNKn
 @tag:Lodato2015_neurons	doi:10.1126/science.aab1785	doi:10.1126/science.aab1785	1GvfSy48x
+@tag:Lusci2013_rnn	doi:10.1021/ci400187y	doi:10.1021/ci400187y	17Wih4Hd5
+@tag:Lusci2015_irv	doi:10.1186/s13321-015-0110-6	doi:10.1186/s13321-015-0110-6	1E0x7QgLP
+@tag:Ma2015_qsar_merck	doi:10.1021/ci500747n	doi:10.1021/ci500747n	xOaTIeBY
 @tag:Mapreduce	doi:10.1145/1327452.1327492	doi:10.1145/1327452.1327492	xE3EYmck
+@tag:Mayr2016_deep_tox	doi:10.3389/fenvs.2015.00080	doi:10.3389/fenvs.2015.00080	Y1D0SZrO
 @tag:McHardy	doi:10.1038/nmeth976	doi:10.1038/nmeth976	QV551Nlx
 @tag:Meng2016_mllib	arxiv:1505.06807	arxiv:1505.06807	rZnxDitd
 @tag:Metaphlan	doi:10.1038/nmeth.2066	doi:10.1038/nmeth.2066	56wEWVIl
@@ -183,12 +194,14 @@ text	citation	standard_citation	citation_id
 @tag:Mrzelj	url:https://repozitorij.uni-lj.si/IzpisGradiva.php?id=85515	url:https://repozitorij.uni-lj.si/IzpisGradiva.php?id=85515	iPIJrVVs
 @tag:Nemati2016_rl	doi:10.1109/EMBC.2016.7591355	doi:10.1109/embc.2016.7591355	16OQvsRqJ
 @tag:Nguyen2014_adversarial	arxiv:1412.1897v4	arxiv:1412.1897v4	1AkF8Wsv7
+@tag:PerezSianes2016_screening	doi:10.1007/978-3-319-40126-3_2	doi:10.1007/978-3-319-40126-3_2	1DTUK3YyI
 @tag:Qin2017_onehot	doi:10.1371/journal.pcbi.1005403	doi:10.1371/journal.pcbi.1005403	Qbtqlmhf
 @tag:Qiu2017_graph_embedding	doi:10.1101/110668	doi:10.1101/110668	Oljj2W96
 @tag:RAD2010_view_cc	doi:10.1145/1721654.1721672	doi:10.1145/1721654.1721672	ObFN78yp
-@tag:Ragoza_protein	arxiv:1612.02751	arxiv:1612.02751	bNBiIiTt
 @tag:Raina2009_gpu	doi:10.1145/1553374.1553486	doi:10.1145/1553374.1553486	F3e4wfzQ
+@tag:Ramsundar2015_multitask_drug	arxiv:1502.02072	arxiv:1502.02072	yAoN5gTU
 @tag:Ribeiro2016_lime	arxiv:1602.04938	arxiv:1602.04938	QwXSJhr0
+@tag:Rogers2010_fingerprints	doi:10.1021/ci100050t	doi:10.1021/ci100050t	QnZ7V9Rd
 @tag:Rosenberg2015_synthetic_seqs	doi:10.1016/j.cell.2015.09.054	doi:10.1016/j.cell.2015.09.054	mlqKTlZY
 @tag:Sa2015_buckwild	arxiv:1506.06438	arxiv:1506.06438	w6CoVmFK
 @tag:Salzberg	doi:10.1186/1471-2105-11-544	doi:10.1186/1471-2105-11-544	c4rnN1wo
@@ -208,6 +221,7 @@ text	citation	standard_citation	citation_id
 @tag:Stormo2000_dna	doi:10.1093/bioinformatics/16.1.16	doi:10.1093/bioinformatics/16.1.16	ywDQIvZJ
 @tag:Stratnikov	doi:10.1186/2049-2618-1-11	doi:10.1186/2049-2618-1-11	c5P9jHCg
 @tag:Su2015_gpu	arxiv:1507.01239	arxiv:1507.01239	aClNvbyM
+@tag:Subramanian2016_bace1	doi:10.1021/acs.jcim.6b00290	doi:10.1021/acs.jcim.6b00290	B4cL1o2P
 @tag:Sun2016_ensemble	arxiv:1606.00575	arxiv:1606.00575	JUF9VoRD
 @tag:Sutskever	arxiv:1409.3215	arxiv:1409.3215	2cMhMv5A
 @tag:Swamidass2009_irv	doi:10.1021/ci8004379	doi:10.1021/ci8004379	cjj5vT3H
@@ -217,6 +231,7 @@ text	citation	standard_citation	citation_id
 @tag:Tan2016_eadage	doi:10.1101/078659	doi:10.1101/078659	zuLdSQx3
 @tag:TensorFlow	url:http://download.tensorflow.org/paper/whitepaper2015.pdf	url:http://download.tensorflow.org/paper/whitepaper2015.pdf	Gp4OR9Lf
 @tag:Tu1996_anns	doi:10.1016/S0895-4356(96)00002-9	doi:10.1016/s0895-4356(96)00002-9	kL0B4m9d
+@tag:Unterthiner2014_screening	url:http://www.bioinf.at/publications/2014/NIPS2014a.pdf	url:http://www.bioinf.at/publications/2014/NIPS2014a.pdf	F8fP2vAg
 @tag:Vanhoucke2011_cpu	url:https://research.google.com/pubs/pub37631.html	url:https://research.google.com/pubs/pub37631.html	NSgduYNT
 @tag:Vera2016_sc_analysis	doi:10.1146/annurev-genet-120215-034854	doi:10.1146/annurev-genet-120215-034854	v97iPXDw
 @tag:Vervier	doi:10.1093/bioinformatics/btv683	doi:10.1093/bioinformatics/btv683	8DLzxOEt
@@ -224,6 +239,7 @@ text	citation	standard_citation	citation_id
 @tag:Wang2016_protein_contact	doi:10.1101/073239	doi:10.1101/073239	W3grN7jy
 @tag:Wasson1985_clinical	doi:10.1056/NEJM198509263131306	doi:10.1056/nejm198509263131306	xX68eyvs
 @tag:Word2Vec	arxiv:1301.3781	arxiv:1301.3781	1GhHIDxuW
+@tag:Wu2017_molecule_net	arxiv:1703.00564	arxiv:1703.00564	16OPHvAij
 @tag:Xiong2011_bayesian	doi:10.1093/bioinformatics/btr444	doi:10.1093/bioinformatics/btr444	8VPGUHcf
 @tag:Xiong2015_splicing_code	doi:10.1126/science.1254806	doi:10.1126/science.1254806	17sgPdcMT
 @tag:Yasushi2016_cgbvs_dnn	doi:10.1002/minf.201600045	doi:10.1002/minf.201600045	x0M6vals
@@ -242,5 +258,6 @@ text	citation	standard_citation	citation_id
 @url:http://www.intel.com/pressroom/archive/speeches/ag080998.htm	url:http://www.intel.com/pressroom/archive/speeches/ag080998.htm	url:http://www.intel.com/pressroom/archive/speeches/ag080998.htm	mAXsmd43
 @url:http://www.predictioncenter.org/casp12/rrc_avrg_results.cgi	url:http://www.predictioncenter.org/casp12/rrc_avrg_results.cgi	url:http://www.predictioncenter.org/casp12/rrc_avrg_results.cgi	zScWGveU
 @url:https://eprint.iacr.org/2017/281.pdf	url:https://eprint.iacr.org/2017/281.pdf	url:https://eprint.iacr.org/2017/281.pdf	1GprsH3DV
+@url:https://github.com/deepchem/deepchem	url:https://github.com/deepchem/deepchem	url:https://github.com/deepchem/deepchem	Ytvk62dX
 @url:https://medium.com/twenty-one-hundred/data-is-the-new-oil-a-ludicrous-proposition-1d91bba4f294	url:https://medium.com/twenty-one-hundred/data-is-the-new-oil-a-ludicrous-proposition-1d91bba4f294	url:https://medium.com/twenty-one-hundred/data-is-the-new-oil-a-ludicrous-proposition-1d91bba4f294	o8mib4CN
 @url:https://phekb.org/implementations	url:https://phekb.org/implementations	url:https://phekb.org/implementations	ziudr6hx
