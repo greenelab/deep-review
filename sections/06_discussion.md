@@ -213,3 +213,11 @@ discussing here.*
 ### Transfer learning/transferability of features
 
 * https://github.com/greenelab/deep-review/issues/139#issuecomment-268901804
+
+As discussed in Data Limitations, biomedical datasets often contain a limited
+number of instances or labels, which ofter leads to poor performance of
+machine learning algorithms. When applied to such datasets, deep learning
+models are particularly prone to over-fitting due to their high representational
+power. However, Transfer Learning techniques also known as Domain Adaptation
+enable transfer of patterns extracted from larger and/or labeled datasets from
+different domain to the problem in hand.
