@@ -5,7 +5,7 @@ respect to both research and practice. A recent comparison of genomics with
 social media, online videos and other data-intensive scientific disciplines
 suggested that the field of genomics alone would equal or surpass other fields
 in data generation and analysis within the next decade
-[@tag:Stephen2015_big]. These data present new opportunities, but
+[@tag:Stephens2015_big]. These data present new opportunities, but
 also new challenges. The data volume and complexity both indicate that
 automated algorithms will be needed to extract
 meaningful patterns and provide actionable knowledge allowing us to better
@@ -159,6 +159,6 @@ deep learning framework is well suited to the problem. Drug discovery and drug
 "repurposing" are two other hot topics. Aliper et al. used transcriptomic
 data to predict which drugs might be repurposed for other diseases through
 deep fully connected neural networks
-[@tag:allper2016_pharma]. In a similar vein, Wang et al. used
+[@tag:Allper2016_pharma]. In a similar vein, Wang et al. used
 restricted boltzman machines (RBM) to predict drug molecular targets
 [@tag:Wang2013_boltzmann].
