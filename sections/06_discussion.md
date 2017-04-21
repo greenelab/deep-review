@@ -38,7 +38,7 @@ models are not known, and it is unclear whether predictions from deep learning
 models are robust to sample noise. Toward quantifying the uncertainty of
 predictions, there has been a renewed interest in confidence intervals for
 deep neural networks. Early work from Chryssolouris et al
-[@tag:Chryssolouris_confidence] provided confidence intervals under the assumption of
+[@tag:Chryssolouris1996_confidence] provided confidence intervals under the assumption of
 normally distributed error. However, Nguyen et al [@tag:Nguyen2014_adversarial]
 showed that the confidence of convolutional neural networks is not reliable; they
 can output confidence scores over 99.99% even for samples that are purely noise.
