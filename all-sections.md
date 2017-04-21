@@ -1212,7 +1212,7 @@ would replace traditional statistical methods for predicting medical
 outcomes such as myocardial infarction [@jdg2u7bX] or
 mortality [@xX68eyvs]. He posited that while neural
 networks have several advantages in representational power, the difficulties in
-interpretation may limit clinical applications. In 2007, Lisboa and Taktak
+interpretation may limit clinical applications. In 2006, Lisboa and Taktak
 [@qxxwkSAT] examined the use of artificial neural
 networks in medical journals, concluding that neural networks provided an
 increase in benefit to healthcare relative to traditional screening methods in
@@ -1260,20 +1260,21 @@ are currently hampered by the difficulties of counter-factual inference.
 
 A clinical task to deep learning which has been more successfully applied is
 the assignment of patients to clinical trials. Ithapu et al
-[@eehGXQlY] used a randomized denoising autoenconder to
-learn a multimodal imaging marker that predicts future cognitive and neural
-decline from positron emission tomography (PET), amyloid
-florbetapir PET, and structural magnetic resonance imaging. By accurately
-predicting which cases will progress to dementia, they were able to
-efficiently assign patients to a clinical trial and reduced the required
-sample sizes by a factor of five.  Similarly, Artemov et al
-[@mo3GQwJj] applied deep learning to predict which clinical trials
-were likely to fail and which were likely to succeed. By predicting the side
-effects and pathway activations of each drug, and then translating these
-activations to a success proability, their deep learning-based approach was
-able to significantly outperform a random forest classifier trained on gene
-expression changes. These approaches suggest promising directions to improve
-the efficiency of clinical trials and accelerate drug development.
+[@eehGXQlY] used a randomized denoising autoenconder
+ to learn a multimodal imaging marker that predicts future cognitive
+ and neural decline from positron emission tomography (PET), amyloid
+florbetapir PET, and structural magnetic resonance imaging.
+By accurately predicting which cases will progress to dementia, they
+ were able to efficiently assign patients to a clinical trial and reduced
+  the required sample sizes by a factor of five.  Similarly, Artemov et al
+[@mo3GQwJj] applied deep learning to predict which
+ clinical trials were likely to fail and which were likely to succeed. By
+ predicting the side effects and pathway activations of each drug, and
+ then translating these activations to a success proability, their deep
+ learning-based approach was able to significantly outperform a random
+ forest classifier trained on gene expression changes. These approaches
+ suggest promising directions to improve the efficiency of clinical trials
+ and accelerate drug development.
 
 #### Challenges
 
@@ -1409,12 +1410,13 @@ models are not known, and it is unclear whether predictions from deep learning
 models are robust to sample noise. Toward quantifying the uncertainty of
 predictions, there has been a renewed interest in confidence intervals for
 deep neural networks. Early work from Chryssolouris et al
-[@9SnNyc8Y] provided confidence intervals under the assumption of
-normally distributed error. However, Nguyen et al [@1AkF8Wsv7] showed
-that the confidence of convolutional neural networks is not reliable; they can
-output confidence scores over 99.99% even for samples that are purely noise.
-Recently, Fong and Vedaldi [@y4t9EzPn] provided a framework for
-understanding black box algorithms by perturbing input data.
+[@9SnNyc8Y] provided confidence intervals under the
+ assumption of normally distributed error. However, Nguyen et al
+ [@1AkF8Wsv7] showed that the confidence of convolutional
+ neural networks is not reliable; they can output confidence scores over
+ 99.99% even for samples that are purely noise. Recently, Fong and Vedaldi
+ [@y4t9EzPn] provided a framework for understanding black box
+ algorithms by perturbing input data.
 
 For domain-specific models, we previously described approaches for the
 interpretation and visualization of neural networks that prediction
