@@ -8,14 +8,14 @@ patients with treatments.  The sub-section titles are merely placeholders.*
 
 There has been sustained interest in applying deep learning to clinical
 decision making for over two decades. In 1996, Tu
-[@doi:10.1016/S0895-4356(96)00002-9] compared the effectiveness of artificial
+[@tag:Tu1996_anns] compared the effectiveness of artificial
 neural networks and logistic regression, questioning whether deep learning
 would replace traditional statistical methods for predicting medical
-outcomes such as myocardial infarction [@doi:10.7326/0003-4819-115-11-843] or
-mortality [@doi:10.1056/NEJM198509263131306]. He posited that while neural
+outcomes such as myocardial infarction [@tag:Baxt1991_myocardial] or
+mortality [@tag:Wasson1985_clinical]. He posited that while neural
 networks have several advantages in representational power, the difficulties in
-interpretation may limit clinical applications. In 2007, Lisboa and Taktak
-[@doi:10.1016/j.neunet.2005.10.007] examined the use of artificial neural
+interpretation may limit clinical applications. In 2006, Lisboa and Taktak
+[@tag:Lisboa2006_review] examined the use of artificial neural
 networks in medical journals, concluding that neural networks provided an
 increase in benefit to healthcare relative to traditional screening methods in
 21 of 27 studies.
@@ -40,10 +40,10 @@ clinical environment.
 
 A common application for deep learning techniques in this domain is to
 leverage the temporal structure of healthcare records. As previously
-discussed, many studies [@arxiv:1606.04130
-@arxiv:1606.01865 @doi:10.1109/ACCESS.2016.2618775 @arxiv:1510.07641]
+discussed, many studies [@tag:Lipton2016_missing
+@tag:Che2016_rnn @tag:Huddar2016_predicting @tag:Lipton2015_lstm]
 have used deep recurrent networks to categorize patients but most stop short
-of suggesting clinical decisions. Nemati et al [@doi:10.1109/EMBC.2016.7591355]
+of suggesting clinical decisions. Nemati et al [@tag:Nemati2016_rl]
 used deep reinforcement learning to optimize a heparin dosing policy for
 intensive care patients. However, because the ideal dosing policy is unknown,
 the model's predictions must be evaluated on counter-factual data. This
@@ -52,9 +52,9 @@ clinical practice: because the ground-truth is unknown, researchers struggle
 to evaluate model predictions in the absence of interventional data, but
 clinical application is unlikely until the model has been shown to be effective
 . The impressive applications of deep reinforcement learning to other domains
-[@doi:10.1038/nature16961] have relied on knowledge of the underlying
+[@tag:Silver2016_alphago] have relied on knowledge of the underlying
 processes (e..g the rules of the game). Some models have been developed for
-targeted medical problems [@doi:10.1136/amiajnl-2013-001815], but a
+targeted medical problems [@tag:Gultepe2014_sepsis], but a
 generalized engine is beyond current capabilities. Further development of the
 rules underlying biological processes could unleash deep learning methods that
 are currently hampered by the difficulties of counter-factual inference.
@@ -63,20 +63,21 @@ are currently hampered by the difficulties of counter-factual inference.
 
 A clinical task to deep learning which has been more successfully applied is
 the assignment of patients to clinical trials. Ithapu et al
-[@doi:10.1016/j.jalz.2015.01.010] used a randomized denoising autoenconder to
-learn a multimodal imaging marker that predicts future cognitive and neural
-decline from positron emission tomography (PET), amyloid
-florbetapir PET, and structural magnetic resonance imaging. By accurately
-predicting which cases will progress to dementia, they were able to
-efficiently assign patients to a clinical trial and reduced the required
-sample sizes by a factor of five.  Similarly, Artemov et al
-[@doi:10.1101/095653] applied deep learning to predict which clinical trials
-were likely to fail and which were likely to succeed. By predicting the side
-effects and pathway activations of each drug, and then translating these
-activations to a success proability, their deep learning-based approach was
-able to significantly outperform a random forest classifier trained on gene
-expression changes. These approaches suggest promising directions to improve
-the efficiency of clinical trials and accelerate drug development.
+[@tag:Ithapu2015_efficient] used a randomized denoising autoenconder
+ to learn a multimodal imaging marker that predicts future cognitive 
+ and neural decline from positron emission tomography (PET), amyloid
+florbetapir PET, and structural magnetic resonance imaging. 
+By accurately predicting which cases will progress to dementia, they
+ were able to efficiently assign patients to a clinical trial and reduced
+  the required sample sizes by a factor of five.  Similarly, Artemov et al
+[@tag:Artemov2016_clinical] applied deep learning to predict which
+ clinical trials were likely to fail and which were likely to succeed. By 
+ predicting the side effects and pathway activations of each drug, and 
+ then translating these activations to a success proability, their deep 
+ learning-based approach was able to significantly outperform a random 
+ forest classifier trained on gene expression changes. These approaches 
+ suggest promising directions to improve the efficiency of clinical trials 
+ and accelerate drug development.
 
 #### Challenges
 
@@ -159,7 +160,7 @@ data versus algorithms
 - Future outlook part 2, how the above approaches relate to traditional
 methods like docking (note neural networks that include docking scores as
 features), deep learning efforts in this direction that use structure (e.g.
-[@tag:Wallach2015_atom_net @arxiv:1612.02751]), "zero-shot learning",
+[@tag:Wallach2015_atom_net @tag:Ragoza_protein]), "zero-shot learning",
 analogies to other domains where deep learning can capture the behavior
 of complex physics (e.g. quantum physics example), maybe briefly mention
 other compound-protein interaction-based networks although that doesn't seem
