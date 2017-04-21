@@ -42,19 +42,19 @@ another set of weights to produce the output **TODO: we probably need a figure
 here - I see no way that we don't include this type of description in our paper,
 despite the fact that it's been done tons of times before. - I'm really partial
 to this nature review's explanation about making non-linear problems linear -
-figure 1 [@doi:10.1038/nature14539]** These neural networks are trained by
+figure 1 [@tag:LeCun2015]** These neural networks are trained by
 identifying weights that produce a desired output from some specific input.
 
 Neural networks can also be stacked. The outputs from one network can be used as
 inputs to another. This process produces a stacked, also known as a multi-layer,
 neural network. The multi-layer neural network techniques that underlie deep
 learning have a long history. Multi-layer methods have been discussed in the
-literature for more than five decades [@doi:10.1103/RevModPhys.34.135]. Given
-this context, it's challenging to consider "deep learning" as a new advance,
-though the term has only become widespread to describe analysis methods in the
+literature for more than five decades [@tag:Block1962_perceptron]. Given this
+context, it's challenging to consider "deep learning" as a new advance, though
+the term has only become widespread to describe analysis methods in the
 last decade. Much of the early history of neural networks has been extensively
-covered in a recent review [@doi:10.1016/j.neunet.2014.09.003]. For the purposes
-of this review, we identify deep learning approaches as those that use
+covered in a recent review [@tag:Schmidhuber2014_dnn_overview]. For the
+purposes of this review, we identify deep learning approaches as those that use
 multi-layer neural networks to construct complex features.
 
 We also discuss a class of algorithms that we term "shallow learning"
@@ -117,7 +117,7 @@ comprehensive subtyping seems possible.
 Several studies have used deep learning methods in order to better categorize
 breast cancer patients. For example, Tan et al. applied denoising
 autoencoders (DA), an unsupervised approach, in order to cluster breast
-cancer patients [@Tan2014_psb]. Ciresan et al. utilized
+cancer patients [@tag:Tan2014_psb]. Ciresan et al. utilized
 convolutional neural networks (CNN) to count mitotic divisions in
 histological images; a feature that is highly correlated with disease
 outcome [@tag:Ciresan2013_mitosis]. Despite these recent advances, a
