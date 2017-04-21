@@ -79,6 +79,21 @@ resorted to feature engineering instead of learning representations from low-
 level features?  Is there still work to be done in finding the right low-level
 features in some problems?*
 
+###### Biomedical data is often "Wide"
+
+*Biomedical studies typically deal with relatively small sample sizes but each
+sample may have millions of measurements (genotypes and other omics data, lab
+tests etc).*
+
+*Classical machine learning recommendations were to have 10x samples per number
+of parameters in the model.*
+
+*Number of parameters in an MLP. Convolutions and similar strategies help but do
+not solve*
+
+*Bengio diet networks paper*
+
+
 ### Hardware limitations and scaling
 
 *Several papers have stated that memory or other hardware limitations
