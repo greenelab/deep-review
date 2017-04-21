@@ -158,7 +158,8 @@ leverage spatial relationships within the data, this particular deep learning
 framework is well suited to the problem. Drug repositioning is another fertile
 area. Aliper et al. used transcriptomic data to predict which drugs might be
 repurposed for other diseases through deep, fully connected neural networks
-[@doi:10.1021/acs.molpharmaceut.6b00248]. Similarly, restricted Boltzmann
-machines (RBM) can be combined into deep belief networks to predict novel
-drug - target interactions and formulate drug repositioning hypitheses
-[@doi:10.1093/bioinformatics/btt234 @doi:10.1021/acs.jproteome.6b00618].
+[@doi:10.1021/acs.molpharmaceut.6b00248]. Similarly, it was shown that
+restricted Boltzmann machines (RBM) can be combined into deep belief networks to
+predict novel drug - target interactions and formulate drug repositioning
+hypotheses [@doi:10.1093/bioinformatics/btt234
+@doi:10.1021/acs.jproteome.6b00618].
