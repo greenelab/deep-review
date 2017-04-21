@@ -158,6 +158,8 @@ goals of that resource and comment on the deep learning applications.  In the
 Issues, we had reservations about whether the improvements in expression
 prediction are good enough to make a practical difference in the domain and
 feature selection and construction.*
+*Also, note that this now (partially?) covered in the drug repositioning
+subsection above.*
 
 ### Ligand-Based Prediction of Bioactivity
 
