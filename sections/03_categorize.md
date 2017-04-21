@@ -31,7 +31,10 @@ certain tests based on the diagnosis that they suspect a patient has, a deep
 neural network may learn to "diagnose" patients simply based on the tests that
 are ordered. For some objective function this may offer good performance (i.e.
 predicting an ICD code), even though it does not provide insight into the
-underlying disease beyond physician activity.
+underlying disease beyond physician activity. This challenge is not unique to
+deep learning approaches; however, it is important for practitioners to be aware
+of these challenges and the possibility in this domain of constructing highly
+predictive classifiers of questionable actual utility.
 
 Our goal in this section is to assess the extent to which deep learning is
 already contributing to the discovery of novel categories. Where it isn't, we
