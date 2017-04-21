@@ -5,7 +5,7 @@ respect to both research and practice. A recent comparison of genomics with
 social media, online videos and other data-intensive scientific disciplines
 suggested that the field of genomics alone would equal or surpass other fields
 in data generation and analysis within the next decade
-[@doi:10.1371/journal.pbio.1002195]. These data present new opportunities, but
+[@tag:Stephen2015_big]. These data present new opportunities, but
 also new challenges. The data volume and complexity both indicate that
 automated algorithms will be needed to extract
 meaningful patterns and provide actionable knowledge allowing us to better
@@ -14,13 +14,13 @@ critical environments.
 
 Concurrent with this explosive growth in biomedical data, a new enthusiasm for a
 class of machine learning algorithms, known as deep learning, is revolutionizing
-domains from image search to the game of Go [@doi:10.1038/nature16961]. As
+domains from image search to the game of Go [@tag:Silver2016_alphago]. As
 recently applied to image analysis problems, these architectures readily surpass
 previous best-in-class results, and computer scientists are now building
 many-layered neural networks from collections of millions of images. In a famous
 and early example, scientists from Google demonstrated that a neural network
 could learn to identify cats simply by watching online videos
-[@url:http://research.google.com/archive/unsupervised_icml2012.html].
+[@tag:Le2012_unsupervised].
 
 What if, more generally, deep learning could solve the challenges
 presented by the growth of data in biomedicine? Could these algorithms
@@ -77,7 +77,7 @@ to maintain or restore health? We chose a high bar for "transform." Andrew
 Grove, the former CEO of Intel, coined the term Strategic Inflection Point to
 refer to a change in technologies or environment that requires a business to be
 fundamentally reshaped
-[@url:http://www.intel.com/pressroom/archive/speeches/ag080998.htm]. Here, we
+[@tag:Grove1998_intel]. Here, we
 ought to identify whether deep learning was an innovation that would induce a
 strategic inflection point on the practice of biology or medicine. We considered
 this with an eye towards the concept of precision medicine.
@@ -85,9 +85,9 @@ this with an eye towards the concept of precision medicine.
 There are numerous examples where deep learning
 has been applied to biological problems and produced somewhat improved results,
 and there are numerous reviews that have focused on general applications of deep
-learning in biology [@doi:10.1038/nbt.3313 @doi:10.1002/minf.201501008
-@doi:10.3109/10409238.2015.1135868 @doi:10.1021/acs.molpharmaceut.5b00982
-@doi:10.15252/msb.20156651 @doi:10.1093/bib/bbw068]. We sought cases where deep
+learning in biology [@tag:Park2015_deep @tag:Gawehn2015_drug
+@tag:Kraus2015_screening @tag:Mamoshina2016_biomedicine
+@tag:Angermueller2016_review @tag:Min2016_bioinf]. We sought cases where deep
 learning was enabling researchers to solve challenges that were previously
 considered infeasible, or if it made difficult, tedious, and non-routine
 analyses routine.
@@ -110,17 +110,17 @@ receptors or genes' expression. One example is the PAM50 approach
 to classifying breast cancer where the expression of 50 marker
 genes divides breast cancer patients into four subtypes.
 Significant heterogeneity still remains within these four subtypes
-[@doi:10.1200/JCO.2008.18.1370 @doi:10.1158/1078-0432.CCR-13-0583]. Given the
+[@tag:Parker2009_supervised @tag:Mayer2014_strategies]. Given the
 increasing wealth of molecular data available, a more
 comprehensive subtyping seems possible.
 
 Several studies have used deep learning methods in order to better categorize
 breast cancer patients. For example, Tan et al. applied denoising
 autoencoders (DA), an unsupervised approach, in order to cluster breast
-cancer patients [@doi:10.1142/9789814644730_0014]. Ciresan et al. utilized
+cancer patients [@Tan2014_psb]. Ciresan et al. utilized
 convolutional neural networks (CNN) to count mitotic divisions in
 histological images; a feature that is highly correlated with disease
-outcome [@doi:10.1007/978-3-642-40763-5_51]. Despite these recent advances, a
+outcome [@tag:Ciresan2013_mitosis]. Despite these recent advances, a
 number of challenges exist in this area of research, such as the integration
 of disparate types of data, including electronic health records (EHR),
 imaging and histology data, and molecular omics data.
@@ -134,15 +134,15 @@ classic biological problem where machine learning has been extensively
 applied is the prediction of molecular targets. Recent advances using deep
 learning have shown higher accuracy in determining molecular targets. For
 example, Lee et al. used deep recurrent neural networks (RNN) to predict gene
-targets of micro-RNAs [@doi:10.1109/icnn.1994.374637]. Wang et al. used a
+targets of micro-RNAs [@tag:Zurada1994_feedforward]. Wang et al. used a
 residual CNN to predict protein-protein contact on a genome-wide scale
-[@doi:10.1101/073239]. Other biological questions that have been investigated
-include the prediction of protein secondary structure based on sequence data
-[@doi:10.1109/tcbb.2014.2343960 @doi:10.1038/srep18962],
+[@tag:Wang2016_protein_contact]. Other biological questions that have been
+investigated include the prediction of protein secondary structure based on
+sequence data [@tag:Spencer2015_abinitio @tag:Wang2016_secondary],
 recognition of functional genomic elements such as enhancers and
-promoters [@doi:10.1101/036129 @doi:10.1007/978-3-319-16706-0_20
-@doi:10.1093/nar/gku1058], predicting the deleterious effects of nucleotide
-polymorphisms [@doi:10.1093/bioinformatics/btu703], etc.
+promoters [@tag:Liu2016_pedla @tag:Li2015_enhancers
+@tag:Kleftogiannis2015_deep], predicting the deleterious effects of nucleotide
+polymorphisms [@tag:Quang2015_dann], etc.
 
 #### Patient Treatment
 
@@ -153,12 +153,12 @@ treatment outcome, and guide future development of new therapies.
 Specifically, effort in this area aims to identify drug targets, identify
 drug interactions or predict drug response. One recent approach for
 predicting drug response is the use of protein structure to predict drug
-interactions and drug bioactivity through CNN [@arxiv:1510.02855]. Since CNNs
-leverage spatial relationships within the data, this particular deep learning
-framework is well suited to the problem. Drug discovery and drug
+interactions and drug bioactivity through CNN [@tag:Wallach2015_atom_net].
+Since CNNs leverage spatial relationships within the data, this particular
+deep learning framework is well suited to the problem. Drug discovery and drug
 "repurposing" are two other hot topics. Aliper et al. used transcriptomic
 data to predict which drugs might be repurposed for other diseases through
 deep fully connected neural networks
-[@doi:10.1021/acs.molpharmaceut.6b00248]. In a similar vein, Wang et al. used
+[@tag:allper2016_pharma]. In a similar vein, Wang et al. used
 restricted boltzman machines (RBM) to predict drug molecular targets
-[@doi:10.1093/bioinformatics/btt234].
+[@tag:Wang2013_boltzmann].
