@@ -138,7 +138,7 @@
 <p>While significant progress has been made in developing deep learning methods for diagnosis, it is not clear that these methods have yet transformed clinical decision making. The difficulty in applying deep learning to clinical decision making represents a challenge common to many deep learning applications: it is much easier to predict an outcome than to suggest an action to change the outcome. Several attempts at recasting the clinical decision making problem into a prediction problem (i.e. prediction of which treatment will most improve the patient's health) have accurately predicted prescription habits, but technical and medical challenges remain for clinical adoption. In particular, remaining challenges include actionable interpretability of deep learning models, fitting deep models to limited and heterogeneous data, and integrating complex predictive models into a dynamic clinical environment.</p>
 <h4 id="applications">Applications</h4>
 <h5 id="trajectory-prediction-for-treatment">Trajectory Prediction for Treatment</h5>
-<p>A common application for deep learning techniques in this domain is to leverage the temporal structure of healthcare records. As previously discussed, many studies <span class="citation">[<a href="#ref-4zpZxjHR">183</a>–<a href="#ref-glyI7H6F">186</a>]</span> have used deep recurrent networks to categorize patients but most stop short of suggesting clinical decisions. Nemati et al <span class="citation">[<a href="#ref-16OQvsRqJ">187</a>]</span> used deep reinforcement learning to optimize a heparin dosing policy for intensive care patients. However, because the ideal dosing policy is unknown, the model's predictions must be evaluated on counter-factual data. This represents a common challenge when bridging the gap between research and clinical practice: because the ground-truth is unknown, researchers struggle to evaluate model predictions in the absence of interventional data, but clinical application is unlikely until the model has been shown to be effective . The impressive applications of deep reinforcement learning to other domains <span class="citation">[<a href="#ref-2gn6PKkv">2</a>]</span> have relied on knowledge of the underlying processes (e..g the rules of the game). Some models have been developed for targeted medical problems <span class="citation">[<a href="#ref-eCrLGgiX">188</a>]</span>, but a generalized engine is beyond current capabilities. Further development of the rules underlying biological processes could unleash deep learning methods that are currently hampered by the difficulties of counter-factual inference.</p>
+<p>A common application for deep learning techniques in this domain is to leverage the temporal structure of healthcare records. As previously discussed, many studies <span class="citation">[<a href="#ref-4zpZxjHR">183</a>–<a href="#ref-glyI7H6F">186</a>]</span> have used deep recurrent networks to categorize patients but most stop short of suggesting clinical decisions. Nemati et al <span class="citation">[<a href="#ref-16OQvsRqJ">187</a>]</span> used deep reinforcement learning to optimize a heparin dosing policy for intensive care patients. However, because the ideal dosing policy is unknown, the model's predictions must be evaluated on counter-factual data. This represents a common challenge when bridging the gap between research and clinical practice: because the ground-truth is unknown, researchers struggle to evaluate model predictions in the absence of interventional data, but clinical application is unlikely until the model has been shown to be effective. The impressive applications of deep reinforcement learning to other domains <span class="citation">[<a href="#ref-2gn6PKkv">2</a>]</span> have relied on knowledge of the underlying processes (e.g. the rules of the game). Some models have been developed for targeted medical problems <span class="citation">[<a href="#ref-eCrLGgiX">188</a>]</span>, but a generalized engine is beyond current capabilities. Further development of the rules underlying biological processes could unleash deep learning methods that are currently hampered by the difficulties of counter-factual inference.</p>
 <h5 id="efficient-clinical-trials">Efficient Clinical trials</h5>
 <p>A clinical task to deep learning which has been more successfully applied is the assignment of patients to clinical trials. Ithapu et al <span class="citation">[<a href="#ref-eehGXQlY">189</a>]</span> used a randomized denoising autoenconder to learn a multimodal imaging marker that predicts future cognitive and neural decline from positron emission tomography (PET), amyloid florbetapir PET, and structural magnetic resonance imaging. By accurately predicting which cases will progress to dementia, they were able to efficiently assign patients to a clinical trial and reduced the required sample sizes by a factor of five. Similarly, Artemov et al <span class="citation">[<a href="#ref-mo3GQwJj">190</a>]</span> applied deep learning to predict which clinical trials were likely to fail and which were likely to succeed. By predicting the side effects and pathway activations of each drug, and then translating these activations to a success proability, their deep learning-based approach was able to significantly outperform a random forest classifier trained on gene expression changes. These approaches suggest promising directions to improve the efficiency of clinical trials and accelerate drug development.</p>
 <h4 id="challenges">Challenges</h4>
@@ -149,18 +149,17 @@
 <h3 id="effects-of-drugs-on-transcriptomic-responses">Effects of drugs on transcriptomic responses</h3>
 <p><em>We discussed a few papers that operate on Library of Network-Based Cellular Signatures (LINCS) gene expression data. We could briefly introduce the goals of that resource and comment on the deep learning applications. In the Issues, we had reservations about whether the improvements in expression prediction are good enough to make a practical difference in the domain and feature selection and construction.</em></p>
 <h3 id="ligand-based-prediction-of-bioactivity">Ligand-Based Prediction of Bioactivity</h3>
-<p><strong>TODO: expand outline</strong></p>
-<ul>
-<li>Short introduction to problem, related reviews, use vHTS definition from <span class="citation">[<a href="#ref-cjj5vT3H">191</a>]</span> (vHTS doesn't fit neatly into classic classification, regression, or ranking)</li>
-<li>Introduce ligand-based approaches, hype and excitement surrounding performance of a &quot;high-parameter&quot; network on the Merck Kaggle challenge, cover other neural networks trained on fingerprints or descriptors as features that followed, Tox21 Data Challenge</li>
-<li>Multitask networks related to the above point</li>
-<li>Realistic view of where things stand today, high-parameter networks struggle with overfitting, cross validation needs to be done carefully because of temporal structure <span class="citation">[<a href="#ref-uP7SgBVd">192</a>]</span>, low parameter networks based on chemical similarity (IRV) work very well, especially well-suited for the domain in which training data can be limited and contains few positive instances, may touch on BACE example here and other discussions of training data limitations (e.g. <span class="citation">[<a href="#ref-HRoooKGh">193</a>]</span>)</li>
-<li>&quot;Creative experimentation&quot; phase of the field, new ideas for representation learning and novel approaches including graph convolutions, autoencoders, one shot learning, and generative models</li>
-<li>These &quot;creative&quot; approaches are definitely interesting but aren't necessarily outperforming existing methods, improvements on the software and reusability side could be important to help establish more rigorous benchmarking, DeepChem as example of this</li>
-<li>Future outlook, what would need to happen for the &quot;creative&quot; approaches to overtake the current state of the art, can representation learning be improved by incorporating more information about chemical properties or even more &quot;tasks&quot; during training, how much will future growth depend on data versus algorithms</li>
-<li>Future outlook part 2, how the above approaches relate to traditional methods like docking (note neural networks that include docking scores as features), deep learning efforts in this direction that use structure (e.g. <span class="citation">[<a href="#ref-Z7fd0BYf">26</a>,<a href="#ref-bNBiIiTt">194</a>]</span>), &quot;zero-shot learning&quot;, analogies to other domains where deep learning can capture the behavior of complex physics (e.g. quantum physics example), maybe briefly mention other compound-protein interaction-based networks although that doesn't seem to fit here and is somewhat out of scope</li>
-<li>Future output part 3 (most speculative), what would successful generative networks mean for the HTS field?</li>
-</ul>
+<p>In the biomedical domain, high-throughput chemical screening aims to improve therapeutic options over a long term horizon <span class="citation">[<a href="#ref-1DTUK3YyI">191</a>]</span> <code>TODO: add another general screening reference</code>. The objective is to discover which small molecules (also referred to as chemical compounds or ligands) effectively and specifically affect the activity of a target, such as a kinase, protein-protein interaction, or broader cellular phenotype. <code>TODO: clarify desired outputs, what will be done with the top-ranked hits, one vs multiple hits, abandoning lead compounds</code> This screening process can serve as the first step in the long drug discovery pipeline, where novel chemicals are pursued for their ability to inhibit or enhance disease-relevant biological mechanisms. The appeal of machine learning in this domain is the need to improve the efficiency of the initial high-throughput screens such that sufficient candidate active compounds can be identified without exhaustively screening libraries of hundreds of thousands or millions of chemicals. <code>TODO: is the sufficient number target dependent?</code> This task has been treated as a classification, regression, and ranking problem. In reality, it does not fit neatly into any of those categories. An ideal algorithm will rank a sufficient number of active compounds before the inactives, but the rankings of actives relative to other actives and inactives to other inactives is less important <span class="citation">[<a href="#ref-cjj5vT3H">192</a>]</span>. <code>TODO: can improve this first attempt at an intro by reviewing more existing literature on the topic</code> <code>TODO: check which other existing reviews should be referenced</code></p>
+<p>We primarily focus on ligand-based approaches that train on chemicals' features without requiring knowledge of the target, as opposed to alternative strategies that use target features such as the protein structure <code>TODO: add examples</code>. Chemical features may be represented as a list of molecular descriptors such as molecular weight, atom counts, charge representations, summaries of atom-atom relationships in the molecular graph, and more sophisticated derived properties <span class="citation">[<a href="#ref-17eGl2pn9">193</a>]</span>. Alternatively, chemicals can be characterized with the fingerprint bit vectors, textual strings, or novel learned representations described below. Neural networks have a long history in this domain <span class="citation">[<a href="#ref-xPkT1z7D">194</a>]</span> <code>TODO: can add additional references besides this review</code>, and the 2012 Merck Molecular Activity Challenge on Kaggle generated substantial excitement about the potential for high-parameter deep learning approaches. The winning submission was an ensemble that included a multitask multilayer perceptron network <span class="citation">[<a href="#ref-1Dzz0P0qr">195</a>]</span>, and the Merck sponsors noted drastic improvements over a random forest (RF) baseline, remarking &quot;we have seldom seen any method in the past 10 years that could consistently outperform RF by such a margin&quot; <span class="citation">[<a href="#ref-xOaTIeBY">196</a>]</span>. Subsequent work explored the effects of jointly modeling far more targets than the Merck challenge <span class="citation">[<a href="#ref-F8fP2vAg">197</a>,<a href="#ref-yAoN5gTU">198</a>]</span>, with <span class="citation">[<a href="#ref-yAoN5gTU">198</a>]</span> showing that the benefits of multitask networks had not yet saturated even with 259 targets. Although a deep learning approach, DeepTox <span class="citation">[<a href="#ref-Y1D0SZrO">199</a>]</span>, was also the overall winner of another competition, the Toxicology in the 21st Century (Tox21) Data Challenge, it did not dominate alternative methods as thoroughly as in other domains. DeepTox was the top performer on 9 of 15 targets and highly competitive with the top performer on the others. However, for many targets there was little separation between the top two or three methods. A reliance on AUC ROC <code>TODO: define here?</code> for the evaluation (see Discussion) further hinders the ability to declare Tox21 as an outright success for deep learning.</p>
+<p>In retrospect, the nuanced Tox21 performance may be more reflective of the practical challenges encountered in ligand-based chemical screening than the extreme enthusiasm generated by the Merck competition. A study of 22 absorption distribution, metabolism, excretion, and toxicity (ADMET) tasks demonstrated that there are limitations to multitask transfer learning that are in part a consequence of the degree to which tasks are related <span class="citation">[<a href="#ref-uP7SgBVd">200</a>]</span>. Some of the ADMET datasets showed far superior performance in multitask models of only the 22 ADMET tasks relative to more expansive multitask networks that included over 500 less-similar tasks. <code>TODO: also has a good discussion of information leakage in cross validation, include that in the Discussion section</code> In addition, training datasets encountered in practical applications may be tiny relative to what is available in public datasets and organized competitions. A study of BACE-1 inhibitors included only 1547 compounds <span class="citation">[<a href="#ref-B4cL1o2P">201</a>]</span>. Machine learning models were able to train on this limited dataset, but overfitting was a challenge and the differences between random forests and a deep neural were negligible, especially in the classification setting. Overfitting is still a problem in larger chemical screening datasets with tens or hundreds of thousands of compounds because the number of active compounds can be very small, on the order of 0.1% or 1% of all tested chemicals for a typical target <code>TODO: verify those estimates</code>. This is consistent with the strong performance of low-parameter neural networks that emphasize compound-compound similarity, such as influence-relevance voter, <span class="citation">[<a href="#ref-cjj5vT3H">192</a>,<a href="#ref-1E0x7QgLP">202</a>]</span> instead of predicting compound activity directly from chemical features. <code>TODO: include recent DeepChem IRV benchmarks?</code></p>
+<p>Much of the recent excitement in this domain has come from what could be considered a creative experimentation phase, in which deep learning has offered novel possibilities for feature representation and modeling of chemical compounds. A molecular graph, where atoms are nodes and bonds are edges, is a natural way to represent a chemical structure. Traditional machine learning approaches relied on preprocessing the graph into a feature vector, such as a fixed-width bit vector fingerprint <span class="citation">[<a href="#ref-QnZ7V9Rd">203</a>]</span>. An overly simplistic but approximately correct view of these fingerprints is that each bit represents the presence of absence of a particular chemical substructure in the molecular graph. Modern neural networks can operate directly on the molecular graph as input. Duvenaud et al <span class="citation">[<a href="#ref-Oe573FaL">204</a>]</span> generalized standard circular fingerprints by substituting discrete operations in the fingerprinting algorithm with operations in a neural network, producing a real-valued feature vector instead of a bit vector. Other approaches offer trainable networks that can in theory learn chemical feature representations that are optimized for a particular prediction task. Lusci et al adapted recursive neural networks for directed acyclic graphs for undirected molecular graphs by creating an ensemble of directed graphs in which one atom is selected as the root node <span class="citation">[<a href="#ref-17Wih4Hd5">205</a>]</span>. A single feature vector is obtained by summing over all feature vectors for all directed graphs in the ensemble. Graph convolutions on undirected molecular graphs have eliminated the need to enumerate artificial directed graphs, learning feature vectors for atoms that are a function of the properties of neighboring atoms and local regions on the molecular graph <span class="citation">[<a href="#ref-145os4Y6t">206</a>,<a href="#ref-P4ixsM8i">207</a>]</span>.</p>
+<p>Advances in chemical representation learning have not been limited to graph-based neural networks. The simplified molecular-input line-entry system (SMILES) is a standard way to transform a chemical into string-based representation. A SMILES-to-SMILES autoencoder learns a continuous latent feature space for chemicals <span class="citation">[<a href="#ref-2dU8f4XJ">208</a>]</span>. <code>TODO: connect to related EHR paper</code> <code>TODO: autoencoder doesn't fit cleanly with supervised methods, revisit organization after adding GANs</code> In this learned continuous space is it possible to train some types of supervised learning algorithms or interpolate between continuous representations of chemicals in a manner that is not possible with discrete (e.g. bit vector or string) features. A drawback is that not all SMILES strings produced by the autoencoder's decoder correspond to valid chemical structures. <code>TODO: could mention GANs here</code> Altae-Tran et al developed a one-shot learning network <span class="citation">[<a href="#ref-P4ixsM8i">207</a>]</span> to address the reality that most practical chemical screening studies are unable to provide the thousands or millions of training compounds that are needed to train larger multitask networks. Using graph convolutions to featurize chemicals, the network learns an embedding from compounds into a continuous feature space such that compounds with similar activities in a set of training tasks have similar embeddings. The approach is evaluated in an extremely challenging setting where the embedding is learned from a subset of prediction tasks (e.g. activity assays for individual proteins) and only one to ten labeled examples are provided as training data on a new task. On Tox21 targets, even when trained with <em>one</em> task-specific active compound and <em>one</em> inactive compound, the model is able generalize reasonably well because it has learned an informative embedding function from the related tasks. Random forests, which cannot take advantage of the related training tasks, trained in the same setting are only slightly better than a random classifier. Despite the success on Tox21, performance on MUV datasets, which contains assays designed to be challenging for chemical informatics algorithms, is considerably worse. The authors also demonstrate the limitations of transfer learning as embeddings learned from the Tox21 assays have little utility for a drug adverse reaction dataset.</p>
+<p>These novel, learned chemical feature representations may prove to be essential for accurately predicting why some compounds with similar structures yield similar target effects and others produce drastically different results. Currently, these methods are enticing but do not necessarily outperform classic approaches by a large margin. The neural fingerprints <span class="citation">[<a href="#ref-Oe573FaL">204</a>]</span> were narrowly beaten by regression using traditional circular fingerprints on a drug efficacy prediction task (but were superior for predicting solubility or photovoltaic efficiency). Graph convolutions <span class="citation">[<a href="#ref-145os4Y6t">206</a>]</span> performed comparably to a multitask network using standard fingerprints and slightly better than the neural fingerprints <span class="citation">[<a href="#ref-Oe573FaL">204</a>]</span> on the drug efficacy task but were slightly worse than the influence-relevance voter method on an HIV dataset. <span class="citation">[<a href="#ref-cjj5vT3H">192</a>]</span>. <code>TODO: there are also problems with some papers using ROC primarily for benchmarking, which skews results and makes it hard to assess absolute performance.  Add to the Discussion section.</code></p>
+<p>We remain optimistic for the potential of deep learning and specifically representation learning in this domain and propose that rigorous benchmarking on broad and diverse prediction tasks will be as important as novel neural network architectures and expanded public datasets to advance the state of the art and convincingly demonstrate superiority over traditional cheminformatics techniques. Fortunately, there has recently been significant progress in this direction. The DeepChem software <span class="citation">[<a href="#ref-P4ixsM8i">207</a>,<a href="#ref-Ytvk62dX">209</a>]</span> and MoleculeNet benchmarking suite <span class="citation">[<a href="#ref-16OPHvAij">210</a>]</span> built upon it contain chemical bioactivity and toxicity prediction datasets, multiple compound featurization approaches including graph convolutions, and various machine learning algorithms ranging from standard baselines like logistic regression and random forests to recent neural network architectures. Independent research groups have already contributed additional datasets and prediction algorithms to DeepChem, and adoption of common benchmarking evaluation metrics, datasets, and baseline algorithms has the potential to establish the practical utility of deep learning in chemical bioactivity prediction and lower the barrier to entry for machine learning researchers without biochemistry expertise.</p>
+<p>One open question in ligand-based screening pertains to the benefits and limitations of transfer learning. Multitask neural networks have shown the advantages of jointly modeling many targets <span class="citation">[<a href="#ref-F8fP2vAg">197</a>,<a href="#ref-yAoN5gTU">198</a>]</span>. Other studies have shown the limitations of transfer learning when the prediction tasks are insufficiently related <span class="citation">[<a href="#ref-uP7SgBVd">200</a>,<a href="#ref-P4ixsM8i">207</a>]</span>. This has important implications for representation learning. The typical approach of improving deep learning models by expanding the dataset size may not be applicable if only &quot;related&quot; tasks are beneficial, especially because task-task relatedness is ill-defined. The massive chemical state space will also influence the development of unsupervised representation learning methods <span class="citation">[<a href="#ref-2dU8f4XJ">208</a>]</span>. Future work will establish whether it is better to train on massive collections of diverse compounds, drug-like small molecules, or specialized subsets.</p>
+<p><code>TODO: other papers to add such as generative models</code></p>
+<p><code>TOOD: relationship to traditional docking (some networks include docking scores), deep learning with structure (e.g. [@Z7fd0BYf; @bNBiIiTt; @17YaKNLKk])</code></p>
+<p><code>TODO: analogies to other domains where deep learning can capture the behavior of complex physics (e.g. quantum physics example)?</code></p>
 <h3 id="modeling-metabolism-and-chemical-reactivity">Modeling Metabolism and Chemical Reactivity</h3>
 <p><em>Add a review here of metabolism and chemical reactivity.</em></p>
 <h2 id="discussion">Discussion</h2>
@@ -169,8 +168,8 @@
 <p><em>What are the challenges in evaluating deep learning models that are specific to this domain? This can include a discussion of ROC versus precision-recall curves for the imbalanced classes often encountered in biomedical datasets. It could also mention alternative metrics that are used in specific sub-areas such as enrichment factors in virtual screening. A lack of true gold standard data for some problems complicates both training and evaluation. Confidence- weighted labels are valuable when available.</em></p>
 <p><em>Is progress in some biomedical areas slowed when new predictions (e.g. from generative models) cannot be assessed by any human expert and require experimental testing? For example, contrast a painting or song generated by a GAN versus a novel chemical compound. Related is the idea that on some tasks (e.g. the recent wave of deep learning versus MD image classification papers) it is easy to tell when deep learning has produced a breakthrough because human-level performance is an impressive baseline. In many tasks we reviewed, human-level performance is irrelevant.</em></p>
 <h3 id="interpretation">Interpretation</h3>
-<p>As the challenge of interpretability is common across many domains, there is significant interest in developing generic procedures for knowledge extraction from deep models. Ribeiro et al <span class="citation">[<a href="#ref-QwXSJhr0">195</a>]</span> focus on interpreting individual predictions rather than interpreting the model. By fitting simple linear models to mimic the predictions of the deep learning model in a small neighborhood of a data sample, they generated an interpretable model for each prediction. While this procedure can provide interpretable models for each sample, it is unclear whether these interpretable models are reliable. Theoretical guarantees on the curvature of the predictions of deep learning models are not known, and it is unclear whether predictions from deep learning models are robust to sample noise. Toward quantifying the uncertainty of predictions, there has been a renewed interest in confidence intervals for deep neural networks. Early work from Chryssolouris et al <span class="citation">[<a href="#ref-9SnNyc8Y">196</a>]</span> provided confidence intervals under the assumption of normally distributed error. However, Nguyen et al <span class="citation">[<a href="#ref-1AkF8Wsv7">197</a>]</span> showed that the confidence of convolutional neural networks is not reliable; they can output confidence scores over 99.99% even for samples that are purely noise. Recently, Fong and Vedaldi <span class="citation">[<a href="#ref-y4t9EzPn">198</a>]</span> provided a framework for understanding black box algorithms by perturbing input data.</p>
-<p>For domain-specific models, we previously described approaches for the interpretation and visualization of neural networks that prediction transcription factor binding <span class="citation">[<a href="#ref-2UI1BZuD">105</a>–<a href="#ref-xAbGxia4">107</a>]</span>. Other studies have primarily focused on integrating attention mechanisms with the neural networks. Attention mechanisms dynamically weight the importance the neural network gives to each feature. By inspecting the attention weights for a particular sample, a practitioner can identify the important features for a particular prediction. Choi et al <span class="citation">[<a href="#ref-UcRbawKo">199</a>]</span> inverted the typical architecture of recurrent neural networks to improve interpretability. In particular, they only used recurrent connections in the attention generating procedure, leaving the hidden state directly connected to the input variables. In the clinical domain, this model was able to produce accurate diagnoses in which the contribution of previous hospital visits could be directly interpreted. Choi et al <span class="citation">[<a href="#ref-10nDTiETi">200</a>]</span> later extended this work to take into account the structure of disease ontologies and found that the concepts represented by the model were aligned with medical knowledge. Che et al <span class="citation">[<a href="#ref-14DAmZTDg">201</a>]</span> introduced a knowledge-distillation approach which used gradient boosted trees to learn interpretable healthcare features from trained deep models.</p>
+<p>As the challenge of interpretability is common across many domains, there is significant interest in developing generic procedures for knowledge extraction from deep models. Ribeiro et al <span class="citation">[<a href="#ref-QwXSJhr0">211</a>]</span> focus on interpreting individual predictions rather than interpreting the model. By fitting simple linear models to mimic the predictions of the deep learning model in a small neighborhood of a data sample, they generated an interpretable model for each prediction. While this procedure can provide interpretable models for each sample, it is unclear whether these interpretable models are reliable. Theoretical guarantees on the curvature of the predictions of deep learning models are not known, and it is unclear whether predictions from deep learning models are robust to sample noise. Toward quantifying the uncertainty of predictions, there has been a renewed interest in confidence intervals for deep neural networks. Early work from Chryssolouris et al <span class="citation">[<a href="#ref-9SnNyc8Y">212</a>]</span> provided confidence intervals under the assumption of normally distributed error. However, Nguyen et al <span class="citation">[<a href="#ref-1AkF8Wsv7">213</a>]</span> showed that the confidence of convolutional neural networks is not reliable; they can output confidence scores over 99.99% even for samples that are purely noise. Recently, Fong and Vedaldi <span class="citation">[<a href="#ref-y4t9EzPn">214</a>]</span> provided a framework for understanding black box algorithms by perturbing input data.</p>
+<p>For domain-specific models, we previously described approaches for the interpretation and visualization of neural networks that prediction transcription factor binding <span class="citation">[<a href="#ref-2UI1BZuD">105</a>–<a href="#ref-xAbGxia4">107</a>]</span>. Other studies have primarily focused on integrating attention mechanisms with the neural networks. Attention mechanisms dynamically weight the importance the neural network gives to each feature. By inspecting the attention weights for a particular sample, a practitioner can identify the important features for a particular prediction. Choi et al <span class="citation">[<a href="#ref-UcRbawKo">215</a>]</span> inverted the typical architecture of recurrent neural networks to improve interpretability. In particular, they only used recurrent connections in the attention generating procedure, leaving the hidden state directly connected to the input variables. In the clinical domain, this model was able to produce accurate diagnoses in which the contribution of previous hospital visits could be directly interpreted. Choi et al <span class="citation">[<a href="#ref-10nDTiETi">216</a>]</span> later extended this work to take into account the structure of disease ontologies and found that the concepts represented by the model were aligned with medical knowledge. Che et al <span class="citation">[<a href="#ref-14DAmZTDg">217</a>]</span> introduced a knowledge-distillation approach which used gradient boosted trees to learn interpretable healthcare features from trained deep models.</p>
 <h3 id="data-limitations">Data limitations</h3>
 <p><em>Related to evaluation, are there data quality issues in genomic, clinical, and other data that make this domain particularly challenging? Are these worse than what is faced in other non-biomedical domains?</em></p>
 <p><em>Many applications have used relatively small training datasets. We might discuss workarounds (e.g. semi-synthetic data, splitting instances, etc.) and how this could impact future progress. Might this be why some studies have resorted to feature engineering instead of learning representations from low- level features? Is there still work to be done in finding the right low-level features in some problems?</em></p>
@@ -183,10 +182,10 @@
 <p><em>Several papers have stated that memory or other hardware limitations artificially restricted the number of training instances, model inputs/outputs, hidden layers, etc. Is this a general problem worth discussing or will it be solved naturally as hardware improves and/or groups move to distributed deep learning frameworks? Does hardware limit what types of problems are accessible to the average computational group, and if so, will that limit future progress? For instance, some hyperparameter search strategies are not feasible for a lab with only a couple GPUs.</em></p>
 <p><em>Some of this is also outlined in the Categorize section. We can decide where it best fits.</em></p>
 <p>Efficiently scaling deep learning is challenging, and there is a high computational cost (e.g., time, memory, energy) associated with training neural networks and using them for classification. As such, neural networks have only recently found widespread use <span class="citation">[<a href="#ref-BQS8ClV0">6</a>]</span>.</p>
-<p>Many have sought to curb the costs of deep learning, with methods ranging from the very applied (e.g., reduced numerical precision <span class="citation">[<a href="#ref-CKcJuj03">202</a>–<a href="#ref-1GUizyE8e">205</a>]</span>) to the exotic and theoretic (e.g., training small networks to mimic large networks and ensembles <span class="citation">[<a href="#ref-1AhGoHZP9">206</a>,<a href="#ref-1CRF3gAV">207</a>]</span>). The largest gains in efficiency have come from computation with graphics processing units (GPUs) <span class="citation">[<a href="#ref-BQS8ClV0">6</a>,<a href="#ref-F3e4wfzQ">208</a>–<a href="#ref-1FocAi7N0">212</a>]</span>, which excel at the matrix and vector operations so central to deep learning. The massively parallel nature of GPUs allows additional optimizations, such as accelerated mini-batch gradient descent <span class="citation">[<a href="#ref-NSgduYNT">209</a>,<a href="#ref-IULiPa6L">210</a>,<a href="#ref-aClNvbyM">213</a>,<a href="#ref-fNkl8HFz">214</a>]</span>. However, GPUs also have a limited quantity of memory, making it difficult to implement networks of significant size and complexity on a single GPU or machine <span class="citation">[<a href="#ref-F3e4wfzQ">208</a>,<a href="#ref-CCS5KSIM">215</a>]</span>. This restriction has sometimes forced computational biologists to use workarounds or limit the size of an analysis. For example, Chen et al. <span class="citation">[<a href="#ref-12QQw9p7v">87</a>]</span> aimed to infer the expression level of all genes with a single neural network, but due to memory restrictions they randomly partitioned genes into two halves and analyzed each separately. In other cases, researchers limited the size of their neural network <span class="citation">[<a href="#ref-W3grN7jy">19</a>,<a href="#ref-2dU8f4XJ">216</a>]</span>. Some have also chosen to use slower CPU implementations rather than sacrifice network size or performance <span class="citation">[<a href="#ref-x0M6vals">217</a>]</span>.</p>
-<p>Steady improvements in GPU hardware may alleviate this issue somewhat, but it is not clear whether they can occur quickly enough to keep up with the growing amount of available biological data or increasing network sizes. Much has been done to minimize the memory requirements of neural networks <span class="citation">[<a href="#ref-CKcJuj03">202</a>–<a href="#ref-1AhGoHZP9">206</a>,<a href="#ref-YwdqeYZi">218</a>,<a href="#ref-15lYGmZpY">219</a>]</span>, but there is also growing interest in specialized hardware, such as field-programmable gate arrays (FPGAs) <span class="citation">[<a href="#ref-1FocAi7N0">212</a>,<a href="#ref-9NKsJjSw">220</a>]</span> and application-specific integrated circuits (ASICs). Specialized hardware promises improvements in deep learning at reduced time, energy, and memory <span class="citation">[<a href="#ref-1FocAi7N0">212</a>]</span>. Logically, there is less software for highly specialized hardware <span class="citation">[<a href="#ref-9NKsJjSw">220</a>]</span>, and it could be a difficult investment for those not solely interested in deep learning. However, it is likely that such options will find increased support as they become a more popular platform for deep learning and general computation.</p>
-<p>Distributed computing is a general solution to intense computational requirements, and has enabled many large-scale deep learning efforts. Early approaches to distributed computation <span class="citation">[<a href="#ref-xE3EYmck">221</a>,<a href="#ref-1XcexUAV">222</a>]</span> were not suitable for deep learning <span class="citation">[<a href="#ref-17cBimWgp">223</a>]</span>, but significant progress has been made. There now exist a number of algorithms <span class="citation">[<a href="#ref-w6CoVmFK">204</a>,<a href="#ref-17cBimWgp">223</a>,<a href="#ref-HIiQN4bd">224</a>]</span>, tools <span class="citation">[<a href="#ref-rmJZ2Aui">225</a>–<a href="#ref-Gp4OR9Lf">227</a>]</span>, and high-level libraries <span class="citation">[<a href="#ref-FwEK0msb">228</a>,<a href="#ref-y9IoEy4r">229</a>]</span> for deep learning in a distributed environment, and it is possible to train very complex networks with limited infrastructure <span class="citation">[<a href="#ref-4MZ2tmZ8">230</a>]</span>. Besides handling very large networks, distributed or parallelized approaches offer other advantages, such as improved ensembling <span class="citation">[<a href="#ref-JUF9VoRD">231</a>]</span> or accelerated hyperparameter optimization <span class="citation">[<a href="#ref-wz83yfHF">232</a>,<a href="#ref-Wsa952Ax">233</a>]</span>.</p>
-<p>Cloud computing, which has already seen adoption in genomics <span class="citation">[<a href="#ref-B6g0qKf4">234</a>]</span>, could facilitate easier sharing of the large datasets common to biology <span class="citation">[<a href="#ref-1E7bFCRV4">235</a>,<a href="#ref-q0SsFrZd">236</a>]</span>, and may be key to scaling deep learning. Cloud computing affords researchers significant flexibility, and enables the use of specialized hardware (e.g., FPGAs, ASICs, GPUs) without significant investment. With such flexibility, it could be easier to address the different challenges associated with the multitudinous layers and architectures available <span class="citation">[<a href="#ref-ZSVsnPVO">237</a>]</span>. Though many are reluctant to store sensitive data (e.g., patient electronic health records) in the cloud, secure/regulation-compliant cloud services do exist <span class="citation">[<a href="#ref-ObFN78yp">238</a>]</span>.</p>
+<p>Many have sought to curb the costs of deep learning, with methods ranging from the very applied (e.g., reduced numerical precision <span class="citation">[<a href="#ref-CKcJuj03">218</a>–<a href="#ref-1GUizyE8e">221</a>]</span>) to the exotic and theoretic (e.g., training small networks to mimic large networks and ensembles <span class="citation">[<a href="#ref-1AhGoHZP9">222</a>,<a href="#ref-1CRF3gAV">223</a>]</span>). The largest gains in efficiency have come from computation with graphics processing units (GPUs) <span class="citation">[<a href="#ref-BQS8ClV0">6</a>,<a href="#ref-F3e4wfzQ">224</a>–<a href="#ref-1FocAi7N0">228</a>]</span>, which excel at the matrix and vector operations so central to deep learning. The massively parallel nature of GPUs allows additional optimizations, such as accelerated mini-batch gradient descent <span class="citation">[<a href="#ref-NSgduYNT">225</a>,<a href="#ref-IULiPa6L">226</a>,<a href="#ref-aClNvbyM">229</a>,<a href="#ref-fNkl8HFz">230</a>]</span>. However, GPUs also have a limited quantity of memory, making it difficult to implement networks of significant size and complexity on a single GPU or machine <span class="citation">[<a href="#ref-F3e4wfzQ">224</a>,<a href="#ref-CCS5KSIM">231</a>]</span>. This restriction has sometimes forced computational biologists to use workarounds or limit the size of an analysis. For example, Chen et al. <span class="citation">[<a href="#ref-12QQw9p7v">87</a>]</span> aimed to infer the expression level of all genes with a single neural network, but due to memory restrictions they randomly partitioned genes into two halves and analyzed each separately. In other cases, researchers limited the size of their neural network <span class="citation">[<a href="#ref-W3grN7jy">19</a>,<a href="#ref-2dU8f4XJ">208</a>]</span>. Some have also chosen to use slower CPU implementations rather than sacrifice network size or performance <span class="citation">[<a href="#ref-x0M6vals">232</a>]</span>.</p>
+<p>Steady improvements in GPU hardware may alleviate this issue somewhat, but it is not clear whether they can occur quickly enough to keep up with the growing amount of available biological data or increasing network sizes. Much has been done to minimize the memory requirements of neural networks <span class="citation">[<a href="#ref-CKcJuj03">218</a>–<a href="#ref-1AhGoHZP9">222</a>,<a href="#ref-YwdqeYZi">233</a>,<a href="#ref-15lYGmZpY">234</a>]</span>, but there is also growing interest in specialized hardware, such as field-programmable gate arrays (FPGAs) <span class="citation">[<a href="#ref-1FocAi7N0">228</a>,<a href="#ref-9NKsJjSw">235</a>]</span> and application-specific integrated circuits (ASICs). Specialized hardware promises improvements in deep learning at reduced time, energy, and memory <span class="citation">[<a href="#ref-1FocAi7N0">228</a>]</span>. Logically, there is less software for highly specialized hardware <span class="citation">[<a href="#ref-9NKsJjSw">235</a>]</span>, and it could be a difficult investment for those not solely interested in deep learning. However, it is likely that such options will find increased support as they become a more popular platform for deep learning and general computation.</p>
+<p>Distributed computing is a general solution to intense computational requirements, and has enabled many large-scale deep learning efforts. Early approaches to distributed computation <span class="citation">[<a href="#ref-xE3EYmck">236</a>,<a href="#ref-1XcexUAV">237</a>]</span> were not suitable for deep learning <span class="citation">[<a href="#ref-17cBimWgp">238</a>]</span>, but significant progress has been made. There now exist a number of algorithms <span class="citation">[<a href="#ref-w6CoVmFK">220</a>,<a href="#ref-17cBimWgp">238</a>,<a href="#ref-HIiQN4bd">239</a>]</span>, tools <span class="citation">[<a href="#ref-rmJZ2Aui">240</a>–<a href="#ref-Gp4OR9Lf">242</a>]</span>, and high-level libraries <span class="citation">[<a href="#ref-FwEK0msb">243</a>,<a href="#ref-y9IoEy4r">244</a>]</span> for deep learning in a distributed environment, and it is possible to train very complex networks with limited infrastructure <span class="citation">[<a href="#ref-4MZ2tmZ8">245</a>]</span>. Besides handling very large networks, distributed or parallelized approaches offer other advantages, such as improved ensembling <span class="citation">[<a href="#ref-JUF9VoRD">246</a>]</span> or accelerated hyperparameter optimization <span class="citation">[<a href="#ref-wz83yfHF">247</a>,<a href="#ref-Wsa952Ax">248</a>]</span>.</p>
+<p>Cloud computing, which has already seen adoption in genomics <span class="citation">[<a href="#ref-B6g0qKf4">249</a>]</span>, could facilitate easier sharing of the large datasets common to biology <span class="citation">[<a href="#ref-1E7bFCRV4">250</a>,<a href="#ref-q0SsFrZd">251</a>]</span>, and may be key to scaling deep learning. Cloud computing affords researchers significant flexibility, and enables the use of specialized hardware (e.g., FPGAs, ASICs, GPUs) without significant investment. With such flexibility, it could be easier to address the different challenges associated with the multitudinous layers and architectures available <span class="citation">[<a href="#ref-ZSVsnPVO">252</a>]</span>. Though many are reluctant to store sensitive data (e.g., patient electronic health records) in the cloud, secure/regulation-compliant cloud services do exist <span class="citation">[<a href="#ref-ObFN78yp">253</a>]</span>.</p>
 <p><em>TODO: Write the transition once more of the Discussion section has been fleshed out.</em></p>
 <h3 id="code-data-and-model-sharing">Code, data, and model sharing</h3>
 <p><em>Reproducibiliy is important for science to progress. In the context of deep learning applied to advance human healthcare, does reproducibility have different requirements or alternative connotations? With vast hyperparameter spaces, massively heterogeneous and noisy biological data sets, and black box interpretability problems, how can we best ensure reproducible models? What might a clinician, or policy maker, need to see in a deep model in order to influence healthcare decisions? Or, is deep learning a hypothesis generation machine that requires manual validation? DeepChem and DragoNN are worth discussing here.</em></p>
@@ -776,149 +775,194 @@
 <div id="ref-mo3GQwJj">
 <p>190. Artemov AV, Putin E, Vanhaelen Q, Aliper A, Ozerov IV, Zhavoronkov A. 2016 Integrated deep learned transcriptomic and structure-based predictor of clinical trials outcomes. (doi:<a href="https://doi.org/10.1101/095653">10.1101/095653</a>)</p>
 </div>
+<div id="ref-1DTUK3YyI">
+<p>191. Pérez-Sianes J, Pérez-Sánchez H, Díaz F. 2016 Virtual Screening: A Challenge for Deep Learning. In <em>Advances in Intelligent Systems and Computing</em>, pp. 13–22. Springer International Publishing. (doi:<a href="https://doi.org/10.1007/978-3-319-40126-3_2">10.1007/978-3-319-40126-3_2</a>)</p>
+</div>
 <div id="ref-cjj5vT3H">
-<p>191. Swamidass SJ, Azencott C-A, Lin T-W, Gramajo H, Tsai S-C, Baldi P. 2009 Influence Relevance Voting: An Accurate And Interpretable Virtual High Throughput Screening Method. <em>Journal of Chemical Information and Modeling</em> <strong>49</strong>, 756–766. (doi:<a href="https://doi.org/10.1021/ci8004379">10.1021/ci8004379</a>)</p>
+<p>192. Swamidass SJ, Azencott C-A, Lin T-W, Gramajo H, Tsai S-C, Baldi P. 2009 Influence Relevance Voting: An Accurate And Interpretable Virtual High Throughput Screening Method. <em>Journal of Chemical Information and Modeling</em> <strong>49</strong>, 756–766. (doi:<a href="https://doi.org/10.1021/ci8004379">10.1021/ci8004379</a>)</p>
+</div>
+<div id="ref-17eGl2pn9">
+<p>193. Todeschini R, Consonni V, editors. 2009 <em>Molecular Descriptors for Chemoinformatics</em>. Wiley-VCH Verlag GmbH &amp; Co. KGaA. (doi:<a href="https://doi.org/10.1002/9783527628766">10.1002/9783527628766</a>)</p>
+</div>
+<div id="ref-xPkT1z7D">
+<p>194. Baskin II, Winkler D, Tetko IV. 2016 A renaissance of neural networks in drug discovery. <em>Expert Opinion on Drug Discovery</em> <strong>11</strong>, 785–795. (doi:<a href="https://doi.org/10.1080/17460441.2016.1201262">10.1080/17460441.2016.1201262</a>)</p>
+</div>
+<div id="ref-1Dzz0P0qr">
+<p>195. Dahl GE, Jaitly N, Salakhutdinov R. 2014 Multi-task neural networks for qsar predictions. </p>
+</div>
+<div id="ref-xOaTIeBY">
+<p>196. Ma J, Sheridan RP, Liaw A, Dahl GE, Svetnik V. 2015 Deep Neural Nets as a Method for Quantitative Structure–Activity Relationships. <em>Journal of Chemical Information and Modeling</em> <strong>55</strong>, 263–274. (doi:<a href="https://doi.org/10.1021/ci500747n">10.1021/ci500747n</a>)</p>
+</div>
+<div id="ref-F8fP2vAg">
+<p>197. In press. See <a href="http://www.bioinf.at/publications/2014/NIPS2014a.pdf" class="uri">http://www.bioinf.at/publications/2014/NIPS2014a.pdf</a>.</p>
+</div>
+<div id="ref-yAoN5gTU">
+<p>198. Ramsundar B, Kearnes S, Riley P, Webster D, Konerding D, Pande V. 2015 Massively multitask networks for drug discovery. </p>
+</div>
+<div id="ref-Y1D0SZrO">
+<p>199. Mayr A, Klambauer G, Unterthiner T, Hochreiter S. 2016 DeepTox: Toxicity Prediction using Deep Learning. <em>Frontiers in Environmental Science</em> <strong>3</strong>. (doi:<a href="https://doi.org/10.3389/fenvs.2015.00080">10.3389/fenvs.2015.00080</a>)</p>
 </div>
 <div id="ref-uP7SgBVd">
-<p>192. Kearnes S, Goldman B, Pande V. 2016 Modeling industrial admet data with multitask networks. </p>
+<p>200. Kearnes S, Goldman B, Pande V. 2016 Modeling industrial admet data with multitask networks. </p>
 </div>
-<div id="ref-HRoooKGh">
-<p>193. Altae-Tran H, Ramsundar B, Pappu AS, Pande V. 2016 Low data drug discovery with one-shot learning. </p>
+<div id="ref-B4cL1o2P">
+<p>201. Subramanian G, Ramsundar B, Pande V, Denny RA. 2016 Computational Modeling of β-Secretase 1 (BACE-1) Inhibitors Using Ligand Based Approaches. <em>Journal of Chemical Information and Modeling</em> <strong>56</strong>, 1936–1949. (doi:<a href="https://doi.org/10.1021/acs.jcim.6b00290">10.1021/acs.jcim.6b00290</a>)</p>
 </div>
-<div id="ref-bNBiIiTt">
-<p>194. Ragoza M, Hochuli J, Idrobo E, Sunseri J, Koes DR. 2016 Protein-ligand scoring with convolutional neural networks. </p>
+<div id="ref-1E0x7QgLP">
+<p>202. Lusci A, Fooshee D, Browning M, Swamidass J, Baldi P. 2015 Accurate and efficient target prediction using a potency-sensitive influence-relevance voter. <em>Journal of Cheminformatics</em> <strong>7</strong>. (doi:<a href="https://doi.org/10.1186/s13321-015-0110-6">10.1186/s13321-015-0110-6</a>)</p>
 </div>
-<div id="ref-QwXSJhr0">
-<p>195. Ribeiro MT, Singh S, Guestrin C. 2016 ‘Why should i trust you?’: Explaining the predictions of any classifier. </p>
+<div id="ref-QnZ7V9Rd">
+<p>203. Rogers D, Hahn M. 2010 Extended-Connectivity Fingerprints. <em>Journal of Chemical Information and Modeling</em> <strong>50</strong>, 742–754. (doi:<a href="https://doi.org/10.1021/ci100050t">10.1021/ci100050t</a>)</p>
 </div>
-<div id="ref-9SnNyc8Y">
-<p>196. Chryssolouris G, Lee M, Ramsey A. 1996 Confidence interval prediction for neural network models. <em>IEEE Transactions on Neural Networks</em> <strong>7</strong>, 229–232. (doi:<a href="https://doi.org/10.1109/72.478409">10.1109/72.478409</a>)</p>
+<div id="ref-Oe573FaL">
+<p>204. In press. See <a href="http://papers.nips.cc/paper/5954-convolutional-networks-on-graphs-for-learning-molecular-fingerprints" class="uri">http://papers.nips.cc/paper/5954-convolutional-networks-on-graphs-for-learning-molecular-fingerprints</a>.</p>
 </div>
-<div id="ref-1AkF8Wsv7">
-<p>197. Nguyen A, Yosinski J, Clune J. 2014 Deep neural networks are easily fooled: High confidence predictions for unrecognizable images. </p>
+<div id="ref-17Wih4Hd5">
+<p>205. Lusci A, Pollastri G, Baldi P. 2013 Deep Architectures and Deep Learning in Chemoinformatics: The Prediction of Aqueous Solubility for Drug-Like Molecules. <em>Journal of Chemical Information and Modeling</em> <strong>53</strong>, 1563–1575. (doi:<a href="https://doi.org/10.1021/ci400187y">10.1021/ci400187y</a>)</p>
 </div>
-<div id="ref-y4t9EzPn">
-<p>198. Fong R, Vedaldi A. 2017 Interpretable explanations of black boxes by meaningful perturbation. </p>
+<div id="ref-145os4Y6t">
+<p>206. Kearnes S, McCloskey K, Berndl M, Pande V, Riley P. 2016 Molecular graph convolutions: moving beyond fingerprints. <em>Journal of Computer-Aided Molecular Design</em> <strong>30</strong>, 595–608. (doi:<a href="https://doi.org/10.1007/s10822-016-9938-8">10.1007/s10822-016-9938-8</a>)</p>
 </div>
-<div id="ref-UcRbawKo">
-<p>199. Choi E, Bahadori MT, Kulas JA, Schuetz A, Stewart WF, Sun J. 2016 RETAIN: An interpretable predictive model for healthcare using reverse time attention mechanism. </p>
-</div>
-<div id="ref-10nDTiETi">
-<p>200. Choi E, Bahadori MT, Song L, Stewart WF, Sun J. 2016 GRAM: Graph-based attention model for healthcare representation learning. </p>
-</div>
-<div id="ref-14DAmZTDg">
-<p>201. Che Z, Purushotham S, Khemani R, Liu Y. 2015 Distilling knowledge from deep networks with applications to healthcare domain. </p>
-</div>
-<div id="ref-CKcJuj03">
-<p>202. Gupta S, Agrawal A, Gopalakrishnan K, Narayanan P. 2015 Deep learning with limited numerical precision. </p>
-</div>
-<div id="ref-1G3owNNps">
-<p>203. Courbariaux M, Bengio Y, David J-P. 2014 Training deep neural networks with low precision multiplications. </p>
-</div>
-<div id="ref-w6CoVmFK">
-<p>204. Sa CD, Zhang C, Olukotun K, Ré C. 2015 Taming the wild: A unified analysis of hogwild!-style algorithms. </p>
-</div>
-<div id="ref-1GUizyE8e">
-<p>205. Hubara I, Courbariaux M, Soudry D, El-Yaniv R, Bengio Y. 2016 Quantized neural networks: Training neural networks with low precision weights and activations. </p>
-</div>
-<div id="ref-1AhGoHZP9">
-<p>206. Ba LJ, Caruana R. 2013 Do deep nets really need to be deep? </p>
-</div>
-<div id="ref-1CRF3gAV">
-<p>207. Hinton G, Vinyals O, Dean J. 2015 Distilling the knowledge in a neural network. </p>
-</div>
-<div id="ref-F3e4wfzQ">
-<p>208. Raina R, Madhavan A, Ng AY. 2009 Large-scale deep unsupervised learning using graphics processors. In <em>Proceedings of the 26th Annual International Conference on Machine Learning - ICML ’09</em>, ACM Press. (doi:<a href="https://doi.org/10.1145/1553374.1553486">10.1145/1553374.1553486</a>)</p>
-</div>
-<div id="ref-NSgduYNT">
-<p>209. In press. See <a href="https://research.google.com/pubs/pub37631.html" class="uri">https://research.google.com/pubs/pub37631.html</a>.</p>
-</div>
-<div id="ref-IULiPa6L">
-<p>210. Seide F, Fu H, Droppo J, Li G, Yu D. 2014 On parallelizability of stochastic gradient descent for speech DNNS. In <em>2014 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)</em>, IEEE. (doi:<a href="https://doi.org/10.1109/icassp.2014.6853593">10.1109/icassp.2014.6853593</a>)</p>
-</div>
-<div id="ref-13KjSCKB2">
-<p>211. Hadjis S, Abuzaid F, Zhang C, Ré C. 2015 Caffe con troll: Shallow ideas to speed up deep learning. </p>
-</div>
-<div id="ref-1FocAi7N0">
-<p>212. Edwards C. 2015 Growing pains for deep learning. <em>Communications of the ACM</em> <strong>58</strong>, 14–16. (doi:<a href="https://doi.org/10.1145/2771283">10.1145/2771283</a>)</p>
-</div>
-<div id="ref-aClNvbyM">
-<p>213. Su H, Chen H. 2015 Experiments on parallel training of deep neural network using model averaging. </p>
-</div>
-<div id="ref-fNkl8HFz">
-<p>214. Li M, Zhang T, Chen Y, Smola AJ. 2014 Efficient mini-batch training for stochastic optimization. In <em>Proceedings of the 20th ACM SIGKDD international conference on Knowledge discovery and data mining - KDD ’14</em>, ACM Press. (doi:<a href="https://doi.org/10.1145/2623330.2623612">10.1145/2623330.2623612</a>)</p>
-</div>
-<div id="ref-CCS5KSIM">
-<p>215. In press. See <a href="https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf" class="uri">https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf</a>.</p>
+<div id="ref-P4ixsM8i">
+<p>207. Altae-Tran H, Ramsundar B, Pappu AS, Pande V. 2017 Low Data Drug Discovery with One-Shot Learning. <em>ACS Central Science</em> (doi:<a href="https://doi.org/10.1021/acscentsci.6b00367">10.1021/acscentsci.6b00367</a>)</p>
 </div>
 <div id="ref-2dU8f4XJ">
-<p>216. Gómez-Bombarelli R, Duvenaud D, Hernández-Lobato JM, Aguilera-Iparraguirre J, Hirzel TD, Adams RP, Aspuru-Guzik A. 2016 Automatic chemical design using a data-driven continuous representation of molecules. </p>
+<p>208. Gómez-Bombarelli R, Duvenaud D, Hernández-Lobato JM, Aguilera-Iparraguirre J, Hirzel TD, Adams RP, Aspuru-Guzik A. 2016 Automatic chemical design using a data-driven continuous representation of molecules. </p>
+</div>
+<div id="ref-Ytvk62dX">
+<p>209. In press. See <a href="https://github.com/deepchem/deepchem" class="uri">https://github.com/deepchem/deepchem</a>.</p>
+</div>
+<div id="ref-16OPHvAij">
+<p>210. Wu Z, Ramsundar B, Feinberg EN, Gomes J, Geniesse C, Pappu AS, Leswing K, Pande V. 2017 MoleculeNet: A benchmark for molecular machine learning. </p>
+</div>
+<div id="ref-QwXSJhr0">
+<p>211. Ribeiro MT, Singh S, Guestrin C. 2016 ‘Why should i trust you?’: Explaining the predictions of any classifier. </p>
+</div>
+<div id="ref-9SnNyc8Y">
+<p>212. Chryssolouris G, Lee M, Ramsey A. 1996 Confidence interval prediction for neural network models. <em>IEEE Transactions on Neural Networks</em> <strong>7</strong>, 229–232. (doi:<a href="https://doi.org/10.1109/72.478409">10.1109/72.478409</a>)</p>
+</div>
+<div id="ref-1AkF8Wsv7">
+<p>213. Nguyen A, Yosinski J, Clune J. 2014 Deep neural networks are easily fooled: High confidence predictions for unrecognizable images. </p>
+</div>
+<div id="ref-y4t9EzPn">
+<p>214. Fong R, Vedaldi A. 2017 Interpretable explanations of black boxes by meaningful perturbation. </p>
+</div>
+<div id="ref-UcRbawKo">
+<p>215. Choi E, Bahadori MT, Kulas JA, Schuetz A, Stewart WF, Sun J. 2016 RETAIN: An interpretable predictive model for healthcare using reverse time attention mechanism. </p>
+</div>
+<div id="ref-10nDTiETi">
+<p>216. Choi E, Bahadori MT, Song L, Stewart WF, Sun J. 2016 GRAM: Graph-based attention model for healthcare representation learning. </p>
+</div>
+<div id="ref-14DAmZTDg">
+<p>217. Che Z, Purushotham S, Khemani R, Liu Y. 2015 Distilling knowledge from deep networks with applications to healthcare domain. </p>
+</div>
+<div id="ref-CKcJuj03">
+<p>218. Gupta S, Agrawal A, Gopalakrishnan K, Narayanan P. 2015 Deep learning with limited numerical precision. </p>
+</div>
+<div id="ref-1G3owNNps">
+<p>219. Courbariaux M, Bengio Y, David J-P. 2014 Training deep neural networks with low precision multiplications. </p>
+</div>
+<div id="ref-w6CoVmFK">
+<p>220. Sa CD, Zhang C, Olukotun K, Ré C. 2015 Taming the wild: A unified analysis of hogwild!-style algorithms. </p>
+</div>
+<div id="ref-1GUizyE8e">
+<p>221. Hubara I, Courbariaux M, Soudry D, El-Yaniv R, Bengio Y. 2016 Quantized neural networks: Training neural networks with low precision weights and activations. </p>
+</div>
+<div id="ref-1AhGoHZP9">
+<p>222. Ba LJ, Caruana R. 2013 Do deep nets really need to be deep? </p>
+</div>
+<div id="ref-1CRF3gAV">
+<p>223. Hinton G, Vinyals O, Dean J. 2015 Distilling the knowledge in a neural network. </p>
+</div>
+<div id="ref-F3e4wfzQ">
+<p>224. Raina R, Madhavan A, Ng AY. 2009 Large-scale deep unsupervised learning using graphics processors. In <em>Proceedings of the 26th Annual International Conference on Machine Learning - ICML ’09</em>, ACM Press. (doi:<a href="https://doi.org/10.1145/1553374.1553486">10.1145/1553374.1553486</a>)</p>
+</div>
+<div id="ref-NSgduYNT">
+<p>225. In press. See <a href="https://research.google.com/pubs/pub37631.html" class="uri">https://research.google.com/pubs/pub37631.html</a>.</p>
+</div>
+<div id="ref-IULiPa6L">
+<p>226. Seide F, Fu H, Droppo J, Li G, Yu D. 2014 On parallelizability of stochastic gradient descent for speech DNNS. In <em>2014 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)</em>, IEEE. (doi:<a href="https://doi.org/10.1109/icassp.2014.6853593">10.1109/icassp.2014.6853593</a>)</p>
+</div>
+<div id="ref-13KjSCKB2">
+<p>227. Hadjis S, Abuzaid F, Zhang C, Ré C. 2015 Caffe con troll: Shallow ideas to speed up deep learning. </p>
+</div>
+<div id="ref-1FocAi7N0">
+<p>228. Edwards C. 2015 Growing pains for deep learning. <em>Communications of the ACM</em> <strong>58</strong>, 14–16. (doi:<a href="https://doi.org/10.1145/2771283">10.1145/2771283</a>)</p>
+</div>
+<div id="ref-aClNvbyM">
+<p>229. Su H, Chen H. 2015 Experiments on parallel training of deep neural network using model averaging. </p>
+</div>
+<div id="ref-fNkl8HFz">
+<p>230. Li M, Zhang T, Chen Y, Smola AJ. 2014 Efficient mini-batch training for stochastic optimization. In <em>Proceedings of the 20th ACM SIGKDD international conference on Knowledge discovery and data mining - KDD ’14</em>, ACM Press. (doi:<a href="https://doi.org/10.1145/2623330.2623612">10.1145/2623330.2623612</a>)</p>
+</div>
+<div id="ref-CCS5KSIM">
+<p>231. In press. See <a href="https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf" class="uri">https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf</a>.</p>
 </div>
 <div id="ref-x0M6vals">
-<p>217. Hamanaka M, Taneishi K, Iwata H, Ye J, Pei J, Hou J, Okuno Y. 2016 CGBVS-DNN: Prediction of Compound-protein Interactions Based on Deep Learning. <em>Molecular Informatics</em> <strong>36</strong>, 1600045. (doi:<a href="https://doi.org/10.1002/minf.201600045">10.1002/minf.201600045</a>)</p>
+<p>232. Hamanaka M, Taneishi K, Iwata H, Ye J, Pei J, Hou J, Okuno Y. 2016 CGBVS-DNN: Prediction of Compound-protein Interactions Based on Deep Learning. <em>Molecular Informatics</em> <strong>36</strong>, 1600045. (doi:<a href="https://doi.org/10.1002/minf.201600045">10.1002/minf.201600045</a>)</p>
 </div>
 <div id="ref-YwdqeYZi">
-<p>218. Chetlur S, Woolley C, Vandermersch P, Cohen J, Tran J, Catanzaro B, Shelhamer E. 2014 CuDNN: Efficient primitives for deep learning. </p>
+<p>233. Chetlur S, Woolley C, Vandermersch P, Cohen J, Tran J, Catanzaro B, Shelhamer E. 2014 CuDNN: Efficient primitives for deep learning. </p>
 </div>
 <div id="ref-15lYGmZpY">
-<p>219. Chen W, Wilson JT, Tyree S, Weinberger KQ, Chen Y. 2015 Compressing neural networks with the hashing trick. </p>
+<p>234. Chen W, Wilson JT, Tyree S, Weinberger KQ, Chen Y. 2015 Compressing neural networks with the hashing trick. </p>
 </div>
 <div id="ref-9NKsJjSw">
-<p>220. Lacey G, Taylor GW, Areibi S. 2016 Deep learning on fpgas: Past, present, and future. </p>
+<p>235. Lacey G, Taylor GW, Areibi S. 2016 Deep learning on fpgas: Past, present, and future. </p>
 </div>
 <div id="ref-xE3EYmck">
-<p>221. Dean J, Ghemawat S. 2008 MapReduce. <em>Communications of the ACM</em> <strong>51</strong>, 107. (doi:<a href="https://doi.org/10.1145/1327452.1327492">10.1145/1327452.1327492</a>)</p>
+<p>236. Dean J, Ghemawat S. 2008 MapReduce. <em>Communications of the ACM</em> <strong>51</strong>, 107. (doi:<a href="https://doi.org/10.1145/1327452.1327492">10.1145/1327452.1327492</a>)</p>
 </div>
 <div id="ref-1XcexUAV">
-<p>222. Low Y, Bickson D, Gonzalez J, Guestrin C, Kyrola A, Hellerstein JM. 2012 Distributed GraphLab. <em>Proceedings of the VLDB Endowment</em> <strong>5</strong>, 716–727. (doi:<a href="https://doi.org/10.14778/2212351.2212354">10.14778/2212351.2212354</a>)</p>
+<p>237. Low Y, Bickson D, Gonzalez J, Guestrin C, Kyrola A, Hellerstein JM. 2012 Distributed GraphLab. <em>Proceedings of the VLDB Endowment</em> <strong>5</strong>, 716–727. (doi:<a href="https://doi.org/10.14778/2212351.2212354">10.14778/2212351.2212354</a>)</p>
 </div>
 <div id="ref-17cBimWgp">
-<p>223. In press. See <a href="http://research.google.com/archive/large_deep_networks_nips2012.html" class="uri">http://research.google.com/archive/large_deep_networks_nips2012.html</a>.</p>
+<p>238. In press. See <a href="http://research.google.com/archive/large_deep_networks_nips2012.html" class="uri">http://research.google.com/archive/large_deep_networks_nips2012.html</a>.</p>
 </div>
 <div id="ref-HIiQN4bd">
-<p>224. In press. See <a href="https://papers.nips.cc/paper/5717-taming-the-wild-a-unified-analysis-of-hogwild-style-algorithms.pdf" class="uri">https://papers.nips.cc/paper/5717-taming-the-wild-a-unified-analysis-of-hogwild-style-algorithms.pdf</a>.</p>
+<p>239. In press. See <a href="https://papers.nips.cc/paper/5717-taming-the-wild-a-unified-analysis-of-hogwild-style-algorithms.pdf" class="uri">https://papers.nips.cc/paper/5717-taming-the-wild-a-unified-analysis-of-hogwild-style-algorithms.pdf</a>.</p>
 </div>
 <div id="ref-rmJZ2Aui">
-<p>225. Moritz P, Nishihara R, Stoica I, Jordan MI. 2015 SparkNet: Training deep networks in spark. </p>
+<p>240. Moritz P, Nishihara R, Stoica I, Jordan MI. 2015 SparkNet: Training deep networks in spark. </p>
 </div>
 <div id="ref-rZnxDitd">
-<p>226. Meng X <em>et al.</em> 2015 MLlib: Machine learning in apache spark. </p>
+<p>241. Meng X <em>et al.</em> 2015 MLlib: Machine learning in apache spark. </p>
 </div>
 <div id="ref-Gp4OR9Lf">
-<p>227. In press. See <a href="http://download.tensorflow.org/paper/whitepaper2015.pdf" class="uri">http://download.tensorflow.org/paper/whitepaper2015.pdf</a>.</p>
+<p>242. In press. See <a href="http://download.tensorflow.org/paper/whitepaper2015.pdf" class="uri">http://download.tensorflow.org/paper/whitepaper2015.pdf</a>.</p>
 </div>
 <div id="ref-FwEK0msb">
-<p>228. In press. See <a href="https://github.com/fchollet/keras" class="uri">https://github.com/fchollet/keras</a>.</p>
+<p>243. In press. See <a href="https://github.com/fchollet/keras" class="uri">https://github.com/fchollet/keras</a>.</p>
 </div>
 <div id="ref-y9IoEy4r">
-<p>229. In press. See <a href="https://github.com/maxpumperla/elephas" class="uri">https://github.com/maxpumperla/elephas</a>.</p>
+<p>244. In press. See <a href="https://github.com/maxpumperla/elephas" class="uri">https://github.com/maxpumperla/elephas</a>.</p>
 </div>
 <div id="ref-4MZ2tmZ8">
-<p>230. In press. See <a href="http://www.jmlr.org/proceedings/papers/v28/coates13.html" class="uri">http://www.jmlr.org/proceedings/papers/v28/coates13.html</a>.</p>
+<p>245. In press. See <a href="http://www.jmlr.org/proceedings/papers/v28/coates13.html" class="uri">http://www.jmlr.org/proceedings/papers/v28/coates13.html</a>.</p>
 </div>
 <div id="ref-JUF9VoRD">
-<p>231. Sun S, Chen W, Liu T-Y. 2016 Ensemble-compression: A new method for parallel training of deep neural networks. </p>
+<p>246. Sun S, Chen W, Liu T-Y. 2016 Ensemble-compression: A new method for parallel training of deep neural networks. </p>
 </div>
 <div id="ref-wz83yfHF">
-<p>232. In press. See <a href="https://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimization.pdf" class="uri">https://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimization.pdf</a>.</p>
+<p>247. In press. See <a href="https://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimization.pdf" class="uri">https://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimization.pdf</a>.</p>
 </div>
 <div id="ref-Wsa952Ax">
-<p>233. In press. See <a href="http://dl.acm.org/citation.cfm?id=2188395" class="uri">http://dl.acm.org/citation.cfm?id=2188395</a>.</p>
+<p>248. In press. See <a href="http://dl.acm.org/citation.cfm?id=2188395" class="uri">http://dl.acm.org/citation.cfm?id=2188395</a>.</p>
 </div>
 <div id="ref-B6g0qKf4">
-<p>234. Schatz MC, Langmead B, Salzberg SL. 2010 Cloud computing and the DNA data race. <em>Nature Biotechnology</em> <strong>28</strong>, 691–693. (doi:<a href="https://doi.org/10.1038/nbt0710-691">10.1038/nbt0710-691</a>)</p>
+<p>249. Schatz MC, Langmead B, Salzberg SL. 2010 Cloud computing and the DNA data race. <em>Nature Biotechnology</em> <strong>28</strong>, 691–693. (doi:<a href="https://doi.org/10.1038/nbt0710-691">10.1038/nbt0710-691</a>)</p>
 </div>
 <div id="ref-1E7bFCRV4">
-<p>235. Muir P <em>et al.</em> 2016 The real cost of sequencing: scaling computation to keep pace with data generation. <em>Genome Biology</em> <strong>17</strong>. (doi:<a href="https://doi.org/10.1186/s13059-016-0917-0">10.1186/s13059-016-0917-0</a>)</p>
+<p>250. Muir P <em>et al.</em> 2016 The real cost of sequencing: scaling computation to keep pace with data generation. <em>Genome Biology</em> <strong>17</strong>. (doi:<a href="https://doi.org/10.1186/s13059-016-0917-0">10.1186/s13059-016-0917-0</a>)</p>
 </div>
 <div id="ref-q0SsFrZd">
-<p>236. Stein LD. 2010 The case for cloud computing in genome informatics. <em>Genome Biology</em> <strong>11</strong>, 207. (doi:<a href="https://doi.org/10.1186/gb-2010-11-5-207">10.1186/gb-2010-11-5-207</a>)</p>
+<p>251. Stein LD. 2010 The case for cloud computing in genome informatics. <em>Genome Biology</em> <strong>11</strong>, 207. (doi:<a href="https://doi.org/10.1186/gb-2010-11-5-207">10.1186/gb-2010-11-5-207</a>)</p>
 </div>
 <div id="ref-ZSVsnPVO">
-<p>237. Krizhevsky A. 2014 One weird trick for parallelizing convolutional neural networks. </p>
+<p>252. Krizhevsky A. 2014 One weird trick for parallelizing convolutional neural networks. </p>
 </div>
 <div id="ref-ObFN78yp">
-<p>238. Armbrust M <em>et al.</em> 2010 A view of cloud computing. <em>Communications of the ACM</em> <strong>53</strong>, 50. (doi:<a href="https://doi.org/10.1145/1721654.1721672">10.1145/1721654.1721672</a>)</p>
+<p>253. Armbrust M <em>et al.</em> 2010 A view of cloud computing. <em>Communications of the ACM</em> <strong>53</strong>, 50. (doi:<a href="https://doi.org/10.1145/1721654.1721672">10.1145/1721654.1721672</a>)</p>
 </div>
 </div>
 </body>
