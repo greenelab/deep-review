@@ -64,19 +64,19 @@ are currently hampered by the difficulties of counter-factual inference.
 A clinical task to deep learning which has been more successfully applied is
 the assignment of patients to clinical trials. Ithapu et al
 [@tag:Ithapu2015_efficient] used a randomized denoising autoenconder
- to learn a multimodal imaging marker that predicts future cognitive 
+ to learn a multimodal imaging marker that predicts future cognitive
  and neural decline from positron emission tomography (PET), amyloid
-florbetapir PET, and structural magnetic resonance imaging. 
+florbetapir PET, and structural magnetic resonance imaging.
 By accurately predicting which cases will progress to dementia, they
  were able to efficiently assign patients to a clinical trial and reduced
   the required sample sizes by a factor of five.  Similarly, Artemov et al
 [@tag:Artemov2016_clinical] applied deep learning to predict which
- clinical trials were likely to fail and which were likely to succeed. By 
- predicting the side effects and pathway activations of each drug, and 
- then translating these activations to a success proability, their deep 
- learning-based approach was able to significantly outperform a random 
- forest classifier trained on gene expression changes. These approaches 
- suggest promising directions to improve the efficiency of clinical trials 
+ clinical trials were likely to fail and which were likely to succeed. By
+ predicting the side effects and pathway activations of each drug, and
+ then translating these activations to a success proability, their deep
+ learning-based approach was able to significantly outperform a random
+ forest classifier trained on gene expression changes. These approaches
+ suggest promising directions to improve the efficiency of clinical trials
  and accelerate drug development.
 
 #### Challenges

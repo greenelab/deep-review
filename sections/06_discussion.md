@@ -38,12 +38,13 @@ models are not known, and it is unclear whether predictions from deep learning
 models are robust to sample noise. Toward quantifying the uncertainty of
 predictions, there has been a renewed interest in confidence intervals for
 deep neural networks. Early work from Chryssolouris et al
-[@tag:Chryssolouris1996_confidence] provided confidence intervals under the assumption of
-normally distributed error. However, Nguyen et al [@tag:Nguyen2014_adversarial]
-showed that the confidence of convolutional neural networks is not reliable; they
-can output confidence scores over 99.99% even for samples that are purely noise.
-Recently, Fong and Vedaldi [@tag:Fong2017_perturb] provided a framework for
-understanding black box algorithms by perturbing input data.
+[@tag:Chryssolouris1996_confidence] provided confidence intervals under the
+ assumption of normally distributed error. However, Nguyen et al
+ [@tag:Nguyen2014_adversarial] showed that the confidence of convolutional
+ neural networks is not reliable; they can output confidence scores over
+ 99.99% even for samples that are purely noise. Recently, Fong and Vedaldi
+ [@tag:Fong2017_perturb] provided a framework for understanding black box
+ algorithms by perturbing input data.
 
 For domain-specific models, we previously described approaches for the
 interpretation and visualization of neural networks that prediction
