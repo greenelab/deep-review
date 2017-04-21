@@ -171,37 +171,49 @@ restricted boltzman machines (RBM) to predict drug molecular targets
 [@1AU7wzPqa].
 
 
-## Does deep learning create a strategic inflection point in how we categorize individuals with respect to health and disease?
+## Deep learning and patient categorization
 
-*Focus for the purpose of this review - within a health care context.*
+In a health care setting, individuals are diagnosed with a disease or condition
+based on symptoms, the results of certain diagnostic tests, or other factors.
+Once diagnosed with a disease an individual might be assigned a stage based on
+another set of human-defined rules. While these rules are refined over time, the
+process is evolutionary rather than revolutionary.
 
-We currently categorize individuals using relatively *ad hoc* categories. These
-are divided, to an extent, by organ (e.g. cancers by tumor site), perhaps to an
-extent symptom, and to an extent by immediate cause. This system undergoes
-continual refinement (e.g. new subtypes of disease) as our understanding
-improves.
+We might imagine that deep learning or artificial intelligence methods could
+reinvent how individuals are categorized for health care. A deep neural network
+might identify entirely new categories of health or disease that are only
+present when data from multiple lab tests are integrated. As a potential
+example, consider the condition Latent Autoimmune Diabetes in Adults (LADA). The
+history of this disease classification is briefly reviewed in Stenström et
+al.[@WuOqsORY].
 
-*Would deep learning enable us to do this automatically in some principled way?
-Are there reasons to believe that this would be advantageous? Would it be
-positive to have disease categories changed by data, or would the changing
-definition (i.e. as more data are accumulated) actually be harmful? What
-impacts would this have on the training of physicians?*
+Imagine that a deep neural network operating in the early 1980s had access to
+electronic health records with comprehensive clinical tests. It might have
+identified a subgroup of individuals with blood glucose levels that indicated
+diabetes as well as autoantibodies, even though the individuals had never been
+diagnosed with type 1 diabetes - the autoimmune form of the disease that arises
+in young people. Such a neural network would be identifying patients with LADA.
+As no such computational approach existed, LADA was actually identified by Groop
+et al. [@ws1zvGoZ]. However, this represents a potential hope
+of this area. Perhaps deep neural networks, by reevaluating data without the
+context of our assumptions, can reveal novel classes of treatable conditions.
 
-*What are the major challenges in this space, and does deep learning enable us
-to tackle any of them? Are there example approaches whereby deep learning is
-already having a transformational impact? I (Casey) have added some sections
-below where I think we could contribute to the field with our discussion.*
+Alternatively, imagine that a deep neural network is provided with clinical test
+results gleaned from electronic health records. Because physicians may order
+certain tests based on the diagnosis that they suspect a patient has, a deep
+neural network may learn to "diagnose" patients simply based on the tests that
+are ordered. For some objective function this may offer good performance (i.e.
+predicting an ICD code), even though it does not provide insight into the
+underlying disease beyond physician activity. This challenge is not unique to
+deep learning approaches; however, it is important for practitioners to be aware
+of these challenges and the possibility in this domain of constructing highly
+predictive classifiers of questionable actual utility.
 
-### Major areas of existing contributions
-
-*There are a number of major challenges in this space. How do we get data
-together from multiple distinct systems? How do we find biologically meaningful
-patterns in that data? How do we store and compute on this data at scale? How
-do we share these data while respecting privacy? I've made a section for each
-of these. Feel free to add more. I see each section as something on the order
-of 1-2 paragraphs in our context.*
-
-#### Clinical care
+Our goal in this section is to assess the extent to which deep learning is
+already contributing to the discovery of novel categories. Where it isn't, we
+focus on barriers to achieving these goals. We also highlight approaches that
+researchers are taking to address challenges within the field, particularly with
+regards to data availability and labeling.
 
 #### Imaging applications in health care
 

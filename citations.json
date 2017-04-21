@@ -22380,5 +22380,266 @@
     "standard_citation": "arxiv:1511.02386",
     "bibtex": "@article{15lbUf0as,\n abstract = {Black box variational inference allows researchers to easily prototype and\nevaluate an array of models. Recent advances allow such algorithms to scale to\nhigh dimensions. However, a central question remains: How to specify an\nexpressive variational distribution that maintains efficient computation? To\naddress this, we develop hierarchical variational models (HVMs). HVMs augment a\nvariational approximation with a prior on its parameters, which allows it to\ncapture complex structure for both discrete and continuous latent variables.\nThe algorithm we develop is black box, can be used for any HVM, and has the\nsame computational efficiency as the original approximation. We study HVMs on a\nvariety of deep discrete latent variable models. HVMs generalize other\nexpressive variational distributions and maintains higher fidelity to the\nposterior.},\n archiveprefix = {arXiv},\n author = {Rajesh Ranganath and Dustin Tran and David M. Blei},\n eprint = {1511.02386v2},\n file = {1511.02386v2.pdf},\n link = {http://arxiv.org/abs/1511.02386v2},\n month = {Dec},\n primaryclass = {stat.ML},\n title = {Hierarchical Variational Models},\n year = {2015}\n}\n\n",
     "citation_id": "15lbUf0as"
+  },
+  "doi:10.2337/diab.35.2.237": {
+    "source": "doi",
+    "identifer": "10.2337/diab.35.2.237",
+    "standard_citation": "doi:10.2337/diab.35.2.237",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            6
+          ]
+        ],
+        "date-time": "2017-04-06T04:12:20Z",
+        "timestamp": 1491451940420
+      },
+      "reference-count": 0,
+      "publisher": "American Diabetes Association",
+      "issue": "2",
+      "content-domain": {
+        "domain": [
+          "diabetesjournals.org"
+        ],
+        "crossmark-restriction": true
+      },
+      "short-container-title": [
+        "Diabetes"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            1986,
+            2,
+            1
+          ]
+        ]
+      },
+      "DOI": "10.2337/diab.35.2.237",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2013,
+            9,
+            19
+          ]
+        ],
+        "date-time": "2013-09-19T17:16:02Z",
+        "timestamp": 1379610962000
+      },
+      "page": "237-241",
+      "update-policy": "http://dx.doi.org/10.2337/crossmarkpolicy",
+      "source": "Crossref",
+      "is-referenced-by-count": 48,
+      "title": "Islet Cell Antibodies Identify Latent Type I Diabetes in Patients Aged 35-75 Years at Diagnosis",
+      "prefix": "10.2337",
+      "volume": "35",
+      "author": [
+        {
+          "given": "L. C.",
+          "family": "Groop",
+          "affiliation": []
+        },
+        {
+          "given": "G. F.",
+          "family": "Bottazzo",
+          "affiliation": []
+        },
+        {
+          "given": "D.",
+          "family": "Doniach",
+          "affiliation": []
+        }
+      ],
+      "member": "1167",
+      "container-title": "Diabetes",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2016,
+            12,
+            23
+          ]
+        ],
+        "date-time": "2016-12-23T01:52:38Z",
+        "timestamp": 1482457958000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            1986,
+            2,
+            1
+          ]
+        ]
+      },
+      "references-count": 0,
+      "URL": "http://dx.doi.org/10.2337/diab.35.2.237",
+      "relation": {},
+      "issn-type": [
+        {
+          "value": "0012-1797",
+          "type": "print"
+        },
+        {
+          "value": "1939-327X",
+          "type": "electronic"
+        }
+      ],
+      "subject": [
+        "Internal Medicine",
+        "Endocrinology, Diabetes and Metabolism"
+      ],
+      "id": "ws1zvGoZ"
+    },
+    "citation_id": "ws1zvGoZ"
+  },
+  "doi:10.2337/diabetes.54.suppl_2.s68": {
+    "source": "doi",
+    "identifer": "10.2337/diabetes.54.suppl_2.s68",
+    "standard_citation": "doi:10.2337/diabetes.54.suppl_2.s68",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            2
+          ]
+        ],
+        "date-time": "2017-04-02T03:31:46Z",
+        "timestamp": 1491103906938
+      },
+      "reference-count": 46,
+      "publisher": "American Diabetes Association",
+      "issue": "Supplement 2",
+      "content-domain": {
+        "domain": [
+          "diabetesjournals.org"
+        ],
+        "crossmark-restriction": true
+      },
+      "short-container-title": [
+        "Diabetes"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2005,
+            12,
+            1
+          ]
+        ]
+      },
+      "DOI": "10.2337/diabetes.54.suppl_2.s68",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2007,
+            3,
+            6
+          ]
+        ],
+        "date-time": "2007-03-06T19:04:22Z",
+        "timestamp": 1173207862000
+      },
+      "page": "S68-S72",
+      "update-policy": "http://dx.doi.org/10.2337/crossmarkpolicy",
+      "source": "Crossref",
+      "is-referenced-by-count": 63,
+      "title": "Latent Autoimmune Diabetes in Adults: Definition, Prevalence,  -Cell Function, and Treatment",
+      "prefix": "10.2337",
+      "volume": "54",
+      "author": [
+        {
+          "given": "G.",
+          "family": "Stenstrom",
+          "affiliation": []
+        },
+        {
+          "given": "A.",
+          "family": "Gottsater",
+          "affiliation": []
+        },
+        {
+          "given": "E.",
+          "family": "Bakhtadze",
+          "affiliation": []
+        },
+        {
+          "given": "B.",
+          "family": "Berger",
+          "affiliation": []
+        },
+        {
+          "given": "G.",
+          "family": "Sundkvist",
+          "affiliation": []
+        }
+      ],
+      "member": "1167",
+      "published-online": {
+        "date-parts": [
+          [
+            2005,
+            11,
+            23
+          ]
+        ]
+      },
+      "container-title": "Diabetes",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2016,
+            12,
+            23
+          ]
+        ],
+        "date-time": "2016-12-23T02:35:26Z",
+        "timestamp": 1482460526000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2005,
+            11,
+            23
+          ]
+        ]
+      },
+      "references-count": 46,
+      "URL": "http://dx.doi.org/10.2337/diabetes.54.suppl_2.s68",
+      "relation": {},
+      "issn-type": [
+        {
+          "value": "0012-1797",
+          "type": "print"
+        },
+        {
+          "value": "1939-327X",
+          "type": "electronic"
+        }
+      ],
+      "subject": [
+        "Internal Medicine",
+        "Endocrinology, Diabetes and Metabolism"
+      ],
+      "id": "WuOqsORY"
+    },
+    "citation_id": "WuOqsORY"
   }
 }
