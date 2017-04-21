@@ -25,11 +25,45 @@ human-level performance is irrelevant.*
 
 ### Interpretation
 
-*Most of our examples pertain to the Study papers.  Does this discussion
-belong there or can we generalize it and keep it here?  Specific points would
-include the dangers of over-interpreting hidden units, pros/cons of specific
-techniques (see issues), and recommendations.  LIME and DeepLIFT are specific
-strategies.  Some other reviews have addressed this in part as well.*
+As the challenge of interpretability is common across many domains, there is
+significant interest in developing generic procedures for knowledge extraction
+from deep models. Ribeiro et al [@arxiv:1602.04938] focus on interpreting
+individual predictions rather than interpreting the model. By fitting simple
+linear models to mimic the predictions of the deep learning model in a small
+neighborhood of a data sample, they generated an interpretable model for each
+prediction. While this procedure can provide interpretable models for each
+sample, it is unclear whether these interpretable models are reliable.
+Theoretical guarantees on the curvature of the predictions of deep learning
+models are not known, and it is unclear whether predictions from deep learning
+models are robust to sample noise. Toward quantifying the uncertainty of
+predictions, there has been a renewed interest in confidence intervals for
+deep neural networks. Early work from Chryssolouris et al
+[@doi:10.1109/72.478409] provided confidence intervals under the assumption of
+normally distributed error. However, Nguyen et al [@arxiv:1412.1897v4] showed
+that the confidence of convolutional neural networks is not reliable; they can
+output confidence scores over 99.99% even for samples that are purely noise.
+Recently, Fong and Vedaldi [@arxiv:1704.03296] provided a framework for
+understanding black box algorithms by perturbing input data.
+
+For domain-specific models, we previously described approaches for the
+interpretation and visualization of neural networks that prediction
+transcription factor binding [@tag:Alipanahi2015_predicting
+@tag:Lanchantin2016_motif @tag:Shrikumar2016_blackbox]. Other studies have
+primarily focused on integrating attention mechanisms with the neural networks.
+Attention mechanisms dynamically weight the importance the neural network gives
+to each feature. By inspecting the attention weights for a particular sample, a
+practitioner can identify the important features for a particular prediction.
+Choi et al [@arxiv:1608.05745] inverted the typical architecture of recurrent
+neural networks to improve interpretability. In particular, they only used
+recurrent connections in the attention generating procedure, leaving the hidden
+state directly connected to the input variables. In the clinical domain, this
+model was able to produce accurate diagnoses in which the contribution of
+previous hospital visits could be directly interpreted. Choi et al
+[@arxiv:1611.07012] later extended this work to take into account the structure
+of disease ontologies and found that the concepts represented by the model were
+aligned with medical knowledge. Che et al [@arxiv:1512.03542] introduced a
+knowledge-distillation approach which used gradient boosted trees to learn
+interpretable healthcare features from trained deep models.
 
 ### Data limitations
 
