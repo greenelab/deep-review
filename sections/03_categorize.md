@@ -292,16 +292,6 @@ networks, which are challenging to interpret, must remain cognizant of this
 possibility and make every effort to prevent harm from discriminatory
 predictions.
 
-###### Data sharing and privacy?
-
-*This is clearly a big issue. We should at least mention it. Deep learning likes
-lots of data, and sharing restrictions don't allow that. Perhaps a paragraph on
-current best practices and how they relate to deep learning. A lack of data (due
-to privacy and sharing restrictions) may hamper deep learning's utility in this
-area in ways that it doesn't for image analysis, etc. Perhaps this will be the
-Achilles heal of deep learning in this area. A couple things to think about
-[@doi:10.1126/science.1229566 @doi:10.1016/j.cels.2016.04.013]*
-
 ###### Standardization/integration
 
 EHRs are designed and optimized primarily for patient care and billing purposes,
@@ -352,6 +342,14 @@ Short Term Memory Networks)[@arxiv:1602.00357].
 
 ###### Data sharing and privacy
 
+*This is clearly a big issue. We should at least mention it. Deep learning likes
+lots of data, and sharing restrictions don't allow that. Perhaps a paragraph on
+current best practices and how they relate to deep learning. A lack of data (due
+to privacy and sharing restrictions) may hamper deep learning's utility in this
+area in ways that it doesn't for image analysis, etc. Perhaps this will be the
+Achilles heal of deep learning in this area. A couple things to think about
+[@doi:10.1126/science.1229566 @doi:10.1016/j.cels.2016.04.013]*
+
 Early successes using deep learning involved very large training datasets
 (ImageNet 1.4 million images) [@arxiv:1409.0575], but a responsibility to
 protect patient privacy limits the ability openly share large patient datasets.
@@ -371,7 +369,15 @@ parameter which provides a quantification of privacy. Simmons et al.
 [@doi:10.1016/j.cels.2016.04.013] present the ability to perform GWASs in a
 differentially private manner and Abadi et al. [@arxiv:1607.00133] show the
 ability to train deep learning classifiers under the differential privacy
-framework. Finally, Continuous Analysis [@doi:10.1101/056473] allows for the
+framework. Federated learning
+[@arxiv:1602.05629] and secure aggregations
+[@url:http://proceedings.mlr.press/v54/mcmahan17a.html
+@url:https://eprint.iacr.org/2017/281.pdf] are complementary approaches that
+reinforce differential privacy. Both aim to maintain privacy while
+training deep learning models from decentralized data sources such as
+personal mobile devices. This is becoming of increasing importance with the
+rapid growth of mobile health applications.
+Finally, Continuous Analysis [@doi:10.1101/056473] allows for the
 ability to automatically track and share intermediate results for the purposes
 of reproducibility without sharing the original data.
 
