@@ -214,10 +214,23 @@ discussing here.*
 
 * https://github.com/greenelab/deep-review/issues/139#issuecomment-268901804
 
-As discussed in Data Limitations, biomedical datasets often contain a limited
+As discussed above, biomedical datasets often contain a limited
 number of instances or labels, which ofter leads to poor performance of
-machine learning algorithms. When applied to such datasets, deep learning
-models are particularly prone to over-fitting due to their high representational
+machine learning algorithms. When trained on such datasets, deep learning
+models are particularly prone to overfitting due to their high representational
 power. However, Transfer Learning techniques also known as Domain Adaptation
-enable transfer of patterns extracted from larger and/or labeled datasets from
-different domain to the problem in hand.
+enable transfer of extracted patterns between different datasets and even
+domains. This allows a model to take advantage on larger labeled data for
+training of a model that then can be reused for the problem in hand. Deep
+neural networks exhibit high transferability of learnt features even when
+pre-training and target sets are distant [@tag:Yosinski2014].
+
+Examples of deep transfer learning applications to biological image analysis
+demonstrate an ability of deep learning models to predict sub-cellular
+localizations for proteins that were not present in original training set
+[@tag:Parnamaa2017]. Such models perform reasonably well even when applied to
+images obtained with different fluorescent labels, imaging techniques, and in
+new cell types [ @tag:Kraus2017]. Moreover, large scale natural image sets
+[@tag:Russakovsky2015_imagenet] proven to be useful for pre-training deep
+networks that then can serve as features extractors applied to various types of
+biological images [@tag:Angermueller2016_dl_review @tag:Pawlowski2016].
