@@ -1482,3 +1482,64 @@ posterior.},
  year = {2015}
 }
 
+
+@article{TaPZBxYS,
+ abstract = {Modern mobile devices have access to a wealth of data suitable for learning
+models, which in turn can greatly improve the user experience on the device.
+For example, language models can improve speech recognition and text entry, and
+image models can automatically select good photos. However, this rich data is
+often privacy sensitive, large in quantity, or both, which may preclude logging
+to the data center and training there using conventional approaches. We
+advocate an alternative that leaves the training data distributed on the mobile
+devices, and learns a shared model by aggregating locally-computed updates. We
+term this decentralized approach Federated Learning.
+We present a practical method for the federated learning of deep networks
+based on iterative model averaging, and conduct an extensive empirical
+evaluation, considering five different model architectures and four datasets.
+These experiments demonstrate the approach is robust to the unbalanced and
+non-IID data distributions that are a defining characteristic of this setting.
+Communication costs are the principal constraint, and we show a reduction in
+required communication rounds by 10-100x as compared to synchronized stochastic
+gradient descent.},
+ archiveprefix = {arXiv},
+ author = {H. Brendan McMahan and Eider Moore and Daniel Ramage and Seth Hampson and Blaise Agüera y Arcas},
+ eprint = {1602.05629v3},
+ file = {1602.05629v3.pdf},
+ link = {http://arxiv.org/abs/1602.05629v3},
+ month = {Feb},
+ note = {Proceedings of the 20 th International Conference on Artificial
+Intelligence and Statistics (AISTATS) 2017. JMLR: W&CP volume 54},
+ primaryclass = {cs.LG},
+ title = {Communication-Efficient Learning of Deep Networks from Decentralized
+Data},
+ year = {2016}
+}
+
+
+@article{1HbRTExaU,
+ abstract = {We quantitatively investigate how machine learning models leak information
+about the individual data records on which they were trained. We focus on the
+basic membership inference attack: given a data record and black-box access to
+a model, determine if the record was in the model's training dataset. To
+perform membership inference against a target model, we make adversarial use of
+machine learning and train our own inference model to recognize differences in
+the target model's predictions on the inputs that it trained on versus the
+inputs that it did not train on.
+We empirically evaluate our inference techniques on classification models
+trained by commercial "machine learning as a service" providers such as Google
+and Amazon. Using realistic datasets and classification tasks, including a
+hospital discharge dataset whose membership is sensitive from the privacy
+perspective, we show that these models can be vulnerable to membership
+inference attacks. We then investigate the factors that influence this leakage
+and evaluate mitigation strategies.},
+ archiveprefix = {arXiv},
+ author = {Reza Shokri and Marco Stronati and Congzheng Song and Vitaly Shmatikov},
+ eprint = {1610.05820v2},
+ file = {1610.05820v2.pdf},
+ link = {http://arxiv.org/abs/1610.05820v2},
+ month = {Nov},
+ primaryclass = {cs.CR},
+ title = {Membership Inference Attacks against Machine Learning Models},
+ year = {2016}
+}
+
