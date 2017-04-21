@@ -110,6 +110,12 @@ interactions that could point to identification of new indications for existing
 drugs. Wen et al. [@doi:10.1021/acs.jproteome.6b00618] extended this concept to
 deep learning by creating a deep belief network of stacked RBMs, DeepDTIs,
 achieving similar performance.
+Drug repositioning appears to be an obvious candidate for the development of
+deep learning applications both because of the large amount of high-dimensional
+data available and because of the complexity of the question being asked.
+However, we believe these are still very erly days and what is perhaps the most
+promising piece of work in this space [@doi:10.1021/acs.molpharmaceut.6b00248]
+is more a proof of concept than a real-world hypothesis-generation tool.
 
 #### Challenges
 
