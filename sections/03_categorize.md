@@ -12,7 +12,7 @@ might identify entirely new categories of health or disease that are only
 present when data from multiple lab tests are integrated. As a potential
 example, consider the condition Latent Autoimmune Diabetes in Adults (LADA). The
 history of this disease classification is briefly reviewed in Stenström et
-al.[@doi:10.2337/diabetes.54.suppl_2.S68].
+al.[@tag:Stenstrom2005_latent].
 
 Imagine that a deep neural network operating in the early 1980s had access to
 electronic health records with comprehensive clinical tests. It might have
@@ -21,7 +21,7 @@ diabetes as well as autoantibodies, even though the individuals had never been
 diagnosed with type 1 diabetes - the autoimmune form of the disease that arises
 in young people. Such a neural network would be identifying patients with LADA.
 As no such computational approach existed, LADA was actually identified by Groop
-et al. [@doi:10.2337/diab.35.2.237]. However, this represents a potential hope
+et al. [@tag:Groop1986_islet]. However, this represents a potential hope
 of this area. Perhaps deep neural networks, by reevaluating data without the
 context of our assumptions, can reveal novel classes of treatable conditions.
 
