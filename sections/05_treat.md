@@ -150,17 +150,6 @@ data requirements of deep learning by integrating pre-existing knowledge or
 compiling large datasets of patient records may unlock the power of deep
 learning for clinical practice.
 
-### Effects of drugs on transcriptomic responses
-
-*We discussed a few papers that operate on Library of Network-Based Cellular
-Signatures (LINCS) gene expression data.  We could briefly introduce the
-goals of that resource and comment on the deep learning applications.  In the
-Issues, we had reservations about whether the improvements in expression
-prediction are good enough to make a practical difference in the domain and
-feature selection and construction.*
-*Also, note that this now (partially?) covered in the drug repositioning
-subsection above.*
-
 ### Ligand-Based Prediction of Bioactivity
 
 In the biomedical domain, high-throughput chemical screening aims to improve
