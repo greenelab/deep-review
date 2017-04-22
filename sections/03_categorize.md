@@ -157,9 +157,10 @@ scale analysis of an electronic health records system found that a deep
 denoising autoencoder architecture applied to the number and co-occurrence of
 clinical test events, though not the results of those tests, constructed
 features that were more useful for disease prediction than other existing
-feature construction methods [@doi:10.1038/srep26094].  Taken together, these
-results support the potential of unsupervised feature construction in this
-domain. However, numerous challenges including data integration (patient
+feature construction methods [@doi:10.1038/srep26094].  Razavian et al. 
+[@arvix:1608.00647] used a set of 18 common lab tests to predict disease onset 
+using both CNN and LSTM architectures and demonstrated and improvement over baseline
+regression models. However, numerous challenges including data integration (patient
 demographics, family history, laboratory tests, text-based patient records,
 image analysis, genomic data) and better handling of streaming temporal data
 with many features, will need to be overcome before we can fully assess the
