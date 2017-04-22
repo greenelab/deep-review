@@ -142,6 +142,20 @@ This indicates a potential strength of deep methods. It may be possible to
 repurpose features from task to task, improving overall predictions as the field
 tackles new challenges.
 
+Several authors have created reusable feature sets for medical terminologies using
+neural embeddings, as popularized by word2Vec [@tag:Word2Vec]. This approach was 
+first used on free text medical notes by De Vine [10.1145/2661829.2661974] with results
+at or better than traditional methods.  Y. Choi [10.1145/2567948.2577348] built 
+embeddings of standardized terminologies (such as ICD and NDC) used in widely available 
+administrative claims data.  By learning terminologies for different entities in the same 
+vector space, they can potentially find relationships between different domains (e.g.
+drugs and the diseases they treat).  Medical claims data does not have the natural document 
+structure of clinical notes, and this issue was addressed by E. Choi 
+[10.1145/2939672.2939823], who built embeddings using a multi-layer network architecture
+which mimics the structure of claims data.  While promising, difficulties in evaluating the 
+quality of these kinds of features and variations in clinical coding practices remain as 
+challenges to using them in practice.
+
 Identifying consistent subgroups of individuals and individual health
 trajectories from clinical tests is also an active area of research. Approaches
 inspired by deep learning have been used for both unsupervised feature
