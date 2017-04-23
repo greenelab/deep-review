@@ -157,7 +157,7 @@ interactions and drug bioactivity through CNN [@arxiv:1510.02855]. Since CNNs
 leverage spatial relationships within the data, this particular deep learning
 framework is well suited to the problem. Drug repositioning is another fertile
 area. Aliper et al. used transcriptomic data to predict which drugs might be
-repurposed for other diseases through deep, fully connected neural networks
+repurposed for other diseases through deep neural networks
 [@doi:10.1021/acs.molpharmaceut.6b00248]. Similarly, it was shown that
 restricted Boltzmann machines (RBM) can be combined into deep belief networks to
 predict novel drug - target interactions and formulate drug repositioning
