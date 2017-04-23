@@ -210,7 +210,7 @@ influence healthcare decisions? Or, is deep learning a hypothesis generation
 machine that requires manual validation? DeepChem and DragoNN are worth
 discussing here.*
 
-### Transfer learning/transferability of features
+### Multi-task, multimodal, and transfer learning
 
 * https://github.com/greenelab/deep-review/issues/139#issuecomment-268901804
 
@@ -225,12 +225,48 @@ training of a model that then can be reused for the problem in hand. Deep
 neural networks exhibit high transferability of learnt features even when
 pre-training and target sets are distant [@tag:Yosinski2014].
 
-Examples of deep transfer learning applications to biological image analysis
-demonstrate an ability of deep learning models to predict sub-cellular
-localizations for proteins that were not present in original training set
-[@tag:Parnamaa2017]. Such models perform reasonably well even when applied to
-images obtained with different fluorescent labels, imaging techniques, and in
-new cell types [ @tag:Kraus2017]. Moreover, large scale natural image sets
-[@tag:Russakovsky2015_imagenet] proven to be useful for pre-training deep
-networks that then can serve as features extractors applied to various types of
-biological images [@tag:Angermueller2016_dl_review @tag:Pawlowski2016].
+In image analysis, previous examples of deep transfer learning applications
+proved large scale natural image sets [@tag:Russakovsky2015_imagenet]
+to be useful for pre-training models that can then serve as generic features
+extractors applied to various types of biological images
+[@tag:Zeng2015 @tag:Angermueller2016_dl_review @tag:Pawlowski2016]. More
+recently, deep learning models trained to predict protein sub-cellular
+localization were shown to successfully perform predictions for the proteins
+that were not originally present in the training set [@tag:Parnamaa2017].
+Moreover, in this type of task learnt features performed reasonably well even
+when applied to images obtained using different fluorescent labels, imaging
+techniques, and in different cell types [ @tag:Kraus2017]. However, there are
+no established theoretical guarantees for feature transferability between such
+distant domains as natural images and various modalities of biological
+imaging. Because learnt patterns are represented in deep neural networks in a
+layer-wise hierarchical fashion this issue is usually addressed by fixing an
+empirically chosen number of layers that preserve generic characteristic
+of both training and target datasets. Then model is fine-tuned by re-training
+networks' top layers on the specific dataset in hand in order to
+re-learn domain-specific high level concepts.
+
+Fine-tuning on specific biological datasets enables more focused predictions.
+For example, Min et al. [@tag:Min2016_deepenhancer] demonstrated how training on
+FANTOM5 permissive enhancer dataset and then fine-tuning the model on ENCODE
+enhancer datasets allowed cell type-specific predictions that outperformed
+state-of-the-art results.
+`
+`TODO: add more bio transfer learning examples`
+
+Related to transfer learning, multimodal learning framework assumes
+simultaneous learning from various types of inputs, such as images and text.
+It allows to capture features that describe common concepts across input
+modalities. Models such as restricted Boltzmann
+machines (RBMs) and deep belief networks (DBNs), from a family of
+deep graphical generative models, demonstrated successful extraction of
+more informative features for one modality such as
+images or video when jointly learnt with other modalities such as
+audio or text [@tag:Ngiam2011]. Chen et al. [@tag:Chen2015_trans_species] used
+deep believe networks to jointly learn phosphorylation states of a common set
+of signaling proteins in primary cultured bronchial cells
+collected from rats and humans treated with distinct stimuli.
+Interpreting species as different modalities representing similar high-level
+concepts, they showed that DBNs were able to capture cross-species representation
+of signaling mechanisms in response to a common stimuli.
+
+`TODO: Integrative Data Analysis of Multi-Platform Cancer Data with a Multimodal Deep Learning Approach`
