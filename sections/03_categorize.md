@@ -344,7 +344,7 @@ model from such attacks.
 
 There are approaches to protect models, but they pose their own challenges.
 Training algorithms in a differentially private manner provides a limited
-guarantee that the algorithms' output will be equally
+guarantee that an algorithm's output will be equally
 likely to occur regardless of the participation of any one individual. The limit
 is determined by a single parameter which provides a quantification of privacy.
 Simmons et al. [@doi:10.1016/j.cels.2016.04.013] present the ability to perform
