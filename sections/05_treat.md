@@ -34,6 +34,15 @@ interpretability of deep learning models, fitting deep models to limited and
 heterogeneous data, and integrating complex predictive models into a dynamic
 clinical environment.
 
+A critical challenge in moving from prediction to treatment recommendation is the 
+necessity to establish a causal relationship for a recommendation.  Causal  inference 
+is often framed in terms of counterfactual question [doi:10.1037/h0037350].  Johansson 
+[arvix:1605.03661] use deep neural networks to create representation models for 
+covariates that capture nonlinear effects and show significant performance improvements 
+over existing models.  In a less formal approach, Kale et al  [pmid:PMC4765623] first 
+create a deep neural network to model clinical time series  and they analyze the 
+relationship of the hidden features to the output using a causal approach. 
+
 #### Applications
 
 ##### Trajectory Prediction for Treatment
