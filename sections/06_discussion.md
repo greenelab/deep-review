@@ -25,31 +25,46 @@ human-level performance is irrelevant.*
 
 ### Interpretation
 
-As the challenge of interpretability is common across many domains, there is
-significant interest in developing generic procedures for knowledge extraction
-from deep models. Ribeiro et al [@tag:Ribeiro2016_lime] focus on interpreting
-individual predictions rather than interpreting the model. By fitting simple
-linear models to mimic the predictions of the deep learning model in a small
-neighborhood of a data sample, they generated an interpretable model for each
-prediction. While this procedure can provide interpretable models for each
-sample, it is unclear whether these interpretable models are reliable.
-Theoretical guarantees on the curvature of the predictions of deep learning
-models are not known, and it is unclear whether predictions from deep learning
-models are robust to sample noise. Toward quantifying the uncertainty of
-predictions, there has been a renewed interest in confidence intervals for
-deep neural networks. Early work from Chryssolouris et al
-[@tag:Chryssolouris1996_confidence] provided confidence intervals under the
- assumption of normally distributed error. However, Nguyen et al
- [@tag:Nguyen2014_adversarial] showed that the confidence of convolutional
- neural networks is not reliable; they can output confidence scores over
- 99.99% even for samples that are purely noise. Recently, Fong and Vedaldi
- [@tag:Fong2017_perturb] provided a framework for understanding black box
- algorithms by perturbing input data.
+Approaches for understanding the patterns learned by deep learning models can be
+broadly divided into: sample-specific importance scoring, visualization 
 
-For domain-specific models, we previously described approaches for the
-interpretation and visualization of neural networks that prediction
-transcription factor binding [@tag:Alipanahi2015_predicting
-@tag:Lanchantin2016_motif @tag:Shrikumar2016_blackbox]. Other studies have
+Sample-specific importance scoring and interpretation:
+- perturbation-based approaches where you observe the impact of the output on
+perturbed versions of the input and use that to ascribe importance. Simplest
+version is forward propagations (ISM, basset=filter nullification). LIME builds
+a linear model to approximate the output on the perturbed input and uses this
+to ascribe feature importance. Prediction difference analysis uses conditional
+probability to intelligently sample the perturbations. These approaches are
+computationally expensive (copy whatever the 'meaningful perturbations' paper
+said about LIME). The meaningful perturbations paper uses gradient descent
+to identify which portion of an image to blur, thereby alleviating but not completely
+eliminating the computational burden.
+- backpropagation approaches to alleviate computational burden. Simonyan,
+LRP which is gradient*input, guided backprop (kicks out negative gradients),
+guided grad CAM (where class specificity only comes from the feature-map layer).
+As noted by [deeplift, integrated gradients paper], several of these methods
+that rely on variants of computing gradients are susceptible to saturation
+effects. This can be addressed use a reference, such as deeplift
+and integrated gradients (left limit of integral).
+DeepLIFT is computationally more efficient than integrated
+gradients and can optionally support separating positive and negative
+contributions which can improve attribution scores under certain circumstances,
+while integrated gradients, being a fully black-box method in that it is
+agnostic to the details of the model architecture, has stronger theoretical
+guarantees in that it will always give the same output for functionally
+equivalent models. Optimal choice of reference is an open question. 
+- 'inversion' - stay faithful to the hidden layer representations. natural
+images in the Mahendran paper. https://link.springer.com/article/10.1007/s11263-016-0911-8,
+then there is the entropy paper ("Maximum Entropy Methods for Extracting the Learned Features of Deep Neural Networks") where find the maximum entropy representation of a sequence that maintains the hidden activation.
+
+Visualizatinon:
+- Understanding neural networks through deep visualization
+- Mahendran and Vedaldi; mention it gives aggregate picture but not for individual filters
+- DeepMotif
+- ActiVis
+
+RNN visualization:
+- Attention mechanism...Other studies have
 primarily focused on integrating attention mechanisms with the neural networks.
 Attention mechanisms dynamically weight the importance the neural network gives
 to each feature. By inspecting the attention weights for a particular sample, a
@@ -62,9 +77,24 @@ model was able to produce accurate diagnoses in which the contribution of
 previous hospital visits could be directly interpreted. Choi et al
 [@tag:Choi2016_gram] later extended this work to take into account the structure
 of disease ontologies and found that the concepts represented by the model were
-aligned with medical knowledge. Che et al [@tag:Che2015_distill] introduced a
+aligned with medical knowledge.
+- Deep motif dashboard: https://arxiv.org/abs/1608.03644
+
+Condense to a simpler model altogether via distillation: Che et al [@tag:Che2015_distill] introduced a
 knowledge-distillation approach which used gradient boosted trees to learn
 interpretable healthcare features from trained deep models.
+
+Interpretability matters, among other things, because deep networks are easily fooled
+[@tag:Nguyen2014_adversarial]. 
+
+Toward quantifying the uncertainty of
+predictions, there has been a renewed interest in confidence intervals for
+deep neural networks. Early work from Chryssolouris et al
+[@tag:Chryssolouris1996_confidence] provided confidence intervals under the
+ assumption of normally distributed error. Test-time dropout can also be
+used to obtain a probabilistic interpretation: https://arxiv.org/abs/1506.02142
+
+
 
 ### Data limitations
 
