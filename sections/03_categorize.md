@@ -254,7 +254,7 @@ or that use transformations to training data to increase the number of times it
 can be used before overfitting occurs. For example, the unsupervised and
 semi-supervised methods that we've discussed reduce the need for labeled
 examples [@doi:10.1016/j.jbi.2016.10.007]. The anchor and learn framework
-[@pmid:27107443] uses expert knowledge to identify high confidence
+[@doi:10.1093/jamia/ocw011] uses expert knowledge to identify high confidence
 observations from which labels can be inferred. The adversarial training example
 strategies that we've mentioned can reduce overfitting, if transformations are
 available that preserve the meaningful content of the data while transforming
