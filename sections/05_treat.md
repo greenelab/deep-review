@@ -42,7 +42,7 @@ to create representation models for covariates that capture nonlinear effects
 and show significant performance improvements over existing models. In a less
 formal approach, Kale et al [@pmid:PMC4765623] first create a deep neural
 network to model clinical time series and then analyze the relationship of the
-hidden features to the output using a causal approach. 
+hidden features to the output using a causal approach.
 
 #### Applications
 
