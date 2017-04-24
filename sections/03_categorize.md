@@ -270,25 +270,20 @@ to solve problems arise when labeled training data become sufficient to enable
 them. Based on our review of research on deep learning methods to categorize
 disease, the latter framing rings true.
 
-In addition to methodological improvements, a robust culture of data sharing -
-and in particular the sharing of high-quality labeled datasets - would do much
-to speed advances in this domain. The cultural barriers are perhaps best
-captured by the implications of using the term "research parasite" to describe
-scientists who use data from other researchers [@doi:10.1056/NEJMe1516564]. In
-short, a field that honors only discoveries and not the hard work of generating
-useful data will have difficulty encouraging scientists to share their hard-won
-data. Unfortunately, it's precisely those data that would help to power deep
-learning in the domain. Though not a methodological consideration, efforts are
-underway to recognize those who promote an ecosystem of rigorous sharing and
-analysis [@doi:10.1038/ng.3830].
-
-We expect both improved methods and an improved culture of sharing to
-play an important role if deep learning is going to transform how we analyze
-data to categorize states of human health. We don't expect that deep learning
-methods will replace expert review. We expect them to complement expert review
-by allowing more efficient use of the costly practice of manual annotation.
+We expect improved methods for domains with limited data to play an important
+role if deep learning is going to transform how we categorize states of human
+health. We don't expect that deep learning methods will replace expert review.
+We expect them to complement expert review by allowing more efficient use of the
+costly practice of manual annotation.
 
 ###### Data sharing is hampered by standardization and privacy considerations
+
+To construct the types of very large datasets that deep learning methods thrive
+on, we need robust sharing of large collections of data. This is in part a
+cultural challenge. We touch on this challenge in the Discussion section. Beyond
+the cultural hurdles around data sharing, there are also technological hurdles
+related to sharing individual health records or deep models built from such
+records. This subsection deals primarily with these challenges.
 
 EHRs are designed and optimized primarily for patient care and billing purposes,
 meaning research is at most a tertiary priority. This presents significant
