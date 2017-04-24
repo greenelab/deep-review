@@ -331,11 +331,15 @@ steal trained models via public APIs and Dwork and Roth
 information from accurate answers in a machine learning model. Attackers can
 use similar attacks to find out if particular data instance was present in the
 original training set for the machine learning model [@arxiv:1610.05820] - in
-this case, whether a person's record was present. There
-are solutions to this challenge. Training algorithms in a differentially private
-information from accurate answers in a machine learning model. There are
-solutions to this challenge. Training algorithms in a differentially private
-manner provides a limited guarantee that the algorithms output will be equally
+this case, whether a person's record was present. This presents a potential
+hazard for approaches that aim to generate data. Choi et al. propose generative
+adversarial neural networks as a tool to make sharable EHR data
+[@arxiv:1703.06490v1]; however, the authors didn't take steps to protect the
+model from such attacks.
+
+There are approaches to protect models, but they pose their own challenges.
+Training algorithms in a differentially private manner provides a limited
+guarantee that an algorithm's output will be equally
 likely to occur regardless of the participation of any one individual. The limit
 is determined by a single parameter which provides a quantification of privacy.
 Simmons et al. [@doi:10.1016/j.cels.2016.04.013] present the ability to perform
@@ -351,6 +355,9 @@ without transferring actual training instances. This is becoming of increasing
 importance with the rapid growth of mobile health applications.
 However, training process in these approaches places constraints on the
 algorithms used and can make fitting a model substantially more challenging.
+In our own experience it can be trivial to train a model without differential
+privacy, but quite difficult to train one within the differential privacy
+framework. The problem can be particularly pronounced with small sample sizes.
 
 Applying deep learning algorithms to this domain provides considerable
 opportunity as well as challenges - such as patient privacy - that cannot be
