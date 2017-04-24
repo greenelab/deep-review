@@ -280,10 +280,10 @@ costly practice of manual annotation.
 
 To construct the types of very large datasets that deep learning methods thrive
 on, we need robust sharing of large collections of data. This is in part a
-cultural challenge. We touch on this challenge in the Discussion section.
-However, even if the cultural hurdles around data sharing are addressed there
-would be technological hurdles related to sharing individual health records.
-This subsection deals primarily with these challenges.
+cultural challenge. We touch on this challenge in the Discussion section. Beyond
+the cultural hurdles around data sharing, there are also technological hurdles
+related to sharing individual health records or deep models built from such
+records. This subsection deals primarily with these challenges.
 
 EHRs are designed and optimized primarily for patient care and billing purposes,
 meaning research is at most a tertiary priority. This presents significant
