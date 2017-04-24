@@ -210,63 +210,122 @@ influence healthcare decisions? Or, is deep learning a hypothesis generation
 machine that requires manual validation? DeepChem and DragoNN are worth
 discussing here.*
 
-### Multi-task, multimodal, and transfer learning
+### Multimodal and transfer learning
 
 * https://github.com/greenelab/deep-review/issues/139#issuecomment-268901804
 
-As discussed above, biomedical datasets often contain a limited
-number of instances or labels, which ofter leads to poor performance of
+As discussed above, the fact that biomedical datasets often contain a limited
+number of instances or labels, often leads to poor performance of
 machine learning algorithms. When trained on such datasets, deep learning
 models are particularly prone to overfitting due to their high representational
 power. However, Transfer Learning techniques also known as Domain Adaptation
 enable transfer of extracted patterns between different datasets and even
 domains. This allows a model to take advantage on larger labeled data for
-training of a model that then can be reused for the problem in hand. Deep
-neural networks exhibit high transferability of learnt features even when
+training of a model which can  then can be reused for the problem in hand. Deep
+neural networks exhibit high transferability of learnt features including when
 pre-training and target sets are distant [@tag:Yosinski2014].
 
 In image analysis, previous examples of deep transfer learning applications
 proved large scale natural image sets [@tag:Russakovsky2015_imagenet]
-to be useful for pre-training models that can then serve as generic features
+to be useful for pre-training models that can then serve as generic feature
 extractors applied to various types of biological images
 [@tag:Zeng2015 @tag:Angermueller2016_dl_review @tag:Pawlowski2016]. More
 recently, deep learning models trained to predict protein sub-cellular
-localization were shown to successfully perform predictions for the proteins
-that were not originally present in the training set [@tag:Parnamaa2017].
-Moreover, in this type of task learnt features performed reasonably well even
+localization successfully performed predictions for  proteins
+ not originally present in the training set [@tag:Parnamaa2017].
+Moreover, in this type of task, learnt features performed reasonably well even
 when applied to images obtained using different fluorescent labels, imaging
-techniques, and in different cell types [ @tag:Kraus2017]. However, there are
+techniques, and different cell types [ @tag:Kraus2017]. However, there are
 no established theoretical guarantees for feature transferability between such
-distant domains as natural images and various modalities of biological
+distant domains such as natural images and various modalities of biological
 imaging. Because learnt patterns are represented in deep neural networks in a
-layer-wise hierarchical fashion this issue is usually addressed by fixing an
-empirically chosen number of layers that preserve generic characteristic
-of both training and target datasets. Then model is fine-tuned by re-training
-networks' top layers on the specific dataset in hand in order to
-re-learn domain-specific high level concepts.
-
-Fine-tuning on specific biological datasets enables more focused predictions.
-For example, Min et al. [@tag:Min2016_deepenhancer] demonstrated how training on
-FANTOM5 permissive enhancer dataset and then fine-tuning the model on ENCODE
-enhancer datasets allowed cell type-specific predictions that outperformed
+layer-wise hierarchical fashion, this issue is usually addressed by fixing an
+empirically chosen number of layers that preserve generic characteristics
+of both training and target datasets. Then, the model is fine-tuned by
+re-training networks' top layers on the specific dataset in order to
+re-learn domain-specific high level concepts. Fine-tuning on specific biological
+datasets enables more focused predictions. For example, Min et al.
+[@tag:Min2016_deepenhancer] demonstrated how training on the experimentally
+validated FANTOM5 permissive enhancer dataset followed by fine-tuning on ENCODE
+enhancer datasets improved cell type-specific predictions, outperforming
 state-of-the-art results.
-`
-`TODO: add more bio transfer learning examples`
 
 Related to transfer learning, multimodal learning framework assumes
 simultaneous learning from various types of inputs, such as images and text.
-It allows to capture features that describe common concepts across input
-modalities. Models such as restricted Boltzmann
-machines (RBMs) and deep belief networks (DBNs), from a family of
-deep graphical generative models, demonstrated successful extraction of
-more informative features for one modality such as
-images or video when jointly learnt with other modalities such as
-audio or text [@tag:Ngiam2011]. Chen et al. [@tag:Chen2015_trans_species] used
-deep believe networks to jointly learn phosphorylation states of a common set
-of signaling proteins in primary cultured bronchial cells
-collected from rats and humans treated with distinct stimuli.
-Interpreting species as different modalities representing similar high-level
-concepts, they showed that DBNs were able to capture cross-species representation
-of signaling mechanisms in response to a common stimuli.
+It allows capture of features that describe common concepts across input
+modalities. Generative graphical models like restricted Boltzmann
+machines (RBM) and their stacked versions, deep Boltzmann machines (DBM), and
+deep belief networks (DBN), demonstrate successful extraction of
+more informative features for one modality
+(images or video) when jointly learnt with other modalities
+(audio or text) [@tag:Ngiam2011].
+Jha et al. [@tag:Jha2017_integrative_models] showed that an integrated training
+approach delivers better performance compared to individual networks. They
+compared a number of feed-forward architectures trained on RNA-Seq data
+with and without an additional set of CLIP-seq, knockdown, and over-expression
+based input features. Results showed that the integrative deep model
+generalized well for combined data, offering large performance improvement
+for alternative splicing event estimation. Chen et al.
+[@tag:Chen2015_trans_species] used deep belief networks to learn
+phosphorylation states of a common set of signaling proteins in primary
+cultured bronchial cells collected from rats and humans treated
+with distinct stimuli. Interpreting species as different modalities
+representing similar high-level concepts, they showed that DBNs were able
+to capture cross-species representation of signaling mechanisms in response
+to a common stimuli. Another application used DBNs for joint unsupervised
+feature learning from cancer datasets contained gene expression,
+DNA methylation, and miRNA expression data [@tag:Liang2015_exprs_cancer].
+This approach allowed for the capture of intrinsic relationships in
+different modalities and for better clustering performance over conventional
+k-means based methods.
 
-`TODO: Integrative Data Analysis of Multi-Platform Cancer Data with a Multimodal Deep Learning Approach`
+Deep graphical models such as DBNs are considered to be well suited for
+multimodal learning tasks since they are aimed to learn joint probability
+distribution from inputs. However, it is difficult task that requires
+specialized algorithms for training and sampling.  While it is possible
+to fine-tune these models for discriminatory tasks, they are typically
+outperformed by commonly used convolutional neural networks (CNN)
+trained with backpropagation. Multimodal learning with CNNs is usually
+implemented as a collection of individual networks, in which each learns
+representations from single data type. These individual representations are
+further concatenated before or within fully-connected layers. FIDDLE
+[@tag:Eser2016_fiddle] is an example of multimodal CNNs that represents an
+ensemble of individual networks that take as inputs a number of genomic
+datasets, including NET-seq, MNase-seq, ChIP-seq, RNA-seq, and
+raw DNA sequence to predict Transcription Start Site-seq (TSS-seq) outputs.
+The combined model radically improves performance over separately trained
+datatype-specific networks, suggesting that it learns the synergistic
+relationship between datasets.
+
+Despite demonstrated improvements, transfer learning approaches also pose
+a number of challenges. As mentioned above, there are no theoretically sound
+principles for pre-training and fine-tuning. Most best practice recommendations
+are heuristic and have to take into account additional hyper-parameters that
+depend on specific deep architectures, sizes of pre-training and target
+datasets, and similarity of domains. Unfortunately, not many negative results
+are presented in study publications. A rare example, DeepChem, is a framework
+that implements one-shot learning techniques [@tag:AltaeTran2016_one_shot]
+and was not able to achieve any predictive power on closely related testing
+tasks. This long shot-term memory (LSTM) based method addressed training set
+size limitations by implementing one-shot learning approaches that aim to
+learn information about objects from few training examples. DeepChem showed
+significant improvement in predictive power for a variety of problems meaningful
+for low-data drug discovery and in its ability to generalize new experimental
+assays, related but not identical to the training collection. Originally it was
+used separately on the Tox21 dataset, containing 12 nuclear receptor assays
+related to human toxicity, and the SIDER dataset containing information on
+marketed medicines and their observed adverse reactions. For both prediction
+tasks, DeepChem demonstrated superior performance in low-data regime.
+However, when trained on Tox21 data and tested on SIDER, the model failed,
+clearly demonstrating a limit to the cross-task generalization capability
+of one-shot models.
+
+Overall, multimodal and transfer learning strategies demonstrate high potential
+for many biomedical applications that are otherwise limited by data volume.
+These methods not only inherit most of methodological issues from natural image,
+text, and audio domains, but also pose new challenges, specific to biological
+data. We suggest that this class of models deserve deeper investigation to
+establish best practices and determine limits for the transferability of
+features between various close related and distant learning tasks. Making
+negative results and source code public helps to accelerate progress in this
+direction.
