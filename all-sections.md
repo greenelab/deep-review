@@ -162,13 +162,15 @@ drug interactions or predict drug response. One recent approach for
 predicting drug response is the use of protein structure to predict drug
 interactions and drug bioactivity through CNN [@Z7fd0BYf]. Since CNNs
 leverage spatial relationships within the data, this particular deep learning
-framework is well suited to the problem. Drug discovery and drug
-"repurposing" are two other hot topics. Aliper et al. used transcriptomic
-data to predict which drugs might be repurposed for other diseases through
-deep fully connected neural networks
-[@EMDwvRGb]. In a similar vein, Wang et al. used
-restricted boltzman machines (RBM) to predict drug molecular targets
-[@1AU7wzPqa].
+framework is well suited to the problem. Drug repositioning is another active
+area of research. Aliper et al. used transcriptomic data to predict which drugs
+might be repurposed for other diseases through deep neural networks
+[@EMDwvRGb]. Similarly, it was shown that
+restricted Boltzmann machines (RBM) can be combined into deep belief networks
+(DBNs) to predict novel drug - target interactions and formulate drug
+repositioning hypotheses [@1AU7wzPqa; @oTF8O79C]. Finally, deep learning is also being
+succesfully used to prioritize chemicals in the early stages of drug discovery
+for new targets [@xPkT1z7D].
 
 
 ## Deep learning and patient categorization
@@ -1340,14 +1342,59 @@ data requirements of deep learning by integrating pre-existing knowledge or
 compiling large datasets of patient records may unlock the power of deep
 learning for clinical practice.
 
-### Effects of drugs on transcriptomic responses
+### Drug repositioning
 
-*We discussed a few papers that operate on Library of Network-Based Cellular
-Signatures (LINCS) gene expression data.  We could briefly introduce the
-goals of that resource and comment on the deep learning applications.  In the
-Issues, we had reservations about whether the improvements in expression
-prediction are good enough to make a practical difference in the domain and
-feature selection and construction.*
+Drug repositioning (or repurposing) is an attractive option for delivering new
+drugs to the market because of the high costs and failure rates associated with
+more traditional drug discovery approaches [@13c9OPizf; @79Ktl2]. A decade ago, the concept of the Connectivity Map
+[@Ot5bUkmI] had a sizeable impact on the field: reverse
+matching disease gene expression signatures with a large set of reference
+compound profiles allowed to formulate repurposing hypothesis at scale
+using a simple non-parametric test. Since then, several advanced computational
+methods have been applied to formulate and validate drug repositioning
+hypotheses [@gTwjIQqB; @1BkEtNVsj; @ir7ElHha]. Using supervised learning and collaborative filtering
+to tackle this type of problems is proving successful in different scenarios,
+especially when coupling disease or compound omic data  with topological
+information from protein-protein or protein-compound interaction networks
+[@M1EW8Rfl; @16FEYidu2; @18lqFDKRR].
+
+Menden et al [@QcwZC8wG] used a shallow neural network
+to predict sensitivity of cancer cell lines to drug treatment using both cell
+line and drug features, opening the door to precision medicine and drug
+repositioning opportunities in cancer. More recently, Aliper et al
+[@EMDwvRGb] used gene- and pathway-level drug
+perturbation transcriptional profiles from the Library of Network-Based Cellular
+Signatures (LINCS) [@ppGS5h4v] to train a fully connected
+deep neural network able to predict drug therapeutic uses and indications. By
+using confusion matrices and leveraging misclassification, the authors formulate
+a number of interesting hypotheses, including repurposing cardiovascular drugs
+such as otenzepad and pinacidil for neurological disorders.
+
+Drug repositioning can also be approached by attempting to predict novel
+drug-target interactions and then repurposing the drug for the associated
+indication [@tOpadZQw; @1SIuofeg].
+Wang et al [@TeIxEjqm] devised a pairwise input neural
+network with two hidden layers that takes two inputs, a drug and a target
+binding site, and predicts whether they interact. Wang et al
+[@1AU7wzPqa] trained individual RBMs for each target in
+a drug-target interaction network and used these models to predict novel
+interactions pointing to new indications for existing drugs. Wen et al.
+[@oTF8O79C] extended this concept to deep learning by
+creating a DBN of stacked RBMs called DeepDTIs, which is able to predict
+interactions on the basis of chemical structure and protein sequence features.
+
+Drug repositioning appears to be an obvious candidate for the development of
+deep learning applications both because of the large amount of high-dimensional
+data available and because of the complexity of the question being asked.
+However, what is perhaps the most promising piece of work in this space
+[@EMDwvRGb] is more a proof of concept than a
+real-world hypothesis-generation tool; notably, deep learning was used to
+predict drug indications but not for the actual repositioning. At present, some
+of the most popular state-of-the-art methods for signature-based drug
+repurposing [@cQAldRdg] do not use predictive modelling. While
+this might change in the future, we believe that a mature and production-ready
+framework where deep learning is directly applied to the problem of drug
+repositioning is currently missing.
 
 ### Ligand-Based Prediction of Bioactivity
 
@@ -1542,6 +1589,10 @@ scores), deep learning with structure (e.g. [@Z7fd0BYf; @bNBiIiTt; @17YaKNLKk])`
 
 `TODO: analogies to other domains where deep learning can capture the behavior
 of complex physics (e.g. quantum physics example)?`
+
+`TODO: link to drug repurposing section above,  DeepDTIs uses ECFPs as
+features for its 1412 compounds and protein sequence composition (PSCs)
+features for its targets (1520).`
 
 ### Modeling Metabolism and Chemical Reactivity
 
