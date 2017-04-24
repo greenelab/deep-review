@@ -13,3 +13,7 @@ __pycache__/
 
 # Jupyter Notebook
 .ipynb_checkpoints
+
+# Misc temporary files
+*.bak
+
