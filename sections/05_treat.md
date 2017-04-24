@@ -372,6 +372,10 @@ scores), deep learning with structure (e.g. [@tag:Wallach2015_atom_net
 `TODO: analogies to other domains where deep learning can capture the behavior
 of complex physics (e.g. quantum physics example)?`
 
+`TODO: link to drug repurposing section above,  DeepDTIs uses ECFPs as
+features for its 1412 compounds and protein sequence composition (PSCs)
+features for its targets (1520).`
+
 ### Modeling Metabolism and Chemical Reactivity
 
 *Add a review here of metabolism and chemical reactivity.*
