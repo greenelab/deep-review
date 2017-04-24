@@ -1,13 +1,13 @@
 ## Deep learning and patient categorization
 
-In a health care setting, individuals are diagnosed with a disease or condition
+In a healthcare setting, individuals are diagnosed with a disease or condition
 based on symptoms, the results of certain diagnostic tests, or other factors.
 Once diagnosed with a disease an individual might be assigned a stage based on
 another set of human-defined rules. While these rules are refined over time, the
 process is evolutionary rather than revolutionary.
 
 We might imagine that deep learning or artificial intelligence methods could
-reinvent how individuals are categorized for health care. A deep neural network
+reinvent how individuals are categorized for healthcare. A deep neural network
 might identify entirely new categories of health or disease that are only
 present when data from multiple lab tests are integrated. As a potential
 example, consider the condition Latent Autoimmune Diabetes in Adults (LADA). The
@@ -17,7 +17,7 @@ al.[@doi:10.2337/diabetes.54.suppl_2.S68].
 Imagine that a deep neural network operating in the early 1980s had access to
 electronic health records with comprehensive clinical tests. It might have
 identified a subgroup of individuals with blood glucose levels that indicated
-diabetes as well as autoantibodies, even though the individuals had never been
+diabetes as well as auto-antibodies, even though the individuals had never been
 diagnosed with type 1 diabetes - the autoimmune form of the disease that arises
 in young people. Such a neural network would be identifying patients with LADA.
 As no such computational approach existed, LADA was actually identified by Groop
@@ -42,7 +42,7 @@ focus on barriers to achieving these goals. We also highlight approaches that
 researchers are taking to address challenges within the field, particularly with
 regards to data availability and labeling.
 
-#### Imaging applications in health care
+#### Imaging applications in healthcare
 
 One of the general areas where deep learning methods have had substantial
 success has been in image analysis. Applications in areas of medicine that use
@@ -290,80 +290,95 @@ by allowing more efficient use of the costly practice of manual annotation.
 
 ###### Data sharing is hampered by standardization and privacy considerations
 
-EHRs are designed and optimized primarily for patient care and billing purposes,
-meaning research is at most a tertiary priority. This presents significant
-challenges to EHR based research in general, and particularly to data intensive
-deep learning research. EHRs are used differently even within the same health
-care system [@pmid:24159271 @pmid:21347133]. Individual users have unique
-usage patterns, and different departments have different priorities which
-introduce missing data in a non-random fashion. Just et al. demonstrated that
-even the most basic task of matching patients can be challenging due to data
-entry issues [@pmid:27134610]. This is before considering challenges caused by
-system migrations and health care system expansions through acquisitions.
-Replication between hospital systems requires controlling for both these
-systematic biases as well as for population and demographic effects.
-Historically, rules-based algorithms have been popular in EHR-based research but
-because these are developed at a single institution and trained with a specific
-patient population they do not transfer easily to other populations
-[@doi:10.1136/amiajnl-2013-001935]. Wiley et al.
-[@doi:10.1142/9789813207813_0050] showed that warfarin dosing algorithms often
-under perform in African Americans, illustrating that some of these issues are
-unsolved even at a treatment best practices level. Lack of standardization
-makes it challenging for investigators skilled in deep learning to enter the
-field, as numerous data processing steps must be performed before algorithms are
-applied.
+EHRs are designed chiefly for clinical, administrative and financial purposes, such as patient care, insurance and  billing [@doi:10.1038/nrg3208]. Research is at best a tertiary priority, presenting  significant challenges to EHR-based research in general, and particularly to data intensive deep learning research. These difficulties can be grouped into three areas: local bias, wider standards and legal issues. Note these problems are not restricted to EHR but can also apply to any large biomedical dataset, e.g. clinical trial data.
 
-Even if data were perfectly standardized, attempts to share data in this domain
-would still encounter technological and legal barriers. A responsibility to
-protect patient privacy limits the ability to  openly share large patient
-datasets. As described above, labeled data are already expensive to obtain. Even
-after they are generated restrictions on sharing can hamper their broad
-distribution. All of these factors combine to result in small samples sizes that
-restrict the number of parameters that can be trained in a model. Though the
-lack of sharing may also hamper reproducibility and physician confidence in
-results, recently described techniques such as Continuous Analysis
-[@doi:10.1038/nbt.3780] can allow reproducible computing on private data. Using
-such techniques intermediate results can be automatically tracked and shared
-without sharing the original data, which may help to address concerns around
-physician confidence.
+Even within the same healthcare system, EHRs can be used differently
+[@pmid:24159271 @pmid:21347133]. Individual users have unique usage patterns,
+with different departments and different hospitals having different priorities
+which code patients and introduce missing data in a non-random fashion
+[@pmid:12849909]. Patient data may be kept across several "silos" within a
+single health system. Even the most basic task of matching patients across
+systems can be challenging due to data entry issues [@pmid:27134610]. The
+situation is further exacerbated by the ongoing introduction, evolution and
+migration of EHR systems, especially where reorganized and acquired healthcare
+facilities have to merge. As a result, EHR can be less complete and less
+objective than expected.
 
-Raw data isn't the only point of concern in the domain with regards to privacy.
+In the wider picture, standards for EHRs are many and evolving. Proprietary
+systems, indifferent and scattered use of health information standards and
+controlled terminologies makes combining and comparison of data across systems
+challenging [@url:http://www.ncrr.nih.gov/
+publications/informatics/ehr.pdf][@doi:10.1016/j.jbi.2014.10.006]. Further
+diversity arises from variation in languages, healthcare practices and
+demographics. Merging EHR gathered in different systems (and even under
+different assumptions) is challenging [@isbn:9783319448398].
+
+Combining or replicating studies across systems thus requires controlling for
+both the above biases and dealing with mismatching standards. This has the
+practical effect of reducing cohort size, limiting statistical significance,
+preventing the detection of weak effects
+[@doi:10.1590/2176-9451.19.4.027-029.ebo] and restricting the number of
+parameters that can be trained in a model. Further, rules-based algorithms have
+been popular in EHR-based research but because these are developed at a single
+institution and trained with a specific patient population they do not transfer
+easily to other populations [@doi:10.1136/amiajnl-2013-001935]. For example,
+Wiley et al. [@doi:10.1142/9789813207813_0050] showed that warfarin dosing
+algorithms often under-perform in African Americans, illustrating that some of
+these issues are unresolved even at a treatment best practices level. Lack of
+standardization also makes it challenging for investigators skilled in deep
+learning to enter the field, as numerous data processing steps must be performed
+before algorithms are applied.
+
+Finally, even if data were perfectly consistent and compatible across systems, attempts to share and combine EHR data face considerable legal and ethical barriers. Patient privacy can severely restrict the sharing and use of EHR. Here again, standards are heterogeneous and evolving but often EHR data can often not be exported or even accessed directly for research purposes without appropriate consent. Once again, this has the effect of making data gathering more laborious, expansive and reducing sample size and study power.
+
+Several technological solutions have been proposed in this area. Solutions like
+DataShield [@doi:https://doi.org/10.1093/ije/dyu188] and ViPAR
+[@doi:10.1093/ije/dyv193] allows querying and combining of datasets and the
+calculation of summary statistics across sites without compromising patient
+identity. Continuous Analysis [@doi:10.1038/nbt.3780] can allow reproducible
+computing on private data. Using such techniques intermediate results can be
+automatically tracked and shared without sharing the original data.  which may
+help to address concerns around physician confidence. The EH4CR project
+[@doi:10.1016/j.jbi.2014.10.006] goes a step further by allowing secure EHR
+records to be queried remotely via an inter-mediation layer that translates
+local formats and datastores.  
+
 Even without sharing data, algorithms trained on confidential patient data may
 present security risks or accidentally allow for the exposure of individual
 level patient data. Tramer et al. [@arxiv:1609.02943] showed the ability to
 steal trained models via public APIs and Dwork and Roth
 [@doi:10.1561/0400000042] demonstrate the ability to expose individual level
-information from accurate answers in a machine learning model. Attackers can
-use similar attacks to find out if particular data instance was present in the
+information from accurate answers in a machine learning model. Attackers can use
+similar attacks to find out if particular data instance was present in the
 original training set for the machine learning model [@arxiv:1610.05820] - in
-this case, whether a person's record was present. There
-are solutions to this challenge. Training algorithms in a differentially private
-information from accurate answers in a machine learning model. There are
-solutions to this challenge. Training algorithms in a differentially private
-manner provides a limited guarantee that the algorithms output will be equally
-likely to occur regardless of the participation of any one individual. The limit
-is determined by a single parameter which provides a quantification of privacy.
-Simmons et al. [@doi:10.1016/j.cels.2016.04.013] present the ability to perform
-GWASs in a differentially private manner and Abadi et al. [@arxiv:1607.00133]
-show the ability to train deep learning classifiers under the differential
-privacy framework. Federated learning
-[@arxiv:1602.05629] and secure aggregations
+this case, whether a person's record was present. There are solutions to this
+challenge. Training algorithms in a differentially private information from
+accurate answers in a machine learning model. There are solutions to this
+challenge. Training algorithms in a differentially private manner provides a
+limited guarantee that the algorithms output will be equally likely to occur
+regardless of the participation of any one individual. The limit is determined
+by a single parameter which provides a quantification of privacy. Simmons et al.
+[@doi:10.1016/j.cels.2016.04.013] present the ability to perform GWASs in a
+differentially private manner and Abadi et al. [@arxiv:1607.00133] show the
+ability to train deep learning classifiers under the differential privacy
+framework. Federated learning [@arxiv:1602.05629] and secure aggregations
 [@url:http://proceedings.mlr.press/v54/mcmahan17a.html
 @url:https://eprint.iacr.org/2017/281.pdf] are complementary approaches that
 reinforce differential privacy. Both aim to maintain privacy by training deep
 learning models from decentralized data sources such as personal mobile devices
 without transferring actual training instances. This is becoming of increasing
-importance with the rapid growth of mobile health applications.
-However, training process in these approaches places constraints on the
-algorithms used and can make fitting a model substantially more challenging.
+importance with the rapid growth of mobile health applications. However,
+training process in these approaches places constraints on the algorithms used
+and can make fitting a model substantially more challenging.
 
-Applying deep learning algorithms to this domain provides considerable
-opportunity as well as challenges - such as patient privacy - that cannot be
-ignored. Techniques that enable training on data without sharing the raw data
-may have a part to play. Those applying deep learning to the domain should also
-consider the potential of deep neural networks to inadvertently leak the
-training data of participants. Training within a differential privacy framework
-may often be warranted.
+While none of these problems are insurmountable or restricted to deep learning,
+they present challenges that cannot be ignored. Technical evolution in EHRs and
+data standards will doubtless ease - although not solve - the problems of data
+sharing and merging. More problematic are the privacy issues. Those applying
+deep learning to the domain should consider the potential of inadvertently
+disclosing the participants identity. Techniques that enable training on data
+without sharing the raw data may have a part to play. Training within a
+differential privacy framework may often be warranted.
 
 ###### Discrimination and "right to an explanation" laws
 
