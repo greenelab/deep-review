@@ -272,14 +272,18 @@ disease, the latter framing rings true.
 
 We expect improved methods for domains with limited data to play an important
 role if deep learning is going to transform how we categorize states of human
-health. But improved methods may not be enough. An improved culture around data
-sharing, which we touch on in the Discussion section, would also help produce
-the kinds of large datasets that allow deep learning methods to excel. We don't
-expect that deep learning methods will replace expert review. We expect them to
-complement expert review by allowing more efficient use of the costly practice
-of manual annotation.
+health. We don't expect that deep learning methods will replace expert review.
+We expect them to complement expert review by allowing more efficient use of the
+costly practice of manual annotation.
 
 ###### Data sharing is hampered by standardization and privacy considerations
+
+To construct the types of very large datasets that deep learning methods thrive
+on, we need robust sharing of large collections of data. This is in part a
+cultural challenge. We touch on this challenge in the Discussion section.
+However, even if addressed the cultural hurdles around data sharing there would
+be technological hurdles related to sharing individual health records. This
+subsection deals primarily with these challenges.
 
 EHRs are designed and optimized primarily for patient care and billing purposes,
 meaning research is at most a tertiary priority. This presents significant
