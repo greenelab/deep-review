@@ -5,7 +5,7 @@ Alipanahi2015_predicting	doi:10.1038/nmeth.3547
 AltaeTran2016_one_shot	doi:10.1021/acscentsci.6b00367
 Asgari	doi:10.1371/journal.pone.0141287
 blast	doi:10.1016/S0022-2836(05)80360-2
-Angermueller2016_dl_review doi:10.15252/msb.20156651
+Angermueller2016_dl_review	doi:10.15252/msb.20156651
 Angermueller2016_single_methyl	doi:10.1186/s13059-017-1189-z
 Artemov2016_clinical	doi:10.1101/095653
 Arvaniti2016_rare_subsets	doi:10.1101/046508
@@ -76,6 +76,7 @@ Keras	url:https://github.com/fchollet/keras
 Kizek	doi:10.1016/j.bjid.2015.08.013
 Knights	doi:10.1111/j.1574-6976.2010.00251.x
 Koh2016_denoising	doi:10.1101/052118
+Kraus2017_deeploc	doi:10.15252/msb.20177551
 Krizhevsky2013_nips_cnn	url:https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf
 Krizhevsky2014_weird_trick	arxiv:1404.5997
 Lacey2016_dl_fpga	arxiv:1602.04283
@@ -100,18 +101,18 @@ McHardy	doi:10.1038/nmeth976
 McHardy2	doi:10.7717/peerj.1603
 Metaphlan	doi:10.1038/nmeth.2066
 Meng2016_mllib	arxiv:1505.06807
-Min2016_ deepenhancer doi:10.1109/BIBM.2016.7822593
+Min2016_deepenhancer	doi:10.1109/BIBM.2016.7822593
 Moritz2015_sparknet	arxiv:1511.06051
 Mrzelj	url:https://repozitorij.uni-lj.si/IzpisGradiva.php?id=85515
 nbc	doi:10.1093/bioinformatics/btq619
 Nemati2016_rl	doi:10.1109/EMBC.2016.7591355
 Nguyen2014_adversarial	arxiv:1412.1897v4
-Ngiam2011 url:https://ai.stanford.edu/~ang/papers/icml11-MultimodalDeepLearning.pdf
+Ngiam2011	url:https://ai.stanford.edu/~ang/papers/icml11-MultimodalDeepLearning.pdf
 NIH2016_genome_cost	url:https://www.genome.gov/27565109/the-cost-of-sequencing-a-human-genome/
 onecodex	url:https://www.onecodex.com/
 Park2016_deepmirgene	arxiv:1605.00017
-Parnamaa2017 doi:10.1534/g3.116.033654
-Pawlowski2016 doi:10.1101/085118
+Parnamaa2017	doi:10.1534/g3.116.033654
+Pawlowski2016	doi:10.1101/085118
 Pereira2016_docking	doi:10.1021/acs.jcim.6b00355
 PerezSianes2016_screening	doi:10.1007/978-3-319-40126-3_2
 Phymm	doi:10.1038/nmeth.1358
@@ -125,7 +126,7 @@ Raina2009_gpu	doi:10.1145/1553374.1553486
 Ribeiro2016_lime	arxiv:1602.04938
 Rogers2010_fingerprints	doi:10.1021/ci100050t
 Rosenberg2015_synthetic_seqs	doi:10.1016/j.cell.2015.09.054
-Russakovsky2015_imagenet doi:10.1007/s11263-015-0816-y
+Russakovsky2015_imagenet	doi:10.1007/s11263-015-0816-y
 Sa2015_buckwild	arxiv:1506.06438
 Salzberg	doi:10.1186/1471-2105-11-544
 Schatz2010_dna_cloud	doi:10.1038/nbt0710-691
@@ -172,6 +173,6 @@ Xiong2011_bayesian	doi:10.1093/bioinformatics/btr444
 Xiong2015_splicing_code	doi:10.1126/science.1254806
 Yasushi2016_cgbvs_dnn	doi:10.1002/minf.201600045
 yok	doi:10.1186/1471-2105-12-20
-Yosinski2014 url:https://papers.nips.cc/paper/5347-how-transferable-are-features-in-deep-neural-networks
-Zeng2015 doi:10.1186/s12859-015-0553-9
+Yosinski2014	url:https://papers.nips.cc/paper/5347-how-transferable-are-features-in-deep-neural-networks
+Zeng2015	doi:10.1186/s12859-015-0553-9
 Zhou2015_deep_sea	doi:10.1038/nmeth.3547

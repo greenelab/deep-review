@@ -235,9 +235,9 @@ localization successfully performed predictions for  proteins
  not originally present in the training set [@tag:Parnamaa2017].
 Moreover, in this type of task, learnt features performed reasonably well even
 when applied to images obtained using different fluorescent labels, imaging
-techniques, and different cell types [ @tag:Kraus2017]. However, there are
-no established theoretical guarantees for feature transferability between such
-distant domains such as natural images and various modalities of biological
+techniques, and different cell types [@tag:Kraus2017_deeploc]. However, there
+are no established theoretical guarantees for feature transferability between
+such distant domains such as natural images and various modalities of biological
 imaging. Because learnt patterns are represented in deep neural networks in a
 layer-wise hierarchical fashion, this issue is usually addressed by fixing an
 empirically chosen number of layers that preserve generic characteristics
@@ -303,10 +303,12 @@ principles for pre-training and fine-tuning. Most best practice recommendations
 are heuristic and have to take into account additional hyper-parameters that
 depend on specific deep architectures, sizes of pre-training and target
 datasets, and similarity of domains. Unfortunately, not many negative results
-are presented in study publications. A rare example, DeepChem, is a framework
-that implements one-shot learning techniques [@tag:AltaeTran2016_one_shot]
-and was not able to achieve any predictive power on closely related testing
-tasks. This long shot-term memory (LSTM) based method addressed training set
+are presented in study publications. As rare example, DeepChem, a framework
+that successfully improved results for low-data drug discovery by implementing
+one-shot learning techniques [@tag:AltaeTran2016_one_shot],
+was not able to achieve any predictive power with transfer learning on
+closely related testing tasks from different datasets.
+This long shot-term memory (LSTM) based method addressed training set
 size limitations by implementing one-shot learning approaches that aim to
 learn information about objects from few training examples. DeepChem showed
 significant improvement in predictive power for a variety of problems meaningful
