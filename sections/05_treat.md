@@ -117,14 +117,62 @@ data requirements of deep learning by integrating pre-existing knowledge or
 compiling large datasets of patient records may unlock the power of deep
 learning for clinical practice.
 
-### Effects of drugs on transcriptomic responses
+### Drug repositioning
 
-*We discussed a few papers that operate on Library of Network-Based Cellular
-Signatures (LINCS) gene expression data.  We could briefly introduce the
-goals of that resource and comment on the deep learning applications.  In the
-Issues, we had reservations about whether the improvements in expression
-prediction are good enough to make a practical difference in the domain and
-feature selection and construction.*
+Drug repositioning (or repurposing) is an attractive option for delivering new
+drugs to the market because of the high costs and failure rates associated with
+more traditional drug discovery approaches [@doi:10.1016/j.jhealeco.2016.01.012
+@doi:10.1038/nrd4609]. A decade ago, the concept of the Connectivity Map
+[@doi:10.1126/science.1132939] had a sizeable impact on the field: reverse
+matching disease gene expression signatures with a large set of reference
+compound profiles allowed to formulate repurposing hypothesis at scale
+using a simple non-parametric test. Since then, several advanced computational
+methods have been applied to formulate and validate drug repositioning
+hypotheses [@doi:10.1093/bib/bbv020 @doi:10.1093/bib/bbw112
+@doi:10.1093/bib/bbw110]. Using supervised learning and collaborative filtering
+to tackle this type of problems is proving successful in different scenarios,
+especially when coupling disease or compound omic data  with topological
+information from protein-protein or protein-compound interaction networks
+[@doi:10.1186/1758-2946-5-30 @doi:10.1021/ci500340n
+@doi:10.1186/s12859-015-0845-0].
+
+Menden et al [@doi:10.1371/journal.pone.0061318] used a shallow neural network
+to predict sensitivity of cancer cell lines to drug treatment using both cell
+line and drug features, opening the door to precision medicine and drug
+repositioning opportunities in cancer. More recently, Aliper et al
+[@doi:10.1021/acs.molpharmaceut.6b00248] used gene- and pathway-level drug
+perturbation transcriptional profiles from the Library of Network-Based Cellular
+Signatures (LINCS) [@doi:10.3389/fgene.2014.00342] to train a fully connected
+deep neural network able to predict drug therapeutic uses and indications. By
+using confusion matrices and leveraging misclassification, the authors formulate
+a number of interesting hypotheses, including repurposing cardiovascular drugs
+such as otenzepad and pinacidil for neurological disorders.
+
+Drug repositioning can also be approached by attempting to predict novel
+drug-target interactions and then repurposing the drug for the associated
+indication [@doi:10.1371/journal.pcbi.1005219 @doi:10.1371/journal.pcbi.1005135].
+Wang et al [@doi:10.1109/BIBM.2014.6999129] devised a pairwise input neural
+network with two hidden layers that takes two inputs, a drug and a target
+binding site, and predicts whether they interact. Wang et al
+[@doi:10.1093/bioinformatics/btt234] trained individual RBMs for each target in
+a drug-target interaction network and used these models to predict novel
+interactions pointing to new indications for existing drugs. Wen et al.
+[@doi:10.1021/acs.jproteome.6b00618] extended this concept to deep learning by
+creating a DBN of stacked RBMs called DeepDTIs, which is able to predict
+interactions on the basis of chemical structure and protein sequence features.
+
+Drug repositioning appears to be an obvious candidate for the development of
+deep learning applications both because of the large amount of high-dimensional
+data available and because of the complexity of the question being asked.
+However, what is perhaps the most promising piece of work in this space
+[@doi:10.1021/acs.molpharmaceut.6b00248] is more a proof of concept than a
+real-world hypothesis-generation tool; notably, deep learning was used to
+predict drug indications but not for the actual repositioning. At present, some
+of the most popular state-of-the-art methods for signature-based drug
+repurposing [@doi:10.1038/npjsba.2016.15] do not use predictive modelling. While
+this might change in the future, we believe that a mature and production-ready
+framework where deep learning is directly applied to the problem of drug
+repositioning is currently missing.
 
 ### Ligand-Based Prediction of Bioactivity
 
@@ -323,6 +371,10 @@ scores), deep learning with structure (e.g. [@tag:Wallach2015_atom_net
 
 `TODO: analogies to other domains where deep learning can capture the behavior
 of complex physics (e.g. quantum physics example)?`
+
+`TODO: link to drug repurposing section above,  DeepDTIs uses ECFPs as
+features for its 1412 compounds and protein sequence composition (PSCs)
+features for its targets (1520).`
 
 ### Modeling Metabolism and Chemical Reactivity
 
