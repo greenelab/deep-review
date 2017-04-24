@@ -222,12 +222,66 @@ systems are limited by expensive computational cost proportional to the number
 of training and testing sequences. More recently,
 [@tag:Alipanahi2015_predicting] showed that convolutional neural network
 models could achieve state of the art results on the TFBS task and are scalable
-to a large number of genomic sequences. [@tag:Lanchantin2016_motif] introduced
-several new convolutional and recurrent neural network models for predicting
-TFBSs, but it remains unclear which neural architectures work best for all
-samples and TFs. While neural architectures are rapidly changing and producing
+to a large number of genomic sequences. 
+
+Since the work by [@tag:Alipanahi2015_predicting] was published, there have
+been a multitude of deep learning works on the TFBS task. Due to the 
+motif-driven nature of the TFBS task, most architectures
+have been convolutional-based, as summarized in [@tag:Zeng2016_convolutional].
+[@tag:Lanchantin2016_motif] introduced several new convolutional and 
+recurrent neural network models for predicting TFBSs, which showed improvements
+on the baseline datasets. It is also important
+to note that DNA sequence tasks are fundamentally different than natural
+language tasks, and thus the models should be adapted from traditional
+deep learning models in order to account for such differences.
+For example, motifs may appear in either strand of a DNA sequence, resulting
+in two different forms of the motif (forward and reverse complement) due 
+to complementary base pairing.
+[@tag:Shrikumar2017_reversecomplement] created a convolutional model
+which can find motifs in both directions.
+
+
+Deep learning models have shown great accuracy on the TFBS task, but
+the results are not fully convincing for several reasons based on the
+datasets used and the evaluation of the model's predictions on such
+datasets. First, ChIP-seq experiments give a continuous value of binding 
+likelihood at a certain location based on many experiments at that
+location in DNA. Based on these values, the TFBS task is usually
+converted into a binary classification task based on a certain threshold
+of the ChIP-seq value. However, the value may not be accurate in itself.
+There is no guarantee of a binding or non binding at that location
+depending on which person's sequence it is. Second, most datasets predict
+one TF at a time, using a separate model for each TF. In reality, there
+may be multiple TFs binding at the same location and interacting, thus
+requiring both a dataset which gives all TF binding values at every location
+and a multi-task model. Third, it is unclear exactly
+how to include non-binding or "negative" sites in the datasets. Since the
+number of positive binding sites of a particular TF is relatively small
+with respect to the total number of base-pairs in DNA, we must choose
+a small subset of the total non-binding sites. 
+
+These dataset formulations results in inaccuracies of the evaluation metrics.
+Converting the task into a binary classification isn't completely accurate
+since the model may give a high probability of a binding site, but the
+ChIP-seq binding signal may be just barely over the binary classification
+threshold, resulting in potential false positive (or the signal may be just
+below the threshold, resulting in potential false negatives). One of the 
+biggest flaws is the fact that most datasets artificially balance the
+positive and negative binding binding sites and report auROC for the metric.
+This is very misleading in a task where the binding sites are very unevenly
+balanced in the real world. Thus, we need datasets which more accurately
+model real TFBS data.
+
+While neural architectures are rapidly changing and producing
 better results, it is clear that deep learning can be efficiently and
 effectively used to do functional prediction on the genome given raw data.
+
+
+`TODO: add the following tags:
+Zeng2016_convolutional https://dx.doi.org/10.1093/bioinformatics/btw255
+Shrikumar2017_reversecomplement http://dx.doi.org/10.1101/103663
+`
+
 
 While accurately predicting transcription factors computationally is useful,
 it is important to understand how these computational models make their
