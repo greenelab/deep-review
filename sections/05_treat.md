@@ -192,15 +192,21 @@ binding site, and predicts whether they interact. Wang et al
 a drug-target interaction network and used these models to predict novel
 interactions pointing to new indications for existing drugs. Wen et al.
 [@doi:10.1021/acs.jproteome.6b00618] extended this concept to deep learning by
-creating a DBN of stacked RBMs called DeepDTIs, predicting interactions on the
-basis of chemical structure and protein sequence features.
+creating a DBN of stacked RBMs called DeepDTIs, which is able to predict
+interactions on the basis of chemical structure and protein sequence features.
 
 Drug repositioning appears to be an obvious candidate for the development of
 deep learning applications both because of the large amount of high-dimensional
 data available and because of the complexity of the question being asked.
-However, we believe these are still very early days and what is perhaps the most
-promising piece of work in this space [@doi:10.1021/acs.molpharmaceut.6b00248]
-is more a proof of concept than a real-world hypothesis-generation tool.
+However, what is perhaps the most promising piece of work in this space
+[@doi:10.1021/acs.molpharmaceut.6b00248] is more a proof of concept than a
+real-world hypothesis-generation tool; notably, deep learning was used to
+predict drug indications but not for the actual repositioning. At present, some
+of the most popular state-of-the-art methods for signature-based drug
+repurposing [@doi:10.1038/npjsba.2016.15] do not use predictive modelling. While
+this might change in the future, we believe that a mature and production-ready
+framework where deep learning is directly applied to the problem of drug
+repositioning is currently missing.
 
 ### Ligand-Based Prediction of Bioactivity
 
