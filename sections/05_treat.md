@@ -79,7 +79,45 @@ forest classifier trained on gene expression changes. These approaches
 suggest promising directions to improve the efficiency of clinical trials
 and accelerate drug development.
 
-##### Drug repositioning
+#### Challenges
+
+##### Actionable Interpretability
+
+A common challenge in many applied deep learning problems is the consideration
+of deep learning models as uninterpretable "black boxes". Without human-
+intelligible reasoning for the model's predictions, it is difficult to trust
+the model. This presents a major challenge for the risk-averse task of
+clinical decision making. As described above, there has been some work to
+directly assign treatment plans without interpretability; however, the removal
+of human experts from the decision-making loop make the models difficult to
+integrate with clinical practice. To alleviate this challenge, several studies
+have attempted to create more interpretable deep models, either specifically
+for healthcare or as a general procedure for deep learning.  Further work in
+interpreting predictions and understanding the knowledge learned by deep neural
+networks seem necessary for transformative impact in clinical practice.
+Interpretability in deep learning is reviewed more extensively in the
+Discussion.
+
+##### Integrating Deep Learning with Clinical Practice
+
+As deep learning models are difficult to interpret, many current models have
+been designed to replace aspects of clinical practice rather than to assist
+trained clinicians. This makes it difficult to integrate deep learning with
+clinical decision making. In addition, the challenges that physicians face are
+largely similar to those faced by machine learning models. For a given
+patient, the number of possible diseases is very large, with a long tail of
+rare diseases. Furthermore, patients are highly heterogeneous and may present
+with very different signs and symptoms for the same disease. Physicians are
+experienced in treating patients with common diseases, but rare diseases are
+extremely challenging. Unfortunately, machine learning methods also struggle
+for rare diseases. Because deep learning models are data-intensive, directly
+applying current deep learning models to diagnose patients with rare diseases
+would require prohibitively large datasets. Focused effort in reducing the
+data requirements of deep learning by integrating pre-existing knowledge or
+compiling large datasets of patient records may unlock the power of deep
+learning for clinical practice.
+
+### Drug repositioning
 
 Drug repositioning (or repurposing) is an attractive option for delivering new
 drugs to the market because of the high costs and failure rates associated with
@@ -125,44 +163,6 @@ data available and because of the complexity of the question being asked.
 However, we believe these are still very early days and what is perhaps the most
 promising piece of work in this space [@doi:10.1021/acs.molpharmaceut.6b00248]
 is more a proof of concept than a real-world hypothesis-generation tool.
-
-#### Challenges
-
-##### Actionable Interpretability
-
-A common challenge in many applied deep learning problems is the consideration
-of deep learning models as uninterpretable "black boxes". Without human-
-intelligible reasoning for the model's predictions, it is difficult to trust
-the model. This presents a major challenge for the risk-averse task of
-clinical decision making. As described above, there has been some work to
-directly assign treatment plans without interpretability; however, the removal
-of human experts from the decision-making loop make the models difficult to
-integrate with clinical practice. To alleviate this challenge, several studies
-have attempted to create more interpretable deep models, either specifically
-for healthcare or as a general procedure for deep learning.  Further work in
-interpreting predictions and understanding the knowledge learned by deep neural
-networks seem necessary for transformative impact in clinical practice.
-Interpretability in deep learning is reviewed more extensively in the
-Discussion.
-
-##### Integrating Deep Learning with Clinical Practice
-
-As deep learning models are difficult to interpret, many current models have
-been designed to replace aspects of clinical practice rather than to assist
-trained clinicians. This makes it difficult to integrate deep learning with
-clinical decision making. In addition, the challenges that physicians face are
-largely similar to those faced by machine learning models. For a given
-patient, the number of possible diseases is very large, with a long tail of
-rare diseases. Furthermore, patients are highly heterogeneous and may present
-with very different signs and symptoms for the same disease. Physicians are
-experienced in treating patients with common diseases, but rare diseases are
-extremely challenging. Unfortunately, machine learning methods also struggle
-for rare diseases. Because deep learning models are data-intensive, directly
-applying current deep learning models to diagnose patients with rare diseases
-would require prohibitively large datasets. Focused effort in reducing the
-data requirements of deep learning by integrating pre-existing knowledge or
-compiling large datasets of patient records may unlock the power of deep
-learning for clinical practice.
 
 ### Ligand-Based Prediction of Bioactivity
 
