@@ -27265,5 +27265,12 @@
       "id": "ppGS5h4v"
     },
     "citation_id": "ppGS5h4v"
+  },
+  "arxiv:1703.06490v1": {
+    "source": "arxiv",
+    "identifer": "1703.06490v1",
+    "standard_citation": "arxiv:1703.06490v1",
+    "bibtex": "@article{xl1ijigK,\n abstract = {Access to electronic health records (EHR) data has motivated computational\nadvances in medical research. However, various concerns, particularly over\nprivacy, can limit access to and collaborative use of EHR data. Sharing\nsynthetic EHR data could mitigate risk. In this paper, we propose a new\napproach, medical Generative Adversarial Network (medGAN), to generate\nrealistic synthetic EHRs. Based on an input EHR dataset, medGAN can generate\nhigh-dimensional discrete variables (e.g., binary and count features) via a\ncombination of an autoencoder and generative adversarial networks. We also\npropose minibatch averaging to efficiently avoid mode collapse, and increase\nthe learning efficiency with batch normalization and shortcut connections. To\ndemonstrate feasibility, we showed that medGAN generates synthetic EHR datasets\nthat achieve comparable performance to real data on many experiments including\ndistribution statistics, predictive modeling tasks and medical expert review.},\n archiveprefix = {arXiv},\n author = {Edward Choi and Siddharth Biswal and Bradley Malin and Jon Duke and Walter F. Stewart and Jimeng Sun},\n eprint = {1703.06490v1},\n file = {1703.06490v1.pdf},\n link = {http://arxiv.org/abs/1703.06490v1},\n month = {Mar},\n primaryclass = {cs.LG},\n title = {Generating Multi-label Discrete Electronic Health Records using\nGenerative Adversarial Networks},\n year = {2017}\n}\n\n",
+    "citation_id": "xl1ijigK"
   }
 }

@@ -27584,5 +27584,45 @@
     "title": "MoleculeNet: A benchmark for molecular machine learning",
     "title-short": "MoleculeNet",
     "type": "article-journal"
+  },
+  {
+    "abstract": "Access to electronic health records (EHR) data has motivated computational advances in medical research. However, various concerns, particularly over privacy, can limit access to and collaborative use of EHR data. Sharing synthetic EHR data could mitigate risk. In this paper, we propose a new approach, medical Generative Adversarial Network (medGAN), to generate realistic synthetic EHRs. Based on an input EHR dataset, medGAN can generate high-dimensional discrete variables (e.g., binary and count features) via a combination of an autoencoder and generative adversarial networks. We also propose minibatch averaging to efficiently avoid mode collapse, and increase the learning efficiency with batch normalization and shortcut connections. To demonstrate feasibility, we showed that medGAN generates synthetic EHR datasets that achieve comparable performance to real data on many experiments including distribution statistics, predictive modeling tasks and medical expert review.",
+    "author": [
+      {
+        "family": "Choi",
+        "given": "Edward"
+      },
+      {
+        "family": "Biswal",
+        "given": "Siddharth"
+      },
+      {
+        "family": "Malin",
+        "given": "Bradley"
+      },
+      {
+        "family": "Duke",
+        "given": "Jon"
+      },
+      {
+        "family": "Stewart",
+        "given": "Walter F."
+      },
+      {
+        "family": "Sun",
+        "given": "Jimeng"
+      }
+    ],
+    "id": "xl1ijigK",
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          3
+        ]
+      ]
+    },
+    "title": "Generating multi-label discrete electronic health records using generative adversarial networks",
+    "type": "article-journal"
   }
 ]
