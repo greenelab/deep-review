@@ -271,8 +271,8 @@ great interest, as they are critical components of gene regulatory networks and
 are often conserved across great evolutionary distance [@tag:Bracken2016_mirna
 @tag:Berezikov2011_mirna]. While many machine learning algorithms have been
 applied to solve these prediction tasks, they currently require extensive
-feature selection and optimization. For instance, the widely adopted state of
-the art for miRNA target prediction, TargetScan, trained multiple linear
+feature selection and optimization. For instance, one of the most widely adopted
+tools for miRNA target prediction, TargetScan, trained multiple linear
 regression models on 14 hand-curated features including structural accessibility
 of the target site on the mRNA, the degree of site conservation, and predicted
 thermodynamic stability of the miRNA:mRNA complex [@tag:Agarwal2015_targetscan].
