@@ -143,6 +143,22 @@ This indicates a potential strength of deep methods. It may be possible to
 repurpose features from task to task, improving overall predictions as the field
 tackles new challenges.
 
+Several authors have created reusable feature sets for medical terminologies using
+neural embeddings, as popularized by word2Vec [@tag:Word2Vec]. This approach
+was first used on free text medical notes by De Vine et al.
+[@doi:10.1145/2661829.2661974] with results at or better than traditional methods.
+Y. Choi et al.[@doi:10.1145/2567948.2577348] built embeddings of standardized
+terminologies, such as ICD and NDC, used in widely available administrative
+claims data. By learning terminologies for different entities in the same
+vector space, they can potentially find relationships between different
+domains (e.g. drugs and the diseases they treat). Medical claims data does not
+have the natural document structure of clinical notes, and this issue was
+addressed by E. Choi et al. [@doi:10.1145/2939672.2939823], who built
+embeddings using a multi-layer network architecture which mimics the structure
+of claims data. While promising, difficulties in evaluating the quality of
+these kinds of features and variations in clinical coding practices remain as
+challenges to using them in practice.
+
 Identifying consistent subgroups of individuals and individual health
 trajectories from clinical tests is also an active area of research. Approaches
 inspired by deep learning have been used for both unsupervised feature
@@ -158,9 +174,10 @@ scale analysis of an electronic health records system found that a deep
 denoising autoencoder architecture applied to the number and co-occurrence of
 clinical test events, though not the results of those tests, constructed
 features that were more useful for disease prediction than other existing
-feature construction methods [@doi:10.1038/srep26094].  Taken together, these
-results support the potential of unsupervised feature construction in this
-domain. However, numerous challenges including data integration (patient
+feature construction methods [@doi:10.1038/srep26094].  Razavian et al.
+[@arxiv:1608.00647] used a set of 18 common lab tests to predict disease onset
+using both CNN and LSTM architectures and demonstrated and improvement over baseline
+regression models. However, numerous challenges including data integration (patient
 demographics, family history, laboratory tests, text-based patient records,
 image analysis, genomic data) and better handling of streaming temporal data
 with many features, will need to be overcome before we can fully assess the
@@ -234,7 +251,9 @@ making methodological choices that either reduce the need for labeled examples
 or that use transformations to training data to increase the number of times it
 can be used before overfitting occurs. For example, the unsupervised and
 semi-supervised methods that we've discussed reduce the need for labeled
-examples [@doi:10.1016/j.jbi.2016.10.007]. The adversarial training example
+examples [@doi:10.1016/j.jbi.2016.10.007]. The anchor and learn framework
+[@doi:10.1093/jamia/ocw011] uses expert knowledge to identify high confidence
+observations from which labels can be inferred. The adversarial training example
 strategies that we've mentioned can reduce overfitting, if transformations are
 available that preserve the meaningful content of the data while transforming
 irrelevant features [@doi:10.1101/095786]. While adversarial training examples
@@ -367,25 +386,33 @@ steal trained models via public APIs and Dwork and Roth
 information from accurate answers in a machine learning model. Attackers can use
 similar attacks to find out if particular data instance was present in the
 original training set for the machine learning model [@arxiv:1610.05820] - in
-this case, whether a person's record was present. There are solutions to this
-challenge. Training algorithms in a differentially private information from
-accurate answers in a machine learning model. There are solutions to this
-challenge. Training algorithms in a differentially private manner provides a
-limited guarantee that the algorithms output will be equally likely to occur
-regardless of the participation of any one individual. The limit is determined
-by a single parameter which provides a quantification of privacy. Simmons et al.
-[@doi:10.1016/j.cels.2016.04.013] present the ability to perform GWASs in a
-differentially private manner and Abadi et al. [@arxiv:1607.00133] show the
-ability to train deep learning classifiers under the differential privacy
-framework. Federated learning [@arxiv:1602.05629] and secure aggregations
+this case, whether a person's record was present. This presents a potential
+hazard for approaches that aim to generate data. Choi et al. propose generative
+adversarial neural networks as a tool to make sharable EHR data
+[@arxiv:1703.06490v1]; however, the authors didn't take steps to protect the
+model from such attacks.
+
+There are approaches to protect models, but they pose their own challenges.
+Training algorithms in a differentially private manner provides a limited
+guarantee that an algorithm's output will be equally
+likely to occur regardless of the participation of any one individual. The limit
+is determined by a single parameter which provides a quantification of privacy.
+Simmons et al. [@doi:10.1016/j.cels.2016.04.013] present the ability to perform
+GWASs in a differentially private manner and Abadi et al. [@arxiv:1607.00133]
+show the ability to train deep learning classifiers under the differential
+privacy framework. Federated learning
+[@arxiv:1602.05629] and secure aggregations
 [@url:http://proceedings.mlr.press/v54/mcmahan17a.html
 @url:https://eprint.iacr.org/2017/281.pdf] are complementary approaches that
 reinforce differential privacy. Both aim to maintain privacy by training deep
 learning models from decentralized data sources such as personal mobile devices
 without transferring actual training instances. This is becoming of increasing
-importance with the rapid growth of mobile health applications. However, the
-training process in these approaches places constraints on the algorithms used
-and can make fitting a model substantially more challenging.
+importance with the rapid growth of mobile health applications.
+However, training process in these approaches places constraints on the
+algorithms used and can make fitting a model substantially more challenging.
+In our own experience it can be trivial to train a model without differential
+privacy, but quite difficult to train one within the differential privacy
+framework. The problem can be particularly pronounced with small sample sizes.
 
 While none of these problems are insurmountable or restricted to deep learning,
 they present challenges that cannot be ignored. Technical evolution in EHRs and

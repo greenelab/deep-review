@@ -188,6 +188,18 @@ fleshed out.*
 
 ### Code, data, and model sharing
 
+In addition to methodological improvements, a robust culture of data sharing -
+and in particular the sharing of high-quality labeled datasets - would do much
+to speed advances in this domain. The cultural barriers are perhaps best
+captured by the implications of using the term "research parasite" to describe
+scientists who use data from other researchers [@doi:10.1056/NEJMe1516564]. In
+short, a field that honors only discoveries and not the hard work of generating
+useful data will have difficulty encouraging scientists to share their hard-won
+data. Unfortunately, it's precisely those data that would help to power deep
+learning in the domain. Though not a methodological consideration, efforts are
+underway to recognize those who promote an ecosystem of rigorous sharing and
+analysis [@doi:10.1038/ng.3830].
+
 *Reproducibiliy is important for science to progress. In the context of deep
 learning applied to advance human healthcare, does reproducibility have
 different requirements or alternative connotations? With vast hyperparameter
