@@ -356,7 +356,7 @@ before algorithms are applied.
 Finally, even if data were perfectly consistent and compatible across systems,
 attempts to share and combine EHR data face considerable legal and ethical
 barriers. Patient privacy can severely restrict the sharing and use of EHR
-[@doi:https://doi.org/10.1093/ije/dyn022]. Here again, standards are
+[@doi:10.1093/ije/dyn022]. Here again, standards are
 heterogeneous and evolving but often EHR data can often not be exported or even
 accessed directly for research purposes without appropriate consent. Once again,
 this has the effect of making data gathering more laborious, expansive and
@@ -364,7 +364,7 @@ reducing sample size and study power.
 
 Several technological solutions have been proposed in this direction, allowing
 access to sensitive data satsifying privacy and legal concerns. Software like
-DataShield [@doi:https://doi.org/10.1093/ije/dyu188] and ViPAR
+DataShield [@doi:10.1093/ije/dyu188] and ViPAR
 [@doi:10.1093/ije/dyv193], although not EHR specific, allows querying and
 combining of datasets and calculation of summary statistics across remote sites
 by "taking the analysis to the data". The computation is carried out at the
@@ -481,30 +481,3 @@ Networks)[@arxiv:1602.00357]. This may be a particular area of opportunity for
 deep neural networks. The ability to discover relevant sequences of events from
 large number of trajectories requires powerful and flexible feature construction
 methods - an area at which deep neural networks tend to excel.
-
-#### Has deep learning already induced a strategic inflection point for one or
-#### more aspects?
-
-*I have looked through the papers that we have. I don't see a case in our
-*collection where I felt that we'd be justified to say that deep learning has
-*transformed how we categorize individuals with respect to health and disease.
-*There are definitely interesting applications, but I don't see anything that we
-*couldn't do similarly with some other method.*
-
-### Will deep learning induce a strategic inflection point for categorization?
-
-*This section attempts to get at whether or not we think that deep learning will
-*be transformational. Since we have some room to provide our perspective, I'd
-*suggest that we take a relatively tough look at this once we review where we
-*are in the parts above.*
-
-#### What unique potential does deep learning bring to this?
-
-*Are there areas that we expect deep learning to transform how we categorize
-*disease that we haven't seen yet? Let's get fun with speculation/dreaming on
-*this one.*
-
-#### Where would you point your deep learning efforts if you had the time?
-
-*This can be fun. We might eventually merge this with the section immediately
-*above on deep learning's unique potential here.*
