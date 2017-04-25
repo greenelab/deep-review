@@ -181,12 +181,13 @@ showed that unsupervised feature construction of many features via denoising
 autoencoder neural networks could dramatically reduce the number of labeled
 examples required for subsequent supervised analyses
 [@doi:10.1016/j.jbi.2016.10.007]. In addition, it pointed towards learned
-features being useful for subtyping within a single disease. A concurrent large-
-scale analysis of an electronic health records system found that a deep
-denoising autoencoder architecture applied to the number and co-occurrence of
-clinical test events, though not the results of those tests, constructed
-features that were more useful for disease prediction than other existing
-feature construction methods [@doi:10.1038/srep26094].  Razavian et al.
+features being useful for subtyping within a single disease. In a concurrent
+large-scale analysis of EHR data from 7000,000 patients, Miotto et al
+[@doi:10.1038/srep26094] used a deep denoising autoencoder architecture
+applied to the number and co-occurrence of clinical events ("DeepPatient") to
+learn a representation of patients. The model was able to predict disease
+trajectories within one year with over 90% accuracy and patient-level
+predictions were improved by up to 15% when compared to other methods. Razavian et al.
 [@arxiv:1608.00647] used a set of 18 common lab tests to predict disease onset
 using both CNN and LSTM architectures and demonstrated and improvement over baseline
 regression models. However, numerous challenges including data integration (patient
