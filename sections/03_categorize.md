@@ -217,7 +217,7 @@ analysis model capable of overcoming challenges posed by missing data and
 heterogeneous data types, while uncovering nonlinear relationships between
 covariates and failure time. They showed their model more accurately
 stratified patients as a function of disease risk score compared to the current
-GWASs clinical implementation.
+clinical implementation.
 
 There is a computational cost for these methods, however, when compared to
 traditional, non-network approaches. For the exponential family models,
