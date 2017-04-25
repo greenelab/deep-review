@@ -210,7 +210,7 @@ influence healthcare decisions? Or, is deep learning a hypothesis generation
 machine that requires manual validation? DeepChem and DragoNN are worth
 discussing here.*
 
-### Multimodal and transfer learning
+### Multimodal, multi-task, and transfer learning
 
 As discussed above, the fact that biomedical datasets often contain a limited
 number of instances or labels can be a cause of poor performance of
@@ -218,10 +218,10 @@ machine learning algorithms. When trained on such datasets, deep learning
 models are particularly prone to overfitting due to their high representational
 power. However, transfer learning techniques also known as domain adaptation
 enable transfer of extracted patterns between different datasets and even
-domains. This approach can be described as 2-step process that includes:
-(1) training a model for the base task, and then (2) reusing trained model
+domains. This approach can be described in 2-step process:
+(1) training a model for the base task, and (2) reusing trained model
 for the target problem in hand. The first step allows to take advantage of
-larger amount of data or labels or both to extract better feature
+larger amount of data, labels, or both, to extract better feature
 representations. Transferring learnt features in deep neural networks
 improves performance compared to random features even
 when pre-training and target sets are dissimilar. However,
@@ -232,7 +232,8 @@ In image analysis, previous examples of deep transfer learning applications
 proved large scale natural image sets [@tag:Russakovsky2015_imagenet]
 to be useful for pre-training models that can then serve as generic feature
 extractors applied to various types of biological images
-[@tag:Zeng2015 @tag:Angermueller2016_dl_review @tag:Pawlowski2016]. More
+[@tag:Zeng2015 @tag:Angermueller2016_dl_review @tag:Pawlowski2016
+@tag:Rajkomar2017_radiographs]. More
 recently, deep learning models trained to predict protein sub-cellular
 localization successfully performed predictions for  proteins
  not originally present in the training set [@tag:Parnamaa2017].
@@ -246,12 +247,15 @@ layer-wise hierarchical fashion, this issue is usually addressed by fixing an
 empirically chosen number of layers that preserve generic characteristics
 of both training and target datasets. Then, the model is fine-tuned by
 re-training networks' top layers on the specific dataset in order to
-re-learn domain-specific high level concepts. Fine-tuning on specific biological
+re-learn domain-specific high level concepts.
+
+Fine-tuning on specific biological
 datasets enables more focused predictions. For example, Min et al.
 [@tag:Min2016_deepenhancer] demonstrated how training on the experimentally
 validated FANTOM5 permissive enhancer dataset followed by fine-tuning on ENCODE
 enhancer datasets improved cell type-specific predictions, outperforming
 state-of-the-art results.
+`TODO: mention Basset`
 
 Related to transfer learning, a multimodal learning framework assumes
 simultaneous learning from various types of inputs, such as images and text.
@@ -300,6 +304,18 @@ RNA-seq, and raw DNA sequence to predict Transcription Start Site-seq
 (TSS-seq) outputs. The combined model radically improves performance over
 separately trained datatype-specific networks, suggesting that it learns the
 synergistic relationship between datasets.
+`TODO: more examples of this style of multimodal learning?`
+`TODO: best highlights of the improved performance?`
+
+`TODO: add multi-task learning with examples`
+Multi-task learning (MTL) is an approach related to transfer learning.
+In MTL framework a model co-learns a number of tasks simultaneously such that
+features are shared across them.
+
+MTL approach is complementary to multimodal learning, so both can be
+implemented in the same model.
+
+`TODO: A summary sentence either comparing multimodal learning with transfer learning or providing a take home message`
 
 Despite demonstrated improvements, transfer learning approaches also pose
 a number of challenges. As mentioned above, there are no theoretically sound
@@ -307,7 +323,17 @@ principles for pre-training and fine-tuning. Most best practice recommendations
 are heuristic and have to take into account additional hyper-parameters that
 depend on specific deep architectures, sizes of pre-training and target
 datasets, and similarity of domains. Unfortunately, not many negative results
-are presented in study publications. As rare example, DeepChem, a framework
+are presented in study publications.
+Results by Rajkomar et al. [@tag:Rajkomar2017_radiographs] showed that a deep
+CNN trained on natural images can boost radiology image classification
+performance. However, due to differences in imaging domains it requires
+either re-training initial model from scratch with special pre-processing
+or fine-tuning of the whole network on radiographs with heavy data augmentation
+to avoid overfitting. Just fine-tuning of top layers led to much lower
+validation accuracy (81.38 vs 99.5).
+
+`TODO: shorten DeepChem description`
+As rare example, DeepChem, a framework
 that successfully improved results for low-data drug discovery by implementing
 one-shot learning techniques [@tag:AltaeTran2016_one_shot],
 was not able to achieve any predictive power with transfer learning on
@@ -325,6 +351,7 @@ tasks, DeepChem demonstrated superior performance in low-data regime.
 However, when trained on Tox21 data and tested on SIDER, the model failed,
 clearly demonstrating a limit to the cross-task generalization capability
 of one-shot models.
+`TODO: remind that MTL with many tasks did not necessarily help when the tasks were not sufficiently similar, and "sufficiently similar" is hard to define`
 
 Overall, multimodal and transfer learning strategies demonstrate high potential
 for many biomedical applications that are otherwise limited by data volume.
@@ -335,3 +362,5 @@ establish best practices and determine limits for the transferability of
 features between various close related and distant learning tasks. Making
 negative results and source code public helps to accelerate progress in this
 direction.
+`TODO: add smth on data/model sharing and loop back to categorize disease section`
+`TODO: advocate for sharing models, cite Privacy and google paper`
