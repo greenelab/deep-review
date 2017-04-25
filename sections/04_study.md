@@ -616,39 +616,39 @@ mutations, among others. In the clinical realm, sequencing of rare tumor clones
 and other genetic diseases will require accurate calling of SNP and indels.
 
 Current methods achieve relatively high (>99%) precision at 90% recall for SNPs
-and indel calls from Illumina short-read data, yet this leaves a large number of
-potentially clinically significant remaining false positives and false
-negatives. These methods have so far relied on experts to build probabilistic
-models that reliably separate signal from noise. However, this process is time
-consuming and, more importantly, fundamentally limited by how well we understand
-and can model the factors that contribute to noise. Recently, two groups have
-applied deep learning to construct data-driven and, therefore, unbiased noise
-models. One of these models, DeepVariant, builds directly on well-established
-deep learning methods for image recognition by encoding reads around a candidate
-SNP as a 221x100 bitmap image, where each column is a nucleotide and each row is
-a read from the sample library [@tag:Poplin2016_deepvariant]. The top 5 rows
-represent the reference, and the bottom 95 rows represent randomly sampled reads
-that overlap the candidate variant. Each RGBA (red/green/blue/alpha) image pixel
-encodes the base (A, C, T, G) as a different R value, quality score as a G
-value, strand as a B value, and variation from the reference as the alpha value.
-The neural network outputs genotype probabilities for each candidate variant.
-They were able to achieve better performance than GATK, a leading genotype
-caller, even when GATK was given information about population variation for each
-candidate variant. Another method, still in its infancy, hand-developed 642
-features for each candidate variant and fed these vectors into a fully connected
-deep neural network [@tag:Torracinta2016_deep_snp]. Unfortunately, this feature
-set required at least 15 iterations of software development to fine-tune, which
-will likely not be generalizable. Going forward, we foresee that variant calling
-will benefit most from optimized neural network architectures and better methods
-of encoding raw sequence and quality data (e.g. in tensor rather than RGBA
-format).
+and indel calls from Illumina short-read data [@tag:Poplin2016_deepvariant], yet
+this leaves a large number of potentially clinically significant remaining false
+positives and false negatives. These methods have so far relied on experts to
+build probabilistic models that reliably separate signal from noise. However,
+this process is time consuming and, more importantly, fundamentally limited by
+how well we understand and can model the factors that contribute to noise.
+Recently, two groups have applied deep learning to construct data-driven and,
+therefore, unbiased noise models. One of these models, DeepVariant, builds
+directly on well-established deep learning methods for image recognition by
+encoding reads around a candidate SNP as a 221x100 bitmap image, where each
+column is a nucleotide and each row is a read from the sample library
+[@tag:Poplin2016_deepvariant]. The top 5 rows represent the reference, and the
+bottom 95 rows represent randomly sampled reads that overlap the candidate
+variant. Each RGBA (red/green/blue/alpha) image pixel encodes the base (A, C, T,
+G) as a different R value, quality score as a G value, strand as a B value, and
+variation from the reference as the alpha value. The neural network outputs
+genotype probabilities for each candidate variant. They were able to achieve
+better performance than GATK, a leading genotype caller, even when GATK was
+given information about population variation for each candidate variant. Another
+method, still in its infancy, hand-developed 642 features for each candidate
+variant and fed these vectors into a fully connected deep neural network
+[@tag:Torracinta2016_deep_snp]. Unfortunately, this feature set required at
+least 15 iterations of software development to fine-tune, which will likely not
+be generalizable. Going forward, we foresee that variant calling will benefit
+most from optimized neural network architectures and better methods of encoding
+raw sequence and quality data (e.g. in tensor rather than RGBA format).
 
 In limited experiments, DeepVariant was robust to sequencing depth, read length,
 and even species [@tag:Poplin2016_deepvariant]. However, a model built on
 Illumina data, for instance, will likely not be applicable to PacBio long-read
 data or MinION nanopore data, which have vastly different specificity and
 sensitivity profiles and signal-to-noise characteristics. Recently, Boza et al.
-used bidirectional recurrent neural networks infer the E. coli sequence from
+used bidirectional recurrent neural networks infer the *E. coli* sequence from
 MinION nanopore electric current data with 2% higher per-base accuracy than the
 proprietary hidden Markov model-based algorithm Metrichor (86% to 88%)
 [@tag:Boza]. Unfortunately, training any neural network requires a large amount
