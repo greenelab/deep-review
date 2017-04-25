@@ -308,8 +308,15 @@ RNA-seq, and raw DNA sequence to predict Transcription Start Site-seq
 (TSS-seq) outputs. The combined model radically improves performance over
 separately trained datatype-specific networks, suggesting that it learns the
 synergistic relationship between datasets.
-`TODO: more examples of this style of multimodal learning?`
-`TODO: best highlights of the improved performance?`
+Chaudhary et al. [@tag:Chaudhary2017_multiom_liver_cancer] trained deep
+autoencoder model jointly on RNA-seq, miRNA-seq, and methylation data from TCGA
+to predict survival subgroups of hepatocellular carcinoma patients. This
+multimodal approach that treated different omics as different modalities
+outperformed both traditional methods (PCA) and single-omic models.
+Interestingly, multi-omic model performance did not improve when combined
+with clinical information, suggesting that the model was able to capture
+redundant contributions of clinical features through their correlated
+genomic features.
 
 `TODO: add multi-task learning with examples`
 Multi-task learning (MTL) is an approach related to transfer learning.
