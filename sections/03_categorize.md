@@ -187,14 +187,14 @@ large-scale analysis of EHR data from 7000,000 patients, Miotto et al
 applied to the number and co-occurrence of clinical events ("DeepPatient") to
 learn a representation of patients. The model was able to predict disease
 trajectories within one year with over 90% accuracy and patient-level
-predictions were improved by up to 15% when compared to other methods. Razavian et al.
-[@arxiv:1608.00647] used a set of 18 common lab tests to predict disease onset
-using both CNN and LSTM architectures and demonstrated and improvement over baseline
-regression models. However, numerous challenges including data integration (patient
-demographics, family history, laboratory tests, text-based patient records,
-image analysis, genomic data) and better handling of streaming temporal data
-with many features, will need to be overcome before we can fully assess the
-potential of deep learning for this application area.
+predictions were improved by up to 15% when compared to other methods. Razavian
+et al. [@arxiv:1608.00647] used a set of 18 common lab tests to predict disease
+onset using both CNN and LSTM architectures and demonstrated and improvement
+over baseline regression models. However, numerous challenges including data
+integration (patient demographics, family history, laboratory tests, text-based
+patient records, image analysis, genomic data) and better handling of streaming
+temporal data with many features, will need to be overcome before we can fully
+assess the potential of deep learning for this application area.
 
 Still, recent work has also revealed domains in which deep networks have
 proven superior to traditional methods. Survival analysis models the time
