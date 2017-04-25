@@ -92,12 +92,13 @@ network. Combining this data resource with standard deep learning techniques,
 the authors reach greater than 93% accuracy. One item that is important to note
 with regards to this work is that the authors used their test set for evaluating
 when training had concluded. In other domains, this has resulted in a minimal
-change in the estimated accuracy [@url:http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf]. However,
-there is not yet a single accepted standard within the field of biomedical
-research for such evaluations. We recommend the use of an independent test set
-wherever it is feasible. Despite this minor limitation, the work clearly
-illustrates the potential that can be unlocked from images stored in electronic
-health records.
+change in the estimated accuracy
+[@url:http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf].
+However, there is not yet a single accepted standard within the field of
+biomedical research for such evaluations. We recommend the use of an independent
+test set wherever it is feasible. Despite this minor limitation, the work
+clearly illustrates the potential that can be unlocked from images stored in
+electronic health records.
 
 `TODO: Potential remaining topics: #122 & #151 looked interesting from an early
 glance. - Do we want to make the point that most of the imaging examples don't
@@ -182,71 +183,68 @@ image analysis, genomic data) and better handling of streaming temporal data
 with many features, will need to be overcome before we can fully assess the
 potential of deep learning for this application area.
 
-Still, recent work has also revealed domains in which deep networks have
-proven superior to traditional methods. Survival analysis models the time
-leading to an event of interest from a shared starting point, and in the
-context of EHR data, often associates these events to subject covariates.
-Exploring this relationship is difficult, however, given that EHR data types
-are often heterogeneous, covariates are often missing, and conventional
-approaches require the covariate-event relationship be linear and aligned to a
-specific starting point [@arxiv:1608.02158]. Early approaches, such as the
-Faraggi-Simon feed-forward network, aimed to relax the linearity assumption,
-but performance gains were lacking [@doi:10.1016/S0167-9473(99)00098-5].
-Katzman et al. in turn developed a deep implementation of the Faraggi-Simon
-network that, in addition to outperforming Cox regression, was capable of
-comparing the risk between a given pair of treatments, thus potentially acting
-as recommender system [@arxiv:1606.00931]. To overcome the remaining
-difficulties, researchers have turned to deep exponential families, a class of
-latent generative models that are constructed from any type of exponential
-family distributions [@arxiv:1411.2581v1]. The result was a deep survival
-analysis model capable of overcoming challenges posed by missing data and
-heterogeneous data types, while uncovering nonlinear relationships between
-covariates and failure time. They showed their model more accurately
-stratified patients as a function of disease risk score compared the current
-clinical implementation.
+Still, recent work has also revealed domains in which deep networks have proven
+superior to traditional methods. Survival analysis models the time leading to an
+event of interest from a shared starting point, and in the context of EHR data,
+often associates these events to subject covariates. Exploring this relationship
+is difficult, however, given that EHR data types are often heterogeneous,
+covariates are often missing, and conventional approaches require the
+covariate-event relationship be linear and aligned to a specific starting point
+[@arxiv:1608.02158]. Early approaches, such as the Faraggi-Simon feed-forward
+network, aimed to relax the linearity assumption, but performance gains were
+lacking [@doi:10.1016/S0167-9473(99)00098-5]. Katzman et al. in turn developed a
+deep implementation of the Faraggi-Simon network that, in addition to
+outperforming Cox regression, was capable of comparing the risk between a given
+pair of treatments, thus potentially acting as recommender system
+[@arxiv:1606.00931]. To overcome the remaining difficulties, researchers have
+turned to deep exponential families, a class of latent generative models that
+are constructed from any type of exponential family distributions
+[@arxiv:1411.2581v1]. The result was a deep survival analysis model capable of
+overcoming challenges posed by missing data and heterogeneous data types, while
+uncovering nonlinear relationships between covariates and failure time. They
+showed their model more accurately stratified patients as a function of disease
+risk score compared the current clinical implementation.
 
 There is a computational cost for these methods, however, when compared to
-traditional, non-network approaches. For the exponential family models,
-despite their scalability [@arxiv:1206.7051], an important question for the
-investigator is whether he or she is interested in estimates of posterior
-uncertainty. Given that these models are effectively Bayesian neural networks,
-much of their utility simplifies to whether a Bayesian approach is warranted
-for a given increase in computational cost. Moreover, as with all variational
-methods, future work must continue to explore just how well the posterior
-distributions are approximated, especially as model complexity increases
-[@arxiv:1511.02386].
+traditional, non-network approaches. For the exponential family models, despite
+their scalability [@arxiv:1206.7051], an important question for the investigator
+is whether he or she is interested in estimates of posterior uncertainty. Given
+that these models are effectively Bayesian neural networks, much of their
+utility simplifies to whether a Bayesian approach is warranted for a given
+increase in computational cost. Moreover, as with all variational methods,
+future work must continue to explore just how well the posterior distributions
+are approximated, especially as model complexity increases [@arxiv:1511.02386].
 
 ##### Challenges and opportunities in patient categorization
 
 ###### Generating ground-truth labels can be expensive or impossible
 
 A dearth of true labels is perhaps among the biggest obstacles for EHR-based
-analyses that employ machine learning. Popular deep learning
-(and machine learning) methods are often used to tackle classification tasks and
-thus require ground-truth labels for training.  For EHRs this can mean that
-researchers must hire multiple clinicians to manually read and
-annotate individual patients' records through a process called chart review.
-This allows researchers to assign "true" labels, i.e. those that match our best
-available knowledge. Depending on the application, sometimes the features
-constructed by algorithms also need to be manually validated and interpreted by
-clinicians. This can be time consuming and expensive
-[@doi:10.1016/j.ijmedinf.2016.09.014]. Because of these costs, much of this
-research, including the work cited in this review, skips the process of expert
-review. Clinicians' skepticism for research without expert review may greatly
-dampen their enthusiasm for the work and consequently reduce its impact. To
-date, even well-resourced large national consortia have been challenged by the
-task of acquiring enough expert-validated labeled data. For instance, in the
-eMERGE consortia and PheKB database [@url:https://phekb.org/implementations],
-most samples with expert validation contain only 100 to 300 patients. These
-datasets are quite small, even for simple machine learning algorithms. The
-challenge is greater for deep learning models with many parameters. While
-unsupervised and semi-supervised approaches can help with small sample sizes,
-the field would benefit greatly from large collections of anonymized records in
-which a substantial number of records have undergone expert review. This
-challenge is not unique to EHR-based studies. Work on medical images, -omics
-data in applications for which detailed metadata are required, and other
-applications for which labels are costly to obtain will be hampered as long as
-abundant curated data are unavailable.
+analyses that employ machine learning. Popular deep learning (and machine
+learning) methods are often used to tackle classification tasks and thus require
+ground-truth labels for training.  For EHRs this can mean that researchers must
+hire multiple clinicians to manually read and annotate individual patients'
+records through a process called chart review. This allows researchers to assign
+"true" labels, i.e. those that match our best available knowledge. Depending on
+the application, sometimes the features constructed by algorithms also need to
+be manually validated and interpreted by clinicians. This can be time consuming
+and expensive [@doi:10.1016/j.ijmedinf.2016.09.014]. Because of these costs,
+much of this research, including the work cited in this review, skips the
+process of expert review. Clinicians' skepticism for research without expert
+review may greatly dampen their enthusiasm for the work and consequently reduce
+its impact. To date, even well-resourced large national consortia have been
+challenged by the task of acquiring enough expert-validated labeled data. For
+instance, in the eMERGE consortia and PheKB database
+[@url:https://phekb.org/implementations], most samples with expert validation
+contain only 100 to 300 patients. These datasets are quite small, even for
+simple machine learning algorithms. The challenge is greater for deep learning
+models with many parameters. While unsupervised and semi-supervised approaches
+can help with small sample sizes, the field would benefit greatly from large
+collections of anonymized records in which a substantial number of records have
+undergone expert review. This challenge is not unique to EHR-based studies. Work
+on medical images, -omics data in applications for which detailed metadata are
+required, and other applications for which labels are costly to obtain will be
+hampered as long as abundant curated data are unavailable.
 
 Successful approaches to date in this domain have sidestepped this challenge by
 making methodological choices that either reduce the need for labeled examples
@@ -278,14 +276,15 @@ Methods to accomplish more with little high-quality labeled data are also being
 applied in other domains and may also be adapted to this challenge, e.g. data
 programming [@arxiv:1605.07723]. In data programming, noisy automated labeling
 functions are integrated. Numerous writers have described data as the new oil
-[@url:http://ana.blogs.com/maestros/2006/11/data_is_the_new.html, @url:https://medium.com/twenty-one-hundred/data-is-the-new-oil-a-ludicrous-proposition-1d91bba4f294].
+[@url:http://ana.blogs.com/maestros/2006/11/data_is_the_new.html,
+@url:https://medium.com/twenty-one-hundred/data-is-the-new-oil-a-ludicrous-proposition-1d91bba4f294].
 The idea behind this metaphor is that data are available in large quantities,
 valuable once refined, and the underlying resource that will enable a
 data-driven revolution in how work is done. Contrasting with this perspective,
 Ratner, Bach, and Ré described labeled training data as "The _New_ New Oil"
 [@url:http://hazyresearch.github.io/snorkel/blog/weak_supervision.html]. In this
-framing, data are abundant and not a scarce resource. Instead, new approaches
-to solve problems arise when labeled training data become sufficient to enable
+framing, data are abundant and not a scarce resource. Instead, new approaches to
+solve problems arise when labeled training data become sufficient to enable
 them. Based on our review of research on deep learning methods to categorize
 disease, the latter framing rings true.
 
@@ -316,22 +315,22 @@ Even within the same healthcare system, EHRs can be used differently
 [@pmid:24159271 @pmid:21347133]. Individual users have unique usage patterns,
 with different departments and different hospitals having different priorities
 which code patients and introduce missing data in a non-random fashion
-[@pmid:12849909]. Patient data may be kept across several "silos" within a
-single health system. Even the most basic task of matching patients across
-systems can be challenging due to data entry issues [@pmid:27134610]. The
-situation is further exacerbated by the ongoing introduction, evolution and
-migration of EHR systems, especially where reorganized and acquired healthcare
-facilities have to merge. As a result, EHR can be less complete and less
-objective than expected.
+[@doi:10.1016/S0168-8510(02)00208-7]. Patient data may be kept across several
+"silos" within a single health system. Even the most basic task of matching
+patients across systems can be challenging due to data entry issues
+[@pmid:27134610]. The situation is further exacerbated by the ongoing
+introduction, evolution and migration of EHR systems, especially where
+reorganized and acquired healthcare facilities have to merge. As a result, EHR
+can be less complete and less objective than expected.
 
 In the wider picture, standards for EHRs are many and evolving. Proprietary
 systems, indifferent and scattered use of health information standards and
 controlled terminologies makes combining and comparison of data across systems
-challenging [@url:http://www.ncrr.nih.gov/
-publications/informatics/ehr.pdf][@doi:10.1016/j.jbi.2014.10.006]. Further
-diversity arises from variation in languages, healthcare practices and
-demographics. Merging EHR gathered in different systems (and even under
-different assumptions) is challenging [@isbn:9783319448398].
+challenging [@url:http://www.ncrr.nih.gov/publications/informatics/ehr.pdf
+@doi:10.1016/j.jbi.2014.10.006]. Further diversity arises from variation in
+languages, healthcare practices and demographics. Merging EHR gathered in
+different systems (and even under different assumptions) is challenging
+[@doi:10.1007/978-3-319-44839-8].
 
 Combining or replicating studies across systems thus requires controlling for
 both the above biases and dealing with mismatching standards. This has the
@@ -358,17 +357,21 @@ accessed directly for research purposes without appropriate consent. Once again,
 this has the effect of making data gathering more laborious, expansive and
 reducing sample size and study power.
 
-Several technological solutions have been proposed in this area. Solutions like
+Several technological solutions have been proposed in this direction, allowing
+access to sensitive data satisfying privacy and legal concerns. Software like
 DataShield [@doi:https://doi.org/10.1093/ije/dyu188] and ViPAR
-[@doi:10.1093/ije/dyv193] allows querying and combining of datasets and the
-calculation of summary statistics across sites without compromising patient
-identity. Continuous Analysis [@doi:10.1038/nbt.3780] can allow reproducible
-computing on private data. Using such techniques intermediate results can be
-automatically tracked and shared without sharing the original data.  which may
-help to address concerns around physician confidence. The EH4CR project
-[@doi:10.1016/j.jbi.2014.10.006] goes a step further by allowing secure EHR
-records to be queried remotely via an inter-mediation layer that translates
-local formats and datastores.  
+[@doi:10.1093/ije/dyv193], although not EHR specific, allows querying and
+combining of datasets and calculation of summary statistics across remote sites
+by "taking the analysis to the data". The computation is carried out at the
+remote site. Conversely, the EH4CR project [@doi:10.1016/j.jbi.2014.10.006]
+allows analysis of private data by use of an inter-mediation layer that
+intreprets remote queries across internal   formats and datastores and returns
+the results in a de-identified standard form, thus giving real-time consistent
+but secure access. Continuous Analysis [@doi:10.1038/nbt.3780] can allow
+reproducible computing on private data. Using such techniques intermediate
+results can be automatically tracked and shared without sharing the original
+data. While none of these have been used in deep learning, the potential is
+there.
 
 Even without sharing data, algorithms trained on confidential patient data may
 present security risks or accidentally allow for the exposure of individual
@@ -399,7 +402,7 @@ privacy framework. Federated learning
 reinforce differential privacy. Both aim to maintain privacy by training deep
 learning models from decentralized data sources such as personal mobile devices
 without transferring actual training instances. This is becoming of increasing
-importance with the rapid growth of mobile health applications. However,
+importance with the rapid growth of mobile health applications. However, the
 training process in these approaches places constraints on the algorithms used
 and can make fitting a model substantially more challenging. In our own
 experience it can be trivial to train a model without differential privacy, but
@@ -425,7 +428,8 @@ able to explain how a decision was reached. For example, a clinician treating a
 patient who is aided by a machine learning algorithm may be expected to explain
 decisions that use the patient's data. The new rules were designed to target
 categorization or recommendation systems, which inherently profile individuals.
-Such systems can do so in ways that are discriminatory and unlawful `TODO: @traversc citation needed`.
+Such systems can do so in ways that are discriminatory and unlawful `TODO:
+@traversc citation needed`.
 
 As datasets become larger and more complex, we may begin to identify
 relationships in data that are important for human health but difficult to
@@ -435,12 +439,13 @@ practice. However, to discover and avoid discriminatory applications it will be
 important to consider algorithm interpretability alongside accuracy. For
 example, if we train an algorithm to predict which drugs would be prescribed
 during a patient's visit to the doctor and there's an existing pattern of racial
-differences in prescription behavior (`TODO: @traversc - you can pick a different example but I think we need one - whichever one you think is most fully supported by the literature.`),
-this pattern could become baked into the predictions made by the algorithm.
-Machine learning practitioners, and particularly those who use deep neural
-networks, which are challenging to interpret, must remain cognizant of this
-possibility and make every effort to prevent harm from discriminatory
-predictions.
+differences in prescription behavior (`TODO: @traversc - you can pick a
+different example but I think we need one - whichever one you think is most
+fully supported by the literature.`), this pattern could become baked into the
+predictions made by the algorithm. Machine learning practitioners, and
+particularly those who use deep neural networks, which are challenging to
+interpret, must remain cognizant of this possibility and make every effort to
+prevent harm from discriminatory predictions.
 
 To reach their potential in this domain, deep learning methods will need to be
 interpretable. Researchers need to consider the extent to which biases may be
