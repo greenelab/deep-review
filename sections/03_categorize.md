@@ -139,9 +139,10 @@ outperformed the other methods. Of particular interest, when the authors first
 trained a neural network to predict primary site and then repurposed those
 features as a component of a secondary neural network trained to predict
 laterality, the performance was higher than a laterality-trained neural network.
-This indicates a potential strength of deep methods. It may be possible to
-repurpose features from task to task, improving overall predictions as the field
-tackles new challenges.
+This indicates a potential strength of deep methods. They can repurpose
+features across tasks, improving overall predictions as the field tackles
+new challenges. This approach is known as transfer learning and further
+discussed in greater detail in the Discussion section.
 
 Several authors have created reusable feature sets for medical terminologies using
 neural embeddings, as popularized by word2Vec [@tag:Word2Vec]. This approach
