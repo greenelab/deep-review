@@ -104,6 +104,7 @@ onecodex	url:https://www.onecodex.com/
 Pereira2016_docking	doi:10.1021/acs.jcim.6b00355
 PerezSianes2016_screening	doi:10.1007/978-3-319-40126-3_2
 Phymm	doi:10.1038/nmeth.1358
+Poplin2016_deepvariant	doi:10.1101/092890
 Qin2017_onehot	doi:10.1371/journal.pcbi.1005403
 Qiu2017_graph_embedding	doi:10.1101/110668
 Ragoza_protein	arxiv:1612.02751
@@ -142,6 +143,8 @@ Tan2015_adage	doi:10.1128/mSystems.00025-15
 Tan2016_eadage	doi:10.1101/078659
 TAC-ELM	doi:10.1142/S0219720012500151
 TensorFlow	url:http://download.tensorflow.org/paper/whitepaper2015.pdf
+Torracinta2016_deep_snp	doi:10.1101/097469
+Torracinta2016_sim	doi:10.1101/079087
 Tu1996_anns	doi:10.1016/S0895-4356(96)00002-9
 Unterthiner2014_screening	url:http://www.bioinf.at/publications/2014/NIPS2014a.pdf
 Vanhoucke2011_cpu	url:https://research.google.com/pubs/pub37631.html
