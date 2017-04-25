@@ -338,26 +338,11 @@ validation accuracy (81.38 vs 99.5).
 Fine-tuning procedure for the above-mentioned Basset model pre-trained on data
 from different cell types required not more than one training pass. Otherwise
 the model started overfitting new data [@tag:Kelley2016_basset].
-
-`TODO: shorten DeepChem description`
-As rare example, DeepChem, a framework
-that successfully improved results for low-data drug discovery by implementing
-one-shot learning techniques [@tag:AltaeTran2016_one_shot],
-was not able to achieve any predictive power with transfer learning on
-closely related testing tasks from different datasets.
-This long shot-term memory (LSTM) based method addressed training set
-size limitations by implementing one-shot learning approaches that aim to
-learn information about objects from few training examples. DeepChem showed
-significant improvement in predictive power for a variety of problems meaningful
-for low-data drug discovery and in its ability to generalize new experimental
-assays, related but not identical to the training collection. Originally it was
-used separately on the Tox21 dataset, containing 12 nuclear receptor assays
-related to human toxicity, and the SIDER dataset containing information on
-marketed medicines and their observed adverse reactions. For both prediction
-tasks, DeepChem demonstrated superior performance in low-data regime.
-However, when trained on Tox21 data and tested on SIDER, the model failed,
-clearly demonstrating a limit to the cross-task generalization capability
-of one-shot models.
+DeepChem framework, discussed above, successfully improved results for
+low-data drug discovery with one-shot learning, but it was not able to achieve
+any predictive power with transfer learning on closely related testing tasks
+from different datasets, clearly demonstrating a limit to the cross-task
+generalization capability of one-shot models [@tag:AltaeTran2016_one_shot].
 `TODO: remind that MTL with many tasks did not necessarily help when the tasks were not sufficiently similar, and "sufficiently similar" is hard to define`
 
 Overall, multimodal and transfer learning strategies demonstrate high potential
