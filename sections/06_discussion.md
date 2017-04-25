@@ -232,8 +232,7 @@ In image analysis, previous examples of deep transfer learning applications
 proved large scale natural image sets [@tag:Russakovsky2015_imagenet]
 to be useful for pre-training models that can then serve as generic feature
 extractors applied to various types of biological images
-[@tag:Zeng2015 @tag:Angermueller2016_dl_review @tag:Pawlowski2016
-@tag:Rajkomar2017_radiographs]. More
+[@tag:Zeng2015 @tag:Angermueller2016_dl_review @tag:Pawlowski2016]. More
 recently, deep learning models trained to predict protein sub-cellular
 localization successfully performed predictions for  proteins
  not originally present in the training set [@tag:Parnamaa2017].
@@ -246,16 +245,21 @@ imaging. Because learnt patterns are represented in deep neural networks in a
 layer-wise hierarchical fashion, this issue is usually addressed by fixing an
 empirically chosen number of layers that preserve generic characteristics
 of both training and target datasets. Then, the model is fine-tuned by
-re-training networks' top layers on the specific dataset in order to
-re-learn domain-specific high level concepts.
-
-Fine-tuning on specific biological
-datasets enables more focused predictions. For example, Min et al.
+re-training a number of networks' top layers on the specific dataset in order to
+re-learn domain-specific high level concepts, for example, see fine-tuning for
+radiology image classification [@tag:Rajkomar2017_radiographs].
+Fine-tuning on specific biological datasets enables more focused predictions.
+Basset package [@tag:Kelley2016_basset] for prediction of functional activities
+from DNA sequences was shown to rapidly learn to accurately predict new data by
+leveraging a model pre-trained on available "public" data. To simulate such
+scenario authors put aside 15 of original 164 cell type datasets and trained
+Basset model on the remaining 149. Then, they fine-tuned the model with one
+training pass of each of remaining datasets and achieved results close to
+the model trained on all 164 datasets together. In another example, Min et al.
 [@tag:Min2016_deepenhancer] demonstrated how training on the experimentally
 validated FANTOM5 permissive enhancer dataset followed by fine-tuning on ENCODE
 enhancer datasets improved cell type-specific predictions, outperforming
 state-of-the-art results.
-`TODO: mention Basset`
 
 Related to transfer learning, a multimodal learning framework assumes
 simultaneous learning from various types of inputs, such as images and text.
@@ -331,6 +335,9 @@ either re-training initial model from scratch with special pre-processing
 or fine-tuning of the whole network on radiographs with heavy data augmentation
 to avoid overfitting. Just fine-tuning of top layers led to much lower
 validation accuracy (81.38 vs 99.5).
+Fine-tuning procedure for the above-mentioned Basset model pre-trained on data
+from different cell types required not more than one training pass. Otherwise
+the model started overfitting new data [@tag:Kelley2016_basset].
 
 `TODO: shorten DeepChem description`
 As rare example, DeepChem, a framework
