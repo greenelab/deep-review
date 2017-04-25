@@ -640,8 +640,11 @@ variant and fed these vectors into a fully connected deep neural network
 [@tag:Torracinta2016_deep_snp]. Unfortunately, this feature set required at
 least 15 iterations of software development to fine-tune, which will likely not
 be generalizable. Going forward, we foresee that variant calling will benefit
-most from optimized neural network architectures and better methods of encoding
-raw sequence and quality data (e.g. in tensor rather than RGBA format).
+more from optimizing neural network architectures than from developing features
+by hand. An interesting and informative next step would be to test whether
+encoding raw sequence and quality data as an image, tensor, or some other mixed
+format produces the best variant calls, given identical network architectures
+and other parameters.
 
 In limited experiments, DeepVariant was robust to sequencing depth, read length,
 and even species [@tag:Poplin2016_deepvariant]. However, a model built on
