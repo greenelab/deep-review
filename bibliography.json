@@ -25551,6 +25551,744 @@
     "id": "ppGS5h4v"
   },
   {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          4,
+          2
+        ]
+      ],
+      "date-time": "2017-04-02T04:48:24Z",
+      "timestamp": 1491108504137
+    },
+    "reference-count": 0,
+    "publisher": "American Psychological Association (APA)",
+    "issue": "5",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Journal of Educational Psychology"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          1974
+        ]
+      ]
+    },
+    "DOI": "10.1037/h0037350",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2006,
+          6,
+          8
+        ]
+      ],
+      "date-time": "2006-06-08T01:08:10Z",
+      "timestamp": 1149728890000
+    },
+    "page": "688-701",
+    "source": "Crossref",
+    "is-referenced-by-count": 1615,
+    "title": "Estimating causal effects of treatments in randomized and nonrandomized studies.",
+    "prefix": "10.1037",
+    "volume": "66",
+    "author": [
+      {
+        "given": "Donald B.",
+        "family": "Rubin",
+        "affiliation": []
+      }
+    ],
+    "member": "15",
+    "container-title": "Journal of Educational Psychology",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2011,
+          8,
+          23
+        ]
+      ],
+      "date-time": "2011-08-23T13:47:16Z",
+      "timestamp": 1314107236000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          1974
+        ]
+      ]
+    },
+    "references-count": 0,
+    "alternative-id": [
+      "1975-06502-001"
+    ],
+    "URL": "http://dx.doi.org/10.1037/h0037350",
+    "relation": {},
+    "issn-type": [
+      {
+        "value": "0022-0663",
+        "type": "print"
+      }
+    ],
+    "subject": [
+      "Education",
+      "Developmental and Educational Psychology"
+    ],
+    "id": "cpNVdlL7"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          4,
+          1
+        ]
+      ],
+      "date-time": "2017-04-01T03:11:56Z",
+      "timestamp": 1491016316606
+    },
+    "reference-count": 31,
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "4",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "J Am Med Inform Assoc"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2016,
+          7
+        ]
+      ]
+    },
+    "DOI": "10.1093/jamia/ocw011",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          4,
+          24
+        ]
+      ],
+      "date-time": "2016-04-24T00:18:19Z",
+      "timestamp": 1461457099000
+    },
+    "page": "731-740",
+    "source": "Crossref",
+    "is-referenced-by-count": 2,
+    "title": "Electronic medical record phenotyping using the anchor and learn framework",
+    "prefix": "10.1093",
+    "volume": "23",
+    "author": [
+      {
+        "given": "Yoni",
+        "family": "Halpern",
+        "affiliation": []
+      },
+      {
+        "given": "Steven",
+        "family": "Horng",
+        "affiliation": []
+      },
+      {
+        "given": "Youngduck",
+        "family": "Choi",
+        "affiliation": []
+      },
+      {
+        "given": "David",
+        "family": "Sontag",
+        "affiliation": []
+      }
+    ],
+    "member": "286",
+    "published-online": {
+      "date-parts": [
+        [
+          2016,
+          4,
+          23
+        ]
+      ]
+    },
+    "container-title": "Journal of the American Medical Informatics Association",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          23
+        ]
+      ],
+      "date-time": "2017-01-23T19:48:54Z",
+      "timestamp": 1485200934000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          4,
+          23
+        ]
+      ]
+    },
+    "references-count": 31,
+    "alternative-id": [
+      "10.1093/jamia/ocw011"
+    ],
+    "URL": "http://dx.doi.org/10.1093/jamia/ocw011",
+    "relation": {},
+    "issn-type": [
+      {
+        "value": "1067-5027",
+        "type": "print"
+      },
+      {
+        "value": "1527-974X",
+        "type": "electronic"
+      }
+    ],
+    "subject": [
+      "Health Informatics"
+    ],
+    "id": "A9JeoGV8"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          3,
+          31
+        ]
+      ],
+      "date-time": "2017-03-31T16:59:20Z",
+      "timestamp": 1490979560540
+    },
+    "publisher-location": "New York, New York, USA",
+    "reference-count": 10,
+    "publisher": "ACM Press",
+    "license": [
+      {
+        "URL": "http://www.acm.org/publications/policies/copyright_policy#Background",
+        "start": {
+          "date-parts": [
+            [
+              2014,
+              4,
+              7
+            ]
+          ],
+          "date-time": "2014-04-07T00:00:00Z",
+          "timestamp": 1396828800000
+        },
+        "delay-in-days": 96,
+        "content-version": "vor"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2014
+        ]
+      ]
+    },
+    "DOI": "10.1145/2567948.2577348",
+    "type": "paper-conference",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          2,
+          5
+        ]
+      ],
+      "date-time": "2016-02-05T19:44:31Z",
+      "timestamp": 1454701471000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 19,
+    "title": "Learning semantic representations using convolutional neural networks for web search",
+    "prefix": "10.1145",
+    "author": [
+      {
+        "given": "Yelong",
+        "family": "Shen",
+        "affiliation": [
+          {
+            "name": "Kent State University, Kent, OH, USA"
+          }
+        ]
+      },
+      {
+        "given": "Xiaodong",
+        "family": "He",
+        "affiliation": [
+          {
+            "name": "Microsoft, Redmond, WA, USA"
+          }
+        ]
+      },
+      {
+        "given": "Jianfeng",
+        "family": "Gao",
+        "affiliation": [
+          {
+            "name": "Microsoft, Redmond, WA, USA"
+          }
+        ]
+      },
+      {
+        "given": "Li",
+        "family": "Deng",
+        "affiliation": [
+          {
+            "name": "Microsoft, Redmond, WA, USA"
+          }
+        ]
+      },
+      {
+        "given": "Grégoire",
+        "family": "Mesnil",
+        "affiliation": [
+          {
+            "name": "University of Montréal, Montréal, Canada"
+          }
+        ]
+      }
+    ],
+    "member": "320",
+    "container-title": "Proceedings of the 23rd International Conference on World Wide Web - WWW '14 Companion",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          12,
+          6
+        ]
+      ],
+      "date-time": "2016-12-06T21:46:47Z",
+      "timestamp": 1481060807000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2014
+        ]
+      ]
+    },
+    "references-count": 10,
+    "URL": "http://dx.doi.org/10.1145/2567948.2577348",
+    "relation": {
+      "cites": []
+    },
+    "id": "1qa47hoP"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          4,
+          1
+        ]
+      ],
+      "date-time": "2017-04-01T02:45:31Z",
+      "timestamp": 1491014731095
+    },
+    "publisher-location": "New York, New York, USA",
+    "reference-count": 17,
+    "publisher": "ACM Press",
+    "license": [
+      {
+        "URL": "http://www.acm.org/publications/policies/copyright_policy#Background",
+        "start": {
+          "date-parts": [
+            [
+              2014,
+              11,
+              3
+            ]
+          ],
+          "date-time": "2014-11-03T00:00:00Z",
+          "timestamp": 1414972800000
+        },
+        "delay-in-days": 306,
+        "content-version": "vor"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2014
+        ]
+      ]
+    },
+    "DOI": "10.1145/2661829.2661974",
+    "type": "paper-conference",
+    "created": {
+      "date-parts": [
+        [
+          2014,
+          11,
+          7
+        ]
+      ],
+      "date-time": "2014-11-07T17:10:54Z",
+      "timestamp": 1415380254000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 4,
+    "title": "Medical Semantic Similarity with a Neural Language Model",
+    "prefix": "10.1145",
+    "author": [
+      {
+        "given": "Lance",
+        "family": "De Vine",
+        "affiliation": []
+      },
+      {
+        "given": "Guido",
+        "family": "Zuccon",
+        "affiliation": []
+      },
+      {
+        "given": "Bevan",
+        "family": "Koopman",
+        "affiliation": []
+      },
+      {
+        "given": "Laurianne",
+        "family": "Sitbon",
+        "affiliation": []
+      },
+      {
+        "given": "Peter",
+        "family": "Bruza",
+        "affiliation": []
+      }
+    ],
+    "member": "320",
+    "container-title": "Proceedings of the 23rd ACM International Conference on Conference on Information and Knowledge Management - CIKM '14",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          12,
+          7
+        ]
+      ],
+      "date-time": "2016-12-07T02:44:26Z",
+      "timestamp": 1481078666000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2014
+        ]
+      ]
+    },
+    "references-count": 17,
+    "URL": "http://dx.doi.org/10.1145/2661829.2661974",
+    "relation": {
+      "cites": []
+    },
+    "id": "XQtuRkTU"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          4,
+          1
+        ]
+      ],
+      "date-time": "2017-04-01T19:33:26Z",
+      "timestamp": 1491075206096
+    },
+    "publisher-location": "New York, New York, USA",
+    "reference-count": 39,
+    "publisher": "ACM Press",
+    "license": [
+      {
+        "URL": "http://www.acm.org/publications/policies/copyright_policy#Background",
+        "start": {
+          "date-parts": [
+            [
+              2016,
+              8,
+              13
+            ]
+          ],
+          "date-time": "2016-08-13T00:00:00Z",
+          "timestamp": 1471046400000
+        },
+        "delay-in-days": 225,
+        "content-version": "vor"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/100006785",
+        "name": "Google",
+        "doi-asserted-by": "publisher",
+        "award": []
+      },
+      {
+        "DOI": "10.13039/100000001",
+        "name": "National Science Foundation",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "1418511"
+        ]
+      },
+      {
+        "name": "Samsung Scholarship",
+        "award": []
+      },
+      {
+        "name": "Centers for Disease Control and Prevention",
+        "award": []
+      },
+      {
+        "name": "Children's Healthcare of Atlanta",
+        "award": []
+      },
+      {
+        "name": "UCB",
+        "award": []
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "DOI": "10.1145/2939672.2939823",
+    "type": "paper-conference",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          8,
+          8
+        ]
+      ],
+      "date-time": "2016-08-08T18:33:46Z",
+      "timestamp": 1470681226000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 1,
+    "title": "Multi-layer Representation Learning for Medical Concepts",
+    "prefix": "10.1145",
+    "author": [
+      {
+        "given": "Edward",
+        "family": "Choi",
+        "affiliation": [
+          {
+            "name": "Georgia Institute of Technology, Atlanta, GA, USA"
+          }
+        ]
+      },
+      {
+        "given": "Mohammad Taha",
+        "family": "Bahadori",
+        "affiliation": [
+          {
+            "name": "Georgia Institute of Technology, Atlanta, GA, USA"
+          }
+        ]
+      },
+      {
+        "given": "Elizabeth",
+        "family": "Searles",
+        "affiliation": [
+          {
+            "name": "Children's Healthcare of Atlanta, Atlanta, GA, USA"
+          }
+        ]
+      },
+      {
+        "given": "Catherine",
+        "family": "Coffey",
+        "affiliation": [
+          {
+            "name": "Children's Healthcare of Atlanta, Atlanta, GA, USA"
+          }
+        ]
+      },
+      {
+        "given": "Michael",
+        "family": "Thompson",
+        "affiliation": [
+          {
+            "name": "Children's Healthcare of Atlanta, Atlanta, GA, USA"
+          }
+        ]
+      },
+      {
+        "given": "James",
+        "family": "Bost",
+        "affiliation": [
+          {
+            "name": "Children's Healthcare of Atlanta, Atlanta, GA, USA"
+          }
+        ]
+      },
+      {
+        "given": "Javier",
+        "family": "Tejedor-Sojo",
+        "affiliation": [
+          {
+            "name": "Children's Healthcare of Atlanta, Atlanta, GA, USA"
+          }
+        ]
+      },
+      {
+        "given": "Jimeng",
+        "family": "Sun",
+        "affiliation": [
+          {
+            "name": "Georgia Institute of Technology, Atlanta, GA, USA"
+          }
+        ]
+      }
+    ],
+    "member": "320",
+    "container-title": "Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining - KDD '16",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          12,
+          7
+        ]
+      ],
+      "date-time": "2016-12-07T04:54:12Z",
+      "timestamp": 1481086452000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "references-count": 39,
+    "URL": "http://dx.doi.org/10.1145/2939672.2939823",
+    "relation": {
+      "cites": []
+    },
+    "id": "TwvauiTv"
+  },
+  {
+    "source": "PMC",
+    "accessed": {
+      "date-parts": [
+        [
+          2017,
+          4,
+          25
+        ]
+      ]
+    },
+    "id": "FUIfIdE",
+    "title": "Causal Phenotype Discovery via Deep Networks",
+    "author": [
+      {
+        "family": "Kale",
+        "given": "David C."
+      },
+      {
+        "family": "Che",
+        "given": "Zhengping"
+      },
+      {
+        "family": "Bahadori",
+        "given": "Mohammad Taha"
+      },
+      {
+        "family": "Li",
+        "given": "Wenzhe"
+      },
+      {
+        "family": "Liu",
+        "given": "Yan"
+      },
+      {
+        "family": "Wetzel",
+        "given": "Randall"
+      }
+    ],
+    "container-title-short": "AMIA Annu Symp Proc",
+    "container-title": "AMIA Annual Symposium Proceedings",
+    "publisher": "American Medical Informatics Association",
+    "issued": {
+      "date-parts": [
+        [
+          2015
+        ]
+      ]
+    },
+    "page": "677-686",
+    "volume": "2015",
+    "PMID": "26958203",
+    "PMCID": "PMC4765623",
+    "type": "article-journal"
+  },
+  {
     "abstract": "After a more than decade-long period of relatively little research activity in the area of recurrent neural networks, several new developments will be reviewed here that have allowed substantial progress both in understanding and in technical solutions towards more efficient training of recurrent networks. These advances have been motivated by and related to the optimization issues surrounding deep learning. Although recurrent networks are extremely powerful in what they can in principle represent in terms of modelling sequences,their training is plagued by two aspects of the same issue regarding the learning of long-term dependencies. Experiments reported here evaluate the use of clipping gradients, spanning longer time ranges with leaky integration, advanced momentum techniques, using more powerful output probability models, and encouraging sparser gradients to help symmetry breaking and credit assignment. The experiments are performed on text and music data and show off the combined effects of these techniques in generally improving both training and test error.",
     "author": [
       {
@@ -27623,6 +28361,62 @@
       ]
     },
     "title": "Generating multi-label discrete electronic health records using generative adversarial networks",
+    "type": "article-journal"
+  },
+  {
+    "abstract": "Observational studies are rising in importance due to the widespread accumulation of data in fields such as healthcare, education, employment and ecology. We consider the task of answering counterfactual questions such as, “Would this patient have lower blood sugar had she received a different medication?”. We propose a new algorithmic framework for counterfactual inference which brings together ideas from domain adaptation and representation learning. In addition to a theoretical justification, we perform an empirical comparison with previous approaches to causal inference from observational data. Our deep learning algorithm significantly outperforms the previous state-of-the-art.",
+    "author": [
+      {
+        "family": "Johansson",
+        "given": "Fredrik D."
+      },
+      {
+        "family": "Shalit",
+        "given": "Uri"
+      },
+      {
+        "family": "Sontag",
+        "given": "David"
+      }
+    ],
+    "id": "173ftiSzF",
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          5
+        ]
+      ]
+    },
+    "title": "Learning representations for counterfactual inference",
+    "type": "article-journal"
+  },
+  {
+    "abstract": "Disparate areas of machine learning have benefited from models that can take raw data with little preprocessing as input and learn rich representations of that raw data in order to perform well on a given prediction task. We evaluate this approach in healthcare by using longitudinal measurements of lab tests, one of the more raw signals of a patient’s health state widely available in clinical data, to predict disease onsets. In particular, we train a Long Short-Term Memory (LSTM) recurrent neural network and two novel convolutional neural networks for multi-task prediction of disease onset for 133 conditions based on 18 common lab tests measured over time in a cohort of 298K patients derived from 8 years of administrative claims data. We compare the neural networks to a logistic regression with several hand-engineered, clinically relevant features. We find that the representation-based learning approaches significantly outperform this baseline. We believe that our work suggests a new avenue for patient risk stratification based solely on lab results.",
+    "author": [
+      {
+        "family": "Razavian",
+        "given": "Narges"
+      },
+      {
+        "family": "Marcus",
+        "given": "Jake"
+      },
+      {
+        "family": "Sontag",
+        "given": "David"
+      }
+    ],
+    "id": "c6MfDdWP",
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          8
+        ]
+      ]
+    },
+    "title": "Multi-task prediction of disease onsets from longitudinal lab tests",
     "type": "article-journal"
   }
 ]
