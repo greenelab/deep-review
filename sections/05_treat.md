@@ -37,10 +37,10 @@ clinical environment.
 A critical challenge in moving from prediction to treatment recommendations
 is the necessity to establish a causal relationship for a recommendation.
 Causal inference is often framed in terms of counterfactual question
-[@doi:10.1037/h0037350]. Johansson [@arxiv:1605.03661] use deep neural networks
-to create representation models for covariates that capture nonlinear effects
-and show significant performance improvements over existing models. In a less
-formal approach, Kale et al [@pmid:26958203] first create a deep neural
+[@doi:10.1037/h0037350]. Johansson et al [@arxiv:1605.03661] use deep neural
+networks to create representation models for covariates that capture nonlinear
+effects and show significant performance improvements over existing models. In
+a less formal approach, Kale et al [@pmid:26958203] first create a deep neural
 network to model clinical time series and then analyze the relationship of the
 hidden features to the output using a causal approach.
 
