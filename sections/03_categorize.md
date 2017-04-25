@@ -182,7 +182,7 @@ autoencoder neural networks could dramatically reduce the number of labeled
 examples required for subsequent supervised analyses
 [@doi:10.1016/j.jbi.2016.10.007]. In addition, it pointed towards learned
 features being useful for subtyping within a single disease. In a concurrent
-large-scale analysis of EHR data from 7000,000 patients, Miotto et al
+large-scale analysis of EHR data from 700,000 patients, Miotto et al
 [@doi:10.1038/srep26094] used a deep denoising autoencoder architecture
 applied to the number and co-occurrence of clinical events ("DeepPatient") to
 learn a representation of patients. The model was able to predict disease
