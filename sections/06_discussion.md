@@ -212,18 +212,21 @@ discussing here.*
 
 ### Multimodal and transfer learning
 
-* https://github.com/greenelab/deep-review/issues/139#issuecomment-268901804
-
 As discussed above, the fact that biomedical datasets often contain a limited
-number of instances or labels, often leads to poor performance of
+number of instances or labels can be a cause of poor performance of
 machine learning algorithms. When trained on such datasets, deep learning
 models are particularly prone to overfitting due to their high representational
-power. However, Transfer Learning techniques also known as Domain Adaptation
+power. However, transfer learning techniques also known as domain adaptation
 enable transfer of extracted patterns between different datasets and even
-domains. This allows a model to take advantage on larger labeled data for
-training of a model which can  then can be reused for the problem in hand. Deep
-neural networks exhibit high transferability of learnt features including when
-pre-training and target sets are distant [@tag:Yosinski2014].
+domains. This approach can be described as 2-step process that includes:
+(1) training a model for the base task, and then (2) reusing trained model
+for the target problem in hand. The first step allows to take advantage of
+larger amount of data or labels or both to extract better feature
+representations. Transferring learnt features in deep neural networks
+improves performance compared to random features even
+when pre-training and target sets are dissimilar. However,
+transferability of features decreases as the distance between the base task
+and target task increases [@tag:Yosinski2014].
 
 In image analysis, previous examples of deep transfer learning applications
 proved large scale natural image sets [@tag:Russakovsky2015_imagenet]
@@ -250,7 +253,7 @@ validated FANTOM5 permissive enhancer dataset followed by fine-tuning on ENCODE
 enhancer datasets improved cell type-specific predictions, outperforming
 state-of-the-art results.
 
-Related to transfer learning, multimodal learning framework assumes
+Related to transfer learning, a multimodal learning framework assumes
 simultaneous learning from various types of inputs, such as images and text.
 It allows capture of features that describe common concepts across input
 modalities. Generative graphical models like restricted Boltzmann
@@ -280,22 +283,23 @@ different modalities and for better clustering performance over conventional
 k-means based methods.
 
 Deep graphical models such as DBNs are considered to be well suited for
-multimodal learning tasks since they are aimed to learn joint probability
-distribution from inputs. However, it is difficult task that requires
-specialized algorithms for training and sampling.  While it is possible
-to fine-tune these models for discriminatory tasks, they are typically
-outperformed by commonly used convolutional neural networks (CNN)
-trained with backpropagation. Multimodal learning with CNNs is usually
-implemented as a collection of individual networks, in which each learns
-representations from single data type. These individual representations are
-further concatenated before or within fully-connected layers. FIDDLE
-[@tag:Eser2016_fiddle] is an example of multimodal CNNs that represents an
-ensemble of individual networks that take as inputs a number of genomic
-datasets, including NET-seq, MNase-seq, ChIP-seq, RNA-seq, and
-raw DNA sequence to predict Transcription Start Site-seq (TSS-seq) outputs.
-The combined model radically improves performance over separately trained
-datatype-specific networks, suggesting that it learns the synergistic
-relationship between datasets.
+multimodal learning tasks since they are aimed to learn a joint probability
+distribution from inputs. They can be pre-trained in unsupervised fashion
+on large unlabeled data and then fine-tuned on a smaller number of labeled
+examples. When labels are available, convolutional neural networks (CNN) are
+ubiquitously used, since they can be trained end-to-end with backpropagation
+and demonstrate state-of-the-art performance in many discriminative tasks
+[@tag:Angermueller2016_dl_review].
+Multimodal learning with CNNs is usually implemented as a collection of
+individual networks, in which each learns representations from single data type.
+These individual representations are further concatenated before or within
+fully-connected layers. FIDDLE [@tag:Eser2016_fiddle] is an example of
+multimodal CNNs that represents an ensemble of individual networks that take
+as inputs a number of genomic datasets, including NET-seq, MNase-seq, ChIP-seq,
+RNA-seq, and raw DNA sequence to predict Transcription Start Site-seq
+(TSS-seq) outputs. The combined model radically improves performance over
+separately trained datatype-specific networks, suggesting that it learns the
+synergistic relationship between datasets.
 
 Despite demonstrated improvements, transfer learning approaches also pose
 a number of challenges. As mentioned above, there are no theoretically sound
