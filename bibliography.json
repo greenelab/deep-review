@@ -29253,5 +29253,26 @@
     "title": "DeepMiRGene: Deep neural network based precursor microRNA prediction",
     "title-short": "DeepMiRGene",
     "type": "article-journal"
+  },
+  {
+    "abstract": "We present an interpretation of Inception modules in convolutional neural networks as being an intermediate step in-between regular convolution and the depthwise separable convolution operation (a depthwise convolution followed by a pointwise convolution). In this light, a depthwise separable convolution can be understood as an Inception module with a maximally large number of towers. This observation leads us to propose a novel deep convolutional neural network architecture inspired by Inception, where Inception modules have been replaced with depthwise separable convolutions. We show that this architecture, dubbed Xception, slightly outperforms Inception V3 on the ImageNet dataset (which Inception V3 was designed for), and significantly outperforms Inception V3 on a larger image classification dataset comprising 350 million images and 17,000 classes. Since the Xception architecture has the same number of parameters as Inception V3, the performance gains are not due to increased capacity but rather to a more efficient use of model parameters.",
+    "author": [
+      {
+        "family": "Chollet",
+        "given": "François"
+      }
+    ],
+    "id": "VMkPJjVk",
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          11
+        ]
+      ]
+    },
+    "title": "Xception: Deep learning with depthwise separable convolutions",
+    "title-short": "Xception",
+    "type": "article-journal"
   }
 ]
