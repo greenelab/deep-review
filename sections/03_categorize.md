@@ -351,7 +351,7 @@ before algorithms are applied.
 Finally, even if data were perfectly consistent and compatible across systems,
 attempts to share and combine EHR data face considerable legal and ethical
 barriers. Patient privacy can severely restrict the sharing and use of EHR
-[@doi:https://doi.org/10.1093/ije/dyn022]. Here again, standards are
+[@doi:10.1093/ije/dyn022]. Here again, standards are
 heterogeneous and evolving but often EHR data can often not be exported or even
 accessed directly for research purposes without appropriate consent. Once again,
 this has the effect of making data gathering more laborious, expansive and
@@ -359,7 +359,7 @@ reducing sample size and study power.
 
 Several technological solutions have been proposed in this direction, allowing
 access to sensitive data satisfying privacy and legal concerns. Software like
-DataShield [@doi:https://doi.org/10.1093/ije/dyu188] and ViPAR
+DataShield [@doi:10.1093/ije/dyu188] and ViPAR
 [@doi:10.1093/ije/dyv193], although not EHR specific, allows querying and
 combining of datasets and calculation of summary statistics across remote sites
 by "taking the analysis to the data". The computation is carried out at the
