@@ -114,7 +114,7 @@ Nguyen2014_adversarial	arxiv:1412.1897v4
 Ngiam2011	url:https://ai.stanford.edu/~ang/papers/icml11-MultimodalDeepLearning.pdf
 NIH2016_genome_cost	url:https://www.genome.gov/27565109/the-cost-of-sequencing-a-human-genome/
 onecodex	url:https://www.onecodex.com/
-Papernot2017_pate	https://openreview.net/forum?id=HkwoSDPgg
+Papernot2017_pate	url:https://openreview.net/forum?id=HkwoSDPgg
 Park2016_deepmirgene	arxiv:1605.00017
 Parnamaa2017	doi:10.1534/g3.116.033654
 Pawlowski2016	doi:10.1101/085118
@@ -182,4 +182,5 @@ yok	doi:10.1186/1471-2105-12-20
 Yoon2016_cancer_reports	doi:10.1007/978-3-319-47898-2_21
 Yosinski2014	url:https://papers.nips.cc/paper/5347-how-transferable-are-features-in-deep-neural-networks
 Zeng2015	doi:10.1186/s12859-015-0553-9
+Zhang2015_multitask_tl	doi:10.1145/2783258.2783304
 Zhou2015_deep_sea	doi:10.1038/nmeth.3547
