@@ -129,6 +129,7 @@ text	citation	standard_citation	citation_id
 @pmid:26958203	pmid:26958203	pmid:26958203	FUIfIdE
 @pmid:27134610	pmid:27134610	pmid:27134610	4rTluXLs
 @tag:Abe	doi:10.1101/gr.634603	doi:10.1101/gr.634603	1HhqhBwrM
+@tag:Agarwal2015_targetscan	doi:10.7554/eLife.05005	doi:10.7554/elife.05005	12vPQi3gp
 @tag:Alipanahi2015_predicting	doi:10.1038/nmeth.3547	doi:10.1038/nmeth.3547	2UI1BZuD
 @tag:AltaeTran2016_one_shot	doi:10.1021/acscentsci.6b00367	doi:10.1021/acscentsci.6b00367	P4ixsM8i
 @tag:Angermueller2016_single_methyl	doi:10.1186/s13059-017-1189-z	doi:10.1186/s13059-017-1189-z	19EJTHByG
@@ -139,9 +140,11 @@ text	citation	standard_citation	citation_id
 @tag:Baskin2015_drug_disc	doi:10.1080/17460441.2016.1201262	doi:10.1080/17460441.2016.1201262	xPkT1z7D
 @tag:Baxt1991_myocardial	doi:10.7326/0003-4819-115-11-843	doi:10.7326/0003-4819-115-11-843	jdg2u7bX
 @tag:Bengio2015_prec	arxiv:1412.7024	arxiv:1412.7024	1G3owNNps
+@tag:Berezikov2011_mirna	doi:10.1038/nrg3079	doi:10.1038/nrg3079	8lpCCppx
 @tag:Bergstra2011_hyper	url:https://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimization.pdf	url:https://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimization.pdf	wz83yfHF
 @tag:Bergstra2012_random	url:http://dl.acm.org/citation.cfm?id=2188395	url:http://dl.acm.org/citation.cfm?id=2188395	Wsa952Ax
 @tag:Boza	arxiv:1603.09195	arxiv:1603.09195	1BTJ1KqRa
+@tag:Bracken2016_mirna	doi:10.1038/nrg.2016.134	doi:10.1038/nrg.2016.134	yVKIhIAf
 @tag:Buggenthin2017_imaged_lineage	doi:10.1038/nmeth.4182	doi:10.1038/nmeth.4182	On4vW5aU
 @tag:Caruana2014_need	arxiv:1312.6184	arxiv:1312.6184	1AhGoHZP9
 @tag:Che2015_distill	arxiv:1512.03542	arxiv:1512.03542	14DAmZTDg
@@ -199,6 +202,7 @@ text	citation	standard_citation	citation_id
 @tag:Krizhevsky2014_weird_trick	arxiv:1404.5997	arxiv:1404.5997	ZSVsnPVO
 @tag:Lacey2016_dl_fpga	arxiv:1602.04283	arxiv:1602.04283	9NKsJjSw
 @tag:Lanchantin2016_motif	arxiv:1608.03644	arxiv:1608.03644	Dwi2eAvT
+@tag:Lee2016_deeptarget	arxiv:1603.09123v2	arxiv:1603.09123v2	1GwC1ll6h
 @tag:Li2014_minibatch	doi:10.1145/2623330.2623612	doi:10.1145/2623330.2623612	fNkl8HFz
 @tag:Li2016_variation	doi:10.1126/science.aad9417	doi:10.1126/science.aad9417	b6p6wxpC
 @tag:Liang2015_exprs_cancer	doi:10.1109/TCBB.2014.2377729	doi:10.1109/tcbb.2014.2377729	1EtavGKI4
@@ -220,6 +224,7 @@ text	citation	standard_citation	citation_id
 @tag:Mrzelj	url:https://repozitorij.uni-lj.si/IzpisGradiva.php?id=85515	url:https://repozitorij.uni-lj.si/IzpisGradiva.php?id=85515	iPIJrVVs
 @tag:Nemati2016_rl	doi:10.1109/EMBC.2016.7591355	doi:10.1109/embc.2016.7591355	16OQvsRqJ
 @tag:Nguyen2014_adversarial	arxiv:1412.1897v4	arxiv:1412.1897v4	1AkF8Wsv7
+@tag:Park2016_deepmirgene	arxiv:1605.00017	arxiv:1605.00017	1TeyWffV
 @tag:PerezSianes2016_screening	doi:10.1007/978-3-319-40126-3_2	doi:10.1007/978-3-319-40126-3_2	1DTUK3YyI
 @tag:Poplin2016_deepvariant	doi:10.1101/092890	doi:10.1101/092890	FVfZESYP
 @tag:Qin2017_onehot	doi:10.1371/journal.pcbi.1005403	doi:10.1371/journal.pcbi.1005403	Qbtqlmhf

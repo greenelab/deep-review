@@ -907,8 +907,38 @@ application in this area.*
 
 ### Micro-RNA binding
 
-*miRNAs are important biologically, but have neural networks produced anything
-particularly notable in this area?*
+Prediction of microRNAs (miRNAs) in the genome as well as miRNA targets is of
+great interest, as they are critical components of gene regulatory networks and
+are often conserved across great evolutionary distance [@yVKIhIAf; @8lpCCppx]. While many machine learning algorithms have been
+applied to solve these prediction tasks, they currently require extensive
+feature selection and optimization. For instance, one of the most widely adopted
+tools for miRNA target prediction, TargetScan, trained multiple linear
+regression models on 14 hand-curated features including structural accessibility
+of the target site on the mRNA, the degree of site conservation, and predicted
+thermodynamic stability of the miRNA:mRNA complex [@12vPQi3gp].
+Some of these features, including structural accessibility, are imperfect or
+empirically derived. In addition, current algorithms suffer from low specificity
+[@1GwC1ll6h].
+
+As in other applications, deep learning promises to achieve equal or better
+performance in predictive tasks by automatically engineering complex features to
+minimize an objective function. Two recently published tools use different
+recurrent neural network-based architectures to perform miRNA and target
+prediction with solely sequence data as input [@1TeyWffV; @1GwC1ll6h]. Though the results are preliminary and still based on
+a validation set rather than a completely independent test set, they were able
+to predict microRNA target sites with 15-25% higher specificity and sensitivity
+than TargetScan. Excitingly, these tools seem to show that RNNs can accurately
+align sequences and predict bulges, mismatches, and wobble base pairing without
+requiring the user to input secondary structure predictions or thermodynamic
+calculations.
+
+Further incremental advances in neural-network approaches for miRNA and target
+prediction will likely be sufficient to meet the current needs of systems
+biologists and other researchers, who use prediction tools mainly to nominate
+candidates that are then tested experimentally. Similar to other applications,
+the major contribution of deep learning will be to deliver deep insights into
+the biology of miRNA targeting as we learn to interrogate the hidden nodes
+within neural networks.
 
 ### Protein secondary and tertiary structure
 
