@@ -623,8 +623,8 @@ build probabilistic models that reliably separate signal from noise. However,
 this process is time consuming and, more importantly, fundamentally limited by
 how well we understand and can model the factors that contribute to noise.
 Recently, two groups have applied deep learning to construct data-driven and,
-therefore, unbiased noise models. One of these models, DeepVariant, builds
-directly on well-established deep learning methods for image recognition by
+therefore, unbiased noise models. One of these models, DeepVariant, leverages
+Inception, a neural network trained for image classification by Google Brain, by
 encoding reads around a candidate SNP as a 221x100 bitmap image, where each
 column is a nucleotide and each row is a read from the sample library
 [@tag:Poplin2016_deepvariant]. The top 5 rows represent the reference, and the
@@ -639,12 +639,17 @@ method, still in its infancy, hand-developed 642 features for each candidate
 variant and fed these vectors into a fully connected deep neural network
 [@tag:Torracinta2016_deep_snp]. Unfortunately, this feature set required at
 least 15 iterations of software development to fine-tune, which will likely not
-be generalizable. Going forward, we foresee that variant calling will benefit
-more from optimizing neural network architectures than from developing features
-by hand. An interesting and informative next step would be to test whether
+be generalizable. 
+
+Going forward, we believe that variant calling will benefit more from optimizing
+neural network architectures than from developing features by hand. An
+interesting and informative next step would be to rigorously test whether
 encoding raw sequence and quality data as an image, tensor, or some other mixed
-format produces the best variant calls, given identical network architectures
-and other parameters.
+format produces the best variant calls. Because many of the latest neural
+network architectures (ResNet, Inception, Xception, and others) are already
+optimized for and pre-trained on generic, large-scale image datasets
+[@tag:Chollet2016_xception], encoding genomic data as images could prove to be a
+generally effective, and efficient, strategy.
 
 In limited experiments, DeepVariant was robust to sequencing depth, read length,
 and even species [@tag:Poplin2016_deepvariant]. However, a model built on
