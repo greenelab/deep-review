@@ -28886,5 +28886,1526 @@
     "standard_citation": "arxiv:1610.02357",
     "bibtex": "@article{VMkPJjVk,\n abstract = {We present an interpretation of Inception modules in convolutional neural\nnetworks as being an intermediate step in-between regular convolution and the\ndepthwise separable convolution operation (a depthwise convolution followed by\na pointwise convolution). In this light, a depthwise separable convolution can\nbe understood as an Inception module with a maximally large number of towers.\nThis observation leads us to propose a novel deep convolutional neural network\narchitecture inspired by Inception, where Inception modules have been replaced\nwith depthwise separable convolutions. We show that this architecture, dubbed\nXception, slightly outperforms Inception V3 on the ImageNet dataset (which\nInception V3 was designed for), and significantly outperforms Inception V3 on a\nlarger image classification dataset comprising 350 million images and 17,000\nclasses. Since the Xception architecture has the same number of parameters as\nInception V3, the performance gains are not due to increased capacity but\nrather to a more efficient use of model parameters.},\n archiveprefix = {arXiv},\n author = {François Chollet},\n eprint = {1610.02357v3},\n file = {1610.02357v3.pdf},\n link = {http://arxiv.org/abs/1610.02357v3},\n month = {Nov},\n primaryclass = {cs.CV},\n title = {Xception: Deep Learning with Depthwise Separable Convolutions},\n year = {2016}\n}\n\n",
     "citation_id": "VMkPJjVk"
+  },
+  "doi:10.1007/978-3-319-44839-8": {
+    "source": "doi",
+    "identifer": "10.1007/978-3-319-44839-8",
+    "standard_citation": "doi:10.1007/978-3-319-44839-8",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            3
+          ]
+        ],
+        "date-time": "2017-04-03T04:17:08Z",
+        "timestamp": 1491193028294
+      },
+      "publisher-location": "Cham",
+      "reference-count": 0,
+      "publisher": "Springer International Publishing",
+      "license": [
+        {
+          "URL": "http://www.springer.com/tdm",
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2016-01-01T00:00:00Z",
+            "timestamp": 1451606400000
+          },
+          "delay-in-days": 0,
+          "content-version": "vor"
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [],
+      "published-print": {
+        "date-parts": [
+          [
+            2016
+          ]
+        ]
+      },
+      "DOI": "10.1007/978-3-319-44839-8",
+      "type": "book",
+      "created": {
+        "date-parts": [
+          [
+            2016,
+            12,
+            19
+          ]
+        ],
+        "date-time": "2016-12-19T10:24:55Z",
+        "timestamp": 1482143095000
+      },
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": "Healthcare Interoperability Standards Compliance Handbook",
+      "prefix": "10.1007",
+      "author": [
+        {
+          "given": "Frank",
+          "family": "Oemig",
+          "affiliation": []
+        },
+        {
+          "given": "Robert",
+          "family": "Snelick",
+          "affiliation": []
+        }
+      ],
+      "member": "297",
+      "container-title": null,
+      "original-title": [],
+      "link": [
+        {
+          "URL": "http://link.springer.com/content/pdf/10.1007/978-3-319-44839-8.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2016,
+            12,
+            19
+          ]
+        ],
+        "date-time": "2016-12-19T10:24:55Z",
+        "timestamp": 1482143095000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2016
+          ]
+        ]
+      },
+      "references-count": 0,
+      "URL": "http://dx.doi.org/10.1007/978-3-319-44839-8",
+      "relation": {},
+      "id": "1CWhXZxos"
+    },
+    "citation_id": "1CWhXZxos"
+  },
+  "doi:10.1016/s0168-8510(02)00208-7": {
+    "source": "doi",
+    "identifer": "10.1016/s0168-8510(02)00208-7",
+    "standard_citation": "doi:10.1016/s0168-8510(02)00208-7",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            3
+          ]
+        ],
+        "date-time": "2017-04-03T00:26:09Z",
+        "timestamp": 1491179169187
+      },
+      "reference-count": 14,
+      "publisher": "Elsevier BV",
+      "issue": "2",
+      "license": [
+        {
+          "URL": "http://www.elsevier.com/tdm/userlicense/1.0/",
+          "start": {
+            "date-parts": [
+              [
+                2003,
+                8,
+                1
+              ]
+            ],
+            "date-time": "2003-08-01T00:00:00Z",
+            "timestamp": 1059696000000
+          },
+          "delay-in-days": 0,
+          "content-version": "tdm"
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Health Policy"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2003,
+            8
+          ]
+        ]
+      },
+      "DOI": "10.1016/s0168-8510(02)00208-7",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2003,
+            2,
+            12
+          ]
+        ],
+        "date-time": "2003-02-12T03:07:18Z",
+        "timestamp": 1045019238000
+      },
+      "page": "101-107",
+      "source": "Crossref",
+      "is-referenced-by-count": 21,
+      "title": "Have DRG-based prospective payment systems influenced the number of secondary diagnoses in health care administrative data?",
+      "prefix": "10.1016",
+      "volume": "65",
+      "author": [
+        {
+          "given": "Lisbeth",
+          "family": "Serdén",
+          "affiliation": []
+        },
+        {
+          "given": "Rikard",
+          "family": "Lindqvist",
+          "affiliation": []
+        },
+        {
+          "given": "Måns",
+          "family": "Rosén",
+          "affiliation": []
+        }
+      ],
+      "member": "78",
+      "container-title": "Health Policy",
+      "original-title": [],
+      "link": [
+        {
+          "URL": "http://api.elsevier.com/content/article/PII:S0168851002002087?httpAccept=text/xml",
+          "content-type": "text/xml",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "http://api.elsevier.com/content/article/PII:S0168851002002087?httpAccept=text/plain",
+          "content-type": "text/plain",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2015,
+            9,
+            20
+          ]
+        ],
+        "date-time": "2015-09-20T05:12:04Z",
+        "timestamp": 1442725924000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2003,
+            8
+          ]
+        ]
+      },
+      "references-count": 14,
+      "alternative-id": [
+        "S0168851002002087"
+      ],
+      "URL": "http://dx.doi.org/10.1016/s0168-8510(02)00208-7",
+      "relation": {},
+      "issn-type": [
+        {
+          "value": "0168-8510",
+          "type": "print"
+        }
+      ],
+      "subject": [
+        "Health Policy"
+      ],
+      "id": "7BctyA7f"
+    },
+    "citation_id": "7BctyA7f"
+  },
+  "doi:10.1016/j.jbi.2014.10.006": {
+    "source": "doi",
+    "identifer": "10.1016/j.jbi.2014.10.006",
+    "standard_citation": "doi:10.1016/j.jbi.2014.10.006",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            3,
+            31
+          ]
+        ],
+        "date-time": "2017-03-31T23:25:01Z",
+        "timestamp": 1491002701455
+      },
+      "reference-count": 43,
+      "publisher": "Elsevier BV",
+      "license": [
+        {
+          "URL": "http://www.elsevier.com/tdm/userlicense/1.0/",
+          "start": {
+            "date-parts": [
+              [
+                2015,
+                2,
+                1
+              ]
+            ],
+            "date-time": "2015-02-01T00:00:00Z",
+            "timestamp": 1422748800000
+          },
+          "delay-in-days": 0,
+          "content-version": "tdm"
+        },
+        {
+          "URL": "http://www.elsevier.com/open-access/userlicense/1.0/",
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                2,
+                1
+              ]
+            ],
+            "date-time": "2016-02-01T00:00:00Z",
+            "timestamp": 1454284800000
+          },
+          "delay-in-days": 365,
+          "content-version": "vor"
+        }
+      ],
+      "funder": [
+        {
+          "name": "Innovative Medicines Initiative Joint Undertaking",
+          "award": [
+            "115189"
+          ]
+        },
+        {
+          "name": "European Union’s Seventh Framework Programme",
+          "award": [
+            "FP7/2007–2013"
+          ]
+        },
+        {
+          "name": "EFPIA",
+          "award": []
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "j-biomed-inform.com",
+          "elsevier.com",
+          "sciencedirect.com"
+        ],
+        "crossmark-restriction": true
+      },
+      "short-container-title": [
+        "Journal of Biomedical Informatics"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2015,
+            2
+          ]
+        ]
+      },
+      "DOI": "10.1016/j.jbi.2014.10.006",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2014,
+            10,
+            18
+          ]
+        ],
+        "date-time": "2014-10-18T09:38:16Z",
+        "timestamp": 1413625096000
+      },
+      "page": "162-173",
+      "update-policy": "http://dx.doi.org/10.1016/elsevier_cm_policy",
+      "source": "Crossref",
+      "is-referenced-by-count": 25,
+      "title": "Using electronic health records for clinical research: The case of the EHR4CR project",
+      "prefix": "10.1016",
+      "volume": "53",
+      "author": [
+        {
+          "given": "Georges",
+          "family": "De Moor",
+          "affiliation": []
+        },
+        {
+          "given": "Mats",
+          "family": "Sundgren",
+          "affiliation": []
+        },
+        {
+          "given": "Dipak",
+          "family": "Kalra",
+          "affiliation": []
+        },
+        {
+          "given": "Andreas",
+          "family": "Schmidt",
+          "affiliation": []
+        },
+        {
+          "given": "Martin",
+          "family": "Dugas",
+          "affiliation": []
+        },
+        {
+          "given": "Brecht",
+          "family": "Claerhout",
+          "affiliation": []
+        },
+        {
+          "given": "Töresin",
+          "family": "Karakoyun",
+          "affiliation": []
+        },
+        {
+          "given": "Christian",
+          "family": "Ohmann",
+          "affiliation": []
+        },
+        {
+          "given": "Pierre-Yves",
+          "family": "Lastic",
+          "affiliation": []
+        },
+        {
+          "given": "Nadir",
+          "family": "Ammour",
+          "affiliation": []
+        },
+        {
+          "given": "Rebecca",
+          "family": "Kush",
+          "affiliation": []
+        },
+        {
+          "given": "Danielle",
+          "family": "Dupont",
+          "affiliation": []
+        },
+        {
+          "given": "Marc",
+          "family": "Cuggia",
+          "affiliation": []
+        },
+        {
+          "given": "Christel",
+          "family": "Daniel",
+          "affiliation": []
+        },
+        {
+          "given": "Geert",
+          "family": "Thienpont",
+          "affiliation": []
+        },
+        {
+          "given": "Pascal",
+          "family": "Coorevits",
+          "affiliation": []
+        }
+      ],
+      "member": "78",
+      "container-title": "Journal of Biomedical Informatics",
+      "original-title": [],
+      "link": [
+        {
+          "URL": "http://api.elsevier.com/content/article/PII:S1532046414002263?httpAccept=text/xml",
+          "content-type": "text/xml",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "http://api.elsevier.com/content/article/PII:S1532046414002263?httpAccept=text/plain",
+          "content-type": "text/plain",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2016,
+            2,
+            1
+          ]
+        ],
+        "date-time": "2016-02-01T01:58:21Z",
+        "timestamp": 1454291901000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2015,
+            2
+          ]
+        ]
+      },
+      "references-count": 43,
+      "alternative-id": [
+        "S1532046414002263"
+      ],
+      "URL": "http://dx.doi.org/10.1016/j.jbi.2014.10.006",
+      "relation": {},
+      "issn-type": [
+        {
+          "value": "1532-0464",
+          "type": "print"
+        }
+      ],
+      "subject": [
+        "Health Informatics",
+        "Computer Science Applications"
+      ],
+      "assertion": [
+        {
+          "value": "Elsevier",
+          "name": "publisher",
+          "label": "This article is maintained by"
+        },
+        {
+          "value": "Using electronic health records for clinical research: The case of the EHR4CR project",
+          "name": "articletitle",
+          "label": "Article Title"
+        },
+        {
+          "value": "Journal of Biomedical Informatics",
+          "name": "journaltitle",
+          "label": "Journal Title"
+        },
+        {
+          "value": "http://dx.doi.org/10.1016/j.jbi.2014.10.006",
+          "name": "articlelink",
+          "label": "CrossRef DOI link to publisher maintained version"
+        },
+        {
+          "value": "article",
+          "name": "content_type",
+          "label": "Content Type"
+        },
+        {
+          "value": "Copyright © 2014 Elsevier Inc.",
+          "name": "copyright",
+          "label": "Copyright"
+        }
+      ],
+      "id": "13filvWwr"
+    },
+    "citation_id": "13filvWwr"
+  },
+  "doi:10.1038/nrg3208": {
+    "source": "doi",
+    "identifer": "10.1038/nrg3208",
+    "standard_citation": "doi:10.1038/nrg3208",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            3,
+            30
+          ]
+        ],
+        "date-time": "2017-03-30T13:39:11Z",
+        "timestamp": 1490881151204
+      },
+      "reference-count": 112,
+      "publisher": "Springer Nature",
+      "issue": "6",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Nat Rev Genet"
+      ],
+      "DOI": "10.1038/nrg3208",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2012,
+            5,
+            2
+          ]
+        ],
+        "date-time": "2012-05-02T05:52:24Z",
+        "timestamp": 1335937944000
+      },
+      "page": "395-405",
+      "source": "Crossref",
+      "is-referenced-by-count": 244,
+      "title": "Mining electronic health records: towards better research applications and clinical care",
+      "prefix": "10.1038",
+      "volume": "13",
+      "author": [
+        {
+          "given": "Peter B.",
+          "family": "Jensen",
+          "affiliation": []
+        },
+        {
+          "given": "Lars J.",
+          "family": "Jensen",
+          "affiliation": []
+        },
+        {
+          "given": "Søren",
+          "family": "Brunak",
+          "affiliation": []
+        }
+      ],
+      "member": "339",
+      "published-online": {
+        "date-parts": [
+          [
+            2012,
+            5,
+            2
+          ]
+        ]
+      },
+      "container-title": "Nature Reviews Genetics",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2012,
+            7,
+            4
+          ]
+        ],
+        "date-time": "2012-07-04T20:02:08Z",
+        "timestamp": 1341432128000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2012,
+            5,
+            2
+          ]
+        ]
+      },
+      "references-count": 112,
+      "alternative-id": [
+        "nrg3208"
+      ],
+      "URL": "http://dx.doi.org/10.1038/nrg3208",
+      "relation": {
+        "cites": []
+      },
+      "issn-type": [
+        {
+          "value": "1471-0056",
+          "type": "print"
+        },
+        {
+          "value": "1471-0064",
+          "type": "electronic"
+        }
+      ],
+      "subject": [
+        "Genetics(clinical)",
+        "Genetics",
+        "Molecular Biology"
+      ],
+      "id": "FkSZ1qmz"
+    },
+    "citation_id": "FkSZ1qmz"
+  },
+  "doi:10.1093/ije/dyn022": {
+    "source": "doi",
+    "identifer": "10.1093/ije/dyn022",
+    "standard_citation": "doi:10.1093/ije/dyn022",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            3,
+            30
+          ]
+        ],
+        "date-time": "2017-03-30T21:28:43Z",
+        "timestamp": 1490909323036
+      },
+      "reference-count": 22,
+      "publisher": "Oxford University Press (OUP)",
+      "issue": "3",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "International Journal of Epidemiology"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2008,
+            6,
+            1
+          ]
+        ]
+      },
+      "DOI": "10.1093/ije/dyn022",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2008,
+            2,
+            28
+          ]
+        ],
+        "date-time": "2008-02-28T01:24:04Z",
+        "timestamp": 1204161844000
+      },
+      "page": "678-682",
+      "source": "Crossref",
+      "is-referenced-by-count": 16,
+      "title": "Epidemiological research labelled as a violation of privacy: the case of Estonia",
+      "prefix": "10.1093",
+      "volume": "37",
+      "author": [
+        {
+          "given": "M.",
+          "family": "Rahu",
+          "affiliation": []
+        },
+        {
+          "given": "M.",
+          "family": "McKee",
+          "affiliation": []
+        }
+      ],
+      "member": "286",
+      "published-online": {
+        "date-parts": [
+          [
+            2008,
+            2,
+            26
+          ]
+        ]
+      },
+      "container-title": "International Journal of Epidemiology",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            25
+          ]
+        ],
+        "date-time": "2017-01-25T20:24:31Z",
+        "timestamp": 1485375871000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2008,
+            2,
+            26
+          ]
+        ]
+      },
+      "references-count": 22,
+      "URL": "http://dx.doi.org/10.1093/ije/dyn022",
+      "relation": {},
+      "issn-type": [
+        {
+          "value": "0300-5771",
+          "type": "print"
+        },
+        {
+          "value": "1464-3685",
+          "type": "electronic"
+        }
+      ],
+      "subject": [
+        "Epidemiology"
+      ],
+      "id": "CVnO5njl"
+    },
+    "citation_id": "CVnO5njl"
+  },
+  "doi:10.1093/ije/dyu188": {
+    "source": "doi",
+    "identifer": "10.1093/ije/dyu188",
+    "standard_citation": "doi:10.1093/ije/dyu188",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            3,
+            31
+          ]
+        ],
+        "date-time": "2017-03-31T17:34:35Z",
+        "timestamp": 1490981675957
+      },
+      "reference-count": 40,
+      "publisher": "Oxford University Press (OUP)",
+      "issue": "6",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "International Journal of Epidemiology"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2014,
+            12,
+            1
+          ]
+        ]
+      },
+      "DOI": "10.1093/ije/dyu188",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2014,
+            9,
+            28
+          ]
+        ],
+        "date-time": "2014-09-28T00:27:43Z",
+        "timestamp": 1411864063000
+      },
+      "page": "1929-1944",
+      "source": "Crossref",
+      "is-referenced-by-count": 18,
+      "title": "DataSHIELD: taking the analysis to the data, not the data to the analysis",
+      "prefix": "10.1093",
+      "volume": "43",
+      "author": [
+        {
+          "given": "A.",
+          "family": "Gaye",
+          "affiliation": []
+        },
+        {
+          "given": "Y.",
+          "family": "Marcon",
+          "affiliation": []
+        },
+        {
+          "given": "J.",
+          "family": "Isaeva",
+          "affiliation": []
+        },
+        {
+          "given": "P.",
+          "family": "LaFlamme",
+          "affiliation": []
+        },
+        {
+          "given": "A.",
+          "family": "Turner",
+          "affiliation": []
+        },
+        {
+          "given": "E. M.",
+          "family": "Jones",
+          "affiliation": []
+        },
+        {
+          "given": "J.",
+          "family": "Minion",
+          "affiliation": []
+        },
+        {
+          "given": "A. W.",
+          "family": "Boyd",
+          "affiliation": []
+        },
+        {
+          "given": "C. J.",
+          "family": "Newby",
+          "affiliation": []
+        },
+        {
+          "given": "M.-L.",
+          "family": "Nuotio",
+          "affiliation": []
+        },
+        {
+          "given": "R.",
+          "family": "Wilson",
+          "affiliation": []
+        },
+        {
+          "given": "O.",
+          "family": "Butters",
+          "affiliation": []
+        },
+        {
+          "given": "B.",
+          "family": "Murtagh",
+          "affiliation": []
+        },
+        {
+          "given": "I.",
+          "family": "Demir",
+          "affiliation": []
+        },
+        {
+          "given": "D.",
+          "family": "Doiron",
+          "affiliation": []
+        },
+        {
+          "given": "L.",
+          "family": "Giepmans",
+          "affiliation": []
+        },
+        {
+          "given": "S. E.",
+          "family": "Wallace",
+          "affiliation": []
+        },
+        {
+          "given": "I.",
+          "family": "Budin-Ljosne",
+          "affiliation": []
+        },
+        {
+          "given": "C.",
+          "family": "Oliver Schmidt",
+          "affiliation": []
+        },
+        {
+          "given": "P.",
+          "family": "Boffetta",
+          "affiliation": []
+        },
+        {
+          "given": "M.",
+          "family": "Boniol",
+          "affiliation": []
+        },
+        {
+          "given": "M.",
+          "family": "Bota",
+          "affiliation": []
+        },
+        {
+          "given": "K. W.",
+          "family": "Carter",
+          "affiliation": []
+        },
+        {
+          "given": "N.",
+          "family": "deKlerk",
+          "affiliation": []
+        },
+        {
+          "given": "C.",
+          "family": "Dibben",
+          "affiliation": []
+        },
+        {
+          "given": "R. W.",
+          "family": "Francis",
+          "affiliation": []
+        },
+        {
+          "given": "T.",
+          "family": "Hiekkalinna",
+          "affiliation": []
+        },
+        {
+          "given": "K.",
+          "family": "Hveem",
+          "affiliation": []
+        },
+        {
+          "given": "K.",
+          "family": "Kvaloy",
+          "affiliation": []
+        },
+        {
+          "given": "S.",
+          "family": "Millar",
+          "affiliation": []
+        },
+        {
+          "given": "I. J.",
+          "family": "Perry",
+          "affiliation": []
+        },
+        {
+          "given": "A.",
+          "family": "Peters",
+          "affiliation": []
+        },
+        {
+          "given": "C. M.",
+          "family": "Phillips",
+          "affiliation": []
+        },
+        {
+          "given": "F.",
+          "family": "Popham",
+          "affiliation": []
+        },
+        {
+          "given": "G.",
+          "family": "Raab",
+          "affiliation": []
+        },
+        {
+          "given": "E.",
+          "family": "Reischl",
+          "affiliation": []
+        },
+        {
+          "given": "N.",
+          "family": "Sheehan",
+          "affiliation": []
+        },
+        {
+          "given": "M.",
+          "family": "Waldenberger",
+          "affiliation": []
+        },
+        {
+          "given": "M.",
+          "family": "Perola",
+          "affiliation": []
+        },
+        {
+          "given": "E.",
+          "family": "van den Heuvel",
+          "affiliation": []
+        },
+        {
+          "given": "J.",
+          "family": "Macleod",
+          "affiliation": []
+        },
+        {
+          "given": "B. M.",
+          "family": "Knoppers",
+          "affiliation": []
+        },
+        {
+          "given": "R. P.",
+          "family": "Stolk",
+          "affiliation": []
+        },
+        {
+          "given": "I.",
+          "family": "Fortier",
+          "affiliation": []
+        },
+        {
+          "given": "J. R.",
+          "family": "Harris",
+          "affiliation": []
+        },
+        {
+          "given": "B. H.",
+          "family": "Woffenbuttel",
+          "affiliation": []
+        },
+        {
+          "given": "M. J.",
+          "family": "Murtagh",
+          "affiliation": []
+        },
+        {
+          "given": "V.",
+          "family": "Ferretti",
+          "affiliation": []
+        },
+        {
+          "given": "P. R.",
+          "family": "Burton",
+          "affiliation": []
+        }
+      ],
+      "member": "286",
+      "published-online": {
+        "date-parts": [
+          [
+            2014,
+            9,
+            26
+          ]
+        ]
+      },
+      "container-title": "International Journal of Epidemiology",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            25
+          ]
+        ],
+        "date-time": "2017-01-25T20:43:58Z",
+        "timestamp": 1485377038000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2014,
+            9,
+            26
+          ]
+        ]
+      },
+      "references-count": 40,
+      "URL": "http://dx.doi.org/10.1093/ije/dyu188",
+      "relation": {},
+      "issn-type": [
+        {
+          "value": "0300-5771",
+          "type": "print"
+        },
+        {
+          "value": "1464-3685",
+          "type": "electronic"
+        }
+      ],
+      "subject": [
+        "Epidemiology"
+      ],
+      "id": "SfxIiPJ1"
+    },
+    "citation_id": "SfxIiPJ1"
+  },
+  "doi:10.1093/ije/dyv193": {
+    "source": "doi",
+    "identifer": "10.1093/ije/dyv193",
+    "standard_citation": "doi:10.1093/ije/dyv193",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            1
+          ]
+        ],
+        "date-time": "2017-04-01T05:16:39Z",
+        "timestamp": 1491023799498
+      },
+      "reference-count": 15,
+      "publisher": "Oxford University Press (OUP)",
+      "issue": "2",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Int. J. Epidemiol."
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2016,
+            4
+          ]
+        ]
+      },
+      "DOI": "10.1093/ije/dyv193",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2016,
+            5,
+            12
+          ]
+        ],
+        "date-time": "2016-05-12T14:58:17Z",
+        "timestamp": 1463065097000
+      },
+      "page": "408-416",
+      "source": "Crossref",
+      "is-referenced-by-count": 5,
+      "title": "ViPAR: a software platform for the Virtual Pooling and Analysis of Research Data",
+      "prefix": "10.1093",
+      "volume": "45",
+      "author": [
+        {
+          "given": "Kim W",
+          "family": "Carter",
+          "affiliation": []
+        },
+        {
+          "given": "KW",
+          "family": "Carter",
+          "affiliation": []
+        },
+        {
+          "given": "RW",
+          "family": "Francis",
+          "affiliation": []
+        },
+        {
+          "given": "M",
+          "family": "Bresnahan",
+          "affiliation": []
+        },
+        {
+          "given": "M",
+          "family": "Gissler",
+          "affiliation": []
+        },
+        {
+          "given": "TK",
+          "family": "Grønborg",
+          "affiliation": []
+        },
+        {
+          "given": "R",
+          "family": "Gross",
+          "affiliation": []
+        },
+        {
+          "given": "N",
+          "family": "Gunnes",
+          "affiliation": []
+        },
+        {
+          "given": "G",
+          "family": "Hammond",
+          "affiliation": []
+        },
+        {
+          "given": "M",
+          "family": "Hornig",
+          "affiliation": []
+        },
+        {
+          "given": "CM",
+          "family": "Hultman",
+          "affiliation": []
+        },
+        {
+          "given": "J",
+          "family": "Huttunen",
+          "affiliation": []
+        },
+        {
+          "given": "A",
+          "family": "Langridge",
+          "affiliation": []
+        },
+        {
+          "given": "H",
+          "family": "Leonard",
+          "affiliation": []
+        },
+        {
+          "given": "S",
+          "family": "Newman",
+          "affiliation": []
+        },
+        {
+          "given": "ET",
+          "family": "Parner",
+          "affiliation": []
+        },
+        {
+          "given": "G",
+          "family": "Petersson",
+          "affiliation": []
+        },
+        {
+          "given": "A",
+          "family": "Reichenberg",
+          "affiliation": []
+        },
+        {
+          "given": "S",
+          "family": "Sandin",
+          "affiliation": []
+        },
+        {
+          "given": "DE",
+          "family": "Schendel",
+          "affiliation": []
+        },
+        {
+          "given": "L",
+          "family": "Schalkwyk",
+          "affiliation": []
+        },
+        {
+          "given": "A",
+          "family": "Sourander",
+          "affiliation": []
+        },
+        {
+          "given": "C",
+          "family": "Steadman",
+          "affiliation": []
+        },
+        {
+          "given": "C",
+          "family": "Stoltenberg",
+          "affiliation": []
+        },
+        {
+          "given": "A",
+          "family": "Suominen",
+          "affiliation": []
+        },
+        {
+          "given": "P",
+          "family": "Surén",
+          "affiliation": []
+        },
+        {
+          "given": "E",
+          "family": "Susser",
+          "affiliation": []
+        },
+        {
+          "given": "A",
+          "family": "Sylvester Vethanayagam",
+          "affiliation": []
+        },
+        {
+          "given": "Z",
+          "family": "Yusof",
+          "affiliation": []
+        }
+      ],
+      "member": "286",
+      "published-online": {
+        "date-parts": [
+          [
+            2015,
+            10,
+            8
+          ]
+        ]
+      },
+      "container-title": "International Journal of Epidemiology",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            25
+          ]
+        ],
+        "date-time": "2017-01-25T20:47:39Z",
+        "timestamp": 1485377259000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2015,
+            10,
+            8
+          ]
+        ]
+      },
+      "references-count": 15,
+      "alternative-id": [
+        "10.1093/ije/dyv193"
+      ],
+      "URL": "http://dx.doi.org/10.1093/ije/dyv193",
+      "relation": {},
+      "issn-type": [
+        {
+          "value": "0300-5771",
+          "type": "print"
+        },
+        {
+          "value": "1464-3685",
+          "type": "electronic"
+        }
+      ],
+      "subject": [
+        "Epidemiology"
+      ],
+      "id": "1D6b3tMu9"
+    },
+    "citation_id": "1D6b3tMu9"
+  },
+  "doi:10.1590/2176-9451.19.4.027-029.ebo": {
+    "source": "doi",
+    "identifer": "10.1590/2176-9451.19.4.027-029.ebo",
+    "standard_citation": "doi:10.1590/2176-9451.19.4.027-029.ebo",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            3,
+            31
+          ]
+        ],
+        "date-time": "2017-03-31T18:53:16Z",
+        "timestamp": 1490986396260
+      },
+      "reference-count": 0,
+      "publisher": "FapUNIFESP (SciELO)",
+      "issue": "4",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Dental Press J. Orthod."
+      ],
+      "DOI": "10.1590/2176-9451.19.4.027-029.ebo",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2014,
+            10,
+            11
+          ]
+        ],
+        "date-time": "2014-10-11T18:46:34Z",
+        "timestamp": 1413053194000
+      },
+      "page": "27-29",
+      "source": "Crossref",
+      "is-referenced-by-count": 1,
+      "title": "How sample size influences research outcomes",
+      "prefix": "10.1590",
+      "volume": "19",
+      "author": [
+        {
+          "given": "Jorge",
+          "family": "Faber",
+          "affiliation": []
+        },
+        {
+          "given": "Lilian Martins",
+          "family": "Fonseca",
+          "affiliation": []
+        }
+      ],
+      "member": "530",
+      "published-online": {
+        "date-parts": [
+          [
+            2014,
+            8
+          ]
+        ]
+      },
+      "container-title": "Dental Press Journal of Orthodontics",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2016,
+            12,
+            15
+          ]
+        ],
+        "date-time": "2016-12-15T12:23:37Z",
+        "timestamp": 1481804617000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2014,
+            8
+          ]
+        ]
+      },
+      "references-count": 0,
+      "alternative-id": [
+        "S2176-94512014000400027"
+      ],
+      "URL": "http://dx.doi.org/10.1590/2176-9451.19.4.027-029.ebo",
+      "relation": {},
+      "issn-type": [
+        {
+          "value": "2176-9451",
+          "type": "electronic"
+        }
+      ],
+      "id": "Fx5qVQlk"
+    },
+    "citation_id": "Fx5qVQlk"
+  },
+  "url:http://www.ncrr.nih.gov/publications/informatics/ehr.pdf": {
+    "source": "url",
+    "identifer": "http://www.ncrr.nih.gov/publications/informatics/ehr.pdf",
+    "standard_citation": "url:http://www.ncrr.nih.gov/publications/informatics/ehr.pdf",
+    "citeproc": {
+      "URL": "http://www.ncrr.nih.gov/publications/informatics/ehr.pdf",
+      "type": "webpage",
+      "id": "DPsQumQ2"
+    },
+    "citation_id": "DPsQumQ2"
   }
 }
