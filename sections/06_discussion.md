@@ -337,12 +337,13 @@ site from the cancer pathology reports together with it's laterality
 substantially improved the performance for the latter task, suggesting that
 MTL can effectively leverage the commonality between the two tasks using
 a shared representation.
-A number of works previously mentioned in the section on developing new
-treatments showed  employed multi-task learning approach for drug discovery
+A number of studies previously mentioned in the section on developing new
+treatments employed multi-task learning approach to predict a large number
+of compound and target interactions for drug discovery
 [@tag:Dahl2014_multi_qsar @tag:Ramsundar2015_multitask_drug]
 and drug toxicity prediction
 [@tag:Mayr2016_deep_tox @tag:Hughes2016_macromol_react]. Kearnes et al.
-[@tag:Kearnes2016_admet] did a systemic comparison of single-task and
+[@tag:Kearnes2016_admet] did a systematic comparison of single-task and
 multi-task deep models on a set of industrial ADMET datasets. They confirmed
 that multi-task learning can improve performance over single-task models and
 showed that smaller datasets tend to benefit more than larger datasets from
@@ -380,14 +381,18 @@ generalization capability of one-shot models [@tag:AltaeTran2016_one_shot].
 `TODO: remind that MTL with many tasks did not necessarily help when the tasks were not sufficiently similar, and "sufficiently similar" is hard to define`
 The role of task relatedness in multitask learning remains poorly understood.
 
-Overall, multimodal and transfer learning strategies demonstrate high potential
-for many biomedical applications that are otherwise limited by data volume.
-These methods not only inherit most of methodological issues from natural image,
-text, and audio domains, but also pose new challenges, specific to biological
-data. We suggest that this class of models deserve deeper investigation to
-establish best practices and determine limits for the transferability of
-features between various close related and distant learning tasks. Making
-negative results and source code public helps to accelerate progress in this
-direction.
-`TODO: add smth on data/model sharing and loop back to categorize disease section`
-`TODO: advocate for sharing models, cite Privacy and google paper`
+Overall, multimodal, multi-task and transfer learning strategies demonstrate
+high potential for many biomedical applications that are otherwise limited
+by data volume and presence of labels. These methods not only inherit most of
+methodological issues from natural image, text, and audio domains, but also
+pose new challenges, specific to biological data. We suggest that these types
+of models deserve deeper investigation to establish best practices and
+determine limits for the transferability of features between various close
+related and distant learning tasks. Making negative results, source
+code, and pre-trained models publicly available helps to accelerate progress
+in this direction. However, there are privacy considerations for models
+trained on sensitive data, such as patient-related information (see Data
+sharing section). Thus, there is a compelling need for the development of
+privacy-preserving transfer learning algorithms, such as Private Aggregation
+of Teacher Ensembles (PATE-G) [@tag:Papernot2017_pate], that can leverage
+publicly available data.

@@ -141,8 +141,7 @@ features as a component of a secondary neural network trained to predict
 laterality, the performance was higher than a laterality-trained neural network.
 This indicates a potential strength of deep methods. They can repurpose
 features across tasks, improving overall predictions as the field tackles
-new challenges. This approach is known as transfer learning and further
-discussed in greater detail in the Discussion section.
+new challenges. This approach is known as transfer learning (see Discussion).
 
 Several authors have created reusable feature sets for medical terminologies using
 neural embeddings, as popularized by word2Vec [@tag:Word2Vec]. This approach
@@ -399,9 +398,10 @@ show the ability to train deep learning classifiers under the differential
 privacy framework. Federated learning
 [@arxiv:1602.05629] and secure aggregations
 [@url:http://proceedings.mlr.press/v54/mcmahan17a.html
-@url:https://eprint.iacr.org/2017/281.pdf] are complementary approaches that
-reinforce differential privacy. Both aim to maintain privacy by training deep
-learning models from decentralized data sources such as personal mobile devices
+@url:https://eprint.iacr.org/2017/281.pdf @tag:Papernot2017_pate]
+are complementary approaches that reinforce differential privacy.
+Both aim to maintain privacy by training deep learning models from
+decentralized data sources such as personal mobile devices
 without transferring actual training instances. This is becoming of increasing
 importance with the rapid growth of mobile health applications. However, the
 training process in these approaches places constraints on the algorithms used
