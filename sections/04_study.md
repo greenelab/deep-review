@@ -639,7 +639,7 @@ method, still in its infancy, hand-developed 642 features for each candidate
 variant and fed these vectors into a fully connected deep neural network
 [@tag:Torracinta2016_deep_snp]. Unfortunately, this feature set required at
 least 15 iterations of software development to fine-tune, which will likely not
-be generalizable. 
+be generalizable.
 
 Going forward, we believe that variant calling will benefit more from optimizing
 neural network architectures than from developing features by hand. An
