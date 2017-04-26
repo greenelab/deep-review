@@ -25,8 +25,89 @@ human-level performance is irrelevant.*
 
 ### Interpretation
 
-Approaches for understanding the patterns learned by deep learning models can be
-broadly divided into: sample-specific importance scoring, visualization 
+As deep learning models achieve state-of-the-art performance in a variety of
+domains, there is a growing need to make the models more
+interpretable. Interpretability matters for two main reasons: first, a model
+that achieves breakthrough performance may have identified patterns
+in the data that practitioners in the field would like to understand
+- however, this would not be possible if the model is a black-box. Second,
+interpretability is important for trust: if a model making is medical diagnoses,
+it is important to ensure the model is making decisions for reliable
+reasons and is not focusing on an artifact of the data.
+A motivating example of this can be found in Caruana et al.
+(https://dl.acm.org/citation.cfm?id=2788613),
+where a model trained to predict the likelihood of death from pneumonia assigned
+lower risk to patients with asthma - but only because such patients were
+treated as higher priority by the hospital. In the context of deep learning,
+understanding the basis of a model's output is particularly important
+as deep learning models are unusually susceptible to adversarial examples
+[@tag:Nguyen2014_adversarial] and can output confidence scores over 99.99%
+for samples that resemble pure noise. 
+
+As the concept of interpretability is quite broad, many methods described as
+improving the interpretability of deep learning models take disparate and
+often complementary approaches. Some key themes are discussed below. 
+
+#### Example-specific explanations
+
+Several approaches are designed to provide insight into the basis for
+individual predictions made by the model, as opposed to identifying more
+general patterns that the model searches for. 
+
+##### Assigning importance scores to individual parts of the input
+
+Several approaches ascribe importance to the parts of the input that drive
+the output for a particular prediction task. These can be broadly divided
+into perturbation-based approaches and backpropagation-based approaches.
+
+###### Perturbation-based approaches
+
+These approaches make perturbations to individual inputs and observes
+the impact on the output of the network. Zhou & Troyanskaya <cite> scored
+genomic sequences by introducing virtual
+mutations at each position and quantifying the change in the output.
+<LIME people> constructed a linear model to locally approximate the output
+of the network on perturbed versions of the input and assigned importance
+scores accordingly. For analyzing images, Zeiler & Fergus applied
+constant-value masks to different input patches and studied the changes in
+the activations of later layers. As an alternative to using masks, which can
+produce misleading results, Zintgraf et al. proposed a novel strategy based
+on marginalizing over plausible values of an input patch to more accurately
+estimate its contribution.
+
+A common drawback to perturbation-based approaches is computational efficiency:
+each perturbed version of an input requires a separate forward propagation
+through the network to compute the output. As noted by Shrikumar et al., such
+methods may also underestimate the impact of features that have saturated their
+contribution to the output, as can happen when multiple redundant features
+are present.
+
+###### Backpropagation-based approaches
+
+###### Optimization-based approaches
+
+##### RNN-specific approaches
+
+###### Attention mechanisms
+(maybe also cite genetic architect)
+
+###### Assigning importance based on changes in activation
+
+##### Matching the hidden representation
+
+##### Understanding the training points that drive a prediction
+
+#### Visualizing patterns learned by individual neurons in the network
+
+##### Visualizing neurons in CNNs
+
+##### Visualizing neurons in RNNs
+LSTM visualizer
+
+#### Reducing the deep learning model to a simpler model 
+
+#### Quantifying the uncertainty in the predictions
+
 
 Sample-specific importance scoring and interpretation:
 - perturbation-based approaches where you observe the impact of the output on
