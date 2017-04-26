@@ -1,5 +1,6 @@
 tag	citation
 Abe	doi:10.1101/gr.634603
+Agarwal2015_targetscan	doi:10.7554/eLife.05005
 Alipanahi2015_predicting	doi:10.1038/nmeth.3547
 AltaeTran2016_one_shot	doi:10.1021/acscentsci.6b00367
 Asgari	doi:10.1371/journal.pone.0141287
@@ -11,8 +12,10 @@ Baskin2015_drug_disc	doi:10.1080/17460441.2016.1201262
 Barash2010_splicing_code	doi:10.1038/nature09000
 Baxt1991_myocardial	doi:10.7326/0003-4819-115-11-843
 Bengio2015_prec	arxiv:1412.7024
+Berezikov2011_mirna	doi:10.1038/nrg3079
 Bergstra2011_hyper	url:https://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimization.pdf
 Bergstra2012_random	url:http://dl.acm.org/citation.cfm?id=2188395
+Bracken2016_mirna	doi:10.1038/nrg.2016.134
 Boza	arxiv:1603.09195
 Buggenthin2017_imaged_lineage	doi:10.1038/nmeth.4182
 Caruana2014_need	arxiv:1312.6184
@@ -75,6 +78,7 @@ Krizhevsky2013_nips_cnn	url:https://papers.nips.cc/paper/4824-imagenet-classific
 Krizhevsky2014_weird_trick	arxiv:1404.5997
 Lacey2016_dl_fpga	arxiv:1602.04283
 Lanchantin2016_motif	arxiv:1608.03644
+Lee2016_deeptarget	arxiv:1603.09123v2
 Li2014_minibatch	doi:10.1145/2623330.2623612
 Li2016_variation	doi:10.1126/science.aad9417
 Liang2015_exprs_cancer	doi:10.1109/TCBB.2014.2377729
@@ -101,6 +105,7 @@ Nemati2016_rl	doi:10.1109/EMBC.2016.7591355
 Nguyen2014_adversarial	arxiv:1412.1897v4
 NIH2016_genome_cost	url:https://www.genome.gov/27565109/the-cost-of-sequencing-a-human-genome/
 onecodex	url:https://www.onecodex.com/
+Park2016_deepmirgene	arxiv:1605.00017
 Pereira2016_docking	doi:10.1021/acs.jcim.6b00355
 PerezSianes2016_screening	doi:10.1007/978-3-319-40126-3_2
 Phymm	doi:10.1038/nmeth.1358
