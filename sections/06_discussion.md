@@ -232,10 +232,10 @@ In image analysis, previous examples of deep transfer learning applications
 proved large scale natural image sets [@tag:Russakovsky2015_imagenet]
 to be useful for pre-training models that can then serve as generic feature
 extractors applied to various types of biological images
-[@tag:Zeng2015 @tag:Angermueller2016_dl_review @tag:Pawlowski2016]. More
-recently, deep learning models trained to predict protein sub-cellular
-localization successfully performed predictions for  proteins
- not originally present in the training set [@tag:Parnamaa2017].
+[@tag:Zhang2015_multitask_tl @tag:Zeng2015 @tag:Angermueller2016_dl_review
+@tag:Pawlowski2016]. More recently, deep learning models trained to predict
+protein sub-cellular localization successfully performed predictions for
+proteins not originally present in the training set [@tag:Parnamaa2017].
 Moreover, in this type of task, learnt features performed reasonably well even
 when applied to images obtained using different fluorescent labels, imaging
 techniques, and different cell types [@tag:Kraus2017_deeploc]. However, there
@@ -351,17 +351,26 @@ multitask learning. Results emphasized that multitask effects are highly
 dataset-dependent, suggesting the use of dataset-specific models to maximize
 overall performance.
 
-`TODO: A summary sentence either comparing multimodal learning with transfer learning or providing a take home message`
-MTL approach is complementary to multimodal and transfer learning, so allow
-these techniques can be used together in the same model.
+MTL approach is complementary to multimodal and transfer learning. All three
+techniques can be combined together in the same model. For example, Zhang et al.
+[@tag:Zhang2015_multitask_tl] used deep model based transfer and multi-task
+learning for cross-domain image annotation. One could imaging extending that
+approach to multimodal inputs as well. Common characteristic os these methods
+lies in better generalization of extracted features by leveraging relationships
+between information in provided in inputs and task objectives, represented at
+various hierarchical levels of abstraction in a deep learning model structure.
 
 Despite demonstrated improvements, transfer learning approaches also pose
 a number of challenges. As mentioned above, there are no theoretically sound
 principles for pre-training and fine-tuning. Most best practice recommendations
 are heuristic and have to take into account additional hyper-parameters that
 depend on specific deep architectures, sizes of pre-training and target
-datasets, and similarity of domains. Unfortunately, not many negative results
-are presented in study publications.
+datasets, and similarity of domains. However, similarity of datasets and domains
+in transfer learning and relatedness of tasks in MTL are difficult to access.
+Most current studies address these limitations by empirical evaluation of the
+model using established best practices or heuristics and cross-validation.
+Unfortunately, negative results are typically left out and not
+presented in the final study publications.
 Results by Rajkomar et al. [@tag:Rajkomar2017_radiographs] showed that a deep
 CNN trained on natural images can boost radiology image classification
 performance. However, due to differences in imaging domains it requires
@@ -377,9 +386,6 @@ low-data drug discovery with one-shot learning, but it was not able to achieve
 any predictive power with transfer learning on closely related testing tasks
 from different datasets, clearly demonstrating a limit to the cross-task
 generalization capability of one-shot models [@tag:AltaeTran2016_one_shot].
-
-`TODO: remind that MTL with many tasks did not necessarily help when the tasks were not sufficiently similar, and "sufficiently similar" is hard to define`
-The role of task relatedness in multitask learning remains poorly understood.
 
 Overall, multimodal, multi-task and transfer learning strategies demonstrate
 high potential for many biomedical applications that are otherwise limited
