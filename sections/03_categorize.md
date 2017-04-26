@@ -123,7 +123,7 @@ This provides support that deep learning may impact the field by reducing the
 researcher time and cost required to develop specific solutions, but it may not
 lead to performance increases.
 
-In recent work, Yoon et al.[@doi:10.1007/978-3-319-47898-2_21] analyzed simple
+In recent work, Yoon et al.[@tag:Yoon2016_cancer_reports] analyzed simple
 features using deep neural networks and found that the patterns recognized by
 the algorithms could be re-used across tasks. Their aim was to analyze the free
 text portions of pathology reports to identify the primary site and laterality

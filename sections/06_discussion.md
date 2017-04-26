@@ -270,14 +270,31 @@ deep belief networks (DBN), demonstrate successful extraction of
 more informative features for one modality
 (images or video) when jointly learnt with other modalities
 (audio or text) [@tag:Ngiam2011].
+Deep graphical models such as DBNs are considered to be well suited for
+multimodal learning tasks since they are aimed to learn a joint probability
+distribution from inputs. They can be pre-trained in unsupervised fashion
+on large unlabeled data and then fine-tuned on a smaller number of labeled
+examples. When labels are available, convolutional neural networks (CNN) are
+ubiquitously used, since they can be trained end-to-end with backpropagation
+and demonstrate state-of-the-art performance in many discriminative tasks
+[@tag:Angermueller2016_dl_review].
 Jha et al. [@tag:Jha2017_integrative_models] showed that an integrated training
 approach delivers better performance compared to individual networks. They
 compared a number of feed-forward architectures trained on RNA-Seq data
 with and without an additional set of CLIP-seq, knockdown, and over-expression
 based input features. Results showed that the integrative deep model
 generalized well for combined data, offering large performance improvement
-for alternative splicing event estimation. Chen et al.
-[@tag:Chen2015_trans_species] used deep belief networks to learn
+for alternative splicing event estimation.
+Chaudhary et al. [@tag:Chaudhary2017_multiom_liver_cancer] trained deep
+autoencoder model jointly on RNA-seq, miRNA-seq, and methylation data from TCGA
+to predict survival subgroups of hepatocellular carcinoma patients. This
+multimodal approach that treated different omics as different modalities
+outperformed both traditional methods (PCA) and single-omic models.
+Interestingly, multi-omic model performance did not improve when combined
+with clinical information, suggesting that the model was able to capture
+redundant contributions of clinical features through their correlated
+genomic features.
+Chen et al. [@tag:Chen2015_trans_species] used deep belief networks to learn
 phosphorylation states of a common set of signaling proteins in primary
 cultured bronchial cells collected from rats and humans treated
 with distinct stimuli. Interpreting species as different modalities
@@ -289,15 +306,6 @@ DNA methylation, and miRNA expression data [@tag:Liang2015_exprs_cancer].
 This approach allowed for the capture of intrinsic relationships in
 different modalities and for better clustering performance over conventional
 k-means based methods.
-
-Deep graphical models such as DBNs are considered to be well suited for
-multimodal learning tasks since they are aimed to learn a joint probability
-distribution from inputs. They can be pre-trained in unsupervised fashion
-on large unlabeled data and then fine-tuned on a smaller number of labeled
-examples. When labels are available, convolutional neural networks (CNN) are
-ubiquitously used, since they can be trained end-to-end with backpropagation
-and demonstrate state-of-the-art performance in many discriminative tasks
-[@tag:Angermueller2016_dl_review].
 Multimodal learning with CNNs is usually implemented as a collection of
 individual networks, in which each learns representations from single data type.
 These individual representations are further concatenated before or within
@@ -308,25 +316,43 @@ RNA-seq, and raw DNA sequence to predict Transcription Start Site-seq
 (TSS-seq) outputs. The combined model radically improves performance over
 separately trained datatype-specific networks, suggesting that it learns the
 synergistic relationship between datasets.
-Chaudhary et al. [@tag:Chaudhary2017_multiom_liver_cancer] trained deep
-autoencoder model jointly on RNA-seq, miRNA-seq, and methylation data from TCGA
-to predict survival subgroups of hepatocellular carcinoma patients. This
-multimodal approach that treated different omics as different modalities
-outperformed both traditional methods (PCA) and single-omic models.
-Interestingly, multi-omic model performance did not improve when combined
-with clinical information, suggesting that the model was able to capture
-redundant contributions of clinical features through their correlated
-genomic features.
 
-`TODO: add multi-task learning with examples`
 Multi-task learning (MTL) is an approach related to transfer learning.
 In MTL framework a model co-learns a number of tasks simultaneously such that
 features are shared across them.
-
-MTL approach is complementary to multimodal learning, so both can be
-implemented in the same model.
+DeepSEA framework [@tag:Zhou2015_deep_sea] implemented multi-task joint
+learning of diverse chromatin factors sharing predictive features from raw
+DNA sequence. This allowed, for example, a sequence feature that is effective
+for recognizing binding of a specific TF to be simultaneously used by
+another predictor for a physically interacting TF.
+Similarly, TFImpute [@tag:Qin2017_onehot], a CNN-RNN architecture learned
+information shared across transcription factors and cell lines to predict
+cell-specific TF binding for TF-cell line combinations based on only a
+small fraction (4%) of the combinations using available ChIP-seq data. On
+multiple test sets that excluded specific TFs and cell lines TFImpute showed
+comparable or superior performance compared to the state-of-the-art.
+Yoon et al.[@tag:Yoon2016_cancer_reports], previously discussed in the section
+on Electronic Health Records, demonstrated that predicting the primary cancer
+site from the cancer pathology reports together with it's laterality
+substantially improved the performance for the latter task, suggesting that
+MTL can effectively leverage the commonality between the two tasks using
+a shared representation.
+A number of works previously mentioned in the section on developing new
+treatments showed  employed multi-task learning approach for drug discovery
+[@tag:Dahl2014_multi_qsar @tag:Ramsundar2015_multitask_drug]
+and drug toxicity prediction
+[@tag:Mayr2016_deep_tox @tag:Hughes2016_macromol_react]. Kearnes et al.
+[@tag:Kearnes2016_admet] did a systemic comparison of single-task and
+multi-task deep models on a set of industrial ADMET datasets. They confirmed
+that multi-task learning can improve performance over single-task models and
+showed that smaller datasets tend to benefit more than larger datasets from
+multitask learning. Results emphasized that multitask effects are highly
+dataset-dependent, suggesting the use of dataset-specific models to maximize
+overall performance.
 
 `TODO: A summary sentence either comparing multimodal learning with transfer learning or providing a take home message`
+MTL approach is complementary to multimodal and transfer learning, so allow
+these techniques can be used together in the same model.
 
 Despite demonstrated improvements, transfer learning approaches also pose
 a number of challenges. As mentioned above, there are no theoretically sound
@@ -350,7 +376,9 @@ low-data drug discovery with one-shot learning, but it was not able to achieve
 any predictive power with transfer learning on closely related testing tasks
 from different datasets, clearly demonstrating a limit to the cross-task
 generalization capability of one-shot models [@tag:AltaeTran2016_one_shot].
+
 `TODO: remind that MTL with many tasks did not necessarily help when the tasks were not sufficiently similar, and "sufficiently similar" is hard to define`
+The role of task relatedness in multitask learning remains poorly understood.
 
 Overall, multimodal and transfer learning strategies demonstrate high potential
 for many biomedical applications that are otherwise limited by data volume.
