@@ -240,28 +240,29 @@ Moreover, in this type of task, learnt features performed reasonably well even
 when applied to images obtained using different fluorescent labels, imaging
 techniques, and different cell types [@tag:Kraus2017_deeploc]. However, there
 are no established theoretical guarantees for feature transferability between
-such distant domains such as natural images and various modalities of biological
+distant domains such as natural images and various modalities of biological
 imaging. Because learnt patterns are represented in deep neural networks in a
 layer-wise hierarchical fashion, this issue is usually addressed by fixing an
 empirically chosen number of layers that preserve generic characteristics
 of both training and target datasets. Then, the model is fine-tuned by
-re-training a number of networks' top layers on the specific dataset in order to
-re-learn domain-specific high level concepts, for example, see fine-tuning for
+re-training multiple networks' top layers on the specific dataset in order to
+re-learn domain-specific high level concepts. For example, see fine-tuning for
 radiology image classification [@tag:Rajkomar2017_radiographs].
 Fine-tuning on specific biological datasets enables more focused predictions.
-Basset package [@tag:Kelley2016_basset] for prediction of functional activities
-from DNA sequences was shown to rapidly learn to accurately predict new data by
-leveraging a model pre-trained on available "public" data. To simulate such
-scenario authors put aside 15 of original 164 cell type datasets and trained
-Basset model on the remaining 149. Then, they fine-tuned the model with one
-training pass of each of remaining datasets and achieved results close to
-the model trained on all 164 datasets together. In another example, Min et al.
+The Basset package [@tag:Kelley2016_basset] for prediction of functional
+activities from DNA sequences was shown to rapidly learn and accurately predict
+on new data by leveraging a model pre-trained on available "public" data.
+To simulate this scenario, authors put aside 15 of 164 cell type datasets
+and trained the Basset model on the remaining 149 datasets. Then, they
+fine-tuned the model with one training pass of each of the remaining datasets
+and achieved results close to the model trained on all 164 datasets together.
+In another example, Min et al.
 [@tag:Min2016_deepenhancer] demonstrated how training on the experimentally
 validated FANTOM5 permissive enhancer dataset followed by fine-tuning on ENCODE
 enhancer datasets improved cell type-specific predictions, outperforming
 state-of-the-art results.
 
-Related to transfer learning, a multimodal learning framework assumes
+Multimodal learning is related to transfer learning. It assumes
 simultaneous learning from various types of inputs, such as images and text.
 It allows capture of features that describe common concepts across input
 modalities. Generative graphical models like restricted Boltzmann
@@ -272,10 +273,10 @@ more informative features for one modality
 (audio or text) [@tag:Ngiam2011].
 Deep graphical models such as DBNs are considered to be well suited for
 multimodal learning tasks since they are aimed to learn a joint probability
-distribution from inputs. They can be pre-trained in unsupervised fashion
+distribution from inputs. They can be pre-trained in an unsupervised fashion
 on large unlabeled data and then fine-tuned on a smaller number of labeled
 examples. When labels are available, convolutional neural networks (CNN) are
-ubiquitously used, since they can be trained end-to-end with backpropagation
+ubiquitously used since they can be trained end-to-end with backpropagation
 and demonstrate state-of-the-art performance in many discriminative tasks
 [@tag:Angermueller2016_dl_review].
 Jha et al. [@tag:Jha2017_integrative_models] showed that an integrated training
@@ -285,7 +286,7 @@ with and without an additional set of CLIP-seq, knockdown, and over-expression
 based input features. Results showed that the integrative deep model
 generalized well for combined data, offering large performance improvement
 for alternative splicing event estimation.
-Chaudhary et al. [@tag:Chaudhary2017_multiom_liver_cancer] trained deep
+Chaudhary et al. [@tag:Chaudhary2017_multiom_liver_cancer] trained a deep
 autoencoder model jointly on RNA-seq, miRNA-seq, and methylation data from TCGA
 to predict survival subgroups of hepatocellular carcinoma patients. This
 multimodal approach that treated different omics as different modalities
@@ -297,17 +298,17 @@ genomic features.
 Chen et al. [@tag:Chen2015_trans_species] used deep belief networks to learn
 phosphorylation states of a common set of signaling proteins in primary
 cultured bronchial cells collected from rats and humans treated
-with distinct stimuli. Interpreting species as different modalities
+with distinct stimuli. By interpreting species as different modalities
 representing similar high-level concepts, they showed that DBNs were able
 to capture cross-species representation of signaling mechanisms in response
 to a common stimuli. Another application used DBNs for joint unsupervised
-feature learning from cancer datasets contained gene expression,
+feature learning from cancer datasets containing gene expression,
 DNA methylation, and miRNA expression data [@tag:Liang2015_exprs_cancer].
 This approach allowed for the capture of intrinsic relationships in
 different modalities and for better clustering performance over conventional
 k-means based methods.
 Multimodal learning with CNNs is usually implemented as a collection of
-individual networks, in which each learns representations from single data type.
+individual networks in which each learns representations from single data type.
 These individual representations are further concatenated before or within
 fully-connected layers. FIDDLE [@tag:Eser2016_fiddle] is an example of
 multimodal CNNs that represents an ensemble of individual networks that take
@@ -318,24 +319,24 @@ separately trained datatype-specific networks, suggesting that it learns the
 synergistic relationship between datasets.
 
 Multi-task learning (MTL) is an approach related to transfer learning.
-In MTL framework a model co-learns a number of tasks simultaneously such that
+In an MTL framework a model co-learns a number of tasks simultaneously such that
 features are shared across them.
-DeepSEA framework [@tag:Zhou2015_deep_sea] implemented multi-task joint
+DeepSEA framework [@tag:Zhou2015_deep_sea] implemented a multi-task joint
 learning of diverse chromatin factors sharing predictive features from raw
 DNA sequence. This allowed, for example, a sequence feature that is effective
-for recognizing binding of a specific TF to be simultaneously used by
+in recognizing binding of a specific TF to be simultaneously used by
 another predictor for a physically interacting TF.
 Similarly, TFImpute [@tag:Qin2017_onehot], a CNN-RNN architecture learned
 information shared across transcription factors and cell lines to predict
 cell-specific TF binding for TF-cell line combinations based on only a
 small fraction (4%) of the combinations using available ChIP-seq data. On
-multiple test sets that excluded specific TFs and cell lines TFImpute showed
+multiple test sets that excluded specific TFs and cell lines, TFImpute showed
 comparable or superior performance compared to the state-of-the-art.
 Yoon et al.[@tag:Yoon2016_cancer_reports], previously discussed in the section
 on Electronic Health Records, demonstrated that predicting the primary cancer
-site from the cancer pathology reports together with it's laterality
+site from the cancer pathology reports together with its laterality
 substantially improved the performance for the latter task, suggesting that
-MTL can effectively leverage the commonality between the two tasks using
+MTL can effectively leverage the commonality between two tasks using
 a shared representation.
 A number of studies previously mentioned in the section on developing new
 treatments employed multi-task learning approach to predict a large number
@@ -345,15 +346,15 @@ and drug toxicity prediction
 [@tag:Mayr2016_deep_tox @tag:Hughes2016_macromol_react]. Kearnes et al.
 [@tag:Kearnes2016_admet] did a systematic comparison of single-task and
 multi-task deep models on a set of industrial ADMET datasets. They confirmed
-that multi-task learning can improve performance over single-task models and
-showed that smaller datasets tend to benefit more than larger datasets from
-multitask learning. Results emphasized that multitask effects are highly
-dataset-dependent, suggesting the use of dataset-specific models to maximize
-overall performance.
+that multi-task learning can improve performance over single-task models. They
+further showed that smaller datasets tend to benefit more from multitask
+learning than larger datasets. Results emphasized that multitask effects are
+highly dataset-dependent, suggesting the use of dataset-specific models to
+maximize overall performance.
 
 MTL approach is complementary to multimodal and transfer learning. All three
-techniques can be combined together in the same model. For example, Zhang et al.
-[@tag:Zhang2015_multitask_tl] used deep model based transfer and multi-task
+techniques can be used together in the same model. For example, Zhang et al.
+[@tag:Zhang2015_multitask_tl] combined deep model based transfer and multi-task
 learning for cross-domain image annotation. One could imaging extending that
 approach to multimodal inputs as well. Common characteristic os these methods
 lies in better generalization of extracted features by leveraging relationships
@@ -373,15 +374,15 @@ Unfortunately, negative results are typically left out and not
 presented in the final study publications.
 Results by Rajkomar et al. [@tag:Rajkomar2017_radiographs] showed that a deep
 CNN trained on natural images can boost radiology image classification
-performance. However, due to differences in imaging domains it requires
-either re-training initial model from scratch with special pre-processing
+performance. However, due to differences in imaging domains, target task required
+either re-training the initial model from scratch with special pre-processing
 or fine-tuning of the whole network on radiographs with heavy data augmentation
-to avoid overfitting. Just fine-tuning of top layers led to much lower
+to avoid overfitting. Exclusively fine-tuning top layers led to much lower
 validation accuracy (81.38 vs 99.5).
-Fine-tuning procedure for the above-mentioned Basset model pre-trained on data
-from different cell types required not more than one training pass. Otherwise
+Fine-tuning procedure for the discussed Basset model pre-trained on data
+from different cell types required no more than one training pass. Otherwise,
 the model started overfitting new data [@tag:Kelley2016_basset].
-DeepChem framework, discussed above, successfully improved results for
+DeepChem framework successfully improved results for
 low-data drug discovery with one-shot learning, but it was not able to achieve
 any predictive power with transfer learning on closely related testing tasks
 from different datasets, clearly demonstrating a limit to the cross-task
@@ -389,16 +390,16 @@ generalization capability of one-shot models [@tag:AltaeTran2016_one_shot].
 
 Overall, multimodal, multi-task and transfer learning strategies demonstrate
 high potential for many biomedical applications that are otherwise limited
-by data volume and presence of labels. These methods not only inherit most of
-methodological issues from natural image, text, and audio domains, but also
-pose new challenges, specific to biological data. We suggest that these types
-of models deserve deeper investigation to establish best practices and
-determine limits for the transferability of features between various close
-related and distant learning tasks. Making negative results, source
-code, and pre-trained models publicly available helps to accelerate progress
-in this direction. However, there are privacy considerations for models
+by data volume and presence of labels. However, these methods not only inherit
+most methodological issues from natural image, text, and audio domains, but also
+pose new challenges, specific to biological data. Making negative results,
+source code, and pre-trained models publicly available helps to accelerate
+progress in this direction. However, there are privacy considerations for models
 trained on sensitive data, such as patient-related information (see Data
 sharing section). Thus, there is a compelling need for the development of
 privacy-preserving transfer learning algorithms, such as Private Aggregation
 of Teacher Ensembles (PATE-G) [@tag:Papernot2017_pate], that can leverage
-publicly available data.
+publicly available data. We suggest that these types of models deserve deeper
+investigation to establish sound theoretical guarantees and best practices and
+determine limits for the transferability of features between various closely
+related and distant learning tasks.
