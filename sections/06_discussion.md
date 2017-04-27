@@ -48,27 +48,23 @@ As the concept of interpretability is quite broad, many methods described as
 improving the interpretability of deep learning models take disparate and
 often complementary approaches. Some key themes are discussed below. 
 
-#### Example-specific explanations
+#### Assigning example-specific importance scores
 
-Several approaches are designed to provide insight into the basis for
-individual predictions made by the model, as opposed to identifying more
-general patterns that the model searches for. 
-
-##### Assigning importance scores to individual parts of the input
-
-Several approaches ascribe importance to the parts of the input that drive
-the output for a particular prediction task. These can be broadly divided
+Several approaches ascribe importance on an example-specific basis 
+to the parts of the input that are responsible for a particular output.
+These can be broadly divided
 into perturbation-based approaches and backpropagation-based approaches.
 
-###### Perturbation-based approaches
+##### Perturbation-based approaches
 
 These approaches make perturbations to individual inputs and observes
 the impact on the output of the network. Zhou & Troyanskaya <cite> scored
 genomic sequences by introducing virtual
 mutations at each position and quantifying the change in the output.
-<LIME people> constructed a linear model to locally approximate the output
+<LIME people> introduced LIME which constructs a linear model to
+locally approximate the output
 of the network on perturbed versions of the input and assigned importance
-scores accordingly. For analyzing images, Zeiler & Fergus applied
+scores accordingly. For analyzing images, Zeiler & Fergus <cite> applied
 constant-value masks to different input patches and studied the changes in
 the activations of later layers. As an alternative to using masks, which can
 produce misleading results, Zintgraf et al. proposed a novel strategy based
@@ -82,58 +78,140 @@ methods may also underestimate the impact of features that have saturated their
 contribution to the output, as can happen when multiple redundant features
 are present.
 
-###### Backpropagation-based approaches
+To reduce the computational overhead of perturbation-based approaches,
+Ruth & Vedaldi (2017) <cite> solve an optimization problem using
+gradient descent to discover a minimal subset
+of inputs to perturb in order to decrease the predicted probability of a
+selected class. When tested on image data,
+their method took about 300 iterations to converge, compared to the
+~5000 iterations used by LIME. One drawback of this approach is that
+the use of gradient descent requires the perturbation to have a
+differentiable form.
 
-###### Optimization-based approaches
+##### Backpropagation-based approaches
 
-##### RNN-specific approaches
+A second strategy for addressing the computational inefficiency of
+perturbation-based approaches is to propagate an important signal from
+a target output neuron backwards through the layers to the input layer
+in a single backpropagation-like pass. A classic example of this
+calculating the gradients of the output w.r.t. the input <cite Simonyan>
+to compute a 'saliency map'. Bach et al. 2015
+ <cite> proposed a strategy called Layerwise Relevance Propagation, which was
+ shown to be equivalent to the elementwise product of the gradient and
+ input <cite>. Several variants of gradients exist which differ
+in their handling of the ReLU nonlinearity: while gradients zero-out the
+importance signal at ReLUs if the input to the ReLU is negative,
+deconvolutional networks <cite> zero-out the importance signal if
+ the signal itself is negative. Guided backpropagation <cite>
+ combines the two strategies to zero-out the importance signal if either
+ the input to ReLU is negative or the importance signal is negative,
+ in effect discarding negative gradients.
+ However, <cite> showed that while guided backpropagation excelled at
+ identifying salient features in the input image, these features showed little
+ class-specificity, producing very similar saliency maps regardless
+ of the class under consideration. <cite> attempted to alleviate this
+ by combining gradients and guided backpropagation
+ in Guided Grad-CAM: feature maps in the last convolutional layer were
+ associated with classes using gradients, and the weighted activation of
+ these feature maps was multiplied with the result of guided backpropagation
+ to introduce more class specificity. Note that these approaches still would
+ not highlight features that have saturated their contribution to the output,
+ as the gradients w.r.t. such features would be zero at the input. 
 
-###### Attention mechanisms
-(maybe also cite genetic architect)
+To address the saturation failure mode, strategies have been developed
+ to consider how the output changes between some reference input
+ and the actual input, where the reference input represents a 'null' input that it
+ is informative to measure differences against.
+ Sundararajan et al., 2016 <cite> integrated the
+ gradients as the input was linearly increased from the reference to its
+ actual value (in their examples, which were on image-like data, they
+ used a reference of all zeros). While the numerical integration adds computational
+ overhead, the method is still more efficient on average than perturbation approaches.
+ Further, by relying only on the gradients, the method is a fully black-box
+ approach that is guaranteed to give the same answer for functionally
+ equivalent networks. Shrikumar et al., 2017 <cite> developed DeepLIFT,
+ a strategy that used the difference
+ between a neuron's activation on the reference input compared to its
+ activation on theactual
+ input to improve the backpropagation of importance scores. DeepLIFT is
+ a white-box method that requires knowledge of the network architecture,
+ but it is more computationally efficient than integrated gradients.
+ Lundberg & Lee., 2016 <cite> noted that
+ several importance scoring methods, including DeepLIFT,
+ integrated gradients and LIME,
+ could all be considered
+ approximations to the Shapely values <cite>, which have a long history
+ in game theory for assigning contributions to players in cooperative games. 
+ DeepLIFT introduced a modification which treated positive and negative
+ contributions separately to address some failure cases of
+ integrated gradients; the modification can be understood as an improved
+ approximation of the Shapely values.
 
-###### Assigning importance based on changes in activation
+#### Matching or exaggerating the hidden representation 
 
-##### Matching the hidden representation
+Another approach to understanding the network's predictions
+is to find artifical inputs that produce similar hidden
+representations to a chosen example. This can elucidate the features
+that the network uses for prediction and drop the features that the
+network is insensitive to. In the context of natural images,
+Mahendran & Vedaldi, 2015
+<cite; 'Understanding deep image representations
+by inverting them'>
+introduced the "inversion" visualization which uses gradient descent and
+backpropagation to reconstruct the input from its hidden representation.
+The method required placing a prior on the input to favour results which
+resemble natural images. 
+For genomic sequence, <cite> used a MCMC algorithm to find the
+maximum-entropy distribution of inputs that produced a similar hidden
+representation to the chosen input. 
 
-##### Understanding the training points that drive a prediction
+A related idea is 'caricaturization', where an initial image is altered to
+exaggerate patterns that the net searches for
+<cite 'Visualizing Deep Convolutional Neural Networks Using Natural
+Pre-images'>. This is done by maximizing
+the response of neurons that are active in the network, subject to some
+regularizing constraints. <cite deep dream people> leveraged caricaturization to
+generate aesthetically pleasing images using neural networks.
 
 #### Visualizing patterns learned by individual neurons in the network
 
-##### Visualizing neurons in CNNs
+Activation maximization can reveal patterns
+detected by an individual neuron in the network by generating
+images which maximally activate that neuron, subject
+to some regularizing constraints. This technique was first introduced
+in Ehran et al., (2009) and applied in Simonyan et al. (2014) <cite>,
+Mordvintsev et al. (2015) <cite>,
+Yosinksi et al. (2015) and Mahendran & Vedaldi (2016). Lanchatin et al. (2016)
+<cite https://arxiv.org/abs/1608.03644> applied activation maximization to
+genomic sequence. One drawback of
+this approach is that neural networks often learn highly distributed
+representations where several neurons cooperatively describe a pattern
+of interest - thus, visualizing patterns learned by individual neurons
+may not always be informative.
 
-##### Visualizing neurons in RNNs
-LSTM visualizer
+#### RNN-specific approaches
 
-#### Reducing the deep learning model to a simpler model 
+Several interpretation methods are specifically tailored to
+recurrent neural network architecutres. By visualizing activation patterns
+in character-level language models, Karpathy et al. (2015)
+<cite https://arxiv.org/abs/1506.02078> showed the existence of individual
+cells in LSTMs that kept track of quotes and brackets.
+<cite http://lstm.seas.harvard.edu/client/index.html> developed LSTM vis 
+to interactively explore the hidden state of LSTMs on different inputs.
 
-#### Quantifying the uncertainty in the predictions
+- Attention (genetic architect), changes in activation (lanchatin),
+- RETAIN
+- automatic rule extraction from LSTMs https://arxiv.org/abs/1702.02540
 
 
-Sample-specific importance scoring and interpretation:
-- perturbation-based approaches where you observe the impact of the output on
-perturbed versions of the input and use that to ascribe importance. Simplest
-version is forward propagations (ISM, basset=filter nullification). LIME builds
-a linear model to approximate the output on the perturbed input and uses this
-to ascribe feature importance. Prediction difference analysis uses conditional
-probability to intelligently sample the perturbations. These approaches are
-computationally expensive (copy whatever the 'meaningful perturbations' paper
-said about LIME). The meaningful perturbations paper uses gradient descent
-to identify which portion of an image to blur, thereby alleviating but not completely
-eliminating the computational burden.
-- backpropagation approaches to alleviate computational burden. Simonyan,
-LRP which is gradient*input, guided backprop (kicks out negative gradients),
-guided grad CAM (where class specificity only comes from the feature-map layer).
-As noted by [deeplift, integrated gradients paper], several of these methods
-that rely on variants of computing gradients are susceptible to saturation
-effects. This can be addressed use a reference, such as deeplift
-and integrated gradients (left limit of integral).
-DeepLIFT is computationally more efficient than integrated
-gradients and can optionally support separating positive and negative
-contributions which can improve attribution scores under certain circumstances,
-while integrated gradients, being a fully black-box method in that it is
-agnostic to the details of the model architecture, has stronger theoretical
-guarantees in that it will always give the same output for functionally
-equivalent models. Optimal choice of reference is an open question. 
+####Other
+- Understanding the training points that drive a prediction
+- Che et al [@tag:Che2015_distill] introduced a
+knowledge-distillation approach which used gradient boosted trees to learn
+interpretable healthcare features from trained deep models.
+- quantifying uncertainty in the prediction
+
+. Optimal choice of reference is an open question. 
 - 'inversion' - stay faithful to the hidden layer representations. natural
 images in the Mahendran paper. https://link.springer.com/article/10.1007/s11263-016-0911-8,
 then there is the entropy paper ("Maximum Entropy Methods for Extracting the Learned Features of Deep Neural Networks") where find the maximum entropy representation of a sequence that maintains the hidden activation.
@@ -161,9 +239,7 @@ of disease ontologies and found that the concepts represented by the model were
 aligned with medical knowledge.
 - Deep motif dashboard: https://arxiv.org/abs/1608.03644
 
-Condense to a simpler model altogether via distillation: Che et al [@tag:Che2015_distill] introduced a
-knowledge-distillation approach which used gradient boosted trees to learn
-interpretable healthcare features from trained deep models.
+Condense to a simpler model altogether via distillation: 
 
 Interpretability matters, among other things, because deep networks are easily fooled
 [@tag:Nguyen2014_adversarial]. 
