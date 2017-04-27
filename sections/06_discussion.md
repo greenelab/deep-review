@@ -218,12 +218,12 @@ machine learning algorithms. When trained on such datasets, deep learning
 models are particularly prone to overfitting due to their high representational
 power. However, transfer learning techniques also known as domain adaptation
 enable transfer of extracted patterns between different datasets and even
-domains. This approach can be described in 2-step process:
-(1) training a model for the base task, and (2) reusing trained model
-for the target problem in hand. The first step allows to take advantage of
-larger amount of data, labels, or both, to extract better feature
+domains. This approach can be described in a 2-step process:
+(1) training a model for the base task, and (2) reusing the trained model
+for the target problem in hand. The first step allows a model to take advantage
+of larger amount of data, labels, or both, to extract better feature
 representations. Transferring learnt features in deep neural networks
-improves performance compared to random features even
+improves performance compared to randomly initialized features even
 when pre-training and target sets are dissimilar. However,
 transferability of features decreases as the distance between the base task
 and target task increases [@tag:Yosinski2014].
@@ -251,7 +251,7 @@ radiology image classification [@tag:Rajkomar2017_radiographs].
 Fine-tuning on specific biological datasets enables more focused predictions.
 The Basset package [@tag:Kelley2016_basset] for prediction of functional
 activities from DNA sequences was shown to rapidly learn and accurately predict
-on new data by leveraging a model pre-trained on available "public" data.
+on new data by leveraging a model pre-trained on available public data.
 To simulate this scenario, authors put aside 15 of 164 cell type datasets
 and trained the Basset model on the remaining 149 datasets. Then, they
 fine-tuned the model with one training pass of each of the remaining datasets
@@ -272,7 +272,7 @@ more informative features for one modality
 (images or video) when jointly learnt with other modalities
 (audio or text) [@tag:Ngiam2011].
 Deep graphical models such as DBNs are considered to be well suited for
-multimodal learning tasks since they are aimed to learn a joint probability
+multimodal learning tasks since they learn a joint probability
 distribution from inputs. They can be pre-trained in an unsupervised fashion
 on large unlabeled data and then fine-tuned on a smaller number of labeled
 examples. When labels are available, convolutional neural networks (CNN) are
@@ -281,7 +281,7 @@ and demonstrate state-of-the-art performance in many discriminative tasks
 [@tag:Angermueller2016_dl_review].
 Jha et al. [@tag:Jha2017_integrative_models] showed that an integrated training
 approach delivers better performance compared to individual networks. They
-compared a number of feed-forward architectures trained on RNA-Seq data
+compared a number of feed-forward architectures trained on RNA-seq data
 with and without an additional set of CLIP-seq, knockdown, and over-expression
 based input features. Results showed that the integrative deep model
 generalized well for combined data, offering large performance improvement
@@ -354,9 +354,9 @@ maximize overall performance.
 
 MTL approach is complementary to multimodal and transfer learning. All three
 techniques can be used together in the same model. For example, Zhang et al.
-[@tag:Zhang2015_multitask_tl] combined deep model based transfer and multi-task
-learning for cross-domain image annotation. One could imaging extending that
-approach to multimodal inputs as well. Common characteristic os these methods
+[@tag:Zhang2015_multitask_tl] combined deep model-based transfer and multi-task
+learning for cross-domain image annotation. One could imagine extending that
+approach to multimodal inputs as well. Common characteristic of these methods
 lies in better generalization of extracted features by leveraging relationships
 between information in provided in inputs and task objectives, represented at
 various hierarchical levels of abstraction in a deep learning model structure.
@@ -374,19 +374,19 @@ Unfortunately, negative results are typically left out and not
 presented in the final study publications.
 Results by Rajkomar et al. [@tag:Rajkomar2017_radiographs] showed that a deep
 CNN trained on natural images can boost radiology image classification
-performance. However, due to differences in imaging domains, target task required
-either re-training the initial model from scratch with special pre-processing
-or fine-tuning of the whole network on radiographs with heavy data augmentation
-to avoid overfitting. Exclusively fine-tuning top layers led to much lower
-validation accuracy (81.38 vs 99.5).
+performance. However, due to differences in imaging domains, target task
+required either re-training the initial model from scratch with special
+pre-processing or fine-tuning of the whole network on radiographs with heavy
+data augmentation to avoid overfitting. Exclusively fine-tuning top layers led
+to much lower validation accuracy (81.4 vs 99.5).
 Fine-tuning procedure for the discussed Basset model pre-trained on data
 from different cell types required no more than one training pass. Otherwise,
 the model started overfitting new data [@tag:Kelley2016_basset].
-DeepChem framework successfully improved results for
-low-data drug discovery with one-shot learning, but it was not able to achieve
-any predictive power with transfer learning on closely related testing tasks
-from different datasets, clearly demonstrating a limit to the cross-task
-generalization capability of one-shot models [@tag:AltaeTran2016_one_shot].
+DeepChem successfully improved results for low-data drug discovery
+with one-shot learning for related tasks. However, demonstrated clear
+limitations to cross-task generalization across unrelated tasks in one-shot
+models, specifically nuclear receptor assays and patient adverse reactions
+[@tag:AltaeTran2016_one_shot].
 
 Overall, multimodal, multi-task and transfer learning strategies demonstrate
 high potential for many biomedical applications that are otherwise limited
