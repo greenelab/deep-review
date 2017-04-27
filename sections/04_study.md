@@ -688,8 +688,8 @@ and even species [@tag:Poplin2016_deepvariant]. However, a model built on
 Illumina data, for instance, may not be applicable to PacBio long-read data or
 MinION nanopore data, which have vastly different specificity and sensitivity
 profiles and signal-to-noise characteristics. Recently, Boza et al. used
-bidirectional recurrent neural networks infer the *E. coli* sequence from MinION
-nanopore electric current data with 2% higher per-base accuracy than the
+bidirectional recurrent neural networks to infer the *E. coli* sequence from
+MinION nanopore electric current data with 2% higher per-base accuracy than the
 proprietary hidden Markov model-based algorithm Metrichor (86% to 88%)
 [@tag:Boza]. Unfortunately, training any neural network requires a large amount
 of data, which is often not available for new sequencing technologies. To
