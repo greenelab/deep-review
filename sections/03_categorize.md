@@ -145,7 +145,7 @@ tackles new challenges.
 
 Several authors have created reusable feature sets for medical terminologies
 using natural language processing (NLP) and neural embedding models, as
-popularized by Word2vec [@tag:Word2Vec]. A goal of learning terminologies 
+popularized by Word2vec [@tag:Word2Vec]. A goal of learning terminologies
 for different entities in the same vector spaec is to find relationships
 between different domains (e.g. drugs and the diseases they treat). It is
 difficult for us to provide a strong statement on the broad utility of these
