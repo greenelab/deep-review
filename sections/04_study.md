@@ -230,10 +230,11 @@ motif-driven nature of the TFBS task, most architectures
 have been convolutional-based, as summarized in [@tag:Zeng2016_convolutional].
 [@tag:Lanchantin2016_motif] introduced several new convolutional and 
 recurrent neural network models for predicting TFBSs, which showed improvements
-on the baseline datasets. It is also important
-to note that DNA sequence tasks are fundamentally different than natural
-language tasks, and thus the models should be adapted from traditional
-deep learning models in order to account for such differences.
+over other deep learning models on the dataset from
+[@tag:Alipanahi2015_predicting]. 
+It is also important to note that DNA sequence tasks are fundamentally 
+different than natural language tasks, and thus the models should be adapted 
+from traditional deep learning models in order to account for such differences.
 For example, motifs may appear in either strand of a DNA sequence, resulting
 in two different forms of the motif (forward and reverse complement) due 
 to complementary base pairing.
