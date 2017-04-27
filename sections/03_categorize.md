@@ -143,21 +143,27 @@ This indicates a potential strength of deep methods. It may be possible to
 repurpose features from task to task, improving overall predictions as the field
 tackles new challenges.
 
-Several authors have created reusable feature sets for medical terminologies using
-neural embeddings, as popularized by word2Vec [@tag:Word2Vec]. This approach
-was first used on free text medical notes by De Vine et al.
-[@doi:10.1145/2661829.2661974] with results at or better than traditional methods.
-Y. Choi et al.[@doi:10.1145/2567948.2577348] built embeddings of standardized
-terminologies, such as ICD and NDC, used in widely available administrative
-claims data. By learning terminologies for different entities in the same
-vector space, they can potentially find relationships between different
-domains (e.g. drugs and the diseases they treat). Medical claims data does not
-have the natural document structure of clinical notes, and this issue was
-addressed by E. Choi et al. [@doi:10.1145/2939672.2939823], who built
-embeddings using a multi-layer network architecture which mimics the structure
-of claims data. While promising, difficulties in evaluating the quality of
-these kinds of features and variations in clinical coding practices remain as
-challenges to using them in practice.
+Several authors have created reusable feature sets for medical terminologies
+using natural language processing (NLP) and neural embedding models, as
+popularized by Word2vec [@tag:Word2Vec]. A goal of learning terminologies
+for different entities in the same vector space is to find relationships
+between different domains (e.g. drugs and the diseases they treat). It is
+difficult for us to provide a strong statement on the broad utility of these
+methods. Manuscripts in this area tend to compare algorithms applied to the
+same data but lack a comparison against overall best-practices for one or more
+tasks addressed by these methods. Techniques have been developed for free text
+medical notes [@doi:10.1145/2661829.2661974], ICD and NDC, and claims data
+[@doi:10.1145/2939672.2939823]. Methods for neural embeddings learned from
+electronic health records have at least some ability to predict disease-disease
+associations and implicate genes with a statistical association with a disease
+[@doi:10.1038/srep32404]. However, the evaluations performed did not
+differentiate between simple predictions (i.e. the same disease in different
+sites of the body) and non-intuitive ones. While promising, a lack of rigorous
+evaluations of the real-world utility of these kinds of features makes
+current contributions in this area difficult to evaluate. To examine the true
+utility, comparisons need to be performed against leading approaches (i.e.
+algorithms and data) as opposed to simply evaluating multiple algorithms on
+the same potentially limited dataset.
 
 Identifying consistent subgroups of individuals and individual health
 trajectories from clinical tests is also an active area of research. Approaches
@@ -168,42 +174,44 @@ processes to distinguish gout from leukemia from uric acid sequences. Later work
 showed that unsupervised feature construction of many features via denoising
 autoencoder neural networks could dramatically reduce the number of labeled
 examples required for subsequent supervised analyses
-[@doi:10.1016/j.jbi.2016.10.007]. In addition, it pointed towards learned
-features being useful for subtyping within a single disease. A concurrent large-
-scale analysis of an electronic health records system found that a deep
-denoising autoencoder architecture applied to the number and co-occurrence of
-clinical test events, though not the results of those tests, constructed
-features that were more useful for disease prediction than other existing
-feature construction methods [@doi:10.1038/srep26094].  Razavian et al.
-[@arxiv:1608.00647] used a set of 18 common lab tests to predict disease onset
-using both CNN and LSTM architectures and demonstrated and improvement over baseline
-regression models. However, numerous challenges including data integration (patient
-demographics, family history, laboratory tests, text-based patient records,
-image analysis, genomic data) and better handling of streaming temporal data
-with many features, will need to be overcome before we can fully assess the
-potential of deep learning for this application area.
+[@doi:10.1016/j.jbi.2016.10.007 @doi:10.1101/039800]. In addition, it pointed
+towards learned features being useful for subtyping within a single disease. In
+a concurrent large-scale analysis of EHR data from 700,000 patients, Miotto et
+al. [@doi:10.1038/srep26094] used a deep denoising autoencoder architecture
+applied to the number and co-occurrence of clinical events ("DeepPatient") to
+learn a representation of patients. The model was able to predict disease
+trajectories within one year with over 90% accuracy and patient-level
+predictions were improved by up to 15% when compared to other methods. Razavian
+et al. [@arxiv:1608.00647] used a set of 18 common lab tests to predict disease
+onset using both CNN and LSTM architectures and demonstrated and improvement
+over baseline regression models. However, numerous challenges including data
+integration (patient demographics, family history, laboratory tests, text-based
+patient records, image analysis, genomic data) and better handling of streaming
+temporal data with many features, will need to be overcome before we can fully
+assess the potential of deep learning for this application area.
 
-Still, recent work has also revealed domains in which deep networks have proven
-superior to traditional methods. Survival analysis models the time leading to an
-event of interest from a shared starting point, and in the context of EHR data,
-often associates these events to subject covariates. Exploring this relationship
-is difficult, however, given that EHR data types are often heterogeneous,
-covariates are often missing, and conventional approaches require the
-covariate-event relationship be linear and aligned to a specific starting point
-[@arxiv:1608.02158]. Early approaches, such as the Faraggi-Simon feed-forward
-network, aimed to relax the linearity assumption, but performance gains were
-lacking [@doi:10.1016/S0167-9473(99)00098-5]. Katzman et al. in turn developed a
-deep implementation of the Faraggi-Simon network that, in addition to
-outperforming Cox regression, was capable of comparing the risk between a given
-pair of treatments, thus potentially acting as recommender system
-[@arxiv:1606.00931]. To overcome the remaining difficulties, researchers have
-turned to deep exponential families, a class of latent generative models that
-are constructed from any type of exponential family distributions
-[@arxiv:1411.2581v1]. The result was a deep survival analysis model capable of
-overcoming challenges posed by missing data and heterogeneous data types, while
-uncovering nonlinear relationships between covariates and failure time. They
-showed their model more accurately stratified patients as a function of disease
-risk score compared the current clinical implementation.
+Still, recent work has also revealed domains in which deep networks have
+proven superior to traditional methods. Survival analysis models the time
+leading to an event of interest from a shared starting point, and in the
+context of EHR data, often associates these events to subject covariates.
+Exploring this relationship is difficult, however, given that EHR data types
+are often heterogeneous, covariates are often missing, and conventional
+approaches require the covariate-event relationship be linear and aligned to a
+specific starting point [@arxiv:1608.02158]. Early approaches, such as the
+Faraggi-Simon feed-forward network, aimed to relax the linearity assumption,
+but performance gains were lacking [@doi:10.1016/S0167-9473(99)00098-5].
+Katzman et al. in turn developed a deep implementation of the Faraggi-Simon
+network that, in addition to outperforming Cox regression, was capable of
+comparing the risk between a given pair of treatments, thus potentially acting
+as recommender system [@arxiv:1606.00931]. To overcome the remaining
+difficulties, researchers have turned to deep exponential families, a class of
+latent generative models that are constructed from any type of exponential
+family distributions [@arxiv:1411.2581v1]. The result was a deep survival
+analysis model capable of overcoming challenges posed by missing data and
+heterogeneous data types, while uncovering nonlinear relationships between
+covariates and failure time. They showed their model more accurately
+stratified patients as a function of disease risk score compared to the current
+clinical implementation.
 
 There is a computational cost for these methods, however, when compared to
 traditional, non-network approaches. For the exponential family models, despite
