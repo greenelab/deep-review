@@ -266,8 +266,40 @@ application in this area.*
 
 ### Micro-RNA binding
 
-*miRNAs are important biologically, but have neural networks produced anything
-particularly notable in this area?*
+Prediction of microRNAs (miRNAs) in the genome as well as miRNA targets is of
+great interest, as they are critical components of gene regulatory networks and
+are often conserved across great evolutionary distance [@tag:Bracken2016_mirna
+@tag:Berezikov2011_mirna]. While many machine learning algorithms have been
+applied to solve these prediction tasks, they currently require extensive
+feature selection and optimization. For instance, one of the most widely adopted
+tools for miRNA target prediction, TargetScan, trained multiple linear
+regression models on 14 hand-curated features including structural accessibility
+of the target site on the mRNA, the degree of site conservation, and predicted
+thermodynamic stability of the miRNA:mRNA complex [@tag:Agarwal2015_targetscan].
+Some of these features, including structural accessibility, are imperfect or
+empirically derived. In addition, current algorithms suffer from low specificity
+[@tag:Lee2016_deeptarget].
+
+As in other applications, deep learning promises to achieve equal or better
+performance in predictive tasks by automatically engineering complex features to
+minimize an objective function. Two recently published tools use different
+recurrent neural network-based architectures to perform miRNA and target
+prediction with solely sequence data as input [@tag:Park2016_deepmirgene
+@tag:Lee2016_deeptarget]. Though the results are preliminary and still based on
+a validation set rather than a completely independent test set, they were able
+to predict microRNA target sites with 15-25% higher specificity and sensitivity
+than TargetScan. Excitingly, these tools seem to show that RNNs can accurately
+align sequences and predict bulges, mismatches, and wobble base pairing without
+requiring the user to input secondary structure predictions or thermodynamic
+calculations.
+
+Further incremental advances in neural-network approaches for miRNA and target
+prediction will likely be sufficient to meet the current needs of systems
+biologists and other researchers, who use prediction tools mainly to nominate
+candidates that are then tested experimentally. Similar to other applications,
+the major contribution of deep learning will be to deliver deep insights into
+the biology of miRNA targeting as we learn to interrogate the hidden nodes
+within neural networks.
 
 ### Protein secondary and tertiary structure
 
@@ -623,8 +655,8 @@ build probabilistic models that reliably separate signal from noise. However,
 this process is time consuming and, more importantly, fundamentally limited by
 how well we understand and can model the factors that contribute to noise.
 Recently, two groups have applied deep learning to construct data-driven and,
-therefore, unbiased noise models. One of these models, DeepVariant, builds
-directly on well-established deep learning methods for image recognition by
+therefore, unbiased noise models. One of these models, DeepVariant, leverages
+Inception, a neural network trained for image classification by Google Brain, by
 encoding reads around a candidate SNP as a 221x100 bitmap image, where each
 column is a nucleotide and each row is a read from the sample library
 [@tag:Poplin2016_deepvariant]. The top 5 rows represent the reference, and the
@@ -639,16 +671,24 @@ method, still in its infancy, hand-developed 642 features for each candidate
 variant and fed these vectors into a fully connected deep neural network
 [@tag:Torracinta2016_deep_snp]. Unfortunately, this feature set required at
 least 15 iterations of software development to fine-tune, which will likely not
-be generalizable. Going forward, we foresee that variant calling will benefit
-most from optimized neural network architectures and better methods of encoding
-raw sequence and quality data (e.g. in tensor rather than RGBA format).
+be generalizable.
+
+Going forward, we believe that variant calling will benefit more from optimizing
+neural network architectures than from developing features by hand. An
+interesting and informative next step would be to rigorously test whether
+encoding raw sequence and quality data as an image, tensor, or some other mixed
+format produces the best variant calls. Because many of the latest neural
+network architectures (ResNet, Inception, Xception, and others) are already
+optimized for and pre-trained on generic, large-scale image datasets
+[@tag:Chollet2016_xception], encoding genomic data as images could prove to be a
+generally effective, and efficient, strategy.
 
 In limited experiments, DeepVariant was robust to sequencing depth, read length,
 and even species [@tag:Poplin2016_deepvariant]. However, a model built on
-Illumina data, for instance, will likely not be applicable to PacBio long-read
-data or MinION nanopore data, which have vastly different specificity and
-sensitivity profiles and signal-to-noise characteristics. Recently, Boza et al.
-used bidirectional recurrent neural networks infer the *E. coli* sequence from
+Illumina data, for instance, may not be applicable to PacBio long-read data or
+MinION nanopore data, which have vastly different specificity and sensitivity
+profiles and signal-to-noise characteristics. Recently, Boza et al. used
+bidirectional recurrent neural networks to infer the *E. coli* sequence from
 MinION nanopore electric current data with 2% higher per-base accuracy than the
 proprietary hidden Markov model-based algorithm Metrichor (86% to 88%)
 [@tag:Boza]. Unfortunately, training any neural network requires a large amount
