@@ -146,7 +146,7 @@ tackles new challenges.
 Several authors have created reusable feature sets for medical terminologies
 using natural language processing (NLP) and neural embedding models, as
 popularized by Word2vec [@tag:Word2Vec]. A goal of learning terminologies
-for different entities in the same vector spaec is to find relationships
+for different entities in the same vector space is to find relationships
 between different domains (e.g. drugs and the diseases they treat). It is
 difficult for us to provide a strong statement on the broad utility of these
 methods. Manuscripts in this area tend to compare algorithms applied to the
@@ -155,9 +155,10 @@ tasks addressed by these methods. Techniques have been developed for free text
 medical notes [@doi:10.1145/2661829.2661974], ICD and NDC, and claims data
 [@doi:10.1145/2939672.2939823]. Methods for neural embeddings learned from
 electronic health records have at least some ability to predict disease-disease
-associations [@doi:10.1038/srep32404]. However, the evaluation did not
+associations and implicate genes with a statistical association with a disease
+[@doi:10.1038/srep32404]. However, the evaluations performed did not
 differentiate between simple predictions (i.e. the same disease in different
-sites of the body) and non-intutive ones. While promising, a lack of rigorous
+sites of the body) and non-intuitive ones. While promising, a lack of rigorous
 evaluations of the real-world utility of these kinds of features makes
 current contributions in this area difficult to evaluate. To examine the true
 utility, comparisons need to be performed against leading approaches (i.e.
