@@ -280,7 +280,7 @@ less-characterized and perhaps functionally silent spacer regions. However, the
 sequence signals that control the start and stop of transcription and
 translation are still not well understood, compounded by incomplete
 understanding of alternative transcripts and the context for these
-alternatives.Sequence similarity is poor even between functionally correlated
+alternatives. Sequence similarity is poor even between functionally correlated
 genes. While homologs might be studied for insight, they may not exist or may be
 just as poorly characterized.
 
@@ -300,16 +300,15 @@ predominant functional non-coding element. Thus, identifying enhancers is
 critical yet the the search space is embarrassingly large.
 
 While prior (non-deep learning) approaches have made steady improvements on
-promoter prediction [@doi:10.1101/gr.7.9.861], there is little consensus on the
-best approach and performance is poor. Typically algorithms will recognize only
-half of all promoters, with an accompanying high false positive rate
-[@doi:10.1101/gr.7.9.861]. Methods with better sensitivity generally do so at
-the cost of poorer specificity. Conventional identification of enhancers has
-leaned heavily on simple conservation or laborious experimental techniques, with
-only moderate sensitivity and specificity. For example, while chromatin
-accessibility has often been used for identifying enhancers, this also
-"recognizes" a wide variety of other functional elements, like promoters,
-silencers and repressors.
+promoter prediction, there is little consensus on the best approach and
+performance is poor. Typically algorithms will recognize only half of all
+promoters, with an accompanying high false positive rate [@pmid:9314492].
+Methods with better sensitivity generally do so at the cost of poorer
+specificity. Conventional identification of enhancers has leaned heavily on
+simple conservation or laborious experimental techniques, with only moderate
+sensitivity and specificity. For example, while chromatin accessibility has
+often been used for identifying enhancers, this also "recognizes" a wide variety
+of other functional elements, like promoters, silencers and repressors.
 
 The complex nature of CREs (and our ignorance at to what are the important
 features of them) therefore seems a good subject for deep learning approaches.
@@ -325,7 +324,7 @@ accessibility datasets, getting an marked improvement on previous methods,
 albeit still with a high false positive rate. (Note as above, using DNA
 accessibility conflates enhancers with other functional sites.) This study also
 featured a useful interpetability approach (analogous to in silico mutagenesis
-[@doi:10.1093/nar/gkm238] introducing known protein binding motifs into
+[@doi:10.1093/nar/gkm238]) introducing known protein binding motifs into
 sequences and measuring the change in predicted accessibility.
 
 Umarov et al. [@doi:10.1371/journal.pone.0171410] demonstrated the use of
