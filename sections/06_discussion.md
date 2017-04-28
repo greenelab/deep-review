@@ -255,7 +255,7 @@ Murdoch & Szlam <cite https://arxiv.org/pdf/1702.02540.pdf>
  key phrases from a model trained to do sentiment analysis, and obtained
  superior results compared to a gradient-based approach.
 
-#### Miscelleneous approaches
+#### Miscellaneous approaches
 
 Toward quantifying the uncertainty of
 predictions, there has been a renewed interest in confidence intervals for
