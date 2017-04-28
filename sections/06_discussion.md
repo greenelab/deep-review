@@ -29,8 +29,8 @@ As deep learning models achieve state-of-the-art performance in a variety of
 domains, there is a growing need to make the models more
 interpretable. Interpretability matters for two main reasons: first, a model
 that achieves breakthrough performance may have identified patterns
-in the data that practitioners in the field would like to understand
-- however, this would not be possible if the model is a black-box. Second,
+in the data that practitioners in the field would like to understand - however,
+this would not be possible if the model is a black-box. Second,
 interpretability is important for trust: if a model making is medical diagnoses,
 it is important to ensure the model is making decisions for reliable
 reasons and is not focusing on an artifact of the data.
@@ -255,7 +255,7 @@ Murdoch & Szlam <cite https://arxiv.org/pdf/1702.02540.pdf>
  key phrases from a model trained to do sentiment analysis, and obtained
  superior results compared to a gradient-based approach.
 
-####Other
+#### Other
 
 Toward quantifying the uncertainty of
 predictions, there has been a renewed interest in confidence intervals for
