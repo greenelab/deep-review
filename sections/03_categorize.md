@@ -123,7 +123,7 @@ This provides support that deep learning may impact the field by reducing the
 researcher time and cost required to develop specific solutions, but it may not
 lead to performance increases.
 
-In recent work, Yoon et al.[@doi:10.1007/978-3-319-47898-2_21] analyzed simple
+In recent work, Yoon et al.[@tag:Yoon2016_cancer_reports] analyzed simple
 features using deep neural networks and found that the patterns recognized by
 the algorithms could be re-used across tasks. Their aim was to analyze the free
 text portions of pathology reports to identify the primary site and laterality
@@ -139,9 +139,9 @@ outperformed the other methods. Of particular interest, when the authors first
 trained a neural network to predict primary site and then repurposed those
 features as a component of a secondary neural network trained to predict
 laterality, the performance was higher than a laterality-trained neural network.
-This indicates a potential strength of deep methods. It may be possible to
-repurpose features from task to task, improving overall predictions as the field
-tackles new challenges.
+This indicates a potential strength of deep methods. They can repurpose
+features across tasks, improving overall predictions as the field tackles
+new challenges. This approach is known as transfer learning (see Discussion).
 
 Several authors have created reusable feature sets for medical terminologies
 using natural language processing (NLP) and neural embedding models, as
@@ -406,9 +406,10 @@ show the ability to train deep learning classifiers under the differential
 privacy framework. Federated learning
 [@arxiv:1602.05629] and secure aggregations
 [@url:http://proceedings.mlr.press/v54/mcmahan17a.html
-@url:https://eprint.iacr.org/2017/281.pdf] are complementary approaches that
-reinforce differential privacy. Both aim to maintain privacy by training deep
-learning models from decentralized data sources such as personal mobile devices
+@url:https://eprint.iacr.org/2017/281.pdf @tag:Papernot2017_pate]
+are complementary approaches that reinforce differential privacy.
+Both aim to maintain privacy by training deep learning models from
+decentralized data sources such as personal mobile devices
 without transferring actual training instances. This is becoming of increasing
 importance with the rapid growth of mobile health applications. However, the
 training process in these approaches places constraints on the algorithms used
