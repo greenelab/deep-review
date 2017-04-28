@@ -383,7 +383,7 @@ Fine-tuning procedure for the discussed Basset model pre-trained on data
 from different cell types required no more than one training pass. Otherwise,
 the model started overfitting new data [@tag:Kelley2016_basset].
 DeepChem successfully improved results for low-data drug discovery
-with one-shot learning for related tasks. However, demonstrated clear
+with one-shot learning for related tasks. However, it demonstrated clear
 limitations to cross-task generalization across unrelated tasks in one-shot
 models, specifically nuclear receptor assays and patient adverse reactions
 [@tag:AltaeTran2016_one_shot].
