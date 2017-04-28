@@ -1,0 +1,27 @@
+dist: trusty
+sudo: false
+language: generic
+branches:
+  only:
+    - master
+before_install:
+  - wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+    --output-document miniconda.sh
+  - bash miniconda.sh -b -p $HOME/miniconda
+  - export PATH="$HOME/miniconda/bin:$PATH"
+  - hash -r
+  - conda config --set always_yes yes --set changeps1 no
+  - conda update --quiet conda
+  - conda info --all
+install:
+  - conda env create --quiet --file build/environment.yml
+  - source activate deepreview
+script:
+  - sh build/build.sh
+cache:
+  directories:
+    - references/generated
+after_success:
+  - test $TRAVIS_BRANCH = "master" &&
+    test $TRAVIS_PULL_REQUEST = "false" &&
+    sh ci/deploy.sh
