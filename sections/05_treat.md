@@ -1,8 +1,8 @@
 ## The impact of deep learning in treating disease and developing new treatments
 
-*There will be some overlap with the Categorize section, and we may have to
-determine which methods categorize individuals and which more directly match
-patients with treatments.  The sub-section titles are merely placeholders.*
+`TODO: write Treat intro`
+`TODO: Add representative papers about Modeling Metabolism and Chemical
+Reactivity`
 
 ### Categorizing patients for clinical decision making
 
@@ -385,7 +385,3 @@ of complex physics (e.g. quantum physics example)?`
 `TODO: link to drug repurposing section above,  DeepDTIs uses ECFPs as
 features for its 1412 compounds and protein sequence composition (PSCs)
 features for its targets (1520).`
-
-### Modeling Metabolism and Chemical Reactivity
-
-*Add a review here of metabolism and chemical reactivity.*
