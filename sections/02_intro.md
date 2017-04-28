@@ -37,14 +37,13 @@ One version:
 `TODO: this section needs citations`
 
 Deep Learning is a collection of new techniques that together have recently
-demonstrated  breakthrough gains over existing approaches in several fields.
-
-Deep learning is built on a very old idea, neural networks, that was first
-proposed in 1943 [@doi:10.1007/BF02478259] as a model for how biological brains
-process information. Since then, interest in neural networks a computational
-models has waxed and waned several times. This history is interesting in its own
-right  [@doi:10.1103/RevModPhys.34.135], but in recent years, with the advances
-of Deep Learning, attention has shifted back.
+demonstrated breakthrough gains over existing approaches in several fields. It
+is built on a very old idea, neural networks, that was first proposed in 1943
+[@doi:10.1007/BF02478259] as a model for how biological brains process
+information. Since then, interest in neural networks a computational models has
+waxed and waned several times. This history is interesting in its own right
+[@doi:10.1103/RevModPhys.34.135], but in recent years, with the advances of Deep
+Learning, attention has shifted back.
 
 Several important advances make the current surge of work done in this area
 possible.
@@ -70,7 +69,7 @@ hard to train. However, it turns out, deep networks can more efficiently
 represent many tasks when they are built to mirror the underlying structure of
 the data. Moreover, deep networks are more robust and trainable when employing
 several architectural innovations: weight replication, better behaved
-non-linearities like rectified-linear units, residual networks,  and better
+non-linearities like rectified-linear units, residual networks, and better
 weight initialization, and persistent memory. `TODO: excessive jargon` Likewise
 the central role of dimensionality reduction as a strength of neural networks
 was elucidated, and this has motivated designs built to capitalize on this
@@ -84,7 +83,7 @@ algorithms struggled.  For example, newer optimizers can very efficiently learn
 using batched training, where only a portion of the data needs to be processed
 at a time. These optimizers more effectively optimize very large weight vectors
 where many weights are only rarely updated. `TODO: awkward phrasing` Noise
-contrastive error has proven particularly useful in  modeling language.
+contrastive error has proven particularly useful in modeling language.
 Reinforcement learning has enabled neural networks to learn how to play games
 like chess, GO, and poker. Curriculum learning enables networks to gradually
 build up expertise to solve particularly challenging algorithmic problems.
@@ -131,21 +130,21 @@ art`
 
 Fourth, data availability and complexity is unevenly distributed across science.
 Some areas of science like genomics and particle physics are swamped in
-petabytes and  exobytes of high quality data. `TODO: not just amount of data`
+petabytes and exobytes of high quality data. `TODO: not just amount of data`
 Others, like chemistry, are comparatively data poor with well developed domain
 specific and effective algorithms. These differences become consequential and
 define the most successful approaches. For example, the convergence of lower
 amounts of data and important nuances to the domain might favor lower parameter
 networks that incorporate domain specific knowledge and fuse data of multiple
 different types. This flexibility, remember, is one of the most striking
-strengths of neural networks. In the long run, it is an open question the most
-effect strategies will be, but in this time of creative experimentation optimism
-is justified.
+strengths of neural networks. In the long run, which strategies will be the most
+effective is an open question, but in this time of creative experimentation
+optimism is justified.
 
-None of these scientific concerns should dampen enthusiasm about deep learning.
-Rather, because the approaches offer such great flexibility, there is good
-reason to believe that carefully defined networks might enable important
-scientific advances.
+None of these concerns should dampen enthusiasm about deep learning. Rather,
+because the approaches offer such great flexibility, there is good reason to
+believe that carefully defined networks might enable important scientific
+advances.
 
 Another version:
 
