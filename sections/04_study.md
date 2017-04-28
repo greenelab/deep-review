@@ -302,7 +302,8 @@ critical yet the the search space is embarrassingly large.
 While prior (non-deep learning) approaches have made steady improvements on
 promoter prediction, there is little consensus on the best approach and
 performance is poor. Typically algorithms will recognize only half of all
-promoters, with an accompanying high false positive rate [@pmid:9314492].
+promoters, with an accompanying high false positive rate
+[@url:http://genome.cshlp.org/content/7/9/861.long].
 Methods with better sensitivity generally do so at the cost of poorer
 specificity. Conventional identification of enhancers has leaned heavily on
 simple conservation or laborious experimental techniques, with only moderate
@@ -375,6 +376,8 @@ of negative sample needs also to be considered, as does the problem of
 imbalanced data. In a sentence, these methods can only be as good as their
 training data. Finally, intepretability is a problem but one that appears to be
 solvable given empirical approaches.
+
+`TODO: discuss enhancer-promoter and enhancer-target prediction`
 
 ### Micro-RNA binding
 
