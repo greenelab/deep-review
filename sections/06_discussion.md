@@ -173,7 +173,7 @@ the response of neurons that are active in the network, subject to some
 regularizing constraints. <cite deep dream people> leveraged caricaturization to
 generate aesthetically pleasing images using neural networks.
 
-#### Visualizing patterns learned by individual neurons in the network
+#### Activation maximization
 
 Activation maximization can reveal patterns
 detected by an individual neuron in the network by generating
@@ -192,65 +192,109 @@ may not always be informative.
 #### RNN-specific approaches
 
 Several interpretation methods are specifically tailored to
-recurrent neural network architecutres. By visualizing activation patterns
-in character-level language models, Karpathy et al. (2015)
+recurrent neural network architecutres. A few key approaches are summarised
+ below.
+
+The most common form of interpretability provided by RNNs is through
+attention mechanisms, which have been used in diverse problems such
+as image captioning and
+machine translation to select portions of the input to focus on for generating
+a particular output <cite NMT: https://arxiv.org/abs/1409.0473,
+and image captioning: https://arxiv.org/pdf/1502.03044.pdf>.
+ Deming et al., <cite: https://arxiv.org/abs/1605.07156>
+ applied the attention mechanism to models trained on genomic sequence.
+ Attention mechanisms provide insight into the model's
+ decision-making process by revealing which portions of the input are
+ used by different outputs.
+ In the clinical domain,
+ Choi et al. (2016)
+ <cite https://arxiv.org/pdf/1608.05745.pdf>
+ leveraged attention mechanisms to highlight which aspects of
+ a patient's medical history were most relevant for making
+ diagnoses. Choi et al. [@tag:Choi2016_gram] later extended this work to
+ take into account the structure of
+ disease ontologies and found that the concepts represented by the model
+ were aligned with medical knowledge.
+ Note that interpretation strategies that rely on an attention mechanism
+ do not provide insight into the internal logic
+ used by the attention layer to decide which inputs to attend to.
+
+Visualizing the activation patterns of the hidden state of a
+ recurrent neural network can also be instructive.
+ Early work by Ghosh & Karamcheti (1992)
+ <cite http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=993054>
+ used cluster analysis to study comparatively small hidden states of
+ networks trained to recognise strings from a finite state machine.
+ More recently, Karpathy et al. (2015)
 <cite https://arxiv.org/abs/1506.02078> showed the existence of individual
-cells in LSTMs that kept track of quotes and brackets.
-<cite http://lstm.seas.harvard.edu/client/index.html> developed LSTM vis 
-to interactively explore the hidden state of LSTMs on different inputs.
+cells in LSTMs that kept track of quotes and brackets in character-level
+ language models. To facilitate such analyses, LSTM vis
+ <cite https://arxiv.org/abs/1606.07461> allows
+ interactive exploration of the hidden state of LSTMs on different inputs.
 
-- Attention (genetic architect), changes in activation (lanchatin),
-- RETAIN
-- automatic rule extraction from LSTMs https://arxiv.org/abs/1702.02540
+Another strategy, adopted by Lanchatin et al., 2016
+<cite https://arxiv.org/pdf/1608.03644.pdf> looks at how the output of
+ a recurrent neural network changes as longer and longer subsequences
+ are supplied as input to the network,  where the subsequences begin
+ with just the first position and end with the entire sequence.
+ In a binary classification task, this can identify those positions
+which are responsible for flipping
+ the output of the network from negative to positive. If the RNN is
+ bidirectional, the same process can be repeated on the reverse sequence.
+ As noted by the authors, this approach was less effective at
+ identifying motifs compared to the gradient-based
+  backpropagation approach of Simonyan et al., illustrating the need
+ for more sophisticated strategies to assign importance scores in
+ recurrent neural networks.
 
+Murdoch & Szlam <cite https://arxiv.org/pdf/1702.02540.pdf>
+ showed that the output of an LSTM can be decomposed into a product
+ of factors where each factor can be interpreted as the contribution
+ at a particular
+ timestep. The contribution scores were then used to identify
+ key phrases from a model trained to do sentiment analysis, and obtained
+ superior results compared to a gradient-based approach.
 
 ####Other
-- Understanding the training points that drive a prediction
-- Che et al [@tag:Che2015_distill] introduced a
-knowledge-distillation approach which used gradient boosted trees to learn
-interpretable healthcare features from trained deep models.
-- quantifying uncertainty in the prediction
-
-. Optimal choice of reference is an open question. 
-- 'inversion' - stay faithful to the hidden layer representations. natural
-images in the Mahendran paper. https://link.springer.com/article/10.1007/s11263-016-0911-8,
-then there is the entropy paper ("Maximum Entropy Methods for Extracting the Learned Features of Deep Neural Networks") where find the maximum entropy representation of a sequence that maintains the hidden activation.
-
-Visualizatinon:
-- Understanding neural networks through deep visualization
-- Mahendran and Vedaldi; mention it gives aggregate picture but not for individual filters
-- DeepMotif
-- ActiVis
-
-RNN visualization:
-- Attention mechanism...Other studies have
-primarily focused on integrating attention mechanisms with the neural networks.
-Attention mechanisms dynamically weight the importance the neural network gives
-to each feature. By inspecting the attention weights for a particular sample, a
-practitioner can identify the important features for a particular prediction.
-Choi et al [@tag:Choi2016_retain] inverted the typical architecture of recurrent
-neural networks to improve interpretability. In particular, they only used
-recurrent connections in the attention generating procedure, leaving the hidden
-state directly connected to the input variables. In the clinical domain, this
-model was able to produce accurate diagnoses in which the contribution of
-previous hospital visits could be directly interpreted. Choi et al
-[@tag:Choi2016_gram] later extended this work to take into account the structure
-of disease ontologies and found that the concepts represented by the model were
-aligned with medical knowledge.
-- Deep motif dashboard: https://arxiv.org/abs/1608.03644
-
-Condense to a simpler model altogether via distillation: 
-
-Interpretability matters, among other things, because deep networks are easily fooled
-[@tag:Nguyen2014_adversarial]. 
 
 Toward quantifying the uncertainty of
 predictions, there has been a renewed interest in confidence intervals for
 deep neural networks. Early work from Chryssolouris et al
 [@tag:Chryssolouris1996_confidence] provided confidence intervals under the
- assumption of normally distributed error. Test-time dropout can also be
-used to obtain a probabilistic interpretation: https://arxiv.org/abs/1506.02142
+ assumption of normally distributed error. A more recent technique
+ known as test-time dropout <cite https://arxiv.org/abs/1506.02142>
+can also be
+used to obtain a probabilistic interpretation  of a network's outputs.
 
+It can often be informative to understand how the training data
+ affects the learning of a model. Toward this end,
+ Koh & Liang <cite https://arxiv.org/pdf/1703.04730.pdf> used
+ influence functions, a technique from robust statistics, to
+ trace a model's predictions back through the learning algorithm to identify
+ the datapoints in the training set that had the most impact on a given
+ prediction.
+
+A more free-form approach to interpretability is to visualise
+ the activation patterns of the network on individual inputs and on
+ subsets of the data. ActiVis, developed at Facebook,
+ <cite https://arxiv.org/pdf/1704.01942.pdf> enables interactive
+ visualisation and exploration of industry-scale
+ deep learning models.
+
+An orthogonal strategy is to use a knowledge distillation approach
+ to replace a deep learning model with a more interpretable model
+ that achieves comparable performance. Towards this end,
+ Che et al [@tag:Che2015_distill] used gradient boosted trees to learn
+ interpretable healthcare features from trained deep models.
+
+Finally, it is sometimes possible to train the model to
+ provide justifications for its predictions. Lei et al.,
+ <cite https://arxiv.org/abs/1606.04155> used a generator to identify
+ "rationales", which are short and coherent pieces of the input text that
+ produce similar results to the whole input when passed through an encoder.
+ The authors applied their approach to a sentiment analysis task
+ and obtained substantially superior results compared to an attention-based
+ method.
 
 
 ### Data limitations
