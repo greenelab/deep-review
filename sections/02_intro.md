@@ -34,17 +34,17 @@ learning methods more challenging or less fruitful to apply.
 ### What is deep learning?
 
 One version:
-[This section needs citations]
+`TODO: this section needs citations`
 
 Deep Learning is a collection of new techniques that together have recently
 demonstrated  breakthrough gains over existing approaches in several fields.
 
 Deep learning is built on a very old idea, neural networks, that was first
-proposed in 1943 [doi:10.1007/BF02478259] as a model for how biological brains
+proposed in 1943 [@doi:10.1007/BF02478259] as a model for how biological brains
 process information. Since then, interest in neural networks a computational
 models has waxed and waned several times. This history is interesting in its own
-right  [@doi:10.1103/RevModPhys.34.135, @doi:10.1103/RevModPhys.34.135], but in
-recent years, with the advances of Deep Learning, attention has shifted back.
+right  [@doi:10.1103/RevModPhys.34.135], but in recent years, with the advances
+of Deep Learning, attention has shifted back.
 
 Several important advances make the current surge of work done in this area
 possible.
@@ -58,8 +58,8 @@ networks to specific problems without substantial experience and training. Now,
 however, with these new packages, even very complex neural networks  are
 automatically differentiated, and high level scripting instructions can
 transparently run very efficiently on GPUs. The technology has progressed to the
-point that even algorithms can be differentiated [cite neural stack and neural
-memory papers].
+point that even algorithms can be differentiated `TODO: cite neural stack and
+neural memory papers`.
 
 Second, key technical insight has been uncovered that guides the construction of
 much more complicated networks that previously possible. In the past, most
@@ -74,7 +74,7 @@ non-linearities like rectified-linear units, residual networks,  and better
 weight initialization, and persistent memory. `TODO: excessive jargon` Likewise
 the central role of dimensionality reduction as a strength of neural networks
 was elucidated, and this has motivated designs built to capitalize on this
-strength [cite autoencoders and word2vec].
+strength `TODO: cite autoencoders and word2vec`.
 
 Third, several advances in training algorithms have enabled applications of
 neural networks in ways not obviously possible. The number of training
@@ -109,7 +109,7 @@ as important as fitting the data. For this reason, interpretability can be more
 important here than other domains. Scientific work often aims to understand the
 underlying principles behind the data we see, and architectures and techniques
 that expose the non-obvious patterns in the data are particularly important and
-very active area of research [cite examples from all sections].
+very active area of research `TODO: cite examples from all sections`.
 
 Second, there are important and pressing questions about how to build networks
 that can efficiently represent  the underlying logic of the data. This concern
