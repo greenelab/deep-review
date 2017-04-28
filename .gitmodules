@@ -1,0 +1,3 @@
+[submodule "ci/opentimestamps-client"]
+	path = ci/opentimestamps-client
+	url = https://github.com/opentimestamps/opentimestamps-client.git

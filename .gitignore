@@ -1,0 +1,19 @@
+# Generated manuscript output files
+output/index.html
+output/deep-review.pdf
+output/*.ots
+
+# Generated reference files
+references/generated/*
+!references/generated/README.md
+
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Misc temporary files
+*.bak
+
