@@ -1,8 +1,6 @@
 ## Discussion
 
-*This section provides meta-commentary that spans the Categorize, Study, and
-Treat subject areas.  The candidate sub-sections below are initial ideas that
-can be further pruned.*
+
 
 ### Evaluation
 
@@ -80,18 +78,6 @@ level features?  Is there still work to be done in finding the right low-level
 features in some problems?*
 
 ### Hardware limitations and scaling
-
-*Several papers have stated that memory or other hardware limitations
-artificially restricted the number of training instances, model inputs/outputs,
-hidden layers, etc.  Is this a general problem worth discussing or will it be
-solved naturally as hardware improves and/or groups move to distributed deep
-learning frameworks?  Does hardware limit what types of problems are accessible
-to the average computational group, and if so, will that limit future progress?
-For instance, some hyperparameter search strategies are not feasible for a lab
-with only a couple GPUs.*
-
-*Some of this is also outlined in the Categorize section.  We can decide where
-it best fits.*
 
 Efficiently scaling deep learning is challenging, and there is a high
 computational cost (e.g., time, memory, energy) associated with training neural
