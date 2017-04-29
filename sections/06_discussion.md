@@ -161,19 +161,29 @@ secure/regulation-compliant cloud services do exist [@tag:RAD2010_view_cc].
 *TODO: Write the transition once more of the Discussion section has been
 fleshed out.*
 
-### Code, data, and model sharing
+### Data, code, and model sharing
 
-In addition to methodological improvements, a robust culture of data sharing -
-and in particular the sharing of high-quality labeled datasets - would do much
-to speed advances in this domain. The cultural barriers are perhaps best
-captured by the implications of using the term "research parasite" to describe
-scientists who use data from other researchers [@doi:10.1056/NEJMe1516564]. In
-short, a field that honors only discoveries and not the hard work of generating
-useful data will have difficulty encouraging scientists to share their hard-won
-data. Unfortunately, it's precisely those data that would help to power deep
-learning in the domain. Though not a methodological consideration, efforts are
-underway to recognize those who promote an ecosystem of rigorous sharing and
-analysis [@doi:10.1038/ng.3830].
+A robust culture of data, code, and model sharing would do much to speed
+advances in this domain. The cultural barriers of data sharing in particular are
+perhaps best captured by the implications of using the term "research parasite"
+to describe scientists who use data from other researchers
+[@doi:10.1056/NEJMe1516564]. In short, a field that honors only discoveries and
+not the hard work of generating useful data will have difficulty encouraging
+scientists to share their hard-won data. Unfortunately, it's precisely those
+data that would help to power deep learning in the domain. Efforts are underway
+to recognize those who promote an ecosystem of rigorous sharing and analysis
+[@doi:10.1038/ng.3830].  The sharing of high-quality, labeled datasets will be
+especially valuable.  In addition, researchers who invest time to preprocess
+datasets to be suitable for deep learning can make the preprocessing code (e.g.,
+Basset [@tag:Kelley2016_basset]) and cleaned data (e.g., MoleculeNet
+[@tag:Wu2017_molecule_net]) publicly available to catalyze  further research.
+As discussed in the Categorize section, there are complex privacy and legal
+issues involved in sharing patient data and deep learning models trained with
+it as well as recent techniques to mitigate these concerns.  Furthermore, in
+some domains, some of the best training data has been generated privately, for
+example, high-throughput chemical screening at pharmaceutical companies, and
+there is little expectation or incentive for this data to be shared. `TODO: this
+last line is fairly pessimistic, is there something better to say?`
 
 *Reproducibiliy is important for science to progress. In the context of deep
 learning applied to advance human healthcare, does reproducibility have
