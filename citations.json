@@ -30407,5 +30407,3180 @@
       "id": "DPsQumQ2"
     },
     "citation_id": "DPsQumQ2"
+  },
+  "doi:10.1007/bf02478259": {
+    "source": "doi",
+    "identifer": "10.1007/bf02478259",
+    "standard_citation": "doi:10.1007/bf02478259",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            2
+          ]
+        ],
+        "date-time": "2017-04-02T10:44:38Z",
+        "timestamp": 1491129878331
+      },
+      "reference-count": 3,
+      "publisher": "Springer Nature",
+      "issue": "4",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Bulletin of Mathematical Biophysics"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            1943,
+            12
+          ]
+        ]
+      },
+      "DOI": "10.1007/bf02478259",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2006,
+            9,
+            18
+          ]
+        ],
+        "date-time": "2006-09-18T11:10:54Z",
+        "timestamp": 1158577854000
+      },
+      "page": "115-133",
+      "source": "Crossref",
+      "is-referenced-by-count": 3785,
+      "title": "A logical calculus of the ideas immanent in nervous activity",
+      "prefix": "10.1007",
+      "volume": "5",
+      "author": [
+        {
+          "given": "Warren S.",
+          "family": "McCulloch",
+          "affiliation": []
+        },
+        {
+          "given": "Walter",
+          "family": "Pitts",
+          "affiliation": []
+        }
+      ],
+      "member": "297",
+      "container-title": "The Bulletin of Mathematical Biophysics",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2013,
+            2,
+            12
+          ]
+        ],
+        "date-time": "2013-02-12T03:45:33Z",
+        "timestamp": 1360640733000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            1943,
+            12
+          ]
+        ]
+      },
+      "references-count": 3,
+      "alternative-id": [
+        "BF02478259"
+      ],
+      "URL": "http://dx.doi.org/10.1007/bf02478259",
+      "relation": {
+        "cites": []
+      },
+      "issn-type": [
+        {
+          "value": "0007-4985",
+          "type": "print"
+        },
+        {
+          "value": "1522-9602",
+          "type": "electronic"
+        }
+      ],
+      "subject": [
+        "Immunology",
+        "Biochemistry, Genetics and Molecular Biology(all)",
+        "Computational Theory and Mathematics",
+        "Neuroscience(all)",
+        "Pharmacology",
+        "Agricultural and Biological Sciences(all)",
+        "Mathematics(all)",
+        "Environmental Science(all)"
+      ],
+      "id": "1HVDhhwpK"
+    },
+    "citation_id": "1HVDhhwpK"
+  },
+  "doi:10.1016/s0097-8485(96)80015-5": {
+    "source": "doi",
+    "identifer": "10.1016/s0097-8485(96)80015-5",
+    "standard_citation": "doi:10.1016/s0097-8485(96)80015-5",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            29
+          ]
+        ],
+        "date-time": "2017-04-29T03:15:00Z",
+        "timestamp": 1493435700752
+      },
+      "reference-count": 16,
+      "publisher": "Elsevier BV",
+      "issue": "1",
+      "license": [
+        {
+          "URL": "http://www.elsevier.com/tdm/userlicense/1.0/",
+          "start": {
+            "date-parts": [
+              [
+                1996,
+                3,
+                1
+              ]
+            ],
+            "date-time": "1996-03-01T00:00:00Z",
+            "timestamp": 825638400000
+          },
+          "delay-in-days": 0,
+          "content-version": "tdm"
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Computers & Chemistry"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            1996,
+            3
+          ]
+        ]
+      },
+      "DOI": "10.1016/s0097-8485(96)80015-5",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2002,
+            10,
+            10
+          ]
+        ],
+        "date-time": "2002-10-10T21:58:24Z",
+        "timestamp": 1034287104000
+      },
+      "page": "135-140",
+      "source": "Crossref",
+      "is-referenced-by-count": 16,
+      "title": "Detection of RNA polymerase II promoters and polyadenylation sites in human DNA sequence",
+      "prefix": "10.1016",
+      "volume": "20",
+      "author": [
+        {
+          "given": "Sherri",
+          "family": "Matis",
+          "affiliation": []
+        },
+        {
+          "given": "Ying",
+          "family": "Xu",
+          "affiliation": []
+        },
+        {
+          "given": "Manesh",
+          "family": "Shah",
+          "affiliation": []
+        },
+        {
+          "given": "Xiaojun",
+          "family": "Guan",
+          "affiliation": []
+        },
+        {
+          "given": "J.Ralph",
+          "family": "Einstein",
+          "affiliation": []
+        },
+        {
+          "given": "Richard",
+          "family": "Mural",
+          "affiliation": []
+        },
+        {
+          "given": "Edward",
+          "family": "Uberbacher",
+          "affiliation": []
+        }
+      ],
+      "member": "78",
+      "container-title": "Computers & Chemistry",
+      "original-title": [],
+      "link": [
+        {
+          "URL": "http://api.elsevier.com/content/article/PII:S0097848596800155?httpAccept=text/xml",
+          "content-type": "text/xml",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "http://api.elsevier.com/content/article/PII:S0097848596800155?httpAccept=text/plain",
+          "content-type": "text/plain",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2016,
+            6,
+            16
+          ]
+        ],
+        "date-time": "2016-06-16T05:46:33Z",
+        "timestamp": 1466055993000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            1996,
+            3
+          ]
+        ]
+      },
+      "references-count": 16,
+      "alternative-id": [
+        "S0097848596800155"
+      ],
+      "URL": "http://dx.doi.org/10.1016/s0097-8485(96)80015-5",
+      "relation": {},
+      "issn-type": [
+        {
+          "value": "0097-8485",
+          "type": "print"
+        }
+      ],
+      "subject": [
+        "Biotechnology",
+        "Applied Microbiology and Biotechnology",
+        "Chemical Engineering(all)"
+      ],
+      "id": "3Ew5V1iC"
+    },
+    "citation_id": "3Ew5V1iC"
+  },
+  "doi:10.1016/j.tig.2015.05.007": {
+    "source": "doi",
+    "identifer": "10.1016/j.tig.2015.05.007",
+    "standard_citation": "doi:10.1016/j.tig.2015.05.007",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            18
+          ]
+        ],
+        "date-time": "2017-04-18T20:02:13Z",
+        "timestamp": 1492545733166
+      },
+      "reference-count": 0,
+      "publisher": "Elsevier BV",
+      "issue": "8",
+      "license": [
+        {
+          "URL": "http://www.elsevier.com/tdm/userlicense/1.0/",
+          "start": {
+            "date-parts": [
+              [
+                2015,
+                8,
+                1
+              ]
+            ],
+            "date-time": "2015-08-01T00:00:00Z",
+            "timestamp": 1438387200000
+          },
+          "delay-in-days": 0,
+          "content-version": "tdm"
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "cell.com",
+          "bmn.com",
+          "elsevier.com",
+          "sciencedirect.com"
+        ],
+        "crossmark-restriction": true
+      },
+      "short-container-title": [
+        "Trends in Genetics"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2015,
+            8
+          ]
+        ]
+      },
+      "DOI": "10.1016/j.tig.2015.05.007",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2015,
+            6,
+            13
+          ]
+        ],
+        "date-time": "2015-06-13T21:11:12Z",
+        "timestamp": 1434229872000
+      },
+      "page": "426-433",
+      "update-policy": "http://dx.doi.org/10.1016/elsevier_cm_policy",
+      "source": "CrossRef",
+      "is-referenced-by-count": 25,
+      "title": "A unified architecture of transcriptional regulatory elements",
+      "prefix": "10.1016",
+      "volume": "31",
+      "author": [
+        {
+          "given": "Robin",
+          "family": "Andersson",
+          "affiliation": []
+        },
+        {
+          "given": "Albin",
+          "family": "Sandelin",
+          "affiliation": []
+        },
+        {
+          "given": "Charles G.",
+          "family": "Danko",
+          "affiliation": []
+        }
+      ],
+      "member": "78",
+      "container-title": "Trends in Genetics",
+      "original-title": [],
+      "link": [
+        {
+          "URL": "http://api.elsevier.com/content/article/PII:S0168952515001043?httpAccept=text/xml",
+          "content-type": "text/xml",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "http://api.elsevier.com/content/article/PII:S0168952515001043?httpAccept=text/plain",
+          "content-type": "text/plain",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2015,
+            8,
+            1
+          ]
+        ],
+        "date-time": "2015-08-01T03:53:58Z",
+        "timestamp": 1438401238000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2015,
+            8
+          ]
+        ]
+      },
+      "references-count": 0,
+      "alternative-id": [
+        "S0168952515001043"
+      ],
+      "URL": "http://dx.doi.org/10.1016/j.tig.2015.05.007",
+      "relation": {
+        "has-preprint": [
+          {
+            "id-type": "doi",
+            "id": "10.1101/019844",
+            "asserted-by": "object"
+          }
+        ]
+      },
+      "issn-type": [
+        {
+          "value": "0168-9525",
+          "type": "print"
+        }
+      ],
+      "subject": [
+        "Genetics"
+      ],
+      "assertion": [
+        {
+          "value": "Elsevier",
+          "name": "publisher",
+          "label": "This article is maintained by"
+        },
+        {
+          "value": "A unified architecture of transcriptional regulatory elements",
+          "name": "articletitle",
+          "label": "Article Title"
+        },
+        {
+          "value": "Trends in Genetics",
+          "name": "journaltitle",
+          "label": "Journal Title"
+        },
+        {
+          "value": "http://dx.doi.org/10.1016/j.tig.2015.05.007",
+          "name": "articlelink",
+          "label": "CrossRef DOI link to publisher maintained version"
+        },
+        {
+          "value": "article",
+          "name": "content_type",
+          "label": "Content Type"
+        },
+        {
+          "value": "Copyright © 2015 Elsevier Ltd. All rights reserved.",
+          "name": "copyright",
+          "label": "Copyright"
+        }
+      ],
+      "id": "J0PJHcHK"
+    },
+    "citation_id": "J0PJHcHK"
+  },
+  "doi:10.1038/nrg3458": {
+    "source": "doi",
+    "identifer": "10.1038/nrg3458",
+    "standard_citation": "doi:10.1038/nrg3458",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            3,
+            31
+          ]
+        ],
+        "date-time": "2017-03-31T23:54:32Z",
+        "timestamp": 1491004472291
+      },
+      "reference-count": 75,
+      "publisher": "Springer Nature",
+      "issue": "4",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Nat Rev Genet"
+      ],
+      "DOI": "10.1038/nrg3458",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2013,
+            3,
+            18
+          ]
+        ],
+        "date-time": "2013-03-18T08:46:41Z",
+        "timestamp": 1363596401000
+      },
+      "page": "288-295",
+      "source": "Crossref",
+      "is-referenced-by-count": 66,
+      "title": "Enhancers: five essential questions",
+      "prefix": "10.1038",
+      "volume": "14",
+      "author": [
+        {
+          "given": "Len A.",
+          "family": "Pennacchio",
+          "affiliation": []
+        },
+        {
+          "given": "Wendy",
+          "family": "Bickmore",
+          "affiliation": []
+        },
+        {
+          "given": "Ann",
+          "family": "Dean",
+          "affiliation": []
+        },
+        {
+          "given": "Marcelo A.",
+          "family": "Nobrega",
+          "affiliation": []
+        },
+        {
+          "given": "Gill",
+          "family": "Bejerano",
+          "affiliation": []
+        }
+      ],
+      "member": "339",
+      "published-online": {
+        "date-parts": [
+          [
+            2013,
+            3,
+            18
+          ]
+        ]
+      },
+      "container-title": "Nature Reviews Genetics",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2013,
+            3,
+            18
+          ]
+        ],
+        "date-time": "2013-03-18T08:47:08Z",
+        "timestamp": 1363596428000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2013,
+            3,
+            18
+          ]
+        ]
+      },
+      "references-count": 75,
+      "alternative-id": [
+        "nrg3458"
+      ],
+      "URL": "http://dx.doi.org/10.1038/nrg3458",
+      "relation": {
+        "cites": []
+      },
+      "issn-type": [
+        {
+          "value": "1471-0056",
+          "type": "print"
+        },
+        {
+          "value": "1471-0064",
+          "type": "electronic"
+        }
+      ],
+      "subject": [
+        "Genetics(clinical)",
+        "Genetics",
+        "Molecular Biology"
+      ],
+      "id": "8yA3foA6"
+    },
+    "citation_id": "8yA3foA6"
+  },
+  "doi:10.1038/srep32404": {
+    "source": "doi",
+    "identifer": "10.1038/srep32404",
+    "standard_citation": "doi:10.1038/srep32404",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            1
+          ]
+        ],
+        "date-time": "2017-04-01T11:45:27Z",
+        "timestamp": 1491047127343
+      },
+      "reference-count": 58,
+      "publisher": "Springer Nature",
+      "issue": "1",
+      "license": [
+        {
+          "URL": "http://www.springer.com/tdm",
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                8,
+                31
+              ]
+            ],
+            "date-time": "2016-08-31T00:00:00Z",
+            "timestamp": 1472601600000
+          },
+          "delay-in-days": 0,
+          "content-version": "vor"
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "link.springer.com"
+        ],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Sci Rep"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2016,
+            10
+          ]
+        ]
+      },
+      "DOI": "10.1038/srep32404",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2016,
+            8,
+            31
+          ]
+        ],
+        "date-time": "2016-08-31T16:36:25Z",
+        "timestamp": 1472661385000
+      },
+      "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+      "source": "Crossref",
+      "is-referenced-by-count": 1,
+      "title": "Large-Scale Discovery of Disease-Disease and Disease-Gene Associations",
+      "prefix": "10.1038",
+      "volume": "6",
+      "author": [
+        {
+          "given": "Djordje",
+          "family": "Gligorijevic",
+          "affiliation": []
+        },
+        {
+          "given": "Jelena",
+          "family": "Stojanovic",
+          "affiliation": []
+        },
+        {
+          "given": "Nemanja",
+          "family": "Djuric",
+          "affiliation": []
+        },
+        {
+          "given": "Vladan",
+          "family": "Radosavljevic",
+          "affiliation": []
+        },
+        {
+          "given": "Mihajlo",
+          "family": "Grbovic",
+          "affiliation": []
+        },
+        {
+          "given": "Rob J.",
+          "family": "Kulathinal",
+          "affiliation": []
+        },
+        {
+          "given": "Zoran",
+          "family": "Obradovic",
+          "affiliation": []
+        }
+      ],
+      "member": "339",
+      "published-online": {
+        "date-parts": [
+          [
+            2016,
+            8,
+            31
+          ]
+        ]
+      },
+      "container-title": "Scientific Reports",
+      "original-title": [],
+      "link": [
+        {
+          "URL": "http://www.nature.com/articles/srep32404.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "http://www.nature.com/articles/srep32404",
+          "content-type": "text/html",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2017,
+            3,
+            12
+          ]
+        ],
+        "date-time": "2017-03-12T13:46:39Z",
+        "timestamp": 1489326399000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            8,
+            31
+          ]
+        ]
+      },
+      "references-count": 58,
+      "alternative-id": [
+        "BFsrep32404"
+      ],
+      "URL": "http://dx.doi.org/10.1038/srep32404",
+      "relation": {
+        "cites": []
+      },
+      "issn-type": [
+        {
+          "value": "2045-2322",
+          "type": "electronic"
+        }
+      ],
+      "article-number": "32404",
+      "id": "1G2xP5yOM"
+    },
+    "citation_id": "1G2xP5yOM"
+  },
+  "doi:10.1093/bib/4.1.22": {
+    "source": "doi",
+    "identifer": "10.1093/bib/4.1.22",
+    "standard_citation": "doi:10.1093/bib/4.1.22",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            2
+          ]
+        ],
+        "date-time": "2017-04-02T15:23:07Z",
+        "timestamp": 1491146587443
+      },
+      "reference-count": 0,
+      "publisher": "Oxford University Press (OUP)",
+      "issue": "1",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Briefings in Bioinformatics"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2003,
+            1,
+            1
+          ]
+        ]
+      },
+      "DOI": "10.1093/bib/4.1.22",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2006,
+            1,
+            18
+          ]
+        ],
+        "date-time": "2006-01-18T19:42:59Z",
+        "timestamp": 1137613379000
+      },
+      "page": "22-30",
+      "source": "Crossref",
+      "is-referenced-by-count": 23,
+      "title": "The state of the art of mammalian promoter recognition",
+      "prefix": "10.1093",
+      "volume": "4",
+      "author": [
+        {
+          "given": "T.",
+          "family": "Werner",
+          "affiliation": []
+        }
+      ],
+      "member": "286",
+      "container-title": "Briefings in Bioinformatics",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            23
+          ]
+        ],
+        "date-time": "2017-01-23T17:05:05Z",
+        "timestamp": 1485191105000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2003,
+            1,
+            1
+          ]
+        ]
+      },
+      "references-count": 0,
+      "URL": "http://dx.doi.org/10.1093/bib/4.1.22",
+      "relation": {},
+      "issn-type": [
+        {
+          "value": "1467-5463",
+          "type": "print"
+        },
+        {
+          "value": "1477-4054",
+          "type": "electronic"
+        }
+      ],
+      "subject": [
+        "Molecular Biology",
+        "Information Systems"
+      ],
+      "id": "19jjiGHWc"
+    },
+    "citation_id": "19jjiGHWc"
+  },
+  "doi:10.1093/nar/gkm238": {
+    "source": "doi",
+    "identifer": "10.1093/nar/gkm238",
+    "standard_citation": "doi:10.1093/nar/gkm238",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            2
+          ]
+        ],
+        "date-time": "2017-04-02T08:36:05Z",
+        "timestamp": 1491122165430
+      },
+      "reference-count": 0,
+      "publisher": "Oxford University Press (OUP)",
+      "issue": "11",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Nucleic Acids Research"
+      ],
+      "DOI": "10.1093/nar/gkm238",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2007,
+            5,
+            26
+          ]
+        ],
+        "date-time": "2007-05-26T00:29:51Z",
+        "timestamp": 1180139391000
+      },
+      "page": "3823-3835",
+      "source": "Crossref",
+      "is-referenced-by-count": 305,
+      "title": "SNAP: predict effect of non-synonymous polymorphisms on function",
+      "prefix": "10.1093",
+      "volume": "35",
+      "author": [
+        {
+          "given": "Y.",
+          "family": "Bromberg",
+          "affiliation": []
+        },
+        {
+          "given": "B.",
+          "family": "Rost",
+          "affiliation": []
+        }
+      ],
+      "member": "286",
+      "published-online": {
+        "date-parts": [
+          [
+            2007,
+            5,
+            7
+          ]
+        ]
+      },
+      "container-title": "Nucleic Acids Research",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            23
+          ]
+        ],
+        "date-time": "2017-01-23T20:55:12Z",
+        "timestamp": 1485204912000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2007,
+            5,
+            7
+          ]
+        ]
+      },
+      "references-count": 0,
+      "URL": "http://dx.doi.org/10.1093/nar/gkm238",
+      "relation": {},
+      "issn-type": [
+        {
+          "value": "0305-1048",
+          "type": "print"
+        },
+        {
+          "value": "1362-4962",
+          "type": "electronic"
+        }
+      ],
+      "subject": [
+        "Genetics"
+      ],
+      "id": "1EyJfuWqh"
+    },
+    "citation_id": "1EyJfuWqh"
+  },
+  "doi:10.1101/041616": {
+    "source": "doi",
+    "identifer": "10.1101/041616",
+    "standard_citation": "doi:10.1101/041616",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            3,
+            31
+          ]
+        ],
+        "date-time": "2017-03-31T20:11:59Z",
+        "timestamp": 1490991119580
+      },
+      "posted": {
+        "date-parts": [
+          [
+            2016,
+            2,
+            28
+          ]
+        ]
+      },
+      "group-title": "Bioinformatics",
+      "reference-count": 0,
+      "publisher": "Cold Spring Harbor Laboratory Press",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [],
+      "accepted": {
+        "date-parts": [
+          [
+            2016,
+            2,
+            28
+          ]
+        ]
+      },
+      "abstract": "<jats:p>Identifying active cis-regulatory regions in the human genome is critical for understanding gene regulation and assessing the impact of genetic variation on phenotype. Based on rich data resources such as the Encyclopedia of DNA Elements (ENCODE) and the Functional Annotation of the Mammalian Genome (FANTOM) projects, we introduce DECRES, the first supervised deep learning approach for the identification of enhancer and promoter regions in the human genome. Due to their ability to discover patterns in large and complex data, the introduction of deep learning methods enables a significant advance in our knowledge of the genomic locations of cis-regulatory regions. Using models for well-characterized cell lines, we identify key experimental features that contribute to the predictive performance. Applying DECRES, we delineate locations of 300,000 candidate enhancers genome wide (6.8% of the genome, of which 40,000 are supported by bidirectional transcription data) and 26,000 candidate promoters (0.6% of the genome).</jats:p>",
+      "DOI": "10.1101/041616",
+      "type": "manuscript",
+      "created": {
+        "date-parts": [
+          [
+            2016,
+            2,
+            29
+          ]
+        ],
+        "date-time": "2016-02-29T06:07:41Z",
+        "timestamp": 1456726061000
+      },
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": "Genome-Wide Prediction of cis-Regulatory Regions Using Supervised Deep Learning Methods",
+      "prefix": "10.1101",
+      "author": [
+        {
+          "given": "Yifeng",
+          "family": "Li",
+          "affiliation": []
+        },
+        {
+          "given": "Wenqiang",
+          "family": "Shi",
+          "affiliation": []
+        },
+        {
+          "given": "Wyeth W",
+          "family": "Wasserman",
+          "affiliation": []
+        }
+      ],
+      "member": "246",
+      "container-title": null,
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            4
+          ]
+        ],
+        "date-time": "2017-01-04T06:12:58Z",
+        "timestamp": 1483510378000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            2,
+            28
+          ]
+        ]
+      },
+      "references-count": 0,
+      "URL": "http://dx.doi.org/10.1101/041616",
+      "relation": {},
+      "id": "1HbQQcY2q"
+    },
+    "citation_id": "1HbQQcY2q"
+  },
+  "doi:10.1101/085241": {
+    "source": "doi",
+    "identifer": "10.1101/085241",
+    "standard_citation": "doi:10.1101/085241",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            3
+          ]
+        ],
+        "date-time": "2017-04-03T01:20:39Z",
+        "timestamp": 1491182439709
+      },
+      "posted": {
+        "date-parts": [
+          [
+            2016,
+            11,
+            2
+          ]
+        ]
+      },
+      "group-title": "Bioinformatics",
+      "reference-count": 0,
+      "publisher": "Cold Spring Harbor Laboratory Press",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [],
+      "accepted": {
+        "date-parts": [
+          [
+            2016,
+            11,
+            2
+          ]
+        ]
+      },
+      "abstract": "<jats:p>In the human genome, distal enhancers are involved in regulating target genes through proximal promoters by forming enhancer-promoter interactions. However, although recently developed high-throughput experimental approaches have allowed us to recognize potential enhancer-promoter interactions genome-wide, it is still largely unknown whether there are sequence-level instructions encoded in our genome that help govern such interactions. Here we report a new computational method (named \"SPEID\") using deep learning models to predict enhancer-promoter interactions based on sequence-based features only, when the locations of putative enhancers and promoters in a particular cell type are given. Our results across six different cell types demonstrate that SPEID is effective in predicting enhancer-promoter interactions as compared to state-of-the-art methods that use non-sequence features from functional genomic signals. This work shows for the first time that sequence-based features alone can reliably predict enhancer-promoter interactions genome-wide, which provides important insights into the sequence determinants for long-range gene regulation.</jats:p>",
+      "DOI": "10.1101/085241",
+      "type": "manuscript",
+      "created": {
+        "date-parts": [
+          [
+            2016,
+            11,
+            3
+          ]
+        ],
+        "date-time": "2016-11-03T05:12:05Z",
+        "timestamp": 1478149925000
+      },
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": "Predicting Enhancer-Promoter Interaction from Genomic Sequence with Deep Neural Networks",
+      "prefix": "10.1101",
+      "author": [
+        {
+          "given": "Shashank",
+          "family": "Singh",
+          "affiliation": []
+        },
+        {
+          "given": "Yang",
+          "family": "Yang",
+          "affiliation": []
+        },
+        {
+          "given": "Barnabas",
+          "family": "Poczos",
+          "affiliation": []
+        },
+        {
+          "given": "Jian",
+          "family": "Ma",
+          "affiliation": []
+        }
+      ],
+      "member": "246",
+      "container-title": null,
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            4
+          ]
+        ],
+        "date-time": "2017-01-04T06:17:14Z",
+        "timestamp": 1483510634000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            11,
+            2
+          ]
+        ]
+      },
+      "references-count": 0,
+      "URL": "http://dx.doi.org/10.1101/085241",
+      "relation": {},
+      "id": "14TqLB9iZ"
+    },
+    "citation_id": "14TqLB9iZ"
+  },
+  "doi:10.1101/gr.173518.114": {
+    "source": "doi",
+    "identifer": "10.1101/gr.173518.114",
+    "standard_citation": "doi:10.1101/gr.173518.114",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            10
+          ]
+        ],
+        "date-time": "2017-04-10T23:55:27Z",
+        "timestamp": 1491868527391
+      },
+      "reference-count": 0,
+      "publisher": "Cold Spring Harbor Laboratory Press",
+      "issue": "10",
+      "funder": [
+        {
+          "DOI": "10.13039/100000002",
+          "name": "National Institutes of Health",
+          "doi-asserted-by": "crossref",
+          "award": [
+            "R01 GM092910"
+          ]
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Genome Res."
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2014,
+            10
+          ]
+        ]
+      },
+      "DOI": "10.1101/gr.173518.114",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2014,
+            7,
+            18
+          ]
+        ],
+        "date-time": "2014-07-18T06:48:30Z",
+        "timestamp": 1405666110000
+      },
+      "page": "1595-1602",
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": "High-throughput functional testing of ENCODE segmentation predictions",
+      "prefix": "10.1101",
+      "volume": "24",
+      "author": [
+        {
+          "given": "Jamie C.",
+          "family": "Kwasnieski",
+          "affiliation": []
+        },
+        {
+          "given": "Christopher",
+          "family": "Fiore",
+          "affiliation": []
+        },
+        {
+          "given": "Hemangi G.",
+          "family": "Chaudhari",
+          "affiliation": []
+        },
+        {
+          "given": "Barak A.",
+          "family": "Cohen",
+          "affiliation": []
+        }
+      ],
+      "member": "246",
+      "published-online": {
+        "date-parts": [
+          [
+            2014,
+            7,
+            17
+          ]
+        ]
+      },
+      "container-title": "Genome Research",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2017,
+            2,
+            15
+          ]
+        ],
+        "date-time": "2017-02-15T17:48:12Z",
+        "timestamp": 1487180892000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2014,
+            7,
+            17
+          ]
+        ]
+      },
+      "references-count": 0,
+      "alternative-id": [
+        "10.1101/gr.173518.114"
+      ],
+      "URL": "http://dx.doi.org/10.1101/gr.173518.114",
+      "relation": {},
+      "issn-type": [
+        {
+          "value": "1088-9051",
+          "type": "print"
+        },
+        {
+          "value": "1549-5469",
+          "type": "electronic"
+        }
+      ],
+      "subject": [
+        "Genetics(clinical)",
+        "Genetics"
+      ],
+      "id": "5zmE7Qkb"
+    },
+    "citation_id": "5zmE7Qkb"
+  },
+  "doi:10.1101/gr.200535.115": {
+    "source": "doi",
+    "identifer": "10.1101/gr.200535.115",
+    "standard_citation": "doi:10.1101/gr.200535.115",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            18
+          ]
+        ],
+        "date-time": "2017-04-18T19:26:15Z",
+        "timestamp": 1492543575629
+      },
+      "reference-count": 0,
+      "publisher": "Cold Spring Harbor Laboratory",
+      "issue": "7",
+      "funder": [
+        {
+          "DOI": "10.13039/100000066",
+          "name": "National Institute of Environmental Health Sciences",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "ES022984-02"
+          ]
+        },
+        {
+          "DOI": "10.13039/100000025",
+          "name": "National Institute of Mental Health",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "R01MH102416-03"
+          ]
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Genome Res."
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2016,
+            7
+          ]
+        ]
+      },
+      "DOI": "10.1101/gr.200535.115",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2016,
+            5,
+            4
+          ]
+        ],
+        "date-time": "2016-05-04T02:43:56Z",
+        "timestamp": 1462329836000
+      },
+      "page": "990-999",
+      "source": "CrossRef",
+      "is-referenced-by-count": 11,
+      "title": "Basset: learning the regulatory code of the accessible genome with deep convolutional neural networks",
+      "prefix": "10.1101",
+      "volume": "26",
+      "author": [
+        {
+          "given": "David R.",
+          "family": "Kelley",
+          "affiliation": []
+        },
+        {
+          "given": "Jasper",
+          "family": "Snoek",
+          "affiliation": []
+        },
+        {
+          "given": "John L.",
+          "family": "Rinn",
+          "affiliation": []
+        }
+      ],
+      "member": "246",
+      "published-online": {
+        "date-parts": [
+          [
+            2016,
+            5,
+            3
+          ]
+        ]
+      },
+      "container-title": "Genome Research",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2017,
+            2,
+            15
+          ]
+        ],
+        "date-time": "2017-02-15T17:46:41Z",
+        "timestamp": 1487180801000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            5,
+            3
+          ]
+        ]
+      },
+      "references-count": 0,
+      "alternative-id": [
+        "10.1101/gr.200535.115"
+      ],
+      "URL": "http://dx.doi.org/10.1101/gr.200535.115",
+      "relation": {
+        "has-preprint": [
+          {
+            "id-type": "doi",
+            "id": "10.1101/028399",
+            "asserted-by": "object"
+          }
+        ]
+      },
+      "issn-type": [
+        {
+          "value": "1088-9051",
+          "type": "print"
+        },
+        {
+          "value": "1549-5469",
+          "type": "electronic"
+        }
+      ],
+      "subject": [
+        "Genetics(clinical)",
+        "Genetics"
+      ],
+      "id": "2CbHXoFn"
+    },
+    "citation_id": "2CbHXoFn"
+  },
+  "doi:10.1109/bibm.2016.7822593": {
+    "source": "doi",
+    "identifer": "10.1109/bibm.2016.7822593",
+    "standard_citation": "doi:10.1109/bibm.2016.7822593",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            3
+          ]
+        ],
+        "date-time": "2017-04-03T06:41:18Z",
+        "timestamp": 1491201678679
+      },
+      "reference-count": 34,
+      "publisher": "IEEE",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [],
+      "published-print": {
+        "date-parts": [
+          [
+            2016,
+            12
+          ]
+        ]
+      },
+      "DOI": "10.1109/bibm.2016.7822593",
+      "type": "paper-conference",
+      "created": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            20
+          ]
+        ],
+        "date-time": "2017-01-20T03:36:10Z",
+        "timestamp": 1484883370000
+      },
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": "DeepEnhancer: Predicting enhancers by convolutional neural networks",
+      "prefix": "10.1109",
+      "author": [
+        {
+          "family": "Xu Min",
+          "affiliation": []
+        },
+        {
+          "family": "Ning Chen",
+          "affiliation": []
+        },
+        {
+          "family": "Ting Chen",
+          "affiliation": []
+        },
+        {
+          "family": "Rui Jiang",
+          "affiliation": []
+        }
+      ],
+      "member": "263",
+      "container-title": "2016 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2017,
+            2,
+            2
+          ]
+        ],
+        "date-time": "2017-02-02T17:30:57Z",
+        "timestamp": 1486056657000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            12
+          ]
+        ]
+      },
+      "references-count": 34,
+      "URL": "http://dx.doi.org/10.1109/bibm.2016.7822593",
+      "relation": {},
+      "id": "jV2YerUS"
+    },
+    "citation_id": "jV2YerUS"
+  },
+  "doi:10.1126/science.aag2302": {
+    "source": "doi",
+    "identifer": "10.1126/science.aag2302",
+    "standard_citation": "doi:10.1126/science.aag2302",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            3
+          ]
+        ],
+        "date-time": "2017-04-03T10:43:59Z",
+        "timestamp": 1491216239388
+      },
+      "reference-count": 45,
+      "publisher": "American Association for the Advancement of Science (AAAS)",
+      "issue": "6325",
+      "funder": [
+        {
+          "DOI": "10.13039/100004431",
+          "name": "Directorate-General for Research and Innovation",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "award287220"
+          ]
+        },
+        {
+          "DOI": "10.13039/100006112",
+          "name": "Microsoft Research",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "award287221"
+          ]
+        },
+        {
+          "DOI": "10.13039/100007187",
+          "name": "Lincoln Laboratory, Massachusetts Institute of Technology",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "award287222"
+          ]
+        },
+        {
+          "DOI": "10.13039/501100001711",
+          "name": "Schweizerischer Nationalfonds zur Förderung der Wissenschaftlichen Forschung",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "award287223"
+          ]
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Science"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2017,
+            2,
+            10
+          ]
+        ]
+      },
+      "DOI": "10.1126/science.aag2302",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2017,
+            3,
+            7
+          ]
+        ],
+        "date-time": "2017-03-07T19:43:31Z",
+        "timestamp": 1488915811000
+      },
+      "page": "602-606",
+      "source": "Crossref",
+      "is-referenced-by-count": 1,
+      "title": "Solving the quantum many-body problem with artificial neural networks",
+      "prefix": "10.1126",
+      "volume": "355",
+      "author": [
+        {
+          "ORCID": "http://orcid.org/0000-0002-8887-4356",
+          "authenticated-orcid": false,
+          "given": "Giuseppe",
+          "family": "Carleo",
+          "affiliation": []
+        },
+        {
+          "given": "Matthias",
+          "family": "Troyer",
+          "affiliation": []
+        }
+      ],
+      "member": "221",
+      "published-online": {
+        "date-parts": [
+          [
+            2017,
+            2,
+            9
+          ]
+        ]
+      },
+      "container-title": "Science",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2017,
+            3,
+            7
+          ]
+        ],
+        "date-time": "2017-03-07T19:46:38Z",
+        "timestamp": 1488915998000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2017,
+            2,
+            9
+          ]
+        ]
+      },
+      "references-count": 45,
+      "alternative-id": [
+        "10.1126/science.aag2302"
+      ],
+      "URL": "http://dx.doi.org/10.1126/science.aag2302",
+      "relation": {
+        "cites": []
+      },
+      "issn-type": [
+        {
+          "value": "0036-8075",
+          "type": "print"
+        },
+        {
+          "value": "1095-9203",
+          "type": "electronic"
+        }
+      ],
+      "subject": [
+        "General"
+      ],
+      "id": "BYO1aJEG"
+    },
+    "citation_id": "BYO1aJEG"
+  },
+  "doi:10.1371/journal.pone.0171410": {
+    "source": "doi",
+    "identifer": "10.1371/journal.pone.0171410",
+    "standard_citation": "doi:10.1371/journal.pone.0171410",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            3
+          ]
+        ],
+        "date-time": "2017-04-03T08:17:00Z",
+        "timestamp": 1491207420070
+      },
+      "reference-count": 43,
+      "publisher": "Public Library of Science (PLoS)",
+      "issue": "2",
+      "license": [
+        {
+          "URL": "http://creativecommons.org/licenses/by/4.0/",
+          "start": {
+            "date-parts": [
+              [
+                2017,
+                2,
+                3
+              ]
+            ],
+            "date-time": "2017-02-03T00:00:00Z",
+            "timestamp": 1486080000000
+          },
+          "delay-in-days": 0,
+          "content-version": "vor"
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "www.plosone.org"
+        ],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "PLoS ONE"
+      ],
+      "DOI": "10.1371/journal.pone.0171410",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2017,
+            2,
+            3
+          ]
+        ],
+        "date-time": "2017-02-03T18:45:18Z",
+        "timestamp": 1486147518000
+      },
+      "page": "e0171410",
+      "update-policy": "http://dx.doi.org/10.1371/journal.pone.corrections_policy",
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": "Recognition of prokaryotic and eukaryotic promoters using convolutional deep learning neural networks",
+      "prefix": "10.1371",
+      "volume": "12",
+      "author": [
+        {
+          "given": "Ramzan Kh.",
+          "family": "Umarov",
+          "affiliation": []
+        },
+        {
+          "ORCID": "http://orcid.org/0000-0001-8885-493X",
+          "authenticated-orcid": true,
+          "given": "Victor V.",
+          "family": "Solovyev",
+          "affiliation": []
+        }
+      ],
+      "member": "340",
+      "published-online": {
+        "date-parts": [
+          [
+            2017,
+            2,
+            3
+          ]
+        ]
+      },
+      "container-title": "PLOS ONE",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2017,
+            2,
+            3
+          ]
+        ],
+        "date-time": "2017-02-03T18:45:18Z",
+        "timestamp": 1486147518000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "editor": [
+        {
+          "given": "Igor B.",
+          "family": "Rogozin",
+          "affiliation": []
+        }
+      ],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2017,
+            2,
+            3
+          ]
+        ]
+      },
+      "references-count": 43,
+      "URL": "http://dx.doi.org/10.1371/journal.pone.0171410",
+      "relation": {
+        "cites": []
+      },
+      "issn-type": [
+        {
+          "value": "1932-6203",
+          "type": "electronic"
+        }
+      ],
+      "subject": [
+        "Biochemistry, Genetics and Molecular Biology(all)",
+        "Agricultural and Biological Sciences(all)",
+        "Medicine(all)"
+      ],
+      "id": "as2HfoSh"
+    },
+    "citation_id": "as2HfoSh"
+  },
+  "doi:10.1101/114892": {
+    "source": "doi",
+    "identifer": "10.1101/114892",
+    "standard_citation": "doi:10.1101/114892",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            3
+          ]
+        ],
+        "date-time": "2017-04-03T10:50:15Z",
+        "timestamp": 1491216615414
+      },
+      "posted": {
+        "date-parts": [
+          [
+            2017,
+            3,
+            8
+          ]
+        ]
+      },
+      "group-title": "Bioinformatics",
+      "reference-count": 0,
+      "publisher": "Cold Spring Harbor Laboratory Press",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [],
+      "accepted": {
+        "date-parts": [
+          [
+            2017,
+            3,
+            8
+          ]
+        ]
+      },
+      "abstract": "<jats:p>Identifying robust survival subgroups of hepatocellular carcinoma (HCC) will significantly improve patient care. Currently, endeavor of integrating multi-omics data to explicitly predict HCC survival from multiple patient cohorts is lacking. To fill in this gap, we present a deep learning (DL) based model on HCC that robustly differentiates survival subpopulations of patients in six cohorts. We train the DL based, survival-sensitive model on 360 HCC patient data using RNA-seq, miRNA-seq and methylation data from TCGA. This model provides two optimal subgroups of patients with significant survival differences (P=7.13e-6) and good model fitness (C-index=0.68). More aggressive subtype is associated with frequent TP53 inactivation mutations, higher expression of stemness markers (KRT19, EPCAM) and tumor marker BIRC5, and activated Wnt and Akt signaling pathways. We validated this multi-omics model on five external datasets of various omics types: LIRI-JP cohort (n=230, c-index=0.75), NCI cohort (n=221, c-index=0.67), Chinese cohort (n=166, c-index=0.69), E-TABM-36 cohort (n=40, c-index=0.77), and Hawaiian cohort (n=27, c-index=0.82). This is the first study to employ deep learning to identify multi-omics features linked to the differential survival of HCC patients. Given its robustness over multiple cohorts, we expect this model to be clinically useful for HCC prognosis prediction.</jats:p>",
+      "DOI": "10.1101/114892",
+      "type": "manuscript",
+      "created": {
+        "date-parts": [
+          [
+            2017,
+            3,
+            9
+          ]
+        ],
+        "date-time": "2017-03-09T06:10:48Z",
+        "timestamp": 1489039848000
+      },
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": "Deep Learning based multi-omics integration robustly predicts survival in liver cancer",
+      "prefix": "10.1101",
+      "author": [
+        {
+          "given": "Kumardeep",
+          "family": "Chaudhary",
+          "affiliation": []
+        },
+        {
+          "given": "Olivier B.",
+          "family": "Poirion",
+          "affiliation": []
+        },
+        {
+          "given": "Liangqun",
+          "family": "Lu",
+          "affiliation": []
+        },
+        {
+          "given": "Lana",
+          "family": "Garmire",
+          "affiliation": []
+        }
+      ],
+      "member": "246",
+      "container-title": null,
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2017,
+            3,
+            9
+          ]
+        ],
+        "date-time": "2017-03-09T06:11:45Z",
+        "timestamp": 1489039905000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2017,
+            3,
+            8
+          ]
+        ]
+      },
+      "references-count": 0,
+      "URL": "http://dx.doi.org/10.1101/114892",
+      "relation": {},
+      "id": "obeRVckH"
+    },
+    "citation_id": "obeRVckH"
+  },
+  "doi:10.1101/081380": {
+    "source": "doi",
+    "identifer": "10.1101/081380",
+    "standard_citation": "doi:10.1101/081380",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            3
+          ]
+        ],
+        "date-time": "2017-04-03T00:22:03Z",
+        "timestamp": 1491178923869
+      },
+      "posted": {
+        "date-parts": [
+          [
+            2016,
+            10,
+            17
+          ]
+        ]
+      },
+      "group-title": "Bioinformatics",
+      "reference-count": 0,
+      "publisher": "Cold Spring Harbor Laboratory Press",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [],
+      "accepted": {
+        "date-parts": [
+          [
+            2016,
+            10,
+            17
+          ]
+        ]
+      },
+      "abstract": "<jats:p>Numerous advances in sequencing technologies have revolutionized genomics through generating many types of genomic functional data. Statistical tools have been developed to analyze individual data types, but there lack strategies to integrate disparate datasets under a unified framework. Moreover, most analysis techniques heavily rely on feature selection and data preprocessing which increase the difficulty of addressing biological questions through the integration of multiple datasets. Here, we introduce FIDDLE (Flexible Integration of Data with Deep LEarning) an open source data-agnostic flexible integrative framework that learns a unified representation from multiple data types to infer another data type. As a case study, we use multiple Saccharomyces cerevisiae genomic datasets to predict global transcription start sites (TSS) through the simulation of TSS-seq data. We demonstrate that a type of data can be inferred from other sources of data types without manually specifying the relevant features and preprocessing. We show that models built from multiple genome-wide datasets perform profoundly better than models built from individual datasets. Thus FIDDLE learns the complex synergistic relationship within individual datasets and, importantly, across datasets.</jats:p>",
+      "DOI": "10.1101/081380",
+      "type": "manuscript",
+      "created": {
+        "date-parts": [
+          [
+            2016,
+            10,
+            19
+          ]
+        ],
+        "date-time": "2016-10-19T05:13:03Z",
+        "timestamp": 1476853983000
+      },
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": "FIDDLE: An integrative deep learning framework for functional genomic data inference",
+      "prefix": "10.1101",
+      "author": [
+        {
+          "given": "Umut",
+          "family": "Eser",
+          "affiliation": []
+        },
+        {
+          "given": "L. Stirling",
+          "family": "Churchman",
+          "affiliation": []
+        }
+      ],
+      "member": "246",
+      "container-title": null,
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            4
+          ]
+        ],
+        "date-time": "2017-01-04T06:17:26Z",
+        "timestamp": 1483510646000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            10,
+            17
+          ]
+        ]
+      },
+      "references-count": 0,
+      "URL": "http://dx.doi.org/10.1101/081380",
+      "relation": {},
+      "id": "yOz8Ybj2"
+    },
+    "citation_id": "yOz8Ybj2"
+  },
+  "doi:10.1021/acscentsci.6b00162": {
+    "source": "doi",
+    "identifer": "10.1021/acscentsci.6b00162",
+    "standard_citation": "doi:10.1021/acscentsci.6b00162",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            1
+          ]
+        ],
+        "date-time": "2017-04-01T18:06:27Z",
+        "timestamp": 1491069987934
+      },
+      "reference-count": 68,
+      "publisher": "American Chemical Society (ACS)",
+      "issue": "8",
+      "license": [
+        {
+          "URL": "http://pubs.acs.org/page/policy/authorchoice_termsofuse.html",
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                7,
+                29
+              ]
+            ],
+            "date-time": "2016-07-29T00:00:00Z",
+            "timestamp": 1469750400000
+          },
+          "delay-in-days": 0,
+          "content-version": "vor"
+        }
+      ],
+      "funder": [
+        {
+          "DOI": "10.13039/100000092",
+          "name": "U.S. National Library of Medicine",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "R01LM012222"
+          ]
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "ACS Cent. Sci."
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2016,
+            8,
+            24
+          ]
+        ]
+      },
+      "DOI": "10.1021/acscentsci.6b00162",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2016,
+            7,
+            29
+          ]
+        ],
+        "date-time": "2016-07-29T12:52:04Z",
+        "timestamp": 1469796724000
+      },
+      "page": "529-537",
+      "source": "Crossref",
+      "is-referenced-by-count": 3,
+      "title": "Modeling Reactivity to Biological Macromolecules with a Deep Multitask Network",
+      "prefix": "10.1021",
+      "volume": "2",
+      "author": [
+        {
+          "given": "Tyler B.",
+          "family": "Hughes",
+          "affiliation": []
+        },
+        {
+          "given": "Na Le",
+          "family": "Dang",
+          "affiliation": []
+        },
+        {
+          "given": "Grover P.",
+          "family": "Miller",
+          "affiliation": []
+        },
+        {
+          "given": "S. Joshua",
+          "family": "Swamidass",
+          "affiliation": []
+        }
+      ],
+      "member": "316",
+      "container-title": "ACS Central Science",
+      "original-title": [],
+      "link": [
+        {
+          "URL": "http://pubs.acs.org/doi/pdf/10.1021/acscentsci.6b00162",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "unspecified"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2016,
+            8,
+            24
+          ]
+        ],
+        "date-time": "2016-08-24T08:00:12Z",
+        "timestamp": 1472025612000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            8,
+            24
+          ]
+        ]
+      },
+      "references-count": 68,
+      "alternative-id": [
+        "10.1021/acscentsci.6b00162"
+      ],
+      "URL": "http://dx.doi.org/10.1021/acscentsci.6b00162",
+      "relation": {},
+      "issn-type": [
+        {
+          "value": "2374-7943",
+          "type": "print"
+        },
+        {
+          "value": "2374-7951",
+          "type": "electronic"
+        }
+      ],
+      "id": "1BARarxfz"
+    },
+    "citation_id": "1BARarxfz"
+  },
+  "doi:10.15252/msb.20177551": {
+    "source": "doi",
+    "identifer": "10.15252/msb.20177551",
+    "standard_citation": "doi:10.15252/msb.20177551",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            19
+          ]
+        ],
+        "date-time": "2017-04-19T00:40:14Z",
+        "timestamp": 1492562414037
+      },
+      "reference-count": 0,
+      "publisher": "EMBO",
+      "issue": "4",
+      "funder": [
+        {
+          "DOI": "10.13039/501100001805",
+          "name": "Canada Foundation for Innovation",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "21475"
+          ]
+        },
+        {
+          "DOI": "10.13039/501100003400",
+          "name": "Ministry of Research and Innovation",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "21475"
+          ]
+        },
+        {
+          "DOI": "10.13039/501100000024",
+          "name": "Canadian Institutes of Health Research",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "FDN‐143264",
+            "FDN‐143265"
+          ]
+        },
+        {
+          "DOI": "10.13039/100000002",
+          "name": "National Institutes of Health",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "R01HG005853"
+          ]
+        },
+        {
+          "DOI": "10.13039/501100007224",
+          "name": "Connaught Fund",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "GCDF:2013‐14"
+          ]
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Mol Syst Biol"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2017,
+            4
+          ]
+        ]
+      },
+      "DOI": "10.15252/msb.20177551",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            19
+          ]
+        ],
+        "date-time": "2017-04-19T00:10:54Z",
+        "timestamp": 1492560654000
+      },
+      "page": "924",
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": "Automated analysis of high‐content microscopy data with deep learning",
+      "prefix": "10.15252",
+      "volume": "13",
+      "author": [
+        {
+          "ORCID": "http://orcid.org/0000-0002-6328-9492",
+          "authenticated-orcid": false,
+          "given": "Oren Z",
+          "family": "Kraus",
+          "affiliation": []
+        },
+        {
+          "given": "Ben T",
+          "family": "Grys",
+          "affiliation": []
+        },
+        {
+          "given": "Jimmy",
+          "family": "Ba",
+          "affiliation": []
+        },
+        {
+          "given": "Yolanda",
+          "family": "Chong",
+          "affiliation": []
+        },
+        {
+          "given": "Brendan J",
+          "family": "Frey",
+          "affiliation": []
+        },
+        {
+          "given": "Charles",
+          "family": "Boone",
+          "affiliation": []
+        },
+        {
+          "ORCID": "http://orcid.org/0000-0001-6427-6493",
+          "authenticated-orcid": false,
+          "given": "Brenda J",
+          "family": "Andrews",
+          "affiliation": []
+        }
+      ],
+      "member": "79",
+      "published-online": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            18
+          ]
+        ]
+      },
+      "container-title": "Molecular Systems Biology",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            19
+          ]
+        ],
+        "date-time": "2017-04-19T00:11:02Z",
+        "timestamp": 1492560662000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2017,
+            4
+          ]
+        ]
+      },
+      "references-count": 0,
+      "alternative-id": [
+        "10.15252/msb.20177551"
+      ],
+      "URL": "http://dx.doi.org/10.15252/msb.20177551",
+      "relation": {},
+      "issn-type": [
+        {
+          "value": "1744-4292",
+          "type": "print"
+        },
+        {
+          "value": "1744-4292",
+          "type": "electronic"
+        }
+      ],
+      "subject": [
+        "Biochemistry, Genetics and Molecular Biology(all)",
+        "Computational Theory and Mathematics",
+        "Immunology and Microbiology(all)",
+        "Applied Mathematics",
+        "Agricultural and Biological Sciences(all)",
+        "Information Systems",
+        "Medicine(all)"
+      ],
+      "id": "DcnNfASG"
+    },
+    "citation_id": "DcnNfASG"
+  },
+  "url:https://ai.stanford.edu/~ang/papers/icml11-MultimodalDeepLearning.pdf": {
+    "source": "url",
+    "identifer": "https://ai.stanford.edu/~ang/papers/icml11-MultimodalDeepLearning.pdf",
+    "standard_citation": "url:https://ai.stanford.edu/~ang/papers/icml11-MultimodalDeepLearning.pdf",
+    "citeproc": {
+      "URL": "https://ai.stanford.edu/~ang/papers/icml11-MultimodalDeepLearning.pdf",
+      "type": "webpage",
+      "id": "1eN66lwn"
+    },
+    "citation_id": "1eN66lwn"
+  },
+  "url:https://openreview.net/forum?id=HkwoSDPgg": {
+    "source": "url",
+    "identifer": "https://openreview.net/forum?id=HkwoSDPgg",
+    "standard_citation": "url:https://openreview.net/forum?id=HkwoSDPgg",
+    "citeproc": {
+      "URL": "https://openreview.net/forum?id=HkwoSDPgg",
+      "type": "webpage",
+      "id": "b8DJ1u6W"
+    },
+    "citation_id": "b8DJ1u6W"
+  },
+  "doi:10.1534/g3.116.033654": {
+    "source": "doi",
+    "identifer": "10.1534/g3.116.033654",
+    "standard_citation": "doi:10.1534/g3.116.033654",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            9
+          ]
+        ],
+        "date-time": "2017-04-09T06:06:24Z",
+        "timestamp": 1491717984943
+      },
+      "reference-count": 0,
+      "publisher": "Genetics Society of America",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "G3"
+      ],
+      "DOI": "10.1534/g3.116.033654",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            9
+          ]
+        ],
+        "date-time": "2017-04-09T00:20:13Z",
+        "timestamp": 1491697213000
+      },
+      "page": "g3.116.033654",
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": "Accurate Classification of Protein Subcellular Localization from High Throughput Microscopy Images Using Deep Learning",
+      "prefix": "10.1534",
+      "author": [
+        {
+          "given": "Tanel",
+          "family": "Pärnamaa",
+          "affiliation": []
+        },
+        {
+          "given": "Leopold",
+          "family": "Parts",
+          "affiliation": []
+        }
+      ],
+      "member": "414",
+      "published-online": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            8
+          ]
+        ]
+      },
+      "container-title": "G3&amp;#58; Genes|Genomes|Genetics",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            9
+          ]
+        ],
+        "date-time": "2017-04-09T00:20:17Z",
+        "timestamp": 1491697217000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            8
+          ]
+        ]
+      },
+      "references-count": 0,
+      "alternative-id": [
+        "10.1534/g3.116.033654"
+      ],
+      "URL": "http://dx.doi.org/10.1534/g3.116.033654",
+      "relation": {},
+      "issn-type": [
+        {
+          "value": "2160-1836",
+          "type": "electronic"
+        }
+      ],
+      "id": "2a7MHtAx"
+    },
+    "citation_id": "2a7MHtAx"
+  },
+  "doi:10.1007/s11263-015-0816-y": {
+    "source": "doi",
+    "identifer": "10.1007/s11263-015-0816-y",
+    "standard_citation": "doi:10.1007/s11263-015-0816-y",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            1
+          ]
+        ],
+        "date-time": "2017-04-01T20:24:15Z",
+        "timestamp": 1491078255624
+      },
+      "reference-count": 102,
+      "publisher": "Springer Nature",
+      "issue": "3",
+      "content-domain": {
+        "domain": [
+          "link.springer.com"
+        ],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Int J Comput Vis"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2015,
+            12
+          ]
+        ]
+      },
+      "DOI": "10.1007/s11263-015-0816-y",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2015,
+            4,
+            10
+          ]
+        ],
+        "date-time": "2015-04-10T04:47:45Z",
+        "timestamp": 1428641265000
+      },
+      "page": "211-252",
+      "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+      "source": "Crossref",
+      "is-referenced-by-count": 623,
+      "title": "ImageNet Large Scale Visual Recognition Challenge",
+      "prefix": "10.1007",
+      "volume": "115",
+      "author": [
+        {
+          "given": "Olga",
+          "family": "Russakovsky",
+          "affiliation": []
+        },
+        {
+          "given": "Jia",
+          "family": "Deng",
+          "affiliation": []
+        },
+        {
+          "given": "Hao",
+          "family": "Su",
+          "affiliation": []
+        },
+        {
+          "given": "Jonathan",
+          "family": "Krause",
+          "affiliation": []
+        },
+        {
+          "given": "Sanjeev",
+          "family": "Satheesh",
+          "affiliation": []
+        },
+        {
+          "given": "Sean",
+          "family": "Ma",
+          "affiliation": []
+        },
+        {
+          "given": "Zhiheng",
+          "family": "Huang",
+          "affiliation": []
+        },
+        {
+          "given": "Andrej",
+          "family": "Karpathy",
+          "affiliation": []
+        },
+        {
+          "given": "Aditya",
+          "family": "Khosla",
+          "affiliation": []
+        },
+        {
+          "given": "Michael",
+          "family": "Bernstein",
+          "affiliation": []
+        },
+        {
+          "given": "Alexander C.",
+          "family": "Berg",
+          "affiliation": []
+        },
+        {
+          "given": "Li",
+          "family": "Fei-Fei",
+          "affiliation": []
+        }
+      ],
+      "member": "297",
+      "published-online": {
+        "date-parts": [
+          [
+            2015,
+            4,
+            11
+          ]
+        ]
+      },
+      "container-title": "International Journal of Computer Vision",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2015,
+            11,
+            11
+          ]
+        ],
+        "date-time": "2015-11-11T11:30:37Z",
+        "timestamp": 1447241437000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2015,
+            4,
+            11
+          ]
+        ]
+      },
+      "references-count": 102,
+      "alternative-id": [
+        "816"
+      ],
+      "URL": "http://dx.doi.org/10.1007/s11263-015-0816-y",
+      "relation": {
+        "cites": []
+      },
+      "issn-type": [
+        {
+          "value": "0920-5691",
+          "type": "print"
+        },
+        {
+          "value": "1573-1405",
+          "type": "electronic"
+        }
+      ],
+      "subject": [
+        "Software",
+        "Artificial Intelligence",
+        "Computer Vision and Pattern Recognition"
+      ],
+      "id": "cBVeXnZx"
+    },
+    "citation_id": "cBVeXnZx"
+  },
+  "url:https://papers.nips.cc/paper/5347-how-transferable-are-features-in-deep-neural-networks": {
+    "source": "url",
+    "identifer": "https://papers.nips.cc/paper/5347-how-transferable-are-features-in-deep-neural-networks",
+    "standard_citation": "url:https://papers.nips.cc/paper/5347-how-transferable-are-features-in-deep-neural-networks",
+    "citeproc": {
+      "URL": "https://papers.nips.cc/paper/5347-how-transferable-are-features-in-deep-neural-networks",
+      "type": "webpage",
+      "id": "enhj7VT6"
+    },
+    "citation_id": "enhj7VT6"
+  },
+  "doi:10.1186/s12859-015-0553-9": {
+    "source": "doi",
+    "identifer": "10.1186/s12859-015-0553-9",
+    "standard_citation": "doi:10.1186/s12859-015-0553-9",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            3,
+            31
+          ]
+        ],
+        "date-time": "2017-03-31T16:01:38Z",
+        "timestamp": 1490976098865
+      },
+      "reference-count": 23,
+      "publisher": "Springer Nature",
+      "issue": "1",
+      "license": [
+        {
+          "URL": "http://www.springer.com/tdm",
+          "start": {
+            "date-parts": [
+              [
+                2015,
+                5,
+                7
+              ]
+            ],
+            "date-time": "2015-05-07T00:00:00Z",
+            "timestamp": 1430956800000
+          },
+          "delay-in-days": 0,
+          "content-version": "vor"
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "link.springer.com"
+        ],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "BMC Bioinformatics"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2015,
+            12
+          ]
+        ]
+      },
+      "DOI": "10.1186/s12859-015-0553-9",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2015,
+            5,
+            6
+          ]
+        ],
+        "date-time": "2015-05-06T07:36:22Z",
+        "timestamp": 1430897782000
+      },
+      "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+      "source": "Crossref",
+      "is-referenced-by-count": 7,
+      "title": "Deep convolutional neural networks for annotating gene expression patterns in the mouse brain",
+      "prefix": "10.1186",
+      "volume": "16",
+      "author": [
+        {
+          "given": "Tao",
+          "family": "Zeng",
+          "affiliation": []
+        },
+        {
+          "given": "Rongjian",
+          "family": "Li",
+          "affiliation": []
+        },
+        {
+          "given": "Ravi",
+          "family": "Mukkamala",
+          "affiliation": []
+        },
+        {
+          "given": "Jieping",
+          "family": "Ye",
+          "affiliation": []
+        },
+        {
+          "given": "Shuiwang",
+          "family": "Ji",
+          "affiliation": []
+        }
+      ],
+      "member": "297",
+      "published-online": {
+        "date-parts": [
+          [
+            2015,
+            5,
+            7
+          ]
+        ]
+      },
+      "container-title": "BMC Bioinformatics",
+      "original-title": [],
+      "link": [
+        {
+          "URL": "http://link.springer.com/content/pdf/10.1186/s12859-015-0553-9.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "http://link.springer.com/article/10.1186/s12859-015-0553-9/fulltext.html",
+          "content-type": "text/html",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2016,
+            11,
+            11
+          ]
+        ],
+        "date-time": "2016-11-11T12:19:24Z",
+        "timestamp": 1478866764000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2015,
+            5,
+            7
+          ]
+        ]
+      },
+      "references-count": 23,
+      "alternative-id": [
+        "553"
+      ],
+      "URL": "http://dx.doi.org/10.1186/s12859-015-0553-9",
+      "relation": {
+        "cites": []
+      },
+      "issn-type": [
+        {
+          "value": "1471-2105",
+          "type": "electronic"
+        }
+      ],
+      "subject": [
+        "Biochemistry",
+        "Molecular Biology",
+        "Computer Science Applications"
+      ],
+      "article-number": "147",
+      "id": "z3I2IudI"
+    },
+    "citation_id": "z3I2IudI"
+  },
+  "doi:10.1145/2783258.2783304": {
+    "source": "doi",
+    "identifer": "10.1145/2783258.2783304",
+    "standard_citation": "doi:10.1145/2783258.2783304",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            1
+          ]
+        ],
+        "date-time": "2017-04-01T03:07:19Z",
+        "timestamp": 1491016039538
+      },
+      "publisher-location": "New York, New York, USA",
+      "reference-count": 28,
+      "publisher": "ACM Press",
+      "license": [
+        {
+          "URL": "http://www.acm.org/publications/policies/copyright_policy#Background",
+          "start": {
+            "date-parts": [
+              [
+                2015,
+                8,
+                10
+              ]
+            ],
+            "date-time": "2015-08-10T00:00:00Z",
+            "timestamp": 1439164800000
+          },
+          "delay-in-days": 221,
+          "content-version": "vor"
+        }
+      ],
+      "funder": [
+        {
+          "DOI": "10.13039/100000002",
+          "name": "National Institutes of Health",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "R01 LM010730,HG002516-09"
+          ]
+        },
+        {
+          "DOI": "10.13039/100000001",
+          "name": "National Science Foundation",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "IIS-0953662,DBI-1147134,DBI-1350258"
+          ]
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [],
+      "published-print": {
+        "date-parts": [
+          [
+            2015
+          ]
+        ]
+      },
+      "DOI": "10.1145/2783258.2783304",
+      "type": "paper-conference",
+      "created": {
+        "date-parts": [
+          [
+            2015,
+            8,
+            7
+          ]
+        ],
+        "date-time": "2015-08-07T15:38:27Z",
+        "timestamp": 1438961907000
+      },
+      "source": "Crossref",
+      "is-referenced-by-count": 7,
+      "title": "Deep Model Based Transfer and Multi-Task Learning for Biological Image Analysis",
+      "prefix": "10.1145",
+      "author": [
+        {
+          "given": "Wenlu",
+          "family": "Zhang",
+          "affiliation": []
+        },
+        {
+          "given": "Rongjian",
+          "family": "Li",
+          "affiliation": []
+        },
+        {
+          "given": "Tao",
+          "family": "Zeng",
+          "affiliation": []
+        },
+        {
+          "given": "Qian",
+          "family": "Sun",
+          "affiliation": []
+        },
+        {
+          "given": "Sudhir",
+          "family": "Kumar",
+          "affiliation": []
+        },
+        {
+          "given": "Jieping",
+          "family": "Ye",
+          "affiliation": []
+        },
+        {
+          "given": "Shuiwang",
+          "family": "Ji",
+          "affiliation": []
+        }
+      ],
+      "member": "320",
+      "container-title": "Proceedings of the 21th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining - KDD '15",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2016,
+            12,
+            7
+          ]
+        ],
+        "date-time": "2016-12-07T05:01:49Z",
+        "timestamp": 1481086909000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2015
+          ]
+        ]
+      },
+      "references-count": 28,
+      "URL": "http://dx.doi.org/10.1145/2783258.2783304",
+      "relation": {
+        "cites": []
+      },
+      "id": "HlDY7trA"
+    },
+    "citation_id": "HlDY7trA"
+  },
+  "url:http://genome.cshlp.org/content/7/9/861.long": {
+    "source": "url",
+    "identifer": "http://genome.cshlp.org/content/7/9/861.long",
+    "standard_citation": "url:http://genome.cshlp.org/content/7/9/861.long",
+    "citeproc": {
+      "URL": "http://genome.cshlp.org/content/7/9/861.long",
+      "type": "webpage",
+      "id": "r9LaRSnB"
+    },
+    "citation_id": "r9LaRSnB"
   }
 }
