@@ -1,6 +1,10 @@
 ## Discussion
 
-
+Despite the disparate data types and scientific goals in the learning tasks
+covered above, several challenges are broadly important for deep learning in the
+biomedical domain.  We present factors that may impede further progress,
+initial steps that have been taken to address them, and suggested research
+practices to overcome these obstacles.
 
 ### Evaluation
 
