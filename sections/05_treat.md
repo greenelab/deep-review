@@ -346,7 +346,7 @@ architectures and expanded public datasets to advance the state of the art and
 convincingly demonstrate superiority over traditional cheminformatics
 techniques. Fortunately, there has recently been significant progress in this
 direction. The DeepChem software [@tag:AltaeTran2016_one_shot
-@url:https://github.com/deepchem/deepchem] and MoleculeNet benchmarking suite
+@tag:DeepChem] and MoleculeNet benchmarking suite
 [@tag:Wu2017_molecule_net] built upon it contain chemical bioactivity and
 toxicity prediction datasets, multiple compound featurization approaches
 including graph convolutions, and various machine learning algorithms ranging
