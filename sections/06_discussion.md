@@ -25,6 +25,8 @@ it is easy to tell when deep learning has produced a breakthrough because
 human-level performance is an impressive baseline.  In many tasks we reviewed,
 human-level performance is irrelevant.*
 
+`TODO: draft coming May 4 or 5`
+
 ### Interpretation
 
 As the challenge of interpretability is common across many domains, there is
@@ -70,16 +72,43 @@ interpretable healthcare features from trained deep models.
 
 ### Data limitations
 
-*Related to evaluation, are there data quality issues in genomic, clinical, and
-other data that make this domain particularly challenging?  Are these worse than
-what is faced in other non-biomedical domains?*
+A lack of large-scale, high-quality, labeled training data has impacted deep
+learning in nearly all applications we have discussed, from healthcare to
+genomics to drug discovery.  The challenges of training complex, high-parameter
+neural networks from few examples are obvious, but uncertainty in the labels of
+training instances can be just as problematic.  In genomics, for example,
+labeled data may be derived from an experimental assay that has known and
+unknown technical artifacts, biases, and error profiles.  It is possible to
+weight training examples or construct Bayesian models to account for uncertainty
+in the data, but this is rarely done in practice. `TODO: Is this even true?
+Would like feedback here.`
 
-*Many applications have used relatively small training datasets.  We might
-discuss workarounds (e.g. semi-synthetic data, splitting instances, etc.) and
-how this could impact future progress.  Might this be why some studies have
-resorted to feature engineering instead of learning representations from low-
-level features?  Is there still work to be done in finding the right low-level
-features in some problems?*
+For some types of data, especially images, it is straightforward to augment
+training datasets by splitting one labeled example into multiple examples. An
+image can easily be rotated or inverted and retain its label `TODO: does someone
+have examples to cite here? Issue #163?`.  3D MRI and 4D fMRI (with time as a
+dimension) data can be decomposed into sets of 2D images [@doi:10.1101/070441].
+This greatly expands the number of training examples in domains where only
+hundreds of subjects are available but artificially treats images from the same
+volume as independent instances.  CellCnn trains a model to recognize rare cell
+populations in single-cell data by creating training instances that consist of
+random subsets of cells that are randomly sampled with replacement from the
+full dataset [@tag:Arvaniti2016_rare_subsets].
+
+Simulated or semi-synthetic training data has also been employed in multiple
+biomedical domains. `TODO:  simulated data: #5 #99 #293, maybe #117 and #197.
+There is a counter-example from drug discovery to include as well
+that is related to #55`
+
+Multimodal, multi-task, and transfer learning, discussed in detail below, can
+also combat data limitations to some degree.  There are also emerging
+network architectures, such as Diet Networks for high-dimensional SNP data
+[@tag:Romero2017_diet], that drastically reduce the number of free parameters
+by predicting parameters (weights) as a function of each SNP's embedding
+in some feature space instead of directly optimizing a weight for each SNP.
+`TODO: not very familiar with this paper, can someone describe it better?`
+
+`TODO: didn't comment on hand-coded versus learned features`
 
 ### Hardware limitations and scaling
 
