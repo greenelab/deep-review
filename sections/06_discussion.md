@@ -35,7 +35,7 @@ interpretability is important for trust: if a model making is medical diagnoses,
 it is important to ensure the model is making decisions for reliable
 reasons and is not focusing on an artifact of the data.
 A motivating example of this can be found in Caruana et al.
-(https://dl.acm.org/citation.cfm?id=2788613),
+[@tag:Caruana2014_need],
 where a model trained to predict the likelihood of death from pneumonia assigned
 lower risk to patients with asthma - but only because such patients were
 treated as higher priority by the hospital. In the context of deep learning,
@@ -58,28 +58,33 @@ into perturbation-based approaches and backpropagation-based approaches.
 ##### Perturbation-based approaches
 
 These approaches make perturbations to individual inputs and observes
-the impact on the output of the network. Zhou & Troyanskaya <cite> scored
+the impact on the output of the network. Zhou & Troyanskaya
+[@tag:Zhou2015_deep_sea] scored
 genomic sequences by introducing virtual
 mutations at each position and quantifying the change in the output.
-<LIME people> introduced LIME which constructs a linear model to
+Ribeiro et al. [@tag:Ribeiro2016_lime] introduced LIME which constructs
+a linear model to
 locally approximate the output
 of the network on perturbed versions of the input and assigned importance
-scores accordingly. For analyzing images, Zeiler & Fergus <cite> applied
+scores accordingly. For analyzing images, Zeiler & Fergus
+[@tag:Zeiler2013_visualizing] applied
 constant-value masks to different input patches and studied the changes in
 the activations of later layers. As an alternative to using masks, which can
-produce misleading results, Zintgraf et al. proposed a novel strategy based
+produce misleading results, Zintgraf et al. [@tag:Zintgraf2017_visualizing]
+proposed a novel strategy based
 on marginalizing over plausible values of an input patch to more accurately
 estimate its contribution.
 
 A common drawback to perturbation-based approaches is computational efficiency:
 each perturbed version of an input requires a separate forward propagation
-through the network to compute the output. As noted by Shrikumar et al., such
+through the network to compute the output. As noted by Shrikumar et al.
+[@tag:Shrikumar2017_learning], such
 methods may also underestimate the impact of features that have saturated their
 contribution to the output, as can happen when multiple redundant features
 are present.
 
 To reduce the computational overhead of perturbation-based approaches,
-Ruth & Vedaldi (2017) <cite> solve an optimization problem using
+Fong & Vedaldi [@tag:Fong2017_perturb] solve an optimization problem using
 gradient descent to discover a minimal subset
 of inputs to perturb in order to decrease the predicted probability of a
 selected class. When tested on image data,
@@ -94,22 +99,28 @@ A second strategy for addressing the computational inefficiency of
 perturbation-based approaches is to propagate an important signal from
 a target output neuron backwards through the layers to the input layer
 in a single backpropagation-like pass. A classic example of this
-calculating the gradients of the output w.r.t. the input <cite Simonyan>
-to compute a 'saliency map'. Bach et al. 2015
- <cite> proposed a strategy called Layerwise Relevance Propagation, which was
+calculating the gradients of the output w.r.t. the input
+ [@tag:Simonyan2013_deep]
+to compute a 'saliency map'. Bach et al. [@tag:Bach2015_on]
+ proposed a strategy called Layerwise Relevance Propagation, which was
  shown to be equivalent to the elementwise product of the gradient and
- input <cite>. Several variants of gradients exist which differ
+ input [@tag:Shrikumar2016_not, @tag:Kindermans2016_investigating].
+Several variants of gradients exist which differ
 in their handling of the ReLU nonlinearity: while gradients zero-out the
 importance signal at ReLUs if the input to the ReLU is negative,
-deconvolutional networks <cite> zero-out the importance signal if
- the signal itself is negative. Guided backpropagation <cite>
+deconvolutional networks [@tag:Zeiler2013_visualizing]
+zero-out the importance signal if
+ the signal itself is negative. Guided backpropagation
+ [@tag:Springenberg2014_striving]
  combines the two strategies to zero-out the importance signal if either
  the input to ReLU is negative or the importance signal is negative,
  in effect discarding negative gradients.
- However, <cite> showed that while guided backpropagation excelled at
+ However, Mahendran & Vedaldi [@tag:Mahendran2016_salient]
+ showed that while guided backpropagation excelled at
  identifying salient features in the input image, these features showed little
  class-specificity, producing very similar saliency maps regardless
- of the class under consideration. <cite> attempted to alleviate this
+ of the class under consideration. Selvaraju et al. [@tag:Selvaraju2016_grad]
+ attempted to alleviate this
  by combining gradients and guided backpropagation
  in Guided Grad-CAM: feature maps in the last convolutional layer were
  associated with classes using gradients, and the weighted activation of
@@ -120,27 +131,31 @@ deconvolutional networks <cite> zero-out the importance signal if
 
 To address the saturation failure mode, strategies have been developed
  to consider how the output changes between some reference input
- and the actual input, where the reference input represents a 'null' input that it
+ and the actual input, where the reference input represents a 'null'
+ input that it
  is informative to measure differences against.
- Sundararajan et al., 2016 <cite> integrated the
+ Sundararajan et al. [@tag:Sundararajan2017_axiomatic] integrated the
  gradients as the input was linearly increased from the reference to its
  actual value (in their examples, which were on image-like data, they
- used a reference of all zeros). While the numerical integration adds computational
- overhead, the method is still more efficient on average than perturbation approaches.
+ used a reference of all zeros). While the numerical integration
+ adds computational
+ overhead, the method is still more efficient on average
+ than perturbation approaches.
  Further, by relying only on the gradients, the method is a fully black-box
  approach that is guaranteed to give the same answer for functionally
- equivalent networks. Shrikumar et al., 2017 <cite> developed DeepLIFT,
+ equivalent networks. Shrikumar et al., 2017 [@tag:Shrikumar2017_learning]
+ developed DeepLIFT,
  a strategy that used the difference
  between a neuron's activation on the reference input compared to its
- activation on theactual
+ activation on the actual
  input to improve the backpropagation of importance scores. DeepLIFT is
  a white-box method that requires knowledge of the network architecture,
  but it is more computationally efficient than integrated gradients.
- Lundberg & Lee., 2016 <cite> noted that
+ Lundberg & Lee [@tag:Lundberg2016_an] noted that
  several importance scoring methods, including DeepLIFT,
  integrated gradients and LIME,
  could all be considered
- approximations to the Shapely values <cite>, which have a long history
+ approximations to the Shapely values, which have a long history
  in game theory for assigning contributions to players in cooperative games. 
  DeepLIFT introduced a modification which treated positive and negative
  contributions separately to address some failure cases of
@@ -276,9 +291,11 @@ It can often be informative to understand how the training data
 
 A more free-form approach to interpretability is to visualise
  the activation patterns of the network on individual inputs and on
- subsets of the data. ActiVis, developed at Facebook,
- <cite https://arxiv.org/pdf/1704.01942.pdf> enables interactive
- visualisation and exploration of industry-scale
+ subsets of the data. ActiVis and CNNvis
+ <cite https://arxiv.org/pdf/1704.01942.pdf and
+  https://arxiv.org/pdf/1604.07043.pdf> are two frameworks that
+ enable interactive
+ visualisation and exploration of large-scale
  deep learning models.
 
 An orthogonal strategy is to use a knowledge distillation approach

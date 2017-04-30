@@ -7,6 +7,7 @@ blast	doi:10.1016/S0022-2836(05)80360-2
 Angermueller2016_single_methyl	doi:10.1186/s13059-017-1189-z
 Artemov2016_clinical	doi:10.1101/095653
 Arvaniti2016_rare_subsets	doi:10.1101/046508
+Bach2015_on doi:10.1371/journal.pone.0130140
 Baskin2015_drug_disc	doi:10.1080/17460441.2016.1201262
 Barash2010_splicing_code	doi:10.1038/nature09000
 Baxt1991_myocardial	doi:10.7326/0003-4819-115-11-843
@@ -16,6 +17,7 @@ Bergstra2012_random	url:http://dl.acm.org/citation.cfm?id=2188395
 Boza	arxiv:1603.09195
 Buggenthin2017_imaged_lineage	doi:10.1038/nmeth.4182
 Caruana2014_need	arxiv:1312.6184
+Caruana2015_intelligible	https://dl.acm.org/citation.cfm?id=2788613
 Che2015_distill	arxiv:1512.03542
 Che2016_rnn	arxiv:1606.01865
 Chen2015_hashing	arxiv:1504.04788
@@ -69,6 +71,7 @@ Kearnes2016_admet	arxiv:1606.08793
 Kearnes2016_graph_conv	doi:10.1007/s10822-016-9938-8
 Keras	url:https://github.com/fchollet/keras
 Kizek	doi:10.1016/j.bjid.2015.08.013
+Kindermans2016_investigating    arxiv:1611.07270
 Knights	doi:10.1111/j.1574-6976.2010.00251.x
 Koh2016_denoising	doi:10.1101/052118
 Krizhevsky2013_nips_cnn	url:https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf
@@ -85,9 +88,11 @@ Liu	doi:10.1371/journal.pone.0097958
 Liu2016_sc_transcriptome	doi:10.12688/f1000research.7223.1
 Lodato2015_neurons	doi:10.1126/science.aab1785
 lmat	doi:10.1093/bioinformatics/btt389
+Lundberg2016_an arxiv:1611.07478
 Lusci2015_irv	doi:10.1186/s13321-015-0110-6
 Lusci2013_rnn	doi:10.1021/ci400187y
 Ma2015_qsar_merck	doi:10.1021/ci500747n
+Mahendran2016_salient   url:https://www.robots.ox.ac.uk/~vedaldi/assets/pubs/mahendran16salient.pdf
 Mapreduce	doi:10.1145/1327452.1327492
 Mayr2016_deep_tox	doi:10.3389/fenvs.2015.00080
 McHardy	doi:10.1038/nmeth976
@@ -121,13 +126,17 @@ Scotti2016_missplicing	doi:10.1038/nrg.2015.3
 Segata	doi:10.1371/journal.pcbi.1004977
 Seide2014_parallel	doi:10.1109/ICASSP.2014.6853593
 Setty2015_seqgl	doi:10.1371/journal.pcbi.1004271
+Selvaraju2016_grad  arxiv:1610.02391
 Shaham2016_batch_effects	arxiv:1610.04181
-Shrikumar2016_blackbox	arxiv:1605.01713
+Shrikumar2017_learning	arxiv:1704.02685
+Shrikumar2016_not   arxiv:1605.01713
+Simonyan2013_deep   arxiv:1312.6034
 Singh2016_deepchrome	arxiv:1607.02078
 Silver2016_alphago	doi:10.1038/nature16961
 Sonderby	arxiv:1503.01919
 Soueidan	doi:10.1515/metgen-2016-0001
 Spark	doi:10.1145/2934664
+Springenberg2014_striving   arxiv:1412.6806
 Stein2010_cloud	doi:10.1186/gb-2010-11-5-207
 Stenstrom2005_latent	doi:10.2337/diabetes.54.suppl_2.S68
 Stormo2000_dna	doi:10.1093/bioinformatics/16.1.16
@@ -135,6 +144,7 @@ Stratnikov	doi:10.1186/2049-2618-1-11
 Su2015_gpu	arxiv:1507.01239
 Subramanian2016_bace1	doi:10.1021/acs.jcim.6b00290
 Sun2016_ensemble	arxiv:1606.00575
+Sundararajan2017_axiomatic  arxiv:1703.01365
 Sutskever	arxiv:1409.3215
 Swamidass2009_irv	doi:10.1021/ci8004379
 Tan2014_psb	doi:10.1142/9789814644730_0014
@@ -158,3 +168,5 @@ Xiong2015_splicing_code	doi:10.1126/science.1254806
 Yasushi2016_cgbvs_dnn	doi:10.1002/minf.201600045
 yok	doi:10.1186/1471-2105-12-20
 Zhou2015_deep_sea	doi:10.1038/nmeth.3547
+Zeiler2013_visualizing  arxiv:1311.2901 
+Zintgraf2017_visualizing    arxiv:1702.04595
