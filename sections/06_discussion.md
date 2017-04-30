@@ -90,10 +90,11 @@ have examples to cite here? Issue #163?`.  3D MRI and 4D fMRI (with time as a
 dimension) data can be decomposed into sets of 2D images [@doi:10.1101/070441].
 This greatly expands the number of training examples in domains where only
 hundreds of subjects are available but artificially treats images from the same
-volume as independent instances.  CellCnn trains a model to recognize rare cell
-populations in single-cell data by creating training instances that consist of
-random subsets of cells that are randomly sampled with replacement from the
-full dataset [@tag:Arvaniti2016_rare_subsets].
+volume as independent instances and sacrifices the structure inherent in the
+data.  CellCnn trains a model to recognize rare cell populations in single-cell
+data by creating training instances that consist of random subsets of cells that
+are randomly sampled with replacement from the full dataset
+[@tag:Arvaniti2016_rare_subsets].
 
 Simulated or semi-synthetic training data has also been employed in multiple
 biomedical domains. `TODO:  simulated data: #5 #99 #293, maybe #117 and #197.
