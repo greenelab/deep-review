@@ -25,6 +25,9 @@ specific content to present.  Others may be important areas where we lack
 expertise, in which case we may acknowledge the application area but not
 dive into merits or weaknesses of individual methods.*
 
+`TODO: dropped signaling subsection, decide whether to discuss in intro
+and why it has received less attention, @tag:Chen2015_trans_species as example`
+
 ### Gene expression
 
 Gene expression measurements characterize the abundance of many thousands of
@@ -259,10 +262,10 @@ in this area since the DeepBind paper. In particular, add
 [#215](https://github.com/greenelab/deep-review/issues/215),
 and [#258](https://github.com/greenelab/deep-review/issues/258).`
 
-### Promoters, enhancers, and related epigenomic tasks
+`TODO: cut RNA-binding proteins from above section, refer to representative
+papers`
 
-*We may want to be selective about what we discuss and not list every
-application in this area.*
+### Promoters, enhancers, and related epigenomic tasks
 
 `TODO: There's inevitably a lot of overlap been this and the transcription
 binding section. Maybe in the long term think about restructuring to one big
@@ -526,11 +529,6 @@ However, current methods fail when proteins in question have almost no sequence 
 is an effective way to deal with this type of proteins or not except waiting for more sequence homologs.
 Finally, the deep learning methods summarized above also apply to interfacial contact prediction
 of a protein complex, but may be less effective since on average protein complexes have fewer sequence homologs.
-
-### Signaling
-
-*There is not much content here.  Can [@tag:Chen2015_trans_species] be covered
-elsewhere?*
 
 ### Morphological phenotypes
 
