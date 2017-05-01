@@ -169,23 +169,23 @@ is to find artifical inputs that produce similar hidden
 representations to a chosen example. This can elucidate the features
 that the network uses for prediction and drop the features that the
 network is insensitive to. In the context of natural images,
-Mahendran & Vedaldi, 2015
-<cite; 'Understanding deep image representations
-by inverting them'>
+Mahendran & Vedaldi [@tag:Mahendran2014_understanding] 
 introduced the "inversion" visualization which uses gradient descent and
 backpropagation to reconstruct the input from its hidden representation.
 The method required placing a prior on the input to favour results which
 resemble natural images. 
-For genomic sequence, <cite> used a MCMC algorithm to find the
+For genomic sequence, Finnegan & Song [@tag:Finnegan2017_maximum]
+ used a MCMC algorithm to find the
 maximum-entropy distribution of inputs that produced a similar hidden
 representation to the chosen input. 
 
 A related idea is 'caricaturization', where an initial image is altered to
 exaggerate patterns that the net searches for
-<cite 'Visualizing Deep Convolutional Neural Networks Using Natural
-Pre-images'>. This is done by maximizing
+[@tag:Mahendran2016_visualizing]. This is done by maximizing
 the response of neurons that are active in the network, subject to some
-regularizing constraints. <cite deep dream people> leveraged caricaturization to
+regularizing constraints. Mordvintsev et al.
+[@tag:Mordvintsev2015_inceptionism]
+leveraged caricaturization to
 generate aesthetically pleasing images using neural networks.
 
 #### Activation maximization
@@ -194,10 +194,13 @@ Activation maximization can reveal patterns
 detected by an individual neuron in the network by generating
 images which maximally activate that neuron, subject
 to some regularizing constraints. This technique was first introduced
-in Ehran et al., (2009) and applied in Simonyan et al. (2014) <cite>,
-Mordvintsev et al. (2015) <cite>,
-Yosinksi et al. (2015) and Mahendran & Vedaldi (2016). Lanchatin et al. (2016)
-<cite https://arxiv.org/abs/1608.03644> applied activation maximization to
+in Ehran et al. [@tag:Ehran2009_visualizing]
+ and applied in Simonyan et al. [@tag:Simonyan2013_deep],
+Mordvintsev et al. [@tag:Mordvintsev2015_inceptionism],
+Yosinksi et al. [@tag:Yosinksi2015_understanding]
+ and Mahendran & Vedaldi [Mahendran2016_visualizing].
+ Lanchantin et al. [@tag:Lanchantin2016_motif]
+ applied activation maximization to
 genomic sequence. One drawback of
 this approach is that neural networks often learn highly distributed
 representations where several neurons cooperatively describe a pattern
@@ -214,16 +217,14 @@ The most common form of interpretability provided by RNNs is through
 attention mechanisms, which have been used in diverse problems such
 as image captioning and
 machine translation to select portions of the input to focus on for generating
-a particular output <cite NMT: https://arxiv.org/abs/1409.0473,
-and image captioning: https://arxiv.org/pdf/1502.03044.pdf>.
- Deming et al., <cite: https://arxiv.org/abs/1605.07156>
+a particular output [@tag:Bahdanu2014_neural, @tag:Xu2015_show].
+ Deming et al. [@tag:Deming2016_genetic] 
  applied the attention mechanism to models trained on genomic sequence.
  Attention mechanisms provide insight into the model's
  decision-making process by revealing which portions of the input are
  used by different outputs.
  In the clinical domain,
- Choi et al. (2016)
- <cite https://arxiv.org/pdf/1608.05745.pdf>
+ Choi et al. [@tag:Choi2016_retain] 
  leveraged attention mechanisms to highlight which aspects of
  a patient's medical history were most relevant for making
  diagnoses. Choi et al. [@tag:Choi2016_gram] later extended this work to
@@ -236,19 +237,19 @@ and image captioning: https://arxiv.org/pdf/1502.03044.pdf>.
 
 Visualizing the activation patterns of the hidden state of a
  recurrent neural network can also be instructive.
- Early work by Ghosh & Karamcheti (1992)
- <cite http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=993054>
- used cluster analysis to study comparatively small hidden states of
+ Early work by Ghosh & Karamcheti
+ [@tag:Ghosh1992_sequence] used cluster analysis to study hidden states of
+comparatively small 
  networks trained to recognise strings from a finite state machine.
- More recently, Karpathy et al. (2015)
-<cite https://arxiv.org/abs/1506.02078> showed the existence of individual
+ More recently, Karpathy et al. [@tag:Karpathy2015_visualizing]
+ showed the existence of individual
 cells in LSTMs that kept track of quotes and brackets in character-level
  language models. To facilitate such analyses, LSTM vis
- <cite https://arxiv.org/abs/1606.07461> allows
+ [@tag:Strobelt2016_visual] allows
  interactive exploration of the hidden state of LSTMs on different inputs.
 
-Another strategy, adopted by Lanchatin et al., 2016
-<cite https://arxiv.org/pdf/1608.03644.pdf> looks at how the output of
+Another strategy, adopted by Lanchatin et al. [@tag:Lanchantin2016_motif]
+ looks at how the output of
  a recurrent neural network changes as longer and longer subsequences
  are supplied as input to the network,  where the subsequences begin
  with just the first position and end with the entire sequence.
@@ -258,17 +259,18 @@ which are responsible for flipping
  bidirectional, the same process can be repeated on the reverse sequence.
  As noted by the authors, this approach was less effective at
  identifying motifs compared to the gradient-based
-  backpropagation approach of Simonyan et al., illustrating the need
+  backpropagation approach of Simonyan et al. [@tag:Simonyan2013_deep]
+ illustrating the need
  for more sophisticated strategies to assign importance scores in
  recurrent neural networks.
 
-Murdoch & Szlam <cite https://arxiv.org/pdf/1702.02540.pdf>
+Murdoch & Szlam [@tag:Murdoch2017_automatic]
  showed that the output of an LSTM can be decomposed into a product
  of factors where each factor can be interpreted as the contribution
  at a particular
  timestep. The contribution scores were then used to identify
  key phrases from a model trained to do sentiment analysis, and obtained
- superior results compared to a gradient-based approach.
+ superior results compared to scores derived via a gradient-based approach.
 
 #### Miscellaneous approaches
 
@@ -277,13 +279,12 @@ predictions, there has been a renewed interest in confidence intervals for
 deep neural networks. Early work from Chryssolouris et al
 [@tag:Chryssolouris1996_confidence] provided confidence intervals under the
  assumption of normally distributed error. A more recent technique
- known as test-time dropout <cite https://arxiv.org/abs/1506.02142>
-can also be
-used to obtain a probabilistic interpretation  of a network's outputs.
+ known as test-time dropout [@tag:Gal2015_dropout] can also be
+used to obtain a probabilistic interpretation of a network's outputs.
 
 It can often be informative to understand how the training data
  affects the learning of a model. Toward this end,
- Koh & Liang <cite https://arxiv.org/pdf/1703.04730.pdf> used
+ Koh & Liang [@tag:Koh2017_understanding] used
  influence functions, a technique from robust statistics, to
  trace a model's predictions back through the learning algorithm to identify
  the datapoints in the training set that had the most impact on a given
@@ -292,8 +293,7 @@ It can often be informative to understand how the training data
 A more free-form approach to interpretability is to visualise
  the activation patterns of the network on individual inputs and on
  subsets of the data. ActiVis and CNNvis
- <cite https://arxiv.org/pdf/1704.01942.pdf and
-  https://arxiv.org/pdf/1604.07043.pdf> are two frameworks that
+ [@tag:Kahng2017_activis, @tag:Liu2016_towards] are two frameworks that
  enable interactive
  visualisation and exploration of large-scale
  deep learning models.
@@ -305,8 +305,8 @@ An orthogonal strategy is to use a knowledge distillation approach
  interpretable healthcare features from trained deep models.
 
 Finally, it is sometimes possible to train the model to
- provide justifications for its predictions. Lei et al.,
- <cite https://arxiv.org/abs/1606.04155> used a generator to identify
+ provide justifications for its predictions. Lei et al.
+ [@tag:Lei2016_rationalizing] used a generator to identify
  "rationales", which are short and coherent pieces of the input text that
  produce similar results to the whole input when passed through an encoder.
  The authors applied their approach to a sentiment analysis task
