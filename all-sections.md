@@ -798,6 +798,9 @@ specific content to present.  Others may be important areas where we lack
 expertise, in which case we may acknowledge the application area but not
 dive into merits or weaknesses of individual methods.*
 
+`TODO: dropped signaling subsection, decide whether to discuss in intro
+and why it has received less attention, @rmjDc5rm as example`
+
 ### Gene expression
 
 Gene expression measurements characterize the abundance of many thousands of
@@ -1030,10 +1033,10 @@ in this area since the DeepBind paper. In particular, add
 [#215](https://github.com/greenelab/deep-review/issues/215),
 and [#258](https://github.com/greenelab/deep-review/issues/258).`
 
-### Promoters, enhancers, and related epigenomic tasks
+`TODO: cut RNA-binding proteins from above section, refer to representative
+papers`
 
-*We may want to be selective about what we discuss and not list every
-application in this area.*
+### Promoters, enhancers, and related epigenomic tasks
 
 `TODO: There's inevitably a lot of overlap been this and the transcription
 binding section. Maybe in the long term think about restructuring to one big
@@ -1292,11 +1295,6 @@ However, current methods fail when proteins in question have almost no sequence 
 is an effective way to deal with this type of proteins or not except waiting for more sequence homologs.
 Finally, the deep learning methods summarized above also apply to interfacial contact prediction
 of a protein complex, but may be less effective since on average protein complexes have fewer sequence homologs.
-
-### Signaling
-
-*There is not much content here.  Can [@rmjDc5rm] be covered
-elsewhere?*
 
 ### Morphological phenotypes
 
@@ -1589,9 +1587,9 @@ features simply by its ability to optimize a complex model against data.
 
 ## The impact of deep learning in treating disease and developing new treatments
 
-*There will be some overlap with the Categorize section, and we may have to
-determine which methods categorize individuals and which more directly match
-patients with treatments.  The sub-section titles are merely placeholders.*
+`TODO: write Treat intro`
+`TODO: Add representative papers about Modeling Metabolism and Chemical
+Reactivity`
 
 ### Categorizing patients for clinical decision making
 
@@ -1966,10 +1964,6 @@ of complex physics (e.g. quantum physics example)?`
 `TODO: link to drug repurposing section above,  DeepDTIs uses ECFPs as
 features for its 1412 compounds and protein sequence composition (PSCs)
 features for its targets (1520).`
-
-### Modeling Metabolism and Chemical Reactivity
-
-*Add a review here of metabolism and chemical reactivity.*
 
 
 ## Discussion
