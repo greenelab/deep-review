@@ -33,6 +33,121 @@ learning methods more challenging or less fruitful to apply.
 
 ### What is deep learning?
 
+One version:
+`TODO: this section needs citations`
+
+Deep Learning is a collection of new techniques that together have recently
+demonstrated breakthrough gains over existing approaches in several fields. It
+is built on a very old idea, neural networks, that was first proposed in 1943
+[@doi:10.1007/BF02478259] as a model for how biological brains process
+information. Since then, interest in neural networks a computational models has
+waxed and waned several times. This history is interesting in its own right
+[@doi:10.1103/RevModPhys.34.135], but in recent years, with the advances of Deep
+Learning, attention has shifted back.
+
+Several important advances make the current surge of work done in this area
+possible.
+
+First, several easy to use software packages now enable a much broader range of
+scientists to build and train complicated models. In the past, neural networks
+required very specialized knowledge to  build and modify, including the ability
+to robustly code differentials of matrix  expressions. Errors here are often
+subtle and difficult to detect, so it could be  very difficult to tailor
+networks to specific problems without substantial experience and training. Now,
+however, with these new packages, even very complex neural networks  are
+automatically differentiated, and high level scripting instructions can
+transparently run very efficiently on GPUs. The technology has progressed to the
+point that even algorithms can be differentiated `TODO: cite neural stack and
+neural memory papers`.
+
+Second, key technical insight has been uncovered that guides the construction of
+much more complicated networks that previously possible. In the past, most
+neural networks  included just a single network. A network with an arbitrary
+number of hidden nodes, but  just a single layer, can learn arbitrarily complex
+functions. And networks with more than one hidden layer (deep networks), were
+hard to train. However, it turns out, deep networks can more efficiently
+represent many tasks when they are built to mirror the underlying structure of
+the data. Moreover, deep networks are more robust and trainable when employing
+several architectural innovations: weight replication, better behaved
+non-linearities like rectified-linear units, residual networks, and better
+weight initialization, and persistent memory. `TODO: excessive jargon` Likewise
+the central role of dimensionality reduction as a strength of neural networks
+was elucidated, and this has motivated designs built to capitalize on this
+strength `TODO: cite autoencoders and word2vec`.
+
+Third, several advances in training algorithms have enabled applications of
+neural networks in ways not obviously possible. The number of training
+strategies for deep learning is growing rapidly and a complete review is beyond
+our scope. But these algorithms can train networks in domains where earlier
+algorithms struggled.  For example, newer optimizers can very efficiently learn
+using batched training, where only a portion of the data needs to be processed
+at a time. These optimizers more effectively optimize very large weight vectors
+where many weights are only rarely updated. `TODO: awkward phrasing` Noise
+contrastive error has proven particularly useful in modeling language.
+Reinforcement learning has enabled neural networks to learn how to play games
+like chess, GO, and poker. Curriculum learning enables networks to gradually
+build up expertise to solve particularly challenging algorithmic problems.
+Dropout nodes and layers make networks much more robust, even when the number of
+weights are dramatically increased. `TODO: jargon`
+
+Fourth, the convergence of these factors currently makes deep learning extremely
+adaptable, and capable  of addressing the nuanced differences of each domain to
+which it is applied. Many of the advances in deep learning were first developed
+for image analysis and text analysis, but the lessons and techniques learnt
+there enable the construction of very powerful models specifically suited to the
+challenges presented by  each unique domain.
+
+### Deep learning in scientific inquiry
+
+Given the intrinsic flexibility of deep learning, it is important to consider
+the specific values and goals that are particularly important in scientific
+inquiry.
+
+First, in scientific contexts understanding the patterns in the data may be just
+as important as fitting the data. For this reason, interpretability can be more
+important here than other domains. Scientific work often aims to understand the
+underlying principles behind the data we see, and architectures and techniques
+that expose the non-obvious patterns in the data are particularly important and
+very active area of research `TODO: cite examples from all sections`.
+
+Second, there are important and pressing questions about how to build networks
+that can efficiently represent  the underlying logic of the data. This concern
+of "representability" is important, because it gives insight into the structure
+of scientific data, and when understood can guide the design of more efficient
+and effective networks. For example, one particularly important study
+demonstrates that a simple neural network can very efficiently and accurately
+model (i.e. represent) a theoretically important quantum mechanical system
+[@doi:10.1126/science.aag2302].
+
+Third, science is full of domain expertise, where there are deep traditions of
+thought stretching back decades and even centuries. Deep learning will always be
+in dialogue with this expertise, to understand the key problems, encode the most
+salient prior knowledge, and understand how to judge success or failure. There
+is a great deal of excitement about deep learning, but in most scientific
+corners careful thought needs to be put into bringing deep learning alongside
+existing experts and efforts. `TODO: appropriate comparisons with state of the
+art`
+
+Fourth, data availability and complexity is unevenly distributed across science.
+Some areas of science like genomics and particle physics are swamped in
+petabytes and exobytes of high quality data. `TODO: not just amount of data`
+Others, like chemistry, are comparatively data poor with well developed domain
+specific and effective algorithms. These differences become consequential and
+define the most successful approaches. For example, the convergence of lower
+amounts of data and important nuances to the domain might favor lower parameter
+networks that incorporate domain specific knowledge and fuse data of multiple
+different types. This flexibility, remember, is one of the most striking
+strengths of neural networks. In the long run, which strategies will be the most
+effective is an open question, but in this time of creative experimentation
+optimism is justified.
+
+None of these concerns should dampen enthusiasm about deep learning. Rather,
+because the approaches offer such great flexibility, there is good reason to
+believe that carefully defined networks might enable important scientific
+advances.
+
+Another version:
+
 Deep learning is built on a biologically-inspired approach from machine learning
 termed neural networks. Each neuron in a computational neural network, termed a
 node, has inputs, an activation function, and outputs. Each value from the
@@ -155,10 +270,13 @@ drug interactions or predict drug response. One recent approach for
 predicting drug response is the use of protein structure to predict drug
 interactions and drug bioactivity through CNN [@arxiv:1510.02855]. Since CNNs
 leverage spatial relationships within the data, this particular deep learning
-framework is well suited to the problem. Drug discovery and drug
-"repurposing" are two other hot topics. Aliper et al. used transcriptomic
-data to predict which drugs might be repurposed for other diseases through
-deep fully connected neural networks
-[@doi:10.1021/acs.molpharmaceut.6b00248]. In a similar vein, Wang et al. used
-restricted boltzman machines (RBM) to predict drug molecular targets
-[@doi:10.1093/bioinformatics/btt234].
+framework is well suited to the problem. Drug repositioning is another active
+area of research. Aliper et al. used transcriptomic data to predict which drugs
+might be repurposed for other diseases through deep neural networks
+[@doi:10.1021/acs.molpharmaceut.6b00248]. Similarly, it was shown that
+restricted Boltzmann machines (RBM) can be combined into deep belief networks
+(DBNs) to predict novel drug - target interactions and formulate drug
+repositioning hypotheses [@doi:10.1093/bioinformatics/btt234
+@doi:10.1021/acs.jproteome.6b00618]. Finally, deep learning is also being
+succesfully used to prioritize chemicals in the early stages of drug discovery
+for new targets [@doi:10.1080/17460441.2016.1201262].
