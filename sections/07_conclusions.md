@@ -1,15 +1,60 @@
 ## Conclusions
 
-Final thoughts and future outlook here. The Discussion will give an overview
-and the Conclusion will provide a short, punchy take home message.
+Deep learning-based methods now represent the state of the art in a diverse
+array of tasks in patient and disease categorization, fundamental biological
+study, genomics, and treatment development.  We return to our central question:
+given this rapid progress, has deep learning transformed the study of human
+disease?  Though the answer is highly dependent on the specific domain and
+problem being addressed, we conclude that deep learning has not *yet* realized
+its transformative potential or induced a strategic inflection point.  Despite
+its dominance over competing machine learning approaches in many of the areas
+reviewed here and quantitative improvements in predictive performance, deep
+learning has not yet qualitatively "solved" those problems that were previously
+"unsolved".
 
-Points to mention based on discussion thus far that may make the bar for
-conclusions:
+As an analogy, consider recent progress in conversational speech recognition.
+Since 2009 there have been drastic performance improvements, with error rates
+dropping from more than 20% to less than 6% [@tag:Speech_recognition] and
+finally approaching or exceeding human performance in the past year
+[@arxiv:1610.05256 @arxiv:1703.02136] `TODO: working on a second source for this
+error trajectory from a talk by Eric Horvitz`. The phenomenal  improvements on
+benchmark datasets are undeniable, but the successes of the early 2010s did not
+fundamentally transform the domain. `TODO: this is debatable, maybe need a
+different example or to clarify what is meant by "conversational" speech`
+Widespread adoption of these technologies will requires not only improvements
+over baseline methods but truly "solving" the problem, in this case exceeding
+human-level performance, as well as convincing users to embrace the technology
+[@tag:Speech_recognition].  We see parallels to the healthcare domain, where
+achieving the full potential of deep learning will require outstanding
+predictive performance as well as adoption by biologists and clinicians.
 
-* Limitations of data & workarounds (availability impacts on amount, etc)
-* Transferability of features
-* Strong enthusiasm for unsupervised approaches.
-* Right to an explanation (possibly, depends if raised in multiple areas)
+Some of the areas we have discussed are closer to surpassing this lofty bar than
+others, generally those that are more similar to the non-biomedical tasks that
+are now monopolized by deep learning.  In medical imaging, diabetic retinopathy
+[@doi:10.1001/jama.2016.17216], diabetic macular edema
+[@doi:10.1001/jama.2016.17216], and skin lesion [@doi:10.1038/nature21056]
+classifiers are highly accurate and comparable to dermatologist performance in
+the latter case. `TODO: more imaging examples or other examples that might be at
+or close to "transformative"?`  In other domains, perfect accuracy will not be
+required because deep learning will be used primarily to prioritize experiments.
+For example, in chemical screening for drug discovery, a deep learning system
+that successfully identifies dozens or hundreds of target-specific, active
+small molecules from a massive search space would have immense practical value
+even if its overall precision is modest. Conversely, the most challenging tasks
+may be those in which predictions are used directly for downstream modeling or
+decision-making, especially in the clinic. `TODO: elaborate more on this idea
+or split in a new paragraph?`
+
+Even if deep learning in biology and healthcare is not yet transformative today,
+we are extremely optimistic about its future.  We have highlighted numerous
+challenges beyond improving training and predictive accuracy, such as preserving
+patient privacy and interpreting models.  Ongoing research has begun to address
+these problems and shown they are not insurmountable.  Deep learning offers the
+flexibility to model data in its most natural form, spurring creative modeling
+approaches that would be infeasible with other machine learning techniques.
+Unsupervised methods are currently less-developed than their supervised
+counterparts, making them an attractive target for future research in this
+domain.  `TODO: still working on a strong closing line`
 
 ### Author contributions
 
@@ -29,3 +74,5 @@ revisions; approved the final manuscript draft; and agreed to be accountable in
 all aspects of the work. Individuals who did not contribute in one or more of
 these ways, but who did participate, are acknowledged at the end of the
 manuscript.
+
+`TODO: update after finalizing discussion in #369`
