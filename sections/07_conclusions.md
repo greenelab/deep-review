@@ -2,7 +2,7 @@
 
 Deep learning-based methods now matches or surpasses the previous state of the
 art in a diverse array of tasks in patient and disease categorization,
-fundamental biological study, genomics, and treatment development.  We return to
+fundamental biological study, genomics, and treatment development.  Returning to
 our central question: given this rapid progress, has deep learning transformed
 the study of human disease?  Though the answer is highly dependent on the
 specific domain and problem being addressed, we conclude that deep learning has
