@@ -306,7 +306,7 @@ While prior (non-deep learning) approaches have made steady improvements on
 promoter prediction, there is little consensus on the best approach and
 performance is poor. Typically algorithms will recognize only half of all
 promoters, with an accompanying high false positive rate
-[@url:http://genome.cshlp.org/content/7/9/861.long].
+[@doi:10.1101/gr.7.9.861].
 Methods with better sensitivity generally do so at the cost of poorer
 specificity. Conventional identification of enhancers has leaned heavily on
 simple conservation or laborious experimental techniques, with only moderate
