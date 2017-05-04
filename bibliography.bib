@@ -1822,3 +1822,65 @@ rather to a more efficient use of model parameters.},
  year = {2016}
 }
 
+
+@article{M2OLWojE,
+ abstract = {Conversational speech recognition has served as a flagship speech recognition
+task since the release of the Switchboard corpus in the 1990s. In this paper, we measure the human error rate on the widely used NIST 2000 test set, and find
+that our latest automated system has reached human parity. The error rate of
+professional transcribers is 5.9% for the Switchboard portion of the data, in
+which newly acquainted pairs of people discuss an assigned topic, and 11.3% for
+the CallHome portion where friends and family members have open-ended
+conversations. In both cases, our automated system establishes a new state of
+the art, and edges past the human benchmark, achieving error rates of 5.8% and
+11.0%, respectively. The key to our system's performance is the use of various
+convolutional and LSTM acoustic model architectures, combined with a novel
+spatial smoothing method and lattice-free MMI acoustic training, multiple
+recurrent neural network language modeling approaches, and a systematic use of
+system combination.},
+ archiveprefix = {arXiv},
+ author = {W. Xiong and J. Droppo and X. Huang and F. Seide and M. Seltzer and A. Stolcke and D. Yu and G. Zweig},
+ eprint = {1610.05256v2},
+ file = {1610.05256v2.pdf},
+ link = {http://arxiv.org/abs/1610.05256v2},
+ month = {Nov},
+ primaryclass = {cs.CL},
+ title = {Achieving Human Parity in Conversational Speech Recognition},
+ year = {2016}
+}
+
+
+@article{wKioubsT,
+ abstract = {One of the most difficult speech recognition tasks is accurate recognition of
+human to human communication. Advances in deep learning over the last few years
+have produced major speech recognition improvements on the representative
+Switchboard conversational corpus. Word error rates that just a few years ago
+were 14% have dropped to 8.0%, then 6.6% and most recently 5.8%, and are now
+believed to be within striking range of human performance. This then raises two
+issues - what IS human performance, and how far down can we still drive speech
+recognition error rates? A recent paper by Microsoft suggests that we have
+already achieved human performance. In trying to verify this statement, we
+performed an independent set of human performance measurements on two
+conversational tasks and found that human performance may be considerably
+better than what was earlier reported, giving the community a significantly
+harder goal to achieve. We also report on our own efforts in this area, presenting a set of acoustic and language modeling techniques that lowered the
+word error rate of our own English conversational telephone LVCSR system to the
+level of 5.5%/10.3% on the Switchboard/CallHome subsets of the Hub5 2000
+evaluation, which - at least at the writing of this paper - is a new
+performance milestone (albeit not at what we measure to be human performance!).
+On the acoustic side, we use a score fusion of three models: one LSTM with
+multiple feature inputs, a second LSTM trained with speaker-adversarial
+multi-task learning and a third residual net (ResNet) with 25 convolutional
+layers and time-dilated convolutions. On the language modeling side, we use
+word and character LSTMs and convolutional WaveNet-style language models.},
+ archiveprefix = {arXiv},
+ author = {George Saon and Gakuto Kurata and Tom Sercu and Kartik Audhkhasi and Samuel Thomas and Dimitrios Dimitriadis and Xiaodong Cui and Bhuvana Ramabhadran and Michael Picheny and Lynn-Li Lim and Bergul Roomi and Phil Hall},
+ eprint = {1703.02136v1},
+ file = {1703.02136v1.pdf},
+ link = {http://arxiv.org/abs/1703.02136v1},
+ month = {Mar},
+ primaryclass = {cs.CL},
+ title = {English Conversational Telephone Speech Recognition by Humans and
+Machines},
+ year = {2017}
+}
+

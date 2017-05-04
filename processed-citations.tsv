@@ -17,11 +17,14 @@ text	citation	standard_citation	citation_id
 @arxiv:1608.00647	arxiv:1608.00647	arxiv:1608.00647	c6MfDdWP
 @arxiv:1608.02158	arxiv:1608.02158	arxiv:1608.02158	qXdO2aMm
 @arxiv:1609.02943	arxiv:1609.02943	arxiv:1609.02943	ULSPV0rh
+@arxiv:1610.05256	arxiv:1610.05256	arxiv:1610.05256	M2OLWojE
 @arxiv:1610.05820	arxiv:1610.05820	arxiv:1610.05820	1HbRTExaU
 @arxiv:1611.08373	arxiv:1611.08373	arxiv:1611.08373	dO844vZn
 @arxiv:1612.02751	arxiv:1612.02751	arxiv:1612.02751	bNBiIiTt
+@arxiv:1703.02136	arxiv:1703.02136	arxiv:1703.02136	wKioubsT
 @arxiv:1703.06490v1	arxiv:1703.06490v1	arxiv:1703.06490v1	xl1ijigK
 @arxiv:1703.10603	arxiv:1703.10603	arxiv:1703.10603	17YaKNLKk
+@doi:10.1001/jama.2016.17216	doi:10.1001/jama.2016.17216	doi:10.1001/jama.2016.17216	1mJW6umJ
 @doi:10.1002/9783527628766	doi:10.1002/9783527628766	doi:10.1002/9783527628766	17eGl2pn9
 @doi:10.1002/cyto.a.22909	doi:10.1002/cyto.a.22909	doi:10.1002/cyto.a.22909	m3Ij21U8
 @doi:10.1002/minf.201501008	doi:10.1002/minf.201501008	doi:10.1002/minf.201501008	gJE0ExFr
@@ -58,6 +61,7 @@ text	citation	standard_citation	citation_id
 @doi:10.1037/h0037350	doi:10.1037/h0037350	doi:10.1037/h0037350	cpNVdlL7
 @doi:10.1038/nature14539	doi:10.1038/nature14539	doi:10.1038/nature14539	BeijBSRE
 @doi:10.1038/nature16961	doi:10.1038/nature16961	doi:10.1038/nature16961	2gn6PKkv
+@doi:10.1038/nature21056	doi:10.1038/nature21056	doi:10.1038/nature21056	XnYNYoYB
 @doi:10.1038/nbt.3313	doi:10.1038/nbt.3313	doi:10.1038/nbt.3313	yXqhuueV
 @doi:10.1038/nbt.3780	doi:10.1038/nbt.3780	doi:10.1038/nbt.3780	Qh7xTLwz
 @doi:10.1038/ncomms5022	doi:10.1038/ncomms5022	doi:10.1038/ncomms5022	ogs3PPp7
@@ -123,6 +127,7 @@ text	citation	standard_citation	citation_id
 @doi:10.1142/9789814644730_0014	doi:10.1142/9789814644730_0014	doi:10.1142/9789814644730_0014	PBiRSdXv
 @doi:10.1145/2661829.2661974	doi:10.1145/2661829.2661974	doi:10.1145/2661829.2661974	XQtuRkTU
 @doi:10.1145/2939672.2939823	doi:10.1145/2939672.2939823	doi:10.1145/2939672.2939823	TwvauiTv
+@doi:10.1148/radiol.2017162326	doi:10.1148/radiol.2017162326	doi:10.1148/radiol.2017162326	Qve94Jra
 @doi:10.1158/1078-0432.CCR-13-0583	doi:10.1158/1078-0432.CCR-13-0583	doi:10.1158/1078-0432.ccr-13-0583	pEIw87Mp
 @doi:10.1186/1758-2946-5-30	doi:10.1186/1758-2946-5-30	doi:10.1186/1758-2946-5-30	M1EW8Rfl
 @doi:10.1186/s12859-015-0845-0	doi:10.1186/s12859-015-0845-0	doi:10.1186/s12859-015-0845-0	18lqFDKRR
@@ -284,6 +289,7 @@ text	citation	standard_citation	citation_id
 @tag:Singh2016_deepchrome	arxiv:1607.02078	arxiv:1607.02078	G10wkFHt
 @tag:Sonderby	arxiv:1503.01919	arxiv:1503.01919	81Cl5QSM
 @tag:Soueidan	doi:10.1515/metgen-2016-0001	doi:10.1515/metgen-2016-0001	yFOAeemA
+@tag:Speech_recognition	url:http://www.businessinsider.com/ibm-edges-closer-to-human-speech-recognition-2017-3	url:http://www.businessinsider.com/ibm-edges-closer-to-human-speech-recognition-2017-3	nyjAIan4
 @tag:Stein2010_cloud	doi:10.1186/gb-2010-11-5-207	doi:10.1186/gb-2010-11-5-207	q0SsFrZd
 @tag:Stormo2000_dna	doi:10.1093/bioinformatics/16.1.16	doi:10.1093/bioinformatics/16.1.16	ywDQIvZJ
 @tag:Stratnikov	doi:10.1186/2049-2618-1-11	doi:10.1186/2049-2618-1-11	c5P9jHCg

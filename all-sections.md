@@ -2362,16 +2362,75 @@ related and distant learning tasks.
 
 ## Conclusions
 
-Final thoughts and future outlook here. The Discussion will give an overview
-and the Conclusion will provide a short, punchy take home message.
+Deep learning-based methods now match or surpass the previous state of the art
+in a diverse array of tasks in patient and disease categorization, fundamental
+biological study, genomics, and treatment development.  Returning to our central
+question: given this rapid progress, has deep learning transformed the study of
+human disease?  Though the answer is highly dependent on the specific domain and
+problem being addressed, we conclude that deep learning has not *yet* realized
+its transformative potential or induced a strategic inflection point.  Despite
+its dominance over competing machine learning approaches in many of the areas
+reviewed here and quantitative improvements in predictive performance, deep
+learning has not yet definitively "solved" those problems.
 
-Points to mention based on discussion thus far that may make the bar for
-conclusions:
+As an analogy, consider recent progress in conversational speech recognition.
+Since 2009 there have been drastic performance improvements, with error rates
+dropping from more than 20% to less than 6% [@nyjAIan4] and
+finally approaching or exceeding human performance in the past year
+[@M2OLWojE; @wKioubsT] `TODO: need better source for this error
+trajectory`. The phenomenal improvements on benchmark datasets are undeniable,
+but halving the error rate on these benchmarks did not fundamentally transform
+the domain.  Widespread adoption of conversational speech technologies will
+require not only improvements over baseline methods but truly solving the
+problem, in this case exceeding human-level performance, as well as convincing
+users to embrace the technology [@nyjAIan4].  We see parallels to
+the healthcare domain, where achieving the full potential of deep learning will
+require outstanding predictive performance as well as acceptance and adoption by
+biologists and clinicians.
 
-* Limitations of data & workarounds (availability impacts on amount, etc)
-* Transferability of features
-* Strong enthusiasm for unsupervised approaches.
-* Right to an explanation (possibly, depends if raised in multiple areas)
+Some of the areas we have discussed are closer to surpassing this lofty bar than
+others, generally those that are more similar to the non-biomedical tasks that
+are now monopolized by deep learning.  In medical imaging, diabetic retinopathy
+[@1mJW6umJ], diabetic macular edema
+[@1mJW6umJ], tuberculosis [@Qve94Jra],
+and skin lesion [@XnYNYoYB] classifiers are highly accurate and
+comparable to clinician performance in the latter case.
+
+In other domains, perfect accuracy will not be required because deep learning
+will be used primarily to prioritize experiments and assist discovery. For
+example, in chemical screening for drug discovery, a deep learning system that
+successfully identifies dozens or hundreds of target-specific, active small
+molecules from a massive search space would have immense practical value even if
+its overall precision is modest.  In medical imaging, deep learning can point an
+expert to the most challenging cases that require manual review
+[@Qve94Jra], though the risk of false negatives must be
+addressed.
+
+Conversely, the most challenging tasks may be those in which predictions are
+used directly for downstream modeling or decision-making, especially in the
+clinic.  As an example, errors in a predicted protein contact map could be
+amplified if that contact map is used directly for 3D structure prediction.  In
+addition, the stochasticity and complexity of biological systems implies that
+for some problems, for instance, predicting gene regulation in disease, perfect
+accuracy will be unattainable.
+
+Even if deep learning in biology and healthcare is not yet transformative today,
+we are extremely optimistic about its future.  Given how rapidly deep learning
+is evolving, its full potential in biomedicine has not been explored.  We have
+highlighted numerous challenges beyond improving training and predictive
+accuracy, such as preserving patient privacy and interpreting models.  Ongoing
+research has begun to address these problems and shown they are not
+insurmountable.  Deep learning offers the flexibility to model data in its most
+natural form, for example, longer DNA sequences instead of k-mers for
+transcription factor binding prediction and molecular graphs instead of
+pre-computed bit vectors for drug discovery. These flexible input feature
+representations have spurred creative modeling approaches that would be
+infeasible with other machine learning techniques. Unsupervised methods are
+currently less-developed than their supervised counterparts, but they may have
+the most potential. When deep learning algorithms can summarize very large
+collections of input data into interpretable models that spur scientists to ask
+questions that they didn't know to ask, it will be clear that deep learning has
+transformed biology and medicine.
 
 ### Author contributions
 
@@ -2391,3 +2450,5 @@ revisions; approved the final manuscript draft; and agreed to be accountable in
 all aspects of the work. Individuals who did not contribute in one or more of
 these ways, but who did participate, are acknowledged at the end of the
 manuscript.
+
+`TODO: update after finalizing discussion in #369`

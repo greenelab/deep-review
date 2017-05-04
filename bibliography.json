@@ -31665,6 +31665,489 @@
     "id": "huFxo9OA"
   },
   {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          4,
+          3
+        ]
+      ],
+      "date-time": "2017-04-03T02:57:13Z",
+      "timestamp": 1491188233319
+    },
+    "reference-count": 0,
+    "publisher": "American Medical Association (AMA)",
+    "issue": "22",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "JAMA"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2016,
+          12,
+          13
+        ]
+      ]
+    },
+    "DOI": "10.1001/jama.2016.17216",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          11,
+          29
+        ]
+      ],
+      "date-time": "2016-11-29T17:33:53Z",
+      "timestamp": 1480440833000
+    },
+    "page": "2402",
+    "source": "Crossref",
+    "is-referenced-by-count": 5,
+    "title": "Development and Validation of a Deep Learning Algorithm for Detection of Diabetic Retinopathy in Retinal Fundus Photographs",
+    "prefix": "10.1001",
+    "volume": "316",
+    "author": [
+      {
+        "given": "Varun",
+        "family": "Gulshan",
+        "affiliation": [
+          {
+            "name": "Google Inc, Mountain View, California"
+          }
+        ]
+      },
+      {
+        "given": "Lily",
+        "family": "Peng",
+        "affiliation": [
+          {
+            "name": "Google Inc, Mountain View, California"
+          }
+        ]
+      },
+      {
+        "given": "Marc",
+        "family": "Coram",
+        "affiliation": [
+          {
+            "name": "Google Inc, Mountain View, California"
+          }
+        ]
+      },
+      {
+        "given": "Martin C.",
+        "family": "Stumpe",
+        "affiliation": [
+          {
+            "name": "Google Inc, Mountain View, California"
+          }
+        ]
+      },
+      {
+        "given": "Derek",
+        "family": "Wu",
+        "affiliation": [
+          {
+            "name": "Google Inc, Mountain View, California"
+          }
+        ]
+      },
+      {
+        "given": "Arunachalam",
+        "family": "Narayanaswamy",
+        "affiliation": [
+          {
+            "name": "Google Inc, Mountain View, California"
+          }
+        ]
+      },
+      {
+        "given": "Subhashini",
+        "family": "Venugopalan",
+        "affiliation": [
+          {
+            "name": "Google Inc, Mountain View, California2Department of Computer Science, University of Texas, Austin"
+          }
+        ]
+      },
+      {
+        "given": "Kasumi",
+        "family": "Widner",
+        "affiliation": [
+          {
+            "name": "Google Inc, Mountain View, California"
+          }
+        ]
+      },
+      {
+        "given": "Tom",
+        "family": "Madams",
+        "affiliation": [
+          {
+            "name": "Google Inc, Mountain View, California"
+          }
+        ]
+      },
+      {
+        "given": "Jorge",
+        "family": "Cuadros",
+        "affiliation": [
+          {
+            "name": "EyePACS LLC, San Jose, California4School of Optometry, Vision Science Graduate Group, University of California, Berkeley"
+          }
+        ]
+      },
+      {
+        "given": "Ramasamy",
+        "family": "Kim",
+        "affiliation": [
+          {
+            "name": "Aravind Medical Research Foundation, Aravind Eye Care System, Madurai, India"
+          }
+        ]
+      },
+      {
+        "given": "Rajiv",
+        "family": "Raman",
+        "affiliation": [
+          {
+            "name": "Shri Bhagwan Mahavir Vitreoretinal Services, Sankara Nethralaya, Chennai, Tamil Nadu, India"
+          }
+        ]
+      },
+      {
+        "given": "Philip C.",
+        "family": "Nelson",
+        "affiliation": [
+          {
+            "name": "Google Inc, Mountain View, California"
+          }
+        ]
+      },
+      {
+        "given": "Jessica L.",
+        "family": "Mega",
+        "affiliation": [
+          {
+            "name": "Verily Life Sciences, Mountain View, California8Cardiovascular Division, Department of Medicine, Brigham and Women’s Hospital and Harvard Medical School, Boston, Massachusetts"
+          }
+        ]
+      },
+      {
+        "given": "Dale R.",
+        "family": "Webster",
+        "affiliation": [
+          {
+            "name": "Google Inc, Mountain View, California"
+          }
+        ]
+      }
+    ],
+    "member": "10",
+    "container-title": "JAMA",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          12,
+          15
+        ]
+      ],
+      "date-time": "2016-12-15T17:42:01Z",
+      "timestamp": 1481823721000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          12,
+          13
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "http://dx.doi.org/10.1001/jama.2016.17216",
+    "relation": {},
+    "issn-type": [
+      {
+        "value": "0098-7484",
+        "type": "print"
+      }
+    ],
+    "subject": [
+      "Medicine(all)"
+    ],
+    "id": "1mJW6umJ"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          4,
+          3
+        ]
+      ],
+      "date-time": "2017-04-03T07:03:15Z",
+      "timestamp": 1491202995576
+    },
+    "reference-count": 30,
+    "publisher": "Springer Nature",
+    "issue": "7639",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Nature"
+    ],
+    "DOI": "10.1038/nature21056",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          25
+        ]
+      ],
+      "date-time": "2017-01-25T21:12:47Z",
+      "timestamp": 1485378767000
+    },
+    "page": "115-118",
+    "source": "Crossref",
+    "is-referenced-by-count": 5,
+    "title": "Dermatologist-level classification of skin cancer with deep neural networks",
+    "prefix": "10.1038",
+    "volume": "542",
+    "author": [
+      {
+        "given": "Andre",
+        "family": "Esteva",
+        "affiliation": []
+      },
+      {
+        "given": "Brett",
+        "family": "Kuprel",
+        "affiliation": []
+      },
+      {
+        "given": "Roberto A.",
+        "family": "Novoa",
+        "affiliation": []
+      },
+      {
+        "given": "Justin",
+        "family": "Ko",
+        "affiliation": []
+      },
+      {
+        "given": "Susan M.",
+        "family": "Swetter",
+        "affiliation": []
+      },
+      {
+        "given": "Helen M.",
+        "family": "Blau",
+        "affiliation": []
+      },
+      {
+        "given": "Sebastian",
+        "family": "Thrun",
+        "affiliation": []
+      }
+    ],
+    "member": "339",
+    "published-online": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          25
+        ]
+      ]
+    },
+    "container-title": "Nature",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          2,
+          2
+        ]
+      ],
+      "date-time": "2017-02-02T10:23:27Z",
+      "timestamp": 1486031007000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          25
+        ]
+      ]
+    },
+    "references-count": 30,
+    "alternative-id": [
+      "nature21056"
+    ],
+    "URL": "http://dx.doi.org/10.1038/nature21056",
+    "relation": {
+      "cites": []
+    },
+    "issn-type": [
+      {
+        "value": "0028-0836",
+        "type": "print"
+      },
+      {
+        "value": "1476-4687",
+        "type": "electronic"
+      }
+    ],
+    "subject": [
+      "General"
+    ],
+    "id": "XnYNYoYB"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          4,
+          24
+        ]
+      ],
+      "date-time": "2017-04-24T13:40:23Z",
+      "timestamp": 1493041223728
+    },
+    "reference-count": 32,
+    "publisher": "Radiological Society of North America (RSNA)",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Radiology"
+    ],
+    "DOI": "10.1148/radiol.2017162326",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          4,
+          24
+        ]
+      ],
+      "date-time": "2017-04-24T13:26:04Z",
+      "timestamp": 1493040364000
+    },
+    "page": "162326",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "Deep Learning at Chest Radiography: Automated Classification of                     Pulmonary Tuberculosis by Using Convolutional Neural Networks",
+    "prefix": "10.1148",
+    "author": [
+      {
+        "given": "Paras",
+        "family": "Lakhani",
+        "affiliation": [
+          {
+            "name": "From the Department of Radiology, Thomas Jefferson University                     Hospital, Sidney Kimmel Jefferson Medical College, 132 S 10th St, Room 1080A,                     Main Building, Philadelphia, PA 19107-5244."
+          }
+        ]
+      },
+      {
+        "given": "Baskaran",
+        "family": "Sundaram",
+        "affiliation": [
+          {
+            "name": "From the Department of Radiology, Thomas Jefferson University                     Hospital, Sidney Kimmel Jefferson Medical College, 132 S 10th St, Room 1080A,                     Main Building, Philadelphia, PA 19107-5244."
+          }
+        ]
+      }
+    ],
+    "member": "1577",
+    "published-online": {
+      "date-parts": [
+        [
+          2017,
+          4,
+          24
+        ]
+      ]
+    },
+    "container-title": "Radiology",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          4,
+          24
+        ]
+      ],
+      "date-time": "2017-04-24T13:26:05Z",
+      "timestamp": 1493040365000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          4,
+          24
+        ]
+      ]
+    },
+    "references-count": 32,
+    "alternative-id": [
+      "10.1148/radiol.2017162326"
+    ],
+    "URL": "http://dx.doi.org/10.1148/radiol.2017162326",
+    "relation": {},
+    "issn-type": [
+      {
+        "value": "0033-8419",
+        "type": "print"
+      },
+      {
+        "value": "1527-1315",
+        "type": "electronic"
+      }
+    ],
+    "subject": [
+      "Radiology Nuclear Medicine and imaging"
+    ],
+    "id": "Qve94Jra"
+  },
+  {
+    "URL": "http://www.businessinsider.com/ibm-edges-closer-to-human-speech-recognition-2017-3",
+    "type": "webpage",
+    "id": "nyjAIan4"
+  },
+  {
     "abstract": "After a more than decade-long period of relatively little research activity in the area of recurrent neural networks, several new developments will be reviewed here that have allowed substantial progress both in understanding and in technical solutions towards more efficient training of recurrent networks. These advances have been motivated by and related to the optimization issues surrounding deep learning. Although recurrent networks are extremely powerful in what they can in principle represent in terms of modelling sequences,their training is plagued by two aspects of the same issue regarding the learning of long-term dependencies. Experiments reported here evaluate the use of clipping gradients, spanning longer time ranges with leaky integration, advanced momentum techniques, using more powerful output probability models, and encouraging sparser gradients to help symmetry breaking and credit assignment. The experiments are performed on text and music data and show off the combined effects of these techniques in generally improving both training and test error.",
     "author": [
       {
@@ -33880,6 +34363,118 @@
     },
     "title": "Xception: Deep learning with depthwise separable convolutions",
     "title-short": "Xception",
+    "type": "article-journal"
+  },
+  {
+    "abstract": "Conversational speech recognition has served as a flagship speech recognition task since the release of the Switchboard corpus in the 1990s. In this paper, we measure the human error rate on the widely used NIST 2000 test set, and find that our latest automated system has reached human parity. The error rate of professional transcribers is 5.9which newly acquainted pairs of people discuss an assigned topic, and 11.3the CallHome portion where friends and family members have open-ended conversations. In both cases, our automated system establishes a new state of the art, and edges past the human benchmark, achieving error rates of 5.811.0convolutional and LSTM acoustic model architectures, combined with a novel spatial smoothing method and lattice-free MMI acoustic training, multiple recurrent neural network language modeling approaches, and a systematic use of system combination.",
+    "author": [
+      {
+        "family": "Xiong",
+        "given": "W."
+      },
+      {
+        "family": "Droppo",
+        "given": "J."
+      },
+      {
+        "family": "Huang",
+        "given": "X."
+      },
+      {
+        "family": "Seide",
+        "given": "F."
+      },
+      {
+        "family": "Seltzer",
+        "given": "M."
+      },
+      {
+        "family": "Stolcke",
+        "given": "A."
+      },
+      {
+        "family": "Yu",
+        "given": "D."
+      },
+      {
+        "family": "Zweig",
+        "given": "G."
+      }
+    ],
+    "id": "M2OLWojE",
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          11
+        ]
+      ]
+    },
+    "title": "Achieving human parity in conversational speech recognition",
+    "type": "article-journal"
+  },
+  {
+    "abstract": "One of the most difficult speech recognition tasks is accurate recognition of human to human communication. Advances in deep learning over the last few years have produced major speech recognition improvements on the representative Switchboard conversational corpus. Word error rates that just a few years ago were 14believed to be within striking range of human performance. This then raises two issues - what IS human performance, and how far down can we still drive speech recognition error rates? A recent paper by Microsoft suggests that we have already achieved human performance. In trying to verify this statement, we performed an independent set of human performance measurements on two conversational tasks and found that human performance may be considerably better than what was earlier reported, giving the community a significantly harder goal to achieve. We also report on our own efforts in this area, presenting a set of acoustic and language modeling techniques that lowered the word error rate of our own English conversational telephone LVCSR system to the level of 5.5evaluation, which - at least at the writing of this paper - is a new performance milestone (albeit not at what we measure to be human performance!). On the acoustic side, we use a score fusion of three models: one LSTM with multiple feature inputs, a second LSTM trained with speaker-adversarial multi-task learning and a third residual net (ResNet) with 25 convolutional layers and time-dilated convolutions. On the language modeling side, we use word and character LSTMs and convolutional WaveNet-style language models.",
+    "author": [
+      {
+        "family": "Saon",
+        "given": "George"
+      },
+      {
+        "family": "Kurata",
+        "given": "Gakuto"
+      },
+      {
+        "family": "Sercu",
+        "given": "Tom"
+      },
+      {
+        "family": "Audhkhasi",
+        "given": "Kartik"
+      },
+      {
+        "family": "Thomas",
+        "given": "Samuel"
+      },
+      {
+        "family": "Dimitriadis",
+        "given": "Dimitrios"
+      },
+      {
+        "family": "Cui",
+        "given": "Xiaodong"
+      },
+      {
+        "family": "Ramabhadran",
+        "given": "Bhuvana"
+      },
+      {
+        "family": "Picheny",
+        "given": "Michael"
+      },
+      {
+        "family": "Lim",
+        "given": "Lynn-Li"
+      },
+      {
+        "family": "Roomi",
+        "given": "Bergul"
+      },
+      {
+        "family": "Hall",
+        "given": "Phil"
+      }
+    ],
+    "id": "wKioubsT",
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          3
+        ]
+      ]
+    },
+    "title": "English conversational telephone speech recognition by humans and machines",
     "type": "article-journal"
   }
 ]
