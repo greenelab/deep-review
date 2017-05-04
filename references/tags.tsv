@@ -12,6 +12,7 @@ Arvaniti2016_rare_subsets	doi:10.1101/046508
 Baskin2015_drug_disc	doi:10.1080/17460441.2016.1201262
 Barash2010_splicing_code	doi:10.1038/nature09000
 Baxt1991_myocardial	doi:10.7326/0003-4819-115-11-843
+BeaulieuJones2016_ehr_encode	doi:10.1016/j.jbi.2016.10.007
 Bengio2015_prec	arxiv:1412.7024
 Berezikov2011_mirna	doi:10.1038/nrg3079
 Bergstra2011_hyper	url:https://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimization.pdf
@@ -31,6 +32,7 @@ Choi2016_retain	arxiv:1608.05745
 Choi2016_gram	arxiv:1611.07012
 Chollet2016_xception	arxiv:1610.02357
 Chryssolouris1996_confidence	doi:10.1109/72.478409
+Ciresan2013_mitosis	doi:10.1007/978-3-642-40763-5_51
 Coates2013_cots_hpc	url:http://www.jmlr.org/proceedings/papers/v28/coates13.html
 Consortium2004_encode	doi:10.1126/science.1105136
 CudNN	arxiv:1410.0759
@@ -40,6 +42,8 @@ Ding	doi:10.1186/s12859-015-0753-3
 Ditzler	doi:10.1186/s12859-015-0793-8
 Ditzler2	doi:10.1109/TNNLS.2014.2320415
 Ditzler3	doi:10.1109/TNB.2015.2461219
+Dhungel2015_struct_pred_mamm	doi:10.1007/978-3-319-24553-9_74
+Dhungel2016_mamm	doi:10.1007/978-3-319-46723-8_13
 Dogwild	url:https://papers.nips.cc/paper/5717-taming-the-wild-a-unified-analysis-of-hogwild-style-algorithms.pdf
 Duvenaud2015_graph_conv	url:http://papers.nips.cc/paper/5954-convolutional-networks-on-graphs-for-learning-molecular-fingerprints
 Edwards2015_growing_pains	doi:10.1145/2771283
@@ -86,6 +90,7 @@ Krizhevsky2014_weird_trick	arxiv:1404.5997
 Lacey2016_dl_fpga	arxiv:1602.04283
 Lanchantin2016_motif	arxiv:1608.03644
 Lee2016_deeptarget	arxiv:1603.09123v2
+Lee2016_emr_oct_amd	doi:10.1101/094276
 Li2014_minibatch	doi:10.1145/2623330.2623612
 Li2016_variation	doi:10.1126/science.aad9417
 Liang2015_exprs_cancer	doi:10.1109/TCBB.2014.2377729
@@ -171,6 +176,7 @@ Vanhoucke2011_cpu	url:https://research.google.com/pubs/pub37631.html
 Vera2016_sc_analysis	doi:10.1146/annurev-genet-120215-034854
 Vervier	doi:10.1093/bioinformatics/btv683
 Wallach2015_atom_net	arxiv:1510.02855
+Wang2016_breast_cancer	arxiv:1606.05718
 Wang2016_protein_contact	doi:10.1101/073239
 Wasson1985_clinical	doi:10.1056/NEJM198509263131306
 Word2Vec	arxiv:1301.3781
@@ -185,3 +191,5 @@ Yosinski2014	url:https://papers.nips.cc/paper/5347-how-transferable-are-features
 Zeng2015	doi:10.1186/s12859-015-0553-9
 Zhang2015_multitask_tl	doi:10.1145/2783258.2783304
 Zhou2015_deep_sea	doi:10.1038/nmeth.3547
+Zhu2016_advers_mamm	doi:10.1101/095786
+Zhu2016_mult_inst_mamm	doi:10.1101/095794

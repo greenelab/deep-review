@@ -47,53 +47,52 @@ regards to data availability and labeling.
 One of the general areas where deep learning methods have had substantial
 success has been in image analysis. Applications in areas of medicine that use
 imaging extensively are also emerging. Mammography has been one area with
-numerous contributions [@doi:10.1007/978-3-319-46723-8_13
-@doi:10.1007/978-3-319-24553-9_74 @doi:10.1101/095794 @doi:10.1101/095786]. In
+numerous contributions [@tag:Dhungel2015_struct_pred_mamm
+@tag:Dhungel2016_mamm @tag:Zhu2016_mult_inst_mamm @tag:Zhu2016_advers_mamm]. In
 all of this work, the researchers must work around a specific challenge - the
 limited number of well annotated training images. To expand the number and
 diversity of images, the researchers have employed approaches where they employ
-adversarial examples [@doi:10.1101/095786] or first train towards human-created
-features before subsequent fine tuning [@doi:10.1007/978-3-319-46723-8_13]. The
-presence of a large bank of well-annotated mammography images would aid in the
-application of deep neural networks to this area. Though this strategy has not
-yet been employed in this domain, large collections of unlabeled images might
-first be used in an unsupervised context to construct high-quality feature
+adversarial examples [@tag:Zhu2016_advers_mamm] or first train towards
+human-created features before subsequent fine tuning [@tag:Dhungel2016_mamm].
+The presence of a large bank of well-annotated mammography images would aid in
+the application of deep neural networks to this area. Though this strategy has
+not yet been employed in this domain, large collections of unlabeled images
+might first be used in an unsupervised context to construct high-quality feature
 detectors. Then the small number of labeled examples could be used for
 subsequent training. Similar strategies have been employed for EHR data where
 high-quality labeled examples are also difficult to obtain
-[@doi:10.1101/039800].
+[@tag:BeaulieuJones2016_ehr_encode].
 
 In addition to radiographic images, histology slides are also being analyzed
-with deep learning approaches. Ciresan et al.
-[@doi:10.1007/978-3-642-40763-5_51] developed one of the earliest examples,
-winning the 2012 International Conference on Pattern Recognition's Contest on
-Mitosis Detection while achieving human competitive accuracy. Their approach
-uses what has become a standard convolutional neural network architecture
-trained on public data.  In more recent work,  Wang et al.[@arxiv:1606.05718]
-analyzed stained slides to identify cancers  within slides of lymph node slices.
-The approach provided a probability map for  each slide. On this task a
-pathologist has about a 3% error rate. The  pathologist did not produce any
-false positives, but did have a number of false  negatives. Their algorithm had
-about twice the error rate of a pathologist.  However, their algorithms errors
-were not strongly correlated with the  pathologist. Theoretically, combining
-both could reduce the error rate to  under 1%. In this area, these algorithms
-may be ready to incorporate into  existing tools to aid pathologists. The
-authors' work suggests that this could  reduce the false negative rate of such
-evaluations. This theme of an ensemble  between deep learning algorithm and
-human expert may help overcome some of the  challenges presented by data
-limitations.
+with deep learning approaches. Ciresan et al. [@tag:Ciresan2013_mitosis]
+developed one of the earliest examples, winning the 2012 International
+Conference on Pattern Recognition's Contest on Mitosis Detection while
+achieving human competitive accuracy. Their approach uses what has become a
+standard convolutional neural network architecture trained on public data.
+In more recent work, Wang et al. [@tag:Wang2016_breast_cancer] analyzed stained
+slides to identify cancers within slides of lymph node slices. The approach
+provided a probability map for each slide. On this task a pathologist has about
+a 3% error rate. The pathologist did not produce any false positives, but did
+have a number of false negatives. Their algorithm had about twice the error
+rate of a pathologist. However, their algorithms errors were not strongly
+correlated with the pathologist. Theoretically, combining both could reduce
+the error rate to under 1%. In this area, these algorithms may be ready to
+incorporate into existing tools to aid pathologists. The authors' work suggests
+that this could reduce the false negative rate of such evaluations. This theme
+of an ensemble between deep learning algorithm and human expert may help
+overcome some of the challenges presented by data limitations.
 
 One source of training examples with rich clinical annotations is the electronic
-health record. Recently Lee et al.[@doi:10.1101/094276] developed an approach to
-distinguish individuals with Age-related Macular Degeneration from control
-individuals. They extracted approximately 100,000 images from structured
-electronic health records, which they used to train and evaluate a deep neural
-network. Combining this data resource with standard deep learning techniques,
-the authors reach greater than 93% accuracy. One item that is important to note
-with regards to this work is that the authors used their test set for evaluating
-when training had concluded. In other domains, this has resulted in a minimal
-change in the estimated accuracy
-[@url:http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf].
+health record. Recently Lee et al.[@tag:Lee2016_emr_oct_amd] developed an
+approach to distinguish individuals with Age-related Macular Degeneration
+from control individuals. They extracted approximately 100,000 images from
+structured electronic health records, which they used to train and evaluate a
+deep neural network. Combining this data resource with standard deep learning
+techniques, the authors reach greater than 93% accuracy. One item that is
+important to note with regards to this work is that the authors used their test
+set for evaluating when training had concluded. In other domains, this has
+resulted in a minimal change in the estimated accuracy
+[@tag:Krizhevsky2013_nips_cnn].
 However, there is not yet a single accepted standard within the field of
 biomedical research for such evaluations. We recommend the use of an independent
 test set wherever it is feasible. Despite this minor limitation, the work
