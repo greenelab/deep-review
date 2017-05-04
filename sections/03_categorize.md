@@ -57,18 +57,26 @@ have employed approaches where they employ adversarial examples
 subsequent fine tuning [@tag:Dhungel2016_mamm]. Adaptation to the medical image
 domain can further improved by combining in the latter approach with other
 machine learning techniques, for example, as a cascade of deep learning and
-random forest models [@tag:Dhungel2017_mamm_min_interv]. Geras et al.
-[@tag:Geras2017_multiview_mamm] showed that both having larger dataset and
-and using multi-view network architecture help to improve classification
+random forest models [@tag:Dhungel2017_mamm_min_interv]. Using larger dataset
+of around 45,000 images, Kooi et al. [@tag:Kooi2016_mamm_lesions] demonstrated
+that deep neural networks can outperform the traditional CAD system at low
+sensitivity and perform comparably at high sensitivity. They also compared
+network performance to certified screening radiologists on a patch level and
+found no significant difference between the network and the readers. Similarly,
+Geras et al. [@tag:Geras2017_multiview_mamm] showed that both having larger
+dataset and using multi-view network architecture help to improve classification
 performance. The presence of a publicly available large bank of well-annotated
 mammography images would aid in the application of deep neural networks to
 this area and shift research focus from model generalization to effective
-processing of large image sets. Though this strategy has not yet been employed
-in this domain, large collections of unlabeled images might first be used in
-an unsupervised context to construct high-quality feature detectors. Then the
-small number of labeled examples could be used for subsequent training. Similar
-strategies have been employed for EHR data where high-quality labeled examples
-are also difficult to obtain [@tag:BeaulieuJones2016_ehr_encode].
+processing of large image sets. Deep network pre-trained on large annotated
+mammogram set can be helpful for related tasks that do not have as much
+data using transfer learning [@tag:Kooi2017_mamm_tl]. Though this strategy has
+not yet been employed in this domain, large collections of unlabeled images
+might first be used in an unsupervised context to construct high-quality
+feature detectors. Then the small number of labeled examples could be used for
+subsequent training. Similar strategies have been employed for EHR data where
+high-quality labeled examples are also difficult to obtain
+[@tag:BeaulieuJones2016_ehr_encode].
 
 In addition to radiographic images, histology slides are also being analyzed
 with deep learning approaches. Ciresan et al. [@tag:Ciresan2013_mitosis]
