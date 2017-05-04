@@ -46,7 +46,7 @@ addressed.
 
 Conversely, the most challenging tasks may be those in which predictions are
 used directly for downstream modeling or decision-making, especially in the
-clinic.  For instance, errors in a predicted protein contact map could be
+clinic.  As an example, errors in a predicted protein contact map could be
 amplified if that contact map is used directly for 3D structure prediction.  In
 addition, the stochasticity and complexity of biological systems implies that
 for some problems, for instance, predicting gene regulation in disease, perfect
