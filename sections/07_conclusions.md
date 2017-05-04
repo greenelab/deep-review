@@ -1,16 +1,15 @@
 ## Conclusions
 
-Deep learning-based methods now matches or surpasses the previous state of the
-art in a diverse array of tasks in patient and disease categorization,
-fundamental biological study, genomics, and treatment development.  Returning to
-our central question: given this rapid progress, has deep learning transformed
-the study of human disease?  Though the answer is highly dependent on the
-specific domain and problem being addressed, we conclude that deep learning has
-not *yet* realized its transformative potential or induced a strategic
-inflection point.  Despite its dominance over competing machine learning
-approaches in many of the areas reviewed here and quantitative improvements in
-predictive performance, deep learning has not yet definitively "solved" those
-problems.
+Deep learning-based methods now match or surpass the previous state of the art
+in a diverse array of tasks in patient and disease categorization, fundamental
+biological study, genomics, and treatment development.  Returning to our central
+question: given this rapid progress, has deep learning transformed the study of
+human disease?  Though the answer is highly dependent on the specific domain and
+problem being addressed, we conclude that deep learning has not *yet* realized
+its transformative potential or induced a strategic inflection point.  Despite
+its dominance over competing machine learning approaches in many of the areas
+reviewed here and quantitative improvements in predictive performance, deep
+learning has not yet definitively "solved" those problems.
 
 As an analogy, consider recent progress in conversational speech recognition.
 Since 2009 there have been drastic performance improvements, with error rates
@@ -18,7 +17,7 @@ dropping from more than 20% to less than 6% [@tag:Speech_recognition] and
 finally approaching or exceeding human performance in the past year
 [@arxiv:1610.05256 @arxiv:1703.02136] `TODO: need better source for this error
 trajectory`. The phenomenal improvements on benchmark datasets are undeniable,
-but halving the error rates on these benchmarks did not fundamentally transform
+but halving the error rate on these benchmarks did not fundamentally transform
 the domain.  Widespread adoption of conversational speech technologies will
 require not only improvements over baseline methods but truly solving the
 problem, in this case exceeding human-level performance, as well as convincing
@@ -33,8 +32,7 @@ are now monopolized by deep learning.  In medical imaging, diabetic retinopathy
 [@doi:10.1001/jama.2016.17216], diabetic macular edema
 [@doi:10.1001/jama.2016.17216], tuberculosis [@doi:10.1148/radiol.2017162326],
 and skin lesion [@doi:10.1038/nature21056] classifiers are highly accurate and
-comparable to clinician performance in the latter case. `TODO: more imaging
-examples or other examples that might be at or close to "transformative"?`
+comparable to clinician performance in the latter case.
 
 In other domains, perfect accuracy will not be required because deep learning
 will be used primarily to prioritize experiments and assist discovery. For
@@ -43,13 +41,16 @@ successfully identifies dozens or hundreds of target-specific, active small
 molecules from a massive search space would have immense practical value even if
 its overall precision is modest.  In medical imaging, deep learning can point an
 expert to the most challenging cases that require manual review
-[@doi:10.1148/radiol.2017162326].
+[@doi:10.1148/radiol.2017162326], though the risk of false negatives must be
+addressed.
 
 Conversely, the most challenging tasks may be those in which predictions are
 used directly for downstream modeling or decision-making, especially in the
-clinic. In addition, the stochasticity and complexity of biological systems
-implies that for some problems, for instance, predicting gene regulation in
-disease, perfect accuracy will be unattainable.  `TODO: expand this paragraph?`
+clinic.  For instance, errors in a predicted protein contact map could be
+amplified if that contact map is used directly for 3D structure prediction.  In
+addition, the stochasticity and complexity of biological systems implies that
+for some problems, for instance, predicting gene regulation in disease, perfect
+accuracy will be unattainable.
 
 Even if deep learning in biology and healthcare is not yet transformative today,
 we are extremely optimistic about its future.  Given how rapidly deep learning
@@ -58,8 +59,11 @@ highlighted numerous challenges beyond improving training and predictive
 accuracy, such as preserving patient privacy and interpreting models.  Ongoing
 research has begun to address these problems and shown they are not
 insurmountable.  Deep learning offers the flexibility to model data in its most
-natural form `TODO: rephrase`, spurring creative modeling approaches that would
-be infeasible with other machine learning techniques. Unsupervised methods are
+natural form, for example, longer DNA sequences instead of k-mers for
+transcription factor binding prediction and molecular graphs instead of
+pre-computed bit vectors for drug discovery. These flexible input feature
+representations have spurred creative modeling approaches that would be
+infeasible with other machine learning techniques. Unsupervised methods are
 currently less-developed than their supervised counterparts, but they may have
 the most potential. When deep learning algorithms can summarize very large
 collections of input data into interpretable models that spur scientists to ask
