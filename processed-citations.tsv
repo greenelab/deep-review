@@ -107,6 +107,7 @@ text	citation	standard_citation	citation_id
 @doi:10.1101/095794	doi:10.1101/095794	doi:10.1101/095794	9G9Hv1Pp
 @doi:10.1101/gr.173518.114	doi:10.1101/gr.173518.114	doi:10.1101/gr.173518.114	5zmE7Qkb
 @doi:10.1101/gr.200535.115	doi:10.1101/gr.200535.115	doi:10.1101/gr.200535.115	2CbHXoFn
+@doi:10.1101/gr.7.9.861	doi:10.1101/gr.7.9.861	doi:10.1101/gr.7.9.861	huFxo9OA
 @doi:10.1103/RevModPhys.34.135	doi:10.1103/RevModPhys.34.135	doi:10.1103/revmodphys.34.135	1G5eCiq4d
 @doi:10.1109/BIBM.2014.6999129	doi:10.1109/BIBM.2014.6999129	doi:10.1109/bibm.2014.6999129	TeIxEjqm
 @doi:10.1109/BIBM.2016.7822593	doi:10.1109/BIBM.2016.7822593	doi:10.1109/bibm.2016.7822593	jV2YerUS
@@ -323,7 +324,6 @@ text	citation	standard_citation	citation_id
 @tag:wgsquikr	doi:10.1371/journal.pone.0091784	doi:10.1371/journal.pone.0091784	RqhGD9c7
 @tag:yok	doi:10.1186/1471-2105-12-20	doi:10.1186/1471-2105-12-20	qUGH5CX8
 @url:http://ana.blogs.com/maestros/2006/11/data_is_the_new.html,	url:http://ana.blogs.com/maestros/2006/11/data_is_the_new.html,	url:http://ana.blogs.com/maestros/2006/11/data_is_the_new.html,	daemz8Fm
-@url:http://genome.cshlp.org/content/7/9/861.long	url:http://genome.cshlp.org/content/7/9/861.long	url:http://genome.cshlp.org/content/7/9/861.long	r9LaRSnB
 @url:http://hazyresearch.github.io/snorkel/blog/weak_supervision.html	url:http://hazyresearch.github.io/snorkel/blog/weak_supervision.html	url:http://hazyresearch.github.io/snorkel/blog/weak_supervision.html	hfcf5Hmi
 @url:http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf	url:http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf	url:http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf	lTBZomqa
 @url:http://proceedings.mlr.press/v54/mcmahan17a.html	url:http://proceedings.mlr.press/v54/mcmahan17a.html	url:http://proceedings.mlr.press/v54/mcmahan17a.html	U0ySdznJ

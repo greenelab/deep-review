@@ -31544,6 +31544,127 @@
     "id": "r9LaRSnB"
   },
   {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          5,
+          3
+        ]
+      ],
+      "date-time": "2017-05-03T05:15:44Z",
+      "timestamp": 1493788544295
+    },
+    "reference-count": 123,
+    "publisher": "Cold Spring Harbor Laboratory Press",
+    "issue": "9",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Genome Res."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          1997,
+          9,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1101/gr.7.9.861",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          5,
+          3
+        ]
+      ],
+      "date-time": "2017-05-03T00:28:00Z",
+      "timestamp": 1493771280000
+    },
+    "page": "861-878",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "Eukaryotic Promoter Recognition",
+    "prefix": "10.1101",
+    "volume": "7",
+    "author": [
+      {
+        "given": "James W.",
+        "family": "Fickett",
+        "affiliation": []
+      },
+      {
+        "given": "Artemis G.",
+        "family": "Hatzigeorgiou",
+        "affiliation": []
+      }
+    ],
+    "member": "246",
+    "published-online": {
+      "date-parts": [
+        [
+          1997,
+          9,
+          1
+        ]
+      ]
+    },
+    "container-title": "Genome Research",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          5,
+          3
+        ]
+      ],
+      "date-time": "2017-05-03T00:29:51Z",
+      "timestamp": 1493771391000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          1997,
+          9,
+          1
+        ]
+      ]
+    },
+    "references-count": 123,
+    "alternative-id": [
+      "10.1101/gr.7.9.861"
+    ],
+    "URL": "http://dx.doi.org/10.1101/gr.7.9.861",
+    "relation": {
+      "cites": []
+    },
+    "issn-type": [
+      {
+        "value": "1088-9051",
+        "type": "print"
+      },
+      {
+        "value": "1549-5469",
+        "type": "electronic"
+      }
+    ],
+    "subject": [
+      "Genetics(clinical)",
+      "Genetics"
+    ],
+    "id": "huFxo9OA"
+  },
+  {
     "abstract": "After a more than decade-long period of relatively little research activity in the area of recurrent neural networks, several new developments will be reviewed here that have allowed substantial progress both in understanding and in technical solutions towards more efficient training of recurrent networks. These advances have been motivated by and related to the optimization issues surrounding deep learning. Although recurrent networks are extremely powerful in what they can in principle represent in terms of modelling sequences,their training is plagued by two aspects of the same issue regarding the learning of long-term dependencies. Experiments reported here evaluate the use of clipping gradients, spanning longer time ranges with leaky integration, advanced momentum techniques, using more powerful output probability models, and encouraging sparser gradients to help symmetry breaking and credit assignment. The experiments are performed on text and music data and show off the combined effects of these techniques in generally improving both training and test error.",
     "author": [
       {
