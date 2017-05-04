@@ -214,7 +214,7 @@ In order to computationally predict TFBSs on a DNA sequence, researchers
 initially used consensus sequences and position weight matrices to match
 against a test sequence [@tag:Stormo2000_dna]. Simple neural network
 classifiers were then proposed to differentiate positive and negative binding
-sites, but did not show significant improvements over the weight matrix
+sites but did not show significant improvements over the weight matrix
 matching methods [@tag:Horton1992_assessment]. Later, SVM techniques
 outperformed the generative methods by using k-mer features
 [@tag:Ghandi2014_enhanced @tag:Setty2015_seqgl], but string kernel based SVM
@@ -232,46 +232,72 @@ have been convolutional-based, as summarized in [@tag:Zeng2016_convolutional].
 recurrent neural network models for predicting TFBSs, which showed improvements
 over other deep learning models on the dataset from
 [@tag:Alipanahi2015_predicting]. 
-It is also important to note that DNA sequence tasks are fundamentally 
-different than natural language tasks, and thus the models should be adapted 
-from traditional deep learning models in order to account for such differences.
-For example, motifs may appear in either strand of a DNA sequence, resulting
-in two different forms of the motif (forward and reverse complement) due 
-to complementary base pairing.
+While many models for TFBS prediction resemble computer vision and natural
+language processing (NLP) tasks, it is important to note that DNA sequence
+tasks are fundamentally different than NLP tasks, and thus the models should
+be adapted from traditional deep learning models in order to account for
+such differences. For example, motifs may appear in either strand of a DNA
+sequence, resulting in two different forms of the motif (forward and reverse
+complement) due to complementary base pairing. To handle this issue,
 [@tag:Shrikumar2017_reversecomplement] created a convolutional model
-which can find motifs in both directions.
+which can find motifs in both directions. Since deep learning for protein
+binding prediction is still in early stages, we expect to see an increase
+in domain-specific architectures for this task.
 
 
-Deep learning models have shown great accuracy on the TFBS task, but
-the results are not fully convincing for several reasons based on the
-datasets used and the evaluation of the model's predictions on such
-datasets. First, ChIP-seq experiments give a continuous value of binding 
-likelihood at a certain location based on many experiments at that
+Deep learning models have shown great accuracy on TFBS prediction, but
+the results are not fully convincing for several reasons.
+First, ChIP-seq experiments give a continuous value of binding likelihood
+at a certain location based on many experiments at that
 location in DNA. Based on these values, the TFBS task is usually
 converted into a binary classification task based on a certain threshold
-of the ChIP-seq value. However, the value may not be accurate in itself.
-There is no guarantee of a binding or non binding at that location
-depending on which person's sequence it is. Second, most datasets predict
-one TF at a time, using a separate model for each TF. In reality, there
-may be multiple TFs binding at the same location and interacting, thus
-requiring both a dataset which gives all TF binding values at every location
-and a multi-task model. Third, it is unclear exactly
-how to include non-binding or "negative" sites in the datasets. Since the
-number of positive binding sites of a particular TF is relatively small
-with respect to the total number of base-pairs in DNA, we must choose
-a small subset of the total non-binding sites. 
-
-These dataset formulations results in inaccuracies of the evaluation metrics.
+of the ChIP-seq value. However, the ChIP-seq values are often noisy,
+resulting in a target class that may be incorrect dependent on the
+defined threshold. 
 Converting the task into a binary classification isn't completely accurate
 since the model may give a high probability of a binding site, but the
 ChIP-seq binding signal may be just barely over the binary classification
 threshold, resulting in potential false positive (or the signal may be just
-below the threshold, resulting in potential false negatives). One of the 
-biggest flaws is the fact that most datasets artificially balance the
-positive and negative binding binding sites and report auROC for the metric.
-This is very misleading in a task where the binding sites are very unevenly
-balanced in the real world. Thus, we need datasets which more accurately
-model real TFBS data.
+below the threshold, resulting in potential false negatives).
+Second, most datasets for TFBS prediction are separated by TF,
+requiring a separate model for each TF (i.e. binary classification
+on each TF sub-dataset). In reality, there may be multiple TFs binding
+at the same location and TF binding may be dependent on other TFs,
+thus requiring both a dataset which
+gives all TF binding values at every location as well as a multi-task model.
+[@tag:Zhou2015_deep_sea] use multiple TFs at once, but TF binding prediction
+is an intermediate step for predicting effects of noncoding variants in their
+model, so TFBS prediction is not heavily analyzed.
+The third issue is that it is unclear exactly how to include non-binding or
+"negative" sites in the datasets. Since the number of positive binding sites of a
+particular TF is relatively small with respect to the total number of
+base-pairs in DNA, we must choose a small subset of the total non-binding
+sites, resulting in some sort of bias over all of the actual negative sites.
+Regardless of the negative site selection, most datasets evenly balance
+the positive and negative binding sites and report auROC for the
+metric. This is very misleading in a task where the binding sites are very
+unevenly balanced in the real world (see Discussion). Thus, we need datasets
+which more accurately model real TFBS data.
+
+
+At the model level, while deep learning models have shown that it is
+possible to automatically extract features for TFBS prediction at the
+sequence level, these basic models cannot predict the binding on new unseen
+cell types or conditions.
+Since ChIP-seq experiments have been performed on only a small subset of
+cell lines, these prediction models are not of use for new or rare cell
+lines. To handle this issue and create models which can be used across
+cell lines, there are several options. The most prominent would be to
+introduce a multi-model model which, in addition to sequence data,
+incorporates cell-line specific features such as chromatin
+accessibility, DNA methylation, or gene expression. Without cell-specific
+features, the other option is to use domain adaptation methods where
+we train our model on a source cell type and use unsupervised feature
+extraction methods to predict on a target cell type. [@tag:Qin2017_imputation]
+attempts prediction in new cell type-TF pairs, but the cell types must be in
+the training set for other TFs besides the target TF. A more general domain
+transfer model across cell types would be more useful.
+
 
 While neural architectures are rapidly changing and producing
 better results, it is clear that deep learning can be efficiently and
@@ -281,13 +307,13 @@ effectively used to do functional prediction on the genome given raw data.
 `TODO: add the following tags:
 Zeng2016_convolutional https://dx.doi.org/10.1093/bioinformatics/btw255
 Shrikumar2017_reversecomplement http://dx.doi.org/10.1101/103663
+Qin2017_imputation 10.1371/journal.pcbi.1005403
 `
 
-
-While accurately predicting transcription factors computationally is useful,
-it is important to understand how these computational models make their
-predictions. To handle this, several papers have focused on understanding
-machine learning models [@tag:Alipanahi2015_predicting
+Accurately predicting transcription factors computationally is useful,
+but it is also important to understand how these computational models
+make their predictions. To handle this, several papers have focused
+on understanding machine learning models [@tag:Alipanahi2015_predicting
 @tag:Lanchantin2016_motif @tag:Shrikumar2016_blackbox].
 [@tag:Alipanahi2015_predicting] was the first to introduce a visualization
 method for a deep learning model on the TFBS task, and they did so by
@@ -299,7 +325,7 @@ learning models and new visualizations techniques for a more in-depth analysis
 of TFBSs. Furthermore, [@tag:Shrikumar2016_blackbox] introduced an advanced
 visualization method and toolbox for analyzing possible TFBS sequences.
 [@tag:Alipanahi2015_predicting] also introduced mutation maps, where they could
-easily mutate, add, or delete basepairs in a sequence and see how the model
+easily mutate, add, or delete base pairs in a sequence and see how the model
 changed its prediction. This is something that would be very time consuming
 in a lab setting, but easy to simulate using their model. Visualization
 techniques on deep learning models are important because they can provide
@@ -308,11 +334,6 @@ verify in a lab setting, leading to new biomedical knowledge. Since the
 “linguistics” of DNA are unclear, interpretability of models is crucial to
 pushing our understanding forward.
 
-`TODO: Add discussion about the large number of deep learning works
-in this area since the DeepBind paper. In particular, add
-[#43](https://github.com/greenelab/deep-review/issues/43),
-[#215](https://github.com/greenelab/deep-review/issues/215),
-and [#258](https://github.com/greenelab/deep-review/issues/258).`
 
 ### Promoters, enhancers, and related epigenomic tasks
 
