@@ -48,20 +48,27 @@ One of the general areas where deep learning methods have had substantial
 success has been in image analysis. Applications in areas of medicine that use
 imaging extensively are also emerging. Mammography has been one area with
 numerous contributions [@tag:Dhungel2015_struct_pred_mamm
-@tag:Dhungel2016_mamm @tag:Zhu2016_mult_inst_mamm @tag:Zhu2016_advers_mamm]. In
-all of this work, the researchers must work around a specific challenge - the
-limited number of well annotated training images. To expand the number and
-diversity of images, the researchers have employed approaches where they employ
-adversarial examples [@tag:Zhu2016_advers_mamm] or first train towards
-human-created features before subsequent fine tuning [@tag:Dhungel2016_mamm].
-The presence of a large bank of well-annotated mammography images would aid in
-the application of deep neural networks to this area. Though this strategy has
-not yet been employed in this domain, large collections of unlabeled images
-might first be used in an unsupervised context to construct high-quality feature
-detectors. Then the small number of labeled examples could be used for
-subsequent training. Similar strategies have been employed for EHR data where
-high-quality labeled examples are also difficult to obtain
-[@tag:BeaulieuJones2016_ehr_encode].
+@tag:Dhungel2016_mamm @tag:Zhu2016_mult_inst_mamm @tag:Zhu2016_advers_mamm
+@tag:Dhungel2017_mamm_min_interv]. In all of this work, the researchers must
+work around a specific challenge - the limited number of well annotated
+training images. To expand the number and diversity of images, the researchers
+have employed approaches where they employ adversarial examples
+[@tag:Zhu2016_advers_mamm] or first train towards human-created features before
+subsequent fine tuning [@tag:Dhungel2016_mamm]. Adaptation to the medical image
+domain can further improved by combining in the latter approach with other
+machine learning techniques, for example, as a cascade of deep learning and
+random forest models [@tag:Dhungel2017_mamm_min_interv]. Geras et al.
+[@tag:Geras2017_multiview_mamm] showed that both having larger dataset and
+and using multi-view network architecture help to improve classification
+performance. The presence of a publicly available large bank of well-annotated
+mammography images would aid in the application of deep neural networks to
+this area and shift research focus from model generalization to effective
+processing of large image sets. Though this strategy has not yet been employed
+in this domain, large collections of unlabeled images might first be used in
+an unsupervised context to construct high-quality feature detectors. Then the
+small number of labeled examples could be used for subsequent training. Similar
+strategies have been employed for EHR data where high-quality labeled examples
+are also difficult to obtain [@tag:BeaulieuJones2016_ehr_encode].
 
 In addition to radiographic images, histology slides are also being analyzed
 with deep learning approaches. Ciresan et al. [@tag:Ciresan2013_mitosis]

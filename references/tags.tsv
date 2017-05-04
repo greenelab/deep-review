@@ -3,6 +3,7 @@ Abe	doi:10.1101/gr.634603
 Agarwal2015_targetscan	doi:10.7554/eLife.05005
 Alipanahi2015_predicting	doi:10.1038/nmeth.3547
 AltaeTran2016_one_shot	doi:10.1021/acscentsci.6b00367
+Amit2017_breast_mri	doi:10.1117/12.2249981
 Asgari	doi:10.1371/journal.pone.0141287
 blast	doi:10.1016/S0022-2836(05)80360-2
 Angermueller2016_dl_review	doi:10.15252/msb.20156651
@@ -44,6 +45,7 @@ Ditzler2	doi:10.1109/TNNLS.2014.2320415
 Ditzler3	doi:10.1109/TNB.2015.2461219
 Dhungel2015_struct_pred_mamm	doi:10.1007/978-3-319-24553-9_74
 Dhungel2016_mamm	doi:10.1007/978-3-319-46723-8_13
+Dhungel2017_mamm_min_interv	doi:10.1016/j.media.2017.01.009
 Dogwild	url:https://papers.nips.cc/paper/5717-taming-the-wild-a-unified-analysis-of-hogwild-style-algorithms.pdf
 Duvenaud2015_graph_conv	url:http://papers.nips.cc/paper/5954-convolutional-networks-on-graphs-for-learning-molecular-fingerprints
 Edwards2015_growing_pains	doi:10.1145/2771283
