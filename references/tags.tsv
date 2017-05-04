@@ -143,6 +143,7 @@ Seide2014_parallel	doi:10.1109/ICASSP.2014.6853593
 Setty2015_seqgl	doi:10.1371/journal.pcbi.1004271
 Shaham2016_batch_effects	arxiv:1610.04181
 Shrikumar2016_blackbox	arxiv:1605.01713
+Shrikumar2017_reversecomplement	http://dx.doi.org/10.1101/103663
 Singh2016_deepchrome	arxiv:1607.02078
 Silver2016_alphago	doi:10.1038/nature16961
 Sonderby	arxiv:1503.01919
@@ -183,5 +184,6 @@ yok	doi:10.1186/1471-2105-12-20
 Yoon2016_cancer_reports	doi:10.1007/978-3-319-47898-2_21
 Yosinski2014	url:https://papers.nips.cc/paper/5347-how-transferable-are-features-in-deep-neural-networks
 Zeng2015	doi:10.1186/s12859-015-0553-9
+Zeng2016_convolutional	https://dx.doi.org/10.1093/bioinformatics/btw255
 Zhang2015_multitask_tl	doi:10.1145/2783258.2783304
 Zhou2015_deep_sea	doi:10.1038/nmeth.3547
