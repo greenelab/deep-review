@@ -208,18 +208,18 @@ to recognize those who promote an ecosystem of rigorous sharing and analysis
 The sharing of high-quality, labeled datasets will be especially valuable.  In
 addition, researchers who invest time to preprocess datasets to be suitable for
 deep learning can make the preprocessing code (e.g., Basset
-[@tag:Kelley2016_basset]) and cleaned data (e.g., MoleculeNet
-[@tag:Wu2017_molecule_net]) publicly available to catalyze further research. As
-discussed in the Categorize section, there are complex privacy and legal issues
-involved in sharing patient data and deep learning models trained with it but
-also recent techniques to mitigate these concerns.  Furthermore, in some
-domains, some of the best training data has been generated privately, for
-example, high-throughput chemical screening data at pharmaceutical companies.
-One perspective is that there is little expectation or incentive for this
-private data to be shared. However, data are not inherently valuable. Instead,
-the insights that we glean from them are where the value lies. Private companies
-may establish a competitive advantage by releasing sufficient data for improved
-methods to be developed.
+[@tag:Kelley2016_basset] and variationanalysis [@tag:Torracinta2016_deep_snp])
+and cleaned data (e.g., MoleculeNet [@tag:Wu2017_molecule_net]) publicly
+available to catalyze further research. As discussed in the Categorize section,
+there are complex privacy and legal issues involved in sharing patient data and
+deep learning models trained with it but also recent techniques to mitigate
+these concerns.  Furthermore, in some domains, some of the best training data
+has been generated privately, for example, high-throughput chemical screening
+data at pharmaceutical companies. One perspective is that there is little
+expectation or incentive for this private data to be shared. However, data are
+not inherently valuable. Instead, the insights that we glean from them are where
+the value lies. Private companies may establish a competitive advantage by
+releasing sufficient data for improved methods to be developed.
 
 Code sharing and open source licensing is essential for continued progress in
 this domain.  We strongly advocate following established best practices for
@@ -237,18 +237,18 @@ deep learning frameworks, it is also possible to directly share trained
 predictive models.  The availability of pre-trained models can accelerate
 research, with image classifiers as an apt example.  A pre-trained neural
 network can be quickly fine-tuned on new data and used in transfer learning,
-both discussed below.  `TODO: bring up image-encoding for variant classification
-that used pre-trained image classifier?` "Model zoos", collections of
+both discussed below.  Taking this idea to the extreme, genomic data has been
+artificially encoded as images in order to benefit from pre-trained image
+classifiers [@tag:Poplin2016_deepvariant]. "Model zoos", collections of
 pre-trained models, are not yet common in biomedical domains but have started to
 appear in genomics applications [@tag:Angermueller2016_single_methyl
-@tag:Dragonn]. `TODO: other examples, possibly from Categorize or Treat?`
+@tag:Dragonn].
 
 DeepChem [@tag:AltaeTran2016_one_shot @tag:DeepChem @tag:Wu2017_molecule_net]
 and DragoNN [@tag:Dragonn] exemplify the benefits of sharing code under an open
-source license and pre-trained models. `TODO: it would be great to add more
-positive examples and encourage these, any suggestions?` DeepChem, which targets
-drug discovery and quantum chemistry, has actively encouraged and received
-community contributions of learning algorithms and benchmarking datasets.  As a
+source license and pre-trained models. DeepChem, which targets drug discovery
+and quantum chemistry, has actively encouraged and received community
+contributions of learning algorithms and benchmarking datasets.  As a
 consequence, it now supports of a large suite of machine learning approaches,
 both deep learning and competing strategies, that can be run on diverse test
 cases.  This realistic, continual evaluation will play a critical role in
