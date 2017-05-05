@@ -102,6 +102,7 @@ text	citation	standard_citation	citation_id
 @doi:10.1101/036129	doi:10.1101/036129	doi:10.1101/036129	s5sy4AOi
 @doi:10.1101/039800	doi:10.1101/039800	doi:10.1101/039800	aM2Uy2ix
 @doi:10.1101/041616	doi:10.1101/041616	doi:10.1101/041616	1HbQQcY2q
+@doi:10.1101/070441	doi:10.1101/070441	doi:10.1101/070441	11NHbWB1V
 @doi:10.1101/073239	doi:10.1101/073239	doi:10.1101/073239	W3grN7jy
 @doi:10.1101/081364	doi:10.1101/081364	doi:10.1101/081364	gllSeTW
 @doi:10.1101/085118	doi:10.1101/085118	doi:10.1101/085118	BMg062hc
@@ -120,6 +121,7 @@ text	citation	standard_citation	citation_id
 @doi:10.1109/tcbb.2014.2343960	doi:10.1109/tcbb.2014.2343960	doi:10.1109/tcbb.2014.2343960	ZzaRyGuJ
 @doi:10.1126/science.1132939	doi:10.1126/science.1132939	doi:10.1126/science.1132939	Ot5bUkmI
 @doi:10.1126/science.aag2302	doi:10.1126/science.aag2302	doi:10.1126/science.aag2302	BYO1aJEG
+@doi:10.1126/science.aah6168	doi:10.1126/science.aah6168	doi:10.1126/science.aah6168	gvyja7v1
 @doi:10.1136/amiajnl-2011-000150	doi:10.1136/amiajnl-2011-000150	doi:10.1136/amiajnl-2011-000150	sG3iVOTS
 @doi:10.1136/amiajnl-2011-000501	doi:10.1136/amiajnl-2011-000501	doi:10.1136/amiajnl-2011-000501	uDaRUyh9
 @doi:10.1136/amiajnl-2013-001935	doi:10.1136/amiajnl-2013-001935	doi:10.1136/amiajnl-2013-001935	11OyzMl87
@@ -190,11 +192,14 @@ text	citation	standard_citation	citation_id
 @tag:CudNN	arxiv:1410.0759	arxiv:1410.0759	YwdqeYZi
 @tag:Dahl2014_multi_qsar	arxiv:1406.1231	arxiv:1406.1231	1Dzz0P0qr
 @tag:Dean2012_nips_downpour	url:http://research.google.com/archive/large_deep_networks_nips2012.html	url:http://research.google.com/archive/large_deep_networks_nips2012.html	17cBimWgp
+@tag:DeepChem	url:https://github.com/deepchem/deepchem	url:https://github.com/deepchem/deepchem	Ytvk62dX
 @tag:Ding	doi:10.1186/s12859-015-0753-3	doi:10.1186/s12859-015-0753-3	5W4KMSdT
 @tag:Ditzler	doi:10.1186/s12859-015-0793-8	doi:10.1186/s12859-015-0793-8	1AN5UPfb1
 @tag:Ditzler2	doi:10.1109/TNNLS.2014.2320415	doi:10.1109/tnnls.2014.2320415	O9D66oYa
 @tag:Ditzler3	doi:10.1109/TNB.2015.2461219	doi:10.1109/tnb.2015.2461219	i38A0beL
 @tag:Dogwild	url:https://papers.nips.cc/paper/5717-taming-the-wild-a-unified-analysis-of-hogwild-style-algorithms.pdf	url:https://papers.nips.cc/paper/5717-taming-the-wild-a-unified-analysis-of-hogwild-style-algorithms.pdf	HIiQN4bd
+@tag:Dragonn	url:http://kundajelab.github.io/dragonn/	url:http://kundajelab.github.io/dragonn/	117PEpTMe
+@tag:Dream_tf_binding	url:https://www.synapse.org/#!Synapse:syn6131484/wiki/402026	url:https://www.synapse.org/#!Synapse:syn6131484/wiki/402026	wW6QbBXz
 @tag:Duvenaud2015_graph_conv	url:http://papers.nips.cc/paper/5954-convolutional-networks-on-graphs-for-learning-molecular-fingerprints	url:http://papers.nips.cc/paper/5954-convolutional-networks-on-graphs-for-learning-molecular-fingerprints	Oe573FaL
 @tag:Edwards2015_growing_pains	doi:10.1145/2771283	doi:10.1145/2771283	1FocAi7N0
 @tag:Elephas	url:https://github.com/maxpumperla/elephas	url:https://github.com/maxpumperla/elephas	y9IoEy4r
@@ -273,6 +278,7 @@ text	citation	standard_citation	citation_id
 @tag:Ramsundar2015_multitask_drug	arxiv:1502.02072	arxiv:1502.02072	yAoN5gTU
 @tag:Ribeiro2016_lime	arxiv:1602.04938	arxiv:1602.04938	QwXSJhr0
 @tag:Rogers2010_fingerprints	doi:10.1021/ci100050t	doi:10.1021/ci100050t	QnZ7V9Rd
+@tag:Romero2017_diet	url:https://openreview.net/pdf?id=Sk-oDY9ge	url:https://openreview.net/pdf?id=Sk-oDY9ge	15JUKBg9y
 @tag:Rosenberg2015_synthetic_seqs	doi:10.1016/j.cell.2015.09.054	doi:10.1016/j.cell.2015.09.054	mlqKTlZY
 @tag:Russakovsky2015_imagenet	doi:10.1007/s11263-015-0816-y	doi:10.1007/s11263-015-0816-y	cBVeXnZx
 @tag:Sa2015_buckwild	arxiv:1506.06438	arxiv:1506.06438	w6CoVmFK
@@ -339,6 +345,5 @@ text	citation	standard_citation	citation_id
 @url:http://www.ncrr.nih.gov/publications/informatics/ehr.pdf	url:http://www.ncrr.nih.gov/publications/informatics/ehr.pdf	url:http://www.ncrr.nih.gov/publications/informatics/ehr.pdf	DPsQumQ2
 @url:http://www.predictioncenter.org/casp12/rrc_avrg_results.cgi	url:http://www.predictioncenter.org/casp12/rrc_avrg_results.cgi	url:http://www.predictioncenter.org/casp12/rrc_avrg_results.cgi	zScWGveU
 @url:https://eprint.iacr.org/2017/281.pdf	url:https://eprint.iacr.org/2017/281.pdf	url:https://eprint.iacr.org/2017/281.pdf	1GprsH3DV
-@url:https://github.com/deepchem/deepchem	url:https://github.com/deepchem/deepchem	url:https://github.com/deepchem/deepchem	Ytvk62dX
 @url:https://medium.com/twenty-one-hundred/data-is-the-new-oil-a-ludicrous-proposition-1d91bba4f294	url:https://medium.com/twenty-one-hundred/data-is-the-new-oil-a-ludicrous-proposition-1d91bba4f294	url:https://medium.com/twenty-one-hundred/data-is-the-new-oil-a-ludicrous-proposition-1d91bba4f294	o8mib4CN
 @url:https://phekb.org/implementations	url:https://phekb.org/implementations	url:https://phekb.org/implementations	ziudr6hx
