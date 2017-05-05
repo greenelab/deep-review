@@ -210,16 +210,15 @@ addition, researchers who invest time to preprocess datasets to be suitable for
 deep learning can make the preprocessing code (e.g., Basset
 [@tag:Kelley2016_basset] and variationanalysis [@tag:Torracinta2016_deep_snp])
 and cleaned data (e.g., MoleculeNet [@tag:Wu2017_molecule_net]) publicly
-available to catalyze further research. As discussed in the Categorize section,
-there are complex privacy and legal issues involved in sharing patient data and
-deep learning models trained with it but also recent techniques to mitigate
-these concerns.  Furthermore, in some domains, some of the best training data
-has been generated privately, for example, high-throughput chemical screening
-data at pharmaceutical companies. One perspective is that there is little
-expectation or incentive for this private data to be shared. However, data are
-not inherently valuable. Instead, the insights that we glean from them are where
-the value lies. Private companies may establish a competitive advantage by
-releasing sufficient data for improved methods to be developed.
+available to catalyze further research. However, there are complex privacy and
+legal issues involved in sharing patient data that cannot be ignored.
+Furthermore, in some domains, some of the best training data has been generated
+privately, for example, high-throughput chemical screening data at
+pharmaceutical companies. One perspective is that there is little expectation or
+incentive for this private data to be shared. However, data are not inherently
+valuable. Instead, the insights that we glean from them are where the value
+lies. Private companies may establish a competitive advantage by releasing
+sufficient data for improved methods to be developed.
 
 Code sharing and open source licensing is essential for continued progress in
 this domain.  We strongly advocate following established best practices for
@@ -242,7 +241,10 @@ artificially encoded as images in order to benefit from pre-trained image
 classifiers [@tag:Poplin2016_deepvariant]. "Model zoos", collections of
 pre-trained models, are not yet common in biomedical domains but have started to
 appear in genomics applications [@tag:Angermueller2016_single_methyl
-@tag:Dragonn].
+@tag:Dragonn].  Sharing models for patient data requires great care because deep
+learning models can be attacked to identify examples used in training.  We
+discuss this issue as well as recent techniques to mitigate these concerns in
+the patient categorization section.
 
 DeepChem [@tag:AltaeTran2016_one_shot @tag:DeepChem @tag:Wu2017_molecule_net]
 and DragoNN [@tag:Dragonn] exemplify the benefits of sharing code under an open
