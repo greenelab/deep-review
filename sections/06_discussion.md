@@ -106,15 +106,14 @@ architectures, such as Diet Networks for high-dimensional SNP data
 [@tag:Romero2017_diet]. Diet Networks use multiple networks to drastically
 reduce the number of free parameters by first flipping the problem and training
 a network to predict parameters (weights) for each input (SNP) to learn a
-feature embedding. This embedding (i.e. PCA, per class histograms, x2vec style
-`TODO: clarify`) can be learned directly from the input data, but has the
-advantage that it can also be learned from other datasets or from domain
-knowledge. Additionally, in this task, the features are the examples, an
-important fact when it is typical to have 500k+ SNPs and only a few thousand
-patients. Finally, this embedding is of a much lower dimension, allowing for a
-large reduction in the number of free parameters. In the example given, the
-authors reduced the number of free parameters from 30 million to 50k, a factor
-of 600.
+feature embedding. This embedding (i.e. PCA, per class histograms, or a Word2vec
+[@tag:Word2Vec] generalization) can be learned directly from the input data or
+can take advantage of other datasets or domain knowledge. Additionally, in this
+task, the features are the examples, an important fact when it is typical to
+have 500k+ SNPs and only a few thousand patients. Finally, this embedding is of
+a much lower dimension, allowing for a large reduction in the number of free
+parameters. In the example given, the authors reduced the number of free
+parameters from 30 million to 50 thousand, a factor of 600.
 
 ### Hardware limitations and scaling
 
@@ -216,25 +215,22 @@ involved in sharing patient data and deep learning models trained with it but
 also recent techniques to mitigate these concerns.  Furthermore, in some
 domains, some of the best training data has been generated privately, for
 example, high-throughput chemical screening data at pharmaceutical companies.
-There is little expectation or incentive for this private data to be shared.
-`TODO: this last line is fairly pessimistic, is there something better to say?
-Is it possible to create the right incentives and/or protect proprietary data?`
+One perspective is that there is little expectation or incentive for this
+private data to be shared. However, data are not inherently valuable. Instead,
+the insights that we glean from them are where the value lies. Private companies
+may establish a competitive advantage by releasing sufficient data for improved
+methods to be developed.
 
 Code sharing and open source licensing is essential for continued progress in
-this domain.  Even though some journals have improved requirements about code
-availability at the time of publication, there remain many opportunities to do
-better.  Preprints are firmly established in many areas of machine learning and
-are becoming increasingly popular in the biomedical domain.  We advocate that
-code repositories are made available alongside preprints instead of waiting
-until publication, especially because some important work in this field is never
-published in a conference or journal.  In addition, it is important for authors
-to share not only code for their core models but also scripts and code used for
-data cleaning (see above) and hyperparameter optimization.  These improve
-reproducibility and serve as documentation of the detailed decisions that impact
-model performance but may not be exhaustively captured in a manuscript's methods
-text. `TODO: there are many other things that could be added here (e.g.
-licensing), but I'm not sure much time to spend on issues that are not deep
-learning-specific; maybe cite some good existing work?)`
+this domain.  We strongly advocate following established best practices for
+sharing source code, archiving code in repositories that generate digital object
+identifiers, and open licensing [@doi:10.1126/science.aah6168] regardless of
+the minimal requirements, or lack thereof, set by journals, conferences, or
+preprint servers.  In addition, it is important for authors to share not only
+code for their core models but also scripts and code used for data cleaning (see
+above) and hyperparameter optimization.  These improve reproducibility and serve
+as documentation of the detailed decisions that impact model performance but may
+not be exhaustively captured in a manuscript's methods text.
 
 Because many deep learning models are often built using one of several popular
 deep learning frameworks, it is also possible to directly share trained
