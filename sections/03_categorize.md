@@ -46,11 +46,12 @@ regards to data availability and labeling.
 
 One of the general areas where deep learning methods have had substantial
 success has been in image analysis. Applications in areas of medicine that use
-imaging extensively are also emerging. Mammography has been one area with
-numerous contributions [@tag:Dhungel2015_struct_pred_mamm
-@tag:Dhungel2016_mamm @tag:Zhu2016_mult_inst_mamm @tag:Zhu2016_advers_mamm
-@tag:Dhungel2017_mamm_min_interv]. In all of this work, the researchers must
-work around a specific challenge - the limited number of well annotated
+imaging extensively are also emerging [@tag:Litjens2017_medimage_survey].
+Mammography has been one area with numerous contributions
+[@tag:Dhungel2015_struct_pred_mamm @tag:Dhungel2016_mamm
+@tag:Zhu2016_mult_inst_mamm @tag:Zhu2016_advers_mamm
+@tag:Dhungel2017_mamm_min_interv]. In the most of this work, the researchers
+must work around a specific challenge - the limited number of well annotated
 training images. To expand the number and diversity of images, the researchers
 have employed approaches where they employ adversarial examples
 [@tag:Zhu2016_advers_mamm] or first train towards human-created features before
@@ -71,15 +72,31 @@ this area and shift research focus from model generalization to effective
 processing of large image sets. Deep network pre-trained on large annotated
 mammogram set can be helpful for related tasks that do not have as much
 data using transfer learning [@tag:Kooi2017_mamm_tl]. Though this strategy has
-not yet been employed in this domain, large collections of unlabeled images
-might first be used in an unsupervised context to construct high-quality
-feature detectors. Then the small number of labeled examples could be used for
+not yet been employed in this domain, high-quality feature detectors can be
+constructed from large collections of unlabeled images in an unsupervised
+context. Then the small number of labeled examples could be used for
 subsequent training. Similar strategies have been employed for EHR data where
 high-quality labeled examples are also difficult to obtain
 [@tag:BeaulieuJones2016_ehr_encode].
 
+`TODO: add radiography, CT, MRI`
+Deep learning methods are gaining popularity as a method for computer
+tomography-based (CT) abnormality detection. However, this type of tasks often
+depends on both lesion localization and appearance. Moreover, since is
+three-dimensional, it makes application of standard neural networks
+computationally unfeasible due to the curse of dimensionality.
+
+Similarly, in magnetic resonance image (MRI) analysis, limited size of training
+sets pose a challenge to deep learning applications. For example, Amit et al.
+[@tag:Amit2017_breast_mri] investigated the tradeoffs between using pre-trained
+models from a different domain and retraining a small-size CNN on MRI images
+They showed that smaller network trained with sufficient data augmentation on
+few hundred images from a few dozen patients can outperform  a pre-trained
+out-of-domain classifier.
+
 In addition to radiographic images, histology slides are also being analyzed
-with deep learning approaches. Ciresan et al. [@tag:Ciresan2013_mitosis]
+with deep learning approaches [@tag:Litjens2016_histopath_survey].
+Ciresan et al. [@tag:Ciresan2013_mitosis]
 developed one of the earliest examples, winning the 2012 International
 Conference on Pattern Recognition's Contest on Mitosis Detection while
 achieving human competitive accuracy. Their approach uses what has become a
