@@ -80,21 +80,20 @@ training instances can be just as problematic.  In genomics, for example,
 labeled data may be derived from an experimental assay that has known and
 unknown technical artifacts, biases, and error profiles.  It is possible to
 weight training examples or construct Bayesian models to account for uncertainty
-in the data, but this is rarely done in practice. `TODO: Is this even true?
-Would like feedback here.`
+in the data, but this is rarely done in practice. `TODO: @cgreene will edit
+this last line; it might be done in practice but not highlighted in papers`
 
 For some types of data, especially images, it is straightforward to augment
 training datasets by splitting one labeled example into multiple examples. An
-image can easily be rotated or inverted and retain its label `TODO: does someone
-have examples to cite here? Issue #163?`.  3D MRI and 4D fMRI (with time as a
-dimension) data can be decomposed into sets of 2D images [@doi:10.1101/070441].
-This greatly expands the number of training examples in domains where only
-hundreds of subjects are available but artificially treats images from the same
-volume as independent instances and sacrifices the structure inherent in the
-data.  CellCnn trains a model to recognize rare cell populations in single-cell
-data by creating training instances that consist of random subsets of cells that
-are randomly sampled with replacement from the full dataset
-[@tag:Arvaniti2016_rare_subsets].
+image can easily be rotated, flipped, or translated and retain its label
+[@doi:10.1101/095794].  3D MRI and 4D fMRI (with time as a dimension) data can
+be decomposed into sets of 2D images [@doi:10.1101/070441]. This greatly expands
+the number of training examples in domains where only hundreds of subjects are
+available but artificially treats images from the same volume as independent
+instances and sacrifices the structure inherent in the data.  CellCnn trains a
+model to recognize rare cell populations in single-cell data by creating
+training instances that consist of random subsets of cells that are randomly
+sampled with replacement from the full dataset [@tag:Arvaniti2016_rare_subsets].
 
 Simulated or semi-synthetic training data has also been employed in multiple
 biomedical domains. `TODO:  simulated data: #5 #99 #293, maybe #117 and #197.
@@ -102,14 +101,20 @@ There is a counter-example from drug discovery to include as well
 that is related to #55`
 
 Multimodal, multi-task, and transfer learning, discussed in detail below, can
-also combat data limitations to some degree.  There are also emerging
-network architectures, such as Diet Networks for high-dimensional SNP data
-[@tag:Romero2017_diet], that drastically reduce the number of free parameters
-by predicting parameters (weights) as a function of each SNP's embedding
-in some feature space instead of directly optimizing a weight for each SNP.
-`TODO: not very familiar with this paper, can someone describe it better?`
-
-`TODO: didn't comment on hand-coded versus learned features`
+also combat data limitations to some degree. There are also emerging network
+architectures, such as Diet Networks for high-dimensional SNP data
+[@tag:Romero2017_diet]. Diet Networks use multiple networks to drastically
+reduce the number of free parameters by first flipping the problem and training
+a network to predict parameters (weights) for each input (SNP) to learn a
+feature embedding. This embedding (i.e. PCA, per class histograms, x2vec style
+`TODO: clarify`) can be learned directly from the input data, but has the
+advantage that it can also be learned from other datasets or from domain
+knowledge. Additionally, in this task, the features are the examples, an
+important fact when it is typical to have 500k+ SNPs and only a few thousand
+patients. Finally, this embedding is of a much lower dimension, allowing for a
+large reduction in the number of free parameters. In the example given, the
+authors reduced the number of free parameters from 30 million to 50k, a factor
+of 600.
 
 ### Hardware limitations and scaling
 
