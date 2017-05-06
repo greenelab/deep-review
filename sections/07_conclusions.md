@@ -64,7 +64,7 @@ understand or "recognise the semantic of the object". Until true and reliable
 artificial intelligence becomes standard in the laboratory and in the clinic,
 the human factor still has a critical role to play. In some cases, cooperation
 between human experts and deep learning algorithms can achieve better
-performance than either of them individually [@tag:Wang2016_breast_cancer].
+performance than either of them individually [@arxiv:1606.05718].
 Especially for sample and patient classification tasks, we expect deep learning
 methods to complement and assist biomedical researchers rather than compete with
 or even replace them.
