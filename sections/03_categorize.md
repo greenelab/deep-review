@@ -79,21 +79,33 @@ be used for subsequent training. Similar strategies have been employed for
 EHR data where high-quality labeled examples are also difficult to obtain
 [@tag:BeaulieuJones2016_ehr_encode].
 
-`TODO: add radiography, CT, MRI`
-Deep learning methods are gaining popularity as a method for computer
-tomography-based (CT) abnormality detection. However, this type of tasks often
-depends on both lesion localization and appearance. Moreover, since is
-three-dimensional, it makes application of standard neural networks
+`TODO: filter TL stuff and move to Discussion:TL section?`
+In radiological image analysis, deep learning techniques are increasingly used
+even when dataset size is not big enough to train large capacity models from
+scratch [@tag:Bar2015_nonmed_tl @tag:Shin2016_cad_tl
+@tag:Rajkomar2017_radiographs @tag:Lakhani2017_radiography]. All these
+studies demonstrate successful transfer of features learnt from natural image
+datasets, such as ImageNet [@tag:Russakovsky2015_imagenet]. This approach is
+known as transfer learning (see Discussion). Shin et al. [@tag:Shin2016_cad_tl]
+compared various deep network architectures, dataset characteristics, and
+training procedures for computer tomography-based (CT) abnormality detection.
+They concluded that in case of three-dimensional data networks as deep as 22
+layers can be useful for such problems despite the limited size of training
+datasets. However, they note, that choice of a specific architecture,
+parameters, and fine-tuning needed is very problem and dataset-specific.
+However, this type of tasks often depends on both lesion localization and
+appearance that pose challenges for CNN-based approaches. Moreover,
+straightforward attempts to capture useful information in three dimensions
+simultaneously make applications of standard neural network architectures
 computationally unfeasible due to the curse of dimensionality.
 
-
 Similarly, in magnetic resonance image (MRI) analysis, limited size of training
-sets pose a challenge to deep learning applications. For example, Amit et al.
-[@tag:Amit2017_breast_mri] investigated the tradeoffs between using pre-trained
-models from a different domain and retraining a small-size CNN on MRI images
-They showed that smaller network trained with sufficient data augmentation on
-few hundred images from a few dozen patients can outperform  a pre-trained
-out-of-domain classifier.
+sets and large dimensionality represent challenges to deep learning
+applications. For example, Amit et al. [@tag:Amit2017_breast_mri] investigated
+the tradeoffs between using pre-trained models from a different domain and
+retraining a small-size CNN on MRI images. They showed that smaller network
+trained with sufficient data augmentation on few hundred images from a
+few dozen patients can outperform a pre-trained out-of-domain classifier.
 
 In addition to radiographic images, histology slides are also being analyzed
 with deep learning approaches [@tag:Litjens2016_histopath_survey].

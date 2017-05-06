@@ -11,6 +11,7 @@ Angermueller2016_single_methyl	doi:10.1186/s13059-017-1189-z
 Artemov2016_clinical	doi:10.1101/095653
 Arvaniti2016_rare_subsets	doi:10.1101/046508
 Baskin2015_drug_disc	doi:10.1080/17460441.2016.1201262
+Bar2015_nonmed_tl	doi:10.1117/12.2083124
 Barash2010_splicing_code	doi:10.1038/nature09000
 Baxt1991_myocardial	doi:10.7326/0003-4819-115-11-843
 BeaulieuJones2016_ehr_encode	doi:10.1016/j.jbi.2016.10.007
@@ -93,6 +94,7 @@ Kraus2017_deeploc	doi:10.15252/msb.20177551
 Krizhevsky2013_nips_cnn	url:https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf
 Krizhevsky2014_weird_trick	arxiv:1404.5997
 Lacey2016_dl_fpga	arxiv:1602.04283
+Lakhani2017_radiography	doi:10.1148/radiol.2017162326
 Lanchantin2016_motif	arxiv:1608.03644
 Lee2016_deeptarget	arxiv:1603.09123v2
 Lee2016_emr_oct_amd	doi:10.1101/094276
@@ -154,6 +156,7 @@ Segata	doi:10.1371/journal.pcbi.1004977
 Seide2014_parallel	doi:10.1109/ICASSP.2014.6853593
 Setty2015_seqgl	doi:10.1371/journal.pcbi.1004271
 Shaham2016_batch_effects	arxiv:1610.04181
+Shin2016_cad_tl	doi:10.1109/TMI.2016.2528162
 Shrikumar2016_blackbox	arxiv:1605.01713
 Singh2016_deepchrome	arxiv:1607.02078
 Silver2016_alphago	doi:10.1038/nature16961
