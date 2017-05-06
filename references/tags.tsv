@@ -36,11 +36,14 @@ Consortium2004_encode	doi:10.1126/science.1105136
 CudNN	arxiv:1410.0759
 Dahl2014_multi_qsar	arxiv:1406.1231
 Dean2012_nips_downpour	url:http://research.google.com/archive/large_deep_networks_nips2012.html
+DeepChem	url:https://github.com/deepchem/deepchem
 Ding	doi:10.1186/s12859-015-0753-3
 Ditzler	doi:10.1186/s12859-015-0793-8
 Ditzler2	doi:10.1109/TNNLS.2014.2320415
 Ditzler3	doi:10.1109/TNB.2015.2461219
 Dogwild	url:https://papers.nips.cc/paper/5717-taming-the-wild-a-unified-analysis-of-hogwild-style-algorithms.pdf
+Dream_tf_binding	url:https://www.synapse.org/#!Synapse:syn6131484/wiki/402026
+Dragonn	url:http://kundajelab.github.io/dragonn/
 Duvenaud2015_graph_conv	url:http://papers.nips.cc/paper/5954-convolutional-networks-on-graphs-for-learning-molecular-fingerprints
 Edwards2015_growing_pains	doi:10.1145/2771283
 Elephas	url:https://github.com/maxpumperla/elephas
@@ -131,6 +134,7 @@ Ramsundar2015_multitask_drug	arxiv:1502.02072
 Raina2009_gpu	doi:10.1145/1553374.1553486
 Ribeiro2016_lime	arxiv:1602.04938
 Rogers2010_fingerprints	doi:10.1021/ci100050t
+Romero2017_diet	url:https://openreview.net/pdf?id=Sk-oDY9ge
 Rosenberg2015_synthetic_seqs	doi:10.1016/j.cell.2015.09.054
 Russakovsky2015_imagenet	doi:10.1007/s11263-015-0816-y
 Sa2015_buckwild	arxiv:1506.06438
@@ -143,6 +147,7 @@ Seide2014_parallel	doi:10.1109/ICASSP.2014.6853593
 Setty2015_seqgl	doi:10.1371/journal.pcbi.1004271
 Shaham2016_batch_effects	arxiv:1610.04181
 Shrikumar2016_blackbox	arxiv:1605.01713
+Shrikumar2017_reversecomplement	http://dx.doi.org/10.1101/103663
 Singh2016_deepchrome	arxiv:1607.02078
 Silver2016_alphago	doi:10.1038/nature16961
 Sonderby	arxiv:1503.01919
@@ -183,5 +188,6 @@ yok	doi:10.1186/1471-2105-12-20
 Yoon2016_cancer_reports	doi:10.1007/978-3-319-47898-2_21
 Yosinski2014	url:https://papers.nips.cc/paper/5347-how-transferable-are-features-in-deep-neural-networks
 Zeng2015	doi:10.1186/s12859-015-0553-9
+Zeng2016_convolutional	https://dx.doi.org/10.1093/bioinformatics/btw255
 Zhang2015_multitask_tl	doi:10.1145/2783258.2783304
 Zhou2015_deep_sea	doi:10.1038/nmeth.3547
