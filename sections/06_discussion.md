@@ -80,8 +80,14 @@ training instances can be just as problematic.  In genomics, for example,
 labeled data may be derived from an experimental assay that has known and
 unknown technical artifacts, biases, and error profiles.  It is possible to
 weight training examples or construct Bayesian models to account for uncertainty
-in the data, but this is rarely done in practice. `TODO: @cgreene will edit
-this last line; it might be done in practice but not highlighted in papers`
+or non-independence in the data. For example, Park et al.
+[@doi:10.1371/journal.pcbi.1002957] estimated shared non-biological signal
+between datasets to correct for non-independence related to assay platform or
+other factors in a Bayesian integration of many datasets. However, such
+techniques are rarely placed front and center in the description of methods, so
+these steps may be overlooked. In this review we have tried to highlight the
+types of approaches that deep learning practitioners are using to overcome
+limitations in the data.
 
 For some types of data, especially images, it is straightforward to augment
 training datasets by splitting one labeled example into multiple examples. An
