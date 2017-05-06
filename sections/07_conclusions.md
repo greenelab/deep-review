@@ -52,6 +52,23 @@ addition, the stochasticity and complexity of biological systems implies that
 for some problems, for instance, predicting gene regulation in disease, perfect
 accuracy will be unattainable.
 
+We are witnessing deep learning models achieving human-level performance across
+a number of biomedical domains, and yet we do not believe that biologists and
+clinicians will be out of a job anytime soon. While deep learning and other
+advanced algorithms will soon be (or already are) better than scientists at
+specific tasks, in many cases they would still be unable to fully grasp the
+bigger picture. Deep neural networks are also prone to mistakes that humans are
+much more unlikely to make, such as incorrectly classifying negative images
+[@arXiv:1703.06857], an important reminder that these algorithms do not really
+understand or "recognise the semantic of the object", they merely "memorize the
+inputs". Until true and reliable artificial intelligence becomes standard
+in the laboratory and in the clinic, the human factor still has a critical role
+to play. In some cases, cooperation between human experts and deep learning
+algorithms can achieve better performance than either of them individually
+[@tag:Wang2016_breast_cancer]. Particularly for sample and patient
+classification tasks, we expect deep learning methods to complement and assist
+biomedical researchers rather than compete with or even replace them. 
+
 Even if deep learning in biology and healthcare is not yet transformative today,
 we are extremely optimistic about its future.  Given how rapidly deep learning
 is evolving, its full potential in biomedicine has not been explored.  We have
