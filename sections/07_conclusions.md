@@ -81,11 +81,13 @@ transcription factor binding prediction and molecular graphs instead of
 pre-computed bit vectors for drug discovery. These flexible input feature
 representations have spurred creative modeling approaches that would be
 infeasible with other machine learning techniques. Unsupervised methods are
-currently less-developed than their supervised counterparts, but they may have
-the most potential. When deep learning algorithms can summarize very large
-collections of input data into interpretable models that spur scientists to ask
-questions that they didn't know to ask, it will be clear that deep learning has
-transformed biology and medicine.
+currently less developed than their supervised counterparts, but they may have
+the most potential because of how expensive and time-consuming it is to label
+the large amounts of unlabelled data existing in the field of biomedicine. When
+deep learning algorithms can summarize very large collections of input data into
+interpretable models that spur scientists to ask questions that they didn't know
+how to ask, it will be clear that deep learning has transformed biology and
+medicine.
 
 ### Author contributions
 
