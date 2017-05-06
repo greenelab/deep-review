@@ -60,23 +60,23 @@ domain can further improved by combining in the latter approach with other
 machine learning techniques, for example, as a cascade of deep learning and
 random forest models [@tag:Dhungel2017_mamm_min_interv]. Using larger dataset
 of around 45,000 images, Kooi et al. [@tag:Kooi2016_mamm_lesions] demonstrated
-that deep neural networks can outperform the traditional CAD system at low
-sensitivity and perform comparably at high sensitivity. They also compared
-network performance to certified screening radiologists on a patch level and
-found no significant difference between the network and the readers. Similarly,
-Geras et al. [@tag:Geras2017_multiview_mamm] showed that both having larger
-dataset and using multi-view network architecture help to improve classification
-performance. The presence of a publicly available large bank of well-annotated
-mammography images would aid in the application of deep neural networks to
-this area and shift research focus from model generalization to effective
-processing of large image sets. Deep network pre-trained on large annotated
-mammogram set can be helpful for related tasks that do not have as much
-data using transfer learning [@tag:Kooi2017_mamm_tl]. Though this strategy has
-not yet been employed in this domain, high-quality feature detectors can be
-constructed from large collections of unlabeled images in an unsupervised
-context. Then the small number of labeled examples could be used for
-subsequent training. Similar strategies have been employed for EHR data where
-high-quality labeled examples are also difficult to obtain
+that deep neural networks can outperform the traditional computer-aided
+diagnosis (CAD) system at low sensitivity and perform comparably at high
+sensitivity. They also compared network performance to certified screening
+radiologists on a patch level and found no significant difference between the
+network and the readers. Similarly, Geras et al. [@tag:Geras2017_multiview_mamm]
+showed that both having larger dataset and using multi-view network architecture
+help to improve classification performance. The presence of a publicly available
+large bank of well-annotated mammography images would aid in the application
+of deep neural networks to this area and shift research focus from model
+generalization to effective processing of large image sets. Deep network
+pre-trained on large annotated mammogram set can be helpful for related tasks
+that do not have as much data using transfer learning [@tag:Kooi2017_mamm_tl].
+Though this strategy has not yet been employed in this domain, high-quality
+feature detectors can be constructed from large collections of unlabeled images
+in an unsupervised context. Then the small number of labeled examples could
+be used for subsequent training. Similar strategies have been employed for
+EHR data where high-quality labeled examples are also difficult to obtain
 [@tag:BeaulieuJones2016_ehr_encode].
 
 `TODO: add radiography, CT, MRI`
@@ -85,6 +85,7 @@ tomography-based (CT) abnormality detection. However, this type of tasks often
 depends on both lesion localization and appearance. Moreover, since is
 three-dimensional, it makes application of standard neural networks
 computationally unfeasible due to the curse of dimensionality.
+
 
 Similarly, in magnetic resonance image (MRI) analysis, limited size of training
 sets pose a challenge to deep learning applications. For example, Amit et al.
@@ -115,8 +116,8 @@ of an ensemble between deep learning algorithm and human expert may help
 overcome some of the challenges presented by data limitations.
 
 One source of training examples with rich clinical annotations is the electronic
-health record. Recently Lee et al.[@tag:Lee2016_emr_oct_amd] developed an
-approach to distinguish individuals with Age-related Macular Degeneration
+health records. Recently Lee et al.[@tag:Lee2016_emr_oct_amd] developed an
+approach to distinguish individuals with age-related macular degeneration
 from control individuals. They extracted approximately 100,000 images from
 structured electronic health records, which they used to train and evaluate a
 deep neural network. Combining this data resource with standard deep learning
