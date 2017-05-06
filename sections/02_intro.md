@@ -14,21 +14,20 @@ critical environments.
 
 Concurrent with this explosive growth in biomedical data, a new enthusiasm for a
 class of machine learning algorithms, known as deep learning, is revolutionizing
-domains from image search to the game of Go [@doi:10.1038/nature16961]. As
-recently applied to image analysis problems, these architectures readily surpass
-previous best-in-class results, and computer scientists are now building
-many-layered neural networks from collections of millions of images. In a famous
-and early example, scientists from Google demonstrated that a neural network
-could learn to identify cats simply by watching online videos
+image search. These architectures readily surpass previous best-in-class
+results, and computer scientists are now building many-layered neural networks
+from collections of millions of images. In a famous and early example,
+scientists from Google demonstrated that a neural network could learn to
+identify cats simply by watching online videos
 [@url:http://research.google.com/archive/unsupervised_icml2012.html].
 
-What if, more generally, deep learning could solve the challenges
-presented by the growth of data in biomedicine? Could these algorithms
-identify the "cats" hidden in our data - the patterns unknown to the
-researcher - and act on them? In this review,
-we examine whether this transformation is simply a matter of time or
-if there are unique challenges posed by biomedical data that render deep
-learning methods either more challenging or less fruitful to apply.
+What if, more generally, deep learning could solve the challenges presented by
+the growth of data in biomedicine? Could these algorithms identify the "cats"
+hidden in our data - the patterns unknown to the researcher - and act on them?
+In this review, we examine whether deep learning's transformation of biomedical
+science is simply a matter of time or if there are unique challenges posed by
+biomedical data that render deep learning methods either more challenging or
+less fruitful to apply.
 
 ### Defining deep learning
 
@@ -44,16 +43,18 @@ approaches, attention has shifted back to neural networks. Our focus is
 primarily on the downstream applications enabled by these advances.
 
 Several important advances make the current surge of work done in this area
-possible. Easy-to-use software packages including Theano [@arxiv:1605.02688],
-TensorFlow [@arxiv:1605.08695], and Keras
-[@url:https://github.com/fchollet/keras/], have brought the techniques of the
-field out of the specialist's toolkit to a broad community of computational
+possible. Easy-to-use software packages have brought the techniques of the field
+out of the specialist's toolkit to a broad community of computational
 scientists. With the growing attention focused on these methods, new techniques
 for fast training have enabled their application to larger datasets
-[@arxiv:1106.5730]. The growing popularity of the field has also led to a
-proliferation of new approaches, many of which are well suited for addressing
-distinct challenges. Finally, the larger datasets now available are also well
-suited to fitting the many parameters that exist for deep neural networks.
+[@arxiv:1106.5730]. Dropout of nodes, edges and layers makes networks more
+robust, even when the number of parameters is very large. The growing popularity
+of the field has also led to a proliferation of neural network approaches, many
+of which are well suited for addressing distinct challenges. For example, neural
+networks structured as autoencoders or as adversarial networks require no labels
+and are now regularly used for unsupervised tasks. Finally, the larger datasets
+now available are also well suited to fitting the many parameters that exist for
+deep neural networks.
 
 The convergence of these factors currently makes deep learning extremely
 adaptable, and capable of addressing the nuanced differences of each domain to
