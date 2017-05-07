@@ -85,9 +85,7 @@ or non-independence in the data. For example, Park et al.
 between datasets to correct for non-independence related to assay platform or
 other factors in a Bayesian integration of many datasets. However, such
 techniques are rarely placed front and center in the description of methods, so
-these steps may be overlooked. In this review we have tried to highlight the
-types of approaches that deep learning practitioners are using to overcome
-limitations in the data.
+these steps may be overlooked.
 
 For some types of data, especially images, it is straightforward to augment
 training datasets by splitting one labeled example into multiple examples. An
