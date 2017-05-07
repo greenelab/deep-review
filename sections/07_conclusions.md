@@ -54,20 +54,21 @@ accuracy will be unattainable.
 
 We are witnessing deep learning models achieving human-level performance across
 a number of biomedical domains, and yet we do not believe that biologists and
-clinicians will be out of a job anytime soon. While deep learning and other
-advanced algorithms will soon be (or already are) better than scientists at
-specific tasks, in many cases they would still be unable to fully grasp the
-bigger picture. Deep neural networks are also prone to mistakes that humans are
-much more unlikely to make, such as incorrectly classifying negative images
-[@arxiv:1703.06857], an important reminder that these algorithms do not really
-understand or "recognise the semantic of the object". Until true and reliable
-artificial intelligence becomes standard in the laboratory and in the clinic,
-the human factor still has a critical role to play. In some cases, cooperation
-between human experts and deep learning algorithms can achieve better
-performance than either of them individually [@arxiv:1606.05718].
+clinicians will be out of a job anytime soon. While deep learning methods will
+soon be (or already are) better than scientists at specific tasks, they may not
+fully grasp the bigger picture. Machine learning algorithms, including deep
+neural networks, are also prone to mistakes that humans are much less likely to
+make, such as misclassification of adversarial examples [@arxiv:1312.6199
+@arxiv:1412.6572], a reminder that these algorithms do not necessarily
+understand the semantics of the objects presented. Despite progress in
+addressing some of these limitations [arxiv:1611.03814 @arxiv:1704.01155], until
+true and reliable artificial intelligence becomes standard in the laboratory and
+in the clinic, the human factor still has a critical role to play. In some
+cases, cooperation between human experts and deep learning algorithms can
+achieve better performance than either of them individually [@arxiv:1606.05718].
 Especially for sample and patient classification tasks, we expect deep learning
 methods to complement and assist biomedical researchers rather than compete with
-or even replace them.
+or replace them.
 
 Even if deep learning in biology and healthcare is not yet transformative today,
 we are extremely optimistic about its future.  Given how rapidly deep learning
