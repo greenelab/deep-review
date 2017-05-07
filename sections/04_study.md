@@ -283,22 +283,18 @@ Since ChIP-seq experiments have been performed on only a small subset of cell
 lines, these prediction models are not of use for new or rare cell lines. To
 handle this issue and create models which can be used across cell lines, there
 are several options. The most prominent would be to introduce a multimodal
-model which, in addition to sequence data, incorporates cell-line specific
+model that, in addition to sequence data, incorporates cell-line specific
 features such as chromatin accessibility, DNA methylation, or gene expression.
 Without cell-specific features, the other option is to use domain adaptation
 methods where we train our model on a source cell type and use unsupervised
 feature extraction methods to predict on a target cell type.
-[@tag:Qin2017_imputation] attempts prediction in new cell type-TF pairs, but the
-cell types must be in the training set for other TFs besides the target TF. A
-more general domain transfer model across cell types would be more useful.
+[@tag:Qin2017_onehot] predicts binding in new cell type-TF pairs, but the cell
+types must be in the training set for other TFs besides the target TF. A more
+general domain transfer model across cell types would be more useful.
 
 While neural architectures are rapidly changing and producing better results, it
 is clear that deep learning can be efficiently and effectively used to do
 functional prediction on the genome given raw data.
-
-`TODO: add the following tags: Zeng2016_convolutional
-https://dx.doi.org/10.1093/bioinformatics/btw255 Shrikumar2017_reversecomplement
-http://dx.doi.org/10.1101/103663 Qin2017_imputation 10.1371/journal.pcbi.1005403 `
 
 Accurately predicting transcription factors computationally is useful, but it is
 also important to understand how these computational models make their
