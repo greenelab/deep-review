@@ -68,7 +68,7 @@ cases, cooperation between human experts and deep learning algorithms can
 achieve better performance than either of them individually [@arxiv:1606.05718].
 Especially for sample and patient classification tasks, we expect deep learning
 methods to complement and assist biomedical researchers rather than compete with
-or replace them.
+or even replace them.
 
 Even if deep learning in biology and healthcare is not yet transformative today,
 we are extremely optimistic about its future.  Given how rapidly deep learning
@@ -84,11 +84,10 @@ representations have spurred creative modeling approaches that would be
 infeasible with other machine learning techniques. Unsupervised methods are
 currently less developed than their supervised counterparts, but they may have
 the most potential because of how expensive and time-consuming it is to label
-the large amounts of unlabelled data existing in the field of biomedicine. When
-deep learning algorithms can summarize very large collections of input data into
-interpretable models that spur scientists to ask questions that they didn't know
-how to ask, it will be clear that deep learning has transformed biology and
-medicine.
+large amounts of biomedical data. When deep learning algorithms can summarize
+very large collections of input data into interpretable models that spur
+scientists to ask questions that they didn't know how to ask, it will be clear
+that deep learning has transformed biology and medicine.
 
 ### Author contributions
 
