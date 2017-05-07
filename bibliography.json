@@ -32459,6 +32459,174 @@
     "id": "yg8NW0K7"
   },
   {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          5,
+          2
+        ]
+      ],
+      "date-time": "2017-05-02T19:24:31Z",
+      "timestamp": 1493753071873
+    },
+    "reference-count": 96,
+    "publisher": "Public Library of Science (PLoS)",
+    "issue": "3",
+    "license": [
+      {
+        "URL": "http://creativecommons.org/licenses/by/4.0/",
+        "start": {
+          "date-parts": [
+            [
+              2013,
+              3,
+              14
+            ]
+          ],
+          "date-time": "2013-03-14T00:00:00Z",
+          "timestamp": 1363219200000
+        },
+        "delay-in-days": 0,
+        "content-version": "vor"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "www.ploscompbiol.org"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "PLoS Comput Biol"
+    ],
+    "DOI": "10.1371/journal.pcbi.1002957",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2013,
+          3,
+          14
+        ]
+      ],
+      "date-time": "2013-03-14T23:39:22Z",
+      "timestamp": 1363304362000
+    },
+    "page": "e1002957",
+    "update-policy": "http://dx.doi.org/10.1371/journal.pcbi.corrections_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 21,
+    "title": "Functional Knowledge Transfer for High-accuracy Prediction of Under-studied Biological Processes",
+    "prefix": "10.1371",
+    "volume": "9",
+    "author": [
+      {
+        "given": "Christopher Y.",
+        "family": "Park",
+        "affiliation": []
+      },
+      {
+        "given": "Aaron K.",
+        "family": "Wong",
+        "affiliation": []
+      },
+      {
+        "given": "Casey S.",
+        "family": "Greene",
+        "affiliation": []
+      },
+      {
+        "given": "Jessica",
+        "family": "Rowland",
+        "affiliation": []
+      },
+      {
+        "given": "Yuanfang",
+        "family": "Guan",
+        "affiliation": []
+      },
+      {
+        "given": "Lars A.",
+        "family": "Bongo",
+        "affiliation": []
+      },
+      {
+        "given": "Rebecca D.",
+        "family": "Burdine",
+        "affiliation": []
+      },
+      {
+        "given": "Olga G.",
+        "family": "Troyanskaya",
+        "affiliation": []
+      }
+    ],
+    "member": "340",
+    "published-online": {
+      "date-parts": [
+        [
+          2013,
+          3,
+          14
+        ]
+      ]
+    },
+    "container-title": "PLoS Computational Biology",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          12,
+          28
+        ]
+      ],
+      "date-time": "2016-12-28T13:58:54Z",
+      "timestamp": 1482933534000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "editor": [
+      {
+        "given": "Greg",
+        "family": "Tucker-Kellogg",
+        "affiliation": []
+      }
+    ],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2013,
+          3,
+          14
+        ]
+      ]
+    },
+    "references-count": 96,
+    "URL": "http://dx.doi.org/10.1371/journal.pcbi.1002957",
+    "relation": {
+      "cites": []
+    },
+    "issn-type": [
+      {
+        "value": "1553-7358",
+        "type": "electronic"
+      }
+    ],
+    "subject": [
+      "Ecology",
+      "Modelling and Simulation",
+      "Computational Theory and Mathematics",
+      "Genetics",
+      "Ecology, Evolution, Behavior and Systematics",
+      "Molecular Biology",
+      "Cellular and Molecular Neuroscience"
+    ],
+    "id": "5tvnB4uW"
+  },
+  {
     "abstract": "After a more than decade-long period of relatively little research activity in the area of recurrent neural networks, several new developments will be reviewed here that have allowed substantial progress both in understanding and in technical solutions towards more efficient training of recurrent networks. These advances have been motivated by and related to the optimization issues surrounding deep learning. Although recurrent networks are extremely powerful in what they can in principle represent in terms of modelling sequences,their training is plagued by two aspects of the same issue regarding the learning of long-term dependencies. Experiments reported here evaluate the use of clipping gradients, spanning longer time ranges with leaky integration, advanced momentum techniques, using more powerful output probability models, and encouraging sparser gradients to help symmetry breaking and credit assignment. The experiments are performed on text and music data and show off the combined effects of these techniques in generally improving both training and test error.",
     "author": [
       {
