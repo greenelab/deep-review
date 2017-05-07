@@ -34566,5 +34566,23 @@
       "id": "15JUKBg9y"
     },
     "citation_id": "15JUKBg9y"
+  },
+  "arxiv:1106.5730": {
+    "source": "arxiv",
+    "identifer": "1106.5730",
+    "standard_citation": "arxiv:1106.5730",
+    "bibtex": "@article{3qm8sXnB,\n abstract = {Stochastic Gradient Descent (SGD) is a popular algorithm that can achieve\nstate-of-the-art performance on a variety of machine learning tasks. Several\nresearchers have recently proposed schemes to parallelize SGD, but all require\nperformance-destroying memory locking and synchronization. This work aims to\nshow using novel theoretical analysis, algorithms, and implementation that SGD\ncan be implemented without any locking. We present an update scheme called\nHOGWILD! which allows processors access to shared memory with the possibility\nof overwriting each other's work. We show that when the associated optimization\nproblem is sparse, meaning most gradient updates only modify small parts of the\ndecision variable, then HOGWILD! achieves a nearly optimal rate of convergence.\nWe demonstrate experimentally that HOGWILD! outperforms alternative schemes\nthat use locking by an order of magnitude.},\n archiveprefix = {arXiv},\n author = {Feng Niu and Benjamin Recht and Christopher Re and Stephen J. Wright},\n eprint = {1106.5730v2},\n file = {1106.5730v2.pdf},\n link = {http://arxiv.org/abs/1106.5730v2},\n month = {Jun},\n primaryclass = {math.OC},\n title = {HOGWILD!: A Lock-Free Approach to Parallelizing Stochastic Gradient\nDescent},\n year = {2011}\n}\n\n",
+    "citation_id": "3qm8sXnB"
+  },
+  "url:http://www.deeplearningbook.org/": {
+    "source": "url",
+    "identifer": "http://www.deeplearningbook.org/",
+    "standard_citation": "url:http://www.deeplearningbook.org/",
+    "citeproc": {
+      "URL": "http://www.deeplearningbook.org/",
+      "type": "webpage",
+      "id": "yg8NW0K7"
+    },
+    "citation_id": "yg8NW0K7"
   }
 }

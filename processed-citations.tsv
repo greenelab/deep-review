@@ -1,4 +1,5 @@
 text	citation	standard_citation	citation_id
+@arxiv:1106.5730	arxiv:1106.5730	arxiv:1106.5730	3qm8sXnB
 @arxiv:1206.7051	arxiv:1206.7051	arxiv:1206.7051	8RAYEOPl
 @arxiv:1212.0901v2	arxiv:1212.0901v2	arxiv:1212.0901v2	g2vvbB91
 @arxiv:1403.1347	arxiv:1403.1347	arxiv:1403.1347	8t43CQ9m
@@ -51,7 +52,6 @@ text	citation	standard_citation	citation_id
 @doi:10.1016/j.jbi.2014.10.006	doi:10.1016/j.jbi.2014.10.006	doi:10.1016/j.jbi.2014.10.006	13filvWwr
 @doi:10.1016/j.jbi.2016.10.007	doi:10.1016/j.jbi.2016.10.007	doi:10.1016/j.jbi.2016.10.007	5x3uMSKi
 @doi:10.1016/j.jhealeco.2016.01.012	doi:10.1016/j.jhealeco.2016.01.012	doi:10.1016/j.jhealeco.2016.01.012	13c9OPizf
-@doi:10.1016/j.neunet.2014.09.003	doi:10.1016/j.neunet.2014.09.003	doi:10.1016/j.neunet.2014.09.003	BQS8ClV0
 @doi:10.1016/j.socscimed.2003.08.016	doi:10.1016/j.socscimed.2003.08.016	doi:10.1016/j.socscimed.2003.08.016	XJw23xy0
 @doi:10.1016/j.tig.2015.05.007	doi:10.1016/j.tig.2015.05.007	doi:10.1016/j.tig.2015.05.007	J0PJHcHK
 @doi:10.1021/acs.jproteome.6b00618	doi:10.1021/acs.jproteome.6b00618	doi:10.1021/acs.jproteome.6b00618	oTF8O79C
@@ -59,7 +59,6 @@ text	citation	standard_citation	citation_id
 @doi:10.1021/acs.molpharmaceut.6b00248	doi:10.1021/acs.molpharmaceut.6b00248	doi:10.1021/acs.molpharmaceut.6b00248	EMDwvRGb
 @doi:10.1021/ci500340n	doi:10.1021/ci500340n	doi:10.1021/ci500340n	16FEYidu2
 @doi:10.1037/h0037350	doi:10.1037/h0037350	doi:10.1037/h0037350	cpNVdlL7
-@doi:10.1038/nature14539	doi:10.1038/nature14539	doi:10.1038/nature14539	BeijBSRE
 @doi:10.1038/nature16961	doi:10.1038/nature16961	doi:10.1038/nature16961	2gn6PKkv
 @doi:10.1038/nature21056	doi:10.1038/nature21056	doi:10.1038/nature21056	XnYNYoYB
 @doi:10.1038/nbt.3313	doi:10.1038/nbt.3313	doi:10.1038/nbt.3313	yXqhuueV
@@ -341,6 +340,7 @@ text	citation	standard_citation	citation_id
 @url:http://proceedings.mlr.press/v54/mcmahan17a.html	url:http://proceedings.mlr.press/v54/mcmahan17a.html	url:http://proceedings.mlr.press/v54/mcmahan17a.html	U0ySdznJ
 @url:http://research.google.com/archive/unsupervised_icml2012.html	url:http://research.google.com/archive/unsupervised_icml2012.html	url:http://research.google.com/archive/unsupervised_icml2012.html	IiNJE32f
 @url:http://www.cameo3d.org/	url:http://www.cameo3d.org/	url:http://www.cameo3d.org/	u9uApoaB
+@url:http://www.deeplearningbook.org/	url:http://www.deeplearningbook.org/	url:http://www.deeplearningbook.org/	yg8NW0K7
 @url:http://www.intel.com/pressroom/archive/speeches/ag080998.htm	url:http://www.intel.com/pressroom/archive/speeches/ag080998.htm	url:http://www.intel.com/pressroom/archive/speeches/ag080998.htm	mAXsmd43
 @url:http://www.ncrr.nih.gov/publications/informatics/ehr.pdf	url:http://www.ncrr.nih.gov/publications/informatics/ehr.pdf	url:http://www.ncrr.nih.gov/publications/informatics/ehr.pdf	DPsQumQ2
 @url:http://www.predictioncenter.org/casp12/rrc_avrg_results.cgi	url:http://www.predictioncenter.org/casp12/rrc_avrg_results.cgi	url:http://www.predictioncenter.org/casp12/rrc_avrg_results.cgi	zScWGveU

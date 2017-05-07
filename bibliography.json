@@ -32454,6 +32454,11 @@
     "id": "15JUKBg9y"
   },
   {
+    "URL": "http://www.deeplearningbook.org/",
+    "type": "webpage",
+    "id": "yg8NW0K7"
+  },
+  {
     "abstract": "After a more than decade-long period of relatively little research activity in the area of recurrent neural networks, several new developments will be reviewed here that have allowed substantial progress both in understanding and in technical solutions towards more efficient training of recurrent networks. These advances have been motivated by and related to the optimization issues surrounding deep learning. Although recurrent networks are extremely powerful in what they can in principle represent in terms of modelling sequences,their training is plagued by two aspects of the same issue regarding the learning of long-term dependencies. Experiments reported here evaluate the use of clipping gradients, spanning longer time ranges with leaky integration, advanced momentum techniques, using more powerful output probability models, and encouraging sparser gradients to help symmetry breaking and credit assignment. The experiments are performed on text and music data and show off the combined effects of these techniques in generally improving both training and test error.",
     "author": [
       {
@@ -34781,6 +34786,39 @@
       ]
     },
     "title": "English conversational telephone speech recognition by humans and machines",
+    "type": "article-journal"
+  },
+  {
+    "abstract": "Stochastic Gradient Descent (SGD) is a popular algorithm that can achieve state-of-the-art performance on a variety of machine learning tasks. Several researchers have recently proposed schemes to parallelize SGD, but all require performance-destroying memory locking and synchronization. This work aims to show using novel theoretical analysis, algorithms, and implementation that SGD can be implemented without any locking. We present an update scheme called HOGWILD! which allows processors access to shared memory with the possibility of overwriting each other’s work. We show that when the associated optimization problem is sparse, meaning most gradient updates only modify small parts of the decision variable, then HOGWILD! achieves a nearly optimal rate of convergence. We demonstrate experimentally that HOGWILD! outperforms alternative schemes that use locking by an order of magnitude.",
+    "author": [
+      {
+        "family": "Niu",
+        "given": "Feng"
+      },
+      {
+        "family": "Recht",
+        "given": "Benjamin"
+      },
+      {
+        "family": "Re",
+        "given": "Christopher"
+      },
+      {
+        "family": "Wright",
+        "given": "Stephen J."
+      }
+    ],
+    "id": "3qm8sXnB",
+    "issued": {
+      "date-parts": [
+        [
+          2011,
+          6
+        ]
+      ]
+    },
+    "title": "HOGWILD!: A lock-free approach to parallelizing stochastic gradient descent",
+    "title-short": "HOGWILD!",
     "type": "article-journal"
   }
 ]
