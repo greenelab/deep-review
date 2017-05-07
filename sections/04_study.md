@@ -199,27 +199,28 @@ analysis on the proteins which would lead to a better understanding of
 the underlying process. Thus, there is a need to computationally predict
 and understand these binding regions de novo from sequences.
 
-#### Transcription Factors
+#### Transcription factors
 
-Transcription Factors (TFs) are regulatory proteins that bind to certain
+Transcription factors (TFs) are regulatory proteins that bind to certain
 locations on a DNA sequence and control the rate of mRNA production. ChIP-seq
 and related technologies are able to identify highly likely binding sites for a
 certain TF, and databases such as ENCODE [@tag:Consortium2004_encode] have
 provided ChIP-seq data for hundreds of different TFs across many laboratories.
 However, ChIP-seq experiments are expensive and time consuming. Since the data
-that scientists have discovered is available, in silico methods to predict
+that scientists have discovered is available, *in silico* methods to predict
 binding sites are of great interest, thus eliminating the need to do new
 ChIP-seq experiments every time analysis is done on a new sequence.
 
-In order to computationally predict TFBSs on a DNA sequence, researchers
-initially used consensus sequences and position weight matrices to match against
-a test sequence [@tag:Stormo2000_dna]. Simple neural network classifiers were
-then proposed to differentiate positive and negative binding sites but did not
-show significant improvements over the weight matrix matching methods
-[@tag:Horton1992_assessment]. Later, SVM techniques outperformed the generative
-methods by using k-mer features [@tag:Ghandi2014_enhanced @tag:Setty2015_seqgl],
-but string kernel based SVM systems are limited by expensive computational cost
-proportional to the number of training and testing sequences. More recently,
+In order to computationally predict transcription factor binding sites (TFBSs)
+on a DNA sequence, researchers initially used consensus sequences and position
+weight matrices to match against a test sequence [@tag:Stormo2000_dna]. Simple
+neural network classifiers were then proposed to differentiate positive and
+negative binding sites but did not show significant improvements over the weight
+matrix matching methods [@tag:Horton1992_assessment]. Later, SVM techniques
+outperformed the generative methods by using k-mer features
+[@tag:Ghandi2014_enhanced @tag:Setty2015_seqgl], but string kernel based SVM
+systems are limited by expensive computational cost proportional to the number
+of training and testing sequences. More recently,
 [@tag:Alipanahi2015_predicting] showed that convolutional neural network models
 could achieve state of the art results on the TFBS task and are scalable to a
 large number of genomic sequences.
@@ -254,6 +255,7 @@ completely accurate since the model may give a high probability of a binding
 site, but the ChIP-seq binding signal may be just barely over the binary
 classification threshold, resulting in potential false positive (or the signal
 may be just below the threshold, resulting in potential false negatives).
+
 Second, most datasets for TFBS prediction are separated by TF, requiring a
 separate model for each TF (i.e. binary classification on each TF sub-dataset).
 In reality, there may be multiple TFs binding at the same location and TF
@@ -261,16 +263,18 @@ binding may be dependent on other TFs, thus requiring both a dataset which gives
 all TF binding values at every location as well as a multi-task model.
 [@tag:Zhou2015_deep_sea] use multiple TFs at once, but TF binding prediction is
 an intermediate step for predicting effects of noncoding variants in their
-model, so TFBS prediction is not heavily analyzed. The third issue is that it is
-unclear exactly how to include non-binding or "negative" sites in the datasets.
-Since the number of positive binding sites of a particular TF is relatively
-small with respect to the total number of base-pairs in DNA, we must choose a
-small subset of the total non-binding sites, resulting in some sort of bias over
-all of the actual negative sites. Regardless of the negative site selection,
-most datasets evenly balance the positive and negative binding sites and report
-auROC for the metric. This is very misleading in a task where the binding sites
-are very unevenly balanced in the real world (see Discussion). Thus, we need
-datasets which more accurately model real TFBS data.
+model, so TFBS prediction is not heavily analyzed.
+
+A third issue is that it is unclear exactly how to include non-binding or
+"negative" sites in the datasets. Since the number of positive binding sites of
+a particular TF is relatively small with respect to the total number of
+base-pairs in DNA, we must choose a small subset of the total non-binding sites,
+resulting in some sort of bias over all of the actual negative sites. Regardless
+of the negative site selection, most datasets evenly balance the positive and
+negative binding sites and report auROC for the metric. This is very misleading
+in a task where the binding sites are very unevenly balanced in the real world
+(see Discussion). Thus, we need datasets which more accurately model real TFBS
+data.
 
 At the model level, while deep learning models have shown that it is possible to
 automatically extract features for TFBS prediction at the sequence level, these
@@ -278,7 +282,7 @@ basic models cannot predict the binding on new unseen cell types or conditions.
 Since ChIP-seq experiments have been performed on only a small subset of cell
 lines, these prediction models are not of use for new or rare cell lines. To
 handle this issue and create models which can be used across cell lines, there
-are several options. The most prominent would be to introduce a multi-model
+are several options. The most prominent would be to introduce a multimodal
 model which, in addition to sequence data, incorporates cell-line specific
 features such as chromatin accessibility, DNA methylation, or gene expression.
 Without cell-specific features, the other option is to use domain adaptation
@@ -316,7 +320,7 @@ consuming in a lab setting, but easy to simulate using their model.
 Visualization techniques on deep learning models are important because they can
 provide new insights on regulatory mechanisms and can lead biologists to test
 and verify in a lab setting, leading to new biomedical knowledge. Since the
-“linguistics” of DNA are unclear, interpretability of models is crucial to
+"linguistics" of DNA are unclear, interpretability of models is crucial to
 pushing our understanding forward.
 
 `TODO: cut RNA-binding proteins from above section, refer to representative
