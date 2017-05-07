@@ -46,7 +46,14 @@ regards to data availability and labeling.
 
 One of the general areas where deep learning methods have had substantial
 success has been in image analysis. Applications in areas of medicine that use
-imaging extensively are also emerging [@tag:Litjens2017_medimage_survey].
+imaging extensively are also emerging. To the date, deep learning has been
+employed for a wide range of tasks in medical imaging, including classification
+of exams and lesions/nodules, localization of organs, regions, landmarks, and
+lesions, segmentation of organs, organ substructures, and lesions, medical
+image registration, content-based image retrieval, image generation and
+enhancement, and combining image data with clinical reports. For the extensive
+overview of approaches and applications see [@tag:Litjens2017_medimage_survey].
+
 Mammography has been one area with numerous contributions
 [@tag:Dhungel2015_struct_pred_mamm @tag:Dhungel2016_mamm
 @tag:Zhu2016_mult_inst_mamm @tag:Zhu2016_advers_mamm
@@ -79,7 +86,6 @@ be used for subsequent training. Similar strategies have been employed for
 EHR data where high-quality labeled examples are also difficult to obtain
 [@tag:BeaulieuJones2016_ehr_encode].
 
-`TODO: filter TL stuff and move to Discussion:TL section?`
 In radiological image analysis, deep learning techniques are increasingly used
 even when dataset size is not big enough to train large capacity models from
 scratch [@tag:Bar2015_nonmed_tl @tag:Shin2016_cad_tl
@@ -92,12 +98,20 @@ training procedures for computer tomography-based (CT) abnormality detection.
 They concluded that in case of three-dimensional data networks as deep as 22
 layers can be useful for such problems despite the limited size of training
 datasets. However, they note, that choice of a specific architecture,
-parameters, and fine-tuning needed is very problem and dataset-specific.
-However, this type of tasks often depends on both lesion localization and
-appearance that pose challenges for CNN-based approaches. Moreover,
-straightforward attempts to capture useful information in three dimensions
-simultaneously make applications of standard neural network architectures
-computationally unfeasible due to the curse of dimensionality.
+parameter setting, and model fine-tuning needed is very problem and
+dataset-specific. Moreover, this type of tasks often depends on both lesion
+localization and appearance that pose challenges for CNN-based approaches.
+Straightforward attempts to capture useful information from full-size images
+in all three dimensions simultaneously make applications of standard neural
+network architectures computationally unfeasible due to the curse of
+dimensionality. Instead, two dimensional models are often used to either process
+image slides individually (2D), or aggregate information from slides across
+the third dimension (2.5D). Roth et al. compared 2D, 2.5D, and 3D CNNs on a
+number of tasks for computer-aided detection from CT scans and showed that
+2.5D CNNs performed comparably well to 3D analogs, while requiring much less
+training time, especially on augmented training sets
+[@tag:Roth2015_view_agg_cad]. Another advantage of 2D and 2.5D networks is an
+ability to use widely available models pre-trained on natural images.
 
 Similarly, in magnetic resonance image (MRI) analysis, limited size of training
 sets and large dimensionality represent challenges to deep learning
@@ -183,9 +197,9 @@ outperformed the other methods. Of particular interest, when the authors first
 trained a neural network to predict primary site and then repurposed those
 features as a component of a secondary neural network trained to predict
 laterality, the performance was higher than a laterality-trained neural network.
-This indicates a potential strength of deep methods. They can repurpose
-features across tasks, improving overall predictions as the field tackles
-new challenges. This approach is known as transfer learning (see Discussion).
+This demonstrates how deep learning methods can repurpose features across tasks,
+improving overall predictions as the field tackles new challenges. For the
+further review of this type of approaches see Discussion.
 
 Several authors have created reusable feature sets for medical terminologies
 using natural language processing (NLP) and neural embedding models, as
