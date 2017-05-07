@@ -52,9 +52,11 @@ robust, even when the number of parameters is very large. The growing popularity
 of the field has also led to a proliferation of neural network approaches, many
 of which are well suited for addressing distinct challenges. For example, neural
 networks structured as autoencoders or as adversarial networks require no labels
-and are now regularly used for unsupervised tasks. Finally, the larger datasets
-now available are also well suited to fitting the many parameters that exist for
-deep neural networks.
+and are now regularly used for unsupervised tasks. In this review, we do not
+exhaustively discuss the different types of deep neural network architectures. A
+recent book from Goodfellow et al [@url:http://www.deeplearningbook.org/] covers
+these in detail. Finally, the larger datasets now available are also well suited
+to fitting the many parameters that exist for deep neural networks.
 
 The convergence of these factors currently makes deep learning extremely
 adaptable, and capable of addressing the nuanced differences of each domain to
@@ -76,9 +78,9 @@ Grove, the former CEO of Intel, coined the term Strategic Inflection Point to
 refer to a change in technologies or environment that requires a business to be
 fundamentally reshaped
 [@url:http://www.intel.com/pressroom/archive/speeches/ag080998.htm]. Here, we
-ought to identify whether deep learning was an innovation that would induce a
-strategic inflection point on the practice of biology or medicine. We considered
-this with an eye towards the concept of precision medicine.
+sought to identify whether deep learning was an innovation that would induce a
+strategic inflection point on the practice of biology or medicine. We structured
+the review with an eye towards the concept of precision medicine.
 
 There are numerous examples where deep learning
 has been applied to biological problems and produced somewhat improved results,
@@ -89,6 +91,18 @@ learning in biology [@doi:10.1038/nbt.3313 @doi:10.1002/minf.201501008
 learning was enabling researchers to solve challenges that were previously
 considered infeasible, or if it made difficult, tedious, and non-routine
 analyses routine.
+
+In biomedical contexts, there are domain-specific considerations that influence
+how to best harness the power and flexibility of deep learning. Model
+interpretability can be critical. Understanding the patterns in data may be just
+as important as fitting the data. In addition, there are important and pressing
+questions about how to build networks that can efficiently represent the
+underlying structure and logic of the data. Domain experts can play important
+roles in designing networks to represent data appropriately, encoding the most
+salient prior knowledge and assessing success or failure. There is also great
+potential to create deep learning systems that are not intended to replace
+biologists and clinicians but rather cooperate with them, working to prioritize
+experiments or streamline tasks that do not require expert judgment.
 
 Based on our guiding question, we focused on the application of deep learning to
 topics of biomedical importance. We divided the large range of topics into three
