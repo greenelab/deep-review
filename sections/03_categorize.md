@@ -44,29 +44,28 @@ regards to data availability and labeling.
 
 #### Imaging applications in healthcare
 
-One of the general areas where deep learning methods have had substantial
-success has been in image analysis. Applications in areas of medicine that use
-imaging extensively are also emerging. To the date, deep learning has been
-employed for a wide range of tasks in medical imaging, including classification
-of exams and lesions/nodules, localization of organs, regions, landmarks, and
-lesions, segmentation of organs, organ substructures, and lesions, medical
-image registration, content-based image retrieval, image generation and
-enhancement, and combining image data with clinical reports. For the extensive
-literature review, including approaches and applications see recent papers
-[@tag:Litjens2017_medimage_survey @tag:Shen2017_medimg_review].
+One area where deep learning methods have had substantial success has been in
+image analysis. Applications in areas of medicine that use imaging extensively
+are also emerging. To the date, deep learning has been employed for a wide
+range of tasks in medical imaging, including classification of exams and
+lesions/nodules, localization of organs, regions, landmarks, and lesions,
+segmentation of organs, organ substructures, and lesions, medical image
+registration, content-based image retrieval, image generation and enhancement,
+and combining image data with clinical reports [@tag:Litjens2017_medimage_survey
+@tag:Shen2017_medimg_review].
 
 Closest to natural images are applications of deep learning aimed at
 detection and recognition of melanoma, the deadliest form of skin cancer.
 Recent works included applications to both dermoscopy
-[@tag:Codella2016_ensemble_melanoma @tag:Yu2016_melanoma_resnet] and simply
-clinical photography images of skin lesions [@tag:Jafari2016_skin_lesions
-@tag:Esfahani2016_melanoma @tag:Esteva2017_skin_cancer_nature]. For both
-modalities pre-training on natural images appears to be common model
-initialization, applied networks can be as deep as over 50 layers, and result
-performance is competitive or better compared to a board of certified
-dermatologists [@tag:Codella2016_ensemble_melanoma
-@tag:Esteva2017_skin_cancer_nature]. This approach is
-known as transfer learning (see Discussion).
+[@tag:Codella2016_ensemble_melanoma @tag:Yu2016_melanoma_resnet] and
+non-dermoscopic clinical photography images of skin lesions
+[@tag:Jafari2016_skin_lesions @tag:Esfahani2016_melanoma
+@tag:Esteva2017_skin_cancer_nature]. For both modalities pre-training on natural
+images appears to be common model initialization that allows the use of very
+deep networks without overfitting. Reported performance is competitive or better
+compared to a board of certified dermatologists
+[@tag:Codella2016_ensemble_melanoma @tag:Esteva2017_skin_cancer_nature].
+This approach is known as transfer learning (see Discussion).
 
 Another fast emerging area of deep learning method applications is detection of
 ophthalmological diseases such as diabetic retinopathy and age-related macular
@@ -101,14 +100,14 @@ the researchers have employed approaches where they use adversarial examples
 subsequent fine tuning [@tag:Dhungel2016_mamm]. Adaptation to the medical image
 domain can further improved by combining in the latter approach with other
 machine learning techniques, for example, as a cascade of deep learning and
-random forest models [@tag:Dhungel2017_mamm_min_interv]. Using larger dataset
-of around 45,000 images, Kooi et al. [@tag:Kooi2016_mamm_lesions] demonstrated
-that deep neural networks can outperform the traditional computer-aided
-diagnosis (CAD) system at low sensitivity and perform comparably at high
-sensitivity. They also compared network performance to certified screening
+random forest models [@tag:Dhungel2017_mamm_min_interv]. Using large dataset,
+Kooi et al. [@tag:Kooi2016_mamm_lesions] demonstrated that deep neural
+networks can outperform the traditional computer-aided diagnosis (CAD)
+system at low sensitivity and perform comparably at high sensitivity.
+They also compared network performance to certified screening
 radiologists on a patch level and found no significant difference between the
 network and the readers. Similarly, Geras et al. [@tag:Geras2017_multiview_mamm]
-showed that both having larger dataset and using multi-view network architecture
+showed that both using large dataset and using multi-view network architecture
 help to improve classification performance. The presence of a publicly available
 large bank of well-annotated mammography images would aid in the application
 of deep neural networks to this area and shift research focus from model
@@ -117,7 +116,7 @@ pre-trained on large annotated mammogram set can be helpful for related tasks
 that do not have as much data using transfer learning [@tag:Kooi2017_mamm_tl].
 Though this strategy has not yet been employed in this domain, high-quality
 feature detectors can be constructed from large collections of unlabeled images
-in an unsupervised context. Then the small number of labeled examples could
+in an unsupervised context. The small number of labeled examples could
 be used for subsequent training. Similar strategies have been employed for
 EHR data where high-quality labeled examples are also difficult to obtain
 [@tag:BeaulieuJones2016_ehr_encode].
@@ -128,11 +127,11 @@ scratch [@tag:Bar2015_nonmed_tl @tag:Shin2016_cad_tl
 @tag:Rajkomar2017_radiographs @tag:Lakhani2017_radiography]. All these
 studies demonstrate successful transfer of features learnt from natural image
 datasets, such as ImageNet [@tag:Russakovsky2015_imagenet]. Rajkomar et al.
-[@tag:Rajkomar2017_radiographs] showed that although a deep CNN trained on
-natural images can boost radiology image classification performance, target
-task required either re-training the initial model from scratch with special
-pre-processing or fine-tuning of the whole network on radiographs with heavy
-data augmentation to avoid overfitting. Shin et al. [@tag:Shin2016_cad_tl]
+[@tag:Rajkomar2017_radiographs] showed that a deep CNN trained on natural
+images can boost performance in radiology image classification. However, the
+target task required either re-training the initial model from scratch with
+special pre-processing or fine-tuning of the whole network on radiographs with
+heavy data augmentation to avoid overfitting. Shin et al. [@tag:Shin2016_cad_tl]
 compared various deep network architectures, dataset characteristics, and
 training procedures for computer tomography-based (CT) abnormality detection.
 They concluded that in case of three-dimensional data networks as deep as 22
@@ -162,13 +161,13 @@ trained with sufficient data augmentation on few hundred images from a
 few dozen patients can outperform a pre-trained out-of-domain classifier.
 Nie et al. [@tag:Nie2016_3d_survival] showed that multimodal, multi-channel
 3D deep architecture was successful at learning high-level brain tumor
-appearance features jointly from T1 MRI, fMRI and DTI images, outperforming
-single-modality or 2D models. Overall, the variety of modalities, properties
-and sizes of training sets, dimensionality of input, and, finally, the
-importance of end goals in medical image analysis are provoking a development
-of specialized deep neural network architectures, training and validation
-protocols, and input representations that are not characteristic of widely
-studied natural images.
+appearance features jointly from MRI, functional MRI and diffusion MRI images,
+outperforming single-modality or 2D models. Overall, the variety of modalities,
+properties and sizes of training sets, dimensionality of input, and, finally,
+the importance of end goals in medical image analysis are provoking a
+development of specialized deep neural network architectures, training and
+validation protocols, and input representations that are not characteristic of
+widely studied natural images.
 
 In addition to medical imaging, histology slides are also being analyzed
 with deep learning approaches [@tag:Litjens2016_histopath_survey].
@@ -181,10 +180,10 @@ In more recent work, Wang et al. [@tag:Wang2016_breast_cancer] analyzed stained
 slides to identify cancers within slides of lymph node slices. The approach
 provided a probability map for each slide. On this task a pathologist has about
 a 3% error rate. The pathologist did not produce any false positives, but did
-have a number of false negatives. Their algorithm had about twice the error
-rate of a pathologist. However, their algorithms errors were not strongly
-correlated with the pathologist. Theoretically, combining both could reduce
-the error rate to under 1%. In this area, these algorithms may be ready to
+have a number of false negatives. While the algorithm had about twice the
+error rate of a pathologist, the errors were not strongly correlated with those
+of a pathologist, suggesting that the two could be combined, theoretically,
+reducing error rate to under 1%. In this area, these algorithms may be ready to
 incorporate into existing tools to aid pathologists. The authors' work suggests
 that this could reduce the false negative rate of such evaluations. This theme
 of an ensemble between deep learning algorithm and human expert may help
