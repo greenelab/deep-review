@@ -61,7 +61,7 @@ neural networks, are also prone to mistakes that humans are much less likely to
 make, such as misclassification of adversarial examples [@arxiv:1312.6199
 @arxiv:1412.6572], a reminder that these algorithms do not understand the
 semantics of the objects presented. Despite progress in addressing some of these
-limitations [arxiv:1611.03814 @arxiv:1704.01155], until true and reliable
+limitations [@arxiv:1611.03814 @arxiv:1704.01155], until true and reliable
 artificial intelligence becomes standard in the laboratory and in the clinic,
 the human factor still has a critical role to play. In some cases, cooperation
 between human experts and deep learning algorithms can achieve better
