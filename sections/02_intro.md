@@ -14,175 +14,60 @@ critical environments.
 
 Concurrent with this explosive growth in biomedical data, a new enthusiasm for a
 class of machine learning algorithms, known as deep learning, is revolutionizing
-domains from image search to the game of Go [@doi:10.1038/nature16961]. As
-recently applied to image analysis problems, these architectures readily surpass
-previous best-in-class results, and computer scientists are now building
-many-layered neural networks from collections of millions of images. In a famous
-and early example, scientists from Google demonstrated that a neural network
-could learn to identify cats simply by watching online videos
+image search. These architectures readily surpass previous best-in-class
+results, and computer scientists are now building many-layered neural networks
+from collections of millions of images. In a famous and early example,
+scientists from Google demonstrated that a neural network could learn to
+identify cats simply by watching online videos
 [@url:http://research.google.com/archive/unsupervised_icml2012.html].
 
-What if, more generally, deep learning could solve the challenges
-presented by the growth of data in biomedicine? Could these algorithms
-identify the "cats" hidden in our data - the patterns unknown to the
-researcher - and act on them? Deep learning has transformed image analysis, but
-what about biomedicine more broadly? In this review,
-we examine whether this transformation is simply a matter of time or
-if there are unique challenges posed by biomedical data that render deep
-learning methods more challenging or less fruitful to apply.
+What if, more generally, deep learning could solve the challenges presented by
+the growth of data in biomedicine? Could these algorithms identify the "cats"
+hidden in our data - the patterns unknown to the researcher - and act on them?
+In this review, we examine whether deep learning's transformation of biomedical
+science is simply a matter of time or if there are unique challenges posed by
+biomedical data that render deep learning methods either more challenging or
+less fruitful to apply.
 
-### What is deep learning?
+### Defining deep learning
 
-One version:
-`TODO: this section needs citations`
-
-Deep Learning is a collection of new techniques that together have recently
-demonstrated breakthrough gains over existing approaches in several fields. It
-is built on a very old idea, neural networks, that was first proposed in 1943
-[@doi:10.1007/BF02478259] as a model for how biological brains process
-information. Since then, interest in neural networks a computational models has
-waxed and waned several times. This history is interesting in its own right
-[@doi:10.1103/RevModPhys.34.135], but in recent years, with the advances of Deep
-Learning, attention has shifted back.
+The term deep learning has come to refer to a collection of new techniques that,
+together, have demonstrated breakthrough gains over existing best-in-class
+algorithms across several fields. It is built on artificial neural networks, an
+idea that was first proposed in 1943 [@doi:10.1007/BF02478259] as a model for
+how biological brains process information. Since then, interest in neural
+networks as computational models has waxed and waned several times. This history
+is interesting in its own right [@doi:10.1103/RevModPhys.34.135]. With the gains
+shown by techniques falling under the aegis of deep learning over alternative
+approaches, attention has shifted back to neural networks. Our focus is
+primarily on the downstream applications enabled by these advances.
 
 Several important advances make the current surge of work done in this area
-possible.
+possible. Easy-to-use software packages have brought the techniques of the field
+out of the specialist's toolkit to a broad community of computational
+scientists. With the growing attention focused on these methods, new techniques
+for fast training have enabled their application to larger datasets
+[@arxiv:1106.5730]. Dropout of nodes, edges and layers makes networks more
+robust, even when the number of parameters is very large. The growing popularity
+of the field has also led to a proliferation of neural network approaches, many
+of which are well suited for addressing distinct challenges. For example, neural
+networks structured as autoencoders or as adversarial networks require no labels
+and are now regularly used for unsupervised tasks. In this review, we do not
+exhaustively discuss the different types of deep neural network architectures. A
+recent book from Goodfellow et al [@url:http://www.deeplearningbook.org/] covers
+these in detail. Finally, the larger datasets now available are also well suited
+to fitting the many parameters that exist for deep neural networks.
 
-First, several easy to use software packages now enable a much broader range of
-scientists to build and train complicated models. In the past, neural networks
-required very specialized knowledge to  build and modify, including the ability
-to robustly code differentials of matrix  expressions. Errors here are often
-subtle and difficult to detect, so it could be  very difficult to tailor
-networks to specific problems without substantial experience and training. Now,
-however, with these new packages, even very complex neural networks  are
-automatically differentiated, and high level scripting instructions can
-transparently run very efficiently on GPUs. The technology has progressed to the
-point that even algorithms can be differentiated `TODO: cite neural stack and
-neural memory papers`.
-
-Second, key technical insight has been uncovered that guides the construction of
-much more complicated networks that previously possible. In the past, most
-neural networks  included just a single network. A network with an arbitrary
-number of hidden nodes, but  just a single layer, can learn arbitrarily complex
-functions. And networks with more than one hidden layer (deep networks), were
-hard to train. However, it turns out, deep networks can more efficiently
-represent many tasks when they are built to mirror the underlying structure of
-the data. Moreover, deep networks are more robust and trainable when employing
-several architectural innovations: weight replication, better behaved
-non-linearities like rectified-linear units, residual networks, and better
-weight initialization, and persistent memory. `TODO: excessive jargon` Likewise
-the central role of dimensionality reduction as a strength of neural networks
-was elucidated, and this has motivated designs built to capitalize on this
-strength `TODO: cite autoencoders and word2vec`.
-
-Third, several advances in training algorithms have enabled applications of
-neural networks in ways not obviously possible. The number of training
-strategies for deep learning is growing rapidly and a complete review is beyond
-our scope. But these algorithms can train networks in domains where earlier
-algorithms struggled.  For example, newer optimizers can very efficiently learn
-using batched training, where only a portion of the data needs to be processed
-at a time. These optimizers more effectively optimize very large weight vectors
-where many weights are only rarely updated. `TODO: awkward phrasing` Noise
-contrastive error has proven particularly useful in modeling language.
-Reinforcement learning has enabled neural networks to learn how to play games
-like chess, GO, and poker. Curriculum learning enables networks to gradually
-build up expertise to solve particularly challenging algorithmic problems.
-Dropout nodes and layers make networks much more robust, even when the number of
-weights are dramatically increased. `TODO: jargon`
-
-Fourth, the convergence of these factors currently makes deep learning extremely
-adaptable, and capable  of addressing the nuanced differences of each domain to
+The convergence of these factors currently makes deep learning extremely
+adaptable, and capable of addressing the nuanced differences of each domain to
 which it is applied. Many of the advances in deep learning were first developed
-for image analysis and text analysis, but the lessons and techniques learnt
-there enable the construction of very powerful models specifically suited to the
-challenges presented by  each unique domain.
-
-### Deep learning in scientific inquiry
-
-Given the intrinsic flexibility of deep learning, it is important to consider
-the specific values and goals that are particularly important in scientific
-inquiry.
-
-First, in scientific contexts understanding the patterns in the data may be just
-as important as fitting the data. For this reason, interpretability can be more
-important here than other domains. Scientific work often aims to understand the
-underlying principles behind the data we see, and architectures and techniques
-that expose the non-obvious patterns in the data are particularly important and
-very active area of research `TODO: cite examples from all sections`.
-
-Second, there are important and pressing questions about how to build networks
-that can efficiently represent  the underlying logic of the data. This concern
-of "representability" is important, because it gives insight into the structure
-of scientific data, and when understood can guide the design of more efficient
-and effective networks. For example, one particularly important study
-demonstrates that a simple neural network can very efficiently and accurately
-model (i.e. represent) a theoretically important quantum mechanical system
-[@doi:10.1126/science.aag2302].
-
-Third, science is full of domain expertise, where there are deep traditions of
-thought stretching back decades and even centuries. Deep learning will always be
-in dialogue with this expertise, to understand the key problems, encode the most
-salient prior knowledge, and understand how to judge success or failure. There
-is a great deal of excitement about deep learning, but in most scientific
-corners careful thought needs to be put into bringing deep learning alongside
-existing experts and efforts. `TODO: appropriate comparisons with state of the
-art`
-
-Fourth, data availability and complexity is unevenly distributed across science.
-Some areas of science like genomics and particle physics are swamped in
-petabytes and exobytes of high quality data. `TODO: not just amount of data`
-Others, like chemistry, are comparatively data poor with well developed domain
-specific and effective algorithms. These differences become consequential and
-define the most successful approaches. For example, the convergence of lower
-amounts of data and important nuances to the domain might favor lower parameter
-networks that incorporate domain specific knowledge and fuse data of multiple
-different types. This flexibility, remember, is one of the most striking
-strengths of neural networks. In the long run, which strategies will be the most
-effective is an open question, but in this time of creative experimentation
-optimism is justified.
-
-None of these concerns should dampen enthusiasm about deep learning. Rather,
-because the approaches offer such great flexibility, there is good reason to
-believe that carefully defined networks might enable important scientific
-advances.
-
-Another version:
-
-Deep learning is built on a biologically-inspired approach from machine learning
-termed neural networks. Each neuron in a computational neural network, termed a
-node, has inputs, an activation function, and outputs. Each value from the
-inputs is usually multiplied by some weight and combined and summarized by the
-activation function. The value of the activation function is then multiplied by
-another set of weights to produce the output **TODO: we probably need a figure
-here - I see no way that we don't include this type of description in our paper,
-despite the fact that it's been done tons of times before. - I'm really partial
-to this nature review's explanation about making non-linear problems linear -
-figure 1 [@doi:10.1038/nature14539]** These neural networks are trained by
-identifying weights that produce a desired output from some specific input.
-
-Neural networks can also be stacked. The outputs from one network can be used as
-inputs to another. This process produces a stacked, also known as a multi-layer,
-neural network. The multi-layer neural network techniques that underlie deep
-learning have a long history. Multi-layer methods have been discussed in the
-literature for more than five decades [@doi:10.1103/RevModPhys.34.135]. Given
-this context, it's challenging to consider "deep learning" as a new advance,
-though the term has only become widespread to describe analysis methods in the
-last decade. Much of the early history of neural networks has been extensively
-covered in a recent review [@doi:10.1016/j.neunet.2014.09.003]. For the purposes
-of this review, we identify deep learning approaches as those that use
-multi-layer neural networks to construct complex features.
-
-We also discuss a class of algorithms that we term "shallow learning"
-approaches. We do not use this as a pejorative term, but instead to denote
-algorithms which have all of the hallmarks of deep approaches except that they
-employ networks of limited depth. We found it valuable to include these as we
-sought to identify the current contributions of deep learning and to predict its
-future impact. Researchers may employ these shallow learning methods for a
-number of reasons including: 1) shallow networks provide a degree of
-interpretability that better matches their use case; 2) the available data are
-insufficient to support deeper architectures, however new datasets that will
-support deep methods are expected; 3) or as building blocks to be combined with
-other non-neural-network-based approaches at subsequent stages.
+for image analysis and text analysis, but the lessons learnt and techniques
+developed there can enable the construction of very powerful models specifically
+suited to the challenges presented by many domains.  Neural networks,
+particularly deep ones, are a highly flexible representation capable of
+capturing many different types of features. Deep neural network approaches have
+demonstrated success from the game of Go [@doi:10.1038/nature16961] to quantum
+physics [@doi:10.1126/science.aag2302].
 
 ### Will deep learning transform the study of human disease?
 
@@ -193,9 +78,9 @@ Grove, the former CEO of Intel, coined the term Strategic Inflection Point to
 refer to a change in technologies or environment that requires a business to be
 fundamentally reshaped
 [@url:http://www.intel.com/pressroom/archive/speeches/ag080998.htm]. Here, we
-ought to identify whether deep learning was an innovation that would induce a
-strategic inflection point on the practice of biology or medicine. We considered
-this with an eye towards the concept of precision medicine.
+sought to identify whether deep learning was an innovation that would induce a
+strategic inflection point on the practice of biology or medicine. We structured
+the review with an eye towards the concept of precision medicine.
 
 There are numerous examples where deep learning
 has been applied to biological problems and produced somewhat improved results,
@@ -206,6 +91,18 @@ learning in biology [@doi:10.1038/nbt.3313 @doi:10.1002/minf.201501008
 learning was enabling researchers to solve challenges that were previously
 considered infeasible, or if it made difficult, tedious, and non-routine
 analyses routine.
+
+In biomedical contexts, there are domain-specific considerations that influence
+how to best harness the power and flexibility of deep learning. Model
+interpretability can be critical. Understanding the patterns in data may be just
+as important as fitting the data. In addition, there are important and pressing
+questions about how to build networks that can efficiently represent the
+underlying structure and logic of the data. Domain experts can play important
+roles in designing networks to represent data appropriately, encoding the most
+salient prior knowledge and assessing success or failure. There is also great
+potential to create deep learning systems that are not intended to replace
+biologists and clinicians but rather cooperate with them, working to prioritize
+experiments or streamline tasks that do not require expert judgment.
 
 Based on our guiding question, we focused on the application of deep learning to
 topics of biomedical importance. We divided the large range of topics into three
