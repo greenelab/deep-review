@@ -373,14 +373,16 @@ development of unsupervised representation learning methods
 train on massive collections of diverse compounds, drug-like small molecules, or
 specialized subsets.
 
-`TODO: other papers to add such as generative models`
+`TODO: emerging areas: using structure in DL and generative models`
 
-`TOOD: relationship to traditional docking (some networks include docking
-scores), deep learning with structure (e.g. [@tag:Wallach2015_atom_net
-@arxiv:1612.02751 @arxiv:1703.10603])`
+`TODO: other papers to add such as generative models, describe LSTM model, get
+mostly valid SMILES, require few training samples, not a GAN, include as fine
+tuning example in discussion, move autoencoder here`
 
-`TODO: analogies to other domains where deep learning can capture the behavior
-of complex physics (e.g. quantum physics example)?`
+`TOOD: relationship to traditional docking (some networks include docking scores +
+the docking based method that uses neighboring atoms), deep learning with
+structure (e.g. [@tag:Wallach2015_atom_net @arxiv:1612.02751
+@arxiv:1703.10603])`
 
 `TODO: link to drug repurposing section above,  DeepDTIs uses ECFPs as
 features for its 1412 compounds and protein sequence composition (PSCs)
