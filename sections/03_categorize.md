@@ -560,33 +560,33 @@ understand. The algorithms described in this review and others like them may
 become highly accurate and useful for various purposes, including within medical
 practice. However, to discover and avoid discriminatory applications it will be
 important to consider algorithm interpretability alongside accuracy. A number of
-properties of genomic data will make this difficult.  First, Research samples are 
+properties of genomic data will make this difficult.  First, research samples are 
 frequently non-representative of the general population of interest; they tend to 
 be sicker [@doi:10.1086/512821], more male [@doi:10.1016/j.neubiorev.2010.07.002], 
 and more European in ancestry [@doi:10.1371/journal.pbio.1001661]. One well-known 
 consequence of these biases in genomics is that penetrance is consistently lower 
 in the general population than would be implied by case-control data, as reviewed 
-in @doi:10.1086/512821. Moreover, genetic associations that hold in one population 
+in [@doi:10.1086/512821]. Moreover, genetic associations that hold in one population 
 may not hold in other populations with different patterns of linkage 
-disequilibrium [even when population stratification is explicitly controlled for; 
-@doi:10.1038/nrg2813]. As a result, many genomic findings are of limited value for 
+disequilibrium (even when population stratification is explicitly controlled for; 
+[@doi:10.1038/nrg2813]). As a result, many genomic findings are of limited value for 
 people of non-European ancestry[@doi:10.1371/journal.pbio.1001661] and may lead
 to worse treatment outcomes for them. Methods have been developed for mitigating 
-some of these problems in genomic studies [@doi:10.1086/512821; 
+some of these problems in genomic studies [@doi:10.1086/512821 
 @doi:10.1038/nrg2813], but it is not clear how easily they can be adapted for 
 deep models that are designed specifically to extract subtle effects from 
 high-dimensional data. For example, differences in the equipment that tended to
 be used for cases versus controls have led to spurious genetic findings 
-[e.g. @doi:10.1126/science.333.6041.404-a]; in some contexts, it may not be possible 
+(e.g. [@doi:10.1126/science.333.6041.404-a]); in some contexts, it may not be possible 
 to correct for all of these differences to the degree that a deep network is 
 unable to use them. Moreover, the complexity of deep networks makes it difficult
 to determine when their predictions are likely to be based on such 
-nominally-irrelevant features of the data [called "leakage" in other fields; 
-@doi:10.1145/2382577.2382579]. When we are not careful with our data and models,
+nominally-irrelevant features of the data (called "leakage" in other fields; 
+[@doi:10.1145/2382577.2382579]). When we are not careful with our data and models,
 we may inadvertently say more about the way the data was collected than about
 anything of scientific or predictive value, with potentially disastrous 
 and discriminatory consequences [@doi:10.1111/j.1740-9713.2016.00960.x]. 
-@doi:10.1145/2382577.2382579 discuss some ways in which these problems can be
+[@doi:10.1145/2382577.2382579] discuss some ways in which these problems can be
 mitigated, but it remains difficult to predict when they will arise, how to
 diagnose them, and how to resolve them.
 
