@@ -126,6 +126,7 @@ nbc	doi:10.1093/bioinformatics/btq619
 Nemati2016_rl	doi:10.1109/EMBC.2016.7591355
 Nguyen2014_adversarial	arxiv:1412.1897v4
 Ngiam2011	url:https://ai.stanford.edu/~ang/papers/icml11-MultimodalDeepLearning.pdf
+Nie2016_3d_survival	doi:10.1007/978-3-319-46723-8_25
 NIH2016_genome_cost	url:https://www.genome.gov/27565109/the-cost-of-sequencing-a-human-genome/
 onecodex	url:https://www.onecodex.com/
 Papernot2017_pate	url:https://openreview.net/forum?id=HkwoSDPgg
@@ -145,7 +146,7 @@ Ramsundar2015_multitask_drug	arxiv:1502.02072
 Raina2009_gpu	doi:10.1145/1553374.1553486
 Ribeiro2016_lime	arxiv:1602.04938
 Rogers2010_fingerprints	doi:10.1021/ci100050t
-Roth2015_2.5d_cad	doi:10.1109/TMI.2015.2482920
+Roth2015_view_agg_cad	doi:10.1109/TMI.2015.2482920
 Rosenberg2015_synthetic_seqs	doi:10.1016/j.cell.2015.09.054
 Russakovsky2015_imagenet	doi:10.1007/s11263-015-0816-y
 Sa2015_buckwild	arxiv:1506.06438
@@ -157,6 +158,7 @@ Segata	doi:10.1371/journal.pcbi.1004977
 Seide2014_parallel	doi:10.1109/ICASSP.2014.6853593
 Setty2015_seqgl	doi:10.1371/journal.pcbi.1004271
 Shaham2016_batch_effects	arxiv:1610.04181
+Shen2017_medimg_review	doi:10.1146/annurev-bioeng-071516-044442
 Shin2016_cad_tl	doi:10.1109/TMI.2016.2528162
 Shrikumar2016_blackbox	arxiv:1605.01713
 Singh2016_deepchrome	arxiv:1607.02078

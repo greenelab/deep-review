@@ -52,7 +52,8 @@ of exams and lesions/nodules, localization of organs, regions, landmarks, and
 lesions, segmentation of organs, organ substructures, and lesions, medical
 image registration, content-based image retrieval, image generation and
 enhancement, and combining image data with clinical reports. For the extensive
-overview of approaches and applications see [@tag:Litjens2017_medimage_survey].
+literature review, including approaches and applications see recent papers
+[@tag:Litjens2017_medimage_survey @tag:Shen2017_medimg_review].
 
 Mammography has been one area with numerous contributions
 [@tag:Dhungel2015_struct_pred_mamm @tag:Dhungel2016_mamm
@@ -125,8 +126,17 @@ the tradeoffs between using pre-trained models from a different domain and
 retraining a small-size CNN on MRI images. They showed that smaller network
 trained with sufficient data augmentation on few hundred images from a
 few dozen patients can outperform a pre-trained out-of-domain classifier.
+Nie et al. [@tag:Nie2016_3d_survival] showed that multimodal, multi-channel
+3D deep architecture was successful at learning high-level brain tumor
+appearance features jointly from T1 MRI, fMRI and DTI images, outperforming
+single-modality or 2D models. Overall, the variety of modalities, properties
+and sizes of training sets, dimensionality of input, and, finally, the
+importance of end goals in medical image analysis are provoking a development
+of specialized deep neural network architectures, training and validation
+protocols, and input representations that are not characteristic of widely
+studied natural images.
 
-In addition to radiographic images, histology slides are also being analyzed
+In addition to medical imaging, histology slides are also being analyzed
 with deep learning approaches [@tag:Litjens2016_histopath_survey].
 Ciresan et al. [@tag:Ciresan2013_mitosis]
 developed one of the earliest examples, winning the 2012 International
