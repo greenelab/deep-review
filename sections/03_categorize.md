@@ -92,7 +92,12 @@ scratch [@tag:Bar2015_nonmed_tl @tag:Shin2016_cad_tl
 @tag:Rajkomar2017_radiographs @tag:Lakhani2017_radiography]. All these
 studies demonstrate successful transfer of features learnt from natural image
 datasets, such as ImageNet [@tag:Russakovsky2015_imagenet]. This approach is
-known as transfer learning (see Discussion). Shin et al. [@tag:Shin2016_cad_tl]
+known as transfer learning (see Discussion). Rajkomar et al.
+[@tag:Rajkomar2017_radiographs] showed that although a deep CNN trained on
+natural images can boost radiology image classification performance, target
+task required either re-training the initial model from scratch with special
+pre-processing or fine-tuning of the whole network on radiographs with heavy
+data augmentation to avoid overfitting. Shin et al. [@tag:Shin2016_cad_tl]
 compared various deep network architectures, dataset characteristics, and
 training procedures for computer tomography-based (CT) abnormality detection.
 They concluded that in case of three-dimensional data networks as deep as 22
@@ -105,13 +110,13 @@ Straightforward attempts to capture useful information from full-size images
 in all three dimensions simultaneously make applications of standard neural
 network architectures computationally unfeasible due to the curse of
 dimensionality. Instead, two dimensional models are often used to either process
-image slides individually (2D), or aggregate information from slides across
-the third dimension (2.5D). Roth et al. compared 2D, 2.5D, and 3D CNNs on a
-number of tasks for computer-aided detection from CT scans and showed that
-2.5D CNNs performed comparably well to 3D analogs, while requiring much less
-training time, especially on augmented training sets
-[@tag:Roth2015_view_agg_cad]. Another advantage of 2D and 2.5D networks is an
-ability to use widely available models pre-trained on natural images.
+image slices individually (2D), or aggregate information from a number of 2D
+projections in the native space (2.5D). Roth et al. compared 2D, 2.5D, and
+3D CNNs on a number of tasks for computer-aided detection from CT scans and
+showed that 2.5D CNNs performed comparably well to 3D analogs, while requiring
+much less training time, especially on augmented training sets
+[@tag:Roth2015_view_agg_cad]. Another advantage of 2D and 2.5D networks is a
+possibility to use widely available models pre-trained on natural images.
 
 Similarly, in magnetic resonance image (MRI) analysis, limited size of training
 sets and large dimensionality represent challenges to deep learning
@@ -157,11 +162,6 @@ biomedical research for such evaluations. We recommend the use of an independent
 test set wherever it is feasible. Despite this minor limitation, the work
 clearly illustrates the potential that can be unlocked from images stored in
 electronic health records.
-
-`TODO: Potential remaining topics: #122 & #151 looked interesting from an early
-glance. - Do we want to make the point that most of the imaging examples don't
-really do anything different/unique from standard image processing examples
-(Imagenet etc.)`
 
 #### Electronic health records
 
