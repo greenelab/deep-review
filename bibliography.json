@@ -35136,6 +35136,11 @@
     "id": "phRCihNB"
   },
   {
+    "URL": "https://console.cloud.google.com/storage/browser/gcs-public-data--nih/radiology_2017/Chest_X-Ray_CVPR17",
+    "type": "webpage",
+    "id": "Bi92V99U"
+  },
+  {
     "abstract": "After a more than decade-long period of relatively little research activity in the area of recurrent neural networks, several new developments will be reviewed here that have allowed substantial progress both in understanding and in technical solutions towards more efficient training of recurrent networks. These advances have been motivated by and related to the optimization issues surrounding deep learning. Although recurrent networks are extremely powerful in what they can in principle represent in terms of modelling sequences,their training is plagued by two aspects of the same issue regarding the learning of long-term dependencies. Experiments reported here evaluate the use of clipping gradients, spanning longer time ranges with leaky integration, advanced momentum techniques, using more powerful output probability models, and encouraging sparser gradients to help symmetry breaking and credit assignment. The experiments are performed on text and music data and show off the combined effects of these techniques in generally improving both training and test error.",
     "author": [
       {
@@ -37769,6 +37774,95 @@
     },
     "title": "Feature squeezing: Detecting adversarial examples in deep neural networks",
     "title-short": "Feature squeezing",
+    "type": "article-journal"
+  },
+  {
+    "abstract": "The recent rapid and tremendous success of deep convolutional neural networks (CNN) on many challenging computer vision tasks largely derives from the accessibility of the well-annotated ImageNet and PASCAL VOC datasets. Nevertheless, unsupervised image categorization (i.e., without the ground-truth labeling) is much less investigated, yet critically important and difficult when annotations are extremely hard to obtain in the conventional way of “Google Search” and crowd sourcing. We address this problem by presenting a looped deep pseudo-task optimization (LDPO) framework for joint mining of deep CNN features and image labels. Our method is conceptually simple and rests upon the hypothesized “convergence” of better labels leading to better trained CNN models which in turn feed more discriminative image representations to facilitate more meaningful clusters/labels. Our proposed method is validated in tackling two important applications: 1) Large-scale medical image annotation has always been a prohibitively expensive and easily-biased task even for well-trained radiologists. Significantly better image categorization results are achieved via our proposed approach compared to the previous state-of-the-art method. 2) Unsupervised scene recognition on representative and publicly available datasets with our proposed technique is examined. The LDPO achieves excellent quantitative scene classification results. On the MIT indoor scene dataset, it attains a clustering accuracy of 75.3the state-of-the-art supervised classification accuracy of 81.0based on the VGG-VD model).",
+    "author": [
+      {
+        "family": "Wang",
+        "given": "Xiaosong"
+      },
+      {
+        "family": "Lu",
+        "given": "Le"
+      },
+      {
+        "family": "Shin",
+        "given": "Hoo-chang"
+      },
+      {
+        "family": "Kim",
+        "given": "Lauren"
+      },
+      {
+        "family": "Bagheri",
+        "given": "Mohammadhadi"
+      },
+      {
+        "family": "Nogues",
+        "given": "Isabella"
+      },
+      {
+        "family": "Yao",
+        "given": "Jianhua"
+      },
+      {
+        "family": "Summers",
+        "given": "Ronald M."
+      }
+    ],
+    "id": "apBChoyF",
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          1
+        ]
+      ]
+    },
+    "title": "Unsupervised joint mining of deep features and image labels for large-scale radiology image categorization and scene recognition",
+    "type": "article-journal"
+  },
+  {
+    "abstract": "The chest X-ray is one of the most commonly accessible radiological examinations for screening and diagnosis of many lung diseases. A tremendous number of X-ray imaging studies accompanied by radiological reports are accumulated and stored in many modern hospitals’ Picture Archiving and Communication Systems (PACS). On the other side, it is still an open question how this type of hospital-size knowledge database containing invaluable imaging informatics (i.e., loosely labeled) can be used to facilitate the data-hungry deep learning paradigms in building truly large-scale high precision computer-aided diagnosis (CAD) systems. In this paper, we present a new chest X-ray database, namely “ChestX-ray8”, which comprises 108,948 frontal-view X-ray images of 32,717 unique patients with the text-mined eight disease image labels (where each image can have multi-labels), from the associated radiological reports using natural language processing. Importantly, we demonstrate that these commonly occurring thoracic diseases can be detected and even spatially-located via a unified weakly-supervised multi-label image classification and disease localization framework, which is validated using our proposed dataset. Although the initial quantitative results are promising as reported, deep convolutional neural network based “reading chest X-rays” (i.e., recognizing and locating the common disease patterns trained with only image-level labels) remains a strenuous task for fully-automated high precision CAD systems.",
+    "author": [
+      {
+        "family": "Wang",
+        "given": "Xiaosong"
+      },
+      {
+        "family": "Peng",
+        "given": "Yifan"
+      },
+      {
+        "family": "Lu",
+        "given": "Le"
+      },
+      {
+        "family": "Lu",
+        "given": "Zhiyong"
+      },
+      {
+        "family": "Bagheri",
+        "given": "Mohammadhadi"
+      },
+      {
+        "family": "Summers",
+        "given": "Ronald M."
+      }
+    ],
+    "id": "PGi9g7yV",
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          5
+        ]
+      ]
+    },
+    "title": "ChestX-ray8: Hospital-scale chest x-ray database and benchmarks on weakly-supervised classification and localization of common thorax diseases",
+    "title-short": "ChestX-ray8",
     "type": "article-journal"
   }
 ]

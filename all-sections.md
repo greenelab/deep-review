@@ -350,6 +350,36 @@ development of specialized deep neural network architectures, training and
 validation protocols, and input representations that are not characteristic of
 widely studied natural images.
 
+Chest X-rays are a common radiological examination for screening and diagnosis
+of lung diseases. Although hospitals have accumulated a large number of raw
+radiology images and reports in Picture Archiving and Communication Systems and
+their related reports in Radiology Information System, it is not yet known how
+to effectively use them to learn the correlation between pathology categories
+and X-rays. In the last few years, deep learning methods showed remarkable
+results in chest X-ray image analysis [@apBChoyF; @PGi9g7yV].
+However, it is both costly and time-consuming to annotate a large-scale fully-
+labeled corpus to facilitate the data-hungry deep learning models. As an
+alternative, Wang et al. [@PGi9g7yV] proposed to use weakly labeled
+images for training deep learning models. To generate weak labels for X-ray
+images, they applied a series of Natural Language Processing (NLP) techniques to
+the associated chest X-ray radiological reports. Specifically, they first
+extracted all diseases mentioned in the reports using a state-of-the-art NLP
+tool, then applied a newly developed negation and uncertainty detection tool
+(NegBio) to filter negative and equivocal findings in the reports. Evaluation on
+three independent datasets demonstrated that NegBio is highly accurate for
+detecting negative and equivocal findings (~90% in F-measure overall). These
+highly accurate results meet the need to generate a corpus with weak labels,
+which serves as a solid foundation for the later process of image
+classification. The resulting dataset (CXR-XIV
+[@Bi92V99U])
+consists of 108,948 frontal-view chest
+X-ray images (from 32,717 patients) and each image is associated with one or
+more weakly-labeled pathology category (e.g., pneumonia and cardiomegaly) or
+"normal" otherwise. Further, Wang et al. [@PGi9g7yV] used this dataset
+with a unified weakly-supervised multi-label image classification framework, to
+detect common thoracic diseases. It showed superior performance over a benchmark
+using fully labeled data.
+
 In addition to medical imaging, histology slides are also being analyzed
 with deep learning approaches [@dQCjqq0Q].
 Ciresan et al. [@koEdZRcY]
