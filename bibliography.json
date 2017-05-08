@@ -37637,5 +37637,138 @@
     },
     "title": "A survey on deep learning in medical image analysis",
     "type": "article-journal"
+  },
+  {
+    "abstract": "Deep neural networks are highly expressive models that have recently achieved state of the art performance on speech and visual recognition tasks. While their expressiveness is the reason they succeed, it also causes them to learn uninterpretable solutions that could have counter-intuitive properties. In this paper we report two such properties. First, we find that there is no distinction between individual high level units and random linear combinations of high level units, according to various methods of unit analysis. It suggests that it is the space, rather than the individual units, that contains of the semantic information in the high layers of neural networks. Second, we find that deep neural networks learn input-output mappings that are fairly discontinuous to a significant extend. We can cause the network to misclassify an image by applying a certain imperceptible perturbation, which is found by maximizing the network’s prediction error. In addition, the specific nature of these perturbations is not a random artifact of learning: the same perturbation can cause a different network, that was trained on a different subset of the dataset, to misclassify the same input.",
+    "author": [
+      {
+        "family": "Szegedy",
+        "given": "Christian"
+      },
+      {
+        "family": "Zaremba",
+        "given": "Wojciech"
+      },
+      {
+        "family": "Sutskever",
+        "given": "Ilya"
+      },
+      {
+        "family": "Bruna",
+        "given": "Joan"
+      },
+      {
+        "family": "Erhan",
+        "given": "Dumitru"
+      },
+      {
+        "family": "Goodfellow",
+        "given": "Ian"
+      },
+      {
+        "family": "Fergus",
+        "given": "Rob"
+      }
+    ],
+    "id": "1Fel6Bdb8",
+    "issued": {
+      "date-parts": [
+        [
+          2013,
+          12
+        ]
+      ]
+    },
+    "title": "Intriguing properties of neural networks",
+    "type": "article-journal"
+  },
+  {
+    "abstract": "Several machine learning models, including neural networks, consistently misclassify adversarial examples—inputs formed by applying small but intentionally worst-case perturbations to examples from the dataset, such that the perturbed input results in the model outputting an incorrect answer with high confidence. Early attempts at explaining this phenomenon focused on nonlinearity and overfitting. We argue instead that the primary cause of neural networks’ vulnerability to adversarial perturbation is their linear nature. This explanation is supported by new quantitative results while giving the first explanation of the most intriguing fact about them: their generalization across architectures and training sets. Moreover, this view yields a simple and fast method of generating adversarial examples. Using this approach to provide examples for adversarial training, we reduce the test set error of a maxout network on the MNIST dataset.",
+    "author": [
+      {
+        "family": "Goodfellow",
+        "given": "Ian J."
+      },
+      {
+        "family": "Shlens",
+        "given": "Jonathon"
+      },
+      {
+        "family": "Szegedy",
+        "given": "Christian"
+      }
+    ],
+    "id": "UtcyntjF",
+    "issued": {
+      "date-parts": [
+        [
+          2014,
+          12
+        ]
+      ]
+    },
+    "title": "Explaining and harnessing adversarial examples",
+    "type": "article-journal"
+  },
+  {
+    "abstract": "Advances in machine learning (ML) in recent years have enabled a dizzying array of applications such as data analytics, autonomous systems, and security diagnostics. ML is now pervasive—new systems and models are being deployed in every domain imaginable, leading to rapid and widespread deployment of software based inference and decision making. There is growing recognition that ML exposes new vulnerabilities in software systems, yet the technical community’s understanding of the nature and extent of these vulnerabilities remains limited. We systematize recent findings on ML security and privacy, focusing on attacks identified on these systems and defenses crafted to date. We articulate a comprehensive threat model for ML, and categorize attacks and defenses within an adversarial framework. Key insights resulting from works both in the ML and security communities are identified and the effectiveness of approaches are related to structural elements of ML algorithms and the data used to train them. We conclude by formally exploring the opposing relationship between model accuracy and resilience to adversarial manipulation. Through these explorations, we show that there are (possibly unavoidable) tensions between model complexity, accuracy, and resilience that must be calibrated for the environments in which they will be used.",
+    "author": [
+      {
+        "family": "Papernot",
+        "given": "Nicolas"
+      },
+      {
+        "family": "McDaniel",
+        "given": "Patrick"
+      },
+      {
+        "family": "Sinha",
+        "given": "Arunesh"
+      },
+      {
+        "family": "Wellman",
+        "given": "Michael"
+      }
+    ],
+    "id": "AsLAb71x",
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          12
+        ]
+      ]
+    },
+    "title": "Towards the science of security and privacy in machine learning",
+    "type": "article-journal"
+  },
+  {
+    "abstract": "Although deep neural networks (DNNs) have achieved great success in many computer vision tasks, recent studies have shown they are vulnerable to adversarial examples. Such examples, typically generated by adding small but purposeful distortions, can frequently fool DNN models. Previous studies to defend against adversarial examples mostly focused on refining the DNN models. They have either shown limited success or suffer from the expensive computation. We propose a new strategy, <i>feature squeezing</i>, that can be used to harden DNN models by detecting adversarial examples. Feature squeezing reduces the search space available to an adversary by coalescing samples that correspond to many different feature vectors in the original space into a single sample. By comparing a DNN model’s prediction on the original input with that on the squeezed input, feature squeezing detects adversarial examples with high accuracy and few false positives. This paper explores two instances of feature squeezing: reducing the color bit depth of each pixel and smoothing using a spatial filter. These strategies are straightforward, inexpensive, and complementary to defensive methods that operate on the underlying model, such as adversarial training.",
+    "author": [
+      {
+        "family": "Xu",
+        "given": "Weilin"
+      },
+      {
+        "family": "Evans",
+        "given": "David"
+      },
+      {
+        "family": "Qi",
+        "given": "Yanjun"
+      }
+    ],
+    "id": "18lZK7fxH",
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          4
+        ]
+      ]
+    },
+    "title": "Feature squeezing: Detecting adversarial examples in deep neural networks",
+    "title-short": "Feature squeezing",
+    "type": "article-journal"
   }
 ]

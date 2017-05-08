@@ -1992,3 +1992,121 @@ future research are discussed.},
  year = {2017}
 }
 
+
+@article{1Fel6Bdb8,
+ abstract = {Deep neural networks are highly expressive models that have recently achieved
+state of the art performance on speech and visual recognition tasks. While
+their expressiveness is the reason they succeed, it also causes them to learn
+uninterpretable solutions that could have counter-intuitive properties. In this
+paper we report two such properties.
+First, we find that there is no distinction between individual high level
+units and random linear combinations of high level units, according to various
+methods of unit analysis. It suggests that it is the space, rather than the
+individual units, that contains of the semantic information in the high layers
+of neural networks.
+Second, we find that deep neural networks learn input-output mappings that
+are fairly discontinuous to a significant extend. We can cause the network to
+misclassify an image by applying a certain imperceptible perturbation, which is
+found by maximizing the network's prediction error. In addition, the specific
+nature of these perturbations is not a random artifact of learning: the same
+perturbation can cause a different network, that was trained on a different
+subset of the dataset, to misclassify the same input.},
+ archiveprefix = {arXiv},
+ author = {Christian Szegedy and Wojciech Zaremba and Ilya Sutskever and Joan Bruna and Dumitru Erhan and Ian Goodfellow and Rob Fergus},
+ eprint = {1312.6199v4},
+ file = {1312.6199v4.pdf},
+ link = {http://arxiv.org/abs/1312.6199v4},
+ month = {12},
+ primaryclass = {cs.CV},
+ title = {Intriguing properties of neural networks},
+ year = {2013}
+}
+
+
+@article{UtcyntjF,
+ abstract = {Several machine learning models, including neural networks, consistently
+misclassify adversarial examples---inputs formed by applying small but
+intentionally worst-case perturbations to examples from the dataset, such that
+the perturbed input results in the model outputting an incorrect answer with
+high confidence. Early attempts at explaining this phenomenon focused on
+nonlinearity and overfitting. We argue instead that the primary cause of neural
+networks' vulnerability to adversarial perturbation is their linear nature.
+This explanation is supported by new quantitative results while giving the
+first explanation of the most intriguing fact about them: their generalization
+across architectures and training sets. Moreover, this view yields a simple and
+fast method of generating adversarial examples. Using this approach to provide
+examples for adversarial training, we reduce the test set error of a maxout
+network on the MNIST dataset.},
+ archiveprefix = {arXiv},
+ author = {Ian J. Goodfellow and Jonathon Shlens and Christian Szegedy},
+ eprint = {1412.6572v3},
+ file = {1412.6572v3.pdf},
+ link = {http://arxiv.org/abs/1412.6572v3},
+ month = {12},
+ primaryclass = {stat.ML},
+ title = {Explaining and Harnessing Adversarial Examples},
+ year = {2014}
+}
+
+
+@article{AsLAb71x,
+ abstract = {Advances in machine learning (ML) in recent years have enabled a dizzying
+array of applications such as data analytics, autonomous systems, and security
+diagnostics. ML is now pervasive---new systems and models are being deployed in
+every domain imaginable, leading to rapid and widespread deployment of software
+based inference and decision making. There is growing recognition that ML
+exposes new vulnerabilities in software systems, yet the technical community's
+understanding of the nature and extent of these vulnerabilities remains
+limited. We systematize recent findings on ML security and privacy, focusing on
+attacks identified on these systems and defenses crafted to date. We articulate
+a comprehensive threat model for ML, and categorize attacks and defenses within
+an adversarial framework. Key insights resulting from works both in the ML and
+security communities are identified and the effectiveness of approaches are
+related to structural elements of ML algorithms and the data used to train
+them. We conclude by formally exploring the opposing relationship between model
+accuracy and resilience to adversarial manipulation. Through these
+explorations, we show that there are (possibly unavoidable) tensions between
+model complexity, accuracy, and resilience that must be calibrated for the
+environments in which they will be used.},
+ archiveprefix = {arXiv},
+ author = {Nicolas Papernot and Patrick McDaniel and Arunesh Sinha and Michael Wellman},
+ eprint = {1611.03814v1},
+ file = {1611.03814v1.pdf},
+ link = {http://arxiv.org/abs/1611.03814v1},
+ month = {Dec},
+ primaryclass = {cs.CR},
+ title = {Towards the Science of Security and Privacy in Machine Learning},
+ year = {2016}
+}
+
+
+@article{18lZK7fxH,
+ abstract = {Although deep neural networks (DNNs) have achieved great success in many
+computer vision tasks, recent studies have shown they are vulnerable to
+adversarial examples. Such examples, typically generated by adding small but
+purposeful distortions, can frequently fool DNN models. Previous studies to
+defend against adversarial examples mostly focused on refining the DNN models.
+They have either shown limited success or suffer from the expensive
+computation. We propose a new strategy, \emph{feature squeezing}, that can be
+used to harden DNN models by detecting adversarial examples. Feature squeezing
+reduces the search space available to an adversary by coalescing samples that
+correspond to many different feature vectors in the original space into a
+single sample. By comparing a DNN model's prediction on the original input with
+that on the squeezed input, feature squeezing detects adversarial examples with
+high accuracy and few false positives. This paper explores two instances of
+feature squeezing: reducing the color bit depth of each pixel and smoothing
+using a spatial filter. These strategies are straightforward, inexpensive, and
+complementary to defensive methods that operate on the underlying model, such
+as adversarial training.},
+ archiveprefix = {arXiv},
+ author = {Weilin Xu and David Evans and Yanjun Qi},
+ eprint = {1704.01155v1},
+ file = {1704.01155v1.pdf},
+ link = {http://arxiv.org/abs/1704.01155v1},
+ month = {Apr},
+ primaryclass = {cs.CV},
+ title = {Feature Squeezing: Detecting Adversarial Examples in Deep Neural
+Networks},
+ year = {2017}
+}
+
