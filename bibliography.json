@@ -32864,6 +32864,2278 @@
     "id": "182UhQqzp"
   },
   {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          5,
+          5
+        ]
+      ],
+      "date-time": "2017-05-05T08:40:29Z",
+      "timestamp": 1493973629706
+    },
+    "reference-count": 20,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "URL": "http://www.elsevier.com/tdm/userlicense/1.0/",
+        "start": {
+          "date-parts": [
+            [
+              2016,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2016-01-01T00:00:00Z",
+          "timestamp": 1451606400000
+        },
+        "delay-in-days": 0,
+        "content-version": "tdm"
+      },
+      {
+        "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+        "start": {
+          "date-parts": [
+            [
+              2016,
+              7,
+              12
+            ]
+          ],
+          "date-time": "2016-07-12T00:00:00Z",
+          "timestamp": 1468281600000
+        },
+        "delay-in-days": 193,
+        "content-version": "vor"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Procedia Computer Science"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.procs.2016.07.014",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          7,
+          25
+        ]
+      ],
+      "date-time": "2016-07-25T18:00:18Z",
+      "timestamp": 1469469618000
+    },
+    "page": "200-205",
+    "update-policy": "http://dx.doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "Convolutional Neural Networks for Diabetic Retinopathy",
+    "prefix": "10.1016",
+    "volume": "90",
+    "author": [
+      {
+        "given": "Harry",
+        "family": "Pratt",
+        "affiliation": []
+      },
+      {
+        "given": "Frans",
+        "family": "Coenen",
+        "affiliation": []
+      },
+      {
+        "given": "Deborah M.",
+        "family": "Broadbent",
+        "affiliation": []
+      },
+      {
+        "given": "Simon P.",
+        "family": "Harding",
+        "affiliation": []
+      },
+      {
+        "given": "Yalin",
+        "family": "Zheng",
+        "affiliation": []
+      }
+    ],
+    "member": "78",
+    "container-title": "Procedia Computer Science",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://api.elsevier.com/content/article/PII:S1877050916311929?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://api.elsevier.com/content/article/PII:S1877050916311929?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          7,
+          25
+        ]
+      ],
+      "date-time": "2016-07-25T18:01:07Z",
+      "timestamp": 1469469667000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "references-count": 20,
+    "alternative-id": [
+      "S1877050916311929"
+    ],
+    "URL": "http://dx.doi.org/10.1016/j.procs.2016.07.014",
+    "relation": {},
+    "issn-type": [
+      {
+        "value": "1877-0509",
+        "type": "print"
+      }
+    ],
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Convolutional Neural Networks for Diabetic Retinopathy",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Procedia Computer Science",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "http://dx.doi.org/10.1016/j.procs.2016.07.014",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2016 The Author(s). Published by Elsevier B.V.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ],
+    "id": "ayTsooEM"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          5,
+          2
+        ]
+      ],
+      "date-time": "2017-05-02T00:10:01Z",
+      "timestamp": 1493683801677
+    },
+    "reference-count": 0,
+    "publisher": "SPIE",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2017,
+          3,
+          3
+        ]
+      ]
+    },
+    "DOI": "10.1117/12.2249981",
+    "type": "paper-conference",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          3,
+          3
+        ]
+      ],
+      "date-time": "2017-03-03T20:31:36Z",
+      "timestamp": 1488573096000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "\nClassification of breast MRI lesions using small-size training sets: comparison of deep learning approaches\n",
+    "prefix": "10.1117",
+    "author": [
+      {
+        "given": "Guy",
+        "family": "Amit",
+        "affiliation": [
+          {
+            "name": "IBM Research - Haifa (Israel)"
+          }
+        ]
+      },
+      {
+        "given": "Rami",
+        "family": "Ben-Ari",
+        "affiliation": [
+          {
+            "name": "IBM Research - Haifa (Israel)"
+          }
+        ]
+      },
+      {
+        "given": "Omer",
+        "family": "Hadad",
+        "affiliation": [
+          {
+            "name": "IBM Research - Haifa (Israel)"
+          }
+        ]
+      },
+      {
+        "given": "Einat",
+        "family": "Monovich",
+        "affiliation": [
+          {
+            "name": "IBM Research - Haifa (Israel)"
+          }
+        ]
+      },
+      {
+        "given": "Noa",
+        "family": "Granot",
+        "affiliation": [
+          {
+            "name": "IBM Research - Haifa (Israel)"
+          }
+        ]
+      },
+      {
+        "given": "Sharbell",
+        "family": "Hashoul",
+        "affiliation": [
+          {
+            "name": "IBM Research - Haifa (Israel)"
+          }
+        ]
+      }
+    ],
+    "member": "189",
+    "container-title": "Medical Imaging 2017: Computer-Aided Diagnosis",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          5,
+          1
+        ]
+      ],
+      "date-time": "2017-05-01T23:28:21Z",
+      "timestamp": 1493681301000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "editor": [
+      {
+        "given": "Samuel G.",
+        "family": "Armato",
+        "affiliation": [
+          {
+            "name": "The Univ. of Chicago (United States)"
+          }
+        ]
+      },
+      {
+        "given": "Nicholas A.",
+        "family": "Petrick",
+        "affiliation": [
+          {
+            "name": "U.S. Food and Drug Administration (United States)"
+          }
+        ]
+      }
+    ],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          3,
+          3
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "http://dx.doi.org/10.1117/12.2249981",
+    "relation": {},
+    "id": "SOi9mAC2"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          5,
+          3
+        ]
+      ],
+      "date-time": "2017-05-03T11:09:44Z",
+      "timestamp": 1493809784511
+    },
+    "reference-count": 0,
+    "publisher": "SPIE",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2015,
+          3,
+          20
+        ]
+      ]
+    },
+    "DOI": "10.1117/12.2083124",
+    "type": "paper-conference",
+    "created": {
+      "date-parts": [
+        [
+          2015,
+          3,
+          21
+        ]
+      ],
+      "date-time": "2015-03-21T01:27:02Z",
+      "timestamp": 1426901222000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 1,
+    "title": "Deep learning with non-medical training used for chest pathology identification",
+    "prefix": "10.1117",
+    "author": [
+      {
+        "given": "Yaniv",
+        "family": "Bar",
+        "affiliation": []
+      },
+      {
+        "given": "Idit",
+        "family": "Diamant",
+        "affiliation": []
+      },
+      {
+        "given": "Lior",
+        "family": "Wolf",
+        "affiliation": []
+      },
+      {
+        "given": "Hayit",
+        "family": "Greenspan",
+        "affiliation": []
+      }
+    ],
+    "member": "189",
+    "container-title": "Medical Imaging 2015: Computer-Aided Diagnosis",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2015,
+          12,
+          3
+        ]
+      ],
+      "date-time": "2015-12-03T23:31:47Z",
+      "timestamp": 1449185507000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "editor": [
+      {
+        "given": "Lubomir M.",
+        "family": "Hadjiiski",
+        "affiliation": []
+      },
+      {
+        "given": "Georgia D.",
+        "family": "Tourassi",
+        "affiliation": []
+      }
+    ],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2015,
+          3,
+          20
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "http://dx.doi.org/10.1117/12.2083124",
+    "relation": {},
+    "id": "1Fy5bcnCI"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          5,
+          5
+        ]
+      ],
+      "date-time": "2017-05-05T06:36:31Z",
+      "timestamp": 1493966191926
+    },
+    "reference-count": 11,
+    "publisher": "IEEE",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2016,
+          4
+        ]
+      ]
+    },
+    "DOI": "10.1109/isbi.2016.7493240",
+    "type": "paper-conference",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          7,
+          1
+        ]
+      ],
+      "date-time": "2016-07-01T04:38:22Z",
+      "timestamp": 1467347902000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 1,
+    "title": "Detection of age-related macular degeneration via deep learning",
+    "prefix": "10.1109",
+    "author": [
+      {
+        "given": "P.",
+        "family": "Burlina",
+        "affiliation": []
+      },
+      {
+        "given": "D. E.",
+        "family": "Freund",
+        "affiliation": []
+      },
+      {
+        "given": "N.",
+        "family": "Joshi",
+        "affiliation": []
+      },
+      {
+        "given": "Y.",
+        "family": "Wolfson",
+        "affiliation": []
+      },
+      {
+        "given": "N. M.",
+        "family": "Bressler",
+        "affiliation": []
+      }
+    ],
+    "member": "263",
+    "container-title": "2016 IEEE 13th International Symposium on Biomedical Imaging (ISBI)",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          11,
+          1
+        ]
+      ],
+      "date-time": "2016-11-01T21:55:30Z",
+      "timestamp": 1478037330000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          4
+        ]
+      ]
+    },
+    "references-count": 11,
+    "URL": "http://dx.doi.org/10.1109/isbi.2016.7493240",
+    "relation": {},
+    "id": "iBPOt78R"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          4,
+          3
+        ]
+      ],
+      "date-time": "2017-04-03T07:14:09Z",
+      "timestamp": 1491203649172
+    },
+    "reference-count": 62,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "URL": "http://www.elsevier.com/tdm/userlicense/1.0/",
+        "start": {
+          "date-parts": [
+            [
+              2017,
+              4,
+              1
+            ]
+          ],
+          "date-time": "2017-04-01T00:00:00Z",
+          "timestamp": 1491004800000
+        },
+        "delay-in-days": 0,
+        "content-version": "tdm"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "medicalimageanalysisjournal.com",
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Medical Image Analysis"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2017,
+          4
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.media.2017.01.009",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          28
+        ]
+      ],
+      "date-time": "2017-01-28T15:20:55Z",
+      "timestamp": 1485616855000
+    },
+    "page": "114-128",
+    "update-policy": "http://dx.doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "A deep learning approach for the analysis of masses in mammograms with minimal user intervention",
+    "prefix": "10.1016",
+    "volume": "37",
+    "author": [
+      {
+        "ORCID": "http://orcid.org/0000-0001-9048-2397",
+        "authenticated-orcid": false,
+        "given": "Neeraj",
+        "family": "Dhungel",
+        "affiliation": []
+      },
+      {
+        "given": "Gustavo",
+        "family": "Carneiro",
+        "affiliation": []
+      },
+      {
+        "given": "Andrew P.",
+        "family": "Bradley",
+        "affiliation": []
+      }
+    ],
+    "member": "78",
+    "container-title": "Medical Image Analysis",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://api.elsevier.com/content/article/PII:S136184151730018X?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://api.elsevier.com/content/article/PII:S136184151730018X?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          3,
+          22
+        ]
+      ],
+      "date-time": "2017-03-22T17:54:11Z",
+      "timestamp": 1490205251000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          4
+        ]
+      ]
+    },
+    "references-count": 62,
+    "alternative-id": [
+      "S136184151730018X"
+    ],
+    "URL": "http://dx.doi.org/10.1016/j.media.2017.01.009",
+    "relation": {},
+    "issn-type": [
+      {
+        "value": "1361-8415",
+        "type": "print"
+      }
+    ],
+    "subject": [
+      "Radiological and Ultrasound Technology",
+      "Health Informatics",
+      "Radiology Nuclear Medicine and imaging",
+      "Computer Vision and Pattern Recognition",
+      "Computer Graphics and Computer-Aided Design"
+    ],
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "A deep learning approach for the analysis of masses in mammograms with minimal user intervention",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Medical Image Analysis",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "http://dx.doi.org/10.1016/j.media.2017.01.009",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2017 Elsevier B.V. All rights reserved.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ],
+    "id": "5kfDbGhA"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          4,
+          3
+        ]
+      ],
+      "date-time": "2017-04-03T00:33:35Z",
+      "timestamp": 1491179615490
+    },
+    "reference-count": 24,
+    "publisher": "IEEE",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2016,
+          8
+        ]
+      ]
+    },
+    "DOI": "10.1109/embc.2016.7590963",
+    "type": "paper-conference",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          10,
+          20
+        ]
+      ],
+      "date-time": "2016-10-20T20:57:43Z",
+      "timestamp": 1476997063000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "Melanoma detection by analysis of clinical images using convolutional neural network",
+    "prefix": "10.1109",
+    "author": [
+      {
+        "given": "E.",
+        "family": "Nasr-Esfahani",
+        "affiliation": []
+      },
+      {
+        "given": "S.",
+        "family": "Samavi",
+        "affiliation": []
+      },
+      {
+        "given": "N.",
+        "family": "Karimi",
+        "affiliation": []
+      },
+      {
+        "given": "S.M.R.",
+        "family": "Soroushmehr",
+        "affiliation": []
+      },
+      {
+        "given": "M.H.",
+        "family": "Jafari",
+        "affiliation": []
+      },
+      {
+        "given": "K.",
+        "family": "Ward",
+        "affiliation": []
+      },
+      {
+        "given": "K.",
+        "family": "Najarian",
+        "affiliation": []
+      }
+    ],
+    "member": "263",
+    "container-title": "2016 38th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          11,
+          16
+        ]
+      ],
+      "date-time": "2016-11-16T14:31:40Z",
+      "timestamp": 1479306700000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          8
+        ]
+      ]
+    },
+    "references-count": 24,
+    "URL": "http://dx.doi.org/10.1109/embc.2016.7590963",
+    "relation": {},
+    "id": "O39LDkX"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          5,
+          5
+        ]
+      ],
+      "date-time": "2017-05-05T09:32:43Z",
+      "timestamp": 1493976763705
+    },
+    "reference-count": 65,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "URL": "http://www.elsevier.com/tdm/userlicense/1.0/",
+        "start": {
+          "date-parts": [
+            [
+              2017,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2017-01-01T00:00:00Z",
+          "timestamp": 1483228800000
+        },
+        "delay-in-days": 0,
+        "content-version": "tdm"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "medicalimageanalysisjournal.com",
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Medical Image Analysis"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2017,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.media.2016.07.007",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          8,
+          3
+        ]
+      ],
+      "date-time": "2016-08-03T16:52:24Z",
+      "timestamp": 1470243144000
+    },
+    "page": "303-312",
+    "update-policy": "http://dx.doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 2,
+    "title": "Large scale deep learning for computer aided detection of mammographic lesions",
+    "prefix": "10.1016",
+    "volume": "35",
+    "author": [
+      {
+        "ORCID": "http://orcid.org/0000-0001-5565-5029",
+        "authenticated-orcid": false,
+        "given": "Thijs",
+        "family": "Kooi",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0003-1554-1291",
+        "authenticated-orcid": false,
+        "given": "Geert",
+        "family": "Litjens",
+        "affiliation": []
+      },
+      {
+        "given": "Bram",
+        "family": "van Ginneken",
+        "affiliation": []
+      },
+      {
+        "given": "Albert",
+        "family": "Gubern-Mérida",
+        "affiliation": []
+      },
+      {
+        "given": "Clara I.",
+        "family": "Sánchez",
+        "affiliation": []
+      },
+      {
+        "given": "Ritse",
+        "family": "Mann",
+        "affiliation": []
+      },
+      {
+        "given": "Ard",
+        "family": "den Heeten",
+        "affiliation": []
+      },
+      {
+        "given": "Nico",
+        "family": "Karssemeijer",
+        "affiliation": []
+      }
+    ],
+    "member": "78",
+    "container-title": "Medical Image Analysis",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://api.elsevier.com/content/article/PII:S1361841516301244?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://api.elsevier.com/content/article/PII:S1361841516301244?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          3,
+          11
+        ]
+      ],
+      "date-time": "2017-03-11T10:37:29Z",
+      "timestamp": 1489228649000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          1
+        ]
+      ]
+    },
+    "references-count": 65,
+    "alternative-id": [
+      "S1361841516301244"
+    ],
+    "URL": "http://dx.doi.org/10.1016/j.media.2016.07.007",
+    "relation": {},
+    "issn-type": [
+      {
+        "value": "1361-8415",
+        "type": "print"
+      }
+    ],
+    "subject": [
+      "Radiological and Ultrasound Technology",
+      "Health Informatics",
+      "Radiology Nuclear Medicine and imaging",
+      "Computer Vision and Pattern Recognition",
+      "Computer Graphics and Computer-Aided Design"
+    ],
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Large scale deep learning for computer aided detection of mammographic lesions",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Medical Image Analysis",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "http://dx.doi.org/10.1016/j.media.2016.07.007",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2016 Elsevier B.V. All rights reserved.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ],
+    "id": "18cZbigDD"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          4,
+          3
+        ]
+      ],
+      "date-time": "2017-04-03T06:28:57Z",
+      "timestamp": 1491200937416
+    },
+    "reference-count": 43,
+    "publisher": "Wiley-Blackwell",
+    "issue": "3",
+    "license": [
+      {
+        "URL": "http://doi.wiley.com/10.1002/tdm_license_1",
+        "start": {
+          "date-parts": [
+            [
+              2017,
+              3,
+              1
+            ]
+          ],
+          "date-time": "2017-03-01T00:00:00Z",
+          "timestamp": 1488326400000
+        },
+        "delay-in-days": 0,
+        "content-version": "tdm"
+      },
+      {
+        "URL": "http://onlinelibrary.wiley.com/termsAndConditions",
+        "start": {
+          "date-parts": [
+            [
+              2017,
+              3,
+              17
+            ]
+          ],
+          "date-time": "2017-03-17T00:00:00Z",
+          "timestamp": 1489708800000
+        },
+        "delay-in-days": 16,
+        "content-version": "vor"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100004622",
+        "name": "KWF Kankerbestrijding",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "KUN 2012-5577"
+        ]
+      },
+      {
+        "name": "Foundation of Population Screening Mid West",
+        "award": []
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Med. Phys."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2017,
+          3
+        ]
+      ]
+    },
+    "DOI": "10.1002/mp.12110",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          17
+        ]
+      ],
+      "date-time": "2017-01-17T18:25:36Z",
+      "timestamp": 1484677536000
+    },
+    "page": "1017-1027",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "Discriminating solitary cysts from soft tissue lesions in mammography using a pretrained deep convolutional neural network",
+    "prefix": "10.1002",
+    "volume": "44",
+    "author": [
+      {
+        "given": "Thijs",
+        "family": "Kooi",
+        "affiliation": [
+          {
+            "name": "Department of Radiology and Nuclear Medicine; RadboudUMC; Geert Grooteplein Zuid 10 Nijmegen 6535 The Netherlands"
+          }
+        ]
+      },
+      {
+        "given": "Bram",
+        "family": "van Ginneken",
+        "affiliation": [
+          {
+            "name": "Department of Radiology and Nuclear Medicine; RadboudUMC; Geert Grooteplein Zuid 10 Nijmegen 6535 The Netherlands"
+          }
+        ]
+      },
+      {
+        "given": "Nico",
+        "family": "Karssemeijer",
+        "affiliation": [
+          {
+            "name": "Department of Radiology and Nuclear Medicine; RadboudUMC; Geert Grooteplein Zuid 10 Nijmegen 6535 The Netherlands"
+          }
+        ]
+      },
+      {
+        "given": "Ard",
+        "family": "den Heeten",
+        "affiliation": [
+          {
+            "name": "Department of Radiology; Academic Medical Center Amsterdam; P.O. Box 22660 DD Amsterdam 1100 The Netherlands"
+          }
+        ]
+      }
+    ],
+    "member": "311",
+    "published-online": {
+      "date-parts": [
+        [
+          2017,
+          3,
+          17
+        ]
+      ]
+    },
+    "container-title": "Medical Physics",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fmp.12110",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          3,
+          17
+        ]
+      ],
+      "date-time": "2017-03-17T06:15:46Z",
+      "timestamp": 1489731346000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          3
+        ]
+      ]
+    },
+    "references-count": 43,
+    "URL": "http://dx.doi.org/10.1002/mp.12110",
+    "relation": {
+      "cites": []
+    },
+    "issn-type": [
+      {
+        "value": "0094-2405",
+        "type": "print"
+      }
+    ],
+    "subject": [
+      "Biophysics",
+      "Radiology Nuclear Medicine and imaging"
+    ],
+    "id": "1ExJjVKvT"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          4,
+          3
+        ]
+      ],
+      "date-time": "2017-04-03T01:06:58Z",
+      "timestamp": 1491181618083
+    },
+    "posted": {
+      "date-parts": [
+        [
+          2016,
+          10,
+          28
+        ]
+      ]
+    },
+    "group-title": "Bioinformatics",
+    "reference-count": 0,
+    "publisher": "Cold Spring Harbor Laboratory Press",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "accepted": {
+      "date-parts": [
+        [
+          2016,
+          10,
+          28
+        ]
+      ]
+    },
+    "abstract": "<jats:p>In recent years, deep neural networks (DNNs) have revolutionized the field of computer vision and image processing. In medical imaging, algorithmic solutions based on DNNs have been shown to achieve high performance on tasks that previously required medical experts. So far DNN-based solutions for disease detection have been proposed without quantifying their uncertainty in a decision. In contrast, a physician knows whether she is uncertain about a case and will consult more experienced colleagues if needed. Here we propose to estimate the uncertainty of DNNs in medical diagnosis based on a recent theoretical insight on the link between dropout networks and approximate Bayesian inference. Using the example of detecting diabetic retinopathy (DR) from fundus photographs, we show that uncertainty informed decision referral improves diagnostic performance. Experiments across different networks, tasks and datasets showed robust generalization. Depending on network capacity and task/dataset difficulty, we surpass 85% sensitivity and 80% specificity as recommended by the NHS when referring 0%-20% of the most uncertain decisions for further inspection. We analyse causes of uncertainty by relating intuitions from 2D visualizations to the high-dimensional image space, showing that it is in particular the difficult decisions that the networks consider uncertain.</jats:p>",
+    "DOI": "10.1101/084210",
+    "type": "manuscript",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          10,
+          29
+        ]
+      ],
+      "date-time": "2016-10-29T05:12:12Z",
+      "timestamp": 1477717932000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "Leveraging uncertainty information from deep neural networks for disease detection",
+    "prefix": "10.1101",
+    "author": [
+      {
+        "given": "Christian",
+        "family": "Leibig",
+        "affiliation": []
+      },
+      {
+        "given": "Vaneeda",
+        "family": "Allken",
+        "affiliation": []
+      },
+      {
+        "given": "Philipp",
+        "family": "Berens",
+        "affiliation": []
+      },
+      {
+        "given": "Siegfried",
+        "family": "Wahl",
+        "affiliation": []
+      }
+    ],
+    "member": "246",
+    "container-title": null,
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          4
+        ]
+      ],
+      "date-time": "2017-01-04T06:18:26Z",
+      "timestamp": 1483510706000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          10,
+          28
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "http://dx.doi.org/10.1101/084210",
+    "relation": {},
+    "id": "14Ovc5nPg"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          5,
+          5
+        ]
+      ],
+      "date-time": "2017-05-05T03:54:49Z",
+      "timestamp": 1493956489087
+    },
+    "reference-count": 27,
+    "publisher": "Springer Nature",
+    "issue": "1",
+    "license": [
+      {
+        "URL": "http://www.springer.com/tdm",
+        "start": {
+          "date-parts": [
+            [
+              2016,
+              5,
+              23
+            ]
+          ],
+          "date-time": "2016-05-23T00:00:00Z",
+          "timestamp": 1463961600000
+        },
+        "delay-in-days": 0,
+        "content-version": "vor"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Sci Rep"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2016,
+          9
+        ]
+      ]
+    },
+    "DOI": "10.1038/srep26286",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          5,
+          24
+        ]
+      ],
+      "date-time": "2016-05-24T06:23:18Z",
+      "timestamp": 1464070998000
+    },
+    "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 5,
+    "title": "Deep learning as a tool for increased accuracy and efficiency of histopathological diagnosis",
+    "prefix": "10.1038",
+    "volume": "6",
+    "author": [
+      {
+        "given": "Geert",
+        "family": "Litjens",
+        "affiliation": []
+      },
+      {
+        "given": "Clara I.",
+        "family": "Sánchez",
+        "affiliation": []
+      },
+      {
+        "given": "Nadya",
+        "family": "Timofeeva",
+        "affiliation": []
+      },
+      {
+        "given": "Meyke",
+        "family": "Hermsen",
+        "affiliation": []
+      },
+      {
+        "given": "Iris",
+        "family": "Nagtegaal",
+        "affiliation": []
+      },
+      {
+        "given": "Iringo",
+        "family": "Kovacs",
+        "affiliation": []
+      },
+      {
+        "given": "Christina",
+        "family": "Hulsbergen - van de Kaa",
+        "affiliation": []
+      },
+      {
+        "given": "Peter",
+        "family": "Bult",
+        "affiliation": []
+      },
+      {
+        "given": "Bram",
+        "family": "van Ginneken",
+        "affiliation": []
+      },
+      {
+        "given": "Jeroen",
+        "family": "van der Laak",
+        "affiliation": []
+      }
+    ],
+    "member": "339",
+    "published-online": {
+      "date-parts": [
+        [
+          2016,
+          5,
+          23
+        ]
+      ]
+    },
+    "container-title": "Scientific Reports",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://www.nature.com/articles/srep26286.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://www.nature.com/articles/srep26286",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          3,
+          4
+        ]
+      ],
+      "date-time": "2017-03-04T22:18:19Z",
+      "timestamp": 1488665899000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          5,
+          23
+        ]
+      ]
+    },
+    "references-count": 27,
+    "alternative-id": [
+      "BFsrep26286"
+    ],
+    "URL": "http://dx.doi.org/10.1038/srep26286",
+    "relation": {
+      "cites": []
+    },
+    "issn-type": [
+      {
+        "value": "2045-2322",
+        "type": "electronic"
+      }
+    ],
+    "article-number": "26286",
+    "id": "dQCjqq0Q"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          4,
+          2
+        ]
+      ],
+      "date-time": "2017-04-02T23:00:51Z",
+      "timestamp": 1491174051595
+    },
+    "publisher-location": "Cham",
+    "reference-count": 11,
+    "publisher": "Springer International Publishing",
+    "license": [
+      {
+        "URL": "http://www.springer.com/tdm",
+        "start": {
+          "date-parts": [
+            [
+              2016,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2016-01-01T00:00:00Z",
+          "timestamp": 1451606400000
+        },
+        "delay-in-days": 0,
+        "content-version": "vor"
+      },
+      {
+        "URL": "http://www.springer.com/tdm",
+        "start": {
+          "date-parts": [
+            [
+              2016,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2016-01-01T00:00:00Z",
+          "timestamp": 1451606400000
+        },
+        "delay-in-days": 0,
+        "content-version": "vor"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "DOI": "10.1007/978-3-319-46723-8_25",
+    "type": "chapter",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          10,
+          1
+        ]
+      ],
+      "date-time": "2016-10-01T03:01:21Z",
+      "timestamp": 1475290881000
+    },
+    "page": "212-220",
+    "source": "Crossref",
+    "is-referenced-by-count": 1,
+    "title": "3D Deep Learning for Multi-modal Imaging-Guided Survival Time Prediction of Brain Tumor Patients",
+    "prefix": "10.1007",
+    "author": [
+      {
+        "given": "Dong",
+        "family": "Nie",
+        "affiliation": []
+      },
+      {
+        "given": "Han",
+        "family": "Zhang",
+        "affiliation": []
+      },
+      {
+        "given": "Ehsan",
+        "family": "Adeli",
+        "affiliation": []
+      },
+      {
+        "given": "Luyan",
+        "family": "Liu",
+        "affiliation": []
+      },
+      {
+        "given": "Dinggang",
+        "family": "Shen",
+        "affiliation": []
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2016,
+          10,
+          2
+        ]
+      ]
+    },
+    "container-title": "Medical Image Computing and Computer-Assisted Intervention – MICCAI 2016",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          25
+        ]
+      ],
+      "date-time": "2017-01-25T17:49:19Z",
+      "timestamp": 1485366559000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "references-count": 11,
+    "URL": "http://dx.doi.org/10.1007/978-3-319-46723-8_25",
+    "relation": {
+      "cites": []
+    },
+    "issn-type": [
+      {
+        "value": "0302-9743",
+        "type": "print"
+      },
+      {
+        "value": "1611-3349",
+        "type": "electronic"
+      }
+    ],
+    "id": "18EpaZ7QB"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          5,
+          4
+        ]
+      ],
+      "date-time": "2017-05-04T05:21:48Z",
+      "timestamp": 1493875308510
+    },
+    "reference-count": 60,
+    "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+    "issue": "5",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "IEEE Trans. Med. Imaging"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2016,
+          5
+        ]
+      ]
+    },
+    "DOI": "10.1109/tmi.2015.2482920",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2015,
+          9,
+          28
+        ]
+      ],
+      "date-time": "2015-09-28T18:37:52Z",
+      "timestamp": 1443465472000
+    },
+    "page": "1170-1181",
+    "source": "Crossref",
+    "is-referenced-by-count": 13,
+    "title": "Improving Computer-Aided Detection Using_newlineConvolutional Neural Networks and Random View Aggregation",
+    "prefix": "10.1109",
+    "volume": "35",
+    "author": [
+      {
+        "ORCID": "http://orcid.org/0000-0002-3662-8743",
+        "authenticated-orcid": false,
+        "given": "Holger R.",
+        "family": "Roth",
+        "affiliation": []
+      },
+      {
+        "given": "Le",
+        "family": "Lu",
+        "affiliation": []
+      },
+      {
+        "given": "Jiamin",
+        "family": "Liu",
+        "affiliation": []
+      },
+      {
+        "given": "Jianhua",
+        "family": "Yao",
+        "affiliation": []
+      },
+      {
+        "given": "Ari",
+        "family": "Seff",
+        "affiliation": []
+      },
+      {
+        "given": "Kevin",
+        "family": "Cherry",
+        "affiliation": []
+      },
+      {
+        "given": "Lauren",
+        "family": "Kim",
+        "affiliation": []
+      },
+      {
+        "given": "Ronald M.",
+        "family": "Summers",
+        "affiliation": []
+      }
+    ],
+    "member": "263",
+    "container-title": "IEEE Transactions on Medical Imaging",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          9,
+          29
+        ]
+      ],
+      "date-time": "2016-09-29T20:08:27Z",
+      "timestamp": 1475179707000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          5
+        ]
+      ]
+    },
+    "references-count": 60,
+    "URL": "http://dx.doi.org/10.1109/tmi.2015.2482920",
+    "relation": {},
+    "issn-type": [
+      {
+        "value": "0278-0062",
+        "type": "print"
+      },
+      {
+        "value": "1558-254X",
+        "type": "electronic"
+      }
+    ],
+    "subject": [
+      "Electrical and Electronic Engineering",
+      "Radiological and Ultrasound Technology",
+      "Software",
+      "Computer Science Applications"
+    ],
+    "id": "KseoWN2w"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          4,
+          3
+        ]
+      ],
+      "date-time": "2017-04-03T11:22:53Z",
+      "timestamp": 1491218573228
+    },
+    "reference-count": 0,
+    "publisher": "Annual Reviews",
+    "issue": "1",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Annu. Rev. Biomed. Eng."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2017,
+          8,
+          15
+        ]
+      ]
+    },
+    "DOI": "10.1146/annurev-bioeng-071516-044442",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          3,
+          16
+        ]
+      ],
+      "date-time": "2017-03-16T22:54:53Z",
+      "timestamp": 1489704893000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "Deep Learning in Medical Image Analysis",
+    "prefix": "10.1146",
+    "volume": "19",
+    "author": [
+      {
+        "given": "Dinggang",
+        "family": "Shen",
+        "affiliation": [
+          {
+            "name": "Department of Radiology, University of North Carolina, Chapel Hill, NC 27599;"
+          },
+          {
+            "name": "Department of Brain and Cognitive Engineering, Korea University, Seoul 02841, Republic of Korea;"
+          }
+        ]
+      },
+      {
+        "given": "Guorong",
+        "family": "Wu",
+        "affiliation": [
+          {
+            "name": "Department of Radiology, University of North Carolina, Chapel Hill, NC 27599;"
+          },
+          {
+            "name": "Department of Brain and Cognitive Engineering, Korea University, Seoul 02841, Republic of Korea;"
+          }
+        ]
+      },
+      {
+        "given": "Heung-Il",
+        "family": "Suk",
+        "affiliation": [
+          {
+            "name": "Department of Radiology, University of North Carolina, Chapel Hill, NC 27599;"
+          },
+          {
+            "name": "Department of Brain and Cognitive Engineering, Korea University, Seoul 02841, Republic of Korea;"
+          }
+        ]
+      }
+    ],
+    "member": "22",
+    "published-online": {
+      "date-parts": [
+        [
+          2016,
+          7,
+          28
+        ]
+      ]
+    },
+    "container-title": "Annual Review of Biomedical Engineering",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          3,
+          16
+        ]
+      ],
+      "date-time": "2017-03-16T22:54:53Z",
+      "timestamp": 1489704893000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          7,
+          28
+        ]
+      ]
+    },
+    "references-count": 0,
+    "alternative-id": [
+      "10.1146/annurev-bioeng-071516-044442"
+    ],
+    "URL": "http://dx.doi.org/10.1146/annurev-bioeng-071516-044442",
+    "relation": {},
+    "issn-type": [
+      {
+        "value": "1523-9829",
+        "type": "print"
+      },
+      {
+        "value": "1545-4274",
+        "type": "electronic"
+      }
+    ],
+    "subject": [
+      "Medicine (miscellaneous)",
+      "Biomedical Engineering"
+    ],
+    "article-number": "annurev-bioeng-071516-044442",
+    "id": "yEstnIOT"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          5,
+          4
+        ]
+      ],
+      "date-time": "2017-05-04T18:40:53Z",
+      "timestamp": 1493923253597
+    },
+    "reference-count": 73,
+    "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+    "issue": "5",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "IEEE Trans. Med. Imaging"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2016,
+          5
+        ]
+      ]
+    },
+    "DOI": "10.1109/tmi.2016.2528162",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          2,
+          11
+        ]
+      ],
+      "date-time": "2016-02-11T12:46:43Z",
+      "timestamp": 1455194803000
+    },
+    "page": "1285-1298",
+    "source": "Crossref",
+    "is-referenced-by-count": 44,
+    "title": "Deep Convolutional Neural Networks for Computer-Aided Detection: CNN Architectures, Dataset Characteristics and Transfer Learning",
+    "prefix": "10.1109",
+    "volume": "35",
+    "author": [
+      {
+        "given": "Hoo-Chang",
+        "family": "Shin",
+        "affiliation": []
+      },
+      {
+        "given": "Holger R.",
+        "family": "Roth",
+        "affiliation": []
+      },
+      {
+        "given": "Mingchen",
+        "family": "Gao",
+        "affiliation": []
+      },
+      {
+        "given": "Le",
+        "family": "Lu",
+        "affiliation": []
+      },
+      {
+        "given": "Ziyue",
+        "family": "Xu",
+        "affiliation": []
+      },
+      {
+        "given": "Isabella",
+        "family": "Nogues",
+        "affiliation": []
+      },
+      {
+        "given": "Jianhua",
+        "family": "Yao",
+        "affiliation": []
+      },
+      {
+        "given": "Daniel",
+        "family": "Mollura",
+        "affiliation": []
+      },
+      {
+        "given": "Ronald M.",
+        "family": "Summers",
+        "affiliation": []
+      }
+    ],
+    "member": "263",
+    "container-title": "IEEE Transactions on Medical Imaging",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          9,
+          24
+        ]
+      ],
+      "date-time": "2016-09-24T14:17:09Z",
+      "timestamp": 1474726629000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          5
+        ]
+      ]
+    },
+    "references-count": 73,
+    "URL": "http://dx.doi.org/10.1109/tmi.2016.2528162",
+    "relation": {},
+    "issn-type": [
+      {
+        "value": "0278-0062",
+        "type": "print"
+      },
+      {
+        "value": "1558-254X",
+        "type": "electronic"
+      }
+    ],
+    "subject": [
+      "Electrical and Electronic Engineering",
+      "Radiological and Ultrasound Technology",
+      "Software",
+      "Computer Science Applications"
+    ],
+    "id": "1GAyqYBNZ"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          4,
+          4
+        ]
+      ],
+      "date-time": "2017-04-04T05:15:37Z",
+      "timestamp": 1491282937614
+    },
+    "reference-count": 49,
+    "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+    "issue": "4",
+    "funder": [
+      {
+        "DOI": "10.13039/501100003453",
+        "name": "Natural Science Foundation of Guangdong Province",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "2016A030313047"
+        ]
+      },
+      {
+        "name": "Research Grants Council of the Hong Kong Special Administrative Region",
+        "award": [
+          "CUHK 14203115",
+          "CUHK 14202514"
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "IEEE Trans. Med. Imaging"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2017,
+          4
+        ]
+      ]
+    },
+    "DOI": "10.1109/tmi.2016.2642839",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          12,
+          21
+        ]
+      ],
+      "date-time": "2016-12-21T21:34:13Z",
+      "timestamp": 1482356053000
+    },
+    "page": "994-1004",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "Automated Melanoma Recognition in Dermoscopy Images via Very Deep Residual Networks",
+    "prefix": "10.1109",
+    "volume": "36",
+    "author": [
+      {
+        "given": "Lequan",
+        "family": "Yu",
+        "affiliation": []
+      },
+      {
+        "given": "Hao",
+        "family": "Chen",
+        "affiliation": []
+      },
+      {
+        "given": "Qi",
+        "family": "Dou",
+        "affiliation": []
+      },
+      {
+        "given": "Jing",
+        "family": "Qin",
+        "affiliation": []
+      },
+      {
+        "given": "Pheng-Ann",
+        "family": "Heng",
+        "affiliation": []
+      }
+    ],
+    "member": "263",
+    "container-title": "IEEE Transactions on Medical Imaging",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          4,
+          3
+        ]
+      ],
+      "date-time": "2017-04-03T22:16:01Z",
+      "timestamp": 1491257761000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          4
+        ]
+      ]
+    },
+    "references-count": 49,
+    "URL": "http://dx.doi.org/10.1109/tmi.2016.2642839",
+    "relation": {},
+    "issn-type": [
+      {
+        "value": "0278-0062",
+        "type": "print"
+      },
+      {
+        "value": "1558-254X",
+        "type": "electronic"
+      }
+    ],
+    "subject": [
+      "Electrical and Electronic Engineering",
+      "Radiological and Ultrasound Technology",
+      "Software",
+      "Computer Science Applications"
+    ],
+    "id": "phRCihNB"
+  },
+  {
     "abstract": "After a more than decade-long period of relatively little research activity in the area of recurrent neural networks, several new developments will be reviewed here that have allowed substantial progress both in understanding and in technical solutions towards more efficient training of recurrent networks. These advances have been motivated by and related to the optimization issues surrounding deep learning. Although recurrent networks are extremely powerful in what they can in principle represent in terms of modelling sequences,their training is plagued by two aspects of the same issue regarding the learning of long-term dependencies. Experiments reported here evaluate the use of clipping gradients, spanning longer time ranges with leaky integration, advanced momentum techniques, using more powerful output probability models, and encouraging sparser gradients to help symmetry breaking and credit assignment. The experiments are performed on text and music data and show off the combined effects of these techniques in generally improving both training and test error.",
     "author": [
       {
@@ -35224,6 +37496,146 @@
     },
     "title": "HOGWILD!: A lock-free approach to parallelizing stochastic gradient descent",
     "title-short": "HOGWILD!",
+    "type": "article-journal"
+  },
+  {
+    "abstract": "Melanoma is the deadliest form of skin cancer. While curable with early detection, only highly trained specialists are capable of accurately recognizing the disease. As expertise is in limited supply, automated systems capable of identifying disease could save lives, reduce unnecessary biopsies, and reduce costs. Toward this goal, we propose a system that combines recent developments in deep learning with established machine learning approaches, creating ensembles of methods that are capable of segmenting skin lesions, as well as analyzing the detected area and surrounding tissue for melanoma detection. The system is evaluated using the largest publicly available benchmark dataset of dermoscopic images, containing 900 training and 379 testing images. New state-of-the-art performance levels are demonstrated, leading to an improvement in the area under receiver operating characteristic curve of 7.5operating point 2.9 times higher than the previous state-of-the-art (36.8specificity compared to 12.5dermatologists on a subset of 100 test images, the proposed system produces a higher accuracy (76equivalent sensitivity (82",
+    "author": [
+      {
+        "family": "Codella",
+        "given": "Noel"
+      },
+      {
+        "family": "Nguyen",
+        "given": "Quoc-Bao"
+      },
+      {
+        "family": "Pankanti",
+        "given": "Sharath"
+      },
+      {
+        "family": "Gutman",
+        "given": "David"
+      },
+      {
+        "family": "Helba",
+        "given": "Brian"
+      },
+      {
+        "family": "Halpern",
+        "given": "Allan"
+      },
+      {
+        "family": "Smith",
+        "given": "John R."
+      }
+    ],
+    "id": "sLPsrfbl",
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          11
+        ]
+      ]
+    },
+    "note": "IBM Journal of Research and Development, vol. 61, no. 4/5, 2017",
+    "title": "Deep learning ensembles for melanoma recognition in dermoscopy images",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.1007/s11548-017-1567-8",
+    "abstract": "Melanoma is amongst most aggressive types of cancer. However, it is highly curable if detected in its early stages. Prescreening of suspicious moles and lesions for malignancy is of great importance. Detection can be done by images captured by standard cameras, which are more preferable due to low cost and availability. One important step in computerized evaluation of skin lesions is accurate detection of lesion region, i.e. segmentation of an image into two regions as lesion and normal skin. Accurate segmentation can be challenging due to burdens such as illumination variation and low contrast between lesion and healthy skin. In this paper, a method based on deep neural networks is proposed for accurate extraction of a lesion region. The input image is preprocessed and then its patches are fed to a convolutional neural network (CNN). Local texture and global structure of the patches are processed in order to assign pixels to lesion or normal classes. A method for effective selection of training patches is used for more accurate detection of a lesion border. The output segmentation mask is refined by some post processing operations. The experimental results of qualitative and quantitative evaluations demonstrate that our method can outperform other state-of-the-art algorithms exist in the literature.",
+    "author": [
+      {
+        "family": "Jafari",
+        "given": "Mohammad H."
+      },
+      {
+        "family": "Nasr-Esfahani",
+        "given": "Ebrahim"
+      },
+      {
+        "family": "Karimi",
+        "given": "Nader"
+      },
+      {
+        "family": "Soroushmehr",
+        "given": "S. M. Reza"
+      },
+      {
+        "family": "Samavi",
+        "given": "Shadrokh"
+      },
+      {
+        "family": "Najarian",
+        "given": "Kayvan"
+      }
+    ],
+    "id": "1AJUcl1KV",
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          9
+        ]
+      ]
+    },
+    "title": "Extraction of skin lesions from non-dermoscopic images using deep learning",
+    "type": "article-journal"
+  },
+  {
+    "abstract": "Deep learning algorithms, in particular convolutional networks, have rapidly become a methodology of choice for analyzing medical images. This paper reviews the major deep learning concepts pertinent to medical image analysis and summarizes over 300 contributions to the field, most of which appeared in the last year. We survey the use of deep learning for image classification, object detection, segmentation, registration, and other tasks and provide concise overviews of studies per application area. Open challenges and directions for future research are discussed.",
+    "author": [
+      {
+        "family": "Litjens",
+        "given": "Geert"
+      },
+      {
+        "family": "Kooi",
+        "given": "Thijs"
+      },
+      {
+        "family": "Bejnordi",
+        "given": "Babak Ehteshami"
+      },
+      {
+        "family": "Setio",
+        "given": "Arnaud Arindra Adiyoso"
+      },
+      {
+        "family": "Ciompi",
+        "given": "Francesco"
+      },
+      {
+        "family": "Ghafoorian",
+        "given": "Mohsen"
+      },
+      {
+        "dropping-particle": "van der",
+        "family": "Laak",
+        "given": "Jeroen A. W. M."
+      },
+      {
+        "dropping-particle": "van",
+        "family": "Ginneken",
+        "given": "Bram"
+      },
+      {
+        "family": "Sánchez",
+        "given": "Clara I."
+      }
+    ],
+    "id": "LL5huVs3",
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          2
+        ]
+      ]
+    },
+    "title": "A survey on deep learning in medical image analysis",
     "type": "article-journal"
   }
 ]

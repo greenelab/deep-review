@@ -231,65 +231,174 @@ regards to data availability and labeling.
 
 #### Imaging applications in healthcare
 
-One of the general areas where deep learning methods have had substantial
-success has been in image analysis. Applications in areas of medicine that use
-imaging extensively are also emerging. Mammography has been one area with
-numerous contributions [@JK8NuXy3; @VFw1VXDP; @9G9Hv1Pp; @Xxb4t3zO]. In
-all of this work, the researchers must work around a specific challenge - the
-limited number of well annotated training images. To expand the number and
-diversity of images, the researchers have employed approaches where they employ
-adversarial examples [@Xxb4t3zO] or first train towards human-created
-features before subsequent fine tuning [@JK8NuXy3]. The
-presence of a large bank of well-annotated mammography images would aid in the
-application of deep neural networks to this area. Though this strategy has not
-yet been employed in this domain, large collections of unlabeled images might
-first be used in an unsupervised context to construct high-quality feature
-detectors. Then the small number of labeled examples could be used for
-subsequent training. Similar strategies have been employed for EHR data where
-high-quality labeled examples are also difficult to obtain
-[@aM2Uy2ix].
+One area where deep learning methods have had substantial success has been in
+image analysis. Applications in areas of medicine that use imaging extensively
+are also emerging. To the date, deep learning has been employed for a wide
+range of tasks in medical imaging, including classification of exams and
+lesions/nodules, localization of organs, regions, landmarks, and lesions,
+segmentation of organs, organ substructures, and lesions, medical image
+registration, content-based image retrieval, image generation and enhancement,
+and combining image data with clinical reports [@LL5huVs3; @yEstnIOT].
 
-In addition to radiographic images, histology slides are also being analyzed
-with deep learning approaches. Ciresan et al.
-[@koEdZRcY] developed one of the earliest examples,
-winning the 2012 International Conference on Pattern Recognition's Contest on
-Mitosis Detection while achieving human competitive accuracy. Their approach
-uses what has become a standard convolutional neural network architecture
-trained on public data.  In more recent work,  Wang et al.[@mbEp6jNr]
-analyzed stained slides to identify cancers  within slides of lymph node slices.
-The approach provided a probability map for  each slide. On this task a
-pathologist has about a 3% error rate. The  pathologist did not produce any
-false positives, but did have a number of false  negatives. Their algorithm had
-about twice the error rate of a pathologist.  However, their algorithms errors
-were not strongly correlated with the  pathologist. Theoretically, combining
-both could reduce the error rate to  under 1%. In this area, these algorithms
-may be ready to incorporate into  existing tools to aid pathologists. The
-authors' work suggests that this could  reduce the false negative rate of such
-evaluations. This theme of an ensemble  between deep learning algorithm and
-human expert may help overcome some of the  challenges presented by data
-limitations.
+Closest to natural images are applications of deep learning aimed at
+detection and recognition of melanoma, the deadliest form of skin cancer.
+Recent works included applications to both dermoscopy
+[@sLPsrfbl; @phRCihNB] and
+non-dermoscopic clinical photography images of skin lesions
+[@1AJUcl1KV; @O39LDkX; @XnYNYoYB]. For both modalities pre-training on natural
+images appears to be common model initialization that allows the use of very
+deep networks without overfitting. Reported performance is competitive or better
+compared to a board of certified dermatologists
+[@sLPsrfbl; @XnYNYoYB].
+This approach is known as transfer learning (see Discussion).
+
+Another fast emerging area of deep learning method applications is detection of
+ophthalmological diseases such as diabetic retinopathy and age-related macular
+degeneration. Diagnosis of diabetic retinopathy through color fundus images
+became of interest for deep learning researchers and practitioners after the
+large labeled image set was made publicly available during the corresponding
+2015 Kaggle competition [@ayTsooEM]. Most attempts included training
+a network from scratch [@ayTsooEM; @ayTsooEM; @14Ovc5nPg], while Gulshan et al. [@1mJW6umJ] employed
+48-layer Inception-v3 deep architecture pre-trained on natural images and
+demonstrated substantial increase over the state-of-the-art in both specificity
+and sensitivity. Interestingly, Leibig et al. [@14Ovc5nPg] proposed a
+method to estimate the uncertainty of deep networks in diabetic retinopathy
+diagnosis based on a recent theoretical insight on the link between dropout
+networks and approximate Bayesian inference. Such developments are important
+for the whole medical image analysis field, because they have a potential to
+provide information about a level of confidence for every black-box algorithm's
+classification result and, thus, improve pathologist-computer interaction.
+Deep networks were also recently applied to age-related macular degeneration
+detection, similarly demonstrating the power of transfer learning when training
+set is limited [@iBPOt78R] as well as the efficient use of a deep
+16-layer architecture combined with EMR data for training set enrichment.
+
+Mammography has been one area with numerous contributions
+[@VFw1VXDP; @JK8NuXy3; @9G9Hv1Pp; @Xxb4t3zO; @5kfDbGhA]. In the most of this work, the researchers
+must work around a typical for the domain challenge - the limited number of
+well annotated training images. To expand the number and diversity of images,
+the researchers have employed approaches where they use adversarial examples
+[@Xxb4t3zO] or first train towards human-created features before
+subsequent fine tuning [@JK8NuXy3]. Adaptation to the medical image
+domain can further improved by combining in the latter approach with other
+machine learning techniques, for example, as a cascade of deep learning and
+random forest models [@5kfDbGhA]. Using large dataset,
+Kooi et al. [@18cZbigDD] demonstrated that deep neural
+networks can outperform the traditional computer-aided diagnosis (CAD)
+system at low sensitivity and perform comparably at high sensitivity.
+They also compared network performance to certified screening
+radiologists on a patch level and found no significant difference between the
+network and the readers. Similarly, Geras et al. [@1AWC7HsO0]
+showed that both using large dataset and using multi-view network architecture
+help to improve classification performance. The presence of a publicly available
+large bank of well-annotated mammography images would aid in the application
+of deep neural networks to this area and shift research focus from model
+generalization to effective processing of large image sets. Deep network
+pre-trained on large annotated mammogram set can be helpful for related tasks
+that do not have as much data using transfer learning [@1ExJjVKvT].
+Though this strategy has not yet been employed in this domain, high-quality
+feature detectors can be constructed from large collections of unlabeled images
+in an unsupervised context. The small number of labeled examples could
+be used for subsequent training. Similar strategies have been employed for
+EHR data where high-quality labeled examples are also difficult to obtain
+[@5x3uMSKi].
+
+In radiological image analysis, deep learning techniques are increasingly used
+even when dataset size is not big enough to train large capacity models from
+scratch [@1Fy5bcnCI; @1GAyqYBNZ; @x6HXFAS4; @Qve94Jra]. All these
+studies demonstrate successful transfer of features learnt from natural image
+datasets, such as ImageNet [@cBVeXnZx]. Rajkomar et al.
+[@x6HXFAS4] showed that a deep CNN trained on natural
+images can boost performance in radiology image classification. However, the
+target task required either re-training the initial model from scratch with
+special pre-processing or fine-tuning of the whole network on radiographs with
+heavy data augmentation to avoid overfitting. Shin et al. [@1GAyqYBNZ]
+compared various deep network architectures, dataset characteristics, and
+training procedures for computer tomography-based (CT) abnormality detection.
+They concluded that in case of three-dimensional data networks as deep as 22
+layers can be useful for such problems despite the limited size of training
+datasets. However, they note, that choice of a specific architecture,
+parameter setting, and model fine-tuning needed is very problem and
+dataset-specific. Moreover, this type of tasks often depends on both lesion
+localization and appearance that pose challenges for CNN-based approaches.
+Straightforward attempts to capture useful information from full-size images
+in all three dimensions simultaneously make applications of standard neural
+network architectures computationally unfeasible due to the curse of
+dimensionality. Instead, two dimensional models are often used to either process
+image slices individually (2D), or aggregate information from a number of 2D
+projections in the native space (2.5D). Roth et al. compared 2D, 2.5D, and
+3D CNNs on a number of tasks for computer-aided detection from CT scans and
+showed that 2.5D CNNs performed comparably well to 3D analogs, while requiring
+much less training time, especially on augmented training sets
+[@KseoWN2w]. Another advantage of 2D and 2.5D networks is a
+possibility to use widely available models pre-trained on natural images.
+
+Similarly, in magnetic resonance image (MRI) analysis, limited size of training
+sets and large dimensionality represent challenges to deep learning
+applications. For example, Amit et al. [@SOi9mAC2] investigated
+the tradeoffs between using pre-trained models from a different domain and
+retraining a small-size CNN on MRI images. They showed that smaller network
+trained with sufficient data augmentation on few hundred images from a
+few dozen patients can outperform a pre-trained out-of-domain classifier.
+Nie et al. [@18EpaZ7QB] showed that multimodal, multi-channel
+3D deep architecture was successful at learning high-level brain tumor
+appearance features jointly from MRI, functional MRI and diffusion MRI images,
+outperforming single-modality or 2D models. Overall, the variety of modalities,
+properties and sizes of training sets, dimensionality of input, and, finally,
+the importance of end goals in medical image analysis are provoking a
+development of specialized deep neural network architectures, training and
+validation protocols, and input representations that are not characteristic of
+widely studied natural images.
+
+In addition to medical imaging, histology slides are also being analyzed
+with deep learning approaches [@dQCjqq0Q].
+Ciresan et al. [@koEdZRcY]
+developed one of the earliest examples, winning the 2012 International
+Conference on Pattern Recognition's Contest on Mitosis Detection while
+achieving human competitive accuracy. Their approach uses what has become a
+standard convolutional neural network architecture trained on public data.
+In more recent work, Wang et al. [@mbEp6jNr] analyzed stained
+slides to identify cancers within slides of lymph node slices. The approach
+provided a probability map for each slide. On this task a pathologist has about
+a 3% error rate. The pathologist did not produce any false positives, but did
+have a number of false negatives. While the algorithm had about twice the
+error rate of a pathologist, the errors were not strongly correlated with those
+of a pathologist, suggesting that the two could be combined, theoretically,
+reducing error rate to under 1%. In this area, these algorithms may be ready to
+incorporate into existing tools to aid pathologists. The authors' work suggests
+that this could reduce the false negative rate of such evaluations. This theme
+of an ensemble between deep learning algorithm and human expert may help
+overcome some of the challenges presented by data limitations.
 
 One source of training examples with rich clinical annotations is the electronic
-health record. Recently Lee et al.[@SxsZyrVM] developed an approach to
-distinguish individuals with Age-related Macular Degeneration from control
-individuals. They extracted approximately 100,000 images from structured
-electronic health records, which they used to train and evaluate a deep neural
-network. Combining this data resource with standard deep learning techniques,
-the authors reach greater than 93% accuracy. One item that is important to note
-with regards to this work is that the authors used their test set for evaluating
-when training had concluded. In other domains, this has resulted in a minimal
-change in the estimated accuracy
-[@lTBZomqa].
-However, there is not yet a single accepted standard within the field of
-biomedical research for such evaluations. We recommend the use of an independent
-test set wherever it is feasible. Despite this minor limitation, the work
-clearly illustrates the potential that can be unlocked from images stored in
-electronic health records.
+health records. Recently Lee et al.[@SxsZyrVM] developed an
+approach to distinguish individuals with age-related macular degeneration
+from control individuals. They extracted approximately 100,000 images from
+structured electronic health records, which they used to train and evaluate a
+deep neural network. Combining this data resource with standard deep learning
+techniques, the authors reach greater than 93% accuracy. One item that is
+important to note with regards to this work is that the authors used their test
+set for evaluating when training had concluded. In other domains, this has
+resulted in a minimal change in the estimated accuracy
+[@CCS5KSIM]. However, there is not yet a single accepted
+standard within the field of biomedical research for such evaluations.
+We recommend the use of an independent test set wherever it is feasible.
+Despite this minor limitation, the work clearly illustrates the potential that
+can be unlocked from images stored in electronic health records.
 
-`TODO: Potential remaining topics: #122 & #151 looked interesting from an early
-glance. - Do we want to make the point that most of the imaging examples don't
-really do anything different/unique from standard image processing examples
-(Imagenet etc.)`
+These examples demonstrate that, except for few natural image-like problems
+(e.g. melanoma detection), biomedical imaging poses a number of challenges for
+deep learning applications. Dataset sizes are typically limited, annotations
+can be sparse, and images are often high-dimensional, multimodal, and
+multi-channel. Techniques like transfer learning, heavy dataset augmentation,
+multi-view and multi-stream architectures are used more commonly compared
+to natural image domain. Furthermore, sensitivity and specificity of a model
+in this case often can translate directly into a clinical value. Thus,
+results evaluation, uncertainty estimation, and model interpretation methods are
+also of great importance in this domain (see Discussion). Finally, there is
+a need for better pathologist-computer interaction techniques that will allow
+to combine the power of deep learning methods with human expertise and
+lead to better informed decisions for patient treatment and care.
 
 #### Electronic health records
 
@@ -325,9 +434,9 @@ outperformed the other methods. Of particular interest, when the authors first
 trained a neural network to predict primary site and then repurposed those
 features as a component of a secondary neural network trained to predict
 laterality, the performance was higher than a laterality-trained neural network.
-This indicates a potential strength of deep methods. They can repurpose
-features across tasks, improving overall predictions as the field tackles
-new challenges. This approach is known as transfer learning (see Discussion).
+This demonstrates how deep learning methods can repurpose features across tasks,
+improving overall predictions as the field tackles new challenges. For the
+further review of this type of approaches see Discussion.
 
 Several authors have created reusable feature sets for medical terminologies
 using natural language processing (NLP) and neural embedding models, as
