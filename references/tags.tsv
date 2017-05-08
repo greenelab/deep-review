@@ -1,5 +1,6 @@
 tag	citation
 Abe	doi:10.1101/gr.634603
+Abramoff2016_dr	doi:10.1016/j.procs.2016.07.014
 Agarwal2015_targetscan	doi:10.7554/eLife.05005
 Alipanahi2015_predicting	doi:10.1038/nmeth.3547
 AltaeTran2016_one_shot	doi:10.1021/acscentsci.6b00367
@@ -22,6 +23,7 @@ Bergstra2012_random	url:http://dl.acm.org/citation.cfm?id=2188395
 Bracken2016_mirna	doi:10.1038/nrg.2016.134
 Boza	arxiv:1603.09195
 Buggenthin2017_imaged_lineage	doi:10.1038/nmeth.4182
+Burlina2016_amd	doi:10.1109/ISBI.2016.7493240
 Caruana2014_need	arxiv:1312.6184
 Chaudhary2017_multiom_liver_cancer	doi:10.1101/114892
 Che2015_distill	arxiv:1512.03542
@@ -58,6 +60,7 @@ Esteva2017_skin_cancer_nature	doi:10.1038/nature21056
 Faruqi	url:http://alifar76.github.io/sklearn-metrics/
 Fong2017_perturb	arxiv:1704.03296
 Gaublomme2015_th17	doi:10.1016/j.cell.2015.11.009
+Gargeya2017_dr	doi:10.1016/j.ophtha.2017.02.008
 Gawad2016_singlecell	doi:10.1038/nrg.2015.16
 Geras2017_multiview_mamm	doi:10.1038/nrg.2015.16
 Gerstein2016_scaling	doi:10.1186/s13059-016-0917-0
@@ -66,6 +69,7 @@ Gomezb2016_automatic	arxiv:1610.02415
 Graphlab	doi:10.14778/2212351.2212354
 Groop1986_islet	doi:10.2337/diab.35.2.237
 Gultepe2014_sepsis	doi:10.1136/amiajnl-2013-001815
+Gulshan2016_dt	doi:10.1001/jama.2016.17216
 Gupta2015_exprs_yeast	doi:10.1101/031906
 Gupta2015_prec	arxiv:1502.02551
 Guetterman	url:http://www.fasebj.org/content/30/1_Supplement/406.3
@@ -102,6 +106,7 @@ Lakhani2017_radiography	doi:10.1148/radiol.2017162326
 Lanchantin2016_motif	arxiv:1608.03644
 Lee2016_deeptarget	arxiv:1603.09123v2
 Lee2016_emr_oct_amd	doi:10.1101/094276
+Leibig2016_dr	doi:10.1101/084210
 Li2014_minibatch	doi:10.1145/2623330.2623612
 Li2016_variation	doi:10.1126/science.aad9417
 Liang2015_exprs_cancer	doi:10.1109/TCBB.2014.2377729
@@ -141,6 +146,7 @@ Pereira2016_docking	doi:10.1021/acs.jcim.6b00355
 PerezSianes2016_screening	doi:10.1007/978-3-319-40126-3_2
 Phymm	doi:10.1038/nmeth.1358
 Poplin2016_deepvariant	doi:10.1101/092890
+Pratt2016_dr	doi:10.1016/j.procs.2016.07.014
 Qin2017_onehot	doi:10.1371/journal.pcbi.1005403
 Qiu2017_graph_embedding	doi:10.1101/110668
 Ragoza_protein	arxiv:1612.02751

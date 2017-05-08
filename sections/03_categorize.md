@@ -65,15 +65,38 @@ modalities pre-training on natural images appears to be common model
 initialization, applied networks can be as deep as over 50 layers, and result
 performance is competitive or better compared to a board of certified
 dermatologists [@tag:Codella2016_ensemble_melanoma
-@tag:Esteva2017_skin_cancer_nature].
+@tag:Esteva2017_skin_cancer_nature]. This approach is
+known as transfer learning (see Discussion).
+
+Another fast emerging area of deep learning method applications is detection of
+ophthalmological diseases such as diabetic retinopathy and age-related macular
+degeneration. Diagnosis of diabetic retinopathy through color fundus images
+became of interest for deep learning researchers and practitioners after the
+large labeled image set was made publicly available during the corresponding
+2015 Kaggle competition [@tag:Pratt2016_dr]. Most attempts included training
+a network from scratch [@tag:Pratt2016_dr @tag:Abramoff2016_dr
+@tag:Leibig2016_dr], while Gulshan et al. [@tag:Gulshan2016_dt] employed
+48-layer Inception-v3 deep architecture pre-trained on natural images and
+demonstrated substantial increase over the state-of-the-art in both specificity
+and sensitivity. Interestingly, Leibig et al. [@tag:Leibig2016_dr] proposed a
+method to estimate the uncertainty of deep networks in diabetic retinopathy
+diagnosis based on a recent theoretical insight on the link between dropout
+networks and approximate Bayesian inference. Such developments are important
+for the whole medical image analysis field, because they have a potential to
+provide information about a level of confidence for every black-box algorithm's
+classification result and, thus, improve pathologist-computer interaction.
+Deep networks were also recently applied to age-related macular degeneration
+detection, similarly demonstrating the power of transfer learning when training
+set is limited [@tag:Burlina2016_amd] as well as the efficient use of a deep
+16-layer architecture combined with EMR data for training set enrichment.
 
 Mammography has been one area with numerous contributions
 [@tag:Dhungel2015_struct_pred_mamm @tag:Dhungel2016_mamm
 @tag:Zhu2016_mult_inst_mamm @tag:Zhu2016_advers_mamm
 @tag:Dhungel2017_mamm_min_interv]. In the most of this work, the researchers
-must work around a specific challenge - the limited number of well annotated
-training images. To expand the number and diversity of images, the researchers
-have employed approaches where they employ adversarial examples
+must work around a typical for the domain challenge - the limited number of
+well annotated training images. To expand the number and diversity of images,
+the researchers have employed approaches where they use adversarial examples
 [@tag:Zhu2016_advers_mamm] or first train towards human-created features before
 subsequent fine tuning [@tag:Dhungel2016_mamm]. Adaptation to the medical image
 domain can further improved by combining in the latter approach with other
@@ -104,8 +127,7 @@ even when dataset size is not big enough to train large capacity models from
 scratch [@tag:Bar2015_nonmed_tl @tag:Shin2016_cad_tl
 @tag:Rajkomar2017_radiographs @tag:Lakhani2017_radiography]. All these
 studies demonstrate successful transfer of features learnt from natural image
-datasets, such as ImageNet [@tag:Russakovsky2015_imagenet]. This approach is
-known as transfer learning (see Discussion). Rajkomar et al.
+datasets, such as ImageNet [@tag:Russakovsky2015_imagenet]. Rajkomar et al.
 [@tag:Rajkomar2017_radiographs] showed that although a deep CNN trained on
 natural images can boost radiology image classification performance, target
 task required either re-training the initial model from scratch with special
