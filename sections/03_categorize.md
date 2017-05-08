@@ -199,12 +199,25 @@ techniques, the authors reach greater than 93% accuracy. One item that is
 important to note with regards to this work is that the authors used their test
 set for evaluating when training had concluded. In other domains, this has
 resulted in a minimal change in the estimated accuracy
-[@tag:Krizhevsky2013_nips_cnn].
-However, there is not yet a single accepted standard within the field of
-biomedical research for such evaluations. We recommend the use of an independent
-test set wherever it is feasible. Despite this minor limitation, the work
-clearly illustrates the potential that can be unlocked from images stored in
-electronic health records.
+[@tag:Krizhevsky2013_nips_cnn]. However, there is not yet a single accepted
+standard within the field of biomedical research for such evaluations.
+We recommend the use of an independent test set wherever it is feasible.
+Despite this minor limitation, the work clearly illustrates the potential that
+can be unlocked from images stored in electronic health records.
+
+These examples demonstrate that, except for few natural image-like problems
+(e.g. melanoma detection), biomedical imaging poses a number of challenges for
+deep learning applications. Dataset sizes are typically limited, annotations
+can be sparse, and images are often high-dimensional, multimodal, and
+multi-channel. Techniques like transfer learning, heavy dataset augmentation,
+multi-view and multi-stream architectures are used more commonly compared
+to natural image domain. Furthermore, sensitivity and specificity of a model
+in this case often can translate directly into a clinical value. Thus,
+results evaluation, uncertainty estimation, and model interpretation methods are
+also of great importance in this domain (see Discussion). Finally, there is
+a need for better pathologist-computer interaction techniques that will allow
+to combine the power of deep learning methods with human expertise and
+lead to better informed decisions for patient treatment and care.
 
 #### Electronic health records
 
