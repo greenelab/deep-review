@@ -36,6 +36,7 @@ Chollet2016_xception	arxiv:1610.02357
 Chryssolouris1996_confidence	doi:10.1109/72.478409
 Ciresan2013_mitosis	doi:10.1007/978-3-642-40763-5_51
 Coates2013_cots_hpc	url:http://www.jmlr.org/proceedings/papers/v28/coates13.html
+Codella2016_ensemble_melanoma	arxiv:1610.04662
 Consortium2004_encode	doi:10.1126/science.1105136
 CudNN	arxiv:1410.0759
 Dahl2014_multi_qsar	arxiv:1406.1231
@@ -52,6 +53,8 @@ Duvenaud2015_graph_conv	url:http://papers.nips.cc/paper/5954-convolutional-netwo
 Edwards2015_growing_pains	doi:10.1145/2771283
 Elephas	url:https://github.com/maxpumperla/elephas
 Eser2016_fiddle	doi:10.1101/081380
+Esfahani2016_melanoma	doi:10.1109/EMBC.2016.7590963
+Esteva2017_skin_cancer_nature	doi:10.1038/nature21056
 Faruqi	url:http://alifar76.github.io/sklearn-metrics/
 Fong2017_perturb	arxiv:1704.03296
 Gaublomme2015_th17	doi:10.1016/j.cell.2015.11.009
@@ -78,6 +81,7 @@ Hubara2016_qnn	arxiv:1609.07061
 Huddar2016_predicting	doi:10.1109/ACCESS.2016.2618775
 Hughes2016_macromol_react	doi:10.1021/acscentsci.6b00162
 Ithapu2015_efficient	doi:10.1016/j.jalz.2015.01.010
+Jafari2016_skin_lesions	arxiv:1609.02374
 Jha2017_integrative_models	doi:10.1101/104869
 JuanMateu2016_t1d	doi:10.1530/EJE-15-0916
 Karlin	doi:10.1128/jb.179.12.3899-3913.1997
@@ -201,6 +205,7 @@ Yasushi2016_cgbvs_dnn	doi:10.1002/minf.201600045
 yok	doi:10.1186/1471-2105-12-20
 Yoon2016_cancer_reports	doi:10.1007/978-3-319-47898-2_21
 Yosinski2014	url:https://papers.nips.cc/paper/5347-how-transferable-are-features-in-deep-neural-networks
+Yu2016_melanoma_resnet	doi:10.1109/TMI.2016.2642839
 Zeng2015	doi:10.1186/s12859-015-0553-9
 Zhang2015_multitask_tl	doi:10.1145/2783258.2783304
 Zhou2015_deep_sea	doi:10.1038/nmeth.3547

@@ -55,6 +55,18 @@ enhancement, and combining image data with clinical reports. For the extensive
 literature review, including approaches and applications see recent papers
 [@tag:Litjens2017_medimage_survey @tag:Shen2017_medimg_review].
 
+Closest to natural images are applications of deep learning aimed at
+detection and recognition of melanoma, the deadliest form of skin cancer.
+Recent works included applications to both dermoscopy
+[@tag:Codella2016_ensemble_melanoma @tag:Yu2016_melanoma_resnet] and simply
+clinical photography images of skin lesions [@tag:Jafari2016_skin_lesions
+@tag:Esfahani2016_melanoma @tag:Esteva2017_skin_cancer_nature]. For both
+modalities pre-training on natural images appears to be common model
+initialization, applied networks can be as deep as over 50 layers, and result
+performance is competitive or better compared to a board of certified
+dermatologists [@tag:Codella2016_ensemble_melanoma
+@tag:Esteva2017_skin_cancer_nature].
+
 Mammography has been one area with numerous contributions
 [@tag:Dhungel2015_struct_pred_mamm @tag:Dhungel2016_mamm
 @tag:Zhu2016_mult_inst_mamm @tag:Zhu2016_advers_mamm
