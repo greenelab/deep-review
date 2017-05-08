@@ -63,28 +63,35 @@ subsequent training. Similar strategies have been employed for EHR data where
 high-quality labeled examples are also difficult to obtain
 [@doi:10.1101/039800].
 
-Chest X-ray image analysis is another area where recent DL methods showed
-remarkable results [@arXiv:1701.06599 @arXiv:XXX]. Alternative to using fully
-labeled training data, the authors in [@arXiv:XXX] proposed to use weakly
-labeled images for training deep learning models. To generate weak labels for
-x-ray images, Wang et al. [1] applied a series of Natural Language Processing
-(NLP) techniques to the associated chest X-ray radiological reports.
-Specifically, they first extracted all diseases mentioned in the reports using a
-state-of-the-art NLP tool, then applied a newly developed negation and
-uncertainty detection tool (NegBio) to filter negative and equivocal findings in
-the reports. Evaluation on three independent datasets demonstrated that NegBio
-is highly accurate for detecting negative and equivocal findings (~90% in
-F-measure overall). These highly accurate results meet the need to generate a
-corpus with weak labels, which serves as a solid foundation for the later
-process of image classification. The resulting dataset, known as CXR-XIV,
-consists of 108,948 frontal-view chest X-ray images (from 32,717 patients) and
-each image is associated with one or more weakly-labeled pathology category
-(e.g., pneumonia and cardiomegaly) or “normal” otherwise. Given such a large-
-scale dataset, Wang et al. [@arXiv:XXX] further proposed a unified weakly-
-supervised multi-label image classification framework, which involved using deep
-learning to effectively detect common thoracic diseases in radiology images and
-showed superior performance than those using a small set of fully labeled data
-in benchmarking results.
+Chest X-rays are a common radiological examination for screening and diagnosis
+of lung diseases. Although hospitals have accumulated a large number of raw
+radiology images and reports in Picture Archiving and Communication Systems and
+their related reports in Radiology Information System, it is not yet known how
+to effectively use them to learn the correlation between pathology categories
+and X-rays. In the last few years, deep learning methods showed remarkable
+results in chest X-ray image analysis [@arxiv:1701.06599 @arxiv:1705.02315].
+However, it is both costly and time-consuming to annotate a large-scale fully-
+labeled corpus to facilitate the data-hungry deep learning models. As an
+alternative, Wang et al. [@arxiv:1705.02315] proposed to use weakly labeled
+images for training deep learning models. To generate weak labels for X-ray
+images, they applied a series of Natural Language Processing (NLP) techniques to
+the associated chest X-ray radiological reports. Specifically, they first
+extracted all diseases mentioned in the reports using a state-of-the-art NLP
+tool, then applied a newly developed negation and uncertainty detection tool
+(NegBio) to filter negative and equivocal findings in the reports. Evaluation on
+three independent datasets demonstrated that NegBio is highly accurate for
+detecting negative and equivocal findings (~90% in F-measure overall). These
+highly accurate results meet the need to generate a corpus with weak labels,
+which serves as a solid foundation for the later process of image
+classification. The resulting dataset (CXR-XIV
+[@url:https://console.cloud.google.com/storage/browser/gcs-public-data--
+nih/radiology_2017/Chest_X-Ray_CVPR17]) consists of 108,948 frontal-view chest
+X-ray images (from 32,717 patients) and each image is associated with one or
+more weakly-labeled pathology category (e.g., pneumonia and cardiomegaly) or
+"normal" otherwise. Further, Wang et al. [@arxiv:1705.02315] used this dataset
+with a unified weakly-supervised multi-label image classification framework, to
+detect common thoracic diseases. It showed superior performance over a benchmark
+using fully labeled data.
 
 In addition to radiographic images, histology slides are also being analyzed
 with deep learning approaches. Ciresan et al.
