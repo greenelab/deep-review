@@ -13,7 +13,7 @@ guidelines:
 * May 1: Any section not merged & ready for revisions gets dropped due to lack
   of completion. Invitations go out to contributing authors to approve the
   manuscript.
-* May 1 - 14: Revisions, flow, an clarity.
+* May 1 - 14: Revisions, flow, and clarity.
 * Final edits and author approval. Authors must approve by [Noon Eastern
   Time](https://time.is/ET) on May 17 to be included as co-authors. File a pull
   request to add the appropriate line to `author_contact_approval.md`
