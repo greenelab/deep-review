@@ -141,7 +141,7 @@ application of deep learning.
 A key challenge in biomedicine is the accurate classification of
 diseases and disease subtypes. In oncology, current "gold standard"
 approaches involve histology, requiring manual
-human expertise for quantification, or small panel of molecular markers,
+human expertise for quantification, or small panels of molecular markers,
 such as cell surface
 receptors or genes' expression. One example is the PAM50 approach
 to classifying breast cancer where the expression of 50 marker
@@ -198,7 +198,7 @@ might be repurposed for other diseases through deep neural networks
 restricted Boltzmann machines (RBM) can be combined into deep belief networks
 (DBNs) to predict novel drug - target interactions and formulate drug
 repositioning hypotheses [@1AU7wzPqa; @oTF8O79C]. Finally, deep learning is also being
-succesfully used to prioritize chemicals in the early stages of drug discovery
+successfully used to prioritize chemicals in the early stages of drug discovery
 for new targets [@xPkT1z7D].
 
 
@@ -226,7 +226,7 @@ diagnosed with type 1 diabetes - the autoimmune form of the disease that arises
 in young people. Such a neural network would be identifying patients with LADA.
 As no such computational approach existed, LADA was actually identified by Groop
 et al. [@ws1zvGoZ]. However, this represents a potential hope
-of this area. Perhaps deep neural networks, by reevaluating data without the
+for this area. Perhaps deep neural networks, by reevaluating data without the
 context of our assumptions, can reveal novel classes of treatable conditions.
 
 Alternatively, imagine that a deep neural network is provided with clinical test
@@ -269,7 +269,7 @@ compared to a board of certified dermatologists
 [@sLPsrfbl; @XnYNYoYB].
 This approach is known as transfer learning (see Discussion).
 
-Another fast emerging area of deep learning method applications is detection of
+Another fast emerging area of deep learning method applications is the detection of
 ophthalmological diseases such as diabetic retinopathy and age-related macular
 degeneration. Diagnosis of diabetic retinopathy through color fundus images
 became of interest for deep learning researchers and practitioners after the
@@ -297,7 +297,7 @@ well annotated training images. To expand the number and diversity of images,
 the researchers have employed approaches where they use adversarial examples
 [@Xxb4t3zO] or first train towards human-created features before
 subsequent fine tuning [@JK8NuXy3]. Adaptation to the medical image
-domain can further improved by combining in the latter approach with other
+domain can be further improved by combining in the latter approach with other
 machine learning techniques, for example, as a cascade of deep learning and
 random forest models [@5kfDbGhA]. Using large dataset,
 Kooi et al. [@18cZbigDD] demonstrated that deep neural
@@ -361,7 +361,7 @@ Nie et al. [@18EpaZ7QB] showed that multimodal, multi-channel
 3D deep architecture was successful at learning high-level brain tumor
 appearance features jointly from MRI, functional MRI and diffusion MRI images,
 outperforming single-modality or 2D models. Overall, the variety of modalities,
-properties and sizes of training sets, dimensionality of input, and, finally,
+properties and sizes of training sets, the dimensionality of input, and, finally,
 the importance of end goals in medical image analysis are provoking a
 development of specialized deep neural network architectures, training and
 validation protocols, and input representations that are not characteristic of
@@ -411,7 +411,7 @@ a 3% error rate. The pathologist did not produce any false positives, but did
 have a number of false negatives. While the algorithm had about twice the
 error rate of a pathologist, the errors were not strongly correlated with those
 of a pathologist, suggesting that the two could be combined, theoretically,
-reducing error rate to under 1%. In this area, these algorithms may be ready to
+reducing the error rate to under 1%. In this area, these algorithms may be ready to
 incorporate into existing tools to aid pathologists. The authors' work suggests
 that this could reduce the false negative rate of such evaluations. This theme
 of an ensemble between deep learning algorithm and human expert may help
@@ -445,7 +445,7 @@ results evaluation, uncertainty estimation, and model interpretation methods are
 also of great importance in this domain (see Discussion). Finally, there is
 a need for better pathologist-computer interaction techniques that will allow
 to combine the power of deep learning methods with human expertise and
-lead to better informed decisions for patient treatment and care.
+lead to better-informed decisions for patient treatment and care.
 
 #### Electronic health records
 
@@ -633,7 +633,7 @@ data-driven revolution in how work is done. Contrasting with this perspective,
 Ratner, Bach, and Ré described labeled training data as "The _New_ New Oil"
 [@hfcf5Hmi]. In this
 framing, data are abundant and not a scarce resource. Instead, new approaches to
-solve problems arise when labeled training data become sufficient to enable
+solving problems arise when labeled training data become sufficient to enable
 them. Based on our review of research on deep learning methods to categorize
 disease, the latter framing rings true.
 
@@ -736,7 +736,7 @@ adversarial neural networks as a tool to make sharable EHR data
 model from such attacks.
 
 There are approaches to protect models, but they pose their own challenges.
-Training algorithms in a differentially private manner provides a limited
+Training in a differentially private manner provides a limited
 guarantee that an algorithm's output will be equally
 likely to occur regardless of the participation of any one individual. The limit
 is determined by a single parameter which provides a quantification of privacy.
@@ -820,7 +820,7 @@ Neural Networks) [@Ohd1Q9Xw] and the incorporation of past and current
 state (Recurrent Neural Networks, Long Short Term Memory
 Networks)[@HRXii6Ni]. This may be a particular area of opportunity for
 deep neural networks. The ability to discover relevant sequences of events from
-large number of trajectories requires powerful and flexible feature construction
+a large number of trajectories requires powerful and flexible feature construction
 methods - an area at which deep neural networks tend to excel.
 
 
@@ -890,7 +890,7 @@ the genes are aggregated into features. Precisely attributing node activations t
 specific biological functions risks over-interpreting models and can lead to
 incorrect conclusions.
 
-Alternatively, deep learning approaches are also being applied for gene
+Alternatively, deep learning approaches are also being applied to gene
 expression prediction tasks. For example, a deep neural network with
 three hidden layers outperformed linear regression in inferring the expression
 of over 20,000 target genes based on a representative, well-connected set of
@@ -918,7 +918,7 @@ Deep learning applied to gene expression data is in its infancy but the future
 is bright. Many hypotheses can now be interrogated because of increasing
 amounts of data and new developing technologies. For example, there is a
 growing appreciation for the large impact of disease heterogeneity on research
-and treatment strategies for disease. New technologies are being developed,
+and treatment strategies for diseases. New technologies are being developed,
 such as single cell RNA-seq and high throughput fluorescence based imaging that
 are good matches for deep learning. Concurrently, deep learning methods are
 being developed to address novel problems such as adjusting for batch effects in
@@ -1181,7 +1181,7 @@ showed that only 33% of predicted regulatory regions could be validated, while a
 class of "weak" predicted enhancers were strong drivers of expression. Yet there
 is growing evidence for their vast ubiquity, making them possibly the
 predominant functional non-coding element. Thus, identifying enhancers is
-critical yet the the search space is embarrassingly large.
+critical yet the search space is embarrassingly large.
 
 While prior (non-deep learning) approaches have made steady improvements on
 promoter prediction, there is little consensus on the best approach and
@@ -1199,16 +1199,16 @@ The complex nature of CREs (and our ignorance at to what are the important
 features of them) therefore seems a good subject for deep learning approaches.
 Indeed, neural networks were used for promoter recognition as early as 1996,
 albeit with mixed results [@3Ew5V1iC]. Since then,
-there have been much work in applying deep learning to this area, although
+there has been much work in applying deep learning to this area, although
 little in the way of comparative studies or reviews. We will therefore focus on
 a few recent characteristic studies to outline the state of the art and extant
 problems.
 
 Most broadly, Kelley et al. [@2CbHXoFn] trained CNNs on DNA
-accessibility datasets, getting an marked improvement on previous methods,
+accessibility datasets, getting a marked improvement on previous methods,
 albeit still with a high false positive rate. (Note as above, using DNA
 accessibility conflates enhancers with other functional sites.) This study also
-featured a useful interpetability approach (analogous to in silico mutagenesis
+featured a useful interpretability approach (analogous to in silico mutagenesis
 [@1EyJfuWqh]) introducing known protein binding motifs into
 sequences and measuring the change in predicted accessibility.
 
@@ -1258,7 +1258,7 @@ putative or dependent on the experimental method or context of identification.
 Else we risk building detectors not for CREs but putative CREs. The best model
 of negative sample needs also to be considered, as does the problem of
 imbalanced data. In a sentence, these methods can only be as good as their
-training data. Finally, intepretability is a problem but one that appears to be
+training data. Finally, interpretability is a problem but one that appears to be
 solvable given empirical approaches.
 
 `TODO: discuss enhancer-promoter and enhancer-target prediction`
@@ -1304,7 +1304,7 @@ Proteins play fundamental roles in all biological processes including the
 maintenance of cellular integrity, metabolism, transcription/translation, and
 cell-cell communication. Complete description of protein structures and
 functions is a fundamental step towards understanding biological life and
-also highly relevant in the development of therapeutics and drugs. UnitProt
+also highly relevant to the development of therapeutics and drugs. UnitProt
 currently has about 94 millions of protein sequences. Even if we remove
 redundancy at 50% sequence identity level, UnitProt still has about
 20 millions of protein sequences. However, fewer than 100,000 proteins
@@ -1769,7 +1769,7 @@ are currently hampered by the difficulties of counter-factual inference.
 
 A clinical task to deep learning which has been more successfully applied is
 the assignment of patients to clinical trials. Ithapu et al
-[@eehGXQlY] used a randomized denoising autoenconder
+[@eehGXQlY] used a randomized denoising autoencoder
 to learn a multimodal imaging marker that predicts future cognitive
 and neural decline from positron emission tomography (PET), amyloid
 florbetapir PET, and structural magnetic resonance imaging.
@@ -1779,7 +1779,7 @@ the required sample sizes by a factor of five.  Similarly, Artemov et al
 [@mo3GQwJj] applied deep learning to predict which
 clinical trials were likely to fail and which were likely to succeed. By
 predicting the side effects and pathway activations of each drug, and
-then translating these activations to a success proability, their deep
+then translating these activations to a success probability, their deep
 learning-based approach was able to significantly outperform a random
 forest classifier trained on gene expression changes. These approaches
 suggest promising directions to improve the efficiency of clinical trials
@@ -1897,7 +1897,7 @@ dependent?` This task has been treated as a classification, regression, and
 ranking problem. In reality, it does not fit neatly into any of those
 categories.  An ideal algorithm will rank a sufficient number of active
 compounds before the inactives, but the rankings of actives relative to other
-actives and inactives to other inactives is less important
+actives and inactives are less important
 [@cjj5vT3H]. `TODO: can improve this first attempt at an intro by
 reviewing more existing literature on the topic` `TODO: check which other
 existing reviews should be referenced`
@@ -2005,7 +2005,7 @@ embeddings.  The approach is evaluated in an extremely challenging setting where
 the embedding is learned from a subset of prediction tasks (e.g. activity assays
 for individual proteins) and only one to ten labeled examples are provided as
 training data on a new task.  On Tox21 targets, even when trained with _one_
-task-specific active compound and _one_ inactive compound, the model is able
+task-specific active compound and _one_ inactive compound, the model is able to
 generalize reasonably well because it has learned an informative embedding
 function from the related tasks. Random forests, which cannot take advantage of
 the related training tasks, trained in the same setting are only slightly better
@@ -2054,7 +2054,7 @@ limitations of transfer learning.  Multitask neural networks have shown the
 advantages of jointly modeling many targets [@F8fP2vAg; @yAoN5gTU].  Other studies have shown the limitations of
 transfer learning when the prediction tasks are insufficiently related
 [@uP7SgBVd; @P4ixsM8i].  This has important
-implications for representation learning.  The typical approach of improving
+implications for representation learning.  The typical approach to improve
 deep learning models by expanding the dataset size may not be applicable if only
 "related" tasks are beneficial, especially because task-task relatedness is
 ill-defined. The massive chemical state space will also influence the
