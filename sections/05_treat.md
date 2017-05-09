@@ -257,11 +257,11 @@ study of BACE-1 inhibitors included only 1547 compounds
 this limited dataset, but overfitting was a challenge and the differences
 between random forests and a deep neural were negligible, especially in the
 classification setting.  Overfitting is still a problem in larger chemical
-screening datasets with tens or hundreds of thousands of compounds because the
-number of active compounds can be very small, on the order of 0.1% or 1% of all
-tested chemicals for a typical target  `TODO: verify those estimates`. This is
-consistent with the strong performance of low-parameter neural networks that
-emphasize compound-compound similarity, such as influence-relevance voter,
+screening datasets with tens or hundreds of thousands of compounds.  For a
+typical target, the number of active compounds in a screened library is very
+small, on the order of 0.1%  [@doi:10.1002/wcms.1104]. This is consistent with
+the strong performance of low-parameter neural networks that emphasize
+compound-compound similarity, such as influence-relevance voter,
 [@tag:Swamidass2009_irv  @tag:Lusci2015_irv] instead of predicting compound
 activity directly from chemical features. `TODO: include recent DeepChem IRV
 benchmarks?`
@@ -291,18 +291,8 @@ enumerate artificial directed graphs, learning feature vectors for atoms that
 are a function of the properties of neighboring atoms and local regions on the
 molecular graph [@tag:Kearnes2016_graph_conv @tag:AltaeTran2016_one_shot].
 
-Advances in chemical representation learning have not been limited to
-graph-based neural networks.  The simplified molecular-input line-entry system
-(SMILES) is a standard way to transform a chemical into string-based
-representation.  A SMILES-to-SMILES autoencoder learns a continuous latent
-feature space for chemicals [@tag:Gomezb2016_automatic]. `TODO: connect to
-related EHR paper` `TODO: autoencoder doesn't fit cleanly with supervised
-methods, revisit organization after adding GANs` In this learned continuous
-space is it possible to train some types of supervised learning algorithms or
-interpolate between continuous representations of chemicals in a manner that is
-not possible with discrete (e.g. bit vector or string) features. A drawback is
-that not all SMILES strings produced by the autoencoder's decoder correspond to
-valid chemical structures. `TODO: could mention GANs here` Altae-Tran et al
+Advances in chemical representation learning have also enabled new strategies
+for learning chemical-chemical similarity functions.  Altae-Tran et al.
 developed a one-shot learning network [@tag:AltaeTran2016_one_shot] to address
 the reality that most practical chemical screening studies are unable to provide
 the thousands or millions of training compounds that are needed to train larger
@@ -373,11 +363,34 @@ development of unsupervised representation learning methods
 train on massive collections of diverse compounds, drug-like small molecules, or
 specialized subsets.
 
-`TODO: emerging areas: using structure in DL and generative models`
-
-`TODO: other papers to add such as generative models, describe LSTM model, get
-mostly valid SMILES, require few training samples, not a GAN, include as fine
-tuning example in discussion, move autoencoder here`
+Two emerging areas that we anticipate will be increasingly important in deep
+learning for drug discovery are *de novo* drug design and protein
+structure-based models.  Whereas the goal of virtual screening is to prediction
+the biochemical activity of hundreds of thousands to millions of chemicals, *de
+novo* drug design explores the much larger space of at least 10<sup>60</sup>
+organic molecules with drug-like properties that could be chemically synthesized
+[@doi:10.1002/wcms.1104].  Generative neural networks for drug design typically
+represent chemicals with the simplified molecular-input line-entry system
+(SMILES), a standard way string-based representation with characters that
+represent atoms, bonds, and rings [@tag:Segler2017_drug_design].
+Gómez-Bombarelli et al. designed a  SMILES-to-SMILES autoencoder to learn a
+continuous latent feature space for chemicals [@tag:Gomezb2016_automatic].
+`TODO: connect to related EHR paper` In this learned continuous space it was
+possible to train some types of supervised learning algorithms or interpolate
+between continuous representations of chemicals in a manner that is not possible
+with discrete (e.g. bit vector or string) features. A drawback is that not all
+SMILES strings produced by the autoencoder's decoder correspond to valid
+chemical structures.  More recent approaches train RNNs on compounds from ChEMBL
+[@doi:10.1093/nar/gkr777] to first obtain a generic generative model for
+drug-like compounds [@tag:Segler2017_drug_design
+@tag:Olivecrona2017_drug_design].  These generative models successfully learn
+the grammar of compound representations, with 94%
+[@tag:Olivecrona2017_drug_design] or nearly 98% [@tag:Segler2017_drug_design] of
+generated SMILES corresponding to valid molecular structures.  The initial RNN
+is then fine-tuned to generate molecules that are likely to be active against a
+specific target by either continuing RNN training on a small set of positive
+examples [@tag:Segler2017_drug_design] or adopting reinforcement learning
+strategies [@tag:Olivecrona2017_drug_design].
 
 `TOOD: relationship to traditional docking (some networks include docking scores +
 the docking based method that uses neighboring atoms), deep learning with
