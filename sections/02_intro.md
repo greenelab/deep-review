@@ -33,14 +33,15 @@ less fruitful to apply.
 
 The term deep learning has come to refer to a collection of new techniques that,
 together, have demonstrated breakthrough gains over existing best-in-class
-algorithms across several fields. It is built on artificial neural networks, an
-idea that was first proposed in 1943 [@doi:10.1007/BF02478259] as a model for
-how biological brains process information. Since then, interest in neural
-networks as computational models has waxed and waned several times. This history
-is interesting in its own right [@doi:10.1103/RevModPhys.34.135]. With the gains
-shown by techniques falling under the aegis of deep learning over alternative
-approaches, attention has shifted back to neural networks. Our focus is
-primarily on the downstream applications enabled by these advances.
+machine learning algorithms across several fields. It is built on artificial
+neural networks, an idea that was first proposed in 1943
+[@doi:10.1007/BF02478259] as a model for how biological brains process
+information. Since then, interest in neural networks as computational models has
+waxed and waned several times. This history is interesting in its own right
+[@doi:10.1103/RevModPhys.34.135]. In recent years, attention has shifted back to
+neural networks as the predictive power of deep learning techniques has surged
+ahead of other machine learning techniques. Our focus is primarily on the
+downstream applications enabled by these advances.
 
 Several important advances make the current surge of work done in this area
 possible. Easy-to-use software packages have brought the techniques of the field
