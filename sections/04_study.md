@@ -64,7 +64,7 @@ the genes are aggregated into features. Precisely attributing node activations t
 specific biological functions risks over-interpreting models and can lead to
 incorrect conclusions.
 
-Alternatively, deep learning approaches are also being applied for gene
+Alternatively, deep learning approaches are also being applied to gene
 expression prediction tasks. For example, a deep neural network with
 three hidden layers outperformed linear regression in inferring the expression
 of over 20,000 target genes based on a representative, well-connected set of
@@ -92,7 +92,7 @@ Deep learning applied to gene expression data is in its infancy but the future
 is bright. Many hypotheses can now be interrogated because of increasing
 amounts of data and new developing technologies. For example, there is a
 growing appreciation for the large impact of disease heterogeneity on research
-and treatment strategies for disease. New technologies are being developed,
+and treatment strategies for diseases. New technologies are being developed,
 such as single cell RNA-seq and high throughput fluorescence based imaging that
 are good matches for deep learning. Concurrently, deep learning methods are
 being developed to address novel problems such as adjusting for batch effects in
@@ -357,7 +357,7 @@ showed that only 33% of predicted regulatory regions could be validated, while a
 class of "weak" predicted enhancers were strong drivers of expression. Yet there
 is growing evidence for their vast ubiquity, making them possibly the
 predominant functional non-coding element. Thus, identifying enhancers is
-critical yet the the search space is embarrassingly large.
+critical yet the search space is embarrassingly large.
 
 While prior (non-deep learning) approaches have made steady improvements on
 promoter prediction, there is little consensus on the best approach and
@@ -375,16 +375,16 @@ The complex nature of CREs (and our ignorance at to what are the important
 features of them) therefore seems a good subject for deep learning approaches.
 Indeed, neural networks were used for promoter recognition as early as 1996,
 albeit with mixed results [@doi:10.1016/S0097-8485(96)80015-5]. Since then,
-there have been much work in applying deep learning to this area, although
+there has been much work in applying deep learning to this area, although
 little in the way of comparative studies or reviews. We will therefore focus on
 a few recent characteristic studies to outline the state of the art and extant
 problems.
 
 Most broadly, Kelley et al. [@doi:10.1101/gr.200535.115] trained CNNs on DNA
-accessibility datasets, getting an marked improvement on previous methods,
+accessibility datasets, getting a marked improvement on previous methods,
 albeit still with a high false positive rate. (Note as above, using DNA
 accessibility conflates enhancers with other functional sites.) This study also
-featured a useful interpetability approach (analogous to in silico mutagenesis
+featured a useful interpretability approach (analogous to in silico mutagenesis
 [@doi:10.1093/nar/gkm238]) introducing known protein binding motifs into
 sequences and measuring the change in predicted accessibility.
 
@@ -434,7 +434,7 @@ putative or dependent on the experimental method or context of identification.
 Else we risk building detectors not for CREs but putative CREs. The best model
 of negative sample needs also to be considered, as does the problem of
 imbalanced data. In a sentence, these methods can only be as good as their
-training data. Finally, intepretability is a problem but one that appears to be
+training data. Finally, interpretability is a problem but one that appears to be
 solvable given empirical approaches.
 
 `TODO: discuss enhancer-promoter and enhancer-target prediction`
@@ -482,7 +482,7 @@ Proteins play fundamental roles in all biological processes including the
 maintenance of cellular integrity, metabolism, transcription/translation, and
 cell-cell communication. Complete description of protein structures and
 functions is a fundamental step towards understanding biological life and
-also highly relevant in the development of therapeutics and drugs. UnitProt
+also highly relevant to the development of therapeutics and drugs. UnitProt
 currently has about 94 millions of protein sequences. Even if we remove
 redundancy at 50% sequence identity level, UnitProt still has about
 20 millions of protein sequences. However, fewer than 100,000 proteins

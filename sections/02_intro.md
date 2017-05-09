@@ -156,6 +156,6 @@ data is another exciting area of research
 restricted Boltzmann machines (RBMs) can be combined into deep belief networks
 (DBNs) to predict novel drug-target interactions and formulate drug
 repositioning hypotheses [@doi:10.1093/bioinformatics/btt234
-@doi:10.1021/acs.jproteome.6b00618]. Finally, deep learning is also being used
-to prioritize molecules in the early stages of drug discovery
-[@doi:10.1080/17460441.2016.1201262].
+@doi:10.1021/acs.jproteome.6b00618]. Finally, deep learning is also being
+successfully used to prioritize chemicals in the early stages of drug discovery
+for new targets [@doi:10.1080/17460441.2016.1201262].
