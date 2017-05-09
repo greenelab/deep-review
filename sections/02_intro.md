@@ -127,22 +127,20 @@ imaging and histology data, and molecular omics data.
 
 #### Fundamental Biological Study
 
-Deep learning can be applied to answer more fundamental
-biological questions, and is especially suited to leveraging
-large amounts of data from high throughput omics studies. One
-classic biological problem where machine learning has been extensively
-applied is the prediction of molecular targets. Recent advances using deep
-learning have shown higher accuracy in determining molecular targets. For
+Deep learning can be applied to answer more fundamental biological questions; it
+is especially suited to leveraging large amounts of data from high-throughput
+"omics" studies. One classic biological problem where machine learning, and now
+deep learning, has been extensively applied is molecular target prediction. For
 example, Lee et al. used deep recurrent neural networks (RNN) to predict gene
-targets of micro-RNAs [@doi:10.1109/icnn.1994.374637]. Wang et al. used a
-residual CNN to predict protein-protein contact on a genome-wide scale
-[@doi:10.1101/073239]. Other biological questions that have been investigated
-include the prediction of protein secondary structure based on sequence data
-[@doi:10.1109/tcbb.2014.2343960 @doi:10.1038/srep18962],
-recognition of functional genomic elements such as enhancers and
-promoters [@doi:10.1101/036129 @doi:10.1007/978-3-319-16706-0_20
-@doi:10.1093/nar/gku1058], predicting the deleterious effects of nucleotide
-polymorphisms [@doi:10.1093/bioinformatics/btu703], etc.
+targets of microRNAs [@doi:10.1109/icnn.1994.374637]. Wang et al. used a
+residual CNN to predict protein-protein contacts on a genome-wide scale
+[@doi:10.1101/073239]. Some of the many recent exciting applications of deep
+learning include the prediction of protein secondary structure based on sequence
+data [@doi:10.1109/tcbb.2014.2343960 @doi:10.1038/srep18962], recognition of
+functional genomic elements such as enhancers and promoters [@doi:10.1101/036129
+@doi:10.1007/978-3-319-16706-0_20 @doi:10.1093/nar/gku1058], and predicting the
+deleterious effects of nucleotide polymorphisms
+[@doi:10.1093/bioinformatics/btu703].
 
 #### Patient Treatment
 
