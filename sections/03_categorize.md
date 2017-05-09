@@ -193,7 +193,7 @@ classification. The resulting dataset (CXR-XIV
 [@url:https://console.cloud.google.com/storage/browser/gcs-public-data--nih/radiology_2017/Chest_X-Ray_CVPR17])
 consists of 108,948 frontal-view chest
 X-ray images (from 32,717 patients) and each image is associated with one or
-more weakly-labeled pathology category (e.g., pneumonia and cardiomegaly) or
+more weakly-labeled pathology category (e.g. pneumonia and cardiomegaly) or
 "normal" otherwise. Further, Wang et al. [@arxiv:1705.02315] used this dataset
 with a unified weakly-supervised multi-label image classification framework, to
 detect common thoracic diseases. It showed superior performance over a benchmark
@@ -394,7 +394,7 @@ models with many parameters. While unsupervised and semi-supervised approaches
 can help with small sample sizes, the field would benefit greatly from large
 collections of anonymized records in which a substantial number of records have
 undergone expert review. This challenge is not unique to EHR-based studies. Work
-on medical images, -omics data in applications for which detailed metadata are
+on medical images, omics data in applications for which detailed metadata are
 required, and other applications for which labels are costly to obtain will be
 hampered as long as abundant curated data are unavailable.
 
@@ -456,9 +456,9 @@ related to sharing individual health records or deep models built from such
 records. This subsection deals primarily with these challenges.
 
 EHRs are designed chiefly for clinical, administrative and financial purposes,
-such as patient care, insurance and  billing [@doi:10.1038/nrg3208]. Research is
-at best a tertiary priority, presenting  significant challenges to EHR-based
-research in general, and particularly to data intensive deep learning research.
+such as patient care, insurance and  billing [@doi:10.1038/nrg3208]. Science is
+at best a tertiary priority, presenting challenges to EHR-based
+research in general, and to deep learning research particularly.
 These difficulties can be grouped into three areas: local bias, wider standards
 and legal issues. Note these problems are not restricted to EHR but can also
 apply to any large biomedical dataset, e.g. clinical trial data.
