@@ -1,16 +1,14 @@
 ## Introduction
 
-Biology and medicine are rapidly becoming data-intensive with
-respect to both research and practice. A recent comparison of genomics with
-social media, online videos and other data-intensive scientific disciplines
-suggested that the field of genomics alone would equal or surpass other fields
-in data generation and analysis within the next decade
-[@doi:10.1371/journal.pbio.1002195]. These data present new opportunities, but
-also new challenges. The data volume and complexity both indicate that
-automated algorithms will be needed to extract
-meaningful patterns and provide actionable knowledge allowing us to better
-treat, categorize, or study disease, all within data constrained and privacy
-critical environments.
+Biology and medicine are rapidly becoming data-intensive. A recent comparison of
+genomics with social media, online videos, and other data-intensive scientific
+disciplines suggested that genomics alone would equal or surpass other fields in
+data generation and analysis within the next decade
+[@doi:10.1371/journal.pbio.1002195]. The volume and complexity of these data
+present not only new opportunities, but also new challenges. Automated
+algorithms will be crucial in extracting meaningful patterns and actionable
+knowledge that allow us to better treat, categorize, or study disease, all
+within data constrained and privacy critical environments.
 
 Concurrent with this explosive growth in biomedical data, a new enthusiasm for a
 class of machine learning algorithms, known as deep learning, is revolutionizing
