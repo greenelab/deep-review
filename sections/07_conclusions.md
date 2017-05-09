@@ -52,8 +52,26 @@ addition, the stochasticity and complexity of biological systems implies that
 for some problems, for instance, predicting gene regulation in disease, perfect
 accuracy will be unattainable.
 
+We are witnessing deep learning models achieving human-level performance across
+a number of biomedical domains, and yet do not believe that biologists and
+clinicians will be out of a job anytime soon. While deep learning methods will
+soon be (or already are) better than scientists at specific tasks, they may not
+fully grasp the bigger picture. Machine learning algorithms, including deep
+neural networks, are also prone to mistakes that humans are much less likely to
+make, such as misclassification of adversarial examples [@arxiv:1312.6199
+@arxiv:1412.6572], a reminder that these algorithms do not understand the
+semantics of the objects presented. Despite progress in addressing some of these
+limitations [@arxiv:1611.03814 @arxiv:1704.01155], until true and reliable
+artificial intelligence becomes standard in the laboratory and in the clinic,
+the human factor still has a critical role to play. In some cases, cooperation
+between human experts and deep learning algorithms can achieve better
+performance than either individually [@arxiv:1606.05718]. Especially for sample
+and patient classification tasks, we expect deep learning methods to
+complement and assist biomedical researchers rather than compete with or even
+replace them.
+
 Even if deep learning in biology and healthcare is not yet transformative today,
-we are extremely optimistic about its future.  Given how rapidly deep learning
+we are extremely optimistic about its future. Given how rapidly deep learning
 is evolving, its full potential in biomedicine has not been explored.  We have
 highlighted numerous challenges beyond improving training and predictive
 accuracy, such as preserving patient privacy and interpreting models.  Ongoing
@@ -64,11 +82,12 @@ transcription factor binding prediction and molecular graphs instead of
 pre-computed bit vectors for drug discovery. These flexible input feature
 representations have spurred creative modeling approaches that would be
 infeasible with other machine learning techniques. Unsupervised methods are
-currently less-developed than their supervised counterparts, but they may have
-the most potential. When deep learning algorithms can summarize very large
-collections of input data into interpretable models that spur scientists to ask
-questions that they didn't know to ask, it will be clear that deep learning has
-transformed biology and medicine.
+currently less developed than their supervised counterparts, but they may have
+the most potential because of how expensive and time-consuming it is to label
+large amounts of biomedical data. When deep learning algorithms can summarize
+very large collections of input data into interpretable models that spur
+scientists to ask questions that they didn't know how to ask, it will be clear
+that deep learning has transformed biology and medicine.
 
 ### Author contributions
 
