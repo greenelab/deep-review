@@ -540,7 +540,7 @@ adversarial neural networks as a tool to make sharable EHR data
 model from such attacks.
 
 There are approaches to protect models, but they pose their own challenges.
-Training algorithms in a differentially private manner provide a limited
+Training in a differentially private manner provides a limited
 guarantee that an algorithm's output will be equally
 likely to occur regardless of the participation of any one individual. The limit
 is determined by a single parameter which provides a quantification of privacy.
