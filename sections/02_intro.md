@@ -17,8 +17,9 @@ that a neural network could learn to identify cats simply by watching online
 videos [@url:http://research.google.com/archive/unsupervised_icml2012.html].
 These architectures quickly surpassed previous best-in-class methods that
 required extensive customization. More recently, "off-the-shelf" deep neural
-network approaches have demonstrated success from the game of Go
-[@doi:10.1038/nature16961] to quantum physics [@doi:10.1126/science.aag2302].
+network approaches have demonstrated success in applications as diverse as the
+game of Go [@doi:10.1038/nature16961] and quantum physics
+[@doi:10.1126/science.aag2302].
 
 What if, more generally, deep learning could solve the challenges presented by
 the growth of data in biomedicine? Could these algorithms identify the "cats"
@@ -115,15 +116,14 @@ increasing wealth of molecular data available, a more comprehensive subtyping
 seems possible.
 
 Several studies have used deep learning methods in order to better categorize
-breast cancer patients. For example, Tan et al. applied denoising
-autoencoders (DA), an unsupervised approach, in order to cluster breast
-cancer patients [@doi:10.1142/9789814644730_0014]. Ciresan et al. utilized
-convolutional neural networks (CNN) to count mitotic divisions in
-histological images; a feature that is highly correlated with disease
-outcome [@doi:10.1007/978-3-642-40763-5_51]. Despite these recent advances, a
-number of challenges exist in this area of research, such as the integration
-of disparate types of data, including electronic health records (EHR),
-imaging and histology data, and molecular omics data.
+breast cancer patients: denoising autoencoders (DA), an unsupervised approach,
+can be used to cluster breast cancer patients [@doi:10.1142/9789814644730_0014],
+and convolutional neural networks (CNN) can help count mitotic divisions, a
+feature that is highly correlated with disease outcome, in histological images
+[@doi:10.1007/978-3-642-40763-5_51]. Despite these recent advances, a number of
+challenges exist in this area of research, most notably the integration of
+molecular and imaging data with other disparate types of data such as electronic
+health records (EHR).
 
 #### Fundamental Biological Study
 
@@ -131,9 +131,9 @@ Deep learning can be applied to answer more fundamental biological questions; it
 is especially suited to leveraging large amounts of data from high-throughput
 "omics" studies. One classic biological problem where machine learning, and now
 deep learning, has been extensively applied is molecular target prediction. For
-example, Lee et al. used deep recurrent neural networks (RNN) to predict gene
-targets of microRNAs [@doi:10.1109/icnn.1994.374637]. Wang et al. used a
-residual CNN to predict protein-protein contacts on a genome-wide scale
+example, deep recurrent neural networks (RNN) have been used to predict gene
+targets of microRNAs [@doi:10.1109/icnn.1994.374637], and residual CNNs have been
+applied to predict protein-protein contacts on a genome-wide scale
 [@doi:10.1101/073239]. Some of the many recent exciting applications of deep
 learning include the prediction of protein secondary structure based on sequence
 data [@doi:10.1109/tcbb.2014.2343960 @doi:10.1038/srep18962], recognition of
