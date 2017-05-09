@@ -13,9 +13,15 @@ guidelines:
 * May 1: Any section not merged & ready for revisions gets dropped due to lack
   of completion. Invitations go out to contributing authors to approve the
   manuscript.
-* May 1 - 14: Revisions, flow, clarity, and author approval. Authors must approve
-  by May 14 to be included as co-authors.
-  
+* May 1 - 14: Revisions, flow, and clarity.
+* Final edits and author approval. Authors must approve by [Noon Eastern
+  Time](https://time.is/ET) on May 17 to be included as co-authors. File a pull
+  request to add the appropriate line to `author_contact_approval.md`
+
+At this stage it is ideal if **each pull request touches no more than one
+subsection** as this minimizes the number of people who will need to sign off on
+changes.
+
 The most current version of the `master` branch is built by continuous integration
 and [available via gh-pages](https://greenelab.github.io/deep-review/). To see
 what's incoming, check the
@@ -111,7 +117,7 @@ The `gh-pages` branch hosts the following URLs:
   short URL: https://git.io/vytJN
 + **PDF manuscript** at https://greenelab.github.io/deep-review/deep-review.pdf<br>
   short URL: https://git.io/vytJ5
- 
+
 For continuous integration configuration details, see [`.travis.yml`](.travis.yml).
 
 ## License
