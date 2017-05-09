@@ -58,7 +58,7 @@ types of deep neural network architectures. A recent book from Goodfellow et al
 larger datasets now available are also well suited to fitting the many
 parameters that exist for deep neural networks. The convergence of these factors
 currently makes deep learning extremely adaptable and capable of addressing the
-nuanced differences of each domain to which it is applied. 
+nuanced differences of each domain to which it is applied.
 
 ### Will deep learning transform the study of human disease?
 
