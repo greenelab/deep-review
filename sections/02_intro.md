@@ -10,14 +10,15 @@ algorithms will be crucial in extracting meaningful patterns and actionable
 knowledge that allow us to better treat, categorize, or study disease, all
 within data constrained and privacy critical environments.
 
-Concurrent with this explosive growth in biomedical data, a new enthusiasm for a
-class of machine learning algorithms, known as deep learning, is revolutionizing
-image search. These architectures readily surpass previous best-in-class
-results, and computer scientists are now building many-layered neural networks
-from collections of millions of images. In a famous and early example,
-scientists from Google demonstrated that a neural network could learn to
-identify cats simply by watching online videos
-[@url:http://research.google.com/archive/unsupervised_icml2012.html].
+Over the past five years, a class of machine learning algorithms known as deep
+learning has revolutionized image classification as well as a wide variety of
+other fields. In a famous and early example, scientists from Google demonstrated
+that a neural network could learn to identify cats simply by watching online
+videos [@url:http://research.google.com/archive/unsupervised_icml2012.html].
+These architectures quickly surpassed previous best-in-class methods that
+required extensive customization. More recently, "off-the-shelf" deep neural
+network approaches have demonstrated success from the game of Go
+[@doi:10.1038/nature16961] to quantum physics [@doi:10.1126/science.aag2302].
 
 What if, more generally, deep learning could solve the challenges presented by
 the growth of data in biomedicine? Could these algorithms identify the "cats"
