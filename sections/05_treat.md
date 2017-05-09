@@ -1,35 +1,42 @@
 ## The impact of deep learning in treating disease and developing new treatments
 
 `TODO: write Treat intro`
+
+`TODO: just realised this wanders heavily into the categorization area. Need some high-level rearrangment? Could shift the first section below into the categorization section and leave the treatment here.`
+
+Given the ever-present need to make better interventions faster at the point of care -- incorporating the complex calculus of a patients
+symptoms, diagnostics and life history -- there is a long history of attempts to
+apply deep learning to the problem of treatment. Success in this area would also be very useful for directions like personalised healthcare or precision medicine [@doi:10.1056/NEJMp1006304 @doi:10.1155/2013/769639]. Broadly, these may divided into
+methods for improved classification of patients (i.e. improved and those for development of
+new interventions.
+
 `TODO: Add representative papers about Modeling Metabolism and Chemical
 Reactivity`
 
 ### Categorizing patients for clinical decision making
 
-There has been sustained interest in applying deep learning to clinical
-decision making for over two decades. In 1996, Tu
+As long ago as 1996, Tu
 [@tag:Tu1996_anns] compared the effectiveness of artificial
 neural networks and logistic regression, questioning whether deep learning
 would replace traditional statistical methods for predicting medical
 outcomes such as myocardial infarction [@tag:Baxt1991_myocardial] or
 mortality [@tag:Wasson1985_clinical]. He posited that while neural
 networks have several advantages in representational power, the difficulties in
-interpretation may limit clinical applications. In 2006, Lisboa and Taktak
+interpretation may limit clinical applications. Similarly, in 2006 Lisboa and Taktak
 [@tag:Lisboa2006_review] examined the use of artificial neural
-networks in medical journals, concluding that neural networks provided an
-increase in benefit to healthcare relative to traditional screening methods in
+networks in medical journals, concluding that they improved healthcare relative to traditional screening methods in
 21 of 27 studies.
 
-While significant progress has been made in developing deep learning methods
-for diagnosis, it is not clear that these methods have yet transformed
-clinical decision making. The difficulty in applying deep learning to clinical
-decision making represents a challenge common to many deep learning
+`TODO: could really use some references for following paragraph`
+
+While further progress has been made in using deep learning
+for diagnosis, it is hindered by a challenge common to many deep learning
 applications: it is much easier to predict an outcome than to suggest an
 action to change the outcome. Several attempts at recasting the clinical
 decision making problem into a prediction problem (i.e. prediction of which
 treatment will most improve the patient's health) have accurately predicted
 prescription habits, but technical and medical challenges remain for clinical
-adoption. In particular, remaining challenges include actionable
+adoption (similar to those for categorization). In particular, remaining challenges include actionable
 interpretability of deep learning models, fitting deep models to limited and
 heterogeneous data, and integrating complex predictive models into a dynamic
 clinical environment.
@@ -53,7 +60,7 @@ leverage the temporal structure of healthcare records. As previously
 discussed, many studies [@tag:Lipton2016_missing
 @tag:Che2016_rnn @tag:Huddar2016_predicting @tag:Lipton2015_lstm]
 have used deep recurrent networks to categorize patients but most stop short
-of suggesting clinical decisions. Nemati et al [@tag:Nemati2016_rl]
+of suggesting clinical decisions. Nemati et al. [@tag:Nemati2016_rl]
 used deep reinforcement learning to optimize a heparin dosing policy for
 intensive care patients. However, because the ideal dosing policy is unknown,
 the model's predictions must be evaluated on counter-factual data. This
@@ -120,9 +127,9 @@ rare diseases. Furthermore, patients are highly heterogeneous and may present
 with very different signs and symptoms for the same disease. Physicians are
 experienced in treating patients with common diseases, but rare diseases are
 extremely challenging. Unfortunately, machine learning methods also struggle
-for rare diseases. Because deep learning models are data-intensive, directly
+for rare diseases. Directly
 applying current deep learning models to diagnose patients with rare diseases
-would require prohibitively large datasets. Focused effort in reducing the
+would require prohibitively large datasets to provide sufficient training data to capture the rare instances. Focused effort in reducing the
 data requirements of deep learning by integrating pre-existing knowledge or
 compiling large datasets of patient records may unlock the power of deep
 learning for clinical practice.
@@ -135,7 +142,7 @@ more traditional drug discovery approaches [@doi:10.1016/j.jhealeco.2016.01.012
 @doi:10.1038/nrd4609]. A decade ago, the concept of the Connectivity Map
 [@doi:10.1126/science.1132939] had a sizeable impact on the field: reverse
 matching disease gene expression signatures with a large set of reference
-compound profiles allowed to formulate repurposing hypothesis at scale
+compound profiles allowed to formulate repurposing hypotheses at scale
 using a simple non-parametric test. Since then, several advanced computational
 methods have been applied to formulate and validate drug repositioning
 hypotheses [@doi:10.1093/bib/bbv020 @doi:10.1093/bib/bbw112
@@ -146,7 +153,9 @@ information from protein-protein or protein-compound interaction networks
 [@doi:10.1186/1758-2946-5-30 @doi:10.1021/ci500340n
 @doi:10.1186/s12859-015-0845-0].
 
-Menden et al [@doi:10.1371/journal.pone.0061318] used a shallow neural network
+`TODO: shallow NN? Is that in scope?`
+
+For example, Menden et al. [@doi:10.1371/journal.pone.0061318] used a shallow neural network
 to predict sensitivity of cancer cell lines to drug treatment using both cell
 line and drug features, opening the door to precision medicine and drug
 repositioning opportunities in cancer. More recently, Aliper et al
@@ -161,7 +170,7 @@ such as otenzepad and pinacidil for neurological disorders.
 Drug repositioning can also be approached by attempting to predict novel
 drug-target interactions and then repurposing the drug for the associated
 indication [@doi:10.1371/journal.pcbi.1005219 @doi:10.1371/journal.pcbi.1005135].
-Wang et al [@doi:10.1109/BIBM.2014.6999129] devised a pairwise input neural
+Wang et al. [@doi:10.1109/BIBM.2014.6999129] devised a pairwise input neural
 network with two hidden layers that takes two inputs, a drug and a target
 binding site, and predicts whether they interact. Wang et al
 [@doi:10.1093/bioinformatics/btt234] trained individual RBMs for each target in
@@ -173,7 +182,7 @@ interactions on the basis of chemical structure and protein sequence features.
 
 Drug repositioning appears to be an obvious candidate for the development of
 deep learning applications both because of the large amount of high-dimensional
-data available and because of the complexity of the question being asked.
+data available and the complexity of the question being asked.
 However, what is perhaps the most promising piece of work in this space
 [@doi:10.1021/acs.molpharmaceut.6b00248] is more a proof of concept than a
 real-world hypothesis-generation tool; notably, deep learning was used to
@@ -200,7 +209,7 @@ appeal of machine learning in this domain is the need to improve the efficiency
 of the initial high-throughput screens such that sufficient candidate active
 compounds can be identified without exhaustively screening libraries of hundreds
 of thousands or millions of chemicals.  `TODO: is the sufficient number target
-dependent?` This task has been treated as a classification, regression, and
+dependent?` This task has been treated variously as a classification, regression, or
 ranking problem. In reality, it does not fit neatly into any of those
 categories.  An ideal algorithm will rank a sufficient number of active
 compounds before the inactives, but the rankings of actives relative to other
@@ -209,9 +218,9 @@ actives and inactives to other inactives is less important
 reviewing more existing literature on the topic` `TODO: check which other
 existing reviews should be referenced`
 
-We primarily focus on ligand-based approaches that train on chemicals' features
-without requiring knowledge of the target, as opposed to alternative strategies
-that use target features such as the protein structure `TODO: add examples`.
+Here we primarily focus on ligand-based approaches that train on chemicals' features
+without requiring prior knowledge of the target, as opposed to strategies
+specifically targeting features such as protein structure `TODO: add examples`.
 Chemical features may be represented as a list of molecular descriptors such as
 molecular weight, atom counts, charge representations, summaries of atom-atom
 relationships in the molecular graph, and more sophisticated derived properties
@@ -222,14 +231,14 @@ domain [@tag:Baskin2015_drug_disc] `TODO: can add additional references besides
 this review`, and the 2012 Merck Molecular Activity Challenge on Kaggle
 generated substantial excitement about the potential for high-parameter deep
 learning approaches.  The winning submission was an ensemble that included a
-multitask multilayer perceptron network [@tag:Dahl2014_multi_qsar], and the
+multi-task  multilayer perceptron network [@tag:Dahl2014_multi_qsar], and the
 Merck sponsors noted drastic improvements over a random forest (RF) baseline,
 remarking "we have seldom seen any method in the past 10 years that could
 consistently outperform RF by such a margin" [@tag:Ma2015_qsar_merck].
 Subsequent work explored the effects of jointly modeling far more targets than
 the Merck challenge [@tag:Unterthiner2014_screening
-@tag:Ramsundar2015_multitask_drug], with [@tag:Ramsundar2015_multitask_drug]
-showing that the benefits of multitask networks had not yet saturated even with
+@tag:Ramsundar2015_multi-task _drug], with [@tag:Ramsundar2015_multi-task _drug]
+showing that the benefits of multi-task  networks had not yet saturated even with
 259 targets.  Although a deep learning approach, DeepTox
 [@tag:Mayr2016_deep_tox], was also the overall winner of another competition,
 the Toxicology in the 21st Century (Tox21) Data Challenge, it did not dominate
@@ -244,10 +253,10 @@ In retrospect, the nuanced Tox21 performance may be more reflective of the
 practical challenges encountered in ligand-based chemical screening than the
 extreme enthusiasm generated by the Merck competition.  A study of 22 absorption
 distribution, metabolism, excretion, and toxicity (ADMET) tasks demonstrated
-that there are limitations to multitask transfer learning that are in part a
+that there are limitations to multi-task  transfer learning that are in part a
 consequence of the degree to which tasks are related [@tag:Kearnes2016_admet].
-Some of the ADMET datasets showed far superior performance in multitask models
-of only the 22 ADMET tasks relative to more expansive multitask networks that
+Some of the ADMET datasets showed far superior performance in multi-task  models
+of only the 22 ADMET tasks relative to more expansive multi-task  networks that
 included over 500 less-similar tasks.  `TODO: also has a good discussion of
 information leakage in cross validation, include that in the Discussion section`
 In addition, training datasets encountered in practical applications may be tiny
@@ -306,7 +315,7 @@ valid chemical structures. `TODO: could mention GANs here` Altae-Tran et al
 developed a one-shot learning network [@tag:AltaeTran2016_one_shot] to address
 the reality that most practical chemical screening studies are unable to provide
 the thousands or millions of training compounds that are needed to train larger
-multitask networks.  Using graph convolutions to featurize chemicals, the
+multi-task  networks.  Using graph convolutions to featurize chemicals, the
 network learns an embedding from compounds into a continuous feature space such
 that compounds with similar activities in a set of training tasks have similar
 embeddings.  The approach is evaluated in an extremely challenging setting where
@@ -331,7 +340,7 @@ approaches by a large margin.  The neural fingerprints
 [@tag:Duvenaud2015_graph_conv] were narrowly beaten by regression using
 traditional circular fingerprints on a drug efficacy prediction task (but were
 superior for predicting solubility or photovoltaic efficiency).  Graph
-convolutions [@tag:Kearnes2016_graph_conv] performed comparably to a multitask
+convolutions [@tag:Kearnes2016_graph_conv] performed comparably to a multi-task
 network using standard fingerprints and slightly better than the neural
 fingerprints [@tag:Duvenaud2015_graph_conv] on the drug efficacy task but were
 slightly worse than the influence-relevance voter method on an HIV dataset.
@@ -344,7 +353,7 @@ representation learning in this domain and propose that rigorous benchmarking on
 broad and diverse prediction tasks will be as important as novel neural network
 architectures and expanded public datasets to advance the state of the art and
 convincingly demonstrate superiority over traditional cheminformatics
-techniques. Fortunately, there has recently been significant progress in this
+techniques. Fortunately, there has recently been major progress in this
 direction. The DeepChem software [@tag:AltaeTran2016_one_shot
 @tag:DeepChem] and MoleculeNet benchmarking suite
 [@tag:Wu2017_molecule_net] built upon it contain chemical bioactivity and
@@ -361,7 +370,7 @@ learning researchers without biochemistry expertise.
 One open question in ligand-based screening pertains to the benefits and
 limitations of transfer learning.  Multitask neural networks have shown the
 advantages of jointly modeling many targets [@tag:Unterthiner2014_screening
-@tag:Ramsundar2015_multitask_drug].  Other studies have shown the limitations of
+@tag:Ramsundar2015_multi-task _drug].  Other studies have shown the limitations of
 transfer learning when the prediction tasks are insufficiently related
 [@tag:Kearnes2016_admet @tag:AltaeTran2016_one_shot].  This has important
 implications for representation learning.  The typical approach of improving

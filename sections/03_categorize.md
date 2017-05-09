@@ -394,7 +394,7 @@ models with many parameters. While unsupervised and semi-supervised approaches
 can help with small sample sizes, the field would benefit greatly from large
 collections of anonymized records in which a substantial number of records have
 undergone expert review. This challenge is not unique to EHR-based studies. Work
-on medical images, -omics data in applications for which detailed metadata are
+on medical images, omics data in applications for which detailed metadata are
 required, and other applications for which labels are costly to obtain will be
 hampered as long as abundant curated data are unavailable.
 
@@ -456,8 +456,8 @@ related to sharing individual health records or deep models built from such
 records. This subsection deals primarily with these challenges.
 
 EHRs are designed chiefly for clinical, administrative and financial purposes,
-such as patient care, insurance and  billing [@doi:10.1038/nrg3208]. Research is
-at best a tertiary priority, presenting  significant challenges to EHR-based
+such as patient care, insurance and  billing [@doi:10.1038/nrg3208]. Fundamental science is
+at best a tertiary priority, presenting a challenge to EHR-based
 research in general, and particularly to data intensive deep learning research.
 These difficulties can be grouped into three areas: local bias, wider standards
 and legal issues. Note these problems are not restricted to EHR but can also
