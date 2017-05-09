@@ -7,3 +7,4 @@
 | bdo311       | Brian T. Do | 0000-0003-4992-2623 | Harvard Medical School | brian_do@hms.harvard.edu | Yes     | NIGMS T32GM007753  |
 | gwaygenomics  | Gregory P. Way   | 0000-0002-0503-9348 | Department of Systems Pharmacology and Translational Therapeutics. Perelman School of Medicine. University of Pennsylvania.  | gregway@upenn.edu  | Yes     |  |
 | alxndrkalinin  | Alexandr A. Kalinin   | 0000-0003-4563-3226 | Department of Computational Medicine and Bioinformatics. University of Michigan Medical School.  | akalinin@umich.edu  | Yes     |  |
+| agitter | Anthony Gitter | 0000-0002-5324-9833 | Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison. Morgridge Institute for Research | gitter@biostat.wisc.edu | Yes | NIH/NIAID U54AI117924 |
