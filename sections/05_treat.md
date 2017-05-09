@@ -2,44 +2,50 @@
 
 `TODO: write Treat intro`
 
-`TODO: just realised this wanders heavily into the categorization area. Need some high-level rearrangment? Could shift the first section below into the categorization section and leave the treatment here.`
+`TODO: just realised this wanders heavily into the categorization area. Need
+some high-level rearrangment? Could shift the first section below into the
+categorization section and leave the treatment here.`
 
-Given the ever-present need to make better interventions faster at the point of care -- incorporating the complex calculus of a patients
-symptoms, diagnostics and life history -- there is a long history of attempts to
-apply deep learning to the problem of treatment. Success in this area would also be very useful for directions like personalised healthcare or precision medicine [@doi:10.1056/NEJMp1006304 @doi:10.1155/2013/769639]. Broadly, these may divided into
-methods for improved classification of patients (i.e. improved and those for development of
-new interventions.
+Given the ever-present need to make better interventions faster at the point of
+care -- incorporating the complex calculus of a patients symptoms, diagnostics
+and life history -- there is a long history of attempts to apply deep learning
+to the problem of treatment. Success in this area would also be very useful for
+directions like personalised healthcare or precision medicine
+[@doi:10.1056/NEJMp1006304 @doi:10.1155/2013/769639]. Earlier, we have written
+of the possibilities for patient categorization. Here we examine the potential
+for better treatment, which broadly, may divided into methods for improved
+choices of interventions for patients and those for development of new
+interventions.
 
 `TODO: Add representative papers about Modeling Metabolism and Chemical
 Reactivity`
 
 ### Categorizing patients for clinical decision making
 
-As long ago as 1996, Tu
-[@tag:Tu1996_anns] compared the effectiveness of artificial
-neural networks and logistic regression, questioning whether deep learning
-would replace traditional statistical methods for predicting medical
-outcomes such as myocardial infarction [@tag:Baxt1991_myocardial] or
-mortality [@tag:Wasson1985_clinical]. He posited that while neural
-networks have several advantages in representational power, the difficulties in
-interpretation may limit clinical applications. Similarly, in 2006 Lisboa and Taktak
-[@tag:Lisboa2006_review] examined the use of artificial neural
-networks in medical journals, concluding that they improved healthcare relative to traditional screening methods in
-21 of 27 studies.
+As long ago as 1996, Tu [@tag:Tu1996_anns] compared the effectiveness of
+artificial neural networks and logistic regression, questioning whether deep
+learning would replace traditional statistical methods for predicting medical
+outcomes such as myocardial infarction [@tag:Baxt1991_myocardial] or mortality
+[@tag:Wasson1985_clinical]. He posited that while neural networks have several
+advantages in representational power, the difficulties in interpretation may
+limit clinical applications. Similarly, in 2006 Lisboa and Taktak
+[@tag:Lisboa2006_review] examined the use of artificial neural networks in
+medical journals, concluding that they improved healthcare relative to
+traditional screening methods in 21 of 27 studies.
 
 `TODO: could really use some references for following paragraph`
 
-While further progress has been made in using deep learning
-for diagnosis, it is hindered by a challenge common to many deep learning
-applications: it is much easier to predict an outcome than to suggest an
-action to change the outcome. Several attempts at recasting the clinical
-decision making problem into a prediction problem (i.e. prediction of which
-treatment will most improve the patient's health) have accurately predicted
-prescription habits, but technical and medical challenges remain for clinical
-adoption (similar to those for categorization). In particular, remaining challenges include actionable
-interpretability of deep learning models, fitting deep models to limited and
-heterogeneous data, and integrating complex predictive models into a dynamic
-clinical environment.
+While further progress has been made in using deep learning for clinical
+decision making, it is hindered by a challenge common to many deep learning
+applications: it is much easier to predict an outcome than to suggest an action
+to change the outcome. Several attempts at recasting the clinical decision
+making problem into a prediction problem (i.e. prediction of which treatment
+will most improve the patient's health) have accurately predicted prescription
+habits, but technical and medical challenges remain for clinical adoption
+(similar to those for categorization). In particular, remaining challenges
+include actionable interpretability of deep learning models, fitting deep models
+to limited and heterogeneous data, and integrating complex predictive models
+into a dynamic clinical environment.
 
 A critical challenge in moving from prediction to treatment recommendations
 is the necessity to establish a causal relationship for a recommendation.
@@ -129,7 +135,8 @@ experienced in treating patients with common diseases, but rare diseases are
 extremely challenging. Unfortunately, machine learning methods also struggle
 for rare diseases. Directly
 applying current deep learning models to diagnose patients with rare diseases
-would require prohibitively large datasets to provide sufficient training data to capture the rare instances. Focused effort in reducing the
+would require prohibitively large datasets to provide sufficient training data
+to capture the rare instances. Focused effort in reducing the
 data requirements of deep learning by integrating pre-existing knowledge or
 compiling large datasets of patient records may unlock the power of deep
 learning for clinical practice.
@@ -155,7 +162,8 @@ information from protein-protein or protein-compound interaction networks
 
 `TODO: shallow NN? Is that in scope?`
 
-For example, Menden et al. [@doi:10.1371/journal.pone.0061318] used a shallow neural network
+For example, Menden et al. [@doi:10.1371/journal.pone.0061318] used a
+shallow neural network
 to predict sensitivity of cancer cell lines to drug treatment using both cell
 line and drug features, opening the door to precision medicine and drug
 repositioning opportunities in cancer. More recently, Aliper et al
@@ -169,7 +177,8 @@ such as otenzepad and pinacidil for neurological disorders.
 
 Drug repositioning can also be approached by attempting to predict novel
 drug-target interactions and then repurposing the drug for the associated
-indication [@doi:10.1371/journal.pcbi.1005219 @doi:10.1371/journal.pcbi.1005135].
+indication
+[@doi:10.1371/journal.pcbi.1005219 @doi:10.1371/journal.pcbi.1005135].
 Wang et al. [@doi:10.1109/BIBM.2014.6999129] devised a pairwise input neural
 network with two hidden layers that takes two inputs, a drug and a target
 binding site, and predicts whether they interact. Wang et al
@@ -209,7 +218,8 @@ appeal of machine learning in this domain is the need to improve the efficiency
 of the initial high-throughput screens such that sufficient candidate active
 compounds can be identified without exhaustively screening libraries of hundreds
 of thousands or millions of chemicals.  `TODO: is the sufficient number target
-dependent?` This task has been treated variously as a classification, regression, or
+dependent?` This task has been treated variously as a classification,
+regression, or
 ranking problem. In reality, it does not fit neatly into any of those
 categories.  An ideal algorithm will rank a sufficient number of active
 compounds before the inactives, but the rankings of actives relative to other
@@ -218,9 +228,10 @@ actives and inactives to other inactives is less important
 reviewing more existing literature on the topic` `TODO: check which other
 existing reviews should be referenced`
 
-Here we primarily focus on ligand-based approaches that train on chemicals' features
+Here we primarily focus on ligand-based approaches that train on chemicals'
+features
 without requiring prior knowledge of the target, as opposed to strategies
-specifically targeting features such as protein structure `TODO: add examples`.
+specifically modeling features such as protein structure `TODO: add examples`.
 Chemical features may be represented as a list of molecular descriptors such as
 molecular weight, atom counts, charge representations, summaries of atom-atom
 relationships in the molecular graph, and more sophisticated derived properties
