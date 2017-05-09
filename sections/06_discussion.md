@@ -26,7 +26,7 @@ human-level performance is irrelevant.*
 ### Interpretation
 
 As the challenge of interpretability is common across many domains, there is
-significant interest in developing generic procedures for knowledge extraction
+much interest in developing generic procedures for knowledge extraction
 from deep models. Ribeiro et al [@tag:Ribeiro2016_lime] focus on interpreting
 individual predictions rather than interpreting the model. By fitting simple
 linear models to mimic the predictions of the deep learning model in a small
@@ -109,14 +109,14 @@ with only a couple GPUs.*
 it best fits.*
 
 Efficiently scaling deep learning is challenging, and there is a high
-computational cost (e.g., time, memory, energy) associated with training neural
+computational cost (e.g. time, memory, energy) associated with training neural
 networks and using them for classification. As such, neural networks
 have only recently found widespread use [@tag:Schmidhuber2014_dnn_overview].
 
 Many have sought to curb the costs of deep learning, with methods ranging from
-the very applied (e.g., reduced numerical precision [@tag:Gupta2015_prec
+the very applied (e.g. reduced numerical precision [@tag:Gupta2015_prec
 @tag:Bengio2015_prec @tag:Sa2015_buckwild @tag:Hubara2016_qnn]) to the exotic
-and theoretic (e.g., training small networks to mimic large networks and
+and theoretic (e.g. training small networks to mimic large networks and
 ensembles [@tag:Caruana2014_need @tag:Hinton2015_dark_knowledge]). The largest
 gains in efficiency have come from computation with graphics processing units
 (GPUs) [@tag:Raina2009_gpu @tag:Vanhoucke2011_cpu @tag:Seide2014_parallel
@@ -126,7 +126,7 @@ operations so central to deep learning. The massively parallel nature of GPUs
 allows additional optimizations, such as accelerated mini-batch gradient
 descent [@tag:Vanhoucke2011_cpu @tag:Seide2014_parallel @tag:Su2015_gpu
 @tag:Li2014_minibatch]. However, GPUs also have a limited quantity of memory,
-making it difficult to implement networks of significant size and
+making it difficult to implement networks of useful size and
 complexity on a single GPU or machine [@tag:Raina2009_gpu
 @tag:Krizhevsky2013_nips_cnn]. This restriction has sometimes forced
 computational biologists to use workarounds or limit the size of an analysis.
@@ -160,7 +160,7 @@ Distributed computing is a general solution to intense computational
 requirements, and has enabled many large-scale deep learning efforts. Early
 approaches to distributed computation [@tag:Mapreduce @tag:Graphlab] were
 not suitable for deep learning [@tag:Dean2012_nips_downpour],
-but significant progress has been made. There
+but much progress has been made. There
 now exist a number of algorithms [@tag:Dean2012_nips_downpour @tag:Dogwild
 @tag:Sa2015_buckwild], tools [@tag:Moritz2015_sparknet @tag:Meng2016_mllib
 @tag:TensorFlow], and high-level libraries [@tag:Keras @tag:Elephas] for deep
@@ -175,12 +175,12 @@ Cloud computing, which has already seen adoption in genomics
 [@tag:Schatz2010_dna_cloud], could facilitate easier sharing of the large
 datasets common to biology [@tag:Gerstein2016_scaling @tag:Stein2010_cloud],
 and may be key to scaling deep learning. Cloud computing affords researchers
-significant flexibility, and enables the use of specialized hardware (e.g.,
-FPGAs, ASICs, GPUs) without significant investment. With such flexibility, it
+flexibility, and enables the use of specialized hardware (e.g.,
+FPGAs, ASICs, GPUs) without major investment. With such flexibility, it
 could be easier to address the different challenges associated with the
 multitudinous layers and architectures available
 [@tag:Krizhevsky2014_weird_trick]. Though many are reluctant to store sensitive
-data (e.g., patient electronic health records) in the cloud,
+data (e.g. patient electronic health records) in the cloud,
 secure/regulation-compliant cloud services do exist [@tag:RAD2010_view_cc].
 
 *TODO: Write the transition once more of the Discussion section has been
@@ -232,7 +232,7 @@ In image analysis, previous examples of deep transfer learning applications
 proved large scale natural image sets [@tag:Russakovsky2015_imagenet]
 to be useful for pre-training models that can then serve as generic feature
 extractors applied to various types of biological images
-[@tag:Zhang2015_multitask_tl @tag:Zeng2015 @tag:Angermueller2016_dl_review
+[@tag:Zhang2015_multi-task _tl @tag:Zeng2015 @tag:Angermueller2016_dl_review
 @tag:Pawlowski2016]. More recently, deep learning models trained to predict
 protein sub-cellular localization successfully performed predictions for
 proteins not originally present in the training set [@tag:Parnamaa2017].
@@ -341,20 +341,20 @@ a shared representation.
 A number of studies previously mentioned in the section on developing new
 treatments employed multi-task learning approach to predict a large number
 of compound and target interactions for drug discovery
-[@tag:Dahl2014_multi_qsar @tag:Ramsundar2015_multitask_drug]
+[@tag:Dahl2014_multi_qsar @tag:Ramsundar2015_multi-task _drug]
 and drug toxicity prediction
 [@tag:Mayr2016_deep_tox @tag:Hughes2016_macromol_react]. Kearnes et al.
 [@tag:Kearnes2016_admet] did a systematic comparison of single-task and
 multi-task deep models on a set of industrial ADMET datasets. They confirmed
 that multi-task learning can improve performance over single-task models. They
-further showed that smaller datasets tend to benefit more from multitask
-learning than larger datasets. Results emphasized that multitask effects are
+further showed that smaller datasets tend to benefit more from multi-task
+learning than larger datasets. Results emphasized that multi-task  effects are
 highly dataset-dependent, suggesting the use of dataset-specific models to
 maximize overall performance.
 
 MTL approach is complementary to multimodal and transfer learning. All three
 techniques can be used together in the same model. For example, Zhang et al.
-[@tag:Zhang2015_multitask_tl] combined deep model-based transfer and multi-task
+[@tag:Zhang2015_multi-task _tl] combined deep model-based transfer and multi-task
 learning for cross-domain image annotation. One could imagine extending that
 approach to multimodal inputs as well. Common characteristic of these methods
 lies in better generalization of extracted features by leveraging relationships
