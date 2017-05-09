@@ -7,11 +7,11 @@ obvious and potentially valuable target for this new approach. We examine
 applications of deep learning to a variety of biomedical problems --
 classification, fundamental research into biology and patient treatment -- to
 determine if similar progress can be made there or if the biomedical sphere
-holds unique challenges. While finding deep learning has yet to revolutionize or
-definitively resolve any domain, promising (and sometimes remarkable) advances
-have been made on the prior state-of-the-art. Even where improvement over the
-previous baseline has been modest, there is still the promise of greatly
-speeding or aiding human investigation. More work is needed in technical
+holds unique challenges. While deep learning has yet to revolutionize or
+definitively resolve any of these problems, promising (sometimes remarkable)
+advances have been made on the prior state-of-the-art. Even where improvement
+over the previous baseline has been modest, there is still the promise of
+greatly speeding or aiding human investigation. More work is needed in technical
 directions such as interpretability and how to best model a problem. Further,
 the limited amount of labeled data for training presents problems in some
 domains, as can the legal and privacy constraints enforced by working with
