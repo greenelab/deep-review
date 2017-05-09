@@ -116,7 +116,7 @@ application of deep learning.
 A key challenge in biomedicine is the accurate classification of
 diseases and disease subtypes. In oncology, current "gold standard"
 approaches involve histology, requiring manual
-human expertise for quantification, or small panel of molecular markers,
+human expertise for quantification, or small panels of molecular markers,
 such as cell surface
 receptors or genes' expression. One example is the PAM50 approach
 to classifying breast cancer where the expression of 50 marker
@@ -175,5 +175,5 @@ restricted Boltzmann machines (RBM) can be combined into deep belief networks
 (DBNs) to predict novel drug - target interactions and formulate drug
 repositioning hypotheses [@doi:10.1093/bioinformatics/btt234
 @doi:10.1021/acs.jproteome.6b00618]. Finally, deep learning is also being
-succesfully used to prioritize chemicals in the early stages of drug discovery
+successfully used to prioritize chemicals in the early stages of drug discovery
 for new targets [@doi:10.1080/17460441.2016.1201262].
