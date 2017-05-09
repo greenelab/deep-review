@@ -138,28 +138,24 @@ residual CNN to predict protein-protein contacts on a genome-wide scale
 learning include the prediction of protein secondary structure based on sequence
 data [@doi:10.1109/tcbb.2014.2343960 @doi:10.1038/srep18962], recognition of
 functional genomic elements such as enhancers and promoters [@doi:10.1101/036129
-@doi:10.1007/978-3-319-16706-0_20 @doi:10.1093/nar/gku1058], and predicting the
-deleterious effects of nucleotide polymorphisms
+@doi:10.1007/978-3-319-16706-0_20 @doi:10.1093/nar/gku1058], and prediction of
+the deleterious effects of nucleotide polymorphisms
 [@doi:10.1093/bioinformatics/btu703].
 
 #### Patient Treatment
 
-Although the application of deep learning to patient treatment is just beginning,
-we expect a dramatic increase in methods aiming to recommend patient
-treatment, predict
-treatment outcome, and guide future development of new therapies.
-Specifically, effort in this area aims to identify drug targets, identify
-drug interactions or predict drug response. One recent approach for
-predicting drug response is the use of protein structure to predict drug
-interactions and drug bioactivity through CNN [@arxiv:1510.02855]. Since CNNs
-leverage spatial relationships within the data, this particular deep learning
-framework is well suited to the problem. Drug repositioning is another active
-area of research. Aliper et al. used transcriptomic data to predict which drugs
-might be repurposed for other diseases through deep neural networks
-[@doi:10.1021/acs.molpharmaceut.6b00248]. Similarly, it was shown that
-restricted Boltzmann machines (RBM) can be combined into deep belief networks
-(DBNs) to predict novel drug - target interactions and formulate drug
+Although the application of deep learning to patient treatment is just
+beginning, we expect a dramatic increase in methods aiming to recommend patient
+treatment, predict treatment outcomes, and guide future development of new
+therapies. Specifically, effort in this area aims to identify drug targets and
+interactions or predict drug response. One recent approach uses deep learning on
+protein structures to predict drug interactions and drug bioactivity
+[@arxiv:1510.02855]. Drug repositioning using deep learning on transcriptomic
+data is another exciting area of research
+[@doi:10.1021/acs.molpharmaceut.6b00248]. Interestingly, it was shown that
+restricted Boltzmann machines (RBMs) can be combined into deep belief networks
+(DBNs) to predict novel drug-target interactions and formulate drug
 repositioning hypotheses [@doi:10.1093/bioinformatics/btt234
-@doi:10.1021/acs.jproteome.6b00618]. Finally, deep learning is also being
-succesfully used to prioritize chemicals in the early stages of drug discovery
-for new targets [@doi:10.1080/17460441.2016.1201262].
+@doi:10.1021/acs.jproteome.6b00618]. Finally, deep learning is also being used
+to prioritize molecules in the early stages of drug discovery
+[@doi:10.1080/17460441.2016.1201262].
