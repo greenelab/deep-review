@@ -640,18 +640,18 @@ completely in the discussion section.
 
 Traditional longitudinal analysis of large population cohorts, that have been
 prospectively followed either from birth, or the onset of particular conditions,
-have yielded important insights into the development of disease, and the factors 
-contributing to health status, for example the Farmingham Heart Study in the 
-US, and the Avon Longitudinal Study of Parents and Children in the UK. Yet, a 
-common practice in EHR-based research is to take a point in time snapshot and 
+have yielded important insights into the development of disease, and the factors
+contributing to health status, for example the Farmingham Heart Study in the
+US, and the Avon Longitudinal Study of Parents and Children in the UK. Yet, a
+common practice in EHR-based research is to take a point in time snapshot and
 convert patient data to a traditional vector for machine learning and statistical
 analysis. This results in significant signal losses as timing and order of events
-provide insight into a patient's disease and treatment [@doi:10.2307/2281868]. 
-Efforts to account for the order of events have shown promise [@doi:10.1038/ncomms5022] 
-but require exceedingly large patient sizes due to discrete combinatorial 
+provide insight into a patient's disease and treatment [@doi:10.2307/2281868].
+Efforts to account for the order of events have shown promise [@doi:10.1038/ncomms5022]
+but require exceedingly large patient sizes due to discrete combinatorial
 bucketing. Lasko et al. [@doi:10.1371/journal.pone.0066341] used autoencoders on
-longitudinal sequences of serum urine acid measurements to identify population 
-subtypes. More recently, deep learning has shown promise working with both 
+longitudinal sequences of serum urine acid measurements to identify population
+subtypes. More recently, deep learning has shown promise working with both
 sequences (Convolutional Neural Networks) [@arxiv:1607.07519] and the incorporation
 of past and current state (Recurrent Neural Networks, Long Short Term Memory
 Networks)[@arxiv:1602.00357]. This may be a particular area of opportunity for
