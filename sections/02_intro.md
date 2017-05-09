@@ -39,8 +39,8 @@ neural networks, an idea that was first proposed in 1943
 information. Since then, interest in neural networks as computational models has
 waxed and waned several times. This history is interesting in its own right
 [@doi:10.1103/RevModPhys.34.135]. In recent years, attention has shifted back to
-neural networks as the predictive power of deep learning techniques has surged
-ahead of other machine learning techniques. Our focus is primarily on the
+neural networks as processing power has allowed deep learning techniques to
+surge ahead of other machine learning techniques. Our focus is primarily on the
 downstream applications enabled by these advances.
 
 Several important advances make the current surge of work done in this area
