@@ -172,7 +172,7 @@ creating a DBN of stacked RBMs called DeepDTIs, which is able to predict
 interactions on the basis of chemical structure and protein sequence features.
 
 Drug repositioning appears to be an obvious candidate for the development of
-deep learning applications both because of a large amount of high-dimensional
+deep learning applications both because of the large amount of high-dimensional
 data available and because of the complexity of the question being asked.
 However, what is perhaps the most promising piece of work in this space
 [@doi:10.1021/acs.molpharmaceut.6b00248] is more a proof of concept than a
@@ -364,7 +364,7 @@ advantages of jointly modeling many targets [@tag:Unterthiner2014_screening
 @tag:Ramsundar2015_multitask_drug].  Other studies have shown the limitations of
 transfer learning when the prediction tasks are insufficiently related
 [@tag:Kearnes2016_admet @tag:AltaeTran2016_one_shot].  This has important
-implications for representation learning.  The typical approach to improving
+implications for representation learning.  The typical approach to improve
 deep learning models by expanding the dataset size may not be applicable if only
 "related" tasks are beneficial, especially because task-task relatedness is
 ill-defined. The massive chemical state space will also influence the

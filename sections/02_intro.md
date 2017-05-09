@@ -120,7 +120,7 @@ human expertise for quantification, or small panels of molecular markers,
 such as cell surface
 receptors or genes' expression. One example is the PAM50 approach
 to classifying breast cancer where the expression of 50 marker
-genes divide breast cancer patients into four subtypes.
+genes divides breast cancer patients into four subtypes.
 Significant heterogeneity still remains within these four subtypes
 [@doi:10.1200/JCO.2008.18.1370 @doi:10.1158/1078-0432.CCR-13-0583]. Given the
 increasing wealth of molecular data available, a more

@@ -351,7 +351,7 @@ necessarily operate on the nearest gene and may in fact effect multiple genes.
 Their activity is frequently tissue- or context-specific. A substantial fraction
 of enhancers displays modest or no conservation across species. There is no
 universal enhancer sequence signal or marker for enhancers, and some literature
-suggests that enhancers and promoters may be just categories along with a spectrum
+suggests that enhancers and promoters may be just categories along a spectrum
 [@doi:10.1016/j.tig.2015.05.007]. One study [@doi:10.1101/gr.173518.114] even
 showed that only 33% of predicted regulatory regions could be validated, while a
 class of "weak" predicted enhancers were strong drivers of expression. Yet there
