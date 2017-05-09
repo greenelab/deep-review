@@ -73,7 +73,7 @@ are currently hampered by the difficulties of counter-factual inference.
 
 A clinical task to deep learning which has been more successfully applied is
 the assignment of patients to clinical trials. Ithapu et al
-[@tag:Ithapu2015_efficient] used a randomized denoising autoenconder
+[@tag:Ithapu2015_efficient] used a randomized denoising autoencoder
 to learn a multimodal imaging marker that predicts future cognitive
 and neural decline from positron emission tomography (PET), amyloid
 florbetapir PET, and structural magnetic resonance imaging.
@@ -83,7 +83,7 @@ the required sample sizes by a factor of five.  Similarly, Artemov et al
 [@tag:Artemov2016_clinical] applied deep learning to predict which
 clinical trials were likely to fail and which were likely to succeed. By
 predicting the side effects and pathway activations of each drug, and
-then translating these activations to a success proability, their deep
+then translating these activations to a success probability, their deep
 learning-based approach was able to significantly outperform a random
 forest classifier trained on gene expression changes. These approaches
 suggest promising directions to improve the efficiency of clinical trials
@@ -172,7 +172,7 @@ creating a DBN of stacked RBMs called DeepDTIs, which is able to predict
 interactions on the basis of chemical structure and protein sequence features.
 
 Drug repositioning appears to be an obvious candidate for the development of
-deep learning applications both because of the large amount of high-dimensional
+deep learning applications both because of a large amount of high-dimensional
 data available and because of the complexity of the question being asked.
 However, what is perhaps the most promising piece of work in this space
 [@doi:10.1021/acs.molpharmaceut.6b00248] is more a proof of concept than a
@@ -204,7 +204,7 @@ dependent?` This task has been treated as a classification, regression, and
 ranking problem. In reality, it does not fit neatly into any of those
 categories.  An ideal algorithm will rank a sufficient number of active
 compounds before the inactives, but the rankings of actives relative to other
-actives and inactives to other inactives is less important
+actives and inactives are less important
 [@tag:Swamidass2009_irv]. `TODO: can improve this first attempt at an intro by
 reviewing more existing literature on the topic` `TODO: check which other
 existing reviews should be referenced`
@@ -313,7 +313,7 @@ embeddings.  The approach is evaluated in an extremely challenging setting where
 the embedding is learned from a subset of prediction tasks (e.g. activity assays
 for individual proteins) and only one to ten labeled examples are provided as
 training data on a new task.  On Tox21 targets, even when trained with _one_
-task-specific active compound and _one_ inactive compound, the model is able
+task-specific active compound and _one_ inactive compound, the model is able to
 generalize reasonably well because it has learned an informative embedding
 function from the related tasks. Random forests, which cannot take advantage of
 the related training tasks, trained in the same setting are only slightly better
@@ -364,7 +364,7 @@ advantages of jointly modeling many targets [@tag:Unterthiner2014_screening
 @tag:Ramsundar2015_multitask_drug].  Other studies have shown the limitations of
 transfer learning when the prediction tasks are insufficiently related
 [@tag:Kearnes2016_admet @tag:AltaeTran2016_one_shot].  This has important
-implications for representation learning.  The typical approach of improving
+implications for representation learning.  The typical approach to improving
 deep learning models by expanding the dataset size may not be applicable if only
 "related" tasks are beneficial, especially because task-task relatedness is
 ill-defined. The massive chemical state space will also influence the
