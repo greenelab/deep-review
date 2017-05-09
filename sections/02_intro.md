@@ -46,29 +46,19 @@ downstream applications enabled by these advances.
 Several important advances make the current surge of work done in this area
 possible. Easy-to-use software packages have brought the techniques of the field
 out of the specialist's toolkit to a broad community of computational
-scientists. With the growing attention focused on these methods, new techniques
-for fast training have enabled their application to larger datasets
-[@arxiv:1106.5730]. Dropout of nodes, edges and layers makes networks more
-robust, even when the number of parameters is very large. The growing popularity
-of the field has also led to a proliferation of neural network approaches, many
-of which are well suited for addressing distinct challenges. For example, neural
-networks structured as autoencoders or as adversarial networks require no labels
-and are now regularly used for unsupervised tasks. In this review, we do not
-exhaustively discuss the different types of deep neural network architectures. A
-recent book from Goodfellow et al [@url:http://www.deeplearningbook.org/] covers
-these in detail. Finally, the larger datasets now available are also well suited
-to fitting the many parameters that exist for deep neural networks.
-
-The convergence of these factors currently makes deep learning extremely
-adaptable, and capable of addressing the nuanced differences of each domain to
-which it is applied. Many of the advances in deep learning were first developed
-for image analysis and text analysis, but the lessons learnt and techniques
-developed there can enable the construction of very powerful models specifically
-suited to the challenges presented by many domains.  Neural networks,
-particularly deep ones, are a highly flexible representation capable of
-capturing many different types of features. Deep neural network approaches have
-demonstrated success from the game of Go [@doi:10.1038/nature16961] to quantum
-physics [@doi:10.1126/science.aag2302].
+scientists. Additionally, new techniques for fast training have enabled their
+application to larger datasets [@arxiv:1106.5730]. Dropout of nodes, edges and
+layers makes networks more robust, even when the number of parameters is very
+large. New neural network approaches are also well suited for addressing
+distinct challenges. For example, neural networks structured as autoencoders or
+as adversarial networks require no labels and are now regularly used for
+unsupervised tasks. In this review, we do not exhaustively discuss the different
+types of deep neural network architectures. A recent book from Goodfellow et al
+[@url:http://www.deeplearningbook.org/] covers these in detail. Finally, the
+larger datasets now available are also well suited to fitting the many
+parameters that exist for deep neural networks. The convergence of these factors
+currently makes deep learning extremely adaptable and capable of addressing the
+nuanced differences of each domain to which it is applied. 
 
 ### Will deep learning transform the study of human disease?
 
