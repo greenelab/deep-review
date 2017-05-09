@@ -37443,5 +37443,1156 @@
       "id": "Bi92V99U"
     },
     "citation_id": "Bi92V99U"
+  },
+  "arxiv:1610.02413": {
+    "source": "arxiv",
+    "identifer": "1610.02413",
+    "standard_citation": "arxiv:1610.02413",
+    "bibtex": "@article{1ENxzq6pT,\n abstract = {We propose a criterion for discrimination against a specified sensitive\nattribute in supervised learning, where the goal is to predict some target\nbased on available features. Assuming data about the predictor, target, and\nmembership in the protected group are available, we show how to optimally\nadjust any learned predictor so as to remove discrimination according to our\ndefinition. Our framework also improves incentives by shifting the cost of poor\nclassification from disadvantaged groups to the decision maker, who can respond\nby improving the classification accuracy.\nIn line with other studies, our notion is oblivious: it depends only on the\njoint statistics of the predictor, the target and the protected attribute, but\nnot on interpretation of individualfeatures. We study the inherent limits of\ndefining and identifying biases based on such oblivious measures, outlining\nwhat can and cannot be inferred from different oblivious tests.\nWe illustrate our notion using a case study of FICO credit scores.},\n archiveprefix = {arXiv},\n author = {Moritz Hardt and Eric Price and Nathan Srebro},\n eprint = {1610.02413v1},\n file = {1610.02413v1.pdf},\n link = {http://arxiv.org/abs/1610.02413v1},\n month = {Nov},\n primaryclass = {cs.LG},\n title = {Equality of Opportunity in Supervised Learning},\n year = {2016}\n}\n\n",
+    "citation_id": "1ENxzq6pT"
+  },
+  "arxiv:1610.09559": {
+    "source": "arxiv",
+    "identifer": "1610.09559",
+    "standard_citation": "arxiv:1610.09559",
+    "bibtex": "@article{11aqfNfQx,\n abstract = {Motivated by concerns that automated decision-making procedures can\nunintentionally lead to discriminatory behavior, we study a technical\ndefinition of fairness modeled after John Rawls' notion of \"fair equality of\nopportunity\". In the context of a simple model of online decision making, we\ngive an algorithm that satisfies this fairness constraint, while still being\nable to learn at a rate that is comparable to (but necessarily worse than) that\nof the best algorithms absent a fairness constraint. We prove a regret bound\nfor fair algorithms in the linear contextual bandit framework that is a\nsignificant improvement over our technical companion paper [16], which gives\nblack-box reductions in a more general setting. We analyze our algorithms both\ntheoretically and experimentally. Finally, we introduce the notion of a\n\"discrimination index\", and show that standard algorithms for our problem\nexhibit structured discriminatory behavior, whereas the \"fair\" algorithms we\ndevelop do not.},\n archiveprefix = {arXiv},\n author = {Matthew Joseph and Michael Kearns and Jamie Morgenstern and Seth Neel and Aaron Roth},\n eprint = {1610.09559v3},\n file = {1610.09559v3.pdf},\n link = {http://arxiv.org/abs/1610.09559v3},\n month = {Nov},\n primaryclass = {cs.LG},\n title = {Rawlsian Fairness for Machine Learning},\n year = {2016}\n}\n\n",
+    "citation_id": "11aqfNfQx"
+  },
+  "doi:10.1016/j.neubiorev.2010.07.002": {
+    "source": "doi",
+    "identifer": "10.1016/j.neubiorev.2010.07.002",
+    "standard_citation": "doi:10.1016/j.neubiorev.2010.07.002",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            5,
+            7
+          ]
+        ],
+        "date-time": "2017-05-07T13:31:38Z",
+        "timestamp": 1494163898411
+      },
+      "reference-count": 60,
+      "publisher": "Elsevier BV",
+      "issue": "3",
+      "license": [
+        {
+          "URL": "http://www.elsevier.com/tdm/userlicense/1.0/",
+          "start": {
+            "date-parts": [
+              [
+                2011,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2011-01-01T00:00:00Z",
+            "timestamp": 1293840000000
+          },
+          "delay-in-days": 0,
+          "content-version": "tdm"
+        }
+      ],
+      "funder": [
+        {
+          "name": "Robert Wood Johnson Foundation Health & Society Scholars program",
+          "award": []
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Neuroscience & Biobehavioral Reviews"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2011,
+            1
+          ]
+        ]
+      },
+      "DOI": "10.1016/j.neubiorev.2010.07.002",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2010,
+            7,
+            9
+          ]
+        ],
+        "date-time": "2010-07-09T08:18:55Z",
+        "timestamp": 1278663535000
+      },
+      "page": "565-572",
+      "source": "Crossref",
+      "is-referenced-by-count": 221,
+      "title": "Sex bias in neuroscience and biomedical research",
+      "prefix": "10.1016",
+      "volume": "35",
+      "author": [
+        {
+          "given": "Annaliese K.",
+          "family": "Beery",
+          "affiliation": []
+        },
+        {
+          "given": "Irving",
+          "family": "Zucker",
+          "affiliation": []
+        }
+      ],
+      "member": "78",
+      "container-title": "Neuroscience & Biobehavioral Reviews",
+      "original-title": [],
+      "link": [
+        {
+          "URL": "http://api.elsevier.com/content/article/PII:S0149763410001156?httpAccept=text/xml",
+          "content-type": "text/xml",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "http://api.elsevier.com/content/article/PII:S0149763410001156?httpAccept=text/plain",
+          "content-type": "text/plain",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2015,
+            3,
+            29
+          ]
+        ],
+        "date-time": "2015-03-29T10:29:34Z",
+        "timestamp": 1427624974000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2011,
+            1
+          ]
+        ]
+      },
+      "references-count": 60,
+      "alternative-id": [
+        "S0149763410001156"
+      ],
+      "URL": "http://dx.doi.org/10.1016/j.neubiorev.2010.07.002",
+      "relation": {},
+      "issn-type": [
+        {
+          "value": "0149-7634",
+          "type": "print"
+        }
+      ],
+      "subject": [
+        "Cognitive Neuroscience",
+        "Behavioral Neuroscience",
+        "Neuropsychology and Physiological Psychology"
+      ],
+      "id": "sOBzMC57"
+    },
+    "citation_id": "sOBzMC57"
+  },
+  "doi:10.1038/nrg2813": {
+    "source": "doi",
+    "identifer": "10.1038/nrg2813",
+    "standard_citation": "doi:10.1038/nrg2813",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            5,
+            7
+          ]
+        ],
+        "date-time": "2017-05-07T12:19:25Z",
+        "timestamp": 1494159565656
+      },
+      "reference-count": 44,
+      "publisher": "Springer Nature",
+      "issue": "7",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Nat Rev Genet"
+      ],
+      "DOI": "10.1038/nrg2813",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2010,
+            6,
+            15
+          ]
+        ],
+        "date-time": "2010-06-15T04:03:11Z",
+        "timestamp": 1276574591000
+      },
+      "page": "459-463",
+      "source": "Crossref",
+      "is-referenced-by-count": 279,
+      "title": "New approaches to population stratification in genome-wide association studies",
+      "prefix": "10.1038",
+      "volume": "11",
+      "author": [
+        {
+          "given": "Alkes L.",
+          "family": "Price",
+          "affiliation": []
+        },
+        {
+          "given": "Noah A.",
+          "family": "Zaitlen",
+          "affiliation": []
+        },
+        {
+          "given": "David",
+          "family": "Reich",
+          "affiliation": []
+        },
+        {
+          "given": "Nick",
+          "family": "Patterson",
+          "affiliation": []
+        }
+      ],
+      "member": "339",
+      "published-online": {
+        "date-parts": [
+          [
+            2010,
+            6,
+            15
+          ]
+        ]
+      },
+      "container-title": "Nature Reviews Genetics",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2011,
+            8,
+            10
+          ]
+        ],
+        "date-time": "2011-08-10T10:27:49Z",
+        "timestamp": 1312972069000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2010,
+            6,
+            15
+          ]
+        ]
+      },
+      "references-count": 44,
+      "alternative-id": [
+        "nrg2813"
+      ],
+      "URL": "http://dx.doi.org/10.1038/nrg2813",
+      "relation": {
+        "cites": []
+      },
+      "issn-type": [
+        {
+          "value": "1471-0056",
+          "type": "print"
+        },
+        {
+          "value": "1471-0064",
+          "type": "electronic"
+        }
+      ],
+      "subject": [
+        "Genetics(clinical)",
+        "Genetics",
+        "Molecular Biology"
+      ],
+      "id": "T3GG8iJN"
+    },
+    "citation_id": "T3GG8iJN"
+  },
+  "doi:10.1086/512821": {
+    "source": "doi",
+    "identifer": "10.1086/512821",
+    "standard_citation": "doi:10.1086/512821",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            5,
+            6
+          ]
+        ],
+        "date-time": "2017-05-06T13:41:30Z",
+        "timestamp": 1494078090250
+      },
+      "reference-count": 21,
+      "publisher": "Elsevier BV",
+      "issue": "4",
+      "license": [
+        {
+          "URL": "http://www.elsevier.com/tdm/userlicense/1.0/",
+          "start": {
+            "date-parts": [
+              [
+                2007,
+                4,
+                1
+              ]
+            ],
+            "date-time": "2007-04-01T00:00:00Z",
+            "timestamp": 1175385600000
+          },
+          "delay-in-days": 0,
+          "content-version": "tdm"
+        },
+        {
+          "URL": "http://www.elsevier.com/open-access/userlicense/1.0/",
+          "start": {
+            "date-parts": [
+              [
+                2013,
+                7,
+                19
+              ]
+            ],
+            "date-time": "2013-07-19T00:00:00Z",
+            "timestamp": 1374192000000
+          },
+          "delay-in-days": 2301,
+          "content-version": "vor"
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "The American Journal of Human Genetics"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2007,
+            4
+          ]
+        ]
+      },
+      "DOI": "10.1086/512821",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2007,
+            3,
+            13
+          ]
+        ],
+        "date-time": "2007-03-13T21:22:28Z",
+        "timestamp": 1173820948000
+      },
+      "page": "605-615",
+      "source": "Crossref",
+      "is-referenced-by-count": 191,
+      "title": "Overcoming the Winner’s Curse: Estimating Penetrance Parameters from Case-Control Data",
+      "prefix": "10.1016",
+      "volume": "80",
+      "author": [
+        {
+          "given": "Sebastian",
+          "family": "Zöllner",
+          "affiliation": []
+        },
+        {
+          "given": "Jonathan K.",
+          "family": "Pritchard",
+          "affiliation": []
+        }
+      ],
+      "member": "78",
+      "container-title": "The American Journal of Human Genetics",
+      "original-title": [],
+      "link": [
+        {
+          "URL": "http://api.elsevier.com/content/article/PII:S0002929707610970?httpAccept=text/xml",
+          "content-type": "text/xml",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "http://api.elsevier.com/content/article/PII:S0002929707610970?httpAccept=text/plain",
+          "content-type": "text/plain",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2015,
+            10,
+            18
+          ]
+        ],
+        "date-time": "2015-10-18T17:05:51Z",
+        "timestamp": 1445187951000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2007,
+            4
+          ]
+        ]
+      },
+      "references-count": 21,
+      "alternative-id": [
+        "S0002929707610970"
+      ],
+      "URL": "http://dx.doi.org/10.1086/512821",
+      "relation": {},
+      "issn-type": [
+        {
+          "value": "0002-9297",
+          "type": "print"
+        }
+      ],
+      "subject": [
+        "Genetics(clinical)",
+        "Genetics"
+      ],
+      "id": "10shRODux"
+    },
+    "citation_id": "10shRODux"
+  },
+  "doi:10.1111/j.1740-9713.2016.00960.x": {
+    "source": "doi",
+    "identifer": "10.1111/j.1740-9713.2016.00960.x",
+    "standard_citation": "doi:10.1111/j.1740-9713.2016.00960.x",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            2
+          ]
+        ],
+        "date-time": "2017-04-02T23:57:44Z",
+        "timestamp": 1491177464432
+      },
+      "reference-count": 13,
+      "publisher": "Wiley-Blackwell",
+      "issue": "5",
+      "license": [
+        {
+          "URL": "http://doi.wiley.com/10.1002/tdm_license_1.1",
+          "start": {
+            "date-parts": [
+              [
+                2015,
+                9,
+                1
+              ]
+            ],
+            "date-time": "2015-09-01T00:00:00Z",
+            "timestamp": 1441065600000
+          },
+          "delay-in-days": 0,
+          "content-version": "tdm"
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Significance"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2016,
+            10
+          ]
+        ]
+      },
+      "DOI": "10.1111/j.1740-9713.2016.00960.x",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2016,
+            10,
+            13
+          ]
+        ],
+        "date-time": "2016-10-13T05:39:18Z",
+        "timestamp": 1476337158000
+      },
+      "page": "14-19",
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": "To predict and serve?",
+      "prefix": "10.1111",
+      "volume": "13",
+      "author": [
+        {
+          "given": "Kristian",
+          "family": "Lum",
+          "affiliation": [
+            {
+              "name": "Lead statistician at the Human Rights Data Analysis Group"
+            }
+          ]
+        },
+        {
+          "given": "William",
+          "family": "Isaac",
+          "affiliation": [
+            {
+              "name": "Doctoral candidate in the Department of Political Science at Michigan State University"
+            }
+          ]
+        }
+      ],
+      "member": "311",
+      "published-online": {
+        "date-parts": [
+          [
+            2016,
+            10,
+            7
+          ]
+        ]
+      },
+      "container-title": "Significance",
+      "original-title": [],
+      "link": [
+        {
+          "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1111%2Fj.1740-9713.2016.00960.x",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1111%2Fj.1740-9713.2016.00960.x",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2017,
+            3,
+            24
+          ]
+        ],
+        "date-time": "2017-03-24T22:19:38Z",
+        "timestamp": 1490393978000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            10
+          ]
+        ]
+      },
+      "references-count": 13,
+      "URL": "http://dx.doi.org/10.1111/j.1740-9713.2016.00960.x",
+      "relation": {
+        "cites": []
+      },
+      "issn-type": [
+        {
+          "value": "1740-9705",
+          "type": "print"
+        }
+      ],
+      "subject": [
+        "Statistics and Probability"
+      ],
+      "id": "6co0adq"
+    },
+    "citation_id": "6co0adq"
+  },
+  "doi:10.1126/science.333.6041.404-a": {
+    "source": "doi",
+    "identifer": "10.1126/science.333.6041.404-a",
+    "standard_citation": "doi:10.1126/science.333.6041.404-a",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            5,
+            8
+          ]
+        ],
+        "date-time": "2017-05-08T09:25:43Z",
+        "timestamp": 1494235543844
+      },
+      "reference-count": 1,
+      "publisher": "American Association for the Advancement of Science (AAAS)",
+      "issue": "6041",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Science"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2011,
+            7,
+            22
+          ]
+        ]
+      },
+      "DOI": "10.1126/science.333.6041.404-a",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2011,
+            7,
+            21
+          ]
+        ],
+        "date-time": "2011-07-21T18:49:01Z",
+        "timestamp": 1311274141000
+      },
+      "page": "404-404",
+      "source": "Crossref",
+      "is-referenced-by-count": 20,
+      "title": "Retraction",
+      "prefix": "10.1126",
+      "volume": "333",
+      "author": [
+        {
+          "given": "P.",
+          "family": "Sebastiani",
+          "affiliation": []
+        },
+        {
+          "given": "N.",
+          "family": "Solovieff",
+          "affiliation": []
+        },
+        {
+          "given": "A.",
+          "family": "Puca",
+          "affiliation": []
+        },
+        {
+          "given": "S. W.",
+          "family": "Hartley",
+          "affiliation": []
+        },
+        {
+          "given": "E.",
+          "family": "Melista",
+          "affiliation": []
+        },
+        {
+          "given": "S.",
+          "family": "Andersen",
+          "affiliation": []
+        },
+        {
+          "given": "D. A.",
+          "family": "Dworkis",
+          "affiliation": []
+        },
+        {
+          "given": "J. B.",
+          "family": "Wilk",
+          "affiliation": []
+        },
+        {
+          "given": "R. H.",
+          "family": "Myers",
+          "affiliation": []
+        },
+        {
+          "given": "M. H.",
+          "family": "Steinberg",
+          "affiliation": []
+        },
+        {
+          "given": "M.",
+          "family": "Montano",
+          "affiliation": []
+        },
+        {
+          "given": "C. T.",
+          "family": "Baldwin",
+          "affiliation": []
+        },
+        {
+          "given": "T. T.",
+          "family": "Perls",
+          "affiliation": []
+        }
+      ],
+      "member": "221",
+      "published-online": {
+        "date-parts": [
+          [
+            2011,
+            7,
+            21
+          ]
+        ]
+      },
+      "container-title": "Science",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2016,
+            12,
+            23
+          ]
+        ],
+        "date-time": "2016-12-23T17:48:17Z",
+        "timestamp": 1482515297000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2011,
+            7,
+            21
+          ]
+        ]
+      },
+      "references-count": 1,
+      "URL": "http://dx.doi.org/10.1126/science.333.6041.404-a",
+      "relation": {
+        "cites": []
+      },
+      "issn-type": [
+        {
+          "value": "0036-8075",
+          "type": "print"
+        },
+        {
+          "value": "1095-9203",
+          "type": "electronic"
+        }
+      ],
+      "subject": [
+        "General"
+      ],
+      "id": "DmQPI43R"
+    },
+    "citation_id": "DmQPI43R"
+  },
+  "doi:10.1145/2382577.2382579": {
+    "source": "doi",
+    "identifer": "10.1145/2382577.2382579",
+    "standard_citation": "doi:10.1145/2382577.2382579",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            5,
+            4
+          ]
+        ],
+        "date-time": "2017-05-04T08:33:47Z",
+        "timestamp": 1493886827478
+      },
+      "reference-count": 0,
+      "publisher": "Association for Computing Machinery (ACM)",
+      "issue": "4",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "ACM Trans. Knowl. Discov. Data",
+        "TKDD"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2012,
+            12,
+            1
+          ]
+        ]
+      },
+      "DOI": "10.1145/2382577.2382579",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2013,
+            1,
+            2
+          ]
+        ],
+        "date-time": "2013-01-02T13:23:15Z",
+        "timestamp": 1357132995000
+      },
+      "page": "1-21",
+      "source": "Crossref",
+      "is-referenced-by-count": 4,
+      "title": "Leakage in data mining",
+      "prefix": "10.1145",
+      "volume": "6",
+      "author": [
+        {
+          "given": "Shachar",
+          "family": "Kaufman",
+          "affiliation": []
+        },
+        {
+          "given": "Saharon",
+          "family": "Rosset",
+          "affiliation": []
+        },
+        {
+          "given": "Claudia",
+          "family": "Perlich",
+          "affiliation": []
+        },
+        {
+          "given": "Ori",
+          "family": "Stitelman",
+          "affiliation": []
+        }
+      ],
+      "member": "320",
+      "container-title": "ACM Transactions on Knowledge Discovery from Data",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2016,
+            12,
+            6
+          ]
+        ],
+        "date-time": "2016-12-06T23:59:09Z",
+        "timestamp": 1481068749000
+      },
+      "score": 1.0,
+      "subtitle": [
+        "Formulation, detection, and avoidance"
+      ],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2012,
+            12,
+            1
+          ]
+        ]
+      },
+      "references-count": 0,
+      "URL": "http://dx.doi.org/10.1145/2382577.2382579",
+      "relation": {},
+      "issn-type": [
+        {
+          "value": "1556-4681",
+          "type": "print"
+        }
+      ],
+      "subject": [
+        "Computer Science(all)"
+      ],
+      "id": "889LsjDi"
+    },
+    "citation_id": "889LsjDi"
+  },
+  "doi:10.1371/journal.pbio.1001661": {
+    "source": "doi",
+    "identifer": "10.1371/journal.pbio.1001661",
+    "standard_citation": "doi:10.1371/journal.pbio.1001661",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            5,
+            7
+          ]
+        ],
+        "date-time": "2017-05-07T17:27:31Z",
+        "timestamp": 1494178051224
+      },
+      "reference-count": 31,
+      "publisher": "Public Library of Science (PLoS)",
+      "issue": "9",
+      "license": [
+        {
+          "URL": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "start": {
+            "date-parts": [
+              [
+                2013,
+                9,
+                17
+              ]
+            ],
+            "date-time": "2013-09-17T00:00:00Z",
+            "timestamp": 1379376000000
+          },
+          "delay-in-days": 0,
+          "content-version": "vor"
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "www.plosbiology.org"
+        ],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "PLoS Biol"
+      ],
+      "DOI": "10.1371/journal.pbio.1001661",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2013,
+            9,
+            17
+          ]
+        ],
+        "date-time": "2013-09-17T20:51:16Z",
+        "timestamp": 1379451076000
+      },
+      "page": "e1001661",
+      "update-policy": "http://dx.doi.org/10.1371/journal.pbio.corrections_policy",
+      "source": "Crossref",
+      "is-referenced-by-count": 40,
+      "title": "Generalization and Dilution of Association Results from European GWAS in Populations of Non-European Ancestry: The PAGE Study",
+      "prefix": "10.1371",
+      "volume": "11",
+      "author": [
+        {
+          "given": "Christopher S.",
+          "family": "Carlson",
+          "affiliation": []
+        },
+        {
+          "given": "Tara C.",
+          "family": "Matise",
+          "affiliation": []
+        },
+        {
+          "given": "Kari E.",
+          "family": "North",
+          "affiliation": []
+        },
+        {
+          "given": "Christopher A.",
+          "family": "Haiman",
+          "affiliation": []
+        },
+        {
+          "given": "Megan D.",
+          "family": "Fesinmeyer",
+          "affiliation": []
+        },
+        {
+          "given": "Steven",
+          "family": "Buyske",
+          "affiliation": []
+        },
+        {
+          "given": "Fredrick R.",
+          "family": "Schumacher",
+          "affiliation": []
+        },
+        {
+          "given": "Ulrike",
+          "family": "Peters",
+          "affiliation": []
+        },
+        {
+          "given": "Nora",
+          "family": "Franceschini",
+          "affiliation": []
+        },
+        {
+          "given": "Marylyn D.",
+          "family": "Ritchie",
+          "affiliation": []
+        },
+        {
+          "given": "David J.",
+          "family": "Duggan",
+          "affiliation": []
+        },
+        {
+          "given": "Kylee L.",
+          "family": "Spencer",
+          "affiliation": []
+        },
+        {
+          "given": "Logan",
+          "family": "Dumitrescu",
+          "affiliation": []
+        },
+        {
+          "given": "Charles B.",
+          "family": "Eaton",
+          "affiliation": []
+        },
+        {
+          "given": "Fridtjof",
+          "family": "Thomas",
+          "affiliation": []
+        },
+        {
+          "given": "Alicia",
+          "family": "Young",
+          "affiliation": []
+        },
+        {
+          "given": "Cara",
+          "family": "Carty",
+          "affiliation": []
+        },
+        {
+          "given": "Gerardo",
+          "family": "Heiss",
+          "affiliation": []
+        },
+        {
+          "given": "Loic",
+          "family": "Le Marchand",
+          "affiliation": []
+        },
+        {
+          "given": "Dana C.",
+          "family": "Crawford",
+          "affiliation": []
+        },
+        {
+          "given": "Lucia A.",
+          "family": "Hindorff",
+          "affiliation": []
+        },
+        {
+          "given": "Charles L.",
+          "family": "Kooperberg",
+          "affiliation": []
+        },
+        {
+          "name": "for the PAGE Consortium",
+          "affiliation": []
+        }
+      ],
+      "member": "340",
+      "published-online": {
+        "date-parts": [
+          [
+            2013,
+            9,
+            17
+          ]
+        ]
+      },
+      "container-title": "PLoS Biology",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2017,
+            2,
+            28
+          ]
+        ],
+        "date-time": "2017-02-28T08:15:44Z",
+        "timestamp": 1488269744000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "editor": [
+        {
+          "given": "Greg",
+          "family": "Gibson",
+          "affiliation": []
+        }
+      ],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2013,
+            9,
+            17
+          ]
+        ]
+      },
+      "references-count": 31,
+      "URL": "http://dx.doi.org/10.1371/journal.pbio.1001661",
+      "relation": {
+        "cites": []
+      },
+      "issn-type": [
+        {
+          "value": "1545-7885",
+          "type": "electronic"
+        }
+      ],
+      "subject": [
+        "Biochemistry, Genetics and Molecular Biology(all)",
+        "Immunology and Microbiology(all)",
+        "Neuroscience(all)",
+        "Agricultural and Biological Sciences(all)"
+      ],
+      "id": "dKwyEWWF"
+    },
+    "citation_id": "dKwyEWWF"
   }
 }

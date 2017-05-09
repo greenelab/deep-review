@@ -20,8 +20,10 @@ text	citation	standard_citation	citation_id
 @arxiv:1608.00647	arxiv:1608.00647	arxiv:1608.00647	c6MfDdWP
 @arxiv:1608.02158	arxiv:1608.02158	arxiv:1608.02158	qXdO2aMm
 @arxiv:1609.02943	arxiv:1609.02943	arxiv:1609.02943	ULSPV0rh
+@arxiv:1610.02413	arxiv:1610.02413	arxiv:1610.02413	1ENxzq6pT
 @arxiv:1610.05256	arxiv:1610.05256	arxiv:1610.05256	M2OLWojE
 @arxiv:1610.05820	arxiv:1610.05820	arxiv:1610.05820	1HbRTExaU
+@arxiv:1610.09559	arxiv:1610.09559	arxiv:1610.09559	11aqfNfQx
 @arxiv:1611.03814	arxiv:1611.03814	arxiv:1611.03814	AsLAb71x
 @arxiv:1611.08373	arxiv:1611.08373	arxiv:1611.08373	dO844vZn
 @arxiv:1612.02751	arxiv:1612.02751	arxiv:1612.02751	bNBiIiTt
@@ -56,6 +58,7 @@ text	citation	standard_citation	citation_id
 @doi:10.1016/j.jbi.2014.10.006	doi:10.1016/j.jbi.2014.10.006	doi:10.1016/j.jbi.2014.10.006	13filvWwr
 @doi:10.1016/j.jbi.2016.10.007	doi:10.1016/j.jbi.2016.10.007	doi:10.1016/j.jbi.2016.10.007	5x3uMSKi
 @doi:10.1016/j.jhealeco.2016.01.012	doi:10.1016/j.jhealeco.2016.01.012	doi:10.1016/j.jhealeco.2016.01.012	13c9OPizf
+@doi:10.1016/j.neubiorev.2010.07.002	doi:10.1016/j.neubiorev.2010.07.002	doi:10.1016/j.neubiorev.2010.07.002	sOBzMC57
 @doi:10.1016/j.socscimed.2003.08.016	doi:10.1016/j.socscimed.2003.08.016	doi:10.1016/j.socscimed.2003.08.016	XJw23xy0
 @doi:10.1016/j.tig.2015.05.007	doi:10.1016/j.tig.2015.05.007	doi:10.1016/j.tig.2015.05.007	J0PJHcHK
 @doi:10.1021/acs.jproteome.6b00618	doi:10.1021/acs.jproteome.6b00618	doi:10.1021/acs.jproteome.6b00618	oTF8O79C
@@ -72,6 +75,7 @@ text	citation	standard_citation	citation_id
 @doi:10.1038/nmeth.4182	doi:10.1038/nmeth.4182	doi:10.1038/nmeth.4182	On4vW5aU
 @doi:10.1038/npjsba.2016.15	doi:10.1038/npjsba.2016.15	doi:10.1038/npjsba.2016.15	cQAldRdg
 @doi:10.1038/nrd4609	doi:10.1038/nrd4609	doi:10.1038/nrd4609	79Ktl2
+@doi:10.1038/nrg2813	doi:10.1038/nrg2813	doi:10.1038/nrg2813	T3GG8iJN
 @doi:10.1038/nrg3208	doi:10.1038/nrg3208	doi:10.1038/nrg3208	FkSZ1qmz
 @doi:10.1038/nrg3458	doi:10.1038/nrg3458	doi:10.1038/nrg3458	8yA3foA6
 @doi:10.1038/srep11476	doi:10.1038/srep11476	doi:10.1038/srep11476	UpFrhdJf
@@ -82,6 +86,7 @@ text	citation	standard_citation	citation_id
 @doi:10.1073/pnas.0805923106	doi:10.1073/pnas.0805923106	doi:10.1073/pnas.0805923106	kboAopkh
 @doi:10.1080/17460441.2016.1201262	doi:10.1080/17460441.2016.1201262	doi:10.1080/17460441.2016.1201262	xPkT1z7D
 @doi:10.1083/jcb.201610026	doi:10.1083/jcb.201610026	doi:10.1083/jcb.201610026	McjXFLLq
+@doi:10.1086/512821	doi:10.1086/512821	doi:10.1086/512821	10shRODux
 @doi:10.1093/bib/4.1.22	doi:10.1093/bib/4.1.22	doi:10.1093/bib/4.1.22	19jjiGHWc
 @doi:10.1093/bib/bbv020	doi:10.1093/bib/bbv020	doi:10.1093/bib/bbv020	gTwjIQqB
 @doi:10.1093/bib/bbw068	doi:10.1093/bib/bbw068	doi:10.1093/bib/bbw068	G00xvi94
@@ -121,7 +126,9 @@ text	citation	standard_citation	citation_id
 @doi:10.1109/TCBB.2014.2343960	doi:10.1109/TCBB.2014.2343960	doi:10.1109/tcbb.2014.2343960	ZzaRyGuJ
 @doi:10.1109/icnn.1994.374637	doi:10.1109/icnn.1994.374637	doi:10.1109/icnn.1994.374637	YUms527e
 @doi:10.1109/tcbb.2014.2343960	doi:10.1109/tcbb.2014.2343960	doi:10.1109/tcbb.2014.2343960	ZzaRyGuJ
+@doi:10.1111/j.1740-9713.2016.00960.x	doi:10.1111/j.1740-9713.2016.00960.x	doi:10.1111/j.1740-9713.2016.00960.x	6co0adq
 @doi:10.1126/science.1132939	doi:10.1126/science.1132939	doi:10.1126/science.1132939	Ot5bUkmI
+@doi:10.1126/science.333.6041.404-a	doi:10.1126/science.333.6041.404-a	doi:10.1126/science.333.6041.404-a	DmQPI43R
 @doi:10.1126/science.aag2302	doi:10.1126/science.aag2302	doi:10.1126/science.aag2302	BYO1aJEG
 @doi:10.1126/science.aah6168	doi:10.1126/science.aah6168	doi:10.1126/science.aah6168	gvyja7v1
 @doi:10.1136/amiajnl-2011-000150	doi:10.1136/amiajnl-2011-000150	doi:10.1136/amiajnl-2011-000150	sG3iVOTS
@@ -129,6 +136,7 @@ text	citation	standard_citation	citation_id
 @doi:10.1136/amiajnl-2013-001935	doi:10.1136/amiajnl-2013-001935	doi:10.1136/amiajnl-2013-001935	11OyzMl87
 @doi:10.1142/9789813207813_0050	doi:10.1142/9789813207813_0050	doi:10.1142/9789813207813_0050	qe90c1CL
 @doi:10.1142/9789814644730_0014	doi:10.1142/9789814644730_0014	doi:10.1142/9789814644730_0014	PBiRSdXv
+@doi:10.1145/2382577.2382579	doi:10.1145/2382577.2382579	doi:10.1145/2382577.2382579	889LsjDi
 @doi:10.1145/2661829.2661974	doi:10.1145/2661829.2661974	doi:10.1145/2661829.2661974	XQtuRkTU
 @doi:10.1145/2939672.2939823	doi:10.1145/2939672.2939823	doi:10.1145/2939672.2939823	TwvauiTv
 @doi:10.1148/radiol.2017162326	doi:10.1148/radiol.2017162326	doi:10.1148/radiol.2017162326	Qve94Jra
@@ -136,6 +144,7 @@ text	citation	standard_citation	citation_id
 @doi:10.1186/1758-2946-5-30	doi:10.1186/1758-2946-5-30	doi:10.1186/1758-2946-5-30	M1EW8Rfl
 @doi:10.1186/s12859-015-0845-0	doi:10.1186/s12859-015-0845-0	doi:10.1186/s12859-015-0845-0	18lqFDKRR
 @doi:10.1200/JCO.2008.18.1370	doi:10.1200/JCO.2008.18.1370	doi:10.1200/jco.2008.18.1370	lnK82Ey6
+@doi:10.1371/journal.pbio.1001661	doi:10.1371/journal.pbio.1001661	doi:10.1371/journal.pbio.1001661	dKwyEWWF
 @doi:10.1371/journal.pbio.1002195	doi:10.1371/journal.pbio.1002195	doi:10.1371/journal.pbio.1002195	13bxiY1vo
 @doi:10.1371/journal.pcbi.1002957	doi:10.1371/journal.pcbi.1002957	doi:10.1371/journal.pcbi.1002957	5tvnB4uW
 @doi:10.1371/journal.pcbi.1003889	doi:10.1371/journal.pcbi.1003889	doi:10.1371/journal.pcbi.1003889	F13xtRbV
