@@ -40,7 +40,7 @@ information. Since then, interest in neural networks as computational models has
 waxed and waned several times. This history is interesting in its own right
 [@doi:10.1103/RevModPhys.34.135]. In recent years, attention has shifted back to
 neural networks as processing power has allowed deep learning techniques to
-surge ahead of other machine learning techniques. Our focus is primarily on the
+surge ahead of other machine learning algorithms. Our focus is primarily on the
 downstream applications enabled by these advances.
 
 Several important advances make the current surge of work done in this area
@@ -132,13 +132,13 @@ is especially suited to leveraging large amounts of data from high-throughput
 "omics" studies. One classic biological problem where machine learning, and now
 deep learning, has been extensively applied is molecular target prediction. For
 example, deep recurrent neural networks (RNN) have been used to predict gene
-targets of microRNAs [@doi:10.1109/icnn.1994.374637], and residual CNNs have been
-applied to predict protein-protein contacts on a genome-wide scale
-[@doi:10.1101/073239]. Some of the many recent exciting applications of deep
-learning include the prediction of protein secondary structure based on sequence
-data [@doi:10.1109/tcbb.2014.2343960 @doi:10.1038/srep18962], recognition of
-functional genomic elements such as enhancers and promoters [@doi:10.1101/036129
-@doi:10.1007/978-3-319-16706-0_20 @doi:10.1093/nar/gku1058], and prediction of
+targets of microRNAs [@doi:10.1109/icnn.1994.374637], and CNNs have been applied
+to predict protein residue-residue contacts and secondary structure on a
+genome-wide scale [doi:10.1371/journal.pcbi.1005324
+@doi:10.1109/tcbb.2014.2343960 @doi:10.1038/srep18962]. Other recent exciting
+applications of deep learning include recognition of functional genomic elements
+such as enhancers and promoters [@doi:10.1101/036129
+@doi:10.1007/978-3-319-16706-0_20 @doi:10.1093/nar/gku1058] and prediction of
 the deleterious effects of nucleotide polymorphisms
 [@doi:10.1093/bioinformatics/btu703].
 
