@@ -103,18 +103,16 @@ application of deep learning.
 
 #### Disease and Patient Categorization
 
-A key challenge in biomedicine is the accurate classification of
-diseases and disease subtypes. In oncology, current "gold standard"
-approaches involve histology, requiring manual
-human expertise for quantification, or small panel of molecular markers,
-such as cell surface
-receptors or genes' expression. One example is the PAM50 approach
-to classifying breast cancer where the expression of 50 marker
-genes divides breast cancer patients into four subtypes.
+A key challenge in biomedicine is the accurate classification of diseases and
+disease subtypes. In oncology, current "gold standard" approaches include
+histology, which requires interpretation by experts, or a small panel of
+molecular markers, such as cell surface receptors or gene expression. One
+example is the PAM50 approach to classifying breast cancer where the expression
+of 50 marker genes divides breast cancer patients into four subtypes.
 Significant heterogeneity still remains within these four subtypes
 [@doi:10.1200/JCO.2008.18.1370 @doi:10.1158/1078-0432.CCR-13-0583]. Given the
-increasing wealth of molecular data available, a more
-comprehensive subtyping seems possible.
+increasing wealth of molecular data available, a more comprehensive subtyping
+seems possible.
 
 Several studies have used deep learning methods in order to better categorize
 breast cancer patients. For example, Tan et al. applied denoising
