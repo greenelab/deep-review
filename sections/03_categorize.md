@@ -22,7 +22,7 @@ diagnosed with type 1 diabetes - the autoimmune form of the disease that arises
 in young people. Such a neural network would be identifying patients with LADA.
 As no such computational approach existed, LADA was actually identified by Groop
 et al. [@doi:10.2337/diab.35.2.237]. However, this represents a potential hope
-of this area. Perhaps deep neural networks, by reevaluating data without the
+for this area. Perhaps deep neural networks, by reevaluating data without the
 context of our assumptions, can reveal novel classes of treatable conditions.
 
 Alternatively, imagine that a deep neural network is provided with clinical test
@@ -67,7 +67,7 @@ compared to a board of certified dermatologists
 [@tag:Codella2016_ensemble_melanoma @tag:Esteva2017_skin_cancer_nature].
 This approach is known as transfer learning (see Discussion).
 
-Another fast emerging area of deep learning method applications is detection of
+Another fast emerging area of deep learning method applications is the detection of
 ophthalmological diseases such as diabetic retinopathy and age-related macular
 degeneration. Diagnosis of diabetic retinopathy through color fundus images
 became of interest for deep learning researchers and practitioners after the
@@ -98,7 +98,7 @@ well annotated training images. To expand the number and diversity of images,
 the researchers have employed approaches where they use adversarial examples
 [@tag:Zhu2016_advers_mamm] or first train towards human-created features before
 subsequent fine tuning [@tag:Dhungel2016_mamm]. Adaptation to the medical image
-domain can further improved by combining in the latter approach with other
+domain can be further improved by combining in the latter approach with other
 machine learning techniques, for example, as a cascade of deep learning and
 random forest models [@tag:Dhungel2017_mamm_min_interv]. Using large dataset,
 Kooi et al. [@tag:Kooi2016_mamm_lesions] demonstrated that deep neural
@@ -163,7 +163,7 @@ Nie et al. [@tag:Nie2016_3d_survival] showed that multimodal, multi-channel
 3D deep architecture was successful at learning high-level brain tumor
 appearance features jointly from MRI, functional MRI and diffusion MRI images,
 outperforming single-modality or 2D models. Overall, the variety of modalities,
-properties and sizes of training sets, dimensionality of input, and, finally,
+properties and sizes of training sets, the dimensionality of input, and, finally,
 the importance of end goals in medical image analysis are provoking a
 development of specialized deep neural network architectures, training and
 validation protocols, and input representations that are not characteristic of
@@ -213,7 +213,7 @@ a 3% error rate. The pathologist did not produce any false positives, but did
 have a number of false negatives. While the algorithm had about twice the
 error rate of a pathologist, the errors were not strongly correlated with those
 of a pathologist, suggesting that the two could be combined, theoretically,
-reducing error rate to under 1%. In this area, these algorithms may be ready to
+reducing the error rate to under 1%. In this area, these algorithms may be ready to
 incorporate into existing tools to aid pathologists. The authors' work suggests
 that this could reduce the false negative rate of such evaluations. This theme
 of an ensemble between deep learning algorithm and human expert may help
@@ -247,7 +247,7 @@ results evaluation, uncertainty estimation, and model interpretation methods are
 also of great importance in this domain (see Discussion). Finally, there is
 a need for better pathologist-computer interaction techniques that will allow
 to combine the power of deep learning methods with human expertise and
-lead to better informed decisions for patient treatment and care.
+lead to better-informed decisions for patient treatment and care.
 
 #### Electronic health records
 
@@ -436,7 +436,7 @@ data-driven revolution in how work is done. Contrasting with this perspective,
 Ratner, Bach, and Ré described labeled training data as "The _New_ New Oil"
 [@url:http://hazyresearch.github.io/snorkel/blog/weak_supervision.html]. In this
 framing, data are abundant and not a scarce resource. Instead, new approaches to
-solve problems arise when labeled training data become sufficient to enable
+solving problems arise when labeled training data become sufficient to enable
 them. Based on our review of research on deep learning methods to categorize
 disease, the latter framing rings true.
 
@@ -540,7 +540,7 @@ adversarial neural networks as a tool to make sharable EHR data
 model from such attacks.
 
 There are approaches to protect models, but they pose their own challenges.
-Training algorithms in a differentially private manner provides a limited
+Training in a differentially private manner provides a limited
 guarantee that an algorithm's output will be equally
 likely to occur regardless of the participation of any one individual. The limit
 is determined by a single parameter which provides a quantification of privacy.
@@ -627,5 +627,5 @@ Neural Networks) [@arxiv:1607.07519] and the incorporation of past and current
 state (Recurrent Neural Networks, Long Short Term Memory
 Networks)[@arxiv:1602.00357]. This may be a particular area of opportunity for
 deep neural networks. The ability to discover relevant sequences of events from
-large number of trajectories requires powerful and flexible feature construction
+a large number of trajectories requires powerful and flexible feature construction
 methods - an area at which deep neural networks tend to excel.
