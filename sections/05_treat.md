@@ -209,7 +209,7 @@ effectively and specifically affect the activity of a target, such as a kinase,
 protein-protein interaction, or broader cellular phenotype.  `TODO: clarify
 desired outputs, what will be done with the top-ranked hits, one vs multiple
 hits, abandoning lead compounds` This screening process can serve as one of the
-first step in the long drug discovery pipeline, where novel chemicals are
+first steps in the long drug discovery pipeline, where novel chemicals are
 pursued for their ability to inhibit or enhance disease-relevant biological
 mechanisms.  The appeal of machine learning in this domain is the need to
 improve the efficiency of the initial high-throughput screens such that
