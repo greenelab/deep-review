@@ -12,3 +12,4 @@
 | blengerich | Benjamin J. Lengerich | 0000-0001-8690-9554 | Computational Biology Department, School of Computer Science, Carnegie Mellon University | blengeri@cs.cmu.edu | Yes | |
 | agapow | Paul-Michael Agapow | 0000-0003-1126-1479 | Data Science Institute, Imperial College London | p.agapow@imperial.ac.uk | Yes | |
 | enricoferrero | Enrico Ferrero | 0000-0002-8362-100X | Computational Biology and Stats, Target Sciences, GSK | enrico.x.ferrero@gsk.com | Yes | |
+| annecarpenter | Anne E. Carpenter | 0000-0003-1555-8261 | Imaging Platform, Broad Institute of Harvard and MIT | anne@broadinstitute.org | Yes | NIH R01GM089652 |
