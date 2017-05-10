@@ -11,23 +11,31 @@ knowledge that allow us to better treat, categorize, or study disease, all
 within data constrained and privacy critical environments.
 
 Over the past five years, a class of machine learning algorithms known as deep
-learning has revolutionized image classification as well as a wide variety of
-other fields. In a famous and early example, scientists from Google demonstrated
-that a neural network could learn to identify cats simply by watching online
-videos [@url:http://research.google.com/archive/unsupervised_icml2012.html].
-These architectures quickly surpassed previous best-in-class methods that
-required extensive customization. More recently, "off-the-shelf" deep neural
-network approaches have demonstrated success in applications as diverse as the
-game of Go [@doi:10.1038/nature16961] and quantum physics
-[@doi:10.1126/science.aag2302].
+learning has revolutionized image classification and speech recognition due to
+their flexibility and high accuracy [@doi:10.1038/nature14539]. More recently,
+these algorithms have shown equally promising results in fields as diverse as
+high-energy physics [@doi:10.1038/ncomms5308], dermatology
+[@doi:10.1038/nature21056], translation among written languages
+[@arxiv:1609.08144], and drug discovery [@doi:10.1002/minf.201501008]. Across
+fields, "off-the-shelf" implementations of these algorithms have produced
+comparable or higher accuracy than previous best-in-class methods that required
+years of extensive customization, and specialized implementations are now being
+used at industrial scales.
 
-What if, more generally, deep learning could solve the challenges presented by
-the growth of data in biomedicine? Could these algorithms identify the "cats"
-hidden in our data - the patterns unknown to the researcher - and act on them?
-In this review, we examine whether deep learning's transformation of biomedical
-science is simply a matter of time or if there are unique challenges posed by
-biomedical data that render deep learning methods either more challenging or
-less fruitful to apply.
+Deep learning algorithms can also be used in an exploratory, "unsupervised"
+mode, where the goal is to summarize, explain, or identify interesting patterns
+in a data set (rather than to accurately predict which labels an expert would
+assign to each data point).  In a famous and early example, scientists from
+Google demonstrated that a neural network "discovered" that cats, faces, and
+pedestrians were important components of online videos
+[@url:http://research.google.com/archive/unsupervised_icml2012.html], without
+being told to look for any of them. What if, more generally, deep learning could
+solve the challenges presented by the growth of data in biomedicine? Could these
+algorithms identify the "cats" hidden in our data - the patterns unknown to the
+researcher - and act on them? In this review, we examine whether deep learning's
+transformation of biomedical science is simply a matter of time or if there are
+unique challenges posed by biomedical data that render deep learning methods
+either more challenging or less fruitful to apply.
 
 ### Defining deep learning
 
