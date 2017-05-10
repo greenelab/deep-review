@@ -30,8 +30,8 @@ human-level performance is irrelevant.*
 ### Interpretation
 
 As the challenge of interpretability is common across many domains, there is
-significant interest in developing generic procedures for knowledge extraction
-from deep models. Ribeiro et al [@tag:Ribeiro2016_lime] focus on interpreting
+much interest in developing generic procedures for knowledge extraction
+from deep models. Ribeiro et al. [@tag:Ribeiro2016_lime] focus on interpreting
 individual predictions rather than interpreting the model. By fitting simple
 linear models to mimic the predictions of the deep learning model in a small
 neighborhood of a data sample, they generated an interpretable model for each
@@ -58,7 +58,7 @@ primarily focused on integrating attention mechanisms with the neural networks.
 Attention mechanisms dynamically weight the importance the neural network gives
 to each feature. By inspecting the attention weights for a particular sample, a
 practitioner can identify the important features for a particular prediction.
-Choi et al [@tag:Choi2016_retain] inverted the typical architecture of recurrent
+Choi et al. [@tag:Choi2016_retain] inverted the typical architecture of recurrent
 neural networks to improve interpretability. In particular, they only used
 recurrent connections in the attention generating procedure, leaving the hidden
 state directly connected to the input variables. In the clinical domain, this
@@ -66,7 +66,7 @@ model was able to produce accurate diagnoses in which the contribution of
 previous hospital visits could be directly interpreted. Choi et al
 [@tag:Choi2016_gram] later extended this work to take into account the structure
 of disease ontologies and found that the concepts represented by the model were
-aligned with medical knowledge. Che et al [@tag:Che2015_distill] introduced a
+aligned with medical knowledge. Che et al. [@tag:Che2015_distill] introduced a
 knowledge-distillation approach which used gradient boosted trees to learn
 interpretable healthcare features from trained deep models.
 
@@ -122,14 +122,14 @@ parameters from 30 million to 50 thousand, a factor of 600.
 ### Hardware limitations and scaling
 
 Efficiently scaling deep learning is challenging, and there is a high
-computational cost (e.g., time, memory, energy) associated with training neural
+computational cost (e.g. time, memory, energy) associated with training neural
 networks and using them for classification. As such, neural networks
 have only recently found widespread use [@tag:Schmidhuber2014_dnn_overview].
 
 Many have sought to curb the costs of deep learning, with methods ranging from
-the very applied (e.g., reduced numerical precision [@tag:Gupta2015_prec
+the very applied (e.g. reduced numerical precision [@tag:Gupta2015_prec
 @tag:Bengio2015_prec @tag:Sa2015_buckwild @tag:Hubara2016_qnn]) to the exotic
-and theoretic (e.g., training small networks to mimic large networks and
+and theoretic (e.g. training small networks to mimic large networks and
 ensembles [@tag:Caruana2014_need @tag:Hinton2015_dark_knowledge]). The largest
 gains in efficiency have come from computation with graphics processing units
 (GPUs) [@tag:Raina2009_gpu @tag:Vanhoucke2011_cpu @tag:Seide2014_parallel
@@ -139,7 +139,7 @@ operations so central to deep learning. The massively parallel nature of GPUs
 allows additional optimizations, such as accelerated mini-batch gradient
 descent [@tag:Vanhoucke2011_cpu @tag:Seide2014_parallel @tag:Su2015_gpu
 @tag:Li2014_minibatch]. However, GPUs also have a limited quantity of memory,
-making it difficult to implement networks of significant size and
+making it difficult to implement networks of useful size and
 complexity on a single GPU or machine [@tag:Raina2009_gpu
 @tag:Krizhevsky2013_nips_cnn]. This restriction has sometimes forced
 computational biologists to use workarounds or limit the size of an analysis.
@@ -173,7 +173,7 @@ Distributed computing is a general solution to intense computational
 requirements, and has enabled many large-scale deep learning efforts. Early
 approaches to distributed computation [@tag:Mapreduce @tag:Graphlab] were
 not suitable for deep learning [@tag:Dean2012_nips_downpour],
-but significant progress has been made. There
+but much progress has been made. There
 now exist a number of algorithms [@tag:Dean2012_nips_downpour @tag:Dogwild
 @tag:Sa2015_buckwild], tools [@tag:Moritz2015_sparknet @tag:Meng2016_mllib
 @tag:TensorFlow], and high-level libraries [@tag:Keras @tag:Elephas] for deep
@@ -188,12 +188,12 @@ Cloud computing, which has already seen adoption in genomics
 [@tag:Schatz2010_dna_cloud], could facilitate easier sharing of the large
 datasets common to biology [@tag:Gerstein2016_scaling @tag:Stein2010_cloud],
 and may be key to scaling deep learning. Cloud computing affords researchers
-significant flexibility, and enables the use of specialized hardware (e.g.,
-FPGAs, ASICs, GPUs) without significant investment. With such flexibility, it
+flexibility, and enables the use of specialized hardware (e.g.,
+FPGAs, ASICs, GPUs) without major investment. With such flexibility, it
 could be easier to address the different challenges associated with the
 multitudinous layers and architectures available
 [@tag:Krizhevsky2014_weird_trick]. Though many are reluctant to store sensitive
-data (e.g., patient electronic health records) in the cloud,
+data (e.g. patient electronic health records) in the cloud,
 secure/regulation-compliant cloud services do exist [@tag:RAD2010_view_cc].
 
 ### Data, code, and model sharing
@@ -211,9 +211,9 @@ to recognize those who promote an ecosystem of rigorous sharing and analysis
 
 The sharing of high-quality, labeled datasets will be especially valuable.  In
 addition, researchers who invest time to preprocess datasets to be suitable for
-deep learning can make the preprocessing code (e.g., Basset
+deep learning can make the preprocessing code (e.g. Basset
 [@tag:Kelley2016_basset] and variationanalysis [@tag:Torracinta2016_deep_snp])
-and cleaned data (e.g., MoleculeNet [@tag:Wu2017_molecule_net]) publicly
+and cleaned data (e.g. MoleculeNet [@tag:Wu2017_molecule_net]) publicly
 available to catalyze further research. However, there are complex privacy and
 legal issues involved in sharing patient data that cannot be ignored.
 Furthermore, in some domains, some of the best training data has been generated
@@ -414,7 +414,7 @@ and drug toxicity prediction
 multi-task deep models on a set of industrial ADMET datasets. They confirmed
 that multi-task learning can improve performance over single-task models. They
 further showed that smaller datasets tend to benefit more from multitask
-learning than larger datasets. Results emphasized that multitask effects are
+learning than larger datasets. Results emphasized that multi-task effects are
 highly dataset-dependent, suggesting the use of dataset-specific models to
 maximize overall performance.
 
