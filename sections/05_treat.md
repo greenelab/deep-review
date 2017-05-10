@@ -216,46 +216,43 @@ of the initial high-throughput screens such that sufficient candidate active
 compounds can be identified without exhaustively screening libraries of hundreds
 of thousands or millions of chemicals.  `TODO: is the sufficient number target
 dependent?` This task has been treated variously as a classification,
-regression, or
-ranking problem. In reality, it does not fit neatly into any of those
-categories.  An ideal algorithm will rank a sufficient number of active
+regression, or ranking problem. In reality, it does not fit neatly into any of
+those categories.  An ideal algorithm will rank a sufficient number of active
 compounds before the inactives, but the rankings of actives relative to other
-actives and inactives are less important
-[@tag:Swamidass2009_irv]. `TODO: can improve this first attempt at an intro by
-reviewing more existing literature on the topic` `TODO: check which other
-existing reviews should be referenced`
+actives and inactives are less important [@tag:Swamidass2009_irv]. `TODO: can
+improve this first attempt at an intro by reviewing more existing literature on
+the topic` `TODO: check which other existing reviews should be referenced`
 
 Here we primarily focus on ligand-based approaches that train on chemicals'
-features
-without requiring prior knowledge of the target, as opposed to strategies
-specifically modeling features such as protein structure `TODO: add examples`.
-Chemical features may be represented as a list of molecular descriptors such as
-molecular weight, atom counts, charge representations, summaries of atom-atom
-relationships in the molecular graph, and more sophisticated derived properties
-[@doi:10.1002/9783527628766].   Alternatively, chemicals can be characterized
-with the fingerprint bit vectors, textual strings, or novel learned
-representations described below. Neural networks have a long history in this
-domain [@tag:Baskin2015_drug_disc] `TODO: can add additional references besides
-this review`, and the 2012 Merck Molecular Activity Challenge on Kaggle
-generated substantial excitement about the potential for high-parameter deep
-learning approaches.  The winning submission was an ensemble that included a
-multitask multilayer perceptron network [@tag:Dahl2014_multi_qsar], and the
-Merck sponsors noted drastic improvements over a random forest (RF) baseline,
-remarking "we have seldom seen any method in the past 10 years that could
-consistently outperform RF by such a margin" [@tag:Ma2015_qsar_merck].
-Subsequent work explored the effects of jointly modeling far more targets than
-the Merck challenge [@tag:Unterthiner2014_screening
-@tag:Ramsundar2015_multitask_drug], with [@tag:Ramsundar2015_multitask_drug]
-showing that the benefits of multi-task networks had not yet saturated even with
-259 targets.  Although a deep learning approach, DeepTox
-[@tag:Mayr2016_deep_tox], was also the overall winner of another competition,
-the Toxicology in the 21st Century (Tox21) Data Challenge, it did not dominate
-alternative methods as thoroughly as in other domains.  DeepTox was the top
-performer on 9 of 15 targets and highly competitive with the top performer on
-the others.  However, for many targets there was little separation between the
-top two or three methods.  A reliance on AUC ROC `TODO: define here?` for the
-evaluation (see Discussion) further hinders the ability to declare Tox21 as an
-outright success for deep learning.
+features without requiring prior knowledge of the target, as opposed to
+strategies specifically modeling features such as protein structure `TODO: add
+examples`. Chemical features may be represented as a list of molecular
+descriptors such as molecular weight, atom counts, charge representations,
+summaries of atom-atom relationships in the molecular graph, and more
+sophisticated derived properties [@doi:10.1002/9783527628766].   Alternatively,
+chemicals can be characterized with the fingerprint bit vectors, textual
+strings, or novel learned representations described below. Neural networks have
+a long history in this domain [@tag:Baskin2015_drug_disc] `TODO: can add
+additional references besides this review`, and the 2012 Merck Molecular
+Activity Challenge on Kaggle generated substantial excitement about the
+potential for high-parameter deep learning approaches.  The winning submission
+was an ensemble that included a multitask multilayer perceptron network
+[@tag:Dahl2014_multi_qsar], and the Merck sponsors noted drastic improvements
+over a random forest (RF) baseline, remarking "we have seldom seen any method in
+the past 10 years that could consistently outperform RF by such a margin"
+[@tag:Ma2015_qsar_merck]. Subsequent work explored the effects of jointly
+modeling far more targets than the Merck challenge
+[@tag:Unterthiner2014_screening @tag:Ramsundar2015_multitask_drug], with
+[@tag:Ramsundar2015_multitask_drug] showing that the benefits of multi-task
+networks had not yet saturated even with 259 targets.  Although a deep learning
+approach, DeepTox [@tag:Mayr2016_deep_tox], was also the overall winner of
+another competition, the Toxicology in the 21st Century (Tox21) Data Challenge,
+it did not dominate alternative methods as thoroughly as in other domains.
+DeepTox was the top performer on 9 of 15 targets and highly competitive with the
+top performer on the others.  However, for many targets there was little
+separation between the top two or three methods.  A reliance on AUC ROC `TODO:
+define here?` for the evaluation (see Discussion) further hinders the ability to
+declare Tox21 as an outright success for deep learning.
 
 In retrospect, the nuanced Tox21 performance may be more reflective of the
 practical challenges encountered in ligand-based chemical screening than the
@@ -352,18 +349,17 @@ broad and diverse prediction tasks will be as important as novel neural network
 architectures and expanded public datasets to advance the state of the art and
 convincingly demonstrate superiority over traditional cheminformatics
 techniques. Fortunately, there has recently been much progress in this
-direction. The DeepChem software [@tag:AltaeTran2016_one_shot
-@tag:DeepChem] and MoleculeNet benchmarking suite
-[@tag:Wu2017_molecule_net] built upon it contain chemical bioactivity and
-toxicity prediction datasets, multiple compound featurization approaches
-including graph convolutions, and various machine learning algorithms ranging
-from standard baselines like logistic regression and random forests to recent
-neural network architectures.  Independent research groups have already
-contributed additional datasets and prediction algorithms to DeepChem, and
-adoption of common benchmarking evaluation metrics, datasets, and baseline
-algorithms has the potential to establish the practical utility of deep learning
-in chemical bioactivity prediction and lower the barrier to entry for machine
-learning researchers without biochemistry expertise.
+direction. The DeepChem software [@tag:AltaeTran2016_one_shot @tag:DeepChem] and
+MoleculeNet benchmarking suite [@tag:Wu2017_molecule_net] built upon it contain
+chemical bioactivity and toxicity prediction datasets, multiple compound
+featurization approaches including graph convolutions, and various machine
+learning algorithms ranging from standard baselines like logistic regression and
+random forests to recent neural network architectures.  Independent research
+groups have already contributed additional datasets and prediction algorithms to
+DeepChem, and adoption of common benchmarking evaluation metrics, datasets, and
+baseline algorithms has the potential to establish the practical utility of deep
+learning in chemical bioactivity prediction and lower the barrier to entry for
+machine learning researchers without biochemistry expertise.
 
 One open question in ligand-based screening pertains to the benefits and
 limitations of transfer learning.  Multitask neural networks have shown the
@@ -371,8 +367,8 @@ advantages of jointly modeling many targets [@tag:Unterthiner2014_screening
 @tag:Ramsundar2015_multitask_drug].  Other studies have shown the limitations of
 transfer learning when the prediction tasks are insufficiently related
 [@tag:Kearnes2016_admet @tag:AltaeTran2016_one_shot].  This has important
-implications for representation learning.  The typical approach to improve
-deep learning models by expanding the dataset size may not be applicable if only
+implications for representation learning.  The typical approach to improve deep
+learning models by expanding the dataset size may not be applicable if only
 "related" tasks are beneficial, especially because task-task relatedness is
 ill-defined. The massive chemical state space will also influence the
 development of unsupervised representation learning methods
@@ -414,6 +410,6 @@ the docking based method that uses neighboring atoms), deep learning with
 structure (e.g. [@tag:Wallach2015_atom_net @arxiv:1612.02751
 @arxiv:1703.10603])`
 
-`TODO: link to drug repurposing section above,  DeepDTIs uses ECFPs as
-features for its 1412 compounds and protein sequence composition (PSCs)
-features for its targets (1520).`
+`TODO: link to drug repurposing section above,  DeepDTIs uses ECFPs as features
+for its 1412 compounds and protein sequence composition (PSCs) features for its
+targets (1520).`
