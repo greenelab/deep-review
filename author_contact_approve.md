@@ -13,3 +13,4 @@
 | agapow | Paul-Michael Agapow | 0000-0003-1126-1479 | Data Science Institute, Imperial College London | p.agapow@imperial.ac.uk | Yes | |
 | enricoferrero | Enrico Ferrero | 0000-0002-8362-100X | Computational Biology and Stats, Target Sciences, GSK | enrico.x.ferrero@gsk.com | Yes | |
 | annecarpenter | Anne E. Carpenter | 0000-0003-1555-8261 | Imaging Platform, Broad Institute of Harvard and MIT | anne@broadinstitute.org | Yes | NIH R01GM089652 |
+| evancofer | Evan M. Cofer | 0000-0003-3877-0433 | Department of Computer Science. Trinity University. | ecofer@princeton.edu | Yes | NSF MRI-ACI-1531594 |
