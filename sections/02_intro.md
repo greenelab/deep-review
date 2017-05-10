@@ -53,7 +53,7 @@ large. New neural network approaches are also well suited for addressing
 distinct challenges. For example, neural networks structured as autoencoders or
 as adversarial networks require no labels and are now regularly used for
 unsupervised tasks. In this review, we do not exhaustively discuss the different
-types of deep neural network architectures. A recent book from Goodfellow et al
+types of deep neural network architectures. A recent book from Goodfellow et al.
 [@url:http://www.deeplearningbook.org/] covers these in detail. Finally, the
 larger datasets now available are also well suited to fitting the many
 parameters that exist for deep neural networks. The convergence of these factors
