@@ -80,7 +80,7 @@ large. New neural network approaches are also well suited for addressing
 distinct challenges. For example, neural networks structured as autoencoders or
 as adversarial networks require no labels and are now regularly used for
 unsupervised tasks. In this review, we do not exhaustively discuss the different
-types of deep neural network architectures. A recent book from Goodfellow et al
+types of deep neural network architectures. A recent book from Goodfellow et al.
 [@yg8NW0K7] covers these in detail. Finally, the
 larger datasets now available are also well suited to fitting the many
 parameters that exist for deep neural networks. The convergence of these factors
@@ -373,7 +373,7 @@ classification. The resulting dataset (CXR-XIV
 [@Bi92V99U])
 consists of 108,948 frontal-view chest
 X-ray images (from 32,717 patients) and each image is associated with one or
-more weakly-labeled pathology category (e.g., pneumonia and cardiomegaly) or
+more weakly-labeled pathology category (e.g. pneumonia and cardiomegaly) or
 "normal" otherwise. Further, Wang et al. [@PGi9g7yV] used this dataset
 with a unified weakly-supervised multi-label image classification framework, to
 detect common thoracic diseases. It showed superior performance over a benchmark
@@ -574,7 +574,7 @@ models with many parameters. While unsupervised and semi-supervised approaches
 can help with small sample sizes, the field would benefit greatly from large
 collections of anonymized records in which a substantial number of records have
 undergone expert review. This challenge is not unique to EHR-based studies. Work
-on medical images, -omics data in applications for which detailed metadata are
+on medical images, omics data in applications for which detailed metadata are
 required, and other applications for which labels are costly to obtain will be
 hampered as long as abundant curated data are unavailable.
 
@@ -635,9 +635,9 @@ related to sharing individual health records or deep models built from such
 records. This subsection deals primarily with these challenges.
 
 EHRs are designed chiefly for clinical, administrative and financial purposes,
-such as patient care, insurance and  billing [@FkSZ1qmz]. Research is
-at best a tertiary priority, presenting  significant challenges to EHR-based
-research in general, and particularly to data intensive deep learning research.
+such as patient care, insurance and  billing [@FkSZ1qmz]. Science is
+at best a tertiary priority, presenting challenges to EHR-based
+research in general, and to deep learning research particularly.
 These difficulties can be grouped into three areas: local bias, wider standards
 and legal issues. Note these problems are not restricted to EHR but can also
 apply to any large biomedical dataset, e.g. clinical trial data.
@@ -1233,7 +1233,7 @@ promising and simple method for interpretability (randomly substituting bases in
 a recognized promoter region, then checking for a change in recognition) that
 would be useful to exploit more widely.
 
-Xu et al [@jV2YerUS] applied CNNs to the detection of
+Xu et al. [@jV2YerUS] applied CNNs to the detection of
 enhancers, achieving incremental improvements in specificity and sensitivity
 over previous SVM-based approach, and markedly better performance for
 cell-specific enhancers. A massive improvement in speed was also achieved.
@@ -1330,7 +1330,7 @@ inter-residue contact map, disorder regions and side-chain packing.
 
 Machine learning is extensively applied to predict protein structures and
 some success has been achieved. For example, secondary structure can be
-predicted with about 80% of 3-state (i.e., Q3) accuracy by a neural network
+predicted with about 80% of 3-state (i.e. Q3) accuracy by a neural network
 method PSIPRED [@cRuWK1eG]. Starting from
 2012, deep learning has been gradually introduced to protein structure
 prediction. The adopted deep learning models include deep belief network,
@@ -1350,7 +1350,7 @@ has been significantly improved [@BhfjKSY3; @7atXz0r; @kboAopkh; @10dNuD89l].
 Protein secondary structure can exhibit three different states (alpha helix,
 beta strand and loop regions) or eight finer-grained states. More methods are
 developed to predict 3-state secondary structure than 8-state. A predictor is
-typically evaluated by 3-state (i.e., Q3) and 8-state (i.e., Q8) accuracy, respectively.
+typically evaluated by 3-state (i.e. Q3) and 8-state (i.e. Q8) accuracy, respectively.
 Qi et al. developed a multi-task deep learning method to simultaneously predict several
 local structure properties including secondary structures [@1AlhRKQbe].
 Spencer, Eickholt and Cheng predicted secondary structure using deep belief networks
@@ -1374,7 +1374,7 @@ improving secondary structure prediction from 80% to 84-85% is unlikely to
 result in a similar amount of improvement in tertiary structure prediction since secondary
 structure mainly reflects coarse-grained local conformation of a protein structure.
 
-Protein contact prediction and contact-assisted folding (i.e., folding proteins using
+Protein contact prediction and contact-assisted folding (i.e. folding proteins using
 predicted contacts as restraints) represents a promising new direction for ab initio folding
 of proteins without good templates in PDB.
 Evolutionary coupling analysis (ECA) is an effective contact prediction method for some
@@ -1399,7 +1399,7 @@ using two cascaded neural networks. Very recently, Wang and Xu et al. proposed a
 RaptorX-Contact [@BhfjKSY3] that can significantly improve contact prediction
 over MetaPSICOV especially for proteins without many sequence homologs. RaptorX-Contact employs a network
 architecture formed by one 1D residual neural network and one 2D residual neural network.
-Blindly tested in the latest CASP competition (i.e., CASP12 [@zScWGveU]),
+Blindly tested in the latest CASP competition (i.e. CASP12 [@zScWGveU]),
 RaptorX-Contact is ranked first in terms of the total F1 score (a widely-used performance metric) on
 free-modeling targets as well as the whole set of targets. In the CASP12 test, the group ranked second
 also employed a deep learning method. Even MetaPSICOV, which ranked third in CASP12, employed more
@@ -1647,7 +1647,7 @@ and other genetic diseases will require accurate calling of SNP and indels.
 
 Current methods achieve relatively high (>99%) precision at 90% recall for SNPs
 and indel calls from Illumina short-read data [@FVfZESYP], yet
-this leaves a large number of potentially clinically significant remaining false
+this leaves a large number of potentially clinically important remaining false
 positives and false negatives. These methods have so far relied on experts to
 build probabilistic models that reliably separate signal from noise. However,
 this process is time consuming and, more importantly, fundamentally limited by
@@ -1728,7 +1728,7 @@ networks in medical journals, concluding that neural networks provided an
 increase in benefit to healthcare relative to traditional screening methods in
 21 of 27 studies.
 
-While significant progress has been made in developing deep learning methods
+While much progress has been made in developing deep learning methods
 for diagnosis, it is not clear that these methods have yet transformed
 clinical decision making. The difficulty in applying deep learning to clinical
 decision making represents a challenge common to many deep learning
@@ -1745,10 +1745,10 @@ clinical environment.
 A critical challenge in moving from prediction to treatment recommendations
 is the necessity to establish a causal relationship for a recommendation.
 Causal inference is often framed in terms of counterfactual question
-[@cpNVdlL7]. Johansson et al [@173ftiSzF] use deep neural
+[@cpNVdlL7]. Johansson et al. [@173ftiSzF] use deep neural
 networks to create representation models for covariates that capture nonlinear
 effects and show significant performance improvements over existing models. In
-a less formal approach, Kale et al [@FUIfIdE] first create a deep neural
+a less formal approach, Kale et al. [@FUIfIdE] first create a deep neural
 network to model clinical time series and then analyze the relationship of the
 hidden features to the output using a causal approach.
 
@@ -1760,7 +1760,7 @@ A common application for deep learning techniques in this domain is to
 leverage the temporal structure of healthcare records. As previously
 discussed, many studies [@4zpZxjHR; @O7Vbecm2; @fOaBA9Vc; @glyI7H6F]
 have used deep recurrent networks to categorize patients but most stop short
-of suggesting clinical decisions. Nemati et al [@16OQvsRqJ]
+of suggesting clinical decisions. Nemati et al. [@16OQvsRqJ]
 used deep reinforcement learning to optimize a heparin dosing policy for
 intensive care patients. However, because the ideal dosing policy is unknown,
 the model's predictions must be evaluated on counter-factual data. This
@@ -1850,7 +1850,7 @@ especially when coupling disease or compound omic data  with topological
 information from protein-protein or protein-compound interaction networks
 [@M1EW8Rfl; @16FEYidu2; @18lqFDKRR].
 
-Menden et al [@QcwZC8wG] used a shallow neural network
+Menden et al. [@QcwZC8wG] used a shallow neural network
 to predict sensitivity of cancer cell lines to drug treatment using both cell
 line and drug features, opening the door to precision medicine and drug
 repositioning opportunities in cancer. More recently, Aliper et al
@@ -1865,7 +1865,7 @@ such as otenzepad and pinacidil for neurological disorders.
 Drug repositioning can also be approached by attempting to predict novel
 drug-target interactions and then repurposing the drug for the associated
 indication [@tOpadZQw; @1SIuofeg].
-Wang et al [@TeIxEjqm] devised a pairwise input neural
+Wang et al. [@TeIxEjqm] devised a pairwise input neural
 network with two hidden layers that takes two inputs, a drug and a target
 binding site, and predicts whether they interact. Wang et al
 [@1AU7wzPqa] trained individual RBMs for each target in
@@ -1932,7 +1932,7 @@ remarking "we have seldom seen any method in the past 10 years that could
 consistently outperform RF by such a margin" [@xOaTIeBY].
 Subsequent work explored the effects of jointly modeling far more targets than
 the Merck challenge [@F8fP2vAg; @yAoN5gTU], with [@yAoN5gTU]
-showing that the benefits of multitask networks had not yet saturated even with
+showing that the benefits of multi-task networks had not yet saturated even with
 259 targets.  Although a deep learning approach, DeepTox
 [@Y1D0SZrO], was also the overall winner of another competition,
 the Toxicology in the 21st Century (Tox21) Data Challenge, it did not dominate
@@ -1947,10 +1947,10 @@ In retrospect, the nuanced Tox21 performance may be more reflective of the
 practical challenges encountered in ligand-based chemical screening than the
 extreme enthusiasm generated by the Merck competition.  A study of 22 absorption
 distribution, metabolism, excretion, and toxicity (ADMET) tasks demonstrated
-that there are limitations to multitask transfer learning that are in part a
+that there are limitations to multi-task transfer learning that are in part a
 consequence of the degree to which tasks are related [@uP7SgBVd].
-Some of the ADMET datasets showed far superior performance in multitask models
-of only the 22 ADMET tasks relative to more expansive multitask networks that
+Some of the ADMET datasets showed far superior performance in multi-task models
+of only the 22 ADMET tasks relative to more expansive multi-task networks that
 included over 500 less-similar tasks.  `TODO: also has a good discussion of
 information leakage in cross validation, include that in the Discussion section`
 In addition, training datasets encountered in practical applications may be tiny
@@ -1979,12 +1979,12 @@ fixed-width bit vector fingerprint [@QnZ7V9Rd].  An overly
 simplistic but approximately correct view of these fingerprints is that each bit
 represents the presence of absence of a particular chemical substructure in the
 molecular graph. Modern neural networks can operate directly on the molecular
-graph as input.  Duvenaud et al [@Oe573FaL] generalized
+graph as input.  Duvenaud et al. [@Oe573FaL] generalized
 standard circular fingerprints by substituting discrete operations in the
 fingerprinting algorithm with operations in a neural network, producing a
 real-valued feature vector instead of a bit vector.  Other approaches offer
 trainable networks that can in theory learn chemical feature representations
-that are optimized for a particular prediction task.   Lusci et al adapted
+that are optimized for a particular prediction task.   Lusci et al. adapted
 recursive neural networks for directed acyclic graphs for undirected molecular
 graphs by creating an ensemble of directed graphs in which one atom is selected
 as the root node [@17Wih4Hd5].  A single feature vector is obtained by
@@ -2047,7 +2047,7 @@ representation learning in this domain and propose that rigorous benchmarking on
 broad and diverse prediction tasks will be as important as novel neural network
 architectures and expanded public datasets to advance the state of the art and
 convincingly demonstrate superiority over traditional cheminformatics
-techniques. Fortunately, there has recently been significant progress in this
+techniques. Fortunately, there has recently been much progress in this
 direction. The DeepChem software [@P4ixsM8i; @Ytvk62dX] and MoleculeNet benchmarking suite
 [@16OPHvAij] built upon it contain chemical bioactivity and
 toxicity prediction datasets, multiple compound featurization approaches
@@ -2119,8 +2119,8 @@ human-level performance is irrelevant.*
 ### Interpretation
 
 As the challenge of interpretability is common across many domains, there is
-significant interest in developing generic procedures for knowledge extraction
-from deep models. Ribeiro et al [@QwXSJhr0] focus on interpreting
+much interest in developing generic procedures for knowledge extraction
+from deep models. Ribeiro et al. [@QwXSJhr0] focus on interpreting
 individual predictions rather than interpreting the model. By fitting simple
 linear models to mimic the predictions of the deep learning model in a small
 neighborhood of a data sample, they generated an interpretable model for each
@@ -2146,7 +2146,7 @@ primarily focused on integrating attention mechanisms with the neural networks.
 Attention mechanisms dynamically weight the importance the neural network gives
 to each feature. By inspecting the attention weights for a particular sample, a
 practitioner can identify the important features for a particular prediction.
-Choi et al [@UcRbawKo] inverted the typical architecture of recurrent
+Choi et al. [@UcRbawKo] inverted the typical architecture of recurrent
 neural networks to improve interpretability. In particular, they only used
 recurrent connections in the attention generating procedure, leaving the hidden
 state directly connected to the input variables. In the clinical domain, this
@@ -2154,7 +2154,7 @@ model was able to produce accurate diagnoses in which the contribution of
 previous hospital visits could be directly interpreted. Choi et al
 [@10nDTiETi] later extended this work to take into account the structure
 of disease ontologies and found that the concepts represented by the model were
-aligned with medical knowledge. Che et al [@14DAmZTDg] introduced a
+aligned with medical knowledge. Che et al. [@14DAmZTDg] introduced a
 knowledge-distillation approach which used gradient boosted trees to learn
 interpretable healthcare features from trained deep models.
 
@@ -2210,20 +2210,20 @@ parameters from 30 million to 50 thousand, a factor of 600.
 ### Hardware limitations and scaling
 
 Efficiently scaling deep learning is challenging, and there is a high
-computational cost (e.g., time, memory, energy) associated with training neural
+computational cost (e.g. time, memory, energy) associated with training neural
 networks and using them for classification. As such, neural networks
 have only recently found widespread use [@BQS8ClV0].
 
 Many have sought to curb the costs of deep learning, with methods ranging from
-the very applied (e.g., reduced numerical precision [@CKcJuj03; @1G3owNNps; @w6CoVmFK; @1GUizyE8e]) to the exotic
-and theoretic (e.g., training small networks to mimic large networks and
+the very applied (e.g. reduced numerical precision [@CKcJuj03; @1G3owNNps; @w6CoVmFK; @1GUizyE8e]) to the exotic
+and theoretic (e.g. training small networks to mimic large networks and
 ensembles [@1AhGoHZP9; @1CRF3gAV]). The largest
 gains in efficiency have come from computation with graphics processing units
 (GPUs) [@F3e4wfzQ; @NSgduYNT; @IULiPa6L; @13KjSCKB2; @1FocAi7N0; @BQS8ClV0], which excel at the matrix and vector
 operations so central to deep learning. The massively parallel nature of GPUs
 allows additional optimizations, such as accelerated mini-batch gradient
 descent [@NSgduYNT; @IULiPa6L; @aClNvbyM; @fNkl8HFz]. However, GPUs also have a limited quantity of memory,
-making it difficult to implement networks of significant size and
+making it difficult to implement networks of useful size and
 complexity on a single GPU or machine [@F3e4wfzQ; @CCS5KSIM]. This restriction has sometimes forced
 computational biologists to use workarounds or limit the size of an analysis.
 For example, Chen et al. [@12QQw9p7v] aimed to infer the
@@ -2253,7 +2253,7 @@ Distributed computing is a general solution to intense computational
 requirements, and has enabled many large-scale deep learning efforts. Early
 approaches to distributed computation [@xE3EYmck; @1XcexUAV] were
 not suitable for deep learning [@17cBimWgp],
-but significant progress has been made. There
+but much progress has been made. There
 now exist a number of algorithms [@17cBimWgp; @HIiQN4bd; @w6CoVmFK], tools [@rmJZ2Aui; @rZnxDitd; @Gp4OR9Lf], and high-level libraries [@FwEK0msb; @y9IoEy4r] for deep
 learning in a distributed environment, and it is possible to train very complex
 networks with limited infrastructure [@4MZ2tmZ8]. Besides
@@ -2265,12 +2265,12 @@ Cloud computing, which has already seen adoption in genomics
 [@B6g0qKf4], could facilitate easier sharing of the large
 datasets common to biology [@1E7bFCRV4; @q0SsFrZd],
 and may be key to scaling deep learning. Cloud computing affords researchers
-significant flexibility, and enables the use of specialized hardware (e.g.,
-FPGAs, ASICs, GPUs) without significant investment. With such flexibility, it
+flexibility, and enables the use of specialized hardware (e.g.,
+FPGAs, ASICs, GPUs) without major investment. With such flexibility, it
 could be easier to address the different challenges associated with the
 multitudinous layers and architectures available
 [@ZSVsnPVO]. Though many are reluctant to store sensitive
-data (e.g., patient electronic health records) in the cloud,
+data (e.g. patient electronic health records) in the cloud,
 secure/regulation-compliant cloud services do exist [@ObFN78yp].
 
 ### Data, code, and model sharing
@@ -2288,9 +2288,9 @@ to recognize those who promote an ecosystem of rigorous sharing and analysis
 
 The sharing of high-quality, labeled datasets will be especially valuable.  In
 addition, researchers who invest time to preprocess datasets to be suitable for
-deep learning can make the preprocessing code (e.g., Basset
+deep learning can make the preprocessing code (e.g. Basset
 [@2CbHXoFn] and variationanalysis [@GSLRw2L5])
-and cleaned data (e.g., MoleculeNet [@16OPHvAij]) publicly
+and cleaned data (e.g. MoleculeNet [@16OPHvAij]) publicly
 available to catalyze further research. However, there are complex privacy and
 legal issues involved in sharing patient data that cannot be ignored.
 Furthermore, in some domains, some of the best training data has been generated
@@ -2486,7 +2486,7 @@ and drug toxicity prediction
 multi-task deep models on a set of industrial ADMET datasets. They confirmed
 that multi-task learning can improve performance over single-task models. They
 further showed that smaller datasets tend to benefit more from multitask
-learning than larger datasets. Results emphasized that multitask effects are
+learning than larger datasets. Results emphasized that multi-task effects are
 highly dataset-dependent, suggesting the use of dataset-specific models to
 maximize overall performance.
 
