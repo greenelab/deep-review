@@ -222,7 +222,7 @@ of these challenges and the possibility in this domain of constructing highly
 predictive classifiers of questionable actual utility.
 
 Our goal in this section is to assess the extent to which deep learning is
-already contributing to the discovery of novel categories. Where it isn't, we
+already contributing to the discovery of novel categories. Where it is not, we
 focus on barriers to achieving these goals. We also highlight approaches that
 researchers are taking to address challenges within the field, particularly with
 regards to data availability and labeling.
@@ -272,8 +272,8 @@ set is limited [@iBPOt78R] as well as the efficient use of a deep
 16-layer architecture combined with EMR data for training set enrichment.
 
 Mammography has been one area with numerous contributions
-[@VFw1VXDP; @JK8NuXy3; @9G9Hv1Pp; @Xxb4t3zO; @5kfDbGhA]. In the most of this work, the researchers
-must work around a typical for the domain challenge - the limited number of
+[@VFw1VXDP; @JK8NuXy3; @9G9Hv1Pp; @Xxb4t3zO; @5kfDbGhA]. In most of this work, researchers
+must work around a challenge typical for the domain - the limited number of
 well annotated training images. To expand the number and diversity of images,
 the researchers have employed approaches where they use adversarial examples
 [@Xxb4t3zO] or first train towards human-created features before
@@ -425,7 +425,7 @@ in this case often can translate directly into a clinical value. Thus,
 results evaluation, uncertainty estimation, and model interpretation methods are
 also of great importance in this domain (see Discussion). Finally, there is
 a need for better pathologist-computer interaction techniques that will allow
-to combine the power of deep learning methods with human expertise and
+combining the power of deep learning methods with human expertise and
 lead to better-informed decisions for patient treatment and care.
 
 #### Electronic health records
@@ -581,14 +581,14 @@ Successful approaches to date in this domain have sidestepped this challenge by
 making methodological choices that either reduce the need for labeled examples
 or that use transformations to training data to increase the number of times it
 can be used before overfitting occurs. For example, the unsupervised and
-semi-supervised methods that we've discussed reduce the need for labeled
+semi-supervised methods that we have discussed reduce the need for labeled
 examples [@5x3uMSKi]. The anchor and learn framework
 [@A9JeoGV8] uses expert knowledge to identify high confidence
 observations from which labels can be inferred. The adversarial training example
-strategies that we've mentioned can reduce overfitting, if transformations are
+strategies that we have mentioned can reduce overfitting, if transformations are
 available that preserve the meaningful content of the data while transforming
 irrelevant features [@Xxb4t3zO]. While adversarial training examples
-can be easily imagined for certain methods that operate on images, it's more
+can be easily imagined for certain methods that operate on images, it is more
 challenging to figure out what an equivalent transformation would be for a
 patient's clinical test results. Consequently, it may be hard to employ
 adversarial training examples, not to be confused with generative adversarial
@@ -598,7 +598,7 @@ al. trained a deep neural network using generic images before tuning using only
 radiology images [@x6HXFAS4]. Datasets that require many of
 the same types of features might be used for initial training, before fine
 tuning takes place with the more sparse biomedical examples. Though the analysis
-hasn't yet been attempted, it's possible that analogous strategies may be
+has not yet been attempted, it is possible that analogous strategies may be
 possible with electronic health records. For example, features learned from the
 electronic health record for one type of clinical test (e.g. a decrease over
 time in a lab value) may transfer across phenotypes.
@@ -713,7 +713,7 @@ original training set for the machine learning model [@1HbRTExaU] - in
 this case, whether a person's record was present. This presents a potential
 hazard for approaches that aim to generate data. Choi et al. propose generative
 adversarial neural networks as a tool to make sharable EHR data
-[@xl1ijigK]; however, the authors didn't take steps to protect the
+[@xl1ijigK]; however, the authors did not take steps to protect the
 model from such attacks.
 
 There are approaches to protect models, but they pose their own challenges.
@@ -815,7 +815,7 @@ completely in the discussion section.
 
 Traditionally, physician training programs justified long training hours by
 citing increased continuity of care and learning by following the progression of
-a disease over time, despite the known consequences of decreased mental and
+a disease over time, despite the known consequences of decreased mental acuity and
 quality of life [@XJw23xy0; @wzfGJdXI; @nPRpl05n; @17hjNSIIc]. Yet, a common practice in EHR-based
 research is to take a point in time snapshot and convert patient data to a
 traditional vector for machine learning and statistical analysis. This results
