@@ -2105,11 +2105,11 @@ features for its targets (1520).`
 
 ## Discussion
 
-Despite the disparate data types and scientific goals in the learning tasks
-covered above, several challenges are broadly important for deep learning in the
-biomedical domain.  We present factors that may impede further progress,
-initial steps that have been taken to address them, and suggested research
-practices to overcome these obstacles.
+Despite the disparate types of data and scientific goals in the learning tasks
+covered above, several challenges can be seen to be broadly important for deep
+learning in the biomedical domain.  Here we examine these factors that may
+impede further progress, ask what steps have already been taken to overcome
+them, and suggest future research directions.
 
 ### Evaluation
 
@@ -2140,11 +2140,10 @@ from deep models. Ribeiro et al. [@QwXSJhr0] focus on interpreting
 individual predictions rather than interpreting the model. By fitting simple
 linear models to mimic the predictions of the deep learning model in a small
 neighborhood of a data sample, they generated an interpretable model for each
-prediction. While this procedure can provide interpretable models for each
-sample, it is unclear whether these interpretable models are reliable.
+prediction. However, the reliability of these models is unclear.
 Theoretical guarantees on the curvature of the predictions of deep learning
-models are not known, and it is unclear whether predictions from deep learning
-models are robust to sample noise. Toward quantifying the uncertainty of
+models are not known, nor it is unclear whether these predictions
+are robust to sample noise. Toward quantifying the uncertainty of
 predictions, there has been a renewed interest in confidence intervals for
 deep neural networks. Early work from Chryssolouris et al
 [@9SnNyc8Y] provided confidence intervals under the
@@ -2158,46 +2157,51 @@ deep neural networks. Early work from Chryssolouris et al
 For domain-specific models, we previously described approaches for the
 interpretation and visualization of neural networks that prediction
 transcription factor binding [@2UI1BZuD; @Dwi2eAvT; @xAbGxia4]. Other studies have
-primarily focused on integrating attention mechanisms with the neural networks.
+focused on integrating attention mechanisms with neural networks.
 Attention mechanisms dynamically weight the importance the neural network gives
 to each feature. By inspecting the attention weights for a particular sample, a
-practitioner can identify the important features for a particular prediction.
-Choi et al. [@UcRbawKo] inverted the typical architecture of recurrent
-neural networks to improve interpretability. In particular, they only used
+practitioner can identify the important features behind a given prediction.
+Elsewhere, to improve interpretability Choi et al. [@UcRbawKo]
+inverted the typical architecture of recurrent neural networks .
+In particular, they only used
 recurrent connections in the attention generating procedure, leaving the hidden
 state directly connected to the input variables. In the clinical domain, this
 model was able to produce accurate diagnoses in which the contribution of
 previous hospital visits could be directly interpreted. Choi et al
-[@10nDTiETi] later extended this work to take into account the structure
-of disease ontologies and found that the concepts represented by the model were
-aligned with medical knowledge. Che et al. [@14DAmZTDg] introduced a
+later extended this work [@10nDTiETi]  to take into account the
+structure
+of disease ontologies, finding that the concepts represented by the model were
+aligned with medical knowledge. Finally, Che et al. [@14DAmZTDg]
+introduced a
 knowledge-distillation approach which used gradient boosted trees to learn
 interpretable healthcare features from trained deep models.
 
 ### Data limitations
 
-A lack of large-scale, high-quality, labeled training data has impacted deep
+A lack of large-scale, high-quality, correctly labeled training data has
+impacted deep
 learning in nearly all applications we have discussed, from healthcare to
 genomics to drug discovery.  The challenges of training complex, high-parameter
 neural networks from few examples are obvious, but uncertainty in the labels of
-training instances can be just as problematic.  In genomics, for example,
-labeled data may be derived from an experimental assay that has known and
+those examples can be just as problematic.  For example, in genomics
+labeled data may be derived from an experimental assay with known and
 unknown technical artifacts, biases, and error profiles.  It is possible to
 weight training examples or construct Bayesian models to account for uncertainty
-or non-independence in the data. For example, Park et al.
+or non-independence in the data. To this end, Park et al.
 [@5tvnB4uW] estimated shared non-biological signal
 between datasets to correct for non-independence related to assay platform or
 other factors in a Bayesian integration of many datasets. However, such
-techniques are rarely placed front and center in the description of methods, so
-these steps may be overlooked.
+techniques are rarely placed front and center in any description of methods,
+and so may be easily overlooked.
 
 For some types of data, especially images, it is straightforward to augment
-training datasets by splitting one labeled example into multiple examples. An
+training datasets by splitting a single labeled example into multiple examples.
+For example, an
 image can easily be rotated, flipped, or translated and retain its label
 [@9G9Hv1Pp].  3D MRI and 4D fMRI (with time as a dimension) data can
-be decomposed into sets of 2D images [@11NHbWB1V]. This greatly expands
-the number of training examples in domains where only hundreds of subjects are
-available but artificially treats images from the same volume as independent
+be decomposed into sets of 2D images [@11NHbWB1V]. This can greatly
+expand the number of training examples
+but artificially treats such derived images as independent
 instances and sacrifices the structure inherent in the data.  CellCnn trains a
 model to recognize rare cell populations in single-cell data by creating
 training instances that consist of random subsets of cells that are randomly
@@ -2211,26 +2215,28 @@ that is related to #55`
 Multimodal, multi-task, and transfer learning, discussed in detail below, can
 also combat data limitations to some degree. There are also emerging network
 architectures, such as Diet Networks for high-dimensional SNP data
-[@15JUKBg9y]. Diet Networks use multiple networks to drastically
+[@15JUKBg9y]. These use multiple networks to drastically
 reduce the number of free parameters by first flipping the problem and training
 a network to predict parameters (weights) for each input (SNP) to learn a
 feature embedding. This embedding (i.e. PCA, per class histograms, or a Word2vec
-[@1GhHIDxuW] generalization) can be learned directly from the input data or
-can take advantage of other datasets or domain knowledge. Additionally, in this
-task, the features are the examples, an important fact when it is typical to
-have 500k+ SNPs and only a few thousand patients. Finally, this embedding is of
+[@1GhHIDxuW] generalization) can be learned directly from input data or
+take advantage of other datasets or domain knowledge. Additionally, in this
+task the features are the examples, an important advantage when it is typical to
+have 500 thousand or more SNPs and only a few thousand patients. Finally, this
+embedding is of
 a much lower dimension, allowing for a large reduction in the number of free
-parameters. In the example given, the authors reduced the number of free
-parameters from 30 million to 50 thousand, a factor of 600.
+parameters. In the example given, the number of free
+parameters from was reduced from 30 million to 50 thousand, a factor of 600.
 
 ### Hardware limitations and scaling
 
 Efficiently scaling deep learning is challenging, and there is a high
 computational cost (e.g. time, memory, energy) associated with training neural
-networks and using them for classification. As such, neural networks
-have only recently found widespread use [@BQS8ClV0].
+networks and using them for classification. This is one of the reasons
+why neural networks have
+only recently found widespread use [@BQS8ClV0].
 
-Many have sought to curb the costs of deep learning, with methods ranging from
+Many have sought to curb these costs, with methods ranging from
 the very applied (e.g. reduced numerical precision [@CKcJuj03; @1G3owNNps; @w6CoVmFK; @1GUizyE8e]) to the exotic
 and theoretic (e.g. training small networks to mimic large networks and
 ensembles [@1AhGoHZP9; @1CRF3gAV]). The largest
@@ -2250,8 +2256,8 @@ of their neural network [@W3grN7jy; @2dU8f4XJ]. Some have also chosen to use slo
 CPU implementations rather than sacrifice network size or performance
 [@x0M6vals].
 
-Steady improvements in GPU hardware may alleviate this issue somewhat, but it
-is not clear whether they can occur quickly enough to keep up with the growing
+While steady improvements in GPU hardware may alleviate this issue, it
+is unclear whether advances can occur quickly enough to keep up with the growing
 amount of available biological data or increasing network sizes. Much has
 been done to minimize the memory
 requirements of neural networks [@YwdqeYZi; @1AhGoHZP9; @CKcJuj03; @1G3owNNps; @w6CoVmFK; @15lYGmZpY; @1GUizyE8e], but there is also growing
@@ -2259,7 +2265,8 @@ interest in specialized hardware, such as field-programmable gate arrays
 (FPGAs) [@1FocAi7N0; @9NKsJjSw] and
 application-specific integrated circuits (ASICs). Specialized hardware promises
 improvements in deep learning at reduced time, energy, and memory
-[@1FocAi7N0]. Logically, there is less software for highly
+[@1FocAi7N0]. Obviously, there is as yet less software
+available for such highly
 specialized hardware [@9NKsJjSw], and it could be a difficult
 investment for those not solely interested in deep learning. However, it is
 likely that such options will find increased support as they become a more
@@ -2277,12 +2284,12 @@ handling very large networks, distributed or parallelized approaches offer
 other advantages, such as improved ensembling [@JUF9VoRD] or
 accelerated hyperparameter optimization [@wz83yfHF; @Wsa952Ax].
 
-Cloud computing, which has already seen adoption in genomics
+Cloud computing, which has already seen wide adoption in genomics
 [@B6g0qKf4], could facilitate easier sharing of the large
 datasets common to biology [@1E7bFCRV4; @q0SsFrZd],
 and may be key to scaling deep learning. Cloud computing affords researchers
 flexibility, and enables the use of specialized hardware (e.g.,
-FPGAs, ASICs, GPUs) without major investment. With such flexibility, it
+FPGAs, ASICs, GPUs) without major investment. As such, it
 could be easier to address the different challenges associated with the
 multitudinous layers and architectures available
 [@ZSVsnPVO]. Though many are reluctant to store sensitive
@@ -2329,34 +2336,36 @@ as documentation of the detailed decisions that impact model performance but may
 not be exhaustively captured in a manuscript's methods text.
 
 Because many deep learning models are often built using one of several popular
-deep learning frameworks, it is also possible to directly share trained
+software frameworks, it is also possible to directly share trained
 predictive models.  The availability of pre-trained models can accelerate
 research, with image classifiers as an apt example.  A pre-trained neural
 network can be quickly fine-tuned on new data and used in transfer learning,
-both discussed below.  Taking this idea to the extreme, genomic data has been
+as discussed below.  Taking this idea to the extreme, genomic data has been
 artificially encoded as images in order to benefit from pre-trained image
-classifiers [@FVfZESYP]. "Model zoos", collections of
-pre-trained models, are not yet common in biomedical domains but have started to
+classifiers [@FVfZESYP]. "Model zoos" -- collections of
+pre-trained models -- are not yet common in biomedical domains but have
+started to
 appear in genomics applications [@19EJTHByG; @117PEpTMe].  Sharing models for patient data requires great care because deep
 learning models can be attacked to identify examples used in training.  We
 discuss this issue as well as recent techniques to mitigate these concerns in
 the patient categorization section.
 
 DeepChem [@P4ixsM8i; @Ytvk62dX; @16OPHvAij]
-and DragoNN [@117PEpTMe] exemplify the benefits of sharing code under an open
-source license and pre-trained models. DeepChem, which targets drug discovery
+and DragoNN [@117PEpTMe] exemplify the benefits of sharing pre-trained models
+and code under an open source license. DeepChem, which targets drug discovery
 and quantum chemistry, has actively encouraged and received community
 contributions of learning algorithms and benchmarking datasets.  As a
 consequence, it now supports of a large suite of machine learning approaches,
-both deep learning and competing strategies, that can be run on diverse test
+both deep learning and competing strategies that can be run on diverse test
 cases.  This realistic, continual evaluation will play a critical role in
 assessing which techniques are most promising for chemical screening and drug
 discovery.  Like formal, organized challenges such as the ENCODE-DREAM *in vivo*
 Transcription Factor Binding Site Prediction Challenge [@wW6QbBXz],
-`TODO: placeholder URL until the pre-print is available` DeepChem provides a
+`TODO: placeholder URL until the preprint is available` DeepChem provides a
 forum for the fair, critical evaluations that are not always conducted in
 individual methodological papers, which can be biased toward favoring a new
-proposed algorithm.  DragoNN, Deep RegulAtory GenOmic Neural Networks, offers
+proposed algorithm.  Likewise DragoNN (Deep RegulAtory GenOmic Neural
+Networks), offers
 not only code and a model zoo but also a detailed tutorial and partner package
 for simulating training data.  These resources, especially the ability to
 simulate datasets that are sufficiently complex to demonstrate the challenges of
@@ -2373,10 +2382,10 @@ machine learning algorithms. When trained on such datasets, deep learning
 models are particularly prone to overfitting due to their high representational
 power. However, transfer learning techniques also known as domain adaptation
 enable transfer of extracted patterns between different datasets and even
-domains. This approach can be described in a 2-step process:
-(1) training a model for the base task, and (2) reusing the trained model
+domains. This approach consists of training a model for the base task, and
+subsequently reusing the trained model
 for the target problem in hand. The first step allows a model to take advantage
-of larger amount of data, labels, or both, to extract better feature
+of a larger amount of data and/or labels to extract better feature
 representations. Transferring learnt features in deep neural networks
 improves performance compared to randomly initialized features even
 when pre-training and target sets are dissimilar. However,
@@ -2398,10 +2407,10 @@ distant domains such as natural images and various modalities of biological
 imaging. Because learnt patterns are represented in deep neural networks in a
 layer-wise hierarchical fashion, this issue is usually addressed by fixing an
 empirically chosen number of layers that preserve generic characteristics
-of both training and target datasets. Then, the model is fine-tuned by
+of both training and target datasets. The model is then fine-tuned by
 re-training multiple networks' top layers on the specific dataset in order to
-re-learn domain-specific high level concepts. For example, see fine-tuning for
-radiology image classification [@x6HXFAS4].
+re-learn domain-specific high level concepts (e.g. fine-tuning for
+radiology image classification [@x6HXFAS4]).
 Fine-tuning on specific biological datasets enables more focused predictions.
 The Basset package [@2CbHXoFn] for prediction of functional
 activities from DNA sequences was shown to rapidly learn and accurately predict
@@ -2416,7 +2425,7 @@ validated FANTOM5 permissive enhancer dataset followed by fine-tuning on ENCODE
 enhancer datasets improved cell type-specific predictions, outperforming
 state-of-the-art results.
 
-Multimodal learning is related to transfer learning. It assumes
+Related to transfer learning, multimodal learning assumes
 simultaneous learning from various types of inputs, such as images and text.
 It allows capture of features that describe common concepts across input
 modalities. Generative graphical models like restricted Boltzmann
@@ -2433,6 +2442,7 @@ examples. When labels are available, convolutional neural networks (CNN) are
 ubiquitously used since they can be trained end-to-end with backpropagation
 and demonstrate state-of-the-art performance in many discriminative tasks
 [@irSe12Sm].
+
 Jha et al. [@N0HBi8MH] showed that an integrated training
 approach delivers better performance compared to individual networks. They
 compared a number of feed-forward architectures trained on RNA-seq data
@@ -2461,6 +2471,7 @@ DNA methylation, and miRNA expression data [@1EtavGKI4].
 This approach allowed for the capture of intrinsic relationships in
 different modalities and for better clustering performance over conventional
 k-means based methods.
+
 Multimodal learning with CNNs is usually implemented as a collection of
 individual networks in which each learns representations from single data type.
 These individual representations are further concatenated before or within
