@@ -29,7 +29,8 @@ human-level performance is irrelevant.*
 
 ### Interpretation
 
-As detailed above, interpretability is a common issue across many domains. Thus,  there is
+As detailed above, interpretability is a common issue across many domains.
+Thus,  there is
 much interest in developing generic procedures for knowledge extraction
 from deep models. Ribeiro et al. [@tag:Ribeiro2016_lime] focus on interpreting
 individual predictions rather than interpreting the model. By fitting simple
@@ -37,7 +38,7 @@ linear models to mimic the predictions of the deep learning model in a small
 neighborhood of a data sample, they generated an interpretable model for each
 prediction. However, the reliability of these models is unclear.
 Theoretical guarantees on the curvature of the predictions of deep learning
-models are not known, nore it is unclear whether these predictions
+models are not known, nor it is unclear whether these predictions
 are robust to sample noise. Toward quantifying the uncertainty of
 predictions, there has been a renewed interest in confidence intervals for
 deep neural networks. Early work from Chryssolouris et al
@@ -220,7 +221,7 @@ to recognize those who promote an ecosystem of rigorous sharing and analysis
 The sharing of high-quality, labeled datasets will be especially valuable.  In
 addition, researchers who invest time to preprocess datasets to be suitable for
 deep learning can make the preprocessing code (e.g. Basset
-[@tag:Kelley2016_basset] and variationanalysis [@tag:Torracinta2016_deep_snp])
+[@tag:Kelley2016_basset] and variation analysis [@tag:Torracinta2016_deep_snp])
 and cleaned data (e.g. MoleculeNet [@tag:Wu2017_molecule_net]) publicly
 available to catalyze further research. However, there are complex privacy and
 legal issues involved in sharing patient data that cannot be ignored.
@@ -244,11 +245,11 @@ as documentation of the detailed decisions that impact model performance but may
 not be exhaustively captured in a manuscript's methods text.
 
 Because many deep learning models are often built using one of several popular
-deep learning frameworks, it is also possible to directly share trained
+software frameworks, it is also possible to directly share trained
 predictive models.  The availability of pre-trained models can accelerate
 research, with image classifiers as an apt example.  A pre-trained neural
 network can be quickly fine-tuned on new data and used in transfer learning,
-both discussed below.  Taking this idea to the extreme, genomic data has been
+as discussed below.  Taking this idea to the extreme, genomic data has been
 artificially encoded as images in order to benefit from pre-trained image
 classifiers [@tag:Poplin2016_deepvariant]. "Model zoos" -- collections of
 pre-trained models -- are not yet common in biomedical domains but have
@@ -260,20 +261,21 @@ discuss this issue as well as recent techniques to mitigate these concerns in
 the patient categorization section.
 
 DeepChem [@tag:AltaeTran2016_one_shot @tag:DeepChem @tag:Wu2017_molecule_net]
-and DragoNN [@tag:Dragonn] exemplify the benefits of sharing code under an open
-source license and pre-trained models. DeepChem, which targets drug discovery
+and DragoNN [@tag:Dragonn] exemplify the benefits of sharing pre-trained models
+and code under an open source license. DeepChem, which targets drug discovery
 and quantum chemistry, has actively encouraged and received community
 contributions of learning algorithms and benchmarking datasets.  As a
 consequence, it now supports of a large suite of machine learning approaches,
-both deep learning and competing strategies, that can be run on diverse test
+both deep learning and competing strategies that can be run on diverse test
 cases.  This realistic, continual evaluation will play a critical role in
 assessing which techniques are most promising for chemical screening and drug
 discovery.  Like formal, organized challenges such as the ENCODE-DREAM *in vivo*
 Transcription Factor Binding Site Prediction Challenge [@tag:Dream_tf_binding],
-`TODO: placeholder URL until the pre-print is available` DeepChem provides a
+`TODO: placeholder URL until the preprint is available` DeepChem provides a
 forum for the fair, critical evaluations that are not always conducted in
 individual methodological papers, which can be biased toward favoring a new
-proposed algorithm.  DragoNN, Deep RegulAtory GenOmic Neural Networks, offers
+proposed algorithm.  Likewise DragoNN (Deep RegulAtory GenOmic Neural
+Networks), offers
 not only code and a model zoo but also a detailed tutorial and partner package
 for simulating training data.  These resources, especially the ability to
 simulate datasets that are sufficiently complex to demonstrate the challenges of
@@ -290,10 +292,10 @@ machine learning algorithms. When trained on such datasets, deep learning
 models are particularly prone to overfitting due to their high representational
 power. However, transfer learning techniques also known as domain adaptation
 enable transfer of extracted patterns between different datasets and even
-domains. This approach can be described in a 2-step process:
-(1) training a model for the base task, and (2) reusing the trained model
+domains. This approach consists of training a model for the base task, and
+subsequently reusing the trained model
 for the target problem in hand. The first step allows a model to take advantage
-of larger amount of data, labels, or both, to extract better feature
+of larger amount of data and/or labels to extract better feature
 representations. Transferring learnt features in deep neural networks
 improves performance compared to randomly initialized features even
 when pre-training and target sets are dissimilar. However,
@@ -316,10 +318,10 @@ distant domains such as natural images and various modalities of biological
 imaging. Because learnt patterns are represented in deep neural networks in a
 layer-wise hierarchical fashion, this issue is usually addressed by fixing an
 empirically chosen number of layers that preserve generic characteristics
-of both training and target datasets. Then, the model is fine-tuned by
+of both training and target datasets. The model is then fine-tuned by
 re-training multiple networks' top layers on the specific dataset in order to
-re-learn domain-specific high level concepts. For example, see fine-tuning for
-radiology image classification [@tag:Rajkomar2017_radiographs].
+re-learn domain-specific high level concepts (e.g.fine-tuning for
+radiology image classification [@tag:Rajkomar2017_radiographs]).
 Fine-tuning on specific biological datasets enables more focused predictions.
 The Basset package [@tag:Kelley2016_basset] for prediction of functional
 activities from DNA sequences was shown to rapidly learn and accurately predict
@@ -334,7 +336,7 @@ validated FANTOM5 permissive enhancer dataset followed by fine-tuning on ENCODE
 enhancer datasets improved cell type-specific predictions, outperforming
 state-of-the-art results.
 
-Multimodal learning is related to transfer learning. It assumes
+Related to transfer learning, multimodal learning assumes
 simultaneous learning from various types of inputs, such as images and text.
 It allows capture of features that describe common concepts across input
 modalities. Generative graphical models like restricted Boltzmann
