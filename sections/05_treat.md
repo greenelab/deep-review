@@ -208,20 +208,21 @@ which small molecules (also referred to as chemical compounds or ligands)
 effectively and specifically affect the activity of a target, such as a kinase,
 protein-protein interaction, or broader cellular phenotype.  `TODO: clarify
 desired outputs, what will be done with the top-ranked hits, one vs multiple
-hits, abandoning lead compounds` This screening process can serve as the first
-step in the long drug discovery pipeline, where novel chemicals are pursued for
-their ability to inhibit or enhance disease-relevant biological mechanisms.  The
-appeal of machine learning in this domain is the need to improve the efficiency
-of the initial high-throughput screens such that sufficient candidate active
-compounds can be identified without exhaustively screening libraries of hundreds
-of thousands or millions of chemicals.  `TODO: is the sufficient number target
-dependent?` This task has been treated variously as a classification,
-regression, or ranking problem. In reality, it does not fit neatly into any of
-those categories.  An ideal algorithm will rank a sufficient number of active
-compounds before the inactives, but the rankings of actives relative to other
-actives and inactives are less important [@tag:Swamidass2009_irv]. `TODO: can
-improve this first attempt at an intro by reviewing more existing literature on
-the topic` `TODO: check which other existing reviews should be referenced`
+hits, abandoning lead compounds` This screening process can serve as one of the
+first step in the long drug discovery pipeline, where novel chemicals are
+pursued for their ability to inhibit or enhance disease-relevant biological
+mechanisms.  The appeal of machine learning in this domain is the need to
+improve the efficiency of the initial high-throughput screens such that
+sufficient candidate active compounds can be identified without exhaustively
+screening libraries of hundreds of thousands or millions of chemicals.  `TODO:
+is the sufficient number target dependent?` This task has been treated variously
+as a classification, regression, or ranking problem. In reality, it does not fit
+neatly into any of those categories.  An ideal algorithm will rank a sufficient
+number of active compounds before the inactives, but the rankings of actives
+relative to other actives and inactives are less important
+[@tag:Swamidass2009_irv]. `TODO: can improve this first attempt at an intro by
+reviewing more existing literature on the topic` `TODO: check which other
+existing reviews should be referenced`
 
 Here we primarily focus on ligand-based approaches that train on chemicals'
 features without requiring prior knowledge of the target, as opposed to
@@ -270,10 +271,10 @@ study of BACE-1 inhibitors included only 1547 compounds
 [@tag:Subramanian2016_bace1].  Machine learning models were able to train on
 this limited dataset, but overfitting was a challenge and the differences
 between random forests and a deep neural were negligible, especially in the
-classification setting.  Overfitting is still a problem in larger chemical
-screening datasets with tens or hundreds of thousands of compounds.  For a
-typical target, the number of active compounds in a screened library is very
-small, on the order of 0.1%  [@doi:10.1002/wcms.1104]. This is consistent with
+classification setting.   Overfitting is still a problem in larger chemical
+screening datasets with tens or hundreds of thousands of compounds because the
+number of active compounds can be very small, on the order of 0.1% of all tested
+chemicals for a typical target [@doi:10.1002/wcms.1104]. This is consistent with
 the strong performance of low-parameter neural networks that emphasize
 compound-compound similarity, such as influence-relevance voter,
 [@tag:Swamidass2009_irv  @tag:Lusci2015_irv] instead of predicting compound
@@ -386,7 +387,7 @@ organic molecules with drug-like properties that could be chemically synthesized
 represent chemicals with the simplified molecular-input line-entry system
 (SMILES), a standard way string-based representation with characters that
 represent atoms, bonds, and rings [@tag:Segler2017_drug_design].
-Gómez-Bombarelli et al. designed a  SMILES-to-SMILES autoencoder to learn a
+Gómez-Bombarelli et al. designed a  SMILES-to-SMILES autoencoder to learn a
 continuous latent feature space for chemicals [@tag:Gomezb2016_automatic].
 `TODO: connect to related EHR paper` In this learned continuous space it was
 possible to train some types of supervised learning algorithms or interpolate
