@@ -12,15 +12,14 @@ within data constrained and privacy critical environments.
 
 Over the past five years, a class of machine learning algorithms known as deep
 learning has revolutionized image classification and speech recognition due to
-their flexibility and high accuracy [@doi:10.1038/nature14539]. More recently,
+its flexibility and high accuracy [@doi:10.1038/nature14539]. More recently,
 these algorithms have shown equally promising results in fields as diverse as
 high-energy physics [@doi:10.1038/ncomms5308], dermatology
-[@doi:10.1038/nature21056], translation among written languages
-[@arxiv:1609.08144], and drug discovery [@doi:10.1002/minf.201501008]. Across
-fields, "off-the-shelf" implementations of these algorithms have produced
-comparable or higher accuracy than previous best-in-class methods that required
-years of extensive customization, and specialized implementations are now being
-used at industrial scales.
+[@doi:10.1038/nature21056], and translation among written languages
+[@arxiv:1609.08144]. Across fields, "off-the-shelf" implementations of these
+algorithms have produced comparable or higher accuracy than previous
+best-in-class methods that required years of extensive customization, and
+specialized implementations are now being used at industrial scales.
 
 Deep learning algorithms can also be used in an exploratory, "unsupervised"
 mode, where the goal is to summarize, explain, or identify interesting patterns
