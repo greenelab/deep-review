@@ -29,8 +29,7 @@ human-level performance is irrelevant.*
 
 ### Interpretation
 
-As detailed above, interpretability is a common issue across many domains.
-Thus,  there is
+As the challenge of interpretability is common across many domains, there is
 much interest in developing generic procedures for knowledge extraction
 from deep models. Ribeiro et al. [@tag:Ribeiro2016_lime] focus on interpreting
 individual predictions rather than interpreting the model. By fitting simple
@@ -97,8 +96,7 @@ For example, an
 image can easily be rotated, flipped, or translated and retain its label
 [@doi:10.1101/095794].  3D MRI and 4D fMRI (with time as a dimension) data can
 be decomposed into sets of 2D images [@doi:10.1101/070441]. This can greatly
-expand
-the number of training examples
+expand the number of training examples
 but artificially treats such derived images as independent
 instances and sacrifices the structure inherent in the data.  CellCnn trains a
 model to recognize rare cell populations in single-cell data by creating
@@ -116,7 +114,7 @@ architectures, such as Diet Networks for high-dimensional SNP data
 [@tag:Romero2017_diet]. These use multiple networks to drastically
 reduce the number of free parameters by first flipping the problem and training
 a network to predict parameters (weights) for each input (SNP) to learn a
-feature embedding. This embedding (i.e. PCA, per class histograms, or a word2vec
+feature embedding. This embedding (i.e. PCA, per class histograms, or a Word2vec
 [@tag:Word2Vec] generalization) can be learned directly from input data or
 take advantage of other datasets or domain knowledge. Additionally, in this
 task the features are the examples, an important advantage when it is typical to
@@ -221,7 +219,7 @@ to recognize those who promote an ecosystem of rigorous sharing and analysis
 The sharing of high-quality, labeled datasets will be especially valuable.  In
 addition, researchers who invest time to preprocess datasets to be suitable for
 deep learning can make the preprocessing code (e.g. Basset
-[@tag:Kelley2016_basset] and variation analysis [@tag:Torracinta2016_deep_snp])
+[@tag:Kelley2016_basset] and variationanalysis [@tag:Torracinta2016_deep_snp])
 and cleaned data (e.g. MoleculeNet [@tag:Wu2017_molecule_net]) publicly
 available to catalyze further research. However, there are complex privacy and
 legal issues involved in sharing patient data that cannot be ignored.
@@ -295,7 +293,7 @@ enable transfer of extracted patterns between different datasets and even
 domains. This approach consists of training a model for the base task, and
 subsequently reusing the trained model
 for the target problem in hand. The first step allows a model to take advantage
-of larger amount of data and/or labels to extract better feature
+of a larger amount of data and/or labels to extract better feature
 representations. Transferring learnt features in deep neural networks
 improves performance compared to randomly initialized features even
 when pre-training and target sets are dissimilar. However,
@@ -320,7 +318,7 @@ layer-wise hierarchical fashion, this issue is usually addressed by fixing an
 empirically chosen number of layers that preserve generic characteristics
 of both training and target datasets. The model is then fine-tuned by
 re-training multiple networks' top layers on the specific dataset in order to
-re-learn domain-specific high level concepts (e.g.fine-tuning for
+re-learn domain-specific high level concepts (e.g. fine-tuning for
 radiology image classification [@tag:Rajkomar2017_radiographs]).
 Fine-tuning on specific biological datasets enables more focused predictions.
 The Basset package [@tag:Kelley2016_basset] for prediction of functional
