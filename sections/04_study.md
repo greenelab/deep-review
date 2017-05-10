@@ -398,7 +398,7 @@ promising and simple method for interpretability (randomly substituting bases in
 a recognized promoter region, then checking for a change in recognition) that
 would be useful to exploit more widely.
 
-Xu et al [@doi:10.1109/BIBM.2016.7822593] applied CNNs to the detection of
+Xu et al. [@doi:10.1109/BIBM.2016.7822593] applied CNNs to the detection of
 enhancers, achieving incremental improvements in specificity and sensitivity
 over previous SVM-based approach, and markedly better performance for
 cell-specific enhancers. A massive improvement in speed was also achieved.
@@ -497,7 +497,7 @@ inter-residue contact map, disorder regions and side-chain packing.
 
 Machine learning is extensively applied to predict protein structures and
 some success has been achieved. For example, secondary structure can be
-predicted with about 80% of 3-state (i.e., Q3) accuracy by a neural network
+predicted with about 80% of 3-state (i.e. Q3) accuracy by a neural network
 method PSIPRED [@doi:10.1093/bioinformatics/16.4.404]. Starting from
 2012, deep learning has been gradually introduced to protein structure
 prediction. The adopted deep learning models include deep belief network,
@@ -520,7 +520,7 @@ has been significantly improved [@doi:10.1371/journal.pcbi.1005324
 Protein secondary structure can exhibit three different states (alpha helix,
 beta strand and loop regions) or eight finer-grained states. More methods are
 developed to predict 3-state secondary structure than 8-state. A predictor is
-typically evaluated by 3-state (i.e., Q3) and 8-state (i.e., Q8) accuracy, respectively.
+typically evaluated by 3-state (i.e. Q3) and 8-state (i.e. Q8) accuracy, respectively.
 Qi et al. developed a multi-task deep learning method to simultaneously predict several
 local structure properties including secondary structures [@doi:10.1371/journal.pone.0032235].
 Spencer, Eickholt and Cheng predicted secondary structure using deep belief networks
@@ -544,7 +544,7 @@ improving secondary structure prediction from 80% to 84-85% is unlikely to
 result in a similar amount of improvement in tertiary structure prediction since secondary
 structure mainly reflects coarse-grained local conformation of a protein structure.
 
-Protein contact prediction and contact-assisted folding (i.e., folding proteins using
+Protein contact prediction and contact-assisted folding (i.e. folding proteins using
 predicted contacts as restraints) represents a promising new direction for ab initio folding
 of proteins without good templates in PDB.
 Evolutionary coupling analysis (ECA) is an effective contact prediction method for some
@@ -569,7 +569,7 @@ using two cascaded neural networks. Very recently, Wang and Xu et al. proposed a
 RaptorX-Contact [@doi:10.1371/journal.pcbi.1005324] that can significantly improve contact prediction
 over MetaPSICOV especially for proteins without many sequence homologs. RaptorX-Contact employs a network
 architecture formed by one 1D residual neural network and one 2D residual neural network.
-Blindly tested in the latest CASP competition (i.e., CASP12 [@url:http://www.predictioncenter.org/casp12/rrc_avrg_results.cgi]),
+Blindly tested in the latest CASP competition (i.e. CASP12 [@url:http://www.predictioncenter.org/casp12/rrc_avrg_results.cgi]),
 RaptorX-Contact is ranked first in terms of the total F1 score (a widely-used performance metric) on
 free-modeling targets as well as the whole set of targets. In the CASP12 test, the group ranked second
 also employed a deep learning method. Even MetaPSICOV, which ranked third in CASP12, employed more
@@ -819,7 +819,7 @@ and other genetic diseases will require accurate calling of SNP and indels.
 
 Current methods achieve relatively high (>99%) precision at 90% recall for SNPs
 and indel calls from Illumina short-read data [@tag:Poplin2016_deepvariant], yet
-this leaves a large number of potentially clinically significant remaining false
+this leaves a large number of potentially clinically important remaining false
 positives and false negatives. These methods have so far relied on experts to
 build probabilistic models that reliably separate signal from noise. However,
 this process is time consuming and, more importantly, fundamentally limited by
