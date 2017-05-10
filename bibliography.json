@@ -36236,6 +36236,276 @@
     "id": "dKwyEWWF"
   },
   {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          5,
+          10
+        ]
+      ],
+      "date-time": "2017-05-10T03:18:20Z",
+      "timestamp": 1494386300345
+    },
+    "reference-count": 1,
+    "publisher": "New England Journal of Medicine (NEJM/MMS)",
+    "issue": "4",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "N Engl J Med"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2010,
+          7,
+          22
+        ]
+      ]
+    },
+    "DOI": "10.1056/nejmp1006304",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2010,
+          6,
+          16
+        ]
+      ],
+      "date-time": "2010-06-16T01:56:14Z",
+      "timestamp": 1276653374000
+    },
+    "page": "301-304",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "The Path to Personalized Medicine",
+    "prefix": "10.1056",
+    "volume": "363",
+    "author": [
+      {
+        "given": "Margaret A.",
+        "family": "Hamburg",
+        "affiliation": []
+      },
+      {
+        "given": "Francis S.",
+        "family": "Collins",
+        "affiliation": []
+      }
+    ],
+    "member": "150",
+    "container-title": "New England Journal of Medicine",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          11,
+          2
+        ]
+      ],
+      "date-time": "2016-11-02T19:51:34Z",
+      "timestamp": 1478116294000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2010,
+          7,
+          22
+        ]
+      ]
+    },
+    "references-count": 1,
+    "alternative-id": [
+      "10.1056/NEJMp1006304"
+    ],
+    "URL": "http://dx.doi.org/10.1056/nejmp1006304",
+    "relation": {},
+    "issn-type": [
+      {
+        "value": "0028-4793",
+        "type": "print"
+      },
+      {
+        "value": "1533-4406",
+        "type": "electronic"
+      }
+    ],
+    "subject": [
+      "Medicine(all)"
+    ],
+    "id": "VOQtVhWs"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          5,
+          2
+        ]
+      ],
+      "date-time": "2017-05-02T14:39:03Z",
+      "timestamp": 1493735943008
+    },
+    "reference-count": 41,
+    "publisher": "Hindawi Publishing Corporation",
+    "license": [
+      {
+        "URL": "http://creativecommons.org/licenses/by/3.0/",
+        "start": {
+          "date-parts": [
+            [
+              2013,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2013-01-01T00:00:00Z",
+          "timestamp": 1356998400000
+        },
+        "delay-in-days": 0,
+        "content-version": "vor"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "The Scientific World Journal"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2013
+        ]
+      ]
+    },
+    "abstract": "<jats:p>The volumes of current patient data as well as their complexity make clinical decision making more challenging than ever for physicians and other care givers. This situation calls for the use of biomedical informatics methods to process data and form recommendations and/or predictions to assist such decision makers. The design, implementation, and use of biomedical informatics systems in the form of computer-aided decision support have become essential and widely used over the last two decades. This paper provides a brief review of such systems, their application protocols and methodologies, and the future challenges and directions they suggest.</jats:p>",
+    "DOI": "10.1155/2013/769639",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2013,
+          2,
+          4
+        ]
+      ],
+      "date-time": "2013-02-04T21:05:29Z",
+      "timestamp": 1360011929000
+    },
+    "page": "1-8",
+    "source": "Crossref",
+    "is-referenced-by-count": 12,
+    "title": "Biomedical Informatics for Computer-Aided Decision Support Systems: A Survey",
+    "prefix": "10.1155",
+    "volume": "2013",
+    "author": [
+      {
+        "ORCID": "http://orcid.org/0000-0002-8084-3563",
+        "authenticated-orcid": true,
+        "given": "Ashwin",
+        "family": "Belle",
+        "affiliation": [
+          {
+            "name": "Department of Computer Science, Virginia Commonwealth University, Richmond, VA 23284, USA"
+          }
+        ]
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0001-5902-9412",
+        "authenticated-orcid": true,
+        "given": "Mark A.",
+        "family": "Kon",
+        "affiliation": [
+          {
+            "name": "Department of Mathematics and Statistics, Boston University, Boston, MA 02215, USA"
+          }
+        ]
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0003-4485-6612",
+        "authenticated-orcid": true,
+        "given": "Kayvan",
+        "family": "Najarian",
+        "affiliation": [
+          {
+            "name": "Department of Computer Science, Virginia Commonwealth University, Richmond, VA 23284, USA"
+          }
+        ]
+      }
+    ],
+    "member": "98",
+    "container-title": "The Scientific World Journal",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://downloads.hindawi.com/journals/tswj/2013/769639.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://downloads.hindawi.com/journals/tswj/2013/769639.xml",
+        "content-type": "application/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          7,
+          30
+        ]
+      ],
+      "date-time": "2016-07-30T18:09:37Z",
+      "timestamp": 1469902177000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2013
+        ]
+      ]
+    },
+    "references-count": 41,
+    "alternative-id": [
+      "769639",
+      "769639"
+    ],
+    "URL": "http://dx.doi.org/10.1155/2013/769639",
+    "relation": {
+      "cites": []
+    },
+    "issn-type": [
+      {
+        "value": "1537-744X",
+        "type": "electronic"
+      }
+    ],
+    "subject": [
+      "Biochemistry, Genetics and Molecular Biology(all)",
+      "Environmental Science(all)",
+      "Medicine(all)"
+    ],
+    "id": "3JyJ3DTh"
+  },
+  {
     "abstract": "After a more than decade-long period of relatively little research activity in the area of recurrent neural networks, several new developments will be reviewed here that have allowed substantial progress both in understanding and in technical solutions towards more efficient training of recurrent networks. These advances have been motivated by and related to the optimization issues surrounding deep learning. Although recurrent networks are extremely powerful in what they can in principle represent in terms of modelling sequences,their training is plagued by two aspects of the same issue regarding the learning of long-term dependencies. Experiments reported here evaluate the use of clipping gradients, spanning longer time ranges with leaky integration, advanced momentum techniques, using more powerful output probability models, and encouraging sparser gradients to help symmetry breaking and credit assignment. The experiments are performed on text and music data and show off the combined effects of these techniques in generally improving both training and test error.",
     "author": [
       {
