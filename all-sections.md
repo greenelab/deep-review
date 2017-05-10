@@ -159,8 +159,7 @@ deep learning, has been extensively applied is molecular target prediction. For
 example, deep recurrent neural networks (RNN) have been used to predict gene
 targets of microRNAs [@YUms527e], and CNNs have been applied
 to predict protein residue-residue contacts and secondary structure on a
-genome-wide scale [doi:10.1371/journal.pcbi.1005324
-@doi:10.1109/tcbb.2014.2343960 @UO8L6nd]. Other recent exciting
+genome-wide scale [@BhfjKSY3; @ZzaRyGuJ; @UO8L6nd]. Other recent exciting
 applications of deep learning include recognition of functional genomic elements
 such as enhancers and promoters [@s5sy4AOi; @17B2QAA1k; @12aqvAgz6] and prediction of
 the deleterious effects of nucleotide polymorphisms
