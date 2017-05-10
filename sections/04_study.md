@@ -64,7 +64,7 @@ the genes are aggregated into features. Precisely attributing node activations t
 specific biological functions risks over-interpreting models and can lead to
 incorrect conclusions.
 
-Alternatively, deep learning approaches are also being applied for gene
+Alternatively, deep learning approaches are also being applied to gene
 expression prediction tasks. For example, a deep neural network with
 three hidden layers outperformed linear regression in inferring the expression
 of over 20,000 target genes based on a representative, well-connected set of
@@ -92,7 +92,7 @@ Deep learning applied to gene expression data is in its infancy but the future
 is bright. Many hypotheses can now be interrogated because of increasing
 amounts of data and new developing technologies. For example, there is a
 growing appreciation for the large impact of disease heterogeneity on research
-and treatment strategies for disease. New technologies are being developed,
+and treatment strategies for diseases. New technologies are being developed,
 such as single cell RNA-seq and high throughput fluorescence based imaging that
 are good matches for deep learning. Concurrently, deep learning methods are
 being developed to address novel problems such as adjusting for batch effects in
@@ -199,68 +199,125 @@ analysis on the proteins which would lead to a better understanding of
 the underlying process. Thus, there is a need to computationally predict
 and understand these binding regions de novo from sequences.
 
-#### Transcription Factors
+#### Transcription factors
 
-Transcription Factors (TFs) are regulatory proteins that bind to certain
-locations on a DNA sequence and control the rate of mRNA
-production. ChIP-seq and related technologies are able to identify highly
-likely binding sites for a certain TF, and databases such as
-ENCODE [@tag:Consortium2004_encode] have provided ChIP-seq
-data for hundreds of different TFs across many laboratories.
-However, ChIP-seq experiments are expensive and time consuming.
-Since the data that scientists have discovered is available, in
-silico methods to predict binding sites are of great interest, thus
-eliminating the need to do new ChIP-seq experiments every
-time analysis is done on a new sequence.
+Transcription factors (TFs) are regulatory proteins that bind to certain
+locations on a DNA sequence and control the rate of mRNA production. ChIP-seq
+and related technologies are able to identify highly likely binding sites for a
+certain TF, and databases such as ENCODE [@tag:Consortium2004_encode] have
+provided ChIP-seq data for hundreds of different TFs across many laboratories.
+However, ChIP-seq experiments are expensive and time consuming. Since the data
+that scientists have discovered is available, *in silico* methods to predict
+binding sites are of great interest, thus eliminating the need to do new
+ChIP-seq experiments every time analysis is done on a new sequence.
 
-In order to computationally predict TFBSs on a DNA sequence, researchers
-initially used consensus sequences and position weight matrices to match
-against a test sequence [@tag:Stormo2000_dna]. Simple neural network
-classifiers were then proposed to differentiate positive and negative binding
-sites, but did not show significant improvements over the weight matrix
-matching methods [@tag:Horton1992_assessment]. Later, SVM techniques
+In order to computationally predict transcription factor binding sites (TFBSs)
+on a DNA sequence, researchers initially used consensus sequences and position
+weight matrices to match against a test sequence [@tag:Stormo2000_dna]. Simple
+neural network classifiers were then proposed to differentiate positive and
+negative binding sites but did not show significant improvements over the weight
+matrix matching methods [@tag:Horton1992_assessment]. Later, SVM techniques
 outperformed the generative methods by using k-mer features
 [@tag:Ghandi2014_enhanced @tag:Setty2015_seqgl], but string kernel based SVM
 systems are limited by expensive computational cost proportional to the number
 of training and testing sequences. More recently,
-[@tag:Alipanahi2015_predicting] showed that convolutional neural network
-models could achieve state of the art results on the TFBS task and are scalable
-to a large number of genomic sequences. [@tag:Lanchantin2016_motif] introduced
-several new convolutional and recurrent neural network models for predicting
-TFBSs, but it remains unclear which neural architectures work best for all
-samples and TFs. While neural architectures are rapidly changing and producing
-better results, it is clear that deep learning can be efficiently and
-effectively used to do functional prediction on the genome given raw data.
+[@tag:Alipanahi2015_predicting] showed that convolutional neural network models
+could achieve state of the art results on the TFBS task and are scalable to a
+large number of genomic sequences.
 
-While accurately predicting transcription factors computationally is useful,
-it is important to understand how these computational models make their
+Since the work by [@tag:Alipanahi2015_predicting] was published, there have been
+a multitude of deep learning works on the TFBS task. Due to the  motif-driven
+nature of the TFBS task, most architectures have been convolutional-based, as
+summarized in [@tag:Zeng2016_convolutional]. [@tag:Lanchantin2016_motif]
+introduced several new convolutional and  recurrent neural network models for
+predicting TFBSs, which showed improvements over other deep learning models on
+the dataset from [@tag:Alipanahi2015_predicting].  While many models for TFBS
+prediction resemble computer vision and natural language processing (NLP) tasks,
+it is important to note that DNA sequence tasks are fundamentally different than
+NLP tasks, and thus the models should be adapted from traditional deep learning
+models in order to account for such differences. For example, motifs may appear
+in either strand of a DNA sequence, resulting in two different forms of the
+motif (forward and reverse complement) due to complementary base pairing. To
+handle this issue, [@tag:Shrikumar2017_reversecomplement] created a
+convolutional model which can find motifs in both directions. Since deep
+learning for protein binding prediction is still in early stages, we expect to
+see an increase in domain-specific architectures for this task.
+
+Deep learning models have shown great accuracy on TFBS prediction, but the
+results are not fully convincing for several reasons. First, ChIP-seq
+experiments give a continuous value of binding likelihood at a certain location
+based on many experiments at that location in DNA. Based on these values, the
+TFBS task is usually converted into a binary classification task based on a
+certain threshold of the ChIP-seq value. However, the ChIP-seq values are often
+noisy, resulting in a target class that may be incorrect dependent on the
+defined threshold.  Converting the task into a binary classification isn't
+completely accurate since the model may give a high probability of a binding
+site, but the ChIP-seq binding signal may be just barely over the binary
+classification threshold, resulting in potential false positive (or the signal
+may be just below the threshold, resulting in potential false negatives).
+
+Second, most datasets for TFBS prediction are separated by TF, requiring a
+separate model for each TF (i.e. binary classification on each TF sub-dataset).
+In reality, there may be multiple TFs binding at the same location and TF
+binding may be dependent on other TFs, thus requiring both a dataset which gives
+all TF binding values at every location as well as a multi-task model.
+[@tag:Zhou2015_deep_sea] use multiple TFs at once, but TF binding prediction is
+an intermediate step for predicting effects of noncoding variants in their
+model, so TFBS prediction is not heavily analyzed.
+
+A third issue is that it is unclear exactly how to include non-binding or
+"negative" sites in the datasets. Since the number of positive binding sites of
+a particular TF is relatively small with respect to the total number of
+base-pairs in DNA, we must choose a small subset of the total non-binding sites,
+resulting in some sort of bias over all of the actual negative sites. Regardless
+of the negative site selection, most datasets evenly balance the positive and
+negative binding sites and report auROC for the metric. This is very misleading
+in a task where the binding sites are very unevenly balanced in the real world
+(see Discussion). Thus, we need datasets which more accurately model real TFBS
+data.
+
+At the model level, while deep learning models have shown that it is possible to
+automatically extract features for TFBS prediction at the sequence level, these
+basic models cannot predict the binding on new unseen cell types or conditions.
+Since ChIP-seq experiments have been performed on only a small subset of cell
+lines, these prediction models are not of use for new or rare cell lines. To
+handle this issue and create models which can be used across cell lines, there
+are several options. The most prominent would be to introduce a multimodal
+model that, in addition to sequence data, incorporates cell-line specific
+features such as chromatin accessibility, DNA methylation, or gene expression.
+Without cell-specific features, the other option is to use domain adaptation
+methods where we train our model on a source cell type and use unsupervised
+feature extraction methods to predict on a target cell type.
+[@tag:Qin2017_onehot] predicts binding in new cell type-TF pairs, but the cell
+types must be in the training set for other TFs besides the target TF. A more
+general domain transfer model across cell types would be more useful.
+
+While neural architectures are rapidly changing and producing better results, it
+is clear that deep learning can be efficiently and effectively used to do
+functional prediction on the genome given raw data.
+
+Accurately predicting transcription factors computationally is useful, but it is
+also important to understand how these computational models make their
 predictions. To handle this, several papers have focused on understanding
-machine learning models [@tag:Alipanahi2015_predicting
-@tag:Lanchantin2016_motif @tag:Shrikumar2016_blackbox].
-[@tag:Alipanahi2015_predicting] was the first to introduce a visualization
-method for a deep learning model on the TFBS task, and they did so by
-visualizing the learned convolution filters which were informative for the
-model’s prediction of a specific sample. However, this approach was specific to
-visualizing certain samples fed through their particular model.
-[@tag:Lanchantin2016_motif] introduced a suite of state-of-the-art deep
-learning models and new visualizations techniques for a more in-depth analysis
-of TFBSs. Furthermore, [@tag:Shrikumar2016_blackbox] introduced an advanced
-visualization method and toolbox for analyzing possible TFBS sequences.
-[@tag:Alipanahi2015_predicting] also introduced mutation maps, where they could
-easily mutate, add, or delete basepairs in a sequence and see how the model
-changed its prediction. This is something that would be very time consuming
-in a lab setting, but easy to simulate using their model. Visualization
-techniques on deep learning models are important because they can provide
-new insights on regulatory mechanisms and can lead biologists to test and
-verify in a lab setting, leading to new biomedical knowledge. Since the
-“linguistics” of DNA are unclear, interpretability of models is crucial to
+machine learning models [@tag:Alipanahi2015_predicting @tag:Lanchantin2016_motif
+@tag:Shrikumar2016_blackbox]. [@tag:Alipanahi2015_predicting] was the first to
+introduce a visualization method for a deep learning model on the TFBS task, and
+they did so by visualizing the learned convolution filters which were
+informative for the model’s prediction of a specific sample. However, this
+approach was specific to visualizing certain samples fed through their
+particular model. [@tag:Lanchantin2016_motif] introduced a suite of
+state-of-the-art deep learning models and new visualizations techniques for a
+more in-depth analysis of TFBSs. Furthermore, [@tag:Shrikumar2016_blackbox]
+introduced an advanced visualization method and toolbox for analyzing possible
+TFBS sequences. [@tag:Alipanahi2015_predicting] also introduced mutation maps,
+where they could easily mutate, add, or delete base pairs in a sequence and see
+how the model changed its prediction. This is something that would be very time
+consuming in a lab setting, but easy to simulate using their model.
+Visualization techniques on deep learning models are important because they can
+provide new insights on regulatory mechanisms and can lead biologists to test
+and verify in a lab setting, leading to new biomedical knowledge. Since the
+"linguistics" of DNA are unclear, interpretability of models is crucial to
 pushing our understanding forward.
-
-`TODO: Add discussion about the large number of deep learning works
-in this area since the DeepBind paper. In particular, add
-[#43](https://github.com/greenelab/deep-review/issues/43),
-[#215](https://github.com/greenelab/deep-review/issues/215),
-and [#258](https://github.com/greenelab/deep-review/issues/258).`
 
 `TODO: cut RNA-binding proteins from above section, refer to representative
 papers`
@@ -300,7 +357,7 @@ showed that only 33% of predicted regulatory regions could be validated, while a
 class of "weak" predicted enhancers were strong drivers of expression. Yet there
 is growing evidence for their vast ubiquity, making them possibly the
 predominant functional non-coding element. Thus, identifying enhancers is
-critical yet the the search space is embarrassingly large.
+critical yet the search space is embarrassingly large.
 
 While prior (non-deep learning) approaches have made steady improvements on
 promoter prediction, there is little consensus on the best approach and
@@ -318,16 +375,16 @@ The complex nature of CREs (and our ignorance at to what are the important
 features of them) therefore seems a good subject for deep learning approaches.
 Indeed, neural networks were used for promoter recognition as early as 1996,
 albeit with mixed results [@doi:10.1016/S0097-8485(96)80015-5]. Since then,
-there have been much work in applying deep learning to this area, although
+there has been much work in applying deep learning to this area, although
 little in the way of comparative studies or reviews. We will therefore focus on
 a few recent characteristic studies to outline the state of the art and extant
 problems.
 
 Most broadly, Kelley et al. [@doi:10.1101/gr.200535.115] trained CNNs on DNA
-accessibility datasets, getting an marked improvement on previous methods,
+accessibility datasets, getting a marked improvement on previous methods,
 albeit still with a high false positive rate. (Note as above, using DNA
 accessibility conflates enhancers with other functional sites.) This study also
-featured a useful interpetability approach (analogous to in silico mutagenesis
+featured a useful interpretability approach (analogous to in silico mutagenesis
 [@doi:10.1093/nar/gkm238]) introducing known protein binding motifs into
 sequences and measuring the change in predicted accessibility.
 
@@ -341,7 +398,7 @@ promising and simple method for interpretability (randomly substituting bases in
 a recognized promoter region, then checking for a change in recognition) that
 would be useful to exploit more widely.
 
-Xu et al [@doi:10.1109/BIBM.2016.7822593] applied CNNs to the detection of
+Xu et al. [@doi:10.1109/BIBM.2016.7822593] applied CNNs to the detection of
 enhancers, achieving incremental improvements in specificity and sensitivity
 over previous SVM-based approach, and markedly better performance for
 cell-specific enhancers. A massive improvement in speed was also achieved.
@@ -377,7 +434,7 @@ putative or dependent on the experimental method or context of identification.
 Else we risk building detectors not for CREs but putative CREs. The best model
 of negative sample needs also to be considered, as does the problem of
 imbalanced data. In a sentence, these methods can only be as good as their
-training data. Finally, intepretability is a problem but one that appears to be
+training data. Finally, interpretability is a problem but one that appears to be
 solvable given empirical approaches.
 
 `TODO: discuss enhancer-promoter and enhancer-target prediction`
@@ -425,7 +482,7 @@ Proteins play fundamental roles in all biological processes including the
 maintenance of cellular integrity, metabolism, transcription/translation, and
 cell-cell communication. Complete description of protein structures and
 functions is a fundamental step towards understanding biological life and
-also highly relevant in the development of therapeutics and drugs. UnitProt
+also highly relevant to the development of therapeutics and drugs. UnitProt
 currently has about 94 millions of protein sequences. Even if we remove
 redundancy at 50% sequence identity level, UnitProt still has about
 20 millions of protein sequences. However, fewer than 100,000 proteins
@@ -440,7 +497,7 @@ inter-residue contact map, disorder regions and side-chain packing.
 
 Machine learning is extensively applied to predict protein structures and
 some success has been achieved. For example, secondary structure can be
-predicted with about 80% of 3-state (i.e., Q3) accuracy by a neural network
+predicted with about 80% of 3-state (i.e. Q3) accuracy by a neural network
 method PSIPRED [@doi:10.1093/bioinformatics/16.4.404]. Starting from
 2012, deep learning has been gradually introduced to protein structure
 prediction. The adopted deep learning models include deep belief network,
@@ -463,7 +520,7 @@ has been significantly improved [@doi:10.1371/journal.pcbi.1005324
 Protein secondary structure can exhibit three different states (alpha helix,
 beta strand and loop regions) or eight finer-grained states. More methods are
 developed to predict 3-state secondary structure than 8-state. A predictor is
-typically evaluated by 3-state (i.e., Q3) and 8-state (i.e., Q8) accuracy, respectively.
+typically evaluated by 3-state (i.e. Q3) and 8-state (i.e. Q8) accuracy, respectively.
 Qi et al. developed a multi-task deep learning method to simultaneously predict several
 local structure properties including secondary structures [@doi:10.1371/journal.pone.0032235].
 Spencer, Eickholt and Cheng predicted secondary structure using deep belief networks
@@ -487,7 +544,7 @@ improving secondary structure prediction from 80% to 84-85% is unlikely to
 result in a similar amount of improvement in tertiary structure prediction since secondary
 structure mainly reflects coarse-grained local conformation of a protein structure.
 
-Protein contact prediction and contact-assisted folding (i.e., folding proteins using
+Protein contact prediction and contact-assisted folding (i.e. folding proteins using
 predicted contacts as restraints) represents a promising new direction for ab initio folding
 of proteins without good templates in PDB.
 Evolutionary coupling analysis (ECA) is an effective contact prediction method for some
@@ -512,7 +569,7 @@ using two cascaded neural networks. Very recently, Wang and Xu et al. proposed a
 RaptorX-Contact [@doi:10.1371/journal.pcbi.1005324] that can significantly improve contact prediction
 over MetaPSICOV especially for proteins without many sequence homologs. RaptorX-Contact employs a network
 architecture formed by one 1D residual neural network and one 2D residual neural network.
-Blindly tested in the latest CASP competition (i.e., CASP12 [@url:http://www.predictioncenter.org/casp12/rrc_avrg_results.cgi]),
+Blindly tested in the latest CASP competition (i.e. CASP12 [@url:http://www.predictioncenter.org/casp12/rrc_avrg_results.cgi]),
 RaptorX-Contact is ranked first in terms of the total F1 score (a widely-used performance metric) on
 free-modeling targets as well as the whole set of targets. In the CASP12 test, the group ranked second
 also employed a deep learning method. Even MetaPSICOV, which ranked third in CASP12, employed more
@@ -762,7 +819,7 @@ and other genetic diseases will require accurate calling of SNP and indels.
 
 Current methods achieve relatively high (>99%) precision at 90% recall for SNPs
 and indel calls from Illumina short-read data [@tag:Poplin2016_deepvariant], yet
-this leaves a large number of potentially clinically significant remaining false
+this leaves a large number of potentially clinically important remaining false
 positives and false negatives. These methods have so far relied on experts to
 build probabilistic models that reliably separate signal from noise. However,
 this process is time consuming and, more importantly, fundamentally limited by

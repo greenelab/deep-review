@@ -39,7 +39,7 @@ While further progress has been made in using deep learning for clinical
 decision making, it is hindered by a challenge common to many deep learning
 applications: it is much easier to predict an outcome than to suggest an action
 to change the outcome. Several attempts at recasting the clinical decision
-making problem into a prediction problem (i.e. prediction of which treatment
+making problem into a prediction problem (i.e., prediction of which treatment
 will most improve the patient's health) have accurately predicted prescription
 habits, but technical and medical challenges remain for clinical adoption
 (similar to those for categorization). In particular, remaining challenges
@@ -50,10 +50,10 @@ into a dynamic clinical environment.
 A critical challenge in moving from prediction to treatment recommendations
 is the necessity to establish a causal relationship for a recommendation.
 Causal inference is often framed in terms of counterfactual question
-[@doi:10.1037/h0037350]. Johansson et al [@arxiv:1605.03661] use deep neural
+[@doi:10.1037/h0037350]. Johansson et al. [@arxiv:1605.03661] use deep neural
 networks to create representation models for covariates that capture nonlinear
 effects and show significant performance improvements over existing models. In
-a less formal approach, Kale et al [@pmid:26958203] first create a deep neural
+a less formal approach, Kale et al. [@pmid:26958203] first create a deep neural
 network to model clinical time series and then analyze the relationship of the
 hidden features to the output using a causal approach.
 
@@ -86,7 +86,7 @@ are currently hampered by the difficulties of counter-factual inference.
 
 A clinical task to deep learning which has been more successfully applied is
 the assignment of patients to clinical trials. Ithapu et al
-[@tag:Ithapu2015_efficient] used a randomized denoising autoenconder
+[@tag:Ithapu2015_efficient] used a randomized denoising autoencoder
 to learn a multimodal imaging marker that predicts future cognitive
 and neural decline from positron emission tomography (PET), amyloid
 florbetapir PET, and structural magnetic resonance imaging.
@@ -96,7 +96,7 @@ the required sample sizes by a factor of five.  Similarly, Artemov et al
 [@tag:Artemov2016_clinical] applied deep learning to predict which
 clinical trials were likely to fail and which were likely to succeed. By
 predicting the side effects and pathway activations of each drug, and
-then translating these activations to a success proability, their deep
+then translating these activations to a success probability, their deep
 learning-based approach was able to significantly outperform a random
 forest classifier trained on gene expression changes. These approaches
 suggest promising directions to improve the efficiency of clinical trials
@@ -160,8 +160,6 @@ information from protein-protein or protein-compound interaction networks
 [@doi:10.1186/1758-2946-5-30 @doi:10.1021/ci500340n
 @doi:10.1186/s12859-015-0845-0].
 
-`TODO: shallow NN? Is that in scope?`
-
 For example, Menden et al. [@doi:10.1371/journal.pone.0061318] used a
 shallow neural network
 to predict sensitivity of cancer cell lines to drug treatment using both cell
@@ -177,8 +175,7 @@ such as otenzepad and pinacidil for neurological disorders.
 
 Drug repositioning can also be approached by attempting to predict novel
 drug-target interactions and then repurposing the drug for the associated
-indication
-[@doi:10.1371/journal.pcbi.1005219 @doi:10.1371/journal.pcbi.1005135].
+indication [@doi:10.1371/journal.pcbi.1005219 @doi:10.1371/journal.pcbi.1005135].
 Wang et al. [@doi:10.1109/BIBM.2014.6999129] devised a pairwise input neural
 network with two hidden layers that takes two inputs, a drug and a target
 binding site, and predicts whether they interact. Wang et al
@@ -223,7 +220,7 @@ regression, or
 ranking problem. In reality, it does not fit neatly into any of those
 categories.  An ideal algorithm will rank a sufficient number of active
 compounds before the inactives, but the rankings of actives relative to other
-actives and inactives to other inactives is less important
+actives and inactives are less important
 [@tag:Swamidass2009_irv]. `TODO: can improve this first attempt at an intro by
 reviewing more existing literature on the topic` `TODO: check which other
 existing reviews should be referenced`
@@ -249,7 +246,7 @@ consistently outperform RF by such a margin" [@tag:Ma2015_qsar_merck].
 Subsequent work explored the effects of jointly modeling far more targets than
 the Merck challenge [@tag:Unterthiner2014_screening
 @tag:Ramsundar2015_multitask_drug], with [@tag:Ramsundar2015_multitask_drug]
-showing that the benefits of multitask networks had not yet saturated even with
+showing that the benefits of multi-task networks had not yet saturated even with
 259 targets.  Although a deep learning approach, DeepTox
 [@tag:Mayr2016_deep_tox], was also the overall winner of another competition,
 the Toxicology in the 21st Century (Tox21) Data Challenge, it did not dominate
@@ -264,10 +261,10 @@ In retrospect, the nuanced Tox21 performance may be more reflective of the
 practical challenges encountered in ligand-based chemical screening than the
 extreme enthusiasm generated by the Merck competition.  A study of 22 absorption
 distribution, metabolism, excretion, and toxicity (ADMET) tasks demonstrated
-that there are limitations to multitask transfer learning that are in part a
+that there are limitations to multi-task transfer learning that are in part a
 consequence of the degree to which tasks are related [@tag:Kearnes2016_admet].
-Some of the ADMET datasets showed far superior performance in multitask models
-of only the 22 ADMET tasks relative to more expansive multitask networks that
+Some of the ADMET datasets showed far superior performance in multi-task models
+of only the 22 ADMET tasks relative to more expansive multi-task networks that
 included over 500 less-similar tasks.  `TODO: also has a good discussion of
 information leakage in cross validation, include that in the Discussion section`
 In addition, training datasets encountered in practical applications may be tiny
@@ -296,12 +293,12 @@ fixed-width bit vector fingerprint [@tag:Rogers2010_fingerprints].  An overly
 simplistic but approximately correct view of these fingerprints is that each bit
 represents the presence of absence of a particular chemical substructure in the
 molecular graph. Modern neural networks can operate directly on the molecular
-graph as input.  Duvenaud et al [@tag:Duvenaud2015_graph_conv] generalized
+graph as input.  Duvenaud et al. [@tag:Duvenaud2015_graph_conv] generalized
 standard circular fingerprints by substituting discrete operations in the
 fingerprinting algorithm with operations in a neural network, producing a
 real-valued feature vector instead of a bit vector.  Other approaches offer
 trainable networks that can in theory learn chemical feature representations
-that are optimized for a particular prediction task.   Lusci et al adapted
+that are optimized for a particular prediction task.   Lusci et al. adapted
 recursive neural networks for directed acyclic graphs for undirected molecular
 graphs by creating an ensemble of directed graphs in which one atom is selected
 as the root node [@tag:Lusci2013_rnn].  A single feature vector is obtained by
@@ -333,7 +330,7 @@ embeddings.  The approach is evaluated in an extremely challenging setting where
 the embedding is learned from a subset of prediction tasks (e.g. activity assays
 for individual proteins) and only one to ten labeled examples are provided as
 training data on a new task.  On Tox21 targets, even when trained with _one_
-task-specific active compound and _one_ inactive compound, the model is able
+task-specific active compound and _one_ inactive compound, the model is able to
 generalize reasonably well because it has learned an informative embedding
 function from the related tasks. Random forests, which cannot take advantage of
 the related training tasks, trained in the same setting are only slightly better
@@ -364,9 +361,9 @@ representation learning in this domain and propose that rigorous benchmarking on
 broad and diverse prediction tasks will be as important as novel neural network
 architectures and expanded public datasets to advance the state of the art and
 convincingly demonstrate superiority over traditional cheminformatics
-techniques. Fortunately, there has recently been significant progress in this
+techniques. Fortunately, there has recently been much progress in this
 direction. The DeepChem software [@tag:AltaeTran2016_one_shot
-@url:https://github.com/deepchem/deepchem] and MoleculeNet benchmarking suite
+@tag:DeepChem] and MoleculeNet benchmarking suite
 [@tag:Wu2017_molecule_net] built upon it contain chemical bioactivity and
 toxicity prediction datasets, multiple compound featurization approaches
 including graph convolutions, and various machine learning algorithms ranging
@@ -384,7 +381,7 @@ advantages of jointly modeling many targets [@tag:Unterthiner2014_screening
 @tag:Ramsundar2015_multitask_drug].  Other studies have shown the limitations of
 transfer learning when the prediction tasks are insufficiently related
 [@tag:Kearnes2016_admet @tag:AltaeTran2016_one_shot].  This has important
-implications for representation learning.  The typical approach of improving
+implications for representation learning.  The typical approach to improve
 deep learning models by expanding the dataset size may not be applicable if only
 "related" tasks are beneficial, especially because task-task relatedness is
 ill-defined. The massive chemical state space will also influence the

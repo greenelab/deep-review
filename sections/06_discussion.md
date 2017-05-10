@@ -1,8 +1,10 @@
 ## Discussion
 
-*This section provides meta-commentary that spans the Categorize, Study, and
-Treat subject areas.  The candidate sub-sections below are initial ideas that
-can be further pruned.*
+Despite the disparate data types and scientific goals in the learning tasks
+covered above, several challenges are broadly important for deep learning in the
+biomedical domain.  We present factors that may impede further progress,
+initial steps that have been taken to address them, and suggested research
+practices to overcome these obstacles.
 
 ### Evaluation
 
@@ -23,11 +25,13 @@ it is easy to tell when deep learning has produced a breakthrough because
 human-level performance is an impressive baseline.  In many tasks we reviewed,
 human-level performance is irrelevant.*
 
+`TODO: draft coming May 4 or 5`
+
 ### Interpretation
 
 As the challenge of interpretability is common across many domains, there is
-significant interest in developing generic procedures for knowledge extraction
-from deep models. Ribeiro et al [@tag:Ribeiro2016_lime] focus on interpreting
+much interest in developing generic procedures for knowledge extraction
+from deep models. Ribeiro et al. [@tag:Ribeiro2016_lime] focus on interpreting
 individual predictions rather than interpreting the model. By fitting simple
 linear models to mimic the predictions of the deep learning model in a small
 neighborhood of a data sample, they generated an interpretable model for each
@@ -54,7 +58,7 @@ primarily focused on integrating attention mechanisms with the neural networks.
 Attention mechanisms dynamically weight the importance the neural network gives
 to each feature. By inspecting the attention weights for a particular sample, a
 practitioner can identify the important features for a particular prediction.
-Choi et al [@tag:Choi2016_retain] inverted the typical architecture of recurrent
+Choi et al. [@tag:Choi2016_retain] inverted the typical architecture of recurrent
 neural networks to improve interpretability. In particular, they only used
 recurrent connections in the attention generating procedure, leaving the hidden
 state directly connected to the input variables. In the clinical domain, this
@@ -62,61 +66,70 @@ model was able to produce accurate diagnoses in which the contribution of
 previous hospital visits could be directly interpreted. Choi et al
 [@tag:Choi2016_gram] later extended this work to take into account the structure
 of disease ontologies and found that the concepts represented by the model were
-aligned with medical knowledge. Che et al [@tag:Che2015_distill] introduced a
+aligned with medical knowledge. Che et al. [@tag:Che2015_distill] introduced a
 knowledge-distillation approach which used gradient boosted trees to learn
 interpretable healthcare features from trained deep models.
 
 ### Data limitations
 
-*Related to evaluation, are there data quality issues in genomic, clinical, and
-other data that make this domain particularly challenging?  Are these worse than
-what is faced in other non-biomedical domains?*
+A lack of large-scale, high-quality, labeled training data has impacted deep
+learning in nearly all applications we have discussed, from healthcare to
+genomics to drug discovery.  The challenges of training complex, high-parameter
+neural networks from few examples are obvious, but uncertainty in the labels of
+training instances can be just as problematic.  In genomics, for example,
+labeled data may be derived from an experimental assay that has known and
+unknown technical artifacts, biases, and error profiles.  It is possible to
+weight training examples or construct Bayesian models to account for uncertainty
+or non-independence in the data. For example, Park et al.
+[@doi:10.1371/journal.pcbi.1002957] estimated shared non-biological signal
+between datasets to correct for non-independence related to assay platform or
+other factors in a Bayesian integration of many datasets. However, such
+techniques are rarely placed front and center in the description of methods, so
+these steps may be overlooked.
 
-*Many applications have used relatively small training datasets.  We might
-discuss workarounds (e.g. semi-synthetic data, splitting instances, etc.) and
-how this could impact future progress.  Might this be why some studies have
-resorted to feature engineering instead of learning representations from low-
-level features?  Is there still work to be done in finding the right low-level
-features in some problems?*
+For some types of data, especially images, it is straightforward to augment
+training datasets by splitting one labeled example into multiple examples. An
+image can easily be rotated, flipped, or translated and retain its label
+[@doi:10.1101/095794].  3D MRI and 4D fMRI (with time as a dimension) data can
+be decomposed into sets of 2D images [@doi:10.1101/070441]. This greatly expands
+the number of training examples in domains where only hundreds of subjects are
+available but artificially treats images from the same volume as independent
+instances and sacrifices the structure inherent in the data.  CellCnn trains a
+model to recognize rare cell populations in single-cell data by creating
+training instances that consist of random subsets of cells that are randomly
+sampled with replacement from the full dataset [@tag:Arvaniti2016_rare_subsets].
 
-###### Biomedical data is often "Wide"
+Simulated or semi-synthetic training data has also been employed in multiple
+biomedical domains. `TODO:  simulated data: #5 #99 #293, maybe #117 and #197.
+There is a counter-example from drug discovery to include as well
+that is related to #55`
 
-*Biomedical studies typically deal with relatively small sample sizes but each
-sample may have millions of measurements (genotypes and other omics data, lab
-tests etc).*
-
-*Classical machine learning recommendations were to have 10x samples per number
-of parameters in the model.*
-
-*Number of parameters in an MLP. Convolutions and similar strategies help but do
-not solve*
-
-*Bengio diet networks paper*
-
+Multimodal, multi-task, and transfer learning, discussed in detail below, can
+also combat data limitations to some degree. There are also emerging network
+architectures, such as Diet Networks for high-dimensional SNP data
+[@tag:Romero2017_diet]. Diet Networks use multiple networks to drastically
+reduce the number of free parameters by first flipping the problem and training
+a network to predict parameters (weights) for each input (SNP) to learn a
+feature embedding. This embedding (i.e. PCA, per class histograms, or a Word2vec
+[@tag:Word2Vec] generalization) can be learned directly from the input data or
+can take advantage of other datasets or domain knowledge. Additionally, in this
+task, the features are the examples, an important fact when it is typical to
+have 500k+ SNPs and only a few thousand patients. Finally, this embedding is of
+a much lower dimension, allowing for a large reduction in the number of free
+parameters. In the example given, the authors reduced the number of free
+parameters from 30 million to 50 thousand, a factor of 600.
 
 ### Hardware limitations and scaling
 
-*Several papers have stated that memory or other hardware limitations
-artificially restricted the number of training instances, model inputs/outputs,
-hidden layers, etc.  Is this a general problem worth discussing or will it be
-solved naturally as hardware improves and/or groups move to distributed deep
-learning frameworks?  Does hardware limit what types of problems are accessible
-to the average computational group, and if so, will that limit future progress?
-For instance, some hyperparameter search strategies are not feasible for a lab
-with only a couple GPUs.*
-
-*Some of this is also outlined in the Categorize section.  We can decide where
-it best fits.*
-
 Efficiently scaling deep learning is challenging, and there is a high
-computational cost (e.g., time, memory, energy) associated with training neural
+computational cost (e.g. time, memory, energy) associated with training neural
 networks and using them for classification. As such, neural networks
 have only recently found widespread use [@tag:Schmidhuber2014_dnn_overview].
 
 Many have sought to curb the costs of deep learning, with methods ranging from
-the very applied (e.g., reduced numerical precision [@tag:Gupta2015_prec
+the very applied (e.g. reduced numerical precision [@tag:Gupta2015_prec
 @tag:Bengio2015_prec @tag:Sa2015_buckwild @tag:Hubara2016_qnn]) to the exotic
-and theoretic (e.g., training small networks to mimic large networks and
+and theoretic (e.g. training small networks to mimic large networks and
 ensembles [@tag:Caruana2014_need @tag:Hinton2015_dark_knowledge]). The largest
 gains in efficiency have come from computation with graphics processing units
 (GPUs) [@tag:Raina2009_gpu @tag:Vanhoucke2011_cpu @tag:Seide2014_parallel
@@ -126,7 +139,7 @@ operations so central to deep learning. The massively parallel nature of GPUs
 allows additional optimizations, such as accelerated mini-batch gradient
 descent [@tag:Vanhoucke2011_cpu @tag:Seide2014_parallel @tag:Su2015_gpu
 @tag:Li2014_minibatch]. However, GPUs also have a limited quantity of memory,
-making it difficult to implement networks of significant size and
+making it difficult to implement networks of useful size and
 complexity on a single GPU or machine [@tag:Raina2009_gpu
 @tag:Krizhevsky2013_nips_cnn]. This restriction has sometimes forced
 computational biologists to use workarounds or limit the size of an analysis.
@@ -160,7 +173,7 @@ Distributed computing is a general solution to intense computational
 requirements, and has enabled many large-scale deep learning efforts. Early
 approaches to distributed computation [@tag:Mapreduce @tag:Graphlab] were
 not suitable for deep learning [@tag:Dean2012_nips_downpour],
-but significant progress has been made. There
+but much progress has been made. There
 now exist a number of algorithms [@tag:Dean2012_nips_downpour @tag:Dogwild
 @tag:Sa2015_buckwild], tools [@tag:Moritz2015_sparknet @tag:Meng2016_mllib
 @tag:TensorFlow], and high-level libraries [@tag:Keras @tag:Elephas] for deep
@@ -175,40 +188,90 @@ Cloud computing, which has already seen adoption in genomics
 [@tag:Schatz2010_dna_cloud], could facilitate easier sharing of the large
 datasets common to biology [@tag:Gerstein2016_scaling @tag:Stein2010_cloud],
 and may be key to scaling deep learning. Cloud computing affords researchers
-significant flexibility, and enables the use of specialized hardware (e.g.,
-FPGAs, ASICs, GPUs) without significant investment. With such flexibility, it
+flexibility, and enables the use of specialized hardware (e.g.,
+FPGAs, ASICs, GPUs) without major investment. With such flexibility, it
 could be easier to address the different challenges associated with the
 multitudinous layers and architectures available
 [@tag:Krizhevsky2014_weird_trick]. Though many are reluctant to store sensitive
-data (e.g., patient electronic health records) in the cloud,
+data (e.g. patient electronic health records) in the cloud,
 secure/regulation-compliant cloud services do exist [@tag:RAD2010_view_cc].
 
-*TODO: Write the transition once more of the Discussion section has been
-fleshed out.*
+### Data, code, and model sharing
 
-### Code, data, and model sharing
+A robust culture of data, code, and model sharing would do much to speed
+advances in this domain. The cultural barriers of data sharing in particular are
+perhaps best captured by the implications of using the term "research parasite"
+to describe scientists who use data from other researchers
+[@doi:10.1056/NEJMe1516564]. In short, a field that honors only discoveries and
+not the hard work of generating useful data will have difficulty encouraging
+scientists to share their hard-won data. Unfortunately, it's precisely those
+data that would help to power deep learning in the domain. Efforts are underway
+to recognize those who promote an ecosystem of rigorous sharing and analysis
+[@doi:10.1038/ng.3830].
 
-In addition to methodological improvements, a robust culture of data sharing -
-and in particular the sharing of high-quality labeled datasets - would do much
-to speed advances in this domain. The cultural barriers are perhaps best
-captured by the implications of using the term "research parasite" to describe
-scientists who use data from other researchers [@doi:10.1056/NEJMe1516564]. In
-short, a field that honors only discoveries and not the hard work of generating
-useful data will have difficulty encouraging scientists to share their hard-won
-data. Unfortunately, it's precisely those data that would help to power deep
-learning in the domain. Though not a methodological consideration, efforts are
-underway to recognize those who promote an ecosystem of rigorous sharing and
-analysis [@doi:10.1038/ng.3830].
+The sharing of high-quality, labeled datasets will be especially valuable.  In
+addition, researchers who invest time to preprocess datasets to be suitable for
+deep learning can make the preprocessing code (e.g. Basset
+[@tag:Kelley2016_basset] and variationanalysis [@tag:Torracinta2016_deep_snp])
+and cleaned data (e.g. MoleculeNet [@tag:Wu2017_molecule_net]) publicly
+available to catalyze further research. However, there are complex privacy and
+legal issues involved in sharing patient data that cannot be ignored.
+Furthermore, in some domains, some of the best training data has been generated
+privately, for example, high-throughput chemical screening data at
+pharmaceutical companies. One perspective is that there is little expectation or
+incentive for this private data to be shared. However, data are not inherently
+valuable. Instead, the insights that we glean from them are where the value
+lies. Private companies may establish a competitive advantage by releasing
+sufficient data for improved methods to be developed.
 
-*Reproducibiliy is important for science to progress. In the context of deep
-learning applied to advance human healthcare, does reproducibility have
-different requirements or alternative connotations? With vast hyperparameter
-spaces, massively heterogeneous and noisy biological data sets, and black box
-interpretability problems, how can we best ensure reproducible models? What
-might a clinician, or policy maker, need to see in a deep model in order to
-influence healthcare decisions? Or, is deep learning a hypothesis generation
-machine that requires manual validation? DeepChem and DragoNN are worth
-discussing here.*
+Code sharing and open source licensing is essential for continued progress in
+this domain.  We strongly advocate following established best practices for
+sharing source code, archiving code in repositories that generate digital object
+identifiers, and open licensing [@doi:10.1126/science.aah6168] regardless of
+the minimal requirements, or lack thereof, set by journals, conferences, or
+preprint servers.  In addition, it is important for authors to share not only
+code for their core models but also scripts and code used for data cleaning (see
+above) and hyperparameter optimization.  These improve reproducibility and serve
+as documentation of the detailed decisions that impact model performance but may
+not be exhaustively captured in a manuscript's methods text.
+
+Because many deep learning models are often built using one of several popular
+deep learning frameworks, it is also possible to directly share trained
+predictive models.  The availability of pre-trained models can accelerate
+research, with image classifiers as an apt example.  A pre-trained neural
+network can be quickly fine-tuned on new data and used in transfer learning,
+both discussed below.  Taking this idea to the extreme, genomic data has been
+artificially encoded as images in order to benefit from pre-trained image
+classifiers [@tag:Poplin2016_deepvariant]. "Model zoos", collections of
+pre-trained models, are not yet common in biomedical domains but have started to
+appear in genomics applications [@tag:Angermueller2016_single_methyl
+@tag:Dragonn].  Sharing models for patient data requires great care because deep
+learning models can be attacked to identify examples used in training.  We
+discuss this issue as well as recent techniques to mitigate these concerns in
+the patient categorization section.
+
+DeepChem [@tag:AltaeTran2016_one_shot @tag:DeepChem @tag:Wu2017_molecule_net]
+and DragoNN [@tag:Dragonn] exemplify the benefits of sharing code under an open
+source license and pre-trained models. DeepChem, which targets drug discovery
+and quantum chemistry, has actively encouraged and received community
+contributions of learning algorithms and benchmarking datasets.  As a
+consequence, it now supports of a large suite of machine learning approaches,
+both deep learning and competing strategies, that can be run on diverse test
+cases.  This realistic, continual evaluation will play a critical role in
+assessing which techniques are most promising for chemical screening and drug
+discovery.  Like formal, organized challenges such as the ENCODE-DREAM *in vivo*
+Transcription Factor Binding Site Prediction Challenge [@tag:Dream_tf_binding],
+`TODO: placeholder URL until the pre-print is available` DeepChem provides a
+forum for the fair, critical evaluations that are not always conducted in
+individual methodological papers, which can be biased toward favoring a new
+proposed algorithm.  DragoNN, Deep RegulAtory GenOmic Neural Networks, offers
+not only code and a model zoo but also a detailed tutorial and partner package
+for simulating training data.  These resources, especially the ability to
+simulate datasets that are sufficiently complex to demonstrate the challenges of
+training neural networks but small enough to train quickly on a CPU, are
+important for (human) training and attracting machine learning researchers to
+problems in genomics and healthcare.  We have even included DragoNN and hands-on
+model training into the curriculum of a graduate student course.
 
 ### Multimodal, multi-task, and transfer learning
 
@@ -348,7 +411,7 @@ and drug toxicity prediction
 multi-task deep models on a set of industrial ADMET datasets. They confirmed
 that multi-task learning can improve performance over single-task models. They
 further showed that smaller datasets tend to benefit more from multitask
-learning than larger datasets. Results emphasized that multitask effects are
+learning than larger datasets. Results emphasized that multi-task effects are
 highly dataset-dependent, suggesting the use of dataset-specific models to
 maximize overall performance.
 
