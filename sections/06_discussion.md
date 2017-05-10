@@ -353,6 +353,7 @@ examples. When labels are available, convolutional neural networks (CNN) are
 ubiquitously used since they can be trained end-to-end with backpropagation
 and demonstrate state-of-the-art performance in many discriminative tasks
 [@tag:Angermueller2016_dl_review].
+
 Jha et al. [@tag:Jha2017_integrative_models] showed that an integrated training
 approach delivers better performance compared to individual networks. They
 compared a number of feed-forward architectures trained on RNA-seq data
@@ -381,6 +382,7 @@ DNA methylation, and miRNA expression data [@tag:Liang2015_exprs_cancer].
 This approach allowed for the capture of intrinsic relationships in
 different modalities and for better clustering performance over conventional
 k-means based methods.
+
 Multimodal learning with CNNs is usually implemented as a collection of
 individual networks in which each learns representations from single data type.
 These individual representations are further concatenated before or within
