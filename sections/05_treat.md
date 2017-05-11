@@ -238,9 +238,9 @@ additional references besides this review`, and the 2012 Merck Molecular
 Activity Challenge on Kaggle generated substantial excitement about the
 potential for high-parameter deep learning approaches.  The winning submission
 was an ensemble that included a multitask multilayer perceptron network
-[@tag:Dahl2014_multi_qsar], and the Merck sponsors noted drastic improvements
-over a random forest (RF) baseline, remarking "we have seldom seen any method in
-the past 10 years that could consistently outperform RF by such a margin"
+[@tag:Dahl2014_multi_qsar], and the sponsors noted drastic improvements over a
+random forest (RF) baseline, remarking "we have seldom seen any method in the
+past 10 years that could consistently outperform RF by such a margin"
 [@tag:Ma2015_qsar_merck]. Subsequent work explored the effects of jointly
 modeling far more targets than the Merck challenge
 [@tag:Unterthiner2014_screening @tag:Ramsundar2015_multitask_drug], with
