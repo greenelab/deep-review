@@ -15,3 +15,4 @@
 | annecarpenter | Anne E. Carpenter | 0000-0003-1555-8261 | Imaging Platform, Broad Institute of Harvard and MIT | anne@broadinstitute.org | Yes | NIH R01GM089652 |
 | evancofer | Evan M. Cofer | 0000-0003-3877-0433 | Department of Computer Science. Trinity University. | ecofer@princeton.edu | Yes | NSF MRI-ACI-1531594 |
 | DaveDeCaprio | Dave DeCaprio | 0000-0001-8931-9461 | ClosedLoop.ai | daved@alum.mit.edu | Yes | |
+| akundaje | Anshul Kundaje | 0000-0003-3084-2287 | Dept. of Genetics, Dept. of Computer Science, Stanford University | akundaje@stanford.edu | Yes | NIH DP2GM123485 |
