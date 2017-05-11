@@ -332,7 +332,10 @@ In another example, Min et al.
 [@tag:Min2016_deepenhancer] demonstrated how training on the experimentally
 validated FANTOM5 permissive enhancer dataset followed by fine-tuning on ENCODE
 enhancer datasets improved cell type-specific predictions, outperforming
-state-of-the-art results.
+state-of-the-art results.  In drug design, general RNN models trained to
+generate molecules from the ChEMBL database have been fine-tuned to produce
+drug-like compounds for specific targets [@tag:Segler2017_drug_design
+@tag:Olivecrona2017_drug_design].
 
 Related to transfer learning, multimodal learning assumes
 simultaneous learning from various types of inputs, such as images and text.
