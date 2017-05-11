@@ -2234,3 +2234,57 @@ develop do not.},
  year = {2016}
 }
 
+
+@article{1EayJRsI,
+ abstract = {This work introduces a method to tune a sequence-based generative model for
+molecular de novo design that through augmented episodic likelihood can learn
+to generate structures with certain specified desirable properties. We
+demonstrate how this model can execute a range of tasks such as generating
+analogues to a query structure and generating compounds predicted to be active
+against a biological target. As a proof of principle, the model is first
+trained to generate molecules that do not contain sulphur. As a second example, the model is trained to generate analogues to the drug Celecoxib, a technique
+that could be used for scaffold hopping or library expansion starting from a
+single molecule. Finally, when tuning the model towards generating compounds
+predicted to be active against the dopamine receptor D2, the model generates
+structures of which more than 95% are predicted to be active, including
+experimentally confirmed actives that have not been included in either the
+generative model nor the activity prediction model.},
+ archiveprefix = {arXiv},
+ author = {Marcus Olivecrona and Thomas Blaschke and Ola Engkvist and Hongming Chen},
+ eprint = {1704.07555v1},
+ file = {1704.07555v1.pdf},
+ link = {http://arxiv.org/abs/1704.07555v1},
+ month = {Apr},
+ primaryclass = {cs.AI},
+ title = {Molecular De Novo Design through Deep Reinforcement Learning},
+ year = {2017}
+}
+
+
+@article{8LWFFeYg,
+ abstract = {In de novo drug design, computational strategies are used to generate novel
+molecules with good affinity to the desired biological target. In this work, we
+show that recurrent neural networks can be trained as generative models for
+molecular structures, similar to statistical language models in natural
+language processing. We demonstrate that the properties of the generated
+molecules correlate very well with the properties of the molecules used to
+train the model. In order to enrich libraries with molecules active towards a
+given biological target, we propose to fine-tune the model with small sets of
+molecules, which are known to be active against that target.
+Against Staphylococcus aureus, the model reproduced 14% of 6051 hold-out test
+molecules that medicinal chemists designed, whereas against Plasmodium
+falciparum (Malaria) it reproduced 28% of 1240 test molecules. When coupled
+with a scoring function, our model can perform the complete de novo drug design
+cycle to generate large sets of novel molecules for drug discovery.},
+ archiveprefix = {arXiv},
+ author = {Marwin H. S. Segler and Thierry Kogej and Christian Tyrchan and Mark P. Waller},
+ eprint = {1701.01329v1},
+ file = {1701.01329v1.pdf},
+ link = {http://arxiv.org/abs/1701.01329v1},
+ month = {Jan},
+ primaryclass = {cs.NE},
+ title = {Generating Focussed Molecule Libraries for Drug Discovery with Recurrent
+Neural Networks},
+ year = {2017}
+}
+

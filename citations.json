@@ -38876,5 +38876,336 @@
       "id": "3JyJ3DTh"
     },
     "citation_id": "3JyJ3DTh"
+  },
+  "doi:10.1002/wcms.1104": {
+    "source": "doi",
+    "identifer": "10.1002/wcms.1104",
+    "standard_citation": "doi:10.1002/wcms.1104",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            5,
+            10
+          ]
+        ],
+        "date-time": "2017-05-10T18:50:42Z",
+        "timestamp": 1494442242814
+      },
+      "reference-count": 167,
+      "publisher": "Wiley-Blackwell",
+      "issue": "5",
+      "license": [
+        {
+          "URL": "http://doi.wiley.com/10.1002/tdm_license_1.1",
+          "start": {
+            "date-parts": [
+              [
+                2015,
+                9,
+                1
+              ]
+            ],
+            "date-time": "2015-09-01T00:00:00Z",
+            "timestamp": 1441065600000
+          },
+          "delay-in-days": 1231,
+          "content-version": "tdm"
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "WIREs Comput Mol Sci"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2012,
+            9
+          ]
+        ]
+      },
+      "DOI": "10.1002/wcms.1104",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2012,
+            4,
+            18
+          ]
+        ],
+        "date-time": "2012-04-18T18:19:50Z",
+        "timestamp": 1334773190000
+      },
+      "page": "717-733",
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": "The enumeration of chemical space",
+      "prefix": "10.1002",
+      "volume": "2",
+      "author": [
+        {
+          "given": "Jean-Louis",
+          "family": "Reymond",
+          "affiliation": []
+        },
+        {
+          "given": "Lars",
+          "family": "Ruddigkeit",
+          "affiliation": []
+        },
+        {
+          "given": "Lorenz",
+          "family": "Blum",
+          "affiliation": []
+        },
+        {
+          "given": "Ruud",
+          "family": "van Deursen",
+          "affiliation": []
+        }
+      ],
+      "member": "311",
+      "published-online": {
+        "date-parts": [
+          [
+            2012,
+            4,
+            18
+          ]
+        ]
+      },
+      "container-title": "Wiley Interdisciplinary Reviews: Computational Molecular Science",
+      "original-title": [],
+      "link": [
+        {
+          "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fwcms.1104",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2017,
+            3,
+            29
+          ]
+        ],
+        "date-time": "2017-03-29T21:25:23Z",
+        "timestamp": 1490822723000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2012,
+            4,
+            18
+          ]
+        ]
+      },
+      "references-count": 167,
+      "URL": "http://dx.doi.org/10.1002/wcms.1104",
+      "relation": {
+        "cites": []
+      },
+      "issn-type": [
+        {
+          "value": "1759-0876",
+          "type": "print"
+        }
+      ],
+      "id": "WeiyYhfy"
+    },
+    "citation_id": "WeiyYhfy"
+  },
+  "doi:10.1093/nar/gkr777": {
+    "source": "doi",
+    "identifer": "10.1093/nar/gkr777",
+    "standard_citation": "doi:10.1093/nar/gkr777",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            5,
+            9
+          ]
+        ],
+        "date-time": "2017-05-09T18:42:36Z",
+        "timestamp": 1494355356273
+      },
+      "reference-count": 32,
+      "publisher": "Oxford University Press (OUP)",
+      "issue": "D1",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Nucleic Acids Research"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2012,
+            1,
+            1
+          ]
+        ]
+      },
+      "DOI": "10.1093/nar/gkr777",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2011,
+            9,
+            24
+          ]
+        ],
+        "date-time": "2011-09-24T00:21:22Z",
+        "timestamp": 1316823682000
+      },
+      "page": "D1100-D1107",
+      "source": "Crossref",
+      "is-referenced-by-count": 941,
+      "title": "ChEMBL: a large-scale bioactivity database for drug discovery",
+      "prefix": "10.1093",
+      "volume": "40",
+      "author": [
+        {
+          "given": "A.",
+          "family": "Gaulton",
+          "affiliation": []
+        },
+        {
+          "given": "L. J.",
+          "family": "Bellis",
+          "affiliation": []
+        },
+        {
+          "given": "A. P.",
+          "family": "Bento",
+          "affiliation": []
+        },
+        {
+          "given": "J.",
+          "family": "Chambers",
+          "affiliation": []
+        },
+        {
+          "given": "M.",
+          "family": "Davies",
+          "affiliation": []
+        },
+        {
+          "given": "A.",
+          "family": "Hersey",
+          "affiliation": []
+        },
+        {
+          "given": "Y.",
+          "family": "Light",
+          "affiliation": []
+        },
+        {
+          "given": "S.",
+          "family": "McGlinchey",
+          "affiliation": []
+        },
+        {
+          "given": "D.",
+          "family": "Michalovich",
+          "affiliation": []
+        },
+        {
+          "given": "B.",
+          "family": "Al-Lazikani",
+          "affiliation": []
+        },
+        {
+          "given": "J. P.",
+          "family": "Overington",
+          "affiliation": []
+        }
+      ],
+      "member": "286",
+      "published-online": {
+        "date-parts": [
+          [
+            2011,
+            9,
+            23
+          ]
+        ]
+      },
+      "container-title": "Nucleic Acids Research",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            23
+          ]
+        ],
+        "date-time": "2017-01-23T21:02:13Z",
+        "timestamp": 1485205333000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2011,
+            9,
+            23
+          ]
+        ]
+      },
+      "references-count": 32,
+      "URL": "http://dx.doi.org/10.1093/nar/gkr777",
+      "relation": {},
+      "issn-type": [
+        {
+          "value": "0305-1048",
+          "type": "print"
+        },
+        {
+          "value": "1362-4962",
+          "type": "electronic"
+        }
+      ],
+      "subject": [
+        "Genetics"
+      ],
+      "id": "x1nE5icc"
+    },
+    "citation_id": "x1nE5icc"
+  },
+  "arxiv:1704.07555": {
+    "source": "arxiv",
+    "identifer": "1704.07555",
+    "standard_citation": "arxiv:1704.07555",
+    "bibtex": "@article{1EayJRsI,\n abstract = {This work introduces a method to tune a sequence-based generative model for\nmolecular de novo design that through augmented episodic likelihood can learn\nto generate structures with certain specified desirable properties. We\ndemonstrate how this model can execute a range of tasks such as generating\nanalogues to a query structure and generating compounds predicted to be active\nagainst a biological target. As a proof of principle, the model is first\ntrained to generate molecules that do not contain sulphur. As a second example, the model is trained to generate analogues to the drug Celecoxib, a technique\nthat could be used for scaffold hopping or library expansion starting from a\nsingle molecule. Finally, when tuning the model towards generating compounds\npredicted to be active against the dopamine receptor D2, the model generates\nstructures of which more than 95% are predicted to be active, including\nexperimentally confirmed actives that have not been included in either the\ngenerative model nor the activity prediction model.},\n archiveprefix = {arXiv},\n author = {Marcus Olivecrona and Thomas Blaschke and Ola Engkvist and Hongming Chen},\n eprint = {1704.07555v1},\n file = {1704.07555v1.pdf},\n link = {http://arxiv.org/abs/1704.07555v1},\n month = {Apr},\n primaryclass = {cs.AI},\n title = {Molecular De Novo Design through Deep Reinforcement Learning},\n year = {2017}\n}\n\n",
+    "citation_id": "1EayJRsI"
+  },
+  "arxiv:1701.01329": {
+    "source": "arxiv",
+    "identifer": "1701.01329",
+    "standard_citation": "arxiv:1701.01329",
+    "bibtex": "@article{8LWFFeYg,\n abstract = {In de novo drug design, computational strategies are used to generate novel\nmolecules with good affinity to the desired biological target. In this work, we\nshow that recurrent neural networks can be trained as generative models for\nmolecular structures, similar to statistical language models in natural\nlanguage processing. We demonstrate that the properties of the generated\nmolecules correlate very well with the properties of the molecules used to\ntrain the model. In order to enrich libraries with molecules active towards a\ngiven biological target, we propose to fine-tune the model with small sets of\nmolecules, which are known to be active against that target.\nAgainst Staphylococcus aureus, the model reproduced 14% of 6051 hold-out test\nmolecules that medicinal chemists designed, whereas against Plasmodium\nfalciparum (Malaria) it reproduced 28% of 1240 test molecules. When coupled\nwith a scoring function, our model can perform the complete de novo drug design\ncycle to generate large sets of novel molecules for drug discovery.},\n archiveprefix = {arXiv},\n author = {Marwin H. S. Segler and Thierry Kogej and Christian Tyrchan and Mark P. Waller},\n eprint = {1701.01329v1},\n file = {1701.01329v1.pdf},\n link = {http://arxiv.org/abs/1701.01329v1},\n month = {Jan},\n primaryclass = {cs.NE},\n title = {Generating Focussed Molecule Libraries for Drug Discovery with Recurrent\nNeural Networks},\n year = {2017}\n}\n\n",
+    "citation_id": "8LWFFeYg"
   }
 }

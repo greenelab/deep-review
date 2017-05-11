@@ -38,6 +38,7 @@ text	citation	standard_citation	citation_id
 @doi:10.1002/cyto.a.22909	doi:10.1002/cyto.a.22909	doi:10.1002/cyto.a.22909	m3Ij21U8
 @doi:10.1002/minf.201501008	doi:10.1002/minf.201501008	doi:10.1002/minf.201501008	gJE0ExFr
 @doi:10.1002/pmic.201100196	doi:10.1002/pmic.201100196	doi:10.1002/pmic.201100196	NnpYUsi
+@doi:10.1002/wcms.1104	doi:10.1002/wcms.1104	doi:10.1002/wcms.1104	WeiyYhfy
 @doi:10.1006/jmbi.1999.3091	doi:10.1006/jmbi.1999.3091	doi:10.1006/jmbi.1999.3091	Aic7UyXM
 @doi:10.1007/978-3-319-16706-0_20	doi:10.1007/978-3-319-16706-0_20	doi:10.1007/978-3-319-16706-0_20	17B2QAA1k
 @doi:10.1007/978-3-319-24574-4_28	doi:10.1007/978-3-319-24574-4_28	doi:10.1007/978-3-319-24574-4_28	TutLhFSz
@@ -106,6 +107,7 @@ text	citation	standard_citation	citation_id
 @doi:10.1093/jamia/ocw011	doi:10.1093/jamia/ocw011	doi:10.1093/jamia/ocw011	A9JeoGV8
 @doi:10.1093/nar/gkm238	doi:10.1093/nar/gkm238	doi:10.1093/nar/gkm238	1EyJfuWqh
 @doi:10.1093/nar/gkq747	doi:10.1093/nar/gkq747	doi:10.1093/nar/gkq747	QlbXLqH
+@doi:10.1093/nar/gkr777	doi:10.1093/nar/gkr777	doi:10.1093/nar/gkr777	x1nE5icc
 @doi:10.1093/nar/gku1058	doi:10.1093/nar/gku1058	doi:10.1093/nar/gku1058	12aqvAgz6
 @doi:10.1097/00000542-199004000-00024	doi:10.1097/00000542-199004000-00024	doi:10.1097/00000542-199004000-00024	nPRpl05n
 @doi:10.1101/036129	doi:10.1101/036129	doi:10.1101/036129	s5sy4AOi
@@ -300,6 +302,7 @@ text	citation	standard_citation	citation_id
 @tag:Ngiam2011	url:https://ai.stanford.edu/~ang/papers/icml11-MultimodalDeepLearning.pdf	url:https://ai.stanford.edu/~ang/papers/icml11-MultimodalDeepLearning.pdf	1eN66lwn
 @tag:Nguyen2014_adversarial	arxiv:1412.1897v4	arxiv:1412.1897v4	1AkF8Wsv7
 @tag:Nie2016_3d_survival	doi:10.1007/978-3-319-46723-8_25	doi:10.1007/978-3-319-46723-8_25	18EpaZ7QB
+@tag:Olivecrona2017_drug_design	arxiv:1704.07555	arxiv:1704.07555	1EayJRsI
 @tag:Papernot2017_pate	url:https://openreview.net/forum?id=HkwoSDPgg	url:https://openreview.net/forum?id=HkwoSDPgg	b8DJ1u6W
 @tag:Park2016_deepmirgene	arxiv:1605.00017	arxiv:1605.00017	1TeyWffV
 @tag:Parnamaa2017	doi:10.1534/g3.116.033654	doi:10.1534/g3.116.033654	2a7MHtAx
@@ -325,6 +328,7 @@ text	citation	standard_citation	citation_id
 @tag:Schmidhuber2014_dnn_overview	doi:10.1016/j.neunet.2014.09.003	doi:10.1016/j.neunet.2014.09.003	BQS8ClV0
 @tag:Scotti2016_missplicing	doi:10.1038/nrg.2015.3	doi:10.1038/nrg.2015.3	QFK6GapR
 @tag:Segata	doi:10.1371/journal.pcbi.1004977	doi:10.1371/journal.pcbi.1004977	y9s5irW
+@tag:Segler2017_drug_design	arxiv:1701.01329	arxiv:1701.01329	8LWFFeYg
 @tag:Seide2014_parallel	doi:10.1109/ICASSP.2014.6853593	doi:10.1109/icassp.2014.6853593	IULiPa6L
 @tag:Setty2015_seqgl	doi:10.1371/journal.pcbi.1004271	doi:10.1371/journal.pcbi.1004271	138dgb9Ca
 @tag:Shaham2016_batch_effects	arxiv:1610.04181	arxiv:1610.04181	T2Md9xLY
