@@ -16,3 +16,5 @@
 | evancofer | Evan M. Cofer | 0000-0003-3877-0433 | Department of Computer Science. Trinity University. | ecofer@princeton.edu | Yes | NSF MRI-ACI-1531594 |
 | DaveDeCaprio | Dave DeCaprio | 0000-0001-8931-9461 | ClosedLoop.ai | daved@alum.mit.edu | Yes | |
 | akundaje | Anshul Kundaje | 0000-0003-3084-2287 | Dept. of Genetics, Dept. of Computer Science, Stanford University | akundaje@stanford.edu | Yes | NIH DP2GM123485 |
+| yfpeng | Yifan Peng | 0000-0001-9309-8331 | National Center for Biotechnology Information, National Library of Medicine, National Institutes of Health | yifan.peng@nih.gov | Yes | National Institutes of Health Intramural Research Program and National Library of Medicine
+| N/A | Zhiyong Lu | 0000-0001-9998-916X | National Center for Biotechnology Information, National Library of Medicine, National Institutes of Health | luzh@ncbi.nlm.nih.gov | Yes | National Institutes of Health Intramural Research Program and National Library of Medicine |
