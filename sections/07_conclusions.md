@@ -42,15 +42,19 @@ molecules from a massive search space would have immense practical value even if
 its overall precision is modest.  In medical imaging, deep learning can point an
 expert to the most challenging cases that require manual review
 [@doi:10.1148/radiol.2017162326], though the risk of false negatives must be
-addressed.
+addressed.  In protein structure prediction, errors in individual
+residue-residue contacts can be tolerated when using the contacts jointly for 3D
+structure modeling.  Improved contact map predictions
+[@tag:Wang2016_protein_contact] have led to notable improvements in fold and 3D
+structure prediction for some of the most challenging proteins, such as membrane
+proteins.
 
 Conversely, the most challenging tasks may be those in which predictions are
 used directly for downstream modeling or decision-making, especially in the
-clinic.  As an example, errors in a predicted protein contact map could be
-amplified if that contact map is used directly for 3D structure prediction.  In
-addition, the stochasticity and complexity of biological systems implies that
-for some problems, for instance, predicting gene regulation in disease, perfect
-accuracy will be unattainable.
+clinic.  As an example, errors in sequence variant calling will be amplified if
+they are used directly for GWAS. In addition, the stochasticity and complexity
+of biological systems implies that for some problems, for instance, predicting
+gene regulation in disease, perfect accuracy will be unattainable.
 
 We are witnessing deep learning models achieving human-level performance across
 a number of biomedical domains, and yet do not believe that biologists and
