@@ -39207,5 +39207,130 @@
     "standard_citation": "arxiv:1701.01329",
     "bibtex": "@article{8LWFFeYg,\n abstract = {In de novo drug design, computational strategies are used to generate novel\nmolecules with good affinity to the desired biological target. In this work, we\nshow that recurrent neural networks can be trained as generative models for\nmolecular structures, similar to statistical language models in natural\nlanguage processing. We demonstrate that the properties of the generated\nmolecules correlate very well with the properties of the molecules used to\ntrain the model. In order to enrich libraries with molecules active towards a\ngiven biological target, we propose to fine-tune the model with small sets of\nmolecules, which are known to be active against that target.\nAgainst Staphylococcus aureus, the model reproduced 14% of 6051 hold-out test\nmolecules that medicinal chemists designed, whereas against Plasmodium\nfalciparum (Malaria) it reproduced 28% of 1240 test molecules. When coupled\nwith a scoring function, our model can perform the complete de novo drug design\ncycle to generate large sets of novel molecules for drug discovery.},\n archiveprefix = {arXiv},\n author = {Marwin H. S. Segler and Thierry Kogej and Christian Tyrchan and Mark P. Waller},\n eprint = {1701.01329v1},\n file = {1701.01329v1.pdf},\n link = {http://arxiv.org/abs/1701.01329v1},\n month = {Jan},\n primaryclass = {cs.NE},\n title = {Generating Focussed Molecule Libraries for Drug Discovery with Recurrent\nNeural Networks},\n year = {2017}\n}\n\n",
     "citation_id": "8LWFFeYg"
+  },
+  "arxiv:1609.08144": {
+    "source": "arxiv",
+    "identifer": "1609.08144",
+    "standard_citation": "arxiv:1609.08144",
+    "bibtex": "@article{4TK06zOf,\n abstract = {Neural Machine Translation (NMT) is an end-to-end learning approach for\nautomated translation, with the potential to overcome many of the weaknesses of\nconventional phrase-based translation systems. Unfortunately, NMT systems are\nknown to be computationally expensive both in training and in translation\ninference. Also, most NMT systems have difficulty with rare words. These issues\nhave hindered NMT's use in practical deployments and services, where both\naccuracy and speed are essential. In this work, we present GNMT, Google's\nNeural Machine Translation system, which attempts to address many of these\nissues. Our model consists of a deep LSTM network with 8 encoder and 8 decoder\nlayers using attention and residual connections. To improve parallelism and\ntherefore decrease training time, our attention mechanism connects the bottom\nlayer of the decoder to the top layer of the encoder. To accelerate the final\ntranslation speed, we employ low-precision arithmetic during inference\ncomputations. To improve handling of rare words, we divide words into a limited\nset of common sub-word units (\"wordpieces\") for both input and output. This\nmethod provides a good balance between the flexibility of \"character\"-delimited\nmodels and the efficiency of \"word\"-delimited models, naturally handles\ntranslation of rare words, and ultimately improves the overall accuracy of the\nsystem. Our beam search technique employs a length-normalization procedure and\nuses a coverage penalty, which encourages generation of an output sentence that\nis most likely to cover all the words in the source sentence. On the WMT'14\nEnglish-to-French and English-to-German benchmarks, GNMT achieves competitive\nresults to state-of-the-art. Using a human side-by-side evaluation on a set of\nisolated simple sentences, it reduces translation errors by an average of 60%\ncompared to Google's phrase-based production system.},\n archiveprefix = {arXiv},\n author = {Yonghui Wu and Mike Schuster and Zhifeng Chen and Quoc V. Le and Mohammad Norouzi and Wolfgang Macherey and Maxim Krikun and Yuan Cao and Qin Gao and Klaus Macherey and Jeff Klingner and Apurva Shah and Melvin Johnson and Xiaobing Liu and Łukasz Kaiser and Stephan Gouws and Yoshikiyo Kato and Taku Kudo and Hideto Kazawa and Keith Stevens and George Kurian and Nishant Patil and Wei Wang and Cliff Young and Jason Smith and Jason Riesa and Alex Rudnick and Oriol Vinyals and Greg Corrado and Macduff Hughes and Jeffrey Dean},\n eprint = {1609.08144v2},\n file = {1609.08144v2.pdf},\n link = {http://arxiv.org/abs/1609.08144v2},\n month = {Sep},\n primaryclass = {cs.CL},\n title = {Google's Neural Machine Translation System: Bridging the Gap between\nHuman and Machine Translation},\n year = {2016}\n}\n\n",
+    "citation_id": "4TK06zOf"
+  },
+  "doi:10.1038/ncomms5308": {
+    "source": "doi",
+    "identifer": "10.1038/ncomms5308",
+    "standard_citation": "doi:10.1038/ncomms5308",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            5,
+            4
+          ]
+        ],
+        "date-time": "2017-05-04T13:10:01Z",
+        "timestamp": 1493903401757
+      },
+      "reference-count": 25,
+      "publisher": "Springer Nature",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Nat Comms"
+      ],
+      "DOI": "10.1038/ncomms5308",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2014,
+            7,
+            2
+          ]
+        ],
+        "date-time": "2014-07-02T12:16:16Z",
+        "timestamp": 1404303376000
+      },
+      "source": "Crossref",
+      "is-referenced-by-count": 48,
+      "title": "Searching for exotic particles in high-energy physics with deep learning",
+      "prefix": "10.1038",
+      "volume": "5",
+      "author": [
+        {
+          "given": "P.",
+          "family": "Baldi",
+          "affiliation": []
+        },
+        {
+          "given": "P.",
+          "family": "Sadowski",
+          "affiliation": []
+        },
+        {
+          "given": "D.",
+          "family": "Whiteson",
+          "affiliation": []
+        }
+      ],
+      "member": "339",
+      "published-online": {
+        "date-parts": [
+          [
+            2014,
+            7,
+            2
+          ]
+        ]
+      },
+      "container-title": "Nature Communications",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2014,
+            7,
+            2
+          ]
+        ],
+        "date-time": "2014-07-02T12:16:16Z",
+        "timestamp": 1404303376000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2014,
+            7,
+            2
+          ]
+        ]
+      },
+      "references-count": 25,
+      "alternative-id": [
+        "ncomms5308"
+      ],
+      "URL": "http://dx.doi.org/10.1038/ncomms5308",
+      "relation": {
+        "cites": []
+      },
+      "issn-type": [
+        {
+          "value": "2041-1723",
+          "type": "electronic"
+        }
+      ],
+      "subject": [
+        "Biochemistry, Genetics and Molecular Biology(all)",
+        "Physics and Astronomy(all)",
+        "Chemistry(all)"
+      ],
+      "id": "TDruxF1s"
+    },
+    "citation_id": "TDruxF1s"
   }
 }
