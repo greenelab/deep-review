@@ -47,7 +47,7 @@ residue-residue contacts can be tolerated when using the contacts jointly for 3D
 structure modeling.  Improved contact map predictions
 [@tag:Wang2016_protein_contact] have led to notable improvements in fold and 3D
 structure prediction for some of the most challenging proteins, such as membrane
-proteins.
+proteins [@arxiv:1704.07207].
 
 Conversely, the most challenging tasks may be those in which predictions are
 used directly for downstream modeling or decision-making, especially in the
