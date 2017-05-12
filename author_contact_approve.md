@@ -16,3 +16,4 @@
 | evancofer | Evan M. Cofer | 0000-0003-3877-0433 | Department of Computer Science. Trinity University. | ecofer@princeton.edu | Yes | NSF MRI-ACI-1531594 |
 | DaveDeCaprio | Dave DeCaprio | 0000-0001-8931-9461 | ClosedLoop.ai | daved@alum.mit.edu | Yes | |
 | akundaje | Anshul Kundaje | 0000-0003-3084-2287 | Dept. of Genetics, Dept. of Computer Science, Stanford University | akundaje@stanford.edu | Yes | NIH DP2GM123485 |
+| sw1 | Stephen Woloszynek | 0000-0003-0568-298X | Department of Electrical and Computer Engineering, Drexel University | sw424@drexel.edu | Yes | |
