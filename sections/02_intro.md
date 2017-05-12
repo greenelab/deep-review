@@ -81,14 +81,15 @@ strategic inflection point in the practice of biology or medicine. We structure
 the review with an eye on precision medicine.
 
 There are numerous examples where deep learning has been applied to biological
-problems and produced somewhat improved results, and there are numerous reviews
-that have focused on general applications of deep learning in biology
-[@doi:10.1038/nbt.3313 @doi:10.1002/minf.201501008
-@doi:10.3109/10409238.2015.1135868 @doi:10.1021/acs.molpharmaceut.5b00982
-@doi:10.15252/msb.20156651 @doi:10.1093/bib/bbw068]. Specifically, we have
-sought cases where deep learning enables researchers to solve challenges that
-were previously considered infeasible, or if it makes difficult, tedious, and
-non-routine analyses routine.
+problems and improved results as well as reviews focused on applications of deep
+learning in biology [@doi:10.1038/nbt.3313
+@doi:10.1021/acs.molpharmaceut.5b00982 @doi:10.15252/msb.20156651
+@doi:10.1093/bib/bbw068 @doi:10.3109/10409238.2015.1135868], healthcare
+[@doi:10.1093/bib/bbx044], and drug discovery [@doi:10.1002/minf.201501008
+@doi:10.1002/jcc.24764 @tag:PerezSianes2016_screening
+@tag:Baskin2015_drug_disc].  We sought cases where deep learning enables
+researchers to solve challenges that were previously considered infeasible or
+makes difficult, tedious analyses routine.
 
 We find that domain-specific considerations have greatly influenced how to best
 harness the power and flexibility of deep learning. Model interpretability is
