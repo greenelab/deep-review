@@ -17,3 +17,4 @@
 | DaveDeCaprio | Dave DeCaprio | 0000-0001-8931-9461 | ClosedLoop.ai | daved@alum.mit.edu | Yes | |
 | akundaje | Anshul Kundaje | 0000-0003-3084-2287 | Dept. of Genetics, Dept. of Computer Science, Stanford University | akundaje@stanford.edu | Yes | NIH DP2GM123485 |
 | sw1 | Stephen Woloszynek | 0000-0003-0568-298X | Department of Electrical and Computer Engineering, Drexel University | sw424@drexel.edu | Yes | |
+| yfpeng | Yifan Peng | 0000-0001-9309-8331 | National Center for Biotechnology Information, National Library of Medicine, National Institutes of Health | yifan.peng@nih.gov | Yes | National Institutes of Health Intramural Research Program and National Library of Medicine |
