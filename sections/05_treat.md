@@ -202,28 +202,25 @@ repositioning is currently missing.
 ### Ligand-Based Prediction of Bioactivity
 
 In the biomedical domain, high-throughput chemical screening aims to improve
-therapeutic options over a long term horizon [@tag:PerezSianes2016_screening]
-`TODO: add another general screening reference`.  The objective is to discover
-which small molecules (also referred to as chemical compounds or ligands)
-effectively and specifically affect the activity of a target, such as a kinase,
-protein-protein interaction, or broader cellular phenotype.  `TODO: clarify
-desired outputs, what will be done with the top-ranked hits, one vs multiple
-hits, abandoning lead compounds` This screening process can serve as one of the
-first steps in the long drug discovery pipeline, where novel chemicals are
-pursued for their ability to inhibit or enhance disease-relevant biological
-mechanisms.  The appeal of machine learning in this domain is the need to
-improve the efficiency of the initial high-throughput screens such that
-sufficient candidate active compounds can be identified without exhaustively
-screening libraries of hundreds of thousands or millions of chemicals.  `TODO:
-is the sufficient number target dependent?` Predicting chemical activity
-computationally is known as virtual screening.  This task has been treated
-variously as a classification, regression, or ranking problem. In reality, it
-does not fit neatly into any of those categories.  An ideal algorithm will rank
-a sufficient number of active compounds before the inactives, but the rankings
-of actives relative to other actives and inactives are less important
-[@tag:Swamidass2009_irv]. `TODO: can improve this first attempt at an intro by
-reviewing more existing literature on the topic` `TODO: check which other
-existing reviews should be referenced`
+therapeutic options over a long term horizon [@tag:PerezSianes2016_screening].
+The objective is to discover which small molecules (also referred to as chemical
+compounds or ligands) effectively and specifically affect the activity of a
+target, such as a kinase, protein-protein interaction, or broader cellular
+phenotype.  `TODO: clarify desired outputs, what will be done with the
+top-ranked hits, one vs multiple hits, abandoning lead compounds` This screening
+process can serve as one of the first steps in the long drug discovery pipeline,
+where novel chemicals are pursued for their ability to inhibit or enhance
+disease-relevant biological mechanisms.  The appeal of machine learning in this
+domain is the need to improve the efficiency of the initial high-throughput
+screens such that sufficient candidate active compounds can be identified
+without exhaustively screening libraries of hundreds of thousands or millions of
+chemicals.  `TODO: is the sufficient number target dependent?` Predicting
+chemical activity computationally is known as virtual screening.  This task has
+been treated variously as a classification, regression, or ranking problem. In
+reality, it does not fit neatly into any of those categories.  An ideal
+algorithm will rank a sufficient number of active compounds before the
+inactives, but the rankings of actives relative to other actives and inactives
+are less important [@tag:Swamidass2009_irv].
 
 Here we primarily focus on ligand-based approaches that train on chemicals'
 features without requiring prior knowledge of the target. Chemical features may
@@ -233,16 +230,16 @@ molecular graph, and more sophisticated derived properties
 [@doi:10.1002/9783527628766].   Alternatively, chemicals can be characterized
 with the fingerprint bit vectors, textual strings, or novel learned
 representations described below. Neural networks have a long history in this
-domain [@tag:Baskin2015_drug_disc] `TODO: can add additional references besides
-this review`, and the 2012 Merck Molecular Activity Challenge on Kaggle
-generated substantial excitement about the potential for high-parameter deep
-learning approaches.  The winning submission was an ensemble that included a
-multitask multilayer perceptron network [@tag:Dahl2014_multi_qsar], and the
-sponsors noted drastic improvements over a random forest (RF) baseline,
-remarking "we have seldom seen any method in the past 10 years that could
-consistently outperform RF by such a margin" [@tag:Ma2015_qsar_merck].
-Subsequent work explored the effects of jointly modeling far more targets than
-the Merck challenge [@tag:Unterthiner2014_screening
+domain [@tag:Baskin2015_drug_disc], and the 2012 Merck Molecular Activity
+Challenge on Kaggle generated substantial excitement about the potential for
+high-parameter deep learning approaches.  The winning submission was an ensemble
+that included a multitask multilayer perceptron network
+[@tag:Dahl2014_multi_qsar], and the sponsors noted drastic improvements over a
+random forest (RF) baseline, remarking "we have seldom seen any method in the
+past 10 years that could consistently outperform RF by such a margin"
+[@tag:Ma2015_qsar_merck]. Subsequent work (reviewed in more detail by Goh et al.
+[@doi:10.1002/jcc.24764]) explored the effects of jointly modeling far more
+targets than the Merck challenge [@tag:Unterthiner2014_screening
 @tag:Ramsundar2015_multitask_drug], with [@tag:Ramsundar2015_multitask_drug]
 showing that the benefits of multi-task networks had not yet saturated even with
 259 targets.  Although a deep learning approach, DeepTox
@@ -262,23 +259,21 @@ metabolism, excretion, and toxicity (ADMET) tasks demonstrated that there are
 limitations to multi-task transfer learning that are in part a consequence of
 the degree to which tasks are related [@tag:Kearnes2016_admet]. Some of the
 ADMET datasets showed superior performance in multi-task models with only 22
-ADMET tasks compared to multi-task models with over 500 less-similar tasks.
-`TODO: also has a good discussion of information leakage in cross validation,
-include that in the Discussion section` In addition, training datasets
-encountered in practical applications may be tiny relative to what is available
-in public datasets and organized competitions.  A study of BACE-1 inhibitors
-included only 1547 compounds [@tag:Subramanian2016_bace1].  Machine learning
-models were able to train on this limited dataset, but overfitting was a
-challenge and the differences between random forests and a deep neural were
-negligible, especially in the classification setting.   Overfitting is still a
-problem in larger chemical screening datasets with tens or hundreds of thousands
-of compounds because the number of active compounds can be very small, on the
-order of 0.1% of all tested chemicals for a typical target
-[@doi:10.1002/wcms.1104]. This is consistent with the strong performance of
-low-parameter neural networks that emphasize compound-compound similarity, such
-as influence-relevance voter, [@tag:Swamidass2009_irv  @tag:Lusci2015_irv]
-instead of predicting compound activity directly from chemical features. `TODO:
-include recent DeepChem IRV benchmarks?`
+ADMET tasks compared to multi-task models with over 500 less-similar tasks. In
+addition, training datasets encountered in practical applications may be tiny
+relative to what is available in public datasets and organized competitions.  A
+study of BACE-1 inhibitors included only 1547 compounds
+[@tag:Subramanian2016_bace1].  Machine learning models were able to train on
+this limited dataset, but overfitting was a challenge and the differences
+between random forests and a deep neural were negligible, especially in the
+classification setting.   Overfitting is still a problem in larger chemical
+screening datasets with tens or hundreds of thousands of compounds because the
+number of active compounds can be very small, on the order of 0.1% of all tested
+chemicals for a typical target [@doi:10.1002/wcms.1104]. This is consistent with
+the strong performance of low-parameter neural networks that emphasize
+compound-compound similarity, such as influence-relevance voter,
+[@tag:Swamidass2009_irv @tag:Lusci2015_irv] instead of predicting compound
+activity directly from chemical features.
 
 Much of the recent excitement in this domain has come from what could be
 considered a creative experimentation phase, in which deep learning has offered
@@ -336,14 +331,16 @@ Currently, these methods are enticing but do not necessarily outperform classic
 approaches by a large margin.  The neural fingerprints
 [@tag:Duvenaud2015_graph_conv] were narrowly beaten by regression using
 traditional circular fingerprints on a drug efficacy prediction task (but were
-superior for predicting solubility or photovoltaic efficiency).  Graph
-convolutions [@tag:Kearnes2016_graph_conv] performed comparably to a multitask
-network using standard fingerprints and slightly better than the neural
-fingerprints [@tag:Duvenaud2015_graph_conv] on the drug efficacy task but were
-slightly worse than the influence-relevance voter method on an HIV dataset.
-[@tag:Swamidass2009_irv].  `TODO: there are also problems with some papers using
-ROC primarily for benchmarking, which skews results and makes it hard to assess
-absolute performance.  Add to the Discussion section.`
+superior for predicting solubility or photovoltaic efficiency).  In the original
+study, graph convolutions [@tag:Kearnes2016_graph_conv] performed comparably to
+a multitask network using standard fingerprints and slightly better than the
+neural fingerprints [@tag:Duvenaud2015_graph_conv] on the drug efficacy task but
+were slightly worse than the influence-relevance voter method on an HIV dataset.
+[@tag:Swamidass2009_irv].  Broader recent benchmarking has shown that relative
+merits of these methods depends on the dataset and cross validation strategy
+[@tag:Wu2017_molecule_net], though we again caution against over-interpreting
+AUC ROC-based results due to the active/inactive class imbalance (see
+Discussion).
 
 We remain optimistic for the potential of deep learning and specifically
 representation learning in this domain and propose that rigorous benchmarking on
