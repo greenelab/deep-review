@@ -802,7 +802,7 @@ anything of scientific or predictive value. This fact can undermine the privacy
 of patient data [@889LsjDi] or lead to severe discriminatory
 consequences [@6co0adq]. There is a small but
 growing literature on the prevention and mitigation of data leakage
-[@889LsjDi], as well a a closely-related literature on
+[@889LsjDi], as well as a closely-related literature on
 discriminatory model behavior [@1ENxzq6pT], but it remains difficult to
 predict when these problems will arise, how to diagnose them, and how to resolve
 them in practice. There is even disagreement about which kinds of algorithmic
@@ -2181,7 +2181,7 @@ Attention mechanisms dynamically weight the importance the neural network gives
 to each feature. By inspecting the attention weights for a particular sample, a
 practitioner can identify the important features behind a given prediction.
 Elsewhere, to improve interpretability Choi et al. [@UcRbawKo]
-inverted the typical architecture of recurrent neural networks .
+inverted the typical architecture of recurrent neural networks.
 In particular, they only used
 recurrent connections in the attention generating procedure, leaving the hidden
 state directly connected to the input variables. In the clinical domain, this
