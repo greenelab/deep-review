@@ -36923,6 +36923,304 @@
     "id": "TDruxF1s"
   },
   {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          4,
+          27
+        ]
+      ],
+      "date-time": "2017-04-27T02:10:25Z",
+      "timestamp": 1493259025668
+    },
+    "reference-count": 150,
+    "publisher": "Wiley-Blackwell",
+    "issue": "16",
+    "license": [
+      {
+        "URL": "http://doi.wiley.com/10.1002/tdm_license_1",
+        "start": {
+          "date-parts": [
+            [
+              2017,
+              3,
+              8
+            ]
+          ],
+          "date-time": "2017-03-08T00:00:00Z",
+          "timestamp": 1488931200000
+        },
+        "delay-in-days": 0,
+        "content-version": "tdm"
+      },
+      {
+        "URL": "http://onlinelibrary.wiley.com/termsAndConditions",
+        "start": {
+          "date-parts": [
+            [
+              2017,
+              3,
+              8
+            ]
+          ],
+          "date-time": "2017-03-08T00:00:00Z",
+          "timestamp": 1488931200000
+        },
+        "delay-in-days": 0,
+        "content-version": "vor"
+      }
+    ],
+    "funder": [
+      {
+        "name": "Pacific Northwest Laboratory Directed Research and Development (LDRD) Program and the Linus Pauling Distinguished Postdoctoral Fellowship",
+        "award": []
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "J. Comput. Chem."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          15
+        ]
+      ]
+    },
+    "DOI": "10.1002/jcc.24764",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          3,
+          8
+        ]
+      ],
+      "date-time": "2017-03-08T14:07:27Z",
+      "timestamp": 1488982047000
+    },
+    "page": "1291-1307",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "Deep learning for computational chemistry",
+    "prefix": "10.1002",
+    "volume": "38",
+    "author": [
+      {
+        "ORCID": "http://orcid.org/0000-0002-8858-0868",
+        "authenticated-orcid": false,
+        "given": "Garrett B.",
+        "family": "Goh",
+        "affiliation": [
+          {
+            "name": "Advanced Computing, Mathematics, and Data Division, Pacific Northwest National Laboratory; 902 Battelle Blvd Richland Washington 99354"
+          }
+        ]
+      },
+      {
+        "given": "Nathan O.",
+        "family": "Hodas",
+        "affiliation": [
+          {
+            "name": "Advanced Computing, Mathematics, and Data Division; Pacific Northwest National Laboratory; 902 Battelle Blvd Richland Washington 99354"
+          }
+        ]
+      },
+      {
+        "given": "Abhinav",
+        "family": "Vishnu",
+        "affiliation": [
+          {
+            "name": "Advanced Computing, Mathematics, and Data Division, Pacific Northwest National Laboratory; 902 Battelle Blvd Richland Washington 99354"
+          }
+        ]
+      }
+    ],
+    "member": "311",
+    "published-online": {
+      "date-parts": [
+        [
+          2017,
+          3,
+          8
+        ]
+      ]
+    },
+    "container-title": "Journal of Computational Chemistry",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fjcc.24764",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          4,
+          27
+        ]
+      ],
+      "date-time": "2017-04-27T01:30:55Z",
+      "timestamp": 1493256655000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          3,
+          8
+        ]
+      ]
+    },
+    "references-count": 150,
+    "URL": "http://dx.doi.org/10.1002/jcc.24764",
+    "relation": {
+      "cites": []
+    },
+    "issn-type": [
+      {
+        "value": "0192-8651",
+        "type": "print"
+      }
+    ],
+    "subject": [
+      "Chemistry(all)",
+      "Computational Mathematics"
+    ],
+    "id": "zCt6PUXj"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          5,
+          6
+        ]
+      ],
+      "date-time": "2017-05-06T12:10:07Z",
+      "timestamp": 1494072607543
+    },
+    "reference-count": 119,
+    "publisher": "Oxford University Press (OUP)",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "DOI": "10.1093/bib/bbx044",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          4,
+          5
+        ]
+      ],
+      "date-time": "2017-04-05T19:38:50Z",
+      "timestamp": 1491421130000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "Deep learning for healthcare: review, opportunities and challenges",
+    "prefix": "10.1093",
+    "author": [
+      {
+        "given": "Riccardo",
+        "family": "Miotto",
+        "affiliation": []
+      },
+      {
+        "given": "Fei",
+        "family": "Wang",
+        "affiliation": []
+      },
+      {
+        "given": "Shuang",
+        "family": "Wang",
+        "affiliation": []
+      },
+      {
+        "given": "Xiaoqian",
+        "family": "Jiang",
+        "affiliation": []
+      },
+      {
+        "given": "Joel T.",
+        "family": "Dudley",
+        "affiliation": []
+      }
+    ],
+    "member": "286",
+    "published-online": {
+      "date-parts": [
+        [
+          2017,
+          5,
+          6
+        ]
+      ]
+    },
+    "container-title": "Briefings in Bioinformatics",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          5,
+          6
+        ]
+      ],
+      "date-time": "2017-05-06T11:42:22Z",
+      "timestamp": 1494070942000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          5,
+          6
+        ]
+      ]
+    },
+    "references-count": 119,
+    "URL": "http://dx.doi.org/10.1093/bib/bbx044",
+    "relation": {},
+    "issn-type": [
+      {
+        "value": "1467-5463",
+        "type": "print"
+      },
+      {
+        "value": "1477-4054",
+        "type": "electronic"
+      }
+    ],
+    "subject": [
+      "Molecular Biology",
+      "Information Systems"
+    ],
+    "id": "11I7bLcP3"
+  },
+  {
     "abstract": "After a more than decade-long period of relatively little research activity in the area of recurrent neural networks, several new developments will be reviewed here that have allowed substantial progress both in understanding and in technical solutions towards more efficient training of recurrent networks. These advances have been motivated by and related to the optimization issues surrounding deep learning. Although recurrent networks are extremely powerful in what they can in principle represent in terms of modelling sequences,their training is plagued by two aspects of the same issue regarding the learning of long-term dependencies. Experiments reported here evaluate the use of clipping gradients, spanning longer time ranges with leaky integration, advanced momentum techniques, using more powerful output probability models, and encouraging sparser gradients to help symmetry breaking and credit assignment. The experiments are performed on text and music data and show off the combined effects of these techniques in generally improving both training and test error.",
     "author": [
       {
