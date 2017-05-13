@@ -620,7 +620,7 @@ anything of scientific or predictive value. This fact can undermine the privacy
 of patient data [@doi:10.1145/2382577.2382579] or lead to severe discriminatory
 consequences [@doi:10.1111/j.1740-9713.2016.00960.x]. There is a small but
 growing literature on the prevention and mitigation of data leakage
-[@doi:10.1145/2382577.2382579], as well a a closely-related literature on
+[@doi:10.1145/2382577.2382579], as well as a closely-related literature on
 discriminatory model behavior [@arxiv:1610.02413], but it remains difficult to
 predict when these problems will arise, how to diagnose them, and how to resolve
 them in practice. There is even disagreement about which kinds of algorithmic

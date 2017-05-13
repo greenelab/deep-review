@@ -58,7 +58,7 @@ Attention mechanisms dynamically weight the importance the neural network gives
 to each feature. By inspecting the attention weights for a particular sample, a
 practitioner can identify the important features behind a given prediction.
 Elsewhere, to improve interpretability Choi et al. [@tag:Choi2016_retain]
-inverted the typical architecture of recurrent neural networks .
+inverted the typical architecture of recurrent neural networks.
 In particular, they only used
 recurrent connections in the attention generating procedure, leaving the hidden
 state directly connected to the input variables. In the clinical domain, this
