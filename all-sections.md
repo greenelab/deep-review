@@ -2270,7 +2270,7 @@ For example, Chen et al. [@12QQw9p7v] aimed to infer the
 expression level of all genes with a single neural network, but due to
 memory restrictions they randomly partitioned genes into two halves and
 analyzed each separately. In other cases, researchers limited the size
-of their neural network [@W3grN7jy; @2dU8f4XJ]. Some have also chosen to use slower
+of their neural network [@BhfjKSY3; @2dU8f4XJ]. Some have also chosen to use slower
 CPU implementations rather than sacrifice network size or performance
 [@x0M6vals].
 
@@ -2634,15 +2634,19 @@ molecules from a massive search space would have immense practical value even if
 its overall precision is modest.  In medical imaging, deep learning can point an
 expert to the most challenging cases that require manual review
 [@Qve94Jra], though the risk of false negatives must be
-addressed.
+addressed.  In protein structure prediction, errors in individual
+residue-residue contacts can be tolerated when using the contacts jointly for 3D
+structure modeling.  Improved contact map predictions
+[@BhfjKSY3] have led to notable improvements in fold and 3D
+structure prediction for some of the most challenging proteins, such as membrane
+proteins [@39RPiE10].
 
 Conversely, the most challenging tasks may be those in which predictions are
 used directly for downstream modeling or decision-making, especially in the
-clinic.  As an example, errors in a predicted protein contact map could be
-amplified if that contact map is used directly for 3D structure prediction.  In
-addition, the stochasticity and complexity of biological systems implies that
-for some problems, for instance, predicting gene regulation in disease, perfect
-accuracy will be unattainable.
+clinic.  As an example, errors in sequence variant calling will be amplified if
+they are used directly for GWAS. In addition, the stochasticity and complexity
+of biological systems implies that for some problems, for instance, predicting
+gene regulation in disease, perfect accuracy will be unattainable.
 
 We are witnessing deep learning models achieving human-level performance across
 a number of biomedical domains, and yet do not believe that biologists and

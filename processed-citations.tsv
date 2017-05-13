@@ -33,6 +33,7 @@ text	citation	standard_citation	citation_id
 @arxiv:1703.06490v1	arxiv:1703.06490v1	arxiv:1703.06490v1	xl1ijigK
 @arxiv:1703.10603	arxiv:1703.10603	arxiv:1703.10603	17YaKNLKk
 @arxiv:1704.01155	arxiv:1704.01155	arxiv:1704.01155	18lZK7fxH
+@arxiv:1704.07207	arxiv:1704.07207	arxiv:1704.07207	39RPiE10
 @arxiv:1705.02315	arxiv:1705.02315	arxiv:1705.02315	PGi9g7yV
 @doi:10.1001/jama.2016.17216	doi:10.1001/jama.2016.17216	doi:10.1001/jama.2016.17216	1mJW6umJ
 @doi:10.1002/9783527628766	doi:10.1002/9783527628766	doi:10.1002/9783527628766	17eGl2pn9
@@ -366,7 +367,7 @@ text	citation	standard_citation	citation_id
 @tag:Vervier	doi:10.1093/bioinformatics/btv683	doi:10.1093/bioinformatics/btv683	8DLzxOEt
 @tag:Wallach2015_atom_net	arxiv:1510.02855	arxiv:1510.02855	Z7fd0BYf
 @tag:Wang2016_breast_cancer	arxiv:1606.05718	arxiv:1606.05718	mbEp6jNr
-@tag:Wang2016_protein_contact	doi:10.1101/073239	doi:10.1101/073239	W3grN7jy
+@tag:Wang2016_protein_contact	doi:10.1371/journal.pcbi.1005324	doi:10.1371/journal.pcbi.1005324	BhfjKSY3
 @tag:Wasson1985_clinical	doi:10.1056/NEJM198509263131306	doi:10.1056/nejm198509263131306	xX68eyvs
 @tag:Word2Vec	arxiv:1301.3781	arxiv:1301.3781	1GhHIDxuW
 @tag:Wu2017_molecule_net	arxiv:1703.00564	arxiv:1703.00564	16OPHvAij

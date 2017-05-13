@@ -39642,5 +39642,12 @@
       "id": "11I7bLcP3"
     },
     "citation_id": "11I7bLcP3"
+  },
+  "arxiv:1704.07207": {
+    "source": "arxiv",
+    "identifer": "1704.07207",
+    "standard_citation": "arxiv:1704.07207",
+    "bibtex": "@article{39RPiE10,\n abstract = {Computational prediction of membrane protein (MP) structures is very\nchallenging partially due to lack of sufficient solved structures for homology\nmodeling. Recently direct evolutionary coupling analysis (DCA) sheds some light\non protein contact prediction and accordingly, contact-assisted folding, but\nDCA is effective only on some very large-sized families since it uses\ninformation only in a single protein family. This paper presents a deep\ntransfer learning method that can significantly improve MP contact prediction\nby learning contact patterns and complex sequence-contact relationship from\nthousands of non-membrane proteins (non-MPs). Tested on 510 non-redundant MPs, our deep model (learned from only non-MPs) has top L/10 long-range contact\nprediction accuracy 0.69, better than our deep model trained by only MPs (0.63)\nand much better than a representative DCA method CCMpred (0.47) and the CASP11\nwinner MetaPSICOV (0.55). The accuracy of our deep model can be further\nimproved to 0.72 when trained by a mix of non-MPs and MPs. When only contacts\nin transmembrane regions are evaluated, our method has top L/10 long-range\naccuracy 0.62, 0.57, and 0.53 when trained by a mix of non-MPs and MPs, by\nnon-MPs only, and by MPs only, respectively, still much better than MetaPSICOV\n(0.45) and CCMpred (0.40). All these results suggest that sequence-structure\nrelationship learned by our deep model from non-MPs generalizes well to MP\ncontact prediction. Improved contact prediction also leads to better\ncontact-assisted folding. Using only top predicted contacts as restraints, our\ndeep learning method can fold 160 and 200 of 510 MPs with TMscore>0.6 when\ntrained by non-MPs only and by a mix of non-MPs and MPs, respectively, while\nCCMpred and MetaPSICOV can do so for only 56 and 77 MPs, respectively. Our\ncontact-assisted folding also greatly outperforms homology modeling.},\n archiveprefix = {arXiv},\n author = {Zhen Li and Sheng Wang and Yizhou Yu and Jinbo Xu},\n eprint = {1704.07207v1},\n file = {1704.07207v1.pdf},\n link = {http://arxiv.org/abs/1704.07207v1},\n month = {Apr},\n primaryclass = {q-bio.BM},\n title = {Predicting membrane protein contacts from non-membrane proteins by deep\ntransfer learning},\n year = {2017}\n}\n\n",
+    "citation_id": "39RPiE10"
   }
 }

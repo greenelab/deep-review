@@ -2327,3 +2327,41 @@ Human and Machine Translation},
  year = {2016}
 }
 
+
+@article{39RPiE10,
+ abstract = {Computational prediction of membrane protein (MP) structures is very
+challenging partially due to lack of sufficient solved structures for homology
+modeling. Recently direct evolutionary coupling analysis (DCA) sheds some light
+on protein contact prediction and accordingly, contact-assisted folding, but
+DCA is effective only on some very large-sized families since it uses
+information only in a single protein family. This paper presents a deep
+transfer learning method that can significantly improve MP contact prediction
+by learning contact patterns and complex sequence-contact relationship from
+thousands of non-membrane proteins (non-MPs). Tested on 510 non-redundant MPs, our deep model (learned from only non-MPs) has top L/10 long-range contact
+prediction accuracy 0.69, better than our deep model trained by only MPs (0.63)
+and much better than a representative DCA method CCMpred (0.47) and the CASP11
+winner MetaPSICOV (0.55). The accuracy of our deep model can be further
+improved to 0.72 when trained by a mix of non-MPs and MPs. When only contacts
+in transmembrane regions are evaluated, our method has top L/10 long-range
+accuracy 0.62, 0.57, and 0.53 when trained by a mix of non-MPs and MPs, by
+non-MPs only, and by MPs only, respectively, still much better than MetaPSICOV
+(0.45) and CCMpred (0.40). All these results suggest that sequence-structure
+relationship learned by our deep model from non-MPs generalizes well to MP
+contact prediction. Improved contact prediction also leads to better
+contact-assisted folding. Using only top predicted contacts as restraints, our
+deep learning method can fold 160 and 200 of 510 MPs with TMscore>0.6 when
+trained by non-MPs only and by a mix of non-MPs and MPs, respectively, while
+CCMpred and MetaPSICOV can do so for only 56 and 77 MPs, respectively. Our
+contact-assisted folding also greatly outperforms homology modeling.},
+ archiveprefix = {arXiv},
+ author = {Zhen Li and Sheng Wang and Yizhou Yu and Jinbo Xu},
+ eprint = {1704.07207v1},
+ file = {1704.07207v1.pdf},
+ link = {http://arxiv.org/abs/1704.07207v1},
+ month = {Apr},
+ primaryclass = {q-bio.BM},
+ title = {Predicting membrane protein contacts from non-membrane proteins by deep
+transfer learning},
+ year = {2017}
+}
+
