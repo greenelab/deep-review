@@ -110,4 +110,5 @@ did participate, are acknowledged at the end of the manuscript.
 
 We gratefully acknowledge Kumardeep Chaudhary, Gökcen Eraslan, and Xun Zhu
 `TODO: names` for their discussion of the manuscript and reviewed papers on
-GitHub. `TODO: add any other acknowledgement categories`
+GitHub. We would like to thank Zhiyong Lu for revisions to the text that were
+not captured on GitHub.`TODO: add any other acknowledgement categories`
