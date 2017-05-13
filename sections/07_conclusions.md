@@ -108,7 +108,8 @@ did participate, are acknowledged at the end of the manuscript.
 
 ### Acknowledgements
 
-We gratefully acknowledge Kumardeep Chaudhary, Gökcen Eraslan, and Xun Zhu
+We gratefully acknowledge Christof Angermueller, Kumardeep Chaudhary, Gökcen
+Eraslan, Mikael Huss, Bharath Ramsundar and Xun Zhu
 `TODO: names` for their discussion of the manuscript and reviewed papers on
 GitHub. We would like to thank Zhiyong Lu for revisions to the text that were
 not captured on GitHub.`TODO: add any other acknowledgement categories`
