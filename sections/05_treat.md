@@ -385,14 +385,17 @@ organic molecules with drug-like properties that could be chemically synthesized
 represent chemicals with the simplified molecular-input line-entry system
 (SMILES), a standard way string-based representation with characters that
 represent atoms, bonds, and rings [@tag:Segler2017_drug_design].
-Gómez-Bombarelli et al. designed a  SMILES-to-SMILES autoencoder to learn a
-continuous latent feature space for chemicals [@tag:Gomezb2016_automatic].
-`TODO: connect to related EHR paper` In this learned continuous space it was
-possible to train some types of supervised learning algorithms or interpolate
-between continuous representations of chemicals in a manner that is not possible
-with discrete (e.g. bit vector or string) features. A drawback is that not all
-SMILES strings produced by the autoencoder's decoder correspond to valid
-chemical structures.  More recent approaches train RNNs on compounds from ChEMBL
+Gómez-Bombarelli et al. designed a SMILES-to-SMILES autoencoder to learn a
+continuous latent feature space for chemicals [@tag:Gomezb2016_automatic]. In
+this learned continuous space it was possible to train some types of supervised
+learning algorithms and interpolate between continuous representations of
+chemicals in a manner that is not possible with discrete (e.g. bit vector or
+string) features.  The strategy of constructing simple, continuous features
+before applying supervised learning techniques is reminiscent of autoencoders
+trained on high-dimensional EHR data [@tag:BeaulieuJones2016_ehr_encode].  A
+drawback of the SMILES-to-SMILES autoencoder is that not all SMILES strings
+produced by the autoencoder's decoder correspond to valid chemical structures.
+More recent approaches train RNNs on compounds from ChEMBL
 [@doi:10.1093/nar/gkr777] to first obtain a generic generative model for
 drug-like compounds [@tag:Segler2017_drug_design
 @tag:Olivecrona2017_drug_design].  These generative models successfully learn
