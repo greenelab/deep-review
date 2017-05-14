@@ -670,7 +670,9 @@ several percentage points of improvement compared to random forests or deep
 networks trained only on CpG or sequence information. Similar deep learning
 methods have been applied to impute low-resolution ChIP-seq signal from bulk
 tissue with great success, and they could easily be adapted to single cell data
-[@tag:Qin2017_onehot @tag:Koh2016_denoising].
+[@tag:Qin2017_onehot @tag:Koh2016_denoising]. Deep learning has also been useful
+for dealing with batch effects, which can severely affect single-cell data
+[@tag:Shaham2016_batch_effects].
 
 Examining populations of single cells can reveal biologically meaningful subsets
 of cells as well as their underlying gene regulatory networks
