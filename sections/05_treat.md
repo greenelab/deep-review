@@ -1,24 +1,15 @@
 ## The impact of deep learning in treating disease and developing new treatments
 
-`TODO: write Treat intro`
-
-`TODO: just realised this wanders heavily into the categorization area. Need
-some high-level rearrangment? Could shift the first section below into the
-categorization section and leave the treatment here.`
-
 Given the ever-present need to make better interventions faster at the point of
 care -- incorporating the complex calculus of a patients symptoms, diagnostics
 and life history -- there is a long history of attempts to apply deep learning
-to the problem of treatment. Success in this area would also be very useful for
-directions like personalised healthcare or precision medicine
+to patient treatment. Success in this area would also be very useful for
+directions like personalized healthcare or precision medicine
 [@doi:10.1056/NEJMp1006304 @doi:10.1155/2013/769639]. Earlier, we have written
-of the possibilities for patient categorization. Here we examine the potential
+of the possibilities for patient categorization. Here, we examine the potential
 for better treatment, which broadly, may divided into methods for improved
 choices of interventions for patients and those for development of new
 interventions.
-
-`TODO: Add representative papers about Modeling Metabolism and Chemical
-Reactivity`
 
 ### Categorizing patients for clinical decision making
 
@@ -227,7 +218,8 @@ does not fit neatly into any of those categories.  An ideal algorithm will rank
 a sufficient number of active compounds before the inactives, but the rankings
 of actives relative to other actives and inactives are less important
 [@tag:Swamidass2009_irv].  Computational modeling also has the potential to
-predict ADMET traits for lead generation [@tag:Kearnes2016_admet].
+predict ADMET traits for lead generation [@tag:Kearnes2016_admet] and
+how drugs are metabolized [@doi:10.1021/ci400518g].
 
 Here we primarily focus on ligand-based approaches that train on chemicals'
 features without requiring prior knowledge of the target. Chemical features may
@@ -255,9 +247,7 @@ the Toxicology in the 21st Century (Tox21) Data Challenge, it did not dominate
 alternative methods as thoroughly as in other domains. DeepTox was the top
 performer on 9 of 15 targets and highly competitive with the top performer on
 the others.  However, for many targets there was little separation between the
-top two or three methods.  A reliance on AUC ROC `TODO: define here?` for the
-evaluation (see Discussion) further hinders the ability to declare Tox21 as an
-outright success for deep learning.
+top two or three methods.
 
 The nuanced Tox21 performance may be more reflective of the practical challenges
 encountered in ligand-based chemical screening than the extreme enthusiasm
@@ -344,9 +334,9 @@ neural fingerprints [@tag:Duvenaud2015_graph_conv] on the drug efficacy task but
 were slightly worse than the influence-relevance voter method on an HIV dataset.
 [@tag:Swamidass2009_irv].  Broader recent benchmarking has shown that relative
 merits of these methods depends on the dataset and cross validation strategy
-[@tag:Wu2017_molecule_net], though we again caution against over-interpreting
-AUC ROC-based results due to the active/inactive class imbalance (see
-Discussion).
+[@tag:Wu2017_molecule_net], though we caution against over-interpreting AUC
+ROC-based results, a popular metric in this domain despite the active/inactive
+class imbalance (see Discussion).
 
 We remain optimistic for the potential of deep learning and specifically
 representation learning in this domain and propose that rigorous benchmarking on
