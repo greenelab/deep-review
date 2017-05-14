@@ -138,7 +138,8 @@ required extensive human fine-tuning. Moreover, as in gene expression network
 analysis, interrogating the hidden nodes within neural networks will likely
 yield new biological insights into splicing. For instance, tissue-specific
 splicing mechanisms can be inferred by training networks on splicing data from
-different tissues, then searching for common versus distinctive nodes
+different tissues, then searching for common versus distinctive nodes, a
+technique employed by Qin et al. for tissue-specific TF binding predictions
 [@tag:Qin2017_onehot].
 
 A parallel effort has been to use more data with simpler models. An exhaustive
