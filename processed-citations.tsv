@@ -27,7 +27,6 @@ text	citation	standard_citation	citation_id
 @arxiv:1610.09559	arxiv:1610.09559	arxiv:1610.09559	11aqfNfQx
 @arxiv:1611.03814	arxiv:1611.03814	arxiv:1611.03814	AsLAb71x
 @arxiv:1611.08373	arxiv:1611.08373	arxiv:1611.08373	dO844vZn
-@arxiv:1612.02751	arxiv:1612.02751	arxiv:1612.02751	bNBiIiTt
 @arxiv:1701.06599	arxiv:1701.06599	arxiv:1701.06599	apBChoyF
 @arxiv:1703.02136	arxiv:1703.02136	arxiv:1703.02136	wKioubsT
 @arxiv:1703.06490v1	arxiv:1703.06490v1	arxiv:1703.06490v1	xl1ijigK
@@ -58,6 +57,7 @@ text	citation	standard_citation	citation_id
 @doi:10.1016/j.bjid.2015.08.013	doi:10.1016/j.bjid.2015.08.013	doi:10.1016/j.bjid.2015.08.013	oas5tbC7
 @doi:10.1016/j.cels.2016.04.013	doi:10.1016/j.cels.2016.04.013	doi:10.1016/j.cels.2016.04.013	6XtEfQMC
 @doi:10.1016/j.copbio.2016.04.003	doi:10.1016/j.copbio.2016.04.003	doi:10.1016/j.copbio.2016.04.003	hkKO4QYl
+@doi:10.1016/j.drudis.2006.06.016	doi:10.1016/j.drudis.2006.06.016	doi:10.1016/j.drudis.2006.06.016	1D6emOV6q
 @doi:10.1016/j.ijmedinf.2016.09.014	doi:10.1016/j.ijmedinf.2016.09.014	doi:10.1016/j.ijmedinf.2016.09.014	1Ar4f4vfR
 @doi:10.1016/j.jbi.2014.10.006	doi:10.1016/j.jbi.2014.10.006	doi:10.1016/j.jbi.2014.10.006	13filvWwr
 @doi:10.1016/j.jbi.2016.10.007	doi:10.1016/j.jbi.2016.10.007	doi:10.1016/j.jbi.2016.10.007	5x3uMSKi
@@ -68,7 +68,9 @@ text	citation	standard_citation	citation_id
 @doi:10.1021/acs.jproteome.6b00618	doi:10.1021/acs.jproteome.6b00618	doi:10.1021/acs.jproteome.6b00618	oTF8O79C
 @doi:10.1021/acs.molpharmaceut.5b00982	doi:10.1021/acs.molpharmaceut.5b00982	doi:10.1021/acs.molpharmaceut.5b00982	1VZjheOA
 @doi:10.1021/acs.molpharmaceut.6b00248	doi:10.1021/acs.molpharmaceut.6b00248	doi:10.1021/acs.molpharmaceut.6b00248	EMDwvRGb
+@doi:10.1021/ci400518g	doi:10.1021/ci400518g	doi:10.1021/ci400518g	7QsMcDYy
 @doi:10.1021/ci500340n	doi:10.1021/ci500340n	doi:10.1021/ci500340n	16FEYidu2
+@doi:10.1021/jm048957q	doi:10.1021/jm048957q	doi:10.1021/jm048957q	YO41GAOP
 @doi:10.1037/h0037350	doi:10.1037/h0037350	doi:10.1037/h0037350	cpNVdlL7
 @doi:10.1038/nature14539	doi:10.1038/nature14539	doi:10.1038/nature14539	BeijBSRE
 @doi:10.1038/nature21056	doi:10.1038/nature21056	doi:10.1038/nature21056	XnYNYoYB
@@ -79,6 +81,7 @@ text	citation	standard_citation	citation_id
 @doi:10.1038/ng.3830	doi:10.1038/ng.3830	doi:10.1038/ng.3830	194IoYUs3
 @doi:10.1038/nmeth.4182	doi:10.1038/nmeth.4182	doi:10.1038/nmeth.4182	On4vW5aU
 @doi:10.1038/npjsba.2016.15	doi:10.1038/npjsba.2016.15	doi:10.1038/npjsba.2016.15	cQAldRdg
+@doi:10.1038/nrd1086	doi:10.1038/nrd1086	doi:10.1038/nrd1086	RAadmvJN
 @doi:10.1038/nrd4609	doi:10.1038/nrd4609	doi:10.1038/nrd4609	79Ktl2
 @doi:10.1038/nrg2813	doi:10.1038/nrg2813	doi:10.1038/nrg2813	T3GG8iJN
 @doi:10.1038/nrg3208	doi:10.1038/nrg3208	doi:10.1038/nrg3208	FkSZ1qmz
@@ -151,6 +154,7 @@ text	citation	standard_citation	citation_id
 @doi:10.1186/1758-2946-5-30	doi:10.1186/1758-2946-5-30	doi:10.1186/1758-2946-5-30	M1EW8Rfl
 @doi:10.1186/s12859-015-0845-0	doi:10.1186/s12859-015-0845-0	doi:10.1186/s12859-015-0845-0	18lqFDKRR
 @doi:10.1200/JCO.2008.18.1370	doi:10.1200/JCO.2008.18.1370	doi:10.1200/jco.2008.18.1370	lnK82Ey6
+@doi:10.1208/s12248-012-9322-0	doi:10.1208/s12248-012-9322-0	doi:10.1208/s12248-012-9322-0	13iyYvEcB
 @doi:10.1371/journal.pbio.1001661	doi:10.1371/journal.pbio.1001661	doi:10.1371/journal.pbio.1001661	dKwyEWWF
 @doi:10.1371/journal.pbio.1002195	doi:10.1371/journal.pbio.1002195	doi:10.1371/journal.pbio.1002195	13bxiY1vo
 @doi:10.1371/journal.pcbi.1002957	doi:10.1371/journal.pcbi.1002957	doi:10.1371/journal.pcbi.1002957	5tvnB4uW
@@ -311,12 +315,14 @@ text	citation	standard_citation	citation_id
 @tag:Park2016_deepmirgene	arxiv:1605.00017	arxiv:1605.00017	1TeyWffV
 @tag:Parnamaa2017	doi:10.1534/g3.116.033654	doi:10.1534/g3.116.033654	2a7MHtAx
 @tag:Pawlowski2016	doi:10.1101/085118	doi:10.1101/085118	BMg062hc
+@tag:Pereira2016_docking	doi:10.1021/acs.jcim.6b00355	doi:10.1021/acs.jcim.6b00355	Gue0c5Gb
 @tag:PerezSianes2016_screening	doi:10.1007/978-3-319-40126-3_2	doi:10.1007/978-3-319-40126-3_2	1DTUK3YyI
 @tag:Poplin2016_deepvariant	doi:10.1101/092890	doi:10.1101/092890	FVfZESYP
 @tag:Pratt2016_dr	doi:10.1016/j.procs.2016.07.014	doi:10.1016/j.procs.2016.07.014	ayTsooEM
 @tag:Qin2017_onehot	doi:10.1371/journal.pcbi.1005403	doi:10.1371/journal.pcbi.1005403	Qbtqlmhf
 @tag:Qiu2017_graph_embedding	doi:10.1101/110668	doi:10.1101/110668	Oljj2W96
 @tag:RAD2010_view_cc	doi:10.1145/1721654.1721672	doi:10.1145/1721654.1721672	ObFN78yp
+@tag:Ragoza2016_protein	arxiv:1612.02751	arxiv:1612.02751	bNBiIiTt
 @tag:Raina2009_gpu	doi:10.1145/1553374.1553486	doi:10.1145/1553374.1553486	F3e4wfzQ
 @tag:Rajkomar2017_radiographs	doi:10.1007/s10278-016-9914-9	doi:10.1007/s10278-016-9914-9	x6HXFAS4
 @tag:Ramsundar2015_multitask_drug	arxiv:1502.02072	arxiv:1502.02072	yAoN5gTU

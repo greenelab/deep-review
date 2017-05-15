@@ -39649,5 +39649,803 @@
     "standard_citation": "arxiv:1704.07207",
     "bibtex": "@article{39RPiE10,\n abstract = {Computational prediction of membrane protein (MP) structures is very\nchallenging partially due to lack of sufficient solved structures for homology\nmodeling. Recently direct evolutionary coupling analysis (DCA) sheds some light\non protein contact prediction and accordingly, contact-assisted folding, but\nDCA is effective only on some very large-sized families since it uses\ninformation only in a single protein family. This paper presents a deep\ntransfer learning method that can significantly improve MP contact prediction\nby learning contact patterns and complex sequence-contact relationship from\nthousands of non-membrane proteins (non-MPs). Tested on 510 non-redundant MPs, our deep model (learned from only non-MPs) has top L/10 long-range contact\nprediction accuracy 0.69, better than our deep model trained by only MPs (0.63)\nand much better than a representative DCA method CCMpred (0.47) and the CASP11\nwinner MetaPSICOV (0.55). The accuracy of our deep model can be further\nimproved to 0.72 when trained by a mix of non-MPs and MPs. When only contacts\nin transmembrane regions are evaluated, our method has top L/10 long-range\naccuracy 0.62, 0.57, and 0.53 when trained by a mix of non-MPs and MPs, by\nnon-MPs only, and by MPs only, respectively, still much better than MetaPSICOV\n(0.45) and CCMpred (0.40). All these results suggest that sequence-structure\nrelationship learned by our deep model from non-MPs generalizes well to MP\ncontact prediction. Improved contact prediction also leads to better\ncontact-assisted folding. Using only top predicted contacts as restraints, our\ndeep learning method can fold 160 and 200 of 510 MPs with TMscore>0.6 when\ntrained by non-MPs only and by a mix of non-MPs and MPs, respectively, while\nCCMpred and MetaPSICOV can do so for only 56 and 77 MPs, respectively. Our\ncontact-assisted folding also greatly outperforms homology modeling.},\n archiveprefix = {arXiv},\n author = {Zhen Li and Sheng Wang and Yizhou Yu and Jinbo Xu},\n eprint = {1704.07207v1},\n file = {1704.07207v1.pdf},\n link = {http://arxiv.org/abs/1704.07207v1},\n month = {Apr},\n primaryclass = {q-bio.BM},\n title = {Predicting membrane protein contacts from non-membrane proteins by deep\ntransfer learning},\n year = {2017}\n}\n\n",
     "citation_id": "39RPiE10"
+  },
+  "doi:10.1016/j.drudis.2006.06.016": {
+    "source": "doi",
+    "identifer": "10.1016/j.drudis.2006.06.016",
+    "standard_citation": "doi:10.1016/j.drudis.2006.06.016",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            5,
+            10
+          ]
+        ],
+        "date-time": "2017-05-10T04:42:24Z",
+        "timestamp": 1494391344810
+      },
+      "reference-count": 80,
+      "publisher": "Elsevier BV",
+      "issue": "15-16",
+      "license": [
+        {
+          "URL": "http://www.elsevier.com/tdm/userlicense/1.0/",
+          "start": {
+            "date-parts": [
+              [
+                2006,
+                8,
+                1
+              ]
+            ],
+            "date-time": "2006-08-01T00:00:00Z",
+            "timestamp": 1154390400000
+          },
+          "delay-in-days": 0,
+          "content-version": "tdm"
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Drug Discovery Today"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2006,
+            8
+          ]
+        ]
+      },
+      "DOI": "10.1016/j.drudis.2006.06.016",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2006,
+            7,
+            18
+          ]
+        ],
+        "date-time": "2006-07-18T11:13:15Z",
+        "timestamp": 1153221195000
+      },
+      "page": "741-748",
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": "Hit discovery and hit-to-lead approaches",
+      "prefix": "10.1016",
+      "volume": "11",
+      "author": [
+        {
+          "given": "György M.",
+          "family": "Keserű",
+          "affiliation": []
+        },
+        {
+          "given": "Gergely M.",
+          "family": "Makara",
+          "affiliation": []
+        }
+      ],
+      "member": "78",
+      "container-title": "Drug Discovery Today",
+      "original-title": [],
+      "link": [
+        {
+          "URL": "http://api.elsevier.com/content/article/PII:S1359644606002285?httpAccept=text/xml",
+          "content-type": "text/xml",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "http://api.elsevier.com/content/article/PII:S1359644606002285?httpAccept=text/plain",
+          "content-type": "text/plain",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2015,
+            11,
+            23
+          ]
+        ],
+        "date-time": "2015-11-23T12:00:20Z",
+        "timestamp": 1448280020000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2006,
+            8
+          ]
+        ]
+      },
+      "references-count": 80,
+      "alternative-id": [
+        "S1359644606002285"
+      ],
+      "URL": "http://dx.doi.org/10.1016/j.drudis.2006.06.016",
+      "relation": {},
+      "issn-type": [
+        {
+          "value": "1359-6446",
+          "type": "print"
+        }
+      ],
+      "subject": [
+        "Pharmacology",
+        "Drug Discovery"
+      ],
+      "id": "1D6emOV6q"
+    },
+    "citation_id": "1D6emOV6q"
+  },
+  "doi:10.1021/ci400518g": {
+    "source": "doi",
+    "identifer": "10.1021/ci400518g",
+    "standard_citation": "doi:10.1021/ci400518g",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            5,
+            13
+          ]
+        ],
+        "date-time": "2017-05-13T07:55:22Z",
+        "timestamp": 1494662122680
+      },
+      "reference-count": 25,
+      "publisher": "American Chemical Society (ACS)",
+      "issue": "12",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "J. Chem. Inf. Model."
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2013,
+            12,
+            23
+          ]
+        ]
+      },
+      "DOI": "10.1021/ci400518g",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2013,
+            11,
+            13
+          ]
+        ],
+        "date-time": "2013-11-13T21:06:40Z",
+        "timestamp": 1384376800000
+      },
+      "page": "3373-3383",
+      "source": "Crossref",
+      "is-referenced-by-count": 30,
+      "title": "XenoSite: Accurately Predicting CYP-Mediated Sites of Metabolism with Neural Networks",
+      "prefix": "10.1021",
+      "volume": "53",
+      "author": [
+        {
+          "given": "Jed",
+          "family": "Zaretzki",
+          "affiliation": []
+        },
+        {
+          "given": "Matthew",
+          "family": "Matlock",
+          "affiliation": []
+        },
+        {
+          "given": "S. Joshua",
+          "family": "Swamidass",
+          "affiliation": []
+        }
+      ],
+      "member": "316",
+      "container-title": "Journal of Chemical Information and Modeling",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2016,
+            9,
+            1
+          ]
+        ],
+        "date-time": "2016-09-01T12:28:51Z",
+        "timestamp": 1472732931000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2013,
+            12,
+            23
+          ]
+        ]
+      },
+      "references-count": 25,
+      "alternative-id": [
+        "10.1021/ci400518g"
+      ],
+      "URL": "http://dx.doi.org/10.1021/ci400518g",
+      "relation": {},
+      "issn-type": [
+        {
+          "value": "1549-9596",
+          "type": "print"
+        },
+        {
+          "value": "1549-960X",
+          "type": "electronic"
+        }
+      ],
+      "subject": [
+        "Chemistry(all)",
+        "Chemical Engineering(all)",
+        "Library and Information Sciences",
+        "Computer Science Applications"
+      ],
+      "id": "7QsMcDYy"
+    },
+    "citation_id": "7QsMcDYy"
+  },
+  "doi:10.1021/jm048957q": {
+    "source": "doi",
+    "identifer": "10.1021/jm048957q",
+    "standard_citation": "doi:10.1021/jm048957q",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            5,
+            10
+          ]
+        ],
+        "date-time": "2017-05-10T23:10:09Z",
+        "timestamp": 1494457809354
+      },
+      "reference-count": 0,
+      "publisher": "American Chemical Society (ACS)",
+      "issue": "12",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "J. Med. Chem."
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2005,
+            6
+          ]
+        ]
+      },
+      "DOI": "10.1021/jm048957q",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2005,
+            6,
+            9
+          ]
+        ],
+        "date-time": "2005-06-09T04:18:54Z",
+        "timestamp": 1118290734000
+      },
+      "page": "4111-4119",
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": "The PDBbind Database:  Methodologies and Updates",
+      "prefix": "10.1021",
+      "volume": "48",
+      "author": [
+        {
+          "given": "Renxiao",
+          "family": "Wang",
+          "affiliation": []
+        },
+        {
+          "given": "Xueliang",
+          "family": "Fang",
+          "affiliation": []
+        },
+        {
+          "given": "Yipin",
+          "family": "Lu",
+          "affiliation": []
+        },
+        {
+          "given": "Chao-Yie",
+          "family": "Yang",
+          "affiliation": []
+        },
+        {
+          "given": "Shaomeng",
+          "family": "Wang",
+          "affiliation": []
+        }
+      ],
+      "member": "316",
+      "container-title": "Journal of Medicinal Chemistry",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2016,
+            9,
+            2
+          ]
+        ],
+        "date-time": "2016-09-02T02:05:06Z",
+        "timestamp": 1472781906000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2005,
+            6
+          ]
+        ]
+      },
+      "references-count": 0,
+      "alternative-id": [
+        "10.1021/jm048957q"
+      ],
+      "URL": "http://dx.doi.org/10.1021/jm048957q",
+      "relation": {},
+      "issn-type": [
+        {
+          "value": "0022-2623",
+          "type": "print"
+        },
+        {
+          "value": "1520-4804",
+          "type": "electronic"
+        }
+      ],
+      "subject": [
+        "Molecular Medicine",
+        "Drug Discovery"
+      ],
+      "id": "YO41GAOP"
+    },
+    "citation_id": "YO41GAOP"
+  },
+  "doi:10.1038/nrd1086": {
+    "source": "doi",
+    "identifer": "10.1038/nrd1086",
+    "standard_citation": "doi:10.1038/nrd1086",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            5,
+            11
+          ]
+        ],
+        "date-time": "2017-05-11T11:16:20Z",
+        "timestamp": 1494501380330
+      },
+      "reference-count": 0,
+      "publisher": "Springer Nature",
+      "issue": "5",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Nat Rev Drug Discov"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2003,
+            5
+          ]
+        ]
+      },
+      "DOI": "10.1038/nrd1086",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2003,
+            5,
+            15
+          ]
+        ],
+        "date-time": "2003-05-15T17:19:25Z",
+        "timestamp": 1053019165000
+      },
+      "page": "369-378",
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": "A guide to drug discovery: Hit and lead generation: beyond high-throughput screening",
+      "prefix": "10.1038",
+      "volume": "2",
+      "author": [
+        {
+          "given": "Konrad H.",
+          "family": "Bleicher",
+          "affiliation": []
+        },
+        {
+          "given": "Hans-Joachim",
+          "family": "Böhm",
+          "affiliation": []
+        },
+        {
+          "given": "Klaus",
+          "family": "Müller",
+          "affiliation": []
+        },
+        {
+          "given": "Alexander I.",
+          "family": "Alanine",
+          "affiliation": []
+        }
+      ],
+      "member": "339",
+      "container-title": "Nature Reviews Drug Discovery",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2011,
+            8,
+            22
+          ]
+        ],
+        "date-time": "2011-08-22T04:24:18Z",
+        "timestamp": 1313987058000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2003,
+            5
+          ]
+        ]
+      },
+      "references-count": 0,
+      "alternative-id": [
+        "nrd1086"
+      ],
+      "URL": "http://dx.doi.org/10.1038/nrd1086",
+      "relation": {},
+      "issn-type": [
+        {
+          "value": "1474-1776",
+          "type": "print"
+        },
+        {
+          "value": "1474-1784",
+          "type": "electronic"
+        }
+      ],
+      "subject": [
+        "Medicine(all)"
+      ],
+      "id": "RAadmvJN"
+    },
+    "citation_id": "RAadmvJN"
+  },
+  "doi:10.1208/s12248-012-9322-0": {
+    "source": "doi",
+    "identifer": "10.1208/s12248-012-9322-0",
+    "standard_citation": "doi:10.1208/s12248-012-9322-0",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            5,
+            10
+          ]
+        ],
+        "date-time": "2017-05-10T12:52:18Z",
+        "timestamp": 1494420738369
+      },
+      "reference-count": 97,
+      "publisher": "American Association of Pharmaceutical Scientists (AAPS)",
+      "issue": "1",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "AAPS J"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2012,
+            3
+          ]
+        ]
+      },
+      "DOI": "10.1208/s12248-012-9322-0",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2012,
+            1,
+            26
+          ]
+        ],
+        "date-time": "2012-01-26T16:24:15Z",
+        "timestamp": 1327595055000
+      },
+      "page": "133-141",
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": "Structure-Based Virtual Screening for Drug Discovery: a Problem-Centric Review",
+      "prefix": "10.1208",
+      "volume": "14",
+      "author": [
+        {
+          "given": "Tiejun",
+          "family": "Cheng",
+          "affiliation": []
+        },
+        {
+          "given": "Qingliang",
+          "family": "Li",
+          "affiliation": []
+        },
+        {
+          "given": "Zhigang",
+          "family": "Zhou",
+          "affiliation": []
+        },
+        {
+          "given": "Yanli",
+          "family": "Wang",
+          "affiliation": []
+        },
+        {
+          "given": "Stephen H.",
+          "family": "Bryant",
+          "affiliation": []
+        }
+      ],
+      "member": "225",
+      "published-online": {
+        "date-parts": [
+          [
+            2012,
+            1,
+            27
+          ]
+        ]
+      },
+      "container-title": "The AAPS Journal",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2012,
+            4,
+            25
+          ]
+        ],
+        "date-time": "2012-04-25T07:01:23Z",
+        "timestamp": 1335337283000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2012,
+            1,
+            27
+          ]
+        ]
+      },
+      "references-count": 97,
+      "alternative-id": [
+        "9322"
+      ],
+      "URL": "http://dx.doi.org/10.1208/s12248-012-9322-0",
+      "relation": {},
+      "issn-type": [
+        {
+          "value": "1550-7416",
+          "type": "electronic"
+        }
+      ],
+      "subject": [
+        "Pharmaceutical Science"
+      ],
+      "id": "13iyYvEcB"
+    },
+    "citation_id": "13iyYvEcB"
+  },
+  "doi:10.1021/acs.jcim.6b00355": {
+    "source": "doi",
+    "identifer": "10.1021/acs.jcim.6b00355",
+    "standard_citation": "doi:10.1021/acs.jcim.6b00355",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            5,
+            12
+          ]
+        ],
+        "date-time": "2017-05-12T18:28:31Z",
+        "timestamp": 1494613711483
+      },
+      "reference-count": 45,
+      "publisher": "American Chemical Society (ACS)",
+      "issue": "12",
+      "funder": [
+        {
+          "DOI": "10.13039/501100006507",
+          "name": "Fundação Oswaldo Cruz",
+          "doi-asserted-by": "publisher",
+          "award": []
+        },
+        {
+          "DOI": "10.13039/501100003593",
+          "name": "Conselho Nacional de Desenvolvimento Científico e Tecnológico",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "407741/2012-7"
+          ]
+        },
+        {
+          "DOI": "10.13039/501100004586",
+          "name": "Fundação Carlos Chagas Filho de Amparo à Pesquisa do Estado do Rio de Janeiro",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "E-26/111.401/2013"
+          ]
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "J. Chem. Inf. Model."
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2016,
+            12,
+            27
+          ]
+        ]
+      },
+      "DOI": "10.1021/acs.jcim.6b00355",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2016,
+            11,
+            4
+          ]
+        ],
+        "date-time": "2016-11-04T17:52:43Z",
+        "timestamp": 1478281963000
+      },
+      "page": "2495-2506",
+      "source": "Crossref",
+      "is-referenced-by-count": 2,
+      "title": "Boosting Docking-Based Virtual Screening with Deep Learning",
+      "prefix": "10.1021",
+      "volume": "56",
+      "author": [
+        {
+          "given": "Janaina Cruz",
+          "family": "Pereira",
+          "affiliation": []
+        },
+        {
+          "given": "Ernesto Raúl",
+          "family": "Caffarena",
+          "affiliation": []
+        },
+        {
+          "given": "Cicero Nogueira",
+          "family": "dos Santos",
+          "affiliation": []
+        }
+      ],
+      "member": "316",
+      "container-title": "Journal of Chemical Information and Modeling",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2016,
+            12,
+            27
+          ]
+        ],
+        "date-time": "2016-12-27T09:26:59Z",
+        "timestamp": 1482830819000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            12,
+            27
+          ]
+        ]
+      },
+      "references-count": 45,
+      "alternative-id": [
+        "10.1021/acs.jcim.6b00355"
+      ],
+      "URL": "http://dx.doi.org/10.1021/acs.jcim.6b00355",
+      "relation": {},
+      "issn-type": [
+        {
+          "value": "1549-9596",
+          "type": "print"
+        },
+        {
+          "value": "1549-960X",
+          "type": "electronic"
+        }
+      ],
+      "subject": [
+        "Chemistry(all)",
+        "Chemical Engineering(all)",
+        "Library and Information Sciences",
+        "Computer Science Applications"
+      ],
+      "id": "Gue0c5Gb"
+    },
+    "citation_id": "Gue0c5Gb"
   }
 }

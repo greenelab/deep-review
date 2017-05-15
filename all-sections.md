@@ -1680,25 +1680,16 @@ features simply by its ability to optimize a complex model against data.
 
 ## The impact of deep learning in treating disease and developing new treatments
 
-`TODO: write Treat intro`
-
-`TODO: just realised this wanders heavily into the categorization area. Need
-some high-level rearrangment? Could shift the first section below into the
-categorization section and leave the treatment here.`
-
 Given the ever-present need to make better interventions faster at the point of
 care -- incorporating the complex calculus of a patients symptoms, diagnostics
 and life history -- there is a long history of attempts to apply deep learning
-to the problem of treatment. Success in this area would also be very useful for
-directions like personalised healthcare or precision medicine
+to patient treatment. Success in this area would also be very useful for
+directions like personalized healthcare or precision medicine
 [@VOQtVhWs; @3JyJ3DTh]. Earlier, we have written
-of the possibilities for patient categorization. Here we examine the potential
+of the possibilities for patient categorization. Here, we examine the potential
 for better treatment, which broadly, may divided into methods for improved
 choices of interventions for patients and those for development of new
 interventions.
-
-`TODO: Add representative papers about Modeling Metabolism and Chemical
-Reactivity`
 
 ### Categorizing patients for clinical decision making
 
@@ -1832,7 +1823,7 @@ using a simple non-parametric test. Since then, several advanced computational
 methods have been applied to formulate and validate drug repositioning
 hypotheses [@gTwjIQqB; @1BkEtNVsj; @ir7ElHha]. Using supervised learning and collaborative filtering
 to tackle this type of problems is proving successful in different scenarios,
-especially when coupling disease or compound omic data  with topological
+especially when coupling disease or compound omic data with topological
 information from protein-protein or protein-compound interaction networks
 [@M1EW8Rfl; @16FEYidu2; @18lqFDKRR].
 
@@ -1878,83 +1869,82 @@ repositioning is currently missing.
 ### Ligand-Based Prediction of Bioactivity
 
 In the biomedical domain, high-throughput chemical screening aims to improve
-therapeutic options over a long term horizon [@1DTUK3YyI]
-`TODO: add another general screening reference`.  The objective is to discover
-which small molecules (also referred to as chemical compounds or ligands)
-effectively and specifically affect the activity of a target, such as a kinase,
-protein-protein interaction, or broader cellular phenotype.  `TODO: clarify
-desired outputs, what will be done with the top-ranked hits, one vs multiple
-hits, abandoning lead compounds` This screening process can serve as one of the
-first steps in the long drug discovery pipeline, where novel chemicals are
-pursued for their ability to inhibit or enhance disease-relevant biological
-mechanisms.  The appeal of machine learning in this domain is the need to
-improve the efficiency of the initial high-throughput screens such that
-sufficient candidate active compounds can be identified without exhaustively
-screening libraries of hundreds of thousands or millions of chemicals.  `TODO:
-is the sufficient number target dependent?` This task has been treated variously
-as a classification, regression, or ranking problem. In reality, it does not fit
-neatly into any of those categories.  An ideal algorithm will rank a sufficient
-number of active compounds before the inactives, but the rankings of actives
-relative to other actives and inactives are less important
-[@cjj5vT3H]. `TODO: can improve this first attempt at an intro by
-reviewing more existing literature on the topic` `TODO: check which other
-existing reviews should be referenced`
+therapeutic options over a long term horizon [@1DTUK3YyI].
+The objective is to discover which small molecules (also referred to as chemical
+compounds or ligands) effectively and specifically affect the activity of a
+target, such as a kinase, protein-protein interaction, or broader cellular
+phenotype.  This screening process can serve as one of the first steps in the
+long drug discovery pipeline, where novel chemicals are pursued for their
+ability to inhibit or enhance disease-relevant biological mechanisms
+[@RAadmvJN].  Initial hits are confirmed to eliminate false positives
+and proceed to the lead generation stage [@1D6emOV6q],
+where they are evaluated for absorption, distribution, metabolism, excretion,
+and toxicity (ADMET) and other properties.  It is desirable to advance multiple
+lead series, clusters of structurally-similar active chemicals, for further
+optimization by medicinal chemists to protect against unexpected failures in the
+later stages of drug discovery [@RAadmvJN].
+
+The appeal of machine learning in this domain is the need to improve the
+efficiency of the initial high-throughput screens such that sufficient candidate
+active compounds can be identified without exhaustively screening libraries of
+hundreds of thousands or millions of chemicals.  Predicting chemical activity
+computationally is known as virtual screening.  This task has been treated
+variously as a classification, regression, or ranking problem. In reality, it
+does not fit neatly into any of those categories.  An ideal algorithm will rank
+a sufficient number of active compounds before the inactives, but the rankings
+of actives relative to other actives and inactives are less important
+[@cjj5vT3H].  Computational modeling also has the potential to
+predict ADMET traits for lead generation [@uP7SgBVd] and
+how drugs are metabolized [@7QsMcDYy].
 
 Here we primarily focus on ligand-based approaches that train on chemicals'
-features without requiring prior knowledge of the target, as opposed to
-strategies specifically modeling features such as protein structure `TODO: add
-examples`. Chemical features may be represented as a list of molecular
-descriptors such as molecular weight, atom counts, charge representations,
-summaries of atom-atom relationships in the molecular graph, and more
-sophisticated derived properties [@17eGl2pn9].   Alternatively,
-chemicals can be characterized with the fingerprint bit vectors, textual
-strings, or novel learned representations described below. Neural networks have
-a long history in this domain [@xPkT1z7D] `TODO: can add
-additional references besides this review`, and the 2012 Merck Molecular
-Activity Challenge on Kaggle generated substantial excitement about the
-potential for high-parameter deep learning approaches.  The winning submission
-was an ensemble that included a multitask multilayer perceptron network
+features without requiring prior knowledge of the target. Chemical features may
+be represented as a list of molecular descriptors such as molecular weight, atom
+counts, charge representations, summaries of atom-atom relationships in the
+molecular graph, and more sophisticated derived properties
+[@17eGl2pn9].   Alternatively, chemicals can be characterized
+with the fingerprint bit vectors, textual strings, or novel learned
+representations described below. Neural networks have a long history in this
+domain [@xPkT1z7D], and the 2012 Merck Molecular Activity
+Challenge on Kaggle generated substantial excitement about the potential for
+high-parameter deep learning approaches.  The winning submission was an ensemble
+that included a multitask multilayer perceptron network
 [@1Dzz0P0qr], and the sponsors noted drastic improvements over a
 random forest (RF) baseline, remarking "we have seldom seen any method in the
 past 10 years that could consistently outperform RF by such a margin"
-[@xOaTIeBY]. Subsequent work explored the effects of jointly
-modeling far more targets than the Merck challenge
-[@F8fP2vAg; @yAoN5gTU], with
-[@yAoN5gTU] showing that the benefits of multi-task
-networks had not yet saturated even with 259 targets.  Although a deep learning
-approach, DeepTox [@Y1D0SZrO], was also the overall winner of
-another competition, the Toxicology in the 21st Century (Tox21) Data Challenge,
-it did not dominate alternative methods as thoroughly as in other domains.
-DeepTox was the top performer on 9 of 15 targets and highly competitive with the
-top performer on the others.  However, for many targets there was little
-separation between the top two or three methods.  A reliance on AUC ROC `TODO:
-define here?` for the evaluation (see Discussion) further hinders the ability to
-declare Tox21 as an outright success for deep learning.
+[@xOaTIeBY]. Subsequent work (reviewed in more detail by Goh et al.
+[@zCt6PUXj]) explored the effects of jointly modeling far more
+targets than the Merck challenge [@F8fP2vAg; @yAoN5gTU], with [@yAoN5gTU]
+showing that the benefits of multi-task networks had not yet saturated even with
+259 targets.  Although a deep learning approach, DeepTox
+[@Y1D0SZrO], was also the overall winner of another competition,
+the Toxicology in the 21st Century (Tox21) Data Challenge, it did not dominate
+alternative methods as thoroughly as in other domains. DeepTox was the top
+performer on 9 of 15 targets and highly competitive with the top performer on
+the others.  However, for many targets there was little separation between the
+top two or three methods.
 
 The nuanced Tox21 performance may be more reflective of the practical challenges
 encountered in ligand-based chemical screening than the extreme enthusiasm
-generated by the Merck competition.  A study of 22 absorption distribution,
-metabolism, excretion, and toxicity (ADMET) tasks demonstrated that there are
-limitations to multi-task transfer learning that are in part a consequence of
-the degree to which tasks are related [@uP7SgBVd]. Some of the
-ADMET datasets showed superior performance in multi-task models with only 22
-ADMET tasks compared to multi-task models with over 500 less-similar tasks.
-`TODO: also has a good discussion of information leakage in cross validation,
-include that in the Discussion section` In addition, training datasets
-encountered in practical applications may be tiny relative to what is available
-in public datasets and organized competitions.  A study of BACE-1 inhibitors
-included only 1547 compounds [@B4cL1o2P].  Machine learning
-models were able to train on this limited dataset, but overfitting was a
-challenge and the differences between random forests and a deep neural were
-negligible, especially in the classification setting.   Overfitting is still a
-problem in larger chemical screening datasets with tens or hundreds of thousands
-of compounds because the number of active compounds can be very small, on the
-order of 0.1% of all tested chemicals for a typical target
-[@WeiyYhfy]. This is consistent with the strong performance of
-low-parameter neural networks that emphasize compound-compound similarity, such
-as influence-relevance voter, [@cjj5vT3H; @1E0x7QgLP]
-instead of predicting compound activity directly from chemical features. `TODO:
-include recent DeepChem IRV benchmarks?`
+generated by the Merck competition.  A study of 22 ADMET tasks demonstrated that
+there are limitations to multi-task transfer learning that are in part a
+consequence of the degree to which tasks are related [@uP7SgBVd].
+Some of the ADMET datasets showed superior performance in multi-task models with
+only 22 ADMET tasks compared to multi-task models with over 500 less-similar
+tasks. In addition, training datasets encountered in practical applications may
+be tiny relative to what is available in public datasets and organized
+competitions.  A study of BACE-1 inhibitors included only 1547 compounds
+[@B4cL1o2P].  Machine learning models were able to train on
+this limited dataset, but overfitting was a challenge and the differences
+between random forests and a deep neural were negligible, especially in the
+classification setting.   Overfitting is still a problem in larger chemical
+screening datasets with tens or hundreds of thousands of compounds because the
+number of active compounds can be very small, on the order of 0.1% of all tested
+chemicals for a typical target [@WeiyYhfy]. This is consistent with
+the strong performance of low-parameter neural networks that emphasize
+compound-compound similarity, such as influence-relevance voter,
+[@cjj5vT3H; @1E0x7QgLP] instead of predicting compound
+activity directly from chemical features.
 
 Much of the recent excitement in this domain has come from what could be
 considered a creative experimentation phase, in which deep learning has offered
@@ -1962,24 +1952,26 @@ novel possibilities for feature representation and modeling of chemical
 compounds.  A molecular graph, where atoms are nodes and bonds are edges, is a
 natural way to represent a chemical structure.  Traditional machine learning
 approaches relied on preprocessing the graph into a feature vector, such as a
-fixed-width bit vector fingerprint [@QnZ7V9Rd].  An overly
-simplistic but approximately correct view of these fingerprints is that each bit
-represents the presence of absence of a particular chemical substructure in the
-molecular graph. Modern neural networks can operate directly on the molecular
-graph as input.  Duvenaud et al. [@Oe573FaL] generalized
-standard circular fingerprints by substituting discrete operations in the
-fingerprinting algorithm with operations in a neural network, producing a
-real-valued feature vector instead of a bit vector.  Other approaches offer
-trainable networks that can in theory learn chemical feature representations
-that are optimized for a particular prediction task.   Lusci et al. adapted
+fixed-width bit vector fingerprint [@QnZ7V9Rd].  The same
+fingerprints have been used by some drug-target interaction methods discussed
+above [@oTF8O79C].  An overly simplistic but
+approximately correct view of chemical fingerprints is that each bit represents
+the presence of absence of a particular chemical substructure in the molecular
+graph. Modern neural networks can operate directly on the molecular graph as
+input.  Duvenaud et al. [@Oe573FaL] generalized standard
+circular fingerprints by substituting discrete operations in the fingerprinting
+algorithm with operations in a neural network, producing a real-valued feature
+vector instead of a bit vector.  Other approaches offer trainable networks that
+can in theory learn chemical feature representations that are optimized for a
+particular prediction task.   Lusci et al. [@17Wih4Hd5] adapted
 recursive neural networks for directed acyclic graphs for undirected molecular
 graphs by creating an ensemble of directed graphs in which one atom is selected
-as the root node [@17Wih4Hd5].  A single feature vector is obtained by
-summing over all feature vectors for all directed graphs in the ensemble.  Graph
-convolutions on undirected molecular graphs have eliminated the need to
-enumerate artificial directed graphs, learning feature vectors for atoms that
-are a function of the properties of neighboring atoms and local regions on the
-molecular graph [@145os4Y6t; @P4ixsM8i].
+as the root node.  A single feature vector is obtained by summing over all
+feature vectors for all directed graphs in the ensemble.  Graph convolutions on
+undirected molecular graphs have eliminated the need to enumerate artificial
+directed graphs, learning feature vectors for atoms that are a function of the
+properties of neighboring atoms and local regions on the molecular graph
+[@145os4Y6t; @P4ixsM8i].
 
 Advances in chemical representation learning have also enabled new strategies
 for learning chemical-chemical similarity functions.  Altae-Tran et al.
@@ -2010,14 +2002,16 @@ Currently, these methods are enticing but do not necessarily outperform classic
 approaches by a large margin.  The neural fingerprints
 [@Oe573FaL] were narrowly beaten by regression using
 traditional circular fingerprints on a drug efficacy prediction task (but were
-superior for predicting solubility or photovoltaic efficiency).  Graph
-convolutions [@145os4Y6t] performed comparably to a multitask
-network using standard fingerprints and slightly better than the neural
-fingerprints [@Oe573FaL] on the drug efficacy task but were
-slightly worse than the influence-relevance voter method on an HIV dataset.
-[@cjj5vT3H].  `TODO: there are also problems with some papers using
-ROC primarily for benchmarking, which skews results and makes it hard to assess
-absolute performance.  Add to the Discussion section.`
+superior for predicting solubility or photovoltaic efficiency).  In the original
+study, graph convolutions [@145os4Y6t] performed comparably to
+a multitask network using standard fingerprints and slightly better than the
+neural fingerprints [@Oe573FaL] on the drug efficacy task but
+were slightly worse than the influence-relevance voter method on an HIV dataset.
+[@cjj5vT3H].  Broader recent benchmarking has shown that relative
+merits of these methods depends on the dataset and cross validation strategy
+[@16OPHvAij], though we caution against over-interpreting AUC
+ROC-based results, a popular metric in this domain despite the active/inactive
+class imbalance (see Discussion).
 
 We remain optimistic for the potential of deep learning and specifically
 representation learning in this domain and propose that rigorous benchmarking on
@@ -2061,14 +2055,17 @@ organic molecules with drug-like properties that could be chemically synthesized
 represent chemicals with the simplified molecular-input line-entry system
 (SMILES), a standard way string-based representation with characters that
 represent atoms, bonds, and rings [@8LWFFeYg].
-Gómez-Bombarelli et al. designed a  SMILES-to-SMILES autoencoder to learn a
-continuous latent feature space for chemicals [@2dU8f4XJ].
-`TODO: connect to related EHR paper` In this learned continuous space it was
-possible to train some types of supervised learning algorithms or interpolate
-between continuous representations of chemicals in a manner that is not possible
-with discrete (e.g. bit vector or string) features. A drawback is that not all
-SMILES strings produced by the autoencoder's decoder correspond to valid
-chemical structures.  More recent approaches train RNNs on compounds from ChEMBL
+Gómez-Bombarelli et al. designed a SMILES-to-SMILES autoencoder to learn a
+continuous latent feature space for chemicals [@2dU8f4XJ]. In
+this learned continuous space it was possible to train some types of supervised
+learning algorithms and interpolate between continuous representations of
+chemicals in a manner that is not possible with discrete (e.g. bit vector or
+string) features.  The strategy of constructing simple, continuous features
+before applying supervised learning techniques is reminiscent of autoencoders
+trained on high-dimensional EHR data [@5x3uMSKi].  A
+drawback of the SMILES-to-SMILES autoencoder is that not all SMILES strings
+produced by the autoencoder's decoder correspond to valid chemical structures.
+More recent approaches train RNNs on compounds from ChEMBL
 [@x1nE5icc] to first obtain a generic generative model for
 drug-like compounds [@8LWFFeYg; @1EayJRsI].  These generative models successfully learn
 the grammar of compound representations, with 94%
@@ -2079,13 +2076,40 @@ specific target by either continuing training on a small set of positive
 examples [@8LWFFeYg] or adopting reinforcement learning
 strategies [@1EayJRsI].
 
-`TOOD: relationship to traditional docking (some networks include docking scores +
-the docking based method that uses neighboring atoms), deep learning with
-structure (e.g. [@Z7fd0BYf; @bNBiIiTt; @17YaKNLKk])`
-
-`TODO: link to drug repurposing section above,  DeepDTIs uses ECFPs as features
-for its 1412 compounds and protein sequence composition (PSCs) features for its
-targets (1520).`
+When protein structure is available, virtual screening has traditionally relied
+on docking programs to predict how a compound best fits in the target's binding
+site and score the predicted ligand-target complex
+[@13iyYvEcB].  Recently, deep learning approaches have been
+developed to model protein structure, which is expected to improve upon the
+simpler drug-target interaction algorithms described above that represent
+proteins with feature vectors derived from amino acid sequences
+[@TeIxEjqm; @oTF8O79C].
+Structure-based deep learning methods differ in whether they use
+experimentally-derived or predicted ligand-target complexes and how they
+represent the 3D structure.  The Atomic Convolutional Neural Network
+[@17YaKNLKk] takes 3D crystal structures from PDBBind
+[@YO41GAOP] as input, ensuring it uses the correct ligand-target
+complex.  Alternatively, AtomNet [@Z7fd0BYf] samples multiple
+ligand poses within the target binding site, and DeepVS
+[@Gue0c5Gb] and Ragoza et al. [@bNBiIiTt] use a
+docking program to generate protein-compound complexes.  If they are
+sufficiently accurate, these latter approaches would have wider applicability to
+a much larger set of compounds and proteins.  However, incorrect ligand poses
+will be misleading during training, and the predictive performance is sensitive
+to the docking quality [@Gue0c5Gb].  A 3D grid can be used to
+represent a protein-compound complex [@Z7fd0BYf; @bNBiIiTt]. Each entry in the grid tracks the types of protein and
+ligand atoms in that region of the 3D space or descriptors derived from those
+atoms.  Both DeepVS [@Gue0c5Gb] and atomic convolutions
+[@17YaKNLKk] offer greater flexibility in their convolutions by eschewing
+the 3D grid.  Instead, they each implement techniques for executing convolutions
+over atoms' neighboring atoms in the 3D space.  Gomes et al. demonstrate that
+currently random forest on a 1D feature vector that describes the 3D
+ligand-target structure generally outperforms neural networks on the same
+feature vector, atomic convolutions, and ligand-based neural networks when
+predicting the continuous-valued inhibition constant on the PDBBind refined
+dataset. However, in the long term atomic convolutions may ultimately overtake
+grid-based methods, as they provide greater freedom to model atom-atom
+interactions and the forces that govern binding affinity.
 
 
 ## Discussion
