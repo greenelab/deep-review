@@ -46,15 +46,15 @@ treated as higher priority by the hospital. In the context of deep learning,
 understanding the basis of a model's output is particularly important
 as deep learning models are unusually susceptible to adversarial examples
 [@tag:Nguyen2014_adversarial] and can output confidence scores over 99.99%
-for samples that resemble pure noise. 
+for samples that resemble pure noise.
 
 As the concept of interpretability is quite broad, many methods described as
 improving the interpretability of deep learning models take disparate and
-often complementary approaches. Some key themes are discussed below. 
+often complementary approaches. Some key themes are discussed below.
 
 #### Assigning example-specific importance scores
 
-Several approaches ascribe importance on an example-specific basis 
+Several approaches ascribe importance on an example-specific basis
 to the parts of the input that are responsible for a particular output.
 These can be broadly divided
 into perturbation-based approaches and backpropagation-based approaches.
@@ -131,7 +131,7 @@ zero-out the importance signal if
  these feature maps was multiplied with the result of guided backpropagation
  to introduce more class specificity. Note that these approaches still would
  not highlight features that have saturated their contribution to the output,
- as the gradients w.r.t. such features would be zero at the input. 
+ as the gradients w.r.t. such features would be zero at the input.
 
 To address the saturation failure mode, strategies have been developed
  to consider how the output changes between some reference input
@@ -160,28 +160,28 @@ To address the saturation failure mode, strategies have been developed
  integrated gradients and LIME,
  could all be considered
  approximations to the Shapely values, which have a long history
- in game theory for assigning contributions to players in cooperative games. 
+ in game theory for assigning contributions to players in cooperative games.
  DeepLIFT introduced a modification which treated positive and negative
  contributions separately to address some failure cases of
  integrated gradients; the modification can be understood as an improved
  approximation of the Shapely values.
 
-#### Matching or exaggerating the hidden representation 
+#### Matching or exaggerating the hidden representation
 
 Another approach to understanding the network's predictions
 is to find artifical inputs that produce similar hidden
 representations to a chosen example. This can elucidate the features
 that the network uses for prediction and drop the features that the
 network is insensitive to. In the context of natural images,
-Mahendran & Vedaldi [@tag:Mahendran2014_understanding] 
+Mahendran & Vedaldi [@tag:Mahendran2014_understanding]
 introduced the "inversion" visualization which uses gradient descent and
 backpropagation to reconstruct the input from its hidden representation.
 The method required placing a prior on the input to favour results which
-resemble natural images. 
+resemble natural images.
 For genomic sequence, Finnegan & Song [@tag:Finnegan2017_maximum]
  used a MCMC algorithm to find the
 maximum-entropy distribution of inputs that produced a similar hidden
-representation to the chosen input. 
+representation to the chosen input.
 
 A related idea is 'caricaturization', where an initial image is altered to
 exaggerate patterns that the net searches for
@@ -222,13 +222,13 @@ attention mechanisms, which have been used in diverse problems such
 as image captioning and
 machine translation to select portions of the input to focus on for generating
 a particular output [@tag:Bahdanu2014_neural, @tag:Xu2015_show].
- Deming et al. [@tag:Deming2016_genetic] 
+ Deming et al. [@tag:Deming2016_genetic]
  applied the attention mechanism to models trained on genomic sequence.
  Attention mechanisms provide insight into the model's
  decision-making process by revealing which portions of the input are
  used by different outputs.
  In the clinical domain,
- Choi et al. [@tag:Choi2016_retain] 
+ Choi et al. [@tag:Choi2016_retain]
  leveraged attention mechanisms to highlight which aspects of
  a patient's medical history were most relevant for making
  diagnoses. Choi et al. [@tag:Choi2016_gram] later extended this work to
@@ -243,7 +243,7 @@ Visualizing the activation patterns of the hidden state of a
  recurrent neural network can also be instructive.
  Early work by Ghosh & Karamcheti
  [@tag:Ghosh1992_sequence] used cluster analysis to study hidden states of
-comparatively small 
+comparatively small
  networks trained to recognise strings from a finite state machine.
  More recently, Karpathy et al. [@tag:Karpathy2015_visualizing]
  showed the existence of individual
