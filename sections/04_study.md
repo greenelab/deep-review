@@ -562,7 +562,7 @@ whole set of targets. In CAMEO (which can be interpreted as a fully-automated
 CASP) [@url:http://www.cameo3d.org/], its predicted contacts were
 also able to fold proteins with a novel fold and only 65-330 sequence homologs.
 This technique also worked well on membrane protein contact prediction even when
-trained mostly on non-membrane proteins [@arXiv:1704.07207]. RaptorX-Contact
+trained mostly on non-membrane proteins [@arxiv:1704.07207]. RaptorX-Contact
 performed better mainly due to introduction of residual neural networks and
 exploitation of contact occurrence patterns by simultaneously predicting of all
 the contacts in a single protein.
