@@ -1459,7 +1459,8 @@ several percentage points of improvement compared to random forests or deep
 networks trained only on CpG or sequence information. Similar deep learning
 methods have been applied to impute low-resolution ChIP-seq signal from bulk
 tissue with great success, and they could easily be adapted to single cell data
-[@Qbtqlmhf; @XimuXZlz].
+[@Qbtqlmhf; @XimuXZlz]. Deep learning has also been useful
+for dealing with batch effects [@T2Md9xLY].
 
 Examining populations of single cells can reveal biologically meaningful subsets
 of cells as well as their underlying gene regulatory networks
@@ -1493,8 +1494,6 @@ patterns of adaptation are random or deterministic, allowing us to develop
 therapeutic strategies that forestall resistance. It will be exciting to see the
 creative applications of deep learning to single-cell biology that emerge over
 the next few years.
-
-`TODO: https://github.com/greenelab/deep-review/issues/153`
 
 ### Metagenomics
 
