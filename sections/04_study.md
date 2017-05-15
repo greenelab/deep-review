@@ -1,20 +1,19 @@
 ## Deep learning to study the fundamental biological processes underlying human disease
 
 The study of cellular structure and core biological processes -- transcription,
-translation, signaling, metabolism, etc. -- in humans and model organisms may
-not have obvious or immediate relevance to human disease but has enormous
-potential over the long horizon [@tag:Nih_curiosity].  Understanding cellular
-systems and predicting how they are altered by genetic variation and respond to
-environmental perturbations remains a daunting task.  Deep learning offers new
-approaches for modeling biological processes and integrating multiple types of
-omic data [@doi:doi:10.1038/ncomms13090], which could eventually help predict
-how these processes are disrupted in disease.  Recent work has already advanced
-our ability to identify and interpret genetic variants, study microbial
-communities, and predict protein structures (which relates to drug discovery, as
-discussed in the chemical bioactivity section).  Unsupervised deep learning
-might discover novel cellular states from gene expression, fluorescence
-microscopy, or other types of data that ultimately prove to be
-clinically-relevant.
+translation, signaling, metabolism, etc. -- in humans and model organisms will
+greatly impact human disease over the long horizon [@tag:Nih_curiosity].
+Understanding cellular systems and predicting how they are altered by genetic
+variation and respond to environmental perturbations remain daunting tasks.
+Deep learning offers new approaches for modeling biological processes and
+integrating multiple types of omic data [@doi:10.1038/ncomms13090], which
+could eventually help predict how these processes are disrupted in disease.
+Recent work has already advanced our ability to identify and interpret genetic
+variants, study microbial communities, and predict protein structures (which
+relates to drug discovery, as discussed in the chemical bioactivity section). In
+addition, unsupervised deep learning has enormous potential for discovering
+novel cellular states from gene expression, fluorescence microscopy, and other
+types of data that ultimately prove to be clinically relevant.
 
 Progress has been rapid in genomics and imaging, fields where important tasks
 are readily adapted to well-established deep learning paradigms.  One
@@ -26,7 +25,8 @@ and  classification in fluorescence microscopy images
 are biologically important but studied less-frequently to date
 [@tag:Chen2015_trans_species].  This may be a consequence of data limitations or
 greater challenges in adapting neural network architectures to the available
-data.
+data.  Here, we highlight several areas of investigation and assess how deep
+learning can move these fields forward.
 
 ### Gene expression
 
