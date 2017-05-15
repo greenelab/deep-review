@@ -30,81 +30,67 @@ and why it has received less attention, @tag:Chen2015_trans_species as example`
 
 ### Gene expression
 
-Gene expression measurements characterize the abundance of many thousands of
-RNA transcripts within a given organism, tissue, or cell. This characterization
-can represent the underlying state of the given system and can be used to study
+Gene expression technologies characterize the abundance of many thousands of RNA
+transcripts within a given organism, tissue, or cell. This characterization can
+represent the underlying state of the given system and can be used to study
 heterogeneity across samples as well as how the system reacts to perturbation.
 While gene expression measurements have been traditionally made by quantitative
-polymerase chain reaction (qPCR), low throughput fluorescence based methods,
-and microarray technologies, the field has shifted in recent years to primarily
-performing RNA sequencing (RNA-seq) to catalog whole transcriptomes. As such
-next generation sequencing technologies continue to fall in price and rise in
-throughput, applying deep learning to study gene expression data is likely to
-make training deep models more feasible. With increased modeling ability, deep
-learning approaches are likely to grow in popularity and lead to novel
-biological insights.
+polymerase chain reaction (qPCR), low-throughput fluorescence-based methods, and
+microarray technologies, the field has shifted in recent years to primarily
+performing RNA sequencing (RNA-seq) to catalog whole transcriptomes. As RNA-seq
+continues to fall in price and rise in throughput, applying deep learning to
+study gene expression data is likely to make training deep models more feasible.
+With increased modeling ability, deep learning approaches are likely to grow in
+popularity and lead to novel biological insights.
 
 Already several deep learning approaches have been applied to gene expression
 data with varying aims. For instance, many researchers have applied unsupervised
-deep learning models to extract meaningful representations of gene modules
-or sample clusters. Denoising autoencoders have been used to cluster yeast
+deep learning models to extract meaningful representations of gene modules or
+sample clusters. Denoising autoencoders have been used to cluster yeast
 expression microarrays into known modules representing cell cycle processes
 [@tag:Gupta2015_exprs_yeast] and also to stratify yeast strains based on
-chemical and mutational perturbations [@tag:Chen2016_exprs_yeast]. Shallow
-(one hidden layer) denoising autoencoders have also been fruitful in extracting
+chemical and mutational perturbations [@tag:Chen2016_exprs_yeast]. Shallow (one
+hidden layer) denoising autoencoders have also been fruitful in extracting
 biological insight from thousands of _Pseudomonas aeruginosa_ experiments
-[@tag:Tan2015_adage @tag:Tan2016_eadage] and in aggregating features relevant
-to specific breast cancer subtypes [@tag:Tan2014_psb]. These unsupervised
+[@tag:Tan2015_adage @tag:Tan2016_eadage] and in aggregating features relevant to
+specific breast cancer subtypes [@tag:Tan2014_psb]. These unsupervised
 approaches applied to gene expression data are powerful methods for aggregating
 features and identifying gene signatures that may otherwise be overlooked by
 alternative methods. An additional benefit of unsupervised approaches is that
 ground truth labels, which are often difficult to acquire or are incorrect, are
 nonessential. However, careful interpretation must be performed regarding how
-the genes are aggregated into features. Precisely attributing node activations to
-specific biological functions risks over-interpreting models and can lead to
+the genes are aggregated into features. Precisely attributing node activations
+to specific biological functions risks over-interpreting models and can lead to
 incorrect conclusions.
 
-Alternatively, deep learning approaches are also being applied to gene
-expression prediction tasks. For example, a deep neural network with
-three hidden layers outperformed linear regression in inferring the expression
-of over 20,000 target genes based on a representative, well-connected set of
-about 1,000 landmark genes [@tag:Chen2016_gene_expr]. However, while the deep
-learning model outperformed already existing algorithms in nearly every
-scenario, the model still displayed poor performance. The paper was also limited
-by computational bottlenecks that required data to be split randomly into two
-distinct models and trained separately. It is unclear how much performance
-would have increased if not for computational restrictions. Furthermore, a
+Deep learning approaches are also being applied to gene expression prediction
+tasks. For example, a deep neural network with three hidden layers outperformed
+linear regression in inferring the expression of over 20,000 target genes based
+on a representative, well-connected set of about 1,000 landmark genes
+[@tag:Chen2016_gene_expr]. However, while the deep learning model outperformed
+existing algorithms in nearly every scenario, the model still displayed poor
+performance. The paper was also limited by computational bottlenecks that
+required data to be split randomly into two distinct models and trained
+separately. It is unclear how much performance would have increased if not for
+computational restrictions. Alternatively, epigenetic data may have sufficient
+explanatory power for inference of gene expression. For instance, a
 convolutional neural network applied to histone modifications, termed
-DeepChrome, [@tag:Singh2016_deepchrome] was shown to predict gene expression
-output. DeepChrome greatly improved high or low expression prediction accuracy
-over existing methods. Deep learning applied to epigenetic data for gene
-expression inference is a promising approach to study gene regulation. Deep
-learning approaches have also been applied to study cancer gene expression data
-with goals of identifying subtypes of patients with different molecular features
-and clinical manifestations [@tag:Liang2015_exprs_cancer]. In the study, the
-authors combine RBMs to integrate gene expression, DNA methylation, and miRNA
-data and use the constructed features in search of ovarian cancer subtypes.
-While the aforementioned approaches are promising, many convert gene expression
-measurements to categorical or binary variables thus ablating many complex gene
-expression signatures present in intermediate and relative numbers.
+DeepChrome, [@tag:Singh2016_deepchrome] was shown to improve prediction accuracy
+of high or low expression over existing methods. Deep learning can also be
+useful for integrating different data types. For example, Liang et al. combined
+RBMs to integrate gene expression, DNA methylation, and miRNA data to define
+ovarian cancer subtypes [@tag:Liang2015_exprs_cancer]. While the aforementioned
+approaches are promising, many convert gene expression measurements to
+categorical or binary variables, thus ablating many complex gene expression
+signatures present in intermediate and relative numbers.
 
-Deep learning applied to gene expression data is in its infancy but the future
-is bright. Many hypotheses can now be interrogated because of increasing
-amounts of data and new developing technologies. For example, there is a
-growing appreciation for the large impact of disease heterogeneity on research
-and treatment strategies for diseases. New technologies are being developed,
-such as single cell RNA-seq and high throughput fluorescence based imaging that
-are good matches for deep learning. Concurrently, deep learning methods are
-being developed to address novel problems such as adjusting for batch effects in
-single-cell RNA-seq data [@tag:Shaham2016_batch_effects]. Moreover, deep
-learning is already well established in the image processing community, so the
-marriage of fluorescence based imaging techniques and deep learning is natural.
-These technologies are growing in popularity and will provide increasingly novel
-perspectives with respect to how cellular heterogeneity impacts gene expression
-coordination within a sample. In general, as the flow of gene expression data
-increases, and techniques to integrate heterogeneous genomic measurements made
-on the same samples are enhanced, the quality and types of questions deep
-learning can address is poised to improve.
+Deep learning applied to gene expression data is still in its infancy, but the
+future is bright. Many previously untestable hypotheses can now be interrogated
+as deep learning enables analysis of increasing amounts of data generated by new
+technologies. For example, the effects of cellular heterogeneity on basic
+biology and disease etiology can now be explored by single-cell RNA-seq and
+high-throughput fluorescence-based imaging, techniques that will benefit
+immensely from deep learning approaches.
 
 ### Splicing
 
