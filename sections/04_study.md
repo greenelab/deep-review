@@ -95,23 +95,18 @@ immensely from deep learning approaches.
 ### Splicing
 
 Pre-mRNA transcripts can be spliced into different isoforms by retaining or
-skipping subsets of exons, or including parts of introns. This alternative
-splicing provides cells with enormous spatiotemporal flexibility to generate
-multiple distinct proteins from a single gene. Splicing is catalyzed by small
-nuclear RNAs (snRNAs) and spliceosomal proteins, which detect sequence motifs
-such as splice sites and exon sequence enhancers and silencers (ESE and ESS).
-Various RNA-binding proteins and noncoding RNAs can bias these reactions by
-altering binding affinities, blocking splice sites, or sequestering splicing
-factors. This remarkable complexity unfortunately lends itself to defects that
+skipping subsets of exons, or including parts of introns, creating enormous
+spatiotemporal flexibility to generate multiple distinct proteins from a single
+gene. Unfortunately, this remarkable complexity can lend itself to defects that
 underlie many diseases [@tag:Scotti2016_missplicing]. For instance, in Becker
-muscular dystrophy, a point mutation in dystrophin creates an ESS that induces
-skipping of exon 31. A recent study found that quantitative trait loci (QTLs)
-that affect splicing in lymphoblastoid cell lines are enriched within risk loci
-for schizophrenia, multiple sclerosis and other immune diseases, implicating
-mis-splicing as a much more widespread feature of human pathologies than
-previously thought [@tag:Li2016_variation].
+muscular dystrophy, a point mutation in dystrophin creates an exon splice
+silencer that induces skipping of exon 31. A recent study found that
+quantitative trait loci (QTLs) that affect splicing in lymphoblastoid cell lines
+are enriched within risk loci for schizophrenia, multiple sclerosis, and other
+immune diseases, implicating mis-splicing as a much more widespread feature of
+human pathologies than previously thought [@tag:Li2016_variation].
 
-Sequencing studies routinely return thousands of unannotated variants. Which
+Sequencing studies routinely return thousands of unannotated variants, but which
 cause functional changes in splicing, and if so, how? Prediction of a “splicing
 code” has been a holy grail over the past decade. Initial machine learning
 approaches used a naive Bayes model and a 2-layer Bayesian neural network with
@@ -120,57 +115,51 @@ exon skipping [@tag:Barash2010_splicing_code @tag:Xiong2011_bayesian]. With the
 advent of deep learning, more complex models were built that provided better
 predictive accuracy [@tag:Xiong2015_splicing_code
 @tag:Jha2017_integrative_models]. Importantly, these new approaches can take in
-not only genomic features, but also tissue identity and CLIP-seq measurements of
-interactions between splicing factors and RNA, which all improve predictive
-accuracy.
-
-The massive improvement seen with deep learning seems to stem from hidden layers
-being able to create new higher-order “features”, whereas earlier approaches
-often assumed independence of features and were unable to generalize.
-Higher-order understanding is especially important in splicing, which depends
-not only on the primary sequence, but also local RNA structure, tissue identity,
-splicing factor binding, and other currently unknown factors — all of which
-interact in complex, incompletely characterized ways. With new tools to
-interpret these meta-features, a major focus of current deep learning research,
-we will soon have the ability to extract a more nuanced biological understanding
-of splicing — perhaps by interrogating informative hidden nodes within neural
-networks that take in tissue type as part of the input, or by building separate
-networks for each tissue type and looking for common versus distinctive nodes
+multiple kinds of epigenomic measurements, as well as tissue identity and RNA
+binding partners of splicing factors. Deep learning is critical in furthering
+these kinds of integrative studies where different data types and inputs
+interact in unpredictable (often nonlinear) ways to create higher-order “features”,
+compared to earlier approaches that often assumed independence of features or
+required extensive human fine-tuning. Moreover, as in gene expression network
+analysis, interrogating the hidden nodes within neural networks will likely
+yield new biological insights into splicing. For instance, tissue-specific
+splicing mechanisms can be inferred by training networks on splicing data from
+different tissues, then searching for common versus distinctive nodes, a
+technique employed by Qin et al. for tissue-specific TF binding predictions
 [@tag:Qin2017_onehot].
 
 A parallel effort has been to use more data with simpler models. An exhaustive
 study using readouts of splicing for millions of synthetic intronic sequences
-was able to describe motifs that influence the strength of alternative splice
-sites [@tag:Rosenberg2015_synthetic_seqs]. Interestingly, they built a simple
-linear model using hexamer motif frequencies that successfully generalized to
-exon skipping: in a limited analysis using SNPs from three genes, it predicted
-exon skipping with three times the accuracy of Xiong et al.’s framework. This
-case is instructive in that clever sources of data, not just more powerful
-models, can lead to novel insights.
+uncovered motifs that influence the strength of alternative splice sites
+[@tag:Rosenberg2015_synthetic_seqs]. Interestingly, they built a simple linear
+model using hexamer motif frequencies that successfully generalized to exon
+skipping: in a limited analysis using SNPs from three genes, it predicted exon
+skipping with three times the accuracy of Xiong et al.’s deep learning-based
+framework. This case is instructive in that clever sources of data, not just
+more descriptive models, are still critical in yielding novel insights.
 
 We already understand how mis-splicing of a single gene can cause diseases such
-as Duchenne muscular dystrophy. The challenge now is to uncover how alternative
-splicing genome-wide gives rise to or is involved in complex, non-Mendelian
-diseases such as autism, schizophrenia, Type 1 diabetes, and multiple sclerosis
-[@tag:JuanMateu2016_t1d]. As a proof of concept, Xiong et al.
-[@tag:Xiong2015_splicing_code] sequenced five ASD and 12 control samples, each
-with an average of 42,000 rare variants, and identified 19 genes with neural
-functions that are mis-spliced. Deep learning will allow scientists and
-clinicians to rapidly profile thousands of unannotated variants for functional
-effects on splicing and nominate candidates for further investigation. Moreover,
-these nonlinear algorithms can deconvolve the effects of multiple variants on a
-single splice event without the need to perform combinatorial in vitro
-experiments.
+as Duchenne muscular dystrophy. The challenge now is to uncover how genome-wide
+alternative splicing underlies complex, non-Mendelian diseases such as autism,
+schizophrenia, Type 1 diabetes, and multiple sclerosis [@tag:JuanMateu2016_t1d].
+As a proof of concept, Xiong et al. [@tag:Xiong2015_splicing_code] sequenced
+five ASD and 12 control samples, each with an average of 42,000 rare variants,
+and identified mis-splicing in 19 genes with neural functions. Deep learning
+will allow scientists and clinicians to rapidly profile thousands of unannotated
+variants for functional effects on splicing and nominate candidates for further
+investigation. Moreover, these nonlinear algorithms can deconvolve the effects
+of multiple variants on a single splice event without the need to perform
+combinatorial in vitro experiments.
 
 Our end goal is to predict an individual’s tissue-specific, exon-specific
 splicing patterns from their genome sequence and other measurements. Knowing
 exactly which genes are mis-spliced in each tissue could enable a new branch of
 precision diagnostics that also stratifies patients and suggests targeted
 therapies to correct splicing defects. A continued focus on interpreting the
-“black box” of deep neural networks, along with integrating more comprehensive
-and diverse data sources, will likely provide the path forward to a better
-understanding of the basic determinants of splicing and its links to complex
-disease, which will lead to novel diagnostics and therapeutics.
+“black box” of deep neural networks, along with integrating diverse data
+sources, will help us better understand the basic determinants of splicing and
+its links to complex disease, which will lead to novel diagnostics and
+therapeutics.
 
 ### Transcription factors and RNA-binding proteins
 
