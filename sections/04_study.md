@@ -235,7 +235,7 @@ binding prediction is still in early stages, we expect to see an increase in
 domain-specific architectures for this task.
 
 Despite these advances, several challenges remain. First, because the inputs
-(ChIP-seq measurements) are continous and most current algorithms are designed
+(ChIP-seq measurements) are continuous and most current algorithms are designed
 to produce binary outputs (whether or not there is TF binding at a particular
 site), false positives or false negatives can result depending on the threshold
 chosen by the algorithm. Second, most methods predict binding of TFs at sites in
@@ -243,14 +243,9 @@ isolation, whereas in reality multiple TFs may compete for binding at a single
 site or act synergistically to co-occupy it. Fortunately, multi-task models are
 rapidly improving at simultaneous prediction after a single training step
 [@tag:Zhou2015_deep_sea]. Third, it is unclear exactly how to define a
-non-binding or "negative" site in the training data. Since the number of
+non-binding or "negative" site in the training data, since the number of
 positive binding sites of a particular TF is relatively small with respect to
-the total number of base-pairs in DNA, we must choose a small subset of the
-total non-binding sites, resulting in some sort of bias over all of the actual
-negative sites. Regardless of the negative site selection, most datasets evenly
-balance the positive and negative binding sites and report AUC ROC for the
-metric. This is very misleading in a task where the binding sites are very
-unevenly balanced in the real world (see Discussion).
+the total number of base-pairs in DNA (see Discussion).
 
 While deep learning-based models can automatically extract features for TFBS
 prediction at the sequence level, they often cannot predict binding patterns for
