@@ -35,7 +35,7 @@ interpretable. Interpretability matters for two main reasons: first, a model
 that achieves breakthrough performance may have identified patterns
 in the data that practitioners in the field would like to understand - however,
 this would not be possible if the model is a black-box. Second,
-interpretability is important for trust: if a model making is medical diagnoses,
+interpretability is important for trust: if a model is making medical diagnoses,
 it is important to ensure the model is making decisions for reliable
 reasons and is not focusing on an artifact of the data.
 A motivating example of this can be found in Caruana et al.
@@ -77,7 +77,7 @@ the activations of later layers. As an alternative to using masks, which can
 produce misleading results, Zintgraf et al. [@tag:Zintgraf2017_visualizing]
 proposed a novel strategy based
 on marginalizing over plausible values of an input patch to more accurately
-estimate its contribution.
+estimate its contribution. `TODO: do we need an example of what is misleading?`
 
 A common drawback to perturbation-based approaches is computational efficiency:
 each perturbed version of an input requires a separate forward propagation
@@ -97,6 +97,10 @@ their method took about 300 iterations to converge, compared to the
 the use of gradient descent requires the perturbation to have a
 differentiable form.
 
+`TODO: tag:Alipanahi2015_predicting (DeepBind) was in the original draft.
+Does that still fit somewhere?  It is okay to leave out, it is already cited
+in the TF binding section.`
+
 ##### Backpropagation-based approaches
 
 A second strategy for addressing the computational inefficiency of
@@ -108,9 +112,9 @@ calculating the gradients of the output w.r.t. the input
 to compute a 'saliency map'. Bach et al. [@tag:Bach2015_on]
  proposed a strategy called Layerwise Relevance Propagation, which was
  shown to be equivalent to the elementwise product of the gradient and
- input [@tag:Shrikumar2016_not, @tag:Kindermans2016_investigating].
+ input [@tag:Shrikumar2016_blackbox @tag:Kindermans2016_investigating].
 Several variants of gradients exist which differ
-in their handling of the ReLU nonlinearity: while gradients zero-out the
+in their handling of the ReLU nonlinearity. While gradients zero-out the
 importance signal at ReLUs if the input to the ReLU is negative,
 deconvolutional networks [@tag:Zeiler2013_visualizing]
 zero-out the importance signal if
@@ -126,7 +130,7 @@ zero-out the importance signal if
  of the class under consideration. Selvaraju et al. [@tag:Selvaraju2016_grad]
  attempted to alleviate this
  by combining gradients and guided backpropagation
- in Guided Grad-CAM: feature maps in the last convolutional layer were
+ in Guided Grad-CAM (Class Activation Mapping). Feature maps in the last convolutional layer were
  associated with classes using gradients, and the weighted activation of
  these feature maps was multiplied with the result of guided backpropagation
  to introduce more class specificity. Note that these approaches still would
@@ -135,7 +139,7 @@ zero-out the importance signal if
 
 To address the saturation failure mode, strategies have been developed
  to consider how the output changes between some reference input
- and the actual input, where the reference input represents a 'null'
+ and the actual input, where the reference input represents a "null"
  input that it
  is informative to measure differences against.
  Sundararajan et al. [@tag:Sundararajan2017_axiomatic] integrated the
@@ -161,6 +165,7 @@ To address the saturation failure mode, strategies have been developed
  could all be considered
  approximations to the Shapely values, which have a long history
  in game theory for assigning contributions to players in cooperative games.
+ `TODO: Add reference for Shapely values and/or explain that term`
  DeepLIFT introduced a modification which treated positive and negative
  contributions separately to address some failure cases of
  integrated gradients; the modification can be understood as an improved
@@ -183,7 +188,7 @@ For genomic sequence, Finnegan & Song [@tag:Finnegan2017_maximum]
 maximum-entropy distribution of inputs that produced a similar hidden
 representation to the chosen input.
 
-A related idea is 'caricaturization', where an initial image is altered to
+A related idea is "caricaturization", where an initial image is altered to
 exaggerate patterns that the net searches for
 [@tag:Mahendran2016_visualizing]. This is done by maximizing
 the response of neurons that are active in the network, subject to some
@@ -202,7 +207,7 @@ in Ehran et al. [@tag:Ehran2009_visualizing]
  and applied in Simonyan et al. [@tag:Simonyan2013_deep],
 Mordvintsev et al. [@tag:Mordvintsev2015_inceptionism],
 Yosinksi et al. [@tag:Yosinksi2015_understanding]
- and Mahendran & Vedaldi [Mahendran2016_visualizing].
+ and Mahendran & Vedaldi [@tag:Mahendran2016_visualizing].
  Lanchantin et al. [@tag:Lanchantin2016_motif]
  applied activation maximization to
 genomic sequence. One drawback of
@@ -221,7 +226,7 @@ The most common form of interpretability provided by RNNs is through
 attention mechanisms, which have been used in diverse problems such
 as image captioning and
 machine translation to select portions of the input to focus on for generating
-a particular output [@tag:Bahdanu2014_neural, @tag:Xu2015_show].
+a particular output [@tag:Bahdanu2014_neural @tag:Xu2015_show].
  Deming et al. [@tag:Deming2016_genetic]
  applied the attention mechanism to models trained on genomic sequence.
  Attention mechanisms provide insight into the model's
@@ -273,7 +278,7 @@ Murdoch & Szlam [@tag:Murdoch2017_automatic]
  of factors where each factor can be interpreted as the contribution
  at a particular
  timestep. The contribution scores were then used to identify
- key phrases from a model trained to do sentiment analysis, and obtained
+ key phrases from a model trained to do sentiment analysis and obtained
  superior results compared to scores derived via a gradient-based approach.
 
 #### Miscellaneous approaches
@@ -297,7 +302,7 @@ It can often be informative to understand how the training data
 A more free-form approach to interpretability is to visualise
  the activation patterns of the network on individual inputs and on
  subsets of the data. ActiVis and CNNvis
- [@tag:Kahng2017_activis, @tag:Liu2016_towards] are two frameworks that
+ [@tag:Kahng2017_activis @tag:Liu2016_towards] are two frameworks that
  enable interactive
  visualisation and exploration of large-scale
  deep learning models.
@@ -316,6 +321,12 @@ Finally, it is sometimes possible to train the model to
  The authors applied their approach to a sentiment analysis task
  and obtained substantially superior results compared to an attention-based
  method.
+
+`TODO: Are there any final thoughts you would like to add? This paper is part review, part perspective piece so we have the opportunity to speculate about the future or push certain for certain research directions.
+For example:
+- Is the criticism of deep learning as a black box, uninterpretable approach exaggerated given all of these methods?
+- Are there certain types of features or domains (in genomics, healthcare, etc.) where these methods still fall short?
+- Are there practical steps that would improve adoption of appropriate model interpretation? Maybe closer integration into the most popular deep learning frameworks, as applicable?`
 
 ### Data limitations
 

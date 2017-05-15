@@ -27,7 +27,7 @@ Boza	arxiv:1603.09195
 Buggenthin2017_imaged_lineage	doi:10.1038/nmeth.4182
 Burlina2016_amd	doi:10.1109/ISBI.2016.7493240
 Caruana2014_need	arxiv:1312.6184
-Caruana2015_intelligible	https://dl.acm.org/citation.cfm?id=2788613
+Caruana2015_intelligible	url:https://dl.acm.org/citation.cfm?id=2788613
 Chaudhary2017_multiom_liver_cancer	doi:10.1101/114892
 Che2015_distill	arxiv:1512.03542
 Che2016_rnn	arxiv:1606.01865
@@ -199,7 +199,6 @@ Shen2017_medimg_review	doi:10.1146/annurev-bioeng-071516-044442
 Shin2016_cad_tl	doi:10.1109/TMI.2016.2528162
 Shrikumar2016_blackbox	arxiv:1605.01713
 Shrikumar2017_learning	arxiv:1704.02685
-Shrikumar2016_not	arxiv:1605.01713
 Shrikumar2017_reversecomplement	doi:10.1101/103663
 Simonyan2013_deep	arxiv:1312.6034
 Singh2016_deepchrome	arxiv:1607.02078
