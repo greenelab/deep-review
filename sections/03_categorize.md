@@ -590,7 +590,9 @@ understand. The algorithms described in this review and others like them may
 become highly accurate and useful for various purposes, including within medical
 practice. However, to discover and avoid discriminatory applications it will be
 important to consider interpretability alongside accuracy. A number of
-properties of genomic and health care data will make this difficult.  First,
+properties of genomic and health care data will make this difficult.
+
+First,
 research samples are frequently non-representative of the general population of
 interest; they tend to be disproportionately sick [@doi:10.1086/512821], male
 [@doi:10.1016/j.neubiorev.2010.07.002], and European in ancestry
@@ -618,7 +620,9 @@ models, we may inadvertently say more about the way the data was collected
 (which may involve a history of unequal access and discrimination) than about
 anything of scientific or predictive value. This fact can undermine the privacy
 of patient data [@doi:10.1145/2382577.2382579] or lead to severe discriminatory
-consequences [@doi:10.1111/j.1740-9713.2016.00960.x]. There is a small but
+consequences [@doi:10.1111/j.1740-9713.2016.00960.x].
+
+There is a small but
 growing literature on the prevention and mitigation of data leakage
 [@doi:10.1145/2382577.2382579], as well as a closely-related literature on
 discriminatory model behavior [@arxiv:1610.02413], but it remains difficult to
@@ -629,27 +633,26 @@ difficulties and uncertainties, machine learning practitioners (and particularly
 those who use deep neural networks, which are challenging to interpret) must
 remain cognizant of these dangers and make every effort to prevent harm from
 discriminatory predictions.
-
 To reach their potential in this domain, deep learning methods will need to be
 interpretable. Researchers need to consider the extent to which biases may be
 learned by the model and whether or not a model is sufficiently interpretable to
-identify biases. We discuss the challenge of model interpretability more
+identify bias. We discuss the challenge of model interpretability more
 completely in the discussion section.
 
-###### Temporal Patient Trajectories
+###### Applications of Deep Learning to Longitudinal Analysis
 
-Traditionally, physician training programs justified long training hours by
-citing increased continuity of care and learning by following the progression of
-a disease over time, despite the known consequences of decreased mental acuity and
-quality of life [@doi:10.1016/j.socscimed.2003.08.016
-@doi:10.1016/S1072-7515(03)00097-8 @doi:10.1097/00000542-199004000-00024
-@doi:10.1016/S0277-9536(96)00227-4]. Yet, a common practice in EHR-based
-research is to take a point in time snapshot and convert patient data to a
-traditional vector for machine learning and statistical analysis. This results
-in significant signal losses as timing and order of events provide insight into
-a patient's disease and treatment. Efforts to account for the order of events
-have shown promise [@doi:10.1038/ncomms5022] but require exceedingly large
-patient sizes due to discrete combinatorial bucketing. Lasko et al.
+Longitudinal analysis follows a population across time, for example
+prospectively from birth or from the onset of particular conditions. In large
+patient populations, longitudinal analyses such as the Farmingham Heart Study
+[ref] and the Avon Longitudinal Study of Parents and Children [ref] have yielded
+important insights into the development of disease and the factors contributing
+to health status. Yet, a common practice in EHR-based research is to take a
+point in time snapshot and convert patient data to a traditional vector for
+machine learning and statistical analysis. This results in loss of information
+as timing and order of events can provide insight into a patient's disease and
+treatment [@doi:10.2307/2281868]. Efforts to model sequences of events have
+shown promise [@doi:10.1038/ncomms5022] but require exceedingly large patient
+sizes due to discrete combinatorial bucketing. Lasko et al.
 [@doi:10.1371/journal.pone.0066341] used autoencoders on longitudinal sequences
 of serum urine acid measurements to identify population subtypes. More recently,
 deep learning has shown promise working with both sequences (Convolutional
@@ -657,5 +660,5 @@ Neural Networks) [@arxiv:1607.07519] and the incorporation of past and current
 state (Recurrent Neural Networks, Long Short Term Memory
 Networks)[@arxiv:1602.00357]. This may be a particular area of opportunity for
 deep neural networks. The ability to discover relevant sequences of events from
-a large number of trajectories requires powerful and flexible feature construction
-methods - an area at which deep neural networks tend to excel.
+a large number of trajectories requires powerful and flexible feature
+construction methods - an area at which deep neural networks excel.
