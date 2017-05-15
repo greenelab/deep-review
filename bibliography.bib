@@ -2365,3 +2365,584 @@ transfer learning},
  year = {2017}
 }
 
+
+@article{haHzVaaz,
+ abstract = {Neural machine translation is a recently proposed approach to machine
+translation. Unlike the traditional statistical machine translation, the neural
+machine translation aims at building a single neural network that can be
+jointly tuned to maximize the translation performance. The models proposed
+recently for neural machine translation often belong to a family of
+encoder-decoders and consists of an encoder that encodes a source sentence into
+a fixed-length vector from which a decoder generates a translation. In this
+paper, we conjecture that the use of a fixed-length vector is a bottleneck in
+improving the performance of this basic encoder-decoder architecture, and
+propose to extend this by allowing a model to automatically (soft-)search for
+parts of a source sentence that are relevant to predicting a target word, without having to form these parts as a hard segment explicitly. With this new
+approach, we achieve a translation performance comparable to the existing
+state-of-the-art phrase-based system on the task of English-to-French
+translation. Furthermore, qualitative analysis reveals that the
+(soft-)alignments found by the model agree well with our intuition.},
+ archiveprefix = {arXiv},
+ author = {Dzmitry Bahdanau and Kyunghyun Cho and Yoshua Bengio},
+ eprint = {1409.0473v7},
+ file = {1409.0473v7.pdf},
+ link = {http://arxiv.org/abs/1409.0473v7},
+ month = {Sep},
+ primaryclass = {cs.CL},
+ title = {Neural Machine Translation by Jointly Learning to Align and Translate},
+ year = {2014}
+}
+
+
+@article{SAvEOARL,
+ abstract = {Each human genome is a 3 billion base pair set of encoding instructions.
+Decoding the genome using deep learning fundamentally differs from most tasks, as we do not know the full structure of the data and therefore cannot design
+architectures to suit it. As such, architectures that fit the structure of
+genomics should be learned not prescribed. Here, we develop a novel search
+algorithm, applicable across domains, that discovers an optimal architecture
+which simultaneously learns general genomic patterns and identifies the most
+important sequence motifs in predicting functional genomic outcomes. The
+architectures we find using this algorithm succeed at using only RNA expression
+data to predict gene regulatory structure, learn human-interpretable
+visualizations of key sequence motifs, and surpass state-of-the-art results on
+benchmark genomics challenges.},
+ archiveprefix = {arXiv},
+ author = {Laura Deming and Sasha Targ and Nate Sauder and Diogo Almeida and Chun Jimmie Ye},
+ eprint = {1605.07156v1},
+ file = {1605.07156v1.pdf},
+ link = {http://arxiv.org/abs/1605.07156v1},
+ month = {May},
+ primaryclass = {cs.LG},
+ title = {Genetic Architect: Discovering Genomic Structure with Learned Neural
+Architectures},
+ year = {2016}
+}
+
+
+@article{1FDihfnM,
+ abstract = {Deep learning tools have gained tremendous attention in applied machine
+learning. However such tools for regression and classification do not capture
+model uncertainty. In comparison, Bayesian models offer a mathematically
+grounded framework to reason about model uncertainty, but usually come with a
+prohibitive computational cost. In this paper we develop a new theoretical
+framework casting dropout training in deep neural networks (NNs) as approximate
+Bayesian inference in deep Gaussian processes. A direct result of this theory
+gives us tools to model uncertainty with dropout NNs -- extracting information
+from existing models that has been thrown away so far. This mitigates the
+problem of representing uncertainty in deep learning without sacrificing either
+computational complexity or test accuracy. We perform an extensive study of the
+properties of dropout's uncertainty. Various network architectures and
+non-linearities are assessed on tasks of regression and classification, using
+MNIST as an example. We show a considerable improvement in predictive
+log-likelihood and RMSE compared to existing state-of-the-art methods, and
+finish by using dropout's uncertainty in deep reinforcement learning.},
+ archiveprefix = {arXiv},
+ author = {Yarin Gal and Zoubin Ghahramani},
+ eprint = {1506.02142v6},
+ file = {1506.02142v6.pdf},
+ link = {http://arxiv.org/abs/1506.02142v6},
+ month = {Jun},
+ primaryclass = {stat.ML},
+ title = {Dropout as a Bayesian Approximation: Representing Model Uncertainty in
+Deep Learning},
+ year = {2015}
+}
+
+
+@article{QphVo2P2,
+ abstract = {While deep learning models have achieved state-of-the-art accuracies for many
+prediction tasks, understanding these models remains a challenge. Despite the
+recent interest in developing visual tools to help users interpret deep
+learning models, the complexity and wide variety of models deployed in
+industry, and the large-scale datasets that they used, pose unique design
+challenges that are inadequately addressed by existing work. Through
+participatory design sessions with over 15 researchers and engineers at
+Facebook, we have developed, deployed, and iteratively improved ActiVis, an
+interactive visualization system for interpreting large-scale deep learning
+models and results. By tightly integrating multiple coordinated views, such as
+a computation graph overview of the model architecture, and a neuron activation
+view for pattern discovery and comparison, users can explore complex deep
+neural network models at both the instance- and subset-level. ActiVis has been
+deployed on Facebook's machine learning platform. We present case studies with
+Facebook researchers and engineers, and usage scenarios of how ActiVis may work
+with different models.},
+ archiveprefix = {arXiv},
+ author = {Minsuk Kahng and Pierre Andrews and Aditya Kalro and Duen Horng Chau},
+ eprint = {1704.01942v1},
+ file = {1704.01942v1.pdf},
+ link = {http://arxiv.org/abs/1704.01942v1},
+ month = {Apr},
+ primaryclass = {cs.HC},
+ title = {ActiVis: Visual Exploration of Industry-Scale Deep Neural Network Models},
+ year = {2017}
+}
+
+
+@article{2cpYveR4,
+ abstract = {Recurrent Neural Networks (RNNs), and specifically a variant with Long
+Short-Term Memory (LSTM), are enjoying renewed interest as a result of
+successful applications in a wide range of machine learning problems that
+involve sequential data. However, while LSTMs provide exceptional results in
+practice, the source of their performance and their limitations remain rather
+poorly understood. Using character-level language models as an interpretable
+testbed, we aim to bridge this gap by providing an analysis of their
+representations, predictions and error types. In particular, our experiments
+reveal the existence of interpretable cells that keep track of long-range
+dependencies such as line lengths, quotes and brackets. Moreover, our
+comparative analysis with finite horizon n-gram models traces the source of the
+LSTM improvements to long-range structural dependencies. Finally, we provide
+analysis of the remaining errors and suggests areas for further study.},
+ archiveprefix = {arXiv},
+ author = {Andrej Karpathy and Justin Johnson and Li Fei-Fei},
+ eprint = {1506.02078v2},
+ file = {1506.02078v2.pdf},
+ link = {http://arxiv.org/abs/1506.02078v2},
+ month = {Jun},
+ primaryclass = {cs.LG},
+ title = {Visualizing and Understanding Recurrent Networks},
+ year = {2015}
+}
+
+
+@article{b1sc0cgP,
+ abstract = {Understanding neural networks is becoming increasingly important. Over the
+last few years different types of visualisation and explanation methods have
+been proposed. However, none of them explicitly considered the behaviour in the
+presence of noise and distracting elements. In this work, we will show how
+noise and distracting dimensions can influence the result of an explanation
+model. This gives a new theoretical insights to aid selection of the most
+appropriate explanation model within the deep-Taylor decomposition framework.},
+ archiveprefix = {arXiv},
+ author = {Pieter-Jan Kindermans and Kristof Schütt and Klaus-Robert Müller and Sven Dähne},
+ eprint = {1611.07270v1},
+ file = {1611.07270v1.pdf},
+ link = {http://arxiv.org/abs/1611.07270v1},
+ month = {Dec},
+ primaryclass = {stat.ML},
+ title = {Investigating the influence of noise and distractors on the
+interpretation of neural networks},
+ year = {2016}
+}
+
+
+@article{69wxD9y,
+ abstract = {How can we explain the predictions of a black-box model? In this paper, we
+use influence functions -- a classic technique from robust statistics -- to
+trace a model's prediction through the learning algorithm and back to its
+training data, identifying the points most responsible for a given prediction.
+Applying ideas from second-order optimization, we scale up influence functions
+to modern machine learning settings and show that they can be applied to
+high-dimensional black-box models, even in non-convex and non-differentiable
+settings. We give a simple, efficient implementation that requires only oracle
+access to gradients and Hessian-vector products. On linear models and
+convolutional neural networks, we demonstrate that influence functions are
+useful for many different purposes: to understand model behavior, debug models
+and detect dataset errors, and even identify and exploit vulnerabilities to
+adversarial training-set attacks.},
+ archiveprefix = {arXiv},
+ author = {Pang Wei Koh and Percy Liang},
+ eprint = {1703.04730v1},
+ file = {1703.04730v1.pdf},
+ link = {http://arxiv.org/abs/1703.04730v1},
+ month = {Mar},
+ primaryclass = {stat.ML},
+ title = {Understanding Black-box Predictions via Influence Functions},
+ year = {2017}
+}
+
+
+@article{ZUCVI5eU,
+ abstract = {Prediction without justification has limited applicability. As a remedy, we
+learn to extract pieces of input text as justifications -- rationales -- that
+are tailored to be short and coherent, yet sufficient for making the same
+prediction. Our approach combines two modular components, generator and
+encoder, which are trained to operate well together. The generator specifies a
+distribution over text fragments as candidate rationales and these are passed
+through the encoder for prediction. Rationales are never given during training.
+Instead, the model is regularized by desiderata for rationales. We evaluate the
+approach on multi-aspect sentiment analysis against manually annotated test
+cases. Our approach outperforms attention-based baseline by a significant
+margin. We also successfully illustrate the method on the question retrieval
+task.},
+ archiveprefix = {arXiv},
+ author = {Tao Lei and Regina Barzilay and Tommi Jaakkola},
+ eprint = {1606.04155v2},
+ file = {1606.04155v2.pdf},
+ link = {http://arxiv.org/abs/1606.04155v2},
+ month = {Jun},
+ primaryclass = {cs.CL},
+ title = {Rationalizing Neural Predictions},
+ year = {2016}
+}
+
+
+@article{AEc66xxR,
+ abstract = {Deep convolutional neural networks (CNNs) have achieved breakthrough
+performance in many pattern recognition tasks such as image classification.
+However, the development of high-quality deep models typically relies on a
+substantial amount of trial-and-error, as there is still no clear understanding
+of when and why a deep model works. In this paper, we present a visual
+analytics approach for better understanding, diagnosing, and refining deep
+CNNs. We formulate a deep CNN as a directed acyclic graph. Based on this
+formulation, a hybrid visualization is developed to disclose the multiple
+facets of each neuron and the interactions between them. In particular, we
+introduce a hierarchical rectangle packing algorithm and a matrix reordering
+algorithm to show the derived features of a neuron cluster. We also propose a
+biclustering-based edge bundling method to reduce visual clutter caused by a
+large number of connections between neurons. We evaluated our method on a set
+of CNNs and the results are generally favorable.},
+ archiveprefix = {arXiv},
+ author = {Mengchen Liu and Jiaxin Shi and Zhen Li and Chongxuan Li and Jun Zhu and Shixia Liu},
+ eprint = {1604.07043v3},
+ file = {1604.07043v3.pdf},
+ link = {http://arxiv.org/abs/1604.07043v3},
+ month = {Apr},
+ primaryclass = {cs.CV},
+ title = {Towards Better Analysis of Deep Convolutional Neural Networks},
+ year = {2016}
+}
+
+
+@article{DeOI1oGf,
+ abstract = {Understanding why a model made a certain prediction is crucial in many data
+science fields. Interpretable predictions engender appropriate trust and
+provide insight into how the model may be improved. However, with large modern
+datasets the best accuracy is often achieved by complex models even experts
+struggle to interpret, which creates a tension between accuracy and
+interpretability. Recently, several methods have been proposed for interpreting
+predictions from complex models by estimating the importance of input features.
+Here, we present how a model-agnostic additive representation of the importance
+of input features unifies current methods. This representation is optimal, in
+the sense that it is the only set of additive values that satisfies important
+properties. We show how we can leverage these properties to create novel visual
+explanations of model predictions. The thread of unity that this representation
+weaves through the literature indicates that there are common principles to be
+learned about the interpretation of model predictions that apply in many
+scenarios.},
+ archiveprefix = {arXiv},
+ author = {Scott Lundberg and Su-In Lee},
+ eprint = {1611.07478v3},
+ file = {1611.07478v3.pdf},
+ link = {http://arxiv.org/abs/1611.07478v3},
+ month = {Dec},
+ primaryclass = {cs.AI},
+ title = {An unexpected unity among methods for interpreting model predictions},
+ year = {2016}
+}
+
+
+@article{19mGl6pfy,
+ abstract = {Image representations, from SIFT and Bag of Visual Words to Convolutional
+Neural Networks (CNNs), are a crucial component of almost any image
+understanding system. Nevertheless, our understanding of them remains limited.
+In this paper we conduct a direct analysis of the visual information contained
+in representations by asking the following question: given an encoding of an
+image, to which extent is it possible to reconstruct the image itself? To
+answer this question we contribute a general framework to invert
+representations. We show that this method can invert representations such as
+HOG and SIFT more accurately than recent alternatives while being applicable to
+CNNs too. We then use this technique to study the inverse of recent
+state-of-the-art CNN image representations for the first time. Among our
+findings, we show that several layers in CNNs retain photographically accurate
+information about the image, with different degrees of geometric and
+photometric invariance.},
+ archiveprefix = {arXiv},
+ author = {Aravindh Mahendran and Andrea Vedaldi},
+ eprint = {1412.0035v1},
+ file = {1412.0035v1.pdf},
+ link = {http://arxiv.org/abs/1412.0035v1},
+ month = {Dec},
+ primaryclass = {cs.CV},
+ title = {Understanding Deep Image Representations by Inverting Them},
+ year = {2014}
+}
+
+
+@article{10ViHstXn,
+ abstract = {Although deep learning models have proven effective at solving problems in
+natural language processing, the mechanism by which they come to their
+conclusions is often unclear. As a result, these models are generally treated
+as black boxes, yielding no insight of the underlying learned patterns. In this
+paper we consider Long Short Term Memory networks (LSTMs) and demonstrate a new
+approach for tracking the importance of a given input to the LSTM for a given
+output. By identifying consistently important patterns of words, we are able to
+distill state of the art LSTMs on sentiment analysis and question answering
+into a set of representative phrases. This representation is then
+quantitatively validated by using the extracted phrases to construct a simple, rule-based classifier which approximates the output of the LSTM.},
+ archiveprefix = {arXiv},
+ author = {W. James Murdoch and Arthur Szlam},
+ eprint = {1702.02540v2},
+ file = {1702.02540v2.pdf},
+ link = {http://arxiv.org/abs/1702.02540v2},
+ month = {Feb},
+ primaryclass = {cs.CL},
+ title = {Automatic Rule Extraction from Long Short Term Memory Networks},
+ year = {2017}
+}
+
+
+@article{RZsNSRDS,
+ abstract = {We propose a technique for producing "visual explanations" for decisions from
+a large class of CNN-based models, making them more transparent. Our approach -
+Gradient-weighted Class Activation Mapping (Grad-CAM), uses the gradients of
+any target concept, flowing into the final convolutional layer to produce a
+coarse localization map highlighting the important regions in the image for
+predicting the concept. Unlike previous approaches, GradCAM is applicable to a
+wide variety of CNN model-families: (1) CNNs with fully-connected layers (e.g.
+VGG), (2) CNNs used for structured outputs (e.g. captioning), (3) CNNs used in
+tasks with multimodal inputs (e.g. VQA) or reinforcement learning, without any
+architectural changes or re-training. We combine GradCAM with fine-grained
+visualizations to create a high-resolution class-discriminative visualization
+and apply it to off-the-shelf image classification, captioning, and visual
+question answering (VQA) models, including ResNet-based architectures. In the
+context of image classification models, our visualizations (a) lend insights
+into their failure modes (showing that seemingly unreasonable predictions have
+reasonable explanations), (b) are robust to adversarial images, (c) outperform
+previous methods on weakly-supervised localization, (d) are more faithful to
+the underlying model and (e) help achieve generalization by identifying dataset
+bias. For captioning and VQA, our visualizations show that even non-attention
+based models can localize inputs. Finally, we conduct human studies to measure
+if GradCAM explanations help users establish trust in predictions from deep
+networks and show that GradCAM helps untrained users successfully discern a
+"stronger" deep network from a "weaker" one. Our code is available at
+https://github.com/ramprs/grad-cam. A demo and a video of the demo can be found
+at http://gradcam.cloudcv.org and youtu.be/COjUB9Izk6E.},
+ archiveprefix = {arXiv},
+ author = {Ramprasaath R. Selvaraju and Michael Cogswell and Abhishek Das and Ramakrishna Vedantam and Devi Parikh and Dhruv Batra},
+ eprint = {1610.02391v3},
+ file = {1610.02391v3.pdf},
+ link = {http://arxiv.org/abs/1610.02391v3},
+ month = {Nov},
+ primaryclass = {cs.CV},
+ title = {Grad-CAM: Visual Explanations from Deep Networks via Gradient-based
+Localization},
+ year = {2016}
+}
+
+
+@article{zhmq9ktJ,
+ abstract = {The purported "black box"' nature of neural networks is a barrier to adoption
+in applications where interpretability is essential. Here we present DeepLIFT
+(Deep Learning Important FeaTures), a method for decomposing the output
+prediction of a neural network on a specific input by backpropagating the
+contributions of all neurons in the network to every feature of the input.
+DeepLIFT compares the activation of each neuron to its 'reference activation'
+and assigns contribution scores according to the difference. By optionally
+giving separate consideration to positive and negative contributions, DeepLIFT
+can also reveal dependencies which are missed by other approaches. Scores can
+be computed efficiently in a single backward pass. We apply DeepLIFT to models
+trained on MNIST and simulated genomic data, and show significant advantages
+over gradient-based methods. A detailed video tutorial on the method is at
+http://goo.gl/qKb7pL and code is at http://goo.gl/RM8jvH.},
+ archiveprefix = {arXiv},
+ author = {Avanti Shrikumar and Peyton Greenside and Anshul Kundaje},
+ eprint = {1704.02685v1},
+ file = {1704.02685v1.pdf},
+ link = {http://arxiv.org/abs/1704.02685v1},
+ month = {Apr},
+ primaryclass = {cs.CV},
+ title = {Learning Important Features Through Propagating Activation Differences},
+ year = {2017}
+}
+
+
+@article{1YcKYTvO,
+ abstract = {This paper addresses the visualisation of image classification models, learnt
+using deep Convolutional Networks (ConvNets). We consider two visualisation
+techniques, based on computing the gradient of the class score with respect to
+the input image. The first one generates an image, which maximises the class
+score [Erhan et al., 2009], thus visualising the notion of the class, captured
+by a ConvNet. The second technique computes a class saliency map, specific to a
+given image and class. We show that such maps can be employed for weakly
+supervised object segmentation using classification ConvNets. Finally, we
+establish the connection between the gradient-based ConvNet visualisation
+methods and deconvolutional networks [Zeiler et al., 2013].},
+ archiveprefix = {arXiv},
+ author = {Karen Simonyan and Andrea Vedaldi and Andrew Zisserman},
+ eprint = {1312.6034v2},
+ file = {1312.6034v2.pdf},
+ link = {http://arxiv.org/abs/1312.6034v2},
+ month = {12},
+ primaryclass = {cs.CV},
+ title = {Deep Inside Convolutional Networks: Visualising Image Classification
+Models and Saliency Maps},
+ year = {2013}
+}
+
+
+@article{f2L6isRj,
+ abstract = {Most modern convolutional neural networks (CNNs) used for object recognition
+are built using the same principles: Alternating convolution and max-pooling
+layers followed by a small number of fully connected layers. We re-evaluate the
+state of the art for object recognition from small images with convolutional
+networks, questioning the necessity of different components in the pipeline. We
+find that max-pooling can simply be replaced by a convolutional layer with
+increased stride without loss in accuracy on several image recognition
+benchmarks. Following this finding -- and building on other recent work for
+finding simple network structures -- we propose a new architecture that
+consists solely of convolutional layers and yields competitive or state of the
+art performance on several object recognition datasets (CIFAR-10, CIFAR-100, ImageNet). To analyze the network we introduce a new variant of the
+"deconvolution approach" for visualizing features learned by CNNs, which can be
+applied to a broader range of network structures than existing approaches.},
+ archiveprefix = {arXiv},
+ author = {Jost Tobias Springenberg and Alexey Dosovitskiy and Thomas Brox and Martin Riedmiller},
+ eprint = {1412.6806v3},
+ file = {1412.6806v3.pdf},
+ link = {http://arxiv.org/abs/1412.6806v3},
+ month = {12},
+ primaryclass = {cs.LG},
+ title = {Striving for Simplicity: The All Convolutional Net},
+ year = {2014}
+}
+
+
+@article{1Ad3UOefc,
+ abstract = {Recurrent neural networks, and in particular long short-term memory networks
+(LSTMs), are a remarkably effective tool for sequence modeling that learn a
+dense black-box hidden representation of their sequential input. Researchers
+interested in better understanding these models have studied the changes in
+hidden state representations over time and noticed some interpretable patterns
+but also significant noise. In this work, we present LSTMVis a visual analysis
+tool for recurrent neural networks with a focus on understanding these hidden
+state dynamics. The tool allows a user to select a hypothesis input range to
+focus on local state changes, to match these states changes to similar patterns
+in a large data set, and to align these results with domain specific structural
+annotations. We further show several use cases of the tool for analyzing
+specific hidden state properties on datasets containing nesting, phrase
+structure, and chord progressions, and demonstrate how the tool can be used to
+isolate patterns for further statistical analysis.},
+ archiveprefix = {arXiv},
+ author = {Hendrik Strobelt and Sebastian Gehrmann and Bernd Huber and Hanspeter Pfister and Alexander M. Rush},
+ eprint = {1606.07461v1},
+ file = {1606.07461v1.pdf},
+ link = {http://arxiv.org/abs/1606.07461v1},
+ month = {Jun},
+ primaryclass = {cs.CL},
+ title = {Visual Analysis of Hidden State Dynamics in Recurrent Neural Networks},
+ year = {2016}
+}
+
+
+@article{WzFOJBiA,
+ abstract = {We study the problem of attributing the prediction of a deep network to its
+input features, a problem previously studied by several other works. We
+identify two fundamental axioms---Sensitivity and Implementation Invariance
+that attribution methods ought to satisfy. We show that they are not satisfied
+by most known attribution methods, which we consider to be a fundamental
+weakness of those methods. We use the axioms to guide the design of a new
+attribution method called Integrated Gradients. Our method requires no
+modification to the original network and is extremely simple to implement; it
+just needs a few calls to the standard gradient operator. We apply this method
+to a couple of image models, a couple of text models and a chemistry model, demonstrating its ability to debug networks, to extract rules from a deep
+network, and to enable users to engage with models better.},
+ archiveprefix = {arXiv},
+ author = {Mukund Sundararajan and Ankur Taly and Qiqi Yan},
+ eprint = {1703.01365v1},
+ file = {1703.01365v1.pdf},
+ link = {http://arxiv.org/abs/1703.01365v1},
+ month = {Mar},
+ primaryclass = {cs.LG},
+ title = {Axiomatic Attribution for Deep Networks},
+ year = {2017}
+}
+
+
+@article{yHn4SDRI,
+ abstract = {Inspired by recent work in machine translation and object detection, we
+introduce an attention based model that automatically learns to describe the
+content of images. We describe how we can train this model in a deterministic
+manner using standard backpropagation techniques and stochastically by
+maximizing a variational lower bound. We also show through visualization how
+the model is able to automatically learn to fix its gaze on salient objects
+while generating the corresponding words in the output sequence. We validate
+the use of attention with state-of-the-art performance on three benchmark
+datasets: Flickr8k, Flickr30k and MS COCO.},
+ archiveprefix = {arXiv},
+ author = {Kelvin Xu and Jimmy Ba and Ryan Kiros and Kyunghyun Cho and Aaron Courville and Ruslan Salakhutdinov and Richard Zemel and Yoshua Bengio},
+ eprint = {1502.03044v3},
+ file = {1502.03044v3.pdf},
+ link = {http://arxiv.org/abs/1502.03044v3},
+ month = {Feb},
+ primaryclass = {cs.LG},
+ title = {Show, Attend and Tell: Neural Image Caption Generation with Visual
+Attention},
+ year = {2015}
+}
+
+
+@article{17i18PMkR,
+ abstract = {Recent years have produced great advances in training large, deep neural
+networks (DNNs), including notable successes in training convolutional neural
+networks (convnets) to recognize natural images. However, our understanding of
+how these models work, especially what computations they perform at
+intermediate layers, has lagged behind. Progress in the field will be further
+accelerated by the development of better tools for visualizing and interpreting
+neural nets. We introduce two such tools here. The first is a tool that
+visualizes the activations produced on each layer of a trained convnet as it
+processes an image or video (e.g. a live webcam stream). We have found that
+looking at live activations that change in response to user input helps build
+valuable intuitions about how convnets work. The second tool enables
+visualizing features at each layer of a DNN via regularized optimization in
+image space. Because previous versions of this idea produced less recognizable
+images, here we introduce several new regularization methods that combine to
+produce qualitatively clearer, more interpretable visualizations. Both tools
+are open source and work on a pre-trained convnet with minimal setup.},
+ archiveprefix = {arXiv},
+ author = {Jason Yosinski and Jeff Clune and Anh Nguyen and Thomas Fuchs and Hod Lipson},
+ eprint = {1506.06579v1},
+ file = {1506.06579v1.pdf},
+ link = {http://arxiv.org/abs/1506.06579v1},
+ month = {Jun},
+ primaryclass = {cs.CV},
+ title = {Understanding Neural Networks Through Deep Visualization},
+ year = {2015}
+}
+
+
+@article{voh0OiT2,
+ abstract = {Large Convolutional Network models have recently demonstrated impressive
+classification performance on the ImageNet benchmark. However there is no clear
+understanding of why they perform so well, or how they might be improved. In
+this paper we address both issues. We introduce a novel visualization technique
+that gives insight into the function of intermediate feature layers and the
+operation of the classifier. We also perform an ablation study to discover the
+performance contribution from different model layers. This enables us to find
+model architectures that outperform Krizhevsky \etal on the ImageNet
+classification benchmark. We show our ImageNet model generalizes well to other
+datasets: when the softmax classifier is retrained, it convincingly beats the
+current state-of-the-art results on Caltech-101 and Caltech-256 datasets.},
+ archiveprefix = {arXiv},
+ author = {Matthew D Zeiler and Rob Fergus},
+ eprint = {1311.2901v3},
+ file = {1311.2901v3.pdf},
+ link = {http://arxiv.org/abs/1311.2901v3},
+ month = {Dec},
+ primaryclass = {cs.CV},
+ title = {Visualizing and Understanding Convolutional Networks},
+ year = {2013}
+}
+
+
+@article{Kk20paR7,
+ abstract = {This article presents the prediction difference analysis method for
+visualizing the response of a deep neural network to a specific input. When
+classifying images, the method highlights areas in a given input image that
+provide evidence for or against a certain class. It overcomes several
+shortcoming of previous methods and provides great additional insight into the
+decision making process of classifiers. Making neural network decisions
+interpretable through visualization is important both to improve models and to
+accelerate the adoption of black-box classifiers in application areas such as
+medicine. We illustrate the method in experiments on natural images (ImageNet
+data), as well as medical images (MRI brain scans).},
+ archiveprefix = {arXiv},
+ author = {Luisa M Zintgraf and Taco S Cohen and Tameem Adel and Max Welling},
+ eprint = {1702.04595v1},
+ file = {1702.04595v1.pdf},
+ link = {http://arxiv.org/abs/1702.04595v1},
+ month = {Feb},
+ primaryclass = {cs.CV},
+ title = {Visualizing Deep Neural Network Decisions: Prediction Difference
+Analysis},
+ year = {2017}
+}
+
