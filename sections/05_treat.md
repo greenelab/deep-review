@@ -425,16 +425,16 @@ a much larger set of compounds and proteins.  However, incorrect ligand poses
 will be misleading during training, and the predictive performance is sensitive
 to the docking quality [@tag:Pereira2016_docking].  A 3D grid can be used to
 represent a protein-compound complex [@tag:Wallach2015_atom_net
-@tag:Ragoza2016_protein] `TODO: add MoleculeNet, which has a Grid Featurizer?`.
-Each entry in the grid tracks the types of protein and ligand atoms in that
-region of the 3D space or descriptors derived from those atoms.  Both DeepVS
-[@tag:Pereira2016_docking] and atomic convolutions [@arxiv:1703.10603] offer
-greater flexibility in their convolutions by eschewing the 3D grid.  Instead,
-they each implement techniques for executing convolutions over atoms'
-neighboring atoms in the 3D space.  Gomes et al. demonstrate that currently
-random forest on a 3D grid featurization generally outperforms atomic
-convolutions, grid-based neural networks, and ligand-based neural networks when
-predicting the continuous-valued inhibition constant on PDBBind refined dataset.
-However, in the long term atomic convolutions may ultimately overtake grid-based
-methods, as they provide greater freedom to model atom-atom interactions and
-the forces that govern binding affinity.
+@tag:Ragoza2016_protein]. Each entry in the grid tracks the types of protein and
+ligand atoms in that region of the 3D space or descriptors derived from those
+atoms.  Both DeepVS [@tag:Pereira2016_docking] and atomic convolutions
+[@arxiv:1703.10603] offer greater flexibility in their convolutions by eschewing
+the 3D grid.  Instead, they each implement techniques for executing convolutions
+over atoms' neighboring atoms in the 3D space.  Gomes et al. demonstrate that
+currently random forest on 1D feature vector that describes the 3D ligand-target
+structure generally outperforms neural networks on the same feature vector,
+atomic convolutions, and ligand-based neural networks when predicting the
+continuous-valued inhibition constant on PDBBind refined dataset. However, in
+the long term atomic convolutions may ultimately overtake grid-based methods, as
+they provide greater freedom to model atom-atom interactions and the forces that
+govern binding affinity.
