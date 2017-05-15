@@ -288,10 +288,10 @@ circular fingerprints by substituting discrete operations in the fingerprinting
 algorithm with operations in a neural network, producing a real-valued feature
 vector instead of a bit vector.  Other approaches offer trainable networks that
 can in theory learn chemical feature representations that are optimized for a
-particular prediction task.   Lusci et al. adapted recursive neural networks for
-directed acyclic graphs for undirected molecular graphs by creating an ensemble
-of directed graphs in which one atom is selected as the root node
-[@tag:Lusci2013_rnn].  A single feature vector is obtained by summing over all
+particular prediction task.   Lusci et al. [@tag:Lusci2013_rnn] adapted
+recursive neural networks for directed acyclic graphs for undirected molecular
+graphs by creating an ensemble of directed graphs in which one atom is selected
+as the root node.  A single feature vector is obtained by summing over all
 feature vectors for all directed graphs in the ensemble.  Graph convolutions on
 undirected molecular graphs have eliminated the need to enumerate artificial
 directed graphs, learning feature vectors for atoms that are a function of the
