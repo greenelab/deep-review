@@ -192,11 +192,12 @@ Transcription factors (TFs) and RNA-binding proteins are key components in gene
 regulation and higher-level biological processes. While high-throughput
 sequencing techniques such as chromatin immunoprecipitation and massively
 parallel DNA sequencing (ChIP-seq) have been able to accurately identify targets
-for DNA- and RNA-binding proteins, these experiments are both time consuming and
-expensive. Thus, there is a need to computationally predict binding sites and
-understand binding specifities de novo from sequence data. In this section we
-focus on TFs, with the understanding that deep learning methods applied to TFs
-will also be broadly applicable to RNA-binding proteins.
+for TFs, these experiments are both time consuming and expensive. Thus, there is
+a need to computationally predict binding sites and understand binding
+specifities de novo from sequence data. In this section we focus on TFs, with
+the understanding that deep learning methods applied to TFs will also be broadly
+applicable to RNA-binding proteins, though RNA-specific models do exist
+[@doi:10.1186/s12859-017-1561-8].
 
 TFs are regulatory proteins that bind to certain genomic loci and control the
 rate of mRNA production. ChIP-seq and related technologies are able to identify
@@ -210,9 +211,9 @@ classifiers were then proposed to differentiate positive and negative binding
 sites but did not show significant improvements over the weight matrix matching
 methods [@tag:Horton1992_assessment]. Later, SVM techniques outperformed the
 generative methods by using k-mer features [@tag:Ghandi2014_enhanced
-@tag:Setty2015_seqgl], but string kernel based SVM systems are limited by
-expensive computational cost proportional to the number of training and testing
-sequences. 
+@tag:Setty2015_seqgl], but string kernel-based SVM systems are limited by their
+expensive computational cost, which is proportional to the number of training
+and testing sequences. 
 
 With the advent of deep learning, Alipanahi et al.
 [@tag:Alipanahi2015_predicting] showed that convolutional neural network models
@@ -220,7 +221,7 @@ could achieve state of the art results on the TFBS task and are scalable to a
 large number of genomic sequences. Lanchantin et al. [@tag:Lanchantin2016_motif]
 introduced several new convolutional and recurrent neural network models that
 further improved TFBS predictive accuracy. Due to the motif-driven nature of the
-TFBS task, most architectures have been convolutional-based
+TFBS task, most architectures have been convolution-based
 [@tag:Zeng2016_convolutional]. While many models for TFBS prediction resemble
 computer vision and natural language processing (NLP) tasks, it is important to
 note that DNA sequence tasks are fundamentally different than NLP tasks, and
@@ -233,22 +234,23 @@ model that can find motifs in both directions. Since deep learning for protein
 binding prediction is still in early stages, we expect to see an increase in
 domain-specific architectures for this task.
 
-Despite these advances, several challenges remain. First, because the input data
-(ChIP-seq measurements) are continous and the output (whether or not there is TF
-binding at a particular site) is binary, false positives or false negatives can
-result depending on the threshold chosen by the algorithm. Second, most datasets
-for TFBS prediction only assay one TF at a time, but in reality multiple TFs may
-bind at the same location in a cooperative or antagonistic manner. Deep learning
-can be useful in integrating different datasets and output one prediction
+Despite these advances, several challenges remain. First, because the inputs
+(ChIP-seq measurements) are continous and most current algorithms are designed
+to produce binary outputs (whether or not there is TF binding at a particular
+site), false positives or false negatives can result depending on the threshold
+chosen by the algorithm. Second, most methods predict binding of TFs at sites in
+isolation, whereas in reality multiple TFs may compete for binding at a single
+site or act synergistically to co-occupy it. Fortunately, multi-task models are
+rapidly improving at simultaneous prediction after a single training step
 [@tag:Zhou2015_deep_sea]. Third, it is unclear exactly how to define a
-non-binding or "negative" sites in the training data. Since the number of
+non-binding or "negative" site in the training data. Since the number of
 positive binding sites of a particular TF is relatively small with respect to
 the total number of base-pairs in DNA, we must choose a small subset of the
 total non-binding sites, resulting in some sort of bias over all of the actual
 negative sites. Regardless of the negative site selection, most datasets evenly
-balance the positive and negative binding sites and report auROC for the metric.
-This is very misleading in a task where the binding sites are very unevenly
-balanced in the real world (see Discussion).
+balance the positive and negative binding sites and report AUC ROC for the
+metric. This is very misleading in a task where the binding sites are very
+unevenly balanced in the real world (see Discussion).
 
 While deep learning-based models can automatically extract features for TFBS
 prediction at the sequence level, they often cannot predict binding patterns for
@@ -269,10 +271,10 @@ binding. Lanchantin et al. [@tag:Lanchantin2016_motif] and Shrikumar et al.
 from TFBS classification tasks. Alipanahi et al. [@tag:Alipanahi2015_predicting]
 also introduced mutation maps, where they could easily mutate, add, or delete
 base pairs in a sequence and see how the model changed its prediction. This
-would be very time consuming in a lab setting, but easy to simulate using their
-model. As we learn to better visualize and analyze the hidden nodes within deep
-learning models, our understanding of TF binding motifs and dynamics will likely
-improve.
+would be very time consuming in a lab setting, but was easy to simulate using
+their model. As we learn to better visualize and analyze the hidden nodes within
+deep learning models, our understanding of TF binding motifs and dynamics will
+likely improve.
 
 ### Promoters, enhancers, and related epigenomic tasks
 
