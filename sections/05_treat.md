@@ -431,10 +431,10 @@ atoms.  Both DeepVS [@tag:Pereira2016_docking] and atomic convolutions
 [@arxiv:1703.10603] offer greater flexibility in their convolutions by eschewing
 the 3D grid.  Instead, they each implement techniques for executing convolutions
 over atoms' neighboring atoms in the 3D space.  Gomes et al. demonstrate that
-currently random forest on 1D feature vector that describes the 3D ligand-target
-structure generally outperforms neural networks on the same feature vector,
-atomic convolutions, and ligand-based neural networks when predicting the
-continuous-valued inhibition constant on the PDBBind refined dataset. However,
-in the long term atomic convolutions may ultimately overtake grid-based methods,
-as they provide greater freedom to model atom-atom interactions and the forces
-that govern binding affinity.
+currently random forest on a 1D feature vector that describes the 3D
+ligand-target structure generally outperforms neural networks on the same
+feature vector, atomic convolutions, and ligand-based neural networks when
+predicting the continuous-valued inhibition constant on the PDBBind refined
+dataset. However, in the long term atomic convolutions may ultimately overtake
+grid-based methods, as they provide greater freedom to model atom-atom
+interactions and the forces that govern binding affinity.
