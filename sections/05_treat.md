@@ -224,12 +224,12 @@ how drugs are metabolized [@doi:10.1021/ci400518g].
 Here we primarily focus on ligand-based approaches that train on chemicals'
 features without requiring prior knowledge of the target. Chemical features may
 be represented as a list of molecular descriptors such as molecular weight, atom
-counts, charge representations, summaries of atom-atom relationships in the
+counts, functional groups, charge representations, summaries of atom-atom relationships in the
 molecular graph, and more sophisticated derived properties
 [@doi:10.1002/9783527628766].   Alternatively, chemicals can be characterized
 with the fingerprint bit vectors, textual strings, or novel learned
 representations described below. Neural networks have a long history in this
-domain [@tag:Baskin2015_drug_disc], and the 2012 Merck Molecular Activity
+domain [@tag:Baskin2015_drug_disc],[SCHNEIDER], and the 2012 Merck Molecular Activity
 Challenge on Kaggle generated substantial excitement about the potential for
 high-parameter deep learning approaches.  The winning submission was an ensemble
 that included a multitask multilayer perceptron network
@@ -274,8 +274,12 @@ activity directly from chemical features.
 Much of the recent excitement in this domain has come from what could be
 considered a creative experimentation phase, in which deep learning has offered
 novel possibilities for feature representation and modeling of chemical
-compounds.  A molecular graph, where atoms are nodes and bonds are edges, is a
-natural way to represent a chemical structure.  Traditional machine learning
+compounds.  A molecular graph, where atoms are labeled nodes and bonds are labeled edges, is a
+natural way to represent a chemical structure. 
+
+Interestingly, molecular graphs, which are also called 2D-representations, can be more powerful than seemingly more realistic 3D representations, or higher 4D representations which also incorporate conformer ensembles [CITE SCHNEIDER]
+
+ Traditional machine learning
 approaches relied on preprocessing the graph into a feature vector, such as a
 fixed-width bit vector fingerprint [@tag:Rogers2010_fingerprints].  The same
 fingerprints have been used by some drug-target interaction methods discussed
