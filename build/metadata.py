@@ -53,27 +53,52 @@ def get_pubmed_citeproc(pubmed_id):
     return response.json()
 
 
-# def get_url_citeproc(url):
-#     """
-#     Uses greycite (unreliable)
-#     https://github.com/cboettig/knitcitations/blob/master/R/greycite.R
-#     """
-#     params = {'uri': url}
-#     url = 'http://greycite.knowledgeblog.org/'
-#     response = requests.get(url, params)
-#     print(response.url)
-#     return response
-
-
-def get_url_citeproc(url):
+def get_url_citeproc_greycite(url):
     """
-    Uses greycite (unreliable)
-    https://github.com/cboettig/knitcitations/blob/master/R/greycite.R
+    Uses Greycite which has experiened uptime problems in the past.
+    API calls seem to take at least 15 seconds. Browser requests are much
+    faster. Setting header did not have an effect. Consider mimicking browser
+    using selenium.
+
+    More information on Greycite at:
+    http://greycite.knowledgeblog.org/
+    http://knowledgeblog.org/greycite
+    https://arxiv.org/abs/1304.7151
+    https://git.io/v9N2C
+    """
+    base_url = 'http://greycite.knowledgeblog.org/json'
+    params = {
+        'uri': url,
+    }
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; rv:45.0) Gecko/20100101 Firefox/45.0',  # noqa: E501
+    }
+    with requests.Session() as session:
+        session.headers.update(headers)
+        response = session.get(base_url, params=params, timeout=60)
+    return response.json()
+
+
+def get_url_citeproc_manual(url):
+    """
+    Manually create citeproc for a URL.
     """
     return {
         'URL': url,
         'type': 'webpage'
     }
+
+
+def get_url_citeproc(url):
+    """
+    Get citeproc for a URL trying a sequence of strategies.
+    """
+    try:
+        return get_url_citeproc_greycite(url)
+    except Exception as e:
+        print(f'Error getting {url} from Greycite: {e}')
+        # Fallback strategy
+        return get_url_citeproc_manual(url)
 
 
 def get_doi_bibtex(doi):
