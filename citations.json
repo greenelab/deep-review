@@ -42699,5 +42699,102 @@
       "id": "qnKdqG0P"
     },
     "citation_id": "qnKdqG0P"
+  },
+  "doi:10.1109/ijcnn.2010.5596644": {
+    "source": "doi",
+    "identifer": "10.1109/ijcnn.2010.5596644",
+    "standard_citation": "doi:10.1109/ijcnn.2010.5596644",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            5,
+            10
+          ]
+        ],
+        "date-time": "2017-05-10T18:24:18Z",
+        "timestamp": 1494440658342
+      },
+      "reference-count": 23,
+      "publisher": "IEEE",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [],
+      "published-print": {
+        "date-parts": [
+          [
+            2010,
+            7
+          ]
+        ]
+      },
+      "DOI": "10.1109/ijcnn.2010.5596644",
+      "type": "paper-conference",
+      "created": {
+        "date-parts": [
+          [
+            2010,
+            10,
+            19
+          ]
+        ],
+        "date-time": "2010-10-19T18:58:15Z",
+        "timestamp": 1287514695000
+      },
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": "Neural network-based taxonomic clustering for metagenomics",
+      "prefix": "10.1109",
+      "author": [
+        {
+          "given": "Steven D.",
+          "family": "Essinger",
+          "affiliation": []
+        },
+        {
+          "given": "Robi",
+          "family": "Polikar",
+          "affiliation": []
+        },
+        {
+          "given": "Gail L.",
+          "family": "Rosen",
+          "affiliation": []
+        }
+      ],
+      "member": "263",
+      "container-title": "The 2010 International Joint Conference on Neural Networks (IJCNN)",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2017,
+            3,
+            19
+          ]
+        ],
+        "date-time": "2017-03-19T05:02:20Z",
+        "timestamp": 1489899740000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2010,
+            7
+          ]
+        ]
+      },
+      "references-count": 23,
+      "URL": "http://dx.doi.org/10.1109/ijcnn.2010.5596644",
+      "relation": {},
+      "id": "11wVLI2Hn"
+    },
+    "citation_id": "11wVLI2Hn"
   }
 }
