@@ -502,7 +502,7 @@ conformation of a protein structure.
 
 Protein contact prediction and contact-assisted folding (i.e. folding proteins
 using predicted contacts as restraints) represents a promising new direction for
-ab initio folding of proteins without good templates in PDB. Co-evolution analysis 
+*ab initio* folding of proteins without good templates in PDB. Co-evolution analysis 
 is effective for proteins with a very large number (>1000) of sequence 
 homologs [@doi:10.1371/journal.pone.0028766], but otherwise fares poorly for proteins 
 without many sequence homologs. By combining co-evolution information with
@@ -516,7 +516,7 @@ and PConsC [@doi:10.1371/journal.pcbi.1003889].
 However, blindly tested in the well-known CASP competitions, 
 these methods did not show any advantage over MetaPSICOV [@doi:10.1093/bioinformatics/btu791].
 
-Very recently, Wang et al. proposed the deep learning method RaptorX-Contact
+Recently, Wang et al. proposed the deep learning method RaptorX-Contact
 [@doi:10.1371/journal.pcbi.1005324], which significantly improves contact
 prediction over MetaPSICOV and pure co-evolution methods, 
 especially for proteins without many sequence homologs. 
@@ -534,7 +534,7 @@ performed better mainly due to introduction of residual neural networks and
 exploitation of contact occurrence patterns by simultaneously predicting all
 the contacts in a single protein.
 
-Taken together, ab initio folding is becoming much easier with the advent
+Taken together, *ab initio* folding is becoming much easier with the advent
 of direct evolutionary coupling analysis and deep learning techniques. 
 We believe it is still possible to further improve contact
 prediction for proteins with fewer than 1000 homologs by studying new deep
