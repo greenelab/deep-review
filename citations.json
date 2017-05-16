@@ -41294,5 +41294,312 @@
       "id": "6RHepB1T"
     },
     "citation_id": "6RHepB1T"
+  },
+  "doi:10.1016/s0140-6736(13)61752-3": {
+    "source": "doi",
+    "identifer": "10.1016/s0140-6736(13)61752-3",
+    "standard_citation": "doi:10.1016/s0140-6736(13)61752-3",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            5,
+            12
+          ]
+        ],
+        "date-time": "2017-05-12T10:14:36Z",
+        "timestamp": 1494584076359
+      },
+      "reference-count": 83,
+      "publisher": "Elsevier BV",
+      "issue": "9921",
+      "license": [
+        {
+          "URL": "http://www.elsevier.com/tdm/userlicense/1.0/",
+          "start": {
+            "date-parts": [
+              [
+                2014,
+                3,
+                1
+              ]
+            ],
+            "date-time": "2014-03-01T00:00:00Z",
+            "timestamp": 1393632000000
+          },
+          "delay-in-days": 0,
+          "content-version": "tdm"
+        }
+      ],
+      "funder": [
+        {
+          "name": "NIH",
+          "award": [
+            "N01-HC-25195"
+          ]
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "thelancet.com",
+          "em-consulte.com",
+          "elsevier.com",
+          "sciencedirect.com"
+        ],
+        "crossmark-restriction": true
+      },
+      "short-container-title": [
+        "The Lancet"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2014,
+            3
+          ]
+        ]
+      },
+      "DOI": "10.1016/s0140-6736(13)61752-3",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2013,
+            9,
+            29
+          ]
+        ],
+        "date-time": "2013-09-29T01:52:08Z",
+        "timestamp": 1380419528000
+      },
+      "page": "999-1008",
+      "update-policy": "http://dx.doi.org/10.1016/elsevier_cm_policy",
+      "source": "Crossref",
+      "is-referenced-by-count": 76,
+      "title": "The Framingham Heart Study and the epidemiology of cardiovascular disease: a historical perspective",
+      "prefix": "10.1016",
+      "volume": "383",
+      "author": [
+        {
+          "given": "Syed S",
+          "family": "Mahmood",
+          "affiliation": []
+        },
+        {
+          "given": "Daniel",
+          "family": "Levy",
+          "affiliation": []
+        },
+        {
+          "given": "Ramachandran S",
+          "family": "Vasan",
+          "affiliation": []
+        },
+        {
+          "given": "Thomas J",
+          "family": "Wang",
+          "affiliation": []
+        }
+      ],
+      "member": "78",
+      "container-title": "The Lancet",
+      "original-title": [],
+      "link": [
+        {
+          "URL": "http://api.elsevier.com/content/article/PII:S0140673613617523?httpAccept=text/xml",
+          "content-type": "text/xml",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "http://api.elsevier.com/content/article/PII:S0140673613617523?httpAccept=text/plain",
+          "content-type": "text/plain",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2016,
+            3,
+            23
+          ]
+        ],
+        "date-time": "2016-03-23T13:52:02Z",
+        "timestamp": 1458741122000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2014,
+            3
+          ]
+        ]
+      },
+      "references-count": 83,
+      "alternative-id": [
+        "S0140673613617523"
+      ],
+      "URL": "http://dx.doi.org/10.1016/s0140-6736(13)61752-3",
+      "relation": {},
+      "issn-type": [
+        {
+          "value": "0140-6736",
+          "type": "print"
+        }
+      ],
+      "subject": [
+        "Medicine(all)"
+      ],
+      "assertion": [
+        {
+          "value": "Elsevier",
+          "name": "publisher",
+          "label": "This article is maintained by"
+        },
+        {
+          "value": "The Framingham Heart Study and the epidemiology of cardiovascular disease: a historical perspective",
+          "name": "articletitle",
+          "label": "Article Title"
+        },
+        {
+          "value": "The Lancet",
+          "name": "journaltitle",
+          "label": "Journal Title"
+        },
+        {
+          "value": "http://dx.doi.org/10.1016/S0140-6736(13)61752-3",
+          "name": "articlelink",
+          "label": "CrossRef DOI link to publisher maintained version"
+        },
+        {
+          "value": "article",
+          "name": "content_type",
+          "label": "Content Type"
+        },
+        {
+          "value": "Copyright © 2014 Elsevier Ltd. All rights reserved.",
+          "name": "copyright",
+          "label": "Copyright"
+        }
+      ],
+      "id": "N96QKgly"
+    },
+    "citation_id": "N96QKgly"
+  },
+  "doi:10.1038/484155a": {
+    "source": "doi",
+    "identifer": "10.1038/484155a",
+    "standard_citation": "doi:10.1038/484155a",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            5,
+            10
+          ]
+        ],
+        "date-time": "2017-05-10T18:00:59Z",
+        "timestamp": 1494439259409
+      },
+      "reference-count": 0,
+      "publisher": "Springer Nature",
+      "issue": "7393",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Nature"
+      ],
+      "DOI": "10.1038/484155a",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2012,
+            4,
+            5
+          ]
+        ],
+        "date-time": "2012-04-05T10:08:18Z",
+        "timestamp": 1333620498000
+      },
+      "page": "155-158",
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": "Children of the 90s: Coming of age",
+      "prefix": "10.1038",
+      "volume": "484",
+      "author": [
+        {
+          "given": "Helen",
+          "family": "Pearson",
+          "affiliation": []
+        }
+      ],
+      "member": "339",
+      "published-online": {
+        "date-parts": [
+          [
+            2012,
+            4,
+            11
+          ]
+        ]
+      },
+      "container-title": "Nature",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2012,
+            4,
+            30
+          ]
+        ],
+        "date-time": "2012-04-30T14:27:38Z",
+        "timestamp": 1335796058000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2012,
+            4,
+            11
+          ]
+        ]
+      },
+      "references-count": 0,
+      "alternative-id": [
+        "484155a"
+      ],
+      "URL": "http://dx.doi.org/10.1038/484155a",
+      "relation": {},
+      "issn-type": [
+        {
+          "value": "0028-0836",
+          "type": "print"
+        },
+        {
+          "value": "1744-7933",
+          "type": "electronic"
+        }
+      ],
+      "subject": [
+        "General"
+      ],
+      "id": "1FjSxrV1k"
+    },
+    "citation_id": "1FjSxrV1k"
   }
 }
