@@ -641,7 +641,7 @@ completely in the discussion section.
 
 ###### Applications of Deep Learning to Longitudinal Analysis
 
-Longitudinal analysis follows a population across time, for example
+Longitudinal analysis follows a population across time, for example,
 prospectively from birth or from the onset of particular conditions. In large
 patient populations, longitudinal analyses such as the Farmingham Heart Study
 [@doi:10.1016/S0140-6736(13)61752-3] and the Avon Longitudinal Study of
