@@ -2,18 +2,18 @@
 
 The study of cellular structure and core biological processes -- transcription,
 translation, signaling, metabolism, etc. -- in humans and model organisms will
-greatly impact human disease over the long horizon [@tag:Nih_curiosity].
-Understanding cellular systems and predicting how they are altered by genetic
-variation and respond to environmental perturbations remain daunting tasks.
-Deep learning offers new approaches for modeling biological processes and
-integrating multiple types of omic data [@doi:10.1038/ncomms13090], which
-could eventually help predict how these processes are disrupted in disease.
-Recent work has already advanced our ability to identify and interpret genetic
-variants, study microbial communities, and predict protein structures (which
-relates to the problems discussed in the drug development section). In addition,
-unsupervised deep learning has enormous potential for discovering novel cellular
-states from gene expression, fluorescence microscopy, and other types of data
-that ultimately prove to be clinically relevant.
+greatly impact our understanding of human disease over the long horizon
+[@tag:Nih_curiosity]. Predicting how cellular systems are altered by genetic
+variation and respond to environmental perturbations remain daunting tasks. Deep
+learning offers new approaches for modeling biological processes and integrating
+multiple types of omic data [@doi:10.1038/ncomms13090], which could eventually
+help predict how these processes are disrupted in disease. Recent work has
+already advanced our ability to identify and interpret genetic variants, study
+microbial communities, and predict protein structures (which relates to the
+problems discussed in the drug development section). In addition, unsupervised
+deep learning has enormous potential for discovering novel cellular states from
+gene expression, fluorescence microscopy, and other types of data that
+ultimately prove to be clinically relevant.
 
 Progress has been rapid in genomics and imaging, fields where important tasks
 are readily adapted to well-established deep learning paradigms.  One
