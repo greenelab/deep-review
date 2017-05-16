@@ -465,7 +465,7 @@ prediction over MetaPSICOV and pure co-evolution methods,
 especially for proteins without many sequence homologs. 
 It employs a network architecture formed by one 1D residual neural network 
 and one 2D residual neural network. Blindly tested in the latest CASP competition 
-(i.e. CASP12 [@url:http://www.predictioncenter.org/casp12/rrc_avrg_results.cgi]),
+(i.e. CASP12 [@url:http://www.predictioncenter.org/casp12/rrc_avrg_results.cgi ]),
 RaptorX-Contact ranked first in F1 score (a widely-used performance metric
 combining sensitivity and specificity) on free-modeling targets as well as the
 whole set of targets. In CAMEO (which can be interpreted as a fully-automated
