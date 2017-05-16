@@ -600,101 +600,92 @@ the next few years.
 
 ### Metagenomics
 
-`TODO: Add reference tags to this section`
-Metagenomics (which refers to the study of genetic material, 16S rRNA
-and/or whole-genome shotgun DNA, from microbial communities) has
-revolutionized the study of micro-scale ecosystems within us and around us.
-There is increasing literature of applying machine learning in general to
-metagenomic analysis.  In the late 2000’s, a plethora of machine learning
-methods were applied to classifying DNA sequencing reads to the thousands of
-species within a sample.  An important problem is genome assembly from these
-mixed-organism samples. And to do that, the organisms should be “binned”
-before assembling.  Binning methods began with many k-mer techniques [@tag:Karlin]
-and then delved into other clustering algorithms, such as self-organizing maps
-(SOM) [@tag:Abe].  Then came the taxonomic classification problem,  with researchers
-naturally using BLAST [@tag:blast], followed by other machine learning techniques
-such as SVMs [@tag:McHardy], naive Bayesian classifiers [@tag:nbc], etc. to classify
-each read.  Then, researchers began to use techniques that could be used to
-estimate relative abundances of an entire sample, instead of the precise but
-painstakingly slow read-by-read classification.  Relative abundance
-estimators (a.k.a diversity profilers) are MetaPhlan [@tag:Metaphlan], (WGS)Quikr [@tag:wgsquikr],
-and some configurations of tools like OneCodex [@tag:onecodex] and LMAT [@tag:lmat].  While one
-cannot identify which reads were mapped back to an organism using relative
-abundance estimators, they can be useful for faster comparative and other
-downstream analyses.   Newer methods hope to classify reads and estimate
-relative abundances at faster rates [@tag:Vervier] and as of this writing, there
-are more than 70 metagenomic taxonomic classifiers in existence.  Besides
-binning and classification of species, there is functional identification and
-annotation of sequence reads [@tag:yok @tag:Soueidan]. However, the focus on
-taxonomic/functional annotation is just the first step.  Once organisms are
-identified, there is the interest in understanding the interrelationship
-between these organisms and host/environment phenotypes [@tag:Guetterman].  One of
-the first attempts was a survey of supervised classification methods for
-microbes->phenotype classification [@tag:Knights], followed by similar studies
-that are more massive in scale [@tag:Stratnikov @tag:Segata].  There have been
-techniques that bypass the taxonomic classification step altogether [@tag:Ding],
-(sequence composition to phenotype classification).  Also, researchers have
-looked into how feature selection can improve classification [@tag:Liu @tag:Segata],
-and techniques have been proposed that are classifier-independent
-[@tag:Ditzler @tag:Ditzler2].
+Metagenomics, which refers to the study of genetic material -- 16S rRNA and/or
+whole-genome shotgun DNA -- from microbial communities, has revolutionized the
+study of micro-scale ecosystems within us and around us. In recent years,
+machine learning has proved to be a powerful tool for metagenomic analysis. 16S
+rRNA has long been used to deconvolve mixtures of microbial genomes, yet this
+ignores >99% of the genomic content. Subsequent tools aimed to classify
+300-3000bp reads from complex mixtures of microbial genomes based on
+tetranucleotide frequencies (which are characteristic for different organisms
+[@tag:Karlin]) using supervised [@tag:McHardy @tag:nbc] or unsupervised methods
+[@tag:Abe]. Then, researchers began to use techniques that could estimate
+relative abundances from an entire sample, which is much faster than classifying
+individual reads [@tag:Metaphlan @tag:wgsquikr @tag:lmat @tag:Vervier]. There is
+also great interest in identifying and annotating sequence reads [@tag:yok
+@tag:Soueidan]. However, the focus on taxonomic/functional annotation is just
+the first step. Several groups have proposed methods to determine host or
+environment phenotypes from the organisms that are identified [@tag:Guetterman
+@tag:Knights @tag:Stratnikov @tag:Segata] or overall sequence compsition
+[@tag:Ding]. Also, researchers have looked into how feature selection can
+improve classification [@tag:Liu @tag:Segata], and techniques have been proposed
+that are classifier-independent [@tag:Ditzler @tag:Ditzler2].
 
-So, how have neural networks (NNs) been of use?    Most neural networks are being
-used for short sequence->taxa/function classification, where there is a lot of data
-for training (and thus suitable for NNs).  Neural networks have been applied
-successfully to gene annotation (e.g. Orphelia [@tag:Hoff] and FragGeneScan [@doi:10.1093/nar/gkq747]),
-which usually has plenty of training examples.  Representations (similar to Word2Vec [@tag:Word2Vec] in
-natural language processing) for protein family classification has been introduced and classified
-with a skip-gram  neural network [@tag:Asgari].  Recurrent neural networks show good performance for
-homology and protein family identification [@tag:Hochreiter @tag:Sonderby].  Interestingly,
-Hochreiter, who invented Long Short Term Memory, delved into homology/protein family
-classification in 2007, and therefore, deep learning is deeply rooted in
-functional classification methods.
+How have neural networks (NNs) been of use? Most neural networks are being used
+for phylogenetic classification or functional annotation from sequence data,
+where there is a lot of data for training (and thus suitable for NNs). Neural
+networks have been applied successfully to gene annotation (e.g. Orphelia
+[@tag:Hoff] and FragGeneScan [@doi:10.1093/nar/gkq747]), which usually has
+plenty of training examples.  Representations (similar to Word2Vec
+[@tag:Word2Vec] in natural language processing) for protein family
+classification have been introduced and classified with a skip-gram neural
+network [@tag:Asgari]. Recurrent neural networks show good performance for
+homology and protein family identification [@tag:Hochreiter @tag:Sonderby].
+Interestingly, Hochreiter, who invented Long Short Term Memory (LSTM), delved
+into homology/protein family classification in 2007, and therefore, deep
+learning is deeply rooted in functional classification methods.
 
-One of the first techniques of “de novo” genome binning used self-organizing maps, a
-type of NN [@tag:Abe].  Essinger et al. use ART, a neural network algorithm called Adaptive
-Resonance Theory, to cluster similar genomic fragments and showed that it has better
-performance than K-means.  However, other methods based on interpolated Markov models
-[@tag:Salzberg] have performed better than these early genome binners.  Also, neural networks
-can be slow, and therefore, have had limited use for reference-based taxonomic
-classification, with TAC-ELM [@tag:TAC-ELM] being the only NN-based algorithm to taxonomically
-classify massive amounts of metagenomic data.  Also, neural networks can fail to perform
-if there are not enough training examples, which is the case with taxonomic classification
-(since only ~10% of estimated species have been sequenced). An initial study shows that
-deep neural networks have been successfully applied to  taxonomic classification of 16S rRNA genes,
-with convolutional networks  provide about 10% accuracy genus-level improvement over RNNs and even random
-forests [@tag:Mrzelj].  However, this study performed 10-fold cross-validation on 3000 sequences in total.
+One of the first techniques of *de novo* genome binning used self-organizing
+maps, a type of NN [@tag:Abe]. Essinger et al. used Adaptive Resonance Theory
+(ART) to cluster similar genomic fragments and showed that it had better
+performance than K-means. However, other methods based on interpolated Markov
+models [@tag:Salzberg] have performed better than these early genome binners.
+Neural networks can be slow, and therefore, have had limited use for
+reference-based taxonomic classification, with TAC-ELM [@tag:TAC-ELM] being the
+only NN-based algorithm to taxonomically classify massive amounts of metagenomic
+data. Also, neural networks can fail to perform if there are not enough training
+examples, which is the case with taxonomic classification (since only ~10% of
+estimated species have been sequenced). An initial study successfully applied
+neural networks to taxonomic classification of 16S rRNA genes, with
+convolutional networks providing about 10% accuracy genus-level improvement over
+RNNs and even random forests [@tag:Mrzelj]. However, this study performed
+10-fold cross-validation on only 3000 sequences.
 
-Due to the traditionally small numbers of metagenomic samples in studies, neural network uses for
-classifying phenotype from microbial composition are just beginning.   A standard MLP
-was able to classify wound severity from microbial species present in the wound [@doi:10.1016/j.bjid.2015.08.013].
-Recently, multi-layer, recurrent networks (and convolutional
-networks) have been applied to microbiome genotype-phenotype, with Ditzler et
-al. being the first to associate soil samples with pH level using multi-layer
-perceptrons, deep-belief networks, and recursive neural networks (RNNs)
-[@tag:Ditzler3]. Besides classifying the samples appropriately, Ditzler shows
-that internal phylogenetic tree nodes inferred by the networks are
-appropriate features representing low/high pH, which can provide additional
-useful information and new features for future metagenomic sample comparison.
- Also, an initial study has show promise of these networks for diagnosing
-disease [@tag:Faruqi].  
+Neural network uses for classifying phenotype from microbial composition are
+just beginning. A standard multi-layer perceptron (MLP) was able to classify
+wound severity from microbial species present in the wound
+[@doi:10.1016/j.bjid.2015.08.013]. Recently, Ditzler et al. associated soil
+samples with pH level using MLPs, deep-belief networks, and recursive neural
+networks [@tag:Ditzler3]. Besides classifying the samples appropriately, they
+showed that internal phylogenetic tree nodes inferred by the networks were
+appropriate features representing low/high pH. Thus, hidden nodes might provide
+biological insight as well as new features for future metagenomic sample
+comparison. Also, an initial study has shown promise of these networks for
+diagnosing disease [@tag:Faruqi].
 
-There are still a lot of challenges with applying deep neural networks to metagenomics problems.  They are not ideal for microbial/functional composition->phenotype classification because most studies contain tens of samples (~20->40) and
-hundreds/thousands of features (aka species).  Such underdetermined/ill-conditioned problems
-are still a challenge for deep neural networks that require many more training examples than
-features to sufficiently converge the weights on the hidden layers.  Also, due to convergence issues
-(slowness and instability due to large neural networks modeling very large datasets [@arxiv:1212.0901v2]),
-taxonomic classification of reads from whole genome sequencing seems out of reach at the moment for deep neural
-networks -- due to only thousands of full-sequenced genomes as compared to hundreds of thousands of 16S rRNA sequences
-available for training.
+Challenges remain in applying deep neural networks to metagenomics problems.
+They are not yet ideal for phenotype classification because most studies contain
+tens of samples and hundreds or thousands of features (aka species). Such
+underdetermined, or ill-conditioned, problems are still a challenge for deep
+neural networks that require many more training examples than features to
+sufficiently converge the weights on the hidden layers. Also, due to convergence
+issues (slowness and instability due to large neural networks modeling very
+large datasets [@arxiv:1212.0901v2]), taxonomic classification of reads from
+whole genome sequencing seems out of reach at the moment for deep neural
+networks -- due to only thousands of full-sequenced genomes as compared to
+hundreds of thousands of 16S rRNA sequences available for training.
 
-However, because recurrent neural networks are showing success for base-calling (and thus removing the large error in
-the measurement of a pore's current signal) for the relatively new Oxford Nanopore sequencer [@tag:Boza], there is hope that
-the process of denoising->organism/function classification can be combined into one step in using powerful LSTM's. LSTM's
-are working miracles in raw speech signal->meaning translation [@tag:Sutskever], and combining steps in metagenomics are not
-out of the question.  For example, metagenomic assembly usually requires binning then assembly, but could deep neural nets
-accomplish both tasks in one network? Does functional/taxonomic classification need to be separate processes?  The largest
-potential in deep learning is to learn "everything" in one complex network, with a plethora of labeled (reference) data and
-unlabeled (microbiome experiments) examples.
+However, because recurrent neural networks are showing success for denoising
+base calls for the relatively new Oxford Nanopore long-read sequencer
+[@tag:Boza] (discussed further in the next section), there is hope that the
+entire pipeline, from denoising of through functional classification, can be
+combined into one step by using powerful LSTM's, which have been quite
+successful in raw speech signal-to-meaning translation [@tag:Sutskever]. For
+example, metagenomic assembly usually requires binning then assembly, but could
+deep neural nets accomplish both tasks in one network? We believe the largest
+potential in deep learning is to learn "everything" in one complex network, with
+a plethora of labeled (reference) data and unlabeled (microbiome experiments)
+examples.
 
 ### Sequencing and variant calling
 
