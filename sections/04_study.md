@@ -718,7 +718,7 @@ ignores >99% of the genomic content. Subsequent tools aimed to classify
 300-3000bp reads from complex mixtures of microbial genomes based on
 tetranucleotide frequencies (which are characteristic for different organisms
 [@tag:Karlin]) using supervised [@tag:McHardy @tag:nbc] or unsupervised methods
-such as self-organizing maps (SOM) [@tag:Abe]. Then, researchers began to use
+[@tag:Abe]. Then, researchers began to use
 techniques that could estimate relative abundances from an entire sample, which
 is much faster than classifying individual reads [@tag:Metaphlan @tag:wgsquikr
 @tag:lmat @tag:Vervier]. There is also great interest in identifying and
@@ -746,7 +746,7 @@ into homology/protein family classification in 2007, and therefore, deep
 learning is deeply rooted in functional classification methods.
 
 One of the first techniques of *de novo* genome binning used self-organizing
-maps, a type of NN. Essinger et al. used Adaptive Resonance Theory (ART) to
+maps, a type of NN [@tag:Abe]. Essinger et al. used Adaptive Resonance Theory (ART) to
 cluster similar genomic fragments and showed that it had better performance than
 K-means. However, other methods based on interpolated Markov models
 [@tag:Salzberg] have performed better than these early genome binners. Neural
