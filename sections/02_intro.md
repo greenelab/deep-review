@@ -11,23 +11,30 @@ knowledge that allow us to better treat, categorize, or study disease, all
 within data constrained and privacy critical environments.
 
 Over the past five years, a class of machine learning algorithms known as deep
-learning has revolutionized image classification as well as a wide variety of
-other fields. In a famous and early example, scientists from Google demonstrated
-that a neural network could learn to identify cats simply by watching online
-videos [@url:http://research.google.com/archive/unsupervised_icml2012.html].
-These architectures quickly surpassed previous best-in-class methods that
-required extensive customization. More recently, "off-the-shelf" deep neural
-network approaches have demonstrated success in applications as diverse as the
-game of Go [@doi:10.1038/nature16961] and quantum physics
-[@doi:10.1126/science.aag2302].
+learning has revolutionized image classification and speech recognition due to
+its flexibility and high accuracy [@doi:10.1038/nature14539]. More recently,
+these algorithms have shown equally promising results in fields as diverse as
+high-energy physics [@doi:10.1038/ncomms5308], dermatology
+[@doi:10.1038/nature21056], and translation among written languages
+[@arxiv:1609.08144]. Across fields, "off-the-shelf" implementations of these
+algorithms have produced comparable or higher accuracy than previous
+best-in-class methods that required years of extensive customization, and
+specialized implementations are now being used at industrial scales.
 
-What if, more generally, deep learning could solve the challenges presented by
-the growth of data in biomedicine? Could these algorithms identify the "cats"
-hidden in our data - the patterns unknown to the researcher - and act on them?
-In this review, we examine whether deep learning's transformation of biomedical
-science is simply a matter of time or if there are unique challenges posed by
-biomedical data that render deep learning methods either more challenging or
-less fruitful to apply.
+Deep learning algorithms can also be used in an exploratory, "unsupervised"
+mode, where the goal is to summarize, explain, or identify interesting patterns
+in a data set (rather than to accurately predict which labels an expert would
+assign to each data point).  In a famous and early example, scientists from
+Google demonstrated that a neural network "discovered" that cats, faces, and
+pedestrians were important components of online videos
+[@url:http://research.google.com/archive/unsupervised_icml2012.html], without
+being told to look for any of them. What if, more generally, deep learning could
+solve the challenges presented by the growth of data in biomedicine? Could these
+algorithms identify the "cats" hidden in our data - the patterns unknown to the
+researcher - and act on them? In this review, we examine whether deep learning's
+transformation of biomedical science is simply a matter of time or if there are
+unique challenges posed by biomedical data that render deep learning methods
+either more challenging or less fruitful to apply.
 
 ### Defining deep learning
 
@@ -53,7 +60,7 @@ large. New neural network approaches are also well suited for addressing
 distinct challenges. For example, neural networks structured as autoencoders or
 as adversarial networks require no labels and are now regularly used for
 unsupervised tasks. In this review, we do not exhaustively discuss the different
-types of deep neural network architectures. A recent book from Goodfellow et al
+types of deep neural network architectures. A recent book from Goodfellow et al.
 [@url:http://www.deeplearningbook.org/] covers these in detail. Finally, the
 larger datasets now available are also well suited to fitting the many
 parameters that exist for deep neural networks. The convergence of these factors
@@ -74,14 +81,15 @@ strategic inflection point in the practice of biology or medicine. We structure
 the review with an eye on precision medicine.
 
 There are numerous examples where deep learning has been applied to biological
-problems and produced somewhat improved results, and there are numerous reviews
-that have focused on general applications of deep learning in biology
-[@doi:10.1038/nbt.3313 @doi:10.1002/minf.201501008
-@doi:10.3109/10409238.2015.1135868 @doi:10.1021/acs.molpharmaceut.5b00982
-@doi:10.15252/msb.20156651 @doi:10.1093/bib/bbw068]. Specifically, we have
-sought cases where deep learning enables researchers to solve challenges that
-were previously considered infeasible, or if it makes difficult, tedious, and
-non-routine analyses routine.
+problems and improved results as well as reviews focused on applications of deep
+learning in biology [@doi:10.1038/nbt.3313
+@doi:10.1021/acs.molpharmaceut.5b00982 @doi:10.15252/msb.20156651
+@doi:10.1093/bib/bbw068 @doi:10.3109/10409238.2015.1135868], healthcare
+[@doi:10.1093/bib/bbx044], and drug discovery [@doi:10.1002/minf.201501008
+@doi:10.1002/jcc.24764 @tag:PerezSianes2016_screening
+@tag:Baskin2015_drug_disc].  We sought cases where deep learning enables
+researchers to solve challenges that were previously considered infeasible or
+makes difficult, tedious analyses routine.
 
 We find that domain-specific considerations have greatly influenced how to best
 harness the power and flexibility of deep learning. Model interpretability is
@@ -134,7 +142,7 @@ deep learning, has been extensively applied is molecular target prediction. For
 example, deep recurrent neural networks (RNN) have been used to predict gene
 targets of microRNAs [@doi:10.1109/icnn.1994.374637], and CNNs have been applied
 to predict protein residue-residue contacts and secondary structure on a
-genome-wide scale [doi:10.1371/journal.pcbi.1005324
+genome-wide scale [@doi:10.1371/journal.pcbi.1005324
 @doi:10.1109/tcbb.2014.2343960 @doi:10.1038/srep18962]. Other recent exciting
 applications of deep learning include recognition of functional genomic elements
 such as enhancers and promoters [@doi:10.1101/036129

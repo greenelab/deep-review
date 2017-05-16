@@ -37,7 +37,7 @@ of these challenges and the possibility in this domain of constructing highly
 predictive classifiers of questionable actual utility.
 
 Our goal in this section is to assess the extent to which deep learning is
-already contributing to the discovery of novel categories. Where it isn't, we
+already contributing to the discovery of novel categories. Where it is not, we
 focus on barriers to achieving these goals. We also highlight approaches that
 researchers are taking to address challenges within the field, particularly with
 regards to data availability and labeling.
@@ -92,8 +92,8 @@ set is limited [@tag:Burlina2016_amd] as well as the efficient use of a deep
 Mammography has been one area with numerous contributions
 [@tag:Dhungel2015_struct_pred_mamm @tag:Dhungel2016_mamm
 @tag:Zhu2016_mult_inst_mamm @tag:Zhu2016_advers_mamm
-@tag:Dhungel2017_mamm_min_interv]. In the most of this work, the researchers
-must work around a typical for the domain challenge - the limited number of
+@tag:Dhungel2017_mamm_min_interv]. In most of this work, researchers
+must work around a challenge typical for the domain - the limited number of
 well annotated training images. To expand the number and diversity of images,
 the researchers have employed approaches where they use adversarial examples
 [@tag:Zhu2016_advers_mamm] or first train towards human-created features before
@@ -193,7 +193,7 @@ classification. The resulting dataset (CXR-XIV
 [@url:https://console.cloud.google.com/storage/browser/gcs-public-data--nih/radiology_2017/Chest_X-Ray_CVPR17])
 consists of 108,948 frontal-view chest
 X-ray images (from 32,717 patients) and each image is associated with one or
-more weakly-labeled pathology category (e.g., pneumonia and cardiomegaly) or
+more weakly-labeled pathology category (e.g. pneumonia and cardiomegaly) or
 "normal" otherwise. Further, Wang et al. [@arxiv:1705.02315] used this dataset
 with a unified weakly-supervised multi-label image classification framework, to
 detect common thoracic diseases. It showed superior performance over a benchmark
@@ -246,7 +246,7 @@ in this case often can translate directly into a clinical value. Thus,
 results evaluation, uncertainty estimation, and model interpretation methods are
 also of great importance in this domain (see Discussion). Finally, there is
 a need for better pathologist-computer interaction techniques that will allow
-to combine the power of deep learning methods with human expertise and
+combining the power of deep learning methods with human expertise and
 lead to better-informed decisions for patient treatment and care.
 
 #### Electronic health records
@@ -394,7 +394,7 @@ models with many parameters. While unsupervised and semi-supervised approaches
 can help with small sample sizes, the field would benefit greatly from large
 collections of anonymized records in which a substantial number of records have
 undergone expert review. This challenge is not unique to EHR-based studies. Work
-on medical images, -omics data in applications for which detailed metadata are
+on medical images, omics data in applications for which detailed metadata are
 required, and other applications for which labels are costly to obtain will be
 hampered as long as abundant curated data are unavailable.
 
@@ -402,14 +402,14 @@ Successful approaches to date in this domain have sidestepped this challenge by
 making methodological choices that either reduce the need for labeled examples
 or that use transformations to training data to increase the number of times it
 can be used before overfitting occurs. For example, the unsupervised and
-semi-supervised methods that we've discussed reduce the need for labeled
+semi-supervised methods that we have discussed reduce the need for labeled
 examples [@doi:10.1016/j.jbi.2016.10.007]. The anchor and learn framework
 [@doi:10.1093/jamia/ocw011] uses expert knowledge to identify high confidence
 observations from which labels can be inferred. The adversarial training example
-strategies that we've mentioned can reduce overfitting, if transformations are
+strategies that we have mentioned can reduce overfitting, if transformations are
 available that preserve the meaningful content of the data while transforming
 irrelevant features [@doi:10.1101/095786]. While adversarial training examples
-can be easily imagined for certain methods that operate on images, it's more
+can be easily imagined for certain methods that operate on images, it is more
 challenging to figure out what an equivalent transformation would be for a
 patient's clinical test results. Consequently, it may be hard to employ
 adversarial training examples, not to be confused with generative adversarial
@@ -419,7 +419,7 @@ al. trained a deep neural network using generic images before tuning using only
 radiology images [@doi:10.1007/s10278-016-9914-9]. Datasets that require many of
 the same types of features might be used for initial training, before fine
 tuning takes place with the more sparse biomedical examples. Though the analysis
-hasn't yet been attempted, it's possible that analogous strategies may be
+has not yet been attempted, it is possible that analogous strategies may be
 possible with electronic health records. For example, features learned from the
 electronic health record for one type of clinical test (e.g. a decrease over
 time in a lab value) may transfer across phenotypes.
@@ -456,9 +456,9 @@ related to sharing individual health records or deep models built from such
 records. This subsection deals primarily with these challenges.
 
 EHRs are designed chiefly for clinical, administrative and financial purposes,
-such as patient care, insurance and  billing [@doi:10.1038/nrg3208]. Research is
-at best a tertiary priority, presenting  significant challenges to EHR-based
-research in general, and particularly to data intensive deep learning research.
+such as patient care, insurance and  billing [@doi:10.1038/nrg3208]. Science is
+at best a tertiary priority, presenting challenges to EHR-based
+research in general, and to deep learning research particularly.
 These difficulties can be grouped into three areas: local bias, wider standards
 and legal issues. Note these problems are not restricted to EHR but can also
 apply to any large biomedical dataset, e.g. clinical trial data.
@@ -536,7 +536,7 @@ original training set for the machine learning model [@arxiv:1610.05820] - in
 this case, whether a person's record was present. This presents a potential
 hazard for approaches that aim to generate data. Choi et al. propose generative
 adversarial neural networks as a tool to make sharable EHR data
-[@arxiv:1703.06490v1]; however, the authors didn't take steps to protect the
+[@arxiv:1703.06490v1]; however, the authors did not take steps to protect the
 model from such attacks.
 
 There are approaches to protect models, but they pose their own challenges.
@@ -620,7 +620,7 @@ anything of scientific or predictive value. This fact can undermine the privacy
 of patient data [@doi:10.1145/2382577.2382579] or lead to severe discriminatory
 consequences [@doi:10.1111/j.1740-9713.2016.00960.x]. There is a small but
 growing literature on the prevention and mitigation of data leakage
-[@doi:10.1145/2382577.2382579], as well a a closely-related literature on
+[@doi:10.1145/2382577.2382579], as well as a closely-related literature on
 discriminatory model behavior [@arxiv:1610.02413], but it remains difficult to
 predict when these problems will arise, how to diagnose them, and how to resolve
 them in practice. There is even disagreement about which kinds of algorithmic
