@@ -438,29 +438,28 @@ sufficient data for improved methods to be developed.
 Code sharing and open source licensing is essential for continued progress in
 this domain.  We strongly advocate following established best practices for
 sharing source code, archiving code in repositories that generate digital object
-identifiers, and open licensing [@doi:10.1126/science.aah6168] regardless of
-the minimal requirements, or lack thereof, set by journals, conferences, or
-preprint servers.  In addition, it is important for authors to share not only
-code for their core models but also scripts and code used for data cleaning (see
-above) and hyperparameter optimization.  These improve reproducibility and serve
-as documentation of the detailed decisions that impact model performance but may
+identifiers, and open licensing [@doi:10.1126/science.aah6168] regardless of the
+minimal requirements, or lack thereof, set by journals, conferences, or preprint
+servers.  In addition, it is important for authors to share not only code for
+their core models but also scripts and code used for data cleaning (see above)
+and hyperparameter optimization.  These improve reproducibility and serve as
+documentation of the detailed decisions that impact model performance but may
 not be exhaustively captured in a manuscript's methods text.
 
 Because many deep learning models are often built using one of several popular
-software frameworks, it is also possible to directly share trained
-predictive models.  The availability of pre-trained models can accelerate
-research, with image classifiers as an apt example.  A pre-trained neural
-network can be quickly fine-tuned on new data and used in transfer learning,
-as discussed below.  Taking this idea to the extreme, genomic data has been
-artificially encoded as images in order to benefit from pre-trained image
-classifiers [@tag:Poplin2016_deepvariant]. "Model zoos" -- collections of
-pre-trained models -- are not yet common in biomedical domains but have
-started to
-appear in genomics applications [@tag:Angermueller2016_single_methyl
-@tag:Dragonn].  Sharing models for patient data requires great care because deep
-learning models can be attacked to identify examples used in training.  We
-discuss this issue as well as recent techniques to mitigate these concerns in
-the patient categorization section.
+software frameworks, it is also possible to directly share trained predictive
+models.  The availability of pre-trained models can accelerate research, with
+image classifiers as an apt example.  A pre-trained neural network can be
+quickly fine-tuned on new data and used in transfer learning, as discussed
+below.  Taking this idea to the extreme, genomic data has been artificially
+encoded as images in order to benefit from pre-trained image classifiers
+[@tag:Poplin2016_deepvariant]. "Model zoos" -- collections of pre-trained models --
+are not yet common in biomedical domains but have started to appear in genomics
+applications [@tag:Angermueller2016_single_methyl @tag:Dragonn].  Sharing models
+for patient data requires great care because deep learning models can be
+attacked to identify examples used in training.  We discuss this issue as well
+as recent techniques to mitigate these concerns in the patient categorization
+section.
 
 DeepChem [@tag:AltaeTran2016_one_shot @tag:DeepChem @tag:Wu2017_molecule_net]
 and DragoNN [@tag:Dragonn] exemplify the benefits of sharing pre-trained models
@@ -473,18 +472,17 @@ cases.  This realistic, continual evaluation will play a critical role in
 assessing which techniques are most promising for chemical screening and drug
 discovery.  Like formal, organized challenges such as the ENCODE-DREAM *in vivo*
 Transcription Factor Binding Site Prediction Challenge [@tag:Dream_tf_binding],
-DeepChem provides a
-forum for the fair, critical evaluations that are not always conducted in
-individual methodological papers, which can be biased toward favoring a new
-proposed algorithm.  Likewise DragoNN (Deep RegulAtory GenOmic Neural
-Networks), offers
-not only code and a model zoo but also a detailed tutorial and partner package
-for simulating training data.  These resources, especially the ability to
-simulate datasets that are sufficiently complex to demonstrate the challenges of
-training neural networks but small enough to train quickly on a CPU, are
-important for (human) training and attracting machine learning researchers to
-problems in genomics and healthcare.  We have even included DragoNN and hands-on
-model training into the curriculum of a graduate student course.
+DeepChem provides a forum for the fair, critical evaluations that are not always
+conducted in individual methodological papers, which can be biased toward
+favoring a new proposed algorithm.  Likewise DragoNN (Deep RegulAtory GenOmic
+Neural Networks), offers not only code and a model zoo but also a detailed
+tutorial and partner package for simulating training data.  These resources,
+especially the ability to simulate datasets that are sufficiently complex to
+demonstrate the challenges of training neural networks but small enough to train
+quickly on a CPU, are important for (human) training and attracting machine
+learning researchers to problems in genomics and healthcare.  We have even
+included DragoNN and hands-on model training into the curriculum of a graduate
+student course.
 
 ### Multimodal, multi-task, and transfer learning
 
