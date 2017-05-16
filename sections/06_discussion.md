@@ -282,54 +282,51 @@ frameworks, as applicable?`
 ### Data limitations
 
 A lack of large-scale, high-quality, correctly labeled training data has
-impacted deep
-learning in nearly all applications we have discussed, from healthcare to
-genomics to drug discovery.  The challenges of training complex, high-parameter
-neural networks from few examples are obvious, but uncertainty in the labels of
-those examples can be just as problematic.  For example, in genomics
-labeled data may be derived from an experimental assay with known and
+impacted deep learning in nearly all applications we have discussed, from
+healthcare to genomics to drug discovery.  The challenges of training complex,
+high-parameter neural networks from few examples are obvious, but uncertainty in
+the labels of those examples can be just as problematic.  For example, in
+genomics labeled data may be derived from an experimental assay with known and
 unknown technical artifacts, biases, and error profiles.  It is possible to
 weight training examples or construct Bayesian models to account for uncertainty
 or non-independence in the data. To this end, Park et al.
 [@doi:10.1371/journal.pcbi.1002957] estimated shared non-biological signal
 between datasets to correct for non-independence related to assay platform or
 other factors in a Bayesian integration of many datasets. However, such
-techniques are rarely placed front and center in any description of methods,
-and so may be easily overlooked.
+techniques are rarely placed front and center in any description of methods, and
+so may be easily overlooked.
 
 For some types of data, especially images, it is straightforward to augment
 training datasets by splitting a single labeled example into multiple examples.
-For example, an
-image can easily be rotated, flipped, or translated and retain its label
-[@doi:10.1101/095794].  3D MRI and 4D fMRI (with time as a dimension) data can
-be decomposed into sets of 2D images [@doi:10.1101/070441]. This can greatly
-expand the number of training examples
-but artificially treats such derived images as independent
-instances and sacrifices the structure inherent in the data.  CellCnn trains a
-model to recognize rare cell populations in single-cell data by creating
-training instances that consist of random subsets of cells that are randomly
-sampled with replacement from the full dataset [@tag:Arvaniti2016_rare_subsets].
+For example, an image can easily be rotated, flipped, or translated and retain
+its label [@doi:10.1101/095794].  3D MRI and 4D fMRI (with time as a dimension)
+data can be decomposed into sets of 2D images [@doi:10.1101/070441]. This can
+greatly expand the number of training examples but artificially treats such
+derived images as independent instances and sacrifices the structure inherent in
+the data.  CellCnn trains a model to recognize rare cell populations in
+single-cell data by creating training instances that consist of random subsets
+of cells that are randomly sampled with replacement from the full dataset
+[@tag:Arvaniti2016_rare_subsets].
 
 Simulated or semi-synthetic training data has also been employed in multiple
 biomedical domains. `TODO:  simulated data: #5 #99 #293, maybe #117 and #197.
-There is a counter-example from drug discovery to include as well
-that is related to #55`
+There is a counter-example from drug discovery to include as well that is
+related to #55`
 
 Multimodal, multi-task, and transfer learning, discussed in detail below, can
 also combat data limitations to some degree. There are also emerging network
 architectures, such as Diet Networks for high-dimensional SNP data
-[@tag:Romero2017_diet]. These use multiple networks to drastically
-reduce the number of free parameters by first flipping the problem and training
-a network to predict parameters (weights) for each input (SNP) to learn a
-feature embedding. This embedding (i.e. PCA, per class histograms, or a Word2vec
-[@tag:Word2Vec] generalization) can be learned directly from input data or
-take advantage of other datasets or domain knowledge. Additionally, in this
-task the features are the examples, an important advantage when it is typical to
-have 500 thousand or more SNPs and only a few thousand patients. Finally, this
-embedding is of
-a much lower dimension, allowing for a large reduction in the number of free
-parameters. In the example given, the number of free
-parameters from was reduced from 30 million to 50 thousand, a factor of 600.
+[@tag:Romero2017_diet]. These use multiple networks to drastically reduce the
+number of free parameters by first flipping the problem and training a network
+to predict parameters (weights) for each input (SNP) to learn a feature
+embedding. This embedding (i.e. PCA, per class histograms, or a Word2vec
+[@tag:Word2Vec] generalization) can be learned directly from input data or take
+advantage of other datasets or domain knowledge. Additionally, in this task the
+features are the examples, an important advantage when it is typical to have 500
+thousand or more SNPs and only a few thousand patients. Finally, this embedding
+is of a much lower dimension, allowing for a large reduction in the number of
+free parameters. In the example given, the number of free parameters from was
+reduced from 30 million to 50 thousand, a factor of 600.
 
 ### Hardware limitations and scaling
 
