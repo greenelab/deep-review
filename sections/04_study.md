@@ -10,10 +10,10 @@ integrating multiple types of omic data [@doi:10.1038/ncomms13090], which
 could eventually help predict how these processes are disrupted in disease.
 Recent work has already advanced our ability to identify and interpret genetic
 variants, study microbial communities, and predict protein structures (which
-relates to drug discovery, as discussed in the chemical bioactivity section). In
-addition, unsupervised deep learning has enormous potential for discovering
-novel cellular states from gene expression, fluorescence microscopy, and other
-types of data that ultimately prove to be clinically relevant.
+relates to the problems discussed in the drug development section). In addition,
+unsupervised deep learning has enormous potential for discovering novel cellular
+states from gene expression, fluorescence microscopy, and other types of data
+that ultimately prove to be clinically relevant.
 
 Progress has been rapid in genomics and imaging, fields where important tasks
 are readily adapted to well-established deep learning paradigms.  One
