@@ -241,8 +241,8 @@ site), false positives or false negatives can result depending on the threshold
 chosen by the algorithm. Second, most methods predict binding of TFs at sites in
 isolation, whereas in reality multiple TFs may compete for binding at a single
 site or act synergistically to co-occupy it. Fortunately, multi-task models are
-rapidly improving at simultaneous prediction after a single training step
-[@tag:Zhou2015_deep_sea]. Third, it is unclear exactly how to define a
+rapidly improving at simultaneous prediction of many TFs' binding at any given
+site [@tag:Zhou2015_deep_sea]. Third, it is unclear exactly how to define a
 non-binding or "negative" site in the training data, since the number of
 positive binding sites of a particular TF is relatively small with respect to
 the total number of base-pairs in DNA (see Discussion).
