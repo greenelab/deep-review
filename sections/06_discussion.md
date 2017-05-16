@@ -309,9 +309,9 @@ of cells that are randomly sampled with replacement from the full dataset
 [@tag:Arvaniti2016_rare_subsets].
 
 Simulated or semi-synthetic training data has also been employed in multiple
-biomedical domains. `TODO:  simulated data: #5 #99 #293, maybe #117 and #197.
-There is a counter-example from drug discovery to include as well that is
-related to #55`
+biomedical domains.
+`TODO:  simulated data: #5 #99 #293, maybe and #197.`
+`TODO: Something about GAN?`
 
 Multimodal, multi-task, and transfer learning, discussed in detail below, can
 also combat data limitations to some degree. There are also emerging network
