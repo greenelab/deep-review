@@ -229,7 +229,7 @@ molecular graph, and more sophisticated derived properties
 [@doi:10.1002/9783527628766].   Alternatively, chemicals can be characterized
 with the fingerprint bit vectors, textual strings, or novel learned
 representations described below. Neural networks have a long history in this
-domain [@tag:Baskin2015_drug_disc],[SCHNEIDER], and the 2012 Merck Molecular Activity
+domain [@tag:Baskin2015_drug_disc][@doi:10.1002/minf.201501008], and the 2012 Merck Molecular Activity
 Challenge on Kaggle generated substantial excitement about the potential for
 high-parameter deep learning approaches.  The winning submission was an ensemble
 that included a multitask multilayer perceptron network
@@ -276,11 +276,7 @@ considered a creative experimentation phase, in which deep learning has offered
 novel possibilities for feature representation and modeling of chemical
 compounds.  A molecular graph, where atoms are labeled nodes and bonds are labeled edges, is a
 natural way to represent a chemical structure. 
-
-Interestingly, molecular graphs, which are also called 2D-representations, can be more powerful than seemingly more realistic 3D representations, or higher 4D representations which also incorporate conformer ensembles [CITE SCHNEIDER]
-
- Traditional machine learning
-approaches relied on preprocessing the graph into a feature vector, such as a
+ Traditional machine learning approaches relied on preprocessing the graph into a feature vector, such as a
 fixed-width bit vector fingerprint [@tag:Rogers2010_fingerprints].  The same
 fingerprints have been used by some drug-target interaction methods discussed
 above [@doi:10.1021/acs.jproteome.6b00618].  An overly simplistic but
@@ -377,35 +373,63 @@ specialized subsets.
 
 Two emerging areas that we anticipate will be increasingly important in deep
 learning for drug discovery are *de novo* drug design and protein
-structure-based models.  Whereas the goal of virtual screening is to prediction
-the biochemical activity of hundreds of thousands to millions of chemicals, *de
-novo* drug design explores the much larger space of at least 10<sup>60</sup>
-organic molecules with drug-like properties that could be chemically synthesized
-[@doi:10.1002/wcms.1104].  Generative neural networks for drug design typically
+structure-based models. Whereas the goal of virtual screening is to 
+find active molecules by predicting the biochemical activity of hundreds of
+thousands to millions of chemicals using existing (virtual) collections of molecules, 
+analogous to robot based high throughput "wet lab" screening, _de novo_ drug design 
+aims to directly _generate_ active compounds.[@doi:10.1002/wcms.49,@doi:10.1021/acs.jmedchem.5b01849]
+
+It attempts to model the typical design-synthesize-test cycle of drug discovery.[@doi:10.1002/wcms.49] 
+Thus de novo design explores in principle without explicit enumeration the much larger space 
+of an estimated 10^60 synthesizable organic molecules with drug-like properties.[@doi:10.1002/wcms.1104]
+To test or score structures, machine-learning algorithms as those discussed earlier
+ are used. To "design" and "synthesize", traditional de-novo design software relied on classical optimizers such as genetic
+ algorithms. Unfortunately, this often leads to overfitted, 'weird' molecules which are difficult to synthesize in the lab. 
+To generate molecules, current programs have therefore settled on rule-based virtual chemical 
+reactions to generate molecular structures.[@doi:10.1021/acs.jmedchem.5b01849]
+
+Neural network models that learn to generate realistic, synthesizable molecules have been proposed
+ as an alternative to provide the large molecule sets needed for
+ virtual screening or even create and refine focussed molecules for de novo design. 
+In contrast to the classical, symbolic approaches, generative models learned from data do not depend on laboriously encoded expert knowledge.
+ The problem is related to the generation of syntactically and semantically correct text.[@arxiv:1308.0850]
+
+As neural models that directly output (molecular) graphs remain under-explored,
+ generative neural networks for drug design typically
 represent chemicals with the simplified molecular-input line-entry system
 (SMILES), a standard way string-based representation with characters that
-represent atoms, bonds, and rings [@tag:Segler2017_drug_design].
+represent atoms, bonds, and rings [@tag:Segler2017_drug_design]. 
+This allows treating molecules as sequences and thus to leverage recent progress in 
+recurrent neural networks.
 Gómez-Bombarelli et al. designed a SMILES-to-SMILES autoencoder to learn a
 continuous latent feature space for chemicals [@tag:Gomezb2016_automatic]. In
 this learned continuous space it was possible to train some types of supervised
 learning algorithms and interpolate between continuous representations of
 chemicals in a manner that is not possible with discrete (e.g. bit vector or
-string) features.  The strategy of constructing simple, continuous features
+string) features or in symbolic, molecular graph space. Even more interesting 
+is the prospect of performing gradient-based or Bayesian optimization of molecules 
+within this latent space. The strategy of constructing simple, continuous features
 before applying supervised learning techniques is reminiscent of autoencoders
-trained on high-dimensional EHR data [@tag:BeaulieuJones2016_ehr_encode].  A
+trained on high-dimensional EHR data [@tag:BeaulieuJones2016_ehr_encode]. A
 drawback of the SMILES-to-SMILES autoencoder is that not all SMILES strings
 produced by the autoencoder's decoder correspond to valid chemical structures.
-More recent approaches train RNNs on compounds from ChEMBL
+Recently, the Grammar Variational Autoencoder, which takes the SMILES grammar into account
+ and is guaranteed to produce syntactically valid SMILES,
+ has been proposed to alleviate this issue.[@arxiv:1703.01925]
+Another approach is to train character-based RNNs on large collections of molecules, for example ChEMBL
 [@doi:10.1093/nar/gkr777] to first obtain a generic generative model for
-drug-like compounds [@tag:Segler2017_drug_design
-@tag:Olivecrona2017_drug_design].  These generative models successfully learn
+drug-like compounds [@tag:Segler2017_drug_design]. These generative models successfully learn
 the grammar of compound representations, with 94%
 [@tag:Olivecrona2017_drug_design] or nearly 98% [@tag:Segler2017_drug_design] of
 generated SMILES corresponding to valid molecular structures.  The initial RNN
 is then fine-tuned to generate molecules that are likely to be active against a
 specific target by either continuing training on a small set of positive
 examples [@tag:Segler2017_drug_design] or adopting reinforcement learning
-strategies [@tag:Olivecrona2017_drug_design].
+strategies [@tag:Olivecrona2017_drug_design][@arxiv:1611.02796]. 
+Both fine-tuning and reinforcement learning strategies could rediscover known, hold-out active molecules.
+The great flexibility of neural networks, and progress in generative models offers many opportunites for 
+deep architectures in de novo design, for example, the adaptation of Generative Adversarial Networks (GANs) for molecules.
+
 
 When protein structure is available, virtual screening has traditionally relied
 on docking programs to predict how a compound best fits in the target's binding
