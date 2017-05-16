@@ -356,8 +356,7 @@ Most broadly, Kelley et al. [@doi:10.1101/gr.200535.115] trained CNNs on DNA
 accessibility datasets, getting a marked improvement on previous methods, albeit
 still with a high false positive rate. (Note as above, using DNA accessibility
 conflates enhancers with other functional sites.) This study also featured a
-useful interpretability approach (analogous to *in silico* mutagenesis
-[@doi:10.1093/nar/gkm238]) introducing known protein binding motifs into
+useful interpretability approach, introducing known protein binding motifs into
 sequences and measuring the change in predicted accessibility.
 
 Umarov et al. [@doi:10.1371/journal.pone.0171410] demonstrated the use of CNNs
