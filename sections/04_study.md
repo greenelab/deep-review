@@ -335,13 +335,13 @@ While prior (non-deep learning) approaches have made steady improvements on
 promoter prediction, there is little consensus on the best approach and
 performance is poor. Typically algorithms will recognize only half of all
 promoters, with an accompanying high false positive rate
-[@doi:10.1101/gr.7.9.861].
-Methods with better sensitivity generally do so at the cost of poorer
-specificity. Conventional identification of enhancers has leaned heavily on
-simple conservation or laborious experimental techniques, with only moderate
-sensitivity and specificity. For example, while chromatin accessibility has
-often been used for identifying enhancers, this also "recognizes" a wide variety
-of other functional elements, like promoters, silencers, and repressors.
+[@doi:10.1101/gr.7.9.861]. Methods with better sensitivity generally do so at
+the cost of poorer specificity. Conventional identification of enhancers has
+leaned heavily on simple conservation or laborious experimental techniques, with
+only moderate sensitivity and specificity. For example, while chromatin
+accessibility has often been used for identifying enhancers, this also
+"recognizes" a wide variety of other functional elements, like promoters,
+silencers, and repressors.
 
 The complex nature of CREs (and our ignorance at to what are the important
 features of them) is therefore a good subject for deep learning approaches.
@@ -353,12 +353,12 @@ on a few recent characteristic studies to outline the state of the art and
 extant problems.
 
 Most broadly, Kelley et al. [@doi:10.1101/gr.200535.115] trained CNNs on DNA
-accessibility datasets, getting a marked improvement on previous methods,
-albeit still with a high false positive rate. (Note as above, using DNA
-accessibility conflates enhancers with other functional sites.) This study also
-featured a useful interpretability approach (analogous to *in silico*
-mutagenesis [@doi:10.1093/nar/gkm238]) introducing known protein binding motifs
-into sequences and measuring the change in predicted accessibility.
+accessibility datasets, getting a marked improvement on previous methods, albeit
+still with a high false positive rate. (Note as above, using DNA accessibility
+conflates enhancers with other functional sites.) This study also featured a
+useful interpretability approach (analogous to *in silico* mutagenesis
+[@doi:10.1093/nar/gkm238]) introducing known protein binding motifs into
+sequences and measuring the change in predicted accessibility.
 
 Umarov et al. [@doi:10.1371/journal.pone.0171410] demonstrated the use of CNNs
 in recognizing promoter sequences, achieving markedly better performance than
@@ -404,10 +404,10 @@ identification as well. Furthermore, the quality and meaning of training data
 needs to be closely considered, given that a "promoter" or "enhancer" may only
 be putative or dependent on the experimental method or context of
 identification. Else we risk building detectors not for CREs but putative CREs.
-Although most work in this area current focuses on predicting the 1D location of
-enhancers, modeling 3D chromatin conformations, enhancer-promoter interactions
-[@doi:10.1101/085241], and enhancer-target gene interactions will be critical
-for understanding transcriptional regulation.
+Although most deep learning studies in this area currently focus on predicting
+the 1D location of enhancers, modeling 3D chromatin conformations,
+enhancer-promoter interactions [@doi:10.1101/085241], and enhancer-target gene
+interactions will be critical for understanding transcriptional regulation.
 
 ### Micro-RNA binding
 
