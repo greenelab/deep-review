@@ -308,10 +308,41 @@ single-cell data by creating training instances that consist of random subsets
 of cells that are randomly sampled with replacement from the full dataset
 [@tag:Arvaniti2016_rare_subsets].
 
-Simulated or semi-synthetic training data has also been employed in multiple
-biomedical domains.
-`TODO:  simulated data: #5 #99 #293, maybe and #197.`
-`TODO: Something about GAN?`
+Simulated or semi-synthetic training data has been employed in multiple
+biomedical domains, though many of these ideas are not specific to deep
+learning.  Training and evaluating on simulated data, for instance, generating
+synthetic TF binding sites with position weight matrices
+[@tag:Shrikumar2017_reversecomplement] or RNA-seq reads for predicting mRNA
+transcript boundaries [@doi:10.1101/125229], is a standard practice in
+bioinformatics.  This strategy can help benchmark algorithms when the available
+gold standard dataset are imperfect, but it should be paired with an evaluation
+on real data, as in the prior examples [@tag:Shrikumar2017_reversecomplement
+@doi:10.1101/125229].
+
+Simulated data can also be create negative examples when only positive training
+instances are available.  DANN [@doi:10.1093/bioinformatics/btu703] uses this
+approach to predict the pathogenicity of genetic variants using semi-synthetic
+training data from Combined Annotation-Dependent Depletion
+[@doi:10.1038/ng.2892].  Though our emphasis here is on the training strategy,
+it should be noted that logistic regression outperformed DANN when
+distinguishing known pathogenic mutations from likely benign variants in real
+data. Similarly, a somatic mutation caller has been trained by injecting
+mutations into real sequencing datasets [@tag:Torracinta2016_sim].  This method
+was successful at detecting mutations in other semi-synthetic datasets but was
+not validated on real data.
+
+In settings where negative instances vastly outnumber positives, such as binding
+affinity prediction between MHC proteins and peptide ligands
+[@doi:10.1101/054775] or proteins and small molecules [@tag:Lusci2015_irv],
+training datasets have been augmented by adding additional instances and
+assuming they are negative.  There is some evidence that this can improve
+performance [@tag:Lusci2015_irv], but in other cases it was only beneficial when
+using the real training datasets were extremely small [@doi:10.1101/054775].
+Overall, simulated and semi-simulated training data is a valuable idea for
+overcoming limited sample sizes but one that requires more rigorous evaluation
+on real ground-truth datasets before we can recommend it for widespread use.
+There is a risk that a model will easily discriminate synthetic examples but
+not generalize to real data.
 
 Multimodal, multi-task, and transfer learning, discussed in detail below, can
 also combat data limitations to some degree. There are also emerging network
