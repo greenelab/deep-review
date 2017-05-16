@@ -39190,6 +39190,509 @@
     "id": "omzv9ryI"
   },
   {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          5,
+          13
+        ]
+      ],
+      "date-time": "2017-05-13T06:01:52Z",
+      "timestamp": 1494655312183
+    },
+    "reference-count": 40,
+    "publisher": "Springer Nature",
+    "issue": "7616",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Nature"
+    ],
+    "DOI": "10.1038/nature19057",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          8,
+          16
+        ]
+      ],
+      "date-time": "2016-08-16T17:02:13Z",
+      "timestamp": 1471366933000
+    },
+    "page": "285-291",
+    "source": "Crossref",
+    "is-referenced-by-count": 417,
+    "title": "Analysis of protein-coding genetic variation in 60,706 humans",
+    "prefix": "10.1038",
+    "volume": "536",
+    "author": [
+      {
+        "given": "Monkol",
+        "family": "Lek",
+        "affiliation": []
+      },
+      {
+        "given": "Konrad J.",
+        "family": "Karczewski",
+        "affiliation": []
+      },
+      {
+        "given": "Eric V.",
+        "family": "Minikel",
+        "affiliation": []
+      },
+      {
+        "given": "Kaitlin E.",
+        "family": "Samocha",
+        "affiliation": []
+      },
+      {
+        "given": "Eric",
+        "family": "Banks",
+        "affiliation": []
+      },
+      {
+        "given": "Timothy",
+        "family": "Fennell",
+        "affiliation": []
+      },
+      {
+        "given": "Anne H.",
+        "family": "O’Donnell-Luria",
+        "affiliation": []
+      },
+      {
+        "given": "James S.",
+        "family": "Ware",
+        "affiliation": []
+      },
+      {
+        "given": "Andrew J.",
+        "family": "Hill",
+        "affiliation": []
+      },
+      {
+        "given": "Beryl B.",
+        "family": "Cummings",
+        "affiliation": []
+      },
+      {
+        "given": "Taru",
+        "family": "Tukiainen",
+        "affiliation": []
+      },
+      {
+        "given": "Daniel P.",
+        "family": "Birnbaum",
+        "affiliation": []
+      },
+      {
+        "given": "Jack A.",
+        "family": "Kosmicki",
+        "affiliation": []
+      },
+      {
+        "given": "Laramie E.",
+        "family": "Duncan",
+        "affiliation": []
+      },
+      {
+        "given": "Karol",
+        "family": "Estrada",
+        "affiliation": []
+      },
+      {
+        "given": "Fengmei",
+        "family": "Zhao",
+        "affiliation": []
+      },
+      {
+        "given": "James",
+        "family": "Zou",
+        "affiliation": []
+      },
+      {
+        "given": "Emma",
+        "family": "Pierce-Hoffman",
+        "affiliation": []
+      },
+      {
+        "given": "Joanne",
+        "family": "Berghout",
+        "affiliation": []
+      },
+      {
+        "given": "David N.",
+        "family": "Cooper",
+        "affiliation": []
+      },
+      {
+        "given": "Nicole",
+        "family": "Deflaux",
+        "affiliation": []
+      },
+      {
+        "given": "Mark",
+        "family": "DePristo",
+        "affiliation": []
+      },
+      {
+        "given": "Ron",
+        "family": "Do",
+        "affiliation": []
+      },
+      {
+        "given": "Jason",
+        "family": "Flannick",
+        "affiliation": []
+      },
+      {
+        "given": "Menachem",
+        "family": "Fromer",
+        "affiliation": []
+      },
+      {
+        "given": "Laura",
+        "family": "Gauthier",
+        "affiliation": []
+      },
+      {
+        "given": "Jackie",
+        "family": "Goldstein",
+        "affiliation": []
+      },
+      {
+        "given": "Namrata",
+        "family": "Gupta",
+        "affiliation": []
+      },
+      {
+        "given": "Daniel",
+        "family": "Howrigan",
+        "affiliation": []
+      },
+      {
+        "given": "Adam",
+        "family": "Kiezun",
+        "affiliation": []
+      },
+      {
+        "given": "Mitja I.",
+        "family": "Kurki",
+        "affiliation": []
+      },
+      {
+        "given": "Ami Levy",
+        "family": "Moonshine",
+        "affiliation": []
+      },
+      {
+        "given": "Pradeep",
+        "family": "Natarajan",
+        "affiliation": []
+      },
+      {
+        "given": "Lorena",
+        "family": "Orozco",
+        "affiliation": []
+      },
+      {
+        "given": "Gina M.",
+        "family": "Peloso",
+        "affiliation": []
+      },
+      {
+        "given": "Ryan",
+        "family": "Poplin",
+        "affiliation": []
+      },
+      {
+        "given": "Manuel A.",
+        "family": "Rivas",
+        "affiliation": []
+      },
+      {
+        "given": "Valentin",
+        "family": "Ruano-Rubio",
+        "affiliation": []
+      },
+      {
+        "given": "Samuel A.",
+        "family": "Rose",
+        "affiliation": []
+      },
+      {
+        "given": "Douglas M.",
+        "family": "Ruderfer",
+        "affiliation": []
+      },
+      {
+        "given": "Khalid",
+        "family": "Shakir",
+        "affiliation": []
+      },
+      {
+        "given": "Peter D.",
+        "family": "Stenson",
+        "affiliation": []
+      },
+      {
+        "given": "Christine",
+        "family": "Stevens",
+        "affiliation": []
+      },
+      {
+        "given": "Brett P.",
+        "family": "Thomas",
+        "affiliation": []
+      },
+      {
+        "given": "Grace",
+        "family": "Tiao",
+        "affiliation": []
+      },
+      {
+        "given": "Maria T.",
+        "family": "Tusie-Luna",
+        "affiliation": []
+      },
+      {
+        "given": "Ben",
+        "family": "Weisburd",
+        "affiliation": []
+      },
+      {
+        "given": "Hong-Hee",
+        "family": "Won",
+        "affiliation": []
+      },
+      {
+        "given": "Dongmei",
+        "family": "Yu",
+        "affiliation": []
+      },
+      {
+        "given": "David M.",
+        "family": "Altshuler",
+        "affiliation": []
+      },
+      {
+        "given": "Diego",
+        "family": "Ardissino",
+        "affiliation": []
+      },
+      {
+        "given": "Michael",
+        "family": "Boehnke",
+        "affiliation": []
+      },
+      {
+        "given": "John",
+        "family": "Danesh",
+        "affiliation": []
+      },
+      {
+        "given": "Stacey",
+        "family": "Donnelly",
+        "affiliation": []
+      },
+      {
+        "given": "Roberto",
+        "family": "Elosua",
+        "affiliation": []
+      },
+      {
+        "given": "Jose C.",
+        "family": "Florez",
+        "affiliation": []
+      },
+      {
+        "given": "Stacey B.",
+        "family": "Gabriel",
+        "affiliation": []
+      },
+      {
+        "given": "Gad",
+        "family": "Getz",
+        "affiliation": []
+      },
+      {
+        "given": "Stephen J.",
+        "family": "Glatt",
+        "affiliation": []
+      },
+      {
+        "given": "Christina M.",
+        "family": "Hultman",
+        "affiliation": []
+      },
+      {
+        "given": "Sekar",
+        "family": "Kathiresan",
+        "affiliation": []
+      },
+      {
+        "given": "Markku",
+        "family": "Laakso",
+        "affiliation": []
+      },
+      {
+        "given": "Steven",
+        "family": "McCarroll",
+        "affiliation": []
+      },
+      {
+        "given": "Mark I.",
+        "family": "McCarthy",
+        "affiliation": []
+      },
+      {
+        "given": "Dermot",
+        "family": "McGovern",
+        "affiliation": []
+      },
+      {
+        "given": "Ruth",
+        "family": "McPherson",
+        "affiliation": []
+      },
+      {
+        "given": "Benjamin M.",
+        "family": "Neale",
+        "affiliation": []
+      },
+      {
+        "given": "Aarno",
+        "family": "Palotie",
+        "affiliation": []
+      },
+      {
+        "given": "Shaun M.",
+        "family": "Purcell",
+        "affiliation": []
+      },
+      {
+        "given": "Danish",
+        "family": "Saleheen",
+        "affiliation": []
+      },
+      {
+        "given": "Jeremiah M.",
+        "family": "Scharf",
+        "affiliation": []
+      },
+      {
+        "given": "Pamela",
+        "family": "Sklar",
+        "affiliation": []
+      },
+      {
+        "given": "Patrick F.",
+        "family": "Sullivan",
+        "affiliation": []
+      },
+      {
+        "given": "Jaakko",
+        "family": "Tuomilehto",
+        "affiliation": []
+      },
+      {
+        "given": "Ming T.",
+        "family": "Tsuang",
+        "affiliation": []
+      },
+      {
+        "given": "Hugh C.",
+        "family": "Watkins",
+        "affiliation": []
+      },
+      {
+        "given": "James G.",
+        "family": "Wilson",
+        "affiliation": []
+      },
+      {
+        "given": "Mark J.",
+        "family": "Daly",
+        "affiliation": []
+      },
+      {
+        "given": "Daniel G.",
+        "family": "MacArthur",
+        "affiliation": []
+      }
+    ],
+    "member": "339",
+    "published-online": {
+      "date-parts": [
+        [
+          2016,
+          8,
+          17
+        ]
+      ]
+    },
+    "container-title": "Nature",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          8,
+          18
+        ]
+      ],
+      "date-time": "2016-08-18T10:51:12Z",
+      "timestamp": 1471517472000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          8,
+          17
+        ]
+      ]
+    },
+    "references-count": 40,
+    "alternative-id": [
+      "nature19057"
+    ],
+    "URL": "http://dx.doi.org/10.1038/nature19057",
+    "relation": {
+      "has-preprint": [
+        {
+          "id-type": "doi",
+          "id": "10.1101/030338",
+          "asserted-by": "object"
+        }
+      ],
+      "cites": []
+    },
+    "issn-type": [
+      {
+        "value": "0028-0836",
+        "type": "print"
+      },
+      {
+        "value": "1476-4687",
+        "type": "electronic"
+      }
+    ],
+    "subject": [
+      "General"
+    ],
+    "id": "fSpvdh5l"
+  },
+  {
     "abstract": "After a more than decade-long period of relatively little research activity in the area of recurrent neural networks, several new developments will be reviewed here that have allowed substantial progress both in understanding and in technical solutions towards more efficient training of recurrent networks. These advances have been motivated by and related to the optimization issues surrounding deep learning. Although recurrent networks are extremely powerful in what they can in principle represent in terms of modelling sequences,their training is plagued by two aspects of the same issue regarding the learning of long-term dependencies. Experiments reported here evaluate the use of clipping gradients, spanning longer time ranges with leaky integration, advanced momentum techniques, using more powerful output probability models, and encouraging sparser gradients to help symmetry breaking and credit assignment. The experiments are performed on text and music data and show off the combined effects of these techniques in generally improving both training and test error.",
     "author": [
       {

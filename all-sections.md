@@ -1145,79 +1145,75 @@ papers`
 
 ### Promoters, enhancers, and related epigenomic tasks
 
-`TODO: There's inevitably a lot of overlap been this and the transcription
-binding section. Maybe in the long term think about restructuring to one big
-"regulome" section`
-
 Identification of promoters and other cis-regulatory elements (CREs) presents an
 obvious use case for deep learning. Transcriptional control is undoubtedly a
-vital - and early - part of the regulation of gene expression. An abundance of
-sequence and associated functional data (e.g. ENCODE, ExAC) exists across
-species. At the same time,  studies of gene regulation have often focused on the
+vital -- and early -- part of the regulation of gene expression. An abundance of
+sequence and associated functional data (e.g. ENCODE
+[@1Bs5k1MVg] and ExAC [@fSpvdh5l]) exists across
+species. At the same time, studies of gene regulation have often focused on the
 protein (binding) rather than promoter level [@19jjiGHWc], perhaps
 due to the ill-defined nature of CREs. A promoter itself can be seen as an
-assemblage of "active" binding sites for  transcription factors interspersed by
+assemblage of "active" binding sites for transcription factors interspersed by
 less-characterized and perhaps functionally silent spacer regions. However, the
 sequence signals that control the start and stop of transcription and
 translation are still not well understood, compounded by incomplete
-understanding of alternative transcripts and the context for these
-alternatives. Sequence similarity is poor even between functionally correlated
-genes. While homologs might be studied for insight, they may not exist or may be
-just as poorly characterized.
+understanding of alternative transcripts and the context for these alternatives.
+Sequence similarity is poor even between functionally correlated genes. While
+homologs might be studied for insight, they may not exist or may be just as
+poorly characterized.
 
-Recognizing enhancers presents additional challenges. Enhancers may be up to 1
-Mbp upstream or downstream from  the target promoter, on either strand, even
-within the introns of other genes [@8yA3foA6]. They do not
-necessarily operate on the nearest gene and may in fact effect multiple genes.
-Their activity is frequently tissue- or context-specific. A substantial fraction
-of enhancers displays modest or no conservation across species. There is no
-universal enhancer sequence signal or marker for enhancers, and some literature
-suggests that enhancers and promoters may be just categories along a spectrum
-[@J0PJHcHK]. One study [@5zmE7Qkb] even
-showed that only 33% of predicted regulatory regions could be validated, while a
-class of "weak" predicted enhancers were strong drivers of expression. Yet there
-is growing evidence for their vast ubiquity, making them possibly the
-predominant functional non-coding element. Thus, identifying enhancers is
-critical yet the search space is embarrassingly large.
+Recognizing enhancers presents additional challenges. Enhancers may be up to one
+million base pairs upstream or downstream from the target promoter, on either
+strand, even within the introns of other genes [@8yA3foA6]. They do
+not necessarily operate on the nearest gene and may in fact effect multiple
+genes. Their activity is frequently tissue- or context-specific. A substantial
+fraction of enhancers displays modest or no conservation across species. There
+is no universal enhancer sequence signal or marker for enhancers, and some
+literature suggests that enhancers and promoters may be just categories along a
+spectrum [@J0PJHcHK]. One study
+[@5zmE7Qkb] even showed that only 33% of predicted regulatory
+regions could be validated, while a class of "weak" predicted enhancers were
+strong drivers of expression. Yet there is growing evidence for their vast
+ubiquity, making them possibly the predominant functional non-coding element.
+Thus, identifying enhancers is critical yet the search space is large.
 
 While prior (non-deep learning) approaches have made steady improvements on
 promoter prediction, there is little consensus on the best approach and
 performance is poor. Typically algorithms will recognize only half of all
 promoters, with an accompanying high false positive rate
-[@huFxo9OA].
-Methods with better sensitivity generally do so at the cost of poorer
-specificity. Conventional identification of enhancers has leaned heavily on
-simple conservation or laborious experimental techniques, with only moderate
-sensitivity and specificity. For example, while chromatin accessibility has
-often been used for identifying enhancers, this also "recognizes" a wide variety
-of other functional elements, like promoters, silencers and repressors.
+[@huFxo9OA]. Methods with better sensitivity generally do so at
+the cost of poorer specificity. Conventional identification of enhancers has
+leaned heavily on simple conservation or laborious experimental techniques, with
+only moderate sensitivity and specificity. For example, while chromatin
+accessibility has often been used for identifying enhancers, this also
+"recognizes" a wide variety of other functional elements, like promoters,
+silencers, and repressors.
 
 The complex nature of CREs (and our ignorance at to what are the important
-features of them) therefore seems a good subject for deep learning approaches.
+features of them) is therefore a good subject for deep learning approaches.
 Indeed, neural networks were used for promoter recognition as early as 1996,
 albeit with mixed results [@3Ew5V1iC]. Since then,
-there has been much work in applying deep learning to this area, although
-little in the way of comparative studies or reviews. We will therefore focus on
-a few recent characteristic studies to outline the state of the art and extant
-problems.
+there has been much work in applying deep learning to this area, although little
+in the way of comparative studies or formal benchmarks. We will therefore focus
+on a few recent characteristic studies to outline the state of the art and
+extant problems.
 
 Most broadly, Kelley et al. [@2CbHXoFn] trained CNNs on DNA
-accessibility datasets, getting a marked improvement on previous methods,
-albeit still with a high false positive rate. (Note as above, using DNA
-accessibility conflates enhancers with other functional sites.) This study also
-featured a useful interpretability approach (analogous to in silico mutagenesis
-[@1EyJfuWqh]) introducing known protein binding motifs into
+accessibility datasets, getting a marked improvement on previous methods, albeit
+still with a high false positive rate. (Note as above, using DNA accessibility
+conflates enhancers with other functional sites.) This study also featured a
+useful interpretability approach, introducing known protein binding motifs into
 sequences and measuring the change in predicted accessibility.
 
-Umarov et al. [@as2HfoSh] demonstrated the use of
-Convolutional Neural Networks in recognizing promoter sequences, achieving
-markedly better performance than conventional methods (sensitivity and
-specificity exceeding 90%). While some results were achieved over bacterial
-promoters (which are considerably simpler in structure), surprisingly roughly
-similar performance was found for human promoters. This work also included a
-promising and simple method for interpretability (randomly substituting bases in
-a recognized promoter region, then checking for a change in recognition) that
-would be useful to exploit more widely.
+Umarov et al. [@as2HfoSh] demonstrated the use of CNNs
+in recognizing promoter sequences, achieving markedly better performance than
+conventional methods (sensitivity and specificity exceeding 90%). While some
+results were achieved over bacterial promoters (which are considerably simpler
+in structure), surprisingly roughly similar performance was found for human
+promoters. This work also included a promising and simple method for
+interpretability (randomly substituting bases in a recognized promoter region,
+then checking for a change in recognition) that would be useful to exploit more
+widely.
 
 Xu et al. [@jV2YerUS] applied CNNs to the detection of
 enhancers, achieving incremental improvements in specificity and sensitivity
@@ -1230,7 +1226,7 @@ surprisingly deeper architectures decreased performance.
 Singh et al. [@14TqLB9iZ] also used batch normalization, approaching
 the problem of predicting enhancer-promoter interactions from solely the
 sequence and location of putative enhancers and promoters in a particular cell
-type. Performance was comparative to state of the art conventional techniques
+type. Performance was comparative to state-of-the-art conventional techniques
 that used the whole gamut of full functional genomic and non-sequence data.
 
 Given the conflation between different CREs, the study of Li et al.
@@ -1246,19 +1242,17 @@ In summary, deep learning is a promising approach for identifying CREs, able to
 interrogate sequence features that are complex and ill-understood, already
 offering marked improvements on the prior state of the art. However, the exact
 methodology is up for debate and needs examination and more comparative study.
-Work needs to be done in understanding the best architecture to be used. Further
-concern surrounds the training data. CNNs require a large training set to avoid
-over-fitting, yet in many cases we do not have a large "gold standard" dataset
-to train against. Further more, the quality and meaning of training data needs
-to be closely considered, given that a "promoter" or "enhancer" may only be
-putative or dependent on the experimental method or context of identification.
-Else we risk building detectors not for CREs but putative CREs. The best model
-of negative sample needs also to be considered, as does the problem of
-imbalanced data. In a sentence, these methods can only be as good as their
-training data. Finally, interpretability is a problem but one that appears to be
-solvable given empirical approaches.
-
-`TODO: discuss enhancer-promoter and enhancer-target prediction`
+Work needs to be done in understanding the best architecture to be used. The
+challenges in predicting TF binding -- lack of large gold standard datasets,
+model interpretation, and definition negative examples -- are pertinent to CRE
+identification as well. Furthermore, the quality and meaning of training data
+needs to be closely considered, given that a "promoter" or "enhancer" may only
+be putative or dependent on the experimental method or context of
+identification. Else we risk building detectors not for CREs but putative CREs.
+Although most deep learning studies in this area currently focus on predicting
+the 1D location of enhancers, modeling 3D chromatin conformations,
+enhancer-promoter interactions [@14TqLB9iZ], and enhancer-target gene
+interactions will be critical for understanding transcriptional regulation.
 
 ### Micro-RNA binding
 
