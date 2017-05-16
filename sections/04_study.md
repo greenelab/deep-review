@@ -188,7 +188,7 @@ methods [@tag:Horton1992_assessment]. Later, SVM techniques outperformed the
 generative methods by using k-mer features [@tag:Ghandi2014_enhanced
 @tag:Setty2015_seqgl], but string kernel-based SVM systems are limited by their
 expensive computational cost, which is proportional to the number of training
-and testing sequences. 
+and testing sequences.
 
 With the advent of deep learning, Alipanahi et al.
 [@tag:Alipanahi2015_predicting] showed that convolutional neural network models
@@ -426,9 +426,9 @@ Protein secondary structure can exhibit three different states (alpha helix,
 beta strand, and loop regions) or eight finer-grained states. Q3 and Q8 accuracy
 pertain to 3-state or 8-state predictions, respectively. Several
 groups [@doi:10.1371/journal.pone.0032235 @doi:10.1109/TCBB.2014.2343960
-@doi:10.1038/srep11476] initiated the application of deep learning to protein secondary 
-structure prediction, but were unable to achieve significant improvement over the de facto 
-standard method PSIPRED [@doi:10.1006/jmbi.1999.3091], which uses two shallow feedforward neural networks. 
+@doi:10.1038/srep11476] initiated the application of deep learning to protein secondary
+structure prediction, but were unable to achieve significant improvement over the de facto
+standard method PSIPRED [@doi:10.1006/jmbi.1999.3091], which uses two shallow feedforward neural networks.
 In 2014, Zhou and Troyanskaya demonstrated that they could improve Q8 accuracy by using a deep
 supervised and convolutional generative stochastic network [@arxiv:1403.1347].
 In 2016 Wang et al. developed a DeepCNF model that significantly
@@ -445,26 +445,26 @@ conformation of a protein structure.
 
 Protein contact prediction and contact-assisted folding (i.e. folding proteins
 using predicted contacts as restraints) represents a promising new direction for
-*ab initio* folding of proteins without good templates in PDB. Co-evolution analysis 
-is effective for proteins with a very large number (>1000) of sequence 
-homologs [@doi:10.1371/journal.pone.0028766], but otherwise fares poorly for proteins 
+*ab initio* folding of proteins without good templates in PDB. Co-evolution analysis
+is effective for proteins with a very large number (>1000) of sequence
+homologs [@doi:10.1371/journal.pone.0028766], but otherwise fares poorly for proteins
 without many sequence homologs. By combining co-evolution information with
 a few other protein features, shallow neural network methods such as
 MetaPSICOV [@doi:10.1093/bioinformatics/btu791] and CoinDCA-NN
 [@doi:10.1093/bioinformatics/btv472] have shown some advantage over pure co-evolution analysis for
 proteins with few sequence homologs, but their accuracy is still far from satisfactory. In
-recent years, deeper architectures have been explored for contact prediction, 
+recent years, deeper architectures have been explored for contact prediction,
 such as CMAPpro [@doi:10.1093/bioinformatics/bts475], DNCON [@doi:10.1093/bioinformatics/bts598]
-and PConsC [@doi:10.1371/journal.pcbi.1003889]. 
-However, blindly tested in the well-known CASP competitions, 
+and PConsC [@doi:10.1371/journal.pcbi.1003889].
+However, blindly tested in the well-known CASP competitions,
 these methods did not show any advantage over MetaPSICOV [@doi:10.1093/bioinformatics/btu791].
 
 Recently, Wang et al. proposed the deep learning method RaptorX-Contact
 [@doi:10.1371/journal.pcbi.1005324], which significantly improves contact
-prediction over MetaPSICOV and pure co-evolution methods, 
-especially for proteins without many sequence homologs. 
-It employs a network architecture formed by one 1D residual neural network 
-and one 2D residual neural network. Blindly tested in the latest CASP competition 
+prediction over MetaPSICOV and pure co-evolution methods,
+especially for proteins without many sequence homologs.
+It employs a network architecture formed by one 1D residual neural network
+and one 2D residual neural network. Blindly tested in the latest CASP competition
 (i.e. CASP12 [@url:http://www.predictioncenter.org/casp12/rrc_avrg_results.cgi]),
 RaptorX-Contact ranked first in F1 score (a widely-used performance metric
 combining sensitivity and specificity) on free-modeling targets as well as the
@@ -478,10 +478,10 @@ exploitation of contact occurrence patterns by simultaneously predicting all
 the contacts in a single protein.
 
 Taken together, *ab initio* folding is becoming much easier with the advent
-of direct evolutionary coupling analysis and deep learning techniques. 
+of direct evolutionary coupling analysis and deep learning techniques.
 We believe it is still possible to further improve contact
 prediction for proteins with fewer than 1000 homologs by studying new deep
-network architectures. However, it is unclear whether there is an effective way 
+network architectures. However, it is unclear whether there is an effective way
 to use deep learning to improve prediction for proteins with almost no sequence homologs.
 Finally, the deep learning methods summarized above also apply to interfacial
 contact prediction for protein complexes, but may be less effective since on
@@ -616,7 +616,7 @@ also great interest in identifying and annotating sequence reads [@tag:yok
 @tag:Soueidan]. However, the focus on taxonomic/functional annotation is just
 the first step. Several groups have proposed methods to determine host or
 environment phenotypes from the organisms that are identified [@tag:Guetterman
-@tag:Knights @tag:Stratnikov @tag:Segata] or overall sequence compsition
+@tag:Knights @tag:Stratnikov @tag:Segata] or overall sequence composition
 [@tag:Ding]. Also, researchers have looked into how feature selection can
 improve classification [@tag:Liu @tag:Segata], and techniques have been proposed
 that are classifier-independent [@tag:Ditzler @tag:Ditzler2].
@@ -638,18 +638,18 @@ learning is deeply rooted in functional classification methods.
 One of the first techniques of *de novo* genome binning used self-organizing
 maps, a type of NN [@tag:Abe]. Essinger et al. used Adaptive Resonance Theory
 (ART) to cluster similar genomic fragments and showed that it had better
-performance than K-means. However, other methods based on interpolated Markov
-models [@tag:Salzberg] have performed better than these early genome binners.
-Neural networks can be slow, and therefore, have had limited use for
-reference-based taxonomic classification, with TAC-ELM [@tag:TAC-ELM] being the
-only NN-based algorithm to taxonomically classify massive amounts of metagenomic
-data. Also, neural networks can fail to perform if there are not enough training
-examples, which is the case with taxonomic classification (since only ~10% of
-estimated species have been sequenced). An initial study successfully applied
-neural networks to taxonomic classification of 16S rRNA genes, with
-convolutional networks providing about 10% accuracy genus-level improvement over
-RNNs and even random forests [@tag:Mrzelj]. However, this study performed
-10-fold cross-validation on only 3000 sequences.
+performance than K-means [@tag:Essinger2010_taxonomic]. However, other methods
+based on interpolated Markov models [@tag:Salzberg] have performed better than
+these early genome binners. Neural networks can be slow, and therefore, have had
+limited use for reference-based taxonomic classification, with TAC-ELM
+[@tag:TAC-ELM] being the only NN-based algorithm to taxonomically classify
+massive amounts of metagenomic data. Also, neural networks can fail to perform
+if there are not enough training examples, which is the case with taxonomic
+classification (since only ~10% of estimated species have been sequenced). An
+initial study successfully applied neural networks to taxonomic classification
+of 16S rRNA genes, with convolutional networks providing about 10% accuracy
+genus-level improvement over RNNs and even random forests [@tag:Mrzelj].
+However, this study performed 10-fold cross-validation on only 3000 sequences.
 
 Neural network uses for classifying phenotype from microbial composition are
 just beginning. A standard multi-layer perceptron (MLP) was able to classify
