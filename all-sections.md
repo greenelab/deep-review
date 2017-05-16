@@ -817,23 +817,24 @@ learned by the model and whether or not a model is sufficiently interpretable to
 identify biases. We discuss the challenge of model interpretability more
 completely in the discussion section.
 
-###### Temporal Patient Trajectories
+###### Applications of Deep Learning to Longitudinal Analysis
 
-Traditionally, physician training programs justified long training hours by
-citing increased continuity of care and learning by following the progression of
-a disease over time, despite the known consequences of decreased mental acuity and
-quality of life [@XJw23xy0; @wzfGJdXI; @nPRpl05n; @17hjNSIIc]. Yet, a common practice in EHR-based
-research is to take a point in time snapshot and convert patient data to a
-traditional vector for machine learning and statistical analysis. This results
-in significant signal losses as timing and order of events provide insight into
-a patient's disease and treatment. Efforts to account for the order of events
-have shown promise [@ogs3PPp7] but require exceedingly large
-patient sizes due to discrete combinatorial bucketing. Lasko et al.
-[@FLX0o7bL] used autoencoders on longitudinal sequences
-of serum urine acid measurements to identify population subtypes. More recently,
-deep learning has shown promise working with both sequences (Convolutional
-Neural Networks) [@Ohd1Q9Xw] and the incorporation of past and current
-state (Recurrent Neural Networks, Long Short Term Memory
+Traditional longitudinal analysis of large population cohorts, that have been
+prospectively followed either from birth, or the onset of particular conditions,
+have yielded important insights into the development of disease, and the factors
+contributing to health status, for example the Farmingham Heart Study in the
+US, and the Avon Longitudinal Study of Parents and Children in the UK. Yet, a
+common practice in EHR-based research is to take a point in time snapshot and
+convert patient data to a traditional vector for machine learning and statistical
+analysis. This results in significant signal losses as timing and order of events
+provide insight into a patient's disease and treatment [@6RHepB1T].
+Efforts to account for the order of events have shown promise [@ogs3PPp7]
+but require exceedingly large patient sizes due to discrete combinatorial
+bucketing. Lasko et al. [@FLX0o7bL] used autoencoders on
+longitudinal sequences of serum urine acid measurements to identify population
+subtypes. More recently, deep learning has shown promise working with both
+sequences (Convolutional Neural Networks) [@Ohd1Q9Xw] and the incorporation
+of past and current state (Recurrent Neural Networks, Long Short Term Memory
 Networks)[@HRXii6Ni]. This may be a particular area of opportunity for
 deep neural networks. The ability to discover relevant sequences of events from
 a large number of trajectories requires powerful and flexible feature construction
