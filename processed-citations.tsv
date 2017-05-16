@@ -80,6 +80,7 @@ text	citation	standard_citation	citation_id
 @doi:10.1038/nature21056	doi:10.1038/nature21056	doi:10.1038/nature21056	XnYNYoYB
 @doi:10.1038/nbt.3313	doi:10.1038/nbt.3313	doi:10.1038/nbt.3313	yXqhuueV
 @doi:10.1038/nbt.3780	doi:10.1038/nbt.3780	doi:10.1038/nbt.3780	Qh7xTLwz
+@doi:10.1038/ncomms13090	doi:10.1038/ncomms13090	doi:10.1038/ncomms13090	8SMDF816
 @doi:10.1038/ncomms5022	doi:10.1038/ncomms5022	doi:10.1038/ncomms5022	ogs3PPp7
 @doi:10.1038/ncomms5308	doi:10.1038/ncomms5308	doi:10.1038/ncomms5308	TDruxF1s
 @doi:10.1038/ng.3830	doi:10.1038/ng.3830	doi:10.1038/ng.3830	194IoYUs3
@@ -331,6 +332,7 @@ text	citation	standard_citation	citation_id
 @tag:Ngiam2011	url:https://ai.stanford.edu/~ang/papers/icml11-MultimodalDeepLearning.pdf	url:https://ai.stanford.edu/~ang/papers/icml11-MultimodalDeepLearning.pdf	1eN66lwn
 @tag:Nguyen2014_adversarial	arxiv:1412.1897v4	arxiv:1412.1897v4	1AkF8Wsv7
 @tag:Nie2016_3d_survival	doi:10.1007/978-3-319-46723-8_25	doi:10.1007/978-3-319-46723-8_25	18EpaZ7QB
+@tag:Nih_curiosity	url:https://www.nigms.nih.gov/Education/Documents/curiosity.pdf	url:https://www.nigms.nih.gov/Education/Documents/curiosity.pdf	ru0hjGeQ
 @tag:Olivecrona2017_drug_design	arxiv:1704.07555	arxiv:1704.07555	1EayJRsI
 @tag:Papernot2017_pate	url:https://openreview.net/forum?id=HkwoSDPgg	url:https://openreview.net/forum?id=HkwoSDPgg	b8DJ1u6W
 @tag:Park2016_deepmirgene	arxiv:1605.00017	arxiv:1605.00017	1TeyWffV

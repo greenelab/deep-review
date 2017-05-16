@@ -39693,6 +39693,131 @@
     "id": "fSpvdh5l"
   },
   {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          5,
+          13
+        ]
+      ],
+      "date-time": "2017-05-13T10:16:35Z",
+      "timestamp": 1494670595478
+    },
+    "reference-count": 70,
+    "publisher": "Springer Nature",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Nat Comms"
+    ],
+    "DOI": "10.1038/ncomms13090",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          10,
+          7
+        ]
+      ],
+      "date-time": "2016-10-07T09:17:09Z",
+      "timestamp": 1475831829000
+    },
+    "page": "13090",
+    "source": "Crossref",
+    "is-referenced-by-count": 2,
+    "title": "Multi-omics integration accurately predicts cellular state in unexplored conditions for Escherichia coli",
+    "prefix": "10.1038",
+    "volume": "7",
+    "author": [
+      {
+        "given": "Minseung",
+        "family": "Kim",
+        "affiliation": []
+      },
+      {
+        "given": "Navneet",
+        "family": "Rai",
+        "affiliation": []
+      },
+      {
+        "given": "Violeta",
+        "family": "Zorraquino",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0003-1104-7616",
+        "authenticated-orcid": false,
+        "given": "Ilias",
+        "family": "Tagkopoulos",
+        "affiliation": []
+      }
+    ],
+    "member": "339",
+    "published-online": {
+      "date-parts": [
+        [
+          2016,
+          10,
+          7
+        ]
+      ]
+    },
+    "container-title": "Nature Communications",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          10,
+          7
+        ]
+      ],
+      "date-time": "2016-10-07T09:17:10Z",
+      "timestamp": 1475831830000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          10,
+          7
+        ]
+      ]
+    },
+    "references-count": 70,
+    "alternative-id": [
+      "ncomms13090"
+    ],
+    "URL": "http://dx.doi.org/10.1038/ncomms13090",
+    "relation": {
+      "cites": []
+    },
+    "issn-type": [
+      {
+        "value": "2041-1723",
+        "type": "electronic"
+      }
+    ],
+    "subject": [
+      "Biochemistry, Genetics and Molecular Biology(all)",
+      "Physics and Astronomy(all)",
+      "Chemistry(all)"
+    ],
+    "id": "8SMDF816"
+  },
+  {
+    "URL": "https://www.nigms.nih.gov/Education/Documents/curiosity.pdf",
+    "type": "webpage",
+    "id": "ru0hjGeQ"
+  },
+  {
     "abstract": "After a more than decade-long period of relatively little research activity in the area of recurrent neural networks, several new developments will be reviewed here that have allowed substantial progress both in understanding and in technical solutions towards more efficient training of recurrent networks. These advances have been motivated by and related to the optimization issues surrounding deep learning. Although recurrent networks are extremely powerful in what they can in principle represent in terms of modelling sequences,their training is plagued by two aspects of the same issue regarding the learning of long-term dependencies. Experiments reported here evaluate the use of clipping gradients, spanning longer time ranges with leaky integration, advanced momentum techniques, using more powerful output probability models, and encouraging sparser gradients to help symmetry breaking and credit assignment. The experiments are performed on text and music data and show off the combined effects of these techniques in generally improving both training and test error.",
     "author": [
       {
