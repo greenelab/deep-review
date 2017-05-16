@@ -473,7 +473,7 @@ cases.  This realistic, continual evaluation will play a critical role in
 assessing which techniques are most promising for chemical screening and drug
 discovery.  Like formal, organized challenges such as the ENCODE-DREAM *in vivo*
 Transcription Factor Binding Site Prediction Challenge [@tag:Dream_tf_binding],
-`TODO: placeholder URL until the preprint is available` DeepChem provides a
+DeepChem provides a
 forum for the fair, critical evaluations that are not always conducted in
 individual methodological papers, which can be biased toward favoring a new
 proposed algorithm.  Likewise DragoNN (Deep RegulAtory GenOmic Neural
