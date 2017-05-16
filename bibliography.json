@@ -39818,6 +39818,152 @@
     "id": "ru0hjGeQ"
   },
   {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          5,
+          14
+        ]
+      ],
+      "date-time": "2017-05-14T01:36:43Z",
+      "timestamp": 1494725803356
+    },
+    "reference-count": 51,
+    "publisher": "Springer Nature",
+    "issue": "1",
+    "funder": [
+      {
+        "DOI": "10.13039/501100003399",
+        "name": "Science and Technology Commission of Shanghai Municipality",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "16JC1404300"
+        ]
+      },
+      {
+        "DOI": "10.13039/501100001809",
+        "name": "National Natural Science Foundation of China",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "31628003",
+          "61671288"
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "BMC Bioinformatics"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2017,
+          12
+        ]
+      ]
+    },
+    "DOI": "10.1186/s12859-017-1561-8",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          2,
+          28
+        ]
+      ],
+      "date-time": "2017-02-28T14:18:56Z",
+      "timestamp": 1488291536000
+    },
+    "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "RNA-protein binding motifs mining with a new hybrid deep learning based cross-domain knowledge integration approach",
+    "prefix": "10.1186",
+    "volume": "18",
+    "author": [
+      {
+        "given": "Xiaoyong",
+        "family": "Pan",
+        "affiliation": []
+      },
+      {
+        "given": "Hong-Bin",
+        "family": "Shen",
+        "affiliation": []
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2017,
+          2,
+          28
+        ]
+      ]
+    },
+    "container-title": "BMC Bioinformatics",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          2,
+          28
+        ]
+      ],
+      "date-time": "2017-02-28T14:19:11Z",
+      "timestamp": 1488291551000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          2,
+          28
+        ]
+      ]
+    },
+    "references-count": 51,
+    "alternative-id": [
+      "1561"
+    ],
+    "URL": "http://dx.doi.org/10.1186/s12859-017-1561-8",
+    "relation": {
+      "has-preprint": [
+        {
+          "id-type": "doi",
+          "id": "10.1101/085191",
+          "asserted-by": "object"
+        }
+      ],
+      "cites": []
+    },
+    "issn-type": [
+      {
+        "value": "1471-2105",
+        "type": "electronic"
+      }
+    ],
+    "subject": [
+      "Biochemistry",
+      "Molecular Biology",
+      "Computer Science Applications"
+    ],
+    "article-number": "136",
+    "id": "qnKdqG0P"
+  },
+  {
     "abstract": "After a more than decade-long period of relatively little research activity in the area of recurrent neural networks, several new developments will be reviewed here that have allowed substantial progress both in understanding and in technical solutions towards more efficient training of recurrent networks. These advances have been motivated by and related to the optimization issues surrounding deep learning. Although recurrent networks are extremely powerful in what they can in principle represent in terms of modelling sequences,their training is plagued by two aspects of the same issue regarding the learning of long-term dependencies. Experiments reported here evaluate the use of clipping gradients, spanning longer time ranges with leaky integration, advanced momentum techniques, using more powerful output probability models, and encouraging sparser gradients to help symmetry breaking and credit assignment. The experiments are performed on text and music data and show off the combined effects of these techniques in generally improving both training and test error.",
     "author": [
       {
