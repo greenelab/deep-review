@@ -1,32 +1,32 @@
-## How is deep learning used to study basic biological processes in a manner that may provide future insights into human disease?
+## Deep learning to study the fundamental biological processes underlying human disease
 
-*The (awkward) placeholder section title is intended to help define the scope.
-We do not want this section to become a miscellaneous collection of everything
-that does not fit in Categorize and Treat.*
+The study of cellular structure and core biological processes -- transcription,
+translation, signaling, metabolism, etc. -- in humans and model organisms will
+greatly impact our understanding of human disease over the long horizon
+[@tag:Nih_curiosity]. Predicting how cellular systems are altered by genetic
+variation and respond to environmental perturbations remain daunting tasks. Deep
+learning offers new approaches for modeling biological processes and integrating
+multiple types of omic data [@doi:10.1038/ncomms13090], which could eventually
+help predict how these processes are disrupted in disease. Recent work has
+already advanced our ability to identify and interpret genetic variants, study
+microbial communities, and predict protein structures (which relates to the
+problems discussed in the drug development section). In addition, unsupervised
+deep learning has enormous potential for discovering novel cellular states from
+gene expression, fluorescence microscopy, and other types of data that
+ultimately prove to be clinically relevant.
 
-*One proposal is that we organize this roughly by what is being predicted,
-which will generally correspond to the types of data being used.  For each
-sub-section we can quickly introduce the prediction problem and cite some
-examples of the relevance to disease.  Hypothetically, if we had an algorithm
-that produced perfect predictions on the task, what would we learn and how
-could those predictions be used?*
-
-*Existing reviews could be mentioned briefly.*
-
-*It may not fit here, but there could be a general discussion of why different
-neural network architectures are particularly well-suited for different types
-of input data.  For example, CNNs and RNNs for 1-dimensional data are used
-in several categories below.*
-
-*A few suggestions for sub-sections follow.  Some of these could be left out
-because our goal is not an exhaustive enumeration of methods.  Some
-are important areas of biology, but there may not be much deep learning-
-specific content to present.  Others may be important areas where we lack
-expertise, in which case we may acknowledge the application area but not
-dive into merits or weaknesses of individual methods.*
-
-`TODO: dropped signaling subsection, decide whether to discuss in intro
-and why it has received less attention, @tag:Chen2015_trans_species as example`
+Progress has been rapid in genomics and imaging, fields where important tasks
+are readily adapted to well-established deep learning paradigms.  One
+dimensional convolutional and recurrent neural networks are well-suited for
+important problems in protein binding of DNA and RNA, epigenomics, and RNA
+splicing.  Two dimensional CNNs are ideal for segmentation, feature extraction,
+and  classification in fluorescence microscopy images
+[@doi:10.3109/10409238.2015.1135868]. Other areas, such as cellular signaling,
+are biologically important but studied less-frequently to date
+[@tag:Chen2015_trans_species].  This may be a consequence of data limitations or
+greater challenges in adapting neural network architectures to the available
+data.  Here, we highlight several areas of investigation and assess how deep
+learning can move these fields forward.
 
 ### Gene expression
 
