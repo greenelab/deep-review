@@ -709,19 +709,19 @@ the next few years.
 
 ### Metagenomics
 
-Metagenomics, which refers to the study of genetic material, 16S rRNA and/or
-whole-genome shotgun DNA from microbial communities, has revolutionized the
+Metagenomics, which refers to the study of genetic material -- 16S rRNA and/or
+whole-genome shotgun DNA -- from microbial communities, has revolutionized the
 study of micro-scale ecosystems within us and around us. In recent years,
 machine learning has proved to be a powerful tool for metagenomic analysis. 16S
 rRNA has long been used to deconvolve mixtures of microbial genomes, yet this
-ignores >99% of all reads. Subsequent tools aimed to classify 300-3000bp reads
+ignores >99% of the genomic content. Subsequent tools aimed to classify 300-3000bp reads
 from complex mixtures of microbial genomes based on tetranucleotide frequencies
 (which are characteristic for different organisms [@tag:Karlin]) using
 supervised [@tag:McHardy @tag:nbc] or unsupervised methods such as
 self-organizing maps (SOM) [@tag:Abe]. Then, researchers began to use techniques
 that could estimate relative abundances from an entire sample, which is much
 faster than classifying individual reads [@tag:Metaphlan @tag:wgsquikr
-@tag:lmat]. There is also great interest in identifying and annotating sequence
+@tag:lmat @tag:Vervier]. There is also great interest in identifying and annotating sequence
 reads [@tag:yok @tag:Soueidan]. However, the focus on taxonomic/functional
 annotation is just the first step. Several groups have proposed methods to
 determine host or environment phenotypes from the organisms that are identified
@@ -737,17 +737,16 @@ networks have been applied successfully to gene annotation (e.g. Orphelia
 [@tag:Hoff] and FragGeneScan [@doi:10.1093/nar/gkq747]), which usually has
 plenty of training examples.  Representations (similar to Word2Vec
 [@tag:Word2Vec] in natural language processing) for protein family
-classification has been introduced and classified with a skip-gram neural
+classification have been introduced and classified with a skip-gram neural
 network [@tag:Asgari]. Recurrent neural networks show good performance for
 homology and protein family identification [@tag:Hochreiter @tag:Sonderby].
 Interestingly, Hochreiter, who invented Long Short Term Memory (LSTM), delved
 into homology/protein family classification in 2007, and therefore, deep
 learning is deeply rooted in functional classification methods.
 
-One of the first techniques of “de novo” genome binning used self-organizing
-maps, a type of NN [@tag:Abe]. Essinger et al. use ART, a neural network
-algorithm called Adaptive Resonance Theory, to cluster similar genomic fragments
-and showed that it has better performance than K-means. However, other methods
+One of the first techniques of *de novo* genome binning used self-organizing
+maps, a type of NN. Essinger et al. used Adaptive Resonance Theory (ART) to cluster similar genomic fragments
+and showed that it had better performance than K-means. However, other methods
 based on interpolated Markov models [@tag:Salzberg] have performed better than
 these early genome binners. Neural networks can be slow, and therefore, have had
 limited use for reference-based taxonomic classification, with TAC-ELM
@@ -774,7 +773,7 @@ diagnosing disease [@tag:Faruqi].
 
 Challenges remain in applying deep neural networks to metagenomics problems.
 They are not yet ideal for phenotype classification because most studies contain
-tens of samples (~20-40) and hundreds or thousands of features (aka species).
+tens of samples and hundreds or thousands of features (aka species).
 Such underdetermined, or ill-conditioned, problems are still a challenge for
 deep neural networks that require many more training examples than features to
 sufficiently converge the weights on the hidden layers. Also, due to convergence
