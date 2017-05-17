@@ -150,12 +150,9 @@ sample may have millions of measurements (genotypes and other omics data, lab
 tests etc).*
 
 *Classical machine learning recommendations were to have 10x samples per number
-of parameters in the model.*
-
-*Number of parameters in an MLP - convolutions and similar strategies help but
-do not solve*
-
-*Bengio diet networks paper*
+of parameters in the model. Number of parameters in an MLP.
+Convolutions and similar strategies help but do not solve.
+Bengio diet networks paper*
 
 
 ### Hardware limitations and scaling
