@@ -2423,54 +2423,83 @@ frameworks, as applicable?`
 ### Data limitations
 
 A lack of large-scale, high-quality, correctly labeled training data has
-impacted deep
-learning in nearly all applications we have discussed, from healthcare to
-genomics to drug discovery.  The challenges of training complex, high-parameter
-neural networks from few examples are obvious, but uncertainty in the labels of
-those examples can be just as problematic.  For example, in genomics
-labeled data may be derived from an experimental assay with known and
+impacted deep learning in nearly all applications we have discussed, from
+healthcare to genomics to drug discovery.  The challenges of training complex,
+high-parameter neural networks from few examples are obvious, but uncertainty in
+the labels of those examples can be just as problematic.  For example, in
+genomics labeled data may be derived from an experimental assay with known and
 unknown technical artifacts, biases, and error profiles.  It is possible to
 weight training examples or construct Bayesian models to account for uncertainty
 or non-independence in the data. To this end, Park et al.
 [@5tvnB4uW] estimated shared non-biological signal
 between datasets to correct for non-independence related to assay platform or
 other factors in a Bayesian integration of many datasets. However, such
-techniques are rarely placed front and center in any description of methods,
-and so may be easily overlooked.
+techniques are rarely placed front and center in any description of methods, and
+so may be easily overlooked.
 
 For some types of data, especially images, it is straightforward to augment
 training datasets by splitting a single labeled example into multiple examples.
-For example, an
-image can easily be rotated, flipped, or translated and retain its label
-[@9G9Hv1Pp].  3D MRI and 4D fMRI (with time as a dimension) data can
-be decomposed into sets of 2D images [@11NHbWB1V]. This can greatly
-expand the number of training examples
-but artificially treats such derived images as independent
-instances and sacrifices the structure inherent in the data.  CellCnn trains a
-model to recognize rare cell populations in single-cell data by creating
-training instances that consist of random subsets of cells that are randomly
-sampled with replacement from the full dataset [@r3Gbjksq].
+For example, an image can easily be rotated, flipped, or translated and retain
+its label [@9G9Hv1Pp].  3D MRI and 4D fMRI (with time as a dimension)
+data can be decomposed into sets of 2D images [@11NHbWB1V]. This can
+greatly expand the number of training examples but artificially treats such
+derived images as independent instances and sacrifices the structure inherent in
+the data.  CellCnn trains a model to recognize rare cell populations in
+single-cell data by creating training instances that consist of random subsets
+of cells that are randomly sampled with replacement from the full dataset
+[@r3Gbjksq].
 
-Simulated or semi-synthetic training data has also been employed in multiple
-biomedical domains. `TODO:  simulated data: #5 #99 #293, maybe #117 and #197.
-There is a counter-example from drug discovery to include as well
-that is related to #55`
+Simulated or semi-synthetic training data has been employed in multiple
+biomedical domains, though many of these ideas are not specific to deep
+learning.  Training and evaluating on simulated data, for instance, generating
+synthetic TF binding sites with position weight matrices
+[@iEmvzeT8] or RNA-seq reads for predicting mRNA
+transcript boundaries [@2M3zXijc], is a standard practice in
+bioinformatics.  This strategy can help benchmark algorithms when the available
+gold standard dataset are imperfect, but it should be paired with an evaluation
+on real data, as in the prior examples [@iEmvzeT8; @2M3zXijc].  In rare cases, models trained on simulated data have
+been successfully applied directly to real data [@2M3zXijc].
+
+Simulated data can also be create negative examples when only positive training
+instances are available.  DANN [@15E5yG1Ho] adopts this
+approach to predict the pathogenicity of genetic variants using semi-synthetic
+training data from Combined Annotation-Dependent Depletion
+[@KxEzGxJ6].  Though our emphasis here is on the training strategy,
+it should be noted that logistic regression outperformed DANN when
+distinguishing known pathogenic mutations from likely benign variants in real
+data. Similarly, a somatic mutation caller has been trained by injecting
+mutations into real sequencing datasets [@ECTm1SuA].  This method
+was successful at detecting mutations in other semi-synthetic datasets but was
+not validated on real data.
+
+In settings where the experimental observations are biased toward positive
+instances, such as MHC protein and peptide ligand binding affinity
+[@1Hk3NTSn2], or the negative instances vastly outnumber the positives,
+such as high-throughput chemical screening [@1E0x7QgLP], training
+datasets have been augmented by adding additional instances and assuming they
+are negative.  There is some evidence that this can improve performance
+[@1E0x7QgLP], but in other cases it was only beneficial when the real
+training datasets were extremely small [@1Hk3NTSn2]. Overall, training
+with simulated and semi-simulated data is a valuable idea for overcoming limited
+sample sizes but one that requires more rigorous evaluation on real ground-truth
+datasets before we can recommend it for widespread use. There is a risk that a
+model will easily discriminate synthetic examples but not generalize to real
+data.
 
 Multimodal, multi-task, and transfer learning, discussed in detail below, can
 also combat data limitations to some degree. There are also emerging network
 architectures, such as Diet Networks for high-dimensional SNP data
-[@15JUKBg9y]. These use multiple networks to drastically
-reduce the number of free parameters by first flipping the problem and training
-a network to predict parameters (weights) for each input (SNP) to learn a
-feature embedding. This embedding (i.e. PCA, per class histograms, or a Word2vec
-[@1GhHIDxuW] generalization) can be learned directly from input data or
-take advantage of other datasets or domain knowledge. Additionally, in this
-task the features are the examples, an important advantage when it is typical to
-have 500 thousand or more SNPs and only a few thousand patients. Finally, this
-embedding is of
-a much lower dimension, allowing for a large reduction in the number of free
-parameters. In the example given, the number of free
-parameters from was reduced from 30 million to 50 thousand, a factor of 600.
+[@15JUKBg9y]. These use multiple networks to drastically reduce the
+number of free parameters by first flipping the problem and training a network
+to predict parameters (weights) for each input (SNP) to learn a feature
+embedding. This embedding (i.e. PCA, per class histograms, or a Word2vec
+[@1GhHIDxuW] generalization) can be learned directly from input data or take
+advantage of other datasets or domain knowledge. Additionally, in this task the
+features are the examples, an important advantage when it is typical to have 500
+thousand or more SNPs and only a few thousand patients. Finally, this embedding
+is of a much lower dimension, allowing for a large reduction in the number of
+free parameters. In the example given, the number of free parameters from was
+reduced from 30 million to 50 thousand, a factor of 600.
 
 ### Hardware limitations and scaling
 
@@ -2571,28 +2600,28 @@ sufficient data for improved methods to be developed.
 Code sharing and open source licensing is essential for continued progress in
 this domain.  We strongly advocate following established best practices for
 sharing source code, archiving code in repositories that generate digital object
-identifiers, and open licensing [@gvyja7v1] regardless of
-the minimal requirements, or lack thereof, set by journals, conferences, or
-preprint servers.  In addition, it is important for authors to share not only
-code for their core models but also scripts and code used for data cleaning (see
-above) and hyperparameter optimization.  These improve reproducibility and serve
-as documentation of the detailed decisions that impact model performance but may
+identifiers, and open licensing [@gvyja7v1] regardless of the
+minimal requirements, or lack thereof, set by journals, conferences, or preprint
+servers.  In addition, it is important for authors to share not only code for
+their core models but also scripts and code used for data cleaning (see above)
+and hyperparameter optimization.  These improve reproducibility and serve as
+documentation of the detailed decisions that impact model performance but may
 not be exhaustively captured in a manuscript's methods text.
 
 Because many deep learning models are often built using one of several popular
-software frameworks, it is also possible to directly share trained
-predictive models.  The availability of pre-trained models can accelerate
-research, with image classifiers as an apt example.  A pre-trained neural
-network can be quickly fine-tuned on new data and used in transfer learning,
-as discussed below.  Taking this idea to the extreme, genomic data has been
-artificially encoded as images in order to benefit from pre-trained image
-classifiers [@FVfZESYP]. "Model zoos" -- collections of
-pre-trained models -- are not yet common in biomedical domains but have
-started to
-appear in genomics applications [@19EJTHByG; @117PEpTMe].  Sharing models for patient data requires great care because deep
-learning models can be attacked to identify examples used in training.  We
-discuss this issue as well as recent techniques to mitigate these concerns in
-the patient categorization section.
+software frameworks, it is also possible to directly share trained predictive
+models.  The availability of pre-trained models can accelerate research, with
+image classifiers as an apt example.  A pre-trained neural network can be
+quickly fine-tuned on new data and used in transfer learning, as discussed
+below.  Taking this idea to the extreme, genomic data has been artificially
+encoded as images in order to benefit from pre-trained image classifiers
+[@FVfZESYP]. "Model zoos" -- collections of pre-trained models --
+are not yet common in biomedical domains but have started to appear in genomics
+applications [@19EJTHByG; @117PEpTMe].  Sharing models
+for patient data requires great care because deep learning models can be
+attacked to identify examples used in training.  We discuss this issue as well
+as recent techniques to mitigate these concerns in the patient categorization
+section.
 
 DeepChem [@P4ixsM8i; @Ytvk62dX; @16OPHvAij]
 and DragoNN [@117PEpTMe] exemplify the benefits of sharing pre-trained models
@@ -2605,18 +2634,17 @@ cases.  This realistic, continual evaluation will play a critical role in
 assessing which techniques are most promising for chemical screening and drug
 discovery.  Like formal, organized challenges such as the ENCODE-DREAM *in vivo*
 Transcription Factor Binding Site Prediction Challenge [@wW6QbBXz],
-`TODO: placeholder URL until the preprint is available` DeepChem provides a
-forum for the fair, critical evaluations that are not always conducted in
-individual methodological papers, which can be biased toward favoring a new
-proposed algorithm.  Likewise DragoNN (Deep RegulAtory GenOmic Neural
-Networks), offers
-not only code and a model zoo but also a detailed tutorial and partner package
-for simulating training data.  These resources, especially the ability to
-simulate datasets that are sufficiently complex to demonstrate the challenges of
-training neural networks but small enough to train quickly on a CPU, are
-important for (human) training and attracting machine learning researchers to
-problems in genomics and healthcare.  We have even included DragoNN and hands-on
-model training into the curriculum of a graduate student course.
+DeepChem provides a forum for the fair, critical evaluations that are not always
+conducted in individual methodological papers, which can be biased toward
+favoring a new proposed algorithm.  Likewise DragoNN (Deep RegulAtory GenOmic
+Neural Networks), offers not only code and a model zoo but also a detailed
+tutorial and partner package for simulating training data.  These resources,
+especially the ability to simulate datasets that are sufficiently complex to
+demonstrate the challenges of training neural networks but small enough to train
+quickly on a CPU, are important for (human) training and attracting machine
+learning researchers to problems in genomics and healthcare.  We have even
+included DragoNN and hands-on model training into the curriculum of a graduate
+student course.
 
 ### Multimodal, multi-task, and transfer learning
 
