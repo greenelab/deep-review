@@ -70,13 +70,12 @@ artificial intelligence becomes standard in the laboratory and in the clinic,
 the human factor still has a critical role to play. In some cases, cooperation
 between human experts and deep learning algorithms can achieve better
 performance than either individually [@arxiv:1606.05718]. Especially for sample
-and patient classification tasks, we expect deep learning methods to
-complement and assist biomedical researchers rather than compete with or even
-replace them.
+and patient classification tasks, we expect deep learning methods to complement
+and assist biomedical researchers rather than compete with or even replace them.
 
 Even if deep learning in biology and healthcare is not yet transformative today,
-we are extremely optimistic about its future. Given how rapidly deep learning
-is evolving, its full potential in biomedicine has not been explored.  We have
+we are extremely optimistic about its future. Given how rapidly deep learning is
+evolving, its full potential in biomedicine has not been explored.  We have
 highlighted numerous challenges beyond improving training and predictive
 accuracy, such as preserving patient privacy and interpreting models.  Ongoing
 research has begun to address these problems and shown they are not

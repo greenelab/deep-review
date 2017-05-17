@@ -38,13 +38,13 @@ include actionable interpretability of deep learning models, fitting deep models
 to limited and heterogeneous data, and integrating complex predictive models
 into a dynamic clinical environment.
 
-A critical challenge in moving from prediction to treatment recommendations
-is the necessity to establish a causal relationship for a recommendation.
-Causal inference is often framed in terms of counterfactual question
+A critical challenge in moving from prediction to treatment recommendations is
+the necessity to establish a causal relationship for a recommendation. Causal
+inference is often framed in terms of counterfactual question
 [@doi:10.1037/h0037350]. Johansson et al. [@arxiv:1605.03661] use deep neural
 networks to create representation models for covariates that capture nonlinear
-effects and show significant performance improvements over existing models. In
-a less formal approach, Kale et al. [@pmid:26958203] first create a deep neural
+effects and show significant performance improvements over existing models. In a
+less formal approach, Kale et al. [@pmid:26958203] first create a deep neural
 network to model clinical time series and then analyze the relationship of the
 hidden features to the output using a causal approach.
 
@@ -52,46 +52,44 @@ hidden features to the output using a causal approach.
 
 ##### Trajectory prediction for treatment
 
-A common application for deep learning techniques in this domain is to
-leverage the temporal structure of healthcare records. As previously
-discussed, many studies [@tag:Lipton2016_missing
-@tag:Che2016_rnn @tag:Huddar2016_predicting @tag:Lipton2015_lstm]
-have used deep recurrent networks to categorize patients but most stop short
-of suggesting clinical decisions. Nemati et al. [@tag:Nemati2016_rl]
-used deep reinforcement learning to optimize a heparin dosing policy for
-intensive care patients. However, because the ideal dosing policy is unknown,
-the model's predictions must be evaluated on counter-factual data. This
-represents a common challenge when bridging the gap between research and
-clinical practice: because the ground-truth is unknown, researchers struggle
+A common application for deep learning techniques in this domain is to leverage
+the temporal structure of healthcare records. As previously discussed, many
+studies [@tag:Lipton2016_missing @tag:Che2016_rnn @tag:Huddar2016_predicting
+@tag:Lipton2015_lstm] have used deep recurrent networks to categorize patients
+but most stop short of suggesting clinical decisions. Nemati et al.
+[@tag:Nemati2016_rl] used deep reinforcement learning to optimize a heparin
+dosing policy for intensive care patients. However, because the ideal dosing
+policy is unknown, the model's predictions must be evaluated on counter-factual
+data. This represents a common challenge when bridging the gap between research
+and clinical practice: because the ground-truth is unknown, researchers struggle
 to evaluate model predictions in the absence of interventional data, but
 clinical application is unlikely until the model has been shown to be effective.
 The impressive applications of deep reinforcement learning to other domains
-[@tag:Silver2016_alphago] have relied on knowledge of the underlying
-processes (e.g. the rules of the game). Some models have been developed for
-targeted medical problems [@tag:Gultepe2014_sepsis], but a
-generalized engine is beyond current capabilities. Further development of the
-rules underlying biological processes could unleash deep learning methods that
-are currently hampered by the difficulties of counter-factual inference.
+[@tag:Silver2016_alphago] have relied on knowledge of the underlying processes
+(e.g. the rules of the game). Some models have been developed for targeted
+medical problems [@tag:Gultepe2014_sepsis], but a generalized engine is beyond
+current capabilities. Further development of the rules underlying biological
+processes could unleash deep learning methods that are currently hampered by the
+difficulties of counter-factual inference.
 
 ##### Efficient clinical trials
 
-A clinical task to deep learning which has been more successfully applied is
-the assignment of patients to clinical trials. Ithapu et al
-[@tag:Ithapu2015_efficient] used a randomized denoising autoencoder
-to learn a multimodal imaging marker that predicts future cognitive
-and neural decline from positron emission tomography (PET), amyloid
-florbetapir PET, and structural magnetic resonance imaging.
-By accurately predicting which cases will progress to dementia, they
-were able to efficiently assign patients to a clinical trial and reduced
-the required sample sizes by a factor of five.  Similarly, Artemov et al
-[@tag:Artemov2016_clinical] applied deep learning to predict which
+A clinical task to deep learning which has been more successfully applied is the
+assignment of patients to clinical trials. Ithapu et al
+[@tag:Ithapu2015_efficient] used a randomized denoising autoencoder to learn a
+multimodal imaging marker that predicts future cognitive and neural decline from
+positron emission tomography (PET), amyloid florbetapir PET, and structural
+magnetic resonance imaging. By accurately predicting which cases will progress
+to dementia, they were able to efficiently assign patients to a clinical trial
+and reduced the required sample sizes by a factor of five.  Similarly, Artemov
+et al [@tag:Artemov2016_clinical] applied deep learning to predict which
 clinical trials were likely to fail and which were likely to succeed. By
-predicting the side effects and pathway activations of each drug, and
-then translating these activations to a success probability, their deep
-learning-based approach was able to significantly outperform a random
-forest classifier trained on gene expression changes. These approaches
-suggest promising directions to improve the efficiency of clinical trials
-and accelerate drug development.
+predicting the side effects and pathway activations of each drug, and then
+translating these activations to a success probability, their deep
+learning-based approach was able to significantly outperform a random forest
+classifier trained on gene expression changes. These approaches suggest
+promising directions to improve the efficiency of clinical trials and accelerate
+drug development.
 
 #### Challenges
 
@@ -99,18 +97,17 @@ and accelerate drug development.
 
 A common challenge in many applied deep learning problems is the consideration
 of deep learning models as uninterpretable "black boxes". Without human-
-intelligible reasoning for the model's predictions, it is difficult to trust
-the model. This presents a major challenge for the risk-averse task of
-clinical decision making. As described above, there has been some work to
-directly assign treatment plans without interpretability; however, the removal
-of human experts from the decision-making loop make the models difficult to
-integrate with clinical practice. To alleviate this challenge, several studies
-have attempted to create more interpretable deep models, either specifically
-for healthcare or as a general procedure for deep learning.  Further work in
-interpreting predictions and understanding the knowledge learned by deep neural
-networks seem necessary for transformative impact in clinical practice.
-Interpretability in deep learning is reviewed more extensively in the
-Discussion.
+intelligible reasoning for the model's predictions, it is difficult to trust the
+model. This presents a major challenge for the risk-averse task of clinical
+decision making. As described above, there has been some work to directly assign
+treatment plans without interpretability; however, the removal of human experts
+from the decision-making loop make the models difficult to integrate with
+clinical practice. To alleviate this challenge, several studies have attempted
+to create more interpretable deep models, either specifically for healthcare or
+as a general procedure for deep learning.  Further work in interpreting
+predictions and understanding the knowledge learned by deep neural networks seem
+necessary for transformative impact in clinical practice. Interpretability in
+deep learning is reviewed more extensively in the Discussion.
 
 ##### Integrating deep learning with clinical practice
 
@@ -118,19 +115,18 @@ As deep learning models are difficult to interpret, many current models have
 been designed to replace aspects of clinical practice rather than to assist
 trained clinicians. This makes it difficult to integrate deep learning with
 clinical decision making. In addition, the challenges that physicians face are
-largely similar to those faced by machine learning models. For a given
-patient, the number of possible diseases is very large, with a long tail of
-rare diseases. Furthermore, patients are highly heterogeneous and may present
-with very different signs and symptoms for the same disease. Physicians are
+largely similar to those faced by machine learning models. For a given patient,
+the number of possible diseases is very large, with a long tail of rare
+diseases. Furthermore, patients are highly heterogeneous and may present with
+very different signs and symptoms for the same disease. Physicians are
 experienced in treating patients with common diseases, but rare diseases are
-extremely challenging. Unfortunately, machine learning methods also struggle
-for rare diseases. Directly
-applying current deep learning models to diagnose patients with rare diseases
-would require prohibitively large datasets to provide sufficient training data
-to capture the rare instances. Focused effort in reducing the
-data requirements of deep learning by integrating pre-existing knowledge or
-compiling large datasets of patient records may unlock the power of deep
-learning for clinical practice.
+extremely challenging. Unfortunately, machine learning methods also struggle for
+rare diseases. Directly applying current deep learning models to diagnose
+patients with rare diseases would require prohibitively large datasets to
+provide sufficient training data to capture the rare instances. Focused effort
+in reducing the data requirements of deep learning by integrating pre-existing
+knowledge or compiling large datasets of patient records may unlock the power of
+deep learning for clinical practice.
 
 ### Drug repositioning
 
@@ -140,22 +136,20 @@ more traditional drug discovery approaches [@doi:10.1016/j.jhealeco.2016.01.012
 @doi:10.1038/nrd4609]. A decade ago, the concept of the Connectivity Map
 [@doi:10.1126/science.1132939] had a sizeable impact on the field: reverse
 matching disease gene expression signatures with a large set of reference
-compound profiles allowed to formulate repurposing hypotheses at scale
-using a simple non-parametric test. Since then, several advanced computational
-methods have been applied to formulate and validate drug repositioning
-hypotheses [@doi:10.1093/bib/bbv020 @doi:10.1093/bib/bbw112
-@doi:10.1093/bib/bbw110]. Using supervised learning and collaborative filtering
-to tackle this type of problems is proving successful in different scenarios,
-especially when coupling disease or compound omic data with topological
-information from protein-protein or protein-compound interaction networks
-[@doi:10.1186/1758-2946-5-30 @doi:10.1021/ci500340n
-@doi:10.1186/s12859-015-0845-0].
+compound profiles allowed to formulate repurposing hypotheses at scale using a
+simple non-parametric test. Since then, several advanced computational methods
+have been applied to formulate and validate drug repositioning hypotheses
+[@doi:10.1093/bib/bbv020 @doi:10.1093/bib/bbw112 @doi:10.1093/bib/bbw110]. Using
+supervised learning and collaborative filtering to tackle this type of problems
+is proving successful in different scenarios, especially when coupling disease
+or compound omic data with topological information from protein-protein or
+protein-compound interaction networks [@doi:10.1186/1758-2946-5-30
+@doi:10.1021/ci500340n @doi:10.1186/s12859-015-0845-0].
 
-For example, Menden et al. [@doi:10.1371/journal.pone.0061318] used a
-shallow neural network
-to predict sensitivity of cancer cell lines to drug treatment using both cell
-line and drug features, opening the door to precision medicine and drug
-repositioning opportunities in cancer. More recently, Aliper et al
+For example, Menden et al. [@doi:10.1371/journal.pone.0061318] used a shallow
+neural network to predict sensitivity of cancer cell lines to drug treatment
+using both cell line and drug features, opening the door to precision medicine
+and drug repositioning opportunities in cancer. More recently, Aliper et al
 [@doi:10.1021/acs.molpharmaceut.6b00248] used gene- and pathway-level drug
 perturbation transcriptional profiles from the Library of Network-Based Cellular
 Signatures (LINCS) [@doi:10.3389/fgene.2014.00342] to train a fully connected
@@ -166,21 +160,21 @@ such as otenzepad and pinacidil for neurological disorders.
 
 Drug repositioning can also be approached by attempting to predict novel
 drug-target interactions and then repurposing the drug for the associated
-indication [@doi:10.1371/journal.pcbi.1005219 @doi:10.1371/journal.pcbi.1005135].
-Wang et al. [@doi:10.1109/BIBM.2014.6999129] devised a pairwise input neural
-network with two hidden layers that takes two inputs, a drug and a target
-binding site, and predicts whether they interact. Wang et al
-[@doi:10.1093/bioinformatics/btt234] trained individual RBMs for each target in
-a drug-target interaction network and used these models to predict novel
-interactions pointing to new indications for existing drugs. Wen et al.
+indication [@doi:10.1371/journal.pcbi.1005219
+@doi:10.1371/journal.pcbi.1005135]. Wang et al. [@doi:10.1109/BIBM.2014.6999129]
+devised a pairwise input neural network with two hidden layers that takes two
+inputs, a drug and a target binding site, and predicts whether they interact.
+Wang et al [@doi:10.1093/bioinformatics/btt234] trained individual RBMs for each
+target in a drug-target interaction network and used these models to predict
+novel interactions pointing to new indications for existing drugs. Wen et al.
 [@doi:10.1021/acs.jproteome.6b00618] extended this concept to deep learning by
 creating a DBN of stacked RBMs called DeepDTIs, which is able to predict
 interactions on the basis of chemical structure and protein sequence features.
 
 Drug repositioning appears to be an obvious candidate for the development of
 deep learning applications both because of the large amount of high-dimensional
-data available and the complexity of the question being asked.
-However, what is perhaps the most promising piece of work in this space
+data available and the complexity of the question being asked. However, what is
+perhaps the most promising piece of work in this space
 [@doi:10.1021/acs.molpharmaceut.6b00248] is more a proof of concept than a
 real-world hypothesis-generation tool; notably, deep learning was used to
 predict drug indications but not for the actual repositioning. At present, some
@@ -293,8 +287,8 @@ of a bit vector.  Other approaches offer trainable networks that can in theory
 learn chemical feature representations that are optimized for a particular
 prediction task.  Lusci et al. [@tag:Lusci2013_rnn] adapted recursive neural
 networks for directed acyclic graphs for undirected molecular graphs by creating
-an ensemble of directed graphs in which one atom is selected as the root node.
-A single feature vector is obtained by summing over all feature vectors for all
+an ensemble of directed graphs in which one atom is selected as the root node. A
+single feature vector is obtained by summing over all feature vectors for all
 directed graphs in the ensemble.  Graph convolutions on undirected molecular
 graphs have eliminated the need to enumerate artificial directed graphs,
 learning feature vectors for atoms that are a function of the properties of
@@ -431,8 +425,8 @@ algorithms like those discussed earlier are used. To "design" and "synthesize",
 traditional *de novo* design software relied on classical optimizers such as
 genetic algorithms. Unfortunately, this often leads to overfitted, "weird"
 molecules, which are difficult to synthesize in the lab.  To generate molecules,
-current programs have therefore settled on rule-based virtual chemical
-reactions to generate molecular structures [@doi:10.1021/acs.jmedchem.5b01849].
+current programs have therefore settled on rule-based virtual chemical reactions
+to generate molecular structures [@doi:10.1021/acs.jmedchem.5b01849].
 
 Neural network models that learn to generate realistic, synthesizable molecules
 have been proposed as an alternative to provide the large molecule sets needed
@@ -454,9 +448,9 @@ this learned continuous space it was possible to interpolate between continuous
 representations of chemicals in a manner that is not possible with discrete
 (e.g. bit vector or string) features or in symbolic, molecular graph space. Even
 more interesting is the prospect of performing gradient-based or Bayesian
-optimization of molecules within this latent space. The strategy of
-constructing simple, continuous features before applying supervised learning
-techniques is reminiscent of autoencoders trained on high-dimensional EHR data
+optimization of molecules within this latent space. The strategy of constructing
+simple, continuous features before applying supervised learning techniques is
+reminiscent of autoencoders trained on high-dimensional EHR data
 [@tag:BeaulieuJones2016_ehr_encode]. A drawback of the SMILES-to-SMILES
 autoencoder is that not all SMILES strings produced by the autoencoder's decoder
 correspond to valid chemical structures. Recently, the Grammar Variational
