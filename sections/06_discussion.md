@@ -153,8 +153,7 @@ tests etc).*
 of parameters in the model.*
 
 *Number of parameters in an MLP. Convolutions and similar strategies help but
-do
-not solve*
+do not solve*
 
 *Bengio diet networks paper*
 
