@@ -518,6 +518,15 @@ extract more subtle features through its hidden nodes. Already, there is
 evidence deep learning can surpass the efficacy of classical methods
 [@doi:10.1101/081364], even using generic deep convolutional networks trained on
 natural images [@doi:10.1101/085118], known as transfer learning.
+Recent work by Johnson et al. [@tag:Johnson2017_integ_cell] demonstrated how
+the use of a conditional adversarial autoencoder allows for a probabilistic
+interpretation of cell and nuclear morphology and structure localization from
+fluorescence images. The proposed model is able to generalize well to a wide
+range of subcellular localizations. The generative nature of the model allows it
+to produce high quality synthetic images predicting localization of subcellular
+structures by directly modeling the localization of fluorescent labels. Notably,
+this approach reduces the modeling time by omitting the subcellular structure
+segmentation step.
 
 The impact of further improvements on biomedicine could be enormous. Comparing
 cell population morphologies using conventional methods of segmentation and
