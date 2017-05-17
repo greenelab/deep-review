@@ -46,45 +46,44 @@ regards to data availability and labeling.
 
 One area where deep learning methods have had substantial success has been in
 image analysis. Applications in areas of medicine that use imaging extensively
-are also emerging. To the date, deep learning has been employed for a wide
-range of tasks in medical imaging, including classification of exams and
+are also emerging. To the date, deep learning has been employed for a wide range
+of tasks in medical imaging, including classification of exams and
 lesions/nodules, localization of organs, regions, landmarks, and lesions,
 segmentation of organs, organ substructures, and lesions, medical image
 registration, content-based image retrieval, image generation and enhancement,
 and combining image data with clinical reports [@tag:Litjens2017_medimage_survey
 @tag:Shen2017_medimg_review].
 
-Closest to natural images are applications of deep learning aimed at
-detection and recognition of melanoma, the deadliest form of skin cancer.
-Recent works included applications to both dermoscopy
-[@tag:Codella2016_ensemble_melanoma @tag:Yu2016_melanoma_resnet] and
-non-dermoscopic clinical photography images of skin lesions
-[@tag:Jafari2016_skin_lesions @tag:Esfahani2016_melanoma
+Closest to natural images are applications of deep learning aimed at detection
+and recognition of melanoma, the deadliest form of skin cancer. Recent works
+included applications to both dermoscopy [@tag:Codella2016_ensemble_melanoma
+@tag:Yu2016_melanoma_resnet] and non-dermoscopic clinical photography images of
+skin lesions [@tag:Jafari2016_skin_lesions @tag:Esfahani2016_melanoma
 @tag:Esteva2017_skin_cancer_nature]. For both modalities pre-training on natural
 images appears to be common model initialization that allows the use of very
 deep networks without overfitting. Reported performance is competitive or better
 compared to a board of certified dermatologists
-[@tag:Codella2016_ensemble_melanoma @tag:Esteva2017_skin_cancer_nature].
-This approach is known as transfer learning (see Discussion).
+[@tag:Codella2016_ensemble_melanoma @tag:Esteva2017_skin_cancer_nature]. This
+approach is known as transfer learning (see Discussion).
 
-Another fast emerging area of deep learning method applications is the detection of
-ophthalmological diseases such as diabetic retinopathy and age-related macular
-degeneration. Diagnosis of diabetic retinopathy through color fundus images
-became of interest for deep learning researchers and practitioners after the
-large labeled image set was made publicly available during the corresponding
-2015 Kaggle competition [@tag:Pratt2016_dr]. Most attempts included training
-a network from scratch [@tag:Pratt2016_dr @tag:Abramoff2016_dr
+Another fast emerging area of deep learning method applications is the detection
+of ophthalmological diseases such as diabetic retinopathy and age-related
+macular degeneration. Diagnosis of diabetic retinopathy through color fundus
+images became of interest for deep learning researchers and practitioners after
+the large labeled image set was made publicly available during the corresponding
+2015 Kaggle competition [@tag:Pratt2016_dr]. Most attempts included training a
+network from scratch [@tag:Pratt2016_dr @tag:Abramoff2016_dr
 @tag:Leibig2016_dr], while Gulshan et al. [@tag:Gulshan2016_dt] employed
 48-layer Inception-v3 deep architecture pre-trained on natural images and
 demonstrated substantial increase over the state-of-the-art in both specificity
 and sensitivity. Interestingly, Leibig et al. [@tag:Leibig2016_dr] proposed a
 method to estimate the uncertainty of deep networks in diabetic retinopathy
 diagnosis based on a recent theoretical insight on the link between dropout
-networks and approximate Bayesian inference. Such developments are important
-for the whole medical image analysis field, because they have a potential to
-provide information about a level of confidence for every black-box algorithm's
-classification result and, thus, improve pathologist-computer interaction.
-Deep networks were also recently applied to age-related macular degeneration
+networks and approximate Bayesian inference. Such developments are important for
+the whole medical image analysis field, because they have a potential to provide
+information about a level of confidence for every black-box algorithm's
+classification result and, thus, improve pathologist-computer interaction. Deep
+networks were also recently applied to age-related macular degeneration
 detection, similarly demonstrating the power of transfer learning when training
 set is limited [@tag:Burlina2016_amd] as well as the efficient use of a deep
 16-layer architecture combined with EMR data for training set enrichment.
@@ -92,79 +91,78 @@ set is limited [@tag:Burlina2016_amd] as well as the efficient use of a deep
 Mammography has been one area with numerous contributions
 [@tag:Dhungel2015_struct_pred_mamm @tag:Dhungel2016_mamm
 @tag:Zhu2016_mult_inst_mamm @tag:Zhu2016_advers_mamm
-@tag:Dhungel2017_mamm_min_interv]. In most of this work, researchers
-must work around a challenge typical for the domain - the limited number of
-well annotated training images. To expand the number and diversity of images,
-the researchers have employed approaches where they use adversarial examples
+@tag:Dhungel2017_mamm_min_interv]. In most of this work, researchers must work
+around a challenge typical for the domain - the limited number of well annotated
+training images. To expand the number and diversity of images, the researchers
+have employed approaches where they use adversarial examples
 [@tag:Zhu2016_advers_mamm] or first train towards human-created features before
 subsequent fine tuning [@tag:Dhungel2016_mamm]. Adaptation to the medical image
 domain can be further improved by combining in the latter approach with other
 machine learning techniques, for example, as a cascade of deep learning and
 random forest models [@tag:Dhungel2017_mamm_min_interv]. Using large dataset,
-Kooi et al. [@tag:Kooi2016_mamm_lesions] demonstrated that deep neural
-networks can outperform the traditional computer-aided diagnosis (CAD)
-system at low sensitivity and perform comparably at high sensitivity.
-They also compared network performance to certified screening
-radiologists on a patch level and found no significant difference between the
-network and the readers. Similarly, Geras et al. [@tag:Geras2017_multiview_mamm]
-showed that both using large dataset and using multi-view network architecture
-help to improve classification performance. The presence of a publicly available
-large bank of well-annotated mammography images would aid in the application
-of deep neural networks to this area and shift research focus from model
-generalization to effective processing of large image sets. Deep network
-pre-trained on large annotated mammogram set can be helpful for related tasks
-that do not have as much data using transfer learning [@tag:Kooi2017_mamm_tl].
-Though this strategy has not yet been employed in this domain, high-quality
-feature detectors can be constructed from large collections of unlabeled images
-in an unsupervised context. The small number of labeled examples could
-be used for subsequent training. Similar strategies have been employed for
-EHR data where high-quality labeled examples are also difficult to obtain
-[@tag:BeaulieuJones2016_ehr_encode].
+Kooi et al. [@tag:Kooi2016_mamm_lesions] demonstrated that deep neural networks
+can outperform the traditional computer-aided diagnosis (CAD) system at low
+sensitivity and perform comparably at high sensitivity. They also compared
+network performance to certified screening radiologists on a patch level and
+found no significant difference between the network and the readers. Similarly,
+Geras et al. [@tag:Geras2017_multiview_mamm] showed that both using large
+dataset and using multi-view network architecture help to improve classification
+performance. The presence of a publicly available large bank of well-annotated
+mammography images would aid in the application of deep neural networks to this
+area and shift research focus from model generalization to effective processing
+of large image sets. Deep network pre-trained on large annotated mammogram set
+can be helpful for related tasks that do not have as much data using transfer
+learning [@tag:Kooi2017_mamm_tl]. Though this strategy has not yet been employed
+in this domain, high-quality feature detectors can be constructed from large
+collections of unlabeled images in an unsupervised context. The small number of
+labeled examples could be used for subsequent training. Similar strategies have
+been employed for EHR data where high-quality labeled examples are also
+difficult to obtain [@tag:BeaulieuJones2016_ehr_encode].
 
 In radiological image analysis, deep learning techniques are increasingly used
 even when dataset size is not big enough to train large capacity models from
 scratch [@tag:Bar2015_nonmed_tl @tag:Shin2016_cad_tl
-@tag:Rajkomar2017_radiographs @tag:Lakhani2017_radiography]. All these
-studies demonstrate successful transfer of features learnt from natural image
-datasets, such as ImageNet [@tag:Russakovsky2015_imagenet]. Rajkomar et al.
-[@tag:Rajkomar2017_radiographs] showed that a deep CNN trained on natural
-images can boost performance in radiology image classification. However, the
-target task required either re-training the initial model from scratch with
-special pre-processing or fine-tuning of the whole network on radiographs with
-heavy data augmentation to avoid overfitting. Shin et al. [@tag:Shin2016_cad_tl]
+@tag:Rajkomar2017_radiographs @tag:Lakhani2017_radiography]. All these studies
+demonstrate successful transfer of features learnt from natural image datasets,
+such as ImageNet [@tag:Russakovsky2015_imagenet]. Rajkomar et al.
+[@tag:Rajkomar2017_radiographs] showed that a deep CNN trained on natural images
+can boost performance in radiology image classification. However, the target
+task required either re-training the initial model from scratch with special
+pre-processing or fine-tuning of the whole network on radiographs with heavy
+data augmentation to avoid overfitting. Shin et al. [@tag:Shin2016_cad_tl]
 compared various deep network architectures, dataset characteristics, and
 training procedures for computer tomography-based (CT) abnormality detection.
 They concluded that in case of three-dimensional data networks as deep as 22
 layers can be useful for such problems despite the limited size of training
-datasets. However, they note, that choice of a specific architecture,
-parameter setting, and model fine-tuning needed is very problem and
-dataset-specific. Moreover, this type of tasks often depends on both lesion
-localization and appearance that pose challenges for CNN-based approaches.
-Straightforward attempts to capture useful information from full-size images
-in all three dimensions simultaneously make applications of standard neural
-network architectures computationally unfeasible due to the curse of
-dimensionality. Instead, two dimensional models are often used to either process
-image slices individually (2D), or aggregate information from a number of 2D
-projections in the native space (2.5D). Roth et al. compared 2D, 2.5D, and
-3D CNNs on a number of tasks for computer-aided detection from CT scans and
-showed that 2.5D CNNs performed comparably well to 3D analogs, while requiring
-much less training time, especially on augmented training sets
-[@tag:Roth2015_view_agg_cad]. Another advantage of 2D and 2.5D networks is a
-possibility to use widely available models pre-trained on natural images.
+datasets. However, they note, that choice of a specific architecture, parameter
+setting, and model fine-tuning needed is very problem and dataset-specific.
+Moreover, this type of tasks often depends on both lesion localization and
+appearance that pose challenges for CNN-based approaches. Straightforward
+attempts to capture useful information from full-size images in all three
+dimensions simultaneously make applications of standard neural network
+architectures computationally unfeasible due to the curse of dimensionality.
+Instead, two dimensional models are often used to either process image slices
+individually (2D), or aggregate information from a number of 2D projections in
+the native space (2.5D). Roth et al. compared 2D, 2.5D, and 3D CNNs on a number
+of tasks for computer-aided detection from CT scans and showed that 2.5D CNNs
+performed comparably well to 3D analogs, while requiring much less training
+time, especially on augmented training sets [@tag:Roth2015_view_agg_cad].
+Another advantage of 2D and 2.5D networks is a possibility to use widely
+available models pre-trained on natural images.
 
 Similarly, in magnetic resonance image (MRI) analysis, limited size of training
 sets and large dimensionality represent challenges to deep learning
 applications. For example, Amit et al. [@tag:Amit2017_breast_mri] investigated
 the tradeoffs between using pre-trained models from a different domain and
 retraining a small-size CNN on MRI images. They showed that smaller network
-trained with sufficient data augmentation on few hundred images from a
-few dozen patients can outperform a pre-trained out-of-domain classifier.
-Nie et al. [@tag:Nie2016_3d_survival] showed that multimodal, multi-channel
-3D deep architecture was successful at learning high-level brain tumor
-appearance features jointly from MRI, functional MRI and diffusion MRI images,
+trained with sufficient data augmentation on few hundred images from a few dozen
+patients can outperform a pre-trained out-of-domain classifier. Nie et al.
+[@tag:Nie2016_3d_survival] showed that multimodal, multi-channel 3D deep
+architecture was successful at learning high-level brain tumor appearance
+features jointly from MRI, functional MRI and diffusion MRI images,
 outperforming single-modality or 2D models. Overall, the variety of modalities,
-properties and sizes of training sets, the dimensionality of input, and, finally,
-the importance of end goals in medical image analysis are provoking a
+properties and sizes of training sets, the dimensionality of input, and,
+finally, the importance of end goals in medical image analysis are provoking a
 development of specialized deep neural network architectures, training and
 validation protocols, and input representations that are not characteristic of
 widely studied natural images.
@@ -191,63 +189,61 @@ highly accurate results meet the need to generate a corpus with weak labels,
 which serves as a solid foundation for the later process of image
 classification. The resulting dataset (CXR-XIV
 [@url:https://console.cloud.google.com/storage/browser/gcs-public-data--nih/radiology_2017/Chest_X-Ray_CVPR17])
-consists of 108,948 frontal-view chest
-X-ray images (from 32,717 patients) and each image is associated with one or
-more weakly-labeled pathology category (e.g. pneumonia and cardiomegaly) or
-"normal" otherwise. Further, Wang et al. [@arxiv:1705.02315] used this dataset
-with a unified weakly-supervised multi-label image classification framework, to
-detect common thoracic diseases. It showed superior performance over a benchmark
-using fully labeled data.
+consists of 108,948 frontal-view chest X-ray images (from 32,717 patients) and
+each image is associated with one or more weakly-labeled pathology category
+(e.g. pneumonia and cardiomegaly) or "normal" otherwise. Further, Wang et al.
+[@arxiv:1705.02315] used this dataset with a unified weakly-supervised
+multi-label image classification framework, to detect common thoracic diseases.
+It showed superior performance over a benchmark using fully labeled data.
 
-In addition to medical imaging, histology slides are also being analyzed
-with deep learning approaches [@tag:Litjens2016_histopath_survey].
-Ciresan et al. [@tag:Ciresan2013_mitosis]
-developed one of the earliest examples, winning the 2012 International
-Conference on Pattern Recognition's Contest on Mitosis Detection while
-achieving human competitive accuracy. Their approach uses what has become a
-standard convolutional neural network architecture trained on public data.
-In more recent work, Wang et al. [@tag:Wang2016_breast_cancer] analyzed stained
-slides to identify cancers within slides of lymph node slices. The approach
-provided a probability map for each slide. On this task a pathologist has about
-a 3% error rate. The pathologist did not produce any false positives, but did
-have a number of false negatives. While the algorithm had about twice the
-error rate of a pathologist, the errors were not strongly correlated with those
-of a pathologist, suggesting that the two could be combined, theoretically,
-reducing the error rate to under 1%. In this area, these algorithms may be ready to
-incorporate into existing tools to aid pathologists. The authors' work suggests
-that this could reduce the false negative rate of such evaluations. This theme
-of an ensemble between deep learning algorithm and human expert may help
-overcome some of the challenges presented by data limitations.
+In addition to medical imaging, histology slides are also being analyzed with
+deep learning approaches [@tag:Litjens2016_histopath_survey]. Ciresan et al.
+[@tag:Ciresan2013_mitosis] developed one of the earliest examples, winning the
+2012 International Conference on Pattern Recognition's Contest on Mitosis
+Detection while achieving human competitive accuracy. Their approach uses what
+has become a standard convolutional neural network architecture trained on
+public data. In more recent work, Wang et al. [@tag:Wang2016_breast_cancer]
+analyzed stained slides to identify cancers within slides of lymph node slices.
+The approach provided a probability map for each slide. On this task a
+pathologist has about a 3% error rate. The pathologist did not produce any false
+positives, but did have a number of false negatives. While the algorithm had
+about twice the error rate of a pathologist, the errors were not strongly
+correlated with those of a pathologist, suggesting that the two could be
+combined, theoretically, reducing the error rate to under 1%. In this area,
+these algorithms may be ready to incorporate into existing tools to aid
+pathologists. The authors' work suggests that this could reduce the false
+negative rate of such evaluations. This theme of an ensemble between deep
+learning algorithm and human expert may help overcome some of the challenges
+presented by data limitations.
 
 One source of training examples with rich clinical annotations is the electronic
 health records. Recently Lee et al.[@tag:Lee2016_emr_oct_amd] developed an
-approach to distinguish individuals with age-related macular degeneration
-from control individuals. They extracted approximately 100,000 images from
-structured electronic health records, which they used to train and evaluate a
-deep neural network. Combining this data resource with standard deep learning
-techniques, the authors reach greater than 93% accuracy. One item that is
-important to note with regards to this work is that the authors used their test
-set for evaluating when training had concluded. In other domains, this has
-resulted in a minimal change in the estimated accuracy
-[@tag:Krizhevsky2013_nips_cnn]. However, there is not yet a single accepted
-standard within the field of biomedical research for such evaluations.
-We recommend the use of an independent test set wherever it is feasible.
-Despite this minor limitation, the work clearly illustrates the potential that
-can be unlocked from images stored in electronic health records.
+approach to distinguish individuals with age-related macular degeneration from
+control individuals. They extracted approximately 100,000 images from structured
+electronic health records, which they used to train and evaluate a deep neural
+network. Combining this data resource with standard deep learning techniques,
+the authors reach greater than 93% accuracy. One item that is important to note
+with regards to this work is that the authors used their test set for evaluating
+when training had concluded. In other domains, this has resulted in a minimal
+change in the estimated accuracy [@tag:Krizhevsky2013_nips_cnn]. However, there
+is not yet a single accepted standard within the field of biomedical research
+for such evaluations. We recommend the use of an independent test set wherever
+it is feasible. Despite this minor limitation, the work clearly illustrates the
+potential that can be unlocked from images stored in electronic health records.
 
 These examples demonstrate that, except for few natural image-like problems
 (e.g. melanoma detection), biomedical imaging poses a number of challenges for
-deep learning applications. Dataset sizes are typically limited, annotations
-can be sparse, and images are often high-dimensional, multimodal, and
-multi-channel. Techniques like transfer learning, heavy dataset augmentation,
-multi-view and multi-stream architectures are used more commonly compared
-to natural image domain. Furthermore, sensitivity and specificity of a model
-in this case often can translate directly into a clinical value. Thus,
-results evaluation, uncertainty estimation, and model interpretation methods are
-also of great importance in this domain (see Discussion). Finally, there is
-a need for better pathologist-computer interaction techniques that will allow
-combining the power of deep learning methods with human expertise and
-lead to better-informed decisions for patient treatment and care.
+deep learning applications. Dataset sizes are typically limited, annotations can
+be sparse, and images are often high-dimensional, multimodal, and multi-channel.
+Techniques like transfer learning, heavy dataset augmentation, multi-view and
+multi-stream architectures are used more commonly compared to natural image
+domain. Furthermore, sensitivity and specificity of a model in this case often
+can translate directly into a clinical value. Thus, results evaluation,
+uncertainty estimation, and model interpretation methods are also of great
+importance in this domain (see Discussion). Finally, there is a need for better
+pathologist-computer interaction techniques that will allow combining the power
+of deep learning methods with human expertise and lead to better-informed
+decisions for patient treatment and care.
 
 #### Electronic health records
 
@@ -289,25 +285,25 @@ further review of this type of approaches see Discussion.
 
 Several authors have created reusable feature sets for medical terminologies
 using natural language processing (NLP) and neural embedding models, as
-popularized by Word2vec [@tag:Word2Vec]. A goal of learning terminologies
-for different entities in the same vector space is to find relationships
-between different domains (e.g. drugs and the diseases they treat). It is
-difficult for us to provide a strong statement on the broad utility of these
-methods. Manuscripts in this area tend to compare algorithms applied to the
-same data but lack a comparison against overall best-practices for one or more
-tasks addressed by these methods. Techniques have been developed for free text
-medical notes [@doi:10.1145/2661829.2661974], ICD and NDC, and claims data
+popularized by Word2vec [@tag:Word2Vec]. A goal of learning terminologies for
+different entities in the same vector space is to find relationships between
+different domains (e.g. drugs and the diseases they treat). It is difficult for
+us to provide a strong statement on the broad utility of these methods.
+Manuscripts in this area tend to compare algorithms applied to the same data but
+lack a comparison against overall best-practices for one or more tasks addressed
+by these methods. Techniques have been developed for free text medical notes
+[@doi:10.1145/2661829.2661974], ICD and NDC, and claims data
 [@doi:10.1145/2939672.2939823]. Methods for neural embeddings learned from
 electronic health records have at least some ability to predict disease-disease
 associations and implicate genes with a statistical association with a disease
 [@doi:10.1038/srep32404]. However, the evaluations performed did not
 differentiate between simple predictions (i.e. the same disease in different
 sites of the body) and non-intuitive ones. While promising, a lack of rigorous
-evaluations of the real-world utility of these kinds of features makes
-current contributions in this area difficult to evaluate. To examine the true
-utility, comparisons need to be performed against leading approaches (i.e.
-algorithms and data) as opposed to simply evaluating multiple algorithms on
-the same potentially limited dataset.
+evaluations of the real-world utility of these kinds of features makes current
+contributions in this area difficult to evaluate. To examine the true utility,
+comparisons need to be performed against leading approaches (i.e. algorithms and
+data) as opposed to simply evaluating multiple algorithms on the same
+potentially limited dataset.
 
 Identifying consistent subgroups of individuals and individual health
 trajectories from clinical tests is also an active area of research. Approaches
@@ -334,28 +330,27 @@ patient records, image analysis, genomic data) and better handling of streaming
 temporal data with many features, will need to be overcome before we can fully
 assess the potential of deep learning for this application area.
 
-Still, recent work has also revealed domains in which deep networks have
-proven superior to traditional methods. Survival analysis models the time
-leading to an event of interest from a shared starting point, and in the
-context of EHR data, often associates these events to subject covariates.
-Exploring this relationship is difficult, however, given that EHR data types
-are often heterogeneous, covariates are often missing, and conventional
-approaches require the covariate-event relationship be linear and aligned to a
-specific starting point [@arxiv:1608.02158]. Early approaches, such as the
-Faraggi-Simon feed-forward network, aimed to relax the linearity assumption,
-but performance gains were lacking [@doi:10.1016/S0167-9473(99)00098-5].
-Katzman et al. in turn developed a deep implementation of the Faraggi-Simon
-network that, in addition to outperforming Cox regression, was capable of
-comparing the risk between a given pair of treatments, thus potentially acting
-as recommender system [@arxiv:1606.00931]. To overcome the remaining
-difficulties, researchers have turned to deep exponential families, a class of
-latent generative models that are constructed from any type of exponential
-family distributions [@arxiv:1411.2581v1]. The result was a deep survival
-analysis model capable of overcoming challenges posed by missing data and
-heterogeneous data types, while uncovering nonlinear relationships between
-covariates and failure time. They showed their model more accurately
-stratified patients as a function of disease risk score compared to the current
-clinical implementation.
+Still, recent work has also revealed domains in which deep networks have proven
+superior to traditional methods. Survival analysis models the time leading to an
+event of interest from a shared starting point, and in the context of EHR data,
+often associates these events to subject covariates. Exploring this relationship
+is difficult, however, given that EHR data types are often heterogeneous,
+covariates are often missing, and conventional approaches require the
+covariate-event relationship be linear and aligned to a specific starting point
+[@arxiv:1608.02158]. Early approaches, such as the Faraggi-Simon feed-forward
+network, aimed to relax the linearity assumption, but performance gains were
+lacking [@doi:10.1016/S0167-9473(99)00098-5]. Katzman et al. in turn developed a
+deep implementation of the Faraggi-Simon network that, in addition to
+outperforming Cox regression, was capable of comparing the risk between a given
+pair of treatments, thus potentially acting as recommender system
+[@arxiv:1606.00931]. To overcome the remaining difficulties, researchers have
+turned to deep exponential families, a class of latent generative models that
+are constructed from any type of exponential family distributions
+[@arxiv:1411.2581v1]. The result was a deep survival analysis model capable of
+overcoming challenges posed by missing data and heterogeneous data types, while
+uncovering nonlinear relationships between covariates and failure time. They
+showed their model more accurately stratified patients as a function of disease
+risk score compared to the current clinical implementation.
 
 There is a computational cost for these methods, however, when compared to
 traditional, non-network approaches. For the exponential family models, despite
@@ -428,7 +423,7 @@ Methods to accomplish more with little high-quality labeled data are also being
 applied in other domains and may also be adapted to this challenge, e.g. data
 programming [@arxiv:1605.07723]. In data programming, noisy automated labeling
 functions are integrated. Numerous writers have described data as the new oil
-[@url:http://ana.blogs.com/maestros/2006/11/data_is_the_new.html,
+[@url:http://ana.blogs.com/maestros/2006/11/data_is_the_new.html
 @url:https://medium.com/twenty-one-hundred/data-is-the-new-oil-a-ludicrous-proposition-1d91bba4f294].
 The idea behind this metaphor is that data are available in large quantities,
 valuable once refined, and the underlying resource that will enable a
@@ -457,11 +452,11 @@ records. This subsection deals primarily with these challenges.
 
 EHRs are designed chiefly for clinical, administrative and financial purposes,
 such as patient care, insurance and  billing [@doi:10.1038/nrg3208]. Science is
-at best a tertiary priority, presenting challenges to EHR-based
-research in general, and to deep learning research particularly.
-These difficulties can be grouped into three areas: local bias, wider standards
-and legal issues. Note these problems are not restricted to EHR but can also
-apply to any large biomedical dataset, e.g. clinical trial data.
+at best a tertiary priority, presenting challenges to EHR-based research in
+general, and to deep learning research particularly. These difficulties can be
+grouped into three areas: local bias, wider standards and legal issues. Note
+these problems are not restricted to EHR but can also apply to any large
+biomedical dataset, e.g. clinical trial data.
 
 Even within the same healthcare system, EHRs can be used differently
 [@pmid:24159271 @pmid:21347133]. Individual users have unique usage patterns,
@@ -478,8 +473,7 @@ can be less complete and less objective than expected.
 In the wider picture, standards for EHRs are many and evolving. Proprietary
 systems, indifferent and scattered use of health information standards and
 controlled terminologies makes combining and comparison of data across systems
-challenging [@url:http://www.ncrr.nih.gov/publications/informatics/ehr.pdf
-@doi:10.1016/j.jbi.2014.10.006]. Further diversity arises from variation in
+challenging [@doi:10.1016/j.jbi.2014.10.006]. Further diversity arises from variation in
 languages, healthcare practices and demographics. Merging EHR gathered in
 different systems (and even under different assumptions) is challenging
 [@doi:10.1007/978-3-319-44839-8].
@@ -503,27 +497,26 @@ before algorithms are applied.
 Finally, even if data were perfectly consistent and compatible across systems,
 attempts to share and combine EHR data face considerable legal and ethical
 barriers. Patient privacy can severely restrict the sharing and use of EHR
-[@doi:10.1093/ije/dyn022]. Here again, standards are
-heterogeneous and evolving but often EHR data can often not be exported or even
-accessed directly for research purposes without appropriate consent. Once again,
-this has the effect of making data gathering more laborious, expansive and
-reducing sample size and study power.
+[@doi:10.1093/ije/dyn022]. Here again, standards are heterogeneous and evolving
+but often EHR data can often not be exported or even accessed directly for
+research purposes without appropriate consent. Once again, this has the effect
+of making data gathering more laborious, expansive and reducing sample size and
+study power.
 
 Several technological solutions have been proposed in this direction, allowing
 access to sensitive data satisfying privacy and legal concerns. Software like
-DataShield [@doi:10.1093/ije/dyu188] and ViPAR
-[@doi:10.1093/ije/dyv193], although not EHR specific, allows querying and
-combining of datasets and calculation of summary statistics across remote sites
-by "taking the analysis to the data". The computation is carried out at the
-remote site. Conversely, the EH4CR project [@doi:10.1016/j.jbi.2014.10.006]
-allows analysis of private data by use of an inter-mediation layer that
-intreprets remote queries across internal   formats and datastores and returns
-the results in a de-identified standard form, thus giving real-time consistent
-but secure access. Continuous Analysis [@doi:10.1038/nbt.3780] can allow
-reproducible computing on private data. Using such techniques intermediate
-results can be automatically tracked and shared without sharing the original
-data. While none of these have been used in deep learning, the potential is
-there.
+DataShield [@doi:10.1093/ije/dyu188] and ViPAR [@doi:10.1093/ije/dyv193],
+although not EHR specific, allows querying and combining of datasets and
+calculation of summary statistics across remote sites by "taking the analysis to
+the data". The computation is carried out at the remote site. Conversely, the
+EH4CR project [@doi:10.1016/j.jbi.2014.10.006] allows analysis of private data
+by use of an inter-mediation layer that intreprets remote queries across
+internal   formats and datastores and returns the results in a de-identified
+standard form, thus giving real-time consistent but secure access. Continuous
+Analysis [@doi:10.1038/nbt.3780] can allow reproducible computing on private
+data. Using such techniques intermediate results can be automatically tracked
+and shared without sharing the original data. While none of these have been used
+in deep learning, the potential is there.
 
 Even without sharing data, algorithms trained on confidential patient data may
 present security risks or accidentally allow for the exposure of individual
@@ -540,27 +533,26 @@ adversarial neural networks as a tool to make sharable EHR data
 model from such attacks.
 
 There are approaches to protect models, but they pose their own challenges.
-Training in a differentially private manner provides a limited
-guarantee that an algorithm's output will be equally
-likely to occur regardless of the participation of any one individual. The limit
-is determined by a single parameter which provides a quantification of privacy.
-Simmons et al. [@doi:10.1016/j.cels.2016.04.013] present the ability to perform
-GWASs in a differentially private manner and Abadi et al. [@arxiv:1607.00133]
-show the ability to train deep learning classifiers under the differential
-privacy framework. Federated learning
-[@arxiv:1602.05629] and secure aggregations
+Training in a differentially private manner provides a limited guarantee that an
+algorithm's output will be equally likely to occur regardless of the
+participation of any one individual. The limit is determined by a single
+parameter which provides a quantification of privacy. Simmons et al.
+[@doi:10.1016/j.cels.2016.04.013] present the ability to perform GWASs in a
+differentially private manner and Abadi et al. [@arxiv:1607.00133] show the
+ability to train deep learning classifiers under the differential privacy
+framework. Federated learning [@arxiv:1602.05629] and secure aggregations
 [@url:http://proceedings.mlr.press/v54/mcmahan17a.html
-@url:https://eprint.iacr.org/2017/281.pdf @tag:Papernot2017_pate]
-are complementary approaches that reinforce differential privacy.
-Both aim to maintain privacy by training deep learning models from
-decentralized data sources such as personal mobile devices
-without transferring actual training instances. This is becoming of increasing
-importance with the rapid growth of mobile health applications. However, the
-training process in these approaches places constraints on the algorithms used
-and can make fitting a model substantially more challenging. In our own
-experience it can be trivial to train a model without differential privacy, but
-quite difficult to train one within the differential privacy framework. The
-problem can be particularly pronounced with small sample sizes.
+@url:https://eprint.iacr.org/2017/281.pdf @tag:Papernot2017_pate] are
+complementary approaches that reinforce differential privacy. Both aim to
+maintain privacy by training deep learning models from decentralized data
+sources such as personal mobile devices without transferring actual training
+instances. This is becoming of increasing importance with the rapid growth of
+mobile health applications. However, the training process in these approaches
+places constraints on the algorithms used and can make fitting a model
+substantially more challenging. In our own experience it can be trivial to train
+a model without differential privacy, but quite difficult to train one within
+the differential privacy framework. The problem can be particularly pronounced
+with small sample sizes.
 
 While none of these problems are insurmountable or restricted to deep learning,
 they present challenges that cannot be ignored. Technical evolution in EHRs and
@@ -592,13 +584,12 @@ practice. However, to discover and avoid discriminatory applications it will be
 important to consider interpretability alongside accuracy. A number of
 properties of genomic and health care data will make this difficult.
 
-First,
-research samples are frequently non-representative of the general population of
-interest; they tend to be disproportionately sick [@doi:10.1086/512821], male
-[@doi:10.1016/j.neubiorev.2010.07.002], and European in ancestry
-[@doi:10.1371/journal.pbio.1001661]. One well-known consequence of these biases
-in genomics is that penetrance is consistently lower in the general population
-than would be implied by case-control data, as reviewed in
+First, research samples are frequently non-representative of the general
+population of interest; they tend to be disproportionately sick
+[@doi:10.1086/512821], male [@doi:10.1016/j.neubiorev.2010.07.002], and European
+in ancestry [@doi:10.1371/journal.pbio.1001661]. One well-known consequence of
+these biases in genomics is that penetrance is consistently lower in the general
+population than would be implied by case-control data, as reviewed in
 [@doi:10.1086/512821]. Moreover, real genetic associations found in one
 population may not hold in other populations with different patterns of linkage
 disequilibrium (even when population stratification is explicitly controlled
@@ -622,38 +613,36 @@ anything of scientific or predictive value. This fact can undermine the privacy
 of patient data [@doi:10.1145/2382577.2382579] or lead to severe discriminatory
 consequences [@doi:10.1111/j.1740-9713.2016.00960.x].
 
-There is a small but
-growing literature on the prevention and mitigation of data leakage
-[@doi:10.1145/2382577.2382579], as well as a closely-related literature on
-discriminatory model behavior [@arxiv:1610.02413], but it remains difficult to
-predict when these problems will arise, how to diagnose them, and how to resolve
-them in practice. There is even disagreement about which kinds of algorithmic
-outcomes should be considered discriminatory [@arxiv:1610.09559]. Despite the
-difficulties and uncertainties, machine learning practitioners (and particularly
-those who use deep neural networks, which are challenging to interpret) must
-remain cognizant of these dangers and make every effort to prevent harm from
-discriminatory predictions.
-To reach their potential in this domain, deep learning methods will need to be
-interpretable. Researchers need to consider the extent to which biases may be
-learned by the model and whether or not a model is sufficiently interpretable to
-identify bias. We discuss the challenge of model interpretability more
-completely in the discussion section.
+There is a small but growing literature on the prevention and mitigation of data
+leakage [@doi:10.1145/2382577.2382579], as well as a closely-related literature
+on discriminatory model behavior [@arxiv:1610.02413], but it remains difficult
+to predict when these problems will arise, how to diagnose them, and how to
+resolve them in practice. There is even disagreement about which kinds of
+algorithmic outcomes should be considered discriminatory [@arxiv:1610.09559].
+Despite the difficulties and uncertainties, machine learning practitioners (and
+particularly those who use deep neural networks, which are challenging to
+interpret) must remain cognizant of these dangers and make every effort to
+prevent harm from discriminatory predictions. To reach their potential in this
+domain, deep learning methods will need to be interpretable. Researchers need to
+consider the extent to which biases may be learned by the model and whether or
+not a model is sufficiently interpretable to identify bias. We discuss the
+challenge of model interpretability more completely in the discussion section.
 
 ###### Applications of Deep Learning to Longitudinal Analysis
 
 Longitudinal analysis follows a population across time, for example,
 prospectively from birth or from the onset of particular conditions. In large
 patient populations, longitudinal analyses such as the Farmingham Heart Study
-[@doi:10.1016/S0140-6736(13)61752-3] and the Avon Longitudinal Study of
-Parents and Children [@doi:10.1038/484155a] have yielded
-important insights into the development of disease and the factors contributing
-to health status. Yet, a common practice in EHR-based research is to take a
-point in time snapshot and convert patient data to a traditional vector for
-machine learning and statistical analysis. This results in loss of information
-as timing and order of events can provide insight into a patient's disease and
-treatment [@doi:10.2307/2281868]. Efforts to model sequences of events have
-shown promise [@doi:10.1038/ncomms5022] but require exceedingly large patient
-sizes due to discrete combinatorial bucketing. Lasko et al.
+[@doi:10.1016/S0140-6736(13)61752-3] and the Avon Longitudinal Study of Parents
+and Children [@doi:10.1038/484155a] have yielded important insights into the
+development of disease and the factors contributing to health status. Yet, a
+common practice in EHR-based research is to take a point in time snapshot and
+convert patient data to a traditional vector for machine learning and
+statistical analysis. This results in loss of information as timing and order of
+events can provide insight into a patient's disease and treatment
+[@doi:10.2307/2281868]. Efforts to model sequences of events have shown promise
+[@doi:10.1038/ncomms5022] but require exceedingly large patient sizes due to
+discrete combinatorial bucketing. Lasko et al.
 [@doi:10.1371/journal.pone.0066341] used autoencoders on longitudinal sequences
 of serum urine acid measurements to identify population subtypes. More recently,
 deep learning has shown promise working with both sequences (Convolutional

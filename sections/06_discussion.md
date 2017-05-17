@@ -9,19 +9,18 @@ them, and suggest future research directions.
 ### Evaluation
 
 There are unique challenges to evaluating deep learning predictions in the
-biomedical domain. We focus on TF binding prediction as a representative task
-to illustrate some of these issues. The human genome has 3E9 base pairs and
-only a small fraction of them are implicated in specific biochemical
-activities. As a result, classification of genomic regions based on their
-biochemical activity results in highly imbalanced classification, which also
-arises in other problems we review such as virtual screening for drug
-discovery. What are appropriate evaluation metrics that account for the label
-imbalance? The classification labels are formulated based on continuous value
-experimental signals - what is an appropriate procedure for formulating binary
-classification labels based on these signals? The experimental signals are
-only partially reproducible across experimental replicates - what is an
-appropriate upper bound for classification performance that accounts for the
-experimental reproducibility?
+biomedical domain. We focus on TF binding prediction as a representative task to
+illustrate some of these issues. The human genome has 3E9 base pairs and only a
+small fraction of them are implicated in specific biochemical activities. As a
+result, classification of genomic regions based on their biochemical activity
+results in highly imbalanced classification, which also arises in other problems
+we review such as virtual screening for drug discovery. What are appropriate
+evaluation metrics that account for the label imbalance? The classification
+labels are formulated based on continuous value experimental signals - what is
+an appropriate procedure for formulating binary classification labels based on
+these signals? The experimental signals are only partially reproducible across
+experimental replicates - what is an appropriate upper bound for classification
+performance that accounts for the experimental reproducibility?
 
 #### Evaluation metrics for imbalanced classification
 
@@ -32,59 +31,58 @@ it is important to evaluate the genome-wide recall and false discovery rate
 (FDR) of classification models of biochemical activities. Targeted validation
 experiments of specific biochemical activities usually necessitate an FDR of
 5%-25%. When predicted biochemical activities are used as features in other
-models, such as gene expression models, a low FDR may not be as critical if
-the downstream models can satisfy their evaluation criteria; an FDR of 50% in
-this context may suffice.
+models, such as gene expression models, a low FDR may not be as critical if the
+downstream models can satisfy their evaluation criteria; an FDR of 50% in this
+context may suffice.
 
 What is the correspondence between these metrics and commonly used
 classification metrics such as auPRC and auROC? auPRC evaluates the average
 precision, or equivalently, the average FDR across all recall thresholds. This
-metric provides an overall estimate of performance across all possible use
-cases which can be misleading for targeted validation experiments. For
-example, classification of TF binding sites can exhibit a recall of 0% at 10%
-FDR and auPRC greater than 0.6. In this case, the auPRC may be competitive but
-the predictions are prohibitive for targeted validation that can only examine
-a couple of predictions. auROC evaluates the average recall across all false
+metric provides an overall estimate of performance across all possible use cases
+which can be misleading for targeted validation experiments. For example,
+classification of TF binding sites can exhibit a recall of 0% at 10% FDR and
+auPRC greater than 0.6. In this case, the auPRC may be competitive but the
+predictions are prohibitive for targeted validation that can only examine a
+couple of predictions. auROC evaluates the average recall across all false
 positive rate (FPR) thresholds which is often a highly misleading metric in
-class-imbalanced domains [@doi:10.1145/1143844.1143874
-@doi:10.1038/nmeth.3945]. For example, consider a classification model with
-recall of 0% at FDR less than 25% and 100% recall at FDR greater than 25%. In
-the context of TF binding predictions where only 1% of genomic regions are
-bound by the TF, this is equivalent to a recall of 100% for FPR greater than
-0.33%. In other words, the auROC would be 0.9967 and not indicative of the
-predictive utility for targeted validation. It is not unusual to obtain a
-chromosome-wide auROC greater than 0.99 for TF binding predictions but a
-recall of 0% at 10% FDR. The classifier would appear to be nearly perfect
-based on auROC but has no practical utility to prioritize high-confidence
-binding sites for experimental validation.
+class-imbalanced domains [@doi:10.1145/1143844.1143874 @doi:10.1038/nmeth.3945].
+For example, consider a classification model with recall of 0% at FDR less than
+25% and 100% recall at FDR greater than 25%. In the context of TF binding
+predictions where only 1% of genomic regions are bound by the TF, this is
+equivalent to a recall of 100% for FPR greater than 0.33%. In other words, the
+auROC would be 0.9967 and not indicative of the predictive utility for targeted
+validation. It is not unusual to obtain a chromosome-wide auROC greater than
+0.99 for TF binding predictions but a recall of 0% at 10% FDR. The classifier
+would appear to be nearly perfect based on auROC but has no practical utility to
+prioritize high-confidence binding sites for experimental validation.
 
 #### Formulation of classification labels
 
 Genome-wide continuous signals are commonly formulated into classification
-labels through signal peak detection. For example, peaks in ChIP-seq signal
-are used to identify locations of TF binding and histone modifications. Such
+labels through signal peak detection. For example, peaks in ChIP-seq signal are
+used to identify locations of TF binding and histone modifications. Such
 procedures rely on thresholding criteria to define what constitutes a peak in
 the signal. This inevitably results in a set of signal peaks that are close to
-the threshold, not sufficient to constitute a positive label, and too similar
-to positively labeled examples to constitute a negative label. To avoid an
+the threshold, not sufficient to constitute a positive label, and too similar to
+positively labeled examples to constitute a negative label. To avoid an
 arbitrary label for these example they may be labeled as “ambiguous”.
 Ambiguously labeled examples can then be ignored during model training and
-evaluation of recall and FDR. The correlation between model predictions on
-these examples and their signal values can be used to evaluate if the model
-correctly ranks these examples between positive and negative examples.
+evaluation of recall and FDR. The correlation between model predictions on these
+examples and their signal values can be used to evaluate if the model correctly
+ranks these examples between positive and negative examples.
 
 #### Formulation of a performance upper bound
 
 Genome-wide signals across experiments can lead to different sets of positive
-examples. When experimental replicates do not completely agree, a 100% recall
-at 25% FDR is not possible. The upper bound on the recall is the fraction of
+examples. When experimental replicates do not completely agree, a 100% recall at
+25% FDR is not possible. The upper bound on the recall is the fraction of
 positive examples that are in agreement across experiments. This fraction will
-vary depending on the available experimental data. For example,
-reproducibility for experimental replicates from the same lab is typically
-higher than experimental replicates across multiple labs. One way to handle
-the range of reproducibility is the use of multiple reproducibility criteria
-such as reproducibility across technical replicates, biological replicates
-from the same lab, and biological replicates from multiple labs.
+vary depending on the available experimental data. For example, reproducibility
+for experimental replicates from the same lab is typically higher than
+experimental replicates across multiple labs. One way to handle the range of
+reproducibility is the use of multiple reproducibility criteria such as
+reproducibility across technical replicates, biological replicates from the same
+lab, and biological replicates from multiple labs.
 
 ### Interpretation
 
@@ -413,8 +411,8 @@ transcript boundaries [@doi:10.1101/125229], is a standard practice in
 bioinformatics.  This strategy can help benchmark algorithms when the available
 gold standard dataset are imperfect, but it should be paired with an evaluation
 on real data, as in the prior examples [@tag:Shrikumar2017_reversecomplement
-@doi:10.1101/125229].  In rare cases, models trained on simulated data have
-been successfully applied directly to real data [@doi:10.1101/125229].
+@doi:10.1101/125229].  In rare cases, models trained on simulated data have been
+successfully applied directly to real data [@doi:10.1101/125229].
 
 Simulated data can also be create negative examples when only positive training
 instances are available.  DANN [@doi:10.1093/bioinformatics/btu703] adopts this
@@ -461,79 +459,74 @@ reduced from 30 million to 50 thousand, a factor of 600.
 
 Efficiently scaling deep learning is challenging, and there is a high
 computational cost (e.g. time, memory, energy) associated with training neural
-networks and using them for classification. This is one of the reasons
-why neural networks have
-only recently found widespread use [@tag:Schmidhuber2014_dnn_overview].
+networks and using them for classification. This is one of the reasons why
+neural networks have only recently found widespread use
+[@tag:Schmidhuber2014_dnn_overview].
 
-Many have sought to curb these costs, with methods ranging from
-the very applied (e.g. reduced numerical precision [@tag:Gupta2015_prec
-@tag:Bengio2015_prec @tag:Sa2015_buckwild @tag:Hubara2016_qnn]) to the exotic
-and theoretic (e.g. training small networks to mimic large networks and
-ensembles [@tag:Caruana2014_need @tag:Hinton2015_dark_knowledge]). The largest
-gains in efficiency have come from computation with graphics processing units
-(GPUs) [@tag:Raina2009_gpu @tag:Vanhoucke2011_cpu @tag:Seide2014_parallel
+Many have sought to curb these costs, with methods ranging from the very applied
+(e.g. reduced numerical precision [@tag:Gupta2015_prec @tag:Bengio2015_prec
+@tag:Sa2015_buckwild @tag:Hubara2016_qnn]) to the exotic and theoretic (e.g.
+training small networks to mimic large networks and ensembles
+[@tag:Caruana2014_need @tag:Hinton2015_dark_knowledge]). The largest gains in
+efficiency have come from computation with graphics processing units (GPUs)
+[@tag:Raina2009_gpu @tag:Vanhoucke2011_cpu @tag:Seide2014_parallel
 @tag:Hadjas2015_cc @tag:Edwards2015_growing_pains
 @tag:Schmidhuber2014_dnn_overview], which excel at the matrix and vector
 operations so central to deep learning. The massively parallel nature of GPUs
-allows additional optimizations, such as accelerated mini-batch gradient
-descent [@tag:Vanhoucke2011_cpu @tag:Seide2014_parallel @tag:Su2015_gpu
+allows additional optimizations, such as accelerated mini-batch gradient descent
+[@tag:Vanhoucke2011_cpu @tag:Seide2014_parallel @tag:Su2015_gpu
 @tag:Li2014_minibatch]. However, GPUs also have a limited quantity of memory,
-making it difficult to implement networks of useful size and
-complexity on a single GPU or machine [@tag:Raina2009_gpu
-@tag:Krizhevsky2013_nips_cnn]. This restriction has sometimes forced
-computational biologists to use workarounds or limit the size of an analysis.
-For example, Chen et al. [@tag:Chen2016_gene_expr] aimed to infer the
-expression level of all genes with a single neural network, but due to
-memory restrictions they randomly partitioned genes into two halves and
-analyzed each separately. In other cases, researchers limited the size
-of their neural network [@tag:Wang2016_protein_contact
-@tag:Gomezb2016_automatic]. Some have also chosen to use slower
-CPU implementations rather than sacrifice network size or performance
-[@tag:Yasushi2016_cgbvs_dnn].
+making it difficult to implement networks of useful size and complexity on a
+single GPU or machine [@tag:Raina2009_gpu @tag:Krizhevsky2013_nips_cnn]. This
+restriction has sometimes forced computational biologists to use workarounds or
+limit the size of an analysis. For example, Chen et al.
+[@tag:Chen2016_gene_expr] aimed to infer the expression level of all genes with
+a single neural network, but due to memory restrictions they randomly
+partitioned genes into two halves and analyzed each separately. In other cases,
+researchers limited the size of their neural network
+[@tag:Wang2016_protein_contact @tag:Gomezb2016_automatic]. Some have also chosen
+to use slower CPU implementations rather than sacrifice network size or
+performance [@tag:Yasushi2016_cgbvs_dnn].
 
-While steady improvements in GPU hardware may alleviate this issue, it
-is unclear whether advances can occur quickly enough to keep up with the growing
-amount of available biological data or increasing network sizes. Much has
-been done to minimize the memory
-requirements of neural networks [@tag:CudNN @tag:Caruana2014_need
-@tag:Gupta2015_prec @tag:Bengio2015_prec @tag:Sa2015_buckwild
-@tag:Chen2015_hashing @tag:Hubara2016_qnn], but there is also growing
-interest in specialized hardware, such as field-programmable gate arrays
-(FPGAs) [@tag:Edwards2015_growing_pains @tag:Lacey2016_dl_fpga] and
+While steady improvements in GPU hardware may alleviate this issue, it is
+unclear whether advances can occur quickly enough to keep up with the growing
+amount of available biological data or increasing network sizes. Much has been
+done to minimize the memory requirements of neural networks [@tag:CudNN
+@tag:Caruana2014_need @tag:Gupta2015_prec @tag:Bengio2015_prec
+@tag:Sa2015_buckwild @tag:Chen2015_hashing @tag:Hubara2016_qnn], but there is
+also growing interest in specialized hardware, such as field-programmable gate
+arrays (FPGAs) [@tag:Edwards2015_growing_pains @tag:Lacey2016_dl_fpga] and
 application-specific integrated circuits (ASICs). Specialized hardware promises
 improvements in deep learning at reduced time, energy, and memory
 [@tag:Edwards2015_growing_pains]. Obviously, there is as yet less software
-available for such highly
-specialized hardware [@tag:Lacey2016_dl_fpga], and it could be a difficult
-investment for those not solely interested in deep learning. However, it is
-likely that such options will find increased support as they become a more
-popular platform for deep learning and general computation.
+available for such highly specialized hardware [@tag:Lacey2016_dl_fpga], and it
+could be a difficult investment for those not solely interested in deep
+learning. However, it is likely that such options will find increased support as
+they become a more popular platform for deep learning and general computation.
 
 Distributed computing is a general solution to intense computational
 requirements, and has enabled many large-scale deep learning efforts. Early
-approaches to distributed computation [@tag:Mapreduce @tag:Graphlab] were
-not suitable for deep learning [@tag:Dean2012_nips_downpour],
-but much progress has been made. There
-now exist a number of algorithms [@tag:Dean2012_nips_downpour @tag:Dogwild
-@tag:Sa2015_buckwild], tools [@tag:Moritz2015_sparknet @tag:Meng2016_mllib
-@tag:TensorFlow], and high-level libraries [@tag:Keras @tag:Elephas] for deep
-learning in a distributed environment, and it is possible to train very complex
-networks with limited infrastructure [@tag:Coates2013_cots_hpc]. Besides
-handling very large networks, distributed or parallelized approaches offer
-other advantages, such as improved ensembling [@tag:Sun2016_ensemble] or
-accelerated hyperparameter optimization [@tag:Bergstra2011_hyper
-@tag:Bergstra2012_random].
+approaches to distributed computation [@tag:Mapreduce @tag:Graphlab] were not
+suitable for deep learning [@tag:Dean2012_nips_downpour], but much progress has
+been made. There now exist a number of algorithms [@tag:Dean2012_nips_downpour
+@tag:Dogwild @tag:Sa2015_buckwild], tools [@tag:Moritz2015_sparknet
+@tag:Meng2016_mllib @tag:TensorFlow], and high-level libraries [@tag:Keras
+@tag:Elephas] for deep learning in a distributed environment, and it is possible
+to train very complex networks with limited infrastructure
+[@tag:Coates2013_cots_hpc]. Besides handling very large networks, distributed or
+parallelized approaches offer other advantages, such as improved ensembling
+[@tag:Sun2016_ensemble] or accelerated hyperparameter optimization
+[@tag:Bergstra2011_hyper @tag:Bergstra2012_random].
 
 Cloud computing, which has already seen wide adoption in genomics
 [@tag:Schatz2010_dna_cloud], could facilitate easier sharing of the large
-datasets common to biology [@tag:Gerstein2016_scaling @tag:Stein2010_cloud],
-and may be key to scaling deep learning. Cloud computing affords researchers
-flexibility, and enables the use of specialized hardware (e.g.,
-FPGAs, ASICs, GPUs) without major investment. As such, it
-could be easier to address the different challenges associated with the
-multitudinous layers and architectures available
-[@tag:Krizhevsky2014_weird_trick]. Though many are reluctant to store sensitive
-data (e.g. patient electronic health records) in the cloud,
+datasets common to biology [@tag:Gerstein2016_scaling @tag:Stein2010_cloud], and
+may be key to scaling deep learning. Cloud computing affords researchers
+flexibility, and enables the use of specialized hardware (e.g., FPGAs, ASICs,
+GPUs) without major investment. As such, it could be easier to address the
+different challenges associated with the multitudinous layers and architectures
+available [@tag:Krizhevsky2014_weird_trick]. Though many are reluctant to store
+sensitive data (e.g. patient electronic health records) in the cloud,
 secure/regulation-compliant cloud services do exist [@tag:RAD2010_view_cc].
 
 ### Data, code, and model sharing
@@ -616,150 +609,138 @@ student course.
 ### Multimodal, multi-task, and transfer learning
 
 As discussed above, the fact that biomedical datasets often contain a limited
-number of instances or labels can be a cause of poor performance of
-machine learning algorithms. When trained on such datasets, deep learning
-models are particularly prone to overfitting due to their high representational
-power. However, transfer learning techniques also known as domain adaptation
-enable transfer of extracted patterns between different datasets and even
-domains. This approach consists of training a model for the base task, and
-subsequently reusing the trained model
-for the target problem in hand. The first step allows a model to take advantage
-of a larger amount of data and/or labels to extract better feature
-representations. Transferring learnt features in deep neural networks
-improves performance compared to randomly initialized features even
-when pre-training and target sets are dissimilar. However,
-transferability of features decreases as the distance between the base task
-and target task increases [@tag:Yosinski2014].
+number of instances or labels can be a cause of poor performance of machine
+learning algorithms. When trained on such datasets, deep learning models are
+particularly prone to overfitting due to their high representational power.
+However, transfer learning techniques also known as domain adaptation enable
+transfer of extracted patterns between different datasets and even domains. This
+approach consists of training a model for the base task, and subsequently
+reusing the trained model for the target problem in hand. The first step allows
+a model to take advantage of a larger amount of data and/or labels to extract
+better feature representations. Transferring learnt features in deep neural
+networks improves performance compared to randomly initialized features even
+when pre-training and target sets are dissimilar. However, transferability of
+features decreases as the distance between the base task and target task
+increases [@tag:Yosinski2014].
 
 In image analysis, previous examples of deep transfer learning applications
-proved large scale natural image sets [@tag:Russakovsky2015_imagenet]
-to be useful for pre-training models that can then serve as generic feature
-extractors applied to various types of biological images
-[@tag:Zhang2015_multitask_tl @tag:Zeng2015 @tag:Angermueller2016_dl_review
-@tag:Pawlowski2016]. More recently, deep learning models trained to predict
-protein sub-cellular localization successfully performed predictions for
-proteins not originally present in the training set [@tag:Parnamaa2017].
-Moreover, in this type of task, learnt features performed reasonably well even
-when applied to images obtained using different fluorescent labels, imaging
-techniques, and different cell types [@tag:Kraus2017_deeploc]. However, there
-are no established theoretical guarantees for feature transferability between
-distant domains such as natural images and various modalities of biological
-imaging. Because learnt patterns are represented in deep neural networks in a
-layer-wise hierarchical fashion, this issue is usually addressed by fixing an
-empirically chosen number of layers that preserve generic characteristics
-of both training and target datasets. The model is then fine-tuned by
-re-training multiple networks' top layers on the specific dataset in order to
-re-learn domain-specific high level concepts (e.g. fine-tuning for
-radiology image classification [@tag:Rajkomar2017_radiographs]).
+proved large scale natural image sets [@tag:Russakovsky2015_imagenet] to be
+useful for pre-training models that can then serve as generic feature extractors
+applied to various types of biological images [@tag:Zhang2015_multitask_tl
+@tag:Zeng2015 @tag:Angermueller2016_dl_review @tag:Pawlowski2016]. More
+recently, deep learning models trained to predict protein sub-cellular
+localization successfully performed predictions for proteins not originally
+present in the training set [@tag:Parnamaa2017]. Moreover, in this type of task,
+learnt features performed reasonably well even when applied to images obtained
+using different fluorescent labels, imaging techniques, and different cell types
+[@tag:Kraus2017_deeploc]. However, there are no established theoretical
+guarantees for feature transferability between distant domains such as natural
+images and various modalities of biological imaging. Because learnt patterns are
+represented in deep neural networks in a layer-wise hierarchical fashion, this
+issue is usually addressed by fixing an empirically chosen number of layers that
+preserve generic characteristics of both training and target datasets. The model
+is then fine-tuned by re-training multiple networks' top layers on the specific
+dataset in order to re-learn domain-specific high level concepts (e.g.
+fine-tuning for radiology image classification [@tag:Rajkomar2017_radiographs]).
 Fine-tuning on specific biological datasets enables more focused predictions.
 The Basset package [@tag:Kelley2016_basset] for prediction of functional
 activities from DNA sequences was shown to rapidly learn and accurately predict
-on new data by leveraging a model pre-trained on available public data.
-To simulate this scenario, authors put aside 15 of 164 cell type datasets
-and trained the Basset model on the remaining 149 datasets. Then, they
-fine-tuned the model with one training pass of each of the remaining datasets
-and achieved results close to the model trained on all 164 datasets together.
-In another example, Min et al.
-[@tag:Min2016_deepenhancer] demonstrated how training on the experimentally
-validated FANTOM5 permissive enhancer dataset followed by fine-tuning on ENCODE
-enhancer datasets improved cell type-specific predictions, outperforming
-state-of-the-art results.  In drug design, general RNN models trained to
-generate molecules from the ChEMBL database have been fine-tuned to produce
-drug-like compounds for specific targets [@tag:Segler2017_drug_design
+on new data by leveraging a model pre-trained on available public data. To
+simulate this scenario, authors put aside 15 of 164 cell type datasets and
+trained the Basset model on the remaining 149 datasets. Then, they fine-tuned
+the model with one training pass of each of the remaining datasets and achieved
+results close to the model trained on all 164 datasets together. In another
+example, Min et al. [@tag:Min2016_deepenhancer] demonstrated how training on the
+experimentally validated FANTOM5 permissive enhancer dataset followed by
+fine-tuning on ENCODE enhancer datasets improved cell type-specific predictions,
+outperforming state-of-the-art results.  In drug design, general RNN models
+trained to generate molecules from the ChEMBL database have been fine-tuned to
+produce drug-like compounds for specific targets [@tag:Segler2017_drug_design
 @tag:Olivecrona2017_drug_design].
 
-Related to transfer learning, multimodal learning assumes
-simultaneous learning from various types of inputs, such as images and text.
-It allows capture of features that describe common concepts across input
-modalities. Generative graphical models like restricted Boltzmann
-machines (RBM) and their stacked versions, deep Boltzmann machines (DBM), and
-deep belief networks (DBN), demonstrate successful extraction of
-more informative features for one modality
-(images or video) when jointly learnt with other modalities
-(audio or text) [@tag:Ngiam2011].
-Deep graphical models such as DBNs are considered to be well suited for
-multimodal learning tasks since they learn a joint probability
-distribution from inputs. They can be pre-trained in an unsupervised fashion
-on large unlabeled data and then fine-tuned on a smaller number of labeled
+Related to transfer learning, multimodal learning assumes simultaneous learning
+from various types of inputs, such as images and text. It allows capture of
+features that describe common concepts across input modalities. Generative
+graphical models like restricted Boltzmann machines (RBM) and their stacked
+versions, deep Boltzmann machines (DBM), and deep belief networks (DBN),
+demonstrate successful extraction of more informative features for one modality
+(images or video) when jointly learnt with other modalities (audio or text)
+[@tag:Ngiam2011]. Deep graphical models such as DBNs are considered to be well
+suited for multimodal learning tasks since they learn a joint probability
+distribution from inputs. They can be pre-trained in an unsupervised fashion on
+large unlabeled data and then fine-tuned on a smaller number of labeled
 examples. When labels are available, convolutional neural networks (CNN) are
-ubiquitously used since they can be trained end-to-end with backpropagation
-and demonstrate state-of-the-art performance in many discriminative tasks
+ubiquitously used since they can be trained end-to-end with backpropagation and
+demonstrate state-of-the-art performance in many discriminative tasks
 [@tag:Angermueller2016_dl_review].
 
 Jha et al. [@tag:Jha2017_integrative_models] showed that an integrated training
 approach delivers better performance compared to individual networks. They
-compared a number of feed-forward architectures trained on RNA-seq data
-with and without an additional set of CLIP-seq, knockdown, and over-expression
-based input features. Results showed that the integrative deep model
-generalized well for combined data, offering large performance improvement
-for alternative splicing event estimation.
-Chaudhary et al. [@tag:Chaudhary2017_multiom_liver_cancer] trained a deep
-autoencoder model jointly on RNA-seq, miRNA-seq, and methylation data from TCGA
-to predict survival subgroups of hepatocellular carcinoma patients. This
-multimodal approach that treated different omics as different modalities
-outperformed both traditional methods (PCA) and single-omic models.
-Interestingly, multi-omic model performance did not improve when combined
-with clinical information, suggesting that the model was able to capture
-redundant contributions of clinical features through their correlated
-genomic features.
-Chen et al. [@tag:Chen2015_trans_species] used deep belief networks to learn
-phosphorylation states of a common set of signaling proteins in primary
-cultured bronchial cells collected from rats and humans treated
-with distinct stimuli. By interpreting species as different modalities
-representing similar high-level concepts, they showed that DBNs were able
-to capture cross-species representation of signaling mechanisms in response
-to a common stimuli. Another application used DBNs for joint unsupervised
-feature learning from cancer datasets containing gene expression,
-DNA methylation, and miRNA expression data [@tag:Liang2015_exprs_cancer].
-This approach allowed for the capture of intrinsic relationships in
-different modalities and for better clustering performance over conventional
-k-means based methods.
+compared a number of feed-forward architectures trained on RNA-seq data with and
+without an additional set of CLIP-seq, knockdown, and over-expression based
+input features. Results showed that the integrative deep model generalized well
+for combined data, offering large performance improvement for alternative
+splicing event estimation. Chaudhary et al.
+[@tag:Chaudhary2017_multiom_liver_cancer] trained a deep autoencoder model
+jointly on RNA-seq, miRNA-seq, and methylation data from TCGA to predict
+survival subgroups of hepatocellular carcinoma patients. This multimodal
+approach that treated different omics as different modalities outperformed both
+traditional methods (PCA) and single-omic models. Interestingly, multi-omic
+model performance did not improve when combined with clinical information,
+suggesting that the model was able to capture redundant contributions of
+clinical features through their correlated genomic features. Chen et al.
+[@tag:Chen2015_trans_species] used deep belief networks to learn phosphorylation
+states of a common set of signaling proteins in primary cultured bronchial cells
+collected from rats and humans treated with distinct stimuli. By interpreting
+species as different modalities representing similar high-level concepts, they
+showed that DBNs were able to capture cross-species representation of signaling
+mechanisms in response to a common stimuli. Another application used DBNs for
+joint unsupervised feature learning from cancer datasets containing gene
+expression, DNA methylation, and miRNA expression data
+[@tag:Liang2015_exprs_cancer]. This approach allowed for the capture of
+intrinsic relationships in different modalities and for better clustering
+performance over conventional k-means based methods.
 
 Multimodal learning with CNNs is usually implemented as a collection of
 individual networks in which each learns representations from single data type.
 These individual representations are further concatenated before or within
 fully-connected layers. FIDDLE [@tag:Eser2016_fiddle] is an example of
-multimodal CNNs that represents an ensemble of individual networks that take
-as inputs a number of genomic datasets, including NET-seq, MNase-seq, ChIP-seq,
-RNA-seq, and raw DNA sequence to predict Transcription Start Site-seq
-(TSS-seq) outputs. The combined model radically improves performance over
-separately trained datatype-specific networks, suggesting that it learns the
-synergistic relationship between datasets.
+multimodal CNNs that represents an ensemble of individual networks that take as
+inputs a number of genomic datasets, including NET-seq, MNase-seq, ChIP-seq,
+RNA-seq, and raw DNA sequence to predict Transcription Start Site-seq (TSS-seq)
+outputs. The combined model radically improves performance over separately
+trained datatype-specific networks, suggesting that it learns the synergistic
+relationship between datasets.
 
-Multi-task learning (MTL) is an approach related to transfer learning.
-In an MTL framework a model co-learns a number of tasks simultaneously such
-that
-features are shared across them.
-DeepSEA framework [@tag:Zhou2015_deep_sea] implemented a multi-task joint
-learning of diverse chromatin factors sharing predictive features from raw
-DNA sequence. This allowed, for example, a sequence feature that is effective
-in recognizing binding of a specific TF to be simultaneously used by
-another predictor for a physically interacting TF.
-Similarly, TFImpute [@tag:Qin2017_onehot], a CNN-RNN architecture learned
-information shared across transcription factors and cell lines to predict
-cell-specific TF binding for TF-cell line combinations based on only a
-small fraction (4%) of the combinations using available ChIP-seq data. On
-multiple test sets that excluded specific TFs and cell lines, TFImpute showed
-comparable or superior performance compared to the state-of-the-art.
-Yoon et al.[@tag:Yoon2016_cancer_reports], previously discussed in the section
-on Electronic Health Records, demonstrated that predicting the primary cancer
-site from the cancer pathology reports together with its laterality
-substantially improved the performance for the latter task, suggesting that
-MTL can effectively leverage the commonality between two tasks using
-a shared representation.
-A number of studies previously mentioned in the section on developing new
-treatments employed multi-task learning approach to predict a large number
-of compound and target interactions for drug discovery
-[@tag:Dahl2014_multi_qsar @tag:Ramsundar2015_multitask_drug]
-and drug toxicity prediction
-[@tag:Mayr2016_deep_tox @tag:Hughes2016_macromol_react]. Kearnes et al.
-[@tag:Kearnes2016_admet] did a systematic comparison of single-task and
-multi-task deep models on a set of industrial ADMET datasets. They confirmed
-that multi-task learning can improve performance over single-task models. They
-further showed that smaller datasets tend to benefit more from multitask
-learning than larger datasets. Results emphasized that multi-task effects are
-highly dataset-dependent, suggesting the use of dataset-specific models to
-maximize overall performance.
+Multi-task learning (MTL) is an approach related to transfer learning. In an MTL
+framework a model co-learns a number of tasks simultaneously such that features
+are shared across them. DeepSEA framework [@tag:Zhou2015_deep_sea] implemented a
+multi-task joint learning of diverse chromatin factors sharing predictive
+features from raw DNA sequence. This allowed, for example, a sequence feature
+that is effective in recognizing binding of a specific TF to be simultaneously
+used by another predictor for a physically interacting TF. Similarly, TFImpute
+[@tag:Qin2017_onehot], a CNN-RNN architecture learned information shared across
+transcription factors and cell lines to predict cell-specific TF binding for
+TF-cell line combinations based on only a small fraction (4%) of the
+combinations using available ChIP-seq data. On multiple test sets that excluded
+specific TFs and cell lines, TFImpute showed comparable or superior performance
+compared to the state-of-the-art. Yoon et al.[@tag:Yoon2016_cancer_reports],
+previously discussed in the section on Electronic Health Records, demonstrated
+that predicting the primary cancer site from the cancer pathology reports
+together with its laterality substantially improved the performance for the
+latter task, suggesting that MTL can effectively leverage the commonality
+between two tasks using a shared representation. A number of studies previously
+mentioned in the section on developing new treatments employed multi-task
+learning approach to predict a large number of compound and target interactions
+for drug discovery [@tag:Dahl2014_multi_qsar @tag:Ramsundar2015_multitask_drug]
+and drug toxicity prediction [@tag:Mayr2016_deep_tox
+@tag:Hughes2016_macromol_react]. Kearnes et al. [@tag:Kearnes2016_admet] did a
+systematic comparison of single-task and multi-task deep models on a set of
+industrial ADMET datasets. They confirmed that multi-task learning can improve
+performance over single-task models. They further showed that smaller datasets
+tend to benefit more from multitask learning than larger datasets. Results
+emphasized that multi-task effects are highly dataset-dependent, suggesting the
+use of dataset-specific models to maximize overall performance.
 
 MTL approach is complementary to multimodal and transfer learning. All three
 techniques can be used together in the same model. For example, Zhang et al.
@@ -770,48 +751,44 @@ lies in better generalization of extracted features by leveraging relationships
 between information in provided in inputs and task objectives, represented at
 various hierarchical levels of abstraction in a deep learning model structure.
 
-Despite demonstrated improvements, transfer learning approaches also pose
-a number of challenges. As mentioned above, there are no theoretically sound
+Despite demonstrated improvements, transfer learning approaches also pose a
+number of challenges. As mentioned above, there are no theoretically sound
 principles for pre-training and fine-tuning. Most best practice recommendations
 are heuristic and have to take into account additional hyper-parameters that
 depend on specific deep architectures, sizes of pre-training and target
-datasets, and similarity of domains. However, similarity of datasets and
-domains
+datasets, and similarity of domains. However, similarity of datasets and domains
 in transfer learning and relatedness of tasks in MTL are difficult to access.
 Most current studies address these limitations by empirical evaluation of the
 model using established best practices or heuristics and cross-validation.
-Unfortunately, negative results are typically left out and not
-presented in the final study publications.
-Results by Rajkomar et al. [@tag:Rajkomar2017_radiographs] showed that a deep
-CNN trained on natural images can boost radiology image classification
-performance. However, due to differences in imaging domains, target task
-required either re-training the initial model from scratch with special
-pre-processing or fine-tuning of the whole network on radiographs with heavy
-data augmentation to avoid overfitting. Exclusively fine-tuning top layers led
-to much lower validation accuracy (81.4 vs 99.5).
-Fine-tuning procedure for the discussed Basset model pre-trained on data
-from different cell types required no more than one training pass. Otherwise,
-the model started overfitting new data [@tag:Kelley2016_basset].
-DeepChem successfully improved results for low-data drug discovery
-with one-shot learning for related tasks. However, it demonstrated clear
-limitations to cross-task generalization across unrelated tasks in one-shot
-models, specifically nuclear receptor assays and patient adverse reactions
+Unfortunately, negative results are typically left out and not presented in the
+final study publications. Results by Rajkomar et al.
+[@tag:Rajkomar2017_radiographs] showed that a deep CNN trained on natural images
+can boost radiology image classification performance. However, due to
+differences in imaging domains, target task required either re-training the
+initial model from scratch with special pre-processing or fine-tuning of the
+whole network on radiographs with heavy data augmentation to avoid overfitting.
+Exclusively fine-tuning top layers led to much lower validation accuracy (81.4
+vs 99.5). Fine-tuning procedure for the discussed Basset model pre-trained on
+data from different cell types required no more than one training pass.
+Otherwise, the model started overfitting new data [@tag:Kelley2016_basset].
+DeepChem successfully improved results for low-data drug discovery with one-shot
+learning for related tasks. However, it demonstrated clear limitations to
+cross-task generalization across unrelated tasks in one-shot models,
+specifically nuclear receptor assays and patient adverse reactions
 [@tag:AltaeTran2016_one_shot].
 
 Overall, multimodal, multi-task and transfer learning strategies demonstrate
-high potential for many biomedical applications that are otherwise limited
-by data volume and presence of labels. However, these methods not only inherit
-most methodological issues from natural image, text, and audio domains, but
-also
-pose new challenges, specific to biological data. Making negative results,
-source code, and pre-trained models publicly available helps to accelerate
-progress in this direction. However, there are privacy considerations for
-models
-trained on sensitive data, such as patient-related information (see Data
-sharing section). Thus, there is a compelling need for the development of
-privacy-preserving transfer learning algorithms, such as Private Aggregation
-of Teacher Ensembles (PATE-G) [@tag:Papernot2017_pate], that can leverage
-publicly available data. We suggest that these types of models deserve deeper
-investigation to establish sound theoretical guarantees and best practices and
-determine limits for the transferability of features between various closely
-related and distant learning tasks.
+high potential for many biomedical applications that are otherwise limited by
+data volume and presence of labels. However, these methods not only inherit most
+methodological issues from natural image, text, and audio domains, but also pose
+new challenges, specific to biological data. Making negative results, source
+code, and pre-trained models publicly available helps to accelerate progress in
+this direction. However, there are privacy considerations for models trained on
+sensitive data, such as patient-related information (see Data sharing section).
+Thus, there is a compelling need for the development of privacy-preserving
+transfer learning algorithms, such as Private Aggregation of Teacher Ensembles
+(PATE-G) [@tag:Papernot2017_pate], that can leverage publicly available data. We
+suggest that these types of models deserve deeper investigation to establish
+sound theoretical guarantees and best practices and determine limits for the
+transferability of features between various closely related and distant learning
+tasks.

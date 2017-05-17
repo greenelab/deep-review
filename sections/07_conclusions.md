@@ -15,16 +15,15 @@ As an analogy, consider recent progress in conversational speech recognition.
 Since 2009 there have been drastic performance improvements, with error rates
 dropping from more than 20% to less than 6% [@tag:Speech_recognition] and
 finally approaching or exceeding human performance in the past year
-[@arxiv:1610.05256 @arxiv:1703.02136] `TODO: need better source for this error
-trajectory`. The phenomenal improvements on benchmark datasets are undeniable,
-but halving the error rate on these benchmarks did not fundamentally transform
-the domain.  Widespread adoption of conversational speech technologies will
-require not only improvements over baseline methods but truly solving the
-problem, in this case exceeding human-level performance, as well as convincing
-users to embrace the technology [@tag:Speech_recognition].  We see parallels to
-the healthcare domain, where achieving the full potential of deep learning will
-require outstanding predictive performance as well as acceptance and adoption by
-biologists and clinicians.
+[@arxiv:1610.05256 @arxiv:1703.02136]. The phenomenal improvements on benchmark
+datasets are undeniable, but halving the error rate on these benchmarks did not
+fundamentally transform the domain.  Widespread adoption of conversational
+speech technologies will require not only improvements over baseline methods but
+truly solving the problem, in this case exceeding human-level performance, as
+well as convincing users to embrace the technology [@tag:Speech_recognition].
+We see parallels to the healthcare domain, where achieving the full potential of
+deep learning will require outstanding predictive performance as well as
+acceptance and adoption by biologists and clinicians.
 
 Some of the areas we have discussed are closer to surpassing this lofty bar than
 others, generally those that are more similar to the non-biomedical tasks that
@@ -70,13 +69,12 @@ artificial intelligence becomes standard in the laboratory and in the clinic,
 the human factor still has a critical role to play. In some cases, cooperation
 between human experts and deep learning algorithms can achieve better
 performance than either individually [@arxiv:1606.05718]. Especially for sample
-and patient classification tasks, we expect deep learning methods to
-complement and assist biomedical researchers rather than compete with or even
-replace them.
+and patient classification tasks, we expect deep learning methods to complement
+and assist biomedical researchers rather than compete with or even replace them.
 
 Even if deep learning in biology and healthcare is not yet transformative today,
-we are extremely optimistic about its future. Given how rapidly deep learning
-is evolving, its full potential in biomedicine has not been explored.  We have
+we are extremely optimistic about its future. Given how rapidly deep learning is
+evolving, its full potential in biomedicine has not been explored.  We have
 highlighted numerous challenges beyond improving training and predictive
 accuracy, such as preserving patient privacy and interpreting models.  Ongoing
 research has begun to address these problems and shown they are not
