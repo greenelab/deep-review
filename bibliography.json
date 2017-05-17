@@ -40140,6 +40140,72 @@
     "id": "ziudr6hx"
   },
   {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          5,
+          12
+        ]
+      ],
+      "date-time": "2017-05-12T22:48:06Z",
+      "timestamp": 1494629286632
+    },
+    "publisher-location": "Princeton",
+    "reference-count": 0,
+    "publisher": "Princeton University Press",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "DOI": "10.1515/9781400881970-018",
+    "type": "chapter",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          5,
+          25
+        ]
+      ],
+      "date-time": "2016-05-25T10:10:30Z",
+      "timestamp": 1464171030000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 83,
+    "title": "17. A Value for n-Person Games",
+    "prefix": "10.1515",
+    "author": [
+      {
+        "given": "L. S.",
+        "family": "Shapley",
+        "affiliation": []
+      }
+    ],
+    "member": "374",
+    "container-title": "Contributions to the Theory of Games (AM-28), Volume II",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          12,
+          22
+        ]
+      ],
+      "date-time": "2016-12-22T04:07:43Z",
+      "timestamp": 1482379663000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "references-count": 0,
+    "URL": "http://dx.doi.org/10.1515/9781400881970-018",
+    "relation": {},
+    "id": "YBJdA6LJ"
+  },
+  {
     "URL": "http://arxiv.org/abs/1106.5730v2",
     "abstract": "Stochastic Gradient Descent (SGD) is a popular algorithm that can achieve state-of-the-art performance on a variety of machine learning tasks. Several researchers have recently proposed schemes to parallelize SGD, but all require performance-destroying memory locking and synchronization. This work aims to show using novel theoretical analysis, algorithms, and implementation that SGD can be implemented without any locking. We present an update scheme called HOGWILD! which allows processors access to shared memory with the possibility of overwriting each other’s work. We show that when the associated optimization problem is sparse, meaning most gradient updates only modify small parts of the decision variable, then HOGWILD! achieves a nearly optimal rate of convergence. We demonstrate experimentally that HOGWILD! outperforms alternative schemes that use locking by an order of magnitude.",
     "author": [
