@@ -116,8 +116,8 @@ divided into perturbation-based approaches and backpropagation-based approaches.
 ##### Perturbation-based approaches
 
 These approaches make perturbations to parts of the input and observe the impact
-on the output of the network. Zhou & Troyanskaya and Alipanahi et al.
-[@tag:Zhou2015_deep_sea @tag:Alipanahi2015_predicting]
+on the output of the network. Alipanahi et al. [@tag:Alipanahi2015_predicting]
+and Zhou & Troyanskaya [@tag:Zhou2015_deep_sea]
 scored genomic sequences by introducing virtual mutations at
 individual positions in the sequence and
 quantifying the change in the output. Umarov et al.
