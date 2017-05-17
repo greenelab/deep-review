@@ -1,8 +1,10 @@
 ## Discussion
 
-*This section provides meta-commentary that spans the Categorize, Study, and
-Treat subject areas.  The candidate sub-sections below are initial ideas that
-can be further pruned.*
+Despite the disparate types of data and scientific goals in the learning tasks
+covered above, several challenges can be seen to be broadly important for deep
+learning in the biomedical domain.  Here we examine these factors that may
+impede further progress, ask what steps have already been taken to overcome
+them, and suggest future research directions.
 
 ### Evaluation
 
@@ -23,348 +25,360 @@ it is easy to tell when deep learning has produced a breakthrough because
 human-level performance is an impressive baseline.  In many tasks we reviewed,
 human-level performance is irrelevant.*
 
+`TODO: draft coming May 4 or 5`
+
 ### Interpretation
 
 As deep learning models achieve state-of-the-art performance in a variety of
-domains, there is a growing need to make the models more
-interpretable. Interpretability matters for two main reasons: first, a model
-that achieves breakthrough performance may have identified patterns
-in the data that practitioners in the field would like to understand - however,
-this would not be possible if the model is a black-box. Second,
-interpretability is important for trust: if a model making is medical diagnoses,
-it is important to ensure the model is making decisions for reliable
-reasons and is not focusing on an artifact of the data.
-A motivating example of this can be found in Caruana et al.
-[@tag:Caruana2014_need],
-where a model trained to predict the likelihood of death from pneumonia assigned
-lower risk to patients with asthma - but only because such patients were
-treated as higher priority by the hospital. In the context of deep learning,
-understanding the basis of a model's output is particularly important
-as deep learning models are unusually susceptible to adversarial examples
-[@tag:Nguyen2014_adversarial] and can output confidence scores over 99.99%
-for samples that resemble pure noise. 
+domains, there is a growing need to make the models more interpretable.
+Interpretability matters for two main reasons. First, a model that achieves
+breakthrough performance may have identified patterns in the data that
+practitioners in the field would like to understand. However, this would not be
+possible if the model is a black box. Second, interpretability is important for
+trust. If a model is making medical diagnoses, it is important to ensure the
+model is making decisions for reliable reasons and is not focusing on an
+artifact of the data. A motivating example of this can be found in Caruana et
+al. [@tag:Caruana2014_need], where a model trained to predict the likelihood of
+death from pneumonia assigned lower risk to patients with asthma, but only
+because such patients were treated as higher priority by the hospital. In the
+context of deep learning, understanding the basis of a model's output is
+particularly important as deep learning models are unusually susceptible to
+adversarial examples [@tag:Nguyen2014_adversarial] and can output confidence
+scores over 99.99% for samples that resemble pure noise.
 
 As the concept of interpretability is quite broad, many methods described as
-improving the interpretability of deep learning models take disparate and
-often complementary approaches. Some key themes are discussed below. 
+improving the interpretability of deep learning models take disparate and often
+complementary approaches. Some key themes are discussed below.
 
 #### Assigning example-specific importance scores
 
-Several approaches ascribe importance on an example-specific basis 
-to the parts of the input that are responsible for a particular output.
-These can be broadly divided
-into perturbation-based approaches and backpropagation-based approaches.
+Several approaches ascribe importance on an example-specific basis to the parts
+of the input that are responsible for a particular output. These can be broadly
+divided into perturbation-based approaches and backpropagation-based approaches.
 
 ##### Perturbation-based approaches
 
-These approaches make perturbations to individual inputs and observes
-the impact on the output of the network. Zhou & Troyanskaya
-[@tag:Zhou2015_deep_sea] scored
-genomic sequences by introducing virtual
-mutations at each position and quantifying the change in the output.
-Ribeiro et al. [@tag:Ribeiro2016_lime] introduced LIME which constructs
-a linear model to
-locally approximate the output
-of the network on perturbed versions of the input and assigned importance
-scores accordingly. For analyzing images, Zeiler & Fergus
-[@tag:Zeiler2013_visualizing] applied
-constant-value masks to different input patches and studied the changes in
-the activations of later layers. As an alternative to using masks, which can
-produce misleading results, Zintgraf et al. [@tag:Zintgraf2017_visualizing]
-proposed a novel strategy based
-on marginalizing over plausible values of an input patch to more accurately
+These approaches make perturbations to parts of the input and observe the impact
+on the output of the network. Zhou & Troyanskaya and Alipanahi et al.
+[@tag:Zhou2015_deep_sea, tag:Alipanahi2015_predicting]
+scored genomic sequences by introducing virtual mutations at
+individual positions in the sequence and
+quantifying the change in the output. Umarov et al.
+[@doi:10.1371/journal.pone.0171410] used a similar strategy, but with
+sliding windows where the sequence within each sliding window
+was substituted with a random sequence.
+Kelley et al. [@tag:Kelley2016_basset] inserted known protein-binding
+motifs into the centers of sequences and assessed the change in predicted
+accessibility.
+
+Ribeiro et al. [@tag:Ribeiro2016_lime]
+introduced LIME which constructs a linear model to locally approximate the
+output of the network on perturbed versions of the input and assigned importance
+scores accordingly. For analyzing images, Zeiler and Fergus
+[@tag:Zeiler2013_visualizing] applied constant-value masks to different input
+patches and studied the changes in the activations of later layers. As an
+alternative to using masks, which can look artificial compared to typical
+values for an input patch, Zintgraf et
+al. [@tag:Zintgraf2017_visualizing] proposed a novel strategy based on
+marginalizing over plausible values of an input patch to more accurately
 estimate its contribution.
 
 A common drawback to perturbation-based approaches is computational efficiency:
 each perturbed version of an input requires a separate forward propagation
 through the network to compute the output. As noted by Shrikumar et al.
-[@tag:Shrikumar2017_learning], such
-methods may also underestimate the impact of features that have saturated their
-contribution to the output, as can happen when multiple redundant features
-are present.
+[@tag:Shrikumar2017_learning], such methods may also underestimate the impact of
+features that have saturated their contribution to the output, as can happen
+when multiple redundant features are present.
 
-To reduce the computational overhead of perturbation-based approaches,
-Fong & Vedaldi [@tag:Fong2017_perturb] solve an optimization problem using
-gradient descent to discover a minimal subset
-of inputs to perturb in order to decrease the predicted probability of a
-selected class. When tested on image data,
-their method took about 300 iterations to converge, compared to the
-~5000 iterations used by LIME. One drawback of this approach is that
-the use of gradient descent requires the perturbation to have a
-differentiable form.
+To reduce the computational overhead of perturbation-based approaches, Fong and
+Vedaldi [@tag:Fong2017_perturb] solve an optimization problem using gradient
+descent to discover a minimal subset of inputs to perturb in order to decrease
+the predicted probability of a selected class. When tested on image data, their
+method took about 300 iterations to converge, compared to the ~5000 iterations
+used by LIME. One drawback of this approach is that the use of gradient descent
+requires the perturbation to have a differentiable form.
 
 ##### Backpropagation-based approaches
 
 A second strategy for addressing the computational inefficiency of
-perturbation-based approaches is to propagate an important signal from
-a target output neuron backwards through the layers to the input layer
-in a single backpropagation-like pass. A classic example of this
-calculating the gradients of the output w.r.t. the input
- [@tag:Simonyan2013_deep]
-to compute a 'saliency map'. Bach et al. [@tag:Bach2015_on]
- proposed a strategy called Layerwise Relevance Propagation, which was
- shown to be equivalent to the elementwise product of the gradient and
- input [@tag:Shrikumar2016_not, @tag:Kindermans2016_investigating].
-Several variants of gradients exist which differ
-in their handling of the ReLU nonlinearity: while gradients zero-out the
-importance signal at ReLUs if the input to the ReLU is negative,
-deconvolutional networks [@tag:Zeiler2013_visualizing]
-zero-out the importance signal if
- the signal itself is negative. Guided backpropagation
- [@tag:Springenberg2014_striving]
- combines the two strategies to zero-out the importance signal if either
- the input to ReLU is negative or the importance signal is negative,
- in effect discarding negative gradients.
- However, Mahendran & Vedaldi [@tag:Mahendran2016_salient]
- showed that while guided backpropagation excelled at
- identifying salient features in the input image, these features showed little
- class-specificity, producing very similar saliency maps regardless
- of the class under consideration. Selvaraju et al. [@tag:Selvaraju2016_grad]
- attempted to alleviate this
- by combining gradients and guided backpropagation
- in Guided Grad-CAM: feature maps in the last convolutional layer were
- associated with classes using gradients, and the weighted activation of
- these feature maps was multiplied with the result of guided backpropagation
- to introduce more class specificity. Note that these approaches still would
- not highlight features that have saturated their contribution to the output,
- as the gradients w.r.t. such features would be zero at the input. 
+perturbation-based approaches is to propagate an important signal from a target
+output neuron backwards through the layers to the input layer in a single
+backpropagation-like pass. A classic example of this calculating the gradients
+of the output w.r.t. the input [@tag:Simonyan2013_deep] to compute a "saliency
+map". Bach et al. [@tag:Bach2015_on] proposed a strategy called Layerwise
+Relevance Propagation, which was shown to be equivalent to the elementwise
+product of the gradient and input [@tag:Shrikumar2016_blackbox
+@tag:Kindermans2016_investigating]. Several variants of gradients exist which
+differ in their handling of the ReLU nonlinearity. While gradients zero-out the
+importance signal at ReLUs if the input to the ReLU is negative, deconvolutional
+networks [@tag:Zeiler2013_visualizing] zero-out the importance signal if the
+signal itself is negative. Guided backpropagation
+[@tag:Springenberg2014_striving] combines the two strategies to zero-out the
+importance signal if either the input to ReLU is negative or the importance
+signal is negative, in effect discarding negative gradients. However, Mahendran
+and Vedaldi [@tag:Mahendran2016_salient] showed that while guided
+backpropagation excelled at identifying salient features in the input image,
+these features showed little class-specificity, producing very similar saliency
+maps regardless of the class under consideration. Selvaraju et al.
+[@tag:Selvaraju2016_grad] attempted to alleviate this by combining gradients and
+guided backpropagation in Guided Grad-CAM (Class Activation Mapping). Feature
+maps in the last convolutional layer were associated with classes using
+gradients, and the weighted activation of these feature maps was multiplied with
+the result of guided backpropagation to introduce more class specificity. Note
+that these approaches still would not highlight features that have saturated
+their contribution to the output, as the gradients with respect to such features
+would be zero at the input.
 
-To address the saturation failure mode, strategies have been developed
- to consider how the output changes between some reference input
- and the actual input, where the reference input represents a 'null'
- input that it
- is informative to measure differences against.
- Sundararajan et al. [@tag:Sundararajan2017_axiomatic] integrated the
- gradients as the input was linearly increased from the reference to its
- actual value (in their examples, which were on image-like data, they
- used a reference of all zeros). While the numerical integration
- adds computational
- overhead, the method is still more efficient on average
- than perturbation approaches.
- Further, by relying only on the gradients, the method is a fully black-box
- approach that is guaranteed to give the same answer for functionally
- equivalent networks. Shrikumar et al., 2017 [@tag:Shrikumar2017_learning]
- developed DeepLIFT,
- a strategy that used the difference
- between a neuron's activation on the reference input compared to its
- activation on the actual
- input to improve the backpropagation of importance scores. DeepLIFT is
- a white-box method that requires knowledge of the network architecture,
- but it is more computationally efficient than integrated gradients.
- Lundberg & Lee [@tag:Lundberg2016_an] noted that
- several importance scoring methods, including DeepLIFT,
- integrated gradients and LIME,
- could all be considered
- approximations to the Shapely values, which have a long history
- in game theory for assigning contributions to players in cooperative games. 
- DeepLIFT introduced a modification which treated positive and negative
- contributions separately to address some failure cases of
- integrated gradients; the modification can be understood as an improved
- approximation of the Shapely values.
+To address the saturation failure mode, strategies have been developed to
+consider how the output changes between some reference input and the actual
+input, where the reference input represents a "null" input that it is
+informative to measure differences against. Sundararajan et al.
+[@tag:Sundararajan2017_axiomatic] integrated the gradients as the input was
+linearly increased from the reference to its actual value (in their examples,
+which were on image-like data, they used a reference of all zeros). While the
+numerical integration adds computational overhead, the method is still more
+efficient on average than perturbation approaches. Further, by relying only on
+the gradients, the method is a fully black-box approach that is guaranteed to
+give the same answer for functionally equivalent networks. Shrikumar et al.
+[@tag:Shrikumar2017_learning] developed DeepLIFT, a strategy that used the
+difference between a neuron's activation on the reference input compared to its
+activation on the actual input to improve the backpropagation of importance
+scores. DeepLIFT is a white box method that requires knowledge of the network
+architecture, but it is more computationally efficient than integrated
+gradients. Lundberg and Lee [@tag:Lundberg2016_an] noted that several importance
+scoring methods, including DeepLIFT, integrated gradients and LIME, could all be
+considered approximations to the Shapely values, which have a long history in
+game theory for assigning contributions to players in cooperative games.
+ Briefly, the Shapely values measure the average marginal benefit of including
+ a player over all possible orders in which the players could be included
+ [@tag:Shapely_wikipedia].
+ In the case of DeepLIFT, the "inclusion" of a player is analogous to
+ setting a particular input to its actual value rather than its reference
+ value.
+ DeepLIFT introduced a
+modification which treated positive and negative contributions separately to
+address some failure cases of integrated gradients; the modification can be
+understood as an improved approximation of the Shapely values.
 
-#### Matching or exaggerating the hidden representation 
+#### Matching or exaggerating the hidden representation
 
-Another approach to understanding the network's predictions
-is to find artifical inputs that produce similar hidden
-representations to a chosen example. This can elucidate the features
-that the network uses for prediction and drop the features that the
-network is insensitive to. In the context of natural images,
-Mahendran & Vedaldi [@tag:Mahendran2014_understanding] 
+Another approach to understanding the network's predictions is to find
+artificial inputs that produce similar hidden representations to a chosen
+example. This can elucidate the features that the network uses for prediction
+and drop the features that the network is insensitive to. In the context of
+natural images, Mahendran and Vedaldi [@tag:Mahendran2014_understanding]
 introduced the "inversion" visualization which uses gradient descent and
-backpropagation to reconstruct the input from its hidden representation.
-The method required placing a prior on the input to favour results which
-resemble natural images. 
-For genomic sequence, Finnegan & Song [@tag:Finnegan2017_maximum]
- used a MCMC algorithm to find the
-maximum-entropy distribution of inputs that produced a similar hidden
-representation to the chosen input. 
+backpropagation to reconstruct the input from its hidden representation. The
+method required placing a prior on the input to favor results which resemble
+natural images. For genomic sequence, Finnegan and Song
+[@tag:Finnegan2017_maximum] used a Markov chain Monte Carlo algorithm to find
+the maximum-entropy distribution of inputs that produced a similar hidden
+representation to the chosen input.
 
-A related idea is 'caricaturization', where an initial image is altered to
-exaggerate patterns that the net searches for
-[@tag:Mahendran2016_visualizing]. This is done by maximizing
-the response of neurons that are active in the network, subject to some
-regularizing constraints. Mordvintsev et al.
-[@tag:Mordvintsev2015_inceptionism]
-leveraged caricaturization to
-generate aesthetically pleasing images using neural networks.
+A related idea is "caricaturization", where an initial image is altered to
+exaggerate patterns that the net searches for [@tag:Mahendran2016_visualizing].
+This is done by maximizing the response of neurons that are active in the
+network, subject to some regularizing constraints. Mordvintsev et al.
+[@tag:Mordvintsev2015_inceptionism] leveraged caricaturization to generate
+aesthetically pleasing images using neural networks.
 
 #### Activation maximization
 
-Activation maximization can reveal patterns
-detected by an individual neuron in the network by generating
-images which maximally activate that neuron, subject
-to some regularizing constraints. This technique was first introduced
-in Ehran et al. [@tag:Ehran2009_visualizing]
- and applied in Simonyan et al. [@tag:Simonyan2013_deep],
-Mordvintsev et al. [@tag:Mordvintsev2015_inceptionism],
-Yosinksi et al. [@tag:Yosinksi2015_understanding]
- and Mahendran & Vedaldi [Mahendran2016_visualizing].
- Lanchantin et al. [@tag:Lanchantin2016_motif]
- applied activation maximization to
-genomic sequence. One drawback of
-this approach is that neural networks often learn highly distributed
-representations where several neurons cooperatively describe a pattern
-of interest - thus, visualizing patterns learned by individual neurons
-may not always be informative.
+Activation maximization can reveal patterns detected by an individual neuron in
+the network by generating images which maximally activate that neuron, subject
+to some regularizing constraints. This technique was first introduced in Ehran
+et al. [@tag:Ehran2009_visualizing] and applied in Simonyan et al.
+[@tag:Simonyan2013_deep], Mordvintsev et al.
+[@tag:Mordvintsev2015_inceptionism], Yosinksi et al.
+[@tag:Yosinksi2015_understanding] and Mahendran and Vedaldi
+[@tag:Mahendran2016_visualizing]. Lanchantin et al. [@tag:Lanchantin2016_motif]
+applied activation maximization to genomic sequence. One drawback of this
+approach is that neural networks often learn highly distributed representations
+where several neurons cooperatively describe a pattern of interest - thus,
+visualizing patterns learned by individual neurons may not always be
+informative.
 
 #### RNN-specific approaches
 
-Several interpretation methods are specifically tailored to
-recurrent neural network architecutres. A few key approaches are summarised
- below.
+Several interpretation methods are specifically tailored to recurrent neural
+network architectures. A few key approaches are summarized below.
 
-The most common form of interpretability provided by RNNs is through
-attention mechanisms, which have been used in diverse problems such
-as image captioning and
-machine translation to select portions of the input to focus on for generating
-a particular output [@tag:Bahdanu2014_neural, @tag:Xu2015_show].
- Deming et al. [@tag:Deming2016_genetic] 
- applied the attention mechanism to models trained on genomic sequence.
- Attention mechanisms provide insight into the model's
- decision-making process by revealing which portions of the input are
- used by different outputs.
- In the clinical domain,
- Choi et al. [@tag:Choi2016_retain] 
- leveraged attention mechanisms to highlight which aspects of
- a patient's medical history were most relevant for making
- diagnoses. Choi et al. [@tag:Choi2016_gram] later extended this work to
- take into account the structure of
- disease ontologies and found that the concepts represented by the model
- were aligned with medical knowledge.
- Note that interpretation strategies that rely on an attention mechanism
- do not provide insight into the internal logic
- used by the attention layer to decide which inputs to attend to.
+The most common form of interpretability provided by RNNs is through attention
+mechanisms, which have been used in diverse problems such as image captioning
+and machine translation to select portions of the input to focus on for
+generating a particular output [@tag:Bahdanu2014_neural @tag:Xu2015_show].
+Deming et al. [@tag:Deming2016_genetic] applied the attention mechanism to
+models trained on genomic sequence. Attention mechanisms provide insight into
+the model's decision-making process by revealing which portions of the input are
+used by different outputs. In the clinical domain, Choi et al.
+[@tag:Choi2016_retain] leveraged attention mechanisms to highlight which aspects
+of a patient's medical history were most relevant for making diagnoses. Choi et
+al. [@tag:Choi2016_gram] later extended this work to take into account the
+structure of disease ontologies and found that the concepts represented by the
+model were aligned with medical knowledge. Note that interpretation strategies
+that rely on an attention mechanism do not provide insight into the internal
+logic used by the attention layer to decide which inputs to attend to.
 
-Visualizing the activation patterns of the hidden state of a
- recurrent neural network can also be instructive.
- Early work by Ghosh & Karamcheti
- [@tag:Ghosh1992_sequence] used cluster analysis to study hidden states of
-comparatively small 
- networks trained to recognise strings from a finite state machine.
- More recently, Karpathy et al. [@tag:Karpathy2015_visualizing]
- showed the existence of individual
-cells in LSTMs that kept track of quotes and brackets in character-level
- language models. To facilitate such analyses, LSTM vis
- [@tag:Strobelt2016_visual] allows
- interactive exploration of the hidden state of LSTMs on different inputs.
+Visualizing the activation patterns of the hidden state of a recurrent neural
+network can also be instructive. Early work by Ghosh and Karamcheti
+[@tag:Ghosh1992_sequence] used cluster analysis to study hidden states of
+comparatively small networks trained to recognize strings from a finite state
+machine. More recently, Karpathy et al. [@tag:Karpathy2015_visualizing] showed
+the existence of individual cells in LSTMs that kept track of quotes and
+brackets in character-level language models. To facilitate such analyses, LSTM
+vis [@tag:Strobelt2016_visual] allows interactive exploration of the hidden
+state of LSTMs on different inputs.
 
-Another strategy, adopted by Lanchatin et al. [@tag:Lanchantin2016_motif]
- looks at how the output of
- a recurrent neural network changes as longer and longer subsequences
- are supplied as input to the network,  where the subsequences begin
- with just the first position and end with the entire sequence.
- In a binary classification task, this can identify those positions
-which are responsible for flipping
- the output of the network from negative to positive. If the RNN is
- bidirectional, the same process can be repeated on the reverse sequence.
- As noted by the authors, this approach was less effective at
- identifying motifs compared to the gradient-based
-  backpropagation approach of Simonyan et al. [@tag:Simonyan2013_deep]
- illustrating the need
- for more sophisticated strategies to assign importance scores in
- recurrent neural networks.
+Another strategy, adopted by Lanchatin et al. [@tag:Lanchantin2016_motif] looks
+at how the output of a recurrent neural network changes as longer and longer
+subsequences are supplied as input to the network,  where the subsequences begin
+with just the first position and end with the entire sequence. In a binary
+classification task, this can identify those positions which are responsible for
+flipping the output of the network from negative to positive. If the RNN is
+bidirectional, the same process can be repeated on the reverse sequence. As
+noted by the authors, this approach was less effective at identifying motifs
+compared to the gradient-based backpropagation approach of Simonyan et al.
+[@tag:Simonyan2013_deep] illustrating the need for more sophisticated strategies
+to assign importance scores in recurrent neural networks.
 
-Murdoch & Szlam [@tag:Murdoch2017_automatic]
- showed that the output of an LSTM can be decomposed into a product
- of factors where each factor can be interpreted as the contribution
- at a particular
- timestep. The contribution scores were then used to identify
- key phrases from a model trained to do sentiment analysis, and obtained
- superior results compared to scores derived via a gradient-based approach.
+Murdoch and Szlam [@tag:Murdoch2017_automatic] showed that the output of an LSTM
+can be decomposed into a product of factors where each factor can be interpreted
+as the contribution at a particular timestep. The contribution scores were then
+used to identify key phrases from a model trained to do sentiment analysis and
+obtained superior results compared to scores derived via a gradient-based
+approach.
 
 #### Miscellaneous approaches
 
-Toward quantifying the uncertainty of
-predictions, there has been a renewed interest in confidence intervals for
-deep neural networks. Early work from Chryssolouris et al
-[@tag:Chryssolouris1996_confidence] provided confidence intervals under the
- assumption of normally distributed error. A more recent technique
- known as test-time dropout [@tag:Gal2015_dropout] can also be
-used to obtain a probabilistic interpretation of a network's outputs.
+Toward quantifying the uncertainty of predictions, there has been a renewed
+interest in confidence intervals for deep neural networks. Early work from
+Chryssolouris et al. [@tag:Chryssolouris1996_confidence] provided confidence
+intervals under the assumption of normally distributed error. A more recent
+technique known as test-time dropout [@tag:Gal2015_dropout] can also be used to
+obtain a probabilistic interpretation of a network's outputs.
 
-It can often be informative to understand how the training data
- affects the learning of a model. Toward this end,
- Koh & Liang [@tag:Koh2017_understanding] used
- influence functions, a technique from robust statistics, to
- trace a model's predictions back through the learning algorithm to identify
- the datapoints in the training set that had the most impact on a given
- prediction.
+It can often be informative to understand how the training data affects the
+learning of a model. Toward this end, Koh and Liang [@tag:Koh2017_understanding]
+used influence functions, a technique from robust statistics, to trace a model's
+predictions back through the learning algorithm to identify the datapoints in
+the training set that had the most impact on a given prediction.
 
-A more free-form approach to interpretability is to visualise
- the activation patterns of the network on individual inputs and on
- subsets of the data. ActiVis and CNNvis
- [@tag:Kahng2017_activis, @tag:Liu2016_towards] are two frameworks that
- enable interactive
- visualisation and exploration of large-scale
- deep learning models.
+A more free-form approach to interpretability is to visualize the activation
+patterns of the network on individual inputs and on subsets of the data. ActiVis
+and CNNvis [@tag:Kahng2017_activis @tag:Liu2016_towards] are two frameworks that
+enable interactive visualization and exploration of large-scale deep learning
+models.
 
-An orthogonal strategy is to use a knowledge distillation approach
- to replace a deep learning model with a more interpretable model
- that achieves comparable performance. Towards this end,
- Che et al [@tag:Che2015_distill] used gradient boosted trees to learn
- interpretable healthcare features from trained deep models.
+An orthogonal strategy is to use a knowledge distillation approach to replace a
+deep learning model with a more interpretable model that achieves comparable
+performance. Towards this end, Che et al. [@tag:Che2015_distill] used gradient
+boosted trees to learn interpretable healthcare features from trained deep
+models.
 
-Finally, it is sometimes possible to train the model to
- provide justifications for its predictions. Lei et al.
- [@tag:Lei2016_rationalizing] used a generator to identify
- "rationales", which are short and coherent pieces of the input text that
- produce similar results to the whole input when passed through an encoder.
- The authors applied their approach to a sentiment analysis task
- and obtained substantially superior results compared to an attention-based
- method.
+Finally, it is sometimes possible to train the model to provide justifications
+for its predictions. Lei et al. [@tag:Lei2016_rationalizing] used a generator to
+identify "rationales", which are short and coherent pieces of the input text
+that produce similar results to the whole input when passed through an encoder.
+The authors applied their approach to a sentiment analysis task and obtained
+substantially superior results compared to an attention-based method.
 
+#### Final thoughts
+
+While deep learning certainly lags behind most Bayesian models in
+terms of interpretability, one can safely argue that the
+interpretability of deep
+learning is comparable to or exceeds that of many other widely-used machine
+learning methods such as Random Forests or SVMs. While it is possible to
+obtain importance scores for different inputs in a Random Forest, the
+same is true for deep learning. Similarly, SVMs trained with a nonlinear
+kernel are not easily interpretable as the use of the kernel means that
+one does not obtain an explicit weight matrix. Finally, it is worth
+noting that some machine learning methods are less interpretable in
+practice than one might expect; for example, a linear model trained on
+heavily engineered features might be difficult to interpret as the input
+features themselves are difficult to interpret. Similarly, a decision tree
+with many nodes and branches may also be difficult for a human to make sense of. 
+
+There are several directions that might benefit the development of
+interpretability
+techniques. The first is the introduction of
+gold-standard benchmarks that different interpretability 
+approaches could be compared against,
+similar in spirit to how datasets like ImageNet and CIFAR spurred the
+development of deep learning for computer vision. It would also
+be helpful if the community placed
+more emphasis on domains outside of computer vision; computer vision is
+often used as the example application of interpretability methods,
+but it is arguably not the domain
+with the most pressing need. Finally, closer integration of interpretability
+approaches with popular deep learning frameworks would make it easier for
+practitioners to apply and experiment with different approaches to
+understanding their deep learning models.
 
 ### Data limitations
 
-*Related to evaluation, are there data quality issues in genomic, clinical, and
-other data that make this domain particularly challenging?  Are these worse than
-what is faced in other non-biomedical domains?*
+A lack of large-scale, high-quality, correctly labeled training data has
+impacted deep
+learning in nearly all applications we have discussed, from healthcare to
+genomics to drug discovery.  The challenges of training complex, high-parameter
+neural networks from few examples are obvious, but uncertainty in the labels of
+those examples can be just as problematic.  For example, in genomics
+labeled data may be derived from an experimental assay with known and
+unknown technical artifacts, biases, and error profiles.  It is possible to
+weight training examples or construct Bayesian models to account for uncertainty
+or non-independence in the data. To this end, Park et al.
+[@doi:10.1371/journal.pcbi.1002957] estimated shared non-biological signal
+between datasets to correct for non-independence related to assay platform or
+other factors in a Bayesian integration of many datasets. However, such
+techniques are rarely placed front and center in any description of methods,
+and so may be easily overlooked.
 
-*Many applications have used relatively small training datasets.  We might
-discuss workarounds (e.g. semi-synthetic data, splitting instances, etc.) and
-how this could impact future progress.  Might this be why some studies have
-resorted to feature engineering instead of learning representations from low-
-level features?  Is there still work to be done in finding the right low-level
-features in some problems?*
+For some types of data, especially images, it is straightforward to augment
+training datasets by splitting a single labeled example into multiple examples.
+For example, an
+image can easily be rotated, flipped, or translated and retain its label
+[@doi:10.1101/095794].  3D MRI and 4D fMRI (with time as a dimension) data can
+be decomposed into sets of 2D images [@doi:10.1101/070441]. This can greatly
+expand the number of training examples
+but artificially treats such derived images as independent
+instances and sacrifices the structure inherent in the data.  CellCnn trains a
+model to recognize rare cell populations in single-cell data by creating
+training instances that consist of random subsets of cells that are randomly
+sampled with replacement from the full dataset [@tag:Arvaniti2016_rare_subsets].
 
-###### Biomedical data is often "Wide"
+Simulated or semi-synthetic training data has also been employed in multiple
+biomedical domains. `TODO:  simulated data: #5 #99 #293, maybe #117 and #197.
+There is a counter-example from drug discovery to include as well
+that is related to #55`
 
-*Biomedical studies typically deal with relatively small sample sizes but each
-sample may have millions of measurements (genotypes and other omics data, lab
-tests etc).*
-
-*Classical machine learning recommendations were to have 10x samples per number
-of parameters in the model.*
-
-*Number of parameters in an MLP. Convolutions and similar strategies help but do
-not solve*
-
-*Bengio diet networks paper*
-
+Multimodal, multi-task, and transfer learning, discussed in detail below, can
+also combat data limitations to some degree. There are also emerging network
+architectures, such as Diet Networks for high-dimensional SNP data
+[@tag:Romero2017_diet]. These use multiple networks to drastically
+reduce the number of free parameters by first flipping the problem and training
+a network to predict parameters (weights) for each input (SNP) to learn a
+feature embedding. This embedding (i.e. PCA, per class histograms, or a Word2vec
+[@tag:Word2Vec] generalization) can be learned directly from input data or
+take advantage of other datasets or domain knowledge. Additionally, in this
+task the features are the examples, an important advantage when it is typical to
+have 500 thousand or more SNPs and only a few thousand patients. Finally, this
+embedding is of
+a much lower dimension, allowing for a large reduction in the number of free
+parameters. In the example given, the number of free
+parameters from was reduced from 30 million to 50 thousand, a factor of 600.
 
 ### Hardware limitations and scaling
 
-*Several papers have stated that memory or other hardware limitations
-artificially restricted the number of training instances, model inputs/outputs,
-hidden layers, etc.  Is this a general problem worth discussing or will it be
-solved naturally as hardware improves and/or groups move to distributed deep
-learning frameworks?  Does hardware limit what types of problems are accessible
-to the average computational group, and if so, will that limit future progress?
-For instance, some hyperparameter search strategies are not feasible for a lab
-with only a couple GPUs.*
-
-*Some of this is also outlined in the Categorize section.  We can decide where
-it best fits.*
-
 Efficiently scaling deep learning is challenging, and there is a high
-computational cost (e.g., time, memory, energy) associated with training neural
-networks and using them for classification. As such, neural networks
-have only recently found widespread use [@tag:Schmidhuber2014_dnn_overview].
+computational cost (e.g. time, memory, energy) associated with training neural
+networks and using them for classification. This is one of the reasons
+why neural networks have
+only recently found widespread use [@tag:Schmidhuber2014_dnn_overview].
 
-Many have sought to curb the costs of deep learning, with methods ranging from
-the very applied (e.g., reduced numerical precision [@tag:Gupta2015_prec
+Many have sought to curb these costs, with methods ranging from
+the very applied (e.g. reduced numerical precision [@tag:Gupta2015_prec
 @tag:Bengio2015_prec @tag:Sa2015_buckwild @tag:Hubara2016_qnn]) to the exotic
-and theoretic (e.g., training small networks to mimic large networks and
+and theoretic (e.g. training small networks to mimic large networks and
 ensembles [@tag:Caruana2014_need @tag:Hinton2015_dark_knowledge]). The largest
 gains in efficiency have come from computation with graphics processing units
 (GPUs) [@tag:Raina2009_gpu @tag:Vanhoucke2011_cpu @tag:Seide2014_parallel
@@ -374,7 +388,7 @@ operations so central to deep learning. The massively parallel nature of GPUs
 allows additional optimizations, such as accelerated mini-batch gradient
 descent [@tag:Vanhoucke2011_cpu @tag:Seide2014_parallel @tag:Su2015_gpu
 @tag:Li2014_minibatch]. However, GPUs also have a limited quantity of memory,
-making it difficult to implement networks of significant size and
+making it difficult to implement networks of useful size and
 complexity on a single GPU or machine [@tag:Raina2009_gpu
 @tag:Krizhevsky2013_nips_cnn]. This restriction has sometimes forced
 computational biologists to use workarounds or limit the size of an analysis.
@@ -387,8 +401,8 @@ of their neural network [@tag:Wang2016_protein_contact
 CPU implementations rather than sacrifice network size or performance
 [@tag:Yasushi2016_cgbvs_dnn].
 
-Steady improvements in GPU hardware may alleviate this issue somewhat, but it
-is not clear whether they can occur quickly enough to keep up with the growing
+While steady improvements in GPU hardware may alleviate this issue, it
+is unclear whether advances can occur quickly enough to keep up with the growing
 amount of available biological data or increasing network sizes. Much has
 been done to minimize the memory
 requirements of neural networks [@tag:CudNN @tag:Caruana2014_need
@@ -398,7 +412,8 @@ interest in specialized hardware, such as field-programmable gate arrays
 (FPGAs) [@tag:Edwards2015_growing_pains @tag:Lacey2016_dl_fpga] and
 application-specific integrated circuits (ASICs). Specialized hardware promises
 improvements in deep learning at reduced time, energy, and memory
-[@tag:Edwards2015_growing_pains]. Logically, there is less software for highly
+[@tag:Edwards2015_growing_pains]. Obviously, there is as yet less software
+available for such highly
 specialized hardware [@tag:Lacey2016_dl_fpga], and it could be a difficult
 investment for those not solely interested in deep learning. However, it is
 likely that such options will find increased support as they become a more
@@ -408,7 +423,7 @@ Distributed computing is a general solution to intense computational
 requirements, and has enabled many large-scale deep learning efforts. Early
 approaches to distributed computation [@tag:Mapreduce @tag:Graphlab] were
 not suitable for deep learning [@tag:Dean2012_nips_downpour],
-but significant progress has been made. There
+but much progress has been made. There
 now exist a number of algorithms [@tag:Dean2012_nips_downpour @tag:Dogwild
 @tag:Sa2015_buckwild], tools [@tag:Moritz2015_sparknet @tag:Meng2016_mllib
 @tag:TensorFlow], and high-level libraries [@tag:Keras @tag:Elephas] for deep
@@ -419,44 +434,96 @@ other advantages, such as improved ensembling [@tag:Sun2016_ensemble] or
 accelerated hyperparameter optimization [@tag:Bergstra2011_hyper
 @tag:Bergstra2012_random].
 
-Cloud computing, which has already seen adoption in genomics
+Cloud computing, which has already seen wide adoption in genomics
 [@tag:Schatz2010_dna_cloud], could facilitate easier sharing of the large
 datasets common to biology [@tag:Gerstein2016_scaling @tag:Stein2010_cloud],
 and may be key to scaling deep learning. Cloud computing affords researchers
-significant flexibility, and enables the use of specialized hardware (e.g.,
-FPGAs, ASICs, GPUs) without significant investment. With such flexibility, it
+flexibility, and enables the use of specialized hardware (e.g.,
+FPGAs, ASICs, GPUs) without major investment. As such, it
 could be easier to address the different challenges associated with the
 multitudinous layers and architectures available
 [@tag:Krizhevsky2014_weird_trick]. Though many are reluctant to store sensitive
-data (e.g., patient electronic health records) in the cloud,
+data (e.g. patient electronic health records) in the cloud,
 secure/regulation-compliant cloud services do exist [@tag:RAD2010_view_cc].
 
-*TODO: Write the transition once more of the Discussion section has been
-fleshed out.*
+### Data, code, and model sharing
 
-### Code, data, and model sharing
+A robust culture of data, code, and model sharing would do much to speed
+advances in this domain. The cultural barriers of data sharing in particular are
+perhaps best captured by the implications of using the term "research parasite"
+to describe scientists who use data from other researchers
+[@doi:10.1056/NEJMe1516564]. In short, a field that honors only discoveries and
+not the hard work of generating useful data will have difficulty encouraging
+scientists to share their hard-won data. Unfortunately, it's precisely those
+data that would help to power deep learning in the domain. Efforts are underway
+to recognize those who promote an ecosystem of rigorous sharing and analysis
+[@doi:10.1038/ng.3830].
 
-In addition to methodological improvements, a robust culture of data sharing -
-and in particular the sharing of high-quality labeled datasets - would do much
-to speed advances in this domain. The cultural barriers are perhaps best
-captured by the implications of using the term "research parasite" to describe
-scientists who use data from other researchers [@doi:10.1056/NEJMe1516564]. In
-short, a field that honors only discoveries and not the hard work of generating
-useful data will have difficulty encouraging scientists to share their hard-won
-data. Unfortunately, it's precisely those data that would help to power deep
-learning in the domain. Though not a methodological consideration, efforts are
-underway to recognize those who promote an ecosystem of rigorous sharing and
-analysis [@doi:10.1038/ng.3830].
+The sharing of high-quality, labeled datasets will be especially valuable.  In
+addition, researchers who invest time to preprocess datasets to be suitable for
+deep learning can make the preprocessing code (e.g. Basset
+[@tag:Kelley2016_basset] and variationanalysis [@tag:Torracinta2016_deep_snp])
+and cleaned data (e.g. MoleculeNet [@tag:Wu2017_molecule_net]) publicly
+available to catalyze further research. However, there are complex privacy and
+legal issues involved in sharing patient data that cannot be ignored.
+Furthermore, in some domains, some of the best training data has been generated
+privately, for example, high-throughput chemical screening data at
+pharmaceutical companies. One perspective is that there is little expectation or
+incentive for this private data to be shared. However, data are not inherently
+valuable. Instead, the insights that we glean from them are where the value
+lies. Private companies may establish a competitive advantage by releasing
+sufficient data for improved methods to be developed.
 
-*Reproducibiliy is important for science to progress. In the context of deep
-learning applied to advance human healthcare, does reproducibility have
-different requirements or alternative connotations? With vast hyperparameter
-spaces, massively heterogeneous and noisy biological data sets, and black box
-interpretability problems, how can we best ensure reproducible models? What
-might a clinician, or policy maker, need to see in a deep model in order to
-influence healthcare decisions? Or, is deep learning a hypothesis generation
-machine that requires manual validation? DeepChem and DragoNN are worth
-discussing here.*
+Code sharing and open source licensing is essential for continued progress in
+this domain.  We strongly advocate following established best practices for
+sharing source code, archiving code in repositories that generate digital object
+identifiers, and open licensing [@doi:10.1126/science.aah6168] regardless of
+the minimal requirements, or lack thereof, set by journals, conferences, or
+preprint servers.  In addition, it is important for authors to share not only
+code for their core models but also scripts and code used for data cleaning (see
+above) and hyperparameter optimization.  These improve reproducibility and serve
+as documentation of the detailed decisions that impact model performance but may
+not be exhaustively captured in a manuscript's methods text.
+
+Because many deep learning models are often built using one of several popular
+software frameworks, it is also possible to directly share trained
+predictive models.  The availability of pre-trained models can accelerate
+research, with image classifiers as an apt example.  A pre-trained neural
+network can be quickly fine-tuned on new data and used in transfer learning,
+as discussed below.  Taking this idea to the extreme, genomic data has been
+artificially encoded as images in order to benefit from pre-trained image
+classifiers [@tag:Poplin2016_deepvariant]. "Model zoos" -- collections of
+pre-trained models -- are not yet common in biomedical domains but have
+started to
+appear in genomics applications [@tag:Angermueller2016_single_methyl
+@tag:Dragonn].  Sharing models for patient data requires great care because deep
+learning models can be attacked to identify examples used in training.  We
+discuss this issue as well as recent techniques to mitigate these concerns in
+the patient categorization section.
+
+DeepChem [@tag:AltaeTran2016_one_shot @tag:DeepChem @tag:Wu2017_molecule_net]
+and DragoNN [@tag:Dragonn] exemplify the benefits of sharing pre-trained models
+and code under an open source license. DeepChem, which targets drug discovery
+and quantum chemistry, has actively encouraged and received community
+contributions of learning algorithms and benchmarking datasets.  As a
+consequence, it now supports of a large suite of machine learning approaches,
+both deep learning and competing strategies that can be run on diverse test
+cases.  This realistic, continual evaluation will play a critical role in
+assessing which techniques are most promising for chemical screening and drug
+discovery.  Like formal, organized challenges such as the ENCODE-DREAM *in vivo*
+Transcription Factor Binding Site Prediction Challenge [@tag:Dream_tf_binding],
+`TODO: placeholder URL until the preprint is available` DeepChem provides a
+forum for the fair, critical evaluations that are not always conducted in
+individual methodological papers, which can be biased toward favoring a new
+proposed algorithm.  Likewise DragoNN (Deep RegulAtory GenOmic Neural
+Networks), offers
+not only code and a model zoo but also a detailed tutorial and partner package
+for simulating training data.  These resources, especially the ability to
+simulate datasets that are sufficiently complex to demonstrate the challenges of
+training neural networks but small enough to train quickly on a CPU, are
+important for (human) training and attracting machine learning researchers to
+problems in genomics and healthcare.  We have even included DragoNN and hands-on
+model training into the curriculum of a graduate student course.
 
 ### Multimodal, multi-task, and transfer learning
 
@@ -466,10 +533,10 @@ machine learning algorithms. When trained on such datasets, deep learning
 models are particularly prone to overfitting due to their high representational
 power. However, transfer learning techniques also known as domain adaptation
 enable transfer of extracted patterns between different datasets and even
-domains. This approach can be described in a 2-step process:
-(1) training a model for the base task, and (2) reusing the trained model
+domains. This approach consists of training a model for the base task, and
+subsequently reusing the trained model
 for the target problem in hand. The first step allows a model to take advantage
-of larger amount of data, labels, or both, to extract better feature
+of a larger amount of data and/or labels to extract better feature
 representations. Transferring learnt features in deep neural networks
 improves performance compared to randomly initialized features even
 when pre-training and target sets are dissimilar. However,
@@ -492,10 +559,10 @@ distant domains such as natural images and various modalities of biological
 imaging. Because learnt patterns are represented in deep neural networks in a
 layer-wise hierarchical fashion, this issue is usually addressed by fixing an
 empirically chosen number of layers that preserve generic characteristics
-of both training and target datasets. Then, the model is fine-tuned by
+of both training and target datasets. The model is then fine-tuned by
 re-training multiple networks' top layers on the specific dataset in order to
-re-learn domain-specific high level concepts. For example, see fine-tuning for
-radiology image classification [@tag:Rajkomar2017_radiographs].
+re-learn domain-specific high level concepts (e.g. fine-tuning for
+radiology image classification [@tag:Rajkomar2017_radiographs]).
 Fine-tuning on specific biological datasets enables more focused predictions.
 The Basset package [@tag:Kelley2016_basset] for prediction of functional
 activities from DNA sequences was shown to rapidly learn and accurately predict
@@ -508,9 +575,12 @@ In another example, Min et al.
 [@tag:Min2016_deepenhancer] demonstrated how training on the experimentally
 validated FANTOM5 permissive enhancer dataset followed by fine-tuning on ENCODE
 enhancer datasets improved cell type-specific predictions, outperforming
-state-of-the-art results.
+state-of-the-art results.  In drug design, general RNN models trained to
+generate molecules from the ChEMBL database have been fine-tuned to produce
+drug-like compounds for specific targets [@tag:Segler2017_drug_design
+@tag:Olivecrona2017_drug_design].
 
-Multimodal learning is related to transfer learning. It assumes
+Related to transfer learning, multimodal learning assumes
 simultaneous learning from various types of inputs, such as images and text.
 It allows capture of features that describe common concepts across input
 modalities. Generative graphical models like restricted Boltzmann
@@ -527,6 +597,7 @@ examples. When labels are available, convolutional neural networks (CNN) are
 ubiquitously used since they can be trained end-to-end with backpropagation
 and demonstrate state-of-the-art performance in many discriminative tasks
 [@tag:Angermueller2016_dl_review].
+
 Jha et al. [@tag:Jha2017_integrative_models] showed that an integrated training
 approach delivers better performance compared to individual networks. They
 compared a number of feed-forward architectures trained on RNA-seq data
@@ -555,6 +626,7 @@ DNA methylation, and miRNA expression data [@tag:Liang2015_exprs_cancer].
 This approach allowed for the capture of intrinsic relationships in
 different modalities and for better clustering performance over conventional
 k-means based methods.
+
 Multimodal learning with CNNs is usually implemented as a collection of
 individual networks in which each learns representations from single data type.
 These individual representations are further concatenated before or within
@@ -596,7 +668,7 @@ and drug toxicity prediction
 multi-task deep models on a set of industrial ADMET datasets. They confirmed
 that multi-task learning can improve performance over single-task models. They
 further showed that smaller datasets tend to benefit more from multitask
-learning than larger datasets. Results emphasized that multitask effects are
+learning than larger datasets. Results emphasized that multi-task effects are
 highly dataset-dependent, suggesting the use of dataset-specific models to
 maximize overall performance.
 
