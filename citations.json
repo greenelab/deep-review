@@ -43012,5 +43012,12 @@
       "id": "JNnkm5Zt"
     },
     "citation_id": "JNnkm5Zt"
+  },
+  "arxiv:1705.00092": {
+    "source": "arxiv",
+    "identifer": "1705.00092",
+    "standard_citation": "arxiv:1705.00092",
+    "bibtex": "@article{71c6rs2z,\n abstract = {We present a conditional generative model to learn variation in cell and\nnuclear morphology and the location of subcellular structures from microscopy\nimages. Our model generalizes to a wide range of subcellular localization and\nallows for a probabilistic interpretation of cell and nuclear morphology and\nstructure localization from fluorescence images. We demonstrate the\neffectiveness of our approach by producing photo-realistic cell images using\nour generative model. The conditional nature of the model provides the ability\nto predict the localization of unobserved structures given cell and nuclear\nmorphology.},\n archiveprefix = {arXiv},\n author = {Gregory R. Johnson and Rory M. Donovan-Maiye and Mary M. Maleckar},\n eprint = {1705.00092v1},\n file = {1705.00092v1.pdf},\n link = {http://arxiv.org/abs/1705.00092v1},\n month = {Apr},\n primaryclass = {stat.ML},\n title = {Generative Modeling with Conditional Autoencoders: Building an\nIntegrated Cell},\n year = {2017}\n}\n\n",
+    "citation_id": "71c6rs2z"
   }
 }

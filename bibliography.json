@@ -44056,5 +44056,34 @@
     },
     "title": "Grammar variational autoencoder",
     "type": "article-journal"
+  },
+  {
+    "abstract": "We present a conditional generative model to learn variation in cell and nuclear morphology and the location of subcellular structures from microscopy images. Our model generalizes to a wide range of subcellular localization and allows for a probabilistic interpretation of cell and nuclear morphology and structure localization from fluorescence images. We demonstrate the effectiveness of our approach by producing photo-realistic cell images using our generative model. The conditional nature of the model provides the ability to predict the localization of unobserved structures given cell and nuclear morphology.",
+    "author": [
+      {
+        "family": "Johnson",
+        "given": "Gregory R."
+      },
+      {
+        "family": "Donovan-Maiye",
+        "given": "Rory M."
+      },
+      {
+        "family": "Maleckar",
+        "given": "Mary M."
+      }
+    ],
+    "id": "71c6rs2z",
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          4
+        ]
+      ]
+    },
+    "title": "Generative modeling with conditional autoencoders: Building an integrated cell",
+    "title-short": "Generative modeling with conditional autoencoders",
+    "type": "article-journal"
   }
 ]
