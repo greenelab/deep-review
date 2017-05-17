@@ -1,6 +1,5 @@
 import json
 import re
-import urllib.parse
 import urllib.request
 
 import requests
@@ -72,16 +71,16 @@ def get_url_citeproc_greycite(url):
     Uses urllib.request.urlopen rather than requests.get due to
     https://github.com/kennethreitz/requests/issues/4023
     """
-    encoded = urllib.parse.quote_plus(url)
-    api_url = f'http://greycite.knowledgeblog.org/json?uri={encoded}'
-    response = urllib.request.urlopen(api_url)
-    content = response.read()
-
+    response = requests.get(
+        'http://greycite.knowledgeblog.org/json',
+        params={'uri': url},
+        headers={'Connection': 'close'},
+    )
     # Some Greycite responses were valid JSON besides for an error appended
     # like "<p>*** Date set from uri<p>" or "<p>*** fetch error : 404<p>".
-    pattern = re.compile(b"<p>\*\*\*.*<p>")
-    content = pattern.sub(b'', content)
-    csl_item = json.loads(content)
+    pattern = re.compile(r"<p>\*\*\*.*<p>")
+    text = pattern.sub('', response.text)
+    csl_item = json.loads(text)
     csl_item['type'] = 'webpage'
     return csl_item
 
