@@ -2831,16 +2831,15 @@ As an analogy, consider recent progress in conversational speech recognition.
 Since 2009 there have been drastic performance improvements, with error rates
 dropping from more than 20% to less than 6% [@nyjAIan4] and
 finally approaching or exceeding human performance in the past year
-[@M2OLWojE; @wKioubsT] `TODO: need better source for this error
-trajectory`. The phenomenal improvements on benchmark datasets are undeniable,
-but halving the error rate on these benchmarks did not fundamentally transform
-the domain.  Widespread adoption of conversational speech technologies will
-require not only improvements over baseline methods but truly solving the
-problem, in this case exceeding human-level performance, as well as convincing
-users to embrace the technology [@nyjAIan4].  We see parallels to
-the healthcare domain, where achieving the full potential of deep learning will
-require outstanding predictive performance as well as acceptance and adoption by
-biologists and clinicians.
+[@M2OLWojE; @wKioubsT]. The phenomenal improvements on benchmark
+datasets are undeniable, but halving the error rate on these benchmarks did not
+fundamentally transform the domain.  Widespread adoption of conversational
+speech technologies will require not only improvements over baseline methods but
+truly solving the problem, in this case exceeding human-level performance, as
+well as convincing users to embrace the technology [@nyjAIan4].
+We see parallels to the healthcare domain, where achieving the full potential of
+deep learning will require outstanding predictive performance as well as
+acceptance and adoption by biologists and clinicians.
 
 Some of the areas we have discussed are closer to surpassing this lofty bar than
 others, generally those that are more similar to the non-biomedical tasks that
