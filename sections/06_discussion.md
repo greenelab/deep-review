@@ -86,8 +86,6 @@ the range of reproducibility is the use of multiple reproducibility criteria
 such as reproducibility across technical replicates, biological replicates
 from the same lab, and biological replicates from multiple labs.
 
-`TODO: draft coming May 4 or 5`
-
 ### Interpretation
 
 As deep learning models achieve state-of-the-art performance in a variety of
