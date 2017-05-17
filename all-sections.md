@@ -609,7 +609,7 @@ Methods to accomplish more with little high-quality labeled data are also being
 applied in other domains and may also be adapted to this challenge, e.g. data
 programming [@5Il3kN32]. In data programming, noisy automated labeling
 functions are integrated. Numerous writers have described data as the new oil
-[@daemz8Fm; @o8mib4CN].
+[@6fE0Vrba; @o8mib4CN].
 The idea behind this metaphor is that data are available in large quantities,
 valuable once refined, and the underlying resource that will enable a
 data-driven revolution in how work is done. Contrasting with this perspective,
@@ -658,7 +658,7 @@ can be less complete and less objective than expected.
 In the wider picture, standards for EHRs are many and evolving. Proprietary
 systems, indifferent and scattered use of health information standards and
 controlled terminologies makes combining and comparison of data across systems
-challenging [@DPsQumQ2; @13filvWwr]. Further diversity arises from variation in
+challenging [@13filvWwr]. Further diversity arises from variation in
 languages, healthcare practices and demographics. Merging EHR gathered in
 different systems (and even under different assumptions) is challenging
 [@1CWhXZxos].
@@ -2539,7 +2539,7 @@ to train very complex networks with limited infrastructure
 [@4MZ2tmZ8]. Besides handling very large networks, distributed or
 parallelized approaches offer other advantages, such as improved ensembling
 [@JUF9VoRD] or accelerated hyperparameter optimization
-[@wz83yfHF; @Wsa952Ax].
+[@wz83yfHF; @1FSwIjR9s].
 
 Cloud computing, which has already seen wide adoption in genomics
 [@B6g0qKf4], could facilitate easier sharing of the large

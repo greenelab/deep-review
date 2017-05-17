@@ -209,7 +209,7 @@ text	citation	standard_citation	citation_id
 @tag:Bengio2015_prec	arxiv:1412.7024	arxiv:1412.7024	1G3owNNps
 @tag:Berezikov2011_mirna	doi:10.1038/nrg3079	doi:10.1038/nrg3079	8lpCCppx
 @tag:Bergstra2011_hyper	url:https://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimization.pdf	url:https://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimization.pdf	wz83yfHF
-@tag:Bergstra2012_random	url:http://dl.acm.org/citation.cfm?id=2188395	url:http://dl.acm.org/citation.cfm?id=2188395	Wsa952Ax
+@tag:Bergstra2012_random	url:http://www.jmlr.org/papers/v13/bergstra12a.html	url:http://www.jmlr.org/papers/v13/bergstra12a.html	1FSwIjR9s
 @tag:Boza	arxiv:1603.09195	arxiv:1603.09195	1BTJ1KqRa
 @tag:Bracken2016_mirna	doi:10.1038/nrg.2016.134	doi:10.1038/nrg.2016.134	yVKIhIAf
 @tag:Buggenthin2017_imaged_lineage	doi:10.1038/nmeth.4182	doi:10.1038/nmeth.4182	On4vW5aU
@@ -434,14 +434,13 @@ text	citation	standard_citation	citation_id
 @tag:nbc	doi:10.1093/bioinformatics/btq619	doi:10.1093/bioinformatics/btq619	1HtJuEkb2
 @tag:wgsquikr	doi:10.1371/journal.pone.0091784	doi:10.1371/journal.pone.0091784	RqhGD9c7
 @tag:yok	doi:10.1186/1471-2105-12-20	doi:10.1186/1471-2105-12-20	qUGH5CX8
-@url:http://ana.blogs.com/maestros/2006/11/data_is_the_new.html,	url:http://ana.blogs.com/maestros/2006/11/data_is_the_new.html,	url:http://ana.blogs.com/maestros/2006/11/data_is_the_new.html,	daemz8Fm
+@url:http://ana.blogs.com/maestros/2006/11/data_is_the_new.html	url:http://ana.blogs.com/maestros/2006/11/data_is_the_new.html	url:http://ana.blogs.com/maestros/2006/11/data_is_the_new.html	6fE0Vrba
 @url:http://hazyresearch.github.io/snorkel/blog/weak_supervision.html	url:http://hazyresearch.github.io/snorkel/blog/weak_supervision.html	url:http://hazyresearch.github.io/snorkel/blog/weak_supervision.html	hfcf5Hmi
 @url:http://proceedings.mlr.press/v54/mcmahan17a.html	url:http://proceedings.mlr.press/v54/mcmahan17a.html	url:http://proceedings.mlr.press/v54/mcmahan17a.html	U0ySdznJ
 @url:http://research.google.com/archive/unsupervised_icml2012.html	url:http://research.google.com/archive/unsupervised_icml2012.html	url:http://research.google.com/archive/unsupervised_icml2012.html	IiNJE32f
 @url:http://www.cameo3d.org/	url:http://www.cameo3d.org/	url:http://www.cameo3d.org/	u9uApoaB
 @url:http://www.deeplearningbook.org/	url:http://www.deeplearningbook.org/	url:http://www.deeplearningbook.org/	yg8NW0K7
 @url:http://www.intel.com/pressroom/archive/speeches/ag080998.htm	url:http://www.intel.com/pressroom/archive/speeches/ag080998.htm	url:http://www.intel.com/pressroom/archive/speeches/ag080998.htm	mAXsmd43
-@url:http://www.ncrr.nih.gov/publications/informatics/ehr.pdf	url:http://www.ncrr.nih.gov/publications/informatics/ehr.pdf	url:http://www.ncrr.nih.gov/publications/informatics/ehr.pdf	DPsQumQ2
 @url:http://www.predictioncenter.org/casp12/rrc_avrg_results.cgi	url:http://www.predictioncenter.org/casp12/rrc_avrg_results.cgi	url:http://www.predictioncenter.org/casp12/rrc_avrg_results.cgi	zScWGveU
 @url:https://console.cloud.google.com/storage/browser/gcs-public-data--nih/radiology_2017/Chest_X-Ray_CVPR17	url:https://console.cloud.google.com/storage/browser/gcs-public-data--nih/radiology_2017/Chest_X-Ray_CVPR17	url:https://console.cloud.google.com/storage/browser/gcs-public-data--nih/radiology_2017/Chest_X-Ray_CVPR17	Bi92V99U
 @url:https://eprint.iacr.org/2017/281.pdf	url:https://eprint.iacr.org/2017/281.pdf	url:https://eprint.iacr.org/2017/281.pdf	1GprsH3DV
