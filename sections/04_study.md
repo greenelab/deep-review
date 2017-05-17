@@ -118,15 +118,15 @@ predictive accuracy [@tag:Xiong2015_splicing_code
 multiple kinds of epigenomic measurements, as well as tissue identity and RNA
 binding partners of splicing factors. Deep learning is critical in furthering
 these kinds of integrative studies where different data types and inputs
-interact in unpredictable (often nonlinear) ways to create higher-order “features”,
-compared to earlier approaches that often assumed independence of features or
-required extensive human fine-tuning. Moreover, as in gene expression network
-analysis, interrogating the hidden nodes within neural networks will likely
-yield new biological insights into splicing. For instance, tissue-specific
-splicing mechanisms can be inferred by training networks on splicing data from
-different tissues, then searching for common versus distinctive nodes, a
-technique employed by Qin et al. for tissue-specific TF binding predictions
-[@tag:Qin2017_onehot].
+interact in unpredictable (often nonlinear) ways to create higher-order
+“features”, compared to earlier approaches that often assumed independence of
+features or required extensive human fine-tuning. Moreover, as in gene
+expression network analysis, interrogating the hidden nodes within neural
+networks will likely yield new biological insights into splicing. For instance,
+tissue-specific splicing mechanisms can be inferred by training networks on
+splicing data from different tissues, then searching for common versus
+distinctive nodes, a technique employed by Qin et al. for tissue-specific TF
+binding predictions [@tag:Qin2017_onehot].
 
 A parallel effort has been to use more data with simpler models. An exhaustive
 study using readouts of splicing for millions of synthetic intronic sequences
@@ -404,12 +404,13 @@ in Protein Data Bank (PDB). As a result, computational structure prediction is
 essential for a majority of proteins. However, this is very challenging,
 especially when similar solved structures (called templates) are not available
 in PDB. Over the past several decades, various computational methods have been
-developed to predict aspects of protein structure such as secondary structure, torsion angles,
-solvent accessibility, inter-residue contact maps, disorder regions, and
-side-chain packing. In recent years, various deep learning architectures have been
-utilized, including deep belief networks, LSTM (long short-term memory), deep
-convolutional neural networks, and deep convolutional neural fields (DeepCNF)
-[@doi:10.1007/978-3-319-46227-1_1 @doi:10.1038/srep18962].
+developed to predict aspects of protein structure such as secondary structure,
+torsion angles, solvent accessibility, inter-residue contact maps, disorder
+regions, and side-chain packing. In recent years, various deep learning
+architectures have been utilized, including deep belief networks, LSTM (long
+short-term memory), deep convolutional neural networks, and deep convolutional
+neural fields (DeepCNF) [@doi:10.1007/978-3-319-46227-1_1
+@doi:10.1038/srep18962].
 
 Here we focus on deep learning methods for two representative sub-problems:
 secondary structure prediction and contact map prediction. Secondary structure
@@ -424,68 +425,71 @@ recent years, the accuracy of contact prediction has significantly improved
 
 Protein secondary structure can exhibit three different states (alpha helix,
 beta strand, and loop regions) or eight finer-grained states. Q3 and Q8 accuracy
-pertain to 3-state or 8-state predictions, respectively. Several
-groups [@doi:10.1371/journal.pone.0032235 @doi:10.1109/TCBB.2014.2343960
-@doi:10.1038/srep11476] initiated the application of deep learning to protein secondary
-structure prediction, but were unable to achieve significant improvement over the de facto
-standard method PSIPRED [@doi:10.1006/jmbi.1999.3091], which uses two shallow feedforward neural networks.
-In 2014, Zhou and Troyanskaya demonstrated that they could improve Q8 accuracy by using a deep
-supervised and convolutional generative stochastic network [@arxiv:1403.1347].
-In 2016 Wang et al. developed a DeepCNF model that significantly
-improved Q3 and Q8 accuracy as well as prediction of solvent accessibility and
-disorder regions [@doi:10.1038/srep18962 @doi:10.1007/978-3-319-46227-1_1].
-DeepCNF was the first tool to achieve Q3 accuracy of 84-85%, much higher than
-the 80% accuracy standard maintained by PSIPRED for more than 10 years. This
-improvement may be mainly due to the ability of convolutional neural fields to
-capture long-range sequential information, which is important for beta strand
-prediction. Nevertheless, improving secondary structure prediction from 80% to
-84-85% is unlikely to result in a commensurate improvement in tertiary structure
-prediction since secondary structure mainly reflects coarse-grained local
-conformation of a protein structure.
+pertain to 3-state or 8-state predictions, respectively. Several groups
+[@doi:10.1371/journal.pone.0032235 @doi:10.1109/TCBB.2014.2343960
+@doi:10.1038/srep11476] initiated the application of deep learning to protein
+secondary structure prediction, but were unable to achieve significant
+improvement over the de facto standard method PSIPRED
+[@doi:10.1006/jmbi.1999.3091], which uses two shallow feedforward neural
+networks. In 2014, Zhou and Troyanskaya demonstrated that they could improve Q8
+accuracy by using a deep supervised and convolutional generative stochastic
+network [@arxiv:1403.1347]. In 2016 Wang et al. developed a DeepCNF model that
+significantly improved Q3 and Q8 accuracy as well as prediction of solvent
+accessibility and disorder regions [@doi:10.1038/srep18962
+@doi:10.1007/978-3-319-46227-1_1]. DeepCNF was the first tool to achieve Q3
+accuracy of 84-85%, much higher than the 80% accuracy standard maintained by
+PSIPRED for more than 10 years. This improvement may be mainly due to the
+ability of convolutional neural fields to capture long-range sequential
+information, which is important for beta strand prediction. Nevertheless,
+improving secondary structure prediction from 80% to 84-85% is unlikely to
+result in a commensurate improvement in tertiary structure prediction since
+secondary structure mainly reflects coarse-grained local conformation of a
+protein structure.
 
 Protein contact prediction and contact-assisted folding (i.e. folding proteins
 using predicted contacts as restraints) represents a promising new direction for
-*ab initio* folding of proteins without good templates in PDB. Co-evolution analysis
-is effective for proteins with a very large number (>1000) of sequence
-homologs [@doi:10.1371/journal.pone.0028766], but otherwise fares poorly for proteins
-without many sequence homologs. By combining co-evolution information with
-a few other protein features, shallow neural network methods such as
+*ab initio* folding of proteins without good templates in PDB. Co-evolution
+analysis is effective for proteins with a very large number (>1000) of sequence
+homologs [@doi:10.1371/journal.pone.0028766], but otherwise fares poorly for
+proteins without many sequence homologs. By combining co-evolution information
+with a few other protein features, shallow neural network methods such as
 MetaPSICOV [@doi:10.1093/bioinformatics/btu791] and CoinDCA-NN
-[@doi:10.1093/bioinformatics/btv472] have shown some advantage over pure co-evolution analysis for
-proteins with few sequence homologs, but their accuracy is still far from satisfactory. In
-recent years, deeper architectures have been explored for contact prediction,
-such as CMAPpro [@doi:10.1093/bioinformatics/bts475], DNCON [@doi:10.1093/bioinformatics/bts598]
-and PConsC [@doi:10.1371/journal.pcbi.1003889].
-However, blindly tested in the well-known CASP competitions,
-these methods did not show any advantage over MetaPSICOV [@doi:10.1093/bioinformatics/btu791].
+[@doi:10.1093/bioinformatics/btv472] have shown some advantage over pure
+co-evolution analysis for proteins with few sequence homologs, but their
+accuracy is still far from satisfactory. In recent years, deeper architectures
+have been explored for contact prediction, such as CMAPpro
+[@doi:10.1093/bioinformatics/bts475], DNCON [@doi:10.1093/bioinformatics/bts598]
+and PConsC [@doi:10.1371/journal.pcbi.1003889]. However, blindly tested in the
+well-known CASP competitions, these methods did not show any advantage over
+MetaPSICOV [@doi:10.1093/bioinformatics/btu791].
 
 Recently, Wang et al. proposed the deep learning method RaptorX-Contact
 [@doi:10.1371/journal.pcbi.1005324], which significantly improves contact
-prediction over MetaPSICOV and pure co-evolution methods,
-especially for proteins without many sequence homologs.
-It employs a network architecture formed by one 1D residual neural network
-and one 2D residual neural network. Blindly tested in the latest CASP competition
-(i.e. CASP12 [@url:http://www.predictioncenter.org/casp12/rrc_avrg_results.cgi]),
+prediction over MetaPSICOV and pure co-evolution methods, especially for
+proteins without many sequence homologs. It employs a network architecture
+formed by one 1D residual neural network and one 2D residual neural network.
+Blindly tested in the latest CASP competition (i.e. CASP12
+[@url:http://www.predictioncenter.org/casp12/rrc_avrg_results.cgi]),
 RaptorX-Contact ranked first in F1 score (a widely-used performance metric
 combining sensitivity and specificity) on free-modeling targets as well as the
 whole set of targets. In CAMEO (which can be interpreted as a fully-automated
-CASP) [@url:http://www.cameo3d.org/], its predicted contacts were
-also able to fold proteins with a novel fold and only 65-330 sequence homologs.
-This technique also worked well on membrane proteins even when
-trained on non-membrane proteins [@arxiv:1704.07207]. RaptorX-Contact
-performed better mainly due to introduction of residual neural networks and
-exploitation of contact occurrence patterns by simultaneously predicting all
-the contacts in a single protein.
+CASP) [@url:http://www.cameo3d.org/], its predicted contacts were also able to
+fold proteins with a novel fold and only 65-330 sequence homologs. This
+technique also worked well on membrane proteins even when trained on
+non-membrane proteins [@arxiv:1704.07207]. RaptorX-Contact performed better
+mainly due to introduction of residual neural networks and exploitation of
+contact occurrence patterns by simultaneously predicting all the contacts in a
+single protein.
 
-Taken together, *ab initio* folding is becoming much easier with the advent
-of direct evolutionary coupling analysis and deep learning techniques.
-We believe it is still possible to further improve contact
-prediction for proteins with fewer than 1000 homologs by studying new deep
-network architectures. However, it is unclear whether there is an effective way
-to use deep learning to improve prediction for proteins with almost no sequence homologs.
-Finally, the deep learning methods summarized above also apply to interfacial
-contact prediction for protein complexes, but may be less effective since on
-average protein complexes have fewer sequence homologs.
+Taken together, *ab initio* folding is becoming much easier with the advent of
+direct evolutionary coupling analysis and deep learning techniques. We believe
+it is still possible to further improve contact prediction for proteins with
+fewer than 1000 homologs by studying new deep network architectures. However, it
+is unclear whether there is an effective way to use deep learning to improve
+prediction for proteins with almost no sequence homologs. Finally, the deep
+learning methods summarized above also apply to interfacial contact prediction
+for protein complexes, but may be less effective since on average protein
+complexes have fewer sequence homologs.
 
 ### Morphological phenotypes
 
@@ -517,16 +521,16 @@ an image, deep learning is unconstrained by human intuition and can in theory
 extract more subtle features through its hidden nodes. Already, there is
 evidence deep learning can surpass the efficacy of classical methods
 [@doi:10.1101/081364], even using generic deep convolutional networks trained on
-natural images [@doi:10.1101/085118], known as transfer learning.
-Recent work by Johnson et al. [@tag:Johnson2017_integ_cell] demonstrated how
-the use of a conditional adversarial autoencoder allows for a probabilistic
-interpretation of cell and nuclear morphology and structure localization from
-fluorescence images. The proposed model is able to generalize well to a wide
-range of subcellular localizations. The generative nature of the model allows it
-to produce high quality synthetic images predicting localization of subcellular
-structures by directly modeling the localization of fluorescent labels. Notably,
-this approach reduces the modeling time by omitting the subcellular structure
-segmentation step.
+natural images [@doi:10.1101/085118], known as transfer learning. Recent work by
+Johnson et al. [@tag:Johnson2017_integ_cell] demonstrated how the use of a
+conditional adversarial autoencoder allows for a probabilistic interpretation of
+cell and nuclear morphology and structure localization from fluorescence images.
+The proposed model is able to generalize well to a wide range of subcellular
+localizations. The generative nature of the model allows it to produce high
+quality synthetic images predicting localization of subcellular structures by
+directly modeling the localization of fluorescent labels. Notably, this approach
+reduces the modeling time by omitting the subcellular structure segmentation
+step.
 
 The impact of further improvements on biomedicine could be enormous. Comparing
 cell population morphologies using conventional methods of segmentation and
