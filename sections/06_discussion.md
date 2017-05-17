@@ -205,8 +205,8 @@ considered approximations to the Shapely values, which have a long history in
 game theory for assigning contributions to players in cooperative games.
 Briefly, the Shapely values measure the average marginal benefit of including a
 player over all possible orders in which the players could be included
-[@tag:Shapely_wikipedia]. In the case of DeepLIFT, the "inclusion" of a player
-is analogous to setting a particular input to its actual value rather than its
+[@tag:Shapely]. In the case of DeepLIFT, the "inclusion" of a player is
+analogous to setting a particular input to its actual value rather than its
 reference value. DeepLIFT introduced a modification which treated positive and
 negative contributions separately to address some failure cases of integrated
 gradients; the modification can be understood as an improved approximation of
