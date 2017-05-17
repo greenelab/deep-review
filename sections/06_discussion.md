@@ -356,12 +356,13 @@ noting that some machine learning methods are less interpretable in
 practice than one might expect; for example, a linear model trained on
 heavily engineered features might be difficult to interpret as the input
 features themselves are difficult to interpret. Similarly, a decision tree
-with many nodes and branches may also be difficult for a human to make sense of. 
+with many nodes and branches may also be difficult for a human to make
+sense of.
 
 There are several directions that might benefit the development of
 interpretability
 techniques. The first is the introduction of
-gold-standard benchmarks that different interpretability 
+gold-standard benchmarks that different interpretability
 approaches could be compared against,
 similar in spirit to how datasets like ImageNet and CIFAR spurred the
 development of deep learning for computer vision. It would also
