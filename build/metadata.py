@@ -1,3 +1,5 @@
+import json
+import urllib.parse
 import urllib.request
 
 import requests
@@ -65,18 +67,14 @@ def get_url_citeproc_greycite(url):
     http://knowledgeblog.org/greycite
     https://arxiv.org/abs/1304.7151
     https://git.io/v9N2C
+
+    Uses urllib.request.urlopen rather than requests.get due to
+    https://github.com/kennethreitz/requests/issues/4023
     """
-    base_url = 'http://greycite.knowledgeblog.org/json'
-    params = {
-        'uri': url,
-    }
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; rv:45.0) Gecko/20100101 Firefox/45.0',  # noqa: E501
-    }
-    with requests.Session() as session:
-        session.headers.update(headers)
-        response = session.get(base_url, params=params, timeout=60)
-    return response.json()
+    encoded = urllib.parse.urlencode(url)
+    api_url = f'http://greycite.knowledgeblog.org/json?uri={encoded}'
+    response = urllib.request.urlopen(api_url)
+    return json.loads(response.read())
 
 
 def get_url_citeproc_manual(url):
