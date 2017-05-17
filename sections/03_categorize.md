@@ -428,7 +428,7 @@ Methods to accomplish more with little high-quality labeled data are also being
 applied in other domains and may also be adapted to this challenge, e.g. data
 programming [@arxiv:1605.07723]. In data programming, noisy automated labeling
 functions are integrated. Numerous writers have described data as the new oil
-[@url:http://ana.blogs.com/maestros/2006/11/data_is_the_new.html,
+[@url:http://ana.blogs.com/maestros/2006/11/data_is_the_new.html
 @url:https://medium.com/twenty-one-hundred/data-is-the-new-oil-a-ludicrous-proposition-1d91bba4f294].
 The idea behind this metaphor is that data are available in large quantities,
 valuable once refined, and the underlying resource that will enable a
@@ -478,8 +478,7 @@ can be less complete and less objective than expected.
 In the wider picture, standards for EHRs are many and evolving. Proprietary
 systems, indifferent and scattered use of health information standards and
 controlled terminologies makes combining and comparison of data across systems
-challenging [@url:http://www.ncrr.nih.gov/publications/informatics/ehr.pdf
-@doi:10.1016/j.jbi.2014.10.006]. Further diversity arises from variation in
+challenging [@doi:10.1016/j.jbi.2014.10.006]. Further diversity arises from variation in
 languages, healthcare practices and demographics. Merging EHR gathered in
 different systems (and even under different assumptions) is challenging
 [@doi:10.1007/978-3-319-44839-8].
