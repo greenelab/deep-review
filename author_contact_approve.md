@@ -21,3 +21,4 @@
 | dhimmel | Daniel S. Himmelstein | 0000-0002-3012-7446 | Department of Systems Pharmacology and Translational Therapeutics. Perelman School of Medicine. University of Pennsylvania. | daniel.himmelstein@gmail.com | Yes | Gordon and Betty Moore Foundation GBMF 4552 |
 | jacklanchantin | Jack Lanchantin | 0000-0003-0811-0944 | University of Virginia. Department of Computer Science | jjl5sw@virginia.edu | Yes |  |
 | qiyanjun | Yanjun Qi | 0000-0002-5796-7453 | University of Virginia. Department of Computer Science | yq2h@virginia.edu | Yes |  |
+| AvantiShri | Avanti Shrikumar | 0000-0002-6443-4671 | University of Virginia. Department of Computer Science | avanti@stanford.edu | Yes (pending minor feedback) |  |
