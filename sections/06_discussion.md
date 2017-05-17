@@ -117,28 +117,25 @@ divided into perturbation-based approaches and backpropagation-based approaches.
 
 These approaches make perturbations to parts of the input and observe the impact
 on the output of the network. Alipanahi et al. [@tag:Alipanahi2015_predicting]
-and Zhou & Troyanskaya [@tag:Zhou2015_deep_sea]
-scored genomic sequences by introducing virtual mutations at
-individual positions in the sequence and
+and Zhou & Troyanskaya [@tag:Zhou2015_deep_sea] scored genomic sequences by
+introducing virtual mutations at individual positions in the sequence and
 quantifying the change in the output. Umarov et al.
-[@doi:10.1371/journal.pone.0171410] used a similar strategy, but with
-sliding windows where the sequence within each sliding window
-was substituted with a random sequence.
-Kelley et al. [@tag:Kelley2016_basset] inserted known protein-binding
-motifs into the centers of sequences and assessed the change in predicted
-accessibility.
+[@doi:10.1371/journal.pone.0171410] used a similar strategy, but with sliding
+windows where the sequence within each sliding window was substituted with a
+random sequence. Kelley et al. [@tag:Kelley2016_basset] inserted known
+protein-binding motifs into the centers of sequences and assessed the change in
+predicted accessibility.
 
-Ribeiro et al. [@tag:Ribeiro2016_lime]
-introduced LIME which constructs a linear model to locally approximate the
-output of the network on perturbed versions of the input and assigned importance
-scores accordingly. For analyzing images, Zeiler and Fergus
-[@tag:Zeiler2013_visualizing] applied constant-value masks to different input
-patches and studied the changes in the activations of later layers. As an
-alternative to using masks, which can look artificial compared to typical
-values for an input patch, Zintgraf et
-al. [@tag:Zintgraf2017_visualizing] proposed a novel strategy based on
-marginalizing over plausible values of an input patch to more accurately
-estimate its contribution.
+Ribeiro et al. [@tag:Ribeiro2016_lime] introduced LIME which constructs a linear
+model to locally approximate the output of the network on perturbed versions of
+the input and assigned importance scores accordingly. For analyzing images,
+Zeiler and Fergus [@tag:Zeiler2013_visualizing] applied constant-value masks to
+different input patches and studied the changes in the activations of later
+layers. As an alternative to using masks, which can look artificial compared to
+typical values for an input patch, Zintgraf et al.
+[@tag:Zintgraf2017_visualizing] proposed a novel strategy based on marginalizing
+over plausible values of an input patch to more accurately estimate its
+contribution.
 
 A common drawback to perturbation-based approaches is computational efficiency:
 each perturbed version of an input requires a separate forward propagation
@@ -206,16 +203,14 @@ gradients. Lundberg and Lee [@tag:Lundberg2016_an] noted that several importance
 scoring methods, including DeepLIFT, integrated gradients and LIME, could all be
 considered approximations to the Shapely values, which have a long history in
 game theory for assigning contributions to players in cooperative games.
- Briefly, the Shapely values measure the average marginal benefit of including
- a player over all possible orders in which the players could be included
- [@tag:Shapely_wikipedia].
- In the case of DeepLIFT, the "inclusion" of a player is analogous to
- setting a particular input to its actual value rather than its reference
- value.
- DeepLIFT introduced a
-modification which treated positive and negative contributions separately to
-address some failure cases of integrated gradients; the modification can be
-understood as an improved approximation of the Shapely values.
+Briefly, the Shapely values measure the average marginal benefit of including a
+player over all possible orders in which the players could be included
+[@tag:Shapely_wikipedia]. In the case of DeepLIFT, the "inclusion" of a player
+is analogous to setting a particular input to its actual value rather than its
+reference value. DeepLIFT introduced a modification which treated positive and
+negative contributions separately to address some failure cases of integrated
+gradients; the modification can be understood as an improved approximation of
+the Shapely values.
 
 #### Matching or exaggerating the hidden representation
 
@@ -339,39 +334,33 @@ that produce similar results to the whole input when passed through an encoder.
 The authors applied their approach to a sentiment analysis task and obtained
 substantially superior results compared to an attention-based method.
 
-#### Final thoughts
+#### Future outlook
 
-While deep learning certainly lags behind most Bayesian models in
-terms of interpretability, one can safely argue that the
-interpretability of deep
+While deep learning certainly lags behind most Bayesian models in terms of
+interpretability, one can safely argue that the interpretability of deep
 learning is comparable to or exceeds that of many other widely-used machine
-learning methods such as Random Forests or SVMs. While it is possible to
-obtain importance scores for different inputs in a Random Forest, the
-same is true for deep learning. Similarly, SVMs trained with a nonlinear
-kernel are not easily interpretable as the use of the kernel means that
-one does not obtain an explicit weight matrix. Finally, it is worth
-noting that some machine learning methods are less interpretable in
-practice than one might expect; for example, a linear model trained on
-heavily engineered features might be difficult to interpret as the input
-features themselves are difficult to interpret. Similarly, a decision tree
-with many nodes and branches may also be difficult for a human to make
-sense of.
+learning methods such as Random Forests or SVMs. While it is possible to obtain
+importance scores for different inputs in a Random Forest, the same is true for
+deep learning. Similarly, SVMs trained with a nonlinear kernel are not easily
+interpretable as the use of the kernel means that one does not obtain an
+explicit weight matrix. Finally, it is worth noting that some machine learning
+methods are less interpretable in practice than one might expect; for example, a
+linear model trained on heavily engineered features might be difficult to
+interpret as the input features themselves are difficult to interpret.
+Similarly, a decision tree with many nodes and branches may also be difficult
+for a human to make sense of.
 
 There are several directions that might benefit the development of
-interpretability
-techniques. The first is the introduction of
-gold-standard benchmarks that different interpretability
-approaches could be compared against,
+interpretability techniques. The first is the introduction of gold-standard
+benchmarks that different interpretability approaches could be compared against,
 similar in spirit to how datasets like ImageNet and CIFAR spurred the
-development of deep learning for computer vision. It would also
-be helpful if the community placed
-more emphasis on domains outside of computer vision; computer vision is
-often used as the example application of interpretability methods,
-but it is arguably not the domain
-with the most pressing need. Finally, closer integration of interpretability
-approaches with popular deep learning frameworks would make it easier for
-practitioners to apply and experiment with different approaches to
-understanding their deep learning models.
+development of deep learning for computer vision. It would also be helpful if
+the community placed more emphasis on domains outside of computer vision;
+computer vision is often used as the example application of interpretability
+methods, but it is arguably not the domain with the most pressing need. Finally,
+closer integration of interpretability approaches with popular deep learning
+frameworks would make it easier for practitioners to apply and experiment with
+different approaches to understanding their deep learning models.
 
 ### Data limitations
 
