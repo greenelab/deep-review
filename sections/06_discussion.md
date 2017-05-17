@@ -6,21 +6,83 @@ can be further pruned.*
 
 ### Evaluation
 
-There are unique challenges to evaluating deep learning predictions in the biomedical domain. We focus on TF binding prediction as a representative task to illustrate some of these issues. The human genome has 3E9 base pairs and only a small fraction of them are implicated in specific biochemical activities. As a result, classification of genomic regions based on their biochemical activity results in highly imbalanced classification, which also arises in other problems we review such as virtual screening for drug discovery. What are appropriate evaluation metrics that account for the label imbalance? The classification labels are formulated based on continuous value experimental signals - what is an appropriate procedure for formulating binary classification labels based on these signals? The experimental signals are only partially reproducible across experimental replicates - what is an appropriate upper bound for classification performance that accounts for the experimental reproducibility?
+There are unique challenges to evaluating deep learning predictions in the 
+biomedical domain. We focus on TF binding prediction as a representative task 
+to illustrate some of these issues. The human genome has 3E9 base pairs and 
+only a small fraction of them are implicated in specific biochemical 
+activities. As a result, classification of genomic regions based on their 
+biochemical activity results in highly imbalanced classification, which also 
+arises in other problems we review such as virtual screening for drug 
+discovery. What are appropriate evaluation metrics that account for the label 
+imbalance? The classification labels are formulated based on continuous value 
+experimental signals - what is an appropriate procedure for formulating binary 
+classification labels based on these signals? The experimental signals are 
+only partially reproducible across experimental replicates - what is an 
+appropriate upper bound for classification performance that accounts for the 
+experimental reproducibility?
 
 #### Evaluation metrics for imbalanced classification
 
-Small fractions of the genome are implicated in biochemical activities such as TF binding and histone modifications. For example, less than 1% of the genome can be confidently labeled as bound for most transcription factors. Therefore, it is important to evaluate the genome-wide recall and false discovery rate (FDR) of classification models of biochemical activities. Targeted validation experiments of specific biochemical activities usually necessitate an FDR of 5%-25%. When predicted biochemical activities are used as features in other models, such as gene expression models, a low FDR may not be as critical if the downstream models can satisfy their evaluation criteria; an FDR of 50% in this context may suffice.
+Small fractions of the genome are implicated in biochemical activities such as 
+TF binding and histone modifications. For example, less than 1% of the genome 
+can be confidently labeled as bound for most transcription factors. Therefore, 
+it is important to evaluate the genome-wide recall and false discovery rate 
+(FDR) of classification models of biochemical activities. Targeted validation 
+experiments of specific biochemical activities usually necessitate an FDR of 
+5%-25%. When predicted biochemical activities are used as features in other 
+models, such as gene expression models, a low FDR may not be as critical if 
+the downstream models can satisfy their evaluation criteria; an FDR of 50% in 
+this context may suffice.
 
-What is the correspondence between these metrics and commonly used classification metrics such as auPRC and auROC? auPRC evaluates the average precision, or equivalently, the average FDR across all recall thresholds. This metric provides an overall estimate of performance across all possible use cases which can be misleading for targeted validation experiments. For example, classification of TF binding sites can exhibit a recall of 0% at 10% FDR and auPRC greater than 0.6. In this case, the auPRC may be competitive but the predictions are prohibitive for targeted validation that can only examine a couple of predictions. auROC evaluates the average recall across all false positive rate (FPR) thresholds which is often a highly misleading metric in class-imbalanced domains [@doi:10.1145/1143844.1143874 @doi:10.1038/nmeth.3945]. For example, consider a classification model with recall of 0% at FDR less than 25% and 100% recall at FDR greater than 25%. In the context of TF binding predictions where only 1% of genomic regions are bound by the TF, this is equivalent to a recall of 100% for FPR greater than 0.33%. In other words, the auROC would be 0.9967 and not indicative of the predictive utility for targeted validation. It is not unusual to obtain a chromosome-wide auROC greater than 0.99 for TF binding predictions but a recall of 0% at 10% FDR. The classifier would appear to be nearly perfect based on auROC but has no practical utility to prioritize high-confidence binding sites for experimental validation.
+What is the correspondence between these metrics and commonly used 
+classification metrics such as auPRC and auROC? auPRC evaluates the average 
+precision, or equivalently, the average FDR across all recall thresholds. This 
+metric provides an overall estimate of performance across all possible use 
+cases which can be misleading for targeted validation experiments. For 
+example, classification of TF binding sites can exhibit a recall of 0% at 10% 
+FDR and auPRC greater than 0.6. In this case, the auPRC may be competitive but 
+the predictions are prohibitive for targeted validation that can only examine 
+a couple of predictions. auROC evaluates the average recall across all false 
+positive rate (FPR) thresholds which is often a highly misleading metric in 
+class-imbalanced domains [@doi:10.1145/1143844.1143874 
+@doi:10.1038/nmeth.3945]. For example, consider a classification model with 
+recall of 0% at FDR less than 25% and 100% recall at FDR greater than 25%. In 
+the context of TF binding predictions where only 1% of genomic regions are 
+bound by the TF, this is equivalent to a recall of 100% for FPR greater than 
+0.33%. In other words, the auROC would be 0.9967 and not indicative of the 
+predictive utility for targeted validation. It is not unusual to obtain a 
+chromosome-wide auROC greater than 0.99 for TF binding predictions but a 
+recall of 0% at 10% FDR. The classifier would appear to be nearly perfect 
+based on auROC but has no practical utility to prioritize high-confidence 
+binding sites for experimental validation.
 
 #### Formulation of classification labels
 
-Genome-wide continuous signals are commonly formulated into classification labels through signal peak detection. For example, peaks in ChIP-seq signal are used to identify locations of TF binding and histone modifications. Such procedures rely on thresholding criteria to define what constitutes a peak in the signal. This inevitably results in a set of signal peaks that are close to the threshold, not sufficient to constitute a positive label, and too similar to positively labeled examples to constitute a negative label. To avoid an arbitrary label for these example they may be labeled as “ambiguous”. Ambiguously labeled examples can then be ignored during model training and evaluation of recall and FDR. The correlation between model predictions on these examples and their signal values can be used to evaluate if the model correctly ranks these examples between positive and negative examples.
+Genome-wide continuous signals are commonly formulated into classification 
+labels through signal peak detection. For example, peaks in ChIP-seq signal 
+are used to identify locations of TF binding and histone modifications. Such 
+procedures rely on thresholding criteria to define what constitutes a peak in 
+the signal. This inevitably results in a set of signal peaks that are close to 
+the threshold, not sufficient to constitute a positive label, and too similar 
+to positively labeled examples to constitute a negative label. To avoid an 
+arbitrary label for these example they may be labeled as “ambiguous”. 
+Ambiguously labeled examples can then be ignored during model training and 
+evaluation of recall and FDR. The correlation between model predictions on 
+these examples and their signal values can be used to evaluate if the model 
+correctly ranks these examples between positive and negative examples.
 
 #### Formulation of a performance upper bound
 
-Genome-wide signals across experiments can lead to different sets of positive examples. When experimental replicates do not completely agree, a 100% recall at 25% FDR is not possible. The upper bound on the recall is the fraction of positive examples that are in agreement across experiments. This fraction will vary depending on the available experimental data. For example, reproducibility for experimental replicates from the same lab is typically higher than experimental replicates across multiple labs. One way to handle the range of reproducibility is the use of multiple reproducibility criteria such as reproducibility across technical replicates, biological replicates from the same lab, and biological replicates from multiple labs.
+Genome-wide signals across experiments can lead to different sets of positive 
+examples. When experimental replicates do not completely agree, a 100% recall 
+at 25% FDR is not possible. The upper bound on the recall is the fraction of 
+positive examples that are in agreement across experiments. This fraction will 
+vary depending on the available experimental data. For example, 
+reproducibility for experimental replicates from the same lab is typically 
+higher than experimental replicates across multiple labs. One way to handle 
+the range of reproducibility is the use of multiple reproducibility criteria 
+such as reproducibility across technical replicates, biological replicates 
+from the same lab, and biological replicates from multiple labs.
 
 ### Interpretation
 
@@ -53,13 +115,15 @@ primarily focused on integrating attention mechanisms with the neural networks.
 Attention mechanisms dynamically weight the importance the neural network gives
 to each feature. By inspecting the attention weights for a particular sample, a
 practitioner can identify the important features for a particular prediction.
-Choi et al [@tag:Choi2016_retain] inverted the typical architecture of recurrent
+Choi et al [@tag:Choi2016_retain] inverted the typical architecture of 
+recurrent
 neural networks to improve interpretability. In particular, they only used
 recurrent connections in the attention generating procedure, leaving the hidden
 state directly connected to the input variables. In the clinical domain, this
 model was able to produce accurate diagnoses in which the contribution of
 previous hospital visits could be directly interpreted. Choi et al
-[@tag:Choi2016_gram] later extended this work to take into account the structure
+[@tag:Choi2016_gram] later extended this work to take into account the 
+structure
 of disease ontologies and found that the concepts represented by the model were
 aligned with medical knowledge. Che et al [@tag:Che2015_distill] introduced a
 knowledge-distillation approach which used gradient boosted trees to learn
@@ -68,7 +132,8 @@ interpretable healthcare features from trained deep models.
 ### Data limitations
 
 *Related to evaluation, are there data quality issues in genomic, clinical, and
-other data that make this domain particularly challenging?  Are these worse than
+other data that make this domain particularly challenging?  Are these worse 
+than
 what is faced in other non-biomedical domains?*
 
 *Many applications have used relatively small training datasets.  We might
@@ -87,7 +152,8 @@ tests etc).*
 *Classical machine learning recommendations were to have 10x samples per number
 of parameters in the model.*
 
-*Number of parameters in an MLP. Convolutions and similar strategies help but do
+*Number of parameters in an MLP. Convolutions and similar strategies help but 
+do
 not solve*
 
 *Bengio diet networks paper*
@@ -318,7 +384,8 @@ separately trained datatype-specific networks, suggesting that it learns the
 synergistic relationship between datasets.
 
 Multi-task learning (MTL) is an approach related to transfer learning.
-In an MTL framework a model co-learns a number of tasks simultaneously such that
+In an MTL framework a model co-learns a number of tasks simultaneously such 
+that
 features are shared across them.
 DeepSEA framework [@tag:Zhou2015_deep_sea] implemented a multi-task joint
 learning of diverse chromatin factors sharing predictive features from raw
@@ -365,7 +432,8 @@ a number of challenges. As mentioned above, there are no theoretically sound
 principles for pre-training and fine-tuning. Most best practice recommendations
 are heuristic and have to take into account additional hyper-parameters that
 depend on specific deep architectures, sizes of pre-training and target
-datasets, and similarity of domains. However, similarity of datasets and domains
+datasets, and similarity of domains. However, similarity of datasets and 
+domains
 in transfer learning and relatedness of tasks in MTL are difficult to access.
 Most current studies address these limitations by empirical evaluation of the
 model using established best practices or heuristics and cross-validation.
@@ -390,10 +458,12 @@ models, specifically nuclear receptor assays and patient adverse reactions
 Overall, multimodal, multi-task and transfer learning strategies demonstrate
 high potential for many biomedical applications that are otherwise limited
 by data volume and presence of labels. However, these methods not only inherit
-most methodological issues from natural image, text, and audio domains, but also
+most methodological issues from natural image, text, and audio domains, but 
+also
 pose new challenges, specific to biological data. Making negative results,
 source code, and pre-trained models publicly available helps to accelerate
-progress in this direction. However, there are privacy considerations for models
+progress in this direction. However, there are privacy considerations for 
+models
 trained on sensitive data, such as patient-related information (see Data
 sharing section). Thus, there is a compelling need for the development of
 privacy-preserving transfer learning algorithms, such as Private Aggregation
