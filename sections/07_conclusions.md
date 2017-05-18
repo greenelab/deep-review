@@ -103,7 +103,7 @@ To facilitate citation, we [defined](https://github.com/greenelab/deep-review/bl
 We supported citations to the following identifier types (in order of preference): DOIs, PubMed IDs, arXiv IDs, and URLs.
 References were automatically generated from citation metadata by querying APIs to generate [Citation Style Language](http://citationstyles.org/) (CSL) JSON items for each reference.
 [Pandoc](http://pandoc.org/) and [pandoc-citeproc](https://github.com/jgm/pandoc-citeproc) converted the markdown to HTML and PDF, while rendering the formatted citations and references.
-In total, referenced works consisted of XX DOIs, XX PubMed IDs, XX arXiv IDs, and XX URLs.
+In total, referenced works consisted of 274 DOIs, 4 PubMed records, 106 arXiv preprints, and 42 webpages.
 
 We implemented continuous analysis so the manuscript was automatically regenerated whenever the source changed [@doi:10.1038/nbt.3780].
 We configured Travis CI — a continuous integration service — to fetch new citation metadata and rebuild the manuscript for every commit.
