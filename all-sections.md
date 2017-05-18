@@ -500,7 +500,7 @@ processes to distinguish gout from leukemia from uric acid sequences. Later work
 showed that unsupervised feature construction of many features via denoising
 autoencoder neural networks could dramatically reduce the number of labeled
 examples required for subsequent supervised analyses
-[@5x3uMSKi; @aM2Uy2ix]. In addition, it pointed
+[@5x3uMSKi]. In addition, it pointed
 towards learned features being useful for subtyping within a single disease. In
 a concurrent large-scale analysis of EHR data from 700,000 patients, Miotto et
 al. [@WrNCJ9sO] used a deep denoising autoencoder architecture
@@ -725,8 +725,9 @@ parameter which provides a quantification of privacy. Simmons et al.
 [@6XtEfQMC] present the ability to perform GWASs in a
 differentially private manner and Abadi et al. [@ucHUOABT] show the
 ability to train deep learning classifiers under the differential privacy
-framework. Federated learning [@TaPZBxYS] and secure aggregations
-[@U0ySdznJ; @1GprsH3DV; @b8DJ1u6W] are
+framework. Federated learning
+[@U0ySdznJ] and secure aggregations
+[@1GprsH3DV; @b8DJ1u6W] are
 complementary approaches that reinforce differential privacy. Both aim to
 maintain privacy by training deep learning models from decentralized data
 sources such as personal mobile devices without transferring actual training
@@ -1074,7 +1075,7 @@ useful.
 
 Critically, deep learning can also provide useful biological insights into TF
 binding. Lanchantin et al. [@Dwi2eAvT] and Shrikumar et al.
-[@xAbGxia4] developed tools to visualize TF motifs learned
+[@zhmq9ktJ] developed tools to visualize TF motifs learned
 from TFBS classification tasks. Alipanahi et al. [@2UI1BZuD]
 also introduced mutation maps, where they could easily mutate, add, or delete
 base pairs in a sequence and see how the model changed its prediction. This
@@ -2232,7 +2233,7 @@ backpropagation-like pass. A classic example of this calculating the gradients
 of the output w.r.t. the input [@1YcKYTvO] to compute a "saliency
 map". Bach et al. [@au5CLIOH] proposed a strategy called Layerwise
 Relevance Propagation, which was shown to be equivalent to the elementwise
-product of the gradient and input [@xAbGxia4; @b1sc0cgP]. Several variants of gradients exist which
+product of the gradient and input [@zhmq9ktJ; @b1sc0cgP]. Several variants of gradients exist which
 differ in their handling of the ReLU nonlinearity. While gradients zero-out the
 importance signal at ReLUs if the input to the ReLU is negative, deconvolutional
 networks [@voh0OiT2] zero-out the importance signal if the
