@@ -97,7 +97,7 @@ and biological problems would require expertise from across computational
 biology and medicine. We created an open repository on the GitHub version
 control system [@url:https://github.com/greenelab/deep-review] and engaged with
 numerous authors from papers within and outside of the area. The manuscript was
-drafted via GitHub commits by `TODO #` individuals who met the ICJME standards
+drafted via GitHub commits by 25 individuals who met the ICJME standards
 of authorship. These were individuals who contributed to the review of the
 literature; drafted the manuscript or provided substantial critical revisions;
 approved the final manuscript draft; and agreed to be accountable in all aspects
@@ -111,5 +111,6 @@ did participate, are acknowledged at the end of the manuscript.
 We gratefully acknowledge Christof Angermueller, Kumardeep Chaudhary, Gökcen
 Eraslan, Michael M. Hoffman, Mikael Huss, Bharath Ramsundar and Xun Zhu for
 their discussion of the manuscript and reviewed papers on GitHub. We would like
-to thank Zhiyong Lu for revisions to the text that were not captured on GitHub.
-`TODO: add any other acknowledgement categories`
+to thank Zhiyong Lu for revisions to the text that were not captured on GitHub
+as well as GitHub users aaronsheldon, swamidass, and traversc who contributed
+text but did not formally approve the manuscript.
