@@ -161,7 +161,7 @@ backpropagation-like pass. A classic example of this calculating the gradients
 of the output w.r.t. the input [@tag:Simonyan2013_deep] to compute a "saliency
 map". Bach et al. [@tag:Bach2015_on] proposed a strategy called Layerwise
 Relevance Propagation, which was shown to be equivalent to the elementwise
-product of the gradient and input [@tag:Shrikumar2016_blackbox
+product of the gradient and input [@tag:Shrikumar2017_learning
 @tag:Kindermans2016_investigating]. Several variants of gradients exist which
 differ in their handling of the ReLU nonlinearity. While gradients zero-out the
 importance signal at ReLUs if the input to the ReLU is negative, deconvolutional
