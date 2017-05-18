@@ -123,7 +123,18 @@ print(f'''
 dup_df = ref_df[ref_df.standard_citation.duplicated(keep=False)]
 print(dup_df)
 
-# Convert to numbered refernces for pandoc
+# Number of distinct references by type
+type_counts = (
+    ref_df
+    .standard_citation
+    .drop_duplicates()
+    .map(lambda x: x.split(':')[0])
+    .value_counts()
+)
+print('References by type:')
+print(type_counts)
+
+# Convert to citation_id citations for pandoc
 converted_text = text
 for old, new in zip(ref_df.text, ref_df.citation_id):
     old = re.escape(old)
