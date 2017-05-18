@@ -44,92 +44,78 @@ regards to data availability and labeling.
 
 #### Imaging applications in healthcare
 
-One area where deep learning methods have had substantial success has been in
-image analysis. Applications in areas of medicine that use imaging extensively
-are also emerging. To the date, deep learning has been employed for a wide range
-of tasks in medical imaging, including classification of exams and
-lesions/nodules, localization of organs, regions, landmarks, and lesions,
-segmentation of organs, organ substructures, and lesions, medical image
-registration, content-based image retrieval, image generation and enhancement,
-and combining image data with clinical reports [@tag:Litjens2017_medimage_survey
+Deep learning methods have transformed the analysis of natural photographs and video,
+and similar examples are beginning to emerge with medical images.
+Deep learning has been used to classify
+lesions and nodules; localize organs, regions, landmarks and lesions;
+segment organs, organ substructures and lesions;
+retrieve images based on content; generate and enhance images;
+and combine images with clinical reports [@tag:Litjens2017_medimage_survey
 @tag:Shen2017_medimg_review].
 
-Closest to natural images are applications of deep learning aimed at detection
-and recognition of melanoma, the deadliest form of skin cancer. Recent works
-included applications to both dermoscopy [@tag:Codella2016_ensemble_melanoma
-@tag:Yu2016_melanoma_resnet] and non-dermoscopic clinical photography images of
-skin lesions [@tag:Jafari2016_skin_lesions @tag:Esfahani2016_melanoma
-@tag:Esteva2017_skin_cancer_nature]. For both modalities pre-training on natural
-images appears to be common model initialization that allows the use of very
-deep networks without overfitting. Reported performance is competitive or better
-compared to a board of certified dermatologists
-[@tag:Codella2016_ensemble_melanoma @tag:Esteva2017_skin_cancer_nature]. This
-approach is known as transfer learning (see Discussion).
+Though there are many commonalities with the analysis of natural photographs,
+there are also key differences. In all cases that we examined, fewer than one
+million images were available for training, and datasets are often many orders
+of magnitude smaller than collections of natural photographs. To address this
+challenge, researchers addressing different subtasks have employed different
+strategies.
 
-Another fast emerging area of deep learning method applications is the detection
-of ophthalmological diseases such as diabetic retinopathy and age-related
-macular degeneration. Diagnosis of diabetic retinopathy through color fundus
-images became of interest for deep learning researchers and practitioners after
-the large labeled image set was made publicly available during the corresponding
-2015 Kaggle competition [@tag:Pratt2016_dr]. Most attempts included training a
-network from scratch [@tag:Pratt2016_dr @tag:Abramoff2016_dr
-@tag:Leibig2016_dr], while Gulshan et al. [@tag:Gulshan2016_dt] employed
+The first strategy repurposes features extracted from natural photographs by deep learning for new purposes.
+Diagnosing diabetic retinopathy through color fundus
+images became an area of focus for deep learning researchers after
+a large labeled image set was made publicly available during a
+2015 Kaggle competition [@tag:Pratt2016_dr]. Most participants trained
+neural networks from scratch [@tag:Pratt2016_dr @tag:Abramoff2016_dr
+@tag:Leibig2016_dr], but Gulshan et al. [@tag:Gulshan2016_dt] repurposed a
 48-layer Inception-v3 deep architecture pre-trained on natural images and
-demonstrated substantial increase over the state-of-the-art in both specificity
-and sensitivity. Interestingly, Leibig et al. [@tag:Leibig2016_dr] proposed a
-method to estimate the uncertainty of deep networks in diabetic retinopathy
-diagnosis based on a recent theoretical insight on the link between dropout
-networks and approximate Bayesian inference. Such developments are important for
-the whole medical image analysis field, because they have a potential to provide
-information about a level of confidence for every black-box algorithm's
-classification result and, thus, improve pathologist-computer interaction. Deep
-networks were also recently applied to age-related macular degeneration
-detection, similarly demonstrating the power of transfer learning when training
-set is limited [@tag:Burlina2016_amd] as well as the efficient use of a deep
-16-layer architecture combined with EMR data for training set enrichment.
+surpassed the state-of-the-art in both specificity
+and sensitivity. Such features were also repurposed to detect
+melanoma, the deadliest form of skin cancer, from
+dermoscopic [@tag:Codella2016_ensemble_melanoma
+@tag:Yu2016_melanoma_resnet] and non-dermoscopic images of
+skin lesions [@tag:Jafari2016_skin_lesions @tag:Esfahani2016_melanoma
+@tag:Esteva2017_skin_cancer_nature]. Transfer learning also enabled an analysis
+to detect age-related macular degeneration [@tag:Burlina2016_amd]. Pre-training on natural
+images can enable very
+deep networks to succeed without overfitting. For the melanoma task, reported performance was competitive with or better
+than a board of certified dermatologists
+[@tag:Codella2016_ensemble_melanoma @tag:Esteva2017_skin_cancer_nature].
 
-Mammography has been one area with numerous contributions
-[@tag:Dhungel2015_struct_pred_mamm @tag:Dhungel2016_mamm
-@tag:Zhu2016_mult_inst_mamm @tag:Zhu2016_advers_mamm
-@tag:Dhungel2017_mamm_min_interv]. In most of this work, researchers must work
-around a challenge typical for the domain - the limited number of well annotated
-training images. To expand the number and diversity of images, the researchers
-have employed approaches where they use adversarial examples
-[@tag:Zhu2016_advers_mamm] or first train towards human-created features before
-subsequent fine tuning [@tag:Dhungel2016_mamm]. Adaptation to the medical image
-domain can be further improved by combining in the latter approach with other
-machine learning techniques, for example, as a cascade of deep learning and
-random forest models [@tag:Dhungel2017_mamm_min_interv]. Using large dataset,
-Kooi et al. [@tag:Kooi2016_mamm_lesions] demonstrated that deep neural networks
-can outperform the traditional computer-aided diagnosis (CAD) system at low
-sensitivity and perform comparably at high sensitivity. They also compared
-network performance to certified screening radiologists on a patch level and
-found no significant difference between the network and the readers. Similarly,
-Geras et al. [@tag:Geras2017_multiview_mamm] showed that both using large
-dataset and using multi-view network architecture help to improve classification
-performance. The presence of a publicly available large bank of well-annotated
-mammography images would aid in the application of deep neural networks to this
-area and shift research focus from model generalization to effective processing
-of large image sets. Deep network pre-trained on large annotated mammogram set
-can be helpful for related tasks that do not have as much data using transfer
-learning [@tag:Kooi2017_mamm_tl]. Though this strategy has not yet been employed
-in this domain, high-quality feature detectors can be constructed from large
-collections of unlabeled images in an unsupervised context. The small number of
-labeled examples could be used for subsequent training. Similar strategies have
-been employed for EHR data where high-quality labeled examples are also
-difficult to obtain [@tag:BeaulieuJones2016_ehr_encode].
-
-In radiological image analysis, deep learning techniques are increasingly used
-even when dataset size is not big enough to train large capacity models from
-scratch [@tag:Bar2015_nonmed_tl @tag:Shin2016_cad_tl
+The reuse of features from natural images is also becoming widely used with
+radiographic images, where datasets are often too small to train large without
+these techniques [@tag:Bar2015_nonmed_tl @tag:Shin2016_cad_tl
 @tag:Rajkomar2017_radiographs @tag:Lakhani2017_radiography]. All these studies
-demonstrate successful transfer of features learnt from natural image datasets,
+repurpose features from natural image datasets,
 such as ImageNet [@tag:Russakovsky2015_imagenet]. Rajkomar et al.
 [@tag:Rajkomar2017_radiographs] showed that a deep CNN trained on natural images
-can boost performance in radiology image classification. However, the target
+boosts performance in radiographic images. However, the target
 task required either re-training the initial model from scratch with special
 pre-processing or fine-tuning of the whole network on radiographs with heavy
-data augmentation to avoid overfitting. Shin et al. [@tag:Shin2016_cad_tl]
+data augmentation to avoid overfitting.
+
+The technique of reusing features from a different task falls into the broader area of
+transfer learning, which we devote a section to in the discussion.
+Though we've mentioned numerous successes for the transfer of natural image features to new tasks,
+we expect that a lower proportion of negative results would be published.
+Reuse is not always successful. The analysis of magnetic resonance
+images (MRIs) is also faced with the challenge of small training sets. In this
+domain, Amit et al. [@tag:Amit2017_breast_mri] investigated
+the tradeoff between pre-trained models from a different domain and
+a small CNN trained only with MRI images. They showed that the smaller network
+trained with sufficient data augmentation on few hundred images from a few dozen
+patients can outperform a pre-trained out-of-domain classifier. Data augmentation is a different strategy to deal with small training
+sets. The practice is exemplified by a series of papers that analyze images
+from mammographies [@tag:Dhungel2015_struct_pred_mamm @tag:Dhungel2016_mamm
+@tag:Zhu2016_mult_inst_mamm @tag:Zhu2016_advers_mamm
+@tag:Dhungel2017_mamm_min_interv]. To expand the number and diversity of images,
+researchers constructed adversarial examples
+[@tag:Zhu2016_advers_mamm]. Adversarial examples are
+constructed by applying a transformation that changes training images but not
+their content - for example by rotating an image by a random amount. The alternative in the domain is to train towards human-created features before
+subsequent fine tuning [@tag:Dhungel2016_mamm].
+
+Another way of dealing with limited training data is to split examples.
+Shin et al. [@tag:Shin2016_cad_tl]
 compared various deep network architectures, dataset characteristics, and
 training procedures for computer tomography-based (CT) abnormality detection.
 They concluded that in case of three-dimensional data networks as deep as 22
@@ -139,66 +125,45 @@ setting, and model fine-tuning needed is very problem and dataset-specific.
 Moreover, this type of tasks often depends on both lesion localization and
 appearance that pose challenges for CNN-based approaches. Straightforward
 attempts to capture useful information from full-size images in all three
-dimensions simultaneously make applications of standard neural network
-architectures computationally unfeasible due to the curse of dimensionality.
-Instead, two dimensional models are often used to either process image slices
+dimensions simultaneously via standard neural network architectures were computationally unfeasible.
+Instead, two dimensional models were used to either process image slices
 individually (2D), or aggregate information from a number of 2D projections in
 the native space (2.5D). Roth et al. compared 2D, 2.5D, and 3D CNNs on a number
 of tasks for computer-aided detection from CT scans and showed that 2.5D CNNs
 performed comparably well to 3D analogs, while requiring much less training
 time, especially on augmented training sets [@tag:Roth2015_view_agg_cad].
 Another advantage of 2D and 2.5D networks is a possibility to use widely
-available models pre-trained on natural images.
-
-Similarly, in magnetic resonance image (MRI) analysis, limited size of training
-sets and large dimensionality represent challenges to deep learning
-applications. For example, Amit et al. [@tag:Amit2017_breast_mri] investigated
-the tradeoffs between using pre-trained models from a different domain and
-retraining a small-size CNN on MRI images. They showed that smaller network
-trained with sufficient data augmentation on few hundred images from a few dozen
-patients can outperform a pre-trained out-of-domain classifier. Nie et al.
+available models pre-trained on natural images. But reducing the dimensionality
+is not always helpful.
+Nie et al.
 [@tag:Nie2016_3d_survival] showed that multimodal, multi-channel 3D deep
 architecture was successful at learning high-level brain tumor appearance
 features jointly from MRI, functional MRI and diffusion MRI images,
 outperforming single-modality or 2D models. Overall, the variety of modalities,
-properties and sizes of training sets, the dimensionality of input, and,
-finally, the importance of end goals in medical image analysis are provoking a
+properties and sizes of training sets, the dimensionality of input, and
+the importance of end goals in medical image analysis are provoking a
 development of specialized deep neural network architectures, training and
 validation protocols, and input representations that are not characteristic of
 widely studied natural images.
 
-Chest X-rays are a common radiological examination for screening and diagnosis
-of lung diseases. Although hospitals have accumulated a large number of raw
-radiology images and reports in Picture Archiving and Communication Systems and
-their related reports in Radiology Information System, it is not yet known how
-to effectively use them to learn the correlation between pathology categories
-and X-rays. In the last few years, deep learning methods showed remarkable
-results in chest X-ray image analysis [@arxiv:1701.06599 @arxiv:1705.02315].
-However, it is both costly and time-consuming to annotate a large-scale fully-
-labeled corpus to facilitate the data-hungry deep learning models. As an
-alternative, Wang et al. [@arxiv:1705.02315] proposed to use weakly labeled
-images for training deep learning models. To generate weak labels for X-ray
-images, they applied a series of Natural Language Processing (NLP) techniques to
-the associated chest X-ray radiological reports. Specifically, they first
-extracted all diseases mentioned in the reports using a state-of-the-art NLP
-tool, then applied a newly developed negation and uncertainty detection tool
-(NegBio) to filter negative and equivocal findings in the reports. Evaluation on
-three independent datasets demonstrated that NegBio is highly accurate for
-detecting negative and equivocal findings (~90% in F-measure overall). These
-highly accurate results meet the need to generate a corpus with weak labels,
-which serves as a solid foundation for the later process of image
-classification. The resulting dataset (CXR-XIV
-[@url:https://console.cloud.google.com/storage/browser/gcs-public-data--nih/radiology_2017/Chest_X-Ray_CVPR17])
-consists of 108,948 frontal-view chest X-ray images (from 32,717 patients) and
-each image is associated with one or more weakly-labeled pathology category
-(e.g. pneumonia and cardiomegaly) or "normal" otherwise. Further, Wang et al.
-[@arxiv:1705.02315] used this dataset with a unified weakly-supervised
-multi-label image classification framework, to detect common thoracic diseases.
-It showed superior performance over a benchmark using fully labeled data.
+Predictions from deep neural networks can be evaluated for use in workflows that
+also incorporate human experts. In a large dataset of mammography images,
+Kooi et al. [@tag:Kooi2016_mamm_lesions] demonstrated that deep neural networks
+outperform the traditional computer-aided diagnosis (CAD) system at low
+sensitivity and perform comparably at high sensitivity. They also compared
+network performance to certified screening radiologists on a patch level and
+found no significant difference between the network and the readers. However,
+using deep methods for clinical practice is challenged by the difficulty of assigning
+a level of confidence to each prediction. Leibig et al. [@tag:Leibig2016_dr]
+estimated the uncertainty of deep networks for diabetic retinopathy
+diagnosis by linking dropout
+networks with approximate Bayesian inference. Techniques that assign confidences
+to each prediction should aid pathologist-computer interactions and improve
+uptake by physicians.
 
-In addition to medical imaging, histology slides are also being analyzed with
-deep learning approaches [@tag:Litjens2016_histopath_survey]. Ciresan et al.
-[@tag:Ciresan2013_mitosis] developed one of the earliest examples, winning the
+Systems to aid in the analysis of histology slides are also promising use cases
+for deep learning [@tag:Litjens2016_histopath_survey]. Ciresan et al.
+[@tag:Ciresan2013_mitosis] developed one of the earliest approaches for histology slides, winning the
 2012 International Conference on Pattern Recognition's Contest on Mitosis
 Detection while achieving human competitive accuracy. Their approach uses what
 has become a standard convolutional neural network architecture trained on
@@ -230,6 +195,44 @@ is not yet a single accepted standard within the field of biomedical research
 for such evaluations. We recommend the use of an independent test set wherever
 it is feasible. Despite this minor limitation, the work clearly illustrates the
 potential that can be unlocked from images stored in electronic health records.
+
+Chest X-rays are a common radiological examination for screening and diagnosis
+of lung diseases. Although hospitals have accumulated a large number of raw
+radiology images and reports in Picture Archiving and Communication Systems and
+their related reports in Radiology Information System, it is not yet known how
+to effectively use them to learn the correlation between pathology categories
+and X-rays. In the last few years, deep learning methods showed remarkable
+results in chest X-ray image analysis [@arxiv:1701.06599 @arxiv:1705.02315].
+However, it is both costly and time-consuming to annotate a large-scale fully-
+labeled corpus to facilitate the data-hungry deep learning models. As an
+alternative, Wang et al. [@arxiv:1705.02315] proposed to use weakly labeled
+images for training deep learning models. To generate weak labels for X-ray
+images, they applied a series of Natural Language Processing (NLP) techniques to
+the associated chest X-ray radiological reports. Specifically, they first
+extracted all diseases mentioned in the reports using a state-of-the-art NLP
+tool, then applied a newly developed negation and uncertainty detection tool
+(NegBio) to filter negative and equivocal findings in the reports. Evaluation on
+three independent datasets demonstrated that NegBio is highly accurate for
+detecting negative and equivocal findings (~90% in F-measure overall). These
+highly accurate results meet the need to generate a corpus with weak labels,
+which serves as a solid foundation for the later process of image
+classification. The resulting dataset (CXR-XIV
+[@url:https://console.cloud.google.com/storage/browser/gcs-public-data--nih/radiology_2017/Chest_X-Ray_CVPR17])
+consists of 108,948 frontal-view chest X-ray images (from 32,717 patients) and
+each image is associated with one or more weakly-labeled pathology category
+(e.g. pneumonia and cardiomegaly) or "normal" otherwise. Further, Wang et al.
+[@arxiv:1705.02315] used this dataset with a unified weakly-supervised
+multi-label image classification framework, to detect common thoracic diseases.
+It showed superior performance over a benchmark using fully labeled data.
+
+We illustrated augmentation with adversarial examples in the mammography domain,
+but Geras et al. [@tag:Geras2017_multiview_mamm] showed that both using a large
+dataset and multi-view network architecture aids classification
+performance. A large bank of publicly available well-annotated
+mammography images - akin to the resource now provided for X-ray images - may aid in the application of deep neural networks to this
+area. Deep networks pre-trained on large compendia [@tag:Kooi2017_mamm_tl] might
+be more suitable for transfer learning in this domain than models trained from
+standard photographs.
 
 These examples demonstrate that, except for few natural image-like problems
 (e.g. melanoma detection), biomedical imaging poses a number of challenges for
