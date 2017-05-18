@@ -1,14 +1,14 @@
 ## Introduction
 
 Biology and medicine are rapidly becoming data-intensive. A recent comparison of
-genomics with social media, online videos, and other data-intensive scientific
+genomics with social media, online videos, and other data-intensive
 disciplines suggested that genomics alone would equal or surpass other fields in
 data generation and analysis within the next decade
 [@doi:10.1371/journal.pbio.1002195]. The volume and complexity of these data
 present not only new opportunities, but also new challenges. Automated
 algorithms will be crucial in extracting meaningful patterns and actionable
 knowledge that allow us to better treat, categorize, or study disease, all
-within data constrained and privacy critical environments.
+within data-constrained and privacy-critical environments.
 
 Over the past five years, a class of machine learning algorithms known as deep
 learning has revolutionized image classification and speech recognition due to
@@ -28,13 +28,13 @@ assign to each data point).  In a famous and early example, scientists from
 Google demonstrated that a neural network "discovered" that cats, faces, and
 pedestrians were important components of online videos
 [@url:http://research.google.com/archive/unsupervised_icml2012.html], without
-being told to look for any of them. What if, more generally, deep learning could
+being told to look for them. What if, more generally, deep learning could
 solve the challenges presented by the growth of data in biomedicine? Could these
 algorithms identify the "cats" hidden in our data - the patterns unknown to the
-researcher - and act on them? In this review, we examine whether deep learning's
+researcher - and suggest ways to act on them? In this review, we examine whether deep learning's
 transformation of biomedical science is simply a matter of time or if there are
 unique challenges posed by biomedical data that render deep learning methods
-either more challenging or less fruitful to apply.
+either more challenging or less fruitful.
 
 ### Defining deep learning
 
