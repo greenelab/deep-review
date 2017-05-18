@@ -1042,8 +1042,9 @@ thus the models should be adapted from traditional deep learning models in order
 to account for such differences. For example, motifs may appear in either strand
 of a DNA sequence, resulting in two different forms of the motif (forward and
 reverse complement) due to complementary base pairing. To handle this issue,
-Shrikumar et al. [@iEmvzeT8] created a convolutional
-model that can find motifs in both directions. Since deep learning for protein
+specialized reverse complement convolutional models share parameters to
+find motifs in both directions [@iEmvzeT8].
+Since deep learning for protein
 binding prediction is still in early stages, we expect to see an increase in
 domain-specific architectures for this task.
 
@@ -1139,10 +1140,13 @@ in the way of comparative studies or formal benchmarks. We will therefore focus
 on a few recent characteristic studies to outline the state of the art and
 extant problems.
 
-Most broadly, Kelley et al. [@2CbHXoFn] trained CNNs on DNA
+Basset [@2CbHXoFn] trained CNNs on DNA
 accessibility datasets, getting a marked improvement on previous methods, albeit
-still with a high false positive rate. (Note as above, using DNA accessibility
-conflates enhancers with other functional sites.) This study also featured a
+still with a high false positive rate. The multi-task architecture resembles
+DeepSEA [@2UI1BZuD], which predicted open chromatin regions and
+histone modifications in addition to TF binding.
+Note as above, predicting DNA accessibility
+conflates enhancers with other functional sites. Basset also featured a
 useful interpretability approach, introducing known protein binding motifs into
 sequences and measuring the change in predicted accessibility.
 
@@ -1151,10 +1155,9 @@ in recognizing promoter sequences, achieving markedly better performance than
 conventional methods (sensitivity and specificity exceeding 90%). While some
 results were achieved over bacterial promoters (which are considerably simpler
 in structure), surprisingly roughly similar performance was found for human
-promoters. This work also included a promising and simple method for
-interpretability (randomly substituting bases in a recognized promoter region,
-then checking for a change in recognition) that would be useful to exploit more
-widely.
+promoters. This work also included a simple method for model
+interpretation, randomly substituting bases in a recognized promoter region,
+then checking for a change in recognition (see Discussion).
 
 Xu et al. [@jV2YerUS] applied CNNs to the detection of
 enhancers, achieving incremental improvements in specificity and sensitivity
@@ -1164,7 +1167,7 @@ Additionally, they compared the performance of different CNN architectures,
 finding that while layers for batch normalization improved performance,
 surprisingly deeper architectures decreased performance.
 
-Singh et al. [@14TqLB9iZ] also used batch normalization, approaching
+Singh et al. [@14TqLB9iZ] approached
 the problem of predicting enhancer-promoter interactions from solely the
 sequence and location of putative enhancers and promoters in a particular cell
 type. Performance was comparative to state-of-the-art conventional techniques
