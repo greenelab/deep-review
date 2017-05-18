@@ -23,3 +23,5 @@
 | qiyanjun | Yanjun Qi | 0000-0002-5796-7453 | University of Virginia. Department of Computer Science | yq2h@virginia.edu | Yes |  |
 | mrwns | Marwin H. S. Segler | 0000-0001-8008-0546 | Institute of Organic Chemistry, Westfälische Wilhelms-Universität Münster | marwin.segler@uni-muenster.de | Yes |  |
 | jisraeli | Johnny Israeli | 0000-0003-1633-5780 | Biophysics Program, Stanford University | jisraeli@stanford.edu | Yes |  |
+| xieconnect | Wei Xie | 0000-0002-1871-6846 | Electrical Engineering and Computer Science, Vanderbilt University | wei.xie@vanderbilt.edu | Yes | |
+| AvantiShri | Avanti Shrikumar | 0000-0002-6443-4671 | Stanford University, Department of Computer Science | avanti@stanford.edu | Yes |  |

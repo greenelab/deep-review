@@ -21,7 +21,7 @@ BeaulieuJones2016_ehr_encode	doi:10.1016/j.jbi.2016.10.007
 Bengio2015_prec	arxiv:1412.7024
 Berezikov2011_mirna	doi:10.1038/nrg3079
 Bergstra2011_hyper	url:https://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimization.pdf
-Bergstra2012_random	url:http://dl.acm.org/citation.cfm?id=2188395
+Bergstra2012_random	url:http://www.jmlr.org/papers/v13/bergstra12a.html
 Bracken2016_mirna	doi:10.1038/nrg.2016.134
 Boza	arxiv:1603.09195
 Buggenthin2017_imaged_lineage	doi:10.1038/nmeth.4182
@@ -198,9 +198,9 @@ Seide2014_parallel	doi:10.1109/ICASSP.2014.6853593
 Setty2015_seqgl	doi:10.1371/journal.pcbi.1004271
 Selvaraju2016_grad	arxiv:1610.02391
 Shaham2016_batch_effects	arxiv:1610.04181
+Shapely	doi:10.1515/9781400881970-018
 Shen2017_medimg_review	doi:10.1146/annurev-bioeng-071516-044442
 Shin2016_cad_tl	doi:10.1109/TMI.2016.2528162
-Shrikumar2016_blackbox	arxiv:1605.01713
 Shrikumar2017_learning	arxiv:1704.02685
 Shrikumar2017_reversecomplement	doi:10.1101/103663
 Simonyan2013_deep	arxiv:1312.6034

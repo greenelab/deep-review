@@ -115,19 +115,27 @@ divided into perturbation-based approaches and backpropagation-based approaches.
 
 ##### Perturbation-based approaches
 
-These approaches make perturbations to individual inputs and observes the impact
-on the output of the network. Zhou and Troyanskaya [@tag:Zhou2015_deep_sea]
-scored genomic sequences by introducing virtual mutations at each position and
-quantifying the change in the output. Ribeiro et al. [@tag:Ribeiro2016_lime]
-introduced LIME which constructs a linear model to locally approximate the
-output of the network on perturbed versions of the input and assigned importance
-scores accordingly. For analyzing images, Zeiler and Fergus
-[@tag:Zeiler2013_visualizing] applied constant-value masks to different input
-patches and studied the changes in the activations of later layers. As an
-alternative to using masks, which can produce misleading results, Zintgraf et
-al. [@tag:Zintgraf2017_visualizing] proposed a novel strategy based on
-marginalizing over plausible values of an input patch to more accurately
-estimate its contribution. `TODO: do we need an example of what is misleading?`
+These approaches make perturbations to parts of the input and observe the impact
+on the output of the network. Alipanahi et al. [@tag:Alipanahi2015_predicting]
+and Zhou & Troyanskaya [@tag:Zhou2015_deep_sea] scored genomic sequences by
+introducing virtual mutations at individual positions in the sequence and
+quantifying the change in the output. Umarov et al.
+[@doi:10.1371/journal.pone.0171410] used a similar strategy, but with sliding
+windows where the sequence within each sliding window was substituted with a
+random sequence. Kelley et al. [@tag:Kelley2016_basset] inserted known
+protein-binding motifs into the centers of sequences and assessed the change in
+predicted accessibility.
+
+Ribeiro et al. [@tag:Ribeiro2016_lime] introduced LIME which constructs a linear
+model to locally approximate the output of the network on perturbed versions of
+the input and assigned importance scores accordingly. For analyzing images,
+Zeiler and Fergus [@tag:Zeiler2013_visualizing] applied constant-value masks to
+different input patches and studied the changes in the activations of later
+layers. As an alternative to using masks, which can look artificial compared to
+typical values for an input patch, Zintgraf et al.
+[@tag:Zintgraf2017_visualizing] proposed a novel strategy based on marginalizing
+over plausible values of an input patch to more accurately estimate its
+contribution.
 
 A common drawback to perturbation-based approaches is computational efficiency:
 each perturbed version of an input requires a separate forward propagation
@@ -144,10 +152,6 @@ method took about 300 iterations to converge, compared to the ~5000 iterations
 used by LIME. One drawback of this approach is that the use of gradient descent
 requires the perturbation to have a differentiable form.
 
-`TODO: tag:Alipanahi2015_predicting (DeepBind) was in the original draft. Does
-that still fit somewhere?  It is okay to leave out, it is already cited in the
-TF binding section.`
-
 ##### Backpropagation-based approaches
 
 A second strategy for addressing the computational inefficiency of
@@ -157,7 +161,7 @@ backpropagation-like pass. A classic example of this calculating the gradients
 of the output w.r.t. the input [@tag:Simonyan2013_deep] to compute a "saliency
 map". Bach et al. [@tag:Bach2015_on] proposed a strategy called Layerwise
 Relevance Propagation, which was shown to be equivalent to the elementwise
-product of the gradient and input [@tag:Shrikumar2016_blackbox
+product of the gradient and input [@tag:Shrikumar2017_learning
 @tag:Kindermans2016_investigating]. Several variants of gradients exist which
 differ in their handling of the ReLU nonlinearity. While gradients zero-out the
 importance signal at ReLUs if the input to the ReLU is negative, deconvolutional
@@ -198,11 +202,15 @@ architecture, but it is more computationally efficient than integrated
 gradients. Lundberg and Lee [@tag:Lundberg2016_an] noted that several importance
 scoring methods, including DeepLIFT, integrated gradients and LIME, could all be
 considered approximations to the Shapely values, which have a long history in
-game theory for assigning contributions to players in cooperative games. `TODO:
-Add reference for Shapely values and/or explain that term` DeepLIFT introduced a
-modification which treated positive and negative contributions separately to
-address some failure cases of integrated gradients; the modification can be
-understood as an improved approximation of the Shapely values.
+game theory for assigning contributions to players in cooperative games.
+Briefly, the Shapely values measure the average marginal benefit of including a
+player over all possible orders in which the players could be included
+[@tag:Shapely]. In the case of DeepLIFT, the "inclusion" of a player is
+analogous to setting a particular input to its actual value rather than its
+reference value. DeepLIFT introduced a modification which treated positive and
+negative contributions separately to address some failure cases of integrated
+gradients; the modification can be understood as an improved approximation of
+the Shapely values.
 
 #### Matching or exaggerating the hidden representation
 
@@ -326,15 +334,33 @@ that produce similar results to the whole input when passed through an encoder.
 The authors applied their approach to a sentiment analysis task and obtained
 substantially superior results compared to an attention-based method.
 
-`TODO: Are there any brief final thoughts you would like to add? This paper is
-part review, part perspective piece so we have the opportunity to speculate
-about the future or push certain for certain research directions. For example:
-Is the criticism of deep learning as a black box, uninterpretable approach
-exaggerated given all of these methods? Are there certain types of features or
-domains (in genomics, healthcare, etc.) where these methods still fall short?
-Are there practical steps that would improve adoption of appropriate model
-interpretation? Maybe closer integration into the most popular deep learning
-frameworks, as applicable?`
+#### Future outlook
+
+While deep learning certainly lags behind most Bayesian models in terms of
+interpretability, one can safely argue that the interpretability of deep
+learning is comparable to or exceeds that of many other widely-used machine
+learning methods such as Random Forests or SVMs. While it is possible to obtain
+importance scores for different inputs in a Random Forest, the same is true for
+deep learning. Similarly, SVMs trained with a nonlinear kernel are not easily
+interpretable as the use of the kernel means that one does not obtain an
+explicit weight matrix. Finally, it is worth noting that some machine learning
+methods are less interpretable in practice than one might expect; for example, a
+linear model trained on heavily engineered features might be difficult to
+interpret as the input features themselves are difficult to interpret.
+Similarly, a decision tree with many nodes and branches may also be difficult
+for a human to make sense of.
+
+There are several directions that might benefit the development of
+interpretability techniques. The first is the introduction of gold-standard
+benchmarks that different interpretability approaches could be compared against,
+similar in spirit to how datasets like ImageNet and CIFAR spurred the
+development of deep learning for computer vision. It would also be helpful if
+the community placed more emphasis on domains outside of computer vision;
+computer vision is often used as the example application of interpretability
+methods, but it is arguably not the domain with the most pressing need. Finally,
+closer integration of interpretability approaches with popular deep learning
+frameworks would make it easier for practitioners to apply and experiment with
+different approaches to understanding their deep learning models.
 
 ### Data limitations
 
