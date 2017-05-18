@@ -93,21 +93,28 @@ that deep learning has transformed biology and medicine.
 
 ### Author contributions
 
-`TODO: not sure if it should go here, but somewhere we should talk about how we
-wrote this thing, since it is still somewhat unconventional to have a review
-written in this manner.` We recognized that writing a review on a rapidly
-developing area in a manner that allowed us to provide a forward-looking
-perspective on diverse approaches and biological problems would require
-expertise from across computational biology and medicine. We created an open
-repository on the GitHub version control system and engaged with numerous
-authors from papers within and outside of the area. Paper review was conducted
-in the open by `#` individuals, and the manuscript was drafted in a series of
-commits from `#` authors. Individuals who met the ICJME standards of authorship
-are included as authors. These were individuals who contributed to the review of
-the literature; drafted the manuscript or provided substantial critical
-revisions; approved the final manuscript draft; and agreed to be accountable in
-all aspects of the work. Individuals who did not contribute in one or more of
-these ways, but who did participate, are acknowledged at the end of the
-manuscript.
+We recognized that writing a review on a rapidly developing area in a manner
+that allowed us to provide a forward-looking perspective on diverse approaches
+and biological problems would require expertise from across computational
+biology and medicine. We created an open repository on the GitHub version
+control system [@url:https://github.com/greenelab/deep-review] and engaged with
+numerous authors from papers within and outside of the area. The manuscript was
+drafted via GitHub commits by 25 individuals who met the ICJME standards
+of authorship. These were individuals who contributed to the review of the
+literature; drafted the manuscript or provided substantial critical revisions;
+approved the final manuscript draft; and agreed to be accountable in all aspects
+of the work. Individuals who did not contribute in all of these ways, but who
+did participate, are acknowledged at the end of the manuscript.
 
 `TODO: update after finalizing discussion in #369`
+
+### Acknowledgements
+
+We gratefully acknowledge Christof Angermueller, Kumardeep Chaudhary, Gökcen
+Eraslan, Michael M. Hoffman, Mikael Huss, Bharath Ramsundar and Xun Zhu for
+their discussion of the manuscript and reviewed papers on GitHub. We would like
+to thank Zhiyong Lu for revisions to the text that were not captured on GitHub
+as well as GitHub users aaronsheldon, swamidass, and traversc who contributed
+text but did not formally approve the manuscript.
+
+### References
