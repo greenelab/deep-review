@@ -24,19 +24,18 @@ limit clinical applications. Similarly, in 2006 Lisboa and Taktak
 medical journals, concluding that they improved healthcare relative to
 traditional screening methods in 21 of 27 studies.
 
-`TODO: could really use some references for following paragraph`
-
 While further progress has been made in using deep learning for clinical
 decision making, it is hindered by a challenge common to many deep learning
 applications: it is much easier to predict an outcome than to suggest an action
-to change the outcome. Several attempts at recasting the clinical decision
-making problem into a prediction problem (i.e., prediction of which treatment
-will most improve the patient's health) have accurately predicted prescription
-habits, but technical and medical challenges remain for clinical adoption
-(similar to those for categorization). In particular, remaining challenges
-include actionable interpretability of deep learning models, fitting deep models
-to limited and heterogeneous data, and integrating complex predictive models
-into a dynamic clinical environment.
+to change the outcome. Several attempts
+[@tag:Katzman2016_deepsurv @tag:Ranganath2016_deep] at recasting the clinical
+decision-making problem into a prediction problem (i.e., prediction of which
+treatment will most improve the patient's health) have accurately predicted
+survival patterns, but technical and medical challenges remain for clinical
+adoption (similar to those for categorization). In particular, remaining
+challenges include actionable interpretability of deep learning models, fitting
+deep models to limited and heterogeneous data, and integrating complex
+predictive models into a dynamic clinical environment.
 
 A critical challenge in moving from prediction to treatment recommendations is
 the necessity to establish a causal relationship for a recommendation. Causal
