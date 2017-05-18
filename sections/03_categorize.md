@@ -60,7 +60,7 @@ of magnitude smaller than collections of natural photographs. To address this
 challenge, researchers addressing different subtasks have employed different
 strategies.
 
-The first strategy repurposes features extracted from natural photographs by deep learning for new purposes.
+The first strategy repurposes features extracted from natural photographs by deep learning, such as ImageNet [@tag:Russakovsky2015_imagenet], for new purposes.
 Diagnosing diabetic retinopathy through color fundus
 images became an area of focus for deep learning researchers after
 a large labeled image set was made publicly available during a
@@ -68,25 +68,23 @@ a large labeled image set was made publicly available during a
 neural networks from scratch [@tag:Pratt2016_dr @tag:Abramoff2016_dr
 @tag:Leibig2016_dr], but Gulshan et al. [@tag:Gulshan2016_dt] repurposed a
 48-layer Inception-v3 deep architecture pre-trained on natural images and
-surpassed the state-of-the-art in both specificity
+surpassed the state-of-the-art specificity
 and sensitivity. Such features were also repurposed to detect
 melanoma, the deadliest form of skin cancer, from
 dermoscopic [@tag:Codella2016_ensemble_melanoma
 @tag:Yu2016_melanoma_resnet] and non-dermoscopic images of
 skin lesions [@tag:Jafari2016_skin_lesions @tag:Esfahani2016_melanoma
-@tag:Esteva2017_skin_cancer_nature]. Transfer learning also enabled an analysis
-to detect age-related macular degeneration [@tag:Burlina2016_amd]. Pre-training on natural
+@tag:Esteva2017_skin_cancer_nature]as well as age-related macular degeneration
+[@tag:Burlina2016_amd]. Pre-training on natural
 images can enable very
 deep networks to succeed without overfitting. For the melanoma task, reported performance was competitive with or better
 than a board of certified dermatologists
 [@tag:Codella2016_ensemble_melanoma @tag:Esteva2017_skin_cancer_nature].
 
-The reuse of features from natural images is also becoming widely used with
-radiographic images, where datasets are often too small to train large without
+The reuse of features from natural images is also growing for
+radiographic images, where datasets are often too small to train large deep neural networks without
 these techniques [@tag:Bar2015_nonmed_tl @tag:Shin2016_cad_tl
-@tag:Rajkomar2017_radiographs @tag:Lakhani2017_radiography]. All these studies
-repurpose features from natural image datasets,
-such as ImageNet [@tag:Russakovsky2015_imagenet]. Rajkomar et al.
+@tag:Rajkomar2017_radiographs @tag:Lakhani2017_radiography]. Rajkomar et al.
 [@tag:Rajkomar2017_radiographs] showed that a deep CNN trained on natural images
 boosts performance in radiographic images. However, the target
 task required either re-training the initial model from scratch with special
@@ -97,12 +95,12 @@ The technique of reusing features from a different task falls into the broader a
 transfer learning, which we devote a section to in the discussion.
 Though we've mentioned numerous successes for the transfer of natural image features to new tasks,
 we expect that a lower proportion of negative results would be published.
-Reuse is not always successful. The analysis of magnetic resonance
+The analysis of magnetic resonance
 images (MRIs) is also faced with the challenge of small training sets. In this
 domain, Amit et al. [@tag:Amit2017_breast_mri] investigated
 the tradeoff between pre-trained models from a different domain and
-a small CNN trained only with MRI images. They showed that the smaller network
-trained with sufficient data augmentation on few hundred images from a few dozen
+a small CNN trained only with MRI images. In contrast with the other selected literature, they found a smaller network
+trained with data augmentation on few hundred images from a few dozen
 patients can outperform a pre-trained out-of-domain classifier. Data augmentation is a different strategy to deal with small training
 sets. The practice is exemplified by a series of papers that analyze images
 from mammographies [@tag:Dhungel2015_struct_pred_mamm @tag:Dhungel2016_mamm
@@ -111,10 +109,10 @@ from mammographies [@tag:Dhungel2015_struct_pred_mamm @tag:Dhungel2016_mamm
 researchers constructed adversarial examples
 [@tag:Zhu2016_advers_mamm]. Adversarial examples are
 constructed by applying a transformation that changes training images but not
-their content - for example by rotating an image by a random amount. The alternative in the domain is to train towards human-created features before
+their content - for example by rotating an image by a random amount. An alternative in the domain is to train towards human-created features before
 subsequent fine tuning [@tag:Dhungel2016_mamm].
 
-Another way of dealing with limited training data is to split examples.
+Another way of dealing with limited training data is to divide rich data - e.g. 3D images - into numerous reduced projections.
 Shin et al. [@tag:Shin2016_cad_tl]
 compared various deep network architectures, dataset characteristics, and
 training procedures for computer tomography-based (CT) abnormality detection.
