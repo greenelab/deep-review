@@ -114,3 +114,5 @@ their discussion of the manuscript and reviewed papers on GitHub. We would like
 to thank Zhiyong Lu for revisions to the text that were not captured on GitHub
 as well as GitHub users aaronsheldon, swamidass, and traversc who contributed
 text but did not formally approve the manuscript.
+
+### References
