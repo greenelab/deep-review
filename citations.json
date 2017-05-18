@@ -42868,5 +42868,26 @@
       "id": "YBJdA6LJ"
     },
     "citation_id": "YBJdA6LJ"
+  },
+  "url:https://github.com/greenelab/deep-review": {
+    "source": "url",
+    "identifer": "https://github.com/greenelab/deep-review",
+    "standard_citation": "url:https://github.com/greenelab/deep-review",
+    "citeproc": {
+      "URL": "https://github.com/greenelab/deep-review",
+      "title": "greenelab/deep-review",
+      "container-title": "GitHub",
+      "author": [
+        {
+          "family": "greenelab",
+          "given": ""
+        }
+      ],
+      "greycite-status": "Scanned",
+      "greycite-scanned": "2017-05-18 17:25:21",
+      "type": "webpage",
+      "id": "yLr4pV4G"
+    },
+    "citation_id": "yLr4pV4G"
   }
 }

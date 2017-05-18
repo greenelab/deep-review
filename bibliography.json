@@ -40206,6 +40206,21 @@
     "id": "YBJdA6LJ"
   },
   {
+    "URL": "https://github.com/greenelab/deep-review",
+    "title": "greenelab/deep-review",
+    "container-title": "GitHub",
+    "author": [
+      {
+        "family": "greenelab",
+        "given": ""
+      }
+    ],
+    "greycite-status": "Scanned",
+    "greycite-scanned": "2017-05-18 17:25:21",
+    "type": "webpage",
+    "id": "yLr4pV4G"
+  },
+  {
     "URL": "http://arxiv.org/abs/1106.5730v2",
     "abstract": "Stochastic Gradient Descent (SGD) is a popular algorithm that can achieve state-of-the-art performance on a variety of machine learning tasks. Several researchers have recently proposed schemes to parallelize SGD, but all require performance-destroying memory locking and synchronization. This work aims to show using novel theoretical analysis, algorithms, and implementation that SGD can be implemented without any locking. We present an update scheme called HOGWILD! which allows processors access to shared memory with the possibility of overwriting each other’s work. We show that when the associated optimization problem is sparse, meaning most gradient updates only modify small parts of the decision variable, then HOGWILD! achieves a nearly optimal rate of convergence. We demonstrate experimentally that HOGWILD! outperforms alternative schemes that use locking by an order of magnitude.",
     "author": [
