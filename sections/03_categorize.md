@@ -541,7 +541,7 @@ parameter which provides a quantification of privacy. Simmons et al.
 [@doi:10.1016/j.cels.2016.04.013] present the ability to perform GWASs in a
 differentially private manner and Abadi et al. [@arxiv:1607.00133] show the
 ability to train deep learning classifiers under the differential privacy
-framework. Federated learning [@arxiv:1602.05629] and secure aggregations
+framework. Federated learning [@url:http://proceedings.mlr.press/v54/mcmahan17a.html] and secure aggregations
 [@url:http://proceedings.mlr.press/v54/mcmahan17a.html
 @url:https://eprint.iacr.org/2017/281.pdf @tag:Papernot2017_pate] are
 complementary approaches that reinforce differential privacy. Both aim to
