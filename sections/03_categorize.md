@@ -314,7 +314,7 @@ processes to distinguish gout from leukemia from uric acid sequences. Later work
 showed that unsupervised feature construction of many features via denoising
 autoencoder neural networks could dramatically reduce the number of labeled
 examples required for subsequent supervised analyses
-[@doi:10.1016/j.jbi.2016.10.007 @doi:10.1101/039800]. In addition, it pointed
+[@doi:10.1016/j.jbi.2016.10.007]. In addition, it pointed
 towards learned features being useful for subtyping within a single disease. In
 a concurrent large-scale analysis of EHR data from 700,000 patients, Miotto et
 al. [@doi:10.1038/srep26094] used a deep denoising autoencoder architecture
@@ -540,9 +540,9 @@ parameter which provides a quantification of privacy. Simmons et al.
 [@doi:10.1016/j.cels.2016.04.013] present the ability to perform GWASs in a
 differentially private manner and Abadi et al. [@arxiv:1607.00133] show the
 ability to train deep learning classifiers under the differential privacy
-framework. Federated learning [@arxiv:1602.05629] and secure aggregations
-[@url:http://proceedings.mlr.press/v54/mcmahan17a.html
-@url:https://eprint.iacr.org/2017/281.pdf @tag:Papernot2017_pate] are
+framework. Federated learning
+[@url:http://proceedings.mlr.press/v54/mcmahan17a.html] and secure aggregations
+[@url:https://eprint.iacr.org/2017/281.pdf @tag:Papernot2017_pate] are
 complementary approaches that reinforce differential privacy. Both aim to
 maintain privacy by training deep learning models from decentralized data
 sources such as personal mobile devices without transferring actual training

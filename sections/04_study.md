@@ -237,7 +237,7 @@ useful.
 
 Critically, deep learning can also provide useful biological insights into TF
 binding. Lanchantin et al. [@tag:Lanchantin2016_motif] and Shrikumar et al.
-[@tag:Shrikumar2016_blackbox] developed tools to visualize TF motifs learned
+[@tag:Shrikumar2017_learning] developed tools to visualize TF motifs learned
 from TFBS classification tasks. Alipanahi et al. [@tag:Alipanahi2015_predicting]
 also introduced mutation maps, where they could easily mutate, add, or delete
 base pairs in a sequence and see how the model changed its prediction. This
