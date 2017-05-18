@@ -302,7 +302,7 @@ in the way of comparative studies or formal benchmarks. We will therefore focus
 on a few recent characteristic studies to outline the state of the art and
 extant problems.
 
-Most broadly, Basset [@doi:10.1101/gr.200535.115] trained CNNs on DNA
+Basset [@doi:10.1101/gr.200535.115] trained CNNs on DNA
 accessibility datasets, getting a marked improvement on previous methods, albeit
 still with a high false positive rate. The multi-task architecture resembles
 DeepSEA [@tag:Zhou2015_deep_sea], which predicted open chromatin regions and
