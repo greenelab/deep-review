@@ -12,32 +12,32 @@ impressive results across a variety of domains. Biomedicine and genomics, both
 data- and feature-rich and yet complex and often ill-understood, present an
 obvious and potentially valuable target for this new approach. We examine
 applications of deep learning to a variety of biomedical problems --
-classification, fundamental research into biology and patient treatment -- to
+clinical classification, fundamental biological processes, and patient treatment -- to
 determine if similar progress can be made there or if the biomedical sphere
 holds unique challenges. While deep learning has yet to revolutionize or
 definitively resolve any of these problems, promising (sometimes remarkable)
-advances have been made on the prior state-of-the-art. Even where improvement
+advances have been made on the prior state of the art. Even where improvement
 over the previous baseline has been modest, there is still the promise of
 greatly speeding or aiding human investigation. More work is needed in technical
-directions such as interpretability and how to best model a problem. Further,
+directions such as interpretability and how to best model a problem. Furthermore,
 the limited amount of labeled data for training presents problems in some
 domains, as can the legal and privacy constraints enforced by working with
 sensitive health records. Nonetheless, we foresee a growing use of deep learning
-with potential for transforming several fields of biomedicine, coming to routine
-use at the bench and bedside.
+at the bench and bedside
+with potential for transforming several fields of biomedicine.
 
 
 ## Introduction
 
 Biology and medicine are rapidly becoming data-intensive. A recent comparison of
-genomics with social media, online videos, and other data-intensive scientific
+genomics with social media, online videos, and other data-intensive
 disciplines suggested that genomics alone would equal or surpass other fields in
 data generation and analysis within the next decade
 [@13bxiY1vo]. The volume and complexity of these data
 present not only new opportunities, but also new challenges. Automated
 algorithms will be crucial in extracting meaningful patterns and actionable
 knowledge that allow us to better treat, categorize, or study disease, all
-within data constrained and privacy critical environments.
+within data-constrained and privacy-critical environments.
 
 Over the past five years, a class of machine learning algorithms known as deep
 learning has revolutionized image classification and speech recognition due to
@@ -57,13 +57,13 @@ assign to each data point).  In a famous and early example, scientists from
 Google demonstrated that a neural network "discovered" that cats, faces, and
 pedestrians were important components of online videos
 [@IiNJE32f], without
-being told to look for any of them. What if, more generally, deep learning could
+being told to look for them. What if, more generally, deep learning could
 solve the challenges presented by the growth of data in biomedicine? Could these
 algorithms identify the "cats" hidden in our data - the patterns unknown to the
-researcher - and act on them? In this review, we examine whether deep learning's
+researcher - and suggest ways to act on them? In this review, we examine whether deep learning's
 transformation of biomedical science is simply a matter of time or if there are
 unique challenges posed by biomedical data that render deep learning methods
-either more challenging or less fruitful to apply.
+either more challenging or less fruitful.
 
 ### Defining deep learning
 
@@ -77,28 +77,28 @@ waxed and waned several times. This history is interesting in its own right
 [@1G5eCiq4d]. In recent years, attention has shifted back to
 neural networks as processing power has allowed deep learning techniques to
 surge ahead of other machine learning algorithms. Our focus is primarily on the
-downstream applications enabled by these advances.
+downstream applications enabled by these breakthroughs.
 
 Several important advances make the current surge of work done in this area
 possible. Easy-to-use software packages have brought the techniques of the field
 out of the specialist's toolkit to a broad community of computational
 scientists. Additionally, new techniques for fast training have enabled their
-application to larger datasets [@3qm8sXnB]. Dropout of nodes, edges and
+application to larger datasets [@3qm8sXnB]. Dropout of nodes, edges, and
 layers makes networks more robust, even when the number of parameters is very
-large. New neural network approaches are also well suited for addressing
+large. New neural network approaches are also well-suited for addressing
 distinct challenges. For example, neural networks structured as autoencoders or
 as adversarial networks require no labels and are now regularly used for
 unsupervised tasks. In this review, we do not exhaustively discuss the different
 types of deep neural network architectures. A recent book from Goodfellow et al.
 [@yg8NW0K7] covers these in detail. Finally, the
-larger datasets now available are also well suited to fitting the many
+larger datasets now available are also sufficient for fitting the many
 parameters that exist for deep neural networks. The convergence of these factors
 currently makes deep learning extremely adaptable and capable of addressing the
 nuanced differences of each domain to which it is applied.
 
 ### Will deep learning transform the study of human disease?
 
-With this review, we set out to address the question: what would need to be true
+With this review, we set out to address the question: what is needed
 for deep learning to transform how we categorize, study, and treat individuals
 to maintain or restore health? We choose a high bar for "transform." Andrew
 Grove, the former CEO of Intel, coined the term Strategic Inflection Point to
@@ -106,7 +106,7 @@ refer to a change in technologies or environment that requires a business to be
 fundamentally reshaped
 [@mAXsmd43]. Here, we
 seek to identify whether deep learning is an innovation that can induce a
-strategic inflection point in the practice of biology or medicine. We structure
+Strategic Inflection Point in the practice of biology or medicine. We structure
 the review with an eye on precision medicine.
 
 There are numerous examples where deep learning has been applied to biological
@@ -118,7 +118,7 @@ makes difficult, tedious analyses routine.
 
 We find that domain-specific considerations have greatly influenced how to best
 harness the power and flexibility of deep learning. Model interpretability is
-often critical: understanding the patterns in data may be just as important as
+often critical.  Understanding the patterns in data may be just as important as
 fitting the data. In addition, there are important and pressing questions about
 how to build networks that can efficiently represent the underlying structure
 and logic of the data. Domain experts can play important roles in designing
@@ -166,8 +166,8 @@ is especially suited to leveraging large amounts of data from high-throughput
 deep learning, has been extensively applied is molecular target prediction. For
 example, deep recurrent neural networks (RNN) have been used to predict gene
 targets of microRNAs [@YUms527e], and CNNs have been applied
-to predict protein residue-residue contacts and secondary structure on a
-genome-wide scale [@BhfjKSY3; @ZzaRyGuJ; @UO8L6nd]. Other recent exciting
+to predict protein residue-residue contacts and secondary structure
+[@BhfjKSY3; @ZzaRyGuJ; @UO8L6nd]. Other recent exciting
 applications of deep learning include recognition of functional genomic elements
 such as enhancers and promoters [@s5sy4AOi; @17B2QAA1k; @12aqvAgz6] and prediction of
 the deleterious effects of nucleotide polymorphisms
@@ -178,16 +178,16 @@ the deleterious effects of nucleotide polymorphisms
 Although the application of deep learning to patient treatment is just
 beginning, we expect a dramatic increase in methods aiming to recommend patient
 treatment, predict treatment outcomes, and guide future development of new
-therapies. Specifically, effort in this area aims to identify drug targets and
-interactions or predict drug response. One recent approach uses deep learning on
+therapies. Specifically, one type of effort in this area aims to identify drug targets and
+interactions or predict drug response. One approach uses deep learning on
 protein structures to predict drug interactions and drug bioactivity
 [@Z7fd0BYf]. Drug repositioning using deep learning on transcriptomic
 data is another exciting area of research
-[@EMDwvRGb]. Interestingly, it was shown that
-restricted Boltzmann machines (RBMs) can be combined into deep belief networks
+[@EMDwvRGb].
+Restricted Boltzmann machines (RBMs) can be combined into deep belief networks
 (DBNs) to predict novel drug-target interactions and formulate drug
 repositioning hypotheses [@1AU7wzPqa; @oTF8O79C]. Finally, deep learning is also being
-successfully used to prioritize chemicals in the early stages of drug discovery
+used to prioritize chemicals in the early stages of drug discovery
 for new targets [@xPkT1z7D].
 
 
