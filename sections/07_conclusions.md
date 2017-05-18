@@ -91,22 +91,41 @@ very large collections of input data into interpretable models that spur
 scientists to ask questions that they didn't know how to ask, it will be clear
 that deep learning has transformed biology and medicine.
 
+### Continuous collaborative manuscript drafting
+
+We recognized that deep learning in precision medicine is a rapidly developing area.
+Hence, diverse expertise was required to provide a forward-looking perspective.
+Accordingly, we collaboratively wrote this review in the open, enabling anyone with expertise to contribute.
+We wrote the manuscript in markdown and tracked changes using git.
+Contributions were handled through GitHub, with individuals submitting "pull requests" to suggest additions to the manuscript.
+
+To facilitate citation, we [defined](https://github.com/greenelab/deep-review/blob/master/CONTRIBUTING.md#markdown) a markdown citation syntax.
+We supported citations to the following identifier types (in order of preference): DOIs, PubMed IDs, arXiv IDs, and URLs.
+References were automatically generated from citation metadata by querying APIs to generate [Citation Style Language](http://citationstyles.org/) (CSL) JSON items for each reference.
+[Pandoc](http://pandoc.org/) and [pandoc-citeproc](https://github.com/jgm/pandoc-citeproc) converted the markdown to HTML and PDF, while rendering the formatted citations and references.
+In total, referenced works consisted of XX DOIs, XX PubMed IDs, XX arXiv IDs, and XX URLs.
+
+We implemented continuous analysis so the manuscript was automatically regenerated whenever the source changed [@doi:10.1038/nbt.3780].
+We configured Travis CI — a continuous integration service — to fetch new citation metadata and rebuild the manuscript for every commit.
+Accordingly, formatting or citation errors in pull requests would cause the Travis CI build to fail, automating quality control.
+When contributions were merged into the `master` branch, Travis CI deployed the built manuscript by committing back to the GitHub repository.
+As a result, the latest manuscript version is always available at https://greenelab.github.io/deep-review.
+To ensure a consistent software environment, we defined a versioned [conda](https://conda.io) environment of the software dependencies.
+
+In addition, we instructed the Travis CI deployment script to perform blockchain timestamping [@url:https://www.bgcarlisle.com/blog/2014/08/25/proof-of-prespecified-endpoints-in-medical-research-with-the-bitcoin-blockchain/ @url:http://blog.dhimmel.com/irreproducible-timestamps/].
+Using [OpenTimestamps](https://opentimestamps.org/), we submitted hashes for the manuscript and the source git commit for timestamping in the Bitcoin blockchain.
+These timestamps attest that a given version of this manuscript (and its history) existed at a given point in time.
+The ability to irrefutably prove manuscript existence at a past time could be important to establish scientific precedence and and enforce an immutable record of authorship.
+
 ### Author contributions
 
-We recognized that writing a review on a rapidly developing area in a manner
-that allowed us to provide a forward-looking perspective on diverse approaches
-and biological problems would require expertise from across computational
-biology and medicine. We created an open repository on the GitHub version
-control system [@url:https://github.com/greenelab/deep-review] and engaged with
-numerous authors from papers within and outside of the area. The manuscript was
-drafted via GitHub commits by 25 individuals who met the ICJME standards
-of authorship. These were individuals who contributed to the review of the
-literature; drafted the manuscript or provided substantial critical revisions;
-approved the final manuscript draft; and agreed to be accountable in all aspects
-of the work. Individuals who did not contribute in all of these ways, but who
-did participate, are acknowledged at the end of the manuscript.
-
-`TODO: update after finalizing discussion in #369`
+We created an open repository on the GitHub version control platform ([`greenelab/deep-review`](https://github.com/greenelab/deep-review)) [@url:https://github.com/greenelab/deep-review].
+Here, we engaged with numerous authors from papers within and outside of the area.
+The manuscript was drafted via GitHub commits by 25 individuals who met the ICJME standards of authorship.
+These were individuals who contributed to the review of the literature;
+drafted the manuscript or provided substantial critical revisions;
+approved the final manuscript draft; and agreed to be accountable in all aspects of the work.
+Individuals who did not contribute in all of these ways, but who did participate, are acknowledged at the end of the manuscript.
 
 ### Acknowledgements
 
