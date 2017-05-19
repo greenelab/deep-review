@@ -6,7 +6,6 @@ Process citations and retrieve metadata
 
 import collections
 import json
-import json
 import os
 import pathlib
 import re
