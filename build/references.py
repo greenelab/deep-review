@@ -4,13 +4,16 @@
 Process citations and retrieve metadata
 """
 
+import collections
 import json
-import re
+import json
 import os
 import pathlib
+import re
 import subprocess
 import textwrap
 
+import jinja2
 import pandas
 
 from citations import (
@@ -38,6 +41,9 @@ def get_divider(title='Error', linewidth=79, fill_character='#'):
     ]
     return '\n'.join(lines)
 
+
+# Manuscript statistics
+stats = collections.OrderedDict()
 
 # Configure directories
 ref_dir = pathlib.Path('../references')
@@ -124,15 +130,20 @@ dup_df = ref_df[ref_df.standard_citation.duplicated(keep=False)]
 print(dup_df)
 
 # Number of distinct references by type
-type_counts = (
+ref_counts = (
     ref_df
     .standard_citation
     .drop_duplicates()
     .map(lambda x: x.split(':')[0])
-    .value_counts()
+    .pipe(collections.Counter)
 )
+ref_counts['total'] = sum(ref_counts.values())
+stats['reference_counts'] = ref_counts
 print('References by type:')
-print(type_counts)
+print(ref_counts)
+
+with gen_dir.joinpath('stats.json').open('wt') as write_file:
+    json.dump(stats, write_file, indent=2)
 
 # Convert to citation_id citations for pandoc
 converted_text = text
@@ -142,6 +153,10 @@ for old, new in zip(ref_df.text, ref_df.citation_id):
     converted_text = re.sub(old + '(?=[\s\]])', new, converted_text)
 # Semicolon separate multiple refernces for pandoc-citeproc
 converted_text = semicolon_separate_references(converted_text)
+
+# Template using jina2
+template = jinja2.Template(converted_text)
+converted_text = template.render(**stats)
 
 # Write manuscript for pandoc
 with gen_dir.joinpath('all-sections.md').open('wt') as write_file:
