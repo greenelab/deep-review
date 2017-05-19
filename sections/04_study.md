@@ -390,7 +390,7 @@ align sequences and predict bulges, mismatches, and wobble base pairing without
 requiring the user to input secondary structure predictions or thermodynamic
 calculations.
 
-Further incremental advances in neural network approaches for miRNA and target
+Further incremental advances in deep learning for miRNA and target
 prediction will likely be sufficient to meet the current needs of systems
 biologists and other researchers, who use prediction tools mainly to nominate
 candidates that are then tested experimentally. Similar to other applications,
