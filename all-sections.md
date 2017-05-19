@@ -2963,7 +2963,7 @@ To ensure a consistent software environment, we defined a versioned [conda](http
 In addition, we instructed the Travis CI deployment script to perform blockchain timestamping [@6MR50hyY; @QBWMEuxW].
 Using [OpenTimestamps](https://opentimestamps.org/), we submitted hashes for the manuscript and the source git commit for timestamping in the Bitcoin blockchain [@igA8jklc].
 These timestamps attest that a given version of this manuscript (and its history) existed at a given point in time.
-The ability to irrefutably prove manuscript existence at a past time could be important to establish scientific precedence and and enforce an immutable record of authorship.
+The ability to irrefutably prove manuscript existence at a past time could be important to establish scientific precedence and enforce an immutable record of authorship.
 
 ### Author contributions
 
