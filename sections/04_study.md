@@ -135,8 +135,8 @@ uncovered motifs that influence the strength of alternative splice sites
 [@tag:Rosenberg2015_synthetic_seqs]. Interestingly, they built a simple linear
 model using hexamer motif frequencies that successfully generalized to exon
 skipping.  In a limited analysis using SNPs from three genes, it predicted exon
-skipping with three times the accuracy of Xiong et al.’s deep learning-based
-framework. This case is instructive in that clever sources of data, not just
+skipping with three times the accuracy of an existing deep learning-based
+framework [@tag:Xiong2015_splicing_code]. This case is instructive in that clever sources of data, not just
 more descriptive models, are still critical in yielding novel insights.
 
 We already understand how mis-splicing of a single gene can cause diseases such
