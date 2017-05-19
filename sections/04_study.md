@@ -256,7 +256,7 @@ vital -- and early -- part of the regulation of gene expression. An abundance of
 sequence and associated functional data (e.g. ENCODE
 [@tag:Consortium2012_encode] and ExAC [@doi:10.1038/nature19057]) exists across
 species. At the same time, studies of gene regulation have often focused on the
-protein (binding) rather than promoter level [@doi:10.1093/bib/4.1.22], perhaps
+protein (binding) rather than the promoter level [@doi:10.1093/bib/4.1.22], perhaps
 due to the ill-defined nature of CREs. A promoter itself can be seen as an
 assemblage of "active" binding sites for transcription factors interspersed by
 less-characterized and perhaps functionally silent spacer regions. However, the
@@ -270,7 +270,7 @@ poorly characterized.
 Recognizing enhancers presents additional challenges. Enhancers may be up to one
 million base pairs upstream or downstream from the target promoter, on either
 strand, even within the introns of other genes [@doi:10.1038/nrg3458]. They do
-not necessarily operate on the nearest gene and may in fact effect multiple
+not necessarily operate on the nearest gene and may affect multiple
 genes. Their activity is frequently tissue- or context-specific. A substantial
 fraction of enhancers displays modest or no conservation across species. There
 is no universal enhancer sequence signal or marker for enhancers, and some
@@ -294,12 +294,12 @@ accessibility has often been used for identifying enhancers, this also
 "recognizes" a wide variety of other functional elements, like promoters,
 silencers, and repressors.
 
-The complex nature of CREs (and our ignorance at to what are the important
-features of them) is therefore a good subject for deep learning approaches.
+The complex nature of CREs (and our ignorance as to their important
+features) is therefore a good subject for deep learning approaches.
 Indeed, neural networks were used for promoter recognition as early as 1996,
 albeit with mixed results [@doi:10.1016/S0097-8485(96)80015-5]. Since then,
 there has been much work in applying deep learning to this area, although little
-in the way of comparative studies or formal benchmarks. We will therefore focus
+in the way of comparative studies or formal benchmarks. We therefore focus
 on a few recent characteristic studies to outline the state of the art and
 extant problems.
 
@@ -308,27 +308,27 @@ accessibility datasets, getting a marked improvement on previous methods, albeit
 still with a high false positive rate. The multi-task architecture resembles
 DeepSEA [@tag:Zhou2015_deep_sea], which predicted open chromatin regions and
 histone modifications in addition to TF binding.
-Note as above, predicting DNA accessibility
+As noted above, predicting DNA accessibility
 conflates enhancers with other functional sites. Basset also featured a
 useful interpretability approach, introducing known protein binding motifs into
 sequences and measuring the change in predicted accessibility.
 
 Umarov et al. [@doi:10.1371/journal.pone.0171410] demonstrated the use of CNNs
-in recognizing promoter sequences, achieving markedly better performance than
+in recognizing promoter sequences, outperforming
 conventional methods (sensitivity and specificity exceeding 90%). While some
 results were achieved over bacterial promoters (which are considerably simpler
-in structure), surprisingly roughly similar performance was found for human
+in structure), roughly similar performance was found for human
 promoters. This work also included a simple method for model
 interpretation, randomly substituting bases in a recognized promoter region,
 then checking for a change in recognition (see Discussion).
 
 Xu et al. [@doi:10.1109/BIBM.2016.7822593] applied CNNs to the detection of
 enhancers, achieving incremental improvements in specificity and sensitivity
-over previous SVM-based approach, and markedly better performance for
+over a previous SVM-based approach, and much better performance for
 cell-specific enhancers. A massive improvement in speed was also achieved.
 Additionally, they compared the performance of different CNN architectures,
 finding that while layers for batch normalization improved performance,
-surprisingly deeper architectures decreased performance.
+deeper architectures decreased performance.
 
 Singh et al. [@doi:10.1101/085241] approached
 the problem of predicting enhancer-promoter interactions from solely the
@@ -338,7 +338,7 @@ that used the whole gamut of full functional genomic and non-sequence data.
 
 Given the conflation between different CREs, the study of Li et al.
 [@doi:10.1101/041616] is particularly interesting.  They used a feed-forward
-neural network to distinguish classes of CRES and activity states. Active
+neural network to distinguish classes of CREs and activity states. Active
 enhancers and promoters could be easily be distinguished, as could active and
 inactive elements. Perhaps unsurprisingly, it was difficult to distinguish
 between inactive enhancers and promoters. They also investigated the power of
@@ -349,9 +349,9 @@ In summary, deep learning is a promising approach for identifying CREs, able to
 interrogate sequence features that are complex and ill-understood, already
 offering marked improvements on the prior state of the art. However, the exact
 methodology is up for debate and needs examination and more comparative study.
-Work needs to be done in understanding the best architecture to be used. The
-challenges in predicting TF binding -- lack of large gold standard datasets,
-model interpretation, and definition negative examples -- are pertinent to CRE
+Work needs to be done in understanding the best architectures. The
+challenges in predicting TF binding -- the lack of large gold standard datasets,
+model interpretation, and defining negative examples -- are pertinent to CRE
 identification as well. Furthermore, the quality and meaning of training data
 needs to be closely considered, given that a "promoter" or "enhancer" may only
 be putative or dependent on the experimental method or context of
@@ -372,7 +372,7 @@ feature selection and optimization. For instance, one of the most widely adopted
 tools for miRNA target prediction, TargetScan, trained multiple linear
 regression models on 14 hand-curated features including structural accessibility
 of the target site on the mRNA, the degree of site conservation, and predicted
-thermodynamic stability of the miRNA:mRNA complex [@tag:Agarwal2015_targetscan].
+thermodynamic stability of the miRNA-mRNA complex [@tag:Agarwal2015_targetscan].
 Some of these features, including structural accessibility, are imperfect or
 empirically derived. In addition, current algorithms suffer from low specificity
 [@tag:Lee2016_deeptarget].
@@ -390,7 +390,7 @@ align sequences and predict bulges, mismatches, and wobble base pairing without
 requiring the user to input secondary structure predictions or thermodynamic
 calculations.
 
-Further incremental advances in neural-network approaches for miRNA and target
+Further incremental advances in neural network approaches for miRNA and target
 prediction will likely be sufficient to meet the current needs of systems
 biologists and other researchers, who use prediction tools mainly to nominate
 candidates that are then tested experimentally. Similar to other applications,
@@ -407,7 +407,7 @@ than 100,000 proteins across all species have experimentally-solved structures
 in Protein Data Bank (PDB). As a result, computational structure prediction is
 essential for a majority of proteins. However, this is very challenging,
 especially when similar solved structures (called templates) are not available
-in PDB. Over the past several decades, various computational methods have been
+in PDB. Over the past several decades, many computational methods have been
 developed to predict aspects of protein structure such as secondary structure,
 torsion angles, solvent accessibility, inter-residue contact maps, disorder
 regions, and side-chain packing. In recent years, various deep learning
@@ -432,8 +432,8 @@ beta strand, and loop regions) or eight finer-grained states. Q3 and Q8 accuracy
 pertain to 3-state or 8-state predictions, respectively. Several groups
 [@doi:10.1371/journal.pone.0032235 @doi:10.1109/TCBB.2014.2343960
 @doi:10.1038/srep11476] initiated the application of deep learning to protein
-secondary structure prediction, but were unable to achieve significant
-improvement over the de facto standard method PSIPRED
+secondary structure prediction but were unable to achieve significant
+improvement over the *de facto* standard method PSIPRED
 [@doi:10.1006/jmbi.1999.3091], which uses two shallow feedforward neural
 networks. In 2014, Zhou and Troyanskaya demonstrated that they could improve Q8
 accuracy by using a deep supervised and convolutional generative stochastic
@@ -492,15 +492,15 @@ fewer than 1000 homologs by studying new deep network architectures. However, it
 is unclear whether there is an effective way to use deep learning to improve
 prediction for proteins with almost no sequence homologs. Finally, the deep
 learning methods summarized above also apply to interfacial contact prediction
-for protein complexes, but may be less effective since on average protein
+for protein complexes but may be less effective since on average protein
 complexes have fewer sequence homologs.
 
 ### Morphological phenotypes
 
 A field poised for dramatic revolution by deep learning is bioimage analysis.
 Thus far, the primary use of deep learning for biological images has been for
-segmentation - that is, for the identification of biologically relevant
-structures in images such as nuclei, infected cells, or vasculature, in
+segmentation -- that is, for the identification of biologically relevant
+structures in images such as nuclei, infected cells, or vasculature -- in
 fluorescence or even brightfield channels [@doi:10.1371/journal.pcbi.1005177].
 Once so-called regions of interest have been identified, it is often
 straightforward to measure biological properties of interest, such as
@@ -508,7 +508,7 @@ fluorescence intensities, textures, and sizes. Given the dramatic successes of
 deep learning in biological imaging, we simply refer to articles that review
 recent advancements [@doi:10.3109/10409238.2015.1135868
 @doi:10.1371/journal.pcbi.1005177 @doi:10.1007/978-3-319-24574-4_28]. We believe
-deep learning will become a commonplace tool for biological image segmentation
+deep learning will become commonplace for biological image segmentation
 once user-friendly tools exist.
 
 We anticipate an additional kind of paradigm shift in bioimaging that will be
@@ -530,8 +530,8 @@ Johnson et al. [@tag:Johnson2017_integ_cell] demonstrated how the use of a
 conditional adversarial autoencoder allows for a probabilistic interpretation of
 cell and nuclear morphology and structure localization from fluorescence images.
 The proposed model is able to generalize well to a wide range of subcellular
-localizations. The generative nature of the model allows it to produce high
-quality synthetic images predicting localization of subcellular structures by
+localizations. The generative nature of the model allows it to produce high-quality
+synthetic images predicting localization of subcellular structures by
 directly modeling the localization of fluorescent labels. Notably, this approach
 reduces the modeling time by omitting the subcellular structure segmentation
 step.
@@ -543,13 +543,13 @@ and alleles, identifying the cellular target of small molecules, and identifying
 disease-specific phenotypes suitable for drug screening
 [@doi:10.1016/j.copbio.2016.04.003 @doi:10.1002/cyto.a.22909
 @doi:10.1083/jcb.201610026]. Deep learning would bring to these new kinds of
-experiments - known as image-based profiling or morphological profiling - a
+experiments -- known as image-based profiling or morphological profiling -- a
 higher degree of accuracy, stemming from the freedom from human-tuned feature
 extraction strategies. Perhaps most excitingly, focused characterization of
 these higher-level features will likely lead to new and valuable biological
 insights.
 
-### Single-cell
+### Single-cell data
 
 Single-cell methods are generating extreme excitement as biologists recognize
 the vast heterogeneity within unicellular species and between cells of the same
@@ -561,12 +561,14 @@ metabolic — is key if precision medicine is to be targeted not only to a
 specific individual, but also to specific pathological subsets of cells.
 Single-cell methods also promise to uncover a wealth of new biological
 knowledge. A sufficiently large population of single cells will have enough
-representative “snapshots” to recreate timelines of rapid biological processes.
-If tracking processes over time is not the limiting factor, single cell
+representative "snapshots" to recreate timelines of dynamic biological processes.
+If tracking processes over time is not the limiting factor, single-cell
 techniques can provide maximal resolution compared to averaging across all cells
 in bulk tissue, enabling the study of transcriptional bursting with single-cell
 FISH or the heterogeneity of epigenetic patterns with single-cell Hi-C or
-ATAC-seq [@tag:Liu2016_sc_transcriptome @tag:Vera2016_sc_analysis].
+ATAC-seq [@tag:Liu2016_sc_transcriptome @tag:Vera2016_sc_analysis].  Joint
+profiling of single-cell epigenetic and transcriptional states provides
+unprecedented views of regulatory processes [@doi:10.1101/138685].
 
 However, large challenges exist in studying single cells. Relatively few cells
 can be assayed at once using current droplet, imaging, or microwell
