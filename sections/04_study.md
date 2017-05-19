@@ -178,7 +178,7 @@ RNA-binding proteins, though RNA-specific models do exist
 TFs are regulatory proteins that bind to certain genomic loci and control the
 rate of mRNA production. ChIP-seq and related technologies are able to identify
 highly likely binding sites for a certain TF, and databases such as ENCODE
-[@tag:Consortium2004_encode] have made freely available ChIP-seq data for
+[@tag:Consortium2012_encode] have made freely available ChIP-seq data for
 hundreds of different TFs across many laboratories. In order to computationally
 predict transcription factor binding sites (TFBSs) on a DNA sequence,
 researchers initially used consensus sequences and position weight matrices to
@@ -254,7 +254,7 @@ Identification of promoters and other cis-regulatory elements (CREs) presents an
 obvious use case for deep learning. Transcriptional control is undoubtedly a
 vital -- and early -- part of the regulation of gene expression. An abundance of
 sequence and associated functional data (e.g. ENCODE
-[@tag:Consortium2004_encode] and ExAC [@doi:10.1038/nature19057]) exists across
+[@tag:Consortium2012_encode] and ExAC [@doi:10.1038/nature19057]) exists across
 species. At the same time, studies of gene regulation have often focused on the
 protein (binding) rather than promoter level [@doi:10.1093/bib/4.1.22], perhaps
 due to the ill-defined nature of CREs. A promoter itself can be seen as an
