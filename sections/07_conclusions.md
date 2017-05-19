@@ -103,7 +103,7 @@ To facilitate citation, we [defined](https://github.com/greenelab/deep-review/bl
 We supported citations to the following identifier types (in order of preference): DOIs, PubMed IDs, arXiv IDs, and URLs.
 References were automatically generated from citation metadata by querying APIs to generate [Citation Style Language](http://citationstyles.org/) (CSL) JSON items for each reference.
 [Pandoc](http://pandoc.org/) and [pandoc-citeproc](https://github.com/jgm/pandoc-citeproc) converted the markdown to HTML and PDF, while rendering the formatted citations and references.
-In total, referenced works consisted of 274 DOIs, 4 PubMed records, 106 arXiv preprints, and 42 webpages.
+In total, referenced works consisted of 274 DOIs, 4 PubMed records, 106 arXiv manuscripts, and 42 URLs (webpages as well as manuscripts lacking standardized identifiers).
 
 We implemented continuous analysis so the manuscript was automatically regenerated whenever the source changed [@doi:10.1038/nbt.3780].
 We configured Travis CI — a continuous integration service — to fetch new citation metadata and rebuild the manuscript for every commit.
@@ -113,7 +113,7 @@ As a result, the latest manuscript version is always available at https://greene
 To ensure a consistent software environment, we defined a versioned [conda](https://conda.io) environment of the software dependencies.
 
 In addition, we instructed the Travis CI deployment script to perform blockchain timestamping [@url:https://www.bgcarlisle.com/blog/2014/08/25/proof-of-prespecified-endpoints-in-medical-research-with-the-bitcoin-blockchain/ @url:http://blog.dhimmel.com/irreproducible-timestamps/].
-Using [OpenTimestamps](https://opentimestamps.org/), we submitted hashes for the manuscript and the source git commit for timestamping in the Bitcoin blockchain.
+Using [OpenTimestamps](https://opentimestamps.org/), we submitted hashes for the manuscript and the source git commit for timestamping in the Bitcoin blockchain [@url:https://opentimestamps.org/].
 These timestamps attest that a given version of this manuscript (and its history) existed at a given point in time.
 The ability to irrefutably prove manuscript existence at a past time could be important to establish scientific precedence and and enforce an immutable record of authorship.
 
@@ -125,7 +125,9 @@ The manuscript was drafted via GitHub commits by 25 individuals who met the ICJM
 These were individuals who contributed to the review of the literature;
 drafted the manuscript or provided substantial critical revisions;
 approved the final manuscript draft; and agreed to be accountable in all aspects of the work.
-Individuals who did not contribute in all of these ways, but who did participate, are acknowledged at the end of the manuscript.
+Individuals who did not contribute in all of these ways, but who did participate, are acknowledged below.
+
+`TODO: update after finalizing discussion in #369`
 
 ### Acknowledgements
 
