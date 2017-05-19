@@ -103,11 +103,12 @@ To facilitate citation, we [defined](https://github.com/greenelab/deep-review/bl
 We supported citations to the following identifier types (in order of preference): DOIs, PubMed IDs, arXiv IDs, and URLs.
 References were automatically generated from citation metadata by querying APIs to generate [Citation Style Language](http://citationstyles.org/) (CSL) JSON items for each reference.
 [Pandoc](http://pandoc.org/) and [pandoc-citeproc](https://github.com/jgm/pandoc-citeproc) converted the markdown to HTML and PDF, while rendering the formatted citations and references.
-In total, referenced works consisted of 274 DOIs, 4 PubMed records, 106 arXiv manuscripts, and 42 URLs (webpages as well as manuscripts lacking standardized identifiers).
+In total, referenced works consisted of {{reference_counts.doi}} DOIs, {{reference_counts.pmid}} PubMed records, {{reference_counts.arxiv}} arXiv manuscripts, and {{reference_counts.url}} URLs (webpages as well as manuscripts lacking standardized identifiers).
 
 We implemented continuous analysis so the manuscript was automatically regenerated whenever the source changed [@doi:10.1038/nbt.3780].
 We configured Travis CI — a continuous integration service — to fetch new citation metadata and rebuild the manuscript for every commit.
 Accordingly, formatting or citation errors in pull requests would cause the Travis CI build to fail, automating quality control.
+In addition, the build process renders templated variables, such as the reference counts mentioned above, to automate the updating of dynamic content.
 When contributions were merged into the `master` branch, Travis CI deployed the built manuscript by committing back to the GitHub repository.
 As a result, the latest manuscript version is always available at https://greenelab.github.io/deep-review.
 To ensure a consistent software environment, we defined a versioned [conda](https://conda.io) environment of the software dependencies.
