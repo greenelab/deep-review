@@ -40221,6 +40221,73 @@
     "id": "yLr4pV4G"
   },
   {
+    "URL": "http://blog.dhimmel.com/irreproducible-timestamps/",
+    "title": "The most interesting case of scientific irreproducibility?",
+    "container-title": "Satoshi Village",
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          3,
+          8
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Himmelstein",
+        "given": "Daniel"
+      }
+    ],
+    "greycite-status": "Scanned",
+    "greycite-scanned": "2017-05-16 19:23:57",
+    "archives": [
+      "http://wayback.archive.org/web/http://blog.dhimmel.com/irreproducible-timestamps/"
+    ],
+    "type": "webpage",
+    "id": "QBWMEuxW"
+  },
+  {
+    "URL": "https://opentimestamps.org/",
+    "title": "OpenTimestamps: a timestamping proof standard",
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          5,
+          16
+        ]
+      ]
+    },
+    "greycite-status": "Scanned",
+    "greycite-scanned": "2017-05-19 17:01:28",
+    "type": "webpage",
+    "id": "igA8jklc"
+  },
+  {
+    "URL": "https://www.bgcarlisle.com/blog/2014/08/25/proof-of-prespecified-endpoints-in-medical-research-with-the-bitcoin-blockchain/",
+    "title": "The Grey Literature — Proof of prespecified endpoints in medical research with the bitcoin blockchain",
+    "issued": {
+      "date-parts": [
+        [
+          2014,
+          8,
+          25
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Carlisle",
+        "given": "Benjamin Gregory"
+      }
+    ],
+    "greycite-status": "Scanned",
+    "greycite-scanned": "2017-05-18 17:00:44",
+    "type": "webpage",
+    "id": "6MR50hyY"
+  },
+  {
     "URL": "http://arxiv.org/abs/1106.5730v2",
     "abstract": "Stochastic Gradient Descent (SGD) is a popular algorithm that can achieve state-of-the-art performance on a variety of machine learning tasks. Several researchers have recently proposed schemes to parallelize SGD, but all require performance-destroying memory locking and synchronization. This work aims to show using novel theoretical analysis, algorithms, and implementation that SGD can be implemented without any locking. We present an update scheme called HOGWILD! which allows processors access to shared memory with the possibility of overwriting each other’s work. We show that when the associated optimization problem is sparse, meaning most gradient updates only modify small parts of the decision variable, then HOGWILD! achieves a nearly optimal rate of convergence. We demonstrate experimentally that HOGWILD! outperforms alternative schemes that use locking by an order of magnitude.",
     "author": [

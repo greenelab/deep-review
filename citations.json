@@ -42889,5 +42889,90 @@
       "id": "yLr4pV4G"
     },
     "citation_id": "yLr4pV4G"
+  },
+  "url:http://blog.dhimmel.com/irreproducible-timestamps/": {
+    "source": "url",
+    "identifer": "http://blog.dhimmel.com/irreproducible-timestamps/",
+    "standard_citation": "url:http://blog.dhimmel.com/irreproducible-timestamps/",
+    "citeproc": {
+      "URL": "http://blog.dhimmel.com/irreproducible-timestamps/",
+      "title": "The most interesting case of scientific irreproducibility?",
+      "container-title": "Satoshi Village",
+      "issued": {
+        "date-parts": [
+          [
+            2017,
+            3,
+            8
+          ]
+        ]
+      },
+      "author": [
+        {
+          "family": "Himmelstein",
+          "given": "Daniel"
+        }
+      ],
+      "greycite-status": "Scanned",
+      "greycite-scanned": "2017-05-16 19:23:57",
+      "archives": [
+        "http://wayback.archive.org/web/http://blog.dhimmel.com/irreproducible-timestamps/"
+      ],
+      "type": "webpage",
+      "id": "QBWMEuxW"
+    },
+    "citation_id": "QBWMEuxW"
+  },
+  "url:https://opentimestamps.org/": {
+    "source": "url",
+    "identifer": "https://opentimestamps.org/",
+    "standard_citation": "url:https://opentimestamps.org/",
+    "citeproc": {
+      "URL": "https://opentimestamps.org/",
+      "title": "OpenTimestamps: a timestamping proof standard",
+      "issued": {
+        "date-parts": [
+          [
+            2017,
+            5,
+            16
+          ]
+        ]
+      },
+      "greycite-status": "Scanned",
+      "greycite-scanned": "2017-05-19 17:01:28",
+      "type": "webpage",
+      "id": "igA8jklc"
+    },
+    "citation_id": "igA8jklc"
+  },
+  "url:https://www.bgcarlisle.com/blog/2014/08/25/proof-of-prespecified-endpoints-in-medical-research-with-the-bitcoin-blockchain/": {
+    "source": "url",
+    "identifer": "https://www.bgcarlisle.com/blog/2014/08/25/proof-of-prespecified-endpoints-in-medical-research-with-the-bitcoin-blockchain/",
+    "standard_citation": "url:https://www.bgcarlisle.com/blog/2014/08/25/proof-of-prespecified-endpoints-in-medical-research-with-the-bitcoin-blockchain/",
+    "citeproc": {
+      "URL": "https://www.bgcarlisle.com/blog/2014/08/25/proof-of-prespecified-endpoints-in-medical-research-with-the-bitcoin-blockchain/",
+      "title": "The Grey Literature — Proof of prespecified endpoints in medical research with the bitcoin blockchain",
+      "issued": {
+        "date-parts": [
+          [
+            2014,
+            8,
+            25
+          ]
+        ]
+      },
+      "author": [
+        {
+          "family": "Carlisle",
+          "given": "Benjamin Gregory"
+        }
+      ],
+      "greycite-status": "Scanned",
+      "greycite-scanned": "2017-05-18 17:00:44",
+      "type": "webpage",
+      "id": "6MR50hyY"
+    },
+    "citation_id": "6MR50hyY"
   }
 }
