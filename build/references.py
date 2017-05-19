@@ -125,8 +125,11 @@ print(f'''
 {ref_df.standard_citation.nunique()} unique citations after standardizations
 '''.strip())
 
-dup_df = ref_df[ref_df.standard_citation.duplicated(keep=False)]
-print(dup_df)
+print(
+    ref_df[ref_df.standard_citation.duplicated(keep=False)]
+    .sort_values('standard_citation')
+    .to_string(index=False, columns=['standard_citation', 'text'])
+)
 
 # Number of distinct references by type
 ref_counts = (
