@@ -134,7 +134,7 @@ study using readouts of splicing for millions of synthetic intronic sequences
 uncovered motifs that influence the strength of alternative splice sites
 [@tag:Rosenberg2015_synthetic_seqs]. Interestingly, they built a simple linear
 model using hexamer motif frequencies that successfully generalized to exon
-skipping.  In a limited analysis using SNPs from three genes, it predicted exon
+skipping.  In a limited analysis using SNPs (single nucleotide polymorphisms) from three genes, it predicted exon
 skipping with three times the accuracy of an existing deep learning-based
 framework [@tag:Xiong2015_splicing_code]. This case is instructive in that clever sources of data, not just
 more descriptive models, are still critical in yielding novel insights.
@@ -573,21 +573,21 @@ unprecedented views of regulatory processes [@doi:10.1101/138685].
 However, large challenges exist in studying single cells. Relatively few cells
 can be assayed at once using current droplet, imaging, or microwell
 technologies, and low-abundance molecules or modifications may not be detected
-by chance in a phenomenon known as dropout. To solve this problem, Angermueller
+by chance due to a phenomenon known as dropout. To solve this problem, Angermueller
 et al. [@tag:Angermueller2016_single_methyl] trained a neural network to predict
 the presence or absence of methylation of a specific CpG site in single cells
 based on surrounding methylation signal and underlying DNA sequence, achieving
 several percentage points of improvement compared to random forests or deep
 networks trained only on CpG or sequence information. Similar deep learning
 methods have been applied to impute low-resolution ChIP-seq signal from bulk
-tissue with great success, and they could easily be adapted to single cell data
+tissue with great success, and they could easily be adapted to single-cell data
 [@tag:Qin2017_onehot @tag:Koh2016_denoising]. Deep learning has also been useful
 for dealing with batch effects [@tag:Shaham2016_batch_effects].
 
 Examining populations of single cells can reveal biologically meaningful subsets
 of cells as well as their underlying gene regulatory networks
 [@tag:Gaublomme2015_th17]. Unfortunately, machine learning generally struggles
-with unbalanced data — when there are many more inputs of class 1 than class 2 —
+with imbalanced data — when there are many more examples of class 1 than class 2 —
 because prediction accuracy is usually evaluated over the entire dataset. To
 tackle this challenge, Arvaniti et al. [@tag:Arvaniti2016_rare_subsets]
 classified healthy and cancer cells expressing 25 markers by using the most
@@ -596,18 +596,18 @@ They achieved an impressive precision of 50% to 90% with 80% recall on cells
 where the subset percentage ranged from 0.1 to 1%, which significantly
 outperformed logistic regression and distance-based outlier detection methods.
 However, they did not benchmark against random forests, which tend to be better
-with unbalanced data, or against the neural network itself, and their data was
+with imbalanced data, and their data was
 fairly low dimensional. Future work will be needed to establish the utility of
 deep learning in cell subset identification, but the stunning improvements in
 image classification over the past 5 years [@tag:He2015_images] suggest that
 this goal will be achievable.
 
-The sheer quantity of “omic” information that can be obtained from each cell, as
+The sheer quantity of "omic" information that can be obtained from each cell, as
 well as the number of cells in each dataset, uniquely position single-cell data
 to benefit from deep learning. In the future, lineage tracing could be
 revolutionized by using autoencoders to reduce the feature space of
 transcriptomic or variant data followed by algorithms to learn optimal cell
-differentiation trajectories [@tag:Qiu2017_graph_embedding], or by feeding cell
+differentiation trajectories [@tag:Qiu2017_graph_embedding] or by feeding cell
 morphology and movement into neural networks
 [@tag:Buggenthin2017_imaged_lineage]. Reinforcement learning algorithms
 [@tag:Silver2016_alphago] could be trained on the evolutionary dynamics of
@@ -625,14 +625,14 @@ study of micro-scale ecosystems within us and around us. In recent years,
 machine learning has proved to be a powerful tool for metagenomic analysis. 16S
 rRNA has long been used to deconvolve mixtures of microbial genomes, yet this
 ignores >99% of the genomic content. Subsequent tools aimed to classify
-300-3000bp reads from complex mixtures of microbial genomes based on
+300-3000 base pair reads from complex mixtures of microbial genomes based on
 tetranucleotide frequencies (which are characteristic for different organisms
 [@tag:Karlin]) using supervised [@tag:McHardy @tag:nbc] or unsupervised methods
 [@tag:Abe]. Then, researchers began to use techniques that could estimate
 relative abundances from an entire sample, which is much faster than classifying
 individual reads [@tag:Metaphlan @tag:wgsquikr @tag:lmat @tag:Vervier]. There is
 also great interest in identifying and annotating sequence reads [@tag:yok
-@tag:Soueidan]. However, the focus on taxonomic/functional annotation is just
+@tag:Soueidan]. However, the focus on taxonomic and functional annotation is just
 the first step. Several groups have proposed methods to determine host or
 environment phenotypes from the organisms that are identified [@tag:Guetterman
 @tag:Knights @tag:Stratnikov @tag:Segata] or overall sequence composition
@@ -640,9 +640,9 @@ environment phenotypes from the organisms that are identified [@tag:Guetterman
 improve classification [@tag:Liu @tag:Segata], and techniques have been proposed
 that are classifier-independent [@tag:Ditzler @tag:Ditzler2].
 
-How have neural networks (NNs) been of use? Most neural networks are being used
+How have neural networks been of use? Most neural networks are being used
 for phylogenetic classification or functional annotation from sequence data,
-where there is a lot of data for training (and thus suitable for NNs). Neural
+where there is a lot of data for training. Neural
 networks have been applied successfully to gene annotation (e.g. Orphelia
 [@tag:Hoff] and FragGeneScan [@doi:10.1093/nar/gkq747]), which usually has
 plenty of training examples.  Representations (similar to Word2Vec
@@ -655,16 +655,16 @@ into homology/protein family classification in 2007, and therefore, deep
 learning is deeply rooted in functional classification methods.
 
 One of the first techniques of *de novo* genome binning used self-organizing
-maps, a type of NN [@tag:Abe]. Essinger et al. used Adaptive Resonance Theory
+maps, a type of neural network [@tag:Abe]. Essinger et al. used Adaptive Resonance Theory
 (ART) to cluster similar genomic fragments and showed that it had better
-performance than K-means [@tag:Essinger2010_taxonomic]. However, other methods
+performance than k-means [@tag:Essinger2010_taxonomic]. However, other methods
 based on interpolated Markov models [@tag:Salzberg] have performed better than
 these early genome binners. Neural networks can be slow, and therefore, have had
 limited use for reference-based taxonomic classification, with TAC-ELM
-[@tag:TAC-ELM] being the only NN-based algorithm to taxonomically classify
+[@tag:TAC-ELM] being the only neural network-based algorithm to taxonomically classify
 massive amounts of metagenomic data. Also, neural networks can fail to perform
 if there are not enough training examples, which is the case with taxonomic
-classification (since only ~10% of estimated species have been sequenced). An
+classification (because only ~10% of estimated species have been sequenced). An
 initial study successfully applied neural networks to taxonomic classification
 of 16S rRNA genes, with convolutional networks providing about 10% accuracy
 genus-level improvement over RNNs and even random forests [@tag:Mrzelj].
@@ -684,43 +684,42 @@ diagnosing disease [@tag:Faruqi].
 
 Challenges remain in applying deep neural networks to metagenomics problems.
 They are not yet ideal for phenotype classification because most studies contain
-tens of samples and hundreds or thousands of features (aka species). Such
+tens of samples and hundreds or thousands of features (species). Such
 underdetermined, or ill-conditioned, problems are still a challenge for deep
-neural networks that require many more training examples than features to
-sufficiently converge the weights on the hidden layers. Also, due to convergence
+neural networks that require many training examples. Also, due to convergence
 issues (slowness and instability due to large neural networks modeling very
 large datasets [@arxiv:1212.0901v2]), taxonomic classification of reads from
 whole genome sequencing seems out of reach at the moment for deep neural
-networks -- due to only thousands of full-sequenced genomes as compared to
+networks.  There are only thousands of full-sequenced genomes as compared to
 hundreds of thousands of 16S rRNA sequences available for training.
 
 However, because recurrent neural networks are showing success for denoising
-base calls for the relatively new Oxford Nanopore long-read sequencer
+base calls for the Oxford Nanopore long-read sequencer
 [@tag:Boza] (discussed further in the next section), there is hope that the
 entire pipeline, from denoising of through functional classification, can be
-combined into one step by using powerful LSTM's, which have been quite
+combined into one step by using powerful LSTMs, which have been quite
 successful in raw speech signal-to-meaning translation [@tag:Sutskever]. For
 example, metagenomic assembly usually requires binning then assembly, but could
-deep neural nets accomplish both tasks in one network? We believe the largest
+deep neural nets accomplish both tasks in one network? We believe the greatest
 potential in deep learning is to learn "everything" in one complex network, with
 a plethora of labeled (reference) data and unlabeled (microbiome experiments)
 examples.
 
 ### Sequencing and variant calling
 
-While we have so far discussed the role of deep learning in analyzing genomic
+While we have so far primarily discussed the role of deep learning in analyzing genomic
 data, deep learning approaches can also substantially improve our ability to
-obtain the genomic data itself. We will discuss two specific challenges: calling
-SNPs (single nucleotide polymorphisms) and indels (insertions and deletions)
-with high specificity and sensitivity, and improving the accuracy of new types
+obtain the genomic data itself. We discuss two specific challenges: calling
+SNPs and indels (insertions and deletions)
+with high specificity and sensitivity and improving the accuracy of new types
 of data such as nanopore sequencing. These two tasks are critical for studying
 rare variation, allele-specific transcription and translation, and splice site
-mutations, among others. In the clinical realm, sequencing of rare tumor clones
+mutations. In the clinical realm, sequencing of rare tumor clones
 and other genetic diseases will require accurate calling of SNP and indels.
 
 Current methods achieve relatively high (>99%) precision at 90% recall for SNPs
 and indel calls from Illumina short-read data [@tag:Poplin2016_deepvariant], yet
-this leaves a large number of potentially clinically important remaining false
+this leaves a large number of potentially clinically-important remaining false
 positives and false negatives. These methods have so far relied on experts to
 build probabilistic models that reliably separate signal from noise. However,
 this process is time consuming and, more importantly, fundamentally limited by
@@ -733,7 +732,7 @@ column is a nucleotide and each row is a read from the sample library
 [@tag:Poplin2016_deepvariant]. The top 5 rows represent the reference, and the
 bottom 95 rows represent randomly sampled reads that overlap the candidate
 variant. Each RGBA (red/green/blue/alpha) image pixel encodes the base (A, C, T,
-G) as a different R value, quality score as a G value, strand as a B value, and
+G) as a different red value, quality score as a green value, strand as a blue value, and
 variation from the reference as the alpha value. The neural network outputs
 genotype probabilities for each candidate variant. They were able to achieve
 better performance than GATK, a leading genotype caller, even when GATK was
@@ -756,7 +755,7 @@ generally effective, and efficient, strategy.
 
 In limited experiments, DeepVariant was robust to sequencing depth, read length,
 and even species [@tag:Poplin2016_deepvariant]. However, a model built on
-Illumina data, for instance, may not be applicable to PacBio long-read data or
+Illumina data, for instance, may not be optimal for PacBio long-read data or
 MinION nanopore data, which have vastly different specificity and sensitivity
 profiles and signal-to-noise characteristics. Recently, Boza et al. used
 bidirectional recurrent neural networks to infer the *E. coli* sequence from
