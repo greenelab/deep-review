@@ -16,9 +16,9 @@ gene expression, fluorescence microscopy, and other types of data that
 may ultimately prove to be clinically relevant.
 
 Progress has been rapid in genomics and imaging, fields where important tasks
-are readily adapted to well-established deep learning paradigms.  One
-dimensional convolutional and recurrent neural networks are well-suited for
-problems in protein binding of DNA and RNA, epigenomics, and RNA
+are readily adapted to well-established deep learning paradigms.  One-dimensional
+convolutional and recurrent neural networks are well-suited for
+tasks related to DNA- and RNA-binding proteins, epigenomics, and RNA
 splicing.  Two dimensional CNNs are ideal for segmentation, feature extraction,
 and  classification in fluorescence microscopy images
 [@doi:10.3109/10409238.2015.1135868]. Other areas, such as cellular signaling,
@@ -26,7 +26,7 @@ are biologically important but studied less-frequently to date, with some except
 [@tag:Chen2015_trans_species].  This may be a consequence of data limitations or
 greater challenges in adapting neural network architectures to the available
 data.  Here, we highlight several areas of investigation and assess how deep
-learning can move these fields forward.
+learning might move these fields forward.
 
 ### Gene expression
 
@@ -38,8 +38,8 @@ While gene expression measurements were traditionally made by quantitative
 polymerase chain reaction (qPCR), low-throughput fluorescence-based methods, and
 microarray technologies, the field has shifted in recent years to primarily
 performing RNA sequencing (RNA-seq) to catalog whole transcriptomes. As RNA-seq
-continues to fall in price and rise in throughput,
-training deep models to study gene expression will become even more feasible.
+continues to fall in price and rise in throughput, sample sizes will increase and
+training deep models to study gene expression will become even more useful.
 
 Already several deep learning approaches have been applied to gene expression
 data with varying aims. For instance, many researchers have applied unsupervised
@@ -59,7 +59,7 @@ ground truth labels, which are often difficult to acquire or are incorrect, are
 nonessential. However, careful interpretation must be performed regarding how
 the genes are aggregated into features. Precisely attributing node activations
 to specific biological functions risks over-interpreting models and can lead to
-incorrect conclusions.  Batch effects in improperly normalized data can cause
+incorrect conclusions.  Also, batch effects in improperly normalized data can cause
 models to discover non-biological features.
 
 Deep learning approaches are also being applied to gene expression prediction
@@ -200,7 +200,7 @@ further improved TFBS predictive accuracy. Due to the motif-driven nature of the
 TFBS task, most architectures have been convolution-based
 [@tag:Zeng2016_convolutional]. While many models for TFBS prediction resemble
 computer vision and natural language processing (NLP) tasks, it is important to
-note that DNA sequence tasks are fundamentally different than NLP tasks.
+note that DNA sequence tasks are fundamentally different.
 Thus the models should be adapted from traditional deep learning models in order
 to account for such differences. For example, motifs may appear in either strand
 of a DNA sequence, resulting in two different forms of the motif (forward and
@@ -268,7 +268,7 @@ homologs might be studied for insight, they may not exist or may be just as
 poorly characterized.
 
 Recognizing enhancers presents additional challenges. Enhancers may be up to one
-million base pairs upstream or downstream from the target promoter, on either
+million base pairs upstream or downstream from the affected promoter, on either
 strand, even within the introns of other genes [@doi:10.1038/nrg3458]. They do
 not necessarily operate on the nearest gene and may affect multiple
 genes. Their activity is frequently tissue- or context-specific. A substantial
@@ -300,7 +300,7 @@ Indeed, neural networks were used for promoter recognition as early as 1996,
 albeit with mixed results [@doi:10.1016/S0097-8485(96)80015-5]. Since then,
 there has been much work in applying deep learning to this area, although little
 in the way of comparative studies or formal benchmarks. We therefore focus
-on a few recent characteristic studies to outline the state of the art and
+on a few recent important studies to outline the state of the art and
 extant problems.
 
 Basset [@doi:10.1101/gr.200535.115] trained CNNs on DNA
@@ -708,7 +708,7 @@ examples.
 ### Sequencing and variant calling
 
 While we have so far primarily discussed the role of deep learning in analyzing genomic
-data, deep learning approaches can also substantially improve our ability to
+data, deep learning can also substantially improve our ability to
 obtain the genomic data itself. We discuss two specific challenges: calling
 SNPs and indels (insertions and deletions)
 with high specificity and sensitivity and improving the accuracy of new types
