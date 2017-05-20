@@ -31,7 +31,7 @@ The ability to irrefutably prove manuscript existence at a past time could be im
 
 We created an open repository on the GitHub version control platform ([`greenelab/deep-review`](https://github.com/greenelab/deep-review)) [@url:https://github.com/greenelab/deep-review].
 Here, we engaged with numerous authors from papers within and outside of the area.
-The manuscript was drafted via GitHub commits by 25 individuals who met the ICJME standards of authorship.
+The manuscript was drafted via GitHub commits by 25 individuals who met the ICMJE standards of authorship.
 These were individuals who contributed to the review of the literature;
 drafted the manuscript or provided substantial critical revisions;
 approved the final manuscript draft; and agreed to be accountable in all aspects of the work.
