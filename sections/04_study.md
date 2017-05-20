@@ -109,8 +109,8 @@ human pathologies than previously thought [@tag:Li2016_variation].
 
 Sequencing studies routinely return thousands of unannotated variants, but which
 cause functional changes in splicing and how are those changes manifested? Prediction of a "splicing
-code" has been a holy grail over the past decade. Initial machine learning
-approaches used a naive Bayes model and a 2-layer Bayesian neural network with
+code" has been a goal of the field for the past decade. Initial machine learning
+approaches used a naïve Bayes model and a 2-layer Bayesian neural network with
 thousands of hand-derived sequence-based features to predict the probability of
 exon skipping [@tag:Barash2010_splicing_code @tag:Xiong2011_bayesian]. With the
 advent of deep learning, more complex models were built that provided better
