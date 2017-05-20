@@ -259,7 +259,6 @@ text	citation	standard_citation	citation_id
 @tag:Gal2015_dropout	arxiv:1506.02142	arxiv:1506.02142	1FDihfnM
 @tag:Gaublomme2015_th17	doi:10.1016/j.cell.2015.11.009	doi:10.1016/j.cell.2015.11.009	1HPu3R2B4
 @tag:Gawad2016_singlecell	doi:10.1038/nrg.2015.16	doi:10.1038/nrg.2015.16	1AWC7HsO0
-@tag:Geras2017_multiview_mamm	doi:10.1038/nrg.2015.16	doi:10.1038/nrg.2015.16	1AWC7HsO0
 @tag:Gerstein2016_scaling	doi:10.1186/s13059-016-0917-0	doi:10.1186/s13059-016-0917-0	1E7bFCRV4
 @tag:Ghandi2014_enhanced	doi:10.1371/journal.pcbi.1003711	doi:10.1371/journal.pcbi.1003711	JxuQvvyk
 @tag:Ghosh1992_sequence	doi:10.1117/12.140112	doi:10.1117/12.140112	oc44yBj0
@@ -297,7 +296,6 @@ text	citation	standard_citation	citation_id
 @tag:Koh2016_denoising	doi:10.1101/052118	doi:10.1101/052118	XimuXZlz
 @tag:Koh2017_understanding	arxiv:1703.04730	arxiv:1703.04730	69wxD9y
 @tag:Kooi2016_mamm_lesions	doi:10.1016/j.media.2016.07.007	doi:10.1016/j.media.2016.07.007	18cZbigDD
-@tag:Kooi2017_mamm_tl	doi:10.1002/mp.12110	doi:10.1002/mp.12110	1ExJjVKvT
 @tag:Kraus2017_deeploc	doi:10.15252/msb.20177551	doi:10.15252/msb.20177551	DcnNfASG
 @tag:Krizhevsky2013_nips_cnn	url:https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf	url:https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf	CCS5KSIM
 @tag:Krizhevsky2014_weird_trick	arxiv:1404.5997	arxiv:1404.5997	ZSVsnPVO
