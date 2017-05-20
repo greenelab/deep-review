@@ -2996,3 +2996,37 @@ Analysis},
  year = {2017}
 }
 
+
+@article{ULagTifF,
+ abstract = {Many architects believe that major improvements in cost-energy-performance
+must now come from domain-specific hardware. This paper evaluates a custom
+ASIC---called a Tensor Processing Unit (TPU)---deployed in datacenters since
+2015 that accelerates the inference phase of neural networks (NN). The heart of
+the TPU is a 65,536 8-bit MAC matrix multiply unit that offers a peak
+throughput of 92 TeraOps/second (TOPS) and a large (28 MiB) software-managed
+on-chip memory. The TPU's deterministic execution model is a better match to
+the 99th-percentile response-time requirement of our NN applications than are
+the time-varying optimizations of CPUs and GPUs (caches, out-of-order
+execution, multithreading, multiprocessing, prefetching, ...) that help average
+throughput more than guaranteed latency. The lack of such features helps
+explain why, despite having myriad MACs and a big memory, the TPU is relatively
+small and low power. We compare the TPU to a server-class Intel Haswell CPU and
+an Nvidia K80 GPU, which are contemporaries deployed in the same datacenters.
+Our workload, written in the high-level TensorFlow framework, uses production
+NN applications (MLPs, CNNs, and LSTMs) that represent 95% of our datacenters'
+NN inference demand. Despite low utilization for some applications, the TPU is
+on average about 15X - 30X faster than its contemporary GPU or CPU, with
+TOPS/Watt about 30X - 80X higher. Moreover, using the GPU's GDDR5 memory in the
+TPU would triple achieved TOPS and raise TOPS/Watt to nearly 70X the GPU and
+200X the CPU.},
+ archiveprefix = {arXiv},
+ author = {Norman P. Jouppi and Cliff Young and Nishant Patil and David Patterson and Gaurav Agrawal and Raminder Bajwa and Sarah Bates and Suresh Bhatia and Nan Boden and Al Borchers and Rick Boyle and Pierre-luc Cantin and Clifford Chao and Chris Clark and Jeremy Coriell and Mike Daley and Matt Dau and Jeffrey Dean and Ben Gelb and Tara Vazir Ghaemmaghami and Rajendra Gottipati and William Gulland and Robert Hagmann and C. Richard Ho and Doug Hogberg and John Hu and Robert Hundt and Dan Hurt and Julian Ibarz and Aaron Jaffey and Alek Jaworski and Alexander Kaplan and Harshit Khaitan and Andy Koch and Naveen Kumar and Steve Lacy and James Laudon and James Law and Diemthu Le and Chris Leary and Zhuyuan Liu and Kyle Lucke and Alan Lundin and Gordon MacKean and Adriana Maggiore and Maire Mahony and Kieran Miller and Rahul Nagarajan and Ravi Narayanaswami and Ray Ni and Kathy Nix and Thomas Norrie and Mark Omernick and Narayana Penukonda and Andy Phelps and Jonathan Ross and Matt Ross and Amir Salek and Emad Samadiani and Chris Severn and Gregory Sizikov and Matthew Snelham and Jed Souter and Dan Steinberg and Andy Swing and Mercedes Tan and Gregory Thorson and Bo Tian and Horia Toma and Erick Tuttle and Vijay Vasudevan and Richard Walter and Walter Wang and Eric Wilcox and Doe Hyun Yoon},
+ eprint = {1704.04760v1},
+ file = {1704.04760v1.pdf},
+ month = {Apr},
+ primaryclass = {cs.AR},
+ title = {In-Datacenter Performance Analysis of a Tensor Processing Unit},
+ url = {http://arxiv.org/abs/1704.04760v1},
+ year = {2017}
+}
+

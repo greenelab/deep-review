@@ -44127,5 +44127,322 @@
     "title": "Visualizing deep neural network decisions: Prediction difference analysis",
     "title-short": "Visualizing deep neural network decisions",
     "type": "article-journal"
+  },
+  {
+    "URL": "http://arxiv.org/abs/1704.04760v1",
+    "abstract": "Many architects believe that major improvements in cost-energy-performance must now come from domain-specific hardware. This paper evaluates a custom ASIC—called a Tensor Processing Unit (TPU)—deployed in datacenters since 2015 that accelerates the inference phase of neural networks (NN). The heart of the TPU is a 65,536 8-bit MAC matrix multiply unit that offers a peak throughput of 92 TeraOps/second (TOPS) and a large (28 MiB) software-managed on-chip memory. The TPU’s deterministic execution model is a better match to the 99th-percentile response-time requirement of our NN applications than are the time-varying optimizations of CPUs and GPUs (caches, out-of-order execution, multithreading, multiprocessing, prefetching, ...) that help average throughput more than guaranteed latency. The lack of such features helps explain why, despite having myriad MACs and a big memory, the TPU is relatively small and low power. We compare the TPU to a server-class Intel Haswell CPU and an Nvidia K80 GPU, which are contemporaries deployed in the same datacenters. Our workload, written in the high-level TensorFlow framework, uses production NN applications (MLPs, CNNs, and LSTMs) that represent 95NN inference demand. Despite low utilization for some applications, the TPU is on average about 15X - 30X faster than its contemporary GPU or CPU, with TOPS/Watt about 30X - 80X higher. Moreover, using the GPU’s GDDR5 memory in the TPU would triple achieved TOPS and raise TOPS/Watt to nearly 70X the GPU and 200X the CPU.",
+    "author": [
+      {
+        "family": "Jouppi",
+        "given": "Norman P."
+      },
+      {
+        "family": "Young",
+        "given": "Cliff"
+      },
+      {
+        "family": "Patil",
+        "given": "Nishant"
+      },
+      {
+        "family": "Patterson",
+        "given": "David"
+      },
+      {
+        "family": "Agrawal",
+        "given": "Gaurav"
+      },
+      {
+        "family": "Bajwa",
+        "given": "Raminder"
+      },
+      {
+        "family": "Bates",
+        "given": "Sarah"
+      },
+      {
+        "family": "Bhatia",
+        "given": "Suresh"
+      },
+      {
+        "family": "Boden",
+        "given": "Nan"
+      },
+      {
+        "family": "Borchers",
+        "given": "Al"
+      },
+      {
+        "family": "Boyle",
+        "given": "Rick"
+      },
+      {
+        "family": "Cantin",
+        "given": "Pierre-luc"
+      },
+      {
+        "family": "Chao",
+        "given": "Clifford"
+      },
+      {
+        "family": "Clark",
+        "given": "Chris"
+      },
+      {
+        "family": "Coriell",
+        "given": "Jeremy"
+      },
+      {
+        "family": "Daley",
+        "given": "Mike"
+      },
+      {
+        "family": "Dau",
+        "given": "Matt"
+      },
+      {
+        "family": "Dean",
+        "given": "Jeffrey"
+      },
+      {
+        "family": "Gelb",
+        "given": "Ben"
+      },
+      {
+        "family": "Ghaemmaghami",
+        "given": "Tara Vazir"
+      },
+      {
+        "family": "Gottipati",
+        "given": "Rajendra"
+      },
+      {
+        "family": "Gulland",
+        "given": "William"
+      },
+      {
+        "family": "Hagmann",
+        "given": "Robert"
+      },
+      {
+        "family": "Ho",
+        "given": "C. Richard"
+      },
+      {
+        "family": "Hogberg",
+        "given": "Doug"
+      },
+      {
+        "family": "Hu",
+        "given": "John"
+      },
+      {
+        "family": "Hundt",
+        "given": "Robert"
+      },
+      {
+        "family": "Hurt",
+        "given": "Dan"
+      },
+      {
+        "family": "Ibarz",
+        "given": "Julian"
+      },
+      {
+        "family": "Jaffey",
+        "given": "Aaron"
+      },
+      {
+        "family": "Jaworski",
+        "given": "Alek"
+      },
+      {
+        "family": "Kaplan",
+        "given": "Alexander"
+      },
+      {
+        "family": "Khaitan",
+        "given": "Harshit"
+      },
+      {
+        "family": "Koch",
+        "given": "Andy"
+      },
+      {
+        "family": "Kumar",
+        "given": "Naveen"
+      },
+      {
+        "family": "Lacy",
+        "given": "Steve"
+      },
+      {
+        "family": "Laudon",
+        "given": "James"
+      },
+      {
+        "family": "Law",
+        "given": "James"
+      },
+      {
+        "family": "Le",
+        "given": "Diemthu"
+      },
+      {
+        "family": "Leary",
+        "given": "Chris"
+      },
+      {
+        "family": "Liu",
+        "given": "Zhuyuan"
+      },
+      {
+        "family": "Lucke",
+        "given": "Kyle"
+      },
+      {
+        "family": "Lundin",
+        "given": "Alan"
+      },
+      {
+        "family": "MacKean",
+        "given": "Gordon"
+      },
+      {
+        "family": "Maggiore",
+        "given": "Adriana"
+      },
+      {
+        "family": "Mahony",
+        "given": "Maire"
+      },
+      {
+        "family": "Miller",
+        "given": "Kieran"
+      },
+      {
+        "family": "Nagarajan",
+        "given": "Rahul"
+      },
+      {
+        "family": "Narayanaswami",
+        "given": "Ravi"
+      },
+      {
+        "family": "Ni",
+        "given": "Ray"
+      },
+      {
+        "family": "Nix",
+        "given": "Kathy"
+      },
+      {
+        "family": "Norrie",
+        "given": "Thomas"
+      },
+      {
+        "family": "Omernick",
+        "given": "Mark"
+      },
+      {
+        "family": "Penukonda",
+        "given": "Narayana"
+      },
+      {
+        "family": "Phelps",
+        "given": "Andy"
+      },
+      {
+        "family": "Ross",
+        "given": "Jonathan"
+      },
+      {
+        "family": "Ross",
+        "given": "Matt"
+      },
+      {
+        "family": "Salek",
+        "given": "Amir"
+      },
+      {
+        "family": "Samadiani",
+        "given": "Emad"
+      },
+      {
+        "family": "Severn",
+        "given": "Chris"
+      },
+      {
+        "family": "Sizikov",
+        "given": "Gregory"
+      },
+      {
+        "family": "Snelham",
+        "given": "Matthew"
+      },
+      {
+        "family": "Souter",
+        "given": "Jed"
+      },
+      {
+        "family": "Steinberg",
+        "given": "Dan"
+      },
+      {
+        "family": "Swing",
+        "given": "Andy"
+      },
+      {
+        "family": "Tan",
+        "given": "Mercedes"
+      },
+      {
+        "family": "Thorson",
+        "given": "Gregory"
+      },
+      {
+        "family": "Tian",
+        "given": "Bo"
+      },
+      {
+        "family": "Toma",
+        "given": "Horia"
+      },
+      {
+        "family": "Tuttle",
+        "given": "Erick"
+      },
+      {
+        "family": "Vasudevan",
+        "given": "Vijay"
+      },
+      {
+        "family": "Walter",
+        "given": "Richard"
+      },
+      {
+        "family": "Wang",
+        "given": "Walter"
+      },
+      {
+        "family": "Wilcox",
+        "given": "Eric"
+      },
+      {
+        "family": "Yoon",
+        "given": "Doe Hyun"
+      }
+    ],
+    "id": "ULagTifF",
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          4
+        ]
+      ]
+    },
+    "title": "In-datacenter performance analysis of a tensor processing unit",
+    "type": "article-journal"
   }
 ]
