@@ -1,12 +1,12 @@
 ## The impact of deep learning in treating disease and developing new treatments
 
-Given the ever-present need to make better interventions faster at the point of
-care -- incorporating the complex calculus of a patients symptoms, diagnostics
-and life history -- there is a long history of attempts to apply deep learning
-to patient treatment. Success in this area would also be very useful for
-directions like personalized healthcare or precision medicine
-[@doi:10.1056/NEJMp1006304 @doi:10.1155/2013/769639]. Earlier, we have written
-of the possibilities for patient categorization. Here, we examine the potential
+Given the ever-present need to make better, faster interventions at the point of
+care -- incorporating the complex calculus of a patients symptoms, diagnostics,
+and life history -- there have been many attempts to apply deep learning
+to patient treatment. Success in this area would be very useful for
+personalized healthcare or precision medicine
+[@doi:10.1056/NEJMp1006304 @doi:10.1155/2013/769639]. Earlier, we presented
+possibilities for patient categorization. Here, we examine the potential
 for better treatment, which broadly, may divided into methods for improved
 choices of interventions for patients and those for development of new
 interventions.
@@ -14,12 +14,12 @@ interventions.
 ### Categorizing patients for clinical decision making
 
 As long ago as 1996, Tu [@tag:Tu1996_anns] compared the effectiveness of
-artificial neural networks and logistic regression, questioning whether deep
-learning would replace traditional statistical methods for predicting medical
+artificial neural networks and logistic regression, questioning whether these
+techniques would replace traditional statistical methods for predicting medical
 outcomes such as myocardial infarction [@tag:Baxt1991_myocardial] or mortality
 [@tag:Wasson1985_clinical]. He posited that while neural networks have several
 advantages in representational power, the difficulties in interpretation may
-limit clinical applications. Similarly, in 2006 Lisboa and Taktak
+limit clinical applications, a limitation that still remains today. Similarly, in 2006 Lisboa and Taktak
 [@tag:Lisboa2006_review] examined the use of artificial neural networks in
 medical journals, concluding that they improved healthcare relative to
 traditional screening methods in 21 of 27 studies.
@@ -29,11 +29,11 @@ decision making, it is hindered by a challenge common to many deep learning
 applications: it is much easier to predict an outcome than to suggest an action
 to change the outcome. Several attempts
 [@tag:Katzman2016_deepsurv @tag:Ranganath2016_deep] at recasting the clinical
-decision-making problem into a prediction problem (i.e., prediction of which
+decision-making problem into a prediction problem (i.e. prediction of which
 treatment will most improve the patient's health) have accurately predicted
 survival patterns, but technical and medical challenges remain for clinical
 adoption (similar to those for categorization). In particular, remaining
-challenges include actionable interpretability of deep learning models, fitting
+barriers include actionable interpretability of deep learning models, fitting
 deep models to limited and heterogeneous data, and integrating complex
 predictive models into a dynamic clinical environment.
 
@@ -54,13 +54,13 @@ hidden features to the output using a causal approach.
 A common application for deep learning techniques in this domain is to leverage
 the temporal structure of healthcare records. As previously discussed, many
 studies [@tag:Lipton2016_missing @tag:Che2016_rnn @tag:Huddar2016_predicting
-@tag:Lipton2015_lstm] have used deep recurrent networks to categorize patients
+@tag:Lipton2015_lstm] have used deep recurrent networks to categorize patients,
 but most stop short of suggesting clinical decisions. Nemati et al.
 [@tag:Nemati2016_rl] used deep reinforcement learning to optimize a heparin
 dosing policy for intensive care patients. However, because the ideal dosing
 policy is unknown, the model's predictions must be evaluated on counter-factual
 data. This represents a common challenge when bridging the gap between research
-and clinical practice: because the ground-truth is unknown, researchers struggle
+and clinical practice.  Because the ground-truth is unknown, researchers struggle
 to evaluate model predictions in the absence of interventional data, but
 clinical application is unlikely until the model has been shown to be effective.
 The impressive applications of deep reinforcement learning to other domains
@@ -73,17 +73,17 @@ difficulties of counter-factual inference.
 
 ##### Efficient clinical trials
 
-A clinical task to deep learning which has been more successfully applied is the
-assignment of patients to clinical trials. Ithapu et al
+A clinical deep learning task that has been more successful is the
+assignment of patients to clinical trials. Ithapu et al.
 [@tag:Ithapu2015_efficient] used a randomized denoising autoencoder to learn a
 multimodal imaging marker that predicts future cognitive and neural decline from
 positron emission tomography (PET), amyloid florbetapir PET, and structural
 magnetic resonance imaging. By accurately predicting which cases will progress
 to dementia, they were able to efficiently assign patients to a clinical trial
 and reduced the required sample sizes by a factor of five.  Similarly, Artemov
-et al [@tag:Artemov2016_clinical] applied deep learning to predict which
+et al. [@tag:Artemov2016_clinical] applied deep learning to predict which
 clinical trials were likely to fail and which were likely to succeed. By
-predicting the side effects and pathway activations of each drug, and then
+predicting the side effects and pathway activations of each drug and
 translating these activations to a success probability, their deep
 learning-based approach was able to significantly outperform a random forest
 classifier trained on gene expression changes. These approaches suggest
@@ -95,18 +95,17 @@ drug development.
 ##### Actionable interpretability
 
 A common challenge in many applied deep learning problems is the consideration
-of deep learning models as uninterpretable "black boxes". Without human-
-intelligible reasoning for the model's predictions, it is difficult to trust the
+of deep learning models as uninterpretable "black boxes". Without
+human-intelligible reasoning for the model's predictions, it is difficult to trust the
 model. This presents a major challenge for the risk-averse task of clinical
 decision making. As described above, there has been some work to directly assign
 treatment plans without interpretability; however, the removal of human experts
 from the decision-making loop make the models difficult to integrate with
 clinical practice. To alleviate this challenge, several studies have attempted
 to create more interpretable deep models, either specifically for healthcare or
-as a general procedure for deep learning.  Further work in interpreting
+as a general procedure for deep learning (see Discussion).  Further work in interpreting
 predictions and understanding the knowledge learned by deep neural networks seem
-necessary for transformative impact in clinical practice. Interpretability in
-deep learning is reviewed more extensively in the Discussion.
+necessary for transformative impact in clinical practice.
 
 ##### Integrating deep learning with clinical practice
 
@@ -133,14 +132,14 @@ Drug repositioning (or repurposing) is an attractive option for delivering new
 drugs to the market because of the high costs and failure rates associated with
 more traditional drug discovery approaches [@doi:10.1016/j.jhealeco.2016.01.012
 @doi:10.1038/nrd4609]. A decade ago, the concept of the Connectivity Map
-[@doi:10.1126/science.1132939] had a sizeable impact on the field: reverse
+[@doi:10.1126/science.1132939] had a sizeable impact on the field.  Reverse
 matching disease gene expression signatures with a large set of reference
-compound profiles allowed to formulate repurposing hypotheses at scale using a
+compound profiles allowed researchers to formulate repurposing hypotheses at scale using a
 simple non-parametric test. Since then, several advanced computational methods
 have been applied to formulate and validate drug repositioning hypotheses
 [@doi:10.1093/bib/bbv020 @doi:10.1093/bib/bbw112 @doi:10.1093/bib/bbw110]. Using
-supervised learning and collaborative filtering to tackle this type of problems
-is proving successful in different scenarios, especially when coupling disease
+supervised learning and collaborative filtering to tackle this type of problem
+is proving successful, especially when coupling disease
 or compound omic data with topological information from protein-protein or
 protein-compound interaction networks [@doi:10.1186/1758-2946-5-30
 @doi:10.1021/ci500340n @doi:10.1186/s12859-015-0845-0].
@@ -152,8 +151,8 @@ and drug repositioning opportunities in cancer. More recently, Aliper et al
 [@doi:10.1021/acs.molpharmaceut.6b00248] used gene- and pathway-level drug
 perturbation transcriptional profiles from the Library of Network-Based Cellular
 Signatures (LINCS) [@doi:10.3389/fgene.2014.00342] to train a fully connected
-deep neural network able to predict drug therapeutic uses and indications. By
-using confusion matrices and leveraging misclassification, the authors formulate
+deep neural network to predict drug therapeutic uses and indications. By
+using confusion matrices and leveraging misclassification, the authors formulated
 a number of interesting hypotheses, including repurposing cardiovascular drugs
 such as otenzepad and pinacidil for neurological disorders.
 
@@ -170,8 +169,8 @@ novel interactions pointing to new indications for existing drugs. Wen et al.
 creating a DBN of stacked RBMs called DeepDTIs, which is able to predict
 interactions on the basis of chemical structure and protein sequence features.
 
-Drug repositioning appears to be an obvious candidate for the development of
-deep learning applications both because of the large amount of high-dimensional
+Drug repositioning appears to be an obvious candidate for
+deep learning both because of the large amount of high-dimensional
 data available and the complexity of the question being asked. However, what is
 perhaps the most promising piece of work in this space
 [@doi:10.1021/acs.molpharmaceut.6b00248] is more a proof of concept than a
@@ -216,8 +215,8 @@ of actives relative to other actives and inactives are less important
 predict ADMET traits for lead generation [@tag:Kearnes2016_admet] and how drugs
 are metabolized [@doi:10.1021/ci400518g].
 
-Here we primarily focus on ligand-based approaches that train on chemicals'
-features without requiring prior knowledge of the target. Chemical features may
+Ligand-based approaches train on chemicals'
+features without modeling target features (e.g. protein structure). Chemical features may
 be represented as a list of molecular descriptors such as molecular weight, atom
 counts, functional groups, charge representations, summaries of atom-atom
 relationships in the molecular graph, and more sophisticated derived properties
@@ -227,14 +226,14 @@ representations described below. Neural networks have a long history in this
 domain [@tag:Baskin2015_drug_disc @doi:10.1002/minf.201501008], and the 2012
 Merck Molecular Activity Challenge on Kaggle generated substantial excitement
 about the potential for high-parameter deep learning approaches.  The winning
-submission was an ensemble that included a multitask multilayer perceptron
-network [@tag:Dahl2014_multi_qsar], and the sponsors noted drastic improvements
+submission was an ensemble that included a multi-task multi-layer perceptron
+network [@tag:Dahl2014_multi_qsar].  The sponsors noted drastic improvements
 over a random forest (RF) baseline, remarking "we have seldom seen any method in
 the past 10 years that could consistently outperform RF by such a margin"
 [@tag:Ma2015_qsar_merck]. Subsequent work (reviewed in more detail by Goh et al.
 [@doi:10.1002/jcc.24764]) explored the effects of jointly modeling far more
 targets than the Merck challenge [@tag:Unterthiner2014_screening
-@tag:Ramsundar2015_multitask_drug], with [@tag:Ramsundar2015_multitask_drug]
+@tag:Ramsundar2015_multitask_drug], with Ramsundar et al. [@tag:Ramsundar2015_multitask_drug]
 showing that the benefits of multi-task networks had not yet saturated even with
 259 targets.  Although a deep learning approach, DeepTox
 [@tag:Mayr2016_deep_tox], was also the overall winner of another competition,
@@ -251,7 +250,7 @@ there are limitations to multi-task transfer learning that are in part a
 consequence of the degree to which tasks are related [@tag:Kearnes2016_admet].
 Some of the ADMET datasets showed superior performance in multi-task models with
 only 22 ADMET tasks compared to multi-task models with over 500 less-similar
-tasks. In addition, training datasets encountered in practical applications may
+tasks. In addition, the training datasets encountered in practical applications may
 be tiny relative to what is available in public datasets and organized
 competitions.  A study of BACE-1 inhibitors included only 1547 compounds
 [@tag:Subramanian2016_bace1].  Machine learning models were able to train on
@@ -262,8 +261,8 @@ screening datasets with tens or hundreds of thousands of compounds because the
 number of active compounds can be very small, on the order of 0.1% of all tested
 chemicals for a typical target [@doi:10.1002/wcms.1104]. This is consistent with
 the strong performance of low-parameter neural networks that emphasize
-compound-compound similarity, such as influence-relevance voter,
-[@tag:Swamidass2009_irv @tag:Lusci2015_irv] instead of predicting compound
+compound-compound similarity, such as influence-relevance voter
+[@tag:Swamidass2009_irv @tag:Lusci2015_irv], instead of predicting compound
 activity directly from chemical features.
 
 Much of the recent excitement in this domain has come from what could be
@@ -277,19 +276,19 @@ vector, such as a fixed-width bit vector fingerprint
 drug-target interaction methods discussed above
 [@doi:10.1021/acs.jproteome.6b00618].  An overly simplistic but approximately
 correct view of chemical fingerprints is that each bit represents the presence
-of absence of a particular chemical substructure in the molecular graph. Modern
+or absence of a particular chemical substructure in the molecular graph. Modern
 neural networks can operate directly on the molecular graph as input.  Duvenaud
 et al. [@tag:Duvenaud2015_graph_conv] generalized standard circular fingerprints
 by substituting discrete operations in the fingerprinting algorithm with
 operations in a neural network, producing a real-valued feature vector instead
 of a bit vector.  Other approaches offer trainable networks that can in theory
 learn chemical feature representations that are optimized for a particular
-prediction task.  Lusci et al. [@tag:Lusci2013_rnn] adapted recursive neural
-networks for directed acyclic graphs for undirected molecular graphs by creating
+prediction task.  Lusci et al. [@tag:Lusci2013_rnn] applied recursive neural
+networks for directed acyclic graphs to undirected molecular graphs by creating
 an ensemble of directed graphs in which one atom is selected as the root node. A
 single feature vector is obtained by summing over all feature vectors for all
 directed graphs in the ensemble.  Graph convolutions on undirected molecular
-graphs have eliminated the need to enumerate artificial directed graphs,
+graphs have eliminated the need to enumerate artificially directed graphs,
 learning feature vectors for atoms that are a function of the properties of
 neighboring atoms and local regions on the molecular graph
 [@tag:Kearnes2016_graph_conv @tag:AltaeTran2016_one_shot].
@@ -299,12 +298,12 @@ for learning chemical-chemical similarity functions.  Altae-Tran et al.
 developed a one-shot learning network [@tag:AltaeTran2016_one_shot] to address
 the reality that most practical chemical screening studies are unable to provide
 the thousands or millions of training compounds that are needed to train larger
-multitask networks.  Using graph convolutions to featurize chemicals, the
+multi-task networks.  Using graph convolutions to featurize chemicals, the
 network learns an embedding from compounds into a continuous feature space such
 that compounds with similar activities in a set of training tasks have similar
-embeddings.  The approach is evaluated in an extremely challenging setting where
-the embedding is learned from a subset of prediction tasks (e.g. activity assays
-for individual proteins) and only one to ten labeled examples are provided as
+embeddings.  The approach is evaluated in an extremely challenging setting.
+The embedding is learned from a subset of prediction tasks (e.g. activity assays
+for individual proteins), and only one to ten labeled examples are provided as
 training data on a new task.  On Tox21 targets, even when trained with _one_
 task-specific active compound and _one_ inactive compound, the model is able to
 generalize reasonably well because it has learned an informative embedding
@@ -335,7 +334,7 @@ ROC-based results, a popular metric in this domain despite the active/inactive
 class imbalance (see Discussion).
 
 We remain optimistic for the potential of deep learning and specifically
-representation learning in this domain and propose that rigorous benchmarking on
+representation learning in drug discovery and propose that rigorous benchmarking on
 broad and diverse prediction tasks will be as important as novel neural network
 architectures to advance the state of the art and convincingly demonstrate
 superiority over traditional cheminformatics techniques. Fortunately, there has
@@ -353,7 +352,7 @@ in chemical bioactivity prediction and lower the barrier to entry for machine
 learning researchers without biochemistry expertise.
 
 One open question in ligand-based screening pertains to the benefits and
-limitations of transfer learning.  Multitask neural networks have shown the
+limitations of transfer learning.  Multi-task neural networks have shown the
 advantages of jointly modeling many targets [@tag:Unterthiner2014_screening
 @tag:Ramsundar2015_multitask_drug].  Other studies have shown the limitations of
 transfer learning when the prediction tasks are insufficiently related
@@ -382,7 +381,7 @@ Structure-based deep learning methods differ in whether they use
 experimentally-derived or predicted ligand-target complexes and how they
 represent the 3D structure.  The Atomic Convolutional Neural Network
 [@arxiv:1703.10603] takes 3D crystal structures from PDBBind
-[@doi:10.1021/jm048957q] as input, ensuring it uses the correct ligand-target
+[@doi:10.1021/jm048957q] as input, ensuring it uses a reliable ligand-target
 complex.  Alternatively, AtomNet [@tag:Wallach2015_atom_net] samples multiple
 ligand poses within the target binding site, and DeepVS
 [@tag:Pereira2016_docking] and Ragoza et al. [@tag:Ragoza2016_protein] use a
@@ -390,8 +389,11 @@ docking program to generate protein-compound complexes.  If they are
 sufficiently accurate, these latter approaches would have wider applicability to
 a much larger set of compounds and proteins.  However, incorrect ligand poses
 will be misleading during training, and the predictive performance is sensitive
-to the docking quality [@tag:Pereira2016_docking].  A 3D grid can be used to
-represent a protein-compound complex [@tag:Wallach2015_atom_net
+to the docking quality [@tag:Pereira2016_docking].
+
+There are two major options for representing a protein-compound complex.
+A 3D grid can be used to
+featurize the input complex [@tag:Wallach2015_atom_net
 @tag:Ragoza2016_protein]. Each entry in the grid tracks the types of protein and
 ligand atoms in that region of the 3D space or descriptors derived from those
 atoms.  Both DeepVS [@tag:Pereira2016_docking] and atomic convolutions
@@ -400,9 +402,9 @@ the 3D grid.  Instead, they each implement techniques for executing convolutions
 over atoms' neighboring atoms in the 3D space.  Gomes et al. demonstrate that
 currently random forest on a 1D feature vector that describes the 3D
 ligand-target structure generally outperforms neural networks on the same
-feature vector, atomic convolutions, and ligand-based neural networks when
+feature vector as well as atomic convolutions and ligand-based neural networks when
 predicting the continuous-valued inhibition constant on the PDBBind refined
-dataset. However, in the long term atomic convolutions may ultimately overtake
+dataset [@arxiv:1703.10603]. However, in the long term, atomic convolutions may ultimately overtake
 grid-based methods, as they provide greater freedom to model atom-atom
 interactions and the forces that govern binding affinity.
 
@@ -410,7 +412,7 @@ interactions and the forces that govern binding affinity.
 
 Whereas the goal of virtual screening is to find active molecules by predicting
 the biochemical activity of hundreds of thousands to millions of chemicals using
-existing (virtual) collections of molecules, analogous to robot based
+existing (virtual) chemical libraries, analogous to robotic
 high-throughput "wet lab" screening, _de novo_ drug design aims to directly
 _generate_ active compounds [@doi:10.1002/wcms.49
 @doi:10.1021/acs.jmedchem.5b01849].
@@ -422,14 +424,14 @@ without explicit enumeration the much larger space of an estimated
 [@doi:10.1002/wcms.1104]. To test or score structures, machine learning
 algorithms like those discussed earlier are used. To "design" and "synthesize",
 traditional *de novo* design software relied on classical optimizers such as
-genetic algorithms. Unfortunately, this often leads to overfitted, "weird"
+genetic algorithms. Unfortunately, this often leads to overfit, "weird"
 molecules, which are difficult to synthesize in the lab.  To generate molecules,
 current programs have therefore settled on rule-based virtual chemical reactions
 to generate molecular structures [@doi:10.1021/acs.jmedchem.5b01849].
 
-Neural network models that learn to generate realistic, synthesizable molecules
+Deep learning models that learn to generate realistic, synthesizable molecules
 have been proposed as an alternative to provide the large molecule sets needed
-for virtual screening or even create and refine focussed molecules for *de novo*
+for virtual screening or even to create and refine focused molecules for *de novo*
 design.  In contrast to the classical, symbolic approaches, generative models
 learned from data do not depend on laboriously encoded expert knowledge. The
 problem is related to the generation of syntactically and semantically correct
@@ -438,7 +440,7 @@ text [@arxiv:1308.0850].
 As deep learning models that directly output (molecular) graphs remain
 under-explored, generative neural networks for drug design typically represent
 chemicals with the simplified molecular-input line-entry system (SMILES), a
-standard way string-based representation with characters that represent atoms,
+standard string-based representation with characters that represent atoms,
 bonds, and rings [@tag:Segler2017_drug_design].  This allows treating molecules
 as sequences and leveraging recent progress in recurrent neural networks.
 Gómez-Bombarelli et al. designed a SMILES-to-SMILES autoencoder to learn a
@@ -458,7 +460,7 @@ produce syntactically valid SMILES, has been proposed to alleviate this issue
 [@arxiv:1703.01925].
 
 Another approach to drug design is to train character-based RNNs on large
-collections of molecules, for example, ChEMBL, [@doi:10.1093/nar/gkr777] to
+collections of molecules, for example, ChEMBL [@doi:10.1093/nar/gkr777], to
 first obtain a generic generative model for drug-like compounds
 [@tag:Segler2017_drug_design]. These generative models successfully learn the
 grammar of compound representations, with 94% [@tag:Olivecrona2017_drug_design]
@@ -467,8 +469,8 @@ valid molecular structures.  The initial RNN is then fine-tuned to generate
 molecules that are likely to be active against a specific target by either
 continuing training on a small set of positive examples
 [@tag:Segler2017_drug_design] or adopting reinforcement learning strategies
-[@tag:Olivecrona2017_drug_design @arxiv:1611.02796].  Both fine-tuning and
-reinforcement learning strategies could rediscover known, held-out active
+[@tag:Olivecrona2017_drug_design @arxiv:1611.02796].  Both the fine-tuning and
+reinforcement learning approaches can rediscover known, held-out active
 molecules. The great flexibility of neural networks, and progress in generative
-models offers many opportunites for deep architectures in *de novo* design, for
+models offers many opportunities for deep architectures in *de novo* design, for
 example, the adaptation of Generative Adversarial Networks (GANs) for molecules.
