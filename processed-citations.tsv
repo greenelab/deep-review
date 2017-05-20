@@ -132,6 +132,7 @@ text	citation	standard_citation	citation_id
 @doi:10.1101/095786	doi:10.1101/095786	doi:10.1101/095786	Xxb4t3zO
 @doi:10.1101/095794	doi:10.1101/095794	doi:10.1101/095794	9G9Hv1Pp
 @doi:10.1101/125229	doi:10.1101/125229	doi:10.1101/125229	2M3zXijc
+@doi:10.1101/138685	doi:10.1101/138685	doi:10.1101/138685	1CAw3FaPI
 @doi:10.1101/gr.173518.114	doi:10.1101/gr.173518.114	doi:10.1101/gr.173518.114	5zmE7Qkb
 @doi:10.1101/gr.200535.115	doi:10.1101/gr.200535.115	doi:10.1101/gr.200535.115	2CbHXoFn
 @doi:10.1101/gr.7.9.861	doi:10.1101/gr.7.9.861	doi:10.1101/gr.7.9.861	huFxo9OA
@@ -190,7 +191,7 @@ text	citation	standard_citation	citation_id
 @tag:Abe	doi:10.1101/gr.634603	doi:10.1101/gr.634603	1HhqhBwrM
 @tag:Abramoff2016_dr	doi:10.1016/j.procs.2016.07.014	doi:10.1016/j.procs.2016.07.014	ayTsooEM
 @tag:Agarwal2015_targetscan	doi:10.7554/eLife.05005	doi:10.7554/elife.05005	12vPQi3gp
-@tag:Alipanahi2015_predicting	doi:10.1038/nmeth.3547	doi:10.1038/nmeth.3547	2UI1BZuD
+@tag:Alipanahi2015_predicting	doi:10.1038/nbt.3300	doi:10.1038/nbt.3300	jJHZHWrl
 @tag:AltaeTran2016_one_shot	doi:10.1021/acscentsci.6b00367	doi:10.1021/acscentsci.6b00367	P4ixsM8i
 @tag:Amit2017_breast_mri	doi:10.1117/12.2249981	doi:10.1117/12.2249981	SOi9mAC2
 @tag:Angermueller2016_dl_review	doi:10.15252/msb.20156651	doi:10.15252/msb.20156651	irSe12Sm
@@ -228,7 +229,7 @@ text	citation	standard_citation	citation_id
 @tag:Ciresan2013_mitosis	doi:10.1007/978-3-642-40763-5_51	doi:10.1007/978-3-642-40763-5_51	koEdZRcY
 @tag:Coates2013_cots_hpc	url:http://www.jmlr.org/proceedings/papers/v28/coates13.html	url:http://www.jmlr.org/proceedings/papers/v28/coates13.html	4MZ2tmZ8
 @tag:Codella2016_ensemble_melanoma	arxiv:1610.04662	arxiv:1610.04662	sLPsrfbl
-@tag:Consortium2004_encode	doi:10.1126/science.1105136	doi:10.1126/science.1105136	1Bs5k1MVg
+@tag:Consortium2012_encode	doi:10.1038/nature11247	doi:10.1038/nature11247	15J98V2qM
 @tag:CudNN	arxiv:1410.0759	arxiv:1410.0759	YwdqeYZi
 @tag:Dahl2014_multi_qsar	arxiv:1406.1231	arxiv:1406.1231	1Dzz0P0qr
 @tag:Dean2012_nips_downpour	url:http://research.google.com/archive/large_deep_networks_nips2012.html	url:http://research.google.com/archive/large_deep_networks_nips2012.html	17cBimWgp
