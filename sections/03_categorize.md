@@ -212,7 +212,7 @@ detecting negative and equivocal findings (~90% in F-measure overall). These
 highly accurate results meet the need to generate a corpus with weak labels,
 which serves as a solid foundation for the later process of image
 classification. The resulting dataset (CXR-XIV
-[@url:https://console.cloud.google.com/storage/browser/gcs-public-data--nih/radiology_2017/Chest_X-Ray_CVPR17])
+[@url:https://console.cloud.google.com/storage/browser/gcs-public-data--nih/radiology_2017/Chest_X-Ray_CVPR17]) `TODO: This dataset is not available?`
 consists of 108,948 frontal-view chest X-ray images (from 32,717 patients) and
 each image is associated with one or more weakly-labeled pathology category
 (e.g. pneumonia and cardiomegaly) or "normal" otherwise. Further, Wang et al.
