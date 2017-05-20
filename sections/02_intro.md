@@ -1,4 +1,4 @@
-## Introduction to Deep Learning
+## Introduction to deep learning
 
 Biology and medicine are rapidly becoming data-intensive. A recent comparison of
 genomics with social media, online videos, and other data-intensive
@@ -32,12 +32,12 @@ waxed and waned over time. This history is interesting in its own right
 [@doi:10.1103/RevModPhys.34.135]. In recent years, attention has shifted back to
 neural networks as hardware improvements have allowed the techniques that have come to be known as deep learning to
 surpass other machine learning algorithms.
-`TODO: add what is/isn't deep learning to this paragraph? Issue #421`
+`TODO: add what is/isn't deep learning to this paragraph? Revise paragraph to also fix lengthy closing sentence. Issue #421`
 
-Though neural networks are most widely associated with supervised machine learning, deep learning algorithms can also be used in an exploratory, "unsupervised"
+Neural networks are most widely associated with supervised machine learning, where the goal is to accurately predict one or more labels associated with each data point.
+However, deep learning algorithms can also be used in an exploratory, "unsupervised"
 mode, where the goal is to summarize, explain, or identify interesting patterns
-in a data set rather than to accurately predict which labels an expert would
-assign to each data point.  In a famous and early example, scientists from
+in a data set.  In a famous and early example, scientists from
 Google demonstrated that a neural network "discovered" that cats, faces, and
 pedestrians were important components of online videos
 [@url:http://research.google.com/archive/unsupervised_icml2012.html] without
@@ -103,7 +103,7 @@ Study, and Treatment of Patients. Below, we briefly introduce the types of
 questions, approaches and data that are typical for each class in the
 application of deep learning.
 
-#### Disease and Patient Categorization
+#### Disease and patient categorization
 
 A key challenge in biomedicine is the accurate classification of diseases and
 disease subtypes. In oncology, current "gold standard" approaches include
@@ -124,7 +124,7 @@ challenges exist in this area of research, most notably the integration of
 molecular and imaging data with other disparate types of data such as electronic
 health records (EHR).
 
-#### Fundamental Biological Study
+#### Fundamental biological study
 
 Deep learning can be applied to answer more fundamental biological questions; it
 is especially suited to leveraging large amounts of data from high-throughput
@@ -141,7 +141,7 @@ such as enhancers and promoters [@doi:10.1101/036129
 the deleterious effects of nucleotide polymorphisms
 [@doi:10.1093/bioinformatics/btu703].
 
-#### Treatment of Patients
+#### Treatment of patients
 
 Although the application of deep learning to patient treatment is just
 beginning, we expect new methods to recommend patient
@@ -155,6 +155,6 @@ data is another exciting area of research
 Restricted Boltzmann machines (RBMs) can be combined into deep belief networks
 (DBNs) to predict novel drug-target interactions and formulate drug
 repositioning hypotheses [@doi:10.1093/bioinformatics/btt234
-@doi:10.1021/acs.jproteome.6b00618]. Finally, deep learning is also 
+@doi:10.1021/acs.jproteome.6b00618]. Finally, deep learning is also
 prioritizing chemicals in the early stages of drug discovery
 for new targets [@doi:10.1080/17460441.2016.1201262].
