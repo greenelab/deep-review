@@ -56,11 +56,10 @@ and combine images with clinical reports [@tag:Litjens2017_medimage_survey
 Though there are many commonalities with the analysis of natural photographs,
 there are also key differences. In all cases that we examined, fewer than one
 million images were available for training, and datasets are often many orders
-of magnitude smaller than collections of natural photographs. To address this
-challenge, researchers addressing different subtasks have employed different
-strategies.
+of magnitude smaller than collections of natural photographs. Researchers have
+developed subtask-specific strategies to address this challenge
 
-The first strategy repurposes features extracted from natural photographs by deep learning, such as ImageNet [@tag:Russakovsky2015_imagenet], for new purposes.
+The first strategy repurposes features extracted from natural photographs by deep learning models, such as ImageNet [@tag:Russakovsky2015_imagenet], for new purposes.
 Diagnosing diabetic retinopathy through color fundus
 images became an area of focus for deep learning researchers after
 a large labeled image set was made publicly available during a
@@ -74,7 +73,7 @@ melanoma, the deadliest form of skin cancer, from
 dermoscopic [@tag:Codella2016_ensemble_melanoma
 @tag:Yu2016_melanoma_resnet] and non-dermoscopic images of
 skin lesions [@tag:Jafari2016_skin_lesions @tag:Esfahani2016_melanoma
-@tag:Esteva2017_skin_cancer_nature]as well as age-related macular degeneration
+@tag:Esteva2017_skin_cancer_nature] as well as age-related macular degeneration
 [@tag:Burlina2016_amd]. Pre-training on natural
 images can enable very
 deep networks to succeed without overfitting. For the melanoma task, reported performance was competitive with or better
@@ -94,7 +93,7 @@ data augmentation to avoid overfitting.
 The technique of reusing features from a different task falls into the broader area of
 transfer learning, which we devote a section to in the discussion.
 Though we've mentioned numerous successes for the transfer of natural image features to new tasks,
-we expect that a lower proportion of negative results would be published.
+we expect that a lower proportion of negative results have been published.
 The analysis of magnetic resonance
 images (MRIs) is also faced with the challenge of small training sets. In this
 domain, Amit et al. [@tag:Amit2017_breast_mri] investigated
@@ -109,22 +108,20 @@ from mammographies [@tag:Dhungel2015_struct_pred_mamm @tag:Dhungel2016_mamm
 researchers constructed adversarial examples
 [@tag:Zhu2016_advers_mamm]. Adversarial examples are
 constructed by applying a transformation that changes training images but not
-their content - for example by rotating an image by a random amount. An alternative in the domain is to train towards human-created features before
-subsequent fine tuning [@tag:Dhungel2016_mamm].
+their content -- for example by rotating an image by a random amount. An alternative in the domain is to train towards human-created features before
+subsequent fine tuning [@tag:Dhungel2016_mamm], which can help to sidestep this challenge though it does give up deep learning techniques' strength as feature constructors.
 
 Another way of dealing with limited training data is to divide rich data - e.g. 3D images - into numerous reduced projections.
 Shin et al. [@tag:Shin2016_cad_tl]
 compared various deep network architectures, dataset characteristics, and
 training procedures for computer tomography-based (CT) abnormality detection.
-They concluded that in case of three-dimensional data networks as deep as 22
-layers can be useful for such problems despite the limited size of training
-datasets. However, they note, that choice of a specific architecture, parameter
+They concluded that networks as deep as 22 layers could be useful for 3D data, even though the size of training datasets was limited. However, they note, that choice of a specific architecture, parameter
 setting, and model fine-tuning needed is very problem and dataset-specific.
 Moreover, this type of tasks often depends on both lesion localization and
 appearance that pose challenges for CNN-based approaches. Straightforward
 attempts to capture useful information from full-size images in all three
 dimensions simultaneously via standard neural network architectures were computationally unfeasible.
-Instead, two dimensional models were used to either process image slices
+Instead, two-dimensional models were used to either process image slices
 individually (2D), or aggregate information from a number of 2D projections in
 the native space (2.5D). Roth et al. compared 2D, 2.5D, and 3D CNNs on a number
 of tasks for computer-aided detection from CT scans and showed that 2.5D CNNs
@@ -136,13 +133,13 @@ is not always helpful.
 Nie et al.
 [@tag:Nie2016_3d_survival] showed that multimodal, multi-channel 3D deep
 architecture was successful at learning high-level brain tumor appearance
-features jointly from MRI, functional MRI and diffusion MRI images,
+features jointly from MRI, functional MRI, and diffusion MRI images,
 outperforming single-modality or 2D models. Overall, the variety of modalities,
 properties and sizes of training sets, the dimensionality of input, and
 the importance of end goals in medical image analysis are provoking a
 development of specialized deep neural network architectures, training and
 validation protocols, and input representations that are not characteristic of
-widely studied natural images.
+widely-studied natural images.
 
 Predictions from deep neural networks can be evaluated for use in workflows that
 also incorporate human experts. In a large dataset of mammography images,
@@ -163,7 +160,7 @@ Systems to aid in the analysis of histology slides are also promising use cases
 for deep learning [@tag:Litjens2016_histopath_survey]. Ciresan et al.
 [@tag:Ciresan2013_mitosis] developed one of the earliest approaches for histology slides, winning the
 2012 International Conference on Pattern Recognition's Contest on Mitosis
-Detection while achieving human competitive accuracy. Their approach uses what
+Detection while achieving human-competitive accuracy. Their approach uses what
 has become a standard convolutional neural network architecture trained on
 public data. In more recent work, Wang et al. [@tag:Wang2016_breast_cancer]
 analyzed stained slides to identify cancers within slides of lymph node slices.
@@ -222,15 +219,6 @@ each image is associated with one or more weakly-labeled pathology category
 [@arxiv:1705.02315] used this dataset with a unified weakly-supervised
 multi-label image classification framework, to detect common thoracic diseases.
 It showed superior performance over a benchmark using fully labeled data.
-
-We illustrated augmentation with adversarial examples in the mammography domain,
-but Geras et al. [@tag:Geras2017_multiview_mamm] showed that both using a large
-dataset and multi-view network architecture aids classification
-performance. A large bank of publicly available well-annotated
-mammography images - akin to the resource now provided for X-ray images - may aid in the application of deep neural networks to this
-area. Deep networks pre-trained on large compendia [@tag:Kooi2017_mamm_tl] might
-be more suitable for transfer learning in this domain than models trained from
-standard photographs.
 
 These examples demonstrate that, except for few natural image-like problems
 (e.g. melanoma detection), biomedical imaging poses a number of challenges for
@@ -542,8 +530,7 @@ parameter which provides a quantification of privacy. Simmons et al.
 differentially private manner and Abadi et al. [@arxiv:1607.00133] show the
 ability to train deep learning classifiers under the differential privacy
 framework. Federated learning [@url:http://proceedings.mlr.press/v54/mcmahan17a.html] and secure aggregations
-[@url:http://proceedings.mlr.press/v54/mcmahan17a.html
-@url:https://eprint.iacr.org/2017/281.pdf @tag:Papernot2017_pate] are
+[@url:https://eprint.iacr.org/2017/281.pdf @tag:Papernot2017_pate] are
 complementary approaches that reinforce differential privacy. Both aim to
 maintain privacy by training deep learning models from decentralized data
 sources such as personal mobile devices without transferring actual training
