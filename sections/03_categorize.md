@@ -64,7 +64,7 @@ Diagnosing diabetic retinopathy through color fundus
 images became an area of focus for deep learning researchers after
 a large labeled image set was made publicly available during a
 2015 Kaggle competition [@tag:Pratt2016_dr]. Most participants trained
-neural networks from scratch `TODO: DOI used for two tags` [@tag:Pratt2016_dr @tag:Abramoff2016_dr
+neural networks from scratch [@tag:Pratt2016_dr @tag:Abramoff2016_dr
 @tag:Leibig2016_dr], but Gulshan et al. [@tag:Gulshan2016_dt] repurposed a
 48-layer Inception-v3 deep architecture pre-trained on natural images and
 surpassed the state-of-the-art specificity
