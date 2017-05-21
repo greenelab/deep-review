@@ -44,7 +44,7 @@ regards to data availability and labeling.
 
 #### Imaging applications in healthcare
 
-Deep learning methods have transformed the analysis of natural photographs and video,
+Deep learning methods have transformed the analysis of natural images and video,
 and similar examples are beginning to emerge with medical images.
 Deep learning has been used to classify
 lesions and nodules; localize organs, regions, landmarks and lesions;
@@ -53,13 +53,13 @@ retrieve images based on content; generate and enhance images;
 and combine images with clinical reports [@tag:Litjens2017_medimage_survey
 @tag:Shen2017_medimg_review].
 
-Though there are many commonalities with the analysis of natural photographs,
+Though there are many commonalities with the analysis of natural images,
 there are also key differences. In all cases that we examined, fewer than one
 million images were available for training, and datasets are often many orders
-of magnitude smaller than collections of natural photographs. Researchers have
+of magnitude smaller than collections of natural images. Researchers have
 developed subtask-specific strategies to address this challenge.
 
-The first strategy repurposes features extracted from natural photographs by deep learning models, such as ImageNet [@tag:Russakovsky2015_imagenet], for new purposes.
+The first strategy repurposes features extracted from natural images by deep learning models, such as ImageNet [@tag:Russakovsky2015_imagenet], for new purposes.
 Diagnosing diabetic retinopathy through color fundus
 images became an area of focus for deep learning researchers after
 a large labeled image set was made publicly available during a
@@ -144,7 +144,7 @@ widely-studied natural images.
 Predictions from deep neural networks can be evaluated for use in workflows that
 also incorporate human experts. In a large dataset of mammography images,
 Kooi et al. [@tag:Kooi2016_mamm_lesions] demonstrated that deep neural networks
-outperform the traditional computer-aided diagnosis (CAD) system at low
+outperform the traditional computer-aided diagnosis system at low
 sensitivity and perform comparably at high sensitivity. They also compared
 network performance to certified screening radiologists on a patch level and
 found no significant difference between the network and the readers. However,
@@ -160,74 +160,66 @@ Systems to aid in the analysis of histology slides are also promising use cases
 for deep learning [@tag:Litjens2016_histopath_survey]. Ciresan et al.
 [@tag:Ciresan2013_mitosis] developed one of the earliest approaches for histology slides, winning the
 2012 International Conference on Pattern Recognition's Contest on Mitosis
-Detection while achieving human-competitive accuracy. Their approach uses what
-has become a standard convolutional neural network architecture trained on
-public data. In more recent work, Wang et al. [@tag:Wang2016_breast_cancer]
-analyzed stained slides to identify cancers within slides of lymph node slices.
-The approach provided a probability map for each slide. On this task a
+Detection while achieving human-competitive accuracy.
+In more recent work, Wang et al. [@tag:Wang2016_breast_cancer]
+analyzed stained slides of lymph node slices to identify cancers.
+On this task a
 pathologist has about a 3% error rate. The pathologist did not produce any false
-positives, but did have a number of false negatives. While the algorithm had
-about twice the error rate of a pathologist, the errors were not strongly
-correlated with those of a pathologist, suggesting that the two could be
-combined, theoretically, reducing the error rate to under 1%. In this area,
-these algorithms may be ready to incorporate into existing tools to aid
-pathologists. The authors' work suggests that this could reduce the false
-negative rate of such evaluations. This theme of an ensemble between deep
-learning algorithm and human expert may help overcome some of the challenges
+positives, but did have a number of false negatives. The algorithm had
+about twice the error rate of a pathologist, but the errors were not strongly
+correlated.  In this area,
+these algorithms may be ready to be incorporated into existing tools to aid
+pathologists and reduce the false
+negative rate. Ensembles of deep
+learning and human experts may help overcome some of the challenges
 presented by data limitations.
 
-One source of training examples with rich clinical annotations is the electronic
-health records. Recently Lee et al.[@tag:Lee2016_emr_oct_amd] developed an
+One source of training examples with rich clinical annotations is electronic
+health records. Recently, Lee et al. [@tag:Lee2016_emr_oct_amd] developed an
 approach to distinguish individuals with age-related macular degeneration from
-control individuals. They extracted approximately 100,000 images from structured
-electronic health records, which they used to train and evaluate a deep neural
-network. Combining this data resource with standard deep learning techniques,
-the authors reach greater than 93% accuracy. One item that is important to note
-with regards to this work is that the authors used their test set for evaluating
-when training had concluded. In other domains, this has resulted in a minimal
-change in the estimated accuracy [@tag:Krizhevsky2013_nips_cnn]. However, there
-is not yet a single accepted standard within the field of biomedical research
-for such evaluations. We recommend the use of an independent test set wherever
-it is feasible. Despite this minor limitation, the work clearly illustrates the
-potential that can be unlocked from images stored in electronic health records.
+control individuals. They trained a deep neural network on approximately 100,000 images extracted from structured
+electronic health records, reaching greater than 93% accuracy.
+The authors used their test set to evaluate
+when to stop training. In other domains, this has resulted in a minimal
+change in the estimated accuracy [@tag:Krizhevsky2013_nips_cnn], but
+we recommend the use of an independent test set whenever feasible.
 
 Chest X-rays are a common radiological examination for screening and diagnosis
 of lung diseases. Although hospitals have accumulated a large number of raw
 radiology images and reports in Picture Archiving and Communication Systems and
-their related reports in Radiology Information System, it is not yet known how
+their related reports in Radiology Information Systems, it is not yet known how
 to effectively use them to learn the correlation between pathology categories
 and X-rays. In the last few years, deep learning methods showed remarkable
 results in chest X-ray image analysis [@arxiv:1701.06599 @arxiv:1705.02315].
-However, it is both costly and time-consuming to annotate a large-scale fully-
-labeled corpus to facilitate the data-hungry deep learning models. As an
+However, it is both costly and time-consuming to annotate a large-scale
+fully-labeled corpus to facilitate data-intensive deep learning models. As an
 alternative, Wang et al. [@arxiv:1705.02315] proposed to use weakly labeled
-images for training deep learning models. To generate weak labels for X-ray
+images. To generate weak labels for X-ray
 images, they applied a series of Natural Language Processing (NLP) techniques to
 the associated chest X-ray radiological reports. Specifically, they first
 extracted all diseases mentioned in the reports using a state-of-the-art NLP
-tool, then applied a newly developed negation and uncertainty detection tool
+tool, then applied a newly-developed negation and uncertainty detection tool
 (NegBio) to filter negative and equivocal findings in the reports. Evaluation on
 three independent datasets demonstrated that NegBio is highly accurate for
-detecting negative and equivocal findings (~90% in F-measure overall). These
-highly accurate results meet the need to generate a corpus with weak labels,
+detecting negative and equivocal findings (~90% in F-measure, which balances precision and recall [@doi:10.1038/nmeth.3945]). These
+highly-accurate results meet the need to generate a corpus with weak labels,
 which serves as a solid foundation for the later process of image
-classification. The resulting dataset (CXR-XIV
-[@url:https://console.cloud.google.com/storage/browser/gcs-public-data--nih/radiology_2017/Chest_X-Ray_CVPR17]) `TODO: This dataset is not available?`
-consists of 108,948 frontal-view chest X-ray images (from 32,717 patients) and
+classification. The resulting dataset
+consists of 108,948 frontal-view chest X-ray images from 32,717 patients, and
 each image is associated with one or more weakly-labeled pathology category
 (e.g. pneumonia and cardiomegaly) or "normal" otherwise. Further, Wang et al.
 [@arxiv:1705.02315] used this dataset with a unified weakly-supervised
 multi-label image classification framework, to detect common thoracic diseases.
-It showed superior performance over a benchmark using fully labeled data.
+It showed superior performance over a benchmark using fully-labeled data.
 
-These examples demonstrate that, except for few natural image-like problems
+With the exception of natural image-like problems
 (e.g. melanoma detection), biomedical imaging poses a number of challenges for
-deep learning applications. Dataset sizes are typically limited, annotations can
+deep learning. Dataset are typically small, annotations can
 be sparse, and images are often high-dimensional, multimodal, and multi-channel.
 Techniques like transfer learning, heavy dataset augmentation, multi-view and
-multi-stream architectures are used more commonly compared to natural image
-domain. Furthermore, sensitivity and specificity of a model in this case often
-can translate directly into a clinical value. Thus, results evaluation,
+multi-stream architectures are more common than in the natural image
+domain. Furthermore, high model sensitivity and specificity
+can translate directly into clinical value. Thus, prediction evaluation,
 uncertainty estimation, and model interpretation methods are also of great
 importance in this domain (see Discussion). Finally, there is a need for better
 pathologist-computer interaction techniques that will allow combining the power
