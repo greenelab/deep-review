@@ -611,15 +611,15 @@ the next few years.
 
 Metagenomics, which refers to the study of genetic material -- 16S rRNA and/or
 whole-genome shotgun DNA -- from microbial communities, has revolutionized the
-study of micro-scale ecosystems within us and around us. In recent years,
+study of micro-scale ecosystems within and around us. In recent years,
 machine learning has proved to be a powerful tool for metagenomic analysis. 16S
 rRNA has long been used to deconvolve mixtures of microbial genomes, yet this
 ignores >99% of the genomic content. Subsequent tools aimed to classify
 300-3000 base pair reads from complex mixtures of microbial genomes based on
-tetranucleotide frequencies (which are characteristic for different organisms
-[@tag:Karlin]) using supervised [@tag:McHardy @tag:nbc] or unsupervised methods
+tetranucleotide frequencies, which differ across organisms
+[@tag:Karlin], using supervised [@tag:McHardy @tag:nbc] or unsupervised methods
 [@tag:Abe]. Then, researchers began to use techniques that could estimate
-relative abundances from an entire sample, which is much faster than classifying
+relative abundances from an entire sample more quickly than classifying
 individual reads [@tag:Metaphlan @tag:wgsquikr @tag:lmat @tag:Vervier]. There is
 also great interest in identifying and annotating sequence reads [@tag:yok
 @tag:Soueidan]. However, the focus on taxonomic and functional annotation is just
@@ -631,43 +631,38 @@ improve classification [@tag:Liu @tag:Segata], and techniques have been proposed
 that are classifier-independent [@tag:Ditzler @tag:Ditzler2].
 
 How have neural networks been of use? Most neural networks are being used
-for phylogenetic classification or functional annotation from sequence data,
-where there is a lot of data for training. Neural
+for phylogenetic classification or functional annotation from sequence data
+where there is ample data for training. Neural
 networks have been applied successfully to gene annotation (e.g. Orphelia
-[@tag:Hoff] and FragGeneScan [@doi:10.1093/nar/gkq747]), which usually has
-plenty of training examples.  Representations (similar to Word2Vec
+[@tag:Hoff] and FragGeneScan [@doi:10.1093/nar/gkq747]).
+Representations (similar to Word2Vec
 [@tag:Word2Vec] in natural language processing) for protein family
 classification have been introduced and classified with a skip-gram neural
 network [@tag:Asgari]. Recurrent neural networks show good performance for
 homology and protein family identification [@tag:Hochreiter @tag:Sonderby].
-Interestingly, Hochreiter, who invented Long Short Term Memory (LSTM), delved
-into homology/protein family classification in 2007, and therefore, deep
-learning is deeply rooted in functional classification methods.
 
 One of the first techniques of *de novo* genome binning used self-organizing
 maps, a type of neural network [@tag:Abe]. Essinger et al. used Adaptive Resonance Theory
 (ART) to cluster similar genomic fragments and showed that it had better
 performance than k-means [@tag:Essinger2010_taxonomic]. However, other methods
 based on interpolated Markov models [@tag:Salzberg] have performed better than
-these early genome binners. Neural networks can be slow, and therefore, have had
+these early genome binners. Neural networks can be slow and therefore have had
 limited use for reference-based taxonomic classification, with TAC-ELM
 [@tag:TAC-ELM] being the only neural network-based algorithm to taxonomically classify
-massive amounts of metagenomic data. Also, neural networks can fail to perform
-if there are not enough training examples, which is the case with taxonomic
-classification (because only ~10% of estimated species have been sequenced). An
+massive amounts of metagenomic data. An
 initial study successfully applied neural networks to taxonomic classification
 of 16S rRNA genes, with convolutional networks providing about 10% accuracy
-genus-level improvement over RNNs and even random forests [@tag:Mrzelj].
-However, this study performed 10-fold cross-validation on only 3000 sequences.
+genus-level improvement over RNNs and random forests [@tag:Mrzelj].
+However, this study evaluated only 3000 sequences.
 
 Neural network uses for classifying phenotype from microbial composition are
 just beginning. A standard multi-layer perceptron (MLP) was able to classify
 wound severity from microbial species present in the wound
 [@doi:10.1016/j.bjid.2015.08.013]. Recently, Ditzler et al. associated soil
-samples with pH level using MLPs, deep-belief networks, and recursive neural
-networks [@tag:Ditzler3]. Besides classifying the samples appropriately, they
-showed that internal phylogenetic tree nodes inferred by the networks were
-appropriate features representing low/high pH. Thus, hidden nodes might provide
+samples with pH level using MLPs, deep-belief networks (DBNs), and recurrant neural
+networks (RNNs) [@tag:Ditzler3]. Besides classifying samples appropriately,
+internal phylogenetic tree nodes inferred by the networks
+represented features for low and high pH. Thus, hidden nodes might provide
 biological insight as well as new features for future metagenomic sample
 comparison. Also, an initial study has shown promise of these networks for
 diagnosing disease [@tag:Faruqi].
@@ -677,23 +672,19 @@ They are not yet ideal for phenotype classification because most studies contain
 tens of samples and hundreds or thousands of features (species). Such
 underdetermined, or ill-conditioned, problems are still a challenge for deep
 neural networks that require many training examples. Also, due to convergence
-issues (slowness and instability due to large neural networks modeling very
-large datasets [@arxiv:1212.0901v2]), taxonomic classification of reads from
+issues [@arxiv:1212.0901v2], taxonomic classification of reads from
 whole genome sequencing seems out of reach at the moment for deep neural
 networks.  There are only thousands of full-sequenced genomes as compared to
 hundreds of thousands of 16S rRNA sequences available for training.
 
-However, because recurrent neural networks are showing success for denoising
-base calls for the Oxford Nanopore long-read sequencer
-[@tag:Boza] (discussed further in the next section), there is hope that the
-entire pipeline, from denoising of through functional classification, can be
-combined into one step by using powerful LSTMs, which have been quite
-successful in raw speech signal-to-meaning translation [@tag:Sutskever]. For
+However, because RNNs have been applied to base calls for
+the Oxford Nanopore long-read sequencer with some success
+[@tag:Boza] (discussed further in the next section), one day the
+entire pipeline, from denoising of through functional classification, may be
+combined into one step by using powerful LSTMs [@tag:Sutskever]. For
 example, metagenomic assembly usually requires binning then assembly, but could
 deep neural nets accomplish both tasks in one network? We believe the greatest
-potential in deep learning is to learn "everything" in one complex network, with
-a plethora of labeled (reference) data and unlabeled (microbiome experiments)
-examples.
+potential in deep learning is to learn the complete characteristics of a metagenomic sample in one complex network.
 
 ### Sequencing and variant calling
 
@@ -705,17 +696,17 @@ with high specificity and sensitivity and improving the accuracy of new types
 of data such as nanopore sequencing. These two tasks are critical for studying
 rare variation, allele-specific transcription and translation, and splice site
 mutations. In the clinical realm, sequencing of rare tumor clones
-and other genetic diseases will require accurate calling of SNP and indels.
+and other genetic diseases will require accurate calling of SNPs and indels.
 
 Current methods achieve relatively high (>99%) precision at 90% recall for SNPs
 and indel calls from Illumina short-read data [@tag:Poplin2016_deepvariant], yet
 this leaves a large number of potentially clinically-important remaining false
 positives and false negatives. These methods have so far relied on experts to
 build probabilistic models that reliably separate signal from noise. However,
-this process is time consuming and, more importantly, fundamentally limited by
+this process is time consuming and fundamentally limited by
 how well we understand and can model the factors that contribute to noise.
-Recently, two groups have applied deep learning to construct data-driven and,
-therefore, unbiased noise models. One of these models, DeepVariant, leverages
+Recently, two groups have applied deep learning to construct data-driven
+unbiased noise models. One of these models, DeepVariant, leverages
 Inception, a neural network trained for image classification by Google Brain, by
 encoding reads around a candidate SNP as a 221x100 bitmap image, where each
 column is a nucleotide and each row is a read from the sample library
@@ -730,18 +721,18 @@ given information about population variation for each candidate variant. Another
 method, still in its infancy, hand-developed 642 features for each candidate
 variant and fed these vectors into a fully connected deep neural network
 [@tag:Torracinta2016_deep_snp]. Unfortunately, this feature set required at
-least 15 iterations of software development to fine-tune, which will likely not
-be generalizable.
+least 15 iterations of software development to fine-tune, which suggests that
+these models may not generalize.
 
-Going forward, we believe that variant calling will benefit more from optimizing
+Going forward, variant calling will benefit more from optimizing
 neural network architectures than from developing features by hand. An
-interesting and informative next step would be to rigorously test whether
+interesting and informative next step would be to rigorously test if
 encoding raw sequence and quality data as an image, tensor, or some other mixed
 format produces the best variant calls. Because many of the latest neural
 network architectures (ResNet, Inception, Xception, and others) are already
 optimized for and pre-trained on generic, large-scale image datasets
 [@tag:Chollet2016_xception], encoding genomic data as images could prove to be a
-generally effective, and efficient, strategy.
+generally effective and efficient strategy.
 
 In limited experiments, DeepVariant was robust to sequencing depth, read length,
 and even species [@tag:Poplin2016_deepvariant]. However, a model built on
@@ -749,8 +740,8 @@ Illumina data, for instance, may not be optimal for PacBio long-read data or
 MinION nanopore data, which have vastly different specificity and sensitivity
 profiles and signal-to-noise characteristics. Recently, Boza et al. used
 bidirectional recurrent neural networks to infer the *E. coli* sequence from
-MinION nanopore electric current data with 2% higher per-base accuracy than the
-proprietary hidden Markov model-based algorithm Metrichor (86% to 88%)
+MinION nanopore electric current data with higher per-base accuracy than the
+proprietary hidden Markov model-based algorithm Metrichor
 [@tag:Boza]. Unfortunately, training any neural network requires a large amount
 of data, which is often not available for new sequencing technologies. To
 circumvent this, one very preliminary study simulated mutations and spiked them
