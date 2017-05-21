@@ -124,7 +124,7 @@ model to locally approximate the output of the network on perturbed versions of
 the input and assigns importance scores accordingly. For analyzing images,
 Zeiler and Fergus [@tag:Zeiler2013_visualizing] applied constant-value masks to
 different input patches. More recently, marginalizing over the plausible values
-of an input has been suggest as a way to more accurately estimate contributions
+of an input has been suggested as a way to more accurately estimate contributions
 [@tag:Zintgraf2017_visualizing].
 
 A common drawback to perturbation-based approaches is computational efficiency:
@@ -136,7 +136,7 @@ when multiple redundant features are present.
 To reduce the computational overhead of perturbation-based approaches, Fong and
 Vedaldi [@tag:Fong2017_perturb] solve an optimization problem using gradient
 descent to discover a minimal subset of inputs to perturb in order to decrease
-the predicted probability of a selected class. Their method converged in many
+the predicted probability of a selected class. Their method converges in many
 fewer iterations but
 requires the perturbation to have a differentiable form.
 
@@ -151,7 +151,7 @@ area of research. Researchers are still actively identifying
 weaknesses [@tag:Mahendran2016_salient], and new methods are being developed
 to address them [@tag:Selvaraju2016_grad @tag:Sundararajan2017_axiomatic @tag:Shrikumar2017_learning].
 Lundberg and Lee [@tag:Lundberg2016_an] noted that several importance
-scoring methods, integrated gradients and LIME, could all be
+scoring methods including integrated gradients and LIME could all be
 considered approximations to Shapely values [@tag:Shapely], which have a long history in
 game theory for assigning contributions to players in cooperative games.
 
@@ -401,7 +401,7 @@ operations so central to deep learning. The massively parallel nature of GPUs
 allows additional optimizations, such as accelerated mini-batch gradient descent
 [@tag:Vanhoucke2011_cpu @tag:Seide2014_parallel @tag:Su2015_gpu
 @tag:Li2014_minibatch]. However, GPUs also have limited memory,
-making networks of useful size and complexity it difficult to implement on a
+making networks of useful size and complexity difficult to implement on a
 single GPU or machine [@tag:Raina2009_gpu @tag:Krizhevsky2013_nips_cnn]. This
 restriction has sometimes forced computational biologists to use workarounds or
 limit the size of an analysis. Chen et al.
@@ -422,7 +422,7 @@ done to minimize the memory requirements of neural networks [@tag:CudNN
 also growing interest in specialized hardware, such as field-programmable gate
 arrays (FPGAs) [@tag:Edwards2015_growing_pains @tag:Lacey2016_dl_fpga] and
 application-specific integrated circuits (ASICs) [@arxiv:1704.04760].
-Less software
+Less software is
 available for such highly specialized hardware [@tag:Lacey2016_dl_fpga].
 But specialized hardware promises
 improvements in deep learning at reduced time, energy, and memory
@@ -529,11 +529,6 @@ especially the ability to simulate datasets that are sufficiently complex to
 demonstrate the challenges of training neural networks but small enough to train
 quickly on a CPU, are important for training students and attracting machine
 learning researchers to problems in genomics and healthcare.
-`TODO: Cite syllabus or this last sentence should probably go. Unclear what it
-refers to.`
-We have even
-included DragoNN and hands-on model training into the curriculum of a graduate
-student course.
 
 ### Multimodal, multi-task, and transfer learning
 

@@ -18,8 +18,8 @@ finally approaching or exceeding human performance in the past year
 [@arxiv:1610.05256 @arxiv:1703.02136]. The phenomenal improvements on benchmark
 datasets are undeniable, but greatly reducing the error rate on these benchmarks did not
 fundamentally transform the domain.  Widespread adoption of conversational
-speech technologies will require methods to both surpass human performance
-and convince users to adopt them [@tag:Speech_recognition].
+speech technologies will require solving the problem, i.e. methods that surpass human performance,
+and convincing users to adopt them [@tag:Speech_recognition].
 We see parallels in healthcare, where achieving the full potential of
 deep learning will require outstanding predictive performance as well as
 acceptance and adoption by biologists and clinicians.
@@ -59,10 +59,10 @@ a number of biomedical domains. However, machine learning algorithms, including 
 neural networks, are also prone to mistakes that humans are much less likely to
 make, such as misclassification of adversarial examples [@arxiv:1312.6199
 @arxiv:1412.6572], a reminder that these algorithms do not understand the
-semantics of the objects presented. Work in this area is continuing
-[@arxiv:1611.03814 @arxiv:1704.01155], but it may
-be impossible to guarantee that a model is not susceptible to adversarial
-examples. Cooperation
+semantics of the objects presented. It may be impossible to guarantee that a
+model is not susceptible to adversarial examples, but work in this area is
+continuing
+[@arxiv:1611.03814 @arxiv:1704.01155. Cooperation
 between human experts and deep learning algorithms addresses many of these challenges and can achieve better
 performance than either individually [@arxiv:1606.05718]. For sample
 and patient classification tasks, we expect deep learning methods to augment
