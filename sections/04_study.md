@@ -3,14 +3,14 @@
 The study of cellular structure and core biological processes -- transcription,
 translation, signaling, metabolism, etc. -- in humans and model organisms will
 greatly impact our understanding of human disease over the long horizon
-[@tag:Nih_curiosity]. Predicting how cellular systems are altered by genetic
-variation and respond to environmental perturbations remain daunting tasks. Deep
+[@tag:Nih_curiosity]. Predicting how cellular systems respond to environmental perturbations and are altered by genetic
+variation remain daunting tasks. Deep
 learning offers new approaches for modeling biological processes and integrating
 multiple types of omic data [@doi:10.1038/ncomms13090], which could eventually
 help predict how these processes are disrupted in disease. Recent work has
 already advanced our ability to identify and interpret genetic variants, study
-microbial communities, and predict protein structures (which relates to the
-problems discussed in the drug development section). In addition, unsupervised
+microbial communities, and predict protein structures, which also relates to the
+problems discussed in the drug development section. In addition, unsupervised
 deep learning has enormous potential for discovering novel cellular states from
 gene expression, fluorescence microscopy, and other types of data that
 may ultimately prove to be clinically relevant.
@@ -56,7 +56,7 @@ approaches applied to gene expression data are powerful methods for
 identifying gene signatures that may otherwise be overlooked.
 An additional benefit of unsupervised approaches is that
 ground truth labels, which are often difficult to acquire or are incorrect, are
-nonessential. However, careful interpretation must be performed regarding how
+nonessential. However, careful interpretation must be performed when
 the genes are aggregated into features. Precisely attributing node activations
 to specific biological functions risks over-interpreting models and can lead to
 incorrect conclusions.  Also, batch effects in improperly normalized data can cause
@@ -73,14 +73,14 @@ required data to be split randomly into two distinct models and trained
 separately. It is unclear how much performance would have increased if not for
 computational restrictions.
 
-Alternatively, epigenetic data may have sufficient
-explanatory power for inference of gene expression. For instance, a
+Epigenetic data, combined with deep learning, may have sufficient
+explanatory power to infer gene expression. For instance, a
 convolutional neural network applied to histone modifications, termed
-DeepChrome, [@tag:Singh2016_deepchrome] was shown to improve prediction accuracy
-of high or low expression over existing methods. Deep learning can also be
-useful for integrating different data types. For example, Liang et al. combined
+DeepChrome, [@tag:Singh2016_deepchrome] improved prediction accuracy
+of high or low gene expression over existing methods. Deep learning can also
+integrate different data types. For example, Liang et al. combined
 RBMs to integrate gene expression, DNA methylation, and miRNA data to define
-ovarian cancer subtypes [@tag:Liang2015_exprs_cancer]. While the aforementioned
+ovarian cancer subtypes [@tag:Liang2015_exprs_cancer]. While these
 approaches are promising, many convert gene expression measurements to
 categorical or binary variables, thus ablating many complex gene expression
 signatures present in intermediate and relative numbers.
@@ -98,13 +98,13 @@ immensely from deep learning approaches.
 Pre-mRNA transcripts can be spliced into different isoforms by retaining or
 skipping subsets of exons or including parts of introns, creating enormous
 spatiotemporal flexibility to generate multiple distinct proteins from a single
-gene. Unfortunately, this remarkable complexity can lend itself to defects that
+gene. This remarkable complexity can lend itself to defects that
 underlie many diseases [@tag:Scotti2016_missplicing]. For instance, in Becker
 muscular dystrophy, a point mutation in dystrophin creates an exon splice
 silencer that induces skipping of exon 31. A recent study found that
 quantitative trait loci (QTLs) that affect splicing in lymphoblastoid cell lines
 are enriched within risk loci for schizophrenia, multiple sclerosis, and other
-immune diseases, implicating mis-splicing as a much more widespread feature of
+immune diseases, implicating mis-splicing as a more widespread feature of
 human pathologies than previously thought [@tag:Li2016_variation].
 
 Sequencing studies routinely return thousands of unannotated variants, but which
@@ -132,7 +132,7 @@ binding predictions [@tag:Qin2017_onehot].
 A parallel effort has been to use more data with simpler models. An exhaustive
 study using readouts of splicing for millions of synthetic intronic sequences
 uncovered motifs that influence the strength of alternative splice sites
-[@tag:Rosenberg2015_synthetic_seqs]. Interestingly, they built a simple linear
+[@tag:Rosenberg2015_synthetic_seqs]. The authors built a simple linear
 model using hexamer motif frequencies that successfully generalized to exon
 skipping.  In a limited analysis using SNPs (single nucleotide polymorphisms) from three genes, it predicted exon
 skipping with three times the accuracy of an existing deep learning-based
@@ -145,27 +145,24 @@ alternative splicing underlies complex, non-Mendelian diseases such as autism,
 schizophrenia, Type 1 diabetes, and multiple sclerosis [@tag:JuanMateu2016_t1d].
 As a proof of concept, Xiong et al. [@tag:Xiong2015_splicing_code] sequenced
 five autism spectrum disorder and 12 control samples, each with an average of 42,000 rare variants,
-and identified mis-splicing in 19 genes with neural functions. Deep learning
-will allow scientists and clinicians to rapidly profile thousands of unannotated
+and identified mis-splicing in 19 genes with neural functions. Such methods may
+one day enable scientists and clinicians to rapidly profile thousands of unannotated
 variants for functional effects on splicing and nominate candidates for further
 investigation. Moreover, these nonlinear algorithms can deconvolve the effects
 of multiple variants on a single splice event without the need to perform
 combinatorial *in vitro* experiments.
-
 The ultimate goal is to predict an individual’s tissue-specific, exon-specific
-splicing patterns from their genome sequence and other measurements. Knowing
-exactly which genes are mis-spliced in each tissue could enable a new branch of
+splicing patterns from their genome sequence and other measurements to enable a new branch of
 precision diagnostics that also stratifies patients and suggests targeted
-therapies to correct splicing defects. A continued focus on interpreting the
-"black box" of deep neural networks, along with integrating diverse data
-sources, will help us better understand the basic determinants of splicing and
-its links to complex disease, which will lead to novel diagnostics and
-therapeutics.
+therapies to correct splicing defects. However, to achieve this we expect that
+methods to interpret the "black box" of deep neural networks and integrate
+diverse data sources will be required.
 
 ### Transcription factors and RNA-binding proteins
 
 Transcription factors (TFs) and RNA-binding proteins are key components in gene
-regulation and higher-level biological processes. While high-throughput
+regulation and higher-level biological processes. TFs are regulatory proteins that bind to certain genomic loci and control the
+rate of mRNA production. While high-throughput
 sequencing techniques such as chromatin immunoprecipitation and massively
 parallel DNA sequencing (ChIP-seq) have been able to accurately identify targets
 for TFs, these experiments are both time consuming and expensive. Thus, there is
@@ -175,8 +172,7 @@ the understanding that deep learning methods for TFs are similar to those for
 RNA-binding proteins, though RNA-specific models do exist
 [@doi:10.1186/s12859-017-1561-8].
 
-TFs are regulatory proteins that bind to certain genomic loci and control the
-rate of mRNA production. ChIP-seq and related technologies are able to identify
+ChIP-seq and related technologies are able to identify
 highly likely binding sites for a certain TF, and databases such as ENCODE
 [@tag:Consortium2012_encode] have made freely available ChIP-seq data for
 hundreds of different TFs across many laboratories. In order to computationally
@@ -207,9 +203,6 @@ of a DNA sequence, resulting in two different forms of the motif (forward and
 reverse complement) due to complementary base pairing. To handle this issue,
 specialized reverse complement convolutional models share parameters to
 find motifs in both directions [@tag:Shrikumar2017_reversecomplement].
-Because deep learning for protein
-binding prediction is still in the early stages, we expect to see an increase in
-domain-specific architectures for this task.
 
 Despite these advances, several challenges remain. First, because the inputs
 (ChIP-seq measurements) are continuous and most current algorithms are designed
@@ -222,7 +215,7 @@ rapidly improving at simultaneous prediction of many TFs' binding at any given
 site [@tag:Zhou2015_deep_sea]. Third, it is unclear exactly how to define a
 non-binding or "negative" site in the training data because the number of
 positive binding sites of a particular TF is relatively small with respect to
-the total number of base-pairs in DNA (see Discussion).
+the total number of base-pairs in a genome (see Discussion).
 
 While deep learning-based models can automatically extract features for TFBS
 prediction at the sequence level, they often cannot predict binding patterns for
@@ -233,31 +226,29 @@ methylation, or gene expression. Without cell-specific features, another
 solution could be to use domain adaptation methods where the model trains on a
 source cell type and uses unsupervised feature extraction methods to predict on a
 target cell type. TFImpute [@tag:Qin2017_onehot] predicts binding in new cell type-TF
-pairs, but the cell types must be in the training set for other TFs besides the
-target TF. This is a step in the right direction, but a more general domain transfer model across cell types would be more
+pairs, but the cell types must be in the training set for other TFs. This is a step in the right direction, but a more general domain transfer model across cell types would be more
 useful.
 
-Critically, deep learning can also provide useful biological insights into TF
+Deep learning can also provide useful biological insights into TF
 binding. Lanchantin et al. [@tag:Lanchantin2016_motif] and Shrikumar et al.
 [@tag:Shrikumar2017_learning] developed tools to visualize TF motifs learned
 from TFBS classification tasks. Alipanahi et al. [@tag:Alipanahi2015_predicting]
 also introduced mutation maps, where they could easily mutate, add, or delete
-base pairs in a sequence and see how the model changed its prediction. This
-would be very time consuming in a lab setting but was easy to simulate using
-their model. As we learn to better visualize and analyze the hidden nodes within
+base pairs in a sequence and see how the model changed its prediction. Though
+time consuming to assay in a lab, this was easy to simulate the computational
+model. As we learn to better visualize and analyze the hidden nodes within
 deep learning models, our understanding of TF binding motifs and dynamics will
 likely improve.
 
 ### Promoters, enhancers, and related epigenomic tasks
 
-Identification of promoters and other cis-regulatory elements (CREs) presents an
-obvious use case for deep learning. Transcriptional control is undoubtedly a
-vital -- and early -- part of the regulation of gene expression. An abundance of
+Transcriptional control is undoubtedly a
+vital, early part of the regulation of gene expression. An abundance of
 sequence and associated functional data (e.g. ENCODE
 [@tag:Consortium2012_encode] and ExAC [@doi:10.1038/nature19057]) exists across
 species. At the same time, studies of gene regulation have often focused on the
 protein (binding) rather than the promoter level [@doi:10.1093/bib/4.1.22], perhaps
-due to the ill-defined nature of CREs. A promoter itself can be seen as an
+due to the ill-defined nature of cis-regulatory elements (CREs). A promoter itself can be seen as an
 assemblage of "active" binding sites for transcription factors interspersed by
 less-characterized and perhaps functionally silent spacer regions. However, the
 sequence signals that control the start and stop of transcription and
@@ -268,8 +259,8 @@ homologs might be studied for insight, they may not exist or may be just as
 poorly characterized.
 
 Recognizing enhancers presents additional challenges. Enhancers may be up to one
-million base pairs upstream or downstream from the affected promoter, on either
-strand, even within the introns of other genes [@doi:10.1038/nrg3458]. They do
+million base pairs upstream or downstream from the affected promoter on either
+strand even within the introns of other genes [@doi:10.1038/nrg3458]. They do
 not necessarily operate on the nearest gene and may affect multiple
 genes. Their activity is frequently tissue- or context-specific. A substantial
 fraction of enhancers displays modest or no conservation across species. There
@@ -294,8 +285,8 @@ accessibility has often been used for identifying enhancers, this also
 "recognizes" a wide variety of other functional elements, like promoters,
 silencers, and repressors.
 
-The complex nature of CREs (and our ignorance as to their important
-features) is therefore a good subject for deep learning approaches.
+The complex nature of CREs and our lack of understanding makes them a natural
+candidate for deep learning approaches.
 Indeed, neural networks were used for promoter recognition as early as 1996,
 albeit with mixed results [@doi:10.1016/S0097-8485(96)80015-5]. Since then,
 there has been much work in applying deep learning to this area, although little
@@ -347,17 +338,16 @@ were useful.
 
 In summary, deep learning is a promising approach for identifying CREs, able to
 interrogate sequence features that are complex and ill-understood, already
-offering marked improvements on the prior state of the art. However, the exact
-methodology is up for debate and needs examination and more comparative study.
-Work needs to be done in understanding the best architectures. The
-challenges in predicting TF binding -- the lack of large gold standard datasets,
+offering marked improvements on the prior state of the art. However, neural
+network architectures for this task need to be systematically compared. The
+challenges in predicting TF binding -- such as the lack of large gold standard datasets,
 model interpretation, and defining negative examples -- are pertinent to CRE
 identification as well. Furthermore, the quality and meaning of training data
 needs to be closely considered, given that a "promoter" or "enhancer" may only
 be putative or dependent on the experimental method or context of
-identification. Else we risk building detectors not for CREs but putative CREs.
-Although most deep learning studies in this area currently focus on predicting
-the 1D location of enhancers, modeling 3D chromatin conformations,
+identification. Otherwise we risk building detectors not for CREs but putative CREs.
+Most deep learning studies in this area currently predict
+the 1D location of enhancers, but modeling 3D chromatin conformations,
 enhancer-promoter interactions [@doi:10.1101/085241], and enhancer-target gene
 interactions will be critical for understanding transcriptional regulation.
 
@@ -384,7 +374,7 @@ recurrent neural network-based architectures to perform miRNA and target
 prediction with solely sequence data as input [@tag:Park2016_deepmirgene
 @tag:Lee2016_deeptarget]. Though the results are preliminary and still based on
 a validation set rather than a completely independent test set, they were able
-to predict microRNA target sites with 15-25% higher specificity and sensitivity
+to predict microRNA target sites with higher specificity and sensitivity
 than TargetScan. Excitingly, these tools seem to show that RNNs can accurately
 align sequences and predict bulges, mismatches, and wobble base pairing without
 requiring the user to input secondary structure predictions or thermodynamic
@@ -392,7 +382,7 @@ calculations.
 
 Further incremental advances in deep learning for miRNA and target
 prediction will likely be sufficient to meet the current needs of systems
-biologists and other researchers, who use prediction tools mainly to nominate
+biologists and other researchers who use prediction tools mainly to nominate
 candidates that are then tested experimentally. Similar to other applications,
 the major contribution of deep learning will be to deliver deep insights into
 the biology of miRNA targeting as we learn to interrogate the hidden nodes
@@ -406,13 +396,13 @@ development. UniProt currently has about 94 million protein sequences, yet fewer
 than 100,000 proteins across all species have experimentally-solved structures
 in Protein Data Bank (PDB). As a result, computational structure prediction is
 essential for a majority of proteins. However, this is very challenging,
-especially when similar solved structures (called templates) are not available
+especially when similar solved structures, called templates, are not available
 in PDB. Over the past several decades, many computational methods have been
 developed to predict aspects of protein structure such as secondary structure,
 torsion angles, solvent accessibility, inter-residue contact maps, disorder
-regions, and side-chain packing. In recent years, various deep learning
-architectures have been utilized, including deep belief networks, LSTM (long
-short-term memory), deep convolutional neural networks, and deep convolutional
+regions, and side-chain packing. In recent years, multiple deep learning
+architectures have been applied, including deep belief networks, LSTM (long
+short-term memory), CNNs, and deep convolutional
 neural fields (DeepCNF) [@doi:10.1007/978-3-319-46227-1_1
 @doi:10.1038/srep18962].
 
@@ -440,12 +430,12 @@ accuracy by using a deep supervised and convolutional generative stochastic
 network [@arxiv:1403.1347]. In 2016 Wang et al. developed a DeepCNF model that
 significantly improved Q3 and Q8 accuracy as well as prediction of solvent
 accessibility and disorder regions [@doi:10.1038/srep18962
-@doi:10.1007/978-3-319-46227-1_1]. DeepCNF was the first tool to achieve Q3
-accuracy of 84-85%, much higher than the 80% accuracy standard maintained by
+@doi:10.1007/978-3-319-46227-1_1]. DeepCNF achieved a higher Q3 accuracy than
+the standard maintained by
 PSIPRED for more than 10 years. This improvement may be mainly due to the
 ability of convolutional neural fields to capture long-range sequential
 information, which is important for beta strand prediction. Nevertheless,
-improving secondary structure prediction from 80% to 84-85% is unlikely to
+the improvements in secondary structure prediction from DeepCNF are unlikely to
 result in a commensurate improvement in tertiary structure prediction since
 secondary structure mainly reflects coarse-grained local conformation of a
 protein structure.
@@ -486,11 +476,11 @@ contact occurrence patterns by simultaneously predicting all the contacts in a
 single protein.
 
 Taken together, *ab initio* folding is becoming much easier with the advent of
-direct evolutionary coupling analysis and deep learning techniques. We believe
-it is still possible to further improve contact prediction for proteins with
+direct evolutionary coupling analysis and deep learning techniques. We expect
+further improvements in contact prediction for proteins with
 fewer than 1000 homologs by studying new deep network architectures. However, it
-is unclear whether there is an effective way to use deep learning to improve
-prediction for proteins with almost no sequence homologs. Finally, the deep
+is unclear if there is an effective way to use deep learning to improve
+prediction for proteins with few or no sequence homologs. Finally, the deep
 learning methods summarized above also apply to interfacial contact prediction
 for protein complexes but may be less effective since on average protein
 complexes have fewer sequence homologs.
@@ -507,9 +497,9 @@ straightforward to measure biological properties of interest, such as
 fluorescence intensities, textures, and sizes. Given the dramatic successes of
 deep learning in biological imaging, we simply refer to articles that review
 recent advancements [@doi:10.3109/10409238.2015.1135868
-@doi:10.1371/journal.pcbi.1005177 @doi:10.1007/978-3-319-24574-4_28]. We believe
-deep learning will become commonplace for biological image segmentation
-once user-friendly tools exist.
+@doi:10.1371/journal.pcbi.1005177 @doi:10.1007/978-3-319-24574-4_28]. For
+deep learning to become commonplace for biological image segmentation,
+user-friendly tools need to be developed.
 
 We anticipate an additional kind of paradigm shift in bioimaging that will be
 brought about by deep learning: what if images of biological samples, from
@@ -546,18 +536,18 @@ disease-specific phenotypes suitable for drug screening
 experiments -- known as image-based profiling or morphological profiling -- a
 higher degree of accuracy, stemming from the freedom from human-tuned feature
 extraction strategies. Perhaps most excitingly, focused characterization of
-these higher-level features will likely lead to new and valuable biological
+these higher-level features may lead to new and valuable biological
 insights.
 
 ### Single-cell data
 
-Single-cell methods are generating extreme excitement as biologists recognize
+Single-cell methods are generating excitement as biologists recognize
 the vast heterogeneity within unicellular species and between cells of the same
 tissue type in the same organism [@tag:Gawad2016_singlecell]. For instance,
 tumor cells and neurons can both harbor extensive somatic variation
 [@tag:Lodato2015_neurons]. Understanding single-cell diversity in all its
 dimensions — genetic, epigenetic, transcriptomic, proteomic, morphologic, and
-metabolic — is key if precision medicine is to be targeted not only to a
+metabolic — is key if treatments are to be targeted not only to a
 specific individual, but also to specific pathological subsets of cells.
 Single-cell methods also promise to uncover a wealth of new biological
 knowledge. A sufficiently large population of single cells will have enough
@@ -565,7 +555,7 @@ representative "snapshots" to recreate timelines of dynamic biological processes
 If tracking processes over time is not the limiting factor, single-cell
 techniques can provide maximal resolution compared to averaging across all cells
 in bulk tissue, enabling the study of transcriptional bursting with single-cell
-FISH or the heterogeneity of epigenetic patterns with single-cell Hi-C or
+fluorescence in situ hybridization or the heterogeneity of epigenetic patterns with single-cell Hi-C or
 ATAC-seq [@tag:Liu2016_sc_transcriptome @tag:Vera2016_sc_analysis].  Joint
 profiling of single-cell epigenetic and transcriptional states provides
 unprecedented views of regulatory processes [@doi:10.1101/138685].
@@ -586,23 +576,23 @@ for dealing with batch effects [@tag:Shaham2016_batch_effects].
 
 Examining populations of single cells can reveal biologically meaningful subsets
 of cells as well as their underlying gene regulatory networks
-[@tag:Gaublomme2015_th17]. Unfortunately, machine learning generally struggles
+[@tag:Gaublomme2015_th17]. Unfortunately, machine learning methods generally struggle
 with imbalanced data — when there are many more examples of class 1 than class 2 —
 because prediction accuracy is usually evaluated over the entire dataset. To
 tackle this challenge, Arvaniti et al. [@tag:Arvaniti2016_rare_subsets]
 classified healthy and cancer cells expressing 25 markers by using the most
 discriminative filters from a CNN trained on the data as a linear classifier.
-They achieved an impressive precision of 50% to 90% with 80% recall on cells
-where the subset percentage ranged from 0.1 to 1%, which significantly
-outperformed logistic regression and distance-based outlier detection methods.
-However, they did not benchmark against random forests, which tend to be better
-with imbalanced data, and their data was
-fairly low dimensional. Future work will be needed to establish the utility of
+They achieved impressive performance, even for cell types
+where the subset percentage ranged from 0.1 to 1%, significantly
+outperforming logistic regression and distance-based outlier detection methods.
+However, they did not benchmark against random forests, which tend to work better
+for imbalanced data, and their data was
+relatively low dimensional. Future work is needed to establish the utility of
 deep learning in cell subset identification, but the stunning improvements in
-image classification over the past 5 years [@tag:He2015_images] suggest that
-this goal will be achievable.
+image classification over the past 5 years [@tag:He2015_images] suggest
+transformative potential.
 
-The sheer quantity of "omic" information that can be obtained from each cell, as
+The sheer quantity of omic information that can be obtained from each cell, as
 well as the number of cells in each dataset, uniquely position single-cell data
 to benefit from deep learning. In the future, lineage tracing could be
 revolutionized by using autoencoders to reduce the feature space of
@@ -613,7 +603,7 @@ morphology and movement into neural networks
 [@tag:Silver2016_alphago] could be trained on the evolutionary dynamics of
 cancer cells or bacterial cells undergoing selection pressure and reveal whether
 patterns of adaptation are random or deterministic, allowing us to develop
-therapeutic strategies that forestall resistance. It will be exciting to see the
+therapeutic strategies that forestall resistance. We are excited to see the
 creative applications of deep learning to single-cell biology that emerge over
 the next few years.
 
