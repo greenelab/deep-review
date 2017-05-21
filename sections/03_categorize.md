@@ -2,7 +2,7 @@
 
 In a healthcare setting, individuals are diagnosed with a disease or condition
 based on symptoms, the results of certain diagnostic tests, or other factors.
-Once diagnosed with a disease an individual might be assigned a stage based on
+Once diagnosed with a disease, an individual might be assigned a stage based on
 another set of human-defined rules. While these rules are refined over time, the
 process is evolutionary rather than revolutionary.
 
@@ -12,13 +12,13 @@ might identify entirely new categories of health or disease that are only
 present when data from multiple lab tests are integrated. As a potential
 example, consider the condition Latent Autoimmune Diabetes in Adults (LADA). The
 history of this disease classification is briefly reviewed in Stenström et
-al.[@doi:10.2337/diabetes.54.suppl_2.S68].
+al. [@doi:10.2337/diabetes.54.suppl_2.S68].
 
 Imagine that a deep neural network operating in the early 1980s had access to
 electronic health records with comprehensive clinical tests. It might have
 identified a subgroup of individuals with blood glucose levels that indicated
 diabetes as well as auto-antibodies, even though the individuals had never been
-diagnosed with type 1 diabetes - the autoimmune form of the disease that arises
+diagnosed with type 1 diabetes -- the autoimmune form of the disease that arises
 in young people. Such a neural network would be identifying patients with LADA.
 As no such computational approach existed, LADA was actually identified by Groop
 et al. [@doi:10.2337/diab.35.2.237]. However, this represents a potential hope
@@ -27,10 +27,10 @@ context of our assumptions, can reveal novel classes of treatable conditions.
 
 Alternatively, imagine that a deep neural network is provided with clinical test
 results gleaned from electronic health records. Because physicians may order
-certain tests based on the diagnosis that they suspect a patient has, a deep
+certain tests based on their suspected diagnosis, a deep
 neural network may learn to "diagnose" patients simply based on the tests that
-are ordered. For some objective function this may offer good performance (i.e.
-predicting an ICD code), even though it does not provide insight into the
+are ordered. For some objective functions, such as predicting an International
+Classification of Diseases (ICD) code, this may offer good performance even though it does not provide insight into the
 underlying disease beyond physician activity. This challenge is not unique to
 deep learning approaches; however, it is important for practitioners to be aware
 of these challenges and the possibility in this domain of constructing highly
@@ -57,14 +57,14 @@ Though there are many commonalities with the analysis of natural photographs,
 there are also key differences. In all cases that we examined, fewer than one
 million images were available for training, and datasets are often many orders
 of magnitude smaller than collections of natural photographs. Researchers have
-developed subtask-specific strategies to address this challenge
+developed subtask-specific strategies to address this challenge.
 
 The first strategy repurposes features extracted from natural photographs by deep learning models, such as ImageNet [@tag:Russakovsky2015_imagenet], for new purposes.
 Diagnosing diabetic retinopathy through color fundus
 images became an area of focus for deep learning researchers after
 a large labeled image set was made publicly available during a
 2015 Kaggle competition [@tag:Pratt2016_dr]. Most participants trained
-neural networks from scratch [@tag:Pratt2016_dr @tag:Abramoff2016_dr
+neural networks from scratch `TODO: DOI used for two tags` [@tag:Pratt2016_dr @tag:Abramoff2016_dr
 @tag:Leibig2016_dr], but Gulshan et al. [@tag:Gulshan2016_dt] repurposed a
 48-layer Inception-v3 deep architecture pre-trained on natural images and
 surpassed the state-of-the-art specificity
@@ -80,7 +80,7 @@ deep networks to succeed without overfitting. For the melanoma task, reported pe
 than a board of certified dermatologists
 [@tag:Codella2016_ensemble_melanoma @tag:Esteva2017_skin_cancer_nature].
 
-The reuse of features from natural images is also growing for
+Reusing features from natural images is also growing for
 radiographic images, where datasets are often too small to train large deep neural networks without
 these techniques [@tag:Bar2015_nonmed_tl @tag:Shin2016_cad_tl
 @tag:Rajkomar2017_radiographs @tag:Lakhani2017_radiography]. Rajkomar et al.
@@ -91,7 +91,7 @@ pre-processing or fine-tuning of the whole network on radiographs with heavy
 data augmentation to avoid overfitting.
 
 The technique of reusing features from a different task falls into the broader area of
-transfer learning, which we devote a section to in the discussion.
+transfer learning (see Discussion).
 Though we've mentioned numerous successes for the transfer of natural image features to new tasks,
 we expect that a lower proportion of negative results have been published.
 The analysis of magnetic resonance
@@ -111,14 +111,14 @@ constructed by applying a transformation that changes training images but not
 their content -- for example by rotating an image by a random amount. An alternative in the domain is to train towards human-created features before
 subsequent fine tuning [@tag:Dhungel2016_mamm], which can help to sidestep this challenge though it does give up deep learning techniques' strength as feature constructors.
 
-Another way of dealing with limited training data is to divide rich data - e.g. 3D images - into numerous reduced projections.
+Another way of dealing with limited training data is to divide rich data -- e.g. 3D images -- into numerous reduced projections.
 Shin et al. [@tag:Shin2016_cad_tl]
 compared various deep network architectures, dataset characteristics, and
 training procedures for computer tomography-based (CT) abnormality detection.
-They concluded that networks as deep as 22 layers could be useful for 3D data, even though the size of training datasets was limited. However, they note, that choice of a specific architecture, parameter
-setting, and model fine-tuning needed is very problem and dataset-specific.
-Moreover, this type of tasks often depends on both lesion localization and
-appearance that pose challenges for CNN-based approaches. Straightforward
+They concluded that networks as deep as 22 layers could be useful for 3D data, even though the size of training datasets was limited. However, they noted that choice of architecture, parameter
+setting, and model fine-tuning needed is very problem- and dataset-specific.
+Moreover, this type of task often depends on both lesion localization and
+appearance, which poses challenges for CNN-based approaches. Straightforward
 attempts to capture useful information from full-size images in all three
 dimensions simultaneously via standard neural network architectures were computationally unfeasible.
 Instead, two-dimensional models were used to either process image slices
@@ -127,8 +127,8 @@ the native space (2.5D). Roth et al. compared 2D, 2.5D, and 3D CNNs on a number
 of tasks for computer-aided detection from CT scans and showed that 2.5D CNNs
 performed comparably well to 3D analogs, while requiring much less training
 time, especially on augmented training sets [@tag:Roth2015_view_agg_cad].
-Another advantage of 2D and 2.5D networks is a possibility to use widely
-available models pre-trained on natural images. But reducing the dimensionality
+Another advantage of 2D and 2.5D networks is the wider
+availability of pre-trained models. But reducing the dimensionality
 is not always helpful.
 Nie et al.
 [@tag:Nie2016_3d_survival] showed that multimodal, multi-channel 3D deep
