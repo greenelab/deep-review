@@ -611,12 +611,12 @@ Longitudinal analysis follows a population across time, for example,
 prospectively from birth or from the onset of particular conditions. In large
 patient populations, longitudinal analyses such as the Farmingham Heart Study
 [@doi:10.1016/S0140-6736(13)61752-3] and the Avon Longitudinal Study of Parents
-and Children [@doi:10.1038/484155a] have yielded important insights into the
+and Children [@doi:10.1038/484155a] have yielded important discoveries about the
 development of disease and the factors contributing to health status. Yet, a
 common practice in EHR-based research is to take a point in time snapshot and
 convert patient data to a traditional vector for machine learning and
 statistical analysis. This results in loss of information as timing and order of
-events can provide important information about a patient's disease and treatment
+events can provide insight into a patient's disease and treatment
 [@doi:10.2307/2281868]. Efforts to model sequences of events have shown promise
 [@doi:10.1038/ncomms5022] but require exceedingly large patient sizes due to
 discrete combinatorial bucketing. Lasko et al.
@@ -626,6 +626,6 @@ deep learning has shown promise working with both sequences (Convolutional
 Neural Networks) [@arxiv:1607.07519] and the incorporation of past and current
 state (Recurrent Neural Networks, Long Short Term Memory
 Networks) [@arxiv:1602.00357]. This may be a particular area of opportunity for
-deep neural networks. The ability to discover relevant sequences of events from
+deep neural networks. The ability to recognize relevant sequences of events from
 a large number of trajectories requires powerful and flexible feature
 construction methods -- an area in which deep neural networks excel.
