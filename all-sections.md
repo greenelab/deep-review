@@ -787,7 +787,7 @@ Longitudinal analysis follows a population across time, for example,
 prospectively from birth or from the onset of particular conditions. In large
 patient populations, longitudinal analyses such as the Farmingham Heart Study
 [@N96QKgly] and the Avon Longitudinal Study of Parents
-and Children [@1FjSxrV1k] have yielded important insights into the
+and Children [@1FjSxrV1k] have yielded important discoveries about the
 development of disease and the factors contributing to health status. Yet, a
 common practice in EHR-based research is to take a point in time snapshot and
 convert patient data to a traditional vector for machine learning and
@@ -802,7 +802,7 @@ deep learning has shown promise working with both sequences (Convolutional
 Neural Networks) [@Ohd1Q9Xw] and the incorporation of past and current
 state (Recurrent Neural Networks, Long Short Term Memory
 Networks) [@HRXii6Ni]. This may be a particular area of opportunity for
-deep neural networks. The ability to discover relevant sequences of events from
+deep neural networks. The ability to recognize relevant sequences of events from
 a large number of trajectories requires powerful and flexible feature
 construction methods -- an area in which deep neural networks excel.
 
@@ -928,13 +928,12 @@ multiple kinds of epigenomic measurements as well as tissue identity and RNA
 binding partners of splicing factors. Deep learning is critical in furthering
 these kinds of integrative studies where different data types and inputs
 interact in unpredictable (often nonlinear) ways to create higher-order
-features, compared to earlier approaches that often assumed independence of
-features or required extensive manual fine-tuning. Moreover, as in gene
+features. Moreover, as in gene
 expression network analysis, interrogating the hidden nodes within neural
-networks will likely yield new biological insights into splicing. For instance,
+networks could potentially illuminate important aspects of splicing behavior. For instance,
 tissue-specific splicing mechanisms could be inferred by training networks on
 splicing data from different tissues, then searching for common versus
-distinctive nodes, a technique employed by Qin et al. for tissue-specific TF
+distinctive hidden nodes, a technique employed by Qin et al. for tissue-specific TF
 binding predictions [@Qbtqlmhf].
 
 A parallel effort has been to use more data with simpler models. An exhaustive
@@ -945,7 +944,7 @@ model using hexamer motif frequencies that successfully generalized to exon
 skipping.  In a limited analysis using SNPs (single nucleotide polymorphisms) from three genes, it predicted exon
 skipping with three times the accuracy of an existing deep learning-based
 framework [@17sgPdcMT]. This case is instructive in that clever sources of data, not just
-more descriptive models, are still critical in yielding novel insights.
+more descriptive models, are still critical.
 
 We already understand how mis-splicing of a single gene can cause diseases such
 as Duchenne muscular dystrophy. The challenge now is to uncover how genome-wide
@@ -1036,8 +1035,8 @@ target cell type. TFImpute [@Qbtqlmhf] predicts binding in new cell type-TF
 pairs, but the cell types must be in the training set for other TFs. This is a step in the right direction, but a more general domain transfer model across cell types would be more
 useful.
 
-Deep learning can also provide useful biological insights into TF
-binding. Lanchantin et al. [@Dwi2eAvT] and Shrikumar et al.
+Deep learning can also illustrate TF
+binding preferences. Lanchantin et al. [@Dwi2eAvT] and Shrikumar et al.
 [@zhmq9ktJ] developed tools to visualize TF motifs learned
 from TFBS classification tasks. Alipanahi et al. [@jJHZHWrl]
 also introduced mutation maps, where they could easily mutate, add, or delete
@@ -1184,14 +1183,10 @@ than TargetScan. Excitingly, these tools seem to show that RNNs can accurately
 align sequences and predict bulges, mismatches, and wobble base pairing without
 requiring the user to input secondary structure predictions or thermodynamic
 calculations.
-
 Further incremental advances in deep learning for miRNA and target
 prediction will likely be sufficient to meet the current needs of systems
 biologists and other researchers who use prediction tools mainly to nominate
-candidates that are then tested experimentally. Similar to other applications,
-the major contribution of deep learning will be to deliver deep insights into
-the biology of miRNA targeting as we learn to interrogate the hidden nodes
-within neural networks.
+candidates that are then tested experimentally.
 
 ### Protein secondary and tertiary structure
 
@@ -1334,9 +1329,7 @@ disease-specific phenotypes suitable for drug screening
 [@hkKO4QYl; @m3Ij21U8; @McjXFLLq]. Deep learning would bring to these new kinds of
 experiments -- known as image-based profiling or morphological profiling -- a
 higher degree of accuracy, stemming from the freedom from human-tuned feature
-extraction strategies. Perhaps most excitingly, focused characterization of
-these higher-level features may lead to new and valuable biological
-insights.
+extraction strategies.
 
 ### Single-cell data
 
@@ -2697,7 +2690,7 @@ in a diverse array of tasks in patient and disease categorization, fundamental
 biological study, genomics, and treatment development.  Returning to our central
 question: given this rapid progress, has deep learning transformed the study of
 human disease?  Though the answer is highly dependent on the specific domain and
-problem being addressed, we conclude that deep learning has not *yet* realized
+problem being addressed, we conclude that deep learning has not yet realized
 its transformative potential or induced a strategic inflection point.  Despite
 its dominance over competing machine learning approaches in many of the areas
 reviewed here and quantitative improvements in predictive performance, deep
@@ -2711,10 +2704,14 @@ finally approaching or exceeding human performance in the past year
 datasets are undeniable, but greatly reducing the error rate on these benchmarks did not
 fundamentally transform the domain.  Widespread adoption of conversational
 speech technologies will require solving the problem, i.e. methods that surpass human performance,
-and convincing users to adopt them [@nyjAIan4].
+and persuading users to adopt them [@nyjAIan4].
 We see parallels in healthcare, where achieving the full potential of
 deep learning will require outstanding predictive performance as well as
-acceptance and adoption by biologists and clinicians.
+acceptance and adoption by biologists and clinicians.  These experts will
+rightfully demand rigorous evidence that deep learning has impacted their
+respective disciplines -- elucidated new biological mechanisms and improved
+patient outcomes -- to be convinced that the promises of deep learning are more
+substantive than those of previous generations of artificial intelligence.
 
 Some of the areas we have discussed are closer to surpassing this lofty bar than
 others, generally those that are more similar to the non-biomedical tasks that
@@ -2759,8 +2756,10 @@ performance than either individually [@mbEp6jNr]. For sample
 and patient classification tasks, we expect deep learning methods to augment
 clinicians and biomedical researchers.
 
-We are extremely optimistic about the future of deep learning in biology and medicine. Given how rapidly deep learning is
-evolving, its full potential in biomedicine has not been explored.  We have
+We are extremely optimistic about the future of deep learning in biology and medicine. It
+is by no means inevitable that deep learning will revolutionize these domains,
+but given how rapidly the field is
+evolving, we are confident that its full potential in biomedicine has not been explored.  We have
 highlighted numerous challenges beyond improving training and predictive
 accuracy, such as preserving patient privacy and interpreting models.  Ongoing
 research has begun to address these problems and shown that they are not
@@ -2772,7 +2771,7 @@ representations have spurred creative modeling approaches that would be
 infeasible with other machine learning techniques. Unsupervised methods are
 currently less-developed than their supervised counterparts, but they may have
 the most potential because of how expensive and time-consuming it is to label
-large amounts of biomedical data. When deep learning algorithms can summarize
+large amounts of biomedical data. If future deep learning algorithms can summarize
 very large collections of input data into interpretable models that spur
 scientists to ask questions that they did not know how to ask, it will be clear
 that deep learning has transformed biology and medicine.
