@@ -62,7 +62,7 @@ make, such as misclassification of adversarial examples [@arxiv:1312.6199
 semantics of the objects presented. It may be impossible to guarantee that a
 model is not susceptible to adversarial examples, but work in this area is
 continuing
-[@arxiv:1611.03814 @arxiv:1704.01155. Cooperation
+[@arxiv:1611.03814 @arxiv:1704.01155]. Cooperation
 between human experts and deep learning algorithms addresses many of these challenges and can achieve better
 performance than either individually [@arxiv:1606.05718]. For sample
 and patient classification tasks, we expect deep learning methods to augment
