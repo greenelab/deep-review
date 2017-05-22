@@ -56,11 +56,11 @@ approaches applied to gene expression data are powerful methods for
 identifying gene signatures that may otherwise be overlooked.
 An additional benefit of unsupervised approaches is that
 ground truth labels, which are often difficult to acquire or are incorrect, are
-nonessential. However, careful interpretation must be performed when
-the genes are aggregated into features. Precisely attributing node activations
-to specific biological functions risks over-interpreting models and can lead to
-incorrect conclusions.  Also, batch effects in improperly normalized data can cause
-models to discover non-biological features.
+nonessential. However, the genes that have been aggregated into features must
+be interpreted carefully. Attributing each node to a single specific
+biological function risks over-interpreting models. Batch effects could cause
+models to discover non-biological features, and downstream analyses should take
+this into consideration.
 
 Deep learning approaches are also being applied to gene expression prediction
 tasks. For example, a deep neural network with three hidden layers outperformed
@@ -235,7 +235,7 @@ binding. Lanchantin et al. [@tag:Lanchantin2016_motif] and Shrikumar et al.
 from TFBS classification tasks. Alipanahi et al. [@tag:Alipanahi2015_predicting]
 also introduced mutation maps, where they could easily mutate, add, or delete
 base pairs in a sequence and see how the model changed its prediction. Though
-time consuming to assay in a lab, this was easy to simulate the computational
+time consuming to assay in a lab, this was easy to simulate with a computational
 model. As we learn to better visualize and analyze the hidden nodes within
 deep learning models, our understanding of TF binding motifs and dynamics will
 likely improve.
@@ -260,7 +260,7 @@ poorly characterized.
 
 Recognizing enhancers presents additional challenges. Enhancers may be up to one
 million base pairs upstream or downstream from the affected promoter on either
-strand even within the introns of other genes [@doi:10.1038/nrg3458]. They do
+strand and even within the introns of other genes [@doi:10.1038/nrg3458]. They do
 not necessarily operate on the nearest gene and may affect multiple
 genes. Their activity is frequently tissue- or context-specific. A substantial
 fraction of enhancers displays modest or no conservation across species. There
@@ -546,8 +546,8 @@ the vast heterogeneity within unicellular species and between cells of the same
 tissue type in the same organism [@tag:Gawad2016_singlecell]. For instance,
 tumor cells and neurons can both harbor extensive somatic variation
 [@tag:Lodato2015_neurons]. Understanding single-cell diversity in all its
-dimensions — genetic, epigenetic, transcriptomic, proteomic, morphologic, and
-metabolic — is key if treatments are to be targeted not only to a
+dimensions -- genetic, epigenetic, transcriptomic, proteomic, morphologic, and
+metabolic -- is key if treatments are to be targeted not only to a
 specific individual, but also to specific pathological subsets of cells.
 Single-cell methods also promise to uncover a wealth of new biological
 knowledge. A sufficiently large population of single cells will have enough
@@ -555,7 +555,7 @@ representative "snapshots" to recreate timelines of dynamic biological processes
 If tracking processes over time is not the limiting factor, single-cell
 techniques can provide maximal resolution compared to averaging across all cells
 in bulk tissue, enabling the study of transcriptional bursting with single-cell
-fluorescence in situ hybridization or the heterogeneity of epigenetic patterns with single-cell Hi-C or
+fluorescence *in situ* hybridization or the heterogeneity of epigenetic patterns with single-cell Hi-C or
 ATAC-seq [@tag:Liu2016_sc_transcriptome @tag:Vera2016_sc_analysis].  Joint
 profiling of single-cell epigenetic and transcriptional states provides
 unprecedented views of regulatory processes [@doi:10.1101/138685].
@@ -577,7 +577,7 @@ for dealing with batch effects [@tag:Shaham2016_batch_effects].
 Examining populations of single cells can reveal biologically meaningful subsets
 of cells as well as their underlying gene regulatory networks
 [@tag:Gaublomme2015_th17]. Unfortunately, machine learning methods generally struggle
-with imbalanced data — when there are many more examples of class 1 than class 2 —
+with imbalanced data -- when there are many more examples of class 1 than class 2 --
 because prediction accuracy is usually evaluated over the entire dataset. To
 tackle this challenge, Arvaniti et al. [@tag:Arvaniti2016_rare_subsets]
 classified healthy and cancer cells expressing 25 markers by using the most
@@ -619,7 +619,7 @@ ignores >99% of the genomic content. Subsequent tools aimed to classify
 tetranucleotide frequencies, which differ across organisms
 [@tag:Karlin], using supervised [@tag:McHardy @tag:nbc] or unsupervised methods
 [@tag:Abe]. Then, researchers began to use techniques that could estimate
-relative abundances from an entire sample more quickly than classifying
+relative abundances from an entire sample faster than classifying
 individual reads [@tag:Metaphlan @tag:wgsquikr @tag:lmat @tag:Vervier]. There is
 also great interest in identifying and annotating sequence reads [@tag:yok
 @tag:Soueidan]. However, the focus on taxonomic and functional annotation is just
@@ -642,9 +642,9 @@ network [@tag:Asgari]. Recurrent neural networks show good performance for
 homology and protein family identification [@tag:Hochreiter @tag:Sonderby].
 
 One of the first techniques of *de novo* genome binning used self-organizing
-maps, a type of neural network [@tag:Abe]. Essinger et al. used Adaptive Resonance Theory
+maps, a type of neural network [@tag:Abe]. Essinger et al. [@tag:Essinger2010_taxonomic] used Adaptive Resonance Theory
 (ART) to cluster similar genomic fragments and showed that it had better
-performance than k-means [@tag:Essinger2010_taxonomic]. However, other methods
+performance than k-means. However, other methods
 based on interpolated Markov models [@tag:Salzberg] have performed better than
 these early genome binners. Neural networks can be slow and therefore have had
 limited use for reference-based taxonomic classification, with TAC-ELM
