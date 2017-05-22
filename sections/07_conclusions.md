@@ -61,8 +61,7 @@ clinicians will be displaced anytime soon. While deep learning methods will
 soon be (or already are) better than scientists at specific tasks, they may not
 fully grasp the bigger picture. Machine learning algorithms, including deep
 neural networks, are also prone to mistakes that humans are much less likely to
-make, such as misclassification of adversarial examples [@arxiv:1312.6199
-@arxiv:1412.6572], a reminder that these algorithms do not understand the
+make, such as misclassification of adversarial examples [@arxiv:1312.6199 @arxiv:1412.6572], a reminder that these algorithms do not understand the
 semantics of the objects presented. Despite progress in addressing some of these
 limitations [@arxiv:1611.03814 @arxiv:1704.01155], we expect human experts will retain
 their critical roles in the laboratory and clinic
