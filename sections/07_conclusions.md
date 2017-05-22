@@ -5,7 +5,7 @@ in a diverse array of tasks in patient and disease categorization, fundamental
 biological study, genomics, and treatment development.  Returning to our central
 question: given this rapid progress, has deep learning transformed the study of
 human disease?  Though the answer is highly dependent on the specific domain and
-problem being addressed, we conclude that deep learning has not *yet* realized
+problem being addressed, we conclude that deep learning has not yet realized
 its transformative potential or induced a strategic inflection point.  Despite
 its dominance over competing machine learning approaches in many of the areas
 reviewed here and quantitative improvements in predictive performance, deep
@@ -19,10 +19,14 @@ finally approaching or exceeding human performance in the past year
 datasets are undeniable, but greatly reducing the error rate on these benchmarks did not
 fundamentally transform the domain.  Widespread adoption of conversational
 speech technologies will require solving the problem, i.e. methods that surpass human performance,
-and convincing users to adopt them [@tag:Speech_recognition].
+and persuading users to adopt them [@tag:Speech_recognition].
 We see parallels in healthcare, where achieving the full potential of
 deep learning will require outstanding predictive performance as well as
-acceptance and adoption by biologists and clinicians.
+acceptance and adoption by biologists and clinicians.  These experts will
+rightfully demand rigorous evidence that deep learning has impacted their
+respective disciplines -- elucidated new biological mechanisms and improved
+patient outcomes -- to be convinced that the promises of deep learning are more
+substantive than those of previous generations of artificial intelligence.
 
 Some of the areas we have discussed are closer to surpassing this lofty bar than
 others, generally those that are more similar to the non-biomedical tasks that
@@ -68,8 +72,10 @@ performance than either individually [@arxiv:1606.05718]. For sample
 and patient classification tasks, we expect deep learning methods to augment
 clinicians and biomedical researchers.
 
-We are extremely optimistic about the future of deep learning in biology and medicine. Given how rapidly deep learning is
-evolving, its full potential in biomedicine has not been explored.  We have
+We are extremely optimistic about the future of deep learning in biology and medicine. It
+is by no means inevitable that deep learning will revolutionize these domains,
+but given how rapidly the field is
+evolving, we are confident that its full potential in biomedicine has not been explored.  We have
 highlighted numerous challenges beyond improving training and predictive
 accuracy, such as preserving patient privacy and interpreting models.  Ongoing
 research has begun to address these problems and shown that they are not
@@ -81,7 +87,7 @@ representations have spurred creative modeling approaches that would be
 infeasible with other machine learning techniques. Unsupervised methods are
 currently less-developed than their supervised counterparts, but they may have
 the most potential because of how expensive and time-consuming it is to label
-large amounts of biomedical data. When deep learning algorithms can summarize
+large amounts of biomedical data. If future deep learning algorithms can summarize
 very large collections of input data into interpretable models that spur
 scientists to ask questions that they did not know how to ask, it will be clear
 that deep learning has transformed biology and medicine.
