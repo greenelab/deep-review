@@ -616,7 +616,7 @@ development of disease and the factors contributing to health status. Yet, a
 common practice in EHR-based research is to take a point in time snapshot and
 convert patient data to a traditional vector for machine learning and
 statistical analysis. This results in loss of information as timing and order of
-events can provide insight into a patient's disease and treatment
+events can provide important information about a patient's disease and treatment
 [@doi:10.2307/2281868]. Efforts to model sequences of events have shown promise
 [@doi:10.1038/ncomms5022] but require exceedingly large patient sizes due to
 discrete combinatorial bucketing. Lasko et al.

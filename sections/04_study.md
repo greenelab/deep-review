@@ -120,13 +120,12 @@ multiple kinds of epigenomic measurements as well as tissue identity and RNA
 binding partners of splicing factors. Deep learning is critical in furthering
 these kinds of integrative studies where different data types and inputs
 interact in unpredictable (often nonlinear) ways to create higher-order
-features, compared to earlier approaches that often assumed independence of
-features or required extensive manual fine-tuning. Moreover, as in gene
+features. Moreover, as in gene
 expression network analysis, interrogating the hidden nodes within neural
-networks will likely yield new biological insights into splicing. For instance,
+networks could potentially illuminate important aspects of splicing behavior. For instance,
 tissue-specific splicing mechanisms could be inferred by training networks on
 splicing data from different tissues, then searching for common versus
-distinctive nodes, a technique employed by Qin et al. for tissue-specific TF
+distinctive hidden nodes, a technique employed by Qin et al. for tissue-specific TF
 binding predictions [@tag:Qin2017_onehot].
 
 A parallel effort has been to use more data with simpler models. An exhaustive
@@ -137,7 +136,7 @@ model using hexamer motif frequencies that successfully generalized to exon
 skipping.  In a limited analysis using SNPs (single nucleotide polymorphisms) from three genes, it predicted exon
 skipping with three times the accuracy of an existing deep learning-based
 framework [@tag:Xiong2015_splicing_code]. This case is instructive in that clever sources of data, not just
-more descriptive models, are still critical in yielding novel insights.
+more descriptive models, are still critical.
 
 We already understand how mis-splicing of a single gene can cause diseases such
 as Duchenne muscular dystrophy. The challenge now is to uncover how genome-wide
@@ -229,8 +228,8 @@ target cell type. TFImpute [@tag:Qin2017_onehot] predicts binding in new cell ty
 pairs, but the cell types must be in the training set for other TFs. This is a step in the right direction, but a more general domain transfer model across cell types would be more
 useful.
 
-Deep learning can also provide useful biological insights into TF
-binding. Lanchantin et al. [@tag:Lanchantin2016_motif] and Shrikumar et al.
+Deep learning can also illustrate TF
+binding preferences. Lanchantin et al. [@tag:Lanchantin2016_motif] and Shrikumar et al.
 [@tag:Shrikumar2017_learning] developed tools to visualize TF motifs learned
 from TFBS classification tasks. Alipanahi et al. [@tag:Alipanahi2015_predicting]
 also introduced mutation maps, where they could easily mutate, add, or delete
@@ -379,14 +378,10 @@ than TargetScan. Excitingly, these tools seem to show that RNNs can accurately
 align sequences and predict bulges, mismatches, and wobble base pairing without
 requiring the user to input secondary structure predictions or thermodynamic
 calculations.
-
 Further incremental advances in deep learning for miRNA and target
 prediction will likely be sufficient to meet the current needs of systems
 biologists and other researchers who use prediction tools mainly to nominate
-candidates that are then tested experimentally. Similar to other applications,
-the major contribution of deep learning will be to deliver deep insights into
-the biology of miRNA targeting as we learn to interrogate the hidden nodes
-within neural networks.
+candidates that are then tested experimentally.
 
 ### Protein secondary and tertiary structure
 
@@ -535,9 +530,7 @@ disease-specific phenotypes suitable for drug screening
 @doi:10.1083/jcb.201610026]. Deep learning would bring to these new kinds of
 experiments -- known as image-based profiling or morphological profiling -- a
 higher degree of accuracy, stemming from the freedom from human-tuned feature
-extraction strategies. Perhaps most excitingly, focused characterization of
-these higher-level features may lead to new and valuable biological
-insights.
+extraction strategies.
 
 ### Single-cell data
 
