@@ -100,10 +100,10 @@ gene. This remarkable complexity can lend itself to defects that underlie many
 diseases [@tag:Scotti2016_missplicing]. For instance, in Becker muscular
 dystrophy, a point mutation in dystrophin creates an exon splice silencer that
 induces skipping of exon 31. A recent study found that quantitative trait loci
-(QTLs) that affect splicing in lymphoblastoid cell lines are enriched within
-risk loci for schizophrenia, multiple sclerosis, and other immune diseases,
-implicating mis-splicing as a more widespread feature of human pathologies than
-previously thought [@tag:Li2016_variation].
+that affect splicing in lymphoblastoid cell lines are enriched within risk loci
+for schizophrenia, multiple sclerosis, and other immune diseases, implicating
+mis-splicing as a more widespread feature of human pathologies than previously
+thought [@tag:Li2016_variation].
 
 Sequencing studies routinely return thousands of unannotated variants, but which
 cause functional changes in splicing and how are those changes manifested?
@@ -131,7 +131,7 @@ study using readouts of splicing for millions of synthetic intronic sequences
 uncovered motifs that influence the strength of alternative splice sites
 [@tag:Rosenberg2015_synthetic_seqs]. The authors built a simple linear model
 using hexamer motif frequencies that successfully generalized to exon skipping.
-In a limited analysis using SNPs (single nucleotide polymorphisms) from three
+In a limited analysis using single nucleotide polymorphisms (SNPs) from three
 genes, it predicted exon skipping with three times the accuracy of an existing
 deep learning-based framework [@tag:Xiong2015_splicing_code]. This case is
 instructive in that clever sources of data, not just more descriptive models,
@@ -392,8 +392,8 @@ in PDB. Over the past several decades, many computational methods have been
 developed to predict aspects of protein structure such as secondary structure,
 torsion angles, solvent accessibility, inter-residue contact maps, disorder
 regions, and side-chain packing. In recent years, multiple deep learning
-architectures have been applied, including deep belief networks, LSTM (long
-short-term memory), CNNs, and deep convolutional neural fields (DeepCNF)
+architectures have been applied, including deep belief networks, LSTMs, CNNs,
+and deep convolutional neural fields (DeepCNFs)
 [@doi:10.1007/978-3-319-46227-1_1 @doi:10.1038/srep18962].
 
 Here we focus on deep learning methods for two representative sub-problems:
