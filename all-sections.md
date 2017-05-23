@@ -134,14 +134,14 @@ disease subtypes. In oncology, current "gold standard" approaches include
 histology, which requires interpretation by experts, or assessment of molecular
 markers such as cell surface receptors or gene expression. One example is the
 PAM50 approach to classifying breast cancer where the expression of 50 marker
-genes divides breast cancer patients into four subtypes. Significant
+genes divides breast cancer patients into four subtypes. Substantial
 heterogeneity still remains within these four subtypes
 [@lnK82Ey6; @pEIw87Mp]. Given the
 increasing wealth of molecular data available, a more comprehensive subtyping
 seems possible. Several studies have used deep learning methods to better
-categorize breast cancer patients: denoising autoencoders (DA), an unsupervised
+categorize breast cancer patients: denoising autoencoders, an unsupervised
 approach, can be used to cluster breast cancer patients
-[@PBiRSdXv], and convolutional neural networks (CNN) can
+[@PBiRSdXv], and convolutional neural networks (CNNs) can
 help count mitotic divisions, a feature that is highly correlated with disease
 outcome in histological images [@koEdZRcY]. Despite
 these recent advances, a number of challenges exist in this area of research,
@@ -470,12 +470,13 @@ representation of patients. The model was able to predict disease trajectories
 within one year with over 90% accuracy and patient-level predictions were
 improved by up to 15% when compared to other methods. Razavian et al.
 [@c6MfDdWP] used a set of 18 common lab tests to predict disease onset
-using both CNN and LSTM architectures and demonstrated an improvement over
-baseline regression models. However, numerous challenges including data
-integration (patient demographics, family history, laboratory tests, text-based
-patient records, image analysis, genomic data) and better handling of streaming
-temporal data with many features, will need to be overcome before we can fully
-assess the potential of deep learning for this application area.
+using both CNN and long short-term memory (LSTM) architectures and demonstrated
+an improvement over baseline regression models. However, numerous challenges
+including data integration (patient demographics, family history, laboratory
+tests, text-based patient records, image analysis, genomic data) and better
+handling of streaming temporal data with many features, will need to be overcome
+before we can fully assess the potential of deep learning for this application
+area.
 
 Still, recent work has also revealed domains in which deep networks have proven
 superior to traditional methods. Survival analysis models the time leading to an
@@ -740,7 +741,7 @@ understand. The algorithms described in this review and others like them may
 become highly accurate and useful for various purposes, including within medical
 practice. However, to discover and avoid discriminatory applications it will be
 important to consider interpretability alongside accuracy. A number of
-properties of genomic and health care data will make this difficult.
+properties of genomic and healthcare data will make this difficult.
 
 First, research samples are frequently non-representative of the general
 population of interest; they tend to be disproportionately sick
@@ -911,10 +912,10 @@ gene. This remarkable complexity can lend itself to defects that underlie many
 diseases [@QFK6GapR]. For instance, in Becker muscular
 dystrophy, a point mutation in dystrophin creates an exon splice silencer that
 induces skipping of exon 31. A recent study found that quantitative trait loci
-(QTLs) that affect splicing in lymphoblastoid cell lines are enriched within
-risk loci for schizophrenia, multiple sclerosis, and other immune diseases,
-implicating mis-splicing as a more widespread feature of human pathologies than
-previously thought [@b6p6wxpC].
+that affect splicing in lymphoblastoid cell lines are enriched within risk loci
+for schizophrenia, multiple sclerosis, and other immune diseases, implicating
+mis-splicing as a more widespread feature of human pathologies than previously
+thought [@b6p6wxpC].
 
 Sequencing studies routinely return thousands of unannotated variants, but which
 cause functional changes in splicing and how are those changes manifested?
@@ -942,7 +943,7 @@ study using readouts of splicing for millions of synthetic intronic sequences
 uncovered motifs that influence the strength of alternative splice sites
 [@mlqKTlZY]. The authors built a simple linear model
 using hexamer motif frequencies that successfully generalized to exon skipping.
-In a limited analysis using SNPs (single nucleotide polymorphisms) from three
+In a limited analysis using single nucleotide polymorphisms (SNPs) from three
 genes, it predicted exon skipping with three times the accuracy of an existing
 deep learning-based framework [@17sgPdcMT]. This case is
 instructive in that clever sources of data, not just more descriptive models,
@@ -989,7 +990,7 @@ predict transcription factor binding sites (TFBSs) on a DNA sequence,
 researchers initially used consensus sequences and position weight matrices to
 match against a test sequence [@ywDQIvZJ]. Simple neural network
 classifiers were then proposed to differentiate positive and negative binding
-sites but did not show significant improvements over the weight matrix matching
+sites but did not show meaningful improvements over the weight matrix matching
 methods [@uZvDdFZo]. Later, support vector machines (SVMs)
 outperformed the generative methods by using k-mer features
 [@JxuQvvyk; @138dgb9Ca], but string kernel-based SVM
@@ -1201,8 +1202,8 @@ in PDB. Over the past several decades, many computational methods have been
 developed to predict aspects of protein structure such as secondary structure,
 torsion angles, solvent accessibility, inter-residue contact maps, disorder
 regions, and side-chain packing. In recent years, multiple deep learning
-architectures have been applied, including deep belief networks, LSTM (long
-short-term memory), CNNs, and deep convolutional neural fields (DeepCNF)
+architectures have been applied, including deep belief networks, LSTMs, CNNs,
+and deep convolutional neural fields (DeepCNFs)
 [@pNoAbBEu; @UO8L6nd].
 
 Here we focus on deep learning methods for two representative sub-problems:
@@ -1212,7 +1213,7 @@ information on all residue-residue contacts. Secondary structure prediction is a
 basic problem and an almost essential module of any protein structure prediction
 package. Contact prediction is much more challenging than secondary structure
 prediction, but it has a much larger impact on tertiary structure prediction. In
-recent years, the accuracy of contact prediction has significantly improved
+recent years, the accuracy of contact prediction has greatly improved
 [@BhfjKSY3; @7atXz0r; @kboAopkh; @10dNuD89l].
 
 Protein secondary structure can exhibit three different states (alpha helix,
@@ -1225,15 +1226,16 @@ improvement over the *de facto* standard method PSIPRED
 networks. In 2014, Zhou and Troyanskaya demonstrated that they could improve Q8
 accuracy by using a deep supervised and convolutional generative stochastic
 network [@8t43CQ9m]. In 2016 Wang et al. developed a DeepCNF model that
-significantly improved Q3 and Q8 accuracy as well as prediction of solvent
-accessibility and disorder regions [@UO8L6nd; @pNoAbBEu]. DeepCNF achieved a higher Q3 accuracy than
-the standard maintained by PSIPRED for more than 10 years. This improvement may
-be mainly due to the ability of convolutional neural fields to capture
-long-range sequential information, which is important for beta strand
-prediction. Nevertheless, the improvements in secondary structure prediction
-from DeepCNF are unlikely to result in a commensurate improvement in tertiary
-structure prediction since secondary structure mainly reflects coarse-grained
-local conformation of a protein structure.
+improved Q3 and Q8 accuracy as well as prediction of solvent accessibility and
+disorder regions [@UO8L6nd; @pNoAbBEu].
+DeepCNF achieved a higher Q3 accuracy than the standard maintained by PSIPRED
+for more than 10 years. This improvement may be mainly due to the ability of
+convolutional neural fields to capture long-range sequential information, which
+is important for beta strand prediction. Nevertheless, the improvements in
+secondary structure prediction from DeepCNF are unlikely to result in a
+commensurate improvement in tertiary structure prediction since secondary
+structure mainly reflects coarse-grained local conformation of a protein
+structure.
 
 Protein contact prediction and contact-assisted folding (i.e. folding proteins
 using predicted contacts as restraints) represents a promising new direction for
@@ -2382,8 +2384,9 @@ level of all genes with a single neural network, but due to memory restrictions
 they randomly partitioned genes into two separately analyzed halves. In other
 cases, researchers limited the size of their neural network
 [@BhfjKSY3] or the total number of training instances
-[@2dU8f4XJ]. Some have also chosen to use CPU implementations
-rather than sacrifice network size or performance [@x0M6vals].
+[@2dU8f4XJ]. Some have also chosen to use standard central
+processing unit (CPU) implementations rather than sacrifice network size or
+performance [@x0M6vals].
 
 While steady improvements in GPU hardware may alleviate this issue, it is
 unclear whether advances will occur quickly enough to keep pace with the growing
@@ -2414,7 +2417,7 @@ Cloud computing, which has already seen wide adoption in genomics
 [@B6g0qKf4], could facilitate easier sharing of the large
 datasets common to biology [@1E7bFCRV4; @q0SsFrZd], and
 may be key to scaling deep learning. Cloud computing affords researchers
-flexibility, and enables the use of specialized hardware (e.g., FPGAs, ASICs,
+flexibility, and enables the use of specialized hardware (e.g. FPGAs, ASICs,
 GPUs) without major investment. As such, it could be easier to address the
 different challenges associated with the multitudinous layers and architectures
 available [@ZSVsnPVO]. Though many are reluctant to store
@@ -2547,17 +2550,16 @@ drug-like compounds for specific targets [@8LWFFeYg; @1EayJRsI].
 Related to transfer learning, multimodal learning assumes simultaneous learning
 from various types of inputs, such as images and text. It can capture features
 that describe common concepts across input modalities. Generative graphical
-models like RBMs and their stacked versions, deep Boltzmann machines, and DBNs,
-demonstrate successful extraction of more informative features for one modality
-(images or video) when jointly learned with other modalities (audio or text)
-[@1eN66lwn]. Deep graphical models such as DBNs are considered to be
-well-suited for multimodal learning tasks because they learn a joint probability
-distribution from inputs. They can be pre-trained in an unsupervised fashion on
-large unlabeled data and then fine-tuned on a smaller number of labeled
-examples. When labels are available, convolutional neural networks are
-ubiquitously used because they can be trained end-to-end with backpropagation
-and demonstrate state-of-the-art performance in many discriminative tasks
-[@irSe12Sm].
+models like RBMs, deep Boltzmann machines, and DBNs, demonstrate successful
+extraction of more informative features for one modality (images or video) when
+jointly learned with other modalities (audio or text) [@1eN66lwn]. Deep
+graphical models such as DBNs are considered to be well-suited for multimodal
+learning tasks because they learn a joint probability distribution from inputs.
+They can be pre-trained in an unsupervised fashion on large unlabeled data and
+then fine-tuned on a smaller number of labeled examples. When labels are
+available, convolutional neural networks are ubiquitously used because they can
+be trained end-to-end with backpropagation and demonstrate state-of-the-art
+performance in many discriminative tasks [@irSe12Sm].
 
 Jha et al. [@N0HBi8MH] showed that integrated training
 delivered better performance than individual networks. They compared a number of
