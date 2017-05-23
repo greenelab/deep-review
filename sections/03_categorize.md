@@ -419,29 +419,35 @@ costly practice of manual annotation.
 To construct the types of very large datasets that deep learning methods thrive
 on, we need robust sharing of large collections of data. This is in part a
 cultural challenge. We touch on this challenge in the Discussion section. Beyond
-the cultural hurdles around data sharing, there are also technological hurdles
-related to sharing individual health records or deep models built from such
-records. This subsection deals primarily with these challenges.
+the cultural hurdles around data sharing, there are also technological and legal
+hurdles related to sharing individual health records or deep models built from
+such records. This subsection deals primarily with these challenges.
 
 EHRs are designed chiefly for clinical, administrative and financial purposes,
 such as patient care, insurance and  billing [@doi:10.1038/nrg3208]. Science is
 at best a tertiary priority, presenting challenges to EHR-based research in
-general and to deep learning research in particular. These difficulties can be
-grouped into three areas: local bias, wider standards, and legal issues. Note
-these problems are not restricted to EHRs but can also apply to any large
-biomedical dataset, e.g. clinical trial data.
+general and to deep learning research in particular. Although there is
+significant work in the literature around EHR data quality and the impact on
+research [@doi:10.1136/amiajnl-2011-000681], we focus on three types of
+challenges: local bias, wider standards, and legal issues. Note these problems
+are not restricted to EHRs but can also apply to any large biomedical dataset,
+e.g. clinical trial data.
 
 Even within the same healthcare system, EHRs can be used differently
-[@pmid:24159271 @pmid:21347133]. Individual users have unique usage patterns,
-with different departments and different hospitals having different priorities
-that code patients and introduce missing data in a non-random fashion
-[@doi:10.1016/S0168-8510(02)00208-7]. Patient data may be kept across several
-"silos" within a single health system. Even the most basic task of matching
+[@pmid:24159271 @pmid:21347133]. Individual users have unique documentation and
+ordering patterns, with different departments and different hospitals having
+different priorities that code patients and introduce missing data in a
+non-random fashion [@doi:10.1016/S0168-8510(02)00208-7]. Patient data may be
+kept across several "silos" within a single health system (e.g. separate
+nursing documentation, registries, etc.). Even the most basic task of matching
 patients across systems can be challenging due to data entry issues
 [@pmid:27134610]. The situation is further exacerbated by the ongoing
 introduction, evolution, and migration of EHR systems, especially where
-reorganized and acquired healthcare facilities have to merge. As a result, EHR
-data can be less complete and less objective than expected.
+reorganized and acquired healthcare facilities have to merge. Further, even the
+ostensibly least-biased data type, laboratory measurements, can be biased based
+by both the healthcare process and patient health state
+[@doi:10.1016/j.jbi.2014.03.016]. As a result, EHR data can be less complete and
+less objective than expected.
 
 In the wider picture, standards for EHRs are numerous and evolving. Proprietary
 systems, indifferent and scattered use of health information standards, and
@@ -459,22 +465,28 @@ preventing the detection of weak effects
 parameters that can be trained in a model. Further, rules-based algorithms have
 been popular in EHR-based research, but because these are developed at a single
 institution and trained with a specific patient population, they do not transfer
-easily to other populations [@doi:10.1136/amiajnl-2013-001935]. For example,
-Wiley et al. [@doi:10.1142/9789813207813_0050] showed that warfarin dosing
-algorithms often under-perform in African Americans, illustrating that some of
-these issues are unresolved even at a treatment best practices level. Lack of
-standardization also makes it challenging for investigators skilled in deep
-learning to enter the field, as numerous data processing steps must be performed
-before algorithms are applied.
+easily to other healthcare systems [@doi:10.1136/amiajnl-2013-001935]. Genetic
+studies using EHR data are subject to even more bias, as the differences in
+population ancestry across health centers (e.g. proportion of patients with
+African or Asian ancestry) can affect algorithm performance. For example, Wiley
+et al. [@doi:10.1142/9789813207813_0050] showed that warfarin dosing algorithms
+often under-perform in African Americans, illustrating that some of these issues
+are unresolved even at a treatment best practices level. Lack of standardization
+also makes it challenging for investigators skilled in deep learning to enter
+the field, as numerous data processing steps must be performed before algorithms
+are applied.
 
 Finally, even if data were perfectly consistent and compatible across systems,
 attempts to share and combine EHR data face considerable legal and ethical
 barriers. Patient privacy can severely restrict the sharing and use of EHR
 [@doi:10.1093/ije/dyn022]. Here again, standards are heterogeneous and evolving,
 but often EHR data can often not be exported or even accessed directly for
-research purposes without appropriate consent. Once again, this has the effect
-of making data gathering more laborious and expensive, reducing sample size and
-study power.
+research purposes without appropriate consent. In the United States, research
+use of EHR data is subject both to the Common Rule and the Health Insurance
+Portability and Accountability Act (HIPPA). Ambiguity in the regulatory language
+and individual interpretation of these rules can hamper use of EHR data
+[@doi:10.1093/jamia/ocv111].  Once again, this has the effect of making data
+gathering more laborious and expensive, reducing sample size and study power.
 
 Several technological solutions have been proposed in this direction, allowing
 access to sensitive data satisfying privacy and legal concerns. Software like
