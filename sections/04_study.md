@@ -1,5 +1,4 @@
-## Deep learning to study the fundamental biological processes underlying human
-## disease
+## Deep learning to study the fundamental biological processes underlying human disease
 
 The study of cellular structure and core biological processes -- transcription,
 translation, signaling, metabolism, etc. -- in humans and model organisms will
