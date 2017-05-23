@@ -292,14 +292,14 @@ approaches by a large margin.  The neural fingerprints
 traditional circular fingerprints on a drug efficacy prediction task but were
 superior for predicting solubility or photovoltaic efficiency.  In the original
 study, graph convolutions [@tag:Kearnes2016_graph_conv] performed comparably to
-a multitask network using standard fingerprints and slightly better than the
+a multi-task network using standard fingerprints and slightly better than the
 neural fingerprints [@tag:Duvenaud2015_graph_conv] on the drug efficacy task but
 were slightly worse than the influence-relevance voter method on an HIV dataset.
 [@tag:Swamidass2009_irv].  Broader recent benchmarking has shown that relative
 merits of these methods depends on the dataset and cross validation strategy
-[@tag:Wu2017_molecule_net], though evaluation often uses AUC ROC, which has
-limited utility due to the large active/inactive class imbalance (see
-Discussion).
+[@tag:Wu2017_molecule_net], though evaluation often uses auROC (area under the
+receiver operating characteristic curve), which has limited utility due to the
+large active/inactive class imbalance (see Discussion).
 
 We remain optimistic for the potential of deep learning and specifically
 representation learning in drug discovery and propose that rigorous benchmarking

@@ -35,23 +35,24 @@ not be as critical if the downstream models can satisfy their evaluation
 criteria.  An FDR of 50% in this context may suffice.
 
 What is the correspondence between these metrics and commonly used
-classification metrics such as auPRC and auROC? auPRC evaluates the average
-precision, or equivalently, the average FDR across all recall thresholds. This
-metric provides an overall estimate of performance across all possible use
-cases, which can be misleading for targeted validation experiments. For example,
-classification of TF binding sites can exhibit a recall of 0% at 10% FDR and
-auPRC greater than 0.6. In this case, the auPRC may be competitive, but the
-predictions are ill-suited for targeted validation that can only examine a few
-of the highest-confidence predictions. Likewise, auROC evaluates the average
-recall across all false positive rate (FPR) thresholds, which is often a highly
-misleading metric in class-imbalanced domains [@doi:10.1145/1143844.1143874
-@doi:10.1038/nmeth.3945]. For example, consider a classification model with
-recall of 0% at FDR less than 25% and 100% recall at FDR greater than 25%. In
-the context of TF binding predictions where only 1% of genomic regions are bound
-by the TF, this is equivalent to a recall of 100% for FPR greater than 0.33%. In
-other words, the auROC would be 0.9967, but the classifier would be useless for
-targeted validation. It is not unusual to obtain a chromosome-wide auROC greater
-than 0.99 for TF binding predictions but a recall of 0% at 10% FDR.
+classification metrics such as auPRC (area under the precision-recall curve) and
+auROC? auPRC evaluates the average precision, or equivalently, the average FDR
+across all recall thresholds. This metric provides an overall estimate of
+performance across all possible use cases, which can be misleading for targeted
+validation experiments. For example, classification of TF binding sites can
+exhibit a recall of 0% at 10% FDR and auPRC greater than 0.6. In this case, the
+auPRC may be competitive, but the predictions are ill-suited for targeted
+validation that can only examine a few of the highest-confidence predictions.
+Likewise, auROC evaluates the average recall across all false positive rate
+(FPR) thresholds, which is often a highly misleading metric in class-imbalanced
+domains [@doi:10.1145/1143844.1143874 @doi:10.1038/nmeth.3945]. For example,
+consider a classification model with recall of 0% at FDR less than 25% and 100%
+recall at FDR greater than 25%. In the context of TF binding predictions where
+only 1% of genomic regions are bound by the TF, this is equivalent to a recall
+of 100% for FPR greater than 0.33%. In other words, the auROC would be 0.9967,
+but the classifier would be useless for targeted validation. It is not unusual
+to obtain a chromosome-wide auROC greater than 0.99 for TF binding predictions
+but a recall of 0% at 10% FDR.
 
 #### Formulation of classification labels
 
