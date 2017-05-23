@@ -1,4 +1,4 @@
-# Deep Learning, Genomics, and Precision Medicine
+# Opportunities and obstacles for deep learning in biology and medicine
 
 [![Code Climate](https://codeclimate.com/github/greenelab/deep-review/badges/gpa.svg)](https://codeclimate.com/github/greenelab/deep-review)
 
