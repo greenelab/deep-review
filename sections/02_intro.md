@@ -34,17 +34,14 @@ Like a clustering algorithm it can build features that describe recurrent
 patterns in data. Like a regression approach deep learning methods can predict
 some output. However, deep learning methods combine both of these steps. When
 sufficient data are available, these methods construct features tuned to a
-specific problem and combine those features into a predictor.
-
-These methods are powered by improvements to artificial neural networks, an idea
-that was first proposed in 1943 [@doi:10.1007/BF02478259] as a model for how our
-brains process information. Since then, interest in neural networks as
-computational models has waxed and waned over time. This history is interesting
-in its own right [@doi:10.1103/RevModPhys.34.135]. In recent years, attention
-has shifted back to neural networks as hardware improvements have allowed the
-techniques that have come to be known as deep learning to surpass other machine
-learning algorithms. `TODO: add what is/isn't deep learning to this paragraph?
-Revise paragraph to also fix lengthy closing sentence. Issue #421`
+specific problem and combine those features into a predictor. These methods are
+powered by improvements to artificial neural networks, an idea that was first
+proposed in 1943 [@doi:10.1007/BF02478259] as a model for how our brains process
+information. Since then, interest in neural networks as computational models has
+waxed and waned over time. This history is interesting in its own right
+[@doi:10.1103/RevModPhys.34.135]. Recently, hardware improvements and very large
+training datasets have allowed these deep learning techniques to surpass other
+machine learning algorithms for many problems.
 
 Neural networks are most widely associated with supervised machine learning,
 where the goal is to accurately predict one or more labels associated with each
