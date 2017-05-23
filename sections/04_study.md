@@ -125,7 +125,7 @@ potentially illuminate important aspects of splicing behavior. For instance,
 tissue-specific splicing mechanisms could be inferred by training networks on
 splicing data from different tissues, then searching for common versus
 distinctive hidden nodes, a technique employed by Qin et al. for tissue-specific
-TF binding predictions [@tag:Qin2017_onehot].
+transcription factor (TF) binding predictions [@tag:Qin2017_onehot].
 
 A parallel effort has been to use more data with simpler models. An exhaustive
 study using readouts of splicing for millions of synthetic intronic sequences
@@ -159,7 +159,7 @@ integrate diverse data sources will be required.
 
 ### Transcription factors and RNA-binding proteins
 
-Transcription factors (TFs) and RNA-binding proteins are key components in gene
+Transcription factors and RNA-binding proteins are key components in gene
 regulation and higher-level biological processes. TFs are regulatory proteins
 that bind to certain genomic loci and control the rate of mRNA production. While
 high-throughput sequencing techniques such as chromatin immunoprecipitation and
@@ -194,14 +194,14 @@ introduced several new convolutional and recurrent neural network models that
 further improved TFBS predictive accuracy. Due to the motif-driven nature of the
 TFBS task, most architectures have been convolution-based
 [@tag:Zeng2016_convolutional]. While many models for TFBS prediction resemble
-computer vision and natural language processing (NLP) tasks, it is important to
-note that DNA sequence tasks are fundamentally different. Thus the models should
-be adapted from traditional deep learning models in order to account for such
-differences. For example, motifs may appear in either strand of a DNA sequence,
-resulting in two different forms of the motif (forward and reverse complement)
-due to complementary base pairing. To handle this issue, specialized reverse
-complement convolutional models share parameters to find motifs in both
-directions [@tag:Shrikumar2017_reversecomplement].
+computer vision and NLP tasks, it is important to note that DNA sequence tasks
+are fundamentally different. Thus the models should be adapted from traditional
+deep learning models in order to account for such differences. For example,
+motifs may appear in either strand of a DNA sequence, resulting in two different
+forms of the motif (forward and reverse complement) due to complementary base
+pairing. To handle this issue, specialized reverse complement convolutional
+models share parameters to find motifs in both directions
+[@tag:Shrikumar2017_reversecomplement].
 
 Despite these advances, several challenges remain. First, because the inputs
 (ChIP-seq measurements) are continuous and most current algorithms are designed
@@ -602,21 +602,21 @@ whole-genome shotgun DNA -- from microbial communities, has revolutionized the
 study of micro-scale ecosystems within and around us. In recent years, machine
 learning has proved to be a powerful tool for metagenomic analysis. 16S rRNA has
 long been used to deconvolve mixtures of microbial genomes, yet this ignores
->99% of the genomic content. Subsequent tools aimed to classify 300-3000 base
-pair reads from complex mixtures of microbial genomes based on tetranucleotide
-frequencies, which differ across organisms [@tag:Karlin], using supervised
-[@tag:McHardy @tag:nbc] or unsupervised methods [@tag:Abe]. Then, researchers
-began to use techniques that could estimate relative abundances from an entire
-sample faster than classifying individual reads [@tag:Metaphlan @tag:wgsquikr
-@tag:lmat @tag:Vervier]. There is also great interest in identifying and
-annotating sequence reads [@tag:yok @tag:Soueidan]. However, the focus on
-taxonomic and functional annotation is just the first step. Several groups have
-proposed methods to determine host or environment phenotypes from the organisms
-that are identified [@tag:Guetterman @tag:Knights @tag:Stratnikov @tag:Segata]
-or overall sequence composition [@tag:Ding]. Also, researchers have looked into
-how feature selection can improve classification [@tag:Liu @tag:Segata], and
-techniques have been proposed that are classifier-independent [@tag:Ditzler
-@tag:Ditzler2].
+more than 99% of the genomic content. Subsequent tools aimed to classify
+300-3000 base pair reads from complex mixtures of microbial genomes based on
+tetranucleotide frequencies, which differ across organisms [@tag:Karlin], using
+supervised [@tag:McHardy @tag:nbc] or unsupervised methods [@tag:Abe]. Then,
+researchers began to use techniques that could estimate relative abundances from
+an entire sample faster than classifying individual reads [@tag:Metaphlan
+@tag:wgsquikr @tag:lmat @tag:Vervier]. There is also great interest in
+identifying and annotating sequence reads [@tag:yok @tag:Soueidan]. However, the
+focus on taxonomic and functional annotation is just the first step. Several
+groups have proposed methods to determine host or environment phenotypes from
+the organisms that are identified [@tag:Guetterman @tag:Knights @tag:Stratnikov
+@tag:Segata] or overall sequence composition [@tag:Ding]. Also, researchers have
+looked into how feature selection can improve classification [@tag:Liu
+@tag:Segata], and techniques have been proposed that are classifier-independent
+[@tag:Ditzler @tag:Ditzler2].
 
 How have neural networks been of use? Most neural networks are being used for
 phylogenetic classification or functional annotation from sequence data where
@@ -630,27 +630,26 @@ identification [@tag:Hochreiter @tag:Sonderby].
 
 One of the first techniques of *de novo* genome binning used self-organizing
 maps, a type of neural network [@tag:Abe]. Essinger et al.
-[@tag:Essinger2010_taxonomic] used Adaptive Resonance Theory (ART) to cluster
-similar genomic fragments and showed that it had better performance than
-k-means. However, other methods based on interpolated Markov models
-[@tag:Salzberg] have performed better than these early genome binners. Neural
-networks can be slow and therefore have had limited use for reference-based
-taxonomic classification, with TAC-ELM [@tag:TAC-ELM] being the only neural
-network-based algorithm to taxonomically classify massive amounts of metagenomic
-data. An initial study successfully applied neural networks to taxonomic
-classification of 16S rRNA genes, with convolutional networks providing about
-10% accuracy genus-level improvement over RNNs and random forests [@tag:Mrzelj].
-However, this study evaluated only 3000 sequences.
+[@tag:Essinger2010_taxonomic] used Adaptive Resonance Theory to cluster similar
+genomic fragments and showed that it had better performance than k-means.
+However, other methods based on interpolated Markov models [@tag:Salzberg] have
+performed better than these early genome binners. Neural networks can be slow
+and therefore have had limited use for reference-based taxonomic classification,
+with TAC-ELM [@tag:TAC-ELM] being the only neural network-based algorithm to
+taxonomically classify massive amounts of metagenomic data. An initial study
+successfully applied neural networks to taxonomic classification of 16S rRNA
+genes, with convolutional networks providing about 10% accuracy genus-level
+improvement over RNNs and random forests [@tag:Mrzelj]. However, this study
+evaluated only 3000 sequences.
 
 Neural network uses for classifying phenotype from microbial composition are
 just beginning. A standard multi-layer perceptron (MLP) was able to classify
 wound severity from microbial species present in the wound
 [@doi:10.1016/j.bjid.2015.08.013]. Recently, Ditzler et al. associated soil
-samples with pH level using MLPs, deep-belief networks (DBNs), and recurrant
-neural networks (RNNs) [@tag:Ditzler3]. Besides classifying samples
-appropriately, internal phylogenetic tree nodes inferred by the networks
-represented features for low and high pH. Thus, hidden nodes might provide
-biological insight as well as new features for future metagenomic sample
+samples with pH level using MLPs, DBNs, and RNNs [@tag:Ditzler3]. Besides
+classifying samples appropriately, internal phylogenetic tree nodes inferred by
+the networks represented features for low and high pH. Thus, hidden nodes might
+provide biological insight as well as new features for future metagenomic sample
 comparison. Also, an initial study has shown promise of these networks for
 diagnosing disease [@tag:Faruqi].
 

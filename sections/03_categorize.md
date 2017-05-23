@@ -191,7 +191,7 @@ However, it is both costly and time-consuming to annotate a large-scale
 fully-labeled corpus to facilitate data-intensive deep learning models. As an
 alternative, Wang et al. [@arxiv:1705.02315] proposed to use weakly labeled
 images. To generate weak labels for X-ray images, they applied a series of
-Natural Language Processing (NLP) techniques to the associated chest X-ray
+natural language processing (NLP) techniques to the associated chest X-ray
 radiological reports. Specifically, they first extracted all diseases mentioned
 in the reports using a state-of-the-art NLP tool, then applied a newly-developed
 negation and uncertainty detection tool (NegBio) to filter negative and
@@ -617,10 +617,9 @@ events can provide insight into a patient's disease and treatment
 discrete combinatorial bucketing. Lasko et al.
 [@doi:10.1371/journal.pone.0066341] used autoencoders on longitudinal sequences
 of serum urine acid measurements to identify population subtypes. More recently,
-deep learning has shown promise working with both sequences (Convolutional
-Neural Networks) [@arxiv:1607.07519] and the incorporation of past and current
-state (Recurrent Neural Networks, Long Short Term Memory Networks)
-[@arxiv:1602.00357]. This may be a particular area of opportunity for deep
-neural networks. The ability to recognize relevant sequences of events from a
-large number of trajectories requires powerful and flexible feature construction
-methods -- an area in which deep neural networks excel.
+deep learning has shown promise working with both sequences (CNNs)
+[@arxiv:1607.07519] and the incorporation of past and current state (RNNs,
+LSTMs) [@arxiv:1602.00357]. This may be a particular area of opportunity for
+deep neural networks. The ability to recognize relevant sequences of events from
+a large number of trajectories requires powerful and flexible feature
+construction methods -- an area in which deep neural networks excel.

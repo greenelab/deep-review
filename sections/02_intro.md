@@ -120,7 +120,7 @@ help count mitotic divisions, a feature that is highly correlated with disease
 outcome in histological images [@doi:10.1007/978-3-642-40763-5_51]. Despite
 these recent advances, a number of challenges exist in this area of research,
 most notably the integration of molecular and imaging data with other disparate
-types of data such as electronic health records (EHR).
+types of data such as electronic health records (EHRs).
 
 #### Fundamental biological study
 
@@ -128,7 +128,7 @@ Deep learning can be applied to answer more fundamental biological questions; it
 is especially suited to leveraging large amounts of data from high-throughput
 "omics" studies. One classic biological problem where machine learning, and now
 deep learning, has been extensively applied is molecular target prediction. For
-example, deep recurrent neural networks (RNN) have been used to predict gene
+example, deep recurrent neural networks (RNNs) have been used to predict gene
 targets of microRNAs [@doi:10.1109/icnn.1994.374637], and CNNs have been applied
 to predict protein residue-residue contacts and secondary structure
 [@doi:10.1371/journal.pcbi.1005324 @doi:10.1109/tcbb.2014.2343960

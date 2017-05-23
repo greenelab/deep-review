@@ -587,17 +587,17 @@ drug-like compounds for specific targets [@tag:Segler2017_drug_design
 Related to transfer learning, multimodal learning assumes simultaneous learning
 from various types of inputs, such as images and text. It can capture features
 that describe common concepts across input modalities. Generative graphical
-models like RBMs and their stacked versions, deep Boltzmann machines (DBM), and
-deep belief networks (DBN), demonstrate successful extraction of more
-informative features for one modality (images or video) when jointly learned
-with other modalities (audio or text) [@tag:Ngiam2011]. Deep graphical models
-such as DBNs are considered to be well-suited for multimodal learning tasks
-because they learn a joint probability distribution from inputs. They can be
-pre-trained in an unsupervised fashion on large unlabeled data and then
-fine-tuned on a smaller number of labeled examples. When labels are available,
-convolutional neural networks are ubiquitously used because they can be trained
-end-to-end with backpropagation and demonstrate state-of-the-art performance in
-many discriminative tasks [@tag:Angermueller2016_dl_review].
+models like RBMs and their stacked versions, deep Boltzmann machines, and DBNs,
+demonstrate successful extraction of more informative features for one modality
+(images or video) when jointly learned with other modalities (audio or text)
+[@tag:Ngiam2011]. Deep graphical models such as DBNs are considered to be
+well-suited for multimodal learning tasks because they learn a joint probability
+distribution from inputs. They can be pre-trained in an unsupervised fashion on
+large unlabeled data and then fine-tuned on a smaller number of labeled
+examples. When labels are available, convolutional neural networks are
+ubiquitously used because they can be trained end-to-end with backpropagation
+and demonstrate state-of-the-art performance in many discriminative tasks
+[@tag:Angermueller2016_dl_review].
 
 Jha et al. [@tag:Jha2017_integrative_models] showed that integrated training
 delivered better performance than individual networks. They compared a number of
@@ -609,21 +609,21 @@ al. [@tag:Chaudhary2017_multiom_liver_cancer] trained a deep autoencoder model
 jointly on RNA-seq, miRNA-seq, and methylation data from The Cancer Genome Atlas
 to predict survival subgroups of hepatocellular carcinoma patients. This
 multimodal approach that treated different omic data types as different
-modalities outperformed both traditional methods (PCA) and single-omic models.
-Interestingly, multi-omic model performance did not improve when combined with
-clinical information, suggesting that the model was able to capture redundant
-contributions of clinical features through their correlated genomic features.
-Chen et al. [@tag:Chen2015_trans_species] used deep belief networks to learn
-phosphorylation states of a common set of signaling proteins in primary cultured
-bronchial cells collected from rats and humans treated with distinct stimuli. By
-interpreting species as different modalities representing similar high-level
-concepts, they showed that DBNs were able to capture cross-species
-representation of signaling mechanisms in response to a common stimuli. Another
-application used DBNs for joint unsupervised feature learning from cancer
-datasets containing gene expression, DNA methylation, and miRNA expression data
-[@tag:Liang2015_exprs_cancer]. This approach allowed for the capture of
-intrinsic relationships in different modalities and for better clustering
-performance over conventional k-means.
+modalities outperformed both traditional methods (principal component analysis)
+and single-omic models. Interestingly, multi-omic model performance did not
+improve when combined with clinical information, suggesting that the model was
+able to capture redundant contributions of clinical features through their
+correlated genomic features. Chen et al. [@tag:Chen2015_trans_species] used deep
+belief networks to learn phosphorylation states of a common set of signaling
+proteins in primary cultured bronchial cells collected from rats and humans
+treated with distinct stimuli. By interpreting species as different modalities
+representing similar high-level concepts, they showed that DBNs were able to
+capture cross-species representation of signaling mechanisms in response to a
+common stimuli. Another application used DBNs for joint unsupervised feature
+learning from cancer datasets containing gene expression, DNA methylation, and
+miRNA expression data [@tag:Liang2015_exprs_cancer]. This approach allowed for
+the capture of intrinsic relationships in different modalities and for better
+clustering performance over conventional k-means.
 
 Multimodal learning with CNNs is usually implemented as a collection of
 individual networks in which each learns representations from single data type.

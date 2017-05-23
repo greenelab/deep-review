@@ -65,20 +65,20 @@ Discussion).
 
 A common application for deep learning in this domain is the temporal structure
 of healthcare records. Many studies [@tag:Lipton2016_missing @tag:Che2016_rnn
-@tag:Huddar2016_predicting @tag:Lipton2015_lstm] have used deep recurrent
-networks to categorize patients, but most stop short of suggesting clinical
-decisions. Nemati et al. [@tag:Nemati2016_rl] used deep reinforcement learning
-to optimize a heparin dosing policy for intensive care patients. However,
-because the ideal dosing policy is unknown, the model's predictions must be
-evaluated on counter-factual data. This represents a common challenge when
-bridging the gap between research and clinical practice.  Because the
-ground-truth is unknown, researchers struggle to evaluate model predictions in
-the absence of interventional data, but clinical application is unlikely until
-the model has been shown to be effective. The impressive applications of deep
-reinforcement learning to other domains [@tag:Silver2016_alphago] have relied on
-knowledge of the underlying processes (e.g. the rules of the game). Some models
-have been developed for targeted medical problems [@tag:Gultepe2014_sepsis], but
-a generalized engine is beyond current capabilities.
+@tag:Huddar2016_predicting @tag:Lipton2015_lstm] have used RNNs to categorize
+patients, but most stop short of suggesting clinical decisions. Nemati et al.
+[@tag:Nemati2016_rl] used deep reinforcement learning to optimize a heparin
+dosing policy for intensive care patients. However, because the ideal dosing
+policy is unknown, the model's predictions must be evaluated on counter-factual
+data. This represents a common challenge when bridging the gap between research
+and clinical practice.  Because the ground-truth is unknown, researchers
+struggle to evaluate model predictions in the absence of interventional data,
+but clinical application is unlikely until the model has been shown to be
+effective. The impressive applications of deep reinforcement learning to other
+domains [@tag:Silver2016_alphago] have relied on knowledge of the underlying
+processes (e.g. the rules of the game). Some models have been developed for
+targeted medical problems [@tag:Gultepe2014_sepsis], but a generalized engine is
+beyond current capabilities.
 
 #### Clinical trials efficiency
 
@@ -122,8 +122,8 @@ using both cell line and drug features, opening the door to precision medicine
 and drug repositioning opportunities in cancer. More recently, Aliper et al.
 [@doi:10.1021/acs.molpharmaceut.6b00248] used gene- and pathway-level drug
 perturbation transcriptional profiles from the Library of Network-Based Cellular
-Signatures (LINCS) [@doi:10.3389/fgene.2014.00342] to train a fully connected
-deep neural network to predict drug therapeutic uses and indications. By using
+Signatures [@doi:10.3389/fgene.2014.00342] to train a fully connected deep
+neural network to predict drug therapeutic uses and indications. By using
 confusion matrices and leveraging misclassification, the authors formulated a
 number of interesting hypotheses, including repurposing cardiovascular drugs
 such as otenzepad and pinacidil for neurological disorders.
@@ -138,9 +138,8 @@ Wang et al. [@doi:10.1093/bioinformatics/btt234] trained individual RBMs for
 each target in a drug-target interaction network and used these models to
 predict novel interactions pointing to new indications for existing drugs. Wen
 et al. [@doi:10.1021/acs.jproteome.6b00618] extended this concept to deep
-learning by creating a DBN of stacked RBMs called DeepDTIs, which is able to
-predict interactions on the basis of chemical structure and protein sequence
-features.
+learning by creating a DBN called DeepDTIs, which is able to predict
+interactions on the basis of chemical structure and protein sequence features.
 
 Drug repositioning appears to be an obvious candidate for deep learning both
 because of the large amount of high-dimensional data available and the
@@ -198,11 +197,11 @@ Merck Molecular Activity Challenge on Kaggle generated substantial excitement
 about the potential for high-parameter deep learning approaches.  The winning
 submission was an ensemble that included a multi-task multi-layer perceptron
 network [@tag:Dahl2014_multi_qsar].  The sponsors noted drastic improvements
-over a random forest (RF) baseline, remarking "we have seldom seen any method in
-the past 10 years that could consistently outperform RF by such a margin"
-[@tag:Ma2015_qsar_merck]. Subsequent work (reviewed in more detail by Goh et al.
-[@doi:10.1002/jcc.24764]) explored the effects of jointly modeling far more
-targets than the Merck challenge [@tag:Unterthiner2014_screening
+over a random forest baseline, remarking "we have seldom seen any method in the
+past 10 years that could consistently outperform [random forest] by such a
+margin" [@tag:Ma2015_qsar_merck]. Subsequent work (reviewed in more detail by
+Goh et al. [@doi:10.1002/jcc.24764]) explored the effects of jointly modeling
+far more targets than the Merck challenge [@tag:Unterthiner2014_screening
 @tag:Ramsundar2015_multitask_drug], with Ramsundar et al.
 [@tag:Ramsundar2015_multitask_drug] showing that the benefits of multi-task
 networks had not yet saturated even with 259 targets.  Although DeepTox
