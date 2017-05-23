@@ -416,8 +416,9 @@ level of all genes with a single neural network, but due to memory restrictions
 they randomly partitioned genes into two separately analyzed halves. In other
 cases, researchers limited the size of their neural network
 [@tag:Wang2016_protein_contact] or the total number of training instances
-[@tag:Gomezb2016_automatic]. Some have also chosen to use CPU implementations
-rather than sacrifice network size or performance [@tag:Yasushi2016_cgbvs_dnn].
+[@tag:Gomezb2016_automatic]. Some have also chosen to use standard central
+processing unit (CPU) implementations rather than sacrifice network size or
+performance [@tag:Yasushi2016_cgbvs_dnn].
 
 While steady improvements in GPU hardware may alleviate this issue, it is
 unclear whether advances will occur quickly enough to keep pace with the growing
@@ -452,7 +453,7 @@ Cloud computing, which has already seen wide adoption in genomics
 [@tag:Schatz2010_dna_cloud], could facilitate easier sharing of the large
 datasets common to biology [@tag:Gerstein2016_scaling @tag:Stein2010_cloud], and
 may be key to scaling deep learning. Cloud computing affords researchers
-flexibility, and enables the use of specialized hardware (e.g., FPGAs, ASICs,
+flexibility, and enables the use of specialized hardware (e.g. FPGAs, ASICs,
 GPUs) without major investment. As such, it could be easier to address the
 different challenges associated with the multitudinous layers and architectures
 available [@tag:Krizhevsky2014_weird_trick]. Though many are reluctant to store
@@ -587,17 +588,16 @@ drug-like compounds for specific targets [@tag:Segler2017_drug_design
 Related to transfer learning, multimodal learning assumes simultaneous learning
 from various types of inputs, such as images and text. It can capture features
 that describe common concepts across input modalities. Generative graphical
-models like RBMs and their stacked versions, deep Boltzmann machines, and DBNs,
-demonstrate successful extraction of more informative features for one modality
-(images or video) when jointly learned with other modalities (audio or text)
-[@tag:Ngiam2011]. Deep graphical models such as DBNs are considered to be
-well-suited for multimodal learning tasks because they learn a joint probability
-distribution from inputs. They can be pre-trained in an unsupervised fashion on
-large unlabeled data and then fine-tuned on a smaller number of labeled
-examples. When labels are available, convolutional neural networks are
-ubiquitously used because they can be trained end-to-end with backpropagation
-and demonstrate state-of-the-art performance in many discriminative tasks
-[@tag:Angermueller2016_dl_review].
+models like RBMs, deep Boltzmann machines, and DBNs, demonstrate successful
+extraction of more informative features for one modality (images or video) when
+jointly learned with other modalities (audio or text) [@tag:Ngiam2011]. Deep
+graphical models such as DBNs are considered to be well-suited for multimodal
+learning tasks because they learn a joint probability distribution from inputs.
+They can be pre-trained in an unsupervised fashion on large unlabeled data and
+then fine-tuned on a smaller number of labeled examples. When labels are
+available, convolutional neural networks are ubiquitously used because they can
+be trained end-to-end with backpropagation and demonstrate state-of-the-art
+performance in many discriminative tasks [@tag:Angermueller2016_dl_review].
 
 Jha et al. [@tag:Jha2017_integrative_models] showed that integrated training
 delivered better performance than individual networks. They compared a number of

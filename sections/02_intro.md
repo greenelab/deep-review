@@ -108,14 +108,14 @@ disease subtypes. In oncology, current "gold standard" approaches include
 histology, which requires interpretation by experts, or assessment of molecular
 markers such as cell surface receptors or gene expression. One example is the
 PAM50 approach to classifying breast cancer where the expression of 50 marker
-genes divides breast cancer patients into four subtypes. Significant
+genes divides breast cancer patients into four subtypes. Substantial
 heterogeneity still remains within these four subtypes
 [@doi:10.1200/JCO.2008.18.1370 @doi:10.1158/1078-0432.CCR-13-0583]. Given the
 increasing wealth of molecular data available, a more comprehensive subtyping
 seems possible. Several studies have used deep learning methods to better
-categorize breast cancer patients: denoising autoencoders (DA), an unsupervised
+categorize breast cancer patients: denoising autoencoders, an unsupervised
 approach, can be used to cluster breast cancer patients
-[@doi:10.1142/9789814644730_0014], and convolutional neural networks (CNN) can
+[@doi:10.1142/9789814644730_0014], and convolutional neural networks (CNNs) can
 help count mitotic divisions, a feature that is highly correlated with disease
 outcome in histological images [@doi:10.1007/978-3-642-40763-5_51]. Despite
 these recent advances, a number of challenges exist in this area of research,

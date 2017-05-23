@@ -295,12 +295,13 @@ representation of patients. The model was able to predict disease trajectories
 within one year with over 90% accuracy and patient-level predictions were
 improved by up to 15% when compared to other methods. Razavian et al.
 [@arxiv:1608.00647] used a set of 18 common lab tests to predict disease onset
-using both CNN and LSTM architectures and demonstrated an improvement over
-baseline regression models. However, numerous challenges including data
-integration (patient demographics, family history, laboratory tests, text-based
-patient records, image analysis, genomic data) and better handling of streaming
-temporal data with many features, will need to be overcome before we can fully
-assess the potential of deep learning for this application area.
+using both CNN and long short-term memory (LSTM) architectures and demonstrated
+an improvement over baseline regression models. However, numerous challenges
+including data integration (patient demographics, family history, laboratory
+tests, text-based patient records, image analysis, genomic data) and better
+handling of streaming temporal data with many features, will need to be overcome
+before we can fully assess the potential of deep learning for this application
+area.
 
 Still, recent work has also revealed domains in which deep networks have proven
 superior to traditional methods. Survival analysis models the time leading to an
@@ -566,7 +567,7 @@ understand. The algorithms described in this review and others like them may
 become highly accurate and useful for various purposes, including within medical
 practice. However, to discover and avoid discriminatory applications it will be
 important to consider interpretability alongside accuracy. A number of
-properties of genomic and health care data will make this difficult.
+properties of genomic and healthcare data will make this difficult.
 
 First, research samples are frequently non-representative of the general
 population of interest; they tend to be disproportionately sick
