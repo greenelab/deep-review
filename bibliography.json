@@ -43833,6 +43833,460 @@
     "id": "e3vyHBV2"
   },
   {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          5,
+          21
+        ]
+      ],
+      "date-time": "2017-05-21T02:37:53Z",
+      "timestamp": 1495334273794
+    },
+    "reference-count": 36,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "URL": "http://www.elsevier.com/tdm/userlicense/1.0/",
+        "start": {
+          "date-parts": [
+            [
+              2014,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2014-10-01T00:00:00Z",
+          "timestamp": 1412121600000
+        },
+        "delay-in-days": 0,
+        "content-version": "tdm"
+      },
+      {
+        "URL": "http://www.elsevier.com/open-access/userlicense/1.0/",
+        "start": {
+          "date-parts": [
+            [
+              2016,
+              3,
+              23
+            ]
+          ],
+          "date-time": "2016-03-23T00:00:00Z",
+          "timestamp": 1458691200000
+        },
+        "delay-in-days": 539,
+        "content-version": "vor"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "j-biomed-inform.com",
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Journal of Biomedical Informatics"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2014,
+          10
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.jbi.2014.03.016",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2014,
+          4,
+          13
+        ]
+      ],
+      "date-time": "2014-04-13T08:45:11Z",
+      "timestamp": 1397378711000
+    },
+    "page": "24-34",
+    "update-policy": "http://dx.doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 11,
+    "title": "Identifying and mitigating biases in EHR laboratory tests",
+    "prefix": "10.1016",
+    "volume": "51",
+    "author": [
+      {
+        "given": "Rimma",
+        "family": "Pivovarov",
+        "affiliation": []
+      },
+      {
+        "given": "David J.",
+        "family": "Albers",
+        "affiliation": []
+      },
+      {
+        "given": "Jorge L.",
+        "family": "Sepulveda",
+        "affiliation": []
+      },
+      {
+        "given": "Noémie",
+        "family": "Elhadad",
+        "affiliation": []
+      }
+    ],
+    "member": "78",
+    "container-title": "Journal of Biomedical Informatics",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://api.elsevier.com/content/article/PII:S1532046414000847?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://api.elsevier.com/content/article/PII:S1532046414000847?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          3,
+          23
+        ]
+      ],
+      "date-time": "2016-03-23T02:37:57Z",
+      "timestamp": 1458700677000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2014,
+          10
+        ]
+      ]
+    },
+    "references-count": 36,
+    "alternative-id": [
+      "S1532046414000847"
+    ],
+    "URL": "http://dx.doi.org/10.1016/j.jbi.2014.03.016",
+    "relation": {},
+    "issn-type": [
+      {
+        "value": "1532-0464",
+        "type": "print"
+      }
+    ],
+    "subject": [
+      "Health Informatics",
+      "Computer Science Applications"
+    ],
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Identifying and mitigating biases in EHR laboratory tests",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Journal of Biomedical Informatics",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "http://dx.doi.org/10.1016/j.jbi.2014.03.016",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "Copyright © 2014 Elsevier Inc. All rights reserved.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ],
+    "id": "1C97CTU9S"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          5,
+          22
+        ]
+      ],
+      "date-time": "2017-05-22T13:14:23Z",
+      "timestamp": 1495458863889
+    },
+    "reference-count": 28,
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "2",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "J Am Med Inform Assoc"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2016,
+          3
+        ]
+      ]
+    },
+    "DOI": "10.1093/jamia/ocv111",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          2,
+          6
+        ]
+      ],
+      "date-time": "2016-02-06T03:04:19Z",
+      "timestamp": 1454727859000
+    },
+    "page": "413-419",
+    "source": "Crossref",
+    "is-referenced-by-count": 1,
+    "title": "Harnessing next-generation informatics for personalizing medicine: a report from AMIA’s 2014 Health Policy Invitational Meeting",
+    "prefix": "10.1093",
+    "volume": "23",
+    "author": [
+      {
+        "given": "Laura K",
+        "family": "Wiley",
+        "affiliation": []
+      },
+      {
+        "given": "Peter",
+        "family": "Tarczy-Hornoch",
+        "affiliation": []
+      },
+      {
+        "given": "Joshua C",
+        "family": "Denny",
+        "affiliation": []
+      },
+      {
+        "given": "Robert R",
+        "family": "Freimuth",
+        "affiliation": []
+      },
+      {
+        "given": "Casey L",
+        "family": "Overby",
+        "affiliation": []
+      },
+      {
+        "given": "Nigam",
+        "family": "Shah",
+        "affiliation": []
+      },
+      {
+        "given": "Ross D",
+        "family": "Martin",
+        "affiliation": []
+      },
+      {
+        "given": "Indra Neil",
+        "family": "Sarkar",
+        "affiliation": []
+      }
+    ],
+    "member": "286",
+    "published-online": {
+      "date-parts": [
+        [
+          2016,
+          2,
+          5
+        ]
+      ]
+    },
+    "container-title": "Journal of the American Medical Informatics Association",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          23
+        ]
+      ],
+      "date-time": "2017-01-23T19:47:52Z",
+      "timestamp": 1485200872000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          2,
+          5
+        ]
+      ]
+    },
+    "references-count": 28,
+    "alternative-id": [
+      "10.1093/jamia/ocv111"
+    ],
+    "URL": "http://dx.doi.org/10.1093/jamia/ocv111",
+    "relation": {},
+    "issn-type": [
+      {
+        "value": "1067-5027",
+        "type": "print"
+      },
+      {
+        "value": "1527-974X",
+        "type": "electronic"
+      }
+    ],
+    "subject": [
+      "Health Informatics"
+    ],
+    "id": "2cYqPKf1"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          5,
+          11
+        ]
+      ],
+      "date-time": "2017-05-11T05:28:54Z",
+      "timestamp": 1494480534832
+    },
+    "reference-count": 100,
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "1",
+    "content-domain": {
+      "domain": [
+        "bmj.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Journal of the American Medical Informatics Association"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2013,
+          1,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1136/amiajnl-2011-000681",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2012,
+          6,
+          27
+        ]
+      ],
+      "date-time": "2012-06-27T07:32:22Z",
+      "timestamp": 1340782342000
+    },
+    "page": "144-151",
+    "update-policy": "http://dx.doi.org/10.1136/crossmarkpolicy",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "Methods and dimensions of electronic health record data quality assessment: enabling reuse for clinical research",
+    "prefix": "10.1093",
+    "volume": "20",
+    "author": [
+      {
+        "given": "N. G.",
+        "family": "Weiskopf",
+        "affiliation": []
+      },
+      {
+        "given": "C.",
+        "family": "Weng",
+        "affiliation": []
+      }
+    ],
+    "member": "286",
+    "container-title": "Journal of the American Medical Informatics Association",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          23
+        ]
+      ],
+      "date-time": "2017-01-23T22:53:00Z",
+      "timestamp": 1485211980000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2013,
+          1,
+          1
+        ]
+      ]
+    },
+    "references-count": 100,
+    "URL": "http://dx.doi.org/10.1136/amiajnl-2011-000681",
+    "relation": {},
+    "issn-type": [
+      {
+        "value": "1067-5027",
+        "type": "print"
+      },
+      {
+        "value": "1527-974X",
+        "type": "electronic"
+      }
+    ],
+    "subject": [
+      "Health Informatics"
+    ],
+    "id": "odRiFxnB"
+  },
+  {
     "URL": "http://arxiv.org/abs/1106.5730v2",
     "abstract": "Stochastic Gradient Descent (SGD) is a popular algorithm that can achieve state-of-the-art performance on a variety of machine learning tasks. Several researchers have recently proposed schemes to parallelize SGD, but all require performance-destroying memory locking and synchronization. This work aims to show using novel theoretical analysis, algorithms, and implementation that SGD can be implemented without any locking. We present an update scheme called HOGWILD! which allows processors access to shared memory with the possibility of overwriting each other’s work. We show that when the associated optimization problem is sparse, meaning most gradient updates only modify small parts of the decision variable, then HOGWILD! achieves a nearly optimal rate of convergence. We demonstrate experimentally that HOGWILD! outperforms alternative schemes that use locking by an order of magnitude.",
     "author": [

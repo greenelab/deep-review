@@ -593,29 +593,35 @@ costly practice of manual annotation.
 To construct the types of very large datasets that deep learning methods thrive
 on, we need robust sharing of large collections of data. This is in part a
 cultural challenge. We touch on this challenge in the Discussion section. Beyond
-the cultural hurdles around data sharing, there are also technological hurdles
-related to sharing individual health records or deep models built from such
-records. This subsection deals primarily with these challenges.
+the cultural hurdles around data sharing, there are also technological and legal
+hurdles related to sharing individual health records or deep models built from
+such records. This subsection deals primarily with these challenges.
 
 EHRs are designed chiefly for clinical, administrative and financial purposes,
 such as patient care, insurance and  billing [@FkSZ1qmz]. Science is
 at best a tertiary priority, presenting challenges to EHR-based research in
-general and to deep learning research in particular. These difficulties can be
-grouped into three areas: local bias, wider standards, and legal issues. Note
-these problems are not restricted to EHRs but can also apply to any large
-biomedical dataset, e.g. clinical trial data.
+general and to deep learning research in particular. Although there is
+significant work in the literature around EHR data quality and the impact on
+research [@odRiFxnB], we focus on three types of
+challenges: local bias, wider standards, and legal issues. Note these problems
+are not restricted to EHRs but can also apply to any large biomedical dataset,
+e.g. clinical trial data.
 
 Even within the same healthcare system, EHRs can be used differently
-[@11sli93ov; @y9ONtSZ9]. Individual users have unique usage patterns,
-with different departments and different hospitals having different priorities
-that code patients and introduce missing data in a non-random fashion
-[@7BctyA7f]. Patient data may be kept across several
-"silos" within a single health system. Even the most basic task of matching
+[@11sli93ov; @y9ONtSZ9]. Individual users have unique documentation and
+ordering patterns, with different departments and different hospitals having
+different priorities that code patients and introduce missing data in a
+non-random fashion [@7BctyA7f]. Patient data may be
+kept across several "silos" within a single health system (e.g. separate
+nursing documentation, registries, etc.). Even the most basic task of matching
 patients across systems can be challenging due to data entry issues
 [@4rTluXLs]. The situation is further exacerbated by the ongoing
 introduction, evolution, and migration of EHR systems, especially where
-reorganized and acquired healthcare facilities have to merge. As a result, EHR
-data can be less complete and less objective than expected.
+reorganized and acquired healthcare facilities have to merge. Further, even the
+ostensibly least-biased data type, laboratory measurements, can be biased based
+by both the healthcare process and patient health state
+[@1C97CTU9S]. As a result, EHR data can be less complete and
+less objective than expected.
 
 In the wider picture, standards for EHRs are numerous and evolving. Proprietary
 systems, indifferent and scattered use of health information standards, and
@@ -633,22 +639,28 @@ preventing the detection of weak effects
 parameters that can be trained in a model. Further, rules-based algorithms have
 been popular in EHR-based research, but because these are developed at a single
 institution and trained with a specific patient population, they do not transfer
-easily to other populations [@11OyzMl87]. For example,
-Wiley et al. [@qe90c1CL] showed that warfarin dosing
-algorithms often under-perform in African Americans, illustrating that some of
-these issues are unresolved even at a treatment best practices level. Lack of
-standardization also makes it challenging for investigators skilled in deep
-learning to enter the field, as numerous data processing steps must be performed
-before algorithms are applied.
+easily to other healthcare systems [@11OyzMl87]. Genetic
+studies using EHR data are subject to even more bias, as the differences in
+population ancestry across health centers (e.g. proportion of patients with
+African or Asian ancestry) can affect algorithm performance. For example, Wiley
+et al. [@qe90c1CL] showed that warfarin dosing algorithms
+often under-perform in African Americans, illustrating that some of these issues
+are unresolved even at a treatment best practices level. Lack of standardization
+also makes it challenging for investigators skilled in deep learning to enter
+the field, as numerous data processing steps must be performed before algorithms
+are applied.
 
 Finally, even if data were perfectly consistent and compatible across systems,
 attempts to share and combine EHR data face considerable legal and ethical
 barriers. Patient privacy can severely restrict the sharing and use of EHR
 [@CVnO5njl]. Here again, standards are heterogeneous and evolving,
 but often EHR data can often not be exported or even accessed directly for
-research purposes without appropriate consent. Once again, this has the effect
-of making data gathering more laborious and expensive, reducing sample size and
-study power.
+research purposes without appropriate consent. In the United States, research
+use of EHR data is subject both to the Common Rule and the Health Insurance
+Portability and Accountability Act (HIPPA). Ambiguity in the regulatory language
+and individual interpretation of these rules can hamper use of EHR data
+[@2cYqPKf1].  Once again, this has the effect of making data
+gathering more laborious and expensive, reducing sample size and study power.
 
 Several technological solutions have been proposed in this direction, allowing
 access to sensitive data satisfying privacy and legal concerns. Software like
@@ -2751,7 +2763,7 @@ To facilitate citation, we [defined](https://github.com/greenelab/deep-review/bl
 We supported citations to the following identifier types (in order of preference): DOIs, PubMed IDs, arXiv IDs, and URLs.
 References were automatically generated from citation metadata by querying APIs to generate [Citation Style Language](http://citationstyles.org/) (CSL) JSON items for each reference.
 [Pandoc](http://pandoc.org/) and [pandoc-citeproc](https://github.com/jgm/pandoc-citeproc) converted the markdown to HTML and PDF, while rendering the formatted citations and references.
-In total, referenced works consisted of 276 DOIs, 4 PubMed records, 107 arXiv manuscripts, and 42 URLs (webpages as well as manuscripts lacking standardized identifiers).
+In total, referenced works consisted of 279 DOIs, 4 PubMed records, 107 arXiv manuscripts, and 42 URLs (webpages as well as manuscripts lacking standardized identifiers).
 
 We implemented continuous analysis so the manuscript was automatically regenerated whenever the source changed [@Qh7xTLwz].
 We configured Travis CI -- a continuous integration service -- to fetch new citation metadata and rebuild the manuscript for every commit.
@@ -2770,7 +2782,7 @@ The ability to irrefutably prove manuscript existence at a past time could be im
 
 We created an open repository on the GitHub version control platform ([`greenelab/deep-review`](https://github.com/greenelab/deep-review)) [@yLr4pV4G].
 Here, we engaged with numerous authors from papers within and outside of the area.
-The manuscript was drafted via GitHub commits by 25 individuals who met the ICMJE standards of authorship.
+The manuscript was drafted via GitHub commits by 26 individuals who met the ICMJE standards of authorship.
 These were individuals who contributed to the review of the literature;
 drafted the manuscript or provided substantial critical revisions;
 approved the final manuscript draft; and agreed to be accountable in all aspects of the work.
@@ -2785,7 +2797,14 @@ Eraslan, Michael M. Hoffman, Mikael Huss, Bharath Ramsundar and Xun Zhu for
 their discussion of the manuscript and reviewed papers on GitHub. We would like
 to thank Zhiyong Lu for revisions to the text that were not captured on GitHub
 as well as GitHub users aaronsheldon, swamidass, and traversc who contributed
-text but did not formally approve the manuscript.
+text but did not formally approve the manuscript. Finally, we acknowledge
+funding from the Gordon and Betty Moore Foundation awards GBMF4552 (C.S.G. and
+D.S.H.) and GBMF4563 (D.J.H.); the National Institutes of Health awards
+DP2GM123485 (A.K.), R01AI116794 (B.K.B.), R01GM089652 (A.E.C.), R01GM089753
+(J.X.), T32GM007753 (B.T.D.), and U54AI117924 (A.G.); the National Science
+Foundation awards 1245632 (G.L.R.), 1531594 (E.M.C.), and 1564955 (J.X.); and
+the National Institutes of Health Intramural Research Program and National
+Library of Medicine (Y.P.).
 
 
 ## References
