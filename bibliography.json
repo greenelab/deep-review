@@ -44287,6 +44287,178 @@
     "id": "odRiFxnB"
   },
   {
+    "source": "PMC",
+    "accessed": {
+      "date-parts": [
+        [
+          2017,
+          5,
+          23
+        ]
+      ]
+    },
+    "id": "188FA7whS",
+    "title": "Taming the Wild: A Unified Analysis of Hogwild!-Style Algorithms",
+    "author": [
+      {
+        "family": "De Sa",
+        "given": "Christopher"
+      },
+      {
+        "family": "Zhang",
+        "given": "Ce"
+      },
+      {
+        "family": "Olukotun",
+        "given": "Kunle"
+      },
+      {
+        "family": "Ré",
+        "given": "Christopher"
+      }
+    ],
+    "container-title-short": "Adv Neural Inf Process Syst",
+    "container-title": "Advances in neural information processing systems",
+    "issued": {
+      "date-parts": [
+        [
+          2015,
+          12
+        ]
+      ]
+    },
+    "page": "2656-2664",
+    "volume": "28",
+    "PMID": "27330264",
+    "PMCID": "PMC4907892",
+    "type": "article-journal"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          5,
+          23
+        ]
+      ],
+      "date-time": "2017-05-23T07:19:51Z",
+      "timestamp": 1495523991336
+    },
+    "publisher-location": "Cham",
+    "reference-count": 27,
+    "publisher": "Springer International Publishing",
+    "license": [
+      {
+        "URL": "http://www.springer.com/tdm",
+        "start": {
+          "date-parts": [
+            [
+              2016,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2016-01-01T00:00:00Z",
+          "timestamp": 1451606400000
+        },
+        "delay-in-days": 0,
+        "content-version": "vor"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "DOI": "10.1007/978-3-319-46466-4_8",
+    "type": "chapter",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          9,
+          16
+        ]
+      ],
+      "date-time": "2016-09-16T09:31:58Z",
+      "timestamp": 1474018318000
+    },
+    "page": "120-135",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "Salient Deconvolutional Networks",
+    "prefix": "10.1007",
+    "author": [
+      {
+        "given": "Aravindh",
+        "family": "Mahendran",
+        "affiliation": []
+      },
+      {
+        "given": "Andrea",
+        "family": "Vedaldi",
+        "affiliation": []
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2016,
+          9,
+          17
+        ]
+      ]
+    },
+    "container-title": "Computer Vision – ECCV 2016",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          9,
+          16
+        ]
+      ],
+      "date-time": "2016-09-16T09:38:40Z",
+      "timestamp": 1474018720000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "references-count": 27,
+    "URL": "http://dx.doi.org/10.1007/978-3-319-46466-4_8",
+    "relation": {
+      "cites": []
+    },
+    "issn-type": [
+      {
+        "value": "0302-9743",
+        "type": "print"
+      },
+      {
+        "value": "1611-3349",
+        "type": "electronic"
+      }
+    ],
+    "id": "vjXoJqO3"
+  },
+  {
     "URL": "http://arxiv.org/abs/1106.5730v2",
     "abstract": "Stochastic Gradient Descent (SGD) is a popular algorithm that can achieve state-of-the-art performance on a variety of machine learning tasks. Several researchers have recently proposed schemes to parallelize SGD, but all require performance-destroying memory locking and synchronization. This work aims to show using novel theoretical analysis, algorithms, and implementation that SGD can be implemented without any locking. We present an update scheme called HOGWILD! which allows processors access to shared memory with the possibility of overwriting each other’s work. We show that when the associated optimization problem is sparse, meaning most gradient updates only modify small parts of the decision variable, then HOGWILD! achieves a nearly optimal rate of convergence. We demonstrate experimentally that HOGWILD! outperforms alternative schemes that use locking by an order of magnitude.",
     "author": [
@@ -48442,6 +48614,184 @@
       ]
     },
     "title": "In-datacenter performance analysis of a tensor processing unit",
+    "type": "article-journal"
+  },
+  {
+    "URL": "http://arxiv.org/abs/1603.04467v2",
+    "abstract": "TensorFlow is an interface for expressing machine learning algorithms, and an implementation for executing such algorithms. A computation expressed using TensorFlow can be executed with little or no change on a wide variety of heterogeneous systems, ranging from mobile devices such as phones and tablets up to large-scale distributed systems of hundreds of machines and thousands of computational devices such as GPU cards. The system is flexible and can be used to express a wide variety of algorithms, including training and inference algorithms for deep neural network models, and it has been used for conducting research and for deploying machine learning systems into production across more than a dozen areas of computer science and other fields, including speech recognition, computer vision, robotics, information retrieval, natural language processing, geographic information extraction, and computational drug discovery. This paper describes the TensorFlow interface and an implementation of that interface that we have built at Google. The TensorFlow API and a reference implementation were released as an open-source package under the Apache 2.0 license in November, 2015 and are available at www.tensorflow.org.",
+    "author": [
+      {
+        "family": "Abadi",
+        "given": "Martín"
+      },
+      {
+        "family": "Agarwal",
+        "given": "Ashish"
+      },
+      {
+        "family": "Barham",
+        "given": "Paul"
+      },
+      {
+        "family": "Brevdo",
+        "given": "Eugene"
+      },
+      {
+        "family": "Chen",
+        "given": "Zhifeng"
+      },
+      {
+        "family": "Citro",
+        "given": "Craig"
+      },
+      {
+        "family": "Corrado",
+        "given": "Greg S."
+      },
+      {
+        "family": "Davis",
+        "given": "Andy"
+      },
+      {
+        "family": "Dean",
+        "given": "Jeffrey"
+      },
+      {
+        "family": "Devin",
+        "given": "Matthieu"
+      },
+      {
+        "family": "Ghemawat",
+        "given": "Sanjay"
+      },
+      {
+        "family": "Goodfellow",
+        "given": "Ian"
+      },
+      {
+        "family": "Harp",
+        "given": "Andrew"
+      },
+      {
+        "family": "Irving",
+        "given": "Geoffrey"
+      },
+      {
+        "family": "Isard",
+        "given": "Michael"
+      },
+      {
+        "family": "Jia",
+        "given": "Yangqing"
+      },
+      {
+        "family": "Jozefowicz",
+        "given": "Rafal"
+      },
+      {
+        "family": "Kaiser",
+        "given": "Lukasz"
+      },
+      {
+        "family": "Kudlur",
+        "given": "Manjunath"
+      },
+      {
+        "family": "Levenberg",
+        "given": "Josh"
+      },
+      {
+        "family": "Mane",
+        "given": "Dan"
+      },
+      {
+        "family": "Monga",
+        "given": "Rajat"
+      },
+      {
+        "family": "Moore",
+        "given": "Sherry"
+      },
+      {
+        "family": "Murray",
+        "given": "Derek"
+      },
+      {
+        "family": "Olah",
+        "given": "Chris"
+      },
+      {
+        "family": "Schuster",
+        "given": "Mike"
+      },
+      {
+        "family": "Shlens",
+        "given": "Jonathon"
+      },
+      {
+        "family": "Steiner",
+        "given": "Benoit"
+      },
+      {
+        "family": "Sutskever",
+        "given": "Ilya"
+      },
+      {
+        "family": "Talwar",
+        "given": "Kunal"
+      },
+      {
+        "family": "Tucker",
+        "given": "Paul"
+      },
+      {
+        "family": "Vanhoucke",
+        "given": "Vincent"
+      },
+      {
+        "family": "Vasudevan",
+        "given": "Vijay"
+      },
+      {
+        "family": "Viegas",
+        "given": "Fernanda"
+      },
+      {
+        "family": "Vinyals",
+        "given": "Oriol"
+      },
+      {
+        "family": "Warden",
+        "given": "Pete"
+      },
+      {
+        "family": "Wattenberg",
+        "given": "Martin"
+      },
+      {
+        "family": "Wicke",
+        "given": "Martin"
+      },
+      {
+        "family": "Yu",
+        "given": "Yuan"
+      },
+      {
+        "family": "Zheng",
+        "given": "Xiaoqiang"
+      }
+    ],
+    "id": "hOeUlCvS",
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          3
+        ]
+      ]
+    },
+    "title": "TensorFlow: Large-scale machine learning on heterogeneous distributed systems",
+    "title-short": "TensorFlow",
     "type": "article-journal"
   }
 ]

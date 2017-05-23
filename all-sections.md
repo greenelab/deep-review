@@ -2128,7 +2128,7 @@ input [@zhmq9ktJ; @b1sc0cgP]. Networks
 with Rectified Linear Units (ReLUs) create nonlinearities that must be
 addressed. Several variants exist for handling this [@voh0OiT2; @f2L6isRj]. Backpropagation-based methods are a highly
 active area of research. Researchers are still actively identifying weaknesses
-[@3CM9XLyL], and new methods are being developed to address
+[@vjXoJqO3], and new methods are being developed to address
 them [@RZsNSRDS; @WzFOJBiA; @zhmq9ktJ]. Lundberg and Lee [@DeOI1oGf] noted that
 several importance scoring methods including integrated gradients and LIME could
 all be considered approximations to Shapely values [@YBJdA6LJ], which have a
@@ -2406,7 +2406,7 @@ Distributed computing is a general solution to intense computational
 requirements and has enabled many large-scale deep learning efforts. Some types
 of distributed computation [@xE3EYmck; @1XcexUAV] are not suitable for
 deep learning [@17cBimWgp], but much progress has been made.
-There now exist a number of algorithms [@17cBimWgp; @HIiQN4bd; @w6CoVmFK], tools [@rmJZ2Aui; @rZnxDitd; @Gp4OR9Lf], and high-level libraries [@FwEK0msb; @y9IoEy4r] for deep
+There now exist a number of algorithms [@17cBimWgp; @188FA7whS; @w6CoVmFK], tools [@rmJZ2Aui; @rZnxDitd; @hOeUlCvS], and high-level libraries [@FwEK0msb; @y9IoEy4r] for deep
 learning in a distributed environment, and it is possible to train very complex
 networks with limited infrastructure [@4MZ2tmZ8]. Besides
 handling very large networks, distributed or parallelized approaches offer other
@@ -2765,7 +2765,7 @@ To facilitate citation, we [defined](https://github.com/greenelab/deep-review/bl
 We supported citations to the following identifier types (in order of preference): DOIs, PubMed IDs, arXiv IDs, and URLs.
 References were automatically generated from citation metadata by querying APIs to generate [Citation Style Language](http://citationstyles.org/) (CSL) JSON items for each reference.
 [Pandoc](http://pandoc.org/) and [pandoc-citeproc](https://github.com/jgm/pandoc-citeproc) converted the markdown to HTML and PDF, while rendering the formatted citations and references.
-In total, referenced works consisted of 279 DOIs, 4 PubMed records, 107 arXiv manuscripts, and 42 URLs (webpages as well as manuscripts lacking standardized identifiers).
+In total, referenced works consisted of 280 DOIs, 5 PubMed records, 108 arXiv manuscripts, and 39 URLs (webpages as well as manuscripts lacking standardized identifiers).
 
 We implemented continuous analysis so the manuscript was automatically regenerated whenever the source changed [@Qh7xTLwz].
 We configured Travis CI -- a continuous integration service -- to fetch new citation metadata and rebuild the manuscript for every commit.

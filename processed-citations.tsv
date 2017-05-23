@@ -245,7 +245,7 @@ text	citation	standard_citation	citation_id
 @tag:Ditzler	doi:10.1186/s12859-015-0793-8	doi:10.1186/s12859-015-0793-8	1AN5UPfb1
 @tag:Ditzler2	doi:10.1109/TNNLS.2014.2320415	doi:10.1109/tnnls.2014.2320415	O9D66oYa
 @tag:Ditzler3	doi:10.1109/TNB.2015.2461219	doi:10.1109/tnb.2015.2461219	i38A0beL
-@tag:Dogwild	url:https://papers.nips.cc/paper/5717-taming-the-wild-a-unified-analysis-of-hogwild-style-algorithms.pdf	url:https://papers.nips.cc/paper/5717-taming-the-wild-a-unified-analysis-of-hogwild-style-algorithms.pdf	HIiQN4bd
+@tag:Dogwild	pmid:27330264	pmid:27330264	188FA7whS
 @tag:Dragonn	url:http://kundajelab.github.io/dragonn/	url:http://kundajelab.github.io/dragonn/	117PEpTMe
 @tag:Dream_tf_binding	url:https://www.synapse.org/#!Synapse:syn6131484/wiki/402026	url:https://www.synapse.org/#!Synapse:syn6131484/wiki/402026	wW6QbBXz
 @tag:Duvenaud2015_graph_conv	url:http://papers.nips.cc/paper/5954-convolutional-networks-on-graphs-for-learning-molecular-fingerprints	url:http://papers.nips.cc/paper/5954-convolutional-networks-on-graphs-for-learning-molecular-fingerprints	Oe573FaL
@@ -326,7 +326,7 @@ text	citation	standard_citation	citation_id
 @tag:Lusci2015_irv	doi:10.1186/s13321-015-0110-6	doi:10.1186/s13321-015-0110-6	1E0x7QgLP
 @tag:Ma2015_qsar_merck	doi:10.1021/ci500747n	doi:10.1021/ci500747n	xOaTIeBY
 @tag:Mahendran2014_understanding	arxiv:1412.0035	arxiv:1412.0035	19mGl6pfy
-@tag:Mahendran2016_salient	url:https://www.robots.ox.ac.uk/~vedaldi/assets/pubs/mahendran16salient.pdf	url:https://www.robots.ox.ac.uk/~vedaldi/assets/pubs/mahendran16salient.pdf	3CM9XLyL
+@tag:Mahendran2016_salient	doi:10.1007/978-3-319-46466-4_8	doi:10.1007/978-3-319-46466-4_8	vjXoJqO3
 @tag:Mahendran2016_visualizing	doi:10.1007/s11263-016-0911-8	doi:10.1007/s11263-016-0911-8	1FkT6C6oa
 @tag:Mapreduce	doi:10.1145/1327452.1327492	doi:10.1145/1327452.1327492	xE3EYmck
 @tag:Mayr2016_deep_tox	doi:10.3389/fenvs.2015.00080	doi:10.3389/fenvs.2015.00080	Y1D0SZrO
@@ -403,7 +403,7 @@ text	citation	standard_citation	citation_id
 @tag:Tan2014_psb	doi:10.1142/9789814644730_0014	doi:10.1142/9789814644730_0014	PBiRSdXv
 @tag:Tan2015_adage	doi:10.1128/mSystems.00025-15	doi:10.1128/msystems.00025-15	1CFhfCyWN
 @tag:Tan2016_eadage	doi:10.1101/078659	doi:10.1101/078659	zuLdSQx3
-@tag:TensorFlow	url:http://download.tensorflow.org/paper/whitepaper2015.pdf	url:http://download.tensorflow.org/paper/whitepaper2015.pdf	Gp4OR9Lf
+@tag:TensorFlow	arxiv:1603.04467	arxiv:1603.04467	hOeUlCvS
 @tag:Torracinta2016_deep_snp	doi:10.1101/097469	doi:10.1101/097469	GSLRw2L5
 @tag:Torracinta2016_sim	doi:10.1101/079087	doi:10.1101/079087	ECTm1SuA
 @tag:Tu1996_anns	doi:10.1016/S0895-4356(96)00002-9	doi:10.1016/s0895-4356(96)00002-9	kL0B4m9d
