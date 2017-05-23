@@ -442,12 +442,15 @@ Even within the same healthcare system, EHRs can be used differently
 with different departments and different hospitals having different priorities
 that code patients and introduce missing data in a non-random fashion
 [@doi:10.1016/S0168-8510(02)00208-7]. Patient data may be kept across several
-"silos" within a single health system (e.g., separate nursing documentation, registries, etc.). Even the most basic task of matching
+"silos" within a single health system (e.g., separate nursing documentation, registries, 
+etc.). Even the most basic task of matching
 patients across systems can be challenging due to data entry issues
 [@pmid:27134610]. The situation is further exacerbated by the ongoing
 introduction, evolution, and migration of EHR systems, especially where
-reorganized and acquired healthcare facilities have to merge. Further, even the austensibly least biased data type, laboratory measurements, results can be biased based by both the healthcare process and patient health state
-[@doi.org/10.1016/j.jbi.2014.03.016]. As a result, EHR
+reorganized and acquired healthcare facilities have to merge. Further, even the austensibly 
+least biased data type, laboratory measurements, results can be biased based by both the 
+healthcare process and patient health state
+[@doi:10.1016/j.jbi.2014.03.016]. As a result, EHR
 data can be less complete and less objective than expected.
 
 In the wider picture, standards for EHRs are numerous and evolving. Proprietary
@@ -466,7 +469,10 @@ preventing the detection of weak effects
 parameters that can be trained in a model. Further, rules-based algorithms have
 been popular in EHR-based research, but because these are developed at a single
 institution and trained with a specific patient population, they do not transfer
-easily to other healthcare systems [@doi:10.1136/amiajnl-2013-001935]. Genetic studies using EHR data are subject to even more bias, as the differences in population ancestry across health centers (e.g., proportion of patients with African or Asian ancestry) can affect algorithm performance. For example,
+easily to other healthcare systems [@doi:10.1136/amiajnl-2013-001935]. Genetic 
+studies using EHR data are subject to even more bias, as the differences in population 
+ancestry across health centers (e.g., proportion of patients with African or Asian 
+ancestry) can affect algorithm performance. For example,
 Wiley et al. [@doi:10.1142/9789813207813_0050] showed that warfarin dosing
 algorithms often under-perform in African Americans, illustrating that some of
 these issues are unresolved even at a treatment best practices level. Lack of
@@ -479,8 +485,11 @@ attempts to share and combine EHR data face considerable legal and ethical
 barriers. Patient privacy can severely restrict the sharing and use of EHR
 [@doi:10.1093/ije/dyn022]. Here again, standards are heterogeneous and evolving,
 but often EHR data can often not be exported or even accessed directly for
-research purposes without appropriate consent. In the United States, research use of EHR data are subject both to the Common Rule and the Health Insurance Portability and Accountability ACT (HIPPA). Ambiguity in the regulatory language and individual interpretation of these rules can hamper use of EHR data
-[@doi.org/10.1093/jamia/ocv111].  Once again, this has the effect
+research purposes without appropriate consent. In the United States, research use 
+of EHR data are subject both to the Common Rule and the Health Insurance Portability 
+and Accountability ACT (HIPPA). Ambiguity in the regulatory language and individual 
+interpretation of these rules can hamper use of EHR data
+[@doi:10.1093/jamia/ocv111].  Once again, this has the effect
 of making data gathering more laborious and expensive, reducing sample size and
 study power.
 
