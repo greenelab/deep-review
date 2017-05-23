@@ -25,3 +25,4 @@
 | jisraeli | Johnny Israeli | 0000-0003-1633-5780 | Biophysics Program, Stanford University | jisraeli@stanford.edu | Yes |  |
 | xieconnect | Wei Xie | 0000-0002-1871-6846 | Electrical Engineering and Computer Science, Vanderbilt University | wei.xie@vanderbilt.edu | Yes | |
 | AvantiShri | Avanti Shrikumar | 0000-0002-6443-4671 | Stanford University, Department of Computer Science | avanti@stanford.edu | Yes |  |
+| laurakwiley| Laura K. Wiley | 0000-0001-6681-9754 | Division of Biomedical Informatics and Personalized Medicine, University of Colorado School of Medicine | laura.wiley@ucdenver.edu | Yes | |
