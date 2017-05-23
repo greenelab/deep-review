@@ -432,8 +432,9 @@ records. This subsection deals primarily with these challenges.
 EHRs are designed chiefly for clinical, administrative and financial purposes,
 such as patient care, insurance and  billing [@doi:10.1038/nrg3208]. Science is
 at best a tertiary priority, presenting challenges to EHR-based research in
-general and to deep learning research in particular. These difficulties can be
-grouped into three areas: local bias, wider standards, and legal issues. Note
+general and to deep learning research in particular. While there is significant work in
+the literature around EHR data quality and the impact on research [@doi:10.1136/amiajnl-2011-000681], 
+we will review three types of challenges: local bias, wider standards, and legal issues. Note
 these problems are not restricted to EHRs but can also apply to any large
 biomedical dataset, e.g. clinical trial data.
 
