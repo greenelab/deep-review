@@ -452,7 +452,7 @@ Cloud computing, which has already seen wide adoption in genomics
 [@tag:Schatz2010_dna_cloud], could facilitate easier sharing of the large
 datasets common to biology [@tag:Gerstein2016_scaling @tag:Stein2010_cloud], and
 may be key to scaling deep learning. Cloud computing affords researchers
-flexibility, and enables the use of specialized hardware (e.g., FPGAs, ASICs,
+flexibility, and enables the use of specialized hardware (e.g. FPGAs, ASICs,
 GPUs) without major investment. As such, it could be easier to address the
 different challenges associated with the multitudinous layers and architectures
 available [@tag:Krizhevsky2014_weird_trick]. Though many are reluctant to store

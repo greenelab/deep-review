@@ -108,7 +108,7 @@ disease subtypes. In oncology, current "gold standard" approaches include
 histology, which requires interpretation by experts, or assessment of molecular
 markers such as cell surface receptors or gene expression. One example is the
 PAM50 approach to classifying breast cancer where the expression of 50 marker
-genes divides breast cancer patients into four subtypes. Significant
+genes divides breast cancer patients into four subtypes. Substantial
 heterogeneity still remains within these four subtypes
 [@doi:10.1200/JCO.2008.18.1370 @doi:10.1158/1078-0432.CCR-13-0583]. Given the
 increasing wealth of molecular data available, a more comprehensive subtyping

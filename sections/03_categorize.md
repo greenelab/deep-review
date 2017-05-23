@@ -554,7 +554,7 @@ understand. The algorithms described in this review and others like them may
 become highly accurate and useful for various purposes, including within medical
 practice. However, to discover and avoid discriminatory applications it will be
 important to consider interpretability alongside accuracy. A number of
-properties of genomic and health care data will make this difficult.
+properties of genomic and healthcare data will make this difficult.
 
 First, research samples are frequently non-representative of the general
 population of interest; they tend to be disproportionately sick

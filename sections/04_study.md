@@ -178,7 +178,7 @@ predict transcription factor binding sites (TFBSs) on a DNA sequence,
 researchers initially used consensus sequences and position weight matrices to
 match against a test sequence [@tag:Stormo2000_dna]. Simple neural network
 classifiers were then proposed to differentiate positive and negative binding
-sites but did not show significant improvements over the weight matrix matching
+sites but did not show meaningful improvements over the weight matrix matching
 methods [@tag:Horton1992_assessment]. Later, support vector machines (SVMs)
 outperformed the generative methods by using k-mer features
 [@tag:Ghandi2014_enhanced @tag:Setty2015_seqgl], but string kernel-based SVM
@@ -403,7 +403,7 @@ information on all residue-residue contacts. Secondary structure prediction is a
 basic problem and an almost essential module of any protein structure prediction
 package. Contact prediction is much more challenging than secondary structure
 prediction, but it has a much larger impact on tertiary structure prediction. In
-recent years, the accuracy of contact prediction has significantly improved
+recent years, the accuracy of contact prediction has greatly improved
 [@doi:10.1371/journal.pcbi.1005324 @doi:10.1093/bioinformatics/btu791
 @doi:10.1073/pnas.0805923106 @doi:10.1371/journal.pone.0028766].
 
@@ -418,16 +418,16 @@ improvement over the *de facto* standard method PSIPRED
 networks. In 2014, Zhou and Troyanskaya demonstrated that they could improve Q8
 accuracy by using a deep supervised and convolutional generative stochastic
 network [@arxiv:1403.1347]. In 2016 Wang et al. developed a DeepCNF model that
-significantly improved Q3 and Q8 accuracy as well as prediction of solvent
-accessibility and disorder regions [@doi:10.1038/srep18962
-@doi:10.1007/978-3-319-46227-1_1]. DeepCNF achieved a higher Q3 accuracy than
-the standard maintained by PSIPRED for more than 10 years. This improvement may
-be mainly due to the ability of convolutional neural fields to capture
-long-range sequential information, which is important for beta strand
-prediction. Nevertheless, the improvements in secondary structure prediction
-from DeepCNF are unlikely to result in a commensurate improvement in tertiary
-structure prediction since secondary structure mainly reflects coarse-grained
-local conformation of a protein structure.
+improved Q3 and Q8 accuracy as well as prediction of solvent accessibility and
+disorder regions [@doi:10.1038/srep18962 @doi:10.1007/978-3-319-46227-1_1].
+DeepCNF achieved a higher Q3 accuracy than the standard maintained by PSIPRED
+for more than 10 years. This improvement may be mainly due to the ability of
+convolutional neural fields to capture long-range sequential information, which
+is important for beta strand prediction. Nevertheless, the improvements in
+secondary structure prediction from DeepCNF are unlikely to result in a
+commensurate improvement in tertiary structure prediction since secondary
+structure mainly reflects coarse-grained local conformation of a protein
+structure.
 
 Protein contact prediction and contact-assisted folding (i.e. folding proteins
 using predicted contacts as restraints) represents a promising new direction for
