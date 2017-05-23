@@ -55,7 +55,7 @@ Ditzler3	doi:10.1109/TNB.2015.2461219
 Dhungel2015_struct_pred_mamm	doi:10.1007/978-3-319-24553-9_74
 Dhungel2016_mamm	doi:10.1007/978-3-319-46723-8_13
 Dhungel2017_mamm_min_interv	doi:10.1016/j.media.2017.01.009
-Dogwild	url:https://papers.nips.cc/paper/5717-taming-the-wild-a-unified-analysis-of-hogwild-style-algorithms.pdf
+Dogwild	pmid:27330264
 Dream_tf_binding	url:https://www.synapse.org/#!Synapse:syn6131484/wiki/402026
 Dragonn	url:http://kundajelab.github.io/dragonn/
 Duvenaud2015_graph_conv	url:http://papers.nips.cc/paper/5954-convolutional-networks-on-graphs-for-learning-molecular-fingerprints
@@ -144,7 +144,7 @@ Lusci2015_irv	doi:10.1186/s13321-015-0110-6
 Lusci2013_rnn	doi:10.1021/ci400187y
 Ma2015_qsar_merck	doi:10.1021/ci500747n
 Mahendran2014_understanding	arxiv:1412.0035
-Mahendran2016_salient	url:https://www.robots.ox.ac.uk/~vedaldi/assets/pubs/mahendran16salient.pdf
+Mahendran2016_salient	doi:10.1007/978-3-319-46466-4_8
 Mahendran2016_visualizing	doi:10.1007/s11263-016-0911-8
 Mapreduce	doi:10.1145/1327452.1327492
 Mayr2016_deep_tox	doi:10.3389/fenvs.2015.00080
@@ -228,7 +228,7 @@ Tan2014_psb	doi:10.1142/9789814644730_0014
 Tan2015_adage	doi:10.1128/mSystems.00025-15
 Tan2016_eadage	doi:10.1101/078659
 TAC-ELM	doi:10.1142/S0219720012500151
-TensorFlow	url:http://download.tensorflow.org/paper/whitepaper2015.pdf
+TensorFlow	arxiv:1603.04467
 Torracinta2016_deep_snp	doi:10.1101/097469
 Torracinta2016_sim	doi:10.1101/079087
 Tu1996_anns	doi:10.1016/S0895-4356(96)00002-9
