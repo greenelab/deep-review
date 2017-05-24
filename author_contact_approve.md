@@ -26,3 +26,4 @@
 | xieconnect | Wei Xie | 0000-0002-1871-6846 | Electrical Engineering and Computer Science, Vanderbilt University | wei.xie@vanderbilt.edu | Yes | |
 | AvantiShri | Avanti Shrikumar | 0000-0002-6443-4671 | Stanford University, Department of Computer Science | avanti@stanford.edu | Yes | |
 | laurakwiley | Laura K. Wiley | 0000-0001-6681-9754 | Division of Biomedical Informatics and Personalized Medicine, University of Colorado School of Medicine | laura.wiley@ucdenver.edu | Yes | |
+| traversc | Travers Ching | 0000-0002-5577-3516 | Molecular Biosciences and Bioengineering Graduate Program, University of Hawaii at Manoa, Honolulu, HI 96822 USA | traversc@gmail.com | Yes | |
