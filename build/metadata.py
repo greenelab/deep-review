@@ -35,7 +35,12 @@ def get_doi_citeproc(doi):
         'Accept': 'application/vnd.citationstyles.csl+json',
     }
     response = requests.get(url, headers=header)
-    return response.json()
+    citeproc = response.json()
+    # Upgrade to preferred formatting in DOI resolution URLs
+    if 'URL' in citeproc:
+        pattern = re.compile(r'^(https?://d?x?\.?)doi\.org/')
+        citeproc['URL'] = pattern.sub('https://doi.org/', citeproc['URL'])
+    return citeproc
 
 
 def get_pubmed_citeproc(pubmed_id):
