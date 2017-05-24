@@ -39,10 +39,7 @@ describe recurrent patterns in data. Like a regression approach, deep learning
 methods can predict some output. However, deep learning methods combine both of
 these steps. When sufficient data are available, these methods construct
 features tuned to a specific problem and combine those features into a
-predictor. These methods are powered by improvements to artificial neural
-networks, an idea that was first proposed in 1943  Since then, interest in
-neural networks as computational models has waxed and waned over time. This
-history is interesting in its own right Recently, hardware improvements and very
+predictor. Recently, hardware improvements and very
 large training datasets have allowed these deep learning techniques to surpass
 other machine learning algorithms for many problems.
 
