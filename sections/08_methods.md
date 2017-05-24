@@ -36,8 +36,7 @@ These were individuals who contributed to the review of the literature;
 drafted the manuscript or provided substantial critical revisions;
 approved the final manuscript draft; and agreed to be accountable in all aspects of the work.
 Individuals who did not contribute in all of these ways, but who did participate, are acknowledged below.
-
-`TODO: update after finalizing discussion in #369`
+We grouped authors into four classes of approximately equal contributions and randomly ordered authors within each contribution class.
 
 ### Acknowledgements
 
