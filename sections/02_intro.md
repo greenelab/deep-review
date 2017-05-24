@@ -23,25 +23,28 @@ algorithms have produced comparable or higher accuracy than previous
 best-in-class methods that required years of extensive customization, and
 specialized implementations are now being used at industrial scales.
 
-Deep learning methods have some common features. First, they encode data via
-multiple layers. Each layer essentially performs feature construction for the
-layers below it. A process is often used to allow layers deeper in the network
-to contribute to the refinement of earlier layers. This elements provide these
-algorithms with the capability to automatically engineer features that are
-suitable for many tasks and to customize those features for one or more specific
-tasks. Deep learning does many of the same things as more familiar approaches.
-Like a clustering algorithm it can build features that describe recurrent
-patterns in data. Like a regression approach deep learning methods can predict
-some output. However, deep learning methods combine both of these steps. When
-sufficient data are available, these methods construct features tuned to a
-specific problem and combine those features into a predictor. These methods are
-powered by improvements to artificial neural networks, an idea that was first
-proposed in 1943 [@doi:10.1007/BF02478259] as a model for how our brains process
-information. Since then, interest in neural networks as computational models has
-waxed and waned over time. This history is interesting in its own right
-[@doi:10.1103/RevModPhys.34.135]. Recently, hardware improvements and very large
-training datasets have allowed these deep learning techniques to surpass other
-machine learning algorithms for many problems.
+Neural networks were first proposed in 1943 [@doi:10.1007/BF02478259] as a model
+for how our brains process information. The history of neural networks is
+interesting in its own right [@doi:10.1103/RevModPhys.34.135]. In neural
+networks, inputs are fed into a hidden layer, which feeds into one or more
+hidden layers, which eventually produce an output layer. The neural networks
+used for deep learning have multiple hidden layers. Each layer essentially
+performs feature construction for the layers before it. The training process
+used often allows layers deeper in the network to contribute to the refinement
+of earlier layers. For this reason, these algorithms can automatically engineer
+features that are suitable for many tasks and customize those features for one
+or more specific tasks. Deep learning does many of the same things as more
+familiar approaches. Like a clustering algorithm, it can build features that
+describe recurrent patterns in data. Like a regression approach, deep learning
+methods can predict some output. However, deep learning methods combine both of
+these steps. When sufficient data are available, these methods construct
+features tuned to a specific problem and combine those features into a
+predictor. These methods are powered by improvements to artificial neural
+networks, an idea that was first proposed in 1943  Since then, interest in
+neural networks as computational models has waxed and waned over time. This
+history is interesting in its own right Recently, hardware improvements and very
+large training datasets have allowed these deep learning techniques to surpass
+other machine learning algorithms for many problems.
 
 Neural networks are most widely associated with supervised machine learning,
 where the goal is to accurately predict one or more labels associated with each
