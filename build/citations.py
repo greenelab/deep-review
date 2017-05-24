@@ -80,14 +80,14 @@ def standardize_identifier(source, identifier):
     return identifier
 
 
-def citation_to_metadata(citation, cache={}):
+def citation_to_metadata(citation, cache={}, override={}):
     """
     Return a dictionary with citation metadata
     """
     source, identifer = citation.split(':', 1)
     identifer = standardize_identifier(source, identifer)
     standard_citation = f'{source}:{identifer}'
-    if standard_citation in cache:
+    if standard_citation not in override and standard_citation in cache:
         return cache[standard_citation]
 
     result = {
@@ -96,7 +96,9 @@ def citation_to_metadata(citation, cache={}):
         'standard_citation': standard_citation
     }
 
-    if source == 'doi':
+    if standard_citation in override:
+        result['citeproc'] = override[standard_citation]
+    elif source == 'doi':
         result['citeproc'] = metadata.get_doi_citeproc(identifer)
         # result['bibtex'] = metadata.get_doi_bibtex(identifer)
     elif source == 'pmid':

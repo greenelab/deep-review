@@ -1,6 +1,6 @@
 [
  {
-  "citation_id": "url:http://www.bioinf.at/publications/2014/NIPS2014a.pdf",
+  "standard_citation": "url:http://www.bioinf.at/publications/2014/NIPS2014a.pdf",
   "type": "article-journal",
   "title": "Deep learning as an opportunity in virtual screening",
   "container-title": "Neural Information Processing Systems 2014: Deep Learning and Representation Learning Workshop",
@@ -53,7 +53,7 @@
   }
  },
  {
-  "citation_id": "url:https://repozitorij.uni-lj.si/IzpisGradiva.php?id=85515",
+  "standard_citation": "url:https://repozitorij.uni-lj.si/IzpisGradiva.php?id=85515",
   "type": "report",
   "title": "Globoko ucenje na genomskih in filogenetskih podatkih",
   "publisher": "Univerza v Ljubljani, Fakulteta za ra?unalništvo in informatiko",
@@ -84,7 +84,7 @@
   }
  },
  {
-  "citation_id": "doi:10.1093/bib/bbw110",
+  "standard_citation": "doi:10.1093/bib/bbw110",
   "type": "article-journal",
   "title": "A review of validation strategies for computational drug repositioning",
   "container-title": "Briefings in Bioinformatics",
@@ -113,7 +113,7 @@
   }
  },
  {
-  "citation_id": "url:http://www.iro.umontreal.ca/~lisa/publications2/index.php/publications/show/247",
+  "standard_citation": "url:http://www.iro.umontreal.ca/~lisa/publications2/index.php/publications/show/247",
   "type": "report",
   "title": "Visualizing Higher-Layer Features of a Deep Network",
   "publisher": "University of Montreal",
@@ -148,7 +148,7 @@
   }
  },
  {
-  "citation_id": "url:https://openreview.net/pdf?id=Sk-oDY9ge",
+  "standard_citation": "url:https://openreview.net/pdf?id=Sk-oDY9ge",
   "type": "article-journal",
   "title": "Diet Networks: Thin Parameters for Fat Genomics",
   "container-title": "International Conference on Learning Representations 2017",
@@ -218,7 +218,7 @@
   }
  },
  {
-  "citation_id": "url:https://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimization.pdf",
+  "standard_citation": "url:https://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimization.pdf",
   "type": "paper-conference",
   "title": "Algorithms for Hyper-parameter Optimization",
   "container-title": "Proceedings of the 24th International Conference on Neural Information Processing Systems",
@@ -267,7 +267,7 @@
   }
  },
  {
-  "citation_id": "url:https://ai.stanford.edu/~ang/papers/icml11-MultimodalDeepLearning.pdf",
+  "standard_citation": "url:https://ai.stanford.edu/~ang/papers/icml11-MultimodalDeepLearning.pdf",
   "type": "paper-conference",
   "title": "Multimodal Deep Learning",
   "container-title": "Proceedings of the 28th International Conference on Machine Learning",
@@ -317,7 +317,7 @@
   }
  },
  {
-  "citation_id": "url:https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf",
+  "standard_citation": "url:https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf",
   "type": "paper-conference",
   "title": "ImageNet Classification with Deep Convolutional Neural Networks",
   "container-title": "Proceedings of the 25th International Conference on Neural Information Processing Systems",
@@ -361,7 +361,7 @@
   }
  },
  {
-  "citation_id": "url:https://eprint.iacr.org/2017/281.pdf",
+  "standard_citation": "url:https://eprint.iacr.org/2017/281.pdf",
   "type": "report",
   "title": "Practical Secure Aggregation for Privacy Preserving Machine Learning",
   "genre": "Cryptology ePrint Archive",
