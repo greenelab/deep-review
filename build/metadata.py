@@ -57,7 +57,9 @@ def get_pubmed_citeproc(pubmed_id):
     }
     url = 'https://www.ncbi.nlm.nih.gov/pmc/utils/ctxp'
     response = requests.get(url, params)
-    return response.json()
+    citeproc = response.json()
+    citeproc['URL'] = f'https://www.ncbi.nlm.nih.gov/pubmed/{pubmed_id}'
+    return citeproc
 
 
 def get_url_citeproc_greycite(url):
