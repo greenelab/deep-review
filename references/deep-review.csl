@@ -1,9 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="never" default-locale="en-GB">
+  <!-- This style was edited with the Visual CSL Editor (http://editor.citationstyles.org/visualEditor/) -->
   <info>
-    <title>Proceedings of the Royal Society B</title>
-    <id>http://www.zotero.org/styles/proceedings-of-the-royal-society-b</id>
-    <link href="http://www.zotero.org/styles/proceedings-of-the-royal-society-b" rel="self"/>
+    <title>Deep Review</title>
+    <id>http://www.zotero.org/styles/deep-review</id>
+    <link href="http://www.zotero.org/styles/deep-review" rel="self"/>
     <link href="https://royalsociety.org/journals/authors/author-guidelines/" rel="documentation"/>
     <author>
       <name>Josefa Bleu</name>
@@ -28,7 +29,7 @@
     <category field="biology"/>
     <issn>0962-8452</issn>
     <eissn>1471-2954</eissn>
-    <updated>2017-03-28T21:22:17+00:00</updated>
+    <updated>2017-05-24T17:47:27+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale>
@@ -119,16 +120,8 @@
   </macro>
   <macro name="access">
     <choose>
-      <if variable="DOI">
-        <text variable="DOI" prefix="(doi:" suffix=")"/>
-      </if>
-      <else-if variable="URL">
+      <if variable="URL">
         <group suffix=".">
-          <choose>
-            <if type="article-newspaper article-magazine dataset book webpage" match="any">
-              <text variable="URL" prefix=" See "/>
-            </if>
-          </choose>
           <choose>
             <if type="webpage">
               <group prefix=" (" delimiter=" " suffix=")">
@@ -141,8 +134,9 @@
               </group>
             </if>
           </choose>
+          <text variable="URL" prefix=" See "/>
         </group>
-      </else-if>
+      </if>
     </choose>
   </macro>
   <citation collapse="citation-number">
