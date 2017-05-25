@@ -190,6 +190,10 @@ def bibtex_passthrough(text, set_id=None):
     # Set URL as url rather than link attribute
     if 'link' in entry and 'url' not in entry:
         entry['url'] = entry.pop('link')
+    # Upgrade arxiv links to HTTPS
+    if 'url' in entry:
+        pattern = re.compile(r'^http://arxiv\.org/')
+        entry['url'] = pattern.sub('https://arxiv.org/', entry['url'])
     if set_id is not None:
         entry['ID'] = set_id
     return bibtexparser.dumps(bibdb)
