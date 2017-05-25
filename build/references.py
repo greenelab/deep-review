@@ -76,13 +76,13 @@ ref_df = ref_df.merge(tag_df[['text', 'citation']], how='left')
 ref_df.citation.fillna(ref_df.text.str.lstrip('@'), inplace=True)
 
 
-def get_standard_citatation(citation, cache):
+def get_standard_citatation(citation, cache, override):
     """
     For a citation, return (standard_citation, citation_metadata).
     Returns (None, None) if citation metadata not retrievable.
     """
     try:
-        metadata = citation_to_metadata(citation, cache)
+        metadata = citation_to_metadata(citation, cache, override)
         return metadata['standard_citation'], metadata['citation_id']
     except Exception as e:
         return None, None
@@ -98,9 +98,15 @@ if use_cache:
 else:
     metadata_cache = {}
 
+# Read manual citations (overrides)
+with ref_dir.joinpath('manual-references.json').open() as read_file:
+    overrides = json.load(read_file)
+overrides = {ref.pop('standard_citation'): ref for ref in overrides}
+
 # Get metadata and populate standard_citation and citation_id columns
-ref_df['standard_citation'], ref_df['citation_id'] = zip(
-    *ref_df.citation.apply(get_standard_citatation, cache=metadata_cache))
+result = ref_df.citation.apply(
+    get_standard_citatation, cache=metadata_cache, override=overrides)
+ref_df['standard_citation'], ref_df['citation_id'] = zip(*result)
 
 broken_citations = ref_df[ref_df.citation_id.isnull()]
 if not broken_citations.empty:
