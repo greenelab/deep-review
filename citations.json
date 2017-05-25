@@ -11273,91 +11273,41 @@
     "identifer": "10.1093/bib/bbw110",
     "standard_citation": "doi:10.1093/bib/bbw110",
     "citeproc": {
-      "indexed": {
-        "date-parts": [
-          [
-            2017,
-            5,
-            12
-          ]
-        ],
-        "date-time": "2017-05-12T17:44:36Z",
-        "timestamp": 1494611076719
-      },
-      "reference-count": 0,
-      "publisher": "Oxford University Press (OUP)",
-      "content-domain": {
-        "domain": [],
-        "crossmark-restriction": false
-      },
-      "short-container-title": [
-        "Briefings in Bioinformatics"
-      ],
-      "DOI": "10.1093/bib/bbw110",
       "type": "article-journal",
-      "created": {
-        "date-parts": [
-          [
-            2016,
-            10,
-            11
-          ]
-        ],
-        "date-time": "2016-10-11T14:19:40Z",
-        "timestamp": 1476195580000
-      },
-      "source": "Crossref",
-      "is-referenced-by-count": 0,
-      "title": "OUP accepted manuscript",
-      "prefix": "10.1093",
-      "member": "286",
-      "published-online": {
-        "date-parts": [
-          [
-            2016
-          ]
-        ]
-      },
-      "container-title": "Briefings In Bioinformatics",
-      "original-title": [],
-      "deposited": {
-        "date-parts": [
-          [
-            2017,
-            1,
-            23
-          ]
-        ],
-        "date-time": "2017-01-23T17:12:40Z",
-        "timestamp": 1485191560000
-      },
-      "score": 1.0,
-      "subtitle": [],
-      "short-title": [],
+      "title": "A review of validation strategies for computational drug repositioning",
+      "container-title": "Briefings in Bioinformatics",
+      "source": "academic.oup.com",
+      "URL": "https://academic.oup.com/bib/article/doi/10.1093/bib/bbw110/2562646/A-review-of-validation-strategies-for",
+      "DOI": "10.1093/bib/bbw110",
+      "journalAbbreviation": "Brief Bioinform",
+      "author": [
+        {
+          "family": "Brown",
+          "given": "Adam S."
+        },
+        {
+          "family": "Patel",
+          "given": "Chirag J."
+        }
+      ],
       "issued": {
         "date-parts": [
           [
-            2016
+            "2016",
+            11,
+            22
           ]
         ]
       },
-      "references-count": 0,
-      "URL": "http://dx.doi.org/10.1093/bib/bbw110",
-      "relation": {},
-      "issn-type": [
-        {
-          "value": "1467-5463",
-          "type": "print"
-        },
-        {
-          "value": "1477-4054",
-          "type": "electronic"
-        }
-      ],
-      "subject": [
-        "Molecular Biology",
-        "Information Systems"
-      ],
+      "accessed": {
+        "date-parts": [
+          [
+            "2017",
+            5,
+            23
+          ]
+        ]
+      },
       "id": "ir7ElHha"
     },
     "citation_id": "ir7ElHha"
@@ -24769,19 +24719,51 @@
     "identifer": "https://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimization.pdf",
     "standard_citation": "url:https://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimization.pdf",
     "citeproc": {
-      "URL": "https://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimization.pdf",
+      "type": "paper-conference",
+      "title": "Algorithms for Hyper-parameter Optimization",
+      "container-title": "Proceedings of the 24th International Conference on Neural Information Processing Systems",
+      "collection-title": "NIPS'11",
+      "publisher": "Curran Associates Inc.",
+      "publisher-place": "USA",
+      "page": "2546–2554",
+      "source": "ACM Digital Library",
+      "event-place": "USA",
+      "abstract": "Several recent advances to the state of the art in image classification benchmarks have come from better configurations of existing techniques rather than novel approaches to feature learning. Traditionally, hyper-parameter optimization has been the job of humans because they can be very efficient in regimes where only a few trials are possible. Presently, computer clusters and GPU processors make it possible to run more trials and we show that algorithmic approaches can find better results. We present hyper-parameter optimization results on tasks of training neural networks and deep belief networks (DBNs). We optimize hyper-parameters using random search and two new greedy sequential methods based on the expected improvement criterion. Random search has been shown to be sufficiently efficient for learning neural networks for several datasets, but we show it is unreliable for training DBNs. The sequential algorithms are applied to the most difficult DBN learning problems from [1] and find significantly better results than the best previously reported. This work contributes novel techniques for making response surface models P(y|x) in which many elements of hyper-parameter assignment (x) are known to be irrelevant given particular values of other elements.",
+      "URL": "http://dl.acm.org/citation.cfm?id=2986459.2986743",
+      "author": [
+        {
+          "family": "Bergstra",
+          "given": "James"
+        },
+        {
+          "family": "Bardenet",
+          "given": "Rémi"
+        },
+        {
+          "family": "Bengio",
+          "given": "Yoshua"
+        },
+        {
+          "family": "Kégl",
+          "given": "Balázs"
+        }
+      ],
       "issued": {
         "date-parts": [
           [
-            2014,
-            4,
+            "2011"
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            "2017",
+            5,
             23
           ]
         ]
       },
-      "greycite-status": "Scanned",
-      "greycite-scanned": "2017-05-17 02:09:05",
-      "type": "webpage",
       "id": "wz83yfHF"
     },
     "citation_id": "wz83yfHF"
@@ -27396,11 +27378,38 @@
     "identifer": "http://www.iro.umontreal.ca/~lisa/publications2/index.php/publications/show/247",
     "standard_citation": "url:http://www.iro.umontreal.ca/~lisa/publications2/index.php/publications/show/247",
     "citeproc": {
+      "type": "report",
+      "title": "Visualizing Higher-Layer Features of a Deep Network",
+      "publisher": "University of Montreal",
+      "abstract": "Deep architectures have demonstrated state-of-the-art results in a variety of settings, especially with vision datasets. Beyond the model definitions and the quantitative analyses, there is a need for qualitative comparisons of the solutions learned by various deep architectures. The goal of this paper is to find good qualitative interpretations of high level features represented by such models. To this end, we contrast and compare several techniques applied on Stacked Denoising Autoencoders and Deep Belief Networks, trained on several vision datasets. We show that, perhaps counter-intuitively, such interpretation is possible at the unit level, that it is simple to accomplish and that the results are consistent across various techniques. We hope that such techniques will allow researchers in deep architectures to understand more of how and why deep architectures work",
       "URL": "http://www.iro.umontreal.ca/~lisa/publications2/index.php/publications/show/247",
-      "title": "Visualizing Higher-Layer Features of a Deep Network - LISA - Publications - Aigaion 2.0",
-      "greycite-status": "Scanned",
-      "greycite-scanned": "2017-05-17 02:09:40",
-      "type": "webpage",
+      "number": "1341",
+      "author": [
+        {
+          "family": "Erhan",
+          "given": "Dumitru"
+        },
+        {
+          "family": "Bengio",
+          "given": "Yoshua"
+        },
+        {
+          "family": "Courville",
+          "given": "Aaron"
+        },
+        {
+          "family": "Vincent",
+          "given": "Pascal"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            "2009",
+            6
+          ]
+        ]
+      },
       "id": "UAAd9Uez"
     },
     "citation_id": "UAAd9Uez"
@@ -31590,19 +31599,47 @@
     "identifer": "https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf",
     "standard_citation": "url:https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf",
     "citeproc": {
-      "URL": "https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf",
+      "type": "paper-conference",
+      "title": "ImageNet Classification with Deep Convolutional Neural Networks",
+      "container-title": "Proceedings of the 25th International Conference on Neural Information Processing Systems",
+      "collection-title": "NIPS'12",
+      "publisher": "Curran Associates Inc.",
+      "publisher-place": "USA",
+      "page": "1097–1105",
+      "source": "ACM Digital Library",
+      "event-place": "USA",
+      "abstract": "We trained a large, deep convolutional neural network to classify the 1.2 million high-resolution images in the ImageNet LSVRC-2010 contest into the 1000 different classes. On the test data, we achieved top-1 and top-5 error rates of 37.5% and 17.0% which is considerably better than the previous state-of-the-art. The neural network, which has 60 million parameters and 650,000 neurons, consists of five convolutional layers, some of which are followed by max-pooling layers, and three fully-connected layers with a final 1000-way softmax. To make training faster, we used non-saturating neurons and a very efficient GPU implementation of the convolution operation. To reduce overriding in the fully-connected layers we employed a recently-developed regularization method called \"dropout\" that proved to be very effective. We also entered a variant of this model in the ILSVRC-2012 competition and achieved a winning top-5 test error rate of 15.3%, compared to 26.2% achieved by the second-best entry.",
+      "URL": "http://dl.acm.org/citation.cfm?id=2999134.2999257",
+      "author": [
+        {
+          "family": "Krizhevsky",
+          "given": "Alex"
+        },
+        {
+          "family": "Sutskever",
+          "given": "Ilya"
+        },
+        {
+          "family": "Hinton",
+          "given": "Geoffrey E."
+        }
+      ],
       "issued": {
         "date-parts": [
           [
-            2014,
-            4,
+            "2012"
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            "2017",
+            5,
             23
           ]
         ]
       },
-      "greycite-status": "Scanned",
-      "greycite-scanned": "2017-05-17 02:10:21",
-      "type": "webpage",
       "id": "CCS5KSIM"
     },
     "citation_id": "CCS5KSIM"
@@ -34466,12 +34503,34 @@
     "identifer": "https://repozitorij.uni-lj.si/IzpisGradiva.php?id=85515",
     "standard_citation": "url:https://repozitorij.uni-lj.si/IzpisGradiva.php?id=85515",
     "citeproc": {
+      "type": "report",
+      "title": "Globoko ucenje na genomskih in filogenetskih podatkih",
+      "publisher": "Univerza v Ljubljani, Fakulteta za racunalništvo in informatiko",
+      "source": "repozitorij.uni-lj.si",
       "URL": "https://repozitorij.uni-lj.si/IzpisGradiva.php?id=85515",
-      "title": "RUL - Napaka / Error",
-      "greycite-status": "Scanned",
-      "greycite-scanned": "2017-05-17 02:31:08",
-      "redirects-to": "https://repozitorij.uni-lj.si/Napaka.php",
-      "type": "webpage",
+      "language": "slv",
+      "author": [
+        {
+          "family": "Mrzelj",
+          "given": "Nina"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            "2016"
+          ]
+        ]
+      },
+      "accessed": {
+        "date-parts": [
+          [
+            "2017",
+            5,
+            23
+          ]
+        ]
+      },
       "id": "iPIJrVVs"
     },
     "citation_id": "iPIJrVVs"
@@ -34585,19 +34644,53 @@
     "identifer": "https://ai.stanford.edu/~ang/papers/icml11-MultimodalDeepLearning.pdf",
     "standard_citation": "url:https://ai.stanford.edu/~ang/papers/icml11-MultimodalDeepLearning.pdf",
     "citeproc": {
-      "URL": "https://ai.stanford.edu/~ang/papers/icml11-MultimodalDeepLearning.pdf",
+      "type": "paper-conference",
+      "title": "Multimodal Deep Learning",
+      "container-title": "Proceedings of the 28th International Conference on Machine Learning",
+      "source": "Google Scholar",
+      "URL": "https://ccrma.stanford.edu/~juhan/pubs/NgiamKhoslaKimNamLeeNg2011.pdf",
+      "author": [
+        {
+          "family": "Ngiam",
+          "given": "Jiquan"
+        },
+        {
+          "family": "Khosla",
+          "given": "Aditya"
+        },
+        {
+          "family": "Kim",
+          "given": "Mingyu"
+        },
+        {
+          "family": "Nam",
+          "given": "Juhan"
+        },
+        {
+          "family": "Lee",
+          "given": "Honglak"
+        },
+        {
+          "family": "Ng",
+          "given": "Andrew Y."
+        }
+      ],
       "issued": {
         "date-parts": [
           [
-            2011,
-            5,
-            15
+            "2011"
           ]
         ]
       },
-      "greycite-status": "Scanned",
-      "greycite-scanned": "2017-05-17 02:12:43",
-      "type": "webpage",
+      "accessed": {
+        "date-parts": [
+          [
+            "2017",
+            5,
+            23
+          ]
+        ]
+      },
       "id": "1eN66lwn"
     },
     "citation_id": "1eN66lwn"
@@ -36091,19 +36184,73 @@
     "identifer": "https://openreview.net/pdf?id=Sk-oDY9ge",
     "standard_citation": "url:https://openreview.net/pdf?id=Sk-oDY9ge",
     "citeproc": {
-      "URL": "https://openreview.net/pdf?id=Sk-oDY9ge",
+      "type": "article-journal",
+      "title": "Diet Networks: Thin Parameters for Fat Genomics",
+      "container-title": "International Conference on Learning Representations 2017",
+      "source": "openreview.net",
+      "URL": "https://openreview.net/forum?id=Sk-oDY9ge&noteId=Sk-oDY9ge",
+      "shortTitle": "Diet Networks",
+      "journalAbbreviation": "ICLR 2017",
+      "author": [
+        {
+          "family": "Romero",
+          "given": "Adriana"
+        },
+        {
+          "family": "Carrier",
+          "given": "Pierre Luc"
+        },
+        {
+          "family": "Erraqabi",
+          "given": "Akram"
+        },
+        {
+          "family": "Sylvain",
+          "given": "Tristan"
+        },
+        {
+          "family": "Auvolat",
+          "given": "Alex"
+        },
+        {
+          "family": "Dejoie",
+          "given": "Etienne"
+        },
+        {
+          "family": "Legault",
+          "given": "Marc-André"
+        },
+        {
+          "family": "Dubé",
+          "given": "Marie-Pierre"
+        },
+        {
+          "family": "Hussin",
+          "given": "Julie G."
+        },
+        {
+          "family": "Bengio",
+          "given": "Yoshua"
+        }
+      ],
       "issued": {
         "date-parts": [
           [
-            2017,
-            3,
-            3
+            "2016",
+            11,
+            4
           ]
         ]
       },
-      "greycite-status": "Scanned",
-      "greycite-scanned": "2017-05-17 02:12:58",
-      "type": "webpage",
+      "accessed": {
+        "date-parts": [
+          [
+            "2017",
+            5,
+            23
+          ]
+        ]
+      },
       "id": "15JUKBg9y"
     },
     "citation_id": "15JUKBg9y"
@@ -40005,20 +40152,56 @@
     "identifer": "http://www.bioinf.at/publications/2014/NIPS2014a.pdf",
     "standard_citation": "url:http://www.bioinf.at/publications/2014/NIPS2014a.pdf",
     "citeproc": {
-      "URL": "http://www.bioinf.at/publications/2014/NIPS2014a.pdf",
-      "title": "\n            \n               \n            \n         ",
+      "type": "article-journal",
+      "title": "Deep learning as an opportunity in virtual screening",
+      "container-title": "Neural Information Processing Systems 2014: Deep Learning and Representation Learning Workshop",
+      "URL": "http://www.dlworkshop.org/23.pdf?attredirects=0",
+      "author": [
+        {
+          "family": "Unterthiner",
+          "given": "Thomas"
+        },
+        {
+          "family": "Mayr",
+          "given": "Andreas"
+        },
+        {
+          "family": "Klambauer",
+          "given": "Günter"
+        },
+        {
+          "family": "Steijaert",
+          "given": "Marvin"
+        },
+        {
+          "family": "Wegner",
+          "given": "Jörg K."
+        },
+        {
+          "family": "Ceulemans",
+          "given": "Hugo"
+        },
+        {
+          "family": "Hochreiter",
+          "given": "Sepp"
+        }
+      ],
       "issued": {
         "date-parts": [
           [
-            2015,
-            3,
-            4
+            "2014"
           ]
         ]
       },
-      "greycite-status": "Scanned",
-      "greycite-scanned": "2017-05-17 02:13:16",
-      "type": "webpage",
+      "accessed": {
+        "date-parts": [
+          [
+            "2017",
+            5,
+            19
+          ]
+        ]
+      },
       "id": "F8fP2vAg"
     },
     "citation_id": "F8fP2vAg"
@@ -42724,19 +42907,67 @@
     "identifer": "https://eprint.iacr.org/2017/281.pdf",
     "standard_citation": "url:https://eprint.iacr.org/2017/281.pdf",
     "citeproc": {
-      "URL": "https://eprint.iacr.org/2017/281.pdf",
+      "type": "report",
+      "title": "Practical Secure Aggregation for Privacy Preserving Machine Learning",
+      "genre": "Cryptology ePrint Archive",
+      "source": "ePrint IACR",
+      "abstract": "We design a novel, communication-efficient, failure-robust protocol for secure aggregation of high-dimensional data. Our protocol allows a server to compute the sum of large, user-held data vectors from mobile devices in a secure manner (i.e. without learning each user's individual contribution), and can be used, for example, in a federated learning setting, to aggregate user-provided model updates for a deep neural network. We prove the security of our protocol in the honest-but-curious and malicious settings, and show that security is maintained even if an arbitrarily chosen subset of users drop out at any time. We evaluate the efficiency of our protocol and show, by complexity analysis and a concrete implementation, that its runtime and communication overhead remain low even on large data sets and client pools. For 16-bit input values, our protocol offerscommunication expansion forusers and-dimensional vectors, andexpansion for\n\nusers and-dimensional vectors over sending data in the clear.",
+      "URL": "https://eprint.iacr.org/2017/281",
+      "number": "281",
+      "author": [
+        {
+          "family": "Bonawitz",
+          "given": "Keith"
+        },
+        {
+          "family": "Ivanov",
+          "given": "Vladimir"
+        },
+        {
+          "family": "Kreuter",
+          "given": "Ben"
+        },
+        {
+          "family": "Marcedone",
+          "given": "Antonio"
+        },
+        {
+          "family": "McMahan",
+          "given": "H. Brendan"
+        },
+        {
+          "family": "Patel",
+          "given": "Sarvar"
+        },
+        {
+          "family": "Ramage",
+          "given": "Daniel"
+        },
+        {
+          "family": "Segal",
+          "given": "Aaron"
+        },
+        {
+          "family": "Seth",
+          "given": "Karn"
+        }
+      ],
       "issued": {
         "date-parts": [
           [
-            2017,
-            4,
-            5
+            "2017"
           ]
         ]
       },
-      "greycite-status": "Scanned",
-      "greycite-scanned": "2017-05-09 00:12:11",
-      "type": "webpage",
+      "accessed": {
+        "date-parts": [
+          [
+            "2017",
+            5,
+            23
+          ]
+        ]
+      },
       "id": "1GprsH3DV"
     },
     "citation_id": "1GprsH3DV"
