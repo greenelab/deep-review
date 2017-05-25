@@ -381,8 +381,8 @@ existing (virtual) chemical libraries, analogous to robotic high-throughput "wet
 lab" screening, _de novo_ drug design aims to directly _generate_ active
 compounds [@doi:10.1002/wcms.49 @doi:10.1021/acs.jmedchem.5b01849].
 
-Drug design attempts to model the typical design-synthesize-test cycle of drug
-discovery [@doi:10.1002/wcms.49]. *De novo* design explores the much larger
+*De novo* drug design attempts to model the typical design-synthesize-test cycle of drug
+discovery [@doi:10.1002/wcms.49]. It explores the much larger
 space of an estimated 10<sup>60</sup> synthesizable organic molecules with
 drug-like properties without explicit enumeration [@doi:10.1002/wcms.1104]. To
 test or score structures, algorithms like those discussed earlier are used. To
@@ -419,7 +419,7 @@ Autoencoder, which takes the SMILES grammar into account and is guaranteed to
 produce syntactically valid SMILES, has been proposed to alleviate this issue
 [@arxiv:1703.01925].
 
-Another approach to drug design is to train character-based RNNs on large
+Another approach to *de novo* design is to train character-based RNNs on large
 collections of molecules, for example, ChEMBL [@doi:10.1093/nar/gkr777], to
 first obtain a generic generative model for drug-like compounds
 [@tag:Segler2017_drug_design]. These generative models successfully learn the
