@@ -15346,6 +15346,13 @@
       "date-time": "2017-05-21T01:42:31Z",
       "timestamp": 1495330951449
     },
+    "issued": {
+      "date-parts": [
+        [
+          1994
+        ]
+      ]
+    },
     "reference-count": 7,
     "publisher": "IEEE",
     "content-domain": {
@@ -28024,34 +28031,81 @@
   },
   {
     "URL": "http://research.google.com/archive/large_deep_networks_nips2012.html",
-    "title": "Google Research Publication: Large Scale Distributed Deep Networks",
+    "type": "webpage",
+    "title": "Large Scale Distributed Deep Networks",
+    "container-title": "Neural Information Processing Systems 2012",
     "issued": {
       "date-parts": [
         [
-          2016,
-          12,
-          15
+          2012,
+          12
         ]
       ]
     },
-    "greycite-status": "Scanned",
-    "greycite-scanned": "2017-05-17 02:09:18",
+    "author": [
+      {
+        "given": "Jeffrey",
+        "family": "Dean"
+      },
+      {
+        "given": "Greg S",
+        "family": "Corrado"
+      },
+      {
+        "given": "Rajat",
+        "family": "Monga"
+      },
+      {
+        "given": "Kai",
+        "family": "Chen"
+      },
+      {
+        "given": "Matthieu",
+        "family": "Devin"
+      },
+      {
+        "given": "Quoc V",
+        "family": "Le"
+      },
+      {
+        "given": "Mark Z",
+        "family": "Mao"
+      },
+      {
+        "given": "Marc’Aurelio",
+        "family": "Ranzato"
+      },
+      {
+        "given": "Andrew",
+        "family": "Senior"
+      },
+      {
+        "given": "Paul",
+        "family": "Tucker"
+      },
+      {
+        "given": "Ke",
+        "family": "Yang"
+      },
+      {
+        "given": "Andrew Y",
+        "family": "Ng"
+      }
+    ],
     "redirects-to": "https://research.google.com/archive/large_deep_networks_nips2012.html",
-    "type": "webpage",
     "id": "17cBimWgp"
   },
   {
     "URL": "https://github.com/deepchem/deepchem",
     "title": "deepchem/deepchem",
     "container-title": "GitHub",
-    "author": [
-      {
-        "family": "deepchem",
-        "given": ""
-      }
-    ],
-    "greycite-status": "Scanned",
-    "greycite-scanned": "2017-05-17 02:09:21",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
     "type": "webpage",
     "id": "Ytvk62dX"
   },
@@ -29235,19 +29289,15 @@
     "id": "117PEpTMe"
   },
   {
-    "URL": "https://www.synapse.org/",
-    "title": "Sage Synapse : Contribute to the Cure",
+    "URL": "https://www.synapse.org/#!Synapse:syn6131484/wiki/402026",
+    "title": "ENCODE-DREAM in vivo Transcription Factor Binding Site Prediction Challenge",
     "issued": {
       "date-parts": [
         [
-          2017,
-          5,
-          13
+          2017
         ]
       ]
     },
-    "greycite-status": "Scanned",
-    "greycite-scanned": "2017-05-16 19:57:04",
     "type": "webpage",
     "id": "wW6QbBXz"
   },
@@ -29450,14 +29500,13 @@
     "URL": "https://github.com/maxpumperla/elephas",
     "title": "maxpumperla/elephas",
     "container-title": "GitHub",
-    "author": [
-      {
-        "family": "maxpumperla",
-        "given": ""
-      }
-    ],
-    "greycite-status": "Scanned",
-    "greycite-scanned": "2017-05-17 02:09:43",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
     "type": "webpage",
     "id": "y9IoEy4r"
   },
@@ -32509,14 +32558,13 @@
     "URL": "https://github.com/fchollet/keras",
     "title": "fchollet/keras",
     "container-title": "GitHub",
-    "author": [
-      {
-        "family": "fchollet",
-        "given": ""
-      }
-    ],
-    "greycite-status": "Scanned",
-    "greycite-scanned": "2017-05-17 02:10:13",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
     "type": "webpage",
     "id": "FwEK0msb"
   },
@@ -35914,7 +35962,7 @@
     "URL": "http://googleresearch.blogspot.co.uk/2015/06/inceptionism-going-deeper-into-neural.html",
     "greycite-canonical-uri": "https://research.googleblog.com/2015/06/inceptionism-going-deeper-into-neural.html",
     "title": "Inceptionism: Going Deeper into Neural Networks",
-    "container-title": "Research Blog",
+    "container-title": "Google Research Blog",
     "issued": {
       "date-parts": [
         [
@@ -35925,12 +35973,18 @@
     },
     "author": [
       {
-        "family": "@googleresearch",
-        "given": ""
+        "given": "Alexander",
+        "family": "Mordvintsev"
+      },
+      {
+        "given": "Christopher",
+        "family": "Olah"
+      },
+      {
+        "given": "Mike",
+        "family": "Tyka"
       }
     ],
-    "greycite-status": "Scanned",
-    "greycite-scanned": "2017-05-17 02:10:33",
     "archives": [
       "http://wayback.archive.org/web/http://googleresearch.blogspot.co.uk/2015/06/inceptionism-going-deeper-into-neural.html"
     ],
@@ -36267,24 +36321,20 @@
   },
   {
     "URL": "https://www.nigms.nih.gov/Education/Documents/curiosity.pdf",
-    "title": "\n            \n               Print\n            \n         ",
+    "title": "Curiosity Creates Cures: The Value and Impact of Basic Research",
     "issued": {
       "date-parts": [
         [
-          2014,
-          7,
-          21
+          2012,
+          5
         ]
       ]
     },
     "author": [
       {
-        "family": "Dunnavant",
-        "given": "Forrest"
+        "family": "NIH"
       }
     ],
-    "greycite-status": "Scanned",
-    "greycite-scanned": "2017-05-17 02:12:51",
     "type": "webpage",
     "id": "ru0hjGeQ"
   },
@@ -39247,6 +39297,13 @@
       "date-time": "2016-05-25T10:10:30Z",
       "timestamp": 1464171030000
     },
+    "issued": {
+      "date-parts": [
+        [
+          1953
+        ]
+      ]
+    },
     "source": "Crossref",
     "is-referenced-by-count": 82,
     "title": "17. A Value for n-Person Games",
@@ -40011,12 +40068,10 @@
     },
     "author": [
       {
-        "family": "@BIIntelligence",
+        "family": "BI Intelligence",
         "given": ""
       }
     ],
-    "greycite-status": "Scanned",
-    "greycite-scanned": "2017-05-17 02:13:06",
     "redirects-to": "http://uk.businessinsider.com/ibm-edges-closer-to-human-speech-recognition-2017-3?r=US&IR=T",
     "archives": [
       "http://wayback.archive.org/web/http://www.businessinsider.com/ibm-edges-closer-to-human-speech-recognition-2017-3"
@@ -43933,12 +43988,10 @@
     },
     "author": [
       {
-        "family": "@",
-        "given": ""
+        "family": "Palmer",
+        "given": "Michael"
       }
     ],
-    "greycite-status": "Scanned",
-    "greycite-scanned": "2017-05-17 02:39:54",
     "archives": [
       "http://wayback.archive.org/web/http://ana.blogs.com/maestros/2006/11/data_is_the_new.html"
     ],
@@ -43974,18 +44027,30 @@
   },
   {
     "URL": "http://hazyresearch.github.io/snorkel/blog/weak_supervision.html",
-    "title": "Weak Supervision",
+    "title": "Data Programming: Machine Learning with Weak Supervision",
     "issued": {
       "date-parts": [
         [
-          2017,
-          5,
-          12
+          2016,
+          9,
+          19
         ]
       ]
     },
-    "greycite-status": "Scanned",
-    "greycite-scanned": "2017-05-17 02:13:28",
+    "author": [
+      {
+        "given": "Alex",
+        "family": "Ratner"
+      },
+      {
+        "given": "Stephen",
+        "family": "Bach"
+      },
+      {
+        "given": "Chris",
+        "family": "Ré"
+      }
+    ],
     "type": "webpage",
     "id": "hfcf5Hmi"
   },
@@ -44048,9 +44113,14 @@
   },
   {
     "URL": "http://www.cameo3d.org/",
-    "title": "\tCAMEO - Continuous Automated Model Evaluation - Welcome ",
-    "greycite-status": "Scanned",
-    "greycite-scanned": "2017-05-17 02:13:40",
+    "title": "CAMEO - Continuous Automated Model Evaluation",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
     "redirects-to": "https://www.cameo3d.org/",
     "type": "webpage",
     "id": "u9uApoaB"
@@ -44067,33 +44137,54 @@
         ]
       ]
     },
-    "greycite-status": "Scanned",
-    "greycite-scanned": "2017-05-17 02:13:41",
+    "author": [
+      {
+        "given": "Ian",
+        "family": "Goodfellow"
+      },
+      {
+        "given": "Yoshua",
+        "family": "Bengio"
+      },
+      {
+        "given": "Aaron",
+        "family": "Courville"
+      }
+    ],
     "type": "webpage",
     "id": "yg8NW0K7"
   },
   {
     "URL": "http://www.intel.com/pressroom/archive/speeches/ag080998.htm",
-    "title": " Academy of Management: Andrew S. Grove ",
+    "title": "Academy of Management: Andrew S. Grove",
     "issued": {
       "date-parts": [
         [
-          2004,
-          9,
-          10
+          1998,
+          8,
+          9
         ]
       ]
     },
-    "greycite-status": "Scanned",
-    "greycite-scanned": "2017-05-17 02:13:42",
+    "author": [
+      {
+        "family": "Grove",
+        "given": "Andrew S."
+      }
+    ],
     "type": "webpage",
     "id": "mAXsmd43"
   },
   {
     "URL": "http://www.predictioncenter.org/casp12/rrc_avrg_results.cgi",
     "title": "RR Results - CASP12",
-    "greycite-status": "Scanned",
-    "greycite-scanned": "2017-05-17 02:14:51",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
     "type": "webpage",
     "id": "zScWGveU"
   },
@@ -44165,14 +44256,13 @@
     "URL": "https://github.com/greenelab/deep-review",
     "title": "greenelab/deep-review",
     "container-title": "GitHub",
-    "author": [
-      {
-        "family": "greenelab",
-        "given": ""
-      }
-    ],
-    "greycite-status": "Scanned",
-    "greycite-scanned": "2017-05-18 17:25:21",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
     "type": "webpage",
     "id": "yLr4pV4G"
   },
