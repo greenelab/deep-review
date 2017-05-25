@@ -681,5 +681,171 @@
     ],
     "type": "webpage",
     "standard_citation": "url:http://hazyresearch.github.io/snorkel/blog/weak_supervision.html"
+  },
+  {
+    "URL": "http://research.google.com/archive/large_deep_networks_nips2012.html",
+    "title": "Google Research Publication: Large Scale Distributed Deep Networks",
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          12,
+          15
+        ]
+      ]
+    },
+    "greycite-status": "Scanned",
+    "greycite-scanned": "2017-05-17 02:09:18",
+    "redirects-to": "https://research.google.com/archive/large_deep_networks_nips2012.html",
+    "type": "webpage",
+    "id": "17cBimWgp"
+  },
+  {
+    "URL": "http://www.deeplearningbook.org/",
+    "title": "Deep Learning",
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          4,
+          3
+        ]
+      ]
+    },
+    "greycite-status": "Scanned",
+    "greycite-scanned": "2017-05-17 02:13:41",
+    "type": "webpage",
+    "id": "yg8NW0K7"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          5,
+          21
+        ]
+      ],
+      "date-time": "2017-05-21T01:42:31Z",
+      "timestamp": 1495330951449
+    },
+    "reference-count": 7,
+    "publisher": "IEEE",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "DOI": "10.1109/icnn.1994.374637",
+    "type": "paper-conference",
+    "created": {
+      "date-parts": [
+        [
+          2002,
+          12,
+          17
+        ]
+      ],
+      "date-time": "2002-12-17T16:08:05Z",
+      "timestamp": 1040141285000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "End effector target position learning using feedforward with error back-propagation and recurrent neural networks",
+    "prefix": "10.1109",
+    "author": [
+      {
+        "given": "J.",
+        "family": "Zurada",
+        "affiliation": []
+      }
+    ],
+    "member": "263",
+    "container-title": "Proceedings of 1994 IEEE International Conference on Neural Networks (ICNN'94)",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          3,
+          9
+        ]
+      ],
+      "date-time": "2017-03-09T07:36:33Z",
+      "timestamp": 1489044993000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "references-count": 7,
+    "URL": "https://doi.org/10.1109/icnn.1994.374637",
+    "relation": {},
+    "id": "YUms527e"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          5,
+          25
+        ]
+      ],
+      "date-time": "2017-05-25T12:37:20Z",
+      "timestamp": 1495715840346
+    },
+    "publisher-location": "Princeton",
+    "reference-count": 0,
+    "publisher": "Princeton University Press",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "DOI": "10.1515/9781400881970-018",
+    "type": "chapter",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          5,
+          25
+        ]
+      ],
+      "date-time": "2016-05-25T10:10:30Z",
+      "timestamp": 1464171030000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 82,
+    "title": "17. A Value for n-Person Games",
+    "prefix": "10.1515",
+    "author": [
+      {
+        "given": "L. S.",
+        "family": "Shapley",
+        "affiliation": []
+      }
+    ],
+    "member": "374",
+    "container-title": "Contributions to the Theory of Games (AM-28), Volume II",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          5,
+          18
+        ]
+      ],
+      "date-time": "2017-05-18T21:46:44Z",
+      "timestamp": 1495144004000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "references-count": 0,
+    "URL": "https://doi.org/10.1515/9781400881970-018",
+    "relation": {},
+    "id": "YBJdA6LJ"
   }
 ]
