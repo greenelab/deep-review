@@ -35,24 +35,24 @@ Casey S. Greene<sup>2,†</sup>
 1. Molecular Biosciences and Bioengineering Graduate Program, University of Hawaii at Manoa, Honolulu, HI
 2. Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA
 3. Genomics and Computational Biology Graduate Group, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA
-4. Department of Computational Medicine and Bioinformatics, University of Michigan Medical School, Ann Arbor, MI;
-5. Harvard Medical School, Boston, MA;
-6. Computational Biology and Stats, Target Sciences, GlaxoSmithKline, Stevenage, United Kingdom;
-7. Data Science Institute, Imperial College London, London, United Kingdom;
-8. Electrical Engineering and Computer Science, Vanderbilt University, Nashville, TN;
-9. Ecological and Evolutionary Signal-processing and Informatics Laboratory, Department of Electrical and Computer Engineering, Drexel University, Philadelphia, PA;
-10. Computational Biology Department, School of Computer Science, Carnegie Mellon University, Pittsburgh, PA;
-11. Biophysics Program, Stanford University, Stanford, CA;
-12. Department of Computer Science, University of Virginia, Charlottesville, VA;
-13. Department of Electrical and Computer Engineering, Drexel University, Philadelphia, PA;
-14. Imaging Platform, Broad Institute of Harvard and MIT, Cambridge, MA;
-15. Department of Computer Science, Stanford University, Stanford, CA;
-16. Toyota Technological Institute at Chicago, Chicago, IL;
-17. Department of Computer Science, Trinity University, San Antonio, TX;
-18. Department of Wildlife Ecology and Conservation, University of Florida, Gainesville, FL;
-19. ClosedLoop.ai, Austin, TX;
-20. Department of Genetics and Department of Computer Science, Stanford University, Stanford, CA;
-21. National Center for Biotechnology Information and National Library of Medicine, National Institutes of Health, Bethesda, MD;
-22. Division of Biomedical Informatics and Personalized Medicine, University of Colorado School of Medicine, Aurora, CO;
-23. Institute of Organic Chemistry, Westfälische Wilhelms-Universität Münster, Münster, Germany;
+4. Department of Computational Medicine and Bioinformatics, University of Michigan Medical School, Ann Arbor, MI
+5. Harvard Medical School, Boston, MA
+6. Computational Biology and Stats, Target Sciences, GlaxoSmithKline, Stevenage, United Kingdom
+7. Data Science Institute, Imperial College London, London, United Kingdom
+8. Electrical Engineering and Computer Science, Vanderbilt University, Nashville, TN
+9. Ecological and Evolutionary Signal-processing and Informatics Laboratory, Department of Electrical and Computer Engineering, Drexel University, Philadelphia, PA
+10. Computational Biology Department, School of Computer Science, Carnegie Mellon University, Pittsburgh, PA
+11. Biophysics Program, Stanford University, Stanford, CA
+12. Department of Computer Science, University of Virginia, Charlottesville, VA
+13. Department of Electrical and Computer Engineering, Drexel University, Philadelphia, PA
+14. Imaging Platform, Broad Institute of Harvard and MIT, Cambridge, MA
+15. Department of Computer Science, Stanford University, Stanford, CA
+16. Toyota Technological Institute at Chicago, Chicago, IL
+17. Department of Computer Science, Trinity University, San Antonio, TX
+18. Department of Wildlife Ecology and Conservation, University of Florida, Gainesville, FL
+19. ClosedLoop.ai, Austin, TX
+20. Department of Genetics and Department of Computer Science, Stanford University, Stanford, CA
+21. National Center for Biotechnology Information and National Library of Medicine, National Institutes of Health, Bethesda, MD
+22. Division of Biomedical Informatics and Personalized Medicine, University of Colorado School of Medicine, Aurora, CO
+23. Institute of Organic Chemistry, Westfälische Wilhelms-Universität Münster, Münster, Germany
 24. Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison and Morgridge Institute for Research, Madison, WI
