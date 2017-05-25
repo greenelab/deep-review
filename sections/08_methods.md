@@ -53,7 +53,7 @@ We gratefully acknowledge Christof Angermueller, Kumardeep Chaudhary, Gökcen
 Eraslan, Michael M. Hoffman, Mikael Huss, Bharath Ramsundar and Xun Zhu for
 their discussion of the manuscript and reviewed papers on GitHub. We would like
 to thank Zhiyong Lu for revisions to the text that were not captured on GitHub
-as well as GitHub users aaronsheldon, swamidass, and traversc who contributed
+as well as GitHub users aaronsheldon and swamidass who contributed
 text but did not formally approve the manuscript. Finally, we acknowledge
 funding from the Gordon and Betty Moore Foundation awards GBMF4552 (C.S.G. and
 D.S.H.) and GBMF4563 (D.J.H.); the National Institutes of Health awards
