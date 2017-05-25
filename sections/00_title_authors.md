@@ -25,34 +25,34 @@ Anshul Kundaje<sup>20</sup>,
 Yifan Peng<sup>21</sup>,
 Laura K. Wiley<sup>22</sup>,
 Marwin H.S. Segler<sup>23</sup>,
-Anthony Gitter<sup>24,+</sup>,
-Casey S. Greene<sup>2,+</sup>
+Anthony Gitter<sup>24,†</sup>,
+Casey S. Greene<sup>2,†</sup>
 
 <sup>*</sup> Author order was determined with a randomized algorithm
 
-<sup>+</sup> To whom correspondence should be addressed: gitter@biostat.wisc.edu (A.G.) and csgreene@upenn.edu (C.S.G.)
+<sup>†</sup> To whom correspondence should be addressed: gitter@biostat.wisc.edu (A.G.) and csgreene@upenn.edu (C.S.G.)
 
-<sup>1</sup>Molecular Biosciences and Bioengineering Graduate Program, University of Hawaii at Manoa, Honolulu, HI;
-<sup>2</sup>Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA;
-<sup>3</sup>Genomics and Computational Biology Graduate Group, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA;
-<sup>4</sup>Department of Computational Medicine and Bioinformatics, University of Michigan Medical School, Ann Arbor, MI;
-<sup>5</sup>Harvard Medical School, Boston, MA;
-<sup>6</sup>Computational Biology and Stats, Target Sciences, GlaxoSmithKline, Stevenage, United Kingdom;
-<sup>7</sup>Data Science Institute, Imperial College London, London, United Kingdom;
-<sup>8</sup>Electrical Engineering and Computer Science, Vanderbilt University, Nashville, TN;
-<sup>9</sup>Ecological and Evolutionary Signal-processing and Informatics Laboratory, Department of Electrical and Computer Engineering, Drexel University, Philadelphia, PA;
-<sup>10</sup>Computational Biology Department, School of Computer Science, Carnegie Mellon University, Pittsburgh, PA;
-<sup>11</sup>Biophysics Program, Stanford University, Stanford, CA;
-<sup>12</sup>Department of Computer Science, University of Virginia, Charlottesville, VA;
-<sup>13</sup>Department of Electrical and Computer Engineering, Drexel University, Philadelphia, PA;
-<sup>14</sup>Imaging Platform, Broad Institute of Harvard and MIT, Cambridge, MA;
-<sup>15</sup>Department of Computer Science, Stanford University, Stanford, CA;
-<sup>16</sup>Toyota Technological Institute at Chicago, Chicago, IL;
-<sup>17</sup>Department of Computer Science, Trinity University, San Antonio, TX;
-<sup>18</sup>Department of Wildlife Ecology and Conservation, University of Florida, Gainesville, FL;
-<sup>19</sup>ClosedLoop.ai, Austin, TX;
-<sup>20</sup>Department of Genetics and Department of Computer Science, Stanford University, Stanford, CA;
-<sup>21</sup>National Center for Biotechnology Information and National Library of Medicine, National Institutes of Health, Bethesda, MD;
-<sup>22</sup>Division of Biomedical Informatics and Personalized Medicine, University of Colorado School of Medicine, Aurora, CO;
-<sup>23</sup>Institute of Organic Chemistry, Westfälische Wilhelms-Universität Münster, Münster, Germany;
-<sup>24</sup>Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison and Morgridge Institute for Research, Madison, WI
+1. Molecular Biosciences and Bioengineering Graduate Program, University of Hawaii at Manoa, Honolulu, HI
+2. Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA
+3. Genomics and Computational Biology Graduate Group, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA
+4. Department of Computational Medicine and Bioinformatics, University of Michigan Medical School, Ann Arbor, MI;
+5. Harvard Medical School, Boston, MA;
+6. Computational Biology and Stats, Target Sciences, GlaxoSmithKline, Stevenage, United Kingdom;
+7. Data Science Institute, Imperial College London, London, United Kingdom;
+8. Electrical Engineering and Computer Science, Vanderbilt University, Nashville, TN;
+9. Ecological and Evolutionary Signal-processing and Informatics Laboratory, Department of Electrical and Computer Engineering, Drexel University, Philadelphia, PA;
+10. Computational Biology Department, School of Computer Science, Carnegie Mellon University, Pittsburgh, PA;
+11. Biophysics Program, Stanford University, Stanford, CA;
+12. Department of Computer Science, University of Virginia, Charlottesville, VA;
+13. Department of Electrical and Computer Engineering, Drexel University, Philadelphia, PA;
+14. Imaging Platform, Broad Institute of Harvard and MIT, Cambridge, MA;
+15. Department of Computer Science, Stanford University, Stanford, CA;
+16. Toyota Technological Institute at Chicago, Chicago, IL;
+17. Department of Computer Science, Trinity University, San Antonio, TX;
+18. Department of Wildlife Ecology and Conservation, University of Florida, Gainesville, FL;
+19. ClosedLoop.ai, Austin, TX;
+20. Department of Genetics and Department of Computer Science, Stanford University, Stanford, CA;
+21. National Center for Biotechnology Information and National Library of Medicine, National Institutes of Health, Bethesda, MD;
+22. Division of Biomedical Informatics and Personalized Medicine, University of Colorado School of Medicine, Aurora, CO;
+23. Institute of Organic Chemistry, Westfälische Wilhelms-Universität Münster, Münster, Germany;
+24. Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison and Morgridge Institute for Research, Madison, WI
