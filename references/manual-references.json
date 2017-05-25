@@ -56,7 +56,7 @@
   "standard_citation": "url:https://repozitorij.uni-lj.si/IzpisGradiva.php?id=85515",
   "type": "report",
   "title": "Globoko ucenje na genomskih in filogenetskih podatkih",
-  "publisher": "Univerza v Ljubljani, Fakulteta za ra?unalništvo in informatiko",
+  "publisher": "Univerza v Ljubljani, Fakulteta za racunalništvo in informatiko",
   "source": "repozitorij.uni-lj.si",
   "URL": "https://repozitorij.uni-lj.si/IzpisGradiva.php?id=85515",
   "language": "slv",
@@ -102,6 +102,15 @@
     "given": "Chirag J."
    }
   ],
+  "issued": {
+   "date-parts": [
+    [
+     "2016",
+     11,
+     22
+    ]
+   ]
+  },
   "accessed": {
    "date-parts": [
     [
