@@ -13,19 +13,19 @@ Gail L. Rosen<sup>9</sup>,
 Benjamin J. Lengerich<sup>10</sup>,
 Johnny Israeli<sup>11</sup>,
 Jack Lanchantin<sup>12</sup>,
-Stephen Woloszynek<sup>13</sup>,
-Anne E. Carpenter<sup>14</sup>,
-Avanti Shrikumar<sup>15</sup>,
-Jinbo Xu<sup>16</sup>,
-Evan M. Cofer<sup>17</sup>,
-David J. Harris<sup>18</sup>,
-Dave DeCaprio<sup>19</sup>,
+Stephen Woloszynek<sup>9</sup>,
+Anne E. Carpenter<sup>13</sup>,
+Avanti Shrikumar<sup>14</sup>,
+Jinbo Xu<sup>15</sup>,
+Evan M. Cofer<sup>16</sup>,
+David J. Harris<sup>17</sup>,
+Dave DeCaprio<sup>18</sup>,
 Yanjun Qi<sup>12</sup>,
-Anshul Kundaje<sup>20</sup>,
-Yifan Peng<sup>21</sup>,
-Laura K. Wiley<sup>22</sup>,
-Marwin H.S. Segler<sup>23</sup>,
-Anthony Gitter<sup>24,†</sup>,
+Anshul Kundaje<sup>19</sup>,
+Yifan Peng<sup>20</sup>,
+Laura K. Wiley<sup>21</sup>,
+Marwin H.S. Segler<sup>22</sup>,
+Anthony Gitter<sup>23,†</sup>,
 Casey S. Greene<sup>2,†</sup>
 
 <sup>*</sup> Author order was determined with a randomized algorithm
@@ -44,15 +44,14 @@ Casey S. Greene<sup>2,†</sup>
 10. Computational Biology Department, School of Computer Science, Carnegie Mellon University, Pittsburgh, PA
 11. Biophysics Program, Stanford University, Stanford, CA
 12. Department of Computer Science, University of Virginia, Charlottesville, VA
-13. Department of Electrical and Computer Engineering, Drexel University, Philadelphia, PA
-14. Imaging Platform, Broad Institute of Harvard and MIT, Cambridge, MA
-15. Department of Computer Science, Stanford University, Stanford, CA
-16. Toyota Technological Institute at Chicago, Chicago, IL
-17. Department of Computer Science, Trinity University, San Antonio, TX
-18. Department of Wildlife Ecology and Conservation, University of Florida, Gainesville, FL
-19. ClosedLoop.ai, Austin, TX
-20. Department of Genetics and Department of Computer Science, Stanford University, Stanford, CA
-21. National Center for Biotechnology Information and National Library of Medicine, National Institutes of Health, Bethesda, MD
-22. Division of Biomedical Informatics and Personalized Medicine, University of Colorado School of Medicine, Aurora, CO
-23. Institute of Organic Chemistry, Westfälische Wilhelms-Universität Münster, Münster, Germany
-24. Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison and Morgridge Institute for Research, Madison, WI
+13. Imaging Platform, Broad Institute of Harvard and MIT, Cambridge, MA
+14. Department of Computer Science, Stanford University, Stanford, CA
+15. Toyota Technological Institute at Chicago, Chicago, IL
+16. Department of Computer Science, Trinity University, San Antonio, TX
+17. Department of Wildlife Ecology and Conservation, University of Florida, Gainesville, FL
+18. ClosedLoop.ai, Austin, TX
+19. Department of Genetics and Department of Computer Science, Stanford University, Stanford, CA
+20. National Center for Biotechnology Information and National Library of Medicine, National Institutes of Health, Bethesda, MD
+21. Division of Biomedical Informatics and Personalized Medicine, University of Colorado School of Medicine, Aurora, CO
+22. Institute of Organic Chemistry, Westfälische Wilhelms-Universität Münster, Münster, Germany
+23. Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison and Morgridge Institute for Research, Madison, WI

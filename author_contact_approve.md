@@ -16,7 +16,7 @@
 | evancofer | Evan M. Cofer | 0000-0003-3877-0433 | Department of Computer Science, Trinity University, San Antonio, TX | ecofer@princeton.edu | Yes | NSF 1531594 |
 | DaveDeCaprio | Dave DeCaprio | 0000-0001-8931-9461 | ClosedLoop.ai, Austin, TX | daved@alum.mit.edu | Yes | |
 | akundaje | Anshul Kundaje | 0000-0003-3084-2287 | Department of Genetics and Department of Computer Science, Stanford University, Stanford, CA | akundaje@stanford.edu | Yes | NIH DP2GM123485 |
-| sw1 | Stephen Woloszynek | 0000-0003-0568-298X | Department of Electrical and Computer Engineering, Drexel University, Philadelphia, PA | sw424@drexel.edu | Yes | |
+| sw1 | Stephen Woloszynek | 0000-0003-0568-298X | Ecological and Evolutionary Signal-processing and Informatics Laboratory, Department of Electrical and Computer Engineering, Drexel University, Philadelphia, PA | sw424@drexel.edu | Yes | |
 | yfpeng | Yifan Peng | 0000-0001-9309-8331 | National Center for Biotechnology Information and National Library of Medicine, National Institutes of Health, Bethesda, MD | yifan.peng@nih.gov | Yes | National Institutes of Health Intramural Research Program and National Library of Medicine |
 | dhimmel | Daniel S. Himmelstein | 0000-0002-3012-7446 | Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA | daniel.himmelstein@gmail.com | Yes | Gordon and Betty Moore Foundation GBMF 4552 |
 | jacklanchantin | Jack Lanchantin | 0000-0003-0811-0944 | Department of Computer Science, University of Virginia, Charlottesville, VA | jjl5sw@virginia.edu | Yes | |
