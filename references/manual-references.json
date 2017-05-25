@@ -668,15 +668,15 @@
     "author": [
       {
         "given": "Alex",
-        "family": "Ratner",
+        "family": "Ratner"
       },
       {
         "given": "Stephen",
-        "family": "Bach",
+        "family": "Bach"
       },
       {
         "given": "Chris",
-        "family": "Ré",
+        "family": "Ré"
       }
     ],
     "type": "webpage",
@@ -684,21 +684,70 @@
   },
   {
     "URL": "http://research.google.com/archive/large_deep_networks_nips2012.html",
-    "title": "Google Research Publication: Large Scale Distributed Deep Networks",
+    "type": "article-journal",
+    "title": "Large Scale Distributed Deep Networks",
+    "container-title": "Neural Information Processing Systems 2012",
     "issued": {
       "date-parts": [
         [
-          2016,
-          12,
-          15
+          2012,
+          12
         ]
       ]
     },
-    "greycite-status": "Scanned",
-    "greycite-scanned": "2017-05-17 02:09:18",
+    "author": [
+      {
+        "given": "Jeffrey",
+        "family": "Dean"
+      },
+      {
+        "given": "Greg S",
+        "family": "Corrado"
+      },
+      {
+        "given": "Rajat",
+        "family": "Monga"
+      },
+      {
+        "given": "Kai",
+        "family": "Chen"
+      },
+      {
+        "given": "Matthieu",
+        "family": "Devin"
+      },
+      {
+        "given": "Quoc V",
+        "family": "Le"
+      },
+      {
+        "given": "Mark Z",
+        "family": "Mao"
+      },
+      {
+        "given": "Marc’Aurelio",
+        "family": "Ranzato"
+      },
+      {
+        "given": "Andrew",
+        "family": "Senior"
+      },
+      {
+        "given": "Paul",
+        "family": "Tucker"
+      },
+      {
+        "given": "Ke",
+        "family": "Yang"
+      },
+      {
+        "given": "Andrew Y",
+        "family": "Ng"
+      }
+    ],
     "redirects-to": "https://research.google.com/archive/large_deep_networks_nips2012.html",
     "type": "webpage",
-    "id": "17cBimWgp"
+    "standard_citation": "url:http://research.google.com/archive/large_deep_networks_nips2012.html"
   },
   {
     "URL": "http://www.deeplearningbook.org/",
@@ -712,10 +761,22 @@
         ]
       ]
     },
-    "greycite-status": "Scanned",
-    "greycite-scanned": "2017-05-17 02:13:41",
+    "author": [
+      {
+        "given": "Ian",
+        "family": "Goodfellow"
+      },
+      {
+        "given": "Yoshua",
+        "family": "Bengio"
+      },
+      {
+        "given": "Aaron",
+        "family": "Courville"
+      },
+    ],
     "type": "webpage",
-    "id": "yg8NW0K7"
+    "standard_citation": "url:http://www.deeplearningbook.org/"
   },
   {
     "indexed": {
@@ -728,6 +789,13 @@
       ],
       "date-time": "2017-05-21T01:42:31Z",
       "timestamp": 1495330951449
+    },
+    "issued": {
+      "date-parts": [
+        [
+          1994
+        ]
+      ]
     },
     "reference-count": 7,
     "publisher": "IEEE",
@@ -780,7 +848,7 @@
     "references-count": 7,
     "URL": "https://doi.org/10.1109/icnn.1994.374637",
     "relation": {},
-    "id": "YUms527e"
+    "standard_citation": "doi:10.1109/icnn.1994.374637"
   },
   {
     "indexed": {
@@ -815,6 +883,13 @@
       "date-time": "2016-05-25T10:10:30Z",
       "timestamp": 1464171030000
     },
+    "issued": {
+      "date-parts": [
+        [
+          1953
+        ]
+      ]
+    },
     "source": "Crossref",
     "is-referenced-by-count": 82,
     "title": "17. A Value for n-Person Games",
@@ -846,6 +921,6 @@
     "references-count": 0,
     "URL": "https://doi.org/10.1515/9781400881970-018",
     "relation": {},
-    "id": "YBJdA6LJ"
+    "standard_citation": "doi:10.1515/9781400881970-018"
   }
 ]
