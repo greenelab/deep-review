@@ -294,39 +294,6 @@ health -- the results show improved modeling and risk prediction accuracy.},
 }
 
 
-@article{TaPZBxYS,
- abstract = {Modern mobile devices have access to a wealth of data suitable for learning
-models, which in turn can greatly improve the user experience on the device.
-For example, language models can improve speech recognition and text entry, and
-image models can automatically select good photos. However, this rich data is
-often privacy sensitive, large in quantity, or both, which may preclude logging
-to the data center and training there using conventional approaches. We
-advocate an alternative that leaves the training data distributed on the mobile
-devices, and learns a shared model by aggregating locally-computed updates. We
-term this decentralized approach Federated Learning.
-We present a practical method for the federated learning of deep networks
-based on iterative model averaging, and conduct an extensive empirical
-evaluation, considering five different model architectures and four datasets.
-These experiments demonstrate the approach is robust to the unbalanced and
-non-IID data distributions that are a defining characteristic of this setting.
-Communication costs are the principal constraint, and we show a reduction in
-required communication rounds by 10-100x as compared to synchronized stochastic
-gradient descent.},
- archiveprefix = {arXiv},
- author = {H. Brendan McMahan and Eider Moore and Daniel Ramage and Seth Hampson and Blaise Agüera y Arcas},
- eprint = {1602.05629v3},
- file = {1602.05629v3.pdf},
- month = {Feb},
- note = {Proceedings of the 20 th International Conference on Artificial
-Intelligence and Statistics (AISTATS) 2017. JMLR: W&CP volume 54},
- primaryclass = {cs.LG},
- title = {Communication-Efficient Learning of Deep Networks from Decentralized
-Data},
- url = {http://arxiv.org/abs/1602.05629v3},
- year = {2016}
-}
-
-
 @article{173ftiSzF,
  abstract = {Observational studies are rising in importance due to the widespread
 accumulation of data in fields such as healthcare, education, employment and
@@ -1023,6 +990,40 @@ Networks},
 }
 
 
+@article{ULagTifF,
+ abstract = {Many architects believe that major improvements in cost-energy-performance
+must now come from domain-specific hardware. This paper evaluates a custom
+ASIC---called a Tensor Processing Unit (TPU)---deployed in datacenters since
+2015 that accelerates the inference phase of neural networks (NN). The heart of
+the TPU is a 65,536 8-bit MAC matrix multiply unit that offers a peak
+throughput of 92 TeraOps/second (TOPS) and a large (28 MiB) software-managed
+on-chip memory. The TPU's deterministic execution model is a better match to
+the 99th-percentile response-time requirement of our NN applications than are
+the time-varying optimizations of CPUs and GPUs (caches, out-of-order
+execution, multithreading, multiprocessing, prefetching, ...) that help average
+throughput more than guaranteed latency. The lack of such features helps
+explain why, despite having myriad MACs and a big memory, the TPU is relatively
+small and low power. We compare the TPU to a server-class Intel Haswell CPU and
+an Nvidia K80 GPU, which are contemporaries deployed in the same datacenters.
+Our workload, written in the high-level TensorFlow framework, uses production
+NN applications (MLPs, CNNs, and LSTMs) that represent 95% of our datacenters'
+NN inference demand. Despite low utilization for some applications, the TPU is
+on average about 15X - 30X faster than its contemporary GPU or CPU, with
+TOPS/Watt about 30X - 80X higher. Moreover, using the GPU's GDDR5 memory in the
+TPU would triple achieved TOPS and raise TOPS/Watt to nearly 70X the GPU and
+200X the CPU.},
+ archiveprefix = {arXiv},
+ author = {Norman P. Jouppi and Cliff Young and Nishant Patil and David Patterson and Gaurav Agrawal and Raminder Bajwa and Sarah Bates and Suresh Bhatia and Nan Boden and Al Borchers and Rick Boyle and Pierre-luc Cantin and Clifford Chao and Chris Clark and Jeremy Coriell and Mike Daley and Matt Dau and Jeffrey Dean and Ben Gelb and Tara Vazir Ghaemmaghami and Rajendra Gottipati and William Gulland and Robert Hagmann and C. Richard Ho and Doug Hogberg and John Hu and Robert Hundt and Dan Hurt and Julian Ibarz and Aaron Jaffey and Alek Jaworski and Alexander Kaplan and Harshit Khaitan and Andy Koch and Naveen Kumar and Steve Lacy and James Laudon and James Law and Diemthu Le and Chris Leary and Zhuyuan Liu and Kyle Lucke and Alan Lundin and Gordon MacKean and Adriana Maggiore and Maire Mahony and Kieran Miller and Rahul Nagarajan and Ravi Narayanaswami and Ray Ni and Kathy Nix and Thomas Norrie and Mark Omernick and Narayana Penukonda and Andy Phelps and Jonathan Ross and Matt Ross and Amir Salek and Emad Samadiani and Chris Severn and Gregory Sizikov and Matthew Snelham and Jed Souter and Dan Steinberg and Andy Swing and Mercedes Tan and Gregory Thorson and Bo Tian and Horia Toma and Erick Tuttle and Vijay Vasudevan and Richard Walter and Walter Wang and Eric Wilcox and Doe Hyun Yoon},
+ eprint = {1704.04760v1},
+ file = {1704.04760v1.pdf},
+ month = {Apr},
+ primaryclass = {cs.AR},
+ title = {In-Datacenter Performance Analysis of a Tensor Processing Unit},
+ url = {http://arxiv.org/abs/1704.04760v1},
+ year = {2017}
+}
+
+
 @article{39RPiE10,
  abstract = {Computational prediction of membrane protein (MP) structures is very
 challenging partially due to lack of sufficient solved structures for homology
@@ -1084,13 +1085,13 @@ disease patterns trained with only image-level labels) remains a strenuous task
 for fully-automated high precision CAD systems.},
  archiveprefix = {arXiv},
  author = {Xiaosong Wang and Yifan Peng and Le Lu and Zhiyong Lu and Mohammadhadi Bagheri and Ronald M. Summers},
- eprint = {1705.02315v1},
- file = {1705.02315v1.pdf},
+ eprint = {1705.02315v2},
+ file = {1705.02315v2.pdf},
  month = {May},
  primaryclass = {cs.CV},
  title = {ChestX-ray8: Hospital-scale Chest X-ray Database and Benchmarks on
 Weakly-Supervised Classification and Localization of Common Thorax Diseases},
- url = {http://arxiv.org/abs/1705.02315v1},
+ url = {http://arxiv.org/abs/1705.02315v2},
  year = {2017}
 }
 
@@ -2534,30 +2535,6 @@ it effectively attenuates batch effects.},
 }
 
 
-@article{xAbGxia4,
- abstract = {Note: This paper describes an older version of DeepLIFT. See
-https://arxiv.org/abs/1704.02685 for the newer version. Original abstract
-follows: The purported "black box" nature of neural networks is a barrier to
-adoption in applications where interpretability is essential. Here we present
-DeepLIFT (Learning Important FeaTures), an efficient and effective method for
-computing importance scores in a neural network. DeepLIFT compares the
-activation of each neuron to its 'reference activation' and assigns
-contribution scores according to the difference. We apply DeepLIFT to models
-trained on natural images and genomic data, and show significant advantages
-over gradient-based methods.},
- archiveprefix = {arXiv},
- author = {Avanti Shrikumar and Peyton Greenside and Anna Shcherbina and Anshul Kundaje},
- eprint = {1605.01713v3},
- file = {1605.01713v3.pdf},
- month = {May},
- primaryclass = {cs.LG},
- title = {Not Just a Black Box: Learning Important Features Through Propagating
-Activation Differences},
- url = {http://arxiv.org/abs/1605.01713v3},
- year = {2016}
-}
-
-
 @article{zhmq9ktJ,
  abstract = {The purported "black box"' nature of neural networks is a barrier to adoption
 in applications where interpretability is essential. Here we present DeepLIFT
@@ -2845,6 +2822,36 @@ source and the target sentence which made the optimization problem easier.},
 }
 
 
+@article{hOeUlCvS,
+ abstract = {TensorFlow is an interface for expressing machine learning algorithms, and an
+implementation for executing such algorithms. A computation expressed using
+TensorFlow can be executed with little or no change on a wide variety of
+heterogeneous systems, ranging from mobile devices such as phones and tablets
+up to large-scale distributed systems of hundreds of machines and thousands of
+computational devices such as GPU cards. The system is flexible and can be used
+to express a wide variety of algorithms, including training and inference
+algorithms for deep neural network models, and it has been used for conducting
+research and for deploying machine learning systems into production across more
+than a dozen areas of computer science and other fields, including speech
+recognition, computer vision, robotics, information retrieval, natural language
+processing, geographic information extraction, and computational drug
+discovery. This paper describes the TensorFlow interface and an implementation
+of that interface that we have built at Google. The TensorFlow API and a
+reference implementation were released as an open-source package under the
+Apache 2.0 license in November, 2015 and are available at www.tensorflow.org.},
+ archiveprefix = {arXiv},
+ author = {Martín Abadi and Ashish Agarwal and Paul Barham and Eugene Brevdo and Zhifeng Chen and Craig Citro and Greg S. Corrado and Andy Davis and Jeffrey Dean and Matthieu Devin and Sanjay Ghemawat and Ian Goodfellow and Andrew Harp and Geoffrey Irving and Michael Isard and Yangqing Jia and Rafal Jozefowicz and Lukasz Kaiser and Manjunath Kudlur and Josh Levenberg and Dan Mane and Rajat Monga and Sherry Moore and Derek Murray and Chris Olah and Mike Schuster and Jonathon Shlens and Benoit Steiner and Ilya Sutskever and Kunal Talwar and Paul Tucker and Vincent Vanhoucke and Vijay Vasudevan and Fernanda Viegas and Oriol Vinyals and Pete Warden and Martin Wattenberg and Martin Wicke and Yuan Yu and Xiaoqiang Zheng},
+ eprint = {1603.04467v2},
+ file = {1603.04467v2.pdf},
+ month = {Mar},
+ primaryclass = {cs.DC},
+ title = {TensorFlow: Large-Scale Machine Learning on Heterogeneous Distributed
+Systems},
+ url = {http://arxiv.org/abs/1603.04467v2},
+ year = {2016}
+}
+
+
 @article{1GhHIDxuW,
  abstract = {We propose two novel model architectures for computing continuous vector
 representations of words from very large data sets. The quality of these
@@ -2994,69 +3001,5 @@ data), as well as medical images (MRI brain scans).},
 Analysis},
  url = {http://arxiv.org/abs/1702.04595v1},
  year = {2017}
-}
-
-
-@article{ULagTifF,
- abstract = {Many architects believe that major improvements in cost-energy-performance
-must now come from domain-specific hardware. This paper evaluates a custom
-ASIC---called a Tensor Processing Unit (TPU)---deployed in datacenters since
-2015 that accelerates the inference phase of neural networks (NN). The heart of
-the TPU is a 65,536 8-bit MAC matrix multiply unit that offers a peak
-throughput of 92 TeraOps/second (TOPS) and a large (28 MiB) software-managed
-on-chip memory. The TPU's deterministic execution model is a better match to
-the 99th-percentile response-time requirement of our NN applications than are
-the time-varying optimizations of CPUs and GPUs (caches, out-of-order
-execution, multithreading, multiprocessing, prefetching, ...) that help average
-throughput more than guaranteed latency. The lack of such features helps
-explain why, despite having myriad MACs and a big memory, the TPU is relatively
-small and low power. We compare the TPU to a server-class Intel Haswell CPU and
-an Nvidia K80 GPU, which are contemporaries deployed in the same datacenters.
-Our workload, written in the high-level TensorFlow framework, uses production
-NN applications (MLPs, CNNs, and LSTMs) that represent 95% of our datacenters'
-NN inference demand. Despite low utilization for some applications, the TPU is
-on average about 15X - 30X faster than its contemporary GPU or CPU, with
-TOPS/Watt about 30X - 80X higher. Moreover, using the GPU's GDDR5 memory in the
-TPU would triple achieved TOPS and raise TOPS/Watt to nearly 70X the GPU and
-200X the CPU.},
- archiveprefix = {arXiv},
- author = {Norman P. Jouppi and Cliff Young and Nishant Patil and David Patterson and Gaurav Agrawal and Raminder Bajwa and Sarah Bates and Suresh Bhatia and Nan Boden and Al Borchers and Rick Boyle and Pierre-luc Cantin and Clifford Chao and Chris Clark and Jeremy Coriell and Mike Daley and Matt Dau and Jeffrey Dean and Ben Gelb and Tara Vazir Ghaemmaghami and Rajendra Gottipati and William Gulland and Robert Hagmann and C. Richard Ho and Doug Hogberg and John Hu and Robert Hundt and Dan Hurt and Julian Ibarz and Aaron Jaffey and Alek Jaworski and Alexander Kaplan and Harshit Khaitan and Andy Koch and Naveen Kumar and Steve Lacy and James Laudon and James Law and Diemthu Le and Chris Leary and Zhuyuan Liu and Kyle Lucke and Alan Lundin and Gordon MacKean and Adriana Maggiore and Maire Mahony and Kieran Miller and Rahul Nagarajan and Ravi Narayanaswami and Ray Ni and Kathy Nix and Thomas Norrie and Mark Omernick and Narayana Penukonda and Andy Phelps and Jonathan Ross and Matt Ross and Amir Salek and Emad Samadiani and Chris Severn and Gregory Sizikov and Matthew Snelham and Jed Souter and Dan Steinberg and Andy Swing and Mercedes Tan and Gregory Thorson and Bo Tian and Horia Toma and Erick Tuttle and Vijay Vasudevan and Richard Walter and Walter Wang and Eric Wilcox and Doe Hyun Yoon},
- eprint = {1704.04760v1},
- file = {1704.04760v1.pdf},
- month = {Apr},
- primaryclass = {cs.AR},
- title = {In-Datacenter Performance Analysis of a Tensor Processing Unit},
- url = {http://arxiv.org/abs/1704.04760v1},
- year = {2017}
-}
-
-
-@article{hOeUlCvS,
- abstract = {TensorFlow is an interface for expressing machine learning algorithms, and an
-implementation for executing such algorithms. A computation expressed using
-TensorFlow can be executed with little or no change on a wide variety of
-heterogeneous systems, ranging from mobile devices such as phones and tablets
-up to large-scale distributed systems of hundreds of machines and thousands of
-computational devices such as GPU cards. The system is flexible and can be used
-to express a wide variety of algorithms, including training and inference
-algorithms for deep neural network models, and it has been used for conducting
-research and for deploying machine learning systems into production across more
-than a dozen areas of computer science and other fields, including speech
-recognition, computer vision, robotics, information retrieval, natural language
-processing, geographic information extraction, and computational drug
-discovery. This paper describes the TensorFlow interface and an implementation
-of that interface that we have built at Google. The TensorFlow API and a
-reference implementation were released as an open-source package under the
-Apache 2.0 license in November, 2015 and are available at www.tensorflow.org.},
- archiveprefix = {arXiv},
- author = {Martín Abadi and Ashish Agarwal and Paul Barham and Eugene Brevdo and Zhifeng Chen and Craig Citro and Greg S. Corrado and Andy Davis and Jeffrey Dean and Matthieu Devin and Sanjay Ghemawat and Ian Goodfellow and Andrew Harp and Geoffrey Irving and Michael Isard and Yangqing Jia and Rafal Jozefowicz and Lukasz Kaiser and Manjunath Kudlur and Josh Levenberg and Dan Mane and Rajat Monga and Sherry Moore and Derek Murray and Chris Olah and Mike Schuster and Jonathon Shlens and Benoit Steiner and Ilya Sutskever and Kunal Talwar and Paul Tucker and Vincent Vanhoucke and Vijay Vasudevan and Fernanda Viegas and Oriol Vinyals and Pete Warden and Martin Wattenberg and Martin Wicke and Yuan Yu and Xiaoqiang Zheng},
- eprint = {1603.04467v2},
- file = {1603.04467v2.pdf},
- month = {Mar},
- primaryclass = {cs.DC},
- title = {TensorFlow: Large-Scale Machine Learning on Heterogeneous Distributed
-Systems},
- url = {http://arxiv.org/abs/1603.04467v2},
- year = {2016}
 }
 
