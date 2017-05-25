@@ -432,5 +432,238 @@
     ]
    ]
   }
- }
+ },
+  {
+    "URL": "http://www.intel.com/pressroom/archive/speeches/ag080998.htm",
+    "title": " Academy of Management: Andrew S. Grove ",
+    "issued": {
+      "date-parts": [
+        [
+          2004,
+          9,
+          10
+        ]
+      ]
+    },
+    "greycite-status": "Scanned",
+    "greycite-scanned": "2017-05-17 02:13:42",
+    "type": "webpage",
+    "id": "mAXsmd43"
+  },
+  {
+    "URL": "https://www.nigms.nih.gov/Education/Documents/curiosity.pdf",
+    "title": "\n            \n               Print\n            \n         ",
+    "issued": {
+      "date-parts": [
+        [
+          2014,
+          7,
+          21
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Dunnavant",
+        "given": "Forrest"
+      }
+    ],
+    "greycite-status": "Scanned",
+    "greycite-scanned": "2017-05-17 02:12:51",
+    "type": "webpage",
+    "id": "ru0hjGeQ"
+  },
+  {
+    "URL": "http://www.predictioncenter.org/casp12/rrc_avrg_results.cgi",
+    "title": "RR Results - CASP12",
+    "greycite-status": "Scanned",
+    "greycite-scanned": "2017-05-17 02:14:51",
+    "type": "webpage",
+    "id": "zScWGveU"
+  },
+  {
+    "URL": "http://www.cameo3d.org/",
+    "title": "\tCAMEO - Continuous Automated Model Evaluation - Welcome ",
+    "greycite-status": "Scanned",
+    "greycite-scanned": "2017-05-17 02:13:40",
+    "redirects-to": "https://www.cameo3d.org/",
+    "type": "webpage",
+    "id": "u9uApoaB"
+  },
+  {
+    "URL": "https://github.com/deepchem/deepchem",
+    "title": "deepchem/deepchem",
+    "container-title": "GitHub",
+    "author": [
+      {
+        "family": "deepchem",
+        "given": ""
+      }
+    ],
+    "greycite-status": "Scanned",
+    "greycite-scanned": "2017-05-17 02:09:21",
+    "type": "webpage",
+    "id": "Ytvk62dX"
+  },
+  {
+    "URL": "http://googleresearch.blogspot.co.uk/2015/06/inceptionism-going-deeper-into-neural.html",
+    "greycite-canonical-uri": "https://research.googleblog.com/2015/06/inceptionism-going-deeper-into-neural.html",
+    "title": "Inceptionism: Going Deeper into Neural Networks",
+    "container-title": "Research Blog",
+    "issued": {
+      "date-parts": [
+        [
+          2015,
+          6
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "@googleresearch",
+        "given": ""
+      }
+    ],
+    "greycite-status": "Scanned",
+    "greycite-scanned": "2017-05-17 02:10:33",
+    "archives": [
+      "http://wayback.archive.org/web/http://googleresearch.blogspot.co.uk/2015/06/inceptionism-going-deeper-into-neural.html"
+    ],
+    "type": "webpage",
+    "id": "XLHInhc1"
+  },
+  {
+    "URL": "https://github.com/fchollet/keras",
+    "title": "fchollet/keras",
+    "container-title": "GitHub",
+    "author": [
+      {
+        "family": "fchollet",
+        "given": ""
+      }
+    ],
+    "greycite-status": "Scanned",
+    "greycite-scanned": "2017-05-17 02:10:13",
+    "type": "webpage",
+    "id": "FwEK0msb"
+  },
+  {
+    "URL": "https://github.com/maxpumperla/elephas",
+    "title": "maxpumperla/elephas",
+    "container-title": "GitHub",
+    "author": [
+      {
+        "family": "maxpumperla",
+        "given": ""
+      }
+    ],
+    "greycite-status": "Scanned",
+    "greycite-scanned": "2017-05-17 02:09:43",
+    "type": "webpage",
+    "id": "y9IoEy4r"
+  },
+  {
+    "URL": "https://www.synapse.org/",
+    "title": "Sage Synapse : Contribute to the Cure",
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          5,
+          13
+        ]
+      ]
+    },
+    "greycite-status": "Scanned",
+    "greycite-scanned": "2017-05-16 19:57:04",
+    "type": "webpage",
+    "id": "wW6QbBXz"
+  },
+  {
+    "URL": "http://www.businessinsider.com/ibm-edges-closer-to-human-speech-recognition-2017-3",
+    "greycite-canonical-uri": "http://uk.businessinsider.com/ibm-edges-closer-to-human-speech-recognition-2017-3",
+    "title": "IBM edges closer to human speech recognition",
+    "container-title": "Business Insider",
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          3,
+          14
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "@BIIntelligence",
+        "given": ""
+      }
+    ],
+    "greycite-status": "Scanned",
+    "greycite-scanned": "2017-05-17 02:13:06",
+    "redirects-to": "http://uk.businessinsider.com/ibm-edges-closer-to-human-speech-recognition-2017-3?r=US&IR=T",
+    "archives": [
+      "http://wayback.archive.org/web/http://www.businessinsider.com/ibm-edges-closer-to-human-speech-recognition-2017-3"
+    ],
+    "type": "webpage",
+    "id": "nyjAIan4"
+  },
+  {
+    "URL": "https://github.com/greenelab/deep-review",
+    "title": "greenelab/deep-review",
+    "container-title": "GitHub",
+    "author": [
+      {
+        "family": "greenelab",
+        "given": ""
+      }
+    ],
+    "greycite-status": "Scanned",
+    "greycite-scanned": "2017-05-18 17:25:21",
+    "type": "webpage",
+    "id": "yLr4pV4G"
+  },
+  {
+    "URL": "http://ana.blogs.com/maestros/2006/11/data_is_the_new.html",
+    "title": "Data is the New Oil",
+    "container-title": "ANA Marketing Maestros",
+    "issued": {
+      "date-parts": [
+        [
+          2006,
+          11
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "@",
+        "given": ""
+      }
+    ],
+    "greycite-status": "Scanned",
+    "greycite-scanned": "2017-05-17 02:39:54",
+    "archives": [
+      "http://wayback.archive.org/web/http://ana.blogs.com/maestros/2006/11/data_is_the_new.html"
+    ],
+    "type": "webpage",
+    "id": "6fE0Vrba"
+  },
+  {
+    "URL": "http://hazyresearch.github.io/snorkel/blog/weak_supervision.html",
+    "title": "Weak Supervision",
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          5,
+          12
+        ]
+      ]
+    },
+    "greycite-status": "Scanned",
+    "greycite-scanned": "2017-05-17 02:13:28",
+    "type": "webpage",
+    "id": "hfcf5Hmi"
+  }
 ]
