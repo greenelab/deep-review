@@ -45,6 +45,7 @@ Drafted sub-sections, edited the manuscript, reviewed pull requests, and coordin
 ### Competing Interests
 
 A.K. is on the Advisory Board of Deep Genomics Inc.
+E.F. is a full-time employee of GlaxoSmithKline.
 The remaining authors have no competing interests to declare.
 
 ### Acknowledgements
