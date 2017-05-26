@@ -31,7 +31,7 @@ The ability to irrefutably prove manuscript existence at a past time could be im
 
 We created an open repository on the GitHub version control platform ([`greenelab/deep-review`](https://github.com/greenelab/deep-review)) [@url:https://github.com/greenelab/deep-review].
 Here, we engaged with numerous authors from papers within and outside of the area.
-The manuscript was drafted via GitHub commits by 26 individuals who met the ICMJE standards of authorship.
+The manuscript was drafted via GitHub commits by 27 individuals who met the ICMJE standards of authorship.
 These were individuals who contributed to the review of the literature;
 drafted the manuscript or provided substantial critical revisions;
 approved the final manuscript draft; and agreed to be accountable in all aspects of the work.
@@ -42,13 +42,19 @@ Drafted one or more sub-sections: A.E.C., A.S., B.J.L., E.M.C., G.L.R., J.I., J.
 Revised specific sub-sections or supervised drafting one or more sub-sections: A.K., D.D., D.J.H., L.K.W., M.H.S.S., Y.P., Y.Q.
 Drafted sub-sections, edited the manuscript, reviewed pull requests, and coordinated co-authors: A.G., C.S.G..
 
+### Competing Interests
+
+A.K. is on the Advisory Board of Deep Genomics Inc.
+E.F. is a full-time employee of GlaxoSmithKline.
+The remaining authors have no competing interests to declare.
+
 ### Acknowledgements
 
 We gratefully acknowledge Christof Angermueller, Kumardeep Chaudhary, Gökcen
 Eraslan, Michael M. Hoffman, Mikael Huss, Bharath Ramsundar and Xun Zhu for
 their discussion of the manuscript and reviewed papers on GitHub. We would like
 to thank Zhiyong Lu for revisions to the text that were not captured on GitHub
-as well as GitHub users aaronsheldon, swamidass, and traversc who contributed
+as well as GitHub users aaronsheldon and swamidass who contributed
 text but did not formally approve the manuscript. Finally, we acknowledge
 funding from the Gordon and Betty Moore Foundation awards GBMF4552 (C.S.G. and
 D.S.H.) and GBMF4563 (D.J.H.); the National Institutes of Health awards
