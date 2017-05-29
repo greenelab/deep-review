@@ -10,11 +10,10 @@ what's incoming, check the
 
 ## Current Status - Submitted
 
-We have submitted the manuscript to the journal. A preprint has also been
-submitted and will be online shortly at bioRxiv, assuming it is accepted there.
-We are still accepting contributions to improve this work. Feel free to create
-an issue, contribute some code via a pull request, and pitch in. Authorship
-criteria remain the same.
+We have submitted the manuscript to the journal. A preprint is available at
+[bioRxiv](https://doi.org/10.1101/142760). We are still accepting contributions
+to improve this work. Feel free to create an issue, contribute some text via a
+pull request, and pitch in. Authorship criteria remain the same.
 
 ## More about the manuscript.
 
