@@ -2,32 +2,24 @@
 
 [![Code Climate](https://codeclimate.com/github/greenelab/deep-review/badges/gpa.svg)](https://codeclimate.com/github/greenelab/deep-review)
 
-We have the opportunity to write a headline review for *Journal of the Royal
-Society Interface* on a topic overlapping the computer and life sciences in the
-area of systems pharmacology. We are hitting the home stretch towards getting
-this paper submitted. Consequently, we have established the following
-guidelines:
-
-* April 24: Any empty section, even if in the outline, gets dropped due to lack
-  of interest.
-* May 1: Any section not merged & ready for revisions gets dropped due to lack
-  of completion. Invitations go out to contributing authors to approve the
-  manuscript.
-* May 1 - 14: Revisions, flow, and clarity.
-* Final edits and author approval. Authors must approve by [Noon Eastern
-  Time](https://time.is/ET) on May 17 to be included as co-authors. File a pull
-  request to add the appropriate line to `author_contact_approval.md`
-
-At this stage it is ideal if **each pull request touches no more than one
-subsection** as this minimizes the number of people who will need to sign off on
-changes.
 
 The most current version of the `master` branch is built by continuous integration
 and [available via gh-pages](https://greenelab.github.io/deep-review/). To see
 what's incoming, check the
 [open pull requests](https://github.com/greenelab/deep-review/pulls).
-If you want to claim a section (time is short - see timeline above!) issue number
-[188](https://github.com/greenelab/deep-review/issues/188) is the place to do it.
+
+## Current Status - Submitted
+
+We have submitted the manuscript to the journal. A preprint is available at
+[bioRxiv](https://doi.org/10.1101/142760). We are still accepting contributions
+to improve this work. Feel free to create an issue, contribute some text via a
+pull request, and pitch in. Authorship criteria remain the same.
+
+## More about the manuscript.
+
+We have the opportunity to write a headline review for *Journal of the Royal
+Society Interface* on a topic overlapping the computer and life sciences in the
+area of systems pharmacology.
 
 > A Headline Review is one in a short, targeted series of high-level reviews
 within a particular topic of a burgeoning research area. We encourage authors to
