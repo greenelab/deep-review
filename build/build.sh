@@ -21,6 +21,7 @@ pandoc --verbose \
   --csl=$CSL_PATH \
   --metadata link-citations=true \
   --css=github-pandoc.css \
+  --include-in-header=build/assets/analytics.js \
   --output=output/index.html \
   $INPUT_PATH
 
