@@ -1,5 +1,7 @@
 # Opportunities and obstacles for deep learning in biology and medicine
 
+This article is also available as a [preprint on bioRxiv](https://doi.org/10.1101/142760).
+
 Travers Ching<sup>1,*</sup>,
 Daniel S. Himmelstein<sup>2</sup>,
 Brett K. Beaulieu-Jones<sup>3</sup>,
