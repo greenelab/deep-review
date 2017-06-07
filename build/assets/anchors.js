@@ -1,4 +1,5 @@
 <script>
+// Minified version `anchorjs.min.js` embedded below.
 /**
  * AnchorJS - v4.0.0 - 2017-06-02
  * https://github.com/bryanbraun/anchorjs
