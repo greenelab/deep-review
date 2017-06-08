@@ -89,27 +89,28 @@ a Strategic Inflection Point in the practice of biology or medicine.
 There are already a number of reviews focused on applications of deep learning
 in biology [@doi:10.1038/nbt.3313 @doi:10.1021/acs.molpharmaceut.5b00982
 @doi:10.15252/msb.20156651 @doi:10.1093/bib/bbw068
-@doi:10.3109/10409238.2015.1135868], healthcare [@doi:10.1093/bib/bbx044], and
-drug discovery [@doi:10.1002/minf.201501008 @doi:10.1002/jcc.24764
-@tag:PerezSianes2016_screening @tag:Baskin2015_drug_disc].  Under our guiding
-question, we sought to highlight cases where deep learning enabled researchers
-to solve challenges that were previously considered infeasible or makes
-difficult, tedious analyses routine. We also identified approaches that
-researchers are using to sidestep challenges posed by biomedical data. We find
-that domain-specific considerations have greatly influenced how to best harness
-the power and flexibility of deep learning. Model interpretability is often
-critical.  Understanding the patterns in data may be just as important as
-fitting the data. In addition, there are important and pressing questions about
-how to build networks that efficiently represent the underlying structure and
-logic of the data. Domain experts can play important roles in designing networks
-to represent data appropriately, encoding the most salient prior knowledge and
-assessing success or failure. There is also great potential to create deep
-learning systems that augment biologists and clinicians by prioritizing
-experiments or streamlining tasks that do not require expert judgment. We have
-divided the large range of topics into three broad classes: Disease and Patient
-Categorization, Fundamental Biological Study, and Treatment of Patients. Below,
-we briefly introduce the types of questions, approaches and data that are
-typical for each class in the application of deep learning.
+@doi:10.3109/10409238.2015.1135868], healthcare [@doi:10.1093/bib/bbx044
+@tag:Litjens2017_medimage_survey], and drug discovery [@doi:10.1002/minf.201501008
+@doi:10.1002/jcc.24764 @tag:PerezSianes2016_screening
+@tag:Baskin2015_drug_disc].  Under our guiding question, we sought to highlight
+cases where deep learning enabled researchers to solve challenges that were
+previously considered infeasible or makes difficult, tedious analyses routine.
+We also identified approaches that researchers are using to sidestep challenges
+posed by biomedical data. We find that domain-specific considerations have
+greatly influenced how to best harness the power and flexibility of deep
+learning. Model interpretability is often critical.  Understanding the patterns
+in data may be just as important as fitting the data. In addition, there are
+important and pressing questions about how to build networks that efficiently
+represent the underlying structure and logic of the data. Domain experts can
+play important roles in designing networks to represent data appropriately,
+encoding the most salient prior knowledge and assessing success or failure.
+There is also great potential to create deep learning systems that augment
+biologists and clinicians by prioritizing experiments or streamlining tasks that
+do not require expert judgment. We have divided the large range of topics into
+three broad classes: Disease and Patient Categorization, Fundamental Biological
+Study, and Treatment of Patients. Below, we briefly introduce the types of
+questions, approaches and data that are typical for each class in the
+application of deep learning.
 
 #### Disease and patient categorization
 
