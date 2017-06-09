@@ -225,14 +225,16 @@ which can handle the differences between the domains. For example, if we have
 the ChIP-seq data for a particular TF from a mouse, but we want to predict the
 binding locations for that same TF on a human, we need to transfer the knowledge
 of training on the mouse to the human. This has been done in many other areas
-such as sentiment analysis [@doi:10.1.1.231.3442]. For example, we can train on
-the reviews for books, and predict on the reviews for movies. These are similar
-tasks, but the context (i.e. books or movies) is different. Our models should
-be able to find the fundamental properties of each domain so that the model can
-be used between contexts. TFImpute [@tag:Qin2017_onehot] predicts binding in
-new cell type-TF pairs, but the cell types must be in the training set for other
-TFs. This is a step in the right direction, but a more general domain transfer
-model across cell types would be more useful.
+such as sentiment analysis
+[@url:http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.231.3442].
+For example, we can train on the reviews for books, and predict on the reviews
+for movies. These are similar tasks, but the context (i.e. books or movies) is
+different. Our models should be able to find the fundamental properties of each
+domain so that the model can be used between contexts. TFImpute
+[@tag:Qin2017_onehot] predicts binding in new cell type-TF pairs, but the cell
+types must be in the training set for other TFs. This is a step in the right
+direction, but a more general domain transfer model across cell types would
+be more useful.
 
 Deep learning can also illustrate TF binding preferences. Lanchantin et al.
 [@tag:Lanchantin2016_motif] and Shrikumar et al. [@tag:Shrikumar2017_learning]
