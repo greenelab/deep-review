@@ -34,7 +34,8 @@ used often allows layers deeper in the network to contribute to the refinement
 of earlier layers. For this reason, these algorithms can automatically engineer
 features that are suitable for many tasks and customize those features for one
 or more specific tasks. Deep learning does many of the same things as more
-familiar machine learning approaches. Like a clustering algorithm, it can build features that
+familiar machine learning approaches [@doi:10.1038/nrg3920]
+Like a clustering algorithm, it can build features that
 describe recurrent patterns in data. Like a regression approach, deep learning
 methods can predict some output. However, deep learning methods combine both of
 these steps. When sufficient data are available, these methods construct
