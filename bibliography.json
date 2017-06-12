@@ -44349,6 +44349,119 @@
     "id": "6MR50hyY"
   },
   {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          5
+        ]
+      ],
+      "date-time": "2017-06-05T19:07:23Z",
+      "timestamp": 1496689643418
+    },
+    "reference-count": 68,
+    "publisher": "Springer Nature",
+    "issue": "6",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Nat Rev Genet"
+    ],
+    "DOI": "10.1038/nrg3920",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2015,
+          5,
+          7
+        ]
+      ],
+      "date-time": "2015-05-07T07:07:44Z",
+      "timestamp": 1430982464000
+    },
+    "page": "321-332",
+    "source": "Crossref",
+    "is-referenced-by-count": 69,
+    "title": "Machine learning applications in genetics and genomics",
+    "prefix": "10.1038",
+    "volume": "16",
+    "author": [
+      {
+        "given": "Maxwell W.",
+        "family": "Libbrecht",
+        "affiliation": []
+      },
+      {
+        "given": "William Stafford",
+        "family": "Noble",
+        "affiliation": []
+      }
+    ],
+    "member": "339",
+    "published-online": {
+      "date-parts": [
+        [
+          2015,
+          5,
+          7
+        ]
+      ]
+    },
+    "container-title": "Nature Reviews Genetics",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2015,
+          5,
+          18
+        ]
+      ],
+      "date-time": "2015-05-18T04:37:52Z",
+      "timestamp": 1431923872000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2015,
+          5,
+          7
+        ]
+      ]
+    },
+    "references-count": 68,
+    "alternative-id": [
+      "nrg3920"
+    ],
+    "URL": "https://doi.org/10.1038/nrg3920",
+    "relation": {
+      "cites": []
+    },
+    "issn-type": [
+      {
+        "value": "1471-0056",
+        "type": "print"
+      },
+      {
+        "value": "1471-0064",
+        "type": "electronic"
+      }
+    ],
+    "subject": [
+      "Genetics(clinical)",
+      "Genetics",
+      "Molecular Biology"
+    ],
+    "id": "TNPWa7Br"
+  },
+  {
     "URL": "https://arxiv.org/abs/1106.5730v2",
     "abstract": "Stochastic Gradient Descent (SGD) is a popular algorithm that can achieve state-of-the-art performance on a variety of machine learning tasks. Several researchers have recently proposed schemes to parallelize SGD, but all require performance-destroying memory locking and synchronization. This work aims to show using novel theoretical analysis, algorithms, and implementation that SGD can be implemented without any locking. We present an update scheme called HOGWILD! which allows processors access to shared memory with the possibility of overwriting each other’s work. We show that when the associated optimization problem is sparse, meaning most gradient updates only modify small parts of the decision variable, then HOGWILD! achieves a nearly optimal rate of convergence. We demonstrate experimentally that HOGWILD! outperforms alternative schemes that use locking by an order of magnitude.",
     "author": [

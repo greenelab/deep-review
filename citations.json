@@ -47047,5 +47047,124 @@
       "id": "6MR50hyY"
     },
     "citation_id": "6MR50hyY"
+  },
+  "doi:10.1038/nrg3920": {
+    "source": "doi",
+    "identifer": "10.1038/nrg3920",
+    "standard_citation": "doi:10.1038/nrg3920",
+    "citeproc": {
+      "indexed": {
+        "date-parts": [
+          [
+            2017,
+            6,
+            5
+          ]
+        ],
+        "date-time": "2017-06-05T19:07:23Z",
+        "timestamp": 1496689643418
+      },
+      "reference-count": 68,
+      "publisher": "Springer Nature",
+      "issue": "6",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Nat Rev Genet"
+      ],
+      "DOI": "10.1038/nrg3920",
+      "type": "article-journal",
+      "created": {
+        "date-parts": [
+          [
+            2015,
+            5,
+            7
+          ]
+        ],
+        "date-time": "2015-05-07T07:07:44Z",
+        "timestamp": 1430982464000
+      },
+      "page": "321-332",
+      "source": "Crossref",
+      "is-referenced-by-count": 69,
+      "title": "Machine learning applications in genetics and genomics",
+      "prefix": "10.1038",
+      "volume": "16",
+      "author": [
+        {
+          "given": "Maxwell W.",
+          "family": "Libbrecht",
+          "affiliation": []
+        },
+        {
+          "given": "William Stafford",
+          "family": "Noble",
+          "affiliation": []
+        }
+      ],
+      "member": "339",
+      "published-online": {
+        "date-parts": [
+          [
+            2015,
+            5,
+            7
+          ]
+        ]
+      },
+      "container-title": "Nature Reviews Genetics",
+      "original-title": [],
+      "deposited": {
+        "date-parts": [
+          [
+            2015,
+            5,
+            18
+          ]
+        ],
+        "date-time": "2015-05-18T04:37:52Z",
+        "timestamp": 1431923872000
+      },
+      "score": 1.0,
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2015,
+            5,
+            7
+          ]
+        ]
+      },
+      "references-count": 68,
+      "alternative-id": [
+        "nrg3920"
+      ],
+      "URL": "https://doi.org/10.1038/nrg3920",
+      "relation": {
+        "cites": []
+      },
+      "issn-type": [
+        {
+          "value": "1471-0056",
+          "type": "print"
+        },
+        {
+          "value": "1471-0064",
+          "type": "electronic"
+        }
+      ],
+      "subject": [
+        "Genetics(clinical)",
+        "Genetics",
+        "Molecular Biology"
+      ],
+      "id": "TNPWa7Br"
+    },
+    "citation_id": "TNPWa7Br"
   }
 }

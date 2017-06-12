@@ -109,7 +109,7 @@ specialized implementations are now being used at industrial scales.
 Neural networks were first proposed in 1943 [@1HVDhhwpK] as a model
 for how our brains process information. The history of neural networks is
 interesting in its own right [@1G5eCiq4d]. In neural
-networks, inputs are fed into a hidden layer, which feeds into one or more
+networks, inputs are fed into a hidden layer, which feeds into one or more subsequent
 hidden layers, which eventually produce an output layer. The neural networks
 used for deep learning have multiple hidden layers. Each layer essentially
 performs feature construction for the layers before it. The training process
@@ -117,7 +117,8 @@ used often allows layers deeper in the network to contribute to the refinement
 of earlier layers. For this reason, these algorithms can automatically engineer
 features that are suitable for many tasks and customize those features for one
 or more specific tasks. Deep learning does many of the same things as more
-familiar approaches. Like a clustering algorithm, it can build features that
+familiar machine learning approaches [@TNPWa7Br].
+Like a clustering algorithm, it can build features that
 describe recurrent patterns in data. Like a regression approach, deep learning
 methods can predict some output. However, deep learning methods combine both of
 these steps. When sufficient data are available, these methods construct
@@ -136,8 +137,8 @@ cats, faces, and pedestrians were important components of online videos
 [@IiNJE32f] without
 being told to look for them. What if, more generally, deep learning could solve
 the challenges presented by the growth of data in biomedicine? Could these
-algorithms identify the "cats" hidden in our data - the patterns unknown to the
-researcher - and suggest ways to act on them? In this review, we examine deep
+algorithms identify the "cats" hidden in our data -- the patterns unknown to the
+researcher -- and suggest ways to act on them? In this review, we examine deep
 learning's application to biomedical science and discuss the unique challenges
 that biomedical data pose for deep learning methods.
 
@@ -170,26 +171,25 @@ Here, we seek to identify whether deep learning is an innovation that can induce
 a Strategic Inflection Point in the practice of biology or medicine.
 
 There are already a number of reviews focused on applications of deep learning
-in biology [@yXqhuueV; @1VZjheOA; @irSe12Sm; @G00xvi94; @MmRGFVUu], healthcare [@11I7bLcP3], and
-drug discovery [@gJE0ExFr; @zCt6PUXj; @1DTUK3YyI; @xPkT1z7D].  Under our guiding
-question, we sought to highlight cases where deep learning enabled researchers
-to solve challenges that were previously considered infeasible or makes
-difficult, tedious analyses routine. We also identified approaches that
-researchers are using to sidestep challenges posed by biomedical data. We find
-that domain-specific considerations have greatly influenced how to best harness
-the power and flexibility of deep learning. Model interpretability is often
-critical.  Understanding the patterns in data may be just as important as
-fitting the data. In addition, there are important and pressing questions about
-how to build networks that efficiently represent the underlying structure and
-logic of the data. Domain experts can play important roles in designing networks
-to represent data appropriately, encoding the most salient prior knowledge and
-assessing success or failure. There is also great potential to create deep
-learning systems that augment biologists and clinicians by prioritizing
-experiments or streamlining tasks that do not require expert judgment. We have
-divided the large range of topics into three broad classes: Disease and Patient
-Categorization, Fundamental Biological Study, and Treatment of Patients. Below,
-we briefly introduce the types of questions, approaches and data that are
-typical for each class in the application of deep learning.
+in biology [@yXqhuueV; @1VZjheOA; @irSe12Sm; @G00xvi94; @MmRGFVUu], healthcare [@11I7bLcP3; @LL5huVs3], and drug discovery [@gJE0ExFr; @zCt6PUXj; @1DTUK3YyI; @xPkT1z7D].  Under our guiding question, we sought to highlight
+cases where deep learning enabled researchers to solve challenges that were
+previously considered infeasible or makes difficult, tedious analyses routine.
+We also identified approaches that researchers are using to sidestep challenges
+posed by biomedical data. We find that domain-specific considerations have
+greatly influenced how to best harness the power and flexibility of deep
+learning. Model interpretability is often critical.  Understanding the patterns
+in data may be just as important as fitting the data. In addition, there are
+important and pressing questions about how to build networks that efficiently
+represent the underlying structure and logic of the data. Domain experts can
+play important roles in designing networks to represent data appropriately,
+encoding the most salient prior knowledge and assessing success or failure.
+There is also great potential to create deep learning systems that augment
+biologists and clinicians by prioritizing experiments or streamlining tasks that
+do not require expert judgment. We have divided the large range of topics into
+three broad classes: Disease and Patient Categorization, Fundamental Biological
+Study, and Treatment of Patients. Below, we briefly introduce the types of
+questions, approaches and data that are typical for each class in the
+application of deep learning.
 
 #### Disease and patient categorization
 
@@ -203,7 +203,7 @@ heterogeneity still remains within these four subtypes
 [@lnK82Ey6; @pEIw87Mp]. Given the
 increasing wealth of molecular data available, a more comprehensive subtyping
 seems possible. Several studies have used deep learning methods to better
-categorize breast cancer patients: denoising autoencoders, an unsupervised
+categorize breast cancer patients. Denoising autoencoders, an unsupervised
 approach, can be used to cluster breast cancer patients
 [@PBiRSdXv], and convolutional neural networks (CNNs) can
 help count mitotic divisions, a feature that is highly correlated with disease
@@ -2829,7 +2829,7 @@ To facilitate citation, we [defined](https://github.com/greenelab/deep-review/bl
 We supported citations to the following identifier types (in order of preference): DOIs, PubMed IDs, arXiv IDs, and URLs.
 References were automatically generated from citation metadata by querying APIs to generate [Citation Style Language](http://citationstyles.org/) (CSL) JSON items for each reference.
 [Pandoc](http://pandoc.org/) and [pandoc-citeproc](https://github.com/jgm/pandoc-citeproc) converted the markdown to HTML and PDF, while rendering the formatted citations and references.
-In total, referenced works consisted of 280 DOIs, 5 PubMed records, 108 arXiv manuscripts, and 39 URLs (webpages as well as manuscripts lacking standardized identifiers).
+In total, referenced works consisted of 281 DOIs, 5 PubMed records, 108 arXiv manuscripts, and 39 URLs (webpages as well as manuscripts lacking standardized identifiers).
 
 We implemented continuous analysis so the manuscript was automatically regenerated whenever the source changed [@Qh7xTLwz].
 We configured Travis CI -- a continuous integration service -- to fetch new citation metadata and rebuild the manuscript for every commit.
@@ -2859,7 +2859,7 @@ Drafted one or more sub-sections: A.E.C., A.S., B.J.L., E.M.C., G.L.R., J.I., J.
 Revised specific sub-sections or supervised drafting one or more sub-sections: A.K., D.D., D.J.H., L.K.W., M.H.S.S., Y.P., Y.Q.
 Drafted sub-sections, edited the manuscript, reviewed pull requests, and coordinated co-authors: A.G., C.S.G..
 
-### Competing Interests
+### Competing interests
 
 A.K. is on the Advisory Board of Deep Genomics Inc.
 E.F. is a full-time employee of GlaxoSmithKline.
