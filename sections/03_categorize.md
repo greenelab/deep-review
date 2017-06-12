@@ -617,7 +617,7 @@ challenge of model interpretability more thoroughly in the discussion section.
 
 Longitudinal analysis follows a population across time, for example,
 prospectively from birth or from the onset of particular conditions. In large
-patient populations, longitudinal analyses such as the Farmingham Heart Study
+patient populations, longitudinal analyses such as the Framingham Heart Study
 [@doi:10.1016/S0140-6736(13)61752-3] and the Avon Longitudinal Study of Parents
 and Children [@doi:10.1038/484155a] have yielded important discoveries about the
 development of disease and the factors contributing to health status. Yet, a
