@@ -42,7 +42,7 @@ Drafted one or more sub-sections: A.E.C., A.S., B.J.L., E.M.C., G.L.R., J.I., J.
 Revised specific sub-sections or supervised drafting one or more sub-sections: A.K., D.D., D.J.H., L.K.W., M.H.S.S., Y.P., Y.Q.
 Drafted sub-sections, edited the manuscript, reviewed pull requests, and coordinated co-authors: A.G., C.S.G..
 
-### Competing Interests
+### Competing interests
 
 A.K. is on the Advisory Board of Deep Genomics Inc.
 E.F. is a full-time employee of GlaxoSmithKline.

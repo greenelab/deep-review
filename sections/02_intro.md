@@ -26,7 +26,7 @@ specialized implementations are now being used at industrial scales.
 Neural networks were first proposed in 1943 [@doi:10.1007/BF02478259] as a model
 for how our brains process information. The history of neural networks is
 interesting in its own right [@doi:10.1103/RevModPhys.34.135]. In neural
-networks, inputs are fed into a hidden layer, which feeds into one or more
+networks, inputs are fed into a hidden layer, which feeds into one or more subsequent
 hidden layers, which eventually produce an output layer. The neural networks
 used for deep learning have multiple hidden layers. Each layer essentially
 performs feature construction for the layers before it. The training process
@@ -34,7 +34,8 @@ used often allows layers deeper in the network to contribute to the refinement
 of earlier layers. For this reason, these algorithms can automatically engineer
 features that are suitable for many tasks and customize those features for one
 or more specific tasks. Deep learning does many of the same things as more
-familiar approaches. Like a clustering algorithm, it can build features that
+familiar machine learning approaches [@doi:10.1038/nrg3920].
+Like a clustering algorithm, it can build features that
 describe recurrent patterns in data. Like a regression approach, deep learning
 methods can predict some output. However, deep learning methods combine both of
 these steps. When sufficient data are available, these methods construct
@@ -53,8 +54,8 @@ cats, faces, and pedestrians were important components of online videos
 [@url:http://research.google.com/archive/unsupervised_icml2012.html] without
 being told to look for them. What if, more generally, deep learning could solve
 the challenges presented by the growth of data in biomedicine? Could these
-algorithms identify the "cats" hidden in our data - the patterns unknown to the
-researcher - and suggest ways to act on them? In this review, we examine deep
+algorithms identify the "cats" hidden in our data -- the patterns unknown to the
+researcher -- and suggest ways to act on them? In this review, we examine deep
 learning's application to biomedical science and discuss the unique challenges
 that biomedical data pose for deep learning methods.
 
@@ -89,27 +90,28 @@ a Strategic Inflection Point in the practice of biology or medicine.
 There are already a number of reviews focused on applications of deep learning
 in biology [@doi:10.1038/nbt.3313 @doi:10.1021/acs.molpharmaceut.5b00982
 @doi:10.15252/msb.20156651 @doi:10.1093/bib/bbw068
-@doi:10.3109/10409238.2015.1135868], healthcare [@doi:10.1093/bib/bbx044], and
-drug discovery [@doi:10.1002/minf.201501008 @doi:10.1002/jcc.24764
-@tag:PerezSianes2016_screening @tag:Baskin2015_drug_disc].  Under our guiding
-question, we sought to highlight cases where deep learning enabled researchers
-to solve challenges that were previously considered infeasible or makes
-difficult, tedious analyses routine. We also identified approaches that
-researchers are using to sidestep challenges posed by biomedical data. We find
-that domain-specific considerations have greatly influenced how to best harness
-the power and flexibility of deep learning. Model interpretability is often
-critical.  Understanding the patterns in data may be just as important as
-fitting the data. In addition, there are important and pressing questions about
-how to build networks that efficiently represent the underlying structure and
-logic of the data. Domain experts can play important roles in designing networks
-to represent data appropriately, encoding the most salient prior knowledge and
-assessing success or failure. There is also great potential to create deep
-learning systems that augment biologists and clinicians by prioritizing
-experiments or streamlining tasks that do not require expert judgment. We have
-divided the large range of topics into three broad classes: Disease and Patient
-Categorization, Fundamental Biological Study, and Treatment of Patients. Below,
-we briefly introduce the types of questions, approaches and data that are
-typical for each class in the application of deep learning.
+@doi:10.3109/10409238.2015.1135868], healthcare [@doi:10.1093/bib/bbx044
+@tag:Litjens2017_medimage_survey], and drug discovery [@doi:10.1002/minf.201501008
+@doi:10.1002/jcc.24764 @tag:PerezSianes2016_screening
+@tag:Baskin2015_drug_disc].  Under our guiding question, we sought to highlight
+cases where deep learning enabled researchers to solve challenges that were
+previously considered infeasible or makes difficult, tedious analyses routine.
+We also identified approaches that researchers are using to sidestep challenges
+posed by biomedical data. We find that domain-specific considerations have
+greatly influenced how to best harness the power and flexibility of deep
+learning. Model interpretability is often critical.  Understanding the patterns
+in data may be just as important as fitting the data. In addition, there are
+important and pressing questions about how to build networks that efficiently
+represent the underlying structure and logic of the data. Domain experts can
+play important roles in designing networks to represent data appropriately,
+encoding the most salient prior knowledge and assessing success or failure.
+There is also great potential to create deep learning systems that augment
+biologists and clinicians by prioritizing experiments or streamlining tasks that
+do not require expert judgment. We have divided the large range of topics into
+three broad classes: Disease and Patient Categorization, Fundamental Biological
+Study, and Treatment of Patients. Below, we briefly introduce the types of
+questions, approaches and data that are typical for each class in the
+application of deep learning.
 
 #### Disease and patient categorization
 
@@ -123,7 +125,7 @@ heterogeneity still remains within these four subtypes
 [@doi:10.1200/JCO.2008.18.1370 @doi:10.1158/1078-0432.CCR-13-0583]. Given the
 increasing wealth of molecular data available, a more comprehensive subtyping
 seems possible. Several studies have used deep learning methods to better
-categorize breast cancer patients: denoising autoencoders, an unsupervised
+categorize breast cancer patients. Denoising autoencoders, an unsupervised
 approach, can be used to cluster breast cancer patients
 [@doi:10.1142/9789814644730_0014], and convolutional neural networks (CNNs) can
 help count mitotic divisions, a feature that is highly correlated with disease
