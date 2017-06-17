@@ -5,10 +5,11 @@
 
 ## Environment
 
-Install the [conda](https://conda.io) environment specified in [`environment.yml`](../environment.yml) by running:
+Install the [conda](https://conda.io) environment specified in [`environment.yml`](environment.yml) by running:
 
 ```sh
 conda env create --file environment.yml
 ```
 
-Activate with `source activate deep-review`.
+Activate with `source activate deepreview`.
+Currently, the environment requires Linux.
