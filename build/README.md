@@ -12,3 +12,4 @@ conda env create --file environment.yml
 ```
 
 Activate with `source activate deepreview`.
+Currently, the environment requires Linux.
