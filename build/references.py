@@ -153,8 +153,8 @@ print('References by type:')
 print(ref_counts)
 
 # Author table information
-root_dir = pathlib.Path('..')
-stats['authors'] = get_author_info(root_dir.joinpath('author_contact_approve.tsv'))
+authors_path = pathlib.Path('../authors.tsv')
+stats['authors'] = get_author_info(authors_path)
 
 with gen_dir.joinpath('stats.json').open('wt') as write_file:
     json.dump(stats, write_file, indent=2)

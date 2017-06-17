@@ -2,6 +2,7 @@
 Process author table
 """
 
+import collections
 import pandas
 
 
@@ -12,6 +13,6 @@ def get_author_info(author_file):
     """
     author_df = pandas.read_table(author_file)
 
-    author_info = dict()
+    author_info = collections.OrderedDict()
     author_info['count'] = len(author_df)
     return author_info
