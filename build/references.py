@@ -25,6 +25,8 @@ from citations import (
     validate_reference,
 )
 
+from authors import get_author_info
+
 # Run only as a script
 assert __name__ == '__main__'
 
@@ -150,9 +152,8 @@ stats['reference_counts'] = ref_counts
 print('References by type:')
 print(ref_counts)
 
-# Number of authors
-author_info = {'count':27}
-stats['authors'] = author_info
+# Author table information
+stats['authors'] = get_author_info()
 
 with gen_dir.joinpath('stats.json').open('wt') as write_file:
     json.dump(stats, write_file, indent=2)
