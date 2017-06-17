@@ -150,6 +150,10 @@ stats['reference_counts'] = ref_counts
 print('References by type:')
 print(ref_counts)
 
+# Number of authors
+author_info = {'count':27}
+stats['authors'] = author_info
+
 with gen_dir.joinpath('stats.json').open('wt') as write_file:
     json.dump(stats, write_file, indent=2)
 
