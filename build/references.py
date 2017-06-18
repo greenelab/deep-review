@@ -25,6 +25,8 @@ from citations import (
     validate_reference,
 )
 
+from authors import get_author_info
+
 # Run only as a script
 assert __name__ == '__main__'
 
@@ -149,6 +151,10 @@ ref_counts['total'] = sum(ref_counts.values())
 stats['reference_counts'] = ref_counts
 print('References by type:')
 print(ref_counts)
+
+# Author table information
+authors_path = pathlib.Path('../authors.tsv')
+stats['authors'] = get_author_info(authors_path)
 
 with gen_dir.joinpath('stats.json').open('wt') as write_file:
     json.dump(stats, write_file, indent=2)
