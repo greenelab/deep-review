@@ -61,6 +61,44 @@ def get_funding(author_df):
 
     return formatted_info
 
+def get_affiliations(author_df):
+    """
+    Takes an author data frame in which authors have already been ordered and
+    creates affiliation mappings.  Each unique affiliation is assigned an
+    index based on the order in which it appears in the ordered author list.
+    Complete affiliation strings are used to determine affiliation uniqueness
+    even if on string contains multiple departments or institutions.
+    """
+    author_names = list()
+    affiliations = list()
+    affiliation_map = dict()
+    affiliation_counter = 1
+
+    for (_, row) in author_df.sort_values(by='static_author_order').iterrows():
+        name = row['full_name']
+        affiliation = row['affiliation']
+
+        # Lookup the affiliation index
+        if not affiliation in affiliation_map:
+            affiliation_map[affiliation] = affiliation_counter
+            affiliation_counter += 1
+            add_affiliation = True
+        index = affiliation_map[affiliation]
+
+        # Add the affiliation superscript
+        name = f'{name}<sup>{index}</sup>'
+        author_names.append(name)
+
+        # Only list each affiliation once
+        if add_affiliation:
+            affiliations.append(f'{index}. {affiliation}')
+            add_affiliation = False
+
+    affiliation_info = OrderedDict()
+    affiliation_info['authors'] = ',\n'.join(author_names)
+    affiliation_info['affiliations'] = '\n'.join(affiliations)
+    return affiliation_info
+
 def get_author_info(author_file):
     """
     Load the author table and return a dict with author information such as
@@ -82,11 +120,10 @@ def get_author_info(author_file):
     author_info = OrderedDict()
     author_info['count'] = len(author_df)
 
+    # Add funding, author order, and affiliation information
     author_info.update(get_funding(author_df))
-
-    author_df['github_handle'] = author_df.apply(lambda row: '@' + row['github_handle'].lower(), axis=1)
-    author_df = author_df.sort_values(by='static_author_order')
-    author_list = ', '.join(author_df['github_handle'].values)
-    print(f'Author order: {author_list}')
+    author_info.update(get_affiliations(author_df))
+    print(author_info['authors'])
+    print(author_info['affiliations'])
 
     return author_info
