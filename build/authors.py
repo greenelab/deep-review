@@ -84,4 +84,9 @@ def get_author_info(author_file):
 
     author_info.update(get_funding(author_df))
 
+    author_df['github_handle'] = author_df.apply(lambda row: '@' + row['github_handle'].lower(), axis=1)
+    author_df = author_df.sort_values(by='static_author_order')
+    author_list = ', '.join(author_df['github_handle'].values)
+    print(f'Author order: {author_list}')
+
     return author_info
