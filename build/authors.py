@@ -95,6 +95,8 @@ def get_affiliations(author_df):
         # Do not add the close </sup> tag because some authors have special
         # annotations about the author ordering or correspondence
         name = f'{name}<sup>{index}'
+        if pandas.notnull(row['corresponding']) and row['corresponding'].lower() == 'yes':
+            name = name + ',†'
         author_names.append(name)
 
     # Add special annotation for the first listed author
