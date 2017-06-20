@@ -105,7 +105,7 @@ def get_affiliations(author_df):
     author_names[0] = author_names[0] + ',*'
     author_names = [name + '</sup>' for name in author_names]
 
-    affiliation_info = OrderedDict()  
+    affiliation_info = OrderedDict()
     affiliation_info['authors'] = ',\n'.join(author_names)
     affiliation_info['affiliations'] = '\n'.join(affiliations)
     return affiliation_info
