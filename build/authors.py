@@ -42,7 +42,7 @@ def get_funding(author_df):
     # the authors supported by that award
     # funding_info data structure has the form
     # {funder1: {award1: [author1], award2: [author2, author3]}}
-    funding_info = dict()
+    funding_info = OrderedDict()
     for index, row in author_df[author_df['funding'].notnull()].iterrows():
         for grant in row['funding'].split(','):
             # Separate into the funder and the award
@@ -51,8 +51,7 @@ def get_funding(author_df):
             funder_map.setdefault(grant_tokens[1], list()).append(row['initials'])
 
     formatted_info = OrderedDict()
-    # Sort because the defaultdict is not ordered
-    for funder in sorted(funding_info.keys()):
+    for funder in funding_info.keys():
         # The map from awards to author lists for a single funder
         funder_map = funding_info[funder]
         funder_awards = list()
