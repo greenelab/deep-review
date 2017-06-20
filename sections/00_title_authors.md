@@ -2,7 +2,9 @@
 
 This article is also available as a [preprint on bioRxiv](https://doi.org/10.1101/142760).
 
-{{authors.authors}}
+{% for author in authors.authors -%}
+  {{author.name}}<sup>{{author.affiliation}}{{author.symbol}}</sup>{{ ',' if not loop.last }}
+{% endfor %}
 
 <sup>*</sup> Author order was determined with a randomized algorithm
 

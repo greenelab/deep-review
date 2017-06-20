@@ -70,7 +70,9 @@ def get_affiliations(author_df):
     Complete affiliation strings are used to determine affiliation uniqueness
     even if on string contains multiple departments or institutions.
     """
-    author_names = list()
+    # Each author is a dict with a name, affiliation index, and symbol that
+    # indicates corresponding or other special notes
+    authors = list()
     affiliations = list()
     corresponding = list()
     affiliation_map = dict()
@@ -91,20 +93,22 @@ def get_affiliations(author_df):
         # Add the affiliation superscript
         # Assumes a single affiliation per author (which could contain multiple
         # institutions) but could be generalized
-        # Do not add the close </sup> tag because some authors have special
-        # annotations about the author ordering or correspondence
-        name = f'{name}<sup>{index}'
+        author = OrderedDict()
+        author['name'] = name
+        author['affiliation'] = index
         if pandas.notnull(row['corresponding']) and row['corresponding'].lower() == 'yes':
-            name = name + ',†'
+            author['symbol'] = ',†'
             corresponding.append(f'{row["email"]} ({row["initials"]})')
-        author_names.append(name)
+        else:
+            author['symbol'] = ''
+        authors.append(author)
 
     # Add special annotation for the first listed author
-    author_names[0] = author_names[0] + ',*'
-    author_names = [name + '</sup>' for name in author_names]
+    first = authors[0]
+    first['symbol'] = first['symbol'] + ',*'
 
     affiliation_info = OrderedDict()
-    affiliation_info['authors'] = ',\n'.join(author_names)
+    affiliation_info['authors'] = authors
     affiliation_info['affiliations'] = '\n'.join(affiliations)
     affiliation_info['corresponding'] = format_list(corresponding)
     return affiliation_info
