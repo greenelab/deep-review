@@ -14,8 +14,10 @@ from collections import (
 def initials(full_name):
     """
     Return author intials in the form F.L. for First Last.  Accomodates an
-    aribtrary number of whitespace-separated strings.
+    aribtrary number of whitespace-separated strings.  Converts periods to
+    whitespace so that multiple middle initials are retained.
     """
+    full_name = full_name.replace('.', ' ')
     name_tokens = full_name.strip().split()
     # Keeps only the first part of hyphenated names
     name_tokens = [name[0] + '.' for name in name_tokens]
@@ -132,7 +134,5 @@ def get_author_info(author_file):
     # Add funding, author order, and affiliation information
     author_info.update(get_funding(author_df))
     author_info.update(get_affiliations(author_df))
-    print(author_info['authors'])
-    print(author_info['affiliations'])
 
     return author_info
