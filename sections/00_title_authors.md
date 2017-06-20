@@ -6,6 +6,6 @@ This article is also available as a [preprint on bioRxiv](https://doi.org/10.110
 
 <sup>*</sup> Author order was determined with a randomized algorithm
 
-<sup>†</sup> To whom correspondence should be addressed: gitter@biostat.wisc.edu (A.G.) and csgreene@upenn.edu (C.S.G.)
+<sup>†</sup> To whom correspondence should be addressed: {{authors.corresponding}}
 
 {{authors.affiliations}}

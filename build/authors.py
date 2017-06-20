@@ -76,6 +76,7 @@ def get_affiliations(author_df):
     """
     author_names = list()
     affiliations = list()
+    corresponding = list()
     affiliation_map = dict()
     affiliation_counter = 1
 
@@ -99,6 +100,7 @@ def get_affiliations(author_df):
         name = f'{name}<sup>{index}'
         if pandas.notnull(row['corresponding']) and row['corresponding'].lower() == 'yes':
             name = name + ',†'
+            corresponding.append(f'{row["email"]} ({row["initials"]})')
         author_names.append(name)
 
     # Add special annotation for the first listed author
@@ -108,6 +110,7 @@ def get_affiliations(author_df):
     affiliation_info = OrderedDict()
     affiliation_info['authors'] = ',\n'.join(author_names)
     affiliation_info['affiliations'] = '\n'.join(affiliations)
+    affiliation_info['corresponding'] = format_list(corresponding)
     return affiliation_info
 
 def get_author_info(author_file):
