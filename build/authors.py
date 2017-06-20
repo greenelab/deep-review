@@ -5,10 +5,7 @@ Process author table
 import pandas
 import numpy as np
 
-from collections import (
-    defaultdict,
-    OrderedDict,
-)
+from collections import OrderedDict
 
 
 def initials(full_name):
@@ -45,13 +42,13 @@ def get_funding(author_df):
     # the authors supported by that award
     # funding_info data structure has the form
     # {funder1: {award1: [author1], award2: [author2, author3]}}
-    funding_info = defaultdict(lambda: defaultdict(list))
+    funding_info = dict()
     for index, row in author_df[author_df['funding'].notnull()].iterrows():
         for grant in row['funding'].split(','):
             # Separate into the funder and the award
             grant_tokens = grant.strip().split(None, 1)
-            funder_map = funding_info[grant_tokens[0]]
-            funder_map[grant_tokens[1]].append(row['initials'])
+            funder_map = funding_info.setdefault(grant_tokens[0], dict())
+            funder_map.setdefault(grant_tokens[1], list()).append(row['initials'])
 
     formatted_info = OrderedDict()
     # Sort because the defaultdict is not ordered
