@@ -77,7 +77,7 @@ def get_affiliations(author_df):
     affiliation_map = dict()
     affiliation_counter = 1
 
-    for (_, row) in author_df.sort_values(by='static_author_order').iterrows():
+    for (_, row) in author_df.iterrows():
         name = row['full_name']
         affiliation = row['affiliation']
 
