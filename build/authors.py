@@ -2,10 +2,10 @@
 Process author table
 """
 
+from collections import OrderedDict
+
 import pandas
 import numpy as np
-
-from collections import OrderedDict
 
 
 def initials(full_name):
@@ -43,7 +43,7 @@ def get_funding(author_df):
     # funding_info data structure has the form
     # {funder1: {award1: [author1], award2: [author2, author3]}}
     funding_info = OrderedDict()
-    for index, row in author_df[author_df['funding'].notnull()].iterrows():
+    for (_, row) in author_df.dropna(subset=['funding']).iterrows():
         for grant in row['funding'].split(','):
             # Separate into the funder and the award
             grant_tokens = grant.strip().split(None, 1)
