@@ -7,6 +7,242 @@
     "total": 433
   },
   "authors": {
-    "count": 27
+    "count": 27,
+    "GBMF": "GBMF4552 (C.S.G. and D.S.H.) and GBMF4563 (D.J.H.)",
+    "NIH": "DP2GM123485 (A.K.), R01AI116794 (B.K.B.), R01GM089652 (A.E.C.), R01GM089753 (J.X.), T32GM007753 (B.T.D.), and U54AI117924 (A.G.)",
+    "NSF": "1245632 (G.L.R.), 1531594 (E.M.C.), and 1564955 (J.X.)",
+    "OTHER": "National Institutes of Health Intramural Research Program and National Library of Medicine (Y.P.)",
+    "authors": [
+      {
+        "name": "Travers Ching",
+        "affiliation": 1,
+        "symbol": ",*"
+      },
+      {
+        "name": "Daniel S. Himmelstein",
+        "affiliation": 2,
+        "symbol": ""
+      },
+      {
+        "name": "Brett K. Beaulieu-Jones",
+        "affiliation": 3,
+        "symbol": ""
+      },
+      {
+        "name": "Alexandr A. Kalinin",
+        "affiliation": 4,
+        "symbol": ""
+      },
+      {
+        "name": "Brian T. Do",
+        "affiliation": 5,
+        "symbol": ""
+      },
+      {
+        "name": "Gregory P. Way",
+        "affiliation": 2,
+        "symbol": ""
+      },
+      {
+        "name": "Enrico Ferrero",
+        "affiliation": 6,
+        "symbol": ""
+      },
+      {
+        "name": "Paul-Michael Agapow",
+        "affiliation": 7,
+        "symbol": ""
+      },
+      {
+        "name": "Wei Xie",
+        "affiliation": 8,
+        "symbol": ""
+      },
+      {
+        "name": "Gail L. Rosen",
+        "affiliation": 9,
+        "symbol": ""
+      },
+      {
+        "name": "Benjamin J. Lengerich",
+        "affiliation": 10,
+        "symbol": ""
+      },
+      {
+        "name": "Johnny Israeli",
+        "affiliation": 11,
+        "symbol": ""
+      },
+      {
+        "name": "Jack Lanchantin",
+        "affiliation": 12,
+        "symbol": ""
+      },
+      {
+        "name": "Stephen Woloszynek",
+        "affiliation": 9,
+        "symbol": ""
+      },
+      {
+        "name": "Anne E. Carpenter",
+        "affiliation": 13,
+        "symbol": ""
+      },
+      {
+        "name": "Avanti Shrikumar",
+        "affiliation": 14,
+        "symbol": ""
+      },
+      {
+        "name": "Jinbo Xu",
+        "affiliation": 15,
+        "symbol": ""
+      },
+      {
+        "name": "Evan M. Cofer",
+        "affiliation": 16,
+        "symbol": ""
+      },
+      {
+        "name": "David J. Harris",
+        "affiliation": 17,
+        "symbol": ""
+      },
+      {
+        "name": "Dave DeCaprio",
+        "affiliation": 18,
+        "symbol": ""
+      },
+      {
+        "name": "Yanjun Qi",
+        "affiliation": 12,
+        "symbol": ""
+      },
+      {
+        "name": "Anshul Kundaje",
+        "affiliation": 19,
+        "symbol": ""
+      },
+      {
+        "name": "Yifan Peng",
+        "affiliation": 20,
+        "symbol": ""
+      },
+      {
+        "name": "Laura K. Wiley",
+        "affiliation": 21,
+        "symbol": ""
+      },
+      {
+        "name": "Marwin H.S. Segler",
+        "affiliation": 22,
+        "symbol": ""
+      },
+      {
+        "name": "Anthony Gitter",
+        "affiliation": 23,
+        "symbol": ",\u2020"
+      },
+      {
+        "name": "Casey S. Greene",
+        "affiliation": 2,
+        "symbol": ",\u2020"
+      }
+    ],
+    "affiliations": [
+      {
+        "index": 1,
+        "institution": "Molecular Biosciences and Bioengineering Graduate Program, University of Hawaii at Manoa, Honolulu, HI"
+      },
+      {
+        "index": 2,
+        "institution": "Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA"
+      },
+      {
+        "index": 3,
+        "institution": "Genomics and Computational Biology Graduate Group, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA"
+      },
+      {
+        "index": 4,
+        "institution": "Department of Computational Medicine and Bioinformatics, University of Michigan Medical School, Ann Arbor, MI"
+      },
+      {
+        "index": 5,
+        "institution": "Harvard Medical School, Boston, MA"
+      },
+      {
+        "index": 6,
+        "institution": "Computational Biology and Stats, Target Sciences, GlaxoSmithKline, Stevenage, United Kingdom"
+      },
+      {
+        "index": 7,
+        "institution": "Data Science Institute, Imperial College London, London, United Kingdom"
+      },
+      {
+        "index": 8,
+        "institution": "Electrical Engineering and Computer Science, Vanderbilt University, Nashville, TN"
+      },
+      {
+        "index": 9,
+        "institution": "Ecological and Evolutionary Signal-processing and Informatics Laboratory, Department of Electrical and Computer Engineering, Drexel University, Philadelphia, PA"
+      },
+      {
+        "index": 10,
+        "institution": "Computational Biology Department, School of Computer Science, Carnegie Mellon University, Pittsburgh, PA"
+      },
+      {
+        "index": 11,
+        "institution": "Biophysics Program, Stanford University, Stanford, CA"
+      },
+      {
+        "index": 12,
+        "institution": "Department of Computer Science, University of Virginia, Charlottesville, VA"
+      },
+      {
+        "index": 13,
+        "institution": "Imaging Platform, Broad Institute of Harvard and MIT, Cambridge, MA"
+      },
+      {
+        "index": 14,
+        "institution": "Department of Computer Science, Stanford University, Stanford, CA"
+      },
+      {
+        "index": 15,
+        "institution": "Toyota Technological Institute at Chicago, Chicago, IL"
+      },
+      {
+        "index": 16,
+        "institution": "Department of Computer Science, Trinity University, San Antonio, TX"
+      },
+      {
+        "index": 17,
+        "institution": "Department of Wildlife Ecology and Conservation, University of Florida, Gainesville, FL"
+      },
+      {
+        "index": 18,
+        "institution": "ClosedLoop.ai, Austin, TX"
+      },
+      {
+        "index": 19,
+        "institution": "Department of Genetics and Department of Computer Science, Stanford University, Stanford, CA"
+      },
+      {
+        "index": 20,
+        "institution": "National Center for Biotechnology Information and National Library of Medicine, National Institutes of Health, Bethesda, MD"
+      },
+      {
+        "index": 21,
+        "institution": "Division of Biomedical Informatics and Personalized Medicine, University of Colorado School of Medicine, Aurora, CO"
+      },
+      {
+        "index": 22,
+        "institution": "Institute of Organic Chemistry, Westf\u00e4lische Wilhelms-Universit\u00e4t M\u00fcnster, M\u00fcnster, Germany"
+      },
+      {
+        "index": 23,
+        "institution": "Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison and Morgridge Institute for Research, Madison, WI"
+      }
+    ],
+    "corresponding": "gitter@biostat.wisc.edu (A.G.) and csgreene@upenn.edu (C.S.G.)"
   }
 }
