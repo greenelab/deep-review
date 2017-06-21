@@ -86,7 +86,10 @@ def get_affiliations(author_df):
         # Only list each affiliation once
         if not affiliation in affiliation_map:
             affiliation_map[affiliation] = affiliation_counter
-            affiliations.append(f'{affiliation_counter}. {affiliation}')
+            affiliation_info = OrderedDict()
+            affiliation_info['index'] = affiliation_counter
+            affiliation_info['institution'] = affiliation
+            affiliations.append(affiliation_info)
             affiliation_counter += 1
         index = affiliation_map[affiliation]
 
@@ -109,7 +112,7 @@ def get_affiliations(author_df):
 
     affiliation_info = OrderedDict()
     affiliation_info['authors'] = authors
-    affiliation_info['affiliations'] = '\n'.join(affiliations)
+    affiliation_info['affiliations'] = affiliations
     affiliation_info['corresponding'] = format_list(corresponding)
     return affiliation_info
 

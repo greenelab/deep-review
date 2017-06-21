@@ -10,4 +10,6 @@ This article is also available as a [preprint on bioRxiv](https://doi.org/10.110
 
 <sup>†</sup> To whom correspondence should be addressed: {{authors.corresponding}}
 
-{{authors.affiliations}}
+{% for affiliation in authors.affiliations -%}
+  {{affiliation.index}}. {{affiliation.institution}}
+{% endfor %}
