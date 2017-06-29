@@ -13,7 +13,12 @@ To generate and configure the GitHub SSH deploy key, run the following commands 
 
 ```sh
 # Generate a new SSH key
-ssh-keygen -t rsa -b 4096 -C "travis@travis-ci.com" -f deploy.key
+ssh-keygen \
+  -t rsa \
+  -b 4096 \
+  -C "travis@travis-ci.com" \
+  -N "" \
+  -f deploy.key
 # Add deploy.key.pub to GitHub under the repository's settings
 # see https://developer.github.com/guides/managing-deploy-keys/#deploy-keys
 
