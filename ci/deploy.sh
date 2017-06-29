@@ -2,6 +2,8 @@
 set -o errexit
 
 # Add commit hash to the README
+export OWNER_NAME=`dirname $TRAVIS_REPO_SLUG`
+export REPO_NAME=`basename $TRAVIS_REPO_SLUG`
 envsubst < output/README.md > output/README-complete.md
 mv output/README-complete.md output/README.md
 
