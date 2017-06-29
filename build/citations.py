@@ -6,7 +6,7 @@ import re
 import base62
 import bibtexparser
 
-import metadata
+import manubot.metadata as metadata
 
 
 def validate_reference(ref):
