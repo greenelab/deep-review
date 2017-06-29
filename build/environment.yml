@@ -1,4 +1,4 @@
-name: deepreview
+name: manubot
 channels:
   - anaconda
   - conda-forge

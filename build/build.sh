@@ -5,7 +5,7 @@ echo "Retrieving and processing reference metadata"
 (cd build && python references.py)
 
 # pandoc settings
-CSL_PATH=references/deep-review.csl
+CSL_PATH=references/style.csl
 BIBLIOGRAPHY_PATH=references/generated/bibliography.json
 INPUT_PATH=references/generated/all-sections.md
 
@@ -34,5 +34,5 @@ pandoc \
   --bibliography=$BIBLIOGRAPHY_PATH \
   --csl=$CSL_PATH \
   --metadata link-citations=true \
-  --output=output/deep-review.pdf \
+  --output=output/manuscript.pdf \
   $INPUT_PATH

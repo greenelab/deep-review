@@ -15,7 +15,7 @@ before_install:
   - conda info --all
 install:
   - conda env create --quiet --file build/environment.yml
-  - source activate deepreview
+  - source activate manubot
 script:
   - sh build/build.sh
 cache:

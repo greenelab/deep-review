@@ -1,6 +1,6 @@
 # Continuous integration / analysis directory
 
-[![Build Status](https://travis-ci.org/greenelab/deep-review.svg?branch=master)](https://travis-ci.org/greenelab/deep-review)
+[![Build Status](https://travis-ci.org/greenelab/manubot-rootstock.svg?branch=master)](https://travis-ci.org/greenelab/manubot-rootstock)
 
 This repository uses [continuous analysis](https://doi.org/10.1101/056473 "Reproducible Computational Workflows with Continuous Analysis") to create the manuscript and commit it back to GitHub.
 [`deploy.sh`](deploy.sh) runs on successful `master` branch builds that are not pull requests.
@@ -13,7 +13,7 @@ To generate and configure the GitHub SSH deploy key, run the following commands 
 
 ```sh
 # Generate a new SSH key
-ssh-keygen -t rsa -b 4096 -C "travis@travis-ci.com" -f deploy.sh
+ssh-keygen -t rsa -b 4096 -C "travis@travis-ci.com" -f deploy.key
 # Add deploy.key.pub to GitHub under the repository's settings
 # see https://developer.github.com/guides/managing-deploy-keys/#deploy-keys
 
