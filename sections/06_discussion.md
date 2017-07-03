@@ -19,16 +19,17 @@ design choices informed by foundational machine learning tradeoffs -
 specifically, tuning the flexibility of a model to maximize predictivity for a
 particular use case. In the discussion of patient categorization, we introduced
 various models incorporating transfer learning, dropout, and reduced projections
-of data. These techniques are examples of incorporating external information and
-reducing model flexibility to improve predictions, formally referred to as the
-"bias and variance" tradeoff [@url:http://www.deeplearningbook.org/].
+of data. These techniques are examples of utilizing external information and
+limiting model flexibility to improve predictions, which can be formally
+described as a tradeoff between "bias and variance"
+[@url:http://www.deeplearningbook.org/].
 
 In considering the predictivity that can be expected from deep learning models,
 it is also necessary to consider between-study variation, which is more common
-to biomedical data compared to other domains where deep learning may be applied.
+to biomedical data compared to other domains where deep learning is applied.
 This experiment-level variation imposes limits on classification performance and
 can result in underestimated error metrics. To mitigate these issues and
-incorporate between-study variation into the deep learning model itself, it is
+incorporate between-study variation into the prediction model itself, it is
 recommended to integrate data from multiple labs and experiments.
 
 #### Evaluation metrics for imbalanced classification
