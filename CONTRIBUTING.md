@@ -36,7 +36,7 @@ additional feedback.
 ## Markdown
 
 The paper will be written using markdown. Markdown files use the `.md`
-extension. Check out the [CommarkMark Help](http://commonmark.org/help/) page
+extension. Check out the [CommonMark Help](http://commonmark.org/help/) page
 for an introduction to formatting options provided by markdown. In addition, to
 standard markdown features, we support [markdown
 tables](https://help.github.com/articles/organizing-information-with-tables/

@@ -31,7 +31,7 @@ The ability to irrefutably prove manuscript existence at a past time could be im
 
 We created an open repository on the GitHub version control platform ([`greenelab/deep-review`](https://github.com/greenelab/deep-review)) [@url:https://github.com/greenelab/deep-review].
 Here, we engaged with numerous authors from papers within and outside of the area.
-The manuscript was drafted via GitHub commits by 27 individuals who met the ICMJE standards of authorship.
+The manuscript was drafted via GitHub commits by {{authors.count}} individuals who met the ICMJE standards of authorship.
 These were individuals who contributed to the review of the literature;
 drafted the manuscript or provided substantial critical revisions;
 approved the final manuscript draft; and agreed to be accountable in all aspects of the work.
@@ -54,12 +54,8 @@ We gratefully acknowledge Christof Angermueller, Kumardeep Chaudhary, Gökcen
 Eraslan, Michael M. Hoffman, Mikael Huss, Bharath Ramsundar and Xun Zhu for
 their discussion of the manuscript and reviewed papers on GitHub. We would like
 to thank Zhiyong Lu for revisions to the text that were not captured on GitHub
-as well as GitHub users aaronsheldon and swamidass who contributed
-text but did not formally approve the manuscript. Finally, we acknowledge
-funding from the Gordon and Betty Moore Foundation awards GBMF4552 (C.S.G. and
-D.S.H.) and GBMF4563 (D.J.H.); the National Institutes of Health awards
-DP2GM123485 (A.K.), R01AI116794 (B.K.B.), R01GM089652 (A.E.C.), R01GM089753
-(J.X.), T32GM007753 (B.T.D.), and U54AI117924 (A.G.); the National Science
-Foundation awards 1245632 (G.L.R.), 1531594 (E.M.C.), and 1564955 (J.X.); and
-the National Institutes of Health Intramural Research Program and National
-Library of Medicine (Y.P.).
+as well as GitHub users aaronsheldon and swamidass who contributed text but did
+not formally approve the manuscript. Finally, we acknowledge funding from the
+Gordon and Betty Moore Foundation awards {{authors.GBMF}}; the National
+Institutes of Health awards {{authors.NIH}}; the National Science Foundation
+awards {{authors.NSF}}; and the {{authors.OTHER}}.
