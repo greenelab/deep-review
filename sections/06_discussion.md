@@ -8,40 +8,45 @@ future research directions.
 
 ### Evaluation
 
-There are challenges to evaluating deep learning predictions in the biomedical
-domain. To some extent, these issues are common to machine learning applications
-of biomedical data, however, the utilization of large datasets and with high
-numbers of features in deep learning applications can exacerbate these
-difficulties.
+There are challenges with evaluating deep learning predictions in the biomedical
+domain. To some extent, these difficulties are common to all machine learning
+methods applied to biomedical data, however, the utilization of large datasets
+with high dimensional feature sets for deep learning can exacerbate these
+issues.
 
 High levels of between-study variation also imposes limits on classification
-performance and adds bias to evaluation metrics in biomedical data to a greater
-extent than other domains. Integrating data from multiple labs and experiments
-mitigates these biases and incorporates between-study variation into the model.
+performance and adds bias to evaluation metrics in biomedical applications to a
+greater extent than other domains where deep learning is applied. Integrating
+data from multiple labs and experiments is recommended in order to mitigate
+these biases and incorporate between-study variation as part of the
+prediction/classification model.
 
 #### Evaluation metrics for imbalanced classification
 
 Making predictions in the presence of high class imbalance and differences
 between training and generalization data is a common feature of many large
-biomedical datasets, such as genomic analyses and virtual screening.
+biomedical datasets, including deep learning models of genomic features, patient
+classification, disease detection, and virtual screening.
 
-The prediction of transcription factor binding sites exemplifies issues with
-deep learning models of genomics - of the human genome has 3 billion base pairs,
-and only a small fraction of them are implicated in specific biochemical
+Prediction of transcription factor binding sites exemplifies difficulties with
+deep learning models of genomic features. The human genome has 3 billion base
+pairs, and only a small fraction of them are implicated in specific biochemical
 activities. Less than 1% of the genome can be confidently labeled as bound for
 most transcription factors.
 
-False discovery rate (FDR) represents one method of evaluating error rates
-commonnly used in genome-wide classification models. Targeted validation
-experiments of specific biochemical activities usually necessitate an FDR of
-5-25%. When predicted biochemical activities are used as features in other
-models, such as gene expression models, a low FDR may not be as critical if the
-downstream models can satisfy their evaluation criteria.
+Estimating the false discovery rate (FDR) is a standard method of evaluation in
+genomics that can also be applied to deep learning model predictions of genomic
+features. Using deep learning predictions for targeted validation experiments of
+specific biochemical activities necessitates a more stringent FDR (typically
+5-25%). However, when predicted biochemical activities are used as features in
+other models, such as gene expression models, a low FDR may not be as critical
+(or even necessary) if the downstream models can satisfy their evaluation
+criteria.
 
 What is the correspondence between FDR metrics and commonly used classification
-metrics such as auPRC (area under the precision-recall curve) and auROC? auPRC
-evaluates the average precision, or equivalently, the average FDR across all
-recall thresholds.
+metrics such as auPRC (area under the precision-recall curve) and auROC (area
+under the receiver-operating-characteristic curve)? auPRC evaluates the average
+precision, or equivalently, the average FDR across all recall thresholds.
 
 This metric provides an overall estimate of performance across all possible use
 cases, which can be misleading for targeted validation experiments. For example,
