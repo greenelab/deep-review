@@ -10,29 +10,26 @@ future research directions.
 
 There are challenges with fitting and evaluating deep learning predictions in
 the biomedical domain. To some extent, these difficulties are common to all
-machine learning methods applied to biomedical data, however, the utilization of
+machine learning methods applied to biomedical data. However, the utilization of
 large datasets with high dimensional feature sets for deep learning can
 exacerbate these issues.
 
-Many of the application-specific variations of deep learning described here are
-instances of foundational machine learning tradeoffs - specifically the balance
-between limiting and enabling model flexibility to maximize predictivity for a
-specific use case. In patient categorization methods, some models incorporated
-transfer learning, dropout, and reduced projections of data in order to improve
-performance. These techniques are instances of incorporating external
-information and reducing the degrees of freedom of deep learning models in order
-to improve prediction error. Such tradeoffs between constraints and flexibility
-are more-formally referred to as the "bias and variance tradeoff", described in
-[@url:http://www.deeplearningbook.org/].
+Many of the variations on deep learning models described in this review reflect
+design choices informed by foundational machine learning tradeoffs -
+specifically, tuning the flexibility of a model to maximize predictivity for a
+particular use case. In the discussion of patient categorization, we introduced
+various models incorporating transfer learning, dropout, and reduced projections
+of data. These techniques are examples of incorporating external information and
+reducing model flexibility to improve predictions, formally referred to as the
+"bias and variance" tradeoff [@url:http://www.deeplearningbook.org/].
 
-In considering the maximum degree of predictivity that can be expected from deep
-learning predictions, it's also necessary to account for between-study variation
-common to biomedical datasets. This experiment-level variation imposes limits on
-classification performance and results in underestimated error metrics when
-compared to other domains where deep learning is applied in which experimental
-reproducibility is less of an issue. To mitigate these issues and incorporate
-between-study variation into the prediction model itself, it is recommended to
-integrate data from multiple labs and experiments.
+In considering the predictivity that can be expected from deep learning models,
+it is also necessary to consider between-study variation, which is more common
+to biomedical data compared to other domains where deep learning may be applied.
+This experiment-level variation imposes limits on classification performance and
+can result in underestimated error metrics. To mitigate these issues and
+incorporate between-study variation into the deep learning model itself, it is
+recommended to integrate data from multiple labs and experiments.
 
 #### Evaluation metrics for imbalanced classification
 
