@@ -4,38 +4,45 @@ In a healthcare setting, individuals are diagnosed with a disease or condition
 based on symptoms, the results of certain diagnostic tests, or other factors.
 Once diagnosed with a disease, an individual might be assigned a stage based on
 another set of human-defined rules. While these rules are refined over time, the
-process is evolutionary rather than revolutionary.
+process is evolutionary and adhoc, potentially impeding the identification of
+shared underlying mechanisms and novel treatment interventions.
 
-We might imagine that deep learning or artificial intelligence methods could
-reinvent how individuals are categorized for healthcare. A deep neural network
-might identify entirely new categories of health or disease that are only
-present when data from multiple lab tests are integrated. As a potential
-example, consider the condition Latent Autoimmune Diabetes in Adults (LADA). The
-history of this disease classification is briefly reviewed in Stenström et al.
-[@doi:10.2337/diabetes.54.suppl_2.S68].
+Deep learning methods coupled with a large corpus of patient phenotypes offer
+data-derived patient categorizations. A deep neural network can identify
+entirely new categories of health or disease that are only present when data
+from multiple lab tests are integrated. 
 
-Imagine that a deep neural network operating in the early 1980s had access to
-electronic health records with comprehensive clinical tests. It might have
-identified a subgroup of individuals with blood glucose levels that indicated
-diabetes as well as auto-antibodies, even though the individuals had never been
-diagnosed with type 1 diabetes -- the autoimmune form of the disease that arises
-in young people. Such a neural network would be identifying patients with LADA.
-As no such computational approach existed, LADA was actually identified by Groop
-et al. [@doi:10.2337/diab.35.2.237]. However, this represents a potential hope
-for this area. Perhaps deep neural networks, by reevaluating data without the
-context of our assumptions, can reveal novel classes of treatable conditions.
+As an example, consider the condition Latent Autoimmune Diabetes in Adults
+(LADA). The history of this disease classification is briefly reviewed in
+Stenström et al. [@doi:10.2337/diabetes.54.suppl_2.S68]. In the absence of a
+pre-specified disease definition, a deep neural network might have identified a
+subgroup of individuals with blood glucose levels that indicated diabetes as
+well as auto-antibodies, even though the individuals had never been diagnosed
+with type 1 diabetes -- the autoimmune form of the disease that arises in young
+people. Such a neural network would be identifying patients with LADA. As no
+such computational approach existed, LADA was actually identified by Groop et
+al. [@doi:10.2337/diab.35.2.237].
 
-Alternatively, imagine that a deep neural network is provided with clinical test
-results gleaned from electronic health records. Because physicians may order
-certain tests based on their suspected diagnosis, a deep neural network may
-learn to "diagnose" patients simply based on the tests that are ordered. For
-some objective functions, such as predicting an International Classification of
-Diseases (ICD) code, this may offer good performance even though it does not
-provide insight into the underlying disease beyond physician activity. This
-challenge is not unique to deep learning approaches; however, it is important
-for practitioners to be aware of these challenges and the possibility in this
-domain of constructing highly predictive classifiers of questionable actual
-utility.
+To be clear, the recapitulation of existing disease categories should not be
+regarded as an ultimate goal or even a gold-standard. The value of deep learning
+for patient categorization is the potential to extract coherent, targetable
+biology that would otherwise be obscured when relying upon adhoc definitions of
+disease. Perhaps deep neural networks, by reevaluating data without the context
+of our assumptions, can reveal novel classes of treatable conditions.
+
+In spite of this optimism, the ability of deep learning models to
+indiscriminately find predictive signals must also be assessed and
+operationalized with care. Imagine a deep neural network is provided with
+clinical test results gleaned from electronic health records. Because physicians
+may order certain tests based on their suspected diagnosis, a deep neural
+network may learn to "diagnose" patients simply based on the tests that are
+ordered. For some objective functions, such as predicting an International
+Classification of Diseases (ICD) code, this may offer good performance even
+though it does not provide insight into the underlying disease beyond physician
+activity. This challenge is not unique to deep learning approaches; however, it
+is important for practitioners to be aware of these challenges and the
+possibility in this domain of constructing highly predictive classifiers of
+questionable actual utility.
 
 Our goal in this section is to assess the extent to which deep learning is
 already contributing to the discovery of novel categories. Where it is not, we
