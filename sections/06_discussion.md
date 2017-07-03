@@ -8,51 +8,57 @@ future research directions.
 
 ### Evaluation
 
-There are unique challenges to evaluating deep learning predictions in the
-biomedical domain. We focus on TF binding prediction as a representative task to
-illustrate some of these issues. The human genome has 3 billion base pairs, and
-only a small fraction of them are implicated in specific biochemical activities.
-As a result, classification of genomic regions based on their biochemical
-activity results in highly imbalanced classification.  Class imbalance also
-arises in other problems we review, such as virtual screening for drug
-discovery. What are appropriate evaluation metrics that account for the label
-imbalance? The classification labels are formulated based on continuous value
-experimental signals. Practitioners must determine an appropriate procedure for
-formulating binary classification labels based on these signals. In addition,
-the experimental signals are only partially reproducible across experimental
-replicates.  An appropriate upper bound for classification performance must
-account for the experimental reproducibility.
+There are challenges to evaluating deep learning predictions in the biomedical
+domain. To some extent, these issues are common to machine learning applications
+of biomedical data, however, the common utilization of large datasets and with
+high numbers of features in deep learning application can exacerbate these
+difficulties.
+
+Furthermore, the prevalence of study-level variation in biomedical data also
+imposes limits and adds bias to classification performance to a greater extent
+compared to other domains of classification and prediction. Utilizing integrated
+data from multiple labs and experiments can mitigate this issue.
 
 #### Evaluation metrics for imbalanced classification
 
-Less than 1% of the genome can be confidently labeled as bound for most
-transcription factors. Therefore, it is important to evaluate the genome-wide
-recall and false discovery rate (FDR) of classification models of biochemical
-activities. Targeted validation experiments of specific biochemical activities
+Making predictions in the presence of high class imbalance and differences
+between training and generalization data is a common feature of many large
+biomedical datasets, such as transcription factor binding site prediction and
+virtual screening.
+
+Consider the case of TF binding prediction - the human genome has 3 billion base
+pairs, and only a small fraction of them are implicated in specific biochemical
+activities. Less than 1% of the genome can be confidently labeled as bound for
+most transcription factors.
+
+In the presence of such class imbalance, false discovery rate (FDR) is one
+method of evaluating error rates commonnly used in genome-wide classification
+models. Targeted validation experiments of specific biochemical activities
 usually necessitate an FDR of 5-25%. When predicted biochemical activities are
 used as features in other models, such as gene expression models, a low FDR may
 not be as critical if the downstream models can satisfy their evaluation
-criteria.  An FDR of 50% in this context may suffice.
+criteria. 
 
 What is the correspondence between these metrics and commonly used
 classification metrics such as auPRC (area under the precision-recall curve) and
 auROC? auPRC evaluates the average precision, or equivalently, the average FDR
-across all recall thresholds. This metric provides an overall estimate of
-performance across all possible use cases, which can be misleading for targeted
-validation experiments. For example, classification of TF binding sites can
-exhibit a recall of 0% at 10% FDR and auPRC greater than 0.6. In this case, the
-auPRC may be competitive, but the predictions are ill-suited for targeted
-validation that can only examine a few of the highest-confidence predictions.
-Likewise, auROC evaluates the average recall across all false positive rate
-(FPR) thresholds, which is often a highly misleading metric in class-imbalanced
-domains [@doi:10.1145/1143844.1143874 @doi:10.1038/nmeth.3945]. For example,
-consider a classification model with recall of 0% at FDR less than 25% and 100%
-recall at FDR greater than 25%. In the context of TF binding predictions where
-only 1% of genomic regions are bound by the TF, this is equivalent to a recall
-of 100% for FPR greater than 0.33%. In other words, the auROC would be 0.9967,
-but the classifier would be useless for targeted validation. It is not unusual
-to obtain a chromosome-wide auROC greater than 0.99 for TF binding predictions
-but a recall of 0% at 10% FDR.
+across all recall thresholds.
+
+This metric provides an overall estimate of performance across all possible use
+cases, which can be misleading for targeted validation experiments. For example,
+classification of TF binding sites can exhibit a recall of 0% at 10% FDR and
+auPRC greater than 0.6. In this case, the auPRC may be competitive, but the
+predictions are ill-suited for targeted validation that can only examine a few
+of the highest-confidence predictions. Likewise, auROC evaluates the average
+recall across all false positive rate (FPR) thresholds, which is often a highly
+misleading metric in class-imbalanced domains [@doi:10.1145/1143844.1143874
+@doi:10.1038/nmeth.3945]. Consider a classification model with recall of 0% at
+FDR less than 25% and 100% recall at FDR greater than 25%. In the context of TF
+binding predictions where only 1% of genomic regions are bound by the TF, this
+is equivalent to a recall of 100% for FPR greater than 0.33%. In other words,
+the auROC would be 0.9967, but the classifier would be useless for targeted
+validation. It is not unusual to obtain a chromosome-wide auROC greater than
+0.99 for TF binding predictions but a recall of 0% at 10% FDR.
 
 #### Formulation of classification labels
 
@@ -68,19 +74,6 @@ then be ignored during model training and evaluation of recall and FDR. The
 correlation between model predictions on these examples and their signal values
 can be used to evaluate if the model correctly ranks these examples between
 positive and negative examples.
-
-#### Formulation of a performance upper bound
-
-Genome-wide signals across experiments can lead to different sets of positive
-examples. When experimental replicates do not completely agree, perfect recall
-at a low FDR is not possible. The upper bound on the recall is the fraction of
-positive examples that are in agreement across experiments. This fraction will
-vary depending on the available experimental data. Reproducibility for
-experimental replicates from the same lab is typically higher than experimental
-replicates across multiple labs. One way to handle the range of reproducibility
-is the use of multiple reproducibility criteria such as reproducibility across
-technical replicates, biological replicates from the same lab, and biological
-replicates from multiple labs.
 
 ### Interpretation
 
