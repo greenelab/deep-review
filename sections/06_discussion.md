@@ -6,20 +6,33 @@ biomedical domain. Here we examine these factors that may impede further
 progress, ask what steps have already been taken to overcome them, and suggest
 future research directions.
 
-### Evaluation
+### General Modeling and Evaluation Considerations
 
-There are challenges with evaluating deep learning predictions in the biomedical
-domain. To some extent, these difficulties are common to all machine learning
-methods applied to biomedical data, however, the utilization of large datasets
-with high dimensional feature sets for deep learning can exacerbate these
-issues.
+There are challenges with fitting and evaluating deep learning predictions in
+the biomedical domain. To some extent, these difficulties are common to all
+machine learning methods applied to biomedical data, however, the utilization of
+large datasets with high dimensional feature sets for deep learning can
+exacerbate these issues.
 
-High levels of between-study variation also imposes limits on classification
-performance and adds bias to evaluation metrics in biomedical applications to a
-greater extent than other domains where deep learning is applied. Integrating
-data from multiple labs and experiments is recommended in order to mitigate
-these biases and incorporate between-study variation as part of the
-prediction/classification model.
+Many of the application-specific variations of deep learning described here are
+instances of foundational machine learning tradeoffs - specifically the balance
+between limiting and enabling model flexibility to maximize predictivity for a
+specific use case. In patient categorization methods, some models incorporated
+transfer learning, dropout, and reduced projections of data in order to improve
+performance. These techniques are instances of incorporating external
+information and reducing the degrees of freedom of deep learning models in order
+to improve prediction error. Such tradeoffs between constraints and flexibility
+are more-formally referred to as the "bias and variance tradeoff", described in
+[@url:http://www.deeplearningbook.org/].
+
+In considering the maximum degree of predictivity that is feasible, it is also
+necessary to account for high levels of between-study variation common to
+biomedical datasets. This experiment-level variation imposes limits on
+classification performance and leads to underestimated error metrics compared to
+other deep learning domains where reproducibility of experiments is less noisy.
+To mitigate these issues and incorporate between-study variation into the
+prediction model itself, it is recommended to integrate data from multiple labs
+and experiments.
 
 #### Evaluation metrics for imbalanced classification
 
