@@ -25,14 +25,14 @@ to improve prediction error. Such tradeoffs between constraints and flexibility
 are more-formally referred to as the "bias and variance tradeoff", described in
 [@url:http://www.deeplearningbook.org/].
 
-In considering the maximum degree of predictivity that is feasible, it is also
-necessary to account for high levels of between-study variation common to
-biomedical datasets. This experiment-level variation imposes limits on
-classification performance and leads to underestimated error metrics compared to
-other deep learning domains where reproducibility of experiments is less noisy.
-To mitigate these issues and incorporate between-study variation into the
-prediction model itself, it is recommended to integrate data from multiple labs
-and experiments.
+In considering the maximum degree of predictivity that can be expected from deep
+learning predictions, it's also necessary to account for between-study variation
+common to biomedical datasets. This experiment-level variation imposes limits on
+classification performance and results in underestimated error metrics when
+compared to other domains where deep learning is applied in which experimental
+reproducibility is less of an issue. To mitigate these issues and incorporate
+between-study variation into the prediction model itself, it is recommended to
+integrate data from multiple labs and experiments.
 
 #### Evaluation metrics for imbalanced classification
 
