@@ -2,7 +2,7 @@
 
 Despite the disparate types of data and scientific goals in the learning tasks
 covered above, several challenges are broadly important for deep learning in the
-biomedical domain.  Here we examine these factors that may impede further
+biomedical domain. Here we examine these factors that may impede further
 progress, ask what steps have already been taken to overcome them, and suggest
 future research directions.
 
@@ -10,39 +10,38 @@ future research directions.
 
 There are challenges to evaluating deep learning predictions in the biomedical
 domain. To some extent, these issues are common to machine learning applications
-of biomedical data, however, the common utilization of large datasets and with
-high numbers of features in deep learning application can exacerbate these
+of biomedical data, however, the utilization of large datasets and with high
+numbers of features in deep learning applications can exacerbate these
 difficulties.
 
-Furthermore, the prevalence of study-level variation in biomedical data also
-imposes limits and adds bias to classification performance to a greater extent
-compared to other domains of classification and prediction. Utilizing integrated
-data from multiple labs and experiments can mitigate this issue.
+High levels of between-study variation also imposes limits on classification
+performance and adds bias to evaluation metrics in biomedical data to a greater
+extent than other domains. Integrating data from multiple labs and experiments
+mitigates these biases and incorporates between-study variation into the model.
 
 #### Evaluation metrics for imbalanced classification
 
 Making predictions in the presence of high class imbalance and differences
 between training and generalization data is a common feature of many large
-biomedical datasets, such as transcription factor binding site prediction and
-virtual screening.
+biomedical datasets, such as genomic analyses and virtual screening.
 
-Consider the case of TF binding prediction - the human genome has 3 billion base
-pairs, and only a small fraction of them are implicated in specific biochemical
+The prediction of transcription factor binding sites exemplifies issues with
+deep learning models of genomics - of the human genome has 3 billion base pairs,
+and only a small fraction of them are implicated in specific biochemical
 activities. Less than 1% of the genome can be confidently labeled as bound for
 most transcription factors.
 
-In the presence of such class imbalance, false discovery rate (FDR) is one
-method of evaluating error rates commonnly used in genome-wide classification
-models. Targeted validation experiments of specific biochemical activities
-usually necessitate an FDR of 5-25%. When predicted biochemical activities are
-used as features in other models, such as gene expression models, a low FDR may
-not be as critical if the downstream models can satisfy their evaluation
-criteria. 
+False discovery rate (FDR) represents one method of evaluating error rates
+commonnly used in genome-wide classification models. Targeted validation
+experiments of specific biochemical activities usually necessitate an FDR of
+5-25%. When predicted biochemical activities are used as features in other
+models, such as gene expression models, a low FDR may not be as critical if the
+downstream models can satisfy their evaluation criteria.
 
-What is the correspondence between these metrics and commonly used
-classification metrics such as auPRC (area under the precision-recall curve) and
-auROC? auPRC evaluates the average precision, or equivalently, the average FDR
-across all recall thresholds.
+What is the correspondence between FDR metrics and commonly used classification
+metrics such as auPRC (area under the precision-recall curve) and auROC? auPRC
+evaluates the average precision, or equivalently, the average FDR across all
+recall thresholds.
 
 This metric provides an overall estimate of performance across all possible use
 cases, which can be misleading for targeted validation experiments. For example,
@@ -69,7 +68,7 @@ thresholding criteria to define what constitutes a peak in the signal. This
 inevitably results in a set of signal peaks that are close to the threshold, not
 sufficient to constitute a positive label but too similar to positively labeled
 examples to constitute a negative label. To avoid an arbitrary label for these
-example they may be labeled as "ambiguous". Ambiguously labeled examples can
+examples they may be labeled as "ambiguous". Ambiguously labeled examples can
 then be ignored during model training and evaluation of recall and FDR. The
 correlation between model predictions on these examples and their signal values
 can be used to evaluate if the model correctly ranks these examples between
