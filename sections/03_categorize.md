@@ -5,12 +5,13 @@ based on symptoms, the results of certain diagnostic tests, or other factors.
 Once diagnosed with a disease, an individual might be assigned a stage based on
 another set of human-defined rules. While these rules are refined over time, the
 process is evolutionary and adhoc, potentially impeding the identification of
-shared underlying mechanisms and novel treatment interventions.
+underlying biological mechanisms and their corresponding treatment
+interventions.
 
-Deep learning methods coupled with a large corpus of patient phenotypes offer
-data-derived patient categorizations. A deep neural network can identify
-entirely new categories of health or disease that are only present when data
-from multiple lab tests are integrated. 
+Deep learning methods coupled with a large corpus of patient phenotypes can
+provide a more data-driven approach to patient categorization. A deep neural
+network has the potential to identify entirely new categories of health or
+disease that are only present when data from multiple lab tests are integrated.
 
 As an example, consider the condition Latent Autoimmune Diabetes in Adults
 (LADA). The history of this disease classification is briefly reviewed in
@@ -24,14 +25,14 @@ such computational approach existed, LADA was actually identified by Groop et
 al. [@doi:10.2337/diab.35.2.237].
 
 To be clear, the recapitulation of existing disease categories should not be
-regarded as an ultimate goal or even a gold-standard. The value of deep learning
-for patient categorization is the potential to extract coherent, targetable
-biology that would otherwise be obscured when relying upon adhoc definitions of
-disease. Perhaps deep neural networks, by reevaluating data without the context
-of our assumptions, can reveal novel classes of treatable conditions.
+regarded as a gold-standard for deep learning outputs. Instead, a meaningful
+contribution to patient categorization would be to identify new shared
+mechanisms that would otherwise be obscured due to adhoc historical definitions
+of disease. Perhaps deep neural networks, by reevaluating data without the
+context of our assumptions, can reveal novel classes of treatable conditions.
 
-In spite of this optimism, the ability of deep learning models to
-indiscriminately find predictive signals must also be assessed and
+In spite of such optimism, the ability of deep learning models to
+indiscriminately extract predictive signals must also be assessed and
 operationalized with care. Imagine a deep neural network is provided with
 clinical test results gleaned from electronic health records. Because physicians
 may order certain tests based on their suspected diagnosis, a deep neural
