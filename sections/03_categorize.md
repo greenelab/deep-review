@@ -4,11 +4,11 @@ In a healthcare setting, individuals are diagnosed with a disease or condition
 based on symptoms, the results of certain diagnostic tests, or other factors.
 Once diagnosed with a disease, an individual might be assigned a stage based on
 another set of human-defined rules. While these rules are refined over time, the
-process is evolutionary and adhoc, potentially impeding the identification of
+process is evolutionary and ad hoc, potentially impeding the identification of
 underlying biological mechanisms and their corresponding treatment
 interventions.
 
-Deep learning methods coupled with a large corpus of patient phenotypes can
+Deep learning methods coupled with a large corpus of patient phenotypes may
 provide a more data-driven approach to patient categorization. A deep neural
 network has the potential to identify entirely new categories of health or
 disease that are only present when data from multiple lab tests are integrated.
@@ -27,7 +27,7 @@ al. [@doi:10.2337/diab.35.2.237].
 To be clear, the recapitulation of existing disease categories should not be
 regarded as a gold-standard for deep learning outputs. Instead, a meaningful
 contribution to patient categorization would be to identify new shared
-mechanisms that would otherwise be obscured due to adhoc historical definitions
+mechanisms that would otherwise be obscured due to ad hoc historical definitions
 of disease. Perhaps deep neural networks, by reevaluating data without the
 context of our assumptions, can reveal novel classes of treatable conditions.
 
