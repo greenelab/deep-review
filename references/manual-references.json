@@ -1,2 +1,22 @@
 [
+ {
+  "URL": "https://github.com/greenelab/manubot-rootstock",
+  "title": "greenelab/manubot-rootstock GitHub repository",
+  "container-title": "GitHub",
+  "issued": {
+    "date-parts": [
+      [
+        2017
+      ]
+    ]
+  },
+  "author": [
+    {
+     "family": "Himmelstein",
+     "given": "Daniel"
+    }
+  ],
+  "type": "webpage",
+  "standard_citation": "url:https://github.com/greenelab/manubot-rootstock"
+ }
 ]
