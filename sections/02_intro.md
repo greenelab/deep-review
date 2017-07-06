@@ -23,31 +23,36 @@ algorithms have produced comparable or higher accuracy than previous
 best-in-class methods that required years of extensive customization, and
 specialized implementations are now being used at industrial scales.
 
+Deep learning approaches grew from research in neural networks.
 Neural networks were first proposed in 1943 [@doi:10.1007/BF02478259] as a model
 for how our brains process information. The history of neural networks is
 interesting in its own right [@doi:10.1103/RevModPhys.34.135]. In neural
 networks, inputs are fed into a hidden layer, which feeds into one or more
-hidden layers, which eventually produce an output layer. The neural networks
+hidden layers, which eventually produce an output layer. 
+Each layer consists of a set of nodes, usually called "features" or "units,"
+which are connected via edges to the immediately earlier and the
+immediately deeper layer.
+The neural networks
 used for deep learning have multiple hidden layers. Each layer essentially
 performs feature construction for the layers before it. The training process
 used often allows layers deeper in the network to contribute to the refinement
 of earlier layers. For this reason, these algorithms can automatically engineer
 features that are suitable for many tasks and customize those features for one
-or more specific tasks. Deep learning does many of the same things as more
-familiar approaches. Like a clustering algorithm, it can build features that
-describe recurrent patterns in data. Like a regression approach, deep learning
-methods can predict some output. However, deep learning methods combine both of
+or more specific tasks. 
+
+Deep learning does many of the same things as more
+familiar machine learning approaches. In particular, deep learning approaches can be used both in *supervised*
+applications - where the goal is to accurately predict one or more labels or outcomes associated with each
+data point - in the place of regression approaches, as well as in *unsupervised*, or "exploratory" applications - 
+where the goal is to summarize, explain, or
+identify interesting patterns in a data set - as a form of clustering.
+Moreover, deep learning methods combine both of
 these steps. When sufficient data are available, these methods construct
 features tuned to a specific problem and combine those features into a
 predictor. Recently, hardware improvements and very
 large training datasets have allowed these deep learning techniques to surpass
 other machine learning algorithms for many problems.
-
-Neural networks are most widely associated with supervised machine learning,
-where the goal is to accurately predict one or more labels associated with each
-data point. However, deep learning algorithms can also be used in an
-exploratory, "unsupervised" mode, where the goal is to summarize, explain, or
-identify interesting patterns in a data set.  In a famous and early example,
+In a famous and early example,
 scientists from Google demonstrated that a neural network "discovered" that
 cats, faces, and pedestrians were important components of online videos
 [@url:http://research.google.com/archive/unsupervised_icml2012.html] without
@@ -74,6 +79,18 @@ larger datasets now available are also sufficient for fitting the many
 parameters that exist for deep neural networks. The convergence of these factors
 currently makes deep learning extremely adaptable and capable of addressing the
 nuanced differences of each domain to which it is applied.
+
+While deep learning shows increased flexibility over other machine learning approaches, as 
+seen in the remainder of this review, it requires large training sets in order to fit
+the hidden layers, as well as accurate labels for the supervised learning applications.
+This is one of the primary drivers for its usefulness in some areas of 
+biology and medicine and comparatively lower impact in others. At the same time, this highlights
+the potentially even larger role that it may play in future research, given the increases
+in data in all areas of biomedicine. It is also important to see it as a branch of machine learning
+and acknowledge that it has the same limitations as other approaches in that field. In particular, the
+results are still dependent on the underlying study design and the usual caveats of correlation versus
+causation still apply - a more precise answer is only better than a less precise one if it answers the
+correct question.
 
 ### Will deep learning transform the study of human disease?
 
