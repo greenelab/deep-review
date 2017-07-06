@@ -29,9 +29,9 @@ for how our brains process information. The history of neural networks is
 interesting in its own right [@doi:10.1103/RevModPhys.34.135]. In neural
 networks, inputs are fed into a hidden layer, which feeds into one or more
 hidden layers, which eventually produce an output layer. 
-Each layer consists of a set of nodes, usually called "features" or "units,"
+A layer consists of a set of nodes, usually called "features" or "units,"
 which are connected via edges to the immediately earlier and the
-immediately deeper layer.
+immediately deeper layers.
 The neural networks
 used for deep learning have multiple hidden layers. Each layer essentially
 performs feature construction for the layers before it. The training process
