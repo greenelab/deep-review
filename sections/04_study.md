@@ -703,7 +703,7 @@ from the reference as the alpha value. The neural network outputs genotype
 probabilities for each candidate variant. They were able to achieve better
 performance than GATK, a leading genotype caller, even when GATK was given
 information about population variation for each candidate variant. Another
-method, still in its infancy, hand-developed 642 features for each candidate
+method, still in its infancy, hand-developed 62 features for each candidate
 variant and fed these vectors into a fully connected deep neural network
 [@tag:Torracinta2016_deep_snp]. Unfortunately, this feature set required at
 least 15 iterations of software development to fine-tune, which suggests that
