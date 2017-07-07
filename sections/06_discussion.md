@@ -14,14 +14,15 @@ machine learning methods applied to biomedical data. However, the utilization of
 large datasets with high dimensional feature sets for deep learning can
 exacerbate these issues.
 
-Many of the variations on deep learning models described in this review reflect
+The variations on deep learning implementations described in this review reflect
 design choices informed by foundational machine learning tradeoffs --
 specifically, tuning the flexibility of a model to maximize predictivity for a
-particular use case. Examples have utilized methods such as transfer learning
-(further described below), dropout, and reduced projections of data. These
-techniques are examples of utilizing external information and limiting model
-flexibility to improve predictions, which can be formally described as a
-tradeoff between "bias and variance" [@url:http://www.deeplearningbook.org/].
+particular use case. Methods for tuning generalization performance have included
+dropout and reduced projections of data (in the context of patient
+categorization) and transfer learning (described below). These techniques are
+examples of utilizing external information and limiting model flexibility to
+improve predictions, which can be formally described as a tradeoff between "bias
+and variance" [@url:http://www.deeplearningbook.org/].
 
 In considering the predictivity that can be expected from deep learning models,
 it is also necessary to consider between-study variation, a more common feature
