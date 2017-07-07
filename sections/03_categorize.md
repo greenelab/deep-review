@@ -229,6 +229,107 @@ a need for better pathologist-computer interaction techniques that will allow
 combining the power of deep learning methods with human expertise and lead to
 better-informed decisions for patient treatment and care.
 
+### Text applications in healthcare
+
+Due to the rapid growth of scholarly publications and electronic medical/health
+records, biomedical text mining has become increasingly important in recent
+years. The main tasks in biological and clinical text mining include but are not
+limited to named entity recognition, relation/event extraction, and information
+retrieval (Figure 1).
+
+![Deep learning applications, tasks and models based on NLP perspectives.](../images/biotm.jpg)
+
+Machine learning is widely used in many of aforementioned tasks where
+engineering the optimal set of features is a must. However it is often difficult
+to know what features should be extracted, even with domain knowledge. Deep
+learning addresses this challenge by enabling "computers to build complex
+concepts out of simpler ones [@tag:goodfellow2016deep]". Moreover, deep learning
+has shown competitive performance compared to traditional ML methods. As a
+result, we have observed growing interests of using deep learning in biomedical
+text mining applications in recent years?
+
+In this section, we summarize recent studies in text mining with various deep
+learning methods. We categorize the body of work by the application domain/text
+genre (biomedical literature vs. clinical notes) and by the actual task (e.g.
+concept or relation extraction).
+
+In biomedical text mining, named entity recognition (NER) is a task of
+identifying text spans that refer to a biological concept of a specific class,
+such as disease or chemical, in a controlled vocabulary or ontology. NER is of
+significant importance as it is often needed as a first step in many complex
+text mining systems. The current state-of-the-art methods typically reformulate
+the task as a sequence labeling problem and use conditional random fields
+[@doi:10.1093/bioinformatics/btw343 @doi:10.1093/bioinformatics/btt156 
+@doi:10.1093/bioinformatics/btt474]. In recent years, word embeddings that
+contain rich latent semantic information of words have been widely used to
+improve the NER performance. [@doi:10.3390/info6040848] studied the effect of
+word embeddings on drug name recognition and compared them with traditional
+semantic features. [@doi:10.1155/2014/240403] investigated word embeddings in
+gene, DNA, and cell line mention detection tasks. Moreover,
+[@tag:wu2015clinical] examined the use of neural word embeddings for clinical
+abbreviation disambiguation. [@tag:liu2015exploiting] exploited task-oriented
+resources to learn word embeddings for clinical abbreviation expansion.
+
+Relation extraction is a task of detecting and classifying semantic relationship
+between entities from the literature. At present, kernel methods or feature-
+based approaches are commonly applied [@doi:10.1371/journal.pcbi.1000837
+@doi:10.1186/s13321-016-0165-z @doi:10.1093/bioinformatics/btp602]. There are
+several proposals of using deep learning in the biomedical relation tasks
+because it can relieve the feature sparsity and engineering problems. Some
+studies focused on jointly extracting biomedical entities as well as their
+relations simultaneously [@tag:li2016joint @doi:10.1186/s12859-017-1609-9],
+while others applied deep learning on relation classification with given
+entities. For example, [@arxiv:1706.01556] proposed a multichannel dependency-
+based convolutional neural network (CNN) and [@doi:10.1155/2016/8479587
+@doi:10.1155/2016/1850404] proposed a shortest path based CNN for the sentence-
+based protein-protein extraction task. [@doi:10.1504/IJDMB.2016.074878] proposed
+a biomedical domain-specific word embedding model to reduce the manual labor of
+designing semantic representation for the same task.
+[@doi:10.1093/database/bax024] employed a maximum entropy model and a CNN model
+for chemical-induced disease relation extraction at inter- and intra-sentence
+level, respectively. For drug-drug interaction,
+[@doi:10.1093/bioinformatics/btw486] used a syntax CNN,
+[@tag:asada2017extracting] used an attention CNN, and [@arxiv:1705.03261]
+examined a recurrent neural network model with multiple attention layers. For
+biotopes event extraction, [@tag:li2016dutir] employed CNN and distributed
+representation while [@tag:mehryary2016deep] used long-short term memory (LSTM)
+networks to extract complicate relations. [@tag:li2015using] applied word
+embedding to extract complete events from biomedical text and archived the
+results comparable to the state-of-the-art systems. There are also some works
+that identified event triggers rather than the complete event
+[@doi:10.1142/S0219720015410012 @tag:patchigolla2017biomedical]. Taken together,
+it appears that deep learning models outperform traditional kernel methods or
+feature-based approaches by 1-5% in f-score. Among various deep learning
+approaches, CNN stands out as the most popular model both in terms of
+computational complexity and performance, while recurrent neural network (RNN)
+has achieved continuous progress.
+
+Information retrieval is a task of finding relevant text that satisfies an
+information need from within a large document collection. While deep learning
+has not yet achieved the same level of success in this area as seen in others,
+the recent surge of interest and work suggest that this may be quickly changing.
+For example, [@tag:mohan2017deep] described a deep learning approach to modeling
+the relevance of a document's text to a query, applied to the entire biomedical
+literature.
+
+In the clinical domain, [@tag:jagannatha2016bidirectional] employed a
+bidirectional LSTM RNN structure to extract adverse drug events from electronic
+health records. [@tag:choi2016doctor] developed Doctor AI, a RNN-based model
+that can learn efficient patient representation from a large amount of
+longitudinal patient records and predict diagnosis and medication code of EHR.
+[@doi:10.3233/978-1-61499-432-9-584] applied the word2vec deep learning toolkit
+to medical corpora and evaluated the efficiency of word2vec in identifying
+properties of pharmaceuticals based on mid-sized, unstructured medical text
+corpora without any additional background knowledge.
+[@tag:lin2017representations] investigated using CNN to extract temporal
+relations. [@tag:karimi2017automatic] investigated the applicability of deep
+learning at autocoding of radiology reports using the International
+Classification of Diseases [@tag:world2004international].
+
+To summarize, deep learning has shown promising results in many biomedical text
+mining tasks and applications. But to further realize its potential, more
+technical advances and/or labeled data would be required.
+
 ### Electronic health records
 
 EHR data include substantial amounts of free text, which remains challenging to
