@@ -6,7 +6,7 @@ biomedical domain. Here we examine these factors that may impede further
 progress, ask what steps have already been taken to overcome them, and suggest
 future research directions.
 
-### General Modeling and Evaluation Considerations
+### Optimization and Evaluation Considerations
 
 There are challenges with fitting and evaluating deep learning predictions in
 the biomedical domain. To some extent, these difficulties are common to all
@@ -15,35 +15,33 @@ large datasets with high dimensional feature sets for deep learning can
 exacerbate these issues.
 
 Many of the variations on deep learning models described in this review reflect
-design choices informed by foundational machine learning tradeoffs -
+design choices informed by foundational machine learning tradeoffs --
 specifically, tuning the flexibility of a model to maximize predictivity for a
-particular use case. In the discussion of patient categorization, we introduced
-various models incorporating transfer learning, dropout, and reduced projections
-of data. These techniques are examples of utilizing external information and
-limiting model flexibility to improve predictions, which can be formally
-described as a tradeoff between "bias and variance"
-[@url:http://www.deeplearningbook.org/].
+particular use case. Examples have utilized methods such as transfer learning
+(further described below), dropout, and reduced projections of data. These
+techniques are examples of utilizing external information and limiting model
+flexibility to improve predictions, which can be formally described as a
+tradeoff between "bias and variance" [@url:http://www.deeplearningbook.org/].
 
 In considering the predictivity that can be expected from deep learning models,
-it is also necessary to consider between-study variation, which is more common
-to biomedical data compared to other domains where deep learning is applied.
-This experiment-level variation imposes limits on classification performance and
-can result in underestimated error metrics. To mitigate these issues and
-incorporate between-study variation into the prediction model itself, it is
-recommended to integrate data from multiple labs and experiments.
+it is also necessary to consider between-study variation, a more common feature
+of biomedical data. This experiment-level variation imposes limits on
+classification performance and can result in underestimating prediction error.
+Analyses can incorporate data from multiple labs and experiments to capture
+between-study variation within the prediction model mitigating some of these
+issues.
 
 #### Evaluation metrics for imbalanced classification
 
 Making predictions in the presence of high class imbalance and differences
 between training and generalization data is a common feature of many large
 biomedical datasets, including deep learning models of genomic features, patient
-classification, disease detection, and virtual screening.
-
-Prediction of transcription factor binding sites exemplifies difficulties with
-deep learning models of genomic features. The human genome has 3 billion base
-pairs, and only a small fraction of them are implicated in specific biochemical
-activities. Less than 1% of the genome can be confidently labeled as bound for
-most transcription factors.
+classification, disease detection, and virtual screening. Prediction of
+transcription factor binding sites exemplifies the difficulties with learning
+from highly imbalanced data. The human genome has 3 billion base pairs, and only
+a small fraction of them are implicated in specific biochemical activities. Less
+than 1% of the genome can be confidently labeled as bound for most transcription
+factors.
 
 Estimating the false discovery rate (FDR) is a standard method of evaluation in
 genomics that can also be applied to deep learning model predictions of genomic
@@ -57,9 +55,8 @@ criteria.
 What is the correspondence between FDR metrics and commonly used classification
 metrics such as auPRC (area under the precision-recall curve) and auROC (area
 under the receiver-operating-characteristic curve)? auPRC evaluates the average
-precision, or equivalently, the average FDR across all recall thresholds.
-
-This metric provides an overall estimate of performance across all possible use
+precision, or equivalently, the average FDR across all recall thresholds. This
+metric provides an overall estimate of performance across all possible use
 cases, which can be misleading for targeted validation experiments. For example,
 classification of TF binding sites can exhibit a recall of 0% at 10% FDR and
 auPRC greater than 0.6. In this case, the auPRC may be competitive, but the
@@ -73,7 +70,9 @@ binding predictions where only 1% of genomic regions are bound by the TF, this
 is equivalent to a recall of 100% for FPR greater than 0.33%. In other words,
 the auROC would be 0.9967, but the classifier would be useless for targeted
 validation. It is not unusual to obtain a chromosome-wide auROC greater than
-0.99 for TF binding predictions but a recall of 0% at 10% FDR.
+0.99 for TF binding predictions but a recall of 0% at 10% FDR. Consequently,
+practitioners must select the metric most tailored to their subsequent use case
+to use these methods most effectively.
 
 #### Formulation of classification labels
 
