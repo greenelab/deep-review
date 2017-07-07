@@ -20,6 +20,9 @@ mkdir -p output
 echo "Exporting HTML manuscript"
 pandoc --verbose \
   --from=markdown --to=html \
+  --filter pandoc-fignos \
+  --filter pandoc-eqnos \
+  --filter pandoc-tablenos \
   --bibliography=$BIBLIOGRAPHY_PATH \
   --csl=$CSL_PATH \
   --metadata link-citations=true \
@@ -34,6 +37,9 @@ echo "Exporting PDF manuscript"
 pandoc \
   --from=markdown \
   --to=html5 \
+  --filter pandoc-fignos \
+  --filter pandoc-eqnos \
+  --filter pandoc-tablenos \
   --bibliography=$BIBLIOGRAPHY_PATH \
   --csl=$CSL_PATH \
   --metadata link-citations=true \

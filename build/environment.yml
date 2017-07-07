@@ -17,3 +17,6 @@ dependencies:
     - pybase62==0.3.2
     - pysha3==1.0.2
     - python-bitcoinlib==0.7.0
+    - pandoc-fignos==0.20
+    - pandoc-eqnos==0.16
+    - pandoc-tablenos==0.16
