@@ -61,13 +61,10 @@ def get_text(directory):
     Return a dictionary of section texts in the specified directory.
     """
     section_dir = pathlib.Path(directory)
-    paths = sorted(section_dir.iterdir())
+    paths = sorted(section_dir.glob('[0-9]*.md'))
     name_to_text = collections.OrderedDict()
     for path in paths:
-        if not re.match(r'[0-9]', path.name):
-            continue
-        with path.open('rt') as section_file:
-            name_to_text[path.stem] = section_file.read()
+        name_to_text[path.stem] = path.read_text()
     return '\n\n'.join(name_to_text.values())
 
 

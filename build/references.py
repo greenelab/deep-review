@@ -173,8 +173,7 @@ template = jinja2.Template(converted_text)
 converted_text = template.render(**stats)
 
 # Write manuscript for pandoc
-with gen_dir.joinpath('all-sections.md').open('wt') as write_file:
-    write_file.write(converted_text)
+gen_dir.joinpath('all-sections.md').write_text(converted_text)
 
 # Write citation table
 path = gen_dir.joinpath('processed-citations.tsv')
@@ -196,8 +195,7 @@ for metadata in metadata_cache.values():
 
 # Write bibtex bibliography
 bib_path = gen_dir.joinpath('bibliography.bib')
-with bib_path.open('wt') as write_file:
-    write_file.write('\n'.join(bibtex_stanzas))
+bib_path.write_text('\n'.join(bibtex_stanzas))
 
 # Convert bibtex records to JSON CSL Items
 bib_items = subprocess.check_output(
