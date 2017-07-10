@@ -19,9 +19,9 @@ When a pull request is merged, Travis CI performs the build and writes the resul
 The `gh-pages` branch hosts the following URLs:
 
 + **HTML manuscript** at https://greenelab.github.io/manubot-rootstock/<br>
-  short URL: https://git.io/vytJN
+  short URL: https://git.io/vQPp1
 + **PDF manuscript** at https://greenelab.github.io/manubot-rootstock/manuscript.pdf<br>
-  short URL: https://git.io/vytJ5
+  short URL: https://git.io/vQPp7
 
 For continuous integration configuration details, see [`.travis.yml`](.travis.yml).
 
