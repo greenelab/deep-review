@@ -81,7 +81,7 @@ parameters that exist for deep neural networks. The convergence of these factors
 currently makes deep learning extremely adaptable and capable of addressing the
 nuanced differences of each domain to which it is applied. 
 
-[Glossary table]
+Table 1. Glossary table
 | Term          | Definition           |
 | :------------- |:--------------|
 | Neural network  (NN)   | Machine-learning approach where inputs are fed into one or more hidden layers, producing an outer layer |
