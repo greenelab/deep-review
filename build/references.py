@@ -15,6 +15,7 @@ import textwrap
 import jinja2
 import pandas
 
+from authors import get_author_info
 from citations import (
     citation_to_metadata,
     citeproc_passthrough,
@@ -24,8 +25,6 @@ from citations import (
     semicolon_separate_references,
     validate_reference,
 )
-
-# from authors import get_author_info
 
 # Run only as a script
 assert __name__ == '__main__'
@@ -154,7 +153,7 @@ print(ref_counts)
 
 # Author table information
 authors_path = pathlib.Path('../content/authors.tsv')
-# stats['authors'] = get_author_info(authors_path)
+stats['authors'] = get_author_info(authors_path)
 
 with gen_dir.joinpath('stats.json').open('wt') as write_file:
     json.dump(stats, write_file, indent=2)
