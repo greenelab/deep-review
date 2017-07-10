@@ -73,12 +73,25 @@ large. New neural network approaches are also well-suited for addressing
 distinct challenges. For example, neural networks structured as autoencoders or
 as adversarial networks require no labels and are now regularly used for
 unsupervised tasks. In this review, we do not exhaustively discuss the different
-types of deep neural network architectures. A recent book from Goodfellow et al.
+types of deep neural network architectures; an overview of the principal terms used
+herein is given in Table 1. A recent book from Goodfellow et al.
 [@url:http://www.deeplearningbook.org/] covers these in detail. Finally, the
 larger datasets now available are also sufficient for fitting the many
 parameters that exist for deep neural networks. The convergence of these factors
 currently makes deep learning extremely adaptable and capable of addressing the
-nuanced differences of each domain to which it is applied.
+nuanced differences of each domain to which it is applied. 
+
+[Glossary table]
+| Term          | Definition           |
+| :------------- |:--------------|
+| Neural network  (NN)   | Machine-learning approach where inputs are fed into one or more hidden layers, producing an outer layer |
+| Deep learning (DL) approach      | NN with multiple hidden layers      | 
+| Supervised learning | Machine-learning approaches with goal of prediction of labels or outcomes     | 
+| Unsupervised learning | Machine-learning approaches with goal of data summarization or pattern identification |
+| Convolutional neural network (CNN) | NN used for grid data - such as images or equally-spaced time points - that considers convolutions instead of linear transformations, leading to increased sparsity and thus improved efficiency |
+| Recurrent neural network (RNN) | NN used for sequential data - such as time series or genomic data - by using cycles between nodes in the hidden layers  |
+| Long short-term memory (LSTM) model | Special type of RNN that can learn longer-term dependencies |
+| Autoencoder (AE) | NN that sets the outer layer to be similar to the input layer, used for example in dimension reduction |
 
 While deep learning shows increased flexibility over other machine learning approaches, as 
 seen in the remainder of this review, it requires large training sets in order to fit
