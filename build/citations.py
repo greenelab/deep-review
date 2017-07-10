@@ -2,7 +2,6 @@ import collections
 from hashlib import blake2b
 import pathlib
 import re
-import sys
 
 import base62
 import bibtexparser
