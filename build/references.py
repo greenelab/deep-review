@@ -52,7 +52,7 @@ gen_dir = ref_dir.joinpath('generated')
 gen_dir.mkdir(exist_ok=True)
 
 # Read and process manuscript
-text = get_text('../sections')
+text = get_text('../content')
 refs = sorted(get_references_from_text(text))
 
 # Warn about non-failing misformatted references
@@ -153,7 +153,7 @@ print('References by type:')
 print(ref_counts)
 
 # Author table information
-authors_path = pathlib.Path('../authors.tsv')
+authors_path = pathlib.Path('../content/authors.tsv')
 # stats['authors'] = get_author_info(authors_path)
 
 with gen_dir.joinpath('stats.json').open('wt') as write_file:
