@@ -12,7 +12,11 @@ import manubot.metadata as metadata
 def validate_reference(ref):
     if not ref.startswith('@'):
         return f'{ref} → does not start with @'
-    source, tail = ref.lstrip('@').split(':', 1)
+    try:
+        source, tail = ref.lstrip('@').split(':', 1)
+    except Exception as error:
+        print(f'Failed to parse {ref} due to {e}')
+        raise error
     if not tail:
         return f'{ref} → does not specify its source, e.g. "@doi:" or "@pmid:"'
     if source not in {'doi', 'pmid', 'arxiv', 'url', 'tag'}:
