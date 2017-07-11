@@ -131,6 +131,7 @@ citeproc_type_fixer = {
     'book-chapter': 'chapter',
     'posted-content': 'manuscript',
     'proceedings-article': 'paper-conference',
+    'standard': 'entry',
 }
 
 # Remove citeproc keys to fix pandoc-citeproc errors
