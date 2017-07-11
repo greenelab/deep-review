@@ -22,3 +22,9 @@ For example, you can add a reference to the tag `study_x` using the following sy
 If you add references that use tags, make sure to add those tags and their corresponding citations to [`references/tags.tsv`](references/tags.tsv).
 
 If the automatically extracted reference information contains errors, it can be [manually overridden](references/README.md#reference-overrides).
+
+## Authorship information
+
+Authorship information and order is extracted from [`authors.tsv`](../content/authors.tsv).
+To add an author, insert a row into this table.
+We recommend authors add themselves to `authors.tsv` via pull request (when requested by a maintainer), thereby signaling that they've read and approved the manuscript.
