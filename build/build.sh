@@ -1,5 +1,8 @@
 set -o errexit
 
+# Default Python to read/write text files using UTF-8 encoding
+export LC_ALL=en_US.UTF-8
+
 # Generate reference information
 echo "Retrieving and processing reference metadata"
 (cd build && python references.py)
