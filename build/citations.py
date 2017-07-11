@@ -146,6 +146,8 @@ citeproc_remove_keys = [
     'event',
     # remove the references of cited papers. Not neccessary and unwieldy.
     'reference',
+    # Error in $[26].categories[0][0]: failed to parse field categories: mempty
+    'categories',
 ]
 
 
