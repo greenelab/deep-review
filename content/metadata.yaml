@@ -1,0 +1,36 @@
+---
+title: 'Manubot Rootstock: Manuscript Title'
+author_info:
+    -
+        github_username: dhimmel
+        full_name: Daniel S. Himmelstein
+        initials: DSH
+        orcid: 0000-0002-3012-7446
+        email: daniel.himmelstein@gmail.com
+        affiliations: Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania
+        funders: GBMF4552
+    -
+        github_username: agitter
+        full_name: Anthony Gitter
+        initials: AG
+        orcid: 0000-0002-5324-9833
+        email: gitter@biostat.wisc.edu
+        affiliations: Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison and Morgridge Institute for Research
+        funders: NIH U54AI117924
+    -
+        github_username: vsmalladi
+        full_name: Venkat S. Malladi
+        initials: VSM
+        orcid: 0000-0002-0144-0564
+        email: vsmalladi@gmail.com
+        affiliations: The Laboratory of Signaling and Gene Expression, Cecil H. and Ida Green Center for Reproductive Biology Sciences, University of Texas Southwestern Medical Center
+    -
+        github_username: evancofer
+        full_name: Evan M. Cofer
+        initials: EMC
+keywords:
+    - work-in-progress
+    - markdown
+    - manuscript
+    - publishing
+...

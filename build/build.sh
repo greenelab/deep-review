@@ -11,15 +11,17 @@ echo "Retrieving and processing reference metadata"
 CSL_PATH=references/style.csl
 BIBLIOGRAPHY_PATH=references/generated/bibliography.json
 INPUT_PATH=references/generated/all-sections.md
+LINK_COLOR='blue'
 
 # Make output directory
 mkdir -p output
 
-# Create HTML outpout
+# Create HTML output
 # http://pandoc.org/MANUAL.html
 echo "Exporting HTML manuscript"
 pandoc --verbose \
-  --from=markdown --to=html \
+  --from=markdown \
+  --to=html \
   --filter pandoc-fignos \
   --filter pandoc-eqnos \
   --filter pandoc-tablenos \
@@ -32,7 +34,7 @@ pandoc --verbose \
   --output=output/index.html \
   $INPUT_PATH
 
-# Create PDF outpout
+# Create PDF output
 echo "Exporting PDF manuscript"
 pandoc \
   --from=markdown \
@@ -45,3 +47,4 @@ pandoc \
   --metadata link-citations=true \
   --output=output/manuscript.pdf \
   $INPUT_PATH
+
