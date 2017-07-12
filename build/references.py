@@ -167,10 +167,12 @@ for old, new in zip(ref_df.text, ref_df.citation_id):
 # Semicolon separate multiple refernces for pandoc-citeproc
 converted_text = semicolon_separate_references(converted_text)
 
-# Template using jina2
-env = jinja2.Environment(loader=jinja2.BaseLoader(), 
-                         comment_start_string='{##')
-template = env.from_string(converted_text)
+# Template using jinja2
+jinja_environment = jinja2.Environment(
+    loader=jinja2.BaseLoader(),
+    comment_start_string='{##',
+)
+template = jinja_environment.from_string(converted_text)
 converted_text = template.render(**stats)
 
 # Write manuscript for pandoc

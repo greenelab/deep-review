@@ -14,9 +14,9 @@ dependencies:
     - bibtexparser==0.6.2
     - ghp-import==0.5.5
     - git+https://github.com/greenelab/manubot@b0da17625e1f12091159f15a329391b85c205565
+    - pandoc-eqnos==0.16
+    - pandoc-fignos==0.20
+    - pandoc-tablenos==0.16
     - pybase62==0.3.2
     - pysha3==1.0.2
     - python-bitcoinlib==0.7.0
-    - pandoc-fignos==0.20
-    - pandoc-eqnos==0.16
-    - pandoc-tablenos==0.16

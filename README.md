@@ -1,6 +1,6 @@
-# manubot-rootstock
+# Continuous manuscripts written collaboratively on GitHub
 
-This repository provides a system for collaboratively writing scholarly manuscripts via GitHub.
+[Manubot Rootstock](https://git.io/vQSvo) provides a system for collaboratively writing scholarly manuscripts via GitHub.
 This project aims to automate publishing.
 For example, citation and referencing are largely automated. 
 This project originated with the [Deep Review](https://github.com/greenelab/deep-review), but was moved here in hopes of making a general purpose template for the system.
@@ -28,10 +28,8 @@ If your build fails, see the Travis CI logs for the cause of failure and revise 
 When a pull request is merged, Travis CI performs the build and writes the results to the [`gh-pages`](https://github.com/greenelab/manubot-rootstock/tree/gh-pages) and [`references`](https://github.com/greenelab/manubot-rootstock/tree/references) branches.
 The `gh-pages` branch hosts the following URLs:
 
-+ **HTML manuscript** at https://greenelab.github.io/manubot-rootstock/<br>
-  short URL: https://git.io/vQPp1
-+ **PDF manuscript** at https://greenelab.github.io/manubot-rootstock/manuscript.pdf<br>
-  short URL: https://git.io/vQPp7
++ **HTML manuscript** at https://greenelab.github.io/manubot-rootstock/
++ **PDF manuscript** at https://greenelab.github.io/manubot-rootstock/manuscript.pdf
 
 For continuous integration configuration details, see [`.travis.yml`](.travis.yml).
 
