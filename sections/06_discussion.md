@@ -475,17 +475,12 @@ sharing and analysis [@doi:10.1038/ng.3830].
 The sharing of high-quality, labeled datasets will be especially valuable.  In
 addition, researchers who invest time to preprocess datasets to be suitable for
 deep learning can make the preprocessing code (e.g. Basset
-[@tag:Kelley2016_basset] and variationanalysis [@tag:Torracinta2016_deep_snp])
+[@tag:Kelley2016_basset] and variation analysis [@tag:Torracinta2016_deep_snp])
 and cleaned data (e.g. MoleculeNet [@tag:Wu2017_molecule_net]) publicly
 available to catalyze further research. However, there are complex privacy and
-legal issues involved in sharing patient data that cannot be ignored. In some
-domains high-quality training data has been generated privately, i.e.
-high-throughput chemical screening data at pharmaceutical companies. One
-perspective is that there is little expectation or incentive for this private
-data to be shared. However, data are not inherently valuable. Instead, the
-insights that we glean from them are where the value lies. Private companies may
-establish a competitive advantage by releasing data sufficient for improved
-methods to be developed.
+legal issues involved in sharing patient data that cannot be ignored. Solving
+these issues will require increased understanding of privacy risks and
+standards specifying acceptable levels. In some domains high-quality training data has been generated privately, i.e. high-throughput chemical screening data at pharmaceutical companies. One perspective is that there is little expectation or incentive for this private data to be shared. However, data are not inherently valuable. Instead, the insights that we glean from them are where the value lies. Private companies may establish a competitive advantage by releasing data sufficient for improved methods to be developed.
 
 Code sharing and open source licensing is essential for continued progress in
 this domain.  We strongly advocate following established best practices for
@@ -505,13 +500,14 @@ image classifiers as an apt example.  A pre-trained neural network can be
 quickly fine-tuned on new data and used in transfer learning, as discussed
 below.  Taking this idea to the extreme, genomic data has been artificially
 encoded as images in order to benefit from pre-trained image classifiers
-[@tag:Poplin2016_deepvariant]. "Model zoos" -- collections of pre-trained models --
-are not yet common in biomedical domains but have started to appear in genomics
-applications [@tag:Angermueller2016_single_methyl @tag:Dragonn].  Sharing models
-for patient data requires great care because deep learning models can be
-attacked to identify examples used in training.  We discuss this issue as well
-as recent techniques to mitigate these concerns in the patient categorization
-section.
+[@tag:Poplin2016_deepvariant]. "Model zoos" -- collections of pre-trained
+models -- are not yet common in biomedical domains but have started to appear
+in genomics applications [@tag:Angermueller2016_single_methyl @tag:Dragonn].
+Sharing models for patient data requires great care because deep learning
+models can be attacked to identify examples used in training. Training models
+under differential privacy presents one possible solution to protect individual
+samples. We discuss this issue as well as recent techniques to mitigate these
+concerns in the patient categorization section.
 
 DeepChem [@tag:AltaeTran2016_one_shot @tag:DeepChem @tag:Wu2017_molecule_net]
 and DragoNN [@tag:Dragonn] exemplify the benefits of sharing pre-trained models
