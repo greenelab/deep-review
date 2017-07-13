@@ -480,7 +480,15 @@ and cleaned data (e.g. MoleculeNet [@tag:Wu2017_molecule_net]) publicly
 available to catalyze further research. However, there are complex privacy and
 legal issues involved in sharing patient data that cannot be ignored. Solving
 these issues will require increased understanding of privacy risks and
-standards specifying acceptable levels. In some domains high-quality training data has been generated privately, i.e. high-throughput chemical screening data at pharmaceutical companies. One perspective is that there is little expectation or incentive for this private data to be shared. However, data are not inherently valuable. Instead, the insights that we glean from them are where the value lies. Private companies may establish a competitive advantage by releasing data sufficient for improved methods to be developed.
+standards specifying acceptable levels. In some domains high-quality training
+data has been generated privately, i.e. high-throughput chemical screening data
+at pharmaceutical companies. One perspective is that there is little
+expectation or incentive for this private data to be shared. However, data are
+not inherently valuable. Instead, the insights that we glean from them are
+where the value lies. Private companies may establish a competitive advantage
+by releasing data sufficient for improved methods to be developed. Recently,
+Ramsundar et al. did this with an open source platform DeepChem, where they
+released four privately generated datasets [@doi:10.1021/acs.jcim.7b00146].
 
 Code sharing and open source licensing is essential for continued progress in
 this domain.  We strongly advocate following established best practices for

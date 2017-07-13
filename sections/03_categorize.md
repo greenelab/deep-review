@@ -523,9 +523,34 @@ the original training set for the machine learning model [@arxiv:1610.05820], in
 this case, whether a person's record was present. This presents a potential
 hazard for approaches that aim to generate data.
 
-Choi et al. propose generative adversarial neural networks as a tool to make sharable EHR data [@arxiv:1703.06490v1]; however, the authors did not take steps to protect the model from such attacks. There are approaches to protect models, but they pose their own challenges. Training in a differentially private manner provides a limited guarantee that an algorithm's output will be equally likely to occur regardless of the participation of any one individual. The limit is determined by a parameter which provides a quantification of privacy. Beaulieu-Jones et al. demonstrate the ability to generate clinical trial data with generative adversarial neural networks under the differential privacy framework [@doi:10.1101/159756]. Likewise, Simmons et al. [@doi:10.1016/j.cels.2016.04.013] present the ability to perform genome-wide association studies (GWASs) in a differentially private manner, and Abadi et al. [@arxiv:1607.00133] show the ability to train deep learning classifiers under the differential privacy framework.
+Choi et al. propose generative adversarial neural networks as a tool to make
+sharable EHR data [@arxiv:1703.06490v1]; however, the authors did not take
+steps to protect the model from such attacks. There are approaches to protect
+models, but they pose their own challenges. Training in a differentially
+private manner provides a limited guarantee that an algorithm's output will be
+equally likely to occur regardless of the participation of any one individual.
+The limit is determined by a parameter which provides a quantification of
+privacy. Beaulieu-Jones et al. demonstrate the ability to generate clinical
+trial data with generative adversarial neural networks under the differential
+privacy framework [@doi:10.1101/159756]. Likewise, Simmons et al.
+[@doi:10.1016/j.cels.2016.04.013] present the ability to perform genome-wide
+association studies (GWASs) in a differentially private manner, and Abadi et
+al. [@arxiv:1607.00133] show the ability to train deep learning classifiers
+under the differential privacy framework.
 
-Federated learning [@url:http://proceedings.mlr.press/v54/mcmahan17a.html] and secure aggregations [@url:https://eprint.iacr.org/2017/281.pdf @tag:Papernot2017_pate] are complementary approaches that reinforce differential privacy. Both aim to maintain privacy by training deep learning models from decentralized data sources such as personal mobile devices without transferring actual training instances. This is becoming of increasing importance with the rapid growth of mobile health applications. However, the training process in these approaches places constraints on the algorithms used and can make fitting a model substantially more challenging. In our own experience, it can be trivial to train a model without differential privacy, but quite difficult to train one within the differential privacy framework. The problem can be particularly pronounced with small sample sizes.
+Federated learning [@url:http://proceedings.mlr.press/v54/mcmahan17a.html] and
+secure aggregations [@url:https://eprint.iacr.org/2017/281.pdf
+@tag:Papernot2017_pate] are complementary approaches that reinforce
+differential privacy. Both aim to maintain privacy by training deep learning
+models from decentralized data sources such as personal mobile devices without
+transferring actual training instances. This is becoming of increasing
+importance with the rapid growth of mobile health applications. However, the
+training process in these approaches places constraints on the algorithms used
+and can make fitting a model substantially more challenging. In our own
+experience, it can be trivial to train a model without differential privacy,
+but quite difficult to train one within the differential privacy framework
+[@doi:10.1101/159756]. The problem can be particularly pronounced with small
+sample sizes.
 
 While none of these problems are insurmountable or restricted to deep learning,
 they present challenges that cannot be ignored. Technical evolution in EHRs and
