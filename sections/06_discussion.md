@@ -475,7 +475,7 @@ sharing and analysis [@doi:10.1038/ng.3830].
 The sharing of high-quality, labeled datasets will be especially valuable.  In
 addition, researchers who invest time to preprocess datasets to be suitable for
 deep learning can make the preprocessing code (e.g. Basset
-[@tag:Kelley2016_basset] and variation analysis [@tag:Torracinta2016_deep_snp])
+[@tag:Kelley2016_basset] and variationanalysis [@tag:Torracinta2016_deep_snp])
 and cleaned data (e.g. MoleculeNet [@tag:Wu2017_molecule_net]) publicly
 available to catalyze further research. However, there are complex privacy and
 legal issues involved in sharing patient data that cannot be ignored. Solving
