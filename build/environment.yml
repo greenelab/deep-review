@@ -6,8 +6,8 @@ dependencies:
   - anaconda::jinja2=2.9.6
   - anaconda::pandas=0.20.2
   - anaconda::python=3.6.0
-  - anaconda::requests=2.14.2
   - anaconda::pyyaml=3.12
+  - anaconda::requests=2.14.2
   - bioconda::wkhtmltopdf=0.12.3
   - conda-forge::pandoc=1.19.2
   - pip:

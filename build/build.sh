@@ -11,7 +11,6 @@ echo "Retrieving and processing reference metadata"
 CSL_PATH=references/style.csl
 BIBLIOGRAPHY_PATH=references/generated/bibliography.json
 INPUT_PATH=references/generated/all-sections.md
-LINK_COLOR='blue'
 
 # Make output directory
 mkdir -p output
@@ -34,6 +33,10 @@ pandoc --verbose \
   --output=output/index.html \
   $INPUT_PATH
 
+# Remove h2 author names from HTML body but keep them as
+# metadata in the head.
+sed --in-place '/<h2 class="author">/d' output/index.html
+
 # Create PDF output
 echo "Exporting PDF manuscript"
 pandoc \
@@ -47,4 +50,3 @@ pandoc \
   --metadata link-citations=true \
   --output=output/manuscript.pdf \
   $INPUT_PATH
-
