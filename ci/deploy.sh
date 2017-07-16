@@ -29,8 +29,6 @@ openssl aes-256-cbc \
 eval `ssh-agent -s`
 chmod 600 ci/deploy.key
 ssh-add ci/deploy.key
-# Workaround https://github.com/travis-ci/travis-ci/issues/8082
-ssh-agent -k
 
 # Fetch and create gh-pages and references branches
 # Travis does a shallow and single branch git clone
@@ -60,3 +58,6 @@ ghp-import --push --branch=references --message="$MESSAGE" references/generated
 
 # Deploy the output to gh-pages
 ghp-import --push --branch=gh-pages --message="$MESSAGE" output
+
+# Workaround https://github.com/travis-ci/travis-ci/issues/8082
+ssh-agent -k
