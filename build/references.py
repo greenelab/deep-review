@@ -162,6 +162,16 @@ authors = metadata.pop('author_info')
 metadata['author'] = [author['full_name'] for author in authors]
 stats['authors'] = authors
 
+# Set repository version metadata for CI builds only
+repo_slug = os.getenv('TRAVIS_REPO_SLUG')
+commit = os.getenv('TRAVIS_COMMIT')
+if repo_slug and commit:
+    stats['ci_source'] = {
+        'repo_slug': repo_slug,
+        'commit': commit,
+    }
+
+# Write stats to JSON
 with gen_dir.joinpath('stats.json').open('wt') as write_file:
     json.dump(stats, write_file, indent=2)
 
