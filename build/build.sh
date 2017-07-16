@@ -39,14 +39,7 @@ sed --in-place '/<h2 class="author">/d' output/index.html
 
 # Create PDF output
 echo "Exporting PDF manuscript"
-pandoc \
-  --from=markdown \
-  --to=html5 \
-  --filter pandoc-fignos \
-  --filter pandoc-eqnos \
-  --filter pandoc-tablenos \
-  --bibliography=$BIBLIOGRAPHY_PATH \
-  --csl=$CSL_PATH \
-  --metadata link-citations=true \
-  --output=output/manuscript.pdf \
-  $INPUT_PATH
+wkhtmltopdf \
+  --quiet \
+  output/index.html \
+  output/manuscript.pdf
