@@ -6,24 +6,26 @@ biomedical domain. Here we examine these factors that may impede further
 progress, ask what steps have already been taken to overcome them, and suggest
 future research directions.
 
-### Optimizing deep learning models involves bias-variance tradeoffs
+### Customizing deep learning models reflects a tradeoff between bias and variance
 
-Some challenges to applying deep learning are common to all machine learning
-techniques. In particular, many problem-specific optimizations described here
-reflect a recurring tradeoff -- controlling the flexibility of a model in order
-to maximize predictivity. Methods for adjusting deep learning models along a
-spectrum of model flexibility include dropout, reduced projections, and transfer
-learning (described below). One way of understanding such optimizations is that
-they incorporate external information to limit the flexibility of models and
-thereby improve predictions. This balance is formally described as a tradeoff
-between "bias and variance" [@url:http://www.deeplearningbook.org/].
+Some of the challenges in applying deep learning are shared with other machine
+learning methods. In particular, many problem-specific optimizations described
+in this review reflect a recurring universal tradeoff -- controlling the
+flexibility of a model in order to maximize predictivity. Methods for adjusting
+the flexibility of deep learning models include dropout, reduced data
+projections, and transfer learning (described below). One way of understanding
+such model optimizations is that they incorporate external information to limit
+model flexibility and thereby improve predictions. This balance is formally
+described as a tradeoff between "bias and variance"
+[@url:http://www.deeplearningbook.org/].
 
-Although bias-variance tradeoffs are universal to all machine learning
-applications, some empirical and theoretical observations suggest that deep
-learning models have unique generalization properties
-[@tag:Zhang2017_generalization @tag:Lin2017_why_dl_works]. More theoretical
-advances are needed to establish a coherent foundation that enables
-practitioners to reason from first principles about the design of their models.
+Although the bias-variance tradeoff is common to all machine learning
+applications, recent empirical and theoretical observations suggest that deep
+learning models may have uniquely advantageous generalization properties
+[@tag:Zhang2017_generalization @tag:Lin2017_why_dl_works]. Nevertheless,
+additional advances will be needed to establish a coherent theoretical
+foundation which enables practitioners to better reason about their models from
+first principles.
 
 #### Evaluation metrics for imbalanced classification
 
