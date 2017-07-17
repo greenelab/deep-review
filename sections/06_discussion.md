@@ -8,25 +8,22 @@ future research directions.
 
 ### Optimizing deep learning models involves bias-variance tradeoffs
 
-Some of the challenges and considerations in fitting and tuning deep learning
-models are shared with applications of other machine learning methods to
-biomedical data. 
+Some challenges to applying deep learning are common to all machine learning
+techniques. In particular, many problem-specific optimizations described here
+reflect a recurring tradeoff -- controlling the flexibility of a model in order
+to maximize predictivity. Methods for adjusting deep learning models along a
+spectrum of model flexibility include dropout, reduced projections, and transfer
+learning (described below). One way of understanding such optimizations is that
+they incorporate external information to limit the flexibility of models and
+thereby improve predictions. This balance is formally described as a tradeoff
+between "bias and variance" [@url:http://www.deeplearningbook.org/].
 
-The variations on deep learning implementations described in this review reflect
-design choices informed by common tradeoffs in machine learning -- specifically,
-tuning the flexibility of a model to maximize predictivity for a particular use
-case. Methods for tuning performance along this spectrum include dropout,
-reduced projections, as well as the transfer learning methods described below.
-These techniques are examples of utilizing external information and limiting
-model flexibility to improve predictions, which can be formally described as a
-tradeoff between "bias and variance" [@url:http://www.deeplearningbook.org/].
-
-While the bias-variance tradeoff consideration is shared with other learning
-procedures, some recent empirical and theoretical observations suggest that deep
+Although bias-variance tradeoffs are universal to all machine learning
+applications, some empirical and theoretical observations suggest that deep
 learning models have unique generalization properties
-[@tag:Zhang2017_generalization @tag:Lin2017_why_dl_works]. Nevertheless, more
-research is needed to establish a theoretical foundation for deep learning and
-reason about its generalization properties from first principles.
+[@tag:Zhang2017_generalization @tag:Lin2017_why_dl_works]. More theoretical
+advances are needed to establish a coherent foundation that enables
+practitioners to reason from first principles about the design of their models.
 
 #### Evaluation metrics for imbalanced classification
 
