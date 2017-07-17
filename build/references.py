@@ -159,7 +159,7 @@ with path.open() as read_file:
 
 # Author table information
 authors = metadata.pop('author_info')
-metadata['author'] = [author['full_name'] for author in authors]
+metadata['author'] = [author['name'] for author in authors]
 stats['authors'] = authors
 
 # Set repository version metadata for CI builds only
