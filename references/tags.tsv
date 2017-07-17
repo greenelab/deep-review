@@ -62,6 +62,7 @@ Duvenaud2015_graph_conv	url:http://papers.nips.cc/paper/5954-convolutional-netwo
 Edwards2015_growing_pains	doi:10.1145/2771283
 Ehran2009_visualizing	url:http://www.iro.umontreal.ca/~lisa/publications2/index.php/publications/show/247
 Elephas	url:https://github.com/maxpumperla/elephas
+Errington2014_reproducibility doi:10.7554/eLife.04333
 Eser2016_fiddle	doi:10.1101/081380
 Esfahani2016_melanoma	doi:10.1109/EMBC.2016.7590963
 Essinger2010_taxonomic	doi:10.1109/IJCNN.2010.5596644
@@ -129,7 +130,7 @@ Leibig2016_dr	doi:10.1101/084210
 Li2014_minibatch	doi:10.1145/2623330.2623612
 Li2016_variation	doi:10.1126/science.aad9417
 Liang2015_exprs_cancer	doi:10.1109/TCBB.2014.2377729
-Lin2017  arxiv:1608.08225v3 
+Lin2017_why_dl_works arxiv:1608.08225v3 
 Lipton2016_missing	arxiv:1606.04130
 Lipton2015_lstm	arxiv:1510.07641
 Litjens2016_histopath_survey	doi:10.1038/srep26286

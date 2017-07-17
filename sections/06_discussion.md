@@ -6,31 +6,27 @@ biomedical domain. Here we examine these factors that may impede further
 progress, ask what steps have already been taken to overcome them, and suggest
 future research directions.
 
-### Optimization and Evaluation Considerations
+### Optimizing deep learning models involves bias-variance tradeoffs
 
-There are challenges with fitting and evaluating deep learning predictions in
-the biomedical domain. To some extent, these difficulties are common to all
-machine learning methods applied to biomedical data. However, the utilization of
-large datasets with high dimensional feature sets for deep learning can
-exacerbate these issues.
+Some of the challenges and considerations in fitting and tuning deep learning
+models are shared with applications of other machine learning methods to
+biomedical data. 
 
 The variations on deep learning implementations described in this review reflect
-design choices informed by foundational machine learning tradeoffs --
-specifically, tuning the flexibility of a model to maximize predictivity for a
-particular use case. Methods for tuning generalization performance have included
-dropout and reduced projections of data (in the context of patient
-categorization) and transfer learning (described below). These techniques are
-examples of utilizing external information and limiting model flexibility to
-improve predictions, which can be formally described as a tradeoff between "bias
-and variance" [@url:http://www.deeplearningbook.org/].
+design choices informed by common tradeoffs in machine learning -- specifically,
+tuning the flexibility of a model to maximize predictivity for a particular use
+case. Methods for tuning performance along this spectrum include dropout,
+reduced projections, as well as the transfer learning methods described below.
+These techniques are examples of utilizing external information and limiting
+model flexibility to improve predictions, which can be formally described as a
+tradeoff between "bias and variance" [@url:http://www.deeplearningbook.org/].
 
-In considering the predictivity that can be expected from deep learning models,
-it is also necessary to consider between-study variation, a more common feature
-of biomedical data. This experiment-level variation imposes limits on
-classification performance and can result in underestimating prediction error.
-Analyses can incorporate data from multiple labs and experiments to capture
-between-study variation within the prediction model mitigating some of these
-issues.
+While the bias-variance tradeoff consideration is shared with other learning
+procedures, some recent empirical and theoretical observations suggest that deep
+learning models have unique generalization properties
+[@tag:Zhang2017_generalization @tag:Lin2017_why_dl_works]. Nevertheless, more
+research is needed to establish a theoretical foundation for deep learning and
+reason about its generalization properties from first principles.
 
 #### Evaluation metrics for imbalanced classification
 
@@ -49,9 +45,7 @@ genomics that can also be applied to deep learning model predictions of genomic
 features. Using deep learning predictions for targeted validation experiments of
 specific biochemical activities necessitates a more stringent FDR (typically
 5-25%). However, when predicted biochemical activities are used as features in
-other models, such as gene expression models, a low FDR may not be as critical
-(or even necessary) if the downstream models can satisfy their evaluation
-criteria.
+other models, such as gene expression models, a low FDR may not be necessary.
 
 What is the correspondence between FDR metrics and commonly used classification
 metrics such as auPRC (area under the precision-recall curve) and auROC (area
@@ -89,6 +83,17 @@ then be ignored during model training and evaluation of recall and FDR. The
 correlation between model predictions on these examples and their signal values
 can be used to evaluate if the model correctly ranks these examples between
 positive and negative examples.
+
+#### Formulation of a performance upper bound
+
+In assessing the upper bound on the predictive performance of a deep learning
+model, it is necessary to incorporate inherent between-study variation inherent
+to biomedical research [@tag:Errington2014_reproducibility]. Study-level
+variability limits classification performance and can lead to underestimating
+prediction error if the generalization error is estimated by splitting a single
+dataset. Analyses can incorporate data from multiple labs and experiments to
+capture between-study variation within the prediction model mitigating some of
+these issues.
 
 ### Interpretation
 
