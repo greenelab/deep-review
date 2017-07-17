@@ -54,10 +54,20 @@ $TRAVIS_COMMIT_MESSAGE
 "
 
 # Deploy the reference data to references
-ghp-import --push --branch=references --message="$MESSAGE" references/generated
+ghp-import \
+  --follow-links \
+  --push \
+  --branch=references \
+  --message="$MESSAGE" \
+  references/generated
 
 # Deploy the output to gh-pages
-ghp-import --push --branch=gh-pages --message="$MESSAGE" output
+ghp-import \
+  --follow-links \
+  --push \
+  --branch=gh-pages \
+  --message="$MESSAGE" \
+  output
 
 # Workaround https://github.com/travis-ci/travis-ci/issues/8082
 ssh-agent -k
