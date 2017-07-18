@@ -15,7 +15,7 @@ To see what's incoming, check the [open pull requests](https://github.com/greene
 ## Source
 
 The manuscript source is located in [`content`](content).
-Text should be written in markdown files, with a digit prefix for ordering (e.g. `01.` or `02.`) and a `.md` suffix.
+Text should be written in markdown files, with a digit prefix for ordering (e.g. `01.`, `02.`, etc.) and a `.md` suffix.
 
 ## Continuous Integration
 
@@ -42,7 +42,7 @@ This entirety of this repository is licensed under a CC BY 4.0 License ([`LICENS
 Please attribute by linking to https://github.com/greenelab/manubot-rootstock.
 
 Since CC BY is not ideal for code and data, certain repository components are also released under the CC0 1.0 public domain dedication ([`LICENSE-CC0.md`](LICENSE-CC0.md)).
-All files matched by the following blog patterns are dual licensed under CC BY 4.0 and CC0 1.0:
+All files matched by the following glob patterns are dual licensed under CC BY 4.0 and CC0 1.0:
 
 + `*.sh`
 + `*.py`
