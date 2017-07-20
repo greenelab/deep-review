@@ -77,6 +77,39 @@ body {
     margin: 0;
 }
 
+
+/* 
+ * Page Breaks
+ * https://github.com/wkhtmltopdf/wkhtmltopdf/issues/2982#issuecomment-308714479
+ */
+
+@media screen, print {
+  /***Always insert a page break before the element***/
+  .page_break_before {
+      page-break-before: always !important;
+  }
+
+  /***Always insert a page break after the element***/
+  .page_break_after {
+      page-break-after: always !important;
+  }
+
+  /***Avoid page break before the element (if possible)***/
+  .page_break_before_avoid {
+      page-break-before: avoid !important;
+  }
+
+  /***Avoid page break after the element (if possible)***/
+  .page_break_after_avoid {
+      page-break-after: avoid !important;
+  }
+
+  /* Avoid page break inside the element (if possible) */
+  .page_break_inside_avoid {
+      page-break-inside: avoid !important;
+  }
+}
+
 /* ==========================================================================
    Links
    ========================================================================== */
