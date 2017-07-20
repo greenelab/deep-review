@@ -47,7 +47,7 @@ wkhtmltopdf \
   output/manuscript.pdf
 
 # Create DOCX output when user specifies to do so
-if [[ $BUILD_DOCX == true ]]
+if [ "$BUILD_DOCX" = "true" ];
 then
     echo "Exporting Word Docx manuscript"
     pandoc --verbose \
