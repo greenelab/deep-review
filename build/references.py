@@ -5,6 +5,7 @@ Process citations and retrieve citation metadata
 """
 
 import collections
+import datetime
 import json
 import os
 import pathlib
@@ -156,6 +157,12 @@ print(ref_counts)
 path = pathlib.Path('../content/metadata.yaml')
 with path.open() as read_file:
     metadata = yaml.load(read_file)
+
+# Add date to metadata
+today = datetime.date.today()
+today = today.strftime('%B %e, %Y')
+metadata['date'] = today
+stats['date'] = today
 
 # Author table information
 authors = metadata.pop('author_info')
