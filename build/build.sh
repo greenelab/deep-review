@@ -9,6 +9,7 @@ echo "Retrieving and processing reference metadata"
 
 # pandoc settings
 CSL_PATH=references/style.csl
+DOCX_PATH=references/pandoc-reference.docx
 BIBLIOGRAPHY_PATH=references/generated/bibliography.json
 INPUT_PATH=references/generated/all-sections.md
 
@@ -19,6 +20,7 @@ mkdir -p output
 # http://pandoc.org/MANUAL.html
 echo "Exporting HTML manuscript"
 pandoc --verbose \
+  --smart \
   --from=markdown \
   --to=html \
   --filter pandoc-fignos \
@@ -43,3 +45,21 @@ wkhtmltopdf \
   --quiet \
   output/index.html \
   output/manuscript.pdf
+
+# Create DOCX output when user specifies to do so
+if [[ $BUILD_DOCX == true ]]
+then
+    echo "Exporting Word Docx manuscript"
+    pandoc --verbose \
+    --smart \
+    --from=markdown \
+    --to=docx \
+    --filter pandoc-fignos \
+    --filter pandoc-tablenos \
+    --bibliography=$BIBLIOGRAPHY_PATH \
+    --metadata link-citations=true \
+    --csl=$CSL_PATH \
+    --reference-docx=$DOCX_PATH \
+    --output=output/manuscript.docx \
+    $INPUT_PATH
+fi
