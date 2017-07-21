@@ -160,13 +160,12 @@ with path.open() as read_file:
 
 # Add date to metadata
 today = datetime.date.today()
-today = today.strftime('%B %e, %Y')
-metadata['date'] = today
-stats['date'] = today
+metadata['date-meta'] = today.isoformat()
+stats['date'] = today.strftime('%B %e, %Y')
 
 # Author table information
 authors = metadata.pop('author_info')
-metadata['author'] = [author['name'] for author in authors]
+metadata['author-meta'] = [author['name'] for author in authors]
 stats['authors'] = authors
 
 # Set repository version metadata for CI builds only

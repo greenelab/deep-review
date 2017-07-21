@@ -1,6 +1,7 @@
 # Generated manuscript output files
 output/index.html
 output/manuscript.pdf
+output/manuscript.docx
 output/*.ots
 
 # Generated reference files
