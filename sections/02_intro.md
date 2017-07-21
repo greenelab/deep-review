@@ -93,6 +93,10 @@ Table 1. Glossary table
 | Recurrent neural network (RNN) | NN used for sequential data - such as time series or genomic data - by using cycles between nodes in the hidden layers  |
 | Long short-term memory (LSTM) model | Special type of RNN that can learn longer-term dependencies |
 | Autoencoder (AE) | NN that sets the outer layer to be similar to the input layer, used for example in dimension reduction |
+| Generative neural network | NN approach that uses models trained to generate data similar to the collected data, leading to smaller number of parameters |
+| Generative adversarial network (GAN) | Generative NN approach that uses two networks, one that generates samples from training data and one that discriminates between generated and training data |
+| Restricted Bolzmann machine (RBM) | Generative NN that forms the building block for many DL approaches, having a single input layer and a single hidden layer, with no connections between the nodes within each layer |
+| Deep belief network (DBN) | Generative NN with several hidden layers, which can be obtained from combining multiple RBMs |
 
 While deep learning shows increased flexibility over other machine learning approaches, as 
 seen in the remainder of this review, it requires large training sets in order to fit
