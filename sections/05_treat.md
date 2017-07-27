@@ -80,7 +80,7 @@ processes (e.g. the rules of the game). Some models have been developed for
 targeted medical problems [@tag:Gultepe2014_sepsis], but a generalized engine is
 beyond current capabilities.
 
-#### Clinical trials efficiency
+#### Clinical trial efficiency
 
 A clinical deep learning task that has been more successful is the assignment of
 patients to clinical trials. Ithapu et al. [@tag:Ithapu2015_efficient] used a
@@ -159,7 +159,7 @@ repositioning via deep learning is currently missing.
 In the biomedical domain, high-throughput chemical screening aims to improve
 therapeutic options over a long term horizon [@tag:PerezSianes2016_screening].
 The objective is to discover which small molecules (also referred to as chemical
-compounds or ligands) that specifically affect the activity of a target, such as
+compounds or ligands) specifically affect the activity of a target, such as
 a kinase, protein-protein interaction, or broader cellular phenotype.  This
 screening is often one of the first steps in a long drug discovery pipeline,
 where novel molecules are pursued for their ability to inhibit or enhance

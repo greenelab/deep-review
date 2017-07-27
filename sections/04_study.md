@@ -74,7 +74,7 @@ computational restrictions.
 
 Epigenetic data, combined with deep learning, may have sufficient explanatory
 power to infer gene expression. For instance, a convolutional neural network
-applied to histone modifications, termed DeepChrome, [@tag:Singh2016_deepchrome]
+applied to histone modifications, termed DeepChrome [@tag:Singh2016_deepchrome]
 improved prediction accuracy of high or low gene expression over existing
 methods. Deep learning can also integrate different data types. For example,
 Liang et al. combined RBMs to integrate gene expression, DNA methylation, and
@@ -721,7 +721,7 @@ strategy.
 
 In limited experiments, DeepVariant was robust to sequencing depth, read length,
 and even species [@tag:Poplin2016_deepvariant]. However, a model built on
-Illumina data, for instance, may not be optimal for PacBio long-read data or
+Illumina data, for instance, may not be optimal for Pacific Biosystems long-read data or
 MinION nanopore data, which have vastly different specificity and sensitivity
 profiles and signal-to-noise characteristics. Recently, Boza et al. used
 bidirectional recurrent neural networks to infer the *E. coli* sequence from

@@ -115,7 +115,7 @@ researchers constructed adversarial examples [@tag:Zhu2016_advers_mamm].
 Adversarial examples are constructed by applying a transformation that changes
 training images but not their content -- for example by rotating an image by a
 random amount. An alternative in the domain is to train towards human-created
-features before subsequent fine tuning [@tag:Dhungel2016_mamm], which can help
+features before subsequent fine-tuning [@tag:Dhungel2016_mamm], which can help
 to sidestep this challenge though it does give up deep learning techniques'
 strength as feature constructors.
 
@@ -217,7 +217,7 @@ multi-label image classification framework, to detect common thoracic diseases.
 It showed superior performance over a benchmark using fully-labeled data.
 
 With the exception of natural image-like problems (e.g. melanoma detection),
-biomedical imaging poses a number of challenges for deep learning. Dataset are
+biomedical imaging poses a number of challenges for deep learning. Datasets are
 typically small, annotations can be sparse, and images are often
 high-dimensional, multimodal, and multi-channel. Techniques like transfer
 learning, heavy dataset augmentation, multi-view and multi-stream architectures
@@ -462,7 +462,7 @@ In the wider picture, standards for EHRs are numerous and evolving. Proprietary
 systems, indifferent and scattered use of health information standards, and
 controlled terminologies makes combining and comparison of data across systems
 challenging [@doi:10.1016/j.jbi.2014.10.006]. Further diversity arises from
-variation in languages, healthcare practices, and demographics. Merging EHR
+variation in languages, healthcare practices, and demographics. Merging EHRs
 gathered in different systems (and even under different assumptions) is
 challenging [@doi:10.1007/978-3-319-44839-8].
 
@@ -487,12 +487,12 @@ are applied.
 
 Finally, even if data were perfectly consistent and compatible across systems,
 attempts to share and combine EHR data face considerable legal and ethical
-barriers. Patient privacy can severely restrict the sharing and use of EHR
+barriers. Patient privacy can severely restrict the sharing and use of EHR data
 [@doi:10.1093/ije/dyn022]. Here again, standards are heterogeneous and evolving,
 but often EHR data can often not be exported or even accessed directly for
 research purposes without appropriate consent. In the United States, research
 use of EHR data is subject both to the Common Rule and the Health Insurance
-Portability and Accountability Act (HIPPA). Ambiguity in the regulatory language
+Portability and Accountability Act (HIPAA). Ambiguity in the regulatory language
 and individual interpretation of these rules can hamper use of EHR data
 [@doi:10.1093/jamia/ocv111].  Once again, this has the effect of making data
 gathering more laborious and expensive, reducing sample size and study power.
