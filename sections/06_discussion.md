@@ -29,7 +29,7 @@ Less than 1% of the genome can be confidently labeled as bound for most
 transcription factors. Therefore, it is important to evaluate the genome-wide
 recall and false discovery rate (FDR) of classification models of biochemical
 activities. Targeted validation experiments of specific biochemical activities
-usually necessitate an FDR of 5-25%. When predicted biochemical activities are
+usually necessitate an FDR of 5%-25%. When predicted biochemical activities are
 used as features in other models, such as gene expression models, a low FDR may
 not be as critical if the downstream models can satisfy their evaluation
 criteria.  An FDR of 50% in this context may suffice.
@@ -483,7 +483,7 @@ domains high-quality training data has been generated privately, i.e.
 high-throughput chemical screening data at pharmaceutical companies. One
 perspective is that there is little expectation or incentive for this private
 data to be shared. However, data are not inherently valuable. Instead, the
-insights that we glean from them are where the value lies. Private companies may
+insights that we glean from them are where the value lies. Organizations may
 establish a competitive advantage by releasing data sufficient for improved
 methods to be developed.
 
