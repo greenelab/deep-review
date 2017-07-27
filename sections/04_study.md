@@ -238,7 +238,21 @@ this was easy to simulate with a computational model. As we learn to better
 visualize and analyze the hidden nodes within deep learning models, our
 understanding of TF binding motifs and dynamics will likely improve.
 
-### Promoters, enhancers, and related epigenomic features
+### Promoters and enhancers
+
+<!-- From transcription factors to promoters and enhancers -->
+XXX
+
+<!-- Promoter prediction -->
+XXX
+
+<!-- Enhancer prediction -->
+XXX
+
+<!-- Enhancer-promoter linkage prediction -->
+XXX
+
+<!-- /// old subsection below /// -->
 
 <!-- Broader regulatory elements vs. individual binding sites; promoters -->
 Transcriptional control is undoubtedly a vital, early part of the regulation of gene expression.
