@@ -177,10 +177,6 @@ if repo_slug and commit:
         'commit': commit,
     }
 
-# Write stats to JSON
-with gen_dir.joinpath('stats.json').open('wt') as write_file:
-    json.dump(stats, write_file, indent=2)
-
 # Convert to citation_id citations for pandoc
 converted_text = text
 for old, new in zip(ref_df.text, ref_df.citation_id):
@@ -197,6 +193,14 @@ jinja_environment = jinja2.Environment(
 )
 template = jinja_environment.from_string(converted_text)
 converted_text = template.render(**stats)
+
+# Get word count
+stats['word_count'] = len(converted_text.split())
+print(f'Word count: {stats["word_count"]}')
+
+# Write stats to JSON
+with gen_dir.joinpath('stats.json').open('wt') as write_file:
+    json.dump(stats, write_file, indent=2)
 
 # Write manuscript for pandoc
 all_sections_path = gen_dir.joinpath('all-sections.md')
