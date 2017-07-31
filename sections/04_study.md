@@ -254,25 +254,12 @@ But extensive labeled data on promoters and enhancers lends itself to probabilis
 The complex interplay of TFs and chromatin leading to the emergent properties of promoter and enhancer activity seems particularly apt for capture by deep neural networks.
 
 #### Promoters
-While previous (non-deep learning) approaches have steadily improved promoter prediction, there is little consensus on the best approach and performance is poor.
-Typically algorithms will recognize only half of all promoters, with an accompanying high false positive rate [@doi:10.1101/gr.7.9.861].
-Methods with better sensitivity generally do so at the cost of poorer specificity.
-Conventional identification of enhancers has leaned heavily on simple conservation or laborious experimental techniques, with only moderate sensitivity and specificity.
-For example, while chromatin accessibility has often been used for identifying enhancers, this also "recognizes" a wide variety of other functional elements, like promoters, silencers, and repressors.
-
-XXX add in promoter review [@doi:10.1093/bib/4.1.22]
-
-<!-- neural networks for promoter prediction -->
-The complex nature of CREs and our lack of understanding makes them a natural candidate for deep learning approaches.
-Indeed, neural networks were used for promoter recognition as early as 1996, albeit with mixed results [@doi:10.1016/S0097-8485(96)80015-5].
-Since then, there has been much work in applying deep learning to this area, although little in the way of comparative studies or formal benchmarks.
-We therefore focus on a few recent important studies to outline the state of the art and extant problems.
-
-<!-- CNNProm -->
-Umarov et al. [@doi:10.1371/journal.pone.0171410] demonstrated the use of CNNs in recognizing promoter sequences, outperforming conventional methods (sensitivity and specificity exceeding 90%).
-While some results were achieved over bacterial promoters (which are considerably simpler in structure), roughly similar performance was found for human promoters.
-This work also included a simple method for model interpretation, randomly substituting bases in a recognized promoter region, then checking for a change in recognition (see Discussion).
-
+Despite decades of work, computational identification of promoters remains a stubborn problem [@doi:10.1093/bib/4.1.22].
+Researchers have used neural networks for promoter recognition as early as 1996 [@doi:10.1016/S0097-8485(96)80015-5].
+Recently, a CNN recognized promoter sequences with sensitivity and specificity exceeding 90% [@doi:10.1371/journal.pone.0171410].
+Most activity in computational prediction of regulatory regions, however, has moved to enhancer identification.
+Since one can identify promoters with straightforward biochemical assays [@doi:10.1073/pnas.2136655100 @doi:10.1101/gr.110254.110], the direct rewards of promoter prediction alone have decreased.
+But the reliable ground truth provided by these assays makes promoter identification an appealing test bed for deep learning approaches that can also identify enhancers.
 
 #### Enhancers
 Recognizing enhancers presents additional challenges.
@@ -284,6 +271,10 @@ There is no universal enhancer sequence signal or marker for enhancers, and some
 One study [@doi:10.1101/gr.173518.114] even showed that only 33% of predicted regulatory regions could be validated, while a class of "weak" predicted enhancers were strong drivers of expression.
 Yet there is growing evidence for their vast ubiquity, making them possibly the predominant functional non-coding element.
 Thus, identifying enhancers is critical yet the search space is large.
+
+Conventional identification of enhancers has leaned heavily on simple conservation or laborious experimental techniques, with only moderate sensitivity and specificity.
+For example, while chromatin accessibility has often been used for identifying enhancers, this also "recognizes" a wide variety of other functional elements, like promoters, silencers, and repressors.
+
 
 <!-- Basset -->
 Basset [@doi:10.1101/gr.200535.115] trained CNNs on DNA accessibility datasets, getting a marked improvement on previous methods, albeit still with a high false positive rate.
