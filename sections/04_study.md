@@ -263,18 +263,12 @@ But the reliable ground truth provided by these assays makes promoter identifica
 
 #### Enhancers
 Recognizing enhancers presents additional challenges.
-Enhancers may be up to one million base pairs upstream or downstream from the affected promoter on either strand and even within the introns of other genes [@doi:10.1038/nrg3458].
-They do not necessarily operate on the nearest gene and may affect multiple genes.
+Enhancers may be up to 1,000,000 bp away from the affected promoter, and even within introns of other genes [@doi:10.1038/nrg3458].
+Enhancers do not necessarily operate on the nearest gene and may affect multiple genes.
 Their activity is frequently tissue- or context-specific.
-Many enhancers display modest or no conservation across species.
-There is no universal enhancer sequence signal or marker for enhancers, and some literature suggests that enhancers and promoters may be just categories along a spectrum [@doi:10.1016/j.tig.2015.05.007].
-One study [@doi:10.1101/gr.173518.114] even showed that only 33% of predicted regulatory regions could be validated, while a class of "weak" predicted enhancers were strong drivers of expression.
-Yet there is growing evidence for their vast ubiquity, making them possibly the predominant functional non-coding element.
-Thus, identifying enhancers is critical yet the search space is large.
-
-Conventional identification of enhancers has leaned heavily on simple conservation or laborious experimental techniques, with only moderate sensitivity and specificity.
-For example, while chromatin accessibility has often been used for identifying enhancers, this also "recognizes" a wide variety of other functional elements, like promoters, silencers, and repressors.
-
+No biochemical assay can reliably identify all enhancers.
+Distinguishing them from other regulatory elements remains difficult, and some believe the distinction somewhat artificial [@doi:10.1016/j.tig.2015.05.007].
+While these factors make the enhancer identification problem more difficult, they also make a solution more valuable.
 
 <!-- Basset -->
 Basset [@doi:10.1101/gr.200535.115] trained CNNs on DNA accessibility datasets, getting a marked improvement on previous methods, albeit still with a high false positive rate.
