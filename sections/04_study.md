@@ -270,23 +270,18 @@ No biochemical assay can reliably identify all enhancers.
 Distinguishing them from other regulatory elements remains difficult, and some believe the distinction somewhat artificial [@doi:10.1016/j.tig.2015.05.007].
 While these factors make the enhancer identification problem more difficult, they also make a solution more valuable.
 
-<!-- Basset -->
-Basset [@doi:10.1101/gr.200535.115] trained CNNs on DNA accessibility datasets, getting a marked improvement on previous methods, albeit still with a high false positive rate.
-The multi-task architecture resembles DeepSEA [@tag:Zhou2015_deep_sea], which predicted open chromatin regions and histone modifications in addition to TF binding.
-As noted above, predicting DNA accessibility conflates enhancers with other functional sites.
-Basset also featured a useful interpretability approach, introducing known protein binding motifs into sequences and measuring the change in predicted accessibility.
-
-<!-- DeepEnhancer -->
-Xu et al. [@doi:10.1109/BIBM.2016.7822593] applied CNNs to the detection of enhancers, achieving incremental improvements in specificity and sensitivity over a previous SVM-based approach, and much better performance for cell-specific enhancers.
-A massive improvement in speed was also achieved.
-Additionally, they compared the performance of different CNN architectures, finding that while layers for batch normalization improved performance, deeper architectures decreased performance.
-
-<!-- DECRES -->
-Given the conflation between different CREs, the study of Li et al. [@doi:10.1101/041616] is particularly interesting.
-They used a feed-forward neural network to distinguish classes of CREs and activity states.
-Active enhancers and promoters could be easily be distinguished, as could active and inactive elements.
-Perhaps unsurprisingly, it was difficult to distinguish between inactive enhancers and promoters.
+Several neural network approaches yielded promising results in enhancer prediction.
+A baseline SVM approach, gkmSVM [@10.1371/journal.pcbi.1003711], predicted enhancers based on DNA sequence, attaining a mean AUPR of 0.322 over 164 cell types [@doi:10.1101/gr.200535.115].
+Basset used a CNN to produce a mean AUPR of 0.561 on the same problem [@doi:10.1101/gr.200535.115].
+DeepEnhancer used a CNN to get a AUPR of 0.917 on nine cell types, against an AUPR of 0.899 reported for gkmSVM.
+DECRES used a feed-forward neural network [@doi:10.1101/041616] to distinguish between different kinds of regulatory elements, such as active enhancers, and promoters.
+DECRES had difficulty distinguishing between inactive enhancers and promoters.
 They also investigated the power of sequence features to drive classification, finding that beyond CpG islands, few were useful.
+
+The dramatic difference in AUPRs reported by two studies for the same method -- gkmSVM -- illustrates the problems in comparing metrics created with different benchmarking procedures.
+It's impossible to directly compare the performance of Basset and DeepEnhancer based solely on their reported metrics.
+DECRES used a different set of metrics altogether.
+To drive further progress in enhancer identification, we must develop a common and comparable benchmarking procedure (see Discussion).
 
 #### Promoter-enhancer interactions
 Most deep learning studies in this area currently predict the 1D location of enhancers, but modeling 3D chromatin conformations, enhancer-promoter interactions [@doi:10.1101/085241], and enhancer-target gene interactions will be critical for understanding transcriptional regulation.
