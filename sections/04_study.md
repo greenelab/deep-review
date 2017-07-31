@@ -284,12 +284,11 @@ DECRES used a different set of metrics altogether.
 To drive further progress in enhancer identification, we must develop a common and comparable benchmarking procedure (see Discussion).
 
 #### Promoter-enhancer interactions
-Most deep learning studies in this area currently predict the 1D location of enhancers, but modeling 3D chromatin conformations, enhancer-promoter interactions [@doi:10.1101/085241], and enhancer-target gene interactions will be critical for understanding transcriptional regulation.
-XXX burgeoning area of research
-
-<!-- SPEID -->
-Singh et al. [@doi:10.1101/085241] approached the problem of predicting enhancer-promoter interactions from solely the sequence and location of putative enhancers and promoters in a particular cell type.
-Performance was comparative to state-of-the-art conventional techniques that used the whole gamut of full functional genomic and non-sequence data.
+In addition to the location of enhancers, identifying enhancer-promoter interactions in three-dimensional space will provide critical knowledge for understanding transcriptional regulation.
+SPEID used a CNN to predicted these interactions with only sequence and the location of putative enhancers and promoters along a one-dimensional chromosome [@doi:10.1101/085241].
+It compared well to other methods using a full complement biochemical data from ChIP-seq and other epigenomic methods.
+Of course, the putative enhancers and promoters used were themselves derived from epigenomic methods.
+But one could easily replace them with the output of one of the enhancer or promoter prediction methods above.
 
 ### Micro-RNA binding
 
