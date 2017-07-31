@@ -746,34 +746,30 @@ features simply by its ability to optimize a complex model against data.
 ### Structure determination and cryo-electron microscopy
 
 Recent advances in cryo-electron microscopy (cryo-EM) have allowed the
-structural determination characterization of proteins and
-macromolecularbiological complexes at atomic resolutions
-[@doi:10.1016/j.cell.2015.03.049].  This has allowed the structures of
-biological moleculesComplexes intractable to study by established approaches
-like X-ray crystallography and NMR haveto been solved using this method
-[@doi:10.1038/nature12822].  Structures are determined in cryo-EM through
-comparisons of hundreds of individual images [@doi:10.1016/j.cell.2015.03.050].
-These Thus, advances have depended in part on increased throughput in image
-capture.  Structures are determined in cryo-EM through comparisons of hundreds
-of individual images [@doi:10.1016/j.cell.2015.03.050].  The development of new
-technologies, such as direct electron detectiondetectors, has allowed formade
-practical the collection of the images required for high resolution
-structuresthe large number of micrographs required to solve high-resolution
-structures.  Supporting these rapid collection technologies, new software has
-been developed for image processing.  For many tasks, analysis can be
-accomplished in real time as images are generated.
+structural characterization of proteins and macromolecular complexes at near
+atomic resolution [@doi:10.1016/j.cell.2015.03.049].  Complexes intractable to
+study by established approaches like X-ray crystallography and NMR have been
+solved using this method [@doi:10.1038/nature12822].  Structures are determined
+in cryo-EM through comparisons of hundreds of individual images
+[@doi:10.1016/j.cell.2015.03.050].  Thus, advances have depended on increased
+throughput in image capture.  The development of new technologies, such as
+direct electron detectors, made practical the collection of the large number of
+micrographs required to solve high-resolution structures.  Supporting these
+rapid collection technologies, new software has been developed for image
+processing.  For many tasks, analysis can be accomplished in real time as images
+are generated.
 
 Other components of cryo-EM image processing remain recalcitrant to automation.
-For instance, in particle picking, micrographs are scanned for to identify
-individual molecular imagesparticles that will be used incontribute to structure
-refinement.  In typical applications, hundreds of thousands of particles are
-necessary to determine a structure to near atomic resolution, making manual
-selection impractical [@doi:10.1016/j.cell.2015.03.050].  Furthermore, images
-containing high resolution information are low contrast and difficult to
-interpret by eye. Machine learning approaches have been applied to address
-theseis challenges.  Typical approaches are semi-supervised; a user will select
-several particles manually, and these selections will be used to train a
-classifier [@doi:10.1016/j.jsb.2006.04.006 @doi:10.1016/j.jsb.2014.11.010].  Now
+For instance, in particle picking, micrographs are scanned to identify
+individual molecular images that will be used in structure refinement.  In
+typical applications, hundreds of thousands of particles are necessary to
+determine a structure to near atomic resolution, making manual selection
+impractical [@doi:10.1016/j.cell.2015.03.050].  Furthermore, images containing
+high resolution information are low contrast and difficult to interpret by eye.
+Machine learning approaches have been applied to address these challenges.
+Typical approaches are semi-supervised; a user will select several particles
+manually, and these selections will be used to train a classifier
+[@doi:10.1016/j.jsb.2006.04.006 @doi:10.1016/j.jsb.2014.11.010].  Now
 convolutional neural networks, such as those applied in facial recognition and
 image classification [@doi:10.1038/nature14539], are utilized by deep learning
 frameworks DeepPicker [@doi:10.1016/j.jsb.2016.07.006] and DeepEM
