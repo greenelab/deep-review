@@ -241,6 +241,7 @@ understanding of TF binding motifs and dynamics will likely improve.
 ### Promoters and enhancers
 
 #### From TF binding to promoters and enhancers
+
 Multiple TFs act in concert to coordinate changes in gene regulation at the genomic regions known as promoters and enhancers.
 Each gene has an upstream promoter, essential for initiating that gene's transcription.
 The gene may also interact with multiple enhancers, which can amplify transcription in particular cellular contexts.
@@ -254,6 +255,7 @@ But extensive labeled data on promoters and enhancers lends itself to probabilis
 The complex interplay of TFs and chromatin leading to the emergent properties of promoter and enhancer activity seems particularly apt for capture by deep neural networks.
 
 #### Promoters
+
 Despite decades of work, computational identification of promoters remains a stubborn problem [@doi:10.1093/bib/4.1.22].
 Researchers have used neural networks for promoter recognition as early as 1996 [@doi:10.1016/S0097-8485(96)80015-5].
 Recently, a CNN recognized promoter sequences with sensitivity and specificity exceeding 90% [@doi:10.1371/journal.pone.0171410].
@@ -262,6 +264,7 @@ Since one can identify promoters with straightforward biochemical assays [@doi:1
 But the reliable ground truth provided by these assays makes promoter identification an appealing test bed for deep learning approaches that can also identify enhancers.
 
 #### Enhancers
+
 Recognizing enhancers presents additional challenges.
 Enhancers may be up to 1,000,000 bp away from the affected promoter, and even within introns of other genes [@doi:10.1038/nrg3458].
 Enhancers do not necessarily operate on the nearest gene and may affect multiple genes.
@@ -284,6 +287,7 @@ DECRES used a different set of metrics altogether.
 To drive further progress in enhancer identification, we must develop a common and comparable benchmarking procedure (see Discussion).
 
 #### Promoter-enhancer interactions
+
 In addition to the location of enhancers, identifying enhancer-promoter interactions in three-dimensional space will provide critical knowledge for understanding transcriptional regulation.
 SPEID used a CNN to predicted these interactions with only sequence and the location of putative enhancers and promoters along a one-dimensional chromosome [@doi:10.1101/085241].
 It compared well to other methods using a full complement biochemical data from ChIP-seq and other epigenomic methods.
