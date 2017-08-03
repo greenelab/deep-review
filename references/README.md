@@ -20,3 +20,4 @@ Create a new record in [`manual-references.json`](manual-references.json) in [CS
 The record must contain the field `"standard_citation"` with the appropriate reference identifier as the value.
 The identifier can be obtained from the `standard_citation` column of `processed-citations.tsv`, which is located in the base directory of the `references` branch or in the `references/generated` subdirectory if you build the manuscript locally.
 `manual-references.json` contains the record `"standard_citation": "url:https://github.com/greenelab/manubot-rootstock"` as an example.
+For additional examples of how to cite different document types please refer to [these CSL examples](https://github.com/aurimasv/zotero-import-export-formats/blob/a51c342e66bebd97b73a7230047b801c8f7bb690/CSL%20JSON.json).
