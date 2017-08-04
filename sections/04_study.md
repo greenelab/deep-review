@@ -1,4 +1,4 @@
-## Deep learning to study the fundamental biological processes underlying human disease
+﻿## Deep learning to study the fundamental biological processes underlying human disease
 
 The study of cellular structure and core biological processes -- transcription,
 translation, signaling, metabolism, etc. -- in humans and model organisms will
@@ -97,13 +97,16 @@ Pre-mRNA transcripts can be spliced into different isoforms by retaining or
 skipping subsets of exons or including parts of introns, creating enormous
 spatiotemporal flexibility to generate multiple distinct proteins from a single
 gene. This remarkable complexity can lend itself to defects that underlie many
-diseases [@tag:Scotti2016_missplicing]. For instance, in Becker muscular
-dystrophy, a point mutation in dystrophin creates an exon splice silencer that
-induces skipping of exon 31. A recent study found that quantitative trait loci
+diseases. For instance, splicing mutations in the lamin A (*LMNA*) gene can lead to specific
+variants of dilated cardiomyopathy and limb girdle muscular dystrophy 
+[@tag:Scotti2016_missplicing]. 
+A recent study found that quantitative trait loci
 that affect splicing in lymphoblastoid cell lines are enriched within risk loci
 for schizophrenia, multiple sclerosis, and other immune diseases, implicating
 mis-splicing as a more widespread feature of human pathologies than previously
-thought [@tag:Li2016_variation].
+thought [@tag:Li2016_variation]. Therapeutic strategies that aim to modulate
+splicing are also currently being considered for disorders such as Duchenne muscular dystrophy
+and spinal muscular atrophy [@tag:Scotti2016_missplicing]. 
 
 Sequencing studies routinely return thousands of unannotated variants, but which
 cause functional changes in splicing and how are those changes manifested?
@@ -138,7 +141,7 @@ instructive in that clever sources of data, not just more descriptive models,
 are still critical.
 
 We already understand how mis-splicing of a single gene can cause diseases such
-as Duchenne muscular dystrophy. The challenge now is to uncover how genome-wide
+as limb girdle muscular dystrophy. The challenge now is to uncover how genome-wide
 alternative splicing underlies complex, non-Mendelian diseases such as autism,
 schizophrenia, Type 1 diabetes, and multiple sclerosis [@tag:JuanMateu2016_t1d].
 As a proof of concept, Xiong et al. [@tag:Xiong2015_splicing_code] sequenced
