@@ -787,6 +787,6 @@ generated. Downstream of particle picking, deep learning is being applied to
 other aspects of cryo-EM image processing. Statistical manifold learning has
 been implemented in the software package ROME to classify selected particles and
 elucidate the different conformations of the subject molecule necessary for
-accurate 3D structures [@arXiv:1604.04539v2]. These recent tools highlight the
+accurate 3D structures [@arxiv:1604.04539v2]. These recent tools highlight the
 general applicability of deep learning approaches for image processing to
 increase the throughput of high-resolution cryo-EM.
