@@ -97,7 +97,7 @@ Pre-mRNA transcripts can be spliced into different isoforms by retaining or
 skipping subsets of exons or including parts of introns, creating enormous
 spatiotemporal flexibility to generate multiple distinct proteins from a single
 gene. This remarkable complexity can lend itself to defects that underlie many
-diseases. For instance, splicing mutations in the lamin A (LMNA) gene can lead to specific
+diseases. For instance, splicing mutations in the lamin A (*LMNA*) gene can lead to specific
 variants of dilated cardiomyopathy and limb girdle muscular dystrophy 
 [@tag:Scotti2016_missplicing]. 
 A recent study found that quantitative trait loci
