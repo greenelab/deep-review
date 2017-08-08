@@ -32,6 +32,10 @@ hidden layers, which eventually produce an output layer.
 A layer consists of a set of nodes, usually called "features" or "units,"
 which are connected via edges to the immediately earlier and the
 immediately deeper layers.
+The nodes of the input layer generally consist of the variables being measured in the dataset
+of interest - for example, each node could represent the intensity value of a specific
+pixel in an image processing application or a gene expression value in a transcriptomics 
+experiment.
 The neural networks
 used for deep learning have multiple hidden layers. Each layer essentially
 performs feature construction for the layers before it. The training process
@@ -46,10 +50,17 @@ applications - where the goal is to accurately predict one or more labels or out
 data point - in the place of regression approaches, as well as in *unsupervised*, or "exploratory" applications - 
 where the goal is to summarize, explain, or
 identify interesting patterns in a data set - as a form of clustering.
-Moreover, deep learning methods combine both of
-these steps. When sufficient data are available, these methods construct
+Deep learning methods may in fact combine both of
+these steps. When sufficient data are available and labeled, these methods construct
 features tuned to a specific problem and combine those features into a
-predictor. Recently, hardware improvements and very
+predictor.
+In fact, if the dataset is "labeled" with binary classes, a simple neural network 
+with no hidden layers and no cycles between units is equivalent to logistic regression
+if the output layer is a sigmoid (logistic) function of the input layer.
+Similarly, for continuous outcomes, linear regression can be seen as a simple neural network.
+Thus, in some ways, supevised deep learning approaches can be seen as a generalization of regression 
+models that allow for greater flexibility.
+Recently, hardware improvements and very
 large training datasets have allowed these deep learning techniques to surpass
 other machine learning algorithms for many problems.
 In a famous and early example,
