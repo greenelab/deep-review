@@ -303,10 +303,10 @@ to the number and co-occurrence of clinical events to learn a representation of
 patients (DeepPatient). The model was able to predict disease trajectories
 within one year with over 90% accuracy and patient-level predictions were
 improved by up to 15% when compared to other methods. Choi et
-al. [@arXiv:1511.05942] attempted to model the longitudinal structure of EHRs
+al. [@arxiv:1511.05942] attempted to model the longitudinal structure of EHRs
 with a RNN to predict future diagnosis and medication prescriptions on a cohort
 of 260,000 patients followed for 8 years (Doctor AI). Pham et al.
-[@arXiv:1602.00357] built upon this concept by utilising a RNN with a long 
+[@arxiv:1602.00357] built upon this concept by utilising a RNN with a long 
 short-term memory (LSTM) architecture enabling explicit modelling of patient
 trajectories through the use of memory cells. The method, DeepCare, performed
 better than shallow models or plain RNN when tested on two independent cohorts
