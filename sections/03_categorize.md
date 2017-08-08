@@ -294,22 +294,34 @@ processes to distinguish gout from leukemia from uric acid sequences. Later work
 showed that unsupervised feature construction of many features via denoising
 autoencoder neural networks could dramatically reduce the number of labeled
 examples required for subsequent supervised analyses
-[@doi:10.1016/j.jbi.2016.10.007]. In addition, it pointed towards learned
-features being useful for subtyping within a single disease. In a concurrent
+[@doi:10.1016/j.jbi.2016.10.007]. In addition, it pointed towards features
+learned during unsupervised training being useful for visualising and
+stratifying subgroups of patients within a single disease. In a concurrent
 large-scale analysis of EHR data from 700,000 patients, Miotto et al.
 [@doi:10.1038/srep26094] used a deep denoising autoencoder architecture applied
-to the number and co-occurrence of clinical events (DeepPatient) to learn a
-representation of patients. The model was able to predict disease trajectories
+to the number and co-occurrence of clinical events to learn a representation of
+patients (DeepPatient). The model was able to predict disease trajectories
 within one year with over 90% accuracy and patient-level predictions were
-improved by up to 15% when compared to other methods. Razavian et al.
-[@arxiv:1608.00647] used a set of 18 common lab tests to predict disease onset
-using both CNN and long short-term memory (LSTM) architectures and demonstrated
-an improvement over baseline regression models. However, numerous challenges
-including data integration (patient demographics, family history, laboratory
-tests, text-based patient records, image analysis, genomic data) and better
-handling of streaming temporal data with many features, will need to be overcome
-before we can fully assess the potential of deep learning for this application
-area.
+improved by up to 15% when compared to other methods. Choi et
+al. [@arXiv:1511.05942] attempted to model the longitudinal structure of EHRs
+with a RNN to predict future diagnosis and medication prescriptions on a cohort
+of 260,000 patients followed for 8 years (Doctor AI). Pham et al.
+[@arXiv:1602.00357] built upon this concept by utilising a RNN with a long 
+short-term memory (LSTM) architecture enabling explicit modelling of patient
+trajectories through the use of memory cells. The method, DeepCare, performed
+better than shallow models or plain RNN when tested on two independent cohorts
+for its ability to predict disease progression, intervention recommendation and
+future risk prediction. Nguyen et al. [@doi:10.1109/JBHI.2016.2633963] took a
+different approach and used word embeddings from EHRs to train a CNN that could
+detect and pool local clinical motifs to predict unplanned readmission after 6
+months, with performance better than the baseline method (Deepr). Razavian et
+al. [@arxiv:1608.00647] used a set of 18 common lab tests to predict disease
+onset using both CNN and LSTM architectures and demonstrated an improvement over
+baseline regression models. However, numerous challenges including data
+integration (patient demographics, family history, laboratory tests, text-based
+patient records, image analysis, genomic data) and better handling of streaming
+temporal data with many features, will need to be overcome before we can fully
+assess the potential of deep learning for this application area.
 
 Still, recent work has also revealed domains in which deep networks have proven
 superior to traditional methods. Survival analysis models the time leading to an
