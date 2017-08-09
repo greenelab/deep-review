@@ -37,7 +37,7 @@ criteria.  An FDR of 50% in this context may suffice.
 What is the correspondence between these metrics and commonly used
 classification metrics such as auPRC (area under the precision-recall curve) and
 auROC? auPRC evaluates the average precision, or equivalently, the average FDR
-across all recall thresholds. This metric provides an overall estimate of
+across all recall thresholds (because FDR equals one minus Precision). This metric provides an overall estimate of
 performance across all possible use cases, which can be misleading for targeted
 validation experiments. For example, classification of TF binding sites can
 exhibit a recall of 0% at 10% FDR and auPRC greater than 0.6. In this case, the
@@ -191,7 +191,7 @@ to some regularizing constraints. This technique was first introduced in Ehran
 et al. [@tag:Ehran2009_visualizing] and applied in subsequent work
 [@tag:Simonyan2013_deep @tag:Mordvintsev2015_inceptionism
 @tag:Yosinksi2015_understanding @tag:Mahendran2016_visualizing]. Lanchantin et
-al. [@tag:Lanchantin2016_motif] applied activation maximization to genomic
+al. [@tag:Lanchantin2016_motif] applied class-based activation maximization to genomic
 sequence data. One drawback of this approach is that neural networks often learn
 highly distributed representations where several neurons cooperatively describe
 a pattern of interest. Thus, visualizing patterns learned by individual neurons
@@ -207,7 +207,11 @@ focus on generating a particular output [@tag:Bahdanu2014_neural
 @tag:Xu2015_show]. Deming et al. [@tag:Deming2016_genetic] applied the attention
 mechanism to models trained on genomic sequence. Attention mechanisms provide
 insight into the model's decision-making process by revealing which portions of
-the input are used by different outputs. In the clinical domain, Choi et al.
+the input are used by different outputs. Singh et al.  
+[@tag:Singh2017_attentivechrome] uses a hierarchy of attention layers
+to locate important genome positions and signals 
+for predicting gene expression from histone modifications.
+In the clinical domain, Choi et al.
 [@tag:Choi2016_retain] leveraged attention mechanisms to highlight which aspects
 of a patient's medical history were most relevant for making diagnoses. Choi et
 al. [@tag:Choi2016_gram] later extended this work to take into account the
