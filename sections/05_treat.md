@@ -357,11 +357,11 @@ a much larger set of compounds and proteins.  However, incorrect ligand poses
 will be misleading during training, and the predictive performance is sensitive
 to the docking quality [@tag:Pereira2016_docking].
 
-There are two major options for representing a protein-compound complex. A 3D
-grid can featurize the input complex [@tag:Wallach2015_atom_net
+There are two established options for representing a protein-compound complex. One option, a 3D
+grid, can featurize the input complex [@tag:Wallach2015_atom_net
 @tag:Ragoza2016_protein]. Each entry in the grid tracks the types of protein and
 ligand atoms in that region of the 3D space or descriptors derived from those
-atoms.  Both DeepVS [@tag:Pereira2016_docking] and atomic convolutions
+atoms. Alternatively, DeepVS [@tag:Pereira2016_docking] and atomic convolutions
 [@arxiv:1703.10603] offer greater flexibility in their convolutions by eschewing
 the 3D grid.  Instead, they each implement techniques for executing convolutions
 over atoms' neighboring atoms in the 3D space.  Gomes et al. demonstrate that
