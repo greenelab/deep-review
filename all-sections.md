@@ -69,7 +69,7 @@ medicine are data rich, but the data are complex and often ill-understood.
 Problems of this nature may be particularly well-suited to deep learning
 techniques. We examine applications of deep learning to a variety of biomedical
 problems -- patient classification, fundamental biological processes, and
-treatment of patients -- to predict whether deep learning will transform these
+treatment of patients -- and discuss whether deep learning will transform these
 tasks or if the biomedical sphere poses unique challenges. We find that deep
 learning has yet to revolutionize or definitively resolve any of these problems,
 but promising advances have been made on the prior state of the art. Even when
@@ -77,9 +77,9 @@ improvement over a previous baseline has been modest, we have seen signs that
 deep learning methods may speed or aid human investigation. More work is needed
 to address concerns related to interpretability and how to best model each
 problem. Furthermore, the limited amount of labeled data for training presents
-problems in some domains, as can legal and privacy constraints on work with
+problems in some domains, as do legal and privacy constraints on work with
 sensitive health records. Nonetheless, we foresee deep learning powering changes
-at the bench and bedside with the potential to transform several areas of
+at both bench and bedside with the potential to transform several areas of
 biology and medicine.
 
 
@@ -95,7 +95,7 @@ that extract meaningful patterns could lead to actionable knowledge and change
 how we develop treatments, categorize patients, or study diseases, all within
 privacy-critical environments.
 
-The term deep learning has come to refer to a collection of new techniques that,
+The term _deep learning_ has come to refer to a collection of new techniques that,
 together, have demonstrated breakthrough gains over existing best-in-class
 machine learning algorithms across several fields. For example, over the past
 five years these methods have revolutionized image classification and speech
@@ -175,8 +175,8 @@ a Strategic Inflection Point in the practice of biology or medicine.
 There are already a number of reviews focused on applications of deep learning
 in biology [@yXqhuueV; @1VZjheOA; @irSe12Sm; @G00xvi94; @MmRGFVUu], healthcare [@11I7bLcP3; @LL5huVs3], and drug discovery [@gJE0ExFr; @zCt6PUXj; @1DTUK3YyI; @xPkT1z7D].  Under our guiding question, we sought to highlight
 cases where deep learning enabled researchers to solve challenges that were
-previously considered infeasible or makes difficult, tedious analyses routine.
-We also identified approaches that researchers are using to sidestep challenges
+previously considered infeasible or simplified tedious analyses.
+We also identified approaches that researchers are using to address challenges
 posed by biomedical data. We find that domain-specific considerations have
 greatly influenced how to best harness the power and flexibility of deep
 learning. Model interpretability is often critical.  Understanding the patterns
@@ -188,8 +188,8 @@ encoding the most salient prior knowledge and assessing success or failure.
 There is also great potential to create deep learning systems that augment
 biologists and clinicians by prioritizing experiments or streamlining tasks that
 do not require expert judgment. We have divided the large range of topics into
-three broad classes: Disease and Patient Categorization, Fundamental Biological
-Study, and Treatment of Patients. Below, we briefly introduce the types of
+three broad classes: (1) disease and patient categorization, (2) fundamental biological
+study, and (3) treatment of patients. Below, we briefly introduce the types of
 questions, approaches and data that are typical for each class in the
 application of deep learning.
 
@@ -271,8 +271,8 @@ people. Such a neural network would be identifying patients with LADA. As no
 such computational approach existed, LADA was actually identified by Groop et
 al. [@ws1zvGoZ].
 
-To be clear, the recapitulation of existing disease categories should not be
-regarded as a gold-standard for deep learning outputs. Instead, a meaningful
+One should not regard recapitulation of existing disease categories
+as a gold-standard for deep learning results. Instead, a meaningful
 contribution to patient categorization would be to identify new shared
 mechanisms that would otherwise be obscured due to ad hoc historical definitions
 of disease. Perhaps deep neural networks, by reevaluating data without the
@@ -330,7 +330,7 @@ images can enable very deep networks to succeed without overfitting. For the
 melanoma task, reported performance was competitive with or better than a board
 of certified dermatologists [@sLPsrfbl; @XnYNYoYB].
 
-Reusing features from natural images is also growing for radiographic images,
+Reusing features from natural images is also an emerging approach for radiographic images,
 where datasets are often too small to train large deep neural networks without
 these techniques [@1Fy5bcnCI; @1GAyqYBNZ; @x6HXFAS4; @Qve94Jra]. Rajkomar et al.
 [@x6HXFAS4] showed that a deep CNN trained on natural images
@@ -365,7 +365,7 @@ Another way of dealing with limited training data is to divide rich data -- e.g.
 [@1GAyqYBNZ] compared various deep network architectures, dataset
 characteristics, and training procedures for computer tomography-based (CT)
 abnormality detection. They concluded that networks as deep as 22 layers could
-be useful for 3D data, even though the size of training datasets was limited.
+be useful for 3D data, despite the limited size of training datasets.
 However, they noted that choice of architecture, parameter setting, and model
 fine-tuning needed is very problem- and dataset-specific. Moreover, this type of
 task often depends on both lesion localization and appearance, which poses
@@ -374,7 +374,9 @@ information from full-size images in all three dimensions simultaneously via
 standard neural network architectures were computationally unfeasible. Instead,
 two-dimensional models were used to either process image slices individually
 (2D), or aggregate information from a number of 2D projections in the native
-space (2.5D). Roth et al. compared 2D, 2.5D, and 3D CNNs on a number of tasks
+space (2.5D).
+
+Roth et al. compared 2D, 2.5D, and 3D CNNs on a number of tasks
 for computer-aided detection from CT scans and showed that 2.5D CNNs performed
 comparably well to 3D analogs, while requiring much less training time,
 especially on augmented training sets [@KseoWN2w]. Another
@@ -461,7 +463,7 @@ With the exception of natural image-like problems (e.g. melanoma detection),
 biomedical imaging poses a number of challenges for deep learning. Dataset are
 typically small, annotations can be sparse, and images are often
 high-dimensional, multimodal, and multi-channel. Techniques like transfer
-learning, heavy dataset augmentation, multi-view and multi-stream architectures
+learning, heavy dataset augmentation, and the use of multi-view and multi-stream architectures
 are more common than in the natural image domain. Furthermore, high model
 sensitivity and specificity can translate directly into clinical value. Thus,
 prediction evaluation, uncertainty estimation, and model interpretation methods
@@ -490,7 +492,7 @@ features using deep neural networks and found that the patterns recognized by
 the algorithms could be re-used across tasks. Their aim was to analyze the free
 text portions of pathology reports to identify the primary site and laterality
 of tumors. The only features the authors supplied to the algorithms were
-unigrams and bigrams, counts for single words and two-word combinations in a
+unigrams (counts for single words) and bigrams (counts for two-word combinations) in a
 free text document. They subset the full set of words and word combinations to
 the 400 most common. The machine learning algorithms that they employed (naïve
 Bayes, logistic regression, and deep neural networks) all performed relatively
@@ -868,7 +870,7 @@ patient populations, longitudinal analyses such as the Framingham Heart Study
 [@N96QKgly] and the Avon Longitudinal Study of Parents
 and Children [@1FjSxrV1k] have yielded important discoveries about the
 development of disease and the factors contributing to health status. Yet, a
-common practice in EHR-based research is to take a point in time snapshot and
+common practice in EHR-based research is to take a snapshot at a point in time and
 convert patient data to a traditional vector for machine learning and
 statistical analysis. This results in loss of information as timing and order of
 events can provide insight into a patient's disease and treatment
@@ -885,7 +887,7 @@ a large number of trajectories requires powerful and flexible feature
 construction methods -- an area in which deep neural networks excel.
 
 
-## Deep learning to study the fundamental biological processes underlying human disease
+﻿## Deep learning to study the fundamental biological processes underlying human disease
 
 The study of cellular structure and core biological processes -- transcription,
 translation, signaling, metabolism, etc. -- in humans and model organisms will
@@ -983,13 +985,16 @@ Pre-mRNA transcripts can be spliced into different isoforms by retaining or
 skipping subsets of exons or including parts of introns, creating enormous
 spatiotemporal flexibility to generate multiple distinct proteins from a single
 gene. This remarkable complexity can lend itself to defects that underlie many
-diseases [@QFK6GapR]. For instance, in Becker muscular
-dystrophy, a point mutation in dystrophin creates an exon splice silencer that
-induces skipping of exon 31. A recent study found that quantitative trait loci
+diseases. For instance, splicing mutations in the lamin A (*LMNA*) gene can lead to specific
+variants of dilated cardiomyopathy and limb girdle muscular dystrophy 
+[@QFK6GapR]. 
+A recent study found that quantitative trait loci
 that affect splicing in lymphoblastoid cell lines are enriched within risk loci
 for schizophrenia, multiple sclerosis, and other immune diseases, implicating
 mis-splicing as a more widespread feature of human pathologies than previously
-thought [@b6p6wxpC].
+thought [@b6p6wxpC]. Therapeutic strategies that aim to modulate
+splicing are also currently being considered for disorders such as Duchenne muscular dystrophy
+and spinal muscular atrophy [@QFK6GapR]. 
 
 Sequencing studies routinely return thousands of unannotated variants, but which
 cause functional changes in splicing and how are those changes manifested?
@@ -1024,7 +1029,7 @@ instructive in that clever sources of data, not just more descriptive models,
 are still critical.
 
 We already understand how mis-splicing of a single gene can cause diseases such
-as Duchenne muscular dystrophy. The challenge now is to uncover how genome-wide
+as limb girdle muscular dystrophy. The challenge now is to uncover how genome-wide
 alternative splicing underlies complex, non-Mendelian diseases such as autism,
 schizophrenia, Type 1 diabetes, and multiple sclerosis [@CNz9HwZ3].
 As a proof of concept, Xiong et al. [@17sgPdcMT] sequenced
@@ -1124,7 +1129,7 @@ this was easy to simulate with a computational model. As we learn to better
 visualize and analyze the hidden nodes within deep learning models, our
 understanding of TF binding motifs and dynamics will likely improve.
 
-### Promoters, enhancers, and related epigenomic tasks
+### Promoters, enhancers, and related epigenomic features
 
 Transcriptional control is undoubtedly a vital, early part of the regulation of
 gene expression. An abundance of sequence and associated functional data (e.g.
@@ -1132,7 +1137,7 @@ ENCODE [@15J98V2qM] and ExAC [@fSpvdh5l]) exists
 across species. At the same time, studies of gene regulation have often focused
 on the protein (binding) rather than the promoter level
 [@19jjiGHWc], perhaps due to the ill-defined nature of
-cis-regulatory elements (CREs). A promoter itself can be seen as an assemblage
+_cis_-regulatory elements (CREs). A promoter itself can be seen as an assemblage
 of "active" binding sites for transcription factors interspersed by
 less-characterized and perhaps functionally silent spacer regions. However, the
 sequence signals that control the start and stop of transcription and
@@ -1146,8 +1151,8 @@ Recognizing enhancers presents additional challenges. Enhancers may be up to one
 million base pairs upstream or downstream from the affected promoter on either
 strand and even within the introns of other genes [@8yA3foA6]. They
 do not necessarily operate on the nearest gene and may affect multiple genes.
-Their activity is frequently tissue- or context-specific. A substantial fraction
-of enhancers displays modest or no conservation across species. There is no
+Their activity is frequently tissue- or context-specific. Many
+enhancers display modest or no conservation across species. There is no
 universal enhancer sequence signal or marker for enhancers, and some literature
 suggests that enhancers and promoters may be just categories along a spectrum
 [@J0PJHcHK]. One study [@5zmE7Qkb] even
@@ -1157,7 +1162,7 @@ is growing evidence for their vast ubiquity, making them possibly the
 predominant functional non-coding element. Thus, identifying enhancers is
 critical yet the search space is large.
 
-While prior (non-deep learning) approaches have made steady improvements on
+While previous (non-deep learning) approaches have steadily improved
 promoter prediction, there is little consensus on the best approach and
 performance is poor. Typically algorithms will recognize only half of all
 promoters, with an accompanying high false positive rate
@@ -1290,9 +1295,9 @@ prediction, but it has a much larger impact on tertiary structure prediction. In
 recent years, the accuracy of contact prediction has greatly improved
 [@BhfjKSY3; @7atXz0r; @kboAopkh; @10dNuD89l].
 
-Protein secondary structure can exhibit three different states (alpha helix,
-beta strand, and loop regions) or eight finer-grained states. Q3 and Q8 accuracy
-pertain to 3-state or 8-state predictions, respectively. Several groups
+One can represent protein secondary structure with three different states (alpha helix,
+beta strand, and loop regions) or eight finer-grained states. Accuracy of a three-state prediction is called Q3, and accuracy of an 8-state prediction is called Q8.
+Several groups
 [@1AlhRKQbe; @ZzaRyGuJ; @UpFrhdJf] initiated the application of deep learning to protein
 secondary structure prediction but were unable to achieve significant
 improvement over the *de facto* standard method PSIPRED
@@ -1368,8 +1373,8 @@ straightforward to measure biological properties of interest, such as
 fluorescence intensities, textures, and sizes. Given the dramatic successes of
 deep learning in biological imaging, we simply refer to articles that review
 recent advancements [@MmRGFVUu; @40EG4ZEU; @TutLhFSz]. For deep
-learning to become commonplace for biological image segmentation, user-friendly
-tools need to be developed.
+learning to become commonplace for biological image segmentation, we need user-friendly
+tools.
 
 We anticipate an additional kind of paradigm shift in bioimaging that will be
 brought about by deep learning: what if images of biological samples, from
@@ -1408,7 +1413,7 @@ extraction strategies.
 
 ### Single-cell data
 
-Single-cell methods are generating excitement as biologists recognize the vast
+Single-cell methods are generating excitement as biologists characterize the vast
 heterogeneity within unicellular species and between cells of the same tissue
 type in the same organism [@1AWC7HsO0]. For instance, tumor cells
 and neurons can both harbor extensive somatic variation
@@ -1481,7 +1486,7 @@ study of micro-scale ecosystems within and around us. In recent years, machine
 learning has proved to be a powerful tool for metagenomic analysis. 16S rRNA has
 long been used to deconvolve mixtures of microbial genomes, yet this ignores
 more than 99% of the genomic content. Subsequent tools aimed to classify
-300-3000 base pair reads from complex mixtures of microbial genomes based on
+300 bp-3000 bp reads from complex mixtures of microbial genomes based on
 tetranucleotide frequencies, which differ across organisms [@N9NzkOjA], using
 supervised [@QV551Nlx; @1HtJuEkb2] or unsupervised methods [@1HhqhBwrM]. Then,
 researchers began to use techniques that could estimate relative abundances from
@@ -1518,7 +1523,7 @@ improvement over RNNs and random forests [@iPIJrVVs]. However, this study
 evaluated only 3000 sequences.
 
 Neural network uses for classifying phenotype from microbial composition are
-just beginning. A standard multi-layer perceptron (MLP) was able to classify
+just beginning. A simple multi-layer perceptron (MLP) was able to classify
 wound severity from microbial species present in the wound
 [@oas5tbC7]. Recently, Ditzler et al. associated soil
 samples with pH level using MLPs, DBNs, and RNNs [@i38A0beL]. Besides
@@ -1573,7 +1578,7 @@ candidate SNP as a 221x100 bitmap image, where each column is a nucleotide and
 each row is a read from the sample library [@FVfZESYP]. The
 top 5 rows represent the reference, and the bottom 95 rows represent randomly
 sampled reads that overlap the candidate variant. Each RGBA
-(red/green/blue/alpha) image pixel encodes the base (A, C, T, G) as a different
+(red/green/blue/alpha) image pixel encodes the base (A, C, G, T) as a different
 red value, quality score as a green value, strand as a blue value, and variation
 from the reference as the alpha value. The neural network outputs genotype
 probabilities for each candidate variant. They were able to achieve better
@@ -1971,10 +1976,10 @@ a much larger set of compounds and proteins.  However, incorrect ligand poses
 will be misleading during training, and the predictive performance is sensitive
 to the docking quality [@Gue0c5Gb].
 
-There are two major options for representing a protein-compound complex. A 3D
-grid can featurize the input complex [@Z7fd0BYf; @bNBiIiTt]. Each entry in the grid tracks the types of protein and
+There are two established options for representing a protein-compound complex. One option, a 3D
+grid, can featurize the input complex [@Z7fd0BYf; @bNBiIiTt]. Each entry in the grid tracks the types of protein and
 ligand atoms in that region of the 3D space or descriptors derived from those
-atoms.  Both DeepVS [@Gue0c5Gb] and atomic convolutions
+atoms. Alternatively, DeepVS [@Gue0c5Gb] and atomic convolutions
 [@17YaKNLKk] offer greater flexibility in their convolutions by eschewing
 the 3D grid.  Instead, they each implement techniques for executing convolutions
 over atoms' neighboring atoms in the 3D space.  Gomes et al. demonstrate that
@@ -2080,7 +2085,7 @@ Less than 1% of the genome can be confidently labeled as bound for most
 transcription factors. Therefore, it is important to evaluate the genome-wide
 recall and false discovery rate (FDR) of classification models of biochemical
 activities. Targeted validation experiments of specific biochemical activities
-usually necessitate an FDR of 5-25%. When predicted biochemical activities are
+usually necessitate an FDR of 5%-25%. When predicted biochemical activities are
 used as features in other models, such as gene expression models, a low FDR may
 not be as critical if the downstream models can satisfy their evaluation
 criteria.  An FDR of 50% in this context may suffice.
@@ -2521,7 +2526,7 @@ domains high-quality training data has been generated privately, i.e.
 high-throughput chemical screening data at pharmaceutical companies. One
 perspective is that there is little expectation or incentive for this private
 data to be shared. However, data are not inherently valuable. Instead, the
-insights that we glean from them are where the value lies. Private companies may
+insights that we glean from them are where the value lies. Organizations may
 establish a competitive advantage by releasing data sufficient for improved
 methods to be developed.
 

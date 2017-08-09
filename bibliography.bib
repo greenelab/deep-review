@@ -686,28 +686,24 @@ and evaluate mitigation strategies.},
 
 
 @article{11aqfNfQx,
- abstract = {Motivated by concerns that automated decision-making procedures can
-unintentionally lead to discriminatory behavior, we study a technical
-definition of fairness modeled after John Rawls' notion of "fair equality of
-opportunity". In the context of a simple model of online decision making, we
-give an algorithm that satisfies this fairness constraint, while still being
-able to learn at a rate that is comparable to (but necessarily worse than) that
-of the best algorithms absent a fairness constraint. We prove a regret bound
-for fair algorithms in the linear contextual bandit framework that is a
-significant improvement over our technical companion paper [16], which gives
-black-box reductions in a more general setting. We analyze our algorithms both
-theoretically and experimentally. Finally, we introduce the notion of a
-"discrimination index", and show that standard algorithms for our problem
-exhibit structured discriminatory behavior, whereas the "fair" algorithms we
-develop do not.},
+ abstract = {We study fairness in linear bandit problems. Starting from the notion of
+meritocratic fairness introduced in Joseph et al. [2016], we carry out a more
+refined analysis of a more general problem, achieving better performance
+guarantees with fewer modelling assumptions on the number and structure of
+available choices as well as the number selected. We also analyze the
+previously-unstudied question of fairness in infinite linear bandit problems, obtaining instance-dependent regret upper bounds as well as lower bounds
+demonstrating that this instance-dependence is necessary. The result is a
+framework for meritocratic fairness in an online linear setting that is
+substantially more powerful, general, and realistic than the current state of
+the art.},
  archiveprefix = {arXiv},
  author = {Matthew Joseph and Michael Kearns and Jamie Morgenstern and Seth Neel and Aaron Roth},
- eprint = {1610.09559v3},
- file = {1610.09559v3.pdf},
+ eprint = {1610.09559v4},
+ file = {1610.09559v4.pdf},
  month = {Nov},
  primaryclass = {cs.LG},
- title = {Rawlsian Fairness for Machine Learning},
- url = {https://arxiv.org/abs/1610.09559v3},
+ title = {Fair Algorithms for Infinite and Contextual Bandits},
+ url = {https://arxiv.org/abs/1610.09559v4},
  year = {2016}
 }
 
@@ -1085,13 +1081,13 @@ disease patterns trained with only image-level labels) remains a strenuous task
 for fully-automated high precision CAD systems.},
  archiveprefix = {arXiv},
  author = {Xiaosong Wang and Yifan Peng and Le Lu and Zhiyong Lu and Mohammadhadi Bagheri and Ronald M. Summers},
- eprint = {1705.02315v2},
- file = {1705.02315v2.pdf},
+ eprint = {1705.02315v3},
+ file = {1705.02315v3.pdf},
  month = {May},
  primaryclass = {cs.CV},
  title = {ChestX-ray8: Hospital-scale Chest X-ray Database and Benchmarks on
 Weakly-Supervised Classification and Localization of Common Thorax Diseases},
- url = {https://arxiv.org/abs/1705.02315v2},
+ url = {https://arxiv.org/abs/1705.02315v3},
  year = {2017}
 }
 
@@ -1164,9 +1160,11 @@ http://compbio.fmph.uniba.sk/deepnano/.
 Contact: boza@fmph.uniba.sk},
  archiveprefix = {arXiv},
  author = {Vladimír Boža and Broňa Brejová and Tomáš Vinař},
+ doi = {10.1371/journal.pone.0178751},
  eprint = {1603.09195v1},
  file = {1603.09195v1.pdf},
  month = {Mar},
+ note = {PLoS ONE 12(6): e0178751},
  primaryclass = {q-bio.GN},
  title = {DeepNano: Deep Recurrent Neural Networks for Base Calling in MinION
 Nanopore Reads},
@@ -1861,24 +1859,23 @@ interpretation of neural networks},
  abstract = {How can we explain the predictions of a black-box model? In this paper, we
 use influence functions -- a classic technique from robust statistics -- to
 trace a model's prediction through the learning algorithm and back to its
-training data, identifying the points most responsible for a given prediction.
-Applying ideas from second-order optimization, we scale up influence functions
-to modern machine learning settings and show that they can be applied to
-high-dimensional black-box models, even in non-convex and non-differentiable
-settings. We give a simple, efficient implementation that requires only oracle
-access to gradients and Hessian-vector products. On linear models and
-convolutional neural networks, we demonstrate that influence functions are
-useful for many different purposes: to understand model behavior, debug models
-and detect dataset errors, and even identify and exploit vulnerabilities to
-adversarial training-set attacks.},
+training data, thereby identifying training points most responsible for a given
+prediction. To scale up influence functions to modern machine learning
+settings, we develop a simple, efficient implementation that requires only
+oracle access to gradients and Hessian-vector products. We show that even on
+non-convex and non-differentiable models where the theory breaks down, approximations to influence functions can still provide valuable information.
+On linear models and convolutional neural networks, we demonstrate that
+influence functions are useful for multiple purposes: understanding model
+behavior, debugging models, detecting dataset errors, and even creating
+visually-indistinguishable training-set attacks.},
  archiveprefix = {arXiv},
  author = {Pang Wei Koh and Percy Liang},
- eprint = {1703.04730v1},
- file = {1703.04730v1.pdf},
+ eprint = {1703.04730v2},
+ file = {1703.04730v2.pdf},
  month = {Mar},
  primaryclass = {stat.ML},
  title = {Understanding Black-box Predictions via Influence Functions},
- url = {https://arxiv.org/abs/1703.04730v1},
+ url = {https://arxiv.org/abs/1703.04730v2},
  year = {2017}
 }
 
@@ -2076,12 +2073,13 @@ overviews of studies per application area. Open challenges and directions for
 future research are discussed.},
  archiveprefix = {arXiv},
  author = {Geert Litjens and Thijs Kooi and Babak Ehteshami Bejnordi and Arnaud Arindra Adiyoso Setio and Francesco Ciompi and Mohsen Ghafoorian and Jeroen A. W. M. van der Laak and Bram van Ginneken and Clara I. Sánchez},
- eprint = {1702.05747v1},
- file = {1702.05747v1.pdf},
+ doi = {10.1016/j.media.2017.07.005},
+ eprint = {1702.05747v2},
+ file = {1702.05747v2.pdf},
  month = {Feb},
  primaryclass = {cs.CV},
  title = {A Survey on Deep Learning in Medical Image Analysis},
- url = {https://arxiv.org/abs/1702.05747v1},
+ url = {https://arxiv.org/abs/1702.05747v2},
  year = {2017}
 }
 
@@ -2730,36 +2728,33 @@ Averaging},
 
 
 @article{JUF9VoRD,
- abstract = {In recent year, parallel implementations have been used to speed up the
-training of deep neural networks (DNN). Typically, the parameters of the local
-models are periodically communicated and averaged to get a global model until
-the training curve converges (denoted as MA-DNN). However, since DNN is a
-highly non-convex model, the global model obtained by averaging parameters does
-not have guarantee on its performance improvement over the local models and
-might even be worse than the average performance of the local models, which
-leads to the slow-down of convergence and the decrease of the final
-performance. To tackle this problem, we propose a new parallel training method
-called \emph{Ensemble-Compression} (denoted as EC-DNN). Specifically, we
-propose to aggregate the local models by ensemble, i.e., the outputs of the
-local models are averaged instead of the parameters. Considering that the
-widely used loss functions are convex to the output of the model, the
-performance of the global model obtained in this way is guaranteed to be at
-least as good as the average performance of local models. However, the size of
-the global model will increase after each ensemble and may explode after
-multiple rounds of ensembles. Thus, we conduct model compression after each
-ensemble, to ensure the size of the global model to be the same as the local
-models. We conducted experiments on a benchmark dataset. The experimental
-results demonstrate that our proposed EC-DNN can stably achieve better
-performance than MA-DNN.},
+ abstract = {Parallelization framework has become a necessity to speed up the training of
+deep neural networks (DNN) recently. Such framework typically employs the Model
+Average approach, denoted as MA-DNN, in which parallel workers conduct
+respective training based on their own local data while the parameters of local
+models are periodically communicated and averaged to obtain a global model
+which serves as the new start of local models. However, since DNN is a highly
+non-convex model, averaging parameters cannot ensure that such global model can
+perform better than those local models. To tackle this problem, we introduce a
+new parallel training framework called Ensemble-Compression, denoted as EC-DNN.
+In this framework, we propose to aggregate the local models by ensemble, i.e., averaging the outputs of local models instead of the parameters. As most of
+prevalent loss functions are convex to the output of DNN, the performance of
+ensemble-based global model is guaranteed to be at least as good as the average
+performance of local models. However, a big challenge lies in the explosion of
+model size since each round of ensemble can give rise to multiple times size
+increment. Thus, we carry out model compression after each ensemble, specialized by a distillation based method in this paper, to reduce the size of
+the global model to be the same as the local ones. Our experimental results
+demonstrate the prominent advantage of EC-DNN over MA-DNN in terms of both
+accuracy and speedup.},
  archiveprefix = {arXiv},
- author = {Shizhao Sun and Wei Chen and Tie-Yan Liu},
- eprint = {1606.00575v1},
- file = {1606.00575v1.pdf},
+ author = {Shizhao Sun and Wei Chen and Jiang Bian and Xiaoguang Liu and Tie-Yan Liu},
+ eprint = {1606.00575v2},
+ file = {1606.00575v2.pdf},
  month = {Jun},
  primaryclass = {cs.DC},
  title = {Ensemble-Compression: A New Method for Parallel Training of Deep Neural
 Networks},
- url = {https://arxiv.org/abs/1606.00575v1},
+ url = {https://arxiv.org/abs/1606.00575v2},
  year = {2016}
 }
 
@@ -2774,16 +2769,15 @@ weakness of those methods. We use the axioms to guide the design of a new
 attribution method called Integrated Gradients. Our method requires no
 modification to the original network and is extremely simple to implement; it
 just needs a few calls to the standard gradient operator. We apply this method
-to a couple of image models, a couple of text models and a chemistry model, demonstrating its ability to debug networks, to extract rules from a deep
-network, and to enable users to engage with models better.},
+to a couple of image models, a couple of text models and a chemistry model, demonstrating its ability to debug networks, to extract rules from a network, and to enable users to engage with models better.},
  archiveprefix = {arXiv},
  author = {Mukund Sundararajan and Ankur Taly and Qiqi Yan},
- eprint = {1703.01365v1},
- file = {1703.01365v1.pdf},
+ eprint = {1703.01365v2},
+ file = {1703.01365v2.pdf},
  month = {Mar},
  primaryclass = {cs.LG},
  title = {Axiomatic Attribution for Deep Networks},
- url = {https://arxiv.org/abs/1703.01365v1},
+ url = {https://arxiv.org/abs/1703.01365v2},
  year = {2017}
 }
 
