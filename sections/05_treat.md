@@ -376,7 +376,7 @@ atom-atom interactions and the forces that govern binding affinity.
 #### *De novo* drug design
 
 *De novo* drug design attempts to model the typical design-synthesize-test cycle of drug
-discovery [@doi:10.1002/wcms.49]. It explores
+discovery [@doi:10.1002/wcms.49 @doi:10.1021/acs.jmedchem.5b01849]. It explores
 an estimated 10<sup>60</sup> synthesizable organic molecules with
 drug-like properties without explicit enumeration [@doi:10.1002/wcms.1104]. To
 test or score structures, algorithms like those discussed earlier are used. To
