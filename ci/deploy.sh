@@ -4,14 +4,13 @@ set -o errexit
 # Add commit hash to the README
 export OWNER_NAME=`dirname $TRAVIS_REPO_SLUG`
 export REPO_NAME=`basename $TRAVIS_REPO_SLUG`
-envsubst < output/README.md > output/README-complete.md
-mv output/README-complete.md output/README.md
+envsubst < webpage/README.md > webpage/README-complete.md
+mv webpage/README-complete.md webpage/README.md
 
 # Generate OpenTimestamps
 python ci/opentimestamps-client/ots stamp \
-  output/index.html \
-  output/manuscript.pdf \
-  output/README.md
+  webpage/index.html \
+  webpage/manuscript.pdf
 
 # Configure git
 git config --global push.default simple
@@ -30,10 +29,10 @@ eval `ssh-agent -s`
 chmod 600 ci/deploy.key
 ssh-add ci/deploy.key
 
-# Fetch and create gh-pages and references branches
+# Fetch and create gh-pages and output branches
 # Travis does a shallow and single branch git clone
-git remote set-branches --add origin gh-pages references
-git fetch origin gh-pages:gh-pages references:references
+git remote set-branches --add origin gh-pages output
+git fetch origin gh-pages:gh-pages output:output
 
 # Commit message
 MESSAGE="\
@@ -53,21 +52,20 @@ The full commit message that triggered this build is copied below:
 $TRAVIS_COMMIT_MESSAGE
 "
 
-# Deploy the reference data to references
+# Deploy the manubot outputs to output
 ghp-import \
-  --follow-links \
   --push \
-  --branch=references \
+  --branch=output \
   --message="$MESSAGE" \
-  references/generated
+  output
 
-# Deploy the output to gh-pages
+# Deploy the webpage directory to gh-pages
 ghp-import \
   --follow-links \
   --push \
   --branch=gh-pages \
   --message="$MESSAGE" \
-  output
+  webpage
 
 # Workaround https://github.com/travis-ci/travis-ci/issues/8082
 ssh-agent -k

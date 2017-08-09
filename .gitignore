@@ -1,12 +1,11 @@
 # Generated manuscript output files
-output/index.html
-output/manuscript.pdf
-output/manuscript.docx
-output/*.ots
+output/*
+!output/README.md
 
-# Generated reference files
-references/generated/*
-!references/generated/README.md
+webpage/*.ots
+
+# Manubot cache directory
+ci/cache
 
 # Python
 __pycache__/

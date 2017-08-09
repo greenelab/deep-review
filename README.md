@@ -15,10 +15,36 @@ To see what's incoming, check the [open pull requests](https://github.com/greene
 Instructions for using Manubot Rootstock for your own manuscript are still evolving.
 The recommended approach is to clone this repository, as detailed [here](https://github.com/greenelab/manubot-rootstock/issues/6#issuecomment-314541837).
 
-## Source
+## Repository directories & files
 
-The manuscript source is located in [`content`](content).
-Text should be written in markdown files, with a digit prefix for ordering (e.g. `01.`, `02.`, etc.) and a `.md` suffix.
+See [`USAGE.md`](USAGE.md) for documentation on how to create or contribute to a manuscript.
+
+The directories are as follows:
+
++ [`content`](content) contains the manuscript source, which includes markdown files as well as inputs for citations and references.
++ [`output`](output) contains the outputs (generated files) from the manubot including the resulting manuscripts.
+  You should not edit these files manually, because they will get overwritten.
++ [`webpage`](webpage) is a directory meant to be rendered as a static webpage for viewing the HTML manuscript.
++ [`build`](build) contains commands and tools for building the manuscript.
++ [`ci`](ci) contains files necessary for deployment via continuous integration.
+  For the CI configuration, see [`.travis.yml`](.travis.yml).
+
+## Local execution
+
+To run the Manubot locally, install the [conda](https://conda.io) environment as described in [`build`](build).
+Then, you can build the manuscript on POSIX systems by running the following commands.
+
+```sh
+# Activate the manubot conda environment
+source activate manubot
+
+# Build the manuscript
+sh build/build.sh
+
+# View the manuscript locally at http://localhost:8000/
+cd webpage
+python -m http.server
+```
 
 ## Continuous Integration
 
@@ -28,7 +54,7 @@ When you make a pull request, Travis CI will test whether your changes break the
 The build process aims to detect common errors, such as invalid references.
 If your build fails, see the Travis CI logs for the cause of failure and revise your pull request accordingly.
 
-When a pull request is merged, Travis CI performs the build and writes the results to the [`gh-pages`](https://github.com/greenelab/manubot-rootstock/tree/gh-pages) and [`references`](https://github.com/greenelab/manubot-rootstock/tree/references) branches.
+When a pull request is merged, Travis CI performs the build and writes the results to the [`gh-pages`](https://github.com/greenelab/manubot-rootstock/tree/gh-pages) and [`output`](https://github.com/greenelab/manubot-rootstock/tree/output) branches.
 The `gh-pages` branch hosts the following URLs:
 
 + **HTML manuscript** at https://greenelab.github.io/manubot-rootstock/
@@ -49,7 +75,7 @@ All files matched by the following glob patterns are dual licensed under CC BY 4
 
 + `*.sh`
 + `*.py`
-+ `*.yml`
++ `*.yml` / `*.yaml`
 + `*.json`
 + `*.bib`
 + `*.tsv`
@@ -60,5 +86,6 @@ All other files are only available under CC BY 4.0, including:
 + `*.md`
 + `*.html`
 + `*.pdf`
++ `*.docx`
 
 Please open [an issue](https://github.com/greenelab/manubot-rootstock/issues) for any question related to licensing.

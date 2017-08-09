@@ -5,13 +5,17 @@ export LC_ALL=en_US.UTF-8
 
 # Generate reference information
 echo "Retrieving and processing reference metadata"
-(cd build && python references.py)
+manubot \
+  --content-directory=content \
+  --output-directory=output \
+  --cache-directory=ci/cache \
+  --log-level=INFO
 
 # pandoc settings
-CSL_PATH=references/style.csl
-DOCX_PATH=references/pandoc-reference.docx
-BIBLIOGRAPHY_PATH=references/generated/bibliography.json
-INPUT_PATH=references/generated/all-sections.md
+CSL_PATH=build/assets/style.csl
+DOCX_PATH=build/assets/pandoc-reference.docx
+BIBLIOGRAPHY_PATH=output/references.json
+INPUT_PATH=output/manuscript.md
 
 # Make output directory
 mkdir -p output
@@ -32,7 +36,7 @@ pandoc --verbose \
   --css=github-pandoc.css \
   --include-in-header=build/assets/analytics.js \
   --include-after-body=build/assets/anchors.js \
-  --output=output/index.html \
+  --output=output/manuscript.html \
   $INPUT_PATH
 
 # Create PDF output
@@ -44,13 +48,14 @@ wkhtmltopdf \
   --margin-bottom 17 \
   --margin-left 0 \
   --margin-right 0 \
-  output/index.html \
+  webpage/index.html \
   output/manuscript.pdf
 
 # Create DOCX output when user specifies to do so
 if [ "$BUILD_DOCX" = "true" ];
 then
     echo "Exporting Word Docx manuscript"
+    ln --symbolic content/images images
     pandoc --verbose \
     --smart \
     --from=markdown \
@@ -63,4 +68,5 @@ then
     --reference-docx=$DOCX_PATH \
     --output=output/manuscript.docx \
     $INPUT_PATH
+    rm --recursive images
 fi
