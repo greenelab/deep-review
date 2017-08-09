@@ -488,7 +488,7 @@ deep learning in biological imaging, we simply refer to articles that review
 recent advancements [@doi:10.3109/10409238.2015.1135868
 @doi:10.1371/journal.pcbi.1005177 @doi:10.1007/978-3-319-24574-4_28]. For deep
 learning to become commonplace for biological image segmentation, we need user-friendly
-developed.
+tools.
 
 We anticipate an additional kind of paradigm shift in bioimaging that will be
 brought about by deep learning: what if images of biological samples, from
