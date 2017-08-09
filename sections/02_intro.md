@@ -95,7 +95,7 @@ in biology [@doi:10.1038/nbt.3313 @doi:10.1021/acs.molpharmaceut.5b00982
 @doi:10.1002/jcc.24764 @tag:PerezSianes2016_screening
 @tag:Baskin2015_drug_disc].  Under our guiding question, we sought to highlight
 cases where deep learning enabled researchers to solve challenges that were
-previously considered infeasible or simplified tedious analyses, allowing them to become routine.
+previously considered infeasible or simplified tedious analyses.
 We also identified approaches that researchers are using to address challenges
 posed by biomedical data. We find that domain-specific considerations have
 greatly influenced how to best harness the power and flexibility of deep
