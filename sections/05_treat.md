@@ -156,7 +156,7 @@ repositioning via deep learning is currently missing.
 
 #### Ligand-based prediction of bioactivity
 
-High-throughput chemical screening aims to improve
+High-throughput chemical screening in biomedical research aims to improve
 therapeutic options over a long term horizon [@tag:PerezSianes2016_screening].
 The objective is to discover which small molecules (also referred to as chemical
 compounds or ligands) that specifically affect the activity of a target, such as
