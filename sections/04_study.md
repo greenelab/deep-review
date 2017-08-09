@@ -663,7 +663,7 @@ only thousands of full-sequenced genomes as compared to hundreds of thousands of
 16S rRNA sequences available for training.
 
 However, because RNNs have been applied to base calls for the Oxford Nanopore
-long-read sequencer with some success [@tag:Boza] (discussed below), one day the entire pipeline, from denoising of through functional
+long-read sequencer with some success [@tag:Boza] (discussed below), one day the entire pipeline, from denoising to functional
 classification, may be combined into one step using powerful LSTMs
 [@tag:Sutskever]. For example, metagenomic assembly usually requires binning
 then assembly, but could deep neural nets accomplish both tasks in one network?
