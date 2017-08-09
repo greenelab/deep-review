@@ -241,7 +241,7 @@ this was easy to simulate with a computational model. As we learn to better
 visualize and analyze the hidden nodes within deep learning models, our
 understanding of TF binding motifs and dynamics will likely improve.
 
-### Promoters, enhancers, and related epigenomic tasks
+### Promoters, enhancers, and related epigenomic features
 
 Transcriptional control is undoubtedly a vital, early part of the regulation of
 gene expression. An abundance of sequence and associated functional data (e.g.
@@ -249,7 +249,7 @@ ENCODE [@tag:Consortium2012_encode] and ExAC [@doi:10.1038/nature19057]) exists
 across species. At the same time, studies of gene regulation have often focused
 on the protein (binding) rather than the promoter level
 [@doi:10.1093/bib/4.1.22], perhaps due to the ill-defined nature of
-cis-regulatory elements (CREs). A promoter itself can be seen as an assemblage
+_cis_-regulatory elements (CREs). A promoter itself can be seen as an assemblage
 of "active" binding sites for transcription factors interspersed by
 less-characterized and perhaps functionally silent spacer regions. However, the
 sequence signals that control the start and stop of transcription and
@@ -263,8 +263,8 @@ Recognizing enhancers presents additional challenges. Enhancers may be up to one
 million base pairs upstream or downstream from the affected promoter on either
 strand and even within the introns of other genes [@doi:10.1038/nrg3458]. They
 do not necessarily operate on the nearest gene and may affect multiple genes.
-Their activity is frequently tissue- or context-specific. A substantial fraction
-of enhancers displays modest or no conservation across species. There is no
+Their activity is frequently tissue- or context-specific. Many
+enhancers display modest or no conservation across species. There is no
 universal enhancer sequence signal or marker for enhancers, and some literature
 suggests that enhancers and promoters may be just categories along a spectrum
 [@doi:10.1016/j.tig.2015.05.007]. One study [@doi:10.1101/gr.173518.114] even
@@ -274,7 +274,7 @@ is growing evidence for their vast ubiquity, making them possibly the
 predominant functional non-coding element. Thus, identifying enhancers is
 critical yet the search space is large.
 
-While prior (non-deep learning) approaches have made steady improvements on
+While previous (non-deep learning) approaches have steadily improved
 promoter prediction, there is little consensus on the best approach and
 performance is poor. Typically algorithms will recognize only half of all
 promoters, with an accompanying high false positive rate
@@ -410,9 +410,9 @@ recent years, the accuracy of contact prediction has greatly improved
 [@doi:10.1371/journal.pcbi.1005324 @doi:10.1093/bioinformatics/btu791
 @doi:10.1073/pnas.0805923106 @doi:10.1371/journal.pone.0028766].
 
-Protein secondary structure can exhibit three different states (alpha helix,
-beta strand, and loop regions) or eight finer-grained states. Q3 and Q8 accuracy
-pertain to 3-state or 8-state predictions, respectively. Several groups
+One can represent protein secondary structure with three different states (alpha helix,
+beta strand, and loop regions) or eight finer-grained states. Accuracy of a three-state prediction is called Q3, and accuracy of an 8-state prediction is called Q8.
+Several groups
 [@doi:10.1371/journal.pone.0032235 @doi:10.1109/TCBB.2014.2343960
 @doi:10.1038/srep11476] initiated the application of deep learning to protein
 secondary structure prediction but were unable to achieve significant
@@ -490,8 +490,8 @@ fluorescence intensities, textures, and sizes. Given the dramatic successes of
 deep learning in biological imaging, we simply refer to articles that review
 recent advancements [@doi:10.3109/10409238.2015.1135868
 @doi:10.1371/journal.pcbi.1005177 @doi:10.1007/978-3-319-24574-4_28]. For deep
-learning to become commonplace for biological image segmentation, user-friendly
-tools need to be developed.
+learning to become commonplace for biological image segmentation, we need user-friendly
+tools.
 
 We anticipate an additional kind of paradigm shift in bioimaging that will be
 brought about by deep learning: what if images of biological samples, from
@@ -531,7 +531,7 @@ extraction strategies.
 
 ### Single-cell data
 
-Single-cell methods are generating excitement as biologists recognize the vast
+Single-cell methods are generating excitement as biologists characterize the vast
 heterogeneity within unicellular species and between cells of the same tissue
 type in the same organism [@tag:Gawad2016_singlecell]. For instance, tumor cells
 and neurons can both harbor extensive somatic variation
@@ -605,7 +605,7 @@ study of micro-scale ecosystems within and around us. In recent years, machine
 learning has proved to be a powerful tool for metagenomic analysis. 16S rRNA has
 long been used to deconvolve mixtures of microbial genomes, yet this ignores
 more than 99% of the genomic content. Subsequent tools aimed to classify
-300-3000 base pair reads from complex mixtures of microbial genomes based on
+300 bp-3000 bp reads from complex mixtures of microbial genomes based on
 tetranucleotide frequencies, which differ across organisms [@tag:Karlin], using
 supervised [@tag:McHardy @tag:nbc] or unsupervised methods [@tag:Abe]. Then,
 researchers began to use techniques that could estimate relative abundances from
@@ -645,7 +645,7 @@ improvement over RNNs and random forests [@tag:Mrzelj]. However, this study
 evaluated only 3000 sequences.
 
 Neural network uses for classifying phenotype from microbial composition are
-just beginning. A standard multi-layer perceptron (MLP) was able to classify
+just beginning. A simple multi-layer perceptron (MLP) was able to classify
 wound severity from microbial species present in the wound
 [@doi:10.1016/j.bjid.2015.08.013]. Recently, Ditzler et al. associated soil
 samples with pH level using MLPs, DBNs, and RNNs [@tag:Ditzler3]. Besides
@@ -700,7 +700,7 @@ candidate SNP as a 221x100 bitmap image, where each column is a nucleotide and
 each row is a read from the sample library [@tag:Poplin2016_deepvariant]. The
 top 5 rows represent the reference, and the bottom 95 rows represent randomly
 sampled reads that overlap the candidate variant. Each RGBA
-(red/green/blue/alpha) image pixel encodes the base (A, C, T, G) as a different
+(red/green/blue/alpha) image pixel encodes the base (A, C, G, T) as a different
 red value, quality score as a green value, strand as a blue value, and variation
 from the reference as the alpha value. The neural network outputs genotype
 probabilities for each candidate variant. They were able to achieve better
