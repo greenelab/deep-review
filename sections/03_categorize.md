@@ -1,6 +1,6 @@
 ## Deep learning and patient categorization
 
-In a healthcare setting, individuals are diagnosed with a disease or condition
+In healthcare, individuals are diagnosed with a disease or condition
 based on symptoms, the results of certain diagnostic tests, or other factors.
 Once diagnosed with a disease, an individual might be assigned a stage based on
 another set of human-defined rules. While these rules are refined over time, the
@@ -14,8 +14,7 @@ network has the potential to identify entirely new categories of health or
 disease that are only present when data from multiple lab tests are integrated.
 
 As an example, consider the condition Latent Autoimmune Diabetes in Adults
-(LADA). The history of this disease classification is briefly reviewed in
-Stenström et al. [@doi:10.2337/diabetes.54.suppl_2.S68]. In the absence of a
+(LADA; reviewed in [@doi:10.2337/diabetes.54.suppl_2.S68]). In the absence of a
 pre-specified disease definition, a deep neural network might have identified a
 subgroup of individuals with blood glucose levels that indicated diabetes as
 well as auto-antibodies, even though the individuals had never been diagnosed
@@ -24,8 +23,8 @@ people. Such a neural network would be identifying patients with LADA. As no
 such computational approach existed, LADA was actually identified by Groop et
 al. [@doi:10.2337/diab.35.2.237].
 
-To be clear, the recapitulation of existing disease categories should not be
-regarded as a gold-standard for deep learning outputs. Instead, a meaningful
+One should not regard recapitulation of existing disease categories
+as a gold-standard for deep learning results. Instead, a meaningful
 contribution to patient categorization would be to identify new shared
 mechanisms that would otherwise be obscured due to ad hoc historical definitions
 of disease. Perhaps deep neural networks, by reevaluating data without the
@@ -86,12 +85,12 @@ melanoma task, reported performance was competitive with or better than a board
 of certified dermatologists [@tag:Codella2016_ensemble_melanoma
 @tag:Esteva2017_skin_cancer_nature].
 
-Reusing features from natural images is also growing for radiographic images,
+Reusing features from natural images is also an emerging approach for radiographic images,
 where datasets are often too small to train large deep neural networks without
 these techniques [@tag:Bar2015_nonmed_tl @tag:Shin2016_cad_tl
-@tag:Rajkomar2017_radiographs @tag:Lakhani2017_radiography]. Rajkomar et al.
-[@tag:Rajkomar2017_radiographs] showed that a deep CNN trained on natural images
-boosts performance in radiographic images. However, the target task required
+@tag:Rajkomar2017_radiographs @tag:Lakhani2017_radiography]. 
+A deep CNN trained on natural images
+boosts performance in radiographic images [@tag:Rajkomar2017_radiographs]. However, the target task required
 either re-training the initial model from scratch with special pre-processing or
 fine-tuning of the whole network on radiographs with heavy data augmentation to
 avoid overfitting.
@@ -124,7 +123,7 @@ Another way of dealing with limited training data is to divide rich data -- e.g.
 [@tag:Shin2016_cad_tl] compared various deep network architectures, dataset
 characteristics, and training procedures for computer tomography-based (CT)
 abnormality detection. They concluded that networks as deep as 22 layers could
-be useful for 3D data, even though the size of training datasets was limited.
+be useful for 3D data, despite the limited size of training datasets.
 However, they noted that choice of architecture, parameter setting, and model
 fine-tuning needed is very problem- and dataset-specific. Moreover, this type of
 task often depends on both lesion localization and appearance, which poses
@@ -133,7 +132,9 @@ information from full-size images in all three dimensions simultaneously via
 standard neural network architectures were computationally unfeasible. Instead,
 two-dimensional models were used to either process image slices individually
 (2D), or aggregate information from a number of 2D projections in the native
-space (2.5D). Roth et al. compared 2D, 2.5D, and 3D CNNs on a number of tasks
+space (2.5D).
+
+Roth et al. compared 2D, 2.5D, and 3D CNNs on a number of tasks
 for computer-aided detection from CT scans and showed that 2.5D CNNs performed
 comparably well to 3D analogs, while requiring much less training time,
 especially on augmented training sets [@tag:Roth2015_view_agg_cad]. Another
@@ -220,7 +221,7 @@ With the exception of natural image-like problems (e.g. melanoma detection),
 biomedical imaging poses a number of challenges for deep learning. Dataset are
 typically small, annotations can be sparse, and images are often
 high-dimensional, multimodal, and multi-channel. Techniques like transfer
-learning, heavy dataset augmentation, multi-view and multi-stream architectures
+learning, heavy dataset augmentation, and the use of multi-view and multi-stream architectures
 are more common than in the natural image domain. Furthermore, high model
 sensitivity and specificity can translate directly into clinical value. Thus,
 prediction evaluation, uncertainty estimation, and model interpretation methods
@@ -350,7 +351,7 @@ features using deep neural networks and found that the patterns recognized by
 the algorithms could be re-used across tasks. Their aim was to analyze the free
 text portions of pathology reports to identify the primary site and laterality
 of tumors. The only features the authors supplied to the algorithms were
-unigrams and bigrams, counts for single words and two-word combinations in a
+unigrams (counts for single words) and bigrams (counts for two-word combinations) in a
 free text document. They subset the full set of words and word combinations to
 the 400 most common. The machine learning algorithms that they employed (naïve
 Bayes, logistic regression, and deep neural networks) all performed relatively
@@ -528,7 +529,7 @@ costly practice of manual annotation.
 
 To construct the types of very large datasets that deep learning methods thrive
 on, we need robust sharing of large collections of data. This is in part a
-cultural challenge. We touch on this challenge in the Discussion section. Beyond
+cultural challenge. We touch on this challenge in Discussion. Beyond
 the cultural hurdles around data sharing, there are also technological and legal
 hurdles related to sharing individual health records or deep models built from
 such records. This subsection deals primarily with these challenges.
@@ -720,7 +721,7 @@ prevent harm from discriminatory predictions. To reach their potential in this
 domain, deep learning methods will need to be interpretable. Researchers need to
 consider the extent to which biases may be learned by the model and whether or
 not a model is sufficiently interpretable to identify bias. We discuss the
-challenge of model interpretability more thoroughly in the discussion section.
+challenge of model interpretability more thoroughly in Discussion.
 
 #### Applications of deep learning to longitudinal analysis
 
@@ -730,7 +731,7 @@ patient populations, longitudinal analyses such as the Framingham Heart Study
 [@doi:10.1016/S0140-6736(13)61752-3] and the Avon Longitudinal Study of Parents
 and Children [@doi:10.1038/484155a] have yielded important discoveries about the
 development of disease and the factors contributing to health status. Yet, a
-common practice in EHR-based research is to take a point in time snapshot and
+common practice in EHR-based research is to take a snapshot at a point in time and
 convert patient data to a traditional vector for machine learning and
 statistical analysis. This results in loss of information as timing and order of
 events can provide insight into a patient's disease and treatment

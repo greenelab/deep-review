@@ -95,13 +95,13 @@ cache_path = gen_dir.joinpath('citations.json')
 use_cache = cache_path.exists() and 'REFRESH_METADATA_CACHE' not in os.environ
 print('Using metadata cache:', use_cache)
 if use_cache:
-    with gen_dir.joinpath('citations.json').open() as read_file:
+    with gen_dir.joinpath('citations.json').open(encoding='utf8') as read_file:
         metadata_cache = json.load(read_file)
 else:
     metadata_cache = {}
 
 # Read manual citations (overrides)
-with ref_dir.joinpath('manual-references.json').open() as read_file:
+with ref_dir.joinpath('manual-references.json').open(encoding='utf8') as read_file:
     overrides = json.load(read_file)
 overrides = {ref.pop('standard_citation'): ref for ref in overrides}
 
@@ -173,7 +173,7 @@ template = jinja2.Template(converted_text)
 converted_text = template.render(**stats)
 
 # Write manuscript for pandoc
-with gen_dir.joinpath('all-sections.md').open('wt') as write_file:
+with gen_dir.joinpath('all-sections.md').open('wt', encoding='utf8') as write_file:
     write_file.write(converted_text)
 
 # Write citation table
@@ -181,7 +181,7 @@ path = gen_dir.joinpath('processed-citations.tsv')
 ref_df.to_csv(path, sep='\t', index=False)
 
 # Write metadata cache
-with cache_path.open('wt') as write_file:
+with cache_path.open('wt', encoding='utf8') as write_file:
     json.dump(metadata_cache, write_file, indent=2, ensure_ascii=False)
 
 
@@ -196,7 +196,7 @@ for metadata in metadata_cache.values():
 
 # Write bibtex bibliography
 bib_path = gen_dir.joinpath('bibliography.bib')
-with bib_path.open('wt') as write_file:
+with bib_path.open('wt', encoding='utf8') as write_file:
     write_file.write('\n'.join(bibtex_stanzas))
 
 # Convert bibtex records to JSON CSL Items
@@ -206,5 +206,5 @@ bib_items = json.loads(bib_items)
 csl_items.extend(map(citeproc_passthrough, bib_items))
 
 # Write JSON CSL bibliography for Pandoc.
-with gen_dir.joinpath('bibliography.json').open('wt') as write_file:
+with gen_dir.joinpath('bibliography.json').open('wt', encoding='utf8') as write_file:
     json.dump(csl_items, write_file, indent=2, ensure_ascii=False)

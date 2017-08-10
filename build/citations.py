@@ -66,7 +66,7 @@ def get_text(directory):
     for path in paths:
         if not re.match(r'[0-9]', path.name):
             continue
-        with path.open('rt') as section_file:
+        with path.open('rt', encoding='utf8') as section_file:
             name_to_text[path.stem] = section_file.read()
     return '\n\n'.join(name_to_text.values())
 

@@ -29,7 +29,7 @@ Less than 1% of the genome can be confidently labeled as bound for most
 transcription factors. Therefore, it is important to evaluate the genome-wide
 recall and false discovery rate (FDR) of classification models of biochemical
 activities. Targeted validation experiments of specific biochemical activities
-usually necessitate an FDR of 5-25%. When predicted biochemical activities are
+usually necessitate an FDR of 5%-25%. When predicted biochemical activities are
 used as features in other models, such as gene expression models, a low FDR may
 not be as critical if the downstream models can satisfy their evaluation
 criteria.  An FDR of 50% in this context may suffice.
@@ -103,7 +103,7 @@ scores over 99.99% for samples that resemble pure noise.
 
 As the concept of interpretability is quite broad, many methods described as
 improving the interpretability of deep learning models take disparate and often
-complementary approaches. Some key themes are discussed below.
+complementary approaches.
 
 #### Assigning example-specific importance scores
 
@@ -278,8 +278,8 @@ substantially superior results compared to an attention-based method.
 
 #### Future outlook
 
-While deep learning certainly lags behind most Bayesian models in terms of
-interpretability, one can safely argue that the interpretability of deep
+While deep learning lags behind most Bayesian models in terms of
+interpretability, the interpretability of deep
 learning is comparable to or exceeds that of many other widely-used machine
 learning methods such as random forests or SVMs. While it is possible to obtain
 importance scores for different inputs in a random forest, the same is true for
@@ -299,7 +299,7 @@ similar in spirit to how datasets like ImageNet and CIFAR spurred the
 development of deep learning for computer vision. It would also be helpful if
 the community placed more emphasis on domains outside of computer vision.
 Computer vision is often used as the example application of interpretability
-methods, but it is arguably not the domain with the most pressing need. Finally,
+methods, but it is not the domain with the most pressing need. Finally,
 closer integration of interpretability approaches with popular deep learning
 frameworks would make it easier for practitioners to apply and experiment with
 different approaches to understanding their deep learning models.
@@ -307,8 +307,8 @@ different approaches to understanding their deep learning models.
 ### Data limitations
 
 A lack of large-scale, high-quality, correctly labeled training data has
-impacted deep learning in nearly all applications we have discussed, from
-healthcare to genomics to drug discovery.  The challenges of training complex,
+impacted deep learning in nearly all applications we have discussed.
+The challenges of training complex,
 high-parameter neural networks from few examples are obvious, but uncertainty in
 the labels of those examples can be just as problematic.  In genomics labeled
 data may be derived from an experimental assay with known and unknown technical
@@ -348,7 +348,7 @@ successfully applied directly to real data [@doi:10.1101/125229].
 Data can be simulated to create negative examples when only positive training
 instances are available.  DANN [@doi:10.1093/bioinformatics/btu703] adopts this
 approach to predict the pathogenicity of genetic variants using semi-synthetic
-training data from Combined Annotation-Dependent Depletion
+training data from Combined Annotation-Dependent Depletion (CADD)
 [@doi:10.1038/ng.2892].  Though our emphasis here is on the training strategy,
 it should be noted that logistic regression outperformed DANN when
 distinguishing known pathogenic mutations from likely benign variants in real
@@ -467,8 +467,8 @@ domain. The cultural barriers to data sharing in particular are perhaps best
 captured by the use of the term "research parasite" to describe scientists who
 use data from other researchers [@doi:10.1056/NEJMe1516564]. A field that honors
 only discoveries and not the hard work of generating useful data will have
-difficulty encouraging scientists to share their hard-won data. Unfortunately,
-it's precisely those data that would help to power deep learning in the domain.
+difficulty encouraging scientists to share their hard-won data.
+It's precisely those data that would help to power deep learning in the domain.
 Efforts are underway to recognize those who promote an ecosystem of rigorous
 sharing and analysis [@doi:10.1038/ng.3830].
 
@@ -478,12 +478,12 @@ deep learning can make the preprocessing code (e.g. Basset
 [@tag:Kelley2016_basset] and variationanalysis [@tag:Torracinta2016_deep_snp])
 and cleaned data (e.g. MoleculeNet [@tag:Wu2017_molecule_net]) publicly
 available to catalyze further research. However, there are complex privacy and
-legal issues involved in sharing patient data that cannot be ignored. In some
+legal issues involved in sharing patient data. In some
 domains high-quality training data has been generated privately, i.e.
 high-throughput chemical screening data at pharmaceutical companies. One
-perspective is that there is little expectation or incentive for this private
+may think that there is little incentive for this private
 data to be shared. However, data are not inherently valuable. Instead, the
-insights that we glean from them are where the value lies. Private companies may
+insights that we glean from them are where the value lies. Organizations may
 establish a competitive advantage by releasing data sufficient for improved
 methods to be developed.
 
@@ -591,7 +591,7 @@ that describe common concepts across input modalities. Generative graphical
 models like RBMs, deep Boltzmann machines, and DBNs, demonstrate successful
 extraction of more informative features for one modality (images or video) when
 jointly learned with other modalities (audio or text) [@tag:Ngiam2011]. Deep
-graphical models such as DBNs are considered to be well-suited for multimodal
+graphical models such as DBNs are well-suited for multimodal
 learning tasks because they learn a joint probability distribution from inputs.
 They can be pre-trained in an unsupervised fashion on large unlabeled data and
 then fine-tuned on a smaller number of labeled examples. When labels are

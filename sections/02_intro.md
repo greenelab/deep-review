@@ -10,9 +10,9 @@ that extract meaningful patterns could lead to actionable knowledge and change
 how we develop treatments, categorize patients, or study diseases, all within
 privacy-critical environments.
 
-The term deep learning has come to refer to a collection of new techniques that,
+The term _deep learning_ has come to refer to a collection of new techniques that,
 together, have demonstrated breakthrough gains over existing best-in-class
-machine learning algorithms across several fields. For example, over the past
+machine learning algorithms across several fields. Over the past
 five years these methods have revolutionized image classification and speech
 recognition due to their flexibility and high accuracy
 [@doi:10.1038/nature14539]. More recently, deep learning algorithms have shown
@@ -48,7 +48,7 @@ Neural networks are most widely associated with supervised machine learning,
 where the goal is to accurately predict one or more labels associated with each
 data point. However, deep learning algorithms can also be used in an
 exploratory, "unsupervised" mode, where the goal is to summarize, explain, or
-identify interesting patterns in a data set.  In a famous and early example,
+identify interesting patterns in a data set.  In a famous early example,
 scientists from Google demonstrated that a neural network "discovered" that
 cats, faces, and pedestrians were important components of online videos
 [@url:http://research.google.com/archive/unsupervised_icml2012.html] without
@@ -95,8 +95,8 @@ in biology [@doi:10.1038/nbt.3313 @doi:10.1021/acs.molpharmaceut.5b00982
 @doi:10.1002/jcc.24764 @tag:PerezSianes2016_screening
 @tag:Baskin2015_drug_disc].  Under our guiding question, we sought to highlight
 cases where deep learning enabled researchers to solve challenges that were
-previously considered infeasible or makes difficult, tedious analyses routine.
-We also identified approaches that researchers are using to sidestep challenges
+previously considered infeasible or simplified tedious analyses.
+We also identified approaches that researchers are using to address challenges
 posed by biomedical data. We find that domain-specific considerations have
 greatly influenced how to best harness the power and flexibility of deep
 learning. Model interpretability is often critical.  Understanding the patterns
@@ -108,8 +108,8 @@ encoding the most salient prior knowledge and assessing success or failure.
 There is also great potential to create deep learning systems that augment
 biologists and clinicians by prioritizing experiments or streamlining tasks that
 do not require expert judgment. We have divided the large range of topics into
-three broad classes: Disease and Patient Categorization, Fundamental Biological
-Study, and Treatment of Patients. Below, we briefly introduce the types of
+three broad classes: (1) disease and patient categorization, (2) fundamental biological
+study, and (3) treatment of patients. Below, we briefly introduce the types of
 questions, approaches and data that are typical for each class in the
 application of deep learning.
 
