@@ -71,7 +71,7 @@ challenges and can achieve better performance than either individually
 [@arxiv:1606.05718]. For sample and patient classification tasks, we expect deep
 learning methods to augment clinicians and biomedical researchers.
 
-We are extremely optimistic about the future of deep learning in biology and
+We are optimistic about the future of deep learning in biology and
 medicine. It is by no means inevitable that deep learning will revolutionize
 these domains, but given how rapidly the field is evolving, we are confident
 that its full potential in biomedicine has not been explored.  We have
