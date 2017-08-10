@@ -277,7 +277,7 @@ Distinguishing them from other regulatory elements remains difficult, and some b
 While these factors make the enhancer identification problem more difficult, they also make a solution more valuable.
 
 Several neural network approaches yielded promising results in enhancer prediction.
-A baseline SVM approach, gkmSVM [@10.1371/journal.pcbi.1003711], predicted enhancers based on DNA sequence, attaining a mean AUPR of 0.322 over 164 cell types [@doi:10.1101/gr.200535.115].
+A baseline SVM approach, gkmSVM [@doi:10.1371/journal.pcbi.1003711], predicted enhancers based on DNA sequence, attaining a mean AUPR of 0.322 over 164 cell types [@doi:10.1101/gr.200535.115].
 Basset used a CNN to produce a mean AUPR of 0.561 on the same problem [@doi:10.1101/gr.200535.115].
 DeepEnhancer used a CNN to get a AUPR of 0.917 on nine cell types, against an AUPR of 0.899 reported for gkmSVM.
 DECRES used a feed-forward neural network [@doi:10.1101/041616] to distinguish between different kinds of regulatory elements, such as active enhancers, and promoters.
