@@ -238,7 +238,7 @@ years. The main tasks in biological and clinical text mining include but are not
 limited to named entity recognition, relation/event extraction, and information
 retrieval (Figure 1).
 
-![Deep learning applications, tasks and models based on NLP perspectives.](../images/biotm.jpg)
+![Deep learning applications, tasks and models based on NLP perspectives.](../images/biotm.png)
 
 Machine learning is widely used in many of aforementioned tasks where
 engineering the optimal set of features is a must. However it is often difficult
