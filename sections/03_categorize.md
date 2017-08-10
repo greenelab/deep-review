@@ -267,8 +267,8 @@ improve the NER performance. [@doi:10.3390/info6040848] studied the effect of
 word embeddings on drug name recognition and compared them with traditional
 semantic features. [@doi:10.1155/2014/240403] investigated word embeddings in
 gene, DNA, and cell line mention detection tasks. Moreover,
-[@tag:wu2015clinical] examined the use of neural word embeddings for clinical
-abbreviation disambiguation. [@tag:liu2015exploiting] exploited task-oriented
+[@doi:10.18653/v1/w15-3822] examined the use of neural word embeddings for clinical
+abbreviation disambiguation. [@doi:10.18653/v1/w15-3810] exploited task-oriented
 resources to learn word embeddings for clinical abbreviation expansion.
 
 Relation extraction is a task of detecting and classifying semantic relationship
@@ -280,7 +280,7 @@ because it can relieve the feature sparsity and engineering problems. Some
 studies focused on jointly extracting biomedical entities as well as their
 relations simultaneously [@tag:li2016joint @doi:10.1186/s12859-017-1609-9],
 while others applied deep learning on relation classification with given
-entities. For example, [@arxiv:1706.01556] proposed a multichannel dependency-
+entities. For example, [@doi:10.18653/v1/w17-2304] proposed a multichannel dependency-
 based convolutional neural network (CNN) and [@doi:10.1155/2016/8479587
 @doi:10.1155/2016/1850404] proposed a shortest path based CNN for the sentence-
 based protein-protein extraction task. [@doi:10.1504/IJDMB.2016.074878] proposed
@@ -290,15 +290,15 @@ designing semantic representation for the same task.
 for chemical-induced disease relation extraction at inter- and intra-sentence
 level, respectively. For drug-drug interaction,
 [@doi:10.1093/bioinformatics/btw486] used a syntax CNN,
-[@tag:asada2017extracting] used an attention CNN, and [@arxiv:1705.03261]
+[@doi:10.18653/v1/w17-2302] used an attention CNN, and [@arxiv:1705.03261]
 examined a recurrent neural network model with multiple attention layers. For
-biotopes event extraction, [@tag:li2016dutir] employed CNN and distributed
-representation while [@tag:mehryary2016deep] used long-short term memory (LSTM)
-networks to extract complicate relations. [@tag:li2015using] applied word
+biotopes event extraction, [@doi:10.18653/v1/w16-3012] employed CNN and distributed
+representation while [@doi:10.18653/v1/w16-3009] used long-short term memory (LSTM)
+networks to extract complicate relations. [@doi:10.18653/v1/w15-3814] applied word
 embedding to extract complete events from biomedical text and archived the
 results comparable to the state-of-the-art systems. There are also some works
 that identified event triggers rather than the complete event
-[@doi:10.1142/S0219720015410012 @tag:patchigolla2017biomedical]. Taken together,
+[@doi:10.1142/S0219720015410012 @arxiv:1705.09516]. Taken together,
 it appears that deep learning models outperform traditional kernel methods or
 feature-based approaches by 1-5% in f-score. Among various deep learning
 approaches, CNN stands out as the most popular model both in terms of
@@ -309,21 +309,21 @@ Information retrieval is a task of finding relevant text that satisfies an
 information need from within a large document collection. While deep learning
 has not yet achieved the same level of success in this area as seen in others,
 the recent surge of interest and work suggest that this may be quickly changing.
-For example, [@tag:mohan2017deep] described a deep learning approach to modeling
+For example, [@doi:10.18653/v1/w17-2328] described a deep learning approach to modeling
 the relevance of a document's text to a query, applied to the entire biomedical
 literature.
 
-In the clinical domain, [@tag:jagannatha2016bidirectional] employed a
+In the clinical domain, [@pmid:27885364] employed a
 bidirectional LSTM RNN structure to extract adverse drug events from electronic
-health records. [@tag:choi2016doctor] developed Doctor AI, a RNN-based model
+health records. [@arxiv:1511.05942] developed Doctor AI, a RNN-based model
 that can learn efficient patient representation from a large amount of
 longitudinal patient records and predict diagnosis and medication code of EHR.
 [@doi:10.3233/978-1-61499-432-9-584] applied the word2vec deep learning toolkit
 to medical corpora and evaluated the efficiency of word2vec in identifying
 properties of pharmaceuticals based on mid-sized, unstructured medical text
 corpora without any additional background knowledge.
-[@tag:lin2017representations] investigated using CNN to extract temporal
-relations. [@tag:karimi2017automatic] investigated the applicability of deep
+[@doi:10.18653/v1/w17-2341] investigated using CNN to extract temporal
+relations. [@doi:10.18653/v1/w17-2342] investigated the applicability of deep
 learning at autocoding of radiology reports using the International
 Classification of Diseases [@tag:world2004international].
 
