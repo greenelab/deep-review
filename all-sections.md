@@ -97,7 +97,7 @@ privacy-critical environments.
 
 The term _deep learning_ has come to refer to a collection of new techniques that,
 together, have demonstrated breakthrough gains over existing best-in-class
-machine learning algorithms across several fields. For example, over the past
+machine learning algorithms across several fields. Over the past
 five years these methods have revolutionized image classification and speech
 recognition due to their flexibility and high accuracy
 [@BeijBSRE]. More recently, deep learning algorithms have shown
@@ -133,7 +133,7 @@ Neural networks are most widely associated with supervised machine learning,
 where the goal is to accurately predict one or more labels associated with each
 data point. However, deep learning algorithms can also be used in an
 exploratory, "unsupervised" mode, where the goal is to summarize, explain, or
-identify interesting patterns in a data set.  In a famous and early example,
+identify interesting patterns in a data set.  In a famous early example,
 scientists from Google demonstrated that a neural network "discovered" that
 cats, faces, and pedestrians were important components of online videos
 [@IiNJE32f] without
@@ -247,7 +247,7 @@ drug discovery for new targets [@xPkT1z7D].
 
 ## Deep learning and patient categorization
 
-In a healthcare setting, individuals are diagnosed with a disease or condition
+In healthcare, individuals are diagnosed with a disease or condition
 based on symptoms, the results of certain diagnostic tests, or other factors.
 Once diagnosed with a disease, an individual might be assigned a stage based on
 another set of human-defined rules. While these rules are refined over time, the
@@ -261,8 +261,7 @@ network has the potential to identify entirely new categories of health or
 disease that are only present when data from multiple lab tests are integrated.
 
 As an example, consider the condition Latent Autoimmune Diabetes in Adults
-(LADA). The history of this disease classification is briefly reviewed in
-Stenström et al. [@WuOqsORY]. In the absence of a
+(LADA; reviewed in [@WuOqsORY]). In the absence of a
 pre-specified disease definition, a deep neural network might have identified a
 subgroup of individuals with blood glucose levels that indicated diabetes as
 well as auto-antibodies, even though the individuals had never been diagnosed
@@ -332,9 +331,9 @@ of certified dermatologists [@sLPsrfbl; @XnYNYoYB].
 
 Reusing features from natural images is also an emerging approach for radiographic images,
 where datasets are often too small to train large deep neural networks without
-these techniques [@1Fy5bcnCI; @1GAyqYBNZ; @x6HXFAS4; @Qve94Jra]. Rajkomar et al.
-[@x6HXFAS4] showed that a deep CNN trained on natural images
-boosts performance in radiographic images. However, the target task required
+these techniques [@1Fy5bcnCI; @1GAyqYBNZ; @x6HXFAS4; @Qve94Jra]. 
+A deep CNN trained on natural images
+boosts performance in radiographic images [@x6HXFAS4]. However, the target task required
 either re-training the initial model from scratch with special pre-processing or
 fine-tuning of the whole network on radiographs with heavy data augmentation to
 avoid overfitting.
@@ -669,7 +668,7 @@ costly practice of manual annotation.
 
 To construct the types of very large datasets that deep learning methods thrive
 on, we need robust sharing of large collections of data. This is in part a
-cultural challenge. We touch on this challenge in the Discussion section. Beyond
+cultural challenge. We touch on this challenge in Discussion. Beyond
 the cultural hurdles around data sharing, there are also technological and legal
 hurdles related to sharing individual health records or deep models built from
 such records. This subsection deals primarily with these challenges.
@@ -860,7 +859,7 @@ prevent harm from discriminatory predictions. To reach their potential in this
 domain, deep learning methods will need to be interpretable. Researchers need to
 consider the extent to which biases may be learned by the model and whether or
 not a model is sufficiently interpretable to identify bias. We discuss the
-challenge of model interpretability more thoroughly in the discussion section.
+challenge of model interpretability more thoroughly in Discussion.
 
 #### Applications of deep learning to longitudinal analysis
 
@@ -1003,7 +1002,7 @@ decade. Initial machine learning approaches used a naïve Bayes model and a
 2-layer Bayesian neural network with thousands of hand-derived sequence-based
 features to predict the probability of exon skipping
 [@11ETDdRKr; @8VPGUHcf]. With the advent of deep
-learning, more complex models were built that provided better predictive
+learning, more complex models provided better predictive
 accuracy [@17sgPdcMT; @N0HBi8MH].
 Importantly, these new approaches can take in multiple kinds of epigenomic
 measurements as well as tissue identity and RNA binding partners of splicing
@@ -1240,10 +1239,10 @@ be critical for understanding transcriptional regulation.
 
 ### Micro-RNA binding
 
-Prediction of microRNAs (miRNAs) in the genome as well as miRNA targets is of
+Prediction of microRNAs (miRNAs) and miRNA targets is of
 great interest, as they are critical components of gene regulatory networks and
 are often conserved across great evolutionary distance [@yVKIhIAf; @8lpCCppx]. While many machine learning algorithms have been
-applied to solve these prediction tasks, they currently require extensive
+applied to these tasks, they currently require extensive
 feature selection and optimization. For instance, one of the most widely adopted
 tools for miRNA target prediction, TargetScan, trained multiple linear
 regression models on 14 hand-curated features including structural accessibility
@@ -1298,7 +1297,7 @@ recent years, the accuracy of contact prediction has greatly improved
 One can represent protein secondary structure with three different states (alpha helix,
 beta strand, and loop regions) or eight finer-grained states. Accuracy of a three-state prediction is called Q3, and accuracy of an 8-state prediction is called Q8.
 Several groups
-[@1AlhRKQbe; @ZzaRyGuJ; @UpFrhdJf] initiated the application of deep learning to protein
+[@1AlhRKQbe; @ZzaRyGuJ; @UpFrhdJf] applied deep learning to protein
 secondary structure prediction but were unable to achieve significant
 improvement over the *de facto* standard method PSIPRED
 [@Aic7UyXM], which uses two shallow feedforward neural
@@ -1320,7 +1319,7 @@ Protein contact prediction and contact-assisted folding (i.e. folding proteins
 using predicted contacts as restraints) represents a promising new direction for
 *ab initio* folding of proteins without good templates in PDB. Co-evolution
 analysis is effective for proteins with a very large number (>1000) of sequence
-homologs [@10dNuD89l], but otherwise fares poorly for
+homologs [@10dNuD89l], but fares poorly for
 proteins without many sequence homologs. By combining co-evolution information
 with a few other protein features, shallow neural network methods such as
 MetaPSICOV [@7atXz0r] and CoinDCA-NN
@@ -1340,8 +1339,8 @@ proteins without many sequence homologs. It employs a network architecture
 formed by one 1D residual neural network and one 2D residual neural network.
 Blindly tested in the latest CASP competition (i.e. CASP12
 [@zScWGveU]),
-RaptorX-Contact ranked first in F1 score (a widely-used performance metric
-combining sensitivity and specificity) on free-modeling targets as well as the
+RaptorX-Contact ranked first in F1 score
+on free-modeling targets as well as the
 whole set of targets. In CAMEO (which can be interpreted as a fully-automated
 CASP) [@u9uApoaB], its predicted contacts were also able to
 fold proteins with a novel fold and only 65-330 sequence homologs. This
@@ -1376,14 +1375,14 @@ recent advancements [@MmRGFVUu; @40EG4ZEU; @TutLhFSz]. For deep
 learning to become commonplace for biological image segmentation, we need user-friendly
 tools.
 
-We anticipate an additional kind of paradigm shift in bioimaging that will be
+We anticipate an additional paradigm shift in bioimaging that will be
 brought about by deep learning: what if images of biological samples, from
 simple cell cultures to three-dimensional organoids and tissue samples, could be
 mined for much more extensive biologically meaningful information than is
 currently standard? For example, a recent study demonstrated the ability to
 predict lineage fate in hematopoietic cells up to three generations in advance
-of differentiation [@On4vW5aU]. In biomedical research, by far the
-most common paradigm is for biologists to decide in advance what feature to
+of differentiation [@On4vW5aU]. In biomedical research,
+most often biologists decide in advance what feature to
 measure in images from their assay system. Although classical methods of
 segmentation and feature extraction can produce hundreds of metrics per cell in
 an image, deep learning is unconstrained by human intuition and can in theory
@@ -1480,7 +1479,7 @@ the next few years.
 
 ### Metagenomics
 
-Metagenomics, which refers to the study of genetic material -- 16S rRNA and/or
+Metagenomics, which refers to the study of genetic material -- 16S rRNA or
 whole-genome shotgun DNA -- from microbial communities, has revolutionized the
 study of micro-scale ecosystems within and around us. In recent years, machine
 learning has proved to be a powerful tool for metagenomic analysis. 16S rRNA has
@@ -1498,7 +1497,7 @@ the organisms that are identified [@W0cYSf89; @aI9g2UOc; @c5P9jHCg; @y9s5irW] or
 looked into how feature selection can improve classification [@Kt9NojjR; @y9s5irW], and techniques have been proposed that are classifier-independent
 [@1AN5UPfb1; @O9D66oYa].
 
-How have neural networks been of use? Most neural networks are being used for
+Most neural networks are used for
 phylogenetic classification or functional annotation from sequence data where
 there is ample data for training. Neural networks have been applied successfully
 to gene annotation (e.g. Orphelia [@q1A2AEtO] and FragGeneScan
@@ -1544,9 +1543,8 @@ only thousands of full-sequenced genomes as compared to hundreds of thousands of
 16S rRNA sequences available for training.
 
 However, because RNNs have been applied to base calls for the Oxford Nanopore
-long-read sequencer with some success [@1BTJ1KqRa] (discussed further in the next
-section), one day the entire pipeline, from denoising of through functional
-classification, may be combined into one step by using powerful LSTMs
+long-read sequencer with some success [@1BTJ1KqRa] (discussed below), one day the entire pipeline, from denoising to functional
+classification, may be combined into one step using powerful LSTMs
 [@2cMhMv5A]. For example, metagenomic assembly usually requires binning
 then assembly, but could deep neural nets accomplish both tasks in one network?
 We believe the greatest potential in deep learning is to learn the complete
@@ -1590,7 +1588,7 @@ variant and fed these vectors into a fully connected deep neural network
 least 15 iterations of software development to fine-tune, which suggests that
 these models may not generalize.
 
-Going forward, variant calling will benefit more from optimizing neural network
+Variant calling will benefit more from optimizing neural network
 architectures than from developing features by hand. An interesting and
 informative next step would be to rigorously test if encoding raw sequence and
 quality data as an image, tensor, or some other mixed format produces the best
@@ -1727,8 +1725,8 @@ efficiency of clinical trials and accelerate drug development.
 
 Drug repositioning (or repurposing) is an attractive option for delivering new
 drugs to the market because of the high costs and failure rates associated with
-more traditional drug discovery approaches [@13c9OPizf; @79Ktl2]. A decade ago, the concept of the Connectivity Map
-[@Ot5bUkmI] had a sizeable impact on the field.  Reverse
+more traditional drug discovery approaches [@13c9OPizf; @79Ktl2]. A decade ago, the Connectivity Map
+[@Ot5bUkmI] had a sizeable impact.  Reverse
 matching disease gene expression signatures with a large set of reference
 compound profiles allowed researchers to formulate repurposing hypotheses at
 scale using a simple non-parametric test. Since then, several advanced
@@ -1759,12 +1757,12 @@ Wang et al. [@1AU7wzPqa] trained individual RBMs for
 each target in a drug-target interaction network and used these models to
 predict novel interactions pointing to new indications for existing drugs. Wen
 et al. [@oTF8O79C] extended this concept to deep
-learning by creating a DBN called DeepDTIs, which is able to predict
-interactions on the basis of chemical structure and protein sequence features.
+learning by creating a DBN called DeepDTIs, which predicts
+interactions using chemical structure and protein sequence features.
 
-Drug repositioning appears to be an obvious candidate for deep learning both
+Drug repositioning appears an obvious candidate for deep learning both
 because of the large amount of high-dimensional data available and the
-complexity of the question being asked. However, what is perhaps the most
+complexity of the question being asked. However, perhaps the most
 promising piece of work in this space [@EMDwvRGb]
 is more of a proof of concept than a real-world hypothesis-generation tool;
 notably, deep learning was used to predict drug indications but not for the
@@ -1777,7 +1775,7 @@ repositioning via deep learning is currently missing.
 
 #### Ligand-based prediction of bioactivity
 
-In the biomedical domain, high-throughput chemical screening aims to improve
+High-throughput chemical screening in biomedical research aims to improve
 therapeutic options over a long term horizon [@1DTUK3YyI].
 The objective is to discover which small molecules (also referred to as chemical
 compounds or ligands) that specifically affect the activity of a target, such as
@@ -1918,10 +1916,10 @@ were slightly worse than the influence-relevance voter method on an HIV dataset.
 merits of these methods depends on the dataset and cross validation strategy
 [@16OPHvAij], though evaluation often uses auROC (area under the
 receiver operating characteristic curve), which has limited utility due to the
-large active/inactive class imbalance (see Discussion).
+large class imbalance (see Discussion).
 
 We remain optimistic for the potential of deep learning and specifically
-representation learning in drug discovery and propose that rigorous benchmarking
+representation learning in drug discovery. Rigorous benchmarking
 on broad and diverse prediction tasks will be as important as novel neural
 network architectures to advance the state of the art and convincingly
 demonstrate superiority over traditional cheminformatics techniques.
@@ -1993,15 +1991,9 @@ atom-atom interactions and the forces that govern binding affinity.
 
 #### *De novo* drug design
 
-Whereas the goal of virtual screening is to find active molecules by predicting
-the biochemical activity of hundreds of thousands to millions of chemicals using
-existing (virtual) chemical libraries, analogous to robotic high-throughput "wet
-lab" screening, _de novo_ drug design aims to directly _generate_ active
-compounds [@kJ4hy7E; @omzv9ryI].
-
 *De novo* drug design attempts to model the typical design-synthesize-test cycle of drug
-discovery [@kJ4hy7E]. It explores the much larger
-space of an estimated 10<sup>60</sup> synthesizable organic molecules with
+discovery [@kJ4hy7E; @omzv9ryI]. It explores
+an estimated 10<sup>60</sup> synthesizable organic molecules with
 drug-like properties without explicit enumeration [@WeiyYhfy]. To
 test or score structures, algorithms like those discussed earlier are used. To
 "design" and "synthesize", traditional *de novo* design software relied on
@@ -2159,7 +2151,7 @@ scores over 99.99% for samples that resemble pure noise.
 
 As the concept of interpretability is quite broad, many methods described as
 improving the interpretability of deep learning models take disparate and often
-complementary approaches. Some key themes are discussed below.
+complementary approaches.
 
 #### Assigning example-specific importance scores
 
@@ -2330,8 +2322,8 @@ substantially superior results compared to an attention-based method.
 
 #### Future outlook
 
-While deep learning certainly lags behind most Bayesian models in terms of
-interpretability, one can safely argue that the interpretability of deep
+While deep learning lags behind most Bayesian models in terms of
+interpretability, the interpretability of deep
 learning is comparable to or exceeds that of many other widely-used machine
 learning methods such as random forests or SVMs. While it is possible to obtain
 importance scores for different inputs in a random forest, the same is true for
@@ -2351,7 +2343,7 @@ similar in spirit to how datasets like ImageNet and CIFAR spurred the
 development of deep learning for computer vision. It would also be helpful if
 the community placed more emphasis on domains outside of computer vision.
 Computer vision is often used as the example application of interpretability
-methods, but it is arguably not the domain with the most pressing need. Finally,
+methods, but it is not the domain with the most pressing need. Finally,
 closer integration of interpretability approaches with popular deep learning
 frameworks would make it easier for practitioners to apply and experiment with
 different approaches to understanding their deep learning models.
@@ -2359,8 +2351,8 @@ different approaches to understanding their deep learning models.
 ### Data limitations
 
 A lack of large-scale, high-quality, correctly labeled training data has
-impacted deep learning in nearly all applications we have discussed, from
-healthcare to genomics to drug discovery.  The challenges of training complex,
+impacted deep learning in nearly all applications we have discussed.
+The challenges of training complex,
 high-parameter neural networks from few examples are obvious, but uncertainty in
 the labels of those examples can be just as problematic.  In genomics labeled
 data may be derived from an experimental assay with known and unknown technical
@@ -2399,7 +2391,7 @@ successfully applied directly to real data [@2M3zXijc].
 Data can be simulated to create negative examples when only positive training
 instances are available.  DANN [@15E5yG1Ho] adopts this
 approach to predict the pathogenicity of genetic variants using semi-synthetic
-training data from Combined Annotation-Dependent Depletion
+training data from Combined Annotation-Dependent Depletion (CADD)
 [@KxEzGxJ6].  Though our emphasis here is on the training strategy,
 it should be noted that logistic regression outperformed DANN when
 distinguishing known pathogenic mutations from likely benign variants in real
@@ -2510,8 +2502,8 @@ domain. The cultural barriers to data sharing in particular are perhaps best
 captured by the use of the term "research parasite" to describe scientists who
 use data from other researchers [@o0F1MXBC]. A field that honors
 only discoveries and not the hard work of generating useful data will have
-difficulty encouraging scientists to share their hard-won data. Unfortunately,
-it's precisely those data that would help to power deep learning in the domain.
+difficulty encouraging scientists to share their hard-won data.
+It's precisely those data that would help to power deep learning in the domain.
 Efforts are underway to recognize those who promote an ecosystem of rigorous
 sharing and analysis [@194IoYUs3].
 
@@ -2521,10 +2513,10 @@ deep learning can make the preprocessing code (e.g. Basset
 [@2CbHXoFn] and variationanalysis [@GSLRw2L5])
 and cleaned data (e.g. MoleculeNet [@16OPHvAij]) publicly
 available to catalyze further research. However, there are complex privacy and
-legal issues involved in sharing patient data that cannot be ignored. In some
+legal issues involved in sharing patient data. In some
 domains high-quality training data has been generated privately, i.e.
 high-throughput chemical screening data at pharmaceutical companies. One
-perspective is that there is little expectation or incentive for this private
+may think that there is little incentive for this private
 data to be shared. However, data are not inherently valuable. Instead, the
 insights that we glean from them are where the value lies. Organizations may
 establish a competitive advantage by releasing data sufficient for improved
@@ -2632,7 +2624,7 @@ that describe common concepts across input modalities. Generative graphical
 models like RBMs, deep Boltzmann machines, and DBNs, demonstrate successful
 extraction of more informative features for one modality (images or video) when
 jointly learned with other modalities (audio or text) [@1eN66lwn]. Deep
-graphical models such as DBNs are considered to be well-suited for multimodal
+graphical models such as DBNs are well-suited for multimodal
 learning tasks because they learn a joint probability distribution from inputs.
 They can be pre-trained in an unsupervised fashion on large unlabeled data and
 then fine-tuned on a smaller number of labeled examples. When labels are
@@ -2809,7 +2801,7 @@ challenges and can achieve better performance than either individually
 [@mbEp6jNr]. For sample and patient classification tasks, we expect deep
 learning methods to augment clinicians and biomedical researchers.
 
-We are extremely optimistic about the future of deep learning in biology and
+We are optimistic about the future of deep learning in biology and
 medicine. It is by no means inevitable that deep learning will revolutionize
 these domains, but given how rapidly the field is evolving, we are confident
 that its full potential in biomedicine has not been explored.  We have
