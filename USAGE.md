@@ -9,6 +9,12 @@ Manuscript text should be written in markdown files, which should be located in 
 For basic formatting, check out the [CommonMark Help](http://commonmark.org/help/) page for an introduction to the formatting options provided by standard markdown.
 In addition, manubot supports an extended version of markdown, tailored for scholarly writing.
 
+Within a paragraph in markdown, single newlines are interpreted as whitespace (same as a space).
+A paragraph's source does not need to contain newlines.
+However, "one paragraph per line" makes the git diff less precise, leading to less granular review commenting, and makes conflicts more likely.
+Therefore, we recommend using [semantic linefeeds](http://rhodesmill.org/brandon/2012/one-sentence-per-line/ "Semantic Linefeeds. Brandon Rhodes. 2012") — newlines between sentences.
+We have found that "one sentence per line" is preferable to "word wrap" or "one paragraph per line".
+
 ### Tables
 
 Manubot supports [markdown tables](https://help.github.com/articles/organizing-information-with-tables/ "GitHub Help: Organizing information with tables").
