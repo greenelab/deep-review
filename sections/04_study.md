@@ -115,7 +115,7 @@ decade. Initial machine learning approaches used a naïve Bayes model and a
 2-layer Bayesian neural network with thousands of hand-derived sequence-based
 features to predict the probability of exon skipping
 [@tag:Barash2010_splicing_code @tag:Xiong2011_bayesian]. With the advent of deep
-learning, more complex models were built that provided better predictive
+learning, more complex models provided better predictive
 accuracy [@tag:Xiong2015_splicing_code @tag:Jha2017_integrative_models].
 Importantly, these new approaches can take in multiple kinds of epigenomic
 measurements as well as tissue identity and RNA binding partners of splicing
@@ -352,11 +352,11 @@ be critical for understanding transcriptional regulation.
 
 ### Micro-RNA binding
 
-Prediction of microRNAs (miRNAs) in the genome as well as miRNA targets is of
+Prediction of microRNAs (miRNAs) and miRNA targets is of
 great interest, as they are critical components of gene regulatory networks and
 are often conserved across great evolutionary distance [@tag:Bracken2016_mirna
 @tag:Berezikov2011_mirna]. While many machine learning algorithms have been
-applied to solve these prediction tasks, they currently require extensive
+applied to these tasks, they currently require extensive
 feature selection and optimization. For instance, one of the most widely adopted
 tools for miRNA target prediction, TargetScan, trained multiple linear
 regression models on 14 hand-curated features including structural accessibility
@@ -414,7 +414,7 @@ One can represent protein secondary structure with three different states (alpha
 beta strand, and loop regions) or eight finer-grained states. Accuracy of a three-state prediction is called Q3, and accuracy of an 8-state prediction is called Q8.
 Several groups
 [@doi:10.1371/journal.pone.0032235 @doi:10.1109/TCBB.2014.2343960
-@doi:10.1038/srep11476] initiated the application of deep learning to protein
+@doi:10.1038/srep11476] applied deep learning to protein
 secondary structure prediction but were unable to achieve significant
 improvement over the *de facto* standard method PSIPRED
 [@doi:10.1006/jmbi.1999.3091], which uses two shallow feedforward neural
@@ -436,7 +436,7 @@ Protein contact prediction and contact-assisted folding (i.e. folding proteins
 using predicted contacts as restraints) represents a promising new direction for
 *ab initio* folding of proteins without good templates in PDB. Co-evolution
 analysis is effective for proteins with a very large number (>1000) of sequence
-homologs [@doi:10.1371/journal.pone.0028766], but otherwise fares poorly for
+homologs [@doi:10.1371/journal.pone.0028766], but fares poorly for
 proteins without many sequence homologs. By combining co-evolution information
 with a few other protein features, shallow neural network methods such as
 MetaPSICOV [@doi:10.1093/bioinformatics/btu791] and CoinDCA-NN
@@ -456,8 +456,8 @@ proteins without many sequence homologs. It employs a network architecture
 formed by one 1D residual neural network and one 2D residual neural network.
 Blindly tested in the latest CASP competition (i.e. CASP12
 [@url:http://www.predictioncenter.org/casp12/rrc_avrg_results.cgi]),
-RaptorX-Contact ranked first in F1 score (a widely-used performance metric
-combining sensitivity and specificity) on free-modeling targets as well as the
+RaptorX-Contact ranked first in F1 score
+on free-modeling targets as well as the
 whole set of targets. In CAMEO (which can be interpreted as a fully-automated
 CASP) [@url:http://www.cameo3d.org/], its predicted contacts were also able to
 fold proteins with a novel fold and only 65-330 sequence homologs. This
@@ -493,14 +493,14 @@ recent advancements [@doi:10.3109/10409238.2015.1135868
 learning to become commonplace for biological image segmentation, we need user-friendly
 tools.
 
-We anticipate an additional kind of paradigm shift in bioimaging that will be
+We anticipate an additional paradigm shift in bioimaging that will be
 brought about by deep learning: what if images of biological samples, from
 simple cell cultures to three-dimensional organoids and tissue samples, could be
 mined for much more extensive biologically meaningful information than is
 currently standard? For example, a recent study demonstrated the ability to
 predict lineage fate in hematopoietic cells up to three generations in advance
-of differentiation [@doi:10.1038/nmeth.4182]. In biomedical research, by far the
-most common paradigm is for biologists to decide in advance what feature to
+of differentiation [@doi:10.1038/nmeth.4182]. In biomedical research,
+most often biologists decide in advance what feature to
 measure in images from their assay system. Although classical methods of
 segmentation and feature extraction can produce hundreds of metrics per cell in
 an image, deep learning is unconstrained by human intuition and can in theory
@@ -599,7 +599,7 @@ the next few years.
 
 ### Metagenomics
 
-Metagenomics, which refers to the study of genetic material -- 16S rRNA and/or
+Metagenomics, which refers to the study of genetic material -- 16S rRNA or
 whole-genome shotgun DNA -- from microbial communities, has revolutionized the
 study of micro-scale ecosystems within and around us. In recent years, machine
 learning has proved to be a powerful tool for metagenomic analysis. 16S rRNA has
@@ -620,7 +620,7 @@ looked into how feature selection can improve classification [@tag:Liu
 @tag:Segata], and techniques have been proposed that are classifier-independent
 [@tag:Ditzler @tag:Ditzler2].
 
-How have neural networks been of use? Most neural networks are being used for
+Most neural networks are used for
 phylogenetic classification or functional annotation from sequence data where
 there is ample data for training. Neural networks have been applied successfully
 to gene annotation (e.g. Orphelia [@tag:Hoff] and FragGeneScan
@@ -666,9 +666,8 @@ only thousands of full-sequenced genomes as compared to hundreds of thousands of
 16S rRNA sequences available for training.
 
 However, because RNNs have been applied to base calls for the Oxford Nanopore
-long-read sequencer with some success [@tag:Boza] (discussed further in the next
-section), one day the entire pipeline, from denoising of through functional
-classification, may be combined into one step by using powerful LSTMs
+long-read sequencer with some success [@tag:Boza] (discussed below), one day the entire pipeline, from denoising to functional
+classification, may be combined into one step using powerful LSTMs
 [@tag:Sutskever]. For example, metagenomic assembly usually requires binning
 then assembly, but could deep neural nets accomplish both tasks in one network?
 We believe the greatest potential in deep learning is to learn the complete
@@ -712,7 +711,7 @@ variant and fed these vectors into a fully connected deep neural network
 least 15 iterations of software development to fine-tune, which suggests that
 these models may not generalize.
 
-Going forward, variant calling will benefit more from optimizing neural network
+Variant calling will benefit more from optimizing neural network
 architectures than from developing features by hand. An interesting and
 informative next step would be to rigorously test if encoding raw sequence and
 quality data as an image, tensor, or some other mixed format produces the best

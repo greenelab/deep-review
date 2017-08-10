@@ -1,6 +1,6 @@
 ## Deep learning and patient categorization
 
-In a healthcare setting, individuals are diagnosed with a disease or condition
+In healthcare, individuals are diagnosed with a disease or condition
 based on symptoms, the results of certain diagnostic tests, or other factors.
 Once diagnosed with a disease, an individual might be assigned a stage based on
 another set of human-defined rules. While these rules are refined over time, the
@@ -14,8 +14,7 @@ network has the potential to identify entirely new categories of health or
 disease that are only present when data from multiple lab tests are integrated.
 
 As an example, consider the condition Latent Autoimmune Diabetes in Adults
-(LADA). The history of this disease classification is briefly reviewed in
-Stenström et al. [@doi:10.2337/diabetes.54.suppl_2.S68]. In the absence of a
+(LADA; reviewed in [@doi:10.2337/diabetes.54.suppl_2.S68]). In the absence of a
 pre-specified disease definition, a deep neural network might have identified a
 subgroup of individuals with blood glucose levels that indicated diabetes as
 well as auto-antibodies, even though the individuals had never been diagnosed
@@ -89,9 +88,9 @@ of certified dermatologists [@tag:Codella2016_ensemble_melanoma
 Reusing features from natural images is also an emerging approach for radiographic images,
 where datasets are often too small to train large deep neural networks without
 these techniques [@tag:Bar2015_nonmed_tl @tag:Shin2016_cad_tl
-@tag:Rajkomar2017_radiographs @tag:Lakhani2017_radiography]. Rajkomar et al.
-[@tag:Rajkomar2017_radiographs] showed that a deep CNN trained on natural images
-boosts performance in radiographic images. However, the target task required
+@tag:Rajkomar2017_radiographs @tag:Lakhani2017_radiography]. 
+A deep CNN trained on natural images
+boosts performance in radiographic images [@tag:Rajkomar2017_radiographs]. However, the target task required
 either re-training the initial model from scratch with special pre-processing or
 fine-tuning of the whole network on radiographs with heavy data augmentation to
 avoid overfitting.
@@ -429,7 +428,7 @@ costly practice of manual annotation.
 
 To construct the types of very large datasets that deep learning methods thrive
 on, we need robust sharing of large collections of data. This is in part a
-cultural challenge. We touch on this challenge in the Discussion section. Beyond
+cultural challenge. We touch on this challenge in Discussion. Beyond
 the cultural hurdles around data sharing, there are also technological and legal
 hurdles related to sharing individual health records or deep models built from
 such records. This subsection deals primarily with these challenges.
@@ -621,7 +620,7 @@ prevent harm from discriminatory predictions. To reach their potential in this
 domain, deep learning methods will need to be interpretable. Researchers need to
 consider the extent to which biases may be learned by the model and whether or
 not a model is sufficiently interpretable to identify bias. We discuss the
-challenge of model interpretability more thoroughly in the discussion section.
+challenge of model interpretability more thoroughly in Discussion.
 
 #### Applications of deep learning to longitudinal analysis
 

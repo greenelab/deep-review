@@ -12,7 +12,7 @@ privacy-critical environments.
 
 The term _deep learning_ has come to refer to a collection of new techniques that,
 together, have demonstrated breakthrough gains over existing best-in-class
-machine learning algorithms across several fields. For example, over the past
+machine learning algorithms across several fields. Over the past
 five years these methods have revolutionized image classification and speech
 recognition due to their flexibility and high accuracy
 [@doi:10.1038/nature14539]. More recently, deep learning algorithms have shown
@@ -48,7 +48,7 @@ Neural networks are most widely associated with supervised machine learning,
 where the goal is to accurately predict one or more labels associated with each
 data point. However, deep learning algorithms can also be used in an
 exploratory, "unsupervised" mode, where the goal is to summarize, explain, or
-identify interesting patterns in a data set.  In a famous and early example,
+identify interesting patterns in a data set.  In a famous early example,
 scientists from Google demonstrated that a neural network "discovered" that
 cats, faces, and pedestrians were important components of online videos
 [@url:http://research.google.com/archive/unsupervised_icml2012.html] without
