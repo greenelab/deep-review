@@ -720,7 +720,7 @@ strategy.
 
 In limited experiments, DeepVariant was robust to sequencing depth, read length,
 and even species [@tag:Poplin2016_deepvariant]. However, a model built on
-Illumina data, for instance, may not be optimal for Pacific Biosystems long-read data or
+Illumina data, for instance, may not be optimal for Pacific Biosciences long-read data or
 MinION nanopore data, which have vastly different specificity and sensitivity
 profiles and signal-to-noise characteristics. Recently, Boza et al. used
 bidirectional recurrent neural networks to infer the *E. coli* sequence from
