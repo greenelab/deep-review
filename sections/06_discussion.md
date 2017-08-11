@@ -577,8 +577,7 @@ this scenario, authors put aside 15 of 164 cell type datasets and trained the
 Basset model on the remaining 149 datasets. Then, they fine-tuned the model with
 one training pass of each of the remaining datasets and achieved results close
 to the model trained on all 164 datasets together. In another example, Min et
-al. [@tag:Min2016_deepenhancer] demonstrated how training on the experimentally
-validated FANTOM5 permissive enhancer dataset followed by fine-tuning on ENCODE
+al. [@tag:Min2016_deepenhancer] demonstrated how training on the experimentally-validated FANTOM5 permissive enhancer dataset followed by fine-tuning on ENCODE
 enhancer datasets improved cell type-specific predictions, outperforming
 state-of-the-art results.  In drug design, general RNN models trained to
 generate molecules from the ChEMBL database have been fine-tuned to produce
@@ -631,7 +630,7 @@ These individual representations are further concatenated before or within
 fully-connected layers. FIDDLE [@tag:Eser2016_fiddle] is an example of a
 multimodal CNN that represents an ensemble of individual networks that take
 NET-seq, MNase-seq, ChIP-seq, RNA-seq, and raw DNA sequence as input to predict
-Transcription Start Site-seq. The combined model radically improves performance
+transcription start sites. The combined model radically improves performance
 over separately trained datatype-specific networks, suggesting that it learns
 the synergistic relationship between datasets.
 
