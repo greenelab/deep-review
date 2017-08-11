@@ -355,7 +355,7 @@ researchers constructed adversarial examples [@Xxb4t3zO].
 Adversarial examples are constructed by applying a transformation that changes
 training images but not their content -- for example by rotating an image by a
 random amount. An alternative in the domain is to train towards human-created
-features before subsequent fine tuning [@JK8NuXy3], which can help
+features before subsequent fine-tuning [@JK8NuXy3], which can help
 to sidestep this challenge though it does give up deep learning techniques'
 strength as feature constructors.
 
@@ -459,7 +459,7 @@ multi-label image classification framework, to detect common thoracic diseases.
 It showed superior performance over a benchmark using fully-labeled data.
 
 With the exception of natural image-like problems (e.g. melanoma detection),
-biomedical imaging poses a number of challenges for deep learning. Dataset are
+biomedical imaging poses a number of challenges for deep learning. Datasets are
 typically small, annotations can be sparse, and images are often
 high-dimensional, multimodal, and multi-channel. Techniques like transfer
 learning, heavy dataset augmentation, and the use of multi-view and multi-stream architectures
@@ -703,7 +703,7 @@ In the wider picture, standards for EHRs are numerous and evolving. Proprietary
 systems, indifferent and scattered use of health information standards, and
 controlled terminologies makes combining and comparison of data across systems
 challenging [@13filvWwr]. Further diversity arises from
-variation in languages, healthcare practices, and demographics. Merging EHR
+variation in languages, healthcare practices, and demographics. Merging EHRs
 gathered in different systems (and even under different assumptions) is
 challenging [@1CWhXZxos].
 
@@ -728,12 +728,12 @@ are applied.
 
 Finally, even if data were perfectly consistent and compatible across systems,
 attempts to share and combine EHR data face considerable legal and ethical
-barriers. Patient privacy can severely restrict the sharing and use of EHR
+barriers. Patient privacy can severely restrict the sharing and use of EHR data
 [@CVnO5njl]. Here again, standards are heterogeneous and evolving,
 but often EHR data can often not be exported or even accessed directly for
 research purposes without appropriate consent. In the United States, research
 use of EHR data is subject both to the Common Rule and the Health Insurance
-Portability and Accountability Act (HIPPA). Ambiguity in the regulatory language
+Portability and Accountability Act (HIPAA). Ambiguity in the regulatory language
 and individual interpretation of these rules can hamper use of EHR data
 [@2cYqPKf1].  Once again, this has the effect of making data
 gathering more laborious and expensive, reducing sample size and study power.
@@ -960,9 +960,8 @@ separately. It is unclear how much performance would have increased if not for
 computational restrictions.
 
 Epigenetic data, combined with deep learning, may have sufficient explanatory
-power to infer gene expression. For instance, a convolutional neural network
-applied to histone modifications, termed DeepChrome, [@G10wkFHt]
-improved prediction accuracy of high or low gene expression over existing
+power to infer gene expression. For instance, the DeepChrome CNN [@G10wkFHt]
+improved prediction accuracy of high or low gene expression from histone modifications over existing
 methods. Deep learning can also integrate different data types. For example,
 Liang et al. combined RBMs to integrate gene expression, DNA methylation, and
 miRNA data to define ovarian cancer subtypes [@1EtavGKI4].
@@ -1600,7 +1599,7 @@ strategy.
 
 In limited experiments, DeepVariant was robust to sequencing depth, read length,
 and even species [@FVfZESYP]. However, a model built on
-Illumina data, for instance, may not be optimal for PacBio long-read data or
+Illumina data, for instance, may not be optimal for Pacific Biosciences long-read data or
 MinION nanopore data, which have vastly different specificity and sensitivity
 profiles and signal-to-noise characteristics. Recently, Boza et al. used
 bidirectional recurrent neural networks to infer the *E. coli* sequence from
@@ -1703,7 +1702,7 @@ processes (e.g. the rules of the game). Some models have been developed for
 targeted medical problems [@eCrLGgiX], but a generalized engine is
 beyond current capabilities.
 
-#### Clinical trials efficiency
+#### Clinical trial efficiency
 
 A clinical deep learning task that has been more successful is the assignment of
 patients to clinical trials. Ithapu et al. [@eehGXQlY] used a
@@ -1778,7 +1777,7 @@ repositioning via deep learning is currently missing.
 High-throughput chemical screening in biomedical research aims to improve
 therapeutic options over a long term horizon [@1DTUK3YyI].
 The objective is to discover which small molecules (also referred to as chemical
-compounds or ligands) that specifically affect the activity of a target, such as
+compounds or ligands) specifically affect the activity of a target, such as
 a kinase, protein-protein interaction, or broader cellular phenotype.  This
 screening is often one of the first steps in a long drug discovery pipeline,
 where novel molecules are pursued for their ability to inhibit or enhance
@@ -2611,8 +2610,7 @@ this scenario, authors put aside 15 of 164 cell type datasets and trained the
 Basset model on the remaining 149 datasets. Then, they fine-tuned the model with
 one training pass of each of the remaining datasets and achieved results close
 to the model trained on all 164 datasets together. In another example, Min et
-al. [@jV2YerUS] demonstrated how training on the experimentally
-validated FANTOM5 permissive enhancer dataset followed by fine-tuning on ENCODE
+al. [@jV2YerUS] demonstrated how training on the experimentally-validated FANTOM5 permissive enhancer dataset followed by fine-tuning on ENCODE
 enhancer datasets improved cell type-specific predictions, outperforming
 state-of-the-art results.  In drug design, general RNN models trained to
 generate molecules from the ChEMBL database have been fine-tuned to produce
@@ -2664,7 +2662,7 @@ These individual representations are further concatenated before or within
 fully-connected layers. FIDDLE [@yOz8Ybj2] is an example of a
 multimodal CNN that represents an ensemble of individual networks that take
 NET-seq, MNase-seq, ChIP-seq, RNA-seq, and raw DNA sequence as input to predict
-Transcription Start Site-seq. The combined model radically improves performance
+transcription start sites. The combined model radically improves performance
 over separately trained datatype-specific networks, suggesting that it learns
 the synergistic relationship between datasets.
 
@@ -2864,7 +2862,7 @@ We grouped authors into the following four classes of approximately equal contri
 Drafted multiple sub-sections along with extensive editing, pull request reviews, or discussion: A.A.K., B.K.B., B.T.D., D.S.H., E.F., G.P.W., P.A., T.C.
 Drafted one or more sub-sections: A.E.C., A.S., B.J.L., E.M.C., G.L.R., J.I., J.L., J.X., S.W., W.X.
 Revised specific sub-sections or supervised drafting one or more sub-sections: A.K., D.D., D.J.H., L.K.W., M.H.S.S., Y.P., Y.Q.
-Drafted sub-sections, edited the manuscript, reviewed pull requests, and coordinated co-authors: A.G., C.S.G..
+Drafted sub-sections, edited the manuscript, reviewed pull requests, and coordinated co-authors: A.G., C.S.G.
 
 ### Competing interests
 
