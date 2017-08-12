@@ -25,7 +25,6 @@ al. [@doi:10.2337/diab.35.2.237].
 
 One should not regard recapitulation of existing disease categories
 as a gold-standard for deep learning results. Instead, a meaningful
-
 contribution to patient categorization would be to identify new shared
 mechanisms that would otherwise be obscured due to ad hoc historical definitions
 of disease. Perhaps deep neural networks, by reevaluating data without the
