@@ -1,5 +1,7 @@
 set -o errexit
 
+# Set timezone used by Python for setting the manuscript's date
+export TZ=Etc/UTC
 # Default Python to read/write text files using UTF-8 encoding
 export LC_ALL=en_US.UTF-8
 

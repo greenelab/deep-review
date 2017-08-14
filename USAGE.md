@@ -120,6 +120,8 @@ For guidance on what CSL JSON should be like for different document types, refer
 [`content/metadata.yaml`](content/metadata.yaml) contains manuscript metadata that gets passed through to Pandoc, via a [`yaml_metadata_block`](http://pandoc.org/MANUAL.html#extension-yaml_metadata_block).
 `metadata.yaml` should contain the manuscript `title`, `authors` list, and `keywords`.
 Additional metadata, such as `date`, will automatically be created by the Manubot.
+Manubot uses the [timezone](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) specified in [`build.sh`](build/build.sh) for setting the manuscript's date.
+For example, setting the `TZ` environment variable to `Etc/UTC` directs the Manubot to use Coordinated Universal Time.
 
 We recommend authors add themselves to `metadata.yaml` via pull request (when requested by a maintainer), thereby signaling that they've read and approved the manuscript.
 The following YAML shows the supported key–value pairs for an author:  
