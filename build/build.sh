@@ -28,7 +28,7 @@ echo "Exporting HTML manuscript"
 pandoc --verbose \
   --smart \
   --from=markdown \
-  --to=html \
+  --to=html5 \
   --filter pandoc-fignos \
   --filter pandoc-eqnos \
   --filter pandoc-tablenos \
