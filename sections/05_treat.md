@@ -80,7 +80,7 @@ processes (e.g. the rules of the game). Some models have been developed for
 targeted medical problems [@tag:Gultepe2014_sepsis], but a generalized engine is
 beyond current capabilities.
 
-#### Clinical trials efficiency
+#### Clinical trial efficiency
 
 A clinical deep learning task that has been more successful is the assignment of
 patients to clinical trials. Ithapu et al. [@tag:Ithapu2015_efficient] used a
@@ -103,8 +103,8 @@ efficiency of clinical trials and accelerate drug development.
 Drug repositioning (or repurposing) is an attractive option for delivering new
 drugs to the market because of the high costs and failure rates associated with
 more traditional drug discovery approaches [@doi:10.1016/j.jhealeco.2016.01.012
-@doi:10.1038/nrd4609]. A decade ago, the concept of the Connectivity Map
-[@doi:10.1126/science.1132939] had a sizeable impact on the field.  Reverse
+@doi:10.1038/nrd4609]. A decade ago, the Connectivity Map
+[@doi:10.1126/science.1132939] had a sizeable impact.  Reverse
 matching disease gene expression signatures with a large set of reference
 compound profiles allowed researchers to formulate repurposing hypotheses at
 scale using a simple non-parametric test. Since then, several advanced
@@ -138,12 +138,12 @@ Wang et al. [@doi:10.1093/bioinformatics/btt234] trained individual RBMs for
 each target in a drug-target interaction network and used these models to
 predict novel interactions pointing to new indications for existing drugs. Wen
 et al. [@doi:10.1021/acs.jproteome.6b00618] extended this concept to deep
-learning by creating a DBN called DeepDTIs, which is able to predict
-interactions on the basis of chemical structure and protein sequence features.
+learning by creating a DBN called DeepDTIs, which predicts
+interactions using chemical structure and protein sequence features.
 
-Drug repositioning appears to be an obvious candidate for deep learning both
+Drug repositioning appears an obvious candidate for deep learning both
 because of the large amount of high-dimensional data available and the
-complexity of the question being asked. However, what is perhaps the most
+complexity of the question being asked. However, perhaps the most
 promising piece of work in this space [@doi:10.1021/acs.molpharmaceut.6b00248]
 is more of a proof of concept than a real-world hypothesis-generation tool;
 notably, deep learning was used to predict drug indications but not for the
@@ -156,10 +156,10 @@ repositioning via deep learning is currently missing.
 
 #### Ligand-based prediction of bioactivity
 
-In the biomedical domain, high-throughput chemical screening aims to improve
+High-throughput chemical screening in biomedical research aims to improve
 therapeutic options over a long term horizon [@tag:PerezSianes2016_screening].
 The objective is to discover which small molecules (also referred to as chemical
-compounds or ligands) that specifically affect the activity of a target, such as
+compounds or ligands) specifically affect the activity of a target, such as
 a kinase, protein-protein interaction, or broader cellular phenotype.  This
 screening is often one of the first steps in a long drug discovery pipeline,
 where novel molecules are pursued for their ability to inhibit or enhance
@@ -298,10 +298,10 @@ were slightly worse than the influence-relevance voter method on an HIV dataset.
 merits of these methods depends on the dataset and cross validation strategy
 [@tag:Wu2017_molecule_net], though evaluation often uses auROC (area under the
 receiver operating characteristic curve), which has limited utility due to the
-large active/inactive class imbalance (see Discussion).
+large class imbalance (see Discussion).
 
 We remain optimistic for the potential of deep learning and specifically
-representation learning in drug discovery and propose that rigorous benchmarking
+representation learning in drug discovery. Rigorous benchmarking
 on broad and diverse prediction tasks will be as important as novel neural
 network architectures to advance the state of the art and convincingly
 demonstrate superiority over traditional cheminformatics techniques.
@@ -375,15 +375,9 @@ atom-atom interactions and the forces that govern binding affinity.
 
 #### *De novo* drug design
 
-Whereas the goal of virtual screening is to find active molecules by predicting
-the biochemical activity of hundreds of thousands to millions of chemicals using
-existing (virtual) chemical libraries, analogous to robotic high-throughput "wet
-lab" screening, _de novo_ drug design aims to directly _generate_ active
-compounds [@doi:10.1002/wcms.49 @doi:10.1021/acs.jmedchem.5b01849].
-
 *De novo* drug design attempts to model the typical design-synthesize-test cycle of drug
-discovery [@doi:10.1002/wcms.49]. It explores the much larger
-space of an estimated 10<sup>60</sup> synthesizable organic molecules with
+discovery [@doi:10.1002/wcms.49 @doi:10.1021/acs.jmedchem.5b01849]. It explores
+an estimated 10<sup>60</sup> synthesizable organic molecules with
 drug-like properties without explicit enumeration [@doi:10.1002/wcms.1104]. To
 test or score structures, algorithms like those discussed earlier are used. To
 "design" and "synthesize", traditional *de novo* design software relied on

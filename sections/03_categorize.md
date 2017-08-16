@@ -1,6 +1,6 @@
 ## Deep learning and patient categorization
 
-In a healthcare setting, individuals are diagnosed with a disease or condition
+In healthcare, individuals are diagnosed with a disease or condition
 based on symptoms, the results of certain diagnostic tests, or other factors.
 Once diagnosed with a disease, an individual might be assigned a stage based on
 another set of human-defined rules. While these rules are refined over time, the
@@ -14,8 +14,7 @@ network has the potential to identify entirely new categories of health or
 disease that are only present when data from multiple lab tests are integrated.
 
 As an example, consider the condition Latent Autoimmune Diabetes in Adults
-(LADA). The history of this disease classification is briefly reviewed in
-Stenström et al. [@doi:10.2337/diabetes.54.suppl_2.S68]. In the absence of a
+(LADA; reviewed in [@doi:10.2337/diabetes.54.suppl_2.S68]). In the absence of a
 pre-specified disease definition, a deep neural network might have identified a
 subgroup of individuals with blood glucose levels that indicated diabetes as
 well as auto-antibodies, even though the individuals had never been diagnosed
@@ -89,9 +88,9 @@ of certified dermatologists [@tag:Codella2016_ensemble_melanoma
 Reusing features from natural images is also an emerging approach for radiographic images,
 where datasets are often too small to train large deep neural networks without
 these techniques [@tag:Bar2015_nonmed_tl @tag:Shin2016_cad_tl
-@tag:Rajkomar2017_radiographs @tag:Lakhani2017_radiography]. Rajkomar et al.
-[@tag:Rajkomar2017_radiographs] showed that a deep CNN trained on natural images
-boosts performance in radiographic images. However, the target task required
+@tag:Rajkomar2017_radiographs @tag:Lakhani2017_radiography]. 
+A deep CNN trained on natural images
+boosts performance in radiographic images [@tag:Rajkomar2017_radiographs]. However, the target task required
 either re-training the initial model from scratch with special pre-processing or
 fine-tuning of the whole network on radiographs with heavy data augmentation to
 avoid overfitting.
@@ -115,7 +114,7 @@ researchers constructed adversarial training examples [@tag:Zhu2016_advers_mamm]
 Adversarial training examples are constructed by applying a transformation that changes
 training images but not their content -- for example by rotating an image by a
 random amount. An alternative in the domain is to train towards human-created
-features before subsequent fine tuning [@tag:Dhungel2016_mamm], which can help
+features before subsequent fine-tuning [@tag:Dhungel2016_mamm], which can help
 to sidestep this challenge though it does give up deep learning techniques'
 strength as feature constructors.
 
@@ -219,7 +218,7 @@ multi-label image classification framework, to detect common thoracic diseases.
 It showed superior performance over a benchmark using fully-labeled data.
 
 With the exception of natural image-like problems (e.g. melanoma detection),
-biomedical imaging poses a number of challenges for deep learning. Dataset are
+biomedical imaging poses a number of challenges for deep learning. Datasets are
 typically small, annotations can be sparse, and images are often
 high-dimensional, multimodal, and multi-channel. Techniques like transfer
 learning, heavy dataset augmentation, and the use of multi-view and multi-stream architectures
@@ -459,7 +458,7 @@ costly practice of manual annotation.
 
 To construct the types of very large datasets that deep learning methods thrive
 on, we need robust sharing of large collections of data. This is in part a
-cultural challenge. We touch on this challenge in the Discussion section. Beyond
+cultural challenge. We touch on this challenge in Discussion. Beyond
 the cultural hurdles around data sharing, there are also technological and legal
 hurdles related to sharing individual health records or deep models built from
 such records. This subsection deals primarily with these challenges.
@@ -494,7 +493,7 @@ In the wider picture, standards for EHRs are numerous and evolving. Proprietary
 systems, indifferent and scattered use of health information standards, and
 controlled terminologies makes combining and comparison of data across systems
 challenging [@doi:10.1016/j.jbi.2014.10.006]. Further diversity arises from
-variation in languages, healthcare practices, and demographics. Merging EHR
+variation in languages, healthcare practices, and demographics. Merging EHRs
 gathered in different systems (and even under different assumptions) is
 challenging [@doi:10.1007/978-3-319-44839-8].
 
@@ -519,12 +518,12 @@ are applied.
 
 Finally, even if data were perfectly consistent and compatible across systems,
 attempts to share and combine EHR data face considerable legal and ethical
-barriers. Patient privacy can severely restrict the sharing and use of EHR
+barriers. Patient privacy can severely restrict the sharing and use of EHR data
 [@doi:10.1093/ije/dyn022]. Here again, standards are heterogeneous and evolving,
 but often EHR data can often not be exported or even accessed directly for
 research purposes without appropriate consent. In the United States, research
 use of EHR data is subject both to the Common Rule and the Health Insurance
-Portability and Accountability Act (HIPPA). Ambiguity in the regulatory language
+Portability and Accountability Act (HIPAA). Ambiguity in the regulatory language
 and individual interpretation of these rules can hamper use of EHR data
 [@doi:10.1093/jamia/ocv111].  Once again, this has the effect of making data
 gathering more laborious and expensive, reducing sample size and study power.
@@ -651,4 +650,32 @@ prevent harm from discriminatory predictions. To reach their potential in this
 domain, deep learning methods will need to be interpretable (more in the discussion section). Researchers need to
 consider the extent to which biases may be learned by the model and whether or
 not a model is sufficiently interpretable to identify bias. We discuss the
+<<<<<<< HEAD
 challenge of model interpretability more thoroughly in the discussion section.
+=======
+challenge of model interpretability more thoroughly in Discussion.
+
+#### Applications of deep learning to longitudinal analysis
+
+Longitudinal analysis follows a population across time, for example,
+prospectively from birth or from the onset of particular conditions. In large
+patient populations, longitudinal analyses such as the Framingham Heart Study
+[@doi:10.1016/S0140-6736(13)61752-3] and the Avon Longitudinal Study of Parents
+and Children [@doi:10.1038/484155a] have yielded important discoveries about the
+development of disease and the factors contributing to health status. Yet, a
+common practice in EHR-based research is to take a snapshot at a point in time and
+convert patient data to a traditional vector for machine learning and
+statistical analysis. This results in loss of information as timing and order of
+events can provide insight into a patient's disease and treatment
+[@doi:10.2307/2281868]. Efforts to model sequences of events have shown promise
+[@doi:10.1038/ncomms5022] but require exceedingly large patient sizes due to
+discrete combinatorial bucketing. Lasko et al.
+[@doi:10.1371/journal.pone.0066341] used autoencoders on longitudinal sequences
+of serum urine acid measurements to identify population subtypes. More recently,
+deep learning has shown promise working with both sequences (CNNs)
+[@arxiv:1607.07519] and the incorporation of past and current state (RNNs,
+LSTMs) [@arxiv:1602.00357]. This may be a particular area of opportunity for
+deep neural networks. The ability to recognize relevant sequences of events from
+a large number of trajectories requires powerful and flexible feature
+construction methods -- an area in which deep neural networks excel.
+>>>>>>> greenelab/master
