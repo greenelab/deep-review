@@ -88,7 +88,7 @@ of certified dermatologists [@tag:Codella2016_ensemble_melanoma
 Reusing features from natural images is also an emerging approach for radiographic images,
 where datasets are often too small to train large deep neural networks without
 these techniques [@tag:Bar2015_nonmed_tl @tag:Shin2016_cad_tl
-@tag:Rajkomar2017_radiographs @tag:Lakhani2017_radiography]. 
+@tag:Rajkomar2017_radiographs @tag:Lakhani2017_radiography].
 A deep CNN trained on natural images
 boosts performance in radiographic images [@tag:Rajkomar2017_radiographs]. However, the target task required
 either re-training the initial model from scratch with special pre-processing or
@@ -650,10 +650,8 @@ prevent harm from discriminatory predictions. To reach their potential in this
 domain, deep learning methods will need to be interpretable (more in the discussion section). Researchers need to
 consider the extent to which biases may be learned by the model and whether or
 not a model is sufficiently interpretable to identify bias. We discuss the
-<<<<<<< HEAD
-challenge of model interpretability more thoroughly in the discussion section.
-=======
 challenge of model interpretability more thoroughly in Discussion.
+
 
 #### Applications of deep learning to longitudinal analysis
 
