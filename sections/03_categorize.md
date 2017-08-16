@@ -651,7 +651,10 @@ domain, deep learning methods will need to be interpretable (more in the discuss
 consider the extent to which biases may be learned by the model and whether or
 not a model is sufficiently interpretable to identify bias. We discuss the
 challenge of model interpretability more thoroughly in Discussion.
+<<<<<<< HEAD
 
+=======
+>>>>>>> greenelab/master
 
 #### Applications of deep learning to longitudinal analysis
 
