@@ -277,15 +277,16 @@ Distinguishing them from other regulatory elements remains difficult, and some b
 While these factors make the enhancer identification problem more difficult, they also make a solution more valuable.
 
 Several neural network approaches yielded promising results in enhancer prediction.
-A baseline SVM approach, gkmSVM [@doi:10.1371/journal.pcbi.1003711], predicted enhancers based on DNA sequence, attaining a mean auPRC of 0.322 over 164 cell types [@doi:10.1101/gr.200535.115].
-Basset used a CNN to produce a mean auPRC of 0.561 on the same problem [@doi:10.1101/gr.200535.115].
-DeepEnhancer used a CNN to get a auPRC of 0.917 on nine cell types [@tag:Min2016_deepenhancer], against an auPRC of 0.899 reported for gkmSVM.
+Both Basset [@doi:10.1101/gr.200535.115] and DeepEnhancer [@tag:Min2016_deepenhancer] used CNNs to predict enhancers.
 DECRES used a feed-forward neural network [@doi:10.1101/041616] to distinguish between different kinds of regulatory elements, such as active enhancers, and promoters.
 DECRES had difficulty distinguishing between inactive enhancers and promoters.
 They also investigated the power of sequence features to drive classification, finding that beyond CpG islands, few were useful.
 
-The dramatic difference in auPRCs reported by two studies for the same method -- gkmSVM -- illustrates the problems in comparing metrics created with different benchmarking procedures.
-It's impossible to directly compare the performance of Basset and DeepEnhancer based solely on their reported metrics.
+Comparing the performance of enhancer prediction methods illustrates the problems in using metrics created with different benchmarking procedures.
+Both the Basset and DeepEnhancer studies include comparisons to a baseline SVM approach, gkmSVM [@doi:10.1371/journal.pcbi.1003711].
+The Basset study reports gkmSVM attains a mean auPRC of 0.322 over 164 cell types [@doi:10.1101/gr.200535.115].
+The DeepEnhancer study reports for gkmSVM a dramatically different auPRC of 0.899 on nine cell types [@tag:Min2016_deepenhancer].
+This large difference means it's impossible to directly compare the performance of Basset and DeepEnhancer based solely on their reported metrics.
 DECRES used a different set of metrics altogether.
 To drive further progress in enhancer identification, we must develop a common and comparable benchmarking procedure (see Discussion).
 
