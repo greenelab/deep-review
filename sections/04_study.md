@@ -263,7 +263,7 @@ Despite decades of work, computational identification of promoters remains a stu
 Researchers have used neural networks for promoter recognition as early as 1996 [@doi:10.1016/S0097-8485(96)80015-5].
 Recently, a CNN recognized promoter sequences with sensitivity and specificity exceeding 90% [@doi:10.1371/journal.pone.0171410].
 Most activity in computational prediction of regulatory regions, however, has moved to enhancer identification.
-Since one can identify promoters with straightforward biochemical assays [@doi:10.1073/pnas.2136655100 @doi:10.1101/gr.110254.110], the direct rewards of promoter prediction alone have decreased.
+Because one can identify promoters with straightforward biochemical assays [@doi:10.1073/pnas.2136655100 @doi:10.1101/gr.110254.110], the direct rewards of promoter prediction alone have decreased.
 But the reliable ground truth provided by these assays makes promoter identification an appealing test bed for deep learning approaches that can also identify enhancers.
 
 #### Enhancers
