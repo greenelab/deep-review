@@ -254,7 +254,7 @@ Promoters and enhancers provide a nexus where clusters of TFs and binding sites 
 The gold standard to identify an active promoter or enhancer requires demonstrating its ability to affect transcription or other downstream gene products.
 Even extensive biochemical TF binding data has thus far proven insufficient on its own to accurately and comprehensively locate promoters and enhancers.
 We lack sufficient understanding of these elements to derive a mechanistic "promoter code" or "enhancer code".
-But extensive labeled data on promoters and enhancers lends itself to probabilistic classifier.
+But extensive labeled data on promoters and enhancers lends itself to probabilistic classification.
 The complex interplay of TFs and chromatin leading to the emergent properties of promoter and enhancer activity seems particularly apt for capture by deep neural networks.
 
 #### Promoters
