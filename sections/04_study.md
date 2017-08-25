@@ -294,7 +294,7 @@ To drive further progress in enhancer identification, we must develop a common a
 
 In addition to the location of enhancers, identifying enhancer-promoter interactions in three-dimensional space will provide critical knowledge for understanding transcriptional regulation.
 SPEID used a CNN to predicted these interactions with only sequence and the location of putative enhancers and promoters along a one-dimensional chromosome [@doi:10.1101/085241].
-It compared well to other methods using a full complement biochemical data from ChIP-seq and other epigenomic methods.
+It compared well to other methods using a full complement of biochemical data from ChIP-seq and other epigenomic methods.
 Of course, the putative enhancers and promoters used were themselves derived from epigenomic methods.
 But one could easily replace them with the output of one of the enhancer or promoter prediction methods above.
 
