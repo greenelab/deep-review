@@ -255,7 +255,7 @@ The gold standard to identify an active promoter or enhancer requires demonstrat
 Even extensive biochemical TF binding data has thus far proven insufficient on its own to accurately and comprehensively locate promoters and enhancers.
 We lack sufficient understanding of these elements to derive a mechanistic "promoter code" or "enhancer code".
 But extensive labeled data on promoters and enhancers lends itself to probabilistic classification.
-The complex interplay of TFs and chromatin leading to the emergent properties of promoter and enhancer activity seems particularly apt for capture by deep neural networks.
+The complex interplay of TFs and chromatin leading to the emergent properties of promoter and enhancer activity seems particularly apt for representation by deep neural networks.
 
 #### Promoters
 
