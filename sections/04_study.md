@@ -283,9 +283,9 @@ DECRES had difficulty distinguishing between inactive enhancers and promoters.
 They also investigated the power of sequence features to drive classification, finding that beyond CpG islands, few were useful.
 
 Comparing the performance of enhancer prediction methods illustrates the problems in using metrics created with different benchmarking procedures.
-Both the Basset and DeepEnhancer studies include comparisons to a baseline SVM approach, gkmSVM [@doi:10.1371/journal.pcbi.1003711].
-The Basset study reports gkmSVM attains a mean auPRC of 0.322 over 164 cell types [@doi:10.1101/gr.200535.115].
-The DeepEnhancer study reports for gkmSVM a dramatically different auPRC of 0.899 on nine cell types [@tag:Min2016_deepenhancer].
+Both the Basset and DeepEnhancer studies include comparisons to a baseline SVM approach, gkm-SVM [@doi:10.1371/journal.pcbi.1003711].
+The Basset study reports gkm-SVM attains a mean auPRC of 0.322 over 164 cell types [@doi:10.1101/gr.200535.115].
+The DeepEnhancer study reports for gkm-SVM a dramatically different auPRC of 0.899 on nine cell types [@tag:Min2016_deepenhancer].
 This large difference means it's impossible to directly compare the performance of Basset and DeepEnhancer based solely on their reported metrics.
 DECRES used a different set of metrics altogether.
 To drive further progress in enhancer identification, we must develop a common and comparable benchmarking procedure (see Discussion).
