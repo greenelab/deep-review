@@ -886,7 +886,7 @@ a large number of trajectories requires powerful and flexible feature
 construction methods -- an area in which deep neural networks excel.
 
 
-﻿## Deep learning to study the fundamental biological processes underlying human disease
+## Deep learning to study the fundamental biological processes underlying human disease
 
 The study of cellular structure and core biological processes -- transcription,
 translation, signaling, metabolism, etc. -- in humans and model organisms will
@@ -1127,114 +1127,62 @@ this was easy to simulate with a computational model. As we learn to better
 visualize and analyze the hidden nodes within deep learning models, our
 understanding of TF binding motifs and dynamics will likely improve.
 
-### Promoters, enhancers, and related epigenomic features
+### Promoters and enhancers
 
-Transcriptional control is undoubtedly a vital, early part of the regulation of
-gene expression. An abundance of sequence and associated functional data (e.g.
-ENCODE [@15J98V2qM] and ExAC [@fSpvdh5l]) exists
-across species. At the same time, studies of gene regulation have often focused
-on the protein (binding) rather than the promoter level
-[@19jjiGHWc], perhaps due to the ill-defined nature of
-_cis_-regulatory elements (CREs). A promoter itself can be seen as an assemblage
-of "active" binding sites for transcription factors interspersed by
-less-characterized and perhaps functionally silent spacer regions. However, the
-sequence signals that control the start and stop of transcription and
-translation are still not well understood, compounded by incomplete
-understanding of alternative transcripts and the context for these alternatives.
-Sequence similarity is poor even between functionally correlated genes. While
-homologs might be studied for insight, they may not exist or may be just as
-poorly characterized.
+#### From TF binding to promoters and enhancers
 
-Recognizing enhancers presents additional challenges. Enhancers may be up to one
-million base pairs upstream or downstream from the affected promoter on either
-strand and even within the introns of other genes [@8yA3foA6]. They
-do not necessarily operate on the nearest gene and may affect multiple genes.
-Their activity is frequently tissue- or context-specific. Many
-enhancers display modest or no conservation across species. There is no
-universal enhancer sequence signal or marker for enhancers, and some literature
-suggests that enhancers and promoters may be just categories along a spectrum
-[@J0PJHcHK]. One study [@5zmE7Qkb] even
-showed that only 33% of predicted regulatory regions could be validated, while a
-class of "weak" predicted enhancers were strong drivers of expression. Yet there
-is growing evidence for their vast ubiquity, making them possibly the
-predominant functional non-coding element. Thus, identifying enhancers is
-critical yet the search space is large.
+Multiple TFs act in concert to coordinate changes in gene regulation at the genomic regions known as promoters and enhancers.
+Each gene has an upstream promoter, essential for initiating that gene's transcription.
+The gene may also interact with multiple enhancers, which can amplify transcription in particular cellular contexts.
+These contexts include different cell types in development or environmental stresses.
 
-While previous (non-deep learning) approaches have steadily improved
-promoter prediction, there is little consensus on the best approach and
-performance is poor. Typically algorithms will recognize only half of all
-promoters, with an accompanying high false positive rate
-[@huFxo9OA]. Methods with better sensitivity generally do so at
-the cost of poorer specificity. Conventional identification of enhancers has
-leaned heavily on simple conservation or laborious experimental techniques, with
-only moderate sensitivity and specificity. For example, while chromatin
-accessibility has often been used for identifying enhancers, this also
-"recognizes" a wide variety of other functional elements, like promoters,
-silencers, and repressors.
+Promoters and enhancers provide a nexus where clusters of TFs and binding sites mediate downstream gene regulation, starting with transcription.
+The gold standard to identify an active promoter or enhancer requires demonstrating its ability to affect transcription or other downstream gene products.
+Even extensive biochemical TF binding data has thus far proven insufficient on its own to accurately and comprehensively locate promoters and enhancers.
+We lack sufficient understanding of these elements to derive a mechanistic "promoter code" or "enhancer code".
+But extensive labeled data on promoters and enhancers lends itself to probabilistic classification.
+The complex interplay of TFs and chromatin leading to the emergent properties of promoter and enhancer activity seems particularly apt for representation by deep neural networks.
 
-The complex nature of CREs and our lack of understanding makes them a natural
-candidate for deep learning approaches. Indeed, neural networks were used for
-promoter recognition as early as 1996, albeit with mixed results
-[@3Ew5V1iC]. Since then, there has been much work in
-applying deep learning to this area, although little in the way of comparative
-studies or formal benchmarks. We therefore focus on a few recent important
-studies to outline the state of the art and extant problems.
+#### Promoters
 
-Basset [@2CbHXoFn] trained CNNs on DNA accessibility datasets,
-getting a marked improvement on previous methods, albeit still with a high false
-positive rate. The multi-task architecture resembles DeepSEA
-[@2UI1BZuD], which predicted open chromatin regions and histone
-modifications in addition to TF binding. As noted above, predicting DNA
-accessibility conflates enhancers with other functional sites. Basset also
-featured a useful interpretability approach, introducing known protein binding
-motifs into sequences and measuring the change in predicted accessibility.
+Despite decades of work, computational identification of promoters remains a stubborn problem [@19jjiGHWc].
+Researchers have used neural networks for promoter recognition as early as 1996 [@3Ew5V1iC].
+Recently, a CNN recognized promoter sequences with sensitivity and specificity exceeding 90% [@as2HfoSh].
+Most activity in computational prediction of regulatory regions, however, has moved to enhancer identification.
+Because one can identify promoters with straightforward biochemical assays [@9XBPQ8b; @G0J9P3Ln], the direct rewards of promoter prediction alone have decreased.
+But the reliable ground truth provided by these assays makes promoter identification an appealing test bed for deep learning approaches that can also identify enhancers.
 
-Umarov et al. [@as2HfoSh] demonstrated the use of CNNs
-in recognizing promoter sequences, outperforming conventional methods
-(sensitivity and specificity exceeding 90%). While some results were achieved
-over bacterial promoters (which are considerably simpler in structure), roughly
-similar performance was found for human promoters. This work also included a
-simple method for model interpretation, randomly substituting bases in a
-recognized promoter region, then checking for a change in recognition (see
-Discussion).
+#### Enhancers
 
-Xu et al. [@jV2YerUS] applied CNNs to the detection of
-enhancers, achieving incremental improvements in specificity and sensitivity
-over a previous SVM-based approach, and much better performance for
-cell-specific enhancers. A massive improvement in speed was also achieved.
-Additionally, they compared the performance of different CNN architectures,
-finding that while layers for batch normalization improved performance, deeper
-architectures decreased performance.
+Recognizing enhancers presents additional challenges.
+Enhancers may be up to 1,000,000 bp away from the affected promoter, and even within introns of other genes [@8yA3foA6].
+Enhancers do not necessarily operate on the nearest gene and may affect multiple genes.
+Their activity is frequently tissue- or context-specific.
+No biochemical assay can reliably identify all enhancers.
+Distinguishing them from other regulatory elements remains difficult, and some believe the distinction somewhat artificial [@J0PJHcHK].
+While these factors make the enhancer identification problem more difficult, they also make a solution more valuable.
 
-Singh et al. [@14TqLB9iZ] approached the problem of predicting
-enhancer-promoter interactions from solely the sequence and location of putative
-enhancers and promoters in a particular cell type. Performance was comparative
-to state-of-the-art conventional techniques that used the whole gamut of full
-functional genomic and non-sequence data.
+Several neural network approaches yielded promising results in enhancer prediction.
+Both Basset [@2CbHXoFn] and DeepEnhancer [@jV2YerUS] used CNNs to predict enhancers.
+DECRES used a feed-forward neural network [@1HbQQcY2q] to distinguish between different kinds of regulatory elements, such as active enhancers, and promoters.
+DECRES had difficulty distinguishing between inactive enhancers and promoters.
+They also investigated the power of sequence features to drive classification, finding that beyond CpG islands, few were useful.
 
-Given the conflation between different CREs, the study of Li et al.
-[@1HbQQcY2q] is particularly interesting.  They used a feed-forward
-neural network to distinguish classes of CREs and activity states. Active
-enhancers and promoters could be easily be distinguished, as could active and
-inactive elements. Perhaps unsurprisingly, it was difficult to distinguish
-between inactive enhancers and promoters. They also investigated the power of
-sequence features to drive classification, finding that beyond CpG islands, few
-were useful.
+Comparing the performance of enhancer prediction methods illustrates the problems in using metrics created with different benchmarking procedures.
+Both the Basset and DeepEnhancer studies include comparisons to a baseline SVM approach, gkm-SVM [@JxuQvvyk].
+The Basset study reports gkm-SVM attains a mean auPRC of 0.322 over 164 cell types [@2CbHXoFn].
+The DeepEnhancer study reports for gkm-SVM a dramatically different auPRC of 0.899 on nine cell types [@jV2YerUS].
+This large difference means it's impossible to directly compare the performance of Basset and DeepEnhancer based solely on their reported metrics.
+DECRES used a different set of metrics altogether.
+To drive further progress in enhancer identification, we must develop a common and comparable benchmarking procedure (see Discussion).
 
-In summary, deep learning is a promising approach for identifying CREs, able to
-interrogate sequence features that are complex and ill-understood, already
-offering marked improvements on the prior state of the art. However, neural
-network architectures for this task need to be systematically compared. The
-challenges in predicting TF binding -- such as the lack of large gold standard
-datasets, model interpretation, and defining negative examples -- are pertinent
-to CRE identification as well. Furthermore, the quality and meaning of training
-data needs to be closely considered, given that a "promoter" or "enhancer" may
-only be putative or dependent on the experimental method or context of
-identification. Otherwise we risk building detectors not for CREs but putative
-CREs. Most deep learning studies in this area currently predict the 1D location
-of enhancers, but modeling 3D chromatin conformations, enhancer-promoter
-interactions [@14TqLB9iZ], and enhancer-target gene interactions will
-be critical for understanding transcriptional regulation.
+#### Promoter-enhancer interactions
+
+In addition to the location of enhancers, identifying enhancer-promoter interactions in three-dimensional space will provide critical knowledge for understanding transcriptional regulation.
+SPEID used a CNN to predicted these interactions with only sequence and the location of putative enhancers and promoters along a one-dimensional chromosome [@14TqLB9iZ].
+It compared well to other methods using a full complement of biochemical data from ChIP-seq and other epigenomic methods.
+Of course, the putative enhancers and promoters used were themselves derived from epigenomic methods.
+But one could easily replace them with the output of one of the enhancer or promoter prediction methods above.
 
 ### Micro-RNA binding
 
@@ -2834,7 +2782,7 @@ To facilitate citation, we [defined](https://github.com/greenelab/deep-review/bl
 We supported citations to the following identifier types (in order of preference): DOIs, PubMed IDs, arXiv IDs, and URLs.
 References were automatically generated from citation metadata by querying APIs to generate [Citation Style Language](http://citationstyles.org/) (CSL) JSON items for each reference.
 [Pandoc](http://pandoc.org/) and [pandoc-citeproc](https://github.com/jgm/pandoc-citeproc) converted the markdown to HTML and PDF, while rendering the formatted citations and references.
-In total, referenced works consisted of 281 DOIs, 5 PubMed records, 108 arXiv manuscripts, and 39 URLs (webpages as well as manuscripts lacking standardized identifiers).
+In total, referenced works consisted of 280 DOIs, 5 PubMed records, 108 arXiv manuscripts, and 39 URLs (webpages as well as manuscripts lacking standardized identifiers).
 
 We implemented continuous analysis so the manuscript was automatically regenerated whenever the source changed [@Qh7xTLwz].
 We configured Travis CI -- a continuous integration service -- to fetch new citation metadata and rebuild the manuscript for every commit.

@@ -77,7 +77,6 @@ text	citation	standard_citation	citation_id
 @doi:10.1037/h0037350	doi:10.1037/h0037350	doi:10.1037/h0037350	cpNVdlL7
 @doi:10.1038/484155a	doi:10.1038/484155a	doi:10.1038/484155a	1FjSxrV1k
 @doi:10.1038/nature14539	doi:10.1038/nature14539	doi:10.1038/nature14539	BeijBSRE
-@doi:10.1038/nature19057	doi:10.1038/nature19057	doi:10.1038/nature19057	fSpvdh5l
 @doi:10.1038/nature21056	doi:10.1038/nature21056	doi:10.1038/nature21056	XnYNYoYB
 @doi:10.1038/nbt.3313	doi:10.1038/nbt.3313	doi:10.1038/nbt.3313	yXqhuueV
 @doi:10.1038/nbt.3780	doi:10.1038/nbt.3780	doi:10.1038/nbt.3780	Qh7xTLwz
@@ -102,6 +101,7 @@ text	citation	standard_citation	citation_id
 @doi:10.1056/NEJMe1516564	doi:10.1056/NEJMe1516564	doi:10.1056/nejme1516564	o0F1MXBC
 @doi:10.1056/NEJMp1006304	doi:10.1056/NEJMp1006304	doi:10.1056/nejmp1006304	VOQtVhWs
 @doi:10.1073/pnas.0805923106	doi:10.1073/pnas.0805923106	doi:10.1073/pnas.0805923106	kboAopkh
+@doi:10.1073/pnas.2136655100	doi:10.1073/pnas.2136655100	doi:10.1073/pnas.2136655100	9XBPQ8b
 @doi:10.1080/17460441.2016.1201262	doi:10.1080/17460441.2016.1201262	doi:10.1080/17460441.2016.1201262	xPkT1z7D
 @doi:10.1083/jcb.201610026	doi:10.1083/jcb.201610026	doi:10.1083/jcb.201610026	McjXFLLq
 @doi:10.1086/512821	doi:10.1086/512821	doi:10.1086/512821	10shRODux
@@ -136,12 +136,10 @@ text	citation	standard_citation	citation_id
 @doi:10.1101/095794	doi:10.1101/095794	doi:10.1101/095794	9G9Hv1Pp
 @doi:10.1101/125229	doi:10.1101/125229	doi:10.1101/125229	2M3zXijc
 @doi:10.1101/138685	doi:10.1101/138685	doi:10.1101/138685	1CAw3FaPI
-@doi:10.1101/gr.173518.114	doi:10.1101/gr.173518.114	doi:10.1101/gr.173518.114	5zmE7Qkb
+@doi:10.1101/gr.110254.110	doi:10.1101/gr.110254.110	doi:10.1101/gr.110254.110	G0J9P3Ln
 @doi:10.1101/gr.200535.115	doi:10.1101/gr.200535.115	doi:10.1101/gr.200535.115	2CbHXoFn
-@doi:10.1101/gr.7.9.861	doi:10.1101/gr.7.9.861	doi:10.1101/gr.7.9.861	huFxo9OA
 @doi:10.1103/RevModPhys.34.135	doi:10.1103/RevModPhys.34.135	doi:10.1103/revmodphys.34.135	1G5eCiq4d
 @doi:10.1109/BIBM.2014.6999129	doi:10.1109/BIBM.2014.6999129	doi:10.1109/bibm.2014.6999129	TeIxEjqm
-@doi:10.1109/BIBM.2016.7822593	doi:10.1109/BIBM.2016.7822593	doi:10.1109/bibm.2016.7822593	jV2YerUS
 @doi:10.1109/TCBB.2014.2343960	doi:10.1109/TCBB.2014.2343960	doi:10.1109/tcbb.2014.2343960	ZzaRyGuJ
 @doi:10.1109/icnn.1994.374637	doi:10.1109/icnn.1994.374637	doi:10.1109/icnn.1994.374637	YUms527e
 @doi:10.1109/tcbb.2014.2343960	doi:10.1109/tcbb.2014.2343960	doi:10.1109/tcbb.2014.2343960	ZzaRyGuJ
@@ -170,6 +168,7 @@ text	citation	standard_citation	citation_id
 @doi:10.1371/journal.pbio.1001661	doi:10.1371/journal.pbio.1001661	doi:10.1371/journal.pbio.1001661	dKwyEWWF
 @doi:10.1371/journal.pbio.1002195	doi:10.1371/journal.pbio.1002195	doi:10.1371/journal.pbio.1002195	13bxiY1vo
 @doi:10.1371/journal.pcbi.1002957	doi:10.1371/journal.pcbi.1002957	doi:10.1371/journal.pcbi.1002957	5tvnB4uW
+@doi:10.1371/journal.pcbi.1003711	doi:10.1371/journal.pcbi.1003711	doi:10.1371/journal.pcbi.1003711	JxuQvvyk
 @doi:10.1371/journal.pcbi.1003889	doi:10.1371/journal.pcbi.1003889	doi:10.1371/journal.pcbi.1003889	F13xtRbV
 @doi:10.1371/journal.pcbi.1005135	doi:10.1371/journal.pcbi.1005135	doi:10.1371/journal.pcbi.1005135	1SIuofeg
 @doi:10.1371/journal.pcbi.1005177	doi:10.1371/journal.pcbi.1005177	doi:10.1371/journal.pcbi.1005177	40EG4ZEU
