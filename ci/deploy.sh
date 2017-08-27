@@ -8,7 +8,7 @@ envsubst < webpage/README.md > webpage/README-complete.md
 mv webpage/README-complete.md webpage/README.md
 
 # Generate OpenTimestamps
-python ci/opentimestamps-client/ots stamp \
+ots stamp \
   webpage/index.html \
   webpage/manuscript.pdf
 
