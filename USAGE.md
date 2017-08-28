@@ -7,7 +7,7 @@ This repository uses the [Manubot](https://github.com/greenelab/manubot) to auto
 Manuscript text should be written in markdown files, which should be located in [`content`](content) with a digit prefix for ordering (e.g. `01.`, `02.`, etc.) and a `.md` extension.
 
 For basic formatting, check out the [CommonMark Help](http://commonmark.org/help/) page for an introduction to the formatting options provided by standard markdown.
-In addition, manubot supports an extended version of markdown, tailored for scholarly writing.
+In addition, manubot supports an extended version of markdown, tailored for scholarly writing, which includes [Pandoc's Markdown](http://pandoc.org/MANUAL.html#pandocs-markdown) and the extensions discussed below.
 
 Within a paragraph in markdown, single newlines are interpreted as whitespace (same as a space).
 A paragraph's source does not need to contain newlines.
@@ -140,3 +140,15 @@ funders: GBMF4552  # optional
 ## Manubot feedback
 
 If you experience any issues with the Manubot or would like to contribute to its source code, please visit [`greenelab/manubot`](https://github.com/greenelab/manubot) or [`greenelab/manubot-rootstock`](https://github.com/greenelab/manubot-rootstock).
+
+## Examples
+
+For additional examples, check out existing manuscripts that use the Manubot:
+
++ The Sci-Hub Coverage Study ([source](https://github.com/greenelab/scihub-manuscript), [manuscript](https://greenelab.github.io/scihub-manuscript/))
++ A Report for the Vagelos Scholars Program by Michael Zietz ([source](https://github.com/zietzm/Vagelos2017), [manuscript](https://zietzm.github.io/Vagelos2017/))
++ The Deep Review ([source](https://github.com/greenelab/deep-review), [manuscript](https://greenelab.github.io/deep-review/))
++ The Meta Review ([source](https://github.com/greenelab/meta-review), [manuscript](https://greenelab.github.io/meta-review/))
++ A Response to Reviewers by David Slochower ([source](https://github.com/slochower/motor-like-properties-response), [manuscript](https://slochower.github.io/motor-like-properties-response/))
+
+If you are using the Manubot, feel free to submit a pull request to add your manuscript to the list above.
