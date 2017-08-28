@@ -73,3 +73,5 @@ then
     $INPUT_PATH
     rm --recursive images
 fi
+
+echo "Build complete"

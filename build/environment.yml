@@ -10,6 +10,7 @@ dependencies:
   - anaconda::requests=2.14.2
   - bioconda::wkhtmltopdf=0.12.3
   - conda-forge::pandoc=1.19.2
+  - conda-forge::watchdog=0.8.3
   - pip:
     - errorhandler==2.0.1
     - ghp-import==0.5.5

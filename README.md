@@ -41,6 +41,10 @@ source activate manubot
 # Build the manuscript
 sh build/build.sh
 
+# Or monitor the content directory, and automatically rebuild the manuscript
+# when a change is detected.
+sh build/autobuild.sh
+
 # View the manuscript locally at http://localhost:8000/
 cd webpage
 python -m http.server
