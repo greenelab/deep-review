@@ -149,6 +149,6 @@ For additional examples, check out existing manuscripts that use the Manubot:
 + A Report for the Vagelos Scholars Program by Michael Zietz ([source](https://github.com/zietzm/Vagelos2017), [manuscript](https://zietzm.github.io/Vagelos2017/))
 + The Deep Review ([source](https://github.com/greenelab/deep-review), [manuscript](https://greenelab.github.io/deep-review/))
 + The Meta Review ([source](https://github.com/greenelab/meta-review), [manuscript](https://greenelab.github.io/meta-review/))
-+ A Response to Reviewers by David Slochower ([source](https://github.com/slochower/motor-like-properties-response), [manuscript](https://slochower.github.io/motor-like-properties-response/))
++ A Literature Review for Project Planning by David Slochower ([source](https://github.com/slochower/synthetic-motor-literature), [manuscript](https://slochower.github.io/synthetic-motor-literature/))
 
 If you are using the Manubot, feel free to submit a pull request to add your manuscript to the list above.

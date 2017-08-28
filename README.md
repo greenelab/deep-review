@@ -12,8 +12,8 @@ Fork it and a manuscript will grow.
 The most current version of the `master` branch is built by continuous integration and [available via gh-pages](https://greenelab.github.io/manubot-rootstock/).
 To see what's incoming, check the [open pull requests](https://github.com/greenelab/manubot-rootstock/pulls).
 
-Instructions for using Manubot Rootstock for your own manuscript are still evolving.
-The recommended approach is to clone this repository, as detailed [here](https://github.com/greenelab/manubot-rootstock/issues/6#issuecomment-314541837).
+See [`SETUP.md`](SETUP.md) for instruction on how to initialize a manuscript by cloning manubot-rootstock.
+While this process is a bit involved, it must only be done once per manuscript.
 
 ## Repository directories & files
 
