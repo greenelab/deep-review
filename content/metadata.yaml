@@ -1,36 +1,23 @@
 ---
 title: "Manubot Rootstock: Manuscript Title"
 keywords:
-  - work-in-progress
   - markdown
-  - manuscript
   - publishing
+  - manubot
 author_info:
   -
-    github: dhimmel
-    name: Daniel S. Himmelstein
-    initials: DSH
-    orcid: 0000-0002-3012-7446
-    twitter: dhimmel
-    email: daniel.himmelstein@gmail.com
-    affiliations: Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania
-    funders: GBMF4552
+    github: johndoe
+    name: John Doe
+    initials: JD
+    orcid: XXXX-XXXX-XXXX-XXXX
+    twitter: johndoe
+    email: john.doe@something.com
+    affiliations: Department of Something, University of Whatever
+    funders: Grant XXXXXXXX
   -
-    github: agitter
-    name: Anthony Gitter
-    initials: AG
-    orcid: 0000-0002-5324-9833
-    email: gitter@biostat.wisc.edu
-    affiliations: Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison and Morgridge Institute for Research
-    funders: NIH U54AI117924
-  -
-    github: vsmalladi
-    name: Venkat S. Malladi
-    initials: VSM
-    orcid: 0000-0002-0144-0564
-    email: vsmalladi@gmail.com
-    affiliations: The Laboratory of Signaling and Gene Expression, Cecil H. and Ida Green Center for Reproductive Biology Sciences, University of Texas Southwestern Medical Center
-  -
-    github: evancofer
-    name: Evan M. Cofer
-    initials: EMC
+    github: janeroe
+    name: Jane Roe
+    initials: JR
+    orcid: XXXX-XXXX-XXXX-XXXX
+    email: jane.roe@whatever.edu
+    affiliations: Department of Whatever, University of Something
