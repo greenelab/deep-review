@@ -14,7 +14,7 @@ dependencies:
   - pip:
     - errorhandler==2.0.1
     - ghp-import==0.5.5
-    - git+https://github.com/greenelab/manubot@33e512d21218263423de5f0d127aac4f8635468f
+    - git+https://github.com/greenelab/manubot@367f0b5c8046e5ce2f1e5a0ef555ec29a4aefd59
     - opentimestamps-client==0.5.0
     - opentimestamps==0.1.0
     - pandoc-eqnos==0.16

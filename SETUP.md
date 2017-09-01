@@ -73,6 +73,7 @@ echo https://github.com/$OWNER/$REPO/settings/keys
 ```
 
 Manually add `deploy.key.pub` (with write access) to GitHub under the repository's deploy key settings (the URL echoed above).
+Give the key a descriptive title, such as "Travis CI Manubot".
 
 For the next step, you need the [Travis command line client](https://github.com/travis-ci/travis.rb) installed.
 This program is a Ruby gem:
@@ -103,6 +104,14 @@ TRAVIS_ENCRYPT_ID=`grep \
 sed --in-place "s/f2f00aaf6402/$TRAVIS_ENCRYPT_ID/g" deploy.sh
 ```
 
+Next, limit [concurrent](https://blog.travis-ci.com/2014-07-18-per-repository-concurrency-setting/) Travis CI jobs to ensure previous builds deploy before subsequent ones begin:
+
+```sh
+travis settings \
+  --repo=$OWNER/$REPO \
+  maximum_number_of_builds --set 1
+```
+
 The continuous integration configuration is now complete.
 Clean up:
 
@@ -123,11 +132,14 @@ Now update `README.md` files to reference the new repository:
 # Perform substitutions
 sed --in-place "s/greenelab/$OWNER/g" README.md
 sed --in-place "s/manubot-rootstock/$REPO/g" README.md
+
+# Remove deletable content file
+git rm content/02.delete-me.md
 ```
 
 ## Finalize
 
-Run `git status` or `git diff` to check that the following files have unstaged changes:
+Run `git status` or `git diff --word-diff` to check that the following files have unstaged changes:
 
 + `README.md`
 + `ci/deploy.key.enc`
