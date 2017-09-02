@@ -97,15 +97,15 @@ skipping subsets of exons or including parts of introns, creating enormous
 spatiotemporal flexibility to generate multiple distinct proteins from a single
 gene. This remarkable complexity can lend itself to defects that underlie many
 diseases. For instance, splicing mutations in the lamin A (*LMNA*) gene can lead to specific
-variants of dilated cardiomyopathy and limb girdle muscular dystrophy 
-[@tag:Scotti2016_missplicing]. 
+variants of dilated cardiomyopathy and limb girdle muscular dystrophy
+[@tag:Scotti2016_missplicing].
 A recent study found that quantitative trait loci
 that affect splicing in lymphoblastoid cell lines are enriched within risk loci
 for schizophrenia, multiple sclerosis, and other immune diseases, implicating
 mis-splicing as a more widespread feature of human pathologies than previously
 thought [@tag:Li2016_variation]. Therapeutic strategies that aim to modulate
 splicing are also currently being considered for disorders such as Duchenne muscular dystrophy
-and spinal muscular atrophy [@tag:Scotti2016_missplicing]. 
+and spinal muscular atrophy [@tag:Scotti2016_missplicing].
 
 Sequencing studies routinely return thousands of unannotated variants, but which
 cause functional changes in splicing and how are those changes manifested?
@@ -525,9 +525,11 @@ types where the subset percentage ranged from 0.1 to 1%, significantly
 outperforming logistic regression and distance-based outlier detection methods.
 However, they did not benchmark against random forests, which tend to work
 better for imbalanced data, and their data was relatively low dimensional.
-Future work is needed to establish the utility of deep learning in cell subset
-identification, but the stunning improvements in image classification over the
-past 5 years [@tag:He2015_images] suggest transformative potential.
+
+Neural networks can also learn meaningful low dimensional representations of single cell expression data [@doi:10.1093/nar/gkx681 @doi:10.1101/178624], which can be used to identify cellular subpopulations or match new cells to known cell types.
+Lin et al. [@doi:10.1093/nar/gkx681] demonstrated that the hidden layer features from a neural network trained to predict cell type are informative for clustering and cell type queries, similar to transfer learning approaches for microscopy images [@doi:10.1101/085118].
+Because batch effects are a major concern in single cell expression data, they assessed whether cell types could be matched across datasets from independent labs and studies.
+The supervised neural network's features were better overall for retrieving cell types than alternative expression data representations, but all methods struggled to recover certain cell types such as hematopoietic stem cells and inner cell mass cells.
 
 The sheer quantity of omic information that can be obtained from each cell, as
 well as the number of cells in each dataset, uniquely position single-cell data
