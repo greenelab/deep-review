@@ -166,7 +166,7 @@ This process can be difficult, especially if conflicts have arisen, and is recom
 First, pull the new commits from manubot-rootstock, but do not automerge:
 
 ```sh
-git pull --no-ff --no-commit rootstock/master
+git pull --no-ff --no-commit rootstock master
 ```
 
 If all goes well, there won't be any conflicts.
