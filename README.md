@@ -117,7 +117,7 @@ For continuous integration configuration details, see [`.travis.yml`](.travis.ym
 [![License: CC BY 4.0](https://img.shields.io/badge/License%20All-CC%20BY%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by/4.0/)
 [![License: CC0 1.0](https://img.shields.io/badge/License%20Parts-CC0%201.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
-This entirety of this repository is licensed under a CC BY 4.0 License ([`LICENSE.md`](LICENSE.md)), which allows reuse with attribution.
+Except when noted otherwise, the entirety of this repository is licensed under a CC BY 4.0 License ([`LICENSE.md`](LICENSE.md)), which allows reuse with attribution.
 Please attribute by linking to https://github.com/greenelab/deep-review.
 
 Since CC BY is not ideal for code and data, certain repository components are also released under the CC0 1.0 public domain dedication ([`LICENSE-CC0.md`](LICENSE-CC0.md)).
@@ -136,5 +136,10 @@ All other files are only available under CC BY 4.0, including:
 + `*.md`
 + `*.html`
 + `*.pdf`
+
+Except for the following files with different licenses:
+
++ `build/assets/anchors.js` which is [released](https://www.bryanbraun.com/anchorjs/)
+  under an [MIT License](https://opensource.org/licenses/MIT)
 
 Please open [an issue](https://github.com/greenelab/deep-review/issues) for any question related to licensing.
