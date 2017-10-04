@@ -66,6 +66,8 @@ For example, the following will override the figure number to be "S1" and set th
 {#fig:supplement tag="S1" width="5in"}
 ```
 
+We recommend always specifying the width of SVG images (even if just `width="100%"`), since otherwise SVGs may not render properly in the [WeasyPrint](http://weasyprint.org/) PDF export.
+
 ### Citations
 
 Manubot supports Pandoc [citations](http://pandoc.org/MANUAL.html#citations) via `pandoc-citeproc`.

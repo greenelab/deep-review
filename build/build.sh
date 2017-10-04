@@ -44,13 +44,9 @@ pandoc --verbose \
 
 # Create PDF output
 echo "Exporting PDF manuscript"
-wkhtmltopdf \
-  --quiet \
-  --print-media-type \
-  --margin-top 21 \
-  --margin-bottom 17 \
-  --margin-left 0 \
-  --margin-right 0 \
+weasyprint \
+  --verbose \
+  --presentational-hints \
   webpage/index.html \
   output/manuscript.pdf
 

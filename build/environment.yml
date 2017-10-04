@@ -8,7 +8,8 @@ dependencies:
   - anaconda::python=3.6.2
   - anaconda::pyyaml=3.12
   - anaconda::requests=2.14.2
-  - bioconda::wkhtmltopdf=0.12.3
+  - conda-forge::cairo=1.14.6
+  - conda-forge::cffi=1.10.0
   - conda-forge::pandoc=1.19.2
   - conda-forge::watchdog=0.8.3
   - pip:
@@ -24,3 +25,4 @@ dependencies:
     - pysha3==1.0.2
     - python-bitcoinlib==0.8.0
     - requests-cache==0.4.13
+    - weasyprint==0.40
