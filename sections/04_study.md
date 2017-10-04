@@ -97,15 +97,15 @@ skipping subsets of exons or including parts of introns, creating enormous
 spatiotemporal flexibility to generate multiple distinct proteins from a single
 gene. This remarkable complexity can lend itself to defects that underlie many
 diseases. For instance, splicing mutations in the lamin A (*LMNA*) gene can lead to specific
-variants of dilated cardiomyopathy and limb girdle muscular dystrophy 
-[@tag:Scotti2016_missplicing]. 
+variants of dilated cardiomyopathy and limb girdle muscular dystrophy
+[@tag:Scotti2016_missplicing].
 A recent study found that quantitative trait loci
 that affect splicing in lymphoblastoid cell lines are enriched within risk loci
 for schizophrenia, multiple sclerosis, and other immune diseases, implicating
 mis-splicing as a more widespread feature of human pathologies than previously
 thought [@tag:Li2016_variation]. Therapeutic strategies that aim to modulate
 splicing are also currently being considered for disorders such as Duchenne muscular dystrophy
-and spinal muscular atrophy [@tag:Scotti2016_missplicing]. 
+and spinal muscular atrophy [@tag:Scotti2016_missplicing].
 
 Sequencing studies routinely return thousands of unannotated variants, but which
 cause functional changes in splicing and how are those changes manifested?
@@ -501,7 +501,8 @@ transcriptional states provides unprecedented views of regulatory processes
 However, large challenges exist in studying single cells. Relatively few cells
 can be assayed at once using current droplet, imaging, or microwell
 technologies, and low-abundance molecules or modifications may not be detected
-by chance due to a phenomenon known as dropout. To solve this problem,
+by chance due to a phenomenon known as dropout, not to confused with the dropout
+layer of deep learning. To solve this problem,
 Angermueller et al. [@tag:Angermueller2016_single_methyl] trained a neural
 network to predict the presence or absence of methylation of a specific CpG site
 in single cells based on surrounding methylation signal and underlying DNA

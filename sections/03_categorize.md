@@ -50,7 +50,7 @@ focus on barriers to achieving these goals. We also highlight approaches that
 researchers are taking to address challenges within the field, particularly with
 regards to data availability and labeling.
 
-### Imaging applications in healthcare
+### Imaging based patient categorization
 
 Deep learning methods have transformed the analysis of natural images and video,
 and similar examples are beginning to emerge with medical images. Deep learning
@@ -88,7 +88,7 @@ of certified dermatologists [@tag:Codella2016_ensemble_melanoma
 Reusing features from natural images is also an emerging approach for radiographic images,
 where datasets are often too small to train large deep neural networks without
 these techniques [@tag:Bar2015_nonmed_tl @tag:Shin2016_cad_tl
-@tag:Rajkomar2017_radiographs @tag:Lakhani2017_radiography]. 
+@tag:Rajkomar2017_radiographs @tag:Lakhani2017_radiography].
 A deep CNN trained on natural images
 boosts performance in radiographic images [@tag:Rajkomar2017_radiographs]. However, the target task required
 either re-training the initial model from scratch with special pre-processing or
@@ -110,8 +110,8 @@ small training sets. The practice is exemplified by a series of papers that
 analyze images from mammographies [@tag:Dhungel2015_struct_pred_mamm
 @tag:Dhungel2016_mamm @tag:Zhu2016_mult_inst_mamm @tag:Zhu2016_advers_mamm
 @tag:Dhungel2017_mamm_min_interv]. To expand the number and diversity of images,
-researchers constructed adversarial examples [@tag:Zhu2016_advers_mamm].
-Adversarial examples are constructed by applying a transformation that changes
+researchers constructed adversarial training examples [@tag:Zhu2016_advers_mamm].
+Adversarial training examples are constructed by applying a transformation that changes
 training images but not their content -- for example by rotating an image by a
 random amount. An alternative in the domain is to train towards human-created
 features before subsequent fine-tuning [@tag:Dhungel2016_mamm], which can help
@@ -346,6 +346,33 @@ methods, future work must continue to explore just how well the posterior
 distributions are approximated, especially as model complexity increases
 [@arxiv:1511.02386].
 
+
+### Applications of deep learning to longitudinal analysis
+
+Longitudinal analysis follows a population across time, for example,
+prospectively from birth or from the onset of particular conditions. In large
+patient populations, longitudinal analyses such as the Framingham Heart Study
+[@doi:10.1016/S0140-6736(13)61752-3] and the Avon Longitudinal Study of Parents
+and Children [@doi:10.1038/484155a] have yielded important discoveries about the
+development of disease and the factors contributing to health status. Yet, a
+common practice in EHR-based research is to take a snapshot at a point in time and
+convert patient data to a traditional vector for machine learning and
+statistical analysis. This results in loss of information as timing and order of
+events can provide insight into a patient's disease and treatment
+[@doi:10.2307/2281868]. Efforts to model sequences of events have shown promise
+[@doi:10.1038/ncomms5022] but require exceedingly large patient sizes due to
+discrete combinatorial bucketing. Lasko et al.
+[@doi:10.1371/journal.pone.0066341] used autoencoders on longitudinal sequences
+of serum urine acid measurements to identify population subtypes. More recently,
+deep learning has shown promise working with both sequences (CNNs)
+[@arxiv:1607.07519] and the incorporation of past and current state (RNNs,
+LSTMs) [@arxiv:1602.00357]. This may be a particular area of opportunity for
+deep neural networks. The ability to recognize relevant sequences of events from
+a large number of trajectories requires powerful and flexible feature
+construction methods -- an area in which deep neural networks excel.
+
+
+
 ### Challenges and opportunities in patient categorization
 
 #### Generating ground-truth labels can be expensive or impossible
@@ -384,15 +411,14 @@ can be used before overfitting occurs. For example, the unsupervised and
 semi-supervised methods that we have discussed reduce the need for labeled
 examples [@doi:10.1016/j.jbi.2016.10.007]. The anchor and learn framework
 [@doi:10.1093/jamia/ocw011] uses expert knowledge to identify high-confidence
-observations from which labels can be inferred. The adversarial training example
-strategies mentioned above can reduce overfitting, if transformations are
+observations from which labels can be inferred. The strategies of adversarial training example
+ mentioned above can reduce overfitting, if transformations are
 available that preserve the meaningful content of the data while transforming
 irrelevant features [@doi:10.1101/095786]. While adversarial training examples
 can be easily imagined for certain methods that operate on images, it is more
 challenging to figure out what an equivalent transformation would be for a
 patient's clinical test results. Consequently, it may be hard to employ
-adversarial training examples, not to be confused with generative adversarial
-neural networks, with other applications. Finally, approaches that transfer
+adversarial training examples with other applications. Finally, approaches that transfer
 features can also help use valuable training data most efficiently. Rajkomar et
 al. trained a deep neural network using generic images before tuning using only
 radiology images [@doi:10.1007/s10278-016-9914-9]. Datasets that require many of
@@ -402,22 +428,26 @@ has not yet been attempted, it is possible that analogous strategies may be
 possible with electronic health records. For example, features learned from the
 electronic health record for one type of clinical test (e.g. a decrease over
 time in a lab value) may transfer across phenotypes.
-
-Methods to accomplish more with little high-quality labeled data are also being
-applied in other domains and may also be adapted to this challenge, e.g. data
+Methods to accomplish more with little high-quality labeled data arose
+in other domains and may also be adapted to this challenge, e.g. data
 programming [@arxiv:1605.07723]. In data programming, noisy automated labeling
-functions are integrated. Numerous writers have described data as the new oil
+functions are integrated.
+
+
+
+Numerous writers have described data as the new oil
 [@url:http://ana.blogs.com/maestros/2006/11/data_is_the_new.html
 @url:https://medium.com/twenty-one-hundred/data-is-the-new-oil-a-ludicrous-proposition-1d91bba4f294].
 The idea behind this metaphor is that data are available in large quantities,
-valuable once refined, and the underlying resource that will enable a
+valuable once refined, and this underlying resource  will enable a
 data-driven revolution in how work is done. Contrasting with this perspective,
-Ratner, Bach, and Ré described labeled training data as "The _New_ New Oil"
+Ratner, Bach, and Ré described labeled training data, instead of data, as "The _New_ New Oil"
 [@url:http://hazyresearch.github.io/snorkel/blog/weak_supervision.html]. In this
 framing, data are abundant and not a scarce resource. Instead, new approaches to
 solving problems arise when labeled training data become sufficient to enable
 them. Based on our review of research on deep learning methods to categorize
 disease, the latter framing rings true.
+
 
 We expect improved methods for domains with limited data to play an important
 role if deep learning is going to transform how we categorize states of human
@@ -618,10 +648,14 @@ Despite the difficulties and uncertainties, machine learning practitioners (and
 particularly those who use deep neural networks, which are challenging to
 interpret) must remain cognizant of these dangers and make every effort to
 prevent harm from discriminatory predictions. To reach their potential in this
-domain, deep learning methods will need to be interpretable. Researchers need to
+domain, deep learning methods will need to be interpretable (more in the discussion section). Researchers need to
 consider the extent to which biases may be learned by the model and whether or
 not a model is sufficiently interpretable to identify bias. We discuss the
 challenge of model interpretability more thoroughly in Discussion.
+<<<<<<< HEAD
+
+=======
+>>>>>>> greenelab/master
 
 #### Applications of deep learning to longitudinal analysis
 
@@ -646,3 +680,4 @@ LSTMs) [@arxiv:1602.00357]. This may be a particular area of opportunity for
 deep neural networks. The ability to recognize relevant sequences of events from
 a large number of trajectories requires powerful and flexible feature
 construction methods -- an area in which deep neural networks excel.
+>>>>>>> greenelab/master

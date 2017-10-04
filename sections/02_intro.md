@@ -23,6 +23,7 @@ algorithms have produced comparable or higher accuracy than previous
 best-in-class methods that required years of extensive customization, and
 specialized implementations are now being used at industrial scales.
 
+Deep learning is originated from the field of neural networks.
 Neural networks were first proposed in 1943 [@doi:10.1007/BF02478259] as a model
 for how our brains process information. The history of neural networks is
 interesting in its own right [@doi:10.1103/RevModPhys.34.135]. In neural
@@ -42,7 +43,7 @@ these steps. When sufficient data are available, these methods construct
 features tuned to a specific problem and combine those features into a
 predictor. Recently, hardware improvements and very
 large training datasets have allowed these deep learning techniques to surpass
-other machine learning algorithms for many problems.
+other machine learning algorithms for many important problems [@tag:Krizhevsky2013_nips_cnn @arxiv:1412.5567]. 
 
 Neural networks are most widely associated with supervised machine learning,
 where the goal is to accurately predict one or more labels associated with each
