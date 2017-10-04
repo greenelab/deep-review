@@ -45993,10 +45993,22 @@
     "standard_citation": "url:https://nihcc.app.box.com/v/ChestXray-NIHCC",
     "citeproc": {
       "URL": "https://nihcc.app.box.com/v/ChestXray-NIHCC",
-      "greycite-canonical-uri": null,
-      "title": "CXR8 | Powered By Box",
-      "greycite-status": "Scanned",
-      "greycite-scanned": "2017-10-04 06:03:53",
+      "title": "NIH Chest X-ray Dataset",
+      "issued": {
+        "date-parts": [
+          [
+            2017,
+            9,
+            7
+          ]
+        ]
+      },
+      "author": [
+        {
+          "family": "NIH Clinical Center",
+          "given": ""
+        }
+      ],
       "type": "webpage",
       "id": "odFR7ptt"
     },
