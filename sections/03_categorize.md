@@ -209,8 +209,9 @@ demonstrated that NegBio is highly accurate for detecting negative and equivocal
 findings (~90% in F-measure, which balances precision and recall
 [@doi:10.1038/nmeth.3945]). These highly-accurate results meet the need to
 generate a corpus with weak labels, which serves as a solid foundation for the
-later process of image classification. The resulting dataset consists of 108,948
-frontal-view chest X-ray images from 32,717 patients, and each image is
+later process of image classification. The resulting dataset 
+[@url:https://nihcc.app.box.com/v/ChestXray-NIHCC] consists of 112,120
+frontal-view chest X-ray images from 30,805 patients, and each image is
 associated with one or more weakly-labeled pathology category (e.g. pneumonia
 and cardiomegaly) or "normal" otherwise. Further, Wang et al.
 [@arxiv:1705.02315] used this dataset with a unified weakly-supervised
