@@ -450,8 +450,9 @@ demonstrated that NegBio is highly accurate for detecting negative and equivocal
 findings (~90% in F-measure, which balances precision and recall
 [@JmHFuXEM]). These highly-accurate results meet the need to
 generate a corpus with weak labels, which serves as a solid foundation for the
-later process of image classification. The resulting dataset consists of 108,948
-frontal-view chest X-ray images from 32,717 patients, and each image is
+later process of image classification. The resulting dataset 
+[@odFR7ptt] consists of 112,120
+frontal-view chest X-ray images from 30,805 patients, and each image is
 associated with one or more weakly-labeled pathology category (e.g. pneumonia
 and cardiomegaly) or "normal" otherwise. Further, Wang et al.
 [@PGi9g7yV] used this dataset with a unified weakly-supervised
@@ -2782,7 +2783,7 @@ To facilitate citation, we [defined](https://github.com/greenelab/deep-review/bl
 We supported citations to the following identifier types (in order of preference): DOIs, PubMed IDs, arXiv IDs, and URLs.
 References were automatically generated from citation metadata by querying APIs to generate [Citation Style Language](http://citationstyles.org/) (CSL) JSON items for each reference.
 [Pandoc](http://pandoc.org/) and [pandoc-citeproc](https://github.com/jgm/pandoc-citeproc) converted the markdown to HTML and PDF, while rendering the formatted citations and references.
-In total, referenced works consisted of 280 DOIs, 5 PubMed records, 108 arXiv manuscripts, and 39 URLs (webpages as well as manuscripts lacking standardized identifiers).
+In total, referenced works consisted of 280 DOIs, 5 PubMed records, 108 arXiv manuscripts, and 40 URLs (webpages as well as manuscripts lacking standardized identifiers).
 
 We implemented continuous analysis so the manuscript was automatically regenerated whenever the source changed [@Qh7xTLwz].
 We configured Travis CI -- a continuous integration service -- to fetch new citation metadata and rebuild the manuscript for every commit.

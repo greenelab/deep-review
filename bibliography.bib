@@ -350,28 +350,39 @@ models when training data is limited or unavailable.},
 
 
 @article{1FE0F2pQ,
- abstract = {Previous research has shown that neural networks can model survival data in
-situations in which some patients' death times are unknown, e.g.
-right-censored. However, neural networks have rarely been shown to outperform
-their linear counterparts such as the Cox proportional hazards model. In this
-paper, we run simulated experiments and use real survival data to build upon
-the risk-regression architecture proposed by Faraggi and Simon. We demonstrate
-that our model, DeepSurv, not only works as well as other survival models but
-actually outperforms in predictive ability on survival data with linear and
-nonlinear risk functions. We then show that the neural network can also serve
-as a recommender system by including a categorical variable representing a
-treatment group. This can be used to provide personalized treatment
-recommendations based on an individual's calculated risk. We provide an open
-source Python module that implements these methods in order to advance research
-on deep learning and survival analysis.},
+ abstract = {Medical practitioners use survival models to explore and understand the
+relationships between patients' covariates (e.g. clinical and genetic features)
+and the effectiveness of various treatment options. Standard survival models
+like the linear Cox proportional hazards model require extensive feature
+engineering or prior medical knowledge to model treatment interaction at an
+individual level. While nonlinear survival methods, such as neural networks and
+survival forests, can inherently model these high-level interaction terms, they
+have yet to be shown as effective treatment recommender systems. We introduce
+DeepSurv, a Cox proportional hazards deep neural network and state-of-the-art
+survival method for modeling interactions between a patient's covariates and
+treatment effectiveness in order to provide personalized treatment
+recommendations. We perform a number of experiments training DeepSurv on
+simulated and real survival data. We demonstrate that DeepSurv performs as well
+as or better than other state-of-the-art survival models and validate that
+DeepSurv successfully models increasingly complex relationships between a
+patient's covariates and their risk of failure. We then show how DeepSurv
+models the relationship between a patient's features and effectiveness of
+different treatment options to show how DeepSurv can be used to provide
+individual treatment recommendations. Finally, we train DeepSurv on real
+clinical studies to demonstrate how it's personalized treatment recommendations
+would increase the survival time of a set of patients. The predictive and
+modeling capabilities of DeepSurv will enable medical researchers to use deep
+neural networks as a tool in their exploration, understanding, and prediction
+of the effects of a patient's characteristics on their risk of failure.},
  archiveprefix = {arXiv},
  author = {Jared Katzman and Uri Shaham and Jonathan Bates and Alexander Cloninger and Tingting Jiang and Yuval Kluger},
- eprint = {1606.00931v2},
- file = {1606.00931v2.pdf},
+ eprint = {1606.00931v3},
+ file = {1606.00931v3.pdf},
  month = {Jun},
  primaryclass = {stat.ML},
- title = {Deep Survival: A Deep Cox Proportional Hazards Network},
- url = {https://arxiv.org/abs/1606.00931v2},
+ title = {DeepSurv: Personalized Treatment Recommender System Using A Cox
+Proportional Hazards Deep Neural Network},
+ url = {https://arxiv.org/abs/1606.00931v3},
  year = {2016}
 }
 
@@ -1078,16 +1089,17 @@ framework, which is validated using our proposed dataset. Although the initial
 quantitative results are promising as reported, deep convolutional neural
 network based "reading chest X-rays" (i.e., recognizing and locating the common
 disease patterns trained with only image-level labels) remains a strenuous task
-for fully-automated high precision CAD systems.},
+for fully-automated high precision CAD systems. Data download link:
+https://nihcc.app.box.com/v/ChestXray-NIHCC},
  archiveprefix = {arXiv},
  author = {Xiaosong Wang and Yifan Peng and Le Lu and Zhiyong Lu and Mohammadhadi Bagheri and Ronald M. Summers},
- eprint = {1705.02315v3},
- file = {1705.02315v3.pdf},
+ eprint = {1705.02315v4},
+ file = {1705.02315v4.pdf},
  month = {May},
  primaryclass = {cs.CV},
  title = {ChestX-ray8: Hospital-scale Chest X-ray Database and Benchmarks on
 Weakly-Supervised Classification and Localization of Common Thorax Diseases},
- url = {https://arxiv.org/abs/1705.02315v3},
+ url = {https://arxiv.org/abs/1705.02315v4},
  year = {2017}
 }
 
@@ -1772,13 +1784,13 @@ deployed on Facebook's machine learning platform. We present case studies with
 Facebook researchers and engineers, and usage scenarios of how ActiVis may work
 with different models.},
  archiveprefix = {arXiv},
- author = {Minsuk Kahng and Pierre Andrews and Aditya Kalro and Duen Horng Chau},
- eprint = {1704.01942v1},
- file = {1704.01942v1.pdf},
+ author = {Minsuk Kahng and Pierre Y. Andrews and Aditya Kalro and Duen Horng Chau},
+ eprint = {1704.01942v2},
+ file = {1704.01942v2.pdf},
  month = {Apr},
  primaryclass = {cs.HC},
  title = {ActiVis: Visual Exploration of Industry-Scale Deep Neural Network Models},
- url = {https://arxiv.org/abs/1704.01942v1},
+ url = {https://arxiv.org/abs/1704.01942v2},
  year = {2017}
 }
 
@@ -2285,18 +2297,17 @@ against a biological target. As a proof of principle, the model is first
 trained to generate molecules that do not contain sulphur. As a second example, the model is trained to generate analogues to the drug Celecoxib, a technique
 that could be used for scaffold hopping or library expansion starting from a
 single molecule. Finally, when tuning the model towards generating compounds
-predicted to be active against the dopamine receptor D2, the model generates
-structures of which more than 95% are predicted to be active, including
-experimentally confirmed actives that have not been included in either the
-generative model nor the activity prediction model.},
+predicted to be active against the dopamine receptor type 2, the model
+generates structures of which more than 95% are predicted to be active, including experimentally confirmed actives that have not been included in
+either the generative model nor the activity prediction model.},
  archiveprefix = {arXiv},
  author = {Marcus Olivecrona and Thomas Blaschke and Ola Engkvist and Hongming Chen},
- eprint = {1704.07555v1},
- file = {1704.07555v1.pdf},
+ eprint = {1704.07555v2},
+ file = {1704.07555v2.pdf},
  month = {Apr},
  primaryclass = {cs.AI},
  title = {Molecular De Novo Design through Deep Reinforcement Learning},
- url = {https://arxiv.org/abs/1704.07555v1},
+ url = {https://arxiv.org/abs/1704.07555v2},
  year = {2017}
 }
 
