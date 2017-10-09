@@ -105,7 +105,6 @@ All other files are only available under CC BY 4.0, including:
 
 Except for the following files with different licenses:
 
-+ `build/assets/anchors.js` which is [released](https://www.bryanbraun.com/anchorjs/)
-  under an [MIT License](https://opensource.org/licenses/MIT)
++ `build/assets/anchors.js` which is [released](https://www.bryanbraun.com/anchorjs/) under an [MIT License](https://opensource.org/licenses/MIT)
 
 Please open [an issue](https://github.com/greenelab/manubot-rootstock/issues) for any question related to licensing.
