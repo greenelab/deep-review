@@ -28,13 +28,12 @@ echo "Exporting HTML manuscript"
 pandoc --verbose \
   --from=markdown \
   --to=html5 \
-  --filter pandoc-fignos \
-  --filter pandoc-eqnos \
-  --filter pandoc-tablenos \
+  --filter=pandoc-fignos \
+  --filter=pandoc-eqnos \
+  --filter=pandoc-tablenos \
   --bibliography=$BIBLIOGRAPHY_PATH \
   --csl=$CSL_PATH \
   --metadata link-citations=true \
-  --smart \
   --mathjax \
   --css=github-pandoc.css \
   --include-in-header=build/assets/analytics.js \
@@ -44,30 +43,41 @@ pandoc --verbose \
 
 # Create PDF output
 echo "Exporting PDF manuscript"
-weasyprint \
-  --verbose \
-  --presentational-hints \
-  webpage/index.html \
-  output/manuscript.pdf
+ln --symbolic content/images images
+pandoc \
+  --from=markdown \
+  --to=html5 \
+  --pdf-engine=weasyprint \
+  --pdf-engine-opt=--presentational-hints \
+  --filter=pandoc-fignos \
+  --filter=pandoc-eqnos \
+  --filter=pandoc-tablenos \
+  --bibliography=$BIBLIOGRAPHY_PATH \
+  --csl=$CSL_PATH \
+  --metadata link-citations=true \
+  --webtex=https://latex.codecogs.com/svg.latex? \
+  --css=webpage/github-pandoc.css \
+  --output=output/manuscript.pdf \
+  $INPUT_PATH
+rm --recursive images
 
 # Create DOCX output when user specifies to do so
 if [ "$BUILD_DOCX" = "true" ];
 then
     echo "Exporting Word Docx manuscript"
-    ln --symbolic content/images images
     pandoc --verbose \
     --from=markdown \
     --to=docx \
-    --filter pandoc-fignos \
-    --filter pandoc-tablenos \
+    --filter=pandoc-fignos \
+    --filter=pandoc-eqnos \
+    --filter=pandoc-tablenos \
     --bibliography=$BIBLIOGRAPHY_PATH \
     --csl=$CSL_PATH \
     --metadata link-citations=true \
-    --reference-docx=$DOCX_PATH \
-    --smart \
+    --reference-doc=$DOCX_PATH \
+    --resource-path=.:content \
     --output=output/manuscript.docx \
     $INPUT_PATH
-    rm --recursive images
 fi
 
 echo "Build complete"
