@@ -1,67 +1,319 @@
-# Opportunities and obstacles for deep learning in biology and medicine
-
-This article is also available as a [preprint on bioRxiv](https://doi.org/10.1101/142760).
-
-Travers Ching<sup>1,*</sup>,
-Daniel S. Himmelstein<sup>2</sup>,
-Brett K. Beaulieu-Jones<sup>3</sup>,
-Alexandr A. Kalinin<sup>4</sup>,
-Brian T. Do<sup>5</sup>,
-Gregory P. Way<sup>2</sup>,
-Enrico Ferrero<sup>6</sup>,
-Paul-Michael Agapow<sup>7</sup>,
-Wei Xie<sup>8</sup>,
-Gail L. Rosen<sup>9</sup>,
-Benjamin J. Lengerich<sup>10</sup>,
-Johnny Israeli<sup>11</sup>,
-Jack Lanchantin<sup>12</sup>,
-Stephen Woloszynek<sup>9</sup>,
-Anne E. Carpenter<sup>13</sup>,
-Avanti Shrikumar<sup>14</sup>,
-Jinbo Xu<sup>15</sup>,
-Evan M. Cofer<sup>16</sup>,
-David J. Harris<sup>17</sup>,
-Dave DeCaprio<sup>18</sup>,
-Yanjun Qi<sup>12</sup>,
-Anshul Kundaje<sup>19</sup>,
-Yifan Peng<sup>20</sup>,
-Laura K. Wiley<sup>21</sup>,
-Marwin H.S. Segler<sup>22</sup>,
-Anthony Gitter<sup>23,†</sup>,
-Casey S. Greene<sup>2,†</sup>
-
-
-<sup>*</sup> Author order was determined with a randomized algorithm
-
-<sup>†</sup> To whom correspondence should be addressed: gitter@biostat.wisc.edu (A.G.) and csgreene@upenn.edu (C.S.G.)
-
-1. Molecular Biosciences and Bioengineering Graduate Program, University of Hawaii at Manoa, Honolulu, HI
-2. Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA
-3. Genomics and Computational Biology Graduate Group, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA
-4. Department of Computational Medicine and Bioinformatics, University of Michigan Medical School, Ann Arbor, MI
-5. Harvard Medical School, Boston, MA
-6. Computational Biology and Stats, Target Sciences, GlaxoSmithKline, Stevenage, United Kingdom
-7. Data Science Institute, Imperial College London, London, United Kingdom
-8. Electrical Engineering and Computer Science, Vanderbilt University, Nashville, TN
-9. Ecological and Evolutionary Signal-processing and Informatics Laboratory, Department of Electrical and Computer Engineering, Drexel University, Philadelphia, PA
-10. Computational Biology Department, School of Computer Science, Carnegie Mellon University, Pittsburgh, PA
-11. Biophysics Program, Stanford University, Stanford, CA
-12. Department of Computer Science, University of Virginia, Charlottesville, VA
-13. Imaging Platform, Broad Institute of Harvard and MIT, Cambridge, MA
-14. Department of Computer Science, Stanford University, Stanford, CA
-15. Toyota Technological Institute at Chicago, Chicago, IL
-16. Department of Computer Science, Trinity University, San Antonio, TX
-17. Department of Wildlife Ecology and Conservation, University of Florida, Gainesville, FL
-18. ClosedLoop.ai, Austin, TX
-19. Department of Genetics and Department of Computer Science, Stanford University, Stanford, CA
-20. National Center for Biotechnology Information and National Library of Medicine, National Institutes of Health, Bethesda, MD
-21. Division of Biomedical Informatics and Personalized Medicine, University of Colorado School of Medicine, Aurora, CO
-22. Institute of Organic Chemistry, Westfälische Wilhelms-Universität Münster, Münster, Germany
-23. Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison and Morgridge Institute for Research, Madison, WI
+---
+author-meta:
+- Travers Ching
+- Daniel S. Himmelstein
+- Brett K. Beaulieu-Jones
+- Alexandr A. Kalinin
+- Brian T. Do
+- Gregory P. Way
+- Enrico Ferrero
+- Paul-Michael Agapow
+- Wei Xie
+- Gail L. Rosen
+- Benjamin J. Lengerich
+- Johnny Israeli
+- Jack Lanchantin
+- Stephen Woloszynek
+- Anne E. Carpenter
+- Avanti Shrikumar
+- Jinbo Xu
+- Evan M. Cofer
+- David J. Harris
+- Dave DeCaprio
+- Yanjun Qi
+- Anshul Kundaje
+- Yifan Peng
+- Laura K. Wiley
+- Marwin H.S. Segler
+- Anthony Gitter
+- Casey S. Greene
+date-meta: '2017-11-03'
+keywords:
+- deep learning
+- review
+- precision medicine
+- genomics
+- machine learning
+- neural networks
+- collaborative
+- manubot
+lang: en-US
+title: Opportunities and obstacles for deep learning in biology and medicine
+...
 
 
 
-## Abstract
+_A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1101/142760>_.
+
+
+<small><em>
+This manuscript was automatically generated
+from [greenelab/deep-review@8eb858a](https://github.com/greenelab/deep-review/tree/8eb858a277c7e31b6d0db5cfb10ebf7ebab59fe1)
+on November  3, 2017.
+</em></small>
+
+## Authors
+
+
+
++ **Travers Ching**<br>
+    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
+    [0000-0002-5577-3516](https://orcid.org/0000-0002-5577-3516)
+    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
+    [traversc](https://github.com/traversc)<br>
+  <small>
+     Molecular Biosciences and Bioengineering Graduate Program, University of Hawaii at Manoa, Honolulu, HI
+  </small>
+
++ **Daniel S. Himmelstein**<br>
+    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
+    [0000-0002-3012-7446](https://orcid.org/0000-0002-3012-7446)
+    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
+    [dhimmel](https://github.com/dhimmel)<br>
+  <small>
+     Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA
+     · Funded by GBMF GBMF4552
+  </small>
+
++ **Brett K. Beaulieu-Jones**<br>
+    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
+    [0000-0002-6700-1468](https://orcid.org/0000-0002-6700-1468)
+    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
+    [brettbj](https://github.com/brettbj)<br>
+  <small>
+     Genomics and Computational Biology Graduate Group, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA
+     · Funded by NIH R01AI116794
+  </small>
+
++ **Alexandr A. Kalinin**<br>
+    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
+    [0000-0003-4563-3226](https://orcid.org/0000-0003-4563-3226)
+    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
+    [alxndrkalinin](https://github.com/alxndrkalinin)<br>
+  <small>
+     Department of Computational Medicine and Bioinformatics, University of Michigan Medical School, Ann Arbor, MI
+  </small>
+
++ **Brian T. Do**<br>
+    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
+    [0000-0003-4992-2623](https://orcid.org/0000-0003-4992-2623)
+    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
+    [bdo311](https://github.com/bdo311)<br>
+  <small>
+     Harvard Medical School, Boston, MA
+     · Funded by NIH T32GM007753
+  </small>
+
++ **Gregory P. Way**<br>
+    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
+    [0000-0002-0503-9348](https://orcid.org/0000-0002-0503-9348)
+    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
+    [gwaygenomics](https://github.com/gwaygenomics)<br>
+  <small>
+     Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA
+  </small>
+
++ **Enrico Ferrero**<br>
+    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
+    [0000-0002-8362-100X](https://orcid.org/0000-0002-8362-100X)
+    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
+    [enricoferrero](https://github.com/enricoferrero)<br>
+  <small>
+     Computational Biology and Stats, Target Sciences, GlaxoSmithKline, Stevenage, United Kingdom
+  </small>
+
++ **Paul-Michael Agapow**<br>
+    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
+    [0000-0003-1126-1479](https://orcid.org/0000-0003-1126-1479)
+    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
+    [agapow](https://github.com/agapow)<br>
+  <small>
+     Data Science Institute, Imperial College London, London, United Kingdom
+  </small>
+
++ **Wei Xie**<br>
+    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
+    [0000-0002-1871-6846](https://orcid.org/0000-0002-1871-6846)
+    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
+    [xieconnect](https://github.com/xieconnect)<br>
+  <small>
+     Electrical Engineering and Computer Science, Vanderbilt University, Nashville, TN
+  </small>
+
++ **Gail L. Rosen**<br>
+    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
+    [0000-0003-1763-5750](https://orcid.org/0000-0003-1763-5750)
+    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
+    [gailrosen](https://github.com/gailrosen)<br>
+  <small>
+     Ecological and Evolutionary Signal-processing and Informatics Laboratory, Department of Electrical and Computer Engineering, Drexel University, Philadelphia, PA
+     · Funded by NSF 1245632
+  </small>
+
++ **Benjamin J. Lengerich**<br>
+    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
+    [0000-0001-8690-9554](https://orcid.org/0000-0001-8690-9554)
+    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
+    [blengerich](https://github.com/blengerich)<br>
+  <small>
+     Computational Biology Department, School of Computer Science, Carnegie Mellon University, Pittsburgh, PA
+  </small>
+
++ **Johnny Israeli**<br>
+    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
+    [0000-0003-1633-5780](https://orcid.org/0000-0003-1633-5780)
+    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
+    [jisraeli](https://github.com/jisraeli)<br>
+  <small>
+     Biophysics Program, Stanford University, Stanford, CA
+  </small>
+
++ **Jack Lanchantin**<br>
+    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
+    [0000-0003-0811-0944](https://orcid.org/0000-0003-0811-0944)
+    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
+    [jacklanchantin](https://github.com/jacklanchantin)<br>
+  <small>
+     Department of Computer Science, University of Virginia, Charlottesville, VA
+  </small>
+
++ **Stephen Woloszynek**<br>
+    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
+    [0000-0003-0568-298X](https://orcid.org/0000-0003-0568-298X)
+    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
+    [sw1](https://github.com/sw1)<br>
+  <small>
+     Ecological and Evolutionary Signal-processing and Informatics Laboratory, Department of Electrical and Computer Engineering, Drexel University, Philadelphia, PA
+  </small>
+
++ **Anne E. Carpenter**<br>
+    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
+    [0000-0003-1555-8261](https://orcid.org/0000-0003-1555-8261)
+    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
+    [annecarpenter](https://github.com/annecarpenter)<br>
+  <small>
+     Imaging Platform, Broad Institute of Harvard and MIT, Cambridge, MA
+     · Funded by NIH R01GM089652
+  </small>
+
++ **Avanti Shrikumar**<br>
+    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
+    [0000-0002-6443-4671](https://orcid.org/0000-0002-6443-4671)
+    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
+    [AvantiShri](https://github.com/AvantiShri)<br>
+  <small>
+     Department of Computer Science, Stanford University, Stanford, CA
+  </small>
+
++ **Jinbo Xu**<br>
+    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
+    [0000-0001-7111-4839](https://orcid.org/0000-0001-7111-4839)
+    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
+    [j3xugit](https://github.com/j3xugit)<br>
+  <small>
+     Toyota Technological Institute at Chicago, Chicago, IL
+     · Funded by NIH R01GM089753, NSF 1564955
+  </small>
+
++ **Evan M. Cofer**<br>
+    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
+    [0000-0003-3877-0433](https://orcid.org/0000-0003-3877-0433)
+    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
+    [evancofer](https://github.com/evancofer)<br>
+  <small>
+     Department of Computer Science, Trinity University, San Antonio, TX
+     · Funded by NSF 1531594
+  </small>
+
++ **David J. Harris**<br>
+    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
+    [0000-0003-3332-9307](https://orcid.org/0000-0003-3332-9307)
+    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
+    [davharris](https://github.com/davharris)<br>
+  <small>
+     Department of Wildlife Ecology and Conservation, University of Florida, Gainesville, FL
+     · Funded by GBMF GBMF4563
+  </small>
+
++ **Dave DeCaprio**<br>
+    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
+    [0000-0001-8931-9461](https://orcid.org/0000-0001-8931-9461)
+    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
+    [DaveDeCaprio](https://github.com/DaveDeCaprio)<br>
+  <small>
+     ClosedLoop.ai, Austin, TX
+  </small>
+
++ **Yanjun Qi**<br>
+    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
+    [0000-0002-5796-7453](https://orcid.org/0000-0002-5796-7453)
+    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
+    [qiyanjun](https://github.com/qiyanjun)<br>
+  <small>
+     Department of Computer Science, University of Virginia, Charlottesville, VA
+  </small>
+
++ **Anshul Kundaje**<br>
+    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
+    [0000-0003-3084-2287](https://orcid.org/0000-0003-3084-2287)
+    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
+    [akundaje](https://github.com/akundaje)<br>
+  <small>
+     Department of Genetics and Department of Computer Science, Stanford University, Stanford, CA
+     · Funded by NIH DP2GM123485
+  </small>
+
++ **Yifan Peng**<br>
+    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
+    [0000-0001-9309-8331](https://orcid.org/0000-0001-9309-8331)
+    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
+    [yfpeng](https://github.com/yfpeng)<br>
+  <small>
+     National Center for Biotechnology Information and National Library of Medicine, National Institutes of Health, Bethesda, MD
+     · Funded by OTHER National Institutes of Health Intramural Research Program and National Library of Medicine
+  </small>
+
++ **Laura K. Wiley**<br>
+    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
+    [0000-0001-6681-9754](https://orcid.org/0000-0001-6681-9754)
+    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
+    [laurakwiley](https://github.com/laurakwiley)<br>
+  <small>
+     Division of Biomedical Informatics and Personalized Medicine, University of Colorado School of Medicine, Aurora, CO
+  </small>
+
++ **Marwin H.S. Segler**<br>
+    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
+    [0000-0001-8008-0546](https://orcid.org/0000-0001-8008-0546)
+    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
+    [mrwns](https://github.com/mrwns)<br>
+  <small>
+     Institute of Organic Chemistry, Westfälische Wilhelms-Universität Münster, Münster, Germany
+  </small>
+
++ **Anthony Gitter**<br>
+    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
+    [0000-0002-5324-9833](https://orcid.org/0000-0002-5324-9833)
+    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
+    [agitter](https://github.com/agitter)<br>
+  <small>
+     Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison and Morgridge Institute for Research, Madison, WI
+     · Funded by NIH U54AI117924
+  </small>
+
++ **Casey S. Greene**<br>
+    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
+    [0000-0001-8713-9213](https://orcid.org/0000-0001-8713-9213)
+    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
+    [cgreene](https://github.com/cgreene)<br>
+  <small>
+     Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA
+     · Funded by GBMF GBMF4552
+  </small>
+
+
+
+## Abstract {.page_break_before}
 
 Deep learning, which describes a class of machine learning algorithms, has
 recently showed impressive results across a variety of domains. Biology and
@@ -173,7 +425,12 @@ Here, we seek to identify whether deep learning is an innovation that can induce
 a Strategic Inflection Point in the practice of biology or medicine.
 
 There are already a number of reviews focused on applications of deep learning
-in biology [@yXqhuueV; @1VZjheOA; @irSe12Sm; @G00xvi94; @MmRGFVUu], healthcare [@11I7bLcP3; @LL5huVs3], and drug discovery [@gJE0ExFr; @zCt6PUXj; @1DTUK3YyI; @xPkT1z7D].  Under our guiding question, we sought to highlight
+in biology [@yXqhuueV; @1VZjheOA;
+@irSe12Sm; @G00xvi94;
+@MmRGFVUu], healthcare [@11I7bLcP3;
+@LL5huVs3], and drug discovery [@gJE0ExFr;
+@zCt6PUXj; @1DTUK3YyI;
+@xPkT1z7D].  Under our guiding question, we sought to highlight
 cases where deep learning enabled researchers to solve challenges that were
 previously considered infeasible or simplified tedious analyses.
 We also identified approaches that researchers are using to address challenges
@@ -223,9 +480,11 @@ deep learning, has been extensively applied is molecular target prediction. For
 example, deep recurrent neural networks (RNNs) have been used to predict gene
 targets of microRNAs [@YUms527e], and CNNs have been applied
 to predict protein residue-residue contacts and secondary structure
-[@BhfjKSY3; @ZzaRyGuJ; @UO8L6nd]. Other recent exciting applications of deep learning
+[@BhfjKSY3; @ZzaRyGuJ;
+@UO8L6nd]. Other recent exciting applications of deep learning
 include recognition of functional genomic elements such as enhancers and
-promoters [@s5sy4AOi; @17B2QAA1k; @12aqvAgz6] and prediction of the deleterious effects of
+promoters [@s5sy4AOi; @17B2QAA1k;
+@12aqvAgz6] and prediction of the deleterious effects of
 nucleotide polymorphisms [@15E5yG1Ho].
 
 #### Treatment of patients
@@ -317,21 +576,25 @@ learning models, such as ImageNet [@cBVeXnZx], for new
 purposes. Diagnosing diabetic retinopathy through color fundus images became an
 area of focus for deep learning researchers after a large labeled image set was
 made publicly available during a 2015 Kaggle competition [@ayTsooEM].
-Most participants trained neural networks from scratch [@ayTsooEM; @e3vyHBV2; @14Ovc5nPg], but Gulshan et al.
+Most participants trained neural networks from scratch [@ayTsooEM;
+@e3vyHBV2; @14Ovc5nPg], but Gulshan et al.
 [@1mJW6umJ] repurposed a 48-layer Inception-v3 deep architecture
 pre-trained on natural images and surpassed the state-of-the-art specificity and
 sensitivity. Such features were also repurposed to detect melanoma, the
 deadliest form of skin cancer, from dermoscopic
 [@sLPsrfbl; @phRCihNB] and
-non-dermoscopic images of skin lesions [@1AJUcl1KV; @O39LDkX; @XnYNYoYB] as well as
+non-dermoscopic images of skin lesions [@1AJUcl1KV;
+@O39LDkX; @XnYNYoYB] as well as
 age-related macular degeneration [@iBPOt78R]. Pre-training on natural
 images can enable very deep networks to succeed without overfitting. For the
 melanoma task, reported performance was competitive with or better than a board
-of certified dermatologists [@sLPsrfbl; @XnYNYoYB].
+of certified dermatologists [@sLPsrfbl;
+@XnYNYoYB].
 
 Reusing features from natural images is also an emerging approach for radiographic images,
 where datasets are often too small to train large deep neural networks without
-these techniques [@1Fy5bcnCI; @1GAyqYBNZ; @x6HXFAS4; @Qve94Jra]. 
+these techniques [@1Fy5bcnCI; @1GAyqYBNZ;
+@x6HXFAS4; @Qve94Jra]. 
 A deep CNN trained on natural images
 boosts performance in radiographic images [@x6HXFAS4]. However, the target task required
 either re-training the initial model from scratch with special pre-processing or
@@ -350,7 +613,9 @@ literature, they found a smaller network trained with data augmentation on few
 hundred images from a few dozen patients can outperform a pre-trained
 out-of-domain classifier. Data augmentation is a different strategy to deal with
 small training sets. The practice is exemplified by a series of papers that
-analyze images from mammographies [@VFw1VXDP; @JK8NuXy3; @9G9Hv1Pp; @Xxb4t3zO; @5kfDbGhA]. To expand the number and diversity of images,
+analyze images from mammographies [@VFw1VXDP;
+@JK8NuXy3; @9G9Hv1Pp; @Xxb4t3zO;
+@5kfDbGhA]. To expand the number and diversity of images,
 researchers constructed adversarial examples [@Xxb4t3zO].
 Adversarial examples are constructed by applying a transformation that changes
 training images but not their content -- for example by rotating an image by a
@@ -648,7 +913,8 @@ Methods to accomplish more with little high-quality labeled data are also being
 applied in other domains and may also be adapted to this challenge, e.g. data
 programming [@5Il3kN32]. In data programming, noisy automated labeling
 functions are integrated. Numerous writers have described data as the new oil
-[@6fE0Vrba; @o8mib4CN].
+[@6fE0Vrba;
+@o8mib4CN].
 The idea behind this metaphor is that data are available in large quantities,
 valuable once refined, and the underlying resource that will enable a
 data-driven revolution in how work is done. Contrasting with this perspective,
@@ -831,7 +1097,8 @@ disequilibrium (even when population stratification is explicitly controlled for
 [@T3GG8iJN]). As a result, many genomic findings are of limited value
 for people of non-European ancestry [@dKwyEWWF] and may
 even lead to worse treatment outcomes for them. Methods have been developed for
-mitigating some of these problems in genomic studies [@10shRODux; @T3GG8iJN], but it is not clear how easily they can be adapted for
+mitigating some of these problems in genomic studies [@10shRODux;
+@T3GG8iJN], but it is not clear how easily they can be adapted for
 deep models that are designed specifically to extract subtle effects from
 high-dimensional data. For example, differences in the equipment that tended to
 be used for cases versus controls have led to spurious genetic findings (e.g.
@@ -938,7 +1205,8 @@ expression microarrays into known modules representing cell cycle processes
 [@AnenJOuU] and to stratify yeast strains based on chemical and
 mutational perturbations [@yVBx9Qx4]. Shallow (one hidden layer)
 denoising autoencoders have also been fruitful in extracting biological insight
-from thousands of _Pseudomonas aeruginosa_ experiments [@1CFhfCyWN; @zuLdSQx3] and in aggregating features relevant to specific breast
+from thousands of _Pseudomonas aeruginosa_ experiments [@1CFhfCyWN;
+@zuLdSQx3] and in aggregating features relevant to specific breast
 cancer subtypes [@PBiRSdXv]. These unsupervised approaches applied to
 gene expression data are powerful methods for identifying gene signatures that
 may otherwise be overlooked. An additional benefit of unsupervised approaches is
@@ -1189,7 +1457,8 @@ But one could easily replace them with the output of one of the enhancer or prom
 
 Prediction of microRNAs (miRNAs) and miRNA targets is of
 great interest, as they are critical components of gene regulatory networks and
-are often conserved across great evolutionary distance [@yVKIhIAf; @8lpCCppx]. While many machine learning algorithms have been
+are often conserved across great evolutionary distance [@yVKIhIAf;
+@8lpCCppx]. While many machine learning algorithms have been
 applied to these tasks, they currently require extensive
 feature selection and optimization. For instance, one of the most widely adopted
 tools for miRNA target prediction, TargetScan, trained multiple linear
@@ -1204,7 +1473,8 @@ As in other applications, deep learning promises to achieve equal or better
 performance in predictive tasks by automatically engineering complex features to
 minimize an objective function. Two recently published tools use different
 recurrent neural network-based architectures to perform miRNA and target
-prediction with solely sequence data as input [@1TeyWffV; @1GwC1ll6h]. Though the results are preliminary and still based on
+prediction with solely sequence data as input [@1TeyWffV;
+@1GwC1ll6h]. Though the results are preliminary and still based on
 a validation set rather than a completely independent test set, they were able
 to predict microRNA target sites with higher specificity and sensitivity than
 TargetScan. Excitingly, these tools seem to show that RNNs can accurately align
@@ -1240,12 +1510,14 @@ basic problem and an almost essential module of any protein structure prediction
 package. Contact prediction is much more challenging than secondary structure
 prediction, but it has a much larger impact on tertiary structure prediction. In
 recent years, the accuracy of contact prediction has greatly improved
-[@BhfjKSY3; @7atXz0r; @kboAopkh; @10dNuD89l].
+[@BhfjKSY3; @7atXz0r;
+@kboAopkh; @10dNuD89l].
 
 One can represent protein secondary structure with three different states (alpha helix,
 beta strand, and loop regions) or eight finer-grained states. Accuracy of a three-state prediction is called Q3, and accuracy of an 8-state prediction is called Q8.
 Several groups
-[@1AlhRKQbe; @ZzaRyGuJ; @UpFrhdJf] applied deep learning to protein
+[@1AlhRKQbe; @ZzaRyGuJ;
+@UpFrhdJf] applied deep learning to protein
 secondary structure prediction but were unable to achieve significant
 improvement over the *de facto* standard method PSIPRED
 [@Aic7UyXM], which uses two shallow feedforward neural
@@ -1319,7 +1591,8 @@ Once so-called regions of interest have been identified, it is often
 straightforward to measure biological properties of interest, such as
 fluorescence intensities, textures, and sizes. Given the dramatic successes of
 deep learning in biological imaging, we simply refer to articles that review
-recent advancements [@MmRGFVUu; @40EG4ZEU; @TutLhFSz]. For deep
+recent advancements [@MmRGFVUu;
+@40EG4ZEU; @TutLhFSz]. For deep
 learning to become commonplace for biological image segmentation, we need user-friendly
 tools.
 
@@ -1353,7 +1626,8 @@ cell population morphologies using conventional methods of segmentation and
 feature extraction has already proven useful for functionally annotating genes
 and alleles, identifying the cellular target of small molecules, and identifying
 disease-specific phenotypes suitable for drug screening
-[@hkKO4QYl; @m3Ij21U8; @McjXFLLq]. Deep learning would bring to these new kinds of
+[@hkKO4QYl; @m3Ij21U8;
+@McjXFLLq]. Deep learning would bring to these new kinds of
 experiments -- known as image-based profiling or morphological profiling -- a
 higher degree of accuracy, stemming from the freedom from human-tuned feature
 extraction strategies.
@@ -1375,7 +1649,8 @@ processes over time is not the limiting factor, single-cell techniques can
 provide maximal resolution compared to averaging across all cells in bulk
 tissue, enabling the study of transcriptional bursting with single-cell
 fluorescence *in situ* hybridization or the heterogeneity of epigenetic patterns
-with single-cell Hi-C or ATAC-seq [@QafUwNKn; @v97iPXDw].  Joint profiling of single-cell epigenetic and
+with single-cell Hi-C or ATAC-seq [@QafUwNKn;
+@v97iPXDw].  Joint profiling of single-cell epigenetic and
 transcriptional states provides unprecedented views of regulatory processes
 [@1CAw3FaPI].
 
@@ -1437,12 +1712,15 @@ more than 99% of the genomic content. Subsequent tools aimed to classify
 tetranucleotide frequencies, which differ across organisms [@N9NzkOjA], using
 supervised [@QV551Nlx; @1HtJuEkb2] or unsupervised methods [@1HhqhBwrM]. Then,
 researchers began to use techniques that could estimate relative abundances from
-an entire sample faster than classifying individual reads [@56wEWVIl; @RqhGD9c7; @189TQrQA9; @8DLzxOEt]. There is also great interest in
+an entire sample faster than classifying individual reads [@56wEWVIl;
+@RqhGD9c7; @189TQrQA9; @8DLzxOEt]. There is also great interest in
 identifying and annotating sequence reads [@qUGH5CX8; @yFOAeemA]. However, the
 focus on taxonomic and functional annotation is just the first step. Several
 groups have proposed methods to determine host or environment phenotypes from
-the organisms that are identified [@W0cYSf89; @aI9g2UOc; @c5P9jHCg; @y9s5irW] or overall sequence composition [@5W4KMSdT]. Also, researchers have
-looked into how feature selection can improve classification [@Kt9NojjR; @y9s5irW], and techniques have been proposed that are classifier-independent
+the organisms that are identified [@W0cYSf89; @aI9g2UOc; @c5P9jHCg;
+@y9s5irW] or overall sequence composition [@5W4KMSdT]. Also, researchers have
+looked into how feature selection can improve classification [@Kt9NojjR;
+@y9s5irW], and techniques have been proposed that are classifier-independent
 [@1AN5UPfb1; @O9D66oYa].
 
 Most neural networks are used for
@@ -1603,7 +1881,8 @@ to traditional screening methods in 21 of 27 studies.
 While further progress has been made in using deep learning for clinical
 decision making, it is hindered by a challenge common to many deep learning
 applications: it is much easier to predict an outcome than to suggest an action
-to change the outcome. Several attempts [@1FE0F2pQ; @qXdO2aMm] at recasting the clinical decision-making problem into
+to change the outcome. Several attempts [@1FE0F2pQ;
+@qXdO2aMm] at recasting the clinical decision-making problem into
 a prediction problem (i.e. prediction of which treatment will most improve the
 patient's health) have accurately predicted survival patterns, but technical and
 medical challenges remain for clinical adoption (similar to those for
@@ -1636,7 +1915,8 @@ Discussion).
 #### Predicting patient trajectories
 
 A common application for deep learning in this domain is the temporal structure
-of healthcare records. Many studies [@4zpZxjHR; @O7Vbecm2; @fOaBA9Vc; @glyI7H6F] have used RNNs to categorize
+of healthcare records. Many studies [@4zpZxjHR; @O7Vbecm2;
+@fOaBA9Vc; @glyI7H6F] have used RNNs to categorize
 patients, but most stop short of suggesting clinical decisions. Nemati et al.
 [@16OQvsRqJ] used deep reinforcement learning to optimize a heparin
 dosing policy for intensive care patients. However, because the ideal dosing
@@ -1673,16 +1953,19 @@ efficiency of clinical trials and accelerate drug development.
 
 Drug repositioning (or repurposing) is an attractive option for delivering new
 drugs to the market because of the high costs and failure rates associated with
-more traditional drug discovery approaches [@13c9OPizf; @79Ktl2]. A decade ago, the Connectivity Map
+more traditional drug discovery approaches [@13c9OPizf;
+@79Ktl2]. A decade ago, the Connectivity Map
 [@Ot5bUkmI] had a sizeable impact.  Reverse
 matching disease gene expression signatures with a large set of reference
 compound profiles allowed researchers to formulate repurposing hypotheses at
 scale using a simple non-parametric test. Since then, several advanced
 computational methods have been applied to formulate and validate drug
-repositioning hypotheses [@gTwjIQqB; @1BkEtNVsj; @ir7ElHha]. Using supervised learning and collaborative filtering
+repositioning hypotheses [@gTwjIQqB; @1BkEtNVsj;
+@ir7ElHha]. Using supervised learning and collaborative filtering
 to tackle this type of problem is proving successful, especially when coupling
 disease or compound omic data with topological information from protein-protein
-or protein-compound interaction networks [@M1EW8Rfl; @16FEYidu2; @18lqFDKRR].
+or protein-compound interaction networks [@M1EW8Rfl;
+@16FEYidu2; @18lqFDKRR].
 
 For example, Menden et al. [@QcwZC8wG] used a shallow
 neural network to predict sensitivity of cancer cell lines to drug treatment
@@ -1698,7 +1981,8 @@ such as otenzepad and pinacidil for neurological disorders.
 
 Drug repositioning can also be approached by attempting to predict novel
 drug-target interactions and then repurposing the drug for the associated
-indication [@tOpadZQw; @1SIuofeg]. Wang et al. [@TeIxEjqm]
+indication [@tOpadZQw;
+@1SIuofeg]. Wang et al. [@TeIxEjqm]
 devised a pairwise input neural network with two hidden layers that takes two
 inputs, a drug and a target binding site, and predicts whether they interact.
 Wang et al. [@1AU7wzPqa] trained individual RBMs for
@@ -1768,7 +2052,8 @@ over a random forest baseline, remarking "we have seldom seen any method in the
 past 10 years that could consistently outperform [random forest] by such a
 margin" [@xOaTIeBY]. Subsequent work (reviewed in more detail by
 Goh et al. [@zCt6PUXj]) explored the effects of jointly modeling
-far more targets than the Merck challenge [@F8fP2vAg; @yAoN5gTU], with Ramsundar et al.
+far more targets than the Merck challenge [@F8fP2vAg;
+@yAoN5gTU], with Ramsundar et al.
 [@yAoN5gTU] showing that the benefits of multi-task
 networks had not yet saturated even with 259 targets.  Although DeepTox
 [@Y1D0SZrO], a deep learning approach, won another competition, the
@@ -1886,7 +2171,8 @@ researchers without biochemistry expertise.
 
 One open question in ligand-based screening pertains to the benefits and
 limitations of transfer learning.  Multi-task neural networks have shown the
-advantages of jointly modeling many targets [@F8fP2vAg; @yAoN5gTU].  Other studies have shown the limitations of
+advantages of jointly modeling many targets [@F8fP2vAg;
+@yAoN5gTU].  Other studies have shown the limitations of
 transfer learning when the prediction tasks are insufficiently related
 [@uP7SgBVd; @P4ixsM8i].  This has important
 implications for representation learning.  The typical approach to improve deep
@@ -1923,7 +2209,8 @@ will be misleading during training, and the predictive performance is sensitive
 to the docking quality [@Gue0c5Gb].
 
 There are two established options for representing a protein-compound complex. One option, a 3D
-grid, can featurize the input complex [@Z7fd0BYf; @bNBiIiTt]. Each entry in the grid tracks the types of protein and
+grid, can featurize the input complex [@Z7fd0BYf;
+@bNBiIiTt]. Each entry in the grid tracks the types of protein and
 ligand atoms in that region of the 3D space or descriptors derived from those
 atoms. Alternatively, DeepVS [@Gue0c5Gb] and atomic convolutions
 [@17YaKNLKk] offer greater flexibility in their convolutions by eschewing
@@ -2145,10 +2432,12 @@ to the input [@1YcKYTvO] to compute a "saliency map". Bach et al.
 which was shown to be equivalent to the element-wise product of the gradient and
 input [@zhmq9ktJ; @b1sc0cgP]. Networks
 with Rectified Linear Units (ReLUs) create nonlinearities that must be
-addressed. Several variants exist for handling this [@voh0OiT2; @f2L6isRj]. Backpropagation-based methods are a highly
+addressed. Several variants exist for handling this [@voh0OiT2;
+@f2L6isRj]. Backpropagation-based methods are a highly
 active area of research. Researchers are still actively identifying weaknesses
 [@vjXoJqO3], and new methods are being developed to address
-them [@RZsNSRDS; @WzFOJBiA; @zhmq9ktJ]. Lundberg and Lee [@DeOI1oGf] noted that
+them [@RZsNSRDS;; @WzFOJBiA;
+@zhmq9ktJ]. Lundberg and Lee [@DeOI1oGf] noted that
 several importance scoring methods including integrated gradients and LIME could
 all be considered approximations to Shapely values [@YBJdA6LJ], which have a
 long history in game theory for assigning contributions to players in
@@ -2183,7 +2472,8 @@ Activation maximization can reveal patterns detected by an individual neuron in
 the network by generating images which maximally activate that neuron, subject
 to some regularizing constraints. This technique was first introduced in Ehran
 et al. [@UAAd9Uez] and applied in subsequent work
-[@1YcKYTvO; @XLHInhc1; @17i18PMkR; @1FkT6C6oa]. Lanchantin et
+[@1YcKYTvO; @XLHInhc1;
+@17i18PMkR; @1FkT6C6oa]. Lanchantin et
 al. [@Dwi2eAvT] applied activation maximization to genomic
 sequence data. One drawback of this approach is that neural networks often learn
 highly distributed representations where several neurons cooperatively describe
@@ -2196,7 +2486,8 @@ Several interpretation methods are specifically tailored to recurrent neural
 network architectures. The most common form of interpretability provided by RNNs
 is through attention mechanisms, which have been used in diverse problems such
 as image captioning and machine translation to select portions of the input to
-focus on generating a particular output [@haHzVaaz; @yHn4SDRI]. Deming et al. [@SAvEOARL] applied the attention
+focus on generating a particular output [@haHzVaaz;
+@yHn4SDRI]. Deming et al. [@SAvEOARL] applied the attention
 mechanism to models trained on genomic sequence. Attention mechanisms provide
 insight into the model's decision-making process by revealing which portions of
 the input are used by different outputs. In the clinical domain, Choi et al.
@@ -2333,7 +2624,8 @@ synthetic TF binding sites with position weight matrices
 transcript boundaries [@2M3zXijc], is a standard practice in
 bioinformatics.  This strategy can help benchmark algorithms when the available
 gold standard dataset is imperfect, but it should be paired with an evaluation
-on real data, as in the prior examples [@iEmvzeT8; @2M3zXijc].  In rare cases, models trained on simulated data have been
+on real data, as in the prior examples [@iEmvzeT8;
+@2M3zXijc].  In rare cases, models trained on simulated data have been
 successfully applied directly to real data [@2M3zXijc].
 
 Data can be simulated to create negative examples when only positive training
@@ -2387,14 +2679,18 @@ why neural networks have only recently found widespread use
 [@BQS8ClV0].
 
 Many have sought to curb these costs, with methods ranging from the very applied
-(e.g. reduced numerical precision [@CKcJuj03; @1G3owNNps; @w6CoVmFK; @1GUizyE8e]) to the exotic and theoretic (e.g.
+(e.g. reduced numerical precision [@CKcJuj03; @1G3owNNps;
+@w6CoVmFK; @1GUizyE8e]) to the exotic and theoretic (e.g.
 training small networks to mimic large networks and ensembles
 [@1AhGoHZP9; @1CRF3gAV]). The largest gains in
 efficiency have come from computation with graphics processing units (GPUs)
-[@F3e4wfzQ; @NSgduYNT; @IULiPa6L; @13KjSCKB2; @1FocAi7N0; @BQS8ClV0], which excel at the matrix and vector
+[@F3e4wfzQ; @NSgduYNT; @IULiPa6L;
+@13KjSCKB2; @1FocAi7N0;
+@BQS8ClV0], which excel at the matrix and vector
 operations so central to deep learning. The massively parallel nature of GPUs
 allows additional optimizations, such as accelerated mini-batch gradient descent
-[@NSgduYNT; @IULiPa6L; @aClNvbyM; @fNkl8HFz]. However, GPUs also have limited memory, making networks
+[@NSgduYNT; @IULiPa6L; @aClNvbyM;
+@fNkl8HFz]. However, GPUs also have limited memory, making networks
 of useful size and complexity difficult to implement on a single GPU or machine
 [@F3e4wfzQ; @CCS5KSIM]. This restriction has
 sometimes forced computational biologists to use workarounds or limit the size
@@ -2410,7 +2706,9 @@ performance [@x0M6vals].
 While steady improvements in GPU hardware may alleviate this issue, it is
 unclear whether advances will occur quickly enough to keep pace with the growing
 biological datasets and increasingly complex neural networks. Much has been done
-to minimize the memory requirements of neural networks [@YwdqeYZi; @1AhGoHZP9; @CKcJuj03; @1G3owNNps; @w6CoVmFK; @15lYGmZpY; @1GUizyE8e], but there is
+to minimize the memory requirements of neural networks [@YwdqeYZi;
+@1AhGoHZP9; @CKcJuj03; @1G3owNNps;
+@w6CoVmFK; @15lYGmZpY; @1GUizyE8e], but there is
 also growing interest in specialized hardware, such as field-programmable gate
 arrays (FPGAs) [@1FocAi7N0; @9NKsJjSw] and
 application-specific integrated circuits (ASICs) [@ULagTifF]. Less
@@ -2425,7 +2723,9 @@ Distributed computing is a general solution to intense computational
 requirements and has enabled many large-scale deep learning efforts. Some types
 of distributed computation [@xE3EYmck; @1XcexUAV] are not suitable for
 deep learning [@17cBimWgp], but much progress has been made.
-There now exist a number of algorithms [@17cBimWgp; @188FA7whS; @w6CoVmFK], tools [@rmJZ2Aui; @rZnxDitd; @hOeUlCvS], and high-level libraries [@FwEK0msb; @y9IoEy4r] for deep
+There now exist a number of algorithms [@17cBimWgp; @188FA7whS;
+@w6CoVmFK], tools [@rmJZ2Aui; @rZnxDitd;
+@hOeUlCvS], and high-level libraries [@FwEK0msb; @y9IoEy4r] for deep
 learning in a distributed environment, and it is possible to train very complex
 networks with limited infrastructure [@4MZ2tmZ8]. Besides
 handling very large networks, distributed or parallelized approaches offer other
@@ -2536,7 +2836,8 @@ the distance between the base task and target task increases
 In image analysis, previous examples of deep transfer learning applications
 proved large-scale natural image sets [@cBVeXnZx] to be
 useful for pre-training models that serve as generic feature extractors for
-various types of biological images [@HlDY7trA; @z3I2IudI; @irSe12Sm; @BMg062hc]. More recently, deep
+various types of biological images [@HlDY7trA; @z3I2IudI;
+@irSe12Sm; @BMg062hc]. More recently, deep
 learning models predicted protein sub-cellular localization for proteins not
 originally present in a training set [@2a7MHtAx]. Moreover, learned
 features performed reasonably well even when applied to images obtained using
@@ -2563,7 +2864,8 @@ al. [@jV2YerUS] demonstrated how training on the experimentally-validated FANTOM
 enhancer datasets improved cell type-specific predictions, outperforming
 state-of-the-art results.  In drug design, general RNN models trained to
 generate molecules from the ChEMBL database have been fine-tuned to produce
-drug-like compounds for specific targets [@8LWFFeYg; @1EayJRsI].
+drug-like compounds for specific targets [@8LWFFeYg;
+@1EayJRsI].
 
 Related to transfer learning, multimodal learning assumes simultaneous learning
 from various types of inputs, such as images and text. It can capture features
@@ -2629,7 +2931,9 @@ site from cancer pathology reports together with its laterality substantially
 improved the performance for the latter task, indicating that multi-task
 learning can effectively leverage the commonality between two tasks using a
 shared representation. Many studies employed multi-task learning to predict
-chemical bioactivity [@1Dzz0P0qr; @yAoN5gTU] and drug toxicity [@Y1D0SZrO; @1BARarxfz]. Kearnes et al. [@uP7SgBVd]
+chemical bioactivity [@1Dzz0P0qr;
+@yAoN5gTU] and drug toxicity [@Y1D0SZrO;
+@1BARarxfz]. Kearnes et al. [@uP7SgBVd]
 systematically compared single-task and multi-task models for ADMET properties
 and found that multi-task learning generally improved performance. Smaller
 datasets tended to benefit more than larger datasets.
@@ -2821,15 +3125,15 @@ The remaining authors have no competing interests to declare.
 
 ### Acknowledgements
 
-We gratefully acknowledge Christof Angermueller, Kumardeep Chaudhary, Gökcen
-Eraslan, Michael M. Hoffman, Mikael Huss, Bharath Ramsundar and Xun Zhu for
-their discussion of the manuscript and reviewed papers on GitHub. We would like
-to thank Zhiyong Lu for revisions to the text that were not captured on GitHub
-as well as GitHub users aaronsheldon and swamidass who contributed text but did
-not formally approve the manuscript. Finally, we acknowledge funding from the
-Gordon and Betty Moore Foundation awards GBMF4552 (C.S.G. and D.S.H.) and GBMF4563 (D.J.H.); the National
-Institutes of Health awards DP2GM123485 (A.K.), R01AI116794 (B.K.B.), R01GM089652 (A.E.C.), R01GM089753 (J.X.), T32GM007753 (B.T.D.), and U54AI117924 (A.G.); the National Science Foundation
-awards 1245632 (G.L.R.), 1531594 (E.M.C.), and 1564955 (J.X.); and the National Institutes of Health Intramural Research Program and National Library of Medicine (Y.P.).
+We gratefully acknowledge Christof Angermueller, Kumardeep Chaudhary, Gökcen Eraslan, Michael M. Hoffman, Mikael Huss, Bharath Ramsundar and Xun Zhu for their discussion of the manuscript and reviewed papers on GitHub.
+We would like to thank Zhiyong Lu for revisions to the text that were not captured on GitHub as well as GitHub users aaronsheldon and swamidass who contributed text but did not formally approve the manuscript.
+Finally, we acknowledge funding from the Gordon and Betty Moore Foundation awards GBMF4552 (C.S.G. and D.S.H.) and GBMF4563 (D.J.H.);
+the National Institutes of Health awards DP2GM123485 (A.K.), R01AI116794 (B.K.B.), R01GM089652 (A.E.C.), R01GM089753 (J.X.), T32GM007753 (B.T.D.), and U54AI117924 (A.G.);
+the National Science Foundation awards 1245632 (G.L.R.), 1531594 (E.M.C.), and 1564955 (J.X.);
+and the National Institutes of Health Intramural Research Program and National Library of Medicine (Y.P.).
 
 
-## References
+## References {.page_break_before}
+
+<!-- Explicitly insert bibliography here -->
+<div id="refs"></div>
