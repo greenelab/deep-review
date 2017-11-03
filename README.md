@@ -8,11 +8,11 @@ This directory contains the following files, which are mostly ignored on the `ma
 
 + [`index.html`](index.html) is an HTML manuscript.
 + [`github-pandoc.css`](github-pandoc.css) sets the display style for `index.html`.
-+ [`deep-review.pdf`](deep-review.pdf) is a PDF manuscript.
++ [`manuscript.pdf`](manuscript.pdf) is a PDF manuscript.
 + `*.ots` files are OpenTimestamps which can be used to verify manuscript existence at or before a given time.
   [OpenTimestamps](opentimestamps.org) uses the Bitcoin blockchain to attest to file hash existence.
 
 ## Source
 
 The manuscripts in this directory were built from
-[`d4c316393779a9248d924abae83bc672aafa39df`](https://github.com/greenelab/deep-review/commit/d4c316393779a9248d924abae83bc672aafa39df).
+[`8eb858a277c7e31b6d0db5cfb10ebf7ebab59fe1`](https://github.com/greenelab/deep-review/commit/8eb858a277c7e31b6d0db5cfb10ebf7ebab59fe1).
