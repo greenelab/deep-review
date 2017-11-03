@@ -1,2 +1,5 @@
 # SSH private key
 deploy.key
+
+# Output from travis encrypt-file
+travis-encrypt-file.log
