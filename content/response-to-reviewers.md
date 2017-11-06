@@ -13,11 +13,11 @@ Feel free to also break up paragraphs as necessary, but remember to keep the rev
 
 ## Referee 1
 
-> The authors summarized over 400 literature references purely by narratives. The authors provided synopsis for each important reference, but lacks synthesis of related work. It would be better to synthesize related work into a table and analyze their characteristics. 
+> The authors summarized over 400 literature references purely by narratives. The authors provided synopsis for each important reference, but lacks synthesis of related work. It would be better to synthesize related work into a table and analyze their characteristics.
 
 TODO in [issue #683](https://github.com/greenelab/deep-review/issues/683)
 
-> The authors discussed deep learning models such as sDA, CNN, RNN etc. It would be better to have a figure illustrating their architectures. This way, the reader will have a concrete visualization that will aid the understanding of the discussion points in the manuscript. 
+> The authors discussed deep learning models such as sDA, CNN, RNN etc. It would be better to have a figure illustrating their architectures. This way, the reader will have a concrete visualization that will aid the understanding of the discussion points in the manuscript.
 
 TODO in [issue #684](https://github.com/greenelab/deep-review/issues/684)
 
@@ -25,21 +25,21 @@ TODO in [issue #684](https://github.com/greenelab/deep-review/issues/684)
 
 TODO in [issue #685](https://github.com/greenelab/deep-review/issues/685)
 
-> The authors mentioned “One source of training examples with rich clinical annotations is electronic health records”. What does it mean by “rich clinical annotations”? Can the authors provide a definition and a few examples. 
+> The authors mentioned “One source of training examples with rich clinical annotations is electronic health records”. What does it mean by “rich clinical annotations”? Can the authors provide a definition and a few examples.
 
 TODO in [issue #686](https://github.com/greenelab/deep-review/issues/686)
 
-> Some existing biomedical informatics systems are not cited. For example, please provide a citation to NegBio. 
+> Some existing biomedical informatics systems are not cited. For example, please provide a citation to NegBio.
 
 TODO in [issue #687](https://github.com/greenelab/deep-review/issues/687)
 
 ## Referee 2
 
-> There is little explanation of key deep learning concepts: layers, autoencoders, RNNs, etc. It might be impossible to do that within the space limitations of the current review, I wonder whether a link to a dedicated website or supplementary material where the most often used deep learning concepts are explained in a way an uninitiated reader can quickly read through and understand would be a solution. There is certainly a large readership whose interest has been peaked by countless references to deep learning even in the popular press, but who are very confused when autoencoders, LSTMs and RNNs get thrown at them without any even brief explanation what they are. Just sending readers off to fend for themselves through internet searches or to study the excellent but still quite technical book [Goodfellow et al.](http://www.deeplearningbook.org/ "Deep Learning. Ian Goodfellow, Yoshua Bengio, Aaron Courville. 2016") is probably not the most satisfactory answer. 
+> There is little explanation of key deep learning concepts: layers, autoencoders, RNNs, etc. It might be impossible to do that within the space limitations of the current review, I wonder whether a link to a dedicated website or supplementary material where the most often used deep learning concepts are explained in a way an uninitiated reader can quickly read through and understand would be a solution. There is certainly a large readership whose interest has been peaked by countless references to deep learning even in the popular press, but who are very confused when autoencoders, LSTMs and RNNs get thrown at them without any even brief explanation what they are. Just sending readers off to fend for themselves through internet searches or to study the excellent but still quite technical book [Goodfellow et al.](http://www.deeplearningbook.org/ "Deep Learning. Ian Goodfellow, Yoshua Bengio, Aaron Courville. 2016") is probably not the most satisfactory answer.
 
 TODO in [issue #688](https://github.com/greenelab/deep-review/issues/688)
 
-> There is a slight imbalance in the presentation of various application areas. The [section on drug development](https://github.com/greenelab/deep-review/blob/v0.9-preprint/sections/05_treat.md#drug-development), for example, is quite extensive and provides a lot of technical details which might be less relevant for a reader who tries to get a general overview of deep learning in biomedical research. An area which is little mentioned on the other hand are deep learning approaches to brain data, eg connectivity maps, and the area of learning from structured data, such as graphs. 
+> There is a slight imbalance in the presentation of various application areas. The [section on drug development](https://github.com/greenelab/deep-review/blob/v0.9-preprint/sections/05_treat.md#drug-development), for example, is quite extensive and provides a lot of technical details which might be less relevant for a reader who tries to get a general overview of deep learning in biomedical research. An area which is little mentioned on the other hand are deep learning approaches to brain data, eg connectivity maps, and the area of learning from structured data, such as graphs.
 
 TODO in [issue #689](https://github.com/greenelab/deep-review/issues/689)
 
