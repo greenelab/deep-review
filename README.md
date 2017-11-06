@@ -47,7 +47,7 @@ On August 2, 2016, project maintainer [Casey Greene](https://github.com/cgreene)
 
 > I was recently inspired by [Harold Pimentel's](https://github.com/pimentel) crowd-sourced [collection of deep learning papers](https://github.com/pimentel/deep_learning_papers).
 Instead of having one individual write this, I thought that this invitation provided a wonderful opportunity to take advantage of the wisdom of crowds to bring a team together around this topic.
-
+>
 > This repository provides a home for the paper.
 We'll operate on a pull request model.
 Anyone whose contributions meet the ICJME standards of authorship will be included as an author on the manuscript.
