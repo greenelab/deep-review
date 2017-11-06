@@ -28,6 +28,16 @@ We recently [updated](https://github.com/greenelab/deep-review/pull/681) this re
 Citations must now be semicolon separated like `[@doi:10.1002/minf.201501008; @doi:10.1002/jcc.24764]`.
 Previously, multiple citations were just separated by whitespace.
 In addition, we're switching from wrapping text at a character cutoff to "one sentence per line" as described in [`USAGE.md`](USAGE.md).
+Please make sure you base your pull requests off of the latest version of the `greenelab:master` branch.
+Keep your fork synced by [setting](https://help.github.com/articles/configuring-a-remote-for-a-fork/) its `upstream` remote to `greenelab` and running:
+
+```sh
+# If your branch only has commits from greenelab:master but is outdated
+git pull --ff-only upstream master
+
+# If your branch is outdated and has diverged from greenelab:master
+git pull --rebase upstream master
+```
 
 ### Headline review format
 
