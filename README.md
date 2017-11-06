@@ -19,8 +19,9 @@ For project discussion and planning see the [Issues](https://github.com/greenela
 We are currently working on manuscript revisions in response to two external peer reviews.
 See [Issue #678](https://github.com/greenelab/deep-review/issues/678) to coordinate this process.
 When addressing reviewer comments, please also update [`response-to-reviewers.md`](content/response-to-reviewers.md) as appropriate.
-At the moment, efforts are concentrated on revisions: content unrelated to revisions will be deferred or rejected.
-If you feel that a contribution unrelated to the reviewer comments is pressing, please open an issue to seek preauthorization before implementing the contribution.
+At the moment, efforts are concentrated on revisions and reviewing open pull requests.
+Unrelated pull requests (unless they're minor changes) will be deferred or rejected.
+If you feel that a major contribution of new content is important, please open an issue to seek preauthorization before opening a pull request.
 
 **Manubot updates:**
 We recently [updated](https://github.com/greenelab/deep-review/pull/681) this repository to use the latest Manubot version.

@@ -5,7 +5,7 @@ We have now [received](https://github.com/greenelab/deep-review/issues/678) the 
 When submitting a pull request to revise the Deep Review in response to reviewers, please also comment on the relevant section in this document.
 The comments should respond to the reviewer comments and should link to the pull requests or issues where they are addressed.
 
-After each reviewer criticism, there is a `TODO`.
+After each reviewer criticism, there is a TODO.
 Replace the TODO with the relevant response.
 Feel free to also break up paragraphs as necessary, but remember to keep the reviews formatted as blockquotes.
 
