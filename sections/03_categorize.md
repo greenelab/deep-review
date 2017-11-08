@@ -313,7 +313,7 @@ better than shallow models or plain RNN when tested on two independent cohorts
 for its ability to predict disease progression, intervention recommendation and
 future risk prediction. Nguyen et al. [@doi:10.1109/JBHI.2016.2633963] took a
 different approach and used word embeddings from EHRs to train a CNN that could
-detect and pool local clinical motifs to predict unplanned readmission after 6
+detect and pool local clinical motifs to predict unplanned readmission after six
 months, with performance better than the baseline method (Deepr). Razavian et
 al. [@arxiv:1608.00647] used a set of 18 common lab tests to predict disease
 onset using both CNN and LSTM architectures and demonstrated an improvement over
