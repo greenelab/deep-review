@@ -920,5 +920,26 @@
     "URL": "https://doi.org/10.1515/9781400881970-018",
     "relation": {},
     "standard_citation": "doi:10.1515/9781400881970-018"
+  },
+  {
+    "URL": "https://nihcc.app.box.com/v/ChestXray-NIHCC",
+    "title": "NIH Chest X-ray Dataset",
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          9,
+          7
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "NIH Clinical Center",
+        "given": ""
+      }
+    ],
+    "type": "webpage",
+    "standard_citation": "url:https://nihcc.app.box.com/v/ChestXray-NIHCC"
   }
 ]
