@@ -1,18 +1,27 @@
-name: deepreview
+name: manubot
 channels:
-  - anaconda
   - conda-forge
 dependencies:
-  - bioconda::wkhtmltopdf=0.12.3
-  - conda-forge::pandoc=1.19.2
-  - jinja2=2.9.6
-  - pandas=0.19.2
-  - python=3.6.0
-  - requests=2.13.0
+  - conda-forge::cairo=1.14.6
+  - conda-forge::cffi=1.10.0
+  - conda-forge::jinja2=2.9.6
+  - conda-forge::pandas=0.21.0
+  - conda-forge::pandoc=2.0.0.1
+  - conda-forge::python=3.6.3
+  - conda-forge::pyyaml=3.12
+  - conda-forge::requests=2.18.4
+  - conda-forge::watchdog=0.8.3
   - pip:
-    - arxiv2bib==1.0.7
-    - bibtexparser==0.6.2
+    - errorhandler==2.0.1
     - ghp-import==0.5.5
-    - pybase62==0.2.0
+    - git+https://github.com/greenelab/manubot@367f0b5c8046e5ce2f1e5a0ef555ec29a4aefd59
+    - opentimestamps-client==0.5.0
+    - opentimestamps==0.1.0
+    - pandoc-eqnos==0.18.1
+    - pandoc-fignos==0.21.1
+    - pandoc-tablenos==0.17.1
+    - pybase62==0.3.2
     - pysha3==1.0.2
-    - python-bitcoinlib==0.7.0
+    - python-bitcoinlib==0.8.0
+    - requests-cache==0.4.13
+    - weasyprint==0.41
