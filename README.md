@@ -14,7 +14,7 @@ The project operates on an open contribution model, welcoming contributions from
 To see what's incoming, check the open [pull requests](https://github.com/greenelab/deep-review/pulls).
 For project discussion and planning see the [Issues](https://github.com/greenelab/deep-review/issues).
 
-### Current stage: revisions
+### Current stage: revisions (due January 15, 2018)
 
 We are currently working on manuscript revisions in response to two external peer reviews.
 See [Issue #678](https://github.com/greenelab/deep-review/issues/678) to coordinate this process.
