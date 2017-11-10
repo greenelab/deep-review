@@ -98,7 +98,7 @@ The system also supports citation tags, which are recommended for the following 
   Therefore, it might make sense to define a tag, so if the citation updates (e.g. a newer version becomes available), only a single change is required.
 
 Tags should be defined in [`content/citation-tags.tsv`](content/citation-tags.tsv).
-If `citation-tags.tsv` defines the tag `study-x`, then this study can be cited like `@tag:study-x`.
+If `citation-tags.tsv` defines the tag `study-x`, then this study can be cited like `@tag:study-x`, for example, `[@tag:Zhou2015_deep_sea]`.
 
 ## Reference metadata
 
