@@ -19,4 +19,4 @@ conda env create --file environment.yml
 ```
 
 Activate with `source activate manubot`.
-Currently, the environment requires Linux.
+The environment should successfully install on both Linux and macOS (and possibly Windows).

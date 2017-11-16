@@ -3,11 +3,13 @@
 The process to create a new Manubot manuscript is a bit challenging, because it requires a few steps that are difficult to automate.
 However, you will only have to perform these steps once for each manuscript.
 These steps should be performed in a terminal, starting in the directory where you want the manuscript folder be created.
+Setup is supported on Linux and macOS, but [**not on Windows**](https://github.com/greenelab/manubot-rootstock/issues/91).
 
 ## Configuration
 
 First, you must configure two environment variables (`OWNER` and `REPO`).
 These variables specify the GitHub repository for the manuscript (i.e. `https://github.com/OWNER/REPO`).
+**Edit the following commands with your manuscript's information:**
 
 ```sh
 # GitHub account (change from greenelab)
@@ -17,6 +19,9 @@ REPO=manubot-rootstock
 ```
 
 ## Create repository
+
+**Execute the remaining commands verbatim.**
+They do not need to be edited (if the setup works as intended).
 
 Next you must clone `greenelab/manubot-rootstock` and configure its branches and remotes:
 
@@ -72,7 +77,7 @@ ssh-keygen \
 echo https://github.com/$OWNER/$REPO/settings/keys
 ```
 
-Manually add `deploy.key.pub` (with write access) to GitHub under the repository's deploy key settings (the URL echoed above).
+Manually add the text of `deploy.key.pub` (with write access) to GitHub under the repository's deploy key settings (the URL echoed above).
 Give the key a descriptive title, such as "Travis CI Manubot".
 
 For the next step, you need the [Travis command line client](https://github.com/travis-ci/travis.rb) installed.
@@ -138,7 +143,7 @@ git rm content/02.delete-me.md
 
 ## Finalize
 
-Run `git status` or `git diff --word-diff` to check that the following files have unstaged changes:
+Run `git status` or `git diff --color-words` to check that the following files have unstaged changes:
 
 + `README.md`
 + `ci/deploy.key.enc`
