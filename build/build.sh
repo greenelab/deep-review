@@ -36,8 +36,8 @@ pandoc --verbose \
   --metadata link-citations=true \
   --mathjax \
   --css=github-pandoc.css \
-  --include-in-header=build/assets/analytics.js \
-  --include-after-body=build/assets/anchors.js \
+  --include-in-header=build/assets/analytics.html \
+  --include-after-body=build/assets/anchors.html \
   --output=output/manuscript.html \
   $INPUT_PATH
 
