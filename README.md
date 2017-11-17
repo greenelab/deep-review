@@ -14,7 +14,7 @@ The project operates on an open contribution model, welcoming contributions from
 To see what's incoming, check the open [pull requests](https://github.com/greenelab/deep-review/pulls).
 For project discussion and planning see the [Issues](https://github.com/greenelab/deep-review/issues).
 
-### Current stage: revisions
+### Current stage: revisions (due January 15, 2018)
 
 We are currently working on manuscript revisions in response to two external peer reviews.
 See [Issue #678](https://github.com/greenelab/deep-review/issues/678) to coordinate this process.
@@ -25,7 +25,7 @@ If you feel that a major contribution of new content is important, please open a
 
 **Manubot updates:**
 We recently [updated](https://github.com/greenelab/deep-review/pull/681) this repository to use the latest Manubot version.
-Citations must now be semicolon separated like `[@doi:10.1002/minf.201501008; @doi:10.1002/jcc.24764]`.
+Citations must now be semicolon separated like `[@doi:10.1002/minf.201501008; @doi:10.1002/jcc.24764]` and citation tags are required when the identifier contains [forbidden characters](USAGE.md#citation-tags).
 Previously, multiple citations were just separated by whitespace.
 In addition, we're switching from wrapping text at a character cutoff to "one sentence per line" as described in [`USAGE.md`](USAGE.md).
 Please make sure you base your pull requests off of the latest version of the `greenelab:master` branch.

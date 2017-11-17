@@ -60,3 +60,12 @@ TODO in [issue #689](https://github.com/greenelab/deep-review/issues/689)
 Although this is mentioned throughout the review, this issue deserves a much more prominent place in the introduction and the discussion, since it is one of the key obstacles for the acceptance of machine learning approaches outside exploratory analyses in basic biological research.
 
 TODO in [issue #690](https://github.com/greenelab/deep-review/issues/690)
+
+***
+
+## Additional revisions
+
+In addition to the revisions described above, we have continued to improve the manuscript based on community feedback.
+These updates include adding new literature to existing sections...
+
+TODO summarize other [pull requests made since the initial submission](https://github.com/greenelab/deep-review/pulls?q=created%3A>2017-05-28%20is%3Apr%20)
