@@ -45974,25 +45974,11 @@
     "id": "Y1D0SZrO"
   },
   {
-    "indexed": {
-      "date-parts": [
-        [
-          2017,
-          10,
-          27
-        ]
-      ],
-      "date-time": "2017-10-27T01:53:15Z",
-      "timestamp": 1509069195764
-    },
-    "reference-count": 21,
-    "publisher": "Frontiers Media SA",
-    "content-domain": {
-      "domain": [],
-      "crossmark-restriction": false
-    },
-    "DOI": "10.3389/fgene.2014.00342",
     "type": "article-journal",
+    "title": "Large-scale integration of small-molecule induced genome-wide transcriptional responses, Kinome-wide binding affinities and cell-growth inhibition profiles reveal global trends characterizing systems-level drug action",
+    "container-title": "Frontiers in Genetics",
+    "URL": "https://doi.org/10.3389/fgene.2014.00342",
+    "DOI": "10.3389/fgene.2014.00342",
     "created": {
       "date-parts": [
         [
@@ -46004,75 +45990,20 @@
       "date-time": "2014-09-30T15:41:13Z",
       "timestamp": 1412091673000
     },
-    "source": "Crossref",
-    "is-referenced-by-count": 2,
-    "title": "Large-scale integration of small molecule-induced genome-wide transcriptional responses, Kinome-wide binding affinities and cell-growth inhibition profiles reveal global trends characterizing systems-level drug action",
-    "prefix": "10.3389",
-    "volume": "5",
     "author": [
       {
-        "given": "DuÅ¡ica",
-        "family": "VidoviÄ‡",
-        "affiliation": []
+        "family": "Vidovic",
+        "given": "Dušica"
       },
       {
-        "given": "Amar",
         "family": "Koleti",
-        "affiliation": []
+        "given": "Amar"
       },
       {
-        "given": "Stephan C.",
-        "family": "SchÃ¼rer",
-        "affiliation": []
+        "family": "Schürer",
+        "given": "Stephan C"
       }
     ],
-    "member": "1965",
-    "published-online": {
-      "date-parts": [
-        [
-          2014,
-          9,
-          30
-        ]
-      ]
-    },
-    "container-title": "Frontiers in Genetics",
-    "original-title": [],
-    "deposited": {
-      "date-parts": [
-        [
-          2015,
-          2,
-          18
-        ]
-      ],
-      "date-time": "2015-02-18T20:19:46Z",
-      "timestamp": 1424290786000
-    },
-    "score": 1.0,
-    "subtitle": [],
-    "short-title": [],
-    "issued": {
-      "date-parts": [
-        [
-          2014,
-          9,
-          30
-        ]
-      ]
-    },
-    "references-count": 21,
-    "URL": "https://doi.org/10.3389/fgene.2014.00342",
-    "relation": {
-      "cites": []
-    },
-    "subject": [
-      "Genetics(clinical)",
-      "Molecular Medicine",
-      "Genetics"
-    ],
-    "container-title-short": "Front. Genet.",
-    "short_url": "https://doi.org/gcgmc4",
     "id": "ppGS5h4v"
   },
   {
