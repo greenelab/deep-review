@@ -2,11 +2,11 @@ name: manubot
 channels:
   - conda-forge
 dependencies:
-  - conda-forge::cairo=1.14.6
-  - conda-forge::cffi=1.10.0
-  - conda-forge::jinja2=2.9.6
+  - conda-forge::cairo=1.14.10
+  - conda-forge::cffi=1.11.2
+  - conda-forge::jinja2=2.10
   - conda-forge::pandas=0.21.0
-  - conda-forge::pandoc=2.0.0.1
+  - conda-forge::pandoc=2.0.4
   - conda-forge::python=3.6.3
   - conda-forge::pyyaml=3.12
   - conda-forge::requests=2.18.4
@@ -14,7 +14,7 @@ dependencies:
   - pip:
     - errorhandler==2.0.1
     - ghp-import==0.5.5
-    - git+https://github.com/greenelab/manubot@367f0b5c8046e5ce2f1e5a0ef555ec29a4aefd59
+    - git+https://github.com/greenelab/manubot@855c8491d6e82c88dd126fda901e52c59c78b0d2
     - opentimestamps-client==0.5.0
     - opentimestamps==0.1.0
     - pandoc-eqnos==0.18.1
