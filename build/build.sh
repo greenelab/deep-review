@@ -38,6 +38,7 @@ pandoc --verbose \
   --css=github-pandoc.css \
   --include-in-header=build/assets/analytics.html \
   --include-after-body=build/assets/anchors.html \
+  --include-after-body=build/assets/hypothesis.html \
   --output=output/manuscript.html \
   $INPUT_PATH
 
