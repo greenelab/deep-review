@@ -1244,6 +1244,43 @@
     "id": "15lbUf0as"
   },
   {
+    "arxiv_id": "1511.05942v11",
+    "version": "11",
+    "URL": "https://arxiv.org/abs/1511.05942v11",
+    "title": "Doctor AI: Predicting Clinical Events via Recurrent Neural Networks",
+    "issued": {
+      "date-parts": [
+        [
+          "2015",
+          "11",
+          "18"
+        ]
+      ]
+    },
+    "author": [
+      {
+        "literal": "Edward Choi"
+      },
+      {
+        "literal": "Mohammad Taha Bahadori"
+      },
+      {
+        "literal": "Andy Schuetz"
+      },
+      {
+        "literal": "Walter F. Stewart"
+      },
+      {
+        "literal": "Jimeng Sun"
+      }
+    ],
+    "container-title": "arXiv",
+    "publisher": "arXiv",
+    "abstract": "Leveraging large historical data in electronic health record (EHR), we\ndeveloped Doctor AI, a generic predictive model that covers observed medical\nconditions and medication uses. Doctor AI is a temporal model using recurrent\nneural networks (RNN) and was developed and applied to longitudinal time\nstamped EHR data from 260K patients over 8 years. Encounter records (e.g.\ndiagnosis codes, medication codes or procedure codes) were input to RNN to\npredict (all) the diagnosis and medication categories for a subsequent visit.\nDoctor AI assesses the history of patients to make multilabel predictions (one\nlabel for each diagnosis or medication category). Based on separate blind test\nset evaluation, Doctor AI can perform differential diagnosis with up to 79%\nrecall@30, significantly higher than several baselines. Moreover, we\ndemonstrate great generalizability of Doctor AI by adapting the resulting\nmodels from one institution to another without losing substantial accuracy.",
+    "type": "report",
+    "id": "11tMRPqto"
+  },
+  {
     "arxiv_id": "1511.06051v4",
     "version": "4",
     "URL": "https://arxiv.org/abs/1511.06051v4",
@@ -32009,6 +32046,126 @@
     "relation": {},
     "short_url": "https://doi.org/gcgmbb",
     "id": "iBPOt78R"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          27
+        ]
+      ],
+      "date-time": "2017-10-27T19:02:34Z",
+      "timestamp": 1509130954402
+    },
+    "reference-count": 51,
+    "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+    "issue": "1",
+    "funder": [
+      {
+        "name": "Telstra-Deakin Centre of Excellence in Big Data and Machine Learning",
+        "award": []
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2017,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1109/jbhi.2016.2633963",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          12,
+          1
+        ]
+      ],
+      "date-time": "2016-12-01T21:29:34Z",
+      "timestamp": 1480627774000
+    },
+    "page": "22-30",
+    "source": "Crossref",
+    "is-referenced-by-count": 2,
+    "title": "$\\mathtt {Deepr}$: A Convolutional Net for Medical Records",
+    "prefix": "10.1109",
+    "volume": "21",
+    "author": [
+      {
+        "given": "Phuoc",
+        "family": "Nguyen",
+        "affiliation": []
+      },
+      {
+        "given": "Truyen",
+        "family": "Tran",
+        "affiliation": []
+      },
+      {
+        "given": "Nilmini",
+        "family": "Wickramasinghe",
+        "affiliation": []
+      },
+      {
+        "given": "Svetha",
+        "family": "Venkatesh",
+        "affiliation": []
+      }
+    ],
+    "member": "263",
+    "container-title": "IEEE Journal of Biomedical and Health Informatics",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx7/6221020/7839252/07762861.pdf?arnumber=7762861",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          3
+        ]
+      ],
+      "date-time": "2017-10-03T03:11:52Z",
+      "timestamp": 1507000312000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          1
+        ]
+      ]
+    },
+    "references-count": 51,
+    "URL": "https://doi.org/10.1109/jbhi.2016.2633963",
+    "relation": {},
+    "subject": [
+      "Biotechnology",
+      "Electrical and Electronic Engineering",
+      "Health Information Management",
+      "Computer Science Applications"
+    ],
+    "container-title-short": "IEEE J. Biomed. Health Inform.",
+    "short_url": "https://doi.org/gcgnxx",
+    "id": "1Fiy543WZ"
   },
   {
     "indexed": {

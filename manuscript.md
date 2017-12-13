@@ -27,7 +27,7 @@ author-meta:
 - Marwin H.S. Segler
 - Anthony Gitter
 - Casey S. Greene
-date-meta: '2017-11-22'
+date-meta: '2017-12-13'
 keywords:
 - deep learning
 - review
@@ -48,8 +48,8 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@29620de](https://github.com/greenelab/deep-review/tree/29620de82a96264908afb3d2683d1184021ac3e7)
-on November 22, 2017.
+from [greenelab/deep-review@3ba48ff](https://github.com/greenelab/deep-review/tree/3ba48ffe032673df6900ab0bc54c031d332d25d0)
+on December 13, 2017.
 </em></small>
 
 ## Authors
@@ -793,22 +793,34 @@ processes to distinguish gout from leukemia from uric acid sequences. Later work
 showed that unsupervised feature construction of many features via denoising
 autoencoder neural networks could dramatically reduce the number of labeled
 examples required for subsequent supervised analyses
-[@5x3uMSKi]. In addition, it pointed towards learned
-features being useful for subtyping within a single disease. In a concurrent
+[@5x3uMSKi]. In addition, it pointed towards features
+learned during unsupervised training being useful for visualising and
+stratifying subgroups of patients within a single disease. In a concurrent
 large-scale analysis of EHR data from 700,000 patients, Miotto et al.
 [@WrNCJ9sO] used a deep denoising autoencoder architecture applied
-to the number and co-occurrence of clinical events (DeepPatient) to learn a
-representation of patients. The model was able to predict disease trajectories
+to the number and co-occurrence of clinical events to learn a representation of
+patients (DeepPatient). The model was able to predict disease trajectories
 within one year with over 90% accuracy and patient-level predictions were
-improved by up to 15% when compared to other methods. Razavian et al.
-[@c6MfDdWP] used a set of 18 common lab tests to predict disease onset
-using both CNN and long short-term memory (LSTM) architectures and demonstrated
-an improvement over baseline regression models. However, numerous challenges
-including data integration (patient demographics, family history, laboratory
-tests, text-based patient records, image analysis, genomic data) and better
-handling of streaming temporal data with many features, will need to be overcome
-before we can fully assess the potential of deep learning for this application
-area.
+improved by up to 15% when compared to other methods. Choi et
+al. [@11tMRPqto] attempted to model the longitudinal structure of EHRs
+with a RNN to predict future diagnosis and medication prescriptions on a cohort
+of 260,000 patients followed for 8 years (Doctor AI). Pham et al.
+[@HRXii6Ni] built upon this concept by utilising a RNN with a long 
+short-term memory (LSTM) architecture enabling explicit modelling of patient
+trajectories through the use of memory cells. The method, DeepCare, performed
+better than shallow models or plain RNN when tested on two independent cohorts
+for its ability to predict disease progression, intervention recommendation and
+future risk prediction. Nguyen et al. [@1Fiy543WZ] took a
+different approach and used word embeddings from EHRs to train a CNN that could
+detect and pool local clinical motifs to predict unplanned readmission after six
+months, with performance better than the baseline method (Deepr). Razavian et
+al. [@c6MfDdWP] used a set of 18 common lab tests to predict disease
+onset using both CNN and LSTM architectures and demonstrated an improvement over
+baseline regression models. However, numerous challenges including data
+integration (patient demographics, family history, laboratory tests, text-based
+patient records, image analysis, genomic data) and better handling of streaming
+temporal data with many features, will need to be overcome before we can fully
+assess the potential of deep learning for this application area.
 
 Still, recent work has also revealed domains in which deep networks have proven
 superior to traditional methods. Survival analysis models the time leading to an
@@ -3078,7 +3090,7 @@ To facilitate citation, we [defined](https://github.com/greenelab/deep-review/bl
 We supported citations to the following identifier types (in order of preference): DOIs, PubMed IDs, arXiv IDs, and URLs.
 References were automatically generated from citation metadata by querying APIs to generate [Citation Style Language](http://citationstyles.org/) (CSL) JSON items for each reference.
 [Pandoc](http://pandoc.org/) and [pandoc-citeproc](https://github.com/jgm/pandoc-citeproc) converted the markdown to HTML and PDF, while rendering the formatted citations and references.
-In total, referenced works consisted of 280 DOIs, 5 PubMed records, 108 arXiv manuscripts, and 40 URLs (webpages as well as manuscripts lacking standardized identifiers).
+In total, referenced works consisted of 281 DOIs, 5 PubMed records, 109 arXiv manuscripts, and 40 URLs (webpages as well as manuscripts lacking standardized identifiers).
 
 We implemented continuous analysis so the manuscript was automatically regenerated whenever the source changed [@Qh7xTLwz].
 We configured Travis CI -- a continuous integration service -- to fetch new citation metadata and rebuild the manuscript for every commit.

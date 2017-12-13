@@ -37,6 +37,7 @@ string	citation	standard_citation	citation_id
 @tag:Wallach2015_atom_net	arxiv:1510.02855	arxiv:1510.02855	Z7fd0BYf
 @tag:Lipton2015_lstm	arxiv:1510.07641	arxiv:1510.07641	glyI7H6F
 @arxiv:1511.02386	arxiv:1511.02386	arxiv:1511.02386	15lbUf0as
+@arxiv:1511.05942	arxiv:1511.05942	arxiv:1511.05942	11tMRPqto
 @tag:Moritz2015_sparknet	arxiv:1511.06051	arxiv:1511.06051	rmJZ2Aui
 @tag:He2015_images	arxiv:1512.03385	arxiv:1512.03385	j7KrVyi8
 @tag:Che2015_distill	arxiv:1512.03542	arxiv:1512.03542	14DAmZTDg
@@ -303,6 +304,7 @@ string	citation	standard_citation	citation_id
 @doi:10.1109/icnn.1994.374637	doi:10.1109/icnn.1994.374637	doi:10.1109/icnn.1994.374637	YUms527e
 @tag:Essinger2010_taxonomic	doi:10.1109/IJCNN.2010.5596644	doi:10.1109/ijcnn.2010.5596644	11wVLI2Hn
 @tag:Burlina2016_amd	doi:10.1109/ISBI.2016.7493240	doi:10.1109/isbi.2016.7493240	iBPOt78R
+@doi:10.1109/JBHI.2016.2633963	doi:10.1109/JBHI.2016.2633963	doi:10.1109/jbhi.2016.2633963	1Fiy543WZ
 @doi:10.1109/TCBB.2014.2343960	doi:10.1109/TCBB.2014.2343960	doi:10.1109/tcbb.2014.2343960	ZzaRyGuJ
 @doi:10.1109/tcbb.2014.2343960	doi:10.1109/tcbb.2014.2343960	doi:10.1109/tcbb.2014.2343960	ZzaRyGuJ
 @tag:Liang2015_exprs_cancer	doi:10.1109/TCBB.2014.2377729	doi:10.1109/tcbb.2014.2377729	1EtavGKI4
