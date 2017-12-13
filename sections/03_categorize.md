@@ -527,20 +527,26 @@ manner, and Abadi et al. [@arxiv:1607.00133] show the ability to train deep
 learning classifiers under the differential privacy framework.
 
 These attacks also present a potential hazard for approaches that aim to
-generate data. Choi et al. propose generative adversarial neural networks as a
-tool to make sharable EHR data [@arxiv:1703.06490v1]; however, the authors did
-not take steps to protect the model from such attacks. There are approaches to
-protect models, but they pose their own challenges. Training in a differentially
-private manner provides a limited guarantee that an algorithm's output will be
-equally likely to occur regardless of the participation of any one individual.
-The limit is determined by parameters which provide a quantification of privacy.
-Beaulieu-Jones et al. demonstrate the ability to generate clinical trial data
-with generative adversarial neural networks under the differential privacy
-framework [@doi:10.1101/159756]. Hyland et al. [@arxiv:1706.02633] use recurrent
-generative adversarial networks to generate clinical time-series data under
-differential privacy. Both Beaulieu-Jones et al. and Hyland et al. train models
-on synthetic data generated under differentially private that yield results
-slightly below models trained on the original, real data.
+generate data. Choi et al. propose generative adversarial neural networks (GANs)
+as a tool to make sharable EHR data [@arxiv:1703.06490v1], and Hyland et al.
+[@arxiv:1706.02633v1] showed that recurrent GANs could be used for time series
+data. However, in both cases the authors did not take steps to protect the model
+from such attacks. There are approaches to protect models, but they pose their
+own challenges. Training in a differentially private manner provides a limited
+guarantee that an algorithm's output will be equally likely to occur regardless
+of the participation of any one individual. The limit is determined by
+parameters which provide a quantification of privacy. Beaulieu-Jones et al.
+demonstrated the ability to generate data that preserved properties of the
+SPRINT clinical trial with GANs under the differential privacy framework
+[@doi:10.1101/159756]. In subsequent, concurrent revisions Hyland et al.
+[@arxiv:1706.02633v2] added differential privacy and Beaulieu-Jones et al.
+[@doi:10.1101/159756] included a clinical care dataset leading to a convergence
+of approaches and evaluations. After this convergence, both Beaulieu-Jones et
+al. and Hyland et al. train models on synthetic data generated under
+differentially private and observe performance from a transfer learning
+evaluation that is only slightly below models trained on the original, real
+data. Taken together, these results suggest that differentially private GANs may
+be an attractive way to generate sharable datasets for downstream reanalysis.
 
 Federated learning [@url:http://proceedings.mlr.press/v54/mcmahan17a.html] and
 secure aggregations [@url:https://eprint.iacr.org/2017/281.pdf
