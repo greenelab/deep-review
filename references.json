@@ -1315,6 +1315,37 @@
     "id": "rmJZ2Aui"
   },
   {
+    "arxiv_id": "1511.06434v2",
+    "version": "2",
+    "URL": "https://arxiv.org/abs/1511.06434v2",
+    "title": "Unsupervised Representation Learning with Deep Convolutional Generative\n  Adversarial Networks",
+    "issued": {
+      "date-parts": [
+        [
+          "2015",
+          "11",
+          "19"
+        ]
+      ]
+    },
+    "author": [
+      {
+        "literal": "Alec Radford"
+      },
+      {
+        "literal": "Luke Metz"
+      },
+      {
+        "literal": "Soumith Chintala"
+      }
+    ],
+    "container-title": "arXiv",
+    "publisher": "arXiv",
+    "abstract": "In recent years, supervised learning with convolutional networks (CNNs) has\nseen huge adoption in computer vision applications. Comparatively, unsupervised\nlearning with CNNs has received less attention. In this work we hope to help\nbridge the gap between the success of CNNs for supervised learning and\nunsupervised learning. We introduce a class of CNNs called deep convolutional\ngenerative adversarial networks (DCGANs), that have certain architectural\nconstraints, and demonstrate that they are a strong candidate for unsupervised\nlearning. Training on various image datasets, we show convincing evidence that\nour deep convolutional adversarial pair learns a hierarchy of representations\nfrom object parts to scenes in both the generator and discriminator.\nAdditionally, we use the learned features for novel tasks - demonstrating their\napplicability as general image representations.",
+    "type": "report",
+    "id": "136QC0Zul"
+  },
+  {
     "arxiv_id": "1512.03385v1",
     "version": "1",
     "URL": "https://arxiv.org/abs/1512.03385v1",
@@ -4270,6 +4301,68 @@
     "abstract": "Biomedical events describe complex interactions between various biomedical\nentities. Event trigger is a word or a phrase which typically signifies the\noccurrence of an event. Event trigger identification is an important first step\nin all event extraction methods. However many of the current approaches either\nrely on complex hand-crafted features or consider features only within a\nwindow. In this paper we propose a method that takes the advantage of recurrent\nneural network (RNN) to extract higher level features present across the\nsentence. Thus hidden state representation of RNN along with word and entity\ntype embedding as features avoid relying on the complex hand-crafted features\ngenerated using various NLP toolkits. Our experiments have shown to achieve\nstate-of-art F1-score on Multi Level Event Extraction (MLEE) corpus. We have\nalso performed category-wise analysis of the result and discussed the\nimportance of various features in trigger identification task.",
     "type": "report",
     "id": "z8hmfrmY"
+  },
+  {
+    "arxiv_id": "1708.04692v2",
+    "version": "2",
+    "URL": "https://arxiv.org/abs/1708.04692v2",
+    "title": "GANs for Biological Image Synthesis",
+    "issued": {
+      "date-parts": [
+        [
+          "2017",
+          "08",
+          "15"
+        ]
+      ]
+    },
+    "author": [
+      {
+        "literal": "Anton Osokin"
+      },
+      {
+        "literal": "Anatole Chessel"
+      },
+      {
+        "literal": "Rafael E. Carazo Salas"
+      },
+      {
+        "literal": "Federico Vaggi"
+      }
+    ],
+    "container-title": "arXiv",
+    "publisher": "arXiv",
+    "abstract": "In this paper, we propose a novel application of Generative Adversarial\nNetworks (GAN) to the synthesis of cells imaged by fluorescence microscopy.\nCompared to natural images, cells tend to have a simpler and more geometric\nglobal structure that facilitates image generation. However, the correlation\nbetween the spatial pattern of different fluorescent proteins reflects\nimportant biological functions, and synthesized images have to capture these\nrelationships to be relevant for biological applications. We adapt GANs to the\ntask at hand and propose new models with casual dependencies between image\nchannels that can generate multi-channel images, which would be impossible to\nobtain experimentally. We evaluate our approach using two independent\ntechniques and compare it against sensible baselines. Finally, we demonstrate\nthat by interpolating across the latent space we can mimic the known changes in\nprotein localization that occur through time during the cell cycle, allowing us\nto predict temporal evolution from static images.",
+    "type": "report",
+    "id": "zBCcUQOM"
+  },
+  {
+    "arxiv_id": "1711.04828v1",
+    "version": "1",
+    "URL": "https://arxiv.org/abs/1711.04828v1",
+    "title": "Evaluating deep variational autoencoders trained on pan-cancer gene\n  expression",
+    "issued": {
+      "date-parts": [
+        [
+          "2017",
+          "11",
+          "13"
+        ]
+      ]
+    },
+    "author": [
+      {
+        "literal": "Gregory P. Way"
+      },
+      {
+        "literal": "Casey S. Greene"
+      }
+    ],
+    "container-title": "arXiv",
+    "publisher": "arXiv",
+    "abstract": "Cancer is a heterogeneous disease with diverse molecular etiologies and\noutcomes. The Cancer Genome Atlas (TCGA) has released a large compendium of\nover 10,000 tumors with RNA-seq gene expression measurements. Gene expression\ncaptures the diverse molecular profiles of tumors and can be interrogated to\nreveal differential pathway activations. Deep unsupervised models, including\nVariational Autoencoders (VAE) can be used to reveal these underlying patterns.\nWe compare a one-hidden layer VAE to two alternative VAE architectures with\nincreased depth. We determine the additional capacity marginally improves\nperformance. We train and compare the three VAE architectures to other\ndimensionality reduction techniques including principal components analysis\n(PCA), independent components analysis (ICA), non-negative matrix factorization\n(NMF), and analysis of gene expression by denoising autoencoders (ADAGE). We\ncompare performance in a supervised learning task predicting gene inactivation\npan-cancer and in a latent space analysis of high grade serous ovarian cancer\n(HGSC) subtypes. We do not observe substantial differences across algorithms in\nthe classification task. VAE latent spaces offer biological insights into HGSC\nsubtype biology.",
+    "type": "report",
+    "id": "rMz1OFc6"
   },
   {
     "indexed": {
@@ -31110,6 +31203,239 @@
     "relation": {},
     "short_url": "https://doi.org/gcgk93",
     "id": "1CAw3FaPI"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          27
+        ]
+      ],
+      "date-time": "2017-10-27T22:30:44Z",
+      "timestamp": 1509143444302
+    },
+    "posted": {
+      "date-parts": [
+        [
+          2017,
+          8,
+          11
+        ]
+      ]
+    },
+    "group-title": "Bioinformatics",
+    "reference-count": 0,
+    "publisher": "Cold Spring Harbor Laboratory",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "accepted": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          2
+        ]
+      ]
+    },
+    "abstract": "<jats:p>The Cancer Genome Atlas (TCGA) has profiled over 10,000 tumors across 33 different cancer-types for many genomic features, including gene expression levels. Gene expression measurements capture substantial information about the state of each tumor. Certain classes of deep neural network models are capable of learning a meaningful latent space. Such a latent space could be used to explore and generate hypothetical gene expression profiles under various types of molecular and genetic perturbation. For example, one might wish to use such a model to predict a tumor's response to specific therapies or to characterize complex gene expression activations existing in differential proportions in different tumors. Variational autoencoders (VAEs) are a deep neural network approach capable of generating meaningful latent spaces for image and text data. In this work, we sought to determine the extent to which a VAE can be trained to model cancer gene expression, and whether or not such a VAE would capture biologically-relevant features. In the following report, we introduce a VAE trained on TCGA pan-cancer RNA-seq data, identify specific patterns in the VAE encoded features, and discuss potential merits of the approach. We name our method \"Tybalt\" after an instigative, cat-like character who sets a cascading chain of events in motion in Shakespeare's Romeo and Juliet. From a systems biology perspective, Tybalt could one day aid in cancer stratification or predict specific activated expression patterns that would result from genetic changes or treatment effects.</jats:p>",
+    "DOI": "10.1101/174474",
+    "type": "manuscript",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          8,
+          12
+        ]
+      ],
+      "date-time": "2017-08-12T05:10:19Z",
+      "timestamp": 1502514619000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "Extracting a Biologically Relevant Latent Space from Cancer Transcriptomes with Variational Autoencoders",
+    "prefix": "10.1101",
+    "author": [
+      {
+        "ORCID": "http://orcid.org/0000-0002-0503-9348",
+        "authenticated-orcid": false,
+        "given": "Gregory P.",
+        "family": "Way",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0001-8713-9213",
+        "authenticated-orcid": false,
+        "given": "Casey S.",
+        "family": "Greene",
+        "affiliation": []
+      }
+    ],
+    "member": "246",
+    "container-title": [],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://syndication.highwire.org/content/doi/10.1101/174474",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          3
+        ]
+      ],
+      "date-time": "2017-10-03T05:10:18Z",
+      "timestamp": 1507007418000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          8,
+          11
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "https://doi.org/10.1101/174474",
+    "relation": {},
+    "short_url": "https://doi.org/gcm44d",
+    "id": "aWn0df1m"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          12,
+          3
+        ]
+      ],
+      "date-time": "2017-12-03T06:40:05Z",
+      "timestamp": 1512283205591
+    },
+    "posted": {
+      "date-parts": [
+        [
+          2017,
+          12,
+          2
+        ]
+      ]
+    },
+    "group-title": "Bioinformatics",
+    "reference-count": 0,
+    "publisher": "Cold Spring Harbor Laboratory",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "accepted": {
+      "date-parts": [
+        [
+          2017,
+          12,
+          2
+        ]
+      ]
+    },
+    "abstract": "<jats:p>We explore the application of Generative Adversarial Networks to the domain of morphological profiling of human cultured cells imaged by fluorescence microscopy. When evaluated for their ability to group cell images responding to treatment by chemicals of known classes, we find that adversarially learned representations are superior to autoencoder-based approaches. While currently inferior to classical computer vision and transfer learning, the adversarial framework enables useful visualization of the variation of cellular images due to their generative capabilities.</jats:p>",
+    "DOI": "10.1101/227645",
+    "type": "manuscript",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          12,
+          3
+        ]
+      ],
+      "date-time": "2017-12-03T06:11:04Z",
+      "timestamp": 1512281464000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "CytoGAN: Generative Modeling of Cell Images",
+    "prefix": "10.1101",
+    "author": [
+      {
+        "given": "Peter",
+        "family": "Goldsborough",
+        "affiliation": []
+      },
+      {
+        "given": "Nick",
+        "family": "Pawlowski",
+        "affiliation": []
+      },
+      {
+        "given": "Juan C",
+        "family": "Caicedo",
+        "affiliation": []
+      },
+      {
+        "given": "Shantanu",
+        "family": "Singh",
+        "affiliation": []
+      },
+      {
+        "given": "Anne",
+        "family": "Carpenter",
+        "affiliation": []
+      }
+    ],
+    "member": "246",
+    "container-title": [],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://syndication.highwire.org/content/doi/10.1101/227645",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          12,
+          3
+        ]
+      ],
+      "date-time": "2017-12-03T06:11:21Z",
+      "timestamp": 1512281481000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          12,
+          2
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "https://doi.org/10.1101/227645",
+    "relation": {},
+    "short_url": "https://doi.org/gcm44f",
+    "id": "1EdCkau6d"
   },
   {
     "indexed": {

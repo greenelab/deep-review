@@ -48,7 +48,7 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@fe4bf17](https://github.com/greenelab/deep-review/tree/fe4bf1756dc7b8677d79396f0458f918c6bdffc8)
+from [greenelab/deep-review@6bf71b3](https://github.com/greenelab/deep-review/tree/6bf71b3f397cd50e775f5d4c4782e9d6a330d207)
 on December 15, 2017.
 </em></small>
 
@@ -431,6 +431,7 @@ nuanced differences of each domain to which it is applied.
 | Recurrent neural network (RNN) | NN used for sequential data -- such as time series or genomic data -- by using cycles between nodes in the hidden layers, in contrast to FFNN |
 | Long short-term memory (LSTM) model | Special type of RNN that can learn longer-term dependencies |
 | Autoencoder (AE) | NN that sets the outer layer to be similar to the input layer, used for example in dimension reduction |
+| Variational Autoencoder (VAE) | AE with an added constraint of learning normally distributed features |
 | Generative neural network | NN approach that uses models trained to generate data similar to the collected data, leading to smaller number of parameters |
 | Generative adversarial network (GAN) | Generative NN approach that uses two networks, one that generates samples from training data and one that discriminates between generated and training data |
 | Restricted Bolzmann machine (RBM) | Generative NN that forms the building block for many DL approaches, having a single input layer and a single hidden layer, with no connections between the nodes within each layer |
@@ -2633,6 +2634,21 @@ scores were then used to identify key phrases from a model trained for sentiment
 analysis and obtained superior results compared to scores derived via a
 gradient-based approach.
 
+#### Latent space manipulation
+
+Interpretation of embedded or latent space features learned through generative unsupervised models can reveal underlying patterns otherwise masked in the original input.
+Embedded feature interpretation has been emphasized mostly in image and text based applications [@136QC0Zul; @1GhHIDxuW], but applications to genomic and biomedical domains are increasing.
+
+For example, Way and Greene trained a variational autoencoder (VAE) on gene expression from The Cancer Genome Atlas (TCGA) and use latent space arithmetic to rapidly isolate and interpret gene expression features descriptive of high grade serous ovarian cancer subtypes [@aWn0df1m].
+The most differentiating VAE features were representative of biological processes that are known to distinguish the subtypes.
+Latent space arithmetic with features derived using other compression algorithms were not as informative in this context [@rMz1OFc6].
+Embedding discrete chemical structures with autoencoders and interpreting the learned continuous representations with latent space arithmetic has also facilitated predicting drug-like compounds [@2dU8f4XJ].
+Furthermore, embedding biomedical text into lower dimensional latent spaces have improved name entity recognition in a variety of tasks including annotating clinical abbreviations, genes, cell lines, and drug names [@OuoHShLI; @14uLNRP38; @pWpK5WUq; @LeLKNlsR].
+
+Other approaches have used interpolation through latent space embeddings learned by GANs to interpret unobserved intermediate states.
+For example, Osokin et al. trained GANs on two-channel fluorescent microscopy images to interpret intermediate states of protein localization in yeast cells [@zBCcUQOM].
+Goldsborough et al. trained a GAN on fluorescent microscopy images and used latent space interpolation and arithmetic to reveal underlying responses to small molecule perturbations in cell lines [@1EdCkau6d].
+
 #### Miscellaneous approaches
 
 Toward quantifying the uncertainty of predictions, there has been a renewed
@@ -2993,7 +3009,7 @@ additional set of CLIP-seq, knockdown, and over-expression based input features.
 The integrative deep model generalized well for combined data, offering a large
 performance improvement for alternative splicing event estimation. Chaudhary et
 al. [@obeRVckH] trained a deep autoencoder model
-jointly on RNA-seq, miRNA-seq, and methylation data from The Cancer Genome Atlas
+jointly on RNA-seq, miRNA-seq, and methylation data from TCGA
 to predict survival subgroups of hepatocellular carcinoma patients. This
 multimodal approach that treated different omic data types as different
 modalities outperformed both traditional methods (principal component analysis)
@@ -3192,7 +3208,7 @@ To facilitate citation, we [defined](https://github.com/greenelab/deep-review/bl
 We supported citations to the following identifier types (in order of preference): DOIs, PubMed IDs, arXiv IDs, and URLs.
 References were automatically generated from citation metadata by querying APIs to generate [Citation Style Language](http://citationstyles.org/) (CSL) JSON items for each reference.
 [Pandoc](http://pandoc.org/) and [pandoc-citeproc](https://github.com/jgm/pandoc-citeproc) converted the markdown to HTML and PDF, while rendering the formatted citations and references.
-In total, referenced works consisted of 306 DOIs, 6 PubMed records, 111 arXiv manuscripts, and 42 URLs (webpages as well as manuscripts lacking standardized identifiers).
+In total, referenced works consisted of 308 DOIs, 6 PubMed records, 114 arXiv manuscripts, and 42 URLs (webpages as well as manuscripts lacking standardized identifiers).
 
 We implemented continuous analysis so the manuscript was automatically regenerated whenever the source changed [@Qh7xTLwz].
 We configured Travis CI -- a continuous integration service -- to fetch new citation metadata and rebuild the manuscript for every commit.

@@ -40,6 +40,7 @@ string	citation	standard_citation	citation_id
 @arxiv:1511.02386	arxiv:1511.02386	arxiv:1511.02386	15lbUf0as
 @arxiv:1511.05942	arxiv:1511.05942	arxiv:1511.05942	11tMRPqto
 @tag:Moritz2015_sparknet	arxiv:1511.06051	arxiv:1511.06051	rmJZ2Aui
+@tag:Radford_dcgan	arxiv:1511.06434v2	arxiv:1511.06434v2	136QC0Zul
 @tag:He2015_images	arxiv:1512.03385	arxiv:1512.03385	j7KrVyi8
 @tag:Che2015_distill	arxiv:1512.03542	arxiv:1512.03542	14DAmZTDg
 @arxiv:1602.00357	arxiv:1602.00357	arxiv:1602.00357	HRXii6Ni
@@ -115,6 +116,8 @@ string	citation	standard_citation	citation_id
 @arxiv:1705.02315	arxiv:1705.02315	arxiv:1705.02315	PGi9g7yV
 @arxiv:1705.03261	arxiv:1705.03261	arxiv:1705.03261	M6JCKCLX
 @arxiv:1705.09516	arxiv:1705.09516	arxiv:1705.09516	z8hmfrmY
+@tag:Osokin2017_biogan	arxiv:1708.04692	arxiv:1708.04692	zBCcUQOM
+@tag:WayGreene2017_eval	arxiv:1711.04828	arxiv:1711.04828	rMz1OFc6
 @doi:10.1001/jama.2016.17216	doi:10.1001/jama.2016.17216	doi:10.1001/jama.2016.17216	1mJW6umJ
 @tag:Gulshan2016_dt	doi:10.1001/jama.2016.17216	doi:10.1001/jama.2016.17216	1mJW6umJ
 @doi:10.1002/9783527628766	doi:10.1002/9783527628766	doi:10.1002/9783527628766	17eGl2pn9
@@ -297,6 +300,8 @@ string	citation	standard_citation	citation_id
 @tag:Chaudhary2017_multiom_liver_cancer	doi:10.1101/114892	doi:10.1101/114892	obeRVckH
 @doi:10.1101/125229	doi:10.1101/125229	doi:10.1101/125229	2M3zXijc
 @doi:10.1101/138685	doi:10.1101/138685	doi:10.1101/138685	1CAw3FaPI
+@tag:WayGreene2017_tybalt	doi:10.1101/174474	doi:10.1101/174474	aWn0df1m
+@tag:Goldsborough2017_cytogan	doi:10.1101/227645	doi:10.1101/227645	1EdCkau6d
 @doi:10.1101/gr.110254.110	doi:10.1101/gr.110254.110	doi:10.1101/gr.110254.110	G0J9P3Ln
 @doi:10.1101/gr.200535.115	doi:10.1101/gr.200535.115	doi:10.1101/gr.200535.115	2CbHXoFn
 @tag:Kelley2016_basset	doi:10.1101/gr.200535.115	doi:10.1101/gr.200535.115	2CbHXoFn
