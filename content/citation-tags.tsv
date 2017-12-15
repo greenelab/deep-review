@@ -77,6 +77,7 @@ Geras2017_multiview_mamm	doi:10.1038/nrg.2015.16
 Gerstein2016_scaling	doi:10.1186/s13059-016-0917-0
 Ghandi2014_enhanced	doi:10.1371/journal.pcbi.1003711
 Ghosh1992_sequence	doi:10.1117/12.140112
+Goldsborough2017_cytogan	doi:10.1101/227645
 Gomezb2016_automatic	arxiv:1610.02415
 Graphlab	doi:10.14778/2212351.2212354
 Groop1986_islet	doi:10.2337/diab.35.2.237
@@ -167,6 +168,7 @@ Nie2016_3d_survival	doi:10.1007/978-3-319-46723-8_25
 NIH2016_genome_cost	url:https://www.genome.gov/27565109/the-cost-of-sequencing-a-human-genome/
 Nih_curiosity	url:https://www.nigms.nih.gov/Education/Documents/curiosity.pdf
 Olivecrona2017_drug_design	arxiv:1704.07555
+Osokin2017_biogan	arxiv:1708.04692
 onecodex	url:https://www.onecodex.com/
 Papernot2017_pate	url:https://openreview.net/forum?id=HkwoSDPgg
 Park2016_deepmirgene	arxiv:1605.00017
@@ -181,6 +183,7 @@ Qin2017_onehot	doi:10.1371/journal.pcbi.1005403
 Qiu2017_graph_embedding	doi:10.1101/110668
 Ragoza2016_protein	arxiv:1612.02751
 RAD2010_view_cc	doi:10.1145/1721654.1721672
+Radford_dcgan	arxiv:1511.06434v2
 Rajkomar2017_radiographs	doi:10.1007/s10278-016-9914-9
 Ramsundar2015_multitask_drug	arxiv:1502.02072
 Ranganath2016_deep	arxiv:1608.02158
@@ -243,6 +246,8 @@ Wallach2015_atom_net	arxiv:1510.02855
 Wang2016_breast_cancer	arxiv:1606.05718
 Wang2016_protein_contact	doi:10.1371/journal.pcbi.1005324
 Wasson1985_clinical	doi:10.1056/NEJM198509263131306
+WayGreene2017_eval	arxiv:1711.04828
+WayGreene2017_tybalt	doi:10.1101/174474
 Word2Vec	arxiv:1301.3781
 wgsquikr	doi:10.1371/journal.pone.0091784
 Wu2017_molecule_net	arxiv:1703.00564
