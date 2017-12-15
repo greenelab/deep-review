@@ -61,7 +61,7 @@
 <h1 class="title">Opportunities and obstacles for deep learning in biology and medicine</h1>
 </header>
 <p><em>A DOI-citable preprint of this manuscript is available at <a href="https://doi.org/10.1101/142760" class="uri">https://doi.org/10.1101/142760</a></em>.</p>
-<p><small><em> This manuscript was automatically generated from <a href="https://github.com/greenelab/deep-review/tree/fb431ab2534e8b1fde64c07f9c2c52b01e55799e">greenelab/deep-review@fb431ab</a> on December 15, 2017. </em></small></p>
+<p><small><em> This manuscript was automatically generated from <a href="https://github.com/greenelab/deep-review/tree/fe4bf1756dc7b8677d79396f0458f918c6bdffc8">greenelab/deep-review@fe4bf17</a> on December 15, 2017. </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
 <li><p><strong>Travers Ching</strong><br> <img src="images/orcid.svg" alt="ORCID icon" width="13" height="13" /> <a href="https://orcid.org/0000-0002-5577-3516">0000-0002-5577-3516</a> · <img src="images/github.svg" alt="GitHub icon" width="13" height="13" /> <a href="https://github.com/traversc">traversc</a><br> <small> Molecular Biosciences and Bioengineering Graduate Program, University of Hawaii at Manoa, Honolulu, HI </small></p></li>
@@ -99,75 +99,76 @@
 <p>The term <em>deep learning</em> has come to refer to a collection of new techniques that, together, have demonstrated breakthrough gains over existing best-in-class machine learning algorithms across several fields. For example, over the past five years these methods have revolutionized image classification and speech recognition due to their flexibility and high accuracy <span class="citation" data-cites="BeijBSRE">[<a href="#ref-BeijBSRE">2</a>]</span>. More recently, deep learning algorithms have shown promise in fields as diverse as high-energy physics <span class="citation" data-cites="TDruxF1s">[<a href="#ref-TDruxF1s">3</a>]</span>, dermatology <span class="citation" data-cites="XnYNYoYB">[<a href="#ref-XnYNYoYB">4</a>]</span>, and translation among written languages <span class="citation" data-cites="4TK06zOf">[<a href="#ref-4TK06zOf">5</a>]</span>. Across fields, “off-the-shelf” implementations of these algorithms have produced comparable or higher accuracy than previous best-in-class methods that required years of extensive customization, and specialized implementations are now being used at industrial scales.</p>
 <p>Deep learning approaches grew from research in neural networks, which were first proposed in 1943 <span class="citation" data-cites="1HVDhhwpK">[<a href="#ref-1HVDhhwpK">6</a>]</span> as a model for how our brains process information. The history of neural networks is interesting in its own right <span class="citation" data-cites="1G5eCiq4d">[<a href="#ref-1G5eCiq4d">7</a>]</span>. In neural networks, inputs are fed into a hidden layer, which feeds into one or more hidden layers, which eventually link to an output layer. A layer consists of a set of nodes, usually called “features” or “units,” which are connected via edges to the immediately earlier and the immediately deeper layers. The nodes of the input layer generally consist of the variables being measured in the dataset of interest – for example, each node could represent the intensity value of a specific pixel in an image processing application or a gene expression value in a transcriptomics experiment. The neural networks used for deep learning have multiple hidden layers. Each layer essentially performs feature construction for the layers before it. The training process used often allows layers deeper in the network to contribute to the refinement of earlier layers. For this reason, these algorithms can automatically engineer features that are suitable for many tasks and customize those features for one or more specific tasks.</p>
 <p>Deep learning does many of the same things as more familiar machine learning approaches. In particular, deep learning approaches can be used both in <em>supervised</em> applications – where the goal is to accurately predict one or more labels or outcomes associated with each data point – in the place of regression approaches, as well as in <em>unsupervised</em>, or “exploratory” applications – where the goal is to summarize, explain, or identify interesting patterns in a data set – as a form of clustering. Deep learning methods may in fact combine both of these steps. When sufficient data are available and labeled, these methods construct features tuned to a specific problem and combine those features into a predictor. In fact, if the dataset is “labeled” with binary classes, a simple neural network with no hidden layers and no cycles between units is equivalent to logistic regression if the output layer is a sigmoid (logistic) function of the input layer. Similarly, for continuous outcomes, linear regression can be seen as a simple neural network. Thus, in some ways, supervised deep learning approaches can be seen as a generalization of regression models that allow for greater flexibility. Recently, hardware improvements and very large training datasets have allowed these deep learning techniques to surpass other machine learning algorithms for many problems. In a famous and early example, scientists from Google demonstrated that a neural network “discovered” that cats, faces, and pedestrians were important components of online videos <span class="citation" data-cites="IiNJE32f">[<a href="#ref-IiNJE32f">8</a>]</span> without being told to look for them. What if, more generally, deep learning could solve the challenges presented by the growth of data in biomedicine? Could these algorithms identify the “cats” hidden in our data – the patterns unknown to the researcher – and suggest ways to act on them? In this review, we examine deep learning’s application to biomedical science and discuss the unique challenges that biomedical data pose for deep learning methods.</p>
-<p>Several important advances make the current surge of work done in this area possible. Easy-to-use software packages have brought the techniques of the field out of the specialist’s toolkit to a broad community of computational scientists. Additionally, new techniques for fast training have enabled their application to larger datasets <span class="citation" data-cites="3qm8sXnB">[<a href="#ref-3qm8sXnB">9</a>]</span>. Dropout of nodes, edges, and layers makes networks more robust, even when the number of parameters is very large. New neural network approaches are also well-suited for addressing distinct challenges. For example, neural networks structured as autoencoders or as adversarial networks require no labels and are now regularly used for unsupervised tasks. In this review, we do not exhaustively discuss the different types of deep neural network architectures; an overview of the principal terms used herein is given in Table 1. A recent book from Goodfellow et al. <span class="citation" data-cites="yg8NW0K7">[<a href="#ref-yg8NW0K7">10</a>]</span> covers these in detail. Finally, the larger datasets now available are also sufficient for fitting the many parameters that exist for deep neural networks. The convergence of these factors currently makes deep learning extremely adaptable and capable of addressing the nuanced differences of each domain to which it is applied.</p>
-<p>Table 1. Glossary table</p>
-<table style="width:43%;">
+<p>Several important advances make the current surge of work done in this area possible. Easy-to-use software packages have brought the techniques of the field out of the specialist’s toolkit to a broad community of computational scientists. Additionally, new techniques for fast training have enabled their application to larger datasets <span class="citation" data-cites="3qm8sXnB">[<a href="#ref-3qm8sXnB">9</a>]</span>. Dropout of nodes, edges, and layers makes networks more robust, even when the number of parameters is very large. New neural network approaches are also well-suited for addressing distinct challenges. For example, neural networks structured as autoencoders or as adversarial networks require no labels and are now regularly used for unsupervised tasks. In this review, we do not exhaustively discuss the different types of deep neural network architectures; an overview of the principal terms used herein is given in Table <a href="#tbl:glossary">1</a>. A recent book from Goodfellow et al. covers these in detail <span class="citation" data-cites="yg8NW0K7">[<a href="#ref-yg8NW0K7">10</a>]</span>. Finally, the larger datasets now available are also sufficient for fitting the many parameters that exist for deep neural networks. The convergence of these factors currently makes deep learning extremely adaptable and capable of addressing the nuanced differences of each domain to which it is applied.</p>
+<a name="tbl:glossary"></a>
+<table>
+<caption>Table 1: Glossary. </caption>
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 22%" />
+<col style="width: 23%" />
+<col style="width: 76%" />
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;">Term</th>
-<th style="text-align: left;">Definition</th>
+<th>Term</th>
+<th>Definition</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">Neural network (NN)</td>
-<td style="text-align: left;">Machine-learning approach where inputs are fed into one or more hidden layers, producing an outer layer</td>
+<td>Neural network (NN)</td>
+<td>Machine-learning approach where inputs are fed into one or more hidden layers, producing an outer layer</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Deep learning (DL) approach</td>
-<td style="text-align: left;">NN with multiple hidden layers</td>
+<td>Deep learning (DL) approach</td>
+<td>NN with multiple hidden layers</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Supervised learning</td>
-<td style="text-align: left;">Machine-learning approaches with goal of prediction of labels or outcomes</td>
+<td>Supervised learning</td>
+<td>Machine-learning approaches with goal of prediction of labels or outcomes</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Unsupervised learning</td>
-<td style="text-align: left;">Machine-learning approaches with goal of data summarization or pattern identification</td>
+<td>Unsupervised learning</td>
+<td>Machine-learning approaches with goal of data summarization or pattern identification</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Convolutional neural network (CNN)</td>
-<td style="text-align: left;">NN used for grid data – such as images or equally-spaced time points - that considers convolutions instead of linear transformations, leading to increased sparsity and thus improved efficiency</td>
+<td>Convolutional neural network (CNN)</td>
+<td>NN used for grid data – such as images or equally-spaced time points - that considers convolutions instead of linear transformations, leading to increased sparsity and thus improved efficiency</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Feed-forward neural network (FFNN)</td>
-<td style="text-align: left;">NN that does not have cycles between nodes in the same layer</td>
+<td>Feed-forward neural network (FFNN)</td>
+<td>NN that does not have cycles between nodes in the same layer</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Multi-layer perceptron (MLP)</td>
-<td style="text-align: left;">Type of FFNN with at least one hidden layer where each deeper layer is a nonlinear function of each earlier layer</td>
+<td>Multi-layer perceptron (MLP)</td>
+<td>Type of FFNN with at least one hidden layer where each deeper layer is a nonlinear function of each earlier layer</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Recurrent neural network (RNN)</td>
-<td style="text-align: left;">NN used for sequential data – such as time series or genomic data – by using cycles between nodes in the hidden layers, in contrast to FFNN</td>
+<td>Recurrent neural network (RNN)</td>
+<td>NN used for sequential data – such as time series or genomic data – by using cycles between nodes in the hidden layers, in contrast to FFNN</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Long short-term memory (LSTM) model</td>
-<td style="text-align: left;">Special type of RNN that can learn longer-term dependencies</td>
+<td>Long short-term memory (LSTM) model</td>
+<td>Special type of RNN that can learn longer-term dependencies</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Autoencoder (AE)</td>
-<td style="text-align: left;">NN that sets the outer layer to be similar to the input layer, used for example in dimension reduction</td>
+<td>Autoencoder (AE)</td>
+<td>NN that sets the outer layer to be similar to the input layer, used for example in dimension reduction</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Generative neural network</td>
-<td style="text-align: left;">NN approach that uses models trained to generate data similar to the collected data, leading to smaller number of parameters</td>
+<td>Generative neural network</td>
+<td>NN approach that uses models trained to generate data similar to the collected data, leading to smaller number of parameters</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Generative adversarial network (GAN)</td>
-<td style="text-align: left;">Generative NN approach that uses two networks, one that generates samples from training data and one that discriminates between generated and training data</td>
+<td>Generative adversarial network (GAN)</td>
+<td>Generative NN approach that uses two networks, one that generates samples from training data and one that discriminates between generated and training data</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Restricted Bolzmann machine (RBM)</td>
-<td style="text-align: left;">Generative NN that forms the building block for many DL approaches, having a single input layer and a single hidden layer, with no connections between the nodes within each layer</td>
+<td>Restricted Bolzmann machine (RBM)</td>
+<td>Generative NN that forms the building block for many DL approaches, having a single input layer and a single hidden layer, with no connections between the nodes within each layer</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Deep belief network (DBN)</td>
-<td style="text-align: left;">Generative NN with several hidden layers, which can be obtained from combining multiple RBMs</td>
+<td>Deep belief network (DBN)</td>
+<td>Generative NN with several hidden layers, which can be obtained from combining multiple RBMs</td>
 </tr>
 </tbody>
 </table>

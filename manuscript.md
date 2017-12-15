@@ -48,7 +48,7 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@fb431ab](https://github.com/greenelab/deep-review/tree/fb431ab2534e8b1fde64c07f9c2c52b01e55799e)
+from [greenelab/deep-review@fe4bf17](https://github.com/greenelab/deep-review/tree/fe4bf1756dc7b8677d79396f0458f918c6bdffc8)
 on December 15, 2017.
 </em></small>
 
@@ -412,31 +412,32 @@ distinct challenges. For example, neural networks structured as autoencoders or
 as adversarial networks require no labels and are now regularly used for
 unsupervised tasks. In this review, we do not exhaustively discuss the different
 types of deep neural network architectures; an overview of the principal terms used
-herein is given in Table 1. A recent book from Goodfellow et al.
-[@yg8NW0K7] covers these in detail. Finally, the
+herein is given in Table @tbl:glossary. A recent book from Goodfellow et al.
+covers these in detail [@yg8NW0K7]. Finally, the
 larger datasets now available are also sufficient for fitting the many
 parameters that exist for deep neural networks. The convergence of these factors
 currently makes deep learning extremely adaptable and capable of addressing the
 nuanced differences of each domain to which it is applied. 
 
-Table 1. Glossary table
-
-| Term          | Definition           |
-| :------------- |:--------------|
-| Neural network  (NN)   | Machine-learning approach where inputs are fed into one or more hidden layers, producing an outer layer |
-| Deep learning (DL) approach      | NN with multiple hidden layers      | 
-| Supervised learning | Machine-learning approaches with goal of prediction of labels or outcomes     | 
+| Term | Definition |
+|----------------------------|-------------------------------------------------------------------------------------------|
+| Neural network  (NN) | Machine-learning approach where inputs are fed into one or more hidden layers, producing an outer layer |
+| Deep learning (DL) approach | NN with multiple hidden layers | 
+| Supervised learning | Machine-learning approaches with goal of prediction of labels or outcomes | 
 | Unsupervised learning | Machine-learning approaches with goal of data summarization or pattern identification |
 | Convolutional neural network (CNN) | NN used for grid data -- such as images or equally-spaced time points - that considers convolutions instead of linear transformations, leading to increased sparsity and thus improved efficiency |
 | Feed-forward neural network (FFNN) | NN that does not have cycles between nodes in the same layer |
 | Multi-layer perceptron (MLP) | Type of FFNN with at least one hidden layer where each deeper layer is a nonlinear function of each earlier layer |
-| Recurrent neural network (RNN) | NN used for sequential data -- such as time series or genomic data -- by using cycles between nodes in the hidden layers, in contrast to FFNN  |
+| Recurrent neural network (RNN) | NN used for sequential data -- such as time series or genomic data -- by using cycles between nodes in the hidden layers, in contrast to FFNN |
 | Long short-term memory (LSTM) model | Special type of RNN that can learn longer-term dependencies |
 | Autoencoder (AE) | NN that sets the outer layer to be similar to the input layer, used for example in dimension reduction |
 | Generative neural network | NN approach that uses models trained to generate data similar to the collected data, leading to smaller number of parameters |
 | Generative adversarial network (GAN) | Generative NN approach that uses two networks, one that generates samples from training data and one that discriminates between generated and training data |
 | Restricted Bolzmann machine (RBM) | Generative NN that forms the building block for many DL approaches, having a single input layer and a single hidden layer, with no connections between the nodes within each layer |
 | Deep belief network (DBN) | Generative NN with several hidden layers, which can be obtained from combining multiple RBMs |
+
+Table: Glossary.
+{#tbl:glossary}
 
 While deep learning shows increased flexibility over other machine learning approaches, as 
 seen in the remainder of this review, it requires large training sets in order to fit
