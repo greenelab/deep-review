@@ -4207,6 +4207,71 @@
     "id": "PGi9g7yV"
   },
   {
+    "arxiv_id": "1705.03261v2",
+    "version": "2",
+    "URL": "https://arxiv.org/abs/1705.03261v2",
+    "title": "Drug-drug Interaction Extraction via Recurrent Neural Network with\n  Multiple Attention Layers",
+    "issued": {
+      "date-parts": [
+        [
+          "2017",
+          "05",
+          "09"
+        ]
+      ]
+    },
+    "author": [
+      {
+        "literal": "Zibo Yi"
+      },
+      {
+        "literal": "Shasha Li"
+      },
+      {
+        "literal": "Jie Yu"
+      },
+      {
+        "literal": "Qingbo Wu"
+      }
+    ],
+    "container-title": "arXiv",
+    "publisher": "arXiv",
+    "abstract": "Drug-drug interaction (DDI) is a vital information when physicians and\npharmacists intend to co-administer two or more drugs. Thus, several DDI\ndatabases are constructed to avoid mistakenly combined use. In recent years,\nautomatically extracting DDIs from biomedical text has drawn researchers'\nattention. However, the existing work utilize either complex feature\nengineering or NLP tools, both of which are insufficient for sentence\ncomprehension. Inspired by the deep learning approaches in natural language\nprocessing, we propose a recur- rent neural network model with multiple\nattention layers for DDI classification. We evaluate our model on 2013 SemEval\nDDIExtraction dataset. The experiments show that our model classifies most of\nthe drug pairs into correct DDI categories, which outperforms the existing NLP\nor deep learning methods.",
+    "type": "report",
+    "id": "M6JCKCLX"
+  },
+  {
+    "arxiv_id": "1705.09516v1",
+    "version": "1",
+    "URL": "https://arxiv.org/abs/1705.09516v1",
+    "title": "Biomedical Event Trigger Identification Using Bidirectional Recurrent\n  Neural Network Based Models",
+    "issued": {
+      "date-parts": [
+        [
+          "2017",
+          "05",
+          "26"
+        ]
+      ]
+    },
+    "author": [
+      {
+        "literal": "Patchigolla V S S Rahul"
+      },
+      {
+        "literal": "Sunil Kumar Sahu"
+      },
+      {
+        "literal": "Ashish Anand"
+      }
+    ],
+    "container-title": "arXiv",
+    "publisher": "arXiv",
+    "abstract": "Biomedical events describe complex interactions between various biomedical\nentities. Event trigger is a word or a phrase which typically signifies the\noccurrence of an event. Event trigger identification is an important first step\nin all event extraction methods. However many of the current approaches either\nrely on complex hand-crafted features or consider features only within a\nwindow. In this paper we propose a method that takes the advantage of recurrent\nneural network (RNN) to extract higher level features present across the\nsentence. Thus hidden state representation of RNN along with word and entity\ntype embedding as features avoid relying on the complex hand-crafted features\ngenerated using various NLP toolkits. Our experiments have shown to achieve\nstate-of-art F1-score on Multi Level Event Extraction (MLEE) corpus. We have\nalso performed category-wise analysis of the result and discussed the\nimportance of various features in trigger identification task.",
+    "type": "report",
+    "id": "z8hmfrmY"
+  },
+  {
     "indexed": {
       "date-parts": [
         [
@@ -20971,108 +21036,6 @@
       "date-parts": [
         [
           2017,
-          11,
-          2
-        ]
-      ],
-      "date-time": "2017-11-02T18:02:11Z",
-      "timestamp": 1509645731900
-    },
-    "reference-count": 68,
-    "publisher": "Springer Nature",
-    "issue": "6",
-    "content-domain": {
-      "domain": [],
-      "crossmark-restriction": false
-    },
-    "DOI": "10.1038/nrg3920",
-    "type": "article-journal",
-    "created": {
-      "date-parts": [
-        [
-          2015,
-          5,
-          7
-        ]
-      ],
-      "date-time": "2015-05-07T07:07:44Z",
-      "timestamp": 1430982464000
-    },
-    "page": "321-332",
-    "source": "Crossref",
-    "is-referenced-by-count": 96,
-    "title": "Machine learning applications in genetics and genomics",
-    "prefix": "10.1038",
-    "volume": "16",
-    "author": [
-      {
-        "given": "Maxwell W.",
-        "family": "Libbrecht",
-        "affiliation": []
-      },
-      {
-        "given": "William Stafford",
-        "family": "Noble",
-        "affiliation": []
-      }
-    ],
-    "member": "339",
-    "published-online": {
-      "date-parts": [
-        [
-          2015,
-          5,
-          7
-        ]
-      ]
-    },
-    "container-title": "Nature Reviews Genetics",
-    "original-title": [],
-    "deposited": {
-      "date-parts": [
-        [
-          2017,
-          6,
-          23
-        ]
-      ],
-      "date-time": "2017-06-23T11:06:24Z",
-      "timestamp": 1498215984000
-    },
-    "score": 1.0,
-    "subtitle": [],
-    "short-title": [],
-    "issued": {
-      "date-parts": [
-        [
-          2015,
-          5,
-          7
-        ]
-      ]
-    },
-    "references-count": 68,
-    "alternative-id": [
-      "nrg3920"
-    ],
-    "URL": "https://doi.org/10.1038/nrg3920",
-    "relation": {
-      "cites": []
-    },
-    "subject": [
-      "Genetics(clinical)",
-      "Genetics",
-      "Molecular Biology"
-    ],
-    "container-title-short": "Nat Rev Genet",
-    "short_url": "https://doi.org/gcgk8p",
-    "id": "TNPWa7Br"
-  },
-  {
-    "indexed": {
-      "date-parts": [
-        [
-          2017,
           10,
           27
         ]
@@ -23934,6 +23897,127 @@
           26
         ]
       ],
+      "date-time": "2017-10-26T15:55:00Z",
+      "timestamp": 1509033300075
+    },
+    "reference-count": 54,
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "1",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2010,
+          1,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1093/bioinformatics/btp602",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2009,
+          10,
+          23
+        ]
+      ],
+      "date-time": "2009-10-23T01:53:19Z",
+      "timestamp": 1256262799000
+    },
+    "page": "111-119",
+    "source": "Crossref",
+    "is-referenced-by-count": 40,
+    "title": "Evaluation of linguistic features useful in extraction of interactions from PubMed; Application to annotating known, high-throughput and predicted interactions in I2D",
+    "prefix": "10.1093",
+    "volume": "26",
+    "author": [
+      {
+        "given": "Yun",
+        "family": "Niu",
+        "affiliation": []
+      },
+      {
+        "given": "David",
+        "family": "Otasek",
+        "affiliation": []
+      },
+      {
+        "given": "Igor",
+        "family": "Jurisica",
+        "affiliation": []
+      }
+    ],
+    "member": "286",
+    "published-online": {
+      "date-parts": [
+        [
+          2009,
+          10,
+          22
+        ]
+      ]
+    },
+    "container-title": "Bioinformatics",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://academic.oup.com/bioinformatics/article-pdf/26/1/111/16892741/btp602.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          8,
+          22
+        ]
+      ],
+      "date-time": "2017-08-22T16:23:06Z",
+      "timestamp": 1503418986000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2009,
+          10,
+          22
+        ]
+      ]
+    },
+    "references-count": 54,
+    "URL": "https://doi.org/10.1093/bioinformatics/btp602",
+    "relation": {},
+    "subject": [
+      "Statistics and Probability",
+      "Computational Theory and Mathematics",
+      "Biochemistry",
+      "Molecular Biology",
+      "Computational Mathematics",
+      "Computer Science Applications"
+    ],
+    "short_url": "https://doi.org/fv4nfs",
+    "id": "X909h5sz"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          26
+        ]
+      ],
       "date-time": "2017-10-26T11:49:43Z",
       "timestamp": 1509018583197
     },
@@ -24413,6 +24497,133 @@
           26
         ]
       ],
+      "date-time": "2017-10-26T06:27:17Z",
+      "timestamp": 1508999237505
+    },
+    "reference-count": 24,
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "11",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2013,
+          6,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1093/bioinformatics/btt156",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2013,
+          4,
+          6
+        ]
+      ],
+      "date-time": "2013-04-06T04:19:30Z",
+      "timestamp": 1365221970000
+    },
+    "page": "1433-1439",
+    "source": "Crossref",
+    "is-referenced-by-count": 41,
+    "title": "tmVar: a text mining approach for extracting sequence variants in biomedical literature",
+    "prefix": "10.1093",
+    "volume": "29",
+    "author": [
+      {
+        "given": "C.-H.",
+        "family": "Wei",
+        "affiliation": []
+      },
+      {
+        "given": "B. R.",
+        "family": "Harris",
+        "affiliation": []
+      },
+      {
+        "given": "H.-Y.",
+        "family": "Kao",
+        "affiliation": []
+      },
+      {
+        "given": "Z.",
+        "family": "Lu",
+        "affiliation": []
+      }
+    ],
+    "member": "286",
+    "published-online": {
+      "date-parts": [
+        [
+          2013,
+          4,
+          5
+        ]
+      ]
+    },
+    "container-title": "Bioinformatics",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://academic.oup.com/bioinformatics/article-pdf/29/11/1433/587543/btt156.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          8,
+          22
+        ]
+      ],
+      "date-time": "2017-08-22T17:20:23Z",
+      "timestamp": 1503422423000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2013,
+          4,
+          5
+        ]
+      ]
+    },
+    "references-count": 24,
+    "URL": "https://doi.org/10.1093/bioinformatics/btt156",
+    "relation": {},
+    "subject": [
+      "Statistics and Probability",
+      "Computational Theory and Mathematics",
+      "Biochemistry",
+      "Molecular Biology",
+      "Computational Mathematics",
+      "Computer Science Applications"
+    ],
+    "container-title-short": "Bioinformatics",
+    "short_url": "https://doi.org/f4zfd9",
+    "id": "19G2RXgfp"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          26
+        ]
+      ],
       "date-time": "2017-10-26T11:14:49Z",
       "timestamp": 1509016489123
     },
@@ -24654,6 +24865,128 @@
     ],
     "short_url": "https://doi.org/f48vw6",
     "id": "189TQrQA9"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          12,
+          13
+        ]
+      ],
+      "date-time": "2017-12-13T20:22:22Z",
+      "timestamp": 1513196542536
+    },
+    "reference-count": 23,
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "22",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2013,
+          11,
+          15
+        ]
+      ]
+    },
+    "DOI": "10.1093/bioinformatics/btt474",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2013,
+          8,
+          23
+        ]
+      ],
+      "date-time": "2013-08-23T00:58:43Z",
+      "timestamp": 1377219523000
+    },
+    "page": "2909-2917",
+    "source": "Crossref",
+    "is-referenced-by-count": 86,
+    "title": "DNorm: disease name normalization with pairwise learning to rank",
+    "prefix": "10.1093",
+    "volume": "29",
+    "author": [
+      {
+        "given": "R.",
+        "family": "Leaman",
+        "affiliation": []
+      },
+      {
+        "given": "R.",
+        "family": "Islamaj Dogan",
+        "affiliation": []
+      },
+      {
+        "given": "Z.",
+        "family": "Lu",
+        "affiliation": []
+      }
+    ],
+    "member": "286",
+    "published-online": {
+      "date-parts": [
+        [
+          2013,
+          8,
+          21
+        ]
+      ]
+    },
+    "container-title": "Bioinformatics",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://academic.oup.com/bioinformatics/article-pdf/29/22/2909/888873/btt474.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          8,
+          22
+        ]
+      ],
+      "date-time": "2017-08-22T20:07:27Z",
+      "timestamp": 1503432447000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2013,
+          8,
+          21
+        ]
+      ]
+    },
+    "references-count": 23,
+    "URL": "https://doi.org/10.1093/bioinformatics/btt474",
+    "relation": {},
+    "subject": [
+      "Statistics and Probability",
+      "Computational Theory and Mathematics",
+      "Biochemistry",
+      "Molecular Biology",
+      "Computational Mathematics",
+      "Computer Science Applications"
+    ],
+    "container-title-short": "Bioinformatics",
+    "short_url": "https://doi.org/f5gj9n",
+    "id": "vtuZ3Wx7"
   },
   {
     "indexed": {
@@ -25553,6 +25886,370 @@
     "container-title-short": "Bioinformatics",
     "short_url": "https://doi.org/gcgk8z",
     "id": "182UhQqzp"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          28
+        ]
+      ],
+      "date-time": "2017-10-28T00:51:25Z",
+      "timestamp": 1509151885141
+    },
+    "reference-count": 48,
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "18",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2016,
+          9,
+          15
+        ]
+      ]
+    },
+    "DOI": "10.1093/bioinformatics/btw343",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          6,
+          10
+        ]
+      ],
+      "date-time": "2016-06-10T00:56:16Z",
+      "timestamp": 1465520176000
+    },
+    "page": "2839-2846",
+    "source": "Crossref",
+    "is-referenced-by-count": 12,
+    "title": "TaggerOne: joint named entity recognition and normalization with semi-Markov Models",
+    "prefix": "10.1093",
+    "volume": "32",
+    "author": [
+      {
+        "given": "Robert",
+        "family": "Leaman",
+        "affiliation": []
+      },
+      {
+        "given": "Zhiyong",
+        "family": "Lu",
+        "affiliation": []
+      }
+    ],
+    "member": "286",
+    "published-online": {
+      "date-parts": [
+        [
+          2016,
+          6,
+          9
+        ]
+      ]
+    },
+    "container-title": "Bioinformatics",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://academic.oup.com/bioinformatics/article-pdf/32/18/2839/19515735/btw343.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          8,
+          24
+        ]
+      ],
+      "date-time": "2017-08-24T02:30:22Z",
+      "timestamp": 1503541822000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          6,
+          9
+        ]
+      ]
+    },
+    "references-count": 48,
+    "alternative-id": [
+      "10.1093/bioinformatics/btw343"
+    ],
+    "URL": "https://doi.org/10.1093/bioinformatics/btw343",
+    "relation": {},
+    "subject": [
+      "Statistics and Probability",
+      "Computational Theory and Mathematics",
+      "Biochemistry",
+      "Molecular Biology",
+      "Computational Mathematics",
+      "Computer Science Applications"
+    ],
+    "container-title-short": "Bioinformatics",
+    "short_url": "https://doi.org/f855dg",
+    "id": "11YUuHulp"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          28
+        ]
+      ],
+      "date-time": "2017-10-28T00:01:50Z",
+      "timestamp": 1509148910703
+    },
+    "reference-count": 39,
+    "publisher": "Oxford University Press (OUP)",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "DOI": "10.1093/bioinformatics/btw486",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          7,
+          28
+        ]
+      ],
+      "date-time": "2016-07-28T02:29:14Z",
+      "timestamp": 1469672954000
+    },
+    "page": "btw486",
+    "source": "Crossref",
+    "is-referenced-by-count": 3,
+    "title": "Drug drug interaction extraction from biomedical literature using syntax convolutional neural network",
+    "prefix": "10.1093",
+    "author": [
+      {
+        "given": "Zhehuan",
+        "family": "Zhao",
+        "affiliation": []
+      },
+      {
+        "given": "Zhihao",
+        "family": "Yang",
+        "affiliation": []
+      },
+      {
+        "given": "Ling",
+        "family": "Luo",
+        "affiliation": []
+      },
+      {
+        "given": "Hongfei",
+        "family": "Lin",
+        "affiliation": []
+      },
+      {
+        "given": "Jian",
+        "family": "Wang",
+        "affiliation": []
+      }
+    ],
+    "member": "286",
+    "published-online": {
+      "date-parts": [
+        [
+          2016,
+          7,
+          27
+        ]
+      ]
+    },
+    "container-title": "Bioinformatics",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://academic.oup.com/bioinformatics/article/32/22/3444/2525603/Drug-drug-interaction-extraction-from-biomedical",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          24
+        ]
+      ],
+      "date-time": "2017-06-24T19:22:37Z",
+      "timestamp": 1498332157000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          7,
+          27
+        ]
+      ]
+    },
+    "references-count": 39,
+    "alternative-id": [
+      "10.1093/bioinformatics/btw486"
+    ],
+    "URL": "https://doi.org/10.1093/bioinformatics/btw486",
+    "relation": {},
+    "subject": [
+      "Statistics and Probability",
+      "Computational Theory and Mathematics",
+      "Biochemistry",
+      "Molecular Biology",
+      "Computational Mathematics",
+      "Computer Science Applications"
+    ],
+    "container-title-short": "Bioinformatics",
+    "short_url": "https://doi.org/f9nsq7",
+    "id": "8NrcroGt"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          28
+        ]
+      ],
+      "date-time": "2017-10-28T02:26:38Z",
+      "timestamp": 1509157598018
+    },
+    "reference-count": 39,
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "1",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2017,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1093/database/bax024",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          3,
+          6
+        ]
+      ],
+      "date-time": "2017-03-06T20:13:31Z",
+      "timestamp": 1488831211000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "Chemical-induced disease relation extraction via convolutional neural network",
+    "prefix": "10.1093",
+    "volume": "2017",
+    "author": [
+      {
+        "given": "Jinghang",
+        "family": "Gu",
+        "affiliation": []
+      },
+      {
+        "given": "Fuqing",
+        "family": "Sun",
+        "affiliation": []
+      },
+      {
+        "given": "Longhua",
+        "family": "Qian",
+        "affiliation": []
+      },
+      {
+        "given": "Guodong",
+        "family": "Zhou",
+        "affiliation": []
+      }
+    ],
+    "member": "286",
+    "published-online": {
+      "date-parts": [
+        [
+          2017,
+          4,
+          2
+        ]
+      ]
+    },
+    "container-title": "Database",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://academic.oup.com/database/article-pdf/doi/10.1093/database/bax024/19233027/bax024.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          8,
+          24
+        ]
+      ],
+      "date-time": "2017-08-24T19:37:02Z",
+      "timestamp": 1503603422000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          1
+        ]
+      ]
+    },
+    "references-count": 39,
+    "URL": "https://doi.org/10.1093/database/bax024",
+    "relation": {},
+    "subject": [
+      "General Biochemistry, Genetics and Molecular Biology",
+      "General Agricultural and Biological Sciences",
+      "Information Systems"
+    ],
+    "short_url": "https://doi.org/f92754",
+    "id": "14afj7TT1"
   },
   {
     "indexed": {
@@ -36256,6 +36953,129 @@
       "date-parts": [
         [
           2017,
+          10,
+          27
+        ]
+      ],
+      "date-time": "2017-10-27T05:49:32Z",
+      "timestamp": 1509083372959
+    },
+    "reference-count": 15,
+    "publisher": "World Scientific Pub Co Pte Lt",
+    "issue": "03",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2015,
+          6
+        ]
+      ]
+    },
+    "DOI": "10.1142/s0219720015410012",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2015,
+          1,
+          12
+        ]
+      ],
+      "date-time": "2015-01-12T03:12:25Z",
+      "timestamp": 1421032345000
+    },
+    "page": "1541001",
+    "source": "Crossref",
+    "is-referenced-by-count": 2,
+    "title": "Embedding assisted prediction architecture for event trigger identification",
+    "prefix": "10.1142",
+    "volume": "13",
+    "author": [
+      {
+        "given": "Yifan",
+        "family": "Nie",
+        "affiliation": []
+      },
+      {
+        "given": "Wenge",
+        "family": "Rong",
+        "affiliation": []
+      },
+      {
+        "given": "Yiyuan",
+        "family": "Zhang",
+        "affiliation": []
+      },
+      {
+        "given": "Yuanxin",
+        "family": "Ouyang",
+        "affiliation": []
+      },
+      {
+        "given": "Zhang",
+        "family": "Xiong",
+        "affiliation": []
+      }
+    ],
+    "member": "219",
+    "container-title": "Journal of Bioinformatics and Computational Biology",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://www.worldscientific.com/doi/pdf/10.1142/S0219720015410012",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          12,
+          4
+        ]
+      ],
+      "date-time": "2016-12-04T14:01:05Z",
+      "timestamp": 1480860065000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2015,
+          6
+        ]
+      ]
+    },
+    "references-count": 15,
+    "alternative-id": [
+      "10.1142/S0219720015410012"
+    ],
+    "URL": "https://doi.org/10.1142/s0219720015410012",
+    "relation": {
+      "cites": []
+    },
+    "subject": [
+      "Biochemistry",
+      "Molecular Biology",
+      "Computer Science Applications"
+    ],
+    "container-title-short": "J. Bioinform. Comput. Biol.",
+    "short_url": "https://doi.org/gcgnxz",
+    "id": "XbkgrcMy"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
           11,
           2
         ]
@@ -38062,6 +38882,527 @@
     "container-title-short": "The Scientific World Journal",
     "short_url": "https://doi.org/gb7x73",
     "id": "3JyJ3DTh"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          11,
+          21
+        ]
+      ],
+      "date-time": "2017-11-21T16:42:13Z",
+      "timestamp": 1511282533775
+    },
+    "reference-count": 19,
+    "publisher": "Hindawi Limited",
+    "license": [
+      {
+        "URL": "http://creativecommons.org/licenses/by/3.0/",
+        "start": {
+          "date-parts": [
+            [
+              2014,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2014-01-01T00:00:00Z",
+          "timestamp": 1388534400000
+        },
+        "delay-in-days": 0,
+        "content-version": "vor"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100001809",
+        "name": "National Natural Science Foundation of China",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "R1307",
+          "2011M500669",
+          "612762383"
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2014
+        ]
+      ]
+    },
+    "abstract": "<jats:p>Biomedical Named Entity Recognition (BNER), which extracts important entities such as genes and proteins, is a crucial step of natural language processing in the biomedical domain. Various machine learning-based approaches have been applied to BNER tasks and showed good performance. In this paper, we systematically investigated three different types of word representation (WR) features for BNER, including clustering-based representation, distributional representation, and word embeddings. We selected one algorithm from each of the three types of WR features and applied them to the JNLPBA and BioCreAtIvE II BNER tasks. Our results showed that all the three WR algorithms were beneficial to machine learning-based BNER systems. Moreover, combining these different types of WR features further improved BNER performance, indicating that they are complementary to each other. By combining all the three types of WR features, the improvements in<mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" id=\"M1\"><mml:mrow><mml:mi>F</mml:mi></mml:mrow></mml:math>-measure on the BioCreAtIvE II GM and JNLPBA corpora were 3.75% and 1.39%, respectively, when compared with the systems using baseline features. To the best of our knowledge, this is the first study to systematically evaluate the effect of three different types of WR features for BNER tasks.</jats:p>",
+    "DOI": "10.1155/2014/240403",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2014,
+          3,
+          9
+        ]
+      ],
+      "date-time": "2014-03-09T09:18:29Z",
+      "timestamp": 1394356709000
+    },
+    "page": "1-6",
+    "source": "Crossref",
+    "is-referenced-by-count": 17,
+    "title": "Evaluating Word Representation Features in Biomedical Named Entity Recognition Tasks",
+    "prefix": "10.1155",
+    "volume": "2014",
+    "author": [
+      {
+        "ORCID": "http://orcid.org/0000-0003-0271-8246",
+        "authenticated-orcid": true,
+        "given": "Buzhou",
+        "family": "Tang",
+        "affiliation": [
+          {
+            "name": "Department of Computer Science, Harbin Institute of Technology Shenzhen Graduate School, Shenzhen, Guangdong 518055, China"
+          },
+          {
+            "name": "School of Biomedical Informatics, The University of Texas Health Science Center at Houston, Houston, TX 77030, USA"
+          }
+        ]
+      },
+      {
+        "given": "Hongxin",
+        "family": "Cao",
+        "affiliation": [
+          {
+            "name": "Department of Medical Informatics, Second Military Medical University, Shanghai 200433, China"
+          }
+        ]
+      },
+      {
+        "given": "Xiaolong",
+        "family": "Wang",
+        "affiliation": [
+          {
+            "name": "Department of Computer Science, Harbin Institute of Technology Shenzhen Graduate School, Shenzhen, Guangdong 518055, China"
+          }
+        ]
+      },
+      {
+        "given": "Qingcai",
+        "family": "Chen",
+        "affiliation": [
+          {
+            "name": "Department of Computer Science, Harbin Institute of Technology Shenzhen Graduate School, Shenzhen, Guangdong 518055, China"
+          }
+        ]
+      },
+      {
+        "given": "Hua",
+        "family": "Xu",
+        "affiliation": [
+          {
+            "name": "School of Biomedical Informatics, The University of Texas Health Science Center at Houston, Houston, TX 77030, USA"
+          }
+        ]
+      }
+    ],
+    "member": "98",
+    "container-title": "BioMed Research International",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://downloads.hindawi.com/journals/bmri/2014/240403.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://downloads.hindawi.com/journals/bmri/2014/240403.xml",
+        "content-type": "application/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://downloads.hindawi.com/journals/bmri/2014/240403.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          22
+        ]
+      ],
+      "date-time": "2017-06-22T09:17:15Z",
+      "timestamp": 1498123035000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2014
+        ]
+      ]
+    },
+    "references-count": 19,
+    "alternative-id": [
+      "240403",
+      "240403"
+    ],
+    "URL": "https://doi.org/10.1155/2014/240403",
+    "relation": {
+      "cites": []
+    },
+    "subject": [
+      "General Biochemistry, Genetics and Molecular Biology",
+      "General Immunology and Microbiology",
+      "General Medicine"
+    ],
+    "container-title-short": "BioMed Research International",
+    "short_url": "https://doi.org/gb76d4",
+    "id": "14uLNRP38"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          27
+        ]
+      ],
+      "date-time": "2017-10-27T19:16:52Z",
+      "timestamp": 1509131812324
+    },
+    "reference-count": 19,
+    "publisher": "Hindawi Limited",
+    "license": [
+      {
+        "URL": "http://creativecommons.org/licenses/by/4.0/",
+        "start": {
+          "date-parts": [
+            [
+              2016,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2016-01-01T00:00:00Z",
+          "timestamp": 1451606400000
+        },
+        "delay-in-days": 0,
+        "content-version": "vor"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100001809",
+        "name": "National Natural Science Foundation of China",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "61472117"
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "abstract": "<jats:p>The plethora of biomedical relations which are embedded in medical logs (records) demands researchers’ attention. Previous theoretical and practical focuses were restricted on traditional machine learning techniques. However, these methods are susceptible to the issues of<jats:italic> “vocabulary gap”</jats:italic> and data sparseness and the unattainable automation process in feature extraction. To address aforementioned issues, in this work, we propose a multichannel convolutional neural network (MCCNN) for automated biomedical relation extraction. The proposed model has the following two contributions: <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" id=\"M1\"><mml:mo stretchy=\"false\">(</mml:mo><mml:mn fontstyle=\"italic\">1</mml:mn><mml:mo stretchy=\"false\">)</mml:mo></mml:math> it enables the fusion of multiple (e.g., five) versions in word embeddings; <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" id=\"M2\"><mml:mo stretchy=\"false\">(</mml:mo><mml:mn fontstyle=\"italic\">2</mml:mn><mml:mo stretchy=\"false\">)</mml:mo></mml:math> the need for manual feature engineering can be obviated by automated feature learning with convolutional neural network (CNN). We evaluated our model on two biomedical relation extraction tasks: drug-drug interaction (DDI) extraction and protein-protein interaction (PPI) extraction. For DDI task, our system achieved an overall <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" id=\"M3\"><mml:mrow><mml:mi>f</mml:mi></mml:mrow></mml:math>-score of 70.2% compared to the standard linear SVM based system (e.g., 67.0%) on DDIExtraction 2013 challenge dataset. And for PPI task, we evaluated our system on Aimed and BioInfer PPI corpus; our system exceeded the state-of-art ensemble SVM system by 2.7% and 5.6% on <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" id=\"M4\"><mml:mrow><mml:mi>f</mml:mi></mml:mrow></mml:math>-scores.</jats:p>",
+    "DOI": "10.1155/2016/1850404",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          12,
+          7
+        ]
+      ],
+      "date-time": "2016-12-07T21:00:59Z",
+      "timestamp": 1481144459000
+    },
+    "page": "1-10",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "Multichannel Convolutional Neural Network for Biological Relation Extraction",
+    "prefix": "10.1155",
+    "volume": "2016",
+    "author": [
+      {
+        "given": "Chanqin",
+        "family": "Quan",
+        "affiliation": [
+          {
+            "name": "Graduate School of System Informatics, Kobe University, Kobe, Japan"
+          }
+        ]
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0003-2630-4080",
+        "authenticated-orcid": true,
+        "given": "Lei",
+        "family": "Hua",
+        "affiliation": [
+          {
+            "name": "Department of Computer and Information Science, Hefei University of Technology, Hefei, China"
+          }
+        ]
+      },
+      {
+        "given": "Xiao",
+        "family": "Sun",
+        "affiliation": [
+          {
+            "name": "Department of Computer and Information Science, Hefei University of Technology, Hefei, China"
+          }
+        ]
+      },
+      {
+        "given": "Wenjun",
+        "family": "Bai",
+        "affiliation": [
+          {
+            "name": "Graduate School of System Informatics, Kobe University, Kobe, Japan"
+          }
+        ]
+      }
+    ],
+    "member": "98",
+    "container-title": "BioMed Research International",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://downloads.hindawi.com/journals/bmri/2016/1850404.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://downloads.hindawi.com/journals/bmri/2016/1850404.xml",
+        "content-type": "application/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://downloads.hindawi.com/journals/bmri/2016/1850404.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          12,
+          7
+        ]
+      ],
+      "date-time": "2016-12-07T21:01:01Z",
+      "timestamp": 1481144461000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "references-count": 19,
+    "alternative-id": [
+      "1850404",
+      "1850404"
+    ],
+    "URL": "https://doi.org/10.1155/2016/1850404",
+    "relation": {
+      "cites": []
+    },
+    "subject": [
+      "General Biochemistry, Genetics and Molecular Biology",
+      "General Immunology and Microbiology",
+      "General Medicine"
+    ],
+    "container-title-short": "BioMed Research International",
+    "short_url": "https://doi.org/f9kqr3",
+    "id": "ULZPgbOq"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          27
+        ]
+      ],
+      "date-time": "2017-10-27T23:43:11Z",
+      "timestamp": 1509147791018
+    },
+    "reference-count": 18,
+    "publisher": "Hindawi Limited",
+    "license": [
+      {
+        "URL": "http://creativecommons.org/licenses/by/4.0/",
+        "start": {
+          "date-parts": [
+            [
+              2016,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2016-01-01T00:00:00Z",
+          "timestamp": 1451606400000
+        },
+        "delay-in-days": 0,
+        "content-version": "vor"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100001809",
+        "name": "National Natural Science Foundation of China",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "61472117"
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "abstract": "<jats:p>The state-of-the-art methods for protein-protein interaction (PPI) extraction are primarily based on kernel methods, and their performances strongly depend on the handcraft features. In this paper, we tackle PPI extraction by using convolutional neural networks (CNN) and propose a shortest dependency path based CNN (sdpCNN) model. The proposed method<mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" id=\"M1\"><mml:mo stretchy=\"false\">(</mml:mo><mml:mn fontstyle=\"italic\">1</mml:mn><mml:mo stretchy=\"false\">)</mml:mo></mml:math>only takes the sdp and word embedding as input and<mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" id=\"M2\"><mml:mo stretchy=\"false\">(</mml:mo><mml:mn fontstyle=\"italic\">2</mml:mn><mml:mo stretchy=\"false\">)</mml:mo></mml:math>could avoid bias from feature selection by using CNN. We performed experiments on standard Aimed and BioInfer datasets, and the experimental results demonstrated that our approach outperformed state-of-the-art kernel based methods. In particular, by tracking the sdpCNN model, we find that sdpCNN could extract key features automatically and it is verified that pretrained word embedding is crucial in PPI task.</jats:p>",
+    "DOI": "10.1155/2016/8479587",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          7,
+          14
+        ]
+      ],
+      "date-time": "2016-07-14T21:58:53Z",
+      "timestamp": 1468533533000
+    },
+    "page": "1-9",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "A Shortest Dependency Path Based Convolutional Neural Network for Protein-Protein Relation Extraction",
+    "prefix": "10.1155",
+    "volume": "2016",
+    "author": [
+      {
+        "ORCID": "http://orcid.org/0000-0003-2630-4080",
+        "authenticated-orcid": true,
+        "given": "Lei",
+        "family": "Hua",
+        "affiliation": [
+          {
+            "name": "Department of Computer and Information Sciences, Hefei University of Technology, Hefei 230009, China"
+          }
+        ]
+      },
+      {
+        "given": "Chanqin",
+        "family": "Quan",
+        "affiliation": [
+          {
+            "name": "Department of Computer and Information Sciences, Kobe University, Kobe 6578501, Japan"
+          }
+        ]
+      }
+    ],
+    "member": "98",
+    "container-title": "BioMed Research International",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://downloads.hindawi.com/journals/bmri/2016/8479587.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://downloads.hindawi.com/journals/bmri/2016/8479587.xml",
+        "content-type": "application/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://downloads.hindawi.com/journals/bmri/2016/8479587.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          7,
+          26
+        ]
+      ],
+      "date-time": "2016-07-26T17:43:23Z",
+      "timestamp": 1469555003000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "references-count": 18,
+    "alternative-id": [
+      "8479587",
+      "8479587"
+    ],
+    "URL": "https://doi.org/10.1155/2016/8479587",
+    "relation": {
+      "cites": []
+    },
+    "subject": [
+      "General Biochemistry, Genetics and Molecular Biology",
+      "General Immunology and Microbiology",
+      "General Medicine"
+    ],
+    "container-title-short": "BioMed Research International",
+    "short_url": "https://doi.org/f9jkh9",
+    "id": "19r6xFsZQ"
   },
   {
     "indexed": {
@@ -39908,6 +41249,157 @@
         [
           2017,
           10,
+          28
+        ]
+      ],
+      "date-time": "2017-10-28T04:10:35Z",
+      "timestamp": 1509163835552
+    },
+    "reference-count": 41,
+    "publisher": "Springer Nature",
+    "issue": "1",
+    "funder": [
+      {
+        "DOI": "10.13039/501100001809",
+        "name": "National Natural Science Foundation of China",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "61373108"
+        ]
+      },
+      {
+        "name": "National Philosophy Social Science Major Bidding Project of China",
+        "award": [
+          "11&ZD189"
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2017,
+          12
+        ]
+      ]
+    },
+    "DOI": "10.1186/s12859-017-1609-9",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          3,
+          31
+        ]
+      ],
+      "date-time": "2017-03-31T02:24:49Z",
+      "timestamp": 1490927089000
+    },
+    "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 1,
+    "title": "A neural joint model for entity and relation extraction from biomedical text",
+    "prefix": "10.1186",
+    "volume": "18",
+    "author": [
+      {
+        "given": "Fei",
+        "family": "Li",
+        "affiliation": []
+      },
+      {
+        "given": "Meishan",
+        "family": "Zhang",
+        "affiliation": []
+      },
+      {
+        "given": "Guohong",
+        "family": "Fu",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-9244-2476",
+        "authenticated-orcid": false,
+        "given": "Donghong",
+        "family": "Ji",
+        "affiliation": []
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2017,
+          3,
+          31
+        ]
+      ]
+    },
+    "container-title": "BMC Bioinformatics",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://link.springer.com/content/pdf/10.1186/s12859-017-1609-9.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          25
+        ]
+      ],
+      "date-time": "2017-06-25T13:53:59Z",
+      "timestamp": 1498398839000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          3,
+          31
+        ]
+      ]
+    },
+    "references-count": 41,
+    "alternative-id": [
+      "1609"
+    ],
+    "URL": "https://doi.org/10.1186/s12859-017-1609-9",
+    "relation": {
+      "cites": []
+    },
+    "subject": [
+      "Biochemistry",
+      "Applied Mathematics",
+      "Molecular Biology",
+      "Structural Biology",
+      "Computer Science Applications"
+    ],
+    "container-title-short": "BMC Bioinformatics",
+    "article-number": "198",
+    "short_url": "https://doi.org/gcgnx2",
+    "id": "1F5aZYjOB"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          10,
           31
         ]
       ],
@@ -40360,6 +41852,133 @@
     "article-number": "63",
     "short_url": "https://doi.org/f76hzq",
     "id": "1E0x7QgLP"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          27
+        ]
+      ],
+      "date-time": "2017-10-27T13:33:44Z",
+      "timestamp": 1509111224829
+    },
+    "reference-count": 58,
+    "publisher": "Springer Nature",
+    "issue": "1",
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2016,
+          12
+        ]
+      ]
+    },
+    "DOI": "10.1186/s13321-016-0165-z",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          10,
+          7
+        ]
+      ],
+      "date-time": "2016-10-07T04:33:59Z",
+      "timestamp": 1475814839000
+    },
+    "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 2,
+    "title": "Improving chemical disease relation extraction with rich features and weakly labeled data",
+    "prefix": "10.1186",
+    "volume": "8",
+    "author": [
+      {
+        "given": "Yifan",
+        "family": "Peng",
+        "affiliation": []
+      },
+      {
+        "given": "Chih-Hsuan",
+        "family": "Wei",
+        "affiliation": []
+      },
+      {
+        "given": "Zhiyong",
+        "family": "Lu",
+        "affiliation": []
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2016,
+          10,
+          7
+        ]
+      ]
+    },
+    "container-title": "Journal of Cheminformatics",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://link.springer.com/content/pdf/10.1186/s13321-016-0165-z.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          25
+        ]
+      ],
+      "date-time": "2017-06-25T00:33:38Z",
+      "timestamp": 1498350818000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          10,
+          7
+        ]
+      ]
+    },
+    "references-count": 58,
+    "alternative-id": [
+      "165"
+    ],
+    "URL": "https://doi.org/10.1186/s13321-016-0165-z",
+    "relation": {
+      "cites": []
+    },
+    "subject": [
+      "Physical and Theoretical Chemistry",
+      "Library and Information Sciences",
+      "Computer Graphics and Computer-Aided Design",
+      "Computer Science Applications"
+    ],
+    "container-title-short": "J Cheminform",
+    "article-number": "53",
+    "short_url": "https://doi.org/gcgnx3",
+    "id": "Sn8TwSQK"
   },
   {
     "indexed": {
@@ -41319,6 +42938,160 @@
     "container-title-short": "PLoS Biol",
     "short_url": "https://doi.org/bdzf",
     "id": "13bxiY1vo"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          26
+        ]
+      ],
+      "date-time": "2017-10-26T04:13:04Z",
+      "timestamp": 1508991184895
+    },
+    "reference-count": 68,
+    "publisher": "Public Library of Science (PLoS)",
+    "issue": "7",
+    "license": [
+      {
+        "URL": "http://creativecommons.org/licenses/by/4.0/",
+        "start": {
+          "date-parts": [
+            [
+              2010,
+              7,
+              1
+            ]
+          ],
+          "date-time": "2010-07-01T00:00:00Z",
+          "timestamp": 1277942400000
+        },
+        "delay-in-days": 0,
+        "content-version": "vor"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "www.ploscompbiol.org"
+      ],
+      "crossmark-restriction": false
+    },
+    "DOI": "10.1371/journal.pcbi.1000837",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2010,
+          7,
+          1
+        ]
+      ],
+      "date-time": "2010-07-01T21:02:29Z",
+      "timestamp": 1278018149000
+    },
+    "page": "e1000837",
+    "update-policy": "http://dx.doi.org/10.1371/journal.pcbi.corrections_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 56,
+    "title": "A Comprehensive Benchmark of Kernel Methods to Extract Protein–Protein Interactions from Literature",
+    "prefix": "10.1371",
+    "volume": "6",
+    "author": [
+      {
+        "given": "Domonkos",
+        "family": "Tikk",
+        "affiliation": []
+      },
+      {
+        "given": "Philippe",
+        "family": "Thomas",
+        "affiliation": []
+      },
+      {
+        "given": "Peter",
+        "family": "Palaga",
+        "affiliation": []
+      },
+      {
+        "given": "Jörg",
+        "family": "Hakenberg",
+        "affiliation": []
+      },
+      {
+        "given": "Ulf",
+        "family": "Leser",
+        "affiliation": []
+      }
+    ],
+    "member": "340",
+    "published-online": {
+      "date-parts": [
+        [
+          2010,
+          7,
+          1
+        ]
+      ]
+    },
+    "container-title": "PLoS Computational Biology",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://dx.plos.org/10.1371/journal.pcbi.1000837",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          19
+        ]
+      ],
+      "date-time": "2017-06-19T10:12:27Z",
+      "timestamp": 1497867147000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "editor": [
+      {
+        "given": "Andrey",
+        "family": "Rzhetsky",
+        "affiliation": []
+      }
+    ],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2010,
+          7,
+          1
+        ]
+      ]
+    },
+    "references-count": 68,
+    "URL": "https://doi.org/10.1371/journal.pcbi.1000837",
+    "relation": {
+      "cites": []
+    },
+    "subject": [
+      "Ecology",
+      "Modelling and Simulation",
+      "Computational Theory and Mathematics",
+      "Genetics",
+      "Ecology, Evolution, Behavior and Systematics",
+      "Molecular Biology",
+      "Cellular and Molecular Neuroscience"
+    ],
+    "container-title-short": "PLoS Comput Biol",
+    "short_url": "https://doi.org/dsnc6j",
+    "id": "c6gbPCdT"
   },
   {
     "indexed": {
@@ -44539,6 +46312,104 @@
       "date-parts": [
         [
           2017,
+          10,
+          27
+        ]
+      ],
+      "date-time": "2017-10-27T13:36:17Z",
+      "timestamp": 1509111377924
+    },
+    "reference-count": 0,
+    "publisher": "Inderscience Publishers",
+    "issue": "3",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "DOI": "10.1504/ijdmb.2016.074878",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          2,
+          23
+        ]
+      ],
+      "date-time": "2016-02-23T12:36:02Z",
+      "timestamp": 1456230962000
+    },
+    "page": "276",
+    "source": "Crossref",
+    "is-referenced-by-count": 1,
+    "title": "A general protein-protein interaction extraction architecture based on word representation and feature selection",
+    "prefix": "10.1504",
+    "volume": "14",
+    "author": [
+      {
+        "given": "Zhenchao",
+        "family": "Jiang",
+        "affiliation": []
+      },
+      {
+        "given": "shuang",
+        "family": "Li",
+        "affiliation": []
+      },
+      {
+        "given": "Degen",
+        "family": "Huang",
+        "affiliation": []
+      }
+    ],
+    "member": "378",
+    "container-title": "International Journal of Data Mining and Bioinformatics",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          2,
+          23
+        ]
+      ],
+      "date-time": "2016-02-23T12:36:04Z",
+      "timestamp": 1456230964000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "https://doi.org/10.1504/ijdmb.2016.074878",
+    "relation": {},
+    "subject": [
+      "General Biochemistry, Genetics and Molecular Biology",
+      "Library and Information Sciences",
+      "Information Systems"
+    ],
+    "container-title-short": "IJDMB",
+    "short_url": "https://doi.org/gcgnx4",
+    "id": "MY6FXgFn"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
           5,
           25
         ]
@@ -45532,6 +47403,971 @@
       "date-parts": [
         [
           2017,
+          10,
+          27
+        ]
+      ],
+      "date-time": "2017-10-27T21:13:31Z",
+      "timestamp": 1509138811043
+    },
+    "publisher-location": "Stroudsburg, PA, USA",
+    "reference-count": 0,
+    "publisher": "Association for Computational Linguistics",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2015
+        ]
+      ]
+    },
+    "DOI": "10.18653/v1/w15-3810",
+    "type": "paper-conference",
+    "created": {
+      "date-parts": [
+        [
+          2015,
+          12,
+          15
+        ]
+      ],
+      "date-time": "2015-12-15T19:26:18Z",
+      "timestamp": 1450207578000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 1,
+    "title": "Exploiting Task-Oriented Resources to Learn Word Embeddings for Clinical Abbreviation Expansion",
+    "prefix": "10.18653",
+    "author": [
+      {
+        "given": "Yue",
+        "family": "Liu",
+        "affiliation": []
+      },
+      {
+        "given": "Tao",
+        "family": "Ge",
+        "affiliation": []
+      },
+      {
+        "given": "Kusum",
+        "family": "Mathews",
+        "affiliation": []
+      },
+      {
+        "given": "Heng",
+        "family": "Ji",
+        "affiliation": []
+      },
+      {
+        "given": "Deborah",
+        "family": "McGuinness",
+        "affiliation": []
+      }
+    ],
+    "member": "1643",
+    "container-title": "Proceedings of BioNLP 15",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2015,
+          12,
+          15
+        ]
+      ],
+      "date-time": "2015-12-15T19:26:21Z",
+      "timestamp": 1450207581000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2015
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "https://doi.org/10.18653/v1/w15-3810",
+    "relation": {},
+    "short_url": "https://doi.org/gcgnx5",
+    "id": "LeLKNlsR"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          27
+        ]
+      ],
+      "date-time": "2017-10-27T23:02:47Z",
+      "timestamp": 1509145367319
+    },
+    "publisher-location": "Stroudsburg, PA, USA",
+    "reference-count": 0,
+    "publisher": "Association for Computational Linguistics",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2015
+        ]
+      ]
+    },
+    "DOI": "10.18653/v1/w15-3814",
+    "type": "paper-conference",
+    "created": {
+      "date-parts": [
+        [
+          2015,
+          12,
+          15
+        ]
+      ],
+      "date-time": "2015-12-15T19:26:18Z",
+      "timestamp": 1450207578000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 2,
+    "title": "Using word embedding for bio-event extraction",
+    "prefix": "10.18653",
+    "author": [
+      {
+        "given": "Chen",
+        "family": "Li",
+        "affiliation": []
+      },
+      {
+        "given": "Runqing",
+        "family": "Song",
+        "affiliation": []
+      },
+      {
+        "given": "Maria",
+        "family": "Liakata",
+        "affiliation": []
+      },
+      {
+        "given": "Andreas",
+        "family": "Vlachos",
+        "affiliation": []
+      },
+      {
+        "given": "Stephanie",
+        "family": "Seneff",
+        "affiliation": []
+      },
+      {
+        "given": "Xiangrong",
+        "family": "Zhang",
+        "affiliation": []
+      }
+    ],
+    "member": "1643",
+    "container-title": "Proceedings of BioNLP 15",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2015,
+          12,
+          15
+        ]
+      ],
+      "date-time": "2015-12-15T19:26:22Z",
+      "timestamp": 1450207582000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2015
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "https://doi.org/10.18653/v1/w15-3814",
+    "relation": {},
+    "short_url": "https://doi.org/gcgnx6",
+    "id": "E0XYyYBe"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          27
+        ]
+      ],
+      "date-time": "2017-10-27T23:02:47Z",
+      "timestamp": 1509145367388
+    },
+    "publisher-location": "Stroudsburg, PA, USA",
+    "reference-count": 0,
+    "publisher": "Association for Computational Linguistics",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2015
+        ]
+      ]
+    },
+    "DOI": "10.18653/v1/w15-3822",
+    "type": "paper-conference",
+    "created": {
+      "date-parts": [
+        [
+          2015,
+          12,
+          15
+        ]
+      ],
+      "date-time": "2015-12-15T19:26:18Z",
+      "timestamp": 1450207578000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 3,
+    "title": "Clinical Abbreviation Disambiguation Using Neural Word Embeddings",
+    "prefix": "10.18653",
+    "author": [
+      {
+        "given": "yonghui",
+        "family": "wu",
+        "affiliation": []
+      },
+      {
+        "given": "Jun",
+        "family": "Xu",
+        "affiliation": []
+      },
+      {
+        "given": "Yaoyun",
+        "family": "Zhang",
+        "affiliation": []
+      },
+      {
+        "given": "Hua",
+        "family": "Xu",
+        "affiliation": []
+      }
+    ],
+    "member": "1643",
+    "container-title": "Proceedings of BioNLP 15",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2015,
+          12,
+          15
+        ]
+      ],
+      "date-time": "2015-12-15T19:26:24Z",
+      "timestamp": 1450207584000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2015
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "https://doi.org/10.18653/v1/w15-3822",
+    "relation": {},
+    "short_url": "https://doi.org/gcgnx7",
+    "id": "pWpK5WUq"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          28
+        ]
+      ],
+      "date-time": "2017-10-28T04:47:44Z",
+      "timestamp": 1509166064774
+    },
+    "publisher-location": "Stroudsburg, PA, USA",
+    "reference-count": 0,
+    "publisher": "Association for Computational Linguistics",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "DOI": "10.18653/v1/w16-3009",
+    "type": "paper-conference",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          8,
+          13
+        ]
+      ],
+      "date-time": "2016-08-13T19:59:17Z",
+      "timestamp": 1471118357000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 2,
+    "title": "\n             Deep Learning with Minimal Training Data: TurkuNLP Entry in the\n            BioNLP Shared Task 2016 \n          ",
+    "prefix": "10.18653",
+    "author": [
+      {
+        "given": "Farrokh",
+        "family": "Mehryary",
+        "affiliation": []
+      },
+      {
+        "given": "Jari",
+        "family": "Björne",
+        "affiliation": []
+      },
+      {
+        "given": "Sampo",
+        "family": "Pyysalo",
+        "affiliation": []
+      },
+      {
+        "given": "Tapio",
+        "family": "Salakoski",
+        "affiliation": []
+      },
+      {
+        "given": "Filip",
+        "family": "Ginter",
+        "affiliation": []
+      }
+    ],
+    "member": "1643",
+    "container-title": "Proceedings of the 4th BioNLP Shared Task Workshop",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          12,
+          30
+        ]
+      ],
+      "date-time": "2016-12-30T13:07:17Z",
+      "timestamp": 1483103237000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "https://doi.org/10.18653/v1/w16-3009",
+    "relation": {},
+    "short_url": "https://doi.org/gcgnx8",
+    "id": "1AkznVzFs"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          28
+        ]
+      ],
+      "date-time": "2017-10-28T04:47:44Z",
+      "timestamp": 1509166064759
+    },
+    "publisher-location": "Stroudsburg, PA, USA",
+    "reference-count": 0,
+    "publisher": "Association for Computational Linguistics",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "DOI": "10.18653/v1/w16-3012",
+    "type": "paper-conference",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          8,
+          13
+        ]
+      ],
+      "date-time": "2016-08-13T19:59:17Z",
+      "timestamp": 1471118357000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 1,
+    "title": "\n             DUTIR in BioNLP-ST 2016: Utilizing Convolutional Network and\n            Distributed Representation to Extract Complicate Relations \n          ",
+    "prefix": "10.18653",
+    "author": [
+      {
+        "given": "Honglei",
+        "family": "Li",
+        "affiliation": []
+      },
+      {
+        "given": "Jianhai",
+        "family": "Zhang",
+        "affiliation": []
+      },
+      {
+        "given": "Jian",
+        "family": "Wang",
+        "affiliation": []
+      },
+      {
+        "given": "Hongfei",
+        "family": "Lin",
+        "affiliation": []
+      },
+      {
+        "given": "Zhihao",
+        "family": "Yang",
+        "affiliation": []
+      }
+    ],
+    "member": "1643",
+    "container-title": "Proceedings of the 4th BioNLP Shared Task Workshop",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          12,
+          30
+        ]
+      ],
+      "date-time": "2016-12-30T13:07:18Z",
+      "timestamp": 1483103238000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "https://doi.org/10.18653/v1/w16-3012",
+    "relation": {},
+    "short_url": "https://doi.org/gcgnx9",
+    "id": "ztw1ugBP"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          27
+        ]
+      ],
+      "date-time": "2017-10-27T20:30:22Z",
+      "timestamp": 1509136222842
+    },
+    "publisher-location": "Stroudsburg, PA, USA",
+    "reference-count": 0,
+    "publisher": "Association for Computational Linguistics",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "DOI": "10.18653/v1/w17-2302",
+    "type": "paper-conference",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          7,
+          27
+        ]
+      ],
+      "date-time": "2017-07-27T18:33:34Z",
+      "timestamp": 1501180414000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "Extracting Drug-Drug Interactions with Attention CNNs",
+    "prefix": "10.18653",
+    "author": [
+      {
+        "given": "Masaki",
+        "family": "Asada",
+        "affiliation": []
+      },
+      {
+        "given": "Makoto",
+        "family": "Miwa",
+        "affiliation": []
+      },
+      {
+        "given": "Yutaka",
+        "family": "Sasaki",
+        "affiliation": []
+      }
+    ],
+    "member": "1643",
+    "container-title": "BioNLP 2017",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          7,
+          27
+        ]
+      ],
+      "date-time": "2017-07-27T18:33:35Z",
+      "timestamp": 1501180415000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "https://doi.org/10.18653/v1/w17-2302",
+    "relation": {},
+    "short_url": "https://doi.org/gcgnzb",
+    "id": "zUPTZa6w"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          27
+        ]
+      ],
+      "date-time": "2017-10-27T20:30:22Z",
+      "timestamp": 1509136222871
+    },
+    "publisher-location": "Stroudsburg, PA, USA",
+    "reference-count": 0,
+    "publisher": "Association for Computational Linguistics",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "DOI": "10.18653/v1/w17-2304",
+    "type": "paper-conference",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          7,
+          27
+        ]
+      ],
+      "date-time": "2017-07-27T18:33:34Z",
+      "timestamp": 1501180414000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "\n             Deep learning for extracting protein-protein interactions from\n            biomedical literature \n          ",
+    "prefix": "10.18653",
+    "author": [
+      {
+        "given": "Yifan",
+        "family": "Peng",
+        "affiliation": []
+      },
+      {
+        "given": "Zhiyong",
+        "family": "Lu",
+        "affiliation": []
+      }
+    ],
+    "member": "1643",
+    "container-title": "BioNLP 2017",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          7,
+          27
+        ]
+      ],
+      "date-time": "2017-07-27T18:33:35Z",
+      "timestamp": 1501180415000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "https://doi.org/10.18653/v1/w17-2304",
+    "relation": {},
+    "short_url": "https://doi.org/gcgnzc",
+    "id": "1H4fyFU1f"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          27
+        ]
+      ],
+      "date-time": "2017-10-27T20:30:23Z",
+      "timestamp": 1509136223210
+    },
+    "publisher-location": "Stroudsburg, PA, USA",
+    "reference-count": 0,
+    "publisher": "Association for Computational Linguistics",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "DOI": "10.18653/v1/w17-2328",
+    "type": "paper-conference",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          7,
+          27
+        ]
+      ],
+      "date-time": "2017-07-27T18:33:34Z",
+      "timestamp": 1501180414000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "\n             Deep Learning for Biomedical Information Retrieval: Learning\n            Textual Relevance from Click Logs \n          ",
+    "prefix": "10.18653",
+    "author": [
+      {
+        "given": "Sunil",
+        "family": "Mohan",
+        "affiliation": []
+      },
+      {
+        "given": "Nicolas",
+        "family": "Fiorini",
+        "affiliation": []
+      },
+      {
+        "given": "Sun",
+        "family": "Kim",
+        "affiliation": []
+      },
+      {
+        "given": "Zhiyong",
+        "family": "Lu",
+        "affiliation": []
+      }
+    ],
+    "member": "1643",
+    "container-title": "BioNLP 2017",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          7,
+          27
+        ]
+      ],
+      "date-time": "2017-07-27T18:33:43Z",
+      "timestamp": 1501180423000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "https://doi.org/10.18653/v1/w17-2328",
+    "relation": {},
+    "short_url": "https://doi.org/gcgnzd",
+    "id": "zPnsAqyX"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          27
+        ]
+      ],
+      "date-time": "2017-10-27T20:30:23Z",
+      "timestamp": 1509136223314
+    },
+    "publisher-location": "Stroudsburg, PA, USA",
+    "reference-count": 0,
+    "publisher": "Association for Computational Linguistics",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "DOI": "10.18653/v1/w17-2341",
+    "type": "paper-conference",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          7,
+          27
+        ]
+      ],
+      "date-time": "2017-07-27T18:33:34Z",
+      "timestamp": 1501180414000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "\n             Representations of Time Expressions for Temporal Relation\n            Extraction with Convolutional Neural Networks \n          ",
+    "prefix": "10.18653",
+    "author": [
+      {
+        "given": "Chen",
+        "family": "Lin",
+        "affiliation": []
+      },
+      {
+        "given": "Timothy",
+        "family": "Miller",
+        "affiliation": []
+      },
+      {
+        "given": "Dmitriy",
+        "family": "Dligach",
+        "affiliation": []
+      },
+      {
+        "given": "Steven",
+        "family": "Bethard",
+        "affiliation": []
+      },
+      {
+        "given": "Guergana",
+        "family": "Savova",
+        "affiliation": []
+      }
+    ],
+    "member": "1643",
+    "container-title": "BioNLP 2017",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          7,
+          27
+        ]
+      ],
+      "date-time": "2017-07-27T18:33:46Z",
+      "timestamp": 1501180426000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "https://doi.org/10.18653/v1/w17-2341",
+    "relation": {},
+    "short_url": "https://doi.org/gcgnzf",
+    "id": "8YmxYueq"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          27
+        ]
+      ],
+      "date-time": "2017-10-27T20:30:23Z",
+      "timestamp": 1509136223319
+    },
+    "publisher-location": "Stroudsburg, PA, USA",
+    "reference-count": 0,
+    "publisher": "Association for Computational Linguistics",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "DOI": "10.18653/v1/w17-2342",
+    "type": "paper-conference",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          7,
+          27
+        ]
+      ],
+      "date-time": "2017-07-27T18:33:34Z",
+      "timestamp": 1501180414000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "\n             Automatic Diagnosis Coding of Radiology Reports: A Comparison of\n            Deep Learning and Conventional Classification Methods \n          ",
+    "prefix": "10.18653",
+    "author": [
+      {
+        "given": "Sarvnaz",
+        "family": "Karimi",
+        "affiliation": []
+      },
+      {
+        "given": "Xiang",
+        "family": "Dai",
+        "affiliation": []
+      },
+      {
+        "given": "Hamedh",
+        "family": "Hassanzadeh",
+        "affiliation": []
+      },
+      {
+        "given": "Anthony",
+        "family": "Nguyen",
+        "affiliation": []
+      }
+    ],
+    "member": "1643",
+    "container-title": "BioNLP 2017",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          7,
+          27
+        ]
+      ],
+      "date-time": "2017-07-27T18:33:47Z",
+      "timestamp": 1501180427000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "https://doi.org/10.18653/v1/w17-2342",
+    "relation": {},
+    "short_url": "https://doi.org/gcgnzg",
+    "id": "4QDXEv4C"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
           11,
           3
         ]
@@ -46014,6 +48850,39 @@
     "id": "MmRGFVUu"
   },
   {
+    "type": "article-journal",
+    "journalAbbreviation": "SHTI",
+    "author": [
+      {
+        "literal": "Minarro-Gim&eacute;nez Jos&eacute; Antonio"
+      },
+      {
+        "literal": "Mar&iacute;n-Alonso Oscar"
+      },
+      {
+        "literal": "Samwald Matthias"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2014
+        ]
+      ]
+    },
+    "container-title": "Studies in Health Technology and Informatics",
+    "DOI": "10.3233/978-1-61499-432-9-584",
+    "issue": "e-Health &ndash; For Continuity of Care",
+    "page": "584-588",
+    "page-first": "584",
+    "publisher": "IOS Press",
+    "title": "Exploring the Application of Deep Learning Techniques on Medical Text Corpora",
+    "URL": "https://doi.org/10.3233/978-1-61499-432-9-584",
+    "volume": "205",
+    "short_url": "https://doi.org/gcgnzh",
+    "id": "sePDg4mZ"
+  },
+  {
     "indexed": {
       "date-parts": [
         [
@@ -46162,6 +49031,129 @@
       }
     ],
     "id": "ppGS5h4v"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          27
+        ]
+      ],
+      "date-time": "2017-10-27T22:56:13Z",
+      "timestamp": 1509144973271
+    },
+    "reference-count": 61,
+    "publisher": "MDPI AG",
+    "issue": "4",
+    "funder": [
+      {
+        "DOI": "10.13039/501100001809",
+        "name": "National Natural Science Foundation of China",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "61272383",
+          "61402128",
+          "61173075",
+          "61473101"
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "DOI": "10.3390/info6040848",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2015,
+          12,
+          14
+        ]
+      ],
+      "date-time": "2015-12-14T07:57:29Z",
+      "timestamp": 1450079849000
+    },
+    "page": "848-865",
+    "source": "Crossref",
+    "is-referenced-by-count": 5,
+    "title": "Effects of Semantic Features on Machine Learning-Based Drug Name Recognition Systems: Word Embeddings vs. Manually Constructed Dictionaries",
+    "prefix": "10.3390",
+    "volume": "6",
+    "author": [
+      {
+        "given": "Shengyu",
+        "family": "Liu",
+        "affiliation": []
+      },
+      {
+        "given": "Buzhou",
+        "family": "Tang",
+        "affiliation": []
+      },
+      {
+        "given": "Qingcai",
+        "family": "Chen",
+        "affiliation": []
+      },
+      {
+        "given": "Xiaolong",
+        "family": "Wang",
+        "affiliation": []
+      }
+    ],
+    "member": "1968",
+    "published-online": {
+      "date-parts": [
+        [
+          2015,
+          12,
+          11
+        ]
+      ]
+    },
+    "container-title": "Information",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          24
+        ]
+      ],
+      "date-time": "2017-06-24T01:32:12Z",
+      "timestamp": 1498267932000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2015,
+          12,
+          11
+        ]
+      ]
+    },
+    "references-count": 61,
+    "alternative-id": [
+      "info6040848"
+    ],
+    "URL": "https://doi.org/10.3390/info6040848",
+    "relation": {
+      "cites": []
+    },
+    "subject": [
+      "Information Systems"
+    ],
+    "container-title-short": "Information",
+    "short_url": "https://doi.org/gcgnzj",
+    "id": "OuoHShLI"
   },
   {
     "indexed": {
@@ -46731,6 +49723,46 @@
     "URL": "https://www.ncbi.nlm.nih.gov/pubmed/27330264"
   },
   {
+    "source": "PMC",
+    "accessed": {
+      "date-parts": [
+        [
+          2017,
+          12,
+          15
+        ]
+      ]
+    },
+    "id": "102FYgQFg",
+    "title": "Bidirectional RNN for Medical Event Detection in Electronic Health Records",
+    "author": [
+      {
+        "family": "Jagannatha",
+        "given": "Abhyuday N"
+      },
+      {
+        "family": "Yu",
+        "given": "Hong"
+      }
+    ],
+    "container-title-short": "Proc Conf",
+    "container-title": "Proceedings of the conference. Association for Computational Linguistics. North American Chapter. Meeting",
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          6
+        ]
+      ]
+    },
+    "page": "473-482",
+    "volume": "2016",
+    "PMID": "27885364",
+    "PMCID": "PMC5119627",
+    "type": "article-journal",
+    "URL": "https://www.ncbi.nlm.nih.gov/pubmed/27885364"
+  },
+  {
     "URL": "http://alifar76.github.io/sklearn-metrics/",
     "title": "TensorFlow vs. scikit-learn : The Microbiome Challenge",
     "container-title": "Ali A. Faruqi",
@@ -47232,6 +50264,11 @@
     "id": "W0cYSf89"
   },
   {
+    "URL": "http://www.ijcai.org/Proceedings/16/Papers/403.pdf",
+    "type": "webpage",
+    "id": "MmcdzBXf"
+  },
+  {
     "URL": "http://www.intel.com/pressroom/archive/speeches/ag080998.htm",
     "title": "Academy of Management: Andrew S. Grove",
     "issued": {
@@ -47373,6 +50410,11 @@
     },
     "type": "webpage",
     "id": "zScWGveU"
+  },
+  {
+    "URL": "http://www.who.int/classifications/icd/en/",
+    "type": "webpage",
+    "id": "zVoUcFPZ"
   },
   {
     "type": "paper-conference",
