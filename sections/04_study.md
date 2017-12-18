@@ -474,6 +474,54 @@ summarized above also apply to interfacial contact prediction for protein
 complexes but may be less effective since on average protein complexes have
 fewer sequence homologs.
 
+### Structure determination and cryo-electron microscopy
+
+Recent advances in cryo-electron microscopy (cryo-EM) have allowed the
+structural characterization of proteins and macromolecular complexes at near
+atomic resolution [@doi:10.1016/j.cell.2015.03.049]. Complexes intractable to
+study by established approaches like X-ray crystallography and NMR have been
+solved using this method [@doi:10.1038/nature12822]. Structures are determined
+in cryo-EM through comparisons of hundreds of individual images
+[@doi:10.1016/j.cell.2015.03.050]. Thus, advances have depended on increased
+throughput in image capture. The development of new technologies, such as direct
+electron detectors, made practical the collection of the large number of
+micrographs required to solve high-resolution structures. Supporting these rapid
+collection technologies, new software has been developed for image processing.
+For many tasks, analysis can be accomplished in real time as images are
+generated.
+
+Other components of cryo-EM image processing remain recalcitrant to automation.
+For instance, in particle picking, micrographs are scanned to identify
+individual molecular images that will be used in structure refinement. In
+typical applications, hundreds of thousands of particles are necessary to
+determine a structure to near atomic resolution, making manual selection
+impractical [@doi:10.1016/j.cell.2015.03.050]. Furthermore, images containing
+high resolution information are low contrast and difficult to interpret by eye.
+Machine learning approaches have been applied to address these challenges.
+Typical approaches are semi-supervised; a user will select several particles
+manually, and these selections will be used to train a classifier
+[@doi:10.1016/j.jsb.2006.04.006 @doi:10.1016/j.jsb.2014.11.010]. Now
+convolutional neural networks, such as those applied in facial recognition and
+image classification [@doi:10.1038/nature14539], are utilized by deep learning
+frameworks DeepPicker [@doi:10.1016/j.jsb.2016.07.006] and DeepEM
+[@doi:10.1186/s12859-017-1757-y] to select particles. In addition to addressing
+shortcomings from manual selection, such as selection bias and poor
+discrimination of low-contrast images, these approaches also provide a means of
+full automation. Not unlike image recognition programs which are initially
+trained on large cohorts of references before being applied to independent
+images [@doi:10.1038/nature14539], DeepPicker can be trained by reference
+particles from other experiments with structurally unrelated macromolecules,
+allowing for fully automated application to new samples. Subsequent
+classification is fast enough to keep pace with image collection from the
+microscope, allowing for real-time selection of particles as micrographs are
+generated. Downstream of particle picking, deep learning is being applied to
+other aspects of cryo-EM image processing. Statistical manifold learning has
+been implemented in the software package ROME to classify selected particles and
+elucidate the different conformations of the subject molecule necessary for
+accurate 3D structures [@arxiv:1604.04539v2]. These recent tools highlight the
+general applicability of deep learning approaches for image processing to
+increase the throughput of high-resolution cryo-EM.
+
 ### Morphological phenotypes
 
 A field poised for dramatic revolution by deep learning is bioimage analysis.
@@ -742,51 +790,3 @@ prioritize specificity over sensitivity, then expert development of
 probabilistic models with hand-developed inputs [@tag:Torracinta2016_sim]. We
 anticipate that these steps will be replaced by deep learning, which will infer
 features simply by its ability to optimize a complex model against data.
-
-### Structure determination and cryo-electron microscopy
-
-Recent advances in cryo-electron microscopy (cryo-EM) have allowed the
-structural characterization of proteins and macromolecular complexes at near
-atomic resolution [@doi:10.1016/j.cell.2015.03.049]. Complexes intractable to
-study by established approaches like X-ray crystallography and NMR have been
-solved using this method [@doi:10.1038/nature12822]. Structures are determined
-in cryo-EM through comparisons of hundreds of individual images
-[@doi:10.1016/j.cell.2015.03.050]. Thus, advances have depended on increased
-throughput in image capture. The development of new technologies, such as direct
-electron detectors, made practical the collection of the large number of
-micrographs required to solve high-resolution structures. Supporting these rapid
-collection technologies, new software has been developed for image processing.
-For many tasks, analysis can be accomplished in real time as images are
-generated.
-
-Other components of cryo-EM image processing remain recalcitrant to automation.
-For instance, in particle picking, micrographs are scanned to identify
-individual molecular images that will be used in structure refinement. In
-typical applications, hundreds of thousands of particles are necessary to
-determine a structure to near atomic resolution, making manual selection
-impractical [@doi:10.1016/j.cell.2015.03.050]. Furthermore, images containing
-high resolution information are low contrast and difficult to interpret by eye.
-Machine learning approaches have been applied to address these challenges.
-Typical approaches are semi-supervised; a user will select several particles
-manually, and these selections will be used to train a classifier
-[@doi:10.1016/j.jsb.2006.04.006 @doi:10.1016/j.jsb.2014.11.010]. Now
-convolutional neural networks, such as those applied in facial recognition and
-image classification [@doi:10.1038/nature14539], are utilized by deep learning
-frameworks DeepPicker [@doi:10.1016/j.jsb.2016.07.006] and DeepEM
-[@doi:10.1186/s12859-017-1757-y] to select particles. In addition to addressing
-shortcomings from manual selection, such as selection bias and poor
-discrimination of low-contrast images, these approaches also provide a means of
-full automation. Not unlike image recognition programs which are initially
-trained on large cohorts of references before being applied to independent
-images [@doi:10.1038/nature14539], DeepPicker can be trained by reference
-particles from other experiments with structurally unrelated macromolecules,
-allowing for fully automated application to new samples. Subsequent
-classification is fast enough to keep pace with image collection from the
-microscope, allowing for real-time selection of particles as micrographs are
-generated. Downstream of particle picking, deep learning is being applied to
-other aspects of cryo-EM image processing. Statistical manifold learning has
-been implemented in the software package ROME to classify selected particles and
-elucidate the different conformations of the subject molecule necessary for
-accurate 3D structures [@arxiv:1604.04539v2]. These recent tools highlight the
-general applicability of deep learning approaches for image processing to
-increase the throughput of high-resolution cryo-EM.
