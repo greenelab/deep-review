@@ -500,7 +500,7 @@ high resolution information are low contrast and difficult to interpret by eye.
 Machine learning approaches have been applied to address these challenges.
 Typical approaches are semi-supervised; a user will select several particles
 manually, and these selections will be used to train a classifier
-[@doi:10.1016/j.jsb.2006.04.006 @doi:10.1016/j.jsb.2014.11.010]. Now
+[@doi:10.1016/j.jsb.2006.04.006; @doi:10.1016/j.jsb.2014.11.010]. Now
 convolutional neural networks, such as those applied in facial recognition and
 image classification [@doi:10.1038/nature14539], are utilized by deep learning
 frameworks DeepPicker [@doi:10.1016/j.jsb.2016.07.006] and DeepEM
