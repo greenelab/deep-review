@@ -27,7 +27,7 @@ author-meta:
 - Marwin H.S. Segler
 - Anthony Gitter
 - Casey S. Greene
-date-meta: '2017-12-15'
+date-meta: '2017-12-18'
 keywords:
 - deep learning
 - review
@@ -48,8 +48,8 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@6bf71b3](https://github.com/greenelab/deep-review/tree/6bf71b3f397cd50e775f5d4c4782e9d6a330d207)
-on December 15, 2017.
+from [greenelab/deep-review@1abf4cc](https://github.com/greenelab/deep-review/tree/1abf4cc4192eaf12286ae469b0cd68eea19bfc98)
+on December 18, 2017.
 </em></small>
 
 ## Authors
@@ -809,7 +809,7 @@ Jiang et al. proposed a biomedical domain-specific word embedding model to reduc
 Gu et al. employed a maximum entropy model and a CNN model for chemical-induced disease relation extraction at inter- and intra-sentence level, respectively [@14afj7TT1].
 For drug-drug interaction, Zhao et al. used a CNN that employs word embeddings with the syntactic information of a sentence as well as features of POS tags and dependency trees [@8NrcroGt].
 Masaki et al. experimented with an attention CNN, and Yi et al. a recurrent neural network model (RNN) model with multiple attention layers [@zUPTZa6w; @M6JCKCLX].
-In both cases, it is a single model with attention mechanism, which allows the decoder to "attend" to different parts of the source sentence. As a result, it does not require dependency parsing or training multiple models. 
+In both cases, it is a single model with attention mechanism, which allows the decoder to "attend" to different parts of the source sentence. As a result, it does not require dependency parsing or training multiple models.
 Both attention CNN and RNN have comparable results, but the CNN model has an advantage in that it can be easily computed in parallel, hence making it faster with recent Graphical Processing Units (GPUs).
 
 For biotopes event extraction, Li et al. employed CNN and distributed representation while Mehryary et al. used long-short term memory (LSTM) networks to extract complicate relations [@ztw1ugBP; @1AkznVzFs].
@@ -908,7 +908,7 @@ improved by up to 15% when compared to other methods. Choi et
 al. [@11tMRPqto] attempted to model the longitudinal structure of EHRs
 with a RNN to predict future diagnosis and medication prescriptions on a cohort
 of 260,000 patients followed for 8 years (Doctor AI). Pham et al.
-[@HRXii6Ni] built upon this concept by utilising a RNN with a long 
+[@HRXii6Ni] built upon this concept by utilising a RNN with a long
 short-term memory (LSTM) architecture enabling explicit modelling of patient
 trajectories through the use of memory cells. The method, DeepCare, performed
 better than shallow models or plain RNN when tested on two independent cohorts
@@ -1114,12 +1114,12 @@ gathering more laborious and expensive, reducing sample size and study power.
 Several technological solutions have been proposed in this direction, allowing
 access to sensitive data satisfying privacy and legal concerns. Software like
 DataShield [@SfxIiPJ1] and ViPAR [@1D6b3tMu9],
-although not EHR-specific, allows querying and combining of datasets and
+although not EHR-specific, allow querying and combining of datasets and
 calculation of summary statistics across remote sites by "taking the analysis to
 the data". The computation is carried out at the remote site. Conversely, the
 EH4CR project [@13filvWwr] allows analysis of private data
 by use of an inter-mediation layer that interprets remote queries across
-internal   formats and datastores and returns the results in a de-identified
+internal formats and datastores and returns the results in a de-identified
 standard form, thus giving real-time consistent but secure access. Continuous
 Analysis [@Qh7xTLwz] can allow reproducible computing on private
 data. Using such techniques, intermediate results can be automatically tracked
@@ -1134,33 +1134,43 @@ and Roth [@v8Lp4ibI] demonstrate the ability to expose individual
 level information from accurate answers in a machine learning model. Attackers
 can use similar attacks to find out if a particular data instance was present in
 the original training set for the machine learning model [@1HbRTExaU], in
-this case, whether a person's record was present. This presents a potential
-hazard for approaches that aim to generate data. Choi et al. propose generative
-adversarial neural networks as a tool to make sharable EHR data
-[@xl1ijigK]; however, the authors did not take steps to protect the
-model from such attacks.
+this case, whether a person's record was present. To protect against these
+attacks, Simmons et al. [@6XtEfQMC] developed the ability
+to perform genome-wide association studies (GWASs) in a differentially private
+manner, and Abadi et al. [@ucHUOABT] show the ability to train deep
+learning classifiers under the differential privacy framework.
 
-There are approaches to protect models, but they pose their own challenges.
-Training in a differentially private manner provides a limited guarantee that an
-algorithm's output will be equally likely to occur regardless of the
-participation of any one individual. The limit is determined by a single
-parameter which provides a quantification of privacy. Simmons et al.
-[@6XtEfQMC] present the ability to perform genome-wide
-association studies (GWASs) in a differentially private manner, and Abadi et al.
-[@ucHUOABT] show the ability to train deep learning classifiers under
-the differential privacy framework. Federated learning
-[@U0ySdznJ] and secure aggregations
-[@1GprsH3DV; @b8DJ1u6W] are
-complementary approaches that reinforce differential privacy. Both aim to
-maintain privacy by training deep learning models from decentralized data
-sources such as personal mobile devices without transferring actual training
-instances. This is becoming of increasing importance with the rapid growth of
-mobile health applications. However, the training process in these approaches
-places constraints on the algorithms used and can make fitting a model
-substantially more challenging. In our own experience, it can be trivial to
-train a model without differential privacy, but quite difficult to train one
-within the differential privacy framework. The problem can be particularly
-pronounced with small sample sizes.
+These attacks also present a potential hazard for approaches that aim to
+generate data. Choi et al. propose generative adversarial neural networks (GANs)
+as a tool to make sharable EHR data [@xl1ijigK], and Esteban et al.
+[@1988BRJe3] showed that recurrent GANs could be used for time series
+data. However, in both cases the authors did not take steps to protect the model
+from such attacks. There are approaches to protect models, but they pose their
+own challenges. Training in a differentially private manner provides a limited
+guarantee that an algorithm's output will be equally likely to occur regardless
+of the participation of any one individual. The limit is determined by
+parameters which provide a quantification of privacy. Beaulieu-Jones et al.
+demonstrated the ability to generate data that preserved properties of the
+SPRINT clinical trial with GANs under the differential privacy framework
+[@fbIH12yd]. Both Beaulieu-Jones et al. and Esteban et al. train
+models on synthetic data generated under differentially private and observe
+performance from a transfer learning evaluation that is only slightly below
+models trained on the original, real data. Taken together, these results suggest
+that differentially private GANs may be an attractive way to generate sharable
+datasets for downstream reanalysis.
+
+Federated learning [@U0ySdznJ] and
+secure aggregations [@1GprsH3DV
+@b8DJ1u6W] are complementary approaches that reinforce differential
+privacy. Both aim to maintain privacy by training deep learning models from
+decentralized data sources such as personal mobile devices without transferring
+actual training instances. This is becoming of increasing importance with the
+rapid growth of mobile health applications. However, the training process in
+these approaches places constraints on the algorithms used and can make fitting
+a model substantially more challenging. It can be trivial to train a model
+without differential privacy, but quite difficult to train one within the
+differential privacy framework [@fbIH12yd]. This problem can be
+particularly pronounced with small sample sizes.
 
 While none of these problems are insurmountable or restricted to deep learning,
 they present challenges that cannot be ignored. Technical evolution in EHRs and
@@ -2882,14 +2892,17 @@ deep learning can make the preprocessing code (e.g. Basset
 [@2CbHXoFn] and variationanalysis [@GSLRw2L5])
 and cleaned data (e.g. MoleculeNet [@16OPHvAij]) publicly
 available to catalyze further research. However, there are complex privacy and
-legal issues involved in sharing patient data. In some
-domains high-quality training data has been generated privately, i.e.
-high-throughput chemical screening data at pharmaceutical companies. One
-may think that there is little incentive for this private
-data to be shared. However, data are not inherently valuable. Instead, the
-insights that we glean from them are where the value lies. Organizations may
-establish a competitive advantage by releasing data sufficient for improved
-methods to be developed.
+legal issues involved in sharing patient data that cannot be ignored. Solving
+these issues will require increased understanding of privacy risks and
+standards specifying acceptable levels. In some domains high-quality training
+data has been generated privately, i.e. high-throughput chemical screening data
+at pharmaceutical companies. One perspective is that there is little
+expectation or incentive for this private data to be shared. However, data are
+not inherently valuable. Instead, the insights that we glean from them are
+where the value lies. Private companies may establish a competitive advantage
+by releasing data sufficient for improved methods to be developed. Recently,
+Ramsundar et al. did this with an open source platform DeepChem, where they
+released four privately generated datasets [@wzHEnMZe].
 
 Code sharing and open source licensing is essential for continued progress in
 this domain.  We strongly advocate following established best practices for
@@ -2909,13 +2922,15 @@ image classifiers as an apt example.  A pre-trained neural network can be
 quickly fine-tuned on new data and used in transfer learning, as discussed
 below.  Taking this idea to the extreme, genomic data has been artificially
 encoded as images in order to benefit from pre-trained image classifiers
-[@FVfZESYP]. "Model zoos" -- collections of pre-trained models --
-are not yet common in biomedical domains but have started to appear in genomics
-applications [@19EJTHByG; @117PEpTMe].  Sharing models
-for patient data requires great care because deep learning models can be
-attacked to identify examples used in training.  We discuss this issue as well
-as recent techniques to mitigate these concerns in the patient categorization
-section.
+[@FVfZESYP]. "Model zoos" -- collections of pre-trained
+models -- are not yet common in biomedical domains but have started to appear
+in genomics applications [@19EJTHByG; @117PEpTMe].
+However, it is important to note that sharing models trained on individual data
+requires great care because deep learning models can be attacked to identify
+examples used in training. One possible solution to protect individual samples
+includes training models under differential privacy [@ucHUOABT], which
+has been used in the biomedical domain [@fbIH12yd]. We discussed this
+issue as well as recent techniques to mitigate these concerns in the patient categorization section.
 
 DeepChem [@P4ixsM8i; @Ytvk62dX; @16OPHvAij]
 and DragoNN [@117PEpTMe] exemplify the benefits of sharing pre-trained models
@@ -3208,7 +3223,7 @@ To facilitate citation, we [defined](https://github.com/greenelab/deep-review/bl
 We supported citations to the following identifier types (in order of preference): DOIs, PubMed IDs, arXiv IDs, and URLs.
 References were automatically generated from citation metadata by querying APIs to generate [Citation Style Language](http://citationstyles.org/) (CSL) JSON items for each reference.
 [Pandoc](http://pandoc.org/) and [pandoc-citeproc](https://github.com/jgm/pandoc-citeproc) converted the markdown to HTML and PDF, while rendering the formatted citations and references.
-In total, referenced works consisted of 308 DOIs, 6 PubMed records, 114 arXiv manuscripts, and 42 URLs (webpages as well as manuscripts lacking standardized identifiers).
+In total, referenced works consisted of 310 DOIs, 6 PubMed records, 115 arXiv manuscripts, and 42 URLs (webpages as well as manuscripts lacking standardized identifiers).
 
 We implemented continuous analysis so the manuscript was automatically regenerated whenever the source changed [@Qh7xTLwz].
 We configured Travis CI -- a continuous integration service -- to fetch new citation metadata and rebuild the manuscript for every commit.

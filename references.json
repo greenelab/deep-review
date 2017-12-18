@@ -4303,6 +4303,37 @@
     "id": "z8hmfrmY"
   },
   {
+    "arxiv_id": "1706.02633v1",
+    "version": "1",
+    "URL": "https://arxiv.org/abs/1706.02633v1",
+    "title": "Real-valued (Medical) Time Series Generation with Recurrent Conditional\n  GANs",
+    "issued": {
+      "date-parts": [
+        [
+          "2017",
+          "06",
+          "08"
+        ]
+      ]
+    },
+    "author": [
+      {
+        "literal": "Cristóbal Esteban"
+      },
+      {
+        "literal": "Stephanie L. Hyland"
+      },
+      {
+        "literal": "Gunnar Rätsch"
+      }
+    ],
+    "container-title": "arXiv",
+    "publisher": "arXiv",
+    "abstract": "Generative Adversarial Networks (GANs) have shown remarkable success as a\nframework for training models to produce realistic-looking data. In this work,\nwe propose a Recurrent GAN (RGAN) and Recurrent Conditional GAN (RCGAN) to\nproduce realistic real-valued multi-dimensional time series, with an emphasis\non their application to medical data. RGANs make use of recurrent neural\nnetworks in the generator and the discriminator. In the case of RCGANs, both of\nthese RNNs are conditioned on auxiliary information. We demonstrate our models\nin a set of toy datasets, where we show visually and quantitatively (using\nsample likelihood and maximum mean discrepancy) that they can successfully\ngenerate realistic time-series. We also describe novel evaluation methods for\nGANs, where we generate a synthetic labelled training dataset, and evaluate on\na real test set the performance of a model trained on the synthetic data, and\nvice-versa. We illustrate with these metrics that RCGANs can generate\ntime-series data useful for supervised training, with only minor degradation in\nperformance on real test data. This is demonstrated on digit classification\nfrom 'serialised' MNIST and by training an early warning system on a medical\ndataset of 17,000 patients from an intensive care unit. We further discuss and\nanalyse the privacy concerns that may arise when using RCGANs to generate\nrealistic synthetic medical time series data.",
+    "type": "report",
+    "id": "1988BRJe3"
+  },
+  {
     "arxiv_id": "1708.04692v2",
     "version": "2",
     "URL": "https://arxiv.org/abs/1708.04692v2",
@@ -12705,6 +12736,205 @@
     "container-title-short": "J. Chem. Inf. Model.",
     "short_url": "https://doi.org/f9jhpn",
     "id": "Gue0c5Gb"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          12,
+          15
+        ]
+      ],
+      "date-time": "2017-12-15T06:02:19Z",
+      "timestamp": 1513317739822
+    },
+    "reference-count": 24,
+    "publisher": "American Chemical Society (ACS)",
+    "issue": "8",
+    "funder": [
+      {
+        "DOI": "10.13039/100000060",
+        "name": "National Institute of Allergy and Infectious Diseases",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "U19 AI109662"
+        ]
+      },
+      {
+        "DOI": "10.13039/100005883",
+        "name": "Hertz Foundation",
+        "doi-asserted-by": "publisher",
+        "award": []
+      },
+      {
+        "DOI": "10.13039/100000057",
+        "name": "National Institute of General Medical Sciences",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "R01 GM062868"
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2017,
+          8,
+          28
+        ]
+      ]
+    },
+    "DOI": "10.1021/acs.jcim.7b00146",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          7,
+          10
+        ]
+      ],
+      "date-time": "2017-07-10T20:37:35Z",
+      "timestamp": 1499719055000
+    },
+    "page": "2068-2076",
+    "source": "Crossref",
+    "is-referenced-by-count": 2,
+    "title": "Is Multitask Deep Learning Practical for Pharma?",
+    "prefix": "10.1021",
+    "volume": "57",
+    "author": [
+      {
+        "ORCID": "http://orcid.org/0000-0001-8450-4262",
+        "authenticated-orcid": true,
+        "given": "Bharath",
+        "family": "Ramsundar",
+        "affiliation": [
+          {
+            "name": "Department\rof Computer Science, Stanford University, Stanford, California 94305, United States"
+          }
+        ]
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0003-0609-3087",
+        "authenticated-orcid": true,
+        "given": "Bowen",
+        "family": "Liu",
+        "affiliation": [
+          {
+            "name": "Department\rof Chemistry, Stanford University, Stanford, California 94305, United States"
+          }
+        ]
+      },
+      {
+        "given": "Zhenqin",
+        "family": "Wu",
+        "affiliation": [
+          {
+            "name": "Department\rof Chemistry, Stanford University, Stanford, California 94305, United States"
+          }
+        ]
+      },
+      {
+        "given": "Andreas",
+        "family": "Verras",
+        "affiliation": [
+          {
+            "name": "Chemistry\rCapabilities and Screening, Merck &amp; Co., Inc., 2000 Galloping Hill Road, Kenilworth, New Jersey 07033, United States"
+          }
+        ]
+      },
+      {
+        "given": "Matthew",
+        "family": "Tudor",
+        "affiliation": [
+          {
+            "name": "Chemistry\rCapabilities and Screening, Merck &amp; Co., Inc., 770 Sumneytown Pike, West Point, Pennsylvania 19846, United States"
+          }
+        ]
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-6549-1635",
+        "authenticated-orcid": true,
+        "given": "Robert P.",
+        "family": "Sheridan",
+        "affiliation": [
+          {
+            "name": "Chemistry\rCapabilities and Screening, Merck &amp; Co., Inc., 2000 Galloping Hill Road, Kenilworth, New Jersey 07033, United States"
+          }
+        ]
+      },
+      {
+        "given": "Vijay",
+        "family": "Pande",
+        "affiliation": [
+          {
+            "name": "Department\rof Chemistry, Stanford University, Stanford, California 94305, United States"
+          }
+        ]
+      }
+    ],
+    "member": "316",
+    "published-online": {
+      "date-parts": [
+        [
+          2017,
+          8
+        ]
+      ]
+    },
+    "container-title": "Journal of Chemical Information and Modeling",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://pubs.acs.org/doi/pdf/10.1021/acs.jcim.7b00146",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          12,
+          8
+        ]
+      ],
+      "date-time": "2017-12-08T11:56:23Z",
+      "timestamp": 1512734183000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          8
+        ]
+      ]
+    },
+    "references-count": 24,
+    "alternative-id": [
+      "10.1021/acs.jcim.7b00146"
+    ],
+    "URL": "https://doi.org/10.1021/acs.jcim.7b00146",
+    "relation": {},
+    "subject": [
+      "General Chemistry",
+      "General Chemical Engineering",
+      "Library and Information Sciences",
+      "Computer Science Applications"
+    ],
+    "container-title-short": "J. Chem. Inf. Model.",
+    "short_url": "https://doi.org/gcnzrm",
+    "id": "wzHEnMZe"
   },
   {
     "indexed": {
@@ -31203,6 +31433,132 @@
     "relation": {},
     "short_url": "https://doi.org/gcgk93",
     "id": "1CAw3FaPI"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          11,
+          21
+        ]
+      ],
+      "date-time": "2017-11-21T09:40:10Z",
+      "timestamp": 1511257210224
+    },
+    "posted": {
+      "date-parts": [
+        [
+          2017,
+          7,
+          5
+        ]
+      ]
+    },
+    "group-title": "Bioinformatics",
+    "reference-count": 0,
+    "publisher": "Cold Spring Harbor Laboratory",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "accepted": {
+      "date-parts": [
+        [
+          2017,
+          11,
+          15
+        ]
+      ]
+    },
+    "abstract": "<jats:p>Though it is widely recognized that data sharing enables faster scientific progress, the sensible need to protect participant privacy hampers this practice in medicine. We train deep neural networks that generate synthetic subjects closely resembling study participants. Using the SPRINT trial as an example, we show that machine-learning models built from simulated participants generalize to the original dataset. We incorporate differential privacy, which offers strong guarantees on the likelihood that a subject could be identified as a member of the trial. Investigators who have compiled a dataset can use our method to provide a freely accessible public version that enables other scientists to perform discovery-oriented analyses. Generated data can be released alongside analytical code to enable fully reproducible workflows, even when privacy is a concern. By addressing data sharing challenges, deep neural networks can facilitate the rigorous and reproducible investigation of clinical datasets.</jats:p>",
+    "DOI": "10.1101/159756",
+    "type": "manuscript",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          7,
+          6
+        ]
+      ],
+      "date-time": "2017-07-06T05:10:15Z",
+      "timestamp": 1499317815000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "Privacy-preserving generative deep neural networks support clinical data sharing",
+    "prefix": "10.1101",
+    "author": [
+      {
+        "ORCID": "http://orcid.org/0000-0002-6700-1468",
+        "authenticated-orcid": false,
+        "given": "Brett K.",
+        "family": "Beaulieu-Jones",
+        "affiliation": []
+      },
+      {
+        "given": "Zhiwei Steven",
+        "family": "Wu",
+        "affiliation": []
+      },
+      {
+        "given": "Chris",
+        "family": "Williams",
+        "affiliation": []
+      },
+      {
+        "given": "James Brian",
+        "family": "Byrd",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0001-8713-9213",
+        "authenticated-orcid": false,
+        "given": "Casey S.",
+        "family": "Greene",
+        "affiliation": []
+      }
+    ],
+    "member": "246",
+    "container-title": [],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://syndication.highwire.org/content/doi/10.1101/159756",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          11,
+          21
+        ]
+      ],
+      "date-time": "2017-11-21T09:25:38Z",
+      "timestamp": 1511256338000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          7,
+          5
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "https://doi.org/10.1101/159756",
+    "relation": {},
+    "short_url": "https://doi.org/gcnzrn",
+    "id": "fbIH12yd"
   },
   {
     "indexed": {

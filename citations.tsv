@@ -116,6 +116,7 @@ string	citation	standard_citation	citation_id
 @arxiv:1705.02315	arxiv:1705.02315	arxiv:1705.02315	PGi9g7yV
 @arxiv:1705.03261	arxiv:1705.03261	arxiv:1705.03261	M6JCKCLX
 @arxiv:1705.09516	arxiv:1705.09516	arxiv:1705.09516	z8hmfrmY
+@arxiv:1706.02633v1	arxiv:1706.02633v1	arxiv:1706.02633v1	1988BRJe3
 @tag:Osokin2017_biogan	arxiv:1708.04692	arxiv:1708.04692	zBCcUQOM
 @tag:WayGreene2017_eval	arxiv:1711.04828	arxiv:1711.04828	rMz1OFc6
 @doi:10.1001/jama.2016.17216	doi:10.1001/jama.2016.17216	doi:10.1001/jama.2016.17216	1mJW6umJ
@@ -173,6 +174,7 @@ string	citation	standard_citation	citation_id
 @tag:Tu1996_anns	doi:10.1016/S0895-4356(96)00002-9	doi:10.1016/s0895-4356(96)00002-9	kL0B4m9d
 @tag:Subramanian2016_bace1	doi:10.1021/acs.jcim.6b00290	doi:10.1021/acs.jcim.6b00290	B4cL1o2P
 @tag:Pereira2016_docking	doi:10.1021/acs.jcim.6b00355	doi:10.1021/acs.jcim.6b00355	Gue0c5Gb
+@doi:10.1021/acs.jcim.7b00146	doi:10.1021/acs.jcim.7b00146	doi:10.1021/acs.jcim.7b00146	wzHEnMZe
 @doi:10.1021/acs.jmedchem.5b01849	doi:10.1021/acs.jmedchem.5b01849	doi:10.1021/acs.jmedchem.5b01849	omzv9ryI
 @doi:10.1021/acs.jproteome.6b00618	doi:10.1021/acs.jproteome.6b00618	doi:10.1021/acs.jproteome.6b00618	oTF8O79C
 @doi:10.1021/acs.molpharmaceut.5b00982	doi:10.1021/acs.molpharmaceut.5b00982	doi:10.1021/acs.molpharmaceut.5b00982	1VZjheOA
@@ -300,6 +302,7 @@ string	citation	standard_citation	citation_id
 @tag:Chaudhary2017_multiom_liver_cancer	doi:10.1101/114892	doi:10.1101/114892	obeRVckH
 @doi:10.1101/125229	doi:10.1101/125229	doi:10.1101/125229	2M3zXijc
 @doi:10.1101/138685	doi:10.1101/138685	doi:10.1101/138685	1CAw3FaPI
+@doi:10.1101/159756	doi:10.1101/159756	doi:10.1101/159756	fbIH12yd
 @tag:WayGreene2017_tybalt	doi:10.1101/174474	doi:10.1101/174474	aWn0df1m
 @tag:Goldsborough2017_cytogan	doi:10.1101/227645	doi:10.1101/227645	1EdCkau6d
 @doi:10.1101/gr.110254.110	doi:10.1101/gr.110254.110	doi:10.1101/gr.110254.110	G0J9P3Ln
