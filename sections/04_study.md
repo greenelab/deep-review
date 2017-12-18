@@ -479,7 +479,7 @@ fewer sequence homologs.
 Recent advances in cryo-electron microscopy (cryo-EM) have allowed the
 structural characterization of proteins and macromolecular complexes at near
 atomic resolution [@doi:10.1016/j.cell.2015.03.049]. Complexes intractable to
-study by established approaches like X-ray crystallography and NMR have been
+study by established approaches like X-ray crystallography and nuclear magnetic resonance (NMR) spectroscopy have been
 solved using this method [@doi:10.1038/nature12822]. Structures are determined
 in cryo-EM through comparisons of hundreds of individual images
 [@doi:10.1016/j.cell.2015.03.050]. Thus, advances have depended on increased
