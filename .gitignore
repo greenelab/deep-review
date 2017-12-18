@@ -16,4 +16,5 @@ __pycache__/
 
 # Misc temporary files
 *.bak
+.DS_Store
 
