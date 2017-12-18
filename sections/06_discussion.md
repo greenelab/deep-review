@@ -22,7 +22,7 @@ described as a tradeoff between "bias and variance"
 Although the bias-variance tradeoff is common to all machine learning
 applications, recent empirical and theoretical observations suggest that deep
 learning models may have uniquely advantageous generalization properties
-[@tag:Zhang2017_generalization @tag:Lin2017_why_dl_works]. Nevertheless,
+[@tag:Zhang2017_generalization; @tag:Lin2017_why_dl_works]. Nevertheless,
 additional advances will be needed to establish a coherent theoretical
 foundation which enables practitioners to better reason about their models from
 first principles.
@@ -57,7 +57,7 @@ auPRC greater than 0.6. In this case, the auPRC may be competitive, but the
 predictions are ill-suited for targeted validation that can only examine a few
 of the highest-confidence predictions. Likewise, auROC evaluates the average
 recall across all false positive rate (FPR) thresholds, which is often a highly
-misleading metric in class-imbalanced domains [@doi:10.1145/1143844.1143874
+misleading metric in class-imbalanced domains [@doi:10.1145/1143844.1143874;
 @doi:10.1038/nmeth.3945]. Consider a classification model with recall of 0% at
 FDR less than 25% and 100% recall at FDR greater than 25%. In the context of TF
 binding predictions where only 1% of genomic regions are bound by the TF, this
