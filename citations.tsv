@@ -73,6 +73,7 @@ string	citation	standard_citation	citation_id
 @tag:Ranganath2016_deep	arxiv:1608.02158	arxiv:1608.02158	qXdO2aMm
 @tag:Lanchantin2016_motif	arxiv:1608.03644	arxiv:1608.03644	Dwi2eAvT
 @tag:Choi2016_retain	arxiv:1608.05745	arxiv:1608.05745	UcRbawKo
+@tag:Lin2017_why_dl_works	arxiv:1608.08225v3	arxiv:1608.08225v3	bBG5t78u
 @tag:Jafari2016_skin_lesions	arxiv:1609.02374	arxiv:1609.02374	1AJUcl1KV
 @arxiv:1609.02943	arxiv:1609.02943	arxiv:1609.02943	ULSPV0rh
 @tag:Hubara2016_qnn	arxiv:1609.07061	arxiv:1609.07061	1GUizyE8e
@@ -87,6 +88,7 @@ string	citation	standard_citation	citation_id
 @arxiv:1610.05820	arxiv:1610.05820	arxiv:1610.05820	1HbRTExaU
 @arxiv:1610.09559	arxiv:1610.09559	arxiv:1610.09559	11aqfNfQx
 @arxiv:1611.02796	arxiv:1611.02796	arxiv:1611.02796	lERqKdZJ
+@tag:Zhang2017_generalization	arxiv:1611.03530v2	arxiv:1611.03530v2	D2B03NVK
 @arxiv:1611.03814	arxiv:1611.03814	arxiv:1611.03814	AsLAb71x
 @tag:Choi2016_gram	arxiv:1611.07012	arxiv:1611.07012	10nDTiETi
 @tag:Kindermans2016_investigating	arxiv:1611.07270	arxiv:1611.07270	b1sc0cgP
@@ -445,6 +447,7 @@ string	citation	standard_citation	citation_id
 @doi:10.3389/fgene.2014.00342	doi:10.3389/fgene.2014.00342	doi:10.3389/fgene.2014.00342	ppGS5h4v
 @doi:10.3390/info6040848	doi:10.3390/info6040848	doi:10.3390/info6040848	OuoHShLI
 @tag:Baxt1991_myocardial	doi:10.7326/0003-4819-115-11-843	doi:10.7326/0003-4819-115-11-843	jdg2u7bX
+@tag:Errington2014_reproducibility	doi:10.7554/eLife.04333	doi:10.7554/elife.04333	ZxQ49E8q
 @tag:Agarwal2015_targetscan	doi:10.7554/eLife.05005	doi:10.7554/elife.05005	12vPQi3gp
 @pmid:21347133	pmid:21347133	pmid:21347133	y9ONtSZ9
 @pmid:24159271	pmid:24159271	pmid:24159271	11sli93ov
