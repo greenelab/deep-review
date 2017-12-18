@@ -478,17 +478,9 @@ fewer sequence homologs.
 
 Complementing computational prediction approaches, cryo-electron microscopy (cryo-EM)
 allows near-atomic resolution determination of protein models by
-comparing individual electron microscope images [@doi:10.1016/j.cell.2015.03.049].  Complexes intractable to
-study by established approaches like X-ray crystallography and nuclear magnetic resonance (NMR) spectroscopy have been
-solved using this method [@doi:10.1038/nature12822]. Structures are determined
-in cryo-EM through comparisons of hundreds of individual images
-[@doi:10.1016/j.cell.2015.03.050]. Thus, advances have depended on increased
-throughput in image capture. The development of new technologies, such as direct
-electron detectors, made practical the collection of the large number of
-micrographs required to solve high-resolution structures. Supporting these rapid
-collection technologies, new software has been developed for image processing.
-For many tasks, analysis can be accomplished in real time as images are
-generated.
+comparing individual electron micrographs [@doi:10.1016/j.cell.2015.03.049].  
+Detailed structures require tens of thousands of protein images
+[@doi:10.1016/j.cell.2015.03.050]. Technological development has increased the throughput of image capture. New hardware, such as direct electron detectors, has made large-scale image production practical, while new software has focused on rapid, automated image processing.
 
 Other components of cryo-EM image processing remain recalcitrant to automation.
 For instance, in particle picking, micrographs are scanned to identify
