@@ -4,6 +4,9 @@ engines:
     enabled: true
   markdownlint:
     enabled: true
+    checks:
+      MD013:
+        enabled: false
 ratings:
   paths:
   - "**.md"
