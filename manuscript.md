@@ -48,7 +48,7 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@1abf4cc](https://github.com/greenelab/deep-review/tree/1abf4cc4192eaf12286ae469b0cd68eea19bfc98)
+from [greenelab/deep-review@68c2a47](https://github.com/greenelab/deep-review/tree/68c2a475d9587dd6900c1f210ce35f7d5b60f9c0)
 on December 18, 2017.
 </em></small>
 
@@ -355,13 +355,13 @@ Deep learning approaches grew from research in neural networks, which were first
 for how our brains process information. The history of neural networks is
 interesting in its own right [@1G5eCiq4d]. In neural
 networks, inputs are fed into a hidden layer, which feeds into one or more
-hidden layers, which eventually link to an output layer. 
+hidden layers, which eventually link to an output layer.
 A layer consists of a set of nodes, usually called "features" or "units,"
 which are connected via edges to the immediately earlier and the
 immediately deeper layers.
 The nodes of the input layer generally consist of the variables being measured in the dataset
 of interest -- for example, each node could represent the intensity value of a specific
-pixel in an image processing application or a gene expression value in a transcriptomics 
+pixel in an image processing application or a gene expression value in a transcriptomics
 experiment.
 The neural networks
 used for deep learning have multiple hidden layers. Each layer essentially
@@ -369,23 +369,23 @@ performs feature construction for the layers before it. The training process
 used often allows layers deeper in the network to contribute to the refinement
 of earlier layers. For this reason, these algorithms can automatically engineer
 features that are suitable for many tasks and customize those features for one
-or more specific tasks. 
+or more specific tasks.
 
 Deep learning does many of the same things as more
 familiar machine learning approaches. In particular, deep learning approaches can be used both in *supervised*
 applications -- where the goal is to accurately predict one or more labels or outcomes associated with each
-data point -- in the place of regression approaches, as well as in *unsupervised*, or "exploratory" applications -- 
+data point -- in the place of regression approaches, as well as in *unsupervised*, or "exploratory" applications --
 where the goal is to summarize, explain, or
 identify interesting patterns in a data set -- as a form of clustering.
 Deep learning methods may in fact combine both of
 these steps. When sufficient data are available and labeled, these methods construct
 features tuned to a specific problem and combine those features into a
 predictor.
-In fact, if the dataset is "labeled" with binary classes, a simple neural network 
+In fact, if the dataset is "labeled" with binary classes, a simple neural network
 with no hidden layers and no cycles between units is equivalent to logistic regression
 if the output layer is a sigmoid (logistic) function of the input layer.
 Similarly, for continuous outcomes, linear regression can be seen as a simple neural network.
-Thus, in some ways, supervised deep learning approaches can be seen as a generalization of regression 
+Thus, in some ways, supervised deep learning approaches can be seen as a generalization of regression
 models that allow for greater flexibility.
 Recently, hardware improvements and very
 large training datasets have allowed these deep learning techniques to surpass
@@ -417,13 +417,13 @@ covers these in detail [@yg8NW0K7]. Finally, the
 larger datasets now available are also sufficient for fitting the many
 parameters that exist for deep neural networks. The convergence of these factors
 currently makes deep learning extremely adaptable and capable of addressing the
-nuanced differences of each domain to which it is applied. 
+nuanced differences of each domain to which it is applied.
 
 | Term | Definition |
 |----------------------------|-------------------------------------------------------------------------------------------|
 | Neural network  (NN) | Machine-learning approach where inputs are fed into one or more hidden layers, producing an outer layer |
-| Deep learning (DL) approach | NN with multiple hidden layers | 
-| Supervised learning | Machine-learning approaches with goal of prediction of labels or outcomes | 
+| Deep learning (DL) approach | NN with multiple hidden layers |
+| Supervised learning | Machine-learning approaches with goal of prediction of labels or outcomes |
 | Unsupervised learning | Machine-learning approaches with goal of data summarization or pattern identification |
 | Convolutional neural network (CNN) | NN used for grid data -- such as images or equally-spaced time points - that considers convolutions instead of linear transformations, leading to increased sparsity and thus improved efficiency |
 | Feed-forward neural network (FFNN) | NN that does not have cycles between nodes in the same layer |
@@ -440,7 +440,7 @@ nuanced differences of each domain to which it is applied.
 Table: Glossary.
 {#tbl:glossary}
 
-While deep learning shows increased flexibility over other machine learning approaches, as 
+While deep learning shows increased flexibility over other machine learning approaches, as
 seen in the remainder of this review, it requires large training sets in order to fit
 the hidden layers, as well as accurate labels for the supervised learning applications.
 For these reasons, deep learning has recently become popular in some areas of biology and medicine, while having lower adoption in other areas.
@@ -466,7 +466,7 @@ a Strategic Inflection Point in the practice of biology or medicine.
 There are already a number of reviews focused on applications of deep learning
 in biology [@yXqhuueV; @1VZjheOA;
 @irSe12Sm; @G00xvi94;
-@MmRGFVUu], healthcare [@11I7bLcP3], and
+@MmRGFVUu], healthcare [@11I7bLcP3; @LL5huVs3], and
 drug discovery [@gJE0ExFr; @zCt6PUXj;
 @1DTUK3YyI; @xPkT1z7D].  Under our guiding
 question, we sought to highlight cases where deep learning enabled researchers
@@ -777,22 +777,15 @@ better-informed decisions for patient treatment and care.
 
 ### Text applications in healthcare
 
-Due to the rapid growth of scholarly publications and electronic medical/health records, biomedical text mining has become increasingly important in recent years.
+Due to the rapid growth of scholarly publications and EHRs, biomedical text mining has become increasingly important in recent years.
 The main tasks in biological and clinical text mining include, but are not limited to, named entity recognition, relation/event extraction, and information retrieval (Figure @fig:biotm).
+Deep learning is appealing in this domain because of its competitive performance versus traditional methods and ability to overcome challenges in feature engineering.
+Relevant applications can be stratified by the application domain (biomedical literature vs. clinical notes) and the actual task (e.g. concept or relation extraction).
 
-![Deep learning applications, tasks and models based on NLP perspectives.](images/biotm.png){#fig:biotm width="100%"}
+![Deep learning applications, tasks, and models based on NLP perspectives.](images/biotm.png){#fig:biotm width="100%"}
 
-Machine learning is widely used in many of aforementioned tasks where engineering the optimal set of features is a must.
-However it is often difficult to know what features should be extracted, even with domain knowledge.
-Deep learning addresses this challenge by enabling "computers to build complex
-concepts out of simpler ones [@yg8NW0K7]".
-Moreover, deep learning has shown competitive performance compared to traditional ML methods.
-As a result, we have observed growing interests of using deep learning in biomedical text mining applications in recent years.
-In this section, we summarize recent studies in text mining with various deep learning methods.
-We categorize the body of work by the application domain/text genre (biomedical literature vs. clinical notes) and by the actual task (e.g. concept or relation extraction).
-
-In biomedical text mining, named entity recognition (NER) is a task of identifying text spans that refer to a biological concept of a specific class, such as disease or chemical, in a controlled vocabulary or ontology.
-NER is of importance as it is often needed as a first step in many complex text mining systems.
+Named entity recognition (NER) is a task of identifying text spans that refer to a biological concept of a specific class, such as disease or chemical, in a controlled vocabulary or ontology.
+NER is often needed as a first step in many complex text mining systems.
 The current state-of-the-art methods typically reformulate the task as a sequence labeling problem and use conditional random fields [@11YUuHulp; @19G2RXgfp; @vtuZ3Wx7].
 In recent years, word embeddings that contain rich latent semantic information of words have been widely used to improve the NER performance.
 Liu et al. studied the effect of word embeddings on drug name recognition and compared them with traditional semantic features [@OuoHShLI].
@@ -800,36 +793,37 @@ Tang et al. investigated word embeddings in gene, DNA, and cell line mention det
 Moreover, Wu et al. examined the use of neural word embeddings for clinical abbreviation disambiguation [@pWpK5WUq].
 Liu et al. exploited task-oriented resources to learn word embeddings for clinical abbreviation expansion [@LeLKNlsR].
 
-Relation extraction is a task of detecting and classifying semantic relationship between entities from the literature.
+Relation extraction involves detecting and classifying semantic relationships between entities from the literature.
 At present, kernel methods or feature-based approaches are commonly applied [@c6gbPCdT; @Sn8TwSQK; @X909h5sz].
-There are several proposals of using deep learning in the biomedical relation tasks because it can relieve the feature sparsity and engineering problems.
-Some studies focused on jointly extracting biomedical entities as well as their relations simultaneously [@MmcdzBXf; @1F5aZYjOB], while others applied deep learning on relation classification with given entities.
-For example, Peng and Lu proposed a multichannel dependency-based CNN and Hua and Quan proposed a shortest path based CNN for the sentence-based protein-protein extraction task [@1H4fyFU1f; @19r6xFsZQ; @ULZPgbOq].
+Deep learning can relieve the feature sparsity and engineering problems.
+Some studies focused on jointly extracting biomedical entities and relations simultaneously [@MmcdzBXf; @1F5aZYjOB], while others applied deep learning on relation classification given the relevant entities.
+For example, both multichannel dependency-based CNNs [@1H4fyFU1f] and shortest path-based CNNs [@19r6xFsZQ; @ULZPgbOq] are well-suited for sentence-based protein-protein extraction.
 Jiang et al. proposed a biomedical domain-specific word embedding model to reduce the manual labor of designing semantic representation for the same task [@MY6FXgFn].
-Gu et al. employed a maximum entropy model and a CNN model for chemical-induced disease relation extraction at inter- and intra-sentence level, respectively [@14afj7TT1].
-For drug-drug interaction, Zhao et al. used a CNN that employs word embeddings with the syntactic information of a sentence as well as features of POS tags and dependency trees [@8NrcroGt].
-Masaki et al. experimented with an attention CNN, and Yi et al. a recurrent neural network model (RNN) model with multiple attention layers [@zUPTZa6w; @M6JCKCLX].
-In both cases, it is a single model with attention mechanism, which allows the decoder to "attend" to different parts of the source sentence. As a result, it does not require dependency parsing or training multiple models.
-Both attention CNN and RNN have comparable results, but the CNN model has an advantage in that it can be easily computed in parallel, hence making it faster with recent Graphical Processing Units (GPUs).
+Gu et al. employed a maximum entropy model and a CNN model for chemical-induced disease relation extraction at the inter- and intra-sentence level, respectively [@14afj7TT1].
+For drug-drug interaction, Zhao et al. used a CNN that employs word embeddings with the syntactic information of a sentence as well as features of  part-of-speech tags and dependency trees [@8NrcroGt].
+Asada et al. experimented with an attention CNN [@zUPTZa6w], and Yi et al. a RNN model with multiple attention layers [@M6JCKCLX].
+In both cases, it is a single model with attention mechanism, which allows the decoder to focus on different parts of the source sentence.
+As a result, it does not require dependency parsing or training multiple models.
+Both attention CNN and RNN have comparable results, but the CNN model has an advantage in that it can be easily computed in parallel, hence making it faster with recent graphics processing units (GPUs).
 
-For biotopes event extraction, Li et al. employed CNN and distributed representation while Mehryary et al. used long-short term memory (LSTM) networks to extract complicate relations [@ztw1ugBP; @1AkznVzFs].
-Li et al. applied word embedding to extract complete events from biomedical text and archived the results comparable to the state-of-the-art systems [@E0XYyYBe].
-There are also some works that identified event triggers rather than the complete event [@XbkgrcMy;  @z8hmfrmY].
-Taken together, it appears that deep learning models outperform traditional kernel methods or feature-based approaches by 1-5% in f-score.
+For biotopes event extraction, Li et al. employed CNN and distributed representation [@ztw1ugBP] while Mehryary et al. used long short-term memory (LSTM) networks to extract complicated relations [@1AkznVzFs].
+Li et al. applied word embedding to extract complete events from biomedical text and achieved results comparable to the state-of-the-art systems [@E0XYyYBe].
+There are also approaches that identify event triggers rather than the complete event [@XbkgrcMy; @z8hmfrmY].
+Taken together, deep learning models outperform traditional kernel methods or feature-based approaches by 1-5% in f-score.
 Among various deep learning approaches, CNN stands out as the most popular model both in terms of computational complexity and performance, while RNN has achieved continuous progress.
 
 Information retrieval is a task of finding relevant text that satisfies an information need from within a large document collection.
 While deep learning has not yet achieved the same level of success in this area as seen in others, the recent surge of interest and work suggest that this may be quickly changing.
-For example, Mohan et al. described a deep learning approach to modeling the relevance of a document's text to a query, applied to the entire biomedical literature [@zPnsAqyX].
+For example, Mohan et al. described a deep learning approach to modeling the relevance of a document's text to a query, which they applied to the entire biomedical literature [@zPnsAqyX].
 
-In the clinical domain, Jagannatha and Yu employed a bidirectional LSTM RNN structure to extract adverse drug events from electronic health records [@102FYgQFg].
-Choi et al. developed Doctor AI, a RNN-based model that can learn efficient patient representation from a large amount of longitudinal patient records and predict diagnosis and medication code of EHR [@11tMRPqto].
+In the clinical domain, Jagannatha and Yu employed a bidirectional LSTM structure to extract adverse drug events from electronic health records [@102FYgQFg].
+Choi et al. developed Doctor AI, a RNN-based model that can learn efficient patient representation from a large amount of longitudinal patient records and predict diagnosis and EHR medication codes [@11tMRPqto].
 Minarro-Giménez et al. applied the word2vec [@1GhHIDxuW] deep learning toolkit to medical corpora and evaluated the efficiency of word2vec in identifying properties of pharmaceuticals based on mid-sized, unstructured medical text corpora without any additional background knowledge [@sePDg4mZ].
 Lin et al. investigated using CNN to extract temporal relations [@8YmxYueq].
-Karimi et al. investigated the applicability of deep learning at autocoding of radiology reports using the International Classification of Diseases [@4QDXEv4C; @zVoUcFPZ].
+Karimi et al. investigated the applicability of deep learning at autocoding radiology reports using ICD [@4QDXEv4C; @zVoUcFPZ].
 
 To summarize, deep learning has shown promising results in many biomedical text mining tasks and applications.
-But to further realize its full potential in this domain, either large size of labeled data and/or technical advancements in current methods coping with limited labeled data are required.
+But to realize its full potential in this domain, either large size of labeled data or technical advancements in current methods coping with limited labeled data are required.
 
 ### Electronic health records
 
@@ -908,8 +902,8 @@ improved by up to 15% when compared to other methods. Choi et
 al. [@11tMRPqto] attempted to model the longitudinal structure of EHRs
 with a RNN to predict future diagnosis and medication prescriptions on a cohort
 of 260,000 patients followed for 8 years (Doctor AI). Pham et al.
-[@HRXii6Ni] built upon this concept by utilising a RNN with a long
-short-term memory (LSTM) architecture enabling explicit modelling of patient
+[@HRXii6Ni] built upon this concept by utilising a RNN with a
+LSTM architecture enabling explicit modelling of patient
 trajectories through the use of memory cells. The method, DeepCare, performed
 better than shallow models or plain RNN when tested on two independent cohorts
 for its ability to predict disease progression, intervention recommendation and
@@ -2814,7 +2808,7 @@ Many have sought to curb these costs, with methods ranging from the very applied
 @w6CoVmFK; @1GUizyE8e]) to the exotic and theoretic (e.g.
 training small networks to mimic large networks and ensembles
 [@1AhGoHZP9; @1CRF3gAV]). The largest gains in
-efficiency have come from computation with graphics processing units (GPUs)
+efficiency have come from computation with GPUs
 [@F3e4wfzQ; @NSgduYNT; @IULiPa6L;
 @13KjSCKB2; @1FocAi7N0;
 @BQS8ClV0], which excel at the matrix and vector
