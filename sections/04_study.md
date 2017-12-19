@@ -488,6 +488,7 @@ Typical selection approaches are semi-supervised; a user will select several par
 Now CNNs are being used to select particles in tools like DeepPicker [@doi:10.1016/j.jsb.2016.07.006] and DeepEM [@doi:10.1186/s12859-017-1757-y].
 In addition to addressing shortcomings from manual selection, such as selection bias and poor discrimination of low-contrast images, these approaches also provide a means of full automation.
 DeepPicker can be trained by reference particles from other experiments with structurally unrelated macromolecules, allowing for fully automated application to new samples.
+
 Downstream of particle picking, deep learning is being applied to other aspects of cryo-EM image processing.
 Statistical manifold learning has been implemented in the software package ROME to classify selected particles and elucidate the different conformations of the subject molecule necessary for accurate 3D structures [@doi:10.1371/journal.pone.0182130].
 These recent tools highlight the general applicability of deep learning approaches for image processing to increase the throughput of high-resolution cryo-EM.
