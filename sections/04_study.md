@@ -244,7 +244,7 @@ the sequences in both cell types are likely identical. As a result,
 it would be necessary to also incorporate cell type specific data.
 
 Similar to cross cell type prediction, we also have TF binding data for
-a certain species (e.g mouse), but not one of interest
+a certain species (e.g. mouse), but not one of interest
 one (e.g. human). When predicting cross species, domain adaptation
 may be used to reduce overfitting to differences in distribution of
 genomic sequence features between the species. However, since only a
