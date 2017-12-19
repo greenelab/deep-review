@@ -48,7 +48,7 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@1fcf534](https://github.com/greenelab/deep-review/tree/1fcf5348e07e333ea8104647d66cb3d68241f597)
+from [greenelab/deep-review@17b45b3](https://github.com/greenelab/deep-review/tree/17b45b308f2bc9635ca0819a274b6f0916a20a7b)
 on December 19, 2017.
 </em></small>
 
@@ -2541,7 +2541,7 @@ Several approaches ascribe importance on an example-specific basis to the parts
 of the input that are responsible for a particular output. These can be broadly
 divided into perturbation-based approaches and backpropagation-based approaches.
 
-Pertubration-based approaches change parts of the input and observe the impact
+Perturbation-based approaches change parts of the input and observe the impact
 on the output of the network. Alipanahi et al. [@jJHZHWrl]
 and Zhou & Troyanskaya [@2UI1BZuD] scored genomic sequences by
 introducing virtual mutations at individual positions in the sequence and
