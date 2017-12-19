@@ -493,15 +493,11 @@ Machine learning approaches have been applied to address these challenges.
 Typical approaches are semi-supervised; a user will select several particles
 manually, and these selections will be used to train a classifier
 [@doi:10.1016/j.jsb.2006.04.006; @doi:10.1016/j.jsb.2014.11.010]. Now
-convolutional neural networks, such as those applied in facial recognition and
-image classification [@doi:10.1038/nature14539], are utilized by deep learning
-frameworks DeepPicker [@doi:10.1016/j.jsb.2016.07.006] and DeepEM
+CNNs are used in DeepPicker [@doi:10.1016/j.jsb.2016.07.006] and DeepEM
 [@doi:10.1186/s12859-017-1757-y] to select particles. In addition to addressing
 shortcomings from manual selection, such as selection bias and poor
 discrimination of low-contrast images, these approaches also provide a means of
-full automation. Not unlike image recognition programs which are initially
-trained on large cohorts of references before being applied to independent
-images [@doi:10.1038/nature14539], DeepPicker can be trained by reference
+full automation. DeepPicker can be trained by reference
 particles from other experiments with structurally unrelated macromolecules,
 allowing for fully automated application to new samples. Subsequent
 classification is fast enough to keep pace with image collection from the
