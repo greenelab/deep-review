@@ -482,33 +482,7 @@ comparing individual electron micrographs [@doi:10.1016/j.cell.2015.03.049].
 Detailed structures require tens of thousands of protein images
 [@doi:10.1016/j.cell.2015.03.050]. Technological development has increased the throughput of image capture. New hardware, such as direct electron detectors, has made large-scale image production practical, while new software has focused on rapid, automated image processing.
 
-Other components of cryo-EM image processing remain recalcitrant to automation.
-For instance, in particle picking, micrographs are scanned to identify
-individual molecular images that will be used in structure refinement. In
-typical applications, hundreds of thousands of particles are necessary to
-determine a structure to near atomic resolution, making manual selection
-impractical [@doi:10.1016/j.cell.2015.03.050]. Furthermore, images containing
-high resolution information are low contrast and difficult to interpret by eye.
-Machine learning approaches have been applied to address these challenges.
-Typical approaches are semi-supervised; a user will select several particles
-manually, and these selections will be used to train a classifier
-[@doi:10.1016/j.jsb.2006.04.006; @doi:10.1016/j.jsb.2014.11.010]. Now
-CNNs are used in DeepPicker [@doi:10.1016/j.jsb.2016.07.006] and DeepEM
-[@doi:10.1186/s12859-017-1757-y] to select particles. In addition to addressing
-shortcomings from manual selection, such as selection bias and poor
-discrimination of low-contrast images, these approaches also provide a means of
-full automation. DeepPicker can be trained by reference
-particles from other experiments with structurally unrelated macromolecules,
-allowing for fully automated application to new samples. Subsequent
-classification is fast enough to keep pace with image collection from the
-microscope, allowing for real-time selection of particles as micrographs are
-generated. Downstream of particle picking, deep learning is being applied to
-other aspects of cryo-EM image processing. Statistical manifold learning has
-been implemented in the software package ROME to classify selected particles and
-elucidate the different conformations of the subject molecule necessary for
-accurate 3D structures [@doi:10.1371/journal.pone.0182130]. These recent tools highlight the
-general applicability of deep learning approaches for image processing to
-increase the throughput of high-resolution cryo-EM.
+Some components of cryo-EM image processing remain difficult to automate. For instance, in particle picking, micrographs are scanned to identify individual molecular images that will be used in structure refinement. In typical applications, hundreds of thousands of particles are necessary to determine a structure to near atomic resolution, making manual selection impractical [@doi:10.1016/j.cell.2015.03.050]. Typical selection approaches are semi-supervised; a user will select several particles manually, and these selections will be used to train a classifier [@doi:10.1016/j.jsb.2006.04.006; @doi:10.1016/j.jsb.2014.11.010]. Now CNNs are being used to select particles in tools like DeepPicker [@doi:10.1016/j.jsb.2016.07.006] and DeepEM [@doi:10.1186/s12859-017-1757-y]. In addition to addressing shortcomings from manual selection, such as selection bias and poor discrimination of low-contrast images, these approaches also provide a means of full automation. DeepPicker can be trained by reference particles from other experiments with structurally unrelated macromolecules, allowing for fully automated application to new samples. Downstream of particle picking, deep learning is being applied to other aspects of cryo-EM image processing. Statistical manifold learning has been implemented in the software package ROME to classify selected particles and elucidate the different conformations of the subject molecule necessary for accurate 3D structures [@doi:10.1371/journal.pone.0182130]. These recent tools highlight the general applicability of deep learning approaches for image processing to increase the throughput of high-resolution cryo-EM.
 
 ### Morphological phenotypes
 
