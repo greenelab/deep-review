@@ -48,7 +48,7 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@ba2f505](https://github.com/greenelab/deep-review/tree/ba2f505d647a142b109aa31c71565a9c8baaea14)
+from [greenelab/deep-review@12ca7c9](https://github.com/greenelab/deep-review/tree/12ca7c9a3f8f7bff1b4b0003ce032287a65af11a)
 on December 19, 2017.
 </em></small>
 
@@ -1484,17 +1484,41 @@ positive binding sites of a particular TF is relatively small with respect to
 the total number of base-pairs in a genome (see Discussion).
 
 While deep learning-based models can automatically extract features for TFBS
-prediction at the sequence level, they often cannot predict binding patterns for
-cell types or conditions that have not been previously studied. One solution
-could be to introduce a multimodal model that, in addition to sequence data,
-incorporates cell-line specific features such as chromatin accessibility, DNA
-methylation, or gene expression. Without cell-specific features, another
-solution could be to use domain adaptation methods where the model trains on a
-source cell type and uses unsupervised feature extraction methods to predict on
-a target cell type. TFImpute [@Qbtqlmhf] predicts binding in new cell
-type-TF pairs, but the cell types must be in the training set for other TFs.
-This is a step in the right direction, but a more general domain transfer model
-across cell types would be more useful.
+prediction at the sequence level, they often cannot predict binding patterns
+for cell types or species that have not been previously studied (i.e. that we
+don't have labelled data for).
+
+For many cell types, we often have experimental TF binding data for a
+certain cell type (e.g. normal), but not the one of interest
+(e.g. cancer). To handle this issue, there are two options.
+The first is to use features such as epigenetic marks which are specific
+to the certain cell type. If we have these features available, this is
+probably the best approach for accurate prediction since they will be strong
+signals for that particular cell type and TF.
+The second option is to use domain adaptation,
+which is a type of transfer learning where we learn a model which can
+predict from features in one domain (e.g. normal) and transfer
+the model to predict on features in another domain (e.g. cancer). 
+This has been done in many other areas such as sentiment analysis
+[@4XHCB8iI=10.1.1.231.3442].
+For example, we can train on the reviews for books, and predict on the reviews
+for movies. These are similar tasks, but the context (i.e. books or movies) is
+different. TFImpute [@Qbtqlmhf] predicts binding in new cell type-TF
+pairs, but the cell types must be in the training set for other TFs. This
+is a step in the right direction, but a more general domain transfer model
+across cell types would be more useful. The main issue with predicting
+cross cell types using domain adaptation on sequence data is that
+the sequences in both cell types are likely identical. As a result,
+it would be necessary to also incorporate cell type specific data.
+
+Similar to cross cell type prediction, we also have TF binding data for
+a certain species (e.g. mouse), but not one of interest
+one (e.g. human). When predicting cross species, domain adaptation
+may be used to reduce overfitting to differences in distribution of
+genomic sequence features between the species. However, since only a
+small fraction of the genome differs between human and mouse, it is
+not clear how well domain adaptation would work in this case.
+
 
 Deep learning can also illustrate TF binding preferences. Lanchantin et al.
 [@Dwi2eAvT] and Shrikumar et al. [@zhmq9ktJ]
@@ -3234,7 +3258,7 @@ To facilitate citation, we [defined](https://github.com/greenelab/deep-review/bl
 We supported citations to the following identifier types (in order of preference): DOIs, PubMed IDs, arXiv IDs, and URLs.
 References were automatically generated from citation metadata by querying APIs to generate [Citation Style Language](http://citationstyles.org/) (CSL) JSON items for each reference.
 [Pandoc](http://pandoc.org/) and [pandoc-citeproc](https://github.com/jgm/pandoc-citeproc) converted the markdown to HTML and PDF, while rendering the formatted citations and references.
-In total, referenced works consisted of 314 DOIs, 6 PubMed records, 117 arXiv manuscripts, and 43 URLs (webpages as well as manuscripts lacking standardized identifiers).
+In total, referenced works consisted of 314 DOIs, 6 PubMed records, 117 arXiv manuscripts, and 44 URLs (webpages as well as manuscripts lacking standardized identifiers).
 
 We implemented continuous analysis so the manuscript was automatically regenerated whenever the source changed [@Qh7xTLwz].
 We configured Travis CI -- a continuous integration service -- to fetch new citation metadata and rebuild the manuscript for every commit.
