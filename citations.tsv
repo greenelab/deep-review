@@ -41,7 +41,6 @@ string	citation	standard_citation	citation_id
 @arxiv:1511.05942	arxiv:1511.05942	arxiv:1511.05942	11tMRPqto
 @tag:Moritz2015_sparknet	arxiv:1511.06051	arxiv:1511.06051	rmJZ2Aui
 @tag:Radford_dcgan	arxiv:1511.06434v2	arxiv:1511.06434v2	136QC0Zul
-@tag:He2015_images	arxiv:1512.03385	arxiv:1512.03385	j7KrVyi8
 @tag:Che2015_distill	arxiv:1512.03542	arxiv:1512.03542	14DAmZTDg
 @arxiv:1602.00357	arxiv:1602.00357	arxiv:1602.00357	HRXii6Ni
 @tag:Lacey2016_dl_fpga	arxiv:1602.04283	arxiv:1602.04283	9NKsJjSw
@@ -120,6 +119,7 @@ string	citation	standard_citation	citation_id
 @arxiv:1705.09516	arxiv:1705.09516	arxiv:1705.09516	z8hmfrmY
 @arxiv:1706.02633v1	arxiv:1706.02633v1	arxiv:1706.02633v1	1988BRJe3
 @tag:Osokin2017_biogan	arxiv:1708.04692	arxiv:1708.04692	zBCcUQOM
+@arxiv:1709.02082	arxiv:1709.02082	arxiv:1709.02082	RHqbJgpe
 @tag:WayGreene2017_eval	arxiv:1711.04828	arxiv:1711.04828	rMz1OFc6
 @doi:10.1001/jama.2016.17216	doi:10.1001/jama.2016.17216	doi:10.1001/jama.2016.17216	1mJW6umJ
 @tag:Gulshan2016_dt	doi:10.1001/jama.2016.17216	doi:10.1001/jama.2016.17216	1mJW6umJ
@@ -274,6 +274,7 @@ string	citation	standard_citation	citation_id
 @doi:10.1093/nar/gkq747	doi:10.1093/nar/gkq747	doi:10.1093/nar/gkq747	QlbXLqH
 @doi:10.1093/nar/gkr777	doi:10.1093/nar/gkr777	doi:10.1093/nar/gkr777	x1nE5icc
 @doi:10.1093/nar/gku1058	doi:10.1093/nar/gku1058	doi:10.1093/nar/gku1058	12aqvAgz6
+@doi:10.1093/nar/gkx681	doi:10.1093/nar/gkx681	doi:10.1093/nar/gkx681	owp8L957
 @tag:Gupta2015_exprs_yeast	doi:10.1101/031906	doi:10.1101/031906	AnenJOuU
 @doi:10.1101/036129	doi:10.1101/036129	doi:10.1101/036129	s5sy4AOi
 @doi:10.1101/041616	doi:10.1101/041616	doi:10.1101/041616	1HbQQcY2q
@@ -306,6 +307,7 @@ string	citation	standard_citation	citation_id
 @doi:10.1101/138685	doi:10.1101/138685	doi:10.1101/138685	1CAw3FaPI
 @doi:10.1101/159756	doi:10.1101/159756	doi:10.1101/159756	fbIH12yd
 @tag:WayGreene2017_tybalt	doi:10.1101/174474	doi:10.1101/174474	aWn0df1m
+@doi:10.1101/178624	doi:10.1101/178624	doi:10.1101/178624	yJxCo4h1
 @tag:Goldsborough2017_cytogan	doi:10.1101/227645	doi:10.1101/227645	1EdCkau6d
 @doi:10.1101/gr.110254.110	doi:10.1101/gr.110254.110	doi:10.1101/gr.110254.110	G0J9P3Ln
 @doi:10.1101/gr.200535.115	doi:10.1101/gr.200535.115	doi:10.1101/gr.200535.115	2CbHXoFn
@@ -449,6 +451,7 @@ string	citation	standard_citation	citation_id
 @tag:Baxt1991_myocardial	doi:10.7326/0003-4819-115-11-843	doi:10.7326/0003-4819-115-11-843	jdg2u7bX
 @tag:Errington2014_reproducibility	doi:10.7554/eLife.04333	doi:10.7554/elife.04333	ZxQ49E8q
 @tag:Agarwal2015_targetscan	doi:10.7554/eLife.05005	doi:10.7554/elife.05005	12vPQi3gp
+@doi:10.7554/eLife.27041	doi:10.7554/eLife.27041	doi:10.7554/elife.27041	vk9ZInF3
 @pmid:21347133	pmid:21347133	pmid:21347133	y9ONtSZ9
 @pmid:24159271	pmid:24159271	pmid:24159271	11sli93ov
 @pmid:26958203	pmid:26958203	pmid:26958203	FUIfIdE
@@ -474,6 +477,7 @@ string	citation	standard_citation	citation_id
 @url:http://www.intel.com/pressroom/archive/speeches/ag080998.htm	url:http://www.intel.com/pressroom/archive/speeches/ag080998.htm	url:http://www.intel.com/pressroom/archive/speeches/ag080998.htm	mAXsmd43
 @tag:Ehran2009_visualizing	url:http://www.iro.umontreal.ca/~lisa/publications2/index.php/publications/show/247	url:http://www.iro.umontreal.ca/~lisa/publications2/index.php/publications/show/247	UAAd9Uez
 @tag:Bergstra2012_random	url:http://www.jmlr.org/papers/v13/bergstra12a.html	url:http://www.jmlr.org/papers/v13/bergstra12a.html	1FSwIjR9s
+@tag:Maaten2008_tsne	url:http://www.jmlr.org/papers/v9/vandermaaten08a.html	url:http://www.jmlr.org/papers/v9/vandermaaten08a.html	TGyu2Woj
 @tag:Coates2013_cots_hpc	url:http://www.jmlr.org/proceedings/papers/v28/coates13.html	url:http://www.jmlr.org/proceedings/papers/v28/coates13.html	4MZ2tmZ8
 @url:http://www.predictioncenter.org/casp12/rrc_avrg_results.cgi	url:http://www.predictioncenter.org/casp12/rrc_avrg_results.cgi	url:http://www.predictioncenter.org/casp12/rrc_avrg_results.cgi	zScWGveU
 @tag:world2004international	url:http://www.who.int/classifications/icd/en/	url:http://www.who.int/classifications/icd/en/	zVoUcFPZ

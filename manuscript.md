@@ -27,7 +27,7 @@ author-meta:
 - Marwin H.S. Segler
 - Anthony Gitter
 - Casey S. Greene
-date-meta: '2017-12-18'
+date-meta: '2017-12-19'
 keywords:
 - deep learning
 - review
@@ -48,8 +48,8 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@6afe42a](https://github.com/greenelab/deep-review/tree/6afe42ac50d5247e6e618374356f332ff1bc53ed)
-on December 18, 2017.
+from [greenelab/deep-review@ba2f505](https://github.com/greenelab/deep-review/tree/ba2f505d647a142b109aa31c71565a9c8baaea14)
+on December 19, 2017.
 </em></small>
 
 ## Authors
@@ -1363,15 +1363,15 @@ skipping subsets of exons or including parts of introns, creating enormous
 spatiotemporal flexibility to generate multiple distinct proteins from a single
 gene. This remarkable complexity can lend itself to defects that underlie many
 diseases. For instance, splicing mutations in the lamin A (*LMNA*) gene can lead to specific
-variants of dilated cardiomyopathy and limb girdle muscular dystrophy 
-[@QFK6GapR]. 
+variants of dilated cardiomyopathy and limb girdle muscular dystrophy
+[@QFK6GapR].
 A recent study found that quantitative trait loci
 that affect splicing in lymphoblastoid cell lines are enriched within risk loci
 for schizophrenia, multiple sclerosis, and other immune diseases, implicating
 mis-splicing as a more widespread feature of human pathologies than previously
 thought [@b6p6wxpC]. Therapeutic strategies that aim to modulate
 splicing are also currently being considered for disorders such as Duchenne muscular dystrophy
-and spinal muscular atrophy [@QFK6GapR]. 
+and spinal muscular atrophy [@QFK6GapR].
 
 Sequencing studies routinely return thousands of unannotated variants, but which
 cause functional changes in splicing and how are those changes manifested?
@@ -1791,9 +1791,14 @@ types where the subset percentage ranged from 0.1 to 1%, significantly
 outperforming logistic regression and distance-based outlier detection methods.
 However, they did not benchmark against random forests, which tend to work
 better for imbalanced data, and their data was relatively low dimensional.
-Future work is needed to establish the utility of deep learning in cell subset
-identification, but the stunning improvements in image classification over the
-past 5 years [@j7KrVyi8] suggest transformative potential.
+
+Neural networks can also learn low-dimensional representations of single-cell gene expression data for visualization, clustering, and other tasks.
+Both scvis [@yJxCo4h1] and scVI [@RHqbJgpe] are unsupervised approaches based on VAEs.
+Whereas scvis primarily focuses on single-cell visualization as a replacement for t-Distributed Stochastic Neighbor Embedding [@TGyu2Woj], the scVI model accounts for zero-inflated expression distributions and can impute zero values that are due to technical effects.
+Beyond VAEs, Lin et al. developed a supervised model to predict cell type [@owp8L957].
+Similar to transfer learning approaches for microscopy images [@BMg062hc], they demonstrated that the hidden layer representations were informative in general and could be used to identify cellular subpopulations or match new cells to known cell types.
+The supervised neural network's representation was better overall at retrieving cell types than alternatives, but all methods struggled to recover certain cell types such as hematopoietic stem cells and inner cell mass cells.
+As the Human Cell Atlas [@vk9ZInF3] and related efforts generate more single-cell expression data, there will be opportunities to assess how well these low-dimensional representations generalize to new cell types as well as abundant training data to learn broadly-applicable representations.
 
 The sheer quantity of omic information that can be obtained from each cell, as
 well as the number of cells in each dataset, uniquely position single-cell data
@@ -3229,7 +3234,7 @@ To facilitate citation, we [defined](https://github.com/greenelab/deep-review/bl
 We supported citations to the following identifier types (in order of preference): DOIs, PubMed IDs, arXiv IDs, and URLs.
 References were automatically generated from citation metadata by querying APIs to generate [Citation Style Language](http://citationstyles.org/) (CSL) JSON items for each reference.
 [Pandoc](http://pandoc.org/) and [pandoc-citeproc](https://github.com/jgm/pandoc-citeproc) converted the markdown to HTML and PDF, while rendering the formatted citations and references.
-In total, referenced works consisted of 311 DOIs, 6 PubMed records, 117 arXiv manuscripts, and 42 URLs (webpages as well as manuscripts lacking standardized identifiers).
+In total, referenced works consisted of 314 DOIs, 6 PubMed records, 117 arXiv manuscripts, and 43 URLs (webpages as well as manuscripts lacking standardized identifiers).
 
 We implemented continuous analysis so the manuscript was automatically regenerated whenever the source changed [@Qh7xTLwz].
 We configured Travis CI -- a continuous integration service -- to fetch new citation metadata and rebuild the manuscript for every commit.

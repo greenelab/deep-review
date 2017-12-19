@@ -1346,40 +1346,6 @@
     "id": "136QC0Zul"
   },
   {
-    "arxiv_id": "1512.03385v1",
-    "version": "1",
-    "URL": "https://arxiv.org/abs/1512.03385v1",
-    "title": "Deep Residual Learning for Image Recognition",
-    "issued": {
-      "date-parts": [
-        [
-          "2015",
-          "12",
-          "10"
-        ]
-      ]
-    },
-    "author": [
-      {
-        "literal": "Kaiming He"
-      },
-      {
-        "literal": "Xiangyu Zhang"
-      },
-      {
-        "literal": "Shaoqing Ren"
-      },
-      {
-        "literal": "Jian Sun"
-      }
-    ],
-    "container-title": "arXiv",
-    "publisher": "arXiv",
-    "abstract": "Deeper neural networks are more difficult to train. We present a residual\nlearning framework to ease the training of networks that are substantially\ndeeper than those used previously. We explicitly reformulate the layers as\nlearning residual functions with reference to the layer inputs, instead of\nlearning unreferenced functions. We provide comprehensive empirical evidence\nshowing that these residual networks are easier to optimize, and can gain\naccuracy from considerably increased depth. On the ImageNet dataset we evaluate\nresidual nets with a depth of up to 152 layers---8x deeper than VGG nets but\nstill having lower complexity. An ensemble of these residual nets achieves\n3.57% error on the ImageNet test set. This result won the 1st place on the\nILSVRC 2015 classification task. We also present analysis on CIFAR-10 with 100\nand 1000 layers.\n  The depth of representations is of central importance for many visual\nrecognition tasks. Solely due to our extremely deep representations, we obtain\na 28% relative improvement on the COCO object detection dataset. Deep residual\nnets are foundations of our submissions to ILSVRC & COCO 2015 competitions,\nwhere we also won the 1st places on the tasks of ImageNet detection, ImageNet\nlocalization, COCO detection, and COCO segmentation.",
-    "type": "report",
-    "id": "j7KrVyi8"
-  },
-  {
     "arxiv_id": "1512.03542v1",
     "version": "1",
     "URL": "https://arxiv.org/abs/1512.03542v1",
@@ -4434,6 +4400,43 @@
     "abstract": "In this paper, we propose a novel application of Generative Adversarial\nNetworks (GAN) to the synthesis of cells imaged by fluorescence microscopy.\nCompared to natural images, cells tend to have a simpler and more geometric\nglobal structure that facilitates image generation. However, the correlation\nbetween the spatial pattern of different fluorescent proteins reflects\nimportant biological functions, and synthesized images have to capture these\nrelationships to be relevant for biological applications. We adapt GANs to the\ntask at hand and propose new models with casual dependencies between image\nchannels that can generate multi-channel images, which would be impossible to\nobtain experimentally. We evaluate our approach using two independent\ntechniques and compare it against sensible baselines. Finally, we demonstrate\nthat by interpolating across the latent space we can mimic the known changes in\nprotein localization that occur through time during the cell cycle, allowing us\nto predict temporal evolution from static images.",
     "type": "report",
     "id": "zBCcUQOM"
+  },
+  {
+    "arxiv_id": "1709.02082v3",
+    "version": "3",
+    "URL": "https://arxiv.org/abs/1709.02082v3",
+    "title": "A deep generative model for gene expression profiles from single-cell\n  RNA sequencing",
+    "issued": {
+      "date-parts": [
+        [
+          "2017",
+          "09",
+          "07"
+        ]
+      ]
+    },
+    "author": [
+      {
+        "literal": "Romain Lopez"
+      },
+      {
+        "literal": "Jeffrey Regier"
+      },
+      {
+        "literal": "Michael Cole"
+      },
+      {
+        "literal": "Michael Jordan"
+      },
+      {
+        "literal": "Nir Yosef"
+      }
+    ],
+    "container-title": "arXiv",
+    "publisher": "arXiv",
+    "abstract": "We propose a probabilistic model for interpreting gene expression levels that\nare observed through single-cell RNA sequencing. In the model, each cell has a\nlow-dimensional latent representation. Additional latent variables account for\ntechnical effects that may erroneously set some observations of gene expression\nlevels to zero. Conditional distributions are specified by neural networks,\ngiving the proposed model enough flexibility to fit the data well. We use\nvariational inference and stochastic optimization to approximate the posterior\ndistribution. The inference procedure scales to over one million cells, whereas\ncompeting algorithms do not. Even for smaller datasets, for several tasks, the\nproposed procedure outperforms state-of-the-art methods like ZIFA and\nZINB-WaVE. We also extend our framework to account for batch effects and other\nconfounding factors, and propose a Bayesian hypothesis test for differential\nexpression that outperforms DESeq2.",
+    "type": "report",
+    "id": "RHqbJgpe"
   },
   {
     "arxiv_id": "1711.04828v1",
@@ -28224,6 +28227,127 @@
       "date-parts": [
         [
           2017,
+          10,
+          27
+        ]
+      ],
+      "date-time": "2017-10-27T20:16:30Z",
+      "timestamp": 1509135390602
+    },
+    "reference-count": 54,
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "17",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2017,
+          9,
+          29
+        ]
+      ]
+    },
+    "DOI": "10.1093/nar/gkx681",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          7,
+          24
+        ]
+      ],
+      "date-time": "2017-07-24T19:14:02Z",
+      "timestamp": 1500923642000
+    },
+    "page": "e156-e156",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "Using neural networks for reducing the dimensions of single-cell RNA-Seq data",
+    "prefix": "10.1093",
+    "volume": "45",
+    "author": [
+      {
+        "given": "Chieh",
+        "family": "Lin",
+        "affiliation": []
+      },
+      {
+        "given": "Siddhartha",
+        "family": "Jain",
+        "affiliation": []
+      },
+      {
+        "given": "Hannah",
+        "family": "Kim",
+        "affiliation": []
+      },
+      {
+        "given": "Ziv",
+        "family": "Bar-Joseph",
+        "affiliation": []
+      }
+    ],
+    "member": "286",
+    "published-online": {
+      "date-parts": [
+        [
+          2017,
+          7,
+          31
+        ]
+      ]
+    },
+    "container-title": "Nucleic Acids Research",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://academic.oup.com/nar/article-pdf/45/17/e156/20312498/gkx681.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          9,
+          29
+        ]
+      ],
+      "date-time": "2017-09-29T03:08:22Z",
+      "timestamp": 1506654502000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          7,
+          31
+        ]
+      ]
+    },
+    "references-count": 54,
+    "URL": "https://doi.org/10.1093/nar/gkx681",
+    "relation": {},
+    "subject": [
+      "Genetics"
+    ],
+    "short_url": "https://doi.org/gcnzb7",
+    "id": "owp8L957"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
           8,
           11
         ]
@@ -31738,6 +31862,118 @@
     "relation": {},
     "short_url": "https://doi.org/gcm44d",
     "id": "aWn0df1m"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          27
+        ]
+      ],
+      "date-time": "2017-10-27T23:44:41Z",
+      "timestamp": 1509147881772
+    },
+    "posted": {
+      "date-parts": [
+        [
+          2017,
+          9,
+          1
+        ]
+      ]
+    },
+    "group-title": "Bioinformatics",
+    "reference-count": 0,
+    "publisher": "Cold Spring Harbor Laboratory",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "accepted": {
+      "date-parts": [
+        [
+          2017,
+          9,
+          1
+        ]
+      ]
+    },
+    "abstract": "<jats:p>Single-cell RNA-sequencing has great potential to discover cell types, identify cell states, trace development lineages, and reconstruct the spatial organization of cells. However, dimension reduction to interpret structure in single-cell sequencing data re- mains a challenge. Existing algorithms are either not able to uncover the clustering structures in the data, or lose global information such as groups of clusters the are close to each other. We present a robust statistical model, scvis to capture and visualize the low-dimensional structures in single-cell gene expression data. Simulation results demonstrate that low-dimensional representations learned by scvis preserve both the local and global neighbour structures in the data. In addition, scvis is robust to the number of data points and learns a probabilistic parametric mapping function to add new data points to an existing embedding. We then use scvis to analyze four single-cell RNA-sequencing datasets, exemplifying interpretable two-dimensional representations of the high-dimensional single-cell RNA-sequencing data.</jats:p>",
+    "DOI": "10.1101/178624",
+    "type": "manuscript",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          9,
+          2
+        ]
+      ],
+      "date-time": "2017-09-02T05:10:20Z",
+      "timestamp": 1504329020000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "Interpretable dimensionality reduction of single cell transcriptome data with deep generative models",
+    "prefix": "10.1101",
+    "author": [
+      {
+        "given": "Jiarui",
+        "family": "Ding",
+        "affiliation": []
+      },
+      {
+        "given": "Anne E.",
+        "family": "Condon",
+        "affiliation": []
+      },
+      {
+        "given": "Sohrab P.",
+        "family": "Shah",
+        "affiliation": []
+      }
+    ],
+    "member": "246",
+    "container-title": [],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://syndication.highwire.org/content/doi/10.1101/178624",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          9,
+          2
+        ]
+      ],
+      "date-time": "2017-09-02T05:10:39Z",
+      "timestamp": 1504329039000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          9,
+          1
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "https://doi.org/10.1101/178624",
+    "relation": {},
+    "short_url": "https://doi.org/gcnzb8",
+    "id": "yJxCo4h1"
   },
   {
     "indexed": {
@@ -50460,6 +50696,738 @@
     "id": "12vPQi3gp"
   },
   {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          12,
+          5
+        ]
+      ],
+      "date-time": "2017-12-05T14:41:49Z",
+      "timestamp": 1512484909478
+    },
+    "reference-count": 0,
+    "publisher": "eLife Sciences Organisation, Ltd.",
+    "license": [
+      {
+        "URL": "http://creativecommons.org/licenses/by/4.0/",
+        "start": {
+          "date-parts": [
+            [
+              2017,
+              12,
+              5
+            ]
+          ],
+          "date-time": "2017-12-05T00:00:00Z",
+          "timestamp": 1512432000000
+        },
+        "delay-in-days": 0,
+        "content-version": "vor"
+      },
+      {
+        "URL": "http://creativecommons.org/licenses/by/4.0/",
+        "start": {
+          "date-parts": [
+            [
+              2017,
+              12,
+              5
+            ]
+          ],
+          "date-time": "2017-12-05T00:00:00Z",
+          "timestamp": 1512432000000
+        },
+        "delay-in-days": 0,
+        "content-version": "am"
+      },
+      {
+        "URL": "http://creativecommons.org/licenses/by/4.0/",
+        "start": {
+          "date-parts": [
+            [
+              2017,
+              12,
+              5
+            ]
+          ],
+          "date-time": "2017-12-05T00:00:00Z",
+          "timestamp": 1512432000000
+        },
+        "delay-in-days": 0,
+        "content-version": "tdm"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "abstract": "<jats:p>The recent advent of methods for high-throughput single-cell molecular profiling\n                    has catalyzed a growing sense in the scientific community that the time is ripe\n                    to complete the 150-year-old effort to identify all cell types in the human\n                    body. The Human Cell Atlas Project is an international collaborative effort that\n                    aims to define all human cell types in terms of distinctive molecular profiles\n                    (such as gene expression profiles) and to connect this information with\n                    classical cellular descriptions (such as location and morphology). An open\n                    comprehensive reference map of the molecular state of cells in healthy human\n                    tissues would propel the systematic study of physiological states, developmental\n                    trajectories, regulatory circuitry and interactions of cells, and also provide a\n                    framework for understanding cellular dysregulation in human disease. Here we\n                    describe the idea, its potential utility, early proofs-of-concept, and some\n                    design considerations for the Human Cell Atlas, including a commitment to open\n                    data, code, and community.</jats:p>",
+    "DOI": "10.7554/elife.27041",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          12,
+          5
+        ]
+      ],
+      "date-time": "2017-12-05T14:00:32Z",
+      "timestamp": 1512482432000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "Science Forum: The Human Cell Atlas",
+    "prefix": "10.7554",
+    "volume": "6",
+    "author": [
+      {
+        "ORCID": "http://orcid.org/0000-0003-3293-3158",
+        "authenticated-orcid": true,
+        "given": "Aviv",
+        "family": "Regev",
+        "affiliation": [
+          {
+            "name": "Broad Institute of MIT and Harvard, Cambridge, United\n                    States"
+          }
+        ]
+      },
+      {
+        "given": "Sarah A",
+        "family": "Teichmann",
+        "affiliation": [
+          {
+            "name": "Wellcome Trust Sanger Institute, Hinxton, United\n                    Kingdom"
+          }
+        ]
+      },
+      {
+        "given": "Eric S",
+        "family": "Lander",
+        "affiliation": [
+          {
+            "name": "Broad Institute of MIT and Harvard, Cambridge, United\n                    States"
+          }
+        ]
+      },
+      {
+        "given": "Ido",
+        "family": "Amit",
+        "affiliation": [
+          {
+            "name": "Department of\n                        Immunology, Weizmann Institute of\n                        Science, Rehovot, Israel"
+          }
+        ]
+      },
+      {
+        "given": "Christophe",
+        "family": "Benoist",
+        "affiliation": [
+          {
+            "name": "Division of Immunology, Department\n                        of Microbiology and Immunobiology, Harvard\n                        Medical School, Boston, United\n                    States"
+          }
+        ]
+      },
+      {
+        "given": "Ewan",
+        "family": "Birney",
+        "affiliation": [
+          {
+            "name": "EMBL-European Bioinformatics Institute, Hinxton, United\n                    Kingdom"
+          }
+        ]
+      },
+      {
+        "given": "Bernd",
+        "family": "Bodenmiller",
+        "affiliation": [
+          {
+            "name": "Institute of Molecular Life\n                        Sciences, University of Zürich, Zurich, Switzerland"
+          }
+        ]
+      },
+      {
+        "given": "Peter J",
+        "family": "Campbell",
+        "affiliation": [
+          {
+            "name": "Wellcome Trust Sanger Institute, Hinxton, United\n                    Kingdom"
+          }
+        ]
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0001-7202-7243",
+        "authenticated-orcid": true,
+        "given": "Piero",
+        "family": "Carninci",
+        "affiliation": [
+          {
+            "name": "Division of Genomic\n                        Technologies, RIKEN Center for Life Science\n                        Technologies, Yokohama, Japan"
+          }
+        ]
+      },
+      {
+        "given": "Menna",
+        "family": "Clatworthy",
+        "affiliation": [
+          {
+            "name": "Molecular Immunity Unit, Department\n                        of Medicine, MRC Laboratory of Molecular Biology,\n                        University of Cambridge, Cambridge, United Kingdom"
+          }
+        ]
+      },
+      {
+        "given": "Hans",
+        "family": "Clevers",
+        "affiliation": [
+          {
+            "name": "Hubrecht Institute, Utrecht, Netherlands"
+          }
+        ]
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0001-9935-843X",
+        "authenticated-orcid": true,
+        "given": "Bart",
+        "family": "Deplancke",
+        "affiliation": [
+          {
+            "name": "Institute of Bioengineering, School\n                        of Life Sciences, Ecole Polytechnique Fédérale de\n                        Lausanne, Lausanne, Switzerland"
+          }
+        ]
+      },
+      {
+        "given": "Ian",
+        "family": "Dunham",
+        "affiliation": [
+          {
+            "name": "EMBL-European Bioinformatics Institute, Hinxton, United\n                    Kingdom"
+          }
+        ]
+      },
+      {
+        "given": "James",
+        "family": "Eberwine",
+        "affiliation": [
+          {
+            "name": "Department of Systems Pharmacology\n                        and Translational Therapeutics, Perelman School\n                        of Medicine, University of Pennsylvania, Philadelphia, United\n                        States"
+          }
+        ]
+      },
+      {
+        "given": "Roland",
+        "family": "Eils",
+        "affiliation": [
+          {
+            "name": "Division of Theoretical\n                        Bioinformatics (B080), German Cancer Research\n                        Center (DKFZ), Heidelberg, Germany"
+          }
+        ]
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-4056-0550",
+        "authenticated-orcid": true,
+        "given": "Wolfgang",
+        "family": "Enard",
+        "affiliation": [
+          {
+            "name": "Department of Biology\n                        II, Ludwig-Maximilians University\n                        Munich, Martinsried, Germany"
+          }
+        ]
+      },
+      {
+        "given": "Andrew",
+        "family": "Farmer",
+        "affiliation": [
+          {
+            "name": "Takara Bio USA, Inc., Mountain\n                            View, United States"
+          }
+        ]
+      },
+      {
+        "given": "Lars",
+        "family": "Fugger",
+        "affiliation": [
+          {
+            "name": "Oxford Centre for\n                        Neuroinflammation, Nuffield Department of Clinical\n                        Neurosciences, University of\n                    Oxford, Oxford, United\n                    Kingdom"
+          }
+        ]
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0001-6302-5705",
+        "authenticated-orcid": true,
+        "given": "Berthold",
+        "family": "Göttgens",
+        "affiliation": [
+          {
+            "name": "Department of\n                        Haematology, University of\n                        Cambridge, Cambridge, United\n                        Kingdom"
+          }
+        ]
+      },
+      {
+        "given": "Nir",
+        "family": "Hacohen",
+        "affiliation": [
+          {
+            "name": "Broad Institute of MIT and Harvard, Cambridge, United\n                    States"
+          }
+        ]
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-3927-2084",
+        "authenticated-orcid": true,
+        "given": "Muzlifah",
+        "family": "Haniffa",
+        "affiliation": [
+          {
+            "name": "Institute of Cellular\n                        Medicine, Newcastle University, Newcastle upon\n                            Tyne, United\n                    Kingdom"
+          }
+        ]
+      },
+      {
+        "given": "Martin",
+        "family": "Hemberg",
+        "affiliation": [
+          {
+            "name": "Wellcome Trust Sanger Institute, Hinxton, United\n                    Kingdom"
+          }
+        ]
+      },
+      {
+        "given": "Seung K",
+        "family": "Kim",
+        "affiliation": [
+          {
+            "name": "Department of Developmental\n                        Biology, Stanford University School of\n                        Medicine, Stanford, United\n                    States"
+          }
+        ]
+      },
+      {
+        "given": "Paul",
+        "family": "Klenerman",
+        "affiliation": [
+          {
+            "name": "Peter Medawar Building for Pathogen\n                        Research, University of Oxford, Oxford, United Kingdom"
+          }
+        ]
+      },
+      {
+        "given": "Arnold",
+        "family": "Kriegstein",
+        "affiliation": [
+          {
+            "name": "Eli and Edythe Broad Center of\n                        Regeneration Medicine and Stem Cell Research, University of California, San Francisco, San\n                            Francisco, United\n                    States"
+          }
+        ]
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0001-9012-6552",
+        "authenticated-orcid": true,
+        "given": "Ed",
+        "family": "Lein",
+        "affiliation": [
+          {
+            "name": "Allen Institute for Brain Science, Seattle, United States"
+          }
+        ]
+      },
+      {
+        "given": "Sten",
+        "family": "Linnarsson",
+        "affiliation": [
+          {
+            "name": "Laboratory for Molecular\n                        Neurobiology, Department of Medical Biochemistry and\n                        Biophysics, Karolinska Institutet, Stockholm, Sweden"
+          }
+        ]
+      },
+      {
+        "given": "Emma",
+        "family": "Lundberg",
+        "affiliation": [
+          {
+            "name": "Science for Life Laboratory, School\n                        of Biotechnology, KTH Royal Institute of\n                        Technology, Stockholm, Sweden"
+          }
+        ]
+      },
+      {
+        "given": "Joakim",
+        "family": "Lundeberg",
+        "affiliation": [
+          {
+            "name": "Science for Life Laboratory,\n                        Department of Gene Technology, Royal Institute of\n                        Technology, Stockholm, Sweden"
+          }
+        ]
+      },
+      {
+        "given": "Partha",
+        "family": "Majumder",
+        "affiliation": [
+          {
+            "name": "National Institute of Biomedical\n                    Genomics, Kalyani, India"
+          }
+        ]
+      },
+      {
+        "given": "John C",
+        "family": "Marioni",
+        "affiliation": [
+          {
+            "name": "Wellcome Trust Sanger Institute, Hinxton, United\n                    Kingdom"
+          }
+        ]
+      },
+      {
+        "given": "Miriam",
+        "family": "Merad",
+        "affiliation": [
+          {
+            "name": "Precision Immunology\n                        Institute, Icahn School of Medicine at Mount\n                        Sinai, New\n                            York, United States"
+          }
+        ]
+      },
+      {
+        "given": "Musa",
+        "family": "Mhlanga",
+        "affiliation": [
+          {
+            "name": "Division of Chemical, Systems and\n                        Synthetic Biology, University of Cape\n                        Town, Cape\n                            Town, South Africa"
+          }
+        ]
+      },
+      {
+        "given": "Martijn",
+        "family": "Nawijn",
+        "affiliation": [
+          {
+            "name": "Department of Pathology and Medical\n                        Biology, University of Groningen, Groningen, Netherlands"
+          }
+        ]
+      },
+      {
+        "given": "Mihai",
+        "family": "Netea",
+        "affiliation": [
+          {
+            "name": "Department of Internal\n                        Medicine, Radboud University Medical\n                        Center, Nijmegen, Netherlands"
+          }
+        ]
+      },
+      {
+        "given": "Garry",
+        "family": "Nolan",
+        "affiliation": [
+          {
+            "name": "Department of Microbiology and\n                        Immunology, Stanford University, Stanford, United\n                    States"
+          }
+        ]
+      },
+      {
+        "given": "Dana",
+        "family": "Pe'er",
+        "affiliation": [
+          {
+            "name": "Computational and Systems Biology\n                        Program, Sloan Kettering Institute, New\n                        York, United States"
+          }
+        ]
+      },
+      {
+        "given": "Anthony",
+        "family": "Phillipakis",
+        "affiliation": [
+          {
+            "name": "Broad Institute of MIT and Harvard, Cambridge, United\n                    States"
+          }
+        ]
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0003-0202-7816",
+        "authenticated-orcid": true,
+        "given": "Chris P",
+        "family": "Ponting",
+        "affiliation": [
+          {
+            "name": "MRC Human Genetics Unit, MRC\n                        Institute of Genetics and Molecular Medicine, University of Edinburgh, Edinburgh, United\n                    Kingdom"
+          }
+        ]
+      },
+      {
+        "given": "Stephen R",
+        "family": "Quake",
+        "affiliation": [
+          {
+            "name": "Department of\n                        Bioengineering, Stanford\n                    University, Stanford, United\n                    States"
+          }
+        ]
+      },
+      {
+        "given": "Wolf",
+        "family": "Reik",
+        "affiliation": [
+          {
+            "name": "Wellcome Trust Sanger Institute, Hinxton, United\n                    Kingdom"
+          }
+        ]
+      },
+      {
+        "given": "Orit",
+        "family": "Rozenblatt-Rosen",
+        "affiliation": [
+          {
+            "name": "Broad Institute of MIT and Harvard, Cambridge, United\n                    States"
+          }
+        ]
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0001-8926-8836",
+        "authenticated-orcid": true,
+        "given": "Joshua R",
+        "family": "Sanes",
+        "affiliation": [
+          {
+            "name": "Department of Molecular and\n                        Cellular Biology, Harvard\n                        University, Cambridge, United\n                    States"
+          }
+        ]
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0001-9448-8833",
+        "authenticated-orcid": true,
+        "given": "Rahul",
+        "family": "Satija",
+        "affiliation": [
+          {
+            "name": "Department of Biology, New York\n                        Genome Center, New York University, New\n                        York, United States"
+          }
+        ]
+      },
+      {
+        "given": "Ton N",
+        "family": "Schumacher",
+        "affiliation": [
+          {
+            "name": "Department of\n                        Immunology, Netherlands Cancer\n                        Institute, Amsterdam, Netherlands"
+          }
+        ]
+      },
+      {
+        "given": "Alex K",
+        "family": "Shalek",
+        "affiliation": [
+          {
+            "name": "Broad Institute of MIT and Harvard, Cambridge, United\n                    States"
+          }
+        ]
+      },
+      {
+        "given": "Ehud",
+        "family": "Shapiro",
+        "affiliation": [
+          {
+            "name": "Department of Computer Science and\n                        Applied Math, Weizmann Institute of\n                        Science, Rehovot, Israel"
+          }
+        ]
+      },
+      {
+        "given": "Padmanee",
+        "family": "Sharma",
+        "affiliation": [
+          {
+            "name": "Department of Genitourinary Medical\n                        Oncology, MD Anderson Cancer Center, University\n                        of Texas, Houston, United\n                    States"
+          }
+        ]
+      },
+      {
+        "given": "Jay W",
+        "family": "Shin",
+        "affiliation": [
+          {
+            "name": "Division of Genomics\n                        Technologies, RIKEN Center for Life Science\n                        Technologies, Yokohama, Japan"
+          }
+        ]
+      },
+      {
+        "given": "Oliver",
+        "family": "Stegle",
+        "affiliation": [
+          {
+            "name": "EMBL-European Bioinformatics Institute, Hinxton, United\n                    Kingdom"
+          }
+        ]
+      },
+      {
+        "given": "Michael R",
+        "family": "Stratton",
+        "affiliation": [
+          {
+            "name": "Wellcome Trust Sanger Institute, Hinxton, United\n                    Kingdom"
+          }
+        ]
+      },
+      {
+        "given": "Michael J T",
+        "family": "Stubbington",
+        "affiliation": [
+          {
+            "name": "Wellcome Trust Sanger Institute, Hinxton, United\n                    Kingdom"
+          }
+        ]
+      },
+      {
+        "given": "Fabian J",
+        "family": "Theis",
+        "affiliation": [
+          {
+            "name": "Institute of Computational Biology,\n                        German Research Center for Environmental Health, Helmholtz Zentrum München, Neuherberg, Germany"
+          }
+        ]
+      },
+      {
+        "given": "Matthias",
+        "family": "Uhlen",
+        "affiliation": [
+          {
+            "name": "Science for Life\n                        Laboratory, KTH Royal Institute of\n                        Technology, Stockholm, Sweden"
+          }
+        ]
+      },
+      {
+        "given": "Alexander",
+        "family": "van Oudenaarden",
+        "affiliation": [
+          {
+            "name": "Hubrecht Institute, Utrecht, Netherlands"
+          }
+        ]
+      },
+      {
+        "given": "Allon",
+        "family": "Wagner",
+        "affiliation": [
+          {
+            "name": "Department of Electrical\n                        Engineering and Computer Science, University of\n                        California, Berkeley, Berkeley, United States"
+          }
+        ]
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0001-9151-5154",
+        "authenticated-orcid": true,
+        "given": "Fiona M",
+        "family": "Watt",
+        "affiliation": [
+          {
+            "name": "Centre for Stem Cells and\n                        Regenerative Medicine, King's College\n                        London, London, United\n                    Kingdom"
+          }
+        ]
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0003-2445-670X",
+        "authenticated-orcid": true,
+        "given": "Jonathan S",
+        "family": "Weissman",
+        "affiliation": [
+          {
+            "name": "Howard Hughes Medical Institute, Chevy\n                            Chase, United\n                    States"
+          }
+        ]
+      },
+      {
+        "given": "Barbara J",
+        "family": "Wold",
+        "affiliation": [
+          {
+            "name": "Division of Biology and Biological\n                        Engineering, California Institute of\n                        Technology, Pasadena, United\n                    States"
+          }
+        ]
+      },
+      {
+        "given": "Ramnik J",
+        "family": "Xavier",
+        "affiliation": [
+          {
+            "name": "Broad Institute of MIT and Harvard, Cambridge, United\n                    States"
+          }
+        ]
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0001-9004-1225",
+        "authenticated-orcid": true,
+        "given": "Nir",
+        "family": "Yosef",
+        "affiliation": [
+          {
+            "name": "Department of Electrical\n                        Engineering and Computer Science and the Center for Computational\n                        Biology, University of California,\n                        Berkeley, Berkeley, United\n                    States"
+          }
+        ]
+      },
+      {
+        "name": "Human Cell Atlas Meeting Participants",
+        "affiliation": []
+      }
+    ],
+    "member": "4374",
+    "published-online": {
+      "date-parts": [
+        [
+          2017,
+          12,
+          5
+        ]
+      ]
+    },
+    "container-title": "eLife",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://cdn.elifesciences.org/articles/27041/elife-27041-v1.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://cdn.elifesciences.org/articles/27041/elife-27041-v1.xml",
+        "content-type": "application/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          12,
+          5
+        ]
+      ],
+      "date-time": "2017-12-05T14:00:32Z",
+      "timestamp": 1512482432000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          12,
+          5
+        ]
+      ]
+    },
+    "references-count": 0,
+    "alternative-id": [
+      "10.7554/eLife.27041"
+    ],
+    "URL": "https://doi.org/10.7554/elife.27041",
+    "relation": {},
+    "subject": [
+      "General Biochemistry, Genetics and Molecular Biology",
+      "General Immunology and Microbiology",
+      "General Neuroscience",
+      "General Medicine"
+    ],
+    "short_url": "https://doi.org/gcnzcv",
+    "id": "vk9ZInF3"
+  },
+  {
     "source": "PMC",
     "accessed": {
       "date-parts": [
@@ -51328,6 +52296,11 @@
     ],
     "type": "webpage",
     "id": "1FSwIjR9s"
+  },
+  {
+    "URL": "http://www.jmlr.org/papers/v9/vandermaaten08a.html",
+    "type": "webpage",
+    "id": "TGyu2Woj"
   },
   {
     "URL": "http://www.jmlr.org/proceedings/papers/v28/coates13.html",
