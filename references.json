@@ -8463,6 +8463,383 @@
       "date-parts": [
         [
           2017,
+          12,
+          14
+        ]
+      ],
+      "date-time": "2017-12-14T18:02:46Z",
+      "timestamp": 1513274566517
+    },
+    "reference-count": 76,
+    "publisher": "Elsevier BV",
+    "issue": "3",
+    "license": [
+      {
+        "URL": "http://www.elsevier.com/tdm/userlicense/1.0/",
+        "start": {
+          "date-parts": [
+            [
+              2015,
+              4,
+              1
+            ]
+          ],
+          "date-time": "2015-04-01T00:00:00Z",
+          "timestamp": 1427846400000
+        },
+        "delay-in-days": 0,
+        "content-version": "tdm"
+      },
+      {
+        "URL": "http://www.elsevier.com/open-access/userlicense/1.0/",
+        "start": {
+          "date-parts": [
+            [
+              2016,
+              4,
+              23
+            ]
+          ],
+          "date-time": "2016-04-23T00:00:00Z",
+          "timestamp": 1461369600000
+        },
+        "delay-in-days": 388,
+        "content-version": "vor"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "cell.com",
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2015,
+          4
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.cell.2015.03.049",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2015,
+          4,
+          23
+        ]
+      ],
+      "date-time": "2015-04-23T15:48:19Z",
+      "timestamp": 1429804099000
+    },
+    "page": "450-457",
+    "update-policy": "http://dx.doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 118,
+    "title": "Single-Particle Cryo-EM at Crystallographic Resolution",
+    "prefix": "10.1016",
+    "volume": "161",
+    "author": [
+      {
+        "given": "Yifan",
+        "family": "Cheng",
+        "affiliation": []
+      }
+    ],
+    "member": "78",
+    "container-title": "Cell",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://api.elsevier.com/content/article/PII:S0092867415003694?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://api.elsevier.com/content/article/PII:S0092867415003694?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          9,
+          17
+        ]
+      ],
+      "date-time": "2017-09-17T23:34:41Z",
+      "timestamp": 1505691281000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2015,
+          4
+        ]
+      ]
+    },
+    "references-count": 76,
+    "alternative-id": [
+      "S0092867415003694"
+    ],
+    "URL": "https://doi.org/10.1016/j.cell.2015.03.049",
+    "relation": {},
+    "subject": [
+      "General Biochemistry, Genetics and Molecular Biology"
+    ],
+    "container-title-short": "Cell",
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Single-Particle Cryo-EM at Crystallographic Resolution",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Cell",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "http://dx.doi.org/10.1016/j.cell.2015.03.049",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "http://dx.doi.org/10.1016/j.cell.2015.03.050",
+        "name": "associatedlink",
+        "label": "CrossRef DOI link to the associated document"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "Copyright © 2015 Elsevier Inc. All rights reserved.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ],
+    "short_url": "https://doi.org/gcnz3b",
+    "id": "bSYQrdJA"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          27
+        ]
+      ],
+      "date-time": "2017-10-27T09:11:04Z",
+      "timestamp": 1509095464036
+    },
+    "reference-count": 79,
+    "publisher": "Elsevier BV",
+    "issue": "3",
+    "license": [
+      {
+        "URL": "http://www.elsevier.com/tdm/userlicense/1.0/",
+        "start": {
+          "date-parts": [
+            [
+              2015,
+              4,
+              1
+            ]
+          ],
+          "date-time": "2015-04-01T00:00:00Z",
+          "timestamp": 1427846400000
+        },
+        "delay-in-days": 0,
+        "content-version": "tdm"
+      },
+      {
+        "URL": "http://www.elsevier.com/open-access/userlicense/1.0/",
+        "start": {
+          "date-parts": [
+            [
+              2016,
+              4,
+              23
+            ]
+          ],
+          "date-time": "2016-04-23T00:00:00Z",
+          "timestamp": 1461369600000
+        },
+        "delay-in-days": 388,
+        "content-version": "vor"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "cell.com",
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2015,
+          4
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.cell.2015.03.050",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2015,
+          4,
+          23
+        ]
+      ],
+      "date-time": "2015-04-23T15:48:19Z",
+      "timestamp": 1429804099000
+    },
+    "page": "438-449",
+    "update-policy": "http://dx.doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 93,
+    "title": "A Primer to Single-Particle Cryo-Electron Microscopy",
+    "prefix": "10.1016",
+    "volume": "161",
+    "author": [
+      {
+        "given": "Yifan",
+        "family": "Cheng",
+        "affiliation": []
+      },
+      {
+        "given": "Nikolaus",
+        "family": "Grigorieff",
+        "affiliation": []
+      },
+      {
+        "given": "Pawel A.",
+        "family": "Penczek",
+        "affiliation": []
+      },
+      {
+        "given": "Thomas",
+        "family": "Walz",
+        "affiliation": []
+      }
+    ],
+    "member": "78",
+    "container-title": "Cell",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://api.elsevier.com/content/article/PII:S0092867415003700?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://api.elsevier.com/content/article/PII:S0092867415003700?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          9,
+          17
+        ]
+      ],
+      "date-time": "2017-09-17T23:34:54Z",
+      "timestamp": 1505691294000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2015,
+          4
+        ]
+      ]
+    },
+    "references-count": 79,
+    "alternative-id": [
+      "S0092867415003700"
+    ],
+    "URL": "https://doi.org/10.1016/j.cell.2015.03.050",
+    "relation": {},
+    "subject": [
+      "General Biochemistry, Genetics and Molecular Biology"
+    ],
+    "container-title-short": "Cell",
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "A Primer to Single-Particle Cryo-Electron Microscopy",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Cell",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "http://dx.doi.org/10.1016/j.cell.2015.03.050",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "http://dx.doi.org/10.1016/j.cell.2015.03.049",
+        "name": "associatedlink",
+        "label": "CrossRef DOI link to the associated document"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "Copyright © 2015 Elsevier Inc. All rights reserved.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ],
+    "short_url": "https://doi.org/f692sc",
+    "id": "Ud5iHvkw"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
           9,
           18
         ]
@@ -10650,6 +11027,579 @@
     ],
     "short_url": "https://doi.org/f3mn5k",
     "id": "13c9OPizf"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          24
+        ]
+      ],
+      "date-time": "2017-10-24T20:10:21Z",
+      "timestamp": 1508875821635
+    },
+    "reference-count": 26,
+    "publisher": "Elsevier BV",
+    "issue": "1",
+    "license": [
+      {
+        "URL": "http://www.elsevier.com/tdm/userlicense/1.0/",
+        "start": {
+          "date-parts": [
+            [
+              2007,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2007-01-01T00:00:00Z",
+          "timestamp": 1167609600000
+        },
+        "delay-in-days": 0,
+        "content-version": "tdm"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2007,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.jsb.2006.04.006",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2006,
+          5,
+          23
+        ]
+      ],
+      "date-time": "2006-05-23T20:50:00Z",
+      "timestamp": 1148417400000
+    },
+    "page": "174-188",
+    "source": "Crossref",
+    "is-referenced-by-count": 18,
+    "title": "SwarmPS: Rapid, semi-automated single particle selection software",
+    "prefix": "10.1016",
+    "volume": "157",
+    "author": [
+      {
+        "given": "David",
+        "family": "Woolford",
+        "affiliation": []
+      },
+      {
+        "given": "Geoffery",
+        "family": "Ericksson",
+        "affiliation": []
+      },
+      {
+        "given": "Rosalba",
+        "family": "Rothnagel",
+        "affiliation": []
+      },
+      {
+        "given": "David",
+        "family": "Muller",
+        "affiliation": []
+      },
+      {
+        "given": "Michael J.",
+        "family": "Landsberg",
+        "affiliation": []
+      },
+      {
+        "given": "Radosav S.",
+        "family": "Pantelic",
+        "affiliation": []
+      },
+      {
+        "given": "Alasdair",
+        "family": "McDowall",
+        "affiliation": []
+      },
+      {
+        "given": "Bernard",
+        "family": "Pailthorpe",
+        "affiliation": []
+      },
+      {
+        "given": "Paul R.",
+        "family": "Young",
+        "affiliation": []
+      },
+      {
+        "given": "Ben",
+        "family": "Hankamer",
+        "affiliation": []
+      },
+      {
+        "given": "Jasmine",
+        "family": "Banks",
+        "affiliation": []
+      }
+    ],
+    "member": "78",
+    "container-title": "Journal of Structural Biology",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://api.elsevier.com/content/article/PII:S1047847706001304?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://api.elsevier.com/content/article/PII:S1047847706001304?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          17
+        ]
+      ],
+      "date-time": "2017-06-17T05:59:31Z",
+      "timestamp": 1497679171000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2007,
+          1
+        ]
+      ]
+    },
+    "references-count": 26,
+    "alternative-id": [
+      "S1047847706001304"
+    ],
+    "URL": "https://doi.org/10.1016/j.jsb.2006.04.006",
+    "relation": {},
+    "subject": [
+      "Structural Biology"
+    ],
+    "container-title-short": "Journal of Structural Biology",
+    "short_url": "https://doi.org/cqvpns",
+    "id": "6W1hknHI"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          12,
+          7
+        ]
+      ],
+      "date-time": "2017-12-07T18:02:43Z",
+      "timestamp": 1512669763489
+    },
+    "reference-count": 39,
+    "publisher": "Elsevier BV",
+    "issue": "2",
+    "license": [
+      {
+        "URL": "http://www.elsevier.com/tdm/userlicense/1.0/",
+        "start": {
+          "date-parts": [
+            [
+              2015,
+              2,
+              1
+            ]
+          ],
+          "date-time": "2015-02-01T00:00:00Z",
+          "timestamp": 1422748800000
+        },
+        "delay-in-days": 0,
+        "content-version": "tdm"
+      },
+      {
+        "URL": "http://creativecommons.org/licenses/by/4.0/",
+        "start": {
+          "date-parts": [
+            [
+              2014,
+              12,
+              22
+            ]
+          ],
+          "date-time": "2014-12-22T00:00:00Z",
+          "timestamp": 1419206400000
+        },
+        "delay-in-days": 0,
+        "content-version": "vor"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100000265",
+        "name": "Medical Research Council",
+        "doi-asserted-by": "crossref",
+        "award": [
+          "MC_UP_A025_1013"
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2015,
+          2
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.jsb.2014.11.010",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2014,
+          12,
+          6
+        ]
+      ],
+      "date-time": "2014-12-06T22:17:22Z",
+      "timestamp": 1417904242000
+    },
+    "page": "114-122",
+    "update-policy": "http://dx.doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 97,
+    "title": "Semi-automated selection of cryo-EM particles in RELION-1.3",
+    "prefix": "10.1016",
+    "volume": "189",
+    "author": [
+      {
+        "given": "Sjors H.W.",
+        "family": "Scheres",
+        "affiliation": []
+      }
+    ],
+    "member": "78",
+    "container-title": "Journal of Structural Biology",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://api.elsevier.com/content/article/PII:S1047847714002615?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://api.elsevier.com/content/article/PII:S1047847714002615?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          23
+        ]
+      ],
+      "date-time": "2017-06-23T01:38:44Z",
+      "timestamp": 1498181924000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2015,
+          2
+        ]
+      ]
+    },
+    "references-count": 39,
+    "alternative-id": [
+      "S1047847714002615"
+    ],
+    "URL": "https://doi.org/10.1016/j.jsb.2014.11.010",
+    "relation": {},
+    "subject": [
+      "Structural Biology"
+    ],
+    "container-title-short": "Journal of Structural Biology",
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Semi-automated selection of cryo-EM particles in RELION-1.3",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Journal of Structural Biology",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "http://dx.doi.org/10.1016/j.jsb.2014.11.010",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "Copyright © 2014 The Author. Published by Elsevier Inc.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ],
+    "short_url": "https://doi.org/f6xkc7",
+    "id": "HpxWaOv3"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          11,
+          18
+        ]
+      ],
+      "date-time": "2017-11-18T12:42:16Z",
+      "timestamp": 1511008936100
+    },
+    "reference-count": 60,
+    "publisher": "Elsevier BV",
+    "issue": "3",
+    "license": [
+      {
+        "URL": "http://www.elsevier.com/tdm/userlicense/1.0/",
+        "start": {
+          "date-parts": [
+            [
+              2016,
+              9,
+              1
+            ]
+          ],
+          "date-time": "2016-09-01T00:00:00Z",
+          "timestamp": 1472688000000
+        },
+        "delay-in-days": 0,
+        "content-version": "tdm"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100001809",
+        "name": "National Natural Science Foundation of China",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "61361136003",
+          "61472205",
+          "31570730",
+          "61571202",
+          "61033001"
+        ]
+      },
+      {
+        "name": "National Basic Research Program of China",
+        "award": [
+          "2011CBA00301",
+          "2011CBA00300"
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2016,
+          9
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.jsb.2016.07.006",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          7,
+          16
+        ]
+      ],
+      "date-time": "2016-07-16T13:57:40Z",
+      "timestamp": 1468677460000
+    },
+    "page": "325-336",
+    "update-policy": "http://dx.doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 6,
+    "title": "DeepPicker: A deep learning approach for fully automated particle picking in cryo-EM",
+    "prefix": "10.1016",
+    "volume": "195",
+    "author": [
+      {
+        "given": "Feng",
+        "family": "Wang",
+        "affiliation": []
+      },
+      {
+        "given": "Huichao",
+        "family": "Gong",
+        "affiliation": []
+      },
+      {
+        "given": "Gaochao",
+        "family": "Liu",
+        "affiliation": []
+      },
+      {
+        "given": "Meijing",
+        "family": "Li",
+        "affiliation": []
+      },
+      {
+        "given": "Chuangye",
+        "family": "Yan",
+        "affiliation": []
+      },
+      {
+        "given": "Tian",
+        "family": "Xia",
+        "affiliation": []
+      },
+      {
+        "given": "Xueming",
+        "family": "Li",
+        "affiliation": []
+      },
+      {
+        "given": "Jianyang",
+        "family": "Zeng",
+        "affiliation": []
+      }
+    ],
+    "member": "78",
+    "container-title": "Journal of Structural Biology",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://api.elsevier.com/content/article/PII:S1047847716301472?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://api.elsevier.com/content/article/PII:S1047847716301472?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          9,
+          20
+        ]
+      ],
+      "date-time": "2017-09-20T08:40:57Z",
+      "timestamp": 1505896857000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          9
+        ]
+      ]
+    },
+    "references-count": 60,
+    "alternative-id": [
+      "S1047847716301472"
+    ],
+    "URL": "https://doi.org/10.1016/j.jsb.2016.07.006",
+    "relation": {},
+    "subject": [
+      "Structural Biology"
+    ],
+    "container-title-short": "Journal of Structural Biology",
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "DeepPicker: A deep learning approach for fully automated particle picking in cryo-EM",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Journal of Structural Biology",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "http://dx.doi.org/10.1016/j.jsb.2016.07.006",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2016 Elsevier Inc. All rights reserved.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ],
+    "short_url": "https://doi.org/f8xr4n",
+    "id": "ku0xqQxt"
   },
   {
     "indexed": {
@@ -42419,6 +43369,146 @@
       "date-parts": [
         [
           2017,
+          12,
+          2
+        ]
+      ],
+      "date-time": "2017-12-02T05:22:13Z",
+      "timestamp": 1512192133509
+    },
+    "reference-count": 38,
+    "publisher": "Springer Nature",
+    "issue": "1",
+    "funder": [
+      {
+        "DOI": "10.13039/501100001809",
+        "name": "National Natural Science Foundation of China",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "91530321"
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2017,
+          12
+        ]
+      ]
+    },
+    "DOI": "10.1186/s12859-017-1757-y",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          7,
+          21
+        ]
+      ],
+      "date-time": "2017-07-21T12:25:09Z",
+      "timestamp": 1500639909000
+    },
+    "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 1,
+    "title": "A deep convolutional neural network approach to single-particle recognition in cryo-electron microscopy",
+    "prefix": "10.1186",
+    "volume": "18",
+    "author": [
+      {
+        "given": "Yanan",
+        "family": "Zhu",
+        "affiliation": []
+      },
+      {
+        "given": "Qi",
+        "family": "Ouyang",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0001-9302-2257",
+        "authenticated-orcid": false,
+        "given": "Youdong",
+        "family": "Mao",
+        "affiliation": []
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2017,
+          7,
+          21
+        ]
+      ]
+    },
+    "container-title": "BMC Bioinformatics",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://link.springer.com/content/pdf/10.1186/s12859-017-1757-y.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          7,
+          21
+        ]
+      ],
+      "date-time": "2017-07-21T12:25:33Z",
+      "timestamp": 1500639933000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          7,
+          21
+        ]
+      ]
+    },
+    "references-count": 38,
+    "alternative-id": [
+      "1757"
+    ],
+    "URL": "https://doi.org/10.1186/s12859-017-1757-y",
+    "relation": {
+      "cites": []
+    },
+    "subject": [
+      "Biochemistry",
+      "Applied Mathematics",
+      "Molecular Biology",
+      "Structural Biology",
+      "Computer Science Applications"
+    ],
+    "container-title-short": "BMC Bioinformatics",
+    "article-number": "348",
+    "short_url": "https://doi.org/gcnz3c",
+    "id": "18QrMkpC5"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
           10,
           31
         ]
@@ -47212,6 +48302,189 @@
     "container-title-short": "PLoS ONE",
     "short_url": "https://doi.org/gcgmcr",
     "id": "as2HfoSh"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          27
+        ]
+      ],
+      "date-time": "2017-10-27T20:55:21Z",
+      "timestamp": 1509137721761
+    },
+    "reference-count": 50,
+    "publisher": "Public Library of Science (PLoS)",
+    "issue": "8",
+    "license": [
+      {
+        "URL": "http://creativecommons.org/licenses/by/4.0/",
+        "start": {
+          "date-parts": [
+            [
+              2017,
+              8,
+              7
+            ]
+          ],
+          "date-time": "2017-08-07T00:00:00Z",
+          "timestamp": 1502064000000
+        },
+        "delay-in-days": 0,
+        "content-version": "vor"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100001809",
+        "name": "National Natural Science Foundation of China",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "91530321"
+        ]
+      },
+      {
+        "DOI": "10.13039/100002418",
+        "name": "Intel Corporation",
+        "doi-asserted-by": "publisher",
+        "award": []
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "www.plosone.org"
+      ],
+      "crossmark-restriction": false
+    },
+    "DOI": "10.1371/journal.pone.0182130",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          8,
+          7
+        ]
+      ],
+      "date-time": "2017-08-07T17:27:56Z",
+      "timestamp": 1502126876000
+    },
+    "page": "e0182130",
+    "update-policy": "http://dx.doi.org/10.1371/journal.pone.corrections_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "Massively parallel unsupervised single-particle cryo-EM data clustering via statistical manifold learning",
+    "prefix": "10.1371",
+    "volume": "12",
+    "author": [
+      {
+        "given": "Jiayi",
+        "family": "Wu",
+        "affiliation": []
+      },
+      {
+        "given": "Yong-Bei",
+        "family": "Ma",
+        "affiliation": []
+      },
+      {
+        "given": "Charles",
+        "family": "Congdon",
+        "affiliation": []
+      },
+      {
+        "given": "Bevin",
+        "family": "Brett",
+        "affiliation": []
+      },
+      {
+        "given": "Shuobing",
+        "family": "Chen",
+        "affiliation": []
+      },
+      {
+        "given": "Yaofang",
+        "family": "Xu",
+        "affiliation": []
+      },
+      {
+        "given": "Qi",
+        "family": "Ouyang",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0001-9302-2257",
+        "authenticated-orcid": true,
+        "given": "Youdong",
+        "family": "Mao",
+        "affiliation": []
+      }
+    ],
+    "member": "340",
+    "published-online": {
+      "date-parts": [
+        [
+          2017,
+          8,
+          7
+        ]
+      ]
+    },
+    "container-title": "PLOS ONE",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://dx.plos.org/10.1371/journal.pone.0182130",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          8,
+          7
+        ]
+      ],
+      "date-time": "2017-08-07T17:28:17Z",
+      "timestamp": 1502126897000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "editor": [
+      {
+        "given": "Zhao",
+        "family": "Zhang",
+        "affiliation": []
+      }
+    ],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          8,
+          7
+        ]
+      ]
+    },
+    "references-count": 50,
+    "URL": "https://doi.org/10.1371/journal.pone.0182130",
+    "relation": {
+      "cites": []
+    },
+    "subject": [
+      "General Biochemistry, Genetics and Molecular Biology",
+      "General Agricultural and Biological Sciences",
+      "General Medicine"
+    ],
+    "container-title-short": "PLoS ONE",
+    "short_url": "https://doi.org/gbqwkp",
+    "id": "RRR3YEJV"
   },
   {
     "indexed": {

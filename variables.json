@@ -205,16 +205,16 @@
   ],
   "ci_source": {
     "repo_slug": "greenelab/deep-review",
-    "commit": "7a4abaecfd3dfc83f7eb7d4a25aa5a4076a893ef"
+    "commit": "cb25996df3e73e7a89f960d8773e57629c4d0b65"
   },
   "manuscript_stats": {
     "reference_counts": {
       "arxiv": 118,
-      "doi": 314,
+      "doi": 321,
       "pmid": 6,
       "url": 44,
-      "total": 482
+      "total": 489
     },
-    "word_count": 28667
+    "word_count": 28944
   }
 }

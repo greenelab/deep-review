@@ -48,7 +48,7 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@7a4abae](https://github.com/greenelab/deep-review/tree/7a4abaecfd3dfc83f7eb7d4a25aa5a4076a893ef)
+from [greenelab/deep-review@cb25996](https://github.com/greenelab/deep-review/tree/cb25996df3e73e7a89f960d8773e57629c4d0b65)
 on December 19, 2017.
 </em></small>
 
@@ -1114,6 +1114,25 @@ We expect further improvements in contact prediction for proteins with fewer tha
 However, it is unclear if there is an effective way to use deep learning to improve prediction for proteins with few or no sequence homologs.
 Finally, the deep learning methods summarized above also apply to interfacial contact prediction for protein complexes but may be less effective since on average protein complexes have fewer sequence homologs.
 
+### Structure determination and cryo-electron microscopy
+
+Complementing computational prediction approaches, cryo-electron microscopy (cryo-EM) allows near-atomic resolution determination of protein models by comparing individual electron micrographs [@bSYQrdJA].  
+Detailed structures require tens of thousands of protein images [@Ud5iHvkw].
+Technological development has increased the throughput of image capture.
+New hardware, such as direct electron detectors, has made large-scale image production practical, while new software has focused on rapid, automated image processing.
+
+Some components of cryo-EM image processing remain difficult to automate.
+For instance, in particle picking, micrographs are scanned to identify individual molecular images that will be used in structure refinement.
+In typical applications, hundreds of thousands of particles are necessary to determine a structure to near atomic resolution, making manual selection impractical [@Ud5iHvkw].
+Typical selection approaches are semi-supervised; a user will select several particles manually, and these selections will be used to train a classifier [@6W1hknHI; @HpxWaOv3].
+Now CNNs are being used to select particles in tools like DeepPicker [@ku0xqQxt] and DeepEM [@18QrMkpC5].
+In addition to addressing shortcomings from manual selection, such as selection bias and poor discrimination of low-contrast images, these approaches also provide a means of full automation.
+DeepPicker can be trained by reference particles from other experiments with structurally unrelated macromolecules, allowing for fully automated application to new samples.
+
+Downstream of particle picking, deep learning is being applied to other aspects of cryo-EM image processing.
+Statistical manifold learning has been implemented in the software package ROME to classify selected particles and elucidate the different conformations of the subject molecule necessary for accurate 3D structures [@RRR3YEJV].
+These recent tools highlight the general applicability of deep learning approaches for image processing to increase the throughput of high-resolution cryo-EM.
+
 ### Morphological phenotypes
 
 A field poised for dramatic revolution by deep learning is bioimage analysis.
@@ -1914,7 +1933,7 @@ To facilitate citation, we [defined](https://github.com/greenelab/deep-review/bl
 We supported citations to the following identifier types (in order of preference): DOIs, PubMed IDs, arXiv IDs, and URLs.
 References were automatically generated from citation metadata by querying APIs to generate [Citation Style Language](http://citationstyles.org/) (CSL) JSON items for each reference.
 [Pandoc](http://pandoc.org/) and [pandoc-citeproc](https://github.com/jgm/pandoc-citeproc) converted the markdown to HTML and PDF, while rendering the formatted citations and references.
-In total, referenced works consisted of 314 DOIs, 6 PubMed records, 118 arXiv manuscripts, and 44 URLs (webpages as well as manuscripts lacking standardized identifiers).
+In total, referenced works consisted of 321 DOIs, 6 PubMed records, 118 arXiv manuscripts, and 44 URLs (webpages as well as manuscripts lacking standardized identifiers).
 
 We implemented continuous analysis so the manuscript was automatically regenerated whenever the source changed [@Qh7xTLwz].
 We configured Travis CI -- a continuous integration service -- to fetch new citation metadata and rebuild the manuscript for every commit.

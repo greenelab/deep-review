@@ -151,6 +151,8 @@ string	citation	standard_citation	citation_id
 @tag:Russakovsky2015_imagenet	doi:10.1007/s11263-015-0816-y	doi:10.1007/s11263-015-0816-y	cBVeXnZx
 @tag:Mahendran2016_visualizing	doi:10.1007/s11263-016-0911-8	doi:10.1007/s11263-016-0911-8	1FkT6C6oa
 @doi:10.1016/j.bjid.2015.08.013	doi:10.1016/j.bjid.2015.08.013	doi:10.1016/j.bjid.2015.08.013	oas5tbC7
+@doi:10.1016/j.cell.2015.03.049	doi:10.1016/j.cell.2015.03.049	doi:10.1016/j.cell.2015.03.049	bSYQrdJA
+@doi:10.1016/j.cell.2015.03.050	doi:10.1016/j.cell.2015.03.050	doi:10.1016/j.cell.2015.03.050	Ud5iHvkw
 @tag:Rosenberg2015_synthetic_seqs	doi:10.1016/j.cell.2015.09.054	doi:10.1016/j.cell.2015.09.054	mlqKTlZY
 @tag:Gaublomme2015_th17	doi:10.1016/j.cell.2015.11.009	doi:10.1016/j.cell.2015.11.009	1HPu3R2B4
 @doi:10.1016/j.cels.2016.04.013	doi:10.1016/j.cels.2016.04.013	doi:10.1016/j.cels.2016.04.013	6XtEfQMC
@@ -163,6 +165,9 @@ string	citation	standard_citation	citation_id
 @doi:10.1016/j.jbi.2016.10.007	doi:10.1016/j.jbi.2016.10.007	doi:10.1016/j.jbi.2016.10.007	5x3uMSKi
 @tag:BeaulieuJones2016_ehr_encode	doi:10.1016/j.jbi.2016.10.007	doi:10.1016/j.jbi.2016.10.007	5x3uMSKi
 @doi:10.1016/j.jhealeco.2016.01.012	doi:10.1016/j.jhealeco.2016.01.012	doi:10.1016/j.jhealeco.2016.01.012	13c9OPizf
+@doi:10.1016/j.jsb.2006.04.006	doi:10.1016/j.jsb.2006.04.006	doi:10.1016/j.jsb.2006.04.006	6W1hknHI
+@doi:10.1016/j.jsb.2014.11.010	doi:10.1016/j.jsb.2014.11.010	doi:10.1016/j.jsb.2014.11.010	HpxWaOv3
+@doi:10.1016/j.jsb.2016.07.006	doi:10.1016/j.jsb.2016.07.006	doi:10.1016/j.jsb.2016.07.006	ku0xqQxt
 @tag:Kooi2016_mamm_lesions	doi:10.1016/j.media.2016.07.007	doi:10.1016/j.media.2016.07.007	18cZbigDD
 @tag:Dhungel2017_mamm_min_interv	doi:10.1016/j.media.2017.01.009	doi:10.1016/j.media.2017.01.009	5kfDbGhA
 @doi:10.1016/j.neubiorev.2010.07.002	doi:10.1016/j.neubiorev.2010.07.002	doi:10.1016/j.neubiorev.2010.07.002	sOBzMC57
@@ -389,6 +394,7 @@ string	citation	standard_citation	citation_id
 @tag:Chen2016_exprs_yeast	doi:10.1186/s12859-015-0852-1	doi:10.1186/s12859-015-0852-1	yVBx9Qx4
 @doi:10.1186/s12859-017-1561-8	doi:10.1186/s12859-017-1561-8	doi:10.1186/s12859-017-1561-8	qnKdqG0P
 @doi:10.1186/s12859-017-1609-9	doi:10.1186/s12859-017-1609-9	doi:10.1186/s12859-017-1609-9	1F5aZYjOB
+@doi:10.1186/s12859-017-1757-y	doi:10.1186/s12859-017-1757-y	doi:10.1186/s12859-017-1757-y	18QrMkpC5
 @tag:Gerstein2016_scaling	doi:10.1186/s13059-016-0917-0	doi:10.1186/s13059-016-0917-0	1E7bFCRV4
 @tag:Angermueller2016_single_methyl	doi:10.1186/s13059-017-1189-z	doi:10.1186/s13059-017-1189-z	19EJTHByG
 @tag:Lusci2015_irv	doi:10.1186/s13321-015-0110-6	doi:10.1186/s13321-015-0110-6	1E0x7QgLP
@@ -420,6 +426,7 @@ string	citation	standard_citation	citation_id
 @tag:Bach2015_on	doi:10.1371/journal.pone.0130140	doi:10.1371/journal.pone.0130140	au5CLIOH
 @tag:Asgari	doi:10.1371/journal.pone.0141287	doi:10.1371/journal.pone.0141287	1E1PWjqTm
 @doi:10.1371/journal.pone.0171410	doi:10.1371/journal.pone.0171410	doi:10.1371/journal.pone.0171410	as2HfoSh
+@doi:10.1371/journal.pone.0182130	doi:10.1371/journal.pone.0182130	doi:10.1371/journal.pone.0182130	RRR3YEJV
 @tag:Graphlab	doi:10.14778/2212351.2212354	doi:10.14778/2212351.2212354	1XcexUAV
 @doi:10.1504/IJDMB.2016.074878	doi:10.1504/IJDMB.2016.074878	doi:10.1504/ijdmb.2016.074878	MY6FXgFn
 @tag:Shapely	doi:10.1515/9781400881970-018	doi:10.1515/9781400881970-018	YBJdA6LJ
