@@ -48,7 +48,7 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@12ca7c9](https://github.com/greenelab/deep-review/tree/12ca7c9a3f8f7bff1b4b0003ce032287a65af11a)
+from [greenelab/deep-review@908e60f](https://github.com/greenelab/deep-review/tree/908e60f464693b1828e31ae235a9780e6564479e)
 on December 19, 2017.
 </em></small>
 
@@ -434,6 +434,7 @@ nuanced differences of each domain to which it is applied.
 | Variational Autoencoder (VAE) | AE with an added constraint of learning normally distributed features |
 | Generative neural network | NN approach that uses models trained to generate data similar to the collected data, leading to smaller number of parameters |
 | Generative adversarial network (GAN) | Generative NN approach that uses two networks, one that generates samples from training data and one that discriminates between generated and training data |
+| Adversarial training | Constructing artificial training examples that are maliciously designed to fool a neural network in order to make it robust to such attacks (no relation to GANs) |
 | Restricted Bolzmann machine (RBM) | Generative NN that forms the building block for many DL approaches, having a single input layer and a single hidden layer, with no connections between the nodes within each layer |
 | Deep belief network (DBN) | Generative NN with several hidden layers, which can be obtained from combining multiple RBMs |
 
@@ -654,8 +655,8 @@ small training sets. The practice is exemplified by a series of papers that
 analyze images from mammographies [@VFw1VXDP;
 @JK8NuXy3; @9G9Hv1Pp; @Xxb4t3zO;
 @5kfDbGhA]. To expand the number and diversity of images,
-researchers constructed adversarial examples [@Xxb4t3zO].
-Adversarial examples are constructed by applying a transformation that changes
+researchers constructed adversarial training examples [@Xxb4t3zO].
+Adversarial training examples are constructed by applying a transformation that changes
 training images but not their content -- for example by rotating an image by a
 random amount. An alternative in the domain is to train towards human-created
 features before subsequent fine-tuning [@JK8NuXy3], which can help
@@ -990,15 +991,13 @@ can be used before overfitting occurs. For example, the unsupervised and
 semi-supervised methods that we have discussed reduce the need for labeled
 examples [@5x3uMSKi]. The anchor and learn framework
 [@A9JeoGV8] uses expert knowledge to identify high-confidence
-observations from which labels can be inferred. The adversarial training example
-strategies mentioned above can reduce overfitting, if transformations are
-available that preserve the meaningful content of the data while transforming
-irrelevant features [@Xxb4t3zO]. While adversarial training examples
+observations from which labels can be inferred.
+The strategies of adversarial training mentioned above can reduce overfitting, if transformations are available that preserve the meaningful content of the data while transforming irrelevant features [@Xxb4t3zO].
+While adversarial training examples
 can be easily imagined for certain methods that operate on images, it is more
 challenging to figure out what an equivalent transformation would be for a
 patient's clinical test results. Consequently, it may be hard to employ
-adversarial training examples, not to be confused with generative adversarial
-neural networks, with other applications. Finally, approaches that transfer
+adversarial training examples with other applications. Finally, approaches that transfer
 features can also help use valuable training data most efficiently. Rajkomar et
 al. trained a deep neural network using generic images before tuning using only
 radiology images [@x6HXFAS4]. Datasets that require many of
@@ -1008,17 +1007,16 @@ has not yet been attempted, it is possible that analogous strategies may be
 possible with electronic health records. For example, features learned from the
 electronic health record for one type of clinical test (e.g. a decrease over
 time in a lab value) may transfer across phenotypes.
-
-Methods to accomplish more with little high-quality labeled data are also being
-applied in other domains and may also be adapted to this challenge, e.g. data
+Methods to accomplish more with little high-quality labeled data arose
+in other domains and may also be adapted to this challenge, e.g. data
 programming [@5Il3kN32]. In data programming, noisy automated labeling
-functions are integrated. Numerous writers have described data as the new oil
-[@6fE0Vrba;
-@o8mib4CN].
+functions are integrated.
+
+Numerous commentators have described data as the new oil [@6fE0Vrba; @o8mib4CN].
 The idea behind this metaphor is that data are available in large quantities,
-valuable once refined, and the underlying resource that will enable a
+valuable once refined, and this underlying resource  will enable a
 data-driven revolution in how work is done. Contrasting with this perspective,
-Ratner, Bach, and Ré described labeled training data as "The _New_ New Oil"
+Ratner, Bach, and Ré described labeled training data, instead of data, as "The _New_ New Oil"
 [@hfcf5Hmi]. In this
 framing, data are abundant and not a scarce resource. Instead, new approaches to
 solving problems arise when labeled training data become sufficient to enable
@@ -1234,7 +1232,8 @@ Despite the difficulties and uncertainties, machine learning practitioners (and
 particularly those who use deep neural networks, which are challenging to
 interpret) must remain cognizant of these dangers and make every effort to
 prevent harm from discriminatory predictions. To reach their potential in this
-domain, deep learning methods will need to be interpretable. Researchers need to
+domain, deep learning methods will need to be interpretable (see Discussion).
+Researchers need to
 consider the extent to which biases may be learned by the model and whether or
 not a model is sufficiently interpretable to identify bias. We discuss the
 challenge of model interpretability more thoroughly in Discussion.
@@ -1338,15 +1337,12 @@ required data to be split randomly into two distinct models and trained
 separately. It is unclear how much performance would have increased if not for
 computational restrictions.
 
-Epigenetic data, combined with deep learning, may have sufficient explanatory
-power to infer gene expression. For instance, the DeepChrome CNN [@G10wkFHt]
-improved prediction accuracy of high or low gene expression from histone modifications over existing
-methods. Deep learning can also integrate different data types. For example,
-Liang et al. combined RBMs to integrate gene expression, DNA methylation, and
-miRNA data to define ovarian cancer subtypes [@1EtavGKI4].
-While these approaches are promising, many convert gene expression measurements
-to categorical or binary variables, thus ablating many complex gene expression
-signatures present in intermediate and relative numbers.
+Epigenetic data, combined with deep learning, may have sufficient explanatory power to infer gene expression.
+For instance, the DeepChrome CNN [@G10wkFHt] improved prediction accuracy of high or low gene expression from histone modifications over existing methods.
+AttentiveChrome [@16MNknNBL] added a deep attention model to further enhance DeepChrome.
+Deep learning can also integrate different data types.
+For example, Liang et al. combined RBMs to integrate gene expression, DNA methylation, and miRNA data to define ovarian cancer subtypes [@1EtavGKI4].
+While these approaches are promising, many convert gene expression measurements to categorical or binary variables, thus ablating many complex gene expression signatures present in intermediate and relative numbers.
 
 Deep learning applied to gene expression data is still in its infancy, but the
 future is bright. Many previously untestable hypotheses can now be interrogated
@@ -1362,9 +1358,8 @@ Pre-mRNA transcripts can be spliced into different isoforms by retaining or
 skipping subsets of exons or including parts of introns, creating enormous
 spatiotemporal flexibility to generate multiple distinct proteins from a single
 gene. This remarkable complexity can lend itself to defects that underlie many
-diseases. For instance, splicing mutations in the lamin A (*LMNA*) gene can lead to specific
-variants of dilated cardiomyopathy and limb girdle muscular dystrophy
-[@QFK6GapR].
+diseases.
+For instance, splicing mutations in the lamin A (*LMNA*) gene can lead to specific variants of dilated cardiomyopathy and limb girdle muscular dystrophy [@QFK6GapR].
 A recent study found that quantitative trait loci
 that affect splicing in lymphoblastoid cell lines are enriched within risk loci
 for schizophrenia, multiple sclerosis, and other immune diseases, implicating
@@ -1791,7 +1786,8 @@ transcriptional states provides unprecedented views of regulatory processes
 However, large challenges exist in studying single cells. Relatively few cells
 can be assayed at once using current droplet, imaging, or microwell
 technologies, and low-abundance molecules or modifications may not be detected
-by chance due to a phenomenon known as dropout. To solve this problem,
+by chance due to a phenomenon known as dropout, not to be confused with the dropout
+layer of deep learning. To solve this problem,
 Angermueller et al. [@19EJTHByG] trained a neural
 network to predict the presence or absence of methylation of a specific CpG site
 in single cells based on surrounding methylation signal and underlying DNA
@@ -1996,7 +1992,7 @@ history -- there have been many attempts to apply deep learning to patient
 treatment. Success in this area could help to enable personalized healthcare or
 precision medicine [@VOQtVhWs; @3JyJ3DTh].
 Earlier, we reviewed approaches for patient categorization. Here, we examine the
-potential for better treatment, which broadly, may divided into methods for
+potential for better treatment, which broadly, may be divided into methods for
 improved choices of interventions for patients and those for development of new
 interventions.
 
@@ -2625,7 +2621,7 @@ to some regularizing constraints. This technique was first introduced in Ehran
 et al. [@UAAd9Uez] and applied in subsequent work
 [@1YcKYTvO; @XLHInhc1;
 @17i18PMkR; @1FkT6C6oa]. Lanchantin et
-al. [@Dwi2eAvT] applied activation maximization to genomic
+al. [@Dwi2eAvT] applied class-based activation maximization to genomic
 sequence data. One drawback of this approach is that neural networks often learn
 highly distributed representations where several neurons cooperatively describe
 a pattern of interest. Thus, visualizing patterns learned by individual neurons
@@ -2641,7 +2637,9 @@ focus on generating a particular output [@haHzVaaz;
 @yHn4SDRI]. Deming et al. [@SAvEOARL] applied the attention
 mechanism to models trained on genomic sequence. Attention mechanisms provide
 insight into the model's decision-making process by revealing which portions of
-the input are used by different outputs. In the clinical domain, Choi et al.
+the input are used by different outputs.
+Singh et al. used a hierarchy of attention layers to locate important genome positions and signals for predicting gene expression from histone modifications [@16MNknNBL].
+In the clinical domain, Choi et al.
 [@UcRbawKo] leveraged attention mechanisms to highlight which aspects
 of a patient's medical history were most relevant for making diagnoses. Choi et
 al. [@10nDTiETi] later extended this work to take into account the
@@ -3126,10 +3124,9 @@ pre-training and target datasets, and similarity of domains. However, similarity
 of datasets and domains in transfer learning and relatedness of tasks in
 multi-task learning is difficult to access. Most studies address these
 limitations by empirical evaluation of the model. Unfortunately, negative
-results are typically not reported. Rajkomar et al.
-[@x6HXFAS4] showed that a deep CNN trained on natural images
-can boost radiology image classification performance. However, due to
-differences in imaging domains, the target task required either re-training the
+results are typically not reported.
+A deep CNN trained on natural images boosts performance in radiographic images [@x6HXFAS4].
+However, due to differences in imaging domains, the target task required either re-training the
 initial model from scratch with special pre-processing or fine-tuning of the
 whole network on radiographs with heavy data augmentation to avoid overfitting.
 Exclusively fine-tuning top layers led to much lower validation accuracy (81.4
@@ -3258,7 +3255,7 @@ To facilitate citation, we [defined](https://github.com/greenelab/deep-review/bl
 We supported citations to the following identifier types (in order of preference): DOIs, PubMed IDs, arXiv IDs, and URLs.
 References were automatically generated from citation metadata by querying APIs to generate [Citation Style Language](http://citationstyles.org/) (CSL) JSON items for each reference.
 [Pandoc](http://pandoc.org/) and [pandoc-citeproc](https://github.com/jgm/pandoc-citeproc) converted the markdown to HTML and PDF, while rendering the formatted citations and references.
-In total, referenced works consisted of 314 DOIs, 6 PubMed records, 117 arXiv manuscripts, and 44 URLs (webpages as well as manuscripts lacking standardized identifiers).
+In total, referenced works consisted of 314 DOIs, 6 PubMed records, 118 arXiv manuscripts, and 44 URLs (webpages as well as manuscripts lacking standardized identifiers).
 
 We implemented continuous analysis so the manuscript was automatically regenerated whenever the source changed [@Qh7xTLwz].
 We configured Travis CI -- a continuous integration service -- to fetch new citation metadata and rebuild the manuscript for every commit.

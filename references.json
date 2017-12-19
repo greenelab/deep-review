@@ -4368,6 +4368,40 @@
     "id": "1988BRJe3"
   },
   {
+    "arxiv_id": "1708.00339v3",
+    "version": "3",
+    "URL": "https://arxiv.org/abs/1708.00339v3",
+    "title": "Attend and Predict: Understanding Gene Regulation by Selective Attention\n  on Chromatin",
+    "issued": {
+      "date-parts": [
+        [
+          "2017",
+          "08",
+          "01"
+        ]
+      ]
+    },
+    "author": [
+      {
+        "literal": "Ritambhara Singh"
+      },
+      {
+        "literal": "Jack Lanchantin"
+      },
+      {
+        "literal": "Arshdeep Sekhon"
+      },
+      {
+        "literal": "Yanjun Qi"
+      }
+    ],
+    "container-title": "arXiv",
+    "publisher": "arXiv",
+    "abstract": "The past decade has seen a revolution in genomic technologies that enable a\nflood of genome-wide profiling of chromatin marks. Recent literature tried to\nunderstand gene regulation by predicting gene expression from large-scale\nchromatin measurements. Two fundamental challenges exist for such learning\ntasks: (1) genome-wide chromatin signals are spatially structured,\nhigh-dimensional and highly modular; and (2) the core aim is to understand what\nare the relevant factors and how they work together? Previous studies either\nfailed to model complex dependencies among input signals or relied on separate\nfeature analysis to explain the decisions. This paper presents an\nattention-based deep learning approach; we call AttentiveChrome, that uses a\nunified architecture to model and to interpret dependencies among chromatin\nfactors for controlling gene regulation. AttentiveChrome uses a hierarchy of\nmultiple Long short-term memory (LSTM) modules to encode the input signals and\nto model how various chromatin marks cooperate automatically. AttentiveChrome\ntrains two levels of attention jointly with the target prediction, enabling it\nto attend differentially to relevant marks and to locate important positions\nper mark. We evaluate the model across 56 different cell types (tasks) in\nhuman. Not only is the proposed architecture more accurate, but its attention\nscores also provide a better interpretation than state-of-the-art feature\nvisualization methods such as saliency map.\n  Code and data are shared at www.deepchrome.org",
+    "type": "report",
+    "id": "16MNknNBL"
+  },
+  {
     "arxiv_id": "1708.04692v2",
     "version": "2",
     "URL": "https://arxiv.org/abs/1708.04692v2",
