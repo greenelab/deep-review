@@ -53092,6 +53092,10 @@
   },
   {
     "URL": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi",
+    "greycite-canonical-uri": null,
+    "title": "CiteSeerX — Document Not Found",
+    "greycite-status": "Scanned",
+    "greycite-scanned": "2017-09-19 16:48:19",
     "type": "webpage",
     "id": "4XHCB8iI"
   },
@@ -53520,6 +53524,8 @@
   },
   {
     "URL": "http://www.ijcai.org/Proceedings/16/Papers/403.pdf",
+    "greycite-status": "Not Scanned",
+    "greycite-expire": 86400,
     "type": "webpage",
     "id": "MmcdzBXf"
   },
@@ -53673,6 +53679,18 @@
   },
   {
     "URL": "http://www.who.int/classifications/icd/en/",
+    "title": "International Classification of Diseases",
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          7,
+          7
+        ]
+      ]
+    },
+    "greycite-status": "Scanned",
+    "greycite-scanned": "2017-07-07 17:50:22",
     "type": "webpage",
     "id": "zVoUcFPZ"
   },

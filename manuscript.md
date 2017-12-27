@@ -27,7 +27,7 @@ author-meta:
 - Marwin H.S. Segler
 - Anthony Gitter
 - Casey S. Greene
-date-meta: '2017-12-19'
+date-meta: '2017-12-27'
 keywords:
 - deep learning
 - review
@@ -48,8 +48,8 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@cb25996](https://github.com/greenelab/deep-review/tree/cb25996df3e73e7a89f960d8773e57629c4d0b65)
-on December 19, 2017.
+from [greenelab/deep-review@1543f3b](https://github.com/greenelab/deep-review/tree/1543f3bae3a569d3a67ad202de82f44888db920c)
+on December 27, 2017.
 </em></small>
 
 ## Authors
@@ -1973,6 +1973,7 @@ The remaining authors have no competing interests to declare.
 
 We gratefully acknowledge Christof Angermueller, Kumardeep Chaudhary, Gökcen Eraslan, Michael M. Hoffman, Mikael Huss, Bharath Ramsundar and Xun Zhu for their discussion of the manuscript and reviewed papers on GitHub.
 We would like to thank Zhiyong Lu for revisions to the text that were not captured on GitHub as well as GitHub users aaronsheldon and swamidass who contributed text but did not formally approve the manuscript.
+We would like to thank Anna Greene for a careful proofreading of the manuscript in advance of the first submission.
 Finally, we acknowledge funding from the Gordon and Betty Moore Foundation awards GBMF4552 (C.S.G. and D.S.H.) and GBMF4563 (D.J.H.);
 the National Institutes of Health awards DP2GM123485 (A.K.), R01AI116794 (B.K.B.), R01GM089652 (A.E.C.), R01GM089753 (J.X.), T32GM007753 (B.T.D.), and U54AI117924 (A.G.);
 the National Science Foundation awards 1245632 (G.L.R.), 1531594 (E.M.C.), and 1564955 (J.X.);
