@@ -62,6 +62,7 @@ Duvenaud2015_graph_conv	url:http://papers.nips.cc/paper/5954-convolutional-netwo
 Edwards2015_growing_pains	doi:10.1145/2771283
 Ehran2009_visualizing	url:http://www.iro.umontreal.ca/~lisa/publications2/index.php/publications/show/247
 Elephas	url:https://github.com/maxpumperla/elephas
+Errington2014_reproducibility	doi:10.7554/eLife.04333
 Eser2016_fiddle	doi:10.1101/081380
 Esfahani2016_melanoma	doi:10.1109/EMBC.2016.7590963
 Essinger2010_taxonomic	doi:10.1109/IJCNN.2010.5596644
@@ -77,6 +78,7 @@ Geras2017_multiview_mamm	doi:10.1038/nrg.2015.16
 Gerstein2016_scaling	doi:10.1186/s13059-016-0917-0
 Ghandi2014_enhanced	doi:10.1371/journal.pcbi.1003711
 Ghosh1992_sequence	doi:10.1117/12.140112
+Goldsborough2017_cytogan	doi:10.1101/227645
 Gomezb2016_automatic	arxiv:1610.02415
 Graphlab	doi:10.14778/2212351.2212354
 Groop1986_islet	doi:10.2337/diab.35.2.237
@@ -129,6 +131,7 @@ Leibig2016_dr	doi:10.1101/084210
 Li2014_minibatch	doi:10.1145/2623330.2623612
 Li2016_variation	doi:10.1126/science.aad9417
 Liang2015_exprs_cancer	doi:10.1109/TCBB.2014.2377729
+Lin2017_why_dl_works	arxiv:1608.08225v3
 Lipton2016_missing	arxiv:1606.04130
 Lipton2015_lstm	arxiv:1510.07641
 Litjens2016_histopath_survey	doi:10.1038/srep26286
@@ -143,6 +146,7 @@ Lundberg2016_an	arxiv:1611.07478
 Lusci2015_irv	doi:10.1186/s13321-015-0110-6
 Lusci2013_rnn	doi:10.1021/ci400187y
 Ma2015_qsar_merck	doi:10.1021/ci500747n
+Maaten2008_tsne	url:http://www.jmlr.org/papers/v9/vandermaaten08a.html
 Mahendran2014_understanding	arxiv:1412.0035
 Mahendran2016_salient	doi:10.1007/978-3-319-46466-4_8
 Mahendran2016_visualizing	doi:10.1007/s11263-016-0911-8
@@ -167,6 +171,7 @@ Nie2016_3d_survival	doi:10.1007/978-3-319-46723-8_25
 NIH2016_genome_cost	url:https://www.genome.gov/27565109/the-cost-of-sequencing-a-human-genome/
 Nih_curiosity	url:https://www.nigms.nih.gov/Education/Documents/curiosity.pdf
 Olivecrona2017_drug_design	arxiv:1704.07555
+Osokin2017_biogan	arxiv:1708.04692
 onecodex	url:https://www.onecodex.com/
 Papernot2017_pate	url:https://openreview.net/forum?id=HkwoSDPgg
 Park2016_deepmirgene	arxiv:1605.00017
@@ -181,6 +186,7 @@ Qin2017_onehot	doi:10.1371/journal.pcbi.1005403
 Qiu2017_graph_embedding	doi:10.1101/110668
 Ragoza2016_protein	arxiv:1612.02751
 RAD2010_view_cc	doi:10.1145/1721654.1721672
+Radford_dcgan	arxiv:1511.06434v2
 Rajkomar2017_radiographs	doi:10.1007/s10278-016-9914-9
 Ramsundar2015_multitask_drug	arxiv:1502.02072
 Ranganath2016_deep	arxiv:1608.02158
@@ -209,6 +215,7 @@ Shin2016_cad_tl	doi:10.1109/TMI.2016.2528162
 Shrikumar2017_learning	arxiv:1704.02685
 Shrikumar2017_reversecomplement	doi:10.1101/103663
 Simonyan2013_deep	arxiv:1312.6034
+Singh2017_attentivechrome	arxiv:1708.00339
 Singh2016_deepchrome	arxiv:1607.02078
 Silver2016_alphago	doi:10.1038/nature16961
 Sonderby	arxiv:1503.01919
@@ -243,6 +250,8 @@ Wallach2015_atom_net	arxiv:1510.02855
 Wang2016_breast_cancer	arxiv:1606.05718
 Wang2016_protein_contact	doi:10.1371/journal.pcbi.1005324
 Wasson1985_clinical	doi:10.1056/NEJM198509263131306
+WayGreene2017_eval	arxiv:1711.04828
+WayGreene2017_tybalt	doi:10.1101/174474
 Word2Vec	arxiv:1301.3781
 wgsquikr	doi:10.1371/journal.pone.0091784
 Wu2017_molecule_net	arxiv:1703.00564
@@ -260,7 +269,11 @@ Zeiler2013_visualizing	arxiv:1311.2901
 Zeng2015	doi:10.1186/s12859-015-0553-9
 Zeng2016_convolutional	doi:10.1093/bioinformatics/btw255
 Zhang2015_multitask_tl	doi:10.1145/2783258.2783304
+Zhang2017_generalization	arxiv:1611.03530v2
 Zhou2015_deep_sea	doi:10.1038/nmeth.3547
 Zhu2016_advers_mamm	doi:10.1101/095786
 Zhu2016_mult_inst_mamm	doi:10.1101/095794
 Zintgraf2017_visualizing	arxiv:1702.04595
+goodfellow2016deep	url:http://www.deeplearningbook.org/
+li2016joint	url:http://www.ijcai.org/Proceedings/16/Papers/403.pdf
+world2004international	url:http://www.who.int/classifications/icd/en/

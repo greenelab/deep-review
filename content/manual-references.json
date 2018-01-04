@@ -941,5 +941,38 @@
     ],
     "type": "webpage",
     "standard_citation": "url:https://nihcc.app.box.com/v/ChestXray-NIHCC"
-  }
+  },
+{
+    "standard_citation": "doi:10.3389/fgene.2014.00342",
+    "type": "article-journal",
+    "title": "Large-scale integration of small-molecule induced genome-wide transcriptional responses, Kinome-wide binding affinities and cell-growth inhibition profiles reveal global trends characterizing systems-level drug action",
+    "container-title": "Frontiers in Genetics",
+    "URL": "https://doi.org/10.3389/fgene.2014.00342",
+    "DOI": "10.3389/fgene.2014.00342",
+    "created": {
+        "date-parts": [
+          [
+            2014,
+            9,
+            30
+          ]
+        ],
+        "date-time": "2014-09-30T15:41:13Z",
+        "timestamp": 1412091673000
+    },
+    "author": [
+     {
+      "family": "Vidovic",
+      "given": "Dušica"
+     },
+     {
+      "family": "Koleti",
+      "given": "Amar"
+     },
+     {
+      "family": "Schürer",
+      "given": "Stephan C"
+     }
+   ]
+ }
 ]
