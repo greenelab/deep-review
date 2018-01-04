@@ -4337,6 +4337,65 @@
     "id": "z8hmfrmY"
   },
   {
+    "arxiv_id": "1706.01556v2",
+    "version": "2",
+    "URL": "https://arxiv.org/abs/1706.01556v2",
+    "title": "Deep learning for extracting protein-protein interactions from\n  biomedical literature",
+    "issued": {
+      "date-parts": [
+        [
+          "2017",
+          "06",
+          "05"
+        ]
+      ]
+    },
+    "author": [
+      {
+        "literal": "Yifan Peng"
+      },
+      {
+        "literal": "Zhiyong Lu"
+      }
+    ],
+    "container-title": "arXiv",
+    "publisher": "arXiv",
+    "abstract": "State-of-the-art methods for protein-protein interaction (PPI) extraction are\nprimarily feature-based or kernel-based by leveraging lexical and syntactic\ninformation. But how to incorporate such knowledge in the recent deep learning\nmethods remains an open question. In this paper, we propose a multichannel\ndependency-based convolutional neural network model (McDepCNN). It applies one\nchannel to the embedding vector of each word in the sentence, and another\nchannel to the embedding vector of the head of the corresponding word.\nTherefore, the model can use richer information obtained from different\nchannels. Experiments on two public benchmarking datasets, AIMed and BioInfer,\ndemonstrate that McDepCNN compares favorably to the state-of-the-art\nrich-feature and single-kernel based methods. In addition, McDepCNN achieves\n24.4% relative improvement in F1-score over the state-of-the-art methods on\ncross-corpus evaluation and 12% improvement in F1-score over kernel-based\nmethods on \"difficult\" instances. These results suggest that McDepCNN\ngeneralizes more easily over different corpora, and is capable of capturing\nlong distance features in the sentences.",
+    "type": "report",
+    "id": "TNHJioqT"
+  },
+  {
+    "arxiv_id": "1706.02216v2",
+    "version": "2",
+    "URL": "https://arxiv.org/abs/1706.02216v2",
+    "title": "Inductive Representation Learning on Large Graphs",
+    "issued": {
+      "date-parts": [
+        [
+          "2017",
+          "06",
+          "07"
+        ]
+      ]
+    },
+    "author": [
+      {
+        "literal": "William L. Hamilton"
+      },
+      {
+        "literal": "Rex Ying"
+      },
+      {
+        "literal": "Jure Leskovec"
+      }
+    ],
+    "container-title": "arXiv",
+    "publisher": "arXiv",
+    "abstract": "Low-dimensional embeddings of nodes in large graphs have proved extremely\nuseful in a variety of prediction tasks, from content recommendation to\nidentifying protein functions. However, most existing approaches require that\nall nodes in the graph are present during training of the embeddings; these\nprevious approaches are inherently transductive and do not naturally generalize\nto unseen nodes. Here we present GraphSAGE, a general, inductive framework that\nleverages node feature information (e.g., text attributes) to efficiently\ngenerate node embeddings for previously unseen data. Instead of training\nindividual embeddings for each node, we learn a function that generates\nembeddings by sampling and aggregating features from a node's local\nneighborhood. Our algorithm outperforms strong baselines on three inductive\nnode-classification benchmarks: we classify the category of unseen nodes in\nevolving information graphs based on citation and Reddit post data, and we show\nthat our algorithm generalizes to completely unseen graphs using a multi-graph\ndataset of protein-protein interactions.",
+    "type": "report",
+    "id": "MwUPw4CD"
+  },
+  {
     "arxiv_id": "1706.02633v1",
     "version": "1",
     "URL": "https://arxiv.org/abs/1706.02633v1",
@@ -4471,6 +4530,34 @@
     "abstract": "We propose a probabilistic model for interpreting gene expression levels that\nare observed through single-cell RNA sequencing. In the model, each cell has a\nlow-dimensional latent representation. Additional latent variables account for\ntechnical effects that may erroneously set some observations of gene expression\nlevels to zero. Conditional distributions are specified by neural networks,\ngiving the proposed model enough flexibility to fit the data well. We use\nvariational inference and stochastic optimization to approximate the posterior\ndistribution. The inference procedure scales to over one million cells, whereas\ncompeting algorithms do not. Even for smaller datasets, for several tasks, the\nproposed procedure outperforms state-of-the-art methods like ZIFA and\nZINB-WaVE. We also extend our framework to account for batch effects and other\nconfounding factors, and propose a Bayesian hypothesis test for differential\nexpression that outperforms DESeq2.",
     "type": "report",
     "id": "RHqbJgpe"
+  },
+  {
+    "arxiv_id": "1710.10568v1",
+    "version": "1",
+    "URL": "https://arxiv.org/abs/1710.10568v1",
+    "title": "Stochastic Training of Graph Convolutional Networks",
+    "issued": {
+      "date-parts": [
+        [
+          "2017",
+          "10",
+          "29"
+        ]
+      ]
+    },
+    "author": [
+      {
+        "literal": "Jianfei Chen"
+      },
+      {
+        "literal": "Jun Zhu"
+      }
+    ],
+    "container-title": "arXiv",
+    "publisher": "arXiv",
+    "abstract": "Graph convolutional networks (GCNs) are powerful deep neural networks for\ngraph-structured data. However, GCN computes nodes' representation recursively\nfrom their neighbors, making the receptive field size grow exponentially with\nthe number of layers. Previous attempts on reducing the receptive field size by\nsubsampling neighbors do not have any convergence guarantee, and their\nreceptive field size per node is still in the order of hundreds. In this paper,\nwe develop a preprocessing strategy and two control variate based algorithms to\nfurther reduce the receptive field size. Our algorithms are guaranteed to\nconverge to GCN's local optimum regardless of the neighbor sampling size.\nEmpirical results show that our algorithms have a similar convergence speed per\nepoch with the exact algorithm even using only two neighbors per node. The time\nconsumption of our algorithm on the Reddit dataset is only one fifth of\nprevious neighbor sampling algorithms.",
+    "type": "report",
+    "id": "FMsqNIQ4"
   },
   {
     "arxiv_id": "1711.04828v1",
@@ -7551,6 +7638,153 @@
       "date-parts": [
         [
           2017,
+          12,
+          28
+        ]
+      ],
+      "date-time": "2017-12-28T02:02:41Z",
+      "timestamp": 1514426561696
+    },
+    "reference-count": 43,
+    "publisher": "Springer Nature",
+    "issue": "1",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2009,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1007/s00251-008-0341-z",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2008,
+          11,
+          11
+        ]
+      ],
+      "date-time": "2008-11-11T14:01:06Z",
+      "timestamp": 1226412066000
+    },
+    "page": "1-13",
+    "source": "Crossref",
+    "is-referenced-by-count": 201,
+    "title": "NetMHCpan, a method for MHC class I binding prediction beyond humans",
+    "prefix": "10.1007",
+    "volume": "61",
+    "author": [
+      {
+        "given": "Ilka",
+        "family": "Hoof",
+        "affiliation": []
+      },
+      {
+        "given": "Bjoern",
+        "family": "Peters",
+        "affiliation": []
+      },
+      {
+        "given": "John",
+        "family": "Sidney",
+        "affiliation": []
+      },
+      {
+        "given": "Lasse Eggers",
+        "family": "Pedersen",
+        "affiliation": []
+      },
+      {
+        "given": "Alessandro",
+        "family": "Sette",
+        "affiliation": []
+      },
+      {
+        "given": "Ole",
+        "family": "Lund",
+        "affiliation": []
+      },
+      {
+        "given": "Søren",
+        "family": "Buus",
+        "affiliation": []
+      },
+      {
+        "given": "Morten",
+        "family": "Nielsen",
+        "affiliation": []
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2008,
+          11,
+          12
+        ]
+      ]
+    },
+    "container-title": "Immunogenetics",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://www.springerlink.com/index/pdf/10.1007/s00251-008-0341-z",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          18
+        ]
+      ],
+      "date-time": "2017-06-18T13:24:25Z",
+      "timestamp": 1497792265000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2008,
+          11,
+          12
+        ]
+      ]
+    },
+    "references-count": 43,
+    "alternative-id": [
+      "341"
+    ],
+    "URL": "https://doi.org/10.1007/s00251-008-0341-z",
+    "relation": {
+      "cites": []
+    },
+    "subject": [
+      "Immunology",
+      "Genetics"
+    ],
+    "container-title-short": "Immunogenetics",
+    "short_url": "https://doi.org/cn4g24",
+    "id": "QxZTL7xX"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
           10,
           27
         ]
@@ -10206,6 +10440,151 @@
       "date-parts": [
         [
           2017,
+          12,
+          15
+        ]
+      ],
+      "date-time": "2017-12-15T22:03:29Z",
+      "timestamp": 1513375409182
+    },
+    "reference-count": 98,
+    "publisher": "Elsevier BV",
+    "issue": "2",
+    "license": [
+      {
+        "URL": "http://www.elsevier.com/tdm/userlicense/1.0/",
+        "start": {
+          "date-parts": [
+            [
+              2008,
+              4,
+              1
+            ]
+          ],
+          "date-time": "2008-04-01T00:00:00Z",
+          "timestamp": 1207008000000
+        },
+        "delay-in-days": 0,
+        "content-version": "tdm"
+      },
+      {
+        "URL": "http://www.elsevier.com/open-access/userlicense/1.0/",
+        "start": {
+          "date-parts": [
+            [
+              2013,
+              7,
+              17
+            ]
+          ],
+          "date-time": "2013-07-17T00:00:00Z",
+          "timestamp": 1374019200000
+        },
+        "delay-in-days": 1933,
+        "content-version": "vor"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2008,
+          4
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.jbi.2007.11.008",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2008,
+          1,
+          7
+        ]
+      ],
+      "date-time": "2008-01-07T12:55:52Z",
+      "timestamp": 1199710552000
+    },
+    "page": "393-407",
+    "source": "Crossref",
+    "is-referenced-by-count": 40,
+    "title": "Extracting interactions between proteins from the literature",
+    "prefix": "10.1016",
+    "volume": "41",
+    "author": [
+      {
+        "given": "Deyu",
+        "family": "Zhou",
+        "affiliation": []
+      },
+      {
+        "given": "Yulan",
+        "family": "He",
+        "affiliation": []
+      }
+    ],
+    "member": "78",
+    "container-title": "Journal of Biomedical Informatics",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://api.elsevier.com/content/article/PII:S1532046407001451?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://api.elsevier.com/content/article/PII:S1532046407001451?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          18
+        ]
+      ],
+      "date-time": "2017-06-18T02:44:52Z",
+      "timestamp": 1497753892000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2008,
+          4
+        ]
+      ]
+    },
+    "references-count": 98,
+    "alternative-id": [
+      "S1532046407001451"
+    ],
+    "URL": "https://doi.org/10.1016/j.jbi.2007.11.008",
+    "relation": {},
+    "subject": [
+      "Health Informatics",
+      "Computer Science Applications"
+    ],
+    "container-title-short": "Journal of Biomedical Informatics",
+    "short_url": "https://doi.org/b9kh98",
+    "id": "xEQI6dXW"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
           10,
           27
         ]
@@ -12792,6 +13171,194 @@
         [
           2017,
           10,
+          28
+        ]
+      ],
+      "date-time": "2017-10-28T00:40:54Z",
+      "timestamp": 1509151254877
+    },
+    "reference-count": 44,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "URL": "http://www.elsevier.com/tdm/userlicense/1.0/",
+        "start": {
+          "date-parts": [
+            [
+              2016,
+              11,
+              1
+            ]
+          ],
+          "date-time": "2016-11-01T00:00:00Z",
+          "timestamp": 1477958400000
+        },
+        "delay-in-days": 0,
+        "content-version": "tdm"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/100000057",
+        "name": "National Institute of General Medical Sciences",
+        "doi-asserted-by": "publisher",
+        "award": []
+      },
+      {
+        "name": "Delaware-INBRE",
+        "award": [
+          "GM103446-12"
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2016,
+          11
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.ymeth.2016.06.001",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          6,
+          6
+        ]
+      ],
+      "date-time": "2016-06-06T20:03:34Z",
+      "timestamp": 1465243414000
+    },
+    "page": "97-105",
+    "update-policy": "http://dx.doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 4,
+    "title": "Prediction of residue-residue contact matrix for protein-protein interaction with Fisher score features and deep learning",
+    "prefix": "10.1016",
+    "volume": "110",
+    "author": [
+      {
+        "given": "Tianchuan",
+        "family": "Du",
+        "affiliation": []
+      },
+      {
+        "given": "Li",
+        "family": "Liao",
+        "affiliation": []
+      },
+      {
+        "given": "Cathy H.",
+        "family": "Wu",
+        "affiliation": []
+      },
+      {
+        "given": "Bilin",
+        "family": "Sun",
+        "affiliation": []
+      }
+    ],
+    "member": "78",
+    "container-title": "Methods",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://api.elsevier.com/content/article/PII:S1046202316301566?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://api.elsevier.com/content/article/PII:S1046202316301566?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          24
+        ]
+      ],
+      "date-time": "2017-06-24T15:50:28Z",
+      "timestamp": 1498319428000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          11
+        ]
+      ]
+    },
+    "references-count": 44,
+    "alternative-id": [
+      "S1046202316301566"
+    ],
+    "URL": "https://doi.org/10.1016/j.ymeth.2016.06.001",
+    "relation": {},
+    "subject": [
+      "General Biochemistry, Genetics and Molecular Biology",
+      "Molecular Biology"
+    ],
+    "container-title-short": "Methods",
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Prediction of residue-residue contact matrix for protein-protein interaction with Fisher score features and deep learning",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Methods",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "http://dx.doi.org/10.1016/j.ymeth.2016.06.001",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2016 Published by Elsevier Inc.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ],
+    "short_url": "https://doi.org/f9cjkk",
+    "id": "2Ftmbvt4"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          10,
           23
         ]
       ],
@@ -13791,6 +14358,196 @@
     "container-title-short": "J. Chem. Inf. Model.",
     "short_url": "https://doi.org/f9jhpn",
     "id": "Gue0c5Gb"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          12,
+          8
+        ]
+      ],
+      "date-time": "2017-12-08T12:10:49Z",
+      "timestamp": 1512735049608
+    },
+    "reference-count": 82,
+    "publisher": "American Chemical Society (ACS)",
+    "issue": "6",
+    "funder": [
+      {
+        "DOI": "10.13039/501100001809",
+        "name": "National Natural Science Foundation of China",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "02303301",
+          "61673020",
+          "61203290"
+        ]
+      },
+      {
+        "DOI": "10.13039/501100003995",
+        "name": "Natural Science Foundation of Anhui Province",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "1708085QF143"
+        ]
+      },
+      {
+        "name": "Higher Education Institutions of Anhui province",
+        "award": [
+          "KJ2016A016"
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          26
+        ]
+      ]
+    },
+    "DOI": "10.1021/acs.jcim.7b00028",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          5,
+          17
+        ]
+      ],
+      "date-time": "2017-05-17T18:13:56Z",
+      "timestamp": 1495044836000
+    },
+    "page": "1499-1510",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "DeepPPI: Boosting Prediction of Protein–Protein Interactions with Deep Neural Networks",
+    "prefix": "10.1021",
+    "volume": "57",
+    "author": [
+      {
+        "ORCID": "http://orcid.org/0000-0001-7913-7605",
+        "authenticated-orcid": true,
+        "given": "Xiuquan",
+        "family": "Du",
+        "affiliation": [
+          {
+            "name": "Key Laboratory\rof Intelligent Computing and Signal Processing of\rMinistry of Education, ‡School of Computer Science and Technology, and §Center of Information Support &amp; Assurance\rTechnology, Anhui University, Hefei, 230601 Anhui, China"
+          }
+        ]
+      },
+      {
+        "given": "Shiwei",
+        "family": "Sun",
+        "affiliation": [
+          {
+            "name": "Key Laboratory\rof Intelligent Computing and Signal Processing of\rMinistry of Education, ‡School of Computer Science and Technology, and §Center of Information Support &amp; Assurance\rTechnology, Anhui University, Hefei, 230601 Anhui, China"
+          }
+        ]
+      },
+      {
+        "given": "Changlin",
+        "family": "Hu",
+        "affiliation": [
+          {
+            "name": "Key Laboratory\rof Intelligent Computing and Signal Processing of\rMinistry of Education, ‡School of Computer Science and Technology, and §Center of Information Support &amp; Assurance\rTechnology, Anhui University, Hefei, 230601 Anhui, China"
+          }
+        ]
+      },
+      {
+        "given": "Yu",
+        "family": "Yao",
+        "affiliation": [
+          {
+            "name": "Key Laboratory\rof Intelligent Computing and Signal Processing of\rMinistry of Education, ‡School of Computer Science and Technology, and §Center of Information Support &amp; Assurance\rTechnology, Anhui University, Hefei, 230601 Anhui, China"
+          }
+        ]
+      },
+      {
+        "given": "Yuanting",
+        "family": "Yan",
+        "affiliation": [
+          {
+            "name": "Key Laboratory\rof Intelligent Computing and Signal Processing of\rMinistry of Education, ‡School of Computer Science and Technology, and §Center of Information Support &amp; Assurance\rTechnology, Anhui University, Hefei, 230601 Anhui, China"
+          }
+        ]
+      },
+      {
+        "given": "Yanping",
+        "family": "Zhang",
+        "affiliation": [
+          {
+            "name": "Key Laboratory\rof Intelligent Computing and Signal Processing of\rMinistry of Education, ‡School of Computer Science and Technology, and §Center of Information Support &amp; Assurance\rTechnology, Anhui University, Hefei, 230601 Anhui, China"
+          }
+        ]
+      }
+    ],
+    "member": "316",
+    "published-online": {
+      "date-parts": [
+        [
+          2017,
+          5,
+          26
+        ]
+      ]
+    },
+    "container-title": "Journal of Chemical Information and Modeling",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://pubs.acs.org/doi/pdf/10.1021/acs.jcim.7b00028",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          12,
+          8
+        ]
+      ],
+      "date-time": "2017-12-08T11:57:35Z",
+      "timestamp": 1512734255000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          5,
+          26
+        ]
+      ]
+    },
+    "references-count": 82,
+    "alternative-id": [
+      "10.1021/acs.jcim.7b00028"
+    ],
+    "URL": "https://doi.org/10.1021/acs.jcim.7b00028",
+    "relation": {},
+    "subject": [
+      "General Chemistry",
+      "General Chemical Engineering",
+      "Library and Information Sciences",
+      "Computer Science Applications"
+    ],
+    "container-title-short": "J. Chem. Inf. Model.",
+    "short_url": "https://doi.org/gbmn43",
+    "id": "rVgq22nD"
   },
   {
     "indexed": {
@@ -15864,6 +16621,140 @@
     "container-title-short": "Nature",
     "short_url": "https://doi.org/gcgk79",
     "id": "1FjSxrV1k"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          12,
+          20
+        ]
+      ],
+      "date-time": "2017-12-20T10:42:52Z",
+      "timestamp": 1513766572430
+    },
+    "reference-count": 101,
+    "publisher": "Wiley-Blackwell",
+    "license": [
+      {
+        "URL": "http://doi.wiley.com/10.1002/tdm_license_1.1",
+        "start": {
+          "date-parts": [
+            [
+              2015,
+              9,
+              1
+            ]
+          ],
+          "date-time": "2015-09-01T00:00:00Z",
+          "timestamp": 1441065600000
+        },
+        "delay-in-days": 3094,
+        "content-version": "tdm"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2007,
+          3,
+          13
+        ]
+      ]
+    },
+    "DOI": "10.1038/msb4100129",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2007,
+          3,
+          13
+        ]
+      ],
+      "date-time": "2007-03-13T09:58:33Z",
+      "timestamp": 1173779913000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 371,
+    "title": "Network-based prediction of protein function",
+    "prefix": "10.1002",
+    "volume": "3",
+    "author": [
+      {
+        "given": "Roded",
+        "family": "Sharan",
+        "affiliation": []
+      },
+      {
+        "given": "Igor",
+        "family": "Ulitsky",
+        "affiliation": []
+      },
+      {
+        "given": "Ron",
+        "family": "Shamir",
+        "affiliation": []
+      }
+    ],
+    "member": "311",
+    "container-title": "Molecular Systems Biology",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1038%2Fmsb4100129",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          17
+        ]
+      ],
+      "date-time": "2017-06-17T15:19:23Z",
+      "timestamp": 1497712763000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2007,
+          3,
+          13
+        ]
+      ]
+    },
+    "references-count": 101,
+    "alternative-id": [
+      "msb4100129"
+    ],
+    "URL": "https://doi.org/10.1038/msb4100129",
+    "relation": {
+      "cites": []
+    },
+    "subject": [
+      "General Biochemistry, Genetics and Molecular Biology",
+      "Computational Theory and Mathematics",
+      "General Immunology and Microbiology",
+      "Applied Mathematics",
+      "General Agricultural and Biological Sciences",
+      "Information Systems"
+    ],
+    "container-title-short": "Mol Syst Biol",
+    "short_url": "https://doi.org/cc936j",
+    "id": "8CiDACi3"
   },
   {
     "indexed": {
@@ -23279,6 +24170,299 @@
       "date-parts": [
         [
           2017,
+          11,
+          27
+        ]
+      ],
+      "date-time": "2017-11-27T22:40:42Z",
+      "timestamp": 1511822442528
+    },
+    "reference-count": 51,
+    "publisher": "Royal Society of Chemistry (RSC)",
+    "issue": "7",
+    "funder": [
+      {
+        "DOI": "10.13039/501100001809",
+        "name": "National Natural Science Foundation of China",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "61572506"
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "rsc.org"
+      ],
+      "crossmark-restriction": true
+    },
+    "abstract": "<p>Protein–protein interactions (PPIs) play an important role in most of the biological processes.</p>",
+    "DOI": "10.1039/c7mb00188f",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          12
+        ]
+      ],
+      "date-time": "2017-06-12T14:26:12Z",
+      "timestamp": 1497277572000
+    },
+    "page": "1336-1344",
+    "update-policy": "http://dx.doi.org/10.1039/rsc_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "Predicting protein–protein interactions from protein sequences by a stacked sparse autoencoder deep neural network",
+    "prefix": "10.1039",
+    "volume": "13",
+    "author": [
+      {
+        "given": "Yan-Bin",
+        "family": "Wang",
+        "affiliation": [
+          {
+            "name": "Xinjiang Technical Institutes of Physics and Chemistry"
+          },
+          {
+            "name": "Chinese Academy of Science"
+          },
+          {
+            "name": "Urumqi 830011"
+          },
+          {
+            "name": "China"
+          }
+        ]
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0003-0952-8162",
+        "authenticated-orcid": false,
+        "given": "Zhu-Hong",
+        "family": "You",
+        "affiliation": [
+          {
+            "name": "Xinjiang Technical Institutes of Physics and Chemistry"
+          },
+          {
+            "name": "Chinese Academy of Science"
+          },
+          {
+            "name": "Urumqi 830011"
+          },
+          {
+            "name": "China"
+          }
+        ]
+      },
+      {
+        "given": "Xiao",
+        "family": "Li",
+        "affiliation": [
+          {
+            "name": "Xinjiang Technical Institutes of Physics and Chemistry"
+          },
+          {
+            "name": "Chinese Academy of Science"
+          },
+          {
+            "name": "Urumqi 830011"
+          },
+          {
+            "name": "China"
+          }
+        ]
+      },
+      {
+        "given": "Tong-Hai",
+        "family": "Jiang",
+        "affiliation": [
+          {
+            "name": "Xinjiang Technical Institutes of Physics and Chemistry"
+          },
+          {
+            "name": "Chinese Academy of Science"
+          },
+          {
+            "name": "Urumqi 830011"
+          },
+          {
+            "name": "China"
+          }
+        ]
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0001-9028-5342",
+        "authenticated-orcid": false,
+        "given": "Xing",
+        "family": "Chen",
+        "affiliation": [
+          {
+            "name": "School of Information and Electrical Engineering"
+          },
+          {
+            "name": "China University of Mining and Technology"
+          },
+          {
+            "name": "Xuzhou"
+          },
+          {
+            "name": "China"
+          }
+        ]
+      },
+      {
+        "given": "Xi",
+        "family": "Zhou",
+        "affiliation": [
+          {
+            "name": "Xinjiang Technical Institutes of Physics and Chemistry"
+          },
+          {
+            "name": "Chinese Academy of Science"
+          },
+          {
+            "name": "Urumqi 830011"
+          },
+          {
+            "name": "China"
+          }
+        ]
+      },
+      {
+        "given": "Lei",
+        "family": "Wang",
+        "affiliation": [
+          {
+            "name": "Xinjiang Technical Institutes of Physics and Chemistry"
+          },
+          {
+            "name": "Chinese Academy of Science"
+          },
+          {
+            "name": "Urumqi 830011"
+          },
+          {
+            "name": "China"
+          }
+        ]
+      }
+    ],
+    "member": "292",
+    "published-online": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "container-title": "Molecular BioSystems",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://pubs.rsc.org/en/content/articlepdf/2017/MB/C7MB00188F",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          11,
+          27
+        ]
+      ],
+      "date-time": "2017-11-27T22:10:17Z",
+      "timestamp": 1511820617000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "references-count": 51,
+    "URL": "https://doi.org/10.1039/c7mb00188f",
+    "relation": {
+      "cites": []
+    },
+    "subject": [
+      "Biotechnology",
+      "Molecular Biology"
+    ],
+    "container-title-short": "Mol. BioSyst.",
+    "assertion": [
+      {
+        "value": "This document is Similarity Check deposited",
+        "name": "similarity_check",
+        "explanation": {
+          "URL": "https://www.crossref.org/services/similarity-check/"
+        },
+        "group": {
+          "name": "similarity_check",
+          "label": "SIMILARITY CHECK"
+        }
+      },
+      {
+        "value": "Zhu-Hong You (ORCID)",
+        "URL": "http://orcid.org/0000-0003-0952-8162",
+        "name": "identifier",
+        "group": {
+          "name": "author_identifiers",
+          "label": "IDENTIFIERS"
+        }
+      },
+      {
+        "value": "Xing Chen (ORCID)",
+        "URL": "http://orcid.org/0000-0001-9028-5342",
+        "name": "identifier",
+        "group": {
+          "name": "author_identifiers",
+          "label": "IDENTIFIERS"
+        }
+      },
+      {
+        "value": "The Royal Society of Chemistry has an exclusive publication licence for this journal",
+        "name": "copyright_licence",
+        "group": {
+          "name": "copyright_licensing",
+          "label": "COPYRIGHT AND LICENSING"
+        }
+      },
+      {
+        "value": "Single-blind",
+        "order": 2,
+        "name": "peer_review_method",
+        "group": {
+          "name": "peer_review_method",
+          "label": "PEER REVIEW METHOD"
+        }
+      },
+      {
+        "value": "Received 29 March 2017; Accepted 18 May 2017;  Advance Article published 12 June 2017;  Version of Record published 27 June 2017",
+        "order": 1,
+        "name": "history",
+        "group": {
+          "name": "publication_history",
+          "label": "PUBLICATION HISTORY"
+        }
+      }
+    ],
+    "short_url": "https://doi.org/gbg8zc",
+    "id": "T2lbgFlY"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
           10,
           31
         ]
@@ -26741,6 +27925,125 @@
         [
           2017,
           10,
+          27
+        ]
+      ],
+      "date-time": "2017-10-27T12:40:55Z",
+      "timestamp": 1509108055068
+    },
+    "reference-count": 25,
+    "publisher": "Oxford University Press (OUP)",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "DOI": "10.1093/bioinformatics/btv371",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2015,
+          7,
+          24
+        ]
+      ],
+      "date-time": "2015-07-24T00:53:42Z",
+      "timestamp": 1437699222000
+    },
+    "page": "btv371",
+    "source": "Crossref",
+    "is-referenced-by-count": 3,
+    "title": "High-order neural networks and kernel methods for peptide-MHC binding prediction",
+    "prefix": "10.1093",
+    "author": [
+      {
+        "given": "Pavel P.",
+        "family": "Kuksa",
+        "affiliation": []
+      },
+      {
+        "given": "Martin Renqiang",
+        "family": "Min",
+        "affiliation": []
+      },
+      {
+        "given": "Rishabh",
+        "family": "Dugar",
+        "affiliation": []
+      },
+      {
+        "given": "Mark",
+        "family": "Gerstein",
+        "affiliation": []
+      }
+    ],
+    "member": "286",
+    "published-online": {
+      "date-parts": [
+        [
+          2015,
+          7,
+          23
+        ]
+      ]
+    },
+    "container-title": "Bioinformatics",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://academic.oup.com/bioinformatics/article-pdf/31/22/3600/17122550/btv371.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          8,
+          22
+        ]
+      ],
+      "date-time": "2017-08-22T18:54:31Z",
+      "timestamp": 1503428071000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2015,
+          7,
+          23
+        ]
+      ]
+    },
+    "references-count": 25,
+    "alternative-id": [
+      "10.1093/bioinformatics/btv371"
+    ],
+    "URL": "https://doi.org/10.1093/bioinformatics/btv371",
+    "relation": {},
+    "subject": [
+      "Statistics and Probability",
+      "Computational Theory and Mathematics",
+      "Biochemistry",
+      "Molecular Biology",
+      "Computational Mathematics",
+      "Computer Science Applications"
+    ],
+    "container-title-short": "Bioinformatics",
+    "short_url": "https://doi.org/f7zdkw",
+    "id": "FRl0MTLd"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          10,
           14
         ]
       ],
@@ -26864,6 +28167,126 @@
     "container-title-short": "Bioinformatics",
     "short_url": "https://doi.org/f7zggf",
     "id": "kqjqFesT"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2018,
+          1,
+          3
+        ]
+      ],
+      "date-time": "2018-01-03T17:42:23Z",
+      "timestamp": 1515001343471
+    },
+    "reference-count": 31,
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "4",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2016,
+          2,
+          15
+        ]
+      ]
+    },
+    "DOI": "10.1093/bioinformatics/btv639",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2015,
+          10,
+          30
+        ]
+      ],
+      "date-time": "2015-10-30T02:48:35Z",
+      "timestamp": 1446173315000
+    },
+    "page": "511-517",
+    "source": "Crossref",
+    "is-referenced-by-count": 63,
+    "title": "Gapped sequence alignment using artificial neural networks: application to the MHC class I system",
+    "prefix": "10.1093",
+    "volume": "32",
+    "author": [
+      {
+        "given": "Massimo",
+        "family": "Andreatta",
+        "affiliation": []
+      },
+      {
+        "given": "Morten",
+        "family": "Nielsen",
+        "affiliation": []
+      }
+    ],
+    "member": "286",
+    "published-online": {
+      "date-parts": [
+        [
+          2015,
+          10,
+          29
+        ]
+      ]
+    },
+    "container-title": "Bioinformatics",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://academic.oup.com/bioinformatics/article-pdf/32/4/511/",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          8,
+          23
+        ]
+      ],
+      "date-time": "2017-08-23T23:52:46Z",
+      "timestamp": 1503532366000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2015,
+          10,
+          29
+        ]
+      ]
+    },
+    "references-count": 31,
+    "alternative-id": [
+      "10.1093/bioinformatics/btv639"
+    ],
+    "URL": "https://doi.org/10.1093/bioinformatics/btv639",
+    "relation": {},
+    "subject": [
+      "Statistics and Probability",
+      "Computational Theory and Mathematics",
+      "Biochemistry",
+      "Molecular Biology",
+      "Computational Mathematics",
+      "Computer Science Applications"
+    ],
+    "container-title-short": "Bioinformatics",
+    "short_url": "https://doi.org/f8dggc",
+    "id": "EKi3Bq3D"
   },
   {
     "indexed": {
@@ -27508,6 +28931,130 @@
     "container-title-short": "Bioinformatics",
     "short_url": "https://doi.org/f9nsq7",
     "id": "8NrcroGt"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          28
+        ]
+      ],
+      "date-time": "2017-10-28T05:26:13Z",
+      "timestamp": 1509168373864
+    },
+    "reference-count": 51,
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "17",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2017,
+          9,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1093/bioinformatics/btx264",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          4,
+          20
+        ]
+      ],
+      "date-time": "2017-04-20T07:52:13Z",
+      "timestamp": 1492674733000
+    },
+    "page": "2658-2665",
+    "source": "Crossref",
+    "is-referenced-by-count": 1,
+    "title": "HLA class I binding prediction via convolutional neural networks",
+    "prefix": "10.1093",
+    "volume": "33",
+    "author": [
+      {
+        "given": "Yeeleng S.",
+        "family": "Vang",
+        "affiliation": []
+      },
+      {
+        "given": "Xiaohui",
+        "family": "Xie",
+        "affiliation": []
+      }
+    ],
+    "member": "286",
+    "published-online": {
+      "date-parts": [
+        [
+          2017,
+          4,
+          21
+        ]
+      ]
+    },
+    "container-title": "Bioinformatics",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://academic.oup.com/bioinformatics/article-pdf/33/17/2658/19665607/btx264.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          13
+        ]
+      ],
+      "date-time": "2017-10-13T04:29:28Z",
+      "timestamp": 1507868968000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          4,
+          21
+        ]
+      ]
+    },
+    "references-count": 51,
+    "URL": "https://doi.org/10.1093/bioinformatics/btx264",
+    "relation": {
+      "has-preprint": [
+        {
+          "id-type": "doi",
+          "id": "10.1101/099358",
+          "asserted-by": "object"
+        }
+      ]
+    },
+    "subject": [
+      "Statistics and Probability",
+      "Computational Theory and Mathematics",
+      "Biochemistry",
+      "Molecular Biology",
+      "Computational Mathematics",
+      "Computer Science Applications"
+    ],
+    "short_url": "https://doi.org/f94p2v",
+    "id": "12i8Apfdc"
   },
   {
     "indexed": {
@@ -32615,6 +34162,138 @@
       "date-parts": [
         [
           2017,
+          10,
+          27
+        ]
+      ],
+      "date-time": "2017-10-27T17:49:02Z",
+      "timestamp": 1509126542842
+    },
+    "posted": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          23
+        ]
+      ]
+    },
+    "group-title": "Bioinformatics",
+    "reference-count": 0,
+    "publisher": "Cold Spring Harbor Laboratory",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "accepted": {
+      "date-parts": [
+        [
+          2017,
+          7,
+          27
+        ]
+      ]
+    },
+    "abstract": "<jats:p>Binding of peptides to Major Histocompatibility Complex (MHC) proteins is a critical step in immune response. Peptides bound to MHCs are recognized by CD8+ (MHC Class I) and CD4+ (MHC Class II) T-cells. Successful prediction of which peptides will bind to specific MHC alleles would benefit many cancer immunotherapy applications. Currently, supervised machine learning is the leading computational approach to predict peptide-MHC binding, and a number of methods, trained using results of binding assays, have been published. Many clinical researchers are dissatisfied with the sensitivity and specificity of currently available methods and the limited number of alleles for which they can be applied. We evaluated several recent methods to predict peptide-MHC Class I binding affinities and a new method of our own design (MHCnuggets). We used a high-quality benchmark set of 51 alleles, which has been applied previously. The neural network methods NetMHC, NetMHCpan, MHCflurry, and MHCnuggets achieved similar best-in-class prediction performance in our testing, and of these methods MHCnuggets was significantly faster. MHCnuggets is a gated recurrent neural network, and the only method to our knowledge which can handle peptides of any length, without artificial lengthening and shortening. Seventeen alleles were problematic for all tested methods. Prediction difficulties could be explained by deficiencies in the training and testing examples in the benchmark, suggesting that biological differences in allele-specific binding properties are not as important as previously claimed. Advances in accuracy and speed of computational methods to predict peptide-MHC affinity are urgently needed. These methods will be at the core of pipelines to identify patients who will benefit from immunotherapy, based on tumor-derived somatic mutations. Machine learning methods, such as MHCnuggets, which efficiently handle peptides of any length will be increasingly important for the challenges of predicting immunogenic response for MHC Class II alleles.</jats:p>",
+    "DOI": "10.1101/154757",
+    "type": "manuscript",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          24
+        ]
+      ],
+      "date-time": "2017-06-24T05:10:15Z",
+      "timestamp": 1498281015000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "Evaluation of machine learning methods to predict peptide binding to MHC Class I proteins",
+    "prefix": "10.1101",
+    "author": [
+      {
+        "given": "Rohit",
+        "family": "Bhattacharya",
+        "affiliation": []
+      },
+      {
+        "given": "Ashok",
+        "family": "Sivakumar",
+        "affiliation": []
+      },
+      {
+        "given": "Collin",
+        "family": "Tokheim",
+        "affiliation": []
+      },
+      {
+        "given": "Violeta Beleva",
+        "family": "Guthrie",
+        "affiliation": []
+      },
+      {
+        "given": "Valsamo",
+        "family": "Anagnostou",
+        "affiliation": []
+      },
+      {
+        "given": "Victor E.",
+        "family": "Velculescu",
+        "affiliation": []
+      },
+      {
+        "given": "Rachel",
+        "family": "Karchin",
+        "affiliation": []
+      }
+    ],
+    "member": "246",
+    "container-title": [],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://syndication.highwire.org/content/doi/10.1101/154757",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          7,
+          28
+        ]
+      ],
+      "date-time": "2017-07-28T05:10:19Z",
+      "timestamp": 1501218619000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          23
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "https://doi.org/10.1101/154757",
+    "relation": {},
+    "short_url": "https://doi.org/gcpzg5",
+    "id": "1aswoG70"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
           11,
           21
         ]
@@ -32735,6 +34414,134 @@
     "relation": {},
     "short_url": "https://doi.org/gcnzrn",
     "id": "fbIH12yd"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          27
+        ]
+      ],
+      "date-time": "2017-10-27T22:15:01Z",
+      "timestamp": 1509142501607
+    },
+    "posted": {
+      "date-parts": [
+        [
+          2017,
+          8,
+          9
+        ]
+      ]
+    },
+    "group-title": "Immunology",
+    "reference-count": 0,
+    "publisher": "Cold Spring Harbor Laboratory",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "accepted": {
+      "date-parts": [
+        [
+          2017,
+          8,
+          9
+        ]
+      ]
+    },
+    "abstract": "<jats:p>Machine learning prediction of the interaction between major histocompatibility complex I (MHC I) proteins and their small peptide ligands is important for vaccine design and other applications in adaptive immunity. We describe and benchmark a new open-source MHC I binding prediction package, MHCflurry. The software is a collection of allele-specific binding predictors incorporating a novel neural network architecture and adhering to software development best practices. MHCflurry outperformed the standard predictors NetMHC 4.0 and NetMHCpan 3.0 on a benchmark of mass spec-identified MHC ligands and showed competitive accuracy on a benchmark of affinity measurements. The accuracy improvement was due to substantially better prediction of non-9-mer peptide ligands, which offset a narrowly lower accuracy on 9-mers. MHCflurry was on average 8.6X faster than NetMHC and 44X faster than NetMHCpan; performance is further increased when a graphics processing unit (GPU) is available. MHCflurry is freely available to use, retrain, or extend, includes Python library and command line interfaces, and may be installed using standard package managers.</jats:p>",
+    "DOI": "10.1101/174243",
+    "type": "manuscript",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          8,
+          10
+        ]
+      ],
+      "date-time": "2017-08-10T05:10:20Z",
+      "timestamp": 1502341820000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "MHCflurry: open-source class I MHC binding affinity prediction",
+    "prefix": "10.1101",
+    "author": [
+      {
+        "ORCID": "http://orcid.org/0000-0002-9949-069X",
+        "authenticated-orcid": false,
+        "given": "Timothy",
+        "family": "O'Donnell",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0003-2839-2870",
+        "authenticated-orcid": false,
+        "given": "Alex",
+        "family": "Rubinsteyn",
+        "affiliation": []
+      },
+      {
+        "given": "Maria",
+        "family": "Bonsack",
+        "affiliation": []
+      },
+      {
+        "given": "Angelika",
+        "family": "Riemer",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0001-6596-8563",
+        "authenticated-orcid": false,
+        "given": "Jeffrey",
+        "family": "Hammerbacher",
+        "affiliation": []
+      }
+    ],
+    "member": "246",
+    "container-title": [],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://syndication.highwire.org/content/doi/10.1101/174243",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          8,
+          10
+        ]
+      ],
+      "date-time": "2017-08-10T05:10:32Z",
+      "timestamp": 1502341832000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          8,
+          9
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "https://doi.org/10.1101/174243",
+    "relation": {},
+    "short_url": "https://doi.org/gcpzg6",
+    "id": "9ZNxZTxD"
   },
   {
     "indexed": {
@@ -32958,6 +34765,120 @@
     "relation": {},
     "short_url": "https://doi.org/gcnzb8",
     "id": "yJxCo4h1"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          11,
+          23
+        ]
+      ],
+      "date-time": "2017-11-23T06:40:16Z",
+      "timestamp": 1511419216276
+    },
+    "posted": {
+      "date-parts": [
+        [
+          2017,
+          11,
+          22
+        ]
+      ]
+    },
+    "group-title": "Systems Biology",
+    "reference-count": 0,
+    "publisher": "Cold Spring Harbor Laboratory",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "accepted": {
+      "date-parts": [
+        [
+          2017,
+          11,
+          22
+        ]
+      ]
+    },
+    "abstract": "<jats:p>\n          The prevalence of high-throughput experimental methods has resulted in an abundance of large-scale molecular and functional interaction networks. The connectivity of these networks provide a rich source of information for inferring functional annotations for genes and proteins. An important challenge has been to develop methods for combining these heterogeneous networks to extract useful protein feature representations for function prediction. Most of the existing approaches for network integration use shallow models that cannot capture complex and highly-nonlinear network structures. Thus, we propose\n          <jats:italic>deepNF</jats:italic>\n          , a network fusion method based on\n          <jats:italic>Multimodal Deep Autoencoders</jats:italic>\n          to extract high-level features of proteins from multiple heterogeneous interaction networks. We apply this method to combine STRING networks to construct a common low-dimensional representation containing high-level protein features. We use separate layers for different network types in the early stages of the multimodal autoencoder, later connecting all the layers into a single bottleneck layer from which we extract features to predict protein function. We compare the cross-validation and temporal holdout predictive performance of our method with state-of-the-art methods, including the recently proposed method\n          <jats:italic>Mashup</jats:italic>\n          . Our results show that our method outperforms previous methods for both human and yeast STRING networks. We also show substantial improvement in the  performance of our method in predicting GO terms of varying type and specificity.\n        </jats:p>",
+    "DOI": "10.1101/223339",
+    "type": "manuscript",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          11,
+          23
+        ]
+      ],
+      "date-time": "2017-11-23T06:10:25Z",
+      "timestamp": 1511417425000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "deepNF: Deep network fusion for protein function prediction",
+    "prefix": "10.1101",
+    "author": [
+      {
+        "ORCID": "http://orcid.org/0000-0002-5165-0973",
+        "authenticated-orcid": false,
+        "given": "Vladimir",
+        "family": "Gligorijević",
+        "affiliation": []
+      },
+      {
+        "given": "Meet",
+        "family": "Barot",
+        "affiliation": []
+      },
+      {
+        "given": "Richard",
+        "family": "Bonneau",
+        "affiliation": []
+      }
+    ],
+    "member": "246",
+    "container-title": [],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://syndication.highwire.org/content/doi/10.1101/223339",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          11,
+          23
+        ]
+      ],
+      "date-time": "2017-11-23T06:11:43Z",
+      "timestamp": 1511417503000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          11,
+          22
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "https://doi.org/10.1101/223339",
+    "relation": {},
+    "short_url": "https://doi.org/gcpzg7",
+    "id": "dkPu3iv1"
   },
   {
     "indexed": {
@@ -35834,6 +37755,158 @@
     "container-title-short": "IEEE Trans. Neural Netw. Learning Syst.",
     "short_url": "https://doi.org/f66w3q",
     "id": "O9D66oYa"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          12,
+          28
+        ]
+      ],
+      "date-time": "2017-12-28T23:42:40Z",
+      "timestamp": 1514504560214
+    },
+    "reference-count": 32,
+    "publisher": "Wiley-Blackwell",
+    "issue": "5",
+    "license": [
+      {
+        "URL": "http://doi.wiley.com/10.1002/tdm_license_1.1",
+        "start": {
+          "date-parts": [
+            [
+              2015,
+              9,
+              1
+            ]
+          ],
+          "date-time": "2015-09-01T00:00:00Z",
+          "timestamp": 1441065600000
+        },
+        "delay-in-days": 4506,
+        "content-version": "tdm"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2003,
+          5
+        ]
+      ]
+    },
+    "DOI": "10.1110/ps.0239403",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2003,
+          4,
+          25
+        ]
+      ],
+      "date-time": "2003-04-25T20:48:52Z",
+      "timestamp": 1051303732000
+    },
+    "page": "1007-1017",
+    "source": "Crossref",
+    "is-referenced-by-count": 298,
+    "title": "Reliable prediction of T-cell epitopes using neural networks with novel sequence representations",
+    "prefix": "10.1002",
+    "volume": "12",
+    "author": [
+      {
+        "given": "Morten",
+        "family": "Nielsen",
+        "affiliation": []
+      },
+      {
+        "given": "Claus",
+        "family": "Lundegaard",
+        "affiliation": []
+      },
+      {
+        "given": "Peder",
+        "family": "Worning",
+        "affiliation": []
+      },
+      {
+        "given": "Sanne Lise",
+        "family": "Lauemøller",
+        "affiliation": []
+      },
+      {
+        "given": "Kasper",
+        "family": "Lamberth",
+        "affiliation": []
+      },
+      {
+        "given": "Søren",
+        "family": "Buus",
+        "affiliation": []
+      },
+      {
+        "given": "Søren",
+        "family": "Brunak",
+        "affiliation": []
+      },
+      {
+        "given": "Ole",
+        "family": "Lund",
+        "affiliation": []
+      }
+    ],
+    "member": "311",
+    "container-title": "Protein Science",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1110%2Fps.0239403",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          15
+        ]
+      ],
+      "date-time": "2017-06-15T21:16:22Z",
+      "timestamp": 1497561382000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2003,
+          5
+        ]
+      ]
+    },
+    "references-count": 32,
+    "URL": "https://doi.org/10.1110/ps.0239403",
+    "relation": {
+      "cites": []
+    },
+    "subject": [
+      "Biochemistry",
+      "Molecular Biology"
+    ],
+    "container-title-short": "Protein Sci.",
+    "short_url": "https://doi.org/bfzjwt",
+    "id": "ul5VuLBZ"
   },
   {
     "indexed": {
@@ -41502,6 +43575,108 @@
       "date-parts": [
         [
           2017,
+          10,
+          27
+        ]
+      ],
+      "date-time": "2017-10-27T20:16:59Z",
+      "timestamp": 1509135419638
+    },
+    "reference-count": 69,
+    "publisher": "MIT Press - Journals",
+    "issue": "2",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2017,
+          2
+        ]
+      ]
+    },
+    "DOI": "10.1162/neco_a_00924",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          12,
+          28
+        ]
+      ],
+      "date-time": "2016-12-28T22:26:01Z",
+      "timestamp": 1482963961000
+    },
+    "page": "287-312",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "Learning the Structural Vocabulary of a Network",
+    "prefix": "10.1162",
+    "volume": "29",
+    "author": [
+      {
+        "given": "Saket",
+        "family": "Navlakha",
+        "affiliation": []
+      }
+    ],
+    "member": "281",
+    "container-title": "Neural Computation",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://www.mitpressjournals.org/doi/pdf/10.1162/NECO_a_00924",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          19
+        ]
+      ],
+      "date-time": "2017-01-19T19:20:42Z",
+      "timestamp": 1484853642000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          2
+        ]
+      ]
+    },
+    "references-count": 69,
+    "alternative-id": [
+      "10.1162/NECO_a_00924"
+    ],
+    "URL": "https://doi.org/10.1162/neco_a_00924",
+    "relation": {
+      "cites": []
+    },
+    "subject": [
+      "Arts and Humanities (miscellaneous)",
+      "Cognitive Neuroscience"
+    ],
+    "container-title-short": "Neural Computation",
+    "short_url": "https://doi.org/f9vx8v",
+    "id": "WMwUw1o4"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
           9,
           23
         ]
@@ -43369,6 +45544,160 @@
       "date-parts": [
         [
           2017,
+          10,
+          27
+        ]
+      ],
+      "date-time": "2017-10-27T13:57:21Z",
+      "timestamp": 1509112641964
+    },
+    "reference-count": 41,
+    "publisher": "Springer Nature",
+    "issue": "1",
+    "funder": [
+      {
+        "DOI": "10.13039/501100002855",
+        "name": "Ministry of Science and Technology of the People's Republic of China",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "2016YFA0502303"
+        ]
+      },
+      {
+        "DOI": "10.13039/501100001809",
+        "name": "National Natural Science Foundation of China",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "21673010",
+          "81273436"
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2017,
+          12
+        ]
+      ]
+    },
+    "DOI": "10.1186/s12859-017-1700-2",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          5,
+          25
+        ]
+      ],
+      "date-time": "2017-05-25T13:45:31Z",
+      "timestamp": 1495719931000
+    },
+    "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "Sequence-based prediction of protein protein interaction using a deep-learning algorithm",
+    "prefix": "10.1186",
+    "volume": "18",
+    "author": [
+      {
+        "given": "Tanlin",
+        "family": "Sun",
+        "affiliation": []
+      },
+      {
+        "given": "Bo",
+        "family": "Zhou",
+        "affiliation": []
+      },
+      {
+        "given": "Luhua",
+        "family": "Lai",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-8482-1185",
+        "authenticated-orcid": false,
+        "given": "Jianfeng",
+        "family": "Pei",
+        "affiliation": []
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2017,
+          5,
+          25
+        ]
+      ]
+    },
+    "container-title": "BMC Bioinformatics",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://link.springer.com/content/pdf/10.1186/s12859-017-1700-2.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          5,
+          25
+        ]
+      ],
+      "date-time": "2017-05-25T13:45:47Z",
+      "timestamp": 1495719947000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          5,
+          25
+        ]
+      ]
+    },
+    "references-count": 41,
+    "alternative-id": [
+      "1700"
+    ],
+    "URL": "https://doi.org/10.1186/s12859-017-1700-2",
+    "relation": {
+      "cites": []
+    },
+    "subject": [
+      "Biochemistry",
+      "Applied Mathematics",
+      "Molecular Biology",
+      "Structural Biology",
+      "Computer Science Applications"
+    ],
+    "container-title-short": "BMC Bioinformatics",
+    "article-number": "277",
+    "short_url": "https://doi.org/gcgnzs",
+    "id": "3nZqSy6z"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
           12,
           2
         ]
@@ -43799,6 +46128,146 @@
     "article-number": "67",
     "short_url": "https://doi.org/gcgmcc",
     "id": "19EJTHByG"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          12,
+          21
+        ]
+      ],
+      "date-time": "2017-12-21T00:02:32Z",
+      "timestamp": 1513814552024
+    },
+    "reference-count": 31,
+    "publisher": "Springer Nature",
+    "issue": "1",
+    "funder": [
+      {
+        "DOI": "10.13039/100000060",
+        "name": "National Institute of Allergy and Infectious Diseases",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "HHSN272201200010C"
+        ]
+      },
+      {
+        "DOI": "10.13039/501100006668",
+        "name": "Fondo para la Investigación Científica y Tecnológica",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "PICT-2012-0115"
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2016,
+          12
+        ]
+      ]
+    },
+    "DOI": "10.1186/s13073-016-0288-x",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          3,
+          30
+        ]
+      ],
+      "date-time": "2016-03-30T11:00:41Z",
+      "timestamp": 1459335641000
+    },
+    "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 48,
+    "title": "NetMHCpan-3.0; improved prediction of binding to MHC class I molecules integrating information from multiple receptor and peptide length datasets",
+    "prefix": "10.1186",
+    "volume": "8",
+    "author": [
+      {
+        "given": "Morten",
+        "family": "Nielsen",
+        "affiliation": []
+      },
+      {
+        "given": "Massimo",
+        "family": "Andreatta",
+        "affiliation": []
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2016,
+          3,
+          30
+        ]
+      ]
+    },
+    "container-title": "Genome Medicine",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://link.springer.com/content/pdf/10.1186/s13073-016-0288-x",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          24
+        ]
+      ],
+      "date-time": "2017-06-24T09:35:00Z",
+      "timestamp": 1498296900000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          3,
+          30
+        ]
+      ]
+    },
+    "references-count": 31,
+    "alternative-id": [
+      "288"
+    ],
+    "URL": "https://doi.org/10.1186/s13073-016-0288-x",
+    "relation": {
+      "cites": []
+    },
+    "subject": [
+      "Genetics(clinical)",
+      "Molecular Medicine",
+      "Genetics",
+      "Molecular Biology"
+    ],
+    "container-title-short": "Genome Med",
+    "article-number": "33",
+    "short_url": "https://doi.org/gcgnzt",
+    "id": "KJjibUtO"
   },
   {
     "indexed": {
@@ -45048,6 +47517,145 @@
     "container-title-short": "PLoS Biol",
     "short_url": "https://doi.org/bdzf",
     "id": "13bxiY1vo"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          12,
+          24
+        ]
+      ],
+      "date-time": "2017-12-24T17:42:18Z",
+      "timestamp": 1514137338269
+    },
+    "reference-count": 34,
+    "publisher": "Public Library of Science (PLoS)",
+    "issue": "6",
+    "license": [
+      {
+        "URL": "http://creativecommons.org/licenses/by/4.0/",
+        "start": {
+          "date-parts": [
+            [
+              2010,
+              6,
+              24
+            ]
+          ],
+          "date-time": "2010-06-24T00:00:00Z",
+          "timestamp": 1277337600000
+        },
+        "delay-in-days": 0,
+        "content-version": "vor"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "www.ploscompbiol.org"
+      ],
+      "crossmark-restriction": false
+    },
+    "DOI": "10.1371/journal.pcbi.1000807",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2010,
+          6,
+          24
+        ]
+      ],
+      "date-time": "2010-06-24T20:18:52Z",
+      "timestamp": 1277410732000
+    },
+    "page": "e1000807",
+    "update-policy": "http://dx.doi.org/10.1371/journal.pcbi.corrections_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 140,
+    "title": "Protein–Protein Interactions Essentials: Key Concepts to Building and Analyzing Interactome Networks",
+    "prefix": "10.1371",
+    "volume": "6",
+    "author": [
+      {
+        "given": "Javier",
+        "family": "De Las Rivas",
+        "affiliation": []
+      },
+      {
+        "given": "Celia",
+        "family": "Fontanillo",
+        "affiliation": []
+      }
+    ],
+    "member": "340",
+    "published-online": {
+      "date-parts": [
+        [
+          2010,
+          6,
+          24
+        ]
+      ]
+    },
+    "container-title": "PLoS Computational Biology",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://dx.plos.org/10.1371/journal.pcbi.1000807",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          19
+        ]
+      ],
+      "date-time": "2017-06-19T09:56:28Z",
+      "timestamp": 1497866188000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "editor": [
+      {
+        "given": "Fran",
+        "family": "Lewitter",
+        "affiliation": []
+      }
+    ],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2010,
+          6,
+          24
+        ]
+      ]
+    },
+    "references-count": 34,
+    "URL": "https://doi.org/10.1371/journal.pcbi.1000807",
+    "relation": {
+      "cites": []
+    },
+    "subject": [
+      "Ecology",
+      "Modelling and Simulation",
+      "Computational Theory and Mathematics",
+      "Genetics",
+      "Ecology, Evolution, Behavior and Systematics",
+      "Molecular Biology",
+      "Cellular and Molecular Neuroscience"
+    ],
+    "container-title-short": "PLoS Comput Biol",
+    "short_url": "https://doi.org/d8wc48",
+    "id": "imRWjslx"
   },
   {
     "indexed": {

@@ -27,7 +27,7 @@ author-meta:
 - Marwin H.S. Segler
 - Anthony Gitter
 - Casey S. Greene
-date-meta: '2017-12-27'
+date-meta: '2018-01-04'
 keywords:
 - deep learning
 - review
@@ -48,8 +48,8 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@1543f3b](https://github.com/greenelab/deep-review/tree/1543f3bae3a569d3a67ad202de82f44888db920c)
-on December 27, 2017.
+from [greenelab/deep-review@75f0dc2](https://github.com/greenelab/deep-review/tree/75f0dc2c14508939ad55c1e0fc75e05387075e49)
+on January  4, 2018.
 </em></small>
 
 ## Authors
@@ -1133,6 +1133,76 @@ Downstream of particle picking, deep learning is being applied to other aspects 
 Statistical manifold learning has been implemented in the software package ROME to classify selected particles and elucidate the different conformations of the subject molecule necessary for accurate 3D structures [@RRR3YEJV].
 These recent tools highlight the general applicability of deep learning approaches for image processing to increase the throughput of high-resolution cryo-EM.
 
+### Protein-protein interactions
+
+Protein-protein interactions (PPIs) are highly specific and non-accidental physical contacts between proteins, which occur for purposes other than generic protein production or degradation [@imRWjslx].
+Abundant interaction data have been generated in-part thanks to advances in high-throughput screening methods, such as yeast two-hybrid and affinity-purification with mass spectrometry.
+However, because many PPIs are transient or dependent on biological context, high-throughput methods can fail to capture a number of interactions.
+The imperfections and costs associated with many experimental PPI screening methods have motivated an interest in high-throughput computational prediction.
+
+Many machine learning approaches to PPI have focused on text mining the literature [@xEQI6dXW; @TNHJioqT], but these approaches can fail to capture context-specific interactions, motivating *de novo* PPI prediction.
+Early *de novo* prediction approaches used a variety of statistical and machine learning tools on structural and sequential data, sometimes with reference to the existing body of protein structure knowledge.
+In the context of PPIs — as in other domains — deep learning shows promise both for exceeding current predictive performance and for circumventing limitations from which other approaches suffer.
+
+One of the key difficulties in applying deep learning techniques to binding prediction is the task of representing peptide and protein sequences in a meaningful way.
+DeepPPI [@rVgq22nD] made PPI predictions from a set of sequence and composition protein descriptors using a two-stage deep neural network that trained two subnetworks for each protein and combined them into a single network.
+Sun et al. [@3nZqSy6z] applied autocovariances, a coding scheme that returns uniform-size vectors describing the covariance between physicochemical properties of the protein sequence at various positions.
+Wang et al. [@T2lbgFlY] used deep learning as an intermediate step in PPI prediction.
+They examined 70 amino acid protein sequences from each of which they extracted 1260 features.
+A stacked sparse autoencoder with two hidden layers was then used to reduce feature dimensions and noisiness before a novel type of classification vector machine made PPI predictions. 
+
+Beyond predicting whether or not two proteins interact, Du et al. [@2Ftmbvt4] employed a deep learning approach to predict the residue contacts between two interacting proteins.
+Using features that describe how similar a protein's residue is relative to similar proteins at the same position, the authors extracted uniform-length features for each residue in the protein sequence.
+A stacked autoencoder took two such vectors as input for the prediction of contact between two residues.
+The authors evaluated the performance of this method with several classifiers and showed that a deep neural network classifier paired with the stacked autoencoder significantly exceeded classical machine learning accuracy.
+
+Because many studies used predefined higher-level features, one of the benefits of deep learning — automatic feature extraction — is not fully leveraged.
+More work is needed to determine the best ways to represent raw protein sequence information so that the full benefits of deep learning as an automatic feature extractor can be realized.
+
+### MHC-peptide binding
+
+An important type of PPI involves the immune system's ability to recognize the body's own cells.
+The major histocompatibility complex (MHC) plays a key role in regulating this process by binding antigens and displaying them on the cell surface to be recognized by T cells.
+Due to its importance in immunity and immune response, peptide-MHC binding prediction is a useful problem in computational biology, and one that must account for the allelic diversity in MHC-encoding gene region.
+
+Shallow, feed-forward neural networks are competitive methods and have made progress toward pan-allele and pan-length peptide representations.
+Sequence alignment techniques are useful for representing variable-length peptides as uniform-length features [@ul5VuLBZ; @EKi3Bq3D].
+For pan-allelic prediction, NetMHCpan [@QxZTL7xX; @KJjibUtO] used a pseudo-sequence representation of the MHC class I molecule, which included only polymorphic peptide contact residues.
+The sequences of the peptide and MHC were then represented using both sparse vector encoding and Blosum encoding, in which amino acids are encoded by matrix score vectors.
+A comparable method to the NetMHC tools is MHCflurry [@9ZNxZTxD], a method which shows superior performance on peptides of lengths other than nine.
+MHCflurry adds placeholder amino acids to transform variable-length peptides to length 15 peptides.
+In training the MHCflurry feed-forward neural network [@1Hk3NTSn2], the authors imputed missing MHC-peptide binding affinities using a Gibbs sampling method, showing that imputation improves performance for data-sets with roughly 100 or fewer training examples.
+MHCflurry's imputation method increases its performance on poorly characterized alleles, making it competitive with NetMHCpan for this task.
+Kuksa et al. [@FRl0MTLd] developed a shallow, higher-order neural network (HONN) comprised of both mean and covariance hidden units to capture some of the higher-order dependencies between amino acid locations.
+Pretraining this HONN with a semi-restricted Boltzmann machine, the authors found that the performance of the HONN exceeded that of a simple DNN, as well as that of NetMHC.
+
+Deep learning's unique flexibility was recently leveraged by Bhattacharya et al. [@1aswoG70], who used a gated RNN method called MHCnuggets to overcome the difficulty of multiple length peptides.
+Under this framework, they used smoothed sparse encoding to represent amino acids individually.
+Because MHCnuggets had to be trained for every MHC allele, performance was far better for alleles with abundant, balanced training data.
+Vang et al. [@12i8Apfdc] developed HLA-CNN, a method which maps amino acids onto a 15-dimensional vector space based on their context relation to other amino acids before making predictions with a CNN.
+In a comparison of several current methods, Bhattacharya et al. found that the top methods — NetMHC, NetMHCpan, MHCflurry, and MHCnuggets — showed comparable performance, but large differences in speed.
+Convolutional neural networks (in this case, HLA-CNN) showed comparatively poor performance, while shallow and recurrent neural networks performed the best.
+They found that MHCnuggets — the recurrent neural network — was by far the fastest training among the top performing methods.
+
+### PPI networks and graph analysis
+
+Because interacting proteins are more likely to share a similar function, the connectivity of a PPI network itself can be a valuable information source for the prediction of protein function [@8CiDACi3].
+To incorporate higher-order network information, it is necessary to find a lower-level embedding of network structure that preserves this higher-order structure.
+Rather than use hand-crafted network features, deep learning shows promise for the automatic discovery of predictive features within networks.
+For example, Navlakha [@WMwUw1o4] showed that a deep autoencoder was able to compress a graph to 40% of its original size, while being able to reconstruct 93% of the original graph's edges, improving upon standard dimension reduction methods.
+To achieve this, each graph was represented as an adjacency matrix with rows sorted in descending node degree order, then flattened into a vector and given as input to the autoencoder.
+While the activity of some hidden layers correlated with several popular hand-crafted network features such as k-core size and graph density, this work showed that deep learning can effectively reduce graph dimensionality while retaining much of its structural information.
+
+An important challenge in PPI network prediction is the task of combining different networks and types of networks.
+Gligorijevic et al. [@dkPu3iv1] developed a multimodal deep autoencoder, deepNF, to find a feature representation common among several different PPI networks.
+This common lower-level representation allows for the combination of various PPI data sources towards a single predictive task.
+An SVM classifier trained on the compressed features from the middle layer of the autoencoder outperformed previous methods in predicting protein function.
+
+Hamilton et al. addressed the issue of large, heterogeneous, and changing networks with an inductive approach called GraphSAGE [@MwUPw4CD].
+By finding node embeddings through learned aggregator functions that describe the node and its neighbors in the network, the GraphSAGE approach allows for the generalization of the model to new graphs.
+In a classification task for the prediction of protein function, Chen and Zhu [@FMsqNIQ4] optimized this approach and enhanced the graph convolutional network with a preprocessing step that uses an approximation to the dropout operation.
+This preprocessing effectively reduces the number of graph convolutional layers and it significantly improves both training time and prediction accuracy.
+
 ### Morphological phenotypes
 
 A field poised for dramatic revolution by deep learning is bioimage analysis.
@@ -1389,7 +1459,7 @@ A molecular graph, where atoms are labeled nodes and bonds are labeled edges, is
 Traditional machine learning approaches relied on preprocessing the graph into a feature vector, such as a fixed-width bit vector fingerprint [@QnZ7V9Rd].
 The same fingerprints have been used by some drug-target interaction methods discussed above [@oTF8O79C].
 An overly simplistic but approximately correct view of chemical fingerprints is that each bit represents the presence or absence of a particular chemical substructure in the molecular graph.
-Modern neural networks can operate directly on the molecular graph as input.
+Modern neural networks, such as those discussed previously for PPI networks, can operate directly on the molecular graph as input.
 Duvenaud et al. [@Oe573FaL] generalized standard circular fingerprints by substituting discrete operations in the fingerprinting algorithm with operations in a neural network, producing a real-valued feature vector instead of a bit vector.
 Other approaches offer trainable networks that can learn chemical feature representations that are optimized for a particular prediction task.
 Lusci et al. [@17Wih4Hd5] applied recursive neural networks for directed acyclic graphs to undirected molecular graphs by creating an ensemble of directed graphs in which one atom is selected as the root node.
@@ -1933,7 +2003,7 @@ To facilitate citation, we [defined](https://github.com/greenelab/deep-review/bl
 We supported citations to the following identifier types (in order of preference): DOIs, PubMed IDs, arXiv IDs, and URLs.
 References were automatically generated from citation metadata by querying APIs to generate [Citation Style Language](http://citationstyles.org/) (CSL) JSON items for each reference.
 [Pandoc](http://pandoc.org/) and [pandoc-citeproc](https://github.com/jgm/pandoc-citeproc) converted the markdown to HTML and PDF, while rendering the formatted citations and references.
-In total, referenced works consisted of 321 DOIs, 6 PubMed records, 118 arXiv manuscripts, and 44 URLs (webpages as well as manuscripts lacking standardized identifiers).
+In total, referenced works consisted of 338 DOIs, 6 PubMed records, 121 arXiv manuscripts, and 44 URLs (webpages as well as manuscripts lacking standardized identifiers).
 
 We implemented continuous analysis so the manuscript was automatically regenerated whenever the source changed [@Qh7xTLwz].
 We configured Travis CI -- a continuous integration service -- to fetch new citation metadata and rebuild the manuscript for every commit.

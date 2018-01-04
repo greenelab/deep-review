@@ -117,10 +117,13 @@ string	citation	standard_citation	citation_id
 @arxiv:1705.02315	arxiv:1705.02315	arxiv:1705.02315	PGi9g7yV
 @arxiv:1705.03261	arxiv:1705.03261	arxiv:1705.03261	M6JCKCLX
 @arxiv:1705.09516	arxiv:1705.09516	arxiv:1705.09516	z8hmfrmY
+@arxiv:1706.01556v2	arxiv:1706.01556v2	arxiv:1706.01556v2	TNHJioqT
+@arxiv:1706.02216v2	arxiv:1706.02216v2	arxiv:1706.02216v2	MwUPw4CD
 @arxiv:1706.02633v1	arxiv:1706.02633v1	arxiv:1706.02633v1	1988BRJe3
 @tag:Singh2017_attentivechrome	arxiv:1708.00339	arxiv:1708.00339	16MNknNBL
 @tag:Osokin2017_biogan	arxiv:1708.04692	arxiv:1708.04692	zBCcUQOM
 @arxiv:1709.02082	arxiv:1709.02082	arxiv:1709.02082	RHqbJgpe
+@arxiv:1710.10568v1	arxiv:1710.10568v1	arxiv:1710.10568v1	FMsqNIQ4
 @tag:WayGreene2017_eval	arxiv:1711.04828	arxiv:1711.04828	rMz1OFc6
 @doi:10.1001/jama.2016.17216	doi:10.1001/jama.2016.17216	doi:10.1001/jama.2016.17216	1mJW6umJ
 @tag:Gulshan2016_dt	doi:10.1001/jama.2016.17216	doi:10.1001/jama.2016.17216	1mJW6umJ
@@ -145,6 +148,7 @@ string	citation	standard_citation	citation_id
 @doi:10.1007/978-3-642-40763-5_51	doi:10.1007/978-3-642-40763-5_51	doi:10.1007/978-3-642-40763-5_51	koEdZRcY
 @tag:Ciresan2013_mitosis	doi:10.1007/978-3-642-40763-5_51	doi:10.1007/978-3-642-40763-5_51	koEdZRcY
 @doi:10.1007/BF02478259	doi:10.1007/BF02478259	doi:10.1007/bf02478259	1HVDhhwpK
+@doi:10.1007/s00251-008-0341-z	doi:10.1007/s00251-008-0341-z	doi:10.1007/s00251-008-0341-z	QxZTL7xX
 @doi:10.1007/s10278-016-9914-9	doi:10.1007/s10278-016-9914-9	doi:10.1007/s10278-016-9914-9	x6HXFAS4
 @tag:Rajkomar2017_radiographs	doi:10.1007/s10278-016-9914-9	doi:10.1007/s10278-016-9914-9	x6HXFAS4
 @tag:Kearnes2016_graph_conv	doi:10.1007/s10822-016-9938-8	doi:10.1007/s10822-016-9938-8	145os4Y6t
@@ -160,6 +164,7 @@ string	citation	standard_citation	citation_id
 @doi:10.1016/j.drudis.2006.06.016	doi:10.1016/j.drudis.2006.06.016	doi:10.1016/j.drudis.2006.06.016	1D6emOV6q
 @doi:10.1016/j.ijmedinf.2016.09.014	doi:10.1016/j.ijmedinf.2016.09.014	doi:10.1016/j.ijmedinf.2016.09.014	1Ar4f4vfR
 @tag:Ithapu2015_efficient	doi:10.1016/j.jalz.2015.01.010	doi:10.1016/j.jalz.2015.01.010	eehGXQlY
+@doi:10.1016/j.jbi.2007.11.008	doi:10.1016/j.jbi.2007.11.008	doi:10.1016/j.jbi.2007.11.008	xEQI6dXW
 @doi:10.1016/j.jbi.2014.03.016	doi:10.1016/j.jbi.2014.03.016	doi:10.1016/j.jbi.2014.03.016	1C97CTU9S
 @doi:10.1016/j.jbi.2014.10.006	doi:10.1016/j.jbi.2014.10.006	doi:10.1016/j.jbi.2014.10.006	13filvWwr
 @doi:10.1016/j.jbi.2016.10.007	doi:10.1016/j.jbi.2016.10.007	doi:10.1016/j.jbi.2016.10.007	5x3uMSKi
@@ -175,6 +180,7 @@ string	citation	standard_citation	citation_id
 @tag:Schmidhuber2014_dnn_overview	doi:10.1016/j.neunet.2014.09.003	doi:10.1016/j.neunet.2014.09.003	BQS8ClV0
 @tag:Pratt2016_dr	doi:10.1016/j.procs.2016.07.014	doi:10.1016/j.procs.2016.07.014	ayTsooEM
 @doi:10.1016/j.tig.2015.05.007	doi:10.1016/j.tig.2015.05.007	doi:10.1016/j.tig.2015.05.007	J0PJHcHK
+@doi:10.1016/j.ymeth.2016.06.001	doi:10.1016/j.ymeth.2016.06.001	doi:10.1016/j.ymeth.2016.06.001	2Ftmbvt4
 @tag:matis	doi:10.1016/S0097-8485(96)80015-5	doi:10.1016/s0097-8485(96)80015-5	3Ew5V1iC
 @tag:Mahmood	doi:10.1016/S0140-6736(13)61752-3	doi:10.1016/s0140-6736(13)61752-3	N96QKgly
 @tag:Xiang	doi:10.1016/S0167-9473(99)00098-5	doi:10.1016/s0167-9473(99)00098-5	1921Mctzh
@@ -182,6 +188,7 @@ string	citation	standard_citation	citation_id
 @tag:Tu1996_anns	doi:10.1016/S0895-4356(96)00002-9	doi:10.1016/s0895-4356(96)00002-9	kL0B4m9d
 @tag:Subramanian2016_bace1	doi:10.1021/acs.jcim.6b00290	doi:10.1021/acs.jcim.6b00290	B4cL1o2P
 @tag:Pereira2016_docking	doi:10.1021/acs.jcim.6b00355	doi:10.1021/acs.jcim.6b00355	Gue0c5Gb
+@doi:10.1021/acs.jcim.7b00028	doi:10.1021/acs.jcim.7b00028	doi:10.1021/acs.jcim.7b00028	rVgq22nD
 @doi:10.1021/acs.jcim.7b00146	doi:10.1021/acs.jcim.7b00146	doi:10.1021/acs.jcim.7b00146	wzHEnMZe
 @doi:10.1021/acs.jmedchem.5b01849	doi:10.1021/acs.jmedchem.5b01849	doi:10.1021/acs.jmedchem.5b01849	omzv9ryI
 @doi:10.1021/acs.jproteome.6b00618	doi:10.1021/acs.jproteome.6b00618	doi:10.1021/acs.jproteome.6b00618	oTF8O79C
@@ -198,6 +205,7 @@ string	citation	standard_citation	citation_id
 @doi:10.1021/jm048957q	doi:10.1021/jm048957q	doi:10.1021/jm048957q	YO41GAOP
 @doi:10.1037/h0037350	doi:10.1037/h0037350	doi:10.1037/h0037350	cpNVdlL7
 @doi:10.1038/484155a	doi:10.1038/484155a	doi:10.1038/484155a	1FjSxrV1k
+@doi:10.1038/msb4100129	doi:10.1038/msb4100129	doi:10.1038/msb4100129	8CiDACi3
 @tag:Barash2010_splicing_code	doi:10.1038/nature09000	doi:10.1038/nature09000	11ETDdRKr
 @tag:Consortium2012_encode	doi:10.1038/nature11247	doi:10.1038/nature11247	15J98V2qM
 @doi:10.1038/nature14539	doi:10.1038/nature14539	doi:10.1038/nature14539	BeijBSRE
@@ -234,6 +242,7 @@ string	citation	standard_citation	citation_id
 @doi:10.1038/srep26094	doi:10.1038/srep26094	doi:10.1038/srep26094	WrNCJ9sO
 @tag:Litjens2016_histopath_survey	doi:10.1038/srep26286	doi:10.1038/srep26286	dQCjqq0Q
 @doi:10.1038/srep32404	doi:10.1038/srep32404	doi:10.1038/srep32404	1G2xP5yOM
+@doi:10.1039/C7MB00188F	doi:10.1039/C7MB00188F	doi:10.1039/c7mb00188f	T2lbgFlY
 @tag:Wasson1985_clinical	doi:10.1056/NEJM198509263131306	doi:10.1056/nejm198509263131306	xX68eyvs
 @doi:10.1056/NEJMe1516564	doi:10.1056/NEJMe1516564	doi:10.1056/nejme1516564	o0F1MXBC
 @doi:10.1056/NEJMp1006304	doi:10.1056/NEJMp1006304	doi:10.1056/nejmp1006304	VOQtVhWs
@@ -263,12 +272,15 @@ string	citation	standard_citation	citation_id
 @doi:10.1093/bioinformatics/btu703	doi:10.1093/bioinformatics/btu703	doi:10.1093/bioinformatics/btu703	15E5yG1Ho
 @doi:10.1093/bioinformatics/btu791	doi:10.1093/bioinformatics/btu791	doi:10.1093/bioinformatics/btu791	7atXz0r
 @tag:Chen2015_trans_species	doi:10.1093/bioinformatics/btv315	doi:10.1093/bioinformatics/btv315	rmjDc5rm
+@doi:10.1093/bioinformatics/btv371	doi:10.1093/bioinformatics/btv371	doi:10.1093/bioinformatics/btv371	FRl0MTLd
 @doi:10.1093/bioinformatics/btv472	doi:10.1093/bioinformatics/btv472	doi:10.1093/bioinformatics/btv472	kqjqFesT
+@doi:10.1093/bioinformatics/btv639	doi:10.1093/bioinformatics/btv639	doi:10.1093/bioinformatics/btv639	EKi3Bq3D
 @tag:Vervier	doi:10.1093/bioinformatics/btv683	doi:10.1093/bioinformatics/btv683	8DLzxOEt
 @tag:Chen2016_gene_expr	doi:10.1093/bioinformatics/btw074	doi:10.1093/bioinformatics/btw074	12QQw9p7v
 @tag:Zeng2016_convolutional	doi:10.1093/bioinformatics/btw255	doi:10.1093/bioinformatics/btw255	182UhQqzp
 @doi:10.1093/bioinformatics/btw343	doi:10.1093/bioinformatics/btw343	doi:10.1093/bioinformatics/btw343	11YUuHulp
 @doi:10.1093/bioinformatics/btw486	doi:10.1093/bioinformatics/btw486	doi:10.1093/bioinformatics/btw486	8NrcroGt
+@doi:10.1093/bioinformatics/btx264	doi:10.1093/bioinformatics/btx264	doi:10.1093/bioinformatics/btx264	12i8Apfdc
 @doi:10.1093/database/bax024	doi:10.1093/database/bax024	doi:10.1093/database/bax024	14afj7TT1
 @doi:10.1093/ije/dyn022	doi:10.1093/ije/dyn022	doi:10.1093/ije/dyn022	CVnO5njl
 @doi:10.1093/ije/dyu188	doi:10.1093/ije/dyu188	doi:10.1093/ije/dyu188	SfxIiPJ1
@@ -311,9 +323,12 @@ string	citation	standard_citation	citation_id
 @tag:Chaudhary2017_multiom_liver_cancer	doi:10.1101/114892	doi:10.1101/114892	obeRVckH
 @doi:10.1101/125229	doi:10.1101/125229	doi:10.1101/125229	2M3zXijc
 @doi:10.1101/138685	doi:10.1101/138685	doi:10.1101/138685	1CAw3FaPI
+@doi:10.1101/154757	doi:10.1101/154757	doi:10.1101/154757	1aswoG70
 @doi:10.1101/159756	doi:10.1101/159756	doi:10.1101/159756	fbIH12yd
+@doi:10.1101/174243	doi:10.1101/174243	doi:10.1101/174243	9ZNxZTxD
 @tag:WayGreene2017_tybalt	doi:10.1101/174474	doi:10.1101/174474	aWn0df1m
 @doi:10.1101/178624	doi:10.1101/178624	doi:10.1101/178624	yJxCo4h1
+@doi:10.1101/223339	doi:10.1101/223339	doi:10.1101/223339	dkPu3iv1
 @tag:Goldsborough2017_cytogan	doi:10.1101/227645	doi:10.1101/227645	1EdCkau6d
 @doi:10.1101/gr.110254.110	doi:10.1101/gr.110254.110	doi:10.1101/gr.110254.110	G0J9P3Ln
 @doi:10.1101/gr.200535.115	doi:10.1101/gr.200535.115	doi:10.1101/gr.200535.115	2CbHXoFn
@@ -339,6 +354,7 @@ string	citation	standard_citation	citation_id
 @tag:Yu2016_melanoma_resnet	doi:10.1109/TMI.2016.2642839	doi:10.1109/tmi.2016.2642839	phRCihNB
 @tag:Ditzler3	doi:10.1109/TNB.2015.2461219	doi:10.1109/tnb.2015.2461219	i38A0beL
 @tag:Ditzler2	doi:10.1109/TNNLS.2014.2320415	doi:10.1109/tnnls.2014.2320415	O9D66oYa
+@doi:10.1110/ps.0239403	doi:10.1110/ps.0239403	doi:10.1110/ps.0239403	ul5VuLBZ
 @tag:Knights	doi:10.1111/j.1574-6976.2010.00251.x	doi:10.1111/j.1574-6976.2010.00251.x	aI9g2UOc
 @doi:10.1111/j.1740-9713.2016.00960.x	doi:10.1111/j.1740-9713.2016.00960.x	doi:10.1111/j.1740-9713.2016.00960.x	6co0adq
 @tag:Ghosh1992_sequence	doi:10.1117/12.140112	doi:10.1117/12.140112	oc44yBj0
@@ -381,6 +397,7 @@ string	citation	standard_citation	citation_id
 @doi:10.1155/2016/1850404	doi:10.1155/2016/1850404	doi:10.1155/2016/1850404	ULZPgbOq
 @doi:10.1155/2016/8479587	doi:10.1155/2016/8479587	doi:10.1155/2016/8479587	19r6xFsZQ
 @doi:10.1158/1078-0432.CCR-13-0583	doi:10.1158/1078-0432.CCR-13-0583	doi:10.1158/1078-0432.ccr-13-0583	pEIw87Mp
+@doi:10.1162/NECO_a_00924	doi:10.1162/NECO_a_00924	doi:10.1162/neco_a_00924	WMwUw1o4
 @tag:Abramoff2016_dr	doi:10.1167/iovs.16-19964	doi:10.1167/iovs.16-19964	e3vyHBV2
 @tag:Salzberg	doi:10.1186/1471-2105-11-544	doi:10.1186/1471-2105-11-544	c4rnN1wo
 @tag:yok	doi:10.1186/1471-2105-12-20	doi:10.1186/1471-2105-12-20	qUGH5CX8
@@ -394,9 +411,11 @@ string	citation	standard_citation	citation_id
 @tag:Chen2016_exprs_yeast	doi:10.1186/s12859-015-0852-1	doi:10.1186/s12859-015-0852-1	yVBx9Qx4
 @doi:10.1186/s12859-017-1561-8	doi:10.1186/s12859-017-1561-8	doi:10.1186/s12859-017-1561-8	qnKdqG0P
 @doi:10.1186/s12859-017-1609-9	doi:10.1186/s12859-017-1609-9	doi:10.1186/s12859-017-1609-9	1F5aZYjOB
+@doi:10.1186/s12859-017-1700-2	doi:10.1186/s12859-017-1700-2	doi:10.1186/s12859-017-1700-2	3nZqSy6z
 @doi:10.1186/s12859-017-1757-y	doi:10.1186/s12859-017-1757-y	doi:10.1186/s12859-017-1757-y	18QrMkpC5
 @tag:Gerstein2016_scaling	doi:10.1186/s13059-016-0917-0	doi:10.1186/s13059-016-0917-0	1E7bFCRV4
 @tag:Angermueller2016_single_methyl	doi:10.1186/s13059-017-1189-z	doi:10.1186/s13059-017-1189-z	19EJTHByG
+@doi:10.1186/s13073-016-0288-x	doi:10.1186/s13073-016-0288-x	doi:10.1186/s13073-016-0288-x	KJjibUtO
 @tag:Lusci2015_irv	doi:10.1186/s13321-015-0110-6	doi:10.1186/s13321-015-0110-6	1E0x7QgLP
 @doi:10.1186/s13321-016-0165-z	doi:10.1186/s13321-016-0165-z	doi:10.1186/s13321-016-0165-z	Sn8TwSQK
 @doi:10.1200/JCO.2008.18.1370	doi:10.1200/JCO.2008.18.1370	doi:10.1200/jco.2008.18.1370	lnK82Ey6
@@ -404,6 +423,7 @@ string	citation	standard_citation	citation_id
 @tag:Liu2016_sc_transcriptome	doi:10.12688/f1000research.7223.1	doi:10.12688/f1000research.7223.1	QafUwNKn
 @doi:10.1371/journal.pbio.1001661	doi:10.1371/journal.pbio.1001661	doi:10.1371/journal.pbio.1001661	dKwyEWWF
 @doi:10.1371/journal.pbio.1002195	doi:10.1371/journal.pbio.1002195	doi:10.1371/journal.pbio.1002195	13bxiY1vo
+@doi:10.1371/journal.pcbi.1000807	doi:10.1371/journal.pcbi.1000807	doi:10.1371/journal.pcbi.1000807	imRWjslx
 @doi:10.1371/journal.pcbi.1000837	doi:10.1371/journal.pcbi.1000837	doi:10.1371/journal.pcbi.1000837	c6gbPCdT
 @doi:10.1371/journal.pcbi.1002957	doi:10.1371/journal.pcbi.1002957	doi:10.1371/journal.pcbi.1002957	5tvnB4uW
 @doi:10.1371/journal.pcbi.1003711	doi:10.1371/journal.pcbi.1003711	doi:10.1371/journal.pcbi.1003711	JxuQvvyk
