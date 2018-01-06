@@ -1,0 +1,15 @@
+---
+author_info:
+  - github: johndoe
+    name: John Doe
+    initials: JD
+    orcid: XXXX-XXXX-XXXX-XXXX
+    email: john.doe@something.com
+    affiliations: Department of Something, University of Whatever
+    funders: Grant XXXXXXXX
+  - github: janeroe
+    name: Jane R. Roe
+    initials: JRR
+    orcid: XXXX-XXXX-XXXX-XXXX
+    email: jane.roe@whatever.edu
+    affiliations: Department of Whatever, University of Something
