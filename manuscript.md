@@ -27,7 +27,7 @@ author-meta:
 - Marwin H.S. Segler
 - Anthony Gitter
 - Casey S. Greene
-date-meta: '2018-01-04'
+date-meta: '2018-01-07'
 keywords:
 - deep learning
 - review
@@ -48,8 +48,8 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@75f0dc2](https://github.com/greenelab/deep-review/tree/75f0dc2c14508939ad55c1e0fc75e05387075e49)
-on January  4, 2018.
+from [greenelab/deep-review@67c4636](https://github.com/greenelab/deep-review/tree/67c463614747aec108fbf8764b6c3fc153bb2e3b)
+on January  7, 2018.
 </em></small>
 
 ## Authors
@@ -270,7 +270,7 @@ on January  4, 2018.
     [yfpeng](https://github.com/yfpeng)<br>
   <small>
      National Center for Biotechnology Information and National Library of Medicine, National Institutes of Health, Bethesda, MD
-     · Funded by OTHER National Institutes of Health Intramural Research Program and National Library of Medicine
+     · Funded by National Institutes of Health Intramural Research Program and National Library of Medicine
   </small>
 
 + **Laura K. Wiley**<br>

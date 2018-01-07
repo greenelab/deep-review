@@ -1,5 +1,5 @@
 {
-  "date": "January  4, 2018",
+  "date": "January  7, 2018",
   "authors": [
     {
       "github": "traversc",
@@ -170,7 +170,7 @@
       "orcid": "0000-0001-9309-8331",
       "email": "yifan.peng@nih.gov",
       "affiliations": "National Center for Biotechnology Information and National Library of Medicine, National Institutes of Health, Bethesda, MD",
-      "funders": "OTHER National Institutes of Health Intramural Research Program and National Library of Medicine"
+      "funders": "National Institutes of Health Intramural Research Program and National Library of Medicine"
     },
     {
       "github": "laurakwiley",
@@ -205,7 +205,7 @@
   ],
   "ci_source": {
     "repo_slug": "greenelab/deep-review",
-    "commit": "75f0dc2c14508939ad55c1e0fc75e05387075e49"
+    "commit": "67c463614747aec108fbf8764b6c3fc153bb2e3b"
   },
   "manuscript_stats": {
     "reference_counts": {
