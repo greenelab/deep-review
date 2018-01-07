@@ -48,7 +48,7 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@67c4636](https://github.com/greenelab/deep-review/tree/67c463614747aec108fbf8764b6c3fc153bb2e3b)
+from [greenelab/deep-review@0f0b53e](https://github.com/greenelab/deep-review/tree/0f0b53e84f140d197b97971bb2aef7869637933e)
 on January  7, 2018.
 </em></small>
 
@@ -618,12 +618,6 @@ Information retrieval is a task of finding relevant text that satisfies an infor
 While deep learning has not yet achieved the same level of success in this area as seen in others, the recent surge of interest and work suggest that this may be quickly changing.
 For example, Mohan et al. described a deep learning approach to modeling the relevance of a document's text to a query, which they applied to the entire biomedical literature [@zPnsAqyX].
 
-In the clinical domain, Jagannatha and Yu employed a bidirectional LSTM structure to extract adverse drug events from electronic health records [@102FYgQFg].
-Choi et al. developed Doctor AI, a RNN-based model that can learn efficient patient representation from a large amount of longitudinal patient records and predict diagnosis and EHR medication codes [@11tMRPqto].
-Minarro-Giménez et al. applied the word2vec [@1GhHIDxuW] deep learning toolkit to medical corpora and evaluated the efficiency of word2vec in identifying properties of pharmaceuticals based on mid-sized, unstructured medical text corpora without any additional background knowledge [@sePDg4mZ].
-Lin et al. investigated using CNN to extract temporal relations [@8YmxYueq].
-Karimi et al. investigated the applicability of deep learning at autocoding radiology reports using ICD [@4QDXEv4C; @zVoUcFPZ].
-
 To summarize, deep learning has shown promising results in many biomedical text mining tasks and applications.
 But to realize its full potential in this domain, either large size of labeled data or technical advancements in current methods coping with limited labeled data are required.
 
@@ -647,14 +641,16 @@ Of particular interest, when the authors first trained a neural network to predi
 This demonstrates how deep learning methods can repurpose features across tasks, improving overall predictions as the field tackles new challenges.
 The Discussion further reviews this type of transfer learning.
 
-Several authors have created reusable feature sets for medical terminologies using natural language processing and neural embedding models, as popularized by Word2vec [@1GhHIDxuW].
+Several authors have created reusable feature sets for medical terminologies using natural language processing and neural embedding models, as popularized by word2vec [@1GhHIDxuW].
+Minarro-Giménez et al. [@sePDg4mZ] applied the word2vec deep learning toolkit to medical corpora and evaluated the efficiency of word2vec in identifying properties of pharmaceuticals based on mid-sized, unstructured medical text corpora without any additional background knowledge. 
 A goal of learning terminologies for different entities in the same vector space is to find relationships between different domains (e.g. drugs and the diseases they treat).
 It is difficult for us to provide a strong statement on the broad utility of these methods.
 Manuscripts in this area tend to compare algorithms applied to the same data but lack a comparison against overall best-practices for one or more tasks addressed by these methods.
-Techniques have been developed for free text medical notes [@XQtuRkTU], ICD and National Drug Codes, and claims data [@TwvauiTv].
-Methods for neural embeddings learned from electronic health records have at least some ability to predict disease-disease associations and implicate genes with a statistical association with a disease [@1G2xP5yOM].
-However, the evaluations performed did not differentiate between simple predictions (i.e. the same disease in different sites of the body) and non-intuitive ones. While promising, a lack of rigorous evaluations of the real-world utility of these kinds of features makes current contributions in this area difficult to evaluate.
-To examine the true utility, comparisons need to be performed against leading approaches (i.e. algorithms and data) as opposed to simply evaluating multiple algorithms on the same potentially limited dataset.
+Techniques have been developed for free text medical notes [@XQtuRkTU], ICD and National Drug Codes [@4QDXEv4C; @zVoUcFPZ], and claims data [@TwvauiTv].
+Methods for neural embeddings learned from electronic health records have at least some ability to predict disease-disease associations and implicate genes with a statistical association with a disease [@1G2xP5yOM], but the evaluations performed did not differentiate between simple predictions (i.e. the same disease in different sites of the body) and non-intuitive ones. 
+Jagannatha and Yu  [@102FYgQFg] further employed a bidirectional LSTM structure to extract adverse drug events from electronic health records, and Lin et al. [@8YmxYueq] investigated using CNN to extract temporal relations.
+While promising, a lack of rigorous evaluations of the real-world utility of these kinds of features makes current contributions in this area difficult to evaluate. 
+Comparisons need to be performed to examine the true utility against leading approaches (i.e. algorithms and data) as opposed to simply evaluating multiple algorithms on the same potentially limited dataset.
 
 Identifying consistent subgroups of individuals and individual health trajectories from clinical tests is also an active area of research.
 Approaches inspired by deep learning have been used for both unsupervised feature construction and supervised prediction.
