@@ -12,11 +12,15 @@ Please reference [Pull Request #40](https://github.com/greenelab/manubot-rootsto
 
 ## Environment
 
-Install the [conda](https://conda.io) environment specified in [`environment.yml`](environment.yml) by running:
+Install or update the [conda](https://conda.io) environment specified in [`environment.yml`](environment.yml) by running:
 
 ```sh
+# If the manubot environment already exists, remove it first
+conda env remove --name manubot
+
+# Install the environment
 conda env create --file environment.yml
 ```
 
-Activate with `source activate manubot`.
+Activate with `conda activate manubot` (assumes `conda` version of [at least](https://github.com/conda/conda/blob/9d759d8edeb86569c25f6eb82053f09581013a2a/CHANGELOG.md#440-2017-12-20) 4.4).
 The environment should successfully install on both Linux and macOS (and possibly Windows).

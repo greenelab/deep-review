@@ -41,8 +41,8 @@ To run the Manubot locally, install the [conda](https://conda.io) environment as
 Then, you can build the manuscript on POSIX systems by running the following commands.
 
 ```sh
-# Activate the manubot conda environment
-source activate manubot
+# Activate the manubot conda environment (assumes conda version >= 4.4)
+conda activate manubot
 
 # Build the manuscript
 sh build/build.sh

@@ -141,6 +141,8 @@ affiliations:  # as a list, strongly suggested
 funders: GBMF4552  # optional
 ```
 
+Note that `affiliations` should be a list to allow for multiple affiliations per author.
+
 ## Manubot feedback
 
 If you experience any issues with the Manubot or would like to contribute to its source code, please visit [`greenelab/manubot`](https://github.com/greenelab/manubot) or [`greenelab/manubot-rootstock`](https://github.com/greenelab/manubot-rootstock).
@@ -156,5 +158,6 @@ For additional examples, check out existing manuscripts that use the Manubot:
 + The Meta Review ([source](https://github.com/greenelab/meta-review), [manuscript](https://greenelab.github.io/meta-review/))
 + The Project Rephetio Manuscript ([source](https://github.com/dhimmel/rephetio-manuscript/), [manuscript](https://dhimmel.github.io/rephetio-manuscript/))
 + A Literature Review for Project Planning by David Slochower ([source](https://github.com/slochower/synthetic-motor-literature), [manuscript](https://slochower.github.io/synthetic-motor-literature/))
++ The Manubot 2018 Development Proposal ([source](https://github.com/greenelab/manufund-2018), [manuscript](https://greenelab.github.io/manufund-2018/))
 
 If you are using the Manubot, feel free to submit a pull request to add your manuscript to the list above.
