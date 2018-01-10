@@ -23,7 +23,7 @@ Berezikov2011_mirna	doi:10.1038/nrg3079
 Bergstra2011_hyper	url:https://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimization.pdf
 Bergstra2012_random	url:http://www.jmlr.org/papers/v13/bergstra12a.html
 Bracken2016_mirna	doi:10.1038/nrg.2016.134
-Boza	arxiv:1603.09195
+Boza	doi:10.1371/journal.pone.0178751
 Buggenthin2017_imaged_lineage	doi:10.1038/nmeth.4182
 Burlina2016_amd	doi:10.1109/ISBI.2016.7493240
 Caruana2014_need	arxiv:1312.6184
@@ -99,7 +99,7 @@ Hubara2016_qnn	arxiv:1609.07061
 Huddar2016_predicting	doi:10.1109/ACCESS.2016.2618775
 Hughes2016_macromol_react	doi:10.1021/acscentsci.6b00162
 Ithapu2015_efficient	doi:10.1016/j.jalz.2015.01.010
-Jafari2016_skin_lesions	arxiv:1609.02374
+Jafari2016_skin_lesions	doi:10.1007/s11548-017-1567-8
 Jha2017_integrative_models	doi:10.1101/104869
 Johnson2017_integ_cell	arxiv:1705.00092
 JuanMateu2016_t1d	doi:10.1530/EJE-15-0916
@@ -135,7 +135,7 @@ Lin2017_why_dl_works	arxiv:1608.08225v3
 Lipton2016_missing	arxiv:1606.04130
 Lipton2015_lstm	arxiv:1510.07641
 Litjens2016_histopath_survey	doi:10.1038/srep26286
-Litjens2017_medimage_survey	arxiv:1702.05747
+Litjens2017_medimage_survey	doi:10.1016/j.media.2017.07.005
 Lisboa2006_review	doi:10.1016/j.neunet.2005.10.007
 Liu	doi:10.1371/journal.pone.0097958
 Liu2016_towards	arxiv:1604.07043
@@ -208,7 +208,7 @@ Seide2014_parallel	doi:10.1109/ICASSP.2014.6853593
 Setty2015_seqgl	doi:10.1371/journal.pcbi.1004271
 Selvaraju2016_grad	arxiv:1610.02391
 Serden	doi:10.1016/S0168-8510(02)00208-7
-Shaham2016_batch_effects	arxiv:1610.04181
+Shaham2016_batch_effects	doi:10.1093/bioinformatics/btx196
 Shapely	doi:10.1515/9781400881970-018
 Shen2017_medimg_review	doi:10.1146/annurev-bioeng-071516-044442
 Shin2016_cad_tl	doi:10.1109/TMI.2016.2528162
@@ -218,7 +218,7 @@ Simonyan2013_deep	arxiv:1312.6034
 Singh2017_attentivechrome	arxiv:1708.00339
 Singh2016_deepchrome	arxiv:1607.02078
 Silver2016_alphago	doi:10.1038/nature16961
-Sonderby	arxiv:1503.01919
+Sonderby	doi:10.1007/978-3-319-21233-3_6
 Soueidan	doi:10.1515/metgen-2016-0001
 Spark	doi:10.1145/2934664
 Speech_recognition	url:http://www.businessinsider.com/ibm-edges-closer-to-human-speech-recognition-2017-3
