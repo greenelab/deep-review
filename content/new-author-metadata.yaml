@@ -47,3 +47,10 @@ author_info:
     email: smb310@georgetown.edu
     affiliations: Innovation Center for Biomedical Informatics, Georgetown University Medical Center, Washington, DC, USA
     funders: NIH R21CA220398, NIH P30CA051008
+  - github: michaelmhoffman
+    name: Michael M. Hoffman
+    initials: MMH
+    orcid: 0000-0002-4517-1562
+    email: michael.hoffman@utoronto.ca
+    affiliations: Princess Margaret Cancer Centre, Toronto, ON, Canada; Department of Medical Biophysics, Toronto, ON, Canada; Department of Computer Science, Toronto, ON, Canada
+    funders: NSERC RGPIN-2015-3948
