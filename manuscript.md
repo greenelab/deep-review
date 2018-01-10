@@ -48,7 +48,7 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@ea08739](https://github.com/greenelab/deep-review/tree/ea0873910d53e4033a9ea3e1b52d97ddbd1a5884)
+from [greenelab/deep-review@9159d69](https://github.com/greenelab/deep-review/tree/9159d693dd941c3a1f605ea5ad01b8c6a68ac85c)
 on January 10, 2018.
 </em></small>
 
@@ -405,7 +405,7 @@ Here, we seek to identify whether deep learning is an innovation that can induce
 
 There are already a number of reviews focused on applications of deep learning in biology [@yXqhuueV; @1VZjheOA;
 @irSe12Sm; @G00xvi94;
-@MmRGFVUu], healthcare [@11I7bLcP3; @LL5huVs3], and drug discovery [@gJE0ExFr; @zCt6PUXj;
+@MmRGFVUu], healthcare [@11I7bLcP3; @1FkYUUryG], and drug discovery [@gJE0ExFr; @zCt6PUXj;
 @1DTUK3YyI; @xPkT1z7D].
 Under our guiding question, we sought to highlight cases where deep learning enabled researchers to solve challenges that were previously considered infeasible or makes difficult, tedious analyses routine.
 We also identified approaches that researchers are using to sidestep challenges posed by biomedical data.
@@ -480,7 +480,7 @@ We also highlight approaches that researchers are taking to address challenges w
 ### Imaging applications in healthcare
 
 Deep learning methods have transformed the analysis of natural images and video, and similar examples are beginning to emerge with medical images.
-Deep learning has been used to classify lesions and nodules; localize organs, regions, landmarks and lesions; segment organs, organ substructures and lesions; retrieve images based on content; generate and enhance images; and combine images with clinical reports [@LL5huVs3; @yEstnIOT].
+Deep learning has been used to classify lesions and nodules; localize organs, regions, landmarks and lesions; segment organs, organ substructures and lesions; retrieve images based on content; generate and enhance images; and combine images with clinical reports [@1FkYUUryG; @yEstnIOT].
 
 Though there are many commonalities with the analysis of natural images, there are also key differences.
 In all cases that we examined, fewer than one million images were available for training, and datasets are often many orders of magnitude smaller than collections of natural images.
@@ -491,7 +491,7 @@ Diagnosing diabetic retinopathy through color fundus images became an area of fo
 Most participants trained neural networks from scratch [@ayTsooEM;
 @e3vyHBV2; @14Ovc5nPg], but Gulshan et al.
 [@1mJW6umJ] repurposed a 48-layer Inception-v3 deep architecture pre-trained on natural images and surpassed the state-of-the-art specificity and sensitivity.
-Such features were also repurposed to detect melanoma, the deadliest form of skin cancer, from dermoscopic [@sLPsrfbl; @phRCihNB] and non-dermoscopic images of skin lesions [@1AJUcl1KV;
+Such features were also repurposed to detect melanoma, the deadliest form of skin cancer, from dermoscopic [@sLPsrfbl; @phRCihNB] and non-dermoscopic images of skin lesions [@18f8olBNy;
 @O39LDkX; @XnYNYoYB] as well as age-related macular degeneration [@iBPOt78R].
 Pre-training on natural images can enable very deep networks to succeed without overfitting.
 For the melanoma task, reported performance was competitive with or better than a board of certified dermatologists [@sLPsrfbl;
@@ -642,14 +642,14 @@ This demonstrates how deep learning methods can repurpose features across tasks,
 The Discussion further reviews this type of transfer learning.
 
 Several authors have created reusable feature sets for medical terminologies using natural language processing and neural embedding models, as popularized by word2vec [@1GhHIDxuW].
-Minarro-Giménez et al. [@sePDg4mZ] applied the word2vec deep learning toolkit to medical corpora and evaluated the efficiency of word2vec in identifying properties of pharmaceuticals based on mid-sized, unstructured medical text corpora without any additional background knowledge. 
+Minarro-Giménez et al. [@sePDg4mZ] applied the word2vec deep learning toolkit to medical corpora and evaluated the efficiency of word2vec in identifying properties of pharmaceuticals based on mid-sized, unstructured medical text corpora without any additional background knowledge.
 A goal of learning terminologies for different entities in the same vector space is to find relationships between different domains (e.g. drugs and the diseases they treat).
 It is difficult for us to provide a strong statement on the broad utility of these methods.
 Manuscripts in this area tend to compare algorithms applied to the same data but lack a comparison against overall best-practices for one or more tasks addressed by these methods.
 Techniques have been developed for free text medical notes [@XQtuRkTU], ICD and National Drug Codes [@4QDXEv4C; @zVoUcFPZ], and claims data [@TwvauiTv].
-Methods for neural embeddings learned from electronic health records have at least some ability to predict disease-disease associations and implicate genes with a statistical association with a disease [@1G2xP5yOM], but the evaluations performed did not differentiate between simple predictions (i.e. the same disease in different sites of the body) and non-intuitive ones. 
+Methods for neural embeddings learned from electronic health records have at least some ability to predict disease-disease associations and implicate genes with a statistical association with a disease [@1G2xP5yOM], but the evaluations performed did not differentiate between simple predictions (i.e. the same disease in different sites of the body) and non-intuitive ones.
 Jagannatha and Yu  [@102FYgQFg] further employed a bidirectional LSTM structure to extract adverse drug events from electronic health records, and Lin et al. [@8YmxYueq] investigated using CNN to extract temporal relations.
-While promising, a lack of rigorous evaluations of the real-world utility of these kinds of features makes current contributions in this area difficult to evaluate. 
+While promising, a lack of rigorous evaluations of the real-world utility of these kinds of features makes current contributions in this area difficult to evaluate.
 Comparisons need to be performed to examine the true utility against leading approaches (i.e. algorithms and data) as opposed to simply evaluating multiple algorithms on the same potentially limited dataset.
 
 Identifying consistent subgroups of individuals and individual health trajectories from clinical tests is also an active area of research.
@@ -780,7 +780,7 @@ Even without sharing data, algorithms trained on confidential patient data may p
 Tramer et al. [@ULSPV0rh] showed the ability to steal trained models via public application programming interfaces (APIs).
 Dwork and Roth [@v8Lp4ibI] demonstrate the ability to expose individual level information from accurate answers in a machine learning model.
 Attackers can use similar attacks to find out if a particular data instance was present in the original training set for the machine learning model [@1HbRTExaU], in this case, whether a person's record was present.
-To protect against these attacks, Simmons et al. [@6XtEfQMC] developed the ability to perform genome-wide association studies (GWASs) in a differentially private manner, and Abadi et al. [@ucHUOABT] show the ability to train deep learning classifiers under the differential privacy framework.
+To protect against these attacks, Simmons et al. [@6XtEfQMC] developed the ability to perform genome-wide association studies (GWASs) in a differentially private manner, and Abadi et al. [@LiCxcgZp] show the ability to train deep learning classifiers under the differential privacy framework.
 
 These attacks also present a potential hazard for approaches that aim to generate data.
 Choi et al. propose generative adversarial neural networks (GANs) as a tool to make sharable EHR data [@xl1ijigK], and Esteban et al. [@1988BRJe3] showed that recurrent GANs could be used for time series data.
@@ -1234,7 +1234,7 @@ Joint profiling of single-cell epigenetic and transcriptional states provides un
 However, large challenges exist in studying single cells.
 Relatively few cells can be assayed at once using current droplet, imaging, or microwell technologies, and low-abundance molecules or modifications may not be detected by chance due to a phenomenon known as dropout, not to be confused with the dropout layer of deep learning.
 To solve this problem, Angermueller et al. [@19EJTHByG] trained a neural network to predict the presence or absence of methylation of a specific CpG site in single cells based on surrounding methylation signal and underlying DNA sequence, achieving several percentage points of improvement compared to random forests or deep networks trained only on CpG or sequence information. Similar deep learning methods have been applied to impute low-resolution ChIP-seq signal from bulk tissue with great success, and they could easily be adapted to single-cell data [@Qbtqlmhf; @XimuXZlz].
-Deep learning has also been useful for dealing with batch effects [@T2Md9xLY].
+Deep learning has also been useful for dealing with batch effects [@1ERrBiqG7].
 
 Examining populations of single cells can reveal biologically meaningful subsets of cells as well as their underlying gene regulatory networks [@1HPu3R2B4].
 Unfortunately, machine learning methods generally struggle with imbalanced data -- when there are many more examples of class 1 than class 2 -- because prediction accuracy is usually evaluated over the entire dataset.
@@ -1273,7 +1273,7 @@ Also, researchers have looked into how feature selection can improve classificat
 Most neural networks are used for phylogenetic classification or functional annotation from sequence data where there is ample data for training.
 Neural networks have been applied successfully to gene annotation (e.g. Orphelia [@q1A2AEtO] and FragGeneScan [@QlbXLqH]).
 Representations (similar to Word2Vec [@1GhHIDxuW] in natural language processing) for protein family classification have been introduced and classified with a skip-gram neural network [@1E1PWjqTm].
-Recurrent neural networks show good performance for homology and protein family identification [@G8RKF6sz; @81Cl5QSM].
+Recurrent neural networks show good performance for homology and protein family identification [@G8RKF6sz; @zYUI7tc1].
 
 One of the first techniques of *de novo* genome binning used self-organizing maps, a type of neural network [@1HhqhBwrM].
 Essinger et al. [@11wVLI2Hn] used Adaptive Resonance Theory to cluster similar genomic fragments and showed that it had better performance than k-means.
@@ -1295,7 +1295,7 @@ Such underdetermined, or ill-conditioned, problems are still a challenge for dee
 Also, due to convergence issues [@g2vvbB91], taxonomic classification of reads from whole genome sequencing seems out of reach at the moment for deep neural networks.
 There are only thousands of full-sequenced genomes as compared to hundreds of thousands of 16S rRNA sequences available for training.
 
-However, because RNNs have been applied to base calls for the Oxford Nanopore long-read sequencer with some success [@1BTJ1KqRa] (discussed below), one day the entire pipeline, from denoising to functional classification, may be combined into one step using powerful LSTMs [@2cMhMv5A].
+However, because RNNs have been applied to base calls for the Oxford Nanopore long-read sequencer with some success [@Jw2asgH1] (discussed below), one day the entire pipeline, from denoising to functional classification, may be combined into one step using powerful LSTMs [@2cMhMv5A].
 For example, metagenomic assembly usually requires binning then assembly, but could deep neural nets accomplish both tasks in one network?
 We believe the greatest potential in deep learning is to learn the complete characteristics of a metagenomic sample in one complex network.
 
@@ -1324,7 +1324,7 @@ Because many of the latest neural network architectures (ResNet, Inception, Xcep
 
 In limited experiments, DeepVariant was robust to sequencing depth, read length, and even species [@FVfZESYP].
 However, a model built on Illumina data, for instance, may not be optimal for Pacific Biosciences long-read data or MinION nanopore data, which have vastly different specificity and sensitivity profiles and signal-to-noise characteristics.
-Recently, Boza et al. used bidirectional recurrent neural networks to infer the *E. coli* sequence from MinION nanopore electric current data with higher per-base accuracy than the proprietary hidden Markov model-based algorithm Metrichor [@1BTJ1KqRa].
+Recently, Boza et al. used bidirectional recurrent neural networks to infer the *E. coli* sequence from MinION nanopore electric current data with higher per-base accuracy than the proprietary hidden Markov model-based algorithm Metrichor [@Jw2asgH1].
 Unfortunately, training any neural network requires a large amount of data, which is often not available for new sequencing technologies.
 To circumvent this, one very preliminary study simulated mutations and spiked them into somatic and germline RNA-seq data, then trained and tested a neural network on simulated paired RNA-seq and exome sequencing data [@ECTm1SuA].
 However, because this model was not subsequently tested on ground-truth datasets, it is unclear whether simulation can produce sufficiently realistic data to produce reliable models.
@@ -1846,7 +1846,7 @@ A pre-trained neural network can be quickly fine-tuned on new data and used in t
 Taking this idea to the extreme, genomic data has been artificially encoded as images in order to benefit from pre-trained image classifiers [@FVfZESYP].
 "Model zoos" -- collections of pre-trained models -- are not yet common in biomedical domains but have started to appear in genomics applications [@19EJTHByG; @117PEpTMe].
 However, it is important to note that sharing models trained on individual data requires great care because deep learning models can be attacked to identify examples used in training.
-One possible solution to protect individual samples includes training models under differential privacy [@ucHUOABT], which has been used in the biomedical domain [@fbIH12yd].
+One possible solution to protect individual samples includes training models under differential privacy [@LiCxcgZp], which has been used in the biomedical domain [@fbIH12yd].
 We discussed this issue as well as recent techniques to mitigate these concerns in the patient categorization section.
 
 DeepChem [@P4ixsM8i; @Ytvk62dX; @16OPHvAij] and DragoNN [@117PEpTMe] exemplify the benefits of sharing pre-trained models and code under an open source license.
@@ -1999,7 +1999,7 @@ To facilitate citation, we [defined](https://github.com/greenelab/deep-review/bl
 We supported citations to the following identifier types (in order of preference): DOIs, PubMed IDs, arXiv IDs, and URLs.
 References were automatically generated from citation metadata by querying APIs to generate [Citation Style Language](http://citationstyles.org/) (CSL) JSON items for each reference.
 [Pandoc](http://pandoc.org/) and [pandoc-citeproc](https://github.com/jgm/pandoc-citeproc) converted the markdown to HTML and PDF, while rendering the formatted citations and references.
-In total, referenced works consisted of 339 DOIs, 6 PubMed records, 121 arXiv manuscripts, and 44 URLs (webpages as well as manuscripts lacking standardized identifiers).
+In total, referenced works consisted of 345 DOIs, 6 PubMed records, 115 arXiv manuscripts, and 44 URLs (webpages as well as manuscripts lacking standardized identifiers).
 
 We implemented continuous analysis so the manuscript was automatically regenerated whenever the source changed [@Qh7xTLwz].
 We configured Travis CI -- a continuous integration service -- to fetch new citation metadata and rebuild the manuscript for every commit.

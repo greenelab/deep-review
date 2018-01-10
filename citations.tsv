@@ -24,7 +24,6 @@ string	citation	standard_citation	citation_id
 @tag:Ramsundar2015_multitask_drug	arxiv:1502.02072	arxiv:1502.02072	yAoN5gTU
 @tag:Gupta2015_prec	arxiv:1502.02551	arxiv:1502.02551	CKcJuj03
 @tag:Xu2015_show	arxiv:1502.03044	arxiv:1502.03044	yHn4SDRI
-@tag:Sonderby	arxiv:1503.01919	arxiv:1503.01919	81Cl5QSM
 @tag:Hinton2015_dark_knowledge	arxiv:1503.02531	arxiv:1503.02531	1CRF3gAV
 @tag:Hadjas2015_cc	arxiv:1504.04343	arxiv:1504.04343	13KjSCKB2
 @tag:Chen2015_hashing	arxiv:1504.04788	arxiv:1504.04788	15lYGmZpY
@@ -47,7 +46,6 @@ string	citation	standard_citation	citation_id
 @tag:Ribeiro2016_lime	arxiv:1602.04938	arxiv:1602.04938	QwXSJhr0
 @tag:TensorFlow	arxiv:1603.04467	arxiv:1603.04467	hOeUlCvS
 @tag:Lee2016_deeptarget	arxiv:1603.09123v2	arxiv:1603.09123v2	1GwC1ll6h
-@tag:Boza	arxiv:1603.09195	arxiv:1603.09195	1BTJ1KqRa
 @tag:Liu2016_towards	arxiv:1604.07043	arxiv:1604.07043	AEc66xxR
 @tag:Park2016_deepmirgene	arxiv:1605.00017	arxiv:1605.00017	1TeyWffV
 @arxiv:1605.03661	arxiv:1605.03661	arxiv:1605.03661	173ftiSzF
@@ -64,7 +62,6 @@ string	citation	standard_citation	citation_id
 @tag:Strobelt2016_visual	arxiv:1606.07461	arxiv:1606.07461	1Ad3UOefc
 @tag:Kearnes2016_admet	arxiv:1606.08793	arxiv:1606.08793	uP7SgBVd
 @arxiv:1606.08813v3	arxiv:1606.08813v3	arxiv:1606.08813v3	7yE9K08a
-@arxiv:1607.00133	arxiv:1607.00133	arxiv:1607.00133	ucHUOABT
 @tag:Singh2016_deepchrome	arxiv:1607.02078	arxiv:1607.02078	G10wkFHt
 @arxiv:1607.07519	arxiv:1607.07519	arxiv:1607.07519	Ohd1Q9Xw
 @arxiv:1608.00647	arxiv:1608.00647	arxiv:1608.00647	c6MfDdWP
@@ -73,7 +70,6 @@ string	citation	standard_citation	citation_id
 @tag:Lanchantin2016_motif	arxiv:1608.03644	arxiv:1608.03644	Dwi2eAvT
 @tag:Choi2016_retain	arxiv:1608.05745	arxiv:1608.05745	UcRbawKo
 @tag:Lin2017_why_dl_works	arxiv:1608.08225v3	arxiv:1608.08225v3	bBG5t78u
-@tag:Jafari2016_skin_lesions	arxiv:1609.02374	arxiv:1609.02374	1AJUcl1KV
 @arxiv:1609.02943	arxiv:1609.02943	arxiv:1609.02943	ULSPV0rh
 @tag:Hubara2016_qnn	arxiv:1609.07061	arxiv:1609.07061	1GUizyE8e
 @arxiv:1609.08144	arxiv:1609.08144	arxiv:1609.08144	4TK06zOf
@@ -81,7 +77,6 @@ string	citation	standard_citation	citation_id
 @tag:Selvaraju2016_grad	arxiv:1610.02391	arxiv:1610.02391	RZsNSRDS
 @arxiv:1610.02413	arxiv:1610.02413	arxiv:1610.02413	1ENxzq6pT
 @tag:Gomezb2016_automatic	arxiv:1610.02415	arxiv:1610.02415	2dU8f4XJ
-@tag:Shaham2016_batch_effects	arxiv:1610.04181	arxiv:1610.04181	T2Md9xLY
 @tag:Codella2016_ensemble_melanoma	arxiv:1610.04662	arxiv:1610.04662	sLPsrfbl
 @arxiv:1610.05256	arxiv:1610.05256	arxiv:1610.05256	M2OLWojE
 @arxiv:1610.05820	arxiv:1610.05820	arxiv:1610.05820	1HbRTExaU
@@ -97,7 +92,6 @@ string	citation	standard_citation	citation_id
 @tag:Segler2017_drug_design	arxiv:1701.01329	arxiv:1701.01329	8LWFFeYg
 @tag:Murdoch2017_automatic	arxiv:1702.02540	arxiv:1702.02540	10ViHstXn
 @tag:Zintgraf2017_visualizing	arxiv:1702.04595	arxiv:1702.04595	Kk20paR7
-@tag:Litjens2017_medimage_survey	arxiv:1702.05747	arxiv:1702.05747	LL5huVs3
 @tag:Wu2017_molecule_net	arxiv:1703.00564	arxiv:1703.00564	16OPHvAij
 @tag:Sundararajan2017_axiomatic	arxiv:1703.01365	arxiv:1703.01365	WzFOJBiA
 @arxiv:1703.01925	arxiv:1703.01925	arxiv:1703.01925	AQ3N6Ayw
@@ -136,6 +130,7 @@ string	citation	standard_citation	citation_id
 @doi:10.1002/wcms.49	doi:10.1002/wcms.49	doi:10.1002/wcms.49	kJ4hy7E
 @doi:10.1006/jmbi.1999.3091	doi:10.1006/jmbi.1999.3091	doi:10.1006/jmbi.1999.3091	Aic7UyXM
 @doi:10.1007/978-3-319-16706-0_20	doi:10.1007/978-3-319-16706-0_20	doi:10.1007/978-3-319-16706-0_20	17B2QAA1k
+@tag:Sonderby	doi:10.1007/978-3-319-21233-3_6	doi:10.1007/978-3-319-21233-3_6	zYUI7tc1
 @tag:Dhungel2015_struct_pred_mamm	doi:10.1007/978-3-319-24553-9_74	doi:10.1007/978-3-319-24553-9_74	VFw1VXDP
 @doi:10.1007/978-3-319-24574-4_28	doi:10.1007/978-3-319-24574-4_28	doi:10.1007/978-3-319-24574-4_28	TutLhFSz
 @tag:PerezSianes2016_screening	doi:10.1007/978-3-319-40126-3_2	doi:10.1007/978-3-319-40126-3_2	1DTUK3YyI
@@ -154,6 +149,7 @@ string	citation	standard_citation	citation_id
 @tag:Kearnes2016_graph_conv	doi:10.1007/s10822-016-9938-8	doi:10.1007/s10822-016-9938-8	145os4Y6t
 @tag:Russakovsky2015_imagenet	doi:10.1007/s11263-015-0816-y	doi:10.1007/s11263-015-0816-y	cBVeXnZx
 @tag:Mahendran2016_visualizing	doi:10.1007/s11263-016-0911-8	doi:10.1007/s11263-016-0911-8	1FkT6C6oa
+@tag:Jafari2016_skin_lesions	doi:10.1007/s11548-017-1567-8	doi:10.1007/s11548-017-1567-8	18f8olBNy
 @doi:10.1016/j.bjid.2015.08.013	doi:10.1016/j.bjid.2015.08.013	doi:10.1016/j.bjid.2015.08.013	oas5tbC7
 @doi:10.1016/j.cell.2015.03.049	doi:10.1016/j.cell.2015.03.049	doi:10.1016/j.cell.2015.03.049	bSYQrdJA
 @doi:10.1016/j.cell.2015.03.050	doi:10.1016/j.cell.2015.03.050	doi:10.1016/j.cell.2015.03.050	Ud5iHvkw
@@ -175,6 +171,7 @@ string	citation	standard_citation	citation_id
 @doi:10.1016/j.jsb.2016.07.006	doi:10.1016/j.jsb.2016.07.006	doi:10.1016/j.jsb.2016.07.006	ku0xqQxt
 @tag:Kooi2016_mamm_lesions	doi:10.1016/j.media.2016.07.007	doi:10.1016/j.media.2016.07.007	18cZbigDD
 @tag:Dhungel2017_mamm_min_interv	doi:10.1016/j.media.2017.01.009	doi:10.1016/j.media.2017.01.009	5kfDbGhA
+@tag:Litjens2017_medimage_survey	doi:10.1016/j.media.2017.07.005	doi:10.1016/j.media.2017.07.005	1FkYUUryG
 @doi:10.1016/j.neubiorev.2010.07.002	doi:10.1016/j.neubiorev.2010.07.002	doi:10.1016/j.neubiorev.2010.07.002	sOBzMC57
 @tag:Lisboa2006_review	doi:10.1016/j.neunet.2005.10.007	doi:10.1016/j.neunet.2005.10.007	qxxwkSAT
 @tag:Schmidhuber2014_dnn_overview	doi:10.1016/j.neunet.2014.09.003	doi:10.1016/j.neunet.2014.09.003	BQS8ClV0
@@ -280,6 +277,7 @@ string	citation	standard_citation	citation_id
 @tag:Zeng2016_convolutional	doi:10.1093/bioinformatics/btw255	doi:10.1093/bioinformatics/btw255	182UhQqzp
 @doi:10.1093/bioinformatics/btw343	doi:10.1093/bioinformatics/btw343	doi:10.1093/bioinformatics/btw343	11YUuHulp
 @doi:10.1093/bioinformatics/btw486	doi:10.1093/bioinformatics/btw486	doi:10.1093/bioinformatics/btw486	8NrcroGt
+@tag:Shaham2016_batch_effects	doi:10.1093/bioinformatics/btx196	doi:10.1093/bioinformatics/btx196	1ERrBiqG7
 @doi:10.1093/bioinformatics/btx264	doi:10.1093/bioinformatics/btx264	doi:10.1093/bioinformatics/btx264	12i8Apfdc
 @doi:10.1093/database/bax024	doi:10.1093/database/bax024	doi:10.1093/database/bax024	14afj7TT1
 @doi:10.1093/ije/dyn022	doi:10.1093/ije/dyn022	doi:10.1093/ije/dyn022	CVnO5njl
@@ -388,6 +386,7 @@ string	citation	standard_citation	citation_id
 @tag:Edwards2015_growing_pains	doi:10.1145/2771283	doi:10.1145/2771283	1FocAi7N0
 @tag:Zhang2015_multitask_tl	doi:10.1145/2783258.2783304	doi:10.1145/2783258.2783304	HlDY7trA
 @doi:10.1145/2939672.2939823	doi:10.1145/2939672.2939823	doi:10.1145/2939672.2939823	TwvauiTv
+@doi:10.1145/2976749.2978318	doi:10.1145/2976749.2978318	doi:10.1145/2976749.2978318	LiCxcgZp
 @tag:Shen2017_medimg_review	doi:10.1146/annurev-bioeng-071516-044442	doi:10.1146/annurev-bioeng-071516-044442	yEstnIOT
 @tag:Vera2016_sc_analysis	doi:10.1146/annurev-genet-120215-034854	doi:10.1146/annurev-genet-120215-034854	v97iPXDw
 @doi:10.1148/radiol.2017162326	doi:10.1148/radiol.2017162326	doi:10.1148/radiol.2017162326	Qve94Jra
@@ -446,6 +445,7 @@ string	citation	standard_citation	citation_id
 @tag:Bach2015_on	doi:10.1371/journal.pone.0130140	doi:10.1371/journal.pone.0130140	au5CLIOH
 @tag:Asgari	doi:10.1371/journal.pone.0141287	doi:10.1371/journal.pone.0141287	1E1PWjqTm
 @doi:10.1371/journal.pone.0171410	doi:10.1371/journal.pone.0171410	doi:10.1371/journal.pone.0171410	as2HfoSh
+@tag:Boza	doi:10.1371/journal.pone.0178751	doi:10.1371/journal.pone.0178751	Jw2asgH1
 @doi:10.1371/journal.pone.0182130	doi:10.1371/journal.pone.0182130	doi:10.1371/journal.pone.0182130	RRR3YEJV
 @tag:Graphlab	doi:10.14778/2212351.2212354	doi:10.14778/2212351.2212354	1XcexUAV
 @doi:10.1504/IJDMB.2016.074878	doi:10.1504/IJDMB.2016.074878	doi:10.1504/ijdmb.2016.074878	MY6FXgFn
