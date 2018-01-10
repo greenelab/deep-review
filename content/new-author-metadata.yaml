@@ -27,3 +27,23 @@ author_info:
     email: swamidass@wustl.edu
     affiliations: Department of Pathology and Immunology, Washington University in Saint Louis, Saint Louis, MO
     funders: NIH NLM R01LM012222, NIH NLM R01LM012482
+  - github: lavenderca
+    name: Christopher A. Lavender
+    initials: CAL
+    orcid: 0000-0002-7762-1089
+    email: christopher.lavender@nih.gov
+    affiliations: Integrative Bioinformatics, National Institute of Environmental Health Sciences, National Institutes of Health, Research Triangle Park, NC 
+  - github: zietzm
+    name: Michael Zietz
+    initials: MZ
+    orcid: 0000-0003-0539-630X
+    email: zietz@sas.upenn.edu
+    affiliations: Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA
+    funders: Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences
+  - github: SiminaB
+    name: Simina M. Boca
+    initials: SMB
+    orcid: 0000-0002-1400-3398
+    email: smb310@georgetown.edu
+    affiliations: Innovation Center for Biomedical Informatics, Georgetown University Medical Center, Washington, DC, USA
+    funders: NIH R21CA220398, NIH P30CA051008
