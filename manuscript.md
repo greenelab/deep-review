@@ -27,7 +27,7 @@ author-meta:
 - Marwin H.S. Segler
 - Anthony Gitter
 - Casey S. Greene
-date-meta: '2018-01-08'
+date-meta: '2018-01-10'
 keywords:
 - deep learning
 - review
@@ -48,8 +48,8 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@486f2cf](https://github.com/greenelab/deep-review/tree/486f2cfac19e54dc454c113425b6efd3c00a0659)
-on January  8, 2018.
+from [greenelab/deep-review@ea08739](https://github.com/greenelab/deep-review/tree/ea0873910d53e4033a9ea3e1b52d97ddbd1a5884)
+on January 10, 2018.
 </em></small>
 
 ## Authors
@@ -556,18 +556,18 @@ They trained a deep neural network on approximately 100,000 images extracted fro
 The authors used their test set to evaluate when to stop training.
 In other domains, this has resulted in a minimal change in the estimated accuracy [@CCS5KSIM], but we recommend the use of an independent test set whenever feasible.
 
-Chest X-rays are a common radiological examination for screening and diagnosis of lung diseases.
-Although hospitals have accumulated a large number of raw radiology images and reports in Picture Archiving and Communication Systems and their related reports in Radiology Information Systems, it is not yet known how to effectively use them to learn the correlation between pathology categories and X-rays.
-In the last few years, deep learning methods showed remarkable results in chest X-ray image analysis [@apBChoyF; @PGi9g7yV].
-However, it is both costly and time-consuming to annotate a large-scale fully-labeled corpus to facilitate data-intensive deep learning models.
-As an alternative, Wang et al. [@PGi9g7yV] proposed to use weakly labeled images.
-To generate weak labels for X-ray images, they applied a series of natural language processing (NLP) techniques to the associated chest X-ray radiological reports.
-Specifically, they first extracted all diseases mentioned in the reports using a state-of-the-art NLP tool, then applied a newly-developed negation and uncertainty detection tool (NegBio) to filter negative and equivocal findings in the reports.
-Evaluation on three independent datasets demonstrated that NegBio is highly accurate for detecting negative and equivocal findings (~90% in F-measure, which balances precision and recall [@JmHFuXEM]).
-These highly-accurate results meet the need to generate a corpus with weak labels, which serves as a solid foundation for the later process of image classification.
-The resulting dataset [@odFR7ptt] consists of 112,120 frontal-view chest X-ray images from 30,805 patients, and each image is associated with one or more weakly-labeled pathology category (e.g. pneumonia and cardiomegaly) or "normal" otherwise.
-Further, Wang et al.
-[@PGi9g7yV] used this dataset with a unified weakly-supervised multi-label image classification framework, to detect common thoracic diseases.
+Rich clinical information is stored in EHRs.
+However, manually annotating a large set requires experts and is time consuming.
+For chest X-ray studies, a radiologist usually spends a few minutes per example. 
+Generating the number of examples needed for deep learning is infeasibly expensive.
+Instead, researchers may benefit from using text mining to generate annotations [@rw9nA3Y7], even if those annotations are of modest accuracy.
+Wang et al. [@PGi9g7yV] proposed to build predictive DL models through the use of images with *weak labels*.
+Such labels are automatically generated and not verified by humans, so they may be noisy or incomplete.
+In this case, they applied a series of natural language processing (NLP) techniques to the associated chest X-ray radiological reports. 
+They first extracted all diseases mentioned in the reports using a state-of-the-art NLP tool, then applied a newly-developed negation and uncertainty detection tool (NegBio [@gYxBO26g]) to filter negative and equivocal findings in the reports. 
+Evaluation on four independent datasets demonstrated that NegBio is highly accurate for detecting negative and equivocal findings (~90% in F-measure, which balances precision and recall [@JmHFuXEM]).
+The resulting dataset [@odFR7ptt] consisted of 112,120 frontal-view chest X-ray images from 30,805 patients, and each image was associated with one or more *text-mined* (weakly-labeled) pathology categories (e.g. pneumonia and cardiomegaly) or "no finding" otherwise.
+Further, Wang et al. [@PGi9g7yV] used this dataset with a unified weakly-supervised multi-label image classification framework, to detect common thoracic diseases. 
 It showed superior performance over a benchmark using fully-labeled data.
 
 With the exception of natural image-like problems (e.g. melanoma detection), biomedical imaging poses a number of challenges for deep learning.
@@ -1999,7 +1999,7 @@ To facilitate citation, we [defined](https://github.com/greenelab/deep-review/bl
 We supported citations to the following identifier types (in order of preference): DOIs, PubMed IDs, arXiv IDs, and URLs.
 References were automatically generated from citation metadata by querying APIs to generate [Citation Style Language](http://citationstyles.org/) (CSL) JSON items for each reference.
 [Pandoc](http://pandoc.org/) and [pandoc-citeproc](https://github.com/jgm/pandoc-citeproc) converted the markdown to HTML and PDF, while rendering the formatted citations and references.
-In total, referenced works consisted of 338 DOIs, 6 PubMed records, 121 arXiv manuscripts, and 44 URLs (webpages as well as manuscripts lacking standardized identifiers).
+In total, referenced works consisted of 339 DOIs, 6 PubMed records, 121 arXiv manuscripts, and 44 URLs (webpages as well as manuscripts lacking standardized identifiers).
 
 We implemented continuous analysis so the manuscript was automatically regenerated whenever the source changed [@Qh7xTLwz].
 We configured Travis CI -- a continuous integration service -- to fetch new citation metadata and rebuild the manuscript for every commit.

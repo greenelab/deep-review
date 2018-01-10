@@ -95,7 +95,6 @@ string	citation	standard_citation	citation_id
 @arxiv:1611.08373	arxiv:1611.08373	arxiv:1611.08373	dO844vZn
 @tag:Ragoza2016_protein	arxiv:1612.02751	arxiv:1612.02751	bNBiIiTt
 @tag:Segler2017_drug_design	arxiv:1701.01329	arxiv:1701.01329	8LWFFeYg
-@arxiv:1701.06599	arxiv:1701.06599	arxiv:1701.06599	apBChoyF
 @tag:Murdoch2017_automatic	arxiv:1702.02540	arxiv:1702.02540	10ViHstXn
 @tag:Zintgraf2017_visualizing	arxiv:1702.04595	arxiv:1702.04595	Kk20paR7
 @tag:Litjens2017_medimage_survey	arxiv:1702.05747	arxiv:1702.05747	LL5huVs3
@@ -125,6 +124,7 @@ string	citation	standard_citation	citation_id
 @arxiv:1709.02082	arxiv:1709.02082	arxiv:1709.02082	RHqbJgpe
 @arxiv:1710.10568v1	arxiv:1710.10568v1	arxiv:1710.10568v1	FMsqNIQ4
 @tag:WayGreene2017_eval	arxiv:1711.04828	arxiv:1711.04828	rMz1OFc6
+@arxiv:1712.05898	arxiv:1712.05898	arxiv:1712.05898	gYxBO26g
 @doi:10.1001/jama.2016.17216	doi:10.1001/jama.2016.17216	doi:10.1001/jama.2016.17216	1mJW6umJ
 @tag:Gulshan2016_dt	doi:10.1001/jama.2016.17216	doi:10.1001/jama.2016.17216	1mJW6umJ
 @doi:10.1002/9783527628766	doi:10.1002/9783527628766	doi:10.1002/9783527628766	17eGl2pn9
@@ -472,6 +472,7 @@ string	citation	standard_citation	citation_id
 @doi:10.2337/diab.35.2.237	doi:10.2337/diab.35.2.237	doi:10.2337/diab.35.2.237	ws1zvGoZ
 @doi:10.2337/diabetes.54.suppl_2.S68	doi:10.2337/diabetes.54.suppl_2.S68	doi:10.2337/diabetes.54.suppl_2.s68	WuOqsORY
 @doi:10.3109/10409238.2015.1135868	doi:10.3109/10409238.2015.1135868	doi:10.3109/10409238.2015.1135868	MmRGFVUu
+@doi:10.3115/1572392.1572411	doi:10.3115/1572392.1572411	doi:10.3115/1572392.1572411	rw9nA3Y7
 @doi:10.3233/978-1-61499-432-9-584	doi:10.3233/978-1-61499-432-9-584	doi:10.3233/978-1-61499-432-9-584	sePDg4mZ
 @tag:Mayr2016_deep_tox	doi:10.3389/fenvs.2015.00080	doi:10.3389/fenvs.2015.00080	Y1D0SZrO
 @doi:10.3389/fgene.2014.00342	doi:10.3389/fgene.2014.00342	doi:10.3389/fgene.2014.00342	ppGS5h4v
