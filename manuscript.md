@@ -27,7 +27,7 @@ author-meta:
 - Marwin H.S. Segler
 - Anthony Gitter
 - Casey S. Greene
-date-meta: '2018-01-10'
+date-meta: '2018-01-11'
 keywords:
 - deep learning
 - review
@@ -48,8 +48,8 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@1bfcd0b](https://github.com/greenelab/deep-review/tree/1bfcd0bb706345c45044325e14d95cf8499a842e)
-on January 10, 2018.
+from [greenelab/deep-review@67ce7d3](https://github.com/greenelab/deep-review/tree/67ce7d352154323b6e071bd99d64c857ea888680)
+on January 11, 2018.
 </em></small>
 
 ## Authors
@@ -340,7 +340,7 @@ Across fields, "off-the-shelf" implementations of these algorithms have produced
 
 Deep learning approaches grew from research in neural networks, which were first proposed in 1943 [@1HVDhhwpK] as a model for how our brains process information.
 The history of neural networks is interesting in its own right [@1G5eCiq4d].
-In neural networks, inputs are fed into a hidden layer, which feeds into one or more hidden layers, which eventually link to an output layer.
+In neural networks, inputs are fed into the input layer, which feeds into one or more hidden layers, which eventually link to an output layer.
 A layer consists of a set of nodes, usually called "features" or "units," which are connected via edges to the immediately earlier and the immediately deeper layers.
 The nodes of the input layer generally consist of the variables being measured in the dataset of interest -- for example, each node could represent the intensity value of a specific pixel in an image processing application or a gene expression value in a transcriptomics experiment.
 The neural networks used for deep learning have multiple hidden layers.

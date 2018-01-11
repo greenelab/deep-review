@@ -57081,6 +57081,31 @@
   },
   {
     "URL": "http://www.jmlr.org/papers/v9/vandermaaten08a.html",
+    "greycite-canonical-uri": null,
+    "title": "Visualizing Data using t-SNE",
+    "container-title": "Journal of Machine Learning Research",
+    "issued": {
+      "date-parts": [
+        [
+          2008
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "van der Maaten",
+        "given": "Laurens"
+      },
+      {
+        "family": "Hinton",
+        "given": "Geoffrey"
+      }
+    ],
+    "greycite-status": "Scanned",
+    "greycite-scanned": "2018-01-11 15:49:17",
+    "archives": [
+      "http://wayback.archive.org/web/http://www.jmlr.org/papers/v9/vandermaaten08a.html"
+    ],
     "type": "webpage",
     "id": "TGyu2Woj"
   },
