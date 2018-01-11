@@ -48,7 +48,7 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@67ce7d3](https://github.com/greenelab/deep-review/tree/67ce7d352154323b6e071bd99d64c857ea888680)
+from [greenelab/deep-review@1834510](https://github.com/greenelab/deep-review/tree/1834510826736991e50961a47f69f0b1e04e8dfa)
 on January 11, 2018.
 </em></small>
 
@@ -454,17 +454,8 @@ In healthcare, individuals are diagnosed with a disease or condition based on sy
 Once diagnosed with a disease, an individual might be assigned a stage based on another set of human-defined rules.
 While these rules are refined over time, the process is evolutionary and ad hoc, potentially impeding the identification of underlying biological mechanisms and their corresponding treatment interventions.
 
-Deep learning methods coupled with a large corpus of patient phenotypes may provide a more data-driven approach to patient categorization.
-A deep neural network has the potential to identify entirely new categories of health or disease that are only present when data from multiple lab tests are integrated.
-
-As an example, consider the condition Latent Autoimmune Diabetes in Adults
-(LADA; reviewed in [@WuOqsORY]).
-In the absence of a pre-specified disease definition, a deep neural network might have identified a subgroup of individuals with blood glucose levels that indicated diabetes as well as auto-antibodies, even though the individuals had never been diagnosed with type 1 diabetes -- the autoimmune form of the disease that arises in young people.
-Such a neural network would be identifying patients with LADA.
-As no such computational approach existed, LADA was actually identified by Groop et al. [@ws1zvGoZ].
-
-One should not regard recapitulation of existing disease categories as a gold-standard for deep learning results.
-Instead, a meaningful contribution to patient categorization would be to identify new shared mechanisms that would otherwise be obscured due to ad hoc historical definitions of disease.
+Deep learning methods applied to a large corpus of patient phenotypes may provide a meaningful and more data-driven approach to patient categorization.
+For example, they may identify new shared mechanisms that would otherwise be obscured due to ad hoc historical definitions of disease.
 Perhaps deep neural networks, by reevaluating data without the context of our assumptions, can reveal novel classes of treatable conditions.
 
 In spite of such optimism, the ability of deep learning models to indiscriminately extract predictive signals must also be assessed and operationalized with care.
@@ -558,16 +549,16 @@ In other domains, this has resulted in a minimal change in the estimated accurac
 
 Rich clinical information is stored in EHRs.
 However, manually annotating a large set requires experts and is time consuming.
-For chest X-ray studies, a radiologist usually spends a few minutes per example. 
+For chest X-ray studies, a radiologist usually spends a few minutes per example.
 Generating the number of examples needed for deep learning is infeasibly expensive.
 Instead, researchers may benefit from using text mining to generate annotations [@rw9nA3Y7], even if those annotations are of modest accuracy.
 Wang et al. [@PGi9g7yV] proposed to build predictive DL models through the use of images with *weak labels*.
 Such labels are automatically generated and not verified by humans, so they may be noisy or incomplete.
-In this case, they applied a series of natural language processing (NLP) techniques to the associated chest X-ray radiological reports. 
-They first extracted all diseases mentioned in the reports using a state-of-the-art NLP tool, then applied a newly-developed negation and uncertainty detection tool (NegBio [@gYxBO26g]) to filter negative and equivocal findings in the reports. 
+In this case, they applied a series of natural language processing (NLP) techniques to the associated chest X-ray radiological reports.
+They first extracted all diseases mentioned in the reports using a state-of-the-art NLP tool, then applied a newly-developed negation and uncertainty detection tool (NegBio [@gYxBO26g]) to filter negative and equivocal findings in the reports.
 Evaluation on four independent datasets demonstrated that NegBio is highly accurate for detecting negative and equivocal findings (~90% in F-measure, which balances precision and recall [@JmHFuXEM]).
 The resulting dataset [@odFR7ptt] consisted of 112,120 frontal-view chest X-ray images from 30,805 patients, and each image was associated with one or more *text-mined* (weakly-labeled) pathology categories (e.g. pneumonia and cardiomegaly) or "no finding" otherwise.
-Further, Wang et al. [@PGi9g7yV] used this dataset with a unified weakly-supervised multi-label image classification framework, to detect common thoracic diseases. 
+Further, Wang et al. [@PGi9g7yV] used this dataset with a unified weakly-supervised multi-label image classification framework, to detect common thoracic diseases.
 It showed superior performance over a benchmark using fully-labeled data.
 
 With the exception of natural image-like problems (e.g. melanoma detection), biomedical imaging poses a number of challenges for deep learning.
@@ -1999,7 +1990,7 @@ To facilitate citation, we [defined](https://github.com/greenelab/deep-review/bl
 We supported citations to the following identifier types (in order of preference): DOIs, PubMed IDs, arXiv IDs, and URLs.
 References were automatically generated from citation metadata by querying APIs to generate [Citation Style Language](http://citationstyles.org/) (CSL) JSON items for each reference.
 [Pandoc](http://pandoc.org/) and [pandoc-citeproc](https://github.com/jgm/pandoc-citeproc) converted the markdown to HTML and PDF, while rendering the formatted citations and references.
-In total, referenced works consisted of 345 DOIs, 6 PubMed records, 115 arXiv manuscripts, and 44 URLs (webpages as well as manuscripts lacking standardized identifiers).
+In total, referenced works consisted of 343 DOIs, 6 PubMed records, 115 arXiv manuscripts, and 44 URLs (webpages as well as manuscripts lacking standardized identifiers).
 
 We implemented continuous analysis so the manuscript was automatically regenerated whenever the source changed [@Qh7xTLwz].
 We configured Travis CI -- a continuous integration service -- to fetch new citation metadata and rebuild the manuscript for every commit.
