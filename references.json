@@ -55960,13 +55960,13 @@
     "accessed": {
       "date-parts": [
         [
-          2017,
-          11,
-          3
+          2018,
+          1,
+          11
         ]
       ]
     },
-    "id": "y9ONtSZ9",
+    "id": "RoOhUFKU",
     "title": "Secondary Use of EHR: Data Quality Issues and Informatics Opportunities",
     "author": [
       {
@@ -56001,20 +56001,20 @@
     "PMID": "21347133",
     "PMCID": "PMC3041534",
     "type": "article-journal",
-    "URL": "https://www.ncbi.nlm.nih.gov/pubmed/21347133"
+    "URL": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3041534/"
   },
   {
     "source": "PMC",
     "accessed": {
       "date-parts": [
         [
-          2017,
-          11,
-          3
+          2018,
+          1,
+          11
         ]
       ]
     },
-    "id": "11sli93ov",
+    "id": "7s3dpUrT",
     "title": "Impact of Electronic Health Record Systems on Information Integrity: Quality and Safety Implications",
     "author": [
       {
@@ -56038,20 +56038,20 @@
     "PMID": "24159271",
     "PMCID": "PMC3797550",
     "type": "article-journal",
-    "URL": "https://www.ncbi.nlm.nih.gov/pubmed/24159271"
+    "URL": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3797550/"
   },
   {
     "source": "PMC",
     "accessed": {
       "date-parts": [
         [
-          2017,
-          11,
-          3
+          2018,
+          1,
+          11
         ]
       ]
     },
-    "id": "FUIfIdE",
+    "id": "1GRT18Tt2",
     "title": "Causal Phenotype Discovery via Deep Networks",
     "author": [
       {
@@ -56094,20 +56094,20 @@
     "PMID": "26958203",
     "PMCID": "PMC4765623",
     "type": "article-journal",
-    "URL": "https://www.ncbi.nlm.nih.gov/pubmed/26958203"
+    "URL": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4765623/"
   },
   {
     "source": "PMC",
     "accessed": {
       "date-parts": [
         [
-          2017,
-          11,
-          3
+          2018,
+          1,
+          11
         ]
       ]
     },
-    "id": "4rTluXLs",
+    "id": "eAP2kxzn",
     "title": "Why Patient Matching Is a Challenge: Research on Master Patient Index (MPI) Data Discrepancies in Key Identifying Fields",
     "author": [
       {
@@ -56143,20 +56143,20 @@
     "PMID": "27134610",
     "PMCID": "PMC4832129",
     "type": "article-journal",
-    "URL": "https://www.ncbi.nlm.nih.gov/pubmed/27134610"
+    "URL": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4832129/"
   },
   {
     "source": "PMC",
     "accessed": {
       "date-parts": [
         [
-          2017,
-          11,
-          3
+          2018,
+          1,
+          11
         ]
       ]
     },
-    "id": "188FA7whS",
+    "id": "ybP8QCqL",
     "title": "Taming the Wild: A Unified Analysis of Hogwild!-Style Algorithms",
     "author": [
       {
@@ -56191,20 +56191,20 @@
     "PMID": "27330264",
     "PMCID": "PMC4907892",
     "type": "article-journal",
-    "URL": "https://www.ncbi.nlm.nih.gov/pubmed/27330264"
+    "URL": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4907892/"
   },
   {
     "source": "PMC",
     "accessed": {
       "date-parts": [
         [
-          2017,
-          12,
-          15
+          2018,
+          1,
+          11
         ]
       ]
     },
-    "id": "102FYgQFg",
+    "id": "rqGoVCuH",
     "title": "Bidirectional RNN for Medical Event Detection in Electronic Health Records",
     "author": [
       {
@@ -56231,7 +56231,7 @@
     "PMID": "27885364",
     "PMCID": "PMC5119627",
     "type": "article-journal",
-    "URL": "https://www.ncbi.nlm.nih.gov/pubmed/27885364"
+    "URL": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5119627/"
   },
   {
     "URL": "http://alifar76.github.io/sklearn-metrics/",

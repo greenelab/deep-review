@@ -48,7 +48,7 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@555e1ab](https://github.com/greenelab/deep-review/tree/555e1ab8f93a38eb4f5418f6553888010c790b3f)
+from [greenelab/deep-review@240f533](https://github.com/greenelab/deep-review/tree/240f5339e3eb1cb2cb4c8e8a4cef650256d562c0)
 on January 11, 2018.
 </em></small>
 
@@ -297,7 +297,7 @@ on January 11, 2018.
     · ![GitHub icon](images/github.svg){height="13px" width="13px"}
     [agitter](https://github.com/agitter)<br>
   <small>
-     Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison and Morgridge Institute for Research, Madison, WI
+     Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison; Morgridge Institute for Research, Madison, WI
      · Funded by NIH U54AI117924
   </small>
 
@@ -639,7 +639,7 @@ It is difficult for us to provide a strong statement on the broad utility of the
 Manuscripts in this area tend to compare algorithms applied to the same data but lack a comparison against overall best-practices for one or more tasks addressed by these methods.
 Techniques have been developed for free text medical notes [@XQtuRkTU], ICD and National Drug Codes [@4QDXEv4C; @zVoUcFPZ], and claims data [@TwvauiTv].
 Methods for neural embeddings learned from electronic health records have at least some ability to predict disease-disease associations and implicate genes with a statistical association with a disease [@1G2xP5yOM], but the evaluations performed did not differentiate between simple predictions (i.e. the same disease in different sites of the body) and non-intuitive ones.
-Jagannatha and Yu  [@102FYgQFg] further employed a bidirectional LSTM structure to extract adverse drug events from electronic health records, and Lin et al. [@8YmxYueq] investigated using CNN to extract temporal relations.
+Jagannatha and Yu  [@rqGoVCuH] further employed a bidirectional LSTM structure to extract adverse drug events from electronic health records, and Lin et al. [@8YmxYueq] investigated using CNN to extract temporal relations.
 While promising, a lack of rigorous evaluations of the real-world utility of these kinds of features makes current contributions in this area difficult to evaluate.
 Comparisons need to be performed to examine the true utility against leading approaches (i.e. algorithms and data) as opposed to simply evaluating multiple algorithms on the same potentially limited dataset.
 
@@ -732,10 +732,10 @@ Science is at best a tertiary priority, presenting challenges to EHR-based resea
 Although there is significant work in the literature around EHR data quality and the impact on research [@odRiFxnB], we focus on three types of challenges: local bias, wider standards, and legal issues.
 Note these problems are not restricted to EHRs but can also apply to any large biomedical dataset, e.g. clinical trial data.
 
-Even within the same healthcare system, EHRs can be used differently [@11sli93ov; @y9ONtSZ9].
+Even within the same healthcare system, EHRs can be used differently [@7s3dpUrT; @RoOhUFKU].
 Individual users have unique documentation and ordering patterns, with different departments and different hospitals having different priorities that code patients and introduce missing data in a non-random fashion [@7BctyA7f].
 Patient data may be kept across several "silos" within a single health system (e.g. separate nursing documentation, registries, etc.).
-Even the most basic task of matching patients across systems can be challenging due to data entry issues [@4rTluXLs].
+Even the most basic task of matching patients across systems can be challenging due to data entry issues [@eAP2kxzn].
 The situation is further exacerbated by the ongoing introduction, evolution, and migration of EHR systems, especially where reorganized and acquired healthcare facilities have to merge.
 Further, even the ostensibly least-biased data type, laboratory measurements, can be biased based by both the healthcare process and patient health state [@1C97CTU9S].
 As a result, EHR data can be less complete and less objective than expected.
@@ -1349,7 +1349,7 @@ Causal inference is often framed in terms of counterfactual question [@cpNVdlL7]
 Johansson et al.
 [@173ftiSzF] use deep neural networks to create representation models for covariates that capture nonlinear effects and show significant performance improvements over existing models.
 In a less formal approach, Kale et al.
-[@FUIfIdE] first create a deep neural network to model clinical time series and then analyze the relationship of the hidden features to the output using a causal approach.
+[@1GRT18Tt2] first create a deep neural network to model clinical time series and then analyze the relationship of the hidden features to the output using a causal approach.
 
 A common challenge for deep learning is the interpretability of the models and their predictions.
 The task of clinical decision making is necessarily risk-averse, so model interpretability is key.
@@ -1795,7 +1795,7 @@ Specialized hardware may be a difficult investment for those not solely interest
 
 Distributed computing is a general solution to intense computational requirements and has enabled many large-scale deep learning efforts.
 Some types of distributed computation [@xE3EYmck; @1XcexUAV] are not suitable for deep learning [@17cBimWgp], but much progress has been made.
-There now exist a number of algorithms [@17cBimWgp; @188FA7whS;
+There now exist a number of algorithms [@17cBimWgp; @ybP8QCqL;
 @w6CoVmFK], tools [@rmJZ2Aui; @rZnxDitd;
 @hOeUlCvS], and high-level libraries [@FwEK0msb; @y9IoEy4r] for deep learning in a distributed environment, and it is possible to train very complex networks with limited infrastructure [@4MZ2tmZ8].
 Besides handling very large networks, distributed or parallelized approaches offer other advantages, such as improved ensembling [@JUF9VoRD] or accelerated hyperparameter optimization [@wz83yfHF; @1FSwIjR9s].
@@ -1987,10 +1987,10 @@ We wrote the manuscript in markdown and tracked changes using git.
 Contributions were handled through GitHub, with individuals submitting "pull requests" to suggest additions to the manuscript.
 
 To facilitate citation, we [defined](https://github.com/greenelab/deep-review/blob/master/CONTRIBUTING.md#markdown) a markdown citation syntax.
-We supported citations to the following identifier types (in order of preference): DOIs, PubMed IDs, arXiv IDs, and URLs.
+We supported citations to the following identifier types (in order of preference): DOIs, PubMed Central IDs, PubMed IDs, arXiv IDs, and URLs.
 References were automatically generated from citation metadata by querying APIs to generate [Citation Style Language](http://citationstyles.org/) (CSL) JSON items for each reference.
 [Pandoc](http://pandoc.org/) and [pandoc-citeproc](https://github.com/jgm/pandoc-citeproc) converted the markdown to HTML and PDF, while rendering the formatted citations and references.
-In total, referenced works consisted of 343 DOIs, 6 PubMed records, 115 arXiv manuscripts, and 44 URLs (webpages as well as manuscripts lacking standardized identifiers).
+In total, referenced works consisted of 343 DOIs, 6 PubMed Central records, 0 PubMed records, 115 arXiv manuscripts, and 44 URLs (webpages as well as manuscripts lacking standardized identifiers).
 
 We implemented continuous analysis so the manuscript was automatically regenerated whenever the source changed [@Qh7xTLwz].
 We configured Travis CI -- a continuous integration service -- to fetch new citation metadata and rebuild the manuscript for every commit.
