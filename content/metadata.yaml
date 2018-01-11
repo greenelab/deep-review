@@ -35,7 +35,8 @@ author_info:
     name: Alexandr A. Kalinin
     orcid: 0000-0003-4563-3226
     email: akalinin@umich.edu
-    affiliations: Department of Computational Medicine and Bioinformatics, University of Michigan Medical School, Ann Arbor, MI
+    affiliations:
+      - Department of Computational Medicine and Bioinformatics, University of Michigan Medical School, Ann Arbor, MI
   - github: bdo311
     name: Brian T. Do
     orcid: 0000-0003-4992-2623
