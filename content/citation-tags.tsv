@@ -281,7 +281,7 @@ ghahramani_protect	arxiv:1707.02476
 uncertainty_types	arxiv:1703.04977
 uncertainty_multi_task	arxiv:1705.07115
 guo_calibration	arxiv:1706.04599
-platt_scaling	doi:10.1.1.41.1639
+platt_scaling	url:http://citeseer.ist.psu.edu/viewdoc/summary?doi=10.1.1.41.1639
 out_dist_baseline	arxiv:1610.02136
 temp_out_dist	arxiv:1706.02690
 ai_safety	arxiv:1606.06565
@@ -290,4 +290,4 @@ retinopathy_uncertainty	doi:10.1038/s41598-017-17876-z
 bayesian_hypernets	arxiv:1710.04759
 mcclure_bayesian	arxiv:1611.01639
 uncertainty_ensembles	arxiv:1612.01474
-domain_adapt_uncertainty	arXiv:1505.07818
+domain_adapt_uncertainty	arxiv:1505.07818
