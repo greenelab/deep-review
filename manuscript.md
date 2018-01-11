@@ -48,7 +48,7 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@240f533](https://github.com/greenelab/deep-review/tree/240f5339e3eb1cb2cb4c8e8a4cef650256d562c0)
+from [greenelab/deep-review@5c09cbe](https://github.com/greenelab/deep-review/tree/5c09cbef58e80415b8ce701b164fdcb1edeacc55)
 on January 11, 2018.
 </em></small>
 
@@ -541,8 +541,9 @@ The algorithm had about twice the error rate of a pathologist, but the errors we
 In this area, these algorithms may be ready to be incorporated into existing tools to aid pathologists and reduce the false negative rate.
 Ensembles of deep learning and human experts may help overcome some of the challenges presented by data limitations.
 
-One source of training examples with rich clinical annotations is electronic health records.
-Recently, Lee et al. [@SxsZyrVM] developed an approach to distinguish individuals with age-related macular degeneration from control individuals.
+One source of training examples with rich phenotypical annotations is the EHR.
+Billing information in the form of ICD codes are simple annotations but phenotypic algorithms can combine laboratory tests, medication prescriptions, and patient notes to generate more reliable phenotypes.
+Recently, Lee et al.[@SxsZyrVM] developed an approach to distinguish individuals with age-related macular degeneration from control individuals.
 They trained a deep neural network on approximately 100,000 images extracted from structured electronic health records, reaching greater than 93% accuracy.
 The authors used their test set to evaluate when to stop training.
 In other domains, this has resulted in a minimal change in the estimated accuracy [@CCS5KSIM], but we recommend the use of an independent test set whenever feasible.
