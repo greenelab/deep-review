@@ -76,9 +76,10 @@ Therefore, citations must be of the following form: `@source:identifier`, where 
 When choosing which source to use for a citation, we recommend the following order:
 
 1. DOI (Digital Object Identifier), cite like `@doi:10.15363/thinklab.4`.
-2. PubMed ID, cite like `@pmid:26158728`.
-3. _arXiv_ ID, cite like `@arxiv:1508.06576v2`.
-4. URL / webpage, cite like `@url:http://openreview.net/pdf?id=Sk-oDY9ge`.
+2. PubMed Central ID, cite like `@pmcid:PMC4497619`.
+3. PubMed ID, cite like `@pmid:26158728`.
+4. _arXiv_ ID, cite like `@arxiv:1508.06576v2`.
+5. URL / webpage, cite like `@url:http://openreview.net/pdf?id=Sk-oDY9ge`.
 
 Cite multiple items at once like:
 
@@ -87,6 +88,8 @@ Here is a sentence with several citations [@doi:10.15363/thinklab.4; @pmid:26158
 ```
 
 Note that multiple citations must be semicolon separated.
+Be careful not to cite the same study using identifiers from multiple sources.
+For example, the following citations all refer to the same study, but will be treated as separate references: `[@doi:10.7717/peerj.705; @pmcid:PMC4304851; @pmid:25648772]`.
 
 #### Citation tags
 
@@ -135,9 +138,13 @@ initials: DSH  # strongly suggested
 orcid: 0000-0002-3012-7446  # mandatory
 twitter: dhimmel  # optional
 email: daniel.himmelstein@gmail.com  # suggested
-affiliations: Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania  # strongly suggested
+affiliations:  # as a list, strongly suggested
+  - Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania
+  - Department of Biological & Medical Informatics, University of California, San Francisco
 funders: GBMF4552  # optional
 ```
+
+Note that `affiliations` should be a list to allow for multiple affiliations per author.
 
 ## Manubot feedback
 
@@ -154,5 +161,6 @@ For additional examples, check out existing manuscripts that use the Manubot:
 + The Meta Review ([source](https://github.com/greenelab/meta-review), [manuscript](https://greenelab.github.io/meta-review/))
 + The Project Rephetio Manuscript ([source](https://github.com/dhimmel/rephetio-manuscript/), [manuscript](https://dhimmel.github.io/rephetio-manuscript/))
 + A Literature Review for Project Planning by David Slochower ([source](https://github.com/slochower/synthetic-motor-literature), [manuscript](https://slochower.github.io/synthetic-motor-literature/))
++ The Manubot 2018 Development Proposal ([source](https://github.com/greenelab/manufund-2018), [manuscript](https://greenelab.github.io/manufund-2018/))
 
 If you are using the Manubot, feel free to submit a pull request to add your manuscript to the list above.
