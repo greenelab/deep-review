@@ -48,7 +48,7 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@1834510](https://github.com/greenelab/deep-review/tree/1834510826736991e50961a47f69f0b1e04e8dfa)
+from [greenelab/deep-review@555e1ab](https://github.com/greenelab/deep-review/tree/555e1ab8f93a38eb4f5418f6553888010c790b3f)
 on January 11, 2018.
 </em></small>
 
@@ -2028,9 +2028,10 @@ The remaining authors have no competing interests to declare.
 
 ### Acknowledgements
 
-We gratefully acknowledge Christof Angermueller, Kumardeep Chaudhary, Gökcen Eraslan, Michael M. Hoffman, Mikael Huss, Bharath Ramsundar and Xun Zhu for their discussion of the manuscript and reviewed papers on GitHub.
-We would like to thank Zhiyong Lu for revisions to the text that were not captured on GitHub as well as GitHub users aaronsheldon and swamidass who contributed text but did not formally approve the manuscript.
+We gratefully acknowledge Christof Angermueller, Kumardeep Chaudhary, Gökcen Eraslan, Mikael Huss, Bharath Ramsundar and Xun Zhu for their discussion of the manuscript and reviewed papers on GitHub.
+We would like to thank Aaron Sheldon, who contributed text but did not formally approve the manuscript.
 We would like to thank Anna Greene for a careful proofreading of the manuscript in advance of the first submission.
+We would like to thank Robert Gieseke, Ruibang Luo, and Sourav Singh for correcting typos, formatting, and references.
 Finally, we acknowledge funding from the Gordon and Betty Moore Foundation awards GBMF4552 (C.S.G. and D.S.H.) and GBMF4563 (D.J.H.);
 the National Institutes of Health awards DP2GM123485 (A.K.), R01AI116794 (B.K.B.), R01GM089652 (A.E.C.), R01GM089753 (J.X.), T32GM007753 (B.T.D.), and U54AI117924 (A.G.);
 the National Science Foundation awards 1245632 (G.L.R.), 1531594 (E.M.C.), and 1564955 (J.X.);
