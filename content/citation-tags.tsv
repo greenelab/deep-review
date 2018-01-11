@@ -286,3 +286,10 @@ out_dist_baseline	arxiv:1610.02136
 temp_out_dist	arxiv:1706.02690
 ai_safety	arxiv:1606.06565
 strong_adversary	arxiv:1705.07263
+test_time	arxiv:1506.02142
+retinopathy_uncertainty	doi:10.1038/s41598-017-17876-z
+bayesian_hypernets	arxiv:1710.04759
+mcclure_bayesian	arXiv:1611.01639
+uncertainty_ensembles	arXiv:1612.01474
+domain_adapt_uncertainty	url:http://jmlr.org/papers/v17/15-239.html
+gal_thesis	url:http://mlg.eng.cam.ac.uk/yarin/thesis/thesis.pdf
