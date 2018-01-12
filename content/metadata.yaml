@@ -17,6 +17,7 @@ author_info:
     email: traversc@gmail.com
     affiliations:
       - Molecular Biosciences and Bioengineering Graduate Program, University of Hawaii at Manoa, Honolulu, HI
+    symbol_str: "☯"
   - github: dhimmel
     name: Daniel S. Himmelstein
     orcid: 0000-0002-3012-7446
@@ -179,6 +180,7 @@ author_info:
       - Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison
       - Morgridge Institute for Research, Madison, WI
     funders: NIH U54AI117924
+    symbol_str: "†"
   - github: cgreene
     name: Casey S. Greene
     orcid: 0000-0001-8713-9213
@@ -186,3 +188,4 @@ author_info:
     affiliations:
       - Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA
     funders: GBMF GBMF4552
+    symbol_str: "†"
