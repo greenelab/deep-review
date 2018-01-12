@@ -942,7 +942,7 @@
     "type": "webpage",
     "standard_citation": "url:https://nihcc.app.box.com/v/ChestXray-NIHCC"
   },
-{
+  {
     "standard_citation": "doi:10.3389/fgene.2014.00342",
     "type": "article-journal",
     "title": "Large-scale integration of small-molecule induced genome-wide transcriptional responses, Kinome-wide binding affinities and cell-growth inhibition profiles reveal global trends characterizing systems-level drug action",
