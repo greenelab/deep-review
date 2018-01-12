@@ -48,7 +48,7 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@0664426](https://github.com/greenelab/deep-review/tree/06644264ef43d95ad4b5147ae82fad9fdab596f9)
+from [greenelab/deep-review@08d89d8](https://github.com/greenelab/deep-review/tree/08d89d83d8bebaf6565b6784b385abda4ab61512)
 on January 12, 2018.
 </em></small>
 
@@ -56,7 +56,7 @@ on January 12, 2018.
 
 
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-5577-3516)
-Travers Ching<sup>1,</sup>,
+Travers Ching<sup>1,☯</sup>,
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-3012-7446)
 Daniel S. Himmelstein<sup>2</sup>,
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-6700-1468)
@@ -106,9 +106,9 @@ Laura K. Wiley<sup>21</sup>,
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-8008-0546)
 Marwin H.S. Segler<sup>22</sup>,
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-5324-9833)
-Anthony Gitter<sup>23,24,</sup>,
+Anthony Gitter<sup>23,24,†</sup>,
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-8713-9213)
-Casey S. Greene<sup>2,</sup>
+Casey S. Greene<sup>2,†</sup>
 
 <sup>☯</sup> --- Author order was determined with a randomized algorithm<br>
 <sup>†</sup> --- To whom correspondence should be addressed: `gitter` at `biostat.wisc.edu` (AG) and `csgreene` at `upenn.edu` (CSG)
