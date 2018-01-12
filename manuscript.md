@@ -48,7 +48,7 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@08d89d8](https://github.com/greenelab/deep-review/tree/08d89d83d8bebaf6565b6784b385abda4ab61512)
+from [greenelab/deep-review@cd1577e](https://github.com/greenelab/deep-review/tree/cd1577eac3ee85ad2dc2150ec2f0dae5d94dc8ef)
 on January 12, 2018.
 </em></small>
 
@@ -98,7 +98,7 @@ Dave DeCaprio<sup>18</sup>,
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-5796-7453)
 Yanjun Qi<sup>12</sup>,
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-3084-2287)
-Anshul Kundaje<sup>19</sup>,
+Anshul Kundaje<sup>14,19</sup>,
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-9309-8331)
 Yifan Peng<sup>20</sup>,
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-6681-9754)
@@ -133,7 +133,7 @@ Casey S. Greene<sup>2,†</sup>
 16. Department of Computer Science, Trinity University, San Antonio, TX
 17. Department of Wildlife Ecology and Conservation, University of Florida, Gainesville, FL
 18. ClosedLoop.ai, Austin, TX
-19. Department of Genetics and Department of Computer Science, Stanford University, Stanford, CA
+19. Department of Genetics, Stanford University, Stanford, CA
 20. National Center for Biotechnology Information and National Library of Medicine, National Institutes of Health, Bethesda, MD
 21. Division of Biomedical Informatics and Personalized Medicine, University of Colorado School of Medicine, Aurora, CO
 22. Institute of Organic Chemistry, Westfälische Wilhelms-Universität Münster, Münster, Germany
@@ -967,7 +967,7 @@ DeepPPI [@rVgq22nD] made PPI predictions from a set of sequence and composition 
 Sun et al. [@3nZqSy6z] applied autocovariances, a coding scheme that returns uniform-size vectors describing the covariance between physicochemical properties of the protein sequence at various positions.
 Wang et al. [@T2lbgFlY] used deep learning as an intermediate step in PPI prediction.
 They examined 70 amino acid protein sequences from each of which they extracted 1260 features.
-A stacked sparse autoencoder with two hidden layers was then used to reduce feature dimensions and noisiness before a novel type of classification vector machine made PPI predictions. 
+A stacked sparse autoencoder with two hidden layers was then used to reduce feature dimensions and noisiness before a novel type of classification vector machine made PPI predictions.
 
 Beyond predicting whether or not two proteins interact, Du et al. [@2Ftmbvt4] employed a deep learning approach to predict the residue contacts between two interacting proteins.
 Using features that describe how similar a protein's residue is relative to similar proteins at the same position, the authors extracted uniform-length features for each residue in the protein sequence.
@@ -992,7 +992,7 @@ MHCflurry adds placeholder amino acids to transform variable-length peptides to 
 In training the MHCflurry feed-forward neural network [@1Hk3NTSn2], the authors imputed missing MHC-peptide binding affinities using a Gibbs sampling method, showing that imputation improves performance for data-sets with roughly 100 or fewer training examples.
 MHCflurry's imputation method increases its performance on poorly characterized alleles, making it competitive with NetMHCpan for this task.
 Kuksa et al. [@FRl0MTLd] developed a shallow, higher-order neural network (HONN) comprised of both mean and covariance hidden units to capture some of the higher-order dependencies between amino acid locations.
-Pretraining this HONN with a semi-restricted Boltzmann machine, the authors found that the performance of the HONN exceeded that of a simple DNN, as well as that of NetMHC.
+Pretraining this HONN with a semi-restricted Boltzmann machine, the authors found that the performance of the HONN exceeded that of a simple deep neural network, as well as that of NetMHC.
 
 Deep learning's unique flexibility was recently leveraged by Bhattacharya et al. [@1aswoG70], who used a gated RNN method called MHCnuggets to overcome the difficulty of multiple length peptides.
 Under this framework, they used smoothed sparse encoding to represent amino acids individually.
