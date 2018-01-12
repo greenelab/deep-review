@@ -151,7 +151,8 @@ author_info:
     orcid: 0000-0003-3084-2287
     email: akundaje@stanford.edu
     affiliations:
-      - Department of Genetics and Department of Computer Science, Stanford University, Stanford, CA
+      - Department of Genetics, Stanford University, Stanford, CA
+      - Department of Computer Science, Stanford University, Stanford, CA
     funders: NIH DP2GM123485
   - github: yfpeng
     name: Yifan Peng
