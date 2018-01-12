@@ -49,3 +49,11 @@ author_info:
       - Department of Medical Biophysics, Toronto, ON, Canada
       - Department of Computer Science, Toronto, ON, Canada
     funders: NSERC RGPIN-2015-3948
+  - github: SriniTuraga
+    name: Srinivas C. Turaga
+    initials: SCT
+    orcid: 0000-0003-3247-6487
+    email: turagas@janelia.hhmi.org
+    affiliations:
+      - Howard Hughes Medical Institute, Janelia Research Campus
+    funders: Howard Hughes Medical Institute
