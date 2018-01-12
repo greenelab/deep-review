@@ -27,7 +27,7 @@ author-meta:
 - Marwin H.S. Segler
 - Anthony Gitter
 - Casey S. Greene
-date-meta: '2018-01-11'
+date-meta: '2018-01-12'
 keywords:
 - deep learning
 - review
@@ -48,269 +48,99 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@5c09cbe](https://github.com/greenelab/deep-review/tree/5c09cbef58e80415b8ce701b164fdcb1edeacc55)
-on January 11, 2018.
+from [greenelab/deep-review@0664426](https://github.com/greenelab/deep-review/tree/06644264ef43d95ad4b5147ae82fad9fdab596f9)
+on January 12, 2018.
 </em></small>
 
 ## Authors
 
 
+[![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-5577-3516)
+Travers Ching<sup>1,</sup>,
+[![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-3012-7446)
+Daniel S. Himmelstein<sup>2</sup>,
+[![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-6700-1468)
+Brett K. Beaulieu-Jones<sup>3</sup>,
+[![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-4563-3226)
+Alexandr A. Kalinin<sup>4</sup>,
+[![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-4992-2623)
+Brian T. Do<sup>5</sup>,
+[![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-0503-9348)
+Gregory P. Way<sup>2</sup>,
+[![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-8362-100X)
+Enrico Ferrero<sup>6</sup>,
+[![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-1126-1479)
+Paul-Michael Agapow<sup>7</sup>,
+[![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-1871-6846)
+Wei Xie<sup>8</sup>,
+[![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-1763-5750)
+Gail L. Rosen<sup>9</sup>,
+[![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-8690-9554)
+Benjamin J. Lengerich<sup>10</sup>,
+[![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-1633-5780)
+Johnny Israeli<sup>11</sup>,
+[![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-0811-0944)
+Jack Lanchantin<sup>12</sup>,
+[![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-0568-298X)
+Stephen Woloszynek<sup>9</sup>,
+[![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-1555-8261)
+Anne E. Carpenter<sup>13</sup>,
+[![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-6443-4671)
+Avanti Shrikumar<sup>14</sup>,
+[![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-7111-4839)
+Jinbo Xu<sup>15</sup>,
+[![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-3877-0433)
+Evan M. Cofer<sup>16</sup>,
+[![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-3332-9307)
+David J. Harris<sup>17</sup>,
+[![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-8931-9461)
+Dave DeCaprio<sup>18</sup>,
+[![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-5796-7453)
+Yanjun Qi<sup>12</sup>,
+[![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-3084-2287)
+Anshul Kundaje<sup>19</sup>,
+[![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-9309-8331)
+Yifan Peng<sup>20</sup>,
+[![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-6681-9754)
+Laura K. Wiley<sup>21</sup>,
+[![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-8008-0546)
+Marwin H.S. Segler<sup>22</sup>,
+[![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-5324-9833)
+Anthony Gitter<sup>23,24,</sup>,
+[![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-8713-9213)
+Casey S. Greene<sup>2,</sup>
 
-+ **Travers Ching**<br>
-    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
-    [0000-0002-5577-3516](https://orcid.org/0000-0002-5577-3516)
-    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
-    [traversc](https://github.com/traversc)<br>
-  <small>
-     Molecular Biosciences and Bioengineering Graduate Program, University of Hawaii at Manoa, Honolulu, HI
-  </small>
+<sup>☯</sup> --- Author order was determined with a randomized algorithm<br>
+<sup>†</sup> --- To whom correspondence should be addressed: `gitter` at `biostat.wisc.edu` (AG) and `csgreene` at `upenn.edu` (CSG)
+<small>
 
-+ **Daniel S. Himmelstein**<br>
-    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
-    [0000-0002-3012-7446](https://orcid.org/0000-0002-3012-7446)
-    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
-    [dhimmel](https://github.com/dhimmel)<br>
-  <small>
-     Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA
-     · Funded by GBMF GBMF4552
-  </small>
 
-+ **Brett K. Beaulieu-Jones**<br>
-    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
-    [0000-0002-6700-1468](https://orcid.org/0000-0002-6700-1468)
-    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
-    [brettbj](https://github.com/brettbj)<br>
-  <small>
-     Genomics and Computational Biology Graduate Group, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA
-     · Funded by NIH R01AI116794
-  </small>
+1. Molecular Biosciences and Bioengineering Graduate Program, University of Hawaii at Manoa, Honolulu, HI
+2. Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA
+3. Genomics and Computational Biology Graduate Group, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA
+4. Department of Computational Medicine and Bioinformatics, University of Michigan Medical School, Ann Arbor, MI
+5. Harvard Medical School, Boston, MA
+6. Computational Biology and Stats, Target Sciences, GlaxoSmithKline, Stevenage, United Kingdom
+7. Data Science Institute, Imperial College London, London, United Kingdom
+8. Electrical Engineering and Computer Science, Vanderbilt University, Nashville, TN
+9. Ecological and Evolutionary Signal-processing and Informatics Laboratory, Department of Electrical and Computer Engineering, Drexel University, Philadelphia, PA
+10. Computational Biology Department, School of Computer Science, Carnegie Mellon University, Pittsburgh, PA
+11. Biophysics Program, Stanford University, Stanford, CA
+12. Department of Computer Science, University of Virginia, Charlottesville, VA
+13. Imaging Platform, Broad Institute of Harvard and MIT, Cambridge, MA
+14. Department of Computer Science, Stanford University, Stanford, CA
+15. Toyota Technological Institute at Chicago, Chicago, IL
+16. Department of Computer Science, Trinity University, San Antonio, TX
+17. Department of Wildlife Ecology and Conservation, University of Florida, Gainesville, FL
+18. ClosedLoop.ai, Austin, TX
+19. Department of Genetics and Department of Computer Science, Stanford University, Stanford, CA
+20. National Center for Biotechnology Information and National Library of Medicine, National Institutes of Health, Bethesda, MD
+21. Division of Biomedical Informatics and Personalized Medicine, University of Colorado School of Medicine, Aurora, CO
+22. Institute of Organic Chemistry, Westfälische Wilhelms-Universität Münster, Münster, Germany
+23. Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison
+24. Morgridge Institute for Research, Madison, WI
 
-+ **Alexandr A. Kalinin**<br>
-    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
-    [0000-0003-4563-3226](https://orcid.org/0000-0003-4563-3226)
-    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
-    [alxndrkalinin](https://github.com/alxndrkalinin)<br>
-  <small>
-     Department of Computational Medicine and Bioinformatics, University of Michigan Medical School, Ann Arbor, MI
-  </small>
-
-+ **Brian T. Do**<br>
-    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
-    [0000-0003-4992-2623](https://orcid.org/0000-0003-4992-2623)
-    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
-    [bdo311](https://github.com/bdo311)<br>
-  <small>
-     Harvard Medical School, Boston, MA
-     · Funded by NIH T32GM007753
-  </small>
-
-+ **Gregory P. Way**<br>
-    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
-    [0000-0002-0503-9348](https://orcid.org/0000-0002-0503-9348)
-    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
-    [gwaygenomics](https://github.com/gwaygenomics)<br>
-  <small>
-     Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA
-  </small>
-
-+ **Enrico Ferrero**<br>
-    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
-    [0000-0002-8362-100X](https://orcid.org/0000-0002-8362-100X)
-    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
-    [enricoferrero](https://github.com/enricoferrero)<br>
-  <small>
-     Computational Biology and Stats, Target Sciences, GlaxoSmithKline, Stevenage, United Kingdom
-  </small>
-
-+ **Paul-Michael Agapow**<br>
-    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
-    [0000-0003-1126-1479](https://orcid.org/0000-0003-1126-1479)
-    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
-    [agapow](https://github.com/agapow)<br>
-  <small>
-     Data Science Institute, Imperial College London, London, United Kingdom
-  </small>
-
-+ **Wei Xie**<br>
-    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
-    [0000-0002-1871-6846](https://orcid.org/0000-0002-1871-6846)
-    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
-    [xieconnect](https://github.com/xieconnect)<br>
-  <small>
-     Electrical Engineering and Computer Science, Vanderbilt University, Nashville, TN
-  </small>
-
-+ **Gail L. Rosen**<br>
-    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
-    [0000-0003-1763-5750](https://orcid.org/0000-0003-1763-5750)
-    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
-    [gailrosen](https://github.com/gailrosen)<br>
-  <small>
-     Ecological and Evolutionary Signal-processing and Informatics Laboratory, Department of Electrical and Computer Engineering, Drexel University, Philadelphia, PA
-     · Funded by NSF 1245632
-  </small>
-
-+ **Benjamin J. Lengerich**<br>
-    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
-    [0000-0001-8690-9554](https://orcid.org/0000-0001-8690-9554)
-    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
-    [blengerich](https://github.com/blengerich)<br>
-  <small>
-     Computational Biology Department, School of Computer Science, Carnegie Mellon University, Pittsburgh, PA
-  </small>
-
-+ **Johnny Israeli**<br>
-    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
-    [0000-0003-1633-5780](https://orcid.org/0000-0003-1633-5780)
-    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
-    [jisraeli](https://github.com/jisraeli)<br>
-  <small>
-     Biophysics Program, Stanford University, Stanford, CA
-  </small>
-
-+ **Jack Lanchantin**<br>
-    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
-    [0000-0003-0811-0944](https://orcid.org/0000-0003-0811-0944)
-    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
-    [jacklanchantin](https://github.com/jacklanchantin)<br>
-  <small>
-     Department of Computer Science, University of Virginia, Charlottesville, VA
-  </small>
-
-+ **Stephen Woloszynek**<br>
-    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
-    [0000-0003-0568-298X](https://orcid.org/0000-0003-0568-298X)
-    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
-    [sw1](https://github.com/sw1)<br>
-  <small>
-     Ecological and Evolutionary Signal-processing and Informatics Laboratory, Department of Electrical and Computer Engineering, Drexel University, Philadelphia, PA
-  </small>
-
-+ **Anne E. Carpenter**<br>
-    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
-    [0000-0003-1555-8261](https://orcid.org/0000-0003-1555-8261)
-    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
-    [annecarpenter](https://github.com/annecarpenter)<br>
-  <small>
-     Imaging Platform, Broad Institute of Harvard and MIT, Cambridge, MA
-     · Funded by NIH R01GM089652
-  </small>
-
-+ **Avanti Shrikumar**<br>
-    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
-    [0000-0002-6443-4671](https://orcid.org/0000-0002-6443-4671)
-    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
-    [AvantiShri](https://github.com/AvantiShri)<br>
-  <small>
-     Department of Computer Science, Stanford University, Stanford, CA
-  </small>
-
-+ **Jinbo Xu**<br>
-    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
-    [0000-0001-7111-4839](https://orcid.org/0000-0001-7111-4839)
-    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
-    [j3xugit](https://github.com/j3xugit)<br>
-  <small>
-     Toyota Technological Institute at Chicago, Chicago, IL
-     · Funded by NIH R01GM089753, NSF 1564955
-  </small>
-
-+ **Evan M. Cofer**<br>
-    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
-    [0000-0003-3877-0433](https://orcid.org/0000-0003-3877-0433)
-    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
-    [evancofer](https://github.com/evancofer)<br>
-  <small>
-     Department of Computer Science, Trinity University, San Antonio, TX
-     · Funded by NSF 1531594
-  </small>
-
-+ **David J. Harris**<br>
-    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
-    [0000-0003-3332-9307](https://orcid.org/0000-0003-3332-9307)
-    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
-    [davharris](https://github.com/davharris)<br>
-  <small>
-     Department of Wildlife Ecology and Conservation, University of Florida, Gainesville, FL
-     · Funded by GBMF GBMF4563
-  </small>
-
-+ **Dave DeCaprio**<br>
-    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
-    [0000-0001-8931-9461](https://orcid.org/0000-0001-8931-9461)
-    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
-    [DaveDeCaprio](https://github.com/DaveDeCaprio)<br>
-  <small>
-     ClosedLoop.ai, Austin, TX
-  </small>
-
-+ **Yanjun Qi**<br>
-    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
-    [0000-0002-5796-7453](https://orcid.org/0000-0002-5796-7453)
-    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
-    [qiyanjun](https://github.com/qiyanjun)<br>
-  <small>
-     Department of Computer Science, University of Virginia, Charlottesville, VA
-  </small>
-
-+ **Anshul Kundaje**<br>
-    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
-    [0000-0003-3084-2287](https://orcid.org/0000-0003-3084-2287)
-    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
-    [akundaje](https://github.com/akundaje)<br>
-  <small>
-     Department of Genetics and Department of Computer Science, Stanford University, Stanford, CA
-     · Funded by NIH DP2GM123485
-  </small>
-
-+ **Yifan Peng**<br>
-    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
-    [0000-0001-9309-8331](https://orcid.org/0000-0001-9309-8331)
-    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
-    [yfpeng](https://github.com/yfpeng)<br>
-  <small>
-     National Center for Biotechnology Information and National Library of Medicine, National Institutes of Health, Bethesda, MD
-     · Funded by National Institutes of Health Intramural Research Program and National Library of Medicine
-  </small>
-
-+ **Laura K. Wiley**<br>
-    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
-    [0000-0001-6681-9754](https://orcid.org/0000-0001-6681-9754)
-    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
-    [laurakwiley](https://github.com/laurakwiley)<br>
-  <small>
-     Division of Biomedical Informatics and Personalized Medicine, University of Colorado School of Medicine, Aurora, CO
-  </small>
-
-+ **Marwin H.S. Segler**<br>
-    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
-    [0000-0001-8008-0546](https://orcid.org/0000-0001-8008-0546)
-    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
-    [mrwns](https://github.com/mrwns)<br>
-  <small>
-     Institute of Organic Chemistry, Westfälische Wilhelms-Universität Münster, Münster, Germany
-  </small>
-
-+ **Anthony Gitter**<br>
-    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
-    [0000-0002-5324-9833](https://orcid.org/0000-0002-5324-9833)
-    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
-    [agitter](https://github.com/agitter)<br>
-  <small>
-     Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison; Morgridge Institute for Research, Madison, WI
-     · Funded by NIH U54AI117924
-  </small>
-
-+ **Casey S. Greene**<br>
-    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
-    [0000-0001-8713-9213](https://orcid.org/0000-0001-8713-9213)
-    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
-    [cgreene](https://github.com/cgreene)<br>
-  <small>
-     Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA
-     · Funded by GBMF GBMF4552
-  </small>
-
+</small>
 
 
 ## Abstract {.page_break_before}

@@ -1,5 +1,5 @@
 {
-  "date": "January 11, 2018",
+  "date": "January 12, 2018",
   "authors": [
     {
       "github": "traversc",
@@ -9,6 +9,7 @@
       "affiliations": [
         "Molecular Biosciences and Bioengineering Graduate Program, University of Hawaii at Manoa, Honolulu, HI"
       ],
+      "symbol_str": "\u262f",
       "affiliation_numbers": [
         1
       ]
@@ -321,6 +322,7 @@
         "Morgridge Institute for Research, Madison, WI"
       ],
       "funders": "NIH U54AI117924",
+      "symbol_str": "\u2020",
       "affiliation_numbers": [
         23,
         24
@@ -335,6 +337,7 @@
         "Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA"
       ],
       "funders": "GBMF GBMF4552",
+      "symbol_str": "\u2020",
       "affiliation_numbers": [
         2
       ]
@@ -440,7 +443,7 @@
   ],
   "ci_source": {
     "repo_slug": "greenelab/deep-review",
-    "commit": "5c09cbef58e80415b8ce701b164fdcb1edeacc55"
+    "commit": "06644264ef43d95ad4b5147ae82fad9fdab596f9"
   },
   "manuscript_stats": {
     "reference_counts": {
@@ -450,6 +453,6 @@
       "url": 44,
       "total": 508
     },
-    "word_count": 30096
+    "word_count": 30091
   }
 }
