@@ -168,6 +168,7 @@ string	citation	standard_citation	citation_id
 @tag:Rosenberg2015_synthetic_seqs	doi:10.1016/j.cell.2015.09.054	doi:10.1016/j.cell.2015.09.054	mlqKTlZY
 @tag:Gaublomme2015_th17	doi:10.1016/j.cell.2015.11.009	doi:10.1016/j.cell.2015.11.009	1HPu3R2B4
 @doi:10.1016/j.cels.2016.04.013	doi:10.1016/j.cels.2016.04.013	doi:10.1016/j.cels.2016.04.013	6XtEfQMC
+@doi:10.1016/j.conb.2010.07.004	doi:10.1016/j.conb.2010.07.004	doi:10.1016/j.conb.2010.07.004	1bJ0G7FE
 @doi:10.1016/j.copbio.2016.04.003	doi:10.1016/j.copbio.2016.04.003	doi:10.1016/j.copbio.2016.04.003	hkKO4QYl
 @doi:10.1016/j.drudis.2006.06.016	doi:10.1016/j.drudis.2006.06.016	doi:10.1016/j.drudis.2006.06.016	1D6emOV6q
 @doi:10.1016/j.ijmedinf.2016.09.014	doi:10.1016/j.ijmedinf.2016.09.014	doi:10.1016/j.ijmedinf.2016.09.014	1Ar4f4vfR
@@ -187,6 +188,7 @@ string	citation	standard_citation	citation_id
 @doi:10.1016/j.neubiorev.2010.07.002	doi:10.1016/j.neubiorev.2010.07.002	doi:10.1016/j.neubiorev.2010.07.002	sOBzMC57
 @tag:Lisboa2006_review	doi:10.1016/j.neunet.2005.10.007	doi:10.1016/j.neunet.2005.10.007	qxxwkSAT
 @tag:Schmidhuber2014_dnn_overview	doi:10.1016/j.neunet.2014.09.003	doi:10.1016/j.neunet.2014.09.003	BQS8ClV0
+@doi:10.1016/j.neuron.2017.06.011	doi:10.1016/j.neuron.2017.06.011	doi:10.1016/j.neuron.2017.06.011	Oc2wJ1JO
 @tag:Pratt2016_dr	doi:10.1016/j.procs.2016.07.014	doi:10.1016/j.procs.2016.07.014	ayTsooEM
 @doi:10.1016/j.tig.2015.05.007	doi:10.1016/j.tig.2015.05.007	doi:10.1016/j.tig.2015.05.007	J0PJHcHK
 @doi:10.1016/j.ymeth.2016.06.001	doi:10.1016/j.ymeth.2016.06.001	doi:10.1016/j.ymeth.2016.06.001	2Ftmbvt4
@@ -236,6 +238,7 @@ string	citation	standard_citation	citation_id
 @doi:10.1038/nmeth.4182	doi:10.1038/nmeth.4182	doi:10.1038/nmeth.4182	On4vW5aU
 @tag:Buggenthin2017_imaged_lineage	doi:10.1038/nmeth.4182	doi:10.1038/nmeth.4182	On4vW5aU
 @tag:McHardy	doi:10.1038/nmeth976	doi:10.1038/nmeth976	QV551Nlx
+@doi:10.1038/nn.4244	doi:10.1038/nn.4244	doi:10.1038/nn.4244	EGwetrwp
 @doi:10.1038/npjsba.2016.15	doi:10.1038/npjsba.2016.15	doi:10.1038/npjsba.2016.15	cQAldRdg
 @doi:10.1038/nrd1086	doi:10.1038/nrd1086	doi:10.1038/nrd1086	RAadmvJN
 @doi:10.1038/nrd4609	doi:10.1038/nrd4609	doi:10.1038/nrd4609	79Ktl2
@@ -333,7 +336,9 @@ string	citation	standard_citation	citation_id
 @tag:Qiu2017_graph_embedding	doi:10.1101/110668	doi:10.1101/110668	Oljj2W96
 @tag:Chaudhary2017_multiom_liver_cancer	doi:10.1101/114892	doi:10.1101/114892	obeRVckH
 @doi:10.1101/125229	doi:10.1101/125229	doi:10.1101/125229	2M3zXijc
+@doi:10.1101/133504	doi:10.1101/133504	doi:10.1101/133504	Exe9wdYF
 @doi:10.1101/138685	doi:10.1101/138685	doi:10.1101/138685	1CAw3FaPI
+@doi:10.1101/152884	doi:10.1101/152884	doi:10.1101/152884	1E5vZzUF2
 @doi:10.1101/154757	doi:10.1101/154757	doi:10.1101/154757	1aswoG70
 @doi:10.1101/159756	doi:10.1101/159756	doi:10.1101/159756	fbIH12yd
 @doi:10.1101/174243	doi:10.1101/174243	doi:10.1101/174243	9ZNxZTxD
@@ -487,6 +492,7 @@ string	citation	standard_citation	citation_id
 @doi:10.3233/978-1-61499-432-9-584	doi:10.3233/978-1-61499-432-9-584	doi:10.3233/978-1-61499-432-9-584	sePDg4mZ
 @tag:Mayr2016_deep_tox	doi:10.3389/fenvs.2015.00080	doi:10.3389/fenvs.2015.00080	Y1D0SZrO
 @doi:10.3389/fgene.2014.00342	doi:10.3389/fgene.2014.00342	doi:10.3389/fgene.2014.00342	ppGS5h4v
+@doi:10.3389/fncom.2016.00094	doi:10.3389/fncom.2016.00094	doi:10.3389/fncom.2016.00094	WNE8N7Cp
 @doi:10.3390/info6040848	doi:10.3390/info6040848	doi:10.3390/info6040848	OuoHShLI
 @tag:Baxt1991_myocardial	doi:10.7326/0003-4819-115-11-843	doi:10.7326/0003-4819-115-11-843	jdg2u7bX
 @tag:Errington2014_reproducibility	doi:10.7554/eLife.04333	doi:10.7554/elife.04333	ZxQ49E8q
@@ -507,6 +513,7 @@ string	citation	standard_citation	citation_id
 @url:http://hazyresearch.github.io/snorkel/blog/weak_supervision.html	url:http://hazyresearch.github.io/snorkel/blog/weak_supervision.html	url:http://hazyresearch.github.io/snorkel/blog/weak_supervision.html	hfcf5Hmi
 @tag:Dragonn	url:http://kundajelab.github.io/dragonn/	url:http://kundajelab.github.io/dragonn/	117PEpTMe
 @tag:Duvenaud2015_graph_conv	url:http://papers.nips.cc/paper/5954-convolutional-networks-on-graphs-for-learning-molecular-fingerprints	url:http://papers.nips.cc/paper/5954-convolutional-networks-on-graphs-for-learning-molecular-fingerprints	Oe573FaL
+@tag:Aitchison2017	url:http://papers.nips.cc/paper/6940-model-based-bayesian-inference-of-neural-activity-and-connectivity-from-all-optical-interrogation-of-a-neural-circuit	url:http://papers.nips.cc/paper/6940-model-based-bayesian-inference-of-neural-activity-and-connectivity-from-all-optical-interrogation-of-a-neural-circuit	JaDImylU
 @url:http://proceedings.mlr.press/v54/mcmahan17a.html	url:http://proceedings.mlr.press/v54/mcmahan17a.html	url:http://proceedings.mlr.press/v54/mcmahan17a.html	U0ySdznJ
 @tag:Dean2012_nips_downpour	url:http://research.google.com/archive/large_deep_networks_nips2012.html	url:http://research.google.com/archive/large_deep_networks_nips2012.html	17cBimWgp
 @url:http://research.google.com/archive/unsupervised_icml2012.html	url:http://research.google.com/archive/unsupervised_icml2012.html	url:http://research.google.com/archive/unsupervised_icml2012.html	IiNJE32f

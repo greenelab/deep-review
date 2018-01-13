@@ -10138,6 +10138,139 @@
       "date-parts": [
         [
           2017,
+          10,
+          26
+        ]
+      ],
+      "date-time": "2017-10-26T07:58:32Z",
+      "timestamp": 1509004712961
+    },
+    "reference-count": 84,
+    "publisher": "Elsevier BV",
+    "issue": "5",
+    "license": [
+      {
+        "URL": "http://www.elsevier.com/tdm/userlicense/1.0/",
+        "start": {
+          "date-parts": [
+            [
+              2010,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2010-10-01T00:00:00Z",
+          "timestamp": 1285891200000
+        },
+        "delay-in-days": 0,
+        "content-version": "tdm"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2010,
+          10
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.conb.2010.07.004",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2010,
+          8,
+          31
+        ]
+      ],
+      "date-time": "2010-08-31T11:07:40Z",
+      "timestamp": 1283252860000
+    },
+    "page": "653-666",
+    "source": "Crossref",
+    "is-referenced-by-count": 69,
+    "title": "Machines that learn to segment images: a crucial technology for connectomics",
+    "prefix": "10.1016",
+    "volume": "20",
+    "author": [
+      {
+        "given": "Viren",
+        "family": "Jain",
+        "affiliation": []
+      },
+      {
+        "given": "H Sebastian",
+        "family": "Seung",
+        "affiliation": []
+      },
+      {
+        "given": "Srinivas C",
+        "family": "Turaga",
+        "affiliation": []
+      }
+    ],
+    "member": "78",
+    "container-title": "Current Opinion in Neurobiology",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://api.elsevier.com/content/article/PII:S0959438810001121?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://api.elsevier.com/content/article/PII:S0959438810001121?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          19
+        ]
+      ],
+      "date-time": "2017-06-19T13:19:01Z",
+      "timestamp": 1497878341000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2010,
+          10
+        ]
+      ]
+    },
+    "references-count": 84,
+    "alternative-id": [
+      "S0959438810001121"
+    ],
+    "URL": "https://doi.org/10.1016/j.conb.2010.07.004",
+    "relation": {},
+    "subject": [
+      "General Neuroscience"
+    ],
+    "container-title-short": "Current Opinion in Neurobiology",
+    "short_url": "https://doi.org/b23662",
+    "id": "1bJ0G7FE"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
           9,
           25
         ]
@@ -13460,6 +13593,181 @@
     ],
     "short_url": "https://doi.org/f6v78n",
     "id": "BQS8ClV0"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2018,
+          1,
+          8
+        ]
+      ],
+      "date-time": "2018-01-08T10:22:25Z",
+      "timestamp": 1515406945513
+    },
+    "reference-count": 178,
+    "publisher": "Elsevier BV",
+    "issue": "2",
+    "license": [
+      {
+        "URL": "http://www.elsevier.com/tdm/userlicense/1.0/",
+        "start": {
+          "date-parts": [
+            [
+              2017,
+              7,
+              1
+            ]
+          ],
+          "date-time": "2017-07-01T00:00:00Z",
+          "timestamp": 1498867200000
+        },
+        "delay-in-days": 0,
+        "content-version": "tdm"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "cell.com",
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2017,
+          7
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.neuron.2017.06.011",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          7,
+          19
+        ]
+      ],
+      "date-time": "2017-07-19T18:33:04Z",
+      "timestamp": 1500489184000
+    },
+    "page": "245-258",
+    "update-policy": "http://dx.doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 5,
+    "title": "Neuroscience-Inspired Artificial Intelligence",
+    "prefix": "10.1016",
+    "volume": "95",
+    "author": [
+      {
+        "given": "Demis",
+        "family": "Hassabis",
+        "affiliation": []
+      },
+      {
+        "given": "Dharshan",
+        "family": "Kumaran",
+        "affiliation": []
+      },
+      {
+        "given": "Christopher",
+        "family": "Summerfield",
+        "affiliation": []
+      },
+      {
+        "given": "Matthew",
+        "family": "Botvinick",
+        "affiliation": []
+      }
+    ],
+    "member": "78",
+    "container-title": "Neuron",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://api.elsevier.com/content/article/PII:S0896627317305093?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://api.elsevier.com/content/article/PII:S0896627317305093?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          8,
+          16
+        ]
+      ],
+      "date-time": "2017-08-16T01:03:16Z",
+      "timestamp": 1502845396000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          7
+        ]
+      ]
+    },
+    "references-count": 178,
+    "alternative-id": [
+      "S0896627317305093"
+    ],
+    "URL": "https://doi.org/10.1016/j.neuron.2017.06.011",
+    "relation": {},
+    "subject": [
+      "General Neuroscience"
+    ],
+    "container-title-short": "Neuron",
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Neuroscience-Inspired Artificial Intelligence",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Neuron",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "http://dx.doi.org/10.1016/j.neuron.2017.06.011",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2017 Elsevier Inc.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ],
+    "short_url": "https://doi.org/gbp987",
+    "id": "Oc2wJ1JO"
   },
   {
     "indexed": {
@@ -22730,6 +23038,106 @@
     "container-title-short": "Nat Meth",
     "short_url": "https://doi.org/fwrtm4",
     "id": "QV551Nlx"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          12,
+          29
+        ]
+      ],
+      "date-time": "2017-12-29T12:02:15Z",
+      "timestamp": 1514548935442
+    },
+    "reference-count": 74,
+    "publisher": "Springer Nature",
+    "issue": "3",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "DOI": "10.1038/nn.4244",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          2,
+          23
+        ]
+      ],
+      "date-time": "2016-02-23T16:51:00Z",
+      "timestamp": 1456246260000
+    },
+    "page": "356-365",
+    "source": "Crossref",
+    "is-referenced-by-count": 66,
+    "title": "Using goal-driven deep learning models to understand sensory cortex",
+    "prefix": "10.1038",
+    "volume": "19",
+    "author": [
+      {
+        "given": "Daniel L K",
+        "family": "Yamins",
+        "affiliation": []
+      },
+      {
+        "given": "James J",
+        "family": "DiCarlo",
+        "affiliation": []
+      }
+    ],
+    "member": "339",
+    "published-online": {
+      "date-parts": [
+        [
+          2016,
+          2,
+          23
+        ]
+      ]
+    },
+    "container-title": "Nature Neuroscience",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          3,
+          4
+        ]
+      ],
+      "date-time": "2016-03-04T09:10:27Z",
+      "timestamp": 1457082627000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          2,
+          23
+        ]
+      ]
+    },
+    "references-count": 74,
+    "alternative-id": [
+      "nn.4244"
+    ],
+    "URL": "https://doi.org/10.1038/nn.4244",
+    "relation": {
+      "cites": []
+    },
+    "subject": [
+      "General Neuroscience"
+    ],
+    "container-title-short": "Nat Neurosci",
+    "short_url": "https://doi.org/gcsgrw",
+    "id": "EGwetrwp"
   },
   {
     "indexed": {
@@ -34992,6 +35400,120 @@
       "date-parts": [
         [
           2017,
+          12,
+          7
+        ]
+      ],
+      "date-time": "2017-12-07T05:02:19Z",
+      "timestamp": 1512622939988
+    },
+    "posted": {
+      "date-parts": [
+        [
+          2017,
+          5,
+          4
+        ]
+      ]
+    },
+    "group-title": "Neuroscience",
+    "reference-count": 0,
+    "publisher": "Cold Spring Harbor Laboratory",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "accepted": {
+      "date-parts": [
+        [
+          2017,
+          5,
+          4
+        ]
+      ]
+    },
+    "abstract": "<jats:p>The goal of computational neuroscience is to find mechanistic explanations of how the nervous system processes information to support cognitive function and behaviour. At the heart of the field are its models, i.e. mathematical and computational descriptions of the system being studied. These models typically map sensory stimuli to neural responses and/or neural to behavioural responses and range for simple to complex. Recently, deep neural networks (DNNs), using either feedforward and recurrent architectures, have come to dominate several domains of artificial intelligence (AI). As the term “neural network” suggests, these models are inspired by biological brains. However, current DNN models abstract from many details of biological neural networks. Their abstractions contribute to their computational efficiency, enabling to perform complex feats of intelligence, ranging from perceptual tasks (e.g. visual object and auditory speech recognition) to cognitive tasks (e.g. machine translation), and on to motor control tasks (e.g. playing computer games or controlling a robot arm). In addition to their ability to model complex intelligent behaviours, DNNs have been shown to predict neural responses to novel sensory stimuli that cannot be predicted with any other currently available type of model. DNNs can have millions of parameters (connection strengths), which are required to capture the domain knowledge needed for task performance. These parameters are often set by task training using stochastic gradient descent. The computational properties of the units are the result of four directly manipulable elements: input statistics, network structure, functional objective, and learning algorithm. The advances with neural nets in engineering provide the technological basis for building task-performing models of varying degrees of biological realism that promise substantial insights for computational neuroscience.</jats:p>",
+    "DOI": "10.1101/133504",
+    "type": "manuscript",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          5,
+          5
+        ]
+      ],
+      "date-time": "2017-05-05T05:10:18Z",
+      "timestamp": 1493961018000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 1,
+    "title": "Deep Neural Networks In Computational Neuroscience",
+    "prefix": "10.1101",
+    "author": [
+      {
+        "ORCID": "http://orcid.org/0000-0001-8076-6062",
+        "authenticated-orcid": false,
+        "given": "Tim Christian",
+        "family": "Kietzmann",
+        "affiliation": []
+      },
+      {
+        "given": "Patrick",
+        "family": "McClure",
+        "affiliation": []
+      },
+      {
+        "given": "Nikolaus",
+        "family": "Kriegeskorte",
+        "affiliation": []
+      }
+    ],
+    "member": "246",
+    "container-title": [],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://syndication.highwire.org/content/doi/10.1101/133504",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          5,
+          5
+        ]
+      ],
+      "date-time": "2017-05-05T05:11:02Z",
+      "timestamp": 1493961062000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          5,
+          4
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "https://doi.org/10.1101/133504",
+    "relation": {},
+    "short_url": "https://doi.org/gcsgrx",
+    "id": "Exe9wdYF"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
           8,
           11
         ]
@@ -35138,6 +35660,185 @@
     "relation": {},
     "short_url": "https://doi.org/gcgk93",
     "id": "1CAw3FaPI"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          27
+        ]
+      ],
+      "date-time": "2017-10-27T17:31:51Z",
+      "timestamp": 1509125511759
+    },
+    "posted": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          20
+        ]
+      ]
+    },
+    "group-title": "Neuroscience",
+    "reference-count": 0,
+    "publisher": "Cold Spring Harbor Laboratory",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "accepted": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          20
+        ]
+      ]
+    },
+    "abstract": "<jats:p>Neuroscience is experiencing a data revolution in which simultaneous recording of many hundreds or thousands of neurons is revealing structure in population activity that is not apparent from single-neuron responses. This structure is typically extracted from trial-averaged data. Single-trial analyses are challenging due to incomplete sampling of the neural population, trial-to-trial variability, and fluctuations in action potential timing. Here we introduce Latent Factor Analysis via Dynamical Systems (LFADS), a deep learning method to infer latent dynamics from single-trial neural spiking data. LFADS uses a nonlinear dynamical system (a recurrent neural network) to infer the dynamics underlying observed population activity and to extract ‘de-noised’ single-trial firing rates from neural spiking data. We apply LFADS to a variety of monkey and human motor cortical datasets, demonstrating its ability to predict observed behavioral variables with unprecedented accuracy, extract precise estimates of neural dynamics on single trials, infer perturbations to those dynamics that correlate with behavioral choices, and combine data from non-overlapping recording sessions (spanning months) to improve inference of underlying dynamics. In summary, LFADS leverages all observations of a neural population's activity to accurately model its dynamics on single trials, opening the door to a detailed understanding of the role of dynamics in performing computation and ultimately driving behavior.</jats:p>",
+    "DOI": "10.1101/152884",
+    "type": "manuscript",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          21
+        ]
+      ],
+      "date-time": "2017-06-21T05:10:11Z",
+      "timestamp": 1498021811000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "Inferring single-trial neural population dynamics using sequential auto-encoders",
+    "prefix": "10.1101",
+    "author": [
+      {
+        "ORCID": "http://orcid.org/0000-0003-1241-1432",
+        "authenticated-orcid": false,
+        "given": "Chethan",
+        "family": "Pandarinath",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-1366-1743",
+        "authenticated-orcid": false,
+        "given": "Daniel J.",
+        "family": "O'Shea",
+        "affiliation": []
+      },
+      {
+        "given": "Jasmine",
+        "family": "Collins",
+        "affiliation": []
+      },
+      {
+        "given": "Rafal",
+        "family": "Jozefowicz",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-5238-0573",
+        "authenticated-orcid": false,
+        "given": "Sergey D.",
+        "family": "Stavisky",
+        "affiliation": []
+      },
+      {
+        "given": "Jonathan C.",
+        "family": "Kao",
+        "affiliation": []
+      },
+      {
+        "given": "Eric M.",
+        "family": "Trautmann",
+        "affiliation": []
+      },
+      {
+        "given": "Matthew T.",
+        "family": "Kaufman",
+        "affiliation": []
+      },
+      {
+        "given": "Stephen I.",
+        "family": "Ryu",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0003-0261-2273",
+        "authenticated-orcid": false,
+        "given": "Leigh R.",
+        "family": "Hochberg",
+        "affiliation": []
+      },
+      {
+        "given": "Jaimie M.",
+        "family": "Henderson",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0003-1534-9240",
+        "authenticated-orcid": false,
+        "given": "Krishna V.",
+        "family": "Shenoy",
+        "affiliation": []
+      },
+      {
+        "given": "Larry F.",
+        "family": "Abbott",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0003-1620-1264",
+        "authenticated-orcid": false,
+        "given": "David",
+        "family": "Sussillo",
+        "affiliation": []
+      }
+    ],
+    "member": "246",
+    "container-title": [],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://syndication.highwire.org/content/doi/10.1101/152884",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          21
+        ]
+      ],
+      "date-time": "2017-06-21T05:10:25Z",
+      "timestamp": 1498021825000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          20
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "https://doi.org/10.1101/152884",
+    "relation": {},
+    "short_url": "https://doi.org/gcsgrz",
+    "id": "1E5vZzUF2"
   },
   {
     "indexed": {
@@ -55113,6 +55814,117 @@
     "indexed": {
       "date-parts": [
         [
+          2018,
+          1,
+          9
+        ]
+      ],
+      "date-time": "2018-01-09T15:02:27Z",
+      "timestamp": 1515510147545
+    },
+    "reference-count": 488,
+    "publisher": "Frontiers Media SA",
+    "content-domain": {
+      "domain": [
+        "frontiersin.org"
+      ],
+      "crossmark-restriction": true
+    },
+    "DOI": "10.3389/fncom.2016.00094",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          9,
+          14
+        ]
+      ],
+      "date-time": "2016-09-14T03:10:53Z",
+      "timestamp": 1473822653000
+    },
+    "update-policy": "http://dx.doi.org/10.3389/crossmark-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 26,
+    "title": "Toward an Integration of Deep Learning and Neuroscience",
+    "prefix": "10.3389",
+    "volume": "10",
+    "author": [
+      {
+        "given": "Adam H.",
+        "family": "Marblestone",
+        "affiliation": []
+      },
+      {
+        "given": "Greg",
+        "family": "Wayne",
+        "affiliation": []
+      },
+      {
+        "given": "Konrad P.",
+        "family": "Kording",
+        "affiliation": []
+      }
+    ],
+    "member": "1965",
+    "published-online": {
+      "date-parts": [
+        [
+          2016,
+          9,
+          14
+        ]
+      ]
+    },
+    "container-title": "Frontiers in Computational Neuroscience",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          24
+        ]
+      ],
+      "date-time": "2017-06-24T22:44:01Z",
+      "timestamp": 1498344241000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          9,
+          14
+        ]
+      ]
+    },
+    "references-count": 488,
+    "URL": "https://doi.org/10.3389/fncom.2016.00094",
+    "relation": {
+      "has-preprint": [
+        {
+          "id-type": "doi",
+          "id": "10.1101/058545",
+          "asserted-by": "object"
+        }
+      ],
+      "cites": []
+    },
+    "subject": [
+      "Cellular and Molecular Neuroscience",
+      "Neuroscience (miscellaneous)"
+    ],
+    "container-title-short": "Front. Comput. Neurosci.",
+    "short_url": "https://doi.org/gcsgr2",
+    "id": "WNE8N7Cp"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
           2017,
           10,
           27
@@ -57022,6 +57834,52 @@
     "greycite-scanned": "2017-05-09 00:03:57",
     "type": "webpage",
     "id": "Oe573FaL"
+  },
+  {
+    "URL": "http://papers.nips.cc/paper/6940-model-based-bayesian-inference-of-neural-activity-and-connectivity-from-all-optical-interrogation-of-a-neural-circuit",
+    "greycite-canonical-uri": null,
+    "title": "Model-based Bayesian inference of neural activity and connectivity from all-optical interrogation of a neural circuit",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Aitchison",
+        "given": "Laurence"
+      },
+      {
+        "family": "Russell",
+        "given": "Lloyd"
+      },
+      {
+        "family": "Packer",
+        "given": "Adam M."
+      },
+      {
+        "family": "Yan",
+        "given": "Jinyao"
+      },
+      {
+        "family": "Castonguay",
+        "given": "Philippe"
+      },
+      {
+        "family": "Hausser",
+        "given": "Michael"
+      },
+      {
+        "family": "Turaga",
+        "given": "Srinivas C."
+      }
+    ],
+    "greycite-status": "Scanned",
+    "greycite-scanned": "2018-01-13 12:35:50",
+    "type": "webpage",
+    "id": "JaDImylU"
   },
   {
     "URL": "http://proceedings.mlr.press/v54/mcmahan17a.html",

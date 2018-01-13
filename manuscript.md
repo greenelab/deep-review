@@ -48,7 +48,7 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@af9830c](https://github.com/greenelab/deep-review/tree/af9830cbdb9bf8041ea8af5964a8c6325ee5668e)
+from [greenelab/deep-review@31947d4](https://github.com/greenelab/deep-review/tree/31947d45f72a0e1d31e1ce1b7a68762ec4c3defc)
 on January 13, 2018.
 </em></small>
 
@@ -1155,6 +1155,27 @@ Method development for interpreting new types of sequencing data has historicall
 We anticipate that these steps will be replaced by deep learning, which will infer features simply by its ability to optimize a complex model against data.
 
 
+
+### Neuroscience
+
+Artificial neural networks were originally conceived as a model for computation in the brain [@1HVDhhwpK].
+Although deep neural networks have evolved to become a workhorse across many fields, there is still a strong connection between deep networks and the study of the brain.
+The rich parallel history of artificial neural networks in computer science and neuroscience is reviewed in [@WNE8N7Cp; @Exe9wdYF; @Oc2wJ1JO].
+
+Convolutional neural networks were originally conceived as faithful models of visual information processing in the primate visual system, and are still considered so [@EGwetrwp].
+The activations of hidden units in consecutive layers of deep convolutional networks have been found to parallel the activity of neurons in consecutive brain regions involved in processing visual scenes.
+Such models of neural computation are called "encoding" models, as they predict how the nervous system might encode sensory information in the world.
+
+Even when they are not directly modeling biological neurons, deep networks have been a useful computational tool in neuroscience.
+They have been developed as statistical time series models of neural activity in the brain.
+And in contrast to the encoding models described earlier, these models are used for decoding neural activity, for instance in brain machine interfaces [@1E5vZzUF2].
+They have been crucial to the field of connectomics, which is concerned with mapping the connectivity of biological neural networks in the brain.
+In connectomics, deep networks are used to segment the shapes of individual neurons and to infer their connectivity from 3D electron microscopic images [@1bJ0G7FE], and they have been also been used to infer causal connectivity from optical measurement and perturbation of neural activity [@JaDImylU].
+
+It is an exciting time for neuroscience.
+Recent rapid progress in deep networks continues to inspire new machine learning based models of brain computation [@WNE8N7Cp].
+And neuroscience continues to inspire new models of artificial intelligence [@Oc2wJ1JO].
+
 ## The impact of deep learning in treating disease and developing new treatments
 
 Given the need to make better, faster interventions at the point of care -- incorporating the complex calculus of a patients symptoms, diagnostics, and life history -- there have been many attempts to apply deep learning to patient treatment.
@@ -1871,7 +1892,7 @@ To facilitate citation, we [defined](https://github.com/greenelab/deep-review/bl
 We supported citations to the following identifier types (in order of preference): DOIs, PubMed Central IDs, PubMed IDs, arXiv IDs, and URLs.
 References were automatically generated from citation metadata by querying APIs to generate [Citation Style Language](http://citationstyles.org/) (CSL) JSON items for each reference.
 [Pandoc](http://pandoc.org/) and [pandoc-citeproc](https://github.com/jgm/pandoc-citeproc) converted the markdown to HTML and PDF, while rendering the formatted citations and references.
-In total, referenced works consisted of 344 DOIs, 6 PubMed Central records, 0 PubMed records, 127 arXiv manuscripts, and 46 URLs (webpages as well as manuscripts lacking standardized identifiers).
+In total, referenced works consisted of 350 DOIs, 6 PubMed Central records, 0 PubMed records, 127 arXiv manuscripts, and 47 URLs (webpages as well as manuscripts lacking standardized identifiers).
 
 We implemented continuous analysis so the manuscript was automatically regenerated whenever the source changed [@Qh7xTLwz].
 We configured Travis CI -- a continuous integration service -- to fetch new citation metadata and rebuild the manuscript for every commit.
