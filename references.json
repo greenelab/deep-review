@@ -958,6 +958,52 @@
     "id": "rZnxDitd"
   },
   {
+    "arxiv_id": "1505.07818v4",
+    "version": "4",
+    "URL": "https://arxiv.org/abs/1505.07818v4",
+    "title": "Domain-Adversarial Training of Neural Networks",
+    "issued": {
+      "date-parts": [
+        [
+          "2015",
+          "05",
+          "28"
+        ]
+      ]
+    },
+    "author": [
+      {
+        "literal": "Yaroslav Ganin"
+      },
+      {
+        "literal": "Evgeniya Ustinova"
+      },
+      {
+        "literal": "Hana Ajakan"
+      },
+      {
+        "literal": "Pascal Germain"
+      },
+      {
+        "literal": "Hugo Larochelle"
+      },
+      {
+        "literal": "François Laviolette"
+      },
+      {
+        "literal": "Mario Marchand"
+      },
+      {
+        "literal": "Victor Lempitsky"
+      }
+    ],
+    "container-title": "arXiv",
+    "publisher": "arXiv",
+    "abstract": "We introduce a new representation learning approach for domain adaptation, in\nwhich data at training and test time come from similar but different\ndistributions. Our approach is directly inspired by the theory on domain\nadaptation suggesting that, for effective domain transfer to be achieved,\npredictions must be made based on features that cannot discriminate between the\ntraining (source) and test (target) domains. The approach implements this idea\nin the context of neural network architectures that are trained on labeled data\nfrom the source domain and unlabeled data from the target domain (no labeled\ntarget-domain data is necessary). As the training progresses, the approach\npromotes the emergence of features that are (i) discriminative for the main\nlearning task on the source domain and (ii) indiscriminate with respect to the\nshift between the domains. We show that this adaptation behaviour can be\nachieved in almost any feed-forward model by augmenting it with few standard\nlayers and a new gradient reversal layer. The resulting augmented architecture\ncan be trained using standard backpropagation and stochastic gradient descent,\nand can thus be implemented with little effort using any of the deep learning\npackages. We demonstrate the success of our approach for two distinct\nclassification problems (document sentiment analysis and image classification),\nwhere state-of-the-art domain adaptation performance on standard benchmarks is\nachieved. We also validate the approach for descriptor learning task in the\ncontext of person re-identification application.",
+    "type": "report",
+    "id": "nu0eLZr0"
+  },
+  {
     "arxiv_id": "1506.02078v2",
     "version": "2",
     "URL": "https://arxiv.org/abs/1506.02078v2",
@@ -2009,6 +2055,46 @@
     "id": "mbEp6jNr"
   },
   {
+    "arxiv_id": "1606.06565v2",
+    "version": "2",
+    "URL": "https://arxiv.org/abs/1606.06565v2",
+    "title": "Concrete Problems in AI Safety",
+    "issued": {
+      "date-parts": [
+        [
+          "2016",
+          "06",
+          "21"
+        ]
+      ]
+    },
+    "author": [
+      {
+        "literal": "Dario Amodei"
+      },
+      {
+        "literal": "Chris Olah"
+      },
+      {
+        "literal": "Jacob Steinhardt"
+      },
+      {
+        "literal": "Paul Christiano"
+      },
+      {
+        "literal": "John Schulman"
+      },
+      {
+        "literal": "Dan Mané"
+      }
+    ],
+    "container-title": "arXiv",
+    "publisher": "arXiv",
+    "abstract": "Rapid progress in machine learning and artificial intelligence (AI) has\nbrought increasing attention to the potential impacts of AI technologies on\nsociety. In this paper we discuss one such potential impact: the problem of\naccidents in machine learning systems, defined as unintended and harmful\nbehavior that may emerge from poor design of real-world AI systems. We present\na list of five practical research problems related to accident risk,\ncategorized according to whether the problem originates from having the wrong\nobjective function (\"avoiding side effects\" and \"avoiding reward hacking\"), an\nobjective function that is too expensive to evaluate frequently (\"scalable\nsupervision\"), or undesirable behavior during the learning process (\"safe\nexploration\" and \"distributional shift\"). We review previous work in these\nareas as well as suggesting research directions with a focus on relevance to\ncutting-edge AI systems. Finally, we consider the high-level question of how to\nthink most productively about the safety of forward-looking applications of AI.",
+    "type": "report",
+    "id": "InL72p4N"
+  },
+  {
     "arxiv_id": "1606.07461v2",
     "version": "2",
     "URL": "https://arxiv.org/abs/1606.07461v2",
@@ -2529,6 +2615,34 @@
     "id": "4TK06zOf"
   },
   {
+    "arxiv_id": "1610.02136v2",
+    "version": "2",
+    "URL": "https://arxiv.org/abs/1610.02136v2",
+    "title": "A Baseline for Detecting Misclassified and Out-of-Distribution Examples\n  in Neural Networks",
+    "issued": {
+      "date-parts": [
+        [
+          "2016",
+          "10",
+          "07"
+        ]
+      ]
+    },
+    "author": [
+      {
+        "literal": "Dan Hendrycks"
+      },
+      {
+        "literal": "Kevin Gimpel"
+      }
+    ],
+    "container-title": "arXiv",
+    "publisher": "arXiv",
+    "abstract": "We consider the two related problems of detecting if an example is\nmisclassified or out-of-distribution. We present a simple baseline that\nutilizes probabilities from softmax distributions. Correctly classified\nexamples tend to have greater maximum softmax probabilities than erroneously\nclassified and out-of-distribution examples, allowing for their detection. We\nassess performance by defining several tasks in computer vision, natural\nlanguage processing, and automatic speech recognition, showing the\neffectiveness of this baseline across all. We then show the baseline can\nsometimes be surpassed, demonstrating the room for future research on these\nunderexplored detection tasks.",
+    "type": "report",
+    "id": "Tkobp7Qj"
+  },
+  {
     "arxiv_id": "1610.02357v3",
     "version": "3",
     "URL": "https://arxiv.org/abs/1610.02357v3",
@@ -2828,6 +2942,34 @@
     "id": "11aqfNfQx"
   },
   {
+    "arxiv_id": "1611.01639v6",
+    "version": "6",
+    "URL": "https://arxiv.org/abs/1611.01639v6",
+    "title": "Robustly representing inferential uncertainty in deep neural networks\n  through sampling",
+    "issued": {
+      "date-parts": [
+        [
+          "2016",
+          "11",
+          "05"
+        ]
+      ]
+    },
+    "author": [
+      {
+        "literal": "Patrick McClure"
+      },
+      {
+        "literal": "Nikolaus Kriegeskorte"
+      }
+    ],
+    "container-title": "arXiv",
+    "publisher": "arXiv",
+    "abstract": "As deep neural networks (DNNs) are applied to increasingly challenging\nproblems, they will need to be able to represent their own uncertainty.\nModeling uncertainty is one of the key features of Bayesian methods. Using\nBernoulli dropout with sampling at prediction time has recently been proposed\nas an efficient and well performing variational inference method for DNNs.\nHowever, sampling from other multiplicative noise based variational\ndistributions has not been investigated in depth. We evaluated Bayesian DNNs\ntrained with Bernoulli or Gaussian multiplicative masking of either the units\n(dropout) or the weights (dropconnect). We tested the calibration of the\nprobabilistic predictions of Bayesian convolutional neural networks (CNNs) on\nMNIST and CIFAR-10. Sampling at prediction time increased the calibration of\nthe DNNs' probabalistic predictions. Sampling weights, whether Gaussian or\nBernoulli, led to more robust representation of uncertainty compared to\nsampling of units. However, using either Gaussian or Bernoulli dropout led to\nincreased test set classification accuracy. Based on these findings we used\nboth Bernoulli dropout and Gaussian dropconnect concurrently, which we show\napproximates the use of a spike-and-slab variational distribution without\nincreasing the number of learned parameters. We found that spike-and-slab\nsampling had higher test set performance than Gaussian dropconnect and more\nrobustly represented its uncertainty compared to Bernoulli dropout.",
+    "type": "report",
+    "id": "ZhgOMnnD"
+  },
+  {
     "arxiv_id": "1611.02796v9",
     "version": "9",
     "URL": "https://arxiv.org/abs/1611.02796v9",
@@ -3067,6 +3209,37 @@
     "abstract": "Automated extraction of concepts from patient clinical records is an\nessential facilitator of clinical research. For this reason, the 2010 i2b2/VA\nNatural Language Processing Challenges for Clinical Records introduced a\nconcept extraction task aimed at identifying and classifying concepts into\npredefined categories (i.e., treatments, tests and problems). State-of-the-art\nconcept extraction approaches heavily rely on handcrafted features and\ndomain-specific resources which are hard to collect and define. For this\nreason, this paper proposes an alternative, streamlined approach: a recurrent\nneural network (the bidirectional LSTM with CRF decoding) initialized with\ngeneral-purpose, off-the-shelf word embeddings. The experimental results\nachieved on the 2010 i2b2/VA reference corpora using the proposed framework\noutperform all recent methods and ranks closely to the best submission from the\noriginal 2010 i2b2/VA challenge.",
     "type": "report",
     "id": "dO844vZn"
+  },
+  {
+    "arxiv_id": "1612.01474v3",
+    "version": "3",
+    "URL": "https://arxiv.org/abs/1612.01474v3",
+    "title": "Simple and Scalable Predictive Uncertainty Estimation using Deep\n  Ensembles",
+    "issued": {
+      "date-parts": [
+        [
+          "2016",
+          "12",
+          "05"
+        ]
+      ]
+    },
+    "author": [
+      {
+        "literal": "Balaji Lakshminarayanan"
+      },
+      {
+        "literal": "Alexander Pritzel"
+      },
+      {
+        "literal": "Charles Blundell"
+      }
+    ],
+    "container-title": "arXiv",
+    "publisher": "arXiv",
+    "abstract": "Deep neural networks (NNs) are powerful black box predictors that have\nrecently achieved impressive performance on a wide spectrum of tasks.\nQuantifying predictive uncertainty in NNs is a challenging and yet unsolved\nproblem. Bayesian NNs, which learn a distribution over weights, are currently\nthe state-of-the-art for estimating predictive uncertainty; however these\nrequire significant modifications to the training procedure and are\ncomputationally expensive compared to standard (non-Bayesian) NNs. We propose\nan alternative to Bayesian NNs that is simple to implement, readily\nparallelizable, requires very little hyperparameter tuning, and yields high\nquality predictive uncertainty estimates. Through a series of experiments on\nclassification and regression benchmarks, we demonstrate that our method\nproduces well-calibrated uncertainty estimates which are as good or better than\napproximate Bayesian NNs. To assess robustness to dataset shift, we evaluate\nthe predictive uncertainty on test examples from known and unknown\ndistributions, and show that our method is able to express higher uncertainty\non out-of-distribution examples. We demonstrate the scalability of our method\nby evaluating predictive uncertainty estimates on ImageNet.",
+    "type": "report",
+    "id": "Jy2oz6xk"
   },
   {
     "arxiv_id": "1612.02751v1",
@@ -3394,6 +3567,34 @@
     "abstract": "How can we explain the predictions of a black-box model? In this paper, we\nuse influence functions -- a classic technique from robust statistics -- to\ntrace a model's prediction through the learning algorithm and back to its\ntraining data, thereby identifying training points most responsible for a given\nprediction. To scale up influence functions to modern machine learning\nsettings, we develop a simple, efficient implementation that requires only\noracle access to gradients and Hessian-vector products. We show that even on\nnon-convex and non-differentiable models where the theory breaks down,\napproximations to influence functions can still provide valuable information.\nOn linear models and convolutional neural networks, we demonstrate that\ninfluence functions are useful for multiple purposes: understanding model\nbehavior, debugging models, detecting dataset errors, and even creating\nvisually-indistinguishable training-set attacks.",
     "type": "report",
     "id": "69wxD9y"
+  },
+  {
+    "arxiv_id": "1703.04977v2",
+    "version": "2",
+    "URL": "https://arxiv.org/abs/1703.04977v2",
+    "title": "What Uncertainties Do We Need in Bayesian Deep Learning for Computer\n  Vision?",
+    "issued": {
+      "date-parts": [
+        [
+          "2017",
+          "03",
+          "15"
+        ]
+      ]
+    },
+    "author": [
+      {
+        "literal": "Alex Kendall"
+      },
+      {
+        "literal": "Yarin Gal"
+      }
+    ],
+    "container-title": "arXiv",
+    "publisher": "arXiv",
+    "abstract": "There are two major types of uncertainty one can model. Aleatoric uncertainty\ncaptures noise inherent in the observations. On the other hand, epistemic\nuncertainty accounts for uncertainty in the model -- uncertainty which can be\nexplained away given enough data. Traditionally it has been difficult to model\nepistemic uncertainty in computer vision, but with new Bayesian deep learning\ntools this is now possible. We study the benefits of modeling epistemic vs.\naleatoric uncertainty in Bayesian deep learning models for vision tasks. For\nthis we present a Bayesian deep learning framework combining input-dependent\naleatoric uncertainty together with epistemic uncertainty. We study models\nunder the framework with per-pixel semantic segmentation and depth regression\ntasks. Further, our explicit uncertainty formulation leads to new loss\nfunctions for these tasks, which can be interpreted as learned attenuation.\nThis makes the loss more robust to noisy data, also giving new state-of-the-art\nresults on segmentation and depth regression benchmarks.",
+    "type": "report",
+    "id": "1GDnudDWl"
   },
   {
     "arxiv_id": "1703.06490v1",
@@ -4014,6 +4215,65 @@
     "id": "M6JCKCLX"
   },
   {
+    "arxiv_id": "1705.07115v1",
+    "version": "1",
+    "URL": "https://arxiv.org/abs/1705.07115v1",
+    "title": "Multi-Task Learning Using Uncertainty to Weigh Losses for Scene Geometry\n  and Semantics",
+    "issued": {
+      "date-parts": [
+        [
+          "2017",
+          "05",
+          "19"
+        ]
+      ]
+    },
+    "author": [
+      {
+        "literal": "Alex Kendall"
+      },
+      {
+        "literal": "Yarin Gal"
+      },
+      {
+        "literal": "Roberto Cipolla"
+      }
+    ],
+    "container-title": "arXiv",
+    "publisher": "arXiv",
+    "abstract": "Numerous deep learning applications benefit from multi-task learning with\nmultiple regression and classification objectives. In this paper we make the\nobservation that the performance of such systems is strongly dependent on the\nrelative weighting between each task's loss. Tuning these weights by hand is a\ndifficult and expensive process, making multi-task learning prohibitive in\npractice. We propose a principled approach to multi-task deep learning which\nweighs multiple loss functions by considering the homoscedastic uncertainty of\neach task. This allows us to simultaneously learn various quantities with\ndifferent units or scales in both classification and regression settings. We\ndemonstrate our model learning per-pixel depth regression, semantic and\ninstance segmentation from a monocular input image. Perhaps surprisingly, we\nshow our model can learn multi-task weightings and outperform separate models\ntrained individually on each task.",
+    "type": "report",
+    "id": "WZjlu7tr"
+  },
+  {
+    "arxiv_id": "1705.07263v2",
+    "version": "2",
+    "URL": "https://arxiv.org/abs/1705.07263v2",
+    "title": "Adversarial Examples Are Not Easily Detected: Bypassing Ten Detection\n  Methods",
+    "issued": {
+      "date-parts": [
+        [
+          "2017",
+          "05",
+          "20"
+        ]
+      ]
+    },
+    "author": [
+      {
+        "literal": "Nicholas Carlini"
+      },
+      {
+        "literal": "David Wagner"
+      }
+    ],
+    "container-title": "arXiv",
+    "publisher": "arXiv",
+    "abstract": "Neural networks are known to be vulnerable to adversarial examples: inputs\nthat are close to natural inputs but classified incorrectly. In order to better\nunderstand the space of adversarial examples, we survey ten recent proposals\nthat are designed for detection and compare their efficacy. We show that all\ncan be defeated by constructing new loss functions. We conclude that\nadversarial examples are significantly harder to detect than previously\nappreciated, and the properties believed to be intrinsic to adversarial\nexamples are in fact not. Finally, we propose several simple guidelines for\nevaluating future proposed defenses.",
+    "type": "report",
+    "id": "b5zIzCEO"
+  },
+  {
     "arxiv_id": "1705.09516v1",
     "version": "1",
     "URL": "https://arxiv.org/abs/1705.09516v1",
@@ -4135,6 +4395,102 @@
     "id": "1988BRJe3"
   },
   {
+    "arxiv_id": "1706.02690v3",
+    "version": "3",
+    "URL": "https://arxiv.org/abs/1706.02690v3",
+    "title": "Enhancing The Reliability of Out-of-distribution Image Detection in\n  Neural Networks",
+    "issued": {
+      "date-parts": [
+        [
+          "2017",
+          "06",
+          "08"
+        ]
+      ]
+    },
+    "author": [
+      {
+        "literal": "Shiyu Liang"
+      },
+      {
+        "literal": "Yixuan Li"
+      },
+      {
+        "literal": "R. Srikant"
+      }
+    ],
+    "container-title": "arXiv",
+    "publisher": "arXiv",
+    "abstract": "We consider the problem of detecting out-of-distribution images in neural\nnetworks. We propose ODIN, a simple and effective method that does not require\nany change to a pre-trained neural network. Our method is based on the\nobservation that using temperature scaling and adding small perturbations to\nthe input can separate the softmax score distributions between in- and\nout-of-distribution images, allowing for more effective detection. We show in a\nseries of experiments that ODIN is compatible with diverse network\narchitectures and datasets. It consistently outperforms the baseline approach\nby a large margin, establishing a new state-of-the-art performance on this\ntask. For example, ODIN reduces the false positive rate from the baseline 34.7%\nto 4.3% on the DenseNet (applied to CIFAR-10) when the true positive rate is\n95%.",
+    "type": "report",
+    "id": "vJxaHm0b"
+  },
+  {
+    "arxiv_id": "1706.04599v2",
+    "version": "2",
+    "URL": "https://arxiv.org/abs/1706.04599v2",
+    "title": "On Calibration of Modern Neural Networks",
+    "issued": {
+      "date-parts": [
+        [
+          "2017",
+          "06",
+          "14"
+        ]
+      ]
+    },
+    "author": [
+      {
+        "literal": "Chuan Guo"
+      },
+      {
+        "literal": "Geoff Pleiss"
+      },
+      {
+        "literal": "Yu Sun"
+      },
+      {
+        "literal": "Kilian Q. Weinberger"
+      }
+    ],
+    "container-title": "arXiv",
+    "publisher": "arXiv",
+    "abstract": "Confidence calibration -- the problem of predicting probability estimates\nrepresentative of the true correctness likelihood -- is important for\nclassification models in many applications. We discover that modern neural\nnetworks, unlike those from a decade ago, are poorly calibrated. Through\nextensive experiments, we observe that depth, width, weight decay, and Batch\nNormalization are important factors influencing calibration. We evaluate the\nperformance of various post-processing calibration methods on state-of-the-art\narchitectures with image and document classification datasets. Our analysis and\nexperiments not only offer insights into neural network learning, but also\nprovide a simple and straightforward recipe for practical settings: on most\ndatasets, temperature scaling -- a single-parameter variant of Platt Scaling --\nis surprisingly effective at calibrating predictions.",
+    "type": "report",
+    "id": "QJ6hYH8N"
+  },
+  {
+    "arxiv_id": "1707.02476v1",
+    "version": "1",
+    "URL": "https://arxiv.org/abs/1707.02476v1",
+    "title": "Adversarial Examples, Uncertainty, and Transfer Testing Robustness in\n  Gaussian Process Hybrid Deep Networks",
+    "issued": {
+      "date-parts": [
+        [
+          "2017",
+          "07",
+          "08"
+        ]
+      ]
+    },
+    "author": [
+      {
+        "literal": "John Bradshaw"
+      },
+      {
+        "literal": "Alexander G. de G. Matthews"
+      },
+      {
+        "literal": "Zoubin Ghahramani"
+      }
+    ],
+    "container-title": "arXiv",
+    "publisher": "arXiv",
+    "abstract": "Deep neural networks (DNNs) have excellent representative power and are state\nof the art classifiers on many tasks. However, they often do not capture their\nown uncertainties well making them less robust in the real world as they\noverconfidently extrapolate and do not notice domain shift. Gaussian processes\n(GPs) with RBF kernels on the other hand have better calibrated uncertainties\nand do not overconfidently extrapolate far from data in their training set.\nHowever, GPs have poor representational power and do not perform as well as\nDNNs on complex domains. In this paper we show that GP hybrid deep networks,\nGPDNNs, (GPs on top of DNNs and trained end-to-end) inherit the nice properties\nof both GPs and DNNs and are much more robust to adversarial examples. When\nextrapolating to adversarial examples and testing in domain shift settings,\nGPDNNs frequently output high entropy class probabilities corresponding to\nessentially \"don't know\". GPDNNs are therefore promising as deep architectures\nthat know when they don't know.",
+    "type": "report",
+    "id": "P9vKrhYz"
+  },
+  {
     "arxiv_id": "1708.00339v3",
     "version": "3",
     "URL": "https://arxiv.org/abs/1708.00339v3",
@@ -4238,6 +4594,46 @@
     "abstract": "We propose a probabilistic model for interpreting gene expression levels that\nare observed through single-cell RNA sequencing. In the model, each cell has a\nlow-dimensional latent representation. Additional latent variables account for\ntechnical effects that may erroneously set some observations of gene expression\nlevels to zero. Conditional distributions are specified by neural networks,\ngiving the proposed model enough flexibility to fit the data well. We use\nvariational inference and stochastic optimization to approximate the posterior\ndistribution. The inference procedure scales to over one million cells, whereas\ncompeting algorithms do not. Even for smaller datasets, for several tasks, the\nproposed procedure outperforms state-of-the-art methods like ZIFA and\nZINB-WaVE. We also extend our framework to account for batch effects and other\nconfounding factors, and propose a Bayesian hypothesis test for differential\nexpression that outperforms DESeq2.",
     "type": "report",
     "id": "RHqbJgpe"
+  },
+  {
+    "arxiv_id": "1710.04759v1",
+    "version": "1",
+    "URL": "https://arxiv.org/abs/1710.04759v1",
+    "title": "Bayesian Hypernetworks",
+    "issued": {
+      "date-parts": [
+        [
+          "2017",
+          "10",
+          "13"
+        ]
+      ]
+    },
+    "author": [
+      {
+        "literal": "David Krueger"
+      },
+      {
+        "literal": "Chin-Wei Huang"
+      },
+      {
+        "literal": "Riashat Islam"
+      },
+      {
+        "literal": "Ryan Turner"
+      },
+      {
+        "literal": "Alexandre Lacoste"
+      },
+      {
+        "literal": "Aaron Courville"
+      }
+    ],
+    "container-title": "arXiv",
+    "publisher": "arXiv",
+    "abstract": "We propose Bayesian hypernetworks: a framework for approximate Bayesian\ninference in neural networks. A Bayesian hypernetwork, $h$, is a neural network\nwhich learns to transform a simple noise distribution, $p(\\epsilon) =\n\\mathcal{N}(0,I)$, to a distribution $q(\\theta) \\doteq q(h(\\epsilon))$ over the\nparameters $\\theta$ of another neural network (the \"primary network\"). We train\n$q$ with variational inference, using an invertible $h$ to enable efficient\nestimation of the variational lower bound on the posterior $p(\\theta |\n\\mathcal{D})$ via sampling. In contrast to most methods for Bayesian deep\nlearning, Bayesian hypernets can represent a complex multimodal approximate\nposterior with correlations between parameters, while enabling cheap i.i.d.\nsampling of $q(\\theta)$. We demonstrate these qualitative advantages of\nBayesian hypernets, which also achieve competitive performance on a suite of\ntasks that demonstrate the advantage of estimating model uncertainty, including\nactive learning and anomaly detection.",
+    "type": "report",
+    "id": "emWW7yUp"
   },
   {
     "arxiv_id": "1710.10568v1",
@@ -23567,6 +23963,173 @@
     "container-title-short": "Nat Rev Genet",
     "short_url": "https://doi.org/gcgk8n",
     "id": "8yA3foA6"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          12,
+          13
+        ]
+      ],
+      "date-time": "2017-12-13T12:40:40Z",
+      "timestamp": 1513168840936
+    },
+    "reference-count": 74,
+    "publisher": "Springer Nature",
+    "issue": "1",
+    "license": [
+      {
+        "URL": "http://creativecommons.org/licenses/by/4.0",
+        "start": {
+          "date-parts": [
+            [
+              2017,
+              12,
+              1
+            ]
+          ],
+          "date-time": "2017-12-01T00:00:00Z",
+          "timestamp": 1512086400000
+        },
+        "delay-in-days": 0,
+        "content-version": "unspecified"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2017,
+          12
+        ]
+      ]
+    },
+    "DOI": "10.1038/s41598-017-17876-z",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          12,
+          13
+        ]
+      ],
+      "date-time": "2017-12-13T12:12:07Z",
+      "timestamp": 1513167127000
+    },
+    "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "Leveraging uncertainty information from deep neural networks for disease detection",
+    "prefix": "10.1038",
+    "volume": "7",
+    "author": [
+      {
+        "given": "Christian",
+        "family": "Leibig",
+        "affiliation": []
+      },
+      {
+        "given": "Vaneeda",
+        "family": "Allken",
+        "affiliation": []
+      },
+      {
+        "given": "Murat Seçkin",
+        "family": "Ayhan",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-0199-4727",
+        "authenticated-orcid": false,
+        "given": "Philipp",
+        "family": "Berens",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0003-3437-6711",
+        "authenticated-orcid": false,
+        "given": "Siegfried",
+        "family": "Wahl",
+        "affiliation": []
+      }
+    ],
+    "member": "339",
+    "published-online": {
+      "date-parts": [
+        [
+          2017,
+          12,
+          19
+        ]
+      ]
+    },
+    "container-title": "Scientific Reports",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://www.nature.com/articles/s41598-017-17876-z.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://www.nature.com/articles/s41598-017-17876-z",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://www.nature.com/articles/s41598-017-17876-z.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          12,
+          13
+        ]
+      ],
+      "date-time": "2017-12-13T12:12:47Z",
+      "timestamp": 1513167167000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          12
+        ]
+      ]
+    },
+    "references-count": 74,
+    "alternative-id": [
+      "17876"
+    ],
+    "URL": "https://doi.org/10.1038/s41598-017-17876-z",
+    "relation": {
+      "cites": []
+    },
+    "subject": [
+      "Multidisciplinary"
+    ],
+    "container-title-short": "Sci Rep",
+    "article-number": "17816",
+    "short_url": "https://doi.org/gcqgdc",
+    "id": "12PvceitW"
   },
   {
     "indexed": {
@@ -56312,6 +56875,22 @@
     "id": "QBWMEuxW"
   },
   {
+    "URL": "http://citeseer.ist.psu.edu/viewdoc/summary?doi=10.1.1.41.1639",
+    "greycite-canonical-uri": null,
+    "title": "Probabilistic Outputs for Support Vector Machines and Comparisons to Regularized Likelihood Methods",
+    "container-title": "ADVANCES IN LARGE MARGIN CLASSIFIERS",
+    "author": [
+      {
+        "family": "Platt",
+        "given": "John C."
+      }
+    ],
+    "greycite-status": "Scanned",
+    "greycite-scanned": "2018-01-11 21:26:00",
+    "type": "webpage",
+    "id": "ZhuDaoNw"
+  },
+  {
     "URL": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi",
     "greycite-canonical-uri": null,
     "title": "CiteSeerX — Document Not Found",
@@ -56660,6 +57239,15 @@
     "redirects-to": "https://www.cameo3d.org/",
     "type": "webpage",
     "id": "u9uApoaB"
+  },
+  {
+    "URL": "http://www.cs.ox.ac.uk/people/yarin.gal/website/publications.html",
+    "greycite-canonical-uri": null,
+    "title": "Yarin Gal - Publications | Oxford Machine Learning",
+    "greycite-status": "Scanned",
+    "greycite-scanned": "2018-01-11 21:26:01",
+    "type": "webpage",
+    "id": "CNapgwTY"
   },
   {
     "URL": "http://www.deeplearningbook.org/",

@@ -27,7 +27,7 @@ author-meta:
 - Marwin H.S. Segler
 - Anthony Gitter
 - Casey S. Greene
-date-meta: '2018-01-12'
+date-meta: '2018-01-13'
 keywords:
 - deep learning
 - review
@@ -48,8 +48,8 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@cd1577e](https://github.com/greenelab/deep-review/tree/cd1577eac3ee85ad2dc2150ec2f0dae5d94dc8ef)
-on January 12, 2018.
+from [greenelab/deep-review@af9830c](https://github.com/greenelab/deep-review/tree/af9830cbdb9bf8041ea8af5964a8c6325ee5668e)
+on January 13, 2018.
 </em></small>
 
 ## Authors
@@ -1421,6 +1421,59 @@ In assessing the upper bound on the predictive performance of a deep learning mo
 Study-level variability limits classification performance and can lead to underestimating prediction error if the generalization error is estimated by splitting a single dataset.
 Analyses can incorporate data from multiple labs and experiments to capture between-study variation within the prediction model mitigating some of these issues.
 
+### Uncertainty quantification
+
+Deep learning based solutions for biomedical applications could substantially benefit from guarantees on the reliability of predictions and a quantification of uncertainty.
+Due to biological variability and precision limits of equipment, biomedical data do not consist of precise measurements but of estimates with noise.
+Hence, it is crucial to obtain uncertainty measures that capture how noise in input values propagate through deep neural networks.
+Such measures can be used for reliability assessment of automated decisions in clinical and public health applications, and for guarding against model vulnerabilities in the face of rare or adversarial cases [@P9vKrhYz].
+Moreover, in fundamental biological research, measures of uncertainty help researchers distinguish between true regularities in the data and patterns that are false or merely anecdotal.
+There are two main uncertainties that one can calculate: epistemic and aleatoric [@1GDnudDWl].
+Epistemic uncertainty describes uncertainty about the model, its structure, or its parameters.
+This uncertainty is caused by insufficient training data or by a difference in the training set and testing set distributions, so it vanishes in the limit of infinite data.
+On the other hand, aleatoric uncertainty describes uncertainty inherent in the observations.
+This uncertainty is due to noisy or missing data, so it vanishes with the ability to observe all independent variables with infinite precision.
+A good way to represent aleatoric uncertainty is to design an appropriate loss function with an uncertainty variable.
+In the case of data-dependent aleatoric uncertainty, one can train the model to increase its uncertainty when it is incorrect due to noisy or missing data, and in the case of task-depedent aleatoric uncertainty, one can optimize for the best uncertainty parameter for each task [@WZjlu7tr].
+Meanwhile, there are various methods for modeling epistemic uncertainty, outlined below.
+
+In classification tasks, confidence calibration is the problem of using classifier scores to predict class membership probabilities that match the true membership likelihoods.
+These membership probabilities can be used to assess the uncertainty associated with assigning the example to each of the classes.
+Guo et al. [@QJ6hYH8N] observed that contemporary neural networks are poorly calibrated and provided a simple recommendation for calibration: temperature scaling, a single parameter special case of Platt scaling [@ZhuDaoNw].
+In addition to confidence calibration, there is early work from Chryssolouris et al. [@9SnNyc8Y] that described a method for obtaining confidence intervals with the assumption of normally distributed error for the neural network.
+More recently, Hendrycks and Gimpel discovered that incorrect or out-of-distribution examples usually have lower maximum softmax probabilities than correctly classified examples, allowing for effective detection of misclassified examples [@Tkobp7Qj].
+Liang et al. used temperature scaling and small perturbations to further separate the softmax scores of correctly classified examples and the scores of out-of-distribution examples, allowing for more effective detection [@vJxaHm0b].
+This approach outperformed the baseline approaches by a large margin, establishing a new state-of-the-art performance.
+
+An alternative approach for obtaining principled uncertainty estimates from deep learning models is to use Bayesian neural networks.
+Deep learning models are usually trained to obtain the most likely parameters given the data.
+However, choosing the single most likely set of parameters ignores the uncertainty about which set of parameters (among the possible models that explain the given dataset) should be used.
+This sometimes leads to uncertainty in predictions when the chosen likely parameters produce high-confidence but incorrect results.
+On the other hand, the parameters of Bayesian neural networks are modeled as full probability distributions.
+This Bayesian approach comes with a whole host of benefits, including better calibrated confidence estimates [@InL72p4N] and more robustness to adversarial and out-of-distribution examples [@b5zIzCEO].
+Unfortunately, modeling the full posterior distribution for the model’s parameters given the data is usually computationally intractable.
+One popular method for circumventing this high computational cost is called test-time dropout [@1FDihfnM], where an approximate posterior distribution is obtained using variational inference.
+Gal and Ghahramani showed that a stack of fully connected layers with dropout between the layers is equivalent to approximate inference in a Gaussian process model [@1FDihfnM].
+The authors interpret dropout as a variational inference method and apply their method to convolutional neural networks.
+This is simple to implement and preserves the possibility of obtaining cheap samples from the approximate posterior distribution.
+Operationally, obtaining model uncertainty for a given case becomes as straightforward as leaving dropout turned on and predicting multiple times.
+The spread of the different predictions is a reasonable proxy for model uncertainty.
+This technique has been successfully applied in an automated system for detecting diabetic retinopathy [@12PvceitW], where uncertainty-informed referrals improved diagnostic performance and allowed the model to meet the National Health Service recommended levels of sensitivity and specificity.
+The authors also found that entropy performs comparably to the spread obtained via test-time dropout for identifying uncertain cases, and therefore it can be used instead for automated referrals.
+
+Several other techniques have been proposed for effectively estimating predictive uncertainty as uncertainty quantification for neural networks continues to be an active research area.
+Recently, McClure and Kriegeskorte observed that test-time sampling improved calibration of the probabilistic predictions, sampling weights led to more robust uncertainty estimates than sampling units, and spike-and-slab sampling is superior to Gaussian dropconnect and Bernoulli dropout [@ZhgOMnnD].
+Krueger et al. introduced Bayesian hypernetworks [@emWW7yUp] as another framework for approximate Bayesian inference in deep learning, where an invertible generative hypernetwork maps isotropic Gaussian noise to parameters of the primary network allowing for computationally cheap sampling and efficient estimation of the posterior.
+Meanwhile, Lakshminarayanan et al. proposed using deep ensembles, which are traditionally used for boosting predictive performance, on standard (non-Bayesian) neural networks to obtain well-calibrated uncertainty estimates that are comparable to those obtained by Bayesian neural networks [@Jy2oz6xk].
+In cases where model uncertainty is known to be caused by a difference in training and testing distributions, domain adaptation based techniques can help mitigate the problem [@nu0eLZr0].
+
+Despite the success and popularity of deep learning, some deep learning models can be surprisingly brittle.
+Researchers are actively working on modifications to deep learning frameworks to enable them to handle probability and embrace uncertainty.
+Most notably, Bayesian modeling and deep learning are being integrated with renewed enthusiasm.
+As a result, several opportunities for innovation arise: understanding the causes of model uncertainty can lead to novel optimization and regularization techniques, assessing the utility of uncertainty estimation techniques on various model architectures and structures can be very useful to practitioners, and extending Bayesian deep learning to unsupervised settings can be a significant breakthrough [@CNapgwTY].
+Unfortunately, uncertainty quantification techniques are underutilized in the computational biology communities and largely ignored in the current deep learning for biomedicine literature.
+Thus, the practical value of uncertainty quantification in biomedical domains is yet to be appreciated.
+
 ### Interpretation
 
 As deep learning models achieve state-of-the-art performance in a variety of domains, there is a growing need to make the models more interpretable.
@@ -1526,9 +1579,6 @@ For example, Osokin et al. trained GANs on two-channel fluorescent microscopy im
 Goldsborough et al. trained a GAN on fluorescent microscopy images and used latent space interpolation and arithmetic to reveal underlying responses to small molecule perturbations in cell lines [@1EdCkau6d].
 
 #### Miscellaneous approaches
-
-Toward quantifying the uncertainty of predictions, there has been a renewed interest in confidence intervals for deep neural networks. Early work from Chryssolouris et al. [@9SnNyc8Y] provided confidence intervals under the assumption of normally-distributed error.
-A more recent technique known as test-time dropout [@1FDihfnM] can also be used to obtain a probabilistic interpretation of a network's outputs.
 
 It can often be informative to understand how the training data affects model learning.
 Toward this end, Koh and Liang [@69wxD9y] used influence functions, a technique from robust statistics, to trace a model's predictions back through the learning algorithm to identify the datapoints in the training set that had the most impact on a given prediction.
@@ -1821,7 +1871,7 @@ To facilitate citation, we [defined](https://github.com/greenelab/deep-review/bl
 We supported citations to the following identifier types (in order of preference): DOIs, PubMed Central IDs, PubMed IDs, arXiv IDs, and URLs.
 References were automatically generated from citation metadata by querying APIs to generate [Citation Style Language](http://citationstyles.org/) (CSL) JSON items for each reference.
 [Pandoc](http://pandoc.org/) and [pandoc-citeproc](https://github.com/jgm/pandoc-citeproc) converted the markdown to HTML and PDF, while rendering the formatted citations and references.
-In total, referenced works consisted of 343 DOIs, 6 PubMed Central records, 0 PubMed records, 115 arXiv manuscripts, and 44 URLs (webpages as well as manuscripts lacking standardized identifiers).
+In total, referenced works consisted of 344 DOIs, 6 PubMed Central records, 0 PubMed records, 127 arXiv manuscripts, and 46 URLs (webpages as well as manuscripts lacking standardized identifiers).
 
 We implemented continuous analysis so the manuscript was automatically regenerated whenever the source changed [@Qh7xTLwz].
 We configured Travis CI -- a continuous integration service -- to fetch new citation metadata and rebuild the manuscript for every commit.

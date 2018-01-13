@@ -28,6 +28,7 @@ string	citation	standard_citation	citation_id
 @tag:Hadjas2015_cc	arxiv:1504.04343	arxiv:1504.04343	13KjSCKB2
 @tag:Chen2015_hashing	arxiv:1504.04788	arxiv:1504.04788	15lYGmZpY
 @tag:Meng2016_mllib	arxiv:1505.06807	arxiv:1505.06807	rZnxDitd
+@tag:domain_adapt_uncertainty	arxiv:1505.07818	arxiv:1505.07818	nu0eLZr0
 @tag:Karpathy2015_visualizing	arxiv:1506.02078	arxiv:1506.02078	2cpYveR4
 @tag:Gal2015_dropout	arxiv:1506.02142	arxiv:1506.02142	1FDihfnM
 @tag:Sa2015_buckwild	arxiv:1506.06438	arxiv:1506.06438	w6CoVmFK
@@ -59,6 +60,7 @@ string	citation	standard_citation	citation_id
 @tag:Lei2016_rationalizing	arxiv:1606.04155	arxiv:1606.04155	ZUCVI5eU
 @arxiv:1606.05718	arxiv:1606.05718	arxiv:1606.05718	mbEp6jNr
 @tag:Wang2016_breast_cancer	arxiv:1606.05718	arxiv:1606.05718	mbEp6jNr
+@tag:ai_safety	arxiv:1606.06565	arxiv:1606.06565	InL72p4N
 @tag:Strobelt2016_visual	arxiv:1606.07461	arxiv:1606.07461	1Ad3UOefc
 @tag:Kearnes2016_admet	arxiv:1606.08793	arxiv:1606.08793	uP7SgBVd
 @arxiv:1606.08813v3	arxiv:1606.08813v3	arxiv:1606.08813v3	7yE9K08a
@@ -73,6 +75,7 @@ string	citation	standard_citation	citation_id
 @arxiv:1609.02943	arxiv:1609.02943	arxiv:1609.02943	ULSPV0rh
 @tag:Hubara2016_qnn	arxiv:1609.07061	arxiv:1609.07061	1GUizyE8e
 @arxiv:1609.08144	arxiv:1609.08144	arxiv:1609.08144	4TK06zOf
+@tag:out_dist_baseline	arxiv:1610.02136	arxiv:1610.02136	Tkobp7Qj
 @tag:Chollet2016_xception	arxiv:1610.02357	arxiv:1610.02357	VMkPJjVk
 @tag:Selvaraju2016_grad	arxiv:1610.02391	arxiv:1610.02391	RZsNSRDS
 @arxiv:1610.02413	arxiv:1610.02413	arxiv:1610.02413	1ENxzq6pT
@@ -81,6 +84,7 @@ string	citation	standard_citation	citation_id
 @arxiv:1610.05256	arxiv:1610.05256	arxiv:1610.05256	M2OLWojE
 @arxiv:1610.05820	arxiv:1610.05820	arxiv:1610.05820	1HbRTExaU
 @arxiv:1610.09559	arxiv:1610.09559	arxiv:1610.09559	11aqfNfQx
+@tag:mcclure_bayesian	arxiv:1611.01639	arxiv:1611.01639	ZhgOMnnD
 @arxiv:1611.02796	arxiv:1611.02796	arxiv:1611.02796	lERqKdZJ
 @tag:Zhang2017_generalization	arxiv:1611.03530v2	arxiv:1611.03530v2	D2B03NVK
 @arxiv:1611.03814	arxiv:1611.03814	arxiv:1611.03814	AsLAb71x
@@ -88,6 +92,7 @@ string	citation	standard_citation	citation_id
 @tag:Kindermans2016_investigating	arxiv:1611.07270	arxiv:1611.07270	b1sc0cgP
 @tag:Lundberg2016_an	arxiv:1611.07478	arxiv:1611.07478	DeOI1oGf
 @arxiv:1611.08373	arxiv:1611.08373	arxiv:1611.08373	dO844vZn
+@tag:uncertainty_ensembles	arxiv:1612.01474	arxiv:1612.01474	Jy2oz6xk
 @tag:Ragoza2016_protein	arxiv:1612.02751	arxiv:1612.02751	bNBiIiTt
 @tag:Segler2017_drug_design	arxiv:1701.01329	arxiv:1701.01329	8LWFFeYg
 @tag:Murdoch2017_automatic	arxiv:1702.02540	arxiv:1702.02540	10ViHstXn
@@ -97,6 +102,7 @@ string	citation	standard_citation	citation_id
 @arxiv:1703.01925	arxiv:1703.01925	arxiv:1703.01925	AQ3N6Ayw
 @arxiv:1703.02136	arxiv:1703.02136	arxiv:1703.02136	wKioubsT
 @tag:Koh2017_understanding	arxiv:1703.04730	arxiv:1703.04730	69wxD9y
+@tag:uncertainty_types	arxiv:1703.04977	arxiv:1703.04977	1GDnudDWl
 @arxiv:1703.06490v1	arxiv:1703.06490v1	arxiv:1703.06490v1	xl1ijigK
 @arxiv:1703.10603	arxiv:1703.10603	arxiv:1703.10603	17YaKNLKk
 @arxiv:1704.01155	arxiv:1704.01155	arxiv:1704.01155	18lZK7fxH
@@ -109,13 +115,19 @@ string	citation	standard_citation	citation_id
 @tag:Johnson2017_integ_cell	arxiv:1705.00092	arxiv:1705.00092	71c6rs2z
 @arxiv:1705.02315	arxiv:1705.02315	arxiv:1705.02315	PGi9g7yV
 @arxiv:1705.03261	arxiv:1705.03261	arxiv:1705.03261	M6JCKCLX
+@tag:uncertainty_multi_task	arxiv:1705.07115	arxiv:1705.07115	WZjlu7tr
+@tag:strong_adversary	arxiv:1705.07263	arxiv:1705.07263	b5zIzCEO
 @arxiv:1705.09516	arxiv:1705.09516	arxiv:1705.09516	z8hmfrmY
 @arxiv:1706.01556v2	arxiv:1706.01556v2	arxiv:1706.01556v2	TNHJioqT
 @arxiv:1706.02216v2	arxiv:1706.02216v2	arxiv:1706.02216v2	MwUPw4CD
 @arxiv:1706.02633v1	arxiv:1706.02633v1	arxiv:1706.02633v1	1988BRJe3
+@tag:temp_out_dist	arxiv:1706.02690	arxiv:1706.02690	vJxaHm0b
+@tag:guo_calibration	arxiv:1706.04599	arxiv:1706.04599	QJ6hYH8N
+@tag:ghahramani_protect	arxiv:1707.02476	arxiv:1707.02476	P9vKrhYz
 @tag:Singh2017_attentivechrome	arxiv:1708.00339	arxiv:1708.00339	16MNknNBL
 @tag:Osokin2017_biogan	arxiv:1708.04692	arxiv:1708.04692	zBCcUQOM
 @arxiv:1709.02082	arxiv:1709.02082	arxiv:1709.02082	RHqbJgpe
+@tag:bayesian_hypernets	arxiv:1710.04759	arxiv:1710.04759	emWW7yUp
 @arxiv:1710.10568v1	arxiv:1710.10568v1	arxiv:1710.10568v1	FMsqNIQ4
 @tag:WayGreene2017_eval	arxiv:1711.04828	arxiv:1711.04828	rMz1OFc6
 @arxiv:1712.05898	arxiv:1712.05898	arxiv:1712.05898	gYxBO26g
@@ -234,6 +246,7 @@ string	citation	standard_citation	citation_id
 @tag:Berezikov2011_mirna	doi:10.1038/nrg3079	doi:10.1038/nrg3079	8lpCCppx
 @doi:10.1038/nrg3208	doi:10.1038/nrg3208	doi:10.1038/nrg3208	FkSZ1qmz
 @doi:10.1038/nrg3458	doi:10.1038/nrg3458	doi:10.1038/nrg3458	8yA3foA6
+@tag:retinopathy_uncertainty	doi:10.1038/s41598-017-17876-z	doi:10.1038/s41598-017-17876-z	12PvceitW
 @doi:10.1038/srep11476	doi:10.1038/srep11476	doi:10.1038/srep11476	UpFrhdJf
 @doi:10.1038/srep18962	doi:10.1038/srep18962	doi:10.1038/srep18962	UO8L6nd
 @doi:10.1038/srep26094	doi:10.1038/srep26094	doi:10.1038/srep26094	WrNCJ9sO
@@ -488,6 +501,7 @@ string	citation	standard_citation	citation_id
 @tag:Faruqi	url:http://alifar76.github.io/sklearn-metrics/	url:http://alifar76.github.io/sklearn-metrics/	NQ5jiN7B
 @url:http://ana.blogs.com/maestros/2006/11/data_is_the_new.html	url:http://ana.blogs.com/maestros/2006/11/data_is_the_new.html	url:http://ana.blogs.com/maestros/2006/11/data_is_the_new.html	6fE0Vrba
 @url:http://blog.dhimmel.com/irreproducible-timestamps/	url:http://blog.dhimmel.com/irreproducible-timestamps/	url:http://blog.dhimmel.com/irreproducible-timestamps/	QBWMEuxW
+@tag:platt_scaling	url:http://citeseer.ist.psu.edu/viewdoc/summary?doi=10.1.1.41.1639	url:http://citeseer.ist.psu.edu/viewdoc/summary?doi=10.1.1.41.1639	ZhuDaoNw
 @url:http://citeseerx.ist.psu.edu/viewdoc/summary?doi	url:http://citeseerx.ist.psu.edu/viewdoc/summary?doi	url:http://citeseerx.ist.psu.edu/viewdoc/summary?doi	4XHCB8iI
 @tag:Mordvintsev2015_inceptionism	url:http://googleresearch.blogspot.co.uk/2015/06/inceptionism-going-deeper-into-neural.html	url:http://googleresearch.blogspot.co.uk/2015/06/inceptionism-going-deeper-into-neural.html	XLHInhc1
 @url:http://hazyresearch.github.io/snorkel/blog/weak_supervision.html	url:http://hazyresearch.github.io/snorkel/blog/weak_supervision.html	url:http://hazyresearch.github.io/snorkel/blog/weak_supervision.html	hfcf5Hmi
@@ -499,6 +513,7 @@ string	citation	standard_citation	citation_id
 @tag:Unterthiner2014_screening	url:http://www.bioinf.at/publications/2014/NIPS2014a.pdf	url:http://www.bioinf.at/publications/2014/NIPS2014a.pdf	F8fP2vAg
 @tag:Speech_recognition	url:http://www.businessinsider.com/ibm-edges-closer-to-human-speech-recognition-2017-3	url:http://www.businessinsider.com/ibm-edges-closer-to-human-speech-recognition-2017-3	nyjAIan4
 @url:http://www.cameo3d.org/	url:http://www.cameo3d.org/	url:http://www.cameo3d.org/	u9uApoaB
+@tag:gal_thesis	url:http://www.cs.ox.ac.uk/people/yarin.gal/website/publications.html#Gal2015Thesis	url:http://www.cs.ox.ac.uk/people/yarin.gal/website/publications.html#Gal2015Thesis	CNapgwTY
 @url:http://www.deeplearningbook.org/	url:http://www.deeplearningbook.org/	url:http://www.deeplearningbook.org/	yg8NW0K7
 @tag:Guetterman	url:http://www.fasebj.org/content/30/1_Supplement/406.3	url:http://www.fasebj.org/content/30/1_Supplement/406.3	W0cYSf89
 @tag:li2016joint	url:http://www.ijcai.org/Proceedings/16/Papers/403.pdf	url:http://www.ijcai.org/Proceedings/16/Papers/403.pdf	MmcdzBXf
