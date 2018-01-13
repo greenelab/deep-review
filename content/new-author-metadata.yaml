@@ -37,7 +37,7 @@ author_info:
     orcid: 0000-0002-1400-3398
     email: smb310@georgetown.edu
     affiliations:
-      - Innovation Center for Biomedical Informatics, Georgetown University Medical Center, Washington, DC, USA
+      - Innovation Center for Biomedical Informatics, Georgetown University Medical Center, Washington, DC
     funders: NIH R21CA220398, NIH P30CA051008
   - github: michaelmhoffman
     name: Michael M. Hoffman
@@ -55,5 +55,5 @@ author_info:
     orcid: 0000-0003-3247-6487
     email: turagas@janelia.hhmi.org
     affiliations:
-      - Howard Hughes Medical Institute, Janelia Research Campus
+      - Howard Hughes Medical Institute, Janelia Research Campus, Ashburn, VA
     funders: Howard Hughes Medical Institute
