@@ -17,9 +17,10 @@ dependencies:
     - git+https://github.com/greenelab/manubot@b53f487026954729ce80ca963f3838ebca85a144
     - opentimestamps-client==0.5.1
     - opentimestamps==0.2.0.1
-    - pandoc-eqnos==1.0.0
-    - pandoc-fignos==1.0.0
-    - pandoc-tablenos==1.0.0
+    - pandoc-eqnos==1.2.0
+    - pandoc-fignos==1.2.0
+    - pandoc-tablenos==1.2.0
+    - pandoc-xnos==0.15
     - pybase62==0.3.2
     - pysha3==1.0.2
     - python-bitcoinlib==0.9.0
