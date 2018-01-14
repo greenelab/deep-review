@@ -14,7 +14,7 @@ dependencies:
   - conda-forge::watchdog=0.8.3
   - pip:
     - errorhandler==2.0.1
-    - git+https://github.com/greenelab/manubot@b53f487026954729ce80ca963f3838ebca85a144
+    - git+https://github.com/greenelab/manubot@7ca386db0610d1e1113abba10c109dcffd3e4c9a
     - opentimestamps-client==0.5.1
     - opentimestamps==0.2.0.1
     - pandoc-eqnos==1.2.0
@@ -25,4 +25,4 @@ dependencies:
     - pysha3==1.0.2
     - python-bitcoinlib==0.9.0
     - requests-cache==0.4.13
-    - weasyprint==0.41
+    - weasyprint==0.42
