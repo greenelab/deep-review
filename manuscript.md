@@ -48,7 +48,7 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@e10f48f](https://github.com/greenelab/deep-review/tree/e10f48f6900ae3f088c4d23b52671f2f25c728c0)
+from [greenelab/deep-review@676b835](https://github.com/greenelab/deep-review/tree/676b83567a7fb8f2235e617ed86a9d55860d2167)
 on January 15, 2018.
 </em></small>
 
@@ -383,7 +383,7 @@ Instead, researchers may benefit from using text mining to generate annotations 
 Wang et al. [@PGi9g7yV] proposed to build predictive DL models through the use of images with *weak labels*.
 Such labels are automatically generated and not verified by humans, so they may be noisy or incomplete.
 In this case, they applied a series of natural language processing (NLP) techniques to the associated chest X-ray radiological reports.
-They first extracted all diseases mentioned in the reports using a state-of-the-art NLP tool, then applied a newly-developed negation and uncertainty detection tool (NegBio [@gYxBO26g]) to filter negative and equivocal findings in the reports.
+They first extracted all diseases mentioned in the reports using a state-of-the-art NLP tool, then applied a new method, NegBio [@gYxBO26g], to filter negative and equivocal findings in the reports.
 Evaluation on four independent datasets demonstrated that NegBio is highly accurate for detecting negative and equivocal findings (~90% in F-measure, which balances precision and recall [@JmHFuXEM]).
 The resulting dataset [@odFR7ptt] consisted of 112,120 frontal-view chest X-ray images from 30,805 patients, and each image was associated with one or more *text-mined* (weakly-labeled) pathology categories (e.g. pneumonia and cardiomegaly) or "no finding" otherwise.
 Further, Wang et al. [@PGi9g7yV] used this dataset with a unified weakly-supervised multi-label image classification framework, to detect common thoracic diseases.
