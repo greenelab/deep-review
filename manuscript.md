@@ -48,7 +48,7 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@ec57b0a](https://github.com/greenelab/deep-review/tree/ec57b0af9c2476d2e41b41ed7e3eac2dc224423f)
+from [greenelab/deep-review@fbee07e](https://github.com/greenelab/deep-review/tree/fbee07efe25adde1bcc2fcdf8658f95a6b0847d7)
 on January 15, 2018.
 </em></small>
 
@@ -1133,7 +1133,7 @@ One of these models, DeepVariant, leverages Inception, a neural network trained 
 The top 5 rows represent the reference, and the bottom 95 rows represent randomly sampled reads that overlap the candidate variant.
 Each RGBA (red/green/blue/alpha) image pixel encodes the base (A, C, G, T) as a different red value, quality score as a green value, strand as a blue value, and variation from the reference as the alpha value.
 The neural network outputs genotype probabilities for each candidate variant.
-They were able to achieve better performance than GATK, a leading genotype caller, even when GATK was given information about population variation for each candidate variant.
+They were able to achieve better performance than GATK [@NCr4QkOg], a leading genotype caller, even when GATK was given information about population variation for each candidate variant.
 Another method, still in its infancy, hand-developed 62 features for each candidate variant and fed these vectors into a fully connected deep neural network [@GSLRw2L5].
 Unfortunately, this feature set required at least 15 iterations of software development to fine-tune, which suggests that these models may not generalize.
 
@@ -1172,6 +1172,7 @@ In connectomics, deep networks are used to segment the shapes of individual neur
 It is an exciting time for neuroscience.
 Recent rapid progress in deep networks continues to inspire new machine learning based models of brain computation [@WNE8N7Cp].
 And neuroscience continues to inspire new models of artificial intelligence [@Oc2wJ1JO].
+
 
 ## The impact of deep learning in treating disease and developing new treatments
 
@@ -1892,7 +1893,7 @@ To facilitate citation, we [defined](https://github.com/greenelab/deep-review/bl
 We supported citations to the following identifier types (in order of preference): DOIs, PubMed Central IDs, PubMed IDs, arXiv IDs, and URLs.
 References were automatically generated from citation metadata by querying APIs to generate [Citation Style Language](http://citationstyles.org/) (CSL) JSON items for each reference.
 [Pandoc](http://pandoc.org/) and [pandoc-citeproc](https://github.com/jgm/pandoc-citeproc) converted the markdown to HTML and PDF, while rendering the formatted citations and references.
-In total, referenced works consisted of 356 DOIs, 6 PubMed Central records, 0 PubMed records, 128 arXiv manuscripts, and 48 URLs (webpages as well as manuscripts lacking standardized identifiers).
+In total, referenced works consisted of 357 DOIs, 6 PubMed Central records, 0 PubMed records, 128 arXiv manuscripts, and 48 URLs (webpages as well as manuscripts lacking standardized identifiers).
 
 We implemented continuous analysis so the manuscript was automatically regenerated whenever the source changed [@Qh7xTLwz].
 We configured Travis CI -- a continuous integration service -- to fetch new citation metadata and rebuild the manuscript for every commit.

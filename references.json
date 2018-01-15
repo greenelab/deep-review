@@ -23034,6 +23034,232 @@
     "indexed": {
       "date-parts": [
         [
+          2018,
+          1,
+          15
+        ]
+      ],
+      "date-time": "2018-01-15T18:02:21Z",
+      "timestamp": 1516039341432
+    },
+    "reference-count": 39,
+    "publisher": "Springer Nature",
+    "issue": "5",
+    "license": [
+      {
+        "URL": "http://www.springer.com/tdm",
+        "start": {
+          "date-parts": [
+            [
+              2011,
+              4,
+              10
+            ]
+          ],
+          "date-time": "2011-04-10T00:00:00Z",
+          "timestamp": 1302393600000
+        },
+        "delay-in-days": 0,
+        "content-version": "unspecified"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2011,
+          5
+        ]
+      ]
+    },
+    "DOI": "10.1038/ng.806",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2011,
+          4,
+          12
+        ]
+      ],
+      "date-time": "2011-04-12T07:54:31Z",
+      "timestamp": 1302594871000
+    },
+    "page": "491-498",
+    "source": "Crossref",
+    "is-referenced-by-count": 2945,
+    "title": "A framework for variation discovery and genotyping using next-generation DNA sequencing data",
+    "prefix": "10.1038",
+    "volume": "43",
+    "author": [
+      {
+        "given": "Mark A",
+        "family": "DePristo",
+        "affiliation": []
+      },
+      {
+        "given": "Eric",
+        "family": "Banks",
+        "affiliation": []
+      },
+      {
+        "given": "Ryan",
+        "family": "Poplin",
+        "affiliation": []
+      },
+      {
+        "given": "Kiran V",
+        "family": "Garimella",
+        "affiliation": []
+      },
+      {
+        "given": "Jared R",
+        "family": "Maguire",
+        "affiliation": []
+      },
+      {
+        "given": "Christopher",
+        "family": "Hartl",
+        "affiliation": []
+      },
+      {
+        "given": "Anthony A",
+        "family": "Philippakis",
+        "affiliation": []
+      },
+      {
+        "given": "Guillermo",
+        "family": "del Angel",
+        "affiliation": []
+      },
+      {
+        "given": "Manuel A",
+        "family": "Rivas",
+        "affiliation": []
+      },
+      {
+        "given": "Matt",
+        "family": "Hanna",
+        "affiliation": []
+      },
+      {
+        "given": "Aaron",
+        "family": "McKenna",
+        "affiliation": []
+      },
+      {
+        "given": "Tim J",
+        "family": "Fennell",
+        "affiliation": []
+      },
+      {
+        "given": "Andrew M",
+        "family": "Kernytsky",
+        "affiliation": []
+      },
+      {
+        "given": "Andrey Y",
+        "family": "Sivachenko",
+        "affiliation": []
+      },
+      {
+        "given": "Kristian",
+        "family": "Cibulskis",
+        "affiliation": []
+      },
+      {
+        "given": "Stacey B",
+        "family": "Gabriel",
+        "affiliation": []
+      },
+      {
+        "given": "David",
+        "family": "Altshuler",
+        "affiliation": []
+      },
+      {
+        "given": "Mark J",
+        "family": "Daly",
+        "affiliation": []
+      }
+    ],
+    "member": "339",
+    "published-online": {
+      "date-parts": [
+        [
+          2011,
+          4,
+          10
+        ]
+      ]
+    },
+    "container-title": "Nature Genetics",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://www.nature.com/articles/ng.806.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://www.nature.com/articles/ng.806",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://www.nature.com/articles/ng.806.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2018,
+          1,
+          3
+        ]
+      ],
+      "date-time": "2018-01-03T16:14:06Z",
+      "timestamp": 1514996046000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2011,
+          4,
+          10
+        ]
+      ]
+    },
+    "references-count": 39,
+    "alternative-id": [
+      "BFng806"
+    ],
+    "URL": "https://doi.org/10.1038/ng.806",
+    "relation": {
+      "cites": []
+    },
+    "subject": [
+      "Genetics"
+    ],
+    "container-title-short": "Nat Genet",
+    "short_url": "https://doi.org/d9k453",
+    "id": "NCr4QkOg"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
           2017,
           10,
           31
