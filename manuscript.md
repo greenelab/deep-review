@@ -48,7 +48,7 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@676b835](https://github.com/greenelab/deep-review/tree/676b83567a7fb8f2235e617ed86a9d55860d2167)
+from [greenelab/deep-review@ec57b0a](https://github.com/greenelab/deep-review/tree/ec57b0af9c2476d2e41b41ed7e3eac2dc224423f)
 on January 15, 2018.
 </em></small>
 
@@ -668,7 +668,7 @@ In large patient populations, longitudinal analyses such as the Framingham Heart
 Yet, a common practice in EHR-based research is to take a snapshot at a point in time and convert patient data to a traditional vector for machine learning and statistical analysis.
 This results in loss of information as timing and order of events can provide insight into a patient's disease and treatment [@6RHepB1T].
 Efforts to model sequences of events have shown promise [@ogs3PPp7] but require exceedingly large patient sizes due to discrete combinatorial bucketing.
-Lasko et al. [@FLX0o7bL] used autoencoders on longitudinal sequences of serum urine acid measurements to identify population subtypes.
+Lasko et al. [@FLX0o7bL] used autoencoders on longitudinal sequences of serum uric acid measurements to identify population subtypes.
 More recently, deep learning has shown promise working with both sequences (CNNs)
 [@Ohd1Q9Xw] and the incorporation of past and current state (RNNs, LSTMs) [@HRXii6Ni].
 This may be a particular area of opportunity for deep neural networks.
