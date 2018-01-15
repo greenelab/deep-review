@@ -27,7 +27,7 @@ author-meta:
 - Marwin H.S. Segler
 - Anthony Gitter
 - Casey S. Greene
-date-meta: '2018-01-14'
+date-meta: '2018-01-15'
 keywords:
 - deep learning
 - review
@@ -48,8 +48,8 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@d22a3f8](https://github.com/greenelab/deep-review/tree/d22a3f8aa4767a36144a18e27e9cf1cd48443baa)
-on January 14, 2018.
+from [greenelab/deep-review@72352b8](https://github.com/greenelab/deep-review/tree/72352b8e472e39d807e21830ff72e2c0adaba1b3)
+on January 15, 2018.
 </em></small>
 
 ## Authors
@@ -111,7 +111,7 @@ Anthony Gitter<sup>23,24,†</sup>,
 Casey S. Greene<sup>2,†</sup>
 
 <sup>☯</sup> --- Author order was determined with a randomized algorithm<br>
-<sup>†</sup> --- To whom correspondence should be addressed: `gitter` at `biostat.wisc.edu` (AG) and `csgreene` at `upenn.edu` (CSG)
+<sup>†</sup> --- To whom correspondence should be addressed: gitter@biostat.wisc.edu (AG) and greenescientist@gmail.com (CSG)
 <small>
 
 
