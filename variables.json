@@ -445,7 +445,7 @@
   ],
   "ci_source": {
     "repo_slug": "greenelab/deep-review",
-    "commit": "362793bb94d2fa0d940afa780bffad82b113f85a"
+    "commit": "4169cbc347264f22628b75489e4a0b5d5680e95d"
   },
   "manuscript_stats": {
     "reference_counts": {
@@ -455,6 +455,6 @@
       "url": 49,
       "total": 541
     },
-    "word_count": 31490
+    "word_count": 31414
   }
 }

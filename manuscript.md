@@ -48,7 +48,7 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@362793b](https://github.com/greenelab/deep-review/tree/362793bb94d2fa0d940afa780bffad82b113f85a)
+from [greenelab/deep-review@4169cbc](https://github.com/greenelab/deep-review/tree/4169cbc347264f22628b75489e4a0b5d5680e95d)
 on January 15, 2018.
 </em></small>
 
@@ -172,14 +172,14 @@ Deep learning approaches grew from research in neural networks, which were first
 The history of neural networks is interesting in its own right [@1G5eCiq4d].
 In neural networks, inputs are fed into the input layer, which feeds into one or more hidden layers, which eventually link to an output layer.
 A layer consists of a set of nodes, usually called "features" or "units," which are connected via edges to the immediately earlier and the immediately deeper layers.
-The nodes of the input layer generally consist of the variables being measured in the dataset of interest -- for example, each node could represent the intensity value of a specific pixel in an image processing application or a gene expression value in a transcriptomics experiment.
+The nodes of the input layer generally consist of the variables being measured in the dataset of interest---for example, each node could represent the intensity value of a specific pixel in an image processing application or a gene expression value in a transcriptomics experiment.
 The neural networks used for deep learning have multiple hidden layers.
 Each layer essentially performs feature construction for the layers before it.
 The training process used often allows layers deeper in the network to contribute to the refinement of earlier layers.
 For this reason, these algorithms can automatically engineer features that are suitable for many tasks and customize those features for one or more specific tasks.
 
 Deep learning does many of the same things as more familiar machine learning approaches.
-In particular, deep learning approaches can be used both in *supervised* applications -- where the goal is to accurately predict one or more labels or outcomes associated with each data point -- in the place of regression approaches, as well as in *unsupervised*, or "exploratory" applications -- where the goal is to summarize, explain, or identify interesting patterns in a data set -- as a form of clustering.
+In particular, deep learning approaches can be used both in *supervised* applications---where the goal is to accurately predict one or more labels or outcomes associated with each data point---in the place of regression approaches, as well as in *unsupervised*, or "exploratory" applications---where the goal is to summarize, explain, or identify interesting patterns in a data set---as a form of clustering.
 Deep learning methods may in fact combine both of these steps.
 When sufficient data are available and labeled, these methods construct features tuned to a specific problem and combine those features into a predictor.
 In fact, if the dataset is "labeled" with binary classes, a simple neural network with no hidden layers and no cycles between units is equivalent to logistic regression if the output layer is a sigmoid (logistic) function of the input layer.
@@ -187,7 +187,7 @@ Similarly, for continuous outcomes, linear regression can be seen as a simple ne
 Thus, in some ways, supervised deep learning approaches can be seen as a generalization of regression models that allow for greater flexibility.
 Recently, hardware improvements and very large training datasets have allowed these deep learning techniques to surpass other machine learning algorithms for many problems.
 In a famous and early example, scientists from Google demonstrated that a neural network "discovered" that cats, faces, and pedestrians were important components of online videos [@IiNJE32f] without being told to look for them.
-What if, more generally, deep learning could solve the challenges presented by the growth of data in biomedicine? Could these algorithms identify the "cats" hidden in our data -- the patterns unknown to the researcher -- and suggest ways to act on them? In this review, we examine deep learning's application to biomedical science and discuss the unique challenges that biomedical data pose for deep learning methods.
+What if, more generally, deep learning could solve the challenges presented by the growth of data in biomedicine? Could these algorithms identify the "cats" hidden in our data---the patterns unknown to the researcher---and suggest ways to act on them? In this review, we examine deep learning's application to biomedical science and discuss the unique challenges that biomedical data pose for deep learning methods.
 
 Several important advances make the current surge of work done in this area possible.
 Easy-to-use software packages have brought the techniques of the field out of the specialist's toolkit to a broad community of computational scientists.
@@ -206,10 +206,10 @@ The convergence of these factors currently makes deep learning extremely adaptab
 | Deep learning (DL) approach | NN with multiple hidden layers |
 | Supervised learning | Machine-learning approaches with goal of prediction of labels or outcomes |
 | Unsupervised learning | Machine-learning approaches with goal of data summarization or pattern identification |
-| Convolutional neural network (CNN) | NN used for grid data -- such as images or equally-spaced time points - that considers convolutions instead of linear transformations, leading to increased sparsity and thus improved efficiency |
+| Convolutional neural network (CNN) | NN used for grid data---such as images or equally-spaced time points - that considers convolutions instead of linear transformations, leading to increased sparsity and thus improved efficiency |
 | Feed-forward neural network (FFNN) | NN that does not have cycles between nodes in the same layer |
 | Multi-layer perceptron (MLP) | Type of FFNN with at least one hidden layer where each deeper layer is a nonlinear function of each earlier layer |
-| Recurrent neural network (RNN) | NN used for sequential data -- such as time series or genomic data -- by using cycles between nodes in the hidden layers, in contrast to FFNN |
+| Recurrent neural network (RNN) | NN used for sequential data---such as time series or genomic data---by using cycles between nodes in the hidden layers, in contrast to FFNN |
 | Long short-term memory (LSTM) model | Special type of RNN that can learn longer-term dependencies |
 | Autoencoder (AE) | NN that sets the outer layer to be similar to the input layer, used for example in dimension reduction |
 | Variational Autoencoder (VAE) | AE with an added constraint of learning normally distributed features |
@@ -226,7 +226,7 @@ While deep learning shows increased flexibility over other machine learning appr
 For these reasons, deep learning has recently become popular in some areas of biology and medicine, while having lower adoption in other areas.
 At the same time, this highlights the potentially even larger role that it may play in future research, given the increases in data in all biomedical fields.
 It is also important to see it as a branch of machine learning and acknowledge that it has the same limitations as other approaches in that field.
-In particular, the results are still dependent on the underlying study design and the usual caveats of correlation versus causation still apply -- a more precise answer is only better than a less precise one if it answers the correct question.
+In particular, the results are still dependent on the underlying study design and the usual caveats of correlation versus causation still apply---a more precise answer is only better than a less precise one if it answers the correct question.
 
 ### Will deep learning transform the study of human disease?
 
@@ -330,11 +330,11 @@ The practice is exemplified by a series of papers that analyze images from mammo
 @JK8NuXy3; @9G9Hv1Pp; @Xxb4t3zO;
 @5kfDbGhA].
 To expand the number and diversity of images, researchers constructed adversarial training examples [@Xxb4t3zO].
-Adversarial training examples are constructed by applying a transformation that changes training images but not their content -- for example by rotating an image by a random amount.
+Adversarial training examples are constructed by applying a transformation that changes training images but not their content---for example by rotating an image by a random amount.
 An alternative in the domain is to train towards human-created features before subsequent fine-tuning [@JK8NuXy3], which can help to sidestep this challenge though it does give up deep learning techniques' strength as feature constructors.
 
-Another way of dealing with limited training data is to divide rich data -- e.g.
-3D images -- into numerous reduced projections.
+Another way of dealing with limited training data is to divide rich data---e.g.
+3D images---into numerous reduced projections.
 Shin et al.
 [@1GAyqYBNZ] compared various deep network architectures, dataset characteristics, and training procedures for computer tomography-based (CT) abnormality detection.
 They concluded that networks as deep as 22 layers could be useful for 3D data, despite the limited size of training datasets.
@@ -620,7 +620,7 @@ It can be trivial to train a model without differential privacy, but quite diffi
 This problem can be particularly pronounced with small sample sizes.
 
 While none of these problems are insurmountable or restricted to deep learning, they present challenges that cannot be ignored.
-Technical evolution in EHRs and data standards will doubtless ease -- although not solve -- the problems of data sharing and merging.
+Technical evolution in EHRs and data standards will doubtless ease---although not solve---the problems of data sharing and merging.
 More problematic are the privacy issues.
 Those applying deep learning to the domain should consider the potential of inadvertently disclosing the participants' identities.
 Techniques that enable training on data without sharing the raw data may have a part to play.
@@ -672,12 +672,12 @@ Lasko et al. [@FLX0o7bL] used autoencoders on longitudinal sequences of serum ur
 More recently, deep learning has shown promise working with both sequences (CNNs)
 [@Ohd1Q9Xw] and the incorporation of past and current state (RNNs, LSTMs) [@HRXii6Ni].
 This may be a particular area of opportunity for deep neural networks.
-The ability to recognize relevant sequences of events from a large number of trajectories requires powerful and flexible feature construction methods -- an area in which deep neural networks excel.
+The ability to recognize relevant sequences of events from a large number of trajectories requires powerful and flexible feature construction methods---an area in which deep neural networks excel.
 
 
 ## Deep learning to study the fundamental biological processes underlying human disease
 
-The study of cellular structure and core biological processes -- transcription, translation, signaling, metabolism, etc. -- in humans and model organisms will greatly impact our understanding of human disease over the long horizon [@ru0hjGeQ].
+The study of cellular structure and core biological processes---transcription, translation, signaling, metabolism, etc.---in humans and model organisms will greatly impact our understanding of human disease over the long horizon [@ru0hjGeQ].
 Predicting how cellular systems respond to environmental perturbations and are altered by genetic variation remain daunting tasks.
 Deep learning offers new approaches for modeling biological processes and integrating multiple types of omic data [@8SMDF816], which could eventually help predict how these processes are disrupted in disease.
 Recent work has already advanced our ability to identify and interpret genetic variants, study microbial communities, and predict protein structures, which also relates to the problems discussed in the drug development section.
@@ -1021,7 +1021,7 @@ This preprocessing effectively reduces the number of graph convolutional layers 
 ### Morphological phenotypes
 
 A field poised for dramatic revolution by deep learning is bioimage analysis.
-Thus far, the primary use of deep learning for biological images has been for segmentation -- that is, for the identification of biologically relevant structures in images such as nuclei, infected cells, or vasculature -- in fluorescence or even brightfield channels [@40EG4ZEU].
+Thus far, the primary use of deep learning for biological images has been for segmentation---that is, for the identification of biologically relevant structures in images such as nuclei, infected cells, or vasculature---in fluorescence or even brightfield channels [@40EG4ZEU].
 Once so-called regions of interest have been identified, it is often straightforward to measure biological properties of interest, such as fluorescence intensities, textures, and sizes.
 Given the dramatic successes of deep learning in biological imaging, we simply refer to articles that review recent advancements [@MmRGFVUu;
 @40EG4ZEU; @TutLhFSz].
@@ -1037,13 +1037,13 @@ Notably, this approach reduces the modeling time by omitting the subcellular str
 
 The impact of further improvements on biomedicine could be enormous.
 Comparing cell population morphologies using conventional methods of segmentation and feature extraction has already proven useful for functionally annotating genes and alleles, identifying the cellular target of small molecules, and identifying disease-specific phenotypes suitable for drug screening [@hkKO4QYl; @m3Ij21U8; @McjXFLLq].
-Deep learning would bring to these new kinds of experiments -- known as image-based profiling or morphological profiling -- a higher degree of accuracy, stemming from the freedom from human-tuned feature extraction strategies.
+Deep learning would bring to these new kinds of experiments---known as image-based profiling or morphological profiling---a higher degree of accuracy, stemming from the freedom from human-tuned feature extraction strategies.
 
 ### Single-cell data
 
 Single-cell methods are generating excitement as biologists characterize the vast heterogeneity within unicellular species and between cells of the same tissue type in the same organism [@1AWC7HsO0].
 For instance, tumor cells and neurons can both harbor extensive somatic variation [@1GvfSy48x].
-Understanding single-cell diversity in all its dimensions -- genetic, epigenomic, transcriptomic, proteomic, morphologic, and metabolic -- is key if treatments are to be targeted not only to a specific individual, but also to specific pathological subsets of cells.
+Understanding single-cell diversity in all its dimensions---genetic, epigenomic, transcriptomic, proteomic, morphologic, and metabolic---is key if treatments are to be targeted not only to a specific individual, but also to specific pathological subsets of cells.
 Single-cell methods also promise to uncover a wealth of new biological knowledge.
 A sufficiently large population of single cells will have enough representative
 "snapshots" to recreate timelines of dynamic biological processes.
@@ -1056,7 +1056,7 @@ To solve this problem, Angermueller et al. [@19EJTHByG] trained a neural network
 Deep learning has also been useful for dealing with batch effects [@1ERrBiqG7].
 
 Examining populations of single cells can reveal biologically meaningful subsets of cells as well as their underlying gene regulatory networks [@1HPu3R2B4].
-Unfortunately, machine learning methods generally struggle with imbalanced data -- when there are many more examples of class 1 than class 2 -- because prediction accuracy is usually evaluated over the entire dataset.
+Unfortunately, machine learning methods generally struggle with imbalanced data---when there are many more examples of class 1 than class 2---because prediction accuracy is usually evaluated over the entire dataset.
 To tackle this challenge, Arvaniti et al.
 [@r3Gbjksq] classified healthy and cancer cells expressing 25 markers by using the most discriminative filters from a CNN trained on the data as a linear classifier.
 They achieved impressive performance, even for cell types where the subset percentage ranged from 0.1 to 1%, significantly outperforming logistic regression and distance-based outlier detection methods.
@@ -1076,7 +1076,7 @@ We are excited to see the creative applications of deep learning to single-cell 
 
 ### Metagenomics
 
-Metagenomics, which refers to the study of genetic material -- 16S rRNA or whole-genome shotgun DNA -- from microbial communities, has revolutionized the study of micro-scale ecosystems within and around us.
+Metagenomics, which refers to the study of genetic material---16S rRNA or whole-genome shotgun DNA---from microbial communities, has revolutionized the study of micro-scale ecosystems within and around us.
 In recent years, machine learning has proved to be a powerful tool for metagenomic analysis.
 16S rRNA has long been used to deconvolve mixtures of microbial genomes, yet this ignores more than 99% of the genomic content.
 Subsequent tools aimed to classify 300 bp-3000 bp reads from complex mixtures of microbial genomes based on tetranucleotide frequencies, which differ across organisms [@N9NzkOjA], using supervised [@QV551Nlx; @1HtJuEkb2] or unsupervised methods [@1HhqhBwrM].
@@ -1176,7 +1176,7 @@ And neuroscience continues to inspire new models of artificial intelligence [@Oc
 
 ## The impact of deep learning in treating disease and developing new treatments
 
-Given the need to make better, faster interventions at the point of care -- incorporating the complex calculus of a patients symptoms, diagnostics, and life history -- there have been many attempts to apply deep learning to patient treatment.
+Given the need to make better, faster interventions at the point of care---incorporating the complex calculus of a patients symptoms, diagnostics, and life history---there have been many attempts to apply deep learning to patient treatment.
 Success in this area could help to enable personalized healthcare or precision medicine [@VOQtVhWs; @3JyJ3DTh].
 Earlier, we reviewed approaches for patient categorization.
 Here, we examine the potential for better treatment, which broadly, may be divided into methods for improved choices of interventions for patients and those for development of new interventions.
@@ -1395,7 +1395,7 @@ Here we examine these factors that may impede further progress, ask what steps h
 ### Customizing deep learning models reflects a tradeoff between bias and variance
 
 Some of the challenges in applying deep learning are shared with other machine learning methods.
-In particular, many problem-specific optimizations described in this review reflect a recurring universal tradeoff -- controlling the flexibility of a model in order to maximize predictivity.
+In particular, many problem-specific optimizations described in this review reflect a recurring universal tradeoff---controlling the flexibility of a model in order to maximize predictivity.
 Methods for adjusting the flexibility of deep learning models include dropout, reduced data projections, and transfer learning (described below).
 One way of understanding such model optimizations is that they incorporate external information to limit model flexibility and thereby improve predictions.
 This balance is formally described as a tradeoff between "bias and variance"
@@ -1738,7 +1738,7 @@ Because many deep learning models are often built using one of several popular s
 The availability of pre-trained models can accelerate research, with image classifiers as an apt example.
 A pre-trained neural network can be quickly fine-tuned on new data and used in transfer learning, as discussed below.
 Taking this idea to the extreme, genomic data has been artificially encoded as images in order to benefit from pre-trained image classifiers [@FVfZESYP].
-"Model zoos" -- collections of pre-trained models -- are not yet common in biomedical domains but have started to appear in genomics applications [@19EJTHByG; @117PEpTMe].
+"Model zoos"---collections of pre-trained models---are not yet common in biomedical domains but have started to appear in genomics applications [@19EJTHByG; @117PEpTMe].
 However, it is important to note that sharing models trained on individual data requires great care because deep learning models can be attacked to identify examples used in training.
 One possible solution to protect individual samples includes training models under differential privacy [@LiCxcgZp], which has been used in the biomedical domain [@fbIH12yd].
 We discussed this issue as well as recent techniques to mitigate these concerns in the patient categorization section.
@@ -1848,7 +1848,7 @@ The phenomenal improvements on benchmark datasets are undeniable, but greatly re
 Widespread adoption of conversational speech technologies will require solving the problem, i.e.
 methods that surpass human performance, and persuading users to adopt them [@nyjAIan4].
 We see parallels in healthcare, where achieving the full potential of deep learning will require outstanding predictive performance as well as acceptance and adoption by biologists and clinicians.
-These experts will rightfully demand rigorous evidence that deep learning has impacted their respective disciplines -- elucidated new biological mechanisms and improved patient outcomes -- to be convinced that the promises of deep learning are more substantive than those of previous generations of artificial intelligence.
+These experts will rightfully demand rigorous evidence that deep learning has impacted their respective disciplines---elucidated new biological mechanisms and improved patient outcomes---to be convinced that the promises of deep learning are more substantive than those of previous generations of artificial intelligence.
 
 Some of the areas we have discussed are closer to surpassing this lofty bar than others, generally those that are more similar to the non-biomedical tasks that are now monopolized by deep learning.
 In medical imaging, diabetic retinopathy [@1mJW6umJ], diabetic macular edema [@1mJW6umJ], tuberculosis [@Qve94Jra], and skin lesion [@XnYNYoYB] classifiers are highly accurate and comparable to clinician performance.
@@ -1896,7 +1896,7 @@ References were automatically generated from citation metadata by querying APIs 
 In total, referenced works consisted of 358 DOIs, 6 PubMed Central records, 0 PubMed records, 128 arXiv manuscripts, and 49 URLs (webpages as well as manuscripts lacking standardized identifiers).
 
 We implemented continuous analysis so the manuscript was automatically regenerated whenever the source changed [@Qh7xTLwz].
-We configured Travis CI -- a continuous integration service -- to fetch new citation metadata and rebuild the manuscript for every commit.
+We configured Travis CI---a continuous integration service---to fetch new citation metadata and rebuild the manuscript for every commit.
 Accordingly, formatting or citation errors in pull requests would cause the Travis CI build to fail, automating quality control.
 In addition, the build process renders templated variables, such as the reference counts mentioned above, to automate the updating of dynamic content.
 When contributions were merged into the `master` branch, Travis CI deployed the built manuscript by committing back to the GitHub repository.
