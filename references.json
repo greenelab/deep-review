@@ -22785,6 +22785,1871 @@
     "indexed": {
       "date-parts": [
         [
+          2018,
+          1,
+          13
+        ]
+      ],
+      "date-time": "2018-01-13T05:02:28Z",
+      "timestamp": 1515819748223
+    },
+    "reference-count": 43,
+    "publisher": "Springer Nature",
+    "issue": "10",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "DOI": "10.1038/ng.2764",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2013,
+          9,
+          26
+        ]
+      ],
+      "date-time": "2013-09-26T17:33:38Z",
+      "timestamp": 1380216818000
+    },
+    "page": "1113-1120",
+    "source": "Crossref",
+    "is-referenced-by-count": 890,
+    "title": "The Cancer Genome Atlas Pan-Cancer analysis project",
+    "prefix": "10.1038",
+    "volume": "45",
+    "author": [
+      {
+        "given": "Kyle",
+        "family": "Chang",
+        "affiliation": []
+      },
+      {
+        "given": "Chad J",
+        "family": "Creighton",
+        "affiliation": []
+      },
+      {
+        "given": "Caleb",
+        "family": "Davis",
+        "affiliation": []
+      },
+      {
+        "given": "Lawrence",
+        "family": "Donehower",
+        "affiliation": []
+      },
+      {
+        "given": "Jennifer",
+        "family": "Drummond",
+        "affiliation": []
+      },
+      {
+        "given": "David",
+        "family": "Wheeler",
+        "affiliation": []
+      },
+      {
+        "given": "Adrian",
+        "family": "Ally",
+        "affiliation": []
+      },
+      {
+        "given": "Miruna",
+        "family": "Balasundaram",
+        "affiliation": []
+      },
+      {
+        "given": "Inanc",
+        "family": "Birol",
+        "affiliation": []
+      },
+      {
+        "given": "Yaron S N",
+        "family": "Butterfield",
+        "affiliation": []
+      },
+      {
+        "given": "Andy",
+        "family": "Chu",
+        "affiliation": []
+      },
+      {
+        "given": "Eric",
+        "family": "Chuah",
+        "affiliation": []
+      },
+      {
+        "given": "Hye-Jung E",
+        "family": "Chun",
+        "affiliation": []
+      },
+      {
+        "given": "Noreen",
+        "family": "Dhalla",
+        "affiliation": []
+      },
+      {
+        "given": "Ranabir",
+        "family": "Guin",
+        "affiliation": []
+      },
+      {
+        "given": "Martin",
+        "family": "Hirst",
+        "affiliation": []
+      },
+      {
+        "given": "Carrie",
+        "family": "Hirst",
+        "affiliation": []
+      },
+      {
+        "given": "Robert A",
+        "family": "Holt",
+        "affiliation": []
+      },
+      {
+        "given": "Steven J M",
+        "family": "Jones",
+        "affiliation": []
+      },
+      {
+        "given": "Darlene",
+        "family": "Lee",
+        "affiliation": []
+      },
+      {
+        "given": "Haiyan I",
+        "family": "Li",
+        "affiliation": []
+      },
+      {
+        "given": "Marco A",
+        "family": "Marra",
+        "affiliation": []
+      },
+      {
+        "given": "Michael",
+        "family": "Mayo",
+        "affiliation": []
+      },
+      {
+        "given": "Richard A",
+        "family": "Moore",
+        "affiliation": []
+      },
+      {
+        "given": "Andrew J",
+        "family": "Mungall",
+        "affiliation": []
+      },
+      {
+        "given": "A Gordon",
+        "family": "Robertson",
+        "affiliation": []
+      },
+      {
+        "given": "Jacqueline E",
+        "family": "Schein",
+        "affiliation": []
+      },
+      {
+        "given": "Payal",
+        "family": "Sipahimalani",
+        "affiliation": []
+      },
+      {
+        "given": "Angela",
+        "family": "Tam",
+        "affiliation": []
+      },
+      {
+        "given": "Nina",
+        "family": "Thiessen",
+        "affiliation": []
+      },
+      {
+        "given": "Richard J",
+        "family": "Varhol",
+        "affiliation": []
+      },
+      {
+        "given": "Rameen",
+        "family": "Beroukhim",
+        "affiliation": []
+      },
+      {
+        "given": "Ami S",
+        "family": "Bhatt",
+        "affiliation": []
+      },
+      {
+        "given": "Angela N",
+        "family": "Brooks",
+        "affiliation": []
+      },
+      {
+        "given": "Andrew D",
+        "family": "Cherniack",
+        "affiliation": []
+      },
+      {
+        "given": "Samuel S",
+        "family": "Freeman",
+        "affiliation": []
+      },
+      {
+        "given": "Stacey B",
+        "family": "Gabriel",
+        "affiliation": []
+      },
+      {
+        "given": "Elena",
+        "family": "Helman",
+        "affiliation": []
+      },
+      {
+        "given": "Joonil",
+        "family": "Jung",
+        "affiliation": []
+      },
+      {
+        "given": "Matthew",
+        "family": "Meyerson",
+        "affiliation": []
+      },
+      {
+        "given": "Akinyemi I",
+        "family": "Ojesina",
+        "affiliation": []
+      },
+      {
+        "given": "Chandra Sekhar",
+        "family": "Pedamallu",
+        "affiliation": []
+      },
+      {
+        "given": "Gordon",
+        "family": "Saksena",
+        "affiliation": []
+      },
+      {
+        "given": "Steven E",
+        "family": "Schumacher",
+        "affiliation": []
+      },
+      {
+        "given": "Barbara",
+        "family": "Tabak",
+        "affiliation": []
+      },
+      {
+        "given": "Travis",
+        "family": "Zack",
+        "affiliation": []
+      },
+      {
+        "given": "Eric S",
+        "family": "Lander",
+        "affiliation": []
+      },
+      {
+        "given": "Christopher A",
+        "family": "Bristow",
+        "affiliation": []
+      },
+      {
+        "given": "Angela",
+        "family": "Hadjipanayis",
+        "affiliation": []
+      },
+      {
+        "given": "Psalm",
+        "family": "Haseley",
+        "affiliation": []
+      },
+      {
+        "given": "Raju",
+        "family": "Kucherlapati",
+        "affiliation": []
+      },
+      {
+        "given": "Semin",
+        "family": "Lee",
+        "affiliation": []
+      },
+      {
+        "given": "Eunjung",
+        "family": "Lee",
+        "affiliation": []
+      },
+      {
+        "given": "Lovelace J",
+        "family": "Luquette",
+        "affiliation": []
+      },
+      {
+        "given": "Harshad S",
+        "family": "Mahadeshwar",
+        "affiliation": []
+      },
+      {
+        "given": "Angeliki",
+        "family": "Pantazi",
+        "affiliation": []
+      },
+      {
+        "given": "Michael",
+        "family": "Parfenov",
+        "affiliation": []
+      },
+      {
+        "given": "Peter J",
+        "family": "Park",
+        "affiliation": []
+      },
+      {
+        "given": "Alexei",
+        "family": "Protopopov",
+        "affiliation": []
+      },
+      {
+        "given": "Xiaojia",
+        "family": "Ren",
+        "affiliation": []
+      },
+      {
+        "given": "Netty",
+        "family": "Santoso",
+        "affiliation": []
+      },
+      {
+        "given": "Jonathan",
+        "family": "Seidman",
+        "affiliation": []
+      },
+      {
+        "given": "Sahil",
+        "family": "Seth",
+        "affiliation": []
+      },
+      {
+        "given": "Xingzhi",
+        "family": "Song",
+        "affiliation": []
+      },
+      {
+        "given": "Jiabin",
+        "family": "Tang",
+        "affiliation": []
+      },
+      {
+        "given": "Ruibin",
+        "family": "Xi",
+        "affiliation": []
+      },
+      {
+        "given": "Andrew W",
+        "family": "Xu",
+        "affiliation": []
+      },
+      {
+        "given": "Lixing",
+        "family": "Yang",
+        "affiliation": []
+      },
+      {
+        "given": "Dong",
+        "family": "Zeng",
+        "affiliation": []
+      },
+      {
+        "given": "J Todd",
+        "family": "Auman",
+        "affiliation": []
+      },
+      {
+        "given": "Saianand",
+        "family": "Balu",
+        "affiliation": []
+      },
+      {
+        "given": "Elizabeth",
+        "family": "Buda",
+        "affiliation": []
+      },
+      {
+        "given": "Cheng",
+        "family": "Fan",
+        "affiliation": []
+      },
+      {
+        "given": "Katherine A",
+        "family": "Hoadley",
+        "affiliation": []
+      },
+      {
+        "given": "Corbin D",
+        "family": "Jones",
+        "affiliation": []
+      },
+      {
+        "given": "Shaowu",
+        "family": "Meng",
+        "affiliation": []
+      },
+      {
+        "given": "Piotr A",
+        "family": "Mieczkowski",
+        "affiliation": []
+      },
+      {
+        "given": "Joel S",
+        "family": "Parker",
+        "affiliation": []
+      },
+      {
+        "given": "Charles M",
+        "family": "Perou",
+        "affiliation": []
+      },
+      {
+        "given": "Jeffrey",
+        "family": "Roach",
+        "affiliation": []
+      },
+      {
+        "given": "Yan",
+        "family": "Shi",
+        "affiliation": []
+      },
+      {
+        "given": "Grace O",
+        "family": "Silva",
+        "affiliation": []
+      },
+      {
+        "given": "Donghui",
+        "family": "Tan",
+        "affiliation": []
+      },
+      {
+        "given": "Umadevi",
+        "family": "Veluvolu",
+        "affiliation": []
+      },
+      {
+        "given": "Scot",
+        "family": "Waring",
+        "affiliation": []
+      },
+      {
+        "given": "Matthew D",
+        "family": "Wilkerson",
+        "affiliation": []
+      },
+      {
+        "given": "Junyuan",
+        "family": "Wu",
+        "affiliation": []
+      },
+      {
+        "given": "Wei",
+        "family": "Zhao",
+        "affiliation": []
+      },
+      {
+        "given": "Tom",
+        "family": "Bodenheimer",
+        "affiliation": []
+      },
+      {
+        "given": "D Neil",
+        "family": "Hayes",
+        "affiliation": []
+      },
+      {
+        "given": "Alan P",
+        "family": "Hoyle",
+        "affiliation": []
+      },
+      {
+        "given": "Stuart R",
+        "family": "Jeffreys",
+        "affiliation": []
+      },
+      {
+        "given": "Lisle E",
+        "family": "Mose",
+        "affiliation": []
+      },
+      {
+        "given": "Janae V",
+        "family": "Simons",
+        "affiliation": []
+      },
+      {
+        "given": "Mathew G",
+        "family": "Soloway",
+        "affiliation": []
+      },
+      {
+        "given": "Stephen B",
+        "family": "Baylin",
+        "affiliation": []
+      },
+      {
+        "given": "Benjamin P",
+        "family": "Berman",
+        "affiliation": []
+      },
+      {
+        "given": "Moiz S",
+        "family": "Bootwalla",
+        "affiliation": []
+      },
+      {
+        "given": "Ludmila",
+        "family": "Danilova",
+        "affiliation": []
+      },
+      {
+        "given": "James G",
+        "family": "Herman",
+        "affiliation": []
+      },
+      {
+        "given": "Toshinori",
+        "family": "Hinoue",
+        "affiliation": []
+      },
+      {
+        "given": "Peter W",
+        "family": "Laird",
+        "affiliation": []
+      },
+      {
+        "given": "Suhn K",
+        "family": "Rhie",
+        "affiliation": []
+      },
+      {
+        "given": "Hui",
+        "family": "Shen",
+        "affiliation": []
+      },
+      {
+        "given": "Timothy",
+        "family": "Triche",
+        "affiliation": []
+      },
+      {
+        "given": "Daniel J",
+        "family": "Weisenberger",
+        "affiliation": []
+      },
+      {
+        "given": "Scott L",
+        "family": "Carter",
+        "affiliation": []
+      },
+      {
+        "given": "Kristian",
+        "family": "Cibulskis",
+        "affiliation": []
+      },
+      {
+        "given": "Lynda",
+        "family": "Chin",
+        "affiliation": []
+      },
+      {
+        "given": "Jianhua",
+        "family": "Zhang",
+        "affiliation": []
+      },
+      {
+        "given": "Gad",
+        "family": "Getz",
+        "affiliation": []
+      },
+      {
+        "given": "Carrie",
+        "family": "Sougnez",
+        "affiliation": []
+      },
+      {
+        "given": "Min",
+        "family": "Wang",
+        "affiliation": []
+      },
+      {
+        "given": "Gordon",
+        "family": "Saksena",
+        "affiliation": []
+      },
+      {
+        "given": "Scott L",
+        "family": "Carter",
+        "affiliation": []
+      },
+      {
+        "given": "Kristian",
+        "family": "Cibulskis",
+        "affiliation": []
+      },
+      {
+        "given": "Lynda",
+        "family": "Chin",
+        "affiliation": []
+      },
+      {
+        "given": "Jianhua",
+        "family": "Zhang",
+        "affiliation": []
+      },
+      {
+        "given": "Gad",
+        "family": "Getz",
+        "affiliation": []
+      },
+      {
+        "given": "Huyen",
+        "family": "Dinh",
+        "affiliation": []
+      },
+      {
+        "given": "Harsha Vardhan",
+        "family": "Doddapaneni",
+        "affiliation": []
+      },
+      {
+        "given": "Richard",
+        "family": "Gibbs",
+        "affiliation": []
+      },
+      {
+        "given": "Preethi",
+        "family": "Gunaratne",
+        "affiliation": []
+      },
+      {
+        "given": "Yi",
+        "family": "Han",
+        "affiliation": []
+      },
+      {
+        "given": "Divya",
+        "family": "Kalra",
+        "affiliation": []
+      },
+      {
+        "given": "Christie",
+        "family": "Kovar",
+        "affiliation": []
+      },
+      {
+        "given": "Lora",
+        "family": "Lewis",
+        "affiliation": []
+      },
+      {
+        "given": "Margaret",
+        "family": "Morgan",
+        "affiliation": []
+      },
+      {
+        "given": "Donna",
+        "family": "Morton",
+        "affiliation": []
+      },
+      {
+        "given": "Donna",
+        "family": "Muzny",
+        "affiliation": []
+      },
+      {
+        "given": "Jeffrey",
+        "family": "Reid",
+        "affiliation": []
+      },
+      {
+        "given": "Liu",
+        "family": "Xi",
+        "affiliation": []
+      },
+      {
+        "given": "Juok",
+        "family": "Cho",
+        "affiliation": []
+      },
+      {
+        "given": "Daniel",
+        "family": "DiCara",
+        "affiliation": []
+      },
+      {
+        "given": "Scott",
+        "family": "Frazer",
+        "affiliation": []
+      },
+      {
+        "given": "Nils",
+        "family": "Gehlenborg",
+        "affiliation": []
+      },
+      {
+        "given": "David I",
+        "family": "Heiman",
+        "affiliation": []
+      },
+      {
+        "given": "Jaegil",
+        "family": "Kim",
+        "affiliation": []
+      },
+      {
+        "given": "Michael S",
+        "family": "Lawrence",
+        "affiliation": []
+      },
+      {
+        "given": "Pei",
+        "family": "Lin",
+        "affiliation": []
+      },
+      {
+        "given": "Yingchun",
+        "family": "Liu",
+        "affiliation": []
+      },
+      {
+        "given": "Michael S",
+        "family": "Noble",
+        "affiliation": []
+      },
+      {
+        "given": "Petar",
+        "family": "Stojanov",
+        "affiliation": []
+      },
+      {
+        "given": "Doug",
+        "family": "Voet",
+        "affiliation": []
+      },
+      {
+        "given": "Hailei",
+        "family": "Zhang",
+        "affiliation": []
+      },
+      {
+        "given": "Lihua",
+        "family": "Zou",
+        "affiliation": []
+      },
+      {
+        "given": "Chip",
+        "family": "Stewart",
+        "affiliation": []
+      },
+      {
+        "given": "Brady",
+        "family": "Bernard",
+        "affiliation": []
+      },
+      {
+        "given": "Ryan",
+        "family": "Bressler",
+        "affiliation": []
+      },
+      {
+        "given": "Andrea",
+        "family": "Eakin",
+        "affiliation": []
+      },
+      {
+        "given": "Lisa",
+        "family": "Iype",
+        "affiliation": []
+      },
+      {
+        "given": "Theo",
+        "family": "Knijnenburg",
+        "affiliation": []
+      },
+      {
+        "given": "Roger",
+        "family": "Kramer",
+        "affiliation": []
+      },
+      {
+        "given": "Richard",
+        "family": "Kreisberg",
+        "affiliation": []
+      },
+      {
+        "given": "Kalle",
+        "family": "Leinonen",
+        "affiliation": []
+      },
+      {
+        "given": "Jake",
+        "family": "Lin",
+        "affiliation": []
+      },
+      {
+        "given": "Yuexin",
+        "family": "Liu",
+        "affiliation": []
+      },
+      {
+        "given": "Michael",
+        "family": "Miller",
+        "affiliation": []
+      },
+      {
+        "given": "Sheila M",
+        "family": "Reynolds",
+        "affiliation": []
+      },
+      {
+        "given": "Hector",
+        "family": "Rovira",
+        "affiliation": []
+      },
+      {
+        "given": "Ilya",
+        "family": "Shmulevich",
+        "affiliation": []
+      },
+      {
+        "given": "Vesteinn",
+        "family": "Thorsson",
+        "affiliation": []
+      },
+      {
+        "given": "Da",
+        "family": "Yang",
+        "affiliation": []
+      },
+      {
+        "given": "Wei",
+        "family": "Zhang",
+        "affiliation": []
+      },
+      {
+        "given": "Samirkumar",
+        "family": "Amin",
+        "affiliation": []
+      },
+      {
+        "given": "Chang-Jiun",
+        "family": "Wu",
+        "affiliation": []
+      },
+      {
+        "given": "Chia-Chin",
+        "family": "Wu",
+        "affiliation": []
+      },
+      {
+        "given": "Rehan",
+        "family": "Akbani",
+        "affiliation": []
+      },
+      {
+        "given": "Kenneth",
+        "family": "Aldape",
+        "affiliation": []
+      },
+      {
+        "given": "Keith A",
+        "family": "Baggerly",
+        "affiliation": []
+      },
+      {
+        "given": "Bradley",
+        "family": "Broom",
+        "affiliation": []
+      },
+      {
+        "given": "Tod D",
+        "family": "Casasent",
+        "affiliation": []
+      },
+      {
+        "given": "James",
+        "family": "Cleland",
+        "affiliation": []
+      },
+      {
+        "given": "Chad",
+        "family": "Creighton",
+        "affiliation": []
+      },
+      {
+        "given": "Deepti",
+        "family": "Dodda",
+        "affiliation": []
+      },
+      {
+        "given": "Mary",
+        "family": "Edgerton",
+        "affiliation": []
+      },
+      {
+        "given": "Leng",
+        "family": "Han",
+        "affiliation": []
+      },
+      {
+        "given": "Shelley M",
+        "family": "Herbrich",
+        "affiliation": []
+      },
+      {
+        "given": "Zhenlin",
+        "family": "Ju",
+        "affiliation": []
+      },
+      {
+        "given": "Hoon",
+        "family": "Kim",
+        "affiliation": []
+      },
+      {
+        "given": "Seth",
+        "family": "Lerner",
+        "affiliation": []
+      },
+      {
+        "given": "Jun",
+        "family": "Li",
+        "affiliation": []
+      },
+      {
+        "given": "Han",
+        "family": "Liang",
+        "affiliation": []
+      },
+      {
+        "given": "Wenbin",
+        "family": "Liu",
+        "affiliation": []
+      },
+      {
+        "given": "Philip L",
+        "family": "Lorenzi",
+        "affiliation": []
+      },
+      {
+        "given": "Yiling",
+        "family": "Lu",
+        "affiliation": []
+      },
+      {
+        "given": "James",
+        "family": "Melott",
+        "affiliation": []
+      },
+      {
+        "given": "Gordon B",
+        "family": "Mills",
+        "affiliation": []
+      },
+      {
+        "given": "Lam",
+        "family": "Nguyen",
+        "affiliation": []
+      },
+      {
+        "given": "Xiaoping",
+        "family": "Su",
+        "affiliation": []
+      },
+      {
+        "given": "Roeland",
+        "family": "Verhaak",
+        "affiliation": []
+      },
+      {
+        "given": "Wenyi",
+        "family": "Wang",
+        "affiliation": []
+      },
+      {
+        "given": "John N",
+        "family": "Weinstein",
+        "affiliation": []
+      },
+      {
+        "given": "Andrew",
+        "family": "Wong",
+        "affiliation": []
+      },
+      {
+        "given": "Yang",
+        "family": "Yang",
+        "affiliation": []
+      },
+      {
+        "given": "Jun",
+        "family": "Yao",
+        "affiliation": []
+      },
+      {
+        "given": "Rong",
+        "family": "Yao",
+        "affiliation": []
+      },
+      {
+        "given": "Kosuke",
+        "family": "Yoshihara",
+        "affiliation": []
+      },
+      {
+        "given": "Yuan",
+        "family": "Yuan",
+        "affiliation": []
+      },
+      {
+        "given": "Alfred K",
+        "family": "Yung",
+        "affiliation": []
+      },
+      {
+        "given": "Nianxiang",
+        "family": "Zhang",
+        "affiliation": []
+      },
+      {
+        "given": "Siyuan",
+        "family": "Zheng",
+        "affiliation": []
+      },
+      {
+        "given": "Michael",
+        "family": "Ryan",
+        "affiliation": []
+      },
+      {
+        "given": "David W",
+        "family": "Kane",
+        "affiliation": []
+      },
+      {
+        "given": "B Arman",
+        "family": "Aksoy",
+        "affiliation": []
+      },
+      {
+        "given": "Giovanni",
+        "family": "Ciriello",
+        "affiliation": []
+      },
+      {
+        "given": "Gideon",
+        "family": "Dresdner",
+        "affiliation": []
+      },
+      {
+        "given": "Jianjiong",
+        "family": "Gao",
+        "affiliation": []
+      },
+      {
+        "given": "Benjamin",
+        "family": "Gross",
+        "affiliation": []
+      },
+      {
+        "given": "Anders",
+        "family": "Jacobsen",
+        "affiliation": []
+      },
+      {
+        "given": "Andre",
+        "family": "Kahles",
+        "affiliation": []
+      },
+      {
+        "given": "Marc",
+        "family": "Ladanyi",
+        "affiliation": []
+      },
+      {
+        "given": "William",
+        "family": "Lee",
+        "affiliation": []
+      },
+      {
+        "given": "Kjong-Van",
+        "family": "Lehmann",
+        "affiliation": []
+      },
+      {
+        "given": "Martin L",
+        "family": "Miller",
+        "affiliation": []
+      },
+      {
+        "given": "Ricardo",
+        "family": "Ramirez",
+        "affiliation": []
+      },
+      {
+        "given": "Gunnar",
+        "family": "Rätsch",
+        "affiliation": []
+      },
+      {
+        "given": "Boris",
+        "family": "Reva",
+        "affiliation": []
+      },
+      {
+        "given": "Chris",
+        "family": "Sander",
+        "affiliation": []
+      },
+      {
+        "given": "Nikolaus",
+        "family": "Schultz",
+        "affiliation": []
+      },
+      {
+        "given": "Yasin",
+        "family": "Senbabaoglu",
+        "affiliation": []
+      },
+      {
+        "given": "Ronglai",
+        "family": "Shen",
+        "affiliation": []
+      },
+      {
+        "given": "Rileen",
+        "family": "Sinha",
+        "affiliation": []
+      },
+      {
+        "given": "S Onur",
+        "family": "Sumer",
+        "affiliation": []
+      },
+      {
+        "given": "Yichao",
+        "family": "Sun",
+        "affiliation": []
+      },
+      {
+        "given": "Barry S",
+        "family": "Taylor",
+        "affiliation": []
+      },
+      {
+        "given": "Nils",
+        "family": "Weinhold",
+        "affiliation": []
+      },
+      {
+        "given": "Suzanne",
+        "family": "Fei",
+        "affiliation": []
+      },
+      {
+        "given": "Paul",
+        "family": "Spellman",
+        "affiliation": []
+      },
+      {
+        "given": "Christopher",
+        "family": "Benz",
+        "affiliation": []
+      },
+      {
+        "given": "Daniel",
+        "family": "Carlin",
+        "affiliation": []
+      },
+      {
+        "given": "Melisssa",
+        "family": "Cline",
+        "affiliation": []
+      },
+      {
+        "given": "Brian",
+        "family": "Craft",
+        "affiliation": []
+      },
+      {
+        "given": "Kyle",
+        "family": "Ellrott",
+        "affiliation": []
+      },
+      {
+        "given": "Mary",
+        "family": "Goldman",
+        "affiliation": []
+      },
+      {
+        "given": "David",
+        "family": "Haussler",
+        "affiliation": []
+      },
+      {
+        "given": "Singer",
+        "family": "Ma",
+        "affiliation": []
+      },
+      {
+        "given": "Sam",
+        "family": "Ng",
+        "affiliation": []
+      },
+      {
+        "given": "Evan",
+        "family": "Paull",
+        "affiliation": []
+      },
+      {
+        "given": "Amie",
+        "family": "Radenbaugh",
+        "affiliation": []
+      },
+      {
+        "given": "Sofie",
+        "family": "Salama",
+        "affiliation": []
+      },
+      {
+        "given": "Artem",
+        "family": "Sokolov",
+        "affiliation": []
+      },
+      {
+        "given": "Joshua M",
+        "family": "Stuart",
+        "affiliation": []
+      },
+      {
+        "given": "Teresa",
+        "family": "Swatloski",
+        "affiliation": []
+      },
+      {
+        "given": "Vladislav",
+        "family": "Uzunangelov",
+        "affiliation": []
+      },
+      {
+        "given": "Peter",
+        "family": "Waltman",
+        "affiliation": []
+      },
+      {
+        "given": "Christina",
+        "family": "Yau",
+        "affiliation": []
+      },
+      {
+        "given": "Jing",
+        "family": "Zhu",
+        "affiliation": []
+      },
+      {
+        "given": "Stanley R",
+        "family": "Hamilton",
+        "affiliation": []
+      },
+      {
+        "given": "Gad",
+        "family": "Getz",
+        "affiliation": []
+      },
+      {
+        "given": "Carrie",
+        "family": "Sougnez",
+        "affiliation": []
+      },
+      {
+        "given": "Scott",
+        "family": "Abbott",
+        "affiliation": []
+      },
+      {
+        "given": "Rachel",
+        "family": "Abbott",
+        "affiliation": []
+      },
+      {
+        "given": "Nathan D",
+        "family": "Dees",
+        "affiliation": []
+      },
+      {
+        "given": "Kim",
+        "family": "Delehaunty",
+        "affiliation": []
+      },
+      {
+        "given": "Li",
+        "family": "Ding",
+        "affiliation": []
+      },
+      {
+        "given": "David J",
+        "family": "Dooling",
+        "affiliation": []
+      },
+      {
+        "given": "Jim M",
+        "family": "Eldred",
+        "affiliation": []
+      },
+      {
+        "given": "Catrina C",
+        "family": "Fronick",
+        "affiliation": []
+      },
+      {
+        "given": "Robert",
+        "family": "Fulton",
+        "affiliation": []
+      },
+      {
+        "given": "Lucinda L",
+        "family": "Fulton",
+        "affiliation": []
+      },
+      {
+        "given": "Joelle",
+        "family": "Kalicki-Veizer",
+        "affiliation": []
+      },
+      {
+        "given": "Krishna-Latha",
+        "family": "Kanchi",
+        "affiliation": []
+      },
+      {
+        "given": "Cyriac",
+        "family": "Kandoth",
+        "affiliation": []
+      },
+      {
+        "given": "Daniel C",
+        "family": "Koboldt",
+        "affiliation": []
+      },
+      {
+        "given": "David E",
+        "family": "Larson",
+        "affiliation": []
+      },
+      {
+        "given": "Timothy J",
+        "family": "Ley",
+        "affiliation": []
+      },
+      {
+        "given": "Ling",
+        "family": "Lin",
+        "affiliation": []
+      },
+      {
+        "given": "Charles",
+        "family": "Lu",
+        "affiliation": []
+      },
+      {
+        "given": "Vincent J",
+        "family": "Magrini",
+        "affiliation": []
+      },
+      {
+        "given": "Elaine R",
+        "family": "Mardis",
+        "affiliation": []
+      },
+      {
+        "given": "Michael D",
+        "family": "McLellan",
+        "affiliation": []
+      },
+      {
+        "given": "Joshua F",
+        "family": "McMichael",
+        "affiliation": []
+      },
+      {
+        "given": "Christopher A",
+        "family": "Miller",
+        "affiliation": []
+      },
+      {
+        "given": "Michelle",
+        "family": "O'Laughlin",
+        "affiliation": []
+      },
+      {
+        "given": "Craig",
+        "family": "Pohl",
+        "affiliation": []
+      },
+      {
+        "given": "Heather",
+        "family": "Schmidt",
+        "affiliation": []
+      },
+      {
+        "given": "Scott M",
+        "family": "Smith",
+        "affiliation": []
+      },
+      {
+        "given": "Jason",
+        "family": "Walker",
+        "affiliation": []
+      },
+      {
+        "given": "John W",
+        "family": "Wallis",
+        "affiliation": []
+      },
+      {
+        "given": "Michael C",
+        "family": "Wendl",
+        "affiliation": []
+      },
+      {
+        "given": "Richard K",
+        "family": "Wilson",
+        "affiliation": []
+      },
+      {
+        "given": "Todd",
+        "family": "Wylie",
+        "affiliation": []
+      },
+      {
+        "given": "Qunyuan",
+        "family": "Zhang",
+        "affiliation": []
+      },
+      {
+        "given": "Robert",
+        "family": "Burton",
+        "affiliation": []
+      },
+      {
+        "given": "Mark A",
+        "family": "Jensen",
+        "affiliation": []
+      },
+      {
+        "given": "Ari",
+        "family": "Kahn",
+        "affiliation": []
+      },
+      {
+        "given": "Todd",
+        "family": "Pihl",
+        "affiliation": []
+      },
+      {
+        "given": "David",
+        "family": "Pot",
+        "affiliation": []
+      },
+      {
+        "given": "Yunhu",
+        "family": "Wan",
+        "affiliation": []
+      },
+      {
+        "given": "Douglas A",
+        "family": "Levine",
+        "affiliation": []
+      },
+      {
+        "given": "Aaron D",
+        "family": "Black",
+        "affiliation": []
+      },
+      {
+        "given": "Jay",
+        "family": "Bowen",
+        "affiliation": []
+      },
+      {
+        "given": "Jessica",
+        "family": "Frick",
+        "affiliation": []
+      },
+      {
+        "given": "Julie M",
+        "family": "Gastier-Foster",
+        "affiliation": []
+      },
+      {
+        "given": "Hollie A",
+        "family": "Harper",
+        "affiliation": []
+      },
+      {
+        "given": "Carmen",
+        "family": "Helsel",
+        "affiliation": []
+      },
+      {
+        "given": "Kristen M",
+        "family": "Leraas",
+        "affiliation": []
+      },
+      {
+        "given": "Tara M",
+        "family": "Lichtenberg",
+        "affiliation": []
+      },
+      {
+        "given": "Cynthia",
+        "family": "McAllister",
+        "affiliation": []
+      },
+      {
+        "given": "Nilsa C",
+        "family": "Ramirez",
+        "affiliation": []
+      },
+      {
+        "given": "Samantha",
+        "family": "Sharpe",
+        "affiliation": []
+      },
+      {
+        "given": "Lisa",
+        "family": "Wise",
+        "affiliation": []
+      },
+      {
+        "given": "Erik",
+        "family": "Zmuda",
+        "affiliation": []
+      },
+      {
+        "given": "Stephen J",
+        "family": "Chanock",
+        "affiliation": []
+      },
+      {
+        "given": "Tanja",
+        "family": "Davidsen",
+        "affiliation": []
+      },
+      {
+        "given": "John A",
+        "family": "Demchok",
+        "affiliation": []
+      },
+      {
+        "given": "Greg",
+        "family": "Eley",
+        "affiliation": []
+      },
+      {
+        "given": "Ina",
+        "family": "Felau",
+        "affiliation": []
+      },
+      {
+        "given": "Brad A",
+        "family": "Ozenberger",
+        "affiliation": []
+      },
+      {
+        "given": "Margi",
+        "family": "Sheth",
+        "affiliation": []
+      },
+      {
+        "given": "Heidi",
+        "family": "Sofia",
+        "affiliation": []
+      },
+      {
+        "given": "Louis",
+        "family": "Staudt",
+        "affiliation": []
+      },
+      {
+        "given": "Roy",
+        "family": "Tarnuzzer",
+        "affiliation": []
+      },
+      {
+        "given": "Zhining",
+        "family": "Wang",
+        "affiliation": []
+      },
+      {
+        "given": "Liming",
+        "family": "Yang",
+        "affiliation": []
+      },
+      {
+        "given": "Jiashan",
+        "family": "Zhang",
+        "affiliation": []
+      },
+      {
+        "given": "Larsson",
+        "family": "Omberg",
+        "affiliation": []
+      },
+      {
+        "given": "Adam",
+        "family": "Margolin",
+        "affiliation": []
+      },
+      {
+        "given": "Benjamin J",
+        "family": "Raphael",
+        "affiliation": []
+      },
+      {
+        "given": "Fabio",
+        "family": "Vandin",
+        "affiliation": []
+      },
+      {
+        "given": "Hsin-Ta",
+        "family": "Wu",
+        "affiliation": []
+      },
+      {
+        "given": "Mark D M",
+        "family": "Leiserson",
+        "affiliation": []
+      },
+      {
+        "given": "Stephen C",
+        "family": "Benz",
+        "affiliation": []
+      },
+      {
+        "given": "Charles J",
+        "family": "Vaske",
+        "affiliation": []
+      },
+      {
+        "given": "Houtan",
+        "family": "Noushmehr",
+        "affiliation": []
+      },
+      {
+        "given": "Theo",
+        "family": "Knijnenburg",
+        "affiliation": []
+      },
+      {
+        "given": "Denise",
+        "family": "Wolf",
+        "affiliation": []
+      },
+      {
+        "given": "Laura Van't",
+        "family": "Veer",
+        "affiliation": []
+      },
+      {
+        "given": "Eric A",
+        "family": "Collisson",
+        "affiliation": []
+      },
+      {
+        "given": "Dimitris",
+        "family": "Anastassiou",
+        "affiliation": []
+      },
+      {
+        "given": "Tai-Hsien Ou",
+        "family": "Yang",
+        "affiliation": []
+      },
+      {
+        "given": "Nuria",
+        "family": "Lopez-Bigas",
+        "affiliation": []
+      },
+      {
+        "given": "Abel",
+        "family": "Gonzalez-Perez",
+        "affiliation": []
+      },
+      {
+        "given": "David",
+        "family": "Tamborero",
+        "affiliation": []
+      },
+      {
+        "given": "Zheng",
+        "family": "Xia",
+        "affiliation": []
+      },
+      {
+        "given": "Wei",
+        "family": "Li",
+        "affiliation": []
+      },
+      {
+        "given": "Dong-Yeon",
+        "family": "Cho",
+        "affiliation": []
+      },
+      {
+        "given": "Teresa",
+        "family": "Przytycka",
+        "affiliation": []
+      },
+      {
+        "given": "Mark",
+        "family": "Hamilton",
+        "affiliation": []
+      },
+      {
+        "given": "Sean",
+        "family": "McGuire",
+        "affiliation": []
+      },
+      {
+        "given": "Sven",
+        "family": "Nelander",
+        "affiliation": []
+      },
+      {
+        "given": "Patrik",
+        "family": "Johansson",
+        "affiliation": []
+      },
+      {
+        "given": "Rebecka",
+        "family": "Jörnsten",
+        "affiliation": []
+      },
+      {
+        "given": "Teresia",
+        "family": "Kling",
+        "affiliation": []
+      },
+      {
+        "given": "Jose",
+        "family": "Sanchez",
+        "affiliation": []
+      },
+      {
+        "given": "John N",
+        "family": "Weinstein",
+        "affiliation": []
+      },
+      {
+        "given": "Eric A",
+        "family": "Collisson",
+        "affiliation": []
+      },
+      {
+        "given": "Gordon B",
+        "family": "Mills",
+        "affiliation": []
+      },
+      {
+        "given": "Kenna R Mills",
+        "family": "Shaw",
+        "affiliation": []
+      },
+      {
+        "given": "Brad A",
+        "family": "Ozenberger",
+        "affiliation": []
+      },
+      {
+        "given": "Kyle",
+        "family": "Ellrott",
+        "affiliation": []
+      },
+      {
+        "given": "Ilya",
+        "family": "Shmulevich",
+        "affiliation": []
+      },
+      {
+        "given": "Chris",
+        "family": "Sander",
+        "affiliation": []
+      },
+      {
+        "given": "Joshua M",
+        "family": "Stuart",
+        "affiliation": []
+      }
+    ],
+    "member": "339",
+    "published-online": {
+      "date-parts": [
+        [
+          2013,
+          9,
+          26
+        ]
+      ]
+    },
+    "container-title": "Nature Genetics",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          21
+        ]
+      ],
+      "date-time": "2017-06-21T22:38:34Z",
+      "timestamp": 1498084714000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2013,
+          9,
+          26
+        ]
+      ]
+    },
+    "references-count": 43,
+    "alternative-id": [
+      "ng.2764"
+    ],
+    "URL": "https://doi.org/10.1038/ng.2764",
+    "relation": {
+      "cites": []
+    },
+    "subject": [
+      "Genetics"
+    ],
+    "container-title-short": "Nat Genet",
+    "short_url": "https://doi.org/f3nt5c",
+    "id": "AK17eOgD"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
           2017,
           10,
           27
