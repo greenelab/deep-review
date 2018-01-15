@@ -48,7 +48,7 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@72352b8](https://github.com/greenelab/deep-review/tree/72352b8e472e39d807e21830ff72e2c0adaba1b3)
+from [greenelab/deep-review@e10f48f](https://github.com/greenelab/deep-review/tree/e10f48f6900ae3f088c4d23b52671f2f25c728c0)
 on January 15, 2018.
 </em></small>
 
@@ -233,10 +233,7 @@ In particular, the results are still dependent on the underlying study design an
 With this review, we ask the question: what is needed for deep learning to transform how we categorize, study, and treat individuals to maintain or restore health? We choose a high bar for "transform." Andrew Grove, the former CEO of Intel, coined the term Strategic Inflection Point to refer to a change in technologies or environment that requires a business to be fundamentally reshaped [@mAXsmd43].
 Here, we seek to identify whether deep learning is an innovation that can induce a Strategic Inflection Point in the practice of biology or medicine.
 
-There are already a number of reviews focused on applications of deep learning in biology [@yXqhuueV; @1VZjheOA;
-@irSe12Sm; @G00xvi94;
-@MmRGFVUu], healthcare [@11I7bLcP3; @1FkYUUryG], and drug discovery [@gJE0ExFr; @zCt6PUXj;
-@1DTUK3YyI; @xPkT1z7D].
+There are already a number of reviews focused on applications of deep learning in biology [@yXqhuueV; @1VZjheOA; @irSe12Sm; @G00xvi94; @MmRGFVUu], healthcare [@11I7bLcP3; @1FkYUUryG], and drug discovery [@gJE0ExFr; @zCt6PUXj; @1DTUK3YyI; @xPkT1z7D].
 Under our guiding question, we sought to highlight cases where deep learning enabled researchers to solve challenges that were previously considered infeasible or makes difficult, tedious analyses routine.
 We also identified approaches that researchers are using to sidestep challenges posed by biomedical data.
 We find that domain-specific considerations have greatly influenced how to best harness the power and flexibility of deep learning.
@@ -1266,17 +1263,13 @@ It is desirable to advance multiple lead series, clusters of structurally-simila
 
 Computational work in this domain aims to identify sufficient candidate active compounds without exhaustively screening libraries of hundreds of thousands or millions of chemicals.
 Predicting chemical activity computationally is known as virtual screening.
-This task has been treated variously as a classification, regression, or ranking problem.
-In reality, it does not fit neatly into any of those categories.
 An ideal algorithm will rank a sufficient number of active compounds before the inactives, but the rankings of actives relative to other actives and inactives are less important [@cjj5vT3H].
 Computational modeling also has the potential to predict ADMET traits for lead generation [@uP7SgBVd] and how drugs are metabolized [@7QsMcDYy].
 
 Ligand-based approaches train on chemicals' features without modeling target features (e.g. protein structure).
-Chemical features may be represented as a list of molecular descriptors such as molecular weight, atom counts, functional groups, charge representations, summaries of atom-atom relationships in the molecular graph, and more sophisticated derived properties [@17eGl2pn9].
-Alternatively, chemicals can be characterized with the fingerprint bit vectors, textual strings, or novel learned representations described below.
 Neural networks have a long history in this domain [@xPkT1z7D; @gJE0ExFr], and the 2012 Merck Molecular Activity Challenge on Kaggle generated substantial excitement about the potential for high-parameter deep learning approaches.
 The winning submission was an ensemble that included a multi-task multi-layer perceptron network [@1Dzz0P0qr].
-The sponsors noted drastic improvements over a random forest baseline, remarking "we have seldom seen any method in the past 10 years that could consistently outperform [random forest] by such a margin" [@xOaTIeBY].
+The sponsors noted drastic improvements over a random forest baseline, remarking "we have seldom seen any method in the past 10 years that could consistently outperform [random forest] by such a margin" [@xOaTIeBY], but not all outside experts were convinced [@KJCJKadA].
 Subsequent work (reviewed in more detail by Goh et al. [@zCt6PUXj]) explored the effects of jointly modeling far more targets than the Merck challenge [@F8fP2vAg;
 @yAoN5gTU], with Ramsundar et al.
 [@yAoN5gTU] showing that the benefits of multi-task networks had not yet saturated even with 259 targets.
@@ -1291,18 +1284,25 @@ In addition, the training datasets encountered in practical applications may be 
 A study of BACE-1 inhibitors included only 1547 compounds [@B4cL1o2P].
 Machine learning models were able to train on this limited dataset, but overfitting was a challenge and the differences between random forests and a deep neural network were negligible, especially in the classification setting.
 Overfitting is still a problem in larger chemical screening datasets with tens or hundreds of thousands of compounds because the number of active compounds can be very small, on the order of 0.1% of all tested chemicals for a typical target [@WeiyYhfy].
-This is consistent with the strong performance of low-parameter neural networks that emphasize compound-compound similarity, such as influence-relevance voter [@cjj5vT3H; @1E0x7QgLP], instead of predicting compound activity directly from chemical features.
+This has motivated low-parameter neural networks that emphasize compound-compound similarity, such as influence-relevance voter [@cjj5vT3H; @1E0x7QgLP], instead of predicting compound activity directly from chemical features.
+
+#### Chemical featurization and representation learning
 
 Much of the recent excitement in this domain has come from what could be considered a creative experimentation phase, in which deep learning has offered novel possibilities for feature representation and modeling of chemical compounds.
 A molecular graph, where atoms are labeled nodes and bonds are labeled edges, is a natural way to represent a chemical structure.
-Traditional machine learning approaches relied on preprocessing the graph into a feature vector, such as a fixed-width bit vector fingerprint [@QnZ7V9Rd].
+Chemical features can be represented as a list of molecular descriptors such as molecular weight, atom counts, functional groups, charge representations, summaries of atom-atom relationships in the molecular graph, and more sophisticated derived properties [@17eGl2pn9].
+Traditional machine learning approaches relied on preprocessing the graph into a feature vector of molecular descriptors or a fixed-width bit vector known as a fingerprint [@QnZ7V9Rd].
 The same fingerprints have been used by some drug-target interaction methods discussed above [@oTF8O79C].
 An overly simplistic but approximately correct view of chemical fingerprints is that each bit represents the presence or absence of a particular chemical substructure in the molecular graph.
-Modern neural networks, such as those discussed previously for PPI networks, can operate directly on the molecular graph as input.
+Instead of using molecular descriptors or fingerprints as input, modern neural networks can represent chemicals as textual strings [@qpmV0H2p] or images [@PMuw2Jdj] or operate directly on the molecular graph, which has enabled strategies for learning novel chemical representations.
+
+Virtual screening and chemical property prediction have emerged as one of the major applications areas for graph-based neural networks.
 Duvenaud et al. [@Oe573FaL] generalized standard circular fingerprints by substituting discrete operations in the fingerprinting algorithm with operations in a neural network, producing a real-valued feature vector instead of a bit vector.
 Other approaches offer trainable networks that can learn chemical feature representations that are optimized for a particular prediction task.
 Lusci et al. [@17Wih4Hd5] applied recursive neural networks for directed acyclic graphs to undirected molecular graphs by creating an ensemble of directed graphs in which one atom is selected as the root node.
-Graph convolutions on undirected molecular graphs have eliminated the need to enumerate artificially directed graphs, learning feature vectors for atoms that are a function of the properties of neighboring atoms and local regions on the molecular graph [@145os4Y6t; @P4ixsM8i].
+Graph convolutions on undirected molecular graphs have eliminated the need to enumerate artificially directed graphs, learning feature vectors for atoms that are a function of the properties of neighboring atoms and local regions on the molecular graph [@145os4Y6t; @P4ixsM8i; @UKHPpRBn].
+More sophisticated graph algorithms [@dVi4xCKj; @nMXQBadV] addressed limitations of standard graph convolutions that primarily operate on each node's local neighborhood.
+We anticipate that these graph-based neural networks could also be applicable in other types of biological networks, such as the PPI networks we discussed previously.
 
 Advances in chemical representation learning have also enabled new strategies for learning chemical-chemical similarity functions.
 Altae-Tran et al. developed a one-shot learning network [@P4ixsM8i] to address the reality that most practical chemical screening studies are unable to provide the thousands or millions of training compounds that are needed to train larger multi-task networks.
@@ -1318,12 +1318,12 @@ These novel, learned chemical feature representations may prove to be essential 
 Currently, these methods are enticing but do not necessarily outperform classic approaches by a large margin.
 The neural fingerprints [@Oe573FaL] were narrowly beaten by regression using traditional circular fingerprints on a drug efficacy prediction task but were superior for predicting solubility or photovoltaic efficiency.
 In the original study, graph convolutions [@145os4Y6t] performed comparably to a multi-task network using standard fingerprints and slightly better than the neural fingerprints [@Oe573FaL] on the drug efficacy task but were slightly worse than the influence-relevance voter method on an HIV dataset [@cjj5vT3H].
-Broader recent benchmarking has shown that relative merits of these methods depends on the dataset and cross validation strategy [@16OPHvAij], though evaluation often uses auROC (area under the receiver operating characteristic curve), which has limited utility due to the large class imbalance (see Discussion).
+Broader recent benchmarking has shown that relative merits of these methods depends on the dataset and cross validation strategy [@11QhcW8tX], though evaluation in this domain often uses auROC (area under the receiver operating characteristic curve) [@bbJMoSfn], which has limited utility due to the large class imbalance (see Discussion).
 
 We remain optimistic for the potential of deep learning and specifically representation learning in drug discovery.
 Rigorous benchmarking on broad and diverse prediction tasks will be as important as novel neural network architectures to advance the state of the art and convincingly demonstrate superiority over traditional cheminformatics techniques.
 Fortunately, there has recently been much progress in this direction.
-The DeepChem software [@P4ixsM8i; @Ytvk62dX] and MoleculeNet benchmarking suite [@16OPHvAij] built upon it contain chemical bioactivity and toxicity prediction datasets, multiple compound featurization approaches including graph convolutions, and various machine learning algorithms ranging from standard baselines like logistic regression and random forests to recent neural network architectures.
+The DeepChem software [@P4ixsM8i; @Ytvk62dX] and MoleculeNet benchmarking suite [@11QhcW8tX] built upon it contain chemical bioactivity and toxicity prediction datasets, multiple compound featurization approaches including graph convolutions, and various machine learning algorithms ranging from standard baselines like logistic regression and random forests to recent neural network architectures.
 Independent research groups have already contributed additional datasets and prediction algorithms to DeepChem.
 Adoption of common benchmarking evaluation metrics, datasets, and baseline algorithms has the potential to establish the practical utility of deep learning in chemical bioactivity prediction and lower the barrier to entry for machine learning researchers without biochemistry expertise.
 
@@ -1334,7 +1334,7 @@ Other studies have shown the limitations of transfer learning when the predictio
 This has important implications for representation learning.
 The typical approach to improve deep learning models by expanding the dataset size may not be applicable if only
 "related" tasks are beneficial, especially because task-task relatedness is ill-defined.
-The massive chemical state space will also influence the development of unsupervised representation learning methods [@2dU8f4XJ].
+The massive chemical state space will also influence the development of unsupervised representation learning methods [@qpmV0H2p; @5GEmrHBd].
 Future work will establish whether it is better to train on massive collections of diverse compounds, drug-like small molecules, or specialized subsets.
 
 #### Structure-based prediction of bioactivity
@@ -1343,7 +1343,7 @@ When protein structure is available, virtual screening has traditionally relied 
 Recently, deep learning approaches have been developed to model protein structure, which is expected to improve upon the simpler drug-target interaction algorithms described above that represent proteins with feature vectors derived from amino acid sequences [@TeIxEjqm; @oTF8O79C].
 
 Structure-based deep learning methods differ in whether they use experimentally-derived or predicted ligand-target complexes and how they represent the 3D structure.
-The Atomic CNN [@17YaKNLKk] takes 3D crystal structures from PDBBind [@YO41GAOP] as input, ensuring it uses a reliable ligand-target complex.
+The Atomic CNN [@17YaKNLKk] and TopologyNet [@Oc6JOTS6] models take 3D structures from PDBBind [@YO41GAOP] as input, ensuring the ligand-target complexes are reliable.
 AtomNet [@Z7fd0BYf] samples multiple ligand poses within the target binding site, and DeepVS [@Gue0c5Gb] and Ragoza et al. [@bNBiIiTt] use a docking program to generate protein-compound complexes.
 If they are sufficiently accurate, these latter approaches would have wider applicability to a much larger set of compounds and proteins.
 However, incorrect ligand poses will be misleading during training, and the predictive performance is sensitive to the docking quality [@Gue0c5Gb].
@@ -1371,7 +1371,7 @@ The challenge of generating molecules has parallels to the generation of syntact
 
 As deep learning models that directly output (molecular) graphs remain under-explored, generative neural networks for drug design typically represent chemicals with the simplified molecular-input line-entry system (SMILES), a standard string-based representation with characters that represent atoms, bonds, and rings [@8LWFFeYg].
 This allows treating molecules as sequences and leveraging recent progress in recurrent neural networks.
-Gómez-Bombarelli et al. designed a SMILES-to-SMILES autoencoder to learn a continuous latent feature space for chemicals [@2dU8f4XJ].
+Gómez-Bombarelli et al. designed a SMILES-to-SMILES autoencoder to learn a continuous latent feature space for chemicals [@qpmV0H2p].
 In this learned continuous space it was possible to interpolate between continuous representations of chemicals in a manner that is not possible with discrete
 (e.g. bit vector or string) features or in symbolic, molecular graph space.
 Even more interesting is the prospect of performing gradient-based or Bayesian optimization of molecules within this latent space.
@@ -1383,7 +1383,7 @@ Another approach to *de novo* design is to train character-based RNNs on large c
 These generative models successfully learn the grammar of compound representations, with 94% [@1EayJRsI] or nearly 98% [@8LWFFeYg] of generated SMILES corresponding to valid molecular structures.
 The initial RNN is then fine-tuned to generate molecules that are likely to be active against a specific target by either continuing training on a small set of positive examples [@8LWFFeYg] or adopting reinforcement learning strategies [@1EayJRsI; @lERqKdZJ].
 Both the fine-tuning and reinforcement learning approaches can rediscover known, held-out active molecules.
-The great flexibility of neural networks, and progress in generative models offers many opportunities for deep architectures in *de novo* design (e.g. the adaptation of Generative Adversarial Networks (GANs) for molecules).
+The great flexibility of neural networks, and progress in generative models offers many opportunities for deep architectures in *de novo* design (e.g. the adaptation of GANs for molecules).
 
 
 ## Discussion
@@ -1592,7 +1592,7 @@ Embedded feature interpretation has been emphasized mostly in image and text bas
 For example, Way and Greene trained a variational autoencoder (VAE) on gene expression from The Cancer Genome Atlas (TCGA) and use latent space arithmetic to rapidly isolate and interpret gene expression features descriptive of high grade serous ovarian cancer subtypes [@aWn0df1m].
 The most differentiating VAE features were representative of biological processes that are known to distinguish the subtypes.
 Latent space arithmetic with features derived using other compression algorithms were not as informative in this context [@rMz1OFc6].
-Embedding discrete chemical structures with autoencoders and interpreting the learned continuous representations with latent space arithmetic has also facilitated predicting drug-like compounds [@2dU8f4XJ].
+Embedding discrete chemical structures with autoencoders and interpreting the learned continuous representations with latent space arithmetic has also facilitated predicting drug-like compounds [@qpmV0H2p].
 Furthermore, embedding biomedical text into lower dimensional latent spaces have improved name entity recognition in a variety of tasks including annotating clinical abbreviations, genes, cell lines, and drug names [@OuoHShLI; @14uLNRP38; @pWpK5WUq; @LeLKNlsR].
 
 Other approaches have used interpolation through latent space embeddings learned by GANs to interpret unobserved intermediate states.
@@ -1684,7 +1684,7 @@ The massively parallel nature of GPUs allows additional optimizations, such as a
 However, GPUs also have limited memory, making networks of useful size and complexity difficult to implement on a single GPU or machine [@F3e4wfzQ; @CCS5KSIM].
 This restriction has sometimes forced computational biologists to use workarounds or limit the size of an analysis.
 Chen et al. [@12QQw9p7v] inferred the expression level of all genes with a single neural network, but due to memory restrictions they randomly partitioned genes into two separately analyzed halves.
-In other cases, researchers limited the size of their neural network [@BhfjKSY3] or the total number of training instances [@2dU8f4XJ].
+In other cases, researchers limited the size of their neural network [@BhfjKSY3] or the total number of training instances [@qpmV0H2p].
 Some have also chosen to use standard central processing unit (CPU) implementations rather than sacrifice network size or performance [@x0M6vals].
 
 While steady improvements in GPU hardware may alleviate this issue, it is unclear whether advances will occur quickly enough to keep pace with the growing biological datasets and increasingly complex neural networks.
@@ -1717,7 +1717,7 @@ Efforts are underway to recognize those who promote an ecosystem of rigorous sha
 
 The sharing of high-quality, labeled datasets will be especially valuable.
 In addition, researchers who invest time to preprocess datasets to be suitable for deep learning can make the preprocessing code (e.g. Basset [@2CbHXoFn] and variationanalysis [@GSLRw2L5])
-and cleaned data (e.g. MoleculeNet [@16OPHvAij]) publicly available to catalyze further research.
+and cleaned data (e.g. MoleculeNet [@11QhcW8tX]) publicly available to catalyze further research.
 However, there are complex privacy and legal issues involved in sharing patient data that cannot be ignored.
 Solving these issues will require increased understanding of privacy risks and standards specifying acceptable levels.
 In some domains high-quality training data has been generated privately, i.e. high-throughput chemical screening data at pharmaceutical companies.
@@ -1742,7 +1742,7 @@ However, it is important to note that sharing models trained on individual data 
 One possible solution to protect individual samples includes training models under differential privacy [@LiCxcgZp], which has been used in the biomedical domain [@fbIH12yd].
 We discussed this issue as well as recent techniques to mitigate these concerns in the patient categorization section.
 
-DeepChem [@P4ixsM8i; @Ytvk62dX; @16OPHvAij] and DragoNN [@117PEpTMe] exemplify the benefits of sharing pre-trained models and code under an open source license.
+DeepChem [@P4ixsM8i; @Ytvk62dX; @11QhcW8tX] and DragoNN [@117PEpTMe] exemplify the benefits of sharing pre-trained models and code under an open source license.
 DeepChem, which targets drug discovery and quantum chemistry, has actively encouraged and received community contributions of learning algorithms and benchmarking datasets.
 As a consequence, it now supports a large suite of machine learning approaches, both deep learning and competing strategies, that can be run on diverse test cases.
 This realistic, continual evaluation will play a critical role in assessing which techniques are most promising for chemical screening and drug discovery.
@@ -1892,7 +1892,7 @@ To facilitate citation, we [defined](https://github.com/greenelab/deep-review/bl
 We supported citations to the following identifier types (in order of preference): DOIs, PubMed Central IDs, PubMed IDs, arXiv IDs, and URLs.
 References were automatically generated from citation metadata by querying APIs to generate [Citation Style Language](http://citationstyles.org/) (CSL) JSON items for each reference.
 [Pandoc](http://pandoc.org/) and [pandoc-citeproc](https://github.com/jgm/pandoc-citeproc) converted the markdown to HTML and PDF, while rendering the formatted citations and references.
-In total, referenced works consisted of 350 DOIs, 6 PubMed Central records, 0 PubMed records, 127 arXiv manuscripts, and 47 URLs (webpages as well as manuscripts lacking standardized identifiers).
+In total, referenced works consisted of 356 DOIs, 6 PubMed Central records, 0 PubMed records, 128 arXiv manuscripts, and 48 URLs (webpages as well as manuscripts lacking standardized identifiers).
 
 We implemented continuous analysis so the manuscript was automatically regenerated whenever the source changed [@Qh7xTLwz].
 We configured Travis CI -- a continuous integration service -- to fetch new citation metadata and rebuild the manuscript for every commit.

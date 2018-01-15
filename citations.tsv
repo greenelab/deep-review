@@ -34,7 +34,6 @@ string	citation	standard_citation	citation_id
 @tag:Sa2015_buckwild	arxiv:1506.06438	arxiv:1506.06438	w6CoVmFK
 @tag:Yosinksi2015_understanding	arxiv:1506.06579	arxiv:1506.06579	17i18PMkR
 @tag:Su2015_gpu	arxiv:1507.01239	arxiv:1507.01239	aClNvbyM
-@arxiv:1510.02855	arxiv:1510.02855	arxiv:1510.02855	Z7fd0BYf
 @tag:Wallach2015_atom_net	arxiv:1510.02855	arxiv:1510.02855	Z7fd0BYf
 @tag:Lipton2015_lstm	arxiv:1510.07641	arxiv:1510.07641	glyI7H6F
 @arxiv:1511.02386	arxiv:1511.02386	arxiv:1511.02386	15lbUf0as
@@ -79,7 +78,7 @@ string	citation	standard_citation	citation_id
 @tag:Chollet2016_xception	arxiv:1610.02357	arxiv:1610.02357	VMkPJjVk
 @tag:Selvaraju2016_grad	arxiv:1610.02391	arxiv:1610.02391	RZsNSRDS
 @arxiv:1610.02413	arxiv:1610.02413	arxiv:1610.02413	1ENxzq6pT
-@tag:Gomezb2016_automatic	arxiv:1610.02415	arxiv:1610.02415	2dU8f4XJ
+@tag:Gomezb2016_automatic	arxiv:1610.02415v1	arxiv:1610.02415v1	qpmV0H2p
 @tag:Codella2016_ensemble_melanoma	arxiv:1610.04662	arxiv:1610.04662	sLPsrfbl
 @arxiv:1610.05256	arxiv:1610.05256	arxiv:1610.05256	M2OLWojE
 @arxiv:1610.05820	arxiv:1610.05820	arxiv:1610.05820	1HbRTExaU
@@ -97,7 +96,6 @@ string	citation	standard_citation	citation_id
 @tag:Segler2017_drug_design	arxiv:1701.01329	arxiv:1701.01329	8LWFFeYg
 @tag:Murdoch2017_automatic	arxiv:1702.02540	arxiv:1702.02540	10ViHstXn
 @tag:Zintgraf2017_visualizing	arxiv:1702.04595	arxiv:1702.04595	Kk20paR7
-@tag:Wu2017_molecule_net	arxiv:1703.00564	arxiv:1703.00564	16OPHvAij
 @tag:Sundararajan2017_axiomatic	arxiv:1703.01365	arxiv:1703.01365	WzFOJBiA
 @arxiv:1703.01925	arxiv:1703.01925	arxiv:1703.01925	AQ3N6Ayw
 @arxiv:1703.02136	arxiv:1703.02136	arxiv:1703.02136	wKioubsT
@@ -123,6 +121,7 @@ string	citation	standard_citation	citation_id
 @arxiv:1706.02633v1	arxiv:1706.02633v1	arxiv:1706.02633v1	1988BRJe3
 @tag:temp_out_dist	arxiv:1706.02690	arxiv:1706.02690	vJxaHm0b
 @tag:guo_calibration	arxiv:1706.04599	arxiv:1706.04599	QJ6hYH8N
+@arxiv:1706.06689	arxiv:1706.06689	arxiv:1706.06689	PMuw2Jdj
 @tag:ghahramani_protect	arxiv:1707.02476	arxiv:1707.02476	P9vKrhYz
 @tag:Singh2017_attentivechrome	arxiv:1708.00339	arxiv:1708.00339	16MNknNBL
 @tag:Osokin2017_biogan	arxiv:1708.04692	arxiv:1708.04692	zBCcUQOM
@@ -131,6 +130,7 @@ string	citation	standard_citation	citation_id
 @arxiv:1710.10568v1	arxiv:1710.10568v1	arxiv:1710.10568v1	FMsqNIQ4
 @tag:WayGreene2017_eval	arxiv:1711.04828	arxiv:1711.04828	rMz1OFc6
 @arxiv:1712.05898	arxiv:1712.05898	arxiv:1712.05898	gYxBO26g
+@arxiv:1801.02144	arxiv:1801.02144	arxiv:1801.02144	nMXQBadV
 @doi:10.1001/jama.2016.17216	doi:10.1001/jama.2016.17216	doi:10.1001/jama.2016.17216	1mJW6umJ
 @tag:Gulshan2016_dt	doi:10.1001/jama.2016.17216	doi:10.1001/jama.2016.17216	1mJW6umJ
 @doi:10.1002/9783527628766	doi:10.1002/9783527628766	doi:10.1002/9783527628766	17eGl2pn9
@@ -158,6 +158,7 @@ string	citation	standard_citation	citation_id
 @doi:10.1007/s00251-008-0341-z	doi:10.1007/s00251-008-0341-z	doi:10.1007/s00251-008-0341-z	QxZTL7xX
 @doi:10.1007/s10278-016-9914-9	doi:10.1007/s10278-016-9914-9	doi:10.1007/s10278-016-9914-9	x6HXFAS4
 @tag:Rajkomar2017_radiographs	doi:10.1007/s10278-016-9914-9	doi:10.1007/s10278-016-9914-9	x6HXFAS4
+@doi:10.1007/s10822-008-9170-2	doi:10.1007/s10822-008-9170-2	doi:10.1007/s10822-008-9170-2	bbJMoSfn
 @tag:Kearnes2016_graph_conv	doi:10.1007/s10822-016-9938-8	doi:10.1007/s10822-016-9938-8	145os4Y6t
 @tag:Russakovsky2015_imagenet	doi:10.1007/s11263-015-0816-y	doi:10.1007/s11263-015-0816-y	cBVeXnZx
 @tag:Mahendran2016_visualizing	doi:10.1007/s11263-016-0911-8	doi:10.1007/s11263-016-0911-8	1FkT6C6oa
@@ -199,14 +200,17 @@ string	citation	standard_citation	citation_id
 @tag:Tu1996_anns	doi:10.1016/S0895-4356(96)00002-9	doi:10.1016/s0895-4356(96)00002-9	kL0B4m9d
 @tag:Subramanian2016_bace1	doi:10.1021/acs.jcim.6b00290	doi:10.1021/acs.jcim.6b00290	B4cL1o2P
 @tag:Pereira2016_docking	doi:10.1021/acs.jcim.6b00355	doi:10.1021/acs.jcim.6b00355	Gue0c5Gb
+@doi:10.1021/acs.jcim.6b00601	doi:10.1021/acs.jcim.6b00601	doi:10.1021/acs.jcim.6b00601	UKHPpRBn
 @doi:10.1021/acs.jcim.7b00028	doi:10.1021/acs.jcim.7b00028	doi:10.1021/acs.jcim.7b00028	rVgq22nD
 @doi:10.1021/acs.jcim.7b00146	doi:10.1021/acs.jcim.7b00146	doi:10.1021/acs.jcim.7b00146	wzHEnMZe
+@doi:10.1021/acs.jcim.7b00616	doi:10.1021/acs.jcim.7b00616	doi:10.1021/acs.jcim.7b00616	5GEmrHBd
 @doi:10.1021/acs.jmedchem.5b01849	doi:10.1021/acs.jmedchem.5b01849	doi:10.1021/acs.jmedchem.5b01849	omzv9ryI
 @doi:10.1021/acs.jproteome.6b00618	doi:10.1021/acs.jproteome.6b00618	doi:10.1021/acs.jproteome.6b00618	oTF8O79C
 @doi:10.1021/acs.molpharmaceut.5b00982	doi:10.1021/acs.molpharmaceut.5b00982	doi:10.1021/acs.molpharmaceut.5b00982	1VZjheOA
 @doi:10.1021/acs.molpharmaceut.6b00248	doi:10.1021/acs.molpharmaceut.6b00248	doi:10.1021/acs.molpharmaceut.6b00248	EMDwvRGb
 @tag:Hughes2016_macromol_react	doi:10.1021/acscentsci.6b00162	doi:10.1021/acscentsci.6b00162	1BARarxfz
 @tag:AltaeTran2016_one_shot	doi:10.1021/acscentsci.6b00367	doi:10.1021/acscentsci.6b00367	P4ixsM8i
+@doi:10.1021/acscentsci.7b00405	doi:10.1021/acscentsci.7b00405	doi:10.1021/acscentsci.7b00405	dVi4xCKj
 @tag:Rogers2010_fingerprints	doi:10.1021/ci100050t	doi:10.1021/ci100050t	QnZ7V9Rd
 @tag:Lusci2013_rnn	doi:10.1021/ci400187y	doi:10.1021/ci400187y	17Wih4Hd5
 @doi:10.1021/ci400518g	doi:10.1021/ci400518g	doi:10.1021/ci400518g	7QsMcDYy
@@ -256,12 +260,12 @@ string	citation	standard_citation	citation_id
 @tag:Litjens2016_histopath_survey	doi:10.1038/srep26286	doi:10.1038/srep26286	dQCjqq0Q
 @doi:10.1038/srep32404	doi:10.1038/srep32404	doi:10.1038/srep32404	1G2xP5yOM
 @doi:10.1039/C7MB00188F	doi:10.1039/C7MB00188F	doi:10.1039/c7mb00188f	T2lbgFlY
+@tag:Wu2017_molecule_net	doi:10.1039/C7SC02664A	doi:10.1039/c7sc02664a	11QhcW8tX
 @tag:Wasson1985_clinical	doi:10.1056/NEJM198509263131306	doi:10.1056/nejm198509263131306	xX68eyvs
 @doi:10.1056/NEJMe1516564	doi:10.1056/NEJMe1516564	doi:10.1056/nejme1516564	o0F1MXBC
 @doi:10.1056/NEJMp1006304	doi:10.1056/NEJMp1006304	doi:10.1056/nejmp1006304	VOQtVhWs
 @doi:10.1073/pnas.0805923106	doi:10.1073/pnas.0805923106	doi:10.1073/pnas.0805923106	kboAopkh
 @doi:10.1073/pnas.2136655100	doi:10.1073/pnas.2136655100	doi:10.1073/pnas.2136655100	9XBPQ8b
-@doi:10.1080/17460441.2016.1201262	doi:10.1080/17460441.2016.1201262	doi:10.1080/17460441.2016.1201262	xPkT1z7D
 @tag:Baskin2015_drug_disc	doi:10.1080/17460441.2016.1201262	doi:10.1080/17460441.2016.1201262	xPkT1z7D
 @doi:10.1083/jcb.201610026	doi:10.1083/jcb.201610026	doi:10.1083/jcb.201610026	McjXFLLq
 @doi:10.1086/512821	doi:10.1086/512821	doi:10.1086/512821	10shRODux
@@ -454,6 +458,7 @@ string	citation	standard_citation	citation_id
 @doi:10.1371/journal.pcbi.1005324	doi:10.1371/journal.pcbi.1005324	doi:10.1371/journal.pcbi.1005324	BhfjKSY3
 @tag:Wang2016_protein_contact	doi:10.1371/journal.pcbi.1005324	doi:10.1371/journal.pcbi.1005324	BhfjKSY3
 @tag:Qin2017_onehot	doi:10.1371/journal.pcbi.1005403	doi:10.1371/journal.pcbi.1005403	Qbtqlmhf
+@doi:10.1371/journal.pcbi.1005690	doi:10.1371/journal.pcbi.1005690	doi:10.1371/journal.pcbi.1005690	Oc6JOTS6
 @doi:10.1371/journal.pone.0028766	doi:10.1371/journal.pone.0028766	doi:10.1371/journal.pone.0028766	10dNuD89l
 @doi:10.1371/journal.pone.0032235	doi:10.1371/journal.pone.0032235	doi:10.1371/journal.pone.0032235	1AlhRKQbe
 @doi:10.1371/journal.pone.0061318	doi:10.1371/journal.pone.0061318	doi:10.1371/journal.pone.0061318	QcwZC8wG
@@ -469,7 +474,6 @@ string	citation	standard_citation	citation_id
 @doi:10.1504/IJDMB.2016.074878	doi:10.1504/IJDMB.2016.074878	doi:10.1504/ijdmb.2016.074878	MY6FXgFn
 @tag:Shapely	doi:10.1515/9781400881970-018	doi:10.1515/9781400881970-018	YBJdA6LJ
 @tag:Soueidan	doi:10.1515/metgen-2016-0001	doi:10.1515/metgen-2016-0001	yFOAeemA
-@doi:10.15252/msb.20156651	doi:10.15252/msb.20156651	doi:10.15252/msb.20156651	irSe12Sm
 @tag:Angermueller2016_dl_review	doi:10.15252/msb.20156651	doi:10.15252/msb.20156651	irSe12Sm
 @tag:Kraus2017_deeploc	doi:10.15252/msb.20177551	doi:10.15252/msb.20177551	DcnNfASG
 @tag:JuanMateu2016_t1d	doi:10.1530/EJE-15-0916	doi:10.1530/eje-15-0916	CNz9HwZ3
@@ -507,6 +511,7 @@ string	citation	standard_citation	citation_id
 @tag:Faruqi	url:http://alifar76.github.io/sklearn-metrics/	url:http://alifar76.github.io/sklearn-metrics/	NQ5jiN7B
 @url:http://ana.blogs.com/maestros/2006/11/data_is_the_new.html	url:http://ana.blogs.com/maestros/2006/11/data_is_the_new.html	url:http://ana.blogs.com/maestros/2006/11/data_is_the_new.html	6fE0Vrba
 @url:http://blog.dhimmel.com/irreproducible-timestamps/	url:http://blog.dhimmel.com/irreproducible-timestamps/	url:http://blog.dhimmel.com/irreproducible-timestamps/	QBWMEuxW
+@tag:Lowe2012_kaggle	url:http://blogs.sciencemag.org/pipeline/archives/2012/12/11/did_kaggle_predict_drug_candidate_activities_or_not	url:http://blogs.sciencemag.org/pipeline/archives/2012/12/11/did_kaggle_predict_drug_candidate_activities_or_not	KJCJKadA
 @tag:platt_scaling	url:http://citeseer.ist.psu.edu/viewdoc/summary?doi=10.1.1.41.1639	url:http://citeseer.ist.psu.edu/viewdoc/summary?doi=10.1.1.41.1639	ZhuDaoNw
 @url:http://citeseerx.ist.psu.edu/viewdoc/summary?doi	url:http://citeseerx.ist.psu.edu/viewdoc/summary?doi	url:http://citeseerx.ist.psu.edu/viewdoc/summary?doi	4XHCB8iI
 @tag:Mordvintsev2015_inceptionism	url:http://googleresearch.blogspot.co.uk/2015/06/inceptionism-going-deeper-into-neural.html	url:http://googleresearch.blogspot.co.uk/2015/06/inceptionism-going-deeper-into-neural.html	XLHInhc1
