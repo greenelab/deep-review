@@ -48,7 +48,7 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@4169cbc](https://github.com/greenelab/deep-review/tree/4169cbc347264f22628b75489e4a0b5d5680e95d)
+from [greenelab/deep-review@943d735](https://github.com/greenelab/deep-review/tree/943d73501369f26f94d5162ac0d72bb15d2ac363)
 on January 15, 2018.
 </em></small>
 
@@ -148,7 +148,7 @@ Casey S. Greene<sup>2,†</sup>
 Deep learning, which describes a class of machine learning algorithms, has recently showed impressive results across a variety of domains.
 Biology and medicine are data rich, but the data are complex and often ill-understood.
 Problems of this nature may be particularly well-suited to deep learning techniques.
-We examine applications of deep learning to a variety of biomedical problems --- patient classification, fundamental biological processes, and treatment of patients --- and discuss whether deep learning will transform these tasks or if the biomedical sphere poses unique challenges.
+We examine applications of deep learning to a variety of biomedical problems---patient classification, fundamental biological processes, and treatment of patients---and discuss whether deep learning will transform these tasks or if the biomedical sphere poses unique challenges.
 We find that deep learning has yet to revolutionize or definitively resolve any of these problems, but promising advances have been made on the prior state of the art.
 Even when improvement over a previous baseline has been modest, we have seen signs that deep learning methods may speed or aid human investigation.
 More work is needed to address concerns related to interpretability and how to best model each problem.
@@ -333,10 +333,8 @@ To expand the number and diversity of images, researchers constructed adversaria
 Adversarial training examples are constructed by applying a transformation that changes training images but not their content---for example by rotating an image by a random amount.
 An alternative in the domain is to train towards human-created features before subsequent fine-tuning [@JK8NuXy3], which can help to sidestep this challenge though it does give up deep learning techniques' strength as feature constructors.
 
-Another way of dealing with limited training data is to divide rich data---e.g.
-3D images---into numerous reduced projections.
-Shin et al.
-[@1GAyqYBNZ] compared various deep network architectures, dataset characteristics, and training procedures for computer tomography-based (CT) abnormality detection.
+Another way of dealing with limited training data is to divide rich data---e.g. 3D images---into numerous reduced projections.
+Shin et al. [@1GAyqYBNZ] compared various deep network architectures, dataset characteristics, and training procedures for computer tomography-based (CT) abnormality detection.
 They concluded that networks as deep as 22 layers could be useful for 3D data, despite the limited size of training datasets.
 However, they noted that choice of architecture, parameter setting, and model fine-tuning needed is very problem- and dataset-specific.
 Moreover, this type of task often depends on both lesion localization and appearance, which poses challenges for CNN-based approaches.
@@ -957,7 +955,7 @@ The imperfections and costs associated with many experimental PPI screening meth
 
 Many machine learning approaches to PPI have focused on text mining the literature [@xEQI6dXW; @TNHJioqT], but these approaches can fail to capture context-specific interactions, motivating *de novo* PPI prediction.
 Early *de novo* prediction approaches used a variety of statistical and machine learning tools on structural and sequential data, sometimes with reference to the existing body of protein structure knowledge.
-In the context of PPIs — as in other domains — deep learning shows promise both for exceeding current predictive performance and for circumventing limitations from which other approaches suffer.
+In the context of PPIs---as in other domains---deep learning shows promise both for exceeding current predictive performance and for circumventing limitations from which other approaches suffer.
 
 One of the key difficulties in applying deep learning techniques to binding prediction is the task of representing peptide and protein sequences in a meaningful way.
 DeepPPI [@rVgq22nD] made PPI predictions from a set of sequence and composition protein descriptors using a two-stage deep neural network that trained two subnetworks for each protein and combined them into a single network.
@@ -971,7 +969,7 @@ Using features that describe how similar a protein's residue is relative to simi
 A stacked autoencoder took two such vectors as input for the prediction of contact between two residues.
 The authors evaluated the performance of this method with several classifiers and showed that a deep neural network classifier paired with the stacked autoencoder significantly exceeded classical machine learning accuracy.
 
-Because many studies used predefined higher-level features, one of the benefits of deep learning — automatic feature extraction — is not fully leveraged.
+Because many studies used predefined higher-level features, one of the benefits of deep learning---automatic feature extraction---is not fully leveraged.
 More work is needed to determine the best ways to represent raw protein sequence information so that the full benefits of deep learning as an automatic feature extractor can be realized.
 
 ### MHC-peptide binding
@@ -995,9 +993,9 @@ Deep learning's unique flexibility was recently leveraged by Bhattacharya et al.
 Under this framework, they used smoothed sparse encoding to represent amino acids individually.
 Because MHCnuggets had to be trained for every MHC allele, performance was far better for alleles with abundant, balanced training data.
 Vang et al. [@12i8Apfdc] developed HLA-CNN, a method which maps amino acids onto a 15-dimensional vector space based on their context relation to other amino acids before making predictions with a CNN.
-In a comparison of several current methods, Bhattacharya et al. found that the top methods — NetMHC, NetMHCpan, MHCflurry, and MHCnuggets — showed comparable performance, but large differences in speed.
+In a comparison of several current methods, Bhattacharya et al. found that the top methods---NetMHC, NetMHCpan, MHCflurry, and MHCnuggets---showed comparable performance, but large differences in speed.
 Convolutional neural networks (in this case, HLA-CNN) showed comparatively poor performance, while shallow and recurrent neural networks performed the best.
-They found that MHCnuggets — the recurrent neural network — was by far the fastest training among the top performing methods.
+They found that MHCnuggets---the recurrent neural network---was by far the fastest training among the top performing methods.
 
 ### PPI networks and graph analysis
 
