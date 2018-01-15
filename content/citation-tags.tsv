@@ -80,7 +80,7 @@ Gerstein2016_scaling	doi:10.1186/s13059-016-0917-0
 Ghandi2014_enhanced	doi:10.1371/journal.pcbi.1003711
 Ghosh1992_sequence	doi:10.1117/12.140112
 Goldsborough2017_cytogan	doi:10.1101/227645
-Gomezb2016_automatic	arxiv:1610.02415
+Gomezb2016_automatic	arxiv:1610.02415v1
 Graphlab	doi:10.14778/2212351.2212354
 Groop1986_islet	doi:10.2337/diab.35.2.237
 Gultepe2014_sepsis	doi:10.1136/amiajnl-2013-001815
@@ -142,6 +142,7 @@ Liu	doi:10.1371/journal.pone.0097958
 Liu2016_towards	arxiv:1604.07043
 Liu2016_sc_transcriptome	doi:10.12688/f1000research.7223.1
 Lodato2015_neurons	doi:10.1126/science.aab1785
+Lowe2012_kaggle	url:http://blogs.sciencemag.org/pipeline/archives/2012/12/11/did_kaggle_predict_drug_candidate_activities_or_not
 lmat	doi:10.1093/bioinformatics/btt389
 Lundberg2016_an	arxiv:1611.07478
 Lusci2015_irv	doi:10.1186/s13321-015-0110-6
@@ -255,7 +256,7 @@ WayGreene2017_eval	arxiv:1711.04828
 WayGreene2017_tybalt	doi:10.1101/174474
 Word2Vec	arxiv:1301.3781
 wgsquikr	doi:10.1371/journal.pone.0091784
-Wu2017_molecule_net	arxiv:1703.00564
+Wu2017_molecule_net	doi:10.1039/C7SC02664A
 Xiang	doi:10.1016/S0167-9473(99)00098-5
 Xiong2011_bayesian	doi:10.1093/bioinformatics/btr444
 Xiong2015_splicing_code	doi:10.1126/science.1254806
