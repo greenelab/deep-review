@@ -48,7 +48,7 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@b72e496](https://github.com/greenelab/deep-review/tree/b72e496a7b6b4e83314bfc5fb99264556e9fbb73)
+from [greenelab/deep-review@f254973](https://github.com/greenelab/deep-review/tree/f2549736429ebbebe11d914e4860b90c7ca6fff8)
 on January 15, 2018.
 </em></small>
 
@@ -1623,7 +1623,7 @@ A linear model trained on heavily engineered features might be difficult to inte
 Similarly, a decision tree with many nodes and branches may also be difficult for a human to make sense of.
 
 There are several directions that might benefit the development of interpretability techniques.
-The first is the introduction of gold standard benchmarks that different interpretability approaches could be compared against, similar in spirit to how datasets like ImageNet and CIFAR spurred the development of deep learning for computer vision.
+The first is the introduction of gold standard benchmarks that different interpretability approaches could be compared against, similar in spirit to how the ImageNet [@cBVeXnZx] and CIFAR [@IcdRxiDv] datasets spurred the development of deep learning for computer vision.
 It would also be helpful if the community placed more emphasis on domains outside of computer vision.
 Computer vision is often used as the example application of interpretability methods, but it is not the domain with the most pressing need.
 Finally, closer integration of interpretability approaches with popular deep learning frameworks would make it easier for practitioners to apply and experiment with different approaches to understanding their deep learning models.
@@ -1893,7 +1893,7 @@ To facilitate citation, we [defined](https://github.com/greenelab/deep-review/bl
 We supported citations to the following identifier types (in order of preference): DOIs, PubMed Central IDs, PubMed IDs, arXiv IDs, and URLs.
 References were automatically generated from citation metadata by querying APIs to generate [Citation Style Language](http://citationstyles.org/) (CSL) JSON items for each reference.
 [Pandoc](http://pandoc.org/) and [pandoc-citeproc](https://github.com/jgm/pandoc-citeproc) converted the markdown to HTML and PDF, while rendering the formatted citations and references.
-In total, referenced works consisted of 358 DOIs, 6 PubMed Central records, 0 PubMed records, 128 arXiv manuscripts, and 48 URLs (webpages as well as manuscripts lacking standardized identifiers).
+In total, referenced works consisted of 358 DOIs, 6 PubMed Central records, 0 PubMed records, 128 arXiv manuscripts, and 49 URLs (webpages as well as manuscripts lacking standardized identifiers).
 
 We implemented continuous analysis so the manuscript was automatically regenerated whenever the source changed [@Qh7xTLwz].
 We configured Travis CI -- a continuous integration service -- to fetch new citation metadata and rebuild the manuscript for every commit.
