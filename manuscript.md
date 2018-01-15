@@ -48,7 +48,7 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@f254973](https://github.com/greenelab/deep-review/tree/f2549736429ebbebe11d914e4860b90c7ca6fff8)
+from [greenelab/deep-review@362793b](https://github.com/greenelab/deep-review/tree/362793bb94d2fa0d940afa780bffad82b113f85a)
 on January 15, 2018.
 </em></small>
 
@@ -714,7 +714,7 @@ However, while the deep learning model outperformed existing algorithms in nearl
 The paper was also limited by computational bottlenecks that required data to be split randomly into two distinct models and trained separately.
 It is unclear how much performance would have increased if not for computational restrictions.
 
-Epigenetic data, combined with deep learning, may have sufficient explanatory power to infer gene expression.
+Epigenomic data, combined with deep learning, may have sufficient explanatory power to infer gene expression.
 For instance, the DeepChrome CNN [@G10wkFHt] improved prediction accuracy of high or low gene expression from histone modifications over existing methods.
 AttentiveChrome [@16MNknNBL] added a deep attention model to further enhance DeepChrome.
 Deep learning can also integrate different data types.
@@ -789,7 +789,7 @@ While deep learning-based models can automatically extract features for TFBS pre
 
 For many cell types, we often have experimental TF binding data for a certain cell type (e.g. normal), but not the one of interest (e.g. cancer).
 To handle this issue, there are two options.
-The first is to use features such as epigenetic marks which are specific to the certain cell type.
+The first is to use features such as epigenomic marks which are specific to the certain cell type.
 If we have these features available, this is probably the best approach for accurate prediction since they will be strong signals for that particular cell type and TF.
 The second option is to use domain adaptation, which is a type of transfer learning where we learn a model which can predict from features in one domain (e.g. normal) and transfer the model to predict on features in another domain (e.g. cancer).
 This has been done in many other areas such as sentiment analysis [@4XHCB8iI=10.1.1.231.3442].
@@ -1043,12 +1043,12 @@ Deep learning would bring to these new kinds of experiments -- known as image-ba
 
 Single-cell methods are generating excitement as biologists characterize the vast heterogeneity within unicellular species and between cells of the same tissue type in the same organism [@1AWC7HsO0].
 For instance, tumor cells and neurons can both harbor extensive somatic variation [@1GvfSy48x].
-Understanding single-cell diversity in all its dimensions -- genetic, epigenetic, transcriptomic, proteomic, morphologic, and metabolic -- is key if treatments are to be targeted not only to a specific individual, but also to specific pathological subsets of cells.
+Understanding single-cell diversity in all its dimensions -- genetic, epigenomic, transcriptomic, proteomic, morphologic, and metabolic -- is key if treatments are to be targeted not only to a specific individual, but also to specific pathological subsets of cells.
 Single-cell methods also promise to uncover a wealth of new biological knowledge.
 A sufficiently large population of single cells will have enough representative
 "snapshots" to recreate timelines of dynamic biological processes.
-If tracking processes over time is not the limiting factor, single-cell techniques can provide maximal resolution compared to averaging across all cells in bulk tissue, enabling the study of transcriptional bursting with single-cell fluorescence *in situ* hybridization or the heterogeneity of epigenetic patterns with single-cell Hi-C or ATAC-seq [@QafUwNKn; @v97iPXDw].
-Joint profiling of single-cell epigenetic and transcriptional states provides unprecedented views of regulatory processes [@1CAw3FaPI].
+If tracking processes over time is not the limiting factor, single-cell techniques can provide maximal resolution compared to averaging across all cells in bulk tissue, enabling the study of transcriptional bursting with single-cell fluorescence *in situ* hybridization or the heterogeneity of epigenomic patterns with single-cell Hi-C or ATAC-seq [@QafUwNKn; @v97iPXDw].
+Joint profiling of single-cell epigenomic and transcriptional states provides unprecedented views of regulatory processes [@1CAw3FaPI].
 
 However, large challenges exist in studying single cells.
 Relatively few cells can be assayed at once using current droplet, imaging, or microwell technologies, and low-abundance molecules or modifications may not be detected by chance due to a phenomenon known as dropout, not to be confused with the dropout layer of deep learning.
