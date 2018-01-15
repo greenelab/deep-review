@@ -15,4 +15,4 @@ This directory contains the following files, which are mostly ignored on the `ma
 ## Source
 
 The manuscripts in this directory were built from
-[`ec57b0af9c2476d2e41b41ed7e3eac2dc224423f`](https://github.com/greenelab/deep-review/commit/ec57b0af9c2476d2e41b41ed7e3eac2dc224423f).
+[`fbee07efe25adde1bcc2fcdf8658f95a6b0847d7`](https://github.com/greenelab/deep-review/commit/fbee07efe25adde1bcc2fcdf8658f95a6b0847d7).
