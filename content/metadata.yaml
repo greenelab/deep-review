@@ -236,7 +236,7 @@ author_info:
     email: swamidass@wustl.edu
     affiliations:
       - Department of Pathology and Immunology, Washington University in Saint Louis, Saint Louis, MO
-    funders: NIH NLM R01LM012222, NIH NLM R01LM012482
+    funders: NIH R01LM012222, NIH R01LM012482
   - github: austinvhuang
     name: Austin Huang
     initials: AH
