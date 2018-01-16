@@ -48,7 +48,7 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@89873ce](https://github.com/greenelab/deep-review/tree/89873ce622511f64875f7176173fd3d46f5533ed)
+from [greenelab/deep-review@dfacaba](https://github.com/greenelab/deep-review/tree/dfacaba30538a4e6d450c002f91c139a82494812)
 on January 16, 2018.
 </em></small>
 
@@ -428,7 +428,7 @@ Both attention CNN and RNN have comparable results, but the CNN model has an adv
 For biotopes event extraction, Li et al. employed CNN and distributed representation [@ztw1ugBP] while Mehryary et al. used long short-term memory (LSTM) networks to extract complicated relations [@1AkznVzFs].
 Li et al. applied word embedding to extract complete events from biomedical text and achieved results comparable to the state-of-the-art systems [@E0XYyYBe].
 There are also approaches that identify event triggers rather than the complete event [@XbkgrcMy; @z8hmfrmY].
-Taken together, deep learning models outperform traditional kernel methods or feature-based approaches by 1-5% in f-score.
+Taken together, deep learning models outperform traditional kernel methods or feature-based approaches by 1--5% in f-score.
 Among various deep learning approaches, CNN stands out as the most popular model both in terms of computational complexity and performance, while RNN has achieved continuous progress.
 
 Information retrieval is a task of finding relevant text that satisfies an information need from within a large document collection.
@@ -918,7 +918,7 @@ However, blindly tested in the well-known CASP competitions, these methods did n
 
 Recently, Wang et al. proposed the deep learning method RaptorX-Contact [@BhfjKSY3], which significantly improves contact prediction over MetaPSICOV and pure co-evolution methods, especially for proteins without many sequence homologs. It employs a network architecture formed by one 1D residual neural network and one 2D residual neural network.
 Blindly tested in the latest CASP competition (i.e. CASP12 [@zScWGveU]), RaptorX-Contact ranked first in F1 score on free-modeling targets as well as the whole set of targets.
-In CAMEO (which can be interpreted as a fully-automated CASP) [@u9uApoaB], its predicted contacts were also able to fold proteins with a novel fold and only 65-330 sequence homologs.
+In CAMEO (which can be interpreted as a fully-automated CASP) [@u9uApoaB], its predicted contacts were also able to fold proteins with a novel fold and only 65--330 sequence homologs.
 This technique also worked well on membrane proteins even when trained on non-membrane proteins [@39RPiE10].
 RaptorX-Contact performed better mainly due to introduction of residual neural networks and exploitation of contact occurrence patterns by simultaneously predicting all the contacts in a single protein.
 
@@ -1077,7 +1077,7 @@ We are excited to see the creative applications of deep learning to single-cell 
 Metagenomics, which refers to the study of genetic material---16S rRNA or whole-genome shotgun DNA---from microbial communities, has revolutionized the study of micro-scale ecosystems within and around us.
 In recent years, machine learning has proved to be a powerful tool for metagenomic analysis.
 16S rRNA has long been used to deconvolve mixtures of microbial genomes, yet this ignores more than 99% of the genomic content.
-Subsequent tools aimed to classify 300 bp-3000 bp reads from complex mixtures of microbial genomes based on tetranucleotide frequencies, which differ across organisms [@N9NzkOjA], using supervised [@QV551Nlx; @1HtJuEkb2] or unsupervised methods [@1HhqhBwrM].
+Subsequent tools aimed to classify 300--3000 bp reads from complex mixtures of microbial genomes based on tetranucleotide frequencies, which differ across organisms [@N9NzkOjA], using supervised [@QV551Nlx; @1HtJuEkb2] or unsupervised methods [@1HhqhBwrM].
 Then, researchers began to use techniques that could estimate relative abundances from an entire sample faster than classifying individual reads [@56wEWVIl;
 @RqhGD9c7; @189TQrQA9; @8DLzxOEt].
 There is also great interest in identifying and annotating sequence reads [@qUGH5CX8; @yFOAeemA].
@@ -1410,7 +1410,7 @@ The human genome has 3 billion base pairs, and only a small fraction of them are
 Less than 1% of the genome can be confidently labeled as bound for most transcription factors.
 
 Estimating the false discovery rate (FDR) is a standard method of evaluation in genomics that can also be applied to deep learning model predictions of genomic features.
-Using deep learning predictions for targeted validation experiments of specific biochemical activities necessitates a more stringent FDR (typically 5-25%).
+Using deep learning predictions for targeted validation experiments of specific biochemical activities necessitates a more stringent FDR (typically 5--25%).
 However, when predicted biochemical activities are used as features in other models, such as gene expression models, a low FDR may not be necessary.
 
 What is the correspondence between FDR metrics and commonly used classification metrics such as auPRC (area under the precision-recall curve) and auROC (area under the receiver-operating-characteristic curve)? auPRC evaluates the average precision, or equivalently, the average FDR across all recall thresholds.
