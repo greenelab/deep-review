@@ -1098,5 +1098,76 @@
    "container-title-short": "G3",
    "short_url": "https://doi.org/gcgmcv",
    "standard_citation": "doi:10.1534/g3.116.033654"
+ },
+ {
+   "standard_citation": "url:http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.231.3442",
+   "type": "paper-conference",
+   "title": "Domain adaptation for large-scale sentiment classification: A deep learning approach",
+   "container-title": "In Proceedings of the Twenty-eight International Conference on Machine Learning, ICML",
+   "source": "CiteSeer",
+   "abstract": "The exponential increase in the availability of online reviews and recommendations makes sentiment classification an interesting topic in academic and industrial research. Reviews can span so many different domains that it is difficult to gather annotated training data for all of them. Hence, this paper studies the problem of domain adaptation for sentiment classifiers, hereby a system is trained on labeled reviews from one source domain but is meant to be deployed on another. We propose a deep learning approach which learns to extract a meaningful representation for each review in an unsupervised fashion. Sentiment classifiers trained with this high-level feature representation clearly outperform state-of-the-art methods on a benchmark composed of reviews of 4 types of Amazon products. Furthermore, this method scales well and allowed us to successfully perform domain adaptation on a larger industrial-strength dataset of 22 domains. 1.",
+   "URL": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.231.3442",
+   "shortTitle": "Domain adaptation for large-scale sentiment classification",
+   "author": [
+     {
+       "family": "Glorot",
+       "given": "Xavier"
+     },
+     {
+       "family": "Bordes",
+       "given": "Antoine"
+     },
+     {
+       "family": "Bengio",
+       "given": "Yoshua"
+     }
+   ],
+   "issued": {
+     "date-parts": [
+       [
+         "2011"
+       ]
+     ]
+   }
+ },
+ {
+   "standard_citation": "url:https://dl.acm.org/citation.cfm?id=3061018",
+   "type": "paper-conference",
+   "title": "Joint Models for Extracting Adverse Drug Events from Biomedical Text",
+   "container-title": "Proceedings of the Twenty-Fifth International Joint Conference on Artificial Intelligence",
+   "collection-title": "IJCAI'16",
+   "publisher": "AAAI Press",
+   "publisher-place": "New York, New York, USA",
+   "page": "2838-2844",
+   "source": "ACM Digital Library",
+   "event-place": "New York, New York, USA",
+   "abstract": "Extracting adverse drug events receives much research attention in the biomedical community. Previous work adopts pipeline models, firstly recognizing drug/disease entity mentions and then identifying adverse drug events from drug/disease pairs. In this paper, we investigate joint models for simultaneously extracting drugs, diseases and adverse drug events. Compared with pipeline models, joint models have two main advantages. First, they make use of information integration to facilitate performance improvement; second, they reduce error propagation in pipeline methods. We compare a discrete model and a deep neural model for extracting drugs, diseases and adverse drug events jointly. Experimental results on a standard ADE corpus show that the discrete joint model outperforms a state-of-the-art baseline pipeline significantly. In addition, when discrete features are replaced by neural features, the recall is further improved.",
+   "URL": "http://dl.acm.org/citation.cfm?id=3060832.3061018",
+   "ISBN": "978-1-57735-770-4",
+   "author": [
+     {
+       "family": "Li",
+       "given": "Fei"
+     },
+     {
+       "family": "Zhang",
+       "given": "Yue"
+     },
+     {
+       "family": "Zhang",
+       "given": "Meishan"
+     },
+     {
+       "family": "Ji",
+       "given": "Donghong"
+     }
+   ],
+   "issued": {
+     "date-parts": [
+       [
+         "2016"
+       ]
+     ]
+   }
  }
 ]
