@@ -8,6 +8,8 @@ author-meta:
 - Gregory P. Way
 - Enrico Ferrero
 - Paul-Michael Agapow
+- Michael Zietz
+- Michael M. Hoffman
 - Wei Xie
 - Gail L. Rosen
 - Benjamin J. Lengerich
@@ -18,6 +20,10 @@ author-meta:
 - Avanti Shrikumar
 - Jinbo Xu
 - Evan M. Cofer
+- Christopher A. Lavender
+- Srinivas C. Turaga
+- Amr M. Alexandari
+- Zhiyong Lu
 - David J. Harris
 - Dave DeCaprio
 - Yanjun Qi
@@ -25,6 +31,9 @@ author-meta:
 - Yifan Peng
 - Laura K. Wiley
 - Marwin H.S. Segler
+- Simina M. Boca
+- S. Joshua Swamidass
+- Austin Huang
 - Anthony Gitter
 - Casey S. Greene
 date-meta: '2018-01-16'
@@ -48,7 +57,7 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@fef6e3a](https://github.com/greenelab/deep-review/tree/fef6e3ad24301fbe4ba278e1b69803cae820a662)
+from [greenelab/deep-review@88d4a7f](https://github.com/greenelab/deep-review/tree/88d4a7f484205ca265a32c3dd2aab730a632af79)
 on January 16, 2018.
 </em></small>
 
@@ -71,47 +80,65 @@ Gregory P. Way<sup>2</sup>,
 Enrico Ferrero<sup>6</sup>,
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-1126-1479)
 Paul-Michael Agapow<sup>7</sup>,
+[![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-0539-630X)
+Michael Zietz<sup>2</sup>,
+[![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-4517-1562)
+Michael M. Hoffman<sup>8,9,10</sup>,
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-1871-6846)
-Wei Xie<sup>8</sup>,
+Wei Xie<sup>11</sup>,
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-1763-5750)
-Gail L. Rosen<sup>9</sup>,
+Gail L. Rosen<sup>12</sup>,
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-8690-9554)
-Benjamin J. Lengerich<sup>10</sup>,
+Benjamin J. Lengerich<sup>13</sup>,
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-1633-5780)
-Johnny Israeli<sup>11</sup>,
+Johnny Israeli<sup>14</sup>,
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-0811-0944)
-Jack Lanchantin<sup>12</sup>,
+Jack Lanchantin<sup>15</sup>,
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-0568-298X)
-Stephen Woloszynek<sup>9</sup>,
+Stephen Woloszynek<sup>12</sup>,
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-1555-8261)
-Anne E. Carpenter<sup>13</sup>,
+Anne E. Carpenter<sup>16</sup>,
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-6443-4671)
-Avanti Shrikumar<sup>14</sup>,
+Avanti Shrikumar<sup>17</sup>,
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-7111-4839)
-Jinbo Xu<sup>15</sup>,
+Jinbo Xu<sup>18</sup>,
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-3877-0433)
-Evan M. Cofer<sup>16</sup>,
+Evan M. Cofer<sup>19</sup>,
+[![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-7762-1089)
+Christopher A. Lavender<sup>20</sup>,
+[![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-3247-6487)
+Srinivas C. Turaga<sup>21</sup>,
+[![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-8655-8109)
+Amr M. Alexandari<sup>17</sup>,
+[![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-9998-916X)
+Zhiyong Lu<sup>22</sup>,
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-3332-9307)
-David J. Harris<sup>17</sup>,
+David J. Harris<sup>23</sup>,
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-8931-9461)
-Dave DeCaprio<sup>18</sup>,
+Dave DeCaprio<sup>24</sup>,
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-5796-7453)
-Yanjun Qi<sup>12</sup>,
+Yanjun Qi<sup>15</sup>,
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-3084-2287)
-Anshul Kundaje<sup>14,19</sup>,
+Anshul Kundaje<sup>17,25</sup>,
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-9309-8331)
-Yifan Peng<sup>20</sup>,
+Yifan Peng<sup>22</sup>,
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-6681-9754)
-Laura K. Wiley<sup>21</sup>,
+Laura K. Wiley<sup>26</sup>,
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-8008-0546)
-Marwin H.S. Segler<sup>22</sup>,
+Marwin H.S. Segler<sup>27</sup>,
+[![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-1400-3398)
+Simina M. Boca<sup>28</sup>,
+[![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-2191-0778)
+S. Joshua Swamidass<sup>29</sup>,
+[![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-1349-4030)
+Austin Huang<sup>30</sup>,
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-5324-9833)
-Anthony Gitter<sup>23,24,†</sup>,
+Anthony Gitter<sup>31,32,†</sup>,
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-8713-9213)
 Casey S. Greene<sup>2,†</sup>
 
 <sup>☯</sup> --- Author order was determined with a randomized algorithm<br>
-<sup>†</sup> --- To whom correspondence should be addressed: gitter@biostat.wisc.edu (AG) and greenescientist@gmail.com (CSG)
+<sup>†</sup> --- To whom correspondence should be addressed: gitter@biostat.wisc.edu (A.G.) and greenescientist@gmail.com (C.S.G.)
 <small>
 
 
@@ -122,23 +149,31 @@ Casey S. Greene<sup>2,†</sup>
 5. Harvard Medical School, Boston, MA
 6. Computational Biology and Stats, Target Sciences, GlaxoSmithKline, Stevenage, United Kingdom
 7. Data Science Institute, Imperial College London, London, United Kingdom
-8. Electrical Engineering and Computer Science, Vanderbilt University, Nashville, TN
-9. Ecological and Evolutionary Signal-processing and Informatics Laboratory, Department of Electrical and Computer Engineering, Drexel University, Philadelphia, PA
-10. Computational Biology Department, School of Computer Science, Carnegie Mellon University, Pittsburgh, PA
-11. Biophysics Program, Stanford University, Stanford, CA
-12. Department of Computer Science, University of Virginia, Charlottesville, VA
-13. Imaging Platform, Broad Institute of Harvard and MIT, Cambridge, MA
-14. Department of Computer Science, Stanford University, Stanford, CA
-15. Toyota Technological Institute at Chicago, Chicago, IL
-16. Department of Computer Science, Trinity University, San Antonio, TX
-17. Department of Wildlife Ecology and Conservation, University of Florida, Gainesville, FL
-18. ClosedLoop.ai, Austin, TX
-19. Department of Genetics, Stanford University, Stanford, CA
-20. National Center for Biotechnology Information and National Library of Medicine, National Institutes of Health, Bethesda, MD
-21. Division of Biomedical Informatics and Personalized Medicine, University of Colorado School of Medicine, Aurora, CO
-22. Institute of Organic Chemistry, Westfälische Wilhelms-Universität Münster, Münster, Germany
-23. Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison
-24. Morgridge Institute for Research, Madison, WI
+8. Princess Margaret Cancer Centre, Toronto, ON, Canada
+9. Department of Medical Biophysics, Toronto, ON, Canada
+10. Department of Computer Science, Toronto, ON, Canada
+11. Electrical Engineering and Computer Science, Vanderbilt University, Nashville, TN
+12. Ecological and Evolutionary Signal-processing and Informatics Laboratory, Department of Electrical and Computer Engineering, Drexel University, Philadelphia, PA
+13. Computational Biology Department, School of Computer Science, Carnegie Mellon University, Pittsburgh, PA
+14. Biophysics Program, Stanford University, Stanford, CA
+15. Department of Computer Science, University of Virginia, Charlottesville, VA
+16. Imaging Platform, Broad Institute of Harvard and MIT, Cambridge, MA
+17. Department of Computer Science, Stanford University, Stanford, CA
+18. Toyota Technological Institute at Chicago, Chicago, IL
+19. Department of Computer Science, Trinity University, San Antonio, TX
+20. Integrative Bioinformatics, National Institute of Environmental Health Sciences, National Institutes of Health, Research Triangle Park, NC
+21. Howard Hughes Medical Institute, Janelia Research Campus, Ashburn, VA
+22. National Center for Biotechnology Information and National Library of Medicine, National Institutes of Health, Bethesda, MD
+23. Department of Wildlife Ecology and Conservation, University of Florida, Gainesville, FL
+24. ClosedLoop.ai, Austin, TX
+25. Department of Genetics, Stanford University, Stanford, CA
+26. Division of Biomedical Informatics and Personalized Medicine, University of Colorado School of Medicine, Aurora, CO
+27. Institute of Organic Chemistry, Westfälische Wilhelms-Universität Münster, Münster, Germany
+28. Innovation Center for Biomedical Informatics, Georgetown University Medical Center, Washington, DC
+29. Department of Pathology and Immunology, Washington University in Saint Louis, Saint Louis, MO
+30. Department of Medicine, Brown University, Providence, RI
+31. Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison, Madison, WI
+32. Morgridge Institute for Research, Madison, WI
 
 </small>
 
@@ -1927,15 +1962,15 @@ The ability to irrefutably prove manuscript existence at a past time could be im
 
 We created an open repository on the GitHub version control platform ([`greenelab/deep-review`](https://github.com/greenelab/deep-review)) [@yLr4pV4G].
 Here, we engaged with numerous authors from papers within and outside of the area.
-The manuscript was drafted via GitHub commits by 27 individuals who met the ICMJE standards of authorship.
+The manuscript was drafted via GitHub commits by 36 individuals who met the ICMJE standards of authorship.
 These were individuals who contributed to the review of the literature;
 drafted the manuscript or provided substantial critical revisions;
 approved the final manuscript draft; and agreed to be accountable in all aspects of the work.
 Individuals who did not contribute in all of these ways, but who did participate, are acknowledged below.
 We grouped authors into the following four classes of approximately equal contributions and randomly ordered authors within each contribution class.
-Drafted multiple sub-sections along with extensive editing, pull request reviews, or discussion: A.A.K., B.K.B., B.T.D., D.S.H., E.F., G.P.W., P.A., T.C.
-Drafted one or more sub-sections: A.E.C., A.S., B.J.L., E.M.C., G.L.R., J.I., J.L., J.X., S.W., W.X.
-Revised specific sub-sections or supervised drafting one or more sub-sections: A.K., D.D., D.J.H., L.K.W., M.H.S.S., Y.P., Y.Q.
+Drafted multiple sub-sections along with extensive editing, pull request reviews, or discussion: A.A.K., B.K.B., B.T.D., D.S.H., E.F., G.P.W., M.M.H., M.Z., P.A., T.C.
+Drafted one or more sub-sections: A.E.C., A.M.A., A.S., B.J.L., C.A.L., E.M.C., G.L.R., J.I., J.L., J.X., S.C.T., S.W., W.X., Z.L.
+Revised specific sub-sections or supervised drafting one or more sub-sections: A.H., A.K., D.D., D.J.H., L.K.W., M.H.S.S., S.J.S., S.M.B., Y.P., Y.Q.
 Drafted sub-sections, edited the manuscript, reviewed pull requests, and coordinated co-authors: A.G., C.S.G.
 
 ### Competing interests
@@ -1951,9 +1986,12 @@ We would like to thank Aaron Sheldon, who contributed text but did not formally 
 We would like to thank Anna Greene for a careful proofreading of the manuscript in advance of the first submission.
 We would like to thank Robert Gieseke, Ruibang Luo, and Sourav Singh for correcting typos, formatting, and references.
 Finally, we acknowledge funding from the Gordon and Betty Moore Foundation awards GBMF4552 (C.S.G. and D.S.H.) and GBMF4563 (D.J.H.);
-the National Institutes of Health awards DP2GM123485 (A.K.), R01AI116794 (B.K.B.), R01GM089652 (A.E.C.), R01GM089753 (J.X.), T32GM007753 (B.T.D.), and U54AI117924 (A.G.);
+the Howard Hughes Medical Institute (S.C.T.);
+the National Institutes of Health awards DP2GM123485 (A.K.), P30CA051008 (S.M.B.), R01AI116794 (B.K.B.), R01GM089652 (A.E.C.), R01GM089753 (J.X.), R01LM012222 (S.J.S.), R01LM012482 (S.J.S.), R21CA220398 (S.M.B.), T32GM007753 (B.T.D.), and U54AI117924 (A.G.);
+the National Institutes of Health Intramural Research Program and National Library of Medicine (Y.P. and Z.L.);
 the National Science Foundation awards 1245632 (G.L.R.), 1531594 (E.M.C.), and 1564955 (J.X.);
-and the National Institutes of Health Intramural Research Program and National Library of Medicine (Y.P.).
+the Natural Sciences and Engineering Research Council of Canada award RGPIN-2015-3948 (M.M.H.);
+and the Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences (M.Z.).
 
 
 ## References {.page_break_before}
