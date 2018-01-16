@@ -63,6 +63,24 @@ author_info:
     email: p.agapow@imperial.ac.uk
     affiliations:
       - Data Science Institute, Imperial College London, London, United Kingdom
+  - github: zietzm
+    name: Michael Zietz
+    initials: MZ
+    orcid: 0000-0003-0539-630X
+    email: zietz@sas.upenn.edu
+    affiliations:
+      - Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA
+    funders: Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences
+  - github: michaelmhoffman
+    name: Michael M. Hoffman
+    initials: MMH
+    orcid: 0000-0002-4517-1562
+    email: michael.hoffman@utoronto.ca
+    affiliations:
+      - Princess Margaret Cancer Centre, Toronto, ON, Canada
+      - Department of Medical Biophysics, Toronto, ON, Canada
+      - Department of Computer Science, Toronto, ON, Canada
+    funders: NSERC RGPIN-2015-3948
   - github: xieconnect
     name: Wei Xie
     orcid: 0000-0002-1871-6846
@@ -127,6 +145,36 @@ author_info:
     affiliations:
       - Department of Computer Science, Trinity University, San Antonio, TX
     funders: NSF 1531594
+  - github: lavenderca
+    name: Christopher A. Lavender
+    initials: CAL
+    orcid: 0000-0002-7762-1089
+    email: christopher.lavender@nih.gov
+    affiliations:
+      - Integrative Bioinformatics, National Institute of Environmental Health Sciences, National Institutes of Health, Research Triangle Park, NC
+  - github: SriniTuraga
+    name: Srinivas C. Turaga
+    initials: SCT
+    orcid: 0000-0003-3247-6487
+    email: turagas@janelia.hhmi.org
+    affiliations:
+      - Howard Hughes Medical Institute, Janelia Research Campus, Ashburn, VA
+    funders: Howard Hughes Medical Institute
+  - github: alexandari
+    name: Amr M. Alexandari
+    initials: AMA
+    orcid: 0000-0001-8655-8109
+    email: amr.alexandari@gmail.com
+    affiliations:
+      - Department of Computer Science, Stanford University, Stanford, CA
+  - github: luzh2
+    name: Zhiyong Lu
+    initials: ZL
+    orcid: 0000-0001-9998-916X
+    email: zhiyong.lu@nih.gov
+    affiliations:
+      - National Center for Biotechnology Information and National Library of Medicine, National Institutes of Health, Bethesda, MD
+    funders: National Institutes of Health Intramural Research Program and National Library of Medicine
   - github: davharris
     name: David J. Harris
     orcid: 0000-0003-3332-9307
@@ -173,12 +221,35 @@ author_info:
     email: marwin.segler@uni-muenster.de
     affiliations:
       - Institute of Organic Chemistry, Westfälische Wilhelms-Universität Münster, Münster, Germany
+  - github: SiminaB
+    name: Simina M. Boca
+    initials: SMB
+    orcid: 0000-0002-1400-3398
+    email: smb310@georgetown.edu
+    affiliations:
+      - Innovation Center for Biomedical Informatics, Georgetown University Medical Center, Washington, DC
+    funders: NIH R21CA220398, NIH P30CA051008
+  - github: swamidass
+    name: S. Joshua Swamidass
+    initials: SJS
+    orcid: 0000-0003-2191-0778
+    email: swamidass@wustl.edu
+    affiliations:
+      - Department of Pathology and Immunology, Washington University in Saint Louis, Saint Louis, MO
+    funders: NIH R01LM012222, NIH R01LM012482
+  - github: austinvhuang
+    name: Austin Huang
+    initials: AH
+    orcid: 0000-0003-1349-4030
+    email: austinh@alum.mit.edu
+    affiliations:
+      - Department of Medicine, Brown University, Providence, RI
   - github: agitter
     name: Anthony Gitter
     orcid: 0000-0002-5324-9833
     email: gitter@biostat.wisc.edu
     affiliations:
-      - Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison
+      - Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison, Madison, WI
       - Morgridge Institute for Research, Madison, WI
     funders: NIH U54AI117924
     symbol_str: "†"
