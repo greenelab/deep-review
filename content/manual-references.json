@@ -974,5 +974,129 @@
       "given": "Stephan C"
      }
    ]
+ },
+ {
+   "indexed": {
+     "date-parts": [
+       [
+         2017,
+         8,
+         31
+       ]
+     ],
+     "date-time": "2017-08-31T16:02:17Z",
+     "timestamp": 1504195337886
+   },
+   "reference-count": 0,
+   "publisher": "Genetics Society of America",
+   "issue": "5",
+   "content-domain": {
+     "domain": [],
+     "crossmark-restriction": false
+   },
+   "published-print": {
+     "date-parts": [
+       [
+         2017,
+         5
+       ]
+     ]
+   },
+   "DOI": "10.1534/g3.116.033654",
+   "type": "article-journal",
+   "created": {
+     "date-parts": [
+       [
+         2017,
+         4,
+         9
+       ]
+     ],
+     "date-time": "2017-04-09T00:20:13Z",
+     "timestamp": 1491697213000
+   },
+   "page": "1385-1392",
+   "source": "Crossref",
+   "is-referenced-by-count": 1,
+   "title": "Accurate Classification of Protein Subcellular Localization from High-Throughput Microscopy Images Using Deep Learning",
+   "prefix": "10.1534",
+   "volume": "7",
+   "author": [
+     {
+       "given": "Tanel",
+       "family": "Pärnamaa",
+       "affiliation": []
+     },
+     {
+       "given": "Leopold",
+       "family": "Parts",
+       "affiliation": []
+     }
+   ],
+   "member": "414",
+   "published-online": {
+     "date-parts": [
+       [
+         2017,
+         4,
+         8
+       ]
+     ]
+   },
+   "container-title": "G3: Genes|Genomes|Genetics",
+   "original-title": [],
+   "link": [
+     {
+       "URL": "https://syndication.highwire.org/content/doi/10.1534/g3.116.033654",
+       "content-type": "unspecified",
+       "content-version": "vor",
+       "intended-application": "similarity-checking"
+     }
+   ],
+   "deposited": {
+     "date-parts": [
+       [
+         2017,
+         6,
+         8
+       ]
+     ],
+     "date-time": "2017-06-08T03:10:18Z",
+     "timestamp": 1496891418000
+   },
+   "score": 1.0,
+   "subtitle": [],
+   "short-title": [],
+   "issued": {
+     "date-parts": [
+       [
+         2017,
+         4,
+         8
+       ]
+     ]
+   },
+   "references-count": 0,
+   "alternative-id": [
+     "10.1534/g3.116.033654"
+   ],
+   "URL": "https://doi.org/10.1534/g3.116.033654",
+   "relation": {
+     "has-preprint": [
+       {
+         "id-type": "doi",
+         "id": "10.1101/050757",
+         "asserted-by": "object"
+       }
+     ]
+   },
+   "subject": [
+     "Genetics(clinical)",
+     "Genetics",
+     "Molecular Biology"
+   ],
+   "container-title-short": "G3",
+   "short_url": "https://doi.org/gcgmcv",
+   "standard_citation": "doi:10.1534/g3.116.033654",
  }
 ]
