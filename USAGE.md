@@ -95,7 +95,7 @@ For example, the following citations all refer to the same study, but will be tr
 
 The system also supports citation tags, which are recommended for the following applications:
 
-1. A citation's identifier contains forbidden characters, such as `;` or ending with a non-alphanumeric character other than `/`.
+1. A citation's identifier contains forbidden characters, such as `;` or `=`, or ends with a non-alphanumeric character other than `/`.
   In these instances, you must use a tag.
 2. A single reference is cited many times.
   Therefore, it might make sense to define a tag, so if the citation updates (e.g. a newer version becomes available), only a single change is required.
