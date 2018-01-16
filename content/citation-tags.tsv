@@ -2,6 +2,7 @@ tag	citation
 Abe	doi:10.1101/gr.634603
 Abramoff2016_dr	doi:10.1167/iovs.16-19964
 Agarwal2015_targetscan	doi:10.7554/eLife.05005
+Aitchison2017	url:http://papers.nips.cc/paper/6940-model-based-bayesian-inference-of-neural-activity-and-connectivity-from-all-optical-interrogation-of-a-neural-circuit
 Alipanahi2015_predicting	doi:10.1038/nbt.3300
 AltaeTran2016_one_shot	doi:10.1021/acscentsci.6b00367
 Amit2017_breast_mri	doi:10.1117/12.2249981
@@ -23,7 +24,7 @@ Berezikov2011_mirna	doi:10.1038/nrg3079
 Bergstra2011_hyper	url:https://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimization.pdf
 Bergstra2012_random	url:http://www.jmlr.org/papers/v13/bergstra12a.html
 Bracken2016_mirna	doi:10.1038/nrg.2016.134
-Boza	arxiv:1603.09195
+Boza	doi:10.1371/journal.pone.0178751
 Buggenthin2017_imaged_lineage	doi:10.1038/nmeth.4182
 Burlina2016_amd	doi:10.1109/ISBI.2016.7493240
 Caruana2014_need	arxiv:1312.6184
@@ -55,7 +56,7 @@ Ditzler3	doi:10.1109/TNB.2015.2461219
 Dhungel2015_struct_pred_mamm	doi:10.1007/978-3-319-24553-9_74
 Dhungel2016_mamm	doi:10.1007/978-3-319-46723-8_13
 Dhungel2017_mamm_min_interv	doi:10.1016/j.media.2017.01.009
-Dogwild	pmid:27330264
+Dogwild	pmcid:PMC4907892
 Dream_tf_binding	url:https://www.synapse.org/#!Synapse:syn6131484/wiki/402026
 Dragonn	url:http://kundajelab.github.io/dragonn/
 Duvenaud2015_graph_conv	url:http://papers.nips.cc/paper/5954-convolutional-networks-on-graphs-for-learning-molecular-fingerprints
@@ -79,7 +80,7 @@ Gerstein2016_scaling	doi:10.1186/s13059-016-0917-0
 Ghandi2014_enhanced	doi:10.1371/journal.pcbi.1003711
 Ghosh1992_sequence	doi:10.1117/12.140112
 Goldsborough2017_cytogan	doi:10.1101/227645
-Gomezb2016_automatic	arxiv:1610.02415
+Gomezb2016_automatic	arxiv:1610.02415v1
 Graphlab	doi:10.14778/2212351.2212354
 Groop1986_islet	doi:10.2337/diab.35.2.237
 Gultepe2014_sepsis	doi:10.1136/amiajnl-2013-001815
@@ -99,7 +100,7 @@ Hubara2016_qnn	arxiv:1609.07061
 Huddar2016_predicting	doi:10.1109/ACCESS.2016.2618775
 Hughes2016_macromol_react	doi:10.1021/acscentsci.6b00162
 Ithapu2015_efficient	doi:10.1016/j.jalz.2015.01.010
-Jafari2016_skin_lesions	arxiv:1609.02374
+Jafari2016_skin_lesions	doi:10.1007/s11548-017-1567-8
 Jha2017_integrative_models	doi:10.1101/104869
 Johnson2017_integ_cell	arxiv:1705.00092
 JuanMateu2016_t1d	doi:10.1530/EJE-15-0916
@@ -135,12 +136,13 @@ Lin2017_why_dl_works	arxiv:1608.08225v3
 Lipton2016_missing	arxiv:1606.04130
 Lipton2015_lstm	arxiv:1510.07641
 Litjens2016_histopath_survey	doi:10.1038/srep26286
-Litjens2017_medimage_survey	arxiv:1702.05747
+Litjens2017_medimage_survey	doi:10.1016/j.media.2017.07.005
 Lisboa2006_review	doi:10.1016/j.neunet.2005.10.007
 Liu	doi:10.1371/journal.pone.0097958
 Liu2016_towards	arxiv:1604.07043
 Liu2016_sc_transcriptome	doi:10.12688/f1000research.7223.1
 Lodato2015_neurons	doi:10.1126/science.aab1785
+Lowe2012_kaggle	url:http://blogs.sciencemag.org/pipeline/archives/2012/12/11/did_kaggle_predict_drug_candidate_activities_or_not
 lmat	doi:10.1093/bioinformatics/btt389
 Lundberg2016_an	arxiv:1611.07478
 Lusci2015_irv	doi:10.1186/s13321-015-0110-6
@@ -209,7 +211,7 @@ Seide2014_parallel	doi:10.1109/ICASSP.2014.6853593
 Setty2015_seqgl	doi:10.1371/journal.pcbi.1004271
 Selvaraju2016_grad	arxiv:1610.02391
 Serden	doi:10.1016/S0168-8510(02)00208-7
-Shaham2016_batch_effects	arxiv:1610.04181
+Shaham2016_batch_effects	doi:10.1093/bioinformatics/btx196
 Shapely	doi:10.1515/9781400881970-018
 Shen2017_medimg_review	doi:10.1146/annurev-bioeng-071516-044442
 Shin2016_cad_tl	doi:10.1109/TMI.2016.2528162
@@ -220,7 +222,7 @@ Singh2017_attentivechrome	arxiv:1708.00339
 Singh2016_deepchrome	arxiv:1607.02078
 Singh2016_tsk	arxiv:1609.03490
 Silver2016_alphago	doi:10.1038/nature16961
-Sonderby	arxiv:1503.01919
+Sonderby	doi:10.1007/978-3-319-21233-3_6
 Soueidan	doi:10.1515/metgen-2016-0001
 Spark	doi:10.1145/2934664
 Speech_recognition	url:http://www.businessinsider.com/ibm-edges-closer-to-human-speech-recognition-2017-3
@@ -256,7 +258,7 @@ WayGreene2017_eval	arxiv:1711.04828
 WayGreene2017_tybalt	doi:10.1101/174474
 Word2Vec	arxiv:1301.3781
 wgsquikr	doi:10.1371/journal.pone.0091784
-Wu2017_molecule_net	arxiv:1703.00564
+Wu2017_molecule_net	doi:10.1039/C7SC02664A
 Xiang	doi:10.1016/S0167-9473(99)00098-5
 Xiong2011_bayesian	doi:10.1093/bioinformatics/btr444
 Xiong2015_splicing_code	doi:10.1126/science.1254806
@@ -279,3 +281,18 @@ Zintgraf2017_visualizing	arxiv:1702.04595
 goodfellow2016deep	url:http://www.deeplearningbook.org/
 li2016joint	url:http://www.ijcai.org/Proceedings/16/Papers/403.pdf
 world2004international	url:http://www.who.int/classifications/icd/en/
+ghahramani_protect	arxiv:1707.02476
+uncertainty_types	arxiv:1703.04977
+uncertainty_multi_task	arxiv:1705.07115
+guo_calibration	arxiv:1706.04599
+platt_scaling	url:http://citeseer.ist.psu.edu/viewdoc/summary?doi=10.1.1.41.1639
+out_dist_baseline	arxiv:1610.02136
+temp_out_dist	arxiv:1706.02690
+ai_safety	arxiv:1606.06565
+strong_adversary	arxiv:1705.07263
+retinopathy_uncertainty	doi:10.1038/s41598-017-17876-z
+bayesian_hypernets	arxiv:1710.04759
+mcclure_bayesian	arxiv:1611.01639
+uncertainty_ensembles	arxiv:1612.01474
+domain_adapt_uncertainty	arxiv:1505.07818
+gal_thesis	url:http://www.cs.ox.ac.uk/people/yarin.gal/website/publications.html#Gal2015Thesis
