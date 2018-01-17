@@ -46,12 +46,12 @@ We've revised the section to say:
 > Billing information in the form of ICD codes are simple annotations but phenotypic algorithms can combine laboratory tests, medication prescriptions, and patient notes to generate more reliable phenotypes.
 > Recently, Lee et al.[@tag:Lee2016_emr_oct_amd] developed an approach to distinguish individuals with age-related macular degeneration from control individuals.
 
-TODO in [issue #686](https://github.com/greenelab/deep-review/issues/686)
-
 > Some existing biomedical informatics systems are not cited.
 For example, please provide a citation to NegBio.
 
-TODO in [issue #687](https://github.com/greenelab/deep-review/issues/687)
+We went through the manuscript and identified methods that were mentioned but not cited.
+We added the reference to NegBio.
+We also added references for ImageNet and CIFAR, TCGA, and GATK.
 
 ## Referee 2
 
@@ -60,7 +60,10 @@ It might be impossible to do that within the space limitations of the current re
 There is certainly a large readership whose interest has been peaked by countless references to deep learning even in the popular press, but who are very confused when autoencoders, LSTMs and RNNs get thrown at them without any even brief explanation what they are.
 Just sending readers off to fend for themselves through internet searches or to study the excellent but still quite technical book [Goodfellow et al.](http://www.deeplearningbook.org/ "Deep Learning. Ian Goodfellow, Yoshua Bengio, Aaron Courville. 2016") is probably not the most satisfactory answer.
 
-TODO in [issue #688](https://github.com/greenelab/deep-review/issues/688)
+We agree with the reviewer that the explanation of these concepts was missing.
+We have added a new Figure 1 that shows some of the neural network types that are building blocks of those discussed in the paper.
+We also added a new Table 1 that provides a short and hopefully intuitive description of these types of networks plus a few others that we saw commonly used in the biomedical literature.
+We also revised the "Introduction to Deep Learning" section to try to give the reader a more gradual introduction to the concepts in deep learning.
 
 > There is a slight imbalance in the presentation of various application areas.
 The [section on drug development](https://github.com/greenelab/deep-review/blob/v0.9-preprint/sections/05_treat.md#drug-development), for example, is quite extensive and provides a lot of technical details which might be less relevant for a reader who tries to get a general overview of deep learning in biomedical research.
@@ -71,7 +74,9 @@ TODO in [issue #689](https://github.com/greenelab/deep-review/issues/689)
 > The main issue with machine learning solutions in a medical, particularly clinical or public health setting is the lack of proper measures of uncertainty, as it is traditionally provided either in the framework of hypothesis testing or in the increasing acceptance of posterior Bayesian inference for public health decisions.
 Although this is mentioned throughout the review, this issue deserves a much more prominent place in the introduction and the discussion, since it is one of the key obstacles for the acceptance of machine learning approaches outside exploratory analyses in basic biological research.
 
-TODO in [issue #690](https://github.com/greenelab/deep-review/issues/690)
+We agree with the reviewer that this was an important and overlooked area of the review.
+We've now rectified this oversight by adding a subsection in the discussion titled "Uncertainty quantification."
+We discuss both epistemic and aleatoric uncertainty as well as techniques for dealing with uncertainty in deep neural networks.
 
 ***
 
