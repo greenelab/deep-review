@@ -36,7 +36,7 @@ author-meta:
 - Austin Huang
 - Anthony Gitter
 - Casey S. Greene
-date-meta: '2018-01-16'
+date-meta: '2018-01-17'
 keywords:
 - deep learning
 - review
@@ -57,8 +57,8 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@88d4a7f](https://github.com/greenelab/deep-review/tree/88d4a7f484205ca265a32c3dd2aab730a632af79)
-on January 16, 2018.
+from [greenelab/deep-review@60fa4c2](https://github.com/greenelab/deep-review/tree/60fa4c2c5851fb12d7b9e8b7c4843cfb02951f56)
+on January 17, 2018.
 </em></small>
 
 ## Authors
@@ -434,7 +434,7 @@ Wang et al. [@PGi9g7yV] proposed to build predictive deep neural network models 
 Such labels are automatically generated and not verified by humans, so they may be noisy or incomplete.
 In this case, they applied a series of natural language processing (NLP) techniques to the associated chest X-ray radiological reports.
 They first extracted all diseases mentioned in the reports using a state-of-the-art NLP tool, then applied a new method, NegBio [@gYxBO26g], to filter negative and equivocal findings in the reports.
-Evaluation on four independent datasets demonstrated that NegBio is highly accurate for detecting negative and equivocal findings (~90% in F-measure, which balances precision and recall [@JmHFuXEM]).
+Evaluation on four independent datasets demonstrated that NegBio is highly accurate for detecting negative and equivocal findings (~90% in F₁ score, which balances precision and recall [@JmHFuXEM]).
 The resulting dataset [@odFR7ptt] consisted of 112,120 frontal-view chest X-ray images from 30,805 patients, and each image was associated with one or more *text-mined* (weakly-labeled) pathology categories (e.g. pneumonia and cardiomegaly) or "no finding" otherwise.
 Further, Wang et al. [@PGi9g7yV] used this dataset with a unified weakly-supervised multi-label image classification framework, to detect common thoracic diseases.
 It showed superior performance over a benchmark using fully-labeled data.
@@ -904,8 +904,8 @@ They also investigated the power of sequence features to drive classification, f
 
 Comparing the performance of enhancer prediction methods illustrates the problems in using metrics created with different benchmarking procedures.
 Both the Basset and DeepEnhancer studies include comparisons to a baseline SVM approach, gkm-SVM [@JxuQvvyk].
-The Basset study reports gkm-SVM attains a mean auPRC of 0.322 over 164 cell types [@2CbHXoFn].
-The DeepEnhancer study reports for gkm-SVM a dramatically different auPRC of 0.899 on nine cell types [@jV2YerUS].
+The Basset study reports gkm-SVM attains a mean area under the precision-recall curve (AUPR) of 0.322 over 164 cell types [@2CbHXoFn].
+The DeepEnhancer study reports for gkm-SVM a dramatically different AUPR of 0.899 on nine cell types [@jV2YerUS].
 This large difference means it's impossible to directly compare the performance of Basset and DeepEnhancer based solely on their reported metrics.
 DECRES used a different set of metrics altogether.
 To drive further progress in enhancer identification, we must develop a common and comparable benchmarking procedure (see Discussion).
@@ -969,7 +969,7 @@ In recent years, deeper architectures have been explored for contact prediction,
 However, blindly tested in the well-known CASP competitions, these methods did not show any advantage over MetaPSICOV [@7atXz0r].
 
 Recently, Wang et al. proposed the deep learning method RaptorX-Contact [@BhfjKSY3], which significantly improves contact prediction over MetaPSICOV and pure co-evolution methods, especially for proteins without many sequence homologs. It employs a network architecture formed by one 1D residual neural network and one 2D residual neural network.
-Blindly tested in the latest CASP competition (i.e. CASP12 [@zScWGveU]), RaptorX-Contact ranked first in F1 score on free-modeling targets as well as the whole set of targets.
+Blindly tested in the latest CASP competition (i.e. CASP12 [@zScWGveU]), RaptorX-Contact ranked first in F₁ score on free-modeling targets as well as the whole set of targets.
 In CAMEO (which can be interpreted as a fully-automated CASP) [@u9uApoaB], its predicted contacts were also able to fold proteins with a novel fold and only 65--330 sequence homologs.
 This technique also worked well on membrane proteins even when trained on non-membrane proteins [@39RPiE10].
 RaptorX-Contact performed better mainly due to introduction of residual neural networks and exploitation of contact occurrence patterns by simultaneously predicting all the contacts in a single protein.
@@ -1369,7 +1369,7 @@ These novel, learned chemical feature representations may prove to be essential 
 Currently, these methods are enticing but do not necessarily outperform classic approaches by a large margin.
 The neural fingerprints [@Oe573FaL] were narrowly beaten by regression using traditional circular fingerprints on a drug efficacy prediction task but were superior for predicting solubility or photovoltaic efficiency.
 In the original study, graph convolutions [@145os4Y6t] performed comparably to a multi-task network using standard fingerprints and slightly better than the neural fingerprints [@Oe573FaL] on the drug efficacy task but were slightly worse than the influence-relevance voter method on an HIV dataset [@cjj5vT3H].
-Broader recent benchmarking has shown that relative merits of these methods depends on the dataset and cross validation strategy [@11QhcW8tX], though evaluation in this domain often uses auROC (area under the receiver operating characteristic curve) [@bbJMoSfn], which has limited utility due to the large class imbalance (see Discussion).
+Broader recent benchmarking has shown that relative merits of these methods depends on the dataset and cross validation strategy [@11QhcW8tX], though evaluation in this domain often uses area under the receiver operating characteristic curve (AUROC) [@bbJMoSfn], which has limited utility due to the large class imbalance (see Discussion).
 
 We remain optimistic for the potential of deep learning and specifically representation learning in drug discovery.
 Rigorous benchmarking on broad and diverse prediction tasks will be as important as novel neural network architectures to advance the state of the art and convincingly demonstrate superiority over traditional cheminformatics techniques.
@@ -1465,16 +1465,16 @@ Estimating the false discovery rate (FDR) is a standard method of evaluation in 
 Using deep learning predictions for targeted validation experiments of specific biochemical activities necessitates a more stringent FDR (typically 5--25%).
 However, when predicted biochemical activities are used as features in other models, such as gene expression models, a low FDR may not be necessary.
 
-What is the correspondence between FDR metrics and commonly used classification metrics such as auPRC (area under the precision-recall curve) and auROC (area under the receiver-operating-characteristic curve)? auPRC evaluates the average precision, or equivalently, the average FDR across all recall thresholds.
+What is the correspondence between FDR metrics and commonly used classification metrics such as AUPR and AUROC? AUPR evaluates the average precision, or equivalently, the average FDR across all recall thresholds.
 This metric provides an overall estimate of performance across all possible use cases, which can be misleading for targeted validation experiments.
-For example, classification of TF binding sites can exhibit a recall of 0% at 10% FDR and auPRC greater than 0.6.
-In this case, the auPRC may be competitive, but the predictions are ill-suited for targeted validation that can only examine a few of the highest-confidence predictions.
-Likewise, auROC evaluates the average recall across all false positive rate (FPR) thresholds, which is often a highly misleading metric in class-imbalanced domains [@JNnkm5Zt;
+For example, classification of TF binding sites can exhibit a recall of 0% at 10% FDR and AUPR greater than 0.6.
+In this case, the AUPR may be competitive, but the predictions are ill-suited for targeted validation that can only examine a few of the highest-confidence predictions.
+Likewise, AUROC evaluates the average recall across all false positive rate (FPR) thresholds, which is often a highly misleading metric in class-imbalanced domains [@JNnkm5Zt;
 @JmHFuXEM].
 Consider a classification model with recall of 0% at FDR less than 25% and 100% recall at FDR greater than 25%.
 In the context of TF binding predictions where only 1% of genomic regions are bound by the TF, this is equivalent to a recall of 100% for FPR greater than 0.33%.
-In other words, the auROC would be 0.9967, but the classifier would be useless for targeted validation.
-It is not unusual to obtain a chromosome-wide auROC greater than 0.99 for TF binding predictions but a recall of 0% at 10% FDR.
+In other words, the AUROC would be 0.9967, but the classifier would be useless for targeted validation.
+It is not unusual to obtain a chromosome-wide AUROC greater than 0.99 for TF binding predictions but a recall of 0% at 10% FDR.
 Consequently, practitioners must select the metric most tailored to their subsequent use case to use these methods most effectively.
 
 #### Formulation of classification labels
