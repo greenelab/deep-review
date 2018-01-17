@@ -57,7 +57,7 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@670d485](https://github.com/greenelab/deep-review/tree/670d485004bfabff0c25d3c7968816d58b51000d)
+from [greenelab/deep-review@3207784](https://github.com/greenelab/deep-review/tree/320778431655d4bf15651ba14bcf25b5da4cc6dd)
 on January 17, 2018.
 </em></small>
 
@@ -1987,7 +1987,7 @@ We would like to thank Anna Greene for a careful proofreading of the manuscript 
 We would like to thank Robert Gieseke, Ruibang Luo, and Sourav Singh for correcting typos, formatting, and references.
 Finally, we acknowledge funding from the Gordon and Betty Moore Foundation awards GBMF4552 (C.S.G. and D.S.H.) and GBMF4563 (D.J.H.);
 the Howard Hughes Medical Institute (S.C.T.);
-the National Institutes of Health awards DP2GM123485 (A.K.), P30CA051008 (S.M.B.), R01AI116794 (B.K.B.), R01GM089652 (A.E.C.), R01GM089753 (J.X.), R01LM012222 (S.J.S.), R01LM012482 (S.J.S.), R21CA220398 (S.M.B.), T32GM007753 (B.T.D.), and U54AI117924 (A.G.);
+the National Institutes of Health awards DP2GM123485 (A.K.), P30CA051008 (S.M.B.), R01AI116794 (B.K.B.), R01GM089652 (A.E.C.), R01GM089753 (J.X.), R01LM012222 (S.J.S.), R01LM012482 (S.J.S.), R21CA220398 (S.M.B.), T32GM007753 (B.T.D.), T32HG000046 (G.P.W.), and U54AI117924 (A.G.);
 the National Institutes of Health Intramural Research Program and National Library of Medicine (Y.P. and Z.L.);
 the National Science Foundation awards 1245632 (G.L.R.), 1531594 (E.M.C.), and 1564955 (J.X.);
 the Natural Sciences and Engineering Research Council of Canada award RGPIN-2015-3948 (M.M.H.);
