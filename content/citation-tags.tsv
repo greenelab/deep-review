@@ -70,7 +70,7 @@ Essinger2010_taxonomic	doi:10.1109/IJCNN.2010.5596644
 Esteva2017_skin_cancer_nature	doi:10.1038/nature21056
 Faruqi	url:http://alifar76.github.io/sklearn-metrics/
 Finnegan2017_maximum	doi:10.1101/105957
-Fong2017_perturb	arxiv:1704.03296
+Fong2017_perturb	doi:10.1109/ICCV.2017.371
 Gal2015_dropout	arxiv:1506.02142
 Gaublomme2015_th17	doi:10.1016/j.cell.2015.11.009
 Gargeya2017_dr	doi:10.1016/j.ophtha.2017.02.008
@@ -79,6 +79,7 @@ Geras2017_multiview_mamm	doi:10.1038/nrg.2015.16
 Gerstein2016_scaling	doi:10.1186/s13059-016-0917-0
 Ghandi2014_enhanced	doi:10.1371/journal.pcbi.1003711
 Ghosh1992_sequence	doi:10.1117/12.140112
+Glorot2011_domain	url:http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.231.3442
 Goldsborough2017_cytogan	doi:10.1101/227645
 Gomezb2016_automatic	arxiv:1610.02415v1
 Graphlab	doi:10.14778/2212351.2212354
@@ -277,7 +278,7 @@ Zhu2016_advers_mamm	doi:10.1101/095786
 Zhu2016_mult_inst_mamm	doi:10.1101/095794
 Zintgraf2017_visualizing	arxiv:1702.04595
 goodfellow2016deep	url:http://www.deeplearningbook.org/
-li2016joint	url:http://www.ijcai.org/Proceedings/16/Papers/403.pdf
+li2016joint	url:https://dl.acm.org/citation.cfm?id=3061018
 world2004international	url:http://www.who.int/classifications/icd/en/
 ghahramani_protect	arxiv:1707.02476
 uncertainty_types	arxiv:1703.04977
