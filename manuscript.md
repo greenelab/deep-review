@@ -57,7 +57,7 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@b2b693b](https://github.com/greenelab/deep-review/tree/b2b693bea43ac8245d9e3b68b67ec0f2e637aaec)
+from [greenelab/deep-review@670d485](https://github.com/greenelab/deep-review/tree/670d485004bfabff0c25d3c7968816d58b51000d)
 on January 17, 2018.
 </em></small>
 
@@ -467,7 +467,7 @@ Liu et al. exploited task-oriented resources to learn word embeddings for clinic
 Relation extraction involves detecting and classifying semantic relationships between entities from the literature.
 At present, kernel methods or feature-based approaches are commonly applied [@c6gbPCdT; @Sn8TwSQK; @X909h5sz].
 Deep learning can relieve the feature sparsity and engineering problems.
-Some studies focused on jointly extracting biomedical entities and relations simultaneously [@MmcdzBXf; @1F5aZYjOB], while others applied deep learning on relation classification given the relevant entities.
+Some studies focused on jointly extracting biomedical entities and relations simultaneously [@17ydlqmVI; @1F5aZYjOB], while others applied deep learning on relation classification given the relevant entities.
 For example, both multichannel dependency-based CNNs [@1H4fyFU1f] and shortest path-based CNNs [@19r6xFsZQ; @ULZPgbOq] are well-suited for sentence-based protein-protein extraction.
 Jiang et al. proposed a biomedical domain-specific word embedding model to reduce the manual labor of designing semantic representation for the same task [@MY6FXgFn].
 Gu et al. employed a maximum entropy model and a CNN model for chemical-induced disease relation extraction at the inter- and intra-sentence level, respectively [@14afj7TT1].
@@ -842,7 +842,7 @@ To handle this issue, there are two options.
 The first is to use features such as epigenomic marks which are specific to the certain cell type.
 If we have these features available, this is probably the best approach for accurate prediction since they will be strong signals for that particular cell type and TF.
 The second option is to use domain adaptation, which is a type of transfer learning where we learn a model which can predict from features in one domain (e.g. normal) and transfer the model to predict on features in another domain (e.g. cancer).
-This has been done in many other areas such as sentiment analysis [@4XHCB8iI=10.1.1.231.3442].
+This has been done in many other areas such as sentiment analysis [@LebLg3pb].
 For example, we can train on the reviews for books, and predict on the reviews for movies.
 These are similar tasks, but the context (i.e. books or movies) is different.
 TFImpute [@Qbtqlmhf] predicts binding in new cell type-TF pairs, but the cell types must be in the training set for other TFs.
@@ -1575,7 +1575,7 @@ More recently, marginalizing over the plausible values of an input has been sugg
 A common drawback to perturbation-based approaches is computational efficiency:
 each perturbed version of an input requires a separate forward propagation through the network to compute the output.
 As noted by Shrikumar et al. [@zhmq9ktJ], such methods may also underestimate the impact of features that have saturated their contribution to the output, as can happen when multiple redundant features are present.
-To reduce the computational overhead of perturbation-based approaches, Fong and Vedaldi [@y4t9EzPn] solve an optimization problem using gradient descent to discover a minimal subset of inputs to perturb in order to decrease the predicted probability of a selected class.
+To reduce the computational overhead of perturbation-based approaches, Fong and Vedaldi [@niTcKl83] solve an optimization problem using gradient descent to discover a minimal subset of inputs to perturb in order to decrease the predicted probability of a selected class.
 Their method converges in many fewer iterations but requires the perturbation to have a differentiable form.
 
 Backpropagation-based methods, in which the signal from a target output neuron is propagated backwards to the input layer, are another way to interpret deep networks that sidestep inefficiencies of the perturbastion-basd methods.
@@ -1943,7 +1943,7 @@ To facilitate citation, we [defined](https://github.com/greenelab/deep-review/bl
 We supported citations to the following identifier types (in order of preference): DOIs, PubMed Central IDs, PubMed IDs, arXiv IDs, and URLs.
 References were automatically generated from citation metadata by querying APIs to generate [Citation Style Language](http://citationstyles.org/) (CSL) JSON items for each reference.
 [Pandoc](http://pandoc.org/) and [pandoc-citeproc](https://github.com/jgm/pandoc-citeproc) converted the markdown to HTML and PDF, while rendering the formatted citations and references.
-In total, referenced works consisted of 358 DOIs, 6 PubMed Central records, 0 PubMed records, 128 arXiv manuscripts, and 49 URLs (webpages as well as manuscripts lacking standardized identifiers).
+In total, referenced works consisted of 359 DOIs, 6 PubMed Central records, 0 PubMed records, 127 arXiv manuscripts, and 49 URLs (webpages as well as manuscripts lacking standardized identifiers).
 
 We implemented continuous analysis so the manuscript was automatically regenerated whenever the source changed [@Qh7xTLwz].
 We configured Travis CI---a continuous integration service---to fetch new citation metadata and rebuild the manuscript for every commit.

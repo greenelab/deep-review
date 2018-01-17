@@ -3721,34 +3721,6 @@
     "id": "zhmq9ktJ"
   },
   {
-    "arxiv_id": "1704.03296v1",
-    "version": "1",
-    "URL": "https://arxiv.org/abs/1704.03296v1",
-    "title": "Interpretable Explanations of Black Boxes by Meaningful Perturbation",
-    "issued": {
-      "date-parts": [
-        [
-          "2017",
-          "04",
-          "11"
-        ]
-      ]
-    },
-    "author": [
-      {
-        "literal": "Ruth Fong"
-      },
-      {
-        "literal": "Andrea Vedaldi"
-      }
-    ],
-    "container-title": "arXiv",
-    "publisher": "arXiv",
-    "abstract": "As machine learning algorithms are increasingly applied to high impact yet\nhigh risk tasks, e.g. problems in health, it is critical that researchers can\nexplain how such algorithms arrived at their predictions. In recent years, a\nnumber of image saliency methods have been developed to summarize where highly\ncomplex neural networks \"look\" in an image for evidence for their predictions.\nHowever, these techniques are limited by their heuristic nature and\narchitectural constraints.\n  In this paper, we make two main contributions: First, we propose a general\nframework for learning different kinds of explanations for any black box\nalgorithm. Second, we introduce a paradigm that learns the minimally salient\npart of an image by directly editing it and learning from the corresponding\nchanges to its output. Unlike previous works, our method is model-agnostic and\ntestable because it is grounded in replicable image perturbations.",
-    "type": "report",
-    "id": "y4t9EzPn"
-  },
-  {
     "arxiv_id": "1704.04760v1",
     "version": "1",
     "URL": "https://arxiv.org/abs/1704.04760v1",
@@ -41080,6 +41052,100 @@
     "indexed": {
       "date-parts": [
         [
+          2018,
+          1,
+          13
+        ]
+      ],
+      "date-time": "2018-01-13T04:10:42Z",
+      "timestamp": 1515816642367
+    },
+    "reference-count": 22,
+    "publisher": "IEEE",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2017,
+          10
+        ]
+      ]
+    },
+    "DOI": "10.1109/iccv.2017.371",
+    "type": "paper-conference",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          12,
+          25
+        ]
+      ],
+      "date-time": "2017-12-25T21:51:45Z",
+      "timestamp": 1514238705000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "Interpretable Explanations of Black Boxes by Meaningful Perturbation",
+    "prefix": "10.1109",
+    "author": [
+      {
+        "given": "Ruth C.",
+        "family": "Fong",
+        "affiliation": []
+      },
+      {
+        "given": "Andrea",
+        "family": "Vedaldi",
+        "affiliation": []
+      }
+    ],
+    "member": "263",
+    "container-title": "2017 IEEE International Conference on Computer Vision (ICCV)",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx7/8234942/8237262/08237633.pdf?arnumber=8237633",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2018,
+          1,
+          13
+        ]
+      ],
+      "date-time": "2018-01-13T03:34:18Z",
+      "timestamp": 1515814458000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          10
+        ]
+      ]
+    },
+    "references-count": 22,
+    "URL": "https://doi.org/10.1109/iccv.2017.371",
+    "relation": {},
+    "short_url": "https://doi.org/gcsk62",
+    "id": "niTcKl83"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
           2017,
           5,
           21
@@ -41360,13 +41426,13 @@
     "indexed": {
       "date-parts": [
         [
-          2017,
-          10,
-          27
+          2018,
+          1,
+          6
         ]
       ],
-      "date-time": "2017-10-27T19:02:34Z",
-      "timestamp": 1509130954402
+      "date-time": "2018-01-06T02:42:23Z",
+      "timestamp": 1515206543919
     },
     "reference-count": 51,
     "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
@@ -41404,8 +41470,8 @@
     },
     "page": "22-30",
     "source": "Crossref",
-    "is-referenced-by-count": 2,
-    "title": "$\\mathtt {Deepr}$: A Convolutional Net for Medical Records",
+    "is-referenced-by-count": 4,
+    "title": "Deepr: A Convolutional Net for Medical Records",
     "prefix": "10.1109",
     "volume": "21",
     "author": [
@@ -57256,7 +57322,7 @@
         ]
       ]
     },
-    "container-title": "G3&amp;#58; Genes|Genomes|Genetics",
+    "container-title": "G3: Genes|Genomes|Genetics",
     "original-title": [],
     "link": [
       {
@@ -60940,13 +61006,35 @@
     "id": "ZhuDaoNw"
   },
   {
-    "URL": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi",
-    "greycite-canonical-uri": null,
-    "title": "CiteSeerX — Document Not Found",
-    "greycite-status": "Scanned",
-    "greycite-scanned": "2017-09-19 16:48:19",
-    "type": "webpage",
-    "id": "4XHCB8iI"
+    "type": "paper-conference",
+    "title": "Domain adaptation for large-scale sentiment classification: A deep learning approach",
+    "container-title": "In Proceedings of the Twenty-eight International Conference on Machine Learning, ICML",
+    "source": "CiteSeer",
+    "abstract": "The exponential increase in the availability of online reviews and recommendations makes sentiment classification an interesting topic in academic and industrial research. Reviews can span so many different domains that it is difficult to gather annotated training data for all of them. Hence, this paper studies the problem of domain adaptation for sentiment classifiers, hereby a system is trained on labeled reviews from one source domain but is meant to be deployed on another. We propose a deep learning approach which learns to extract a meaningful representation for each review in an unsupervised fashion. Sentiment classifiers trained with this high-level feature representation clearly outperform state-of-the-art methods on a benchmark composed of reviews of 4 types of Amazon products. Furthermore, this method scales well and allowed us to successfully perform domain adaptation on a larger industrial-strength dataset of 22 domains. 1.",
+    "URL": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.231.3442",
+    "shortTitle": "Domain adaptation for large-scale sentiment classification",
+    "author": [
+      {
+        "family": "Glorot",
+        "given": "Xavier"
+      },
+      {
+        "family": "Bordes",
+        "given": "Antoine"
+      },
+      {
+        "family": "Bengio",
+        "given": "Yoshua"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          "2011"
+        ]
+      ]
+    },
+    "id": "LebLg3pb"
   },
   {
     "URL": "http://googleresearch.blogspot.co.uk/2015/06/inceptionism-going-deeper-into-neural.html",
@@ -61427,13 +61515,6 @@
     "id": "W0cYSf89"
   },
   {
-    "URL": "http://www.ijcai.org/Proceedings/16/Papers/403.pdf",
-    "greycite-status": "Not Scanned",
-    "greycite-expire": 86400,
-    "type": "webpage",
-    "id": "MmcdzBXf"
-  },
-  {
     "URL": "http://www.intel.com/pressroom/archive/speeches/ag080998.htm",
     "title": "Academy of Management: Andrew S. Grove",
     "issued": {
@@ -61672,6 +61753,46 @@
       ]
     },
     "id": "1eN66lwn"
+  },
+  {
+    "type": "paper-conference",
+    "title": "Joint Models for Extracting Adverse Drug Events from Biomedical Text",
+    "container-title": "Proceedings of the Twenty-Fifth International Joint Conference on Artificial Intelligence",
+    "collection-title": "IJCAI'16",
+    "publisher": "AAAI Press",
+    "publisher-place": "New York, New York, USA",
+    "page": "2838-2844",
+    "source": "ACM Digital Library",
+    "event-place": "New York, New York, USA",
+    "abstract": "Extracting adverse drug events receives much research attention in the biomedical community. Previous work adopts pipeline models, firstly recognizing drug/disease entity mentions and then identifying adverse drug events from drug/disease pairs. In this paper, we investigate joint models for simultaneously extracting drugs, diseases and adverse drug events. Compared with pipeline models, joint models have two main advantages. First, they make use of information integration to facilitate performance improvement; second, they reduce error propagation in pipeline methods. We compare a discrete model and a deep neural model for extracting drugs, diseases and adverse drug events jointly. Experimental results on a standard ADE corpus show that the discrete joint model outperforms a state-of-the-art baseline pipeline significantly. In addition, when discrete features are replaced by neural features, the recall is further improved.",
+    "URL": "http://dl.acm.org/citation.cfm?id=3060832.3061018",
+    "ISBN": "978-1-57735-770-4",
+    "author": [
+      {
+        "family": "Li",
+        "given": "Fei"
+      },
+      {
+        "family": "Zhang",
+        "given": "Yue"
+      },
+      {
+        "family": "Zhang",
+        "given": "Meishan"
+      },
+      {
+        "family": "Ji",
+        "given": "Donghong"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          "2016"
+        ]
+      ]
+    },
+    "id": "17ydlqmVI"
   },
   {
     "type": "report",
@@ -62195,10 +62316,21 @@
     "id": "6MR50hyY"
   },
   {
-    "URL": "https://www.cs.toronto.edu/~kriz/learning-features-2009-TR.pdf",
-    "greycite-status": "Not Scanned",
-    "greycite-expire": 86400,
-    "type": "webpage",
+    "type": "report",
+    "title": "Learning multiple layers of features from tiny images",
+    "author": [
+      {
+        "family": "Krizhevsky",
+        "given": "Alex"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          "2009"
+        ]
+      ]
+    },
     "id": "IcdRxiDv"
   },
   {

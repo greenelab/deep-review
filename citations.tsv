@@ -106,7 +106,6 @@ string	citation	standard_citation	citation_id
 @arxiv:1704.01155	arxiv:1704.01155	arxiv:1704.01155	18lZK7fxH
 @tag:Kahng2017_activis	arxiv:1704.01942	arxiv:1704.01942	QphVo2P2
 @tag:Shrikumar2017_learning	arxiv:1704.02685	arxiv:1704.02685	zhmq9ktJ
-@tag:Fong2017_perturb	arxiv:1704.03296	arxiv:1704.03296	y4t9EzPn
 @arxiv:1704.04760	arxiv:1704.04760	arxiv:1704.04760	ULagTifF
 @arxiv:1704.07207	arxiv:1704.07207	arxiv:1704.07207	39RPiE10
 @tag:Olivecrona2017_drug_design	arxiv:1704.07555	arxiv:1704.07555	1EayJRsI
@@ -365,12 +364,12 @@ string	citation	standard_citation	citation_id
 @tag:Esfahani2016_melanoma	doi:10.1109/EMBC.2016.7590963	doi:10.1109/embc.2016.7590963	O39LDkX
 @tag:Nemati2016_rl	doi:10.1109/EMBC.2016.7591355	doi:10.1109/embc.2016.7591355	16OQvsRqJ
 @tag:Seide2014_parallel	doi:10.1109/ICASSP.2014.6853593	doi:10.1109/icassp.2014.6853593	IULiPa6L
+@tag:Fong2017_perturb	doi:10.1109/ICCV.2017.371	doi:10.1109/iccv.2017.371	niTcKl83
 @doi:10.1109/icnn.1994.374637	doi:10.1109/icnn.1994.374637	doi:10.1109/icnn.1994.374637	YUms527e
 @tag:Essinger2010_taxonomic	doi:10.1109/IJCNN.2010.5596644	doi:10.1109/ijcnn.2010.5596644	11wVLI2Hn
 @tag:Burlina2016_amd	doi:10.1109/ISBI.2016.7493240	doi:10.1109/isbi.2016.7493240	iBPOt78R
 @doi:10.1109/JBHI.2016.2633963	doi:10.1109/JBHI.2016.2633963	doi:10.1109/jbhi.2016.2633963	1Fiy543WZ
 @doi:10.1109/TCBB.2014.2343960	doi:10.1109/TCBB.2014.2343960	doi:10.1109/tcbb.2014.2343960	ZzaRyGuJ
-@doi:10.1109/tcbb.2014.2343960	doi:10.1109/tcbb.2014.2343960	doi:10.1109/tcbb.2014.2343960	ZzaRyGuJ
 @tag:Liang2015_exprs_cancer	doi:10.1109/TCBB.2014.2377729	doi:10.1109/tcbb.2014.2377729	1EtavGKI4
 @tag:Roth2015_view_agg_cad	doi:10.1109/TMI.2015.2482920	doi:10.1109/tmi.2015.2482920	KseoWN2w
 @tag:Shin2016_cad_tl	doi:10.1109/TMI.2016.2528162	doi:10.1109/tmi.2016.2528162	1GAyqYBNZ
@@ -516,7 +515,7 @@ string	citation	standard_citation	citation_id
 @url:http://blog.dhimmel.com/irreproducible-timestamps/	url:http://blog.dhimmel.com/irreproducible-timestamps/	url:http://blog.dhimmel.com/irreproducible-timestamps/	QBWMEuxW
 @tag:Lowe2012_kaggle	url:http://blogs.sciencemag.org/pipeline/archives/2012/12/11/did_kaggle_predict_drug_candidate_activities_or_not	url:http://blogs.sciencemag.org/pipeline/archives/2012/12/11/did_kaggle_predict_drug_candidate_activities_or_not	KJCJKadA
 @tag:platt_scaling	url:http://citeseer.ist.psu.edu/viewdoc/summary?doi=10.1.1.41.1639	url:http://citeseer.ist.psu.edu/viewdoc/summary?doi=10.1.1.41.1639	ZhuDaoNw
-@url:http://citeseerx.ist.psu.edu/viewdoc/summary?doi	url:http://citeseerx.ist.psu.edu/viewdoc/summary?doi	url:http://citeseerx.ist.psu.edu/viewdoc/summary?doi	4XHCB8iI
+@tag:Glorot2011_domain	url:http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.231.3442	url:http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.231.3442	LebLg3pb
 @tag:Mordvintsev2015_inceptionism	url:http://googleresearch.blogspot.co.uk/2015/06/inceptionism-going-deeper-into-neural.html	url:http://googleresearch.blogspot.co.uk/2015/06/inceptionism-going-deeper-into-neural.html	XLHInhc1
 @url:http://hazyresearch.github.io/snorkel/blog/weak_supervision.html	url:http://hazyresearch.github.io/snorkel/blog/weak_supervision.html	url:http://hazyresearch.github.io/snorkel/blog/weak_supervision.html	hfcf5Hmi
 @tag:Dragonn	url:http://kundajelab.github.io/dragonn/	url:http://kundajelab.github.io/dragonn/	117PEpTMe
@@ -531,7 +530,6 @@ string	citation	standard_citation	citation_id
 @tag:gal_thesis	url:http://www.cs.ox.ac.uk/people/yarin.gal/website/publications.html#Gal2015Thesis	url:http://www.cs.ox.ac.uk/people/yarin.gal/website/publications.html#Gal2015Thesis	CNapgwTY
 @url:http://www.deeplearningbook.org/	url:http://www.deeplearningbook.org/	url:http://www.deeplearningbook.org/	yg8NW0K7
 @tag:Guetterman	url:http://www.fasebj.org/content/30/1_Supplement/406.3	url:http://www.fasebj.org/content/30/1_Supplement/406.3	W0cYSf89
-@tag:li2016joint	url:http://www.ijcai.org/Proceedings/16/Papers/403.pdf	url:http://www.ijcai.org/Proceedings/16/Papers/403.pdf	MmcdzBXf
 @url:http://www.intel.com/pressroom/archive/speeches/ag080998.htm	url:http://www.intel.com/pressroom/archive/speeches/ag080998.htm	url:http://www.intel.com/pressroom/archive/speeches/ag080998.htm	mAXsmd43
 @tag:Ehran2009_visualizing	url:http://www.iro.umontreal.ca/~lisa/publications2/index.php/publications/show/247	url:http://www.iro.umontreal.ca/~lisa/publications2/index.php/publications/show/247	UAAd9Uez
 @tag:Bergstra2012_random	url:http://www.jmlr.org/papers/v13/bergstra12a.html	url:http://www.jmlr.org/papers/v13/bergstra12a.html	1FSwIjR9s
@@ -540,6 +538,7 @@ string	citation	standard_citation	citation_id
 @url:http://www.predictioncenter.org/casp12/rrc_avrg_results.cgi	url:http://www.predictioncenter.org/casp12/rrc_avrg_results.cgi	url:http://www.predictioncenter.org/casp12/rrc_avrg_results.cgi	zScWGveU
 @tag:world2004international	url:http://www.who.int/classifications/icd/en/	url:http://www.who.int/classifications/icd/en/	zVoUcFPZ
 @tag:Ngiam2011	url:https://ai.stanford.edu/~ang/papers/icml11-MultimodalDeepLearning.pdf	url:https://ai.stanford.edu/~ang/papers/icml11-MultimodalDeepLearning.pdf	1eN66lwn
+@tag:li2016joint	url:https://dl.acm.org/citation.cfm?id=3061018	url:https://dl.acm.org/citation.cfm?id=3061018	17ydlqmVI
 @url:https://eprint.iacr.org/2017/281.pdf	url:https://eprint.iacr.org/2017/281.pdf	url:https://eprint.iacr.org/2017/281.pdf	1GprsH3DV
 @tag:DeepChem	url:https://github.com/deepchem/deepchem	url:https://github.com/deepchem/deepchem	Ytvk62dX
 @tag:Keras	url:https://github.com/fchollet/keras	url:https://github.com/fchollet/keras	FwEK0msb
