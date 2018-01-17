@@ -251,11 +251,13 @@
       "orcid": "0000-0003-3877-0433",
       "email": "ecofer@princeton.edu",
       "affiliations": [
-        "Department of Computer Science, Trinity University, San Antonio, TX"
+        "Department of Computer Science, Trinity University, San Antonio, TX",
+        "Lewis-Sigler Institute for Integrative Genomics, Princeton University, Princeton, NJ"
       ],
       "funders": "NSF 1531594",
       "affiliation_numbers": [
-        19
+        19,
+        20
       ]
     },
     {
@@ -268,7 +270,7 @@
         "Integrative Bioinformatics, National Institute of Environmental Health Sciences, National Institutes of Health, Research Triangle Park, NC"
       ],
       "affiliation_numbers": [
-        20
+        21
       ]
     },
     {
@@ -282,7 +284,7 @@
       ],
       "funders": "Howard Hughes Medical Institute",
       "affiliation_numbers": [
-        21
+        22
       ]
     },
     {
@@ -309,7 +311,7 @@
       ],
       "funders": "National Institutes of Health Intramural Research Program and National Library of Medicine",
       "affiliation_numbers": [
-        22
+        23
       ]
     },
     {
@@ -322,7 +324,7 @@
       ],
       "funders": "GBMF GBMF4563",
       "affiliation_numbers": [
-        23
+        24
       ]
     },
     {
@@ -334,7 +336,7 @@
         "ClosedLoop.ai, Austin, TX"
       ],
       "affiliation_numbers": [
-        24
+        25
       ]
     },
     {
@@ -361,7 +363,7 @@
       "funders": "NIH DP2GM123485",
       "affiliation_numbers": [
         17,
-        25
+        26
       ]
     },
     {
@@ -374,7 +376,7 @@
       ],
       "funders": "National Institutes of Health Intramural Research Program and National Library of Medicine",
       "affiliation_numbers": [
-        22
+        23
       ]
     },
     {
@@ -386,7 +388,7 @@
         "Division of Biomedical Informatics and Personalized Medicine, University of Colorado School of Medicine, Aurora, CO"
       ],
       "affiliation_numbers": [
-        26
+        27
       ]
     },
     {
@@ -398,7 +400,7 @@
         "Institute of Organic Chemistry, Westf\u00e4lische Wilhelms-Universit\u00e4t M\u00fcnster, M\u00fcnster, Germany"
       ],
       "affiliation_numbers": [
-        27
+        28
       ]
     },
     {
@@ -412,7 +414,7 @@
       ],
       "funders": "NIH R21CA220398, NIH P30CA051008",
       "affiliation_numbers": [
-        28
+        29
       ]
     },
     {
@@ -426,7 +428,7 @@
       ],
       "funders": "NIH R01LM012222, NIH R01LM012482",
       "affiliation_numbers": [
-        29
+        30
       ]
     },
     {
@@ -439,7 +441,7 @@
         "Department of Medicine, Brown University, Providence, RI"
       ],
       "affiliation_numbers": [
-        30
+        31
       ]
     },
     {
@@ -454,8 +456,8 @@
       "funders": "NIH U54AI117924",
       "symbol_str": "\u2020",
       "affiliation_numbers": [
-        31,
-        32
+        32,
+        33
       ]
     },
     {
@@ -551,61 +553,65 @@
       "affiliation_number": 19
     },
     {
-      "affiliation": "Integrative Bioinformatics, National Institute of Environmental Health Sciences, National Institutes of Health, Research Triangle Park, NC",
+      "affiliation": "Lewis-Sigler Institute for Integrative Genomics, Princeton University, Princeton, NJ",
       "affiliation_number": 20
     },
     {
-      "affiliation": "Howard Hughes Medical Institute, Janelia Research Campus, Ashburn, VA",
+      "affiliation": "Integrative Bioinformatics, National Institute of Environmental Health Sciences, National Institutes of Health, Research Triangle Park, NC",
       "affiliation_number": 21
     },
     {
-      "affiliation": "National Center for Biotechnology Information and National Library of Medicine, National Institutes of Health, Bethesda, MD",
+      "affiliation": "Howard Hughes Medical Institute, Janelia Research Campus, Ashburn, VA",
       "affiliation_number": 22
     },
     {
-      "affiliation": "Department of Wildlife Ecology and Conservation, University of Florida, Gainesville, FL",
+      "affiliation": "National Center for Biotechnology Information and National Library of Medicine, National Institutes of Health, Bethesda, MD",
       "affiliation_number": 23
     },
     {
-      "affiliation": "ClosedLoop.ai, Austin, TX",
+      "affiliation": "Department of Wildlife Ecology and Conservation, University of Florida, Gainesville, FL",
       "affiliation_number": 24
     },
     {
-      "affiliation": "Department of Genetics, Stanford University, Stanford, CA",
+      "affiliation": "ClosedLoop.ai, Austin, TX",
       "affiliation_number": 25
     },
     {
-      "affiliation": "Division of Biomedical Informatics and Personalized Medicine, University of Colorado School of Medicine, Aurora, CO",
+      "affiliation": "Department of Genetics, Stanford University, Stanford, CA",
       "affiliation_number": 26
     },
     {
-      "affiliation": "Institute of Organic Chemistry, Westf\u00e4lische Wilhelms-Universit\u00e4t M\u00fcnster, M\u00fcnster, Germany",
+      "affiliation": "Division of Biomedical Informatics and Personalized Medicine, University of Colorado School of Medicine, Aurora, CO",
       "affiliation_number": 27
     },
     {
-      "affiliation": "Innovation Center for Biomedical Informatics, Georgetown University Medical Center, Washington, DC",
+      "affiliation": "Institute of Organic Chemistry, Westf\u00e4lische Wilhelms-Universit\u00e4t M\u00fcnster, M\u00fcnster, Germany",
       "affiliation_number": 28
     },
     {
-      "affiliation": "Department of Pathology and Immunology, Washington University in Saint Louis, Saint Louis, MO",
+      "affiliation": "Innovation Center for Biomedical Informatics, Georgetown University Medical Center, Washington, DC",
       "affiliation_number": 29
     },
     {
-      "affiliation": "Department of Medicine, Brown University, Providence, RI",
+      "affiliation": "Department of Pathology and Immunology, Washington University in Saint Louis, Saint Louis, MO",
       "affiliation_number": 30
     },
     {
-      "affiliation": "Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison, Madison, WI",
+      "affiliation": "Department of Medicine, Brown University, Providence, RI",
       "affiliation_number": 31
     },
     {
-      "affiliation": "Morgridge Institute for Research, Madison, WI",
+      "affiliation": "Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison, Madison, WI",
       "affiliation_number": 32
+    },
+    {
+      "affiliation": "Morgridge Institute for Research, Madison, WI",
+      "affiliation_number": 33
     }
   ],
   "ci_source": {
     "repo_slug": "greenelab/deep-review",
-    "commit": "320778431655d4bf15651ba14bcf25b5da4cc6dd"
+    "commit": "468c292c16b537be311bdef38318f43cc2695ee4"
   },
   "manuscript_stats": {
     "reference_counts": {

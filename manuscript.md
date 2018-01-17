@@ -57,7 +57,7 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@3207784](https://github.com/greenelab/deep-review/tree/320778431655d4bf15651ba14bcf25b5da4cc6dd)
+from [greenelab/deep-review@468c292](https://github.com/greenelab/deep-review/tree/468c292c16b537be311bdef38318f43cc2695ee4)
 on January 17, 2018.
 </em></small>
 
@@ -103,37 +103,37 @@ Avanti Shrikumar<sup>17</sup>,
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-7111-4839)
 Jinbo Xu<sup>18</sup>,
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-3877-0433)
-Evan M. Cofer<sup>19</sup>,
+Evan M. Cofer<sup>19,20</sup>,
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-7762-1089)
-Christopher A. Lavender<sup>20</sup>,
+Christopher A. Lavender<sup>21</sup>,
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-3247-6487)
-Srinivas C. Turaga<sup>21</sup>,
+Srinivas C. Turaga<sup>22</sup>,
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-8655-8109)
 Amr M. Alexandari<sup>17</sup>,
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-9998-916X)
-Zhiyong Lu<sup>22</sup>,
+Zhiyong Lu<sup>23</sup>,
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-3332-9307)
-David J. Harris<sup>23</sup>,
+David J. Harris<sup>24</sup>,
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-8931-9461)
-Dave DeCaprio<sup>24</sup>,
+Dave DeCaprio<sup>25</sup>,
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-5796-7453)
 Yanjun Qi<sup>15</sup>,
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-3084-2287)
-Anshul Kundaje<sup>17,25</sup>,
+Anshul Kundaje<sup>17,26</sup>,
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-9309-8331)
-Yifan Peng<sup>22</sup>,
+Yifan Peng<sup>23</sup>,
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-6681-9754)
-Laura K. Wiley<sup>26</sup>,
+Laura K. Wiley<sup>27</sup>,
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-8008-0546)
-Marwin H.S. Segler<sup>27</sup>,
+Marwin H.S. Segler<sup>28</sup>,
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-1400-3398)
-Simina M. Boca<sup>28</sup>,
+Simina M. Boca<sup>29</sup>,
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-2191-0778)
-S. Joshua Swamidass<sup>29</sup>,
+S. Joshua Swamidass<sup>30</sup>,
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-1349-4030)
-Austin Huang<sup>30</sup>,
+Austin Huang<sup>31</sup>,
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-5324-9833)
-Anthony Gitter<sup>31,32,†</sup>,
+Anthony Gitter<sup>32,33,†</sup>,
 [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-8713-9213)
 Casey S. Greene<sup>2,†</sup>
 
@@ -161,19 +161,20 @@ Casey S. Greene<sup>2,†</sup>
 17. Department of Computer Science, Stanford University, Stanford, CA
 18. Toyota Technological Institute at Chicago, Chicago, IL
 19. Department of Computer Science, Trinity University, San Antonio, TX
-20. Integrative Bioinformatics, National Institute of Environmental Health Sciences, National Institutes of Health, Research Triangle Park, NC
-21. Howard Hughes Medical Institute, Janelia Research Campus, Ashburn, VA
-22. National Center for Biotechnology Information and National Library of Medicine, National Institutes of Health, Bethesda, MD
-23. Department of Wildlife Ecology and Conservation, University of Florida, Gainesville, FL
-24. ClosedLoop.ai, Austin, TX
-25. Department of Genetics, Stanford University, Stanford, CA
-26. Division of Biomedical Informatics and Personalized Medicine, University of Colorado School of Medicine, Aurora, CO
-27. Institute of Organic Chemistry, Westfälische Wilhelms-Universität Münster, Münster, Germany
-28. Innovation Center for Biomedical Informatics, Georgetown University Medical Center, Washington, DC
-29. Department of Pathology and Immunology, Washington University in Saint Louis, Saint Louis, MO
-30. Department of Medicine, Brown University, Providence, RI
-31. Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison, Madison, WI
-32. Morgridge Institute for Research, Madison, WI
+20. Lewis-Sigler Institute for Integrative Genomics, Princeton University, Princeton, NJ
+21. Integrative Bioinformatics, National Institute of Environmental Health Sciences, National Institutes of Health, Research Triangle Park, NC
+22. Howard Hughes Medical Institute, Janelia Research Campus, Ashburn, VA
+23. National Center for Biotechnology Information and National Library of Medicine, National Institutes of Health, Bethesda, MD
+24. Department of Wildlife Ecology and Conservation, University of Florida, Gainesville, FL
+25. ClosedLoop.ai, Austin, TX
+26. Department of Genetics, Stanford University, Stanford, CA
+27. Division of Biomedical Informatics and Personalized Medicine, University of Colorado School of Medicine, Aurora, CO
+28. Institute of Organic Chemistry, Westfälische Wilhelms-Universität Münster, Münster, Germany
+29. Innovation Center for Biomedical Informatics, Georgetown University Medical Center, Washington, DC
+30. Department of Pathology and Immunology, Washington University in Saint Louis, Saint Louis, MO
+31. Department of Medicine, Brown University, Providence, RI
+32. Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison, Madison, WI
+33. Morgridge Institute for Research, Madison, WI
 
 </small>
 
