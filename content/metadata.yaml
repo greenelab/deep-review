@@ -48,9 +48,10 @@ author_info:
   - github: gwaygenomics
     name: Gregory P. Way
     orcid: 0000-0002-0503-9348
-    email: gregway@upenn.edu
+    email: gregory.way@gmail.com
     affiliations:
       - Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA
+    funders: NIH T32HG000046
   - github: enricoferrero
     name: Enrico Ferrero
     orcid: 0000-0002-8362-100X
