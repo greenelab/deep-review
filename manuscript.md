@@ -57,7 +57,7 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@60fa4c2](https://github.com/greenelab/deep-review/tree/60fa4c2c5851fb12d7b9e8b7c4843cfb02951f56)
+from [greenelab/deep-review@b2b693b](https://github.com/greenelab/deep-review/tree/b2b693bea43ac8245d9e3b68b67ec0f2e637aaec)
 on January 17, 2018.
 </em></small>
 
@@ -356,7 +356,15 @@ Though there are many commonalities with the analysis of natural images, there a
 In all cases that we examined, fewer than one million images were available for training, and datasets are often many orders of magnitude smaller than collections of natural images.
 Researchers have developed subtask-specific strategies to address this challenge.
 
-The first strategy repurposes features extracted from natural images by deep learning models, such as ImageNet [@cBVeXnZx], for new purposes.
+Data augmentation provides an effective strategy for working with small training sets.
+The practice is exemplified by a series of papers that analyze images from mammographies [@VFw1VXDP;
+@JK8NuXy3; @9G9Hv1Pp; @Xxb4t3zO;
+@5kfDbGhA].
+To expand the number and diversity of images, researchers constructed adversarial training examples [@Xxb4t3zO].
+Adversarial training examples are constructed by applying a transformation that changes training images but not their content---for example by rotating an image by a random amount.
+An alternative in the domain is to train towards human-created features before subsequent fine-tuning [@JK8NuXy3], which can help to sidestep this challenge though it does give up deep learning techniques' strength as feature constructors.
+
+A second strategy repurposes features extracted from natural images by deep learning models, such as ImageNet [@cBVeXnZx], for new purposes.
 Diagnosing diabetic retinopathy through color fundus images became an area of focus for deep learning researchers after a large labeled image set was made publicly available during a 2015 Kaggle competition [@ayTsooEM].
 Most participants trained neural networks from scratch [@ayTsooEM;
 @e3vyHBV2; @14Ovc5nPg], but Gulshan et al.
@@ -366,7 +374,6 @@ Such features were also repurposed to detect melanoma, the deadliest form of ski
 Pre-training on natural images can enable very deep networks to succeed without overfitting.
 For the melanoma task, reported performance was competitive with or better than a board of certified dermatologists [@sLPsrfbl;
 @XnYNYoYB].
-
 Reusing features from natural images is also an emerging approach for radiographic images, where datasets are often too small to train large deep neural networks without these techniques [@1Fy5bcnCI; @1GAyqYBNZ;
 @x6HXFAS4; @Qve94Jra].
 A deep CNN trained on natural images boosts performance in radiographic images [@x6HXFAS4].
@@ -377,13 +384,6 @@ Though we've mentioned numerous successes for the transfer of natural image feat
 The analysis of magnetic resonance images (MRIs) is also faced with the challenge of small training sets.
 In this domain, Amit et al. [@SOi9mAC2] investigated the tradeoff between pre-trained models from a different domain and a small CNN trained only with MRI images.
 In contrast with the other selected literature, they found a smaller network trained with data augmentation on few hundred images from a few dozen patients can outperform a pre-trained out-of-domain classifier.
-Data augmentation is a different strategy to deal with small training sets.
-The practice is exemplified by a series of papers that analyze images from mammographies [@VFw1VXDP;
-@JK8NuXy3; @9G9Hv1Pp; @Xxb4t3zO;
-@5kfDbGhA].
-To expand the number and diversity of images, researchers constructed adversarial training examples [@Xxb4t3zO].
-Adversarial training examples are constructed by applying a transformation that changes training images but not their content---for example by rotating an image by a random amount.
-An alternative in the domain is to train towards human-created features before subsequent fine-tuning [@JK8NuXy3], which can help to sidestep this challenge though it does give up deep learning techniques' strength as feature constructors.
 
 Another way of dealing with limited training data is to divide rich data---e.g. 3D images---into numerous reduced projections.
 Shin et al. [@1GAyqYBNZ] compared various deep network architectures, dataset characteristics, and training procedures for computer tomography-based (CT) abnormality detection.
