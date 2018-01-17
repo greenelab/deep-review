@@ -57,7 +57,7 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@468c292](https://github.com/greenelab/deep-review/tree/468c292c16b537be311bdef38318f43cc2695ee4)
+from [greenelab/deep-review@be8d790](https://github.com/greenelab/deep-review/tree/be8d790d15c848195488c7d202efe3ba4b5b34dc)
 on January 17, 2018.
 </em></small>
 
