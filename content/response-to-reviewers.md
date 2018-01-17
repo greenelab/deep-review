@@ -1,13 +1,15 @@
 # Response to Reviewers
 
-The Deep Review ([preprint version 1](https://www.biorxiv.org/content/early/2017/05/28/142760)) was submitted _Journal of the Royal Society Interface_.
-We have now [received](https://github.com/greenelab/deep-review/issues/678) the peer reviews and are working on addressing the comments.
-When submitting a pull request to revise the Deep Review in response to reviewers, please also comment on the relevant section in this document.
-The comments should respond to the reviewer comments and should link to the pull requests or issues where they are addressed.
+Dear Dr. Holt,
 
-After each reviewer criticism, there is a TODO.
-Replace the TODO with the relevant response.
-Feel free to also break up paragraphs as necessary, but remember to keep the reviews formatted as blockquotes.
+We thank you and the reviewers for their thoughtful comments.
+Based on their feedback, we have revised the manuscript.
+We address each reviewer suggestion point-by-point below.
+Major section-level changes include the addition of a section on uncertainty quantification, a revision to our drug development section to more clearly discuss chemical featurization and representation learning, and a more conscious and planned discussion of latent space representations throughout the review.
+We feel that these revisions have substantially strengthened the manuscript.
+
+Sincerely,
+Casey and Tony
 
 ***
 
@@ -23,16 +25,26 @@ TODO in [issue #683](https://github.com/greenelab/deep-review/issues/683)
 It would be better to have a figure illustrating their architectures.
 This way, the reader will have a concrete visualization that will aid the understanding of the discussion points in the manuscript.
 
-TODO in [issue #684](https://github.com/greenelab/deep-review/issues/684)
+We agree that having illustrated architectures would be helpful to the reader.
+We selected certain key architectures that we judged to be most fundamental to an understanding of deep learning within this domain and illustrated them.
+The new Figure 1 illustrates these architectures and can be paired with Table 1 for a more full synthesis of architectures used in this area.
 
 > The authors gave a case study of LADA to suggest that integrating multiple data sources may lead to breakthrough medical discoveries.
 However, it is unclear from the authors’ description that deep why learning models possess such integrating capability.
 In fact, the tensor model seems to be the widely acknowledged model that can easily integrating multiple data sources.
 
-TODO in [issue #685](https://github.com/greenelab/deep-review/issues/685)
+We agree with the reviewer that the LADA description did not illustrate the benefits of deep learning particularly well.
+We've now substantially revised the introduction to this section, which included dropping the discussion of LADA from the manuscript.
 
 > The authors mentioned “One source of training examples with rich clinical annotations is electronic health records”.
 What does it mean by “rich clinical annotations”? Can the authors provide a definition and a few examples.
+
+We agree with the reviewer that "rich clinical annotations" did not make sense in this context.
+Instead, we intended to say that phenotypic information can be extracted from the EHR.
+We've revised the section to say:
+> One source of training examples with rich phenotypical annotations is the EHR.
+> Billing information in the form of ICD codes are simple annotations but phenotypic algorithms can combine laboratory tests, medication prescriptions, and patient notes to generate more reliable phenotypes.
+> Recently, Lee et al.[@tag:Lee2016_emr_oct_amd] developed an approach to distinguish individuals with age-related macular degeneration from control individuals.
 
 TODO in [issue #686](https://github.com/greenelab/deep-review/issues/686)
 
