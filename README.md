@@ -14,14 +14,12 @@ The project operates on an open contribution model, welcoming contributions from
 To see what's incoming, check the open [pull requests](https://github.com/greenelab/deep-review/pulls).
 For project discussion and planning see the [Issues](https://github.com/greenelab/deep-review/issues).
 
-### Current stage: revisions (due January 15, 2018)
+### Current stage: revisions (overdue, will submit January 19, 2018)
 
 We are currently working on manuscript revisions in response to two external peer reviews.
 See [Issue #678](https://github.com/greenelab/deep-review/issues/678) to coordinate this process.
 When addressing reviewer comments, please also update [`response-to-reviewers.md`](content/response-to-reviewers.md) as appropriate.
-At the moment, efforts are concentrated on revisions and reviewing open pull requests.
-Unrelated pull requests (unless they're minor changes) will be deferred or rejected.
-If you feel that a major contribution of new content is important, please open an issue to seek preauthorization before opening a pull request.
+We will only accept new pull requests if they are trivial corrections such as typo fixes.
 
 **Manubot updates:**
 We recently [updated](https://github.com/greenelab/deep-review/pull/681) this repository to use the latest Manubot version.
