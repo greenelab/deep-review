@@ -61424,13 +61424,25 @@
     "id": "u9uApoaB"
   },
   {
-    "URL": "http://www.cs.ox.ac.uk/people/yarin.gal/website/publications.html",
-    "greycite-canonical-uri": null,
-    "title": "Yarin Gal - Publications | Oxford Machine Learning",
-    "greycite-status": "Scanned",
-    "greycite-scanned": "2018-01-11 21:26:01",
-    "type": "webpage",
-    "id": "CNapgwTY"
+    "type": "thesis",
+    "title": "Uncertainty in deep learning",
+    "publisher": "PhD thesis, University of Cambridge",
+    "genre": "PhD thesis",
+    "URL": "http://www.cs.ox.ac.uk/people/yarin.gal/website/thesis/thesis.pdf",
+    "author": [
+      {
+        "family": "Gal",
+        "given": "Yarin"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          "2016"
+        ]
+      ]
+    },
+    "id": "LxptBw9l"
   },
   {
     "URL": "http://www.deeplearningbook.org/",

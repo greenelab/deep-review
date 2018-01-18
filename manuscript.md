@@ -57,7 +57,7 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@3036099](https://github.com/greenelab/deep-review/tree/30360993c6bcec89bd4b5943cca27473a6e6c64b)
+from [greenelab/deep-review@1ae5a8a](https://github.com/greenelab/deep-review/tree/1ae5a8a5bc48b2ef47730e02ceb2f279b6b78780)
 on January 18, 2018.
 </em></small>
 
@@ -1543,7 +1543,7 @@ In cases where model uncertainty is known to be caused by a difference in traini
 Despite the success and popularity of deep learning, some deep learning models can be surprisingly brittle.
 Researchers are actively working on modifications to deep learning frameworks to enable them to handle probability and embrace uncertainty.
 Most notably, Bayesian modeling and deep learning are being integrated with renewed enthusiasm.
-As a result, several opportunities for innovation arise: understanding the causes of model uncertainty can lead to novel optimization and regularization techniques, assessing the utility of uncertainty estimation techniques on various model architectures and structures can be very useful to practitioners, and extending Bayesian deep learning to unsupervised settings can be a significant breakthrough [@CNapgwTY].
+As a result, several opportunities for innovation arise: understanding the causes of model uncertainty can lead to novel optimization and regularization techniques, assessing the utility of uncertainty estimation techniques on various model architectures and structures can be very useful to practitioners, and extending Bayesian deep learning to unsupervised settings can be a significant breakthrough [@LxptBw9l].
 Unfortunately, uncertainty quantification techniques are underutilized in the computational biology communities and largely ignored in the current deep learning for biomedicine literature.
 Thus, the practical value of uncertainty quantification in biomedical domains is yet to be appreciated.
 
