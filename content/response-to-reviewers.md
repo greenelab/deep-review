@@ -3,13 +3,13 @@
 Dear Dr. Holt,
 
 We thank you and the reviewers for their thoughtful comments.
-Based on their feedback, we have revised the manuscript.
+Based on the feedback from the reviewers and the broader scientific community, we have revised the manuscript.
 We address each reviewer suggestion point-by-point below.
-Major section-level changes include the addition of a section on uncertainty quantification, a revision to our drug development section to more clearly discuss chemical featurization and representation learning, and a more conscious and planned discussion of latent space representations throughout the review.
+Major section-level changes include the addition of sections on protein interaction networks and uncertainty quantification, a revision to our drug development section to more clearly discuss chemical featurization and representation learning, and a more conscious and planned discussion of latent space representations throughout the review.
 We feel that these revisions have substantially strengthened the manuscript.
 
 Sincerely,
-Casey and Tony
+Casey and Anthony
 
 ***
 
@@ -19,11 +19,11 @@ Casey and Tony
 The authors provided synopsis for each important reference, but lacks synthesis of related work.
 It would be better to synthesize related work into a table and analyze their characteristics.
 
-We have sought to revise the intro to better synthesize related work and analyze broad characteristics.
-One challenge of this effort is that with the recent explosion of deep learning in the biomedical literature, nearly every neural architecture gets applied to nearly every problem.
-For example, we have seen cases in the literature where convolutional neural networks, which require structure in input data, get applied to unstructured data.
+We added a table (Table 1) that highlights the structure of commonly used types of neural networks and examples of settings where they are well suited.
+In addition, we revised the intro to better synthesize related work and analyze broad characteristics.
+One challenge of this effort is that with the recent explosion of deep learning in the biomedical literature, nearly every neural network architecture gets applied to nearly every problem.
+For example, we have seen cases in the literature where convolutional neural networks, which require structure in input data, are applied to unstructured data.
 We have aimed to avoid using these types of cases as exemplars.
-We have also added a table (Table 1) that highlights the structure of commonly used types of neural networks and the settings where they are well suited.
 
 > The authors discussed deep learning models such as sDA, CNN, RNN etc.
 It would be better to have a figure illustrating their architectures.
@@ -31,7 +31,7 @@ This way, the reader will have a concrete visualization that will aid the unders
 
 We agree that having illustrated architectures would be helpful to the reader.
 We selected certain key architectures that we judged to be most fundamental to an understanding of deep learning within this domain and illustrated them.
-The new Figure 1 illustrates these architectures and can be paired with Table 1 for a more full synthesis of architectures used in this area.
+The new Figure 1 illustrates these architectures and can be paired with Table 1 for a more thorough synthesis of architectures used in this area.
 
 > The authors gave a case study of LADA to suggest that integrating multiple data sources may lead to breakthrough medical discoveries.
 However, it is unclear from the authors’ description that deep why learning models possess such integrating capability.
@@ -46,9 +46,10 @@ What does it mean by “rich clinical annotations”? Can the authors provide a 
 We agree with the reviewer that "rich clinical annotations" did not make sense in this context.
 Instead, we intended to say that phenotypic information can be extracted from the EHR.
 We've revised the section to say:
-> One source of training examples with rich phenotypical annotations is the EHR.
-> Billing information in the form of ICD codes are simple annotations but phenotypic algorithms can combine laboratory tests, medication prescriptions, and patient notes to generate more reliable phenotypes.
-> Recently, Lee et al.[@tag:Lee2016_emr_oct_amd] developed an approach to distinguish individuals with age-related macular degeneration from control individuals.
+
+`One source of training examples with rich phenotypical annotations is the EHR.
+Billing information in the form of ICD codes are simple annotations but phenotypic algorithms can combine laboratory tests, medication prescriptions, and patient notes to generate more reliable phenotypes.
+Recently, Lee et al. [65] developed an approach to distinguish individuals with age-related macular degeneration from control individuals.`
 
 > Some existing biomedical informatics systems are not cited.
 For example, please provide a citation to NegBio.
