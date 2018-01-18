@@ -740,6 +740,40 @@
     "id": "CKcJuj03"
   },
   {
+    "arxiv_id": "1502.02791v2",
+    "version": "2",
+    "URL": "https://arxiv.org/abs/1502.02791v2",
+    "title": "Learning Transferable Features with Deep Adaptation Networks",
+    "issued": {
+      "date-parts": [
+        [
+          "2015",
+          "02",
+          "10"
+        ]
+      ]
+    },
+    "author": [
+      {
+        "literal": "Mingsheng Long"
+      },
+      {
+        "literal": "Yue Cao"
+      },
+      {
+        "literal": "Jianmin Wang"
+      },
+      {
+        "literal": "Michael I. Jordan"
+      }
+    ],
+    "container-title": "arXiv",
+    "publisher": "arXiv",
+    "abstract": "Recent studies reveal that a deep neural network can learn transferable\nfeatures which generalize well to novel tasks for domain adaptation. However,\nas deep features eventually transition from general to specific along the\nnetwork, the feature transferability drops significantly in higher layers with\nincreasing domain discrepancy. Hence, it is important to formally reduce the\ndataset bias and enhance the transferability in task-specific layers. In this\npaper, we propose a new Deep Adaptation Network (DAN) architecture, which\ngeneralizes deep convolutional neural network to the domain adaptation\nscenario. In DAN, hidden representations of all task-specific layers are\nembedded in a reproducing kernel Hilbert space where the mean embeddings of\ndifferent domain distributions can be explicitly matched. The domain\ndiscrepancy is further reduced using an optimal multi-kernel selection method\nfor mean embedding matching. DAN can learn transferable features with\nstatistical guarantees, and can scale linearly by unbiased estimate of kernel\nembedding. Extensive empirical evidence shows that the proposed architecture\nyields state-of-the-art image classification error rates on standard domain\nadaptation benchmarks.",
+    "type": "report",
+    "id": "iWxvn0xF"
+  },
+  {
     "arxiv_id": "1502.03044v3",
     "version": "3",
     "URL": "https://arxiv.org/abs/1502.03044v3",
@@ -4229,6 +4263,46 @@
     "abstract": "Biomedical events describe complex interactions between various biomedical\nentities. Event trigger is a word or a phrase which typically signifies the\noccurrence of an event. Event trigger identification is an important first step\nin all event extraction methods. However many of the current approaches either\nrely on complex hand-crafted features or consider features only within a\nwindow. In this paper we propose a method that takes the advantage of recurrent\nneural network (RNN) to extract higher level features present across the\nsentence. Thus hidden state representation of RNN along with word and entity\ntype embedding as features avoid relying on the complex hand-crafted features\ngenerated using various NLP toolkits. Our experiments have shown to achieve\nstate-of-art F1-score on Multi Level Event Extraction (MLEE) corpus. We have\nalso performed category-wise analysis of the result and discussed the\nimportance of various features in trigger identification task.",
     "type": "report",
     "id": "z8hmfrmY"
+  },
+  {
+    "arxiv_id": "1706.00125v1",
+    "version": "1",
+    "URL": "https://arxiv.org/abs/1706.00125v1",
+    "title": "Convolutional Kitchen Sinks for Transcription Factor Binding Site\n  Prediction",
+    "issued": {
+      "date-parts": [
+        [
+          "2017",
+          "05",
+          "31"
+        ]
+      ]
+    },
+    "author": [
+      {
+        "literal": "Alyssa Morrow"
+      },
+      {
+        "literal": "Vaishaal Shankar"
+      },
+      {
+        "literal": "Devin Petersohn"
+      },
+      {
+        "literal": "Anthony Joseph"
+      },
+      {
+        "literal": "Benjamin Recht"
+      },
+      {
+        "literal": "Nir Yosef"
+      }
+    ],
+    "container-title": "arXiv",
+    "publisher": "arXiv",
+    "abstract": "We present a simple and efficient method for prediction of transcription\nfactor binding sites from DNA sequence. Our method computes a random\napproximation of a convolutional kernel feature map from DNA sequence and then\nlearns a linear model from the approximated feature map. Our method outperforms\nstate-of-the-art deep learning methods on five out of six test datasets from\nthe ENCODE consortium, while training in less than one eighth the time.",
+    "type": "report",
+    "id": "6Nw5JrLI"
   },
   {
     "arxiv_id": "1706.01556v2",
@@ -14075,6 +14149,209 @@
     "indexed": {
       "date-parts": [
         [
+          2018,
+          1,
+          2
+        ]
+      ],
+      "date-time": "2018-01-02T15:02:16Z",
+      "timestamp": 1514905336767
+    },
+    "reference-count": 250,
+    "publisher": "Elsevier BV",
+    "issue": "9",
+    "license": [
+      {
+        "URL": "http://www.elsevier.com/tdm/userlicense/1.0/",
+        "start": {
+          "date-parts": [
+            [
+              2014,
+              9,
+              1
+            ]
+          ],
+          "date-time": "2014-09-01T00:00:00Z",
+          "timestamp": 1409529600000
+        },
+        "delay-in-days": 0,
+        "content-version": "tdm"
+      },
+      {
+        "URL": "http://creativecommons.org/licenses/by-nc-nd/3.0/",
+        "start": {
+          "date-parts": [
+            [
+              2014,
+              8,
+              7
+            ]
+          ],
+          "date-time": "2014-08-07T00:00:00Z",
+          "timestamp": 1407369600000
+        },
+        "delay-in-days": 0,
+        "content-version": "vor"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "cell.com",
+        "bmn.com",
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2014,
+          9
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.tibs.2014.07.002",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2014,
+          8,
+          14
+        ]
+      ],
+      "date-time": "2014-08-14T04:31:38Z",
+      "timestamp": 1407990698000
+    },
+    "page": "381-399",
+    "update-policy": "http://dx.doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 113,
+    "title": "Absence of a simple code: how transcription factors read the genome",
+    "prefix": "10.1016",
+    "volume": "39",
+    "author": [
+      {
+        "given": "Matthew",
+        "family": "Slattery",
+        "affiliation": []
+      },
+      {
+        "given": "Tianyin",
+        "family": "Zhou",
+        "affiliation": []
+      },
+      {
+        "given": "Lin",
+        "family": "Yang",
+        "affiliation": []
+      },
+      {
+        "given": "Ana Carolina",
+        "family": "Dantas Machado",
+        "affiliation": []
+      },
+      {
+        "given": "Raluca",
+        "family": "Gordân",
+        "affiliation": []
+      },
+      {
+        "given": "Remo",
+        "family": "Rohs",
+        "affiliation": []
+      }
+    ],
+    "member": "78",
+    "container-title": "Trends in Biochemical Sciences",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://api.elsevier.com/content/article/PII:S0968000414001212?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://api.elsevier.com/content/article/PII:S0968000414001212?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          22
+        ]
+      ],
+      "date-time": "2017-06-22T18:27:55Z",
+      "timestamp": 1498156075000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2014,
+          9
+        ]
+      ]
+    },
+    "references-count": 250,
+    "alternative-id": [
+      "S0968000414001212"
+    ],
+    "URL": "https://doi.org/10.1016/j.tibs.2014.07.002",
+    "relation": {},
+    "subject": [
+      "Biochemistry",
+      "Molecular Biology"
+    ],
+    "container-title-short": "Trends in Biochemical Sciences",
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Absence of a simple code: how transcription factors read the genome",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Trends in Biochemical Sciences",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "http://dx.doi.org/10.1016/j.tibs.2014.07.002",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "Copyright © 2014 Elsevier Ltd.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ],
+    "short_url": "https://doi.org/xrn",
+    "id": "15c9V9Hm1"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
           2017,
           8,
           10
@@ -21966,6 +22243,345 @@
     "indexed": {
       "date-parts": [
         [
+          2018,
+          1,
+          6
+        ]
+      ],
+      "date-time": "2018-01-06T02:42:28Z",
+      "timestamp": 1515206548881
+    },
+    "reference-count": 56,
+    "publisher": "Springer Nature",
+    "issue": "2",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "DOI": "10.1038/nbt.2486",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2013,
+          1,
+          27
+        ]
+      ],
+      "date-time": "2013-01-27T21:16:26Z",
+      "timestamp": 1359321386000
+    },
+    "page": "126-134",
+    "source": "Crossref",
+    "is-referenced-by-count": 124,
+    "title": "Evaluation of methods for modeling transcription factor sequence specificity",
+    "prefix": "10.1038",
+    "volume": "31",
+    "author": [
+      {
+        "given": "Matthew T",
+        "family": "Weirauch",
+        "affiliation": []
+      },
+      {
+        "given": "Atina",
+        "family": "Cote",
+        "affiliation": []
+      },
+      {
+        "given": "Raquel",
+        "family": "Norel",
+        "affiliation": []
+      },
+      {
+        "given": "Matti",
+        "family": "Annala",
+        "affiliation": []
+      },
+      {
+        "given": "Yue",
+        "family": "Zhao",
+        "affiliation": []
+      },
+      {
+        "given": "Todd R",
+        "family": "Riley",
+        "affiliation": []
+      },
+      {
+        "given": "Julio",
+        "family": "Saez-Rodriguez",
+        "affiliation": []
+      },
+      {
+        "given": "Thomas",
+        "family": "Cokelaer",
+        "affiliation": []
+      },
+      {
+        "given": "Anastasia",
+        "family": "Vedenko",
+        "affiliation": []
+      },
+      {
+        "given": "Shaheynoor",
+        "family": "Talukder",
+        "affiliation": []
+      },
+      {
+        "given": "Phaedra",
+        "family": "Agius",
+        "affiliation": []
+      },
+      {
+        "given": "Aaron",
+        "family": "Arvey",
+        "affiliation": []
+      },
+      {
+        "given": "Philipp",
+        "family": "Bucher",
+        "affiliation": []
+      },
+      {
+        "given": "Curtis G",
+        "family": "Callan",
+        "affiliation": []
+      },
+      {
+        "given": "Cheng Wei",
+        "family": "Chang",
+        "affiliation": []
+      },
+      {
+        "given": "Chien-Yu",
+        "family": "Chen",
+        "affiliation": []
+      },
+      {
+        "given": "Yong-Syuan",
+        "family": "Chen",
+        "affiliation": []
+      },
+      {
+        "given": "Yu-Wei",
+        "family": "Chu",
+        "affiliation": []
+      },
+      {
+        "given": "Jan",
+        "family": "Grau",
+        "affiliation": []
+      },
+      {
+        "given": "Ivo",
+        "family": "Grosse",
+        "affiliation": []
+      },
+      {
+        "given": "Vidhya",
+        "family": "Jagannathan",
+        "affiliation": []
+      },
+      {
+        "given": "Jens",
+        "family": "Keilwagen",
+        "affiliation": []
+      },
+      {
+        "given": "Szymon M",
+        "family": "Kiełbasa",
+        "affiliation": []
+      },
+      {
+        "given": "Justin B",
+        "family": "Kinney",
+        "affiliation": []
+      },
+      {
+        "given": "Holger",
+        "family": "Klein",
+        "affiliation": []
+      },
+      {
+        "given": "Miron B",
+        "family": "Kursa",
+        "affiliation": []
+      },
+      {
+        "given": "Harri",
+        "family": "Lähdesmäki",
+        "affiliation": []
+      },
+      {
+        "given": "Kirsti",
+        "family": "Laurila",
+        "affiliation": []
+      },
+      {
+        "given": "Chengwei",
+        "family": "Lei",
+        "affiliation": []
+      },
+      {
+        "given": "Christina",
+        "family": "Leslie",
+        "affiliation": []
+      },
+      {
+        "given": "Chaim",
+        "family": "Linhart",
+        "affiliation": []
+      },
+      {
+        "given": "Anand",
+        "family": "Murugan",
+        "affiliation": []
+      },
+      {
+        "given": "Alena",
+        "family": "Myšičková",
+        "affiliation": []
+      },
+      {
+        "given": "William Stafford",
+        "family": "Noble",
+        "affiliation": []
+      },
+      {
+        "given": "Matti",
+        "family": "Nykter",
+        "affiliation": []
+      },
+      {
+        "given": "Yaron",
+        "family": "Orenstein",
+        "affiliation": []
+      },
+      {
+        "given": "Stefan",
+        "family": "Posch",
+        "affiliation": []
+      },
+      {
+        "given": "Jianhua",
+        "family": "Ruan",
+        "affiliation": []
+      },
+      {
+        "given": "Witold R",
+        "family": "Rudnicki",
+        "affiliation": []
+      },
+      {
+        "given": "Christoph D",
+        "family": "Schmid",
+        "affiliation": []
+      },
+      {
+        "given": "Ron",
+        "family": "Shamir",
+        "affiliation": []
+      },
+      {
+        "given": "Wing-Kin",
+        "family": "Sung",
+        "affiliation": []
+      },
+      {
+        "given": "Martin",
+        "family": "Vingron",
+        "affiliation": []
+      },
+      {
+        "given": "Zhizhuo",
+        "family": "Zhang",
+        "affiliation": []
+      },
+      {
+        "given": "Harmen J",
+        "family": "Bussemaker",
+        "affiliation": []
+      },
+      {
+        "given": "Quaid D",
+        "family": "Morris",
+        "affiliation": []
+      },
+      {
+        "given": "Martha L",
+        "family": "Bulyk",
+        "affiliation": []
+      },
+      {
+        "given": "Gustavo",
+        "family": "Stolovitzky",
+        "affiliation": []
+      },
+      {
+        "given": "Timothy R",
+        "family": "Hughes",
+        "affiliation": []
+      }
+    ],
+    "member": "339",
+    "published-online": {
+      "date-parts": [
+        [
+          2013,
+          1,
+          27
+        ]
+      ]
+    },
+    "container-title": "Nature Biotechnology",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          21
+        ]
+      ],
+      "date-time": "2017-06-21T06:29:06Z",
+      "timestamp": 1498026546000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2013,
+          1,
+          27
+        ]
+      ]
+    },
+    "references-count": 56,
+    "alternative-id": [
+      "nbt.2486"
+    ],
+    "URL": "https://doi.org/10.1038/nbt.2486",
+    "relation": {
+      "cites": []
+    },
+    "subject": [
+      "Biotechnology",
+      "Molecular Medicine",
+      "Applied Microbiology and Biotechnology",
+      "Bioengineering",
+      "Biomedical Engineering"
+    ],
+    "container-title-short": "Nat Biotechnol",
+    "short_url": "https://doi.org/f4pprj",
+    "id": "fv4f2GgS"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
           2017,
           11,
           1
@@ -25318,6 +25934,121 @@
     "container-title-short": "Nat Meth",
     "short_url": "https://doi.org/gcgk8g",
     "id": "2UI1BZuD"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          27
+        ]
+      ],
+      "date-time": "2017-10-27T12:27:36Z",
+      "timestamp": 1509107256405
+    },
+    "reference-count": 49,
+    "publisher": "Springer Nature",
+    "issue": "4",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "DOI": "10.1038/nmeth.3772",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          2,
+          22
+        ]
+      ],
+      "date-time": "2016-02-22T16:03:08Z",
+      "timestamp": 1456156988000
+    },
+    "page": "303-309",
+    "source": "Crossref",
+    "is-referenced-by-count": 15,
+    "title": "Analysis of computational footprinting methods for DNase sequencing experiments",
+    "prefix": "10.1038",
+    "volume": "13",
+    "author": [
+      {
+        "ORCID": "http://orcid.org/0000-0001-7461-1443",
+        "authenticated-orcid": false,
+        "given": "Eduardo G",
+        "family": "Gusmao",
+        "affiliation": []
+      },
+      {
+        "given": "Manuel",
+        "family": "Allhoff",
+        "affiliation": []
+      },
+      {
+        "given": "Martin",
+        "family": "Zenke",
+        "affiliation": []
+      },
+      {
+        "given": "Ivan G",
+        "family": "Costa",
+        "affiliation": []
+      }
+    ],
+    "member": "339",
+    "published-online": {
+      "date-parts": [
+        [
+          2016,
+          2,
+          22
+        ]
+      ]
+    },
+    "container-title": "Nature Methods",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          24
+        ]
+      ],
+      "date-time": "2017-06-24T06:30:53Z",
+      "timestamp": 1498285853000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          2,
+          22
+        ]
+      ]
+    },
+    "references-count": 49,
+    "alternative-id": [
+      "nmeth.3772"
+    ],
+    "URL": "https://doi.org/10.1038/nmeth.3772",
+    "relation": {
+      "cites": []
+    },
+    "subject": [
+      "Biotechnology",
+      "Cell Biology",
+      "Biochemistry",
+      "Molecular Biology"
+    ],
+    "container-title-short": "Nat Meth",
+    "short_url": "https://doi.org/f8hz8z",
+    "id": "rOo5pTPS"
   },
   {
     "indexed": {
@@ -34558,105 +35289,6 @@
       "date-parts": [
         [
           2017,
-          8,
-          24
-        ]
-      ],
-      "date-time": "2017-08-24T01:40:52Z",
-      "timestamp": 1503538852920
-    },
-    "reference-count": 0,
-    "publisher": "Oxford University Press (OUP)",
-    "issue": "16",
-    "content-domain": {
-      "domain": [],
-      "crossmark-restriction": false
-    },
-    "published-print": {
-      "date-parts": [
-        [
-          1992
-        ]
-      ]
-    },
-    "DOI": "10.1093/nar/20.16.4331",
-    "type": "article-journal",
-    "created": {
-      "date-parts": [
-        [
-          2007,
-          1,
-          5
-        ]
-      ],
-      "date-time": "2007-01-05T02:27:37Z",
-      "timestamp": 1167964057000
-    },
-    "page": "4331-4338",
-    "source": "Crossref",
-    "is-referenced-by-count": 0,
-    "title": "An assessment of neural network and statistical approaches for prediction of E.coli Promoter sites",
-    "prefix": "10.1093",
-    "volume": "20",
-    "author": [
-      {
-        "given": "Paul B.",
-        "family": "Horton",
-        "affiliation": []
-      },
-      {
-        "given": "Minoru",
-        "family": "Kanehisa",
-        "affiliation": []
-      }
-    ],
-    "member": "286",
-    "container-title": "Nucleic Acids Research",
-    "original-title": [],
-    "link": [
-      {
-        "URL": "http://academic.oup.com/nar/article-pdf/20/16/4331/3858645/20-16-4331.pdf",
-        "content-type": "unspecified",
-        "content-version": "vor",
-        "intended-application": "similarity-checking"
-      }
-    ],
-    "deposited": {
-      "date-parts": [
-        [
-          2017,
-          8,
-          23
-        ]
-      ],
-      "date-time": "2017-08-23T19:49:04Z",
-      "timestamp": 1503517744000
-    },
-    "score": 1.0,
-    "subtitle": [],
-    "short-title": [],
-    "issued": {
-      "date-parts": [
-        [
-          1992
-        ]
-      ]
-    },
-    "references-count": 0,
-    "URL": "https://doi.org/10.1093/nar/20.16.4331",
-    "relation": {},
-    "subject": [
-      "Genetics"
-    ],
-    "container-title-short": "Nucl Acids Res",
-    "short_url": "https://doi.org/c6gz8p",
-    "id": "uZvDdFZo"
-  },
-  {
-    "indexed": {
-      "date-parts": [
-        [
-          2017,
           10,
           4
         ]
@@ -34772,6 +35404,155 @@
     ],
     "short_url": "https://doi.org/c6mst6",
     "id": "q1A2AEtO"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2018,
+          1,
+          16
+        ]
+      ],
+      "date-time": "2018-01-16T12:22:17Z",
+      "timestamp": 1516105337813
+    },
+    "reference-count": 13,
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "Web Server",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2009,
+          7,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1093/nar/gkp335",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2009,
+          5,
+          21
+        ]
+      ],
+      "date-time": "2009-05-21T01:26:40Z",
+      "timestamp": 1242869200000
+    },
+    "page": "W202-W208",
+    "source": "Crossref",
+    "is-referenced-by-count": 1709,
+    "title": "MEME SUITE: tools for motif discovery and searching",
+    "prefix": "10.1093",
+    "volume": "37",
+    "author": [
+      {
+        "given": "T. L.",
+        "family": "Bailey",
+        "affiliation": []
+      },
+      {
+        "given": "M.",
+        "family": "Boden",
+        "affiliation": []
+      },
+      {
+        "given": "F. A.",
+        "family": "Buske",
+        "affiliation": []
+      },
+      {
+        "given": "M.",
+        "family": "Frith",
+        "affiliation": []
+      },
+      {
+        "given": "C. E.",
+        "family": "Grant",
+        "affiliation": []
+      },
+      {
+        "given": "L.",
+        "family": "Clementi",
+        "affiliation": []
+      },
+      {
+        "given": "J.",
+        "family": "Ren",
+        "affiliation": []
+      },
+      {
+        "given": "W. W.",
+        "family": "Li",
+        "affiliation": []
+      },
+      {
+        "given": "W. S.",
+        "family": "Noble",
+        "affiliation": []
+      }
+    ],
+    "member": "286",
+    "published-online": {
+      "date-parts": [
+        [
+          2009,
+          5,
+          20
+        ]
+      ]
+    },
+    "container-title": "Nucleic Acids Research",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://academic.oup.com/nar/article-pdf/37/suppl_2/W202/3929432/gkp335.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          8,
+          23
+        ]
+      ],
+      "date-time": "2017-08-23T20:20:51Z",
+      "timestamp": 1503519651000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2009,
+          5,
+          20
+        ]
+      ]
+    },
+    "references-count": 13,
+    "URL": "https://doi.org/10.1093/nar/gkp335",
+    "relation": {
+      "cites": []
+    },
+    "subject": [
+      "Genetics"
+    ],
+    "container-title-short": "Nucleic Acids Research",
+    "short_url": "https://doi.org/bzkmbr",
+    "id": "dwj6qSn3"
   },
   {
     "indexed": {
@@ -35152,6 +35933,130 @@
     ],
     "short_url": "https://doi.org/gcgk83",
     "id": "12aqvAgz6"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2018,
+          1,
+          6
+        ]
+      ],
+      "date-time": "2018-01-06T03:03:28Z",
+      "timestamp": 1515207808973
+    },
+    "reference-count": 28,
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "11",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2016,
+          6,
+          20
+        ]
+      ]
+    },
+    "DOI": "10.1093/nar/gkw226",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          4,
+          16
+        ]
+      ],
+      "date-time": "2016-04-16T04:15:38Z",
+      "timestamp": 1460780138000
+    },
+    "page": "e107-e107",
+    "source": "Crossref",
+    "is-referenced-by-count": 21,
+    "title": "DanQ: a hybrid convolutional and recurrent deep neural network for quantifying the function of DNA sequences",
+    "prefix": "10.1093",
+    "volume": "44",
+    "author": [
+      {
+        "given": "Daniel",
+        "family": "Quang",
+        "affiliation": []
+      },
+      {
+        "given": "Xiaohui",
+        "family": "Xie",
+        "affiliation": []
+      }
+    ],
+    "member": "286",
+    "published-online": {
+      "date-parts": [
+        [
+          2016,
+          4,
+          15
+        ]
+      ]
+    },
+    "container-title": "Nucleic Acids Research",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://academic.oup.com/nar/article-pdf/44/11/e107/17436604/gkw226.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          8,
+          24
+        ]
+      ],
+      "date-time": "2017-08-24T12:58:57Z",
+      "timestamp": 1503579537000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          4,
+          15
+        ]
+      ]
+    },
+    "references-count": 28,
+    "alternative-id": [
+      "10.1093/nar/gkw226"
+    ],
+    "URL": "https://doi.org/10.1093/nar/gkw226",
+    "relation": {
+      "has-preprint": [
+        {
+          "id-type": "doi",
+          "id": "10.1101/032821",
+          "asserted-by": "object"
+        }
+      ],
+      "cites": []
+    },
+    "subject": [
+      "Genetics"
+    ],
+    "container-title-short": "Nucleic Acids Res",
+    "short_url": "https://doi.org/f8v4wj",
+    "id": "iBdkksok"
   },
   {
     "indexed": {
@@ -38680,6 +39585,229 @@
           27
         ]
       ],
+      "date-time": "2017-10-27T16:11:15Z",
+      "timestamp": 1509120675209
+    },
+    "posted": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          5
+        ]
+      ]
+    },
+    "group-title": "Bioinformatics",
+    "reference-count": 0,
+    "publisher": "Cold Spring Harbor Laboratory",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "accepted": {
+      "date-parts": [
+        [
+          2017,
+          7,
+          7
+        ]
+      ]
+    },
+    "abstract": "<jats:p>Convolutional neural networks are rapidly gaining popularity in regulatory genomics. Typically, these networks have a stack of convolutional and pooling layers, followed by one or more fully connected layers. In genomics, the same positional patterns are often present across multiple convolutional channels. Therefore, in current state-of-the-art networks, there exists significant redundancy in the representations learned by standard fully connected layers. We present a new separable fully connected layer that learns a weights tensor that is the outer product of positional weights and cross-channel weights, thereby allowing the same positional patterns to be applied across multiple convolutional channels. Decomposing positional and cross-channel weights further enables us to readily impose biologically-inspired constraints on positional weights, such as symmetry. We also propose a novel regularizer and constraint that act on curvature in the positional weights. Using experiments on simulated and in vivo datasets, we show that networks that incorporate our separable fully connected layer outperform conventional models with analogous architectures and the same number of parameters. Additionally, our networks are more robust to hyperparameter tuning, have more informative gradients, and produce importance scores that are more consistent with known biology than conventional deep neural networks. Availability: Implementation: https://github.com/kundajelab/keras/tree/keras_1. A gist illustrating model setup is at: goo.gl/gYooaa.</jats:p>",
+    "DOI": "10.1101/146431",
+    "type": "manuscript",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          6
+        ]
+      ],
+      "date-time": "2017-06-06T05:10:14Z",
+      "timestamp": 1496725814000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "Separable Fully Connected Layers Improve Deep Learning Models For Genomics",
+    "prefix": "10.1101",
+    "author": [
+      {
+        "ORCID": "http://orcid.org/0000-0001-8655-8109",
+        "authenticated-orcid": false,
+        "given": "Amr Mohamed",
+        "family": "Alexandari",
+        "affiliation": []
+      },
+      {
+        "given": "Avanti",
+        "family": "Shrikumar",
+        "affiliation": []
+      },
+      {
+        "given": "Anshul",
+        "family": "Kundaje",
+        "affiliation": []
+      }
+    ],
+    "member": "246",
+    "container-title": [],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://syndication.highwire.org/content/doi/10.1101/146431",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          7,
+          8
+        ]
+      ],
+      "date-time": "2017-07-08T05:11:09Z",
+      "timestamp": 1499490669000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          5
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "https://doi.org/10.1101/146431",
+    "relation": {},
+    "short_url": "https://doi.org/gcsmgh",
+    "id": "Zo0D80FN"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          27
+        ]
+      ],
+      "date-time": "2017-10-27T17:20:02Z",
+      "timestamp": 1509124802791
+    },
+    "posted": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          18
+        ]
+      ]
+    },
+    "group-title": "Genomics",
+    "reference-count": 0,
+    "publisher": "Cold Spring Harbor Laboratory",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "accepted": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          28
+        ]
+      ]
+    },
+    "abstract": "<jats:p>Due to the large numbers of transcription factors (TFs) and cell types, querying binding profiles of all TF/cell type pairs is not experimentally feasible, owing to constraints in time and resources. To address this issue, we developed a convolutional-recurrent neural network model, called FactorNet, to computationally impute the missing binding data. FactorNet trains on binding data from reference cell types to make accurate predictions on testing cell types by leveraging a variety of features, including genomic sequences, genome annotations, gene expression, and single-nucleotide resolution sequential signals, such as DNase I cleavage. To the best of our knowledge, this is the first deep learning method to study the rules governing TF binding at such a fine resolution. With FactorNet, a researcher can perform a single sequencing assay, such as DNase-seq, on a cell type and computationally impute dozens of TF binding profiles. This is an integral step for reconstructing the complex networks underlying gene regulation. While neural networks can be computationally expensive to train, we introduce several novel strategies to significantly reduce the overhead. By visualizing the neural network models, we can interpret how the model predicts binding which in turn reveals additional insights into regulatory grammar. We also investigate the variables that affect cross-cell type predictive performance to explain why the model performs better on some TF/cell types than others, and offer insights to improve upon this field. Our method ranked among the top four teams in the ENCODE-DREAM in vivo Transcription Factor Binding Site Prediction Challenge.</jats:p>",
+    "DOI": "10.1101/151274",
+    "type": "manuscript",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          19
+        ]
+      ],
+      "date-time": "2017-06-19T05:10:12Z",
+      "timestamp": 1497849012000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "FactorNet: a deep learning framework for predicting cell type specific transcription factor binding from nucleotide-resolution sequential data",
+    "prefix": "10.1101",
+    "author": [
+      {
+        "ORCID": "http://orcid.org/0000-0002-7660-990X",
+        "authenticated-orcid": false,
+        "given": "Daniel",
+        "family": "Quang",
+        "affiliation": []
+      },
+      {
+        "given": "Xiaohui",
+        "family": "Xie",
+        "affiliation": []
+      }
+    ],
+    "member": "246",
+    "container-title": [],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://syndication.highwire.org/content/doi/10.1101/151274",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          29
+        ]
+      ],
+      "date-time": "2017-06-29T05:11:04Z",
+      "timestamp": 1498713064000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          18
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "https://doi.org/10.1101/151274",
+    "relation": {},
+    "short_url": "https://doi.org/gcpvb3",
+    "id": "BguHMHkG"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          27
+        ]
+      ],
       "date-time": "2017-10-27T17:31:51Z",
       "timestamp": 1509125511759
     },
@@ -39465,6 +40593,120 @@
         [
           2017,
           11,
+          14
+        ]
+      ],
+      "date-time": "2017-11-14T15:41:55Z",
+      "timestamp": 1510674115293
+    },
+    "posted": {
+      "date-parts": [
+        [
+          2017,
+          11,
+          10
+        ]
+      ]
+    },
+    "group-title": "Bioinformatics",
+    "reference-count": 0,
+    "publisher": "Cold Spring Harbor Laboratory",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "accepted": {
+      "date-parts": [
+        [
+          2017,
+          11,
+          10
+        ]
+      ]
+    },
+    "abstract": "<jats:p>The growing amount of biological sequences available makes it possible to learn genotype-phenotype relationships from data with increasingly high accuracy. By exploiting large sets of sequences with known phenotypes, machine learning methods can be used to build functions that predict the phenotype of new, unannotated sequences. In particular, deep neural networks have recently obtained good performances on such prediction tasks, but are notoriously difficult to analyze or interpret. Here, we introduce a hybrid approach between kernel methods and convolutional neural networks for sequences, which retains the ability of neural networks to learn good representations for a learning problem at hand, while defining a well characterized Hilbert space to describe prediction functions. Our method outperforms state-of-the-art convolutional neural networks on a transcription factor binding prediction task while being much faster to train and yielding more stable and interpretable results. Source code is freely available at https://gitlab.inria.fr/dchen/CKN-seq.</jats:p>",
+    "DOI": "10.1101/217257",
+    "type": "manuscript",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          11,
+          14
+        ]
+      ],
+      "date-time": "2017-11-14T15:24:35Z",
+      "timestamp": 1510673075000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "Predicting Transcription Factor Binding Sites with Convolutional Kernel Networks",
+    "prefix": "10.1101",
+    "author": [
+      {
+        "given": "Dexiong",
+        "family": "Chen",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-7826-2719",
+        "authenticated-orcid": false,
+        "given": "Laurent",
+        "family": "Jacob",
+        "affiliation": []
+      },
+      {
+        "given": "Julien",
+        "family": "Mairal",
+        "affiliation": []
+      }
+    ],
+    "member": "246",
+    "container-title": [],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://syndication.highwire.org/content/doi/10.1101/217257",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          11,
+          14
+        ]
+      ],
+      "date-time": "2017-11-14T15:24:35Z",
+      "timestamp": 1510673075000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          11,
+          10
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "https://doi.org/10.1101/217257",
+    "relation": {},
+    "short_url": "https://doi.org/gcsmgj",
+    "id": "1GOS0CRta"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          11,
           23
         ]
       ],
@@ -39700,6 +40942,120 @@
       "date-parts": [
         [
           2017,
+          12,
+          7
+        ]
+      ],
+      "date-time": "2017-12-07T06:40:07Z",
+      "timestamp": 1512628807690
+    },
+    "posted": {
+      "date-parts": [
+        [
+          2017,
+          12,
+          6
+        ]
+      ]
+    },
+    "group-title": "Bioinformatics",
+    "reference-count": 0,
+    "publisher": "Cold Spring Harbor Laboratory",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "accepted": {
+      "date-parts": [
+        [
+          2017,
+          12,
+          6
+        ]
+      ]
+    },
+    "abstract": "<jats:p>Computational prediction of cell type-specific, in-vivo transcription factor binding sites is still one of the central challenges in regulatory genomics, and a variety of approaches has been proposed for this purpose. Here, we present our approach that earned a shared first rank in the \"ENCODE-DREAM in vivo Transcription Factor Binding Site Prediction Challenge\" in 2017. This approach employs an extensive set of features derived from chromatin accessibility, binding motifs, gene expression, sequence and annotation to train classifiers using a supervised, discriminative learning principle. Two further key aspects of this approach is learning classifier parameters in an iterative training procedure that successively adds additional negative examples to the training set, and creating an ensemble prediction by averaging over classifiers obtained for different training cell types. In post-challenge analyses, we benchmark the influence of different feature sets and find that chromatin accessiblity and binding motifs are sufficient to yield state-of-the-art performance for in-vivo binding site predictions. We also show that the iterative training procedure and the ensemble prediction are pivotal for the final prediction performance. To make predictions of this approach readily accessible, we predict 682 peak lists for a total of 31 transcription factors in 22 primary cell types and tissues, which are available for download at https://www.synapse.org/#!Synapse:syn11526239, and we demonstrate that these predictions may help to yield biological conclusions.</jats:p>",
+    "DOI": "10.1101/230011",
+    "type": "manuscript",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          12,
+          7
+        ]
+      ],
+      "date-time": "2017-12-07T06:10:25Z",
+      "timestamp": 1512627025000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "Learning from mistakes: Accurate prediction of cell type-specific transcription factor binding",
+    "prefix": "10.1101",
+    "author": [
+      {
+        "ORCID": "http://orcid.org/0000-0002-6792-7076",
+        "authenticated-orcid": false,
+        "given": "Jens",
+        "family": "Keilwagen",
+        "affiliation": []
+      },
+      {
+        "given": "Stefan",
+        "family": "Posch",
+        "affiliation": []
+      },
+      {
+        "given": "Jan",
+        "family": "Grau",
+        "affiliation": []
+      }
+    ],
+    "member": "246",
+    "container-title": [],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://syndication.highwire.org/content/doi/10.1101/230011",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          12,
+          7
+        ]
+      ],
+      "date-time": "2017-12-07T06:11:36Z",
+      "timestamp": 1512627096000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          12,
+          6
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "https://doi.org/10.1101/230011",
+    "relation": {},
+    "short_url": "https://doi.org/gcsmgk",
+    "id": "pZqk9gDB"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
           10,
           23
         ]
@@ -39847,6 +41203,129 @@
     "container-title-short": "Genome Research",
     "short_url": "https://doi.org/cf7nzg",
     "id": "G0J9P3Ln"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2018,
+          1,
+          18
+        ]
+      ],
+      "date-time": "2018-01-18T11:42:28Z",
+      "timestamp": 1516275748295
+    },
+    "reference-count": 0,
+    "publisher": "Cold Spring Harbor Laboratory",
+    "issue": "9",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2012,
+          9,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1101/gr.127712.111",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2012,
+          9,
+          5
+        ]
+      ],
+      "date-time": "2012-09-05T17:19:51Z",
+      "timestamp": 1346865591000
+    },
+    "page": "1723-1734",
+    "source": "Crossref",
+    "is-referenced-by-count": 85,
+    "title": "Sequence and chromatin determinants of cell-type-specific transcription factor binding",
+    "prefix": "10.1101",
+    "volume": "22",
+    "author": [
+      {
+        "given": "A.",
+        "family": "Arvey",
+        "affiliation": []
+      },
+      {
+        "given": "P.",
+        "family": "Agius",
+        "affiliation": []
+      },
+      {
+        "given": "W. S.",
+        "family": "Noble",
+        "affiliation": []
+      },
+      {
+        "given": "C.",
+        "family": "Leslie",
+        "affiliation": []
+      }
+    ],
+    "member": "246",
+    "published-online": {
+      "date-parts": [
+        [
+          2012,
+          9,
+          5
+        ]
+      ]
+    },
+    "container-title": "Genome Research",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://syndication.highwire.org/content/doi/10.1101/gr.127712.111",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          2,
+          15
+        ]
+      ],
+      "date-time": "2017-02-15T17:56:13Z",
+      "timestamp": 1487181373000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2012,
+          9,
+          1
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "https://doi.org/10.1101/gr.127712.111",
+    "relation": {},
+    "subject": [
+      "Genetics(clinical)",
+      "Genetics"
+    ],
+    "container-title-short": "Genome Research",
+    "short_url": "https://doi.org/f37s7h",
+    "id": "gsSLr9vf"
   },
   {
     "indexed": {
@@ -41795,6 +43274,127 @@
     "container-title-short": "IEEE/ACM Trans. Comput. Biol. and Bioinf.",
     "short_url": "https://doi.org/gcgmbd",
     "id": "1EtavGKI4"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          27
+        ]
+      ],
+      "date-time": "2017-10-27T11:08:23Z",
+      "timestamp": 1509102503986
+    },
+    "reference-count": 0,
+    "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+    "funder": [
+      {
+        "DOI": "10.13039/100000001",
+        "name": "National Science Foundation",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "CAREER-1453580"
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "DOI": "10.1109/tcbb.2016.2609918",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          9,
+          15
+        ]
+      ],
+      "date-time": "2016-09-15T18:12:41Z",
+      "timestamp": 1473963161000
+    },
+    "page": "1-1",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "Transfer String Kernel for Cross-Context DNA-Protein Binding Prediction",
+    "prefix": "10.1109",
+    "author": [
+      {
+        "ORCID": "http://orcid.org/0000-0002-7523-160X",
+        "authenticated-orcid": false,
+        "given": "Ritambhara",
+        "family": "Singh",
+        "affiliation": []
+      },
+      {
+        "given": "Jack",
+        "family": "Lanchantin",
+        "affiliation": []
+      },
+      {
+        "given": "Gabriel",
+        "family": "Robins",
+        "affiliation": []
+      },
+      {
+        "given": "Yanjun",
+        "family": "Qi",
+        "affiliation": []
+      }
+    ],
+    "member": "263",
+    "container-title": "IEEE/ACM Transactions on Computational Biology and Bioinformatics",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx7/8857/4359833/07569028.pdf?arnumber=7569028",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          9,
+          19
+        ]
+      ],
+      "date-time": "2016-09-19T20:37:22Z",
+      "timestamp": 1474317442000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "https://doi.org/10.1109/tcbb.2016.2609918",
+    "relation": {},
+    "subject": [
+      "Biotechnology",
+      "Genetics",
+      "Applied Mathematics"
+    ],
+    "container-title-short": "IEEE/ACM Trans. Comput. Biol. and Bioinf.",
+    "short_url": "https://doi.org/gcsmhp",
+    "id": "Nc8y8wkO"
   },
   {
     "indexed": {
@@ -52769,6 +54369,160 @@
       "date-parts": [
         [
           2017,
+          10,
+          26
+        ]
+      ],
+      "date-time": "2017-10-26T08:33:22Z",
+      "timestamp": 1509006802470
+    },
+    "reference-count": 21,
+    "publisher": "Public Library of Science (PLoS)",
+    "issue": "9",
+    "license": [
+      {
+        "URL": "http://creativecommons.org/licenses/by/4.0/",
+        "start": {
+          "date-parts": [
+            [
+              2010,
+              9,
+              9
+            ]
+          ],
+          "date-time": "2010-09-09T00:00:00Z",
+          "timestamp": 1283990400000
+        },
+        "delay-in-days": 0,
+        "content-version": "vor"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "www.ploscompbiol.org"
+      ],
+      "crossmark-restriction": false
+    },
+    "DOI": "10.1371/journal.pcbi.1000916",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2010,
+          9,
+          9
+        ]
+      ],
+      "date-time": "2010-09-09T19:16:31Z",
+      "timestamp": 1284059791000
+    },
+    "page": "e1000916",
+    "update-policy": "http://dx.doi.org/10.1371/journal.pcbi.corrections_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 26,
+    "title": "High Resolution Models of Transcription Factor-DNA Affinities Improve In Vitro and In Vivo Binding Predictions",
+    "prefix": "10.1371",
+    "volume": "6",
+    "author": [
+      {
+        "given": "Phaedra",
+        "family": "Agius",
+        "affiliation": []
+      },
+      {
+        "given": "Aaron",
+        "family": "Arvey",
+        "affiliation": []
+      },
+      {
+        "given": "William",
+        "family": "Chang",
+        "affiliation": []
+      },
+      {
+        "given": "William Stafford",
+        "family": "Noble",
+        "affiliation": []
+      },
+      {
+        "given": "Christina",
+        "family": "Leslie",
+        "affiliation": []
+      }
+    ],
+    "member": "340",
+    "published-online": {
+      "date-parts": [
+        [
+          2010,
+          9,
+          9
+        ]
+      ]
+    },
+    "container-title": "PLoS Computational Biology",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://dx.plos.org/10.1371/journal.pcbi.1000916",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          19
+        ]
+      ],
+      "date-time": "2017-06-19T13:51:27Z",
+      "timestamp": 1497880287000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "editor": [
+      {
+        "given": "Uwe",
+        "family": "Ohler",
+        "affiliation": []
+      }
+    ],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2010,
+          9,
+          9
+        ]
+      ]
+    },
+    "references-count": 21,
+    "URL": "https://doi.org/10.1371/journal.pcbi.1000916",
+    "relation": {
+      "cites": []
+    },
+    "subject": [
+      "Ecology",
+      "Modelling and Simulation",
+      "Computational Theory and Mathematics",
+      "Genetics",
+      "Ecology, Evolution, Behavior and Systematics",
+      "Molecular Biology",
+      "Cellular and Molecular Neuroscience"
+    ],
+    "container-title-short": "PLoS Comput Biol",
+    "short_url": "https://doi.org/c8n9s7",
+    "id": "EPo6SPty"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
           8,
           9
         ]
@@ -53230,145 +54984,6 @@
     "container-title-short": "PLoS Comput Biol",
     "short_url": "https://doi.org/f25c62",
     "id": "F13xtRbV"
-  },
-  {
-    "indexed": {
-      "date-parts": [
-        [
-          2017,
-          10,
-          27
-        ]
-      ],
-      "date-time": "2017-10-27T10:18:31Z",
-      "timestamp": 1509099511114
-    },
-    "reference-count": 49,
-    "publisher": "Public Library of Science (PLoS)",
-    "issue": "5",
-    "license": [
-      {
-        "URL": "http://creativecommons.org/licenses/by/4.0/",
-        "start": {
-          "date-parts": [
-            [
-              2015,
-              5,
-              27
-            ]
-          ],
-          "date-time": "2015-05-27T00:00:00Z",
-          "timestamp": 1432684800000
-        },
-        "delay-in-days": 0,
-        "content-version": "vor"
-      }
-    ],
-    "content-domain": {
-      "domain": [
-        "www.ploscompbiol.org"
-      ],
-      "crossmark-restriction": false
-    },
-    "DOI": "10.1371/journal.pcbi.1004271",
-    "type": "article-journal",
-    "created": {
-      "date-parts": [
-        [
-          2015,
-          5,
-          28
-        ]
-      ],
-      "date-time": "2015-05-28T10:44:43Z",
-      "timestamp": 1432809883000
-    },
-    "page": "e1004271",
-    "update-policy": "http://dx.doi.org/10.1371/journal.pcbi.corrections_policy",
-    "source": "Crossref",
-    "is-referenced-by-count": 10,
-    "title": "SeqGL Identifies Context-Dependent Binding Signals in Genome-Wide Regulatory Element Maps",
-    "prefix": "10.1371",
-    "volume": "11",
-    "author": [
-      {
-        "given": "Manu",
-        "family": "Setty",
-        "affiliation": []
-      },
-      {
-        "given": "Christina S.",
-        "family": "Leslie",
-        "affiliation": []
-      }
-    ],
-    "member": "340",
-    "published-online": {
-      "date-parts": [
-        [
-          2015,
-          5,
-          27
-        ]
-      ]
-    },
-    "container-title": "PLOS Computational Biology",
-    "original-title": [],
-    "link": [
-      {
-        "URL": "http://dx.plos.org/10.1371/journal.pcbi.1004271",
-        "content-type": "unspecified",
-        "content-version": "vor",
-        "intended-application": "similarity-checking"
-      }
-    ],
-    "deposited": {
-      "date-parts": [
-        [
-          2017,
-          6,
-          23
-        ]
-      ],
-      "date-time": "2017-06-23T12:28:44Z",
-      "timestamp": 1498220924000
-    },
-    "score": 1.0,
-    "subtitle": [],
-    "editor": [
-      {
-        "given": "Zhiping",
-        "family": "Weng",
-        "affiliation": []
-      }
-    ],
-    "short-title": [],
-    "issued": {
-      "date-parts": [
-        [
-          2015,
-          5,
-          27
-        ]
-      ]
-    },
-    "references-count": 49,
-    "URL": "https://doi.org/10.1371/journal.pcbi.1004271",
-    "relation": {
-      "cites": []
-    },
-    "subject": [
-      "Ecology",
-      "Modelling and Simulation",
-      "Computational Theory and Mathematics",
-      "Genetics",
-      "Ecology, Evolution, Behavior and Systematics",
-      "Molecular Biology",
-      "Cellular and Molecular Neuroscience"
-    ],
-    "container-title-short": "PLoS Comput Biol",
-    "short_url": "https://doi.org/gcgmcg",
-    "id": "138dgb9Ca"
   },
   {
     "indexed": {
@@ -61004,37 +62619,6 @@
     "greycite-scanned": "2018-01-11 21:26:00",
     "type": "webpage",
     "id": "ZhuDaoNw"
-  },
-  {
-    "type": "paper-conference",
-    "title": "Domain adaptation for large-scale sentiment classification: A deep learning approach",
-    "container-title": "In Proceedings of the Twenty-eight International Conference on Machine Learning, ICML",
-    "source": "CiteSeer",
-    "abstract": "The exponential increase in the availability of online reviews and recommendations makes sentiment classification an interesting topic in academic and industrial research. Reviews can span so many different domains that it is difficult to gather annotated training data for all of them. Hence, this paper studies the problem of domain adaptation for sentiment classifiers, hereby a system is trained on labeled reviews from one source domain but is meant to be deployed on another. We propose a deep learning approach which learns to extract a meaningful representation for each review in an unsupervised fashion. Sentiment classifiers trained with this high-level feature representation clearly outperform state-of-the-art methods on a benchmark composed of reviews of 4 types of Amazon products. Furthermore, this method scales well and allowed us to successfully perform domain adaptation on a larger industrial-strength dataset of 22 domains. 1.",
-    "URL": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.231.3442",
-    "shortTitle": "Domain adaptation for large-scale sentiment classification",
-    "author": [
-      {
-        "family": "Glorot",
-        "given": "Xavier"
-      },
-      {
-        "family": "Bordes",
-        "given": "Antoine"
-      },
-      {
-        "family": "Bengio",
-        "given": "Yoshua"
-      }
-    ],
-    "issued": {
-      "date-parts": [
-        [
-          "2011"
-        ]
-      ]
-    },
-    "id": "LebLg3pb"
   },
   {
     "URL": "http://googleresearch.blogspot.co.uk/2015/06/inceptionism-going-deeper-into-neural.html",
