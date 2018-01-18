@@ -1308,5 +1308,26 @@
    "container-title-short": "IEEE J. Biomed. Health Inform.",
    "short_url": "https://doi.org/gcgnxx",
    "standard_citation": "doi:10.1109/jbhi.2016.2633963"
+ },
+ {
+   "standard_citation": "url:http://www.cs.ox.ac.uk/people/yarin.gal/website/thesis/thesis.pdf",
+   "type": "thesis",
+   "title": "Uncertainty in deep learning",
+   "publisher": "PhD thesis, University of Cambridge",
+   "genre": "PhD thesis",
+   "URL": "http://www.cs.ox.ac.uk/people/yarin.gal/website/thesis/thesis.pdf",
+   "author": [
+     {
+       "family": "Gal",
+       "given": "Yarin"
+     }
+   ],
+   "issued": {
+     "date-parts": [
+       [
+         "2016"
+       ]
+     ]
+   }
  }
 ]
