@@ -19,7 +19,11 @@ Casey and Tony
 The authors provided synopsis for each important reference, but lacks synthesis of related work.
 It would be better to synthesize related work into a table and analyze their characteristics.
 
-TODO in [issue #683](https://github.com/greenelab/deep-review/issues/683)
+We have sought to revise the intro to better synthesize related work and analyze broad characteristics.
+One challenge of this effort is that with the recent explosion of deep learning in the biomedical literature, nearly every neural architecture gets applied to nearly every problem.
+For example, we have seen cases in the literature where convolutional neural networks, which require structure in input data, get applied to unstructured data.
+We have aimed to avoid using these types of cases as exemplars.
+We have also added a table (Table 1) that highlights the structure of commonly used types of neural networks and the settings where they are well suited.
 
 > The authors discussed deep learning models such as sDA, CNN, RNN etc.
 It would be better to have a figure illustrating their architectures.
