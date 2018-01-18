@@ -57,7 +57,7 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@0b26a93](https://github.com/greenelab/deep-review/tree/0b26a93f7f0c36e53f9a203a97718fbd45fd32f4)
+from [greenelab/deep-review@72ea9ec](https://github.com/greenelab/deep-review/tree/72ea9ec6671b557178cfd4fd9e49d0663bad2bad)
 on January 18, 2018.
 </em></small>
 
@@ -1947,11 +1947,11 @@ Accordingly, we collaboratively wrote this review in the open, enabling anyone w
 We wrote the manuscript in markdown and tracked changes using git.
 Contributions were handled through GitHub, with individuals submitting "pull requests" to suggest additions to the manuscript.
 
-To facilitate citation, we [defined](https://github.com/greenelab/deep-review/blob/master/CONTRIBUTING.md#markdown) a markdown citation syntax.
+To facilitate citation, we [defined](https://github.com/greenelab/deep-review/blob/master/USAGE.md#citations) a markdown citation syntax.
 We supported citations to the following identifier types (in order of preference): DOIs, PubMed Central IDs, PubMed IDs, arXiv IDs, and URLs.
 References were automatically generated from citation metadata by querying APIs to generate [Citation Style Language](http://citationstyles.org/) (CSL) JSON items for each reference.
 [Pandoc](http://pandoc.org/) and [pandoc-citeproc](https://github.com/jgm/pandoc-citeproc) converted the markdown to HTML and PDF, while rendering the formatted citations and references.
-In total, referenced works consisted of 369 DOIs, 6 PubMed Central records, 0 PubMed records, 129 arXiv manuscripts, and 48 URLs (webpages as well as manuscripts lacking standardized identifiers).
+In total, referenced works consisted of 369 DOIs, 6 PubMed Central records, 129 arXiv manuscripts, and 48 URLs (webpages as well as manuscripts lacking standardized identifiers).
 
 We implemented continuous analysis so the manuscript was automatically regenerated whenever the source changed [@Qh7xTLwz].
 We configured Travis CI---a continuous integration service---to fetch new citation metadata and rebuild the manuscript for every commit.
