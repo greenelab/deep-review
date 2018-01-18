@@ -69,6 +69,7 @@ We agree with the reviewer that the explanation of these concepts was missing.
 We have added a new Figure 1 that shows some of the neural network types that are building blocks of those discussed in the paper.
 We also added a new Table 1 that provides a short and hopefully intuitive description of these types of networks plus a few others that we saw commonly used in the biomedical literature.
 We also revised the "Introduction to Deep Learning" section to try to give the reader a more gradual introduction to the concepts in deep learning.
+Finally, in addition to the technical Goodfellow book, we also refer readers to the review by LeCun, Bengio, and Hinton that is aimed at a more general audience.
 
 > There is a slight imbalance in the presentation of various application areas.
 The [section on drug development](https://github.com/greenelab/deep-review/blob/v0.9-preprint/sections/05_treat.md#drug-development), for example, is quite extensive and provides a lot of technical details which might be less relevant for a reader who tries to get a general overview of deep learning in biomedical research.
