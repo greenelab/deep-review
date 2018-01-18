@@ -3,7 +3,7 @@
 Dear Dr. Holt,
 
 We thank you and the reviewers for their thoughtful comments.
-Based on the feedback from the reviewers and the broader scientific community, we have revised the manuscript.
+Based on their feedback, we have revised the manuscript.
 We address each reviewer suggestion point-by-point below.
 Major section-level changes include the addition of sections on protein interaction networks and uncertainty quantification, a revision to our drug development section to more clearly discuss chemical featurization and representation learning, and a more conscious and planned discussion of latent space representations throughout the review.
 We feel that these revisions have substantially strengthened the manuscript.
@@ -24,6 +24,7 @@ In addition, we revised the intro to better synthesize related work and analyze 
 One challenge of this effort is that with the recent explosion of deep learning in the biomedical literature, nearly every neural network architecture gets applied to nearly every problem.
 For example, we have seen cases in the literature where convolutional neural networks, which require structure in input data, are applied to unstructured data.
 We have aimed to avoid using these types of cases as exemplars.
+The new Figure 2 further illustrates the diversity of network architectures that are relevant for a single biomedical task.
 
 > The authors discussed deep learning models such as sDA, CNN, RNN etc.
 It would be better to have a figure illustrating their architectures.
@@ -54,9 +55,8 @@ Recently, Lee et al. [65] developed an approach to distinguish individuals with 
 > Some existing biomedical informatics systems are not cited.
 For example, please provide a citation to NegBio.
 
-We went through the manuscript and identified methods that were mentioned but not cited.
-We added the reference to NegBio.
-We also added references for ImageNet and CIFAR, TCGA, and GATK.
+We went through the manuscript and identified methods and datasets that were mentioned but not cited.
+We added references to NegBio as well as ImageNet, CIFAR, TCGA, and GATK.
 
 ## Referee 2
 
@@ -76,9 +76,11 @@ An area which is little mentioned on the other hand are deep learning approaches
 
 We agree that there was an imbalance in the presentation of certain application areas.
 We've better reframed the drug development section to discuss representation learning as an important area in and of itself.
-This helps to remove the overwhelming amount of detail that previously existed on ligand binding.
-We now discuss graph convolutions in the case of protein-protein interactions, which is an area where we had a contributor with major familiarity with the literature.
-We have also added a subsection on connections between deep neural networks and neuroscience, which discusses some recent work in connectomics.
+This helps to remove the overwhelming amount of detail that previously existed on ligand binding and provides representation learning examples that are relevant beyond the drug discovery domain.
+
+We introduced graph convolutions in two sections where structured graph data is frequently used: a new section on protein-protein interactions and the aforementioned section on chemical representation learning.
+The scales and types of graphs used in these domains have inspired different types of graph algorithms.
+We have also added a subsection on connections between deep neural networks and neuroscience, which discusses some of the foundational work in connectomics and refers interested readers to recent detailed reviews.
 
 > The main issue with machine learning solutions in a medical, particularly clinical or public health setting is the lack of proper measures of uncertainty, as it is traditionally provided either in the framework of hypothesis testing or in the increasing acceptance of posterior Bayesian inference for public health decisions.
 Although this is mentioned throughout the review, this issue deserves a much more prominent place in the introduction and the discussion, since it is one of the key obstacles for the acceptance of machine learning approaches outside exploratory analyses in basic biological research.
@@ -94,8 +96,10 @@ We discuss both epistemic and aleatoric uncertainty as well as techniques for de
 In addition to the revisions described above, we have continued to improve the manuscript based on community feedback.
 These updates include adding new literature to existing sections.
 We note a few key changes here:
+* New sections on natural language processing in healthcare, cryo-electron microscopy, and MHC-peptide binding.
 * The transcription factor binding site section has been substantially re-worked with discussions of new literature and domain adaptation.
 * Substantial revisions to the discussion section. The previous discussion section had a deep dive into the specifics of transcription factor error metrics. We've now removed that to more generally discuss class imbalance. We also focused more specifically on how bias and variance relate to deep learning methods.
-* We condensed the discussion of natural language processing that was unnecessarily detailed.
 * We made a number of grammar and spelling corrections throughout the manuscript.
 * We improved our discussion of biomedical imaging in the categorization section.
+
+We have enclosed a Word document depicting these edits.
