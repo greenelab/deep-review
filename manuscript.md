@@ -57,7 +57,7 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@b3b57d3](https://github.com/greenelab/deep-review/tree/b3b57d37c4accabc2e15fd1d3f320a52ce25ed8b)
+from [greenelab/deep-review@7cef20b](https://github.com/greenelab/deep-review/tree/7cef20b43a8f40037d261c51ced55880082645bd)
 on January 19, 2018.
 </em></small>
 
@@ -527,13 +527,13 @@ Identifying consistent subgroups of individuals and individual health trajectori
 Approaches inspired by deep learning have been used for both unsupervised feature construction and supervised prediction.
 Early work by Lasko et al. [@FLX0o7bL], combined sparse autoencoders and Gaussian processes to distinguish gout from leukemia from uric acid sequences.
 Later work showed that unsupervised feature construction of many features via denoising autoencoder neural networks could dramatically reduce the number of labeled examples required for subsequent supervised analyses [@5x3uMSKi].
-In addition, it pointed towards features learned during unsupervised training being useful for visualising and stratifying subgroups of patients within a single disease.
+In addition, it pointed towards features learned during unsupervised training being useful for visualizing and stratifying subgroups of patients within a single disease.
 In a concurrent large-scale analysis of EHR data from 700,000 patients, Miotto et al.
 [@WrNCJ9sO] used a deep denoising autoencoder architecture applied to the number and co-occurrence of clinical events to learn a representation of patients (DeepPatient).
 The model was able to predict disease trajectories within one year with over 90% accuracy and patient-level predictions were improved by up to 15% when compared to other methods.
 Choi et al. [@11tMRPqto] attempted to model the longitudinal structure of EHRs with a RNN to predict future diagnosis and medication prescriptions on a cohort of 260,000 patients followed for 8 years (Doctor AI).
 Pham et al.
-[@HRXii6Ni] built upon this concept by utilising a RNN with a LSTM architecture enabling explicit modelling of patient trajectories through the use of memory cells.
+[@HRXii6Ni] built upon this concept by using a RNN with a LSTM architecture enabling explicit modelling of patient trajectories through the use of memory cells.
 The method, DeepCare, performed better than shallow models or plain RNN when tested on two independent cohorts for its ability to predict disease progression, intervention recommendation and future risk prediction.
 Nguyen et al. [@1Fiy543WZ] took a different approach and used word embeddings from EHRs to train a CNN that could detect and pool local clinical motifs to predict unplanned readmission after six months, with performance better than the baseline method (Deepr).
 Razavian et al. [@c6MfDdWP] used a set of 18 common lab tests to predict disease onset using both CNN and LSTM architectures and demonstrated an improvement over baseline regression models.
@@ -865,7 +865,7 @@ Several methods have also been developed to interpret neural network models of T
 Alipanahi et al. visualize convolutional filters to obtain insights into the sequence preferences of TFs [@jJHZHWrl].
 They also introduced *in silico* mutation maps for identifying important predictive nucleotides in input DNA sequences by exhaustively forward propagating perturbations to individual nucleotides to record the corresponding change in output prediction.
 Shrikumar et al. [@zhmq9ktJ] proposed efficient backpropagation based approaches to simultaneously score the contribution of all nucleotides in an input DNA sequence to an output prediction.
-Lanchantin et al. [@Dwi2eAvT] developed tools to visualize TF motifs learned from TF binding site classification tasks. 
+Lanchantin et al. [@Dwi2eAvT] developed tools to visualize TF motifs learned from TF binding site classification tasks.
 These and other general interpretation techniques (see Discussion) will be critical to improve our understanding of the biologically meaningful patterns learned by deep learning models of TF binding.
 
 ### Promoters and enhancers
@@ -920,7 +920,7 @@ To drive further progress in enhancer identification, we must develop a common a
 #### Promoter-enhancer interactions
 
 In addition to the location of enhancers, identifying enhancer-promoter interactions in three-dimensional space will provide critical knowledge for understanding transcriptional regulation.
-SPEID used a CNN to predicted these interactions with only sequence and the location of putative enhancers and promoters along a one-dimensional chromosome [@14TqLB9iZ].
+SPEID used a CNN to predict these interactions with only sequence and the location of putative enhancers and promoters along a one-dimensional chromosome [@14TqLB9iZ].
 It compared well to other methods using a full complement of biochemical data from ChIP-seq and other epigenomic methods.
 Of course, the putative enhancers and promoters used were themselves derived from epigenomic methods.
 But one could easily replace them with the output of one of the enhancer or promoter prediction methods above.
@@ -1054,7 +1054,7 @@ Because MHCnuggets had to be trained for every MHC allele, performance was far b
 Vang et al. [@12i8Apfdc] developed HLA-CNN, a method which maps amino acids onto a 15-dimensional vector space based on their context relation to other amino acids before making predictions with a CNN.
 In a comparison of several current methods, Bhattacharya et al. found that the top methods---NetMHC, NetMHCpan, MHCflurry, and MHCnuggets---showed comparable performance, but large differences in speed.
 Convolutional neural networks (in this case, HLA-CNN) showed comparatively poor performance, while shallow and recurrent neural networks performed the best.
-They found that MHCnuggets---the recurrent neural network---was by far the fastest training among the top performing methods.
+They found that MHCnuggets---the recurrent neural network---was by far the fastest-training among the top performing methods.
 
 ### PPI networks and graph analysis
 
@@ -1209,8 +1209,6 @@ However, because this model was not subsequently tested on ground-truth datasets
 
 Method development for interpreting new types of sequencing data has historically taken two steps: first, easily implemented hard cutoffs that prioritize specificity over sensitivity, then expert development of probabilistic models with hand-developed inputs [@ECTm1SuA].
 We anticipate that these steps will be replaced by deep learning, which will infer features simply by its ability to optimize a complex model against data.
-
-
 
 ### Neuroscience
 
@@ -1515,7 +1513,7 @@ This uncertainty is caused by insufficient training data or by a difference in t
 On the other hand, aleatoric uncertainty describes uncertainty inherent in the observations.
 This uncertainty is due to noisy or missing data, so it vanishes with the ability to observe all independent variables with infinite precision.
 A good way to represent aleatoric uncertainty is to design an appropriate loss function with an uncertainty variable.
-In the case of data-dependent aleatoric uncertainty, one can train the model to increase its uncertainty when it is incorrect due to noisy or missing data, and in the case of task-depedent aleatoric uncertainty, one can optimize for the best uncertainty parameter for each task [@WZjlu7tr].
+In the case of data-dependent aleatoric uncertainty, one can train the model to increase its uncertainty when it is incorrect due to noisy or missing data, and in the case of task-dependent aleatoric uncertainty, one can optimize for the best uncertainty parameter for each task [@WZjlu7tr].
 Meanwhile, there are various methods for modeling epistemic uncertainty, outlined below.
 
 In classification tasks, confidence calibration is the problem of using classifier scores to predict class membership probabilities that match the true membership likelihoods.
@@ -1587,7 +1585,7 @@ As noted by Shrikumar et al. [@zhmq9ktJ], such methods may also underestimate th
 To reduce the computational overhead of perturbation-based approaches, Fong and Vedaldi [@niTcKl83] solve an optimization problem using gradient descent to discover a minimal subset of inputs to perturb in order to decrease the predicted probability of a selected class.
 Their method converges in many fewer iterations but requires the perturbation to have a differentiable form.
 
-Backpropagation-based methods, in which the signal from a target output neuron is propagated backwards to the input layer, are another way to interpret deep networks that sidestep inefficiencies of the perturbastion-basd methods.
+Backpropagation-based methods, in which the signal from a target output neuron is propagated backwards to the input layer, are another way to interpret deep networks that sidestep inefficiencies of the perturbation-based methods.
 A classic example of this is calculating the gradients of the output with respect to the input [@1YcKYTvO] to compute a "saliency map".
 Bach et al. [@au5CLIOH] proposed a strategy called Layerwise Relevance Propagation, which was shown to be equivalent to the element-wise product of the gradient and input [@zhmq9ktJ; @b1sc0cgP].
 Networks with Rectified Linear Units (ReLUs) create nonlinearities that must be addressed.
