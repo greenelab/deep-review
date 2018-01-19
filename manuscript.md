@@ -57,7 +57,7 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@6bbf4c7](https://github.com/greenelab/deep-review/tree/6bbf4c7e4a28f1d214db16d10eb3095fbd5173f0)
+from [greenelab/deep-review@b3b57d3](https://github.com/greenelab/deep-review/tree/b3b57d37c4accabc2e15fd1d3f320a52ce25ed8b)
 on January 19, 2018.
 </em></small>
 
@@ -253,7 +253,7 @@ Table @tbl:glossary also provides select example applications, though in practic
 A recent book from Goodfellow et al. covers neural network architectures in detail [@yg8NW0K7], and LeCun et al. provide a more general introduction [@BeijBSRE].
 
 | Term | Definition | Example applications |
-|----------------------------|-----------------------------|----------------------------------------------------------------|
+|-----|----------|----------|
 | Supervised learning | Machine-learning approaches with goal of prediction of labels or outcomes | |
 | Unsupervised learning | Machine-learning approaches with goal of data summarization or pattern identification | |
 | Neural network  (NN) | Machine-learning approach inspired by biological neurons where inputs are fed into one or more layers, producing an output layer | |
