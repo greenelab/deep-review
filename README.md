@@ -14,12 +14,10 @@ The project operates on an open contribution model, welcoming contributions from
 To see what's incoming, check the open [pull requests](https://github.com/greenelab/deep-review/pulls).
 For project discussion and planning see the [Issues](https://github.com/greenelab/deep-review/issues).
 
-### Current stage: revisions (overdue, will submit January 19, 2018)
+### Current stage: resubmitted to _JRSI_ and _bioRxiv_
 
-We are currently working on manuscript revisions in response to two external peer reviews.
-See [Issue #678](https://github.com/greenelab/deep-review/issues/678) to coordinate this process.
-When addressing reviewer comments, please also update [`response-to-reviewers.md`](content/response-to-reviewers.md) as appropriate.
-We will only accept new pull requests if they are trivial corrections such as typo fixes.
+We [completed](https://github.com/greenelab/deep-review/releases/tag/v0.10) manuscript revisions in [response](content/response-to-reviewers.md) to two external peer reviews.
+Please see [issue #810](https://github.com/greenelab/deep-review/issues/810) for a discussion about future plans and whether we will continue to accept new pull requests.
 
 **Manubot updates:**
 We recently [updated](https://github.com/greenelab/deep-review/pull/681) this repository to use the latest Manubot version.
