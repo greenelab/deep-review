@@ -1,13 +1,15 @@
 # Response to Reviewers
 
-The Deep Review ([preprint version 1](https://www.biorxiv.org/content/early/2017/05/28/142760)) was submitted _Journal of the Royal Society Interface_.
-We have now [received](https://github.com/greenelab/deep-review/issues/678) the peer reviews and are working on addressing the comments.
-When submitting a pull request to revise the Deep Review in response to reviewers, please also comment on the relevant section in this document.
-The comments should respond to the reviewer comments and should link to the pull requests or issues where they are addressed.
+Dear Dr. Holt,
 
-After each reviewer criticism, there is a TODO.
-Replace the TODO with the relevant response.
-Feel free to also break up paragraphs as necessary, but remember to keep the reviews formatted as blockquotes.
+We thank you and the reviewers for their thoughtful comments.
+Based on their feedback, we have revised the manuscript.
+We address each reviewer suggestion point-by-point below.
+Major section-level changes include the addition of sections on protein interaction networks and uncertainty quantification, a revision to our drug development section to more clearly discuss chemical featurization and representation learning, and a more conscious and planned discussion of latent space representations throughout the review.
+We feel that these revisions have substantially strengthened the manuscript.
+
+Sincerely,
+Casey and Anthony
 
 ***
 
@@ -17,29 +19,44 @@ Feel free to also break up paragraphs as necessary, but remember to keep the rev
 The authors provided synopsis for each important reference, but lacks synthesis of related work.
 It would be better to synthesize related work into a table and analyze their characteristics.
 
-TODO in [issue #683](https://github.com/greenelab/deep-review/issues/683)
+We added a table (Table 1) that highlights the structure of commonly used types of neural networks and examples of settings where they are well suited.
+In addition, we revised the intro to better synthesize related work and analyze broad characteristics.
+One challenge of this effort is that with the recent explosion of deep learning in the biomedical literature, nearly every neural network architecture gets applied to nearly every problem.
+For example, we have seen cases in the literature where convolutional neural networks, which require structure in input data, are applied to unstructured data.
+We have aimed to avoid using these types of cases as exemplars.
+The new Figure 2 further illustrates the diversity of network architectures that are relevant for a single biomedical task.
 
 > The authors discussed deep learning models such as sDA, CNN, RNN etc.
 It would be better to have a figure illustrating their architectures.
 This way, the reader will have a concrete visualization that will aid the understanding of the discussion points in the manuscript.
 
-TODO in [issue #684](https://github.com/greenelab/deep-review/issues/684)
+We agree that having illustrated architectures would be helpful to the reader.
+We selected certain key architectures that we judged to be most fundamental to an understanding of deep learning within this domain and illustrated them.
+The new Figure 1 illustrates these architectures and can be paired with Table 1 for a more thorough synthesis of architectures used in this area.
 
 > The authors gave a case study of LADA to suggest that integrating multiple data sources may lead to breakthrough medical discoveries.
 However, it is unclear from the authors’ description that deep why learning models possess such integrating capability.
 In fact, the tensor model seems to be the widely acknowledged model that can easily integrating multiple data sources.
 
-TODO in [issue #685](https://github.com/greenelab/deep-review/issues/685)
+We agree with the reviewer that the LADA description did not illustrate the benefits of deep learning particularly well.
+We've now substantially revised the introduction to this section, which included dropping the discussion of LADA from the manuscript.
 
 > The authors mentioned “One source of training examples with rich clinical annotations is electronic health records”.
 What does it mean by “rich clinical annotations”? Can the authors provide a definition and a few examples.
 
-TODO in [issue #686](https://github.com/greenelab/deep-review/issues/686)
+We agree with the reviewer that "rich clinical annotations" did not make sense in this context.
+Instead, we intended to say that phenotypic information can be extracted from the EHR.
+We've revised the section to say:
+
+`One source of training examples with rich phenotypical annotations is the EHR.
+Billing information in the form of ICD codes are simple annotations but phenotypic algorithms can combine laboratory tests, medication prescriptions, and patient notes to generate more reliable phenotypes.
+Recently, Lee et al. [65] developed an approach to distinguish individuals with age-related macular degeneration from control individuals.`
 
 > Some existing biomedical informatics systems are not cited.
 For example, please provide a citation to NegBio.
 
-TODO in [issue #687](https://github.com/greenelab/deep-review/issues/687)
+We went through the manuscript and identified methods and datasets that were mentioned but not cited.
+We added references to NegBio as well as ImageNet, CIFAR, TCGA, and GATK.
 
 ## Referee 2
 
@@ -48,24 +65,42 @@ It might be impossible to do that within the space limitations of the current re
 There is certainly a large readership whose interest has been peaked by countless references to deep learning even in the popular press, but who are very confused when autoencoders, LSTMs and RNNs get thrown at them without any even brief explanation what they are.
 Just sending readers off to fend for themselves through internet searches or to study the excellent but still quite technical book [Goodfellow et al.](http://www.deeplearningbook.org/ "Deep Learning. Ian Goodfellow, Yoshua Bengio, Aaron Courville. 2016") is probably not the most satisfactory answer.
 
-TODO in [issue #688](https://github.com/greenelab/deep-review/issues/688)
+We agree with the reviewer that the explanation of these concepts was missing.
+We have added a new Figure 1 that shows some of the neural network types that are building blocks of those discussed in the paper.
+We also added a new Table 1 that provides a short and hopefully intuitive description of these types of networks plus a few others that we saw commonly used in the biomedical literature.
+We also revised the "Introduction to Deep Learning" section to try to give the reader a more gradual introduction to the concepts in deep learning.
+Finally, in addition to the technical Goodfellow book, we also refer readers to the review by LeCun, Bengio, and Hinton that is aimed at a more general audience.
 
 > There is a slight imbalance in the presentation of various application areas.
 The [section on drug development](https://github.com/greenelab/deep-review/blob/v0.9-preprint/sections/05_treat.md#drug-development), for example, is quite extensive and provides a lot of technical details which might be less relevant for a reader who tries to get a general overview of deep learning in biomedical research.
 An area which is little mentioned on the other hand are deep learning approaches to brain data, eg connectivity maps, and the area of learning from structured data, such as graphs.
 
-TODO in [issue #689](https://github.com/greenelab/deep-review/issues/689)
+We agree that there was an imbalance in the presentation of certain application areas.
+We've better reframed the drug development section to discuss representation learning as an important area in and of itself.
+This helps to remove the overwhelming amount of detail that previously existed on ligand binding and provides representation learning examples that are relevant beyond the drug discovery domain.
+
+We introduced graph convolutions in two sections where structured graph data is frequently used: a new section on protein-protein interactions and the aforementioned section on chemical representation learning.
+The scales and types of graphs used in these domains have inspired different types of graph algorithms.
+We have also added a subsection on connections between deep neural networks and neuroscience, which discusses some of the foundational work in connectomics and refers interested readers to recent detailed reviews.
 
 > The main issue with machine learning solutions in a medical, particularly clinical or public health setting is the lack of proper measures of uncertainty, as it is traditionally provided either in the framework of hypothesis testing or in the increasing acceptance of posterior Bayesian inference for public health decisions.
 Although this is mentioned throughout the review, this issue deserves a much more prominent place in the introduction and the discussion, since it is one of the key obstacles for the acceptance of machine learning approaches outside exploratory analyses in basic biological research.
 
-TODO in [issue #690](https://github.com/greenelab/deep-review/issues/690)
+We agree with the reviewer that this was an important and overlooked area of the review.
+We've now rectified this oversight by adding a subsection in the discussion titled "Uncertainty quantification."
+We discuss both epistemic and aleatoric uncertainty as well as techniques for dealing with uncertainty in deep neural networks.
 
 ***
 
 ## Additional revisions
 
 In addition to the revisions described above, we have continued to improve the manuscript based on community feedback.
-These updates include adding new literature to existing sections...
+These updates include adding new literature to existing sections.
+We note a few key changes here:
+* New sections on natural language processing in healthcare, cryo-electron microscopy, and MHC-peptide binding.
+* The transcription factor binding site section has been substantially re-worked with discussions of new literature and domain adaptation.
+* Substantial revisions to the discussion section. The previous discussion section had a deep dive into the specifics of transcription factor error metrics. We've now removed that to more generally discuss class imbalance. We also focused more specifically on how bias and variance relate to deep learning methods.
+* We made a number of grammar and spelling corrections throughout the manuscript.
+* We improved our discussion of biomedical imaging in the categorization section.
 
-TODO summarize other [pull requests made since the initial submission](https://github.com/greenelab/deep-review/pulls?q=created%3A>2017-05-28%20is%3Apr%20)
+We have enclosed a Word document depicting these edits.
