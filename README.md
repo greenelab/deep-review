@@ -61,6 +61,8 @@ We'll operate on a pull request model.
 Anyone whose contributions meet the ICJME standards of authorship will be included as an author on the manuscript.
 I can't guarantee that it will be accepted, but I look forward to trying this approach out.
 
+On August 5, Deep Review was announced with a [tweet](https://twitter.com/GreeneScientist/status/761606546774163456).
+
 ## Manubot
 
 <!-- usage note: do not edit this section -->
