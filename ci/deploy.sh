@@ -15,7 +15,7 @@ ots stamp \
 # Configure git
 git config --global push.default simple
 git config --global user.email `git log --max-count=1 --format='%ae'`
-git config --global user.name `git log --max-count=1 --format='%an'`
+git config --global user.name "`git log --max-count=1 --format='%an'`"
 git checkout $TRAVIS_BRANCH
 git remote set-url origin git@github.com:$TRAVIS_REPO_SLUG.git
 
