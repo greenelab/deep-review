@@ -87,8 +87,9 @@ body {
     margin: 0;
 }
 
-/***Page margins when printing***/
-@page { 
+/***Page size and margins when printing***/
+@page {
+    size: Letter;
     margin-top: 19mm;
     margin-bottom: 16mm;
     margin-left: 0mm;

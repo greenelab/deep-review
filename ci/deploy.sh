@@ -7,15 +7,10 @@ export REPO_NAME=`basename $TRAVIS_REPO_SLUG`
 envsubst < webpage/README.md > webpage/README-complete.md
 mv webpage/README-complete.md webpage/README.md
 
-# Generate OpenTimestamps
-ots stamp \
-  webpage/index.html \
-  webpage/manuscript.pdf
-
 # Configure git
 git config --global push.default simple
 git config --global user.email `git log --max-count=1 --format='%ae'`
-git config --global user.name `git log --max-count=1 --format='%an'`
+git config --global user.name "`git log --max-count=1 --format='%an'`"
 git checkout $TRAVIS_BRANCH
 git remote set-url origin git@github.com:$TRAVIS_REPO_SLUG.git
 
@@ -33,6 +28,16 @@ ssh-add ci/deploy.key
 # Travis does a shallow and single branch git clone
 git remote set-branches --add origin gh-pages output
 git fetch origin gh-pages:gh-pages output:output
+
+# Configure versioned webpage
+python build/webpage.py \
+  --checkout=gh-pages \
+  --version=$TRAVIS_COMMIT
+
+# Generate OpenTimestamps
+ots stamp \
+  webpage/v/$TRAVIS_COMMIT/index.html \
+  webpage/v/$TRAVIS_COMMIT/manuscript.pdf
 
 # Commit message
 MESSAGE="\

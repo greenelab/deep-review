@@ -7,22 +7,22 @@ dependencies:
   - conda-forge::ghp-import=0.5.5
   - conda-forge::jinja2=2.10
   - conda-forge::pandas=0.22.0
-  - conda-forge::pandoc=2.1
+  - conda-forge::pandoc=2.1.1
   - conda-forge::python=3.6.4
   - conda-forge::pyyaml=3.12
   - conda-forge::requests=2.18.4
   - conda-forge::watchdog=0.8.3
   - pip:
     - errorhandler==2.0.1
-    - git+https://github.com/greenelab/manubot@7ca386db0610d1e1113abba10c109dcffd3e4c9a
+    - git+https://github.com/greenelab/manubot@27456594c407f3fed35804db4bcf3b5bba88a716
     - opentimestamps-client==0.5.1
     - opentimestamps==0.2.0.1
     - pandoc-eqnos==1.2.0
     - pandoc-fignos==1.2.0
     - pandoc-tablenos==1.2.0
-    - pandoc-xnos==0.15
+    - pandoc-xnos==1.0.1
     - pybase62==0.3.2
     - pysha3==1.0.2
     - python-bitcoinlib==0.9.0
     - requests-cache==0.4.13
-    - weasyprint==0.42
+    - weasyprint==0.42.2
