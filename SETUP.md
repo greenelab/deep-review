@@ -32,8 +32,12 @@ cd $REPO
 
 # Configure remotes and branches
 git remote add rootstock https://github.com/greenelab/manubot-rootstock.git
-git checkout gh-pages
-git checkout output
+git checkout --orphan gh-pages
+git rm -r --force .
+git commit --allow-empty \
+  --message "Initialize empty branch" \
+  --message "[ci skip]"
+git checkout -b output
 git checkout master
 
 # Option A: Set origin URL using its web address

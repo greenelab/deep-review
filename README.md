@@ -53,6 +53,12 @@ sh build/build.sh
 # when a change is detected.
 sh build/autobuild.sh
 
+# At this point, the HTML & PDF outputs will have been created. The remaining
+# commands are for serving the webpage to view the HTML manuscript locally.
+
+# Configure the webpage directory
+python build/webpage.py
+
 # View the manuscript locally at http://localhost:8000/
 cd webpage
 python -m http.server
