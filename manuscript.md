@@ -57,9 +57,9 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@8ee97e2](https://github.com/greenelab/deep-review/tree/8ee97e2c362a0ac548c13476c26c92a5de8fca67)
+from [greenelab/deep-review@4ae52c5](https://github.com/greenelab/deep-review/tree/4ae52c5170045d5a9fcba3d33a4251fb6739d0c7)
 on March 1, 2018.
-The permalink for this manuscript version is <https://greenelab.github.io/deep-review/v/8ee97e2c362a0ac548c13476c26c92a5de8fca67/>.
+The permalink for this manuscript version is <https://greenelab.github.io/deep-review/v/4ae52c5170045d5a9fcba3d33a4251fb6739d0c7/>.
 </em></small>
 
 ## Authors
@@ -1952,7 +1952,10 @@ We gratefully acknowledge Christof Angermueller, Kumardeep Chaudhary, Gökcen Er
 We would like to thank Aaron Sheldon, who contributed text but did not formally approve the manuscript.
 We would like to thank Anna Greene for a careful proofreading of the manuscript in advance of the first submission.
 We would like to thank Robert Gieseke, Ruibang Luo, Sourav Singh, and GitHub user snikumbh for correcting typos, formatting, and references.
-Finally, we acknowledge funding from the Gordon and Betty Moore Foundation awards GBMF4552 (C.S.G. and D.S.H.) and GBMF4563 (D.J.H.);
+
+### Funding statement
+
+We acknowledge funding from the Gordon and Betty Moore Foundation awards GBMF4552 (C.S.G. and D.S.H.) and GBMF4563 (D.J.H.);
 the Howard Hughes Medical Institute (S.C.T.);
 the National Institutes of Health awards DP2GM123485 (A.K.), P30CA051008 (S.M.B.), R01AI116794 (B.K.B.), R01GM089652 (A.E.C.), R01GM089753 (J.X.), R01LM012222 (S.J.S.), R01LM012482 (S.J.S.), R21CA220398 (S.M.B.), T32GM007753 (B.T.D.), T32HG000046 (G.P.W.), and U54AI117924 (A.G.);
 the National Institutes of Health Intramural Research Program and National Library of Medicine (Y.P. and Z.L.);
