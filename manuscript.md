@@ -57,9 +57,9 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@0018bb7](https://github.com/greenelab/deep-review/tree/0018bb7c1c145325563720c3a7141815fef0a176)
+from [greenelab/deep-review@cda7eac](https://github.com/greenelab/deep-review/tree/cda7eace01c1fdf8026a7083bf41480cf8501566)
 on March 1, 2018.
-The permalink for this manuscript version is <https://greenelab.github.io/deep-review/v/0018bb7c1c145325563720c3a7141815fef0a176/>.
+The permalink for this manuscript version is <https://greenelab.github.io/deep-review/v/cda7eace01c1fdf8026a7083bf41480cf8501566/>.
 </em></small>
 
 ## Authors
@@ -359,8 +359,9 @@ Researchers have developed subtask-specific strategies to address this challenge
 
 Data augmentation provides an effective strategy for working with small training sets.
 The practice is exemplified by a series of papers that analyze images from mammographies [@VFw1VXDP; @JK8NuXy3; @9G9Hv1Pp; @Xxb4t3zO; @5kfDbGhA].
-To expand the number and diversity of images, researchers constructed adversarial training examples [@Xxb4t3zO].
-Adversarial training examples are constructed by applying a transformation that changes training images but not their content---for example by rotating an image by a random amount.
+To expand the number and diversity of images, researchers constructed adversarial [@Xxb4t3zO] or augmented [@5kfDbGhA] examples.
+Adversarial training examples are constructed by selecting targeted small transformations to input data that cause a model to produce very different outputs.
+Augmented training applies perturbations to the input data that do not change the underlying meaning, such as rotations for pathology images.
 An alternative in the domain is to train towards human-created features before subsequent fine-tuning [@JK8NuXy3], which can help to sidestep this challenge though it does give up deep learning techniques' strength as feature constructors.
 
 A second strategy repurposes features extracted from natural images by deep learning models, such as ImageNet [@cBVeXnZx], for new purposes.
@@ -568,9 +569,9 @@ Work on medical images, omics data in applications for which detailed metadata a
 Successful approaches to date in this domain have sidestepped this challenge by making methodological choices that either reduce the need for labeled examples or that use transformations to training data to increase the number of times it can be used before overfitting occurs.
 For example, the unsupervised and semi-supervised methods that we have discussed reduce the need for labeled examples [@5x3uMSKi].
 The anchor and learn framework [@A9JeoGV8] uses expert knowledge to identify high-confidence observations from which labels can be inferred.
-The strategies of adversarial training mentioned above can reduce overfitting, if transformations are available that preserve the meaningful content of the data while transforming irrelevant features [@Xxb4t3zO].
-While adversarial training examples can be easily imagined for certain methods that operate on images, it is more challenging to figure out what an equivalent transformation would be for a patient's clinical test results.
-Consequently, it may be hard to employ adversarial training examples with other applications.
+If transformations are available that preserve the meaningful content of the data, the adversarial and augmented training techniques discussed above can reduce overfitting.
+While these can be easily imagined for certain methods that operate on images, it is more challenging to figure out equivalent transformations for a patient's clinical test results.
+Consequently, it may be hard to employ such training examples with other applications.
 Finally, approaches that transfer features can also help use valuable training data most efficiently.
 Rajkomar et al. trained a deep neural network using generic images before tuning using only radiology images [@x6HXFAS4].
 Datasets that require many of the same types of features might be used for initial training, before fine tuning takes place with the more sparse biomedical examples.
