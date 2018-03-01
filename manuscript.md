@@ -36,7 +36,7 @@ author-meta:
 - Austin Huang
 - Anthony Gitter
 - Casey S. Greene
-date-meta: '2018-02-16'
+date-meta: '2018-03-01'
 keywords:
 - deep learning
 - review
@@ -57,9 +57,9 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@4438c7e](https://github.com/greenelab/deep-review/tree/4438c7eef4b2c839ec1f5fc122176588189c86ea)
-on February 16, 2018.
-The permalink for this manuscript version is <https://greenelab.github.io/deep-review/v/4438c7eef4b2c839ec1f5fc122176588189c86ea/>.
+from [greenelab/deep-review@8ee97e2](https://github.com/greenelab/deep-review/tree/8ee97e2c362a0ac548c13476c26c92a5de8fca67)
+on March 1, 2018.
+The permalink for this manuscript version is <https://greenelab.github.io/deep-review/v/8ee97e2c362a0ac548c13476c26c92a5de8fca67/>.
 </em></small>
 
 ## Authors
@@ -1066,9 +1066,9 @@ A field poised for dramatic revolution by deep learning is bioimage analysis.
 Thus far, the primary use of deep learning for biological images has been for segmentation---that is, for the identification of biologically relevant structures in images such as nuclei, infected cells, or vasculature---in fluorescence or even brightfield channels [@40EG4ZEU].
 Once so-called regions of interest have been identified, it is often straightforward to measure biological properties of interest, such as fluorescence intensities, textures, and sizes.
 Given the dramatic successes of deep learning in biological imaging, we simply refer to articles that review recent advancements [@MmRGFVUu; @40EG4ZEU; @TutLhFSz].
-For deep learning to become commonplace for biological image segmentation, we need user-friendly tools.
+For deep learning to become commonplace for biological image segmentation, however, user-friendly tools must be developed.
 
-We anticipate an additional paradigm shift in bioimaging that will be brought about by deep learning: what if images of biological samples, from simple cell cultures to three-dimensional organoids and tissue samples, could be mined for much more extensive biologically meaningful information than is currently standard? For example, a recent study demonstrated the ability to predict lineage fate in hematopoietic cells up to three generations in advance of differentiation [@On4vW5aU].
+We anticipate an additional paradigm shift in bioimaging that will be brought about by deep learning: what if images of biological samples, from simple cell cultures to three-dimensional organoids and tissue samples, could be mined for much more extensive biologically meaningful information than is currently standard? For example, a recent study demonstrated the ability to predict lineage fate in hematopoietic cells up to three generations in advance of differentiation [@On4vW5aU], and deep learning also revealed the degradation of red blood cells during storage in blood banks [@u9o13XJC].
 In biomedical research, most often biologists decide in advance what feature to measure in images from their assay system.
 Although classical methods of segmentation and feature extraction can produce hundreds of metrics per cell in an image, deep learning is unconstrained by human intuition and can in theory extract more subtle features through its hidden nodes.
 Already, there is evidence deep learning can surpass the efficacy of classical methods [@gllSeTW], even using generic deep convolutional networks trained on natural images [@BMg062hc], known as transfer learning.
@@ -1910,7 +1910,7 @@ To facilitate citation, we [defined](https://github.com/greenelab/deep-review/bl
 We supported citations to the following identifier types (in order of preference): DOIs, PubMed Central IDs, PubMed IDs, arXiv IDs, and URLs.
 References were automatically generated from citation metadata by querying APIs to generate [Citation Style Language](http://citationstyles.org/) (CSL) JSON items for each reference.
 [Pandoc](http://pandoc.org/) and [pandoc-citeproc](https://github.com/jgm/pandoc-citeproc) converted the markdown to HTML and PDF, while rendering the formatted citations and references.
-In total, referenced works consisted of 369 DOIs, 6 PubMed Central records, 129 arXiv manuscripts, and 48 URLs (webpages as well as manuscripts lacking standardized identifiers).
+In total, referenced works consisted of 370 DOIs, 6 PubMed Central records, 129 arXiv manuscripts, and 48 URLs (webpages as well as manuscripts lacking standardized identifiers).
 
 We implemented continuous analysis so the manuscript was automatically regenerated whenever the source changed [@Qh7xTLwz].
 We configured Travis CI---a continuous integration service---to fetch new citation metadata and rebuild the manuscript for every commit.
