@@ -57,9 +57,9 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@cda7eac](https://github.com/greenelab/deep-review/tree/cda7eace01c1fdf8026a7083bf41480cf8501566)
+from [greenelab/deep-review@330b8d6](https://github.com/greenelab/deep-review/tree/330b8d66a38c8cd9452c93aed6f1d47c28dd6076)
 on March 1, 2018.
-The permalink for this manuscript version is <https://greenelab.github.io/deep-review/v/cda7eace01c1fdf8026a7083bf41480cf8501566/>.
+The permalink for this manuscript version is <https://greenelab.github.io/deep-review/v/330b8d66a38c8cd9452c93aed6f1d47c28dd6076/>.
 </em></small>
 
 ## Authors
@@ -288,7 +288,7 @@ In particular, the results are still dependent on the underlying study design an
 With this review, we ask the question: what is needed for deep learning to transform how we categorize, study, and treat individuals to maintain or restore health? We choose a high bar for "transform." Andrew Grove, the former CEO of Intel, coined the term Strategic Inflection Point to refer to a change in technologies or environment that requires a business to be fundamentally reshaped [@mAXsmd43].
 Here, we seek to identify whether deep learning is an innovation that can induce a Strategic Inflection Point in the practice of biology or medicine.
 
-There are already a number of reviews focused on applications of deep learning in biology [@yXqhuueV; @1VZjheOA; @irSe12Sm; @G00xvi94; @MmRGFVUu], healthcare [@11I7bLcP3; @1FkYUUryG], and drug discovery [@gJE0ExFr; @zCt6PUXj; @1DTUK3YyI; @xPkT1z7D].
+There are already a number of reviews focused on applications of deep learning in biology [@yXqhuueV; @1VZjheOA; @irSe12Sm; @G00xvi94; @MmRGFVUu], healthcare [@11I7bLcP3; @1FkYUUryG; @brPjEjYw], and drug discovery [@gJE0ExFr; @zCt6PUXj; @1DTUK3YyI; @xPkT1z7D].
 Under our guiding question, we sought to highlight cases where deep learning enabled researchers to solve challenges that were previously considered infeasible or makes difficult, tedious analyses routine.
 We also identified approaches that researchers are using to sidestep challenges posed by biomedical data.
 We find that domain-specific considerations have greatly influenced how to best harness the power and flexibility of deep learning.
@@ -1227,6 +1227,7 @@ He posited that while neural networks have several advantages in representationa
 In addition, the challenges faced by physicians parallel those encountered by deep learning.
 For a given patient, the number of possible diseases is very large, with a long tail of rare diseases and patients are highly heterogeneous and may present with very different signs and symptoms for the same disease.
 Still, in 2006 Lisboa and Taktak [@qxxwkSAT] examined the use of artificial neural networks in medical journals, concluding that they improved healthcare relative to traditional screening methods in 21 of 27 studies.
+Recent applications of deep learning in pharmacogenomics and pharmacoepigenomics show the potential for improving patient treatment response and outcome prediction using patient-specific data, pharmacogenomic targets, and pharmacological knowledge bases [@brPjEjYw].
 
 While further progress has been made in using deep learning for clinical decision making, it is hindered by a challenge common to many deep learning applications: it is much easier to predict an outcome than to suggest an action to change the outcome.
 Several attempts [@1FE0F2pQ; @qXdO2aMm] at recasting the clinical decision-making problem into a prediction problem (i.e. prediction of which treatment will most improve the patient's health) have accurately predicted survival patterns, but technical and medical challenges remain for clinical adoption (similar to those for categorization).
@@ -1911,7 +1912,7 @@ To facilitate citation, we [defined](https://github.com/greenelab/deep-review/bl
 We supported citations to the following identifier types (in order of preference): DOIs, PubMed Central IDs, PubMed IDs, arXiv IDs, and URLs.
 References were automatically generated from citation metadata by querying APIs to generate [Citation Style Language](http://citationstyles.org/) (CSL) JSON items for each reference.
 [Pandoc](http://pandoc.org/) and [pandoc-citeproc](https://github.com/jgm/pandoc-citeproc) converted the markdown to HTML and PDF, while rendering the formatted citations and references.
-In total, referenced works consisted of 369 DOIs, 6 PubMed Central records, 129 arXiv manuscripts, and 48 URLs (webpages as well as manuscripts lacking standardized identifiers).
+In total, referenced works consisted of 369 DOIs, 6 PubMed Central records, 130 arXiv manuscripts, and 48 URLs (webpages as well as manuscripts lacking standardized identifiers).
 
 We implemented continuous analysis so the manuscript was automatically regenerated whenever the source changed [@Qh7xTLwz].
 We configured Travis CI---a continuous integration service---to fetch new citation metadata and rebuild the manuscript for every commit.

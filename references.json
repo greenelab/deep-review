@@ -4806,6 +4806,52 @@
     "id": "nMXQBadV"
   },
   {
+    "arxiv_id": "1801.08570v1",
+    "version": "1",
+    "URL": "https://arxiv.org/abs/1801.08570v1",
+    "title": "Deep Learning in Pharmacogenomics: From Gene Regulation to Patient\n  Stratification",
+    "issued": {
+      "date-parts": [
+        [
+          "2018",
+          "01",
+          "25"
+        ]
+      ]
+    },
+    "author": [
+      {
+        "literal": "Alexandr A. Kalinin"
+      },
+      {
+        "literal": "Gerald A. Higgins"
+      },
+      {
+        "literal": "Narathip Reamaroon"
+      },
+      {
+        "literal": "S. M. Reza Soroushmehr"
+      },
+      {
+        "literal": "Ari Allyn-Feuer"
+      },
+      {
+        "literal": "Ivo D. Dinov"
+      },
+      {
+        "literal": "Kayvan Najarian"
+      },
+      {
+        "literal": "Brian D. Athey"
+      }
+    ],
+    "container-title": "arXiv",
+    "publisher": "arXiv",
+    "abstract": "This Perspective provides examples of current and future applications of deep\nlearning in pharmacogenomics, including: (1) identification of novel regulatory\nvariants located in noncoding domains and their function as applied to\npharmacoepigenomics; (2) patient stratification from medical records; and (3)\nprediction of drugs, targets, and their interactions. Deep learning\nencapsulates a family of machine learning algorithms that over the last decade\nhas transformed many important subfields of artificial intelligence (AI) and\nhas demonstrated breakthrough performance improvements on a wide range of tasks\nin biomedicine. We anticipate that in the future deep learning will be widely\nused to predict personalized drug response and optimize medication selection\nand dosing, using knowledge extracted from large and complex molecular,\nepidemiological, clinical, and demographic datasets.",
+    "type": "report",
+    "id": "brPjEjYw"
+  },
+  {
     "indexed": {
       "date-parts": [
         [
