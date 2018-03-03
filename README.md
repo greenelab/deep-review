@@ -61,6 +61,8 @@ We'll operate on a pull request model.
 Anyone whose contributions meet the ICJME standards of authorship will be included as an author on the manuscript.
 I can't guarantee that it will be accepted, but I look forward to trying this approach out.
 
+On August 5, Deep Review was announced with a [tweet](https://twitter.com/GreeneScientist/status/761606546774163456).
+
 ## Manubot
 
 <!-- usage note: do not edit this section -->
@@ -69,6 +71,8 @@ Manubot is a system for writing scholarly manuscripts via GitHub.
 Manubot automates citations and references, versions manuscripts using git, and enables collaborative writing via GitHub.
 The [Manubot Rootstock repository](https://git.io/vQSvo) is a general purpose template for creating new Manubot instances.
 See [`USAGE.md`](USAGE.md) for documentation how to write a manuscript.
+
+Please open [an issue](https://github.com/greenelab/manubot-rootstock/issues) for questions related to Manubot usage, bug reports, or general inquiries.
 
 ### Repository directories & files
 
@@ -98,6 +102,12 @@ sh build/build.sh
 # Or monitor the content directory, and automatically rebuild the manuscript
 # when a change is detected.
 sh build/autobuild.sh
+
+# At this point, the HTML & PDF outputs will have been created. The remaining
+# commands are for serving the webpage to view the HTML manuscript locally.
+
+# Configure the webpage directory
+python build/webpage.py
 
 # View the manuscript locally at http://localhost:8000/
 cd webpage
