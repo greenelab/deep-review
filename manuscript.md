@@ -57,9 +57,9 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/deep-review/v/09cb8c6ff2278e69108bd80fc112a3fdc09f02be/))
+([permalink](https://greenelab.github.io/deep-review/v/fafc92abf2716166060a22a3bc60d123011d3e5f/))
 was automatically generated
-from [greenelab/deep-review@09cb8c6](https://github.com/greenelab/deep-review/tree/09cb8c6ff2278e69108bd80fc112a3fdc09f02be)
+from [greenelab/deep-review@fafc92a](https://github.com/greenelab/deep-review/tree/fafc92abf2716166060a22a3bc60d123011d3e5f)
 on March 5, 2018.
 </em></small>
 
@@ -265,7 +265,7 @@ A recent book from Goodfellow et al. covers neural network architectures in deta
 | Recurrent neural network (RNN) | A neural network with cycles between nodes within a hidden layer. | The RNN architecture is used for sequential data---such as clinical time series and text or genome sequences. |
 | Long short-term memory (LSTM) neural network | This special type of RNN has features that enable models to capture longer-term dependencies. | LSTMs are gaining a substantial foothold in the analysis of natural language, and may become more widely applied to biological sequence data. |
 | Autoencoder (AE) | A NN where the training objective is to minimize the error between the output layer and the input layer. Such neural networks are unsupervised and are often used for dimensionality reduction. | Autoencoders have been used for unsupervised analysis of gene expression data as well as data extracted from the electronic health record. |
-| Variational autoencoder (VAE) | This special type of AE has the added constraint that the model is trained to learn normally-distributed features. | VAEs have a track record of producing a valuable reduced representation in the imaging domain, and some early publications have used VAEs to analyze gene expression data. |
+| Variational autoencoder (VAE) | This special type of generative AE learns a probabilistic latent variable model. | VAEs have been shown to often produce meaningful reduced representations in the imaging domain, and some early publications have used VAEs to analyze gene expression data. |
 | Denoising autoencoder (DA) | This special type of AE includes a step where noise is added to the input during the training process. The denoising step acts as smoothing and may allow for effective use on  input data that is inherently noisy. | Like AEs, DAs have been used for unsupervised analysis of gene expression data as well as data extracted from the electronic health record. |
 | Generative neural network | Neural networks that fall into this class can be used to generate data similar to input data. These models can be sampled to produce hypothetical examples. | A number of the unsupervised learning neural network architectures that are summarized here can be used in a generative fashion. |
 | Restricted Boltzmann machine (RBM) | A generative NN that forms the building block for many deep learning approaches, having a single input layer and a single hidden layer, with no connections between the nodes within each layer | RBMs have been applied to combine multiple types of omic data (e.g. DNA methylation, mRNA expression, and miRNA expression). |
@@ -1961,7 +1961,7 @@ We gratefully acknowledge Christof Angermueller, Kumardeep Chaudhary, Gökcen Er
 We would like to thank Aaron Sheldon, who contributed text but did not formally approve the manuscript.
 We would like to thank Anna Greene for a careful proofreading of the manuscript in advance of the first submission.
 We would like to thank Sebastian Raschka for clarifying edits to the abstract and introduction.
-We would like to thank Robert Gieseke, Ruibang Luo, Sourav Singh, and GitHub user snikumbh for correcting typos, formatting, and references.
+We would like to thank Robert Gieseke, Ruibang Luo, Stephen Ra, Sourav Singh, and GitHub user snikumbh for correcting typos, formatting, and references.
 
 ### Funding statement
 
