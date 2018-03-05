@@ -36,7 +36,7 @@ author-meta:
 - Austin Huang
 - Anthony Gitter
 - Casey S. Greene
-date-meta: '2018-03-01'
+date-meta: '2018-03-05'
 keywords:
 - deep learning
 - review
@@ -57,9 +57,9 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript was automatically generated
-from [greenelab/deep-review@330b8d6](https://github.com/greenelab/deep-review/tree/330b8d66a38c8cd9452c93aed6f1d47c28dd6076)
-on March 1, 2018.
-The permalink for this manuscript version is <https://greenelab.github.io/deep-review/v/330b8d66a38c8cd9452c93aed6f1d47c28dd6076/>.
+from [greenelab/deep-review@588cfa6](https://github.com/greenelab/deep-review/tree/588cfa62077acb5d4eb60a17ee9731e15057b90c)
+on March 5, 2018.
+The permalink for this manuscript version is <https://greenelab.github.io/deep-review/v/588cfa62077acb5d4eb60a17ee9731e15057b90c/>.
 </em></small>
 
 ## Authors
@@ -182,15 +182,14 @@ Casey S. Greene<sup>2,†</sup>
 
 ## Abstract {.page_break_before}
 
-Deep learning, which describes a class of machine learning algorithms, has recently showed impressive results across a variety of domains.
-Biology and medicine are data rich, but the data are complex and often ill-understood.
-Problems of this nature may be particularly well-suited to deep learning techniques.
-We examine applications of deep learning to a variety of biomedical problems---patient classification, fundamental biological processes, and treatment of patients---and discuss whether deep learning will transform these tasks or if the biomedical sphere poses unique challenges.
-We find that deep learning has yet to revolutionize or definitively resolve any of these problems, but promising advances have been made on the prior state of the art.
-Even when improvement over a previous baseline has been modest, we have seen signs that deep learning methods may speed or aid human investigation.
-More work is needed to address concerns related to interpretability and how to best model each problem.
+Deep learning describes a class of machine learning algorithms that are capable of combining raw inputs into layers of intermediate features. These algorithms have recently shown impressive results across a variety of domains.
+Biology and medicine are data-rich disciplines, but the data are complex and often ill-understood. Hence, deep learning techniques may be particularly well-suited to solve problems of these fields.
+We examine applications of deep learning to a variety of biomedical problems---patient classification, fundamental biological processes, and treatment of patients---and discuss whether deep learning will be able to transform these tasks or if the biomedical sphere poses unique challenges.
+Following from an extensive literature review, we find that deep learning has yet to revolutionize biomedicine or definitively resolve any of the most pressing challenges in the field, but promising advances have been made on the prior state of the art.
+Even though improvements over previous baselines have been modest in general, the recent progress indicates that deep learning methods will provide valuable means for speeding up or aiding human investigation.
+Though progress has been made linking a specific neural network's prediction to input features, understanding how users should interpret these models to make testable hypotheses about the system under study remains an open challenge.
 Furthermore, the limited amount of labeled data for training presents problems in some domains, as do legal and privacy constraints on work with sensitive health records.
-Nonetheless, we foresee deep learning powering changes at both bench and bedside with the potential to transform several areas of biology and medicine.
+Nonetheless, we foresee deep learning enabling changes at both bench and bedside with the potential to transform several areas of biology and medicine.
 
 
 ## Introduction to deep learning
@@ -202,11 +201,11 @@ Automated algorithms that extract meaningful patterns could lead to actionable k
 
 The term _deep learning_ has come to refer to a collection of new techniques that, together, have demonstrated breakthrough gains over existing best-in-class machine learning algorithms across several fields.
 For example, over the past five years these methods have revolutionized image classification and speech recognition due to their flexibility and high accuracy [@BeijBSRE].
-More recently, deep learning algorithms have shown promise in fields as diverse as high-energy physics [@TDruxF1s], dermatology [@XnYNYoYB], and translation among written languages [@4TK06zOf].
+More recently, deep learning algorithms have shown promise in fields as diverse as high-energy physics [@TDruxF1s], computational chemistry [@zCt6PUXj], dermatology [@XnYNYoYB], and translation among written languages [@4TK06zOf].
 Across fields, "off-the-shelf" implementations of these algorithms have produced comparable or higher accuracy than previous best-in-class methods that required years of extensive customization, and specialized implementations are now being used at industrial scales.
 
-Deep learning approaches grew from research in neural networks, which were first proposed in 1943 [@1HVDhhwpK] as a model for how our brains process information.
-The history of neural networks is interesting in its own right [@1G5eCiq4d].
+Deep learning approaches grew from research on artificial neurons, which were first proposed in 1943 [@1HVDhhwpK] as a model for how the neurons in a biological brain process information.
+The history of artificial neural networks---referred to as "neural networks" throughout this article---is interesting in its own right [@1G5eCiq4d].
 In neural networks, inputs are fed into the input layer, which feeds into one or more hidden layers, which eventually link to an output layer.
 A layer consists of a set of nodes, sometimes called "features" or "units," which are connected via edges to the immediately earlier and the immediately deeper layers.
 In some special neural network architectures, nodes can connect to themselves with a delay.
@@ -221,11 +220,11 @@ In particular, deep learning approaches can be used both in *supervised* applica
 Deep learning methods may in fact combine both of these steps.
 When sufficient data are available and labeled, these methods construct features tuned to a specific problem and combine those features into a predictor.
 In fact, if the dataset is "labeled" with binary classes, a simple neural network with no hidden layers and no cycles between units is equivalent to logistic regression if the output layer is a sigmoid (logistic) function of the input layer.
-Similarly, for continuous outcomes, linear regression can be seen as a simple neural network.
-Thus, in some ways, supervised deep learning approaches can be seen as a generalization of regression models that allow for greater flexibility.
+Similarly, for continuous outcomes, linear regression can be seen as a single-layer neural network.
+Thus, in some ways, supervised deep learning approaches can be seen as an extension of regression models that allow for greater flexibility and are especially well-suited for modeling non-linear relationships among the input features.
 Recently, hardware improvements and very large training datasets have allowed these deep learning techniques to surpass other machine learning algorithms for many problems.
 In a famous and early example, scientists from Google demonstrated that a neural network "discovered" that cats, faces, and pedestrians were important components of online videos [@IiNJE32f] without being told to look for them.
-What if, more generally, deep learning could solve the challenges presented by the growth of data in biomedicine? Could these algorithms identify the "cats" hidden in our data---the patterns unknown to the researcher---and suggest ways to act on them? In this review, we examine deep learning's application to biomedical science and discuss the unique challenges that biomedical data pose for deep learning methods.
+What if, more generally, deep learning take advantage of the growth of data in biomedicine to tackle challenges in this field? Could these algorithms identify the "cats" hidden in our data---the patterns unknown to the researcher---and suggest ways to act on them? In this review, we examine deep learning's application to biomedical science and discuss the unique challenges that biomedical data pose for deep learning methods.
 
 Several important advances make the current surge of work done in this area possible.
 Easy-to-use software packages have brought the techniques of the field out of the specialist's toolkit to a broad community of computational scientists.
@@ -1953,6 +1952,7 @@ The remaining authors have no competing interests to declare.
 We gratefully acknowledge Christof Angermueller, Kumardeep Chaudhary, Gökcen Eraslan, Mikael Huss, Bharath Ramsundar and Xun Zhu for their discussion of the manuscript and reviewed papers on GitHub.
 We would like to thank Aaron Sheldon, who contributed text but did not formally approve the manuscript.
 We would like to thank Anna Greene for a careful proofreading of the manuscript in advance of the first submission.
+We would like to thank Sebastian Raschka for clarifying edits to the abstract and introduction.
 We would like to thank Robert Gieseke, Ruibang Luo, Sourav Singh, and GitHub user snikumbh for correcting typos, formatting, and references.
 
 ### Funding statement
