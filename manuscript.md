@@ -57,9 +57,9 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/deep-review/v/fafc92abf2716166060a22a3bc60d123011d3e5f/))
+([permalink](https://greenelab.github.io/deep-review/v/9c2d9c26b8fd40c321a80b854e2e74677cd38c79/))
 was automatically generated
-from [greenelab/deep-review@fafc92a](https://github.com/greenelab/deep-review/tree/fafc92abf2716166060a22a3bc60d123011d3e5f)
+from [greenelab/deep-review@9c2d9c2](https://github.com/greenelab/deep-review/tree/9c2d9c26b8fd40c321a80b854e2e74677cd38c79)
 on March 5, 2018.
 </em></small>
 
@@ -257,7 +257,7 @@ A recent book from Goodfellow et al. covers neural network architectures in deta
 |-----|----------|----------|
 | Supervised learning | Machine-learning approaches with goal of prediction of labels or outcomes | |
 | Unsupervised learning | Machine-learning approaches with goal of data summarization or pattern identification | |
-| Neural network  (NN) | Machine-learning approach inspired by biological neurons where inputs are fed into one or more layers, producing an output layer | |
+| Neural network (NN) | Machine-learning approach inspired by biological neurons where inputs are fed into one or more layers, producing an output layer | |
 | Deep neural network | NN with multiple hidden layers. Training happens over the network, and consequently such architectures allow for feature construction to occur alongside optimization of the overall training objective. | |
 | Feed-forward neural network (FFNN) | NN that does not have cycles between nodes in the same layer | Most of the examples below are special cases of FFNNs, except recurrent neural networks. |
 | Multi-layer perceptron (MLP) | Type of FFNN with at least one hidden layer where each deeper layer is a nonlinear function of each earlier layer | MLPs do not impose structure and are frequently used when there is no natural ordering of the inputs (e.g. as with gene expression measurements). |
@@ -266,7 +266,7 @@ A recent book from Goodfellow et al. covers neural network architectures in deta
 | Long short-term memory (LSTM) neural network | This special type of RNN has features that enable models to capture longer-term dependencies. | LSTMs are gaining a substantial foothold in the analysis of natural language, and may become more widely applied to biological sequence data. |
 | Autoencoder (AE) | A NN where the training objective is to minimize the error between the output layer and the input layer. Such neural networks are unsupervised and are often used for dimensionality reduction. | Autoencoders have been used for unsupervised analysis of gene expression data as well as data extracted from the electronic health record. |
 | Variational autoencoder (VAE) | This special type of generative AE learns a probabilistic latent variable model. | VAEs have been shown to often produce meaningful reduced representations in the imaging domain, and some early publications have used VAEs to analyze gene expression data. |
-| Denoising autoencoder (DA) | This special type of AE includes a step where noise is added to the input during the training process. The denoising step acts as smoothing and may allow for effective use on  input data that is inherently noisy. | Like AEs, DAs have been used for unsupervised analysis of gene expression data as well as data extracted from the electronic health record. |
+| Denoising autoencoder (DA) | This special type of AE includes a step where noise is added to the input during the training process. The denoising step acts as smoothing and may allow for effective use on input data that is inherently noisy. | Like AEs, DAs have been used for unsupervised analysis of gene expression data as well as data extracted from the electronic health record. |
 | Generative neural network | Neural networks that fall into this class can be used to generate data similar to input data. These models can be sampled to produce hypothetical examples. | A number of the unsupervised learning neural network architectures that are summarized here can be used in a generative fashion. |
 | Restricted Boltzmann machine (RBM) | A generative NN that forms the building block for many deep learning approaches, having a single input layer and a single hidden layer, with no connections between the nodes within each layer | RBMs have been applied to combine multiple types of omic data (e.g. DNA methylation, mRNA expression, and miRNA expression). |
 | Deep belief network (DBN) | Generative NN with several hidden layers, which can be obtained from combining multiple RBMs | DBNs can be used to predict new relationships in a drug-target interaction network. |
@@ -473,7 +473,7 @@ Some studies focused on jointly extracting biomedical entities and relations sim
 For example, both multichannel dependency-based CNNs [@1H4fyFU1f] and shortest path-based CNNs [@19r6xFsZQ; @ULZPgbOq] are well-suited for sentence-based protein-protein extraction.
 Jiang et al. proposed a biomedical domain-specific word embedding model to reduce the manual labor of designing semantic representation for the same task [@MY6FXgFn].
 Gu et al. employed a maximum entropy model and a CNN model for chemical-induced disease relation extraction at the inter- and intra-sentence level, respectively [@14afj7TT1].
-For drug-drug interaction, Zhao et al. used a CNN that employs word embeddings with the syntactic information of a sentence as well as features of  part-of-speech tags and dependency trees [@8NrcroGt].
+For drug-drug interaction, Zhao et al. used a CNN that employs word embeddings with the syntactic information of a sentence as well as features of part-of-speech tags and dependency trees [@8NrcroGt].
 Asada et al. experimented with an attention CNN [@zUPTZa6w], and Yi et al. a RNN model with multiple attention layers [@M6JCKCLX].
 In both cases, it is a single model with attention mechanism, which allows the decoder to focus on different parts of the source sentence.
 As a result, it does not require dependency parsing or training multiple models.
@@ -519,7 +519,7 @@ It is difficult for us to provide a strong statement on the broad utility of the
 Manuscripts in this area tend to compare algorithms applied to the same data but lack a comparison against overall best-practices for one or more tasks addressed by these methods.
 Techniques have been developed for free text medical notes [@XQtuRkTU], ICD and National Drug Codes [@4QDXEv4C; @zVoUcFPZ], and claims data [@TwvauiTv].
 Methods for neural embeddings learned from electronic health records have at least some ability to predict disease-disease associations and implicate genes with a statistical association with a disease [@1G2xP5yOM], but the evaluations performed did not differentiate between simple predictions (i.e. the same disease in different sites of the body) and non-intuitive ones.
-Jagannatha and Yu  [@rqGoVCuH] further employed a bidirectional LSTM structure to extract adverse drug events from electronic health records, and Lin et al. [@8YmxYueq] investigated using CNN to extract temporal relations.
+Jagannatha and Yu [@rqGoVCuH] further employed a bidirectional LSTM structure to extract adverse drug events from electronic health records, and Lin et al. [@8YmxYueq] investigated using CNN to extract temporal relations.
 While promising, a lack of rigorous evaluations of the real-world utility of these kinds of features makes current contributions in this area difficult to evaluate.
 Comparisons need to be performed to examine the true utility against leading approaches (i.e. algorithms and data) as opposed to simply evaluating multiple algorithms on the same potentially limited dataset.
 
@@ -588,7 +588,7 @@ Methods to accomplish more with little high-quality labeled data arose in other 
 In data programming, noisy automated labeling functions are integrated.
 
 Numerous commentators have described data as the new oil [@6fE0Vrba; @o8mib4CN].
-The idea behind this metaphor is that data are available in large quantities, valuable once refined, and this underlying resource  will enable a data-driven revolution in how work is done.
+The idea behind this metaphor is that data are available in large quantities, valuable once refined, and this underlying resource will enable a data-driven revolution in how work is done.
 Contrasting with this perspective, Ratner, Bach, and Ré described labeled training data, instead of data, as "The _New_ New Oil"
 [@hfcf5Hmi].
 In this framing, data are abundant and not a scarce resource.
@@ -607,7 +607,7 @@ We touch on this challenge in Discussion.
 Beyond the cultural hurdles around data sharing, there are also technological and legal hurdles related to sharing individual health records or deep models built from such records.
 This subsection deals primarily with these challenges.
 
-EHRs are designed chiefly for clinical, administrative and financial purposes, such as patient care, insurance and  billing [@FkSZ1qmz].
+EHRs are designed chiefly for clinical, administrative and financial purposes, such as patient care, insurance, and billing [@FkSZ1qmz].
 Science is at best a tertiary priority, presenting challenges to EHR-based research in general and to deep learning research in particular.
 Although there is significant work in the literature around EHR data quality and the impact on research [@odRiFxnB], we focus on three types of challenges: local bias, wider standards, and legal issues.
 Note these problems are not restricted to EHRs but can also apply to any large biomedical dataset, e.g. clinical trial data.
@@ -981,7 +981,7 @@ Beyond secondary structure and contact maps, we anticipate increased attention t
 
 ### Structure determination and cryo-electron microscopy
 
-Complementing computational prediction approaches, cryo-electron microscopy (cryo-EM) allows near-atomic resolution determination of protein models by comparing individual electron micrographs [@bSYQrdJA].  
+Complementing computational prediction approaches, cryo-electron microscopy (cryo-EM) allows near-atomic resolution determination of protein models by comparing individual electron micrographs [@bSYQrdJA].
 Detailed structures require tens of thousands of protein images [@Ud5iHvkw].
 Technological development has increased the throughput of image capture.
 New hardware, such as direct electron detectors, has made large-scale image production practical, while new software has focused on rapid, automated image processing.
