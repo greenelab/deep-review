@@ -57,9 +57,9 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/deep-review/v/77fa6be69b5060563988bbd0031fa45958b81ccb/))
+([permalink](https://greenelab.github.io/deep-review/v/09cb8c6ff2278e69108bd80fc112a3fdc09f02be/))
 was automatically generated
-from [greenelab/deep-review@77fa6be](https://github.com/greenelab/deep-review/tree/77fa6be69b5060563988bbd0031fa45958b81ccb)
+from [greenelab/deep-review@09cb8c6](https://github.com/greenelab/deep-review/tree/09cb8c6ff2278e69108bd80fc112a3fdc09f02be)
 on March 5, 2018.
 </em></small>
 
@@ -410,6 +410,7 @@ In more recent work, Wang et al. [@mbEp6jNr] analyzed stained slides of lymph no
 On this task a pathologist has about a 3% error rate.
 The pathologist did not produce any false positives, but did have a number of false negatives.
 The algorithm had about twice the error rate of a pathologist, but the errors were not strongly correlated.
+Combining pre-trained deep network architectures with multiple augmentation techniques enabled accurate detection of breast cancer from a very small set of histology images with less than 100 images per class [@4L1QgpXP].
 In this area, these algorithms may be ready to be incorporated into existing tools to aid pathologists and reduce the false negative rate.
 Ensembles of deep learning and human experts may help overcome some of the challenges presented by data limitations.
 
@@ -433,6 +434,12 @@ Evaluation on four independent datasets demonstrated that NegBio is highly accur
 The resulting dataset [@odFR7ptt] consisted of 112,120 frontal-view chest X-ray images from 30,805 patients, and each image was associated with one or more *text-mined* (weakly-labeled) pathology categories (e.g. pneumonia and cardiomegaly) or "no finding" otherwise.
 Further, Wang et al. [@PGi9g7yV] used this dataset with a unified weakly-supervised multi-label image classification framework, to detect common thoracic diseases.
 It showed superior performance over a benchmark using fully-labeled data.
+
+Another example of semi-automated label generation for hand radiograph segmentation employed positive mining, an iterative procedure that combines manual labeling with automatic processing [@jTh3Ds6m].
+First, the initial training set was created by manually labeling 100 of 12,600 unlabeled radiographs that were used to train a model and predict labels for the rest of the dataset.
+Then, poor quality predictions were discarded through manual inspection, the initial training set was expanded with the acceptable segmentations, and the process was repeated.
+This procedure had to be repeated six times to obtain good quality segmentation labeling for all radiographs, except for 100 corner cases that still required manual annotation.
+These annotations allowed accurate segmentation of all hand images in the test set and boosted the final performance in radiograph classification [@jTh3Ds6m].
 
 With the exception of natural image-like problems (e.g. melanoma detection), biomedical imaging poses a number of challenges for deep learning.
 Datasets are typically small, annotations can be sparse, and images are often high-dimensional, multimodal, and multi-channel.
@@ -1912,7 +1919,7 @@ To facilitate citation, we [defined](https://github.com/greenelab/deep-review/bl
 We supported citations to the following identifier types (in order of preference): DOIs, PubMed Central IDs, PubMed IDs, arXiv IDs, and URLs.
 References were automatically generated from citation metadata by querying APIs to generate [Citation Style Language](http://citationstyles.org/) (CSL) JSON items for each reference.
 [Pandoc](http://pandoc.org/) and [pandoc-citeproc](https://github.com/jgm/pandoc-citeproc) converted the markdown to HTML and PDF, while rendering the formatted citations and references.
-In total, referenced works consisted of 370 DOIs, 6 PubMed Central records, 130 arXiv manuscripts, and 48 URLs (webpages as well as manuscripts lacking standardized identifiers).
+In total, referenced works consisted of 372 DOIs, 6 PubMed Central records, 130 arXiv manuscripts, and 48 URLs (webpages as well as manuscripts lacking standardized identifiers).
 
 We implemented continuous analysis so the manuscript was automatically regenerated whenever the source changed [@Qh7xTLwz].
 We configured Travis CI---a continuous integration service---to fetch new citation metadata and rebuild the manuscript for every commit.

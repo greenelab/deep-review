@@ -41101,6 +41101,254 @@
     "indexed": {
       "date-parts": [
         [
+          2017,
+          12,
+          16
+        ]
+      ],
+      "date-time": "2017-12-16T06:40:22Z",
+      "timestamp": 1513406422086
+    },
+    "posted": {
+      "date-parts": [
+        [
+          2017,
+          12,
+          14
+        ]
+      ]
+    },
+    "group-title": "Pathology",
+    "reference-count": 0,
+    "publisher": "Cold Spring Harbor Laboratory",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "accepted": {
+      "date-parts": [
+        [
+          2017,
+          12,
+          15
+        ]
+      ]
+    },
+    "abstract": "<jats:p>Skeletal bone age assessment is a common clinical practice to diagnose endocrine and metabolic disorders in child development. In this paper, we describe a fully automated deep learning approach to the problem of bone age assessment using data from the 2017 Pediatric Bone Age Challenge organized by the Radiological Society of North America. The dataset for this competition is consisted of 12.6k radiological images. Each radiograph in this dataset is an image of a left hand labeled by the bone age and the sex of a patient. Our approach utilizes several deep neural network architectures trained end-to-end. We use images of whole hands as well as specific parts of a hand for both training and inference. This approach allows us to measure the importance of specific hand bones for the automated bone age analysis. We further evaluate performance of the method in the context of skeletal development stages. Our approach outperforms other common methods for bone age assessment.</jats:p>",
+    "DOI": "10.1101/234120",
+    "type": "manuscript",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          12,
+          15
+        ]
+      ],
+      "date-time": "2017-12-15T06:10:25Z",
+      "timestamp": 1513318225000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "Pediatric Bone Age Assessment Using Deep Convolutional Neural Networks",
+    "prefix": "10.1101",
+    "author": [
+      {
+        "ORCID": "http://orcid.org/0000-0003-2946-5525",
+        "authenticated-orcid": false,
+        "given": "Vladimir",
+        "family": "Iglovikov",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0003-1359-8534",
+        "authenticated-orcid": false,
+        "given": "Alexander",
+        "family": "Rakhlin",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0003-4563-3226",
+        "authenticated-orcid": false,
+        "given": "Alexandr",
+        "family": "Kalinin",
+        "affiliation": []
+      },
+      {
+        "given": "Alexey",
+        "family": "Shvets",
+        "affiliation": []
+      }
+    ],
+    "member": "246",
+    "container-title": [],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://syndication.highwire.org/content/doi/10.1101/234120",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          12,
+          16
+        ]
+      ],
+      "date-time": "2017-12-16T06:11:10Z",
+      "timestamp": 1513404670000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          12,
+          14
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "https://doi.org/10.1101/234120",
+    "relation": {},
+    "short_url": "https://doi.org/gc3cfb",
+    "id": "jTh3Ds6m"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2018,
+          2,
+          8
+        ]
+      ],
+      "date-time": "2018-02-08T10:12:39Z",
+      "timestamp": 1518084759922
+    },
+    "posted": {
+      "date-parts": [
+        [
+          2018,
+          2,
+          5
+        ]
+      ]
+    },
+    "group-title": "Pathology",
+    "reference-count": 0,
+    "publisher": "Cold Spring Harbor Laboratory",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "accepted": {
+      "date-parts": [
+        [
+          2018,
+          2,
+          5
+        ]
+      ]
+    },
+    "abstract": "<jats:p>Breast cancer is one of the main causes of cancer death worldwide. Early diagnostics significantly increases the chances of correct treatment and survival, but this process is tedious and often leads to a disagreement between pathologists. Computer-aided diagnosis systems showed potential for improving the diagnostic accuracy. In this work, we develop the computational approach based on deep convolution neural networks for breast cancer histology image classification. Hematoxylin and eosin stained breast histology microscopy image dataset is provided as a part of the ICIAR 2018 Grand Challenge on Breast Cancer Histology Images. Our approach utilizes several deep neural network architectures and gradient boosted trees classifier. For 4-class classification task, we report 87.2% accuracy. For 2-class classification task to detect carcinomas we report 93.8% accuracy, AUC 97.3%, and sensitivity/specificity 96.5/88.0% at the high-sensitivity operating point. To our knowledge, this approach outperforms other common methods in automated histopathological image classification. The source code for our approach is made publicly available at https://github.com/alexander-rakhlin/ICIAR2018.</jats:p>",
+    "DOI": "10.1101/259911",
+    "type": "manuscript",
+    "created": {
+      "date-parts": [
+        [
+          2018,
+          2,
+          8
+        ]
+      ],
+      "date-time": "2018-02-08T09:51:36Z",
+      "timestamp": 1518083496000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "Deep Convolutional Neural Networks for Breast Cancer Histology Image Analysis",
+    "prefix": "10.1101",
+    "author": [
+      {
+        "ORCID": "http://orcid.org/0000-0003-1359-8534",
+        "authenticated-orcid": false,
+        "given": "Alexander",
+        "family": "Rakhlin",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0001-9436-8241",
+        "authenticated-orcid": false,
+        "given": "Alexey",
+        "family": "Shvets",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0003-2946-5525",
+        "authenticated-orcid": false,
+        "given": "Vladimir",
+        "family": "Iglovikov",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0003-4563-3226",
+        "authenticated-orcid": false,
+        "given": "Alexandr",
+        "family": "Kalinin",
+        "affiliation": []
+      }
+    ],
+    "member": "246",
+    "container-title": [],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://syndication.highwire.org/content/doi/10.1101/259911",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2018,
+          2,
+          8
+        ]
+      ],
+      "date-time": "2018-02-08T09:52:04Z",
+      "timestamp": 1518083524000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2018,
+          2,
+          5
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "https://doi.org/10.1101/259911",
+    "relation": {},
+    "short_url": "https://doi.org/gc3cfc",
+    "id": "4L1QgpXP"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
           2018,
           2,
           15
