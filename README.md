@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/greenelab/deep-review/tree/gh-pages) branch hosts the contents of this directory at https://greenelab.github.io/deep-review/.
-The permalink for this webpage version is https://greenelab.github.io/deep-review/v/77fa6be69b5060563988bbd0031fa45958b81ccb/.
+The permalink for this webpage version is https://greenelab.github.io/deep-review/v/09cb8c6ff2278e69108bd80fc112a3fdc09f02be/.
 To redirect to the permalink for the latest manuscript version at anytime, use the link https://greenelab.github.io/deep-review/v/freeze/.
 
 ## Files
@@ -32,4 +32,4 @@ git add v/*/*.ots
 ## Source
 
 The manuscripts in this directory were built from
-[`77fa6be69b5060563988bbd0031fa45958b81ccb`](https://github.com/greenelab/deep-review/commit/77fa6be69b5060563988bbd0031fa45958b81ccb).
+[`09cb8c6ff2278e69108bd80fc112a3fdc09f02be`](https://github.com/greenelab/deep-review/commit/09cb8c6ff2278e69108bd80fc112a3fdc09f02be).
