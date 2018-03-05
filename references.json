@@ -41101,6 +41101,110 @@
     "indexed": {
       "date-parts": [
         [
+          2018,
+          2,
+          15
+        ]
+      ],
+      "date-time": "2018-02-15T06:40:32Z",
+      "timestamp": 1518676832894
+    },
+    "posted": {
+      "date-parts": [
+        [
+          2018,
+          2,
+          14
+        ]
+      ]
+    },
+    "group-title": "Bioinformatics",
+    "reference-count": 0,
+    "publisher": "Cold Spring Harbor Laboratory",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "accepted": {
+      "date-parts": [
+        [
+          2018,
+          2,
+          14
+        ]
+      ]
+    },
+    "abstract": "<jats:p>Accurate prediction of protein structure is one of the central challenges of biochemistry. Despite significant progress made by co-evolution methods to predict protein structure from signatures of residue-residue coupling found in the evolutionary record, a direct and explicit mapping between protein sequence and structure remains elusive, with no substantial recent progress. Meanwhile, rapid developments in deep learning, which have found remarkable success in computer vision, natural language processing, and quantum chemistry raise the question of whether a deep learning based approach to protein structure could yield similar advancements. A key ingredient of the success of deep learning is the reformulation of complex, human-designed, multi-stage pipelines with differentiable models that can be jointly optimized end-to-end. We report the development of such a model, which reformulates the entire structure prediction pipeline using differentiable primitives. Achieving this required combining four technical ideas: (1) the adoption of a recurrent neural architecture to encode the internal representation of protein sequence, (2) the parameterization of (local) protein structure by torsional angles, which provides a way to reason over protein conformations without violating the covalent chemistry of protein chains, (3) the coupling of local protein structure to its global representation via recurrent geometric units, and (4) the use of a differentiable loss function to capture deviations between predicted and experimental structures. To our knowledge this is the first end-to-end differentiable model for learning of protein structure. We test the effectiveness of this approach using two challenging tasks: the prediction of novel protein folds without the use of co-evolutionary information, and the prediction of known protein folds without the use of structural templates. On the first task the model achieves state-of-the-art performance, even when compared to methods that rely on co-evolutionary data. On the second task the model is competitive with methods that use experimental protein structures as templates, achieving 3-7Å accuracy despite being template-free. Beyond protein structure prediction, end-to-end differentiable models of proteins represent a new paradigm for learning and modeling protein structure, with potential applications in docking, molecular dynamics, and protein design.</jats:p>",
+    "DOI": "10.1101/265231",
+    "type": "manuscript",
+    "created": {
+      "date-parts": [
+        [
+          2018,
+          2,
+          15
+        ]
+      ],
+      "date-time": "2018-02-15T06:10:20Z",
+      "timestamp": 1518675020000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "End-to-end differentiable learning of protein structure",
+    "prefix": "10.1101",
+    "author": [
+      {
+        "ORCID": "http://orcid.org/0000-0001-6817-1322",
+        "authenticated-orcid": false,
+        "given": "Mohammed",
+        "family": "AlQuraishi",
+        "affiliation": []
+      }
+    ],
+    "member": "246",
+    "container-title": [],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://syndication.highwire.org/content/doi/10.1101/265231",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2018,
+          2,
+          15
+        ]
+      ],
+      "date-time": "2018-02-15T06:10:40Z",
+      "timestamp": 1518675040000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2018,
+          2,
+          14
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "https://doi.org/10.1101/265231",
+    "relation": {},
+    "short_url": "https://doi.org/gc3gsf",
+    "id": "16s8GKCdZ"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
           2017,
           10,
           23

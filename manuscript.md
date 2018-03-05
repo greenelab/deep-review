@@ -57,9 +57,9 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/deep-review/v/7ea8733a9bbf66ecd48dbdd4467d2f9f94def3ce/))
+([permalink](https://greenelab.github.io/deep-review/v/77fa6be69b5060563988bbd0031fa45958b81ccb/))
 was automatically generated
-from [greenelab/deep-review@7ea8733](https://github.com/greenelab/deep-review/tree/7ea8733a9bbf66ecd48dbdd4467d2f9f94def3ce)
+from [greenelab/deep-review@77fa6be](https://github.com/greenelab/deep-review/tree/77fa6be69b5060563988bbd0031fa45958b81ccb)
 on March 5, 2018.
 </em></small>
 
@@ -969,8 +969,8 @@ RaptorX-Contact performed better mainly due to introduction of residual neural n
 
 Taken together, *ab initio* folding is becoming much easier with the advent of direct evolutionary coupling analysis and deep learning techniques.
 We expect further improvements in contact prediction for proteins with fewer than 1000 homologs by studying new deep network architectures.
-However, it is unclear if there is an effective way to use deep learning to improve prediction for proteins with few or no sequence homologs.
-Finally, the deep learning methods summarized above also apply to interfacial contact prediction for protein complexes but may be less effective since on average protein complexes have fewer sequence homologs.
+The deep learning methods summarized above also apply to interfacial contact prediction for protein complexes but may be less effective since on average protein complexes have fewer sequence homologs.
+Beyond secondary structure and contact maps, we anticipate increased attention to predicting 3D protein structure directly from amino acid sequence and single residue evolutionary information [@16s8GKCdZ].
 
 ### Structure determination and cryo-electron microscopy
 
@@ -1912,7 +1912,7 @@ To facilitate citation, we [defined](https://github.com/greenelab/deep-review/bl
 We supported citations to the following identifier types (in order of preference): DOIs, PubMed Central IDs, PubMed IDs, arXiv IDs, and URLs.
 References were automatically generated from citation metadata by querying APIs to generate [Citation Style Language](http://citationstyles.org/) (CSL) JSON items for each reference.
 [Pandoc](http://pandoc.org/) and [pandoc-citeproc](https://github.com/jgm/pandoc-citeproc) converted the markdown to HTML and PDF, while rendering the formatted citations and references.
-In total, referenced works consisted of 369 DOIs, 6 PubMed Central records, 130 arXiv manuscripts, and 48 URLs (webpages as well as manuscripts lacking standardized identifiers).
+In total, referenced works consisted of 370 DOIs, 6 PubMed Central records, 130 arXiv manuscripts, and 48 URLs (webpages as well as manuscripts lacking standardized identifiers).
 
 We implemented continuous analysis so the manuscript was automatically regenerated whenever the source changed [@Qh7xTLwz].
 We configured Travis CI---a continuous integration service---to fetch new citation metadata and rebuild the manuscript for every commit.
