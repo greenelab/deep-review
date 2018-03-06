@@ -36,7 +36,7 @@ author-meta:
 - Austin Huang
 - Anthony Gitter
 - Casey S. Greene
-date-meta: '2018-03-05'
+date-meta: '2018-03-06'
 keywords:
 - deep learning
 - review
@@ -57,10 +57,10 @@ _A DOI-citable preprint of this manuscript is available at <https://doi.org/10.1
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/deep-review/v/9c2d9c26b8fd40c321a80b854e2e74677cd38c79/))
+([permalink](https://greenelab.github.io/deep-review/v/63d2468883ea69ad7ad638c39efab0fcbe026298/))
 was automatically generated
-from [greenelab/deep-review@9c2d9c2](https://github.com/greenelab/deep-review/tree/9c2d9c26b8fd40c321a80b854e2e74677cd38c79)
-on March 5, 2018.
+from [greenelab/deep-review@63d2468](https://github.com/greenelab/deep-review/tree/63d2468883ea69ad7ad638c39efab0fcbe026298)
+on March 6, 2018.
 </em></small>
 
 ## Authors
@@ -502,7 +502,7 @@ In recent work, the authors evaluated the extent to which deep learning methods 
 They found that performance was in line with, but lower than the best domain-specific method [@dO844vZn].
 This raises the possibility that deep learning may impact the field by reducing the researcher time and cost required to develop specific solutions, but it may not always lead to performance increases.
 
-In recent work, Yoon et al.[@yUgE09ve] analyzed simple features using deep neural networks and found that the patterns recognized by the algorithms could be re-used across tasks.
+In recent work, Yoon et al. [@yUgE09ve] analyzed simple features using deep neural networks and found that the patterns recognized by the algorithms could be re-used across tasks.
 Their aim was to analyze the free text portions of pathology reports to identify the primary site and laterality of tumors.
 The only features the authors supplied to the algorithms were unigrams (counts for single words) and bigrams (counts for two-word combinations) in a free text document.
 They subset the full set of words and word combinations to the 400 most common.
@@ -1712,7 +1712,7 @@ In the example given, the number of free parameters was reduced from 30 million 
 Efficiently scaling deep learning is challenging, and there is a high computational cost (e.g. time, memory, and energy) associated with training neural networks and using them to make predictions.
 This is one of the reasons why neural networks have only recently found widespread use [@BQS8ClV0].
 
-Many have sought to curb these costs, with methods ranging from the very applied (e.g. reduced numerical precision [@CKcJuj03; @1G3owNNps; @w6CoVmFK; @1GUizyE8e]) to the exotic and theoretic (e.g. training small networks to mimic large networks and ensembles [@1AhGoHZP9; @1CRF3gAV]).
+Many have sought to curb these costs, with methods ranging from the very applied (e.g. reduced numerical precision [@CKcJuj03; @1G3owNNps; @ybP8QCqL; @1GUizyE8e]) to the exotic and theoretic (e.g. training small networks to mimic large networks and ensembles [@1AhGoHZP9; @1CRF3gAV]).
 The largest gains in efficiency have come from computation with GPUs [@F3e4wfzQ; @NSgduYNT; @IULiPa6L; @13KjSCKB2; @1FocAi7N0; @BQS8ClV0], which excel at the matrix and vector operations so central to deep learning.
 The massively parallel nature of GPUs allows additional optimizations, such as accelerated mini-batch gradient descent [@NSgduYNT; @IULiPa6L; @aClNvbyM; @fNkl8HFz].
 However, GPUs also have limited memory, making networks of useful size and complexity difficult to implement on a single GPU or machine [@F3e4wfzQ; @CCS5KSIM].
@@ -1722,14 +1722,14 @@ In other cases, researchers limited the size of their neural network [@BhfjKSY3]
 Some have also chosen to use standard central processing unit (CPU) implementations rather than sacrifice network size or performance [@x0M6vals].
 
 While steady improvements in GPU hardware may alleviate this issue, it is unclear whether advances will occur quickly enough to keep pace with the growing biological datasets and increasingly complex neural networks.
-Much has been done to minimize the memory requirements of neural networks [@YwdqeYZi; @1AhGoHZP9; @CKcJuj03; @1G3owNNps; @w6CoVmFK; @15lYGmZpY; @1GUizyE8e], but there is also growing interest in specialized hardware, such as field-programmable gate arrays (FPGAs) [@1FocAi7N0; @9NKsJjSw] and application-specific integrated circuits (ASICs) [@ULagTifF].
+Much has been done to minimize the memory requirements of neural networks [@YwdqeYZi; @1AhGoHZP9; @CKcJuj03; @1G3owNNps; @ybP8QCqL; @15lYGmZpY; @1GUizyE8e], but there is also growing interest in specialized hardware, such as field-programmable gate arrays (FPGAs) [@1FocAi7N0; @9NKsJjSw] and application-specific integrated circuits (ASICs) [@ULagTifF].
 Less software is available for such highly specialized hardware [@9NKsJjSw].
 But specialized hardware promises improvements in deep learning at reduced time, energy, and memory [@1FocAi7N0].
 Specialized hardware may be a difficult investment for those not solely interested in deep learning, but for those with a deep learning focus these solutions may become popular.
 
 Distributed computing is a general solution to intense computational requirements and has enabled many large-scale deep learning efforts.
 Some types of distributed computation [@xE3EYmck; @1XcexUAV] are not suitable for deep learning [@17cBimWgp], but much progress has been made.
-There now exist a number of algorithms [@17cBimWgp; @ybP8QCqL; @w6CoVmFK], tools [@rmJZ2Aui; @rZnxDitd; @hOeUlCvS], and high-level libraries [@FwEK0msb; @y9IoEy4r] for deep learning in a distributed environment, and it is possible to train very complex networks with limited infrastructure [@4MZ2tmZ8].
+There now exist a number of algorithms [@17cBimWgp; @ybP8QCqL], tools [@rmJZ2Aui; @rZnxDitd; @hOeUlCvS], and high-level libraries [@FwEK0msb; @y9IoEy4r] for deep learning in a distributed environment, and it is possible to train very complex networks with limited infrastructure [@4MZ2tmZ8].
 Besides handling very large networks, distributed or parallelized approaches offer other advantages, such as improved ensembling [@JUF9VoRD] or accelerated hyperparameter optimization [@wz83yfHF; @1FSwIjR9s].
 
 Cloud computing, which has already seen wide adoption in genomics [@B6g0qKf4], could facilitate easier sharing of the large datasets common to biology [@1E7bFCRV4; @q0SsFrZd], and may be key to scaling deep learning.
@@ -1919,7 +1919,7 @@ To facilitate citation, we [defined](https://github.com/greenelab/deep-review/bl
 We supported citations to the following identifier types (in order of preference): DOIs, PubMed Central IDs, PubMed IDs, arXiv IDs, and URLs.
 References were automatically generated from citation metadata by querying APIs to generate [Citation Style Language](http://citationstyles.org/) (CSL) JSON items for each reference.
 [Pandoc](http://pandoc.org/) and [pandoc-citeproc](https://github.com/jgm/pandoc-citeproc) converted the markdown to HTML and PDF, while rendering the formatted citations and references.
-In total, referenced works consisted of 372 DOIs, 6 PubMed Central records, 130 arXiv manuscripts, and 48 URLs (webpages as well as manuscripts lacking standardized identifiers).
+In total, referenced works consisted of 372 DOIs, 6 PubMed Central records, 129 arXiv manuscripts, and 48 URLs (webpages as well as manuscripts lacking standardized identifiers).
 
 We implemented continuous analysis so the manuscript was automatically regenerated whenever the source changed [@Qh7xTLwz].
 We configured Travis CI---a continuous integration service---to fetch new citation metadata and rebuild the manuscript for every commit.

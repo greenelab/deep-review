@@ -1097,40 +1097,6 @@
     "id": "1FDihfnM"
   },
   {
-    "arxiv_id": "1506.06438v2",
-    "version": "2",
-    "URL": "https://arxiv.org/abs/1506.06438v2",
-    "title": "Taming the Wild: A Unified Analysis of Hogwild!-Style Algorithms",
-    "issued": {
-      "date-parts": [
-        [
-          "2015",
-          "06",
-          "22"
-        ]
-      ]
-    },
-    "author": [
-      {
-        "literal": "Christopher De Sa"
-      },
-      {
-        "literal": "Ce Zhang"
-      },
-      {
-        "literal": "Kunle Olukotun"
-      },
-      {
-        "literal": "Christopher Ré"
-      }
-    ],
-    "container-title": "arXiv",
-    "publisher": "arXiv",
-    "abstract": "Stochastic gradient descent (SGD) is a ubiquitous algorithm for a variety of\nmachine learning problems. Researchers and industry have developed several\ntechniques to optimize SGD's runtime performance, including asynchronous\nexecution and reduced precision. Our main result is a martingale-based analysis\nthat enables us to capture the rich noise models that may arise from such\ntechniques. Specifically, we use our new analysis in three ways: (1) we derive\nconvergence rates for the convex case (Hogwild!) with relaxed assumptions on\nthe sparsity of the problem; (2) we analyze asynchronous SGD algorithms for\nnon-convex matrix problems including matrix completion; and (3) we design and\nanalyze an asynchronous SGD algorithm, called Buckwild!, that uses\nlower-precision arithmetic. We show experimentally that our algorithms run\nefficiently for a variety of problems on modern hardware.",
-    "type": "report",
-    "id": "w6CoVmFK"
-  },
-  {
     "arxiv_id": "1506.06579v1",
     "version": "1",
     "URL": "https://arxiv.org/abs/1506.06579v1",

@@ -33,7 +33,6 @@ string	citation	standard_citation	citation_id
 @tag:domain_adapt_uncertainty	arxiv:1505.07818	arxiv:1505.07818	nu0eLZr0
 @tag:Karpathy2015_visualizing	arxiv:1506.02078	arxiv:1506.02078	2cpYveR4
 @tag:Gal2015_dropout	arxiv:1506.02142	arxiv:1506.02142	1FDihfnM
-@tag:Sa2015_buckwild	arxiv:1506.06438	arxiv:1506.06438	w6CoVmFK
 @tag:Yosinksi2015_understanding	arxiv:1506.06579	arxiv:1506.06579	17i18PMkR
 @tag:Su2015_gpu	arxiv:1507.01239	arxiv:1507.01239	aClNvbyM
 @tag:Wallach2015_atom_net	arxiv:1510.02855	arxiv:1510.02855	Z7fd0BYf
@@ -524,7 +523,7 @@ string	citation	standard_citation	citation_id
 @pmcid:PMC3797550	pmcid:PMC3797550	pmcid:PMC3797550	7s3dpUrT
 @pmcid:PMC4765623	pmcid:PMC4765623	pmcid:PMC4765623	1GRT18Tt2
 @pmcid:PMC4832129	pmcid:PMC4832129	pmcid:PMC4832129	eAP2kxzn
-@tag:Dogwild	pmcid:PMC4907892	pmcid:PMC4907892	ybP8QCqL
+@tag:Sa2015_buckwild	pmcid:PMC4907892	pmcid:PMC4907892	ybP8QCqL
 @pmcid:PMC5119627	pmcid:PMC5119627	pmcid:PMC5119627	rqGoVCuH
 @tag:Faruqi	url:http://alifar76.github.io/sklearn-metrics/	url:http://alifar76.github.io/sklearn-metrics/	NQ5jiN7B
 @url:http://ana.blogs.com/maestros/2006/11/data_is_the_new.html	url:http://ana.blogs.com/maestros/2006/11/data_is_the_new.html	url:http://ana.blogs.com/maestros/2006/11/data_is_the_new.html	6fE0Vrba
