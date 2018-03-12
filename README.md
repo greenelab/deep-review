@@ -14,10 +14,13 @@ The project operates on an open contribution model, welcoming contributions from
 To see what's incoming, check the open [pull requests](https://github.com/greenelab/deep-review/pulls).
 For project discussion and planning see the [Issues](https://github.com/greenelab/deep-review/issues).
 
-### Current stage: resubmitted to _JRSI_ and _bioRxiv_
+### Current stage: planning Deep Review 2
 
 We [completed](https://github.com/greenelab/deep-review/releases/tag/v0.10) manuscript revisions in [response](content/response-to-reviewers.md) to two external peer reviews.
-Please see [issue #810](https://github.com/greenelab/deep-review/issues/810) for a discussion about future plans and whether we will continue to accept new pull requests.
+As of writing, we are aiming to publish an update of the deep review each year.
+The first release will be sometime in 2019.
+Like the initial release, this should be an open and collaborative effort.
+Please see [issue #810](https://github.com/greenelab/deep-review/issues/810) to contribute to the discussion of future plans, and help decide how to best continue this project.
 
 **Manubot updates:**
 We recently [updated](https://github.com/greenelab/deep-review/pull/681) this repository to use the latest Manubot version.
@@ -37,7 +40,7 @@ git pull --rebase upstream master
 
 ### Headline review format
 
-The manuscript is intended to be a headline review for [_Journal of the Royal Society Interface_](http://rsif.royalsocietypublishing.org/) on a topic overlapping the computer and life sciences in the area of systems pharmacology.
+The initial manuscript is intended to be a headline review for [_Journal of the Royal Society Interface_](http://rsif.royalsocietypublishing.org/) on a topic overlapping the computer and life sciences in the area of systems pharmacology.
 The headline review solicitation states:
 
 > A Headline Review is one in a short, targeted series of high-level reviews within a particular topic of a burgeoning research area.
