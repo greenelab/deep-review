@@ -1,5 +1,5 @@
 {
-  "date": "March 6, 2018",
+  "date": "March 13, 2018",
   "authors": [
     {
       "github": "traversc",
@@ -613,7 +613,7 @@
     "repo_slug": "greenelab/deep-review",
     "repo_owner": "greenelab",
     "repo_name": "deep-review",
-    "commit": "63d2468883ea69ad7ad638c39efab0fcbe026298"
+    "commit": "c5e94dbe5e348581bb3e6feeb0b6ca3fe3c97c8d"
   },
   "manuscript_stats": {
     "reference_counts": {
