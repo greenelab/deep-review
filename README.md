@@ -16,7 +16,6 @@ For project discussion and planning see the [Issues](https://github.com/greenela
 
 ### Current stage: planning Deep Review 2019
 
-We [completed](https://github.com/greenelab/deep-review/releases/tag/v0.10) manuscript revisions in [response](content/response-to-reviewers.md) to two external peer reviews.
 As of writing, we are aiming to publish an update of the deep review each year, with the next such release occuring in June 2019.
 We will continue to make project preprints available on bioRxiv, and aim to continue publishing the finished reviews in a peer-reviewed venue as well.
 Like the initial release, we are planning for an open and collaborative effort.
