@@ -57008,6 +57008,151 @@
         [
           2017,
           10,
+          26
+        ]
+      ],
+      "date-time": "2017-10-26T05:55:10Z",
+      "timestamp": 1508997310244
+    },
+    "reference-count": 40,
+    "publisher": "Public Library of Science (PLoS)",
+    "issue": "3",
+    "license": [
+      {
+        "URL": "http://creativecommons.org/licenses/by/4.0/",
+        "start": {
+          "date-parts": [
+            [
+              2013,
+              3,
+              26
+            ]
+          ],
+          "date-time": "2013-03-26T00:00:00Z",
+          "timestamp": 1364256000000
+        },
+        "delay-in-days": 0,
+        "content-version": "vor"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "www.plosone.org"
+      ],
+      "crossmark-restriction": false
+    },
+    "DOI": "10.1371/journal.pone.0053253",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2013,
+          3,
+          26
+        ]
+      ],
+      "date-time": "2013-03-26T20:51:55Z",
+      "timestamp": 1364331115000
+    },
+    "page": "e53253",
+    "update-policy": "http://dx.doi.org/10.1371/journal.pone.corrections_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "Class Prediction and Feature Selection with Linear Optimization for Metagenomic Count Data",
+    "prefix": "10.1371",
+    "volume": "8",
+    "author": [
+      {
+        "given": "Zhenqiu",
+        "family": "Liu",
+        "affiliation": []
+      },
+      {
+        "given": "Dechang",
+        "family": "Chen",
+        "affiliation": []
+      },
+      {
+        "given": "Li",
+        "family": "Sheng",
+        "affiliation": []
+      },
+      {
+        "given": "Amy Y.",
+        "family": "Liu",
+        "affiliation": []
+      }
+    ],
+    "member": "340",
+    "published-online": {
+      "date-parts": [
+        [
+          2013,
+          3,
+          26
+        ]
+      ]
+    },
+    "container-title": "PLoS ONE",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://dx.plos.org/10.1371/journal.pone.0053253",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          21
+        ]
+      ],
+      "date-time": "2017-06-21T10:05:08Z",
+      "timestamp": 1498039508000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "editor": [
+      {
+        "given": "Mikael",
+        "family": "Boden",
+        "affiliation": []
+      }
+    ],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2013,
+          3,
+          26
+        ]
+      ]
+    },
+    "references-count": 40,
+    "URL": "https://doi.org/10.1371/journal.pone.0053253",
+    "relation": {
+      "cites": []
+    },
+    "subject": [
+      "General Biochemistry, Genetics and Molecular Biology",
+      "General Agricultural and Biological Sciences",
+      "General Medicine"
+    ],
+    "container-title-short": "PLoS ONE",
+    "short_url": "https://doi.org/f4w5df",
+    "id": "Vb3Fwx7d"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          10,
           4
         ]
       ],
@@ -57441,152 +57586,6 @@
     "container-title-short": "PLoS ONE",
     "short_url": "https://doi.org/gcgmcm",
     "id": "RqhGD9c7"
-  },
-  {
-    "indexed": {
-      "date-parts": [
-        [
-          2017,
-          10,
-          26
-        ]
-      ],
-      "date-time": "2017-10-26T22:34:49Z",
-      "timestamp": 1509057289860
-    },
-    "update-to": [
-      {
-        "updated": {
-          "date-parts": [
-            [
-              2014,
-              5,
-              12
-            ]
-          ],
-          "date-time": "2014-05-12T00:00:00Z",
-          "timestamp": 1399852800000
-        },
-        "DOI": "10.1371/journal.pone.0053253",
-        "type": "correction",
-        "label": "Correction"
-      }
-    ],
-    "reference-count": 0,
-    "publisher": "Public Library of Science (PLoS)",
-    "issue": "5",
-    "license": [
-      {
-        "URL": "http://creativecommons.org/licenses/by/4.0/",
-        "start": {
-          "date-parts": [
-            [
-              2014,
-              5,
-              12
-            ]
-          ],
-          "date-time": "2014-05-12T00:00:00Z",
-          "timestamp": 1399852800000
-        },
-        "delay-in-days": 0,
-        "content-version": "vor"
-      }
-    ],
-    "content-domain": {
-      "domain": [
-        "www.plosone.org"
-      ],
-      "crossmark-restriction": false
-    },
-    "DOI": "10.1371/journal.pone.0097958",
-    "type": "article-journal",
-    "created": {
-      "date-parts": [
-        [
-          2014,
-          5,
-          12
-        ]
-      ],
-      "date-time": "2014-05-12T21:24:23Z",
-      "timestamp": 1399929863000
-    },
-    "page": "e97958",
-    "update-policy": "http://dx.doi.org/10.1371/journal.pone.corrections_policy",
-    "source": "Crossref",
-    "is-referenced-by-count": 0,
-    "title": "Correction: Class Prediction and Feature Selection with Linear Optimization for Metagenomic Count Data",
-    "prefix": "10.1371",
-    "volume": "9",
-    "author": [
-      {
-        "given": "Zhenqiu",
-        "family": "Liu",
-        "affiliation": []
-      },
-      {
-        "given": "Dechang",
-        "family": "Chen",
-        "affiliation": []
-      },
-      {
-        "given": "Li",
-        "family": "Sheng",
-        "affiliation": []
-      },
-      {
-        "given": "Amy Y.",
-        "family": "Liu",
-        "affiliation": []
-      }
-    ],
-    "member": "340",
-    "published-online": {
-      "date-parts": [
-        [
-          2014,
-          5,
-          12
-        ]
-      ]
-    },
-    "container-title": "PLoS ONE",
-    "original-title": [],
-    "deposited": {
-      "date-parts": [
-        [
-          2016,
-          4,
-          20
-        ]
-      ],
-      "date-time": "2016-04-20T18:04:46Z",
-      "timestamp": 1461175486000
-    },
-    "score": 1.0,
-    "subtitle": [],
-    "short-title": [],
-    "issued": {
-      "date-parts": [
-        [
-          2014,
-          5,
-          12
-        ]
-      ]
-    },
-    "references-count": 0,
-    "URL": "https://doi.org/10.1371/journal.pone.0097958",
-    "relation": {},
-    "subject": [
-      "General Biochemistry, Genetics and Molecular Biology",
-      "General Agricultural and Biological Sciences",
-      "General Medicine"
-    ],
-    "container-title-short": "PLoS ONE",
-    "short_url": "https://doi.org/gcgmcn",
-    "id": "Kt9NojjR"
   },
   {
     "indexed": {

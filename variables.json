@@ -1,5 +1,5 @@
 {
-  "date": "March 13, 2018",
+  "date": "March 21, 2018",
   "authors": [
     {
       "github": "traversc",
@@ -124,8 +124,8 @@
       "email": "michael.hoffman@utoronto.ca",
       "affiliations": [
         "Princess Margaret Cancer Centre, Toronto, ON, Canada",
-        "Department of Medical Biophysics, Toronto, ON, Canada",
-        "Department of Computer Science, Toronto, ON, Canada"
+        "Department of Medical Biophysics, University of Toronto, Toronto, ON, Canada",
+        "Department of Computer Science, University of Toronto, Toronto, ON, Canada"
       ],
       "funders": "NSERC RGPIN-2015-3948",
       "affiliation_numbers": [
@@ -509,11 +509,11 @@
       "affiliation_number": 8
     },
     {
-      "affiliation": "Department of Medical Biophysics, Toronto, ON, Canada",
+      "affiliation": "Department of Medical Biophysics, University of Toronto, Toronto, ON, Canada",
       "affiliation_number": 9
     },
     {
-      "affiliation": "Department of Computer Science, Toronto, ON, Canada",
+      "affiliation": "Department of Computer Science, University of Toronto, Toronto, ON, Canada",
       "affiliation_number": 10
     },
     {
@@ -613,7 +613,7 @@
     "repo_slug": "greenelab/deep-review",
     "repo_owner": "greenelab",
     "repo_name": "deep-review",
-    "commit": "c5e94dbe5e348581bb3e6feeb0b6ca3fe3c97c8d"
+    "commit": "a759d28d9954740173c89183dba5698cf5fe2fd0"
   },
   "manuscript_stats": {
     "reference_counts": {
@@ -623,6 +623,6 @@
       "url": 48,
       "total": 555
     },
-    "word_count": 32853
+    "word_count": 32855
   }
 }
