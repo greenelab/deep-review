@@ -34,7 +34,7 @@
       </else-if>
     </choose>
   </macro>
-  <citation collapse="citation-number">
+  <citation>
     <sort>
       <key variable="citation-number"/>
     </sort>
