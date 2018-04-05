@@ -14,11 +14,7 @@ To see what's incoming, check the open [pull requests](https://github.com/greene
 For project discussion and planning see the [Issues](https://github.com/greenelab/deep-review/issues).
 
 The original version of the Deep Review was published in 2018 and should be cited as:
-> Ching T, Himmelstein DS, Beaulieu-Jones BK, Kalinin AA, Do BT, Way GP, Ferrero E, Agapow P-M, Zietz M, Hoffman MM, Xie W, Rosen GL, Lengerich BJ, Israeli J, Lanchantin J, Woloszynek S, Carpenter AE, Shrikumar A, Xu J, Cofer EM, Lavender CA, Turaga SC, Alexandari AM, Lu Z, Harris DJ, DeCaprio D, Qi Y, Kundaje A, Peng Y, Wiley LK, Segler MHS, Boca SM, Swamidass SJ, Huang A, Gitter A, and Greene CS.
-2018.
-Opportunities and obstacles for deep learning in biology and medicine.
-_Journal of The Royal Society Interface_ 15(141):20170387.
-[doi:10.1098/rsif.2017.0387](https://doi.org/10.1098/rsif.2017.0387)
+> Ching T, Himmelstein DS, Beaulieu-Jones BK, Kalinin AA, Do BT, Way GP, Ferrero E, Agapow P-M, Zietz M, Hoffman MM, Xie W, Rosen GL, Lengerich BJ, Israeli J, Lanchantin J, Woloszynek S, Carpenter AE, Shrikumar A, Xu J, Cofer EM, Lavender CA, Turaga SC, Alexandari AM, Lu Z, Harris DJ, DeCaprio D, Qi Y, Kundaje A, Peng Y, Wiley LK, Segler MHS, Boca SM, Swamidass SJ, Huang A, Gitter A, and Greene CS. 2018. Opportunities and obstacles for deep learning in biology and medicine. _Journal of The Royal Society Interface_ 15(141):20170387. [doi:10.1098/rsif.2017.0387](https://doi.org/10.1098/rsif.2017.0387)
 
 
 ### Current stage: planning Deep Review 2019
