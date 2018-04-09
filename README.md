@@ -7,16 +7,19 @@
 
 ## Manuscript description
 
-This repository is home to **The Deep Review**, a collaboratively written review article on deep learning in precision medicine.
-The preprint for this study, titled **Opportunities and obstacles for deep learning in biology and medicine**, is [available on _bioRxiv_](https://doi.org/10.1101/142760).
+This repository is home to the **Deep Review**, a review article on deep learning in precision medicine.
 The Deep Review is collaboratively written on GitHub using a tool called Manubot (see [below](#manubot)).
 The project operates on an open contribution model, welcoming contributions from anyone (see [`CONTRIBUTING.md`](CONTRIBUTING.md) or an [existing example](https://github.com/greenelab/deep-review/pull/147 "Pull request 147: Hardware Limitations and Scaling") for more info).
 To see what's incoming, check the open [pull requests](https://github.com/greenelab/deep-review/pulls).
 For project discussion and planning see the [Issues](https://github.com/greenelab/deep-review/issues).
 
+The original version of the Deep Review was published in 2018 and should be cited as:
+> Ching T, Himmelstein DS, Beaulieu-Jones BK, Kalinin AA, Do BT, Way GP, Ferrero E, Agapow P-M, Zietz M, Hoffman MM, Xie W, Rosen GL, Lengerich BJ, Israeli J, Lanchantin J, Woloszynek S, Carpenter AE, Shrikumar A, Xu J, Cofer EM, Lavender CA, Turaga SC, Alexandari AM, Lu Z, Harris DJ, DeCaprio D, Qi Y, Kundaje A, Peng Y, Wiley LK, Segler MHS, Boca SM, Swamidass SJ, Huang A, Gitter A, and Greene CS. 2018. Opportunities and obstacles for deep learning in biology and medicine. _Journal of The Royal Society Interface_ 15(141):20170387. [doi:10.1098/rsif.2017.0387](https://doi.org/10.1098/rsif.2017.0387)
+
+
 ### Current stage: planning Deep Review 2019
 
-As of writing, we are aiming to publish an update of the deep review each year, with the next such release occuring in June 2019.
+As of writing, we are aiming to publish an update of the deep review each year, with the next such release occurring in June 2019.
 We will continue to make project preprints available on bioRxiv, and aim to continue publishing the finished reviews in a peer-reviewed venue as well.
 Like the initial release, we are planning for an open and collaborative effort.
 Please see [issue #810](https://github.com/greenelab/deep-review/issues/810) to contribute to the discussion of future plans, and help decide how to best continue this project.
@@ -39,7 +42,7 @@ git pull --rebase upstream master
 
 ### Headline review format
 
-The initial manuscript was a headline review for [_Journal of the Royal Society Interface_](http://rsif.royalsocietypublishing.org/) on a topic overlapping the computer and life sciences in the area of systems pharmacology.
+The [initial manuscript](https://doi.org/10.1098/rsif.2017.0387) was a headline review for [_Journal of the Royal Society Interface_](http://rsif.royalsocietypublishing.org/) on a topic overlapping the computer and life sciences in the area of systems pharmacology.
 The headline review solicitation states:
 
 > A Headline Review is one in a short, targeted series of high-level reviews within a particular topic of a burgeoning research area.
