@@ -1,7 +1,7 @@
 # Building the manuscript
 
 [`build.sh`](build.sh) builds the repository.
-`sh build.sh` should be executed from the root directory of the repository.
+`sh build/build.sh` should be executed from the root directory of the repository.
 
 To build a DOCX file of the manuscript, set the `BUILD_DOCX` environment variable to `true`.
 For example, use the command `BUILD_DOCX=true sh build/build.sh`.
