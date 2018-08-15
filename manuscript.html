@@ -40,9 +40,9 @@
   <meta name="author" content="Austin Huang" />
   <meta name="author" content="Anthony Gitter" />
   <meta name="author" content="Casey S. Greene" />
-  <meta name="dcterms.date" content="2018-04-09" />
+  <meta name="dcterms.date" content="2018-08-15" />
   <meta name="keywords" content="deep learning, review, precision medicine, genomics, machine learning, neural networks, collaborative, manubot" />
-  <title>Opportunities and obstacles for deep learning in biology and medicine</title>
+  <title>Opportunities and obstacles for deep learning in biology and medicine: 2019 update</title>
   <style type="text/css">
       code{white-space: pre-wrap;}
       span.smallcaps{font-variant: small-caps;}
@@ -67,10 +67,10 @@
 </head>
 <body>
 <header>
-<h1 class="title">Opportunities and obstacles for deep learning in biology and medicine</h1>
+<h1 class="title">Opportunities and obstacles for deep learning in biology and medicine: 2019 update</h1>
 </header>
 <p><em>The published version of this manuscript is available at <a href="https://doi.org/10.1098/rsif.2017.0387" class="uri">https://doi.org/10.1098/rsif.2017.0387</a></em>.</p>
-<p><small><em> This manuscript (<a href="https://greenelab.github.io/deep-review/v/5df298135b65c72d164f69571fb303c5d1db21b2/">permalink</a>) was automatically generated from <a href="https://github.com/greenelab/deep-review/tree/5df298135b65c72d164f69571fb303c5d1db21b2">greenelab/deep-review@5df2981</a> on April 9, 2018. </em></small></p>
+<p><small><em> This manuscript (<a href="https://greenelab.github.io/deep-review/v/939920570a269bd750af13286f8a053f08ffdaf8/">permalink</a>) was automatically generated from <a href="https://github.com/greenelab/deep-review/tree/939920570a269bd750af13286f8a053f08ffdaf8">greenelab/deep-review@9399205</a> on August 15, 2018. </em></small></p>
 <h2 id="authors">Authors</h2>
 <p><a href="https://orcid.org/0000-0002-5577-3516"><img src="images/orcid.svg" alt="ORCID icon" width="11" height="11" /></a> Travers Ching<sup>1,☯</sup>, <a href="https://orcid.org/0000-0002-3012-7446"><img src="images/orcid.svg" alt="ORCID icon" width="11" height="11" /></a> Daniel S. Himmelstein<sup>2</sup>, <a href="https://orcid.org/0000-0002-6700-1468"><img src="images/orcid.svg" alt="ORCID icon" width="11" height="11" /></a> Brett K. Beaulieu-Jones<sup>3</sup>, <a href="https://orcid.org/0000-0003-4563-3226"><img src="images/orcid.svg" alt="ORCID icon" width="11" height="11" /></a> Alexandr A. Kalinin<sup>4</sup>, <a href="https://orcid.org/0000-0003-4992-2623"><img src="images/orcid.svg" alt="ORCID icon" width="11" height="11" /></a> Brian T. Do<sup>5</sup>, <a href="https://orcid.org/0000-0002-0503-9348"><img src="images/orcid.svg" alt="ORCID icon" width="11" height="11" /></a> Gregory P. Way<sup>2</sup>, <a href="https://orcid.org/0000-0002-8362-100X"><img src="images/orcid.svg" alt="ORCID icon" width="11" height="11" /></a> Enrico Ferrero<sup>6</sup>, <a href="https://orcid.org/0000-0003-1126-1479"><img src="images/orcid.svg" alt="ORCID icon" width="11" height="11" /></a> Paul-Michael Agapow<sup>7</sup>, <a href="https://orcid.org/0000-0003-0539-630X"><img src="images/orcid.svg" alt="ORCID icon" width="11" height="11" /></a> Michael Zietz<sup>2</sup>, <a href="https://orcid.org/0000-0002-4517-1562"><img src="images/orcid.svg" alt="ORCID icon" width="11" height="11" /></a> Michael M. Hoffman<sup>8,9,10</sup>, <a href="https://orcid.org/0000-0002-1871-6846"><img src="images/orcid.svg" alt="ORCID icon" width="11" height="11" /></a> Wei Xie<sup>11</sup>, <a href="https://orcid.org/0000-0003-1763-5750"><img src="images/orcid.svg" alt="ORCID icon" width="11" height="11" /></a> Gail L. Rosen<sup>12</sup>, <a href="https://orcid.org/0000-0001-8690-9554"><img src="images/orcid.svg" alt="ORCID icon" width="11" height="11" /></a> Benjamin J. Lengerich<sup>13</sup>, <a href="https://orcid.org/0000-0003-1633-5780"><img src="images/orcid.svg" alt="ORCID icon" width="11" height="11" /></a> Johnny Israeli<sup>14</sup>, <a href="https://orcid.org/0000-0003-0811-0944"><img src="images/orcid.svg" alt="ORCID icon" width="11" height="11" /></a> Jack Lanchantin<sup>15</sup>, <a href="https://orcid.org/0000-0003-0568-298X"><img src="images/orcid.svg" alt="ORCID icon" width="11" height="11" /></a> Stephen Woloszynek<sup>12</sup>, <a href="https://orcid.org/0000-0003-1555-8261"><img src="images/orcid.svg" alt="ORCID icon" width="11" height="11" /></a> Anne E. Carpenter<sup>16</sup>, <a href="https://orcid.org/0000-0002-6443-4671"><img src="images/orcid.svg" alt="ORCID icon" width="11" height="11" /></a> Avanti Shrikumar<sup>17</sup>, <a href="https://orcid.org/0000-0001-7111-4839"><img src="images/orcid.svg" alt="ORCID icon" width="11" height="11" /></a> Jinbo Xu<sup>18</sup>, <a href="https://orcid.org/0000-0003-3877-0433"><img src="images/orcid.svg" alt="ORCID icon" width="11" height="11" /></a> Evan M. Cofer<sup>19,20</sup>, <a href="https://orcid.org/0000-0002-7762-1089"><img src="images/orcid.svg" alt="ORCID icon" width="11" height="11" /></a> Christopher A. Lavender<sup>21</sup>, <a href="https://orcid.org/0000-0003-3247-6487"><img src="images/orcid.svg" alt="ORCID icon" width="11" height="11" /></a> Srinivas C. Turaga<sup>22</sup>, <a href="https://orcid.org/0000-0001-8655-8109"><img src="images/orcid.svg" alt="ORCID icon" width="11" height="11" /></a> Amr M. Alexandari<sup>17</sup>, <a href="https://orcid.org/0000-0001-9998-916X"><img src="images/orcid.svg" alt="ORCID icon" width="11" height="11" /></a> Zhiyong Lu<sup>23</sup>, <a href="https://orcid.org/0000-0003-3332-9307"><img src="images/orcid.svg" alt="ORCID icon" width="11" height="11" /></a> David J. Harris<sup>24</sup>, <a href="https://orcid.org/0000-0001-8931-9461"><img src="images/orcid.svg" alt="ORCID icon" width="11" height="11" /></a> Dave DeCaprio<sup>25</sup>, <a href="https://orcid.org/0000-0002-5796-7453"><img src="images/orcid.svg" alt="ORCID icon" width="11" height="11" /></a> Yanjun Qi<sup>15</sup>, <a href="https://orcid.org/0000-0003-3084-2287"><img src="images/orcid.svg" alt="ORCID icon" width="11" height="11" /></a> Anshul Kundaje<sup>17,26</sup>, <a href="https://orcid.org/0000-0001-9309-8331"><img src="images/orcid.svg" alt="ORCID icon" width="11" height="11" /></a> Yifan Peng<sup>23</sup>, <a href="https://orcid.org/0000-0001-6681-9754"><img src="images/orcid.svg" alt="ORCID icon" width="11" height="11" /></a> Laura K. Wiley<sup>27</sup>, <a href="https://orcid.org/0000-0001-8008-0546"><img src="images/orcid.svg" alt="ORCID icon" width="11" height="11" /></a> Marwin H.S. Segler<sup>28</sup>, <a href="https://orcid.org/0000-0002-1400-3398"><img src="images/orcid.svg" alt="ORCID icon" width="11" height="11" /></a> Simina M. Boca<sup>29</sup>, <a href="https://orcid.org/0000-0003-2191-0778"><img src="images/orcid.svg" alt="ORCID icon" width="11" height="11" /></a> S. Joshua Swamidass<sup>30</sup>, <a href="https://orcid.org/0000-0003-1349-4030"><img src="images/orcid.svg" alt="ORCID icon" width="11" height="11" /></a> Austin Huang<sup>31</sup>, <a href="https://orcid.org/0000-0002-5324-9833"><img src="images/orcid.svg" alt="ORCID icon" width="11" height="11" /></a> Anthony Gitter<sup>32,33,†</sup>, <a href="https://orcid.org/0000-0001-8713-9213"><img src="images/orcid.svg" alt="ORCID icon" width="11" height="11" /></a> Casey S. Greene<sup>2,†</sup></p>
 <p><sup>☯</sup> — Author order was determined with a randomized algorithm<br> <sup>†</sup> — To whom correspondence should be addressed: gitter@biostat.wisc.edu (A.G.) and greenescientist@gmail.com (C.S.G.) <small></p>
@@ -541,7 +541,7 @@ Zachary D. Stephens, Skylar Y. Lee, Faraz Faghri, Roy H. Campbell, Chengxiang Zh
 <div id="ref-BeijBSRE">
 <p>2. <strong>Deep learning</strong><br />
 Yann LeCun, Yoshua Bengio, Geoffrey Hinton<br />
-<em>Nature</em> (2015-05-27) <a href="https://doi.org/10.1038/nature14539" class="uri">https://doi.org/10.1038/nature14539</a></p>
+<em>Nature</em> (2015-05) <a href="https://doi.org/10.1038/nature14539" class="uri">https://doi.org/10.1038/nature14539</a></p>
 </div>
 <div id="ref-TDruxF1s">
 <p>3. <strong>Searching for exotic particles in high-energy physics with deep learning</strong><br />
@@ -594,12 +594,12 @@ Andrew S. Grove<br />
 <div id="ref-yXqhuueV">
 <p>13. <strong>Deep learning for regulatory genomics</strong><br />
 Yongjin Park, Manolis Kellis<br />
-<em>Nature Biotechnology</em> (2015-08-07) <a href="https://doi.org/10.1038/nbt.3313" class="uri">https://doi.org/10.1038/nbt.3313</a></p>
+<em>Nature Biotechnology</em> (2015-08) <a href="https://doi.org/10.1038/nbt.3313" class="uri">https://doi.org/10.1038/nbt.3313</a></p>
 </div>
 <div id="ref-1VZjheOA">
 <p>14. <strong>Applications of Deep Learning in Biomedicine</strong><br />
 Polina Mamoshina, Armando Vieira, Evgeny Putin, Alex Zhavoronkov<br />
-<em>Molecular Pharmaceutics</em> (2016-05-02) <a href="https://doi.org/10.1021/acs.molpharmaceut.5b00982" class="uri">https://doi.org/10.1021/acs.molpharmaceut.5b00982</a></p>
+<em>Molecular Pharmaceutics</em> (2016-03-29) <a href="https://doi.org/10.1021/acs.molpharmaceut.5b00982" class="uri">https://doi.org/10.1021/acs.molpharmaceut.5b00982</a></p>
 </div>
 <div id="ref-irSe12Sm">
 <p>15. <strong>Deep learning for computational biology</strong><br />
@@ -629,7 +629,7 @@ Geert Litjens, Thijs Kooi, Babak Ehteshami Bejnordi, Arnaud Arindra Adiyoso Seti
 <div id="ref-brPjEjYw">
 <p>20. <strong>Deep Learning in Pharmacogenomics: From Gene Regulation to Patient Stratification</strong><br />
 Alexandr A. Kalinin, Gerald A. Higgins, Narathip Reamaroon, S. M. Reza Soroushmehr, Ari Allyn-Feuer, Ivo D. Dinov, Kayvan Najarian, Brian D. Athey<br />
-<em>arXiv</em> (2018-01-25) <a href="https://arxiv.org/abs/1801.08570v1" class="uri">https://arxiv.org/abs/1801.08570v1</a></p>
+<em>arXiv</em> (2018-01-25) <a href="https://arxiv.org/abs/1801.08570v2" class="uri">https://arxiv.org/abs/1801.08570v2</a></p>
 </div>
 <div id="ref-gJE0ExFr">
 <p>21. <strong>Deep Learning in Drug Discovery</strong><br />
@@ -714,7 +714,7 @@ Izhar Wallach, Michael Dzamba, Abraham Heifets<br />
 <div id="ref-EMDwvRGb">
 <p>37. <strong>Deep Learning Applications for Predicting Pharmacological Properties of Drugs and Drug Repurposing Using Transcriptomic Data</strong><br />
 Alexander Aliper, Sergey Plis, Artem Artemov, Alvaro Ulloa, Polina Mamoshina, Alex Zhavoronkov<br />
-<em>Molecular Pharmaceutics</em> (2016-07-05) <a href="https://doi.org/10.1021/acs.molpharmaceut.6b00248" class="uri">https://doi.org/10.1021/acs.molpharmaceut.6b00248</a></p>
+<em>Molecular Pharmaceutics</em> (2016-06-08) <a href="https://doi.org/10.1021/acs.molpharmaceut.6b00248" class="uri">https://doi.org/10.1021/acs.molpharmaceut.6b00248</a></p>
 </div>
 <div id="ref-1AU7wzPqa">
 <p>38. <strong>Predicting drug-target interactions using restricted Boltzmann machines</strong><br />
@@ -879,7 +879,7 @@ John P. Pestian, Christopher Brew, Paweł Matykiewicz, D. J. Hovermale, Neil Joh
 <div id="ref-PGi9g7yV">
 <p>70. <strong>ChestX-ray8: Hospital-scale Chest X-ray Database and Benchmarks on Weakly-Supervised Classification and Localization of Common Thorax Diseases</strong><br />
 Xiaosong Wang, Yifan Peng, Le Lu, Zhiyong Lu, Mohammadhadi Bagheri, Ronald M. Summers<br />
-<em>arXiv</em> (2017-05-05) <a href="https://arxiv.org/abs/1705.02315v4" class="uri">https://arxiv.org/abs/1705.02315v4</a></p>
+<em>arXiv</em> (2017-05-05) <a href="https://arxiv.org/abs/1705.02315v5" class="uri">https://arxiv.org/abs/1705.02315v5</a></p>
 </div>
 <div id="ref-gYxBO26g">
 <p>71. <strong>NegBio: a high-performance tool for negation and uncertainty detection in radiology reports</strong><br />
@@ -887,9 +887,9 @@ Yifan Peng, Xiaosong Wang, Le Lu, Mohammadhadi Bagheri, Ronald Summers, Zhiyong 
 <em>arXiv</em> (2017-12-16) <a href="https://arxiv.org/abs/1712.05898v2" class="uri">https://arxiv.org/abs/1712.05898v2</a></p>
 </div>
 <div id="ref-JmHFuXEM">
-<p>72. <strong>Points of Significance: Classification evaluation</strong><br />
+<p>72. <strong>Classification evaluation</strong><br />
 Jake Lever, Martin Krzywinski, Naomi Altman<br />
-<em>Nature Methods</em> (2016-07-28) <a href="https://doi.org/10.1038/nmeth.3945" class="uri">https://doi.org/10.1038/nmeth.3945</a></p>
+<em>Nature Methods</em> (2016-08) <a href="https://doi.org/10.1038/nmeth.3945" class="uri">https://doi.org/10.1038/nmeth.3945</a></p>
 </div>
 <div id="ref-odFR7ptt">
 <p>73. <strong>NIH Chest X-ray Dataset</strong><br />
@@ -898,7 +898,7 @@ NIH Clinical Center<br />
 </div>
 <div id="ref-jTh3Ds6m">
 <p>74. <strong>Pediatric Bone Age Assessment Using Deep Convolutional Neural Networks</strong><br />
-Vladimir Iglovikov, Alexander Rakhlin, Alexandr Kalinin, Alexey Shvets<br />
+Vladimir Iglovikov, Alexander Rakhlin, Alexandr A. Kalinin, Alexey Shvets<br />
 <em>Cold Spring Harbor Laboratory</em> (2017-12-14) <a href="https://doi.org/10.1101/234120" class="uri">https://doi.org/10.1101/234120</a></p>
 </div>
 <div id="ref-11YUuHulp">
@@ -984,7 +984,7 @@ Zhenchao Jiang, shuang Li, Degen Huang<br />
 <div id="ref-14afj7TT1">
 <p>91. <strong>Chemical-induced disease relation extraction via convolutional neural network</strong><br />
 Jinghang Gu, Fuqing Sun, Longhua Qian, Guodong Zhou<br />
-<em>Database</em> (2017-01) <a href="https://doi.org/10.1093/database/bax024" class="uri">https://doi.org/10.1093/database/bax024</a></p>
+<em>Database</em> (2017-01-01) <a href="https://doi.org/10.1093/database/bax024" class="uri">https://doi.org/10.1093/database/bax024</a></p>
 </div>
 <div id="ref-8NrcroGt">
 <p>92. <strong>Drug drug interaction extraction from biomedical literature using syntax convolutional neural network</strong><br />
@@ -1165,7 +1165,7 @@ Tao Zheng, Wei Xie, Liling Xu, Xiaoying He, Ya Zhang, Mingrong You, Gong Yang, Y
 <em>International Journal of Medical Informatics</em> (2017-01) <a href="https://doi.org/10.1016/j.ijmedinf.2016.09.014" class="uri">https://doi.org/10.1016/j.ijmedinf.2016.09.014</a></p>
 </div>
 <div id="ref-ziudr6hx">
-<p>128. <strong>Implementations by Phenotype | PheKB</strong>(2017-05-17) <a href="https://phekb.org/implementations" class="uri">https://phekb.org/implementations</a></p>
+<p>128. <strong>Implementations by Phenotype | PheKB</strong>(2018-07-15) <a href="https://phekb.org/implementations" class="uri">https://phekb.org/implementations</a></p>
 </div>
 <div id="ref-A9JeoGV8">
 <p>129. <strong>Electronic medical record phenotyping using the anchor and learn framework</strong><br />
@@ -1183,8 +1183,8 @@ Michael Palmer<br />
 <em>ANA Marketing Maestros</em> (2006-11) <a href="http://ana.blogs.com/maestros/2006/11/data_is_the_new.html" class="uri">http://ana.blogs.com/maestros/2006/11/data_is_the_new.html</a></p>
 </div>
 <div id="ref-o8mib4CN">
-<p>132. <strong>“Data is the New Oil” — A Ludicrous Proposition – Twenty One Hundred – Medium</strong><br />
-Michael Haupt<br />
+<p>132. <strong>“Data is the New Oil” — A Ludicrous Proposition – Project 2030 – Medium</strong><br />
+@michaelhaupt<br />
 <em>Medium</em> (2016-05-02) <a href="https://medium.com/twenty-one-hundred/data-is-the-new-oil-a-ludicrous-proposition-1d91bba4f294" class="uri">https://medium.com/twenty-one-hundred/data-is-the-new-oil-a-ludicrous-proposition-1d91bba4f294</a></p>
 </div>
 <div id="ref-hfcf5Hmi">
@@ -1314,7 +1314,7 @@ Cristóbal Esteban, Stephanie L. Hyland, Gunnar Rätsch<br />
 </div>
 <div id="ref-fbIH12yd">
 <p>158. <strong>Privacy-preserving generative deep neural networks support clinical data sharing</strong><br />
-Brett K. Beaulieu-Jones, Zhiwei Steven Wu, Chris Williams, James Brian Byrd, Casey S. Greene<br />
+Brett K. Beaulieu-Jones, Zhiwei Steven Wu, Chris Williams, Ran Lee, Sanjeev P Bhavnani, James Brian Byrd, Casey S. Greene<br />
 <em>Cold Spring Harbor Laboratory</em> (2017-07-05) <a href="https://doi.org/10.1101/159756" class="uri">https://doi.org/10.1101/159756</a></p>
 </div>
 <div id="ref-U0ySdznJ">
@@ -1433,7 +1433,7 @@ Lujia Chen, Chunhui Cai, Vicky Chen, Xinghua Lu<br />
 <em>BMC Bioinformatics</em> (2016-01-11) <a href="https://doi.org/10.1186/s12859-015-0852-1" class="uri">https://doi.org/10.1186/s12859-015-0852-1</a></p>
 </div>
 <div id="ref-1CFhfCyWN">
-<p>182. <strong>ADAGE-Based Integration of Publicly AvailablePseudomonas aeruginosaGene Expression Data with Denoising Autoencoders Illuminates Microbe-Host Interactions</strong><br />
+<p>182. <strong>ADAGE-Based Integration of Publicly Available Pseudomonas aeruginosa Gene Expression Data with Denoising Autoencoders Illuminates Microbe-Host Interactions</strong><br />
 Jie Tan, John H. Hammond, Deborah A. Hogan, Casey S. Greene<br />
 <em>mSystems</em> (2016-01-19) <a href="https://doi.org/10.1128/msystems.00025-15" class="uri">https://doi.org/10.1128/msystems.00025-15</a></p>
 </div>
@@ -1469,13 +1469,13 @@ Marina M. Scotti, Maurice S. Swanson<br />
 </div>
 <div id="ref-b6p6wxpC">
 <p>189. <strong>RNA splicing is a primary link between genetic variation and disease</strong><br />
-Y. I. Li, B. van de Geijn, A. Raj, D. A. Knowles, A. A. Petti, D. Golan, Y. Gilad, J. K. Pritchard<br />
+Yang I. Li, Bryce van de Geijn, Anil Raj, David A. Knowles, Allegra A. Petti, David Golan, Yoav Gilad, Jonathan K. Pritchard<br />
 <em>Science</em> (2016-04-28) <a href="https://doi.org/10.1126/science.aad9417" class="uri">https://doi.org/10.1126/science.aad9417</a></p>
 </div>
 <div id="ref-11ETDdRKr">
 <p>190. <strong>Deciphering the splicing code</strong><br />
 Yoseph Barash, John A. Calarco, Weijun Gao, Qun Pan, Xinchen Wang, Ofer Shai, Benjamin J. Blencowe, Brendan J. Frey<br />
-<em>Nature</em> (2010-05-06) <a href="https://doi.org/10.1038/nature09000" class="uri">https://doi.org/10.1038/nature09000</a></p>
+<em>Nature</em> (2010-05) <a href="https://doi.org/10.1038/nature09000" class="uri">https://doi.org/10.1038/nature09000</a></p>
 </div>
 <div id="ref-8VPGUHcf">
 <p>191. <strong>Bayesian prediction of tissue-regulated splicing using RNA sequence and cellular context</strong><br />
@@ -1513,9 +1513,7 @@ Matthew Slattery, Tianyin Zhou, Lin Yang, Ana Carolina Dantas Machado, Raluca Go
 <em>Trends in Biochemical Sciences</em> (2014-09) <a href="https://doi.org/10.1016/j.tibs.2014.07.002" class="uri">https://doi.org/10.1016/j.tibs.2014.07.002</a></p>
 </div>
 <div id="ref-15J98V2qM">
-<p>198. <strong>An integrated encyclopedia of DNA elements in the human genome</strong><br />
-Ian Dunham, Anshul Kundaje, Shelley F. Aldred, Patrick J. Collins, Carrie A. Davis, Francis Doyle, Charles B. Epstein, Seth Frietze, Jennifer Harrow, Rajinder Kaul, … Ewan Birney<br />
-<em>Nature</em> (2012-09-05) <a href="https://doi.org/10.1038/nature11247" class="uri">https://doi.org/10.1038/nature11247</a></p>
+<p>198. <strong>An integrated encyclopedia of DNA elements in the human genome</strong><em>Nature</em> (2012-09) <a href="https://doi.org/10.1038/nature11247" class="uri">https://doi.org/10.1038/nature11247</a></p>
 </div>
 <div id="ref-ywDQIvZJ">
 <p>199. <strong>DNA binding sites: representation and discovery</strong><br />
@@ -1529,7 +1527,7 @@ T. L. Bailey, M. Boden, F. A. Buske, M. Frith, C. E. Grant, L. Clementi, J. Ren,
 </div>
 <div id="ref-fv4f2GgS">
 <p>201. <strong>Evaluation of methods for modeling transcription factor sequence specificity</strong><br />
-Matthew T Weirauch, Atina Cote, Raquel Norel, Matti Annala, Yue Zhao, Todd R Riley, Julio Saez-Rodriguez, Thomas Cokelaer, Anastasia Vedenko, Shaheynoor Talukder, … Timothy R Hughes<br />
+Matthew T WeirauchAtina Cote, Raquel Norel, Matti Annala, Yue Zhao, Todd R Riley, Julio Saez-Rodriguez, Thomas Cokelaer, Anastasia Vedenko, … Timothy R Hughes<br />
 <em>Nature Biotechnology</em> (2013-01-27) <a href="https://doi.org/10.1038/nbt.2486" class="uri">https://doi.org/10.1038/nbt.2486</a></p>
 </div>
 <div id="ref-EPo6SPty">
@@ -1663,7 +1661,7 @@ R. Yamashita, N. P. Sathira, A. Kanai, K. Tanimoto, T. Arauchi, Y. Tanaka, S.-i.
 <div id="ref-8yA3foA6">
 <p>228. <strong>Enhancers: five essential questions</strong><br />
 Len A. Pennacchio, Wendy Bickmore, Ann Dean, Marcelo A. Nobrega, Gill Bejerano<br />
-<em>Nature Reviews Genetics</em> (2013-03-18) <a href="https://doi.org/10.1038/nrg3458" class="uri">https://doi.org/10.1038/nrg3458</a></p>
+<em>Nature Reviews Genetics</em> (2013-04) <a href="https://doi.org/10.1038/nrg3458" class="uri">https://doi.org/10.1038/nrg3458</a></p>
 </div>
 <div id="ref-J0PJHcHK">
 <p>229. <strong>A unified architecture of transcriptional regulatory elements</strong><br />
@@ -1698,7 +1696,7 @@ Cameron P. Bracken, Hamish S. Scott, Gregory J. Goodall<br />
 <div id="ref-8lpCCppx">
 <p>235. <strong>Evolution of microRNA diversity and regulation in animals</strong><br />
 Eugene Berezikov<br />
-<em>Nature Reviews Genetics</em> (2011-11-18) <a href="https://doi.org/10.1038/nrg3079" class="uri">https://doi.org/10.1038/nrg3079</a></p>
+<em>Nature Reviews Genetics</em> (2011-12) <a href="https://doi.org/10.1038/nrg3079" class="uri">https://doi.org/10.1038/nrg3079</a></p>
 </div>
 <div id="ref-12vPQi3gp">
 <p>236. <strong>Predicting effective microRNA target sites in mammalian mRNAs</strong><br />
@@ -1903,7 +1901,7 @@ Rohit Bhattacharya, Ashok Sivakumar, Collin Tokheim, Violeta Beleva Guthrie, Val
 </div>
 <div id="ref-12i8Apfdc">
 <p>277. <strong>HLA class I binding prediction via convolutional neural networks</strong><br />
-Yeeleng S. Vang, Xiaohui Xie<br />
+Yeeleng S Vang, Xiaohui Xie<br />
 <em>Bioinformatics</em> (2017-04-21) <a href="https://doi.org/10.1093/bioinformatics/btx264" class="uri">https://doi.org/10.1093/bioinformatics/btx264</a></p>
 </div>
 <div id="ref-8CiDACi3">
@@ -1997,8 +1995,8 @@ Maria Vera, Jeetayu Biswas, Adrien Senecal, Robert H. Singer, Hye Yoon Park<br /
 <em>Annual Review of Genetics</em> (2016-11-23) <a href="https://doi.org/10.1146/annurev-genet-120215-034854" class="uri">https://doi.org/10.1146/annurev-genet-120215-034854</a></p>
 </div>
 <div id="ref-1CAw3FaPI">
-<p>296. <strong>Joint Profiling Of Chromatin Accessibility, DNA Methylation And Transcription In Single Cells</strong><br />
-Stephen J. Clark, Ricard Argelaguet, Chantriolnt-Andreas Kapourani, Thomas M. Stubbs, Heather J. Lee, Felix Krueger, Guido Sanguinetti, Gavin Kelsey, John C. Marioni, Oliver Stegle, Wolf Reik<br />
+<p>296. <strong>scNMT-seq enables joint profiling of chromatin accessibility DNA methylation and transcription in single cells</strong><br />
+Stephen J. Clark, Ricard Argelaguet, Chantriolnt-Andreas Kapourani, Thomas M. Stubbs, Heather J. Lee, Celia Alda-Catalinas, Felix Krueger, Guido Sanguinetti, Gavin Kelsey, John C. Marioni, … Wolf Reik<br />
 <em>Cold Spring Harbor Laboratory</em> (2017-05-17) <a href="https://doi.org/10.1101/138685" class="uri">https://doi.org/10.1101/138685</a></p>
 </div>
 <div id="ref-19EJTHByG">
@@ -2013,7 +2011,7 @@ Pang Wei Koh, Emma Pierson, Anshul Kundaje<br />
 </div>
 <div id="ref-1ERrBiqG7">
 <p>299. <strong>Removal of batch effects using distribution-matching residual networks</strong><br />
-Uri Shaham, Kelly P. Stanton, Jun Zhao, Huamin Li, Khadir Raddassi, Ruth Montgomery, Yuval Kluger<br />
+Uri Shaham, Kelly P Stanton, Jun Zhao, Huamin Li, Khadir Raddassi, Ruth Montgomery, Yuval Kluger<br />
 <em>Bioinformatics</em> (2017-04-13) <a href="https://doi.org/10.1093/bioinformatics/btx196" class="uri">https://doi.org/10.1093/bioinformatics/btx196</a></p>
 </div>
 <div id="ref-1HPu3R2B4">
@@ -2034,7 +2032,7 @@ Jiarui Ding, Anne E. Condon, Sohrab P. Shah<br />
 <div id="ref-RHqbJgpe">
 <p>303. <strong>A deep generative model for gene expression profiles from single-cell RNA sequencing</strong><br />
 Romain Lopez, Jeffrey Regier, Michael Cole, Michael Jordan, Nir Yosef<br />
-<em>arXiv</em> (2017-09-07) <a href="https://arxiv.org/abs/1709.02082v3" class="uri">https://arxiv.org/abs/1709.02082v3</a></p>
+<em>arXiv</em> (2017-09-07) <a href="https://arxiv.org/abs/1709.02082v4" class="uri">https://arxiv.org/abs/1709.02082v4</a></p>
 </div>
 <div id="ref-TGyu2Woj">
 <p>304. <strong>Visualizing Data using t-SNE</strong><br />
@@ -2047,8 +2045,8 @@ Chieh Lin, Siddhartha Jain, Hannah Kim, Ziv Bar-Joseph<br />
 <em>Nucleic Acids Research</em> (2017-07-31) <a href="https://doi.org/10.1093/nar/gkx681" class="uri">https://doi.org/10.1093/nar/gkx681</a></p>
 </div>
 <div id="ref-vk9ZInF3">
-<p>306. <strong>Science Forum: The Human Cell Atlas</strong><br />
-Aviv Regev, Sarah A Teichmann, Eric S Lander, Ido Amit, Christophe Benoist, Ewan Birney, Bernd Bodenmiller, Peter J Campbell, Piero Carninci, Menna Clatworthy, … <br />
+<p>306. <strong>The Human Cell Atlas</strong><br />
+Aviv Regev, Sarah A Teichmann, Eric S Lander, Ido Amit, Christophe Benoist, Ewan Birney, Bernd Bodenmiller, Peter Campbell, Piero Carninci, Menna Clatworthy, … <br />
 <em>eLife</em> (2017-12-05) <a href="https://doi.org/10.7554/elife.27041" class="uri">https://doi.org/10.7554/elife.27041</a></p>
 </div>
 <div id="ref-Oljj2W96">
@@ -2059,7 +2057,7 @@ Xiaojie Qiu, Qi Mao, Ying Tang, Li Wang, Raghav Chawla, Hannah Pliner, Cole Trap
 <div id="ref-2gn6PKkv">
 <p>308. <strong>Mastering the game of Go with deep neural networks and tree search</strong><br />
 David Silver, Aja Huang, Chris J. Maddison, Arthur Guez, Laurent Sifre, George van den Driessche, Julian Schrittwieser, Ioannis Antonoglou, Veda Panneershelvam, Marc Lanctot, … Demis Hassabis<br />
-<em>Nature</em> (2016-01-27) <a href="https://doi.org/10.1038/nature16961" class="uri">https://doi.org/10.1038/nature16961</a></p>
+<em>Nature</em> (2016-01) <a href="https://doi.org/10.1038/nature16961" class="uri">https://doi.org/10.1038/nature16961</a></p>
 </div>
 <div id="ref-N9NzkOjA">
 <p>309. <strong>Compositional biases of bacterial genomes and evolutionary implications.</strong><br />
@@ -2228,7 +2226,7 @@ Ilya Sutskever, Oriol Vinyals, Quoc V. Le<br />
 </div>
 <div id="ref-FVfZESYP">
 <p>342. <strong>Creating a universal SNP and small indel variant caller with deep neural networks</strong><br />
-Ryan Poplin, Dan Newburger, Jojo Dijamco, Nam Nguyen, Dion Loy, Sam S. Gross, Cory Y. McLean, Mark A. DePristo<br />
+Ryan Poplin, Pi-Chuan Chang, David Alexander, Scott Schwartz, Thomas Colthurst, Alexander Ku, Dan Newburger, Jojo Dijamco, Nam Nguyen, Pegah T. Afshar, … Mark A. DePristo<br />
 <em>Cold Spring Harbor Laboratory</em> (2016-12-14) <a href="https://doi.org/10.1101/092890" class="uri">https://doi.org/10.1101/092890</a></p>
 </div>
 <div id="ref-NCr4QkOg">
@@ -2269,7 +2267,7 @@ Demis Hassabis, Dharshan Kumaran, Christopher Summerfield, Matthew Botvinick<br 
 <div id="ref-EGwetrwp">
 <p>350. <strong>Using goal-driven deep learning models to understand sensory cortex</strong><br />
 Daniel LK Yamins, James J DiCarlo<br />
-<em>Nature Neuroscience</em> (2016-02-23) <a href="https://doi.org/10.1038/nn.4244" class="uri">https://doi.org/10.1038/nn.4244</a></p>
+<em>Nature Neuroscience</em> (2016-03) <a href="https://doi.org/10.1038/nn.4244" class="uri">https://doi.org/10.1038/nn.4244</a></p>
 </div>
 <div id="ref-1E5vZzUF2">
 <p>351. <strong>Inferring single-trial neural population dynamics using sequential auto-encoders</strong><br />
@@ -2324,7 +2322,7 @@ Donald B. Rubin<br />
 <div id="ref-173ftiSzF">
 <p>361. <strong>Learning Representations for Counterfactual Inference</strong><br />
 Fredrik D. Johansson, Uri Shalit, David Sontag<br />
-<em>arXiv</em> (2016-05-12) <a href="https://arxiv.org/abs/1605.03661v2" class="uri">https://arxiv.org/abs/1605.03661v2</a></p>
+<em>arXiv</em> (2016-05-12) <a href="https://arxiv.org/abs/1605.03661v3" class="uri">https://arxiv.org/abs/1605.03661v3</a></p>
 </div>
 <div id="ref-1GRT18Tt2">
 <p>362. <strong>Causal Phenotype Discovery via Deep Networks</strong><br />
@@ -2409,7 +2407,7 @@ Francesco Napolitano, Yan Zhao, Vania M Moreira, Roberto Tagliaferri, Juha Kere,
 <div id="ref-16FEYidu2">
 <p>378. <strong>Drug–Disease Association and Drug-Repositioning Predictions in Complex Diseases Using Causal Inference–Probabilistic Matrix Factorization</strong><br />
 Jihong Yang, Zheng Li, Xiaohui Fan, Yiyu Cheng<br />
-<em>Journal of Chemical Information and Modeling</em> (2014-09-22) <a href="https://doi.org/10.1021/ci500340n" class="uri">https://doi.org/10.1021/ci500340n</a></p>
+<em>Journal of Chemical Information and Modeling</em> (2014-08-22) <a href="https://doi.org/10.1021/ci500340n" class="uri">https://doi.org/10.1021/ci500340n</a></p>
 </div>
 <div id="ref-18lqFDKRR">
 <p>379. <strong>Drug repositioning for non-small cell lung cancer by using machine learning algorithms and topological graph theory</strong><br />
@@ -2447,7 +2445,7 @@ Qiaonan Duan, St Patrick Reid, Neil R Clark, Zichen Wang, Nicolas F Fernandez, A
 <em>npj Systems Biology and Applications</em> (2016-08-04) <a href="https://doi.org/10.1038/npjsba.2016.15" class="uri">https://doi.org/10.1038/npjsba.2016.15</a></p>
 </div>
 <div id="ref-RAadmvJN">
-<p>386. <strong>A guide to drug discovery: Hit and lead generation: beyond high-throughput screening</strong><br />
+<p>386. <strong>Hit and lead generation: beyond high-throughput screening</strong><br />
 Konrad H. Bleicher, Hans-Joachim Böhm, Klaus Müller, Alexander I. Alanine<br />
 <em>Nature Reviews Drug Discovery</em> (2003-05) <a href="https://doi.org/10.1038/nrd1086" class="uri">https://doi.org/10.1038/nrd1086</a></p>
 </div>
@@ -2469,7 +2467,7 @@ Steven Kearnes, Brian Goldman, Vijay Pande<br />
 <div id="ref-7QsMcDYy">
 <p>390. <strong>XenoSite: Accurately Predicting CYP-Mediated Sites of Metabolism with Neural Networks</strong><br />
 Jed Zaretzki, Matthew Matlock, S. Joshua Swamidass<br />
-<em>Journal of Chemical Information and Modeling</em> (2013-12-23) <a href="https://doi.org/10.1021/ci400518g" class="uri">https://doi.org/10.1021/ci400518g</a></p>
+<em>Journal of Chemical Information and Modeling</em> (2013-11-23) <a href="https://doi.org/10.1021/ci400518g" class="uri">https://doi.org/10.1021/ci400518g</a></p>
 </div>
 <div id="ref-1Dzz0P0qr">
 <p>391. <strong>Multi-task Neural Networks for QSAR Predictions</strong><br />
@@ -2479,7 +2477,7 @@ George E. Dahl, Navdeep Jaitly, Ruslan Salakhutdinov<br />
 <div id="ref-xOaTIeBY">
 <p>392. <strong>Deep Neural Nets as a Method for Quantitative Structure–Activity Relationships</strong><br />
 Junshui Ma, Robert P. Sheridan, Andy Liaw, George E. Dahl, Vladimir Svetnik<br />
-<em>Journal of Chemical Information and Modeling</em> (2015-02-23) <a href="https://doi.org/10.1021/ci500747n" class="uri">https://doi.org/10.1021/ci500747n</a></p>
+<em>Journal of Chemical Information and Modeling</em> (2015-02-17) <a href="https://doi.org/10.1021/ci500747n" class="uri">https://doi.org/10.1021/ci500747n</a></p>
 </div>
 <div id="ref-KJCJKadA">
 <p>393. <strong>Did Kaggle Predict Drug Candidate Activities? Or Not?</strong><br />
@@ -2504,7 +2502,7 @@ Andreas Mayr, Günter Klambauer, Thomas Unterthiner, Sepp Hochreiter<br />
 <div id="ref-B4cL1o2P">
 <p>397. <strong>Computational Modeling of β-Secretase 1 (BACE-1) Inhibitors Using Ligand Based Approaches</strong><br />
 Govindan Subramanian, Bharath Ramsundar, Vijay Pande, Rajiah Aldrin Denny<br />
-<em>Journal of Chemical Information and Modeling</em> (2016-10-24) <a href="https://doi.org/10.1021/acs.jcim.6b00290" class="uri">https://doi.org/10.1021/acs.jcim.6b00290</a></p>
+<em>Journal of Chemical Information and Modeling</em> (2016-10-10) <a href="https://doi.org/10.1021/acs.jcim.6b00290" class="uri">https://doi.org/10.1021/acs.jcim.6b00290</a></p>
 </div>
 <div id="ref-WeiyYhfy">
 <p>398. <strong>The enumeration of chemical space</strong><br />
@@ -2542,7 +2540,7 @@ David K. Duvenaud, Dougal Maclaurin, Jorge Iparraguirre, Rafael Bombarell, Timot
 <div id="ref-17Wih4Hd5">
 <p>405. <strong>Deep Architectures and Deep Learning in Chemoinformatics: The Prediction of Aqueous Solubility for Drug-Like Molecules</strong><br />
 Alessandro Lusci, Gianluca Pollastri, Pierre Baldi<br />
-<em>Journal of Chemical Information and Modeling</em> (2013-07-22) <a href="https://doi.org/10.1021/ci400187y" class="uri">https://doi.org/10.1021/ci400187y</a></p>
+<em>Journal of Chemical Information and Modeling</em> (2013-07-02) <a href="https://doi.org/10.1021/ci400187y" class="uri">https://doi.org/10.1021/ci400187y</a></p>
 </div>
 <div id="ref-145os4Y6t">
 <p>406. <strong>Molecular graph convolutions: moving beyond fingerprints</strong><br />
@@ -2610,7 +2608,7 @@ Renxiao Wang, Xueliang Fang, Yipin Lu, Chao-Yie Yang, Shaomeng Wang<br />
 <div id="ref-Gue0c5Gb">
 <p>419. <strong>Boosting Docking-Based Virtual Screening with Deep Learning</strong><br />
 Janaina Cruz Pereira, Ernesto Raúl Caffarena, Cicero Nogueira dos Santos<br />
-<em>Journal of Chemical Information and Modeling</em> (2016-12-27) <a href="https://doi.org/10.1021/acs.jcim.6b00355" class="uri">https://doi.org/10.1021/acs.jcim.6b00355</a></p>
+<em>Journal of Chemical Information and Modeling</em> (2016-11-29) <a href="https://doi.org/10.1021/acs.jcim.6b00355" class="uri">https://doi.org/10.1021/acs.jcim.6b00355</a></p>
 </div>
 <div id="ref-bNBiIiTt">
 <p>420. <strong>Protein-Ligand Scoring with Convolutional Neural Networks</strong><br />
@@ -2618,14 +2616,14 @@ Matthew Ragoza, Joshua Hochuli, Elisa Idrobo, Jocelyn Sunseri, David Ryan Koes<b
 <em>arXiv</em> (2016-12-08) <a href="https://arxiv.org/abs/1612.02751v1" class="uri">https://arxiv.org/abs/1612.02751v1</a></p>
 </div>
 <div id="ref-kJ4hy7E">
-<p>421. <strong>Enabling future drug discovery byde novodesign</strong><br />
+<p>421. <strong>Enabling future drug discovery by de novo design</strong><br />
 Markus Hartenfeller, Gisbert Schneider<br />
 <em>Wiley Interdisciplinary Reviews: Computational Molecular Science</em> (2011-04-25) <a href="https://doi.org/10.1002/wcms.49" class="uri">https://doi.org/10.1002/wcms.49</a></p>
 </div>
 <div id="ref-omzv9ryI">
 <p>422. <strong>De Novo Design at the Edge of Chaos</strong><br />
 Petra Schneider, Gisbert Schneider<br />
-<em>Journal of Medicinal Chemistry</em> (2016-05-12) <a href="https://doi.org/10.1021/acs.jmedchem.5b01849" class="uri">https://doi.org/10.1021/acs.jmedchem.5b01849</a></p>
+<em>Journal of Medicinal Chemistry</em> (2016-02-16) <a href="https://doi.org/10.1021/acs.jmedchem.5b01849" class="uri">https://doi.org/10.1021/acs.jmedchem.5b01849</a></p>
 </div>
 <div id="ref-15y7iq6HF">
 <p>423. <strong>Generating Sequences With Recurrent Neural Networks</strong><br />
@@ -2690,7 +2688,7 @@ Alex Kendall, Yarin Gal<br />
 <div id="ref-WZjlu7tr">
 <p>435. <strong>Multi-Task Learning Using Uncertainty to Weigh Losses for Scene Geometry and Semantics</strong><br />
 Alex Kendall, Yarin Gal, Roberto Cipolla<br />
-<em>arXiv</em> (2017-05-19) <a href="https://arxiv.org/abs/1705.07115v1" class="uri">https://arxiv.org/abs/1705.07115v1</a></p>
+<em>arXiv</em> (2017-05-19) <a href="https://arxiv.org/abs/1705.07115v3" class="uri">https://arxiv.org/abs/1705.07115v3</a></p>
 </div>
 <div id="ref-QJ6hYH8N">
 <p>436. <strong>On Calibration of Modern Neural Networks</strong><br />
@@ -2715,7 +2713,7 @@ Dan Hendrycks, Kevin Gimpel<br />
 <div id="ref-vJxaHm0b">
 <p>440. <strong>Enhancing The Reliability of Out-of-distribution Image Detection in Neural Networks</strong><br />
 Shiyu Liang, Yixuan Li, R. Srikant<br />
-<em>arXiv</em> (2017-06-08) <a href="https://arxiv.org/abs/1706.02690v3" class="uri">https://arxiv.org/abs/1706.02690v3</a></p>
+<em>arXiv</em> (2017-06-08) <a href="https://arxiv.org/abs/1706.02690v4" class="uri">https://arxiv.org/abs/1706.02690v4</a></p>
 </div>
 <div id="ref-InL72p4N">
 <p>441. <strong>Concrete Problems in AI Safety</strong><br />
@@ -2738,14 +2736,14 @@ Christian Leibig, Vaneeda Allken, Murat Seçkin Ayhan, Philipp Berens, Siegfried
 <em>Scientific Reports</em> (2017-12) <a href="https://doi.org/10.1038/s41598-017-17876-z" class="uri">https://doi.org/10.1038/s41598-017-17876-z</a></p>
 </div>
 <div id="ref-ZhgOMnnD">
-<p>445. <strong>Robustly representing inferential uncertainty in deep neural networks through sampling</strong><br />
+<p>445. <strong>Robustly representing uncertainty in deep neural networks through sampling</strong><br />
 Patrick McClure, Nikolaus Kriegeskorte<br />
-<em>arXiv</em> (2016-11-05) <a href="https://arxiv.org/abs/1611.01639v6" class="uri">https://arxiv.org/abs/1611.01639v6</a></p>
+<em>arXiv</em> (2016-11-05) <a href="https://arxiv.org/abs/1611.01639v7" class="uri">https://arxiv.org/abs/1611.01639v7</a></p>
 </div>
 <div id="ref-emWW7yUp">
 <p>446. <strong>Bayesian Hypernetworks</strong><br />
 David Krueger, Chin-Wei Huang, Riashat Islam, Ryan Turner, Alexandre Lacoste, Aaron Courville<br />
-<em>arXiv</em> (2017-10-13) <a href="https://arxiv.org/abs/1710.04759v1" class="uri">https://arxiv.org/abs/1710.04759v1</a></p>
+<em>arXiv</em> (2017-10-13) <a href="https://arxiv.org/abs/1710.04759v2" class="uri">https://arxiv.org/abs/1710.04759v2</a></p>
 </div>
 <div id="ref-Jy2oz6xk">
 <p>447. <strong>Simple and Scalable Predictive Uncertainty Estimation using Deep Ensembles</strong><br />
@@ -2914,8 +2912,8 @@ Alec Radford, Luke Metz, Soumith Chintala<br />
 </div>
 <div id="ref-AK17eOgD">
 <p>480. <strong>The Cancer Genome Atlas Pan-Cancer analysis project</strong><br />
-Kyle Chang, Chad J Creighton, Caleb Davis, Lawrence Donehower, Jennifer Drummond, David Wheeler, Adrian Ally, Miruna Balasundaram, Inanc Birol, Yaron SN Butterfield, … Joshua M Stuart<br />
-<em>Nature Genetics</em> (2013-09-26) <a href="https://doi.org/10.1038/ng.2764" class="uri">https://doi.org/10.1038/ng.2764</a></p>
+John N WeinsteinEric A Collisson, Gordon B Mills, Kenna R Mills Shaw, Brad A Ozenberger, Kyle Ellrott, Ilya Shmulevich, Chris Sander, Joshua M Stuart<br />
+<em>Nature Genetics</em> (2013-10) <a href="https://doi.org/10.1038/ng.2764" class="uri">https://doi.org/10.1038/ng.2764</a></p>
 </div>
 <div id="ref-aWn0df1m">
 <p>481. <strong>Extracting a Biologically Relevant Latent Space from Cancer Transcriptomes with Variational Autoencoders</strong><br />
@@ -3028,9 +3026,7 @@ Rajat Raina, Anand Madhavan, Andrew Y. Ng<br />
 <em>Proceedings of the 26th Annual International Conference on Machine Learning - ICML ’09</em> (2009) <a href="https://doi.org/10.1145/1553374.1553486" class="uri">https://doi.org/10.1145/1553374.1553486</a></p>
 </div>
 <div id="ref-NSgduYNT">
-<p>503. <strong>Improving the speed of neural networks on CPUs</strong><br />
-Vincent Vanhoucke, Andrew Senior, Mark Z. Mao<br />
-(2011) <a href="https://research.google.com/pubs/pub37631.html" class="uri">https://research.google.com/pubs/pub37631.html</a></p>
+<p>503. <strong>Improving the speed of neural networks on CPUs – Google AI</strong><em>Google AI</em> <a href="https://research.google.com/pubs/pub37631.html" class="uri">https://research.google.com/pubs/pub37631.html</a></p>
 </div>
 <div id="ref-IULiPa6L">
 <p>504. <strong>On parallelizability of stochastic gradient descent for speech DNNS</strong><br />
@@ -3050,7 +3046,7 @@ Chris Edwards<br />
 <div id="ref-aClNvbyM">
 <p>507. <strong>Experiments on Parallel Training of Deep Neural Network using Model Averaging</strong><br />
 Hang Su, Haoyu Chen<br />
-<em>arXiv</em> (2015-07-05) <a href="https://arxiv.org/abs/1507.01239v2" class="uri">https://arxiv.org/abs/1507.01239v2</a></p>
+<em>arXiv</em> (2015-07-05) <a href="https://arxiv.org/abs/1507.01239v3" class="uri">https://arxiv.org/abs/1507.01239v3</a></p>
 </div>
 <div id="ref-fNkl8HFz">
 <p>508. <strong>Efficient mini-batch training for stochastic optimization</strong><br />
@@ -3171,7 +3167,7 @@ Dan L. Longo, Jeffrey M. Drazen<br />
 <div id="ref-194IoYUs3">
 <p>532. <strong>Celebrating parasites</strong><br />
 Casey S Greene, Lana X Garmire, Jack A Gilbert, Marylyn D Ritchie, Lawrence E Hunter<br />
-<em>Nature Genetics</em> (2017-03-30) <a href="https://doi.org/10.1038/ng.3830" class="uri">https://doi.org/10.1038/ng.3830</a></p>
+<em>Nature Genetics</em> (2017-04) <a href="https://doi.org/10.1038/ng.3830" class="uri">https://doi.org/10.1038/ng.3830</a></p>
 </div>
 <div id="ref-wzHEnMZe">
 <p>533. <strong>Is Multitask Deep Learning Practical for Pharma?</strong><br />
@@ -3229,7 +3225,7 @@ Umut Eser, L. Stirling Churchman<br />
 <div id="ref-1BARarxfz">
 <p>544. <strong>Modeling Reactivity to Biological Macromolecules with a Deep Multitask Network</strong><br />
 Tyler B. Hughes, Na Le Dang, Grover P. Miller, S. Joshua Swamidass<br />
-<em>ACS Central Science</em> (2016-08-24) <a href="https://doi.org/10.1021/acscentsci.6b00162" class="uri">https://doi.org/10.1021/acscentsci.6b00162</a></p>
+<em>ACS Central Science</em> (2016-07-29) <a href="https://doi.org/10.1021/acscentsci.6b00162" class="uri">https://doi.org/10.1021/acscentsci.6b00162</a></p>
 </div>
 <div id="ref-nyjAIan4">
 <p>545. <strong>IBM edges closer to human speech recognition</strong><br />
@@ -3264,7 +3260,7 @@ Nicolas Papernot, Patrick McDaniel, Arunesh Sinha, Michael Wellman<br />
 <div id="ref-18lZK7fxH">
 <p>551. <strong>Feature Squeezing: Detecting Adversarial Examples in Deep Neural Networks</strong><br />
 Weilin Xu, David Evans, Yanjun Qi<br />
-<em>arXiv</em> (2017-04-04) <a href="https://arxiv.org/abs/1704.01155v1" class="uri">https://arxiv.org/abs/1704.01155v1</a></p>
+<em>arXiv</em> (2017-04-04) <a href="https://arxiv.org/abs/1704.01155v2" class="uri">https://arxiv.org/abs/1704.01155v2</a></p>
 </div>
 <div id="ref-6MR50hyY">
 <p>552. <strong>The Grey Literature — Proof of prespecified endpoints in medical research with the bitcoin blockchain</strong><br />
@@ -3277,7 +3273,7 @@ Daniel Himmelstein<br />
 <em>Satoshi Village</em> (2017-03-08) <a href="http://blog.dhimmel.com/irreproducible-timestamps/" class="uri">http://blog.dhimmel.com/irreproducible-timestamps/</a></p>
 </div>
 <div id="ref-igA8jklc">
-<p>554. <strong>OpenTimestamps: a timestamping proof standard</strong>(2017-05-16) <a href="https://opentimestamps.org/" class="uri">https://opentimestamps.org/</a></p>
+<p>554. <strong>OpenTimestamps: a timestamping proof standard</strong>(2018-04-12) <a href="https://opentimestamps.org/" class="uri">https://opentimestamps.org/</a></p>
 </div>
 <div id="ref-yLr4pV4G">
 <p>555. <strong>greenelab/deep-review</strong><em>GitHub</em> (2017) <a href="https://github.com/greenelab/deep-review" class="uri">https://github.com/greenelab/deep-review</a></p>

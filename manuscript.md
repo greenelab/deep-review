@@ -36,7 +36,7 @@ author-meta:
 - Austin Huang
 - Anthony Gitter
 - Casey S. Greene
-date-meta: '2018-04-09'
+date-meta: '2018-08-15'
 keywords:
 - deep learning
 - review
@@ -47,7 +47,8 @@ keywords:
 - collaborative
 - manubot
 lang: en-US
-title: Opportunities and obstacles for deep learning in biology and medicine
+title: 'Opportunities and obstacles for deep learning in biology and medicine: 2019
+  update'
 ...
 
 
@@ -57,10 +58,10 @@ _The published version of this manuscript is available at <https://doi.org/10.10
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/deep-review/v/5df298135b65c72d164f69571fb303c5d1db21b2/))
+([permalink](https://greenelab.github.io/deep-review/v/939920570a269bd750af13286f8a053f08ffdaf8/))
 was automatically generated
-from [greenelab/deep-review@5df2981](https://github.com/greenelab/deep-review/tree/5df298135b65c72d164f69571fb303c5d1db21b2)
-on April 9, 2018.
+from [greenelab/deep-review@9399205](https://github.com/greenelab/deep-review/tree/939920570a269bd750af13286f8a053f08ffdaf8)
+on August 15, 2018.
 </em></small>
 
 ## Authors
