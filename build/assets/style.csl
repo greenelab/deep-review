@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="never" default-locale="en-US">
   <!-- This style was edited with the Visual CSL Editor (http://editor.citationstyles.org/visualEditor/) -->
   <info>
@@ -10,7 +10,7 @@
       <name>Daniel Himmelstein</name>
       <email>daniel.himmelstein@gmail.com</email>
     </author>
-    <updated>2017-09-04T20:54:02+00:00</updated>
+    <updated>2018-08-22T19:08:46+00:00</updated>
     <rights license="https://creativecommons.org/publicdomain/zero/1.0/legalcode">This work is dedicated to the public domain via CC0 1.0</rights>
   </info>
   <macro name="author">
@@ -51,7 +51,7 @@
       <group display="block">
         <text macro="author"/>
       </group>
-      <group delimiter=" ">
+      <group display="block" delimiter=" ">
         <text macro="venue" font-style="italic"/>
         <date variable="issued" prefix="(" suffix=")">
           <date-part name="year"/>
@@ -59,6 +59,12 @@
           <date-part name="day" form="numeric-leading-zeros" prefix="-"/>
         </date>
         <text variable="URL"/>
+      </group>
+      <group delimiter=" · ">
+        <text variable="DOI" text-case="lowercase" prefix="DOI: "/>
+        <text variable="PMID" prefix="PMID: "/>
+        <text variable="PMCID" prefix="PMCID: "/>
+        <text variable="ISBN" prefix="ISBN: "/>
       </group>
     </layout>
   </bibliography>

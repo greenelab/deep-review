@@ -2,27 +2,27 @@ name: manubot
 channels:
   - conda-forge
 dependencies:
-  - conda-forge::cairo=1.14.10
-  - conda-forge::cffi=1.11.2
+  - conda-forge::cairo=1.14.12
+  - conda-forge::cffi=1.11.5
   - conda-forge::ghp-import=0.5.5
   - conda-forge::jinja2=2.10
-  - conda-forge::pandas=0.22.0
-  - conda-forge::pandoc=2.1.1
-  - conda-forge::python=3.6.4
+  - conda-forge::pandas=0.23.4
+  - conda-forge::pandoc=2.2.2
+  - conda-forge::python=3.6.6
   - conda-forge::pyyaml=3.12
-  - conda-forge::requests=2.18.4
+  - conda-forge::requests=2.19.1
   - conda-forge::watchdog=0.8.3
   - pip:
     - errorhandler==2.0.1
-    - git+https://github.com/greenelab/manubot@27456594c407f3fed35804db4bcf3b5bba88a716
-    - opentimestamps-client==0.5.1
-    - opentimestamps==0.2.0.1
-    - pandoc-eqnos==1.2.0
-    - pandoc-fignos==1.2.0
-    - pandoc-tablenos==1.2.0
-    - pandoc-xnos==1.0.1
-    - pybase62==0.3.2
+    - git+https://github.com/greenelab/manubot@66a6efc6f4b84153a813aa423ec00725ed1417c5
+    - opentimestamps-client==0.6.0
+    - opentimestamps==0.4.0
+    - pandoc-eqnos==1.3.0
+    - pandoc-fignos==1.3.0
+    - pandoc-tablenos==1.3.0
+    - pandoc-xnos==1.1.1
+    - pybase62==0.4.0
     - pysha3==1.0.2
-    - python-bitcoinlib==0.9.0
+    - python-bitcoinlib==0.10.1
     - requests-cache==0.4.13
-    - weasyprint==0.42.2
+    - weasyprint==0.42.3

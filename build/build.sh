@@ -7,7 +7,7 @@ export LC_ALL=en_US.UTF-8
 
 # Generate reference information
 echo "Retrieving and processing reference metadata"
-manubot \
+manubot process \
   --content-directory=content \
   --output-directory=output \
   --cache-directory=ci/cache \
