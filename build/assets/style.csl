@@ -51,7 +51,7 @@
       <group display="block">
         <text macro="author"/>
       </group>
-      <group display="block" delimiter=" ">
+      <group delimiter=" ">
         <text macro="venue" font-style="italic"/>
         <date variable="issued" prefix="(" suffix=")">
           <date-part name="year"/>
@@ -60,7 +60,7 @@
         </date>
         <text variable="URL"/>
       </group>
-      <group delimiter=" · ">
+      <group display="block" delimiter=" · ">
         <text variable="DOI" text-case="lowercase" prefix="DOI: "/>
         <text variable="PMID" prefix="PMID: "/>
         <text variable="PMCID" prefix="PMCID: "/>
