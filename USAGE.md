@@ -167,3 +167,20 @@ For additional examples, check out existing manuscripts that use the Manubot (so
 + The Manubot 2018 Development Proposal ([source](https://github.com/greenelab/manufund-2018), [manuscript](https://greenelab.github.io/manufund-2018/))
 
 If you are using the Manubot, feel free to submit a pull request to add your manuscript to the list above.
+
+## Citing Manubot
+
+To cite the Manubot project or for more information on its design and history, see `@url:https://greenelab.github.io/meta-review/`:
+
+> **Open collaborative writing with Manubot**<br>
+Daniel S. Himmelstein, David R. Slochower, Venkat S. Malladi, Casey S.
+Greene, Anthony Gitter<br>
+_Manubot Preprint_ (2018) <https://greenelab.github.io/meta-review/>
+
+## Acknowledgments
+
+We would like to thank the contributors and funders whose support makes the Manubot project possible.
+Specifically, Manubot development has been financially supported by:
+
+- the **Alfred P. Sloan Foundation** in [Grant G-2018-11163](https://sloan.org/grant-detail/8501) to [**@dhimmel**](https://github.com/dhimmel).
+- the **Gordon & Betty Moore Foundation** ([**@DDD-Moore**](https://github.com/DDD-Moore)) in [Grant GBMF4552](https://www.moore.org/grant-detail?grantId=GBMF4552) to [**@cgreene**](https://github.com/cgreene).
