@@ -9,10 +9,12 @@ Setup is supported on Linux and macOS, but [**not on Windows**](https://github.c
 
 First, you must configure two environment variables (`OWNER` and `REPO`).
 These variables specify the GitHub repository for the manuscript (i.e. `https://github.com/OWNER/REPO`).
+Make sure that the case of `OWNER` matches how your username is displayed on GitHub.
+In general, assume that all commands in this setup are case-sensitive.
 **Edit the following commands with your manuscript's information:**
 
 ```sh
-# GitHub account (change from greenelab)
+# GitHub username (change from greenelab)
 OWNER=greenelab
 # Repository name (change from manubot-rootstock)
 REPO=manubot-rootstock
