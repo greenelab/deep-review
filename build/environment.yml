@@ -15,16 +15,16 @@ dependencies:
   - conda-forge::watchdog=0.8.3
   - pip:
     - errorhandler==2.0.1
-    - git+https://github.com/greenelab/manubot@9d97ec347882bcd85ab6aee7a3b4734105ebfc15
+    - git+https://github.com/greenelab/manubot@4e6a0f6d28220264c0d7892c732cb68c3e97c07a
     - jsonref==0.2
     - opentimestamps-client==0.6.0
-    - opentimestamps==0.4.0
+    - opentimestamps==0.3.0
     - pandoc-eqnos==1.3.0
     - pandoc-fignos==1.3.0
     - pandoc-tablenos==1.3.0
     - pandoc-xnos==1.1.1
     - pybase62==0.4.0
     - pysha3==1.0.2
-    - python-bitcoinlib==0.10.1
+    - python-bitcoinlib==0.9.0
     - requests-cache==0.4.13
     - weasyprint==0.42.3
