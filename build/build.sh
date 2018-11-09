@@ -42,31 +42,33 @@ pandoc --verbose \
   --output=output/manuscript.html \
   $INPUT_PATH
 
-# Create PDF output
-echo "Exporting PDF manuscript"
-ln -s content/images images
-pandoc \
-  --from=markdown \
-  --to=html5 \
-  --pdf-engine=weasyprint \
-  --pdf-engine-opt=--presentational-hints \
-  --filter=pandoc-fignos \
-  --filter=pandoc-eqnos \
-  --filter=pandoc-tablenos \
-  --bibliography=$BIBLIOGRAPHY_PATH \
-  --csl=$CSL_PATH \
-  --metadata link-citations=true \
-  --webtex=https://latex.codecogs.com/svg.latex? \
-  --css=webpage/github-pandoc.css \
-  --output=output/manuscript.pdf \
-  $INPUT_PATH
-rm -r images
+# Create PDF output (unless BUILD_PDF environment variable equals "false")
+if [ "$BUILD_PDF" != "false" ]; then
+  echo "Exporting PDF manuscript"
+  if [ -L images ]; then rm images; fi  # if images is a symlink, remove it
+  ln -s content/images
+  pandoc \
+    --from=markdown \
+    --to=html5 \
+    --pdf-engine=weasyprint \
+    --pdf-engine-opt=--presentational-hints \
+    --filter=pandoc-fignos \
+    --filter=pandoc-eqnos \
+    --filter=pandoc-tablenos \
+    --bibliography=$BIBLIOGRAPHY_PATH \
+    --csl=$CSL_PATH \
+    --metadata link-citations=true \
+    --webtex=https://latex.codecogs.com/svg.latex? \
+    --css=webpage/github-pandoc.css \
+    --output=output/manuscript.pdf \
+    $INPUT_PATH
+  rm images
+fi
 
-# Create DOCX output when user specifies to do so
-if [ "$BUILD_DOCX" = "true" ];
-then
-    echo "Exporting Word Docx manuscript"
-    pandoc --verbose \
+# Create DOCX output (if BUILD_DOCX environment variable equals "true")
+if [ "$BUILD_DOCX" = "true" ]; then
+  echo "Exporting Word Docx manuscript"
+  pandoc --verbose \
     --from=markdown \
     --to=docx \
     --filter=pandoc-fignos \

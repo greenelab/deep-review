@@ -4,6 +4,10 @@ output/*
 
 webpage/v
 
+# When PDF building fails, a temporary symlink named images in the root
+# directory is not removed.
+/images
+
 # Manubot cache directory
 ci/cache
 
