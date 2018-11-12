@@ -9,6 +9,7 @@ dependencies:
   - conda-forge::jsonschema=2.6.0
   - conda-forge::pandas=0.23.4
   - conda-forge::pandoc=2.3.1
+  - conda-forge::pango=1.40.14
   - conda-forge::python=3.6.5
   - conda-forge::pyyaml=3.13
   - conda-forge::requests=2.19.1
