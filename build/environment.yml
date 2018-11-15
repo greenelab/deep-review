@@ -12,11 +12,11 @@ dependencies:
   - conda-forge::pango=1.40.14
   - conda-forge::python=3.6.5
   - conda-forge::pyyaml=3.13
-  - conda-forge::requests=2.19.1
+  - conda-forge::requests=2.20.1
   - conda-forge::watchdog=0.8.3
   - pip:
     - errorhandler==2.0.1
-    - git+https://github.com/greenelab/manubot@a008126b39e3bd4b80ebaa5af9f9fa2f30b3a670
+    - git+https://github.com/greenelab/manubot@afa55f83a4a27645b07bdf0a25092a45b814df35
     - jsonref==0.2
     - opentimestamps-client==0.6.0
     - opentimestamps==0.3.0
