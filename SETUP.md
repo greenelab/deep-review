@@ -174,7 +174,15 @@ This section will describe how to incorporate changes to manubot-rootstock that 
 You will want to do this if there are new enhancements or bugfixes that you want to incorporate.
 This process can be difficult, especially if conflicts have arisen, and is recommended only for advanced git users.
 
-First, pull the new commits from manubot-rootstock, but do not automerge:
+It is recommended to do rootstock upgrades via a pull request to help you view the proposed changes and to ensure the build uses the updated environment.
+First, checkout a new branch to use as the pull request head branch:
+
+```sh
+# This command names the branch using the current date, i.e. rootstock-2018-11-16
+git checkout -b rootstock-`date '+%Y-%m-%d'`
+```
+
+Second, pull the new commits from manubot-rootstock, but do not automerge:
 
 ```sh
 git pull --no-ff --no-commit rootstock master
@@ -185,6 +193,9 @@ However, if there are conflicts, follow the suggested commands to resolve them.
 
 You can add the changes incrementally using `git add --patch`.
 This is helpful to see each upstream change.
-You may notice changes that effect how items in `content` are processed.
+You may notice changes that affect how items in `content` are processed.
 If so, you should edit and stage `content` files as needed.
 When there are no longer any unstaged changes, then do `git commit`.
+
+If updating `master` via a pull request, proceed to push the commit to GitHub and open a pull request.
+Once the pull request is ready to merge, use GitHub's "Create a merge commit" option rather than "Squash and merge" or "Rebase and merge" to preserve the rootstock commit hashes.
