@@ -16,7 +16,7 @@ We'd love to have you ask questions, clarify points, and jump in and edit the te
 ## Authorship
 
 What qualifies as authorship?
-We use the [ICJME Guidelines](http://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html).
+We use the [ICMJE Guidelines](http://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html).
 We expect authors to contribute to the overall design by participating in issues, to contribute to the text by contributing sections and/or revisions to sections through pull requests.
 It is important to note that, for authorship, these should be substantial intellectual contributions.
 
