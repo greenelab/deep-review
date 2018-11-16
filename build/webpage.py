@@ -117,8 +117,11 @@ def create_version(args):
         'manuscript.pdf': 'manuscript.pdf',
     }
     for src, dst in renamer.items():
+        src_path = args.output_directory.joinpath(src)
+        if not src_path.exists():
+            continue
         shutil.copy2(
-            src=args.output_directory.joinpath(src),
+            src=src_path,
             dst=args.version_directory.joinpath(dst),
         )
 
