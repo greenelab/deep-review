@@ -58,9 +58,9 @@ _The published version of this manuscript is available at <https://doi.org/10.10
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/deep-review/v/75894b50cb8ee115dfcfb8a1b5883a812d881a9f/))
+([permalink](https://greenelab.github.io/deep-review/v/eeca6a7c1ab92eeab3585c6b44f8c81b39d39235/))
 was automatically generated
-from [greenelab/deep-review@75894b5](https://github.com/greenelab/deep-review/tree/75894b50cb8ee115dfcfb8a1b5883a812d881a9f)
+from [greenelab/deep-review@eeca6a7](https://github.com/greenelab/deep-review/tree/eeca6a7c1ab92eeab3585c6b44f8c81b39d39235)
 on November 16, 2018.
 </em></small>
 
