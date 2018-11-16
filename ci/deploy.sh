@@ -35,9 +35,10 @@ python build/webpage.py \
   --version=$TRAVIS_COMMIT
 
 # Generate OpenTimestamps
-ots stamp \
-  webpage/v/$TRAVIS_COMMIT/index.html \
-  webpage/v/$TRAVIS_COMMIT/manuscript.pdf
+ots stamp webpage/v/$TRAVIS_COMMIT/index.html
+if [ "$BUILD_PDF" != "false" ]; then
+  ots stamp webpage/v/$TRAVIS_COMMIT/manuscript.pdf
+fi
 
 # Commit message
 MESSAGE="\
