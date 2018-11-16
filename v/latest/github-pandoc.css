@@ -13,8 +13,6 @@
 article,
 aside,
 details,
-figcaption,
-figure,
 footer,
 header,
 hgroup,
@@ -295,12 +293,23 @@ svg:not(:root) {
    Figures
    ========================================================================== */
 
-/**
- * Address margin not present in IE 8/9 and Safari 5.
- */
-
 figure {
+    display: block;
+    /* Address margin not present in IE 8/9 and Safari 5. */
     margin: 0;
+}
+
+figcaption {
+    caption-side: bottom;
+    display: block;
+    text-align: left;
+}
+
+figure img {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    max-width:100%;
 }
 
 /* ==========================================================================
@@ -446,6 +455,14 @@ textarea {
 /* ==========================================================================
    Tables
    ========================================================================== */
+
+/**
+* Specify table caption location and text alignment.
+*/
+caption {
+    caption-side: top;
+    text-align: left;
+}
 
 /**
  * Remove most spacing between table cells.
@@ -674,9 +691,6 @@ table tr {
 }
 table tr:nth-child(2n) {
     background-color: #f8f8f8
-}
-img {
-    max-width: 100%
 }
 code,
 tt {
