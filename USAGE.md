@@ -79,14 +79,15 @@ When choosing which source to use for a citation, we recommend the following ord
 2. PubMed Central ID, cite like `@pmcid:PMC4497619`.
 3. PubMed ID, cite like `@pmid:26158728`.
 4. _arXiv_ ID, cite like `@arxiv:1508.06576v2`.
-5. URL / webpage, cite like `@url:http://openreview.net/pdf?id=Sk-oDY9ge`.
-6. For references that do not have any of the persistent identifiers above, use a raw citation like `@raw:old-manuscript`.
+5. ISBN (International Standard Book Number), cite like `@isbn:9781339919881`.
+6. URL / webpage, cite like `@url:https://nyti.ms/1QUgAt1`.
+7. For references that do not have any of the persistent identifiers above, use a raw citation like `@raw:old-manuscript`.
 Metadata for raw citations must be provided manually.
 
 Cite multiple items at once like:
 
 ```md
-Here is a sentence with several citations [@doi:10.15363/thinklab.4; @pmid:26158728; @arxiv:1508.06576].
+Here is a sentence with several citations [@doi:10.15363/thinklab.4; @pmid:26158728; @arxiv:1508.06576; @isbn:9780394603988].
 ```
 
 Note that multiple citations must be semicolon separated.
