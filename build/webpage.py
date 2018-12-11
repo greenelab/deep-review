@@ -18,7 +18,21 @@ def parse_arguments():
     parser.add_argument(
         '--version',
         default=os.environ.get('TRAVIS_COMMIT', 'local'),
-        help="Used to create webpage/v/{version} directory. Generally a commit hash, tag, or 'local'",
+        help="Used to create webpage/v/{version} directory. "
+             "Generally a commit hash, tag, or 'local'. "
+             "(default: '%(default)s')"
+    )
+    cache_group = parser.add_mutually_exclusive_group()
+    cache_group.add_argument(
+        '--no-ots-cache',
+        action='store_true',
+        help="disable the timestamp cache."
+    )
+    cache_group.add_argument(
+        '--ots-cache',
+        default=pathlib.Path('ci/cache/ots'),
+        type=pathlib.Path,
+        help="location for the timestamp cache (default: %(default)s)."
     )
     args = parser.parse_args()
     return args
@@ -138,7 +152,7 @@ def create_version(args):
     args.freeze_directory.joinpath('index.html').write_text(redirect_html)
 
 
-def get_versions():
+def get_versions(args):
     """
     Extract versions from the webpage/v directory, which should each contain
     a manuscript.
@@ -149,10 +163,53 @@ def get_versions():
     return versions
 
 
+def ots_upgrade(args):
+    """
+    Upgrade OpenTimestamps .ots files in versioned commit directory trees.
+
+    Upgrades each .ots file with a separate ots upgrade subprocess call due to
+    https://github.com/opentimestamps/opentimestamps-client/issues/71
+    """
+    ots_paths = list()
+    for version in get_versions(args):
+        ots_paths.extend(args.versions_directory.joinpath(version).glob('**/*.ots'))
+    ots_paths.sort()
+    for ots_path in ots_paths:
+        process_args = ['ots']
+        if args.no_ots_cache:
+            process_args.append('--no-cache')
+        else:
+            process_args.extend(['--cache', str(args.ots_cache)])
+        process_args.extend([
+            'upgrade',
+            str(ots_path),
+        ])
+        process = subprocess.run(
+            process_args,
+            stderr=subprocess.PIPE,
+            universal_newlines=True,
+        )
+        if process.returncode != 0:
+            print(f"OpenTimestamp upgrade command returned nonzero code ({process.returncode}).")
+        if not process.stderr.strip() == 'Success! Timestamp complete':
+            print(
+                f">>> {' '.join(map(str, process.args))}\n"
+                f"{process.stderr}"
+            )
+        backup_path = ots_path.with_suffix('.ots.bak')
+        if backup_path.exists():
+            if process.returncode == 0:
+                backup_path.unlink()
+            else:
+                # Restore original timestamp if failure
+                backup_path.rename(ots_path)
+
+
 if __name__ == '__main__':
     args = parse_arguments()
     configure_directories(args)
     print(args)
     create_version(args)
-    versions = get_versions()
+    versions = get_versions(args)
     print(versions)
+    ots_upgrade(args)
