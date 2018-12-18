@@ -16,7 +16,7 @@ dependencies:
   - conda-forge::watchdog=0.8.3
   - pip:
     - errorhandler==2.0.1
-    - git+https://github.com/greenelab/manubot@3318c8f220f557d3f6603df28b2b4db3ead7ecda
+    - git+https://github.com/greenelab/manubot@dae57036de250ca1ece852a4f5b3d7f946c25d50
     - jsonref==0.2
     - opentimestamps-client==0.6.0
     - opentimestamps==0.3.0
