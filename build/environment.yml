@@ -8,15 +8,15 @@ dependencies:
   - conda-forge::jinja2=2.10
   - conda-forge::jsonschema=2.6.0
   - conda-forge::pandas=0.23.4
-  - conda-forge::pandoc=2.3.1
+  - conda-forge::pandoc=2.5
   - conda-forge::pango=1.40.14
   - conda-forge::python=3.6.5
   - conda-forge::pyyaml=3.13
-  - conda-forge::requests=2.20.1
+  - conda-forge::requests=2.21.0
   - conda-forge::watchdog=0.8.3
   - pip:
     - errorhandler==2.0.1
-    - git+https://github.com/greenelab/manubot@dae57036de250ca1ece852a4f5b3d7f946c25d50
+    - git+https://github.com/greenelab/manubot@552dd99aaa148365a29a87176fedd626d4642d3c
     - jsonref==0.2
     - opentimestamps-client==0.6.0
     - opentimestamps==0.3.0
