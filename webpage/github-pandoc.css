@@ -58,7 +58,7 @@ template {
  */
 
 body {
-  position: relative;
+    position: relative;
 }
 
 /* ==========================================================================
@@ -85,13 +85,26 @@ body {
     margin: 0;
 }
 
-/***Page size and margins when printing***/
+/**
+ * Page size and margins when printing.
+ */
 @page {
-    size: Letter;
-    margin-top: 19mm;
-    margin-bottom: 16mm;
-    margin-left: 0mm;
-    margin-right: 0mm;
+    size: letter;
+    margin-top: 0.75in;
+    margin-bottom: 0.75in;
+    margin-left: 0.75in;
+    margin-right: 0.75in;
+}
+/* Remove margin, padding, border, etc. when printing; go right up to @page margins. */
+@media print {
+    html,
+    body {
+        margin: 0 !important;
+        padding: 0 !important;
+        border: 0 !important;
+        box-shadow: none !important;
+        max-width: none !important;
+    }
 }
 
 /* 
@@ -262,7 +275,7 @@ sup {
 }
 
 sup {
-    top: -0.5em;
+    top: -0.1em;
 }
 
 sub {
@@ -287,6 +300,25 @@ img {
 
 svg:not(:root) {
     overflow: hidden;
+}
+
+/**
+ * Hide hypothesis annotation toolbar, tooltip, etc. on print.
+ */
+@media only print {
+    .annotator-frame {
+        display: none !important;
+    }
+    hypothesis-adder {
+        display: none !important;
+    }
+}
+
+/**
+ * Override pandoc generated CSS quirks.
+ */
+.sourceCode {
+    overflow: auto !important;
 }
 
 /* ==========================================================================
@@ -754,7 +786,6 @@ pre tt {
 sup,
 sub,
 a.footnote {
-    font-size: 1.4ex;
     height: 0;
     line-height: 1;
     vertical-align: super;
