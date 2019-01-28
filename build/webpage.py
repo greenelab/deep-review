@@ -139,12 +139,6 @@ def create_version(args):
             dst=args.version_directory.joinpath(dst),
         )
 
-    # Copy webpage/github-pandoc.css to to webpage/v/version/github-pandoc.css
-    shutil.copy2(
-        src=args.webpage_directory.joinpath('github-pandoc.css'),
-        dst=args.version_directory.joinpath('github-pandoc.css'),
-    )
-
     # Create v/freeze to redirect to v/commit
     path = pathlib.Path('build/assets/redirect-template.html')
     redirect_html = path.read_text()
