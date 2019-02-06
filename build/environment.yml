@@ -3,20 +3,21 @@ channels:
   - conda-forge
 dependencies:
   - conda-forge::cairo=1.14.12
+  - conda-forge::cairocffi=0.8.0
   - conda-forge::cffi=1.11.5
   - conda-forge::ghp-import=0.5.5
   - conda-forge::jinja2=2.10
   - conda-forge::jsonschema=2.6.0
-  - conda-forge::pandas=0.23.4
-  - conda-forge::pandoc=2.5
+  - conda-forge::pandas=0.24.0
+  - conda-forge::pandoc=2.6
   - conda-forge::pango=1.40.14
-  - conda-forge::python=3.6.5
+  - conda-forge::python=3.6.7
   - conda-forge::pyyaml=3.13
   - conda-forge::requests=2.21.0
   - conda-forge::watchdog=0.8.3
   - pip:
     - errorhandler==2.0.1
-    - git+https://github.com/greenelab/manubot@552dd99aaa148365a29a87176fedd626d4642d3c
+    - git+https://github.com/manubot/manubot@4505db3fd8a9dc1ba26c36f3fea9accbf02d47d8
     - jsonref==0.2
     - opentimestamps-client==0.6.0
     - opentimestamps==0.3.0

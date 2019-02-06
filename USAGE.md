@@ -76,6 +76,10 @@ Therefore, citations must be of the following form: `@source:identifier`, where 
 When choosing which source to use for a citation, we recommend the following order:
 
 1. DOI (Digital Object Identifier), cite like `@doi:10.15363/thinklab.4`.
+   Shortened versions of DOIs can be created at [shortdoi.org](http://shortdoi.org/).
+   shortDOIs begin with `10/` rather than `10.` and can also be cited.
+   For example, Manubot will expand `@doi:10/993` to the DOI above.
+   We suggest using shortDOIs to cite DOIs containing forbidden characters, such as `(` or `)`.
 2. PubMed Central ID, cite like `@pmcid:PMC4497619`.
 3. PubMed ID, cite like `@pmid:26158728`.
 4. _arXiv_ ID, cite like `@arxiv:1508.06576v2`.
@@ -165,7 +169,7 @@ Note that `affiliations` should be a list to allow for multiple affiliations per
 
 ## Manubot feedback
 
-If you experience any issues with the Manubot or would like to contribute to its source code, please visit [`greenelab/manubot`](https://github.com/greenelab/manubot) or [`greenelab/manubot-rootstock`](https://github.com/greenelab/manubot-rootstock).
+If you experience any issues with the Manubot or would like to contribute to its source code, please visit [`manubot/manubot`](https://github.com/manubot/manubot) or [`greenelab/manubot-rootstock`](https://github.com/greenelab/manubot-rootstock).
 
 ## Examples
 
