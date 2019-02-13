@@ -16,8 +16,8 @@ git remote set-url origin git@github.com:$TRAVIS_REPO_SLUG.git
 
 # Decrypt and add SSH key
 openssl aes-256-cbc \
-  -K $encrypted_f2f00aaf6402_key \
-  -iv $encrypted_f2f00aaf6402_iv \
+  -K $encrypted_9befd6eddffe_key \
+  -iv $encrypted_9befd6eddffe_iv \
   -in ci/deploy.key.enc \
   -out ci/deploy.key -d
 eval `ssh-agent -s`
@@ -49,8 +49,8 @@ This build is based on
 https://github.com/$TRAVIS_REPO_SLUG/commit/$TRAVIS_COMMIT.
 
 This commit was created by the following Travis CI build and job:
-https://travis-ci.org/$TRAVIS_REPO_SLUG/builds/$TRAVIS_BUILD_ID
-https://travis-ci.org/$TRAVIS_REPO_SLUG/jobs/$TRAVIS_JOB_ID
+https://travis-ci.com/$TRAVIS_REPO_SLUG/builds/$TRAVIS_BUILD_ID
+https://travis-ci.com/$TRAVIS_REPO_SLUG/jobs/$TRAVIS_JOB_ID
 
 [ci skip]
 

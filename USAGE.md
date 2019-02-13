@@ -1,6 +1,6 @@
 # Manubot usage guidelines
 
-This repository uses [Manubot](https://github.com/greenelab/manubot-rootstock) to automatically produce a manuscript from the source in the [`content`](content) directory.
+This repository uses [Manubot](https://manubot.org) to automatically produce a manuscript from the source in the [`content`](content) directory.
 
 ## Manubot markdown
 
@@ -169,7 +169,7 @@ Note that `affiliations` should be a list to allow for multiple affiliations per
 
 ## Manubot feedback
 
-If you experience any issues with the Manubot or would like to contribute to its source code, please visit [`manubot/manubot`](https://github.com/manubot/manubot) or [`greenelab/manubot-rootstock`](https://github.com/greenelab/manubot-rootstock).
+If you experience any issues with the Manubot or would like to contribute to its source code, please visit [`manubot/manubot`](https://github.com/manubot/manubot) or [`manubot/rootstock`](https://github.com/manubot/rootstock).
 
 ## Examples
 

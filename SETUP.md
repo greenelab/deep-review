@@ -1,9 +1,9 @@
-# Cloning manubot-rootstock to create a new manuscript
+# Cloning the manubot/rootstock repository to create a new manuscript
 
 The process to create a new Manubot manuscript is a bit challenging, because it requires a few steps that are difficult to automate.
 However, you will only have to perform these steps once for each manuscript.
 These steps should be performed in a terminal, starting in the directory where you want the manuscript folder be created.
-Setup is supported on Linux and macOS, but [**not on Windows**](https://github.com/greenelab/manubot-rootstock/issues/91).
+Setup is supported on Linux and macOS, but [**not on Windows**](https://github.com/manubot/rootstock/issues/91).
 
 ## Configuration
 
@@ -14,10 +14,10 @@ In general, assume that all commands in this setup are case-sensitive.
 **Edit the following commands with your manuscript's information:**
 
 ```sh
-# GitHub username (change from greenelab)
-OWNER=greenelab
-# Repository name (change from manubot-rootstock)
-REPO=manubot-rootstock
+# GitHub username (change from manubot)
+OWNER=manubot
+# Repository name (change from rootstock)
+REPO=rootstock
 ```
 
 ## Create repository
@@ -25,15 +25,15 @@ REPO=manubot-rootstock
 **Execute the remaining commands verbatim.**
 They do not need to be edited (if the setup works as intended).
 
-Next you must clone `greenelab/manubot-rootstock` and configure its branches and remotes:
+Next you must clone `manubot/rootstock` and configure its branches and remotes:
 
 ```sh
-# Clone greenelab/manubot-rootstock
-git clone https://github.com/greenelab/manubot-rootstock.git $REPO
+# Clone manubot/rootstock
+git clone https://github.com/manubot/rootstock.git $REPO
 cd $REPO
 
 # Configure remotes and branches
-git remote add rootstock https://github.com/greenelab/manubot-rootstock.git
+git remote add rootstock https://github.com/manubot/rootstock.git
 git checkout --orphan gh-pages
 git rm -r --force .
 git commit --allow-empty \
@@ -61,7 +61,7 @@ git push --set-upstream origin output
 
 ## Continuous integration
 
-Now you must manually enable Travis CI for the new repository at https://travis-ci.org.
+Now you must manually enable Travis CI for the new repository at https://travis-ci.com.
 Click the `+` sign to "Add New Repository".
 If you don't see your repository listed, push the "Sync account" button.
 Finally, flick the repository's switch to enable CI.
@@ -89,10 +89,11 @@ Give the key a descriptive title, such as "Travis CI Manubot".
 For the next step, you need the [Travis command line client](https://github.com/travis-ci/travis.rb) installed.
 This program is a Ruby gem:
 install it with `gem install travis` (not `apt install travis`, which is a different program).
-After the install, you will need to provide your credentials to login to travis with `travis login --org`.
+After the install, you will need to provide your credentials to login to travis with `travis login`.
 
 ```sh
 travis encrypt-file \
+  --com \
   --repo=$OWNER/$REPO \
   --force \
   deploy.key > travis-encrypt-file.log
@@ -119,6 +120,7 @@ Next, limit [concurrent](https://blog.travis-ci.com/2014-07-18-per-repository-co
 
 ```sh
 travis settings \
+  --com \
   --repo=$OWNER/$REPO \
   maximum_number_of_builds --set 1
 ```
@@ -141,8 +143,8 @@ Now update `README.md` files to reference the new repository:
 
 ```sh
 # Perform substitutions
-sed "s/greenelab/$OWNER/g" README.md > tmp && mv -f tmp README.md
-sed "s/manubot-rootstock/$REPO/g" README.md > tmp && mv -f tmp README.md
+sed "s/manubot\/rootstock/$OWNER\/$REPO/g" README.md > tmp && mv -f tmp README.md
+sed "s/manubot\.github\.io\/rootstock/$OWNER\.github\.io\/$REPO/g" README.md > tmp && mv -f tmp README.md
 
 # Remove deletable content file
 git rm content/02.delete-me.md
@@ -168,9 +170,9 @@ git push origin master
 You should be good to go now.
 A good first step is to modify `content/metadata.yaml` with the relevant information for your manuscript.
 
-# Merging upstream manubot-rootstock changes
+# Merging upstream rootstock changes
 
-This section will describe how to incorporate changes to manubot-rootstock that occurred since initializing your manuscript.
+This section will describe how to incorporate changes to rootstock that occurred since initializing your manuscript.
 You will want to do this if there are new enhancements or bugfixes that you want to incorporate.
 This process can be difficult, especially if conflicts have arisen, and is recommended only for advanced git users.
 
@@ -182,7 +184,7 @@ First, checkout a new branch to use as the pull request head branch:
 git checkout -b rootstock-`date '+%Y-%m-%d'`
 ```
 
-Second, pull the new commits from manubot-rootstock, but do not automerge:
+Second, pull the new commits from rootstock, but do not automerge:
 
 ```sh
 git pull --no-ff --no-commit rootstock master
