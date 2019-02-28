@@ -113,7 +113,7 @@ The following command automates this substitution.
 TRAVIS_ENCRYPT_ID=`python -c "import re; \
   text = open('travis-encrypt-file.log').read(); \
   print(re.search('encrypted_([a-f0-9]+)_key', text).group(1))"`
-sed "s/f2f00aaf6402/$TRAVIS_ENCRYPT_ID/g" deploy.sh > tmp && mv -f tmp deploy.sh
+sed "s/9befd6eddffe/$TRAVIS_ENCRYPT_ID/g" deploy.sh > tmp && mv -f tmp deploy.sh
 ```
 
 Next, limit [concurrent](https://blog.travis-ci.com/2014-07-18-per-repository-concurrency-setting/) Travis CI jobs to ensure previous builds deploy before subsequent ones begin:
