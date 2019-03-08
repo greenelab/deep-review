@@ -1,6 +1,6 @@
 <!-- default theme -->
-<style>
 
+<style>
     /* import google fonts */
     @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
     @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
@@ -13,33 +13,58 @@
     * {
         /* force sans-serif font unless specified otherwise */
         font-family: "Open Sans", "Helvetica", sans-serif;
+
+        /* prevent text inflation on some mobile browsers */
+        -webkit-text-size-adjust: none !important;
+        -moz-text-size-adjust: none !important;
+        -o-text-size-adjust: none !important;
+        text-size-adjust: none !important;
     }
 
-    /* "page" element */
-    body {
-        position: relative;
-        box-sizing: border-box;
-        /* make resemble paper */
-        max-width: 8.5in;
-        font-size: 16px;
-        line-height: 1.5;
-        margin: 20px auto;
-        padding: 40px;
-        border-radius: 4px;
-        background: #ffffff;
-        box-shadow: 0 0 15px #bbbbbb;
+    @media only screen {
+        /* "page" element */
+        body {
+            position: relative;
+            box-sizing: border-box;
+            max-width: 8.5in;
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 20px auto;
+            padding: 40px;
+            border-radius: 5px;
+            border: solid 1px #bdbdbd;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+            background: #ffffff;
+            word-break: all;
+            word-break: break-word;
+        }
     }
 
     /* when on screen < 8.5in wide */
     @media only screen and (max-width: 8.5in) {
         /* "page" element */
         body {
-            /* reduce padding to fit more text on screen */
             padding: 20px;
-            /* remove the "paper" look */
             margin: 0;
-            box-shadow: none;
+            border-radius: 0;
+            border: none;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05) inset;
+            background: none;
         }
+    }
+
+    @media only print {
+        /* "page" element */
+        body {
+            margin: 0;
+            padding: 0;
+            font-size: 12px;
+        }
+    }
+
+    @page {
+        /* suggested printing margin */
+        margin: 0.5in;
     }
 
     /* -------------------------------------------------- */
@@ -69,8 +94,7 @@
     h2 {
         margin-top: 30px;
         padding-bottom: 5px;
-        /* underline */
-        border-bottom: solid 1px #bbbbbb;
+        border-bottom: solid 1px #bdbdbd;
     }
 
     /* -------------------------------------------------- */
@@ -107,8 +131,12 @@
     /* unordered and ordered lists*/
     ul,
     ol {
-        /* align similarly to other elements */
         padding-left: 20px;
+    }
+
+    /* class for styling text semibold */
+    .semibold {
+        font-weight: 600;
     }
 
     /* -------------------------------------------------- */
@@ -119,65 +147,56 @@
     hr {
         border: none;
         height: 1px;
-        background: #bbbbbb;
+        background: #bdbdbd;
     }
 
-    /* paragraphs, horizontal dividers, figures, and tables */
+    /* paragraphs, horizontal dividers, figures, tables, code */
     p,
     hr,
     figure,
-    table {
+    table,
+    pre {
         /* treat all as "paragraphs", with consistent vertical margins */
         margin-top: 20px;
         margin-bottom: 20px;
-    }
-
-    /* figures and tables */
-    figure,
-    table {
-        /* horizontally center */
-        margin-left: auto;
-        margin-right: auto;
     }
 
     /* -------------------------------------------------- */
     /* figures */
     /* -------------------------------------------------- */
 
-    /* figure container */
+    /* figure */
     figure {
         max-width: 100%;
-        /* horizontally center */
         margin-left: auto;
         margin-right: auto;
     }
 
     /* figure caption */
     figcaption {
-        margin: 10px 20px 0 20px;
-    }
-
-    /* figure auto-number */
-    figcaption > span:first-child {
-        font-weight: 600;
-        margin-right: 5px;
+        padding: 0;
+        padding-top: 10px;
     }
 
     /* figure image element */
     figure img {
-        /* squash image if too wide for page */
         max-width: 100%;
-        /* horizontally center */
         display: block;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    /* figure auto-number */
+    img + figcaption > span:first-of-type {
+        font-weight: bold;
+        margin-right: 5px;
     }
 
     /* -------------------------------------------------- */
     /* tables */
     /* -------------------------------------------------- */
 
-    /* table container */
+    /* table */
     table {
         border-collapse: collapse;
         border-spacing: 0;
@@ -186,22 +205,10 @@
         margin-right: auto;
     }
 
-    /* table caption */
-    caption {
-        text-align: left;
-        margin: 0 20px 10px 20px;
-    }
-
-    /* table auto-number */
-    caption > span:first-child {
-        font-weight: 600;
-        margin-right: 5px;
-    }
-
     /* table cells */
     th,
     td {
-        border: solid 1px #bbbbbb;
+        border: solid 1px #bdbdbd;
         padding: 10px;
         /* squash table if too wide for page by forcing line breaks */
         /* put line break break anywhere in text */
@@ -213,12 +220,26 @@
     /* header row and even rows */
     th,
     tr:nth-child(2n) {
-        background-color: #f8f8f8;
+        background-color: #f5f5f5;
     }
 
     /* odd rows */
     tr:nth-child(2n + 1) {
         background-color: #ffffff;
+    }
+
+    /* table caption */
+    caption {
+        text-align: left;
+        padding: 0;
+        padding-bottom: 10px;
+    }
+
+    /* table auto-number */
+    table > caption > span:first-of-type,
+    div.table_wrapper > table > caption > span:first-of-type {
+        font-weight: bold;
+        margin-right: 5px;
     }
 
     /* -------------------------------------------------- */
@@ -227,21 +248,20 @@
 
     /* multi-line code block */
     pre {
-        /* give grey box background */
         padding: 10px;
-        background-color: #f0f0f0;
-        border: solid 1px #bbbbbb;
-        border-radius: 4px;
+        background-color: #eeeeee;
+        color: #000000;
+        border-radius: 5px;
+        break-inside: avoid;
+        text-align: left;
     }
 
     /* inline code, ie code within normal text */
-    /* a piece of code not already surrounded by a code block */
     :not(pre) > code {
-        /* give grey box background */
-        padding: 1px 5px;
-        background-color: #f0f0f0;
-        border: solid 1px #bbbbbb;
-        border-radius: 4px;
+        padding: 0 4px;
+        background-color: #eeeeee;
+        color: #000000;
+        border-radius: 5px;
     }
 
     /* code text */
@@ -250,8 +270,6 @@
     code * {
         /* force monospace font */
         font-family: "Source Code Pro", "Courier New", monospace;
-        /* reduce font size to match relative size of main font */
-        font-size: 14px;
     }
 
     /* -------------------------------------------------- */
@@ -262,31 +280,103 @@
     blockquote {
         margin: 0;
         padding: 0;
-        border-left: 4px solid #bbbbbb;
-        /* align similarly to other elements */
+        border-left: 4px solid #bdbdbd;
         padding-left: 16px;
+        break-inside: avoid;
     }
 
     /* -------------------------------------------------- */
-    /* mathjax */
+    /* banners */
     /* -------------------------------------------------- */
 
-    /* all first-generation children of mathjax containers */
-    .math.display > span {
-        overflow: auto hidden !important;
-        /* turn inline element (no dimensions) into block (allows fixed width and thus scrolling) */
-        display: flex !important;
-        justify-content: center;
-        align-items: center;
-        /* remove mathjax margins */
-        margin: 0 !important;
+    /* info banners */
+    .banner {
+        box-sizing: border-box;
+        display: block;
+        position: relative;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 20px;
+        text-align: center;
     }
 
-    /* right click menu */
-    .MathJax_Menu {
-        border: none !important;
-        border-radius: 4px !important;
-        box-shadow: 0 0 15px #bbbbbb !important;
+    /* paragraph in banner */
+    .banner > p {
+        margin: 0;
+    }
+
+    /* -------------------------------------------------- */
+    /* highlight colors */
+    /* -------------------------------------------------- */
+
+    .lightgrey {
+        background: #eeeeee;
+    }
+    .lightred {
+        background: #ffcdd2;
+    }
+    .lightyellow {
+        background: #ffecb3;
+    }
+    .lightgreen {
+        background: #dcedc8;
+    }
+    .lightblue {
+        background: #e3f2fd;
+    }
+    .lightpurple {
+        background: #f3e5f5;
+    }
+    .grey {
+        background: #757575;
+    }
+    .red {
+        background: #f44336;
+    }
+    .orange {
+        background: #ff9800;
+    }
+    .yellow {
+        background: #ffeb3b;
+    }
+    .green {
+        background: #4caf50;
+    }
+    .blue {
+        background: #2196f3;
+    }
+    .purple {
+        background: #9c27b0;
+    }
+    .lightgrey,
+    .lightred,
+    .lightyellow,
+    .lightgreen,
+    .lightblue,
+    .lightpurple,
+    .orange,
+    .yellow,
+    .lightgrey a,
+    .lightred a,
+    .lightyellow a,
+    .lightgreen a,
+    .lightblue a,
+    .lightpurple a,
+    .orange a,
+    .yellow a {
+        color: #000000;
+    }
+    .grey,
+    .red,
+    .green,
+    .blue,
+    .purple,
+    .red a,
+    .green a,
+    .blue a,
+    .purple a {
+        color: #ffffff;
     }
 
     /* -------------------------------------------------- */
@@ -300,22 +390,22 @@
         align-items: center;
         margin: 5px;
         padding: 10px 20px;
-        font-size: 13px;
+        font-size: 0.75em;
         font-weight: 600;
         text-transform: uppercase;
         text-decoration: none;
         letter-spacing: 1px;
         background: none;
         color: #2196f3;
-        border: solid 1px #bbbbbb;
-        border-radius: 4px;
+        border: solid 1px #bdbdbd;
+        border-radius: 5px;
     }
 
     /* buttons when hovered */
     .button:hover:not([disabled]),
     .icon_button:hover:not([disabled]) {
         cursor: pointer;
-        background: #f0f0f0;
+        background: #f5f5f5;
     }
 
     /* buttons when disabled */
@@ -325,7 +415,7 @@
         pointer-events: none;
     }
 
-    /* class for styling buttons containg only single icon (used in plugins) */
+    /* class for styling buttons containg only single icon */
     .icon_button {
         display: inline-flex;
         justify-content: center;
@@ -334,10 +424,17 @@
         margin: 0;
         padding: 0;
         background: none;
-        border-radius: 4px;
+        border-radius: 5px;
         border: none;
         width: 20px;
         height: 20px;
+        min-width: 20px;
+        min-height: 20px;
+    }
+
+    /* icon button inner svg image */
+    .icon_button > svg {
+        height: 16px;
     }
 
     /* -------------------------------------------------- */
@@ -352,59 +449,39 @@
     }
 
     /* -------------------------------------------------- */
-    /* when printing */
+    /* page break control */
     /* -------------------------------------------------- */
 
-    /* paper/page size and margins */
-    @page {
-        size: letter;
-        margin-top: 0.75in;
-        margin-bottom: 0.75in;
-        margin-left: 0.75in;
-        margin-right: 0.75in;
-    }
-
     @media print {
-        /* page element */
-        body {
-            /* remove margin and padding; go right up to page margins */
-            margin: 0;
-            padding: 0;
-            /* remove "paper" effect */
-            box-shadow: none;
-            /* make font size smaller to fit more words on page */
-            font-size: 12px;
-        }
-
-        /* all h2 headings except the first */
+        /* all <h2> headings except the first */
         h2:not(:first-of-type) {
             /* force page break */
-            page-break-before: always !important;
+            break-before: always !important;
         }
 
         /* always insert a page break before the element */
         .page_break_before {
-            page-break-before: always !important;
+            break-before: always !important;
         }
 
         /* always insert a page break after the element */
         .page_break_after {
-            page-break-after: always !important;
+            break-after: always !important;
         }
 
         /* avoid page break before the element */
         .page_break_before_avoid {
-            page-break-before: avoid !important;
+            break-before: avoid !important;
         }
 
         /* avoid page break after the element */
         .page_break_after_avoid {
-            page-break-after: avoid !important;
+            break-after: avoid !important;
         }
 
         /* avoid page break inside the element */
         .page_break_inside_avoid {
-            page-break-inside: avoid !important;
+            break-inside: avoid !important;
         }
     }
 
@@ -417,4 +494,52 @@
         overflow: auto !important;
     }
 
+    div.sourceCode {
+        /* prevent background fill on top-most code block  container */
+        background: none !important;
+    }
+
+    .sourceCode * {
+        /* force consistent line spacing */
+        line-height: 1.5 !important;
+    }
+
+    div.sourceCode {
+        /* style code block margins same as <pre> element */
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* -------------------------------------------------- */
+    /* mathjax */
+    /* -------------------------------------------------- */
+
+    /* mathjax containers */
+    .math.display > span:not(.MathJax_Preview) {
+        /* turn inline element (no dimensions) into block (allows fixed width and thus scrolling) */
+        display: flex !important;
+        overflow-x: auto !important;
+        overflow-y: hidden !important;
+        justify-content: center;
+        align-items: center;
+        margin: 0 !important;
+    }
+
+    /* right click menu */
+    .MathJax_Menu {
+        border-radius: 5px !important;
+        border: solid 1px #bdbdbd !important;
+        box-shadow: none !important;
+    }
+
+    /* equation auto-number */
+    span[id^="eq:"] > span.math.display + span {
+        font-weight: 600;
+    }
+
+    /* equation */
+    span[id^="eq:"] > span.math.display > span {
+        /* nudge to make room for equation auto-number */
+        margin-right: 40px !important;
+    }
 </style>
