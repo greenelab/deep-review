@@ -1,0 +1,273 @@
+<!-- jump to first plugin -->
+
+<script>
+    (function() {
+        // /////////////////////////
+        // DESCRIPTION
+        // /////////////////////////
+
+        // This Manubot plugin adds a button next to each reference entry,
+        // figure, and table that jumps the page to the first occurrence of a
+        // link to that item in the manuscript.
+
+        // /////////////////////////
+        // OPTIONS
+        // /////////////////////////
+
+        // plugin name prefix for url parameters
+        const pluginName = 'jumpToFirst';
+
+        // default plugin options
+        const options = {
+            // whether to add buttons next to reference entries
+            references: 'true',
+            // whether to add buttons next to figures
+            figures: 'true',
+            // whether to add buttons next to tables
+            tables: 'true',
+            // whether plugin is on or not
+            enabled: 'true'
+        };
+
+        // change options above, or override with url parameter, eg:
+        // 'manuscript.html?pluginName-enabled=false'
+
+        // /////////////////////////
+        // SCRIPT
+        // /////////////////////////
+
+        // start script
+        function start() {
+            if (options.references !== 'false')
+                makeReferenceButtons();
+            if (options.figures !== 'false')
+                makeFigureButtons();
+            if (options.tables !== 'false')
+                makeTableButtons();
+        }
+
+        // when jump button clicked
+        function onButtonClick() {
+            const first = getFirstOccurrence(this.dataset.id);
+            if (!first)
+                return;
+
+            // update url hash so navigating "back" in history will return
+            // user to jump button
+            window.location.hash = this.dataset.id;
+            // scroll to link
+            window.setTimeout(function() {
+                goToElement(first, window.innerHeight * 0.5);
+            }, 0);
+        }
+
+        // get first occurence of link to item in document
+        function getFirstOccurrence(id) {
+            let query = 'a';
+            query += '[href="#' + id + '"]';
+            // exclude buttons, anchor links, toc links, etc
+            query +=
+                ':not(.button):not(.icon_button):not(.anchor):not(.toc_link)';
+            return document.querySelector(query);
+        }
+
+        // add button next to each reference entry
+        function makeReferenceButtons() {
+            const references = document.querySelectorAll('div[id^="ref-"]');
+            for (const reference of references) {
+                // get reference id and element to add button to
+                const id = reference.id;
+                const container = reference.firstElementChild;
+                const first = getFirstOccurrence(id);
+
+                // if can't find link to reference, ignore
+                if (!first)
+                    continue;
+
+                // make jump button
+                let button = document.createElement('button');
+                button.classList.add('icon_button', 'jump_arrow');
+                button.title =
+                    'Jump to the first occurence of this reference in the document';
+                button.innerHTML = document.querySelector(
+                    '.icon_angle_double_up'
+                ).innerHTML;
+                button.dataset.id = id;
+                button.dataset.ignore = 'true';
+                container.innerHTML = button.outerHTML + container.innerHTML;
+                button = container.firstElementChild;
+                button.addEventListener('click', onButtonClick);
+            }
+        }
+
+        // add button next to each figure
+        function makeFigureButtons() {
+            const figures = document.querySelectorAll('img[id^="fig:"]');
+            for (const figure of figures) {
+                // get figure id and element to add button to
+                const id = figure.id;
+                const container = figure.nextElementSibling;
+                const first = getFirstOccurrence(id);
+
+                // if can't find link to figure, ignore
+                if (!first)
+                    continue;
+
+                // make jump button
+                const button = document.createElement('button');
+                button.classList.add('icon_button', 'jump_arrow');
+                button.title =
+                    'Jump to the first occurence of this figure in the document';
+                button.innerHTML = document.querySelector(
+                    '.icon_angle_double_up'
+                ).innerHTML;
+                button.dataset.id = id;
+                button.dataset.ignore = 'true';
+                container.insertBefore(button, container.firstElementChild);
+                button.addEventListener('click', onButtonClick);
+            }
+        }
+
+        // add button next to each figure
+        function makeTableButtons() {
+            const tables = document.querySelectorAll('a[name^="tbl:"]');
+            for (const table of tables) {
+                // get ref id and element to add button to
+                const id = table.name;
+                const container = table.nextElementSibling.querySelector(
+                    'caption'
+                );
+                const first = getFirstOccurrence(id);
+
+                // if can't find link to table, ignore
+                if (!first)
+                    continue;
+
+                // make jump button
+                const button = document.createElement('button');
+                button.classList.add('icon_button', 'jump_arrow');
+                button.title =
+                    'Jump to the first occurence of this table in the document';
+                button.innerHTML = document.querySelector(
+                    '.icon_angle_double_up'
+                ).innerHTML;
+                button.dataset.id = id;
+                button.dataset.ignore = 'true';
+                container.insertBefore(button, container.firstElementChild);
+                button.addEventListener('click', onButtonClick);
+            }
+        }
+
+        // scroll to and focus element
+        function goToElement(element, offset) {
+            // expand accordion section if collapsed
+            expandElement(element);
+            const y =
+                getRectInView(element).top -
+                getRectInView(document.documentElement).top -
+                (offset || 0);
+            // trigger any function listening for "onscroll" event
+            window.dispatchEvent(new Event('scroll'));
+            window.scrollTo(0, y);
+            element.focus();
+        }
+
+        // get position/dimensions of element or viewport
+        function getRectInView(element) {
+            let rect = {};
+            rect.left = 0;
+            rect.top = 0;
+            rect.right = window.innerWidth;
+            rect.bottom = window.innerHeight;
+            let style = {};
+
+            if (element instanceof HTMLElement) {
+                rect = element.getBoundingClientRect();
+                style = window.getComputedStyle(element);
+            }
+
+            const margin = {};
+            margin.left = parseFloat(style.marginLeftWidth) || 0;
+            margin.top = parseFloat(style.marginTopWidth) || 0;
+            margin.right = parseFloat(style.marginRightWidth) || 0;
+            margin.bottom = parseFloat(style.marginBottomWidth) || 0;
+
+            const border = {};
+            border.left = parseFloat(style.borderLeftWidth) || 0;
+            border.top = parseFloat(style.borderTopWidth) || 0;
+            border.right = parseFloat(style.borderRightWidth) || 0;
+            border.bottom = parseFloat(style.borderBottomWidth) || 0;
+
+            const newRect = {};
+            newRect.left = rect.left + margin.left + border.left;
+            newRect.top = rect.top + margin.top + border.top;
+            newRect.right = rect.right + margin.right + border.right;
+            newRect.bottom = rect.bottom + margin.bottom + border.bottom;
+            newRect.width = newRect.right - newRect.left;
+            newRect.height = newRect.bottom - newRect.top;
+
+            return newRect;
+        }
+
+        // get closest element before specified element that matches query
+        function firstBefore(element, query) {
+            while (
+                element &&
+                element !== document.body &&
+                !element.matches(query)
+            )
+                element = element.previousElementSibling || element.parentNode;
+
+            return element;
+        }
+
+        // check if element is part of collapsed heading
+        function isCollapsed(element) {
+            while (element && element !== document.body) {
+                if (element.dataset.collapsed === 'true')
+                    return true;
+                element = element.parentNode;
+            }
+            return false;
+        }
+
+        // (for interaction with accordion plugin)
+        // expand heading containing element if necesary
+        function expandElement(element) {
+            if (isCollapsed(element)) {
+                const heading = firstBefore(element, 'h2');
+                if (heading)
+                    heading.click();
+            }
+        }
+
+        // load options from url parameters
+        function loadOptions() {
+            const url = window.location.search;
+            const params = new URLSearchParams(url);
+            for (const optionName of Object.keys(options)) {
+                const paramName = pluginName + '-' + optionName;
+                const param = params.get(paramName);
+                if (param !== '' && param !== null)
+                    options[optionName] = param;
+            }
+        }
+        loadOptions();
+
+        // start script when document is finished loading
+        if (options.enabled === 'true')
+            window.addEventListener('load', start);
+    })();
+</script>
+
+<!-- angle double up icon -->
+
+<template class="icon_angle_double_up">
+    <!-- modified from: https://fontawesome.com/icons/angle-double-up -->
+    <svg width="16" height="16" viewBox="0 0 320 512">
+        <path
+            fill="currentColor"
+            d="M177 255.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 351.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 425.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1zm-34-192L7 199.7c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l96.4-96.4 96.4 96.4c9.4 9.4 24.6 9.4 33.9 0l22.6-22.6c9.4-9.4 9.4-24.6 0-33.9l-136-136c-9.2-9.4-24.4-9.4-33.8 0z"
+        ></path>
+    </svg>
+</template>

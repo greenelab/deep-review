@@ -1,0 +1,273 @@
+<!-- accordion plugin -->
+
+<script>
+    (function() {
+        // /////////////////////////
+        // DESCRIPTION
+        // /////////////////////////
+
+        // This Manubot plugin allows sections of content under <h2> headings
+        // to be collapsible.
+
+        // /////////////////////////
+        // OPTIONS
+        // /////////////////////////
+
+        // plugin name prefix for url parameters
+        const pluginName = 'accordion';
+
+        // default plugin options
+        const options = {
+            // whether to always start expanded ('false'), always start
+            // collapsed ('true'), or start collapsed when screen small ('auto')
+            startCollapsed: 'auto',
+            // whether plugin is on or not
+            enabled: 'true'
+        };
+
+        // change options above, or override with url parameter, eg:
+        // 'manuscript.html?pluginName-enabled=false'
+
+        // /////////////////////////
+        // SCRIPT
+        // /////////////////////////
+
+        // start script
+        function start() {
+            // run through each <h2> heading
+            const headings = document.querySelectorAll('h2');
+            for (const heading of headings) {
+                addArrow(heading);
+
+                // start expanded/collapsed based on option
+                if (
+                    options.startCollapsed === 'true' ||
+                    (options.startCollapsed === 'auto' && isSmallScreen())
+                )
+                    collapseHeading(heading);
+                else
+                    expandHeading(heading);
+            }
+
+            // attach hash change listener to window
+            window.addEventListener('hashchange', onHashChange);
+        }
+
+        // when hash (eg manuscript.html#introduction) changes
+        function onHashChange() {
+            const target = getHashTarget();
+            if (target)
+                goToElement(target);
+        }
+
+        // add arrow to heading
+        function addArrow(heading) {
+            // add arrow button
+            const arrow = document.createElement('button');
+            arrow.innerHTML = document.querySelector(
+                '.icon_angle_down'
+            ).innerHTML;
+            arrow.classList.add('icon_button', 'accordion_arrow');
+            heading.insertBefore(arrow, heading.firstChild);
+
+            // attach click listener to heading and button
+            heading.addEventListener('click', onHeadingClick);
+            arrow.addEventListener('click', onArrowClick);
+        }
+
+        // determine if on mobile-like device with small screen
+        function isSmallScreen() {
+            return Math.min(window.innerWidth, window.innerHeight) < 480;
+        }
+
+        // scroll to and focus element
+        function goToElement(element, offset) {
+            // expand accordion section if collapsed
+            expandElement(element);
+            const y =
+                getRectInView(element).top -
+                getRectInView(document.documentElement).top -
+                (offset || 0);
+            // trigger any function listening for "onscroll" event
+            window.dispatchEvent(new Event('scroll'));
+            window.scrollTo(0, y);
+            element.focus();
+        }
+
+        // get element that is target of hash
+        function getHashTarget(link) {
+            const hash = link ? link.hash : window.location.hash;
+            const id = hash.slice(1);
+            let target = document.querySelector(
+                '[id="' + id + '"], [name="' + id + '"]'
+            );
+            if (!target)
+                return;
+
+            // if figure or table, modify target to get expected element
+            if (hash.indexOf('#fig:') === 0)
+                target = target.parentNode;
+            if (hash.indexOf('#tbl:') === 0)
+                target = target.nextElementSibling;
+
+            return target;
+        }
+
+        // when <h2> heading is clicked
+        function onHeadingClick(event) {
+            // only collapse if <h2> itself is target of click (eg, user did
+            // not click on anchor within <h2>)
+            if (event.target === this)
+                toggleCollapse(this);
+        }
+
+        // when arrow button is clicked
+        function onArrowClick() {
+            toggleCollapse(this.parentNode);
+        }
+
+        // collapse section if expanded, expand if collapsed
+        function toggleCollapse(heading) {
+            if (heading.dataset.collapsed === 'false')
+                collapseHeading(heading);
+            else
+                expandHeading(heading);
+        }
+
+        // elements to exclude from collapse, such as table of contents panel,
+        // hypothesis panel, etc
+        const exclude = '#toc_panel, div.annotator-frame, #lightbox_overlay';
+
+        // collapse section
+        function collapseHeading(heading) {
+            heading.setAttribute('data-collapsed', 'true');
+            const children = getChildren(heading);
+            for (const child of children)
+                child.setAttribute('data-collapsed', 'true');
+        }
+
+        // expand section
+        function expandHeading(heading) {
+            heading.setAttribute('data-collapsed', 'false');
+            const children = getChildren(heading);
+            for (const child of children)
+                child.setAttribute('data-collapsed', 'false');
+        }
+
+        // get list of elements between this <h2> and next <h2> or <h1>
+        // ("children" of the <h2> section)
+        function getChildren(heading) {
+            return nextUntil(heading, 'h2, h1', exclude);
+        }
+
+        // get position/dimensions of element or viewport
+        function getRectInView(element) {
+            let rect = {};
+            rect.left = 0;
+            rect.top = 0;
+            rect.right = window.innerWidth;
+            rect.bottom = window.innerHeight;
+            let style = {};
+
+            if (element instanceof HTMLElement) {
+                rect = element.getBoundingClientRect();
+                style = window.getComputedStyle(element);
+            }
+
+            const margin = {};
+            margin.left = parseFloat(style.marginLeftWidth) || 0;
+            margin.top = parseFloat(style.marginTopWidth) || 0;
+            margin.right = parseFloat(style.marginRightWidth) || 0;
+            margin.bottom = parseFloat(style.marginBottomWidth) || 0;
+
+            const border = {};
+            border.left = parseFloat(style.borderLeftWidth) || 0;
+            border.top = parseFloat(style.borderTopWidth) || 0;
+            border.right = parseFloat(style.borderRightWidth) || 0;
+            border.bottom = parseFloat(style.borderBottomWidth) || 0;
+
+            const newRect = {};
+            newRect.left = rect.left + margin.left + border.left;
+            newRect.top = rect.top + margin.top + border.top;
+            newRect.right = rect.right + margin.right + border.right;
+            newRect.bottom = rect.bottom + margin.bottom + border.bottom;
+            newRect.width = newRect.right - newRect.left;
+            newRect.height = newRect.bottom - newRect.top;
+
+            return newRect;
+        }
+
+        // get list of elements after a start element up to element matching
+        // query
+        function nextUntil(element, query, exclude) {
+            const elements = [];
+            while (element = element.nextElementSibling, element) {
+                if (element.matches(query))
+                    break;
+                if (!element.matches(exclude))
+                    elements.push(element);
+            }
+            return elements;
+        }
+
+        // get closest element before specified element that matches query
+        function firstBefore(element, query) {
+            while (
+                element &&
+                element !== document.body &&
+                !element.matches(query)
+            )
+                element = element.previousElementSibling || element.parentNode;
+
+            return element;
+        }
+
+        // check if element is part of collapsed heading
+        function isCollapsed(element) {
+            while (element && element !== document.body) {
+                if (element.dataset.collapsed === 'true')
+                    return true;
+                element = element.parentNode;
+            }
+            return false;
+        }
+
+        // expand heading containing element if necesary
+        function expandElement(element) {
+            if (isCollapsed(element)) {
+                const heading = firstBefore(element, 'h2');
+                if (heading)
+                    heading.click();
+            }
+        }
+
+        // load options from url parameters
+        function loadOptions() {
+            const url = window.location.search;
+            const params = new URLSearchParams(url);
+            for (const optionName of Object.keys(options)) {
+                const paramName = pluginName + '-' + optionName;
+                const param = params.get(paramName);
+                if (param !== '' && param !== null)
+                    options[optionName] = param;
+            }
+        }
+        loadOptions();
+
+        // start script when document is finished loading
+        if (options.enabled === 'true')
+            window.addEventListener('load', start);
+    })();
+</script>
+
+<!-- angle down icon -->
+
+<template class="icon_angle_down">
+    <!-- modified from: https://fontawesome.com/icons/angle-down -->
+    <svg width="16" height="16" viewBox="0 0 448 512">
+        <path
+            fill="currentColor"
+            d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+        ></path>
+    </svg>
+</template>

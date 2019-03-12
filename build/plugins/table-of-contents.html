@@ -1,0 +1,282 @@
+<!-- table of contents plugin -->
+
+<script>
+    (function() {
+        // /////////////////////////
+        // DESCRIPTION
+        // /////////////////////////
+
+        // This Manubot plugin provides a "table of contents" (toc) panel on
+        // the side of the document that allows the user to conveniently
+        // navigate between sections of the document.
+
+        // /////////////////////////
+        // OPTIONS
+        // /////////////////////////
+
+        // plugin name prefix for url parameters
+        const pluginName = 'tableOfContents';
+
+        // default plugin options
+        const options = {
+            // which types of elements to add links for, in
+            // "document.querySelector" format
+            typesQuery: 'h1, h2, h3',
+            // if list item is more than this many characters, text will be
+            // truncated
+            charLimit: '50',
+            // whether or not to show bullets next to each toc item
+            bullets: 'false',
+            // whether to always start closed ('false'), always start opened
+            // ('true'), or start open when screen wide enough to fit panel
+            // ('auto')
+            startOpen: 'false',
+            // whether plugin is on or not
+            enabled: 'true'
+        };
+
+        // change options above, or override with url parameter, eg:
+        // 'manuscript.html?pluginName-enabled=false'
+
+        // /////////////////////////
+        // SCRIPT
+        // /////////////////////////
+
+        // start script
+        function start() {
+            // make toc panel and populate with entries (links to document
+            // sections)
+            const panel = makePanel();
+            if (!panel)
+                return;
+            makeEntries(panel);
+            document.body.insertBefore(panel, document.body.firstChild);
+
+            // start panel open/closed based on option
+            if (
+                options.startOpen === 'true' ||
+                (options.startOpen === 'auto' && isSmallScreen())
+            )
+                openPanel();
+            else
+                closePanel();
+
+            // attach scroll and hash change listeners to window
+            window.addEventListener('scroll', onScroll);
+            window.addEventListener('hashchange', onScroll);
+            onScroll();
+
+            // add class to push document body down out of way of toc button
+            document.body.classList.add('toc_body_nudge');
+        }
+
+        // determine if on mobile-like device with small screen
+        function isSmallScreen() {
+            const page = window.getComputedStyle(document.body);
+            const width =
+                parseInt(page.width) || parseInt(page.maxWidth) || 816;
+            return window.innerWidth < width + 320;
+        }
+
+        // when window is scrolled or hash changed
+        function onScroll() {
+            highlightViewed();
+        }
+
+        // find entry of currently viewed document section in toc and highlight
+        function highlightViewed() {
+            const firstId = getFirstInView(options.typesQuery);
+
+            // get toc entries (links), unhighlight all, then highlight viewed
+            const list = document.getElementById('toc_list');
+            if (!firstId || !list)
+                return;
+            const links = list.querySelectorAll('a');
+            for (const link of links)
+                link.dataset.viewing = 'false';
+            const link = list.querySelector('a[href="#' + firstId + '"]');
+            if (!link)
+                return;
+            link.dataset.viewing = 'true';
+        }
+
+        // get first or previous toc listed element in top half of view
+        function getFirstInView(query) {
+            // get all elements matching query and with id
+            const elements = document.querySelectorAll(query);
+            const elementsWithIds = [];
+            for (const element of elements) {
+                if (element.id)
+                    elementsWithIds.push(element);
+            }
+
+            // get first or previous element in top half of view
+            for (let i = 0; i < elementsWithIds.length; i++) {
+                const element = elementsWithIds[i];
+                const prevElement = elementsWithIds[Math.max(0, i - 1)];
+                if (element.getBoundingClientRect().top >= 0) {
+                    if (
+                        element.getBoundingClientRect().top <
+                        window.innerHeight / 2
+                    )
+                        return element.id;
+                    else
+                        return prevElement.id;
+                }
+            }
+        }
+
+        // make panel
+        function makePanel() {
+            // create panel
+            const panel = document.createElement('div');
+            panel.id = 'toc_panel';
+            if (options.bullets === 'true')
+                panel.dataset.bullets = 'true';
+
+            // create header
+            const header = document.createElement('h3');
+
+            // create toc button
+            const button = document.createElement('button');
+            button.id = 'toc_button';
+            button.innerHTML = document.querySelector(
+                '.icon_th_list'
+            ).innerHTML;
+            button.classList.add('icon_button');
+
+            // create header text
+            const text = document.createElement('span');
+            text.innerHTML = 'Table of Contents';
+            text.id = 'toc_header_text';
+
+            // create container for toc list
+            const list = document.createElement('div');
+            list.id = 'toc_list';
+
+            // attach click listeners to header and button
+            header.addEventListener('click', onHeaderClick);
+            button.addEventListener('click', onButtonClick);
+
+            // attach elements
+            header.appendChild(button);
+            header.appendChild(text);
+            panel.appendChild(header);
+            panel.appendChild(list);
+
+            return panel;
+        }
+
+        // create toc entries (links) to each element of the specified types
+        function makeEntries(panel) {
+            const elements = document.querySelectorAll(options.typesQuery);
+            for (const element of elements) {
+                // do not add link if element doesn't have assigned id
+                if (!element.id)
+                    continue;
+
+                // create link/list item
+                const link = document.createElement('a');
+                link.classList.add('toc_link');
+                switch (element.tagName.toLowerCase()) {
+                case 'h1':
+                    link.dataset.level = '1';
+                    break;
+                case 'h2':
+                    link.dataset.level = '2';
+                    break;
+                case 'h3':
+                    link.dataset.level = '3';
+                    break;
+                case 'h4':
+                    link.dataset.level = '4';
+                    break;
+                }
+                link.title = element.innerText;
+                let text = element.innerText;
+                if (text.length > options.charLimit)
+                    text = text.slice(0, options.charLimit) + '...';
+                link.innerHTML = text;
+                link.href = '#' + element.id;
+                link.addEventListener('click', onLinkClick);
+
+                // attach link
+                panel.querySelector('#toc_list').appendChild(link);
+            }
+        }
+
+        // when link is clicked
+        function onLinkClick() {
+            if (isSmallScreen())
+                closePanel();
+        }
+
+        // when header itself is clicked
+        function onHeaderClick(event) {
+            togglePanel();
+        }
+
+        // when button is clicked
+        function onButtonClick(event) {
+            togglePanel();
+            // stop header underneath button from also being clicked
+            event.stopPropagation();
+        }
+
+        // open panel if closed, close if opened
+        function togglePanel() {
+            const panel = document.getElementById('toc_panel');
+            if (!panel)
+                return;
+
+            if (panel.dataset.open === 'true')
+                closePanel();
+            else
+                openPanel();
+        }
+
+        // open panel
+        function openPanel() {
+            const panel = document.getElementById('toc_panel');
+            if (panel)
+                panel.dataset.open = 'true';
+        }
+
+        // close panel
+        function closePanel() {
+            const panel = document.getElementById('toc_panel');
+            if (panel)
+                panel.dataset.open = 'false';
+        }
+
+        // load options from url parameters
+        function loadOptions() {
+            const url = window.location.search;
+            const params = new URLSearchParams(url);
+            for (const optionName of Object.keys(options)) {
+                const paramName = pluginName + '-' + optionName;
+                const param = params.get(paramName);
+                if (param !== '' && param !== null)
+                    options[optionName] = param;
+            }
+        }
+        loadOptions();
+
+        // start script when document is finished loading
+        if (options.enabled === 'true')
+            window.addEventListener('load', start);
+    })();
+</script>
+
+<!-- th list icon -->
+
+<template class="icon_th_list">
+    <!-- modified from: https://fontawesome.com/icons/th-list -->
+    <svg width="16" height="16" viewBox="0 0 512 512" tabindex="-1">
+        <path
+            fill="currentColor"
+            d="M96 96c0 26.51-21.49 48-48 48S0 122.51 0 96s21.49-48 48-48 48 21.49 48 48zM48 208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm0 160c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm96-236h352c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H144c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h352c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H144c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h352c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H144c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+            tabindex="-1"
+        ></path>
+    </svg>
+</template>

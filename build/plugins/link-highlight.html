@@ -1,0 +1,192 @@
+<!-- link highlight plugin -->
+
+<script>
+    (function() {
+        // /////////////////////////
+        // DESCRIPTION
+        // /////////////////////////
+
+        // This Manubot plugin makes it such that when a user hovers or
+        // focuses a link, other links that have the same target will be
+        // highlighted. It also makes it such that when clicking a link, the
+        // target of the link (eg reference, figure, table) is briefly
+        // highlighted.
+
+        // /////////////////////////
+        // OPTIONS
+        // /////////////////////////
+
+        // plugin name prefix for url parameters
+        const pluginName = 'linkHighlight';
+
+        // default plugin options
+        const options = {
+            // whether to also highlight links that go to external urls
+            externalLinks: 'false',
+            // whether user must click off to unhighlight instead of just
+            // un-hovering
+            clickUnhighlight: 'false',
+            // whether to also highlight links that are unique
+            highlightUnique: 'false',
+            // whether plugin is on or not
+            enabled: 'true'
+        };
+
+        // change options above, or override with url parameter, eg:
+        // 'manuscript.html?pluginName-enabled=false'
+
+        // /////////////////////////
+        // SCRIPT
+        // /////////////////////////
+
+        // start script
+        function start() {
+            const links = getLinks();
+            for (const link of links) {
+                // attach mouse and focus listeners to link
+                link.addEventListener('mouseover', onLinkFocus);
+                link.addEventListener('focus', onLinkFocus);
+                link.addEventListener('mouseleave', onLinkUnhover);
+            }
+
+            // attach click and hash change listeners to window
+            window.addEventListener('click', onClick);
+            window.addEventListener('touchstart', onClick);
+            window.addEventListener('hashchange', onHashChange);
+
+            // run hash change on window load in case user has navigated
+            // directly to hash
+            onHashChange();
+        }
+
+        // when link is focused (tabbed to) or hovered
+        function onLinkFocus() {
+            highlight(this);
+        }
+
+        // when link is unhovered
+        function onLinkUnhover() {
+            if (options.clickUnhighlight !== 'true')
+                unhighlightAll();
+        }
+
+        // when the mouse is clicked anywhere in window
+        function onClick(event) {
+            unhighlightAll();
+        }
+
+        // when hash (eg manuscript.html#introduction) changes
+        function onHashChange() {
+            const target = getHashTarget();
+            if (target)
+                glowElement(target);
+        }
+
+        // get element that is target of link or url hash
+        function getHashTarget(link) {
+            const hash = link ? link.hash : window.location.hash;
+            const id = hash.slice(1);
+            let target = document.querySelector(
+                '[id="' + id + '"], [name="' + id + '"]'
+            );
+            if (!target)
+                return;
+
+            // if figure or table, modify target to get expected element
+            if (hash.indexOf('#fig:') === 0)
+                target = target.parentNode;
+            else if (hash.indexOf('#tbl:') === 0)
+                target = target.nextElementSibling.querySelector('caption');
+
+            return target;
+        }
+
+        // start glow sequence on an element
+        function glowElement(element) {
+            const startGlow = function() {
+                onGlowEnd();
+                element.dataset.glow = 'true';
+                element.addEventListener('animationend', onGlowEnd);
+            };
+            const onGlowEnd = function() {
+                element.removeAttribute('data-glow');
+                element.removeEventListener('animationend', onGlowEnd);
+            };
+            startGlow();
+        }
+
+        // highlight link and all others with same target
+        function highlight(link) {
+            // force unhighlight all to start fresh
+            unhighlightAll();
+
+            // get links with same target
+            if (!link)
+                return;
+            const sameLinks = getSameLinks(link);
+
+            // if link unique and option is off, exit and don't highlight
+            if (sameLinks.length <= 1 && options.highlightUnique !== 'true')
+                return;
+
+            // highlight all same links, and "select" (special highlight) this
+            // one
+            for (const sameLink of sameLinks) {
+                if (sameLink === link)
+                    sameLink.setAttribute('data-selected', 'true');
+                else
+                    sameLink.setAttribute('data-highlighted', 'true');
+            }
+        }
+
+        // unhighlight all links
+        function unhighlightAll() {
+            const links = getLinks();
+            for (const link of links) {
+                link.setAttribute('data-selected', 'false');
+                link.setAttribute('data-highlighted', 'false');
+            }
+        }
+
+        // get links with same target
+        function getSameLinks(link) {
+            const results = [];
+            const links = getLinks();
+            for (const otherLink of links) {
+                if (
+                    otherLink.getAttribute('href') === link.getAttribute('href')
+                )
+                    results.push(otherLink);
+            }
+            return results;
+        }
+
+        // get all links of types we wish to handle
+        function getLinks() {
+            let query = 'a';
+            if (options.externalLinks !== 'true')
+                query += '[href^="#"]';
+            // exclude buttons, anchor links, toc links, etc
+            query +=
+                ':not(.button):not(.icon_button):not(.anchor):not(.toc_link)';
+            return document.querySelectorAll(query);
+        }
+
+        // load options from url parameters
+        function loadOptions() {
+            const url = window.location.search;
+            const params = new URLSearchParams(url);
+            for (const optionName of Object.keys(options)) {
+                const paramName = pluginName + '-' + optionName;
+                const param = params.get(paramName);
+                if (param !== '' && param !== null)
+                    options[optionName] = param;
+            }
+        }
+        loadOptions();
+
+        // start script when document is finished loading
+        if (options.enabled === 'true')
+            window.addEventListener('load', start);
+    })();
+</script>

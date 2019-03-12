@@ -1,0 +1,627 @@
+<!-- tooltips plugin -->
+
+<script>
+    (function() {
+        // /////////////////////////
+        // DESCRIPTION
+        // /////////////////////////
+
+        // This Manubot plugin makes it such that when the user hovers or
+        // focuses a link to a citation or figure, a tooltip appears with a
+        // preview of the reference content, along with arrows to navigate
+        // between instances of the same reference in the document.
+
+        // /////////////////////////
+        // OPTIONS
+        // /////////////////////////
+
+        // plugin name prefix for url parameters
+        const pluginName = 'tooltips';
+
+        // default plugin options
+        const options = {
+            // whether user must click off to close tooltip instead of just
+            // un-hovering
+            clickClose: 'false',
+            // whether to keep tooltip horizontal position when clicking
+            // prev/next buttons
+            keepHorizontal: 'true',
+            // delay (in ms) between opening and closing tooltip
+            delay: '100',
+            // whether plugin is on or not
+            enabled: 'true'
+        };
+
+        // change options above, or override with url parameter, eg:
+        // 'manuscript.html?pluginName-enabled=false'
+
+        // /////////////////////////
+        // SCRIPT
+        // /////////////////////////
+
+        // start script
+        function start() {
+            const links = getLinks();
+            for (const link of links) {
+                // attach hover and focus listeners to link
+                link.addEventListener('mouseover', onLinkHover);
+                link.addEventListener('mouseleave', onLinkUnhover);
+                link.addEventListener('focus', onLinkFocus);
+                link.addEventListener('touchend', onLinkTouch);
+            }
+
+            // attach mouse, key, and resize listeners to window
+            window.addEventListener('mousedown', onClick);
+            window.addEventListener('touchstart', onClick);
+            window.addEventListener('keyup', onKeyUp);
+            window.addEventListener('resize', onResize);
+        }
+
+        // when link is hovered
+        function onLinkHover() {
+            // function to open tooltip
+            const delayOpenTooltip = function() {
+                openTooltip(this);
+            }.bind(this);
+
+            // run open function after delay
+            this.openTooltipTimer = window.setTimeout(
+                delayOpenTooltip,
+                options.delay
+            );
+        }
+
+        // when mouse leaves link
+        function onLinkUnhover() {
+            // cancel opening tooltip
+            window.clearTimeout(this.openTooltipTimer);
+
+            // don't close on unhover if option specifies
+            if (options.clickClose === 'true')
+                return;
+
+            // function to close tooltip
+            const delayCloseTooltip = function() {
+                // if tooltip open and if mouse isn't over tooltip, close
+                const tooltip = document.getElementById('tooltip');
+                if (tooltip && !tooltip.matches(':hover'))
+                    closeTooltip();
+            };
+
+            // run close function after delay
+            this.closeTooltipTimer = window.setTimeout(
+                delayCloseTooltip,
+                options.delay
+            );
+        }
+
+        // when link is focused (tabbed to)
+        function onLinkFocus(event) {
+            // if focus change happened due to prev/next nav button click,
+            // pass that info along to openTooltip()
+            if (
+                event &&
+                event.relatedTarget &&
+                event.relatedTarget.matches('#tooltip_nav_bar > .icon_button')
+            )
+                openTooltip(this, true);
+            else
+                openTooltip(this);
+        }
+
+        // when link is touched on touch screen
+        function onLinkTouch(event) {
+            // attempt to force hover state on first tap always, and trigger
+            // regular link click (and navigation) on second tap
+            if (event.target === document.activeElement)
+                event.target.click();
+            else
+                event.target.focus();
+            if (event.cancelable)
+                event.preventDefault();
+            event.stopPropagation();
+            return false;
+        }
+
+        // when mouse is clicked anywhere in window
+        function onClick(event) {
+            closeTooltip();
+        }
+
+        // when key pressed
+        function onKeyUp(event) {
+            if (!event || !event.key)
+                return;
+
+            // trigger click of prev/next button
+            switch (event.key) {
+            case 'ArrowLeft':
+                const prevButton = document.getElementById(
+                    'tooltip_prev_button'
+                );
+                if (prevButton)
+                    prevButton.click();
+                break;
+            case 'ArrowRight':
+                const nextButton = document.getElementById(
+                    'tooltip_next_button'
+                );
+                if (nextButton)
+                    nextButton.click();
+                break;
+            }
+        }
+
+        // when window is resized or zoomed
+        function onResize() {
+            closeTooltip();
+        }
+
+        // get all links of types we wish to handle
+        function getLinks() {
+            const queries = [];
+            // exclude buttons, anchor links, toc links, etc
+            const exclude =
+                ':not(.button):not(.icon_button):not(.anchor):not(.toc_link)';
+            queries.push('a[href^="#ref-"]' + exclude); // citation links
+            queries.push('a[href^="#fig:"]' + exclude); // figure links
+            const query = queries.join(', ');
+            return document.querySelectorAll(query);
+        }
+
+        // get links with same target, get index of link in set, get total
+        // same links
+        function getSameLinks(link) {
+            const sameLinks = [];
+            const links = getLinks();
+            for (const otherLink of links) {
+                if (
+                    otherLink.getAttribute('href') === link.getAttribute('href')
+                )
+                    sameLinks.push(otherLink);
+            }
+
+            return {
+                elements: sameLinks,
+                index: sameLinks.indexOf(link),
+                total: sameLinks.length
+            };
+        }
+
+        // open tooltip
+        function openTooltip(link, prevNextButtonClick) {
+            let prevX;
+            // if setting is on, tooltip opened because of prev/next buttons,
+            // and already-open tooltip can be found, store original x
+            // position of tooltip
+            const prevTooltip = document.getElementById('tooltip');
+            if (
+                options.keepHorizontal === 'true' &&
+                prevNextButtonClick &&
+                prevTooltip
+            )
+                prevX = getRectInPage(prevTooltip).left;
+
+            // make tooltip element
+            const tooltip = makeTooltip(link);
+
+            // if source couldn't be found and tooltip not made, exit
+            if (!tooltip)
+                return;
+
+            // make navbar elements
+            const navBar = makeNavBar(link);
+            if (navBar)
+                tooltip.firstElementChild.appendChild(navBar);
+
+            // attach tooltip to page
+            document.body.appendChild(tooltip);
+
+            // position tooltip
+            const position = function() {
+                if (prevX)
+                    positionTooltip(link, prevX);
+                else
+                    positionTooltip(link);
+            };
+            position();
+
+            // if tooltip contains images, position again after they've loaded
+            const imgs = tooltip.querySelectorAll('img');
+            for (const img of imgs)
+                img.addEventListener('load', position);
+        }
+
+        // close (delete) tooltip
+        function closeTooltip() {
+            const tooltip = document.getElementById('tooltip');
+            if (tooltip)
+                tooltip.remove();
+        }
+
+        // make tooltip
+        function makeTooltip(link) {
+            // delete tooltip if it exists, start fresh
+            closeTooltip();
+
+            // get target element that link points to
+            const source = getSource(link);
+
+            // if source can't be found, exit
+            if (!source)
+                return;
+
+            // create new tooltip
+            const tooltip = document.createElement('div');
+            tooltip.id = 'tooltip';
+            const tooltipContent = document.createElement('div');
+            tooltipContent.id = 'tooltip_content';
+            tooltip.appendChild(tooltipContent);
+
+            // make copy of source node and put in tooltip
+            const sourceCopy = makeCopy(source);
+            tooltipContent.appendChild(sourceCopy);
+
+            // attach mouse event listeners
+            tooltip.addEventListener('click', onTooltipClick);
+            tooltip.addEventListener('mousedown', onTooltipClick);
+            tooltip.addEventListener('touchstart', onTooltipClick);
+            tooltip.addEventListener('mouseleave', onTooltipUnhover);
+
+            // (for interaction with lightbox plugin)
+            // transfer click on tooltip copied img to original img
+            const sourceImg = source.querySelector('img');
+            const sourceCopyImg = sourceCopy.querySelector('img');
+            if (sourceImg && sourceCopyImg) {
+                const clickImg = function() {
+                    sourceImg.click();
+                    closeTooltip();
+                };
+                sourceCopyImg.addEventListener('click', clickImg);
+            }
+
+            return tooltip;
+        }
+
+        // make carbon copy of html dom element
+        function makeCopy(source) {
+            const sourceCopy = source.cloneNode(true);
+
+            // delete elements marked with ignore (eg anchor and jump buttons)
+            const deleteFromCopy = sourceCopy.querySelectorAll(
+                '[data-ignore="true"]'
+            );
+            for (const element of deleteFromCopy)
+                element.remove();
+
+            // delete certain element attributes
+            const attributes = [
+                'id',
+                'data-collapsed',
+                'data-selected',
+                'data-highlighted',
+                'data-glow'
+            ];
+            for (const attribute of attributes) {
+                sourceCopy.removeAttribute(attribute);
+                const elements = sourceCopy.querySelectorAll(
+                    '[' + attribute + ']'
+                );
+                for (const element of elements)
+                    element.removeAttribute(attribute);
+            }
+
+            return sourceCopy;
+        }
+
+        // when tooltip is clicked
+        function onTooltipClick(event) {
+            // when user clicks on tooltip, stop click from transferring
+            // outside of tooltip (eg, click off to close tooltip, or eg click
+            // off to unhighlight same refs)
+            event.stopPropagation();
+        }
+
+        // when tooltip is unhovered
+        function onTooltipUnhover(event) {
+            if (options.clickClose !== 'true')
+                closeTooltip();
+        }
+
+        // make nav bar to go betwen prev/next instances of same reference
+        function makeNavBar(link) {
+            // find other links to the same source
+            const sameLinks = getSameLinks(link);
+
+            // don't show nav bar when singular reference
+            if (sameLinks.total <= 1)
+                return;
+
+            // find prev/next links with same target
+            const prevLink = getPrevLink(link, sameLinks);
+            const nextLink = getNextLink(link, sameLinks);
+
+            // create nav bar
+            const navBar = document.createElement('div');
+            navBar.id = 'tooltip_nav_bar';
+            const text = sameLinks.index + 1 + ' of ' + sameLinks.total;
+
+            // create nav bar prev/next buttons
+            const prevButton = document.createElement('button');
+            const nextButton = document.createElement('button');
+            prevButton.id = 'tooltip_prev_button';
+            nextButton.id = 'tooltip_next_button';
+            prevButton.title =
+                'Jump to the previous occurence of this item in the document [←]';
+            nextButton.title =
+                'Jump to the next occurence of this item in the document [→]';
+            prevButton.classList.add('icon_button');
+            nextButton.classList.add('icon_button');
+            prevButton.innerHTML = document.querySelector(
+                '.icon_caret_left'
+            ).innerHTML;
+            nextButton.innerHTML = document.querySelector(
+                '.icon_caret_right'
+            ).innerHTML;
+            navBar.appendChild(prevButton);
+            navBar.appendChild(document.createTextNode(text));
+            navBar.appendChild(nextButton);
+
+            // attach click listeners to buttons
+            prevButton.addEventListener('click', function() {
+                onPrevNextClick(link, prevLink);
+            });
+            nextButton.addEventListener('click', function() {
+                onPrevNextClick(link, nextLink);
+            });
+
+            return navBar;
+        }
+
+        // get previous link with same target
+        function getPrevLink(link, sameLinks) {
+            if (!sameLinks)
+                sameLinks = getSameLinks(link);
+            // wrap index to other side if < 1
+            let index;
+            if (sameLinks.index - 1 >= 0)
+                index = sameLinks.index - 1;
+            else
+                index = sameLinks.total - 1;
+            return sameLinks.elements[index];
+        }
+
+        // get next link with same target
+        function getNextLink(link, sameLinks) {
+            if (!sameLinks)
+                sameLinks = getSameLinks(link);
+            // wrap index to other side if > total
+            let index;
+            if (sameLinks.index + 1 <= sameLinks.total - 1)
+                index = sameLinks.index + 1;
+            else
+                index = 0;
+            return sameLinks.elements[index];
+        }
+
+        // get element that is target of link or url hash
+        function getSource(link) {
+            const hash = link ? link.hash : window.location.hash;
+            const id = hash.slice(1);
+            let target = document.querySelector(
+                '[id="' + id + '"], [name="' + id + '"]'
+            );
+            if (!target)
+                return;
+
+            // if figure or table, modify target to get expected element
+            if (hash.indexOf('#ref-') === 0)
+                target = target.querySelector('p');
+            else if (hash.indexOf('#fig:') === 0)
+                target = target.parentNode;
+            else if (hash.indexOf('#tbl:') === 0)
+                return;
+
+            return target;
+        }
+
+        // when prev/next arrow button is clicked
+        function onPrevNextClick(link, prevNextLink) {
+            if (link && prevNextLink)
+                goToElement(prevNextLink, getRectInView(link).top);
+        }
+
+        // scroll to and focus element
+        function goToElement(element, offset) {
+            // expand accordion section if collapsed
+            expandElement(element);
+            const y =
+                getRectInView(element).top -
+                getRectInView(document.documentElement).top -
+                (offset || 0);
+            // trigger any function listening for "onscroll" event
+            window.dispatchEvent(new Event('scroll'));
+            window.scrollTo(0, y);
+            element.focus();
+        }
+
+        // determine position to place tooltip based on link position in
+        // viewport and tooltip size
+        function positionTooltip(link, left, top) {
+            const tooltipElement = document.getElementById('tooltip');
+            if (!tooltipElement)
+                return;
+
+            // get convenient vars for position/dimensions of
+            // link/tooltip/page/view
+            link = getRectInPage(link);
+            const tooltip = getRectInPage(tooltipElement);
+            const view = getRectInPage();
+
+            // horizontal positioning
+            if (left)
+                // use explicit value
+                left = left;
+            else if (link.left + tooltip.width < view.right)
+                // fit tooltip to right of link
+                left = link.left;
+            else if (link.right - tooltip.width > view.left)
+                // fit tooltip to left of link
+                left = link.right - tooltip.width;
+            // center tooltip in view
+            else
+                left = (view.right - view.left) / 2 - tooltip.width / 2;
+
+            // vertical positioning
+            if (top)
+                // use explicit value
+                top = top;
+            else if (link.top - tooltip.height > view.top)
+                // fit tooltip above link
+                top = link.top - tooltip.height;
+            else if (link.bottom + tooltip.height < view.bottom)
+                // fit tooltip below link
+                top = link.bottom;
+            else {
+                // center tooltip in view
+                top = view.top + view.height / 2 - tooltip.height / 2;
+                // nudge off of link to left/right if possible
+                if (link.right + tooltip.width < view.right)
+                    left = link.right;
+                else if (link.left - tooltip.width > view.left)
+                    left = link.left - tooltip.width;
+            }
+
+            tooltipElement.style.left = left + 'px';
+            tooltipElement.style.top = top + 'px';
+        }
+
+        // get position/dimensions of element or viewport
+        function getRectInView(element) {
+            let rect = {};
+            rect.left = 0;
+            rect.top = 0;
+            rect.right = window.innerWidth;
+            rect.bottom = window.innerHeight;
+            let style = {};
+
+            if (element instanceof HTMLElement) {
+                rect = element.getBoundingClientRect();
+                style = window.getComputedStyle(element);
+            }
+
+            const margin = {};
+            margin.left = parseFloat(style.marginLeftWidth) || 0;
+            margin.top = parseFloat(style.marginTopWidth) || 0;
+            margin.right = parseFloat(style.marginRightWidth) || 0;
+            margin.bottom = parseFloat(style.marginBottomWidth) || 0;
+
+            const border = {};
+            border.left = parseFloat(style.borderLeftWidth) || 0;
+            border.top = parseFloat(style.borderTopWidth) || 0;
+            border.right = parseFloat(style.borderRightWidth) || 0;
+            border.bottom = parseFloat(style.borderBottomWidth) || 0;
+
+            const newRect = {};
+            newRect.left = rect.left + margin.left + border.left;
+            newRect.top = rect.top + margin.top + border.top;
+            newRect.right = rect.right + margin.right + border.right;
+            newRect.bottom = rect.bottom + margin.bottom + border.bottom;
+            newRect.width = newRect.right - newRect.left;
+            newRect.height = newRect.bottom - newRect.top;
+
+            return newRect;
+        }
+
+        // get position of element relative to page
+        function getRectInPage(element) {
+            const rect = getRectInView(element);
+            const body = getRectInView(document.body);
+
+            const newRect = {};
+            newRect.left = rect.left - body.left;
+            newRect.top = rect.top - body.top;
+            newRect.right = rect.right - body.left;
+            newRect.bottom = rect.bottom - body.top;
+            newRect.width = rect.width;
+            newRect.height = rect.height;
+
+            return newRect;
+        }
+
+        // (for interaction with accordion plugin)
+        // get closest element before specified element that matches query
+        function firstBefore(element, query) {
+            while (
+                element &&
+                element !== document.body &&
+                !element.matches(query)
+            )
+                element = element.previousElementSibling || element.parentNode;
+
+            return element;
+        }
+
+        // (for interaction with accordion plugin)
+        // check if element is part of collapsed heading
+        function isCollapsed(element) {
+            while (element && element !== document.body) {
+                if (element.dataset.collapsed === 'true')
+                    return true;
+                element = element.parentNode;
+            }
+            return false;
+        }
+
+        // (for interaction with accordion plugin)
+        // expand heading containing element if necesary
+        function expandElement(element) {
+            if (isCollapsed(element)) {
+                const heading = firstBefore(element, 'h2');
+                if (heading)
+                    heading.click();
+            }
+        }
+
+        // load options from url parameters
+        function loadOptions() {
+            const url = window.location.search;
+            const params = new URLSearchParams(url);
+            for (const optionName of Object.keys(options)) {
+                const paramName = pluginName + '-' + optionName;
+                const param = params.get(paramName);
+                if (param !== '' && param !== null)
+                    options[optionName] = param;
+            }
+        }
+        loadOptions();
+
+        // start script when document is finished loading
+        if (options.enabled === 'true')
+            window.addEventListener('load', start);
+    })();
+</script>
+
+<!-- caret left icon -->
+
+<template class="icon_caret_left">
+    <!-- modified from: https://fontawesome.com/icons/caret-left -->
+    <svg width="16" height="16" viewBox="0 0 192 512">
+        <path
+            fill="currentColor"
+            d="M192 127.338v257.324c0 17.818-21.543 26.741-34.142 14.142L29.196 270.142c-7.81-7.81-7.81-20.474 0-28.284l128.662-128.662c12.599-12.6 34.142-3.676 34.142 14.142z"
+        ></path>
+    </svg>
+</template>
+
+<!-- caret right icon -->
+
+<template class="icon_caret_right">
+    <!-- modified from: https://fontawesome.com/icons/caret-right -->
+    <svg width="16" height="16" viewBox="0 0 192 512">
+        <path
+            fill="currentColor"
+            d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"
+        ></path>
+    </svg>
+</template>
