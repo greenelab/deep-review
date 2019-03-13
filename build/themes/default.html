@@ -27,7 +27,7 @@
             position: relative;
             box-sizing: border-box;
             max-width: 8.5in;
-            font-size: 16px;
+            font-size: 12pt;
             line-height: 1.5;
             margin: 20px auto;
             padding: 40px;
@@ -51,20 +51,6 @@
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.05) inset;
             background: none;
         }
-    }
-
-    @media only print {
-        /* "page" element */
-        body {
-            margin: 0;
-            padding: 0;
-            font-size: 12px;
-        }
-    }
-
-    @page {
-        /* suggested printing margin */
-        margin: 0.5in;
     }
 
     /* -------------------------------------------------- */
@@ -137,6 +123,33 @@
     /* class for styling text semibold */
     .semibold {
         font-weight: 600;
+    }
+
+    /* class for styling elements horizontally left aligned */
+    .left {
+        display: block;
+        text-align: left;
+        margin-left: auto;
+        margin-right: 0;
+        justify-content: left;
+    }
+
+    /* class for styling elements horizontally centered */
+    .center {
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+
+    /* class for styling elements horizontally right aligned */
+    .right {
+        display: block;
+        text-align: right;
+        margin-left: 0;
+        margin-right: auto;
+        justify-content: right;
     }
 
     /* -------------------------------------------------- */
@@ -310,8 +323,20 @@
     /* highlight colors */
     /* -------------------------------------------------- */
 
+    .white {
+        background: #ffffff;
+    }
     .lightgrey {
         background: #eeeeee;
+    }
+    .grey {
+        background: #757575;
+    }
+    .darkgrey {
+        background: #424242;
+    }
+    .black {
+        background: #000000;
     }
     .lightred {
         background: #ffcdd2;
@@ -327,9 +352,6 @@
     }
     .lightpurple {
         background: #f3e5f5;
-    }
-    .grey {
-        background: #757575;
     }
     .red {
         background: #f44336;
@@ -349,6 +371,7 @@
     .purple {
         background: #9c27b0;
     }
+    .white,
     .lightgrey,
     .lightred,
     .lightyellow,
@@ -357,6 +380,7 @@
     .lightpurple,
     .orange,
     .yellow,
+    .white a,
     .lightgrey a,
     .lightred a,
     .lightyellow a,
@@ -368,10 +392,15 @@
         color: #000000;
     }
     .grey,
+    .darkgrey,
+    .black,
     .red,
     .green,
     .blue,
     .purple,
+    .grey a,
+    .darkgrey a,
+    .black a,
     .red a,
     .green a,
     .blue a,
@@ -449,39 +478,63 @@
     }
 
     /* -------------------------------------------------- */
-    /* page break control */
+    /* print control */
     /* -------------------------------------------------- */
 
     @media print {
-        /* all <h2> headings except the first */
-        h2:not(:first-of-type) {
-            /* force page break */
-            break-before: always !important;
+        @page {
+            /* suggested printing margin */
+            margin: 0.75in;
+        }
+
+        /* document and "page" elements */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* class for centering an element vertically on its own page */
+        .page_center {
+            margin: auto;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            vertical-align: middle;
+            break-before: page;
+            break-after: page;
+        }
+
+        /* <h2> heading */
+        h2 {
+            margin-top: 0;
         }
 
         /* always insert a page break before the element */
         .page_break_before {
-            break-before: always !important;
+            break-before: page;
         }
 
         /* always insert a page break after the element */
         .page_break_after {
-            break-after: always !important;
+            break-after: page;
         }
 
         /* avoid page break before the element */
         .page_break_before_avoid {
-            break-before: avoid !important;
+            break-before: avoid;
         }
 
         /* avoid page break after the element */
         .page_break_after_avoid {
-            break-after: avoid !important;
+            break-after: avoid;
         }
 
         /* avoid page break inside the element */
         .page_break_inside_avoid {
-            break-inside: avoid !important;
+            break-inside: avoid;
         }
     }
 
