@@ -165,8 +165,8 @@
             let rect = {};
             rect.left = 0;
             rect.top = 0;
-            rect.right = window.innerWidth;
-            rect.bottom = window.innerHeight;
+            rect.right = document.documentElement.clientWidth;
+            rect.bottom = document.documentElement.clientHeight;
             let style = {};
 
             if (element instanceof HTMLElement) {

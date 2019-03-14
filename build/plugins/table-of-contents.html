@@ -61,7 +61,9 @@
             else
                 closePanel();
 
-            // attach scroll and hash change listeners to window
+            // attach click, scroll, and hash change listeners to window
+            window.addEventListener('click', onClick);
+            window.addEventListener('touchstart', onClick);
             window.addEventListener('scroll', onScroll);
             window.addEventListener('hashchange', onScroll);
             onScroll();
@@ -76,6 +78,11 @@
             const width =
                 parseInt(page.width) || parseInt(page.maxWidth) || 816;
             return window.innerWidth < width + 320;
+        }
+
+        // when mouse is clicked anywhere in window
+        function onClick() {
+            closePanel();
         }
 
         // when window is scrolled or hash changed
@@ -154,7 +161,8 @@
             const list = document.createElement('div');
             list.id = 'toc_list';
 
-            // attach click listeners to header and button
+            // attach click listeners
+            panel.addEventListener('click', onPanelClick);
             header.addEventListener('click', onHeaderClick);
             button.addEventListener('click', onButtonClick);
 
@@ -205,10 +213,10 @@
             }
         }
 
-        // when link is clicked
-        function onLinkClick() {
-            if (isSmallScreen())
-                closePanel();
+        // when panel is clicked
+        function onPanelClick(event) {
+            // stop click from propagating to window/document and closing panel
+            event.stopPropagation();
         }
 
         // when header itself is clicked
@@ -221,6 +229,12 @@
             togglePanel();
             // stop header underneath button from also being clicked
             event.stopPropagation();
+        }
+
+        // when link is clicked
+        function onLinkClick() {
+            if (isSmallScreen())
+                closePanel();
         }
 
         // open panel if closed, close if opened
