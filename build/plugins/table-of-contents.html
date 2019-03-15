@@ -77,7 +77,7 @@
             const page = window.getComputedStyle(document.body);
             const width =
                 parseInt(page.width) || parseInt(page.maxWidth) || 816;
-            return window.innerWidth < width + 320;
+            return width + 320 < window.innerWidth;
         }
 
         // when mouse is clicked anywhere in window
