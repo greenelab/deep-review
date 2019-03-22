@@ -31,6 +31,7 @@ git fetch origin gh-pages:gh-pages output:output
 
 # Configure versioned webpage
 python build/webpage.py \
+  --no-ots-cache \
   --checkout=gh-pages \
   --version=$TRAVIS_COMMIT
 

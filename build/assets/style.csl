@@ -5,7 +5,7 @@
     <title>Manubot</title>
     <id>http://www.zotero.org/styles/manubot</id>
     <link href="http://www.zotero.org/styles/manubot" rel="self"/>
-    <link href="https://github.com/greenelab/manubot-rootstock" rel="documentation"/>
+    <link href="https://github.com/manubot/rootstock" rel="documentation"/>
     <author>
       <name>Daniel Himmelstein</name>
       <email>daniel.himmelstein@gmail.com</email>
