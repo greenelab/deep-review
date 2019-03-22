@@ -4106,6 +4106,7 @@
     "container-title": "arXiv",
     "publisher": "arXiv",
     "abstract": "The chest X-ray is one of the most commonly accessible radiological\nexaminations for screening and diagnosis of many lung diseases. A tremendous\nnumber of X-ray imaging studies accompanied by radiological reports are\naccumulated and stored in many modern hospitals' Picture Archiving and\nCommunication Systems (PACS). On the other side, it is still an open question\nhow this type of hospital-size knowledge database containing invaluable imaging\ninformatics (i.e., loosely labeled) can be used to facilitate the data-hungry\ndeep learning paradigms in building truly large-scale high precision\ncomputer-aided diagnosis (CAD) systems.\n  In this paper, we present a new chest X-ray database, namely \"ChestX-ray8\",\nwhich comprises 108,948 frontal-view X-ray images of 32,717 unique patients\nwith the text-mined eight disease image labels (where each image can have\nmulti-labels), from the associated radiological reports using natural language\nprocessing. Importantly, we demonstrate that these commonly occurring thoracic\ndiseases can be detected and even spatially-located via a unified\nweakly-supervised multi-label image classification and disease localization\nframework, which is validated using our proposed dataset. Although the initial\nquantitative results are promising as reported, deep convolutional neural\nnetwork based \"reading chest X-rays\" (i.e., recognizing and locating the common\ndisease patterns trained with only image-level labels) remains a strenuous task\nfor fully-automated high precision CAD systems. Data download link:\nhttps://nihcc.app.box.com/v/ChestXray-NIHCC",
+    "DOI": "10.1109/CVPR.2017.369",
     "type": "report",
     "id": "PGi9g7yV"
   },
@@ -8197,8 +8198,8 @@
       "date-parts": [
         [
           2010,
-          5,
-          24
+          4,
+          28
         ]
       ]
     },
@@ -8391,7 +8392,7 @@
         "family": "Swamidass"
       },
       {
-        "given": "Chloé-Agathe",
+        "given": "Chloé-Agathe",
         "family": "Azencott"
       },
       {
@@ -8417,8 +8418,8 @@
       "date-parts": [
         [
           2009,
-          4,
-          27
+          3,
+          26
         ]
       ]
     },
@@ -8533,7 +8534,7 @@
     "id": "1FjSxrV1k"
   },
   {
-    "publisher": "Wiley",
+    "publisher": "EMBO",
     "DOI": "10.1038/msb4100129",
     "type": "article-journal",
     "source": "Crossref",
@@ -9097,9 +9098,9 @@
   },
   {
     "publisher": "Springer Nature",
+    "issue": "1",
     "DOI": "10.1038/ncomms13090",
     "type": "article-journal",
-    "page": "13090",
     "source": "Crossref",
     "title": "Multi-omics integration accurately predicts cellular state in unexplored conditions for Escherichia coli",
     "volume": "7",
@@ -9122,6 +9123,7 @@
       }
     ],
     "container-title": "Nature Communications",
+    "language": "en",
     "issued": {
       "date-parts": [
         [
@@ -9132,7 +9134,7 @@
       ]
     },
     "URL": "https://doi.org/gcgk8c",
-    "container-title-short": "Nat Comms",
+    "container-title-short": "Nat Commun",
     "PMCID": "PMC5059772",
     "PMID": "27713404",
     "id": "8SMDF816"
@@ -10743,7 +10745,7 @@
     "id": "11QhcW8tX"
   },
   {
-    "publisher": "New England Journal of Medicine (NEJM/MMS)",
+    "publisher": "Massachusetts Medical Society",
     "issue": "13",
     "DOI": "10.1056/nejm198509263131306",
     "type": "article-journal",
@@ -10786,7 +10788,7 @@
     "id": "xX68eyvs"
   },
   {
-    "publisher": "New England Journal of Medicine (NEJM/MMS)",
+    "publisher": "Massachusetts Medical Society",
     "issue": "3",
     "DOI": "10.1056/nejme1516564",
     "type": "article-journal",
@@ -10821,7 +10823,7 @@
     "id": "o0F1MXBC"
   },
   {
-    "publisher": "New England Journal of Medicine (NEJM/MMS)",
+    "publisher": "Massachusetts Medical Society",
     "issue": "4",
     "DOI": "10.1056/nejmp1006304",
     "type": "article-journal",
@@ -11347,10 +11349,13 @@
   },
   {
     "publisher": "Oxford University Press (OUP)",
+    "issue": "6",
     "DOI": "10.1093/bib/bbx044",
     "type": "article-journal",
+    "page": "1236-1246",
     "source": "Crossref",
     "title": "Deep learning for healthcare: review, opportunities and challenges",
+    "volume": "19",
     "author": [
       {
         "given": "Riccardo",
@@ -11369,7 +11374,7 @@
         "family": "Jiang"
       },
       {
-        "given": "Joel T.",
+        "given": "Joel T",
         "family": "Dudley"
       }
     ],
@@ -12036,7 +12041,7 @@
     "type": "article-journal",
     "page": "511-517",
     "source": "Crossref",
-    "title": "Gapped sequence alignment using artificial neural networks: application to the MHC class I system",
+    "title": "Gapped sequence alignment using artificial neural networks: application to\n          the MHC class I system",
     "volume": "32",
     "author": [
       {
@@ -12060,7 +12065,7 @@
       ]
     },
     "URL": "https://doi.org/f8dggc",
-    "container-title-short": "Bioinformatics",
+    "PMCID": "PMC6402319",
     "PMID": "26515819",
     "id": "EKi3Bq3D"
   },
@@ -12885,7 +12890,6 @@
       ]
     },
     "URL": "https://doi.org/f84nww",
-    "container-title-short": "J Am Med Inform Assoc",
     "PMID": "26911808",
     "id": "2cYqPKf1"
   },
@@ -14576,7 +14580,7 @@
   },
   {
     "publisher": "Cold Spring Harbor Laboratory",
-    "abstract": "<jats:p>Though it is widely recognized that data sharing enables faster scientific progress, the sensible need to protect participant privacy hampers this practice in medicine. We train deep neural networks that generate synthetic participants closely resembling study participants. Using the SPRINT trial as an example, we show that machine-learning models built from simulated participants generalize to the original dataset. We incorporate differential privacy, which offers strong guarantees on the likelihood that a participant could be identified as a member of the trial. Investigators who have compiled a dataset can use our method to provide a freely accessible public version that enables other scientists to perform discovery-oriented analyses. Generated data can be released alongside analytical code to enable fully reproducible workflows, even when privacy is a concern. By addressing data sharing challenges, deep neural networks can facilitate the rigorous and reproducible investigation of clinical datasets.</jats:p>",
+    "abstract": "<jats:p>Background: Data sharing accelerates scientific progress but sharing individual level data while preserving patient privacy presents a barrier. Methods and Results: Using pairs of deep neural networks, we generated simulated, synthetic \"participants\" that closely resemble participants of the SPRINT trial. We showed that such paired networks can be trained with differential privacy, a formal privacy framework that limits the likelihood that queries of the synthetic participants' data could identify a real a participant in the trial. Machine-learning predictors built on the synthetic population generalize to the original dataset. This finding suggests that the synthetic data can be shared with others, enabling them to perform hypothesis-generating analyses as though they had the original trial data. Conclusions: Deep neural networks that generate synthetic participants facilitate secondary analyses and reproducible investigation of clinical datasets by enhancing data sharing while preserving participant privacy.</jats:p>",
     "DOI": "10.1101/159756",
     "type": "manuscript",
     "source": "Crossref",
@@ -16212,7 +16216,7 @@
     "DOI": "10.1117/12.2249981",
     "type": "paper-conference",
     "source": "Crossref",
-    "title": "\nClassification of breast MRI lesions using small-size training sets: comparison of deep learning approaches\n",
+    "title": "Classification of breast MRI lesions using small-size training sets: comparison of deep learning approaches",
     "author": [
       {
         "given": "Guy",
@@ -16472,6 +16476,7 @@
   {
     "publisher": "American Association for the Advancement of Science (AAAS)",
     "issue": "6256",
+    "abstract": "<jats:p>Neurons live for decades in a postmitotic state, their genomes susceptible to DNA damage. Here we survey the landscape of somatic single-nucleotide variants (SNVs) in the human brain. We identified thousands of somatic SNVs by single-cell sequencing of 36 neurons from the cerebral cortex of three normal individuals. Unlike germline and cancer SNVs, which are often caused by errors in DNA replication, neuronal mutations appear to reflect damage during active transcription. Somatic mutations create nested lineage trees, allowing them to be dated relative to developmental landmarks and revealing a polyclonal architecture of the human cerebral cortex. Thus, somatic mutations in the brain represent a durable and ongoing record of neuronal life history, from development through postmitotic function.</jats:p>",
     "DOI": "10.1126/science.aab1785",
     "type": "article-journal",
     "page": "94-98",
@@ -16480,59 +16485,59 @@
     "volume": "350",
     "author": [
       {
-        "given": "M. A.",
+        "given": "Michael A.",
         "family": "Lodato"
       },
       {
-        "given": "M. B.",
+        "given": "Mollie B.",
         "family": "Woodworth"
       },
       {
-        "given": "S.",
+        "given": "Semin",
         "family": "Lee"
       },
       {
-        "given": "G. D.",
+        "given": "Gilad D.",
         "family": "Evrony"
       },
       {
-        "given": "B. K.",
+        "given": "Bhaven K.",
         "family": "Mehta"
       },
       {
-        "given": "A.",
+        "given": "Amir",
         "family": "Karger"
       },
       {
-        "given": "S.",
+        "given": "Soohyun",
         "family": "Lee"
       },
       {
-        "given": "T. W.",
+        "given": "Thomas W.",
         "family": "Chittenden"
       },
       {
-        "given": "A. M.",
-        "family": "D'Gama"
+        "given": "Alissa M.",
+        "family": "D’Gama"
       },
       {
-        "given": "X.",
+        "given": "Xuyu",
         "family": "Cai"
       },
       {
-        "given": "L. J.",
+        "given": "Lovelace J.",
         "family": "Luquette"
       },
       {
-        "given": "E.",
+        "given": "Eunjung",
         "family": "Lee"
       },
       {
-        "given": "P. J.",
+        "given": "Peter J.",
         "family": "Park"
       },
       {
-        "given": "C. A.",
+        "given": "Christopher A.",
         "family": "Walsh"
       }
     ],
@@ -16721,7 +16726,7 @@
     "DOI": "10.1128/msystems.00025-15",
     "type": "article-journal",
     "source": "Crossref",
-    "title": "\n                    ADAGE-Based Integration of Publicly Available\n                    Pseudomonas aeruginosa\n                    Gene Expression Data with Denoising Autoencoders Illuminates Microbe-Host Interactions\n                  ",
+    "title": "ADAGE-Based Integration of Publicly Available\n                    Pseudomonas aeruginosa\n                    Gene Expression Data with Denoising Autoencoders Illuminates Microbe-Host Interactions",
     "volume": "1",
     "author": [
       {
@@ -18029,7 +18034,6 @@
     "issue": "1",
     "DOI": "10.1186/1471-2105-11-544",
     "type": "article-journal",
-    "page": "544",
     "source": "Crossref",
     "title": "Clustering metagenomic sequences with interpolated Markov models",
     "volume": "11",
@@ -18048,7 +18052,9 @@
     "issued": {
       "date-parts": [
         [
-          2010
+          2010,
+          11,
+          2
         ]
       ]
     },
@@ -18063,7 +18069,6 @@
     "issue": "1",
     "DOI": "10.1186/1471-2105-12-20",
     "type": "article-journal",
-    "page": "20",
     "source": "Crossref",
     "title": "Combining gene prediction methods to improve metagenomic gene annotation",
     "volume": "12",
@@ -18082,7 +18087,9 @@
     "issued": {
       "date-parts": [
         [
-          2011
+          2011,
+          1,
+          13
         ]
       ]
     },
@@ -18151,7 +18158,6 @@
     "issue": "1",
     "DOI": "10.1186/2049-2618-1-11",
     "type": "article-journal",
-    "page": "11",
     "source": "Crossref",
     "title": "A comprehensive evaluation of multicategory classification methods for microbiomic data",
     "volume": "1",
@@ -18202,7 +18208,9 @@
     "issued": {
       "date-parts": [
         [
-          2013
+          2013,
+          4,
+          5
         ]
       ]
     },
@@ -18968,7 +18976,7 @@
     "id": "lnK82Ey6"
   },
   {
-    "publisher": "American Association of Pharmaceutical Scientists (AAPS)",
+    "publisher": "Springer Nature",
     "issue": "1",
     "DOI": "10.1208/s12248-012-9322-0",
     "type": "article-journal",
@@ -19016,11 +19024,14 @@
     "id": "13iyYvEcB"
   },
   {
-    "publisher": "F1000 Research, Ltd.",
+    "publisher": "F1000 ( Faculty of 1000 Ltd)",
+    "abstract": "<ns4:p>Single-cell RNA-sequencing methods are now robust and economically practical and are becoming a powerful tool for high-throughput, high-resolution transcriptomic analysis of cell states and dynamics. Single-cell approaches circumvent the averaging artifacts associated with traditional bulk population data, yielding new insights into the cellular diversity underlying superficially homogeneous populations. Thus far, single-cell RNA-sequencing has already shown great effectiveness in unraveling complex cell populations, reconstructing developmental trajectories, and modeling transcriptional dynamics. Ongoing technical improvements to single-cell RNA-sequencing throughput and sensitivity, the development of more sophisticated analytical frameworks for single-cell data, and an increasing array of complementary single-cell assays all promise to expand the usefulness and potential applications of single-cell transcriptomic profiling.</ns4:p>",
     "DOI": "10.12688/f1000research.7223.1",
     "type": "article-journal",
+    "page": "182",
     "source": "Crossref",
     "title": "Single-cell transcriptome sequencing: recent advances and remaining challenges",
+    "volume": "5",
     "author": [
       {
         "given": "Serena",
@@ -21005,7 +21016,7 @@
     "DOI": "10.18653/v1/w16-3009",
     "type": "paper-conference",
     "source": "Crossref",
-    "title": "\n             Deep Learning with Minimal Training Data: TurkuNLP Entry in the\n            BioNLP Shared Task 2016 \n          ",
+    "title": "Deep Learning with Minimal Training Data: TurkuNLP Entry in the\n            BioNLP Shared Task 2016",
     "author": [
       {
         "given": "Farrokh",
@@ -21045,7 +21056,7 @@
     "DOI": "10.18653/v1/w16-3012",
     "type": "paper-conference",
     "source": "Crossref",
-    "title": "\n             DUTIR in BioNLP-ST 2016: Utilizing Convolutional Network and\n            Distributed Representation to Extract Complicate Relations \n          ",
+    "title": "DUTIR in BioNLP-ST 2016: Utilizing Convolutional Network and\n            Distributed Representation to Extract Complicate Relations",
     "author": [
       {
         "given": "Honglei",
@@ -21117,7 +21128,7 @@
     "DOI": "10.18653/v1/w17-2304",
     "type": "paper-conference",
     "source": "Crossref",
-    "title": "\n             Deep learning for extracting protein-protein interactions from\n            biomedical literature \n          ",
+    "title": "Deep learning for extracting protein-protein interactions from\n            biomedical literature",
     "author": [
       {
         "given": "Yifan",
@@ -21145,7 +21156,7 @@
     "DOI": "10.18653/v1/w17-2328",
     "type": "paper-conference",
     "source": "Crossref",
-    "title": "\n             Deep Learning for Biomedical Information Retrieval: Learning\n            Textual Relevance from Click Logs \n          ",
+    "title": "Deep Learning for Biomedical Information Retrieval: Learning\n            Textual Relevance from Click Logs",
     "author": [
       {
         "given": "Sunil",
@@ -21181,7 +21192,7 @@
     "DOI": "10.18653/v1/w17-2341",
     "type": "paper-conference",
     "source": "Crossref",
-    "title": "\n             Representations of Time Expressions for Temporal Relation\n            Extraction with Convolutional Neural Networks \n          ",
+    "title": "Representations of Time Expressions for Temporal Relation\n            Extraction with Convolutional Neural Networks",
     "author": [
       {
         "given": "Chen",
@@ -21221,7 +21232,7 @@
     "DOI": "10.18653/v1/w17-2342",
     "type": "paper-conference",
     "source": "Crossref",
-    "title": "\n             Automatic Diagnosis Coding of Radiology Reports: A Comparison of\n            Deep Learning and Conventional Classification Methods \n          ",
+    "title": "Automatic Diagnosis Coding of Radiology Reports: A Comparison of\n            Deep Learning and Conventional Classification Methods",
     "author": [
       {
         "given": "Sarvnaz",
@@ -21939,9 +21950,9 @@
     "accessed": {
       "date-parts": [
         [
-          2018,
-          11,
-          16
+          2019,
+          3,
+          22
         ]
       ]
     },
@@ -21965,10 +21976,10 @@
         "given": "Chunhua"
       }
     ],
-    "container-title-short": "AMIA Jt Summits Transl Sci Proc",
-    "container-title": "AMIA Joint Summits on Translational Science proceedings. AMIA Joint Summits on Translational Science",
+    "container-title-short": "Summit Transl Bioinform",
+    "container-title": "Summit on translational bioinformatics",
     "publisher": "American Medical Informatics Association",
-    "ISSN": "2153-4063",
+    "ISSN": "2153-6430",
     "issued": {
       "date-parts": [
         [
@@ -21990,9 +22001,9 @@
     "accessed": {
       "date-parts": [
         [
-          2018,
-          11,
-          16
+          2019,
+          3,
+          22
         ]
       ]
     },
@@ -22030,9 +22041,9 @@
     "accessed": {
       "date-parts": [
         [
-          2018,
-          11,
-          16
+          2019,
+          3,
+          22
         ]
       ]
     },
@@ -22089,9 +22100,9 @@
     "accessed": {
       "date-parts": [
         [
-          2018,
-          11,
-          16
+          2019,
+          3,
+          22
         ]
       ]
     },
@@ -22141,9 +22152,9 @@
     "accessed": {
       "date-parts": [
         [
-          2018,
-          11,
-          16
+          2019,
+          3,
+          22
         ]
       ]
     },
@@ -22190,9 +22201,9 @@
     "accessed": {
       "date-parts": [
         [
-          2018,
-          11,
-          16
+          2019,
+          3,
+          22
         ]
       ]
     },
@@ -22226,25 +22237,28 @@
     "URL": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5119627/"
   },
   {
-    "URL": "http://alifar76.github.io/sklearn-metrics/",
+    "type": "webpage",
     "title": "TensorFlow vs. scikit-learn : The Microbiome Challenge",
     "container-title": "Ali A. Faruqi",
-    "issued": {
-      "date-parts": [
-        [
-          2016,
-          7,
-          9
-        ]
-      ]
-    },
+    "abstract": "Research highlights",
+    "URL": "http://alifar76.github.io/sklearn-metrics/",
+    "shortTitle": "TensorFlow vs. scikit-learn",
+    "language": "en",
     "author": [
       {
         "family": "Faruqi",
         "given": "Ali A."
       }
     ],
-    "type": "webpage",
+    "accessed": {
+      "date-parts": [
+        [
+          "2019",
+          3,
+          22
+        ]
+      ]
+    },
     "id": "NQ5jiN7B"
   },
   {
@@ -22269,60 +22283,97 @@
     "id": "6fE0Vrba"
   },
   {
-    "URL": "http://blog.dhimmel.com/irreproducible-timestamps/",
-    "title": "The most interesting case of scientific irreproducibility?",
+    "type": "article-journal",
+    "title": "The most interesting case of scientific irreproducibility?",
     "container-title": "Satoshi Village",
-    "issued": {
-      "date-parts": [
-        [
-          2017,
-          3,
-          8
-        ]
-      ]
-    },
+    "source": "blog.dhimmel.com",
+    "URL": "https://blog.dhimmel.com/irreproducible-timestamps/",
+    "language": "en",
     "author": [
       {
         "family": "Himmelstein",
         "given": "Daniel"
       }
     ],
-    "type": "webpage",
-    "id": "QBWMEuxW"
-  },
-  {
-    "URL": "http://blogs.sciencemag.org/pipeline/archives/2012/12/11/did_kaggle_predict_drug_candidate_activities_or_not",
-    "title": "Did Kaggle Predict Drug Candidate Activities? Or Not?",
-    "container-title": "In the Pipeline",
     "issued": {
       "date-parts": [
         [
-          2012,
+          "2017",
+          3,
+          8
+        ]
+      ]
+    },
+    "accessed": {
+      "date-parts": [
+        [
+          "2019",
+          3,
+          22
+        ]
+      ]
+    },
+    "id": "QBWMEuxW"
+  },
+  {
+    "type": "webpage",
+    "title": "Did Kaggle Predict Drug Candidate Activities? Or Not?",
+    "container-title": "In the Pipeline",
+    "abstract": "I notied this piece on Slate (originally published in New Scientist) about Kaggle, a company that's working on data-prediction algorithms. Actually, it might be more accurate to say that they're asking other people to work on data-prediction algorithems, since they structure their tasks as a series",
+    "URL": "https://blogs.sciencemag.org/pipeline/archives/2012/12/11/did_kaggle_predict_drug_candidate_activities_or_not",
+    "shortTitle": "Did Kaggle Predict Drug Candidate Activities?",
+    "language": "en-US",
+    "author": [
+      {
+        "family": "December",
+        "given": "Derek Lowe 11"
+      },
+      {
+        "family": "2012",
+        "given": ""
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          "2012",
           12,
           11
         ]
       ]
     },
-    "author": [
-      {
-        "family": "Lowe",
-        "given": "Derek"
-      }
-    ],
-    "type": "webpage",
+    "accessed": {
+      "date-parts": [
+        [
+          "2019",
+          3,
+          22
+        ]
+      ]
+    },
     "id": "KJCJKadA"
   },
   {
-    "URL": "http://citeseer.ist.psu.edu/viewdoc/summary?doi=10.1.1.41.1639",
+    "type": "paper-conference",
     "title": "Probabilistic Outputs for Support Vector Machines and Comparisons to Regularized Likelihood Methods",
-    "container-title": "ADVANCES IN LARGE MARGIN CLASSIFIERS",
+    "container-title": "Advances in Large Margin Classifiers",
+    "publisher": "MIT Press",
+    "page": "61–74",
+    "source": "CiteSeer",
+    "abstract": "The output of a classifier should be a calibrated posterior probability to enable post-processing. Standard SVMs do not provide such probabilities. One method to create probabilities is to directly train a kernel classifier with a logit link function and a regularized maximum likelihood score. However, training with a maximum likelihood score will produce non-sparse kernel machines. Instead, we train an SVM, then train the parameters of an additional sigmoid function to map the SVM outputs into probabilities. This chapter compares classification error rate and likelihood scores for an SVM plus sigmoid versus a kernel method trained with a regularized likelihood error function. These methods are tested on three data-mining-style data sets. The SVM+sigmoid yields probabilities of comparable quality to the regularized maximum likelihood kernel method, while still retaining the sparseness of the SVM.",
     "author": [
       {
         "family": "Platt",
         "given": "John C."
       }
     ],
-    "type": "webpage",
+    "issued": {
+      "date-parts": [
+        [
+          "1999"
+        ]
+      ]
+    },
     "id": "ZhuDaoNw"
   },
   {
@@ -22384,34 +22435,32 @@
     "id": "hfcf5Hmi"
   },
   {
-    "URL": "http://kundajelab.github.io/dragonn/",
+    "type": "webpage",
     "title": "DragoNN",
-    "issued": {
+    "URL": "http://kundajelab.github.io/dragonn/",
+    "accessed": {
       "date-parts": [
         [
-          2016,
-          11,
-          6
+          "2019",
+          3,
+          22
         ]
       ]
     },
-    "type": "webpage",
     "id": "117PEpTMe"
   },
   {
-    "URL": "http://papers.nips.cc/paper/5954-convolutional-networks-on-graphs-for-learning-molecular-fingerprints",
+    "type": "chapter",
     "title": "Convolutional Networks on Graphs for Learning Molecular Fingerprints",
-    "issued": {
-      "date-parts": [
-        [
-          2015
-        ]
-      ]
-    },
+    "container-title": "Advances in Neural Information Processing Systems 28",
+    "publisher": "Curran Associates, Inc.",
+    "page": "2224–2232",
+    "source": "Neural Information Processing Systems",
+    "URL": "http://papers.nips.cc/paper/5954-convolutional-networks-on-graphs-for-learning-molecular-fingerprints.pdf",
     "author": [
       {
         "family": "Duvenaud",
-        "given": "David K."
+        "given": "David K"
       },
       {
         "family": "Maclaurin",
@@ -22435,22 +22484,57 @@
       },
       {
         "family": "Adams",
-        "given": "Ryan P."
+        "given": "Ryan P"
       }
     ],
-    "type": "webpage",
-    "id": "Oe573FaL"
-  },
-  {
-    "URL": "http://papers.nips.cc/paper/6940-model-based-bayesian-inference-of-neural-activity-and-connectivity-from-all-optical-interrogation-of-a-neural-circuit",
-    "title": "Model-based Bayesian inference of neural activity and connectivity from all-optical interrogation of a neural circuit",
+    "editor": [
+      {
+        "family": "Cortes",
+        "given": "C."
+      },
+      {
+        "family": "Lawrence",
+        "given": "N. D."
+      },
+      {
+        "family": "Lee",
+        "given": "D. D."
+      },
+      {
+        "family": "Sugiyama",
+        "given": "M."
+      },
+      {
+        "family": "Garnett",
+        "given": "R."
+      }
+    ],
     "issued": {
       "date-parts": [
         [
-          2017
+          "2015"
         ]
       ]
     },
+    "accessed": {
+      "date-parts": [
+        [
+          "2019",
+          3,
+          22
+        ]
+      ]
+    },
+    "id": "Oe573FaL"
+  },
+  {
+    "type": "chapter",
+    "title": "Model-based Bayesian inference of neural activity and connectivity from all-optical interrogation of a neural circuit",
+    "container-title": "Advances in Neural Information Processing Systems 30",
+    "publisher": "Curran Associates, Inc.",
+    "page": "3486–3495",
+    "source": "Neural Information Processing Systems",
+    "URL": "http://papers.nips.cc/paper/6940-model-based-bayesian-inference-of-neural-activity-and-connectivity-from-all-optical-interrogation-of-a-neural-circuit.pdf",
     "author": [
       {
         "family": "Aitchison",
@@ -22462,7 +22546,7 @@
       },
       {
         "family": "Packer",
-        "given": "Adam M."
+        "given": "Adam M"
       },
       {
         "family": "Yan",
@@ -22478,47 +22562,108 @@
       },
       {
         "family": "Turaga",
-        "given": "Srinivas C."
+        "given": "Srinivas C"
       }
     ],
-    "type": "webpage",
-    "id": "JaDImylU"
-  },
-  {
-    "URL": "http://proceedings.mlr.press/v54/mcmahan17a.html",
-    "title": "Communication-Efficient Learning of Deep Networks from Decentralized Data",
+    "editor": [
+      {
+        "family": "Guyon",
+        "given": "I."
+      },
+      {
+        "family": "Luxburg",
+        "given": "U. V."
+      },
+      {
+        "family": "Bengio",
+        "given": "S."
+      },
+      {
+        "family": "Wallach",
+        "given": "H."
+      },
+      {
+        "family": "Fergus",
+        "given": "R."
+      },
+      {
+        "family": "Vishwanathan",
+        "given": "S."
+      },
+      {
+        "family": "Garnett",
+        "given": "R."
+      }
+    ],
     "issued": {
       "date-parts": [
         [
-          2017,
-          4,
-          10
+          "2017"
         ]
       ]
     },
+    "accessed": {
+      "date-parts": [
+        [
+          "2019",
+          3,
+          22
+        ]
+      ]
+    },
+    "id": "JaDImylU"
+  },
+  {
+    "type": "paper-conference",
+    "title": "Communication-Efficient Learning of Deep Networks from Decentralized Data",
+    "container-title": "Artificial Intelligence and Statistics",
+    "page": "1273-1282",
+    "source": "proceedings.mlr.press",
+    "event": "Artificial Intelligence and Statistics",
+    "abstract": "Modern mobile devices have access to a wealth of data suitable for learning models, which in turn can greatly improve the user experience on the device. For example, language models can improve spe...",
+    "URL": "http://proceedings.mlr.press/v54/mcmahan17a.html",
+    "language": "en",
     "author": [
       {
-        "family": "McMahan",
-        "given": "Brendan"
-      },
-      {
-        "family": "Moore",
-        "given": "Eider"
-      },
-      {
-        "family": "Ramage",
-        "given": "Daniel"
+        "family": "Arcas",
+        "given": "Blaise Aguera",
+        "dropping-particle": "y"
       },
       {
         "family": "Hampson",
         "given": "Seth"
       },
       {
-        "family": "Aguera y Arcas",
-        "given": "Blaise"
+        "family": "Ramage",
+        "given": "Daniel"
+      },
+      {
+        "family": "Moore",
+        "given": "Eider"
+      },
+      {
+        "family": "McMahan",
+        "given": "Brendan"
       }
     ],
-    "type": "webpage",
+    "issued": {
+      "date-parts": [
+        [
+          "2017",
+          4,
+          10
+        ]
+      ]
+    },
+    "accessed": {
+      "date-parts": [
+        [
+          "2019",
+          3,
+          22
+        ]
+      ]
+    },
     "id": "U0ySdznJ"
   },
   {
@@ -22587,18 +22732,51 @@
     "id": "17cBimWgp"
   },
   {
-    "URL": "http://research.google.com/archive/unsupervised_icml2012.html",
-    "title": "Google Research Publication: Building High-level Features Using Large Scale Unsupervised Learning",
+    "type": "paper-conference",
+    "title": "Building high-level features using large scale unsupervised learning",
+    "container-title": "International Conference in Machine Learning",
+    "source": "Google AI",
+    "author": [
+      {
+        "family": "Le",
+        "given": "Quoc"
+      },
+      {
+        "family": "Ranzato",
+        "given": "Marc'Aurelio"
+      },
+      {
+        "family": "Monga",
+        "given": "Rajat"
+      },
+      {
+        "family": "Devin",
+        "given": "Matthieu"
+      },
+      {
+        "family": "Chen",
+        "given": "Kai"
+      },
+      {
+        "family": "Corrado",
+        "given": "Greg"
+      },
+      {
+        "family": "Dean",
+        "given": "Jeff"
+      },
+      {
+        "family": "Ng",
+        "given": "Andrew"
+      }
+    ],
     "issued": {
       "date-parts": [
         [
-          2016,
-          12,
-          15
+          "2012"
         ]
       ]
     },
-    "type": "webpage",
     "id": "IiNJE32f"
   },
   {
@@ -22738,18 +22916,18 @@
     "id": "yg8NW0K7"
   },
   {
-    "URL": "http://www.fasebj.org/content/30/1_Supplement/406.3",
+    "type": "article-journal",
     "title": "Utilizing Machine Learning Approaches to Understand the Interrelationship of Diet, the Human Gastrointestinal Microbiome, and Health",
     "container-title": "The FASEB Journal",
-    "issued": {
-      "date-parts": [
-        [
-          2016,
-          4,
-          1
-        ]
-      ]
-    },
+    "page": "406.3-406.3",
+    "volume": "30",
+    "issue": "1_supplement",
+    "source": "fasebj.org (Atypon)",
+    "abstract": "BackgroundA growing body of literature supports the ability of specific foods and nutrients to impact the gastrointestinal microbiome. However, there is a dearth of knowledge on the interplay of dietary components (e.g. foods and nutrients), gastrointestinal bacteria, and bacterial metabolites. Current analytical approaches limit investigation of these complex interrelations; therefore, further research utilizing modern machine learning methods is needed.ObjectiveWe aimed to fill the gap in knowledge about the interrelationship of diet, the gastrointestinal microbiome, and health by utilizing multivariate approaches that address P>>N, many features but few samples to 1) validate results generated by prototype software with previously published results; and 2) identify novel associations among relevant foods, nutrients, bacteria, and bacterial metabolites.MethodsData generated from a human dietary intervention study that included habitual food and nutrient intake patterns (NHANES food frequency questionnaire), daily dietary intake records, breath gas, and fecal bacteria and metabolite data were analyzed using machine learning approaches. Relevant bacteria, bacterial metabolites, foods, and nutrients were identified using Random Forest and relationships among these relevant features were determined using Maximal Information Coefficient.ResultsBreath hydrogen and agave inulin supplementation were predictive of Bifidobacterium abundance. Habitual diet factors were highly relevant in predicting participant body mass index (BMI). Among bacteria, Phascolarctobacterium, Collinsella, and Erysipelotrichacea were important features for predicting BMI. Oscillospira was associated with habitual dietary glycemic load. Phascolarctobacterium and Eubacterium were associated with habitual intake of deep yellow vegetables. Dietary polyunstaruated fatty acids were relevant in predicting Bacteroidetes to Firmicutes ratios. Total fiber and butyrate were highly relevant in predicting Faecalibacterium abundance.ConclusionsFindings revealed similar associations among diet, bacterial genera, and breath hydrogen measures as previously published results, thereby validating the use of these methods in diet-microbiome studies. BMI, bacterial abundances, dietary fiber intake, glycemic load, and deep yellow vegetable intake were interrelated. As features of a high quality diet were relevant for predicting bacterial abundances and metabolites, additional work is ongoing to calculate healthy eating index scores. These scores will help delineate purported health benefits (or detriments) of dietary components, bacteria, and bacterial metabolites and aid in identifying targets for future diet-microbiome studies.Support or Funding InformationThis study was partially funded by the Illinois Applied Research Institute.",
+    "URL": "https://www.fasebj.org/doi/abs/10.1096/fasebj.30.1_supplement.406.3",
+    "DOI": "10.1096/fasebj.30.1_supplement.406.3",
+    "ISSN": "0892-6638",
+    "journalAbbreviation": "The FASEB Journal",
     "author": [
       {
         "family": "Guetterman",
@@ -22784,7 +22962,24 @@
         "given": "Hannah"
       }
     ],
-    "type": "webpage",
+    "issued": {
+      "date-parts": [
+        [
+          "2016",
+          4,
+          1
+        ]
+      ]
+    },
+    "accessed": {
+      "date-parts": [
+        [
+          "2019",
+          3,
+          22
+        ]
+      ]
+    },
     "id": "W0cYSf89"
   },
   {
@@ -22844,92 +23039,136 @@
     "id": "UAAd9Uez"
   },
   {
-    "URL": "http://www.jmlr.org/papers/v13/bergstra12a.html",
+    "type": "article-journal",
     "title": "Random Search for Hyper-Parameter Optimization",
     "container-title": "Journal of Machine Learning Research",
-    "issued": {
-      "date-parts": [
-        [
-          2012
-        ]
-      ]
-    },
+    "page": "281-305",
+    "volume": "13",
+    "issue": "Feb",
+    "source": "www.jmlr.org",
+    "URL": "http://www.jmlr.org/papers/v13/bergstra12a.html",
+    "ISSN": "ISSN 1533-7928",
     "author": [
-      {
-        "family": "Bergstra",
-        "given": "James"
-      },
       {
         "family": "Bengio",
         "given": "Yoshua"
+      },
+      {
+        "family": "Bergstra",
+        "given": "James"
       }
     ],
-    "type": "webpage",
+    "issued": {
+      "date-parts": [
+        [
+          "2012"
+        ]
+      ]
+    },
+    "accessed": {
+      "date-parts": [
+        [
+          "2019",
+          3,
+          22
+        ]
+      ]
+    },
     "id": "1FSwIjR9s"
   },
   {
-    "URL": "http://www.jmlr.org/papers/v9/vandermaaten08a.html",
+    "type": "article-journal",
     "title": "Visualizing Data using t-SNE",
     "container-title": "Journal of Machine Learning Research",
-    "issued": {
-      "date-parts": [
-        [
-          2008
-        ]
-      ]
-    },
+    "page": "2579-2605",
+    "volume": "9",
+    "issue": "Nov",
+    "source": "www.jmlr.org",
+    "URL": "http://www.jmlr.org/papers/v9/vandermaaten08a.html",
+    "ISSN": "ISSN 1533-7928",
     "author": [
-      {
-        "family": "van der Maaten",
-        "given": "Laurens"
-      },
       {
         "family": "Hinton",
         "given": "Geoffrey"
+      },
+      {
+        "family": "Maaten",
+        "given": "Laurens",
+        "dropping-particle": "van der"
       }
     ],
-    "type": "webpage",
-    "id": "TGyu2Woj"
-  },
-  {
-    "URL": "http://www.jmlr.org/proceedings/papers/v28/coates13.html",
-    "title": "Deep learning with COTS HPC systems",
     "issued": {
       "date-parts": [
         [
-          2013,
-          2,
-          13
+          "2008"
         ]
       ]
     },
+    "accessed": {
+      "date-parts": [
+        [
+          "2019",
+          3,
+          22
+        ]
+      ]
+    },
+    "id": "TGyu2Woj"
+  },
+  {
+    "type": "paper-conference",
+    "title": "Deep learning with COTS HPC systems",
+    "container-title": "International Conference on Machine Learning",
+    "page": "1337-1345",
+    "source": "proceedings.mlr.press",
+    "event": "International Conference on Machine Learning",
+    "abstract": "Scaling up deep learning algorithms has been shown to lead to increased performance in benchmark tasks and to enable discovery of complex high-level features.  Recent efforts to train extremely lar...",
+    "URL": "http://proceedings.mlr.press/v28/coates13.html",
+    "language": "en",
     "author": [
       {
-        "family": "Coates",
-        "given": "Adam"
-      },
-      {
-        "family": "Huval",
-        "given": "Brody"
-      },
-      {
-        "family": "Wang",
-        "given": "Tao"
-      },
-      {
-        "family": "Wu",
-        "given": "David"
+        "family": "Andrew",
+        "given": "Ng"
       },
       {
         "family": "Catanzaro",
         "given": "Bryan"
       },
       {
-        "family": "Andrew",
-        "given": "Ng"
+        "family": "Wu",
+        "given": "David"
+      },
+      {
+        "family": "Wang",
+        "given": "Tao"
+      },
+      {
+        "family": "Huval",
+        "given": "Brody"
+      },
+      {
+        "family": "Coates",
+        "given": "Adam"
       }
     ],
-    "type": "webpage",
+    "issued": {
+      "date-parts": [
+        [
+          "2013",
+          2,
+          13
+        ]
+      ]
+    },
+    "accessed": {
+      "date-parts": [
+        [
+          "2019",
+          3,
+          22
+        ]
+      ]
+    },
     "id": "4MZ2tmZ8"
   },
   {
@@ -22946,18 +23185,19 @@
     "id": "zScWGveU"
   },
   {
+    "type": "webpage",
+    "title": "WHO | International Classification of Diseases, 11th Revision (ICD-11)",
+    "container-title": "WHO",
     "URL": "http://www.who.int/classifications/icd/en/",
-    "title": "International Classification of Diseases",
-    "issued": {
+    "accessed": {
       "date-parts": [
         [
-          2017,
-          7,
-          7
+          "2019",
+          3,
+          22
         ]
       ]
     },
-    "type": "webpage",
     "id": "zVoUcFPZ"
   },
   {
@@ -23171,25 +23411,35 @@
     "id": "y9IoEy4r"
   },
   {
-    "URL": "https://medium.com/twenty-one-hundred/data-is-the-new-oil-a-ludicrous-proposition-1d91bba4f294",
-    "title": "“Data is the New Oil” — A Ludicrous Proposition &ndash; Project 2030 &ndash; Medium",
+    "type": "post-weblog",
+    "title": "“Data is the New Oil” — A Ludicrous Proposition",
     "container-title": "Medium",
+    "abstract": "Natural resources, the question of ownership and the reality of Big Data",
+    "URL": "https://medium.com/project-2030/data-is-the-new-oil-a-ludicrous-proposition-1d91bba4f294",
+    "author": [
+      {
+        "family": "Haupt",
+        "given": "Michael"
+      }
+    ],
     "issued": {
       "date-parts": [
         [
-          2016,
+          "2016",
           5,
           2
         ]
       ]
     },
-    "author": [
-      {
-        "family": "@michaelhaupt",
-        "given": ""
-      }
-    ],
-    "type": "webpage",
+    "accessed": {
+      "date-parts": [
+        [
+          "2019",
+          3,
+          22
+        ]
+      ]
+    },
     "id": "o8mib4CN"
   },
   {
@@ -23214,40 +23464,51 @@
     "id": "odFR7ptt"
   },
   {
-    "URL": "https://openreview.net/forum?id=HkwoSDPgg",
+    "type": "article-journal",
     "title": "Semi-supervised Knowledge Transfer for Deep Learning from Private Training Data",
-    "issued": {
-      "date-parts": [
-        [
-          2016,
-          11,
-          2
-        ]
-      ]
-    },
+    "source": "openreview.net",
+    "abstract": "Some machine learning applications involve training data that is sensitive, such\n  as the medical histories of patients in a clinical trial. A model may\n  inadvertently and implicitly store some of its...",
+    "URL": "https://openreview.net/forum?id=HkwoSDPgg",
     "author": [
       {
-        "family": "Papernot",
-        "given": "Nicolas"
-      },
-      {
-        "family": "Abadi",
-        "given": "Martín"
-      },
-      {
-        "family": "Erlingsson",
-        "given": "Úlfar"
+        "family": "Talwar",
+        "given": "Kunal"
       },
       {
         "family": "Goodfellow",
         "given": "Ian"
       },
       {
-        "family": "Talwar",
-        "given": "Kunal"
+        "family": "Erlingsson",
+        "given": "Úlfar"
+      },
+      {
+        "family": "Abadi",
+        "given": "Martín"
+      },
+      {
+        "family": "Papernot",
+        "given": "Nicolas"
       }
     ],
-    "type": "webpage",
+    "issued": {
+      "date-parts": [
+        [
+          "2016",
+          11,
+          2
+        ]
+      ]
+    },
+    "accessed": {
+      "date-parts": [
+        [
+          "2019",
+          3,
+          22
+        ]
+      ]
+    },
     "id": "b8DJ1u6W"
   },
   {
@@ -23321,18 +23582,21 @@
     "id": "15JUKBg9y"
   },
   {
-    "URL": "https://opentimestamps.org/",
+    "type": "webpage",
     "title": "OpenTimestamps: a timestamping proof standard",
-    "issued": {
+    "abstract": "OpenTimestamps aims to be a standard format for blockchain timestamping. The format is flexible enough to be vendor and blockchain independent.",
+    "URL": "https://opentimestamps.org/",
+    "shortTitle": "OpenTimestamps",
+    "language": "en",
+    "accessed": {
       "date-parts": [
         [
-          2018,
-          5,
-          29
+          "2019",
+          3,
+          22
         ]
       ]
     },
-    "type": "webpage",
     "id": "igA8jklc"
   },
   {
@@ -23429,15 +23693,13 @@
     "id": "CCS5KSIM"
   },
   {
-    "URL": "https://papers.nips.cc/paper/5347-how-transferable-are-features-in-deep-neural-networks",
+    "type": "chapter",
     "title": "How transferable are features in deep neural networks?",
-    "issued": {
-      "date-parts": [
-        [
-          2014
-        ]
-      ]
-    },
+    "container-title": "Advances in Neural Information Processing Systems 27",
+    "publisher": "Curran Associates, Inc.",
+    "page": "3320–3328",
+    "source": "Neural Information Processing Systems",
+    "URL": "http://papers.nips.cc/paper/5347-how-transferable-are-features-in-deep-neural-networks.pdf",
     "author": [
       {
         "family": "Yosinski",
@@ -23456,22 +23718,59 @@
         "given": "Hod"
       }
     ],
-    "type": "webpage",
-    "id": "enhj7VT6"
-  },
-  {
-    "URL": "https://phekb.org/implementations",
-    "title": "Implementations by Phenotype | PheKB",
+    "editor": [
+      {
+        "family": "Ghahramani",
+        "given": "Z."
+      },
+      {
+        "family": "Welling",
+        "given": "M."
+      },
+      {
+        "family": "Cortes",
+        "given": "C."
+      },
+      {
+        "family": "Lawrence",
+        "given": "N. D."
+      },
+      {
+        "family": "Weinberger",
+        "given": "K. Q."
+      }
+    ],
     "issued": {
       "date-parts": [
         [
-          2018,
-          7,
-          15
+          "2014"
         ]
       ]
     },
+    "accessed": {
+      "date-parts": [
+        [
+          "2019",
+          3,
+          22
+        ]
+      ]
+    },
+    "id": "enhj7VT6"
+  },
+  {
     "type": "webpage",
+    "title": "Implementations by Phenotype | PheKB",
+    "URL": "https://phekb.org/implementations",
+    "accessed": {
+      "date-parts": [
+        [
+          "2019",
+          3,
+          22
+        ]
+      ]
+    },
     "id": "ziudr6hx"
   },
   {
@@ -23506,31 +23805,46 @@
     "id": "iPIJrVVs"
   },
   {
-    "URL": "https://research.google.com/pubs/pub37631.html",
-    "title": "Improving the speed of neural networks on CPUs &ndash; Google AI",
-    "container-title": "Google AI",
-    "type": "webpage",
-    "id": "NSgduYNT"
-  },
-  {
-    "URL": "https://www.bgcarlisle.com/blog/2014/08/25/proof-of-prespecified-endpoints-in-medical-research-with-the-bitcoin-blockchain/",
-    "title": "The Grey Literature — Proof of prespecified endpoints in medical research with the bitcoin blockchain",
+    "type": "paper-conference",
+    "title": "Improving the speed of neural networks on CPUs",
+    "container-title": "Deep Learning and Unsupervised Feature Learning Workshop, NIPS 2011",
+    "source": "Google AI",
+    "author": [
+      {
+        "family": "Vanhoucke",
+        "given": "Vincent"
+      },
+      {
+        "family": "Senior",
+        "given": "Andrew"
+      },
+      {
+        "family": "Mao",
+        "given": "Mark Z."
+      }
+    ],
     "issued": {
       "date-parts": [
         [
-          2014,
-          8,
-          25
+          "2011"
         ]
       ]
     },
-    "author": [
-      {
-        "family": "Carlisle",
-        "given": "Benjamin Gregory"
-      }
-    ],
+    "id": "NSgduYNT"
+  },
+  {
     "type": "webpage",
+    "title": "The Grey Literature — Proof of prespecified endpoints in medical research with the bitcoin blockchain",
+    "URL": "https://www.bgcarlisle.com/blog/2014/08/25/proof-of-prespecified-endpoints-in-medical-research-with-the-bitcoin-blockchain/",
+    "accessed": {
+      "date-parts": [
+        [
+          "2019",
+          3,
+          22
+        ]
+      ]
+    },
     "id": "6MR50hyY"
   },
   {
