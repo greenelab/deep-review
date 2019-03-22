@@ -58,9 +58,9 @@ _The published version of this manuscript is available at <https://doi.org/10.10
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/deep-review/v/61ea1fe8e49fbbe5adde8917f3159490a767626d/))
+([permalink](https://greenelab.github.io/deep-review/v/ec05a06890580987fd84eeadaaa8422bda2f918f/))
 was automatically generated
-from [greenelab/deep-review@61ea1fe](https://github.com/greenelab/deep-review/tree/61ea1fe8e49fbbe5adde8917f3159490a767626d)
+from [greenelab/deep-review@ec05a06](https://github.com/greenelab/deep-review/tree/ec05a06890580987fd84eeadaaa8422bda2f918f)
 on March 22, 2019.
 </em></small>
 
@@ -244,7 +244,7 @@ In the case of this example, each input node is only connected to hidden nodes a
 Autoencoder: a type of MLP in which the neural network is trained to produce an output that matches the input to the network.
 RNN: a deep recurrent neural network is used to allow the neural network to retain memory over time or sequential inputs.
 This figure was inspired by the [Neural Network Zoo](http://www.asimovinstitute.org/neural-network-zoo/) by Fjodor Van Veen.
-](https://user-images.githubusercontent.com/542643/34995383-52363dc0-faa4-11e7-8cdd-47966c1a2a0f.png){#fig:nn-petting-zoo}
+](https://user-images.githubusercontent.com/542643/34995383-52363dc0-faa4-11e7-8cdd-47966c1a2a0f.png){#fig:nn-petting-zoo .white}
 
 This review discusses recent work in the biomedical domain, and most successful applications select neural network architectures that are well suited to the problem at hand.
 We sketch out a few simple example architectures in Figure @fig:nn-petting-zoo.
@@ -454,7 +454,7 @@ The main tasks in biological and clinical text mining include, but are not limit
 Deep learning is appealing in this domain because of its competitive performance versus traditional methods and ability to overcome challenges in feature engineering.
 Relevant applications can be stratified by the application domain (biomedical literature vs. clinical notes) and the actual task (e.g. concept or relation extraction).
 
-![Deep learning applications, tasks, and models based on NLP perspectives.](images/biotm.png){#fig:biotm width="100%"}
+![Deep learning applications, tasks, and models based on NLP perspectives.](images/biotm.png){#fig:biotm .white width="100%"}
 
 Named entity recognition (NER) is a task of identifying text spans that refer to a biological concept of a specific class, such as disease or chemical, in a controlled vocabulary or ontology.
 NER is often needed as a first step in many complex text mining systems.
