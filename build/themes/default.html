@@ -1,0 +1,1149 @@
+<!-- default theme -->
+
+<style>
+    /* import google fonts */
+    @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+    @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
+
+    /* -------------------------------------------------- */
+    /* global */
+    /* -------------------------------------------------- */
+
+    /* all elements */
+    * {
+        /* force sans-serif font unless specified otherwise */
+        font-family: "Open Sans", "Helvetica", sans-serif;
+
+        /* prevent text inflation on some mobile browsers */
+        -webkit-text-size-adjust: none !important;
+        -moz-text-size-adjust: none !important;
+        -o-text-size-adjust: none !important;
+        text-size-adjust: none !important;
+    }
+
+    @media only screen {
+        /* "page" element */
+        body {
+            position: relative;
+            box-sizing: border-box;
+            max-width: 8.5in;
+            font-size: 12pt;
+            line-height: 1.5;
+            margin: 20px auto;
+            padding: 40px;
+            border-radius: 5px;
+            border: solid 1px #bdbdbd;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+            background: #ffffff;
+            word-break: all;
+            word-break: break-word;
+        }
+    }
+
+    /* when on screen < 8.5in wide */
+    @media only screen and (max-width: 8.5in) {
+        /* "page" element */
+        body {
+            padding: 20px;
+            margin: 0;
+            border-radius: 0;
+            border: none;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05) inset;
+            background: none;
+        }
+    }
+
+    /* -------------------------------------------------- */
+    /* headings */
+    /* -------------------------------------------------- */
+
+    /* all headings */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 20px 0;
+        padding: 0;
+        font-weight: bold;
+    }
+
+    /* biggest heading */
+    h1 {
+        margin-top: 40px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    /* second biggest heading */
+    h2 {
+        margin-top: 30px;
+        padding-bottom: 5px;
+        border-bottom: solid 1px #bdbdbd;
+    }
+
+    /* -------------------------------------------------- */
+    /* manuscript header */
+    /* -------------------------------------------------- */
+
+    /* manuscript title */
+    header > h1 {
+        margin: 0;
+    }
+
+    /* manuscript title caption text (ie "automatically generated on") */
+    header + p {
+        text-align: center;
+        margin-top: 0;
+    }
+
+    /* -------------------------------------------------- */
+    /* text elements */
+    /* -------------------------------------------------- */
+
+    /* links */
+    a {
+        color: #2196f3;
+        word-break: break-all;
+    }
+
+    /* superscripts and subscripts */
+    sub,
+    sup {
+        /* prevent from affecting line height */
+        line-height: 0;
+    }
+
+    /* unordered and ordered lists*/
+    ul,
+    ol {
+        padding-left: 20px;
+    }
+
+    /* class for styling text semibold */
+    .semibold {
+        font-weight: 600;
+    }
+
+    /* class for styling elements horizontally left aligned */
+    .left {
+        display: block;
+        text-align: left;
+        margin-left: auto;
+        margin-right: 0;
+        justify-content: left;
+    }
+
+    /* class for styling elements horizontally centered */
+    .center {
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+
+    /* class for styling elements horizontally right aligned */
+    .right {
+        display: block;
+        text-align: right;
+        margin-left: 0;
+        margin-right: auto;
+        justify-content: right;
+    }
+
+    /* -------------------------------------------------- */
+    /* section elements */
+    /* -------------------------------------------------- */
+
+    /* horizontal divider line */
+    hr {
+        border: none;
+        height: 1px;
+        background: #bdbdbd;
+    }
+
+    /* paragraphs, horizontal dividers, figures, tables, code */
+    p,
+    hr,
+    figure,
+    table,
+    pre {
+        /* treat all as "paragraphs", with consistent vertical margins */
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* -------------------------------------------------- */
+    /* figures */
+    /* -------------------------------------------------- */
+
+    /* figure */
+    figure {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* figure caption */
+    figcaption {
+        padding: 0;
+        padding-top: 10px;
+    }
+
+    /* figure image element */
+    figure img {
+        max-width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* figure auto-number */
+    img + figcaption > span:first-of-type {
+        font-weight: bold;
+        margin-right: 5px;
+    }
+
+    /* -------------------------------------------------- */
+    /* tables */
+    /* -------------------------------------------------- */
+
+    /* table */
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* table cells */
+    th,
+    td {
+        border: solid 1px #bdbdbd;
+        padding: 10px;
+        /* squash table if too wide for page by forcing line breaks */
+        /* put line break break anywhere in text */
+        word-break: break-all;
+        /* put line break between words. if not supported by browser, will fall back to break-all */
+        word-break: break-word;
+    }
+
+    /* header row and even rows */
+    th,
+    tr:nth-child(2n) {
+        background-color: #f5f5f5;
+    }
+
+    /* odd rows */
+    tr:nth-child(2n + 1) {
+        background-color: #ffffff;
+    }
+
+    /* table caption */
+    caption {
+        text-align: left;
+        padding: 0;
+        padding-bottom: 10px;
+    }
+
+    /* table auto-number */
+    table > caption > span:first-of-type,
+    div.table_wrapper > table > caption > span:first-of-type {
+        font-weight: bold;
+        margin-right: 5px;
+    }
+
+    /* -------------------------------------------------- */
+    /* code */
+    /* -------------------------------------------------- */
+
+    /* multi-line code block */
+    pre {
+        padding: 10px;
+        background-color: #eeeeee;
+        color: #000000;
+        border-radius: 5px;
+        break-inside: avoid;
+        text-align: left;
+    }
+
+    /* inline code, ie code within normal text */
+    :not(pre) > code {
+        padding: 0 4px;
+        background-color: #eeeeee;
+        color: #000000;
+        border-radius: 5px;
+    }
+
+    /* code text */
+    /* apply all children, to reach syntax highlighting sub-elements */
+    code,
+    code * {
+        /* force monospace font */
+        font-family: "Source Code Pro", "Courier New", monospace;
+    }
+
+    /* -------------------------------------------------- */
+    /* quotes */
+    /* -------------------------------------------------- */
+
+    /* quoted text */
+    blockquote {
+        margin: 0;
+        padding: 0;
+        border-left: 4px solid #bdbdbd;
+        padding-left: 16px;
+        break-inside: avoid;
+    }
+
+    /* -------------------------------------------------- */
+    /* banners */
+    /* -------------------------------------------------- */
+
+    /* info banners */
+    .banner {
+        box-sizing: border-box;
+        display: block;
+        position: relative;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* paragraph in banner */
+    .banner > p {
+        margin: 0;
+    }
+
+    /* -------------------------------------------------- */
+    /* highlight colors */
+    /* -------------------------------------------------- */
+
+    .white {
+        background: #ffffff;
+    }
+    .lightgrey {
+        background: #eeeeee;
+    }
+    .grey {
+        background: #757575;
+    }
+    .darkgrey {
+        background: #424242;
+    }
+    .black {
+        background: #000000;
+    }
+    .lightred {
+        background: #ffcdd2;
+    }
+    .lightyellow {
+        background: #ffecb3;
+    }
+    .lightgreen {
+        background: #dcedc8;
+    }
+    .lightblue {
+        background: #e3f2fd;
+    }
+    .lightpurple {
+        background: #f3e5f5;
+    }
+    .red {
+        background: #f44336;
+    }
+    .orange {
+        background: #ff9800;
+    }
+    .yellow {
+        background: #ffeb3b;
+    }
+    .green {
+        background: #4caf50;
+    }
+    .blue {
+        background: #2196f3;
+    }
+    .purple {
+        background: #9c27b0;
+    }
+    .white,
+    .lightgrey,
+    .lightred,
+    .lightyellow,
+    .lightgreen,
+    .lightblue,
+    .lightpurple,
+    .orange,
+    .yellow,
+    .white a,
+    .lightgrey a,
+    .lightred a,
+    .lightyellow a,
+    .lightgreen a,
+    .lightblue a,
+    .lightpurple a,
+    .orange a,
+    .yellow a {
+        color: #000000;
+    }
+    .grey,
+    .darkgrey,
+    .black,
+    .red,
+    .green,
+    .blue,
+    .purple,
+    .grey a,
+    .darkgrey a,
+    .black a,
+    .red a,
+    .green a,
+    .blue a,
+    .purple a {
+        color: #ffffff;
+    }
+
+    /* -------------------------------------------------- */
+    /* buttons */
+    /* -------------------------------------------------- */
+
+    /* class for styling links like buttons */
+    .button {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+        padding: 10px 20px;
+        font-size: 0.75em;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 1px;
+        background: none;
+        color: #2196f3;
+        border: solid 1px #bdbdbd;
+        border-radius: 5px;
+    }
+
+    /* buttons when hovered */
+    .button:hover:not([disabled]),
+    .icon_button:hover:not([disabled]) {
+        cursor: pointer;
+        background: #f5f5f5;
+    }
+
+    /* buttons when disabled */
+    .button[disabled],
+    .icon_button[disabled] {
+        opacity: 0.35;
+        pointer-events: none;
+    }
+
+    /* class for styling buttons containg only single icon */
+    .icon_button {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
+        background: none;
+        border-radius: 5px;
+        border: none;
+        width: 20px;
+        height: 20px;
+        min-width: 20px;
+        min-height: 20px;
+    }
+
+    /* icon button inner svg image */
+    .icon_button > svg {
+        height: 16px;
+    }
+
+    /* -------------------------------------------------- */
+    /* icons */
+    /* -------------------------------------------------- */
+
+    /* class for styling icons inline with text */
+    .inline_icon {
+        height: 1em;
+        position: relative;
+        top: 0.125em;
+    }
+
+    /* -------------------------------------------------- */
+    /* print control */
+    /* -------------------------------------------------- */
+
+    @media print {
+        @page {
+            /* suggested printing margin */
+            margin: 0.75in;
+        }
+
+        /* document and "page" elements */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* class for centering an element vertically on its own page */
+        .page_center {
+            margin: auto;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            vertical-align: middle;
+            break-before: page;
+            break-after: page;
+        }
+
+        /* <h2> heading */
+        h2 {
+            margin-top: 0;
+        }
+
+        /* always insert a page break before the element */
+        .page_break_before {
+            break-before: page;
+        }
+
+        /* always insert a page break after the element */
+        .page_break_after {
+            break-after: page;
+        }
+
+        /* avoid page break before the element */
+        .page_break_before_avoid {
+            break-before: avoid;
+        }
+
+        /* avoid page break after the element */
+        .page_break_after_avoid {
+            break-after: avoid;
+        }
+
+        /* avoid page break inside the element */
+        .page_break_inside_avoid {
+            break-inside: avoid;
+        }
+    }
+
+    /* -------------------------------------------------- */
+    /* override pandoc css quirks */
+    /* -------------------------------------------------- */
+
+    .sourceCode {
+        /* prevent unsightly overflow in wide code blocks */
+        overflow: auto !important;
+    }
+
+    div.sourceCode {
+        /* prevent background fill on top-most code block  container */
+        background: none !important;
+    }
+
+    .sourceCode * {
+        /* force consistent line spacing */
+        line-height: 1.5 !important;
+    }
+
+    div.sourceCode {
+        /* style code block margins same as <pre> element */
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* -------------------------------------------------- */
+    /* mathjax */
+    /* -------------------------------------------------- */
+
+    /* mathjax containers */
+    .math.display > span:not(.MathJax_Preview) {
+        /* turn inline element (no dimensions) into block (allows fixed width and thus scrolling) */
+        display: flex !important;
+        overflow-x: auto !important;
+        overflow-y: hidden !important;
+        justify-content: center;
+        align-items: center;
+        margin: 0 !important;
+    }
+
+    /* right click menu */
+    .MathJax_Menu {
+        border-radius: 5px !important;
+        border: solid 1px #bdbdbd !important;
+        box-shadow: none !important;
+    }
+
+    /* equation auto-number */
+    span[id^="eq:"] > span.math.display + span {
+        font-weight: 600;
+    }
+
+    /* equation */
+    span[id^="eq:"] > span.math.display > span {
+        /* nudge to make room for equation auto-number */
+        margin-right: 40px !important;
+    }
+
+    /* -------------------------------------------------- */
+    /* table scroll plugin */
+    /* -------------------------------------------------- */
+
+    @media only screen {
+        /* table wrapper */
+        .table_wrapper {
+            /* show scrollbar on tables if necessary to prevent overflow */
+            overflow: auto;
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        /* table within table wrapper */
+        .table_wrapper table,
+        .table_wrapper table * {
+            /* don't break table words */
+            word-break: normal !important;
+        }
+
+        .table_wrapper > table {
+            /* move margins from table to table_wrapper to allow margin collapsing */
+            margin: 0;
+        }
+    }
+
+    /* -------------------------------------------------- */
+    /* anchors plugin */
+    /* -------------------------------------------------- */
+
+    @media only screen {
+        /* anchor button */
+        .anchor {
+            opacity: 0;
+            margin-left: 5px;
+        }
+
+        /* anchor buttons within <h2>'s */
+        h2 .anchor {
+            margin-left: 10px;
+        }
+
+        /* anchor buttons when hovered/focused and anything containing an anchor button when hovered */
+        *:hover > .anchor,
+        .anchor:hover,
+        .anchor:focus {
+            opacity: 1;
+        }
+
+        /* anchor button when hovered */
+        .anchor:hover {
+            cursor: pointer;
+        }
+    }
+
+    /* always show anchor button on devices with no mouse/hover ability */
+    @media (hover: none) {
+        .anchor {
+            opacity: 1;
+        }
+    }
+
+    /* always hide anchor button on print */
+    @media only print {
+        .anchor {
+            display: none;
+        }
+    }
+
+    /* -------------------------------------------------- */
+    /* accordion plugin */
+    /* -------------------------------------------------- */
+
+    @media only screen {
+        /* accordion arrow button */
+        .accordion_arrow {
+            margin-right: 10px;
+        }
+
+        /* arrow icon when <h2> data-collapsed attribute true */
+        h2[data-collapsed="true"] > .accordion_arrow > svg {
+            transform: rotate(-90deg);
+        }
+
+        /* all elements (except <h2>'s) when data-collapsed attribute true */
+        *:not(h2)[data-collapsed="true"] {
+            display: none;
+        }
+
+        /* accordion arrow button when hovered and <h2>'s when hovered */
+        .accordion_arrow:hover,
+        h2[data-collapsed="true"]:hover,
+        h2[data-collapsed="false"]:hover {
+            cursor: pointer;
+        }
+    }
+
+    /* always hide accordion arrow button on print */
+    @media only print {
+        .accordion_arrow {
+            display: none;
+        }
+    }
+
+    /* -------------------------------------------------- */
+    /* tooltips plugin */
+    /* -------------------------------------------------- */
+
+    @media only screen {
+        /* tooltip container */
+        #tooltip {
+            position: absolute;
+            width: 50%;
+            min-width: 240px;
+            max-width: 75%;
+            z-index: 1;
+        }
+
+        /* tooltip content */
+        #tooltip_content {
+            margin-bottom: 5px;
+            padding: 20px;
+            border-radius: 5px;
+            border: solid 1px #bdbdbd;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+            background: #ffffff;
+            word-break: all;
+            word-break: break-word;
+        }
+
+        /* tooltip copy of paragraphs and figures */
+        #tooltip_content > p,
+        #tooltip_content > figure {
+            margin: 0;
+            max-height: 320px;
+            overflow-y: auto;
+        }
+
+        /* tooltip copy of <img> */
+        #tooltip_content > figure > img {
+            max-height: 260px;
+        }
+
+        /* navigation bar */
+        #tooltip_nav_bar {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        /* navigation bar previous/next buton */
+        #tooltip_nav_bar > .icon_button {
+            position: relative;
+            top: 3px;
+        }
+
+        /* navigation bar previous button */
+        #tooltip_nav_bar > .icon_button:first-of-type {
+            margin-right: 5px;
+        }
+
+        /* navigation bar next button */
+        #tooltip_nav_bar > .icon_button:last-of-type {
+            margin-left: 5px;
+        }
+    }
+
+    /* always hide tooltip on print */
+    @media only print {
+        #tooltip {
+            display: none;
+        }
+    }
+
+    /* -------------------------------------------------- */
+    /* jump to first plugin */
+    /* -------------------------------------------------- */
+
+    @media only screen {
+        /* jump button */
+        .jump_arrow {
+            position: relative;
+            top: 0.125em;
+            margin-right: 5px;
+        }
+    }
+
+    /* always hide jump button on print */
+    @media only print {
+        .jump_arrow {
+            display: none;
+        }
+    }
+
+    /* -------------------------------------------------- */
+    /* link highlight plugin */
+    /* -------------------------------------------------- */
+
+    @media only screen {
+        /* anything with data-highlighted attribute true */
+        [data-highlighted="true"] {
+            background: #ffeb3b;
+        }
+
+        /* anything with data-selected attribute true */
+        [data-selected="true"] {
+            background: #ff8a65 !important;
+        }
+
+        /* animation definition for glow */
+        @keyframes highlight_glow {
+            0% {
+                background: none;
+            }
+            10% {
+                background: #bbdefb;
+            }
+            100% {
+                background: none;
+            }
+        }
+
+        /* anything with data-glow attribute true */
+        [data-glow="true"] {
+            animation: highlight_glow 2s;
+        }
+    }
+
+    /* -------------------------------------------------- */
+    /* table of contents plugin */
+    /* -------------------------------------------------- */
+
+    @media only screen {
+        /* toc panel when open */
+        #toc_panel {
+            box-sizing: border-box;
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 260px;
+            max-width: 480px;
+            /* keep panel edge consistent distance away from "page" edge */
+            width: calc(((100vw - 8.5in) / 2) - 30px - 40px);
+            bottom: 0;
+            background: #ffffff;
+            border-right: solid 1px #bdbdbd;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+            z-index: 2;
+        }
+
+        /* toc panel when closed */
+        #toc_panel[data-open="false"] {
+            min-width: 60px;
+            width: 60px;
+            height: 60px;
+            border-bottom: solid 1px #bdbdbd;
+        }
+
+        /* toc panel header */
+        #toc_panel > h3 {
+            box-sizing: border-box;
+            height: 60px;
+            margin: 0;
+            padding: 20px;
+            border-bottom: solid 1px #bdbdbd;
+        }
+
+        /* toc panel when hovered */
+        #toc_panel > h3:hover {
+            cursor: pointer;
+        }
+
+        /* toc open/close header button */
+        #toc_button {
+            margin-right: 20px;
+            vertical-align: top;
+        }
+
+        /* toc header text */
+        #toc_header_text {
+            vertical-align: top;
+            font-weight: 600;
+            position: relative;
+            top: -4px;
+        }
+
+        /* hide toc list and header text when closed */
+        #toc_panel[data-open="false"] #toc_header_text,
+        #toc_panel[data-open="false"] > #toc_list {
+            display: none;
+        }
+
+        /* toc list of entries */
+        #toc_list {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 20px;
+            position: absolute;
+            top: calc(60px + 1px);
+            bottom: 0;
+            overflow: auto;
+        }
+
+        /* toc entry, link to section in document */
+        .toc_link {
+            display: block;
+            padding: 5px;
+            position: relative;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        /* toc entry when hovered or when "viewed" */
+        .toc_link:hover,
+        .toc_link[data-viewing="true"] {
+            background: #f5f5f5;
+        }
+
+        /* toc entry, level 1 indentation */
+        .toc_link[data-level="1"] {
+            margin-left: 0;
+        }
+
+        /* toc entry, level 2 indentation */
+        .toc_link[data-level="2"] {
+            margin-left: 20px;
+        }
+
+        /* toc entry, level 3 indentation */
+        .toc_link[data-level="3"] {
+            margin-left: 40px;
+        }
+
+        /* toc entry, level 4 indentation */
+        .toc_link[data-level="4"] {
+            margin-left: 60px;
+        }
+
+        /* toc entry bullets */
+        #toc_panel[data-bullets="true"] .toc_link[data-level]:before {
+            position: absolute;
+            left: -15px;
+            top: -1px;
+            font-size: 1.5em;
+        }
+
+        /* toc entry, level 2 bullet */
+        #toc_panel[data-bullets="true"] .toc_link[data-level="2"]:before {
+            content: "\2022";
+        }
+
+        /* toc entry, level 3 bullet */
+        #toc_panel[data-bullets="true"] .toc_link[data-level="3"]:before {
+            content: "\25AB";
+        }
+
+        /* toc entry, level 4 bullet */
+        #toc_panel[data-bullets="true"] .toc_link[data-level="4"]:before {
+            content: "-";
+        }
+    }
+
+    /* when on screen < 8.5in wide */
+    @media only screen and (max-width: 8.5in) {
+        /* push <body> ("page") element down to make room for toc icon */
+        .toc_body_nudge {
+            padding-top: 60px;
+        }
+
+        /* toc icon when panel closed and not hovered */
+        #toc_panel[data-open="false"]:not(:hover) {
+            background: rgba(255, 255, 255, 0.75);
+        }
+    }
+
+    /* always hide toc panel on print */
+    @media only print {
+        #toc_panel {
+            display: none;
+        }
+    }
+
+    /* -------------------------------------------------- */
+    /* lightbox plugin */
+    /* -------------------------------------------------- */
+
+    @media only screen {
+        /* regular <img> in document when hovered */
+        .lightbox_document_img:hover {
+            cursor: pointer;
+        }
+
+        .body_no_scroll {
+            overflow: hidden !important;
+        }
+
+        /* screen overlay */
+        #lightbox_overlay {
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.75);
+            z-index: 3;
+        }
+
+        /* middle area containing lightbox image */
+        #lightbox_image_container {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+            padding: 20px;
+        }
+
+        /* bottom area containing caption */
+        #lightbox_bottom_container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            min-height: 100px;
+            max-height: 100px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        /* image number info text box */
+        #lightbox_number_info {
+            position: absolute;
+            color: #ffffff;
+            font-weight: 600;
+            left: 2px;
+            top: 0;
+            z-index: 4;
+        }
+
+        /* zoom info text box */
+        #lightbox_zoom_info {
+            position: absolute;
+            color: #ffffff;
+            font-weight: 600;
+            right: 2px;
+            top: 0;
+            z-index: 4;
+        }
+
+        /* copy of image caption */
+        #lightbox_caption {
+            box-sizing: border-box;
+            display: inline-block;
+            width: 100%;
+            max-height: 100%;
+            padding: 10px 0;
+            text-align: center;
+            overflow-y: auto;
+            color: #ffffff;
+        }
+
+        /* navigation previous/next button */
+        .lightbox_button {
+            width: 100px;
+            height: 100%;
+            min-width: 100px;
+            min-height: 100%;
+            color: #ffffff;
+        }
+
+        /* navigation previous/next button when hovered */
+        .lightbox_button:hover {
+            background: none !important;
+        }
+
+        /* navigation button icon */
+        .lightbox_button > svg {
+            height: 25px;
+        }
+
+        /* figure auto-number */
+        #lightbox_caption > span:first-of-type {
+            font-weight: bold;
+            margin-right: 5px;
+        }
+
+        /* lightbox image when hovered */
+        #lightbox_img:hover {
+            cursor: grab;
+        }
+
+        /* lightbox image when grabbed */
+        #lightbox_img:active {
+            cursor: grabbing;
+        }
+    }
+
+    /* when on screen < 480px wide */
+    @media only screen and (max-width: 480px) {
+        /* make navigation buttons skinnier on small screens to make more room for caption text */
+        .lightbox_button {
+            width: 50px;
+            min-width: 50px;
+        }
+    }
+
+    /* always hide lightbox on print */
+    @media only print {
+        #lightbox_overlay {
+            display: none;
+        }
+    }
+
+    /* -------------------------------------------------- */
+    /* hypothesis (annotations) plugin */
+    /* -------------------------------------------------- */
+
+    /* side panel */
+    .annotator-frame {
+        width: 280px !important;
+        z-index: 0 !important;
+    }
+
+    /* match highlight color to rest of theme */
+    .annotator-highlights-always-on .annotator-hl {
+        background-color: #ffeb3b !important;
+    }
+
+    /* match focused color to rest of theme */
+    .annotator-hl.annotator-hl-focused {
+        background-color: #ff8a65 !important;
+    }
+
+    /* match bucket bar color to rest of theme */
+    .annotator-bucket-bar {
+        background: #f5f5f5 !important;
+    }
+
+    /* always hide toolbar and tooltip on print */
+    @media only print {
+        .annotator-frame {
+            display: none !important;
+        }
+
+        hypothesis-adder {
+            display: none !important;
+        }
+    }
+</style>

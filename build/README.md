@@ -11,7 +11,7 @@ For example, use the command `BUILD_DOCX=true sh build/build.sh`.
 To export DOCX for all Travis builds, set a [Travis environment variable](https://docs.travis-ci.com/user/environment-variables/#Defining-Variables-in-Repository-Settings).
 Currently, equation numbers via `pandoc-eqnos` are not supported for DOCX output.
 There is varying support for embedding images in DOCX output.
-Please reference [Pull Request #40](https://github.com/greenelab/manubot-rootstock/pull/40) for possible solutions and continued discussion.
+Please reference [Pull Request #40](https://github.com/manubot/rootstock/pull/40) for possible solutions and continued discussion.
 
 ## Environment
 

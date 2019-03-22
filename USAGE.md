@@ -1,6 +1,6 @@
 # Manubot usage guidelines
 
-This repository uses [Manubot](https://github.com/greenelab/manubot-rootstock) to automatically produce a manuscript from the source in the [`content`](content) directory.
+This repository uses [Manubot](https://manubot.org) to automatically produce a manuscript from the source in the [`content`](content) directory.
 
 ## Manubot markdown
 
@@ -76,17 +76,24 @@ Therefore, citations must be of the following form: `@source:identifier`, where 
 When choosing which source to use for a citation, we recommend the following order:
 
 1. DOI (Digital Object Identifier), cite like `@doi:10.15363/thinklab.4`.
+   Shortened versions of DOIs can be created at [shortdoi.org](http://shortdoi.org/).
+   shortDOIs begin with `10/` rather than `10.` and can also be cited.
+   For example, Manubot will expand `@doi:10/993` to the DOI above.
+   We suggest using shortDOIs to cite DOIs containing forbidden characters, such as `(` or `)`.
 2. PubMed Central ID, cite like `@pmcid:PMC4497619`.
 3. PubMed ID, cite like `@pmid:26158728`.
 4. _arXiv_ ID, cite like `@arxiv:1508.06576v2`.
-5. URL / webpage, cite like `@url:http://openreview.net/pdf?id=Sk-oDY9ge`.
-6. For references that do not have any of the persistent identifiers above, use a raw citation like `@raw:old-manuscript`.
-Metadata for raw citations must be provided manually.
+5. ISBN (International Standard Book Number), cite like `@isbn:9781339919881`.
+6. URL / webpage, cite like `@url:https://nyti.ms/1QUgAt1`.
+7. Wikidata Items, cite like `@wikidata:Q50051684`.
+   Note that anyone can edit or add records on [Wikidata](https://www.wikidata.org), so users are encouraged to contribute metadata for hard-to-cite works to Wikidata as an alternative to using a `raw` citation.
+8. For references that do not have any of the persistent identifiers above, use a raw citation like `@raw:old-manuscript`.
+   Metadata for raw citations must be provided manually.
 
 Cite multiple items at once like:
 
 ```md
-Here is a sentence with several citations [@doi:10.15363/thinklab.4; @pmid:26158728; @arxiv:1508.06576].
+Here is a sentence with several citations [@doi:10.15363/thinklab.4; @pmid:26158728; @arxiv:1508.06576; @isbn:9780394603988].
 ```
 
 Note that multiple citations must be semicolon separated.
@@ -98,9 +105,9 @@ For example, the following citations all refer to the same study, but will be tr
 The system also supports citation tags, which are recommended for the following applications:
 
 1. A citation's identifier contains forbidden characters, such as `;` or `=`, or ends with a non-alphanumeric character other than `/`.
-  In these instances, you must use a tag.
+   In these instances, you must use a tag.
 2. A single reference is cited many times.
-  Therefore, it might make sense to define a tag, so if the citation updates (e.g. a newer version becomes available), only a single change is required.
+   Therefore, it might make sense to define a tag, so if the citation updates (e.g. a newer version becomes available), only a single change is required.
 
 Tags should be defined in [`content/citation-tags.tsv`](content/citation-tags.tsv).
 If `citation-tags.tsv` defines the tag `study-x`, then this study can be cited like `@tag:study-x`, for example, `[@tag:Zhou2015_deep_sea]`.
@@ -162,7 +169,7 @@ Note that `affiliations` should be a list to allow for multiple affiliations per
 
 ## Manubot feedback
 
-If you experience any issues with the Manubot or would like to contribute to its source code, please visit [`greenelab/manubot`](https://github.com/greenelab/manubot) or [`greenelab/manubot-rootstock`](https://github.com/greenelab/manubot-rootstock).
+If you experience any issues with the Manubot or would like to contribute to its source code, please visit [`manubot/manubot`](https://github.com/manubot/manubot) or [`manubot/rootstock`](https://github.com/manubot/rootstock).
 
 ## Examples
 
@@ -170,14 +177,18 @@ For additional examples, check out existing manuscripts that use the Manubot (so
 
 + Satoshi Nakamoto's Bitcoin Whitepaper ([source](https://github.com/dhimmel/bitcoin-whitepaper/), [manuscript](https://dhimmel.github.io/bitcoin-whitepaper/), [commentary](https://steemit.com/manubot/@dhimmel/how-i-used-the-manubot-to-reproduce-the-bitcoin-whitepaper))
 + The Sci-Hub Coverage Study ([source](https://github.com/greenelab/scihub-manuscript), [manuscript](https://greenelab.github.io/scihub-manuscript/))
++ The GimmeMotifs manscript on transcription factor motif analysis ([source](https://github.com/simonvh/gimmemotifs-manuscript), [manuscript](https://simonvh.github.io/gimmemotifs-manuscript/manuscript.pdf))
 + A Report for the Vagelos Scholars Program by Michael Zietz ([source](https://github.com/zietzm/Vagelos2017), [manuscript](https://zietzm.github.io/Vagelos2017/))
 + The Deep Review ([source](https://github.com/greenelab/deep-review), [manuscript](https://greenelab.github.io/deep-review/))
++ Ten Quick Tips for Deep Learning ([source](https://github.com/Benjamin-Lee/deep-rules), [manuscript](https://benjamin-lee.github.io/deep-rules/))
 + The Meta Review ([source](https://github.com/greenelab/meta-review), [manuscript](https://greenelab.github.io/meta-review/))
++ A review of Network Methods for Multiomic Data Integration ([source](https://github.com/zietzm/integration-review), [manuscript](https://zietzm.github.io/integration-review/))
 + The Project Rephetio Manuscript ([source](https://github.com/dhimmel/rephetio-manuscript/), [manuscript](https://dhimmel.github.io/rephetio-manuscript/))
 + A Literature Review for Project Planning by David Slochower ([source](https://github.com/slochower/synthetic-motor-literature), [manuscript](https://slochower.github.io/synthetic-motor-literature/))
 + The TFSEE Manuscript by Venkat Malladi et al. ([source](https://github.com/vsmalladi/tfsee-manuscript), [manuscript](https://vsmalladi.github.io/tfsee-manuscript/))
 + Creating a Global Emissions Timeseries dataset by Robert Gieseke et al. ([source](https://github.com/openclimatedata/global-emissions), [manuscript](https://openclimatedata.github.io/global-emissions/))
 + The yt 3.0 methods paper ([source](https://github.com/yt-project/yt-3.0-paper), [manuscript](https://yt-project.github.io/yt-3.0-paper/))
++ The TPOT-DS Manuscript (includes Hypothesis annotations, [source](https://github.com/trang1618/tpot-ds-ms), [manuscript](https://trang1618.github.io/tpot-ds-ms/))
 + The Manubot 2018 Development Proposal ([source](https://github.com/greenelab/manufund-2018), [manuscript](https://greenelab.github.io/manufund-2018/))
 
 If you are using the Manubot, feel free to submit a pull request to add your manuscript to the list above.
