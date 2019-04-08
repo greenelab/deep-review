@@ -22,15 +22,15 @@
             // which types of elements to add links for, in
             // "document.querySelector" format
             typesQuery: 'h1, h2, h3',
+            // whether default behavior is to be closed ('false'), open
+            // ('true'), or only open when screen wide enough to fit panel
+            // ('auto'). note: still always starts closed when page loads.
+            open: 'auto',
             // if list item is more than this many characters, text will be
             // truncated
             charLimit: '50',
             // whether or not to show bullets next to each toc item
             bullets: 'false',
-            // whether default behavior is to be closed ('false'), open
-            // ('true'), or only open when screen wide enough to fit panel
-            // ('auto')
-            open: 'false',
             // whether plugin is on or not
             enabled: 'true'
         };
@@ -52,13 +52,14 @@
             makeEntries(panel);
             document.body.insertBefore(panel, document.body.firstChild);
 
-            openOrClosePanel();
+            closePanel();
 
             // attach click, scroll, and hash change listeners to window
             window.addEventListener('click', onClick);
             window.addEventListener('touchstart', onClick);
             window.addEventListener('scroll', onScroll);
             window.addEventListener('hashchange', onScroll);
+            window.addEventListener('keyup', onKeyUp);
             onScroll();
 
             // add class to push document body down out of way of toc button
@@ -97,6 +98,16 @@
         // when window is scrolled or hash changed
         function onScroll() {
             highlightViewed();
+        }
+
+        // when key pressed
+        function onKeyUp(event) {
+            if (!event || !event.key)
+                return;
+
+            // close on esc
+            if (event.key === 'Escape')
+                closePanel();
         }
 
         // find entry of currently viewed document section in toc and highlight
@@ -152,7 +163,8 @@
                 panel.dataset.bullets = 'true';
 
             // create header
-            const header = document.createElement('h3');
+            const header = document.createElement('div');
+            header.id = 'toc_header';
 
             // create toc button
             const button = document.createElement('button');
@@ -163,9 +175,8 @@
             button.classList.add('icon_button');
 
             // create header text
-            const text = document.createElement('span');
+            const text = document.createElement('h3');
             text.innerHTML = 'Table of Contents';
-            text.id = 'toc_header_text';
 
             // create container for toc list
             const list = document.createElement('div');
@@ -197,18 +208,18 @@
                 const link = document.createElement('a');
                 link.classList.add('toc_link');
                 switch (element.tagName.toLowerCase()) {
-                case 'h1':
-                    link.dataset.level = '1';
-                    break;
-                case 'h2':
-                    link.dataset.level = '2';
-                    break;
-                case 'h3':
-                    link.dataset.level = '3';
-                    break;
-                case 'h4':
-                    link.dataset.level = '4';
-                    break;
+                    case 'h1':
+                        link.dataset.level = '1';
+                        break;
+                    case 'h2':
+                        link.dataset.level = '2';
+                        break;
+                    case 'h3':
+                        link.dataset.level = '3';
+                        break;
+                    case 'h4':
+                        link.dataset.level = '4';
+                        break;
                 }
                 link.title = element.innerText;
                 let text = element.innerText;

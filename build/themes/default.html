@@ -26,9 +26,9 @@
         body {
             position: relative;
             box-sizing: border-box;
-            max-width: 8.5in;
             font-size: 12pt;
             line-height: 1.5;
+            max-width: 8.5in;
             margin: 20px auto;
             padding: 40px;
             border-radius: 5px;
@@ -102,6 +102,12 @@
     /* links */
     a {
         color: #2196f3;
+    }
+
+    /* normal links (not empty, not button link, not syntax highlighting link) */
+    a:not(:empty):not(.button):not(.sourceLine) {
+        padding-left: 1px;
+        padding-right: 1px;
     }
 
     /* superscripts and subscripts */
@@ -228,7 +234,7 @@
     /* header row and even rows */
     th,
     tr:nth-child(2n) {
-        background-color: #f5f5f5;
+        background-color: #fafafa;
     }
 
     /* odd rows */
@@ -533,12 +539,6 @@
             padding: 5px;
         }
 
-        /* shrink button icons */
-        button > svg,
-        a > svg {
-            transform: scale(0.85);
-        }
-
         /* shrink font awesome icons */
         i.fas,
         i.fab,
@@ -776,6 +776,7 @@
             border: solid 1px #bdbdbd;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
             background: #ffffff;
+            word-break: break-word;
         }
 
         /* tooltip copy of paragraphs and figures */
@@ -880,19 +881,13 @@
     /* -------------------------------------------------- */
 
     @media only screen {
-        /* toc panel when open */
+        /* toc panel */
         #toc_panel {
             box-sizing: border-box;
             position: fixed;
             top: 0;
             left: 0;
-            min-width: 260px;
-            max-width: 480px;
-            /* keep panel edge consistent distance away from "page" edge */
-            width: calc(((100vw - 8.5in) / 2) - 30px - 40px);
-            bottom: 0;
             background: #ffffff;
-            border-right: solid 1px #bdbdbd;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
             z-index: 2;
         }
@@ -902,39 +897,48 @@
             min-width: 60px;
             width: 60px;
             height: 60px;
+            border-right: solid 1px #bdbdbd;
             border-bottom: solid 1px #bdbdbd;
+        }
+
+        /* toc panel when open */
+        #toc_panel[data-open="true"] {
+            min-width: 260px;
+            max-width: 480px;
+            /* keep panel edge consistent distance away from "page" edge */
+            width: calc(((100vw - 8.5in) / 2) - 30px - 40px);
+            bottom: 0;
+            border-right: solid 1px #bdbdbd;
         }
 
         /* toc panel header */
-        #toc_panel > h3 {
+        #toc_header {
             box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
             height: 60px;
             margin: 0;
             padding: 20px;
-            border-bottom: solid 1px #bdbdbd;
         }
 
-        /* toc panel when hovered */
-        #toc_panel > h3:hover {
+        /* toc panel header when hovered */
+        #toc_header:hover {
             cursor: pointer;
+        }
+
+        /* toc panel header when panel open */
+        #toc_panel[data-open="true"] > #toc_header {
+            border-bottom: solid 1px #bdbdbd;
         }
 
         /* toc open/close header button */
         #toc_button {
             margin-right: 20px;
-            vertical-align: top;
-        }
-
-        /* toc header text */
-        #toc_header_text {
-            vertical-align: top;
-            font-weight: 600;
-            position: relative;
-            top: -4px;
         }
 
         /* hide toc list and header text when closed */
-        #toc_panel[data-open="false"] #toc_header_text,
+        #toc_panel[data-open="false"] > #toc_header > *:not(#toc_button),
         #toc_panel[data-open="false"] > #toc_list {
             display: none;
         }
