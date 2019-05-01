@@ -198,9 +198,8 @@ If you are using the Manubot, feel free to submit a pull request to add your man
 To cite the Manubot project or for more information on its design and history, see `@url:https://greenelab.github.io/meta-review/`:
 
 > **Open collaborative writing with Manubot**<br>
-Daniel S. Himmelstein, David R. Slochower, Venkat S. Malladi, Casey S.
-Greene, Anthony Gitter<br>
-_Manubot Preprint_ (2018) <https://greenelab.github.io/meta-review/>
+Daniel S. Himmelstein, Vincent Rubinetti, David R. Slochower, Dongbo Hu, Venkat S. Malladi, Casey S. Greene, Anthony Gitter<br>
+_Manubot Preprint_ (2019) <https://greenelab.github.io/meta-review/>
 
 ## Acknowledgments
 
