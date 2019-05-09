@@ -10,7 +10,7 @@ Asgari	doi:10.1371/journal.pone.0141287
 blast	doi:10.1016/S0022-2836(05)80360-2
 Angermueller2016_dl_review	doi:10.15252/msb.20156651
 Angermueller2016_single_methyl	doi:10.1186/s13059-017-1189-z
-Angermueller2017  doi:10.1186/s13059-017-1189-z
+Angermueller2017	doi:10.1186/s13059-017-1189-z
 Artemov2016_clinical	doi:10.1101/095653
 Arvaniti2016_rare_subsets	doi:10.1101/046508
 Bach2015_on	doi:10.1371/journal.pone.0130140
@@ -28,7 +28,7 @@ Bracken2016_mirna	doi:10.1038/nrg.2016.134
 Boza	doi:10.1371/journal.pone.0178751
 Buggenthin2017_imaged_lineage	doi:10.1038/nmeth.4182
 Burlina2016_amd	doi:10.1109/ISBI.2016.7493240
-Chatterjee2018  arxiv:1807.09617
+Chatterjee2018	arxiv:1807.09617
 Caruana2014_need	arxiv:1312.6184
 Caruana2015_intelligible	url:https://dl.acm.org/citation.cfm?id=2788613
 Chaudhary2017_multiom_liver_cancer	doi:10.1101/114892
@@ -48,7 +48,7 @@ Codella2016_ensemble_melanoma	arxiv:1610.04662
 Consortium2012_encode	doi:10.1038/nature11247
 CudNN	arxiv:1410.0759
 Dahl2014_multi_qsar	arxiv:1406.1231
-Darst2018 doi:10.1186/s12863-018-0646-3
+Darst2018	doi:10.1186/s12863-018-0646-3
 Dean2012_nips_downpour	url:http://research.google.com/archive/large_deep_networks_nips2012.html
 DeepChem	url:https://github.com/deepchem/deepchem
 Deming2016_genetic	arxiv:1605.07156
@@ -73,7 +73,7 @@ Esteva2017_skin_cancer_nature	doi:10.1038/nature21056
 Faruqi	url:http://alifar76.github.io/sklearn-metrics/
 Finnegan2017_maximum	doi:10.1101/105957
 Fong2017_perturb	doi:10.1109/ICCV.2017.371
-Fu2019  doi:10.1109/TCBB.2019.2909237
+Fu2019	doi:10.1109/TCBB.2019.2909237
 Gal2015_dropout	arxiv:1506.02142
 Gaublomme2015_th17	doi:10.1016/j.cell.2015.11.009
 Gargeya2017_dr	doi:10.1016/j.ophtha.2017.02.008
@@ -104,7 +104,7 @@ Hubara2016_qnn	arxiv:1609.07061
 Huddar2016_predicting	doi:10.1109/ACCESS.2016.2618775
 Hughes2016_macromol_react	doi:10.1021/acscentsci.6b00162
 Iglovikov2017_baa	doi:10.1101/234120
-Islam2018 doi:10.1186/s12919-018-0121-1
+Islam2018	doi:10.1186/s12919-018-0121-1
 Ithapu2015_efficient	doi:10.1016/j.jalz.2015.01.010
 Jafari2016_skin_lesions	doi:10.1007/s11548-017-1567-8
 Jha2017_integrative_models	doi:10.1101/104869
@@ -126,12 +126,12 @@ Koh2016_denoising	doi:10.1101/052118
 Koh2017_understanding	arxiv:1703.04730
 Kooi2016_mamm_lesions	doi:10.1016/j.media.2016.07.007
 Kooi2017_mamm_tl	doi:10.1002/mp.12110
-Korfiatis2017 doi:10.1007/s10278-017-0009-z
+Korfiatis2017	doi:10.1007/s10278-017-0009-z
 Kraus2017_deeploc	doi:10.15252/msb.20177551
 Krizhevsky2013_nips_cnn	url:https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf
 Krizhevsky2014_weird_trick	arxiv:1404.5997
-Khwaja2017  doi:10.1109/BIOCAS.2017.8325078
-Khwaja2018  arxiv:1810.01243
+Khwaja2017	doi:10.1109/BIOCAS.2017.8325078
+Khwaja2018	arxiv:1810.01243
 Lacey2016_dl_fpga	arxiv:1602.04283
 Lakhani2017_radiography	doi:10.1148/radiol.2017162326
 Lanchantin2016_motif	arxiv:1608.03644
@@ -139,7 +139,7 @@ Lee2016_deeptarget	arxiv:1603.09123v2
 Lee2016_emr_oct_amd	doi:10.1101/094276
 Lei2016_rationalizing	arxiv:1606.04155
 Leibig2016_dr	doi:10.1101/084210
-Levy-Jurgenson2018  doi:10.1101/491357
+Levy-Jurgenson2018	doi:10.1101/491357
 Li2014_minibatch	doi:10.1145/2623330.2623612
 Li2016_variation	doi:10.1126/science.aad9417
 Liang2015_exprs_cancer	doi:10.1109/TCBB.2014.2377729
@@ -171,7 +171,7 @@ McHardy2	doi:10.7717/peerj.1603
 Metaphlan	doi:10.1038/nmeth.2066
 Meng2016_mllib	arxiv:1505.06807
 Min2016_deepenhancer	doi:10.1109/BIBM.2016.7822593
-Momeni2018  doi:10.1101/438341
+Momeni2018	doi:10.1101/438341
 Moritz2015_sparknet	arxiv:1511.06051
 Mordvintsev2015_inceptionism	url:http://googleresearch.blogspot.co.uk/2015/06/inceptionism-going-deeper-into-neural.html
 Mrzelj	url:https://repozitorij.uni-lj.si/IzpisGradiva.php?id=85515
@@ -179,7 +179,7 @@ matis	doi:10.1016/S0097-8485(96)80015-5
 nbc	doi:10.1093/bioinformatics/btq619
 Murdoch2017_automatic	arxiv:1702.02540
 Nemati2016_rl	doi:10.1109/EMBC.2016.7591355
-Ni2018  doi:10.1101/385849
+Ni2018	doi:10.1101/385849
 Nguyen2014_adversarial	arxiv:1412.1897v4
 Ngiam2011	url:https://ai.stanford.edu/~ang/papers/icml11-MultimodalDeepLearning.pdf
 Nie2016_3d_survival	doi:10.1007/978-3-319-46723-8_25
@@ -191,9 +191,9 @@ onecodex	url:https://www.onecodex.com/
 Papernot2017_pate	url:https://openreview.net/forum?id=HkwoSDPgg
 Park2016_deepmirgene	arxiv:1605.00017
 Parnamaa2017	doi:10.1534/g3.116.033654
-Pan2018 doi:10.1101/438218
+Pan2018	doi:10.1101/438218
 Pawlowski2016	doi:10.1101/085118
-Peng2019  doi:10.1101/527044.
+Peng2019	doi:10.1101/527044.
 Pereira2016_docking	doi:10.1021/acs.jcim.6b00355
 PerezSianes2016_screening	doi:10.1007/978-3-319-40126-3_2
 Phymm	doi:10.1038/nmeth.1358
@@ -202,7 +202,7 @@ Pratt2016_dr	doi:10.1016/j.procs.2016.07.014
 Quang2017_factor	doi:10.1101/151274
 Qin2017_onehot	doi:10.1371/journal.pcbi.1005403
 Qiu2017_graph_embedding	doi:10.1101/110668
-Qiu2018 doi:10.1101/406066
+Qiu2018	doi:10.1101/406066
 Ragoza2016_protein	arxiv:1612.02751
 RAD2010_view_cc	doi:10.1145/1721654.1721672
 Radford_dcgan	arxiv:1511.06434v2
@@ -269,7 +269,7 @@ Vera2016_sc_analysis	doi:10.1146/annurev-genet-120215-034854
 Vervier	doi:10.1093/bioinformatics/btv683
 Wallach2015_atom_net	arxiv:1510.02855
 Wang2016_breast_cancer	arxiv:1606.05718
-Wang2016_methyl doi:10.1038/srep19598
+Wang2016_methyl	doi:10.1038/srep19598
 Wang2016_protein_contact	doi:10.1371/journal.pcbi.1005324
 Wasson1985_clinical	doi:10.1056/NEJM198509263131306
 WayGreene2017_eval	arxiv:1711.04828
