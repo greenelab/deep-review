@@ -96,6 +96,9 @@ Hinton2015_dk	arxiv:1503.02531v1
 Hochreiter	doi:10.1093/bioinformatics/btm247
 Hoff	doi:10.1093/nar/gkp327
 Horton1992_assessment	doi:10.1093/nar/20.16.4331
+Horvath2013	doi:10.1186/gb-2013-14-10-r115
+Houseman2012 doi:10.1186/1471-2105-13-86
+Houseman2016	doi:10.1186/s12859-016-1140-4
 Hubara2016_qnn	arxiv:1609.07061
 Huddar2016_predicting	doi:10.1109/ACCESS.2016.2618775
 Hughes2016_macromol_react	doi:10.1021/acscentsci.6b00162
@@ -205,6 +208,7 @@ Romero2017_diet	url:https://openreview.net/pdf?id=Sk-oDY9ge
 Rosenberg2015_synthetic_seqs	doi:10.1016/j.cell.2015.09.054
 Russakovsky2015_imagenet	doi:10.1007/s11263-015-0816-y
 Sa2015_buckwild	pmcid:PMC4907892
+Salas2018	doi:10.1186/s13059-018-1448-7
 Salzberg	doi:10.1186/1471-2105-11-544
 Schatz2010_dna_cloud	doi:10.1038/nbt0710-691
 Schmidhuber2014_dnn_overview	doi:10.1016/j.neunet.2014.09.003
@@ -247,6 +251,8 @@ Tan2015_adage	doi:10.1128/mSystems.00025-15
 Tan2016_eadage	doi:10.1101/078659
 TAC-ELM	doi:10.1142/S0219720012500151
 TensorFlow	arxiv:1603.04467
+Teschendorff2017	doi:10.2217/epi-2016-0153
+Titus2017	doi:10.1093/hmg/ddx275
 Torracinta2016_deep_snp	doi:10.1101/097469
 Torracinta2016_sim	doi:10.1101/079087
 Tu1996_anns	doi:10.1016/S0895-4356(96)00002-9
