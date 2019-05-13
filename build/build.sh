@@ -83,8 +83,9 @@ if [ "$BUILD_PDF" != "false" ] && [ -n "$DOCKER_EXISTS" ]; then
   cp -R -L content/images output/
   docker run \
     --rm \
-    --volume `pwd`/output:/converted/ \
-    --security-opt seccomp:unconfined \
+    --shm-size=1g \
+    --volume=`pwd`/output:/converted/ \
+    --security-opt=seccomp:unconfined \
     arachnysdocker/athenapdf:2.16.0 \
     athenapdf \
     --delay=2000 \
