@@ -16,6 +16,11 @@
   <macro name="author">
     <names variable="author">
       <name initialize="false" initialize-with="" et-al-min="12" et-al-use-first="10" et-al-use-last="true"/>
+      <label form="long" prefix=" (" suffix=")"/>
+      <substitute>
+        <names variable="editor"/>
+        <text macro="venue"/>
+      </substitute>
     </names>
   </macro>
   <macro name="venue">
