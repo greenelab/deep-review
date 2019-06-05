@@ -21,7 +21,7 @@ __pycache__/
 # Misc temporary files
 *.bak
 
-# Operating system specific files
+# System specific files
 
 ## Linux
 *~
@@ -35,3 +35,6 @@ __pycache__/
 ## Windows
 Thumbs.db
 [Dd]esktop.ini
+
+## Text Editors
+.vscode
