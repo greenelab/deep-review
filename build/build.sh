@@ -51,7 +51,7 @@ pandoc --verbose \
   $INPUT_PATH
 
 # Return null if docker command is missing, otherwise return path to docker
-DOCKER_EXISTS=`command -v docker`
+DOCKER_EXISTS="$(command -v docker || true)"
 
 # Create PDF output (unless BUILD_PDF environment variable equals "false")
 if [ "$BUILD_PDF" != "false" ] && [ -z "$DOCKER_EXISTS" ]; then
