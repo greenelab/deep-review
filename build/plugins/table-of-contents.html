@@ -22,15 +22,15 @@
             // which types of elements to add links for, in
             // "document.querySelector" format
             typesQuery: 'h1, h2, h3',
+            // whether default behavior is to be closed ('false'), open
+            // ('true'), or only open when screen wide enough to fit panel
+            // ('auto'). note: still always starts closed when page loads.
+            open: 'auto',
             // if list item is more than this many characters, text will be
             // truncated
             charLimit: '50',
             // whether or not to show bullets next to each toc item
             bullets: 'false',
-            // whether to always start closed ('false'), always start opened
-            // ('true'), or start open when screen wide enough to fit panel
-            // ('auto')
-            startOpen: 'false',
             // whether plugin is on or not
             enabled: 'true'
         };
@@ -52,42 +52,62 @@
             makeEntries(panel);
             document.body.insertBefore(panel, document.body.firstChild);
 
-            // start panel open/closed based on option
-            if (
-                options.startOpen === 'true' ||
-                (options.startOpen === 'auto' && isSmallScreen())
-            )
-                openPanel();
-            else
-                closePanel();
+            closePanel();
 
             // attach click, scroll, and hash change listeners to window
             window.addEventListener('click', onClick);
             window.addEventListener('touchstart', onClick);
             window.addEventListener('scroll', onScroll);
             window.addEventListener('hashchange', onScroll);
+            window.addEventListener('keyup', onKeyUp);
             onScroll();
 
             // add class to push document body down out of way of toc button
             document.body.classList.add('toc_body_nudge');
         }
 
-        // determine if on mobile-like device with small screen
+        // determine if screen wide enough to fit toc panel
         function isSmallScreen() {
-            const page = window.getComputedStyle(document.body);
-            const width =
-                parseInt(page.width) || parseInt(page.maxWidth) || 816;
-            return width + 320 < window.innerWidth;
+            // in default theme:
+            // 816px = 8.5in = width of "page" (<body>) element
+            // 260px = min width of toc panel (*2 for both sides of <body>)
+            return window.innerWidth < 816 + 260 * 2;
+        }
+
+        // open/close panel based on option and screen size
+        function openOrClosePanel() {
+            if (
+                options.open === 'true' ||
+                (options.open === 'auto' && !isSmallScreen())
+            )
+                openPanel();
+            else
+                closePanel();
         }
 
         // when mouse is clicked anywhere in window
         function onClick() {
-            closePanel();
+            const panel = document.getElementById('toc_panel');
+            if (!panel)
+                return;
+
+            if (panel.dataset.open === 'true')
+                openOrClosePanel();
         }
 
         // when window is scrolled or hash changed
         function onScroll() {
             highlightViewed();
+        }
+
+        // when key pressed
+        function onKeyUp(event) {
+            if (!event || !event.key)
+                return;
+
+            // close on esc
+            if (event.key === 'Escape')
+                closePanel();
         }
 
         // find entry of currently viewed document section in toc and highlight
@@ -117,6 +137,7 @@
                     elementsWithIds.push(element);
             }
 
+
             // get first or previous element in top half of view
             for (let i = 0; i < elementsWithIds.length; i++) {
                 const element = elementsWithIds[i];
@@ -142,7 +163,8 @@
                 panel.dataset.bullets = 'true';
 
             // create header
-            const header = document.createElement('h3');
+            const header = document.createElement('div');
+            header.id = 'toc_header';
 
             // create toc button
             const button = document.createElement('button');
@@ -153,9 +175,8 @@
             button.classList.add('icon_button');
 
             // create header text
-            const text = document.createElement('span');
+            const text = document.createElement('h3');
             text.innerHTML = 'Table of Contents';
-            text.id = 'toc_header_text';
 
             // create container for toc list
             const list = document.createElement('div');
@@ -187,18 +208,18 @@
                 const link = document.createElement('a');
                 link.classList.add('toc_link');
                 switch (element.tagName.toLowerCase()) {
-                case 'h1':
-                    link.dataset.level = '1';
-                    break;
-                case 'h2':
-                    link.dataset.level = '2';
-                    break;
-                case 'h3':
-                    link.dataset.level = '3';
-                    break;
-                case 'h4':
-                    link.dataset.level = '4';
-                    break;
+                    case 'h1':
+                        link.dataset.level = '1';
+                        break;
+                    case 'h2':
+                        link.dataset.level = '2';
+                        break;
+                    case 'h3':
+                        link.dataset.level = '3';
+                        break;
+                    case 'h4':
+                        link.dataset.level = '4';
+                        break;
                 }
                 link.title = element.innerText;
                 let text = element.innerText;
@@ -233,8 +254,7 @@
 
         // when link is clicked
         function onLinkClick() {
-            if (isSmallScreen())
-                closePanel();
+            openOrClosePanel();
         }
 
         // open panel if closed, close if opened

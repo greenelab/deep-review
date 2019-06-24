@@ -30,3 +30,6 @@ conda env create --file environment.yml
 Activate with `conda activate manubot` (assumes `conda` version of [at least](https://github.com/conda/conda/blob/9d759d8edeb86569c25f6eb82053f09581013a2a/CHANGELOG.md#440-2017-12-20) 4.4).
 The environment should successfully install on both Linux and macOS.
 However, it will fail on Windows due to the [`pango`](https://anaconda.org/conda-forge/pango) dependency.
+
+Because the build process is dependent on having the appropriate version of the `manubot` Python package, it is necessary to use the version specified in `environment.yml`.
+The latest `manubot` release on PyPI may not be compatible with the latest version of this rootstock repository.
