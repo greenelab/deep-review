@@ -23,9 +23,6 @@
             // whether user must click off to close tooltip instead of just
             // un-hovering
             clickClose: 'false',
-            // whether to keep tooltip horizontal position when moving between
-            // prev/next occurrences
-            keepHorizontal: 'true',
             // delay (in ms) between opening and closing tooltip
             delay: '100',
             // whether plugin is on or not
@@ -106,8 +103,10 @@
             // regular link click (and navigation) on second tap
             if (event.target === document.activeElement)
                 event.target.click();
-            else
+            else {
+                document.activeElement.blur();
                 event.target.focus();
+            }
             if (event.cancelable)
                 event.preventDefault();
             event.stopPropagation();
@@ -124,22 +123,27 @@
             if (!event || !event.key)
                 return;
 
-            // trigger click of prev/next button
             switch (event.key) {
-            case 'ArrowLeft':
-                const prevButton = document.getElementById(
-                    'tooltip_prev_button'
-                );
-                if (prevButton)
-                    prevButton.click();
-                break;
-            case 'ArrowRight':
-                const nextButton = document.getElementById(
-                    'tooltip_next_button'
-                );
-                if (nextButton)
-                    nextButton.click();
-                break;
+                // trigger click of prev button
+                case 'ArrowLeft':
+                    const prevButton = document.getElementById(
+                        'tooltip_prev_button'
+                    );
+                    if (prevButton)
+                        prevButton.click();
+                    break;
+                // trigger click of next button
+                case 'ArrowRight':
+                    const nextButton = document.getElementById(
+                        'tooltip_next_button'
+                    );
+                    if (nextButton)
+                        nextButton.click();
+                    break;
+                // close on esc
+                case 'Escape':
+                    closeTooltip();
+                    break;
             }
         }
 
@@ -181,12 +185,8 @@
 
         // open tooltip
         function openTooltip(link) {
-            // if setting is on and already-open tooltip can be found, store
-            // original x position of tooltip
-            let prevX;
-            const prevTooltip = document.getElementById('tooltip');
-            if (options.keepHorizontal === 'true' && prevTooltip)
-                prevX = getRectInPage(prevTooltip).left;
+            // delete tooltip if it exists, start fresh
+            closeTooltip();
 
             // make tooltip element
             const tooltip = makeTooltip(link);
@@ -205,7 +205,7 @@
 
             // position tooltip
             const position = function() {
-                positionTooltip(link, prevX);
+                positionTooltip(link);
             };
             position();
 
@@ -224,9 +224,6 @@
 
         // make tooltip
         function makeTooltip(link) {
-            // delete tooltip if it exists, start fresh
-            closeTooltip();
-
             // get target element that link points to
             const source = getSource(link);
 
@@ -421,7 +418,7 @@
         // when prev/next arrow button is clicked
         function onPrevNextClick(link, prevNextLink) {
             if (link && prevNextLink)
-                goToElement(prevNextLink, getRectInView(link).top);
+                goToElement(prevNextLink, window.innerHeight * 0.5);
         }
 
         // scroll to and focus element
@@ -435,6 +432,7 @@
             // trigger any function listening for "onscroll" event
             window.dispatchEvent(new Event('scroll'));
             window.scrollTo(0, y);
+            document.activeElement.blur();
             element.focus();
         }
 

@@ -2,32 +2,33 @@ name: manubot
 channels:
   - conda-forge
 dependencies:
-  - conda-forge::cairo=1.14.12
-  - conda-forge::cairocffi=0.8.0
-  - conda-forge::cffi=1.11.5
-  - conda-forge::ghp-import=0.5.5
-  - conda-forge::jinja2=2.10
-  - conda-forge::jsonschema=2.6.0
-  - conda-forge::pandas=0.24.0
-  - conda-forge::pandoc=2.6
-  - conda-forge::pango=1.40.14
-  - conda-forge::psutil=5.5.1
-  - conda-forge::python=3.6.7
-  - conda-forge::pyyaml=3.13
-  - conda-forge::requests=2.21.0
-  - conda-forge::watchdog=0.8.3
+  - cairo=1.14.12
+  - cairocffi=0.8.0
+  - cffi=1.12.3
+  - ghp-import=0.5.5
+  - jinja2=2.10
+  - jsonschema=3.0.1
+  - pandas=0.24.2
+  - pandoc=2.7.2
+  - pango=1.40.14
+  - pip=19.1
+  - psutil=5.6.2
+  - python=3.6.7
+  - pyyaml=5.1
+  - requests=2.22.0
+  - watchdog=0.8.3
   - pip:
     - errorhandler==2.0.1
-    - git+https://github.com/manubot/manubot@4505db3fd8a9dc1ba26c36f3fea9accbf02d47d8
+    - git+https://github.com/manubot/manubot@2a99f4af4a352d2e082988d364e01e2e2809a87b
     - jsonref==0.2
     - opentimestamps-client==0.6.0
     - opentimestamps==0.3.0
-    - pandoc-eqnos==1.3.0
-    - pandoc-fignos==1.3.0
-    - pandoc-tablenos==1.3.0
-    - pandoc-xnos==1.1.1
+    - pandoc-eqnos==1.4.3
+    - pandoc-fignos==1.4.2
+    - pandoc-tablenos==1.4.2
+    - pandoc-xnos==1.2.0
     - pybase62==0.4.0
     - pysha3==1.0.2
     - python-bitcoinlib==0.9.0
-    - requests-cache==0.4.13
+    - requests-cache==0.5.0
     - weasyprint==0.42.3
