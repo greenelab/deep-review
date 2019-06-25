@@ -214,11 +214,14 @@ If you are using the Manubot, feel free to submit a pull request to add your man
 
 ## Citing Manubot
 
-To cite the Manubot project or for more information on its design and history, see `@url:https://greenelab.github.io/meta-review/`:
+To cite the Manubot project or for more information on its design and history, see `@doi:10.1371/journal.pcbi.1007128`:
 
 > **Open collaborative writing with Manubot**<br>
 Daniel S. Himmelstein, Vincent Rubinetti, David R. Slochower, Dongbo Hu, Venkat S. Malladi, Casey S. Greene, Anthony Gitter<br>
-_Manubot Preprint_ (2019) <https://greenelab.github.io/meta-review/>
+*PLOS Computational Biology* (2019-06-24) <https://doi.org/c7np><br>
+DOI: [10.1371/journal.pcbi.1007128](https://doi.org/10.1371/journal.pcbi.1007128) · PMID: [31233491](https://www.ncbi.nlm.nih.gov/pubmed/31233491)
+
+The Manubot version of this manuscript is available at <https://greenelab.github.io/meta-review/>.
 
 ## Acknowledgments
 
