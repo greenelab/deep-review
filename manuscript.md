@@ -36,7 +36,7 @@ author-meta:
 - Austin Huang
 - Anthony Gitter
 - Casey S. Greene
-date-meta: '2019-03-22'
+date-meta: '2019-06-25'
 keywords:
 - deep learning
 - review
@@ -58,10 +58,10 @@ _The published version of this manuscript is available at <https://doi.org/10.10
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/deep-review/v/ec05a06890580987fd84eeadaaa8422bda2f918f/))
+([permalink](https://greenelab.github.io/deep-review/v/1066164eded7cc2e4848fd4f79ef48976b53939a/))
 was automatically generated
-from [greenelab/deep-review@ec05a06](https://github.com/greenelab/deep-review/tree/ec05a06890580987fd84eeadaaa8422bda2f918f)
-on March 22, 2019.
+from [greenelab/deep-review@1066164](https://github.com/greenelab/deep-review/tree/1066164eded7cc2e4848fd4f79ef48976b53939a)
+on June 25, 2019.
 </em></small>
 
 ## Authors
