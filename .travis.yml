@@ -20,11 +20,11 @@ install:
   - conda list --name manubot
   - conda activate manubot
 script:
-  - sh build/build.sh
+  - bash build/build.sh
 cache:
   directories:
     - ci/cache
 after_success:
   - test $TRAVIS_BRANCH = "master" &&
     test $TRAVIS_EVENT_TYPE = "push" &&
-    sh ci/deploy.sh
+    bash -o xtrace ci/deploy.sh

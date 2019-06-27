@@ -48,7 +48,7 @@ Then, you can build the manuscript on POSIX systems by running the following com
 conda activate manubot
 
 # Build the manuscript, saving outputs to the output directory
-sh build/build.sh
+bash build/build.sh
 
 # At this point, the HTML & PDF outputs will have been created. The remaining
 # commands are for serving the webpage to view the HTML manuscript locally.
@@ -65,7 +65,7 @@ Sometimes it's helpful to monitor the content directory and automatically rebuil
 The following command, while running, will trigger both the `build.sh` and `webpage.py` scripts upon content changes:
 
 ```sh
-sh build/autobuild.sh
+bash build/autobuild.sh
 ```
 
 ### Continuous Integration
