@@ -24,7 +24,10 @@ script:
 cache:
   directories:
     - ci/cache
-after_success:
-  - test $TRAVIS_BRANCH = "master" &&
-    test $TRAVIS_EVENT_TYPE = "push" &&
-    bash -o xtrace ci/deploy.sh
+deploy:
+  provider: script
+  script: bash -o xtrace ci/deploy.sh
+  skip_cleanup: true
+  on:
+    branch: master
+    condition: $TRAVIS_EVENT_TYPE = "push"
