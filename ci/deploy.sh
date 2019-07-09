@@ -22,14 +22,23 @@ git checkout "$TRAVIS_BRANCH"
 git remote set-url origin "git@github.com:$TRAVIS_REPO_SLUG.git"
 
 # Decrypt and add SSH key
+eval "$(ssh-agent -s)"
+(
+set +o xtrace  # disable xtrace in subshell for private key operations
+if [ -v MANUBOT_SSH_PRIVATE_KEY ]; then
+  base64 --decode <<< "$MANUBOT_SSH_PRIVATE_KEY" | ssh-add -
+else
+echo "DeprecationWarning: Loading deploy.key from an encrypted file.
+In the future, using the MANUBOT_SSH_PRIVATE_KEY environment variable may be required."
 openssl aes-256-cbc \
   -K $encrypted_9befd6eddffe_key \
   -iv $encrypted_9befd6eddffe_iv \
   -in ci/deploy.key.enc \
   -out ci/deploy.key -d
-eval "$(ssh-agent -s)"
 chmod 600 ci/deploy.key
 ssh-add ci/deploy.key
+fi
+)
 
 # Fetch and create gh-pages and output branches
 # Travis does a shallow and single branch git clone
