@@ -4,7 +4,8 @@ This repository uses [Manubot](https://manubot.org) to automatically produce a m
 
 ## Manubot markdown
 
-Manuscript text should be written in markdown files, which should be located in [`content`](content) with a digit prefix for ordering (e.g. `01.`, `02.`, etc.) and a `.md` extension.
+Manuscript text should be written in markdown files located in the [`content`](content) directory.
+Markdown files are identified by their `.md` extension and ordered according to their two-digit prefix (e.g. `01.`, `02.`, … `99.`).
 
 For basic formatting, check out the [CommonMark Help](https://commonmark.org/help/) page for an introduction to the formatting options provided by standard markdown.
 In addition, Manubot supports an extended version of markdown, tailored for scholarly writing, which includes [Pandoc's Markdown](https://pandoc.org/MANUAL.html#pandocs-markdown) and the extensions discussed below.
@@ -114,32 +115,50 @@ If `citation-tags.tsv` defines the tag `study-x`, then this study can be cited l
 
 ## Reference metadata
 
-The Manubot workflow requires the bibliographic details for references (the set of all cited works) as CSL (Citation Style Language) Items (also known as [citeproc JSON](http://citeproc-js.readthedocs.io/en/latest/csl-json/markup.html#csl-json-items)).
-The Manubot attempts to automatically retrieve metadata and generate valid citeproc JSON for references, which is exported to `output/references.json`.
-However, in some cases the Manubot fails to retrieve metadata or generates incorrect or incomplete citeproc metadata.
+Manubot stores the bibliographic details for references (the set of all cited works) as CSL JSON ([Citation Style Language Items](http://citeproc-js.readthedocs.io/en/latest/csl-json/markup.html#csl-json-items)).
+For all citation sources besides `raw`, Manubot automatically generates CSL JSON.
+In some cases, automatic metadata retrieval fails or provides incorrect or incomplete information.
 Errors are most common for `url` references.
-For these references, you can manually specify the correct CSL Data in [`content/manual-references.json`](content/manual-references.json), which will override the automatically generated reference data.
-To do so, create a new CSL JSON Item that contains the field `"standard_citation"` with the appropriate reference identifier as its value.
-The identifier can be obtained from the `standard_citation` column of `citations.tsv`, which is located in the `output` branch or in the `output` subdirectory of local builds.
-As an example, `manual-references.json` contains:
+Therefore, Manubot supports user-provided metadata, which we refer to as "manual references".
+When a manual reference is provided, Manubot uses the supplied metadata and does not attempt to generate it.
+
+Manubot searches the `content` directory for files that match the glob pattern `manual-references*.*` and expects that these files contain manual references.
+[`content/manual-references.json`](content/manual-references.json) is the default file to specify custom CSL JSON metadata.
+Manual references are matched to citations using their "id" field.
+For example, to manually specify the metadata for the citation `@url:https://github.com/manubot/rootstock`, add a CSL JSON Item to `manual-references.json` that contains the following excerpt:
 
 ```json
-"standard_citation": "url:https://github.com/greenelab/manubot-rootstock"
+"id": "url:https://github.com/manubot/rootstock",
 ```
 
-The metadata for `raw` citations must be provided in `manual-references.json` or an error will occur.
-For example, to cite `@raw:private-message` in a manuscript, a corresponding CSL Item in `manual-references.json` is required, such as:
+The metadata for `raw` citations must be provided in a manual reference file (e.g. `manual-references.json`) or an error will occur.
+For example, to cite `@raw:private-message` in a manuscript, a corresponding CSL JSON Item is required, such as:
 
 ```json
 {
+  "id": "raw:private-message",
   "type": "personal_communication",
-  "standard_citation": "raw:private-message",
   "title": "Personal communication with Doctor X"
 }
 ```
 
-All references provided in `manual-references.json` must provide values for the `type` and `standard_citation` fields.
+All manual references must provide values for the "id" and "type" fields.
 For guidance on what CSL JSON should be like for different document types, refer to [these examples](https://github.com/aurimasv/zotero-import-export-formats/blob/a51c342e66bebd97b73a7230047b801c8f7bb690/CSL%20JSON.json).
+
+Manubot offers some support for other bibliographic metadata formats besides CSL JSON, by delegating conversion to the `pandoc-citeproc --bib2json` [utility](https://github.com/jgm/pandoc-citeproc/blob/master/man/pandoc-citeproc.1.md#convert-mode).
+Formats are inferred from filename extensions.
+So, for example, to provide metadata for `@url:https://github.com/manubot/rootstock` in BibTeX format, create the file `content/manual-references.bib` and create an item whose definition starts with the excerpt:
+
+```latex
+@misc{url:https://github.com/manubot/rootstock,
+```
+
+Processed reference metadata in CSL JSON format, either generated by Manubot or specified via manual references, is exported to `references.json`.
+This file is located in the `output` branch on GitHub or in the `output` subdirectory of local builds.
+The "id" field in `references.json` and in the final manuscript uses a shortened ID that is derived from the original ID.
+For debugging information, see `citations.tsv`, which shows citation identifiers as they progress through the processing pipeline.
+In order to freeze all references, rather than have Manubot regenerate them during future builds, copy the `references.json` output file to `content` with a filename matching the `manual-references*.json` pattern.
+One tip is to embed the date `references.json` was generated into the frozen manual reference filename, like `content/manual-references-2019-06-21.json`.
 
 ## Manuscript metadata
 
@@ -198,9 +217,8 @@ If you are using the Manubot, feel free to submit a pull request to add your man
 To cite the Manubot project or for more information on its design and history, see `@url:https://greenelab.github.io/meta-review/`:
 
 > **Open collaborative writing with Manubot**<br>
-Daniel S. Himmelstein, David R. Slochower, Venkat S. Malladi, Casey S.
-Greene, Anthony Gitter<br>
-_Manubot Preprint_ (2018) <https://greenelab.github.io/meta-review/>
+Daniel S. Himmelstein, Vincent Rubinetti, David R. Slochower, Dongbo Hu, Venkat S. Malladi, Casey S. Greene, Anthony Gitter<br>
+_Manubot Preprint_ (2019) <https://greenelab.github.io/meta-review/>
 
 ## Acknowledgments
 
