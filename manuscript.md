@@ -36,7 +36,7 @@ author-meta:
 - Austin Huang
 - Anthony Gitter
 - Casey S. Greene
-date-meta: '2019-07-23'
+date-meta: '2019-07-24'
 keywords:
 - deep learning
 - review
@@ -53,15 +53,17 @@ title: 'Opportunities and obstacles for deep learning in biology and medicine: 2
 
 
 
-_The published version of this manuscript is available at <https://doi.org/10.1098/rsif.2017.0387>_.
+_A published version of this manuscript from 04 April 2018 is available at <https://doi.org/10.1098/rsif.2017.0387>.
+An effort is underway to update the manuscript to capture the state of the field in 2019.
+New authors and links to new sections are available in [GitHub Issue #959](https://github.com/greenelab/deep-review/issues/959)._
 
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/deep-review/v/47b31b2c99de3ded25be398464b813dc62817fe8/))
+([permalink](https://greenelab.github.io/deep-review/v/5e00ddd30d79f527129de25ef02566a39bd6358d/))
 was automatically generated
-from [greenelab/deep-review@47b31b2](https://github.com/greenelab/deep-review/tree/47b31b2c99de3ded25be398464b813dc62817fe8)
-on July 23, 2019.
+from [greenelab/deep-review@5e00ddd](https://github.com/greenelab/deep-review/tree/5e00ddd30d79f527129de25ef02566a39bd6358d)
+on July 24, 2019.
 </em></small>
 
 ## Authors
@@ -142,6 +144,7 @@ Casey S. Greene<sup>2,†</sup>
 
 <sup>☯</sup> --- Author order was determined with a randomized algorithm<br>
 <sup>†</sup> --- To whom correspondence should be addressed: gitter@biostat.wisc.edu (A.G.) and greenescientist@gmail.com (C.S.G.)
+
 <small>
 
 

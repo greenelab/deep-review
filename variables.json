@@ -1,5 +1,5 @@
 {
-  "date": "July 23, 2019",
+  "date": "July 24, 2019",
   "authors": [
     {
       "github": "traversc",
@@ -613,7 +613,7 @@
     "repo_slug": "greenelab/deep-review",
     "repo_owner": "greenelab",
     "repo_name": "deep-review",
-    "commit": "47b31b2c99de3ded25be398464b813dc62817fe8"
+    "commit": "5e00ddd30d79f527129de25ef02566a39bd6358d"
   },
   "manuscript_stats": {
     "reference_counts": {
@@ -623,6 +623,6 @@
       "url": 48,
       "total": 577
     },
-    "word_count": 33842
+    "word_count": 33876
   }
 }
