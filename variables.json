@@ -613,16 +613,16 @@
     "repo_slug": "greenelab/deep-review",
     "repo_owner": "greenelab",
     "repo_name": "deep-review",
-    "commit": "84c50ef08b2df63e194fbc1b629e39eaf49b4d9b"
+    "commit": "50756c5d3e73fdb509f0970afcdc0b27955fbb54"
   },
   "manuscript_stats": {
     "reference_counts": {
       "arxiv": 132,
-      "doi": 393,
+      "doi": 394,
       "pmcid": 6,
       "url": 48,
-      "total": 579
+      "total": 580
     },
-    "word_count": 33870
+    "word_count": 33884
   }
 }

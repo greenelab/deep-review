@@ -60,9 +60,9 @@ New authors and links to new sections are available in [GitHub Issue #959](https
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/deep-review/v/84c50ef08b2df63e194fbc1b629e39eaf49b4d9b/))
+([permalink](https://greenelab.github.io/deep-review/v/50756c5d3e73fdb509f0970afcdc0b27955fbb54/))
 was automatically generated
-from [greenelab/deep-review@84c50ef](https://github.com/greenelab/deep-review/tree/84c50ef08b2df63e194fbc1b629e39eaf49b4d9b)
+from [greenelab/deep-review@50756c5](https://github.com/greenelab/deep-review/tree/50756c5d3e73fdb509f0970afcdc0b27955fbb54)
 on July 28, 2019.
 </em></small>
 
@@ -1955,12 +1955,13 @@ Hence, diverse expertise was required to provide a forward-looking perspective.
 Accordingly, we collaboratively wrote this review in the open, enabling anyone with expertise to contribute.
 We wrote the manuscript in markdown and tracked changes using git.
 Contributions were handled through GitHub, with individuals submitting "pull requests" to suggest additions to the manuscript.
+This collaborative writing approach was later generalized into the Manubot workflow and software [@YuJbg3zO].
 
 To facilitate citation, we [defined](https://github.com/greenelab/deep-review/blob/master/USAGE.md#citations) a markdown citation syntax.
 We supported citations to the following identifier types (in order of preference): DOIs, PubMed Central IDs, PubMed IDs, arXiv IDs, and URLs.
 References were automatically generated from citation metadata by querying APIs to generate [Citation Style Language](http://citationstyles.org/) (CSL) JSON items for each reference.
 [Pandoc](http://pandoc.org/) and [pandoc-citeproc](https://github.com/jgm/pandoc-citeproc) converted the markdown to HTML and PDF, while rendering the formatted citations and references.
-In total, referenced works consisted of 393 DOIs, 6 PubMed Central records, 132 arXiv manuscripts, and 48 URLs (webpages as well as manuscripts lacking standardized identifiers).
+In total, referenced works consisted of 394 DOIs, 6 PubMed Central records, 132 arXiv manuscripts, and 48 URLs (webpages as well as manuscripts lacking standardized identifiers).
 
 We implemented continuous analysis so the manuscript was automatically regenerated whenever the source changed [@Qh7xTLwz].
 We configured Travis CI---a continuous integration service---to fetch new citation metadata and rebuild the manuscript for every commit.
