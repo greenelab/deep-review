@@ -36,7 +36,7 @@ author-meta:
 - Austin Huang
 - Anthony Gitter
 - Casey S. Greene
-date-meta: '2019-07-24'
+date-meta: '2019-07-28'
 keywords:
 - deep learning
 - review
@@ -60,10 +60,10 @@ New authors and links to new sections are available in [GitHub Issue #959](https
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/deep-review/v/5e00ddd30d79f527129de25ef02566a39bd6358d/))
+([permalink](https://greenelab.github.io/deep-review/v/84c50ef08b2df63e194fbc1b629e39eaf49b4d9b/))
 was automatically generated
-from [greenelab/deep-review@5e00ddd](https://github.com/greenelab/deep-review/tree/5e00ddd30d79f527129de25ef02566a39bd6358d)
-on July 24, 2019.
+from [greenelab/deep-review@84c50ef](https://github.com/greenelab/deep-review/tree/84c50ef08b2df63e194fbc1b629e39eaf49b4d9b)
+on July 28, 2019.
 </em></small>
 
 ## Authors
@@ -798,22 +798,22 @@ Unsupervised discovery of biologically-significant features is another major are
 A consistent theme of these methods is that they construct a low-dimensional space that semantically encodes biologically important features from methylation profiles.
 As with other applications, these low-dimensional representations are thought to capture a set of important, unmeasured sources of biological variability in the data, and that projection into these spaces results in biologically-similar examples being close together.
 For this reason, they are often termed latent spaces.
-One method used several stacked binary restricted Boltzmann machines (forming a deep neural network) to learn a low-dimensional subspace representation of the methylation profiles of 5000 CpG sites with highest variance across 136 women breast tissue samples, 113 breast cancer samples and 23 non-cancerous samples, and samples in the latent space were clustered (via self-organizing maps) to show that the latent space could differentiate breast cancer samples from non-neoplastic samples. 
-Furthermore, the latent space was visualized using t-SNE (t-distributed stochastic neighbor embedding) [@1CvlEI6Kb]. 
+One method used several stacked binary restricted Boltzmann machines (forming a deep neural network) to learn a low-dimensional subspace representation of the methylation profiles of 5000 CpG sites with highest variance across 136 women breast tissue samples, 113 breast cancer samples and 23 non-cancerous samples, and samples in the latent space were clustered (via self-organizing maps) to show that the latent space could differentiate breast cancer samples from non-neoplastic samples.
+Furthermore, the latent space was visualized using t-SNE (t-distributed stochastic neighbor embedding) [@1CvlEI6Kb].
 Titus et. al. [@71snAYRy] adapted a VAE strategy developed by Way et. al. [@7V2oCvtf] to methylation data.
 The VAE was modified to perform dimensionality reduction on 300,000 PAM50-assigned CpG features to 100 latent features in 862 samples.
-The authors performed t-SNE visualization, clustering, and classified tumor subtypes from a Breast Cancer dataset from TCGA. 
-In an subsequent extension of this work [@7pBVQEZ4], the authors constructed a 100-dimensional latent space of 100k CpG sites across around 1200 samples, and selected latent space dimensions that were the most highly associated with the differentiation between estrogen-response (ER) positive and negative tumor samples in breast cancer patients to determine the extent to which the latent space could predict responses to endocrine therapy. 
-Certain latent space dimensions differentiated tumors based on their ER status and provided biologically-plausible hypotheses, which suggests that VAE-derived models may have a place in summarizing DNA methylation profiles into composite features that can aid in predicting treatment response. 
+The authors performed t-SNE visualization, clustering, and classified tumor subtypes from a Breast Cancer dataset from TCGA.
+In an subsequent extension of this work [@7pBVQEZ4], the authors constructed a 100-dimensional latent space of 100k CpG sites across around 1200 samples, and selected latent space dimensions that were the most highly associated with the differentiation between estrogen-response (ER) positive and negative tumor samples in breast cancer patients to determine the extent to which the latent space could predict responses to endocrine therapy.
+Certain latent space dimensions differentiated tumors based on their ER status and provided biologically-plausible hypotheses, which suggests that VAE-derived models may have a place in summarizing DNA methylation profiles into composite features that can aid in predicting treatment response.
 Another study explored the latent features of lung cancer methylation profiles that were extracted using variational autoencoders.
-After constructing a latent space representations of TCGA lung cancer samples, the authors used a logistic regression classifier on the latent dimentions to accturately classify cancer subtypes [@s3I1CsTr]. 
+After constructing a latent space representations of TCGA lung cancer samples, the authors used a logistic regression classifier on the latent dimentions to accturately classify cancer subtypes [@s3I1CsTr].
 These studies, along with the growing body of work using VAEs and other latent representations of genomic and epigenomic data demonstrate a suite of tools to explore the unmeasured aspects of biology.
 Techniques that produce these representations provide the opportunity to discover important biological features that were previously missed.
-The power of unsupervised deep learning models for this task comes from their ability to learn high-dimensional non-linear relationships among data. 
+The power of unsupervised deep learning models for this task comes from their ability to learn high-dimensional non-linear relationships among data.
 
-Important applications in the future include predicting methylation and pathological states based on methylation profiles uncovered from datasets with more noise, such as solid tissue samples over blood samples. 
-Unsupervised deep learning approaches such as variational autoencoders, which leverage measured points to produce a generative, low-dimensional representation, may provide a more complete understanding of the biological processes underlying cell types, transitions in cell dynamics, and subject phenotypes. 
-In addition, latent representations may assist with biological hypothesis generation and have the ability to stratify patients by predicted risk. 
+Important applications in the future include predicting methylation and pathological states based on methylation profiles uncovered from datasets with more noise, such as solid tissue samples over blood samples.
+Unsupervised deep learning approaches such as variational autoencoders, which leverage measured points to produce a generative, low-dimensional representation, may provide a more complete understanding of the biological processes underlying cell types, transitions in cell dynamics, and subject phenotypes.
+In addition, latent representations may assist with biological hypothesis generation and have the ability to stratify patients by predicted risk.
 While neural-network embeddings can outperform traditional embeddings, it is important to be aware that many of these methods can be highly sensitive to hyperparameter tuning and an evaluation of the impact of hyperparameter tuning should be included [@5CsWRjfp].
 
 ### Splicing
@@ -1236,7 +1236,7 @@ However, a model built on Illumina data, for instance, may not be optimal for Pa
 Recently, Boza et al. used bidirectional recurrent neural networks to infer the *E. coli* sequence from MinION nanopore electric current data with higher per-base accuracy than the proprietary hidden Markov model-based algorithm Metrichor [@Jw2asgH1].
 Unfortunately, training any neural network requires a large amount of data, which is often not available for new sequencing technologies.
 To circumvent this, one very preliminary study simulated mutations and spiked them into somatic and germline RNA-seq data, then trained and tested a neural network on simulated paired RNA-seq and exome sequencing data [@ECTm1SuA].
-However, because this model was not subsequently tested on ground-truth datasets, it is unclear whether simulation can produce sufficiently realistic data to produce reliable models.
+Despite subsequent evaluation [@jXjVdzvo] on real somatic mutation data from the International Cancer Genome Consortium [@1EmZZiCuL], further assessments are required to determine whether simulation can produce sufficiently realistic data to train reliable models.
 
 Method development for interpreting new types of sequencing data has historically taken two steps: first, easily implemented hard cutoffs that prioritize specificity over sensitivity, then expert development of probabilistic models with hand-developed inputs [@ECTm1SuA].
 We anticipate that these steps will be replaced by deep learning, which will infer features simply by its ability to optimize a complex model against data.
@@ -1733,8 +1733,7 @@ Data can be simulated to create negative examples when only positive training in
 DANN [@15E5yG1Ho] adopts this approach to predict the pathogenicity of genetic variants using semi-synthetic training data from Combined Annotation-Dependent Depletion (CADD)
 [@KxEzGxJ6].
 Though our emphasis here is on the training strategy, it should be noted that logistic regression outperformed DANN when distinguishing known pathogenic mutations from likely benign variants in real data.
-Similarly, a somatic mutation caller has been trained by injecting mutations into real sequencing datasets [@ECTm1SuA].
-This method detected mutations in other semi-synthetic datasets but was not validated on real data.
+Similarly, a somatic mutation caller has been trained by injecting mutations into real sequencing datasets [@ECTm1SuA; @jXjVdzvo].
 
 In settings where the experimental observations are biased toward positive instances, such as MHC protein and peptide ligand binding affinity [@1Hk3NTSn2], or the negative instances vastly outnumber the positives, such as high-throughput chemical screening [@1E0x7QgLP], training datasets have been augmented by adding additional instances and assuming they are negative.
 There is some evidence that this can improve performance [@1E0x7QgLP], but in other cases it was only beneficial when the real training datasets were extremely small [@1Hk3NTSn2].
@@ -1961,7 +1960,7 @@ To facilitate citation, we [defined](https://github.com/greenelab/deep-review/bl
 We supported citations to the following identifier types (in order of preference): DOIs, PubMed Central IDs, PubMed IDs, arXiv IDs, and URLs.
 References were automatically generated from citation metadata by querying APIs to generate [Citation Style Language](http://citationstyles.org/) (CSL) JSON items for each reference.
 [Pandoc](http://pandoc.org/) and [pandoc-citeproc](https://github.com/jgm/pandoc-citeproc) converted the markdown to HTML and PDF, while rendering the formatted citations and references.
-In total, referenced works consisted of 391 DOIs, 6 PubMed Central records, 132 arXiv manuscripts, and 48 URLs (webpages as well as manuscripts lacking standardized identifiers).
+In total, referenced works consisted of 393 DOIs, 6 PubMed Central records, 132 arXiv manuscripts, and 48 URLs (webpages as well as manuscripts lacking standardized identifiers).
 
 We implemented continuous analysis so the manuscript was automatically regenerated whenever the source changed [@Qh7xTLwz].
 We configured Travis CI---a continuous integration service---to fetch new citation metadata and rebuild the manuscript for every commit.

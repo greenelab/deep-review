@@ -9477,6 +9477,365 @@
   {
     "publisher": "Springer Science and Business Media LLC",
     "issue": "1",
+    "DOI": "10.1038/ncomms10001",
+    "type": "article-journal",
+    "source": "Crossref",
+    "title": "A comprehensive assessment of somatic mutation detection in cancer using whole-genome sequencing",
+    "volume": "6",
+    "author": [
+      {
+        "given": "Tyler S.",
+        "family": "Alioto"
+      },
+      {
+        "given": "Ivo",
+        "family": "Buchhalter"
+      },
+      {
+        "given": "Sophia",
+        "family": "Derdak"
+      },
+      {
+        "given": "Barbara",
+        "family": "Hutter"
+      },
+      {
+        "given": "Matthew D.",
+        "family": "Eldridge"
+      },
+      {
+        "given": "Eivind",
+        "family": "Hovig"
+      },
+      {
+        "given": "Lawrence E.",
+        "family": "Heisler"
+      },
+      {
+        "given": "Timothy A.",
+        "family": "Beck"
+      },
+      {
+        "given": "Jared T.",
+        "family": "Simpson"
+      },
+      {
+        "given": "Laurie",
+        "family": "Tonon"
+      },
+      {
+        "given": "Anne-Sophie",
+        "family": "Sertier"
+      },
+      {
+        "given": "Ann-Marie",
+        "family": "Patch"
+      },
+      {
+        "given": "Natalie",
+        "family": "Jäger"
+      },
+      {
+        "given": "Philip",
+        "family": "Ginsbach"
+      },
+      {
+        "given": "Ruben",
+        "family": "Drews"
+      },
+      {
+        "given": "Nagarajan",
+        "family": "Paramasivam"
+      },
+      {
+        "given": "Rolf",
+        "family": "Kabbe"
+      },
+      {
+        "given": "Sasithorn",
+        "family": "Chotewutmontri"
+      },
+      {
+        "given": "Nicolle",
+        "family": "Diessl"
+      },
+      {
+        "given": "Christopher",
+        "family": "Previti"
+      },
+      {
+        "given": "Sabine",
+        "family": "Schmidt"
+      },
+      {
+        "given": "Benedikt",
+        "family": "Brors"
+      },
+      {
+        "given": "Lars",
+        "family": "Feuerbach"
+      },
+      {
+        "given": "Michael",
+        "family": "Heinold"
+      },
+      {
+        "given": "Susanne",
+        "family": "Gröbner"
+      },
+      {
+        "given": "Andrey",
+        "family": "Korshunov"
+      },
+      {
+        "given": "Patrick S.",
+        "family": "Tarpey"
+      },
+      {
+        "given": "Adam P.",
+        "family": "Butler"
+      },
+      {
+        "given": "Jonathan",
+        "family": "Hinton"
+      },
+      {
+        "given": "David",
+        "family": "Jones"
+      },
+      {
+        "given": "Andrew",
+        "family": "Menzies"
+      },
+      {
+        "given": "Keiran",
+        "family": "Raine"
+      },
+      {
+        "given": "Rebecca",
+        "family": "Shepherd"
+      },
+      {
+        "given": "Lucy",
+        "family": "Stebbings"
+      },
+      {
+        "given": "Jon W.",
+        "family": "Teague"
+      },
+      {
+        "given": "Paolo",
+        "family": "Ribeca"
+      },
+      {
+        "given": "Francesc Castro",
+        "family": "Giner"
+      },
+      {
+        "given": "Sergi",
+        "family": "Beltran"
+      },
+      {
+        "given": "Emanuele",
+        "family": "Raineri"
+      },
+      {
+        "given": "Marc",
+        "family": "Dabad"
+      },
+      {
+        "given": "Simon C.",
+        "family": "Heath"
+      },
+      {
+        "given": "Marta",
+        "family": "Gut"
+      },
+      {
+        "given": "Robert E.",
+        "family": "Denroche"
+      },
+      {
+        "given": "Nicholas J.",
+        "family": "Harding"
+      },
+      {
+        "given": "Takafumi N.",
+        "family": "Yamaguchi"
+      },
+      {
+        "given": "Akihiro",
+        "family": "Fujimoto"
+      },
+      {
+        "given": "Hidewaki",
+        "family": "Nakagawa"
+      },
+      {
+        "given": "Víctor",
+        "family": "Quesada"
+      },
+      {
+        "given": "Rafael",
+        "family": "Valdés-Mas"
+      },
+      {
+        "given": "Sigve",
+        "family": "Nakken"
+      },
+      {
+        "given": "Daniel",
+        "family": "Vodák"
+      },
+      {
+        "given": "Lawrence",
+        "family": "Bower"
+      },
+      {
+        "given": "Andrew G.",
+        "family": "Lynch"
+      },
+      {
+        "given": "Charlotte L.",
+        "family": "Anderson"
+      },
+      {
+        "given": "Nicola",
+        "family": "Waddell"
+      },
+      {
+        "given": "John V.",
+        "family": "Pearson"
+      },
+      {
+        "given": "Sean M.",
+        "family": "Grimmond"
+      },
+      {
+        "given": "Myron",
+        "family": "Peto"
+      },
+      {
+        "given": "Paul",
+        "family": "Spellman"
+      },
+      {
+        "given": "Minghui",
+        "family": "He"
+      },
+      {
+        "given": "Cyriac",
+        "family": "Kandoth"
+      },
+      {
+        "given": "Semin",
+        "family": "Lee"
+      },
+      {
+        "given": "John",
+        "family": "Zhang"
+      },
+      {
+        "given": "Louis",
+        "family": "Létourneau"
+      },
+      {
+        "given": "Singer",
+        "family": "Ma"
+      },
+      {
+        "given": "Sahil",
+        "family": "Seth"
+      },
+      {
+        "given": "David",
+        "family": "Torrents"
+      },
+      {
+        "given": "Liu",
+        "family": "Xi"
+      },
+      {
+        "given": "David A.",
+        "family": "Wheeler"
+      },
+      {
+        "given": "Carlos",
+        "family": "López-Otín"
+      },
+      {
+        "given": "Elías",
+        "family": "Campo"
+      },
+      {
+        "given": "Peter J.",
+        "family": "Campbell"
+      },
+      {
+        "given": "Paul C.",
+        "family": "Boutros"
+      },
+      {
+        "given": "Xose S.",
+        "family": "Puente"
+      },
+      {
+        "given": "Daniela S.",
+        "family": "Gerhard"
+      },
+      {
+        "given": "Stefan M.",
+        "family": "Pfister"
+      },
+      {
+        "given": "John D.",
+        "family": "McPherson"
+      },
+      {
+        "given": "Thomas J.",
+        "family": "Hudson"
+      },
+      {
+        "given": "Matthias",
+        "family": "Schlesner"
+      },
+      {
+        "given": "Peter",
+        "family": "Lichter"
+      },
+      {
+        "given": "Roland",
+        "family": "Eils"
+      },
+      {
+        "given": "David T. W.",
+        "family": "Jones"
+      },
+      {
+        "given": "Ivo G.",
+        "family": "Gut"
+      }
+    ],
+    "container-title": "Nature Communications",
+    "language": "en",
+    "issued": {
+      "date-parts": [
+        [
+          2015,
+          12
+        ]
+      ]
+    },
+    "URL": "https://doi.org/f759g3",
+    "container-title-short": "Nat Commun",
+    "PMCID": "PMC4682041",
+    "PMID": "26647970",
+    "note": "This CSL JSON Item was automatically generated by Manubot v0.2.3 using citation-by-identifier.\nstandard_id: doi:10.1038/ncomms10001",
+    "id": "1EmZZiCuL"
+  },
+  {
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "1",
     "DOI": "10.1038/ncomms13090",
     "type": "article-journal",
     "source": "Crossref",
@@ -14440,6 +14799,32 @@
     "URL": "https://doi.org/gcgk9m",
     "note": "This CSL JSON Item was automatically generated by Manubot v0.2.3 using citation-by-identifier.\nstandard_id: doi:10.1101/092890",
     "id": "FVfZESYP"
+  },
+  {
+    "publisher": "Cold Spring Harbor Laboratory",
+    "abstract": "<jats:title>ABSTRACT</jats:title><jats:p>In <jats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" ext-link-type=\"uri\" xlink:href=\"http://dx.doi.org/10.1101/079087\">http://dx.doi.org/10.1101/079087</jats:ext-link>, we presented adaptive models for calling somatic mutations in high-throughput sequencing data. These models were developed by training deep neural networks with semi-simulated data. In this continuation, I evaluate how such models can predict known somatic mutations in a real dataset. To address this question, I tested the approach using samples from the International Cancer Genome Consortium (ICGC) and the previously published ground-truth mutations (GoldSet). This evaluation revealed that training models with semi-simulation does produce models that exhibit strong performance in real datasets. I found a linear relationship between the performance observed on a semi-simulated validation set and independent ground-truth in the gold set (<jats:italic>R</jats:italic><jats:sup>2</jats:sup> = 0.952, <jats:italic>P</jats:italic> &lt; 2<jats:sup>−16</jats:sup>). I also found that semi-simulation can be used to pre-train models before continuing training with true labels and that this pre-training improves model performance substantially on the real dataset compared to training models only with the real dataset. The best model pre-trained with semi-simulation achieved an AUC of 0.969 [0.957-0.982] (95% confidence interval) compared to 0.911 [0.890-0.932] when training with real labels only. These data demonstrate that semi-simulation can be a very effective approach to training filtering and ranking probabilistic models.</jats:p>",
+    "DOI": "10.1101/093534",
+    "type": "manuscript",
+    "source": "Crossref",
+    "title": "CONTINUATION: Evaluation of adaptive somatic models in a gold standard whole genome somatic dataset",
+    "author": [
+      {
+        "given": "Fabien",
+        "family": "Campagne"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          12,
+          13
+        ]
+      ]
+    },
+    "URL": "https://doi.org/gf5gxz",
+    "note": "This CSL JSON Item was automatically generated by Manubot v0.2.3 using citation-by-identifier.\nstandard_id: doi:10.1101/093534",
+    "id": "jXjVdzvo"
   },
   {
     "publisher": "Cold Spring Harbor Laboratory",
@@ -23628,7 +24013,7 @@
         [
           "2019",
           7,
-          24
+          28
         ]
       ]
     },
@@ -23684,7 +24069,7 @@
         [
           "2019",
           7,
-          24
+          28
         ]
       ]
     },
@@ -23723,7 +24108,7 @@
         [
           "2019",
           7,
-          24
+          28
         ]
       ]
     },
@@ -23823,7 +24208,7 @@
         [
           "2019",
           7,
-          24
+          28
         ]
       ]
     },
@@ -23902,7 +24287,7 @@
         [
           "2019",
           7,
-          24
+          28
         ]
       ]
     },
@@ -23989,7 +24374,7 @@
         [
           "2019",
           7,
-          24
+          28
         ]
       ]
     },
@@ -24043,7 +24428,7 @@
         [
           "2019",
           7,
-          24
+          28
         ]
       ]
     },
@@ -24367,7 +24752,7 @@
         [
           "2019",
           7,
-          24
+          28
         ]
       ]
     },
@@ -24464,7 +24849,7 @@
         [
           "2019",
           7,
-          24
+          28
         ]
       ]
     },
@@ -24504,7 +24889,7 @@
         [
           "2019",
           7,
-          24
+          28
         ]
       ]
     },
@@ -24561,7 +24946,7 @@
         [
           "2019",
           7,
-          24
+          28
         ]
       ]
     },
@@ -24592,7 +24977,7 @@
         [
           "2019",
           7,
-          24
+          28
         ]
       ]
     },
@@ -24843,7 +25228,7 @@
         [
           "2019",
           7,
-          24
+          28
         ]
       ]
     },
@@ -24914,7 +25299,7 @@
         [
           "2019",
           7,
-          24
+          28
         ]
       ]
     },
@@ -25004,7 +25389,7 @@
         [
           "2019",
           7,
-          24
+          28
         ]
       ]
     },
@@ -25166,7 +25551,7 @@
         [
           "2019",
           7,
-          24
+          28
         ]
       ]
     },
@@ -25182,7 +25567,7 @@
         [
           "2019",
           7,
-          24
+          28
         ]
       ]
     },
@@ -25260,7 +25645,7 @@
         [
           "2019",
           7,
-          24
+          28
         ]
       ]
     },
