@@ -44,7 +44,7 @@
             const links = getLinks();
             for (const link of links) {
                 // attach mouse and focus listeners to link
-                link.addEventListener('mouseover', onLinkFocus);
+                link.addEventListener('mouseenter', onLinkFocus);
                 link.addEventListener('focus', onLinkFocus);
                 link.addEventListener('mouseleave', onLinkUnhover);
             }

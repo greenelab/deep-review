@@ -26,6 +26,9 @@
             // whether to fit image to view ('fit'), display at 100% and shrink
             // if necessary ('shrink'), or always display at 100% ('100')
             defaultZoom: 'fit',
+            // whether to zoom in/out toward center of view ('true') or mouse
+            // ('false')
+            centerZoom: 'false',
             // whether plugin is on or not
             enabled: 'true'
         };
@@ -66,22 +69,27 @@
             if (!event || !event.key)
                 return;
 
-            // trigger click of prev/next button
             switch (event.key) {
-            case 'ArrowLeft':
-                const prevButton = document.getElementById(
-                    'lightbox_prev_button'
-                );
-                if (prevButton)
-                    prevButton.click();
-                break;
-            case 'ArrowRight':
-                const nextButton = document.getElementById(
-                    'lightbox_next_button'
-                );
-                if (nextButton)
-                    nextButton.click();
-                break;
+                // trigger click of prev button
+                case 'ArrowLeft':
+                    const prevButton = document.getElementById(
+                        'lightbox_prev_button'
+                    );
+                    if (prevButton)
+                        prevButton.click();
+                    break;
+                // trigger click of next button
+                case 'ArrowRight':
+                    const nextButton = document.getElementById(
+                        'lightbox_next_button'
+                    );
+                    if (nextButton)
+                        nextButton.click();
+                    break;
+                // close on esc
+                case 'Escape':
+                    closeLightbox();
+                    break;
             }
         }
 
@@ -308,8 +316,11 @@
                 event.stopPropagation();
 
                 // point around which to scale img
-                const originX = window.mouseX;
-                const originY = window.mouseY;
+                const viewRect = container.getBoundingClientRect();
+                const viewX = (viewRect.left + viewRect.right) / 2;
+                const viewY = (viewRect.top + viewRect.bottom) / 2;
+                const originX = options.centerZoom === 'true' ? viewX : mouseX;
+                const originY = options.centerZoom === 'true' ? viewY : mouseY;
 
                 // get point on image under origin
                 const oldRect = img.getBoundingClientRect();
@@ -338,7 +349,7 @@
             };
 
             // when container is clicked
-            function onContainerClick() {
+            function onContainerClick(event) {
                 // if container itself is target of click, and not other
                 // element above it
                 if (event.target === this)
@@ -384,6 +395,10 @@
                 translateY = clickTranslateY + window.mouseY - clickMouseY;
                 updateTransform();
                 event.preventDefault();
+
+                // remove global listener if lightbox removed from document
+                if (!document.body.contains(container))
+                    window.removeEventListener('mousemove', onWindowMouseMove);
             };
 
             // when window is resized
@@ -399,7 +414,8 @@
             img.addEventListener('dblclick', fit);
             img.addEventListener('mousedown', onImageMouseDown);
             container.addEventListener('wheel', onContainerWheel);
-            container.addEventListener('click', onContainerClick);
+            container.addEventListener('mousedown', onContainerClick);
+            container.addEventListener('touchstart', onContainerClick);
             window.addEventListener('mouseup', onWindowMouseUp);
             window.addEventListener('mousemove', onWindowMouseMove);
             window.addEventListener('resize', onWindowResize);
