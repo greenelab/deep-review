@@ -1,6 +1,6 @@
 [
  {
-  "standard_citation": "url:http://www.bioinf.at/publications/2014/NIPS2014a.pdf",
+  "id": "url:http://www.bioinf.at/publications/2014/NIPS2014a.pdf",
   "type": "article-journal",
   "title": "Deep learning as an opportunity in virtual screening",
   "container-title": "Neural Information Processing Systems 2014: Deep Learning and Representation Learning Workshop",
@@ -53,7 +53,7 @@
   }
  },
  {
-  "standard_citation": "url:https://repozitorij.uni-lj.si/IzpisGradiva.php?id=85515",
+  "id": "url:https://repozitorij.uni-lj.si/IzpisGradiva.php?id=85515",
   "type": "report",
   "title": "Globoko ucenje na genomskih in filogenetskih podatkih",
   "publisher": "Univerza v Ljubljani, Fakulteta za racunalništvo in informatiko",
@@ -84,7 +84,7 @@
   }
  },
  {
-  "standard_citation": "doi:10.1093/bib/bbw110",
+  "id": "doi:10.1093/bib/bbw110",
   "type": "article-journal",
   "title": "A review of validation strategies for computational drug repositioning",
   "container-title": "Briefings in Bioinformatics",
@@ -122,7 +122,7 @@
   }
  },
  {
-  "standard_citation": "url:http://www.iro.umontreal.ca/~lisa/publications2/index.php/publications/show/247",
+  "id": "url:http://www.iro.umontreal.ca/~lisa/publications2/index.php/publications/show/247",
   "type": "report",
   "title": "Visualizing Higher-Layer Features of a Deep Network",
   "publisher": "University of Montreal",
@@ -157,7 +157,7 @@
   }
  },
  {
-  "standard_citation": "url:https://openreview.net/pdf?id=Sk-oDY9ge",
+  "id": "url:https://openreview.net/pdf?id=Sk-oDY9ge",
   "type": "article-journal",
   "title": "Diet Networks: Thin Parameters for Fat Genomics",
   "container-title": "International Conference on Learning Representations 2017",
@@ -227,7 +227,7 @@
   }
  },
  {
-  "standard_citation": "url:https://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimization.pdf",
+  "id": "url:https://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimization.pdf",
   "type": "paper-conference",
   "title": "Algorithms for Hyper-parameter Optimization",
   "container-title": "Proceedings of the 24th International Conference on Neural Information Processing Systems",
@@ -276,7 +276,7 @@
   }
  },
  {
-  "standard_citation": "url:https://ai.stanford.edu/~ang/papers/icml11-MultimodalDeepLearning.pdf",
+  "id": "url:https://ai.stanford.edu/~ang/papers/icml11-MultimodalDeepLearning.pdf",
   "type": "paper-conference",
   "title": "Multimodal Deep Learning",
   "container-title": "Proceedings of the 28th International Conference on Machine Learning",
@@ -326,7 +326,7 @@
   }
  },
  {
-  "standard_citation": "url:https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf",
+  "id": "url:https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf",
   "type": "paper-conference",
   "title": "ImageNet Classification with Deep Convolutional Neural Networks",
   "container-title": "Proceedings of the 25th International Conference on Neural Information Processing Systems",
@@ -370,7 +370,7 @@
   }
  },
  {
-  "standard_citation": "url:https://eprint.iacr.org/2017/281.pdf",
+  "id": "url:https://eprint.iacr.org/2017/281.pdf",
   "type": "report",
   "title": "Practical Secure Aggregation for Privacy Preserving Machine Learning",
   "genre": "Cryptology ePrint Archive",
@@ -452,7 +452,7 @@
       }
     ],
     "type": "webpage",
-    "standard_citation": "url:http://www.intel.com/pressroom/archive/speeches/ag080998.htm"
+    "id": "url:http://www.intel.com/pressroom/archive/speeches/ag080998.htm"
   },
   {
     "URL": "https://www.nigms.nih.gov/Education/Documents/curiosity.pdf",
@@ -471,7 +471,7 @@
       }
     ],
     "type": "webpage",
-    "standard_citation": "url:https://www.nigms.nih.gov/Education/Documents/curiosity.pdf"
+    "id": "url:https://www.nigms.nih.gov/Education/Documents/curiosity.pdf"
   },
   {
     "URL": "http://www.predictioncenter.org/casp12/rrc_avrg_results.cgi",
@@ -484,7 +484,7 @@
       ]
     },
     "type": "webpage",
-    "standard_citation": "url:http://www.predictioncenter.org/casp12/rrc_avrg_results.cgi"
+    "id": "url:http://www.predictioncenter.org/casp12/rrc_avrg_results.cgi"
   },
   {
     "URL": "http://www.cameo3d.org/",
@@ -498,7 +498,7 @@
     },
     "redirects-to": "https://www.cameo3d.org/",
     "type": "webpage",
-    "standard_citation": "url:http://www.cameo3d.org/"
+    "id": "url:http://www.cameo3d.org/"
   },
   {
     "URL": "https://github.com/deepchem/deepchem",
@@ -512,7 +512,7 @@
       ]
     },
     "type": "webpage",
-    "standard_citation": "url:https://github.com/deepchem/deepchem"
+    "id": "url:https://github.com/deepchem/deepchem"
   },
   {
     "URL": "http://googleresearch.blogspot.co.uk/2015/06/inceptionism-going-deeper-into-neural.html",
@@ -545,7 +545,7 @@
       "http://wayback.archive.org/web/http://googleresearch.blogspot.co.uk/2015/06/inceptionism-going-deeper-into-neural.html"
     ],
     "type": "webpage",
-    "standard_citation": "url:http://googleresearch.blogspot.co.uk/2015/06/inceptionism-going-deeper-into-neural.html"
+    "id": "url:http://googleresearch.blogspot.co.uk/2015/06/inceptionism-going-deeper-into-neural.html"
   },
   {
     "URL": "https://github.com/fchollet/keras",
@@ -559,7 +559,7 @@
       ]
     },
     "type": "webpage",
-    "standard_citation": "url:https://github.com/fchollet/keras"
+    "id": "url:https://github.com/fchollet/keras"
   },
   {
     "URL": "https://github.com/maxpumperla/elephas",
@@ -573,7 +573,7 @@
       ]
     },
     "type": "webpage",
-    "standard_citation": "url:https://github.com/maxpumperla/elephas"
+    "id": "url:https://github.com/maxpumperla/elephas"
   },
   {
     "URL": "https://www.synapse.org/#!Synapse:syn6131484/wiki/402026",
@@ -586,7 +586,7 @@
       ]
     },
     "type": "webpage",
-    "standard_citation": "url:https://www.synapse.org/#!Synapse:syn6131484/wiki/402026"
+    "id": "url:https://www.synapse.org/#!Synapse:syn6131484/wiki/402026"
   },
   {
     "URL": "http://www.businessinsider.com/ibm-edges-closer-to-human-speech-recognition-2017-3",
@@ -613,7 +613,7 @@
       "http://wayback.archive.org/web/http://www.businessinsider.com/ibm-edges-closer-to-human-speech-recognition-2017-3"
     ],
     "type": "webpage",
-    "standard_citation": "url:http://www.businessinsider.com/ibm-edges-closer-to-human-speech-recognition-2017-3"
+    "id": "url:http://www.businessinsider.com/ibm-edges-closer-to-human-speech-recognition-2017-3"
   },
   {
     "URL": "https://github.com/greenelab/deep-review",
@@ -627,7 +627,7 @@
       ]
     },
     "type": "webpage",
-    "standard_citation": "url:https://github.com/greenelab/deep-review"
+    "id": "url:https://github.com/greenelab/deep-review"
   },
   {
     "URL": "http://ana.blogs.com/maestros/2006/11/data_is_the_new.html",
@@ -651,7 +651,7 @@
       "http://wayback.archive.org/web/http://ana.blogs.com/maestros/2006/11/data_is_the_new.html"
     ],
     "type": "webpage",
-    "standard_citation": "url:http://ana.blogs.com/maestros/2006/11/data_is_the_new.html"
+    "id": "url:http://ana.blogs.com/maestros/2006/11/data_is_the_new.html"
   },
   {
     "URL": "http://hazyresearch.github.io/snorkel/blog/weak_supervision.html",
@@ -680,7 +680,7 @@
       }
     ],
     "type": "webpage",
-    "standard_citation": "url:http://hazyresearch.github.io/snorkel/blog/weak_supervision.html"
+    "id": "url:http://hazyresearch.github.io/snorkel/blog/weak_supervision.html"
   },
   {
     "URL": "http://research.google.com/archive/large_deep_networks_nips2012.html",
@@ -747,7 +747,7 @@
     ],
     "redirects-to": "https://research.google.com/archive/large_deep_networks_nips2012.html",
     "type": "webpage",
-    "standard_citation": "url:http://research.google.com/archive/large_deep_networks_nips2012.html"
+    "id": "url:http://research.google.com/archive/large_deep_networks_nips2012.html"
   },
   {
     "URL": "http://www.deeplearningbook.org/",
@@ -774,7 +774,7 @@
       }
     ],
     "type": "webpage",
-    "standard_citation": "url:http://www.deeplearningbook.org/"
+    "id": "url:http://www.deeplearningbook.org/"
   },
   {
     "indexed": {
@@ -846,7 +846,7 @@
     "references-count": 7,
     "URL": "https://doi.org/10.1109/icnn.1994.374637",
     "relation": {},
-    "standard_citation": "doi:10.1109/icnn.1994.374637"
+    "id": "doi:10.1109/icnn.1994.374637"
   },
   {
     "indexed": {
@@ -919,7 +919,7 @@
     "references-count": 0,
     "URL": "https://doi.org/10.1515/9781400881970-018",
     "relation": {},
-    "standard_citation": "doi:10.1515/9781400881970-018"
+    "id": "doi:10.1515/9781400881970-018"
   },
   {
     "URL": "https://nihcc.app.box.com/v/ChestXray-NIHCC",
@@ -940,10 +940,10 @@
       }
     ],
     "type": "webpage",
-    "standard_citation": "url:https://nihcc.app.box.com/v/ChestXray-NIHCC"
+    "id": "url:https://nihcc.app.box.com/v/ChestXray-NIHCC"
   },
   {
-    "standard_citation": "doi:10.3389/fgene.2014.00342",
+    "id": "doi:10.3389/fgene.2014.00342",
     "type": "article-journal",
     "title": "Large-scale integration of small-molecule induced genome-wide transcriptional responses, Kinome-wide binding affinities and cell-growth inhibition profiles reveal global trends characterizing systems-level drug action",
     "container-title": "Frontiers in Genetics",
@@ -1097,10 +1097,10 @@
    ],
    "container-title-short": "G3",
    "short_url": "https://doi.org/gcgmcv",
-   "standard_citation": "doi:10.1534/g3.116.033654"
+   "id": "doi:10.1534/g3.116.033654"
  },
  {
-   "standard_citation": "url:http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.231.3442",
+   "id": "url:http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.231.3442",
    "type": "paper-conference",
    "title": "Domain adaptation for large-scale sentiment classification: A deep learning approach",
    "container-title": "In Proceedings of the Twenty-eight International Conference on Machine Learning, ICML",
@@ -1131,7 +1131,7 @@
    }
  },
  {
-   "standard_citation": "url:https://dl.acm.org/citation.cfm?id=3061018",
+   "id": "url:https://dl.acm.org/citation.cfm?id=3061018",
    "type": "paper-conference",
    "title": "Joint Models for Extracting Adverse Drug Events from Biomedical Text",
    "container-title": "Proceedings of the Twenty-Fifth International Joint Conference on Artificial Intelligence",
@@ -1171,7 +1171,7 @@
    }
  },
  {
-   "standard_citation": "url:https://www.cs.toronto.edu/~kriz/learning-features-2009-TR.pdf",
+   "id": "url:https://www.cs.toronto.edu/~kriz/learning-features-2009-TR.pdf",
    "type": "report",
    "title": "Learning multiple layers of features from tiny images",
    "author": [
@@ -1307,10 +1307,10 @@
    ],
    "container-title-short": "IEEE J. Biomed. Health Inform.",
    "short_url": "https://doi.org/gcgnxx",
-   "standard_citation": "doi:10.1109/jbhi.2016.2633963"
+   "id": "doi:10.1109/jbhi.2016.2633963"
  },
  {
-   "standard_citation": "url:http://www.cs.ox.ac.uk/people/yarin.gal/website/thesis/thesis.pdf",
+   "id": "url:http://www.cs.ox.ac.uk/people/yarin.gal/website/thesis/thesis.pdf",
    "type": "thesis",
    "title": "Uncertainty in deep learning",
    "publisher": "PhD thesis, University of Cambridge",

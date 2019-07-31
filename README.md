@@ -19,8 +19,8 @@ The original version of the Deep Review was published in 2018 and should be cite
 
 ### Current stage: planning Deep Review 2019
 
-As of writing, we are aiming to publish an update of the deep review each year, with the next such release occurring in June 2019.
-We will continue to make project preprints available on bioRxiv, and aim to continue publishing the finished reviews in a peer-reviewed venue as well.
+As of writing, we are aiming to publish an update of the deep review each year, with the next such release occurring at the end of 2019.
+We will continue to make project preprints available on bioRxiv or another preprint service and aim to continue publishing the finished reviews in a peer-reviewed venue as well.
 Like the initial release, we are planning for an open and collaborative effort.
 Please see [issue #810](https://github.com/greenelab/deep-review/issues/810) to contribute to the discussion of future plans, and help decide how to best continue this project.
 
@@ -74,6 +74,7 @@ On August 5, Deep Review was announced with a [tweet](https://twitter.com/Greene
 
 Manubot is a system for writing scholarly manuscripts via GitHub.
 Manubot automates citations and references, versions manuscripts using git, and enables collaborative writing via GitHub.
+An [overview manuscript](https://greenelab.github.io/meta-review/ "Open collaborative writing with Manubot") presents the benefits of collaborative writing with Manubot and its unique features.
 The [rootstock repository](https://git.io/fhQH1) is a general purpose template for creating new Manubot instances.
 See [`USAGE.md`](USAGE.md) for documentation how to write a manuscript.
 
