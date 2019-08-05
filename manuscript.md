@@ -36,7 +36,7 @@ author-meta:
 - Austin Huang
 - Anthony Gitter
 - Casey S. Greene
-date-meta: '2019-08-01'
+date-meta: '2019-08-05'
 keywords:
 - deep learning
 - review
@@ -60,10 +60,10 @@ New authors and links to new sections are available in [GitHub Issue #959](https
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/deep-review/v/78130771ae5d9320312666311303f2e4f387d52d/))
+([permalink](https://greenelab.github.io/deep-review/v/360c9a496dacc5833a25c1e083bc3f9a892272d6/))
 was automatically generated
-from [greenelab/deep-review@7813077](https://github.com/greenelab/deep-review/tree/78130771ae5d9320312666311303f2e4f387d52d)
-on August 1, 2019.
+from [greenelab/deep-review@360c9a4](https://github.com/greenelab/deep-review/tree/360c9a496dacc5833a25c1e083bc3f9a892272d6)
+on August 5, 2019.
 </em></small>
 
 ## Authors
@@ -775,24 +775,27 @@ For example, the effects of cellular heterogeneity on basic biology and disease 
 
 ### DNA methylation
 
-DNA methylation, is the process of adding a methyl group to a cytosine in the context of a CpG dinucleotide. 
-This DNA-level epigenetic modification regulates gene transcription, is critical in development, and alterations to DNA methylation are well-established as contributing to pathophysiology of many diseases including cancers [@CVPBvIV3],[@kwOioB4i]. 
-Studies of DNA methylation have demonstrated the fundamental role of DNA methylation in cell lineage specification starting with stem cell differentiation [@GHUxzaAg], [@ngGW3W1c], as well as a strong relationship of DNA methylation with aging phenotypes [@pMCJmea0], [@mJjfXdG7], and pathogenesis in response to environmental exposures [@4zLbWhjO], [@pbX22J7v]. 
+DNA methylation is the process of adding a methyl group to a cytosine in the context of a CpG dinucleotide.
+This DNA-level epigenetic modification regulates gene transcription and is critical in development.
+Alterations to DNA methylation are well-established as contributing to pathophysiology of many diseases including cancers [@CVPBvIV3; @kwOioB4i].
+Studies of DNA methylation have demonstrated its fundamental role in cell lineage specification starting with stem cell differentiation [@GHUxzaAg; @ngGW3W1c] as well as a strong relationship with aging phenotypes [@pMCJmea0; @mJjfXdG7] and pathogenesis in response to environmental exposures [@4zLbWhjO; @pbX22J7v].
 
-Traditional analytic approaches to DNA methylation data often focus on estimating differential DNA methylation between groups or related with an outcome using linear mixed effects models, so-called epigenome-wide association studies (EWAS) [@ypI0fkMc], [@15Yz3j9AA], [@1Bv07XXcO], [@cjMBtlVG]. 
-In addition, a growing application of DNA methylation measures is to infer cellular or subject phenotypes from samples and either examine the relation of these phenotypes with outcomes or disease states directly, and/or include them in models as covariates [@hyg2tIyy], [@1Ckbonoy0], [@zyuP2u2w], [@FVTmPo4j], [@8i1LNUx2]. 
-For example, inference of subject age using DNA methylation clock approaches are  established [@AWLDxZwA], and are starting to be applied to test the relation of biological age with disease risk and outcomes [@W9dr5TsC]. 
+Traditional analytic approaches to DNA methylation data often focus on estimating differential DNA methylation between groups or related with an outcome using linear mixed effects models, so-called epigenome-wide association studies [@ypI0fkMc; @15Yz3j9AA; @1Bv07XXcO; @cjMBtlVG].
+In addition, a growing application of DNA methylation measures is to infer cellular or subject phenotypes from samples and either examine the relation of these phenotypes with outcomes or disease states directly or include them in models as covariates [@hyg2tIyy; @1Ckbonoy0; @zyuP2u2w; @FVTmPo4j; @8i1LNUx2].
+For example, inference of subject age using DNA methylation clock approaches are established [@AWLDxZwA] and are starting to be applied to test the relation of biological age with disease risk and outcomes [@W9dr5TsC].
 Different cell types have different DNA methylation profiles.
-A novel approach to immunophenotyping combines measurements with Reference DNA methylation profiles of leukocytes, which are available, to infer immune cell type proportions [@jAbFiCUP],[@1CUh3SDNG].
+A novel approach to immunophenotyping combines measurements with reference DNA methylation profiles of leukocytes to infer immune cell type proportions [@jAbFiCUP; @1CUh3SDNG].
 This strategy is particularly helpful when only DNA is available from a sample.
 Cell type inference is important for adjusting for cell-type composition in epigenome-wide association studies [@cjMBtlVG].
-While reference-based libraries have strong predictive value for immune cell type estimation and has broad utility, cell composition mixtures per se, and methods to incorporate estimates of mixtures pose important considerations on the interpretation of underlying biology associated with disease manifestations and phenotypes. 
-When a reference library is not available for use, methods that do not rely on these reference libraries, so called reference-free deconvolution [@191VNF80b], are available to decompose signal purported to be contributed by cell types.
-However, using reference-free cell type proportion estimates as potential confounders in adjusted models can be overly conservative as as outcome-associated variation in DNA methylation may be decomposed into putative cell type estimates.
+While reference-based libraries have strong predictive value for immune cell type estimation and have broad utility, methods to incorporate estimates of mixtures pose important considerations on the interpretation of underlying biology associated with disease manifestations and phenotypes.
+When a reference library is not available, reference-free deconvolution methods [@191VNF80b] that do not rely on these reference libraries are available to decompose signal purported to be contributed by cell types.
+However, using reference-free cell type proportion estimates as potential confounders in adjusted models can be overly conservative.
+Outcome-associated variation in DNA methylation may be decomposed into putative cell type estimates.
 Additional validated reference-based libraries for other tissue types, advancements in reference-free deconvolution methods, and application of deep learning methods are expected to provide new opportunities to understand and interpret DNA methylation in human health and disease.
 
 Deep learning approaches have numerous potential applications for DNA methylation data.
-Imputation methods that capture complex interactions between different regions of DNA can expand the number of CpG sites whose DNA methylation state can be studied, and ideally these methods can derive their own informative, biologically-relevant features.
+Imputation methods that capture complex interactions between different regions of DNA can expand the number of CpG sites whose DNA methylation state can be studied.
+Ideally these methods can derive their own informative, biologically-relevant features.
 The primary deep learning methods developed to date focus on: 1) estimating regions of methylation status and imputing missing methylation values, 2) performing classification and regression tasks, and 3) using the latent embeddings of methylation states to derive biologically meaningful features, infer interpolated disease states, and uncover CpG sites that aid the above prediction tasks.
 
 #### Inference, imputation, and prediction
