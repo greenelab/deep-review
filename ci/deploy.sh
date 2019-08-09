@@ -59,7 +59,7 @@ fi
 
 # Commit message
 MESSAGE="\
-$(git log --max-count=1 --format='%s')
+$(git log --max-count=1 --format='%s') [ci skip]
 
 This build is based on
 https://github.com/$TRAVIS_REPO_SLUG/commit/$TRAVIS_COMMIT.
@@ -67,8 +67,6 @@ https://github.com/$TRAVIS_REPO_SLUG/commit/$TRAVIS_COMMIT.
 This commit was created by the following Travis CI build and job:
 $TRAVIS_BUILD_WEB_URL
 $TRAVIS_JOB_WEB_URL
-
-[ci skip]
 
 The full commit message that triggered this build is copied below:
 

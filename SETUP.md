@@ -196,3 +196,14 @@ When there are no longer any unstaged changes, then do `git commit`.
 
 If updating `master` via a pull request, proceed to push the commit to GitHub and open a pull request.
 Once the pull request is ready to merge, use GitHub's "Create a merge commit" option rather than "Squash and merge" or "Rebase and merge" to preserve the rootstock commit hashes.
+
+# Previewing pull request builds with AppVeyor
+
+You can optionally enable AppVeyor continuous integration to view pull request builds.
+Unlike Travis CI, AppVeyor supports storing manuscripts generated during pull request builds as artifacts.
+These can be previewed to facilitate pull request review and ensure formatting and reference changes render as expected.
+When a pull request build runs successfully, **@AppVeyorBot** will comment on the pull request with a download link to the manuscript PDF.
+
+To enable AppVeyor, follow steps 1 and 2 of the [AppVeyor welcome](https://www.appveyor.com/docs/) to sign in to AppVeyor and add your manuscript repository as an AppVeyor project.
+The repository already contains an `.appveyor.yml` build configuration file, so no other setup is required.
+AppVeyor only runs when it detects changes that are likely to affect the manuscript.
