@@ -1,0 +1,57 @@
+# See https://www.appveyor.com/docs/getting-started-with-appveyor-for-linux/
+skip_branch_with_pr: true
+
+# Enable 'Do not build on "Push" events' in the AppVeyor project settings
+# to only build commits from pull requests
+branches:
+  only:
+    - master
+
+# Only run AppVeyor on commits that modify at least one of the following files
+# Delete these lines to run AppVeyor on all master branch commits
+only_commits:
+  files:
+    - .appveyor.yml
+    - build/
+    - ci/install.sh
+    - content/
+
+image: ubuntu
+services:
+  - docker
+
+install:
+  # Create the message with the triggering commit before install so it is
+  # available if the build fails
+  - TRIGGERING_COMMIT=${APPVEYOR_PULL_REQUEST_HEAD_COMMIT:-APPVEYOR_REPO_COMMIT}
+  - appveyor AddMessage "commit $TRIGGERING_COMMIT"
+  - source ci/install.sh
+    
+test_script:
+  - bash build/build.sh
+  - MANUSCRIPT_FILENAME=manuscript-$APPVEYOR_BUILD_VERSION-${TRIGGERING_COMMIT:0:7}.pdf
+  - cp output/manuscript.pdf $MANUSCRIPT_FILENAME
+  - appveyor PushArtifact $MANUSCRIPT_FILENAME
+
+build: off
+
+cache:
+  - ci/cache
+
+on_success:
+  - echo "Artifacts available from $APPVEYOR_URL/project/$APPVEYOR_ACCOUNT_NAME/$APPVEYOR_PROJECT_SLUG/builds/$APPVEYOR_BUILD_ID/artifacts"
+  - echo "Updated PDF available from $APPVEYOR_URL/api/buildjobs/$APPVEYOR_JOB_ID/artifacts/$MANUSCRIPT_FILENAME"
+
+# The following lines can be safely deleted, which will disable AppVeyorBot
+# notifications in GitHub pull requests
+# Notifications use Mustache templates http://mustache.github.io/mustache.5.html
+# See https://www.appveyor.com/docs/notifications/#customizing-message-template
+# for available variables
+notifications:
+  - provider: GitHubPullRequest
+    template: "AppVeyor [build {{buildVersion}}]({{buildUrl}})
+      {{#jobs}}{{#messages}} for {{message}} by @{{&commitAuthorUsername}} {{/messages}}{{/jobs}}
+      {{#passed}} is now complete.{{/passed}}
+      {{#failed}} failed.{{/failed}}
+      {{#jobs}}{{#artifacts}} The rendered manuscript from this build is temporarily available for download at
+      [`{{fileName}}`]({{permalink}}).{{/artifacts}}{{/jobs}}"
