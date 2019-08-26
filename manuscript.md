@@ -36,7 +36,7 @@ author-meta:
 - Austin Huang
 - Anthony Gitter
 - Casey S. Greene
-date-meta: '2019-08-05'
+date-meta: '2019-08-26'
 keywords:
 - deep learning
 - review
@@ -60,10 +60,10 @@ New authors and links to new sections are available in [GitHub Issue #959](https
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/deep-review/v/360c9a496dacc5833a25c1e083bc3f9a892272d6/))
+([permalink](https://greenelab.github.io/deep-review/v/48abed1b24e032d4e59e101e0627665fb8bb47c9/))
 was automatically generated
-from [greenelab/deep-review@360c9a4](https://github.com/greenelab/deep-review/tree/360c9a496dacc5833a25c1e083bc3f9a892272d6)
-on August 5, 2019.
+from [greenelab/deep-review@48abed1](https://github.com/greenelab/deep-review/tree/48abed1b24e032d4e59e101e0627665fb8bb47c9)
+on August 26, 2019.
 </em></small>
 
 ## Authors
@@ -1616,7 +1616,7 @@ First, a model that achieves breakthrough performance may have identified patter
 However, this would not be possible if the model is a black box.
 Second, interpretability is important for trust.
 If a model is making medical diagnoses, it is important to ensure the model is making decisions for reliable reasons and is not focusing on an artifact of the data.
-A motivating example of this can be found in Ba and Caruana [@1AhGoHZP9], where a model trained to predict the likelihood of death from pneumonia assigned lower risk to patients with asthma, but only because such patients were treated as higher priority by the hospital.
+A motivating example of this can be found in Caruana et al. [@gSmt16Rh], where a model trained to predict the likelihood of death from pneumonia assigned lower risk to patients with asthma, but only because such patients were treated as higher priority by the hospital.
 In the context of deep learning, understanding the basis of a model's output is particularly important as deep learning models are unusually susceptible to adversarial examples [@1AkF8Wsv7] and can output confidence scores over 99.99% for samples that resemble pure noise.
 
 As the concept of interpretability is quite broad, many methods described as improving the interpretability of deep learning models take disparate and often complementary approaches.
@@ -1990,7 +1990,7 @@ To facilitate citation, we [defined](https://github.com/greenelab/deep-review/bl
 We supported citations to the following identifier types (in order of preference): DOIs, PubMed Central IDs, PubMed IDs, arXiv IDs, and URLs.
 References were automatically generated from citation metadata by querying APIs to generate [Citation Style Language](http://citationstyles.org/) (CSL) JSON items for each reference.
 [Pandoc](http://pandoc.org/) and [pandoc-citeproc](https://github.com/jgm/pandoc-citeproc) converted the markdown to HTML and PDF, while rendering the formatted citations and references.
-In total, referenced works consisted of 416 DOIs, 6 PubMed Central records, 132 arXiv manuscripts, and 48 URLs (webpages as well as manuscripts lacking standardized identifiers).
+In total, referenced works consisted of 417 DOIs, 6 PubMed Central records, 132 arXiv manuscripts, and 48 URLs (webpages as well as manuscripts lacking standardized identifiers).
 
 We implemented continuous analysis so the manuscript was automatically regenerated whenever the source changed [@Qh7xTLwz].
 We configured Travis CI---a continuous integration service---to fetch new citation metadata and rebuild the manuscript for every commit.
