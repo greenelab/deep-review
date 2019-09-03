@@ -1,5 +1,5 @@
 {
-  "date": "August 26, 2019",
+  "date": "September 3, 2019",
   "authors": [
     {
       "github": "traversc",
@@ -9,7 +9,7 @@
       "affiliations": [
         "Molecular Biosciences and Bioengineering Graduate Program, University of Hawaii at Manoa, Honolulu, HI"
       ],
-      "symbol_str": "\u262f",
+      "symbol_str": "☯",
       "affiliation_numbers": [
         1
       ]
@@ -397,7 +397,7 @@
       "orcid": "0000-0001-8008-0546",
       "email": "marwin.segler@uni-muenster.de",
       "affiliations": [
-        "Institute of Organic Chemistry, Westf\u00e4lische Wilhelms-Universit\u00e4t M\u00fcnster, M\u00fcnster, Germany"
+        "Institute of Organic Chemistry, Westfälische Wilhelms-Universität Münster, Münster, Germany"
       ],
       "affiliation_numbers": [
         28
@@ -454,7 +454,7 @@
         "Morgridge Institute for Research, Madison, WI"
       ],
       "funders": "NIH U54AI117924",
-      "symbol_str": "\u2020",
+      "symbol_str": "†",
       "affiliation_numbers": [
         32,
         33
@@ -469,7 +469,7 @@
         "Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA"
       ],
       "funders": "GBMF GBMF4552",
-      "symbol_str": "\u2020",
+      "symbol_str": "†",
       "affiliation_numbers": [
         2
       ]
@@ -585,7 +585,7 @@
       "affiliation_number": 27
     },
     {
-      "affiliation": "Institute of Organic Chemistry, Westf\u00e4lische Wilhelms-Universit\u00e4t M\u00fcnster, M\u00fcnster, Germany",
+      "affiliation": "Institute of Organic Chemistry, Westfälische Wilhelms-Universität Münster, Münster, Germany",
       "affiliation_number": 28
     },
     {
@@ -610,10 +610,15 @@
     }
   ],
   "ci_source": {
+    "provider": "travis",
     "repo_slug": "greenelab/deep-review",
     "repo_owner": "greenelab",
     "repo_name": "deep-review",
-    "commit": "48abed1b24e032d4e59e101e0627665fb8bb47c9"
+    "commit": "a708a611baf21c143cde3b235cdc2fc974fa3183",
+    "triggering_commit": "a708a611baf21c143cde3b235cdc2fc974fa3183",
+    "build_url": "https://travis-ci.org/greenelab/deep-review/builds/580025124",
+    "job_url": "https://travis-ci.org/greenelab/deep-review/jobs/580025125",
+    "manuscript_url": "https://greenelab.github.io/deep-review/v/a708a611baf21c143cde3b235cdc2fc974fa3183/"
   },
   "manuscript_stats": {
     "reference_counts": {
@@ -623,6 +628,6 @@
       "url": 48,
       "total": 603
     },
-    "word_count": 34345
+    "word_count": 34349
   }
 }
