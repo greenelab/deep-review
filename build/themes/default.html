@@ -102,6 +102,7 @@
     /* links */
     a {
         color: #2196f3;
+        overflow-wrap: break-word;
     }
 
     /* normal links (not empty, not button link, not syntax highlighting link) */
@@ -227,8 +228,7 @@
         border: solid 1px #bdbdbd;
         padding: 10px;
         /* squash table if too wide for page by forcing line breaks */
-        word-break: break-all;
-        word-break: break-word;
+        overflow-wrap: break-word;
     }
 
     /* header row and even rows */
@@ -776,7 +776,7 @@
             border: solid 1px #bdbdbd;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
             background: #ffffff;
-            word-break: break-word;
+            overflow-wrap: break-word;
         }
 
         /* tooltip copy of paragraphs and figures */
