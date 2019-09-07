@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/greenelab/deep-review/tree/gh-pages) branch hosts the contents of this directory at https://greenelab.github.io/deep-review/.
-The permalink for this webpage version is https://greenelab.github.io/deep-review/v/a708a611baf21c143cde3b235cdc2fc974fa3183/.
+The permalink for this webpage version is https://greenelab.github.io/deep-review/v/ddb7b9fa0dff6386e2e182fe3390b89c3cdeb7df/.
 To redirect to the permalink for the latest manuscript version at anytime, use the link https://greenelab.github.io/deep-review/v/freeze/.
 
 ## Files
@@ -36,4 +36,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`a708a611baf21c143cde3b235cdc2fc974fa3183`](https://github.com/greenelab/deep-review/commit/a708a611baf21c143cde3b235cdc2fc974fa3183).
+[`ddb7b9fa0dff6386e2e182fe3390b89c3cdeb7df`](https://github.com/greenelab/deep-review/commit/ddb7b9fa0dff6386e2e182fe3390b89c3cdeb7df).
