@@ -36,7 +36,7 @@ author-meta:
 - Austin Huang
 - Anthony Gitter
 - Casey S. Greene
-date-meta: '2019-09-03'
+date-meta: '2019-09-07'
 keywords:
 - deep learning
 - review
@@ -60,10 +60,10 @@ New authors and links to new sections are available in [GitHub Issue #959](https
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/deep-review/v/a708a611baf21c143cde3b235cdc2fc974fa3183/))
+([permalink](https://greenelab.github.io/deep-review/v/ddb7b9fa0dff6386e2e182fe3390b89c3cdeb7df/))
 was automatically generated
-from [greenelab/deep-review@a708a61](https://github.com/greenelab/deep-review/tree/a708a611baf21c143cde3b235cdc2fc974fa3183)
-on September 3, 2019.
+from [greenelab/deep-review@ddb7b9f](https://github.com/greenelab/deep-review/tree/ddb7b9fa0dff6386e2e182fe3390b89c3cdeb7df)
+on September 7, 2019.
 </em></small>
 
 ## Authors
@@ -247,7 +247,8 @@ In the case of this example, each input node is only connected to hidden nodes a
 Autoencoder: a type of MLP in which the neural network is trained to produce an output that matches the input to the network.
 RNN: a deep recurrent neural network is used to allow the neural network to retain memory over time or sequential inputs.
 This figure was inspired by the [Neural Network Zoo](http://www.asimovinstitute.org/neural-network-zoo/) by Fjodor Van Veen.
-](https://user-images.githubusercontent.com/542643/34995383-52363dc0-faa4-11e7-8cdd-47966c1a2a0f.png){#fig:nn-petting-zoo .white}
+<!-- Figure source at https://docs.google.com/drawings/d/1TEzlqiCewmJ-EITvogMqDz7N6CizMtBvWE4H_BXqnuQ -->
+](images/petting-zoo.svg){#fig:nn-petting-zoo .white}
 
 This review discusses recent work in the biomedical domain, and most successful applications select neural network architectures that are well suited to the problem at hand.
 We sketch out a few simple example architectures in Figure @fig:nn-petting-zoo.

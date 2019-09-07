@@ -1,5 +1,5 @@
 {
-  "date": "September 3, 2019",
+  "date": "September 7, 2019",
   "authors": [
     {
       "github": "traversc",
@@ -614,11 +614,11 @@
     "repo_slug": "greenelab/deep-review",
     "repo_owner": "greenelab",
     "repo_name": "deep-review",
-    "commit": "a708a611baf21c143cde3b235cdc2fc974fa3183",
-    "triggering_commit": "a708a611baf21c143cde3b235cdc2fc974fa3183",
-    "build_url": "https://travis-ci.org/greenelab/deep-review/builds/580025124",
-    "job_url": "https://travis-ci.org/greenelab/deep-review/jobs/580025125",
-    "manuscript_url": "https://greenelab.github.io/deep-review/v/a708a611baf21c143cde3b235cdc2fc974fa3183/"
+    "commit": "ddb7b9fa0dff6386e2e182fe3390b89c3cdeb7df",
+    "triggering_commit": "ddb7b9fa0dff6386e2e182fe3390b89c3cdeb7df",
+    "build_url": "https://travis-ci.org/greenelab/deep-review/builds/582147819",
+    "job_url": "https://travis-ci.org/greenelab/deep-review/jobs/582147820",
+    "manuscript_url": "https://greenelab.github.io/deep-review/v/ddb7b9fa0dff6386e2e182fe3390b89c3cdeb7df/"
   },
   "manuscript_stats": {
     "reference_counts": {
@@ -628,6 +628,6 @@
       "url": 48,
       "total": 603
     },
-    "word_count": 34349
+    "word_count": 34355
   }
 }
