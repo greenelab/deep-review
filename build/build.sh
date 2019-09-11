@@ -48,6 +48,7 @@ pandoc --verbose \
   --include-after-body=build/plugins/link-highlight.html \
   --include-after-body=build/plugins/table-of-contents.html \
   --include-after-body=build/plugins/lightbox.html \
+  --include-after-body=build/plugins/attributes.html \
   --mathjax \
   --variable math="" \
   --include-after-body=build/plugins/math.html \

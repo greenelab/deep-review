@@ -1,0 +1,130 @@
+<!-- attributes plugin -->
+
+<script>
+    (function() {
+        // /////////////////////////
+        // DESCRIPTION
+        // /////////////////////////
+
+        // This Manubot plugin allows arbitrary HTML attributes to be attached
+        // to (almost) any element. Place an HTML comment inside or next to the
+        // desired element in the format <!-- $attribute="value" -->
+
+        // /////////////////////////
+        // OPTIONS
+        // /////////////////////////
+
+        // plugin name prefix for url parameters
+        const pluginName = 'attributes';
+
+        // default plugin options
+        const options = {
+            // whether plugin is on or not
+            enabled: 'true'
+        };
+
+        // change options above, or override with url parameter, eg:
+        // 'manuscript.html?pluginName-enabled=false'
+
+        // /////////////////////////
+        // SCRIPT
+        // /////////////////////////
+
+        // start script
+        function start() {
+            // get list of comments in document
+            const comments = findComments();
+
+            for(const comment of comments)
+                if (comment.parentElement)
+                    addAttributes(
+                        comment.parentElement,
+                        comment.nodeValue.trim()
+                    );
+        }
+
+        // add html attributes to specified element based on string of 
+        // html attributes and values
+        function addAttributes(element, text) {
+            // regex's for finding attribute/value pairs in the format of
+            // attribute="value" or attribute='value
+            const regex2 = /\$([a-zA-Z\-]+)?=\"(.+?)\"/;
+            const regex1 = /\$([a-zA-Z\-]+)?=\'(.+?)\'/;
+
+            // loop through attribute/value pairs
+            let match;
+            while(match = text.match(regex2) || text.match(regex1)) {
+                // get attribute and value from regex capture groups
+                let attribute = match[1];
+                let value = match[2];
+
+                // remove from string
+                text = text.substring(match.index + match[0].length);
+
+                if (!attribute || !value)
+                    break;
+
+                // set attribute of parent element
+                try {
+                    element.setAttribute(attribute, value);
+                } catch(error) {
+                    console.log(error);
+                }
+
+                // special case for colspan
+                if (attribute === 'colspan')
+                    removeTableCells(element, value);
+            }
+        }
+
+        // get list of comment elements in document
+        function findComments() {
+            const comments = [];
+
+            // iterate over comment nodes in document
+            function acceptNode(node) {
+                return NodeFilter.FILTER_ACCEPT;
+            }
+            const iterator = document.createNodeIterator(
+                document.body,
+                NodeFilter.SHOW_COMMENT,
+                acceptNode
+            );
+            let node;
+            while(node = iterator.nextNode())
+                comments.push(node);
+
+            return comments;
+        }
+
+        // remove certain number of cells after specified cell
+        function removeTableCells(cell, number) {
+            number = parseInt(number);
+            if (!number)
+                return;
+
+            // remove elements
+            for(; number > 1; number--) {
+                if (cell.nextElementSibling)
+                    cell.nextElementSibling.remove();
+            }
+        }
+
+        // load options from url parameters
+        function loadOptions() {
+            const url = window.location.search;
+            const params = new URLSearchParams(url);
+            for (const optionName of Object.keys(options)) {
+                const paramName = pluginName + '-' + optionName;
+                const param = params.get(paramName);
+                if (param !== '' && param !== null)
+                    options[optionName] = param;
+            }
+        }
+        loadOptions();
+
+        // start script when document is finished loading
+        if (options.enabled === 'true')
+            window.addEventListener('load', start);
+    })();
+</script>
