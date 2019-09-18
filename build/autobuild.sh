@@ -5,5 +5,5 @@
 
 watchmedo shell-command \
   --wait \
-  --command='bash build/build.sh && python build/webpage.py' \
+  --command='bash build/build.sh && manubot webpage' \
   content
