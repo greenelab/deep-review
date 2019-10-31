@@ -6,29 +6,29 @@ dependencies:
   - cairocffi=0.8.0
   - cffi=1.12.3
   - ghp-import=0.5.5
-  - jinja2=2.10
-  - jsonschema=3.0.2
-  - pandas=0.25.0
+  - jinja2=2.10.3
+  - jsonschema=3.1.1
+  - pandas=0.25.2
   - pandoc=2.7.3
   - pango=1.40.14
-  - pip=19.1
+  - pip=19.3
   - psutil=5.6.3
-  - python=3.6.7
+  - python=3.7.3
   - pyyaml=5.1
   - requests=2.22.0
   - watchdog=0.9.0
   - pip:
     - errorhandler==2.0.1
-    - git+https://github.com/manubot/manubot@00405aa8c9af3f43d5b414d0bd83c24dfb4a4bac
+    - git+https://github.com/manubot/manubot@ddd099516d58d1428f92d91a69e4b7295de13335
     - jsonref==0.2
     - opentimestamps-client==0.7.0
     - opentimestamps==0.4.1
-    - pandoc-eqnos==1.4.3
-    - pandoc-fignos==1.4.2
-    - pandoc-tablenos==1.4.2
-    - pandoc-xnos==1.2.0
-    - pybase62==0.4.1
+    - pandoc-eqnos==2.1.1
+    - pandoc-fignos==2.2.0
+    - pandoc-tablenos==2.1.1
+    - pandoc-xnos==2.2.0
+    - pybase62==0.4.3
     - pysha3==1.0.2
     - python-bitcoinlib==0.10.2
-    - requests-cache==0.5.0
+    - requests-cache==0.5.2
     - weasyprint==0.42.3
