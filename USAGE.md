@@ -88,6 +88,9 @@ When choosing which source to use for a citation, we recommend the following ord
 4. _arXiv_ ID, cite like `@arxiv:1508.06576v2`.
 5. ISBN (International Standard Book Number), cite like `@isbn:9781339919881`.
 6. URL / webpage, cite like `@url:https://nyti.ms/1QUgAt1`.
+   URL citations can be helpful if the above methods return incorrect metadata.
+   For example, `@doi:10.1038/ng.3834` [incorrectly handles](https://github.com/manubot/manubot/issues/158) the consortium name resulting in a blank author, while `@url:https://doi.org/10.1038/ng.3834` succeeds.
+   Similarly, `@url:https://doi.org/10.1101/142760` is a [workaround](https://github.com/manubot/manubot/issues/16) to set the journal name of bioRxiv preprints to _bioRxiv_.
 7. Wikidata Items, cite like `@wikidata:Q50051684`.
    Note that anyone can edit or add records on [Wikidata](https://www.wikidata.org), so users are encouraged to contribute metadata for hard-to-cite works to Wikidata as an alternative to using a `raw` citation.
 8. For references that do not have any of the persistent identifiers above, use a raw citation like `@raw:old-manuscript`.
@@ -187,6 +190,28 @@ funders: GBMF4552  # optional
 ```
 
 Note that `affiliations` should be a list to allow for multiple affiliations per author.
+
+### Thumbnail
+
+A thumbnail is an image used to visually represent the manuscript,
+such as when a manuscript is shared on social media or added to the [Manubot catalog](https://manubot.org/catalog/).
+Specify a thumbnail in any of the following ways:
+
+1. placing an image named `thumbnail.png` anywhere in the manuscript repository (for example, in the root directory).
+2. setting `thumbnail` in `metadata.yaml` to a path, relative to the repository root, where the image file is located.
+    Example:
+    ```yaml
+    thumbnail: build/assets/thumbnail-1000x1000.png
+    ```
+3. setting `thumbnail` in `metadata.yaml` to an absolute URL where the image is located.
+    Example:
+    ```yaml
+    thumbnail: https://github.com/greenelab/meta-review/raw/master/thumbnail.png
+    ```
+
+Methods 2 and 3 take precedence over method 1.
+View the [guidelines here](https://github.com/manubot/catalog#thumbnail-guidelines) for suggestions on how to create a good thumbnail.
+Key points are that thumbnails should be 1000 × 1000 pixels, PNG formatted, and striking.
 
 ## Custom formatting
 
