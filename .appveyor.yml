@@ -29,9 +29,11 @@ install:
     
 test_script:
   - bash build/build.sh
-  - MANUSCRIPT_FILENAME=manuscript-$APPVEYOR_BUILD_VERSION-${TRIGGERING_COMMIT:0:7}.pdf
-  - cp output/manuscript.pdf $MANUSCRIPT_FILENAME
-  - appveyor PushArtifact $MANUSCRIPT_FILENAME
+  - MANUSCRIPT_FILENAME=manuscript-$APPVEYOR_BUILD_VERSION-${TRIGGERING_COMMIT:0:7}
+  - cp output/manuscript.html $MANUSCRIPT_FILENAME.html
+  - cp output/manuscript.pdf $MANUSCRIPT_FILENAME.pdf
+  - appveyor PushArtifact $MANUSCRIPT_FILENAME.html
+  - appveyor PushArtifact $MANUSCRIPT_FILENAME.pdf
 
 build: off
 
@@ -40,7 +42,7 @@ cache:
 
 on_success:
   - echo "Artifacts available from $APPVEYOR_URL/project/$APPVEYOR_ACCOUNT_NAME/$APPVEYOR_PROJECT_SLUG/builds/$APPVEYOR_BUILD_ID/artifacts"
-  - echo "Updated PDF available from $APPVEYOR_URL/api/buildjobs/$APPVEYOR_JOB_ID/artifacts/$MANUSCRIPT_FILENAME"
+  - echo "Updated PDF available from $APPVEYOR_URL/api/buildjobs/$APPVEYOR_JOB_ID/artifacts/$MANUSCRIPT_FILENAME.pdf"
 
 # The following lines can be safely deleted, which will disable AppVeyorBot
 # notifications in GitHub pull requests
@@ -50,8 +52,7 @@ on_success:
 notifications:
   - provider: GitHubPullRequest
     template: "AppVeyor [build {{buildVersion}}]({{buildUrl}})
-      {{#jobs}}{{#messages}} for {{message}} by @{{&commitAuthorUsername}} {{/messages}}{{/jobs}}
-      {{#passed}} is now complete.{{/passed}}
+      {{#jobs}}{{#messages}} for {{message}} by @{{&commitAuthorUsername}}{{/messages}}{{/jobs}}
+      {{#passed}} is now complete. The rendered manuscript from this build is temporarily available for download at:\n\n{{/passed}}
       {{#failed}} failed.{{/failed}}
-      {{#jobs}}{{#artifacts}} The rendered manuscript from this build is temporarily available for download at
-      [`{{fileName}}`]({{permalink}}).{{/artifacts}}{{/jobs}}"
+      {{#jobs}}{{#artifacts}}- [`{{fileName}}`]({{permalink}})\n{{/artifacts}}{{/jobs}}"

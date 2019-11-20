@@ -191,6 +191,28 @@ funders: GBMF4552  # optional
 
 Note that `affiliations` should be a list to allow for multiple affiliations per author.
 
+### Thumbnail
+
+A thumbnail is an image used to visually represent the manuscript,
+such as when a manuscript is shared on social media or added to the [Manubot catalog](https://manubot.org/catalog/).
+Specify a thumbnail in any of the following ways:
+
+1. placing an image named `thumbnail.png` anywhere in the manuscript repository (for example, in the root directory).
+2. setting `thumbnail` in `metadata.yaml` to a path, relative to the repository root, where the image file is located.
+    Example:
+    ```yaml
+    thumbnail: build/assets/thumbnail-1000x1000.png
+    ```
+3. setting `thumbnail` in `metadata.yaml` to an absolute URL where the image is located.
+    Example:
+    ```yaml
+    thumbnail: https://github.com/greenelab/meta-review/raw/master/thumbnail.png
+    ```
+
+Methods 2 and 3 take precedence over method 1.
+View the [guidelines here](https://github.com/manubot/catalog#thumbnail-guidelines) for suggestions on how to create a good thumbnail.
+Key points are that thumbnails should be 1000 × 1000 pixels, PNG formatted, and striking.
+
 ## Custom formatting
 
 Modifying the manuscript formatting requires modifying the CSS in the file [`build/themes/default.html`](build/themes/default.html).
