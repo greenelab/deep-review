@@ -17,13 +17,22 @@ Please reference [Pull Request #40](https://github.com/manubot/rootstock/pull/40
 
 Note: currently, **Windows is not supported**.
 
-Install or update the [conda](https://conda.io) environment specified in [`environment.yml`](environment.yml) by running the following commands from this directory:
+Install the [conda](https://conda.io) environment specified in [`environment.yml`](environment.yml) by running the following commands from this directory:
 
 ```sh
-# If the manubot environment already exists, remove it first
-conda env remove --name manubot
-
 # Install the environment
+conda env create --file environment.yml
+```
+
+If the `manubot` environment is already installed, but needs to be updated to reflect changes to `environment.yml`, use one of the following options:
+
+```shell
+# option 1: update the existing environment.
+conda env update --file environment.yml
+
+# option 2: remove and reinstall the manubot environment.
+# Slower than option 1, but guarantees a fresh environment.
+conda env remove --name manubot
 conda env create --file environment.yml
 ```
 
