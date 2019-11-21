@@ -1,633 +1,693 @@
 {
-  "date": "September 7, 2019",
-  "authors": [
-    {
-      "github": "traversc",
-      "name": "Travers Ching",
-      "orcid": "0000-0002-5577-3516",
-      "email": "traversc@gmail.com",
-      "affiliations": [
-        "Molecular Biosciences and Bioengineering Graduate Program, University of Hawaii at Manoa, Honolulu, HI"
-      ],
-      "symbol_str": "☯",
-      "affiliation_numbers": [
-        1
-      ]
-    },
-    {
-      "github": "dhimmel",
-      "name": "Daniel S. Himmelstein",
-      "orcid": "0000-0002-3012-7446",
-      "email": "daniel.himmelstein@gmail.com",
-      "affiliations": [
-        "Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA"
-      ],
-      "funders": "GBMF GBMF4552",
-      "affiliation_numbers": [
-        2
-      ]
-    },
-    {
-      "github": "brettbj",
-      "name": "Brett K. Beaulieu-Jones",
-      "orcid": "0000-0002-6700-1468",
-      "email": "brettbe@upenn.edu",
-      "affiliations": [
-        "Genomics and Computational Biology Graduate Group, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA"
-      ],
-      "funders": "NIH R01AI116794",
-      "affiliation_numbers": [
-        3
-      ]
-    },
-    {
-      "github": "alxndrkalinin",
-      "name": "Alexandr A. Kalinin",
-      "orcid": "0000-0003-4563-3226",
-      "email": "akalinin@umich.edu",
-      "affiliations": [
-        "Department of Computational Medicine and Bioinformatics, University of Michigan Medical School, Ann Arbor, MI"
-      ],
-      "affiliation_numbers": [
-        4
-      ]
-    },
-    {
-      "github": "bdo311",
-      "name": "Brian T. Do",
-      "orcid": "0000-0003-4992-2623",
-      "email": "brian_do@hms.harvard.edu",
-      "affiliations": [
-        "Harvard Medical School, Boston, MA"
-      ],
-      "funders": "NIH T32GM007753",
-      "affiliation_numbers": [
-        5
-      ]
-    },
-    {
-      "github": "gwaygenomics",
-      "name": "Gregory P. Way",
-      "orcid": "0000-0002-0503-9348",
-      "email": "gregory.way@gmail.com",
-      "affiliations": [
-        "Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA"
-      ],
-      "funders": "NIH T32HG000046",
-      "affiliation_numbers": [
-        2
-      ]
-    },
-    {
-      "github": "enricoferrero",
-      "name": "Enrico Ferrero",
-      "orcid": "0000-0002-8362-100X",
-      "email": "enrico.x.ferrero@gsk.com",
-      "affiliations": [
-        "Computational Biology and Stats, Target Sciences, GlaxoSmithKline, Stevenage, United Kingdom"
-      ],
-      "affiliation_numbers": [
-        6
-      ]
-    },
-    {
-      "github": "agapow",
-      "name": "Paul-Michael Agapow",
-      "orcid": "0000-0003-1126-1479",
-      "email": "p.agapow@imperial.ac.uk",
-      "affiliations": [
-        "Data Science Institute, Imperial College London, London, United Kingdom"
-      ],
-      "affiliation_numbers": [
-        7
-      ]
-    },
-    {
-      "github": "zietzm",
-      "name": "Michael Zietz",
-      "initials": "MZ",
-      "orcid": "0000-0003-0539-630X",
-      "email": "zietz@sas.upenn.edu",
-      "affiliations": [
-        "Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA"
-      ],
-      "funders": "Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences",
-      "affiliation_numbers": [
-        2
-      ]
-    },
-    {
-      "github": "michaelmhoffman",
-      "name": "Michael M. Hoffman",
-      "initials": "MMH",
-      "orcid": "0000-0002-4517-1562",
-      "email": "michael.hoffman@utoronto.ca",
-      "affiliations": [
-        "Princess Margaret Cancer Centre, Toronto, ON, Canada",
-        "Department of Medical Biophysics, University of Toronto, Toronto, ON, Canada",
-        "Department of Computer Science, University of Toronto, Toronto, ON, Canada"
-      ],
-      "funders": "NSERC RGPIN-2015-3948",
-      "affiliation_numbers": [
-        8,
-        9,
-        10
-      ]
-    },
-    {
-      "github": "xieconnect",
-      "name": "Wei Xie",
-      "orcid": "0000-0002-1871-6846",
-      "email": "wei.xie@vanderbilt.edu",
-      "affiliations": [
-        "Electrical Engineering and Computer Science, Vanderbilt University, Nashville, TN"
-      ],
-      "affiliation_numbers": [
-        11
-      ]
-    },
-    {
-      "github": "gailrosen",
-      "name": "Gail L. Rosen",
-      "orcid": "0000-0003-1763-5750",
-      "email": "gailr@ece.drexel.edu",
-      "affiliations": [
-        "Ecological and Evolutionary Signal-processing and Informatics Laboratory, Department of Electrical and Computer Engineering, Drexel University, Philadelphia, PA"
-      ],
-      "funders": "NSF 1245632",
-      "affiliation_numbers": [
-        12
-      ]
-    },
-    {
-      "github": "blengerich",
-      "name": "Benjamin J. Lengerich",
-      "orcid": "0000-0001-8690-9554",
-      "email": "blengeri@cs.cmu.edu",
-      "affiliations": [
-        "Computational Biology Department, School of Computer Science, Carnegie Mellon University, Pittsburgh, PA"
-      ],
-      "affiliation_numbers": [
-        13
-      ]
-    },
-    {
-      "github": "jisraeli",
-      "name": "Johnny Israeli",
-      "orcid": "0000-0003-1633-5780",
-      "email": "jisraeli@stanford.edu",
-      "affiliations": [
-        "Biophysics Program, Stanford University, Stanford, CA"
-      ],
-      "affiliation_numbers": [
-        14
-      ]
-    },
-    {
-      "github": "jacklanchantin",
-      "name": "Jack Lanchantin",
-      "orcid": "0000-0003-0811-0944",
-      "email": "jjl5sw@virginia.edu",
-      "affiliations": [
-        "Department of Computer Science, University of Virginia, Charlottesville, VA"
-      ],
-      "affiliation_numbers": [
-        15
-      ]
-    },
-    {
-      "github": "sw1",
-      "name": "Stephen Woloszynek",
-      "orcid": "0000-0003-0568-298X",
-      "email": "sw424@drexel.edu",
-      "affiliations": [
-        "Ecological and Evolutionary Signal-processing and Informatics Laboratory, Department of Electrical and Computer Engineering, Drexel University, Philadelphia, PA"
-      ],
-      "affiliation_numbers": [
-        12
-      ]
-    },
-    {
-      "github": "annecarpenter",
-      "name": "Anne E. Carpenter",
-      "orcid": "0000-0003-1555-8261",
-      "email": "anne@broadinstitute.org",
-      "affiliations": [
-        "Imaging Platform, Broad Institute of Harvard and MIT, Cambridge, MA"
-      ],
-      "funders": "NIH R01GM089652",
-      "affiliation_numbers": [
-        16
-      ]
-    },
-    {
-      "github": "AvantiShri",
-      "name": "Avanti Shrikumar",
-      "orcid": "0000-0002-6443-4671",
-      "email": "avanti@stanford.edu",
-      "affiliations": [
-        "Department of Computer Science, Stanford University, Stanford, CA"
-      ],
-      "affiliation_numbers": [
-        17
-      ]
-    },
-    {
-      "github": "j3xugit",
-      "name": "Jinbo Xu",
-      "orcid": "0000-0001-7111-4839",
-      "email": "jinboxu@gmail.com",
-      "affiliations": [
-        "Toyota Technological Institute at Chicago, Chicago, IL"
-      ],
-      "funders": "NIH R01GM089753, NSF 1564955",
-      "affiliation_numbers": [
-        18
-      ]
-    },
-    {
-      "github": "evancofer",
-      "name": "Evan M. Cofer",
-      "orcid": "0000-0003-3877-0433",
-      "email": "ecofer@princeton.edu",
-      "affiliations": [
-        "Department of Computer Science, Trinity University, San Antonio, TX",
-        "Lewis-Sigler Institute for Integrative Genomics, Princeton University, Princeton, NJ"
-      ],
-      "funders": "NSF 1531594",
-      "affiliation_numbers": [
-        19,
-        20
-      ]
-    },
-    {
-      "github": "lavenderca",
-      "name": "Christopher A. Lavender",
-      "initials": "CAL",
-      "orcid": "0000-0002-7762-1089",
-      "email": "christopher.lavender@nih.gov",
-      "affiliations": [
-        "Integrative Bioinformatics, National Institute of Environmental Health Sciences, National Institutes of Health, Research Triangle Park, NC"
-      ],
-      "affiliation_numbers": [
-        21
-      ]
-    },
-    {
-      "github": "SriniTuraga",
-      "name": "Srinivas C. Turaga",
-      "initials": "SCT",
-      "orcid": "0000-0003-3247-6487",
-      "email": "turagas@janelia.hhmi.org",
-      "affiliations": [
-        "Howard Hughes Medical Institute, Janelia Research Campus, Ashburn, VA"
-      ],
-      "funders": "Howard Hughes Medical Institute",
-      "affiliation_numbers": [
-        22
-      ]
-    },
-    {
-      "github": "alexandari",
-      "name": "Amr M. Alexandari",
-      "initials": "AMA",
-      "orcid": "0000-0001-8655-8109",
-      "email": "amr.alexandari@gmail.com",
-      "affiliations": [
-        "Department of Computer Science, Stanford University, Stanford, CA"
-      ],
-      "affiliation_numbers": [
-        17
-      ]
-    },
-    {
-      "github": "luzh2",
-      "name": "Zhiyong Lu",
-      "initials": "ZL",
-      "orcid": "0000-0001-9998-916X",
-      "email": "zhiyong.lu@nih.gov",
-      "affiliations": [
-        "National Center for Biotechnology Information and National Library of Medicine, National Institutes of Health, Bethesda, MD"
-      ],
-      "funders": "National Institutes of Health Intramural Research Program and National Library of Medicine",
-      "affiliation_numbers": [
-        23
-      ]
-    },
-    {
-      "github": "davharris",
-      "name": "David J. Harris",
-      "orcid": "0000-0003-3332-9307",
-      "email": "dave@harris-research.me",
-      "affiliations": [
-        "Department of Wildlife Ecology and Conservation, University of Florida, Gainesville, FL"
-      ],
-      "funders": "GBMF GBMF4563",
-      "affiliation_numbers": [
-        24
-      ]
-    },
-    {
-      "github": "DaveDeCaprio",
-      "name": "Dave DeCaprio",
-      "orcid": "0000-0001-8931-9461",
-      "email": "daved@alum.mit.edu",
-      "affiliations": [
-        "ClosedLoop.ai, Austin, TX"
-      ],
-      "affiliation_numbers": [
-        25
-      ]
-    },
-    {
-      "github": "qiyanjun",
-      "name": "Yanjun Qi",
-      "orcid": "0000-0002-5796-7453",
-      "email": "yq2h@virginia.edu",
-      "affiliations": [
-        "Department of Computer Science, University of Virginia, Charlottesville, VA"
-      ],
-      "affiliation_numbers": [
-        15
-      ]
-    },
-    {
-      "github": "akundaje",
-      "name": "Anshul Kundaje",
-      "orcid": "0000-0003-3084-2287",
-      "email": "akundaje@stanford.edu",
-      "affiliations": [
-        "Department of Genetics, Stanford University, Stanford, CA",
-        "Department of Computer Science, Stanford University, Stanford, CA"
-      ],
-      "funders": "NIH DP2GM123485",
-      "affiliation_numbers": [
-        17,
-        26
-      ]
-    },
-    {
-      "github": "yfpeng",
-      "name": "Yifan Peng",
-      "orcid": "0000-0001-9309-8331",
-      "email": "yifan.peng@nih.gov",
-      "affiliations": [
-        "National Center for Biotechnology Information and National Library of Medicine, National Institutes of Health, Bethesda, MD"
-      ],
-      "funders": "National Institutes of Health Intramural Research Program and National Library of Medicine",
-      "affiliation_numbers": [
-        23
-      ]
-    },
-    {
-      "github": "laurakwiley",
-      "name": "Laura K. Wiley",
-      "orcid": "0000-0001-6681-9754",
-      "email": "laura.wiley@ucdenver.edu",
-      "affiliations": [
-        "Division of Biomedical Informatics and Personalized Medicine, University of Colorado School of Medicine, Aurora, CO"
-      ],
-      "affiliation_numbers": [
-        27
-      ]
-    },
-    {
-      "github": "mrwns",
-      "name": "Marwin H.S. Segler",
-      "orcid": "0000-0001-8008-0546",
-      "email": "marwin.segler@uni-muenster.de",
-      "affiliations": [
-        "Institute of Organic Chemistry, Westfälische Wilhelms-Universität Münster, Münster, Germany"
-      ],
-      "affiliation_numbers": [
-        28
-      ]
-    },
-    {
-      "github": "SiminaB",
-      "name": "Simina M. Boca",
-      "initials": "SMB",
-      "orcid": "0000-0002-1400-3398",
-      "email": "smb310@georgetown.edu",
-      "affiliations": [
-        "Innovation Center for Biomedical Informatics, Georgetown University Medical Center, Washington, DC"
-      ],
-      "funders": "NIH R21CA220398, NIH P30CA051008",
-      "affiliation_numbers": [
-        29
-      ]
-    },
-    {
-      "github": "swamidass",
-      "name": "S. Joshua Swamidass",
-      "initials": "SJS",
-      "orcid": "0000-0003-2191-0778",
-      "email": "swamidass@wustl.edu",
-      "affiliations": [
-        "Department of Pathology and Immunology, Washington University in Saint Louis, Saint Louis, MO"
-      ],
-      "funders": "NIH R01LM012222, NIH R01LM012482",
-      "affiliation_numbers": [
-        30
-      ]
-    },
-    {
-      "github": "austinvhuang",
-      "name": "Austin Huang",
-      "initials": "AH",
-      "orcid": "0000-0003-1349-4030",
-      "email": "austinh@alum.mit.edu",
-      "affiliations": [
-        "Department of Medicine, Brown University, Providence, RI"
-      ],
-      "affiliation_numbers": [
-        31
-      ]
-    },
-    {
-      "github": "agitter",
-      "name": "Anthony Gitter",
-      "orcid": "0000-0002-5324-9833",
-      "email": "gitter@biostat.wisc.edu",
-      "affiliations": [
-        "Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison, Madison, WI",
-        "Morgridge Institute for Research, Madison, WI"
-      ],
-      "funders": "NIH U54AI117924",
-      "symbol_str": "†",
-      "affiliation_numbers": [
-        32,
-        33
-      ]
-    },
-    {
-      "github": "cgreene",
-      "name": "Casey S. Greene",
-      "orcid": "0000-0001-8713-9213",
-      "email": "greenescientist@gmail.com",
-      "affiliations": [
-        "Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA"
-      ],
-      "funders": "GBMF GBMF4552",
-      "symbol_str": "†",
-      "affiliation_numbers": [
-        2
-      ]
-    }
-  ],
-  "affiliations": [
-    {
-      "affiliation": "Molecular Biosciences and Bioengineering Graduate Program, University of Hawaii at Manoa, Honolulu, HI",
-      "affiliation_number": 1
-    },
-    {
-      "affiliation": "Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA",
-      "affiliation_number": 2
-    },
-    {
-      "affiliation": "Genomics and Computational Biology Graduate Group, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA",
-      "affiliation_number": 3
-    },
-    {
-      "affiliation": "Department of Computational Medicine and Bioinformatics, University of Michigan Medical School, Ann Arbor, MI",
-      "affiliation_number": 4
-    },
-    {
-      "affiliation": "Harvard Medical School, Boston, MA",
-      "affiliation_number": 5
-    },
-    {
-      "affiliation": "Computational Biology and Stats, Target Sciences, GlaxoSmithKline, Stevenage, United Kingdom",
-      "affiliation_number": 6
-    },
-    {
-      "affiliation": "Data Science Institute, Imperial College London, London, United Kingdom",
-      "affiliation_number": 7
-    },
-    {
-      "affiliation": "Princess Margaret Cancer Centre, Toronto, ON, Canada",
-      "affiliation_number": 8
-    },
-    {
-      "affiliation": "Department of Medical Biophysics, University of Toronto, Toronto, ON, Canada",
-      "affiliation_number": 9
-    },
-    {
-      "affiliation": "Department of Computer Science, University of Toronto, Toronto, ON, Canada",
-      "affiliation_number": 10
-    },
-    {
-      "affiliation": "Electrical Engineering and Computer Science, Vanderbilt University, Nashville, TN",
-      "affiliation_number": 11
-    },
-    {
-      "affiliation": "Ecological and Evolutionary Signal-processing and Informatics Laboratory, Department of Electrical and Computer Engineering, Drexel University, Philadelphia, PA",
-      "affiliation_number": 12
-    },
-    {
-      "affiliation": "Computational Biology Department, School of Computer Science, Carnegie Mellon University, Pittsburgh, PA",
-      "affiliation_number": 13
-    },
-    {
-      "affiliation": "Biophysics Program, Stanford University, Stanford, CA",
-      "affiliation_number": 14
-    },
-    {
-      "affiliation": "Department of Computer Science, University of Virginia, Charlottesville, VA",
-      "affiliation_number": 15
-    },
-    {
-      "affiliation": "Imaging Platform, Broad Institute of Harvard and MIT, Cambridge, MA",
-      "affiliation_number": 16
-    },
-    {
-      "affiliation": "Department of Computer Science, Stanford University, Stanford, CA",
-      "affiliation_number": 17
-    },
-    {
-      "affiliation": "Toyota Technological Institute at Chicago, Chicago, IL",
-      "affiliation_number": 18
-    },
-    {
-      "affiliation": "Department of Computer Science, Trinity University, San Antonio, TX",
-      "affiliation_number": 19
-    },
-    {
-      "affiliation": "Lewis-Sigler Institute for Integrative Genomics, Princeton University, Princeton, NJ",
-      "affiliation_number": 20
-    },
-    {
-      "affiliation": "Integrative Bioinformatics, National Institute of Environmental Health Sciences, National Institutes of Health, Research Triangle Park, NC",
-      "affiliation_number": 21
-    },
-    {
-      "affiliation": "Howard Hughes Medical Institute, Janelia Research Campus, Ashburn, VA",
-      "affiliation_number": 22
-    },
-    {
-      "affiliation": "National Center for Biotechnology Information and National Library of Medicine, National Institutes of Health, Bethesda, MD",
-      "affiliation_number": 23
-    },
-    {
-      "affiliation": "Department of Wildlife Ecology and Conservation, University of Florida, Gainesville, FL",
-      "affiliation_number": 24
-    },
-    {
-      "affiliation": "ClosedLoop.ai, Austin, TX",
-      "affiliation_number": 25
-    },
-    {
-      "affiliation": "Department of Genetics, Stanford University, Stanford, CA",
-      "affiliation_number": 26
-    },
-    {
-      "affiliation": "Division of Biomedical Informatics and Personalized Medicine, University of Colorado School of Medicine, Aurora, CO",
-      "affiliation_number": 27
-    },
-    {
-      "affiliation": "Institute of Organic Chemistry, Westfälische Wilhelms-Universität Münster, Münster, Germany",
-      "affiliation_number": 28
-    },
-    {
-      "affiliation": "Innovation Center for Biomedical Informatics, Georgetown University Medical Center, Washington, DC",
-      "affiliation_number": 29
-    },
-    {
-      "affiliation": "Department of Pathology and Immunology, Washington University in Saint Louis, Saint Louis, MO",
-      "affiliation_number": 30
-    },
-    {
-      "affiliation": "Department of Medicine, Brown University, Providence, RI",
-      "affiliation_number": 31
-    },
-    {
-      "affiliation": "Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison, Madison, WI",
-      "affiliation_number": 32
-    },
-    {
-      "affiliation": "Morgridge Institute for Research, Madison, WI",
-      "affiliation_number": 33
-    }
-  ],
-  "ci_source": {
-    "provider": "travis",
-    "repo_slug": "greenelab/deep-review",
-    "repo_owner": "greenelab",
-    "repo_name": "deep-review",
-    "commit": "ddb7b9fa0dff6386e2e182fe3390b89c3cdeb7df",
-    "triggering_commit": "ddb7b9fa0dff6386e2e182fe3390b89c3cdeb7df",
-    "build_url": "https://travis-ci.org/greenelab/deep-review/builds/582147819",
-    "job_url": "https://travis-ci.org/greenelab/deep-review/jobs/582147820",
-    "manuscript_url": "https://greenelab.github.io/deep-review/v/ddb7b9fa0dff6386e2e182fe3390b89c3cdeb7df/"
+  "pandoc": {
+    "title": "Opportunities and obstacles for deep learning in biology and medicine: 2019 update",
+    "keywords": [
+      "deep learning",
+      "review",
+      "precision medicine",
+      "genomics",
+      "machine learning",
+      "neural networks",
+      "collaborative",
+      "manubot"
+    ],
+    "lang": "en-US",
+    "date-meta": "2019-11-21",
+    "author-meta": [
+      "Travers Ching",
+      "Daniel S. Himmelstein",
+      "Brett K. Beaulieu-Jones",
+      "Alexandr A. Kalinin",
+      "Brian T. Do",
+      "Gregory P. Way",
+      "Enrico Ferrero",
+      "Paul-Michael Agapow",
+      "Michael Zietz",
+      "Michael M. Hoffman",
+      "Wei Xie",
+      "Gail L. Rosen",
+      "Benjamin J. Lengerich",
+      "Johnny Israeli",
+      "Jack Lanchantin",
+      "Stephen Woloszynek",
+      "Anne E. Carpenter",
+      "Avanti Shrikumar",
+      "Jinbo Xu",
+      "Evan M. Cofer",
+      "Christopher A. Lavender",
+      "Srinivas C. Turaga",
+      "Amr M. Alexandari",
+      "Zhiyong Lu",
+      "David J. Harris",
+      "Dave DeCaprio",
+      "Yanjun Qi",
+      "Anshul Kundaje",
+      "Yifan Peng",
+      "Laura K. Wiley",
+      "Marwin H.S. Segler",
+      "Simina M. Boca",
+      "S. Joshua Swamidass",
+      "Austin Huang",
+      "Anthony Gitter",
+      "Casey S. Greene"
+    ],
+    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Opportunities and obstacles for deep learning in biology and medicine: 2019 update\" />\n<meta name=\"citation_title\" content=\"Opportunities and obstacles for deep learning in biology and medicine: 2019 update\" />\n<meta property=\"og:title\" content=\"Opportunities and obstacles for deep learning in biology and medicine: 2019 update\" />\n<meta property=\"twitter:title\" content=\"Opportunities and obstacles for deep learning in biology and medicine: 2019 update\" />\n<meta name=\"dc.date\" content=\"2019-11-21\" />\n<meta name=\"citation_publication_date\" content=\"2019-11-21\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Travers Ching\" />\n<meta name=\"citation_author_institution\" content=\"Molecular Biosciences and Bioengineering Graduate Program, University of Hawaii at Manoa, Honolulu, HI\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-5577-3516\" />\n<meta name=\"citation_author\" content=\"Daniel S. Himmelstein\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-3012-7446\" />\n<meta name=\"citation_author\" content=\"Brett K. Beaulieu-Jones\" />\n<meta name=\"citation_author_institution\" content=\"Genomics and Computational Biology Graduate Group, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-6700-1468\" />\n<meta name=\"citation_author\" content=\"Alexandr A. Kalinin\" />\n<meta name=\"citation_author_institution\" content=\"Department of Computational Medicine and Bioinformatics, University of Michigan Medical School, Ann Arbor, MI\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-4563-3226\" />\n<meta name=\"citation_author\" content=\"Brian T. Do\" />\n<meta name=\"citation_author_institution\" content=\"Harvard Medical School, Boston, MA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-4992-2623\" />\n<meta name=\"citation_author\" content=\"Gregory P. Way\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-0503-9348\" />\n<meta name=\"citation_author\" content=\"Enrico Ferrero\" />\n<meta name=\"citation_author_institution\" content=\"Computational Biology and Stats, Target Sciences, GlaxoSmithKline, Stevenage, United Kingdom\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-8362-100X\" />\n<meta name=\"citation_author\" content=\"Paul-Michael Agapow\" />\n<meta name=\"citation_author_institution\" content=\"Data Science Institute, Imperial College London, London, United Kingdom\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1126-1479\" />\n<meta name=\"citation_author\" content=\"Michael Zietz\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-0539-630X\" />\n<meta name=\"citation_author\" content=\"Michael M. Hoffman\" />\n<meta name=\"citation_author_institution\" content=\"Princess Margaret Cancer Centre, Toronto, ON, Canada\" />\n<meta name=\"citation_author_institution\" content=\"Department of Medical Biophysics, University of Toronto, Toronto, ON, Canada\" />\n<meta name=\"citation_author_institution\" content=\"Department of Computer Science, University of Toronto, Toronto, ON, Canada\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-4517-1562\" />\n<meta name=\"citation_author\" content=\"Wei Xie\" />\n<meta name=\"citation_author_institution\" content=\"Electrical Engineering and Computer Science, Vanderbilt University, Nashville, TN\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-1871-6846\" />\n<meta name=\"citation_author\" content=\"Gail L. Rosen\" />\n<meta name=\"citation_author_institution\" content=\"Ecological and Evolutionary Signal-processing and Informatics Laboratory, Department of Electrical and Computer Engineering, Drexel University, Philadelphia, PA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1763-5750\" />\n<meta name=\"citation_author\" content=\"Benjamin J. Lengerich\" />\n<meta name=\"citation_author_institution\" content=\"Computational Biology Department, School of Computer Science, Carnegie Mellon University, Pittsburgh, PA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8690-9554\" />\n<meta name=\"citation_author\" content=\"Johnny Israeli\" />\n<meta name=\"citation_author_institution\" content=\"Biophysics Program, Stanford University, Stanford, CA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1633-5780\" />\n<meta name=\"citation_author\" content=\"Jack Lanchantin\" />\n<meta name=\"citation_author_institution\" content=\"Department of Computer Science, University of Virginia, Charlottesville, VA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-0811-0944\" />\n<meta name=\"citation_author\" content=\"Stephen Woloszynek\" />\n<meta name=\"citation_author_institution\" content=\"Ecological and Evolutionary Signal-processing and Informatics Laboratory, Department of Electrical and Computer Engineering, Drexel University, Philadelphia, PA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-0568-298X\" />\n<meta name=\"citation_author\" content=\"Anne E. Carpenter\" />\n<meta name=\"citation_author_institution\" content=\"Imaging Platform, Broad Institute of Harvard and MIT, Cambridge, MA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1555-8261\" />\n<meta name=\"citation_author\" content=\"Avanti Shrikumar\" />\n<meta name=\"citation_author_institution\" content=\"Department of Computer Science, Stanford University, Stanford, CA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-6443-4671\" />\n<meta name=\"citation_author\" content=\"Jinbo Xu\" />\n<meta name=\"citation_author_institution\" content=\"Toyota Technological Institute at Chicago, Chicago, IL\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-7111-4839\" />\n<meta name=\"citation_author\" content=\"Evan M. Cofer\" />\n<meta name=\"citation_author_institution\" content=\"Department of Computer Science, Trinity University, San Antonio, TX\" />\n<meta name=\"citation_author_institution\" content=\"Lewis-Sigler Institute for Integrative Genomics, Princeton University, Princeton, NJ\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3877-0433\" />\n<meta name=\"citation_author\" content=\"Christopher A. Lavender\" />\n<meta name=\"citation_author_institution\" content=\"Integrative Bioinformatics, National Institute of Environmental Health Sciences, National Institutes of Health, Research Triangle Park, NC\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-7762-1089\" />\n<meta name=\"citation_author\" content=\"Srinivas C. Turaga\" />\n<meta name=\"citation_author_institution\" content=\"Howard Hughes Medical Institute, Janelia Research Campus, Ashburn, VA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3247-6487\" />\n<meta name=\"citation_author\" content=\"Amr M. Alexandari\" />\n<meta name=\"citation_author_institution\" content=\"Department of Computer Science, Stanford University, Stanford, CA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8655-8109\" />\n<meta name=\"citation_author\" content=\"Zhiyong Lu\" />\n<meta name=\"citation_author_institution\" content=\"National Center for Biotechnology Information and National Library of Medicine, National Institutes of Health, Bethesda, MD\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-9998-916X\" />\n<meta name=\"citation_author\" content=\"David J. Harris\" />\n<meta name=\"citation_author_institution\" content=\"Department of Wildlife Ecology and Conservation, University of Florida, Gainesville, FL\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3332-9307\" />\n<meta name=\"citation_author\" content=\"Dave DeCaprio\" />\n<meta name=\"citation_author_institution\" content=\"ClosedLoop.ai, Austin, TX\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8931-9461\" />\n<meta name=\"citation_author\" content=\"Yanjun Qi\" />\n<meta name=\"citation_author_institution\" content=\"Department of Computer Science, University of Virginia, Charlottesville, VA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-5796-7453\" />\n<meta name=\"citation_author\" content=\"Anshul Kundaje\" />\n<meta name=\"citation_author_institution\" content=\"Department of Genetics, Stanford University, Stanford, CA\" />\n<meta name=\"citation_author_institution\" content=\"Department of Computer Science, Stanford University, Stanford, CA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3084-2287\" />\n<meta name=\"citation_author\" content=\"Yifan Peng\" />\n<meta name=\"citation_author_institution\" content=\"National Center for Biotechnology Information and National Library of Medicine, National Institutes of Health, Bethesda, MD\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-9309-8331\" />\n<meta name=\"citation_author\" content=\"Laura K. Wiley\" />\n<meta name=\"citation_author_institution\" content=\"Division of Biomedical Informatics and Personalized Medicine, University of Colorado School of Medicine, Aurora, CO\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-6681-9754\" />\n<meta name=\"citation_author\" content=\"Marwin H.S. Segler\" />\n<meta name=\"citation_author_institution\" content=\"Institute of Organic Chemistry, Westfälische Wilhelms-Universität Münster, Münster, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8008-0546\" />\n<meta name=\"citation_author\" content=\"Simina M. Boca\" />\n<meta name=\"citation_author_institution\" content=\"Innovation Center for Biomedical Informatics, Georgetown University Medical Center, Washington, DC\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-1400-3398\" />\n<meta name=\"citation_author\" content=\"S. Joshua Swamidass\" />\n<meta name=\"citation_author_institution\" content=\"Department of Pathology and Immunology, Washington University in Saint Louis, Saint Louis, MO\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-2191-0778\" />\n<meta name=\"citation_author\" content=\"Austin Huang\" />\n<meta name=\"citation_author_institution\" content=\"Department of Medicine, Brown University, Providence, RI\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1349-4030\" />\n<meta name=\"citation_author\" content=\"Anthony Gitter\" />\n<meta name=\"citation_author_institution\" content=\"Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison, Madison, WI\" />\n<meta name=\"citation_author_institution\" content=\"Morgridge Institute for Research, Madison, WI\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-5324-9833\" />\n<meta name=\"citation_author\" content=\"Casey S. Greene\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8713-9213\" />\n<link rel=\"canonical\" href=\"https://greenelab.github.io/deep-review/\" />\n<meta property=\"og:url\" content=\"https://greenelab.github.io/deep-review/\" />\n<meta property=\"twitter:url\" content=\"https://greenelab.github.io/deep-review/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://greenelab.github.io/deep-review/\" />\n<meta name=\"citation_pdf_url\" content=\"https://greenelab.github.io/deep-review/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://greenelab.github.io/deep-review/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://greenelab.github.io/deep-review/v/60d8d13864fd91c0fd7dd8da03ce422a02685d47/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://greenelab.github.io/deep-review/v/60d8d13864fd91c0fd7dd8da03ce422a02685d47/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://greenelab.github.io/deep-review/v/60d8d13864fd91c0fd7dd8da03ce422a02685d47/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<meta property=\"og:image\" content=\"https://github.com/greenelab/deep-review/raw/60d8d13864fd91c0fd7dd8da03ce422a02685d47/thumbnail.png\" />\n<meta property=\"twitter:image\" content=\"https://github.com/greenelab/deep-review/raw/60d8d13864fd91c0fd7dd8da03ce422a02685d47/thumbnail.png\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->"
   },
-  "manuscript_stats": {
-    "reference_counts": {
-      "arxiv": 132,
-      "doi": 417,
-      "pmcid": 6,
-      "url": 48,
-      "total": 603
+  "manubot": {
+    "date": "November 21, 2019",
+    "authors": [
+      {
+        "github": "traversc",
+        "name": "Travers Ching",
+        "orcid": "0000-0002-5577-3516",
+        "email": "traversc@gmail.com",
+        "affiliations": [
+          "Molecular Biosciences and Bioengineering Graduate Program, University of Hawaii at Manoa, Honolulu, HI"
+        ],
+        "symbol_str": "☯",
+        "affiliation_numbers": [
+          1
+        ]
+      },
+      {
+        "github": "dhimmel",
+        "name": "Daniel S. Himmelstein",
+        "orcid": "0000-0002-3012-7446",
+        "email": "daniel.himmelstein@gmail.com",
+        "affiliations": [
+          "Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA"
+        ],
+        "funders": "GBMF GBMF4552",
+        "affiliation_numbers": [
+          2
+        ]
+      },
+      {
+        "github": "brettbj",
+        "name": "Brett K. Beaulieu-Jones",
+        "orcid": "0000-0002-6700-1468",
+        "email": "brettbe@upenn.edu",
+        "affiliations": [
+          "Genomics and Computational Biology Graduate Group, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA"
+        ],
+        "funders": "NIH R01AI116794",
+        "affiliation_numbers": [
+          3
+        ]
+      },
+      {
+        "github": "alxndrkalinin",
+        "name": "Alexandr A. Kalinin",
+        "orcid": "0000-0003-4563-3226",
+        "email": "akalinin@umich.edu",
+        "affiliations": [
+          "Department of Computational Medicine and Bioinformatics, University of Michigan Medical School, Ann Arbor, MI"
+        ],
+        "affiliation_numbers": [
+          4
+        ]
+      },
+      {
+        "github": "bdo311",
+        "name": "Brian T. Do",
+        "orcid": "0000-0003-4992-2623",
+        "email": "brian_do@hms.harvard.edu",
+        "affiliations": [
+          "Harvard Medical School, Boston, MA"
+        ],
+        "funders": "NIH T32GM007753",
+        "affiliation_numbers": [
+          5
+        ]
+      },
+      {
+        "github": "gwaygenomics",
+        "name": "Gregory P. Way",
+        "orcid": "0000-0002-0503-9348",
+        "email": "gregory.way@gmail.com",
+        "affiliations": [
+          "Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA"
+        ],
+        "funders": "NIH T32HG000046",
+        "affiliation_numbers": [
+          2
+        ]
+      },
+      {
+        "github": "enricoferrero",
+        "name": "Enrico Ferrero",
+        "orcid": "0000-0002-8362-100X",
+        "email": "enrico.x.ferrero@gsk.com",
+        "affiliations": [
+          "Computational Biology and Stats, Target Sciences, GlaxoSmithKline, Stevenage, United Kingdom"
+        ],
+        "affiliation_numbers": [
+          6
+        ]
+      },
+      {
+        "github": "agapow",
+        "name": "Paul-Michael Agapow",
+        "orcid": "0000-0003-1126-1479",
+        "email": "p.agapow@imperial.ac.uk",
+        "affiliations": [
+          "Data Science Institute, Imperial College London, London, United Kingdom"
+        ],
+        "affiliation_numbers": [
+          7
+        ]
+      },
+      {
+        "github": "zietzm",
+        "name": "Michael Zietz",
+        "initials": "MZ",
+        "orcid": "0000-0003-0539-630X",
+        "email": "zietz@sas.upenn.edu",
+        "affiliations": [
+          "Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA"
+        ],
+        "funders": "Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences",
+        "affiliation_numbers": [
+          2
+        ]
+      },
+      {
+        "github": "michaelmhoffman",
+        "name": "Michael M. Hoffman",
+        "initials": "MMH",
+        "orcid": "0000-0002-4517-1562",
+        "email": "michael.hoffman@utoronto.ca",
+        "affiliations": [
+          "Princess Margaret Cancer Centre, Toronto, ON, Canada",
+          "Department of Medical Biophysics, University of Toronto, Toronto, ON, Canada",
+          "Department of Computer Science, University of Toronto, Toronto, ON, Canada"
+        ],
+        "funders": "NSERC RGPIN-2015-3948",
+        "affiliation_numbers": [
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "github": "xieconnect",
+        "name": "Wei Xie",
+        "orcid": "0000-0002-1871-6846",
+        "email": "wei.xie@vanderbilt.edu",
+        "affiliations": [
+          "Electrical Engineering and Computer Science, Vanderbilt University, Nashville, TN"
+        ],
+        "affiliation_numbers": [
+          11
+        ]
+      },
+      {
+        "github": "gailrosen",
+        "name": "Gail L. Rosen",
+        "orcid": "0000-0003-1763-5750",
+        "email": "gailr@ece.drexel.edu",
+        "affiliations": [
+          "Ecological and Evolutionary Signal-processing and Informatics Laboratory, Department of Electrical and Computer Engineering, Drexel University, Philadelphia, PA"
+        ],
+        "funders": "NSF 1245632",
+        "affiliation_numbers": [
+          12
+        ]
+      },
+      {
+        "github": "blengerich",
+        "name": "Benjamin J. Lengerich",
+        "orcid": "0000-0001-8690-9554",
+        "email": "blengeri@cs.cmu.edu",
+        "affiliations": [
+          "Computational Biology Department, School of Computer Science, Carnegie Mellon University, Pittsburgh, PA"
+        ],
+        "affiliation_numbers": [
+          13
+        ]
+      },
+      {
+        "github": "jisraeli",
+        "name": "Johnny Israeli",
+        "orcid": "0000-0003-1633-5780",
+        "email": "jisraeli@stanford.edu",
+        "affiliations": [
+          "Biophysics Program, Stanford University, Stanford, CA"
+        ],
+        "affiliation_numbers": [
+          14
+        ]
+      },
+      {
+        "github": "jacklanchantin",
+        "name": "Jack Lanchantin",
+        "orcid": "0000-0003-0811-0944",
+        "email": "jjl5sw@virginia.edu",
+        "affiliations": [
+          "Department of Computer Science, University of Virginia, Charlottesville, VA"
+        ],
+        "affiliation_numbers": [
+          15
+        ]
+      },
+      {
+        "github": "sw1",
+        "name": "Stephen Woloszynek",
+        "orcid": "0000-0003-0568-298X",
+        "email": "sw424@drexel.edu",
+        "affiliations": [
+          "Ecological and Evolutionary Signal-processing and Informatics Laboratory, Department of Electrical and Computer Engineering, Drexel University, Philadelphia, PA"
+        ],
+        "affiliation_numbers": [
+          12
+        ]
+      },
+      {
+        "github": "annecarpenter",
+        "name": "Anne E. Carpenter",
+        "orcid": "0000-0003-1555-8261",
+        "email": "anne@broadinstitute.org",
+        "affiliations": [
+          "Imaging Platform, Broad Institute of Harvard and MIT, Cambridge, MA"
+        ],
+        "funders": "NIH R01GM089652",
+        "affiliation_numbers": [
+          16
+        ]
+      },
+      {
+        "github": "AvantiShri",
+        "name": "Avanti Shrikumar",
+        "orcid": "0000-0002-6443-4671",
+        "email": "avanti@stanford.edu",
+        "affiliations": [
+          "Department of Computer Science, Stanford University, Stanford, CA"
+        ],
+        "affiliation_numbers": [
+          17
+        ]
+      },
+      {
+        "github": "j3xugit",
+        "name": "Jinbo Xu",
+        "orcid": "0000-0001-7111-4839",
+        "email": "jinboxu@gmail.com",
+        "affiliations": [
+          "Toyota Technological Institute at Chicago, Chicago, IL"
+        ],
+        "funders": "NIH R01GM089753, NSF 1564955",
+        "affiliation_numbers": [
+          18
+        ]
+      },
+      {
+        "github": "evancofer",
+        "name": "Evan M. Cofer",
+        "orcid": "0000-0003-3877-0433",
+        "email": "ecofer@princeton.edu",
+        "affiliations": [
+          "Department of Computer Science, Trinity University, San Antonio, TX",
+          "Lewis-Sigler Institute for Integrative Genomics, Princeton University, Princeton, NJ"
+        ],
+        "funders": "NSF 1531594",
+        "affiliation_numbers": [
+          19,
+          20
+        ]
+      },
+      {
+        "github": "lavenderca",
+        "name": "Christopher A. Lavender",
+        "initials": "CAL",
+        "orcid": "0000-0002-7762-1089",
+        "email": "christopher.lavender@nih.gov",
+        "affiliations": [
+          "Integrative Bioinformatics, National Institute of Environmental Health Sciences, National Institutes of Health, Research Triangle Park, NC"
+        ],
+        "affiliation_numbers": [
+          21
+        ]
+      },
+      {
+        "github": "SriniTuraga",
+        "name": "Srinivas C. Turaga",
+        "initials": "SCT",
+        "orcid": "0000-0003-3247-6487",
+        "email": "turagas@janelia.hhmi.org",
+        "affiliations": [
+          "Howard Hughes Medical Institute, Janelia Research Campus, Ashburn, VA"
+        ],
+        "funders": "Howard Hughes Medical Institute",
+        "affiliation_numbers": [
+          22
+        ]
+      },
+      {
+        "github": "alexandari",
+        "name": "Amr M. Alexandari",
+        "initials": "AMA",
+        "orcid": "0000-0001-8655-8109",
+        "email": "amr.alexandari@gmail.com",
+        "affiliations": [
+          "Department of Computer Science, Stanford University, Stanford, CA"
+        ],
+        "affiliation_numbers": [
+          17
+        ]
+      },
+      {
+        "github": "luzh2",
+        "name": "Zhiyong Lu",
+        "initials": "ZL",
+        "orcid": "0000-0001-9998-916X",
+        "email": "zhiyong.lu@nih.gov",
+        "affiliations": [
+          "National Center for Biotechnology Information and National Library of Medicine, National Institutes of Health, Bethesda, MD"
+        ],
+        "funders": "National Institutes of Health Intramural Research Program and National Library of Medicine",
+        "affiliation_numbers": [
+          23
+        ]
+      },
+      {
+        "github": "davharris",
+        "name": "David J. Harris",
+        "orcid": "0000-0003-3332-9307",
+        "email": "dave@harris-research.me",
+        "affiliations": [
+          "Department of Wildlife Ecology and Conservation, University of Florida, Gainesville, FL"
+        ],
+        "funders": "GBMF GBMF4563",
+        "affiliation_numbers": [
+          24
+        ]
+      },
+      {
+        "github": "DaveDeCaprio",
+        "name": "Dave DeCaprio",
+        "orcid": "0000-0001-8931-9461",
+        "email": "daved@alum.mit.edu",
+        "affiliations": [
+          "ClosedLoop.ai, Austin, TX"
+        ],
+        "affiliation_numbers": [
+          25
+        ]
+      },
+      {
+        "github": "qiyanjun",
+        "name": "Yanjun Qi",
+        "orcid": "0000-0002-5796-7453",
+        "email": "yq2h@virginia.edu",
+        "affiliations": [
+          "Department of Computer Science, University of Virginia, Charlottesville, VA"
+        ],
+        "affiliation_numbers": [
+          15
+        ]
+      },
+      {
+        "github": "akundaje",
+        "name": "Anshul Kundaje",
+        "orcid": "0000-0003-3084-2287",
+        "email": "akundaje@stanford.edu",
+        "affiliations": [
+          "Department of Genetics, Stanford University, Stanford, CA",
+          "Department of Computer Science, Stanford University, Stanford, CA"
+        ],
+        "funders": "NIH DP2GM123485",
+        "affiliation_numbers": [
+          17,
+          26
+        ]
+      },
+      {
+        "github": "yfpeng",
+        "name": "Yifan Peng",
+        "orcid": "0000-0001-9309-8331",
+        "email": "yifan.peng@nih.gov",
+        "affiliations": [
+          "National Center for Biotechnology Information and National Library of Medicine, National Institutes of Health, Bethesda, MD"
+        ],
+        "funders": "National Institutes of Health Intramural Research Program and National Library of Medicine",
+        "affiliation_numbers": [
+          23
+        ]
+      },
+      {
+        "github": "laurakwiley",
+        "name": "Laura K. Wiley",
+        "orcid": "0000-0001-6681-9754",
+        "email": "laura.wiley@ucdenver.edu",
+        "affiliations": [
+          "Division of Biomedical Informatics and Personalized Medicine, University of Colorado School of Medicine, Aurora, CO"
+        ],
+        "affiliation_numbers": [
+          27
+        ]
+      },
+      {
+        "github": "mrwns",
+        "name": "Marwin H.S. Segler",
+        "orcid": "0000-0001-8008-0546",
+        "email": "marwin.segler@uni-muenster.de",
+        "affiliations": [
+          "Institute of Organic Chemistry, Westfälische Wilhelms-Universität Münster, Münster, Germany"
+        ],
+        "affiliation_numbers": [
+          28
+        ]
+      },
+      {
+        "github": "SiminaB",
+        "name": "Simina M. Boca",
+        "initials": "SMB",
+        "orcid": "0000-0002-1400-3398",
+        "email": "smb310@georgetown.edu",
+        "affiliations": [
+          "Innovation Center for Biomedical Informatics, Georgetown University Medical Center, Washington, DC"
+        ],
+        "funders": "NIH R21CA220398, NIH P30CA051008",
+        "affiliation_numbers": [
+          29
+        ]
+      },
+      {
+        "github": "swamidass",
+        "name": "S. Joshua Swamidass",
+        "initials": "SJS",
+        "orcid": "0000-0003-2191-0778",
+        "email": "swamidass@wustl.edu",
+        "affiliations": [
+          "Department of Pathology and Immunology, Washington University in Saint Louis, Saint Louis, MO"
+        ],
+        "funders": "NIH R01LM012222, NIH R01LM012482",
+        "affiliation_numbers": [
+          30
+        ]
+      },
+      {
+        "github": "austinvhuang",
+        "name": "Austin Huang",
+        "initials": "AH",
+        "orcid": "0000-0003-1349-4030",
+        "email": "austinh@alum.mit.edu",
+        "affiliations": [
+          "Department of Medicine, Brown University, Providence, RI"
+        ],
+        "affiliation_numbers": [
+          31
+        ]
+      },
+      {
+        "github": "agitter",
+        "name": "Anthony Gitter",
+        "orcid": "0000-0002-5324-9833",
+        "email": "gitter@biostat.wisc.edu",
+        "affiliations": [
+          "Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison, Madison, WI",
+          "Morgridge Institute for Research, Madison, WI"
+        ],
+        "funders": "NIH U54AI117924",
+        "symbol_str": "†",
+        "affiliation_numbers": [
+          32,
+          33
+        ]
+      },
+      {
+        "github": "cgreene",
+        "name": "Casey S. Greene",
+        "orcid": "0000-0001-8713-9213",
+        "email": "greenescientist@gmail.com",
+        "affiliations": [
+          "Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA"
+        ],
+        "funders": "GBMF GBMF4552",
+        "symbol_str": "†",
+        "affiliation_numbers": [
+          2
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "affiliation": "Molecular Biosciences and Bioengineering Graduate Program, University of Hawaii at Manoa, Honolulu, HI",
+        "affiliation_number": 1
+      },
+      {
+        "affiliation": "Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA",
+        "affiliation_number": 2
+      },
+      {
+        "affiliation": "Genomics and Computational Biology Graduate Group, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA",
+        "affiliation_number": 3
+      },
+      {
+        "affiliation": "Department of Computational Medicine and Bioinformatics, University of Michigan Medical School, Ann Arbor, MI",
+        "affiliation_number": 4
+      },
+      {
+        "affiliation": "Harvard Medical School, Boston, MA",
+        "affiliation_number": 5
+      },
+      {
+        "affiliation": "Computational Biology and Stats, Target Sciences, GlaxoSmithKline, Stevenage, United Kingdom",
+        "affiliation_number": 6
+      },
+      {
+        "affiliation": "Data Science Institute, Imperial College London, London, United Kingdom",
+        "affiliation_number": 7
+      },
+      {
+        "affiliation": "Princess Margaret Cancer Centre, Toronto, ON, Canada",
+        "affiliation_number": 8
+      },
+      {
+        "affiliation": "Department of Medical Biophysics, University of Toronto, Toronto, ON, Canada",
+        "affiliation_number": 9
+      },
+      {
+        "affiliation": "Department of Computer Science, University of Toronto, Toronto, ON, Canada",
+        "affiliation_number": 10
+      },
+      {
+        "affiliation": "Electrical Engineering and Computer Science, Vanderbilt University, Nashville, TN",
+        "affiliation_number": 11
+      },
+      {
+        "affiliation": "Ecological and Evolutionary Signal-processing and Informatics Laboratory, Department of Electrical and Computer Engineering, Drexel University, Philadelphia, PA",
+        "affiliation_number": 12
+      },
+      {
+        "affiliation": "Computational Biology Department, School of Computer Science, Carnegie Mellon University, Pittsburgh, PA",
+        "affiliation_number": 13
+      },
+      {
+        "affiliation": "Biophysics Program, Stanford University, Stanford, CA",
+        "affiliation_number": 14
+      },
+      {
+        "affiliation": "Department of Computer Science, University of Virginia, Charlottesville, VA",
+        "affiliation_number": 15
+      },
+      {
+        "affiliation": "Imaging Platform, Broad Institute of Harvard and MIT, Cambridge, MA",
+        "affiliation_number": 16
+      },
+      {
+        "affiliation": "Department of Computer Science, Stanford University, Stanford, CA",
+        "affiliation_number": 17
+      },
+      {
+        "affiliation": "Toyota Technological Institute at Chicago, Chicago, IL",
+        "affiliation_number": 18
+      },
+      {
+        "affiliation": "Department of Computer Science, Trinity University, San Antonio, TX",
+        "affiliation_number": 19
+      },
+      {
+        "affiliation": "Lewis-Sigler Institute for Integrative Genomics, Princeton University, Princeton, NJ",
+        "affiliation_number": 20
+      },
+      {
+        "affiliation": "Integrative Bioinformatics, National Institute of Environmental Health Sciences, National Institutes of Health, Research Triangle Park, NC",
+        "affiliation_number": 21
+      },
+      {
+        "affiliation": "Howard Hughes Medical Institute, Janelia Research Campus, Ashburn, VA",
+        "affiliation_number": 22
+      },
+      {
+        "affiliation": "National Center for Biotechnology Information and National Library of Medicine, National Institutes of Health, Bethesda, MD",
+        "affiliation_number": 23
+      },
+      {
+        "affiliation": "Department of Wildlife Ecology and Conservation, University of Florida, Gainesville, FL",
+        "affiliation_number": 24
+      },
+      {
+        "affiliation": "ClosedLoop.ai, Austin, TX",
+        "affiliation_number": 25
+      },
+      {
+        "affiliation": "Department of Genetics, Stanford University, Stanford, CA",
+        "affiliation_number": 26
+      },
+      {
+        "affiliation": "Division of Biomedical Informatics and Personalized Medicine, University of Colorado School of Medicine, Aurora, CO",
+        "affiliation_number": 27
+      },
+      {
+        "affiliation": "Institute of Organic Chemistry, Westfälische Wilhelms-Universität Münster, Münster, Germany",
+        "affiliation_number": 28
+      },
+      {
+        "affiliation": "Innovation Center for Biomedical Informatics, Georgetown University Medical Center, Washington, DC",
+        "affiliation_number": 29
+      },
+      {
+        "affiliation": "Department of Pathology and Immunology, Washington University in Saint Louis, Saint Louis, MO",
+        "affiliation_number": 30
+      },
+      {
+        "affiliation": "Department of Medicine, Brown University, Providence, RI",
+        "affiliation_number": 31
+      },
+      {
+        "affiliation": "Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison, Madison, WI",
+        "affiliation_number": 32
+      },
+      {
+        "affiliation": "Morgridge Institute for Research, Madison, WI",
+        "affiliation_number": 33
+      }
+    ],
+    "ci_source": {
+      "provider": "travis",
+      "repo_slug": "greenelab/deep-review",
+      "repo_owner": "greenelab",
+      "repo_name": "deep-review",
+      "commit": "60d8d13864fd91c0fd7dd8da03ce422a02685d47",
+      "triggering_commit": "60d8d13864fd91c0fd7dd8da03ce422a02685d47",
+      "build_url": "https://travis-ci.org/greenelab/deep-review/builds/615236481",
+      "job_url": "https://travis-ci.org/greenelab/deep-review/jobs/615236482"
     },
-    "word_count": 34355
+    "html_url": "https://greenelab.github.io/deep-review/",
+    "pdf_url": "https://greenelab.github.io/deep-review/manuscript.pdf",
+    "html_url_versioned": "https://greenelab.github.io/deep-review/v/60d8d13864fd91c0fd7dd8da03ce422a02685d47/",
+    "pdf_url_versioned": "https://greenelab.github.io/deep-review/v/60d8d13864fd91c0fd7dd8da03ce422a02685d47/manuscript.pdf",
+    "thumbnail_url": "https://github.com/greenelab/deep-review/raw/60d8d13864fd91c0fd7dd8da03ce422a02685d47/thumbnail.png",
+    "manuscript_stats": {
+      "reference_counts": {
+        "arxiv": 132,
+        "doi": 417,
+        "pmcid": 6,
+        "url": 48,
+        "total": 603
+      },
+      "word_count": 34362
+    }
   }
 }

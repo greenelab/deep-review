@@ -40,7 +40,7 @@
   <meta name="author" content="Austin Huang" />
   <meta name="author" content="Anthony Gitter" />
   <meta name="author" content="Casey S. Greene" />
-  <meta name="dcterms.date" content="2019-09-07" />
+  <meta name="dcterms.date" content="2019-11-21" />
   <meta name="keywords" content="deep learning, review, precision medicine, genomics, machine learning, neural networks, collaborative, manubot" />
   <title>Opportunities and obstacles for deep learning in biology and medicine: 2019 update</title>
   <style>
@@ -52,13 +52,158 @@
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
+  <!--
+  Manubot generated metadata rendered from header-includes-template.html.
+  Suggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html
+  -->
+  <meta name="dc.format" content="text/html" />
+  <meta name="dc.title" content="Opportunities and obstacles for deep learning in biology and medicine: 2019 update" />
+  <meta name="citation_title" content="Opportunities and obstacles for deep learning in biology and medicine: 2019 update" />
+  <meta property="og:title" content="Opportunities and obstacles for deep learning in biology and medicine: 2019 update" />
+  <meta property="twitter:title" content="Opportunities and obstacles for deep learning in biology and medicine: 2019 update" />
+  <meta name="dc.date" content="2019-11-21" />
+  <meta name="citation_publication_date" content="2019-11-21" />
+  <meta name="dc.language" content="en-US" />
+  <meta name="citation_language" content="en-US" />
+  <meta name="dc.relation.ispartof" content="Manubot" />
+  <meta name="dc.publisher" content="Manubot" />
+  <meta name="citation_journal_title" content="Manubot" />
+  <meta name="citation_technical_report_institution" content="Manubot" />
+  <meta name="citation_author" content="Travers Ching" />
+  <meta name="citation_author_institution" content="Molecular Biosciences and Bioengineering Graduate Program, University of Hawaii at Manoa, Honolulu, HI" />
+  <meta name="citation_author_orcid" content="0000-0002-5577-3516" />
+  <meta name="citation_author" content="Daniel S. Himmelstein" />
+  <meta name="citation_author_institution" content="Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA" />
+  <meta name="citation_author_orcid" content="0000-0002-3012-7446" />
+  <meta name="citation_author" content="Brett K. Beaulieu-Jones" />
+  <meta name="citation_author_institution" content="Genomics and Computational Biology Graduate Group, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA" />
+  <meta name="citation_author_orcid" content="0000-0002-6700-1468" />
+  <meta name="citation_author" content="Alexandr A. Kalinin" />
+  <meta name="citation_author_institution" content="Department of Computational Medicine and Bioinformatics, University of Michigan Medical School, Ann Arbor, MI" />
+  <meta name="citation_author_orcid" content="0000-0003-4563-3226" />
+  <meta name="citation_author" content="Brian T. Do" />
+  <meta name="citation_author_institution" content="Harvard Medical School, Boston, MA" />
+  <meta name="citation_author_orcid" content="0000-0003-4992-2623" />
+  <meta name="citation_author" content="Gregory P. Way" />
+  <meta name="citation_author_institution" content="Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA" />
+  <meta name="citation_author_orcid" content="0000-0002-0503-9348" />
+  <meta name="citation_author" content="Enrico Ferrero" />
+  <meta name="citation_author_institution" content="Computational Biology and Stats, Target Sciences, GlaxoSmithKline, Stevenage, United Kingdom" />
+  <meta name="citation_author_orcid" content="0000-0002-8362-100X" />
+  <meta name="citation_author" content="Paul-Michael Agapow" />
+  <meta name="citation_author_institution" content="Data Science Institute, Imperial College London, London, United Kingdom" />
+  <meta name="citation_author_orcid" content="0000-0003-1126-1479" />
+  <meta name="citation_author" content="Michael Zietz" />
+  <meta name="citation_author_institution" content="Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA" />
+  <meta name="citation_author_orcid" content="0000-0003-0539-630X" />
+  <meta name="citation_author" content="Michael M. Hoffman" />
+  <meta name="citation_author_institution" content="Princess Margaret Cancer Centre, Toronto, ON, Canada" />
+  <meta name="citation_author_institution" content="Department of Medical Biophysics, University of Toronto, Toronto, ON, Canada" />
+  <meta name="citation_author_institution" content="Department of Computer Science, University of Toronto, Toronto, ON, Canada" />
+  <meta name="citation_author_orcid" content="0000-0002-4517-1562" />
+  <meta name="citation_author" content="Wei Xie" />
+  <meta name="citation_author_institution" content="Electrical Engineering and Computer Science, Vanderbilt University, Nashville, TN" />
+  <meta name="citation_author_orcid" content="0000-0002-1871-6846" />
+  <meta name="citation_author" content="Gail L. Rosen" />
+  <meta name="citation_author_institution" content="Ecological and Evolutionary Signal-processing and Informatics Laboratory, Department of Electrical and Computer Engineering, Drexel University, Philadelphia, PA" />
+  <meta name="citation_author_orcid" content="0000-0003-1763-5750" />
+  <meta name="citation_author" content="Benjamin J. Lengerich" />
+  <meta name="citation_author_institution" content="Computational Biology Department, School of Computer Science, Carnegie Mellon University, Pittsburgh, PA" />
+  <meta name="citation_author_orcid" content="0000-0001-8690-9554" />
+  <meta name="citation_author" content="Johnny Israeli" />
+  <meta name="citation_author_institution" content="Biophysics Program, Stanford University, Stanford, CA" />
+  <meta name="citation_author_orcid" content="0000-0003-1633-5780" />
+  <meta name="citation_author" content="Jack Lanchantin" />
+  <meta name="citation_author_institution" content="Department of Computer Science, University of Virginia, Charlottesville, VA" />
+  <meta name="citation_author_orcid" content="0000-0003-0811-0944" />
+  <meta name="citation_author" content="Stephen Woloszynek" />
+  <meta name="citation_author_institution" content="Ecological and Evolutionary Signal-processing and Informatics Laboratory, Department of Electrical and Computer Engineering, Drexel University, Philadelphia, PA" />
+  <meta name="citation_author_orcid" content="0000-0003-0568-298X" />
+  <meta name="citation_author" content="Anne E. Carpenter" />
+  <meta name="citation_author_institution" content="Imaging Platform, Broad Institute of Harvard and MIT, Cambridge, MA" />
+  <meta name="citation_author_orcid" content="0000-0003-1555-8261" />
+  <meta name="citation_author" content="Avanti Shrikumar" />
+  <meta name="citation_author_institution" content="Department of Computer Science, Stanford University, Stanford, CA" />
+  <meta name="citation_author_orcid" content="0000-0002-6443-4671" />
+  <meta name="citation_author" content="Jinbo Xu" />
+  <meta name="citation_author_institution" content="Toyota Technological Institute at Chicago, Chicago, IL" />
+  <meta name="citation_author_orcid" content="0000-0001-7111-4839" />
+  <meta name="citation_author" content="Evan M. Cofer" />
+  <meta name="citation_author_institution" content="Department of Computer Science, Trinity University, San Antonio, TX" />
+  <meta name="citation_author_institution" content="Lewis-Sigler Institute for Integrative Genomics, Princeton University, Princeton, NJ" />
+  <meta name="citation_author_orcid" content="0000-0003-3877-0433" />
+  <meta name="citation_author" content="Christopher A. Lavender" />
+  <meta name="citation_author_institution" content="Integrative Bioinformatics, National Institute of Environmental Health Sciences, National Institutes of Health, Research Triangle Park, NC" />
+  <meta name="citation_author_orcid" content="0000-0002-7762-1089" />
+  <meta name="citation_author" content="Srinivas C. Turaga" />
+  <meta name="citation_author_institution" content="Howard Hughes Medical Institute, Janelia Research Campus, Ashburn, VA" />
+  <meta name="citation_author_orcid" content="0000-0003-3247-6487" />
+  <meta name="citation_author" content="Amr M. Alexandari" />
+  <meta name="citation_author_institution" content="Department of Computer Science, Stanford University, Stanford, CA" />
+  <meta name="citation_author_orcid" content="0000-0001-8655-8109" />
+  <meta name="citation_author" content="Zhiyong Lu" />
+  <meta name="citation_author_institution" content="National Center for Biotechnology Information and National Library of Medicine, National Institutes of Health, Bethesda, MD" />
+  <meta name="citation_author_orcid" content="0000-0001-9998-916X" />
+  <meta name="citation_author" content="David J. Harris" />
+  <meta name="citation_author_institution" content="Department of Wildlife Ecology and Conservation, University of Florida, Gainesville, FL" />
+  <meta name="citation_author_orcid" content="0000-0003-3332-9307" />
+  <meta name="citation_author" content="Dave DeCaprio" />
+  <meta name="citation_author_institution" content="ClosedLoop.ai, Austin, TX" />
+  <meta name="citation_author_orcid" content="0000-0001-8931-9461" />
+  <meta name="citation_author" content="Yanjun Qi" />
+  <meta name="citation_author_institution" content="Department of Computer Science, University of Virginia, Charlottesville, VA" />
+  <meta name="citation_author_orcid" content="0000-0002-5796-7453" />
+  <meta name="citation_author" content="Anshul Kundaje" />
+  <meta name="citation_author_institution" content="Department of Genetics, Stanford University, Stanford, CA" />
+  <meta name="citation_author_institution" content="Department of Computer Science, Stanford University, Stanford, CA" />
+  <meta name="citation_author_orcid" content="0000-0003-3084-2287" />
+  <meta name="citation_author" content="Yifan Peng" />
+  <meta name="citation_author_institution" content="National Center for Biotechnology Information and National Library of Medicine, National Institutes of Health, Bethesda, MD" />
+  <meta name="citation_author_orcid" content="0000-0001-9309-8331" />
+  <meta name="citation_author" content="Laura K. Wiley" />
+  <meta name="citation_author_institution" content="Division of Biomedical Informatics and Personalized Medicine, University of Colorado School of Medicine, Aurora, CO" />
+  <meta name="citation_author_orcid" content="0000-0001-6681-9754" />
+  <meta name="citation_author" content="Marwin H.S. Segler" />
+  <meta name="citation_author_institution" content="Institute of Organic Chemistry, Westfälische Wilhelms-Universität Münster, Münster, Germany" />
+  <meta name="citation_author_orcid" content="0000-0001-8008-0546" />
+  <meta name="citation_author" content="Simina M. Boca" />
+  <meta name="citation_author_institution" content="Innovation Center for Biomedical Informatics, Georgetown University Medical Center, Washington, DC" />
+  <meta name="citation_author_orcid" content="0000-0002-1400-3398" />
+  <meta name="citation_author" content="S. Joshua Swamidass" />
+  <meta name="citation_author_institution" content="Department of Pathology and Immunology, Washington University in Saint Louis, Saint Louis, MO" />
+  <meta name="citation_author_orcid" content="0000-0003-2191-0778" />
+  <meta name="citation_author" content="Austin Huang" />
+  <meta name="citation_author_institution" content="Department of Medicine, Brown University, Providence, RI" />
+  <meta name="citation_author_orcid" content="0000-0003-1349-4030" />
+  <meta name="citation_author" content="Anthony Gitter" />
+  <meta name="citation_author_institution" content="Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison, Madison, WI" />
+  <meta name="citation_author_institution" content="Morgridge Institute for Research, Madison, WI" />
+  <meta name="citation_author_orcid" content="0000-0002-5324-9833" />
+  <meta name="citation_author" content="Casey S. Greene" />
+  <meta name="citation_author_institution" content="Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA" />
+  <meta name="citation_author_orcid" content="0000-0001-8713-9213" />
+  <link rel="canonical" href="https://greenelab.github.io/deep-review/" />
+  <meta property="og:url" content="https://greenelab.github.io/deep-review/" />
+  <meta property="twitter:url" content="https://greenelab.github.io/deep-review/" />
+  <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/deep-review/" />
+  <meta name="citation_pdf_url" content="https://greenelab.github.io/deep-review/manuscript.pdf" />
+  <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/deep-review/manuscript.pdf" /> <link rel="alternate" type="text/html" href="https://greenelab.github.io/deep-review/v/60d8d13864fd91c0fd7dd8da03ce422a02685d47/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/deep-review/v/60d8d13864fd91c0fd7dd8da03ce422a02685d47/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/deep-review/v/60d8d13864fd91c0fd7dd8da03ce422a02685d47/manuscript.pdf" />
+  <meta property="og:type" content="article" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="og:image" content="https://github.com/greenelab/deep-review/raw/60d8d13864fd91c0fd7dd8da03ce422a02685d47/thumbnail.png" />
+  <meta property="twitter:image" content="https://github.com/greenelab/deep-review/raw/60d8d13864fd91c0fd7dd8da03ce422a02685d47/thumbnail.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" /> <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
+  <meta name="theme-color" content="#ad1457" />
+  <!-- end Manubot generated metadata -->
 </head>
 <body>
 <header id="title-block-header">
 <h1 class="title">Opportunities and obstacles for deep learning in biology and medicine: 2019 update</h1>
 </header>
 <p><em>A published version of this manuscript from 04 April 2018 is available at <a href="https://doi.org/10.1098/rsif.2017.0387" class="uri">https://doi.org/10.1098/rsif.2017.0387</a>. An effort is underway to update the manuscript to capture the state of the field in 2019. New authors and links to new sections are available in <a href="https://github.com/greenelab/deep-review/issues/959">GitHub Issue #959</a>.</em></p>
-<p><small><em> This manuscript (<a href="https://greenelab.github.io/deep-review/v/ddb7b9fa0dff6386e2e182fe3390b89c3cdeb7df/">permalink</a>) was automatically generated from <a href="https://github.com/greenelab/deep-review/tree/ddb7b9fa0dff6386e2e182fe3390b89c3cdeb7df">greenelab/deep-review@ddb7b9f</a> on September 7, 2019. </em></small></p>
+<p><small><em> This manuscript (<a href="https://greenelab.github.io/deep-review/v/60d8d13864fd91c0fd7dd8da03ce422a02685d47/">permalink</a>) was automatically generated from <a href="https://github.com/greenelab/deep-review/tree/60d8d13864fd91c0fd7dd8da03ce422a02685d47">greenelab/deep-review@60d8d13</a> on November 21, 2019. </em></small></p>
 <h2 id="authors">Authors</h2>
 <p><a href="https://orcid.org/0000-0002-5577-3516"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a> Travers Ching<sup>1,☯</sup>, <a href="https://orcid.org/0000-0002-3012-7446"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a> Daniel S. Himmelstein<sup>2</sup>, <a href="https://orcid.org/0000-0002-6700-1468"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a> Brett K. Beaulieu-Jones<sup>3</sup>, <a href="https://orcid.org/0000-0003-4563-3226"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a> Alexandr A. Kalinin<sup>4</sup>, <a href="https://orcid.org/0000-0003-4992-2623"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a> Brian T. Do<sup>5</sup>, <a href="https://orcid.org/0000-0002-0503-9348"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a> Gregory P. Way<sup>2</sup>, <a href="https://orcid.org/0000-0002-8362-100X"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a> Enrico Ferrero<sup>6</sup>, <a href="https://orcid.org/0000-0003-1126-1479"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a> Paul-Michael Agapow<sup>7</sup>, <a href="https://orcid.org/0000-0003-0539-630X"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a> Michael Zietz<sup>2</sup>, <a href="https://orcid.org/0000-0002-4517-1562"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a> Michael M. Hoffman<sup>8,9,10</sup>, <a href="https://orcid.org/0000-0002-1871-6846"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a> Wei Xie<sup>11</sup>, <a href="https://orcid.org/0000-0003-1763-5750"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a> Gail L. Rosen<sup>12</sup>, <a href="https://orcid.org/0000-0001-8690-9554"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a> Benjamin J. Lengerich<sup>13</sup>, <a href="https://orcid.org/0000-0003-1633-5780"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a> Johnny Israeli<sup>14</sup>, <a href="https://orcid.org/0000-0003-0811-0944"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a> Jack Lanchantin<sup>15</sup>, <a href="https://orcid.org/0000-0003-0568-298X"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a> Stephen Woloszynek<sup>12</sup>, <a href="https://orcid.org/0000-0003-1555-8261"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a> Anne E. Carpenter<sup>16</sup>, <a href="https://orcid.org/0000-0002-6443-4671"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a> Avanti Shrikumar<sup>17</sup>, <a href="https://orcid.org/0000-0001-7111-4839"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a> Jinbo Xu<sup>18</sup>, <a href="https://orcid.org/0000-0003-3877-0433"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a> Evan M. Cofer<sup>19,20</sup>, <a href="https://orcid.org/0000-0002-7762-1089"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a> Christopher A. Lavender<sup>21</sup>, <a href="https://orcid.org/0000-0003-3247-6487"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a> Srinivas C. Turaga<sup>22</sup>, <a href="https://orcid.org/0000-0001-8655-8109"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a> Amr M. Alexandari<sup>17</sup>, <a href="https://orcid.org/0000-0001-9998-916X"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a> Zhiyong Lu<sup>23</sup>, <a href="https://orcid.org/0000-0003-3332-9307"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a> David J. Harris<sup>24</sup>, <a href="https://orcid.org/0000-0001-8931-9461"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a> Dave DeCaprio<sup>25</sup>, <a href="https://orcid.org/0000-0002-5796-7453"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a> Yanjun Qi<sup>15</sup>, <a href="https://orcid.org/0000-0003-3084-2287"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a> Anshul Kundaje<sup>17,26</sup>, <a href="https://orcid.org/0000-0001-9309-8331"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a> Yifan Peng<sup>23</sup>, <a href="https://orcid.org/0000-0001-6681-9754"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a> Laura K. Wiley<sup>27</sup>, <a href="https://orcid.org/0000-0001-8008-0546"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a> Marwin H.S. Segler<sup>28</sup>, <a href="https://orcid.org/0000-0002-1400-3398"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a> Simina M. Boca<sup>29</sup>, <a href="https://orcid.org/0000-0003-2191-0778"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a> S. Joshua Swamidass<sup>30</sup>, <a href="https://orcid.org/0000-0003-1349-4030"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a> Austin Huang<sup>31</sup>, <a href="https://orcid.org/0000-0002-5324-9833"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a> Anthony Gitter<sup>32,33,†</sup>, <a href="https://orcid.org/0000-0001-8713-9213"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a> Casey S. Greene<sup>2,†</sup></p>
 <p><sup>☯</sup> — Author order was determined with a randomized algorithm<br> <sup>†</sup> — To whom correspondence should be addressed: gitter@biostat.wisc.edu (A.G.) and greenescientist@gmail.com (C.S.G.)</p>
@@ -107,11 +252,13 @@
 <p>Deep learning approaches grew from research on artificial neurons, which were first proposed in 1943 <span class="citation" data-cites="1HVDhhwpK">[<a href="#ref-1HVDhhwpK" role="doc-biblioref">7</a>]</span> as a model for how the neurons in a biological brain process information. The history of artificial neural networks—referred to as “neural networks” throughout this article—is interesting in its own right <span class="citation" data-cites="1G5eCiq4d">[<a href="#ref-1G5eCiq4d" role="doc-biblioref">8</a>]</span>. In neural networks, inputs are fed into the input layer, which feeds into one or more hidden layers, which eventually link to an output layer. A layer consists of a set of nodes, sometimes called “features” or “units,” which are connected via edges to the immediately earlier and the immediately deeper layers. In some special neural network architectures, nodes can connect to themselves with a delay. The nodes of the input layer generally consist of the variables being measured in the dataset of interest—for example, each node could represent the intensity value of a specific pixel in an image or the expression level of a gene in a specific transcriptomic experiment. The neural networks used for deep learning have multiple hidden layers. Each layer essentially performs feature construction for the layers before it. The training process used often allows layers deeper in the network to contribute to the refinement of earlier layers. For this reason, these algorithms can automatically engineer features that are suitable for many tasks and customize those features for one or more specific tasks.</p>
 <p>Deep learning does many of the same things as more familiar machine learning approaches. In particular, deep learning approaches can be used both in <em>supervised</em> applications—where the goal is to accurately predict one or more labels or outcomes associated with each data point—in the place of regression approaches, as well as in <em>unsupervised</em>, or “exploratory” applications—where the goal is to summarize, explain, or identify interesting patterns in a data set—as a form of clustering. Deep learning methods may in fact combine both of these steps. When sufficient data are available and labeled, these methods construct features tuned to a specific problem and combine those features into a predictor. In fact, if the dataset is “labeled” with binary classes, a simple neural network with no hidden layers and no cycles between units is equivalent to logistic regression if the output layer is a sigmoid (logistic) function of the input layer. Similarly, for continuous outcomes, linear regression can be seen as a single-layer neural network. Thus, in some ways, supervised deep learning approaches can be seen as an extension of regression models that allow for greater flexibility and are especially well-suited for modeling non-linear relationships among the input features. Recently, hardware improvements and very large training datasets have allowed these deep learning techniques to surpass other machine learning algorithms for many problems. In a famous and early example, scientists from Google demonstrated that a neural network “discovered” that cats, faces, and pedestrians were important components of online videos <span class="citation" data-cites="IiNJE32f">[<a href="#ref-IiNJE32f" role="doc-biblioref">9</a>]</span> without being told to look for them. What if, more generally, deep learning takes advantage of the growth of data in biomedicine to tackle challenges in this field? Could these algorithms identify the “cats” hidden in our data—the patterns unknown to the researcher—and suggest ways to act on them? In this review, we examine deep learning’s application to biomedical science and discuss the unique challenges that biomedical data pose for deep learning methods.</p>
 <p>Several important advances make the current surge of work done in this area possible. Easy-to-use software packages have brought the techniques of the field out of the specialist’s toolkit to a broad community of computational scientists. Additionally, new techniques for fast training have enabled their application to larger datasets <span class="citation" data-cites="3qm8sXnB">[<a href="#ref-3qm8sXnB" role="doc-biblioref">10</a>]</span>. Dropout of nodes, edges, and layers makes networks more robust, even when the number of parameters is very large. Finally, the larger datasets now available are also sufficient for fitting the many parameters that exist for deep neural networks. The convergence of these factors currently makes deep learning extremely adaptable and capable of addressing the nuanced differences of each domain to which it is applied.</p>
+<div id="fig:nn-petting-zoo" class="fignos">
 <figure>
-<img src="images/petting-zoo.svg" id="fig:nn-petting-zoo" class="white" alt="" /><figcaption><span>Figure 1:</span> Neural networks come in many different forms. Left: a key for the various types of nodes used in neural networks. Simple FFNN: a feed forward neural network in which inputs are connected via some function to an output node and the model is trained to produce some output for a set of inputs. MLP: the multi-layer perceptron is a feed forward neural network in which there is at least one hidden layer between the input and output nodes. CNN: the convolutional neural network is a feed forward neural network in which the inputs are grouped spatially into hidden nodes. In the case of this example, each input node is only connected to hidden nodes alongside their neighboring input node. Autoencoder: a type of MLP in which the neural network is trained to produce an output that matches the input to the network. RNN: a deep recurrent neural network is used to allow the neural network to retain memory over time or sequential inputs. This figure was inspired by the <a href="http://www.asimovinstitute.org/neural-network-zoo/">Neural Network Zoo</a> by Fjodor Van Veen. <!-- Figure source at https://docs.google.com/drawings/d/1TEzlqiCewmJ-EITvogMqDz7N6CizMtBvWE4H_BXqnuQ --></figcaption>
+<img src="images/petting-zoo.svg" class="white" alt="" /><figcaption><span>Figure 1:</span> Neural networks come in many different forms. Left: a key for the various types of nodes used in neural networks. Simple FFNN: a feed forward neural network in which inputs are connected via some function to an output node and the model is trained to produce some output for a set of inputs. MLP: the multi-layer perceptron is a feed forward neural network in which there is at least one hidden layer between the input and output nodes. CNN: the convolutional neural network is a feed forward neural network in which the inputs are grouped spatially into hidden nodes. In the case of this example, each input node is only connected to hidden nodes alongside their neighboring input node. Autoencoder: a type of MLP in which the neural network is trained to produce an output that matches the input to the network. RNN: a deep recurrent neural network is used to allow the neural network to retain memory over time or sequential inputs. This figure was inspired by the <a href="http://www.asimovinstitute.org/neural-network-zoo/">Neural Network Zoo</a> by Fjodor Van Veen. <!-- Figure source at https://docs.google.com/drawings/d/1TEzlqiCewmJ-EITvogMqDz7N6CizMtBvWE4H_BXqnuQ --></figcaption>
 </figure>
+</div>
 <p>This review discusses recent work in the biomedical domain, and most successful applications select neural network architectures that are well suited to the problem at hand. We sketch out a few simple example architectures in Figure <a href="#fig:nn-petting-zoo">1</a>. If data have a natural adjacency structure, a convolutional neural network (CNN) can take advantage of that structure by emphasizing local relationships, especially when convolutional layers are used in early layers of the neural network. Other neural network architectures such as autoencoders require no labels and are now regularly used for unsupervised tasks. In this review, we do not exhaustively discuss the different types of deep neural network architectures; an overview of the principal terms used herein is given in Table <a href="#tbl:glossary">1</a>. Table <a href="#tbl:glossary">1</a> also provides select example applications, though in practice each neural network architecture has been broadly applied across multiple types of biomedical data. A recent book from Goodfellow et al. covers neural network architectures in detail <span class="citation" data-cites="yg8NW0K7">[<a href="#ref-yg8NW0K7" role="doc-biblioref">11</a>]</span>, and LeCun et al. provide a more general introduction <span class="citation" data-cites="BeijBSRE">[<a href="#ref-BeijBSRE" role="doc-biblioref">2</a>]</span>.</p>
-<a name="tbl:glossary"></a>
+<div id="tbl:glossary" class="tablenos">
 <table>
 <caption><span>Table 1:</span> Glossary. </caption>
 <colgroup>
@@ -219,6 +366,7 @@
 </tr>
 </tbody>
 </table>
+</div>
 <p>While deep learning shows increased flexibility over other machine learning approaches, as seen in the remainder of this review, it requires large training sets in order to fit the hidden layers, as well as accurate labels for the supervised learning applications. For these reasons, deep learning has recently become popular in some areas of biology and medicine, while having lower adoption in other areas. At the same time, this highlights the potentially even larger role that it may play in future research, given the increases in data in all biomedical fields. It is also important to see it as a branch of machine learning and acknowledge that it has the same limitations as other approaches in that field. In particular, the results are still dependent on the underlying study design and the usual caveats of correlation versus causation still apply—a more precise answer is only better than a less precise one if it answers the correct question.</p>
 <h3 id="will-deep-learning-transform-the-study-of-human-disease">Will deep learning transform the study of human disease?</h3>
 <p>With this review, we ask the question: what is needed for deep learning to transform how we categorize, study, and treat individuals to maintain or restore health? We choose a high bar for “transform.” Andrew Grove, the former CEO of Intel, coined the term Strategic Inflection Point to refer to a change in technologies or environment that requires a business to be fundamentally reshaped <span class="citation" data-cites="mAXsmd43">[<a href="#ref-mAXsmd43" role="doc-biblioref">12</a>]</span>. Here, we seek to identify whether deep learning is an innovation that can induce a Strategic Inflection Point in the practice of biology or medicine.</p>
@@ -250,9 +398,11 @@
 <p>With the exception of natural image-like problems (e.g. melanoma detection), biomedical imaging poses a number of challenges for deep learning. Datasets are typically small, annotations can be sparse, and images are often high-dimensional, multimodal, and multi-channel. Techniques like transfer learning, heavy dataset augmentation, and the use of multi-view and multi-stream architectures are more common than in the natural image domain. Furthermore, high model sensitivity and specificity can translate directly into clinical value. Thus, prediction evaluation, uncertainty estimation, and model interpretation methods are also of great importance in this domain (see Discussion). Finally, there is a need for better pathologist-computer interaction techniques that will allow combining the power of deep learning methods with human expertise and lead to better-informed decisions for patient treatment and care.</p>
 <h3 id="text-applications-in-healthcare">Text applications in healthcare</h3>
 <p>Due to the rapid growth of scholarly publications and EHRs, biomedical text mining has become increasingly important in recent years. The main tasks in biological and clinical text mining include, but are not limited to, named entity recognition, relation/event extraction, and information retrieval (Figure <a href="#fig:biotm">2</a>). Deep learning is appealing in this domain because of its competitive performance versus traditional methods and ability to overcome challenges in feature engineering. Relevant applications can be stratified by the application domain (biomedical literature vs. clinical notes) and the actual task (e.g. concept or relation extraction).</p>
+<div id="fig:biotm" class="fignos">
 <figure>
-<img src="images/biotm.png" id="fig:biotm" class="white" style="width:100.0%" alt="" /><figcaption><span>Figure 2:</span> Deep learning applications, tasks, and models based on NLP perspectives.</figcaption>
+<img src="images/biotm.png" class="white" style="width:100.0%" alt="" /><figcaption><span>Figure 2:</span> Deep learning applications, tasks, and models based on NLP perspectives.</figcaption>
 </figure>
+</div>
 <p>Named entity recognition (NER) is a task of identifying text spans that refer to a biological concept of a specific class, such as disease or chemical, in a controlled vocabulary or ontology. NER is often needed as a first step in many complex text mining systems. The current state-of-the-art methods typically reformulate the task as a sequence labeling problem and use conditional random fields <span class="citation" data-cites="11YUuHulp 19G2RXgfp vtuZ3Wx7">[<a href="#ref-11YUuHulp" role="doc-biblioref">75</a>,<a href="#ref-19G2RXgfp" role="doc-biblioref">76</a>,<a href="#ref-vtuZ3Wx7" role="doc-biblioref">77</a>]</span>. In recent years, word embeddings that contain rich latent semantic information of words have been widely used to improve the NER performance. Liu et al. studied the effect of word embeddings on drug name recognition and compared them with traditional semantic features <span class="citation" data-cites="OuoHShLI">[<a href="#ref-OuoHShLI" role="doc-biblioref">78</a>]</span>. Tang et al. investigated word embeddings in gene, DNA, and cell line mention detection tasks <span class="citation" data-cites="14uLNRP38">[<a href="#ref-14uLNRP38" role="doc-biblioref">79</a>]</span>. Moreover, Wu et al. examined the use of neural word embeddings for clinical abbreviation disambiguation <span class="citation" data-cites="pWpK5WUq">[<a href="#ref-pWpK5WUq" role="doc-biblioref">80</a>]</span>. Liu et al. exploited task-oriented resources to learn word embeddings for clinical abbreviation expansion <span class="citation" data-cites="LeLKNlsR">[<a href="#ref-LeLKNlsR" role="doc-biblioref">81</a>]</span>.</p>
 <p>Relation extraction involves detecting and classifying semantic relationships between entities from the literature. At present, kernel methods or feature-based approaches are commonly applied <span class="citation" data-cites="c6gbPCdT Sn8TwSQK X909h5sz">[<a href="#ref-c6gbPCdT" role="doc-biblioref">82</a>,<a href="#ref-Sn8TwSQK" role="doc-biblioref">83</a>,<a href="#ref-X909h5sz" role="doc-biblioref">84</a>]</span>. Deep learning can relieve the feature sparsity and engineering problems. Some studies focused on jointly extracting biomedical entities and relations simultaneously <span class="citation" data-cites="17ydlqmVI 1F5aZYjOB">[<a href="#ref-17ydlqmVI" role="doc-biblioref">85</a>,<a href="#ref-1F5aZYjOB" role="doc-biblioref">86</a>]</span>, while others applied deep learning on relation classification given the relevant entities. For example, both multichannel dependency-based CNNs <span class="citation" data-cites="1H4fyFU1f">[<a href="#ref-1H4fyFU1f" role="doc-biblioref">87</a>]</span> and shortest path-based CNNs <span class="citation" data-cites="19r6xFsZQ ULZPgbOq">[<a href="#ref-19r6xFsZQ" role="doc-biblioref">88</a>,<a href="#ref-ULZPgbOq" role="doc-biblioref">89</a>]</span> are well-suited for sentence-based protein-protein extraction. Jiang et al. proposed a biomedical domain-specific word embedding model to reduce the manual labor of designing semantic representation for the same task <span class="citation" data-cites="MY6FXgFn">[<a href="#ref-MY6FXgFn" role="doc-biblioref">90</a>]</span>. Gu et al. employed a maximum entropy model and a CNN model for chemical-induced disease relation extraction at the inter- and intra-sentence level, respectively <span class="citation" data-cites="14afj7TT1">[<a href="#ref-14afj7TT1" role="doc-biblioref">91</a>]</span>. For drug-drug interactions, Zhao et al. used a CNN that employs word embeddings with the syntactic information of a sentence as well as features of part-of-speech tags and dependency trees <span class="citation" data-cites="8NrcroGt">[<a href="#ref-8NrcroGt" role="doc-biblioref">92</a>]</span>. Asada et al. experimented with an attention CNN <span class="citation" data-cites="zUPTZa6w">[<a href="#ref-zUPTZa6w" role="doc-biblioref">93</a>]</span>, and Yi et al. proposed an RNN model with multiple attention layers <span class="citation" data-cites="M6JCKCLX">[<a href="#ref-M6JCKCLX" role="doc-biblioref">94</a>]</span>. In both cases, it is a single model with attention mechanism, which allows the decoder to focus on different parts of the source sentence. As a result, it does not require dependency parsing or training multiple models. Both attention CNN and RNN have comparable results, but the CNN model has an advantage in that it can be easily computed in parallel, hence making it faster with recent graphics processing units (GPUs).</p>
 <p>For biotopes event extraction, Li et al. employed CNNs and distributed representation <span class="citation" data-cites="ztw1ugBP">[<a href="#ref-ztw1ugBP" role="doc-biblioref">95</a>]</span> while Mehryary et al. used long short-term memory (LSTM) networks to extract complicated relations <span class="citation" data-cites="1AkznVzFs">[<a href="#ref-1AkznVzFs" role="doc-biblioref">96</a>]</span>. Li et al. applied word embedding to extract complete events from biomedical text and achieved results comparable to the state-of-the-art systems <span class="citation" data-cites="E0XYyYBe">[<a href="#ref-E0XYyYBe" role="doc-biblioref">97</a>]</span>. There are also approaches that identify event triggers rather than the complete event <span class="citation" data-cites="XbkgrcMy z8hmfrmY">[<a href="#ref-XbkgrcMy" role="doc-biblioref">98</a>,<a href="#ref-z8hmfrmY" role="doc-biblioref">99</a>]</span>. Taken together, deep learning models outperform traditional kernel methods or feature-based approaches by 1–5% in f-score. Among various deep learning approaches, CNNs stand out as the most popular model both in terms of computational complexity and performance, while RNNs have achieved continuous progress.</p>
@@ -522,7 +672,7 @@
 <p>We implemented continuous analysis so the manuscript was automatically regenerated whenever the source changed <span class="citation" data-cites="Qh7xTLwz">[<a href="#ref-Qh7xTLwz" role="doc-biblioref">150</a>]</span>. We configured Travis CI—a continuous integration service—to fetch new citation metadata and rebuild the manuscript for every commit. Accordingly, formatting or citation errors in pull requests would cause the Travis CI build to fail, automating quality control. In addition, the build process renders templated variables, such as the reference counts mentioned above, to automate the updating of dynamic content. When contributions were merged into the <code>master</code> branch, Travis CI deployed the built manuscript by committing back to the GitHub repository. As a result, the latest manuscript version is always available at https://greenelab.github.io/deep-review. To ensure a consistent software environment, we defined a versioned <a href="https://conda.io">conda</a> environment of the software dependencies.</p>
 <p>In addition, we instructed the Travis CI deployment script to perform blockchain timestamping <span class="citation" data-cites="6MR50hyY QBWMEuxW">[<a href="#ref-6MR50hyY" role="doc-biblioref">600</a>,<a href="#ref-QBWMEuxW" role="doc-biblioref">601</a>]</span>. Using <a href="https://opentimestamps.org/">OpenTimestamps</a>, we submitted hashes for the manuscript and the source git commit for timestamping in the Bitcoin blockchain <span class="citation" data-cites="igA8jklc">[<a href="#ref-igA8jklc" role="doc-biblioref">602</a>]</span>. These timestamps attest that a given version of this manuscript (and its history) existed at a given point in time. The ability to irrefutably prove manuscript existence at a past time could be important to establish scientific precedence and enforce an immutable record of authorship.</p>
 <h3 id="author-contributions">Author contributions</h3>
-<p>We created an open repository on the GitHub version control platform (<a href="https://github.com/greenelab/deep-review"><code>greenelab/deep-review</code></a>) <span class="citation" data-cites="yLr4pV4G">[<a href="#ref-yLr4pV4G" role="doc-biblioref">603</a>]</span>. Here, we engaged with numerous authors from papers within and outside of the area. The manuscript was drafted via GitHub commits by 36 individuals who met the ICMJE standards of authorship. These were individuals who contributed to the review of the literature; drafted the manuscript or provided substantial critical revisions; approved the final manuscript draft; and agreed to be accountable in all aspects of the work. Individuals who did not contribute in all of these ways, but who did participate, are acknowledged below. We grouped authors into the following four classes of approximately equal contributions and randomly ordered authors within each contribution class. Drafted multiple sub-sections along with extensive editing, pull request reviews, or discussion: A.A.K., B.K.B., B.T.D., D.S.H., E.F., G.P.W., M.M.H., M.Z., P.A., T.C. Drafted one or more sub-sections: A.E.C., A.M.A., A.S., B.J.L., C.A.L., E.M.C., G.L.R., J.I., J.L., J.X., S.C.T., S.W., W.X., Z.L. Revised specific sub-sections or supervised drafting one or more sub-sections: A.H., A.K., D.D., D.J.H., L.K.W., M.H.S.S., S.J.S., S.M.B., Y.P., Y.Q. Drafted sub-sections, edited the manuscript, reviewed pull requests, and coordinated co-authors: A.G., C.S.G.</p>
+<p>We created an open repository on the GitHub version control platform (<a href="https://github.com/greenelab/deep-review"><code>greenelab/deep-review</code></a>) <span class="citation" data-cites="yLr4pV4G">[<a href="#ref-yLr4pV4G" role="doc-biblioref">603</a>]</span>. Here, we engaged with numerous authors from papers within and outside of the area. The manuscript was drafted via GitHub commits by 0 individuals who met the ICMJE standards of authorship. These were individuals who contributed to the review of the literature; drafted the manuscript or provided substantial critical revisions; approved the final manuscript draft; and agreed to be accountable in all aspects of the work. Individuals who did not contribute in all of these ways, but who did participate, are acknowledged below. We grouped authors into the following four classes of approximately equal contributions and randomly ordered authors within each contribution class. Drafted multiple sub-sections along with extensive editing, pull request reviews, or discussion: A.A.K., B.K.B., B.T.D., D.S.H., E.F., G.P.W., M.M.H., M.Z., P.A., T.C. Drafted one or more sub-sections: A.E.C., A.M.A., A.S., B.J.L., C.A.L., E.M.C., G.L.R., J.I., J.L., J.X., S.C.T., S.W., W.X., Z.L. Revised specific sub-sections or supervised drafting one or more sub-sections: A.H., A.K., D.D., D.J.H., L.K.W., M.H.S.S., S.J.S., S.M.B., Y.P., Y.Q. Drafted sub-sections, edited the manuscript, reviewed pull requests, and coordinated co-authors: A.G., C.S.G.</p>
 <h3 id="competing-interests">Competing interests</h3>
 <p>A.K. is on the Advisory Board of Deep Genomics Inc. E.F. is a full-time employee of GlaxoSmithKline. The remaining authors have no competing interests to declare.</p>
 <h3 id="acknowledgements">Acknowledgements</h3>
@@ -687,7 +837,7 @@ DOI: <a href="https://doi.org/10.1142/9789814644730_0014">10.1142/9789814644730_
 <p>27. <strong>Mitosis Detection in Breast Cancer Histology Images with Deep Neural Networks</strong><br />
 Dan C. Cireşan, Alessandro Giusti, Luca M. Gambardella, Jürgen Schmidhuber<br />
 <em>Medical Image Computing and Computer-Assisted Intervention – MICCAI 2013</em> (2013) <a href="https://doi.org/gcgk7t">https://doi.org/gcgk7t</a><br />
-DOI: <a href="https://doi.org/10.1007/978-3-642-40763-5_51">10.1007/978-3-642-40763-5_51</a></p>
+DOI: <a href="https://doi.org/10.1007/978-3-642-40763-5_51">10.1007/978-3-642-40763-5_51</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/24579167">24579167</a></p>
 </div>
 <div id="ref-YUms527e">
 <p>28. <strong>End effector target position learning using feedforward with error back-propagation and recurrent neural networks</strong><br />
@@ -1186,7 +1336,7 @@ DOI: <a href="https://doi.org/10.1038/srep32404">10.1038/srep32404</a> · PMID: 
 <p>112. <strong>Bidirectional RNN for Medical Event Detection in Electronic Health Records</strong><br />
 Abhyuday N Jagannatha, Hong Yu<br />
 <em>Proceedings of the conference. Association for Computational Linguistics. North American Chapter. Meeting</em> (2016-06) <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5119627/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5119627/</a><br />
-PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27885364">27885364</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5119627">PMC5119627</a></p>
+DOI: <a href="https://doi.org/10.18653/v1/n16-1056">10.18653/v1/n16-1056</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27885364">27885364</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5119627">PMC5119627</a></p>
 </div>
 <div id="ref-8YmxYueq">
 <p>113. <strong>Representations of Time Expressions for Temporal Relation Extraction with Convolutional Neural Networks</strong><br />
@@ -1458,7 +1608,7 @@ Keith Bonawitz, Vladimir Ivanov, Ben Kreuter, Antonio Marcedone, H. Brendan McMa
 </div>
 <div id="ref-b8DJ1u6W">
 <p>161. <strong>Semi-supervised Knowledge Transfer for Deep Learning from Private Training Data</strong><br />
-Nicolas Papernot, Martín Abadi, Úlfar Erlingsson, Ian Goodfellow, Kunal Talwar<br />
+Nicolas Papernot, Martí, N Abadi, Ú, Lfar Erlingsson, Ian Goodfellow, Kunal Talwar<br />
 (2016-11-02) <a href="https://openreview.net/forum?id=HkwoSDPgg">https://openreview.net/forum?id=HkwoSDPgg</a></p>
 </div>
 <div id="ref-7yE9K08a">
@@ -1535,7 +1685,7 @@ DOI: <a href="https://doi.org/10.1038/484155a">10.1038/484155a</a> · PMID: <a h
 <p>174. <strong>Nonparametric Estimation from Incomplete Observations</strong><br />
 E. L. Kaplan, Paul Meier<br />
 <em>Journal of the American Statistical Association</em> (1958-06) <a href="https://doi.org/fscrh2">https://doi.org/fscrh2</a><br />
-DOI: <a href="https://doi.org/10.1080/01621459.1958.10501452">10.1080/01621459.1958.10501452</a></p>
+DOI: <a href="https://doi.org/10.2307/2281868">10.2307/2281868</a></p>
 </div>
 <div id="ref-ogs3PPp7">
 <p>175. <strong>Temporal disease trajectories condensed from population-wide registry data covering 6.2 million patients</strong><br />
@@ -1723,7 +1873,7 @@ DOI: <a href="https://doi.org/10.1186/gb-2013-14-10-r115">10.1186/gb-2013-14-10-
 <p>206. <strong>Methylation-Based Biological Age and Breast Cancer Risk</strong><br />
 Jacob K Kresovich, Zongli Xu, Katie M O’Brien, Clarice R Weinberg, Dale P Sandler, Jack A Taylor<br />
 <em>JNCI: Journal of the National Cancer Institute</em> (2019-02-22) <a href="https://doi.org/gf2nqn">https://doi.org/gf2nqn</a><br />
-DOI: <a href="https://doi.org/10.1093/jnci/djz020">10.1093/jnci/djz020</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30794318">30794318</a></p>
+DOI: <a href="https://doi.org/10.1093/jnci/djz020">10.1093/jnci/djz020</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30794318">30794318</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6792078">PMC6792078</a></p>
 </div>
 <div id="ref-jAbFiCUP">
 <p>207. <strong>DNA methylation arrays as surrogate measures of cell mixture distribution</strong><br />
@@ -2065,7 +2215,7 @@ DOI: <a href="https://doi.org/10.1101/230011">10.1101/230011</a></p>
 <div id="ref-Nc8y8wkO">
 <p>265. <strong>Transfer String Kernel for Cross-Context DNA-Protein Binding Prediction</strong><br />
 Ritambhara Singh, Jack Lanchantin, Gabriel Robins, Yanjun Qi<br />
-<em>IEEE/ACM Transactions on Computational Biology and Bioinformatics</em> (2018) <a href="https://doi.org/gcsmhp">https://doi.org/gcsmhp</a><br />
+<em>IEEE/ACM Transactions on Computational Biology and Bioinformatics</em> (2019-09-01) <a href="https://doi.org/gcsmhp">https://doi.org/gcsmhp</a><br />
 DOI: <a href="https://doi.org/10.1109/tcbb.2016.2609918">10.1109/tcbb.2016.2609918</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27654939">27654939</a></p>
 </div>
 <div id="ref-iWxvn0xF">
@@ -2081,7 +2231,7 @@ Yaroslav Ganin, Evgeniya Ustinova, Hana Ajakan, Pascal Germain, Hugo Larochelle,
 <div id="ref-zhmq9ktJ">
 <p>268. <strong>Learning Important Features Through Propagating Activation Differences</strong><br />
 Avanti Shrikumar, Peyton Greenside, Anshul Kundaje<br />
-<em>arXiv</em> (2017-04-10) <a href="https://arxiv.org/abs/1704.02685v1">https://arxiv.org/abs/1704.02685v1</a></p>
+<em>arXiv</em> (2017-04-10) <a href="https://arxiv.org/abs/1704.02685v2">https://arxiv.org/abs/1704.02685v2</a></p>
 </div>
 <div id="ref-19jjiGHWc">
 <p>269. <strong>The state of the art of mammalian promoter recognition</strong><br />
@@ -2576,7 +2726,7 @@ DOI: <a href="https://doi.org/10.1038/nature16961">10.1038/nature16961</a> · PM
 <p>353. <strong>Compositional biases of bacterial genomes and evolutionary implications.</strong><br />
 S Karlin, J Mrázek, AM Campbell<br />
 <em>Journal of Bacteriology</em> (1997-06) <a href="https://doi.org/gcgmbp">https://doi.org/gcgmbp</a><br />
-DOI: <a href="https://doi.org/10.1128/jb.179.12.3899-3913.1997">10.1128/jb.179.12.3899-3913.1997</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/9190805">9190805</a></p>
+DOI: <a href="https://doi.org/10.1128/jb.179.12.3899-3913.1997">10.1128/jb.179.12.3899-3913.1997</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/9190805">9190805</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC179198">PMC179198</a></p>
 </div>
 <div id="ref-QV551Nlx">
 <p>354. <strong>Accurate phylogenetic classification of variable-length DNA fragments</strong><br />
@@ -4067,6 +4217,7 @@ GitHub<br />
     /* links */
     a {
         color: #2196f3;
+        overflow-wrap: break-word;
     }
 
     /* normal links (not empty, not button link, not syntax highlighting link) */
@@ -4192,8 +4343,7 @@ GitHub<br />
         border: solid 1px #bdbdbd;
         padding: 10px;
         /* squash table if too wide for page by forcing line breaks */
-        word-break: break-all;
-        word-break: break-word;
+        overflow-wrap: break-word;
     }
 
     /* header row and even rows */
@@ -4741,7 +4891,7 @@ GitHub<br />
             border: solid 1px #bdbdbd;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
             background: #ffffff;
-            word-break: break-word;
+            overflow-wrap: break-word;
         }
 
         /* tooltip copy of paragraphs and figures */
@@ -7677,6 +7827,136 @@ GitHub<br />
         ></path>
     </svg>
 </template>
+<!-- attributes plugin -->
+
+<script>
+    (function() {
+        // /////////////////////////
+        // DESCRIPTION
+        // /////////////////////////
+
+        // This Manubot plugin allows arbitrary HTML attributes to be attached
+        // to (almost) any element. Place an HTML comment inside or next to the
+        // desired element in the format <!-- $attribute="value" -->
+
+        // /////////////////////////
+        // OPTIONS
+        // /////////////////////////
+
+        // plugin name prefix for url parameters
+        const pluginName = 'attributes';
+
+        // default plugin options
+        const options = {
+            // whether plugin is on or not
+            enabled: 'true'
+        };
+
+        // change options above, or override with url parameter, eg:
+        // 'manuscript.html?pluginName-enabled=false'
+
+        // /////////////////////////
+        // SCRIPT
+        // /////////////////////////
+
+        // start script
+        function start() {
+            // get list of comments in document
+            const comments = findComments();
+
+            for(const comment of comments)
+                if (comment.parentElement)
+                    addAttributes(
+                        comment.parentElement,
+                        comment.nodeValue.trim()
+                    );
+        }
+
+        // add html attributes to specified element based on string of 
+        // html attributes and values
+        function addAttributes(element, text) {
+            // regex's for finding attribute/value pairs in the format of
+            // attribute="value" or attribute='value
+            const regex2 = /\$([a-zA-Z\-]+)?=\"(.+?)\"/;
+            const regex1 = /\$([a-zA-Z\-]+)?=\'(.+?)\'/;
+
+            // loop through attribute/value pairs
+            let match;
+            while(match = text.match(regex2) || text.match(regex1)) {
+                // get attribute and value from regex capture groups
+                let attribute = match[1];
+                let value = match[2];
+
+                // remove from string
+                text = text.substring(match.index + match[0].length);
+
+                if (!attribute || !value)
+                    break;
+
+                // set attribute of parent element
+                try {
+                    element.setAttribute(attribute, value);
+                } catch(error) {
+                    console.log(error);
+                }
+
+                // special case for colspan
+                if (attribute === 'colspan')
+                    removeTableCells(element, value);
+            }
+        }
+
+        // get list of comment elements in document
+        function findComments() {
+            const comments = [];
+
+            // iterate over comment nodes in document
+            function acceptNode(node) {
+                return NodeFilter.FILTER_ACCEPT;
+            }
+            const iterator = document.createNodeIterator(
+                document.body,
+                NodeFilter.SHOW_COMMENT,
+                acceptNode
+            );
+            let node;
+            while(node = iterator.nextNode())
+                comments.push(node);
+
+            return comments;
+        }
+
+        // remove certain number of cells after specified cell
+        function removeTableCells(cell, number) {
+            number = parseInt(number);
+            if (!number)
+                return;
+
+            // remove elements
+            for(; number > 1; number--) {
+                if (cell.nextElementSibling)
+                    cell.nextElementSibling.remove();
+            }
+        }
+
+        // load options from url parameters
+        function loadOptions() {
+            const url = window.location.search;
+            const params = new URLSearchParams(url);
+            for (const optionName of Object.keys(options)) {
+                const paramName = pluginName + '-' + optionName;
+                const param = params.get(paramName);
+                if (param !== '' && param !== null)
+                    options[optionName] = param;
+            }
+        }
+        loadOptions();
+
+        // start script when document is finished loading
+        if (options.enabled === 'true')
+            window.addEventListener('load', start);
+    })();
+</script>
 <!-- math plugin configuration -->
 
 <script type="text/x-mathjax-config">
