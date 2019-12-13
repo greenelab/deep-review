@@ -40,7 +40,6 @@ pandoc --verbose \
   --csl="$CSL_PATH" \
   --metadata link-citations=true \
   --include-after-body=build/themes/default.html \
-  --include-after-body=build/plugins/table-scroll.html \
   --include-after-body=build/plugins/anchors.html \
   --include-after-body=build/plugins/accordion.html \
   --include-after-body=build/plugins/tooltips.html \
