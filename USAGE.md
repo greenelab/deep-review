@@ -12,6 +12,9 @@ Markdown files are identified by their `.md` extension and ordered according to 
 For basic formatting, check out the [CommonMark Help](https://commonmark.org/help/) page for an introduction to the formatting options provided by standard markdown.
 In addition, Manubot supports an extended version of markdown, tailored for scholarly writing, which includes [Pandoc's Markdown](https://pandoc.org/MANUAL.html#pandocs-markdown) and the extensions discussed below.
 
+The `content/02.delete-me.md` file in the Rootstock repository shows many of the elements and formatting options supported by Manubot.
+See the [raw markdown](https://gitlab.com/manubot/rootstock/blob/master/content/02.delete-me.md#L) in this file and compare it to the [rendered manuscript](https://manubot.github.io/rootstock/).
+
 Within a paragraph in markdown, single newlines are interpreted as whitespace (same as a space).
 A paragraph's source does not need to contain newlines.
 However, "one paragraph per line" makes the git diff less precise, leading to less granular review commenting, and makes conflicts more likely.
@@ -179,7 +182,7 @@ The following YAML shows the supported key–value pairs for an author:
 ```yaml
 github: dhimmel  # strongly suggested
 name: Daniel S. Himmelstein  # mandatory
-initials: DSH  # strongly suggested
+initials: DSH  # optional
 orcid: 0000-0002-3012-7446  # mandatory
 twitter: dhimmel  # optional
 email: daniel.himmelstein@gmail.com  # suggested
