@@ -20,6 +20,7 @@ Bar2015_nonmed_tl	doi:10.1117/12.2083124
 Barash2010_splicing_code	doi:10.1038/nature09000
 Baxt1991_myocardial	doi:10.7326/0003-4819-115-11-843
 BeaulieuJones2016_ehr_encode	doi:10.1016/j.jbi.2016.10.007
+Belkin2019_PNAS	doi:10.1073/pnas.1903070116
 Bengio2015_prec	arxiv:1412.7024
 Berezikov2011_mirna	doi:10.1038/nrg3079
 Bergstra2011_hyper	url:https://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimization.pdf
@@ -66,6 +67,7 @@ Duvenaud2015_graph_conv	url:http://papers.nips.cc/paper/5954-convolutional-netwo
 Edwards2015_growing_pains	doi:10.1145/2771283
 Ehran2009_visualizing	url:http://www.iro.umontreal.ca/~lisa/publications2/index.php/publications/show/247
 Elephas	url:https://github.com/maxpumperla/elephas
+Elton_molecular_design_review	doi:10.1039/C9ME00039A
 Errington2014_reproducibility	doi:10.7554/eLife.04333
 Eser2016_fiddle	doi:10.1101/081380
 Esfahani2016_melanoma	doi:10.1109/EMBC.2016.7590963
@@ -76,6 +78,7 @@ Feinberg2018	doi:10.1056/NEJMra1402513
 Finnegan2017_maximum	doi:10.1101/105957
 Fong2017_perturb	doi:10.1109/ICCV.2017.371
 Fraga2005	doi:10.1073/pnas.0500398102
+Frosst2017_distilling	arxiv:1711.09784
 Fu2019	doi:10.1109/TCBB.2019.2909237
 Gal2015_dropout	arxiv:1506.02142
 Gaublomme2015_th17	doi:10.1016/j.cell.2015.11.009
@@ -184,6 +187,7 @@ Meissner2008	doi:10.1038/nature07107
 Metaphlan	doi:10.1038/nmeth.2066
 Meng2016_mllib	arxiv:1505.06807
 Min2016_deepenhancer	doi:10.1109/BIBM.2016.7822593
+Montavon2018_visualization	doi:10.1016/j.dsp.2017.10.011
 Momeni2018	doi:10.1101/438341
 Moritz2015_sparknet	arxiv:1511.06051
 Mordvintsev2015_inceptionism	url:http://googleresearch.blogspot.co.uk/2015/06/inceptionism-going-deeper-into-neural.html
@@ -310,7 +314,8 @@ Yoon2016_cancer_reports	doi:10.1007/978-3-319-47898-2_21
 Yosinski2014	url:https://papers.nips.cc/paper/5347-how-transferable-are-features-in-deep-neural-networks
 Yosinksi2015_understanding	arxiv:1506.06579
 Yu2016_melanoma_resnet	doi:10.1109/TMI.2016.2642839
-Zeiler2013_visualizing	arxiv:1311.2901
+Zhavoronkov2019_drugs	doi:10.1038/s41587-019-0224-x
+Zeiler2013_visualizing	doi:10.1007/978-3-319-10590-1_53
 Zeng2015	doi:10.1186/s12859-015-0553-9
 Zeng2016_convolutional	doi:10.1093/bioinformatics/btw255
 Zhang2015_multitask_tl	doi:10.1145/2783258.2783304

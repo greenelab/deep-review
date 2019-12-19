@@ -1,0 +1,17 @@
+{
+  "pandoc": {
+    "date-meta": "2019-12-19",
+    "author-meta": [],
+    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.date\" content=\"2019-12-19\" />\n<meta name=\"citation_publication_date\" content=\"2019-12-19\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->"
+  },
+  "manubot": {
+    "date": "December 19, 2019",
+    "authors": [],
+    "manuscript_stats": {
+      "reference_counts": {
+        "total": 0
+      },
+      "word_count": 0
+    }
+  }
+}
