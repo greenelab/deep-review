@@ -1,0 +1,13 @@
+# Pandoc --defaults shared between Manubot output formats.
+from: markdown
+input-file: output/manuscript.md
+filters:
+- pandoc-fignos
+- pandoc-eqnos
+- pandoc-tablenos
+- pandoc-citeproc
+wrap: preserve
+metadata:
+  bibliography: output/references.json
+  csl: build/assets/style.csl
+  link-citations: true

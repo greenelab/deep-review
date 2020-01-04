@@ -1,7 +1,7 @@
 # Building the manuscript
 
 [`build.sh`](build.sh) builds the repository.
-`sh build/build.sh` should be executed from the root directory of the repository.
+`bash build/build.sh` should be executed from the root directory of the repository.
 By default, `build.sh` creates HTML and PDF outputs.
 However, setting the `BUILD_PDF` environment variable to `false` will suppress PDF output.
 For example, run local builds using the command `BUILD_PDF=false bash build/build.sh`.
@@ -10,8 +10,11 @@ To build a DOCX file of the manuscript, set the `BUILD_DOCX` environment variabl
 For example, use the command `BUILD_DOCX=true bash build/build.sh`.
 To export DOCX for all Travis builds, set a [Travis environment variable](https://docs.travis-ci.com/user/environment-variables/#Defining-Variables-in-Repository-Settings).
 Currently, equation numbers via `pandoc-eqnos` are not supported for DOCX output.
-There is varying support for embedding images in DOCX output.
-Please reference [Pull Request #40](https://github.com/manubot/rootstock/pull/40) for possible solutions and continued discussion.
+
+Format conversion is done using [Pandoc](https://pandoc.org/MANUAL.html).
+`build.sh` calls `pandoc` commands using the options specified in [`pandoc-defaults`](pandoc-defaults).
+Each file specifies a set of pandoc `--defaults` options for a given format.
+To change the options, either edit the YAML files directly or add additional `--defaults` files.
 
 ## Environment
 
