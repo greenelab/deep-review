@@ -174,14 +174,18 @@ This process can be difficult, especially if conflicts have arisen, and is recom
 It is recommended to do rootstock upgrades via a pull request to help you view the proposed changes and to ensure the build uses the updated environment.
 First, checkout a new branch to use as the pull request head branch:
 
-```sh
-# This command names the branch using the current date, i.e. rootstock-2018-11-16
+```shell
+# checkout a new branch, named using the current date, i.e. rootstock-2018-11-16
 git checkout -b rootstock-$(date '+%Y-%m-%d')
 ```
 
 Second, pull the new commits from rootstock, but do not automerge:
 
-```sh
+```shell
+# if rootstock remote is not set, add it
+git config remote.rootstock.url || git remote add rootstock https://github.com/manubot/rootstock.git
+
+# pull the new commits from rootstock
 git pull --no-ff --no-commit rootstock master
 ```
 
@@ -196,6 +200,14 @@ When there are no longer any unstaged changes, then do `git commit`.
 
 If updating `master` via a pull request, proceed to push the commit to GitHub and open a pull request.
 Once the pull request is ready to merge, use GitHub's "Create a merge commit" option rather than "Squash and merge" or "Rebase and merge" to preserve the rootstock commit hashes.
+
+The environment for local builds does not automatically update when [`build/environment.yml`](build/environment.yml) changes.
+To update your local conda `manubot` environment with new changes, run:
+
+```shell
+# update a local conda environment
+conda env update --file build/environment.yml
+```
 
 # Previewing pull request builds with AppVeyor
 
