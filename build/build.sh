@@ -17,6 +17,7 @@ manubot process \
   --content-directory=content \
   --output-directory=output \
   --cache-directory=ci/cache \
+  --skip-citations \
   --log-level=INFO
 
 # Pandoc's configuration is specified via files of option defaults

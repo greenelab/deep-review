@@ -5,9 +5,9 @@ filters:
 - pandoc-fignos
 - pandoc-eqnos
 - pandoc-tablenos
+- pandoc-manubot-cite
 - pandoc-citeproc
 wrap: preserve
 metadata:
-  bibliography: output/references.json
   csl: build/assets/style.csl
   link-citations: true

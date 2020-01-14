@@ -111,15 +111,39 @@ For example, the following citations all refer to the same study, but will be tr
 
 #### Citation tags
 
-The system also supports citation tags, which are recommended for the following applications:
+The system also supports citation tags, which map from one citation key (an alias) to another.
+Tags are recommended for the following applications:
 
 1. A citation's identifier contains forbidden characters, such as `;` or `=`, or ends with a non-alphanumeric character other than `/`.
    In these instances, you must use a tag.
 2. A single reference is cited many times.
    Therefore, it might make sense to define a tag, so if the citation updates (e.g. a newer version becomes available), only a single change is required.
 
-Tags should be defined in [`content/citation-tags.tsv`](content/citation-tags.tsv).
+Tags can be defined using Markdown's [link reference syntax](https://spec.commonmark.org/0.29/#link-reference-definitions) as follows:
+
+```markdown
+Citing a URL containing a `?` character [@tag:my-url].
+Citing a DOI containing parentheses [@doi:my-doi].
+
+[@tag:my-url]: url:https://openreview.net/forum?id=HkwoSDPgg
+[@tag:my-doi]: doi:10.1016/S0022-2836(05)80360-2
+```
+
+This syntax is also used by [`pandoc-url2cite`](https://github.com/phiresky/pandoc-url2cite).
+Make sure to place these link reference definitions in their own paragraphs.
+
+Another method for defining tags is to define `pandoc.citekey-aliases` in `metadata.yaml`:
+
+```yaml
+pandoc:
+  citekey-aliases:
+    tag:my-url: url:https://openreview.net/forum?id=HkwoSDPgg
+    tag:my-doi: doi:10.1016/S0022-2836(05)80360-2
+```
+
+For backwards compatability, tags can also be defined in `content/citation-tags.tsv`.
 If `citation-tags.tsv` defines the tag `study-x`, then this study can be cited like `@tag:study-x`.
+This method is deprecated.
 
 ## Reference metadata
 
