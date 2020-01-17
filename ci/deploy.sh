@@ -7,9 +7,16 @@ set -o errexit \
     -o nounset \
     -o pipefail
 
+# set environment variables for either Travis or GitHub Actions
+REPO_SLUG=${TRAVIS_REPO_SLUG:-$GITHUB_REPOSITORY}
+COMMIT=${TRAVIS_COMMIT:-$GITHUB_SHA}
+BUILD_WEB_URL=${TRAVIS_BUILD_WEB_URL:-$BUILD_WEB_URL}
+JOB_WEB_URL=${TRAVIS_JOB_WEB_URL:-"https://github.com/$GITHUB_REPOSITORY/runs/$GITHUB_ACTION"}
+BRANCH=${TRAVIS_BRANCH:-master}
+
 # Add commit hash to the README
-OWNER_NAME="$(dirname "$TRAVIS_REPO_SLUG")"
-REPO_NAME="$(basename "$TRAVIS_REPO_SLUG")"
+OWNER_NAME="$(dirname "$REPO_SLUG")"
+REPO_NAME="$(basename "$REPO_SLUG")"
 export OWNER_NAME REPO_NAME
 envsubst < webpage/README.md > webpage/README-complete.md
 mv webpage/README-complete.md webpage/README.md
@@ -18,8 +25,8 @@ mv webpage/README-complete.md webpage/README.md
 git config --global push.default simple
 git config --global user.email "$(git log --max-count=1 --format='%ae')"
 git config --global user.name "$(git log --max-count=1 --format='%an')"
-git checkout "$TRAVIS_BRANCH"
-git remote set-url origin "git@github.com:$TRAVIS_REPO_SLUG.git"
+git checkout "$BRANCH"
+git remote set-url origin "git@github.com:$REPO_SLUG.git"
 
 # Decrypt and add SSH key
 eval "$(ssh-agent -s)"
@@ -50,22 +57,22 @@ manubot webpage \
   --timestamp \
   --no-ots-cache \
   --checkout=gh-pages \
-  --version="$TRAVIS_COMMIT"
+  --version="$COMMIT"
 
 # Commit message
 MESSAGE="\
 $(git log --max-count=1 --format='%s') [ci skip]
 
 This build is based on
-https://github.com/$TRAVIS_REPO_SLUG/commit/$TRAVIS_COMMIT.
+https://github.com/$REPO_SLUG/commit/$COMMIT.
 
-This commit was created by the following Travis CI build and job:
-$TRAVIS_BUILD_WEB_URL
-$TRAVIS_JOB_WEB_URL
+This commit was created by the following CI build and job:
+$BUILD_WEB_URL
+$JOB_WEB_URL
 
 The full commit message that triggered this build is copied below:
 
-$TRAVIS_COMMIT_MESSAGE
+$COMMIT_MESSAGE
 "
 
 # Deploy the manubot outputs to output

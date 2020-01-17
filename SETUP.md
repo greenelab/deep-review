@@ -62,28 +62,36 @@ git push --set-upstream origin output
 
 ## Continuous integration
 
-Now you must manually enable Travis CI for the new repository at <https://travis-ci.com>.
-Click the `+` sign to "Add New Repository".
-If you don't see your repository listed, push the "Sync account" button.
-Finally, flick the repository's switch to enable CI.
+Manubot integrates with cloud services to perform continuous integration (CI).
+For Manubot that means automatically building and deploying your manuscript.
+Manubot supports the following services:
+
+- [GitHub Actions](https://github.com/features/actions).
+  Configured at [`.github/workflows/manubot.yaml`](.github/workflows/manubot.yaml)
+- [Travis CI](https://travis-ci.com).
+  Configured at [`.travis.yml`](.travis.yml).
+- [AppVeyor](https://www.appveyor.com/).
+  Configured at [`.appveyor.yml`](.appveyor.yml).
+
+GitHub Actions is the default service for new manucripts since it's easiest to setup.
+We recommend using either GitHub Actions or Travis CI, but not both to avoid deploying manuscripts multiple times.
+AppVeyor can be used in addition to GitHub Actions or Travis CI to comment on pull request with download links to rendered PDFs.
+GitHub Actions do upload rendered manuscripts as artifacts, but do not leave pull request comments.
 
 ### Deploy key
 
-Generate a deploy key so Travis CI can write to the repository.
+Generate a deploy key so CI can write to the repository.
 
 ```sh
-# IMPORTANT: change working directory to ci
-cd ci
-
 # Generate deploy.key.pub (public) and deploy.key (private)
 ssh-keygen \
   -t rsa -b 4096 -N "" \
-  -C "deploy@travis-ci.com" \
-  -f deploy.key
+  -C "deploy@manubot.org" \
+  -f ci/deploy.key
 
 # Encode deploy.key to remove newlines, writing encoded text to deploy.key.txt.
 # This is required for entry into the Travis settings.
-openssl base64 -A -in deploy.key > deploy.key.txt
+openssl base64 -A -in ci/deploy.key > ci/deploy.key.txt
 ```
 
 #### Add the public key to GitHub
@@ -93,23 +101,61 @@ openssl base64 -A -in deploy.key > deploy.key.txt
 echo "https://github.com/$OWNER/$REPO/settings/keys/new"
 
 # Print the public key for copy-pasting to GitHub
-cat deploy.key.pub
+cat ci/deploy.key.pub
 ```
 
 Go to the GitHub settings URL echoed above in a browser, and click "Add deploy key".
 For "Title", add a description like "Manubot Travis Deploy Key".
-Copy-paste the contents of the `deploy.key.pub` text file (printed above by `cat`) into the "Key" text box.
+Copy-paste the contents of the `ci/deploy.key.pub` text file (printed above by `cat`) into the "Key" text box.
 Check the "Allow write access" box below.
 Finally, click "Add key".
 
-#### Add the private key to Travis CI
+#### Add the private key to GitHub
+
+```sh
+# Print the URL for adding the private key to GitHub
+echo "https://github.com/$OWNER/$REPO/settings/secrets"
+
+# Print the encoded private key for copy-pasting to GitHub
+cat ci/deploy.key.txt && echo
+```
+
+Next, go to the GitHub repository settings page (URL echoed above).
+Click "Add a new secret".
+For "Name", enter `MANUBOT_SSH_PRIVATE_KEY`.
+Next, copy-paste the content of `deploy.key.txt` into "Value"
+(printed above by `cat`, including any trailing `=` characters if present).
+
+### GitHub Actions
+
+If you plan on only using GitHub actions, you can remove configuration files for other CI services:
+
+```shell
+# remove Travis CI config
+git rm .travis.yml
+# remove AppVeyor config
+git rm .appveyor.yml
+# remove ci/install.sh if not using neither Travis CI nor AppVeyor
+git rm ci/install.sh
+```
+
+<details>
+<summary>Expand for Travis CI setup</summary>
+
+### Travis CI
+
+Travis CI is another option for continuous integration.
+Now you must manually enable Travis CI for the new repository at <https://travis-ci.com>.
+Click the `+` sign to "Add New Repository".
+If you don't see your repository listed, push the "Sync account" button.
+Finally, flick the repository's switch to enable CI.
 
 ```sh
 # Print the URL for adding the private key to Travis CI
 echo "https://travis-ci.com/$OWNER/$REPO/settings"
 
 # Print the encoded private key for copy-pasting to Travis CI
-cat deploy.key.txt && echo
+cat ci/deploy.key.txt && echo
 ```
 
 Next, go to the Travis CI repository settings page (URL echoed above).
@@ -121,6 +167,22 @@ Make sure "Display value in build logs" remains toggled off (the default).
 
 While in the Travis CI settings, activate the [limit concurrent jobs](https://blog.travis-ci.com/2014-07-18-per-repository-concurrency-setting/) toggle and enter `1` in the value field.
 This ensures previous Manubot builds deploy before subsequent ones begin.
+</details>
+
+<details>
+<summary>Expand for AppVeyor setup</summary>
+
+### Previewing pull request builds with AppVeyor
+
+You can optionally enable AppVeyor continuous integration to view pull request builds.
+Unlike Travis CI, AppVeyor supports storing manuscripts generated during pull request builds as artifacts.
+These can be previewed to facilitate pull request review and ensure formatting and reference changes render as expected.
+When a pull request build runs successfully, **@AppVeyorBot** will comment on the pull request with a download link to the manuscript PDF.
+
+To enable AppVeyor, follow steps 1 and 2 of the [AppVeyor welcome](https://www.appveyor.com/docs/) to sign in to AppVeyor and add your manuscript repository as an AppVeyor project.
+The repository already contains an `.appveyor.yml` build configuration file, so no other setup is required.
+AppVeyor only runs when it detects changes that are likely to affect the manuscript.
+</details>
 
 ### CI clean up
 
@@ -129,10 +191,7 @@ Clean up:
 
 ```sh
 # Optionally remove untracked files
-rm deploy.key*
-
-# IMPORTANT: return to the repository's root directory
-cd ..
+rm ci/deploy.key*
 ```
 
 ## README updates
@@ -208,14 +267,3 @@ To update your local conda `manubot` environment with new changes, run:
 # update a local conda environment
 conda env update --file build/environment.yml
 ```
-
-# Previewing pull request builds with AppVeyor
-
-You can optionally enable AppVeyor continuous integration to view pull request builds.
-Unlike Travis CI, AppVeyor supports storing manuscripts generated during pull request builds as artifacts.
-These can be previewed to facilitate pull request review and ensure formatting and reference changes render as expected.
-When a pull request build runs successfully, **@AppVeyorBot** will comment on the pull request with a download link to the manuscript PDF.
-
-To enable AppVeyor, follow steps 1 and 2 of the [AppVeyor welcome](https://www.appveyor.com/docs/) to sign in to AppVeyor and add your manuscript repository as an AppVeyor project.
-The repository already contains an `.appveyor.yml` build configuration file, so no other setup is required.
-AppVeyor only runs when it detects changes that are likely to affect the manuscript.

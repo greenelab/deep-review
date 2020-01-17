@@ -4,7 +4,9 @@
 
 [![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://manubot.github.io/rootstock/)
 [![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://manubot.github.io/rootstock/manuscript.pdf)
-[![Build Status](https://travis-ci.com/manubot/rootstock.svg?branch=master)](https://travis-ci.com/manubot/rootstock)
+[![GitHub Actions Status](https://github.com/manubot/rootstock/workflows/manubot/badge.svg)](https://github.com/manubot/rootstock/actions)
+[![Travis Build Status](https://travis-ci.com/manubot/rootstock.svg?branch=master)](https://travis-ci.com/manubot/rootstock)
+<!-- usage note: delete CI badges above for services not used by your manuscript -->
 
 ## Manuscript description
 
@@ -36,7 +38,6 @@ The directories are as follows:
 + [`webpage`](webpage) is a directory meant to be rendered as a static webpage for viewing the HTML manuscript.
 + [`build`](build) contains commands and tools for building the manuscript.
 + [`ci`](ci) contains files necessary for deployment via continuous integration.
-  For the CI configuration, see [`.travis.yml`](.travis.yml).
 
 ### Local execution
 
@@ -74,19 +75,17 @@ bash build/autobuild.sh
 
 ### Continuous Integration
 
-[![Build Status](https://travis-ci.com/manubot/rootstock.svg?branch=master)](https://travis-ci.com/manubot/rootstock)
-
-Whenever a pull request is opened, Travis CI will test whether the changes break the build process to generate a formatted manuscript.
+Whenever a pull request is opened, CI (continuous integration) will test whether the changes break the build process to generate a formatted manuscript.
 The build process aims to detect common errors, such as invalid citations.
-If your pull request build fails, see the Travis CI logs for the cause of failure and revise your pull request accordingly.
+If your pull request build fails, see the CI logs for the cause of failure and revise your pull request accordingly.
 
-When a commit to the `master` branch occurs (for example, when a pull request is merged), Travis CI builds the manuscript and writes the results to the [`gh-pages`](https://github.com/manubot/rootstock/tree/gh-pages) and [`output`](https://github.com/manubot/rootstock/tree/output) branches.
+When a commit to the `master` branch occurs (for example, when a pull request is merged), CI builds the manuscript and writes the results to the [`gh-pages`](https://github.com/manubot/rootstock/tree/gh-pages) and [`output`](https://github.com/manubot/rootstock/tree/output) branches.
 The `gh-pages` branch uses [GitHub Pages](https://pages.github.com/) to host the following URLs:
 
 + **HTML manuscript** at https://manubot.github.io/rootstock/
 + **PDF manuscript** at https://manubot.github.io/rootstock/manuscript.pdf
 
-For continuous integration configuration details, see [`.travis.yml`](.travis.yml).
+For continuous integration configuration details, see [`.github/workflows/manubot.yaml`](.github/workflows/manubot.yaml) if using GitHub Actions or [`.travis.yml`](.travis.yml) if using Travis CI.
 
 ## License
 
