@@ -123,7 +123,7 @@ cat ci/deploy.key.txt && echo
 Next, go to the GitHub repository settings page (URL echoed above).
 Click "Add a new secret".
 For "Name", enter `MANUBOT_SSH_PRIVATE_KEY`.
-Next, copy-paste the content of `deploy.key.txt` into "Value"
+Next, copy-paste the content of `ci/deploy.key.txt` into "Value"
 (printed above by `cat`, including any trailing `=` characters if present).
 
 ### GitHub Actions

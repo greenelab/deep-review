@@ -61,7 +61,8 @@ manubot webpage \
 
 # Commit message
 MESSAGE="\
-$(git log --max-count=1 --format='%s') [ci skip]
+$(git log --max-count=1 --format='%s')
+[ci skip]
 
 This build is based on
 https://github.com/$REPO_SLUG/commit/$COMMIT.
@@ -69,10 +70,6 @@ https://github.com/$REPO_SLUG/commit/$COMMIT.
 This commit was created by the following CI build and job:
 $BUILD_WEB_URL
 $JOB_WEB_URL
-
-The full commit message that triggered this build is copied below:
-
-$COMMIT_MESSAGE
 "
 
 # Deploy the manubot outputs to output

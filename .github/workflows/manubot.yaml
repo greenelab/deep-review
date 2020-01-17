@@ -35,6 +35,5 @@ jobs:
         env:
           MANUBOT_SSH_PRIVATE_KEY: ${{ secrets.MANUBOT_SSH_PRIVATE_KEY }}
           BUILD_WEB_URL: https://github.com/${{ github.repository }}/commit/${{ github.sha }}/checks
-          COMMIT_MESSAGE: ${{ github.event.head_commit.message }}
         shell: bash --login {0}        
         run: bash ci/deploy.sh

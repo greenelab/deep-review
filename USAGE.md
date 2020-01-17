@@ -131,6 +131,7 @@ Citing a DOI containing parentheses [@doi:my-doi].
 
 This syntax is also used by [`pandoc-url2cite`](https://github.com/phiresky/pandoc-url2cite).
 Make sure to place these link reference definitions in their own paragraphs.
+These paragraphs can be in any of the content Markdown files.
 
 Another method for defining tags is to define `pandoc.citekey-aliases` in `metadata.yaml`:
 
@@ -141,7 +142,7 @@ pandoc:
     tag:my-doi: doi:10.1016/S0022-2836(05)80360-2
 ```
 
-For backwards compatability, tags can also be defined in `content/citation-tags.tsv`.
+For backwards compatibility, tags can also be defined in `content/citation-tags.tsv`.
 If `citation-tags.tsv` defines the tag `study-x`, then this study can be cited like `@tag:study-x`.
 This method is deprecated.
 
