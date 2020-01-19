@@ -105,7 +105,7 @@ cat ci/deploy.key.pub
 ```
 
 Go to the GitHub settings URL echoed above in a browser, and click "Add deploy key".
-For "Title", add a description like "Manubot Travis Deploy Key".
+For "Title", add a description like "Manubot Deploy Key".
 Copy-paste the contents of the `ci/deploy.key.pub` text file (printed above by `cat`) into the "Key" text box.
 Check the "Allow write access" box below.
 Finally, click "Add key".

@@ -36,4 +36,10 @@ jobs:
           MANUBOT_SSH_PRIVATE_KEY: ${{ secrets.MANUBOT_SSH_PRIVATE_KEY }}
           BUILD_WEB_URL: https://github.com/${{ github.repository }}/commit/${{ github.sha }}/checks
         shell: bash --login {0}        
-        run: bash ci/deploy.sh
+        run: |
+          if [ "$MANUBOT_SSH_PRIVATE_KEY" != "" ]; then
+            bash ci/deploy.sh
+          else
+            echo >&2 "Skipping deployment because the MANUBOT_SSH_PRIVATE_KEY secret is not set.
+            Instructions at https://github.com/manubot/rootstock/blob/master/SETUP.md#deploy-key"
+          fi
