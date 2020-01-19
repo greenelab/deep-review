@@ -19,4 +19,4 @@ deploy:
   skip_cleanup: true
   on:
     branch: master
-    condition: '[[ $TRAVIS_EVENT_TYPE = "push" && (-v MANUBOT_SSH_PRIVATE_KEY || "${!encrypted_*}" != "") ]]'
+    condition: $TRAVIS_EVENT_TYPE = "push" && (-v MANUBOT_SSH_PRIVATE_KEY || "${!encrypted_*}" != "")
