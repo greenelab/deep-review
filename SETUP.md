@@ -245,7 +245,7 @@ Second, pull the new commits from rootstock, but do not automerge:
 git config remote.rootstock.url || git remote add rootstock https://github.com/manubot/rootstock.git
 
 # pull the new commits from rootstock
-git pull --no-ff --no-commit rootstock master
+git pull --no-ff --no-rebase --no-commit rootstock master
 ```
 
 If all goes well, there won't be any conflicts.
