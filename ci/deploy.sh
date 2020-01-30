@@ -10,8 +10,8 @@ set -o errexit \
 # set environment variables for either Travis or GitHub Actions
 REPO_SLUG=${TRAVIS_REPO_SLUG:-$GITHUB_REPOSITORY}
 COMMIT=${TRAVIS_COMMIT:-$GITHUB_SHA}
-BUILD_WEB_URL=${TRAVIS_BUILD_WEB_URL:-$BUILD_WEB_URL}
-JOB_WEB_URL=${TRAVIS_JOB_WEB_URL:-"https://github.com/$GITHUB_REPOSITORY/runs/$GITHUB_ACTION"}
+CI_BUILD_WEB_URL=${CI_BUILD_WEB_URL:-$TRAVIS_BUILD_WEB_URL}
+CI_JOB_WEB_URL=${CI_JOB_WEB_URL:-$TRAVIS_JOB_WEB_URL}
 BRANCH=${TRAVIS_BRANCH:-master}
 
 # Add commit hash to the README
@@ -68,8 +68,8 @@ This build is based on
 https://github.com/$REPO_SLUG/commit/$COMMIT.
 
 This commit was created by the following CI build and job:
-$BUILD_WEB_URL
-$JOB_WEB_URL
+$CI_BUILD_WEB_URL
+$CI_JOB_WEB_URL
 "
 
 # Deploy the manubot outputs to output
