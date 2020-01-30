@@ -1,3 +1,20 @@
+- [Cloning the manubot/rootstock repository to create a new manuscript](#cloning-the-manubot-rootstock-repository-to-create-a-new-manuscript)
+  * [Configuration](#configuration)
+  * [Create repository](#create-repository)
+  * [Continuous integration](#continuous-integration)
+    + [Deploy key](#deploy-key)
+      - [Add the public key to GitHub](#add-the-public-key-to-github)
+      - [Add the private key to GitHub](#add-the-private-key-to-github)
+    + [GitHub Actions](#github-actions)
+    + [Travis CI](#travis-ci)
+    + [Previewing pull request builds with AppVeyor](#previewing-pull-request-builds-with-appveyor)
+    + [CI clean up](#ci-clean-up)
+  * [README updates](#readme-updates)
+  * [Finalize](#finalize)
+- [Merging upstream rootstock changes](#merging-upstream-rootstock-changes)
+
+_Table of contents generated with [markdown-toc](https://ecotrust-canada.github.io/markdown-toc/)_
+
 # Cloning the manubot/rootstock repository to create a new manuscript
 
 The process to create a new Manubot manuscript is a bit challenging, because it requires a few steps that are difficult to automate.
