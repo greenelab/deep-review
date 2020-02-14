@@ -1,4 +1,7 @@
 # See https://www.appveyor.com/docs/getting-started-with-appveyor-for-linux/
+# Don't build branches with a PR, since their build will be created with the PR itself. 
+# Otherwise there would be two builds -- one for the PR and one for the branch.
+# If you're having issues with getting your PR to build, make sure there are no merge conflicts.
 skip_branch_with_pr: true
 
 # Enable 'Do not build on "Push" events' in the AppVeyor project settings
