@@ -53,6 +53,47 @@
   }
  },
  {
+  "id": "url:https://openreview.net/pdf?id=rJWF0Fywf",
+  "type": "article-journal",
+  "title": "Winner's Curse? On Pace, Progress, and Empirical Rigor ...",
+  "container-title": "International Conference on Learning Representations 2018",
+  "URL": "https://openreview.net/pdf?id=rJWF0Fywf",
+  "author": [
+   {
+    "family": "Sculley",
+    "given": "D."
+   },
+   {
+    "family": "Snoek",
+    "given": "Jasper"
+   },
+   {
+    "family": "Rahimi",
+    "given": "Ali"
+   },
+   {
+    "family": "Wiltschko",
+    "given": "Alex"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     "2018"
+    ]
+   ]
+  },
+  "accessed": {
+   "date-parts": [
+    [
+     "2020",
+     2,
+     14
+    ]
+   ]
+  }
+ },
+ {
   "id": "url:https://repozitorij.uni-lj.si/IzpisGradiva.php?id=85515",
   "type": "report",
   "title": "Globoko ucenje na genomskih in filogenetskih podatkih",

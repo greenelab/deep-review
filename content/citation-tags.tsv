@@ -68,7 +68,7 @@ Edwards2015_growing_pains	doi:10.1145/2771283
 Ehran2009_visualizing	url:http://www.iro.umontreal.ca/~lisa/publications2/index.php/publications/show/247
 Elephas	url:https://github.com/maxpumperla/elephas
 Elton_molecular_design_review	doi:10.1039/C9ME00039A
-Elton2020 arxiv:2002.05149
+Elton2020	arxiv:2002.05149
 Errington2014_reproducibility	doi:10.7554/eLife.04333
 Eser2016_fiddle	doi:10.1101/081380
 Esfahani2016_melanoma	doi:10.1109/EMBC.2016.7590963
@@ -196,7 +196,7 @@ Mrzelj	url:https://repozitorij.uni-lj.si/IzpisGradiva.php?id=85515
 matis	doi:10.1016/S0097-8485(96)80015-5
 nbc	doi:10.1093/bioinformatics/btq619
 Murdoch2017_automatic	arxiv:1702.02540
-Murdoch2019 doi:10.1073/pnas.1900654116
+Murdoch2019	doi:10.1073/pnas.1900654116
 Nazor2012	doi:10.1016/j.stem.2012.02.013
 Nemati2016_rl	doi:10.1109/EMBC.2016.7591355
 Ni2018	doi:10.1101/385849
@@ -239,7 +239,7 @@ Rogers2010_fingerprints	doi:10.1021/ci100050t
 Roth2015_view_agg_cad	doi:10.1109/TMI.2015.2482920
 Romero2017_diet	url:https://openreview.net/pdf?id=Sk-oDY9ge
 Rosenberg2015_synthetic_seqs	doi:10.1016/j.cell.2015.09.054
-Rudin2019 doi:10.1038/s42256-019-0048-x
+Rudin2019	doi:10.1038/s42256-019-0048-x
 Russakovsky2015_imagenet	doi:10.1007/s11263-015-0816-y
 Sa2015_buckwild	pmcid:PMC4907892
 Salas2018_GR	doi:10.1101/gr.233213.117
@@ -248,7 +248,7 @@ Salzberg	doi:10.1186/1471-2105-11-544
 Schatz2010_dna_cloud	doi:10.1038/nbt0710-691
 Schmidhuber2014_dnn_overview	doi:10.1016/j.neunet.2014.09.003
 Scotti2016_missplicing	doi:10.1038/nrg.2015.3
-Sculley2018 url:https://openreview.net/pdf?id=rJWF0Fywf
+Sculley2018	url:https://openreview.net/pdf?id=rJWF0Fywf
 Segata	doi:10.1371/journal.pcbi.1004977
 Segler2017_drug_design	arxiv:1701.01329
 Seide2014_parallel	doi:10.1109/ICASSP.2014.6853593
@@ -258,7 +258,7 @@ Serden	doi:10.1016/S0168-8510(02)00208-7
 Shaham2016_batch_effects	doi:10.1093/bioinformatics/btx196
 Shapely	doi:10.1515/9781400881970-018
 Shen2017_medimg_review	doi:10.1146/annurev-bioeng-071516-044442
-Shen2019 doi:10.1016/j.eswa.2019.01.048
+Shen2019	doi:10.1016/j.eswa.2019.01.048
 Shin2016_cad_tl	doi:10.1109/TMI.2016.2528162
 Shrikumar2017_learning	arxiv:1704.02685
 Shrikumar2017_reversecomplement	doi:10.1101/103663
@@ -281,7 +281,7 @@ Su2015_gpu	arxiv:1507.01239
 Subramanian2016_bace1	doi:10.1021/acs.jcim.6b00290
 Sun2016_ensemble	arxiv:1606.00575
 Sundararajan2017_axiomatic	arxiv:1703.01365
-Sumita2018 doi:10.1021/acscentsci.8b00213
+Sumita2018	doi:10.1021/acscentsci.8b00213
 Sutskever	arxiv:1409.3215
 Swamidass2009_irv	doi:10.1021/ci8004379
 Tan2014_psb	doi:10.1142/9789814644730_0014
@@ -297,7 +297,7 @@ Torracinta2016_sim	doi:10.1101/079087
 Tu1996_anns	doi:10.1016/S0895-4356(96)00002-9
 Unterthiner2014_screening	url:http://www.bioinf.at/publications/2014/NIPS2014a.pdf
 Vanhoucke2011_cpu	url:https://research.google.com/pubs/pub37631.html
-Vamathevan2019 doi:10.1038/s41573-019-0024-5
+Vamathevan2019	doi:10.1038/s41573-019-0024-5
 Vera2016_sc_analysis	doi:10.1146/annurev-genet-120215-034854
 Vervier	doi:10.1093/bioinformatics/btv683
 Wallach2015_atom_net	arxiv:1510.02855
