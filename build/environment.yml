@@ -8,18 +8,19 @@ dependencies:
   - ghp-import=0.5.5
   - jinja2=2.10.3
   - jsonschema=3.2.0
-  - pandas=0.25.3
+  - pandas=1.0.1
   - pandoc=2.9
   - pango=1.40.14
-  - pip=19.3
+  - pip=20.0
   - psutil=5.6.7
   - python=3.7.6
   - pyyaml=5.3
   - requests=2.22.0
-  - watchdog=0.9.0
+  - watchdog=0.10.2
+  - yamllint=1.20.0
   - pip:
     - errorhandler==2.0.1
-    - git+https://github.com/manubot/manubot@e18fed8cfb4c7fb9b5b39aa45bbba4aeadff6c9a
+    - git+https://github.com/manubot/manubot@68ae7cfeb3928729228b5c9f0e11abbaceb7edb9
     - jsonref==0.2
     - opentimestamps-client==0.7.0
     - opentimestamps==0.4.1
