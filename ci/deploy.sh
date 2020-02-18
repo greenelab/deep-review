@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-## deploy.sh: run during a Travis CI build to deploy manuscript outputs to the output and gh-pages branches on GitHub.
+## deploy.sh: run during a CI build to deploy manuscript outputs to the output and gh-pages branches on GitHub.
 
 # Set options for extra caution & debugging
 set -o errexit \
@@ -26,8 +26,21 @@ git config --global push.default simple
 git config --global user.email "$(git log --max-count=1 --format='%ae')"
 git config --global user.name "$(git log --max-count=1 --format='%an')"
 git checkout "$BRANCH"
-git remote set-url origin "git@github.com:$REPO_SLUG.git"
 
+# Configure deployment credentials
+MANUBOT_DEPLOY_VIA_SSH=true
+git remote set-url origin "git@github.com:$REPO_SLUG.git"
+if [ -v MANUBOT_SSH_PRIVATE_KEY ] && [ "$MANUBOT_SSH_PRIVATE_KEY" != "" ]; then
+  echo >&2 "[INFO] Detected MANUBOT_SSH_PRIVATE_KEY. Will deploy via SSH."
+elif [ -v MANUBOT_ACCESS_TOKEN ] && [ "$MANUBOT_ACCESS_TOKEN" != "" ]; then
+  echo >&2 "[INFO] Detected MANUBOT_ACCESS_TOKEN. Will deploy via HTTPS."
+  MANUBOT_DEPLOY_VIA_SSH=false
+  git remote set-url origin "https://$MANUBOT_ACCESS_TOKEN@github.com/$REPO_SLUG.git"
+else
+  echo >&2 "[INFO] Missing MANUBOT_SSH_PRIVATE_KEY and MANUBOT_ACCESS_TOKEN. Will deploy via SSH."
+fi
+
+if [ $MANUBOT_DEPLOY_VIA_SSH = "true" ]; then
 # Decrypt and add SSH key
 eval "$(ssh-agent -s)"
 (
@@ -36,7 +49,7 @@ if [ -v MANUBOT_SSH_PRIVATE_KEY ]; then
   base64 --decode <<< "$MANUBOT_SSH_PRIVATE_KEY" | ssh-add -
 else
 echo >&2 "DeprecationWarning: Loading deploy.key from an encrypted file.
-In the future, using the MANUBOT_SSH_PRIVATE_KEY environment variable may be required."
+In the future, using the MANUBOT_ACCESS_TOKEN or MANUBOT_SSH_PRIVATE_KEY environment variable may be required."
 openssl aes-256-cbc \
   -K $encrypted_9befd6eddffe_key \
   -iv $encrypted_9befd6eddffe_iv \
@@ -46,6 +59,7 @@ chmod 600 ci/deploy.key
 ssh-add ci/deploy.key
 fi
 )
+fi
 
 # Fetch and create gh-pages and output branches
 # Travis does a shallow and single branch git clone
@@ -88,5 +102,7 @@ ghp-import \
   --message="$MESSAGE" \
   webpage
 
-# Workaround https://github.com/travis-ci/travis-ci/issues/8082
-ssh-agent -k
+if [ $MANUBOT_DEPLOY_VIA_SSH = "true" ]; then
+  # Workaround https://github.com/travis-ci/travis-ci/issues/8082
+  ssh-agent -k
+fi
