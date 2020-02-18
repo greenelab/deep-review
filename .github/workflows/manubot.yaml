@@ -40,7 +40,7 @@ jobs:
           name: manuscript-${{ github.run_id }}-${{ env.TRIGGERING_SHA_7 }}
           path: output
       - name: Deploy Manuscript
-        if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+        if: github.ref == 'refs/heads/master' && github.event_name == 'push' && !github.repository.fork
         env:
           MANUBOT_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           MANUBOT_SSH_PRIVATE_KEY: ${{ secrets.MANUBOT_SSH_PRIVATE_KEY }}
