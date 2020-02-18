@@ -64,7 +64,8 @@ fi
 # Fetch and create gh-pages and output branches
 # Travis does a shallow and single branch git clone
 git remote set-branches --add origin gh-pages output
-git fetch origin gh-pages:gh-pages output:output
+git fetch origin gh-pages:gh-pages output:output || \
+  echo >&2 "[INFO] could not fetch gh-pages or output from origin."
 
 # Configure versioned webpage and timestamp
 manubot webpage \

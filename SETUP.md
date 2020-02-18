@@ -46,22 +46,15 @@ REPO=rootstock
 **Execute the remaining commands verbatim.**
 They do not need to be edited (if the setup works as intended).
 
-Next you must clone `manubot/rootstock` and configure its branches and remotes:
+Next you must clone `manubot/rootstock` and reconfigure the remote repositories:
 
 ```sh
 # Clone manubot/rootstock
-git clone https://github.com/manubot/rootstock.git $REPO
+git clone --single-branch https://github.com/manubot/rootstock.git $REPO
 cd $REPO
 
-# Configure remotes and branches
+# Configure remotes
 git remote add rootstock https://github.com/manubot/rootstock.git
-git checkout --orphan gh-pages
-git rm -r --force .
-git commit --allow-empty \
-  --message "Initialize empty branch" \
-  --message "[ci skip]"
-git checkout -b output
-git checkout master
 
 # Option A: Set origin URL using its web address
 git remote set-url origin https://github.com/$OWNER/$REPO.git
@@ -76,8 +69,6 @@ Next, push your cloned manuscript:
 
 ```sh
 git push --set-upstream origin master
-git push --set-upstream origin gh-pages
-git push --set-upstream origin output
 ```
 
 ## Continuous integration
@@ -124,7 +115,13 @@ git rm .appveyor.yml
 git rm ci/install.sh
 ```
 
-GitHub Actions is able to deploy without any setup using the [`GITHUB_TOKEN`](https://help.github.com/en/actions/configuring-and-managing-workflows/authenticating-with-the-github_token) for authentication.
+GitHub Actions is _usually_ able to deploy without any setup using the [`GITHUB_TOKEN`](https://help.github.com/en/actions/configuring-and-managing-workflows/authenticating-with-the-github_token) for authentication.
+GitHub Pages deployment using `GITHUB_TOKEN` recently started working on GitHub without an official announcement.
+If it does not work for you after completing this setup, try reselecting "gh-pages branch" as the Source for GitHub Pages in the repository Settings.
+GitHub Pages should now trigger on the next commit.
+If not, [let us know](https://github.com/manubot/rootstock/issues/new).
+For more reliable deployment on GitHub, you can also use an SSH Deploy Key instead (see below).
+
 Deploying on Travis CI requires creating an SSH Deploy Key.
 The following sections, collapsed by default, detail how to generate an SSH Deploy Key.
 
