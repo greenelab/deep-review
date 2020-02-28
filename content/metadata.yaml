@@ -18,7 +18,10 @@ author_info:
     affiliations:
       - Molecular Biosciences and Bioengineering Graduate Program, University of Hawaii at Manoa, Honolulu, HI
     symbol_str: "☯"
-    v1: true
+    v1: "Drafted multiple sub-sections along with extensive editing, pull request reviews, or discussion."
+    coi:
+      string: "None"
+      last-approved: 2017-05-26
   - github: dhimmel
     name: Daniel S. Himmelstein
     orcid: 0000-0002-3012-7446
@@ -26,7 +29,10 @@ author_info:
     affiliations:
       - Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA
     funders: GBMF GBMF4552
-    v1: true
+    v1: "Drafted multiple sub-sections along with extensive editing, pull request reviews, or discussion."
+    coi:
+      string: "None"
+      last-approved: 2017-05-26
   - github: brettbj
     name: Brett K. Beaulieu-Jones
     orcid: 0000-0002-6700-1468
@@ -34,14 +40,20 @@ author_info:
     affiliations:
       - Genomics and Computational Biology Graduate Group, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA
     funders: NIH R01AI116794
-    v1: true
+    v1: "Drafted multiple sub-sections along with extensive editing, pull request reviews, or discussion."
+    coi:
+      string: "None"
+      last-approved: 2017-05-26
   - github: alxndrkalinin
     name: Alexandr A. Kalinin
     orcid: 0000-0003-4563-3226
     email: akalinin@umich.edu
     affiliations:
       - Department of Computational Medicine and Bioinformatics, University of Michigan Medical School, Ann Arbor, MI
-    v1: true
+    v1: "Drafted multiple sub-sections along with extensive editing, pull request reviews, or discussion."
+    coi:
+      string: "None"
+      last-approved: 2017-05-26
   - github: bdo311
     name: Brian T. Do
     orcid: 0000-0003-4992-2623
@@ -49,7 +61,10 @@ author_info:
     affiliations:
       - Harvard Medical School, Boston, MA
     funders: NIH T32GM007753
-    v1: true
+    v1: "Drafted multiple sub-sections along with extensive editing, pull request reviews, or discussion."
+    coi:
+      string: "None"
+      last-approved: 2017-05-26
   - github: gwaygenomics
     name: Gregory P. Way
     orcid: 0000-0002-0503-9348
@@ -57,21 +72,30 @@ author_info:
     affiliations:
       - Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA
     funders: NIH T32HG000046
-    v1: true
+    v1: "Drafted multiple sub-sections along with extensive editing, pull request reviews, or discussion."
+    coi:
+      string: "None"
+      last-approved: 2017-05-26
   - github: enricoferrero
     name: Enrico Ferrero
     orcid: 0000-0002-8362-100X
     email: enrico.x.ferrero@gsk.com
     affiliations:
       - Computational Biology and Stats, Target Sciences, GlaxoSmithKline, Stevenage, United Kingdom
-    v1: true
+    v1: "Drafted multiple sub-sections along with extensive editing, pull request reviews, or discussion."
+    coi:
+      string: "None"
+      last-approved: 2017-05-26
   - github: agapow
     name: Paul-Michael Agapow
     orcid: 0000-0003-1126-1479
     email: p.agapow@imperial.ac.uk
     affiliations:
       - Data Science Institute, Imperial College London, London, United Kingdom
-    v1: true
+    v1: "Drafted multiple sub-sections along with extensive editing, pull request reviews, or discussion."
+    coi:
+      string: "None"
+      last-approved: 2017-05-26
   - github: zietzm
     name: Michael Zietz
     initials: MZ
@@ -80,7 +104,10 @@ author_info:
     affiliations:
       - Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA
     funders: Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences
-    v1: true
+    v1: "Drafted multiple sub-sections along with extensive editing, pull request reviews, or discussion."
+    coi:
+      string: "None"
+      last-approved: 2017-05-26
   - github: michaelmhoffman
     name: Michael M. Hoffman
     initials: MMH
@@ -91,14 +118,20 @@ author_info:
       - Department of Medical Biophysics, University of Toronto, Toronto, ON, Canada
       - Department of Computer Science, University of Toronto, Toronto, ON, Canada
     funders: NSERC RGPIN-2015-3948
-    v1: true
+    v1: "Drafted multiple sub-sections along with extensive editing, pull request reviews, or discussion."
+    coi:
+      string: "None"
+      last-approved: 2017-05-26
   - github: xieconnect
     name: Wei Xie
     orcid: 0000-0002-1871-6846
     email: wei.xie@vanderbilt.edu
     affiliations:
       - Electrical Engineering and Computer Science, Vanderbilt University, Nashville, TN
-    v1: true
+    v1: "Drafted one or more sub-sections."
+    coi:
+      string: "None"
+      last-approved: 2017-05-26
   - github: gailrosen
     name: Gail L. Rosen
     orcid: 0000-0003-1763-5750
@@ -106,35 +139,47 @@ author_info:
     affiliations:
       - Ecological and Evolutionary Signal-processing and Informatics Laboratory, Department of Electrical and Computer Engineering, Drexel University, Philadelphia, PA
     funders: NSF 1245632
-    v1: true
+    v1: "Drafted one or more sub-sections."
+    coi:
+      string: "None"
+      last-approved: 2017-05-26
   - github: blengerich
     name: Benjamin J. Lengerich
     orcid: 0000-0001-8690-9554
     email: blengeri@cs.cmu.edu
     affiliations:
       - Computational Biology Department, School of Computer Science, Carnegie Mellon University, Pittsburgh, PA
-    v1: true
+    v1: "Drafted one or more sub-sections."
+    coi:
+      string: "None"
+      last-approved: 2017-05-26
   - github: jisraeli
     name: Johnny Israeli
     orcid: 0000-0003-1633-5780
     email: jisraeli@stanford.edu
     affiliations:
       - Biophysics Program, Stanford University, Stanford, CA
-    v1: true
+    v1: "Drafted one or more sub-sections."
+    coi:
+      string: "None"
+      last-approved: 2017-05-26
   - github: jacklanchantin
     name: Jack Lanchantin
     orcid: 0000-0003-0811-0944
     email: jjl5sw@virginia.edu
     affiliations:
       - Department of Computer Science, University of Virginia, Charlottesville, VA
-    v1: true
+    v1: "Drafted one or more sub-sections."
+    coi:
+      string: "None"
+      last-approved: 2017-05-26
   - github: sw1
     name: Stephen Woloszynek
     orcid: 0000-0003-0568-298X
     email: sw424@drexel.edu
     affiliations:
       - Ecological and Evolutionary Signal-processing and Informatics Laboratory, Department of Electrical and Computer Engineering, Drexel University, Philadelphia, PA
-    v1: true
+    v1: "Drafted one or more sub-sections."
   - github: annecarpenter
     name: Anne E. Carpenter
     orcid: 0000-0003-1555-8261
@@ -142,7 +187,10 @@ author_info:
     affiliations:
       - Imaging Platform, Broad Institute of Harvard and MIT, Cambridge, MA
     funders: NIH R01GM089652
-    v1: true
+    v1: "Drafted one or more sub-sections."
+    coi:
+      string: "None"
+      last-approved: 2017-05-26
   - github: AvantiShri
     name: Avanti Shrikumar
     orcid: 0000-0002-6443-4671
@@ -150,6 +198,9 @@ author_info:
     affiliations:
       - Department of Computer Science, Stanford University, Stanford, CA
     v1: true
+    coi:
+      string: "None"
+      last-approved: 2017-05-26
   - github: j3xugit
     name: Jinbo Xu
     orcid: 0000-0001-7111-4839
@@ -157,7 +208,10 @@ author_info:
     affiliations:
       - Toyota Technological Institute at Chicago, Chicago, IL
     funders: NIH R01GM089753, NSF 1564955
-    v1: true
+    v1: "Drafted one or more sub-sections."
+    coi:
+      string: "None"
+      last-approved: 2017-05-26
   - github: evancofer
     name: Evan M. Cofer
     orcid: 0000-0003-3877-0433
@@ -166,7 +220,10 @@ author_info:
       - Department of Computer Science, Trinity University, San Antonio, TX
       - Lewis-Sigler Institute for Integrative Genomics, Princeton University, Princeton, NJ
     funders: NSF 1531594
-    v1: true
+    v1: "Drafted one or more sub-sections."
+    coi:
+      string: "None"
+      last-approved: 2017-05-26
   - github: lavenderca
     name: Christopher A. Lavender
     initials: CAL
@@ -174,7 +231,10 @@ author_info:
     email: christopher.lavender@nih.gov
     affiliations:
       - Integrative Bioinformatics, National Institute of Environmental Health Sciences, National Institutes of Health, Research Triangle Park, NC
-    v1: true
+    v1: "Drafted one or more sub-sections."
+    coi:
+      string: "None"
+      last-approved: 2017-05-26
   - github: SriniTuraga
     name: Srinivas C. Turaga
     initials: SCT
@@ -183,7 +243,10 @@ author_info:
     affiliations:
       - Howard Hughes Medical Institute, Janelia Research Campus, Ashburn, VA
     funders: Howard Hughes Medical Institute
-    v1: true
+    v1: "Drafted one or more sub-sections."
+    coi:
+      string: "None"
+      last-approved: 2017-05-26
   - github: alexandari
     name: Amr M. Alexandari
     initials: AMA
@@ -191,7 +254,10 @@ author_info:
     email: amr.alexandari@gmail.com
     affiliations:
       - Department of Computer Science, Stanford University, Stanford, CA
-    v1: true
+    v1: "Drafted one or more sub-sections."
+    coi:
+      string: "None"
+      last-approved: 2017-05-26
   - github: luzh2
     name: Zhiyong Lu
     initials: ZL
@@ -200,7 +266,10 @@ author_info:
     affiliations:
       - National Center for Biotechnology Information and National Library of Medicine, National Institutes of Health, Bethesda, MD
     funders: National Institutes of Health Intramural Research Program and National Library of Medicine
-    v1: true
+    v1: "Drafted one or more sub-sections."
+    coi:
+      string: "None"
+      last-approved: 2017-05-26
   - github: davharris
     name: David J. Harris
     orcid: 0000-0003-3332-9307
@@ -208,21 +277,30 @@ author_info:
     affiliations:
       - Department of Wildlife Ecology and Conservation, University of Florida, Gainesville, FL
     funders: GBMF GBMF4563
-    v1: true
+    v1: "Revised specific sub-sections or supervised drafting one or more sub-sections."
+    coi:
+      string: "None"
+      last-approved: 2017-05-26
   - github: DaveDeCaprio
     name: Dave DeCaprio
     orcid: 0000-0001-8931-9461
     email: daved@alum.mit.edu
     affiliations:
       - ClosedLoop.ai, Austin, TX
-    v1: true
+    v1: "Revised specific sub-sections or supervised drafting one or more sub-sections."
+    coi:
+      string: "None"
+      last-approved: 2017-05-26
   - github: qiyanjun
     name: Yanjun Qi
     orcid: 0000-0002-5796-7453
     email: yq2h@virginia.edu
     affiliations:
       - Department of Computer Science, University of Virginia, Charlottesville, VA
-    v1: true
+    v1: "Revised specific sub-sections or supervised drafting one or more sub-sections."
+    coi:
+      string: "None"
+      last-approved: 2017-05-26
   - github: akundaje
     name: Anshul Kundaje
     orcid: 0000-0003-3084-2287
@@ -231,7 +309,10 @@ author_info:
       - Department of Genetics, Stanford University, Stanford, CA
       - Department of Computer Science, Stanford University, Stanford, CA
     funders: NIH DP2GM123485
-    v1: true
+    v1: "Revised specific sub-sections or supervised drafting one or more sub-sections."
+    coi:
+      string: "None"
+      last-approved: 2017-05-26
   - github: yfpeng
     name: Yifan Peng
     orcid: 0000-0001-9309-8331
@@ -239,21 +320,30 @@ author_info:
     affiliations:
       - National Center for Biotechnology Information and National Library of Medicine, National Institutes of Health, Bethesda, MD
     funders: National Institutes of Health Intramural Research Program and National Library of Medicine
-    v1: true
+    v1: "Revised specific sub-sections or supervised drafting one or more sub-sections."
+    coi:
+      string: "None"
+      last-approved: 2017-05-26
   - github: laurakwiley
     name: Laura K. Wiley
     orcid: 0000-0001-6681-9754
     email: laura.wiley@ucdenver.edu
     affiliations:
       - Division of Biomedical Informatics and Personalized Medicine, University of Colorado School of Medicine, Aurora, CO
-    v1: true
+    v1: "Revised specific sub-sections or supervised drafting one or more sub-sections."
+    coi:
+      string: "None"
+      last-approved: 2017-05-26
   - github: mrwns
     name: Marwin H.S. Segler
     orcid: 0000-0001-8008-0546
     email: marwin.segler@uni-muenster.de
     affiliations:
       - Institute of Organic Chemistry, Westfälische Wilhelms-Universität Münster, Münster, Germany
-    v1: true
+    v1: "Revised specific sub-sections or supervised drafting one or more sub-sections."
+    coi:
+      string: "None"
+      last-approved: 2017-05-26
   - github: SiminaB
     name: Simina M. Boca
     initials: SMB
@@ -262,7 +352,10 @@ author_info:
     affiliations:
       - Innovation Center for Biomedical Informatics, Georgetown University Medical Center, Washington, DC
     funders: NIH R21CA220398, NIH P30CA051008
-    v1: true
+    v1: "Revised specific sub-sections or supervised drafting one or more sub-sections."
+    coi:
+      string: "None"
+      last-approved: 2017-05-26
   - github: swamidass
     name: S. Joshua Swamidass
     initials: SJS
@@ -271,7 +364,10 @@ author_info:
     affiliations:
       - Department of Pathology and Immunology, Washington University in Saint Louis, Saint Louis, MO
     funders: NIH R01LM012222, NIH R01LM012482
-    v1: true
+    v1: "Revised specific sub-sections or supervised drafting one or more sub-sections."
+    coi:
+      string: "None"
+      last-approved: 2017-05-26
   - github: austinvhuang
     name: Austin Huang
     initials: AH
@@ -279,7 +375,10 @@ author_info:
     email: austinh@alum.mit.edu
     affiliations:
       - Department of Medicine, Brown University, Providence, RI
-    v1: true
+    v1: "Revised specific sub-sections or supervised drafting one or more sub-sections."
+    coi:
+      string: "None"
+      last-approved: 2017-05-26
   - github: agitter
     name: Anthony Gitter
     orcid: 0000-0002-5324-9833
@@ -289,7 +388,10 @@ author_info:
       - Morgridge Institute for Research, Madison, WI
     funders: NIH U54AI117924
     symbol_str: "†"
-    v1: true
+    v1: "Drafted sub-sections, edited the manuscript, reviewed pull requests, and coordinated co-authors."
+    coi:
+      string: "None"
+      last-approved: 2017-05-26
   - github: cgreene
     name: Casey S. Greene
     orcid: 0000-0001-8713-9213
@@ -298,5 +400,8 @@ author_info:
       - Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA
     funders: GBMF GBMF4552
     symbol_str: "†"
-    v1: true
-    v2: true
+    v1: "Drafted sub-sections, edited the manuscript, reviewed pull requests, and coordinated co-authors."
+    v2: "Drafted sub-sections, edited the manuscript, reviewed pull requests, and coordinated co-authors."
+    coi:
+      string: "None"
+      last-approved: 2017-05-26
