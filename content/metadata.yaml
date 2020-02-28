@@ -21,7 +21,7 @@ author_info:
     v1: "Drafted multiple sub-sections along with extensive editing, pull request reviews, or discussion."
     coi:
       string: "None"
-      last-approved: 2017-05-26
+      last-approved: !!str 2017-05-26
   - github: dhimmel
     name: Daniel S. Himmelstein
     orcid: 0000-0002-3012-7446
@@ -32,7 +32,7 @@ author_info:
     v1: "Drafted multiple sub-sections along with extensive editing, pull request reviews, or discussion."
     coi:
       string: "None"
-      last-approved: 2017-05-26
+      last-approved: !!str 2017-05-26
   - github: brettbj
     name: Brett K. Beaulieu-Jones
     orcid: 0000-0002-6700-1468
@@ -43,7 +43,7 @@ author_info:
     v1: "Drafted multiple sub-sections along with extensive editing, pull request reviews, or discussion."
     coi:
       string: "None"
-      last-approved: 2017-05-26
+      last-approved: !!str 2017-05-26
   - github: alxndrkalinin
     name: Alexandr A. Kalinin
     orcid: 0000-0003-4563-3226
@@ -53,7 +53,7 @@ author_info:
     v1: "Drafted multiple sub-sections along with extensive editing, pull request reviews, or discussion."
     coi:
       string: "None"
-      last-approved: 2017-05-26
+      last-approved: !!str 2017-05-26
   - github: bdo311
     name: Brian T. Do
     orcid: 0000-0003-4992-2623
@@ -64,7 +64,7 @@ author_info:
     v1: "Drafted multiple sub-sections along with extensive editing, pull request reviews, or discussion."
     coi:
       string: "None"
-      last-approved: 2017-05-26
+      last-approved: !!str 2017-05-26
   - github: gwaygenomics
     name: Gregory P. Way
     orcid: 0000-0002-0503-9348
@@ -75,7 +75,7 @@ author_info:
     v1: "Drafted multiple sub-sections along with extensive editing, pull request reviews, or discussion."
     coi:
       string: "None"
-      last-approved: 2017-05-26
+      last-approved: !!str 2017-05-26
   - github: enricoferrero
     name: Enrico Ferrero
     orcid: 0000-0002-8362-100X
@@ -85,7 +85,7 @@ author_info:
     v1: "Drafted multiple sub-sections along with extensive editing, pull request reviews, or discussion."
     coi:
       string: "None"
-      last-approved: 2017-05-26
+      last-approved: !!str 2017-05-26
   - github: agapow
     name: Paul-Michael Agapow
     orcid: 0000-0003-1126-1479
@@ -95,7 +95,7 @@ author_info:
     v1: "Drafted multiple sub-sections along with extensive editing, pull request reviews, or discussion."
     coi:
       string: "None"
-      last-approved: 2017-05-26
+      last-approved: !!str 2017-05-26
   - github: zietzm
     name: Michael Zietz
     initials: MZ
@@ -107,7 +107,7 @@ author_info:
     v1: "Drafted multiple sub-sections along with extensive editing, pull request reviews, or discussion."
     coi:
       string: "None"
-      last-approved: 2017-05-26
+      last-approved: !!str 2017-05-26
   - github: michaelmhoffman
     name: Michael M. Hoffman
     initials: MMH
@@ -121,7 +121,7 @@ author_info:
     v1: "Drafted multiple sub-sections along with extensive editing, pull request reviews, or discussion."
     coi:
       string: "None"
-      last-approved: 2017-05-26
+      last-approved: !!str 2017-05-26
   - github: xieconnect
     name: Wei Xie
     orcid: 0000-0002-1871-6846
@@ -131,7 +131,7 @@ author_info:
     v1: "Drafted one or more sub-sections."
     coi:
       string: "None"
-      last-approved: 2017-05-26
+      last-approved: !!str 2017-05-26
   - github: gailrosen
     name: Gail L. Rosen
     orcid: 0000-0003-1763-5750
@@ -142,7 +142,7 @@ author_info:
     v1: "Drafted one or more sub-sections."
     coi:
       string: "None"
-      last-approved: 2017-05-26
+      last-approved: !!str 2017-05-26
   - github: blengerich
     name: Benjamin J. Lengerich
     orcid: 0000-0001-8690-9554
@@ -152,7 +152,7 @@ author_info:
     v1: "Drafted one or more sub-sections."
     coi:
       string: "None"
-      last-approved: 2017-05-26
+      last-approved: !!str 2017-05-26
   - github: jisraeli
     name: Johnny Israeli
     orcid: 0000-0003-1633-5780
@@ -162,7 +162,7 @@ author_info:
     v1: "Drafted one or more sub-sections."
     coi:
       string: "None"
-      last-approved: 2017-05-26
+      last-approved: !!str 2017-05-26
   - github: jacklanchantin
     name: Jack Lanchantin
     orcid: 0000-0003-0811-0944
@@ -172,7 +172,7 @@ author_info:
     v1: "Drafted one or more sub-sections."
     coi:
       string: "None"
-      last-approved: 2017-05-26
+      last-approved: !!str 2017-05-26
   - github: sw1
     name: Stephen Woloszynek
     orcid: 0000-0003-0568-298X
@@ -190,7 +190,7 @@ author_info:
     v1: "Drafted one or more sub-sections."
     coi:
       string: "None"
-      last-approved: 2017-05-26
+      last-approved: !!str 2017-05-26
   - github: AvantiShri
     name: Avanti Shrikumar
     orcid: 0000-0002-6443-4671
@@ -200,7 +200,7 @@ author_info:
     v1: true
     coi:
       string: "None"
-      last-approved: 2017-05-26
+      last-approved: !!str 2017-05-26
   - github: j3xugit
     name: Jinbo Xu
     orcid: 0000-0001-7111-4839
@@ -211,7 +211,7 @@ author_info:
     v1: "Drafted one or more sub-sections."
     coi:
       string: "None"
-      last-approved: 2017-05-26
+      last-approved: !!str 2017-05-26
   - github: evancofer
     name: Evan M. Cofer
     orcid: 0000-0003-3877-0433
@@ -223,7 +223,7 @@ author_info:
     v1: "Drafted one or more sub-sections."
     coi:
       string: "None"
-      last-approved: 2017-05-26
+      last-approved: !!str 2017-05-26
   - github: lavenderca
     name: Christopher A. Lavender
     initials: CAL
@@ -234,7 +234,7 @@ author_info:
     v1: "Drafted one or more sub-sections."
     coi:
       string: "None"
-      last-approved: 2017-05-26
+      last-approved: !!str 2017-05-26
   - github: SriniTuraga
     name: Srinivas C. Turaga
     initials: SCT
@@ -246,7 +246,7 @@ author_info:
     v1: "Drafted one or more sub-sections."
     coi:
       string: "None"
-      last-approved: 2017-05-26
+      last-approved: !!str 2017-05-26
   - github: alexandari
     name: Amr M. Alexandari
     initials: AMA
@@ -257,7 +257,7 @@ author_info:
     v1: "Drafted one or more sub-sections."
     coi:
       string: "None"
-      last-approved: 2017-05-26
+      last-approved: !!str 2017-05-26
   - github: luzh2
     name: Zhiyong Lu
     initials: ZL
@@ -269,7 +269,7 @@ author_info:
     v1: "Drafted one or more sub-sections."
     coi:
       string: "None"
-      last-approved: 2017-05-26
+      last-approved: !!str 2017-05-26
   - github: davharris
     name: David J. Harris
     orcid: 0000-0003-3332-9307
@@ -280,7 +280,7 @@ author_info:
     v1: "Revised specific sub-sections or supervised drafting one or more sub-sections."
     coi:
       string: "None"
-      last-approved: 2017-05-26
+      last-approved: !!str 2017-05-26
   - github: DaveDeCaprio
     name: Dave DeCaprio
     orcid: 0000-0001-8931-9461
@@ -290,7 +290,7 @@ author_info:
     v1: "Revised specific sub-sections or supervised drafting one or more sub-sections."
     coi:
       string: "None"
-      last-approved: 2017-05-26
+      last-approved: !!str 2017-05-26
   - github: qiyanjun
     name: Yanjun Qi
     orcid: 0000-0002-5796-7453
@@ -300,7 +300,7 @@ author_info:
     v1: "Revised specific sub-sections or supervised drafting one or more sub-sections."
     coi:
       string: "None"
-      last-approved: 2017-05-26
+      last-approved: !!str 2017-05-26
   - github: akundaje
     name: Anshul Kundaje
     orcid: 0000-0003-3084-2287
@@ -312,7 +312,7 @@ author_info:
     v1: "Revised specific sub-sections or supervised drafting one or more sub-sections."
     coi:
       string: "None"
-      last-approved: 2017-05-26
+      last-approved: !!str 2017-05-26
   - github: yfpeng
     name: Yifan Peng
     orcid: 0000-0001-9309-8331
@@ -323,7 +323,7 @@ author_info:
     v1: "Revised specific sub-sections or supervised drafting one or more sub-sections."
     coi:
       string: "None"
-      last-approved: 2017-05-26
+      last-approved: !!str 2017-05-26
   - github: laurakwiley
     name: Laura K. Wiley
     orcid: 0000-0001-6681-9754
@@ -333,7 +333,7 @@ author_info:
     v1: "Revised specific sub-sections or supervised drafting one or more sub-sections."
     coi:
       string: "None"
-      last-approved: 2017-05-26
+      last-approved: !!str 2017-05-26
   - github: mrwns
     name: Marwin H.S. Segler
     orcid: 0000-0001-8008-0546
@@ -343,7 +343,7 @@ author_info:
     v1: "Revised specific sub-sections or supervised drafting one or more sub-sections."
     coi:
       string: "None"
-      last-approved: 2017-05-26
+      last-approved: !!str 2017-05-26
   - github: SiminaB
     name: Simina M. Boca
     initials: SMB
@@ -355,7 +355,7 @@ author_info:
     v1: "Revised specific sub-sections or supervised drafting one or more sub-sections."
     coi:
       string: "None"
-      last-approved: 2017-05-26
+      last-approved: !!str 2017-05-26
   - github: swamidass
     name: S. Joshua Swamidass
     initials: SJS
@@ -367,7 +367,7 @@ author_info:
     v1: "Revised specific sub-sections or supervised drafting one or more sub-sections."
     coi:
       string: "None"
-      last-approved: 2017-05-26
+      last-approved: !!str 2017-05-26
   - github: austinvhuang
     name: Austin Huang
     initials: AH
@@ -378,7 +378,7 @@ author_info:
     v1: "Revised specific sub-sections or supervised drafting one or more sub-sections."
     coi:
       string: "None"
-      last-approved: 2017-05-26
+      last-approved: !!str 2017-05-26
   - github: agitter
     name: Anthony Gitter
     orcid: 0000-0002-5324-9833
@@ -391,7 +391,7 @@ author_info:
     v1: "Drafted sub-sections, edited the manuscript, reviewed pull requests, and coordinated co-authors."
     coi:
       string: "None"
-      last-approved: 2017-05-26
+      last-approved: !!str 2017-05-26
   - github: cgreene
     name: Casey S. Greene
     orcid: 0000-0001-8713-9213
@@ -404,4 +404,4 @@ author_info:
     v2: "Drafted sub-sections, edited the manuscript, reviewed pull requests, and coordinated co-authors."
     coi:
       string: "None"
-      last-approved: 2017-05-26
+      last-approved: !!str 2017-05-26
