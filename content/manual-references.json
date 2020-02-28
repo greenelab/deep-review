@@ -487,7 +487,7 @@
     "id": "url:http://www.predictioncenter.org/casp12/rrc_avrg_results.cgi"
   },
   {
-    "URL": "http://www.cameo3d.org/",
+    "URL": "https://www.cameo3d.org/",
     "title": "CAMEO - Continuous Automated Model Evaluation",
     "issued": {
       "date-parts": [
@@ -498,7 +498,7 @@
     },
     "redirects-to": "https://www.cameo3d.org/",
     "type": "webpage",
-    "id": "url:http://www.cameo3d.org/"
+    "id": "url:https://www.cameo3d.org"
   },
   {
     "URL": "https://github.com/deepchem/deepchem",
@@ -774,7 +774,7 @@
       }
     ],
     "type": "webpage",
-    "id": "url:http://www.deeplearningbook.org/"
+    "id": "url:http://www.deeplearningbook.org"
   },
   {
     "indexed": {
