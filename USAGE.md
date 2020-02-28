@@ -76,9 +76,15 @@ We recommend always specifying the width of SVG images (even if just `width="100
 
 ### Citations
 
-Manubot supports Pandoc [citations](https://pandoc.org/MANUAL.html#citations) via `pandoc-citeproc`.
-However, Manubot performs automated citation processing and metadata retrieval on in-text citations.
-Therefore, citations must be of the following form: `@source:identifier`, where `source` is one of the options described below.
+Manubot supports Pandoc [citations](https://pandoc.org/MANUAL.html#citations).
+Citations are processed in 3 stages:
+
+1. Pandoc parses the input Markdown to locate citation keys.
+2. The [`pandoc-manubot-cite`](https://github.com/manubot/manubot#pandoc-filter) filter automatically retreives the bibliographic metadata for citation keys.
+3. The [`pandoc-citeproc`](https://github.com/jgm/pandoc-citeproc/blob/master/man/pandoc-citeproc.1.md) filter renders in-text citations and generates styled references.
+
+When using Manubot, citation keys should be formatted like `@source:identifier`,
+where `source` is one of the options described below.
 When choosing which source to use for a citation, we recommend the following order:
 
 1. DOI (Digital Object Identifier), cite like `@doi:10.15363/thinklab.4`.
@@ -109,13 +115,31 @@ Note that multiple citations must be semicolon separated.
 Be careful not to cite the same study using identifiers from multiple sources.
 For example, the following citations all refer to the same study, but will be treated as separate references: `[@doi:10.7717/peerj.705; @pmcid:PMC4304851; @pmid:25648772]`.
 
+Citation keys must adhere to the syntax described in the [Pandoc manual](https://pandoc.org/MANUAL.html#citations):
+
+> The citation key must begin with a letter, digit, or `_`, and may contain alphanumerics, `_`, and internal punctuation characters (`:.#$%&-+?<>~/`).
+
+To evaluate whether a citation key fully matches this syntax, try [this online regex](https://regex101.com/r/mXZyY2/latest).
+If the citation key is not valid, use the [citation tag](#citation-tag) workaround below.
+This is required for citation keys that contain forbidden characters such as `;` or `=` or end with a non-alphanumeric character such as `/`.
+<!-- See [jgm/pandoc#6026](https://github.com/jgm/pandoc/issues/6026) for progress on a more flexible Markdown citation key syntax. -->
+
+Prior to Rootstock commit [`6636b91`](https://github.com/manubot/rootstock/commit/6636b912c6b41593acd2041d34cd4158c1b317fb) on 2020-01-14, Manubot processed citations separately from Pandoc.
+Switching to a Pandoc filter improved reliability on complex documents, but restricted the syntax of citation keys slightly.
+Therefore, users upgrading Rootstock may find some citations become invalid.
+By default, `pandoc-manubot-cite` does not fail upon invalid citations, although this can be changed by adding the following to `metadata.yaml`:
+
+```yaml
+pandoc:
+  manubot-fail-on-errors: True
+```
+
 #### Citation tags
 
 The system also supports citation tags, which map from one citation key (an alias) to another.
 Tags are recommended for the following applications:
 
-1. A citation's identifier contains forbidden characters, such as `;` or `=`, or ends with a non-alphanumeric character other than `/`.
-   In these instances, you must use a tag.
+1. A citation's identifier contains forbidden characters, you must use a tag.
 2. A single reference is cited many times.
    Therefore, it might make sense to define a tag, so if the citation updates (e.g. a newer version becomes available), only a single change is required.
 
