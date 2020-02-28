@@ -15,8 +15,8 @@ cache:
     - ci/cache
 deploy:
   provider: script
-  script: bash -o xtrace ci/deploy.sh
+  script: bash ci/deploy.sh
   skip_cleanup: true
   on:
     branch: master
-    condition: $TRAVIS_EVENT_TYPE = "push"
+    condition: $TRAVIS_EVENT_TYPE = "push" && (-v MANUBOT_SSH_PRIVATE_KEY || "${!encrypted_*}" != "")

@@ -102,11 +102,11 @@
 
         // add button next to each figure
         function makeFigureButtons() {
-            const figures = document.querySelectorAll('img[id^="fig:"]');
+            const figures = document.querySelectorAll('[id^="fig:"]');
             for (const figure of figures) {
                 // get figure id and element to add button to
                 const id = figure.id;
-                const container = figure.nextElementSibling;
+                const container = figure.querySelector('figcaption') || figure;
                 const first = getFirstOccurrence(id);
 
                 // if can't find link to figure, ignore
@@ -130,13 +130,11 @@
 
         // add button next to each figure
         function makeTableButtons() {
-            const tables = document.querySelectorAll('a[name^="tbl:"]');
+            const tables = document.querySelectorAll('[id^="tbl:"]');
             for (const table of tables) {
                 // get ref id and element to add button to
-                const id = table.name;
-                const container = table.nextElementSibling.querySelector(
-                    'caption'
-                );
+                const id = table.id;
+                const container = table.querySelector('caption') || table;
                 const first = getFirstOccurrence(id);
 
                 // if can't find link to table, ignore

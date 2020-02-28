@@ -1,0 +1,21 @@
+# Pandoc --defaults for HTML output.
+# Load on top of common defaults.
+to: html5
+output-file: output/manuscript.html
+include-after-body:
+- build/themes/default.html
+- build/plugins/anchors.html
+- build/plugins/accordion.html
+- build/plugins/tooltips.html
+- build/plugins/jump-to-first.html
+- build/plugins/link-highlight.html
+- build/plugins/table-of-contents.html
+- build/plugins/lightbox.html
+- build/plugins/attributes.html
+- build/plugins/math.html
+- build/plugins/hypothesis.html
+- build/plugins/analytics.html
+variables:
+  math: ''
+html-math-method:
+  method: mathjax

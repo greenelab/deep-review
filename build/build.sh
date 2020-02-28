@@ -17,45 +17,22 @@ manubot process \
   --content-directory=content \
   --output-directory=output \
   --cache-directory=ci/cache \
+  --skip-citations \
   --log-level=INFO
 
-# pandoc settings
-CSL_PATH=build/assets/style.csl
-BIBLIOGRAPHY_PATH=output/references.json
-INPUT_PATH=output/manuscript.md
+# Pandoc's configuration is specified via files of option defaults
+# located in the PANDOC_DEFAULTS_DIR directory.
+PANDOC_DEFAULTS_DIR="${PANDOC_DEFAULTS_DIR:-build/pandoc-defaults}"
 
 # Make output directory
 mkdir -p output
 
 # Create HTML output
-# http://pandoc.org/MANUAL.html
+# https://pandoc.org/MANUAL.html
 echo >&2 "Exporting HTML manuscript"
 pandoc --verbose \
-  --from=markdown \
-  --to=html5 \
-  --filter=pandoc-fignos \
-  --filter=pandoc-eqnos \
-  --filter=pandoc-tablenos \
-  --bibliography="$BIBLIOGRAPHY_PATH" \
-  --csl="$CSL_PATH" \
-  --metadata link-citations=true \
-  --include-after-body=build/themes/default.html \
-  --include-after-body=build/plugins/table-scroll.html \
-  --include-after-body=build/plugins/anchors.html \
-  --include-after-body=build/plugins/accordion.html \
-  --include-after-body=build/plugins/tooltips.html \
-  --include-after-body=build/plugins/jump-to-first.html \
-  --include-after-body=build/plugins/link-highlight.html \
-  --include-after-body=build/plugins/table-of-contents.html \
-  --include-after-body=build/plugins/lightbox.html \
-  --include-after-body=build/plugins/attributes.html \
-  --mathjax \
-  --variable math="" \
-  --include-after-body=build/plugins/math.html \
-  --include-after-body=build/plugins/hypothesis.html \
-  --include-after-body=build/plugins/analytics.html \
-  --output=output/manuscript.html \
-  "$INPUT_PATH"
+  --defaults="$PANDOC_DEFAULTS_DIR/common.yaml" \
+  --defaults="$PANDOC_DEFAULTS_DIR/html.yaml"
 
 # Return null if docker command is missing, otherwise return path to docker
 DOCKER_EXISTS="$(command -v docker || true)"
@@ -67,20 +44,9 @@ if [ "${BUILD_PDF:-}" != "false" ] && [ -z "$DOCKER_EXISTS" ]; then
   if [ -L images ]; then rm images; fi  # if images is a symlink, remove it
   ln -s content/images
   pandoc \
-    --from=markdown \
-    --to=html5 \
-    --pdf-engine=weasyprint \
-    --pdf-engine-opt=--presentational-hints \
-    --filter=pandoc-fignos \
-    --filter=pandoc-eqnos \
-    --filter=pandoc-tablenos \
-    --bibliography="$BIBLIOGRAPHY_PATH" \
-    --csl="$CSL_PATH" \
-    --metadata link-citations=true \
-    --webtex=https://latex.codecogs.com/svg.latex? \
-    --include-after-body=build/themes/default.html \
-    --output=output/manuscript.pdf \
-    "$INPUT_PATH"
+    --defaults="$PANDOC_DEFAULTS_DIR/common.yaml" \
+    --defaults="$PANDOC_DEFAULTS_DIR/html.yaml" \
+    --defaults="$PANDOC_DEFAULTS_DIR/pdf-weasyprint.yaml"
   rm images
 fi
 
@@ -112,18 +78,8 @@ fi
 if [ "${BUILD_DOCX:-}" = "true" ]; then
   echo >&2 "Exporting Word Docx manuscript"
   pandoc --verbose \
-    --from=markdown \
-    --to=docx \
-    --filter=pandoc-fignos \
-    --filter=pandoc-eqnos \
-    --filter=pandoc-tablenos \
-    --bibliography="$BIBLIOGRAPHY_PATH" \
-    --csl="$CSL_PATH" \
-    --metadata link-citations=true \
-    --reference-doc=build/themes/default.docx \
-    --resource-path=.:content \
-    --output=output/manuscript.docx \
-    "$INPUT_PATH"
+    --defaults="$PANDOC_DEFAULTS_DIR/common.yaml" \
+    --defaults="$PANDOC_DEFAULTS_DIR/docx.yaml"
 fi
 
 echo >&2 "Build complete"
