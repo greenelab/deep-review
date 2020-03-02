@@ -576,7 +576,6 @@ tag:Sa2015_buckwild	pmcid:PMC4907892	pmcid:PMC4907892	ybP8QCqL
 pmcid:PMC5119627	pmcid:PMC5119627	pmcid:PMC5119627	rqGoVCuH
 tag:Faruqi	url:http://alifar76.github.io/sklearn-metrics/	url:http://alifar76.github.io/sklearn-metrics/	NQ5jiN7B
 url:http://ana.blogs.com/maestros/2006/11/data_is_the_new.html	url:http://ana.blogs.com/maestros/2006/11/data_is_the_new.html	url:http://ana.blogs.com/maestros/2006/11/data_is_the_new.html	6fE0Vrba
-url:http://blog.dhimmel.com/irreproducible-timestamps	url:http://blog.dhimmel.com/irreproducible-timestamps	url:http://blog.dhimmel.com/irreproducible-timestamps	hkguO3lG
 tag:Lowe2012_kaggle	url:http://blogs.sciencemag.org/pipeline/archives/2012/12/11/did_kaggle_predict_drug_candidate_activities_or_not	url:http://blogs.sciencemag.org/pipeline/archives/2012/12/11/did_kaggle_predict_drug_candidate_activities_or_not	KJCJKadA
 tag:platt_scaling	url:http://citeseer.ist.psu.edu/viewdoc/summary?doi=10.1.1.41.1639	url:http://citeseer.ist.psu.edu/viewdoc/summary?doi=10.1.1.41.1639	ZhuDaoNw
 tag:Mordvintsev2015_inceptionism	url:http://googleresearch.blogspot.co.uk/2015/06/inceptionism-going-deeper-into-neural.html	url:http://googleresearch.blogspot.co.uk/2015/06/inceptionism-going-deeper-into-neural.html	XLHInhc1
@@ -589,10 +588,8 @@ tag:Dean2012_nips_downpour	url:http://research.google.com/archive/large_deep_net
 url:http://research.google.com/archive/unsupervised_icml2012.html	url:http://research.google.com/archive/unsupervised_icml2012.html	url:http://research.google.com/archive/unsupervised_icml2012.html	IiNJE32f
 tag:Unterthiner2014_screening	url:http://www.bioinf.at/publications/2014/NIPS2014a.pdf	url:http://www.bioinf.at/publications/2014/NIPS2014a.pdf	F8fP2vAg
 tag:Speech_recognition	url:http://www.businessinsider.com/ibm-edges-closer-to-human-speech-recognition-2017-3	url:http://www.businessinsider.com/ibm-edges-closer-to-human-speech-recognition-2017-3	nyjAIan4
-url:http://www.cameo3d.org	url:http://www.cameo3d.org	url:http://www.cameo3d.org	10nwu1Z6H
 tag:gal_thesis	url:http://www.cs.ox.ac.uk/people/yarin.gal/website/thesis/thesis.pdf	url:http://www.cs.ox.ac.uk/people/yarin.gal/website/thesis/thesis.pdf	LxptBw9l
-url:http://www.deeplearningbook.org	url:http://www.deeplearningbook.org	url:http://www.deeplearningbook.org	15hB2MvHu
-tag:Guetterman	url:http://www.fasebj.org/content/30/1_Supplement/406.3	url:http://www.fasebj.org/content/30/1_Supplement/406.3	W0cYSf89
+tag:goodfellow2016deep	url:http://www.deeplearningbook.org	url:http://www.deeplearningbook.org	15hB2MvHu
 url:http://www.intel.com/pressroom/archive/speeches/ag080998.htm	url:http://www.intel.com/pressroom/archive/speeches/ag080998.htm	url:http://www.intel.com/pressroom/archive/speeches/ag080998.htm	mAXsmd43
 tag:Ehran2009_visualizing	url:http://www.iro.umontreal.ca/~lisa/publications2/index.php/publications/show/247	url:http://www.iro.umontreal.ca/~lisa/publications2/index.php/publications/show/247	UAAd9Uez
 tag:Bergstra2012_random	url:http://www.jmlr.org/papers/v13/bergstra12a.html	url:http://www.jmlr.org/papers/v13/bergstra12a.html	1FSwIjR9s
@@ -601,6 +598,7 @@ tag:Coates2013_cots_hpc	url:http://www.jmlr.org/proceedings/papers/v28/coates13.
 url:http://www.predictioncenter.org/casp12/rrc_avrg_results.cgi	url:http://www.predictioncenter.org/casp12/rrc_avrg_results.cgi	url:http://www.predictioncenter.org/casp12/rrc_avrg_results.cgi	zScWGveU
 tag:world2004international	url:http://www.who.int/classifications/icd/en/	url:http://www.who.int/classifications/icd/en/	zVoUcFPZ
 tag:Ngiam2011	url:https://ai.stanford.edu/~ang/papers/icml11-MultimodalDeepLearning.pdf	url:https://ai.stanford.edu/~ang/papers/icml11-MultimodalDeepLearning.pdf	1eN66lwn
+tag:timestamps	url:https://blog.dhimmel.com/irreproducible-timestamps/	url:https://blog.dhimmel.com/irreproducible-timestamps/	16wp9vWnU
 tag:li2016joint	url:https://dl.acm.org/citation.cfm?id=3061018	url:https://dl.acm.org/citation.cfm?id=3061018	17ydlqmVI
 url:https://eprint.iacr.org/2017/281.pdf	url:https://eprint.iacr.org/2017/281.pdf	url:https://eprint.iacr.org/2017/281.pdf	1GprsH3DV
 tag:DeepChem	url:https://github.com/deepchem/deepchem	url:https://github.com/deepchem/deepchem	Ytvk62dX
@@ -611,14 +609,15 @@ url:https://medium.com/twenty-one-hundred/data-is-the-new-oil-a-ludicrous-propos
 url:https://nihcc.app.box.com/v/ChestXray-NIHCC	url:https://nihcc.app.box.com/v/ChestXray-NIHCC	url:https://nihcc.app.box.com/v/ChestXray-NIHCC	odFR7ptt
 tag:Papernot2017_pate	url:https://openreview.net/forum?id=HkwoSDPgg	url:https://openreview.net/forum?id=HkwoSDPgg	b8DJ1u6W
 tag:Romero2017_diet	url:https://openreview.net/pdf?id=Sk-oDY9ge	url:https://openreview.net/pdf?id=Sk-oDY9ge	15JUKBg9y
-url:https://opentimestamps.org	url:https://opentimestamps.org	url:https://opentimestamps.org	1EFwdVXYw
 tag:Bergstra2011_hyper	url:https://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimization.pdf	url:https://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimization.pdf	wz83yfHF
 tag:Krizhevsky2013_nips_cnn	url:https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf	url:https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf	CCS5KSIM
 tag:Yosinski2014	url:https://papers.nips.cc/paper/5347-how-transferable-are-features-in-deep-neural-networks	url:https://papers.nips.cc/paper/5347-how-transferable-are-features-in-deep-neural-networks	enhj7VT6
 url:https://phekb.org/implementations	url:https://phekb.org/implementations	url:https://phekb.org/implementations	ziudr6hx
 tag:Mrzelj	url:https://repozitorij.uni-lj.si/IzpisGradiva.php?id=85515	url:https://repozitorij.uni-lj.si/IzpisGradiva.php?id=85515	iPIJrVVs
 tag:Vanhoucke2011_cpu	url:https://research.google.com/pubs/pub37631.html	url:https://research.google.com/pubs/pub37631.html	NSgduYNT
-url:https://www.bgcarlisle.com/blog/2014/08/25/proof-of-prespecified-endpoints-in-medical-research-with-the-bitcoin-blockchain	url:https://www.bgcarlisle.com/blog/2014/08/25/proof-of-prespecified-endpoints-in-medical-research-with-the-bitcoin-blockchain	url:https://www.bgcarlisle.com/blog/2014/08/25/proof-of-prespecified-endpoints-in-medical-research-with-the-bitcoin-blockchain	2K7yQEXT
-url:https://www.cs.toronto.edu	url:https://www.cs.toronto.edu	url:https://www.cs.toronto.edu	nuJ2rbn4
+tag:carlisle	url:https://www.bgcarlisle.com/blog/2014/08/25/proof-of-prespecified-endpoints-in-medical-research-with-the-bitcoin-blockchain/	url:https://www.bgcarlisle.com/blog/2014/08/25/proof-of-prespecified-endpoints-in-medical-research-with-the-bitcoin-blockchain/	6MR50hyY
+url:https://www.cameo3d.org	url:https://www.cameo3d.org	url:https://www.cameo3d.org	5OOI0sS2
+tag:krizhevsky-2009	url:https://www.cs.toronto.edu/~kriz/learning-features-2009-TR.pdf	url:https://www.cs.toronto.edu/~kriz/learning-features-2009-TR.pdf	IcdRxiDv
+tag:Guetterman	url:https://www.fasebj.org/doi/abs/10.1096/fasebj.30.1_supplement.406.3	url:https://www.fasebj.org/doi/abs/10.1096/fasebj.30.1_supplement.406.3	waowNTz7
 tag:Nih_curiosity	url:https://www.nigms.nih.gov/Education/Documents/curiosity.pdf	url:https://www.nigms.nih.gov/Education/Documents/curiosity.pdf	ru0hjGeQ
 tag:Dream_tf_binding	url:https://www.synapse.org/#!Synapse:syn6131484/wiki/402026	url:https://www.synapse.org/#!Synapse:syn6131484/wiki/402026	wW6QbBXz

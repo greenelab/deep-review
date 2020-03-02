@@ -37,9 +37,10 @@ author-meta:
 - Anthony Gitter
 - Casey S. Greene
 bibliography:
+- content/manual-references-2020-01-29.json
 - content/manual-references.json
-date-meta: '2020-02-28'
-header-includes: "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Opportunities and obstacles for deep learning in biology and medicine [update in progress]\" />\n<meta name=\"citation_title\" content=\"Opportunities and obstacles for deep learning in biology and medicine [update in progress]\" />\n<meta property=\"og:title\" content=\"Opportunities and obstacles for deep learning in biology and medicine [update in progress]\" />\n<meta property=\"twitter:title\" content=\"Opportunities and obstacles for deep learning in biology and medicine [update in progress]\" />\n<meta name=\"dc.date\" content=\"2020-02-28\" />\n<meta name=\"citation_publication_date\" content=\"2020-02-28\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Travers Ching\" />\n<meta name=\"citation_author_institution\" content=\"Molecular Biosciences and Bioengineering Graduate Program, University of Hawaii at Manoa, Honolulu, HI\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-5577-3516\" />\n<meta name=\"citation_author\" content=\"Daniel S. Himmelstein\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-3012-7446\" />\n<meta name=\"citation_author\" content=\"Brett K. Beaulieu-Jones\" />\n<meta name=\"citation_author_institution\" content=\"Genomics and Computational Biology Graduate Group, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-6700-1468\" />\n<meta name=\"citation_author\" content=\"Alexandr A. Kalinin\" />\n<meta name=\"citation_author_institution\" content=\"Department of Computational Medicine and Bioinformatics, University of Michigan Medical School, Ann Arbor, MI\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-4563-3226\" />\n<meta name=\"citation_author\" content=\"Brian T. Do\" />\n<meta name=\"citation_author_institution\" content=\"Harvard Medical School, Boston, MA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-4992-2623\" />\n<meta name=\"citation_author\" content=\"Gregory P. Way\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-0503-9348\" />\n<meta name=\"citation_author\" content=\"Enrico Ferrero\" />\n<meta name=\"citation_author_institution\" content=\"Computational Biology and Stats, Target Sciences, GlaxoSmithKline, Stevenage, United Kingdom\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-8362-100X\" />\n<meta name=\"citation_author\" content=\"Paul-Michael Agapow\" />\n<meta name=\"citation_author_institution\" content=\"Data Science Institute, Imperial College London, London, United Kingdom\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1126-1479\" />\n<meta name=\"citation_author\" content=\"Michael Zietz\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-0539-630X\" />\n<meta name=\"citation_author\" content=\"Michael M. Hoffman\" />\n<meta name=\"citation_author_institution\" content=\"Princess Margaret Cancer Centre, Toronto, ON, Canada\" />\n<meta name=\"citation_author_institution\" content=\"Department of Medical Biophysics, University of Toronto, Toronto, ON, Canada\" />\n<meta name=\"citation_author_institution\" content=\"Department of Computer Science, University of Toronto, Toronto, ON, Canada\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-4517-1562\" />\n<meta name=\"citation_author\" content=\"Wei Xie\" />\n<meta name=\"citation_author_institution\" content=\"Electrical Engineering and Computer Science, Vanderbilt University, Nashville, TN\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-1871-6846\" />\n<meta name=\"citation_author\" content=\"Gail L. Rosen\" />\n<meta name=\"citation_author_institution\" content=\"Ecological and Evolutionary Signal-processing and Informatics Laboratory, Department of Electrical and Computer Engineering, Drexel University, Philadelphia, PA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1763-5750\" />\n<meta name=\"citation_author\" content=\"Benjamin J. Lengerich\" />\n<meta name=\"citation_author_institution\" content=\"Computational Biology Department, School of Computer Science, Carnegie Mellon University, Pittsburgh, PA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8690-9554\" />\n<meta name=\"citation_author\" content=\"Johnny Israeli\" />\n<meta name=\"citation_author_institution\" content=\"Biophysics Program, Stanford University, Stanford, CA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1633-5780\" />\n<meta name=\"citation_author\" content=\"Jack Lanchantin\" />\n<meta name=\"citation_author_institution\" content=\"Department of Computer Science, University of Virginia, Charlottesville, VA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-0811-0944\" />\n<meta name=\"citation_author\" content=\"Stephen Woloszynek\" />\n<meta name=\"citation_author_institution\" content=\"Ecological and Evolutionary Signal-processing and Informatics Laboratory, Department of Electrical and Computer Engineering, Drexel University, Philadelphia, PA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-0568-298X\" />\n<meta name=\"citation_author\" content=\"Anne E. Carpenter\" />\n<meta name=\"citation_author_institution\" content=\"Imaging Platform, Broad Institute of Harvard and MIT, Cambridge, MA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1555-8261\" />\n<meta name=\"citation_author\" content=\"Avanti Shrikumar\" />\n<meta name=\"citation_author_institution\" content=\"Department of Computer Science, Stanford University, Stanford, CA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-6443-4671\" />\n<meta name=\"citation_author\" content=\"Jinbo Xu\" />\n<meta name=\"citation_author_institution\" content=\"Toyota Technological Institute at Chicago, Chicago, IL\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-7111-4839\" />\n<meta name=\"citation_author\" content=\"Evan M. Cofer\" />\n<meta name=\"citation_author_institution\" content=\"Department of Computer Science, Trinity University, San Antonio, TX\" />\n<meta name=\"citation_author_institution\" content=\"Lewis-Sigler Institute for Integrative Genomics, Princeton University, Princeton, NJ\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3877-0433\" />\n<meta name=\"citation_author\" content=\"Christopher A. Lavender\" />\n<meta name=\"citation_author_institution\" content=\"Integrative Bioinformatics, National Institute of Environmental Health Sciences, National Institutes of Health, Research Triangle Park, NC\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-7762-1089\" />\n<meta name=\"citation_author\" content=\"Srinivas C. Turaga\" />\n<meta name=\"citation_author_institution\" content=\"Howard Hughes Medical Institute, Janelia Research Campus, Ashburn, VA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3247-6487\" />\n<meta name=\"citation_author\" content=\"Amr M. Alexandari\" />\n<meta name=\"citation_author_institution\" content=\"Department of Computer Science, Stanford University, Stanford, CA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8655-8109\" />\n<meta name=\"citation_author\" content=\"Zhiyong Lu\" />\n<meta name=\"citation_author_institution\" content=\"National Center for Biotechnology Information and National Library of Medicine, National Institutes of Health, Bethesda, MD\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-9998-916X\" />\n<meta name=\"citation_author\" content=\"David J. Harris\" />\n<meta name=\"citation_author_institution\" content=\"Department of Wildlife Ecology and Conservation, University of Florida, Gainesville, FL\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3332-9307\" />\n<meta name=\"citation_author\" content=\"Dave DeCaprio\" />\n<meta name=\"citation_author_institution\" content=\"ClosedLoop.ai, Austin, TX\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8931-9461\" />\n<meta name=\"citation_author\" content=\"Yanjun Qi\" />\n<meta name=\"citation_author_institution\" content=\"Department of Computer Science, University of Virginia, Charlottesville, VA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-5796-7453\" />\n<meta name=\"citation_author\" content=\"Anshul Kundaje\" />\n<meta name=\"citation_author_institution\" content=\"Department of Genetics, Stanford University, Stanford, CA\" />\n<meta name=\"citation_author_institution\" content=\"Department of Computer Science, Stanford University, Stanford, CA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3084-2287\" />\n<meta name=\"citation_author\" content=\"Yifan Peng\" />\n<meta name=\"citation_author_institution\" content=\"National Center for Biotechnology Information and National Library of Medicine, National Institutes of Health, Bethesda, MD\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-9309-8331\" />\n<meta name=\"citation_author\" content=\"Laura K. Wiley\" />\n<meta name=\"citation_author_institution\" content=\"Division of Biomedical Informatics and Personalized Medicine, University of Colorado School of Medicine, Aurora, CO\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-6681-9754\" />\n<meta name=\"citation_author\" content=\"Marwin H.S. Segler\" />\n<meta name=\"citation_author_institution\" content=\"Institute of Organic Chemistry, Westf\xE4lische Wilhelms-Universit\xE4t M\xFCnster, M\xFCnster, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8008-0546\" />\n<meta name=\"citation_author\" content=\"Simina M. Boca\" />\n<meta name=\"citation_author_institution\" content=\"Innovation Center for Biomedical Informatics, Georgetown University Medical Center, Washington, DC\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-1400-3398\" />\n<meta name=\"citation_author\" content=\"S. Joshua Swamidass\" />\n<meta name=\"citation_author_institution\" content=\"Department of Pathology and Immunology, Washington University in Saint Louis, Saint Louis, MO\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-2191-0778\" />\n<meta name=\"citation_author\" content=\"Austin Huang\" />\n<meta name=\"citation_author_institution\" content=\"Department of Medicine, Brown University, Providence, RI\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1349-4030\" />\n<meta name=\"citation_author\" content=\"Anthony Gitter\" />\n<meta name=\"citation_author_institution\" content=\"Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison, Madison, WI\" />\n<meta name=\"citation_author_institution\" content=\"Morgridge Institute for Research, Madison, WI\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-5324-9833\" />\n<meta name=\"citation_author\" content=\"Casey S. Greene\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8713-9213\" />\n<link rel=\"canonical\" href=\"https://greenelab.github.io/deep-review/\" />\n<meta property=\"og:url\" content=\"https://greenelab.github.io/deep-review/\" />\n<meta property=\"twitter:url\" content=\"https://greenelab.github.io/deep-review/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://greenelab.github.io/deep-review/\" />\n<meta name=\"citation_pdf_url\" content=\"https://greenelab.github.io/deep-review/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://greenelab.github.io/deep-review/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://greenelab.github.io/deep-review/v/0b923010707347c447c4dafb66fe95b0d34061fa/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://greenelab.github.io/deep-review/v/0b923010707347c447c4dafb66fe95b0d34061fa/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://greenelab.github.io/deep-review/v/0b923010707347c447c4dafb66fe95b0d34061fa/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<meta property=\"og:image\" content=\"https://github.com/greenelab/deep-review/raw/0b923010707347c447c4dafb66fe95b0d34061fa/thumbnail.png\" />\n<meta property=\"twitter:image\" content=\"https://github.com/greenelab/deep-review/raw/0b923010707347c447c4dafb66fe95b0d34061fa/thumbnail.png\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->"
+date-meta: '2020-03-02'
+header-includes: "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Opportunities and obstacles for deep learning in biology and medicine [update in progress]\" />\n<meta name=\"citation_title\" content=\"Opportunities and obstacles for deep learning in biology and medicine [update in progress]\" />\n<meta property=\"og:title\" content=\"Opportunities and obstacles for deep learning in biology and medicine [update in progress]\" />\n<meta property=\"twitter:title\" content=\"Opportunities and obstacles for deep learning in biology and medicine [update in progress]\" />\n<meta name=\"dc.date\" content=\"2020-03-02\" />\n<meta name=\"citation_publication_date\" content=\"2020-03-02\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Travers Ching\" />\n<meta name=\"citation_author_institution\" content=\"Molecular Biosciences and Bioengineering Graduate Program, University of Hawaii at Manoa, Honolulu, HI\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-5577-3516\" />\n<meta name=\"citation_author\" content=\"Daniel S. Himmelstein\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-3012-7446\" />\n<meta name=\"citation_author\" content=\"Brett K. Beaulieu-Jones\" />\n<meta name=\"citation_author_institution\" content=\"Genomics and Computational Biology Graduate Group, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-6700-1468\" />\n<meta name=\"citation_author\" content=\"Alexandr A. Kalinin\" />\n<meta name=\"citation_author_institution\" content=\"Department of Computational Medicine and Bioinformatics, University of Michigan Medical School, Ann Arbor, MI\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-4563-3226\" />\n<meta name=\"citation_author\" content=\"Brian T. Do\" />\n<meta name=\"citation_author_institution\" content=\"Harvard Medical School, Boston, MA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-4992-2623\" />\n<meta name=\"citation_author\" content=\"Gregory P. Way\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-0503-9348\" />\n<meta name=\"citation_author\" content=\"Enrico Ferrero\" />\n<meta name=\"citation_author_institution\" content=\"Computational Biology and Stats, Target Sciences, GlaxoSmithKline, Stevenage, United Kingdom\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-8362-100X\" />\n<meta name=\"citation_author\" content=\"Paul-Michael Agapow\" />\n<meta name=\"citation_author_institution\" content=\"Data Science Institute, Imperial College London, London, United Kingdom\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1126-1479\" />\n<meta name=\"citation_author\" content=\"Michael Zietz\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-0539-630X\" />\n<meta name=\"citation_author\" content=\"Michael M. Hoffman\" />\n<meta name=\"citation_author_institution\" content=\"Princess Margaret Cancer Centre, Toronto, ON, Canada\" />\n<meta name=\"citation_author_institution\" content=\"Department of Medical Biophysics, University of Toronto, Toronto, ON, Canada\" />\n<meta name=\"citation_author_institution\" content=\"Department of Computer Science, University of Toronto, Toronto, ON, Canada\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-4517-1562\" />\n<meta name=\"citation_author\" content=\"Wei Xie\" />\n<meta name=\"citation_author_institution\" content=\"Electrical Engineering and Computer Science, Vanderbilt University, Nashville, TN\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-1871-6846\" />\n<meta name=\"citation_author\" content=\"Gail L. Rosen\" />\n<meta name=\"citation_author_institution\" content=\"Ecological and Evolutionary Signal-processing and Informatics Laboratory, Department of Electrical and Computer Engineering, Drexel University, Philadelphia, PA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1763-5750\" />\n<meta name=\"citation_author\" content=\"Benjamin J. Lengerich\" />\n<meta name=\"citation_author_institution\" content=\"Computational Biology Department, School of Computer Science, Carnegie Mellon University, Pittsburgh, PA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8690-9554\" />\n<meta name=\"citation_author\" content=\"Johnny Israeli\" />\n<meta name=\"citation_author_institution\" content=\"Biophysics Program, Stanford University, Stanford, CA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1633-5780\" />\n<meta name=\"citation_author\" content=\"Jack Lanchantin\" />\n<meta name=\"citation_author_institution\" content=\"Department of Computer Science, University of Virginia, Charlottesville, VA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-0811-0944\" />\n<meta name=\"citation_author\" content=\"Stephen Woloszynek\" />\n<meta name=\"citation_author_institution\" content=\"Ecological and Evolutionary Signal-processing and Informatics Laboratory, Department of Electrical and Computer Engineering, Drexel University, Philadelphia, PA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-0568-298X\" />\n<meta name=\"citation_author\" content=\"Anne E. Carpenter\" />\n<meta name=\"citation_author_institution\" content=\"Imaging Platform, Broad Institute of Harvard and MIT, Cambridge, MA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1555-8261\" />\n<meta name=\"citation_author\" content=\"Avanti Shrikumar\" />\n<meta name=\"citation_author_institution\" content=\"Department of Computer Science, Stanford University, Stanford, CA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-6443-4671\" />\n<meta name=\"citation_author\" content=\"Jinbo Xu\" />\n<meta name=\"citation_author_institution\" content=\"Toyota Technological Institute at Chicago, Chicago, IL\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-7111-4839\" />\n<meta name=\"citation_author\" content=\"Evan M. Cofer\" />\n<meta name=\"citation_author_institution\" content=\"Department of Computer Science, Trinity University, San Antonio, TX\" />\n<meta name=\"citation_author_institution\" content=\"Lewis-Sigler Institute for Integrative Genomics, Princeton University, Princeton, NJ\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3877-0433\" />\n<meta name=\"citation_author\" content=\"Christopher A. Lavender\" />\n<meta name=\"citation_author_institution\" content=\"Integrative Bioinformatics, National Institute of Environmental Health Sciences, National Institutes of Health, Research Triangle Park, NC\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-7762-1089\" />\n<meta name=\"citation_author\" content=\"Srinivas C. Turaga\" />\n<meta name=\"citation_author_institution\" content=\"Howard Hughes Medical Institute, Janelia Research Campus, Ashburn, VA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3247-6487\" />\n<meta name=\"citation_author\" content=\"Amr M. Alexandari\" />\n<meta name=\"citation_author_institution\" content=\"Department of Computer Science, Stanford University, Stanford, CA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8655-8109\" />\n<meta name=\"citation_author\" content=\"Zhiyong Lu\" />\n<meta name=\"citation_author_institution\" content=\"National Center for Biotechnology Information and National Library of Medicine, National Institutes of Health, Bethesda, MD\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-9998-916X\" />\n<meta name=\"citation_author\" content=\"David J. Harris\" />\n<meta name=\"citation_author_institution\" content=\"Department of Wildlife Ecology and Conservation, University of Florida, Gainesville, FL\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3332-9307\" />\n<meta name=\"citation_author\" content=\"Dave DeCaprio\" />\n<meta name=\"citation_author_institution\" content=\"ClosedLoop.ai, Austin, TX\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8931-9461\" />\n<meta name=\"citation_author\" content=\"Yanjun Qi\" />\n<meta name=\"citation_author_institution\" content=\"Department of Computer Science, University of Virginia, Charlottesville, VA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-5796-7453\" />\n<meta name=\"citation_author\" content=\"Anshul Kundaje\" />\n<meta name=\"citation_author_institution\" content=\"Department of Genetics, Stanford University, Stanford, CA\" />\n<meta name=\"citation_author_institution\" content=\"Department of Computer Science, Stanford University, Stanford, CA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3084-2287\" />\n<meta name=\"citation_author\" content=\"Yifan Peng\" />\n<meta name=\"citation_author_institution\" content=\"National Center for Biotechnology Information and National Library of Medicine, National Institutes of Health, Bethesda, MD\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-9309-8331\" />\n<meta name=\"citation_author\" content=\"Laura K. Wiley\" />\n<meta name=\"citation_author_institution\" content=\"Division of Biomedical Informatics and Personalized Medicine, University of Colorado School of Medicine, Aurora, CO\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-6681-9754\" />\n<meta name=\"citation_author\" content=\"Marwin H.S. Segler\" />\n<meta name=\"citation_author_institution\" content=\"Institute of Organic Chemistry, Westf\xE4lische Wilhelms-Universit\xE4t M\xFCnster, M\xFCnster, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8008-0546\" />\n<meta name=\"citation_author\" content=\"Simina M. Boca\" />\n<meta name=\"citation_author_institution\" content=\"Innovation Center for Biomedical Informatics, Georgetown University Medical Center, Washington, DC\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-1400-3398\" />\n<meta name=\"citation_author\" content=\"S. Joshua Swamidass\" />\n<meta name=\"citation_author_institution\" content=\"Department of Pathology and Immunology, Washington University in Saint Louis, Saint Louis, MO\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-2191-0778\" />\n<meta name=\"citation_author\" content=\"Austin Huang\" />\n<meta name=\"citation_author_institution\" content=\"Department of Medicine, Brown University, Providence, RI\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1349-4030\" />\n<meta name=\"citation_author\" content=\"Anthony Gitter\" />\n<meta name=\"citation_author_institution\" content=\"Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison, Madison, WI\" />\n<meta name=\"citation_author_institution\" content=\"Morgridge Institute for Research, Madison, WI\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-5324-9833\" />\n<meta name=\"citation_author\" content=\"Casey S. Greene\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8713-9213\" />\n<link rel=\"canonical\" href=\"https://greenelab.github.io/deep-review/\" />\n<meta property=\"og:url\" content=\"https://greenelab.github.io/deep-review/\" />\n<meta property=\"twitter:url\" content=\"https://greenelab.github.io/deep-review/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://greenelab.github.io/deep-review/\" />\n<meta name=\"citation_pdf_url\" content=\"https://greenelab.github.io/deep-review/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://greenelab.github.io/deep-review/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://greenelab.github.io/deep-review/v/37befdc139f7b39baef62b06042950b477e38704/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://greenelab.github.io/deep-review/v/37befdc139f7b39baef62b06042950b477e38704/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://greenelab.github.io/deep-review/v/37befdc139f7b39baef62b06042950b477e38704/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<meta property=\"og:image\" content=\"https://github.com/greenelab/deep-review/raw/37befdc139f7b39baef62b06042950b477e38704/thumbnail.png\" />\n<meta property=\"twitter:image\" content=\"https://github.com/greenelab/deep-review/raw/37befdc139f7b39baef62b06042950b477e38704/thumbnail.png\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->"
 keywords:
 - deep learning
 - review
@@ -66,10 +67,10 @@ New authors and links to new sections are available in [GitHub Issue #959](https
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/deep-review/v/0b923010707347c447c4dafb66fe95b0d34061fa/))
+([permalink](https://greenelab.github.io/deep-review/v/37befdc139f7b39baef62b06042950b477e38704/))
 was automatically generated
-from [greenelab/deep-review@0b92301](https://github.com/greenelab/deep-review/tree/0b923010707347c447c4dafb66fe95b0d34061fa)
-on February 28, 2020.
+from [greenelab/deep-review@37befdc](https://github.com/greenelab/deep-review/tree/37befdc139f7b39baef62b06042950b477e38704)
+on March 2, 2020.
 </em></small>
 
 ## Authors
@@ -262,7 +263,7 @@ If data have a natural adjacency structure, a convolutional neural network (CNN)
 Other neural network architectures such as autoencoders require no labels and are now regularly used for unsupervised tasks.
 In this review, we do not exhaustively discuss the different types of deep neural network architectures; an overview of the principal terms used herein is given in Table @tbl:glossary.
 Table @tbl:glossary also provides select example applications, though in practice each neural network architecture has been broadly applied across multiple types of biomedical data.
-A recent book from Goodfellow et al. covers neural network architectures in detail [@url:http://www.deeplearningbook.org/], and LeCun et al. provide a more general introduction [@doi:10.1038/nature14539].
+A recent book from Goodfellow et al. covers neural network architectures in detail [@tag:goodfellow2016deep], and LeCun et al. provide a more general introduction [@doi:10.1038/nature14539].
 
 | Term | Definition | Example applications |
 |-----|----------|----------|
@@ -1048,7 +1049,7 @@ However, blindly tested in the well-known CASP competitions, these methods did n
 
 Recently, Wang et al. proposed the deep learning method RaptorX-Contact [@doi:10.1371/journal.pcbi.1005324], which significantly improves contact prediction over MetaPSICOV and pure co-evolution methods, especially for proteins without many sequence homologs. It employs a network architecture formed by one 1D residual neural network and one 2D residual neural network.
 Blindly tested in the latest CASP competition (i.e. CASP12 [@url:http://www.predictioncenter.org/casp12/rrc_avrg_results.cgi]), RaptorX-Contact ranked first in F₁ score on free-modeling targets as well as the whole set of targets.
-In CAMEO (which can be interpreted as a fully-automated CASP) [@url:http://www.cameo3d.org/], its predicted contacts were also able to fold proteins with a novel fold and only 65--330 sequence homologs.
+In CAMEO (which can be interpreted as a fully-automated CASP) [@url:https://www.cameo3d.org], its predicted contacts were also able to fold proteins with a novel fold and only 65--330 sequence homologs.
 This technique also worked well on membrane proteins even when trained on non-membrane proteins [@arxiv:1704.07207].
 RaptorX-Contact performed better mainly due to introduction of residual neural networks and exploitation of contact occurrence patterns by simultaneously predicting all the contacts in a single protein.
 
@@ -1519,7 +1520,7 @@ In particular, many problem-specific optimizations described in this review refl
 Methods for adjusting the flexibility of deep learning models include dropout, reduced data projections, and transfer learning (described below).
 One way of understanding such model optimizations is that they incorporate external information to limit model flexibility and thereby improve predictions.
 This balance is formally described as a tradeoff between "bias and variance"
-[@url:http://www.deeplearningbook.org/].
+[@tag:goodfellow2016deep].
 
 Although the bias-variance tradeoff is common to all machine learning applications, recent empirical and theoretical observations suggest that deep learning models may have uniquely advantageous generalization properties [@tag:Zhang2017_generalization; @tag:Lin2017_why_dl_works].
 Nevertheless, additional advances will be needed to establish a coherent theoretical foundation that enables practitioners to better reason about their models from first principles.
@@ -1740,7 +1741,7 @@ A linear model trained on heavily engineered features might be difficult to inte
 Similarly, a decision tree with many nodes and branches may also be difficult for a human to make sense of.
 
 There are several directions that might benefit the development of interpretability techniques.
-The first is the introduction of gold standard benchmarks that different interpretability approaches could be compared against, similar in spirit to how the ImageNet [@doi:10.1007/s11263-015-0816-y] and CIFAR [@url:https://www.cs.toronto.edu/~kriz/learning-features-2009-TR.pdf] datasets spurred the development of deep learning for computer vision.
+The first is the introduction of gold standard benchmarks that different interpretability approaches could be compared against, similar in spirit to how the ImageNet [@doi:10.1007/s11263-015-0816-y] and CIFAR [@tag:krizhevsky-2009] datasets spurred the development of deep learning for computer vision.
 It would also be helpful if the community placed more emphasis on domains outside of computer vision.
 Computer vision is often used as the example application of interpretability methods, but it is not the domain with the most pressing need.
 Finally, closer integration of interpretability approaches with popular deep learning frameworks would make it easier for practitioners to apply and experiment with different approaches to understanding their deep learning models.
@@ -2006,8 +2007,8 @@ When contributions were merged into the `master` branch, Travis CI deployed the 
 As a result, the latest manuscript version is always available at https://greenelab.github.io/deep-review.
 To ensure a consistent software environment, we defined a versioned [conda](https://conda.io) environment of the software dependencies.
 
-In addition, we instructed the Travis CI deployment script to perform blockchain timestamping [@url:https://www.bgcarlisle.com/blog/2014/08/25/proof-of-prespecified-endpoints-in-medical-research-with-the-bitcoin-blockchain/; @url:http://blog.dhimmel.com/irreproducible-timestamps/].
-Using [OpenTimestamps](https://opentimestamps.org/), we submitted hashes for the manuscript and the source git commit for timestamping in the Bitcoin blockchain [@url:https://opentimestamps.org/].
+In addition, we instructed the Travis CI deployment script to perform blockchain timestamping [@tag:carlisle; @tag:timestamps].
+Using [OpenTimestamps](https://opentimestamps.org/), we submitted hashes for the manuscript and the source git commit for timestamping in the Bitcoin blockchain.
 These timestamps attest that a given version of this manuscript (and its history) existed at a given point in time.
 The ability to irrefutably prove manuscript existence at a past time could be important to establish scientific precedence and enforce an immutable record of authorship.
 
@@ -2066,40 +2067,39 @@ and the Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences (M
 [@tag:Alipanahi2015_predicting]: doi:10.1038/nbt.3300
 [@tag:AltaeTran2016_one_shot]: doi:10.1021/acscentsci.6b00367
 [@tag:Amit2017_breast_mri]: doi:10.1117/12.2249981
-[@tag:Asgari]: doi:10.1371/journal.pone.0141287
-[@tag:blast]: doi:10.1016/S0022-2836(05)80360-2
 [@tag:Angermueller2016_dl_review]: doi:10.15252/msb.20156651
 [@tag:Angermueller2016_single_methyl]: doi:10.1186/s13059-017-1189-z
 [@tag:Angermueller2017]: doi:10.1186/s13059-017-1189-z
 [@tag:Artemov2016_clinical]: doi:10.1101/095653
 [@tag:Arvaniti2016_rare_subsets]: doi:10.1101/046508
+[@tag:Asgari]: doi:10.1371/journal.pone.0141287
 [@tag:Bach2015_on]: doi:10.1371/journal.pone.0130140
 [@tag:Bahdanu2014_neural]: arxiv:1409.0473
-[@tag:Baskin2015_drug_disc]: doi:10.1080/17460441.2016.1201262
 [@tag:Bar2015_nonmed_tl]: doi:10.1117/12.2083124
 [@tag:Barash2010_splicing_code]: doi:10.1038/nature09000
+[@tag:Baskin2015_drug_disc]: doi:10.1080/17460441.2016.1201262
 [@tag:Baxt1991_myocardial]: doi:10.7326/0003-4819-115-11-843
 [@tag:BeaulieuJones2016_ehr_encode]: doi:10.1016/j.jbi.2016.10.007
 [@tag:Bengio2015_prec]: arxiv:1412.7024
 [@tag:Berezikov2011_mirna]: doi:10.1038/nrg3079
 [@tag:Bergstra2011_hyper]: url:https://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimization.pdf
 [@tag:Bergstra2012_random]: url:http://www.jmlr.org/papers/v13/bergstra12a.html
-[@tag:Bracken2016_mirna]: doi:10.1038/nrg.2016.134
 [@tag:Boza]: doi:10.1371/journal.pone.0178751
+[@tag:Bracken2016_mirna]: doi:10.1038/nrg.2016.134
 [@tag:Buggenthin2017_imaged_lineage]: doi:10.1038/nmeth.4182
 [@tag:Burlina2016_amd]: doi:10.1109/ISBI.2016.7493240
-[@tag:Chatterjee2018]: arxiv:1807.09617
 [@tag:Caruana2014_need]: arxiv:1312.6184
 [@tag:Caruana2015_intelligible]: doi:10.1145/2783258.2788613
+[@tag:Chatterjee2018]: arxiv:1807.09617
 [@tag:Chaudhary2017_multiom_liver_cancer]: doi:10.1101/114892
 [@tag:Che2015_distill]: arxiv:1512.03542
 [@tag:Che2016_rnn]: arxiv:1606.01865
 [@tag:Chen2015_hashing]: arxiv:1504.04788
+[@tag:Chen2015_trans_species]: doi:10.1093/bioinformatics/btv315
 [@tag:Chen2016_exprs_yeast]: doi:10.1186/s12859-015-0852-1
 [@tag:Chen2016_gene_expr]: doi:10.1093/bioinformatics/btw074
-[@tag:Chen2015_trans_species]: doi:10.1093/bioinformatics/btv315
-[@tag:Choi2016_retain]: arxiv:1608.05745
 [@tag:Choi2016_gram]: arxiv:1611.07012
+[@tag:Choi2016_retain]: arxiv:1608.05745
 [@tag:Chollet2016_xception]: arxiv:1610.02357
 [@tag:Christensen2009]: doi:10.1371/journal.pgen.1000602
 [@tag:Chryssolouris1996_confidence]: doi:10.1109/72.478409
@@ -2113,15 +2113,15 @@ and the Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences (M
 [@tag:Dean2012_nips_downpour]: url:http://research.google.com/archive/large_deep_networks_nips2012.html
 [@tag:DeepChem]: url:https://github.com/deepchem/deepchem
 [@tag:Deming2016_genetic]: arxiv:1605.07156
-[@tag:Ding]: doi:10.1186/s12859-015-0753-3
-[@tag:Ditzler]: doi:10.1186/s12859-015-0793-8
-[@tag:Ditzler2]: doi:10.1109/TNNLS.2014.2320415
-[@tag:Ditzler3]: doi:10.1109/TNB.2015.2461219
 [@tag:Dhungel2015_struct_pred_mamm]: doi:10.1007/978-3-319-24553-9_74
 [@tag:Dhungel2016_mamm]: doi:10.1007/978-3-319-46723-8_13
 [@tag:Dhungel2017_mamm_min_interv]: doi:10.1016/j.media.2017.01.009
-[@tag:Dream_tf_binding]: url:https://www.synapse.org/#!Synapse:syn6131484/wiki/402026
+[@tag:Ding]: doi:10.1186/s12859-015-0753-3
+[@tag:Ditzler2]: doi:10.1109/TNNLS.2014.2320415
+[@tag:Ditzler3]: doi:10.1109/TNB.2015.2461219
+[@tag:Ditzler]: doi:10.1186/s12859-015-0793-8
 [@tag:Dragonn]: url:http://kundajelab.github.io/dragonn/
+[@tag:Dream_tf_binding]: url:https://www.synapse.org/#!Synapse:syn6131484/wiki/402026
 [@tag:Duvenaud2015_graph_conv]: url:http://papers.nips.cc/paper/5954-convolutional-networks-on-graphs-for-learning-molecular-fingerprints
 [@tag:Edwards2015_growing_pains]: doi:10.1145/2771283
 [@tag:Ehran2009_visualizing]: url:http://www.iro.umontreal.ca/~lisa/publications2/index.php/publications/show/247
@@ -2138,8 +2138,8 @@ and the Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences (M
 [@tag:Fraga2005]: doi:10.1073/pnas.0500398102
 [@tag:Fu2019]: doi:10.1109/TCBB.2019.2909237
 [@tag:Gal2015_dropout]: arxiv:1506.02142
-[@tag:Gaublomme2015_th17]: doi:10.1016/j.cell.2015.11.009
 [@tag:Gargeya2017_dr]: doi:10.1016/j.ophtha.2017.02.008
+[@tag:Gaublomme2015_th17]: doi:10.1016/j.cell.2015.11.009
 [@tag:Gawad2016_singlecell]: doi:10.1038/nrg.2015.16
 [@tag:Geras2017_multiview_mamm]: doi:10.1038/nrg.2015.16
 [@tag:Gerstein2016_scaling]: doi:10.1186/s13059-016-0917-0
@@ -2150,11 +2150,11 @@ and the Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences (M
 [@tag:Gomezb2016_automatic]: arxiv:1610.02415v1
 [@tag:Graphlab]: doi:10.14778/2212351.2212354
 [@tag:Groop1986_islet]: doi:10.2337/diab.35.2.237
-[@tag:Gultepe2014_sepsis]: doi:10.1136/amiajnl-2013-001815
+[@tag:Guetterman]: url:https://www.fasebj.org/doi/abs/10.1096/fasebj.30.1_supplement.406.3
 [@tag:Gulshan2016_dt]: doi:10.1001/jama.2016.17216
+[@tag:Gultepe2014_sepsis]: doi:10.1136/amiajnl-2013-001815
 [@tag:Gupta2015_exprs_yeast]: doi:10.1101/031906
 [@tag:Gupta2015_prec]: arxiv:1502.02551
-[@tag:Guetterman]: url:http://www.fasebj.org/content/30/1_Supplement/406.3
 [@tag:Hadjas2015_cc]: arxiv:1504.04343
 [@tag:He2015_images]: arxiv:1512.03385
 [@tag:Hinton2006_autoencoders]: doi:10.1126/science.1127647
@@ -2186,8 +2186,10 @@ and the Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences (M
 [@tag:Kearnes2016_graph_conv]: doi:10.1007/s10822-016-9938-8
 [@tag:Kelley2016_basset]: doi:10.1101/gr.200535.115
 [@tag:Keras]: url:https://github.com/fchollet/keras
-[@tag:Kizek]: doi:10.1016/j.bjid.2015.08.013
+[@tag:Khwaja2017]: doi:10.1109/BIOCAS.2017.8325078
+[@tag:Khwaja2018]: arxiv:1810.01243
 [@tag:Kindermans2016_investigating]: arxiv:1611.07270
+[@tag:Kizek]: doi:10.1016/j.bjid.2015.08.013
 [@tag:Knights]: doi:10.1111/j.1574-6976.2010.00251.x
 [@tag:Koh2016_denoising]: doi:10.1101/052118
 [@tag:Koh2017_understanding]: arxiv:1703.04730
@@ -2199,8 +2201,6 @@ and the Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences (M
 [@tag:Krizhevsky2013_nips_cnn]: url:https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf
 [@tag:Krizhevsky2014_weird_trick]: arxiv:1404.5997
 [@tag:Kwabi-Addo2007]: doi:10.1158/1078-0432.CCR-07-0085
-[@tag:Khwaja2017]: doi:10.1109/BIOCAS.2017.8325078
-[@tag:Khwaja2018]: arxiv:1810.01243
 [@tag:Lacey2016_dl_fpga]: arxiv:1602.04283
 [@tag:Laird2010]: doi:10.1038/nrg2732
 [@tag:Lakhani2017_radiography]: doi:10.1148/radiol.2017162326
@@ -2209,27 +2209,26 @@ and the Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences (M
 [@tag:Lee2016_emr_oct_amd]: doi:10.1101/094276
 [@tag:Lei2016_rationalizing]: arxiv:1606.04155
 [@tag:Leibig2016_dr]: doi:10.1101/084210
-[@tag:Levy2019]: doi:10.1101/692665
 [@tag:Levy-Jurgenson2018]: doi:10.1101/491357
+[@tag:Levy2019]: doi:10.1101/692665
 [@tag:Li2014_minibatch]: doi:10.1145/2623330.2623612
 [@tag:Li2016_variation]: doi:10.1126/science.aad9417
 [@tag:Liang2015_exprs_cancer]: doi:10.1109/TCBB.2014.2377729
 [@tag:Lin2017_why_dl_works]: arxiv:1608.08225v3
-[@tag:Lipton2016_missing]: arxiv:1606.04130
 [@tag:Lipton2015_lstm]: arxiv:1510.07641
+[@tag:Lipton2016_missing]: arxiv:1606.04130
+[@tag:Lisboa2006_review]: doi:10.1016/j.neunet.2005.10.007
 [@tag:Litjens2016_histopath_survey]: doi:10.1038/srep26286
 [@tag:Litjens2017_medimage_survey]: doi:10.1016/j.media.2017.07.005
-[@tag:Lisboa2006_review]: doi:10.1016/j.neunet.2005.10.007
 [@tag:Liu2013]: doi:10.1038/nbt.2487
-[@tag:Liu]: doi:10.1371/journal.pone.0053253
-[@tag:Liu2016_towards]: arxiv:1604.07043
 [@tag:Liu2016_sc_transcriptome]: doi:10.12688/f1000research.7223.1
+[@tag:Liu2016_towards]: arxiv:1604.07043
+[@tag:Liu]: doi:10.1371/journal.pone.0053253
 [@tag:Lodato2015_neurons]: doi:10.1126/science.aab1785
 [@tag:Lowe2012_kaggle]: url:http://blogs.sciencemag.org/pipeline/archives/2012/12/11/did_kaggle_predict_drug_candidate_activities_or_not
-[@tag:lmat]: doi:10.1093/bioinformatics/btt389
 [@tag:Lundberg2016_an]: arxiv:1611.07478
-[@tag:Lusci2015_irv]: doi:10.1186/s13321-015-0110-6
 [@tag:Lusci2013_rnn]: doi:10.1021/ci400187y
+[@tag:Lusci2015_irv]: doi:10.1186/s13321-015-0110-6
 [@tag:Ma2015_qsar_merck]: doi:10.1021/ci500747n
 [@tag:Maaten2008_tsne]: url:http://www.jmlr.org/papers/v9/vandermaaten08a.html
 [@tag:Mahendran2014_understanding]: arxiv:1412.0035
@@ -2238,34 +2237,31 @@ and the Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences (M
 [@tag:Mahmood]: doi:10.1016/S0140-6736(13)61752-3
 [@tag:Mapreduce]: doi:10.1145/1327452.1327492
 [@tag:Mayr2016_deep_tox]: doi:10.3389/fenvs.2015.00080
-[@tag:McHardy]: doi:10.1038/nmeth976
 [@tag:McHardy2]: doi:10.7717/peerj.1603
+[@tag:McHardy]: doi:10.1038/nmeth976
 [@tag:Meissner2008]: doi:10.1038/nature07107
-[@tag:Metaphlan]: doi:10.1038/nmeth.2066
 [@tag:Meng2016_mllib]: arxiv:1505.06807
+[@tag:Metaphlan]: doi:10.1038/nmeth.2066
 [@tag:Min2016_deepenhancer]: doi:10.1109/BIBM.2016.7822593
 [@tag:Momeni2018]: doi:10.1101/438341
-[@tag:Moritz2015_sparknet]: arxiv:1511.06051
 [@tag:Mordvintsev2015_inceptionism]: url:http://googleresearch.blogspot.co.uk/2015/06/inceptionism-going-deeper-into-neural.html
+[@tag:Moritz2015_sparknet]: arxiv:1511.06051
 [@tag:Mrzelj]: url:https://repozitorij.uni-lj.si/IzpisGradiva.php?id=85515
-[@tag:matis]: doi:10.1016/S0097-8485(96)80015-5
-[@tag:nbc]: doi:10.1093/bioinformatics/btq619
 [@tag:Murdoch2017_automatic]: arxiv:1702.02540
+[@tag:NIH2016_genome_cost]: url:https://www.genome.gov/27565109/the-cost-of-sequencing-a-human-genome/
 [@tag:Nazor2012]: doi:10.1016/j.stem.2012.02.013
 [@tag:Nemati2016_rl]: doi:10.1109/EMBC.2016.7591355
-[@tag:Ni2018]: doi:10.1101/385849
-[@tag:Nguyen2014_adversarial]: arxiv:1412.1897v4
 [@tag:Ngiam2011]: url:https://ai.stanford.edu/~ang/papers/icml11-MultimodalDeepLearning.pdf
+[@tag:Nguyen2014_adversarial]: arxiv:1412.1897v4
+[@tag:Ni2018]: doi:10.1101/385849
 [@tag:Nie2016_3d_survival]: doi:10.1007/978-3-319-46723-8_25
-[@tag:NIH2016_genome_cost]: url:https://www.genome.gov/27565109/the-cost-of-sequencing-a-human-genome/
 [@tag:Nih_curiosity]: url:https://www.nigms.nih.gov/Education/Documents/curiosity.pdf
 [@tag:Olivecrona2017_drug_design]: arxiv:1704.07555
 [@tag:Osokin2017_biogan]: arxiv:1708.04692
-[@tag:onecodex]: url:https://www.onecodex.com/
+[@tag:Pan2018]: doi:10.1101/438218
 [@tag:Papernot2017_pate]: url:https://openreview.net/forum?id=HkwoSDPgg
 [@tag:Park2016_deepmirgene]: arxiv:1605.00017
 [@tag:Parnamaa2017]: doi:10.1534/g3.116.033654
-[@tag:Pan2018]: doi:10.1101/438218
 [@tag:Pawlowski2016]: doi:10.1101/085118
 [@tag:Peng2019]: doi:10.1101/527044
 [@tag:Pereira2016_docking]: doi:10.1021/acs.jcim.6b00355
@@ -2273,30 +2269,30 @@ and the Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences (M
 [@tag:Phymm]: doi:10.1038/nmeth.1358
 [@tag:Poplin2016_deepvariant]: doi:10.1101/092890
 [@tag:Pratt2016_dr]: doi:10.1016/j.procs.2016.07.014
-[@tag:Quach2017]: doi:10.18632/aging.101168
-[@tag:Quang2017_factor]: doi:10.1101/151274
 [@tag:Qin2017_onehot]: doi:10.1371/journal.pcbi.1005403
 [@tag:Qiu2017_graph_embedding]: doi:10.1101/110668
 [@tag:Qiu2018]: doi:10.1101/406066
-[@tag:Ragoza2016_protein]: arxiv:1612.02751
+[@tag:Quach2017]: doi:10.18632/aging.101168
+[@tag:Quang2017_factor]: doi:10.1101/151274
 [@tag:RAD2010_view_cc]: doi:10.1145/1721654.1721672
 [@tag:Radford_dcgan]: arxiv:1511.06434v2
+[@tag:Ragoza2016_protein]: arxiv:1612.02751
+[@tag:Raina2009_gpu]: doi:10.1145/1553374.1553486
 [@tag:Rajkomar2017_radiographs]: doi:10.1007/s10278-016-9914-9
 [@tag:Rakhlin2018_histology]: doi:10.1101/259911
 [@tag:Ramsundar2015_multitask_drug]: arxiv:1502.02072
 [@tag:Ranganath2016_deep]: arxiv:1608.02158
-[@tag:Raina2009_gpu]: doi:10.1145/1553374.1553486
 [@tag:Relton2010]: doi:10.1371/journal.pmed.1000356
 [@tag:Ribeiro2016_lime]: arxiv:1602.04938
 [@tag:Robertson2005]: doi:10.1038/nrg1655
 [@tag:Rogers2010_fingerprints]: doi:10.1021/ci100050t
-[@tag:Roth2015_view_agg_cad]: doi:10.1109/TMI.2015.2482920
 [@tag:Romero2017_diet]: url:https://openreview.net/pdf?id=Sk-oDY9ge
 [@tag:Rosenberg2015_synthetic_seqs]: doi:10.1016/j.cell.2015.09.054
+[@tag:Roth2015_view_agg_cad]: doi:10.1109/TMI.2015.2482920
 [@tag:Russakovsky2015_imagenet]: doi:10.1007/s11263-015-0816-y
 [@tag:Sa2015_buckwild]: pmcid:PMC4907892
-[@tag:Salas2018_GR]: doi:10.1101/gr.233213.117
 [@tag:Salas2018]: doi:10.1186/s13059-018-1448-7
+[@tag:Salas2018_GR]: doi:10.1101/gr.233213.117
 [@tag:Salzberg]: doi:10.1186/1471-2105-11-544
 [@tag:Schatz2010_dna_cloud]: doi:10.1038/nbt0710-691
 [@tag:Schmidhuber2014_dnn_overview]: doi:10.1016/j.neunet.2014.09.003
@@ -2304,20 +2300,20 @@ and the Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences (M
 [@tag:Segata]: doi:10.1371/journal.pcbi.1004977
 [@tag:Segler2017_drug_design]: arxiv:1701.01329
 [@tag:Seide2014_parallel]: doi:10.1109/ICASSP.2014.6853593
-[@tag:Setty2015_seqgl]: doi:10.1371/journal.pcbi.1004271
 [@tag:Selvaraju2016_grad]: arxiv:1610.02391
 [@tag:Serden]: doi:10.1016/S0168-8510(02)00208-7
+[@tag:Setty2015_seqgl]: doi:10.1371/journal.pcbi.1004271
 [@tag:Shaham2016_batch_effects]: doi:10.1093/bioinformatics/btx196
 [@tag:Shapely]: doi:10.1515/9781400881970-018
 [@tag:Shen2017_medimg_review]: doi:10.1146/annurev-bioeng-071516-044442
 [@tag:Shin2016_cad_tl]: doi:10.1109/TMI.2016.2528162
 [@tag:Shrikumar2017_learning]: arxiv:1704.02685
 [@tag:Shrikumar2017_reversecomplement]: doi:10.1101/103663
+[@tag:Silver2016_alphago]: doi:10.1038/nature16961
 [@tag:Simonyan2013_deep]: arxiv:1312.6034
-[@tag:Singh2017_attentivechrome]: arxiv:1708.00339
 [@tag:Singh2016_deepchrome]: arxiv:1607.02078
 [@tag:Singh2016_tsk]: doi:10.1109/TCBB.2016.2609918
-[@tag:Silver2016_alphago]: doi:10.1038/nature16961
+[@tag:Singh2017_attentivechrome]: arxiv:1708.00339
 [@tag:Sonderby]: doi:10.1007/978-3-319-21233-3_6
 [@tag:Soueidan]: doi:10.1515/metgen-2016-0001
 [@tag:Spark]: doi:10.1145/2934664
@@ -2334,10 +2330,10 @@ and the Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences (M
 [@tag:Sundararajan2017_axiomatic]: arxiv:1703.01365
 [@tag:Sutskever]: arxiv:1409.3215
 [@tag:Swamidass2009_irv]: doi:10.1021/ci8004379
+[@tag:TAC-ELM]: doi:10.1142/S0219720012500151
 [@tag:Tan2014_psb]: doi:10.1142/9789814644730_0014
 [@tag:Tan2015_adage]: doi:10.1128/mSystems.00025-15
 [@tag:Tan2016_eadage]: doi:10.1101/078659
-[@tag:TAC-ELM]: doi:10.1142/S0219720012500151
 [@tag:TensorFlow]: arxiv:1603.04467
 [@tag:Teschendorff2017]: doi:10.2217/epi-2016-0153
 [@tag:Tian2019]: doi:10.1186/s12864-019-5488-5
@@ -2358,17 +2354,15 @@ and the Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences (M
 [@tag:WayGreene2017_tybalt]: doi:10.1101/174474
 [@tag:Wilhelm-Benartzi2013]: doi:10.1038/bjc.2013.496
 [@tag:Word2Vec]: arxiv:1301.3781
-[@tag:wgsquikr]: doi:10.1371/journal.pone.0091784
 [@tag:Wu2017_molecule_net]: doi:10.1039/C7SC02664A
 [@tag:Xiang]: doi:10.1016/S0167-9473(99)00098-5
 [@tag:Xiong2011_bayesian]: doi:10.1093/bioinformatics/btr444
 [@tag:Xiong2015_splicing_code]: doi:10.1126/science.1254806
 [@tag:Xu2015_show]: arxiv:1502.03044
 [@tag:Yasushi2016_cgbvs_dnn]: doi:10.1002/minf.201600045
-[@tag:yok]: doi:10.1186/1471-2105-12-20
 [@tag:Yoon2016_cancer_reports]: doi:10.1007/978-3-319-47898-2_21
-[@tag:Yosinski2014]: url:https://papers.nips.cc/paper/5347-how-transferable-are-features-in-deep-neural-networks
 [@tag:Yosinksi2015_understanding]: arxiv:1506.06579
+[@tag:Yosinski2014]: url:https://papers.nips.cc/paper/5347-how-transferable-are-features-in-deep-neural-networks
 [@tag:Yu2016_melanoma_resnet]: doi:10.1109/TMI.2016.2642839
 [@tag:Zeiler2013_visualizing]: arxiv:1311.2901
 [@tag:Zeng2015]: doi:10.1186/s12859-015-0553-9
@@ -2380,21 +2374,31 @@ and the Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences (M
 [@tag:Zhu2016_advers_mamm]: doi:10.1101/095786
 [@tag:Zhu2016_mult_inst_mamm]: doi:10.1101/095794
 [@tag:Zintgraf2017_visualizing]: arxiv:1702.04595
-[@tag:goodfellow2016deep]: url:http://www.deeplearningbook.org/
-[@tag:li2016joint]: url:https://dl.acm.org/citation.cfm?id=3061018
-[@tag:world2004international]: url:http://www.who.int/classifications/icd/en/
-[@tag:ghahramani_protect]: arxiv:1707.02476
-[@tag:uncertainty_types]: arxiv:1703.04977
-[@tag:uncertainty_multi_task]: arxiv:1705.07115
-[@tag:guo_calibration]: arxiv:1706.04599
-[@tag:platt_scaling]: url:http://citeseer.ist.psu.edu/viewdoc/summary?doi=10.1.1.41.1639
-[@tag:out_dist_baseline]: arxiv:1610.02136
-[@tag:temp_out_dist]: arxiv:1706.02690
 [@tag:ai_safety]: arxiv:1606.06565
-[@tag:strong_adversary]: arxiv:1705.07263
-[@tag:retinopathy_uncertainty]: doi:10.1038/s41598-017-17876-z
 [@tag:bayesian_hypernets]: arxiv:1710.04759
-[@tag:mcclure_bayesian]: arxiv:1611.01639
-[@tag:uncertainty_ensembles]: arxiv:1612.01474
+[@tag:blast]: doi:10.1016/S0022-2836(05)80360-2
+[@tag:carlisle]: url:https://www.bgcarlisle.com/blog/2014/08/25/proof-of-prespecified-endpoints-in-medical-research-with-the-bitcoin-blockchain/
 [@tag:domain_adapt_uncertainty]: arxiv:1505.07818
 [@tag:gal_thesis]: url:http://www.cs.ox.ac.uk/people/yarin.gal/website/thesis/thesis.pdf
+[@tag:ghahramani_protect]: arxiv:1707.02476
+[@tag:goodfellow2016deep]: url:http://www.deeplearningbook.org
+[@tag:guo_calibration]: arxiv:1706.04599
+[@tag:krizhevsky-2009]: url:https://www.cs.toronto.edu/~kriz/learning-features-2009-TR.pdf
+[@tag:li2016joint]: url:https://dl.acm.org/citation.cfm?id=3061018
+[@tag:lmat]: doi:10.1093/bioinformatics/btt389
+[@tag:matis]: doi:10.1016/S0097-8485(96)80015-5
+[@tag:mcclure_bayesian]: arxiv:1611.01639
+[@tag:nbc]: doi:10.1093/bioinformatics/btq619
+[@tag:onecodex]: url:https://www.onecodex.com/
+[@tag:out_dist_baseline]: arxiv:1610.02136
+[@tag:platt_scaling]: url:http://citeseer.ist.psu.edu/viewdoc/summary?doi=10.1.1.41.1639
+[@tag:retinopathy_uncertainty]: doi:10.1038/s41598-017-17876-z
+[@tag:strong_adversary]: arxiv:1705.07263
+[@tag:temp_out_dist]: arxiv:1706.02690
+[@tag:timestamps]: url:https://blog.dhimmel.com/irreproducible-timestamps/
+[@tag:uncertainty_ensembles]: arxiv:1612.01474
+[@tag:uncertainty_multi_task]: arxiv:1705.07115
+[@tag:uncertainty_types]: arxiv:1703.04977
+[@tag:wgsquikr]: doi:10.1371/journal.pone.0091784
+[@tag:world2004international]: url:http://www.who.int/classifications/icd/en/
+[@tag:yok]: doi:10.1186/1471-2105-12-20
