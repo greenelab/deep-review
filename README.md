@@ -3,7 +3,6 @@
 [![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://greenelab.github.io/deep-review/)
 [![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://greenelab.github.io/deep-review/manuscript.pdf)
 [![GitHub Actions Status](https://github.com/greenelab/deep-review/workflows/Manubot/badge.svg)](https://github.com/greenelab/deep-review/actions)
-[![Travis Build Status](https://travis-ci.org/greenelab/deep-review.svg?branch=master)](https://travis-ci.org/greenelab/deep-review)
 [![Code Climate](https://codeclimate.com/github/greenelab/deep-review/badges/gpa.svg)](https://codeclimate.com/github/greenelab/deep-review)
 
 ## Manuscript description
