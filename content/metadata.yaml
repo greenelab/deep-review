@@ -19,7 +19,7 @@ author_info:
       - Molecular Biosciences and Bioengineering Graduate Program, University of Hawaii at Manoa, Honolulu, HI
     symbol_str: "☯"
     v1: "Drafted multiple sub-sections along with extensive editing, pull request reviews, or discussion"
-    v2: false
+    v2: ""
     coi:
       string: "None"
       lastapproved: !!str 2017-05-26
@@ -31,7 +31,7 @@ author_info:
       - Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA
     funders: GBMF GBMF4552
     v1: "Drafted multiple sub-sections along with extensive editing, pull request reviews, or discussion"
-    v2: false
+    v2: ""
     coi:
       string: "None"
       lastapproved: !!str 2017-05-26
@@ -43,7 +43,7 @@ author_info:
       - Genomics and Computational Biology Graduate Group, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA
     funders: NIH R01AI116794
     v1: "Drafted multiple sub-sections along with extensive editing, pull request reviews, or discussion"
-    v2: false
+    v2: ""
     coi:
       string: "None"
       lastapproved: !!str 2017-05-26
@@ -54,7 +54,7 @@ author_info:
     affiliations:
       - Department of Computational Medicine and Bioinformatics, University of Michigan Medical School, Ann Arbor, MI
     v1: "Drafted multiple sub-sections along with extensive editing, pull request reviews, or discussion"
-    v2: false
+    v2: ""
     coi:
       string: "None"
       lastapproved: !!str 2017-05-26
@@ -66,7 +66,7 @@ author_info:
       - Harvard Medical School, Boston, MA
     funders: NIH T32GM007753
     v1: "Drafted multiple sub-sections along with extensive editing, pull request reviews, or discussion"
-    v2: false
+    v2: ""
     coi:
       string: "None"
       lastapproved: !!str 2017-05-26
@@ -78,7 +78,7 @@ author_info:
       - Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA
     funders: NIH T32HG000046
     v1: "Drafted multiple sub-sections along with extensive editing, pull request reviews, or discussion"
-    v2: false
+    v2: ""
     coi:
       string: "None"
       lastapproved: !!str 2017-05-26
@@ -89,7 +89,7 @@ author_info:
     affiliations:
       - Computational Biology and Stats, Target Sciences, GlaxoSmithKline, Stevenage, United Kingdom
     v1: "Drafted multiple sub-sections along with extensive editing, pull request reviews, or discussion"
-    v2: false
+    v2: ""
     coi:
       string: "Full-time employee of GlaxoSmithKline."
       lastapproved: !!str 2017-05-26
@@ -100,7 +100,7 @@ author_info:
     affiliations:
       - Data Science Institute, Imperial College London, London, United Kingdom
     v1: "Drafted multiple sub-sections along with extensive editing, pull request reviews, or discussion"
-    v2: false
+    v2: ""
     coi:
       string: "None"
       lastapproved: !!str 2017-05-26
@@ -113,7 +113,7 @@ author_info:
       - Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA
     funders: Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences
     v1: "Drafted multiple sub-sections along with extensive editing, pull request reviews, or discussion"
-    v2: false
+    v2: ""
     coi:
       string: "None"
       lastapproved: !!str 2017-05-26
@@ -128,7 +128,7 @@ author_info:
       - Department of Computer Science, University of Toronto, Toronto, ON, Canada
     funders: NSERC RGPIN-2015-3948
     v1: "Drafted multiple sub-sections along with extensive editing, pull request reviews, or discussion"
-    v2: false
+    v2: ""
     coi:
       string: "None"
       lastapproved: !!str 2017-05-26
@@ -139,7 +139,7 @@ author_info:
     affiliations:
       - Electrical Engineering and Computer Science, Vanderbilt University, Nashville, TN
     v1: "Drafted one or more sub-sections"
-    v2: false
+    v2: ""
     coi:
       string: "None"
       lastapproved: !!str 2017-05-26
@@ -151,7 +151,7 @@ author_info:
       - Ecological and Evolutionary Signal-processing and Informatics Laboratory, Department of Electrical and Computer Engineering, Drexel University, Philadelphia, PA
     funders: NSF 1245632
     v1: "Drafted one or more sub-sections"
-    v2: false
+    v2: ""
     coi:
       string: "None"
       lastapproved: !!str 2017-05-26
@@ -162,7 +162,7 @@ author_info:
     affiliations:
       - Computational Biology Department, School of Computer Science, Carnegie Mellon University, Pittsburgh, PA
     v1: "Drafted one or more sub-sections"
-    v2: false
+    v2: ""
     coi:
       string: "None"
       lastapproved: !!str 2017-05-26
@@ -173,6 +173,7 @@ author_info:
     affiliations:
       - Biophysics Program, Stanford University, Stanford, CA
     v1: "Drafted one or more sub-sections"
+    v2: ""
     coi:
       string: "None"
       lastapproved: !!str 2017-05-26
@@ -183,7 +184,7 @@ author_info:
     affiliations:
       - Department of Computer Science, University of Virginia, Charlottesville, VA
     v1: "Drafted one or more sub-sections"
-    v2: false
+    v2: ""
     coi:
       string: "None"
       lastapproved: !!str 2017-05-26
@@ -194,7 +195,7 @@ author_info:
     affiliations:
       - Ecological and Evolutionary Signal-processing and Informatics Laboratory, Department of Electrical and Computer Engineering, Drexel University, Philadelphia, PA
     v1: "Drafted one or more sub-sections"
-    v2: false
+    v2: ""
     coi:
       string: "None"
       lastapproved: !!str 2017-05-26
@@ -206,7 +207,7 @@ author_info:
       - Imaging Platform, Broad Institute of Harvard and MIT, Cambridge, MA
     funders: NIH R01GM089652
     v1: "Drafted one or more sub-sections"
-    v2: false
+    v2: ""
     coi:
       string: "None"
       lastapproved: !!str 2017-05-26
@@ -217,7 +218,7 @@ author_info:
     affiliations:
       - Department of Computer Science, Stanford University, Stanford, CA
     v1: "Drafted one or more sub-sections"
-    v2: false
+    v2: ""
     coi:
       string: "None"
       lastapproved: !!str 2017-05-26
@@ -229,7 +230,7 @@ author_info:
       - Toyota Technological Institute at Chicago, Chicago, IL
     funders: NIH R01GM089753, NSF 1564955
     v1: "Drafted one or more sub-sections"
-    v2: false
+    v2: ""
     coi:
       string: "None"
       lastapproved: !!str 2017-05-26
@@ -242,7 +243,7 @@ author_info:
       - Lewis-Sigler Institute for Integrative Genomics, Princeton University, Princeton, NJ
     funders: NSF 1531594
     v1: "Drafted one or more sub-sections"
-    v2: false
+    v2: ""
     coi:
       string: "None"
       lastapproved: !!str 2017-05-26
@@ -254,7 +255,7 @@ author_info:
     affiliations:
       - Integrative Bioinformatics, National Institute of Environmental Health Sciences, National Institutes of Health, Research Triangle Park, NC
     v1: "Drafted one or more sub-sections"
-    v2: false
+    v2: ""
     coi:
       string: "None"
       lastapproved: !!str 2017-05-26
@@ -267,7 +268,7 @@ author_info:
       - Howard Hughes Medical Institute, Janelia Research Campus, Ashburn, VA
     funders: Howard Hughes Medical Institute
     v1: "Drafted one or more sub-sections"
-    v2: false
+    v2: ""
     coi:
       string: "None"
       lastapproved: !!str 2017-05-26
@@ -279,7 +280,7 @@ author_info:
     affiliations:
       - Department of Computer Science, Stanford University, Stanford, CA
     v1: "Drafted one or more sub-sections"
-    v2: false
+    v2: ""
     coi:
       string: "None"
       lastapproved: !!str 2017-05-26
@@ -292,7 +293,7 @@ author_info:
       - National Center for Biotechnology Information and National Library of Medicine, National Institutes of Health, Bethesda, MD
     funders: National Institutes of Health Intramural Research Program and National Library of Medicine
     v1: "Drafted one or more sub-sections"
-    v2: false
+    v2: ""
     coi:
       string: "None"
       lastapproved: !!str 2017-05-26
@@ -304,7 +305,7 @@ author_info:
       - Department of Wildlife Ecology and Conservation, University of Florida, Gainesville, FL
     funders: GBMF GBMF4563
     v1: "Revised specific sub-sections or supervised drafting one or more sub-sections"
-    v2: false
+    v2: ""
     coi:
       string: "None"
       lastapproved: !!str 2017-05-26
@@ -315,7 +316,7 @@ author_info:
     affiliations:
       - ClosedLoop.ai, Austin, TX
     v1: "Revised specific sub-sections or supervised drafting one or more sub-sections"
-    v2: false
+    v2: ""
     coi:
       string: "None"
       lastapproved: !!str 2017-05-26
@@ -326,7 +327,7 @@ author_info:
     affiliations:
       - Department of Computer Science, University of Virginia, Charlottesville, VA
     v1: "Revised specific sub-sections or supervised drafting one or more sub-sections"
-    v2: false
+    v2: ""
     coi:
       string: "None"
       lastapproved: !!str 2017-05-26
@@ -339,7 +340,7 @@ author_info:
       - Department of Computer Science, Stanford University, Stanford, CA
     funders: NIH DP2GM123485
     v1: "Revised specific sub-sections or supervised drafting one or more sub-sections"
-    v2: false
+    v2: ""
     coi:
       string: "Advisory Board of Deep Genomics Inc."
       lastapproved: !!str 2017-05-26
@@ -351,7 +352,7 @@ author_info:
       - National Center for Biotechnology Information and National Library of Medicine, National Institutes of Health, Bethesda, MD
     funders: National Institutes of Health Intramural Research Program and National Library of Medicine
     v1: "Revised specific sub-sections or supervised drafting one or more sub-sections"
-    v2: false
+    v2: ""
     coi:
       string: "None"
       lastapproved: !!str 2017-05-26
@@ -362,7 +363,7 @@ author_info:
     affiliations:
       - Division of Biomedical Informatics and Personalized Medicine, University of Colorado School of Medicine, Aurora, CO
     v1: "Revised specific sub-sections or supervised drafting one or more sub-sections"
-    v2: false
+    v2: ""
     coi:
       string: "None"
       lastapproved: !!str 2017-05-26
@@ -373,7 +374,7 @@ author_info:
     affiliations:
       - Institute of Organic Chemistry, Westfälische Wilhelms-Universität Münster, Münster, Germany
     v1: "Revised specific sub-sections or supervised drafting one or more sub-sections"
-    v2: false
+    v2: ""
     coi:
       string: "None"
       lastapproved: !!str 2017-05-26
@@ -386,7 +387,7 @@ author_info:
       - Innovation Center for Biomedical Informatics, Georgetown University Medical Center, Washington, DC
     funders: NIH R21CA220398, NIH P30CA051008
     v1: "Revised specific sub-sections or supervised drafting one or more sub-sections"
-    v2: false
+    v2: ""
     coi:
       string: "None"
       lastapproved: !!str 2017-05-26
@@ -399,7 +400,7 @@ author_info:
       - Department of Pathology and Immunology, Washington University in Saint Louis, Saint Louis, MO
     funders: NIH R01LM012222, NIH R01LM012482
     v1: "Revised specific sub-sections or supervised drafting one or more sub-sections"
-    v2: false
+    v2: ""
     coi:
       string: "None"
       lastapproved: !!str 2017-05-26
@@ -411,7 +412,7 @@ author_info:
     affiliations:
       - Department of Medicine, Brown University, Providence, RI
     v1: "Revised specific sub-sections or supervised drafting one or more sub-sections"
-    v2: false
+    v2: ""
     coi:
       string: "None"
       lastapproved: !!str 2017-05-26
@@ -425,7 +426,7 @@ author_info:
     funders: NIH U54AI117924
     symbol_str: "†"
     v1: "Drafted sub-sections, edited the manuscript, reviewed pull requests, and coordinated co-authors"
-    v2: false
+    v2: ""
     coi:
       string: "None"
       lastapproved: !!str 2017-05-26
