@@ -6,7 +6,7 @@
 set -o errexit \
     -o pipefail
 
-wget https://repo.continuum.io/miniconda/Miniconda3-4.7.10-Linux-x86_64.sh \
+wget https://repo.continuum.io/miniconda/Miniconda3-4.7.12.1-Linux-x86_64.sh \
     --output-document miniconda.sh
 bash miniconda.sh -b -p $HOME/miniconda
 source $HOME/miniconda/etc/profile.d/conda.sh

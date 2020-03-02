@@ -12,6 +12,9 @@ Markdown files are identified by their `.md` extension and ordered according to 
 For basic formatting, check out the [CommonMark Help](https://commonmark.org/help/) page for an introduction to the formatting options provided by standard markdown.
 In addition, Manubot supports an extended version of markdown, tailored for scholarly writing, which includes [Pandoc's Markdown](https://pandoc.org/MANUAL.html#pandocs-markdown) and the extensions discussed below.
 
+The `content/02.delete-me.md` file in the Rootstock repository shows many of the elements and formatting options supported by Manubot.
+See the [raw markdown](https://gitlab.com/manubot/rootstock/blob/master/content/02.delete-me.md#L) in this file and compare it to the [rendered manuscript](https://manubot.github.io/rootstock/).
+
 Within a paragraph in markdown, single newlines are interpreted as whitespace (same as a space).
 A paragraph's source does not need to contain newlines.
 However, "one paragraph per line" makes the git diff less precise, leading to less granular review commenting, and makes conflicts more likely.
@@ -73,9 +76,15 @@ We recommend always specifying the width of SVG images (even if just `width="100
 
 ### Citations
 
-Manubot supports Pandoc [citations](https://pandoc.org/MANUAL.html#citations) via `pandoc-citeproc`.
-However, Manubot performs automated citation processing and metadata retrieval on in-text citations.
-Therefore, citations must be of the following form: `@source:identifier`, where `source` is one of the options described below.
+Manubot supports Pandoc [citations](https://pandoc.org/MANUAL.html#citations).
+Citations are processed in 3 stages:
+
+1. Pandoc parses the input Markdown to locate citation keys.
+2. The [`pandoc-manubot-cite`](https://github.com/manubot/manubot#pandoc-filter) filter automatically retreives the bibliographic metadata for citation keys.
+3. The [`pandoc-citeproc`](https://github.com/jgm/pandoc-citeproc/blob/master/man/pandoc-citeproc.1.md) filter renders in-text citations and generates styled references.
+
+When using Manubot, citation keys should be formatted like `@source:identifier`,
+where `source` is one of the options described below.
 When choosing which source to use for a citation, we recommend the following order:
 
 1. DOI (Digital Object Identifier), cite like `@doi:10.15363/thinklab.4`.
@@ -106,17 +115,60 @@ Note that multiple citations must be semicolon separated.
 Be careful not to cite the same study using identifiers from multiple sources.
 For example, the following citations all refer to the same study, but will be treated as separate references: `[@doi:10.7717/peerj.705; @pmcid:PMC4304851; @pmid:25648772]`.
 
+Citation keys must adhere to the syntax described in the [Pandoc manual](https://pandoc.org/MANUAL.html#citations):
+
+> The citation key must begin with a letter, digit, or `_`, and may contain alphanumerics, `_`, and internal punctuation characters (`:.#$%&-+?<>~/`).
+
+To evaluate whether a citation key fully matches this syntax, try [this online regex](https://regex101.com/r/mXZyY2/latest).
+If the citation key is not valid, use the [citation tag](#citation-tag) workaround below.
+This is required for citation keys that contain forbidden characters such as `;` or `=` or end with a non-alphanumeric character such as `/`.
+<!-- See [jgm/pandoc#6026](https://github.com/jgm/pandoc/issues/6026) for progress on a more flexible Markdown citation key syntax. -->
+
+Prior to Rootstock commit [`6636b91`](https://github.com/manubot/rootstock/commit/6636b912c6b41593acd2041d34cd4158c1b317fb) on 2020-01-14, Manubot processed citations separately from Pandoc.
+Switching to a Pandoc filter improved reliability on complex documents, but restricted the syntax of citation keys slightly.
+Therefore, users upgrading Rootstock may find some citations become invalid.
+By default, `pandoc-manubot-cite` does not fail upon invalid citations, although this can be changed by adding the following to `metadata.yaml`:
+
+```yaml
+pandoc:
+  manubot-fail-on-errors: True
+```
+
 #### Citation tags
 
-The system also supports citation tags, which are recommended for the following applications:
+The system also supports citation tags, which map from one citation key (an alias) to another.
+Tags are recommended for the following applications:
 
-1. A citation's identifier contains forbidden characters, such as `;` or `=`, or ends with a non-alphanumeric character other than `/`.
-   In these instances, you must use a tag.
+1. A citation's identifier contains forbidden characters, you must use a tag.
 2. A single reference is cited many times.
    Therefore, it might make sense to define a tag, so if the citation updates (e.g. a newer version becomes available), only a single change is required.
 
-Tags should be defined in [`content/citation-tags.tsv`](content/citation-tags.tsv).
-If `citation-tags.tsv` defines the tag `study-x`, then this study can be cited like `@tag:study-x`, for example, `[@tag:Zhou2015_deep_sea]`.
+Tags can be defined using Markdown's [link reference syntax](https://spec.commonmark.org/0.29/#link-reference-definitions) as follows:
+
+```markdown
+Citing a URL containing a `?` character [@tag:my-url].
+Citing a DOI containing parentheses [@doi:my-doi].
+
+[@tag:my-url]: url:https://openreview.net/forum?id=HkwoSDPgg
+[@tag:my-doi]: doi:10.1016/S0022-2836(05)80360-2
+```
+
+This syntax is also used by [`pandoc-url2cite`](https://github.com/phiresky/pandoc-url2cite).
+Make sure to place these link reference definitions in their own paragraphs.
+These paragraphs can be in any of the content Markdown files.
+
+Another method for defining tags is to define `pandoc.citekey-aliases` in `metadata.yaml`:
+
+```yaml
+pandoc:
+  citekey-aliases:
+    tag:my-url: url:https://openreview.net/forum?id=HkwoSDPgg
+    tag:my-doi: doi:10.1016/S0022-2836(05)80360-2
+```
+
+For backwards compatibility, tags can also be defined in `content/citation-tags.tsv`.
+If `citation-tags.tsv` defines the tag `study-x`, then this study can be cited like `@tag:study-x`.
+This method is deprecated.
 
 ## Reference metadata
 
@@ -179,7 +231,7 @@ The following YAML shows the supported key–value pairs for an author:
 ```yaml
 github: dhimmel  # strongly suggested
 name: Daniel S. Himmelstein  # mandatory
-initials: DSH  # strongly suggested
+initials: DSH  # optional
 orcid: 0000-0002-3012-7446  # mandatory
 twitter: dhimmel  # optional
 email: daniel.himmelstein@gmail.com  # suggested
