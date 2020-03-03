@@ -24,6 +24,13 @@ jobs:
         with:
           # fetch entire commit history to support get_rootstock_commit
           fetch-depth: 0
+      - name: Cache
+        uses: actions/cache@v1
+        with:
+          path: ci/cache
+          key: ci-cache-${{ github.ref }}
+          restore-keys: |
+            ci-cache-refs/heads/master
       - name: Install Environment
         uses: goanpeca/setup-miniconda@v1
         with:
