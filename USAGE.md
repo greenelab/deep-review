@@ -1,13 +1,19 @@
 # Manubot usage guidelines
 
 This repository uses [Manubot](https://manubot.org) to automatically produce a manuscript from the source in the [`content`](content) directory.
+Check out the [Manubot catalog](https://manubot.org/catalog/) for examples of what is possible when writing with Manubot.
+Try editing the [demo manuscript](https://github.com/manubot/try-manubot) to quickly test Manubot formatting and citations.
 
 ## Manubot markdown
 
-Manuscript text should be written in markdown files, which should be located in [`content`](content) with a digit prefix for ordering (e.g. `01.`, `02.`, etc.) and a `.md` extension.
+Manuscript text should be written in markdown files located in the [`content`](content) directory.
+Markdown files are identified by their `.md` extension and ordered according to their two-digit prefix (e.g. `01.`, `02.`, … `99.`).
 
 For basic formatting, check out the [CommonMark Help](https://commonmark.org/help/) page for an introduction to the formatting options provided by standard markdown.
 In addition, Manubot supports an extended version of markdown, tailored for scholarly writing, which includes [Pandoc's Markdown](https://pandoc.org/MANUAL.html#pandocs-markdown) and the extensions discussed below.
+
+The `content/02.delete-me.md` file in the Rootstock repository shows many of the elements and formatting options supported by Manubot.
+See the [raw markdown](https://gitlab.com/manubot/rootstock/blob/master/content/02.delete-me.md#L) in this file and compare it to the [rendered manuscript](https://manubot.github.io/rootstock/).
 
 Within a paragraph in markdown, single newlines are interpreted as whitespace (same as a space).
 A paragraph's source does not need to contain newlines.
@@ -70,9 +76,15 @@ We recommend always specifying the width of SVG images (even if just `width="100
 
 ### Citations
 
-Manubot supports Pandoc [citations](https://pandoc.org/MANUAL.html#citations) via `pandoc-citeproc`.
-However, Manubot performs automated citation processing and metadata retrieval on in-text citations.
-Therefore, citations must be of the following form: `@source:identifier`, where `source` is one of the options described below.
+Manubot supports Pandoc [citations](https://pandoc.org/MANUAL.html#citations).
+Citations are processed in 3 stages:
+
+1. Pandoc parses the input Markdown to locate citation keys.
+2. The [`pandoc-manubot-cite`](https://github.com/manubot/manubot#pandoc-filter) filter automatically retreives the bibliographic metadata for citation keys.
+3. The [`pandoc-citeproc`](https://github.com/jgm/pandoc-citeproc/blob/master/man/pandoc-citeproc.1.md) filter renders in-text citations and generates styled references.
+
+When using Manubot, citation keys should be formatted like `@source:identifier`,
+where `source` is one of the options described below.
 When choosing which source to use for a citation, we recommend the following order:
 
 1. DOI (Digital Object Identifier), cite like `@doi:10.15363/thinklab.4`.
@@ -85,6 +97,9 @@ When choosing which source to use for a citation, we recommend the following ord
 4. _arXiv_ ID, cite like `@arxiv:1508.06576v2`.
 5. ISBN (International Standard Book Number), cite like `@isbn:9781339919881`.
 6. URL / webpage, cite like `@url:https://nyti.ms/1QUgAt1`.
+   URL citations can be helpful if the above methods return incorrect metadata.
+   For example, `@doi:10.1038/ng.3834` [incorrectly handles](https://github.com/manubot/manubot/issues/158) the consortium name resulting in a blank author, while `@url:https://doi.org/10.1038/ng.3834` succeeds.
+   Similarly, `@url:https://doi.org/10.1101/142760` is a [workaround](https://github.com/manubot/manubot/issues/16) to set the journal name of bioRxiv preprints to _bioRxiv_.
 7. Wikidata Items, cite like `@wikidata:Q50051684`.
    Note that anyone can edit or add records on [Wikidata](https://www.wikidata.org), so users are encouraged to contribute metadata for hard-to-cite works to Wikidata as an alternative to using a `raw` citation.
 8. For references that do not have any of the persistent identifiers above, use a raw citation like `@raw:old-manuscript`.
@@ -100,46 +115,107 @@ Note that multiple citations must be semicolon separated.
 Be careful not to cite the same study using identifiers from multiple sources.
 For example, the following citations all refer to the same study, but will be treated as separate references: `[@doi:10.7717/peerj.705; @pmcid:PMC4304851; @pmid:25648772]`.
 
+Citation keys must adhere to the syntax described in the [Pandoc manual](https://pandoc.org/MANUAL.html#citations):
+
+> The citation key must begin with a letter, digit, or `_`, and may contain alphanumerics, `_`, and internal punctuation characters (`:.#$%&-+?<>~/`).
+
+To evaluate whether a citation key fully matches this syntax, try [this online regex](https://regex101.com/r/mXZyY2/latest).
+If the citation key is not valid, use the [citation tag](#citation-tag) workaround below.
+This is required for citation keys that contain forbidden characters such as `;` or `=` or end with a non-alphanumeric character such as `/`.
+<!-- See [jgm/pandoc#6026](https://github.com/jgm/pandoc/issues/6026) for progress on a more flexible Markdown citation key syntax. -->
+
+Prior to Rootstock commit [`6636b91`](https://github.com/manubot/rootstock/commit/6636b912c6b41593acd2041d34cd4158c1b317fb) on 2020-01-14, Manubot processed citations separately from Pandoc.
+Switching to a Pandoc filter improved reliability on complex documents, but restricted the syntax of citation keys slightly.
+Therefore, users upgrading Rootstock may find some citations become invalid.
+By default, `pandoc-manubot-cite` does not fail upon invalid citations, although this can be changed by adding the following to `metadata.yaml`:
+
+```yaml
+pandoc:
+  manubot-fail-on-errors: True
+```
+
 #### Citation tags
 
-The system also supports citation tags, which are recommended for the following applications:
+The system also supports citation tags, which map from one citation key (an alias) to another.
+Tags are recommended for the following applications:
 
-1. A citation's identifier contains forbidden characters, such as `;` or `=`, or ends with a non-alphanumeric character other than `/`.
-   In these instances, you must use a tag.
+1. A citation's identifier contains forbidden characters, you must use a tag.
 2. A single reference is cited many times.
    Therefore, it might make sense to define a tag, so if the citation updates (e.g. a newer version becomes available), only a single change is required.
 
-Tags should be defined in [`content/citation-tags.tsv`](content/citation-tags.tsv).
-If `citation-tags.tsv` defines the tag `study-x`, then this study can be cited like `@tag:study-x`, for example, `[@tag:Zhou2015_deep_sea]`.
+Tags can be defined using Markdown's [link reference syntax](https://spec.commonmark.org/0.29/#link-reference-definitions) as follows:
+
+```markdown
+Citing a URL containing a `?` character [@tag:my-url].
+Citing a DOI containing parentheses [@doi:my-doi].
+
+[@tag:my-url]: url:https://openreview.net/forum?id=HkwoSDPgg
+[@tag:my-doi]: doi:10.1016/S0022-2836(05)80360-2
+```
+
+This syntax is also used by [`pandoc-url2cite`](https://github.com/phiresky/pandoc-url2cite).
+Make sure to place these link reference definitions in their own paragraphs.
+These paragraphs can be in any of the content Markdown files.
+
+Another method for defining tags is to define `pandoc.citekey-aliases` in `metadata.yaml`:
+
+```yaml
+pandoc:
+  citekey-aliases:
+    tag:my-url: url:https://openreview.net/forum?id=HkwoSDPgg
+    tag:my-doi: doi:10.1016/S0022-2836(05)80360-2
+```
+
+For backwards compatibility, tags can also be defined in `content/citation-tags.tsv`.
+If `citation-tags.tsv` defines the tag `study-x`, then this study can be cited like `@tag:study-x`.
+This method is deprecated.
 
 ## Reference metadata
 
-The Manubot workflow requires the bibliographic details for references (the set of all cited works) as CSL (Citation Style Language) Items (also known as [citeproc JSON](http://citeproc-js.readthedocs.io/en/latest/csl-json/markup.html#csl-json-items)).
-The Manubot attempts to automatically retrieve metadata and generate valid citeproc JSON for references, which is exported to `output/references.json`.
-However, in some cases the Manubot fails to retrieve metadata or generates incorrect or incomplete citeproc metadata.
+Manubot stores the bibliographic details for references (the set of all cited works) as CSL JSON ([Citation Style Language Items](http://citeproc-js.readthedocs.io/en/latest/csl-json/markup.html#csl-json-items)).
+For all citation sources besides `raw`, Manubot automatically generates CSL JSON.
+In some cases, automatic metadata retrieval fails or provides incorrect or incomplete information.
 Errors are most common for `url` references.
-For these references, you can manually specify the correct CSL Data in [`content/manual-references.json`](content/manual-references.json), which will override the automatically generated reference data.
-To do so, create a new CSL JSON Item that contains the field `"standard_citation"` with the appropriate reference identifier as its value.
-The identifier can be obtained from the `standard_citation` column of `citations.tsv`, which is located in the `output` branch or in the `output` subdirectory of local builds.
-As an example, `manual-references.json` contains:
+Therefore, Manubot supports user-provided metadata, which we refer to as "manual references".
+When a manual reference is provided, Manubot uses the supplied metadata and does not attempt to generate it.
+
+Manubot searches the `content` directory for files that match the glob pattern `manual-references*.*` and expects that these files contain manual references.
+[`content/manual-references.json`](content/manual-references.json) is the default file to specify custom CSL JSON metadata.
+Manual references are matched to citations using their "id" field.
+For example, to manually specify the metadata for the citation `@url:https://github.com/manubot/rootstock`, add a CSL JSON Item to `manual-references.json` that contains the following excerpt:
 
 ```json
-"standard_citation": "url:https://github.com/greenelab/manubot-rootstock"
+"id": "url:https://github.com/manubot/rootstock",
 ```
 
-The metadata for `raw` citations must be provided in `manual-references.json` or an error will occur.
-For example, to cite `@raw:private-message` in a manuscript, a corresponding CSL Item in `manual-references.json` is required, such as:
+The metadata for `raw` citations must be provided in a manual reference file (e.g. `manual-references.json`) or an error will occur.
+For example, to cite `@raw:private-message` in a manuscript, a corresponding CSL JSON Item is required, such as:
 
 ```json
 {
+  "id": "raw:private-message",
   "type": "personal_communication",
-  "standard_citation": "raw:private-message",
   "title": "Personal communication with Doctor X"
 }
 ```
 
-All references provided in `manual-references.json` must provide values for the `type` and `standard_citation` fields.
+All manual references must provide values for the "id" and "type" fields.
 For guidance on what CSL JSON should be like for different document types, refer to [these examples](https://github.com/aurimasv/zotero-import-export-formats/blob/a51c342e66bebd97b73a7230047b801c8f7bb690/CSL%20JSON.json).
+
+Manubot offers some support for other bibliographic metadata formats besides CSL JSON, by delegating conversion to the `pandoc-citeproc --bib2json` [utility](https://github.com/jgm/pandoc-citeproc/blob/master/man/pandoc-citeproc.1.md#convert-mode).
+Formats are inferred from filename extensions.
+So, for example, to provide metadata for `@url:https://github.com/manubot/rootstock` in BibTeX format, create the file `content/manual-references.bib` and create an item whose definition starts with the excerpt:
+
+```latex
+@misc{url:https://github.com/manubot/rootstock,
+```
+
+Processed reference metadata in CSL JSON format, either generated by Manubot or specified via manual references, is exported to `references.json`.
+This file is located in the `output` branch on GitHub or in the `output` subdirectory of local builds.
+The "id" field in `references.json` and in the final manuscript uses a shortened ID that is derived from the original ID.
+For debugging information, see `citations.tsv`, which shows citation identifiers as they progress through the processing pipeline.
+In order to freeze all references, rather than have Manubot regenerate them during future builds, copy the `references.json` output file to `content` with a filename matching the `manual-references*.json` pattern.
+One tip is to embed the date `references.json` was generated into the frozen manual reference filename, like `content/manual-references-2019-06-21.json`.
 
 ## Manuscript metadata
 
@@ -155,7 +231,7 @@ The following YAML shows the supported key–value pairs for an author:
 ```yaml
 github: dhimmel  # strongly suggested
 name: Daniel S. Himmelstein  # mandatory
-initials: DSH  # strongly suggested
+initials: DSH  # optional
 orcid: 0000-0002-3012-7446  # mandatory
 twitter: dhimmel  # optional
 email: daniel.himmelstein@gmail.com  # suggested
@@ -167,40 +243,52 @@ funders: GBMF4552  # optional
 
 Note that `affiliations` should be a list to allow for multiple affiliations per author.
 
+### Thumbnail
+
+A thumbnail is an image used to visually represent the manuscript,
+such as when a manuscript is shared on social media or added to the [Manubot catalog](https://manubot.org/catalog/).
+Specify a thumbnail in any of the following ways:
+
+1. placing an image named `thumbnail.png` anywhere in the manuscript repository (for example, in the root directory).
+2. setting `thumbnail` in `metadata.yaml` to a path, relative to the repository root, where the image file is located.
+    Example:
+    ```yaml
+    thumbnail: build/assets/thumbnail-1000x1000.png
+    ```
+3. setting `thumbnail` in `metadata.yaml` to an absolute URL where the image is located.
+    Example:
+    ```yaml
+    thumbnail: https://github.com/greenelab/meta-review/raw/master/thumbnail.png
+    ```
+
+Methods 2 and 3 take precedence over method 1.
+View the [guidelines here](https://github.com/manubot/catalog#thumbnail-guidelines) for suggestions on how to create a good thumbnail.
+Key points are that thumbnails should be 1000 × 1000 pixels, PNG formatted, and striking.
+
+## Custom formatting
+
+Modifying the manuscript formatting requires modifying the CSS in the file [`build/themes/default.html`](build/themes/default.html).
+Common formatting changes, such as [font size](https://github.com/manubot/rootstock/issues/239) and [double spacing](https://github.com/manubot/rootstock/issues/244), can be found by searching the [Rootstock issues](https://github.com/manubot/rootstock/issues).
+Open a [new issue](https://github.com/manubot/rootstock/issues/new) if you have a new formatting question.
+
+Changing the citation style or which interactive HTML plugins are loaded requires editing the build script [`build/build.sh`](build/build.sh).
+The citation style is determined by the Citation Style Language file specified by `CSL_PATH`.
+It can be changed to use other existing styles as [described here](https://github.com/manubot/rootstock/issues/242#issuecomment-507688339).
+
 ## Manubot feedback
 
 If you experience any issues with the Manubot or would like to contribute to its source code, please visit [`manubot/manubot`](https://github.com/manubot/manubot) or [`manubot/rootstock`](https://github.com/manubot/rootstock).
 
-## Examples
-
-For additional examples, check out existing manuscripts that use the Manubot (some of which are still in progress):
-
-+ Satoshi Nakamoto's Bitcoin Whitepaper ([source](https://github.com/dhimmel/bitcoin-whitepaper/), [manuscript](https://dhimmel.github.io/bitcoin-whitepaper/), [commentary](https://steemit.com/manubot/@dhimmel/how-i-used-the-manubot-to-reproduce-the-bitcoin-whitepaper))
-+ The Sci-Hub Coverage Study ([source](https://github.com/greenelab/scihub-manuscript), [manuscript](https://greenelab.github.io/scihub-manuscript/))
-+ The GimmeMotifs manscript on transcription factor motif analysis ([source](https://github.com/simonvh/gimmemotifs-manuscript), [manuscript](https://simonvh.github.io/gimmemotifs-manuscript/manuscript.pdf))
-+ A Report for the Vagelos Scholars Program by Michael Zietz ([source](https://github.com/zietzm/Vagelos2017), [manuscript](https://zietzm.github.io/Vagelos2017/))
-+ The Deep Review ([source](https://github.com/greenelab/deep-review), [manuscript](https://greenelab.github.io/deep-review/))
-+ Ten Quick Tips for Deep Learning ([source](https://github.com/Benjamin-Lee/deep-rules), [manuscript](https://benjamin-lee.github.io/deep-rules/))
-+ The Meta Review ([source](https://github.com/greenelab/meta-review), [manuscript](https://greenelab.github.io/meta-review/))
-+ A review of Network Methods for Multiomic Data Integration ([source](https://github.com/zietzm/integration-review), [manuscript](https://zietzm.github.io/integration-review/))
-+ The Project Rephetio Manuscript ([source](https://github.com/dhimmel/rephetio-manuscript/), [manuscript](https://dhimmel.github.io/rephetio-manuscript/))
-+ A Literature Review for Project Planning by David Slochower ([source](https://github.com/slochower/synthetic-motor-literature), [manuscript](https://slochower.github.io/synthetic-motor-literature/))
-+ The TFSEE Manuscript by Venkat Malladi et al. ([source](https://github.com/vsmalladi/tfsee-manuscript), [manuscript](https://vsmalladi.github.io/tfsee-manuscript/))
-+ Creating a Global Emissions Timeseries dataset by Robert Gieseke et al. ([source](https://github.com/openclimatedata/global-emissions), [manuscript](https://openclimatedata.github.io/global-emissions/))
-+ The yt 3.0 methods paper ([source](https://github.com/yt-project/yt-3.0-paper), [manuscript](https://yt-project.github.io/yt-3.0-paper/))
-+ The TPOT-DS Manuscript (includes Hypothesis annotations, [source](https://github.com/trang1618/tpot-ds-ms), [manuscript](https://trang1618.github.io/tpot-ds-ms/))
-+ The Manubot 2018 Development Proposal ([source](https://github.com/greenelab/manufund-2018), [manuscript](https://greenelab.github.io/manufund-2018/))
-
-If you are using the Manubot, feel free to submit a pull request to add your manuscript to the list above.
-
 ## Citing Manubot
 
-To cite the Manubot project or for more information on its design and history, see `@url:https://greenelab.github.io/meta-review/`:
+To cite the Manubot project or for more information on its design and history, see `@doi:10.1371/journal.pcbi.1007128`:
 
 > **Open collaborative writing with Manubot**<br>
-Daniel S. Himmelstein, David R. Slochower, Venkat S. Malladi, Casey S.
-Greene, Anthony Gitter<br>
-_Manubot Preprint_ (2018) <https://greenelab.github.io/meta-review/>
+Daniel S. Himmelstein, Vincent Rubinetti, David R. Slochower, Dongbo Hu, Venkat S. Malladi, Casey S. Greene, Anthony Gitter<br>
+*PLOS Computational Biology* (2019-06-24) <https://doi.org/c7np><br>
+DOI: [10.1371/journal.pcbi.1007128](https://doi.org/10.1371/journal.pcbi.1007128) · PMID: [31233491](https://www.ncbi.nlm.nih.gov/pubmed/31233491)
+
+The Manubot version of this manuscript is available at <https://greenelab.github.io/meta-review/>.
 
 ## Acknowledgments
 

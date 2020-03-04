@@ -1,5 +1,5 @@
-# SSH private key
-deploy.key
+# SSH public and private keys
+deploy.key*
 
-# Output from travis encrypt-file
+# Output from travis encrypt-file (legacy)
 travis-encrypt-file.log

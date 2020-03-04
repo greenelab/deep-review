@@ -22,7 +22,7 @@ __pycache__/
 *.bak
 .DS_Store
 
-# Operating system specific files
+# System specific files
 
 ## Linux
 *~
@@ -36,3 +36,6 @@ __pycache__/
 ## Windows
 Thumbs.db
 [Dd]esktop.ini
+
+## Text Editors
+.vscode

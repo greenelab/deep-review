@@ -2,7 +2,7 @@
 
 [![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://greenelab.github.io/deep-review/)
 [![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://greenelab.github.io/deep-review/manuscript.pdf)
-[![Build Status](https://travis-ci.org/greenelab/deep-review.svg?branch=master)](https://travis-ci.org/greenelab/deep-review)
+[![GitHub Actions Status](https://github.com/greenelab/deep-review/workflows/Manubot/badge.svg)](https://github.com/greenelab/deep-review/actions)
 [![Code Climate](https://codeclimate.com/github/greenelab/deep-review/badges/gpa.svg)](https://codeclimate.com/github/greenelab/deep-review)
 
 ## Manuscript description
@@ -19,8 +19,8 @@ The original version of the Deep Review was published in 2018 and should be cite
 
 ### Current stage: planning Deep Review 2019
 
-As of writing, we are aiming to publish an update of the deep review each year, with the next such release occurring in June 2019.
-We will continue to make project preprints available on bioRxiv, and aim to continue publishing the finished reviews in a peer-reviewed venue as well.
+As of writing, we are aiming to publish an update of the deep review each year, with the next such release occurring at the end of 2019.
+We will continue to make project preprints available on bioRxiv or another preprint service and aim to continue publishing the finished reviews in a peer-reviewed venue as well.
 Like the initial release, we are planning for an open and collaborative effort.
 Please see [issue #810](https://github.com/greenelab/deep-review/issues/810) to contribute to the discussion of future plans, and help decide how to best continue this project.
 
@@ -74,6 +74,7 @@ On August 5, Deep Review was announced with a [tweet](https://twitter.com/Greene
 
 Manubot is a system for writing scholarly manuscripts via GitHub.
 Manubot automates citations and references, versions manuscripts using git, and enables collaborative writing via GitHub.
+An [overview manuscript](https://greenelab.github.io/meta-review/ "Open collaborative writing with Manubot") presents the benefits of collaborative writing with Manubot and its unique features.
 The [rootstock repository](https://git.io/fhQH1) is a general purpose template for creating new Manubot instances.
 See [`USAGE.md`](USAGE.md) for documentation how to write a manuscript.
 
@@ -85,58 +86,59 @@ The directories are as follows:
 
 + [`content`](content) contains the manuscript source, which includes markdown files as well as inputs for citations and references.
   See [`USAGE.md`](USAGE.md) for more information.
-+ [`output`](output) contains the outputs (generated files) from the manubot including the resulting manuscripts.
++ [`output`](output) contains the outputs (generated files) from Manubot including the resulting manuscripts.
   You should not edit these files manually, because they will get overwritten.
 + [`webpage`](webpage) is a directory meant to be rendered as a static webpage for viewing the HTML manuscript.
 + [`build`](build) contains commands and tools for building the manuscript.
 + [`ci`](ci) contains files necessary for deployment via continuous integration.
-  For the CI configuration, see [`.travis.yml`](.travis.yml).
 
 ### Local execution
 
-To run the Manubot locally, install the [conda](https://conda.io) environment as described in [`build`](build).
-Then, you can build the manuscript on POSIX systems by running the following commands.
+The easiest way to run Manubot is to use [continuous integration](#continuous-integration) to rebuild the manuscript when the content changes.
+If you want to build a Manubot manuscript locally, install the [conda](https://conda.io) environment as described in [`build`](build).
+Then, you can build the manuscript on POSIX systems by running the following commands from this root directory.
 
 ```sh
 # Activate the manubot conda environment (assumes conda version >= 4.4)
 conda activate manubot
 
 # Build the manuscript, saving outputs to the output directory
-sh build/build.sh
+bash build/build.sh
 
 # At this point, the HTML & PDF outputs will have been created. The remaining
 # commands are for serving the webpage to view the HTML manuscript locally.
+# This is required to view local images in the HTML output.
 
 # Configure the webpage directory
-python build/webpage.py
+manubot webpage
 
-# View the manuscript locally at http://localhost:8000/
+# You can now open the manuscript webpage/index.html in a web browser.
+# Alternatively, open a local webserver at http://localhost:8000/ with the
+# following commands.
 cd webpage
 python -m http.server
 ```
 
 Sometimes it's helpful to monitor the content directory and automatically rebuild the manuscript when a change is detected.
-The following command, while running, will trigger both the `build.sh` and `webpage.py` scripts upon content changes:
+The following command, while running, will trigger both the `build.sh` script and `manubot webpage` command upon content changes:
 
 ```sh
-sh build/autobuild.sh
+bash build/autobuild.sh
 ```
 
 ### Continuous Integration
 
-[![Build Status](https://travis-ci.org/greenelab/deep-review.svg?branch=master)](https://travis-ci.org/greenelab/deep-review)
-
-Whenever a pull request is opened, Travis CI will test whether the changes break the build process to generate a formatted manuscript.
+Whenever a pull request is opened, CI (continuous integration) will test whether the changes break the build process to generate a formatted manuscript.
 The build process aims to detect common errors, such as invalid citations.
-If your pull request build fails, see the Travis CI logs for the cause of failure and revise your pull request accordingly.
+If your pull request build fails, see the CI logs for the cause of failure and revise your pull request accordingly.
 
-When a commit to the `master` branch occurs (for example, when a pull request is merged), Travis CI builds the manuscript and writes the results to the [`gh-pages`](https://github.com/greenelab/deep-review/tree/gh-pages) and [`output`](https://github.com/greenelab/deep-review/tree/output) branches.
+When a commit to the `master` branch occurs (for example, when a pull request is merged), CI builds the manuscript and writes the results to the [`gh-pages`](https://github.com/greenelab/deep-review/tree/gh-pages) and [`output`](https://github.com/greenelab/deep-review/tree/output) branches.
 The `gh-pages` branch uses [GitHub Pages](https://pages.github.com/) to host the following URLs:
 
 + **HTML manuscript** at https://greenelab.github.io/deep-review/
 + **PDF manuscript** at https://greenelab.github.io/deep-review/manuscript.pdf
 
-For continuous integration configuration details, see [`.travis.yml`](.travis.yml).
+For continuous integration configuration details, see [`.github/workflows/manubot.yaml`](.github/workflows/manubot.yaml) if using GitHub Actions or [`.travis.yml`](.travis.yml) if using Travis CI.
 
 ## License
 
