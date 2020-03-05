@@ -33,7 +33,7 @@ authors:
     v2: "Revised specific sub-sections or supervised drafting one or more sub-sections"
     coi:
       string: "None"
-      lastapproved: !!str 2017-05-26
+      lastapproved: !!str 2020-03-05
   - github: dhimmel
     name: Daniel S. Himmelstein
     orcid: 0000-0002-3012-7446
