@@ -1,5 +1,4 @@
 import argparse
-import os
 import pathlib
 import random
 import subprocess
@@ -7,6 +6,7 @@ import sys
 
 import yaml
 from manubot.util import read_serialized_data
+from manubot.process.ci import get_continuous_integration_parameters
 
 
 def parse_args():
@@ -29,7 +29,8 @@ def parse_args():
     args = parser.parse_args()
     vars(args)["execute"] = True
     if args.only_on_ci:
-        vars(args)["execute"] = os.environ.get("CI", "false").lower() == "true"
+        ci_params = get_continuous_integration_parameters()
+        vars(args)["execute"] = bool(ci_params)
     return args
 
 
