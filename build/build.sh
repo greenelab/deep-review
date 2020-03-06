@@ -11,6 +11,9 @@ export TZ=Etc/UTC
 # Default Python to read/write text files using UTF-8 encoding
 export LC_ALL=en_US.UTF-8
 
+# Randomize authors in metadata.yaml
+python build/randomize-authors.py --shuffle --only-on-ci
+
 # Generate reference information
 echo >&2 "Retrieving and processing reference metadata"
 manubot process \
