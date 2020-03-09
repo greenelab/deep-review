@@ -9,6 +9,9 @@
   <meta name="author" content="Brett K. Beaulieu-Jones" />
   <meta name="author" content="Alexandr A. Kalinin" />
   <meta name="author" content="Brian T. Do" />
+  <meta name="author" content="Joshua J. Levy" />
+  <meta name="author" content="Brock C. Christensen" />
+  <meta name="author" content="Alexander J. Titus" />
   <meta name="author" content="Gregory P. Way" />
   <meta name="author" content="Enrico Ferrero" />
   <meta name="author" content="Paul-Michael Agapow" />
@@ -40,7 +43,7 @@
   <meta name="author" content="Austin Huang" />
   <meta name="author" content="Anthony Gitter" />
   <meta name="author" content="Casey S. Greene" />
-  <meta name="dcterms.date" content="2020-03-02" />
+  <meta name="dcterms.date" content="2020-03-09" />
   <meta name="keywords" content="deep learning, review, precision medicine, genomics, machine learning, neural networks, collaborative, manubot" />
   <title>Opportunities and obstacles for deep learning in biology and medicine [update in progress]</title>
   <style>
@@ -63,8 +66,8 @@
   <meta name="citation_title" content="Opportunities and obstacles for deep learning in biology and medicine [update in progress]" />
   <meta property="og:title" content="Opportunities and obstacles for deep learning in biology and medicine [update in progress]" />
   <meta property="twitter:title" content="Opportunities and obstacles for deep learning in biology and medicine [update in progress]" />
-  <meta name="dc.date" content="2020-03-02" />
-  <meta name="citation_publication_date" content="2020-03-02" />
+  <meta name="dc.date" content="2020-03-09" />
+  <meta name="citation_publication_date" content="2020-03-09" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -86,6 +89,15 @@
   <meta name="citation_author" content="Brian T. Do" />
   <meta name="citation_author_institution" content="Harvard Medical School, Boston, MA" />
   <meta name="citation_author_orcid" content="0000-0003-4992-2623" />
+  <meta name="citation_author" content="Joshua J. Levy" />
+  <meta name="citation_author_institution" content="Program in Quantitative Biomedical Sciences, Geisel School of Medicine at Dartmouth, Lebanon, NH" />
+  <meta name="citation_author_orcid" content="0000-0001-8050-1291" />
+  <meta name="citation_author" content="Brock C. Christensen" />
+  <meta name="citation_author_institution" content="Department of Epidemiology, Geisel School of Medicine, Dartmouth College, Lebanon, NH" />
+  <meta name="citation_author_orcid" content="0000-0003-3022-426X" />
+  <meta name="citation_author" content="Alexander J. Titus" />
+  <meta name="citation_author_institution" content="Department of Epidemiology, Geisel School of Medicine, Dartmouth College, Lebanon, NH" />
+  <meta name="citation_author_orcid" content="0000-0002-0145-9564" />
   <meta name="citation_author" content="Gregory P. Way" />
   <meta name="citation_author_institution" content="Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA" />
   <meta name="citation_author_orcid" content="0000-0002-0503-9348" />
@@ -190,13 +202,13 @@
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/deep-review/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/deep-review/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/deep-review/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/deep-review/v/5e9aa01dadad5f3cd87cd1f39dbe577dff651c64/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/deep-review/v/5e9aa01dadad5f3cd87cd1f39dbe577dff651c64/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/deep-review/v/5e9aa01dadad5f3cd87cd1f39dbe577dff651c64/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/deep-review/v/03b2cd2bb41d1545f0bec28a57d1c1ac18bdafd4/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/deep-review/v/03b2cd2bb41d1545f0bec28a57d1c1ac18bdafd4/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/deep-review/v/03b2cd2bb41d1545f0bec28a57d1c1ac18bdafd4/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="og:image" content="https://github.com/greenelab/deep-review/raw/5e9aa01dadad5f3cd87cd1f39dbe577dff651c64/thumbnail.png" />
-  <meta property="twitter:image" content="https://github.com/greenelab/deep-review/raw/5e9aa01dadad5f3cd87cd1f39dbe577dff651c64/thumbnail.png" />
+  <meta property="og:image" content="https://github.com/greenelab/deep-review/raw/03b2cd2bb41d1545f0bec28a57d1c1ac18bdafd4/thumbnail.png" />
+  <meta property="twitter:image" content="https://github.com/greenelab/deep-review/raw/03b2cd2bb41d1545f0bec28a57d1c1ac18bdafd4/thumbnail.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
   <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
   <meta name="theme-color" content="#ad1457" />
@@ -214,13 +226,19 @@ A new effort is underway to update the manuscript to a Version 2.0 that is curre
 New authors and links to new sections are available in <a href="https://github.com/greenelab/deep-review/issues/959">GitHub Issue #959</a>.</span></p>
 <p><small><em>
 This manuscript
-(<a href="https://greenelab.github.io/deep-review/v/5e9aa01dadad5f3cd87cd1f39dbe577dff651c64/">permalink</a>)
+(<a href="https://greenelab.github.io/deep-review/v/03b2cd2bb41d1545f0bec28a57d1c1ac18bdafd4/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/greenelab/deep-review/tree/5e9aa01dadad5f3cd87cd1f39dbe577dff651c64">greenelab/deep-review@5e9aa01</a>
-on March 2, 2020.
+from <a href="https://github.com/greenelab/deep-review/tree/03b2cd2bb41d1545f0bec28a57d1c1ac18bdafd4">greenelab/deep-review@03b2cd2</a>
+on March 9, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <h3 id="version-2.0-authors">Version 2.0 Authors</h3>
+<p><a href="https://orcid.org/0000-0001-8050-1291"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a>
+Joshua J. Levy<sup>6♠</sup>,
+<a href="https://orcid.org/0000-0003-3022-426X"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a>
+Brock C. Christensen<sup>7♠</sup>,
+<a href="https://orcid.org/0000-0002-0145-9564"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a>
+Alexander J. Titus<sup>7♠</sup>,</p>
 <p><a href="https://orcid.org/0000-0001-8713-9213"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a>
 Casey S. Greene<sup>2♠,†</sup></p>
 <p><sup>♠</sup> — Author order for version 2.0 is currently arbitrary.<br>
@@ -235,67 +253,67 @@ Brett K. Beaulieu-Jones<sup>3</sup>,
 <a href="https://orcid.org/0000-0003-4563-3226"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a>
 Alexandr A. Kalinin<sup>4</sup>,
 <a href="https://orcid.org/0000-0003-4992-2623"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a>
-Brian T. Do<sup>5</sup>,
-<a href="https://orcid.org/0000-0002-0503-9348"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a>
+Brian T. Do<sup>5</sup>,</p>
+<p><a href="https://orcid.org/0000-0002-0503-9348"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a>
 Gregory P. Way<sup>2</sup>,
 <a href="https://orcid.org/0000-0002-8362-100X"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a>
-Enrico Ferrero<sup>6</sup>,
+Enrico Ferrero<sup>8</sup>,
 <a href="https://orcid.org/0000-0003-1126-1479"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a>
-Paul-Michael Agapow<sup>7</sup>,
+Paul-Michael Agapow<sup>9</sup>,
 <a href="https://orcid.org/0000-0003-0539-630X"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a>
 Michael Zietz<sup>2</sup>,
 <a href="https://orcid.org/0000-0002-4517-1562"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a>
-Michael M. Hoffman<sup>8,9,10</sup>,
+Michael M. Hoffman<sup>10,11,12</sup>,
 <a href="https://orcid.org/0000-0002-1871-6846"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a>
-Wei Xie<sup>11</sup>,
+Wei Xie<sup>13</sup>,
 <a href="https://orcid.org/0000-0003-1763-5750"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a>
-Gail L. Rosen<sup>12</sup>,
+Gail L. Rosen<sup>14</sup>,
 <a href="https://orcid.org/0000-0001-8690-9554"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a>
-Benjamin J. Lengerich<sup>13</sup>,
+Benjamin J. Lengerich<sup>15</sup>,
 <a href="https://orcid.org/0000-0003-1633-5780"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a>
-Johnny Israeli<sup>14</sup>,
+Johnny Israeli<sup>16</sup>,
 <a href="https://orcid.org/0000-0003-0811-0944"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a>
-Jack Lanchantin<sup>15</sup>,
+Jack Lanchantin<sup>17</sup>,
 <a href="https://orcid.org/0000-0003-0568-298X"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a>
-Stephen Woloszynek<sup>12</sup>,
+Stephen Woloszynek<sup>14</sup>,
 <a href="https://orcid.org/0000-0003-1555-8261"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a>
-Anne E. Carpenter<sup>16</sup>,
+Anne E. Carpenter<sup>18</sup>,
 <a href="https://orcid.org/0000-0002-6443-4671"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a>
-Avanti Shrikumar<sup>17</sup>,
+Avanti Shrikumar<sup>19</sup>,
 <a href="https://orcid.org/0000-0001-7111-4839"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a>
-Jinbo Xu<sup>18</sup>,
+Jinbo Xu<sup>20</sup>,
 <a href="https://orcid.org/0000-0003-3877-0433"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a>
-Evan M. Cofer<sup>19,20</sup>,
+Evan M. Cofer<sup>21,22</sup>,
 <a href="https://orcid.org/0000-0002-7762-1089"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a>
-Christopher A. Lavender<sup>21</sup>,
+Christopher A. Lavender<sup>23</sup>,
 <a href="https://orcid.org/0000-0003-3247-6487"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a>
-Srinivas C. Turaga<sup>22</sup>,
+Srinivas C. Turaga<sup>24</sup>,
 <a href="https://orcid.org/0000-0001-8655-8109"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a>
-Amr M. Alexandari<sup>17</sup>,
+Amr M. Alexandari<sup>19</sup>,
 <a href="https://orcid.org/0000-0001-9998-916X"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a>
-Zhiyong Lu<sup>23</sup>,
+Zhiyong Lu<sup>25</sup>,
 <a href="https://orcid.org/0000-0003-3332-9307"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a>
-David J. Harris<sup>24</sup>,
+David J. Harris<sup>26</sup>,
 <a href="https://orcid.org/0000-0001-8931-9461"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a>
-Dave DeCaprio<sup>25</sup>,
+Dave DeCaprio<sup>27</sup>,
 <a href="https://orcid.org/0000-0002-5796-7453"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a>
-Yanjun Qi<sup>15</sup>,
+Yanjun Qi<sup>17</sup>,
 <a href="https://orcid.org/0000-0003-3084-2287"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a>
-Anshul Kundaje<sup>17,26</sup>,
+Anshul Kundaje<sup>19,28</sup>,
 <a href="https://orcid.org/0000-0001-9309-8331"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a>
-Yifan Peng<sup>23</sup>,
+Yifan Peng<sup>25</sup>,
 <a href="https://orcid.org/0000-0001-6681-9754"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a>
-Laura K. Wiley<sup>27</sup>,
+Laura K. Wiley<sup>29</sup>,
 <a href="https://orcid.org/0000-0001-8008-0546"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a>
-Marwin H.S. Segler<sup>28</sup>,
+Marwin H.S. Segler<sup>30</sup>,
 <a href="https://orcid.org/0000-0002-1400-3398"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a>
-Simina M. Boca<sup>29</sup>,
+Simina M. Boca<sup>31</sup>,
 <a href="https://orcid.org/0000-0003-2191-0778"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a>
-S. Joshua Swamidass<sup>30</sup>,
+S. Joshua Swamidass<sup>32</sup>,
 <a href="https://orcid.org/0000-0003-1349-4030"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a>
-Austin Huang<sup>31</sup>,
+Austin Huang<sup>33</sup>,
 <a href="https://orcid.org/0000-0002-5324-9833"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a>
-Anthony Gitter<sup>32,33,†</sup>,
+Anthony Gitter<sup>34,35,†</sup>,
 <a href="https://orcid.org/0000-0001-8713-9213"><img src="images/orcid.svg" width="11" height="11" alt="ORCID icon" /></a>
 Casey S. Greene<sup>2,†</sup></p>
 <p><sup>☯</sup> — Author order was determined with a randomized algorithm<br>
@@ -307,6 +325,8 @@ Casey S. Greene<sup>2,†</sup></p>
 <li>Genomics and Computational Biology Graduate Group, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA</li>
 <li>Department of Computational Medicine and Bioinformatics, University of Michigan Medical School, Ann Arbor, MI</li>
 <li>Harvard Medical School, Boston, MA</li>
+<li>Program in Quantitative Biomedical Sciences, Geisel School of Medicine at Dartmouth, Lebanon, NH</li>
+<li>Department of Epidemiology, Geisel School of Medicine, Dartmouth College, Lebanon, NH</li>
 <li>Computational Biology and Stats, Target Sciences, GlaxoSmithKline, Stevenage, United Kingdom</li>
 <li>Data Science Institute, Imperial College London, London, United Kingdom</li>
 <li>Princess Margaret Cancer Centre, Toronto, ON, Canada</li>
@@ -1936,6 +1956,7 @@ The ability to irrefutably prove manuscript existence at a past time could be im
 <h3 id="author-contributions">Author contributions</h3>
 <h4 id="version-2.0">Version 2.0</h4>
 <p>We continued using the open repository on the GitHub version control platform (<a href="https://github.com/greenelab/deep-review"><code>greenelab/deep-review</code></a>) <span class="citation" data-cites="yLr4pV4G">[<a href="#ref-yLr4pV4G" role="doc-biblioref">602</a>]</span>, which was established to write the Version 1.0 manuscript.</p>
+<p>Drafted one or more subsections: Joshua J. Levy,Brock C. Christensen,Alexander J. Titus.</p>
 <p>Drafted sub-sections, edited the manuscript, reviewed pull requests, and coordinated co-authors: Casey S. Greene.</p>
 <h4 id="version-1.0">Version 1.0</h4>
 <p>We created an open repository on the GitHub version control platform (<a href="https://github.com/greenelab/deep-review"><code>greenelab/deep-review</code></a>) <span class="citation" data-cites="yLr4pV4G">[<a href="#ref-yLr4pV4G" role="doc-biblioref">602</a>]</span>.
@@ -1986,159 +2007,174 @@ We grouped authors into the following four classes of approximately equal contri
 <td>2017-05-26</td>
 </tr>
 <tr class="even">
+<td>Joshua J. Levy</td>
+<td>None</td>
+<td>2020-03-04</td>
+</tr>
+<tr class="odd">
+<td>Brock C. Christensen</td>
+<td>None</td>
+<td>2020-03-05</td>
+</tr>
+<tr class="even">
+<td>Alexander J. Titus</td>
+<td>None</td>
+<td>2020-03-07</td>
+</tr>
+<tr class="odd">
 <td>Gregory P. Way</td>
 <td>None</td>
 <td>2017-05-26</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Enrico Ferrero</td>
 <td>Full-time employee of GlaxoSmithKline.</td>
 <td>2017-05-26</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Paul-Michael Agapow</td>
 <td>None</td>
 <td>2017-05-26</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Michael Zietz</td>
 <td>None</td>
 <td>2017-05-26</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Michael M. Hoffman</td>
 <td>None</td>
 <td>2017-05-26</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Wei Xie</td>
 <td>None</td>
 <td>2017-05-26</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Gail L. Rosen</td>
 <td>None</td>
 <td>2017-05-26</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Benjamin J. Lengerich</td>
 <td>None</td>
 <td>2017-05-26</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Johnny Israeli</td>
 <td>None</td>
 <td>2017-05-26</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Jack Lanchantin</td>
 <td>None</td>
 <td>2017-05-26</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Stephen Woloszynek</td>
 <td>None</td>
 <td>2017-05-26</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Anne E. Carpenter</td>
 <td>None</td>
 <td>2017-05-26</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Avanti Shrikumar</td>
 <td>None</td>
 <td>2017-05-26</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Jinbo Xu</td>
 <td>None</td>
 <td>2017-05-26</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Evan M. Cofer</td>
 <td>None</td>
 <td>2017-05-26</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Christopher A. Lavender</td>
 <td>None</td>
 <td>2017-05-26</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Srinivas C. Turaga</td>
 <td>None</td>
 <td>2017-05-26</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Amr M. Alexandari</td>
 <td>None</td>
 <td>2017-05-26</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Zhiyong Lu</td>
 <td>None</td>
 <td>2017-05-26</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>David J. Harris</td>
 <td>None</td>
 <td>2017-05-26</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Dave DeCaprio</td>
 <td>None</td>
 <td>2017-05-26</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Yanjun Qi</td>
 <td>None</td>
 <td>2017-05-26</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Anshul Kundaje</td>
 <td>Advisory Board of Deep Genomics Inc.</td>
 <td>2017-05-26</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Yifan Peng</td>
 <td>None</td>
 <td>2017-05-26</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Laura K. Wiley</td>
 <td>None</td>
 <td>2017-05-26</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Marwin H.S. Segler</td>
 <td>None</td>
 <td>2017-05-26</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Simina M. Boca</td>
 <td>None</td>
 <td>2017-05-26</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>S. Joshua Swamidass</td>
 <td>None</td>
 <td>2017-05-26</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Austin Huang</td>
 <td>None</td>
 <td>2017-05-26</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Anthony Gitter</td>
 <td>None</td>
 <td>2017-05-26</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Casey S. Greene</td>
 <td>None</td>
-<td>2017-05-26</td>
+<td>2020-03-09</td>
 </tr>
 </tbody>
 </table>
