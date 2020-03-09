@@ -5,6 +5,9 @@ author-meta:
 - Brett K. Beaulieu-Jones
 - Alexandr A. Kalinin
 - Brian T. Do
+- Joshua J. Levy
+- Brock C. Christensen
+- Alexander J. Titus
 - Gregory P. Way
 - Enrico Ferrero
 - Paul-Michael Agapow
@@ -39,8 +42,8 @@ author-meta:
 bibliography:
 - content/manual-references-2020-01-29.json
 - content/manual-references.json
-date-meta: '2020-03-02'
-header-includes: "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Opportunities and obstacles for deep learning in biology and medicine [update in progress]\" />\n<meta name=\"citation_title\" content=\"Opportunities and obstacles for deep learning in biology and medicine [update in progress]\" />\n<meta property=\"og:title\" content=\"Opportunities and obstacles for deep learning in biology and medicine [update in progress]\" />\n<meta property=\"twitter:title\" content=\"Opportunities and obstacles for deep learning in biology and medicine [update in progress]\" />\n<meta name=\"dc.date\" content=\"2020-03-02\" />\n<meta name=\"citation_publication_date\" content=\"2020-03-02\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Travers Ching\" />\n<meta name=\"citation_author_institution\" content=\"Molecular Biosciences and Bioengineering Graduate Program, University of Hawaii at Manoa, Honolulu, HI\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-5577-3516\" />\n<meta name=\"citation_author\" content=\"Daniel S. Himmelstein\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-3012-7446\" />\n<meta name=\"citation_author\" content=\"Brett K. Beaulieu-Jones\" />\n<meta name=\"citation_author_institution\" content=\"Genomics and Computational Biology Graduate Group, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-6700-1468\" />\n<meta name=\"citation_author\" content=\"Alexandr A. Kalinin\" />\n<meta name=\"citation_author_institution\" content=\"Department of Computational Medicine and Bioinformatics, University of Michigan Medical School, Ann Arbor, MI\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-4563-3226\" />\n<meta name=\"citation_author\" content=\"Brian T. Do\" />\n<meta name=\"citation_author_institution\" content=\"Harvard Medical School, Boston, MA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-4992-2623\" />\n<meta name=\"citation_author\" content=\"Gregory P. Way\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-0503-9348\" />\n<meta name=\"citation_author\" content=\"Enrico Ferrero\" />\n<meta name=\"citation_author_institution\" content=\"Computational Biology and Stats, Target Sciences, GlaxoSmithKline, Stevenage, United Kingdom\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-8362-100X\" />\n<meta name=\"citation_author\" content=\"Paul-Michael Agapow\" />\n<meta name=\"citation_author_institution\" content=\"Data Science Institute, Imperial College London, London, United Kingdom\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1126-1479\" />\n<meta name=\"citation_author\" content=\"Michael Zietz\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-0539-630X\" />\n<meta name=\"citation_author\" content=\"Michael M. Hoffman\" />\n<meta name=\"citation_author_institution\" content=\"Princess Margaret Cancer Centre, Toronto, ON, Canada\" />\n<meta name=\"citation_author_institution\" content=\"Department of Medical Biophysics, University of Toronto, Toronto, ON, Canada\" />\n<meta name=\"citation_author_institution\" content=\"Department of Computer Science, University of Toronto, Toronto, ON, Canada\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-4517-1562\" />\n<meta name=\"citation_author\" content=\"Wei Xie\" />\n<meta name=\"citation_author_institution\" content=\"Electrical Engineering and Computer Science, Vanderbilt University, Nashville, TN\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-1871-6846\" />\n<meta name=\"citation_author\" content=\"Gail L. Rosen\" />\n<meta name=\"citation_author_institution\" content=\"Ecological and Evolutionary Signal-processing and Informatics Laboratory, Department of Electrical and Computer Engineering, Drexel University, Philadelphia, PA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1763-5750\" />\n<meta name=\"citation_author\" content=\"Benjamin J. Lengerich\" />\n<meta name=\"citation_author_institution\" content=\"Computational Biology Department, School of Computer Science, Carnegie Mellon University, Pittsburgh, PA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8690-9554\" />\n<meta name=\"citation_author\" content=\"Johnny Israeli\" />\n<meta name=\"citation_author_institution\" content=\"Biophysics Program, Stanford University, Stanford, CA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1633-5780\" />\n<meta name=\"citation_author\" content=\"Jack Lanchantin\" />\n<meta name=\"citation_author_institution\" content=\"Department of Computer Science, University of Virginia, Charlottesville, VA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-0811-0944\" />\n<meta name=\"citation_author\" content=\"Stephen Woloszynek\" />\n<meta name=\"citation_author_institution\" content=\"Ecological and Evolutionary Signal-processing and Informatics Laboratory, Department of Electrical and Computer Engineering, Drexel University, Philadelphia, PA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-0568-298X\" />\n<meta name=\"citation_author\" content=\"Anne E. Carpenter\" />\n<meta name=\"citation_author_institution\" content=\"Imaging Platform, Broad Institute of Harvard and MIT, Cambridge, MA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1555-8261\" />\n<meta name=\"citation_author\" content=\"Avanti Shrikumar\" />\n<meta name=\"citation_author_institution\" content=\"Department of Computer Science, Stanford University, Stanford, CA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-6443-4671\" />\n<meta name=\"citation_author\" content=\"Jinbo Xu\" />\n<meta name=\"citation_author_institution\" content=\"Toyota Technological Institute at Chicago, Chicago, IL\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-7111-4839\" />\n<meta name=\"citation_author\" content=\"Evan M. Cofer\" />\n<meta name=\"citation_author_institution\" content=\"Department of Computer Science, Trinity University, San Antonio, TX\" />\n<meta name=\"citation_author_institution\" content=\"Lewis-Sigler Institute for Integrative Genomics, Princeton University, Princeton, NJ\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3877-0433\" />\n<meta name=\"citation_author\" content=\"Christopher A. Lavender\" />\n<meta name=\"citation_author_institution\" content=\"Integrative Bioinformatics, National Institute of Environmental Health Sciences, National Institutes of Health, Research Triangle Park, NC\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-7762-1089\" />\n<meta name=\"citation_author\" content=\"Srinivas C. Turaga\" />\n<meta name=\"citation_author_institution\" content=\"Howard Hughes Medical Institute, Janelia Research Campus, Ashburn, VA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3247-6487\" />\n<meta name=\"citation_author\" content=\"Amr M. Alexandari\" />\n<meta name=\"citation_author_institution\" content=\"Department of Computer Science, Stanford University, Stanford, CA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8655-8109\" />\n<meta name=\"citation_author\" content=\"Zhiyong Lu\" />\n<meta name=\"citation_author_institution\" content=\"National Center for Biotechnology Information and National Library of Medicine, National Institutes of Health, Bethesda, MD\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-9998-916X\" />\n<meta name=\"citation_author\" content=\"David J. Harris\" />\n<meta name=\"citation_author_institution\" content=\"Department of Wildlife Ecology and Conservation, University of Florida, Gainesville, FL\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3332-9307\" />\n<meta name=\"citation_author\" content=\"Dave DeCaprio\" />\n<meta name=\"citation_author_institution\" content=\"ClosedLoop.ai, Austin, TX\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8931-9461\" />\n<meta name=\"citation_author\" content=\"Yanjun Qi\" />\n<meta name=\"citation_author_institution\" content=\"Department of Computer Science, University of Virginia, Charlottesville, VA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-5796-7453\" />\n<meta name=\"citation_author\" content=\"Anshul Kundaje\" />\n<meta name=\"citation_author_institution\" content=\"Department of Genetics, Stanford University, Stanford, CA\" />\n<meta name=\"citation_author_institution\" content=\"Department of Computer Science, Stanford University, Stanford, CA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3084-2287\" />\n<meta name=\"citation_author\" content=\"Yifan Peng\" />\n<meta name=\"citation_author_institution\" content=\"National Center for Biotechnology Information and National Library of Medicine, National Institutes of Health, Bethesda, MD\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-9309-8331\" />\n<meta name=\"citation_author\" content=\"Laura K. Wiley\" />\n<meta name=\"citation_author_institution\" content=\"Division of Biomedical Informatics and Personalized Medicine, University of Colorado School of Medicine, Aurora, CO\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-6681-9754\" />\n<meta name=\"citation_author\" content=\"Marwin H.S. Segler\" />\n<meta name=\"citation_author_institution\" content=\"Institute of Organic Chemistry, Westf\xE4lische Wilhelms-Universit\xE4t M\xFCnster, M\xFCnster, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8008-0546\" />\n<meta name=\"citation_author\" content=\"Simina M. Boca\" />\n<meta name=\"citation_author_institution\" content=\"Innovation Center for Biomedical Informatics, Georgetown University Medical Center, Washington, DC\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-1400-3398\" />\n<meta name=\"citation_author\" content=\"S. Joshua Swamidass\" />\n<meta name=\"citation_author_institution\" content=\"Department of Pathology and Immunology, Washington University in Saint Louis, Saint Louis, MO\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-2191-0778\" />\n<meta name=\"citation_author\" content=\"Austin Huang\" />\n<meta name=\"citation_author_institution\" content=\"Department of Medicine, Brown University, Providence, RI\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1349-4030\" />\n<meta name=\"citation_author\" content=\"Anthony Gitter\" />\n<meta name=\"citation_author_institution\" content=\"Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison, Madison, WI\" />\n<meta name=\"citation_author_institution\" content=\"Morgridge Institute for Research, Madison, WI\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-5324-9833\" />\n<meta name=\"citation_author\" content=\"Casey S. Greene\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8713-9213\" />\n<link rel=\"canonical\" href=\"https://greenelab.github.io/deep-review/\" />\n<meta property=\"og:url\" content=\"https://greenelab.github.io/deep-review/\" />\n<meta property=\"twitter:url\" content=\"https://greenelab.github.io/deep-review/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://greenelab.github.io/deep-review/\" />\n<meta name=\"citation_pdf_url\" content=\"https://greenelab.github.io/deep-review/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://greenelab.github.io/deep-review/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://greenelab.github.io/deep-review/v/5e9aa01dadad5f3cd87cd1f39dbe577dff651c64/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://greenelab.github.io/deep-review/v/5e9aa01dadad5f3cd87cd1f39dbe577dff651c64/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://greenelab.github.io/deep-review/v/5e9aa01dadad5f3cd87cd1f39dbe577dff651c64/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<meta property=\"og:image\" content=\"https://github.com/greenelab/deep-review/raw/5e9aa01dadad5f3cd87cd1f39dbe577dff651c64/thumbnail.png\" />\n<meta property=\"twitter:image\" content=\"https://github.com/greenelab/deep-review/raw/5e9aa01dadad5f3cd87cd1f39dbe577dff651c64/thumbnail.png\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->"
+date-meta: '2020-03-09'
+header-includes: "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Opportunities and obstacles for deep learning in biology and medicine [update in progress]\" />\n<meta name=\"citation_title\" content=\"Opportunities and obstacles for deep learning in biology and medicine [update in progress]\" />\n<meta property=\"og:title\" content=\"Opportunities and obstacles for deep learning in biology and medicine [update in progress]\" />\n<meta property=\"twitter:title\" content=\"Opportunities and obstacles for deep learning in biology and medicine [update in progress]\" />\n<meta name=\"dc.date\" content=\"2020-03-09\" />\n<meta name=\"citation_publication_date\" content=\"2020-03-09\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Travers Ching\" />\n<meta name=\"citation_author_institution\" content=\"Molecular Biosciences and Bioengineering Graduate Program, University of Hawaii at Manoa, Honolulu, HI\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-5577-3516\" />\n<meta name=\"citation_author\" content=\"Daniel S. Himmelstein\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-3012-7446\" />\n<meta name=\"citation_author\" content=\"Brett K. Beaulieu-Jones\" />\n<meta name=\"citation_author_institution\" content=\"Genomics and Computational Biology Graduate Group, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-6700-1468\" />\n<meta name=\"citation_author\" content=\"Alexandr A. Kalinin\" />\n<meta name=\"citation_author_institution\" content=\"Department of Computational Medicine and Bioinformatics, University of Michigan Medical School, Ann Arbor, MI\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-4563-3226\" />\n<meta name=\"citation_author\" content=\"Brian T. Do\" />\n<meta name=\"citation_author_institution\" content=\"Harvard Medical School, Boston, MA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-4992-2623\" />\n<meta name=\"citation_author\" content=\"Joshua J. Levy\" />\n<meta name=\"citation_author_institution\" content=\"Program in Quantitative Biomedical Sciences, Geisel School of Medicine at Dartmouth, Lebanon, NH\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8050-1291\" />\n<meta name=\"citation_author\" content=\"Brock C. Christensen\" />\n<meta name=\"citation_author_institution\" content=\"Department of Epidemiology, Geisel School of Medicine, Dartmouth College, Lebanon, NH\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3022-426X\" />\n<meta name=\"citation_author\" content=\"Alexander J. Titus\" />\n<meta name=\"citation_author_institution\" content=\"Department of Epidemiology, Geisel School of Medicine, Dartmouth College, Lebanon, NH\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-0145-9564\" />\n<meta name=\"citation_author\" content=\"Gregory P. Way\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-0503-9348\" />\n<meta name=\"citation_author\" content=\"Enrico Ferrero\" />\n<meta name=\"citation_author_institution\" content=\"Computational Biology and Stats, Target Sciences, GlaxoSmithKline, Stevenage, United Kingdom\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-8362-100X\" />\n<meta name=\"citation_author\" content=\"Paul-Michael Agapow\" />\n<meta name=\"citation_author_institution\" content=\"Data Science Institute, Imperial College London, London, United Kingdom\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1126-1479\" />\n<meta name=\"citation_author\" content=\"Michael Zietz\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-0539-630X\" />\n<meta name=\"citation_author\" content=\"Michael M. Hoffman\" />\n<meta name=\"citation_author_institution\" content=\"Princess Margaret Cancer Centre, Toronto, ON, Canada\" />\n<meta name=\"citation_author_institution\" content=\"Department of Medical Biophysics, University of Toronto, Toronto, ON, Canada\" />\n<meta name=\"citation_author_institution\" content=\"Department of Computer Science, University of Toronto, Toronto, ON, Canada\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-4517-1562\" />\n<meta name=\"citation_author\" content=\"Wei Xie\" />\n<meta name=\"citation_author_institution\" content=\"Electrical Engineering and Computer Science, Vanderbilt University, Nashville, TN\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-1871-6846\" />\n<meta name=\"citation_author\" content=\"Gail L. Rosen\" />\n<meta name=\"citation_author_institution\" content=\"Ecological and Evolutionary Signal-processing and Informatics Laboratory, Department of Electrical and Computer Engineering, Drexel University, Philadelphia, PA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1763-5750\" />\n<meta name=\"citation_author\" content=\"Benjamin J. Lengerich\" />\n<meta name=\"citation_author_institution\" content=\"Computational Biology Department, School of Computer Science, Carnegie Mellon University, Pittsburgh, PA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8690-9554\" />\n<meta name=\"citation_author\" content=\"Johnny Israeli\" />\n<meta name=\"citation_author_institution\" content=\"Biophysics Program, Stanford University, Stanford, CA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1633-5780\" />\n<meta name=\"citation_author\" content=\"Jack Lanchantin\" />\n<meta name=\"citation_author_institution\" content=\"Department of Computer Science, University of Virginia, Charlottesville, VA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-0811-0944\" />\n<meta name=\"citation_author\" content=\"Stephen Woloszynek\" />\n<meta name=\"citation_author_institution\" content=\"Ecological and Evolutionary Signal-processing and Informatics Laboratory, Department of Electrical and Computer Engineering, Drexel University, Philadelphia, PA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-0568-298X\" />\n<meta name=\"citation_author\" content=\"Anne E. Carpenter\" />\n<meta name=\"citation_author_institution\" content=\"Imaging Platform, Broad Institute of Harvard and MIT, Cambridge, MA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1555-8261\" />\n<meta name=\"citation_author\" content=\"Avanti Shrikumar\" />\n<meta name=\"citation_author_institution\" content=\"Department of Computer Science, Stanford University, Stanford, CA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-6443-4671\" />\n<meta name=\"citation_author\" content=\"Jinbo Xu\" />\n<meta name=\"citation_author_institution\" content=\"Toyota Technological Institute at Chicago, Chicago, IL\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-7111-4839\" />\n<meta name=\"citation_author\" content=\"Evan M. Cofer\" />\n<meta name=\"citation_author_institution\" content=\"Department of Computer Science, Trinity University, San Antonio, TX\" />\n<meta name=\"citation_author_institution\" content=\"Lewis-Sigler Institute for Integrative Genomics, Princeton University, Princeton, NJ\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3877-0433\" />\n<meta name=\"citation_author\" content=\"Christopher A. Lavender\" />\n<meta name=\"citation_author_institution\" content=\"Integrative Bioinformatics, National Institute of Environmental Health Sciences, National Institutes of Health, Research Triangle Park, NC\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-7762-1089\" />\n<meta name=\"citation_author\" content=\"Srinivas C. Turaga\" />\n<meta name=\"citation_author_institution\" content=\"Howard Hughes Medical Institute, Janelia Research Campus, Ashburn, VA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3247-6487\" />\n<meta name=\"citation_author\" content=\"Amr M. Alexandari\" />\n<meta name=\"citation_author_institution\" content=\"Department of Computer Science, Stanford University, Stanford, CA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8655-8109\" />\n<meta name=\"citation_author\" content=\"Zhiyong Lu\" />\n<meta name=\"citation_author_institution\" content=\"National Center for Biotechnology Information and National Library of Medicine, National Institutes of Health, Bethesda, MD\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-9998-916X\" />\n<meta name=\"citation_author\" content=\"David J. Harris\" />\n<meta name=\"citation_author_institution\" content=\"Department of Wildlife Ecology and Conservation, University of Florida, Gainesville, FL\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3332-9307\" />\n<meta name=\"citation_author\" content=\"Dave DeCaprio\" />\n<meta name=\"citation_author_institution\" content=\"ClosedLoop.ai, Austin, TX\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8931-9461\" />\n<meta name=\"citation_author\" content=\"Yanjun Qi\" />\n<meta name=\"citation_author_institution\" content=\"Department of Computer Science, University of Virginia, Charlottesville, VA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-5796-7453\" />\n<meta name=\"citation_author\" content=\"Anshul Kundaje\" />\n<meta name=\"citation_author_institution\" content=\"Department of Genetics, Stanford University, Stanford, CA\" />\n<meta name=\"citation_author_institution\" content=\"Department of Computer Science, Stanford University, Stanford, CA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3084-2287\" />\n<meta name=\"citation_author\" content=\"Yifan Peng\" />\n<meta name=\"citation_author_institution\" content=\"National Center for Biotechnology Information and National Library of Medicine, National Institutes of Health, Bethesda, MD\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-9309-8331\" />\n<meta name=\"citation_author\" content=\"Laura K. Wiley\" />\n<meta name=\"citation_author_institution\" content=\"Division of Biomedical Informatics and Personalized Medicine, University of Colorado School of Medicine, Aurora, CO\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-6681-9754\" />\n<meta name=\"citation_author\" content=\"Marwin H.S. Segler\" />\n<meta name=\"citation_author_institution\" content=\"Institute of Organic Chemistry, Westf\xE4lische Wilhelms-Universit\xE4t M\xFCnster, M\xFCnster, Germany\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8008-0546\" />\n<meta name=\"citation_author\" content=\"Simina M. Boca\" />\n<meta name=\"citation_author_institution\" content=\"Innovation Center for Biomedical Informatics, Georgetown University Medical Center, Washington, DC\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-1400-3398\" />\n<meta name=\"citation_author\" content=\"S. Joshua Swamidass\" />\n<meta name=\"citation_author_institution\" content=\"Department of Pathology and Immunology, Washington University in Saint Louis, Saint Louis, MO\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-2191-0778\" />\n<meta name=\"citation_author\" content=\"Austin Huang\" />\n<meta name=\"citation_author_institution\" content=\"Department of Medicine, Brown University, Providence, RI\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1349-4030\" />\n<meta name=\"citation_author\" content=\"Anthony Gitter\" />\n<meta name=\"citation_author_institution\" content=\"Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison, Madison, WI\" />\n<meta name=\"citation_author_institution\" content=\"Morgridge Institute for Research, Madison, WI\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-5324-9833\" />\n<meta name=\"citation_author\" content=\"Casey S. Greene\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8713-9213\" />\n<link rel=\"canonical\" href=\"https://greenelab.github.io/deep-review/\" />\n<meta property=\"og:url\" content=\"https://greenelab.github.io/deep-review/\" />\n<meta property=\"twitter:url\" content=\"https://greenelab.github.io/deep-review/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://greenelab.github.io/deep-review/\" />\n<meta name=\"citation_pdf_url\" content=\"https://greenelab.github.io/deep-review/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://greenelab.github.io/deep-review/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://greenelab.github.io/deep-review/v/03b2cd2bb41d1545f0bec28a57d1c1ac18bdafd4/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://greenelab.github.io/deep-review/v/03b2cd2bb41d1545f0bec28a57d1c1ac18bdafd4/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://greenelab.github.io/deep-review/v/03b2cd2bb41d1545f0bec28a57d1c1ac18bdafd4/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<meta property=\"og:image\" content=\"https://github.com/greenelab/deep-review/raw/03b2cd2bb41d1545f0bec28a57d1c1ac18bdafd4/thumbnail.png\" />\n<meta property=\"twitter:image\" content=\"https://github.com/greenelab/deep-review/raw/03b2cd2bb41d1545f0bec28a57d1c1ac18bdafd4/thumbnail.png\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->"
 keywords:
 - deep learning
 - review
@@ -72,10 +75,10 @@ New authors and links to new sections are available in [GitHub Issue #959](https
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/deep-review/v/5e9aa01dadad5f3cd87cd1f39dbe577dff651c64/))
+([permalink](https://greenelab.github.io/deep-review/v/03b2cd2bb41d1545f0bec28a57d1c1ac18bdafd4/))
 was automatically generated
-from [greenelab/deep-review@5e9aa01](https://github.com/greenelab/deep-review/tree/5e9aa01dadad5f3cd87cd1f39dbe577dff651c64)
-on March 2, 2020.
+from [greenelab/deep-review@03b2cd2](https://github.com/greenelab/deep-review/tree/03b2cd2bb41d1545f0bec28a57d1c1ac18bdafd4)
+on March 9, 2020.
 </em></small>
 
 ## Authors
@@ -88,6 +91,12 @@ on March 2, 2020.
   
   
   
+  [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-8050-1291)
+    Joshua J. Levy<sup>6♠</sup>,
+  [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-3022-426X)
+    Brock C. Christensen<sup>7♠</sup>,
+  [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-0145-9564)
+    Alexander J. Titus<sup>7♠</sup>,
   
   
   
@@ -137,66 +146,69 @@ on March 2, 2020.
     Alexandr A. Kalinin<sup>4</sup>,
   [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-4992-2623)
     Brian T. Do<sup>5</sup>,
+  
+  
+  
   [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-0503-9348)
     Gregory P. Way<sup>2</sup>,
   [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-8362-100X)
-    Enrico Ferrero<sup>6</sup>,
+    Enrico Ferrero<sup>8</sup>,
   [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-1126-1479)
-    Paul-Michael Agapow<sup>7</sup>,
+    Paul-Michael Agapow<sup>9</sup>,
   [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-0539-630X)
     Michael Zietz<sup>2</sup>,
   [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-4517-1562)
-    Michael M. Hoffman<sup>8,9,10</sup>,
+    Michael M. Hoffman<sup>10,11,12</sup>,
   [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-1871-6846)
-    Wei Xie<sup>11</sup>,
+    Wei Xie<sup>13</sup>,
   [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-1763-5750)
-    Gail L. Rosen<sup>12</sup>,
+    Gail L. Rosen<sup>14</sup>,
   [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-8690-9554)
-    Benjamin J. Lengerich<sup>13</sup>,
+    Benjamin J. Lengerich<sup>15</sup>,
   [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-1633-5780)
-    Johnny Israeli<sup>14</sup>,
+    Johnny Israeli<sup>16</sup>,
   [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-0811-0944)
-    Jack Lanchantin<sup>15</sup>,
+    Jack Lanchantin<sup>17</sup>,
   [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-0568-298X)
-    Stephen Woloszynek<sup>12</sup>,
+    Stephen Woloszynek<sup>14</sup>,
   [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-1555-8261)
-    Anne E. Carpenter<sup>16</sup>,
+    Anne E. Carpenter<sup>18</sup>,
   [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-6443-4671)
-    Avanti Shrikumar<sup>17</sup>,
+    Avanti Shrikumar<sup>19</sup>,
   [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-7111-4839)
-    Jinbo Xu<sup>18</sup>,
+    Jinbo Xu<sup>20</sup>,
   [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-3877-0433)
-    Evan M. Cofer<sup>19,20</sup>,
+    Evan M. Cofer<sup>21,22</sup>,
   [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-7762-1089)
-    Christopher A. Lavender<sup>21</sup>,
+    Christopher A. Lavender<sup>23</sup>,
   [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-3247-6487)
-    Srinivas C. Turaga<sup>22</sup>,
+    Srinivas C. Turaga<sup>24</sup>,
   [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-8655-8109)
-    Amr M. Alexandari<sup>17</sup>,
+    Amr M. Alexandari<sup>19</sup>,
   [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-9998-916X)
-    Zhiyong Lu<sup>23</sup>,
+    Zhiyong Lu<sup>25</sup>,
   [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-3332-9307)
-    David J. Harris<sup>24</sup>,
+    David J. Harris<sup>26</sup>,
   [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-8931-9461)
-    Dave DeCaprio<sup>25</sup>,
+    Dave DeCaprio<sup>27</sup>,
   [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-5796-7453)
-    Yanjun Qi<sup>15</sup>,
+    Yanjun Qi<sup>17</sup>,
   [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-3084-2287)
-    Anshul Kundaje<sup>17,26</sup>,
+    Anshul Kundaje<sup>19,28</sup>,
   [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-9309-8331)
-    Yifan Peng<sup>23</sup>,
+    Yifan Peng<sup>25</sup>,
   [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-6681-9754)
-    Laura K. Wiley<sup>27</sup>,
+    Laura K. Wiley<sup>29</sup>,
   [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-8008-0546)
-    Marwin H.S. Segler<sup>28</sup>,
+    Marwin H.S. Segler<sup>30</sup>,
   [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-1400-3398)
-    Simina M. Boca<sup>29</sup>,
+    Simina M. Boca<sup>31</sup>,
   [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-2191-0778)
-    S. Joshua Swamidass<sup>30</sup>,
+    S. Joshua Swamidass<sup>32</sup>,
   [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-1349-4030)
-    Austin Huang<sup>31</sup>,
+    Austin Huang<sup>33</sup>,
   [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-5324-9833)
-    Anthony Gitter<sup>32,33,†</sup>,
+    Anthony Gitter<sup>34,35,†</sup>,
   [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-8713-9213)
     Casey S. Greene<sup>2,†</sup>
 
@@ -211,34 +223,36 @@ on March 2, 2020.
 3. Genomics and Computational Biology Graduate Group, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA
 4. Department of Computational Medicine and Bioinformatics, University of Michigan Medical School, Ann Arbor, MI
 5. Harvard Medical School, Boston, MA
-6. Computational Biology and Stats, Target Sciences, GlaxoSmithKline, Stevenage, United Kingdom
-7. Data Science Institute, Imperial College London, London, United Kingdom
-8. Princess Margaret Cancer Centre, Toronto, ON, Canada
-9. Department of Medical Biophysics, University of Toronto, Toronto, ON, Canada
-10. Department of Computer Science, University of Toronto, Toronto, ON, Canada
-11. Electrical Engineering and Computer Science, Vanderbilt University, Nashville, TN
-12. Ecological and Evolutionary Signal-processing and Informatics Laboratory, Department of Electrical and Computer Engineering, Drexel University, Philadelphia, PA
-13. Computational Biology Department, School of Computer Science, Carnegie Mellon University, Pittsburgh, PA
-14. Biophysics Program, Stanford University, Stanford, CA
-15. Department of Computer Science, University of Virginia, Charlottesville, VA
-16. Imaging Platform, Broad Institute of Harvard and MIT, Cambridge, MA
-17. Department of Computer Science, Stanford University, Stanford, CA
-18. Toyota Technological Institute at Chicago, Chicago, IL
-19. Department of Computer Science, Trinity University, San Antonio, TX
-20. Lewis-Sigler Institute for Integrative Genomics, Princeton University, Princeton, NJ
-21. Integrative Bioinformatics, National Institute of Environmental Health Sciences, National Institutes of Health, Research Triangle Park, NC
-22. Howard Hughes Medical Institute, Janelia Research Campus, Ashburn, VA
-23. National Center for Biotechnology Information and National Library of Medicine, National Institutes of Health, Bethesda, MD
-24. Department of Wildlife Ecology and Conservation, University of Florida, Gainesville, FL
-25. ClosedLoop.ai, Austin, TX
-26. Department of Genetics, Stanford University, Stanford, CA
-27. Division of Biomedical Informatics and Personalized Medicine, University of Colorado School of Medicine, Aurora, CO
-28. Institute of Organic Chemistry, Westfälische Wilhelms-Universität Münster, Münster, Germany
-29. Innovation Center for Biomedical Informatics, Georgetown University Medical Center, Washington, DC
-30. Department of Pathology and Immunology, Washington University in Saint Louis, Saint Louis, MO
-31. Department of Medicine, Brown University, Providence, RI
-32. Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison, Madison, WI
-33. Morgridge Institute for Research, Madison, WI
+6. Program in Quantitative Biomedical Sciences, Geisel School of Medicine at Dartmouth, Lebanon, NH
+7. Department of Epidemiology, Geisel School of Medicine, Dartmouth College, Lebanon, NH
+8. Computational Biology and Stats, Target Sciences, GlaxoSmithKline, Stevenage, United Kingdom
+9. Data Science Institute, Imperial College London, London, United Kingdom
+10. Princess Margaret Cancer Centre, Toronto, ON, Canada
+11. Department of Medical Biophysics, University of Toronto, Toronto, ON, Canada
+12. Department of Computer Science, University of Toronto, Toronto, ON, Canada
+13. Electrical Engineering and Computer Science, Vanderbilt University, Nashville, TN
+14. Ecological and Evolutionary Signal-processing and Informatics Laboratory, Department of Electrical and Computer Engineering, Drexel University, Philadelphia, PA
+15. Computational Biology Department, School of Computer Science, Carnegie Mellon University, Pittsburgh, PA
+16. Biophysics Program, Stanford University, Stanford, CA
+17. Department of Computer Science, University of Virginia, Charlottesville, VA
+18. Imaging Platform, Broad Institute of Harvard and MIT, Cambridge, MA
+19. Department of Computer Science, Stanford University, Stanford, CA
+20. Toyota Technological Institute at Chicago, Chicago, IL
+21. Department of Computer Science, Trinity University, San Antonio, TX
+22. Lewis-Sigler Institute for Integrative Genomics, Princeton University, Princeton, NJ
+23. Integrative Bioinformatics, National Institute of Environmental Health Sciences, National Institutes of Health, Research Triangle Park, NC
+24. Howard Hughes Medical Institute, Janelia Research Campus, Ashburn, VA
+25. National Center for Biotechnology Information and National Library of Medicine, National Institutes of Health, Bethesda, MD
+26. Department of Wildlife Ecology and Conservation, University of Florida, Gainesville, FL
+27. ClosedLoop.ai, Austin, TX
+28. Department of Genetics, Stanford University, Stanford, CA
+29. Division of Biomedical Informatics and Personalized Medicine, University of Colorado School of Medicine, Aurora, CO
+30. Institute of Organic Chemistry, Westfälische Wilhelms-Universität Münster, Münster, Germany
+31. Innovation Center for Biomedical Informatics, Georgetown University Medical Center, Washington, DC
+32. Department of Pathology and Immunology, Washington University in Saint Louis, Saint Louis, MO
+33. Department of Medicine, Brown University, Providence, RI
+34. Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison, Madison, WI
+35. Morgridge Institute for Research, Madison, WI
 
 </small>
 
@@ -2072,6 +2086,10 @@ We continued using the open repository on the GitHub version control platform ([
   
 
   
+Drafted one or more subsections: Joshua J. Levy,Brock C. Christensen,Alexander J. Titus.
+  
+
+  
 Drafted sub-sections, edited the manuscript, reviewed pull requests, and coordinated co-authors: Casey S. Greene.
   
 
@@ -2086,6 +2104,8 @@ drafted the manuscript or provided substantial critical revisions;
 approved the final manuscript draft; and agreed to be accountable in all aspects of the work.
 Individuals who did not contribute in all of these ways, but who did participate, are acknowledged below.
 We grouped authors into the following four classes of approximately equal contributions and randomly ordered authors within each contribution class.
+
+  
 
   
 Drafted multiple sub-sections along with extensive editing, pull request reviews, or discussion: Travers Ching, Daniel S. Himmelstein, Brett K. Beaulieu-Jones, Alexandr A. Kalinin, Brian T. Do, Gregory P. Way, Enrico Ferrero, Paul-Michael Agapow, Michael Zietz, Michael M. Hoffman.
@@ -2113,6 +2133,9 @@ Revised specific sub-sections or supervised drafting one or more sub-sections: D
 |Brett K. Beaulieu-Jones|None|2017-05-26|
 |Alexandr A. Kalinin|None|2017-05-26|
 |Brian T. Do|None|2017-05-26|
+|Joshua J. Levy|None|2020-03-04|
+|Brock C. Christensen|None|2020-03-05|
+|Alexander J. Titus|None|2020-03-07|
 |Gregory P. Way|None|2017-05-26|
 |Enrico Ferrero|Full-time employee of GlaxoSmithKline.|2017-05-26|
 |Paul-Michael Agapow|None|2017-05-26|
@@ -2143,7 +2166,7 @@ Revised specific sub-sections or supervised drafting one or more sub-sections: D
 |S. Joshua Swamidass|None|2017-05-26|
 |Austin Huang|None|2017-05-26|
 |Anthony Gitter|None|2017-05-26|
-|Casey S. Greene|None|2017-05-26|
+|Casey S. Greene|None|2020-03-09|
 
 ### Acknowledgements
 
