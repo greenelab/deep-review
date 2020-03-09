@@ -81,7 +81,7 @@ authors:
     v2: "Drafted one or more subsections"
     coi:
       string: "None"
-      lastapproved: !!str 2019-07-22
+      lastapproved: !!str 2020-03-04
   - github: brockclarke
     name: Brock C. Christensen
     orcid: 0000-0003-3022-426X
@@ -93,7 +93,7 @@ authors:
     v2: "Drafted one or more subsections"
     coi:
       string: "None"
-      lastapproved: !!str 2019-08-01
+      lastapproved: !!str 2020-03-05
   - github: AlexanderTitus
     name: Alexander J. Titus
     orcid: 0000-0002-0145-9564
@@ -105,7 +105,7 @@ authors:
     v2: "Drafted one or more subsections"
     coi:
       string: "None"
-      lastapproved: !!str 2019-07-23
+      lastapproved: !!str 2020-03-07
   - github: gwaygenomics
     name: Gregory P. Way
     orcid: 0000-0002-0503-9348
@@ -478,4 +478,4 @@ authors:
     v2: "Drafted sub-sections, edited the manuscript, reviewed pull requests, and coordinated co-authors"
     coi:
       string: "None"
-      lastapproved: !!str 2017-05-26
+      lastapproved: !!str 2020-03-09
