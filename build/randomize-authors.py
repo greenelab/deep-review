@@ -46,6 +46,7 @@ def get_head_commit():
     try:
         return subprocess.check_output(args)
     except subprocess.CalledProcessError:
+        sys.stderr.write(f"randomize-authors: get_head_commit failed, setting seed to None.\n")
         return None
 
 

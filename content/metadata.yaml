@@ -61,3 +61,16 @@ authors:
     coi:
       string: "None"
       lastapproved: !!str 2020-03-10
+  - github: dhimmel
+    name: Daniel S. Himmelstein
+    orcid: 0000-0002-3012-7446
+    email: daniel.himmelstein@gmail.com
+    affiliations:
+      - Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America
+    funders: G-2018-11163 and GBMF4552
+    v1: "edited the manuscript, reviewed pull requests, and developed Manubot"
+    v2: "edited the manuscript, reviewed pull requests, and developed Manubot"
+    coi:
+      string: "None"
+      lastapproved: !!str 2020-03-10
+  
