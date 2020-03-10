@@ -11,6 +11,42 @@ keywords:
   - manubot
 lang: en-US
 authors:
+  - github: jlevy44
+    name: Joshua J. Levy
+    orcid: 0000-0001-8050-1291
+    email: joshua.j.levy.gr@dartmouth.edu
+    affiliations:
+      - Program in Quantitative Biomedical Sciences, Geisel School of Medicine at Dartmouth, Lebanon, NH
+    funders: Burroughs Wellcome Fund Big Data in the Life Sciences training grant at Dartmouth
+    v1: ""
+    v2: "Drafted one or more subsections"
+    coi:
+      string: "None"
+      lastapproved: !!str 2020-03-04
+  - github: brockclarke
+    name: Brock C. Christensen
+    orcid: 0000-0003-3022-426X
+    email: brock.christensen@dartmouth.edu
+    affiliations:
+      - Department of Epidemiology, Geisel School of Medicine, Dartmouth College, Lebanon, NH
+    funders: NIH R01CA216265, Dartmouth College Neukom Institute for Computational Science CompX award
+    v1: ""
+    v2: "Drafted one or more subsections"
+    coi:
+      string: "None"
+      lastapproved: !!str 2020-03-05
+  - github: AlexanderTitus
+    name: Alexander J. Titus
+    orcid: 0000-0002-0145-9564
+    email: alexander.j.titus@dartmouth.edu
+    affiliations:
+      - Department of Epidemiology, Geisel School of Medicine, Dartmouth College, Lebanon, NH
+    funders: NIH T32LM012204
+    v1: ""
+    v2: "Drafted one or more subsections"
+    coi:
+      string: "None"
+      lastapproved: !!str 2020-03-07
   - github: cgreene
     name: Casey S. Greene
     orcid: 0000-0001-8713-9213
