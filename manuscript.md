@@ -1,9 +1,10 @@
 ---
 author-meta:
-- Joshua J. Levy
-- Brock C. Christensen
 - Alexander J. Titus
 - Casey S. Greene
+- Daniel S. Himmelstein
+- Brock C. Christensen
+- Joshua J. Levy
 bibliography:
 - content/manual-references-2020-01-29.json
 - content/manual-references.json
@@ -42,18 +43,6 @@ header-includes: '<!--
 
   <meta name="citation_technical_report_institution" content="Manubot" />
 
-  <meta name="citation_author" content="Joshua J. Levy" />
-
-  <meta name="citation_author_institution" content="Program in Quantitative Biomedical Sciences, Geisel School of Medicine at Dartmouth, Lebanon, NH" />
-
-  <meta name="citation_author_orcid" content="0000-0001-8050-1291" />
-
-  <meta name="citation_author" content="Brock C. Christensen" />
-
-  <meta name="citation_author_institution" content="Department of Epidemiology, Geisel School of Medicine, Dartmouth College, Lebanon, NH" />
-
-  <meta name="citation_author_orcid" content="0000-0003-3022-426X" />
-
   <meta name="citation_author" content="Alexander J. Titus" />
 
   <meta name="citation_author_institution" content="Department of Epidemiology, Geisel School of Medicine, Dartmouth College, Lebanon, NH" />
@@ -68,6 +57,24 @@ header-includes: '<!--
 
   <meta name="citation_author_orcid" content="0000-0001-8713-9213" />
 
+  <meta name="citation_author" content="Daniel S. Himmelstein" />
+
+  <meta name="citation_author_institution" content="Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America" />
+
+  <meta name="citation_author_orcid" content="0000-0002-3012-7446" />
+
+  <meta name="citation_author" content="Brock C. Christensen" />
+
+  <meta name="citation_author_institution" content="Department of Epidemiology, Geisel School of Medicine, Dartmouth College, Lebanon, NH" />
+
+  <meta name="citation_author_orcid" content="0000-0003-3022-426X" />
+
+  <meta name="citation_author" content="Joshua J. Levy" />
+
+  <meta name="citation_author_institution" content="Program in Quantitative Biomedical Sciences, Geisel School of Medicine at Dartmouth, Lebanon, NH" />
+
+  <meta name="citation_author_orcid" content="0000-0001-8050-1291" />
+
   <link rel="canonical" href="https://greenelab.github.io/deep-review/" />
 
   <meta property="og:url" content="https://greenelab.github.io/deep-review/" />
@@ -80,19 +87,19 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/deep-review/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/deep-review/v/a1e44575bada6295dc253f9d53680dd21555effa/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/deep-review/v/494172feb60b5142ddf0649cfb8042df9af38f99/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/deep-review/v/a1e44575bada6295dc253f9d53680dd21555effa/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/deep-review/v/494172feb60b5142ddf0649cfb8042df9af38f99/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/deep-review/v/a1e44575bada6295dc253f9d53680dd21555effa/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/deep-review/v/494172feb60b5142ddf0649cfb8042df9af38f99/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
   <meta property="twitter:card" content="summary_large_image" />
 
-  <meta property="og:image" content="https://github.com/greenelab/deep-review/raw/a1e44575bada6295dc253f9d53680dd21555effa/thumbnail.png" />
+  <meta property="og:image" content="https://github.com/greenelab/deep-review/raw/494172feb60b5142ddf0649cfb8042df9af38f99/thumbnail.png" />
 
-  <meta property="twitter:image" content="https://github.com/greenelab/deep-review/raw/a1e44575bada6295dc253f9d53680dd21555effa/thumbnail.png" />
+  <meta property="twitter:image" content="https://github.com/greenelab/deep-review/raw/494172feb60b5142ddf0649cfb8042df9af38f99/thumbnail.png" />
 
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
 
@@ -132,9 +139,9 @@ New authors and links to new sections are available in [GitHub Issue #959](https
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/deep-review/v/a1e44575bada6295dc253f9d53680dd21555effa/))
+([permalink](https://greenelab.github.io/deep-review/v/494172feb60b5142ddf0649cfb8042df9af38f99/))
 was automatically generated
-from [greenelab/deep-review@a1e4457](https://github.com/greenelab/deep-review/tree/a1e44575bada6295dc253f9d53680dd21555effa)
+from [greenelab/deep-review@494172f](https://github.com/greenelab/deep-review/tree/494172feb60b5142ddf0649cfb8042df9af38f99)
 on March 10, 2020.
 </em></small>
 
@@ -143,26 +150,29 @@ on March 10, 2020.
 ### Version 2.0 Authors
 
 
-  [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-8050-1291)
-    Joshua J. Levy<sup>2.1♠</sup>,
-  [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-3022-426X)
-    Brock C. Christensen<sup>2.2♠</sup>,
   [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-0145-9564)
-    Alexander J. Titus<sup>2.2♠</sup>,
+    Alexander J. Titus<sup>2.1⚄</sup>,
   [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-8713-9213)
-    Casey S. Greene<sup>2.3,2.4♠,†</sup>,
+    Casey S. Greene<sup>2.2,2.3⚄,†</sup>,
+  [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-3012-7446)
+    Daniel S. Himmelstein<sup>2.4⚄</sup>,
+  [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-3022-426X)
+    Brock C. Christensen<sup>2.1⚄</sup>,
+  [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-8050-1291)
+    Joshua J. Levy<sup>2.5⚄</sup>,
 [The Version 1.0 Deep Review Authors](#version-1.0-authors)
 
-<sup>♠</sup> --- Author order for version 2.0 is currently randomized [with each new build](https://github.com/greenelab/deep-review/pull/997).<br>
+<sup>⚄</sup> --- Author order for version 2.0 is currently randomized [with each new build](https://github.com/greenelab/deep-review/pull/997).<br>
 <sup>†</sup> --- To whom correspondence should be addressed: greenescientist@gmail.com (C.S.G.)
 
 <small>
 
 
-2.1. Program in Quantitative Biomedical Sciences, Geisel School of Medicine at Dartmouth, Lebanon, NH<br>
-2.2. Department of Epidemiology, Geisel School of Medicine, Dartmouth College, Lebanon, NH<br>
-2.3. Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA<br>
-2.4. Childhood Cancer Data Lab, Alex's Lemonade Stand Foundation, Philadelphia, PA<br>
+2.1. Department of Epidemiology, Geisel School of Medicine, Dartmouth College, Lebanon, NH<br>
+2.2. Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA<br>
+2.3. Childhood Cancer Data Lab, Alex's Lemonade Stand Foundation, Philadelphia, PA<br>
+2.4. Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America<br>
+2.5. Program in Quantitative Biomedical Sciences, Geisel School of Medicine at Dartmouth, Lebanon, NH<br>
 
 </small>
 
@@ -2084,40 +2094,34 @@ Hence, diverse expertise was required to provide a forward-looking perspective.
 Accordingly, we collaboratively wrote this review in the open, enabling anyone with expertise to contribute.
 We wrote the manuscript in markdown and tracked changes using git.
 Contributions were handled through GitHub, with individuals submitting "pull requests" to suggest additions to the manuscript.
-This collaborative writing approach was later generalized into the Manubot workflow and software [@doi:10.1371/journal.pcbi.1007128].
+This collaborative writing approach was later generalized into [Manubot](https://manubot.org/) [@doi:10.1371/journal.pcbi.1007128].
 
-To facilitate citation, we [defined](https://github.com/greenelab/deep-review/blob/master/USAGE.md#citations) a markdown citation syntax.
-We supported citations to the following identifier types (in order of preference): DOIs, PubMed Central IDs, PubMed IDs, arXiv IDs, and URLs.
-References were automatically generated from citation metadata by querying APIs to generate [Citation Style Language](http://citationstyles.org/) (CSL) JSON items for each reference.
-[Pandoc](http://pandoc.org/) and [pandoc-citeproc](https://github.com/jgm/pandoc-citeproc) converted the markdown to HTML and PDF, while rendering the formatted citations and references.
+Manubot supports citations of persistent identifiers, such as DOIs, PubMed Central IDs, PubMed IDs, arXiv IDs, and URLs.
+This reduces one major barrier to collaboratively writing, which is syncing reference managers between participants.
+In addition, Manubot using continuous integration to build and deploy manuscripts.
+This allows for automated error checking of proposed changes to catch malformated citations and invalid syntax.
+Originally, the Deep Review used Travis CI for continuous integration, but in 2020 switched to GitHub Actions, which became the default for Manubot manuscripts.
 
-We implemented continuous analysis so the manuscript was automatically regenerated whenever the source changed [@doi:10.1038/nbt.3780].
-We configured Travis CI---a continuous integration service---to fetch new citation metadata and rebuild the manuscript for every commit.
-Accordingly, formatting or citation errors in pull requests would cause the Travis CI build to fail, automating quality control.
-In addition, the build process renders templated variables, such as the reference counts mentioned above, to automate the updating of dynamic content.
-When contributions were merged into the `master` branch, Travis CI deployed the built manuscript by committing back to the GitHub repository.
-As a result, the latest manuscript version is always available at https://greenelab.github.io/deep-review.
-To ensure a consistent software environment, we defined a versioned [conda](https://conda.io) environment of the software dependencies.
-
-In addition, we instructed the Travis CI deployment script to perform blockchain timestamping [@tag:carlisle; @tag:timestamps].
-Using [OpenTimestamps](https://opentimestamps.org/), we submitted hashes for the manuscript and the source git commit for timestamping in the Bitcoin blockchain.
-These timestamps attest that a given version of this manuscript (and its history) existed at a given point in time.
-The ability to irrefutably prove manuscript existence at a past time could be important to establish scientific precedence and enforce an immutable record of authorship.
+For version 1.0 of the Deep Review, author order was randomized as described in [Version 1.0] [@tag:techblog-perkel].
+However, this was a one-time manual process.
+Starting with version 2.0, we began shuffling authors for every manuscript version.
+Manubot allowed us to automate this process, using the Git commit hash as a random seed to ensure reproducible ordering.
 
 ### Author contributions
 
 #### Version 2.0
 
-We continued using the open repository on the GitHub version control platform ([`greenelab/deep-review`](https://github.com/greenelab/deep-review)) [@url:https://github.com/greenelab/deep-review], which was established to write the Version 1.0 manuscript. Drafted one or more subsections: Joshua J. Levy,Brock C. Christensen,Alexander J. Titus. Drafted sub-sections, edited the manuscript, reviewed pull requests, and coordinated co-authors: Casey S. Greene. 
+We continued using the open repository on the GitHub version control platform ([`greenelab/deep-review`](https://github.com/greenelab/deep-review)) [@url:https://github.com/greenelab/deep-review], which was established to write the Version 1.0 manuscript. Drafted one or more subsections: Alexander J. Titus,Brock C. Christensen,Joshua J. Levy. Drafted sub-sections, edited the manuscript, reviewed pull requests, and coordinated co-authors: Casey S. Greene. edited the manuscript, reviewed pull requests, and developed Manubot: Daniel S. Himmelstein. 
 
 ##### Version 2.0 Competing Interests
 
 |Author|Competing Interests|Last Reviewed|
 |---|---|---|
-|Joshua J. Levy|None|2020-03-04|
-|Brock C. Christensen|None|2020-03-05|
 |Alexander J. Titus|None|2020-03-07|
 |Casey S. Greene|None|2020-03-10|
+|Daniel S. Himmelstein|None|2020-03-10|
+|Brock C. Christensen|None|2020-03-05|
+|Joshua J. Levy|None|2020-03-04|
 
 ##### Version 2.0 Funding Statement
 
@@ -2542,6 +2546,7 @@ We would like to thank Robert Gieseke, Ruibang Luo, Stephen Ra, Sourav Singh, an
 [@tag:platt_scaling]: url:http://citeseer.ist.psu.edu/viewdoc/summary?doi=10.1.1.41.1639
 [@tag:retinopathy_uncertainty]: doi:10.1038/s41598-017-17876-z
 [@tag:strong_adversary]: arxiv:1705.07263
+[@tag:techblog-perkel]: url:https://blogs.nature.com/naturejobs/2018/02/20/techblog-manubot-powers-a-crowdsourced-deep-learning-review/
 [@tag:temp_out_dist]: arxiv:1706.02690
 [@tag:timestamps]: url:https://blog.dhimmel.com/irreproducible-timestamps/
 [@tag:uncertainty_ensembles]: arxiv:1612.01474
