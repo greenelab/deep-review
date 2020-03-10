@@ -1,10 +1,10 @@
 ---
 author-meta:
-- Alexander J. Titus
-- Daniel S. Himmelstein
-- Joshua J. Levy
 - Casey S. Greene
 - Brock C. Christensen
+- Alexander J. Titus
+- Joshua J. Levy
+- Daniel S. Himmelstein
 bibliography:
 - content/manual-references-2020-01-29.json
 - content/manual-references.json
@@ -43,24 +43,6 @@ header-includes: '<!--
 
   <meta name="citation_technical_report_institution" content="Manubot" />
 
-  <meta name="citation_author" content="Alexander J. Titus" />
-
-  <meta name="citation_author_institution" content="Department of Epidemiology, Geisel School of Medicine, Dartmouth College, Lebanon, NH" />
-
-  <meta name="citation_author_orcid" content="0000-0002-0145-9564" />
-
-  <meta name="citation_author" content="Daniel S. Himmelstein" />
-
-  <meta name="citation_author_institution" content="Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America" />
-
-  <meta name="citation_author_orcid" content="0000-0002-3012-7446" />
-
-  <meta name="citation_author" content="Joshua J. Levy" />
-
-  <meta name="citation_author_institution" content="Program in Quantitative Biomedical Sciences, Geisel School of Medicine at Dartmouth, Lebanon, NH" />
-
-  <meta name="citation_author_orcid" content="0000-0001-8050-1291" />
-
   <meta name="citation_author" content="Casey S. Greene" />
 
   <meta name="citation_author_institution" content="Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA" />
@@ -75,6 +57,24 @@ header-includes: '<!--
 
   <meta name="citation_author_orcid" content="0000-0003-3022-426X" />
 
+  <meta name="citation_author" content="Alexander J. Titus" />
+
+  <meta name="citation_author_institution" content="Department of Epidemiology, Geisel School of Medicine, Dartmouth College, Lebanon, NH" />
+
+  <meta name="citation_author_orcid" content="0000-0002-0145-9564" />
+
+  <meta name="citation_author" content="Joshua J. Levy" />
+
+  <meta name="citation_author_institution" content="Program in Quantitative Biomedical Sciences, Geisel School of Medicine at Dartmouth, Lebanon, NH" />
+
+  <meta name="citation_author_orcid" content="0000-0001-8050-1291" />
+
+  <meta name="citation_author" content="Daniel S. Himmelstein" />
+
+  <meta name="citation_author_institution" content="Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America" />
+
+  <meta name="citation_author_orcid" content="0000-0002-3012-7446" />
+
   <link rel="canonical" href="https://greenelab.github.io/deep-review/" />
 
   <meta property="og:url" content="https://greenelab.github.io/deep-review/" />
@@ -87,19 +87,19 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/deep-review/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/deep-review/v/23ef555b5b6f3a452363124942dbfb91d336ee0a/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/deep-review/v/05b9080c1f27ba0d728e964ba2914e15a5b5d0e5/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/deep-review/v/23ef555b5b6f3a452363124942dbfb91d336ee0a/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/deep-review/v/05b9080c1f27ba0d728e964ba2914e15a5b5d0e5/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/deep-review/v/23ef555b5b6f3a452363124942dbfb91d336ee0a/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/deep-review/v/05b9080c1f27ba0d728e964ba2914e15a5b5d0e5/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
   <meta property="twitter:card" content="summary_large_image" />
 
-  <meta property="og:image" content="https://github.com/greenelab/deep-review/raw/23ef555b5b6f3a452363124942dbfb91d336ee0a/thumbnail.png" />
+  <meta property="og:image" content="https://github.com/greenelab/deep-review/raw/05b9080c1f27ba0d728e964ba2914e15a5b5d0e5/thumbnail.png" />
 
-  <meta property="twitter:image" content="https://github.com/greenelab/deep-review/raw/23ef555b5b6f3a452363124942dbfb91d336ee0a/thumbnail.png" />
+  <meta property="twitter:image" content="https://github.com/greenelab/deep-review/raw/05b9080c1f27ba0d728e964ba2914e15a5b5d0e5/thumbnail.png" />
 
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
 
@@ -139,9 +139,9 @@ New authors and links to new sections are available in [GitHub Issue #959](https
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/deep-review/v/23ef555b5b6f3a452363124942dbfb91d336ee0a/))
+([permalink](https://greenelab.github.io/deep-review/v/05b9080c1f27ba0d728e964ba2914e15a5b5d0e5/))
 was automatically generated
-from [greenelab/deep-review@23ef555](https://github.com/greenelab/deep-review/tree/23ef555b5b6f3a452363124942dbfb91d336ee0a)
+from [greenelab/deep-review@05b9080](https://github.com/greenelab/deep-review/tree/05b9080c1f27ba0d728e964ba2914e15a5b5d0e5)
 on March 10, 2020.
 </em></small>
 
@@ -150,16 +150,16 @@ on March 10, 2020.
 ### Version 2.0 Authors
 
 
-  [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-0145-9564)
-    Alexander J. Titus<sup>2.1⚄</sup>,
-  [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-3012-7446)
-    Daniel S. Himmelstein<sup>2.2⚄</sup>,
-  [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-8050-1291)
-    Joshua J. Levy<sup>2.3⚄</sup>,
   [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-8713-9213)
-    Casey S. Greene<sup>2.4,2.5⚄,†</sup>,
+    Casey S. Greene<sup>2.1,2.2⚄,†</sup>,
   [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-3022-426X)
-    Brock C. Christensen<sup>2.1⚄</sup>,
+    Brock C. Christensen<sup>2.3⚄</sup>,
+  [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-0145-9564)
+    Alexander J. Titus<sup>2.3⚄</sup>,
+  [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-8050-1291)
+    Joshua J. Levy<sup>2.4⚄</sup>,
+  [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-3012-7446)
+    Daniel S. Himmelstein<sup>2.5⚄</sup>,
 [The Version 1.0 Deep Review Authors](#version-1.0-authors)
 
 <sup>⚄</sup> --- Author order for version 2.0 is currently randomized [with each new build](https://github.com/greenelab/deep-review/pull/997).<br>
@@ -168,11 +168,11 @@ on March 10, 2020.
 <small>
 
 
-2.1. Department of Epidemiology, Geisel School of Medicine, Dartmouth College, Lebanon, NH<br>
-2.2. Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America<br>
-2.3. Program in Quantitative Biomedical Sciences, Geisel School of Medicine at Dartmouth, Lebanon, NH<br>
-2.4. Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA<br>
-2.5. Childhood Cancer Data Lab, Alex's Lemonade Stand Foundation, Philadelphia, PA<br>
+2.1. Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA<br>
+2.2. Childhood Cancer Data Lab, Alex's Lemonade Stand Foundation, Philadelphia, PA<br>
+2.3. Department of Epidemiology, Geisel School of Medicine, Dartmouth College, Lebanon, NH<br>
+2.4. Program in Quantitative Biomedical Sciences, Geisel School of Medicine at Dartmouth, Lebanon, NH<br>
+2.5. Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America<br>
 
 </small>
 
@@ -255,6 +255,7 @@ on March 10, 2020.
 <sup>†</sup> --- To whom correspondence should be addressed: gitter@biostat.wisc.edu (A.G.) and greenescientist@gmail.com (C.S.G.)
 
 <small>
+
 1.1. Molecular Biosciences and Bioengineering Graduate Program, University of Hawaii at Manoa, Honolulu, HI  
 1.2. Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA  
 1.3. Genomics and Computational Biology Graduate Group, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA  
@@ -290,6 +291,7 @@ on March 10, 2020.
 1.33. Department of Medicine, Brown University, Providence, RI  
 1.34. Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison, Madison, WI  
 1.35. Morgridge Institute for Research, Madison, WI  
+
 </small>
 
 
@@ -2110,17 +2112,17 @@ Manubot allowed us to automate this process, using the Git commit hash as a rand
 
 #### Version 2.0
 
-We continued using the open repository on the GitHub version control platform ([`greenelab/deep-review`](https://github.com/greenelab/deep-review)) [@url:https://github.com/greenelab/deep-review], which was established to write the Version 1.0 manuscript. Drafted one or more subsections: Alexander J. Titus,Joshua J. Levy,Brock C. Christensen. Drafted sub-sections, edited the manuscript, reviewed pull requests, and coordinated co-authors: Casey S. Greene. edited the manuscript, reviewed pull requests, and developed Manubot: Daniel S. Himmelstein. 
+We continued using the open repository on the GitHub version control platform ([`greenelab/deep-review`](https://github.com/greenelab/deep-review)) [@url:https://github.com/greenelab/deep-review], which was established to write the Version 1.0 manuscript. Drafted one or more subsections: Brock C. Christensen,Alexander J. Titus,Joshua J. Levy. Drafted sub-sections, edited the manuscript, reviewed pull requests, and coordinated co-authors: Casey S. Greene. edited the manuscript, reviewed pull requests, and developed Manubot: Daniel S. Himmelstein. 
 
 ##### Version 2.0 Competing Interests
 
 |Author|Competing Interests|Last Reviewed|
 |---|---|---|
-|Alexander J. Titus|None|2020-03-07|
-|Daniel S. Himmelstein|None|2020-03-10|
-|Joshua J. Levy|None|2020-03-04|
 |Casey S. Greene|None|2020-03-10|
 |Brock C. Christensen|None|2020-03-05|
+|Alexander J. Titus|None|2020-03-07|
+|Joshua J. Levy|None|2020-03-04|
+|Daniel S. Himmelstein|None|2020-03-10|
 
 ##### Version 2.0 Funding Statement
 
