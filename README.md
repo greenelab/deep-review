@@ -22,7 +22,7 @@ The original version of the Deep Review was published in 2018 and should be cite
 As of writing, we are aiming to publish an update of the deep review.
 We will continue to make project preprints available on bioRxiv or another preprint service and aim to continue publishing the finished reviews in a peer-reviewed venue as well.
 Like the initial release, we are planning for an open and collaborative effort.
-New contributors are welcome and will be listed as Version 2.0 authors.
+New contributors are welcome and will be listed as version 2.0 authors.
 Please see [issue #810](https://github.com/greenelab/deep-review/issues/810) to contribute to the discussion of future plans, and help decide how to best continue this project.
 
 **Manubot updates:**
