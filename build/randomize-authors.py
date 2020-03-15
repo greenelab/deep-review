@@ -11,7 +11,7 @@ from manubot.process.ci import get_continuous_integration_parameters
 
 def parse_args():
     parser = argparse.ArgumentParser(
-        description="Randomize metadata.authors. Ovewrites metadata.yaml"
+        description="Randomize metadata.authors. Overwrites metadata.yaml"
     )
     parser.add_argument(
         "--path", default="content/metadata.yaml", help="path to metadata.yaml"
