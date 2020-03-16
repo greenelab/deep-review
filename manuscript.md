@@ -1,14 +1,14 @@
 ---
 author-meta:
-- Casey S. Greene
-- Brock C. Christensen
 - Alexander J. Titus
 - Joshua J. Levy
+- Casey S. Greene
+- Brock C. Christensen
 - Daniel S. Himmelstein
 bibliography:
 - content/manual-references-2020-01-29.json
 - content/manual-references.json
-date-meta: '2020-03-10'
+date-meta: '2020-03-16'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -27,9 +27,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Opportunities and obstacles for deep learning in biology and medicine [update in progress]" />
 
-  <meta name="dc.date" content="2020-03-10" />
+  <meta name="dc.date" content="2020-03-16" />
 
-  <meta name="citation_publication_date" content="2020-03-10" />
+  <meta name="citation_publication_date" content="2020-03-16" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -42,6 +42,18 @@ header-includes: '<!--
   <meta name="citation_journal_title" content="Manubot" />
 
   <meta name="citation_technical_report_institution" content="Manubot" />
+
+  <meta name="citation_author" content="Alexander J. Titus" />
+
+  <meta name="citation_author_institution" content="Department of Epidemiology, Geisel School of Medicine, Dartmouth College, Lebanon, NH" />
+
+  <meta name="citation_author_orcid" content="0000-0002-0145-9564" />
+
+  <meta name="citation_author" content="Joshua J. Levy" />
+
+  <meta name="citation_author_institution" content="Program in Quantitative Biomedical Sciences, Geisel School of Medicine at Dartmouth, Lebanon, NH" />
+
+  <meta name="citation_author_orcid" content="0000-0001-8050-1291" />
 
   <meta name="citation_author" content="Casey S. Greene" />
 
@@ -56,18 +68,6 @@ header-includes: '<!--
   <meta name="citation_author_institution" content="Department of Epidemiology, Geisel School of Medicine, Dartmouth College, Lebanon, NH" />
 
   <meta name="citation_author_orcid" content="0000-0003-3022-426X" />
-
-  <meta name="citation_author" content="Alexander J. Titus" />
-
-  <meta name="citation_author_institution" content="Department of Epidemiology, Geisel School of Medicine, Dartmouth College, Lebanon, NH" />
-
-  <meta name="citation_author_orcid" content="0000-0002-0145-9564" />
-
-  <meta name="citation_author" content="Joshua J. Levy" />
-
-  <meta name="citation_author_institution" content="Program in Quantitative Biomedical Sciences, Geisel School of Medicine at Dartmouth, Lebanon, NH" />
-
-  <meta name="citation_author_orcid" content="0000-0001-8050-1291" />
 
   <meta name="citation_author" content="Daniel S. Himmelstein" />
 
@@ -87,19 +87,19 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/deep-review/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/deep-review/v/05b9080c1f27ba0d728e964ba2914e15a5b5d0e5/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/deep-review/v/5dcf0daef5149fb9d1d1fca11e90ce9cdf4152bc/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/deep-review/v/05b9080c1f27ba0d728e964ba2914e15a5b5d0e5/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/deep-review/v/5dcf0daef5149fb9d1d1fca11e90ce9cdf4152bc/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/deep-review/v/05b9080c1f27ba0d728e964ba2914e15a5b5d0e5/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/deep-review/v/5dcf0daef5149fb9d1d1fca11e90ce9cdf4152bc/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
   <meta property="twitter:card" content="summary_large_image" />
 
-  <meta property="og:image" content="https://github.com/greenelab/deep-review/raw/05b9080c1f27ba0d728e964ba2914e15a5b5d0e5/thumbnail.png" />
+  <meta property="og:image" content="https://github.com/greenelab/deep-review/raw/5dcf0daef5149fb9d1d1fca11e90ce9cdf4152bc/thumbnail.png" />
 
-  <meta property="twitter:image" content="https://github.com/greenelab/deep-review/raw/05b9080c1f27ba0d728e964ba2914e15a5b5d0e5/thumbnail.png" />
+  <meta property="twitter:image" content="https://github.com/greenelab/deep-review/raw/5dcf0daef5149fb9d1d1fca11e90ce9cdf4152bc/thumbnail.png" />
 
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
 
@@ -131,33 +131,33 @@ title: Opportunities and obstacles for deep learning in biology and medicine [up
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
 [
 []{.fas .fa-info-circle .fa-lg} **Update Underway**<br>
-A published version of this manuscript from 04 April 2018, termed Version 1.0, is available at <https://doi.org/10.1098/rsif.2017.0387>.
-A new effort is underway to update the manuscript to a Version 2.0 that is current as of the first half of 2020.
+A published version of this manuscript from 04 April 2018, termed version 1.0, is available at <https://doi.org/10.1098/rsif.2017.0387>.
+A new effort is underway to update the manuscript to a version 2.0 that is current as of the first half of 2020.
 New authors and links to new sections are available in [GitHub Issue #959](https://github.com/greenelab/deep-review/issues/959).
 ]{.banner .lightred}
 
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/deep-review/v/05b9080c1f27ba0d728e964ba2914e15a5b5d0e5/))
+([permalink](https://greenelab.github.io/deep-review/v/5dcf0daef5149fb9d1d1fca11e90ce9cdf4152bc/))
 was automatically generated
-from [greenelab/deep-review@05b9080](https://github.com/greenelab/deep-review/tree/05b9080c1f27ba0d728e964ba2914e15a5b5d0e5)
-on March 10, 2020.
+from [greenelab/deep-review@5dcf0da](https://github.com/greenelab/deep-review/tree/5dcf0daef5149fb9d1d1fca11e90ce9cdf4152bc)
+on March 16, 2020.
 </em></small>
 
 ## Authors
 
-### Version 2.0 Authors
+### Version 2.0 authors
 
 
-  [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-8713-9213)
-    Casey S. Greene<sup>2.1,2.2⚄,†</sup>,
-  [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-3022-426X)
-    Brock C. Christensen<sup>2.3⚄</sup>,
   [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-0145-9564)
-    Alexander J. Titus<sup>2.3⚄</sup>,
+    Alexander J. Titus<sup>2.1⚄</sup>,
   [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-8050-1291)
-    Joshua J. Levy<sup>2.4⚄</sup>,
+    Joshua J. Levy<sup>2.2⚄</sup>,
+  [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-8713-9213)
+    Casey S. Greene<sup>2.3,2.4⚄,†</sup>,
+  [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-3022-426X)
+    Brock C. Christensen<sup>2.1⚄</sup>,
   [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-3012-7446)
     Daniel S. Himmelstein<sup>2.5⚄</sup>,
 [The Version 1.0 Deep Review Authors](#version-1.0-authors)
@@ -168,15 +168,15 @@ on March 10, 2020.
 <small>
 
 
-2.1. Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA<br>
-2.2. Childhood Cancer Data Lab, Alex's Lemonade Stand Foundation, Philadelphia, PA<br>
-2.3. Department of Epidemiology, Geisel School of Medicine, Dartmouth College, Lebanon, NH<br>
-2.4. Program in Quantitative Biomedical Sciences, Geisel School of Medicine at Dartmouth, Lebanon, NH<br>
+2.1. Department of Epidemiology, Geisel School of Medicine, Dartmouth College, Lebanon, NH<br>
+2.2. Program in Quantitative Biomedical Sciences, Geisel School of Medicine at Dartmouth, Lebanon, NH<br>
+2.3. Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA<br>
+2.4. Childhood Cancer Data Lab, Alex's Lemonade Stand Foundation, Philadelphia, PA<br>
 2.5. Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America<br>
 
 </small>
 
-### Version 1.0 Authors
+### Version 1.0 authors
 
   [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-5577-3516)
     Travers Ching<sup>1.1,☯</sup>,
@@ -2098,12 +2098,12 @@ Contributions were handled through GitHub, with individuals submitting "pull req
 This collaborative writing approach was later generalized into [Manubot](https://manubot.org/) [@doi:10.1371/journal.pcbi.1007128].
 
 Manubot supports citations of persistent identifiers, such as DOIs, PubMed Central IDs, PubMed IDs, arXiv IDs, and URLs.
-This reduces one major barrier to collaboratively writing, which is syncing reference managers between participants.
-In addition, Manubot using continuous integration to build and deploy manuscripts.
+This reduces one major barrier to writing collaboratively, which is syncing reference managers between participants.
+In addition, Manubot uses continuous integration to build and deploy manuscripts.
 This allows for automated error checking of proposed changes to catch malformated citations and invalid syntax.
 Originally, the Deep Review used Travis CI for continuous integration, but in 2020 switched to GitHub Actions, which became the default for Manubot manuscripts.
 
-For version 1.0 of the Deep Review, author order was randomized as described in [Version 1.0] [@tag:techblog-perkel].
+For version 1.0 of the Deep Review, author order was randomized as described in [version 1.0] [@tag:techblog-perkel].
 However, this was a one-time manual process.
 Starting with version 2.0, we began shuffling authors for every manuscript version.
 Manubot allowed us to automate this process, using the Git commit hash as a random seed to ensure reproducible ordering.
@@ -2112,19 +2112,26 @@ Manubot allowed us to automate this process, using the Git commit hash as a rand
 
 #### Version 2.0
 
-We continued using the open repository on the GitHub version control platform ([`greenelab/deep-review`](https://github.com/greenelab/deep-review)) [@url:https://github.com/greenelab/deep-review], which was established to write the Version 1.0 manuscript. Drafted one or more subsections: Brock C. Christensen,Alexander J. Titus,Joshua J. Levy. Drafted sub-sections, edited the manuscript, reviewed pull requests, and coordinated co-authors: Casey S. Greene. edited the manuscript, reviewed pull requests, and developed Manubot: Daniel S. Himmelstein. 
+We continued using the open repository on the GitHub version control platform ([`greenelab/deep-review`](https://github.com/greenelab/deep-review)) [@url:https://github.com/greenelab/deep-review], which was established to write the version 1.0 manuscript.
 
-##### Version 2.0 Competing Interests
+  Drafted one or more subsections: Alexander J. Titus, Joshua J. Levy, Brock C. Christensen. 
+
+  Drafted sub-sections, edited the manuscript, reviewed pull requests, and coordinated co-authors: Casey S. Greene. 
+
+  Edited the manuscript, reviewed pull requests, and developed Manubot: Daniel S. Himmelstein. 
+
+
+##### Version 2.0 competing interests
 
 |Author|Competing Interests|Last Reviewed|
 |---|---|---|
-|Casey S. Greene|None|2020-03-10|
-|Brock C. Christensen|None|2020-03-05|
 |Alexander J. Titus|None|2020-03-07|
 |Joshua J. Levy|None|2020-03-04|
+|Casey S. Greene|None|2020-03-10|
+|Brock C. Christensen|None|2020-03-05|
 |Daniel S. Himmelstein|None|2020-03-10|
 
-##### Version 2.0 Funding Statement
+##### Version 2.0 funding statement
 
 We acknowledge funding from the Gordon and Betty Moore Foundation award GBMF4552 (C.S.G. and D.S.H.);
 the National Institutes of Health awards R01HG010067 (C.S.G. and D.S.H.), R01CA237170 (C.S.G), T32LM012204 (A.J.T.), R01CA216265 (B.C.C.);
@@ -2141,13 +2148,13 @@ drafted the manuscript or provided substantial critical revisions;
 approved the final manuscript draft; and agreed to be accountable in all aspects of the work.
 Individuals who did not contribute in all of these ways, but who did participate, are acknowledged below.
 We grouped authors into the following four classes of approximately equal contributions and randomly ordered authors within each contribution class.
-Drafted multiple sub-sections along with extensive editing, pull request reviews, or discussion: Travers Ching, Daniel S. Himmelstein, Brett K. Beaulieu-Jones, Alexandr A. Kalinin, Brian T. Do, Gregory P. Way, Enrico Ferrero, Paul-Michael Agapow, Michael Zietz, Michael M. Hoffman.
+Drafted multiple sub-sections along with extensive editing, pull request reviews, or discussion: Travers Ching, Brett K. Beaulieu-Jones, Alexandr A. Kalinin, Brian T. Do, Gregory P. Way, Enrico Ferrero, Paul-Michael Agapow, Michael Zietz, Michael M. Hoffman.
+Edited the manuscript, reviewed pull requests, and developed Manubot: Daniel S. Himmelstein.
 Drafted one or more sub-sections: Wei Xie, Gail L. Rosen, Benjamin J. Lengerich, Johnny Israeli, Jack Lanchantin, Stephen Woloszynek, Anne E. Carpenter, Avanti Shrikumar, Jinbo Xu, Evan M. Cofer, Christopher A. Lavender, Srinivas C. Turaga, Amr M. Alexandari, Zhiyong Lu.
 Drafted sub-sections, edited the manuscript, reviewed pull requests, and coordinated co-authors: Anthony Gitter, Casey S. Greene.
 Revised specific sub-sections or supervised drafting one or more sub-sections: David J. Harris, Dave DeCaprio, Yanjun Qi, Anshul Kundaje, Yifan Peng, Laura K. Wiley, Marwin H.S. Segler, Simina M. Boca, S. Joshua Swamidass, Austin Huang.
 
-##### Version 1.0 Competing interests
-
+##### Version 1.0 competing interests
 
 |Author|Competing Interests|Last Reviewed|
 |---|---|---|
@@ -2188,7 +2195,7 @@ Revised specific sub-sections or supervised drafting one or more sub-sections: D
 |Anthony Gitter|None|2017-05-26|
 |Casey S. Greene|None|2017-05-26|
 
-##### Version 1.0 Funding Statement
+##### Version 1.0 funding statement
 
 We acknowledge funding from the Gordon and Betty Moore Foundation awards GBMF4552 (C.S.G. and D.S.H.) and GBMF4563 (D.J.H.);
 the Howard Hughes Medical Institute (S.C.T.);
