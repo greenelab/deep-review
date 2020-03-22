@@ -17,7 +17,7 @@ BRANCH=${TRAVIS_BRANCH:-master}
 # Add commit hash to the README
 OWNER_NAME="$(dirname "$REPO_SLUG")"
 REPO_NAME="$(basename "$REPO_SLUG")"
-export OWNER_NAME REPO_NAME
+export REPO_SLUG COMMIT OWNER_NAME REPO_NAME
 envsubst < webpage/README.md > webpage/README-complete.md
 mv webpage/README-complete.md webpage/README.md
 
