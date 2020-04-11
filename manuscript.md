@@ -1,14 +1,14 @@
 ---
 author-meta:
-- Alexander J. Titus
-- Joshua J. Levy
-- Casey S. Greene
 - Brock C. Christensen
+- Alexander J. Titus
+- Casey S. Greene
 - Daniel S. Himmelstein
+- Joshua J. Levy
 bibliography:
 - content/manual-references-2020-01-29.json
 - content/manual-references.json
-date-meta: '2020-03-16'
+date-meta: '2020-04-11'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -27,9 +27,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Opportunities and obstacles for deep learning in biology and medicine [update in progress]" />
 
-  <meta name="dc.date" content="2020-03-16" />
+  <meta name="dc.date" content="2020-04-11" />
 
-  <meta name="citation_publication_date" content="2020-03-16" />
+  <meta name="citation_publication_date" content="2020-04-11" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -43,17 +43,17 @@ header-includes: '<!--
 
   <meta name="citation_technical_report_institution" content="Manubot" />
 
+  <meta name="citation_author" content="Brock C. Christensen" />
+
+  <meta name="citation_author_institution" content="Department of Epidemiology, Geisel School of Medicine, Dartmouth College, Lebanon, NH" />
+
+  <meta name="citation_author_orcid" content="0000-0003-3022-426X" />
+
   <meta name="citation_author" content="Alexander J. Titus" />
 
   <meta name="citation_author_institution" content="Department of Epidemiology, Geisel School of Medicine, Dartmouth College, Lebanon, NH" />
 
   <meta name="citation_author_orcid" content="0000-0002-0145-9564" />
-
-  <meta name="citation_author" content="Joshua J. Levy" />
-
-  <meta name="citation_author_institution" content="Program in Quantitative Biomedical Sciences, Geisel School of Medicine at Dartmouth, Lebanon, NH" />
-
-  <meta name="citation_author_orcid" content="0000-0001-8050-1291" />
 
   <meta name="citation_author" content="Casey S. Greene" />
 
@@ -63,17 +63,17 @@ header-includes: '<!--
 
   <meta name="citation_author_orcid" content="0000-0001-8713-9213" />
 
-  <meta name="citation_author" content="Brock C. Christensen" />
-
-  <meta name="citation_author_institution" content="Department of Epidemiology, Geisel School of Medicine, Dartmouth College, Lebanon, NH" />
-
-  <meta name="citation_author_orcid" content="0000-0003-3022-426X" />
-
   <meta name="citation_author" content="Daniel S. Himmelstein" />
 
   <meta name="citation_author_institution" content="Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America" />
 
   <meta name="citation_author_orcid" content="0000-0002-3012-7446" />
+
+  <meta name="citation_author" content="Joshua J. Levy" />
+
+  <meta name="citation_author_institution" content="Program in Quantitative Biomedical Sciences, Geisel School of Medicine at Dartmouth, Lebanon, NH" />
+
+  <meta name="citation_author_orcid" content="0000-0001-8050-1291" />
 
   <link rel="canonical" href="https://greenelab.github.io/deep-review/" />
 
@@ -87,19 +87,19 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/deep-review/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/deep-review/v/5dcf0daef5149fb9d1d1fca11e90ce9cdf4152bc/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/deep-review/v/081fb466dd13c2813b3ae14bb916173f5d0442c5/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/deep-review/v/5dcf0daef5149fb9d1d1fca11e90ce9cdf4152bc/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/deep-review/v/081fb466dd13c2813b3ae14bb916173f5d0442c5/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/deep-review/v/5dcf0daef5149fb9d1d1fca11e90ce9cdf4152bc/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/deep-review/v/081fb466dd13c2813b3ae14bb916173f5d0442c5/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
   <meta property="twitter:card" content="summary_large_image" />
 
-  <meta property="og:image" content="https://github.com/greenelab/deep-review/raw/5dcf0daef5149fb9d1d1fca11e90ce9cdf4152bc/thumbnail.png" />
+  <meta property="og:image" content="https://github.com/greenelab/deep-review/raw/081fb466dd13c2813b3ae14bb916173f5d0442c5/thumbnail.png" />
 
-  <meta property="twitter:image" content="https://github.com/greenelab/deep-review/raw/5dcf0daef5149fb9d1d1fca11e90ce9cdf4152bc/thumbnail.png" />
+  <meta property="twitter:image" content="https://github.com/greenelab/deep-review/raw/081fb466dd13c2813b3ae14bb916173f5d0442c5/thumbnail.png" />
 
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
 
@@ -139,10 +139,10 @@ New authors and links to new sections are available in [GitHub Issue #959](https
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/deep-review/v/5dcf0daef5149fb9d1d1fca11e90ce9cdf4152bc/))
+([permalink](https://greenelab.github.io/deep-review/v/081fb466dd13c2813b3ae14bb916173f5d0442c5/))
 was automatically generated
-from [greenelab/deep-review@5dcf0da](https://github.com/greenelab/deep-review/tree/5dcf0daef5149fb9d1d1fca11e90ce9cdf4152bc)
-on March 16, 2020.
+from [greenelab/deep-review@081fb46](https://github.com/greenelab/deep-review/tree/081fb466dd13c2813b3ae14bb916173f5d0442c5)
+on April 11, 2020.
 </em></small>
 
 ## Authors
@@ -150,16 +150,16 @@ on March 16, 2020.
 ### Version 2.0 authors
 
 
-  [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-0145-9564)
-    Alexander J. Titus<sup>2.1⚄</sup>,
-  [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-8050-1291)
-    Joshua J. Levy<sup>2.2⚄</sup>,
-  [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-8713-9213)
-    Casey S. Greene<sup>2.3,2.4⚄,†</sup>,
   [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-3022-426X)
     Brock C. Christensen<sup>2.1⚄</sup>,
+  [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-0145-9564)
+    Alexander J. Titus<sup>2.1⚄</sup>,
+  [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-8713-9213)
+    Casey S. Greene<sup>2.2,2.3⚄,†</sup>,
   [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-3012-7446)
-    Daniel S. Himmelstein<sup>2.5⚄</sup>,
+    Daniel S. Himmelstein<sup>2.4⚄</sup>,
+  [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-8050-1291)
+    Joshua J. Levy<sup>2.5⚄</sup>,
 [The Version 1.0 Deep Review Authors](#version-1.0-authors)
 
 <sup>⚄</sup> --- Author order for version 2.0 is currently randomized [with each new build](https://github.com/greenelab/deep-review/pull/997).<br>
@@ -169,10 +169,10 @@ on March 16, 2020.
 
 
 2.1. Department of Epidemiology, Geisel School of Medicine, Dartmouth College, Lebanon, NH<br>
-2.2. Program in Quantitative Biomedical Sciences, Geisel School of Medicine at Dartmouth, Lebanon, NH<br>
-2.3. Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA<br>
-2.4. Childhood Cancer Data Lab, Alex's Lemonade Stand Foundation, Philadelphia, PA<br>
-2.5. Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America<br>
+2.2. Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA<br>
+2.3. Childhood Cancer Data Lab, Alex's Lemonade Stand Foundation, Philadelphia, PA<br>
+2.4. Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America<br>
+2.5. Program in Quantitative Biomedical Sciences, Geisel School of Medicine at Dartmouth, Lebanon, NH<br>
 
 </small>
 
@@ -1221,7 +1221,7 @@ MHCflurry adds placeholder amino acids to transform variable-length peptides to 
 In training the MHCflurry feed-forward neural network [@doi:10.1101/054775], the authors imputed missing MHC-peptide binding affinities using a Gibbs sampling method, showing that imputation improves performance for data-sets with roughly 100 or fewer training examples.
 MHCflurry's imputation method increases its performance on poorly characterized alleles, making it competitive with NetMHCpan for this task.
 Kuksa et al. [@doi:10.1093/bioinformatics/btv371] developed a shallow, higher-order neural network (HONN) comprised of both mean and covariance hidden units to capture some of the higher-order dependencies between amino acid locations.
-Pretraining this HONN with a semi-restricted Boltzmann machine, the authors found that the performance of the HONN exceeded that of a simple deep neural network, as well as that of NetMHC.
+Pre-training this HONN with a semi-restricted Boltzmann machine, the authors found that the performance of the HONN exceeded that of a simple deep neural network, as well as that of NetMHC.
 
 Deep learning's unique flexibility was recently leveraged by Bhattacharya et al. [@doi:10.1101/154757], who used a gated RNN method called MHCnuggets to overcome the difficulty of multiple peptide lengths.
 Under this framework, they used smoothed sparse encoding to represent amino acids individually.
@@ -1321,7 +1321,7 @@ Also, researchers have looked into how feature selection can improve classificat
 
 Most neural networks are used for phylogenetic classification or functional annotation from sequence data where there is ample data for training.
 Neural networks have been applied successfully to gene annotation (e.g. Orphelia [@tag:Hoff] and FragGeneScan [@doi:10.1093/nar/gkq747]).
-Representations (similar to Word2Vec [@tag:Word2Vec] in natural language processing) for protein family classification have been introduced and classified with a skip-gram neural network [@tag:Asgari].
+Representations (similar to word2vec [@tag:word2vec] in natural language processing) for protein family classification have been introduced and classified with a skip-gram neural network [@tag:Asgari].
 Recurrent neural networks show good performance for homology and protein family identification [@tag:Hochreiter; @tag:Sonderby].
 
 One of the first techniques of *de novo* genome binning used self-organizing maps, a type of neural network [@tag:Abe].
@@ -1395,7 +1395,7 @@ Even when they are not directly modeling biological neurons, deep networks have 
 They have been developed as statistical time series models of neural activity in the brain.
 And in contrast to the encoding models described earlier, these models are used for decoding neural activity, for instance in brain machine interfaces [@doi:10.1101/152884].
 They have been crucial to the field of connectomics, which is concerned with mapping the connectivity of biological neural networks in the brain.
-In connectomics, deep networks are used to segment the shapes of individual neurons and to infer their connectivity from 3D electron microscopic images [@doi:10.1016/j.conb.2010.07.004], and they have been also been used to infer causal connectivity from optical measurement and perturbation of neural activity [@tag:Aitchison2017].
+In connectomics, deep networks are used to segment the shapes of individual neurons and to infer their connectivity from 3D electron microscopic images [@doi:10.1016/j.conb.2010.07.004], and they have also been used to infer causal connectivity from optical measurement and perturbation of neural activity [@tag:Aitchison2017].
 
 It is an exciting time for neuroscience.
 Recent rapid progress in deep networks continues to inspire new machine learning based models of brain computation [@doi:10.3389/fncom.2016.00094].
@@ -1809,7 +1809,7 @@ The contribution scores were then used to identify key phrases from a model trai
 #### Latent space manipulation
 
 Interpretation of embedded or latent space features learned through generative unsupervised models can reveal underlying patterns otherwise masked in the original input.
-Embedded feature interpretation has been emphasized mostly in image and text based applications [@tag:Radford_dcgan; @tag:Word2Vec], but applications to genomic and biomedical domains are increasing.
+Embedded feature interpretation has been emphasized mostly in image and text based applications [@tag:Radford_dcgan; @tag:word2vec], but applications to genomic and biomedical domains are increasing.
 
 For example, Way and Greene trained a VAE on gene expression from The Cancer Genome Atlas (TCGA) [@doi:10.1038/ng.2764] and use latent space arithmetic to rapidly isolate and interpret gene expression features descriptive of high grade serous ovarian cancer subtypes [@tag:WayGreene2017_tybalt].
 The most differentiating VAE features were representative of biological processes that are known to distinguish the subtypes.
@@ -1883,7 +1883,7 @@ There is a risk that a model will easily discriminate synthetic examples but not
 Multimodal, multi-task, and transfer learning, discussed in detail below, can also combat data limitations to some degree.
 There are also emerging network architectures, such as Diet Networks for high-dimensional SNP data [@tag:Romero2017_diet].
 These use multiple networks to drastically reduce the number of free parameters by first flipping the problem and training a network to predict parameters (weights) for each input (SNP) to learn a feature embedding.
-This embedding (e.g. from principal component analysis, per class histograms, or a Word2vec [@tag:Word2Vec] generalization) can be learned directly from input data or take advantage of other datasets or domain knowledge.
+This embedding (e.g. from principal component analysis, per class histograms, or a word2vec [@tag:word2vec] generalization) can be learned directly from input data or take advantage of other datasets or domain knowledge.
 Additionally, in this task the features are the examples, an important advantage when it is typical to have 500 thousand or more SNPs and only a few thousand patients.
 Finally, this embedding is of a much lower dimension, allowing for a large reduction in the number of free parameters.
 In the example given, the number of free parameters was reduced from 30 million to 50 thousand, a factor of 600.
@@ -2114,7 +2114,7 @@ Manubot allowed us to automate this process, using the Git commit hash as a rand
 
 We continued using the open repository on the GitHub version control platform ([`greenelab/deep-review`](https://github.com/greenelab/deep-review)) [@url:https://github.com/greenelab/deep-review], which was established to write the version 1.0 manuscript.
 
-  Drafted one or more subsections: Alexander J. Titus, Joshua J. Levy, Brock C. Christensen. 
+  Drafted one or more subsections: Brock C. Christensen, Alexander J. Titus, Joshua J. Levy. 
 
   Drafted sub-sections, edited the manuscript, reviewed pull requests, and coordinated co-authors: Casey S. Greene. 
 
@@ -2125,11 +2125,11 @@ We continued using the open repository on the GitHub version control platform ([
 
 |Author|Competing Interests|Last Reviewed|
 |---|---|---|
-|Alexander J. Titus|None|2020-03-07|
-|Joshua J. Levy|None|2020-03-04|
-|Casey S. Greene|None|2020-03-10|
 |Brock C. Christensen|None|2020-03-05|
+|Alexander J. Titus|None|2020-03-07|
+|Casey S. Greene|None|2020-03-10|
 |Daniel S. Himmelstein|None|2020-03-10|
+|Joshua J. Levy|None|2020-03-04|
 
 ##### Version 2.0 funding statement
 
@@ -2513,7 +2513,6 @@ We would like to thank Robert Gieseke, Ruibang Luo, Stephen Ra, Sourav Singh, an
 [@tag:WayGreene2017_eval]: arxiv:1711.04828
 [@tag:WayGreene2017_tybalt]: doi:10.1101/174474
 [@tag:Wilhelm-Benartzi2013]: doi:10.1038/bjc.2013.496
-[@tag:Word2Vec]: arxiv:1301.3781
 [@tag:Wu2017_molecule_net]: doi:10.1039/C7SC02664A
 [@tag:Xiang]: doi:10.1016/S0167-9473(99)00098-5
 [@tag:Xiong2011_bayesian]: doi:10.1093/bioinformatics/btr444
@@ -2561,5 +2560,6 @@ We would like to thank Robert Gieseke, Ruibang Luo, Stephen Ra, Sourav Singh, an
 [@tag:uncertainty_multi_task]: arxiv:1705.07115
 [@tag:uncertainty_types]: arxiv:1703.04977
 [@tag:wgsquikr]: doi:10.1371/journal.pone.0091784
+[@tag:word2vec]: arxiv:1301.3781
 [@tag:world2004international]: url:http://www.who.int/classifications/icd/en/
 [@tag:yok]: doi:10.1186/1471-2105-12-20
