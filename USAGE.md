@@ -238,7 +238,8 @@ email: daniel.himmelstein@gmail.com  # suggested
 affiliations:  # as a list, strongly suggested
   - Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania
   - Department of Biological & Medical Informatics, University of California, San Francisco
-funders: GBMF4552  # optional
+funders:
+  - GBMF4552  # optional list of author's funding
 ```
 
 Note that `affiliations` should be a list to allow for multiple affiliations per author.
