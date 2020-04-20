@@ -33,7 +33,7 @@ install:
   - TRIGGERING_COMMIT=${APPVEYOR_PULL_REQUEST_HEAD_COMMIT:-APPVEYOR_REPO_COMMIT}
   - JOB_MESSAGE=" for commit $TRIGGERING_COMMIT "
   - source ci/install.sh
-    
+
 test_script:
   - bash build/build.sh
   - MANUSCRIPT_FILENAME=manuscript-$APPVEYOR_BUILD_VERSION-${TRIGGERING_COMMIT:0:7}
@@ -47,7 +47,7 @@ test_script:
         cp output/spelling-errors.txt $SPELLING_ERRORS_FILENAME;
         appveyor PushArtifact $SPELLING_ERRORS_FILENAME
       fi
-	
+
 build: off
 
 cache:
