@@ -82,4 +82,10 @@ if [ "${BUILD_DOCX:-}" = "true" ]; then
     --defaults="$PANDOC_DEFAULTS_DIR/docx.yaml"
 fi
 
+# Spellcheck
+if [ "${SPELLCHECK:-}" = "true" ]; then
+  export ASPELL_CONF="add-extra-dicts $(pwd)/build/assets/custom-dictionary.txt"
+  pandoc --lua-filter spellcheck.lua output/manuscript.md | sort | uniq > output/spelling-errors.txt
+fi
+
 echo >&2 "Build complete"
