@@ -19,7 +19,6 @@ conda list --name manubot
 conda activate manubot
 
 # Install Spellcheck filter for Pandoc
-# Only tested in AppVeyor
 if [ "${SPELLCHECK:-}" = "true" ]; then
   sudo apt-get update -y
   sudo apt-get install -y aspell aspell-en
