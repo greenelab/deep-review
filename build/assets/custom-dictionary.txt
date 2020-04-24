@@ -1,3 +1,21 @@
-personal_ws-1.1 en 2
+personal_ws-1.1 en 20
+al
+DOI
+et
+isbn
+LaTeX
+manubot
 Manubot
+ORCID
+permalink
+PMC
+pmcid
+pmid
+PubMed
+rootstock
 Rootstock
+s
+Strikethrough
+SVGs
+unicode
+Wikidata
