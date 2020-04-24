@@ -1,11 +1,10 @@
-personal_ws-1.1 en 20
+personal_ws-1.1 en 18
 al
 DOI
 et
 isbn
 LaTeX
 manubot
-Manubot
 ORCID
 permalink
 PMC
@@ -13,7 +12,6 @@ pmcid
 pmid
 PubMed
 rootstock
-Rootstock
 s
 Strikethrough
 SVGs
