@@ -1,19 +1,22 @@
-personal_ws-1.1 en 18
+personal_ws-1.1 en 21
 al
-DOI
+doi
+eq
 et
 isbn
-LaTeX
+latex
 manubot
-ORCID
+orcid
 permalink
-PMC
+pmc
 pmcid
 pmid
-PubMed
+pubmed
 rootstock
 s
-Strikethrough
-SVGs
+strikethrough
+svg
+svgs
+tbl
 unicode
-Wikidata
+wikidata
