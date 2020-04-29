@@ -82,4 +82,15 @@ if [ "${BUILD_DOCX:-}" = "true" ]; then
     --defaults="$PANDOC_DEFAULTS_DIR/docx.yaml"
 fi
 
+# Spellcheck
+if [ "${SPELLCHECK:-}" = "true" ]; then
+  export ASPELL_CONF="add-extra-dicts $(pwd)/build/assets/custom-dictionary.txt; ignore-case true"
+  # Use "|| true" after grep because otherwise this step of the pipeline will
+  # return exit code 1 if any of the markdown files do not contain a
+  # misspelled word
+  pandoc --lua-filter spellcheck.lua output/manuscript.md | uniq | while read word; do grep -ion "\<$word\>" content/*.md; done | sort -h -t ":" -k 1b,1 -k2,2 > output/spelling-errors.txt || true
+  echo >&2 "Filenames and line numbers with potential spelling errors:"
+  cat output/spelling-errors.txt
+fi
+
 echo >&2 "Build complete"

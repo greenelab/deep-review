@@ -276,6 +276,13 @@ Changing the citation style or which interactive HTML plugins are loaded require
 The citation style is determined by the Citation Style Language file specified by `CSL_PATH`.
 It can be changed to use other existing styles as [described here](https://github.com/manubot/rootstock/issues/242#issuecomment-507688339).
 
+## Spellchecking
+
+When the `SPELLCHECK` environment variable is `true`, the pandoc [spellcheck filter](https://github.com/pandoc/lua-filters/tree/master/spellcheck) is run.
+Potential spelling errors will be printed in the continuous integration log along with the files and line numbers in which they appeared.
+Words in `build/assets/custom-dictionary.txt` are ignored during spellchecking.
+Spellchecking is currently only supported for English language manuscripts and with Travis CI and AppVeyor continuous integration services.
+
 ## Manubot feedback
 
 If you experience any issues with the Manubot or would like to contribute to its source code, please visit [`manubot/manubot`](https://github.com/manubot/manubot) or [`manubot/rootstock`](https://github.com/manubot/rootstock).

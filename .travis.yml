@@ -6,6 +6,8 @@ services:
 branches:
   only:
     - master
+env:
+  - SPELLCHECK=true
 install:
   - source ci/install.sh
 script:
