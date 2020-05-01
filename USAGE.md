@@ -272,9 +272,21 @@ Modifying the manuscript formatting requires modifying the CSS in the file [`bui
 Common formatting changes, such as [font size](https://github.com/manubot/rootstock/issues/239) and [double spacing](https://github.com/manubot/rootstock/issues/244), can be found by searching the [Rootstock issues](https://github.com/manubot/rootstock/issues).
 Open a [new issue](https://github.com/manubot/rootstock/issues/new) if you have a new formatting question.
 
-Changing the citation style or which interactive HTML plugins are loaded requires editing the build script [`build/build.sh`](build/build.sh).
-The citation style is determined by the Citation Style Language file specified by `CSL_PATH`.
-It can be changed to use other existing styles as [described here](https://github.com/manubot/rootstock/issues/242#issuecomment-507688339).
+Changing the citation style or which interactive HTML plugins are loaded requires editing the options specified by Pandoc defaults files in [`build/pandoc-defaults`](build/pandoc-defaults).
+The citation style is determined by the Citation Style Language file specified in [`common.yaml`](build/pandoc-defaults/common.yaml):
+
+```yaml
+metadata:
+  csl: build/assets/style.csl
+```
+
+The value for `metadata.csl` can be a URL, allowing access to thousands of existing styles hosted by [Zotero](https://www.zotero.org/styles) or the [CSL GitHub](https://github.com/citation-style-language/styles).
+For example, the following options replace the Manubot citation style with the _PeerJ_ style:
+
+```yaml
+metadata:
+  csl: https://github.com/citation-style-language/styles/raw/906cd6d43d0c136190ecfbb12f6af0ca794e3c5b/peerj.csl
+```
 
 ## Spellchecking
 
