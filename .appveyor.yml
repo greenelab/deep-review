@@ -44,8 +44,11 @@ test_script:
   - |
       if [ "${SPELLCHECK:-}" = "true" ]; then
         SPELLING_ERRORS_FILENAME=spelling-errors-$APPVEYOR_BUILD_VERSION-${TRIGGERING_COMMIT:0:7}.txt
-        cp output/spelling-errors.txt $SPELLING_ERRORS_FILENAME;
+        cp output/spelling-errors.txt $SPELLING_ERRORS_FILENAME
         appveyor PushArtifact $SPELLING_ERRORS_FILENAME
+        SPELLING_ERROR_LOCATIONS_FILENAME=spelling-error-locations-$APPVEYOR_BUILD_VERSION-${TRIGGERING_COMMIT:0:7}.txt
+        cp output/spelling-error-locations.txt $SPELLING_ERROR_LOCATIONS_FILENAME
+        appveyor PushArtifact $SPELLING_ERROR_LOCATIONS_FILENAME
       fi
 
 build: off
@@ -59,8 +62,8 @@ on_success:
   - appveyor AddMessage "$JOB_MESSAGE is now complete."
   - |
       if [ "${SPELLCHECK:-}" = "true" ]; then
-        SPELLING_ERROR_COUNT=($(wc -l $SPELLING_ERRORS_FILENAME))
-        appveyor AddMessage " <details><summary>Found $SPELLING_ERROR_COUNT potential spelling error(s). Preview:</summary>$(cat $SPELLING_ERRORS_FILENAME)"
+        SPELLING_ERROR_COUNT=($(wc -l $SPELLING_ERROR_LOCATIONS_FILENAME))
+        appveyor AddMessage " <details><summary>Found $SPELLING_ERROR_COUNT potential spelling error(s). Preview:</summary>$(head -n 100 $SPELLING_ERROR_LOCATIONS_FILENAME)"
         appveyor AddMessage "... </details>"
       fi
 

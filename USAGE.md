@@ -293,7 +293,7 @@ metadata:
 When the `SPELLCHECK` environment variable is `true`, the pandoc [spellcheck filter](https://github.com/pandoc/lua-filters/tree/master/spellcheck) is run.
 Potential spelling errors will be printed in the continuous integration log along with the files and line numbers in which they appeared.
 Words in `build/assets/custom-dictionary.txt` are ignored during spellchecking.
-Spellchecking is currently only supported for English language manuscripts and with Travis CI and AppVeyor continuous integration services.
+Spellchecking is currently only supported for English language manuscripts.
 
 ## Manubot feedback
 

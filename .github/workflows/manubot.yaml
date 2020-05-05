@@ -12,6 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GITHUB_PULL_REQUEST_SHA: ${{ github.event.pull_request.head.sha }}
+      SPELLCHECK: true
     steps:
       - name: Set Environment Variables
         run: |
@@ -38,6 +39,12 @@ jobs:
           environment-file: build/environment.yml
           auto-activate-base: false
           miniconda-version: 'latest'
+      - name: Install Spellcheck
+        shell: bash --login {0}
+        run: |
+          if [ "${SPELLCHECK:-}" = "true" ]; then
+            bash ci/install-spellcheck.sh
+          fi
       - name: Build Manuscript
         shell: bash --login {0}
         run: bash build/build.sh
