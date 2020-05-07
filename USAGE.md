@@ -272,8 +272,8 @@ Modifying the manuscript formatting requires modifying the CSS in the file [`bui
 Common formatting changes, such as [font size](https://github.com/manubot/rootstock/issues/239) and [double spacing](https://github.com/manubot/rootstock/issues/244), can be found by searching the [Rootstock issues](https://github.com/manubot/rootstock/issues).
 Open a [new issue](https://github.com/manubot/rootstock/issues/new) if you have a new formatting question.
 
-Changing the citation style or which interactive HTML plugins are loaded requires editing the options specified by Pandoc defaults files in [`build/pandoc-defaults`](build/pandoc-defaults).
-The citation style is determined by the Citation Style Language file specified in [`common.yaml`](build/pandoc-defaults/common.yaml):
+Changing the citation style or which interactive HTML plugins are loaded requires editing the options specified by Pandoc defaults files in [`build/pandoc/defaults`](build/pandoc/defaults).
+The citation style is determined by the Citation Style Language file specified in [`common.yaml`](build/pandoc/defaults/common.yaml):
 
 ```yaml
 metadata:

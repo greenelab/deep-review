@@ -12,7 +12,7 @@ To export DOCX for all CI builds, set an environment variable (see docs for [Git
 Currently, equation numbers via `pandoc-eqnos` are not supported for DOCX output.
 
 Format conversion is done using [Pandoc](https://pandoc.org/MANUAL.html).
-`build.sh` calls `pandoc` commands using the options specified in [`pandoc-defaults`](pandoc-defaults).
+`build.sh` calls `pandoc` commands using the options specified in [`pandoc/defaults`](pandoc/defaults).
 Each file specifies a set of pandoc `--defaults` options for a given format.
 To change the options, either edit the YAML files directly or add additional `--defaults` files.
 

@@ -12,7 +12,7 @@ webpage/v
 ci/cache
 
 # Pandoc filters downloaded during continuous integration setup
-build/assets/spellcheck.lua
+build/pandoc/filters/spellcheck.lua
 
 # Python
 __pycache__/
