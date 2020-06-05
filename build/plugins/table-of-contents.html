@@ -169,14 +169,13 @@
             // create toc button
             const button = document.createElement('button');
             button.id = 'toc_button';
-            button.innerHTML = document.querySelector(
-                '.icon_th_list'
-            ).innerHTML;
+            button.innerHTML = document.querySelector('.icon_th_list').innerHTML;
+            button.title = 'Table of Contents';
             button.classList.add('icon_button');
 
             // create header text
             const text = document.createElement('h3');
-            text.innerHTML = 'Table of Contents';
+            text.innerHTML = 'View Table of Contents';
 
             // create container for toc list
             const list = document.createElement('div');
