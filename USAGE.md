@@ -43,9 +43,11 @@ For easy creation of markdown tables, check out the [Tables Generator](https://w
 Figures can be included with the following markdown:
 
 ```md
+ 
 ![Caption for the example figure.](url_or_path_to_figure){#fig:example-id}
 ```
 
+The blank line before the figure is required.
 Support for figure numbering and citation is provided by [`pandoc-fignos`](https://github.com/tomduck/pandoc-fignos).
 This figure can be cited in the text using `@fig:example-id`.
 In context, a figure citation may look like: `Figure {@fig:example-id}B shows …`.
