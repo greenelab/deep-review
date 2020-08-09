@@ -73,4 +73,14 @@ authors:
     coi:
       string: "None"
       lastapproved: !!str 2020-03-10
-  
+  - github: delton137
+    name: Daniel C. Elton
+    orcid: 0000-0003-0249-1387
+    email: daniel.elton@nih.gov
+    affiliations:
+      - Radiology and Imaging Sciences, National Institutes of Health Clinical Center, Bethesda, MD
+    v1: ""
+    v2: "Revised specific sub-sections or supervised drafting one or more sub-sections"
+    coi:
+      string: "None"
+      lastapproved: !!str 2020-03-05
