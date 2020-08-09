@@ -116,6 +116,7 @@ arxiv:1705.03261	arxiv:1705.03261	arxiv:1705.03261	M6JCKCLX
 tag:uncertainty_multi_task	arxiv:1705.07115	arxiv:1705.07115	WZjlu7tr
 tag:strong_adversary	arxiv:1705.07263	arxiv:1705.07263	b5zIzCEO
 arxiv:1705.09516	arxiv:1705.09516	arxiv:1705.09516	z8hmfrmY
+arxiv:1705.10843	arxiv:1705.10843	arxiv:1705.10843	Fv8gNFoR
 arxiv:1706.00125	arxiv:1706.00125	arxiv:1706.00125	6Nw5JrLI
 arxiv:1706.01556v2	arxiv:1706.01556v2	arxiv:1706.01556v2	TNHJioqT
 arxiv:1706.02216v2	arxiv:1706.02216v2	arxiv:1706.02216v2	MwUPw4CD
@@ -133,6 +134,8 @@ tag:WayGreene2017_eval	arxiv:1711.04828	arxiv:1711.04828	rMz1OFc6
 arxiv:1712.05898	arxiv:1712.05898	arxiv:1712.05898	gYxBO26g
 arxiv:1801.02144	arxiv:1801.02144	arxiv:1801.02144	nMXQBadV
 tag:Kalinin2018_pgx	arxiv:1801.08570	arxiv:1801.08570	brPjEjYw
+arxiv:1802.04364	arxiv:1802.04364	arxiv:1802.04364	oHwTyvq
+arxiv:1806.02473	arxiv:1806.02473	arxiv:1806.02473	P88nl7sq
 tag:Chatterjee2018	arxiv:1807.09617	arxiv:1807.09617	GLXmFOus
 arxiv:1808.01359	arxiv:1808.01359	arxiv:1808.01359	1CvlEI6Kb
 tag:Khwaja2018	arxiv:1810.01243	arxiv:1810.01243	EXGRa0DD
@@ -207,12 +210,14 @@ tag:Mahmood	doi:10.1016/S0140-6736(13)61752-3	doi:10.1016/s0140-6736(13)61752-3	
 tag:Xiang	doi:10.1016/S0167-9473(99)00098-5	doi:10.1016/s0167-9473(99)00098-5	1921Mctzh
 tag:Serden	doi:10.1016/S0168-8510(02)00208-7	doi:10.1016/s0168-8510(02)00208-7	7BctyA7f
 tag:Tu1996_anns	doi:10.1016/S0895-4356(96)00002-9	doi:10.1016/s0895-4356(96)00002-9	kL0B4m9d
+doi:10.1021/acs.jcim.0c00174	doi:10.1021/acs.jcim.0c00174	doi:10.1021/acs.jcim.0c00174	44aSF4s2
 tag:Subramanian2016_bace1	doi:10.1021/acs.jcim.6b00290	doi:10.1021/acs.jcim.6b00290	B4cL1o2P
 tag:Pereira2016_docking	doi:10.1021/acs.jcim.6b00355	doi:10.1021/acs.jcim.6b00355	Gue0c5Gb
 doi:10.1021/acs.jcim.6b00601	doi:10.1021/acs.jcim.6b00601	doi:10.1021/acs.jcim.6b00601	UKHPpRBn
 doi:10.1021/acs.jcim.7b00028	doi:10.1021/acs.jcim.7b00028	doi:10.1021/acs.jcim.7b00028	rVgq22nD
 doi:10.1021/acs.jcim.7b00146	doi:10.1021/acs.jcim.7b00146	doi:10.1021/acs.jcim.7b00146	wzHEnMZe
 doi:10.1021/acs.jcim.7b00616	doi:10.1021/acs.jcim.7b00616	doi:10.1021/acs.jcim.7b00616	5GEmrHBd
+doi:10.1021/acs.jcim.8b00839	doi:10.1021/acs.jcim.8b00839	doi:10.1021/acs.jcim.8b00839	19MYPreRo
 doi:10.1021/acs.jmedchem.5b01849	doi:10.1021/acs.jmedchem.5b01849	doi:10.1021/acs.jmedchem.5b01849	omzv9ryI
 doi:10.1021/acs.jproteome.6b00618	doi:10.1021/acs.jproteome.6b00618	doi:10.1021/acs.jproteome.6b00618	oTF8O79C
 doi:10.1021/acs.molpharmaceut.5b00982	doi:10.1021/acs.molpharmaceut.5b00982	doi:10.1021/acs.molpharmaceut.5b00982	1VZjheOA
@@ -220,6 +225,8 @@ doi:10.1021/acs.molpharmaceut.6b00248	doi:10.1021/acs.molpharmaceut.6b00248	doi:
 tag:Hughes2016_macromol_react	doi:10.1021/acscentsci.6b00162	doi:10.1021/acscentsci.6b00162	1BARarxfz
 tag:AltaeTran2016_one_shot	doi:10.1021/acscentsci.6b00367	doi:10.1021/acscentsci.6b00367	P4ixsM8i
 doi:10.1021/acscentsci.7b00405	doi:10.1021/acscentsci.7b00405	doi:10.1021/acscentsci.7b00405	dVi4xCKj
+tag:Sumita2018	doi:10.1021/acscentsci.8b00213	doi:10.1021/acscentsci.8b00213	VNx2fWr7
+doi:10.1021/acsmedchemlett.0c00088	doi:10.1021/acsmedchemlett.0c00088	doi:10.1021/acsmedchemlett.0c00088	9iPKk1T
 tag:Rogers2010_fingerprints	doi:10.1021/ci100050t	doi:10.1021/ci100050t	QnZ7V9Rd
 tag:Lusci2013_rnn	doi:10.1021/ci400187y	doi:10.1021/ci400187y	17Wih4Hd5
 doi:10.1021/ci400518g	doi:10.1021/ci400518g	doi:10.1021/ci400518g	7QsMcDYy
@@ -272,7 +279,11 @@ doi:10.1038/nrg2813	doi:10.1038/nrg2813	doi:10.1038/nrg2813	T3GG8iJN
 tag:Berezikov2011_mirna	doi:10.1038/nrg3079	doi:10.1038/nrg3079	8lpCCppx
 doi:10.1038/nrg3208	doi:10.1038/nrg3208	doi:10.1038/nrg3208	FkSZ1qmz
 doi:10.1038/nrg3458	doi:10.1038/nrg3458	doi:10.1038/nrg3458	8yA3foA6
+tag:Vamathevan2019	doi:10.1038/s41573-019-0024-5	doi:10.1038/s41573-019-0024-5	6kP06lHp
+tag:Zhavoronkov2019_drugs	doi:10.1038/s41587-019-0224-x	doi:10.1038/s41587-019-0224-x	zrYrsMSJ
+doi:10.1038/s41587-020-0418-2	doi:10.1038/s41587-020-0418-2	doi:10.1038/s41587-020-0418-2	ABd74wkV
 tag:retinopathy_uncertainty	doi:10.1038/s41598-017-17876-z	doi:10.1038/s41598-017-17876-z	12PvceitW
+doi:10.1038/s41598-019-47148-x	doi:10.1038/s41598-019-47148-x	doi:10.1038/s41598-019-47148-x	WygOgk00
 doi:10.1038/srep11476	doi:10.1038/srep11476	doi:10.1038/srep11476	UpFrhdJf
 doi:10.1038/srep18962	doi:10.1038/srep18962	doi:10.1038/srep18962	UO8L6nd
 tag:Wang2016_methyl	doi:10.1038/srep19598	doi:10.1038/srep19598	1AfEMOdlu
@@ -281,6 +292,8 @@ tag:Litjens2016_histopath_survey	doi:10.1038/srep26286	doi:10.1038/srep26286	dQC
 doi:10.1038/srep32404	doi:10.1038/srep32404	doi:10.1038/srep32404	1G2xP5yOM
 doi:10.1039/C7MB00188F	doi:10.1039/C7MB00188F	doi:10.1039/c7mb00188f	T2lbgFlY
 tag:Wu2017_molecule_net	doi:10.1039/C7SC02664A	doi:10.1039/c7sc02664a	11QhcW8tX
+doi:10.1039/C8SC05372C	doi:10.1039/C8SC05372C	doi:10.1039/c8sc05372c	13iUaiupn
+tag:Elton_molecular_design_review	doi:10.1039/C9ME00039A	doi:10.1039/c9me00039a	9ypc3yRA
 tag:Wasson1985_clinical	doi:10.1056/NEJM198509263131306	doi:10.1056/nejm198509263131306	xX68eyvs
 doi:10.1056/NEJMe1516564	doi:10.1056/NEJMe1516564	doi:10.1056/nejme1516564	o0F1MXBC
 doi:10.1056/NEJMp1006304	doi:10.1056/NEJMp1006304	doi:10.1056/nejmp1006304	VOQtVhWs
@@ -501,6 +514,7 @@ tag:Lusci2015_irv	doi:10.1186/s13321-015-0110-6	doi:10.1186/s13321-015-0110-6	1E
 doi:10.1186/s13321-016-0165-z	doi:10.1186/s13321-016-0165-z	doi:10.1186/s13321-016-0165-z	Sn8TwSQK
 doi:10.1200/JCO.2008.18.1370	doi:10.1200/JCO.2008.18.1370	doi:10.1200/jco.2008.18.1370	lnK82Ey6
 doi:10.1208/s12248-012-9322-0	doi:10.1208/s12248-012-9322-0	doi:10.1208/s12248-012-9322-0	13iyYvEcB
+doi:10.1246/cl.180665	doi:10.1246/cl.180665	doi:10.1246/cl.180665	VGtw9EAZ
 tag:Liu2016_sc_transcriptome	doi:10.12688/f1000research.7223.1	doi:10.12688/f1000research.7223.1	QafUwNKn
 doi:10.1371/journal.pbio.1001661	doi:10.1371/journal.pbio.1001661	doi:10.1371/journal.pbio.1001661	dKwyEWWF
 doi:10.1371/journal.pbio.1002195	doi:10.1371/journal.pbio.1002195	doi:10.1371/journal.pbio.1002195	13bxiY1vo

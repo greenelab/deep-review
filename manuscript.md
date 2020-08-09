@@ -1,14 +1,14 @@
 ---
 author-meta:
-- Brock C. Christensen
-- Alexander J. Titus
-- Casey S. Greene
 - Daniel S. Himmelstein
+- Brock C. Christensen
 - Joshua J. Levy
+- Casey S. Greene
+- Alexander J. Titus
 bibliography:
 - content/manual-references-2020-01-29.json
 - content/manual-references.json
-date-meta: '2020-04-11'
+date-meta: '2020-08-09'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -27,9 +27,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Opportunities and obstacles for deep learning in biology and medicine [update in progress]" />
 
-  <meta name="dc.date" content="2020-04-11" />
+  <meta name="dc.date" content="2020-08-09" />
 
-  <meta name="citation_publication_date" content="2020-04-11" />
+  <meta name="citation_publication_date" content="2020-08-09" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -43,17 +43,23 @@ header-includes: '<!--
 
   <meta name="citation_technical_report_institution" content="Manubot" />
 
+  <meta name="citation_author" content="Daniel S. Himmelstein" />
+
+  <meta name="citation_author_institution" content="Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America" />
+
+  <meta name="citation_author_orcid" content="0000-0002-3012-7446" />
+
   <meta name="citation_author" content="Brock C. Christensen" />
 
   <meta name="citation_author_institution" content="Department of Epidemiology, Geisel School of Medicine, Dartmouth College, Lebanon, NH" />
 
   <meta name="citation_author_orcid" content="0000-0003-3022-426X" />
 
-  <meta name="citation_author" content="Alexander J. Titus" />
+  <meta name="citation_author" content="Joshua J. Levy" />
 
-  <meta name="citation_author_institution" content="Department of Epidemiology, Geisel School of Medicine, Dartmouth College, Lebanon, NH" />
+  <meta name="citation_author_institution" content="Program in Quantitative Biomedical Sciences, Geisel School of Medicine at Dartmouth, Lebanon, NH" />
 
-  <meta name="citation_author_orcid" content="0000-0002-0145-9564" />
+  <meta name="citation_author_orcid" content="0000-0001-8050-1291" />
 
   <meta name="citation_author" content="Casey S. Greene" />
 
@@ -63,17 +69,11 @@ header-includes: '<!--
 
   <meta name="citation_author_orcid" content="0000-0001-8713-9213" />
 
-  <meta name="citation_author" content="Daniel S. Himmelstein" />
+  <meta name="citation_author" content="Alexander J. Titus" />
 
-  <meta name="citation_author_institution" content="Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America" />
+  <meta name="citation_author_institution" content="Department of Epidemiology, Geisel School of Medicine, Dartmouth College, Lebanon, NH" />
 
-  <meta name="citation_author_orcid" content="0000-0002-3012-7446" />
-
-  <meta name="citation_author" content="Joshua J. Levy" />
-
-  <meta name="citation_author_institution" content="Program in Quantitative Biomedical Sciences, Geisel School of Medicine at Dartmouth, Lebanon, NH" />
-
-  <meta name="citation_author_orcid" content="0000-0001-8050-1291" />
+  <meta name="citation_author_orcid" content="0000-0002-0145-9564" />
 
   <link rel="canonical" href="https://greenelab.github.io/deep-review/" />
 
@@ -87,19 +87,19 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/deep-review/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/deep-review/v/081fb466dd13c2813b3ae14bb916173f5d0442c5/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/deep-review/v/1173b9b646a7a86ef64d14d1eda3bd6441c85910/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/deep-review/v/081fb466dd13c2813b3ae14bb916173f5d0442c5/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/deep-review/v/1173b9b646a7a86ef64d14d1eda3bd6441c85910/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/deep-review/v/081fb466dd13c2813b3ae14bb916173f5d0442c5/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/deep-review/v/1173b9b646a7a86ef64d14d1eda3bd6441c85910/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
   <meta property="twitter:card" content="summary_large_image" />
 
-  <meta property="og:image" content="https://github.com/greenelab/deep-review/raw/081fb466dd13c2813b3ae14bb916173f5d0442c5/thumbnail.png" />
+  <meta property="og:image" content="https://github.com/greenelab/deep-review/raw/1173b9b646a7a86ef64d14d1eda3bd6441c85910/thumbnail.png" />
 
-  <meta property="twitter:image" content="https://github.com/greenelab/deep-review/raw/081fb466dd13c2813b3ae14bb916173f5d0442c5/thumbnail.png" />
+  <meta property="twitter:image" content="https://github.com/greenelab/deep-review/raw/1173b9b646a7a86ef64d14d1eda3bd6441c85910/thumbnail.png" />
 
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
 
@@ -139,10 +139,10 @@ New authors and links to new sections are available in [GitHub Issue #959](https
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/deep-review/v/081fb466dd13c2813b3ae14bb916173f5d0442c5/))
+([permalink](https://greenelab.github.io/deep-review/v/1173b9b646a7a86ef64d14d1eda3bd6441c85910/))
 was automatically generated
-from [greenelab/deep-review@081fb46](https://github.com/greenelab/deep-review/tree/081fb466dd13c2813b3ae14bb916173f5d0442c5)
-on April 11, 2020.
+from [greenelab/deep-review@1173b9b](https://github.com/greenelab/deep-review/tree/1173b9b646a7a86ef64d14d1eda3bd6441c85910)
+on August 9, 2020.
 </em></small>
 
 ## Authors
@@ -150,16 +150,16 @@ on April 11, 2020.
 ### Version 2.0 authors
 
 
-  [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-3022-426X)
-    Brock C. Christensen<sup>2.1⚄</sup>,
-  [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-0145-9564)
-    Alexander J. Titus<sup>2.1⚄</sup>,
-  [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-8713-9213)
-    Casey S. Greene<sup>2.2,2.3⚄,†</sup>,
   [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-3012-7446)
-    Daniel S. Himmelstein<sup>2.4⚄</sup>,
+    Daniel S. Himmelstein<sup>2.1⚄</sup>,
+  [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-3022-426X)
+    Brock C. Christensen<sup>2.2⚄</sup>,
   [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-8050-1291)
-    Joshua J. Levy<sup>2.5⚄</sup>,
+    Joshua J. Levy<sup>2.3⚄</sup>,
+  [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-8713-9213)
+    Casey S. Greene<sup>2.4,2.5⚄,†</sup>,
+  [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-0145-9564)
+    Alexander J. Titus<sup>2.2⚄</sup>,
 [The Version 1.0 Deep Review Authors](#version-1.0-authors)
 
 <sup>⚄</sup> --- Author order for version 2.0 is currently randomized [with each new build](https://github.com/greenelab/deep-review/pull/997).<br>
@@ -168,11 +168,11 @@ on April 11, 2020.
 <small>
 
 
-2.1. Department of Epidemiology, Geisel School of Medicine, Dartmouth College, Lebanon, NH<br>
-2.2. Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA<br>
-2.3. Childhood Cancer Data Lab, Alex's Lemonade Stand Foundation, Philadelphia, PA<br>
-2.4. Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America<br>
-2.5. Program in Quantitative Biomedical Sciences, Geisel School of Medicine at Dartmouth, Lebanon, NH<br>
+2.1. Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America<br>
+2.2. Department of Epidemiology, Geisel School of Medicine, Dartmouth College, Lebanon, NH<br>
+2.3. Program in Quantitative Biomedical Sciences, Geisel School of Medicine at Dartmouth, Lebanon, NH<br>
+2.4. Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA<br>
+2.5. Childhood Cancer Data Lab, Alex's Lemonade Stand Foundation, Philadelphia, PA<br>
 
 </small>
 
@@ -1584,31 +1584,50 @@ However, in the long term, atomic convolutions may ultimately overtake grid-base
 
 #### *De novo* drug design
 
-*De novo* drug design attempts to model the typical design-synthesize-test cycle of drug discovery [@doi:10.1002/wcms.49; @doi:10.1021/acs.jmedchem.5b01849].
+*De novo* drug design attempts to model the typical design-synthesize-test cycle of drug discovery *in silico* [@doi:10.1002/wcms.49; @doi:10.1021/acs.jmedchem.5b01849].
 It explores an estimated 10<sup>60</sup> synthesizable organic molecules with drug-like properties without explicit enumeration [@doi:10.1002/wcms.1104].
-To test or score structures, algorithms like those discussed earlier are used.
-To "design" and "synthesize", traditional *de novo* design software relied on classical optimizers such as genetic algorithms.
-Unfortunately, this often leads to overfit, "weird" molecules, which are difficult to synthesize in the lab.
-Current programs have settled on rule-based virtual chemical reactions to generate molecular structures [@doi:10.1021/acs.jmedchem.5b01849].
-Deep learning models that generate realistic, synthesizable molecules have been proposed as an alternative.
-In contrast to the classical, symbolic approaches, generative models learned from data would not depend on laboriously encoded expert knowledge.
-The challenge of generating molecules has parallels to the generation of syntactically and semantically correct text [@arxiv:1308.0850].
+To score molecules after generation or during optimization, physics-based simulation could be used [@tag:Sumita2018], but machine learning models based on techniques discussed earlier may be preferable [@tag:Gomezb2016_automatic], as they are much more computationally expedient.
+Computational efficiency is particularly important during optimization as the "scoring function" may need to be called thousands of times.
 
-As deep learning models that directly output (molecular) graphs remain under-explored, generative neural networks for drug design typically represent chemicals with the simplified molecular-input line-entry system (SMILES), a standard string-based representation with characters that represent atoms, bonds, and rings [@tag:Segler2017_drug_design].
-This allows treating molecules as sequences and leveraging recent progress in recurrent neural networks.
-Gómez-Bombarelli et al. designed a SMILES-to-SMILES autoencoder to learn a continuous latent feature space for chemicals [@tag:Gomezb2016_automatic].
-In this learned continuous space it was possible to interpolate between continuous representations of chemicals in a manner that is not possible with discrete
-(e.g. bit vector or string) features or in symbolic, molecular graph space.
-Even more interesting is the prospect of performing gradient-based or Bayesian optimization of molecules within this latent space.
+To "design" and "synthesize", traditional *de novo* design software relied on classical optimizers such as genetic algorithms.
+These algorithms use a list of hard-coded rules to perform virtual chemical reactions on molecular structures during each iteration, leading to physically stable and synthesizable molecules [@doi:10.1021/acs.jmedchem.5b01849].
+Deep learning models have been proposed as an alternative.
+In contrast to the classical approaches, in theory generative models learned from big data would not require laboriously encoded expert knowledge to generate realistic, synthesizable molecules.
+
+In the past few years, a large number of techniques for the generative modeling and optimization of molecules with deep learning have been explored, including RNNs, VAEs, GANs, and reinforcement learning---for a review see Elton et al. [@tag:Elton_molecular_design_review] or Vamathevan et al. [@tag:Vamathevan2019].
+
+Building off the large amount of work that has already gone into text generation [@arxiv:1308.0850], many generative neural networks for drug design initially represented chemicals with the simplified molecular-input line-entry system (SMILES), a standard string-based representation with characters that represent atoms, bonds, and rings [@tag:Segler2017_drug_design].
+
+The first successful demonstration of a deep learning based approach for molecular optimization occurred in 2016 with the development of a SMILES-to-SMILES autoencoder capable of learning a continuous latent feature space for molecules [@tag:Gomezb2016_automatic].
+In this learned continuous space it is possible to interpolate between molecular structures in a manner that is not possible with discrete (e.g. bit vector or string) features or in symbolic, molecular graph space.
+Even more interesting is that one can perform gradient-based or Bayesian optimization of molecules within this latent space.
 The strategy of constructing simple, continuous features before applying supervised learning techniques is reminiscent of autoencoders trained on high-dimensional EHR data [@tag:BeaulieuJones2016_ehr_encode].
 A drawback of the SMILES-to-SMILES autoencoder is that not all SMILES strings produced by the autoencoder's decoder correspond to valid chemical structures.
-Recently, the Grammar Variational Autoencoder, which takes the SMILES grammar into account and is guaranteed to produce syntactically valid SMILES, has been proposed to alleviate this issue [@arxiv:1703.01925].
+The Grammar Variational Autoencoder, which takes the SMILES grammar into account and is guaranteed to produce syntactically valid SMILES, helps alleviate this issue to some extent [@arxiv:1703.01925].
 
 Another approach to *de novo* design is to train character-based RNNs on large collections of molecules, for example, ChEMBL [@doi:10.1093/nar/gkr777], to first obtain a generic generative model for drug-like compounds [@tag:Segler2017_drug_design].
 These generative models successfully learn the grammar of compound representations, with 94% [@tag:Olivecrona2017_drug_design] or nearly 98% [@tag:Segler2017_drug_design] of generated SMILES corresponding to valid molecular structures.
 The initial RNN is then fine-tuned to generate molecules that are likely to be active against a specific target by either continuing training on a small set of positive examples [@tag:Segler2017_drug_design] or adopting reinforcement learning strategies [@tag:Olivecrona2017_drug_design; @arxiv:1611.02796].
 Both the fine-tuning and reinforcement learning approaches can rediscover known, held-out active molecules.
-The great flexibility of neural networks, and progress in generative models offers many opportunities for deep architectures in *de novo* design (e.g. the adaptation of GANs for molecules).
+
+Reinforcement learning approaches where operations are performed directly on the molecular graph bypass the need to learn the details of SMILES syntax, allowing the model to focus purely on chemistry.
+Additionally, they seem to require less training data and generate more valid molecules since they are constrained by design only to graph operations which satisfy chemical valiance rules [@tag:Elton_molecular_design_review].
+A reinforcement learning agent developed by Zhou et al. [@doi:10.1038/s41598-019-47148-x] demonstrated superior molecular optimization performance on optimizing the quantitative estimate of drug-likeness (QED) metric and the "penalized logP" metric (logP minus the synthetic accessibility) when compared with other deep learning based approaches such as the Junction Tree VAE [@arxiv:1802.04364], Objective-Reinforced Generative Adversarial Network [@arxiv:1705.10843], and Graph Convolutional Policy Network [@arxiv:1806.02473].
+As another example, Zhavoronkov et al. used generative tensorial reinforcement learning to discover inhibitors of discoidin domain receptor 1 (DDR1) [@tag:Zhavoronkov2019_drugs].
+In contrast to most previous work, six lead candidates discovered using their approach were synthesized and tested in the lab, with 4/6 achieving some degree of binding to DDR1.
+One of the molecules was chosen for further testing and showed promising results in a cancer cell line and mouse model [@tag:Zhavoronkov2019_drugs]. 
+
+In concluding this section, we want to highlight two areas where work is still needed before AI can bring added value to the existing drug discovery process---novelty and synthesizability.
+The work of Zhavoronkov et al. is arguably an important milestone and received much fanfare in the popular press, but Walters and Murko have presented a more sober assessment, noting that the generated molecule they choose to test in the lab is very similar to an existing drug that was present in their training data [@doi:10.1038/s41587-020-0418-2].
+Small variations of existing molecules are likely not to be much better and may not be patentable.
+One way to tackle this problem is to add novelty and diversity metrics to the reward function of reinforcement learning based algorithms.
+Novelty should also be taken into account when comparing different models---and thus is included in the proposed GuacaMol benchmark (2019) for accessing generative molecules for molecular design [@doi:10.1021/acs.jcim.8b00839].
+The other area which has been pointed to as a key limitation of current approaches is synthesizability [@doi:10.1021/acs.jcim.0c00174; @doi:10.1021/acsmedchemlett.0c00088].
+Current heuristics of synthesizability, such as the synthetic accessibility score, are based on a relatively limited domain of chemical data and are too restrictive, so better models of synthesizability should help in this area [@doi:10.1021/acs.jcim.0c00174]. 
+
+As noted before, genetic algorithms use hard-coded rules based on possible chemical reactions to generate molecular structures and therefore may have less trouble generating synthesizable molecules [@doi:10.1021/acs.jmedchem.5b01849].
+We note in passing that Jensen (2018) [@doi:10.1039/C8SC05372C] and Yoshikawa et al. (2019) [@doi:10.1246/cl.180665] have both demonstrated genetic algorithms that are competitive with deep learning approaches. 
+Progress on overcoming both of these shortcomings is proceeding on many fronts, and we believe the future of deep learning for molecular design is quite bright. 
 
 
 ## Discussion
@@ -2114,7 +2133,7 @@ Manubot allowed us to automate this process, using the Git commit hash as a rand
 
 We continued using the open repository on the GitHub version control platform ([`greenelab/deep-review`](https://github.com/greenelab/deep-review)) [@url:https://github.com/greenelab/deep-review], which was established to write the version 1.0 manuscript.
 
-  Drafted one or more subsections: Brock C. Christensen, Alexander J. Titus, Joshua J. Levy. 
+  Drafted one or more subsections: Brock C. Christensen, Joshua J. Levy, Alexander J. Titus. 
 
   Drafted sub-sections, edited the manuscript, reviewed pull requests, and coordinated co-authors: Casey S. Greene. 
 
@@ -2125,11 +2144,11 @@ We continued using the open repository on the GitHub version control platform ([
 
 |Author|Competing Interests|Last Reviewed|
 |---|---|---|
-|Brock C. Christensen|None|2020-03-05|
-|Alexander J. Titus|None|2020-03-07|
-|Casey S. Greene|None|2020-03-10|
 |Daniel S. Himmelstein|None|2020-03-10|
+|Brock C. Christensen|None|2020-03-05|
 |Joshua J. Levy|None|2020-03-04|
+|Casey S. Greene|None|2020-03-10|
+|Alexander J. Titus|None|2020-03-07|
 
 ##### Version 2.0 funding statement
 
@@ -2240,6 +2259,7 @@ We would like to thank Robert Gieseke, Ruibang Luo, Stephen Ra, Sourav Singh, an
 [@tag:Baskin2015_drug_disc]: doi:10.1080/17460441.2016.1201262
 [@tag:Baxt1991_myocardial]: doi:10.7326/0003-4819-115-11-843
 [@tag:BeaulieuJones2016_ehr_encode]: doi:10.1016/j.jbi.2016.10.007
+[@tag:Belkin2019_PNAS]: doi:10.1073/pnas.1903070116
 [@tag:Bengio2015_prec]: arxiv:1412.7024
 [@tag:Berezikov2011_mirna]: doi:10.1038/nrg3079
 [@tag:Bergstra2011_hyper]: url:https://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimization.pdf
@@ -2286,6 +2306,8 @@ We would like to thank Robert Gieseke, Ruibang Luo, Stephen Ra, Sourav Singh, an
 [@tag:Edwards2015_growing_pains]: doi:10.1145/2771283
 [@tag:Ehran2009_visualizing]: url:http://www.iro.umontreal.ca/~lisa/publications2/index.php/publications/show/247
 [@tag:Elephas]: url:https://github.com/maxpumperla/elephas
+[@tag:Elton_molecular_design_review]: doi:10.1039/C9ME00039A
+[@tag:Elton2020]: arxiv:2002.05149
 [@tag:Errington2014_reproducibility]: doi:10.7554/eLife.04333
 [@tag:Eser2016_fiddle]: doi:10.1101/081380
 [@tag:Esfahani2016_melanoma]: doi:10.1109/EMBC.2016.7590963
@@ -2296,6 +2318,7 @@ We would like to thank Robert Gieseke, Ruibang Luo, Stephen Ra, Sourav Singh, an
 [@tag:Finnegan2017_maximum]: doi:10.1101/105957
 [@tag:Fong2017_perturb]: doi:10.1109/ICCV.2017.371
 [@tag:Fraga2005]: doi:10.1073/pnas.0500398102
+[@tag:Frosst2017_distilling]: arxiv:1711.09784
 [@tag:Fu2019]: doi:10.1109/TCBB.2019.2909237
 [@tag:Gal2015_dropout]: arxiv:1506.02142
 [@tag:Gargeya2017_dr]: doi:10.1016/j.ophtha.2017.02.008
@@ -2404,10 +2427,12 @@ We would like to thank Robert Gieseke, Ruibang Luo, Stephen Ra, Sourav Singh, an
 [@tag:Metaphlan]: doi:10.1038/nmeth.2066
 [@tag:Min2016_deepenhancer]: doi:10.1109/BIBM.2016.7822593
 [@tag:Momeni2018]: doi:10.1101/438341
+[@tag:Montavon2018_visualization]: doi:10.1016/j.dsp.2017.10.011
 [@tag:Mordvintsev2015_inceptionism]: url:http://googleresearch.blogspot.co.uk/2015/06/inceptionism-going-deeper-into-neural.html
 [@tag:Moritz2015_sparknet]: arxiv:1511.06051
 [@tag:Mrzelj]: url:https://repozitorij.uni-lj.si/IzpisGradiva.php?id=85515
 [@tag:Murdoch2017_automatic]: arxiv:1702.02540
+[@tag:Murdoch2019]: doi:10.1073/pnas.1900654116
 [@tag:NIH2016_genome_cost]: url:https://www.genome.gov/27565109/the-cost-of-sequencing-a-human-genome/
 [@tag:Nazor2012]: doi:10.1016/j.stem.2012.02.013
 [@tag:Nemati2016_rl]: doi:10.1109/EMBC.2016.7591355
@@ -2449,6 +2474,7 @@ We would like to thank Robert Gieseke, Ruibang Luo, Stephen Ra, Sourav Singh, an
 [@tag:Romero2017_diet]: url:https://openreview.net/pdf?id=Sk-oDY9ge
 [@tag:Rosenberg2015_synthetic_seqs]: doi:10.1016/j.cell.2015.09.054
 [@tag:Roth2015_view_agg_cad]: doi:10.1109/TMI.2015.2482920
+[@tag:Rudin2019]: doi:10.1038/s42256-019-0048-x
 [@tag:Russakovsky2015_imagenet]: doi:10.1007/s11263-015-0816-y
 [@tag:Sa2015_buckwild]: pmcid:PMC4907892
 [@tag:Salas2018]: doi:10.1186/s13059-018-1448-7
@@ -2457,6 +2483,7 @@ We would like to thank Robert Gieseke, Ruibang Luo, Stephen Ra, Sourav Singh, an
 [@tag:Schatz2010_dna_cloud]: doi:10.1038/nbt0710-691
 [@tag:Schmidhuber2014_dnn_overview]: doi:10.1016/j.neunet.2014.09.003
 [@tag:Scotti2016_missplicing]: doi:10.1038/nrg.2015.3
+[@tag:Sculley2018]: url:https://openreview.net/pdf?id=rJWF0Fywf
 [@tag:Segata]: doi:10.1371/journal.pcbi.1004977
 [@tag:Segler2017_drug_design]: arxiv:1701.01329
 [@tag:Seide2014_parallel]: doi:10.1109/ICASSP.2014.6853593
@@ -2466,6 +2493,7 @@ We would like to thank Robert Gieseke, Ruibang Luo, Stephen Ra, Sourav Singh, an
 [@tag:Shaham2016_batch_effects]: doi:10.1093/bioinformatics/btx196
 [@tag:Shapely]: doi:10.1515/9781400881970-018
 [@tag:Shen2017_medimg_review]: doi:10.1146/annurev-bioeng-071516-044442
+[@tag:Shen2019]: doi:10.1016/j.eswa.2019.01.048
 [@tag:Shin2016_cad_tl]: doi:10.1109/TMI.2016.2528162
 [@tag:Shrikumar2017_learning]: arxiv:1704.02685
 [@tag:Shrikumar2017_reversecomplement]: doi:10.1101/103663
@@ -2486,6 +2514,7 @@ We would like to thank Robert Gieseke, Ruibang Luo, Stephen Ra, Sourav Singh, an
 [@tag:Strobelt2016_visual]: arxiv:1606.07461
 [@tag:Su2015_gpu]: arxiv:1507.01239
 [@tag:Subramanian2016_bace1]: doi:10.1021/acs.jcim.6b00290
+[@tag:Sumita2018]: doi:10.1021/acscentsci.8b00213
 [@tag:Sun2016_ensemble]: arxiv:1606.00575
 [@tag:Sundararajan2017_axiomatic]: arxiv:1703.01365
 [@tag:Sutskever]: arxiv:1409.3215
@@ -2502,6 +2531,7 @@ We would like to thank Robert Gieseke, Ruibang Luo, Stephen Ra, Sourav Singh, an
 [@tag:Torracinta2016_sim]: doi:10.1101/079087
 [@tag:Tu1996_anns]: doi:10.1016/S0895-4356(96)00002-9
 [@tag:Unterthiner2014_screening]: url:http://www.bioinf.at/publications/2014/NIPS2014a.pdf
+[@tag:Vamathevan2019]: doi:10.1038/s41573-019-0024-5
 [@tag:Vanhoucke2011_cpu]: url:https://research.google.com/pubs/pub37631.html
 [@tag:Vera2016_sc_analysis]: doi:10.1146/annurev-genet-120215-034854
 [@tag:Vervier]: doi:10.1093/bioinformatics/btv683
@@ -2529,6 +2559,7 @@ We would like to thank Robert Gieseke, Ruibang Luo, Stephen Ra, Sourav Singh, an
 [@tag:Zhang2015_multitask_tl]: doi:10.1145/2783258.2783304
 [@tag:Zhang2017_generalization]: arxiv:1611.03530v2
 [@tag:Zhang2019]: doi:10.1186/s12885-019-5932-6
+[@tag:Zhavoronkov2019_drugs]: doi:10.1038/s41587-019-0224-x
 [@tag:Zhou2015_deep_sea]: doi:10.1038/nmeth.3547
 [@tag:Zhu2016_advers_mamm]: doi:10.1101/095786
 [@tag:Zhu2016_mult_inst_mamm]: doi:10.1101/095794
