@@ -17,11 +17,12 @@ The original version of the Deep Review was published in 2018 and should be cite
 > Ching T, Himmelstein DS, Beaulieu-Jones BK, Kalinin AA, Do BT, Way GP, Ferrero E, Agapow P-M, Zietz M, Hoffman MM, Xie W, Rosen GL, Lengerich BJ, Israeli J, Lanchantin J, Woloszynek S, Carpenter AE, Shrikumar A, Xu J, Cofer EM, Lavender CA, Turaga SC, Alexandari AM, Lu Z, Harris DJ, DeCaprio D, Qi Y, Kundaje A, Peng Y, Wiley LK, Segler MHS, Boca SM, Swamidass SJ, Huang A, Gitter A, and Greene CS. 2018. Opportunities and obstacles for deep learning in biology and medicine. _Journal of The Royal Society Interface_ 15(141):20170387. [doi:10.1098/rsif.2017.0387](https://doi.org/10.1098/rsif.2017.0387)
 
 
-### Current stage: planning Deep Review 2019
+### Current stage: planning Deep Review version 2.0
 
-As of writing, we are aiming to publish an update of the deep review each year, with the next such release occurring at the end of 2019.
+As of writing, we are aiming to publish an update of the deep review.
 We will continue to make project preprints available on bioRxiv or another preprint service and aim to continue publishing the finished reviews in a peer-reviewed venue as well.
 Like the initial release, we are planning for an open and collaborative effort.
+New contributors are welcome and will be listed as version 2.0 authors.
 Please see [issue #810](https://github.com/greenelab/deep-review/issues/810) to contribute to the discussion of future plans, and help decide how to best continue this project.
 
 **Manubot updates:**
