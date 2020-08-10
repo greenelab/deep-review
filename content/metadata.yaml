@@ -84,3 +84,17 @@ authors:
     coi:
       string: "None"
       lastapproved: !!str 2020-03-05
+  - github: agitter
+    name: Anthony Gitter
+    orcid: 0000-0002-5324-9833
+    email: gitter@biostat.wisc.edu
+    affiliations:
+      - Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison, Madison, WI
+      - Morgridge Institute for Research, Madison, WI
+    funders: John W. and Jeanne M. Rowe Center for Research in Virology
+    symbol_str: "†"
+    v1: "Drafted sub-sections, edited the manuscript, reviewed pull requests, and coordinated co-authors"
+    v2: "Drafted sub-sections, edited the manuscript, reviewed pull requests, and coordinated co-authors"
+    coi:
+      string: "Filed a provisional patent application with the Wisconsin Alumni Research Foundation related to classifying activated T cells"
+      lastapproved: !!str 2020-08-09
