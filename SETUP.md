@@ -35,7 +35,7 @@ In general, assume that all commands in this setup are case-sensitive.
 **Edit the following commands with your manuscript's information:**
 
 ```sh
-# GitHub username (change from manubot)
+# GitHub username or organization name (change from manubot)
 OWNER=manubot
 # Repository name (change from rootstock)
 REPO=rootstock
@@ -115,7 +115,7 @@ git rm .appveyor.yml
 git rm ci/install.sh
 ```
 
-GitHub Actions is _usually_ able to deploy without any setup using the [`GITHUB_TOKEN`](https://help.github.com/en/actions/configuring-and-managing-workflows/authenticating-with-the-github_token) for authentication.
+GitHub Actions is _usually_ able to deploy without any additional setup using the [`GITHUB_TOKEN`](https://help.github.com/en/actions/configuring-and-managing-workflows/authenticating-with-the-github_token) for authentication.
 GitHub Pages deployment using `GITHUB_TOKEN` recently started working on GitHub without an official announcement.
 If it does not work for you after completing this setup, try reselecting "gh-pages branch" as the Source for GitHub Pages in the repository Settings.
 GitHub Pages should now trigger on the next commit.
