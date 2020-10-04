@@ -35,12 +35,12 @@ pandoc --verbose \
   --defaults=common.yaml \
   --defaults=html.yaml
 
-# Return null if docker command is missing, otherwise return path to docker
-DOCKER_EXISTS="$(command -v docker || true)"
+# Set DOCKER_RUNNING to a non-empty string if docker is running, otherwise null.
+DOCKER_RUNNING="$(docker info &> /dev/null && echo "yes" || true)"
 
 # Create PDF output (unless BUILD_PDF environment variable equals "false")
 # If Docker is not available, use WeasyPrint to create PDF
-if [ "${BUILD_PDF:-}" != "false" ] && [ -z "$DOCKER_EXISTS" ]; then
+if [ "${BUILD_PDF:-}" != "false" ] && [ -z "$DOCKER_RUNNING" ]; then
   echo >&2 "Exporting PDF manuscript using WeasyPrint"
   if [ -L images ]; then rm images; fi  # if images is a symlink, remove it
   ln -s content/images
@@ -53,7 +53,7 @@ if [ "${BUILD_PDF:-}" != "false" ] && [ -z "$DOCKER_EXISTS" ]; then
 fi
 
 # If Docker is available, use athenapdf to create PDF
-if [ "${BUILD_PDF:-}" != "false" ] && [ -n "$DOCKER_EXISTS" ]; then
+if [ "${BUILD_PDF:-}" != "false" ] && [ -n "$DOCKER_RUNNING" ]; then
   echo >&2 "Exporting PDF manuscript using Docker + Athena"
   if [ "${CI:-}" = "true" ]; then
     # Incease --delay for CI builds to ensure the webpage fully renders, even when the CI server is under high load.
