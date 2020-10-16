@@ -216,7 +216,8 @@
     }
 
     /* figure image element */
-    figure img {
+    figure > img,
+    figure > svg {
         max-width: 100%;
         display: block;
         margin-left: auto;
@@ -224,7 +225,8 @@
     }
 
     /* figure auto-number */
-    img + figcaption > span:first-of-type {
+    img + figcaption > span:first-of-type,
+    svg + figcaption > span:first-of-type {
         font-weight: bold;
         margin-right: 5px;
     }
@@ -804,7 +806,8 @@
         }
 
         /* tooltip copy of <img> */
-        #tooltip_content > figure > img {
+        #tooltip_content > figure > img,
+        #tooltip_content > figure > svg {
             max-height: 260px;
         }
 
@@ -1055,7 +1058,7 @@
 
     @media only screen {
         /* regular <img> in document when hovered */
-        .lightbox_document_img:hover {
+        img.lightbox_document_img:hover {
             cursor: pointer;
         }
 
