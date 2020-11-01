@@ -20,30 +20,32 @@ To change the options, either edit the YAML files directly or add additional `--
 
 Note: currently, **Windows is not supported**.
 
-Install the [conda](https://conda.io) environment specified in [`environment.yml`](environment.yml) by running the following commands from this directory:
+Install the [conda](https://conda.io) environment specified in [`environment.yml`](environment.yml) by running the following commands
+(from the repository's root directory):
 
 ```sh
 # Install the environment
-conda env create --file environment.yml
+conda env create --file build/environment.yml
 ```
 
 If the `manubot` environment is already installed, but needs to be updated to reflect changes to `environment.yml`, use one of the following options:
 
 ```shell
 # option 1: update the existing environment.
-conda env update --file environment.yml
+conda env update --file build/environment.yml
 
 # option 2: remove and reinstall the manubot environment.
 # Slower than option 1, but guarantees a fresh environment.
 conda env remove --name manubot
-conda env create --file environment.yml
+conda env create --file build/environment.yml
 ```
 
 Activate with `conda activate manubot` (assumes `conda` version of [at least](https://github.com/conda/conda/blob/9d759d8edeb86569c25f6eb82053f09581013a2a/CHANGELOG.md#440-2017-12-20) 4.4).
 The environment should successfully install on both Linux and macOS.
 However, it will fail on Windows due to the [`pango`](https://anaconda.org/conda-forge/pango) dependency.
 
-Because the build process is dependent on having the appropriate version of the `manubot` Python package, it is necessary to use the version specified in `environment.yml`.
+Because the build process is dependent on having the appropriate version of the `manubot` Python package,
+it is necessary to use the version specified in `environment.yml`.
 The latest `manubot` release on PyPI may not be compatible with the latest version of this rootstock repository.
 
 ## Building PDFs
