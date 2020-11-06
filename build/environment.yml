@@ -9,17 +9,20 @@ dependencies:
   - jinja2=2.11.2
   - jsonschema=3.2.0
   - pandoc=2.9.2
+  - panflute=1.12.5
   - pango=1.40.14
   - pip=20.2
   - psutil=5.7.3
   - python=3.7.8
   - pyyaml=5.3
   - requests=2.24.0
+  - toml=0.10.2
   - watchdog=0.10.3
   - yamllint=1.25.0
   - pip:
     - errorhandler==2.0.1
     - git+https://github.com/manubot/manubot@7c03b4a7d42506b3241e58cd5643a028443b9b9d
+    - isbnlib==3.10.3
     - opentimestamps-client==0.7.0
     - opentimestamps==0.4.1
     - pandoc-eqnos==2.3.0
