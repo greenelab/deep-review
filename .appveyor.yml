@@ -25,7 +25,7 @@ services:
 
 # Set SPELLCHECK to true to enable Pandoc spellchecking
 environment:
-  SPELLCHECK: true
+  SPELLCHECK: false
 
 install:
   # Create the message with the triggering commit before install so it is
