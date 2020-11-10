@@ -23,13 +23,17 @@ image: ubuntu
 services:
   - docker
 
+# Set SPELLCHECK to true to enable Pandoc spellchecking
+environment:
+  SPELLCHECK: true
+
 install:
   # Create the message with the triggering commit before install so it is
   # available if the build fails
   - TRIGGERING_COMMIT=${APPVEYOR_PULL_REQUEST_HEAD_COMMIT:-APPVEYOR_REPO_COMMIT}
-  - appveyor AddMessage "commit $TRIGGERING_COMMIT"
+  - JOB_MESSAGE=" for commit $TRIGGERING_COMMIT "
   - source ci/install.sh
-    
+
 test_script:
   - bash build/build.sh
   - MANUSCRIPT_FILENAME=manuscript-$APPVEYOR_BUILD_VERSION-${TRIGGERING_COMMIT:0:7}
@@ -37,6 +41,15 @@ test_script:
   - cp output/manuscript.pdf $MANUSCRIPT_FILENAME.pdf
   - appveyor PushArtifact $MANUSCRIPT_FILENAME.html
   - appveyor PushArtifact $MANUSCRIPT_FILENAME.pdf
+  - |
+      if [ "${SPELLCHECK:-}" = "true" ]; then
+        SPELLING_ERRORS_FILENAME=spelling-errors-$APPVEYOR_BUILD_VERSION-${TRIGGERING_COMMIT:0:7}.txt
+        cp output/spelling-errors.txt $SPELLING_ERRORS_FILENAME
+        appveyor PushArtifact $SPELLING_ERRORS_FILENAME
+        SPELLING_ERROR_LOCATIONS_FILENAME=spelling-error-locations-$APPVEYOR_BUILD_VERSION-${TRIGGERING_COMMIT:0:7}.txt
+        cp output/spelling-error-locations.txt $SPELLING_ERROR_LOCATIONS_FILENAME
+        appveyor PushArtifact $SPELLING_ERROR_LOCATIONS_FILENAME
+      fi
 
 build: off
 
@@ -46,6 +59,16 @@ cache:
 on_success:
   - echo "Artifacts available from $APPVEYOR_URL/project/$APPVEYOR_ACCOUNT_NAME/$APPVEYOR_PROJECT_SLUG/builds/$APPVEYOR_BUILD_ID/artifacts"
   - echo "Updated PDF available from $APPVEYOR_URL/api/buildjobs/$APPVEYOR_JOB_ID/artifacts/$MANUSCRIPT_FILENAME.pdf"
+  - appveyor AddMessage "$JOB_MESSAGE is now complete."
+  - |
+      if [ "${SPELLCHECK:-}" = "true" ]; then
+        SPELLING_ERROR_COUNT=($(wc -l $SPELLING_ERROR_LOCATIONS_FILENAME))
+        appveyor AddMessage " <details><summary>Found $SPELLING_ERROR_COUNT potential spelling error(s). Preview:</summary>$(head -n 100 $SPELLING_ERROR_LOCATIONS_FILENAME)"
+        appveyor AddMessage "... </details>"
+      fi
+
+on_failure:
+  - appveyor AddMessage "$JOB_MESSAGE failed."
 
 # The following lines can be safely deleted, which will disable AppVeyorBot
 # notifications in GitHub pull requests
@@ -55,7 +78,6 @@ on_success:
 notifications:
   - provider: GitHubPullRequest
     template: "AppVeyor [build {{buildVersion}}]({{buildUrl}})
-      {{#jobs}}{{#messages}} for {{message}} by @{{&commitAuthorUsername}}{{/messages}}{{/jobs}}
-      {{#passed}} is now complete. The rendered manuscript from this build is temporarily available for download at:\n\n{{/passed}}
-      {{#failed}} failed.{{/failed}}
-      {{#jobs}}{{#artifacts}}- [`{{fileName}}`]({{permalink}})\n{{/artifacts}}{{/jobs}}"
+      {{#jobs}}{{#messages}}{{{message}}}{{/messages}}{{/jobs}}
+      {{#passed}}The rendered manuscript from this build is temporarily available for download at:\n\n
+      {{#jobs}}{{#artifacts}}- [`{{fileName}}`]({{permalink}})\n{{/artifacts}}{{/jobs}}{{/passed}}"

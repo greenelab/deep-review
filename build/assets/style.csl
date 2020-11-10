@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="never" default-locale="en-US">
   <!-- This style was edited with the Visual CSL Editor (http://editor.citationstyles.org/visualEditor/) -->
   <info>
@@ -47,29 +47,31 @@
       <text variable="citation-number"/>
     </layout>
   </citation>
-  <bibliography hanging-indent="true" second-field-align="margin">
+  <bibliography hanging-indent="true" second-field-align="flush">
     <layout>
       <text variable="citation-number" suffix=". "/>
-      <group>
-        <text variable="title" font-weight="bold"/>
-      </group>
-      <group display="block">
-        <text macro="author"/>
-      </group>
       <group delimiter=" ">
-        <text macro="venue" font-style="italic"/>
-        <date variable="issued" prefix="(" suffix=")">
-          <date-part name="year"/>
-          <date-part name="month" form="numeric-leading-zeros" prefix="-"/>
-          <date-part name="day" form="numeric-leading-zeros" prefix="-"/>
-        </date>
-        <text variable="URL"/>
-      </group>
-      <group display="block" delimiter=" · ">
-        <text variable="DOI" text-case="lowercase" prefix="DOI: "/>
-        <text variable="PMID" prefix="PMID: "/>
-        <text variable="PMCID" prefix="PMCID: "/>
-        <text variable="ISBN" prefix="ISBN: "/>
+        <group>
+          <text variable="title" font-weight="bold"/>
+        </group>
+        <group display="block">
+          <text macro="author"/>
+        </group>
+        <group delimiter=" ">
+          <text macro="venue" font-style="italic"/>
+          <date variable="issued" prefix="(" suffix=")">
+            <date-part name="year"/>
+            <date-part name="month" form="numeric-leading-zeros" prefix="-"/>
+            <date-part name="day" form="numeric-leading-zeros" prefix="-"/>
+          </date>
+          <text variable="URL"/>
+        </group>
+        <group display="block" delimiter=" · ">
+          <text variable="DOI" text-case="lowercase" prefix="DOI: "/>
+          <text variable="PMID" prefix="PMID: "/>
+          <text variable="PMCID" prefix="PMCID: "/>
+          <text variable="ISBN" prefix="ISBN: "/>
+        </group>
       </group>
     </layout>
   </bibliography>
