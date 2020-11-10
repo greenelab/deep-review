@@ -1,16 +1,16 @@
 ---
 author-meta:
 - Casey S. Greene
-- Daniel C. Elton
-- Alexander J. Titus
-- Anthony Gitter
 - Daniel S. Himmelstein
+- Daniel C. Elton
 - Brock C. Christensen
+- Anthony Gitter
+- Alexander J. Titus
 - Joshua J. Levy
 bibliography:
 - content/manual-references-2020-01-29.json
 - content/manual-references.json
-date-meta: '2020-08-10'
+date-meta: '2020-11-10'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -29,9 +29,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Opportunities and obstacles for deep learning in biology and medicine [update in progress]" />
 
-  <meta name="dc.date" content="2020-08-10" />
+  <meta name="dc.date" content="2020-11-10" />
 
-  <meta name="citation_publication_date" content="2020-08-10" />
+  <meta name="citation_publication_date" content="2020-11-10" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -53,17 +53,23 @@ header-includes: '<!--
 
   <meta name="citation_author_orcid" content="0000-0001-8713-9213" />
 
+  <meta name="citation_author" content="Daniel S. Himmelstein" />
+
+  <meta name="citation_author_institution" content="Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America" />
+
+  <meta name="citation_author_orcid" content="0000-0002-3012-7446" />
+
   <meta name="citation_author" content="Daniel C. Elton" />
 
   <meta name="citation_author_institution" content="Radiology and Imaging Sciences, National Institutes of Health Clinical Center, Bethesda, MD" />
 
   <meta name="citation_author_orcid" content="0000-0003-0249-1387" />
 
-  <meta name="citation_author" content="Alexander J. Titus" />
+  <meta name="citation_author" content="Brock C. Christensen" />
 
   <meta name="citation_author_institution" content="Department of Epidemiology, Geisel School of Medicine, Dartmouth College, Lebanon, NH" />
 
-  <meta name="citation_author_orcid" content="0000-0002-0145-9564" />
+  <meta name="citation_author_orcid" content="0000-0003-3022-426X" />
 
   <meta name="citation_author" content="Anthony Gitter" />
 
@@ -73,17 +79,11 @@ header-includes: '<!--
 
   <meta name="citation_author_orcid" content="0000-0002-5324-9833" />
 
-  <meta name="citation_author" content="Daniel S. Himmelstein" />
-
-  <meta name="citation_author_institution" content="Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America" />
-
-  <meta name="citation_author_orcid" content="0000-0002-3012-7446" />
-
-  <meta name="citation_author" content="Brock C. Christensen" />
+  <meta name="citation_author" content="Alexander J. Titus" />
 
   <meta name="citation_author_institution" content="Department of Epidemiology, Geisel School of Medicine, Dartmouth College, Lebanon, NH" />
 
-  <meta name="citation_author_orcid" content="0000-0003-3022-426X" />
+  <meta name="citation_author_orcid" content="0000-0002-0145-9564" />
 
   <meta name="citation_author" content="Joshua J. Levy" />
 
@@ -103,19 +103,19 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/deep-review/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/deep-review/v/cfa2a3572937756df3332d987ef25155fab8b88d/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/deep-review/v/75f2dd8c61099a17235a4b8de0567b2364901e4d/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/deep-review/v/cfa2a3572937756df3332d987ef25155fab8b88d/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/deep-review/v/75f2dd8c61099a17235a4b8de0567b2364901e4d/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/deep-review/v/cfa2a3572937756df3332d987ef25155fab8b88d/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/deep-review/v/75f2dd8c61099a17235a4b8de0567b2364901e4d/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
   <meta property="twitter:card" content="summary_large_image" />
 
-  <meta property="og:image" content="https://github.com/greenelab/deep-review/raw/cfa2a3572937756df3332d987ef25155fab8b88d/thumbnail.png" />
+  <meta property="og:image" content="https://github.com/greenelab/deep-review/raw/75f2dd8c61099a17235a4b8de0567b2364901e4d/thumbnail.png" />
 
-  <meta property="twitter:image" content="https://github.com/greenelab/deep-review/raw/cfa2a3572937756df3332d987ef25155fab8b88d/thumbnail.png" />
+  <meta property="twitter:image" content="https://github.com/greenelab/deep-review/raw/75f2dd8c61099a17235a4b8de0567b2364901e4d/thumbnail.png" />
 
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
 
@@ -155,10 +155,10 @@ New authors and links to new sections are available in [GitHub Issue #959](https
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/deep-review/v/cfa2a3572937756df3332d987ef25155fab8b88d/))
+([permalink](https://greenelab.github.io/deep-review/v/75f2dd8c61099a17235a4b8de0567b2364901e4d/))
 was automatically generated
-from [greenelab/deep-review@cfa2a35](https://github.com/greenelab/deep-review/tree/cfa2a3572937756df3332d987ef25155fab8b88d)
-on August 10, 2020.
+from [greenelab/deep-review@75f2dd8](https://github.com/greenelab/deep-review/tree/75f2dd8c61099a17235a4b8de0567b2364901e4d)
+on November 10, 2020.
 </em></small>
 
 ## Authors
@@ -168,16 +168,16 @@ on August 10, 2020.
 
   [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-8713-9213)
     Casey S. Greene<sup>2.1,2.2⚄,†</sup>,
-  [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-0249-1387)
-    Daniel C. Elton<sup>2.3⚄</sup>,
-  [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-0145-9564)
-    Alexander J. Titus<sup>2.4⚄</sup>,
-  [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-5324-9833)
-    Anthony Gitter<sup>2.5,2.6⚄,†</sup>,
   [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-3012-7446)
-    Daniel S. Himmelstein<sup>2.7⚄</sup>,
+    Daniel S. Himmelstein<sup>2.3⚄</sup>,
+  [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-0249-1387)
+    Daniel C. Elton<sup>2.4⚄</sup>,
   [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0003-3022-426X)
-    Brock C. Christensen<sup>2.4⚄</sup>,
+    Brock C. Christensen<sup>2.5⚄</sup>,
+  [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-5324-9833)
+    Anthony Gitter<sup>2.6,2.7⚄,†</sup>,
+  [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0002-0145-9564)
+    Alexander J. Titus<sup>2.5⚄</sup>,
   [![ORCID icon](images/orcid.svg){height="11px" width="11px"}](https://orcid.org/0000-0001-8050-1291)
     Joshua J. Levy<sup>2.8⚄</sup>,
 [The Version 1.0 Deep Review Authors](#version-1.0-authors)
@@ -190,11 +190,11 @@ on August 10, 2020.
 
 2.1. Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA<br>
 2.2. Childhood Cancer Data Lab, Alex's Lemonade Stand Foundation, Philadelphia, PA<br>
-2.3. Radiology and Imaging Sciences, National Institutes of Health Clinical Center, Bethesda, MD<br>
-2.4. Department of Epidemiology, Geisel School of Medicine, Dartmouth College, Lebanon, NH<br>
-2.5. Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison, Madison, WI<br>
-2.6. Morgridge Institute for Research, Madison, WI<br>
-2.7. Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America<br>
+2.3. Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America<br>
+2.4. Radiology and Imaging Sciences, National Institutes of Health Clinical Center, Bethesda, MD<br>
+2.5. Department of Epidemiology, Geisel School of Medicine, Dartmouth College, Lebanon, NH<br>
+2.6. Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison, Madison, WI<br>
+2.7. Morgridge Institute for Research, Madison, WI<br>
 2.8. Program in Quantitative Biomedical Sciences, Geisel School of Medicine at Dartmouth, Lebanon, NH<br>
 
 </small>
@@ -2156,7 +2156,7 @@ Manubot allowed us to automate this process, using the Git commit hash as a rand
 
 We continued using the open repository on the GitHub version control platform ([`greenelab/deep-review`](https://github.com/greenelab/deep-review)) [@url:https://github.com/greenelab/deep-review], which was established to write the version 1.0 manuscript.
 
-  Drafted one or more subsections: Alexander J. Titus, Brock C. Christensen, Joshua J. Levy. 
+  Drafted one or more subsections: Brock C. Christensen, Alexander J. Titus, Joshua J. Levy. 
 
   Drafted sub-sections, edited the manuscript, reviewed pull requests, and coordinated co-authors: Casey S. Greene, Anthony Gitter. 
 
@@ -2170,11 +2170,11 @@ We continued using the open repository on the GitHub version control platform ([
 |Author|Competing Interests|Last Reviewed|
 |---|---|---|
 |Casey S. Greene|None|2020-03-10|
-|Daniel C. Elton|None|2020-03-05|
-|Alexander J. Titus|None|2020-03-07|
-|Anthony Gitter|Filed a provisional patent application with the Wisconsin Alumni Research Foundation related to classifying activated T cells|2020-08-09|
 |Daniel S. Himmelstein|None|2020-03-10|
+|Daniel C. Elton|None|2020-03-05|
 |Brock C. Christensen|None|2020-03-05|
+|Anthony Gitter|Filed a provisional patent application with the Wisconsin Alumni Research Foundation related to classifying activated T cells|2020-08-09|
+|Alexander J. Titus|None|2020-03-07|
 |Joshua J. Levy|None|2020-03-04|
 
 ##### Version 2.0 funding statement
