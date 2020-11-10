@@ -12,25 +12,38 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GITHUB_PULL_REQUEST_SHA: ${{ github.event.pull_request.head.sha }}
+      SPELLCHECK: false
     steps:
       - name: Set Environment Variables
         run: |
           TRIGGERING_SHA=${GITHUB_PULL_REQUEST_SHA:-$GITHUB_SHA}
-          TRIGGERING_SHA_7=${TRIGGERING_SHA::7}
-          echo "::set-env name=TRIGGERING_SHA_7::$TRIGGERING_SHA_7"
+          echo "TRIGGERING_SHA_7=${TRIGGERING_SHA::7}" >> $GITHUB_ENV
           echo "TRIGGERING_SHA: $TRIGGERING_SHA"
       - name: Checkout Repository
         uses: actions/checkout@v2
         with:
           # fetch entire commit history to support get_rootstock_commit
           fetch-depth: 0
+      - name: Cache
+        uses: actions/cache@v1
+        with:
+          path: ci/cache
+          key: ci-cache-${{ github.ref }}
+          restore-keys: |
+            ci-cache-refs/heads/master
       - name: Install Environment
-        uses: goanpeca/setup-miniconda@v1
+        uses: conda-incubator/setup-miniconda@v2
         with:
           activate-environment: manubot
           environment-file: build/environment.yml
           auto-activate-base: false
           miniconda-version: 'latest'
+      - name: Install Spellcheck
+        shell: bash --login {0}
+        run: |
+          if [ "${SPELLCHECK:-}" = "true" ]; then
+            bash ci/install-spellcheck.sh
+          fi
       - name: Build Manuscript
         shell: bash --login {0}
         run: bash build/build.sh

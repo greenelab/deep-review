@@ -1,0 +1,23 @@
+personal_ws-1.1 en 22
+al
+doi
+eq
+et
+github
+isbn
+latex
+manubot
+orcid
+permalink
+pmc
+pmcid
+pmid
+pubmed
+rootstock
+s
+strikethrough
+svg
+svgs
+tbl
+unicode
+wikidata

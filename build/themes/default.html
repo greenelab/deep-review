@@ -80,6 +80,26 @@
         border-bottom: solid 1px #bdbdbd;
     }
 
+    /* heading font sizes */
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    h3{
+        font-size: 1.35em;
+    }
+    h4 {
+        font-size: 1.25em;
+    }
+    h5 {
+        font-size: 1.15em;
+    }
+    h6 {
+        font-size: 1em;
+    }
+
     /* -------------------------------------------------- */
     /* manuscript header */
     /* -------------------------------------------------- */
@@ -196,7 +216,8 @@
     }
 
     /* figure image element */
-    figure img {
+    figure > img,
+    figure > svg {
         max-width: 100%;
         display: block;
         margin-left: auto;
@@ -204,7 +225,8 @@
     }
 
     /* figure auto-number */
-    img + figcaption > span:first-of-type {
+    img + figcaption > span:first-of-type,
+    svg + figcaption > span:first-of-type {
         font-weight: bold;
         margin-right: 5px;
     }
@@ -513,22 +535,6 @@
             margin: 15px 0;
         }
 
-        /* heading 1 */
-        h1 {
-            font-size: 1.75em;
-        }
-
-        /* heading 2 */
-        h2 {
-            font-size: 1.25em;
-            margin-top: 0;
-        }
-
-        /* heading 3 */
-        h3 {
-            font-size: 1.10em;
-        }
-
         /* figures and tables */
         figure, table {
             font-size: 0.85em;
@@ -800,7 +806,8 @@
         }
 
         /* tooltip copy of <img> */
-        #tooltip_content > figure > img {
+        #tooltip_content > figure > img,
+        #tooltip_content > figure > svg {
             max-height: 260px;
         }
 
@@ -1051,7 +1058,7 @@
 
     @media only screen {
         /* regular <img> in document when hovered */
-        .lightbox_document_img:hover {
+        img.lightbox_document_img:hover {
             cursor: pointer;
         }
 
@@ -1182,10 +1189,39 @@
     /* hypothesis (annotations) plugin */
     /* -------------------------------------------------- */
 
+    /* hypothesis activation button */
+    #hypothesis_button {
+        box-sizing: border-box;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 60px;
+        height: 60px;
+        background: #ffffff;
+        border-radius: 0;
+        border-left: solid 1px #bdbdbd;
+        border-bottom: solid 1px #bdbdbd;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+        z-index: 2;
+    }
+
+    /* hypothesis button svg */
+    #hypothesis_button > svg {
+        position: relative;
+        top: -4px;
+    }
+
+    /* hypothesis annotation count */
+    #hypothesis_count {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 5px;
+    }
+
     /* side panel */
     .annotator-frame {
         width: 280px !important;
-        z-index: 0 !important;
     }
 
     /* match highlight color to rest of theme */
@@ -1203,8 +1239,12 @@
         background: #f5f5f5 !important;
     }
 
-    /* always hide toolbar and tooltip on print */
+    /* always hide button, toolbar, and tooltip on print */
     @media only print {
+        #hypothesis_button {
+            display: none;
+        }
+
         .annotator-frame {
             display: none !important;
         }

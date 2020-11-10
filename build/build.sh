@@ -24,8 +24,8 @@ manubot process \
   --log-level=INFO
 
 # Pandoc's configuration is specified via files of option defaults
-# located in the PANDOC_DEFAULTS_DIR directory.
-PANDOC_DEFAULTS_DIR="${PANDOC_DEFAULTS_DIR:-build/pandoc-defaults}"
+# located in the $PANDOC_DATA_DIR/defaults directory.
+PANDOC_DATA_DIR="${PANDOC_DATA_DIR:-build/pandoc}"
 
 # Make output directory
 mkdir -p output
@@ -34,27 +34,29 @@ mkdir -p output
 # https://pandoc.org/MANUAL.html
 echo >&2 "Exporting HTML manuscript"
 pandoc --verbose \
-  --defaults="$PANDOC_DEFAULTS_DIR/common.yaml" \
-  --defaults="$PANDOC_DEFAULTS_DIR/html.yaml"
+  --data-dir="$PANDOC_DATA_DIR" \
+  --defaults=common.yaml \
+  --defaults=html.yaml
 
-# Return null if docker command is missing, otherwise return path to docker
-DOCKER_EXISTS="$(command -v docker || true)"
+# Set DOCKER_RUNNING to a non-empty string if docker is running, otherwise null.
+DOCKER_RUNNING="$(docker info &> /dev/null && echo "yes" || true)"
 
 # Create PDF output (unless BUILD_PDF environment variable equals "false")
 # If Docker is not available, use WeasyPrint to create PDF
-if [ "${BUILD_PDF:-}" != "false" ] && [ -z "$DOCKER_EXISTS" ]; then
+if [ "${BUILD_PDF:-}" != "false" ] && [ -z "$DOCKER_RUNNING" ]; then
   echo >&2 "Exporting PDF manuscript using WeasyPrint"
   if [ -L images ]; then rm images; fi  # if images is a symlink, remove it
   ln -s content/images
   pandoc \
-    --defaults="$PANDOC_DEFAULTS_DIR/common.yaml" \
-    --defaults="$PANDOC_DEFAULTS_DIR/html.yaml" \
-    --defaults="$PANDOC_DEFAULTS_DIR/pdf-weasyprint.yaml"
+    --data-dir="$PANDOC_DATA_DIR" \
+    --defaults=common.yaml \
+    --defaults=html.yaml \
+    --defaults=pdf-weasyprint.yaml
   rm images
 fi
 
 # If Docker is available, use athenapdf to create PDF
-if [ "${BUILD_PDF:-}" != "false" ] && [ -n "$DOCKER_EXISTS" ]; then
+if [ "${BUILD_PDF:-}" != "false" ] && [ -n "$DOCKER_RUNNING" ]; then
   echo >&2 "Exporting PDF manuscript using Docker + Athena"
   if [ "${CI:-}" = "true" ]; then
     # Incease --delay for CI builds to ensure the webpage fully renders, even when the CI server is under high load.
@@ -81,8 +83,40 @@ fi
 if [ "${BUILD_DOCX:-}" = "true" ]; then
   echo >&2 "Exporting Word Docx manuscript"
   pandoc --verbose \
-    --defaults="$PANDOC_DEFAULTS_DIR/common.yaml" \
-    --defaults="$PANDOC_DEFAULTS_DIR/docx.yaml"
+    --data-dir="$PANDOC_DATA_DIR" \
+    --defaults=common.yaml \
+    --defaults=docx.yaml
+fi
+
+# Spellcheck
+if [ "${SPELLCHECK:-}" = "true" ]; then
+  export ASPELL_CONF="add-extra-dicts $(pwd)/build/assets/custom-dictionary.txt; ignore-case true"
+
+  # Identify and store spelling errors
+  pandoc \
+    --data-dir="$PANDOC_DATA_DIR" \
+    --lua-filter spellcheck.lua \
+    output/manuscript.md \
+    | sort -fu > output/spelling-errors.txt
+  echo >&2 "Potential spelling errors:"
+  cat output/spelling-errors.txt
+
+  # Add additional forms of punctuation that Pandoc converts so that the
+  # locations can be detected
+  # Create a new expanded spelling errors file so that the saved artifact
+  # contains only the original misspelled words
+  cp output/spelling-errors.txt output/expanded-spelling-errors.txt
+  grep "’" output/spelling-errors.txt | sed "s/’/'/g" >> output/expanded-spelling-errors.txt || true
+
+  # Find locations of spelling errors
+  # Use "|| true" after grep because otherwise this step of the pipeline will
+  # return exit code 1 if any of the markdown files do not contain a
+  # misspelled word
+  cat output/expanded-spelling-errors.txt | while read word; do grep -ion "\<$word\>" content/*.md; done | sort -h -t ":" -k 1b,1 -k2,2 > output/spelling-error-locations.txt || true
+  echo >&2 "Filenames and line numbers with potential spelling errors:"
+  cat output/spelling-error-locations.txt
+
+  rm output/expanded-spelling-errors.txt
 fi
 
 echo >&2 "Build complete"

@@ -1,0 +1,62 @@
+<!-- inline svg plugin -->
+
+<script>
+  (function() {
+      // /////////////////////////
+      // DESCRIPTION
+      // /////////////////////////
+
+      // This Manubot plugin fetches the text source code of SVGs in <img> tags,
+      // and inserts it into the document in-place. This provides many
+      // advantages, such as being able to style SVGs globally from the CSS
+      // themes, and being able to make SVGs interactive with JavaScript and D3.
+      // If you have a script that expects SVGs to be inlined, wait for an
+      // "SVGLoaded" event before running it.
+
+      // Note: This requires the page to be served from a server to work
+      // See: https://stackoverflow.com/a/11063963/2180570
+      // Tip: Use the manubot commands to open the page in a local webserver
+      // See: https://github.com/manubot/rootstock#local-execution
+
+      // /////////////////////////
+      // SCRIPT
+      // /////////////////////////
+
+      // start script
+      async function start() {
+          // get all <img> tags that have "src" attributes that end with ".svg"
+          const imgs = document.querySelectorAll('img[src$=".svg"]');
+          const inlineSvgs = Array.from(imgs).map(inlineSvg);
+          await Promise.all(inlineSvgs);
+
+          // dispatch "inline finished" event
+          document.dispatchEvent(new Event('SVGLoaded'));
+      }
+
+      // take an svg <img> tag, fetch its source code, and replace it 
+      async function inlineSvg(img) {
+          try {
+              // fetch svg source code
+              const response = await fetch(img.src);
+              if (!response.ok) throw new Error('Couldn\'t get SVG source');
+              const source = await response.text();
+              if (!source.trim()) throw new Error('No SVG source');
+              // parse specifically as svg, create new (hidden) dom node
+              const svg = new DOMParser()
+                  .parseFromString(source, 'image/svg+xml')
+                  .querySelector('svg');
+              if (!svg) throw new Error('Couldn\'t parse SVG');
+              // transfer original img attributes into new svg
+              for (const { name, value } of img.attributes)
+                  svg.setAttribute(name, value);
+              // replace original image with new svg
+              img.outerHTML = svg.outerHTML;
+          } catch (error) {
+              console.log(error);
+          }
+      }
+
+      // start script when document is finished loading
+      window.addEventListener('load', start);
+  })();
+</script>
