@@ -12,17 +12,17 @@
       "manubot"
     ],
     "lang": "en-US",
-    "date-meta": "2020-11-10",
+    "date-meta": "2021-12-28",
     "author-meta": [
-      "Casey S. Greene",
-      "Daniel S. Himmelstein",
-      "Daniel C. Elton",
       "Brock C. Christensen",
       "Anthony Gitter",
+      "Daniel S. Himmelstein",
       "Alexander J. Titus",
-      "Joshua J. Levy"
+      "Joshua J. Levy",
+      "Casey S. Greene",
+      "Daniel C. Elton"
     ],
-    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Opportunities and obstacles for deep learning in biology and medicine [update in progress]\" />\n<meta name=\"citation_title\" content=\"Opportunities and obstacles for deep learning in biology and medicine [update in progress]\" />\n<meta property=\"og:title\" content=\"Opportunities and obstacles for deep learning in biology and medicine [update in progress]\" />\n<meta property=\"twitter:title\" content=\"Opportunities and obstacles for deep learning in biology and medicine [update in progress]\" />\n<meta name=\"dc.date\" content=\"2020-11-10\" />\n<meta name=\"citation_publication_date\" content=\"2020-11-10\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Casey S. Greene\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA\" />\n<meta name=\"citation_author_institution\" content=\"Childhood Cancer Data Lab, Alex&#39;s Lemonade Stand Foundation, Philadelphia, PA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8713-9213\" />\n<meta name=\"citation_author\" content=\"Daniel S. Himmelstein\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-3012-7446\" />\n<meta name=\"citation_author\" content=\"Daniel C. Elton\" />\n<meta name=\"citation_author_institution\" content=\"Radiology and Imaging Sciences, National Institutes of Health Clinical Center, Bethesda, MD\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-0249-1387\" />\n<meta name=\"citation_author\" content=\"Brock C. Christensen\" />\n<meta name=\"citation_author_institution\" content=\"Department of Epidemiology, Geisel School of Medicine, Dartmouth College, Lebanon, NH\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3022-426X\" />\n<meta name=\"citation_author\" content=\"Anthony Gitter\" />\n<meta name=\"citation_author_institution\" content=\"Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison, Madison, WI\" />\n<meta name=\"citation_author_institution\" content=\"Morgridge Institute for Research, Madison, WI\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-5324-9833\" />\n<meta name=\"citation_author\" content=\"Alexander J. Titus\" />\n<meta name=\"citation_author_institution\" content=\"Department of Epidemiology, Geisel School of Medicine, Dartmouth College, Lebanon, NH\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-0145-9564\" />\n<meta name=\"citation_author\" content=\"Joshua J. Levy\" />\n<meta name=\"citation_author_institution\" content=\"Program in Quantitative Biomedical Sciences, Geisel School of Medicine at Dartmouth, Lebanon, NH\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8050-1291\" />\n<link rel=\"canonical\" href=\"https://greenelab.github.io/deep-review/\" />\n<meta property=\"og:url\" content=\"https://greenelab.github.io/deep-review/\" />\n<meta property=\"twitter:url\" content=\"https://greenelab.github.io/deep-review/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://greenelab.github.io/deep-review/\" />\n<meta name=\"citation_pdf_url\" content=\"https://greenelab.github.io/deep-review/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://greenelab.github.io/deep-review/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://greenelab.github.io/deep-review/v/75f2dd8c61099a17235a4b8de0567b2364901e4d/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://greenelab.github.io/deep-review/v/75f2dd8c61099a17235a4b8de0567b2364901e4d/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://greenelab.github.io/deep-review/v/75f2dd8c61099a17235a4b8de0567b2364901e4d/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<meta property=\"og:image\" content=\"https://github.com/greenelab/deep-review/raw/75f2dd8c61099a17235a4b8de0567b2364901e4d/thumbnail.png\" />\n<meta property=\"twitter:image\" content=\"https://github.com/greenelab/deep-review/raw/75f2dd8c61099a17235a4b8de0567b2364901e4d/thumbnail.png\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
+    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Opportunities and obstacles for deep learning in biology and medicine [update in progress]\" />\n<meta name=\"citation_title\" content=\"Opportunities and obstacles for deep learning in biology and medicine [update in progress]\" />\n<meta property=\"og:title\" content=\"Opportunities and obstacles for deep learning in biology and medicine [update in progress]\" />\n<meta property=\"twitter:title\" content=\"Opportunities and obstacles for deep learning in biology and medicine [update in progress]\" />\n<meta name=\"dc.date\" content=\"2021-12-28\" />\n<meta name=\"citation_publication_date\" content=\"2021-12-28\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Brock C. Christensen\" />\n<meta name=\"citation_author_institution\" content=\"Department of Epidemiology, Geisel School of Medicine, Dartmouth College, Lebanon, NH\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3022-426X\" />\n<meta name=\"citation_author\" content=\"Anthony Gitter\" />\n<meta name=\"citation_author_institution\" content=\"Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison, Madison, WI\" />\n<meta name=\"citation_author_institution\" content=\"Morgridge Institute for Research, Madison, WI\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-5324-9833\" />\n<meta name=\"citation_author\" content=\"Daniel S. Himmelstein\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-3012-7446\" />\n<meta name=\"citation_author\" content=\"Alexander J. Titus\" />\n<meta name=\"citation_author_institution\" content=\"Department of Epidemiology, Geisel School of Medicine, Dartmouth College, Lebanon, NH\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-0145-9564\" />\n<meta name=\"citation_author\" content=\"Joshua J. Levy\" />\n<meta name=\"citation_author_institution\" content=\"Program in Quantitative Biomedical Sciences, Geisel School of Medicine at Dartmouth, Lebanon, NH\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8050-1291\" />\n<meta name=\"citation_author\" content=\"Casey S. Greene\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA\" />\n<meta name=\"citation_author_institution\" content=\"Childhood Cancer Data Lab, Alex&#39;s Lemonade Stand Foundation, Philadelphia, PA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8713-9213\" />\n<meta name=\"citation_author\" content=\"Daniel C. Elton\" />\n<meta name=\"citation_author_institution\" content=\"Radiology and Imaging Sciences, National Institutes of Health Clinical Center, Bethesda, MD\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-0249-1387\" />\n<link rel=\"canonical\" href=\"https://greenelab.github.io/deep-review/\" />\n<meta property=\"og:url\" content=\"https://greenelab.github.io/deep-review/\" />\n<meta property=\"twitter:url\" content=\"https://greenelab.github.io/deep-review/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://greenelab.github.io/deep-review/\" />\n<meta name=\"citation_pdf_url\" content=\"https://greenelab.github.io/deep-review/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://greenelab.github.io/deep-review/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://greenelab.github.io/deep-review/v/44ff95a2756bd03a32c046eb8983ac9c4f223b0a/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://greenelab.github.io/deep-review/v/44ff95a2756bd03a32c046eb8983ac9c4f223b0a/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://greenelab.github.io/deep-review/v/44ff95a2756bd03a32c046eb8983ac9c4f223b0a/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<meta property=\"og:image\" content=\"https://github.com/greenelab/deep-review/raw/44ff95a2756bd03a32c046eb8983ac9c4f223b0a/thumbnail.png\" />\n<meta property=\"twitter:image\" content=\"https://github.com/greenelab/deep-review/raw/44ff95a2756bd03a32c046eb8983ac9c4f223b0a/thumbnail.png\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
     "bibliography": [
       "content/manual-references-2020-01-29.json",
       "content/manual-references.json"
@@ -33,71 +33,8 @@
     "manubot-clear-requests-cache": false
   },
   "manubot": {
-    "date": "November 10, 2020",
+    "date": "December 28, 2021",
     "authors": [
-      {
-        "github": "cgreene",
-        "name": "Casey S. Greene",
-        "orcid": "0000-0001-8713-9213",
-        "email": "greenescientist@gmail.com",
-        "affiliations": [
-          "Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA",
-          "Childhood Cancer Data Lab, Alex's Lemonade Stand Foundation, Philadelphia, PA"
-        ],
-        "funders": [
-          "GBMF GBMF4552, NIH R01HG010067 & R01CA237170, ALSF CCDL"
-        ],
-        "symbol_str": "†",
-        "v1": "Drafted sub-sections, edited the manuscript, reviewed pull requests, and coordinated co-authors",
-        "v2": "Drafted sub-sections, edited the manuscript, reviewed pull requests, and coordinated co-authors",
-        "coi": {
-          "string": "None",
-          "lastapproved": "2020-03-10"
-        },
-        "affiliation_numbers": [
-          1,
-          2
-        ]
-      },
-      {
-        "github": "dhimmel",
-        "name": "Daniel S. Himmelstein",
-        "orcid": "0000-0002-3012-7446",
-        "email": "daniel.himmelstein@gmail.com",
-        "affiliations": [
-          "Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America"
-        ],
-        "funders": [
-          "G-2018-11163 and GBMF4552"
-        ],
-        "v1": "Edited the manuscript, reviewed pull requests, and developed Manubot",
-        "v2": "Edited the manuscript, reviewed pull requests, and developed Manubot",
-        "coi": {
-          "string": "None",
-          "lastapproved": "2020-03-10"
-        },
-        "affiliation_numbers": [
-          3
-        ]
-      },
-      {
-        "github": "delton137",
-        "name": "Daniel C. Elton",
-        "orcid": "0000-0003-0249-1387",
-        "email": "daniel.elton@nih.gov",
-        "affiliations": [
-          "Radiology and Imaging Sciences, National Institutes of Health Clinical Center, Bethesda, MD"
-        ],
-        "v1": "",
-        "v2": "Revised specific sub-sections or supervised drafting one or more sub-sections",
-        "coi": {
-          "string": "None",
-          "lastapproved": "2020-03-05"
-        },
-        "affiliation_numbers": [
-          4
-        ]
-      },
       {
         "github": "brockclarke",
         "name": "Brock C. Christensen",
@@ -116,7 +53,7 @@
           "lastapproved": "2020-03-05"
         },
         "affiliation_numbers": [
-          5
+          1
         ]
       },
       {
@@ -139,8 +76,29 @@
           "lastapproved": "2020-08-09"
         },
         "affiliation_numbers": [
-          6,
-          7
+          2,
+          3
+        ]
+      },
+      {
+        "github": "dhimmel",
+        "name": "Daniel S. Himmelstein",
+        "orcid": "0000-0002-3012-7446",
+        "email": "daniel.himmelstein@gmail.com",
+        "affiliations": [
+          "Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America"
+        ],
+        "funders": [
+          "G-2018-11163 and GBMF4552"
+        ],
+        "v1": "Edited the manuscript, reviewed pull requests, and developed Manubot",
+        "v2": "Edited the manuscript, reviewed pull requests, and developed Manubot",
+        "coi": {
+          "string": "None",
+          "lastapproved": "2020-03-10"
+        },
+        "affiliation_numbers": [
+          4
         ]
       },
       {
@@ -161,7 +119,7 @@
           "lastapproved": "2020-03-07"
         },
         "affiliation_numbers": [
-          5
+          1
         ]
       },
       {
@@ -182,41 +140,83 @@
           "lastapproved": "2020-03-04"
         },
         "affiliation_numbers": [
+          5
+        ]
+      },
+      {
+        "github": "cgreene",
+        "name": "Casey S. Greene",
+        "orcid": "0000-0001-8713-9213",
+        "email": "greenescientist@gmail.com",
+        "affiliations": [
+          "Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA",
+          "Childhood Cancer Data Lab, Alex's Lemonade Stand Foundation, Philadelphia, PA"
+        ],
+        "funders": [
+          "GBMF GBMF4552, NIH R01HG010067 & R01CA237170, ALSF CCDL"
+        ],
+        "symbol_str": "†",
+        "v1": "Drafted sub-sections, edited the manuscript, reviewed pull requests, and coordinated co-authors",
+        "v2": "Drafted sub-sections, edited the manuscript, reviewed pull requests, and coordinated co-authors",
+        "coi": {
+          "string": "None",
+          "lastapproved": "2020-03-10"
+        },
+        "affiliation_numbers": [
+          6,
+          7
+        ]
+      },
+      {
+        "github": "delton137",
+        "name": "Daniel C. Elton",
+        "orcid": "0000-0003-0249-1387",
+        "email": "daniel.elton@nih.gov",
+        "affiliations": [
+          "Radiology and Imaging Sciences, National Institutes of Health Clinical Center, Bethesda, MD"
+        ],
+        "v1": "",
+        "v2": "Revised specific sub-sections or supervised drafting one or more sub-sections",
+        "coi": {
+          "string": "None",
+          "lastapproved": "2020-03-05"
+        },
+        "affiliation_numbers": [
           8
         ]
       }
     ],
     "affiliations": [
       {
-        "affiliation": "Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA",
+        "affiliation": "Department of Epidemiology, Geisel School of Medicine, Dartmouth College, Lebanon, NH",
         "affiliation_number": 1
       },
       {
-        "affiliation": "Childhood Cancer Data Lab, Alex's Lemonade Stand Foundation, Philadelphia, PA",
+        "affiliation": "Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison, Madison, WI",
         "affiliation_number": 2
       },
       {
-        "affiliation": "Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America",
+        "affiliation": "Morgridge Institute for Research, Madison, WI",
         "affiliation_number": 3
       },
       {
-        "affiliation": "Radiology and Imaging Sciences, National Institutes of Health Clinical Center, Bethesda, MD",
+        "affiliation": "Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America",
         "affiliation_number": 4
       },
       {
-        "affiliation": "Department of Epidemiology, Geisel School of Medicine, Dartmouth College, Lebanon, NH",
+        "affiliation": "Program in Quantitative Biomedical Sciences, Geisel School of Medicine at Dartmouth, Lebanon, NH",
         "affiliation_number": 5
       },
       {
-        "affiliation": "Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison, Madison, WI",
+        "affiliation": "Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA",
         "affiliation_number": 6
       },
       {
-        "affiliation": "Morgridge Institute for Research, Madison, WI",
+        "affiliation": "Childhood Cancer Data Lab, Alex's Lemonade Stand Foundation, Philadelphia, PA",
         "affiliation_number": 7
       },
       {
-        "affiliation": "Program in Quantitative Biomedical Sciences, Geisel School of Medicine at Dartmouth, Lebanon, NH",
+        "affiliation": "Radiology and Imaging Sciences, National Institutes of Health Clinical Center, Bethesda, MD",
         "affiliation_number": 8
       }
     ],
@@ -225,20 +225,20 @@
       "repo_slug": "greenelab/deep-review",
       "repo_owner": "greenelab",
       "repo_name": "deep-review",
-      "commit": "75f2dd8c61099a17235a4b8de0567b2364901e4d",
-      "triggering_commit": "75f2dd8c61099a17235a4b8de0567b2364901e4d",
-      "build_url": "https://github.com/greenelab/deep-review/commit/75f2dd8c61099a17235a4b8de0567b2364901e4d/checks",
-      "job_url": "https://github.com/greenelab/deep-review/runs/run3"
+      "commit": "44ff95a2756bd03a32c046eb8983ac9c4f223b0a",
+      "triggering_commit": "44ff95a2756bd03a32c046eb8983ac9c4f223b0a",
+      "build_url": "https://github.com/greenelab/deep-review/commit/44ff95a2756bd03a32c046eb8983ac9c4f223b0a/checks",
+      "job_url": "https://github.com/greenelab/deep-review/runs/__run_3"
     },
     "html_url": "https://greenelab.github.io/deep-review/",
     "pdf_url": "https://greenelab.github.io/deep-review/manuscript.pdf",
-    "html_url_versioned": "https://greenelab.github.io/deep-review/v/75f2dd8c61099a17235a4b8de0567b2364901e4d/",
-    "pdf_url_versioned": "https://greenelab.github.io/deep-review/v/75f2dd8c61099a17235a4b8de0567b2364901e4d/manuscript.pdf",
+    "html_url_versioned": "https://greenelab.github.io/deep-review/v/44ff95a2756bd03a32c046eb8983ac9c4f223b0a/",
+    "pdf_url_versioned": "https://greenelab.github.io/deep-review/v/44ff95a2756bd03a32c046eb8983ac9c4f223b0a/manuscript.pdf",
     "manubot_version": "0.4.1",
     "rootstock_commit": "97b294802ffcd39071b6e5b8ab59f60faf4be118",
-    "thumbnail_url": "https://github.com/greenelab/deep-review/raw/75f2dd8c61099a17235a4b8de0567b2364901e4d/thumbnail.png",
+    "thumbnail_url": "https://github.com/greenelab/deep-review/raw/44ff95a2756bd03a32c046eb8983ac9c4f223b0a/thumbnail.png",
     "manuscript_stats": {
-      "word_count": 36408
+      "word_count": 36397
     }
   }
 }

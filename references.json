@@ -8513,13 +8513,15 @@
         [
           2020,
           4,
-          17
+          6
         ]
       ]
     },
     "container-title": "Journal of Chemical Information and Modeling",
     "DOI": "10.1021/acs.jcim.0c00174",
-    "page": "acs.jcim.0c00174",
+    "volume": "60",
+    "issue": "12",
+    "page": "5714-5723",
     "publisher": "American Chemical Society (ACS)",
     "title": "The Synthesizability of Molecules Proposed by Generative Models",
     "URL": "https://doi.org/gg7gx7",
@@ -12231,6 +12233,7 @@
     "DOI": "10.1038/s41598-019-47148-x",
     "volume": "9",
     "issue": "1",
+    "page": "10752",
     "publisher": "Springer Science and Business Media LLC",
     "title": "Optimization of Molecules via Deep Reinforcement Learning",
     "URL": "https://doi.org/ggfqc8",
